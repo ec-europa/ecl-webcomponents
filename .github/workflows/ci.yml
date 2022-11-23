@@ -1,0 +1,94 @@
+name: CI
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+  push:
+    branches:
+      - master
+      - dev
+
+jobs:
+  semantic:
+    name: Validate PR title
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: amannn/action-semantic-pull-request@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  audit:
+    name: audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Test
+        run: ./scripts/audit.sh
+  tests:
+    name: tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Build stencil
+        run: yarn build:stencil
+      - name: Tests
+        run: yarn test
+  deploy-preview:
+    name: deploy full preview
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Package application
+        run: yarn build
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2.1
+        with:
+          alias: preview-${{ github.event.number }}
+          publish-dir: "build"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+  deploy-development-branch:
+    name: deploy preview for the development branch
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Package application
+        run: yarn build
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2.1
+        with:
+          alias: dev
+          publish-dir: "build"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+  deploy-master:
+    name: deploy master branch
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Package application
+        run: yarn build
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2.1
+        with:
+          production-deploy: true
+          publish-dir: "build"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

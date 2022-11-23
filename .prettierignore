@@ -1,0 +1,9 @@
+.tmp
+.drone.yml
+_imports
+build
+dist
+node_modules
+package.json
+yarn.lock
+src/components/*/*.md

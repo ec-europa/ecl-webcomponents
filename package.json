@@ -1,0 +1,115 @@
+{
+  "name": "ecl-webcomponents",
+  "version": "0.0.0",
+  "description": "ECL web components",
+  "license": "EUPL-1.2",
+  "private": true,
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/ecl-webcomponents/ecl-webcomponents.esm.js",
+  "engines": {
+    "npm": "^8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "run-s build:*",
+    "build:clean": "rimraf dist",
+    "build:web-components": "lerna --scope \"@ecl/web-components-*\" run build",
+    "build:stencil": "stencil build",
+    "build:storybook": "NODE_ENV=production build-storybook -o build",
+    "build:copy": "scripts/copy-assets.sh",
+    "lint:js": "eslint . --ext .js",
+    "lint:scss": "stylelint \"./src/**/*.scss\"",
+    "lint": "npm-run-all --parallel lint:* -cln",
+    "patch": "patch-package",
+    "prepare": "npx husky install",
+    "pretty-check": "prettier --check \"src/**/*.{md,mdx,html,json,yml,js,jsx,scss}\"",
+    "pretty-write": "prettier --write \"src/**/*.{md,mdx,html,json,yml,js,jsx,scss}\"",
+    "start": "stencil build --watch",
+    "test": "yarn pretty-check && stencil test --spec",
+    "test:watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "generate:docs": "stencil build --docs",
+    "postinstall": "patch-package && [ -z \"$NOYARNPOSTINSTALL\" ] && (lerna run postinstall && lerna run prepublish) || echo \"Bypass prepublish\"",
+    "dev": "start-storybook -p 6006"
+  },
+  "workspaces": [
+    "src/components/**"
+  ],
+  "dependencies": {
+    "@stencil/core": "2.19.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.20.2",
+    "@babel/eslint-parser": "7.19.1",
+    "@babel/plugin-transform-runtime": "7.19.6",
+    "@storybook/addon-essentials": "6.5.13",
+    "@storybook/addon-links": "6.5.13",
+    "@storybook/html": "6.5.13",
+    "@types/jest": "27.0.3",
+    "babel-loader": "9.1.0",
+    "cross-env": "7.0.3",
+    "eslint": "8.28.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jest": "26.8.7",
+    "eslint-plugin-jsx-a11y": "6.6.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.31.11",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "husky": "8.0.2",
+    "jest": "27.0.3",
+    "jest-cli": "27.4.5",
+    "lerna": "6.0.3",
+    "lerna-changelog": "2.2.0",
+    "lint-staged": "13.0.3",
+    "npm-run-all": "4.1.5",
+    "patch-package": "6.5.0",
+    "prettier": "2.7.1",
+    "puppeteer": "19.2.2",
+    "rimraf": "3.0.2",
+    "stylelint": "14.15.0",
+    "stylelint-config-css-modules": "4.1.0",
+    "stylelint-config-prettier": "9.0.4",
+    "stylelint-config-standard": "26.0.0",
+    "stylelint-config-standard-scss": "5.0.0",
+    "stylelint-order": "5.0.0",
+    "stylelint-scss": "4.3.0"
+  },
+  "engines": {
+  "node": ">=12.0.0",
+  "yarn": ">=1.0.0"
+  },
+  "lint-staged": {
+    "*.{md,mdx,html,json,yml,svg}": [
+      "prettier --write"
+    ],
+    "*.{js}": [
+      "prettier --write",
+      "eslint"
+    ],
+    "*.scss": [
+      "prettier --write",
+      "stylelint"
+    ]
+  },
+  "resolutions": {
+    "glob-parent": ">=5.1.2",
+    "trim": ">=0.0.3",
+    "trim-newlines": ">=3.0.1"
+  }
+}

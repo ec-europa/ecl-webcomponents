@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-accordion renders 1`] = `
+<ecl-accordion class="ecl-accordion" theme="ec">
+  <!---->
+  <ecl-accordion-item class="ecl-accordion__item" icon-path="/icons.svg" id="ecl-accordion-item-id-1" label="Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy">
+    <!---->
+    <h3 class="ecl-accordion__title">
+      <button aria-controls="ecl-accordion-item-id-1-content" aria-expanded="false" class="ecl-accordion__toggle" data-ecl-accordion-toggle>
+        <span class="ecl-accordion__toggle-flex">
+          <span class="ecl-accordion__toggle-indicator">
+            <ecl-icon data-ecl-accordion-icon icon="plus" path="/icons.svg" size="m" style-class="ecl-accordion__toggle-icon"></ecl-icon>
+          </span>
+          <span class="ecl-accordion__toggle-title">
+            Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy
+          </span>
+        </span>
+      </button>
+    </h3>
+    <div class="ecl-accordion__content" hidden="" id="ecl-accordion-item-id-1-content" role="region">
+      Accordion item label
+    </div>
+  </ecl-accordion-item>
+  <ecl-accordion-item class="ecl-accordion__item" expanded="" icon-path="/icons.svg" id="ecl-accordion-item-id-2" label="Energy union and climate">
+    <!---->
+    <h3 class="ecl-accordion__title">
+      <button aria-controls="ecl-accordion-item-id-2-content" aria-expanded="true" class="ecl-accordion__toggle" data-ecl-accordion-toggle>
+        <span class="ecl-accordion__toggle-flex">
+          <span class="ecl-accordion__toggle-indicator">
+            <ecl-icon data-ecl-accordion-icon icon="minus" path="/icons.svg" size="m" style-class="ecl-accordion__toggle-icon"></ecl-icon>
+          </span>
+          <span class="ecl-accordion__toggle-title">
+            Energy union and climate
+          </span>
+        </span>
+      </button>
+    </h3>
+    <div class="ecl-accordion__content" id="ecl-accordion-item-id-2-content" role="region">
+      Accordion item label
+    </div>
+  </ecl-accordion-item>
+  <ecl-accordion-item class="ecl-accordion__item" id="ecl-accordion-item-id-3" label="Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy">
+    <!---->
+    <h3 class="ecl-accordion__title">
+      <button aria-controls="ecl-accordion-item-id-3-content" aria-expanded="false" class="ecl-accordion__toggle" data-ecl-accordion-toggle>
+        <span class="ecl-accordion__toggle-flex">
+          <span class="ecl-accordion__toggle-indicator">
+            <ecl-icon data-ecl-accordion-icon icon="plus" size="m" style-class="ecl-accordion__toggle-icon"></ecl-icon>
+          </span>
+          <span class="ecl-accordion__toggle-title">
+            Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy
+          </span>
+        </span>
+      </button>
+    </h3>
+    <div class="ecl-accordion__content" hidden="" id="ecl-accordion-item-id-3-content" role="region">
+      Accordion item label
+    </div>
+  </ecl-accordion-item>
+</ecl-accordion>
+`;

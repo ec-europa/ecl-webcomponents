@@ -1,0 +1,29 @@
+@use '@ecl/theme-ec';
+
+@use '@ecl/vanilla-component-icon/icon-eu';
+@use '@ecl/vanilla-component-link/link-eu';
+@use '@ecl/vanilla-component-button/button-eu';
+
+:host {
+  @extend .ecl-button;
+}
+
+:host(.ecl-button--primary) {
+  @extend .ecl-button--primary;
+}
+
+:host(.ecl-button--secondary) {
+  @extend .ecl-button--secondary;
+}
+
+:host(.ecl-button--call) {
+  @extend .ecl-button--call;
+}
+
+:host(.ecl-button--ghost) {
+  @extend .ecl-button--ghost;
+}
+
+:host(.ecl-button--disabled) {
+  @extend .ecl-button--disabled;
+}

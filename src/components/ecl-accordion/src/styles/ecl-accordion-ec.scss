@@ -1,0 +1,13 @@
+@use '@ecl/theme-ec';
+
+@use '@ecl/vanilla-layout-grid/grid';
+@use '@ecl/vanilla-component-icon/icon-ec';
+@use '@ecl/vanilla-component-button/button-ec';
+@use '@ecl/vanilla-component-accordion/accordion-ec';
+
+:host {
+  @extend .ecl-accordion;
+
+  display: block;
+  visibility: visible;
+}
