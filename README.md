@@ -1,8 +1,9 @@
 # ECL Web-components
 
-Repository for the implementation and distribution of ECL (Europa component library) as web-components.
+Repository for the implementation and distribution of ECL [Europa component library](https://ec.europa.eu/component-library) as vanilla web-components.
+ECL web-components are written and compiled using [stencil.js](https://stenciljs.com/).
 
-To run the app:
+To quickly run the app:
 
 ```
 git clone https://github.com/planctus/ecl-webcomponents
@@ -11,3 +12,42 @@ yarn (install packages)
 yarn start (build stencil and watch files)
 yarn dev (start storybook)
 ```
+
+### Command reference
+
+**generate** runs stencil generate
+**build** builds the application, including storybook
+**lint** runs stylelint on scss files and eslint on js files
+**test** Runs the prettier checks and the snapshot tests
+**build** builds the application, including storybook
+**start** builds stencil and watches files for changes
+**dev** starts storybook
+
+### How to use the library
+
+```html
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@ecl/ecl-webcomponents/dist/ecl-webcomponents/index.js"></script>
+  </head>
+</html>
+```
+
+#### ES Modules
+```html
+<html>
+  <head>
+    <script type="module">
+      import { defineCustomElements } from 'https://cdn.jsdelivr.net/npm/@ecl/ecl-webcomponents/dist/esm/index.js';
+      defineCustomElements();
+    </script>
+  </head>
+</html>
+```
+
+### List of custom elements exported by the library
+
+- `<ecl-icon>`
+- `<ecl-button>`
+- `<ecl-expandable>`
+- `<ecl-accordion>`
