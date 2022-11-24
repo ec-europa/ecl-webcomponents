@@ -34,6 +34,7 @@ const Template = (args) => `<ecl-accordion theme="${args.theme}">
       </ecl-accordion>`;
 
 export const Accordion = Template.bind({});
+Accordion.storyName = 'default';
 Accordion.args = {
   theme: 'ec',
 };

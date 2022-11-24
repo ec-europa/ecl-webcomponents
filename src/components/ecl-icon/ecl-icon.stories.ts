@@ -15,7 +15,7 @@ const Template = (args) => `<ecl-icon
                             ></ecl-icon>`;
 
 export const Icon = Template.bind({});
-
+Icon.storyName = 'default';
 Icon.args = {
   theme: 'ec',
   icon: 'close',

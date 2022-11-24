@@ -5,6 +5,7 @@ import { Component, Prop, h, Host, Element, getAssetPath } from '@stencil/core';
   styleUrl: 'build/styles/ecl-accordion-item.css',
   shadow: false,
   scoped: true,
+  assetsDirs: ['build'],
 })
 
 export class EclAccordionItem {

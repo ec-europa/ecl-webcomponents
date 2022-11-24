@@ -13,7 +13,7 @@ const Template = (args) =>  `<ecl-expandable
                             </ecl-expandable>`;
 
 export const Expandable = Template.bind({});
-
+Expandable.storyName = 'default';
 Expandable.args = {
   theme: 'ec',
   id: 'expandable-example',

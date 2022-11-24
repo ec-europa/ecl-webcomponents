@@ -85,6 +85,7 @@ const Template = (args) => `<ecl-button
                               </ecl-icon>` : ''}
                             </ecl-button>`;
 
-export const Default = Template.bind({});
-Default.args = getArgs();
-Default.argTypes = getArgTypes();
+export const Button = Template.bind({});
+Button.storyName = 'default';
+Button.args = getArgs();
+Button.argTypes = getArgTypes();
