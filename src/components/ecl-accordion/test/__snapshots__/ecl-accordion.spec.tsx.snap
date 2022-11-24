@@ -9,7 +9,7 @@ exports[`ecl-accordion renders 1`] = `
       <button aria-controls="ecl-accordion-item-id-1-content" aria-expanded="false" class="ecl-accordion__toggle" data-ecl-accordion-toggle>
         <span class="ecl-accordion__toggle-flex">
           <span class="ecl-accordion__toggle-indicator">
-            <ecl-icon data-ecl-accordion-icon icon="plus" path="/icons.svg" size="m" style-class="ecl-accordion__toggle-icon"></ecl-icon>
+            <ecl-icon data-ecl-accordion-icon icon="plus" size="m" style-class="ecl-accordion__toggle-icon" theme="ec"></ecl-icon>
           </span>
           <span class="ecl-accordion__toggle-title">
             Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy
@@ -27,7 +27,7 @@ exports[`ecl-accordion renders 1`] = `
       <button aria-controls="ecl-accordion-item-id-2-content" aria-expanded="true" class="ecl-accordion__toggle" data-ecl-accordion-toggle>
         <span class="ecl-accordion__toggle-flex">
           <span class="ecl-accordion__toggle-indicator">
-            <ecl-icon data-ecl-accordion-icon icon="minus" path="/icons.svg" size="m" style-class="ecl-accordion__toggle-icon"></ecl-icon>
+            <ecl-icon data-ecl-accordion-icon icon="minus" size="m" style-class="ecl-accordion__toggle-icon" theme="ec"></ecl-icon>
           </span>
           <span class="ecl-accordion__toggle-title">
             Energy union and climate
@@ -45,7 +45,7 @@ exports[`ecl-accordion renders 1`] = `
       <button aria-controls="ecl-accordion-item-id-3-content" aria-expanded="false" class="ecl-accordion__toggle" data-ecl-accordion-toggle>
         <span class="ecl-accordion__toggle-flex">
           <span class="ecl-accordion__toggle-indicator">
-            <ecl-icon data-ecl-accordion-icon icon="plus" size="m" style-class="ecl-accordion__toggle-icon"></ecl-icon>
+            <ecl-icon data-ecl-accordion-icon icon="plus" size="m" style-class="ecl-accordion__toggle-icon" theme="ec"></ecl-icon>
           </span>
           <span class="ecl-accordion__toggle-title">
             Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy

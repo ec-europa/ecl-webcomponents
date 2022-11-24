@@ -15,7 +15,7 @@ export class EclIcon {
   @Prop() icon: string;
   @Prop() size: string = 'xs';
   @Prop() color: string;
-  @Prop() path: string;
+  @Prop({ mutable: true }) path: string;
   @Prop() transform: string;
   @Prop() theme: string = 'ec';
 

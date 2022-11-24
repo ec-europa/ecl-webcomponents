@@ -13,7 +13,6 @@ export namespace Components {
     }
     interface EclAccordionItem {
         "expanded": boolean;
-        "iconPath": string;
         "label": string;
         "styleClass": string;
         "theme": string;
@@ -88,7 +87,6 @@ declare namespace LocalJSX {
     }
     interface EclAccordionItem {
         "expanded"?: boolean;
-        "iconPath"?: string;
         "label"?: string;
         "styleClass"?: string;
         "theme"?: string;

@@ -1,4 +1,4 @@
-import { Component, Prop, h, Host, Element, getAssetPath } from '@stencil/core';
+import { Component, Prop, h, Host, Element } from '@stencil/core';
 
 @Component({
   tag: 'ecl-accordion-item',
@@ -12,7 +12,6 @@ export class EclAccordionItem {
   @Element() el: HTMLElement;
   @Prop() styleClass: string;
   @Prop() label: string;
-  @Prop() iconPath: string;
   @Prop({reflect:true}) expanded: boolean;
   @Prop() theme: string = 'ec';
 
@@ -21,10 +20,6 @@ export class EclAccordionItem {
       `ecl-accordion__item`,
       this.styleClass
     ].join(' ');
-  }
-
-  componentWillLoad() {
-    this.iconPath = getAssetPath(`./build/images/${this.theme}/icons.svg`);
   }
 
   render() {
@@ -41,7 +36,7 @@ export class EclAccordionItem {
               <span class="ecl-accordion__toggle-indicator">
                 <ecl-icon
                   icon={this.expanded ? "minus" : 'plus'}
-                  path={this.iconPath}
+                  theme={this.theme}
                   size="m"
                   style-class="ecl-accordion__toggle-icon"
                   data-ecl-accordion-icon
