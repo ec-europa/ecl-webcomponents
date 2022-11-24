@@ -74,7 +74,7 @@ export class EclExpandable {
         </ecl-button>
         <div
           class="ecl-expandable__content"
-          id="expandable-example-content"
+          id={`${this.el.id}-content`}
           hidden
         >
           <slot></slot>

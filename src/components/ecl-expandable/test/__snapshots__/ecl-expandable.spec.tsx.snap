@@ -14,7 +14,7 @@ exports[`ecl-expandable renders 1`] = `
       <ecl-icon icon="corner-arrow" size="fluid" slot="icon-after" style-class="ecl-button__icon ecl-button__icon--after" theme="ec" transform="rotate-180"></ecl-icon>
     </span>
   </ecl-button>
-  <div class="ecl-expandable__content" hidden="" id="expandable-example-content">
+  <div class="ecl-expandable__content" hidden="" id="expandable-id-content">
     <p class="ecl-u-type-paragraph-m">
       The EU is building an energy union that ensures Europe’s energy supply is safe, viable and accessible to all. In doing so, it can boost the economy and attract investments that can create new jobs opportunities.
     </p>
