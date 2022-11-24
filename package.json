@@ -101,7 +101,7 @@
     "*.{md,mdx,html,json,yml,svg}": [
       "prettier --write"
     ],
-    "*.{js}": [
+    "*.js": [
       "prettier --write",
       "eslint"
     ],

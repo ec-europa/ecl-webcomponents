@@ -1,5 +1,3 @@
-import iconPathEc from '@ecl/resources-ec-icons/dist/sprites/icons.svg';
-import iconPathEu from '@ecl/resources-eu-icons/dist/sprites/icons.svg';
 import iconsAllEc from '@ecl/resources-ec-icons/dist/lists/all.json';
 
 export default {
@@ -11,7 +9,7 @@ const Template = (args) => `<ecl-icon
                               color="${args.color}"
                               size="${args.size}"
                               transform="${args.transform}"
-                              path="${args.theme === 'ec' ? iconPathEc : iconPathEu}"
+                              theme="${args.theme}"
                             ></ecl-icon>`;
 
 export const Icon = Template.bind({});

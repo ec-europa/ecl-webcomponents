@@ -2,15 +2,16 @@ export default {
   title: 'Components/expandable',
 };
 
-const Template = (args) =>  `<ecl-expandable
-                              theme="${args.theme}"
-                              id="${args.id}"
-                              label-collapsed="${args.labelCollapsed}"
-                              label-expanded="${args.labelExpanded}"
-                              ecl-script
-                            >
-                              ${args.content}
-                            </ecl-expandable>`;
+const Template = (args) =>
+`<ecl-expandable
+  theme="${args.theme}"
+  id="${args.id}"
+  label-collapsed="${args.labelCollapsed}"
+  label-expanded="${args.labelExpanded}"
+  ecl-script
+>
+  ${args.content}
+</ecl-expandable>`;
 
 export const Expandable = Template.bind({});
 Expandable.storyName = 'default';
