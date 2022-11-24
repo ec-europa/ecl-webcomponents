@@ -43,7 +43,7 @@
     "generate": "stencil generate",
     "generate:docs": "stencil build --docs",
     "postinstall": "patch-package && [ -z \"$NOYARNPOSTINSTALL\" ] && (lerna run postinstall && lerna run prepublish) || echo \"Bypass prepublish\"",
-    "dev": "start-storybook -p 6006"
+    "dev": "start-storybook --no-manager-cache -p 6006"
   },
   "workspaces": [
     "src/components/**"
@@ -58,8 +58,11 @@
     "@storybook/addon-essentials": "6.5.13",
     "@storybook/addon-links": "6.5.13",
     "@storybook/html": "6.5.13",
+    "@storybook/builder-webpack5": "6.5.13",
+    "@storybook/manager-webpack5": "6.5.13",
     "@types/jest": "27.0.3",
     "babel-loader": "9.1.0",
+    "copyfiles": "2.4.1",
     "cross-env": "7.0.3",
     "eslint": "8.28.0",
     "eslint-config-airbnb": "19.0.4",
@@ -109,7 +112,6 @@
   },
   "resolutions": {
     "glob-parent": ">=5.1.2",
-    "trim": ">=0.0.3",
-    "trim-newlines": ">=3.0.1"
+    "trim": ">=0.0.3"
   }
 }

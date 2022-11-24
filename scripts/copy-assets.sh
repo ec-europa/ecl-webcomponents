@@ -12,6 +12,9 @@ cd ..
 
 # Copy builds
 rm -rf .build/scripts
+rm -rf .build/images
 mkdir -p ./build/scripts
-cp -r ./src/components/ecl-accordion/dist/scripts ./build
-cp -r ./src/components/ecl-expandable/dist/scripts ./build
+mkdir -p ./build/images
+cp -r ./src/components/ecl-accordion/build ./build
+cp -r ./src/components/ecl-accordion/build ./build
+cp -r ./src/components/ecl-expandable/build ./build

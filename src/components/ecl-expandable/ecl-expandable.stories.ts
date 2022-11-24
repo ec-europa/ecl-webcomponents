@@ -1,5 +1,3 @@
-import iconPathEc from '@ecl/resources-ec-icons/dist/sprites/icons.svg';
-
 export default {
   title: 'Components/expandable',
 };
@@ -7,7 +5,6 @@ export default {
 const Template = (args) =>  `<ecl-expandable
                               theme="${args.theme}"
                               id="${args.id}"
-                              icon-path="${iconPathEc}"
                               label-collapsed="${args.labelCollapsed}"
                               label-expanded="${args.labelExpanded}"
                               ecl-script

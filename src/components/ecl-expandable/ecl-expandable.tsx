@@ -4,12 +4,12 @@ declare const ECL: any;
 @Component({
   tag: 'ecl-expandable',
   styleUrls: {
-    ec: 'build/styles/ecl-expandable-ec.css',
-    eu: 'build/styles/ecl-expandable-eu.css',
+    ec: './build/styles/ecl-expandable-ec.css',
+    eu: './build/styles/ecl-expandable-eu.css',
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build/scripts'],
+  assetsDirs: ['build'],
 })
 
 export class EclExpandable {
@@ -17,13 +17,12 @@ export class EclExpandable {
   @Prop() styleClass: string;
   @Prop() eclScript: boolean;
   @Prop() isExpanded: boolean;
-  @Prop() iconPath: string;
   @Prop() labelCollapsed: string;
   @Prop() labelExpanded: string;
   @Prop() theme: string = 'ec';
 
   componentWillLoad() {
-    const src = getAssetPath('./scripts/ecl-expandable-vanilla.js');
+    const src = getAssetPath('./build/scripts/ecl-expandable-vanilla.js');
     if (document.querySelector(`script[src="${src}"]`)) {
       document.querySelector(`script[src="${src}"]`).remove();
     }
@@ -66,9 +65,9 @@ export class EclExpandable {
           </span>
           <ecl-icon
             slot="icon-after"
-            path={this.iconPath}
             icon="corner-arrow"
             size="fluid"
+            theme={this.theme}
             transform="rotate-180"
             style-class="ecl-button__icon ecl-button__icon--after"
           ></ecl-icon>

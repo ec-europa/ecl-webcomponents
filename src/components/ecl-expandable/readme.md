@@ -8,7 +8,6 @@
 | Property         | Attribute         | Description | Type      | Default     |
 | ---------------- | ----------------- | ----------- | --------- | ----------- |
 | `eclScript`      | `ecl-script`      |             | `boolean` | `undefined` |
-| `iconPath`       | `icon-path`       |             | `string`  | `undefined` |
 | `isExpanded`     | `is-expanded`     |             | `boolean` | `undefined` |
 | `labelCollapsed` | `label-collapsed` |             | `string`  | `undefined` |
 | `labelExpanded`  | `label-expanded`  |             | `string`  | `undefined` |

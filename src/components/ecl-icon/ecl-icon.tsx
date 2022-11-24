@@ -1,12 +1,13 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, getAssetPath } from '@stencil/core';
 
 @Component({
   tag: 'ecl-icon',
   styleUrls: {
-    ec: 'build/styles/ecl-icon-ec.css',
-    eu: 'build/styles/ecl-icon-eu.css',
+    ec: './build/styles/ecl-icon-ec.css',
+    eu: './build/styles/ecl-icon-eu.css',
   },
   shadow: false,
+  assetsDirs: ['build'],
 })
 
 export class EclIcon {
@@ -17,6 +18,10 @@ export class EclIcon {
   @Prop() path: string;
   @Prop() transform: string;
   @Prop() theme: string = 'ec';
+
+  componentWillLoad() {
+    this.path = getAssetPath(`./build/images/${this.theme}/icons.svg`);
+  }
 
   getClass(): string {
     const styleClasses = [

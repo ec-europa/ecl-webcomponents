@@ -3,8 +3,8 @@ import { Component, Prop, h, Host } from '@stencil/core';
 @Component({
   tag: 'ecl-button',
   styleUrls: {
-    ec: 'build/styles/ecl-button-ec.css',
-    eu: 'build/styles/ecl-button-eu.css',
+    ec: './build/styles/ecl-button-ec.css',
+    eu: './build/styles/ecl-button-eu.css',
   },
   shadow: false,
   scoped: true,

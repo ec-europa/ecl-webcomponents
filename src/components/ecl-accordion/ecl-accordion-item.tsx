@@ -1,4 +1,4 @@
-import { Component, Prop, h, Host, Element } from '@stencil/core';
+import { Component, Prop, h, Host, Element, getAssetPath } from '@stencil/core';
 
 @Component({
   tag: 'ecl-accordion-item',
@@ -20,6 +20,10 @@ export class EclAccordionItem {
       `ecl-accordion__item`,
       this.styleClass
     ].join(' ');
+  }
+
+  componentWillLoad() {
+    this.iconPath = getAssetPath(`./build/images/${this.theme}/icons.svg`);
   }
 
   render() {

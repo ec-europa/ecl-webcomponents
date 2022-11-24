@@ -25,7 +25,6 @@ export namespace Components {
     }
     interface EclExpandable {
         "eclScript": boolean;
-        "iconPath": string;
         "isExpanded": boolean;
         "labelCollapsed": string;
         "labelExpanded": string;
@@ -101,7 +100,6 @@ declare namespace LocalJSX {
     }
     interface EclExpandable {
         "eclScript"?: boolean;
-        "iconPath"?: string;
         "isExpanded"?: boolean;
         "labelCollapsed"?: string;
         "labelExpanded"?: string;

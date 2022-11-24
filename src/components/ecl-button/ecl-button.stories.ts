@@ -1,5 +1,3 @@
-import iconPathEc from '@ecl/resources-ec-icons/dist/sprites/icons.svg';
-import iconPathEu from '@ecl/resources-ec-icons/dist/sprites/icons.svg';
 import iconsAllEc from '@ecl/resources-ec-icons/dist/lists/all.json';
 
 const getArgs = () => {
@@ -69,9 +67,9 @@ const Template = (args) => `<ecl-button
                             ${args.icon && args.iconPosition === 'before' ?
                               `<ecl-icon 
                                 slot="icon-before"
-                                path="${args.system === 'ec' ? iconPathEc : iconPathEu}"
                                 icon="${args.icon}"
                                 transform="${args.iconTransform}"
+                                theme="${args.theme}"
                                 style-class="ecl-button__icon ecl-button__icon--before"
                               >
                               </ecl-icon>` : ''}
@@ -79,8 +77,8 @@ const Template = (args) => `<ecl-button
                               ${args.icon && args.iconPosition === 'after' ?
                                 `<ecl-icon 
                                   slot="icon-after"
-                                  path="${args.system === 'ec' ? iconPathEc : iconPathEu}"
                                   icon="${args.icon}"
+                                  theme="${args.theme}"
                                   transform="${args.iconTransform}"
                                   style-class="ecl-button__icon ecl-button__icon--after"
                               >

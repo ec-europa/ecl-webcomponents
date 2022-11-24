@@ -6,10 +6,10 @@ let staticDirs = [];
 if (!isProd) {
   staticDirs = [
     path.resolve(
-      `${__dirname}/../src/components/ecl-expandable/build`
+      `${__dirname}/../src/components/ecl-expandable`
     ),
     path.resolve(
-      `${__dirname}/../src/components/ecl-accordion/build`
+      `${__dirname}/../src/components/ecl-accordion`
     ),
   ];
 }
@@ -25,6 +25,9 @@ module.exports = {
   ],
   framework: "@storybook/html",
   staticDirs,
+  core: {
+    builder: 'webpack5',
+  },
   features: {
     postcss: false,
   },

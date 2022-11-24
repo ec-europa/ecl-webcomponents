@@ -2,8 +2,7 @@ const path = require('path');
 const pkg = require('./package.json');
 
 const nodeModules = path.resolve(__dirname, '../../../node_modules');
-const isProd = process.env.NODE_ENV === 'production';
-const outputFolder = path.resolve(__dirname, isProd ? './dist' : './build');
+const outputFolder = './build';
 
 // SCSS includePaths
 const includePaths = [nodeModules];

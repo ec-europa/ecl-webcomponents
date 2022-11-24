@@ -4,11 +4,11 @@ declare const ECL: any;
 @Component({
   tag: 'ecl-accordion',
   styleUrls: {
-    ec: 'build/styles/ecl-accordion-ec.css',
-    eu: 'build/styles/ecl-accordion-eu.css'
+    ec: './build/styles/ecl-accordion-ec.css',
+    eu: './build/styles/ecl-accordion-eu.css'
   },
   shadow: false,
-  assetsDirs: ['build/scripts'],
+  assetsDirs: ['build'],
 })
 
 export class EclAccordion {
@@ -25,7 +25,7 @@ export class EclAccordion {
   }
 
   componentWillLoad() {
-    const src = getAssetPath('./scripts/ecl-accordion-vanilla.js');
+    const src = getAssetPath('./build/scripts/ecl-accordion-vanilla.js');
     if (document.querySelector(`script[src="${src}"]`)) {
       document.querySelector(`script[src="${src}"]`).remove();
     }
