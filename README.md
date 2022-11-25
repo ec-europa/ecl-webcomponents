@@ -15,14 +15,14 @@ yarn dev (start storybook)
 
 ### Command reference
 
-**generate** runs stencil generate
-**build** builds the application, including storybook
-**lint** runs stylelint on scss files and eslint on js files
-**test** Runs the prettier checks and the snapshot tests
-**build** builds the application, including storybook
-**start** builds stencil and watches files for changes
-**dev** starts storybook
-**pretty-check** Runs the checks by prettier
+**generate** runs stencil generate  
+**build** builds the application, including storybook  
+**lint** runs stylelint on scss files and eslint on js files  
+**test** Runs the prettier checks and the snapshot tests  
+**build** builds the application, including storybook  
+**start** builds stencil and watches files for changes  
+**dev** starts storybook  
+**pretty-check** Runs the checks by prettier  
 **pretty-write** Fix the errors with prettier
 
 #### ES Modules
