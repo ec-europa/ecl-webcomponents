@@ -23,6 +23,14 @@ export class EclButton {
     ].join(' ');
   }
 
+  componentWillLoad() {
+    const patchStyle = document.createElement('style');
+    patchStyle.innerHTML = `.ecl-button .ecl-icon { vertical-align: text-top; }
+                            .ecl-button__icon--after { margin-inline-start: 0.5rem; }
+                            .ecl-button__icon--before { margin-inline-end: 0.5rem; }`;
+    document.body.appendChild(patchStyle);
+  }
+
   render() {
     return (
       <Host class={this.getClass()}>
