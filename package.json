@@ -13,7 +13,8 @@
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/ecl-webcomponents/ecl-webcomponents.esm.js",
   "engines": {
-    "npm": "^8.0.0"
+    "node": ">=12.0.0",
+    "yarn": ">=1.0.0"
   },
   "repository": {
     "type": "git",
@@ -58,8 +59,8 @@
     "@babel/plugin-transform-runtime": "7.19.6",
     "@storybook/addon-essentials": "6.5.13",
     "@storybook/addon-links": "6.5.13",
-    "@storybook/html": "6.5.13",
     "@storybook/builder-webpack5": "6.5.13",
+    "@storybook/html": "6.5.13",
     "@storybook/manager-webpack5": "6.5.13",
     "@types/jest": "27.0.3",
     "babel-loader": "9.1.0",
@@ -80,11 +81,11 @@
     "jest-cli": "27.4.5",
     "lerna": "6.0.3",
     "lerna-changelog": "2.2.0",
-    "lint-staged": "13.0.3",
+    "lint-staged": "13.0.4",
     "npm-run-all": "4.1.5",
     "patch-package": "6.5.0",
-    "prettier": "2.7.1",
-    "puppeteer": "19.2.2",
+    "prettier": "2.8.0",
+    "puppeteer": "19.3.0",
     "rimraf": "3.0.2",
     "stylelint": "14.15.0",
     "stylelint-config-css-modules": "4.1.0",
@@ -93,10 +94,6 @@
     "stylelint-config-standard-scss": "5.0.0",
     "stylelint-order": "5.0.0",
     "stylelint-scss": "4.3.0"
-  },
-  "engines": {
-  "node": ">=12.0.0",
-  "yarn": ">=1.0.0"
   },
   "lint-staged": {
     "*.{md,mdx,html,json,yml,svg}": [
