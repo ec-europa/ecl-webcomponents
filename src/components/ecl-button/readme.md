@@ -7,7 +7,7 @@
 
 | Property     | Attribute     | Description | Type     | Default     |
 | ------------ | ------------- | ----------- | -------- | ----------- |
-| `styleClass` | `style-class` |             | `string` | `undefined` |
+| `styleClass` | `style-class` |             | `string` | `''`        |
 | `theme`      | `theme`       |             | `string` | `'ec'`      |
 | `type`       | `type`        |             | `string` | `'primary'` |
 

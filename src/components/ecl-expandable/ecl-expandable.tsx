@@ -14,12 +14,12 @@ declare const ECL: any;
 
 export class EclExpandable {
   @Element() el: HTMLElement;
-  @Prop() styleClass: string;
-  @Prop() eclScript: boolean;
-  @Prop() withUtils: boolean;
-  @Prop() isExpanded: boolean;
-  @Prop() labelCollapsed: string;
-  @Prop() labelExpanded: string;
+  @Prop() styleClass: string = '';
+  @Prop() eclScript: boolean = false;
+  @Prop() withUtils: boolean = false;
+  @Prop() isExpanded: boolean = false;
+  @Prop() labelCollapsed: string = '';
+  @Prop() labelExpanded: string = '';
   @Prop() theme: string = 'ec';
 
   componentWillLoad() {
@@ -35,11 +35,18 @@ export class EclExpandable {
     };
     document.body.appendChild(script);
 
-    if (this.withUtils) {
+    if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
       const style = document.createElement('style');
+      style.id = 'ecl-utils-styles';
       style.innerHTML = `@import "./build/styles/ecl-utilities-${this.theme}.css"`;
       document.body.appendChild(style);
     }
+
+    const patchStyle = document.createElement('style');
+    patchStyle.innerHTML = `.ecl-expandable .ecl-icon { vertical-align: text-top; }
+                            .ecl-button__icon--after:only-child { margin-inline-start: 0.5rem; }
+                            .ecl-button__icon--before:only-child { margin-inline-end: 0.5rem; }`;
+    document.body.appendChild(patchStyle);
   }
 
   getClass(): string {

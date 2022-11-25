@@ -11,12 +11,12 @@ import { Component, Prop, h, getAssetPath } from '@stencil/core';
 })
 
 export class EclIcon {
-  @Prop() styleClass: string;
-  @Prop() icon: string;
+  @Prop() styleClass: string = '';
+  @Prop() icon: string = '';
   @Prop() size: string = 'xs';
-  @Prop() color: string;
+  @Prop() color: string = '';
   @Prop({ mutable: true }) path: string;
-  @Prop() transform: string;
+  @Prop() transform: string = '';
   @Prop() theme: string = 'ec';
 
   componentWillLoad() {

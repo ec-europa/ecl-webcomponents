@@ -54,31 +54,32 @@ export default {
   title: 'Components/button',
 };
 
-const Template = (args) => `<ecl-button
-                              type="${args.type}"
-                              data-ecl-button-icon
-                              theme="${args.theme}"
-                            >
-                            ${args.icon && args.iconPosition === 'before' ?
-                              `<ecl-icon 
-                                slot="icon-before"
-                                icon="${args.icon}"
-                                transform="${args.iconTransform}"
-                                theme="${args.theme}"
-                                style-class="ecl-button__icon ecl-button__icon--before"
-                              >
-                              </ecl-icon>` : ''}
-                                ${args.label}
-                              ${args.icon && args.iconPosition === 'after' ?
-                                `<ecl-icon 
-                                  slot="icon-after"
-                                  icon="${args.icon}"
-                                  theme="${args.theme}"
-                                  transform="${args.iconTransform}"
-                                  style-class="ecl-button__icon ecl-button__icon--after"
-                              >
-                              </ecl-icon>` : ''}
-                            </ecl-button>`;
+const Template = (args) => 
+`<ecl-button
+  type="${args.type}"
+  data-ecl-button-icon
+  theme="${args.theme}"
+>
+${args.icon && args.iconPosition === 'before' ?
+  `<ecl-icon 
+    slot="icon-before"
+    icon="${args.icon}"
+    transform="${args.iconTransform}"
+    theme="${args.theme}"
+    style-class="ecl-button__icon ecl-button__icon--before"
+  >
+  </ecl-icon>` : ''}
+    ${args.label}
+  ${args.icon && args.iconPosition === 'after' ?
+    `<ecl-icon 
+      slot="icon-after"
+      icon="${args.icon}"
+      theme="${args.theme}"
+      transform="${args.iconTransform}"
+      style-class="ecl-button__icon ecl-button__icon--after"
+  >
+  </ecl-icon>` : ''}
+</ecl-button>`;
 
 export const Button = Template.bind({});
 Button.storyName = 'default';

@@ -5,15 +5,15 @@
 
 ## Properties
 
-| Property         | Attribute         | Description | Type      | Default     |
-| ---------------- | ----------------- | ----------- | --------- | ----------- |
-| `eclScript`      | `ecl-script`      |             | `boolean` | `undefined` |
-| `isExpanded`     | `is-expanded`     |             | `boolean` | `undefined` |
-| `labelCollapsed` | `label-collapsed` |             | `string`  | `undefined` |
-| `labelExpanded`  | `label-expanded`  |             | `string`  | `undefined` |
-| `styleClass`     | `style-class`     |             | `string`  | `undefined` |
-| `theme`          | `theme`           |             | `string`  | `'ec'`      |
-| `withUtils`      | `with-utils`      |             | `boolean` | `undefined` |
+| Property         | Attribute         | Description | Type      | Default |
+| ---------------- | ----------------- | ----------- | --------- | ------- |
+| `eclScript`      | `ecl-script`      |             | `boolean` | `false` |
+| `isExpanded`     | `is-expanded`     |             | `boolean` | `false` |
+| `labelCollapsed` | `label-collapsed` |             | `string`  | `''`    |
+| `labelExpanded`  | `label-expanded`  |             | `string`  | `''`    |
+| `styleClass`     | `style-class`     |             | `string`  | `''`    |
+| `theme`          | `theme`           |             | `string`  | `'ec'`  |
+| `withUtils`      | `with-utils`      |             | `boolean` | `false` |
 
 
 ## Dependencies

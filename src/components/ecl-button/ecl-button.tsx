@@ -11,7 +11,7 @@ import { Component, Prop, h, Host } from '@stencil/core';
 })
 
 export class EclButton {
-  @Prop() styleClass: string;
+  @Prop() styleClass: string = '';
   @Prop() type: string = 'primary';
   @Prop() theme: string = 'ec';
 

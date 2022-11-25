@@ -7,13 +7,13 @@
 
 | Property     | Attribute     | Description | Type     | Default     |
 | ------------ | ------------- | ----------- | -------- | ----------- |
-| `color`      | `color`       |             | `string` | `undefined` |
-| `icon`       | `icon`        |             | `string` | `undefined` |
+| `color`      | `color`       |             | `string` | `''`        |
+| `icon`       | `icon`        |             | `string` | `''`        |
 | `path`       | `path`        |             | `string` | `undefined` |
 | `size`       | `size`        |             | `string` | `'xs'`      |
-| `styleClass` | `style-class` |             | `string` | `undefined` |
+| `styleClass` | `style-class` |             | `string` | `''`        |
 | `theme`      | `theme`       |             | `string` | `'ec'`      |
-| `transform`  | `transform`   |             | `string` | `undefined` |
+| `transform`  | `transform`   |             | `string` | `''`        |
 
 
 ## Dependencies

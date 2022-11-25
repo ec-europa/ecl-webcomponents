@@ -10,6 +10,7 @@ export namespace Components {
         "eclScript": boolean;
         "styleClass": string;
         "theme": string;
+        "withUtils": boolean;
     }
     interface EclAccordionItem {
         "expanded": boolean;
@@ -85,6 +86,7 @@ declare namespace LocalJSX {
         "eclScript"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
+        "withUtils"?: boolean;
     }
     interface EclAccordionItem {
         "expanded"?: boolean;

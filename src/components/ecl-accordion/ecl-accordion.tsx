@@ -13,8 +13,9 @@ declare const ECL: any;
 
 export class EclAccordion {
   @Element() el: HTMLElement;
-  @Prop() styleClass: string;
-  @Prop() eclScript: boolean;
+  @Prop() styleClass: string = '';
+  @Prop() eclScript: boolean = false;
+  @Prop() withUtils: boolean = false;
   @Prop() theme: string = 'ec';
 
   getClass(): string {
@@ -25,17 +26,25 @@ export class EclAccordion {
   }
 
   componentWillLoad() {
-    const src = getAssetPath('./build/scripts/ecl-accordion-vanilla.js');
-    if (document.querySelector(`script[src="${src}"]`)) {
-      document.querySelector(`script[src="${src}"]`).remove();
+    if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
+      const style = document.createElement('style');
+      style.id = 'ecl-utils-styles';
+      style.innerHTML = `@import "./build/styles/ecl-utilities-${this.theme}.css"`;
+      document.body.appendChild(style);
     }
-    const script = document.createElement('script');
-    script.src = src;
-    script.onload = () => {
-      const accordion = new ECL.Accordion(this.el);
-      accordion.init();
-    };
-    document.body.appendChild(script);
+    if (this.eclScript) {
+      const src = getAssetPath('./build/scripts/ecl-accordion-vanilla.js');
+      if (document.querySelector(`script[src="${src}"]`)) {
+        document.querySelector(`script[src="${src}"]`).remove();
+      }
+      const script = document.createElement('script');
+      script.src = src;
+      script.onload = () => {
+        const accordion = new ECL.Accordion(this.el);
+        accordion.init();
+      };
+      document.body.appendChild(script);
+    }
   }
 
   render() {
