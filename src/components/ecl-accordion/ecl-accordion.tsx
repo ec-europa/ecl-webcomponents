@@ -5,7 +5,7 @@ declare const ECL: any;
   tag: 'ecl-accordion',
   styleUrls: {
     ec: './build/styles/ecl-accordion-ec.css',
-    eu: './build/styles/ecl-accordion-eu.css'
+    eu: './build/styles/ecl-accordion-eu.css',
   },
   shadow: false,
   assetsDirs: ['build'],

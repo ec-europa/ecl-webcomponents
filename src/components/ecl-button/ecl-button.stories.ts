@@ -2,7 +2,6 @@ import iconsAllEc from '@ecl/resources-ec-icons/dist/lists/all.json';
 
 const getArgs = () => {
   return {
-    theme: 'ec',
     label: 'Button label',
     type: 'primary',
     icon: '',
@@ -13,10 +12,6 @@ const getArgs = () => {
 
 const getArgTypes = () => {
   return {
-    theme: {
-      type: { name: 'select'},
-      options: ['ec', 'eu'],
-    },
     type: {
       name: 'button variant',
       type: { name: 'select' },

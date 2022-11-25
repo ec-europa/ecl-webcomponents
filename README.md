@@ -22,25 +22,15 @@ yarn dev (start storybook)
 **build** builds the application, including storybook
 **start** builds stencil and watches files for changes
 **dev** starts storybook
-
-### How to use the library
-
-```html
-<html>
-  <head>
-    <script src="https://cdn.jsdelivr.net/npm/@ecl/ecl-webcomponents/dist/ecl-webcomponents/index.js"></script>
-  </head>
-</html>
-```
+**pretty-check** Runs the checks by prettier
+**pretty-write** Fix the errors with prettier
 
 #### ES Modules
+
 ```html
 <html>
   <head>
-    <script type="module">
-      import { defineCustomElements } from 'https://cdn.jsdelivr.net/npm/@ecl/ecl-webcomponents/dist/esm/index.js';
-      defineCustomElements();
-    </script>
+    <script type="module" src="dist/ecl-webcomponents/ecl-webcomponents.esm.js"></script>
   </head>
 </html>
 ```

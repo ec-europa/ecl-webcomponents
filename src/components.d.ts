@@ -29,6 +29,7 @@ export namespace Components {
         "labelExpanded": string;
         "styleClass": string;
         "theme": string;
+        "withUtils": boolean;
     }
     interface EclIcon {
         "color": string;
@@ -103,6 +104,7 @@ declare namespace LocalJSX {
         "labelExpanded"?: string;
         "styleClass"?: string;
         "theme"?: string;
+        "withUtils"?: boolean;
     }
     interface EclIcon {
         "color"?: string;
