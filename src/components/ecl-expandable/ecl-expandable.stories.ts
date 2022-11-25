@@ -8,6 +8,7 @@ const Template = (args) =>
   id="${args.id}"
   label-collapsed="${args.labelCollapsed}"
   label-expanded="${args.labelExpanded}"
+  with-utils
   ecl-script
 >
   ${args.content}
@@ -16,7 +17,7 @@ const Template = (args) =>
 export const Expandable = Template.bind({});
 Expandable.storyName = 'default';
 Expandable.args = {
-  theme: 'ec',
+  withUtils: true,
   id: 'expandable-example',
   labelCollapsed: 'Expand',
   labelExpanded: 'Collapse',
@@ -27,16 +28,18 @@ Expandable.args = {
   </p>`,
 };
 Expandable.argTypes = {
-  theme: {
-    type: 'select',
-    options: ['ec', 'eu'], 
-    description: 'Ec or EU theme'
+  id: {
+    description: 'Id of the element',
   },
   labelCollapsed: {
     name: 'label-collapsed',
+    control: { name: 'text'},
+    description: 'Label that will appear when the content is collapsed',
   },
   labelExpanded: {
     name: 'label-expanded',
+    control: { name: 'text'},
+    description: 'Label that will appear when the content is expanded',
   },
   content: {
     name: 'content',

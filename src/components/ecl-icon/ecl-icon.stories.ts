@@ -15,17 +15,12 @@ const Template = (args) => `<ecl-icon
 export const Icon = Template.bind({});
 Icon.storyName = 'default';
 Icon.args = {
-  theme: 'ec',
   icon: 'close',
   transform: '',
   color: 'default',
   size: '2xl',
 };
 Icon.argTypes = {
-  theme: {
-    type: { name: 'select'},
-    options: ['ec', 'eu'],
-  },
   icon: {
     type: { name: 'select' },
     options: iconsAllEc,

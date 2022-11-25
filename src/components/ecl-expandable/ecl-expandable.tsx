@@ -16,6 +16,7 @@ export class EclExpandable {
   @Element() el: HTMLElement;
   @Prop() styleClass: string;
   @Prop() eclScript: boolean;
+  @Prop() withUtils: boolean;
   @Prop() isExpanded: boolean;
   @Prop() labelCollapsed: string;
   @Prop() labelExpanded: string;
@@ -33,6 +34,12 @@ export class EclExpandable {
       expandable.init();
     };
     document.body.appendChild(script);
+
+    if (this.withUtils) {
+      const style = document.createElement('style');
+      style.innerHTML = `@import "./build/styles/ecl-utilities-${this.theme}.css"`;
+      document.body.appendChild(style);
+    }
   }
 
   getClass(): string {

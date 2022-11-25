@@ -2,19 +2,16 @@
   "name": "@ecl/web-components-expandable",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "3.5.0",
+  "version": "0.0.0",
   "description": "ECL Expandable",
   "main": "ecl-expandable.js",
   "private": true,
   "scripts": {
     "build:styles": "cross-env ecl-builder styles",
     "build:scripts": "cross-env ecl-builder scripts",
-    "build": "run-p clean:build build:*",
-    "clean": "run-s clean:*",
-    "clean:build": "rimraf build",
-    "clean:dist": "rimraf dist",
-    "dist": "cross-env NODE_ENV=production run-p clean:dist build:*",
-    "prepublish": "npm run clean && npm run build && npm run dist"
+    "build": "run-s clean build:*",
+    "clean": "rimraf build",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "@ecl/builder": "3.5.0",
@@ -25,7 +22,21 @@
     "@ecl/vanilla-component-icon": "3.5.0",
     "@ecl/vanilla-component-button": "3.5.0",
     "@ecl/resources-ec-icons": "3.5.0",
-    "@ecl/resources-eu-icons": "3.5.0"
+    "@ecl/resources-eu-icons": "3.5.0",
+    "@ecl/vanilla-utility-background": "3.5.0",
+    "@ecl/vanilla-utility-border": "3.5.0",
+    "@ecl/vanilla-utility-clearfix": "3.5.0",
+    "@ecl/vanilla-utility-dimension": "3.5.0",
+    "@ecl/vanilla-utility-disablescroll": "3.5.0",
+    "@ecl/vanilla-utility-display": "3.5.0",
+    "@ecl/vanilla-utility-flex": "3.5.0",
+    "@ecl/vanilla-utility-float": "3.5.0",
+    "@ecl/vanilla-utility-media": "3.5.0",
+    "@ecl/vanilla-utility-print": "3.5.0",
+    "@ecl/vanilla-utility-screen-reader": "3.5.0",
+    "@ecl/vanilla-utility-spacing": "3.5.0",
+    "@ecl/vanilla-utility-typography": "3.5.0",
+    "@ecl/vanilla-utility-z-index": "3.5.0"
   },
   "repository": {
     "type": "git",
