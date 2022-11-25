@@ -16,5 +16,4 @@ rm -rf .build/images
 mkdir -p ./build/scripts
 mkdir -p ./build/images
 cp -r ./src/components/ecl-accordion/build ./build
-cp -r ./src/components/ecl-accordion/build ./build
 cp -r ./src/components/ecl-expandable/build ./build
