@@ -41,6 +41,11 @@ export namespace Components {
         "theme": string;
         "transform": string;
     }
+    interface EclTag {
+        "external": boolean;
+        "styleClass": string;
+        "variant": string;
+    }
 }
 declare global {
     interface HTMLEclAccordionElement extends Components.EclAccordion, HTMLStencilElement {
@@ -73,12 +78,19 @@ declare global {
         prototype: HTMLEclIconElement;
         new (): HTMLEclIconElement;
     };
+    interface HTMLEclTagElement extends Components.EclTag, HTMLStencilElement {
+    }
+    var HTMLEclTagElement: {
+        prototype: HTMLEclTagElement;
+        new (): HTMLEclTagElement;
+    };
     interface HTMLElementTagNameMap {
         "ecl-accordion": HTMLEclAccordionElement;
         "ecl-accordion-item": HTMLEclAccordionItemElement;
         "ecl-button": HTMLEclButtonElement;
         "ecl-expandable": HTMLEclExpandableElement;
         "ecl-icon": HTMLEclIconElement;
+        "ecl-tag": HTMLEclTagElement;
     }
 }
 declare namespace LocalJSX {
@@ -117,12 +129,18 @@ declare namespace LocalJSX {
         "theme"?: string;
         "transform"?: string;
     }
+    interface EclTag {
+        "external"?: boolean;
+        "styleClass"?: string;
+        "variant"?: string;
+    }
     interface IntrinsicElements {
         "ecl-accordion": EclAccordion;
         "ecl-accordion-item": EclAccordionItem;
         "ecl-button": EclButton;
         "ecl-expandable": EclExpandable;
         "ecl-icon": EclIcon;
+        "ecl-tag": EclTag;
     }
 }
 export { LocalJSX as JSX };
@@ -134,6 +152,7 @@ declare module "@stencil/core" {
             "ecl-button": LocalJSX.EclButton & JSXBase.HTMLAttributes<HTMLEclButtonElement>;
             "ecl-expandable": LocalJSX.EclExpandable & JSXBase.HTMLAttributes<HTMLEclExpandableElement>;
             "ecl-icon": LocalJSX.EclIcon & JSXBase.HTMLAttributes<HTMLEclIconElement>;
+            "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
         }
     }
 }

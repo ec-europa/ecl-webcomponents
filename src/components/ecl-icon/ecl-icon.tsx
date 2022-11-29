@@ -7,6 +7,7 @@ import { Component, Prop, h, getAssetPath } from '@stencil/core';
     eu: './build/styles/ecl-icon-eu.css',
   },
   shadow: false,
+  scoped: true,
   assetsDirs: ['build'],
 })
 

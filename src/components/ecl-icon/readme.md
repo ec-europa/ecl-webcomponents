@@ -22,12 +22,14 @@
 
  - [ecl-accordion-item](../ecl-accordion)
  - [ecl-expandable](../ecl-expandable)
+ - [ecl-tag](../ecl-tag)
 
 ### Graph
 ```mermaid
 graph TD;
   ecl-accordion-item --> ecl-icon
   ecl-expandable --> ecl-icon
+  ecl-tag --> ecl-icon
   style ecl-icon fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
