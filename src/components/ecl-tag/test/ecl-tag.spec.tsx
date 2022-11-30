@@ -11,7 +11,7 @@ describe('ecl-tag', () => {
               data-ecl-button-icon
               theme="ec"
             >
-            An ECL tag
+              An ECL tag
             </ecl-tag>`,
     });
 
@@ -25,7 +25,7 @@ describe('ecl-tag', () => {
               data-ecl-button-icon
               theme="ec"
             >
-            An ECL tag
+              An ECL tag
             </ecl-tag>`,
     });
 
@@ -39,7 +39,7 @@ describe('ecl-tag', () => {
               url="/example"
               theme="ec"
             >
-            An ECL tag
+              An ECL tag
             </ecl-tag>`,
     });
 
@@ -53,7 +53,7 @@ describe('ecl-tag', () => {
               url="/example"
               theme="eu"
             >
-            An ECL tag
+              An ECL tag
             </ecl-tag>`,
     });
 
@@ -66,20 +66,20 @@ describe('ecl-tag', () => {
               type="removable"
               theme="ec"
             >
-            An ECL tag
+              An ECL tag
             </ecl-tag>`,
     });
 
     expect(page.root).toMatchSnapshot();
   });
-    it('renders correctly in the removable variant in EU', async () => {
+  it('renders correctly in the removable variant in EU', async () => {
     const page = await newSpecPage({
       components: [EclTag, EclIcon],
       html: `<ecl-tag
               type="removable"
               theme="eu"
             >
-            An ECL tag
+              An ECL tag
             </ecl-tag>`,
     });
 
