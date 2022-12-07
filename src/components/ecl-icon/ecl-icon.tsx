@@ -19,9 +19,14 @@ export class EclIcon {
   @Prop({ mutable: true }) path: string;
   @Prop() transform: string = '';
   @Prop() theme: string = 'ec';
+  @Prop() sprite: string = '';
 
   componentWillLoad() {
-    this.path = getAssetPath(`./build/images/${this.theme}/icons.svg`);
+    if (!this.sprite) {
+      this.path = getAssetPath(`./build/images/${this.theme}/icons.svg`);
+    } else {
+      this.path = getAssetPath(`./build/images/${this.theme}/${this.sprite}.svg`);
+    }
   }
 
   getClass(): string {

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-social-media-share renders 1`] = `
+<ecl-social-media-share class="ecl-social-media-share ecl-social-media-share--horizontal" description="Share on social media" theme="ec" variant="horizontal">
+  <p class="ecl-social-media-share__description">
+    Share on social media
+  </p>
+  <ul class="ecl-social-media-share__list"></ul>
+</ecl-social-media-share>
+`;

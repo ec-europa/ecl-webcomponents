@@ -5,25 +5,16 @@ let staticDirs = [];
 
 if (!isProd) {
   staticDirs = [
-    path.resolve(
-      `${__dirname}/../src/components/ecl-expandable`
-    ),
-    path.resolve(
-      `${__dirname}/../src/components/ecl-accordion`
-    ),
+    path.resolve(`${__dirname}/../src/components/ecl-expandable`),
+    path.resolve(`${__dirname}/../src/components/ecl-accordion`),
+    path.resolve(`${__dirname}/../src/components/ecl-icon`),
   ];
 }
 
 module.exports = {
-  stories: [
-    "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
-  ],
-  addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-  ],
-  framework: "@storybook/html",
+  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
+  framework: '@storybook/html',
   staticDirs,
   core: {
     builder: 'webpack5',
@@ -31,4 +22,4 @@ module.exports = {
   features: {
     postcss: false,
   },
-}
+};
