@@ -42,6 +42,14 @@ export namespace Components {
         "theme": string;
         "transform": string;
     }
+    interface EclLink {
+        "external": boolean;
+        "path": string;
+        "styleClass": string;
+        "theme": string;
+        "titleAttr": string;
+        "variant": string;
+    }
     interface EclSocialMediaShare {
         "description": string;
         "items": string;
@@ -49,12 +57,6 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
         "variant": string;
-    }
-    interface EclSocialMediaShareItems {
-        "items": string;
-        "others": string;
-        "styleClass": string;
-        "theme": string;
     }
     interface EclTag {
         "external": boolean;
@@ -93,17 +95,17 @@ declare global {
         prototype: HTMLEclIconElement;
         new (): HTMLEclIconElement;
     };
+    interface HTMLEclLinkElement extends Components.EclLink, HTMLStencilElement {
+    }
+    var HTMLEclLinkElement: {
+        prototype: HTMLEclLinkElement;
+        new (): HTMLEclLinkElement;
+    };
     interface HTMLEclSocialMediaShareElement extends Components.EclSocialMediaShare, HTMLStencilElement {
     }
     var HTMLEclSocialMediaShareElement: {
         prototype: HTMLEclSocialMediaShareElement;
         new (): HTMLEclSocialMediaShareElement;
-    };
-    interface HTMLEclSocialMediaShareItemsElement extends Components.EclSocialMediaShareItems, HTMLStencilElement {
-    }
-    var HTMLEclSocialMediaShareItemsElement: {
-        prototype: HTMLEclSocialMediaShareItemsElement;
-        new (): HTMLEclSocialMediaShareItemsElement;
     };
     interface HTMLEclTagElement extends Components.EclTag, HTMLStencilElement {
     }
@@ -117,8 +119,8 @@ declare global {
         "ecl-button": HTMLEclButtonElement;
         "ecl-expandable": HTMLEclExpandableElement;
         "ecl-icon": HTMLEclIconElement;
+        "ecl-link": HTMLEclLinkElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
-        "ecl-social-media-share-items": HTMLEclSocialMediaShareItemsElement;
         "ecl-tag": HTMLEclTagElement;
     }
 }
@@ -159,6 +161,14 @@ declare namespace LocalJSX {
         "theme"?: string;
         "transform"?: string;
     }
+    interface EclLink {
+        "external"?: boolean;
+        "path"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "titleAttr"?: string;
+        "variant"?: string;
+    }
     interface EclSocialMediaShare {
         "description"?: string;
         "items"?: string;
@@ -166,12 +176,6 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "variant"?: string;
-    }
-    interface EclSocialMediaShareItems {
-        "items"?: string;
-        "others"?: string;
-        "styleClass"?: string;
-        "theme"?: string;
     }
     interface EclTag {
         "external"?: boolean;
@@ -184,8 +188,8 @@ declare namespace LocalJSX {
         "ecl-button": EclButton;
         "ecl-expandable": EclExpandable;
         "ecl-icon": EclIcon;
+        "ecl-link": EclLink;
         "ecl-social-media-share": EclSocialMediaShare;
-        "ecl-social-media-share-items": EclSocialMediaShareItems;
         "ecl-tag": EclTag;
     }
 }
@@ -198,8 +202,8 @@ declare module "@stencil/core" {
             "ecl-button": LocalJSX.EclButton & JSXBase.HTMLAttributes<HTMLEclButtonElement>;
             "ecl-expandable": LocalJSX.EclExpandable & JSXBase.HTMLAttributes<HTMLEclExpandableElement>;
             "ecl-icon": LocalJSX.EclIcon & JSXBase.HTMLAttributes<HTMLEclIconElement>;
+            "ecl-link": LocalJSX.EclLink & JSXBase.HTMLAttributes<HTMLEclLinkElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
-            "ecl-social-media-share-items": LocalJSX.EclSocialMediaShareItems & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareItemsElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
         }
     }

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-link renders correctly as a default link 1`] = `
+<ecl-link path="/example.html" theme="ec" variant="default">
+  <!---->
+  <a class="ecl-link ecl-link--default" href="/example.html">
+    A default link
+    <slot-fb name="icon-after"></slot-fb>
+  </a>
+</ecl-link>
+`;
+
+exports[`ecl-link renders correctly as a standalone link 1`] = `
+<ecl-link path="/example.html" theme="ec" variant="standalone">
+  <!---->
+  <a class="ecl-link ecl-link--standalone" href="/example.html">
+    A standalone link
+    <slot-fb name="icon-after"></slot-fb>
+  </a>
+</ecl-link>
+`;
+
+exports[`ecl-link renders correctly with an icon 1`] = `
+<ecl-link path="/example.html" theme="ec" variant="standalone">
+  <!---->
+  <ecl-icon hidden="" icon="check" slot="ecl-icon-after"></ecl-icon>
+  <a class="ecl-link ecl-link--standalone" href="/example.html">
+    <slot-fb name="icon-after"></slot-fb>
+  </a>
+</ecl-link>
+`;

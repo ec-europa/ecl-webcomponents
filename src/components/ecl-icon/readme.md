@@ -23,8 +23,8 @@
 
  - [ecl-accordion-item](../ecl-accordion)
  - [ecl-expandable](../ecl-expandable)
+ - [ecl-link](../ecl-link)
  - [ecl-social-media-share](../ecl-social-media-share)
- - [ecl-social-media-share-items](../ecl-social-media-share)
  - [ecl-tag](../ecl-tag)
 
 ### Graph
@@ -32,8 +32,8 @@
 graph TD;
   ecl-accordion-item --> ecl-icon
   ecl-expandable --> ecl-icon
+  ecl-link --> ecl-icon
   ecl-social-media-share --> ecl-icon
-  ecl-social-media-share-items --> ecl-icon
   ecl-tag --> ecl-icon
   style ecl-icon fill:#f9f,stroke:#333,stroke-width:4px
 ```

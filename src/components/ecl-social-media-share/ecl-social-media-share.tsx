@@ -28,7 +28,8 @@ export class EclSocialMediaShare {
 
   componentWillLoad() {
     const patchStyle = document.createElement('style');
-    patchStyle.innerHTML = `.ecl-social-media-share__item .ecl-icon { margin-inline-end: 0.5rem; }`;
+    patchStyle.innerHTML = `.ecl-social-media-share__item .ecl-icon { margin-inline-end: 0.5rem; }
+                            ecl-icon { display: inline-flex; vertical-align: sub; }`;
     document.body.appendChild(patchStyle);
   }
 
@@ -47,37 +48,35 @@ export class EclSocialMediaShare {
         <ul class="ecl-social-media-share__list">
         {itemsArray.length > 0 ? itemsArray.map((item) => (
           <li class="ecl-social-media-share__item">
-            <a
-              class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-share__link"
-              href={item.url}
+            <ecl-link
+              style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-share__link"
+              path={item.url}
+              icon-position="before"
             >
             <ecl-icon
-              icon={item.name + "-color"}
-              size="m"
-              style-class="ecl-link__icon"
+              slot="ecl-icon-before"
               sprite="icons-social-media"
-              theme={this.theme}
-            >
-            </ecl-icon>
+              icon={item.name + `-color`}
+              size="m"
+            ></ecl-icon>
               {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
-            </a>
+            </ecl-link>
           </li>
         )) : ''}
         { othersObject ? 
           <li class="ecl-social-media-share__item ecl-social-media-share__others">
-            <a
-              class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-share__link"
-              href={othersObject.url}
+            <ecl-link
+              style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-share__link"
+              path={othersObject.url}
+              icon-position="before"
             >
             <ecl-icon
+              slot="ecl-icon-before"
               icon="share"
               size="m"
-              style-class="ecl-link__icon"
-              theme={this.theme}
-            >
-            </ecl-icon>
+            ></ecl-icon>
               {othersObject.name}
-            </a>
+            </ecl-link>
           </li> : '' }
         </ul>
       </Host>
