@@ -9,7 +9,7 @@ exports[`ecl-date-block renders 1`] = `
     <span aria-hidden="true" class="ecl-date-block__day">
       24
     </span>
-    <abbr aria-hidden="true" class="ecl-date-block__month" title="September">
+    <abbr aria-hidden="true" class="ecl-date-block__month">
       Sep
     </abbr>
     <span aria-hidden="true" class="ecl-date-block__year">

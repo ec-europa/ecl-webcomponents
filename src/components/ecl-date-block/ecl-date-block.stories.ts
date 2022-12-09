@@ -46,7 +46,7 @@ const Template = (args) =>
   day="${args.day}"
   month="${args.month}"
   year="${args.year}"
-  date-time="${args.daytime}" 
+  date-time="${args.dateTime}" 
 >
 </ecl-date-block>`;
 
