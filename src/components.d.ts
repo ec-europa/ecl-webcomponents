@@ -52,6 +52,11 @@ export namespace Components {
         "theme": string;
         "transform": string;
     }
+    interface EclLabel {
+        "styleClass": string;
+        "theme": string;
+        "variant": string;
+    }
     interface EclLink {
         "external": boolean;
         "path": string;
@@ -111,6 +116,12 @@ declare global {
         prototype: HTMLEclIconElement;
         new (): HTMLEclIconElement;
     };
+    interface HTMLEclLabelElement extends Components.EclLabel, HTMLStencilElement {
+    }
+    var HTMLEclLabelElement: {
+        prototype: HTMLEclLabelElement;
+        new (): HTMLEclLabelElement;
+    };
     interface HTMLEclLinkElement extends Components.EclLink, HTMLStencilElement {
     }
     var HTMLEclLinkElement: {
@@ -136,6 +147,7 @@ declare global {
         "ecl-date-block": HTMLEclDateBlockElement;
         "ecl-expandable": HTMLEclExpandableElement;
         "ecl-icon": HTMLEclIconElement;
+        "ecl-label": HTMLEclLabelElement;
         "ecl-link": HTMLEclLinkElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
         "ecl-tag": HTMLEclTagElement;
@@ -188,6 +200,11 @@ declare namespace LocalJSX {
         "theme"?: string;
         "transform"?: string;
     }
+    interface EclLabel {
+        "styleClass"?: string;
+        "theme"?: string;
+        "variant"?: string;
+    }
     interface EclLink {
         "external"?: boolean;
         "path"?: string;
@@ -216,6 +233,7 @@ declare namespace LocalJSX {
         "ecl-date-block": EclDateBlock;
         "ecl-expandable": EclExpandable;
         "ecl-icon": EclIcon;
+        "ecl-label": EclLabel;
         "ecl-link": EclLink;
         "ecl-social-media-share": EclSocialMediaShare;
         "ecl-tag": EclTag;
@@ -231,6 +249,7 @@ declare module "@stencil/core" {
             "ecl-date-block": LocalJSX.EclDateBlock & JSXBase.HTMLAttributes<HTMLEclDateBlockElement>;
             "ecl-expandable": LocalJSX.EclExpandable & JSXBase.HTMLAttributes<HTMLEclExpandableElement>;
             "ecl-icon": LocalJSX.EclIcon & JSXBase.HTMLAttributes<HTMLEclIconElement>;
+            "ecl-label": LocalJSX.EclLabel & JSXBase.HTMLAttributes<HTMLEclLabelElement>;
             "ecl-link": LocalJSX.EclLink & JSXBase.HTMLAttributes<HTMLEclLinkElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
