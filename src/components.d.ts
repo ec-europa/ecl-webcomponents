@@ -23,6 +23,16 @@ export namespace Components {
         "theme": string;
         "type": string;
     }
+    interface EclDateBlock {
+        "dateTime": string;
+        "day": string;
+        "month": string;
+        "monthFull": string;
+        "styleClass": string;
+        "theme": string;
+        "variant": string;
+        "year": string;
+    }
     interface EclExpandable {
         "eclScript": boolean;
         "isExpanded": boolean;
@@ -83,6 +93,12 @@ declare global {
         prototype: HTMLEclButtonElement;
         new (): HTMLEclButtonElement;
     };
+    interface HTMLEclDateBlockElement extends Components.EclDateBlock, HTMLStencilElement {
+    }
+    var HTMLEclDateBlockElement: {
+        prototype: HTMLEclDateBlockElement;
+        new (): HTMLEclDateBlockElement;
+    };
     interface HTMLEclExpandableElement extends Components.EclExpandable, HTMLStencilElement {
     }
     var HTMLEclExpandableElement: {
@@ -117,6 +133,7 @@ declare global {
         "ecl-accordion": HTMLEclAccordionElement;
         "ecl-accordion-item": HTMLEclAccordionItemElement;
         "ecl-button": HTMLEclButtonElement;
+        "ecl-date-block": HTMLEclDateBlockElement;
         "ecl-expandable": HTMLEclExpandableElement;
         "ecl-icon": HTMLEclIconElement;
         "ecl-link": HTMLEclLinkElement;
@@ -141,6 +158,16 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "type"?: string;
+    }
+    interface EclDateBlock {
+        "dateTime"?: string;
+        "day"?: string;
+        "month"?: string;
+        "monthFull"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "variant"?: string;
+        "year"?: string;
     }
     interface EclExpandable {
         "eclScript"?: boolean;
@@ -186,6 +213,7 @@ declare namespace LocalJSX {
         "ecl-accordion": EclAccordion;
         "ecl-accordion-item": EclAccordionItem;
         "ecl-button": EclButton;
+        "ecl-date-block": EclDateBlock;
         "ecl-expandable": EclExpandable;
         "ecl-icon": EclIcon;
         "ecl-link": EclLink;
@@ -200,6 +228,7 @@ declare module "@stencil/core" {
             "ecl-accordion": LocalJSX.EclAccordion & JSXBase.HTMLAttributes<HTMLEclAccordionElement>;
             "ecl-accordion-item": LocalJSX.EclAccordionItem & JSXBase.HTMLAttributes<HTMLEclAccordionItemElement>;
             "ecl-button": LocalJSX.EclButton & JSXBase.HTMLAttributes<HTMLEclButtonElement>;
+            "ecl-date-block": LocalJSX.EclDateBlock & JSXBase.HTMLAttributes<HTMLEclDateBlockElement>;
             "ecl-expandable": LocalJSX.EclExpandable & JSXBase.HTMLAttributes<HTMLEclExpandableElement>;
             "ecl-icon": LocalJSX.EclIcon & JSXBase.HTMLAttributes<HTMLEclIconElement>;
             "ecl-link": LocalJSX.EclLink & JSXBase.HTMLAttributes<HTMLEclLinkElement>;
