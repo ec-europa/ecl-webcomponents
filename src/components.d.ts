@@ -76,6 +76,7 @@ export namespace Components {
     interface EclTag {
         "external": boolean;
         "styleClass": string;
+        "theme": string;
         "variant": string;
     }
 }
@@ -224,6 +225,7 @@ declare namespace LocalJSX {
     interface EclTag {
         "external"?: boolean;
         "styleClass"?: string;
+        "theme"?: string;
         "variant"?: string;
     }
     interface IntrinsicElements {

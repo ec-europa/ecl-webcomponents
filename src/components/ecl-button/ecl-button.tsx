@@ -1,4 +1,4 @@
-import { Component, Prop, h, Host } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core';
 
 @Component({
   tag: 'ecl-button',
@@ -23,17 +23,9 @@ export class EclButton {
     ].join(' ');
   }
 
-  componentWillLoad() {
-    const patchStyle = document.createElement('style');
-    patchStyle.innerHTML = `.ecl-button .ecl-icon { vertical-align: text-top; }
-                            .ecl-button__icon--after { margin-inline-start: 0.5rem; }
-                            .ecl-button__icon--before { margin-inline-end: 0.5rem; }`;
-    document.body.appendChild(patchStyle);
-  }
-
   render() {
     return (
-      <Host class={this.getClass()}>
+      <button class={this.getClass()}>
         <span class="ecl-button__container">
           <slot name="icon-before"></slot>
           <span class="ecl-button__label">
@@ -41,7 +33,7 @@ export class EclButton {
           </span>
           <slot name="icon-after"></slot>
         </span>
-      </Host>
+      </button>
     )
   }
 }

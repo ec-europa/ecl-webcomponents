@@ -66,7 +66,7 @@ ${args.icon && args.iconPosition === 'before' ?
     icon="${args.icon}"
     transform="${args.iconTransform}"
     theme="${args.theme}"
-    style-class="ecl-button__icon ecl-button__icon--before"
+    style-class="ecl-button__icon ecl-button__icon--before sc-ecl-button-${args.theme}"
   >
   </ecl-icon>` : ''}
     ${args.label}
@@ -76,7 +76,7 @@ ${args.icon && args.iconPosition === 'before' ?
       icon="${args.icon}"
       theme="${args.theme}"
       transform="${args.iconTransform}"
-      style-class="ecl-button__icon ecl-button__icon--after"
+      style-class="ecl-button__icon ecl-button__icon--after sc-ecl-button-${args.theme}"
   >
   </ecl-icon>` : ''}
 </ecl-button>`;

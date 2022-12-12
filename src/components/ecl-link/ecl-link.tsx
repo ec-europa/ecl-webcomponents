@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop} from '@stencil/core';
+import { Component, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 'ecl-link',
@@ -27,19 +27,11 @@ export class EclLink {
     ].join(' ');
   }
 
-  componentWillLoad() {
-    const patchStyle = document.createElement('style');
-    patchStyle.innerHTML = `.ecl-link .ecl-icon { vertical-align: middle; }
-                            .ecl-link__icon--after { margin-inline-start: 0.5rem !important; }
-                            .ecl-link__icon--before { margin-inline-end: 0.5rem !important; }`;
-    document.body.appendChild(patchStyle);
-  }
-
   getExternal() {
     return (
       <ecl-icon 
         icon="external"
-        style-class="ecl-link__icon ecl-link__icon--after"
+        style-class={`ecl-link__icon ecl-link__icon--after sc-ecl-link-${this.theme}`}
         size = "2xs"
       >
       </ecl-icon>
@@ -48,17 +40,15 @@ export class EclLink {
 
   render() {
     return (
-      <Host>
-        <a
-          class={this.getClass()}
-          href={this.path}
-          title={this.titleAttr}
-        >
-          <slot name="icon-before"></slot>
-          <slot></slot>
-          <slot name="icon-after">{ this.external ? this.getExternal() : '' }</slot>
-        </a>
-      </Host>
+      <a
+        class={this.getClass()}
+        href={this.path}
+        title={this.titleAttr}
+      >
+        <slot name="icon-before"></slot>
+        <slot></slot>
+        <slot name="icon-after">{ this.external ? this.getExternal() : '' }</slot>
+      </a>
     );
   }
 }

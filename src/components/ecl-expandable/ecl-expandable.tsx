@@ -1,4 +1,4 @@
-import { Component, h, Prop, Host, Element, getAssetPath } from '@stencil/core';
+import { Component, h, Prop, Element, getAssetPath } from '@stencil/core';
 declare const ECL: any;
 
 @Component({
@@ -41,12 +41,6 @@ export class EclExpandable {
       style.innerHTML = `@import "./build/styles/ecl-utilities-${this.theme}.css"`;
       document.body.appendChild(style);
     }
-
-    const patchStyle = document.createElement('style');
-    patchStyle.innerHTML = `.ecl-expandable .ecl-icon { vertical-align: text-top; }
-                            .ecl-button__icon--after:only-child { margin-inline-start: 0.5rem; }
-                            .ecl-button__icon--before:only-child { margin-inline-end: 0.5rem; }`;
-    document.body.appendChild(patchStyle);
   }
 
   getClass(): string {
@@ -58,8 +52,7 @@ export class EclExpandable {
 
   render() {
     return (
-      <Host
-        type="primary"
+      <div
         class={this.getClass()}
       > 
         <ecl-button
@@ -83,7 +76,7 @@ export class EclExpandable {
             size="fluid"
             theme={this.theme}
             transform="rotate-180"
-            style-class="ecl-button__icon ecl-button__icon--after"
+            style-class={`ecl-button__icon ecl-button__icon--after sc-ecl-button-${this.theme}`}
           ></ecl-icon>
         </ecl-button>
         <div
@@ -93,7 +86,7 @@ export class EclExpandable {
         >
           <slot></slot>
         </div>
-      </Host>
+      </div>
     )
   }
 }

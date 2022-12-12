@@ -1,23 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-expandable renders 1`] = `
-<ecl-expandable class="ecl-expandable" ecl-script="" icon-path="/icons.svg" id="expandable-id" label-collapsed="Expand" label-expanded="Collapse" theme="ec" type="primary" withutils="">
+<ecl-expandable ecl-script="" icon-path="/icons.svg" id="expandable-id" label-collapsed="Expand" label-expanded="Collapse" theme="ec" withutils="">
   <!---->
-  <ecl-button aria-controls="expandable-id-content" class="ecl-button ecl-button--secondary ecl-expandable__toggle" data-ecl-expandable-toggle data-ecl-label-collapsed="Expand" data-ecl-label-expanded="Collapse" style-class="ecl-expandable__toggle">
-    <!---->
-    <span class="ecl-button__container">
-      <span class="ecl-button__label">
-        <span class="ecl-button__label" data-ecl-label>
-          Expand
+  <div class="ecl-expandable">
+    <ecl-button aria-controls="expandable-id-content" data-ecl-expandable-toggle data-ecl-label-collapsed="Expand" data-ecl-label-expanded="Collapse" style-class="ecl-expandable__toggle">
+      <!---->
+      <button class="ecl-button ecl-button--secondary ecl-expandable__toggle">
+        <span class="ecl-button__container">
+          <span class="ecl-button__label">
+            <span class="ecl-button__label" data-ecl-label>
+              Expand
+            </span>
+          </span>
+          <ecl-icon icon="corner-arrow" size="fluid" slot="icon-after" style-class="ecl-button__icon ecl-button__icon--after sc-ecl-button-ec" theme="ec" transform="rotate-180"></ecl-icon>
         </span>
-      </span>
-      <ecl-icon icon="corner-arrow" size="fluid" slot="icon-after" style-class="ecl-button__icon ecl-button__icon--after" theme="ec" transform="rotate-180"></ecl-icon>
-    </span>
-  </ecl-button>
-  <div class="ecl-expandable__content" hidden="" id="expandable-id-content">
-    <p class="ecl-u-type-paragraph-m">
-      The EU is building an energy union that ensures Europe’s energy supply is safe, viable and accessible to all. In doing so, it can boost the economy and attract investments that can create new jobs opportunities.
-    </p>
+      </button>
+    </ecl-button>
+    <div class="ecl-expandable__content" hidden="" id="expandable-id-content">
+      <p class="ecl-u-type-paragraph-m">
+        The EU is building an energy union that ensures Europe’s energy supply is safe, viable and accessible to all. In doing so, it can boost the economy and attract investments that can create new jobs opportunities.
+      </p>
+    </div>
   </div>
 </ecl-expandable>
 `;

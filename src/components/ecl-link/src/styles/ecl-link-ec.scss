@@ -1,4 +1,15 @@
 @use '@ecl/theme-ec';
 
-@use '@ecl/vanilla-component-icon/icon-ec';
 @use '@ecl/vanilla-component-link/link-ec';
+
+.ecl-link .ecl-icon {
+  vertical-align: middle;
+}
+
+.ecl-link .ecl-link__icon--after {
+  margin-inline-start: 0.5rem;
+}
+
+.ecl-link .ecl-link__icon--before {
+  margin-inline-end: 0.5rem;
+}

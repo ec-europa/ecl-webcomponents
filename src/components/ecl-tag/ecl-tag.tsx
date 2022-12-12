@@ -10,6 +10,7 @@ import { Component, Prop, h } from '@stencil/core';
   scoped: true,
 })
 export class EclTag {
+  @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
   @Prop() external: boolean = false;
   @Prop() variant: string = 'display';
@@ -20,38 +21,6 @@ export class EclTag {
       `ecl-tag--${this.variant}`,
       this.styleClass
     ].join(' ');
-  }
-
-  componentWillLoad() {
-    if (this.variant === 'link' || this.variant === 'removable') {
-      const style = document.createElement('style');
-      if (this.variant === 'link') {    
-        style.innerHTML = `.ecl-tag a { color: #fff; }
-                            .ecl-tag__icon--external {
-                              margin-inline-start: 0.5rem !important;
-                              position: relative;
-                              top: 1px;
-                            }`;
-      } else {
-        style.innerHTML = `.ecl-tag .ecl-icon { fill: #fff; }
-                          .ecl-tag__icon-close {
-                            fill: map.get(theme.$color, 'white');
-                            left: 0;
-                            opacity: 1;
-                            position: absolute;
-                            top: 0;
-                          }
-                          .ecl-tag__icon-close-filled {
-                            fill: map.get(theme.$color, 'white');
-                            left: 0;
-                            opacity: 0;
-                            position: absolute;
-                            top: 0;
-                          };`
-      }
-
-      document.body.appendChild(style);
-    }
   }
 
   getTag(variant) {
@@ -73,7 +42,7 @@ export class EclTag {
     return (
       <ecl-icon 
         icon="external"
-        style-class="ecl-tag__icon ecl-tag__icon--external"
+        style-class={`ecl-tag__icon ecl-tag__icon--external sc-ecl-tag-${this.theme}`}
         size = "2xs"
       >
       </ecl-icon>
@@ -87,12 +56,12 @@ export class EclTag {
       >
         <ecl-icon 
           icon="close"
-          style-class="ecl-tag__icon-close"
+          style-class={`ecl-tag__icon-close sc-ecl-tag-${this.theme}`}
         >
         </ecl-icon>
         <ecl-icon
           icon="close-filled"
-          style-class="ecl-tag__icon-close-filled"
+          style-class={`ecl-tag__icon-close-filled sc-ecl-tag-${this.theme}`}
         ></ecl-icon>
       </span>
     )
@@ -105,8 +74,8 @@ export class EclTag {
         class={this.getClass()}
       >
         <slot></slot>
-        { this.variant === 'link' && this.external ? <this.getExternal /> : '' }
-        { this.variant === 'removable' ? <this.getRemovable /> : '' }
+        { this.variant === 'link' && this.external ? this.getExternal() : '' }
+        { this.variant === 'removable' ? this.getRemovable() : '' }
       </Element>
     )
   }

@@ -1,4 +1,4 @@
-import { Component, Prop, h, Host, Element, getAssetPath } from '@stencil/core';
+import { Component, Prop, h, Element, getAssetPath } from '@stencil/core';
 declare const ECL: any;
 
 @Component({
@@ -49,11 +49,11 @@ export class EclAccordion {
 
   render() {
     return (
-      <Host
+      <div
         class={this.getClass()}
       >
         <slot></slot> 
-      </Host>
+      </div>
     )
   }
 }

@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'ecl-social-media-share',
@@ -38,7 +38,7 @@ export class EclSocialMediaShare {
     const othersObject = this.others ? JSON.parse(this.others) : '';
 
     return (
-      <Host 
+      <div 
         class={this.getClass()}
       >
       { this.description ? 
@@ -79,7 +79,7 @@ export class EclSocialMediaShare {
             </ecl-link>
           </li> : '' }
         </ul>
-      </Host>
+      </div>
     );
   }
 }

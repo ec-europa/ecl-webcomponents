@@ -4,26 +4,16 @@
 @use '@ecl/vanilla-component-link/link-eu';
 @use '@ecl/vanilla-component-button/button-eu';
 
-:host {
-  @extend .ecl-button;
+.ecl-button .ecl-icon {
+  vertical-align: text-top;
 }
 
-:host(.ecl-button--primary) {
-  @extend .ecl-button--primary;
+.ecl-button__icon--after,
+.ecl-button__icon--after:only-child {
+  margin-inline-start: 0.5rem;
 }
 
-:host(.ecl-button--secondary) {
-  @extend .ecl-button--secondary;
-}
-
-:host(.ecl-button--call) {
-  @extend .ecl-button--call;
-}
-
-:host(.ecl-button--ghost) {
-  @extend .ecl-button--ghost;
-}
-
-:host(.ecl-button--disabled) {
-  @extend .ecl-button--disabled;
+.ecl-button__icon--before,
+.ecl-button__icon--before:only-child {
+  margin-inline-end: 0.5rem;
 }
