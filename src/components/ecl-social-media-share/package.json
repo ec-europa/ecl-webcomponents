@@ -7,6 +7,7 @@
   "main": "ecl-tag.tsx",
   "private": true,
   "scripts": {
+    "build:copy": "cross-env ecl-builder copy",
     "build:styles": "cross-env ecl-builder styles",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
