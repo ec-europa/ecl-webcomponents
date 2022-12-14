@@ -65,6 +65,20 @@ export namespace Components {
         "titleAttr": string;
         "variant": string;
     }
+    interface EclMediaContainer {
+        "alt": string;
+        "description": string;
+        "eclScript": boolean;
+        "embeddedMedia": boolean;
+        "fullWidth": boolean;
+        "image": string;
+        "ratio": string;
+        "sources": string;
+        "styleClass": string;
+        "theme": string;
+        "tracks": string;
+        "withUtils": boolean;
+    }
     interface EclSocialMediaShare {
         "description": string;
         "items": string;
@@ -129,6 +143,12 @@ declare global {
         prototype: HTMLEclLinkElement;
         new (): HTMLEclLinkElement;
     };
+    interface HTMLEclMediaContainerElement extends Components.EclMediaContainer, HTMLStencilElement {
+    }
+    var HTMLEclMediaContainerElement: {
+        prototype: HTMLEclMediaContainerElement;
+        new (): HTMLEclMediaContainerElement;
+    };
     interface HTMLEclSocialMediaShareElement extends Components.EclSocialMediaShare, HTMLStencilElement {
     }
     var HTMLEclSocialMediaShareElement: {
@@ -150,6 +170,7 @@ declare global {
         "ecl-icon": HTMLEclIconElement;
         "ecl-label": HTMLEclLabelElement;
         "ecl-link": HTMLEclLinkElement;
+        "ecl-media-container": HTMLEclMediaContainerElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
         "ecl-tag": HTMLEclTagElement;
     }
@@ -214,6 +235,20 @@ declare namespace LocalJSX {
         "titleAttr"?: string;
         "variant"?: string;
     }
+    interface EclMediaContainer {
+        "alt"?: string;
+        "description"?: string;
+        "eclScript"?: boolean;
+        "embeddedMedia"?: boolean;
+        "fullWidth"?: boolean;
+        "image"?: string;
+        "ratio"?: string;
+        "sources"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "tracks"?: string;
+        "withUtils"?: boolean;
+    }
     interface EclSocialMediaShare {
         "description"?: string;
         "items"?: string;
@@ -237,6 +272,7 @@ declare namespace LocalJSX {
         "ecl-icon": EclIcon;
         "ecl-label": EclLabel;
         "ecl-link": EclLink;
+        "ecl-media-container": EclMediaContainer;
         "ecl-social-media-share": EclSocialMediaShare;
         "ecl-tag": EclTag;
     }
@@ -253,6 +289,7 @@ declare module "@stencil/core" {
             "ecl-icon": LocalJSX.EclIcon & JSXBase.HTMLAttributes<HTMLEclIconElement>;
             "ecl-label": LocalJSX.EclLabel & JSXBase.HTMLAttributes<HTMLEclLabelElement>;
             "ecl-link": LocalJSX.EclLink & JSXBase.HTMLAttributes<HTMLEclLinkElement>;
+            "ecl-media-container": LocalJSX.EclMediaContainer & JSXBase.HTMLAttributes<HTMLEclMediaContainerElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
         }
