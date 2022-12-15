@@ -42,6 +42,21 @@ export namespace Components {
         "theme": string;
         "withUtils": boolean;
     }
+    interface EclFactFigures {
+        "columns": number;
+        "displayIcons": boolean;
+        "styleClass": string;
+        "theme": string;
+        "withUtils": boolean;
+    }
+    interface EclFactFiguresItem {
+        "icon": string;
+        "iconTransform": string;
+        "itemTitle": string;
+        "styleClass": string;
+        "theme": string;
+        "value": string;
+    }
     interface EclIcon {
         "color": string;
         "icon": string;
@@ -134,6 +149,18 @@ declare global {
         prototype: HTMLEclExpandableElement;
         new (): HTMLEclExpandableElement;
     };
+    interface HTMLEclFactFiguresElement extends Components.EclFactFigures, HTMLStencilElement {
+    }
+    var HTMLEclFactFiguresElement: {
+        prototype: HTMLEclFactFiguresElement;
+        new (): HTMLEclFactFiguresElement;
+    };
+    interface HTMLEclFactFiguresItemElement extends Components.EclFactFiguresItem, HTMLStencilElement {
+    }
+    var HTMLEclFactFiguresItemElement: {
+        prototype: HTMLEclFactFiguresItemElement;
+        new (): HTMLEclFactFiguresItemElement;
+    };
     interface HTMLEclIconElement extends Components.EclIcon, HTMLStencilElement {
     }
     var HTMLEclIconElement: {
@@ -182,6 +209,8 @@ declare global {
         "ecl-button": HTMLEclButtonElement;
         "ecl-date-block": HTMLEclDateBlockElement;
         "ecl-expandable": HTMLEclExpandableElement;
+        "ecl-fact-figures": HTMLEclFactFiguresElement;
+        "ecl-fact-figures-item": HTMLEclFactFiguresItemElement;
         "ecl-icon": HTMLEclIconElement;
         "ecl-label": HTMLEclLabelElement;
         "ecl-link": HTMLEclLinkElement;
@@ -227,6 +256,21 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "withUtils"?: boolean;
+    }
+    interface EclFactFigures {
+        "columns"?: number;
+        "displayIcons"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+        "withUtils"?: boolean;
+    }
+    interface EclFactFiguresItem {
+        "icon"?: string;
+        "iconTransform"?: string;
+        "itemTitle"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "value"?: string;
     }
     interface EclIcon {
         "color"?: string;
@@ -294,6 +338,8 @@ declare namespace LocalJSX {
         "ecl-button": EclButton;
         "ecl-date-block": EclDateBlock;
         "ecl-expandable": EclExpandable;
+        "ecl-fact-figures": EclFactFigures;
+        "ecl-fact-figures-item": EclFactFiguresItem;
         "ecl-icon": EclIcon;
         "ecl-label": EclLabel;
         "ecl-link": EclLink;
@@ -312,6 +358,8 @@ declare module "@stencil/core" {
             "ecl-button": LocalJSX.EclButton & JSXBase.HTMLAttributes<HTMLEclButtonElement>;
             "ecl-date-block": LocalJSX.EclDateBlock & JSXBase.HTMLAttributes<HTMLEclDateBlockElement>;
             "ecl-expandable": LocalJSX.EclExpandable & JSXBase.HTMLAttributes<HTMLEclExpandableElement>;
+            "ecl-fact-figures": LocalJSX.EclFactFigures & JSXBase.HTMLAttributes<HTMLEclFactFiguresElement>;
+            "ecl-fact-figures-item": LocalJSX.EclFactFiguresItem & JSXBase.HTMLAttributes<HTMLEclFactFiguresItemElement>;
             "ecl-icon": LocalJSX.EclIcon & JSXBase.HTMLAttributes<HTMLEclIconElement>;
             "ecl-label": LocalJSX.EclLabel & JSXBase.HTMLAttributes<HTMLEclLabelElement>;
             "ecl-link": LocalJSX.EclLink & JSXBase.HTMLAttributes<HTMLEclLinkElement>;

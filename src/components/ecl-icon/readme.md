@@ -23,6 +23,7 @@
 
  - [ecl-accordion-item](../ecl-accordion)
  - [ecl-expandable](../ecl-expandable)
+ - [ecl-fact-figures-item](../ecl-fact-figures)
  - [ecl-link](../ecl-link)
  - [ecl-message](../ecl-message)
  - [ecl-social-media-share](../ecl-social-media-share)
@@ -33,6 +34,7 @@
 graph TD;
   ecl-accordion-item --> ecl-icon
   ecl-expandable --> ecl-icon
+  ecl-fact-figures-item --> ecl-icon
   ecl-link --> ecl-icon
   ecl-message --> ecl-icon
   ecl-social-media-share --> ecl-icon
