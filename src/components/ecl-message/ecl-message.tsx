@@ -34,7 +34,7 @@ export class EclMessage {
     return this.variant === 'information' ? 'info' : this.variant;
   }
 
-  componentWillLoad() {
+  componentDidRender() {
     if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
       const style = document.createElement('style');
       style.id = 'ecl-utils-styles';
@@ -72,6 +72,7 @@ export class EclMessage {
           <ecl-button
             type="ghost"
             style-class={`ecl-message__close sc-ecl-message-${this.theme}`}
+            data-ecl-message-close
           >
             {this.closeLabel}
             <ecl-icon
