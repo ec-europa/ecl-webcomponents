@@ -17,11 +17,13 @@
 ### Used by
 
  - [ecl-expandable](../ecl-expandable)
+ - [ecl-message](../ecl-message)
 
 ### Graph
 ```mermaid
 graph TD;
   ecl-expandable --> ecl-button
+  ecl-message --> ecl-button
   style ecl-button fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

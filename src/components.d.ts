@@ -79,6 +79,15 @@ export namespace Components {
         "tracks": string;
         "withUtils": boolean;
     }
+    interface EclMessage {
+        "closeLabel": string;
+        "eclScript": boolean;
+        "messageTitle": string;
+        "styleClass": string;
+        "theme": string;
+        "variant": string;
+        "withUtils": boolean;
+    }
     interface EclSocialMediaShare {
         "description": string;
         "items": string;
@@ -149,6 +158,12 @@ declare global {
         prototype: HTMLEclMediaContainerElement;
         new (): HTMLEclMediaContainerElement;
     };
+    interface HTMLEclMessageElement extends Components.EclMessage, HTMLStencilElement {
+    }
+    var HTMLEclMessageElement: {
+        prototype: HTMLEclMessageElement;
+        new (): HTMLEclMessageElement;
+    };
     interface HTMLEclSocialMediaShareElement extends Components.EclSocialMediaShare, HTMLStencilElement {
     }
     var HTMLEclSocialMediaShareElement: {
@@ -171,6 +186,7 @@ declare global {
         "ecl-label": HTMLEclLabelElement;
         "ecl-link": HTMLEclLinkElement;
         "ecl-media-container": HTMLEclMediaContainerElement;
+        "ecl-message": HTMLEclMessageElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
         "ecl-tag": HTMLEclTagElement;
     }
@@ -249,6 +265,15 @@ declare namespace LocalJSX {
         "tracks"?: string;
         "withUtils"?: boolean;
     }
+    interface EclMessage {
+        "closeLabel"?: string;
+        "eclScript"?: boolean;
+        "messageTitle"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "variant"?: string;
+        "withUtils"?: boolean;
+    }
     interface EclSocialMediaShare {
         "description"?: string;
         "items"?: string;
@@ -273,6 +298,7 @@ declare namespace LocalJSX {
         "ecl-label": EclLabel;
         "ecl-link": EclLink;
         "ecl-media-container": EclMediaContainer;
+        "ecl-message": EclMessage;
         "ecl-social-media-share": EclSocialMediaShare;
         "ecl-tag": EclTag;
     }
@@ -290,6 +316,7 @@ declare module "@stencil/core" {
             "ecl-label": LocalJSX.EclLabel & JSXBase.HTMLAttributes<HTMLEclLabelElement>;
             "ecl-link": LocalJSX.EclLink & JSXBase.HTMLAttributes<HTMLEclLinkElement>;
             "ecl-media-container": LocalJSX.EclMediaContainer & JSXBase.HTMLAttributes<HTMLEclMediaContainerElement>;
+            "ecl-message": LocalJSX.EclMessage & JSXBase.HTMLAttributes<HTMLEclMessageElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
         }

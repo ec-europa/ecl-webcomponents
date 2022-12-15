@@ -1,0 +1,17 @@
+@use '@ecl/theme-eu';
+
+@use '@ecl/vanilla-component-message/message-eu';
+
+ecl-button {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.ecl-message__icon.sc-ecl-icon-eu {
+  margin-inline-end: 1rem;
+}
+
+.ecl-message__close * {
+  display: inline-flex;
+  margin-inline-start: 0.5rem;
+}

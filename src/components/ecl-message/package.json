@@ -1,0 +1,53 @@
+{
+  "name": "@ecl/web-components-message",
+  "author": "European Commission",
+  "license": "EUPL-1.2",
+  "version": "0.0.0",
+  "description": "ECL Message",
+  "main": "ecl-message.tsx",
+  "private": true,
+  "scripts": {
+    "build:styles": "cross-env ecl-builder styles",
+    "build:scripts": "cross-env ecl-builder scripts",
+    "build": "run-s clean build:*",
+    "clean": "rimraf build",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@ecl/builder": "3.6.0",
+    "@ecl/specs-component-icon": "3.6.0",
+    "@ecl/vanilla-component-icon": "3.6.0",
+    "@ecl/resources-ec-icons": "3.6.0",
+    "@ecl/resources-eu-icons": "3.6.0",
+    "@ecl/vanilla-component-message": "3.6.0",
+    "@ecl/vanilla-layout-grid": "3.6.0",
+    "@ecl/vanilla-utility-background": "3.6.0",
+    "@ecl/vanilla-utility-border": "3.6.0",
+    "@ecl/vanilla-utility-clearfix": "3.6.0",
+    "@ecl/vanilla-utility-dimension": "3.6.0",
+    "@ecl/vanilla-utility-disablescroll": "3.6.0",
+    "@ecl/vanilla-utility-display": "3.6.0",
+    "@ecl/vanilla-utility-flex": "3.6.0",
+    "@ecl/vanilla-utility-float": "3.6.0",
+    "@ecl/vanilla-utility-media": "3.6.0",
+    "@ecl/vanilla-utility-print": "3.6.0",
+    "@ecl/vanilla-utility-screen-reader": "3.6.0",
+    "@ecl/vanilla-utility-spacing": "3.6.0",
+    "@ecl/vanilla-utility-typography": "3.6.0",
+    "@ecl/vanilla-utility-z-index": "3.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planctus/ecl-webcomponents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/planctus/ecl-webcomponents/issues"
+  },
+  "homepage": "https://github.com/planctus/ecl-webcomponents",
+  "keywords": [
+    "ecl",
+    "europa-component-library",
+    "design-system",
+    "web-components"
+  ]
+}

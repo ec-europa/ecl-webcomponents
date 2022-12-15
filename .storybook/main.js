@@ -10,6 +10,7 @@ if (!isProd) {
     path.resolve(`${__dirname}/../src/components/ecl-icon`),
     path.resolve(`${__dirname}/../src/components/ecl-social-media-share`),
     path.resolve(`${__dirname}/../src/components/ecl-media-container`),
+    path.resolve(`${__dirname}/../src/components/ecl-message`),
   ];
 }
 
