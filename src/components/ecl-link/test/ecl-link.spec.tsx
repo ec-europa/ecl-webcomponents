@@ -1,5 +1,6 @@
 import { newSpecPage } from '@stencil/core/testing';
 import { EclLink } from '../ecl-link';
+import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-link', () => {
   it('renders correctly as a default link', async () => {
@@ -32,7 +33,7 @@ describe('ecl-link', () => {
   });
   it('renders correctly with an icon', async () => {
     const page = await newSpecPage({
-      components: [EclLink],
+      components: [EclLink, EclIcon],
       html: `<ecl-link
               variant="standalone"
               theme="ec"

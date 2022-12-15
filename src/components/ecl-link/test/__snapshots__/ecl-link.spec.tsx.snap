@@ -23,7 +23,11 @@ exports[`ecl-link renders correctly as a standalone link 1`] = `
 exports[`ecl-link renders correctly with an icon 1`] = `
 <ecl-link path="/example.html" theme="ec" variant="standalone">
   <!---->
-  <ecl-icon hidden="" icon="check" slot="ecl-icon-after"></ecl-icon>
+  <ecl-icon hidden="" icon="check" slot="ecl-icon-after">
+    <svg class="ecl-icon ecl-icon--xs">
+      <use xlink:href="/build/images/ec/icons.svg#check"></use>
+    </svg>
+  </ecl-icon>
   <a class="ecl-link ecl-link--standalone" href="/example.html">
     <slot-fb name="icon-after"></slot-fb>
   </a>

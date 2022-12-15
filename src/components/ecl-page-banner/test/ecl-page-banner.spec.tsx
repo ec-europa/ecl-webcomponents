@@ -1,11 +1,12 @@
 import { newSpecPage } from '@stencil/core/testing';
 import { EclPageBanner } from '../ecl-page-banner';
 import { EclLink } from '../../ecl-link/ecl-link';
+import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-page-banner', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclPageBanner, EclLink],
+      components: [EclPageBanner, EclLink, EclIcon],
       html: `<ecl-page-banner
               variant="primary"
               theme="ec"
