@@ -57,6 +57,18 @@ export namespace Components {
         "theme": string;
         "value": string;
     }
+    interface EclHeroBanner {
+        "bannerTitle": string;
+        "centered": boolean;
+        "ctaLabel": string;
+        "ctaLink": string;
+        "external": boolean;
+        "fullWidth": boolean;
+        "image": string;
+        "styleClass": string;
+        "theme": string;
+        "variant": string;
+    }
     interface EclIcon {
         "color": string;
         "icon": string;
@@ -173,6 +185,12 @@ declare global {
         prototype: HTMLEclFactFiguresItemElement;
         new (): HTMLEclFactFiguresItemElement;
     };
+    interface HTMLEclHeroBannerElement extends Components.EclHeroBanner, HTMLStencilElement {
+    }
+    var HTMLEclHeroBannerElement: {
+        prototype: HTMLEclHeroBannerElement;
+        new (): HTMLEclHeroBannerElement;
+    };
     interface HTMLEclIconElement extends Components.EclIcon, HTMLStencilElement {
     }
     var HTMLEclIconElement: {
@@ -229,6 +247,7 @@ declare global {
         "ecl-expandable": HTMLEclExpandableElement;
         "ecl-fact-figures": HTMLEclFactFiguresElement;
         "ecl-fact-figures-item": HTMLEclFactFiguresItemElement;
+        "ecl-hero-banner": HTMLEclHeroBannerElement;
         "ecl-icon": HTMLEclIconElement;
         "ecl-label": HTMLEclLabelElement;
         "ecl-link": HTMLEclLinkElement;
@@ -290,6 +309,18 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "value"?: string;
+    }
+    interface EclHeroBanner {
+        "bannerTitle"?: string;
+        "centered"?: boolean;
+        "ctaLabel"?: string;
+        "ctaLink"?: string;
+        "external"?: boolean;
+        "fullWidth"?: boolean;
+        "image"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "variant"?: string;
     }
     interface EclIcon {
         "color"?: string;
@@ -371,6 +402,7 @@ declare namespace LocalJSX {
         "ecl-expandable": EclExpandable;
         "ecl-fact-figures": EclFactFigures;
         "ecl-fact-figures-item": EclFactFiguresItem;
+        "ecl-hero-banner": EclHeroBanner;
         "ecl-icon": EclIcon;
         "ecl-label": EclLabel;
         "ecl-link": EclLink;
@@ -392,6 +424,7 @@ declare module "@stencil/core" {
             "ecl-expandable": LocalJSX.EclExpandable & JSXBase.HTMLAttributes<HTMLEclExpandableElement>;
             "ecl-fact-figures": LocalJSX.EclFactFigures & JSXBase.HTMLAttributes<HTMLEclFactFiguresElement>;
             "ecl-fact-figures-item": LocalJSX.EclFactFiguresItem & JSXBase.HTMLAttributes<HTMLEclFactFiguresItemElement>;
+            "ecl-hero-banner": LocalJSX.EclHeroBanner & JSXBase.HTMLAttributes<HTMLEclHeroBannerElement>;
             "ecl-icon": LocalJSX.EclIcon & JSXBase.HTMLAttributes<HTMLEclIconElement>;
             "ecl-label": LocalJSX.EclLabel & JSXBase.HTMLAttributes<HTMLEclLabelElement>;
             "ecl-link": LocalJSX.EclLink & JSXBase.HTMLAttributes<HTMLEclLinkElement>;

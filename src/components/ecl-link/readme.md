@@ -21,6 +21,7 @@
 
 ### Used by
 
+ - [ecl-hero-banner](../ecl-hero-banner)
  - [ecl-page-banner](../ecl-page-banner)
  - [ecl-social-media-share](../ecl-social-media-share)
 
@@ -32,6 +33,7 @@
 ```mermaid
 graph TD;
   ecl-link --> ecl-icon
+  ecl-hero-banner --> ecl-link
   ecl-page-banner --> ecl-link
   ecl-social-media-share --> ecl-link
   style ecl-link fill:#f9f,stroke:#333,stroke-width:4px

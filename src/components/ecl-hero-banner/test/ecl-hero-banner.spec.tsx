@@ -1,12 +1,12 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { EclPageBanner } from '../ecl-page-banner';
+import { EclHeroBanner } from '../ecl-hero-banner';
 import { EclLink } from '../../ecl-link/ecl-link';
 
 describe('ecl-page-banner', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclPageBanner, EclLink],
-      html: `<ecl-page-banner
+      components: [EclHeroBanner, EclLink],
+      html: `<ecl-hero-banner
               variant="primary"
               theme="ec"
               cta-link="/example.html"
@@ -15,9 +15,10 @@ describe('ecl-page-banner', () => {
               banner-title="EU Budget for the future"
             >
               Innovation, economy, environment and geopolitics
-            </ecl-page-banner>`,
+            </ecl-hero-banner>`,
     });
 
     expect(page.root).toMatchSnapshot();
   });
 });
+
