@@ -26,6 +26,7 @@
  - [ecl-fact-figures-item](../ecl-fact-figures)
  - [ecl-link](../ecl-link)
  - [ecl-message](../ecl-message)
+ - [ecl-page-banner](../ecl-page-banner)
  - [ecl-social-media-share](../ecl-social-media-share)
  - [ecl-tag](../ecl-tag)
 
@@ -37,6 +38,7 @@ graph TD;
   ecl-fact-figures-item --> ecl-icon
   ecl-link --> ecl-icon
   ecl-message --> ecl-icon
+  ecl-page-banner --> ecl-icon
   ecl-social-media-share --> ecl-icon
   ecl-tag --> ecl-icon
   style ecl-icon fill:#f9f,stroke:#333,stroke-width:4px

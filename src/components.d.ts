@@ -103,6 +103,18 @@ export namespace Components {
         "variant": string;
         "withUtils": boolean;
     }
+    interface EclPageBanner {
+        "bannerTitle": string;
+        "centered": boolean;
+        "ctaLabel": string;
+        "ctaLink": string;
+        "external": boolean;
+        "fullWidth": boolean;
+        "image": string;
+        "styleClass": string;
+        "theme": string;
+        "variant": string;
+    }
     interface EclSocialMediaShare {
         "description": string;
         "items": string;
@@ -191,6 +203,12 @@ declare global {
         prototype: HTMLEclMessageElement;
         new (): HTMLEclMessageElement;
     };
+    interface HTMLEclPageBannerElement extends Components.EclPageBanner, HTMLStencilElement {
+    }
+    var HTMLEclPageBannerElement: {
+        prototype: HTMLEclPageBannerElement;
+        new (): HTMLEclPageBannerElement;
+    };
     interface HTMLEclSocialMediaShareElement extends Components.EclSocialMediaShare, HTMLStencilElement {
     }
     var HTMLEclSocialMediaShareElement: {
@@ -216,6 +234,7 @@ declare global {
         "ecl-link": HTMLEclLinkElement;
         "ecl-media-container": HTMLEclMediaContainerElement;
         "ecl-message": HTMLEclMessageElement;
+        "ecl-page-banner": HTMLEclPageBannerElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
         "ecl-tag": HTMLEclTagElement;
     }
@@ -318,6 +337,18 @@ declare namespace LocalJSX {
         "variant"?: string;
         "withUtils"?: boolean;
     }
+    interface EclPageBanner {
+        "bannerTitle"?: string;
+        "centered"?: boolean;
+        "ctaLabel"?: string;
+        "ctaLink"?: string;
+        "external"?: boolean;
+        "fullWidth"?: boolean;
+        "image"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "variant"?: string;
+    }
     interface EclSocialMediaShare {
         "description"?: string;
         "items"?: string;
@@ -345,6 +376,7 @@ declare namespace LocalJSX {
         "ecl-link": EclLink;
         "ecl-media-container": EclMediaContainer;
         "ecl-message": EclMessage;
+        "ecl-page-banner": EclPageBanner;
         "ecl-social-media-share": EclSocialMediaShare;
         "ecl-tag": EclTag;
     }
@@ -365,6 +397,7 @@ declare module "@stencil/core" {
             "ecl-link": LocalJSX.EclLink & JSXBase.HTMLAttributes<HTMLEclLinkElement>;
             "ecl-media-container": LocalJSX.EclMediaContainer & JSXBase.HTMLAttributes<HTMLEclMediaContainerElement>;
             "ecl-message": LocalJSX.EclMessage & JSXBase.HTMLAttributes<HTMLEclMessageElement>;
+            "ecl-page-banner": LocalJSX.EclPageBanner & JSXBase.HTMLAttributes<HTMLEclPageBannerElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
         }

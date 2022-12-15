@@ -7,7 +7,7 @@ import { Component, h, Prop} from '@stencil/core';
     eu: './build/styles/ecl-link-eu.css',
   },
   shadow: false,
-  scoped: true,
+  scoped: false,
   assetsDirs: ['build'],
 })
 
