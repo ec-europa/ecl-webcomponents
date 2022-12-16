@@ -165,8 +165,6 @@ export namespace Components {
         "theme": string;
         "variant": string;
     }
-    interface EclTest {
-    }
 }
 declare global {
     interface HTMLEclAccordionElement extends Components.EclAccordion, HTMLStencilElement {
@@ -277,12 +275,6 @@ declare global {
         prototype: HTMLEclTagElement;
         new (): HTMLEclTagElement;
     };
-    interface HTMLEclTestElement extends Components.EclTest, HTMLStencilElement {
-    }
-    var HTMLEclTestElement: {
-        prototype: HTMLEclTestElement;
-        new (): HTMLEclTestElement;
-    };
     interface HTMLElementTagNameMap {
         "ecl-accordion": HTMLEclAccordionElement;
         "ecl-accordion-item": HTMLEclAccordionItemElement;
@@ -302,7 +294,6 @@ declare global {
         "ecl-page-banner": HTMLEclPageBannerElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
         "ecl-tag": HTMLEclTagElement;
-        "ecl-test": HTMLEclTestElement;
     }
 }
 declare namespace LocalJSX {
@@ -465,8 +456,6 @@ declare namespace LocalJSX {
         "theme"?: string;
         "variant"?: string;
     }
-    interface EclTest {
-    }
     interface IntrinsicElements {
         "ecl-accordion": EclAccordion;
         "ecl-accordion-item": EclAccordionItem;
@@ -486,7 +475,6 @@ declare namespace LocalJSX {
         "ecl-page-banner": EclPageBanner;
         "ecl-social-media-share": EclSocialMediaShare;
         "ecl-tag": EclTag;
-        "ecl-test": EclTest;
     }
 }
 export { LocalJSX as JSX };
@@ -511,7 +499,6 @@ declare module "@stencil/core" {
             "ecl-page-banner": LocalJSX.EclPageBanner & JSXBase.HTMLAttributes<HTMLEclPageBannerElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
-            "ecl-test": LocalJSX.EclTest & JSXBase.HTMLAttributes<HTMLEclTestElement>;
         }
     }
 }
