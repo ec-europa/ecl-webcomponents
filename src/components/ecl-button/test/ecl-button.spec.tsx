@@ -19,6 +19,7 @@ describe('ecl-button', () => {
                 style-class="ecl-button__icon ecl-button__icon--before"
               >
               </ecl-icon>
+              Button label
             </ecl-button>`,
     });
 

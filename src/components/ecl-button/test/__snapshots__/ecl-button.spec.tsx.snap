@@ -11,6 +11,7 @@ exports[`ecl-button renders 1`] = `
         </svg>
       </ecl-icon>
       <span class="ecl-button__label">
+        Button label
       </span>
     </span>
   </button>

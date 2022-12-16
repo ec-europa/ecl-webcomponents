@@ -43,9 +43,11 @@
     "test:update": "rimraf src/components/*/test/__snapshots__ && yarn test",
     "test:dev": "stencil test --spec --watchAll",
     "generate": "stencil generate",
+    "generate:stencil": "stencil generate",
+    "generate:template": "scripts/template.sh",
     "generate:docs": "stencil build --docs",
     "postinstall": "patch-package && [ -z \"$NOYARNPOSTINSTALL\" ] && (lerna run postinstall && lerna run prepublish) || echo \"Bypass prepublish\"",
-    "dev": "start-storybook --no-manager-cache -p 6006"
+    "dev": "start-storybook -p 6006"
   },
   "workspaces": [
     "src/components/**",

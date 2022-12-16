@@ -23,6 +23,30 @@ export namespace Components {
         "theme": string;
         "type": string;
     }
+    interface EclCarousel {
+        "carouselId": string;
+        "counterLabel": string;
+        "eclScript": boolean;
+        "slidesNumber": number;
+        "srNavigation": string;
+        "srNext": string;
+        "srPause": string;
+        "srPlay": string;
+        "srPrevious": string;
+        "styleClass": string;
+        "theme": string;
+        "withUtils": boolean;
+    }
+    interface EclCarouselItem {
+        "ariaLabel": string;
+        "bannerTitle": string;
+        "bannerVariant": string;
+        "ctaLabel": string;
+        "ctaLink": string;
+        "image": string;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclDateBlock {
         "dateTime": string;
         "day": string;
@@ -141,6 +165,8 @@ export namespace Components {
         "theme": string;
         "variant": string;
     }
+    interface EclTest {
+    }
 }
 declare global {
     interface HTMLEclAccordionElement extends Components.EclAccordion, HTMLStencilElement {
@@ -160,6 +186,18 @@ declare global {
     var HTMLEclButtonElement: {
         prototype: HTMLEclButtonElement;
         new (): HTMLEclButtonElement;
+    };
+    interface HTMLEclCarouselElement extends Components.EclCarousel, HTMLStencilElement {
+    }
+    var HTMLEclCarouselElement: {
+        prototype: HTMLEclCarouselElement;
+        new (): HTMLEclCarouselElement;
+    };
+    interface HTMLEclCarouselItemElement extends Components.EclCarouselItem, HTMLStencilElement {
+    }
+    var HTMLEclCarouselItemElement: {
+        prototype: HTMLEclCarouselItemElement;
+        new (): HTMLEclCarouselItemElement;
     };
     interface HTMLEclDateBlockElement extends Components.EclDateBlock, HTMLStencilElement {
     }
@@ -239,10 +277,18 @@ declare global {
         prototype: HTMLEclTagElement;
         new (): HTMLEclTagElement;
     };
+    interface HTMLEclTestElement extends Components.EclTest, HTMLStencilElement {
+    }
+    var HTMLEclTestElement: {
+        prototype: HTMLEclTestElement;
+        new (): HTMLEclTestElement;
+    };
     interface HTMLElementTagNameMap {
         "ecl-accordion": HTMLEclAccordionElement;
         "ecl-accordion-item": HTMLEclAccordionItemElement;
         "ecl-button": HTMLEclButtonElement;
+        "ecl-carousel": HTMLEclCarouselElement;
+        "ecl-carousel-item": HTMLEclCarouselItemElement;
         "ecl-date-block": HTMLEclDateBlockElement;
         "ecl-expandable": HTMLEclExpandableElement;
         "ecl-fact-figures": HTMLEclFactFiguresElement;
@@ -256,6 +302,7 @@ declare global {
         "ecl-page-banner": HTMLEclPageBannerElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
         "ecl-tag": HTMLEclTagElement;
+        "ecl-test": HTMLEclTestElement;
     }
 }
 declare namespace LocalJSX {
@@ -275,6 +322,30 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "type"?: string;
+    }
+    interface EclCarousel {
+        "carouselId"?: string;
+        "counterLabel"?: string;
+        "eclScript"?: boolean;
+        "slidesNumber"?: number;
+        "srNavigation"?: string;
+        "srNext"?: string;
+        "srPause"?: string;
+        "srPlay"?: string;
+        "srPrevious"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "withUtils"?: boolean;
+    }
+    interface EclCarouselItem {
+        "ariaLabel"?: string;
+        "bannerTitle"?: string;
+        "bannerVariant"?: string;
+        "ctaLabel"?: string;
+        "ctaLink"?: string;
+        "image"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
     }
     interface EclDateBlock {
         "dateTime"?: string;
@@ -394,10 +465,14 @@ declare namespace LocalJSX {
         "theme"?: string;
         "variant"?: string;
     }
+    interface EclTest {
+    }
     interface IntrinsicElements {
         "ecl-accordion": EclAccordion;
         "ecl-accordion-item": EclAccordionItem;
         "ecl-button": EclButton;
+        "ecl-carousel": EclCarousel;
+        "ecl-carousel-item": EclCarouselItem;
         "ecl-date-block": EclDateBlock;
         "ecl-expandable": EclExpandable;
         "ecl-fact-figures": EclFactFigures;
@@ -411,6 +486,7 @@ declare namespace LocalJSX {
         "ecl-page-banner": EclPageBanner;
         "ecl-social-media-share": EclSocialMediaShare;
         "ecl-tag": EclTag;
+        "ecl-test": EclTest;
     }
 }
 export { LocalJSX as JSX };
@@ -420,6 +496,8 @@ declare module "@stencil/core" {
             "ecl-accordion": LocalJSX.EclAccordion & JSXBase.HTMLAttributes<HTMLEclAccordionElement>;
             "ecl-accordion-item": LocalJSX.EclAccordionItem & JSXBase.HTMLAttributes<HTMLEclAccordionItemElement>;
             "ecl-button": LocalJSX.EclButton & JSXBase.HTMLAttributes<HTMLEclButtonElement>;
+            "ecl-carousel": LocalJSX.EclCarousel & JSXBase.HTMLAttributes<HTMLEclCarouselElement>;
+            "ecl-carousel-item": LocalJSX.EclCarouselItem & JSXBase.HTMLAttributes<HTMLEclCarouselItemElement>;
             "ecl-date-block": LocalJSX.EclDateBlock & JSXBase.HTMLAttributes<HTMLEclDateBlockElement>;
             "ecl-expandable": LocalJSX.EclExpandable & JSXBase.HTMLAttributes<HTMLEclExpandableElement>;
             "ecl-fact-figures": LocalJSX.EclFactFigures & JSXBase.HTMLAttributes<HTMLEclFactFiguresElement>;
@@ -433,6 +511,7 @@ declare module "@stencil/core" {
             "ecl-page-banner": LocalJSX.EclPageBanner & JSXBase.HTMLAttributes<HTMLEclPageBannerElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
+            "ecl-test": LocalJSX.EclTest & JSXBase.HTMLAttributes<HTMLEclTestElement>;
         }
     }
 }
