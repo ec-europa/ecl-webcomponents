@@ -53,6 +53,8 @@ export class EclHeroBanner {
         >
         </div>
         : '' }
+      { this.credit && imageBanners.includes(this.variant) ?
+        <div class="ecl-hero-banner__credit">{this.credit}</div> : '' }
         <div class="ecl-container">
           <div class="ecl-hero-banner__container">
             <div class="ecl-hero-banner__content">

@@ -38,7 +38,7 @@ export class EclExpandable {
     if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
       const style = document.createElement('style');
       style.id = 'ecl-utils-styles';
-      style.innerHTML = `@import "./build/styles/ecl-utilities-${this.theme}.css"`;
+      style.innerHTML = `@import ${getAssetPath(`./build/styles/ecl-utilities-${this.theme}.css`)}`;
       document.body.appendChild(style);
     }
   }

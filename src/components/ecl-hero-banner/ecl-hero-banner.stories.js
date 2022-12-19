@@ -61,6 +61,7 @@ const Template = args =>
   cta-label="${args.ctaLabel}"
   image="${args.image}"
   banner-title="${args.bannerTitle}"
+  credit="© Copyright or credit"
 >
   ${args.description}
 </ecl-hero-banner>`;

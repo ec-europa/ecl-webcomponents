@@ -142,6 +142,7 @@ export namespace Components {
     interface EclPageBanner {
         "bannerTitle": string;
         "centered": boolean;
+        "credit": string;
         "ctaLabel": string;
         "ctaLink": string;
         "external": boolean;
@@ -433,6 +434,7 @@ declare namespace LocalJSX {
     interface EclPageBanner {
         "bannerTitle"?: string;
         "centered"?: boolean;
+        "credit"?: string;
         "ctaLabel"?: string;
         "ctaLink"?: string;
         "external"?: boolean;

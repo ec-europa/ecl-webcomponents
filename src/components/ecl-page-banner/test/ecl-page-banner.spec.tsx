@@ -14,6 +14,7 @@ describe('ecl-page-banner', () => {
               cta-label="Subscribe"
               image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
               banner-title="EU Budget for the future"
+              credit="© Copyright or credit"
             >
               Innovation, economy, environment and geopolitics
             </ecl-page-banner>`,

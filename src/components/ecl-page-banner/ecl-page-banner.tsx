@@ -20,6 +20,7 @@ export class EclPageBanner {
   @Prop() ctaLabel: string;
   @Prop() ctaLink: string;
   @Prop() centered: boolean = true;
+  @Prop() credit: string;
 
   getClass(): string {
     const styleClasses = [
@@ -53,6 +54,8 @@ export class EclPageBanner {
         >
         </div>
         : '' }
+        { this.credit && imageBanners.includes(this.variant) ?
+        <div class="ecl-page-banner__credit">{this.credit}</div> : '' }
         <div class="ecl-container">
           <div class="ecl-page-banner__container">
             <div class="ecl-page-banner__content">

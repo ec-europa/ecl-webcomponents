@@ -11,6 +11,7 @@
 | ------------- | -------------- | ----------- | --------- | ----------- |
 | `bannerTitle` | `banner-title` |             | `string`  | `undefined` |
 | `centered`    | `centered`     |             | `boolean` | `true`      |
+| `credit`      | `credit`       |             | `string`  | `undefined` |
 | `ctaLabel`    | `cta-label`    |             | `string`  | `undefined` |
 | `ctaLink`     | `cta-link`     |             | `string`  | `undefined` |
 | `external`    | `external`     |             | `boolean` | `false`     |
