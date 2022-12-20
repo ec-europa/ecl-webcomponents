@@ -25,6 +25,9 @@
  - [ecl-carousel](../ecl-carousel)
  - [ecl-expandable](../ecl-expandable)
  - [ecl-fact-figures-item](../ecl-fact-figures)
+ - [ecl-file](../ecl-file)
+ - [ecl-file-translations](../ecl-file)
+ - [ecl-file-translations-item](../ecl-file)
  - [ecl-hero-banner](../ecl-hero-banner)
  - [ecl-link](../ecl-link)
  - [ecl-message](../ecl-message)
@@ -39,6 +42,9 @@ graph TD;
   ecl-carousel --> ecl-icon
   ecl-expandable --> ecl-icon
   ecl-fact-figures-item --> ecl-icon
+  ecl-file --> ecl-icon
+  ecl-file-translations --> ecl-icon
+  ecl-file-translations-item --> ecl-icon
   ecl-hero-banner --> ecl-icon
   ecl-link --> ecl-icon
   ecl-message --> ecl-icon

@@ -12,6 +12,7 @@ if (!isProd) {
     path.resolve(`${__dirname}/../src/components/ecl-media-container`),
     path.resolve(`${__dirname}/../src/components/ecl-message`),
     path.resolve(`${__dirname}/../src/components/ecl-carousel`),
+    path.resolve(`${__dirname}/../src/components/ecl-file`),
   ];
 }
 

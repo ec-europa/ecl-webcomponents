@@ -1,4 +1,4 @@
-import { Component, h, Prop} from '@stencil/core';
+import { Component, h, Prop, Element} from '@stencil/core';
 
 @Component({
   tag: 'ecl-link',
@@ -12,6 +12,7 @@ import { Component, h, Prop} from '@stencil/core';
 })
 
 export class EclLink {
+  @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() path: string;
   @Prop() styleClass: string;
@@ -20,11 +21,33 @@ export class EclLink {
   @Prop() external: boolean = false;
 
   getClass(): string {
-    return [
+    const styleClasses = [
       `ecl-link`,
       `ecl-link--${this.variant}`,
       this.styleClass
-    ].join(' ');
+    ];
+
+    if (this.el.querySelector('ecl-icon')) {
+      styleClasses.push('ecl-link--icon');
+      if (this.el.querySelector('ecl-icon').getAttribute('slot') === 'icon-after') {
+        styleClasses.push('ecl-link--icon-after');
+      } else {
+        styleClasses.push('ecl-link--icon-before');
+      }
+    }
+
+    return styleClasses.join(' ');
+  }
+
+  componentDidRender() {
+    if (this.el.querySelector('ecl-icon')) {
+      this.el.querySelector('ecl-icon svg').classList.add('ecl-link__icon');
+      if (this.el.querySelector('ecl-icon').getAttribute('slot') === 'icon-after') {
+        this.el.querySelector('ecl-icon svg').classList.add('ecl-link__icon--after');
+      } else {
+        this.el.querySelector('ecl-icon svg').classList.add('ecl-link__icon--before');
+      }
+    }
   }
 
   getExternal() {

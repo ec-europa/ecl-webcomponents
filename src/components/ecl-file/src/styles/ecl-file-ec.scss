@@ -1,0 +1,15 @@
+@use '@ecl/theme-ec';
+
+@use '@ecl/vanilla-component-file/file-ec';
+
+.ecl-file__icon.ecl-icon.sc-ecl-icon-ec {
+  fill: #9f9f9f;
+}
+
+.ecl-file__translation-container > *:first-child {
+  align-self: flex-end;
+}
+
+.ecl-file .ecl-button.ecl-file__translation-toggle {
+  margin: 0.25rem -1rem 0.25rem 0;
+}

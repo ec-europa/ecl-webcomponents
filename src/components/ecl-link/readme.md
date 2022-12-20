@@ -21,6 +21,8 @@
 
 ### Used by
 
+ - [ecl-file](../ecl-file)
+ - [ecl-file-translations-item](../ecl-file)
  - [ecl-hero-banner](../ecl-hero-banner)
  - [ecl-page-banner](../ecl-page-banner)
  - [ecl-social-media-share](../ecl-social-media-share)
@@ -33,6 +35,8 @@
 ```mermaid
 graph TD;
   ecl-link --> ecl-icon
+  ecl-file --> ecl-link
+  ecl-file-translations-item --> ecl-link
   ecl-hero-banner --> ecl-link
   ecl-page-banner --> ecl-link
   ecl-social-media-share --> ecl-link

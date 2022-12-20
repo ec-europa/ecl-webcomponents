@@ -81,9 +81,39 @@ export namespace Components {
         "theme": string;
         "value": string;
     }
+    interface EclFile {
+        "ariaLabel": string;
+        "detailMeta": string;
+        "downloadLabel": string;
+        "downloadLink": string;
+        "eclScript": boolean;
+        "fileTitle": string;
+        "language": string;
+        "meta": string;
+        "styleClass": string;
+        "theme": string;
+        "variant": string;
+    }
+    interface EclFileTranslations {
+        "others": boolean;
+        "styleClass": string;
+        "theme": string;
+        "toggleLabel": string;
+        "translationsTotal": number;
+    }
+    interface EclFileTranslationsItem {
+        "downloadLabel": string;
+        "downloadLink": string;
+        "fileTitle": string;
+        "language": string;
+        "meta": string;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclHeroBanner {
         "bannerTitle": string;
         "centered": boolean;
+        "credit": string;
         "ctaLabel": string;
         "ctaLink": string;
         "external": boolean;
@@ -222,6 +252,24 @@ declare global {
         prototype: HTMLEclFactFiguresItemElement;
         new (): HTMLEclFactFiguresItemElement;
     };
+    interface HTMLEclFileElement extends Components.EclFile, HTMLStencilElement {
+    }
+    var HTMLEclFileElement: {
+        prototype: HTMLEclFileElement;
+        new (): HTMLEclFileElement;
+    };
+    interface HTMLEclFileTranslationsElement extends Components.EclFileTranslations, HTMLStencilElement {
+    }
+    var HTMLEclFileTranslationsElement: {
+        prototype: HTMLEclFileTranslationsElement;
+        new (): HTMLEclFileTranslationsElement;
+    };
+    interface HTMLEclFileTranslationsItemElement extends Components.EclFileTranslationsItem, HTMLStencilElement {
+    }
+    var HTMLEclFileTranslationsItemElement: {
+        prototype: HTMLEclFileTranslationsItemElement;
+        new (): HTMLEclFileTranslationsItemElement;
+    };
     interface HTMLEclHeroBannerElement extends Components.EclHeroBanner, HTMLStencilElement {
     }
     var HTMLEclHeroBannerElement: {
@@ -286,6 +334,9 @@ declare global {
         "ecl-expandable": HTMLEclExpandableElement;
         "ecl-fact-figures": HTMLEclFactFiguresElement;
         "ecl-fact-figures-item": HTMLEclFactFiguresItemElement;
+        "ecl-file": HTMLEclFileElement;
+        "ecl-file-translations": HTMLEclFileTranslationsElement;
+        "ecl-file-translations-item": HTMLEclFileTranslationsItemElement;
         "ecl-hero-banner": HTMLEclHeroBannerElement;
         "ecl-icon": HTMLEclIconElement;
         "ecl-label": HTMLEclLabelElement;
@@ -373,9 +424,39 @@ declare namespace LocalJSX {
         "theme"?: string;
         "value"?: string;
     }
+    interface EclFile {
+        "ariaLabel"?: string;
+        "detailMeta"?: string;
+        "downloadLabel"?: string;
+        "downloadLink"?: string;
+        "eclScript"?: boolean;
+        "fileTitle"?: string;
+        "language"?: string;
+        "meta"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "variant"?: string;
+    }
+    interface EclFileTranslations {
+        "others"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+        "toggleLabel"?: string;
+        "translationsTotal"?: number;
+    }
+    interface EclFileTranslationsItem {
+        "downloadLabel"?: string;
+        "downloadLink"?: string;
+        "fileTitle"?: string;
+        "language"?: string;
+        "meta"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclHeroBanner {
         "bannerTitle"?: string;
         "centered"?: boolean;
+        "credit"?: string;
         "ctaLabel"?: string;
         "ctaLink"?: string;
         "external"?: boolean;
@@ -468,6 +549,9 @@ declare namespace LocalJSX {
         "ecl-expandable": EclExpandable;
         "ecl-fact-figures": EclFactFigures;
         "ecl-fact-figures-item": EclFactFiguresItem;
+        "ecl-file": EclFile;
+        "ecl-file-translations": EclFileTranslations;
+        "ecl-file-translations-item": EclFileTranslationsItem;
         "ecl-hero-banner": EclHeroBanner;
         "ecl-icon": EclIcon;
         "ecl-label": EclLabel;
@@ -492,6 +576,9 @@ declare module "@stencil/core" {
             "ecl-expandable": LocalJSX.EclExpandable & JSXBase.HTMLAttributes<HTMLEclExpandableElement>;
             "ecl-fact-figures": LocalJSX.EclFactFigures & JSXBase.HTMLAttributes<HTMLEclFactFiguresElement>;
             "ecl-fact-figures-item": LocalJSX.EclFactFiguresItem & JSXBase.HTMLAttributes<HTMLEclFactFiguresItemElement>;
+            "ecl-file": LocalJSX.EclFile & JSXBase.HTMLAttributes<HTMLEclFileElement>;
+            "ecl-file-translations": LocalJSX.EclFileTranslations & JSXBase.HTMLAttributes<HTMLEclFileTranslationsElement>;
+            "ecl-file-translations-item": LocalJSX.EclFileTranslationsItem & JSXBase.HTMLAttributes<HTMLEclFileTranslationsItemElement>;
             "ecl-hero-banner": LocalJSX.EclHeroBanner & JSXBase.HTMLAttributes<HTMLEclHeroBannerElement>;
             "ecl-icon": LocalJSX.EclIcon & JSXBase.HTMLAttributes<HTMLEclIconElement>;
             "ecl-label": LocalJSX.EclLabel & JSXBase.HTMLAttributes<HTMLEclLabelElement>;

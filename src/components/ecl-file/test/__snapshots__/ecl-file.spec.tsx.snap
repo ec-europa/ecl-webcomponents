@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-file renders 1`] = `
+<ecl-file detail-meta="[&quot;Resource type&quot;, &quot;Publication date&quot;]" download-label="Download" download-link="/example.html" ecl-script="" file-title="State of the Union 2018 brochure" language="English" meta="(16.2 MB - PDF)" theme="ec" variant="default">
+  <!---->
+  <div class="ecl-file ecl-file--default" data-ecl-file>
+    <div class="ecl-file__container">
+      <ecl-icon icon="file" size="2xl" styleclass="ecl-file__icon" theme="ec"></ecl-icon>
+      <div class="ecl-file__info">
+        <div class="ecl-file__detail-meta">
+          <span class="ecl-file__detail-meta-item">
+            Resource type
+          </span>
+          <span class="ecl-file__detail-meta-item">
+            Publication date
+          </span>
+        </div>
+        <div class="ecl-file__title">
+          State of the Union 2018 brochure
+        </div>
+        <div class="ecl-file__language">
+          English
+        </div>
+        <div class="ecl-file__meta">
+          (16.2 MB - PDF)
+        </div>
+      </div>
+      <ecl-link path="/example.html" variant="standalone">
+        Download
+        <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
+      </ecl-link>
+    </div>
+    <ecl-file-translations others="" theme="ec" toggle-label="Other languages" translations-total="3">
+      <!---->
+      <div class="ecl-file__translation-container" data-ecl-file-translation-container>
+        <ecl-button data-ecl-file-translation-toggle styleclass="ecl-file__translation-toggle" theme="ec" type="ghost">
+          Other languages (3)
+          <ecl-icon icon="corener-arrow" size="fluid" styleclass="ecl-button__icon ecl-button__icon--after" transform="rotate-180"></ecl-icon>
+        </ecl-button>
+        <ul class="ecl-file__translation-list">
+          <li class="ecl-file__translation-item">
+            <div class="ecl-file__translation-info">
+              <div class="ecl-file__translation-title" lang="bg"></div>
+              <div class="ecl-file__translation-meta">
+                (15.7 MB - PDF)
+              </div>
+            </div>
+            <ecl-link path="/example.html" variant="standalone">
+              Download
+              <ecl-icon icon="download" size="fluid" slot="icon-after" styleclass="ecl-file__translation-download"></ecl-icon>
+            </ecl-link>
+          </li>
+          <li class="ecl-file__translation-item">
+            <div class="ecl-file__translation-info">
+              <div class="ecl-file__translation-title" lang="es"></div>
+              <div class="ecl-file__translation-meta">
+                (15.98 MB - PDF)
+              </div>
+            </div>
+            <ecl-link path="/example.html" variant="standalone">
+              Download
+              <ecl-icon icon="download" size="fluid" slot="icon-after" styleclass="ecl-file__translation-download"></ecl-icon>
+            </ecl-link>
+          </li>
+          <li class="ecl-file__translation-item">
+            <div class="ecl-file__translation-info">
+              <div class="ecl-file__translation-title" lang="fr"></div>
+              <div class="ecl-file__translation-meta">
+                (15.98 MB - PDF)
+              </div>
+            </div>
+            <ecl-link path="/example.html" variant="standalone">
+              Download
+              <ecl-icon icon="download" size="fluid" slot="icon-after" styleclass="ecl-file__translation-download"></ecl-icon>
+            </ecl-link>
+          </li>
+          <li class="ecl-file__translation-description ecl-file__translation-item">
+            <p slot="others">
+              Looking for another language which is not on the list?
+              <a class="ecl-link" href="/example.html">
+                Find out why
+              </a>
+              .
+            </p>
+          </li>
+        </ul>
+      </div>
+    </ecl-file-translations>
+  </div>
+</ecl-file>
+`;
