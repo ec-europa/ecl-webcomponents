@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-blockquote renders 1`] = `
+<ecl-blockquote author="President Juncker" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image-square.jpg" theme="ec">
+  <!---->
+  <figure class="ecl-blockquote">
+    <div class="ecl-blockquote__body">
+      <blockquote class="ecl-blockquote__quote">
+        <p class="ecl-blockquote__citation">
+          An interconnected grid will help deliver the ultimate goal of the Energy Union, to make sure affordable, secure and sustainable energy, and also growth across the EU.
+        </p>
+      </blockquote>
+      <footer class="ecl-blockquote__attribution">
+        <cite class="ecl-blockquote__author">
+          President Juncker
+        </cite>
+      </footer>
+    </div>
+    <img class="ecl-blockquote__image" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image-square.jpg">
+  </figure>
+</ecl-blockquote>
+`;
