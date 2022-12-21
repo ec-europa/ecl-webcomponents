@@ -1,5 +1,3 @@
-# ECL Webcomponents documentation
-
 ## What is ECL webcomponents?
 
 ECL webcomponents is an implementation of the vanilla [ECL](https://github.com/ec-europa/europa-component-library) components as vanilla web-components.
@@ -17,7 +15,7 @@ The library uses [storybook](https://storybook.js.org/) as a UI development tool
 The showcase includes controls to interact with the component and explore all the available features.
 The master branch is deployed on https://ecl-webcomponents.netlify.app/
 
-## How is ECL webcomponents distributed
+## How is ECL webcomponents distributed?
 
 The library is distributed on npm, in the `@ecl` organisation, as a single package named `@ecl/webcomponents`.
 The distributed package contains all that is needed, including resources like images, icons, scripts, styles.
@@ -25,14 +23,15 @@ The main entrypoint for the library is a single js, in `dist/ecl-webcomponents/e
 the usage of any of the custom elements exported, but only the ones really used will be loaded.
 **This distribution might not be ideal for angular, since it would probably expect all the js to be statically defined**
 
-## Where can ECL webcomponents be used
+## Where can ECL webcomponents be used?
 
 Everywhere the ECL visual identity needs to be used and there is javascript available, basically.
 Vanilla web-components are widely supported, only old browser might not be capable of using them, for this polyfills exists,
 but at the moment there is no clear definition of the browsers to support.
 
-### Doc pages
+## Doc pages
 
 - [decisions](./decisions.md)
 - [components](./components.md)
 - [developing](./developing.md)
+- [patches](./patches.md)
