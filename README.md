@@ -15,29 +15,27 @@ yarn dev (start storybook)
 
 ### Command reference
 
-**generate** runs stencil generate  
+**generate** ecl-{component} runs stencil generate
+**generate:template** ecl-{component} creates empty files in the package of the component  
 **build** builds the application, including storybook  
 **lint** runs stylelint on scss files and eslint on js files  
 **test** Runs the prettier checks and the snapshot tests  
-**build** builds the application, including storybook  
+**test:update** Updates the snapshots  
 **start** builds stencil and watches files for changes  
 **dev** starts storybook  
 **pretty-check** Runs the checks by prettier  
 **pretty-write** Fix the errors with prettier
 
-#### ES Modules
+### Adding a new component
 
-```html
-<html>
-  <head>
-    <script type="module" src="dist/ecl-webcomponents/ecl-webcomponents.esm.js"></script>
-  </head>
-</html>
+```
+yarn generate ecl-{component} (choose only the spec file)
+yarn generate:template ecl-{component}
 ```
 
-### List of custom elements exported by the library
+This will create most of the files needed in src/components/ecl-{component}
+The scss in src/styles normally "use" the theme (ec/eu) and the vanilla scss from ecl.
 
-- `<ecl-icon>`
-- `<ecl-button>`
-- `<ecl-expandable>`
-- `<ecl-accordion>`
+### Documentation
+
+- Get more information [here](./docs/README.md)
