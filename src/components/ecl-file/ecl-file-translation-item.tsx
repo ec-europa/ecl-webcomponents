@@ -49,22 +49,20 @@ export class EclFileTranslationsItem{
       <li
         class={this.getClass()}
       >
-    { this.variant == 'thumbnail' ?
+      { this.variant == 'thumbnail' ?
         <div class={`ecl-file__translation-detail sc-ecl-file-${this.theme}`}>
           {this.getTitle()}
         </div> : '' 
-    }
-    { this.variant == 'thumbnail' ?
+      }
+      { this.variant == 'thumbnail' ?
         <div class={`ecl-file__translation-info sc-ecl-file-${this.theme}`}> 
           {this.getMeta()}
-        </div> : '' 
-    }
-    { this.variant == 'default' ?
+        </div> :
         <div class={`ecl-file__translation-info sc-ecl-file-${this.theme}`}>
           {this.getTitle()}
           {this.getMeta()}
-        </div> : '' 
-    } 
+        </div> 
+      }
         <ecl-link
           path={this.downloadLink}
           variant="standalone"

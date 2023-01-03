@@ -39,9 +39,11 @@ export class EclFile {
 
   componentDidRender() {
     if (this.el.querySelector('.ecl-file__translation-list') && this.eclScript) {
+      // Clean the html so that the script finds what it expects.
       const translations = this.el.querySelectorAll('.ecl-file__translation-item');
       this.el.querySelector('.ecl-file__translation-list').innerHTML = '';
       this.el.querySelector('.ecl-file__translation-list').append(...translations);
+      // Load the ECL vanilla js if not already present.
       const src = getAssetPath('./build/scripts/ecl-file-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
         document.querySelector(`script[src="${src}"]`).remove();
@@ -136,9 +138,7 @@ export class EclFile {
             size={this.theme === 'ec' ? '2xl' : 'm'}
             styleClass={`ecl-file__icon sc-ecl-file-${this.theme}`}
             theme={this.theme}
-          ></ecl-icon> : ''
-        }
-        { !isDefault ?
+          ></ecl-icon> : 
           <div class="ecl-file__detail">
             <div class="ecl-file__detail-info">
               {this.getLabels()}
@@ -151,26 +151,22 @@ export class EclFile {
           { this.image ?
             <img class="ecl-file__image" src={this.image} alt={this.imageAlt} /> : '' 
           }
-          </div> : '' }
-        { !isDefault ?
-          <div class="ecl-file__info">
-            {this.getLanguage()}
-            {this.getMeta()}
-          </div> : '' }
-         { !isDefault ? 
-            this.getDownload() : '' }
-        { isDefault ? 
+          </div>
+        }
+        { isDefault ?
           <div class="ecl-file__info">
             {this.getLabels()}
             {this.getDetailedMeta()}
             {this.getTitle()}
             {this.getLanguage()}        
             {this.getMeta()}
-          </div> : ''
+          </div> :
+          <div class="ecl-file__info">
+            {this.getLanguage()}
+            {this.getMeta()}
+          </div>
         }
-        { isDefault ?
-          this.getDownload() : ''
-        }     
+          {this.getDownload()}
         </div>
         <slot name="file-translations"></slot>
       </div>
