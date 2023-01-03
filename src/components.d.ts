@@ -95,6 +95,9 @@ export namespace Components {
         "downloadLink": string;
         "eclScript": boolean;
         "fileTitle": string;
+        "image": string;
+        "imageAlt": string;
+        "labels": string;
         "language": string;
         "meta": string;
         "styleClass": string;
@@ -116,6 +119,7 @@ export namespace Components {
         "meta": string;
         "styleClass": string;
         "theme": string;
+        "variant": string;
     }
     interface EclHeroBanner {
         "bannerTitle": string;
@@ -452,6 +456,9 @@ declare namespace LocalJSX {
         "downloadLink"?: string;
         "eclScript"?: boolean;
         "fileTitle"?: string;
+        "image"?: string;
+        "imageAlt"?: string;
+        "labels"?: string;
         "language"?: string;
         "meta"?: string;
         "styleClass"?: string;
@@ -473,6 +480,7 @@ declare namespace LocalJSX {
         "meta"?: string;
         "styleClass"?: string;
         "theme"?: string;
+        "variant"?: string;
     }
     interface EclHeroBanner {
         "bannerTitle"?: string;

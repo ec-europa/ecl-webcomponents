@@ -1,48 +1,60 @@
 const getArgs = () => ({
-  variant: 'default',
+  labels: false,
+  variant: 'thumbnail',
   fileTitle: 'State of the Union 2018 brochure',
   downloadLabel: 'Download',
   downloadLink: '/example.html',
   language: 'English',
   meta: '(16.2 MB - PDF)',
   ariaLabel: 'Download file State of the Union 2018 brochure',
+  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis lorem
+    tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur. Duis vitae pulvinar turpis.
+    Donec maximus pharetra ex a ultricies.`,
 });
 
 const getArgTypes = () => ({
+  labels: {
+    type: { name: 'boolean' },
+    description: 'Show file labels',
+  },
   variant: {
     type: { name: 'select' },
     options: ['default', 'thumbnail'],
     description: 'File variants',
   },
+  description: {
+    type: { name: 'string' },
+    description: 'only for the thumbnail variant'
+  },
   fileTitle: {
-    type: { name: 'string'},
+    type: { name: 'string' },
     name: 'title of the file',
   },
   downloadLabel: {
-    type: { name: 'string'},
+    type: { name: 'string' },
     name: 'download link label',
     description: 'Label for the download button',
   },
   downloadLink: {
-    type: { name: 'string'},
+    type: { name: 'string' },
     name: 'download link',
     description: 'Link for the file download',
   },
   meta: {
-    type: { name: 'string'},
+    type: { name: 'string' },
     name: 'additional info',
     description: 'Meta information about the file',
   },
   language: {
-    type: { name: 'string'},
+    type: { name: 'string' },
     name: 'language of the file',
     description: 'Show the file language',
   },
   ariaLabel: {
-    type: { name: 'string'},
+    type: { name: 'string' },
     name: 'aria label of the element',
     description: 'To improve accessibility',
-  }
+  },
 });
 
 export default {
@@ -59,21 +71,28 @@ const TemplateWithTranslation = args =>
   download-label="${args.downloadLabel}"
   language="${args.language}"
   meta="${args.meta}"
+  image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+  image-alt="thumbnail alt"
   detail-meta='["Resource type", "Publication date"]'
   ecl-script
+  labels='${args.labels || args.variant === 'thumbnail' ? '[{"variant": "highlight", "label": "Highlight"}, {"variant": "medium", "label": "Medium"}]' : ''}'
 >
+  ${args.variant === 'thumbnail' ? args.description : ''}
   <ecl-file-translations
     theme="${args.theme}"
     translations-total="3"
     toggle-label="Other languages"
     others
+    slot="file-translations"
   >
     <ecl-file-translations-item
       language="bg"
       download-label="Download"
       download-link="/example.html"
       meta="(15.7 MB - PDF)"
-      fileTitle="български"
+      file-title="български"
+      variant="${args.variant}"
+      theme="${args.theme}"
     >
     </ecl-file-translations-item>
     <ecl-file-translations-item
@@ -81,7 +100,9 @@ const TemplateWithTranslation = args =>
       download-label="Download"
       download-link="/example.html"
       meta="(15.98 MB - PDF)"
-      fileTitle="español"
+      file-title="español"
+      variant="${args.variant}"
+      theme="${args.theme}"
     >
     </ecl-file-translations-item>
     <ecl-file-translations-item
@@ -89,7 +110,9 @@ const TemplateWithTranslation = args =>
       download-label="Download"
       download-link="/example.html"
       meta="(15.98 MB - PDF)"
-      fileTitle="français"
+      file-title="français"
+      variant="${args.variant}"
+      theme="${args.theme}"
     >
     </ecl-file-translations-item>
     <p slot="others">
@@ -97,6 +120,7 @@ const TemplateWithTranslation = args =>
     </p>
   </ecl-file-translations>
 </ecl-file>`;
+
 
 export const FileWithTranslations = TemplateWithTranslation.bind({});
 FileWithTranslations.storyName = 'File with translations';

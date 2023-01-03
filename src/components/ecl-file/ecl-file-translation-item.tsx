@@ -8,6 +8,7 @@
 export class EclFileTranslationsItem{
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
+  @Prop() variant: string = 'default';
   @Prop() meta: string;
   @Prop() fileTitle: string;
   @Prop() downloadLink: string;
@@ -17,10 +18,30 @@ export class EclFileTranslationsItem{
   getClass(): string {
     const styleClasses = [
       `ecl-file__translation-item`,
+      `sc-ecl-file-${this.theme}`,
       this.styleClass
     ];
 
     return styleClasses.join(' ');
+  }
+
+  getChildrenClass() {
+    return `ecl-file__translation-${this.variant === 'default' ? 'info' : 'detail'}`;
+  }
+
+  getTitle() {
+    return <div 
+            class={`ecl-file__translation-title sc-ecl-file-${this.theme}`}
+            lang={this.language}
+          >
+            {this.fileTitle}
+          </div>
+  }
+
+  getMeta() {
+    return  <div class={`ecl-file__translation-meta sc-ecl-file-${this.theme}`}>
+              {this.meta}
+            </div>
   }
 
   render() { 
@@ -28,25 +49,34 @@ export class EclFileTranslationsItem{
       <li
         class={this.getClass()}
       >
-        <div class="ecl-file__translation-info">
-          <div 
-            class="ecl-file__translation-title"
-            lang={this.language}
-          >
-            {this.fileTitle}
-          </div>
-          <div class="ecl-file__translation-meta">{this.meta}</div>
-        </div>
+    { this.variant == 'thumbnail' ?
+        <div class={`ecl-file__translation-detail sc-ecl-file-${this.theme}`}>
+          {this.getTitle()}
+        </div> : '' 
+    }
+    { this.variant == 'thumbnail' ?
+        <div class={`ecl-file__translation-info sc-ecl-file-${this.theme}`}> 
+          {this.getMeta()}
+        </div> : '' 
+    }
+    { this.variant == 'default' ?
+        <div class={`ecl-file__translation-info sc-ecl-file-${this.theme}`}>
+          {this.getTitle()}
+          {this.getMeta()}
+        </div> : '' 
+    } 
         <ecl-link
           path={this.downloadLink}
           variant="standalone"
+          styleClass={`ecl-file__translation-download sc-ecl-file-${this.theme}`}
+          theme={this.theme}
         >
           {this.downloadLabel}
           <ecl-icon 
             slot="icon-after"
             size="fluid"
             icon="download"
-            styleClass="ecl-file__translation-download"
+            theme={this.theme}
           >
           </ecl-icon>    
         </ecl-link>

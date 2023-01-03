@@ -2,9 +2,16 @@
 
 @use '@ecl/vanilla-component-file/file-eu';
 
-.ecl-file__icon.ecl-icon.sc-ecl-icon-eu {
-  fill: #0e47cb;
-  align-self: start;
+.ecl-file__icon {
+  fill: #0e47cb !important;
+}
+
+.ecl-file__container > *:first-child {
+  align-self: start !important;
+}
+
+.ecl-link__icon--after {
+  margin-inline-start: 0.5rem !important;
 }
 
 .ecl-file__translation-container > *:first-child {
@@ -18,4 +25,8 @@
 .ecl-file .ecl-button.ecl-file__translation-toggle {
   border: 2px solid #0e47cb;
   margin: 0.75rem -1rem 0.75rem 0;
+}
+
+.ecl-file__description {
+  white-space: normal;
 }

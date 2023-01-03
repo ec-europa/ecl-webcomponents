@@ -2,14 +2,18 @@
 
 @use '@ecl/vanilla-component-file/file-ec';
 
-.ecl-file__icon.ecl-icon.sc-ecl-icon-ec {
-  fill: #9f9f9f;
+.ecl-file__icon {
+  fill: #9f9f9f !important;
 }
 
-.ecl-file__translation-container > *:first-child {
-  align-self: flex-end;
+.ecl-link__icon--after {
+  margin-inline-start: 0.5rem !important;
 }
 
 .ecl-file .ecl-button.ecl-file__translation-toggle {
   margin: 0.25rem -1rem 0.25rem 0;
+}
+
+.ecl-file__description {
+  white-space: normal;
 }

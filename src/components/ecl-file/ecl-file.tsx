@@ -8,7 +8,7 @@ declare const ECL: any;
     eu: './build/styles/ecl-file-eu.css',
   },
   shadow: false,
-  scoped: false,
+  scoped: true,
 })
 export class EclFile {
   @Element() el: HTMLElement;
@@ -21,7 +21,10 @@ export class EclFile {
   @Prop() detailMeta: string;
   @Prop() language: string;
   @Prop() meta: string;
+  @Prop() image: string;
+  @Prop() imageAlt: string;
   @Prop() ariaLabel: string;
+  @Prop() labels: string;
   @Prop() eclScript: boolean = false;
 
   getClass(): string {
@@ -53,45 +56,123 @@ export class EclFile {
     }
   }
 
+  getLabels() {
+    const labelsArray = this.labels ? JSON.parse(this.labels) : '';
+    let labelsMarkup = '';
+    if (labelsArray) {
+      labelsMarkup = labelsArray.map((label) => (
+        <div class="ecl-file__label">
+          <ecl-label 
+            variant={label.variant}
+            theme={this.theme}
+          >
+            {label.label}
+          </ecl-label>
+        </div>
+      )); 
+    }
+
+    return labelsMarkup;
+  }
+
+  getMeta() {
+    return <div class="ecl-file__meta">{this.meta}</div>
+  }
+
+  getDetailedMeta() {
+    const detailMetaArray = this.detailMeta ? JSON.parse(this.detailMeta) : '';
+    let detailMetaMarkup = '';
+
+    if (detailMetaArray) {
+      detailMetaMarkup = 
+      <div class="ecl-file__detail-meta">
+      {detailMetaArray.map((meta) => (
+        <span class="ecl-file__detail-meta-item">{ meta }</span>
+      ))} 
+      </div>;
+    }
+
+    return detailMetaMarkup;
+  }
+
+  getTitle() {
+    return <div class="ecl-file__title">{this.fileTitle}</div>
+  }
+
+  getLanguage() {
+    return <div class="ecl-file__language">{this.language}</div> 
+  }
+
+  getDownload() {
+    const downloadMarkup =
+    <ecl-link
+      path={this.downloadLink}
+      variant="standalone"
+    >
+      {this.downloadLabel}
+      <ecl-icon
+        theme={this.theme}
+        icon="download"
+        size="fluid"
+        slot="icon-after"
+      ></ecl-icon>
+    </ecl-link>;
+
+    return downloadMarkup;
+  }
+
   render() {
-    const detailMetaArray = this.detailMeta ? JSON.parse(this.detailMeta) : '';  
+    const isDefault = this.variant == 'default';
+
     return (
       <div 
         class={this.getClass()}
         data-ecl-file
       >
         <div class="ecl-file__container">
+        { isDefault ?
           <ecl-icon
             icon="file"
             size={this.theme === 'ec' ? '2xl' : 'm'}
-            styleClass={`ecl-file__icon`}
+            styleClass={`ecl-file__icon sc-ecl-file-${this.theme}`}
             theme={this.theme}
-          ></ecl-icon>
-          <div class="ecl-file__info">
-            <div class="ecl-file__detail-meta">
-            { detailMetaArray ?
-                detailMetaArray.map((meta) => (
-                  <span class="ecl-file__detail-meta-item">{ meta }</span>
-                )) : '' }
+          ></ecl-icon> : ''
+        }
+        { !isDefault ?
+          <div class="ecl-file__detail">
+            <div class="ecl-file__detail-info">
+              {this.getLabels()}
+              {this.getDetailedMeta()}
+              {this.getTitle()}
+              <div class="ecl-file__description">
+                <slot></slot>
+              </div>
             </div>
-            <div class="ecl-file__title">{this.fileTitle}</div>
-            <div class="ecl-file__language">{this.language}</div>
-            <div class="ecl-file__meta">{this.meta}</div>
-          </div>
-          <ecl-link
-            path={this.downloadLink}
-            variant="standalone"
-          >
-            {this.downloadLabel}
-            <ecl-icon
-              theme={this.theme}
-              icon="download"
-              size="fluid"
-              slot="icon-after"
-            ></ecl-icon>
-          </ecl-link>
+          { this.image ?
+            <img class="ecl-file__image" src={this.image} alt={this.imageAlt} /> : '' 
+          }
+          </div> : '' }
+        { !isDefault ?
+          <div class="ecl-file__info">
+            {this.getLanguage()}
+            {this.getMeta()}
+          </div> : '' }
+         { !isDefault ? 
+            this.getDownload() : '' }
+        { isDefault ? 
+          <div class="ecl-file__info">
+            {this.getLabels()}
+            {this.getDetailedMeta()}
+            {this.getTitle()}
+            {this.getLanguage()}        
+            {this.getMeta()}
+          </div> : ''
+        }
+        { isDefault ?
+          this.getDownload() : ''
+        }     
         </div>
-        <slot></slot>
+        <slot name="file-translations"></slot>
       </div>
     );
   }

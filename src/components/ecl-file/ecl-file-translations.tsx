@@ -15,6 +15,7 @@ export class EclFileTranslations {
   getClass(): string {
     const styleClasses = [
       `ecl-file__translation-container`,
+      `sc-ecl-file-${this.theme}`,
       this.styleClass
     ];
 
@@ -28,7 +29,7 @@ export class EclFileTranslations {
         data-ecl-file-translation-container
       >
         <ecl-button
-          styleClass="ecl-file__translation-toggle"
+          styleClass={`ecl-file__translation-toggle sc-ecl-file-${this.theme}`}
           type="ghost"
           data-ecl-file-translation-toggle
           theme={this.theme}
@@ -42,11 +43,11 @@ export class EclFileTranslations {
           >
           </ecl-icon>
         </ecl-button>
-        <ul class="ecl-file__translation-list">
+        <ul class={`ecl-file__translation-list sc-ecl-file-${this.theme}`}>
           <slot></slot>
         { this.others ?
           <li 
-            class="ecl-file__translation-item ecl-file__translation-description"
+            class={`ecl-file__translation-item ecl-file__translation-description sc-ecl-file-${this.theme}`}
           >
             <slot name="others"></slot>
           </li> : '' }
