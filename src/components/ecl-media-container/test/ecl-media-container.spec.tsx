@@ -23,10 +23,10 @@ describe('ecl-media-container', () => {
       html: `<ecl-media-container
               ratio="16-9"
               theme="ec"
-              description="caption for the media container"
               sources='[{"src": "https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4", "type": "video/mp4"}, {"src": "https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm", "type": "video/webm"}]'
               tracks='[{"src": "/captions/bunny-en.vtt", "kind": "captions", "src_lang": "en", "label": "English"}, {"src": "/captions/bunny-fr.vtt", "kind": "captions", "src_lang": "fr", "label": "français"}]'
             >
+              caption for the media container
             </ecl-media-container>`,
     });
 
@@ -39,11 +39,11 @@ describe('ecl-media-container', () => {
       html: `<ecl-media-container
               ratio="16-9"
               theme="ec"
-              description="caption for the media container"
               ecl-script
               with-utils
               data-ecl-media-container
             >
+              caption for the media container
               <div class="ecl-media-container__media" slot="embedded-media"><iframe title="New digital strategy" width="350" height="197" src="https://www.youtube.com/embed/fgi-GSCB6ho" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
             </ecl-media-container>`,
     });

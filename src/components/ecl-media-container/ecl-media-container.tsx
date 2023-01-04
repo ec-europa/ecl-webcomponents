@@ -96,9 +96,9 @@ export class EclMediaContainer {
 
         <slot name="embedded-media"></slot>
 
-      { this.description ?
-        <figcaption class="ecl-media-container__caption">{this.description}</figcaption>
-        : '' }
+        <figcaption class="ecl-media-container__caption">
+          <slot></slot>
+        </figcaption>
       </figure> 
     );
   }
