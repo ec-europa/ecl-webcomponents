@@ -116,6 +116,8 @@ export namespace Components {
         "language": string;
         "meta": string;
         "styleClass": string;
+        "taxonomies": string;
+        "taxonomiesLabel": string;
         "theme": string;
         "variant": string;
     }
@@ -513,6 +515,8 @@ declare namespace LocalJSX {
         "language"?: string;
         "meta"?: string;
         "styleClass"?: string;
+        "taxonomies"?: string;
+        "taxonomiesLabel"?: string;
         "theme"?: string;
         "variant"?: string;
     }

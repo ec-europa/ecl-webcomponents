@@ -9,3 +9,14 @@
 .ecl-link--icon-before .ecl-icon {
   margin-inline-end: 0.5rem !important;
 }
+
+.ecl-description-list--horizontal.sc-ecl-description-list-ec .ecl-description-list__term.sc-ecl-description-list-ec,
+.ecl-description-list--horizontal.sc-ecl-description-list-ec .ecl-description-list__definition.sc-ecl-description-list-ec {
+  margin-top: 1rem;
+}
+
+.ecl-description-list__definition--inline.sc-ecl-description-list-ec .ecl-description-list__definition-item.sc-ecl-description-list-ec:last-child {
+  border-inline-end: 1px solid #404040;
+  margin-inline-end: 0.5rem;
+  padding-inline-end: 0.5rem;
+}

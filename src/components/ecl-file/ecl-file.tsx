@@ -25,6 +25,8 @@ export class EclFile {
   @Prop() imageAlt: string;
   @Prop() ariaLabel: string;
   @Prop() labels: string;
+  @Prop() taxonomies: string;
+  @Prop() taxonomiesLabel: string;
   @Prop() eclScript: boolean = false;
 
   getClass(): string {
@@ -152,6 +154,28 @@ export class EclFile {
             <img class="ecl-file__image" src={this.image} alt={this.imageAlt} /> : '' 
           }
           </div>
+        }
+        { this.taxonomies ? 
+          <div class="ecl-file__taxonomy">
+            <ecl-description-list
+              theme={this.theme}
+              variant="horizontal"
+            >
+              <ecl-description-list-term
+                theme={this.theme}
+                style-class={`sc-ecl-file-${this.theme}`}
+              >
+                {this.taxonomiesLabel}
+              </ecl-description-list-term>
+              <ecl-description-list-definition
+                theme={this.theme}
+                items={this.taxonomies}
+                type="taxonomy"
+                style-class={`sc-ecl-file-${this.theme}`}
+              >
+              </ecl-description-list-definition>
+            </ecl-description-list>
+          </div> : '' 
         }
         { isDefault ?
           <div class="ecl-file__info">

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-file renders 1`] = `
-<ecl-file detail-meta="[&quot;Resource type&quot;, &quot;Publication date&quot;]" download-label="Download" download-link="/example.html" ecl-script="" file-title="State of the Union 2018 brochure" language="English" meta="(16.2 MB - PDF)" theme="ec" variant="default">
+<ecl-file detail-meta="[&quot;Resource type&quot;, &quot;Publication date&quot;]" download-label="Download" download-link="/example.html" ecl-script="" file-title="State of the Union 2018 brochure" language="English" meta="(16.2 MB - PDF)" taxonomies="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example.html&quot;},&quot;Taxonomy item 3&quot;]" taxonomies-label="Taxonomy list" theme="ec" variant="default">
   <!---->
   <ecl-file-translations hidden="" others="" theme="ec" toggle-label="Other languages" translations-total="3">
     <!---->
@@ -68,6 +68,14 @@ exports[`ecl-file renders 1`] = `
   <div class="ecl-file ecl-file--default" data-ecl-file>
     <div class="ecl-file__container">
       <ecl-icon icon="file" size="2xl" styleclass="ecl-file__icon sc-ecl-file-ec" theme="ec"></ecl-icon>
+      <div class="ecl-file__taxonomy">
+        <ecl-description-list theme="ec" variant="horizontal">
+          <ecl-description-list-term style-class="sc-ecl-file-ec" theme="ec">
+            Taxonomy list
+          </ecl-description-list-term>
+          <ecl-description-list-definition items="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example.html&quot;},&quot;Taxonomy item 3&quot;]" style-class="sc-ecl-file-ec" theme="ec" type="taxonomy"></ecl-description-list-definition>
+        </ecl-description-list>
+      </div>
       <div class="ecl-file__info">
         <div class="ecl-file__detail-meta">
           <span class="ecl-file__detail-meta-item">

@@ -5,3 +5,11 @@
 .ecl-link .ecl-icon {
   vertical-align: middle;
 }
+
+.ecl-link__icon--after {
+  margin-inline-start: 0.5rem !important;
+}
+
+.ecl-link__icon--before {
+  margin-inline-end: 0.5rem !important;
+}

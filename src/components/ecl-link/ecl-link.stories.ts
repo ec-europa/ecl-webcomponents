@@ -28,7 +28,7 @@ const getArgTypes = () => {
       description: "When the link is external"
     },
     path: {
-      name: 'Path or Url',
+      name: 'path/url',
       type: { name: 'string' },
       description: 'Path or Url to link to',
     },

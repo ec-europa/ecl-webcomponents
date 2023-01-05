@@ -75,6 +75,8 @@ const TemplateWithTranslation = args =>
   image-alt="thumbnail alt"
   detail-meta='["Resource type", "Publication date"]'
   ecl-script
+  taxonomies-label="Taxonomy list"
+  taxonomies='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"},"Taxonomy item 3"]'
   labels='${args.labels || args.variant === 'thumbnail' ? '[{"variant": "highlight", "label": "Highlight"}, {"variant": "medium", "label": "Medium"}]' : ''}'
 >
   ${args.variant === 'thumbnail' ? args.description : ''}

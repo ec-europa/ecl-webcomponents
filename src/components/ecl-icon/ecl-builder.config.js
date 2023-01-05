@@ -34,7 +34,7 @@ module.exports = {
   ],
   styles: [
     {
-      entry: path.resolve(nodeModules, '@ecl/vanilla-component-icon/icon-ec.scss'),
+      entry: path.resolve(__dirname, 'src/styles/ecl-icon-ec.scss'),
       dest: path.resolve(outputFolder, 'styles/ecl-icon-ec.css'),
       options: {
         banner,
@@ -43,7 +43,7 @@ module.exports = {
       },
     },
     {
-      entry: path.resolve(nodeModules, '@ecl/vanilla-component-icon/icon-eu.scss'),
+      entry: path.resolve(__dirname, 'src/styles/ecl-icon-eu.scss'),
       dest: path.resolve(outputFolder, 'styles/ecl-icon-eu.css'),
       options: {
         banner,

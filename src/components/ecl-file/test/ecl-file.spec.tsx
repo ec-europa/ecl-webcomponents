@@ -15,6 +15,8 @@ describe('ecl-file', () => {
         download-label="Download"
         language="English"
         meta="(16.2 MB - PDF)"
+        taxonomies-label="Taxonomy list"
+        taxonomies='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"},"Taxonomy item 3"]'
         detail-meta='["Resource type", "Publication date"]'
         ecl-script
       >
