@@ -1,0 +1,11 @@
+@use '@ecl/theme-ec';
+
+@use '@ecl/vanilla-component-description-list/description-list-ec';
+
+.ecl-description-list__term.sc-ecl-description-list-ec:first-child {
+  margin-top: 1rem;
+}
+
+.ecl-link--icon-before .ecl-icon {
+  margin-inline-end: 0.5rem !important;
+}

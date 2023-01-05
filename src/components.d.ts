@@ -64,6 +64,21 @@ export namespace Components {
         "variant": string;
         "year": string;
     }
+    interface EclDescriptionList {
+        "styleClass": string;
+        "theme": string;
+        "variant": string;
+    }
+    interface EclDescriptionListDefinition {
+        "items": string;
+        "styleClass": string;
+        "theme": string;
+        "type": string;
+    }
+    interface EclDescriptionListTerm {
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclExpandable {
         "eclScript": boolean;
         "isExpanded": boolean;
@@ -251,6 +266,24 @@ declare global {
         prototype: HTMLEclDateBlockElement;
         new (): HTMLEclDateBlockElement;
     };
+    interface HTMLEclDescriptionListElement extends Components.EclDescriptionList, HTMLStencilElement {
+    }
+    var HTMLEclDescriptionListElement: {
+        prototype: HTMLEclDescriptionListElement;
+        new (): HTMLEclDescriptionListElement;
+    };
+    interface HTMLEclDescriptionListDefinitionElement extends Components.EclDescriptionListDefinition, HTMLStencilElement {
+    }
+    var HTMLEclDescriptionListDefinitionElement: {
+        prototype: HTMLEclDescriptionListDefinitionElement;
+        new (): HTMLEclDescriptionListDefinitionElement;
+    };
+    interface HTMLEclDescriptionListTermElement extends Components.EclDescriptionListTerm, HTMLStencilElement {
+    }
+    var HTMLEclDescriptionListTermElement: {
+        prototype: HTMLEclDescriptionListTermElement;
+        new (): HTMLEclDescriptionListTermElement;
+    };
     interface HTMLEclExpandableElement extends Components.EclExpandable, HTMLStencilElement {
     }
     var HTMLEclExpandableElement: {
@@ -349,6 +382,9 @@ declare global {
         "ecl-carousel": HTMLEclCarouselElement;
         "ecl-carousel-item": HTMLEclCarouselItemElement;
         "ecl-date-block": HTMLEclDateBlockElement;
+        "ecl-description-list": HTMLEclDescriptionListElement;
+        "ecl-description-list-definition": HTMLEclDescriptionListDefinitionElement;
+        "ecl-description-list-term": HTMLEclDescriptionListTermElement;
         "ecl-expandable": HTMLEclExpandableElement;
         "ecl-fact-figures": HTMLEclFactFiguresElement;
         "ecl-fact-figures-item": HTMLEclFactFiguresItemElement;
@@ -424,6 +460,21 @@ declare namespace LocalJSX {
         "theme"?: string;
         "variant"?: string;
         "year"?: string;
+    }
+    interface EclDescriptionList {
+        "styleClass"?: string;
+        "theme"?: string;
+        "variant"?: string;
+    }
+    interface EclDescriptionListDefinition {
+        "items"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "type"?: string;
+    }
+    interface EclDescriptionListTerm {
+        "styleClass"?: string;
+        "theme"?: string;
     }
     interface EclExpandable {
         "eclScript"?: boolean;
@@ -576,6 +627,9 @@ declare namespace LocalJSX {
         "ecl-carousel": EclCarousel;
         "ecl-carousel-item": EclCarouselItem;
         "ecl-date-block": EclDateBlock;
+        "ecl-description-list": EclDescriptionList;
+        "ecl-description-list-definition": EclDescriptionListDefinition;
+        "ecl-description-list-term": EclDescriptionListTerm;
         "ecl-expandable": EclExpandable;
         "ecl-fact-figures": EclFactFigures;
         "ecl-fact-figures-item": EclFactFiguresItem;
@@ -604,6 +658,9 @@ declare module "@stencil/core" {
             "ecl-carousel": LocalJSX.EclCarousel & JSXBase.HTMLAttributes<HTMLEclCarouselElement>;
             "ecl-carousel-item": LocalJSX.EclCarouselItem & JSXBase.HTMLAttributes<HTMLEclCarouselItemElement>;
             "ecl-date-block": LocalJSX.EclDateBlock & JSXBase.HTMLAttributes<HTMLEclDateBlockElement>;
+            "ecl-description-list": LocalJSX.EclDescriptionList & JSXBase.HTMLAttributes<HTMLEclDescriptionListElement>;
+            "ecl-description-list-definition": LocalJSX.EclDescriptionListDefinition & JSXBase.HTMLAttributes<HTMLEclDescriptionListDefinitionElement>;
+            "ecl-description-list-term": LocalJSX.EclDescriptionListTerm & JSXBase.HTMLAttributes<HTMLEclDescriptionListTermElement>;
             "ecl-expandable": LocalJSX.EclExpandable & JSXBase.HTMLAttributes<HTMLEclExpandableElement>;
             "ecl-fact-figures": LocalJSX.EclFactFigures & JSXBase.HTMLAttributes<HTMLEclFactFiguresElement>;
             "ecl-fact-figures-item": LocalJSX.EclFactFiguresItem & JSXBase.HTMLAttributes<HTMLEclFactFiguresItemElement>;
