@@ -1,0 +1,21 @@
+@use '@ecl/theme-ec';
+
+@use '@ecl/vanilla-component-news-ticker/news-ticker-ec';
+
+.ecl-news-ticker__icon.sc-ecl-news-ticker-ec {
+  margin: 0.75rem !important;
+  fill: #004494 !important;
+}
+
+.ecl-u-sr-only {
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}

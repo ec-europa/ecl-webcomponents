@@ -22,3 +22,4 @@ cp -r ./src/components/ecl-media-container/build ./build
 cp -r ./src/components/ecl-message/build ./build
 cp -r ./src/components/ecl-carousel/build ./build
 cp -r ./src/components/ecl-file/build ./build
+cp -r ./src/components/ecl-news-ticker/build ./build

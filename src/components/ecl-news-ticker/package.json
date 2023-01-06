@@ -1,0 +1,34 @@
+{
+  "name": "@ecl/web-components-news-ticker",
+  "author": "European Commission",
+  "license": "EUPL-1.2",
+  "version": "0.0.0",
+  "description": "ECL Page Banner",
+  "main": "ecl-news-ticker.tsx",
+  "private": true,
+  "scripts": {
+    "build:styles": "cross-env ecl-builder styles",
+    "build:scripts": "cross-env ecl-builder scripts",
+    "build": "run-s clean build:*",
+    "clean": "rimraf build",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@ecl/builder": "3.6.0",
+    "@ecl/vanilla-component-news-ticker": "3.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planctus/ecl-webcomponents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/planctus/ecl-webcomponents/issues"
+  },
+  "homepage": "https://github.com/planctus/ecl-webcomponents",
+  "keywords": [
+    "ecl",
+    "europa-component-library",
+    "design-system",
+    "web-components"
+  ]
+}

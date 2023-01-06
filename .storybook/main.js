@@ -13,6 +13,7 @@ if (!isProd) {
     path.resolve(`${__dirname}/../src/components/ecl-message`),
     path.resolve(`${__dirname}/../src/components/ecl-carousel`),
     path.resolve(`${__dirname}/../src/components/ecl-file`),
+    path.resolve(`${__dirname}/../src/components/ecl-news-ticker`),
   ];
 }
 

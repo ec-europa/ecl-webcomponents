@@ -32,6 +32,7 @@
  - [ecl-hero-banner](../ecl-hero-banner)
  - [ecl-link](../ecl-link)
  - [ecl-message](../ecl-message)
+ - [ecl-news-ticker](../ecl-news-ticker)
  - [ecl-page-banner](../ecl-page-banner)
  - [ecl-social-media-share](../ecl-social-media-share)
  - [ecl-tag](../ecl-tag)
@@ -50,6 +51,7 @@ graph TD;
   ecl-hero-banner --> ecl-icon
   ecl-link --> ecl-icon
   ecl-message --> ecl-icon
+  ecl-news-ticker --> ecl-icon
   ecl-page-banner --> ecl-icon
   ecl-social-media-share --> ecl-icon
   ecl-tag --> ecl-icon

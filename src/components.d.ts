@@ -197,6 +197,21 @@ export namespace Components {
         "variant": string;
         "withUtils": boolean;
     }
+    interface EclNewsTicker {
+        "counterLabel": string;
+        "eclScript": boolean;
+        "itemsLength": number;
+        "srNext": string;
+        "srPause": string;
+        "srPrev": string;
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclNewsTickerItem {
+        "path": string;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclPageBanner {
         "bannerTitle": string;
         "centered": boolean;
@@ -358,6 +373,18 @@ declare global {
         prototype: HTMLEclMessageElement;
         new (): HTMLEclMessageElement;
     };
+    interface HTMLEclNewsTickerElement extends Components.EclNewsTicker, HTMLStencilElement {
+    }
+    var HTMLEclNewsTickerElement: {
+        prototype: HTMLEclNewsTickerElement;
+        new (): HTMLEclNewsTickerElement;
+    };
+    interface HTMLEclNewsTickerItemElement extends Components.EclNewsTickerItem, HTMLStencilElement {
+    }
+    var HTMLEclNewsTickerItemElement: {
+        prototype: HTMLEclNewsTickerItemElement;
+        new (): HTMLEclNewsTickerItemElement;
+    };
     interface HTMLEclPageBannerElement extends Components.EclPageBanner, HTMLStencilElement {
     }
     var HTMLEclPageBannerElement: {
@@ -399,6 +426,8 @@ declare global {
         "ecl-link": HTMLEclLinkElement;
         "ecl-media-container": HTMLEclMediaContainerElement;
         "ecl-message": HTMLEclMessageElement;
+        "ecl-news-ticker": HTMLEclNewsTickerElement;
+        "ecl-news-ticker-item": HTMLEclNewsTickerItemElement;
         "ecl-page-banner": HTMLEclPageBannerElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
         "ecl-tag": HTMLEclTagElement;
@@ -596,6 +625,21 @@ declare namespace LocalJSX {
         "variant"?: string;
         "withUtils"?: boolean;
     }
+    interface EclNewsTicker {
+        "counterLabel"?: string;
+        "eclScript"?: boolean;
+        "itemsLength"?: number;
+        "srNext"?: string;
+        "srPause"?: string;
+        "srPrev"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclNewsTickerItem {
+        "path"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclPageBanner {
         "bannerTitle"?: string;
         "centered"?: boolean;
@@ -646,6 +690,8 @@ declare namespace LocalJSX {
         "ecl-link": EclLink;
         "ecl-media-container": EclMediaContainer;
         "ecl-message": EclMessage;
+        "ecl-news-ticker": EclNewsTicker;
+        "ecl-news-ticker-item": EclNewsTickerItem;
         "ecl-page-banner": EclPageBanner;
         "ecl-social-media-share": EclSocialMediaShare;
         "ecl-tag": EclTag;
@@ -677,6 +723,8 @@ declare module "@stencil/core" {
             "ecl-link": LocalJSX.EclLink & JSXBase.HTMLAttributes<HTMLEclLinkElement>;
             "ecl-media-container": LocalJSX.EclMediaContainer & JSXBase.HTMLAttributes<HTMLEclMediaContainerElement>;
             "ecl-message": LocalJSX.EclMessage & JSXBase.HTMLAttributes<HTMLEclMessageElement>;
+            "ecl-news-ticker": LocalJSX.EclNewsTicker & JSXBase.HTMLAttributes<HTMLEclNewsTickerElement>;
+            "ecl-news-ticker-item": LocalJSX.EclNewsTickerItem & JSXBase.HTMLAttributes<HTMLEclNewsTickerItemElement>;
             "ecl-page-banner": LocalJSX.EclPageBanner & JSXBase.HTMLAttributes<HTMLEclPageBannerElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;

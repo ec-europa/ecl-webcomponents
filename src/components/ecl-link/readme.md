@@ -25,6 +25,7 @@
  - [ecl-file](../ecl-file)
  - [ecl-file-translations-item](../ecl-file)
  - [ecl-hero-banner](../ecl-hero-banner)
+ - [ecl-news-ticker-item](../ecl-news-ticker)
  - [ecl-page-banner](../ecl-page-banner)
  - [ecl-social-media-share](../ecl-social-media-share)
 
@@ -40,6 +41,7 @@ graph TD;
   ecl-file --> ecl-link
   ecl-file-translations-item --> ecl-link
   ecl-hero-banner --> ecl-link
+  ecl-news-ticker-item --> ecl-link
   ecl-page-banner --> ecl-link
   ecl-social-media-share --> ecl-link
   style ecl-link fill:#f9f,stroke:#333,stroke-width:4px
