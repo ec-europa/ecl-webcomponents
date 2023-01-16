@@ -1,0 +1,32 @@
+@use '@ecl/theme-ec';
+
+@use '@ecl/vanilla-component-rating-field/rating-field';
+
+.ecl-rating-field {
+  margin-top: 0.75rem;
+}
+
+.ecl-rating-field__icon-filled {
+  fill: #ffd617 !important;
+}
+
+.ecl-rating-field__icon-outline {
+  fill: #707070 !important;
+}
+
+.ecl-form-label__optional {
+  margin-inline-start: 0.5rem;
+}
+
+.ecl-u-sr-only {
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}

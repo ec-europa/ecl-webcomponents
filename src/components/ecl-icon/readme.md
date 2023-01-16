@@ -29,11 +29,13 @@
  - [ecl-file](../ecl-file)
  - [ecl-file-translations](../ecl-file)
  - [ecl-file-translations-item](../ecl-file)
+ - [ecl-form-group](../ecl-form-group)
  - [ecl-hero-banner](../ecl-hero-banner)
  - [ecl-link](../ecl-link)
  - [ecl-message](../ecl-message)
  - [ecl-news-ticker](../ecl-news-ticker)
  - [ecl-page-banner](../ecl-page-banner)
+ - [ecl-rating-star](../ecl-rating-field)
  - [ecl-social-media-share](../ecl-social-media-share)
  - [ecl-tag](../ecl-tag)
 
@@ -48,11 +50,13 @@ graph TD;
   ecl-file --> ecl-icon
   ecl-file-translations --> ecl-icon
   ecl-file-translations-item --> ecl-icon
+  ecl-form-group --> ecl-icon
   ecl-hero-banner --> ecl-icon
   ecl-link --> ecl-icon
   ecl-message --> ecl-icon
   ecl-news-ticker --> ecl-icon
   ecl-page-banner --> ecl-icon
+  ecl-rating-star --> ecl-icon
   ecl-social-media-share --> ecl-icon
   ecl-tag --> ecl-icon
   style ecl-icon fill:#f9f,stroke:#333,stroke-width:4px

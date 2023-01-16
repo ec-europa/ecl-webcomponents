@@ -150,6 +150,20 @@ export namespace Components {
         "theme": string;
         "variant": string;
     }
+    interface EclFormGroup {
+        "helperId": string;
+        "helperText": string;
+        "invalid": boolean;
+        "invalidIcon": string;
+        "invalidText": string;
+        "label": string;
+        "name": string;
+        "optionalText": string;
+        "required": boolean;
+        "requiredText": string;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclHeroBanner {
         "bannerTitle": string;
         "centered": boolean;
@@ -236,6 +250,23 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
         "variant": string;
+    }
+    interface EclRatingField {
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclRatingStar {
+        "checked": boolean;
+        "disabled": boolean;
+        "icon": string;
+        "iconFilled": string;
+        "itemId": string;
+        "label": string;
+        "name": string;
+        "required": boolean;
+        "styleClass": string;
+        "theme": string;
+        "value": string;
     }
     interface EclSocialMediaShare {
         "description": string;
@@ -355,6 +386,12 @@ declare global {
         prototype: HTMLEclFileTranslationsItemElement;
         new (): HTMLEclFileTranslationsItemElement;
     };
+    interface HTMLEclFormGroupElement extends Components.EclFormGroup, HTMLStencilElement {
+    }
+    var HTMLEclFormGroupElement: {
+        prototype: HTMLEclFormGroupElement;
+        new (): HTMLEclFormGroupElement;
+    };
     interface HTMLEclHeroBannerElement extends Components.EclHeroBanner, HTMLStencilElement {
     }
     var HTMLEclHeroBannerElement: {
@@ -409,6 +446,18 @@ declare global {
         prototype: HTMLEclPageBannerElement;
         new (): HTMLEclPageBannerElement;
     };
+    interface HTMLEclRatingFieldElement extends Components.EclRatingField, HTMLStencilElement {
+    }
+    var HTMLEclRatingFieldElement: {
+        prototype: HTMLEclRatingFieldElement;
+        new (): HTMLEclRatingFieldElement;
+    };
+    interface HTMLEclRatingStarElement extends Components.EclRatingStar, HTMLStencilElement {
+    }
+    var HTMLEclRatingStarElement: {
+        prototype: HTMLEclRatingStarElement;
+        new (): HTMLEclRatingStarElement;
+    };
     interface HTMLEclSocialMediaShareElement extends Components.EclSocialMediaShare, HTMLStencilElement {
     }
     var HTMLEclSocialMediaShareElement: {
@@ -439,6 +488,7 @@ declare global {
         "ecl-file": HTMLEclFileElement;
         "ecl-file-translations": HTMLEclFileTranslationsElement;
         "ecl-file-translations-item": HTMLEclFileTranslationsItemElement;
+        "ecl-form-group": HTMLEclFormGroupElement;
         "ecl-hero-banner": HTMLEclHeroBannerElement;
         "ecl-icon": HTMLEclIconElement;
         "ecl-label": HTMLEclLabelElement;
@@ -448,6 +498,8 @@ declare global {
         "ecl-news-ticker": HTMLEclNewsTickerElement;
         "ecl-news-ticker-item": HTMLEclNewsTickerItemElement;
         "ecl-page-banner": HTMLEclPageBannerElement;
+        "ecl-rating-field": HTMLEclRatingFieldElement;
+        "ecl-rating-star": HTMLEclRatingStarElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
         "ecl-tag": HTMLEclTagElement;
     }
@@ -597,6 +649,20 @@ declare namespace LocalJSX {
         "theme"?: string;
         "variant"?: string;
     }
+    interface EclFormGroup {
+        "helperId"?: string;
+        "helperText"?: string;
+        "invalid"?: boolean;
+        "invalidIcon"?: string;
+        "invalidText"?: string;
+        "label"?: string;
+        "name"?: string;
+        "optionalText"?: string;
+        "required"?: boolean;
+        "requiredText"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclHeroBanner {
         "bannerTitle"?: string;
         "centered"?: boolean;
@@ -684,6 +750,23 @@ declare namespace LocalJSX {
         "theme"?: string;
         "variant"?: string;
     }
+    interface EclRatingField {
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclRatingStar {
+        "checked"?: boolean;
+        "disabled"?: boolean;
+        "icon"?: string;
+        "iconFilled"?: string;
+        "itemId"?: string;
+        "label"?: string;
+        "name"?: string;
+        "required"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+        "value"?: string;
+    }
     interface EclSocialMediaShare {
         "description"?: string;
         "items"?: string;
@@ -716,6 +799,7 @@ declare namespace LocalJSX {
         "ecl-file": EclFile;
         "ecl-file-translations": EclFileTranslations;
         "ecl-file-translations-item": EclFileTranslationsItem;
+        "ecl-form-group": EclFormGroup;
         "ecl-hero-banner": EclHeroBanner;
         "ecl-icon": EclIcon;
         "ecl-label": EclLabel;
@@ -725,6 +809,8 @@ declare namespace LocalJSX {
         "ecl-news-ticker": EclNewsTicker;
         "ecl-news-ticker-item": EclNewsTickerItem;
         "ecl-page-banner": EclPageBanner;
+        "ecl-rating-field": EclRatingField;
+        "ecl-rating-star": EclRatingStar;
         "ecl-social-media-share": EclSocialMediaShare;
         "ecl-tag": EclTag;
     }
@@ -750,6 +836,7 @@ declare module "@stencil/core" {
             "ecl-file": LocalJSX.EclFile & JSXBase.HTMLAttributes<HTMLEclFileElement>;
             "ecl-file-translations": LocalJSX.EclFileTranslations & JSXBase.HTMLAttributes<HTMLEclFileTranslationsElement>;
             "ecl-file-translations-item": LocalJSX.EclFileTranslationsItem & JSXBase.HTMLAttributes<HTMLEclFileTranslationsItemElement>;
+            "ecl-form-group": LocalJSX.EclFormGroup & JSXBase.HTMLAttributes<HTMLEclFormGroupElement>;
             "ecl-hero-banner": LocalJSX.EclHeroBanner & JSXBase.HTMLAttributes<HTMLEclHeroBannerElement>;
             "ecl-icon": LocalJSX.EclIcon & JSXBase.HTMLAttributes<HTMLEclIconElement>;
             "ecl-label": LocalJSX.EclLabel & JSXBase.HTMLAttributes<HTMLEclLabelElement>;
@@ -759,6 +846,8 @@ declare module "@stencil/core" {
             "ecl-news-ticker": LocalJSX.EclNewsTicker & JSXBase.HTMLAttributes<HTMLEclNewsTickerElement>;
             "ecl-news-ticker-item": LocalJSX.EclNewsTickerItem & JSXBase.HTMLAttributes<HTMLEclNewsTickerItemElement>;
             "ecl-page-banner": LocalJSX.EclPageBanner & JSXBase.HTMLAttributes<HTMLEclPageBannerElement>;
+            "ecl-rating-field": LocalJSX.EclRatingField & JSXBase.HTMLAttributes<HTMLEclRatingFieldElement>;
+            "ecl-rating-star": LocalJSX.EclRatingStar & JSXBase.HTMLAttributes<HTMLEclRatingStarElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
         }
