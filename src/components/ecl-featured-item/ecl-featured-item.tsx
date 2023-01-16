@@ -18,7 +18,7 @@ export class EclFeaturedItem {
   @Prop() mediaCaption: string;
   @Prop() position: string = 'left';
   @Prop() eclScript: boolean = false;
-  @Prop() withUtils: boolean = false;
+  @Prop() withUtils: boolean = true;
   @Prop() defaultContainerClass = 'ecl-featured-item__container';
 
   getClass(): string {
