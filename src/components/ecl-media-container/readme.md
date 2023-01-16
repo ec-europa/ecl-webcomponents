@@ -23,6 +23,19 @@
 | `withUtils`     | `with-utils`     |             | `boolean` | `false`     |
 
 
+## Dependencies
+
+### Used by
+
+ - [ecl-featured-item](../ecl-featured-item)
+
+### Graph
+```mermaid
+graph TD;
+  ecl-featured-item --> ecl-media-container
+  style ecl-media-container fill:#f9f,stroke:#333,stroke-width:4px
+```
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*

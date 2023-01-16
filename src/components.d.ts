@@ -103,6 +103,18 @@ export namespace Components {
         "theme": string;
         "value": string;
     }
+    interface EclFeaturedItem {
+        "defaultContainerClass": string;
+        "eclScript": boolean;
+        "image": string;
+        "itemTitle": string;
+        "mediaCaption": string;
+        "position": string;
+        "styleClass": string;
+        "theme": string;
+        "variant": string;
+        "withUtils": boolean;
+    }
     interface EclFile {
         "ariaLabel": string;
         "detailMeta": string;
@@ -319,6 +331,12 @@ declare global {
         prototype: HTMLEclFactFiguresItemElement;
         new (): HTMLEclFactFiguresItemElement;
     };
+    interface HTMLEclFeaturedItemElement extends Components.EclFeaturedItem, HTMLStencilElement {
+    }
+    var HTMLEclFeaturedItemElement: {
+        prototype: HTMLEclFeaturedItemElement;
+        new (): HTMLEclFeaturedItemElement;
+    };
     interface HTMLEclFileElement extends Components.EclFile, HTMLStencilElement {
     }
     var HTMLEclFileElement: {
@@ -417,6 +435,7 @@ declare global {
         "ecl-expandable": HTMLEclExpandableElement;
         "ecl-fact-figures": HTMLEclFactFiguresElement;
         "ecl-fact-figures-item": HTMLEclFactFiguresItemElement;
+        "ecl-featured-item": HTMLEclFeaturedItemElement;
         "ecl-file": HTMLEclFileElement;
         "ecl-file-translations": HTMLEclFileTranslationsElement;
         "ecl-file-translations-item": HTMLEclFileTranslationsItemElement;
@@ -530,6 +549,18 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "value"?: string;
+    }
+    interface EclFeaturedItem {
+        "defaultContainerClass"?: string;
+        "eclScript"?: boolean;
+        "image"?: string;
+        "itemTitle"?: string;
+        "mediaCaption"?: string;
+        "position"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "variant"?: string;
+        "withUtils"?: boolean;
     }
     interface EclFile {
         "ariaLabel"?: string;
@@ -681,6 +712,7 @@ declare namespace LocalJSX {
         "ecl-expandable": EclExpandable;
         "ecl-fact-figures": EclFactFigures;
         "ecl-fact-figures-item": EclFactFiguresItem;
+        "ecl-featured-item": EclFeaturedItem;
         "ecl-file": EclFile;
         "ecl-file-translations": EclFileTranslations;
         "ecl-file-translations-item": EclFileTranslationsItem;
@@ -714,6 +746,7 @@ declare module "@stencil/core" {
             "ecl-expandable": LocalJSX.EclExpandable & JSXBase.HTMLAttributes<HTMLEclExpandableElement>;
             "ecl-fact-figures": LocalJSX.EclFactFigures & JSXBase.HTMLAttributes<HTMLEclFactFiguresElement>;
             "ecl-fact-figures-item": LocalJSX.EclFactFiguresItem & JSXBase.HTMLAttributes<HTMLEclFactFiguresItemElement>;
+            "ecl-featured-item": LocalJSX.EclFeaturedItem & JSXBase.HTMLAttributes<HTMLEclFeaturedItemElement>;
             "ecl-file": LocalJSX.EclFile & JSXBase.HTMLAttributes<HTMLEclFileElement>;
             "ecl-file-translations": LocalJSX.EclFileTranslations & JSXBase.HTMLAttributes<HTMLEclFileTranslationsElement>;
             "ecl-file-translations-item": LocalJSX.EclFileTranslationsItem & JSXBase.HTMLAttributes<HTMLEclFileTranslationsItemElement>;
