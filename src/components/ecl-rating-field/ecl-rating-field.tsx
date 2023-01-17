@@ -13,6 +13,8 @@ export class EclRatingField {
   @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
+  @Prop() disabled: boolean = false;
+  @Prop() required: boolean = false;
 
   componentDidRender() {
     const stars = this.el.querySelectorAll('.ecl-rating-field__star');
@@ -21,10 +23,16 @@ export class EclRatingField {
   }
 
   getClass(): string {
-    return [
+    const styleClasses = [
       `ecl-rating-field`,
       this.styleClass
-    ].join(' ');
+    ];
+
+    if (this.disabled) {
+      styleClasses.push('ecl-rating-field--disabled');
+    }
+
+    return styleClasses.join(' ');
   }
 
   render() {

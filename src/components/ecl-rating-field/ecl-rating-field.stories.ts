@@ -66,14 +66,19 @@ const Template = (args) =>
     optional-text="${args.optionalText}"
     label="${args.label}"
     required=${args.required}
+    disabled="${args.disabled}"
   >
-    <ecl-rating-field>
+    <ecl-rating-field
+      disabled=${args.disabled}
+      required=${args.required}
+    >
       <ecl-rating-star
         theme="${args.theme}"
         value="1"
         item-id="item-id-1"
         label="1 star"
         disabled=${args.disabled}
+        required=${args.required}
       >
       </ecl-rating-star>
       <ecl-rating-star
@@ -82,6 +87,7 @@ const Template = (args) =>
         item-id="item-id-2"
         label="2 stars"
         disabled=${args.disabled}
+        required=${args.required}
       >
       </ecl-rating-star>
       <ecl-rating-star
@@ -90,6 +96,7 @@ const Template = (args) =>
         item-id="item-id-3"
         label="3 stars"
         disabled=${args.disabled}
+        required=${args.required}
       >
       </ecl-rating-star>
       <ecl-rating-star
@@ -98,6 +105,7 @@ const Template = (args) =>
         item-id="item-id-4"
         label="4 stars"
         disabled=${args.disabled}
+        required=${args.required}
       >
       </ecl-rating-star>
       <ecl-rating-star
@@ -106,6 +114,7 @@ const Template = (args) =>
         item-id="item-id-5"
         label="5 stars"
         disabled=${args.disabled}
+        required=${args.required}
       >
       </ecl-rating-star>
     </ecl-rating-field>

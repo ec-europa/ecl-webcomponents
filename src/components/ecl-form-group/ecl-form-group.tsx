@@ -33,7 +33,10 @@ export class EclFormGroup {
 
   render() {
     return (
-      <fieldset class={this.getClass()}>
+      <fieldset
+        class={this.getClass()}
+        aria-describedby={this.helperId}
+      >
       { this.label ?
         <legend
           class={`ecl-form-label ${this.invalid ? 'ecl-form-label--invalid' : ''}`}

@@ -252,6 +252,8 @@ export namespace Components {
         "variant": string;
     }
     interface EclRatingField {
+        "disabled": boolean;
+        "required": boolean;
         "styleClass": string;
         "theme": string;
     }
@@ -751,6 +753,8 @@ declare namespace LocalJSX {
         "variant"?: string;
     }
     interface EclRatingField {
+        "disabled"?: boolean;
+        "required"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
     }
