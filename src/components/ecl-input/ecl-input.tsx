@@ -30,6 +30,8 @@ export class EclInput {
   @Prop() defaultValue: string;
   @Prop() max: number;
   @Prop() min: number;
+  @Prop() step: number = 1;
+  @Prop() valueLabel: string;
 
   getClass(): string {
     const styleClasses = ['ecl-input', this.styleClass];
@@ -60,6 +62,9 @@ export class EclInput {
   getInputClasses(input): string {
     let inputClasses = [`ecl-${input}__input`];
 
+    if (this.type === 'range') {
+      inputClasses = ['ecl-range', `ecl-range--${this.width}`];
+    }
     if (this.type === 'text' || this.type === 'search') {
       inputClasses = ['ecl-text-input', `ecl-text-input--${this.width}`];
       if (this.invalid) {
@@ -94,7 +99,9 @@ export class EclInput {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const range = new ECL.Range(this.el.firstElementChild);
+        const formGroup = this.el.closest('.ecl-form-group');
+        formGroup.setAttribute('data-ecl-range', 'data-ecl-range');
+        const range = new ECL.Range(formGroup);
         range.init();
       };
 
@@ -103,6 +110,10 @@ export class EclInput {
   }
 
   render() {
+    const wrapperAttrs = {};
+    if (this.type === 'range') {
+      wrapperAttrs['data-ecl-range'] = true;
+    }
     const attributes = {
       class: this.getInputClasses(this.type),
       type: this.type,
@@ -118,12 +129,13 @@ export class EclInput {
       attributes['data-ecl-range-input'] = true;
       attributes['min'] = this.min;
       attributes['max'] = this.max;
-      attributes['eclScript'] = this.eclScript;
+      attributes['step'] = this.step;
     }
 
     return (
       <div 
         class={this.getClass()}
+        {...wrapperAttrs}
       >
         <input {...attributes} />
       { this.type === 'checkbox' ?
@@ -152,8 +164,11 @@ export class EclInput {
         : ''
       }
       { this.type === 'radio' ?
-        <label class={this.getBoxClasses('radio', 'box')}>
-          <span class={this.getBoxClasses('radio', 'label')}>
+        <label 
+          class={this.getBoxClasses('radio', 'label')}
+          htmlFor={this.inputId}
+        >
+          <span class={this.getBoxClasses('radio', 'box')}>
             <span class="ecl-radio__box-inner"></span>
           </span>
           <span class="ecl-radio__text">{this.label}</span>
@@ -168,6 +183,12 @@ export class EclInput {
           {this.helperText}
         </div>
         : ''
+      }
+      { this.type === 'range' ?
+        <div class="ecl-range__value">
+          {this.valueLabel}
+          <span class="ecl-range__value-current" data-ecl-range-value-current> </span>
+        </div> : ''
       }
       </div>
     );

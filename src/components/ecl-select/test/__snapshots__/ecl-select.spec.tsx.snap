@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-select renders 1`] = `
+<ecl-form-group helper-id="helper-id" helper-text="Helper text" label="Select input field" required="">
+  <!---->
+  <fieldset aria-describedby="helper-id" class="ecl-form-group">
+    <legend class="ecl-form-label">
+      Select input field
+      <span class="ecl-form-label__required">
+        *
+      </span>
+    </legend>
+    <div class="ecl-help-block">
+      Helper text
+    </div>
+    <ecl-select name="ecl-select" required="" width="s">
+      <!---->
+      <div class="ecl-select__container ecl-select__container--s">
+        <select class="ecl-select" name="ecl-select" required="">
+          <option value="1">
+            Belgium
+          </option>
+          <option value="2">
+            France
+          </option>
+          <option disabled="" value="3">
+            Luxembourg
+          </option>
+          <option value="4">
+            Germany
+          </option>
+          <option selected="" value="5">
+            Bulgaria
+          </option>
+          <option value="6">
+            Italy
+          </option>
+          <option value="7">
+            Romania
+          </option>
+          <option value="8">
+            Greece
+          </option>
+          <option value="9">
+            Hungary
+          </option>
+          <option value="10">
+            Portugal
+          </option>
+        </select>
+        <div class="ecl-select__icon">
+          <ecl-icon icon="corner-arrow" size="s" style-class="ecl-select__icon-shape sc-ecl-select-ec" transform="rotate-180"></ecl-icon>
+        </div>
+      </div>
+    </ecl-select>
+  </fieldset>
+</ecl-form-group>
+`;

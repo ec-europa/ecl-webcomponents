@@ -4,7 +4,6 @@
 @use '@ecl/vanilla-component-text-input/text-input-ec';
 @use '@ecl/vanilla-component-range/range-ec';
 @use '@ecl/vanilla-component-radio/radio-ec';
-@use '@ecl/vanilla-component-datepicker/datepicker-ec';
 
 .ecl-input.sc-ecl-input-ec {
   margin-top: 0.75rem;
@@ -13,4 +12,9 @@
 .ecl-checkbox__icon.sc-ecl-input-ec {
   fill: white !important;
   vertical-align: middle;
+}
+
+.ecl-range__value-current.sc-ecl-input-ec {
+  margin-inline-start: 0.25rem;
+  margin-top: 0.625rem;
 }

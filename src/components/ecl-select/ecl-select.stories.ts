@@ -175,6 +175,7 @@ const Template = (args) =>
       multiple-clear-all-text="${args.multipleClearAllText}"
       ecl-script=${args.multiple}
       name="ecl-select"
+      width=${args.width}
     >
       <option value=1>Belgium</option>
       <option value=2>France</option>

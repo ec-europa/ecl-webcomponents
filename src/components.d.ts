@@ -201,9 +201,11 @@ export namespace Components {
         "name": string;
         "placeholder": string;
         "required": boolean;
+        "step": number;
         "styleClass": string;
         "theme": string;
         "type": string;
+        "valueLabel": string;
         "width": string;
     }
     interface EclLabel {
@@ -753,9 +755,11 @@ declare namespace LocalJSX {
         "name"?: string;
         "placeholder"?: string;
         "required"?: boolean;
+        "step"?: number;
         "styleClass"?: string;
         "theme"?: string;
         "type"?: string;
+        "valueLabel"?: string;
         "width"?: string;
     }
     interface EclLabel {

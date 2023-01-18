@@ -12,6 +12,7 @@ const getArgs = () => {
     label: '',
     placeholder: 'Placeholder text',
     defaultValue: '',
+    step: 1,
   };
 };
 
@@ -92,7 +93,6 @@ const getArgTypes = () => {
       },
     },
     min: {
-      name: 'min',
       type: 'number',
       description: 'Minimum value',
       table: {
@@ -101,7 +101,14 @@ const getArgTypes = () => {
       },
     },
     max: {
-      name: 'max',
+      type: 'number',
+      description: 'Maximun value',
+      table: {
+        type: { summary: 'number' },
+        category: 'Range input',
+      },
+    },
+    step: {
       type: 'number',
       description: 'Maximun value',
       table: {
@@ -121,7 +128,7 @@ const Template = args =>
   label="Label"
   required=${args.required}
   optional-text="(optional)"
-  helper-text="This is the input helper text."
+  helper-text="This is the form group helper text."
   invalid=${args.invalid}
   disabled=${args.disabled}
   invalid-text="This is an error message"
@@ -131,17 +138,20 @@ const Template = args =>
     type="${args.type}"
     theme="${args.theme}"
     input-id="${args.inputId}"
-    default-value="${args.type === 'radio' ? args.defaultValue || 15 : args.defaultValue}"
-    label="${(args.type === 'checkbox' || args.type === 'radio') ? (args.label || 'label') : ''}"
+    default-value="${args.type === 'range' ? args.defaultValue || 15 : args.defaultValue}"
+    label="${(args.type === 'checkbox' || args.type === 'radio') ? (args.label || 'Label') : ''}"
     required=${args.required}
     disabled=${args.disabled}
     invalid=${args.invalid}
     width="${args.width}"
     placeholder="${args.placeholder}"
+    helper-text="${args.type === 'checkbox' || args.type === 'radio' ? 'This is the input helper text' : '' }"
     name="${args.name}"
     min=${args.min}
     max=${args.max}
-    ecl-script=${args.type ===' range'}
+    ecl-script=${args.type === 'range'}
+    step=${args.step}
+    value-label="Value"
   >
   </ecl-input>
 </ecl-form-group>`;

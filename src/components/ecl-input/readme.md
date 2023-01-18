@@ -22,9 +22,11 @@
 | `name`         | `name`          |             | `string`  | `undefined` |
 | `placeholder`  | `placeholder`   |             | `string`  | `undefined` |
 | `required`     | `required`      |             | `boolean` | `false`     |
+| `step`         | `step`          |             | `number`  | `1`         |
 | `styleClass`   | `style-class`   |             | `string`  | `undefined` |
 | `theme`        | `theme`         |             | `string`  | `'ec'`      |
 | `type`         | `type`          |             | `string`  | `undefined` |
+| `valueLabel`   | `value-label`   |             | `string`  | `undefined` |
 | `width`        | `width`         |             | `string`  | `'m'`       |
 
 
