@@ -187,6 +187,25 @@ export namespace Components {
         "theme": string;
         "transform": string;
     }
+    interface EclInput {
+        "defaultValue": string;
+        "disabled": boolean;
+        "eclScript": boolean;
+        "helperId": string;
+        "helperText": string;
+        "inputId": string;
+        "invalid": boolean;
+        "label": string;
+        "max": number;
+        "min": number;
+        "name": string;
+        "placeholder": string;
+        "required": boolean;
+        "styleClass": string;
+        "theme": string;
+        "type": string;
+        "width": string;
+    }
     interface EclLabel {
         "styleClass": string;
         "theme": string;
@@ -269,6 +288,24 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
         "value": string;
+    }
+    interface EclSelect {
+        "disabled": boolean;
+        "eclScript": boolean;
+        "invalid": boolean;
+        "multiple": boolean;
+        "multipleAllText": string;
+        "multipleClearAllText": string;
+        "multipleCloseText": string;
+        "multiplePlaceholder": string;
+        "multipleSearchNoResultsText": string;
+        "multipleSearchText": string;
+        "name": string;
+        "required": boolean;
+        "selectId": string;
+        "styleClass": string;
+        "theme": string;
+        "width": string;
     }
     interface EclSocialMediaShare {
         "description": string;
@@ -406,6 +443,12 @@ declare global {
         prototype: HTMLEclIconElement;
         new (): HTMLEclIconElement;
     };
+    interface HTMLEclInputElement extends Components.EclInput, HTMLStencilElement {
+    }
+    var HTMLEclInputElement: {
+        prototype: HTMLEclInputElement;
+        new (): HTMLEclInputElement;
+    };
     interface HTMLEclLabelElement extends Components.EclLabel, HTMLStencilElement {
     }
     var HTMLEclLabelElement: {
@@ -460,6 +503,12 @@ declare global {
         prototype: HTMLEclRatingStarElement;
         new (): HTMLEclRatingStarElement;
     };
+    interface HTMLEclSelectElement extends Components.EclSelect, HTMLStencilElement {
+    }
+    var HTMLEclSelectElement: {
+        prototype: HTMLEclSelectElement;
+        new (): HTMLEclSelectElement;
+    };
     interface HTMLEclSocialMediaShareElement extends Components.EclSocialMediaShare, HTMLStencilElement {
     }
     var HTMLEclSocialMediaShareElement: {
@@ -493,6 +542,7 @@ declare global {
         "ecl-form-group": HTMLEclFormGroupElement;
         "ecl-hero-banner": HTMLEclHeroBannerElement;
         "ecl-icon": HTMLEclIconElement;
+        "ecl-input": HTMLEclInputElement;
         "ecl-label": HTMLEclLabelElement;
         "ecl-link": HTMLEclLinkElement;
         "ecl-media-container": HTMLEclMediaContainerElement;
@@ -502,6 +552,7 @@ declare global {
         "ecl-page-banner": HTMLEclPageBannerElement;
         "ecl-rating-field": HTMLEclRatingFieldElement;
         "ecl-rating-star": HTMLEclRatingStarElement;
+        "ecl-select": HTMLEclSelectElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
         "ecl-tag": HTMLEclTagElement;
     }
@@ -688,6 +739,25 @@ declare namespace LocalJSX {
         "theme"?: string;
         "transform"?: string;
     }
+    interface EclInput {
+        "defaultValue"?: string;
+        "disabled"?: boolean;
+        "eclScript"?: boolean;
+        "helperId"?: string;
+        "helperText"?: string;
+        "inputId"?: string;
+        "invalid"?: boolean;
+        "label"?: string;
+        "max"?: number;
+        "min"?: number;
+        "name"?: string;
+        "placeholder"?: string;
+        "required"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+        "type"?: string;
+        "width"?: string;
+    }
     interface EclLabel {
         "styleClass"?: string;
         "theme"?: string;
@@ -771,6 +841,24 @@ declare namespace LocalJSX {
         "theme"?: string;
         "value"?: string;
     }
+    interface EclSelect {
+        "disabled"?: boolean;
+        "eclScript"?: boolean;
+        "invalid"?: boolean;
+        "multiple"?: boolean;
+        "multipleAllText"?: string;
+        "multipleClearAllText"?: string;
+        "multipleCloseText"?: string;
+        "multiplePlaceholder"?: string;
+        "multipleSearchNoResultsText"?: string;
+        "multipleSearchText"?: string;
+        "name"?: string;
+        "required"?: boolean;
+        "selectId"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "width"?: string;
+    }
     interface EclSocialMediaShare {
         "description"?: string;
         "items"?: string;
@@ -806,6 +894,7 @@ declare namespace LocalJSX {
         "ecl-form-group": EclFormGroup;
         "ecl-hero-banner": EclHeroBanner;
         "ecl-icon": EclIcon;
+        "ecl-input": EclInput;
         "ecl-label": EclLabel;
         "ecl-link": EclLink;
         "ecl-media-container": EclMediaContainer;
@@ -815,6 +904,7 @@ declare namespace LocalJSX {
         "ecl-page-banner": EclPageBanner;
         "ecl-rating-field": EclRatingField;
         "ecl-rating-star": EclRatingStar;
+        "ecl-select": EclSelect;
         "ecl-social-media-share": EclSocialMediaShare;
         "ecl-tag": EclTag;
     }
@@ -843,6 +933,7 @@ declare module "@stencil/core" {
             "ecl-form-group": LocalJSX.EclFormGroup & JSXBase.HTMLAttributes<HTMLEclFormGroupElement>;
             "ecl-hero-banner": LocalJSX.EclHeroBanner & JSXBase.HTMLAttributes<HTMLEclHeroBannerElement>;
             "ecl-icon": LocalJSX.EclIcon & JSXBase.HTMLAttributes<HTMLEclIconElement>;
+            "ecl-input": LocalJSX.EclInput & JSXBase.HTMLAttributes<HTMLEclInputElement>;
             "ecl-label": LocalJSX.EclLabel & JSXBase.HTMLAttributes<HTMLEclLabelElement>;
             "ecl-link": LocalJSX.EclLink & JSXBase.HTMLAttributes<HTMLEclLinkElement>;
             "ecl-media-container": LocalJSX.EclMediaContainer & JSXBase.HTMLAttributes<HTMLEclMediaContainerElement>;
@@ -852,6 +943,7 @@ declare module "@stencil/core" {
             "ecl-page-banner": LocalJSX.EclPageBanner & JSXBase.HTMLAttributes<HTMLEclPageBannerElement>;
             "ecl-rating-field": LocalJSX.EclRatingField & JSXBase.HTMLAttributes<HTMLEclRatingFieldElement>;
             "ecl-rating-star": LocalJSX.EclRatingStar & JSXBase.HTMLAttributes<HTMLEclRatingStarElement>;
+            "ecl-select": LocalJSX.EclSelect & JSXBase.HTMLAttributes<HTMLEclSelectElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
         }

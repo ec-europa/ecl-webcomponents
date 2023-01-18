@@ -22,7 +22,7 @@ export class EclFormGroup {
   @Prop() helperText: string;
   @Prop() helperId: string;
   @Prop() name: string;
-  @Prop() invalidIcon: string;
+  @Prop() invalidIcon: string = 'error';
 
   getClass(): string {
     return [
@@ -59,7 +59,13 @@ export class EclFormGroup {
       }
       { this.invalid && this.invalidText ?
         <div class="ecl-feedback-message">
-        { this.invalidIcon ? <ecl-icon icon={this.invalidIcon}></ecl-icon> : '' }
+        { this.invalidIcon ? 
+          <ecl-icon
+            styleClass={`ecl-feedback-message__icon sc-ecl-form-group-${this.theme}`}
+            icon={this.invalidIcon}
+            size="m"
+          ></ecl-icon> : '' 
+        }
           {this.invalidText}
         </div> : '' 
       }

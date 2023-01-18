@@ -23,3 +23,5 @@ cp -r ./src/components/ecl-message/build ./build
 cp -r ./src/components/ecl-carousel/build ./build
 cp -r ./src/components/ecl-file/build ./build
 cp -r ./src/components/ecl-news-ticker/build ./build
+cp -r ./src/components/ecl-select/build ./build
+cp -r ./src/components/ecl-input/build ./build

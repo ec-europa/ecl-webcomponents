@@ -1,0 +1,15 @@
+@use '@ecl/theme-ec';
+
+@use '@ecl/vanilla-component-icon/icon-ec';
+@use '@ecl/vanilla-component-button/button-ec';
+@use '@ecl/vanilla-component-checkbox/checkbox-ec';
+@use '@ecl/vanilla-component-text-input/text-input-ec';
+@use '@ecl/vanilla-component-select/select-ec';
+
+.ecl-select__container {
+  margin-top: 0.75rem;
+}
+
+.ecl-select__icon-shape.sc-ecl-select-ec {
+  fill: white !important;
+}

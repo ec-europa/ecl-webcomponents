@@ -14,6 +14,8 @@ if (!isProd) {
     path.resolve(`${__dirname}/../src/components/ecl-carousel`),
     path.resolve(`${__dirname}/../src/components/ecl-file`),
     path.resolve(`${__dirname}/../src/components/ecl-news-ticker`),
+    path.resolve(`${__dirname}/../src/components/ecl-select`),
+    path.resolve(`${__dirname}/../src/components/ecl-input`),
   ];
 }
 

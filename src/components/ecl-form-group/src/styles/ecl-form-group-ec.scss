@@ -1,3 +1,13 @@
 @use '@ecl/theme-ec';
 
 @use '@ecl/vanilla-component-form/form-ec';
+
+.ecl-feedback-message__icon.sc-ecl-form-group-ec {
+  margin-inline-end: 0.5rem !important;
+  vertical-align: bottom;
+}
+
+.ecl-form-label__optional {
+  align-self: center;
+  margin-inline-start: 0.5rem;
+}
