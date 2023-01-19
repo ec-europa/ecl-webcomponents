@@ -336,6 +336,18 @@ export namespace Components {
         "theme": string;
         "variant": string;
     }
+    interface EclTextarea {
+        "disabled": boolean;
+        "invalid": boolean;
+        "name": string;
+        "placeholder": string;
+        "required": boolean;
+        "rows": number;
+        "styleClass": string;
+        "textareaId": string;
+        "theme": string;
+        "width": string;
+    }
 }
 declare global {
     interface HTMLEclAccordionElement extends Components.EclAccordion, HTMLStencilElement {
@@ -548,6 +560,12 @@ declare global {
         prototype: HTMLEclTagElement;
         new (): HTMLEclTagElement;
     };
+    interface HTMLEclTextareaElement extends Components.EclTextarea, HTMLStencilElement {
+    }
+    var HTMLEclTextareaElement: {
+        prototype: HTMLEclTextareaElement;
+        new (): HTMLEclTextareaElement;
+    };
     interface HTMLElementTagNameMap {
         "ecl-accordion": HTMLEclAccordionElement;
         "ecl-accordion-item": HTMLEclAccordionItemElement;
@@ -584,6 +602,7 @@ declare global {
         "ecl-select": HTMLEclSelectElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
         "ecl-tag": HTMLEclTagElement;
+        "ecl-textarea": HTMLEclTextareaElement;
     }
 }
 declare namespace LocalJSX {
@@ -917,6 +936,18 @@ declare namespace LocalJSX {
         "theme"?: string;
         "variant"?: string;
     }
+    interface EclTextarea {
+        "disabled"?: boolean;
+        "invalid"?: boolean;
+        "name"?: string;
+        "placeholder"?: string;
+        "required"?: boolean;
+        "rows"?: number;
+        "styleClass"?: string;
+        "textareaId"?: string;
+        "theme"?: string;
+        "width"?: string;
+    }
     interface IntrinsicElements {
         "ecl-accordion": EclAccordion;
         "ecl-accordion-item": EclAccordionItem;
@@ -953,6 +984,7 @@ declare namespace LocalJSX {
         "ecl-select": EclSelect;
         "ecl-social-media-share": EclSocialMediaShare;
         "ecl-tag": EclTag;
+        "ecl-textarea": EclTextarea;
     }
 }
 export { LocalJSX as JSX };
@@ -994,6 +1026,7 @@ declare module "@stencil/core" {
             "ecl-select": LocalJSX.EclSelect & JSXBase.HTMLAttributes<HTMLEclSelectElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
+            "ecl-textarea": LocalJSX.EclTextarea & JSXBase.HTMLAttributes<HTMLEclTextareaElement>;
         }
     }
 }
