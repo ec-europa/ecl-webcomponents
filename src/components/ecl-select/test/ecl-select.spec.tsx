@@ -6,7 +6,7 @@ import { EclIcon } from '../../ecl-icon/ecl-icon';
 describe('ecl-select', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclSelect, EclFormGroup],
+      components: [EclSelect, EclFormGroup, EclIcon],
       html: `<ecl-form-group
         helper-text="Helper text"
         helper-id="helper-id"

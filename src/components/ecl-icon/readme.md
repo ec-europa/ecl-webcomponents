@@ -23,6 +23,7 @@
 
  - [ecl-accordion-item](../ecl-accordion)
  - [ecl-carousel](../ecl-carousel)
+ - [ecl-category-filter-item](../ecl-category-filter)
  - [ecl-description-list-definition](../ecl-description-list)
  - [ecl-expandable](../ecl-expandable)
  - [ecl-fact-figures-item](../ecl-fact-figures)
@@ -46,6 +47,7 @@
 graph TD;
   ecl-accordion-item --> ecl-icon
   ecl-carousel --> ecl-icon
+  ecl-category-filter-item --> ecl-icon
   ecl-description-list-definition --> ecl-icon
   ecl-expandable --> ecl-icon
   ecl-fact-figures-item --> ecl-icon

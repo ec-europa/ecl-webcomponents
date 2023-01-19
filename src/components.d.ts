@@ -54,6 +54,19 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
     }
+    interface EclCategoryFilter {
+        "eclScript": boolean;
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclCategoryFilterItem {
+        "label": string;
+        "level": number;
+        "path": string;
+        "styleClass": string;
+        "subItems": boolean;
+        "theme": string;
+    }
     interface EclDateBlock {
         "dateTime": string;
         "day": string;
@@ -361,6 +374,18 @@ declare global {
         prototype: HTMLEclCarouselItemElement;
         new (): HTMLEclCarouselItemElement;
     };
+    interface HTMLEclCategoryFilterElement extends Components.EclCategoryFilter, HTMLStencilElement {
+    }
+    var HTMLEclCategoryFilterElement: {
+        prototype: HTMLEclCategoryFilterElement;
+        new (): HTMLEclCategoryFilterElement;
+    };
+    interface HTMLEclCategoryFilterItemElement extends Components.EclCategoryFilterItem, HTMLStencilElement {
+    }
+    var HTMLEclCategoryFilterItemElement: {
+        prototype: HTMLEclCategoryFilterItemElement;
+        new (): HTMLEclCategoryFilterItemElement;
+    };
     interface HTMLEclDateBlockElement extends Components.EclDateBlock, HTMLStencilElement {
     }
     var HTMLEclDateBlockElement: {
@@ -530,6 +555,8 @@ declare global {
         "ecl-button": HTMLEclButtonElement;
         "ecl-carousel": HTMLEclCarouselElement;
         "ecl-carousel-item": HTMLEclCarouselItemElement;
+        "ecl-category-filter": HTMLEclCategoryFilterElement;
+        "ecl-category-filter-item": HTMLEclCategoryFilterItemElement;
         "ecl-date-block": HTMLEclDateBlockElement;
         "ecl-description-list": HTMLEclDescriptionListElement;
         "ecl-description-list-definition": HTMLEclDescriptionListDefinitionElement;
@@ -606,6 +633,19 @@ declare namespace LocalJSX {
         "ctaLink"?: string;
         "image"?: string;
         "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclCategoryFilter {
+        "eclScript"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclCategoryFilterItem {
+        "label"?: string;
+        "level"?: number;
+        "path"?: string;
+        "styleClass"?: string;
+        "subItems"?: boolean;
         "theme"?: string;
     }
     interface EclDateBlock {
@@ -884,6 +924,8 @@ declare namespace LocalJSX {
         "ecl-button": EclButton;
         "ecl-carousel": EclCarousel;
         "ecl-carousel-item": EclCarouselItem;
+        "ecl-category-filter": EclCategoryFilter;
+        "ecl-category-filter-item": EclCategoryFilterItem;
         "ecl-date-block": EclDateBlock;
         "ecl-description-list": EclDescriptionList;
         "ecl-description-list-definition": EclDescriptionListDefinition;
@@ -923,6 +965,8 @@ declare module "@stencil/core" {
             "ecl-button": LocalJSX.EclButton & JSXBase.HTMLAttributes<HTMLEclButtonElement>;
             "ecl-carousel": LocalJSX.EclCarousel & JSXBase.HTMLAttributes<HTMLEclCarouselElement>;
             "ecl-carousel-item": LocalJSX.EclCarouselItem & JSXBase.HTMLAttributes<HTMLEclCarouselItemElement>;
+            "ecl-category-filter": LocalJSX.EclCategoryFilter & JSXBase.HTMLAttributes<HTMLEclCategoryFilterElement>;
+            "ecl-category-filter-item": LocalJSX.EclCategoryFilterItem & JSXBase.HTMLAttributes<HTMLEclCategoryFilterItemElement>;
             "ecl-date-block": LocalJSX.EclDateBlock & JSXBase.HTMLAttributes<HTMLEclDateBlockElement>;
             "ecl-description-list": LocalJSX.EclDescriptionList & JSXBase.HTMLAttributes<HTMLEclDescriptionListElement>;
             "ecl-description-list-definition": LocalJSX.EclDescriptionListDefinition & JSXBase.HTMLAttributes<HTMLEclDescriptionListDefinitionElement>;

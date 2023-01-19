@@ -25,3 +25,4 @@ cp -r ./src/components/ecl-file/build ./build
 cp -r ./src/components/ecl-news-ticker/build ./build
 cp -r ./src/components/ecl-select/build ./build
 cp -r ./src/components/ecl-input/build ./build
+cp -r ./src/components/ecl-category-filter/build ./build
