@@ -41,16 +41,15 @@ export default {
 
 const Template = args =>
   `<ecl-message
-  message-title="${args.title}"
-  theme="${args.theme}"
-  variant="${args.variant}"
-  description="${args.description}"
-  close-label="${args.closeLabel}"
-  ecl-script
-  with-utils
->
-  ${args.description}
-</ecl-message>`;
+    message-title="${args.title}"
+    theme="${args.theme}"
+    variant="${args.variant}"
+    description="${args.description}"
+    close-label="${args.closeLabel}"
+    ecl-script
+  >
+    ${args.description}
+  </ecl-message>`;
 
 export const Message = Template.bind({});
 Message.storyName = 'default';

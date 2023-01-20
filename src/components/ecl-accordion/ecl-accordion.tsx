@@ -26,12 +26,6 @@ export class EclAccordion {
   }
 
   componentWillLoad() {
-    if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
-      const style = document.createElement('style');
-      style.id = 'ecl-utils-styles';
-      style.innerHTML = `@import ${getAssetPath(`./build/styles/ecl-utilities-${this.theme}.css`)}`;
-      document.body.appendChild(style);
-    }
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-accordion-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
@@ -44,6 +38,14 @@ export class EclAccordion {
         accordion.init();
       };
       document.body.appendChild(script);
+    }
+    if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
+      const style = document.createElement('link');
+      style.rel = 'stylesheet';
+      style.type = 'text/css';
+      style.id = 'ecl-utils-styles';
+      style.href = getAssetPath(`./build/styles/ecl-utilities-${this.theme}.css`);
+      document.body.appendChild(style);
     }
   }
 

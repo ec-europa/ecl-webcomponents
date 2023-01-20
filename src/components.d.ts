@@ -42,7 +42,6 @@ export namespace Components {
         "srPrevious": string;
         "styleClass": string;
         "theme": string;
-        "withUtils": boolean;
     }
     interface EclCarouselItem {
         "ariaLabel": string;
@@ -255,7 +254,6 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
         "variant": string;
-        "withUtils": boolean;
     }
     interface EclNewsTicker {
         "counterLabel": string;
@@ -642,7 +640,6 @@ declare namespace LocalJSX {
         "srPrevious"?: string;
         "styleClass"?: string;
         "theme"?: string;
-        "withUtils"?: boolean;
     }
     interface EclCarouselItem {
         "ariaLabel"?: string;
@@ -855,7 +852,6 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "variant"?: string;
-        "withUtils"?: boolean;
     }
     interface EclNewsTicker {
         "counterLabel"?: string;

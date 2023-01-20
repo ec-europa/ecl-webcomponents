@@ -44,7 +44,3 @@ const Template = (args) =>
 
 export const Carousel = Template.bind({});
 Carousel.storyName = 'default';
-Carousel.args = {
-  theme: 'ec',
-  withUtils: true,
-};

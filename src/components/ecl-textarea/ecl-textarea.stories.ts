@@ -125,7 +125,7 @@ const Template = (args) =>
       disabled=${args.disabled}
       name="ecl-textarea"
       width="${args.width}"
-      textareaId=${args.textAreaId}
+      textarea-id=${args.textareaId}
     >
     </ecl-textarea>
   </ecl-form-group>`;

@@ -19,8 +19,6 @@ export class EclMessage {
   @Prop() messageTitle: string;
   @Prop() closeLabel: string;
   @Prop() eclScript: boolean = false;
-  @Prop() withUtils: boolean = false;
-
 
   getClass(): string {
     return [
@@ -35,12 +33,6 @@ export class EclMessage {
   }
 
   componentDidRender() {
-    if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
-      const style = document.createElement('style');
-      style.id = 'ecl-utils-styles';
-      style.innerHTML = `@import ${getAssetPath(`./build/styles/ecl-utilities-${this.theme}.css`)}`;
-      document.body.appendChild(style);
-    }
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-message-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {

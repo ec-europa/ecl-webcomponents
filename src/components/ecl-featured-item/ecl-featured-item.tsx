@@ -1,4 +1,4 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, getAssetPath } from '@stencil/core';
 
 @Component({
   tag: 'ecl-featured-item',
@@ -31,9 +31,11 @@ export class EclFeaturedItem {
 
   componentWillLoad() {
     if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
-      const style = document.createElement('style');
+      const style = document.createElement('link');
+      style.rel = 'stylesheet';
+      style.type = 'text/css';
       style.id = 'ecl-utils-styles';
-      style.innerHTML = `@import "./build/styles/ecl-utilities-${this.theme}.css"`;
+      style.href = getAssetPath(`./build/styles/ecl-utilities-${this.theme}.css`);
       document.body.appendChild(style);
     }
   }

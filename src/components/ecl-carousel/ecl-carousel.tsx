@@ -16,7 +16,6 @@ export class EclCarousel {
   @Prop() styleClass: string = '';
   @Prop() theme: string = 'ec';
   @Prop() eclScript: boolean = false;
-  @Prop() withUtils: boolean = true;
   @Prop() carouselId: string;
   @Prop() slidesNumber: number;
   @Prop() counterLabel: string = 'of';
@@ -34,12 +33,6 @@ export class EclCarousel {
   }
 
   componentDidRender() {
-    if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
-      const style = document.createElement('style');
-      style.id = 'ecl-utils-styles';
-      style.innerHTML = `@import ${getAssetPath(`./build/styles/ecl-utilities-${this.theme}.css`)}`;
-      document.body.appendChild(style);
-    }
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-carousel-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
