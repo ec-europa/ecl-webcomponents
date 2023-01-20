@@ -20,6 +20,7 @@
  - [ecl-file-translations](../ecl-file)
  - [ecl-message](../ecl-message)
  - [ecl-news-ticker](../ecl-news-ticker)
+ - [ecl-timeline-item](../ecl-timeline)
 
 ### Graph
 ```mermaid
@@ -28,6 +29,7 @@ graph TD;
   ecl-file-translations --> ecl-button
   ecl-message --> ecl-button
   ecl-news-ticker --> ecl-button
+  ecl-timeline-item --> ecl-button
   style ecl-button fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

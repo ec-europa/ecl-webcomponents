@@ -350,6 +350,18 @@ export namespace Components {
         "theme": string;
         "width": string;
     }
+    interface EclTimeline {
+        "eclScript": boolean;
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclTimelineItem {
+        "itemTitle": string;
+        "label": string;
+        "styleClass": string;
+        "theme": string;
+        "type": string;
+    }
 }
 declare global {
     interface HTMLEclAccordionElement extends Components.EclAccordion, HTMLStencilElement {
@@ -568,6 +580,18 @@ declare global {
         prototype: HTMLEclTextareaElement;
         new (): HTMLEclTextareaElement;
     };
+    interface HTMLEclTimelineElement extends Components.EclTimeline, HTMLStencilElement {
+    }
+    var HTMLEclTimelineElement: {
+        prototype: HTMLEclTimelineElement;
+        new (): HTMLEclTimelineElement;
+    };
+    interface HTMLEclTimelineItemElement extends Components.EclTimelineItem, HTMLStencilElement {
+    }
+    var HTMLEclTimelineItemElement: {
+        prototype: HTMLEclTimelineItemElement;
+        new (): HTMLEclTimelineItemElement;
+    };
     interface HTMLElementTagNameMap {
         "ecl-accordion": HTMLEclAccordionElement;
         "ecl-accordion-item": HTMLEclAccordionItemElement;
@@ -605,6 +629,8 @@ declare global {
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
         "ecl-tag": HTMLEclTagElement;
         "ecl-textarea": HTMLEclTextareaElement;
+        "ecl-timeline": HTMLEclTimelineElement;
+        "ecl-timeline-item": HTMLEclTimelineItemElement;
     }
 }
 declare namespace LocalJSX {
@@ -952,6 +978,18 @@ declare namespace LocalJSX {
         "theme"?: string;
         "width"?: string;
     }
+    interface EclTimeline {
+        "eclScript"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclTimelineItem {
+        "itemTitle"?: string;
+        "label"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "type"?: string;
+    }
     interface IntrinsicElements {
         "ecl-accordion": EclAccordion;
         "ecl-accordion-item": EclAccordionItem;
@@ -989,6 +1027,8 @@ declare namespace LocalJSX {
         "ecl-social-media-share": EclSocialMediaShare;
         "ecl-tag": EclTag;
         "ecl-textarea": EclTextarea;
+        "ecl-timeline": EclTimeline;
+        "ecl-timeline-item": EclTimelineItem;
     }
 }
 export { LocalJSX as JSX };
@@ -1031,6 +1071,8 @@ declare module "@stencil/core" {
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
             "ecl-textarea": LocalJSX.EclTextarea & JSXBase.HTMLAttributes<HTMLEclTextareaElement>;
+            "ecl-timeline": LocalJSX.EclTimeline & JSXBase.HTMLAttributes<HTMLEclTimelineElement>;
+            "ecl-timeline-item": LocalJSX.EclTimelineItem & JSXBase.HTMLAttributes<HTMLEclTimelineItemElement>;
         }
     }
 }

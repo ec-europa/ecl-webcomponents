@@ -41,6 +41,7 @@
  - [ecl-select](../ecl-select)
  - [ecl-social-media-share](../ecl-social-media-share)
  - [ecl-tag](../ecl-tag)
+ - [ecl-timeline-item](../ecl-timeline)
 
 ### Graph
 ```mermaid
@@ -65,6 +66,7 @@ graph TD;
   ecl-select --> ecl-icon
   ecl-social-media-share --> ecl-icon
   ecl-tag --> ecl-icon
+  ecl-timeline-item --> ecl-icon
   style ecl-icon fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
