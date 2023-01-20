@@ -16,6 +16,7 @@ export class EclInput {
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
   @Prop() eclScript: boolean = false;
+  @Prop() withUtils: boolean = false;
   @Prop() disabled: boolean = false;
   @Prop() required: boolean = false;
   @Prop() invalid: boolean = false;
@@ -32,6 +33,9 @@ export class EclInput {
   @Prop() min: number;
   @Prop() step: number = 1;
   @Prop() valueLabel: string;
+  @Prop() buttonChooseLabel: string;
+  @Prop() buttonReplaceLabel: string;
+  @Prop() multiple: boolean = false;
 
   getClass(): string {
     const styleClasses = ['ecl-input', this.styleClass];
@@ -65,6 +69,9 @@ export class EclInput {
     if (this.type === 'range') {
       inputClasses = ['ecl-range', `ecl-range--${this.width}`];
     }
+    if (this.type === 'file') {
+      inputClasses = ['ecl-file-upload'];
+    }
     if (this.type === 'text' || this.type === 'search') {
       inputClasses = ['ecl-text-input', `ecl-text-input--${this.width}`];
       if (this.invalid) {
@@ -90,9 +97,20 @@ export class EclInput {
     return boxClasses.join(' ');
   }
 
+  componentWillLoad() {
+    if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
+      const style = document.createElement('link');
+      style.rel = 'stylesheet';
+      style.type = 'text/css';
+      style.id = 'ecl-utils-styles';
+      style.href = getAssetPath(`./build/styles/ecl-utilities-${this.theme}.css`);
+      document.body.appendChild(style);
+    }
+  }
+
   componentDidRender() {
     if (this.type === 'range' && this.eclScript) {
-      const src = getAssetPath('./build/scripts/ecl-input-vanilla.js');
+      const src = getAssetPath('./build/scripts/ecl-range-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
         document.querySelector(`script[src="${src}"]`).remove();
       }
@@ -104,6 +122,44 @@ export class EclInput {
         const range = new ECL.Range(formGroup);
         range.init();
       };
+    }
+    if (this.type === 'file' && this.eclScript) {
+      const src = getAssetPath('./build/scripts/ecl-file-upload-vanilla.js');
+      if (document.querySelector(`script[src="${src}"]`)) {
+        document.querySelector(`script[src="${src}"]`).remove();
+      }
+      const script = document.createElement('script');
+      script.src = src;
+      script.onload = () => {
+        const fileUpload = new ECL.FileUpload(this.el.firstElementChild);
+        fileUpload.init();
+      };
+      // @ts-ignore
+      const observer = new MutationObserver((mutationsList, observer) => {
+        for (const mutation of mutationsList) {
+          if (mutation.type === 'childList') {
+            const nodes = mutation.addedNodes;
+            nodes.forEach(node => {
+              const htmlNode = node as HTMLElement;
+              htmlNode.classList.add(`sc-ecl-input-${this.theme}`);
+              const name = htmlNode.querySelector('.ecl-file-upload__item-name');
+              if (name) {
+                name.classList.add(`sc-ecl-input-${this.theme}`);
+              }
+              const meta = htmlNode.querySelector('.ecl-file-upload__item-meta');
+              if (meta) {
+                meta.classList.add(`sc-ecl-input-${this.theme}`);
+              }
+            });
+          }
+        }
+      });
+
+      observer.observe(this.el.querySelector('.ecl-file-upload__list'), {
+        attributes: true,
+        childList: true,
+        subtree: true,
+      });
 
       document.body.appendChild(script);
     }
@@ -113,6 +169,9 @@ export class EclInput {
     const wrapperAttrs = {};
     if (this.type === 'range') {
       wrapperAttrs['data-ecl-range'] = true;
+    }
+    if (this.type === 'file') {
+      wrapperAttrs['data-ecl-file-upload-group'] = true
     }
     const attributes = {
       class: this.getInputClasses(this.type),
@@ -124,6 +183,11 @@ export class EclInput {
       value: this.defaultValue,
       placeholder: this.placeholder,
     };
+
+    if (this.type === 'file') {
+      attributes['data-ecl-file-upload-input'] = true;
+      attributes['multiple'] = this.multiple;
+    }
 
     if (this.type === 'range') {
       attributes['data-ecl-range-input'] = true;
@@ -189,6 +253,28 @@ export class EclInput {
           {this.valueLabel}
           <span class="ecl-range__value-current" data-ecl-range-value-current> </span>
         </div> : ''
+      }
+      { this.type === 'file' ?
+        <label
+          class="ecl-file-upload__button-container"
+          htmlFor={this.inputId}
+        >
+          <span
+            class="ecl-file-upload__button ecl-button ecl-button--primary"
+            data-ecl-file-upload-button
+            data-ecl-file-upload-label-choose={this.buttonChooseLabel}
+            data-ecl-file-upload-label-replace={this.buttonReplaceLabel}
+          >
+            {this.buttonChooseLabel}
+          </span>
+        </label> : '' 
+      }
+      { this.type === 'file' ?
+        <ul
+          class="ecl-file-upload__list"
+          data-ecl-file-upload-list
+          > 
+        </ul> : ''
       }
       </div>
     );

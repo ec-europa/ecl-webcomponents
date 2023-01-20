@@ -13,6 +13,9 @@ const getArgs = () => {
     placeholder: 'Placeholder text',
     defaultValue: '',
     step: 1,
+    multiple: false,
+    buttonReplaceLabel: 'Replace file',
+    buttonChooseLabel: 'Choose file',
   };
 };
 
@@ -20,8 +23,8 @@ const getArgTypes = () => {
   return {
     type: {
       type: { name: 'select' },
-      options: ['text', 'search', 'radio', 'checkbox', 'range'],
-      description: 'Input type (text, radio, search, checkbox, range)',
+      options: ['text', 'search', 'radio', 'checkbox', 'range', 'file'],
+      description: 'Input type (text, radio, search, checkbox, range, file)',
       table: {
         category: 'Input type',
       },
@@ -116,7 +119,43 @@ const getArgTypes = () => {
         category: 'Range input',
       },
     },
+    multiple: {
+      type: 'boolean',
+      desription: 'Multiple files upload',
+      table: {
+        type: { summary: 'boolean' },
+        category: 'File upload input',
+      },
+    },
+    buttonReplaceLabel: {
+      name: 'button-replace-label',
+      type: 'string',
+      description: 'Label for the replace button',
+      table: {
+        type: { summary: 'string' },
+        category: 'File upload input',
+      },
+    },
+    buttonChooseLabel: {
+      name: 'button-choose-label',
+      type: 'string',
+      description: 'Label for the button',
+      table: {
+        type: { summary: 'string' },
+        category: 'File upload input',
+      },
+    },
   };
+};
+
+const getHelperText = (args) => {
+  if (args.type === 'file') {
+    return `This is the input's helper text.
+      Only txt doc docx pdf odt rtf files.
+      Maximum size is 5 MB.
+      Encrypted documents and those containing macros are not accepted.`;
+  }
+  return 'This is the input helper text';
 };
 
 export default {
@@ -128,7 +167,7 @@ const Template = args =>
   label="Label"
   required=${args.required}
   optional-text="(optional)"
-  helper-text="This is the form group helper text."
+  helper-text="${getHelperText(args)}"
   invalid=${args.invalid}
   disabled=${args.disabled}
   invalid-text="This is an error message"
@@ -149,10 +188,14 @@ const Template = args =>
     name="${args.name}"
     min=${args.min}
     max=${args.max}
-    ecl-script=${args.type === 'range'}
+    ecl-script=${args.type === 'range' || args.type === 'file'}
     step=${args.step}
     value-label="Value"
+    button-choose-label="${args.multiple ? 'Choose files' : args.buttonChooseLabel}"
+    button-replace-label="${args.buttonReplaceLabel}"
+    multiple="${args.multiple}"
   >
+
   </ecl-input>
 </ecl-form-group>`;
 

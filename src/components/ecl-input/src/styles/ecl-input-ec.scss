@@ -1,9 +1,11 @@
 @use '@ecl/theme-ec';
 
+@use '@ecl/vanilla-component-button/button-ec';
 @use '@ecl/vanilla-component-checkbox/checkbox-ec';
 @use '@ecl/vanilla-component-text-input/text-input-ec';
 @use '@ecl/vanilla-component-range/range-ec';
 @use '@ecl/vanilla-component-radio/radio-ec';
+@use '@ecl/vanilla-component-file-upload/file-upload-ec';
 
 .ecl-input.sc-ecl-input-ec {
   margin-top: 0.75rem;

@@ -15,6 +15,8 @@
   },
   "devDependencies": {
     "@ecl/builder": "3.6.0",
+    "@ecl/vanilla-component-button": "3.6.0",
+    "@ecl/vanilla-component-file-upload": "3.6.0",
     "@ecl/vanilla-component-text-input": "3.6.0",
     "@ecl/vanilla-component-checkbox": "3.6.0",
     "@ecl/vanilla-component-radio": "3.6.0",

@@ -12,8 +12,18 @@ const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()
 module.exports = {
   scripts: [
     {
+      entry: path.resolve(nodeModules, '@ecl/vanilla-component-file-upload/file-upload.js'),
+      dest: path.resolve(outputFolder, 'scripts/ecl-file-upload-vanilla.js'),
+      options: {
+        banner,
+        moduleName: 'ECL',
+        includePaths,
+        sourceMap: false,
+      },
+    },
+    {
       entry: path.resolve(nodeModules, '@ecl/vanilla-component-range/range.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-input-vanilla.js'),
+      dest: path.resolve(outputFolder, 'scripts/ecl-range-vanilla.js'),
       options: {
         banner,
         moduleName: 'ECL',

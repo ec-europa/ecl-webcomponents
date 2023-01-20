@@ -200,6 +200,8 @@ export namespace Components {
         "transform": string;
     }
     interface EclInput {
+        "buttonChooseLabel": string;
+        "buttonReplaceLabel": string;
         "defaultValue": string;
         "disabled": boolean;
         "eclScript": boolean;
@@ -210,6 +212,7 @@ export namespace Components {
         "label": string;
         "max": number;
         "min": number;
+        "multiple": boolean;
         "name": string;
         "placeholder": string;
         "required": boolean;
@@ -219,6 +222,7 @@ export namespace Components {
         "type": string;
         "valueLabel": string;
         "width": string;
+        "withUtils": boolean;
     }
     interface EclLabel {
         "styleClass": string;
@@ -798,6 +802,8 @@ declare namespace LocalJSX {
         "transform"?: string;
     }
     interface EclInput {
+        "buttonChooseLabel"?: string;
+        "buttonReplaceLabel"?: string;
         "defaultValue"?: string;
         "disabled"?: boolean;
         "eclScript"?: boolean;
@@ -808,6 +814,7 @@ declare namespace LocalJSX {
         "label"?: string;
         "max"?: number;
         "min"?: number;
+        "multiple"?: boolean;
         "name"?: string;
         "placeholder"?: string;
         "required"?: boolean;
@@ -817,6 +824,7 @@ declare namespace LocalJSX {
         "type"?: string;
         "valueLabel"?: string;
         "width"?: string;
+        "withUtils"?: boolean;
     }
     interface EclLabel {
         "styleClass"?: string;
