@@ -215,6 +215,19 @@ export namespace Components {
         "theme": string;
         "transform": string;
     }
+    interface EclInpageNavigation {
+        "eclScript": boolean;
+        "inpageId": string;
+        "inpageTitle": string;
+        "styleClass": string;
+        "theme": string;
+        "withUtils": boolean;
+    }
+    interface EclInpageNavigationItem {
+        "path": string;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclInput {
         "buttonChooseLabel": string;
         "buttonReplaceLabel": string;
@@ -524,6 +537,18 @@ declare global {
         prototype: HTMLEclIconElement;
         new (): HTMLEclIconElement;
     };
+    interface HTMLEclInpageNavigationElement extends Components.EclInpageNavigation, HTMLStencilElement {
+    }
+    var HTMLEclInpageNavigationElement: {
+        prototype: HTMLEclInpageNavigationElement;
+        new (): HTMLEclInpageNavigationElement;
+    };
+    interface HTMLEclInpageNavigationItemElement extends Components.EclInpageNavigationItem, HTMLStencilElement {
+    }
+    var HTMLEclInpageNavigationItemElement: {
+        prototype: HTMLEclInpageNavigationItemElement;
+        new (): HTMLEclInpageNavigationItemElement;
+    };
     interface HTMLEclInputElement extends Components.EclInput, HTMLStencilElement {
     }
     var HTMLEclInputElement: {
@@ -645,6 +670,8 @@ declare global {
         "ecl-form-group": HTMLEclFormGroupElement;
         "ecl-hero-banner": HTMLEclHeroBannerElement;
         "ecl-icon": HTMLEclIconElement;
+        "ecl-inpage-navigation": HTMLEclInpageNavigationElement;
+        "ecl-inpage-navigation-item": HTMLEclInpageNavigationItemElement;
         "ecl-input": HTMLEclInputElement;
         "ecl-label": HTMLEclLabelElement;
         "ecl-link": HTMLEclLinkElement;
@@ -873,6 +900,19 @@ declare namespace LocalJSX {
         "theme"?: string;
         "transform"?: string;
     }
+    interface EclInpageNavigation {
+        "eclScript"?: boolean;
+        "inpageId"?: string;
+        "inpageTitle"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "withUtils"?: boolean;
+    }
+    interface EclInpageNavigationItem {
+        "path"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclInput {
         "buttonChooseLabel"?: string;
         "buttonReplaceLabel"?: string;
@@ -1061,6 +1101,8 @@ declare namespace LocalJSX {
         "ecl-form-group": EclFormGroup;
         "ecl-hero-banner": EclHeroBanner;
         "ecl-icon": EclIcon;
+        "ecl-inpage-navigation": EclInpageNavigation;
+        "ecl-inpage-navigation-item": EclInpageNavigationItem;
         "ecl-input": EclInput;
         "ecl-label": EclLabel;
         "ecl-link": EclLink;
@@ -1107,6 +1149,8 @@ declare module "@stencil/core" {
             "ecl-form-group": LocalJSX.EclFormGroup & JSXBase.HTMLAttributes<HTMLEclFormGroupElement>;
             "ecl-hero-banner": LocalJSX.EclHeroBanner & JSXBase.HTMLAttributes<HTMLEclHeroBannerElement>;
             "ecl-icon": LocalJSX.EclIcon & JSXBase.HTMLAttributes<HTMLEclIconElement>;
+            "ecl-inpage-navigation": LocalJSX.EclInpageNavigation & JSXBase.HTMLAttributes<HTMLEclInpageNavigationElement>;
+            "ecl-inpage-navigation-item": LocalJSX.EclInpageNavigationItem & JSXBase.HTMLAttributes<HTMLEclInpageNavigationItemElement>;
             "ecl-input": LocalJSX.EclInput & JSXBase.HTMLAttributes<HTMLEclInputElement>;
             "ecl-label": LocalJSX.EclLabel & JSXBase.HTMLAttributes<HTMLEclLabelElement>;
             "ecl-link": LocalJSX.EclLink & JSXBase.HTMLAttributes<HTMLEclLinkElement>;

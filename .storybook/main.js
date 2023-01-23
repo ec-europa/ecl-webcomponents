@@ -19,6 +19,7 @@ if (!isProd) {
     path.resolve(`${__dirname}/../src/components/ecl-category-filter`),
     path.resolve(`${__dirname}/../src/components/ecl-timeline`),
     path.resolve(`${__dirname}/../src/components/ecl-breadcrumb`),
+    path.resolve(`${__dirname}/../src/components/ecl-inpage-navigation`),
   ];
 }
 

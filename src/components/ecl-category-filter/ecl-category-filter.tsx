@@ -25,37 +25,7 @@ export class EclCategoryFilter {
     ].join(' ');
   }
 
-  cleanList(list) {
-    const subitems = list.querySelectorAll('.ecl-category-filter__list-item');
-    subitems.forEach((subitem) => {
-      const sublink = subitem.getElementsByTagName('a')[0];
-      const sublist = subitem.getElementsByTagName('ul')[0];
-      subitem.innerHTML = '';
-      subitem.appendChild(sublink);
-      console.log(sublink);
-      console.log(sublist);
-
-    });   
-  }
-
   componentDidRender() {
-    /*const categoryList = this.el.querySelector('.ecl-category-filter__list');
-    const items = this.el.querySelectorAll('.ecl-category-filter__list-item');
-    if (items) {
-      items.forEach((item) => {
-        const link = item.getElementsByTagName('a')[0];
-        const list = item.getElementsByTagName('ul')[0];
-        item.innerHTML = '';
-        item.appendChild(link);
-        if (list) {
-          this.cleanList(list);
-        }
-        console.log(item);
-      });
-      const categoryListItems = this.el.querySelectorAll('.ecl-category-filter__list-item');
-      categoryList.innerHTML = '';
-      categoryList.append(...categoryListItems);
-    }*/
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-category-filter-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
