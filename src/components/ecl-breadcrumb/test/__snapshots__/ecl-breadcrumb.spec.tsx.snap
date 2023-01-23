@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-breadcrumb renders 1`] = `
+<ecl-breadcrumb ecl-script="" theme="ec" variant="negative">
+  <!---->
+  <nav class="ecl-breadcrumb ecl-breadcrumb--negative" data-ecl-breadcrumb>
+    <ol class="ecl-breadcrumb__container">
+      <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec" data-ecl-breadcrumb-item="static">
+        <ecl-link path="/example.html" style-class="sc-ecl-breadcrumb-ec ecl-breadcrumb__link ecl-link--no-visited ecl-link--negative" variant="standalone">
+          <ecl-icon icon="corner-arrow" size="2xs" slot="icon-after" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec" transform="rotate-90"></ecl-icon>
+          Home
+        </ecl-link>
+      </li>
+      <li class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec" data-ecl-breadcrumb-ellipsis="data-ecl-breadcrumb-ellipsis" data-ecl-breadcrumb-item="static">
+        <ecl-button aria-label="Click to expand" data-ecl-breadcrumb-ellipsis-button style-class="ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-ec" type="ghost">
+          ...
+          <ecl-icon icon="corner-arrow" size="2xs" slot="icon-after" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec" transform="rotate-90"></ecl-icon>
+        </ecl-button>
+      </li>
+      <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec" data-ecl-breadcrumb-item="expandable">
+        <ecl-link path="/example.html" style-class="sc-ecl-breadcrumb-ec ecl-breadcrumb__link ecl-link--no-visited ecl-link--negative" variant="standalone">
+          <ecl-icon icon="corner-arrow" size="2xs" slot="icon-after" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec" transform="rotate-90"></ecl-icon>
+          About the European Commission
+        </ecl-link>
+      </li>
+      <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec" data-ecl-breadcrumb-item="expandable">
+        <ecl-link path="/example.html" style-class="sc-ecl-breadcrumb-ec ecl-breadcrumb__link ecl-link--no-visited ecl-link--negative" variant="standalone">
+          <ecl-icon icon="corner-arrow" size="2xs" slot="icon-after" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec" transform="rotate-90"></ecl-icon>
+          Organisational structure
+        </ecl-link>
+      </li>
+      <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec" data-ecl-breadcrumb-item="static">
+        <ecl-link path="/example.html" style-class="sc-ecl-breadcrumb-ec ecl-breadcrumb__link ecl-link--no-visited ecl-link--negative" variant="standalone">
+          <ecl-icon icon="corner-arrow" size="2xs" slot="icon-after" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec" transform="rotate-90"></ecl-icon>
+          How the Commission is organised
+        </ecl-link>
+      </li>
+      <li class="ecl-breadcrumb__current-page ecl-breadcrumb__segment sc-ecl-breadcrumb-ec" data-ecl-breadcrumb-item="static">
+        News
+      </li>
+    </ol>
+  </nav>
+</ecl-breadcrumb>
+`;

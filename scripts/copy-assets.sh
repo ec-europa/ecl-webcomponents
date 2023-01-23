@@ -27,3 +27,4 @@ cp -r ./src/components/ecl-select/build ./build
 cp -r ./src/components/ecl-input/build ./build
 cp -r ./src/components/ecl-category-filter/build ./build
 cp -r ./src/components/ecl-timeline/build ./build
+cp -r ./src/components/ecl-breadcrumb/build ./build

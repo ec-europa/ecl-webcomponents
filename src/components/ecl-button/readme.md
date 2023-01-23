@@ -16,6 +16,7 @@
 
 ### Used by
 
+ - [ecl-breadcrumb-item](../ecl-breadcrumb)
  - [ecl-expandable](../ecl-expandable)
  - [ecl-file-translations](../ecl-file)
  - [ecl-message](../ecl-message)
@@ -25,6 +26,7 @@
 ### Graph
 ```mermaid
 graph TD;
+  ecl-breadcrumb-item --> ecl-button
   ecl-expandable --> ecl-button
   ecl-file-translations --> ecl-button
   ecl-message --> ecl-button

@@ -21,6 +21,7 @@
 
 ### Used by
 
+ - [ecl-breadcrumb-item](../ecl-breadcrumb)
  - [ecl-category-filter-item](../ecl-category-filter)
  - [ecl-description-list-definition](../ecl-description-list)
  - [ecl-file](../ecl-file)
@@ -38,6 +39,7 @@
 ```mermaid
 graph TD;
   ecl-link --> ecl-icon
+  ecl-breadcrumb-item --> ecl-link
   ecl-category-filter-item --> ecl-link
   ecl-description-list-definition --> ecl-link
   ecl-file --> ecl-link

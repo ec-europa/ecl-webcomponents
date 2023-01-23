@@ -18,6 +18,7 @@ if (!isProd) {
     path.resolve(`${__dirname}/../src/components/ecl-input`),
     path.resolve(`${__dirname}/../src/components/ecl-category-filter`),
     path.resolve(`${__dirname}/../src/components/ecl-timeline`),
+    path.resolve(`${__dirname}/../src/components/ecl-breadcrumb`),
   ];
 }
 

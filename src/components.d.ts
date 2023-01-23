@@ -25,6 +25,22 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
     }
+    interface EclBreadcrumb {
+        "eclScript": boolean;
+        "minItemsRight": number;
+        "styleClass": string;
+        "theme": string;
+        "variant": string;
+    }
+    interface EclBreadcrumbItem {
+        "buttonAriaLabel": string;
+        "currentPage": boolean;
+        "ellipsis": boolean;
+        "path": string;
+        "styleClass": string;
+        "theme": string;
+        "variant": string;
+    }
     interface EclButton {
         "styleClass": string;
         "theme": string;
@@ -382,6 +398,18 @@ declare global {
         prototype: HTMLEclBlockquoteElement;
         new (): HTMLEclBlockquoteElement;
     };
+    interface HTMLEclBreadcrumbElement extends Components.EclBreadcrumb, HTMLStencilElement {
+    }
+    var HTMLEclBreadcrumbElement: {
+        prototype: HTMLEclBreadcrumbElement;
+        new (): HTMLEclBreadcrumbElement;
+    };
+    interface HTMLEclBreadcrumbItemElement extends Components.EclBreadcrumbItem, HTMLStencilElement {
+    }
+    var HTMLEclBreadcrumbItemElement: {
+        prototype: HTMLEclBreadcrumbItemElement;
+        new (): HTMLEclBreadcrumbItemElement;
+    };
     interface HTMLEclButtonElement extends Components.EclButton, HTMLStencilElement {
     }
     var HTMLEclButtonElement: {
@@ -596,6 +624,8 @@ declare global {
         "ecl-accordion": HTMLEclAccordionElement;
         "ecl-accordion-item": HTMLEclAccordionItemElement;
         "ecl-blockquote": HTMLEclBlockquoteElement;
+        "ecl-breadcrumb": HTMLEclBreadcrumbElement;
+        "ecl-breadcrumb-item": HTMLEclBreadcrumbItemElement;
         "ecl-button": HTMLEclButtonElement;
         "ecl-carousel": HTMLEclCarouselElement;
         "ecl-carousel-item": HTMLEclCarouselItemElement;
@@ -652,6 +682,22 @@ declare namespace LocalJSX {
         "imageAlt"?: string;
         "styleClass"?: string;
         "theme"?: string;
+    }
+    interface EclBreadcrumb {
+        "eclScript"?: boolean;
+        "minItemsRight"?: number;
+        "styleClass"?: string;
+        "theme"?: string;
+        "variant"?: string;
+    }
+    interface EclBreadcrumbItem {
+        "buttonAriaLabel"?: string;
+        "currentPage"?: boolean;
+        "ellipsis"?: boolean;
+        "path"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "variant"?: string;
     }
     interface EclButton {
         "styleClass"?: string;
@@ -994,6 +1040,8 @@ declare namespace LocalJSX {
         "ecl-accordion": EclAccordion;
         "ecl-accordion-item": EclAccordionItem;
         "ecl-blockquote": EclBlockquote;
+        "ecl-breadcrumb": EclBreadcrumb;
+        "ecl-breadcrumb-item": EclBreadcrumbItem;
         "ecl-button": EclButton;
         "ecl-carousel": EclCarousel;
         "ecl-carousel-item": EclCarouselItem;
@@ -1038,6 +1086,8 @@ declare module "@stencil/core" {
             "ecl-accordion": LocalJSX.EclAccordion & JSXBase.HTMLAttributes<HTMLEclAccordionElement>;
             "ecl-accordion-item": LocalJSX.EclAccordionItem & JSXBase.HTMLAttributes<HTMLEclAccordionItemElement>;
             "ecl-blockquote": LocalJSX.EclBlockquote & JSXBase.HTMLAttributes<HTMLEclBlockquoteElement>;
+            "ecl-breadcrumb": LocalJSX.EclBreadcrumb & JSXBase.HTMLAttributes<HTMLEclBreadcrumbElement>;
+            "ecl-breadcrumb-item": LocalJSX.EclBreadcrumbItem & JSXBase.HTMLAttributes<HTMLEclBreadcrumbItemElement>;
             "ecl-button": LocalJSX.EclButton & JSXBase.HTMLAttributes<HTMLEclButtonElement>;
             "ecl-carousel": LocalJSX.EclCarousel & JSXBase.HTMLAttributes<HTMLEclCarouselElement>;
             "ecl-carousel-item": LocalJSX.EclCarouselItem & JSXBase.HTMLAttributes<HTMLEclCarouselItemElement>;
