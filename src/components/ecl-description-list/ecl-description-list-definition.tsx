@@ -22,7 +22,7 @@ export class EclDescriptionListDefinition {
 
   render() {
     const itemsArray = this.items ? JSON.parse(this.items) : '';
-    console.log(itemsArray);
+
     return (
       <dd class={this.getClass()}>
       { this.type === 'link' ?

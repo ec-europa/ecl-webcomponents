@@ -67,10 +67,12 @@ const Template = (args) =>
     label="${args.label}"
     required=${args.required}
     disabled="${args.disabled}"
+    theme="${args.theme}"
   >
     <ecl-rating-field
       disabled=${args.disabled}
       required=${args.required}
+      theme="${args.theme}"
     >
       <ecl-rating-star
         theme="${args.theme}"
