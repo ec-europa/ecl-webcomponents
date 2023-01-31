@@ -30,6 +30,7 @@
  - [ecl-inpage-navigation-item](../ecl-inpage-navigation)
  - [ecl-news-ticker-item](../ecl-news-ticker)
  - [ecl-page-banner](../ecl-page-banner)
+ - [ecl-popover-item](../ecl-popover)
  - [ecl-social-media-share](../ecl-social-media-share)
 
 ### Depends on
@@ -49,6 +50,7 @@ graph TD;
   ecl-inpage-navigation-item --> ecl-link
   ecl-news-ticker-item --> ecl-link
   ecl-page-banner --> ecl-link
+  ecl-popover-item --> ecl-link
   ecl-social-media-share --> ecl-link
   style ecl-link fill:#f9f,stroke:#333,stroke-width:4px
 ```

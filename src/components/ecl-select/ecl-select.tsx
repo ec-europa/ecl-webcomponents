@@ -9,6 +9,7 @@ declare const ECL: any;
   },
   shadow: false,
   scoped: false,
+  assetsDirs: ['build'],
 })
 export class EclSelect {
   @Element() el: HTMLElement;

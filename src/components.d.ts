@@ -316,6 +316,21 @@ export namespace Components {
         "theme": string;
         "variant": string;
     }
+    interface EclPopover {
+        "eclScript": boolean;
+        "icon": string;
+        "itemId": string;
+        "list": boolean;
+        "styleClass": string;
+        "theme": string;
+        "toggleLabel": string;
+    }
+    interface EclPopoverItem {
+        "icon": string;
+        "path": string;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclRatingField {
         "disabled": boolean;
         "required": boolean;
@@ -597,6 +612,18 @@ declare global {
         prototype: HTMLEclPageBannerElement;
         new (): HTMLEclPageBannerElement;
     };
+    interface HTMLEclPopoverElement extends Components.EclPopover, HTMLStencilElement {
+    }
+    var HTMLEclPopoverElement: {
+        prototype: HTMLEclPopoverElement;
+        new (): HTMLEclPopoverElement;
+    };
+    interface HTMLEclPopoverItemElement extends Components.EclPopoverItem, HTMLStencilElement {
+    }
+    var HTMLEclPopoverItemElement: {
+        prototype: HTMLEclPopoverItemElement;
+        new (): HTMLEclPopoverItemElement;
+    };
     interface HTMLEclRatingFieldElement extends Components.EclRatingField, HTMLStencilElement {
     }
     var HTMLEclRatingFieldElement: {
@@ -680,6 +707,8 @@ declare global {
         "ecl-news-ticker": HTMLEclNewsTickerElement;
         "ecl-news-ticker-item": HTMLEclNewsTickerItemElement;
         "ecl-page-banner": HTMLEclPageBannerElement;
+        "ecl-popover": HTMLEclPopoverElement;
+        "ecl-popover-item": HTMLEclPopoverItemElement;
         "ecl-rating-field": HTMLEclRatingFieldElement;
         "ecl-rating-star": HTMLEclRatingStarElement;
         "ecl-select": HTMLEclSelectElement;
@@ -1001,6 +1030,21 @@ declare namespace LocalJSX {
         "theme"?: string;
         "variant"?: string;
     }
+    interface EclPopover {
+        "eclScript"?: boolean;
+        "icon"?: string;
+        "itemId"?: string;
+        "list"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+        "toggleLabel"?: string;
+    }
+    interface EclPopoverItem {
+        "icon"?: string;
+        "path"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclRatingField {
         "disabled"?: boolean;
         "required"?: boolean;
@@ -1111,6 +1155,8 @@ declare namespace LocalJSX {
         "ecl-news-ticker": EclNewsTicker;
         "ecl-news-ticker-item": EclNewsTickerItem;
         "ecl-page-banner": EclPageBanner;
+        "ecl-popover": EclPopover;
+        "ecl-popover-item": EclPopoverItem;
         "ecl-rating-field": EclRatingField;
         "ecl-rating-star": EclRatingStar;
         "ecl-select": EclSelect;
@@ -1159,6 +1205,8 @@ declare module "@stencil/core" {
             "ecl-news-ticker": LocalJSX.EclNewsTicker & JSXBase.HTMLAttributes<HTMLEclNewsTickerElement>;
             "ecl-news-ticker-item": LocalJSX.EclNewsTickerItem & JSXBase.HTMLAttributes<HTMLEclNewsTickerItemElement>;
             "ecl-page-banner": LocalJSX.EclPageBanner & JSXBase.HTMLAttributes<HTMLEclPageBannerElement>;
+            "ecl-popover": LocalJSX.EclPopover & JSXBase.HTMLAttributes<HTMLEclPopoverElement>;
+            "ecl-popover-item": LocalJSX.EclPopoverItem & JSXBase.HTMLAttributes<HTMLEclPopoverItemElement>;
             "ecl-rating-field": LocalJSX.EclRatingField & JSXBase.HTMLAttributes<HTMLEclRatingFieldElement>;
             "ecl-rating-star": LocalJSX.EclRatingStar & JSXBase.HTMLAttributes<HTMLEclRatingStarElement>;
             "ecl-select": LocalJSX.EclSelect & JSXBase.HTMLAttributes<HTMLEclSelectElement>;
