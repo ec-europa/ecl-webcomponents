@@ -376,6 +376,15 @@ export namespace Components {
         "theme": string;
         "variant": string;
     }
+    interface EclSpinner {
+        "centered": boolean;
+        "overlay": boolean;
+        "size": string;
+        "styleClass": string;
+        "theme": string;
+        "variant": string;
+        "visible": boolean;
+    }
     interface EclTag {
         "external": boolean;
         "styleClass": string;
@@ -648,6 +657,12 @@ declare global {
         prototype: HTMLEclSocialMediaShareElement;
         new (): HTMLEclSocialMediaShareElement;
     };
+    interface HTMLEclSpinnerElement extends Components.EclSpinner, HTMLStencilElement {
+    }
+    var HTMLEclSpinnerElement: {
+        prototype: HTMLEclSpinnerElement;
+        new (): HTMLEclSpinnerElement;
+    };
     interface HTMLEclTagElement extends Components.EclTag, HTMLStencilElement {
     }
     var HTMLEclTagElement: {
@@ -713,6 +728,7 @@ declare global {
         "ecl-rating-star": HTMLEclRatingStarElement;
         "ecl-select": HTMLEclSelectElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
+        "ecl-spinner": HTMLEclSpinnerElement;
         "ecl-tag": HTMLEclTagElement;
         "ecl-textarea": HTMLEclTextareaElement;
         "ecl-timeline": HTMLEclTimelineElement;
@@ -1090,6 +1106,15 @@ declare namespace LocalJSX {
         "theme"?: string;
         "variant"?: string;
     }
+    interface EclSpinner {
+        "centered"?: boolean;
+        "overlay"?: boolean;
+        "size"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "variant"?: string;
+        "visible"?: boolean;
+    }
     interface EclTag {
         "external"?: boolean;
         "styleClass"?: string;
@@ -1161,6 +1186,7 @@ declare namespace LocalJSX {
         "ecl-rating-star": EclRatingStar;
         "ecl-select": EclSelect;
         "ecl-social-media-share": EclSocialMediaShare;
+        "ecl-spinner": EclSpinner;
         "ecl-tag": EclTag;
         "ecl-textarea": EclTextarea;
         "ecl-timeline": EclTimeline;
@@ -1211,6 +1237,7 @@ declare module "@stencil/core" {
             "ecl-rating-star": LocalJSX.EclRatingStar & JSXBase.HTMLAttributes<HTMLEclRatingStarElement>;
             "ecl-select": LocalJSX.EclSelect & JSXBase.HTMLAttributes<HTMLEclSelectElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
+            "ecl-spinner": LocalJSX.EclSpinner & JSXBase.HTMLAttributes<HTMLEclSpinnerElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
             "ecl-textarea": LocalJSX.EclTextarea & JSXBase.HTMLAttributes<HTMLEclTextareaElement>;
             "ecl-timeline": LocalJSX.EclTimeline & JSXBase.HTMLAttributes<HTMLEclTimelineElement>;

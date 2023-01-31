@@ -1,13 +1,12 @@
 {
-  "name": "@ecl/web-components-popover",
+  "name": "@ecl/web-components-spinner",
   "author": "European Commission",
   "license": "EUPL-1.2",
   "version": "0.0.0",
-  "description": "ECL Popover",
-  "main": "ecl-popover.tsx",
+  "description": "ECL Spinner",
+  "main": "ecl-spinner.tsx",
   "private": true,
   "scripts": {
-    "build:scripts": "cross-env ecl-builder scripts",
     "build:styles": "cross-env ecl-builder styles",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
@@ -15,7 +14,7 @@
   },
   "devDependencies": {
     "@ecl/builder": "3.6.0",
-    "@ecl/vanilla-component-popover": "3.6.0"
+    "@ecl/vanilla-component-spinner": "3.6.0"
   },
   "repository": {
     "type": "git",
