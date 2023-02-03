@@ -14,11 +14,11 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.6.0",
-    "@ecl/specs-component-icon": "3.6.0",
-    "@ecl/vanilla-component-icon": "3.6.0",
-    "@ecl/resources-ec-icons": "3.6.0",
-    "@ecl/resources-eu-icons": "3.6.0"
+    "@ecl/builder": "3.7.0",
+    "@ecl/specs-component-icon": "3.7.0",
+    "@ecl/vanilla-component-icon": "3.7.0",
+    "@ecl/resources-ec-icons": "3.7.0",
+    "@ecl/resources-eu-icons": "3.7.0"
   },
   "repository": {
     "type": "git",

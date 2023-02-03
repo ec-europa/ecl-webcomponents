@@ -18,6 +18,20 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
     }
+    interface EclBanner {
+        "bannerTitle": string;
+        "centered": boolean;
+        "credit": string;
+        "ctaLabel": string;
+        "ctaLink": string;
+        "external": boolean;
+        "fullWidth": boolean;
+        "image": string;
+        "size": string;
+        "styleClass": string;
+        "theme": string;
+        "variant": string;
+    }
     interface EclBlockquote {
         "author": string;
         "image": string;
@@ -429,6 +443,12 @@ declare global {
         prototype: HTMLEclAccordionItemElement;
         new (): HTMLEclAccordionItemElement;
     };
+    interface HTMLEclBannerElement extends Components.EclBanner, HTMLStencilElement {
+    }
+    var HTMLEclBannerElement: {
+        prototype: HTMLEclBannerElement;
+        new (): HTMLEclBannerElement;
+    };
     interface HTMLEclBlockquoteElement extends Components.EclBlockquote, HTMLStencilElement {
     }
     var HTMLEclBlockquoteElement: {
@@ -690,6 +710,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "ecl-accordion": HTMLEclAccordionElement;
         "ecl-accordion-item": HTMLEclAccordionItemElement;
+        "ecl-banner": HTMLEclBannerElement;
         "ecl-blockquote": HTMLEclBlockquoteElement;
         "ecl-breadcrumb": HTMLEclBreadcrumbElement;
         "ecl-breadcrumb-item": HTMLEclBreadcrumbItemElement;
@@ -747,6 +768,20 @@ declare namespace LocalJSX {
         "label"?: string;
         "styleClass"?: string;
         "theme"?: string;
+    }
+    interface EclBanner {
+        "bannerTitle"?: string;
+        "centered"?: boolean;
+        "credit"?: string;
+        "ctaLabel"?: string;
+        "ctaLink"?: string;
+        "external"?: boolean;
+        "fullWidth"?: boolean;
+        "image"?: string;
+        "size"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "variant"?: string;
     }
     interface EclBlockquote {
         "author"?: string;
@@ -1148,6 +1183,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "ecl-accordion": EclAccordion;
         "ecl-accordion-item": EclAccordionItem;
+        "ecl-banner": EclBanner;
         "ecl-blockquote": EclBlockquote;
         "ecl-breadcrumb": EclBreadcrumb;
         "ecl-breadcrumb-item": EclBreadcrumbItem;
@@ -1199,6 +1235,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "ecl-accordion": LocalJSX.EclAccordion & JSXBase.HTMLAttributes<HTMLEclAccordionElement>;
             "ecl-accordion-item": LocalJSX.EclAccordionItem & JSXBase.HTMLAttributes<HTMLEclAccordionItemElement>;
+            "ecl-banner": LocalJSX.EclBanner & JSXBase.HTMLAttributes<HTMLEclBannerElement>;
             "ecl-blockquote": LocalJSX.EclBlockquote & JSXBase.HTMLAttributes<HTMLEclBlockquoteElement>;
             "ecl-breadcrumb": LocalJSX.EclBreadcrumb & JSXBase.HTMLAttributes<HTMLEclBreadcrumbElement>;
             "ecl-breadcrumb-item": LocalJSX.EclBreadcrumbItem & JSXBase.HTMLAttributes<HTMLEclBreadcrumbItemElement>;

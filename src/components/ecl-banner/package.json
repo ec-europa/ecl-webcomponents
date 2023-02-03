@@ -1,10 +1,10 @@
 {
-  "name": "@ecl/web-components-rating-field",
+  "name": "@ecl/web-components-banner",
   "author": "European Commission",
   "license": "EUPL-1.2",
   "version": "0.0.0",
-  "description": "ECL Rating field",
-  "main": "ecl-tag.tsx",
+  "description": "ECL Page Banner",
+  "main": "ecl-banner.tsx",
   "private": true,
   "scripts": {
     "build:styles": "cross-env ecl-builder styles",
@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@ecl/builder": "3.7.0",
-    "@ecl/vanilla-component-rating-field": "3.7.0"
+    "@ecl/vanilla-component-banner": "3.7.0"
   },
   "repository": {
     "type": "git",

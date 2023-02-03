@@ -61,7 +61,7 @@ const getArgTypes = () => {
 };
 
 export default {
-  title: 'Components/page banner',
+  title: 'Deprecated/page banner',
 };
 
 const Template = (args) => 

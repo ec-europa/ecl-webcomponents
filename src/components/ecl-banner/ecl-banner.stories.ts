@@ -1,19 +1,25 @@
 const getArgs = () => ({
-  variant: 'primary',
-  bannerTitle: 'EU Budget for the future',
-  description: 'Innovation, economy, environment and geopolitics',
+  variant: 'plain-background',
+  bannerTitle: 'Headline sed elit lorem.',
+  description: 'Pellentesque tempor tincidunt quam, finibus vulputate eros iaculis pharetra orci arcu, dictum maximus arcu pellentesque eget. Cras massa nunc.',
   ctaLabel: 'Subscribe',
   ctaLink: '/example.html',
   image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
   fullWidth: false,
+  size: 'm',
   centered: true,
 });
 
 const getArgTypes = () => ({
   variant: {
     type: { name: 'select' },
-    options: ['primary', 'secondary', 'white', 'image', 'image-gradient', 'image-shade'],
-    description: 'Page banner variants',
+    options: ['plain-background', 'text-box', 'image-overlay', 'text-highlight'],
+    description: 'Banner variants',
+  },
+  size: {
+    type: { name: 'select' },
+    options: ['s', 'm', 'l'],
+    description: 'Banner size', 
   },
   bannerTitle: {
     name: 'title',
@@ -50,11 +56,11 @@ const getArgTypes = () => ({
 });
 
 export default {
-  title: 'Deprecated/hero banner',
+  title: 'Components/banner',
 };
 
 const Template = args =>
-  `<ecl-hero-banner
+  `<ecl-banner
   variant="${args.variant}"
   theme="${args.theme}"
   cta-link="${args.ctaLink}"
@@ -62,11 +68,13 @@ const Template = args =>
   image="${args.image}"
   banner-title="${args.bannerTitle}"
   credit="© Copyright or credit"
+  centered=${args.centered}
+  size="${args.size}"
 >
   ${args.description}
-</ecl-hero-banner>`;
+</ecl-banner>`;
 
-export const HeroBanner = Template.bind({});
-HeroBanner.storyName = 'default';
-HeroBanner.args = getArgs();
-HeroBanner.argTypes = getArgTypes();
+export const Banner = Template.bind({});
+Banner.storyName = 'default';
+Banner.args = getArgs();
+Banner.argTypes = getArgTypes();

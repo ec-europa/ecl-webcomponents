@@ -54,8 +54,9 @@ export class EclPageBanner {
         >
         </div>
         : '' }
-        { this.credit && imageBanners.includes(this.variant) ?
-        <div class="ecl-page-banner__credit">{this.credit}</div> : '' }
+      { this.credit && imageBanners.includes(this.variant) ?
+        <div class="ecl-page-banner__credit">{this.credit}</div> : '' 
+      }
         <div class="ecl-container">
           <div class="ecl-page-banner__container">
             <div class="ecl-page-banner__content">
@@ -70,7 +71,7 @@ export class EclPageBanner {
                 <ecl-link
                   variant="cta"
                   path={this.ctaLink}
-                  styleClass="ecl-page-banner__link-cta sc-ecl-page-banner-ec"
+                  style-class={`ecl-page-banner__link-cta sc-ecl-page-banner-${this.theme}`}
                 >
                   {this.ctaLabel}
                   <ecl-icon

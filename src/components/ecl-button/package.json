@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-button",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "3.6.0",
+  "version": "3.7.0",
   "description": "ECL Button",
   "main": "ecl-button.tsx",
   "private": true,
@@ -14,15 +14,15 @@
     "prepublish": "npm run build "
   },
   "devDependencies": {
-    "@ecl/builder": "3.6.0",
-    "@ecl/theme-ec": "3.6.0",
-    "@ecl/theme-eu": "3.6.0",
-    "@ecl/specs-component-button": "3.6.0",
-    "@ecl/vanilla-component-button": "3.6.0",
-    "@ecl/vanilla-component-icon": "3.6.0",
-    "@ecl/vanilla-component-link": "3.6.0",
-    "@ecl/resources-ec-icons": "3.6.0",
-    "@ecl/resources-eu-icons": "3.6.0"
+    "@ecl/builder": "3.7.0",
+    "@ecl/theme-ec": "3.7.0",
+    "@ecl/theme-eu": "3.7.0",
+    "@ecl/specs-component-button": "3.7.0",
+    "@ecl/vanilla-component-button": "3.7.0",
+    "@ecl/vanilla-component-icon": "3.7.0",
+    "@ecl/vanilla-component-link": "3.7.0",
+    "@ecl/resources-ec-icons": "3.7.0",
+    "@ecl/resources-eu-icons": "3.7.0"
   },
   "repository": {
     "type": "git",

@@ -1,15 +1,15 @@
 import { Component, Prop, h } from '@stencil/core';
 
 @Component({
-  tag: 'ecl-hero-banner',
+  tag: 'ecl-banner',
   styleUrls: {
-    ec: './build/styles/ecl-hero-banner-ec.css',
-    eu: './build/styles/ecl-hero-banner-eu.css',
+    ec: './build/styles/ecl-banner-ec.css',
+    eu: './build/styles/ecl-banner-eu.css',
   },
   shadow: false,
   scoped: true,
 })
-export class EclHeroBanner {
+export class EclBanner {
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
   @Prop() external: boolean = false;
@@ -21,19 +21,21 @@ export class EclHeroBanner {
   @Prop() ctaLink: string;
   @Prop() centered: boolean = true;
   @Prop() credit: string;
+  @Prop() size: string = 'm';
 
   getClass(): string {
     const styleClasses = [
-      `ecl-hero-banner`,
-      `ecl-hero-banner--${this.variant}`,
+      `ecl-banner`,
+      `ecl-banner--${this.variant}`,
+      `ecl-banner--${this.size}`,
       this.styleClass
     ];
 
     if (this.centered) {
-      styleClasses.push('ecl-hero-banner--centered');
+      styleClasses.push('ecl-banner--centered');
     }
     if (this.fullWidth) {
-      styleClasses.push('ecl-hero-banner--full-width');
+      styleClasses.push('ecl-banner--full-width');
     }
 
     return styleClasses.join(' ');
@@ -41,39 +43,41 @@ export class EclHeroBanner {
 
   render() {
     const imageBanners = [
-      'image',
-      'image-gradient',
-      'image-shade',
+      'text-box',
+      'image-overlay',
+      'text-highlight',
     ];
     return (
       <section class={this.getClass()}>
       { imageBanners.includes(this.variant) && this.image ?
         <div
-          class="ecl-hero-banner__image"
+          class="ecl-banner__image"
           style={{ backgroundImage: "url(" + this.image + ")"}}
         >
-        </div> : '' 
-      }
-      { imageBanners.includes(this.variant) && this.credit ?
-        <div class="ecl-hero-banner__credit">{this.credit}</div> : ''
+        </div>
+        : '' }
+      { this.credit && this.variant != 'plain-background' ?
+        <div class="ecl-banner__credit">{this.credit}</div> : ''
       }
         <div class="ecl-container">
-          <div class="ecl-hero-banner__container">
-            <div class="ecl-hero-banner__content">
+          <div class="ecl-banner__container">
+            <div class="ecl-banner__content">
             { this.bannerTitle ?
-              <div class="ecl-hero-banner__title">{this.bannerTitle}</div> : ''
+              <div class="ecl-banner__title">
+                <span class="ecl-banner__title-text">{this.bannerTitle}</span>
+              </div> : ''
             }
-              <p class="ecl-hero-banner__description">
-                <span class="ecl-hero-banner__description-text">
+              <p class="ecl-banner__description">
+                <span class="ecl-banner__description-text">
                   <slot></slot>
                 </span>
               </p>
             { this.ctaLabel && this.ctaLink ?
-              <div class="ecl-hero-banner__cta">
+              <div class="ecl-banner__cta">
                 <ecl-link
                   variant="cta"
                   path={this.ctaLink}
-                  style-class={`ecl-hero-banner__link-cta sc-ecl-hero-banner-${this.theme}`}
+                  style-class={`ecl-banner__link-cta sc-ecl-banner-${this.theme}`}
                 >
                   {this.ctaLabel}
                   <ecl-icon

@@ -22,6 +22,7 @@
 ### Used by
 
  - [ecl-accordion-item](../ecl-accordion)
+ - [ecl-banner](../ecl-banner)
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
  - [ecl-carousel](../ecl-carousel)
  - [ecl-category-filter-item](../ecl-category-filter)
@@ -51,6 +52,7 @@
 ```mermaid
 graph TD;
   ecl-accordion-item --> ecl-icon
+  ecl-banner --> ecl-icon
   ecl-breadcrumb-item --> ecl-icon
   ecl-carousel --> ecl-icon
   ecl-category-filter-item --> ecl-icon
