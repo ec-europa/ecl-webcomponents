@@ -67,7 +67,7 @@ export class EclCarousel {
             <ecl-icon
               icon="corner-arrow"
               transform="rotate-270"
-              styleClass="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec"
+              style-class="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec"
             ></ecl-icon>
              <span class="ecl-u-sr-only">{this.srPrevious}</span>
           </button>
@@ -75,7 +75,7 @@ export class EclCarousel {
             <ecl-icon
               icon="corner-arrow"
               transform="rotate-90"
-              styleClass="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec"
+              style-class="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec"
             ></ecl-icon>
             <span class="ecl-u-sr-only">{this.srNext}</span>
           </button>
@@ -88,13 +88,13 @@ export class EclCarousel {
                   icon="play"
                   size="l"
                   color="inverted"
-                  styleClass="ecl-carousel__icon-default sc-ecl-carousel-ec"
+                  style-class={`ecl-carousel__icon-default sc-ecl-carousel-${this.theme}`}
                 ></ecl-icon>
                 <ecl-icon
                   icon="play-filled"
                   size="l"
                   color="inverted"
-                  styleClass="ecl-carousel__icon-active sc-ecl-carousel-ec"
+                  style-class={`ecl-carousel__icon-active sc-ecl-carousel-${this.theme}`}
                 ></ecl-icon>
                 <span class="ecl-u-sr-only">{this.srPlay}</span>
               </button>
@@ -102,13 +102,13 @@ export class EclCarousel {
                 <ecl-icon
                   icon="pause"
                   size="l"
-                  styleClass="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec"
+                  style-class="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec"
                 ></ecl-icon>
                 <ecl-icon
                   icon="pause-filled"
                   size="l"
                   color="inverted"
-                  styleClass="ecl-carousel__icon-active sc-ecl-carousel-ec"
+                  style-class={`ecl-carousel__icon-active sc-ecl-carousel-${this.theme}`}
                 ></ecl-icon>
                 <span class="ecl-u-sr-only">{this.srPause}</span>
               </button>

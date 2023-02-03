@@ -12,7 +12,9 @@ export class EclCarouselItem {
   @Prop() theme: string = 'ec';
   @Prop() ctaLink: string;
   @Prop() ctaLabel: string;
+  @Prop() size: string = 'm';
   @Prop() ariaLabel: string;
+  @Prop() centered: boolean;
 
   getClass(): string {
     return [
@@ -28,16 +30,18 @@ export class EclCarouselItem {
         role="group"
         aria-label={this.ariaLabel}
       >
-        <ecl-page-banner
+        <ecl-banner
           banner-title={this.bannerTitle}
           image={this.image}
           variant={this.bannerVariant}
           theme={this.theme}
           cta-link={this.ctaLink}
           cta-label={this.ctaLabel}
+          centered={this.centered}
+          size={this.size}
         >
           <slot></slot>
-        </ecl-page-banner>
+        </ecl-banner>
       </div>
     );
   }

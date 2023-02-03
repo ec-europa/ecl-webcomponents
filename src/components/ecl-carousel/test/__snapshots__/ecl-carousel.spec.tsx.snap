@@ -6,24 +6,32 @@ exports[`ecl-carousel renders 1`] = `
   <div class="ecl-carousel" data-ecl-auto-init="Carousel">
     <div class="ecl-carousel__container">
       <div class="ecl-carousel__slides" id="ecl-carousel-demo">
-        <ecl-carousel-item banner-title="Duis vitae pulvinar turpis" banner-variant="image" centered="false" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" theme="ec">
+        <ecl-carousel-item banner-title="Duis vitae pulvinar turpis" banner-variant="text-box" centered="false" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" theme="ec">
           Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur
         </ecl-carousel-item>
-        <ecl-carousel-item banner-title="Duis vitae pulvinar turpis" banner-variant="image-shade" centered="false" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" theme="ec">
+        <ecl-carousel-item banner-title="Duis vitae pulvinar turpis" banner-variant="text-highlight" centered="false" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" theme="ec">
           Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur
         </ecl-carousel-item>
-        <ecl-carousel-item banner-title="Duis vitae pulvinar turpis" banner-variant="image-gradient" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" theme="ec">
+        <ecl-carousel-item banner-title="Duis vitae pulvinar turpis" banner-variant="image-overlay" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" theme="ec">
           Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur
         </ecl-carousel-item>
       </div>
       <button class="ecl-carousel__prev">
-        <ecl-icon icon="corner-arrow" styleclass="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec" transform="rotate-270"></ecl-icon>
+        <ecl-icon style-class="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec">
+          <svg class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted ecl-icon--rotate-270 ecl-icon--xs sc-ecl-carousel-ec">
+            <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
+          </svg>
+        </ecl-icon>
         <span class="ecl-u-sr-only">
           Prev slides
         </span>
       </button>
       <button class="ecl-carousel__next">
-        <ecl-icon icon="corner-arrow" styleclass="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec" transform="rotate-90"></ecl-icon>
+        <ecl-icon style-class="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec">
+          <svg class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted ecl-icon--rotate-90 ecl-icon--xs sc-ecl-carousel-ec">
+            <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
+          </svg>
+        </ecl-icon>
         <span class="ecl-u-sr-only">
           Next slides
         </span>
@@ -33,15 +41,31 @@ exports[`ecl-carousel renders 1`] = `
       <div class="ecl-container">
         <div class="ecl-carousel__autoplay">
           <button class="ecl-carousel__play">
-            <ecl-icon color="inverted" icon="play" size="l" styleclass="ecl-carousel__icon-default sc-ecl-carousel-ec"></ecl-icon>
-            <ecl-icon color="inverted" icon="play-filled" size="l" styleclass="ecl-carousel__icon-active sc-ecl-carousel-ec"></ecl-icon>
+            <ecl-icon style-class="ecl-carousel__icon-default sc-ecl-carousel-ec">
+              <svg class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted ecl-icon--l sc-ecl-carousel-ec">
+                <use xlink:href="/build/images/ec/icons.svg#play"></use>
+              </svg>
+            </ecl-icon>
+            <ecl-icon style-class="ecl-carousel__icon-active sc-ecl-carousel-ec">
+              <svg class="ecl-carousel__icon-active ecl-icon ecl-icon--inverted ecl-icon--l sc-ecl-carousel-ec">
+                <use xlink:href="/build/images/ec/icons.svg#play-filled"></use>
+              </svg>
+            </ecl-icon>
             <span class="ecl-u-sr-only">
               Play carousel
             </span>
           </button>
           <button class="ecl-carousel__pause">
-            <ecl-icon icon="pause" size="l" styleclass="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec"></ecl-icon>
-            <ecl-icon color="inverted" icon="pause-filled" size="l" styleclass="ecl-carousel__icon-active sc-ecl-carousel-ec"></ecl-icon>
+            <ecl-icon style-class="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec">
+              <svg class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted ecl-icon--l sc-ecl-carousel-ec">
+                <use xlink:href="/build/images/ec/icons.svg#pause"></use>
+              </svg>
+            </ecl-icon>
+            <ecl-icon style-class="ecl-carousel__icon-active sc-ecl-carousel-ec">
+              <svg class="ecl-carousel__icon-active ecl-icon ecl-icon--inverted ecl-icon--l sc-ecl-carousel-ec">
+                <use xlink:href="/build/images/ec/icons.svg#pause-filled"></use>
+              </svg>
+            </ecl-icon>
             <span class="ecl-u-sr-only">
               Pause carousel
             </span>
