@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-featured-item renders 1`] = `
+<ecl-featured-item image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="Title" media-caption="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." position="left" theme="ec" variant="extended">
+  <!---->
+  <article class="ecl-featured-item ecl-featured-item--extended">
+    <div class="ecl-featured-item__container">
+      <div class="ecl-featured-item__item">
+        <ecl-media-container image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" styleclass="ecl-featured-item__media_container">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </ecl-media-container>
+      </div>
+      <div class="ecl-featured-item__item">
+        <div class="ecl-featured-item__title">
+          Title
+        </div>
+        <div class="ecl-featured-item__description">
+          <p class="ecl-u-type-paragraph-m">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</ecl-featured-item>
+`;

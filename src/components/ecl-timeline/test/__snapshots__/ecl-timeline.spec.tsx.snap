@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-timeline renders 1`] = `
+<ecl-timeline-item item-title="Item title" itemid="0" label="13 September 2017">
+  <!---->
+  <li class="ecl-timeline__item">
+    <div class="ecl-timeline__tooltip">
+      <div class="ecl-timeline__tooltip-arrow"></div>
+      <div class="ecl-timeline__label">
+        13 September 2017
+      </div>
+      <div class="ecl-timeline__title">
+        Item title
+      </div>
+      <div class="ecl-timeline__content">
+        <a class="ecl-link" href="/example.html">
+          President Juncker's State of the Union speech
+        </a>
+      </div>
+    </div>
+  </li>
+</ecl-timeline-item>
+`;

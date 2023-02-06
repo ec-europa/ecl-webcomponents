@@ -18,6 +18,7 @@ describe('ecl-carousel', () => {
                 cta-link="/example.html"
                 cta-label="Subscribe"
                 centered=false
+                size="l"
                 image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
                 banner-title="Duis vitae pulvinar turpis"
               >
@@ -26,6 +27,7 @@ describe('ecl-carousel', () => {
               <ecl-carousel-item
                 banner-variant="text-highlight"
                 theme="ec"
+                size="l"
                 cta-link="/example.html"
                 cta-label="Subscribe"
                 centered=false
@@ -37,6 +39,7 @@ describe('ecl-carousel', () => {
               <ecl-carousel-item
                 banner-variant="image-overlay"
                 theme="ec"
+                size="l"
                 cta-link="/example.html"
                 cta-label="Subscribe"
                 image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
