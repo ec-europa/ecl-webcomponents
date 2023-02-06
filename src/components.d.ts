@@ -108,6 +108,18 @@ export namespace Components {
         "variant": string;
         "year": string;
     }
+    interface EclDatepicker {
+        "defaultValue": string;
+        "disabled": boolean;
+        "inputId": string;
+        "invalid": boolean;
+        "name": string;
+        "placeholder": string;
+        "required": boolean;
+        "styleClass": string;
+        "theme": string;
+        "type": string;
+    }
     interface EclDescriptionList {
         "styleClass": string;
         "theme": string;
@@ -531,6 +543,12 @@ declare global {
         prototype: HTMLEclDateBlockElement;
         new (): HTMLEclDateBlockElement;
     };
+    interface HTMLEclDatepickerElement extends Components.EclDatepicker, HTMLStencilElement {
+    }
+    var HTMLEclDatepickerElement: {
+        prototype: HTMLEclDatepickerElement;
+        new (): HTMLEclDatepickerElement;
+    };
     interface HTMLEclDescriptionListElement extends Components.EclDescriptionList, HTMLStencilElement {
     }
     var HTMLEclDescriptionListElement: {
@@ -760,6 +778,7 @@ declare global {
         "ecl-category-filter": HTMLEclCategoryFilterElement;
         "ecl-category-filter-item": HTMLEclCategoryFilterItemElement;
         "ecl-date-block": HTMLEclDateBlockElement;
+        "ecl-datepicker": HTMLEclDatepickerElement;
         "ecl-description-list": HTMLEclDescriptionListElement;
         "ecl-description-list-definition": HTMLEclDescriptionListDefinitionElement;
         "ecl-description-list-term": HTMLEclDescriptionListTermElement;
@@ -900,6 +919,18 @@ declare namespace LocalJSX {
         "theme"?: string;
         "variant"?: string;
         "year"?: string;
+    }
+    interface EclDatepicker {
+        "defaultValue"?: string;
+        "disabled"?: boolean;
+        "inputId"?: string;
+        "invalid"?: boolean;
+        "name"?: string;
+        "placeholder"?: string;
+        "required"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+        "type"?: string;
     }
     interface EclDescriptionList {
         "styleClass"?: string;
@@ -1263,6 +1294,7 @@ declare namespace LocalJSX {
         "ecl-category-filter": EclCategoryFilter;
         "ecl-category-filter-item": EclCategoryFilterItem;
         "ecl-date-block": EclDateBlock;
+        "ecl-datepicker": EclDatepicker;
         "ecl-description-list": EclDescriptionList;
         "ecl-description-list-definition": EclDescriptionListDefinition;
         "ecl-description-list-term": EclDescriptionListTerm;
@@ -1317,6 +1349,7 @@ declare module "@stencil/core" {
             "ecl-category-filter": LocalJSX.EclCategoryFilter & JSXBase.HTMLAttributes<HTMLEclCategoryFilterElement>;
             "ecl-category-filter-item": LocalJSX.EclCategoryFilterItem & JSXBase.HTMLAttributes<HTMLEclCategoryFilterItemElement>;
             "ecl-date-block": LocalJSX.EclDateBlock & JSXBase.HTMLAttributes<HTMLEclDateBlockElement>;
+            "ecl-datepicker": LocalJSX.EclDatepicker & JSXBase.HTMLAttributes<HTMLEclDatepickerElement>;
             "ecl-description-list": LocalJSX.EclDescriptionList & JSXBase.HTMLAttributes<HTMLEclDescriptionListElement>;
             "ecl-description-list-definition": LocalJSX.EclDescriptionListDefinition & JSXBase.HTMLAttributes<HTMLEclDescriptionListDefinitionElement>;
             "ecl-description-list-term": LocalJSX.EclDescriptionListTerm & JSXBase.HTMLAttributes<HTMLEclDescriptionListTermElement>;

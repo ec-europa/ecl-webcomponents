@@ -147,7 +147,7 @@ const getArgTypes = () => {
 };
 
 export default {
-  title: 'Components/select',
+  title: 'Components/form/select',
 };
 
 const Template = (args) => 

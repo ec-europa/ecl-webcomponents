@@ -21,6 +21,7 @@ if (!isProd) {
     path.resolve(`${__dirname}/../src/components/ecl-breadcrumb`),
     path.resolve(`${__dirname}/../src/components/ecl-inpage-navigation`),
     path.resolve(`${__dirname}/../src/components/ecl-popover`),
+    path.resolve(`${__dirname}/../src/components/ecl-datepicker`),
   ];
 }
 

@@ -54,7 +54,7 @@ const getArgTypes = () => {
 };
 
 export default {
-  title: 'Components/rating field',
+  title: 'Components/form/rating field',
 };
 
 const Template = (args) => 

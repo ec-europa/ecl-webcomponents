@@ -104,7 +104,7 @@ const getArgTypes = () => {
 };
 
 export default {
-  title: 'Components/textarea',
+  title: 'Components/form/textarea',
 };
 
 const Template = (args) => 

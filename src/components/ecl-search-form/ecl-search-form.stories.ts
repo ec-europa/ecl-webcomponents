@@ -1,5 +1,5 @@
 export default {
-  title: 'Components/search-form',
+  title: 'Components/form/search-form',
 };
 
 const Template = args =>

@@ -159,7 +159,7 @@ const getHelperText = (args) => {
 };
 
 export default {
-  title: 'Components/input-field',
+  title: 'Components/form/input-field',
 };
 
 const Template = args =>

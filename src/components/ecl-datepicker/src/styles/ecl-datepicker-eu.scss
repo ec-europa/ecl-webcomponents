@@ -1,0 +1,13 @@
+@use '@ecl/theme-eu';
+
+@use '@ecl/vanilla-component-text-input/text-input-eu';
+@use '@ecl/vanilla-component-datepicker/datepicker-eu';
+
+.ecl-form-group .ecl-datepicker {
+  margin-top: 0.75rem;
+}
+
+.ecl-datepicker__icon {
+  margin-inline-end: calc(0.75rem - 1px) !important;
+  margin-top: calc(0.75rem - 1px) !important;
+}

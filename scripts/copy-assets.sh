@@ -31,3 +31,4 @@ cp -r ./src/components/ecl-timeline/build ./build
 cp -r ./src/components/ecl-breadcrumb/build ./build
 cp -r ./src/components/ecl-inpage-navigation/build ./build
 cp -r ./src/components/ecl-popover/build ./build
+cp -r ./src/components/ecl-datepicker/build ./build
