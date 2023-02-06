@@ -1,0 +1,18 @@
+@use '@ecl/theme-eu';
+
+@use '@ecl/vanilla-component-search-form/search-form-eu';
+
+.ecl-search-form__button.sc-ecl-search-form-eu {
+  background: #0e47cb !important;
+  border-bottom: 1px solid #515560 !important;
+  border-right: 1px solid #515560 !important;
+  border-top: 1px solid #515560 !important;
+  padding: calc(0.75rem - 1px) !important;
+}
+
+@media (min-width: 768px) {
+  .ecl-search-form__button.sc-ecl-search-form-eu {
+    padding-inline-start: calc(1rem - 1px) !important;
+    padding-inline-end: calc(1rem - 1px) !important;
+  }
+}

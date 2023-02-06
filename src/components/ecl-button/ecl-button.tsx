@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, Element } from '@stencil/core';
 
 @Component({
   tag: 'ecl-button',
@@ -11,9 +11,20 @@ import { Component, Prop, h } from '@stencil/core';
 })
 
 export class EclButton {
+  @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop() type: string = 'primary';
   @Prop() theme: string = 'ec';
+
+  componentDidRender() {
+    if (this.el.getElementsByTagName('ecl-icon')[0]) {
+      const slot = this.el.getElementsByTagName('ecl-icon')[0].getAttribute('slot');
+      this.el.querySelector('.ecl-icon').classList.add('ecl-button__icon');
+      if (slot) {
+        this.el.querySelector('.ecl-icon').classList.add(`ecl-button__${slot.substring(0, 5) + '-' + slot.substring(5)}`);
+      }
+    }
+  }
 
   getClass(): string {
     return [

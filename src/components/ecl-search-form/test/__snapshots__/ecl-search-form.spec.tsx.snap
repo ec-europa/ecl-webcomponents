@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-search-form renders 1`] = `
+<ecl-search-form button-aria-label="Search" button-label="Search" input-id="ecl-search-form" placeholder="Placeholder text" theme="ec" width="m">
+  <form class="ecl-search-form" role="search">
+    <ecl-form-group style-class="sc-ecl-search-form-ec">
+      <!---->
+      <fieldset class="ecl-form-group sc-ecl-search-form-ec">
+        <ecl-input input-id="ecl-search-form" placeholder="Placeholder text" style-class="ecl-search-form__text-input sc-ecl-search-form-ec" theme="ec" type="search" width="m"></ecl-input>
+      </fieldset>
+    </ecl-form-group>
+    <ecl-button aria-label="Search" style-class="ecl-search-form__button sc-ecl-search-form-ec">
+      <!---->
+      <button class="ecl-button ecl-button--submit ecl-search-form__button sc-ecl-search-form-ec">
+        <span class="ecl-button__container">
+          <span class="ecl-button__label">
+            Search
+          </span>
+          <ecl-icon slot="icon-after" style-class="sc-ecl-search-form-ec">
+            <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs sc-ecl-search-form-ec">
+              <use xlink:href="/build/images/ec/icons.svg#search"></use>
+            </svg>
+          </ecl-icon>
+        </span>
+      </button>
+    </ecl-button>
+  </form>
+</ecl-search-form>
+`;

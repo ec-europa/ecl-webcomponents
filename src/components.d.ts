@@ -370,6 +370,24 @@ export namespace Components {
         "theme": string;
         "value": string;
     }
+    interface EclSearchForm {
+        "buttonAriaLabel": string;
+        "buttonLabel": string;
+        "disabled": boolean;
+        "helperId": string;
+        "helperText": string;
+        "inputId": string;
+        "invalid": boolean;
+        "invalidText": string;
+        "label": string;
+        "name": string;
+        "placeholder": string;
+        "required": boolean;
+        "styleClass": string;
+        "theme": string;
+        "type": string;
+        "width": string;
+    }
     interface EclSelect {
         "disabled": boolean;
         "eclScript": boolean;
@@ -675,6 +693,12 @@ declare global {
         prototype: HTMLEclRatingStarElement;
         new (): HTMLEclRatingStarElement;
     };
+    interface HTMLEclSearchFormElement extends Components.EclSearchForm, HTMLStencilElement {
+    }
+    var HTMLEclSearchFormElement: {
+        prototype: HTMLEclSearchFormElement;
+        new (): HTMLEclSearchFormElement;
+    };
     interface HTMLEclSelectElement extends Components.EclSelect, HTMLStencilElement {
     }
     var HTMLEclSelectElement: {
@@ -763,6 +787,7 @@ declare global {
         "ecl-popover-item": HTMLEclPopoverItemElement;
         "ecl-rating-field": HTMLEclRatingFieldElement;
         "ecl-rating-star": HTMLEclRatingStarElement;
+        "ecl-search-form": HTMLEclSearchFormElement;
         "ecl-select": HTMLEclSelectElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
         "ecl-social-media-share-item": HTMLEclSocialMediaShareItemElement;
@@ -1138,6 +1163,24 @@ declare namespace LocalJSX {
         "theme"?: string;
         "value"?: string;
     }
+    interface EclSearchForm {
+        "buttonAriaLabel"?: string;
+        "buttonLabel"?: string;
+        "disabled"?: boolean;
+        "helperId"?: string;
+        "helperText"?: string;
+        "inputId"?: string;
+        "invalid"?: boolean;
+        "invalidText"?: string;
+        "label"?: string;
+        "name"?: string;
+        "placeholder"?: string;
+        "required"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+        "type"?: string;
+        "width"?: string;
+    }
     interface EclSelect {
         "disabled"?: boolean;
         "eclScript"?: boolean;
@@ -1247,6 +1290,7 @@ declare namespace LocalJSX {
         "ecl-popover-item": EclPopoverItem;
         "ecl-rating-field": EclRatingField;
         "ecl-rating-star": EclRatingStar;
+        "ecl-search-form": EclSearchForm;
         "ecl-select": EclSelect;
         "ecl-social-media-share": EclSocialMediaShare;
         "ecl-social-media-share-item": EclSocialMediaShareItem;
@@ -1300,6 +1344,7 @@ declare module "@stencil/core" {
             "ecl-popover-item": LocalJSX.EclPopoverItem & JSXBase.HTMLAttributes<HTMLEclPopoverItemElement>;
             "ecl-rating-field": LocalJSX.EclRatingField & JSXBase.HTMLAttributes<HTMLEclRatingFieldElement>;
             "ecl-rating-star": LocalJSX.EclRatingStar & JSXBase.HTMLAttributes<HTMLEclRatingStarElement>;
+            "ecl-search-form": LocalJSX.EclSearchForm & JSXBase.HTMLAttributes<HTMLEclSearchFormElement>;
             "ecl-select": LocalJSX.EclSelect & JSXBase.HTMLAttributes<HTMLEclSelectElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
             "ecl-social-media-share-item": LocalJSX.EclSocialMediaShareItem & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareItemElement>;

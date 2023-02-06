@@ -25,6 +25,10 @@
 
 ## Dependencies
 
+### Used by
+
+ - [ecl-search-form](../ecl-search-form)
+
 ### Depends on
 
 - [ecl-icon](../ecl-icon)
@@ -33,6 +37,7 @@
 ```mermaid
 graph TD;
   ecl-form-group --> ecl-icon
+  ecl-search-form --> ecl-form-group
   style ecl-form-group fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
