@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`ecl-icon renders 1`] = `
-<ecl-icon color="primary" icon="close-filled" path="/icons.svg" size="l">
-  <svg class="ecl-icon ecl-icon--l ecl-icon--primary">
-    <use xlink:href="/build/images/ec/icons.svg#close-filled"></use>
-  </svg>
-</ecl-icon>
-`;

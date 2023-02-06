@@ -176,17 +176,23 @@ const Template = (args) =>
       ecl-script=${args.multiple}
       name="ecl-select"
       width=${args.width}
-    >
-      <option value=1>Belgium</option>
-      <option value=2>France</option>
-      <option value=3 disabled>Luxembourg</option>
-      <option value=4>Germany</option>
-      <option value=5 selected>Bulgaria</option>
-      <option value=6>Italy</option>
-      <option value=7>Romania</option>
-      <option value=8>Greece</option>
-      <option value=9>Hungary</option>
-      <option value=10>Portugal</option>
+    > 
+      <optgroup label="European countries">
+        <option value=1>Belgium</option>
+        <option value=2>France</option>
+        <option value=3 disabled>Luxembourg</option>
+        <option value=4>Germany</option>
+        <option value=5 selected>Bulgaria</option>
+        <option value=6>Italy</option>
+        <option value=7>Romania</option>
+        <option value=8>Greece</option>
+        <option value=9>Hungary</option>
+        <option value=10>Portugal</option>
+      </optgroup>
+      <optgroup label="Non European countries">
+        <option value=11>China</option>
+        <option value=11>Turkey</option>
+      </optgroup>
     </ecl-select>
   </ecl-form-group>`;
 
