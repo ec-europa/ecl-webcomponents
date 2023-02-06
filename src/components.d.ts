@@ -77,9 +77,11 @@ export namespace Components {
         "ariaLabel": string;
         "bannerTitle": string;
         "bannerVariant": string;
+        "centered": boolean;
         "ctaLabel": string;
         "ctaLink": string;
         "image": string;
+        "size": string;
         "styleClass": string;
         "theme": string;
     }
@@ -333,6 +335,8 @@ export namespace Components {
     interface EclPopover {
         "eclScript": boolean;
         "icon": string;
+        "iconSize": string;
+        "iconSprite": string;
         "itemId": string;
         "list": boolean;
         "styleClass": string;
@@ -341,6 +345,8 @@ export namespace Components {
     }
     interface EclPopoverItem {
         "icon": string;
+        "iconSize": string;
+        "iconSprite": string;
         "path": string;
         "styleClass": string;
         "theme": string;
@@ -384,11 +390,15 @@ export namespace Components {
     }
     interface EclSocialMediaShare {
         "description": string;
-        "items": string;
-        "others": string;
         "styleClass": string;
         "theme": string;
         "variant": string;
+    }
+    interface EclSocialMediaShareItem {
+        "icon": string;
+        "sharePath": string;
+        "styleClass": string;
+        "theme": string;
     }
     interface EclSpinner {
         "centered": boolean;
@@ -677,6 +687,12 @@ declare global {
         prototype: HTMLEclSocialMediaShareElement;
         new (): HTMLEclSocialMediaShareElement;
     };
+    interface HTMLEclSocialMediaShareItemElement extends Components.EclSocialMediaShareItem, HTMLStencilElement {
+    }
+    var HTMLEclSocialMediaShareItemElement: {
+        prototype: HTMLEclSocialMediaShareItemElement;
+        new (): HTMLEclSocialMediaShareItemElement;
+    };
     interface HTMLEclSpinnerElement extends Components.EclSpinner, HTMLStencilElement {
     }
     var HTMLEclSpinnerElement: {
@@ -749,6 +765,7 @@ declare global {
         "ecl-rating-star": HTMLEclRatingStarElement;
         "ecl-select": HTMLEclSelectElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
+        "ecl-social-media-share-item": HTMLEclSocialMediaShareItemElement;
         "ecl-spinner": HTMLEclSpinnerElement;
         "ecl-tag": HTMLEclTagElement;
         "ecl-textarea": HTMLEclTextareaElement;
@@ -828,9 +845,11 @@ declare namespace LocalJSX {
         "ariaLabel"?: string;
         "bannerTitle"?: string;
         "bannerVariant"?: string;
+        "centered"?: boolean;
         "ctaLabel"?: string;
         "ctaLink"?: string;
         "image"?: string;
+        "size"?: string;
         "styleClass"?: string;
         "theme"?: string;
     }
@@ -1084,6 +1103,8 @@ declare namespace LocalJSX {
     interface EclPopover {
         "eclScript"?: boolean;
         "icon"?: string;
+        "iconSize"?: string;
+        "iconSprite"?: string;
         "itemId"?: string;
         "list"?: boolean;
         "styleClass"?: string;
@@ -1092,6 +1113,8 @@ declare namespace LocalJSX {
     }
     interface EclPopoverItem {
         "icon"?: string;
+        "iconSize"?: string;
+        "iconSprite"?: string;
         "path"?: string;
         "styleClass"?: string;
         "theme"?: string;
@@ -1135,11 +1158,15 @@ declare namespace LocalJSX {
     }
     interface EclSocialMediaShare {
         "description"?: string;
-        "items"?: string;
-        "others"?: string;
         "styleClass"?: string;
         "theme"?: string;
         "variant"?: string;
+    }
+    interface EclSocialMediaShareItem {
+        "icon"?: string;
+        "sharePath"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
     }
     interface EclSpinner {
         "centered"?: boolean;
@@ -1222,6 +1249,7 @@ declare namespace LocalJSX {
         "ecl-rating-star": EclRatingStar;
         "ecl-select": EclSelect;
         "ecl-social-media-share": EclSocialMediaShare;
+        "ecl-social-media-share-item": EclSocialMediaShareItem;
         "ecl-spinner": EclSpinner;
         "ecl-tag": EclTag;
         "ecl-textarea": EclTextarea;
@@ -1274,6 +1302,7 @@ declare module "@stencil/core" {
             "ecl-rating-star": LocalJSX.EclRatingStar & JSXBase.HTMLAttributes<HTMLEclRatingStarElement>;
             "ecl-select": LocalJSX.EclSelect & JSXBase.HTMLAttributes<HTMLEclSelectElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
+            "ecl-social-media-share-item": LocalJSX.EclSocialMediaShareItem & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareItemElement>;
             "ecl-spinner": LocalJSX.EclSpinner & JSXBase.HTMLAttributes<HTMLEclSpinnerElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
             "ecl-textarea": LocalJSX.EclTextarea & JSXBase.HTMLAttributes<HTMLEclTextareaElement>;

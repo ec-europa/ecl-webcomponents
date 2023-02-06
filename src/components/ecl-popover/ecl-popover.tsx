@@ -20,6 +20,8 @@ export class EclPopover {
   @Prop() toggleLabel: string;
   @Prop() list: boolean = false;
   @Prop() icon: string;
+  @Prop() iconSize: string = 'fluid';
+  @Prop() iconSprite: string = '';
 
   getClass(): string {
     const styleClasses = [
@@ -74,8 +76,9 @@ export class EclPopover {
         { this.icon ?
           <ecl-icon
             icon={this.icon}
-            size="fluid"
+            size={this.iconSize}
             style-class="ecl-link__icon--before"
+            sprite={this.iconSprite}
           ></ecl-icon> : ''
         }
           {this.toggleLabel}

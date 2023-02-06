@@ -9,6 +9,8 @@ export class EclPopoverItem {
   @Prop() styleClass: string;
   @Prop() path: string;
   @Prop() icon: string;
+  @Prop() iconSprite: string = '';
+  @Prop() iconSize: string = 'fluid';
 
   getClass(): string {
     const styleClasses = [
@@ -48,7 +50,8 @@ export class EclPopoverItem {
             style-class={`sc-ecl-popover-${this.theme} ecl-link__icon`}
             icon={this.icon}
             slot="icon-before"
-            size="fluid"
+            sprite={this.iconSprite || ''}
+            size={this.iconSize}
           ></ecl-icon> : '' 
         }
           <slot></slot>

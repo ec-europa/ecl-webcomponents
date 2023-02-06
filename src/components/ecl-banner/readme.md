@@ -25,6 +25,10 @@
 
 ## Dependencies
 
+### Used by
+
+ - [ecl-carousel-item](../ecl-carousel)
+
 ### Depends on
 
 - [ecl-link](../ecl-link)
@@ -36,6 +40,7 @@ graph TD;
   ecl-banner --> ecl-link
   ecl-banner --> ecl-icon
   ecl-link --> ecl-icon
+  ecl-carousel-item --> ecl-banner
   style ecl-banner fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

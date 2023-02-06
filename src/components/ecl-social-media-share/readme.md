@@ -7,14 +7,12 @@
 
 ## Properties
 
-| Property      | Attribute     | Description | Type     | Default        |
-| ------------- | ------------- | ----------- | -------- | -------------- |
-| `description` | `description` |             | `string` | `undefined`    |
-| `items`       | `items`       |             | `string` | `undefined`    |
-| `others`      | `others`      |             | `string` | `undefined`    |
-| `styleClass`  | `style-class` |             | `string` | `undefined`    |
-| `theme`       | `theme`       |             | `string` | `'ec'`         |
-| `variant`     | `variant`     |             | `string` | `'horizontal'` |
+| Property     | Attribute     | Description | Type     | Default     |
+| ------------ | ------------- | ----------- | -------- | ----------- |
+| `icon`       | `icon`        |             | `string` | `undefined` |
+| `sharePath`  | `share-path`  |             | `string` | `undefined` |
+| `styleClass` | `style-class` |             | `string` | `undefined` |
+| `theme`      | `theme`       |             | `string` | `'ec'`      |
 
 
 ## Dependencies
@@ -27,10 +25,10 @@
 ### Graph
 ```mermaid
 graph TD;
-  ecl-social-media-share --> ecl-link
-  ecl-social-media-share --> ecl-icon
+  ecl-social-media-share-item --> ecl-link
+  ecl-social-media-share-item --> ecl-icon
   ecl-link --> ecl-icon
-  style ecl-social-media-share fill:#f9f,stroke:#333,stroke-width:4px
+  style ecl-social-media-share-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

@@ -10,6 +10,8 @@
 | Property     | Attribute     | Description | Type     | Default     |
 | ------------ | ------------- | ----------- | -------- | ----------- |
 | `icon`       | `icon`        |             | `string` | `undefined` |
+| `iconSize`   | `icon-size`   |             | `string` | `'fluid'`   |
+| `iconSprite` | `icon-sprite` |             | `string` | `''`        |
 | `path`       | `path`        |             | `string` | `undefined` |
 | `styleClass` | `style-class` |             | `string` | `undefined` |
 | `theme`      | `theme`       |             | `string` | `'ec'`      |

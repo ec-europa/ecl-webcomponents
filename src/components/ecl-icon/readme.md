@@ -44,7 +44,7 @@
  - [ecl-popover-item](../ecl-popover)
  - [ecl-rating-star](../ecl-rating-field)
  - [ecl-select](../ecl-select)
- - [ecl-social-media-share](../ecl-social-media-share)
+ - [ecl-social-media-share-item](../ecl-social-media-share)
  - [ecl-tag](../ecl-tag)
  - [ecl-timeline-item](../ecl-timeline)
 
@@ -74,7 +74,7 @@ graph TD;
   ecl-popover-item --> ecl-icon
   ecl-rating-star --> ecl-icon
   ecl-select --> ecl-icon
-  ecl-social-media-share --> ecl-icon
+  ecl-social-media-share-item --> ecl-icon
   ecl-tag --> ecl-icon
   ecl-timeline-item --> ecl-icon
   style ecl-icon fill:#f9f,stroke:#333,stroke-width:4px
