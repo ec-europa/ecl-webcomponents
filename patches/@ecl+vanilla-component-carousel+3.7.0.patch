@@ -1,5 +1,5 @@
 diff --git a/node_modules/@ecl/vanilla-component-carousel/carousel.js b/node_modules/@ecl/vanilla-component-carousel/carousel.js
-index 457918c..0a58a18 100644
+index bc7a38a..3947657 100644
 --- a/node_modules/@ecl/vanilla-component-carousel/carousel.js
 +++ b/node_modules/@ecl/vanilla-component-carousel/carousel.js
 @@ -126,6 +126,8 @@ export class Carousel {
