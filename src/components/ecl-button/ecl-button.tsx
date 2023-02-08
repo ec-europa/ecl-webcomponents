@@ -17,7 +17,7 @@ export class EclButton {
   @Prop() theme: string = 'ec';
 
   componentDidRender() {
-    if (this.el.getElementsByTagName('ecl-icon')[0]) {
+    if (this.el.getElementsByTagName('ecl-icon')[0] && this.el.querySelector('.ecl-icon')) {
       const slot = this.el.getElementsByTagName('ecl-icon')[0].getAttribute('slot');
       this.el.querySelector('.ecl-icon').classList.add('ecl-button__icon');
       if (slot) {

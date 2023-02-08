@@ -15,6 +15,7 @@
 | `invalidIcon`  | `invalid-icon`  |             | `string`  | `'error'`   |
 | `invalidText`  | `invalid-text`  |             | `string`  | `undefined` |
 | `label`        | `label`         |             | `string`  | `undefined` |
+| `labelClass`   | `label-class`   |             | `string`  | `undefined` |
 | `name`         | `name`          |             | `string`  | `undefined` |
 | `optionalText` | `optional-text` |             | `string`  | `undefined` |
 | `required`     | `required`      |             | `boolean` | `false`     |

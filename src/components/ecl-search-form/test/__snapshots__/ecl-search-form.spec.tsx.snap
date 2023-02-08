@@ -6,7 +6,7 @@ exports[`ecl-search-form renders 1`] = `
     <ecl-form-group style-class="sc-ecl-search-form-ec">
       <!---->
       <fieldset class="ecl-form-group sc-ecl-search-form-ec">
-        <ecl-input input-id="ecl-search-form" placeholder="Placeholder text" style-class="ecl-search-form__text-input sc-ecl-search-form-ec" theme="ec" type="search" width="m"></ecl-input>
+        <ecl-input input-class="ecl-search-form__text-input sc-ecl-search-form-ec" input-id="ecl-search-form" placeholder="Placeholder text" style-class="ecl-search-form__text-input sc-ecl-search-form-ec" theme="ec" type="search" width="m"></ecl-input>
       </fieldset>
     </ecl-form-group>
     <ecl-button aria-label="Search" style-class="ecl-search-form__button sc-ecl-search-form-ec">

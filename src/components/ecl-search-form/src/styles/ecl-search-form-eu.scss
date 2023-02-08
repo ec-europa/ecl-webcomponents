@@ -2,6 +2,10 @@
 
 @use '@ecl/vanilla-component-search-form/search-form-eu';
 
+.ecl-search-form__text-input .ecl-text-input {
+  width: 100% !important;
+}
+
 .ecl-search-form__button.sc-ecl-search-form-eu {
   background: #0e47cb !important;
   border-bottom: 1px solid #515560 !important;
@@ -15,4 +19,8 @@
     padding-inline-start: calc(1rem - 1px) !important;
     padding-inline-end: calc(1rem - 1px) !important;
   }
+}
+
+.ecl-search-form__text-input.sc-ecl-search-form-ec {
+  border-inline-end-width: 0 !important;
 }

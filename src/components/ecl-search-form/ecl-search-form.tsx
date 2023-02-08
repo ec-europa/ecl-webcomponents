@@ -50,6 +50,7 @@ export class EclSearchForm {
           <ecl-input
             style-class={`ecl-search-form__text-input sc-ecl-search-form-${this.theme}`}
             type="search"
+            input-class={`ecl-search-form__text-input sc-ecl-search-form-${this.theme}`}
             theme={this.theme}
             input-id={this.inputId}
             required={this.required}

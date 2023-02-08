@@ -44,7 +44,6 @@ const Template = args =>
     message-title="${args.title}"
     theme="${args.theme}"
     variant="${args.variant}"
-    description="${args.description}"
     close-label="${args.closeLabel}"
     ecl-script
   >

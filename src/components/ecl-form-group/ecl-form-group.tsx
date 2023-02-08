@@ -23,6 +23,7 @@ export class EclFormGroup {
   @Prop() helperId: string;
   @Prop() name: string;
   @Prop() invalidIcon: string = 'error';
+  @Prop() labelClass: string;
 
   getClass(): string {
     return [
@@ -39,7 +40,7 @@ export class EclFormGroup {
       >
       { this.label ?
         <legend
-          class={`ecl-form-label ${this.invalid ? 'ecl-form-label--invalid' : ''}`}
+          class={`ecl-form-label ${this.invalid ? 'ecl-form-label--invalid' : ''} ${this.labelClass || ''}`}
         >
           {this.label}
       { this.required && this.requiredText ?

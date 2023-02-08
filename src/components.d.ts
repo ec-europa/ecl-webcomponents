@@ -213,6 +213,7 @@ export namespace Components {
         "invalidIcon": string;
         "invalidText": string;
         "label": string;
+        "labelClass": string;
         "name": string;
         "optionalText": string;
         "required": boolean;
@@ -264,6 +265,7 @@ export namespace Components {
         "eclScript": boolean;
         "helperId": string;
         "helperText": string;
+        "inputClass": string;
         "inputId": string;
         "invalid": boolean;
         "label": string;
@@ -285,6 +287,14 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
         "variant": string;
+    }
+    interface EclLanguageItem {
+        "active": boolean;
+        "langCode": string;
+        "language": string;
+        "path": string;
+        "styleClass": string;
+        "theme": string;
     }
     interface EclLink {
         "external": boolean;
@@ -417,6 +427,28 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
         "width": string;
+    }
+    interface EclSiteHeader {
+        "closeLabel": string;
+        "eclScript": boolean;
+        "euLabel": string;
+        "langCode": string;
+        "language": string;
+        "languageAriaLabel": string;
+        "languageBlock": boolean;
+        "languageId": string;
+        "languageTitle": string;
+        "loginBlock": boolean;
+        "loginLink": string;
+        "loginText": string;
+        "logoAlt": string;
+        "logoTitle": string;
+        "nonEuLabel": string;
+        "searchBlock": boolean;
+        "searchPlaceholder": string;
+        "searchText": string;
+        "styleClass": string;
+        "theme": string;
     }
     interface EclSocialMediaShare {
         "description": string;
@@ -651,6 +683,12 @@ declare global {
         prototype: HTMLEclLabelElement;
         new (): HTMLEclLabelElement;
     };
+    interface HTMLEclLanguageItemElement extends Components.EclLanguageItem, HTMLStencilElement {
+    }
+    var HTMLEclLanguageItemElement: {
+        prototype: HTMLEclLanguageItemElement;
+        new (): HTMLEclLanguageItemElement;
+    };
     interface HTMLEclLinkElement extends Components.EclLink, HTMLStencilElement {
     }
     var HTMLEclLinkElement: {
@@ -722,6 +760,12 @@ declare global {
     var HTMLEclSelectElement: {
         prototype: HTMLEclSelectElement;
         new (): HTMLEclSelectElement;
+    };
+    interface HTMLEclSiteHeaderElement extends Components.EclSiteHeader, HTMLStencilElement {
+    }
+    var HTMLEclSiteHeaderElement: {
+        prototype: HTMLEclSiteHeaderElement;
+        new (): HTMLEclSiteHeaderElement;
     };
     interface HTMLEclSocialMediaShareElement extends Components.EclSocialMediaShare, HTMLStencilElement {
     }
@@ -796,6 +840,7 @@ declare global {
         "ecl-inpage-navigation-item": HTMLEclInpageNavigationItemElement;
         "ecl-input": HTMLEclInputElement;
         "ecl-label": HTMLEclLabelElement;
+        "ecl-language-item": HTMLEclLanguageItemElement;
         "ecl-link": HTMLEclLinkElement;
         "ecl-media-container": HTMLEclMediaContainerElement;
         "ecl-message": HTMLEclMessageElement;
@@ -808,6 +853,7 @@ declare global {
         "ecl-rating-star": HTMLEclRatingStarElement;
         "ecl-search-form": HTMLEclSearchFormElement;
         "ecl-select": HTMLEclSelectElement;
+        "ecl-site-header": HTMLEclSiteHeaderElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
         "ecl-social-media-share-item": HTMLEclSocialMediaShareItemElement;
         "ecl-spinner": HTMLEclSpinnerElement;
@@ -1025,6 +1071,7 @@ declare namespace LocalJSX {
         "invalidIcon"?: string;
         "invalidText"?: string;
         "label"?: string;
+        "labelClass"?: string;
         "name"?: string;
         "optionalText"?: string;
         "required"?: boolean;
@@ -1076,6 +1123,7 @@ declare namespace LocalJSX {
         "eclScript"?: boolean;
         "helperId"?: string;
         "helperText"?: string;
+        "inputClass"?: string;
         "inputId"?: string;
         "invalid"?: boolean;
         "label"?: string;
@@ -1097,6 +1145,14 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "variant"?: string;
+    }
+    interface EclLanguageItem {
+        "active"?: boolean;
+        "langCode"?: string;
+        "language"?: string;
+        "path"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
     }
     interface EclLink {
         "external"?: boolean;
@@ -1230,6 +1286,28 @@ declare namespace LocalJSX {
         "theme"?: string;
         "width"?: string;
     }
+    interface EclSiteHeader {
+        "closeLabel"?: string;
+        "eclScript"?: boolean;
+        "euLabel"?: string;
+        "langCode"?: string;
+        "language"?: string;
+        "languageAriaLabel"?: string;
+        "languageBlock"?: boolean;
+        "languageId"?: string;
+        "languageTitle"?: string;
+        "loginBlock"?: boolean;
+        "loginLink"?: string;
+        "loginText"?: string;
+        "logoAlt"?: string;
+        "logoTitle"?: string;
+        "nonEuLabel"?: string;
+        "searchBlock"?: boolean;
+        "searchPlaceholder"?: string;
+        "searchText"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclSocialMediaShare {
         "description"?: string;
         "styleClass"?: string;
@@ -1312,6 +1390,7 @@ declare namespace LocalJSX {
         "ecl-inpage-navigation-item": EclInpageNavigationItem;
         "ecl-input": EclInput;
         "ecl-label": EclLabel;
+        "ecl-language-item": EclLanguageItem;
         "ecl-link": EclLink;
         "ecl-media-container": EclMediaContainer;
         "ecl-message": EclMessage;
@@ -1324,6 +1403,7 @@ declare namespace LocalJSX {
         "ecl-rating-star": EclRatingStar;
         "ecl-search-form": EclSearchForm;
         "ecl-select": EclSelect;
+        "ecl-site-header": EclSiteHeader;
         "ecl-social-media-share": EclSocialMediaShare;
         "ecl-social-media-share-item": EclSocialMediaShareItem;
         "ecl-spinner": EclSpinner;
@@ -1367,6 +1447,7 @@ declare module "@stencil/core" {
             "ecl-inpage-navigation-item": LocalJSX.EclInpageNavigationItem & JSXBase.HTMLAttributes<HTMLEclInpageNavigationItemElement>;
             "ecl-input": LocalJSX.EclInput & JSXBase.HTMLAttributes<HTMLEclInputElement>;
             "ecl-label": LocalJSX.EclLabel & JSXBase.HTMLAttributes<HTMLEclLabelElement>;
+            "ecl-language-item": LocalJSX.EclLanguageItem & JSXBase.HTMLAttributes<HTMLEclLanguageItemElement>;
             "ecl-link": LocalJSX.EclLink & JSXBase.HTMLAttributes<HTMLEclLinkElement>;
             "ecl-media-container": LocalJSX.EclMediaContainer & JSXBase.HTMLAttributes<HTMLEclMediaContainerElement>;
             "ecl-message": LocalJSX.EclMessage & JSXBase.HTMLAttributes<HTMLEclMessageElement>;
@@ -1379,6 +1460,7 @@ declare module "@stencil/core" {
             "ecl-rating-star": LocalJSX.EclRatingStar & JSXBase.HTMLAttributes<HTMLEclRatingStarElement>;
             "ecl-search-form": LocalJSX.EclSearchForm & JSXBase.HTMLAttributes<HTMLEclSearchFormElement>;
             "ecl-select": LocalJSX.EclSelect & JSXBase.HTMLAttributes<HTMLEclSelectElement>;
+            "ecl-site-header": LocalJSX.EclSiteHeader & JSXBase.HTMLAttributes<HTMLEclSiteHeaderElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
             "ecl-social-media-share-item": LocalJSX.EclSocialMediaShareItem & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareItemElement>;
             "ecl-spinner": LocalJSX.EclSpinner & JSXBase.HTMLAttributes<HTMLEclSpinnerElement>;

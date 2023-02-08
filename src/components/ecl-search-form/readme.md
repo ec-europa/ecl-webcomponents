@@ -29,6 +29,10 @@
 
 ## Dependencies
 
+### Used by
+
+ - [ecl-site-header](../ecl-site-header)
+
 ### Depends on
 
 - [ecl-form-group](../ecl-form-group)
@@ -45,6 +49,7 @@ graph TD;
   ecl-search-form --> ecl-icon
   ecl-form-group --> ecl-icon
   ecl-input --> ecl-icon
+  ecl-site-header --> ecl-search-form
   style ecl-search-form fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

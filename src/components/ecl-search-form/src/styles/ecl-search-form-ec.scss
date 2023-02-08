@@ -2,8 +2,8 @@
 
 @use '@ecl/vanilla-component-search-form/search-form-ec';
 
-:host {
-  display: flex;
+.ecl-search-form__text-input .ecl-text-input {
+  width: 100% !important;
 }
 
 .ecl-search-form__button.sc-ecl-search-form-ec {
@@ -19,4 +19,8 @@
     padding-inline-start: calc(1rem - 1px) !important;
     padding-inline-end: calc(1rem - 1px) !important;
   }
+}
+
+.ecl-search-form__text-input.sc-ecl-search-form-ec {
+  border-inline-end-width: 0 !important;
 }

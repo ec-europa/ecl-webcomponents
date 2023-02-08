@@ -1,0 +1,254 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-site-header renders 1`] = `
+<ecl-site-header ecl-script="" eu-label="Official EU languages:" lang-code="en" language="english" language-aria-label="Choose language" language-block="" language-id="language-switcher" language-title="Choose your language" login-block="" login-link="/example.html" login-text="Log in" logo-alt="European Commission" logo-title="European commission" non-eu-label="Other languages:" search-block="" search-placeholder="Placeholder text" search-text="search" theme="ec">
+  <!---->
+  <header class="ecl-site-header">
+    <div class="ecl-site-header__header">
+      <div class="ecl-container ecl-site-header__container">
+        <div class="ecl-site-header__top" data-ecl-site-header-top>
+          <ecl-link style-class="ecl-site-header__logo-link sc-ecl-site-header-ec" variant="standalone">
+            <img alt="European Commission" class="ecl-site-header__logo-image ecl-site-header__logo-image-desktop" src="/build/images/ec/logos/logo-ec--en.svg" title="European commission">
+          </ecl-link>
+          <div class="ecl-site-header__action">
+            <div class="ecl-site-header__login-container">
+              <a class="ecl-button ecl-button--ghost ecl-site-header__login-toggle" href="/example.html">
+                <ecl-icon icon="log-in" size="s" style-class="ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
+                Log in
+              </a>
+            </div>
+            <div class="ecl-site-header__language">
+              <a aria-controls="language-switcher" aria-label="Choose language" class="ecl-button ecl-button--ghost ecl-site-header__language-selector" data-ecl-language-selector>
+                <span class="ecl-site-header__language-icon">
+                  <ecl-icon icon="language" size="s" style-class="ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
+                  <span class="ecl-site-header__language-code">
+                    en
+                  </span>
+                  english
+                </span>
+              </a>
+              <div aria-labelledby="ecl-site-header__language-title" aria-modal="true" class="ecl-site-header__language-container" data-ecl-language-list-overlay hidden="" id="language-switcher" role="dialog">
+                <div class="ecl-site-header__language-header">
+                  <div class="ecl-site-header__language-title" id="ecl-site-header__language-title">
+                    Choose your language
+                  </div>
+                  <button class="ecl-button ecl-button--ghost ecl-site-header__language-close" data-ecl-language-list-close type="submit">
+                    <span class="ecl-button__container">
+                      <span class="ecl-u-sr-only" data-ecl-label="true"></span>
+                      <ecl-icon data-ecl-icon icon="close-filled" size="s" slot="icon-after" style-class="ecl-button__icon ecl-button__icon--after sc-ecl-site-header-ec"></ecl-icon>
+                    </span>
+                  </button>
+                </div>
+                <div class="ecl-site-header__language-content">
+                  <div class="ecl-site-header__language-category" data-ecl-language-list-eu>
+                    <div class="ecl-site-header__language-category-title">
+                      Official EU languages:
+                    </div>
+                    <ul class="ecl-site-header__language-list">
+                      <ecl-language-item lang-code="bg" language="български" path="/example.html" slot="eu-category">
+                        <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                            <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
+                              bg
+                            </span>
+                            <span class="ecl-site-header__language-link-label sc-ecl-site-header-ec">
+                              български
+                            </span>
+                          </a>
+                        </li>
+                      </ecl-language-item>
+                      <ecl-language-item lang-code="es" language="español" path="/example.html" slot="eu-category">
+                        <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                            <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
+                              es
+                            </span>
+                            <span class="ecl-site-header__language-link-label sc-ecl-site-header-ec">
+                              español
+                            </span>
+                          </a>
+                        </li>
+                      </ecl-language-item>
+                      <ecl-language-item lang-code="cs" language="čeština" path="/example.html" slot="eu-category">
+                        <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                            <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
+                              cs
+                            </span>
+                            <span class="ecl-site-header__language-link-label sc-ecl-site-header-ec">
+                              čeština
+                            </span>
+                          </a>
+                        </li>
+                      </ecl-language-item>
+                      <ecl-language-item lang-code="da" language="dansk" path="/example.html" slot="eu-category">
+                        <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                            <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
+                              da
+                            </span>
+                            <span class="ecl-site-header__language-link-label sc-ecl-site-header-ec">
+                              dansk
+                            </span>
+                          </a>
+                        </li>
+                      </ecl-language-item>
+                      <ecl-language-item lang-code="de" language="Deutsch" path="/example.html" slot="eu-category">
+                        <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                            <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
+                              de
+                            </span>
+                            <span class="ecl-site-header__language-link-label sc-ecl-site-header-ec">
+                              Deutsch
+                            </span>
+                          </a>
+                        </li>
+                      </ecl-language-item>
+                      <ecl-language-item lang-code="et" language="eesti" path="/example.html" slot="eu-category">
+                        <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                            <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
+                              et
+                            </span>
+                            <span class="ecl-site-header__language-link-label sc-ecl-site-header-ec">
+                              eesti
+                            </span>
+                          </a>
+                        </li>
+                      </ecl-language-item>
+                      <ecl-language-item lang-code="el" language="ελληνικά" path="/example.html" slot="eu-category">
+                        <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                            <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
+                              el
+                            </span>
+                            <span class="ecl-site-header__language-link-label sc-ecl-site-header-ec">
+                              ελληνικά
+                            </span>
+                          </a>
+                        </li>
+                      </ecl-language-item>
+                      <ecl-language-item active="" lang-code="en" language="English" path="/example.html" slot="eu-category">
+                        <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link ecl-site-header__language-link--active sc-ecl-site-header-ec" href="/example.html">
+                            <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
+                              en
+                            </span>
+                            <span class="ecl-site-header__language-link-label sc-ecl-site-header-ec">
+                              English
+                            </span>
+                          </a>
+                        </li>
+                      </ecl-language-item>
+                      <ecl-language-item lang-code="fr" language="français" path="/example.html" slot="eu-category">
+                        <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                            <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
+                              fr
+                            </span>
+                            <span class="ecl-site-header__language-link-label sc-ecl-site-header-ec">
+                              français
+                            </span>
+                          </a>
+                        </li>
+                      </ecl-language-item>
+                      <ecl-language-item lang-code="ga" language="Gaeilge" path="/example.html" slot="eu-category">
+                        <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                            <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
+                              ga
+                            </span>
+                            <span class="ecl-site-header__language-link-label sc-ecl-site-header-ec">
+                              Gaeilge
+                            </span>
+                          </a>
+                        </li>
+                      </ecl-language-item>
+                      <ecl-language-item lang-code="hr" language="hrvatski" path="/example.html" slot="eu-category">
+                        <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                            <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
+                              hr
+                            </span>
+                            <span class="ecl-site-header__language-link-label sc-ecl-site-header-ec">
+                              hrvatski
+                            </span>
+                          </a>
+                        </li>
+                      </ecl-language-item>
+                      <ecl-language-item lang-code="it" language="italiano" path="/example.html" slot="eu-category">
+                        <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                            <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
+                              it
+                            </span>
+                            <span class="ecl-site-header__language-link-label sc-ecl-site-header-ec">
+                              italiano
+                            </span>
+                          </a>
+                        </li>
+                      </ecl-language-item>
+                    </ul>
+                  </div>
+                  <div class="ecl-site-header__language-category" data-ecl-language-list-non-eu>
+                    <div class="ecl-site-header__language-category-title">
+                      Other languages:
+                    </div>
+                    <ul class="ecl-site-header__language-list">
+                      <ecl-language-item lang-code="zh" language="中文" path="/example.html" slot="non-eu-category">
+                        <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                            <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
+                              zh
+                            </span>
+                            <span class="ecl-site-header__language-link-label sc-ecl-site-header-ec">
+                              中文
+                            </span>
+                          </a>
+                        </li>
+                      </ecl-language-item>
+                      <ecl-language-item lang-code="tr" language="Türk" path="/example.html" slot="non-eu-category">
+                        <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                            <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
+                              tr
+                            </span>
+                            <span class="ecl-site-header__language-link-label sc-ecl-site-header-ec">
+                              Türk
+                            </span>
+                          </a>
+                        </li>
+                      </ecl-language-item>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ecl-site-header__search-container">
+              <a aria-controls="search-form-id" aria-expanded="false" class="ecl-button ecl-button--ghost ecl-site-header__search-toggle" data-ecl-search-toggle>
+                <ecl-icon icon="search" size="s" style-class="ecl-icon ecl-icon--s ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
+                search
+              </a>
+              <ecl-search-form button-aria-label="search" button-label="search" style-class="ecl-site-header__search sc-ecl-site-header-ec">
+                <form class="ecl-search-form ecl-site-header__search sc-ecl-site-header-ec" data-ecl-search-form role="search">
+                  <ecl-form-group style-class="sc-ecl-search-form-ec">
+                    <!---->
+                    <fieldset class="ecl-form-group sc-ecl-search-form-ec">
+                      <ecl-input input-class="ecl-search-form__text-input sc-ecl-search-form-ec" placeholder="Placeholder text" style-class="ecl-search-form__text-input sc-ecl-search-form-ec" theme="ec" type="search" width="m"></ecl-input>
+                    </fieldset>
+                  </ecl-form-group>
+                  <ecl-button aria-label="search" style-class="ecl-search-form__button sc-ecl-search-form-ec" type="submit">
+                    search
+                    <ecl-icon icon="search" size="xs" slot="icon-after" style-class="sc-ecl-search-form-ec"></ecl-icon>
+                  </ecl-button>
+                </form>
+              </ecl-search-form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</ecl-site-header>
+`;

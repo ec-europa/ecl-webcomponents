@@ -16,6 +16,7 @@
 | `eclScript`          | `ecl-script`           |             | `boolean` | `false`     |
 | `helperId`           | `helper-id`            |             | `string`  | `undefined` |
 | `helperText`         | `helper-text`          |             | `string`  | `undefined` |
+| `inputClass`         | `input-class`          |             | `string`  | `undefined` |
 | `inputId`            | `input-id`             |             | `string`  | `undefined` |
 | `invalid`            | `invalid`              |             | `boolean` | `false`     |
 | `label`              | `label`                |             | `string`  | `undefined` |

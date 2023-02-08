@@ -15,6 +15,7 @@ export class EclInput {
   @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
+  @Prop() inputClass: string;
   @Prop() eclScript: boolean = false;
   @Prop() withUtils: boolean = false;
   @Prop() disabled: boolean = false;
@@ -80,6 +81,9 @@ export class EclInput {
       if (this.disabled) {
         inputClasses.push('ecl-text-input--disabled');
       }
+    }
+    if (this.inputClass) {
+      inputClasses.push(this.inputClass);
     }
 
     return inputClasses.join(' ');
