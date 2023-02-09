@@ -1,0 +1,9 @@
+@use '@ecl/theme-eu';
+@use '@ecl/vanilla-component-fact-figures/fact-figures-eu';
+
+:host {
+  @extend .ecl-fact-figures__item;
+
+  margin: 0;
+  padding: 0;
+}

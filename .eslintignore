@@ -1,0 +1,9 @@
+.changelog
+.tmp
+**/_imports
+**/build
+**/dist
+**/exports
+**/node_modules
+**/static
+loader

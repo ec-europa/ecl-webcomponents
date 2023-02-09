@@ -1,0 +1,38 @@
+{
+  "name": "@ecl/web-components-site-header",
+  "author": "European Commission",
+  "license": "EUPL-1.2",
+  "version": "0.0.0",
+  "description": "ECL Site header",
+  "main": "ecl-site-header.tsx",
+  "private": true,
+  "scripts": {
+    "build:copy": "cross-env ecl-builder copy", 
+    "build:scripts": "cross-env ecl-builder scripts",   
+    "build:styles": "cross-env ecl-builder styles",
+    "build": "run-s clean build:*",
+    "clean": "rimraf build",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@ecl/builder": "3.7.0",
+    "@ecl/vanilla-component-site-header": "3.7.0",
+    "@ecl/vanilla-component-button": "3.7.0",
+    "@ecl/resources-ec-logo": "3.7.0",
+    "@ecl/resources-eu-logo": "3.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planctus/ecl-webcomponents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/planctus/ecl-webcomponents/issues"
+  },
+  "homepage": "https://github.com/planctus/ecl-webcomponents",
+  "keywords": [
+    "ecl",
+    "europa-component-library",
+    "design-system",
+    "web-components"
+  ]
+}

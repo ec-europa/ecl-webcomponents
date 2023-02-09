@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-social-media-share renders 1`] = `
+<ecl-social-media-share description="Share on social media" theme="ec" variant="horizontal">
+  <!---->
+  <div class="ecl-social-media-share ecl-social-media-share--horizontal">
+    <p class="ecl-social-media-share__description">
+      Share on social media
+    </p>
+    <ul class="ecl-social-media-share__list">
+      <li class="ecl-social-media-share__item sc-ecl-social-media-share-ec">
+        <ecl-popover ecl-script="" icon="share" icon-size="s" item-id="popover-example" list="" theme="ec" toggle-label="Popover">
+          <!---->
+          <div class="ecl-popover">
+            <a aria-controls="popover-example" aria-expanded="false" class="ecl-link ecl-link--standalone ecl-popover__toggle ecl-social-media-share__link sc-ecl-social-media-share-ec" data-ecl-popover-toggle="data-ecl-popover-toggle">
+              <ecl-icon style-class="ecl-link__icon--before">
+                <svg class="ecl-icon ecl-icon--s ecl-link__icon--before">
+                  <use xlink:href="/build/images/ec/icons.svg#share"></use>
+                </svg>
+              </ecl-icon>
+              Popover
+            </a>
+            <div class="ecl-popover__container" hidden="" id="popover-example">
+              <div class="ecl-popover__content">
+                <ul class="ecl-popover__list"></ul>
+              </div>
+            </div>
+          </div>
+        </ecl-popover>
+      </li>
+    </ul>
+  </div>
+</ecl-social-media-share>
+`;

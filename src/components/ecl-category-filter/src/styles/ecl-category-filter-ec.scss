@@ -1,0 +1,7 @@
+@use '@ecl/theme-ec';
+
+@use '@ecl/vanilla-component-category-filter/category-filter-ec';
+
+.ecl-category-filter__item-icon.sc-ecl-category-filter-ec {
+  margin: -3px 0 !important;
+}

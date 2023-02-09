@@ -1,0 +1,15 @@
+@use '@ecl/theme-eu';
+
+@use '@ecl/vanilla-component-link/link-eu';
+
+.ecl-link .ecl-icon {
+  vertical-align: middle;
+}
+
+.ecl-link--icon-after .ecl-icon.sc-ecl-icon-eu {
+  margin-inline-start: 0.5rem !important;
+}
+
+.ecl-link--icon-before .ecl-icon.sc-ecl-icon-eu {
+  margin-inline-end: 0.5rem !important;
+}

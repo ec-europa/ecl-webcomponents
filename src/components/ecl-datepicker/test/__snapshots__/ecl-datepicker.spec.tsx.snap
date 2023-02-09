@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-datepicker renders 1`] = `
+<ecl-datepicker default-value="11-10-21" input-id="ecl-datepicker" placeholder="DD-MM-YYYY" required="">
+  <div class="ecl-datepicker">
+    <input autocomplete="off" class="ecl-datepicker__field ecl-text-input ecl-text-input--s" data-ecl-datepicker-toggle id="ecl-datepicker" placeholder="DD-MM-YYYY" required="" value="11-10-21">
+    <ecl-icon style-class="ecl-datepicker__icon sc-ecl-datepicker-ec">
+      <svg class="ecl-datepicker__icon ecl-icon ecl-icon--s sc-ecl-datepicker-ec">
+        <use xlink:href="/build/images/ec/icons.svg#calendar"></use>
+      </svg>
+    </ecl-icon>
+  </div>
+</ecl-datepicker>
+`;

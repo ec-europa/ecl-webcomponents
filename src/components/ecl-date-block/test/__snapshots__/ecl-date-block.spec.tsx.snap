@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-date-block renders 1`] = `
+<ecl-date-block date-time="2022-09-24" day="24" month="Sep" theme="ec" variant="default" year="2022">
+  <time class="ecl-date-block ecl-date-block--default">
+    <span class="ecl-date-block__daytime">
+      2022-09-24
+    </span>
+    <span aria-hidden="true" class="ecl-date-block__day">
+      24
+    </span>
+    <abbr aria-hidden="true" class="ecl-date-block__month">
+      Sep
+    </abbr>
+    <span aria-hidden="true" class="ecl-date-block__year">
+      2022
+    </span>
+  </time>
+</ecl-date-block>
+`;

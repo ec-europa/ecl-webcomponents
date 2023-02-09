@@ -1,0 +1,35 @@
+@use '@ecl/theme-eu';
+
+@use '@ecl/vanilla-component-icon/icon-eu';
+@use '@ecl/vanilla-component-link/link-eu';
+@use '@ecl/vanilla-component-tag/tag-eu';
+
+.ecl-tag a {
+  color: #fff;
+}
+
+.ecl-tag__icon--external {
+  margin-inline-start: 0.5rem !important;
+  position: relative;
+  top: 1px;
+}
+
+.ecl-tag .ecl-icon {
+  fill: #fff;
+}
+
+.ecl-tag__icon-close {
+  fill: white;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+}
+
+.ecl-tag__icon-close-filled {
+  fill: white;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}

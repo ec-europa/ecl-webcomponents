@@ -1,0 +1,15 @@
+@use '@ecl/theme-ec';
+
+@use '@ecl/vanilla-component-breadcrumb/breadcrumb-ec';
+
+.ecl-breadcrumb__icon.sc-ecl-breadcrumb-ec {
+  margin-inline-end: 0.5rem !important;
+}
+
+.ecl-breadcrumb__ellipsis.sc-ecl-breadcrumb-ec {
+  padding: 0 !important;
+}
+
+.ecl-breadcrumb__ellipsis .ecl-icon {
+  margin-inline-start: 0.5rem !important;
+}
