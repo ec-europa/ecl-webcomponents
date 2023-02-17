@@ -3,7 +3,6 @@ import { Component, h, Prop} from '@stencil/core';
 @Component({
   tag: 'ecl-breadcrumb-item',
   shadow: false,
-  scoped: true,
 })
 export class EclBreadcrumbItem {
   @Prop() theme: string = 'ec';
@@ -23,6 +22,10 @@ export class EclBreadcrumbItem {
 
     if (this.ellipsis) {
       styleClasses.push('ecl-breadcrumb__segment--ellipsis');
+    }
+
+    if (this.currentPage) {
+      styleClasses.push('ecl-breadcrumb__current-page');
     }
 
     return styleClasses.join(' ');

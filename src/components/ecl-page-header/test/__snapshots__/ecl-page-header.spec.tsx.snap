@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-page-header renders 1`] = `
+<ecl-page-header header-title="Page title" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" meta="Meta info | DD Month YYYY" theme="ec" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" thumbnail-alt="Eu map" variant="negative">
+  <!---->
+  <div class="ecl-page-header ecl-page-header--image ecl-page-header--negative">
+    <div aria-hidden="true" class="ecl-page-header__background" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg);"></div>
+    <div class="ecl-container">
+      <ecl-breadcrumb ecl-script="" slot="breadcrumb" theme="ec" variant="negative">
+        <ecl-breadcrumb-item path="/example.html" theme="ec" variant="negative">
+          Home
+        </ecl-breadcrumb-item>
+        <ecl-breadcrumb-item button-aria-label="Click to expand" ellipsis="" style-class="ecl-breadcrumb__segment--ellipsis"></ecl-breadcrumb-item>
+        <ecl-breadcrumb-item path="/example.html" theme="ec" variant="negative">
+          About the European Commission
+        </ecl-breadcrumb-item>
+        <ecl-breadcrumb-item path="/example.html" theme="ec" variant="negative">
+          Organisational structure
+        </ecl-breadcrumb-item>
+        <ecl-breadcrumb-item path="/example.html" theme="ec" variant="negative">
+          How the Commission is organised
+        </ecl-breadcrumb-item>
+        <ecl-breadcrumb-item current-page="" style-class="ecl-breadcrumb__current-page" theme="ec" variant="negative">
+          News
+        </ecl-breadcrumb-item>
+      </ecl-breadcrumb>
+      <div class="ecl-page-header__meta">
+        <span class="ecl-page-header__meta-item">
+          Meta info | DD Month YYYY
+        </span>
+      </div>
+      <div class="ecl-page-header__title-container">
+        <h1 class="ecl-page-header__title">
+          Page title
+        </h1>
+      </div>
+      <div class="ecl-page-header__description-container">
+        <img alt="Eu map" class="ecl-page-header__description-thumbnail" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
+        <p class="ecl-page-header__description">
+          Lorem ipsum dolor sit amet,
+          <a class="ecl-link" href="/example.html">
+            consectetur adipiscing elit
+          </a>
+          . Quisque nec ullamcorper mi. Morbi interdum fermentum tempus. Nam nec rhoncus risus,
+          <a class="ecl-link" href="/example.html">
+            eget dictum elit
+          </a>
+          . Vestibulum gravida tincidunt venenatis
+        </p>
+      </div>
+    </div>
+  </div>
+</ecl-page-header>
+`;

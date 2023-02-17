@@ -8,7 +8,7 @@ const getArgTypes = () => {
   return {
     variant: {
       type: { name: 'select' },
-      options: ['default', 'megative'],
+      options: ['default', 'negative'],
       description: "Breadcrumb variant",
     },
   };

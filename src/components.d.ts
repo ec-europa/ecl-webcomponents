@@ -386,6 +386,17 @@ export namespace Components {
         "theme": string;
         "variant": string;
     }
+    interface EclPageHeader {
+        "headerTitle": string;
+        "image": string;
+        "meta": string;
+        "overlay": string;
+        "styleClass": string;
+        "theme": string;
+        "thumbnail": string;
+        "thumbnailAlt": string;
+        "variant": string;
+    }
     interface EclPopover {
         "eclScript": boolean;
         "icon": string;
@@ -769,6 +780,12 @@ declare global {
         prototype: HTMLEclPageBannerElement;
         new (): HTMLEclPageBannerElement;
     };
+    interface HTMLEclPageHeaderElement extends Components.EclPageHeader, HTMLStencilElement {
+    }
+    var HTMLEclPageHeaderElement: {
+        prototype: HTMLEclPageHeaderElement;
+        new (): HTMLEclPageHeaderElement;
+    };
     interface HTMLEclPopoverElement extends Components.EclPopover, HTMLStencilElement {
     }
     var HTMLEclPopoverElement: {
@@ -893,6 +910,7 @@ declare global {
         "ecl-news-ticker": HTMLEclNewsTickerElement;
         "ecl-news-ticker-item": HTMLEclNewsTickerItemElement;
         "ecl-page-banner": HTMLEclPageBannerElement;
+        "ecl-page-header": HTMLEclPageHeaderElement;
         "ecl-popover": HTMLEclPopoverElement;
         "ecl-popover-item": HTMLEclPopoverItemElement;
         "ecl-rating-field": HTMLEclRatingFieldElement;
@@ -1290,6 +1308,17 @@ declare namespace LocalJSX {
         "theme"?: string;
         "variant"?: string;
     }
+    interface EclPageHeader {
+        "headerTitle"?: string;
+        "image"?: string;
+        "meta"?: string;
+        "overlay"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "thumbnail"?: string;
+        "thumbnailAlt"?: string;
+        "variant"?: string;
+    }
     interface EclPopover {
         "eclScript"?: boolean;
         "icon"?: string;
@@ -1477,6 +1506,7 @@ declare namespace LocalJSX {
         "ecl-news-ticker": EclNewsTicker;
         "ecl-news-ticker-item": EclNewsTickerItem;
         "ecl-page-banner": EclPageBanner;
+        "ecl-page-header": EclPageHeader;
         "ecl-popover": EclPopover;
         "ecl-popover-item": EclPopoverItem;
         "ecl-rating-field": EclRatingField;
@@ -1536,6 +1566,7 @@ declare module "@stencil/core" {
             "ecl-news-ticker": LocalJSX.EclNewsTicker & JSXBase.HTMLAttributes<HTMLEclNewsTickerElement>;
             "ecl-news-ticker-item": LocalJSX.EclNewsTickerItem & JSXBase.HTMLAttributes<HTMLEclNewsTickerItemElement>;
             "ecl-page-banner": LocalJSX.EclPageBanner & JSXBase.HTMLAttributes<HTMLEclPageBannerElement>;
+            "ecl-page-header": LocalJSX.EclPageHeader & JSXBase.HTMLAttributes<HTMLEclPageHeaderElement>;
             "ecl-popover": LocalJSX.EclPopover & JSXBase.HTMLAttributes<HTMLEclPopoverElement>;
             "ecl-popover-item": LocalJSX.EclPopoverItem & JSXBase.HTMLAttributes<HTMLEclPopoverItemElement>;
             "ecl-rating-field": LocalJSX.EclRatingField & JSXBase.HTMLAttributes<HTMLEclRatingFieldElement>;
