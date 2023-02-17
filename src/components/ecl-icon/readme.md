@@ -34,6 +34,8 @@
  - [ecl-file-translations](../ecl-file)
  - [ecl-file-translations-item](../ecl-file)
  - [ecl-form-group](../ecl-form-group)
+ - [ecl-gallery](../ecl-gallery)
+ - [ecl-gallery-item](../ecl-gallery)
  - [ecl-hero-banner](../ecl-hero-banner)
  - [ecl-inpage-navigation](../ecl-inpage-navigation)
  - [ecl-input](../ecl-input)
@@ -67,6 +69,8 @@ graph TD;
   ecl-file-translations --> ecl-icon
   ecl-file-translations-item --> ecl-icon
   ecl-form-group --> ecl-icon
+  ecl-gallery --> ecl-icon
+  ecl-gallery-item --> ecl-icon
   ecl-hero-banner --> ecl-icon
   ecl-inpage-navigation --> ecl-icon
   ecl-input --> ecl-icon

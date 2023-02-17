@@ -48,7 +48,7 @@ export class EclTimelineItem {
       }
       { this.type === 'toggle' ?
         <ecl-button
-          type="secondary"
+          variant="secondary"
           data-ecl-timeline-button
         >
           <ecl-icon

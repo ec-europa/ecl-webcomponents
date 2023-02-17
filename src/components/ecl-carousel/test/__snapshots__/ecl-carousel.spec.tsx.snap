@@ -3,7 +3,7 @@
 exports[`ecl-carousel renders 1`] = `
 <ecl-carousel carousel-id="ecl-carousel-demo" ecl-script="" slides-number="3">
   <!---->
-  <div class="ecl-carousel" data-ecl-auto-init="Carousel">
+  <div class="ecl-carousel" data-ecl-carosuel>
     <div class="ecl-carousel__container">
       <div class="ecl-carousel__slides" id="ecl-carousel-demo">
         <ecl-carousel-item banner-title="Duis vitae pulvinar turpis" banner-variant="text-box" centered="false" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" size="l" theme="ec">

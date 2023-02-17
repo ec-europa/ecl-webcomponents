@@ -59,6 +59,7 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
         "type": string;
+        "variant": string;
     }
     interface EclCarousel {
         "carouselId": string;
@@ -221,6 +222,36 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
     }
+    interface EclGallery {
+        "closeLabel": string;
+        "counterLabel": string;
+        "counterSeparator": string;
+        "description": string;
+        "downloadLabel": string;
+        "eclScript": boolean;
+        "footerLinkLabel": string;
+        "footerLinkPath": string;
+        "meta": string;
+        "nextLabel": string;
+        "prevLabel": string;
+        "shareLabel": string;
+        "slidesNumber": number;
+        "styleClass": string;
+        "theme": string;
+        "viewAllLabel": string;
+    }
+    interface EclGalleryItem {
+        "description": string;
+        "icon": string;
+        "imageAlt": string;
+        "mediaHref": string;
+        "mediaIframeHref": string;
+        "mediaSharePath": string;
+        "meta": string;
+        "styleClass": string;
+        "theme": string;
+        "type": string;
+    }
     interface EclHeroBanner {
         "bannerTitle": string;
         "centered": boolean;
@@ -298,6 +329,7 @@ export namespace Components {
     }
     interface EclLink {
         "external": boolean;
+        "name": string;
         "path": string;
         "styleClass": string;
         "theme": string;
@@ -647,6 +679,18 @@ declare global {
         prototype: HTMLEclFormGroupElement;
         new (): HTMLEclFormGroupElement;
     };
+    interface HTMLEclGalleryElement extends Components.EclGallery, HTMLStencilElement {
+    }
+    var HTMLEclGalleryElement: {
+        prototype: HTMLEclGalleryElement;
+        new (): HTMLEclGalleryElement;
+    };
+    interface HTMLEclGalleryItemElement extends Components.EclGalleryItem, HTMLStencilElement {
+    }
+    var HTMLEclGalleryItemElement: {
+        prototype: HTMLEclGalleryItemElement;
+        new (): HTMLEclGalleryItemElement;
+    };
     interface HTMLEclHeroBannerElement extends Components.EclHeroBanner, HTMLStencilElement {
     }
     var HTMLEclHeroBannerElement: {
@@ -834,6 +878,8 @@ declare global {
         "ecl-file-translations": HTMLEclFileTranslationsElement;
         "ecl-file-translations-item": HTMLEclFileTranslationsItemElement;
         "ecl-form-group": HTMLEclFormGroupElement;
+        "ecl-gallery": HTMLEclGalleryElement;
+        "ecl-gallery-item": HTMLEclGalleryItemElement;
         "ecl-hero-banner": HTMLEclHeroBannerElement;
         "ecl-icon": HTMLEclIconElement;
         "ecl-inpage-navigation": HTMLEclInpageNavigationElement;
@@ -917,6 +963,7 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "type"?: string;
+        "variant"?: string;
     }
     interface EclCarousel {
         "carouselId"?: string;
@@ -1079,6 +1126,36 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
     }
+    interface EclGallery {
+        "closeLabel"?: string;
+        "counterLabel"?: string;
+        "counterSeparator"?: string;
+        "description"?: string;
+        "downloadLabel"?: string;
+        "eclScript"?: boolean;
+        "footerLinkLabel"?: string;
+        "footerLinkPath"?: string;
+        "meta"?: string;
+        "nextLabel"?: string;
+        "prevLabel"?: string;
+        "shareLabel"?: string;
+        "slidesNumber"?: number;
+        "styleClass"?: string;
+        "theme"?: string;
+        "viewAllLabel"?: string;
+    }
+    interface EclGalleryItem {
+        "description"?: string;
+        "icon"?: string;
+        "imageAlt"?: string;
+        "mediaHref"?: string;
+        "mediaIframeHref"?: string;
+        "mediaSharePath"?: string;
+        "meta"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "type"?: string;
+    }
     interface EclHeroBanner {
         "bannerTitle"?: string;
         "centered"?: boolean;
@@ -1156,6 +1233,7 @@ declare namespace LocalJSX {
     }
     interface EclLink {
         "external"?: boolean;
+        "name"?: string;
         "path"?: string;
         "styleClass"?: string;
         "theme"?: string;
@@ -1384,6 +1462,8 @@ declare namespace LocalJSX {
         "ecl-file-translations": EclFileTranslations;
         "ecl-file-translations-item": EclFileTranslationsItem;
         "ecl-form-group": EclFormGroup;
+        "ecl-gallery": EclGallery;
+        "ecl-gallery-item": EclGalleryItem;
         "ecl-hero-banner": EclHeroBanner;
         "ecl-icon": EclIcon;
         "ecl-inpage-navigation": EclInpageNavigation;
@@ -1441,6 +1521,8 @@ declare module "@stencil/core" {
             "ecl-file-translations": LocalJSX.EclFileTranslations & JSXBase.HTMLAttributes<HTMLEclFileTranslationsElement>;
             "ecl-file-translations-item": LocalJSX.EclFileTranslationsItem & JSXBase.HTMLAttributes<HTMLEclFileTranslationsItemElement>;
             "ecl-form-group": LocalJSX.EclFormGroup & JSXBase.HTMLAttributes<HTMLEclFormGroupElement>;
+            "ecl-gallery": LocalJSX.EclGallery & JSXBase.HTMLAttributes<HTMLEclGalleryElement>;
+            "ecl-gallery-item": LocalJSX.EclGalleryItem & JSXBase.HTMLAttributes<HTMLEclGalleryItemElement>;
             "ecl-hero-banner": LocalJSX.EclHeroBanner & JSXBase.HTMLAttributes<HTMLEclHeroBannerElement>;
             "ecl-icon": LocalJSX.EclIcon & JSXBase.HTMLAttributes<HTMLEclIconElement>;
             "ecl-inpage-navigation": LocalJSX.EclInpageNavigation & JSXBase.HTMLAttributes<HTMLEclInpageNavigationElement>;

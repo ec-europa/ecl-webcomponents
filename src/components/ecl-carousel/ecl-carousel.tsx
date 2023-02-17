@@ -52,7 +52,7 @@ export class EclCarousel {
     return (
       <div
         class={this.getClass()}
-        data-ecl-auto-init="Carousel"
+        data-ecl-carosuel
       >
         <div class="ecl-carousel__container">
           <div

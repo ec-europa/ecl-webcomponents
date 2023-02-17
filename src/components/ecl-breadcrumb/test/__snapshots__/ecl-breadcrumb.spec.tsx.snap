@@ -12,7 +12,7 @@ exports[`ecl-breadcrumb renders 1`] = `
         </ecl-link>
       </li>
       <li class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec" data-ecl-breadcrumb-ellipsis="data-ecl-breadcrumb-ellipsis" data-ecl-breadcrumb-item="static">
-        <ecl-button aria-label="Click to expand" data-ecl-breadcrumb-ellipsis-button style-class="ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-ec" type="ghost">
+        <ecl-button aria-label="Click to expand" data-ecl-breadcrumb-ellipsis-button style-class="ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-ec" variant="ghost">
           ...
           <ecl-icon icon="corner-arrow" size="2xs" slot="icon-after" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec" transform="rotate-90"></ecl-icon>
         </ecl-button>

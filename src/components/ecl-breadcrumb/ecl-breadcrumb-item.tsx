@@ -77,7 +77,7 @@ export class EclBreadcrumbItem {
       { this.ellipsis ? 
         <ecl-button
           style-class={`ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-${this.theme}`}
-          type="ghost"
+          variant="ghost"
           data-ecl-breadcrumb-ellipsis-button
           aria-label={this.buttonAriaLabel}
         >

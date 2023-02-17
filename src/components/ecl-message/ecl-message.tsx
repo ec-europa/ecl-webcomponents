@@ -62,7 +62,8 @@ export class EclMessage {
         </ecl-icon>
         <div class="ecl-message__content">
           <ecl-button
-            type="ghost"
+            variant="ghost"
+            type="button"
             style-class={`ecl-message__close sc-ecl-message-${this.theme}`}
             data-ecl-message-close
           >

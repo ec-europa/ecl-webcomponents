@@ -63,8 +63,8 @@ export class EclSearchForm {
         </ecl-form-group>
         <ecl-button
           style-class={`ecl-search-form__button sc-ecl-search-form-${this.theme}`}
-          type="submit"
           aria-label={this.buttonAriaLabel}
+          variant="search"
         >
           {this.buttonLabel}
           <ecl-icon

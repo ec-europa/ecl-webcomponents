@@ -10,6 +10,7 @@
 | Property     | Attribute     | Description | Type      | Default     |
 | ------------ | ------------- | ----------- | --------- | ----------- |
 | `external`   | `external`    |             | `boolean` | `false`     |
+| `name`       | `name`        |             | `string`  | `undefined` |
 | `path`       | `path`        |             | `string`  | `undefined` |
 | `styleClass` | `style-class` |             | `string`  | `undefined` |
 | `theme`      | `theme`       |             | `string`  | `'ec'`      |
@@ -27,6 +28,7 @@
  - [ecl-description-list-definition](../ecl-description-list)
  - [ecl-file](../ecl-file)
  - [ecl-file-translations-item](../ecl-file)
+ - [ecl-gallery](../ecl-gallery)
  - [ecl-hero-banner](../ecl-hero-banner)
  - [ecl-inpage-navigation-item](../ecl-inpage-navigation)
  - [ecl-news-ticker-item](../ecl-news-ticker)
@@ -49,6 +51,7 @@ graph TD;
   ecl-description-list-definition --> ecl-link
   ecl-file --> ecl-link
   ecl-file-translations-item --> ecl-link
+  ecl-gallery --> ecl-link
   ecl-hero-banner --> ecl-link
   ecl-inpage-navigation-item --> ecl-link
   ecl-news-ticker-item --> ecl-link

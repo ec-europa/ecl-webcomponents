@@ -7,7 +7,7 @@ describe('ecl-button', () => {
     const page = await newSpecPage({
       components: [EclButton, EclIcon],
       html: `<ecl-button
-              type="primary"
+              variant="primary"
               data-ecl-button-icon
               theme="ec"
             >

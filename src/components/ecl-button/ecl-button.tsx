@@ -13,10 +13,20 @@ import { Component, Prop, h, Element } from '@stencil/core';
 export class EclButton {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() type: string = 'primary';
+  @Prop() type: string = 'submit';
+  @Prop() variant: string = 'primary';
   @Prop() theme: string = 'ec';
 
   componentDidRender() {
+    const dataAttrs = Object.keys(this.el.dataset);
+    if (dataAttrs) {
+      dataAttrs.forEach((attr) => {
+        const button = this.el.firstElementChild as HTMLElement;
+        button.dataset[attr] = '';
+        delete this.el.dataset[attr];
+      });
+    }
+
     if (this.el.getElementsByTagName('ecl-icon')[0] && this.el.querySelector('.ecl-icon')) {
       const slot = this.el.getElementsByTagName('ecl-icon')[0].getAttribute('slot');
       this.el.querySelector('.ecl-icon').classList.add('ecl-button__icon');
@@ -29,14 +39,17 @@ export class EclButton {
   getClass(): string {
     return [
       `ecl-button`,
-      `ecl-button--${this.type}`,
+      `ecl-button--${this.variant}`,
       this.styleClass
     ].join(' ');
   }
 
   render() {
     return (
-      <button class={this.getClass()}>
+      <button
+        class={this.getClass()}
+        type={this.type}
+      >
         <span class="ecl-button__container">
           <slot name="icon-before"></slot>
           <span class="ecl-button__label">

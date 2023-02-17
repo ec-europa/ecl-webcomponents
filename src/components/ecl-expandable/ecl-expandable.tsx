@@ -58,8 +58,9 @@ export class EclExpandable {
         class={this.getClass()}
       > 
         <ecl-button
-          type="secondary"
+          variant="secondary"
           style-class="ecl-expandable__toggle"
+          type="button"
           aria-controls={`${this.el.id}-content`}
           data-ecl-expandable-toggle
           data-ecl-label-expanded={this.labelExpanded}

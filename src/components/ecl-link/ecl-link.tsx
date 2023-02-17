@@ -19,6 +19,7 @@ export class EclLink {
   @Prop() variant: string = 'default';
   @Prop() titleAttr: string;
   @Prop() external: boolean = false;
+  @Prop() name: string;
 
   getClass(): string {
     const styleClasses = [
@@ -40,6 +41,14 @@ export class EclLink {
   }
 
   componentDidRender() {
+    const dataAttrs = Object.keys(this.el.dataset);
+    if (dataAttrs) {
+      dataAttrs.forEach((attr) => {
+        const link = this.el.firstElementChild as HTMLElement;
+        link.dataset[attr] = '';
+        delete this.el.dataset[attr];
+      });
+    }
     if (this.el.querySelector('ecl-icon')) {
       this.el.querySelector('ecl-icon svg').classList.add('ecl-link__icon');
       if (this.el.querySelector('ecl-icon').getAttribute('slot') === 'icon-after') {

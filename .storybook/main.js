@@ -23,6 +23,7 @@ if (!isProd) {
     path.resolve(`${__dirname}/../src/components/ecl-popover`),
     path.resolve(`${__dirname}/../src/components/ecl-datepicker`),
     path.resolve(`${__dirname}/../src/components/ecl-site-header`),
+    path.resolve(`${__dirname}/../src/components/ecl-gallery`),
   ];
 }
 

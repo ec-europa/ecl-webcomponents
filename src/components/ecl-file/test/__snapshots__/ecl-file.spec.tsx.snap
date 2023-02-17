@@ -6,7 +6,7 @@ exports[`ecl-file renders 1`] = `
   <ecl-file-translations hidden="" others="" theme="ec" toggle-label="Other languages" translations-total="3">
     <!---->
     <div class="ecl-file__translation-container sc-ecl-file-ec" data-ecl-file-translation-container>
-      <ecl-button data-ecl-file-translation-toggle styleclass="ecl-file__translation-toggle sc-ecl-file-ec" theme="ec" type="ghost">
+      <ecl-button data-ecl-file-translation-toggle styleclass="ecl-file__translation-toggle sc-ecl-file-ec" theme="ec" variant="ghost">
         Other languages (3)
         <ecl-icon icon="corener-arrow" size="fluid" styleclass="ecl-button__icon ecl-button__icon--after" transform="rotate-180"></ecl-icon>
       </ecl-button>

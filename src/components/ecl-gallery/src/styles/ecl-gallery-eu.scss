@@ -1,0 +1,26 @@
+@use '@ecl/theme-eu';
+
+@use '@ecl/vanilla-layout-grid/grid';
+@use '@ecl/vanilla-component-gallery/gallery-eu';
+
+.ecl-gallery__slider-previous,
+.ecl-gallery__slider-next,
+.ecl-gallery__close-button,
+.ecl-gallery__image-icon {
+  color: #fff !important;
+}
+
+.ecl-gallery__slider-previous *,
+.ecl-gallery__slider-next * {
+  margin-inline-start: 0.25rem;
+  vertical-align: middle;
+}
+
+.ecl-gallery__slider-previous * {
+  margin-inline-end: 0.25rem;
+}
+
+.ecl-gallery__close-button * {
+  margin-inline-start: 0.5rem;
+  margin-top: 0.25rem;
+}
