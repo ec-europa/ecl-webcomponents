@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-gallery renders 1`] = `
-<ecl-gallery close-label="Close" counter-label="Media files in this gallery" counter-separator="of" download-label="Download" ecl-script="" next-label="Next" prev-label="Previous" share-label="Share" view-all-label="View all">
+<ecl-gallery close-label="Close" counter-label="Media files in this gallery" counter-separator="of" download-label="Download" ecl-script="" next-label="Next" prev-label="Previous" share-label="Share" theme="ec" view-all-label="View all">
   <!---->
   <section class="ecl-gallery" data-ecl-gallery>
     <ul class="ecl-gallery__list">
@@ -78,7 +78,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <video class="ecl-gallery__image sc-ecl-gallery-ec" poster="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg">
+            <video class="ecl-gallery__image sc-ecl-gallery-ec" poster="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg" slot="video">
               <source src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4" type="video/mp4">
               <source src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm" type="video/webm">
               <track kind="captions" label="English" src="/captions/bunny-en.vtt" srclang="en"></track>

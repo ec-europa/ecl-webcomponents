@@ -9,7 +9,6 @@
 
 | Property          | Attribute           | Description | Type     | Default     |
 | ----------------- | ------------------- | ----------- | -------- | ----------- |
-| `description`     | `description`       |             | `string` | `undefined` |
 | `icon`            | `icon`              |             | `string` | `'video'`   |
 | `imageAlt`        | `image-alt`         |             | `string` | `undefined` |
 | `mediaHref`       | `media-href`        |             | `string` | `undefined` |

@@ -241,7 +241,6 @@ export namespace Components {
         "viewAllLabel": string;
     }
     interface EclGalleryItem {
-        "description": string;
         "icon": string;
         "imageAlt": string;
         "mediaHref": string;
@@ -1163,7 +1162,6 @@ declare namespace LocalJSX {
         "viewAllLabel"?: string;
     }
     interface EclGalleryItem {
-        "description"?: string;
         "icon"?: string;
         "imageAlt"?: string;
         "mediaHref"?: string;

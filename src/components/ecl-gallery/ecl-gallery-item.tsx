@@ -7,7 +7,6 @@ import { Component, h, Prop } from '@stencil/core';
 export class EclGalleryItem {
   @Prop() styleClass: string = '';
   @Prop() theme: string = 'ec';
-  @Prop() description: string;
   @Prop() imageAlt: string;
   @Prop() mediaHref: string;
   @Prop() mediaIframeHref: string;
@@ -48,7 +47,7 @@ export class EclGalleryItem {
           {...this.getLinkAttr()}
         >
           <figure class={`ecl-gallery__image-container sc-ecl-gallery-${this.theme}`}>
-            <slot></slot>
+            <slot name="video"></slot>
           { this.type !== 'html-video' ?
             <img 
               src={this.mediaHref}
@@ -67,7 +66,7 @@ export class EclGalleryItem {
               class={`ecl-gallery__description sc-ecl-gallery-${this.theme}`}
               data-ecl-gallery-description
             >
-              {this.description}
+              <slot></slot>
               <span
                 class={`ecl-gallery__meta sc-ecl-gallery-${this.theme}`}
                 data-ecl-gallery-meta
