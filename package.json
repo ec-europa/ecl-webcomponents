@@ -31,6 +31,7 @@
     "build:stencil": "stencil build",
     "build:storybook": "NODE_ENV=production build-storybook -o build",
     "build:copy": "scripts/copy-assets.sh",
+    "build:playground": "ncp dist/ecl-webcomponents playground/ecl-webcomponents",
     "lint:js": "eslint . --ext .js",
     "lint:scss": "stylelint \"./src/**/*.scss\"",
     "lint": "npm-run-all --parallel lint:* -cln",
@@ -46,12 +47,15 @@
     "generate:stencil": "stencil generate",
     "generate:template": "scripts/template.sh",
     "generate:docs": "stencil build --docs",
+    "plugins:dev": "lerna --scope \"@ecl/ckeditor5-*\" run dev",
+    "plugins:make": "lerna --scope \"@ecl/ckeditor5-*\" run build",
     "postinstall": "patch-package && [ -z \"$NOYARNPOSTINSTALL\" ] && (lerna run postinstall && lerna run prepublish) || echo \"Bypass prepublish\"",
     "dev": "start-storybook -p 6006"
   },
   "workspaces": [
     "src/components/**",
-    "playground"
+    "playground",
+    "src/plugins/**"
   ],
   "dependencies": {
     "@stencil/core": "3.0.0"
@@ -68,6 +72,7 @@
     "@storybook/html": "6.5.16",
     "@storybook/manager-webpack5": "6.5.16",
     "@types/jest": "27.0.3",
+    "@prettier/plugin-xml": "2.2.0",
     "babel-loader": "9.1.2",
     "copyfiles": "2.4.1",
     "cross-env": "7.0.3",
@@ -101,6 +106,10 @@
     "stylelint-order": "6.0.1",
     "stylelint-scss": "4.3.0"
   },
+  "nohoist": [
+    "**/ckeditor5*",
+    "**/ckeditor5*/**"
+  ],
   "lint-staged": {
     "*.{md,mdx,html,json,yml,svg}": [
       "prettier --write"

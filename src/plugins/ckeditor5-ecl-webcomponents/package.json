@@ -1,0 +1,36 @@
+{
+  "name": "@ecl/ckeditor5-ecl-webcomponents",
+  "version": "0.0.0",
+  "description": "Insert ECL components in ckeditor5",
+  "main": "src/ecl_webcomponents.js",
+  "scripts": {
+    "dev:fetch": "npm install --ignore-scripts --silent --no-save git+https://github.com/ckeditor/ckeditor5.git",
+    "dev:copy": "ncp ../../../node_modules/ckeditor5 ../../../ckeditor5",
+    "dev:clean": "rimraf ../../../node_modules/ckeditor5",
+    "dev:install": "cd ../../../ckeditor5 && yarn install --ignore-scripts",
+    "dev:install-plugin": "cd ../../../ckeditor5 && yarn add -W --ignore-scripts file:../src/plugins/ckeditor5-ecl-webcomponents",
+    "dev": "run-s dev:*",
+    "build": "run-s build:*",
+    "build:copy": "cross-env ecl-builder copy",
+    "build:plugin": "cd ../../../ckeditor5/packages/ckeditor5-build-classic/ && yarn build",
+    "build:playground": "ncp ../../../ckeditor5/packages/ckeditor5-build-classic/build ../../../playground/editor/"
+  },
+  "keywords": [
+    "ckeditor5",
+    "ECL",
+    "webcomponents",
+    "europan commission",
+    "plugin"
+  ],
+  "devDependencies": {
+    "@ecl/builder": "3.7.0",
+    "npm-run-all": "4.1.5",
+    "rimraf": "4.1.2",
+    "ncp": "2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ec-europa/ckeditor5-ecl-webcomponents"
+  },
+  "license": "EUPL-1.2"
+}

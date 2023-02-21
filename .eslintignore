@@ -7,3 +7,5 @@
 **/node_modules
 **/static
 loader
+src/plugins/
+playground/editor
