@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script type="module" src="ecl-webcomponents/ecl-webcomponents.esm.js"></script>
+    <script src="editor/ckeditor.js"></script>
+    <!-- <script src="../../ckeditor5/node_modules/@ckeditor/ckeditor5-inspector/build/inspector.js"></script> -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .ck-editor__main > .ck-editor__editable {
+        min-height: 300px;
+        padding: 1rem;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn1.fpfis.tech.ec.europa.eu/ecl/v3.7.0/ec/styles/ecl-ec.css"
+      integrity="sha256-ZdpU8ceybZJrA2Wrwn/eMYUN2CcWPI74zyrjeeNUku8= sha384-yC56h5ewovjkjGHvHAKHxbM3V5aQoNp+fhu3jW6DUe1xpqPheP4olfuoAE1LRqNt
+      sha512-AmZLFl1p0U7seKqqVCROPCN/vNkJhyBPUnHZnU3CCRLaNF3HZYa6/+U5yva37N9LwROsvEcY2t0oEW3WZMAtwg=="
+      crossorigin="anonymous"
+      media="screen"
+    />
+  </head>
+  <body>
+    <div class="ecl-container">
+      <ecl-site-header logo-alt="European Commission" logo-title="European commission" search-block="false"> </ecl-site-header>
+      <h1>ECL Webcomponents playground</h1>
+      <ecl-accordion ecl-script id="introduction">
+        <ecl-accordion-item label="How to use the playground" id="playground">
+          <p class="ecl-u-type-paragraph-m">
+            Use the editor to insert the content you want. To include ecl components, click on the ECL button in the toolbar to see all the available components and click on the
+            chosen component's button to get the form where you can edit all the available attributes for that specific component. For simple components you will see in the editor
+            something that will look like the real component, but it's just a way to represent it in a simplified markup, the styles comes from the main ECL website loaded in this
+            page.
+          </p>
+        </ecl-accordion-item>
+        <ecl-accordion-item label="Hierarchical components" id="hierarchical">
+          <p class="ecl-u-type-paragraph-m">
+            ECL components can have a hierarchical structure, a parent and a child, in those case after submitting the parent form the Ui will help you in identifying the component
+            in the editor, you can then start creating children by clicking on the right button and submitting the related button. Children components usually expect content to be
+            inserted, you can start typing it right after submitting the form.
+          </p>
+        </ecl-accordion-item>
+        <ecl-accordion-item label="How to interact with ECL components" id="interact">
+          <ul class="ecl-unordered-list">
+            <li class="ecl-unordered-list__item">If the component supports the content inserted by the user you can type in the editor right after submitting the form</li>
+            <li class="ecl-unordered-list__item">To move out of the component press enter</li>
+            <li class="ecl-unordered-list__item">If the component has children, once the parent has been created you can start inserting the fist child</li>
+            <li class="ecl-unordered-list__item">to move out a children component editing click enter, you can then insert another child</li>
+            <li class="ecl-unordered-list__item">
+              components can be edited, to change any of the attributes click on the toolbar button relative to the component you want to edit and submit the form with the updated
+              values.
+            </li>
+          </ul>
+        </ecl-accordion-item>
+      </ecl-accordion>
+      <p></p>
+      <div id="editor"></div>
+      <h2>PREVIEW</h2>
+      <div id="preview" style="padding: 2rem 0"></div>
+    </div>
+    <script>
+      let editor;
+
+      ClassicEditor.create(document.querySelector('#editor'))
+        .then(newEditor => {
+          editor = newEditor;
+          // CKEditorInspector.attach( editor );
+          editor.model.document.on('change:data', (evt, data) => {
+            const preview = document.getElementById('preview');
+            preview.innerHTML = editor.getData();
+          });
+        })
+        .catch(err => {
+          console.error(err.stack);
+        });
+    </script>
+  </body>
+</html>
