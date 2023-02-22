@@ -28147,9 +28147,15 @@
                       return !0;
                     })(t)
                   )
-                    return t.model.change(e => {
-                      e.setSelection(t.model.createPositionAt(i.parent, 0));
-                    });
+                    return i.previousSibling && i.previousSibling.name === i.name
+                      ? (n(),
+                        t.model.change(e => {
+                          e.setSelection(t.model.createPositionAt(i.previousSibling, 0));
+                        }))
+                      : (n(),
+                        t.model.change(e => {
+                          e.setSelection(t.model.createPositionAt(i.parent, 0));
+                        }));
                 }));
             }
             _createFormView(e, n) {

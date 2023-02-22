@@ -176,9 +176,17 @@ export default class CustomElemUI extends Plugin {
         const isEclChild = positionParent.parent.name.includes('ecl');
 
         if (isEcl && isEclChild && grandparentHasOnlyElements(editor)) {
-          return editor.model.change(writer => {
-            writer.setSelection(editor.model.createPositionAt(positionParent.parent, 0));
-          });
+          if (positionParent.previousSibling && positionParent.previousSibling.name === positionParent.name) {
+            cancel();
+            return editor.model.change(writer => {
+              writer.setSelection(editor.model.createPositionAt(positionParent.previousSibling, 0));
+            });
+          } else {
+            cancel();
+            return editor.model.change(writer => {
+              writer.setSelection(editor.model.createPositionAt(positionParent.parent, 0));
+            });
+          }
         }
       });
     }
