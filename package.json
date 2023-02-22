@@ -52,6 +52,7 @@
     "plugins:dev": "lerna --scope \"@ecl/ckeditor5-*\" run dev",
     "plugins:make": "lerna --scope \"@ecl/ckeditor5-*\" run build",
     "postinstall": "patch-package && [ -z \"$NOYARNPOSTINSTALL\" ] && (lerna run postinstall && lerna run prepublish) || echo \"Bypass prepublish\"",
+    "refresh-playground": "lerna --scope \"@ecl/ckeditor5-*\" run dev:install-plugin && lerna --scope \"@ecl/ckeditor5-*\" run build && yarn build:playground",
     "dev": "start-storybook -p 6006"
   },
   "workspaces": [

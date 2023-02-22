@@ -62,6 +62,10 @@
 	content: 'gallery';
 }
 
+.ecl-banner.ck-editor__editable::before {
+	content: 'banner';
+}
+
 .ecl-banner.ck-editor__editable {
 	background: #E9E9E9;
 	padding: 1rem;

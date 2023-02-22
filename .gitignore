@@ -4,6 +4,7 @@ src/*/*/build
 loader/
 ckeditor5
 playground/ecl-webcomponents
+playground/editor/translations
 
 *~
 *.sw[mnpcod]
