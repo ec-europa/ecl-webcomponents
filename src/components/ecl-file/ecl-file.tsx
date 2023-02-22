@@ -9,6 +9,7 @@ declare const ECL: any;
   },
   shadow: false,
   scoped: true,
+  assetsDirs: ['./build'],
 })
 export class EclFile {
   @Element() el: HTMLElement;

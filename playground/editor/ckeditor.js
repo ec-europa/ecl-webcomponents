@@ -30410,6 +30410,7 @@
                       'image': 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
                       'image-alt': 'image alternative text',
                       'aria-label': 'Aria label',
+                      'ecl-script': !0,
                       'labels': '',
                       'taxonomies': '',
                       'description':
@@ -30421,7 +30422,7 @@
                   },
                   {
                     tag: 'ecl-file-translations',
-                    attributes: { 'style-class': '', 'theme': 'ec', 'toggle-label': 'Other languages', 'translations-total': '', 'others': !0 },
+                    attributes: { 'style-class': '', 'theme': 'ec', 'toggle-label': 'Other languages', 'translations-total': '', 'others': !0, 'slot': 'file-translations' },
                     inline: !0,
                     editable: !0,
                     parent: 'ecl-file',

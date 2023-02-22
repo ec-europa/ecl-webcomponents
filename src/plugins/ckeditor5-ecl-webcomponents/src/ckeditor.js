@@ -650,6 +650,7 @@ ClassicEditor.defaultConfig = {
           'image': 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
           'image-alt': 'image alternative text',
           'aria-label': 'Aria label',
+          'ecl-script': true,
           'labels': '',
           'taxonomies': '',
           'description': `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis lorem
@@ -668,6 +669,7 @@ ClassicEditor.defaultConfig = {
           'toggle-label': 'Other languages',
           'translations-total': '',
           'others': true,
+          'slot': 'file-translations',
         },
         inline: true,
         editable: true,
