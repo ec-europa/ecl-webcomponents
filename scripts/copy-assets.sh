@@ -34,4 +34,3 @@ cp -r ./src/components/ecl-popover/build ./build
 cp -r ./src/components/ecl-datepicker/build ./build
 cp -r ./src/components/ecl-site-header/build ./build
 cp -r ./src/components/ecl-gallery/build ./build
-cp -r ./playground ./build
