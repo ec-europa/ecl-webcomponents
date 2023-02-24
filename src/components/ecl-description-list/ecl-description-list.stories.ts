@@ -1,5 +1,5 @@
 export default {
-  title: 'Components/description-list',
+  title: 'Components/List/description-list',
 };
 
 const Template = (args) =>

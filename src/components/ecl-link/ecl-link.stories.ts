@@ -60,7 +60,7 @@ const getArgTypes = () => {
 };
 
 export default {
-  title: 'Components/link',
+  title: 'Components/Navigation/link',
 };
 
 const Template = (args) => 

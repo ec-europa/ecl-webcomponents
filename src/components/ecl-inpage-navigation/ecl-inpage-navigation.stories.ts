@@ -3,7 +3,7 @@ import { loremIpsum } from 'lorem-ipsum';
 const lorem = loremIpsum({ count: 25 });
 
 export default {
-  title: 'Components/inpage-navigation',
+  title: 'Components/Navigation/inpage-navigation',
 };
 
 const Template = args =>

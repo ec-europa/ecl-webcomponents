@@ -1,5 +1,5 @@
 export default {
-  title: 'Components/site header',
+  title: 'Components/Site-wide/site header',
 };
 
 const Template = (args) => 

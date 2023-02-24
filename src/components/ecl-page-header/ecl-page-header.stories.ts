@@ -33,7 +33,7 @@ const getArgTypes = () => {
 };
 
 export default {
-  title: 'Components/page-header',
+  title: 'Components/Site-wide/page-header',
 };
 
 const Template = args =>

@@ -15,7 +15,7 @@ const getArgTypes = () => {
 };
 
 export default {
-  title: 'Components/breadcrumb',
+  title: 'Components/Navigation/breadcrumb',
 };
 
 const Template = (args) => 
