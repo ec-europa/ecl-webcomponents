@@ -37,66 +37,60 @@ export default {
 };
 
 const Template = args =>
-`<ecl-page-header
-  variant="${args.variant}"
-  theme="${args.theme}"
-  header-title="${args.title}"
-  image="${args.image || ''}"
-  thumbnail="${args.thumbnail || ''}"
-  thumbnail-alt="${args.thumbnailAlt || ''}"
-  meta="${args.meta || ''}"
->
-  <ecl-breadcrumb
-    slot="breadcrumb"
-    variant="${args.theme === 'ec' ? args.breadcrumbVariant : 'default'}"
+  `<ecl-page-header
+    variant="${args.variant}"
     theme="${args.theme}"
-    ecl-script
-   >
-    <ecl-breadcrumb-item
-      path="/example.html"
+    header-title="${args.title}"
+    image="${args.image}"
+    thumbnail="${args.thumbnail}"
+    thumbnail-alt="${args.thumbnailAlt}"
+    meta="${args.meta}"
+  >
+    <ecl-breadcrumb
+      slot="breadcrumb"
       variant="${args.theme === 'ec' ? args.breadcrumbVariant : 'default'}"
       theme="${args.theme}"
-    >
-      Home
-    </ecl-breadcrumb-item>
-    <ecl-breadcrumb-item
-      style-class="ecl-breadcrumb__segment--ellipsis"
-      ellipsis
-      button-aria-label="Click to expand"
+      ecl-script
      >
-     </ecl-breadcrumb-item>
-    <ecl-breadcrumb-item
-      variant="${args.theme === 'ec' ? args.breadcrumbVariant : 'default'}"
-      path="/example.html"
-      theme="${args.theme}"
-    >
-      About the European Commission
-    </ecl-breadcrumb-item>
-    <ecl-breadcrumb-item
-      variant="${args.theme === 'ec' ? args.breadcrumbVariant : 'default'}"
-      path="/example.html"
-      theme="${args.theme}"
-    >
-      Organisational structure
-    </ecl-breadcrumb-item>
-    <ecl-breadcrumb-item
-      variant="${args.theme === 'ec' ? args.breadcrumbVariant : 'default'}"
-      path="/example.html"
-      theme="${args.theme}"
-    >
-      How the Commission is organised
-    </ecl-breadcrumb-item>
-    <ecl-breadcrumb-item
-      variant="${args.theme === 'ec' ? args.breadcrumbVariant : 'default'}"
-      current-page
-      style-class="ecl-breadcrumb__current-page"
-      theme="${args.theme}"
-    >
-      News
-    </ecl-breadcrumb-item>
-  </ecl-breadcrumb>
-  ${args.description}
-</ecl-page-header>`;
+      <ecl-breadcrumb-item
+        path="/example.html"
+        theme="${args.theme}"
+      >
+        Home
+      </ecl-breadcrumb-item>
+      <ecl-breadcrumb-item
+        theme="${args.theme}"
+        ellipsis
+        button-aria-label="Click to expand"
+       >
+       </ecl-breadcrumb-item>
+      <ecl-breadcrumb-item
+        path="/example.html"
+        theme="${args.theme}"
+      >
+        About the European Commission
+      </ecl-breadcrumb-item>
+      <ecl-breadcrumb-item
+        path="/example.html"
+        theme="${args.theme}"
+      >
+        Organisational structure
+      </ecl-breadcrumb-item>
+      <ecl-breadcrumb-item
+        path="/example.html"
+        theme="${args.theme}"
+      >
+        How the Commission is organised
+      </ecl-breadcrumb-item>
+      <ecl-breadcrumb-item
+        current-page
+        theme="${args.theme}"
+      >
+        News
+      </ecl-breadcrumb-item>
+    </ecl-breadcrumb>
+    ${args.description}
+  </ecl-page-header>`;
 
 export const PageHeaderCore = Template.bind({});
 PageHeaderCore.storyName = 'core';

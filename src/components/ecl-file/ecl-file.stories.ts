@@ -82,7 +82,6 @@ const TemplateWithTranslation = args =>
   ${args.variant === 'thumbnail' ? args.description : ''}
   <ecl-file-translations
     theme="${args.theme}"
-    translations-total="3"
     toggle-label="Other languages"
     others
     slot="file-translations"

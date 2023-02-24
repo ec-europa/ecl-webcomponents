@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, Element } from '@stencil/core';
 
 @Component({
   tag: 'ecl-file-translations',
@@ -6,10 +6,10 @@ import { Component, Prop, h } from '@stencil/core';
 })
 
 export class EclFileTranslations {
+  @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
   @Prop() toggleLabel: string;
-  @Prop() translationsTotal: number;
   @Prop() others: boolean = false;
 
   getClass(): string {
@@ -20,6 +20,14 @@ export class EclFileTranslations {
     ];
 
     return styleClasses.join(' ');
+  }
+
+  componentDidRender() {
+    const translationsTotal = this.el.querySelectorAll('.ecl-file__translation-item').length as unknown as string;
+    const text = document.createTextNode(`( ${translationsTotal} )`);
+    if (this.el.querySelector('.ecl-file__translation-toggle')) {
+      this.el.querySelector('.ecl-file__translation-toggle .ecl-button__label').appendChild(text);
+    }
   }
 
   render() { 
@@ -34,7 +42,7 @@ export class EclFileTranslations {
           data-ecl-file-translation-toggle
           theme={this.theme}
         >
-          {this.toggleLabel} { this.translationsTotal ? `(${this.translationsTotal})` : ''}
+          {this.toggleLabel}
           <ecl-icon
             styleClass="ecl-button__icon ecl-button__icon--after"
             icon="corener-arrow"

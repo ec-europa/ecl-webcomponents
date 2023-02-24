@@ -40,15 +40,15 @@ export default {
 };
 
 const Template = (args) => 
-`<ecl-date-block
-  variant="${args.variant}"
-  theme="${args.theme}"
-  day="${args.day}"
-  month="${args.month}"
-  year="${args.year}"
-  date-time="${args.dateTime}" 
->
-</ecl-date-block>`;
+  `<ecl-date-block
+    variant="${args.variant}"
+    theme="${args.theme}"
+    day="${args.day}"
+    month="${args.month}"
+    year="${args.year}"
+    date-time="${args.dateTime}" 
+  >
+  </ecl-date-block>`;
 
 export const DateBlock = Template.bind({});
 DateBlock.storyName = 'default';

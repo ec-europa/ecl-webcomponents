@@ -18,7 +18,7 @@ exports[`ecl-message renders 1`] = `
               Close
             </span>
             <ecl-icon slot="icon-after" style-class="ecl-button__icon ecl-button__icon--after">
-              <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs">
+              <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs sc-ecl-button-ec">
                 <use xlink:href="/build/images/ec/icons.svg#close-filled"></use>
               </svg>
             </ecl-icon>

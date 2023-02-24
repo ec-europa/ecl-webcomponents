@@ -16,9 +16,7 @@ exports[`ecl-news-ticker renders 1`] = `
           1
         </span>
         of
-        <span class="ecl-news-ticker__counter--max">
-          6
-        </span>
+        <span class="ecl-news-ticker__counter--max"></span>
       </div>
     </div>
   </div>

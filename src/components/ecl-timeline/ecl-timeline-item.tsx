@@ -1,4 +1,4 @@
-import { Component, h, Prop} from '@stencil/core';
+import { Component, h, Prop, Element} from '@stencil/core';
 
 @Component({
   tag: 'ecl-timeline-item',
@@ -6,6 +6,7 @@ import { Component, h, Prop} from '@stencil/core';
   scoped: false,
 })
 export class EclTimelineItem {
+  @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
   @Prop() label: string;
@@ -23,6 +24,12 @@ export class EclTimelineItem {
     }
 
     return styleClasses.join(' ');
+  }
+
+  componentDidRender() {
+    if (this.el.parentElement.querySelector('.ecl-timeline__item--toggle') && this.type !== 'toggle') {
+      this.el.firstElementChild.classList.add('ecl-timeline__item--collapsed');
+    }
   }
 
   render() {

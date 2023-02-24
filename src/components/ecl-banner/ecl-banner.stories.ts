@@ -6,6 +6,7 @@ const getArgs = () => ({
   ctaLink: '/example.html',
   image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
   fullWidth: false,
+  credit: '© Copyright or credit',
   size: 'm',
   centered: true,
 });
@@ -34,6 +35,10 @@ const getArgTypes = () => ({
     type: { name: 'string' },
     description: 'Image path or url',
   },
+  credit: {
+    type: { name: 'string' },
+    description: 'Credit of the image',
+  },
   ctaLabel: {
     name: 'label of the CTA button',
     type: { name: 'string' },
@@ -61,18 +66,18 @@ export default {
 
 const Template = args =>
   `<ecl-banner
-  variant="${args.variant}"
-  theme="${args.theme}"
-  cta-link="${args.ctaLink}"
-  cta-label="${args.ctaLabel}"
-  image="${args.image}"
-  banner-title="${args.bannerTitle}"
-  credit="© Copyright or credit"
-  centered=${args.centered}
-  size="${args.size}"
->
-  ${args.description}
-</ecl-banner>`;
+    variant="${args.variant}"
+    theme="${args.theme}"
+    cta-link="${args.ctaLink}"
+    cta-label="${args.ctaLabel}"
+    image="${args.image}"
+    banner-title="${args.bannerTitle}"
+    credit="${args.credit}"
+    centered=${args.centered}
+    size="${args.size}"
+  >
+    ${args.description}
+  </ecl-banner>`;
 
 export const Banner = Template.bind({});
 Banner.storyName = 'default';

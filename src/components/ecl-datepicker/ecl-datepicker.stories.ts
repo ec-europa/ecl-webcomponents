@@ -71,26 +71,26 @@ const getArgTypes = () => {
 }
 
 const Template = args =>
-`<ecl-form-group
-  label="${args.label}"
-  required=${args.required}
-  optional-text=" (optional)"
-  helper-text="This is the input's helper text."
-  invalid=${args.invalid}
-  disabled=${args.disabled}
-  invalid-text="This is the error message"
-  theme="${args.theme}"
->
-  <ecl-datepicker
+  `<ecl-form-group
+    label="${args.label}"
     required=${args.required}
-    disabled=${args.disabled}
+    optional-text=" (optional)"
+    helper-text="This is the input's helper text."
     invalid=${args.invalid}
-    input-id="${args.inputId}"
-    default-value="${args.defaultValue}"
-    placeholder="${args.placeholder}"
+    disabled=${args.disabled}
+    invalid-text="This is the error message"
+    theme="${args.theme}"
   >
-  </ecl-datepicker>
-</ecl-form-group>`;
+    <ecl-datepicker
+      required=${args.required}
+      disabled=${args.disabled}
+      invalid=${args.invalid}
+      input-id="${args.inputId}"
+      default-value="${args.defaultValue}"
+      placeholder="${args.placeholder}"
+    >
+    </ecl-datepicker>
+  </ecl-form-group>`;
 
 export const Datepicker = Template.bind({});
 Datepicker.storyName = 'default';

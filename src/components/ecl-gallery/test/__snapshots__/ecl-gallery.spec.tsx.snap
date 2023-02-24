@@ -190,7 +190,7 @@ exports[`ecl-gallery renders 1`] = `
                 Close
               </span>
               <ecl-icon slot="icon-after" style-class="">
-                <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--s">
+                <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--s sc-ecl-button-ec">
                   <use xlink:href="/build/images/ec/icons.svg#close-filled"></use>
                 </svg>
               </ecl-icon>
@@ -205,7 +205,7 @@ exports[`ecl-gallery renders 1`] = `
           <button class="ecl-button ecl-button--ghost ecl-gallery__slider-previous sc-ecl-gallery-ec" data-ecl-gallery-overlay-previous type="button">
             <span class="ecl-button__container">
               <ecl-icon slot="icon-before" style-class="sc-ecl-gallery-ec">
-                <svg class="ecl-button__icon ecl-button__icon--before ecl-icon ecl-icon--rotate-270 ecl-icon--s sc-ecl-gallery-ec">
+                <svg class="ecl-button__icon ecl-button__icon--before ecl-icon ecl-icon--rotate-270 ecl-icon--s sc-ecl-button-ec sc-ecl-gallery-ec">
                   <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
                 </svg>
               </ecl-icon>
@@ -223,7 +223,7 @@ exports[`ecl-gallery renders 1`] = `
                 Next
               </span>
               <ecl-icon slot="icon-after" style-class="sc-ecl-gallery-ec">
-                <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--rotate-90 ecl-icon--s sc-ecl-gallery-ec">
+                <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--rotate-90 ecl-icon--s sc-ecl-button-ec sc-ecl-gallery-ec">
                   <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
                 </svg>
               </ecl-icon>

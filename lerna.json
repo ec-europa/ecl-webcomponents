@@ -1,9 +1,9 @@
 {
-  "version": "3-dev",
+  "version": "0.0.0",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "changelog": {
-    "repo": "ec-europa/europa-component-library",
+    "repo": "ec-europa/ecl-webcomponents",
     "labels": {
       "tag: new feature": ":rocket: New Feature",
       "tag: breaking change": ":boom: Breaking Change",
@@ -19,7 +19,7 @@
       "allowBranch": "chore/release-*"
     },
     "publish": {
-      "allowBranch": "v3-dev"
+      "allowBranch": "dev"
     },
     "ignoreChanges": ["**/test/**", "**/*.md"]
   }

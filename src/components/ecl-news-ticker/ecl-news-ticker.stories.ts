@@ -4,7 +4,6 @@ export default {
 
 const Template = (args) => 
 `<ecl-news-ticker
-  items-length="6"
   theme="${args.theme}"
   ecl-script
   counter-label="of"

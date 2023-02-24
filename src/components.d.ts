@@ -195,7 +195,6 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
         "toggleLabel": string;
-        "translationsTotal": number;
     }
     interface EclFileTranslationsItem {
         "downloadLabel": string;
@@ -360,7 +359,6 @@ export namespace Components {
     interface EclNewsTicker {
         "counterLabel": string;
         "eclScript": boolean;
-        "itemsLength": number;
         "srNext": string;
         "srPause": string;
         "srPrev": string;
@@ -1116,7 +1114,6 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "toggleLabel"?: string;
-        "translationsTotal"?: number;
     }
     interface EclFileTranslationsItem {
         "downloadLabel"?: string;
@@ -1281,7 +1278,6 @@ declare namespace LocalJSX {
     interface EclNewsTicker {
         "counterLabel"?: string;
         "eclScript"?: boolean;
-        "itemsLength"?: number;
         "srNext"?: string;
         "srPause"?: string;
         "srPrev"?: string;

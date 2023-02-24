@@ -64,32 +64,30 @@ export default {
 };
 
 const Template = (args) => 
-`<ecl-link
-  variant="${args.variant}"
-  theme="${args.theme}"
-  path="${args.path}"
-  external="${args.external}"
->
-${args.icon && args.iconPosition === 'before' ?
-  `<ecl-icon 
-    slot="icon-before"
-    icon="${args.icon}"
-    transform="${args.iconTransform}"
+  `<ecl-link
+    variant="${args.variant}"
     theme="${args.theme}"
-    style-class="ecl-link__icon ecl-link__icon--before sc-ecl-link-${args.theme}"
+    path="${args.path}"
+    external="${args.external}"
   >
-  </ecl-icon>` : ''}
-    ${args.label}
+  ${args.icon && args.iconPosition === 'before' ?
+    `<ecl-icon 
+      slot="icon-before"
+      icon="${args.icon}"
+      transform="${args.iconTransform}"
+      theme="${args.theme}"
+    >
+    </ecl-icon>` : '' }
+      ${args.label}
   ${args.icon && args.iconPosition === 'after' ?
     `<ecl-icon 
       slot="icon-after"
       icon="${args.icon}"
       theme="${args.theme}"
       transform="${args.iconTransform}"
-      style-class="ecl-link__icon ecl-link__icon--after sc-ecl-link-${args.theme}"
-  >
-  </ecl-icon>` : '' }
-</ecl-link>`;
+    >
+    </ecl-icon>` : '' }
+  </ecl-link>`;
 
 export const Link = Template.bind({});
 Link.storyName = 'default';

@@ -55,31 +55,29 @@ export default {
 };
 
 const Template = (args) => 
-`<ecl-button
-  type="${args.type}"
-  data-ecl-button-icon
-  theme="${args.theme}"
->
-${args.icon && args.iconPosition === 'before' ?
-  `<ecl-icon 
-    slot="icon-before"
-    icon="${args.icon}"
-    transform="${args.iconTransform}"
+  `<ecl-button
+    type="${args.type}"
+    data-ecl-button-icon
     theme="${args.theme}"
-    style-class="ecl-button__icon ecl-button__icon--before sc-ecl-button-${args.theme}"
   >
-  </ecl-icon>` : ''}
-    ${args.label}
-  ${args.icon && args.iconPosition === 'after' ?
+  ${args.icon && args.iconPosition === 'before' ?
     `<ecl-icon 
-      slot="icon-after"
+      slot="icon-before"
       icon="${args.icon}"
-      theme="${args.theme}"
       transform="${args.iconTransform}"
-      style-class="ecl-button__icon ecl-button__icon--after sc-ecl-button-${args.theme}"
-  >
-  </ecl-icon>` : ''}
-</ecl-button>`;
+      theme="${args.theme}"
+    >
+    </ecl-icon>` : ''}
+      ${args.label}
+    ${args.icon && args.iconPosition === 'after' ?
+      `<ecl-icon 
+        slot="icon-after"
+        icon="${args.icon}"
+        theme="${args.theme}"
+        transform="${args.iconTransform}"
+    >
+    </ecl-icon>` : ''}
+  </ecl-button>`;
 
 export const Button = Template.bind({});
 Button.storyName = 'default';

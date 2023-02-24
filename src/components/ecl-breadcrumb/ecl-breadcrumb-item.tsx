@@ -1,10 +1,11 @@
-import { Component, h, Prop} from '@stencil/core';
+import { Component, h, Prop, Element } from '@stencil/core';
 
 @Component({
   tag: 'ecl-breadcrumb-item',
   shadow: false,
 })
 export class EclBreadcrumbItem {
+  @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
   @Prop() variant: string;
@@ -38,7 +39,7 @@ export class EclBreadcrumbItem {
       'ecl-link--no-visited',
     ];
 
-    if (this.variant === 'negative') {
+    if (this.el.closest('.ecl-breadcrumb--negative')) {
       linkClasses.push('ecl-link--negative');
     }
 

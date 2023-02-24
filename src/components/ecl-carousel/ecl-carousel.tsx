@@ -11,6 +11,7 @@ declare const ECL: any;
   scoped: true,
   assetsDirs: ['build'],
 })
+
 export class EclCarousel {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';

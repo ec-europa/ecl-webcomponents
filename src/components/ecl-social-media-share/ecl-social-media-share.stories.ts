@@ -25,30 +25,35 @@ const Template = (args) =>
   description="Share on social media"
 >
   <ecl-social-media-share-item
+    theme="${args.theme}"
     icon="facebook-color"
     share-path="http://facebook.com"
   >
     Facebook
   </ecl-social-media-share-item>
   <ecl-social-media-share-item
+    theme="${args.theme}"
     icon="twitter-color"
     share-path="http://twitter.com"
   >
     Twitter
   </ecl-social-media-share-item>
   <ecl-social-media-share-item
+    theme="${args.theme}"
     icon="instagram-color"
     share-path="http://instagram.com"
   >
     Instagram
   </ecl-social-media-share-item>
   <ecl-social-media-share-item
+    theme="${args.theme}"
     icon="linkedin-color"
     share-path="http://linkedin.com"
   >
     Linkedin
   </ecl-social-media-share-item>
   <ecl-social-media-share-item
+    theme="${args.theme}"
     icon="telegram-color"
     share-path="http://telegram.com"
   >
@@ -64,6 +69,7 @@ const Template = (args) =>
     item-id="popover-example"
   >
     <ecl-popover-item
+      theme="${args.theme}"
       path="/example.html"
       icon="pinterest-color"
       icon-sprite="icons-social-media"
@@ -72,6 +78,7 @@ const Template = (args) =>
       Pinterest
     </ecl-popover-item>
     <ecl-popover-item
+      theme="${args.theme}"
       path="/example.html"
       icon="mastodon-color"
       icon-sprite="icons-social-media"
@@ -80,6 +87,7 @@ const Template = (args) =>
       Mastodon
     </ecl-popover-item>
     <ecl-popover-item
+      theme="${args.theme}"
       path="/example.html"
       icon="reddit-color"
       icon-sprite="icons-social-media"
@@ -88,6 +96,7 @@ const Template = (args) =>
       Reddit
     </ecl-popover-item>
     <ecl-popover-item
+      theme="${args.theme}"
       path="/example.html"
       icon="youtube-color"
       icon-sprite="icons-social-media"
@@ -96,6 +105,7 @@ const Template = (args) =>
       Youtube
     </ecl-popover-item>
     <ecl-popover-item
+      theme="${args.theme}"
       path="/example.html"
       icon="flickr-color"
       icon-sprite="icons-social-media"
@@ -104,6 +114,7 @@ const Template = (args) =>
       Flickr
     </ecl-popover-item>
     <ecl-popover-item
+      theme="${args.theme}"
       path="/example.html"
       icon="skype-color"
       icon-sprite="icons-social-media"

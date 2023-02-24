@@ -6,7 +6,7 @@ exports[`ecl-button renders 1`] = `
   <button class="ecl-button ecl-button--primary" data-ecl-button-icon type="submit">
     <span class="ecl-button__container">
       <ecl-icon icon="corner-arrow" path="/icons.svg" slot="icon-before" style-class="ecl-button__icon ecl-button__icon--before" transform="rotate-90">
-        <svg class="ecl-button__icon ecl-button__icon--before ecl-icon ecl-icon--rotate-90 ecl-icon--xs">
+        <svg class="ecl-button__icon ecl-button__icon--before ecl-icon ecl-icon--rotate-90 ecl-icon--xs sc-ecl-button-ec">
           <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
         </svg>
       </ecl-icon>

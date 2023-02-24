@@ -31,7 +31,7 @@ export class EclButton {
       const slot = this.el.getElementsByTagName('ecl-icon')[0].getAttribute('slot');
       this.el.querySelector('.ecl-icon').classList.add('ecl-button__icon');
       if (slot) {
-        this.el.querySelector('.ecl-icon').classList.add(`ecl-button__${slot.substring(0, 5) + '-' + slot.substring(5)}`);
+        this.el.querySelector('.ecl-icon').classList.add(`ecl-button__${slot.substring(0, 5) + '-' + slot.substring(5)}`, `sc-ecl-button-${this.theme}`);
       }
     }
   }

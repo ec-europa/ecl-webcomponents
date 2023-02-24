@@ -15,7 +15,6 @@ export class EclNewsTicker {
   @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
-  @Prop() itemsLength: number;
   @Prop() counterLabel: string;
   @Prop() srNext: string;
   @Prop() srPrev: string;
@@ -30,6 +29,10 @@ export class EclNewsTicker {
   }
 
   componentDidRender() {
+    const counterMax = this.el.querySelector('.ecl-news-ticker__counter--max');
+    const countMax = this.el.querySelectorAll('.ecl-news-ticker__slide').length as unknown as string;
+    counterMax.innerHTML = countMax;
+
     if (this.el.querySelector('.ecl-news-ticker__slides')) {
       // Clean the html so that the script finds what it expects.
       const slides = this.el.querySelectorAll('.ecl-news-ticker__slide');
@@ -174,7 +177,7 @@ export class EclNewsTicker {
           <div class="ecl-news-ticker__counter">
             <span class="ecl-news-ticker__counter--current">1</span>
               {` ${this.counterLabel} `}
-            <span class="ecl-news-ticker__counter--max">{this.itemsLength}</span>
+            <span class="ecl-news-ticker__counter--max"></span>
           </div>
         </div>
       </div>

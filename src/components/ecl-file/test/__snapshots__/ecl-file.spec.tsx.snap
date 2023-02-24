@@ -7,7 +7,7 @@ exports[`ecl-file renders 1`] = `
     <!---->
     <div class="ecl-file__translation-container sc-ecl-file-ec" data-ecl-file-translation-container>
       <ecl-button data-ecl-file-translation-toggle styleclass="ecl-file__translation-toggle sc-ecl-file-ec" theme="ec" variant="ghost">
-        Other languages (3)
+        Other languages
         <ecl-icon icon="corener-arrow" size="fluid" styleclass="ecl-button__icon ecl-button__icon--after" transform="rotate-180"></ecl-icon>
       </ecl-button>
       <ul class="ecl-file__translation-list sc-ecl-file-ec">

@@ -37,7 +37,7 @@ export class EclFactFiguresItem {
         <div class="ecl-fact-figures__value">{this.value}</div>
         <div class="ecl-fact-figures__title">{this.itemTitle}</div>
         <div class="ecl-fact-figures__description">
-          <slot name="description"></slot>
+          <slot></slot>
         </div>
       </div>
     );

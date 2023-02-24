@@ -24,12 +24,12 @@ export default {
 };
 
 const Template = args =>
-`<ecl-label
-  variant="${args.variant}"
-  theme="${args.theme}"
->
-  ${args.label}
-</ecl-label>`;
+  `<ecl-label
+    variant="${args.variant}"
+    theme="${args.theme}"
+  >
+    ${args.label}
+  </ecl-label>`;
 
 export const Label = Template.bind({});
 Label.storyName = 'default';
