@@ -13,10 +13,10 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.7.0",
-    "@ecl/specs-component-icon": "3.7.0",
-    "@ecl/vanilla-component-icon": "3.7.0",
-    "@ecl/vanilla-component-link": "3.7.0"
+    "@ecl/builder": "3.7.1",
+    "@ecl/specs-component-icon": "3.7.1",
+    "@ecl/vanilla-component-icon": "3.7.1",
+    "@ecl/vanilla-component-link": "3.7.1"
   },
   "repository": {
     "type": "git",

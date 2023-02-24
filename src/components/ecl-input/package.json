@@ -14,15 +14,15 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.7.0",
-    "@ecl/vanilla-component-button": "3.7.0",
-    "@ecl/vanilla-component-file-upload": "3.7.0",
-    "@ecl/vanilla-component-text-input": "3.7.0",
-    "@ecl/vanilla-component-checkbox": "3.7.0",
-    "@ecl/vanilla-component-radio": "3.7.0",
-    "@ecl/vanilla-component-datepicker": "3.7.0",
-    "@ecl/vanilla-component-range": "3.7.0",
-    "@ecl/vanilla-component-search-form": "3.7.0"
+    "@ecl/builder": "3.7.1",
+    "@ecl/vanilla-component-button": "3.7.1",
+    "@ecl/vanilla-component-checkbox": "3.7.1",
+    "@ecl/vanilla-component-datepicker": "3.7.1",
+    "@ecl/vanilla-component-file-upload": "3.7.1",
+    "@ecl/vanilla-component-radio": "3.7.1",
+    "@ecl/vanilla-component-range": "3.7.1",
+    "@ecl/vanilla-component-search-form": "3.7.1",
+    "@ecl/vanilla-component-text-input": "3.7.1"
   },
   "repository": {
     "type": "git",

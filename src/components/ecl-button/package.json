@@ -14,15 +14,15 @@
     "prepublish": "npm run build "
   },
   "devDependencies": {
-    "@ecl/builder": "3.7.0",
-    "@ecl/theme-ec": "3.7.0",
-    "@ecl/theme-eu": "3.7.0",
-    "@ecl/specs-component-button": "3.7.0",
-    "@ecl/vanilla-component-button": "3.7.0",
-    "@ecl/vanilla-component-icon": "3.7.0",
-    "@ecl/vanilla-component-link": "3.7.0",
-    "@ecl/resources-ec-icons": "3.7.0",
-    "@ecl/resources-eu-icons": "3.7.0"
+    "@ecl/builder": "3.7.1",
+    "@ecl/resources-ec-icons": "3.7.1",
+    "@ecl/resources-eu-icons": "3.7.1",
+    "@ecl/specs-component-button": "3.7.1",
+    "@ecl/theme-ec": "3.7.1",
+    "@ecl/theme-eu": "3.7.1",
+    "@ecl/vanilla-component-button": "3.7.1",
+    "@ecl/vanilla-component-icon": "3.7.1",
+    "@ecl/vanilla-component-link": "3.7.1"
   },
   "repository": {
     "type": "git",

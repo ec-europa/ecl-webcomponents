@@ -13,9 +13,9 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.7.0",
-    "@ecl/vanilla-component-page-header": "3.7.0",
-    "@ecl/vanilla-layout-grid": "3.7.0"
+    "@ecl/builder": "3.7.1",
+    "@ecl/vanilla-component-page-header": "3.7.1",
+    "@ecl/vanilla-layout-grid": "3.7.1"
   },
   "repository": {
     "type": "git",
