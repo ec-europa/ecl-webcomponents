@@ -7,22 +7,44 @@ exports[`ecl-page-header renders 1`] = `
     <div aria-hidden="true" class="ecl-page-header__background" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg);"></div>
     <div class="ecl-container">
       <ecl-breadcrumb ecl-script="" slot="breadcrumb" theme="ec" variant="negative">
-        <ecl-breadcrumb-item path="/example.html" theme="ec" variant="negative">
-          Home
-        </ecl-breadcrumb-item>
-        <ecl-breadcrumb-item button-aria-label="Click to expand" ellipsis="" style-class="ecl-breadcrumb__segment--ellipsis"></ecl-breadcrumb-item>
-        <ecl-breadcrumb-item path="/example.html" theme="ec" variant="negative">
-          About the European Commission
-        </ecl-breadcrumb-item>
-        <ecl-breadcrumb-item path="/example.html" theme="ec" variant="negative">
-          Organisational structure
-        </ecl-breadcrumb-item>
-        <ecl-breadcrumb-item path="/example.html" theme="ec" variant="negative">
-          How the Commission is organised
-        </ecl-breadcrumb-item>
-        <ecl-breadcrumb-item current-page="" style-class="ecl-breadcrumb__current-page" theme="ec" variant="negative">
-          News
-        </ecl-breadcrumb-item>
+        <!---->
+        <nav class="ecl-breadcrumb ecl-breadcrumb--negative ecl-page-header__breadcrumb sc-ecl-page-header-ec" data-ecl-breadcrumb>
+          <ol class="ecl-breadcrumb__container sc-ecl-page-header-ec">
+            <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
+              <ecl-link path="/example.html" style-class="sc-ecl-breadcrumb-ec ecl-breadcrumb__link ecl-link--no-visited ecl-link--negative" variant="standalone">
+                <ecl-icon icon="corner-arrow" size="2xs" slot="icon-after" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec" transform="rotate-90"></ecl-icon>
+                Home
+              </ecl-link>
+            </li>
+            <li class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-ellipsis="data-ecl-breadcrumb-ellipsis" data-ecl-breadcrumb-item="static">
+              <ecl-button aria-label="Click to expand" data-ecl-breadcrumb-ellipsis-button style-class="ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-ec" variant="ghost">
+                ...
+                <ecl-icon icon="corner-arrow" size="2xs" slot="icon-after" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec" transform="rotate-90"></ecl-icon>
+              </ecl-button>
+            </li>
+            <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="expandable">
+              <ecl-link path="/example.html" style-class="sc-ecl-breadcrumb-ec ecl-breadcrumb__link ecl-link--no-visited ecl-link--negative" variant="standalone">
+                <ecl-icon icon="corner-arrow" size="2xs" slot="icon-after" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec" transform="rotate-90"></ecl-icon>
+                About the European Commission
+              </ecl-link>
+            </li>
+            <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="expandable">
+              <ecl-link path="/example.html" style-class="sc-ecl-breadcrumb-ec ecl-breadcrumb__link ecl-link--no-visited ecl-link--negative" variant="standalone">
+                <ecl-icon icon="corner-arrow" size="2xs" slot="icon-after" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec" transform="rotate-90"></ecl-icon>
+                Organisational structure
+              </ecl-link>
+            </li>
+            <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
+              <ecl-link path="/example.html" style-class="sc-ecl-breadcrumb-ec ecl-breadcrumb__link ecl-link--no-visited ecl-link--negative" variant="standalone">
+                <ecl-icon icon="corner-arrow" size="2xs" slot="icon-after" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec" transform="rotate-90"></ecl-icon>
+                How the Commission is organised
+              </ecl-link>
+            </li>
+            <li class="ecl-breadcrumb__current-page ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
+              News
+            </li>
+          </ol>
+        </nav>
       </ecl-breadcrumb>
       <div class="ecl-page-header__meta">
         <span class="ecl-page-header__meta-item">

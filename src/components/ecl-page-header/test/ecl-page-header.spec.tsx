@@ -6,7 +6,7 @@ import { EclBreadcrumbItem} from '../../ecl-breadcrumb/ecl-breadcrumb-item';
 describe('ecl-page-header', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclPageHeader],
+      components: [EclPageHeader, EclBreadcrumb, EclBreadcrumbItem],
       html: `<ecl-page-header
         variant="negative"
         theme="ec"
