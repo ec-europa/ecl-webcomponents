@@ -26,6 +26,7 @@
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
  - [ecl-carousel](../ecl-carousel)
  - [ecl-category-filter-item](../ecl-category-filter)
+ - [ecl-content-block](../ecl-content-block)
  - [ecl-datepicker](../ecl-datepicker)
  - [ecl-description-list-definition](../ecl-description-list)
  - [ecl-expandable](../ecl-expandable)
@@ -61,6 +62,7 @@ graph TD;
   ecl-breadcrumb-item --> ecl-icon
   ecl-carousel --> ecl-icon
   ecl-category-filter-item --> ecl-icon
+  ecl-content-block --> ecl-icon
   ecl-datepicker --> ecl-icon
   ecl-description-list-definition --> ecl-icon
   ecl-expandable --> ecl-icon

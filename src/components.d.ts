@@ -99,6 +99,18 @@ export namespace Components {
         "subItems": boolean;
         "theme": string;
     }
+    interface EclContentBlock {
+        "hasDescription": boolean;
+        "hasLabels": boolean;
+        "hasLinks": boolean;
+        "hasLists": boolean;
+        "hasSecondaryLinks": boolean;
+        "hasTitle": boolean;
+        "metaPrimary": string;
+        "metaSecondary": string;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclDateBlock {
         "dateTime": string;
         "day": string;
@@ -609,6 +621,12 @@ declare global {
         prototype: HTMLEclCategoryFilterItemElement;
         new (): HTMLEclCategoryFilterItemElement;
     };
+    interface HTMLEclContentBlockElement extends Components.EclContentBlock, HTMLStencilElement {
+    }
+    var HTMLEclContentBlockElement: {
+        prototype: HTMLEclContentBlockElement;
+        new (): HTMLEclContentBlockElement;
+    };
     interface HTMLEclDateBlockElement extends Components.EclDateBlock, HTMLStencilElement {
     }
     var HTMLEclDateBlockElement: {
@@ -879,6 +897,7 @@ declare global {
         "ecl-carousel-item": HTMLEclCarouselItemElement;
         "ecl-category-filter": HTMLEclCategoryFilterElement;
         "ecl-category-filter-item": HTMLEclCategoryFilterItemElement;
+        "ecl-content-block": HTMLEclContentBlockElement;
         "ecl-date-block": HTMLEclDateBlockElement;
         "ecl-datepicker": HTMLEclDatepickerElement;
         "ecl-description-list": HTMLEclDescriptionListElement;
@@ -1016,6 +1035,18 @@ declare namespace LocalJSX {
         "path"?: string;
         "styleClass"?: string;
         "subItems"?: boolean;
+        "theme"?: string;
+    }
+    interface EclContentBlock {
+        "hasDescription"?: boolean;
+        "hasLabels"?: boolean;
+        "hasLinks"?: boolean;
+        "hasLists"?: boolean;
+        "hasSecondaryLinks"?: boolean;
+        "hasTitle"?: boolean;
+        "metaPrimary"?: string;
+        "metaSecondary"?: string;
+        "styleClass"?: string;
         "theme"?: string;
     }
     interface EclDateBlock {
@@ -1472,6 +1503,7 @@ declare namespace LocalJSX {
         "ecl-carousel-item": EclCarouselItem;
         "ecl-category-filter": EclCategoryFilter;
         "ecl-category-filter-item": EclCategoryFilterItem;
+        "ecl-content-block": EclContentBlock;
         "ecl-date-block": EclDateBlock;
         "ecl-datepicker": EclDatepicker;
         "ecl-description-list": EclDescriptionList;
@@ -1532,6 +1564,7 @@ declare module "@stencil/core" {
             "ecl-carousel-item": LocalJSX.EclCarouselItem & JSXBase.HTMLAttributes<HTMLEclCarouselItemElement>;
             "ecl-category-filter": LocalJSX.EclCategoryFilter & JSXBase.HTMLAttributes<HTMLEclCategoryFilterElement>;
             "ecl-category-filter-item": LocalJSX.EclCategoryFilterItem & JSXBase.HTMLAttributes<HTMLEclCategoryFilterItemElement>;
+            "ecl-content-block": LocalJSX.EclContentBlock & JSXBase.HTMLAttributes<HTMLEclContentBlockElement>;
             "ecl-date-block": LocalJSX.EclDateBlock & JSXBase.HTMLAttributes<HTMLEclDateBlockElement>;
             "ecl-datepicker": LocalJSX.EclDatepicker & JSXBase.HTMLAttributes<HTMLEclDatepickerElement>;
             "ecl-description-list": LocalJSX.EclDescriptionList & JSXBase.HTMLAttributes<HTMLEclDescriptionListElement>;

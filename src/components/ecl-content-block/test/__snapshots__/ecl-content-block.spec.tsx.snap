@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-content-block renders 1`] = `
+<ecl-content-block has-description="" has-labels="" has-links="" has-lists="" has-secondary-links="" has-title="" meta-primary="[&quot;PRIMARY META&quot;, &quot;DD Month Year&quot;]" meta-secondary="[{&quot;label&quot;: &quot;2018/10/22&quot;, &quot;icon&quot;: &quot;calendar&quot;}, {&quot;label&quot;: &quot;Luxembourg&quot;, &quot;icon&quot;: &quot;location&quot;}]" theme="ec">
+  <!---->
+  <div class="ecl-content-block">
+    <ul class="ecl-content-block__label-container">
+      <li class="ecl-content-block__label-item sc-ecl-content-block-ec">
+        <span class="ecl-label ecl-label--highlight sc-ecl-content-block-ec">
+          Highlight
+        </span>
+      </li>
+      <li class="ecl-content-block__label-item sc-ecl-content-block-ec">
+        <span class="ecl-label ecl-label--high sc-ecl-content-block-ec">
+          High importance
+        </span>
+      </li>
+    </ul>
+    <ul class="ecl-content-block__primary-meta-container">
+      <li class="ecl-content-block__primary-meta-item">
+        PRIMARY META
+      </li>
+      <li class="ecl-content-block__primary-meta-item">
+        DD Month Year
+      </li>
+    </ul>
+    <h1 class="ecl-content-block__title">
+      <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
+        <!---->
+        <a class="ecl-link ecl-link--standalone" href="/example.html">
+          Title
+          <slot-fb name="icon-after"></slot-fb>
+        </a>
+      </ecl-link>
+    </h1>
+    <div class="ecl-content-block__description">
+      <p slot="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida ipsum ut lorem cursus, quis tincidunt sem viverra. Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus
+      </p>
+    </div>
+    <ul class="ecl-content-block__secondary-meta-container">
+      <li class="ecl-content-block__secondary-meta-item">
+        <ecl-icon style-class="ecl-content-block__secondary-meta-icon sc-ecl-content-block-ec">
+          <svg class="ecl-content-block__secondary-meta-icon ecl-icon ecl-icon--s sc-ecl-content-block-ec">
+            <use xlink:href="/build/images/ec/icons.svg#calendar"></use>
+          </svg>
+        </ecl-icon>
+        <span class="ecl-content-block__secondary-meta-label">
+          2018/10/22
+        </span>
+      </li>
+      <li class="ecl-content-block__secondary-meta-item">
+        <ecl-icon style-class="ecl-content-block__secondary-meta-icon sc-ecl-content-block-ec">
+          <svg class="ecl-content-block__secondary-meta-icon ecl-icon ecl-icon--s sc-ecl-content-block-ec">
+            <use xlink:href="/build/images/ec/icons.svg#location"></use>
+          </svg>
+        </ecl-icon>
+        <span class="ecl-content-block__secondary-meta-label">
+          Luxembourg
+        </span>
+      </li>
+    </ul>
+    <div class="ecl-content-block__link-container">
+      <ul class="ecl-content-block__link-list">
+        <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+          <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+            Primary Link 1
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </li>
+        <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+          <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+            Primary Link 2
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </li>
+        <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+          <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+            Primary Link 3
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </li>
+        <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+          <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+            Primary Link 4
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </li>
+      </ul>
+      <ul class="ecl-content-block__link-list">
+        <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+          <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+            Secondary Link 1
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </li>
+        <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+          <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+            Secondary Link 2
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="ecl-content-block__list-container">
+      <ecl-description-list slot="lists" theme="ec">
+        <!---->
+        <dl class="ecl-content-block__list ecl-description-list ecl-description-list--vertical sc-ecl-content-block-ec">
+          <ecl-description-list-term theme="ec">
+            <!---->
+            <dt class="ecl-description-list__term sc-ecl-description-list-ec">
+              Standard text
+            </dt>
+          </ecl-description-list-term>
+          <ecl-description-list-definition theme="ec" type="text">
+            Lorem ipsum dolor sit amet,
+            <a class="ecl-link" href="/component-library/example">
+              consectetur adipiscing elit
+            </a>
+            . Suspendisse ut sapien condimentum, aliquet turpis sit amet, finibus purus. Donec porttitor iaculis felis ut dapibus. Sed blandit, massa ac suscipit facilisis
+          </ecl-description-list-definition>
+          <ecl-description-list-term theme="ec">
+            <!---->
+            <dt class="ecl-description-list__term sc-ecl-description-list-ec">
+              Standalone links
+            </dt>
+          </ecl-description-list-term>
+          <ecl-description-list-definition items="[{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;, &quot;icon&quot;: &quot;copy&quot;},{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;, &quot;icon&quot;: &quot;download&quot;}]" theme="ec" type="link"></ecl-description-list-definition>
+          <ecl-description-list-term theme="ec">
+            <!---->
+            <dt class="ecl-description-list__term sc-ecl-description-list-ec">
+              Links inline
+            </dt>
+          </ecl-description-list-term>
+          <ecl-description-list-definition items="[{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;},{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;}]" theme="ec" type="inline"></ecl-description-list-definition>
+          <ecl-description-list-term theme="ec">
+            <!---->
+            <dt class="ecl-description-list__term sc-ecl-description-list-ec">
+              Taxonomy list
+            </dt>
+          </ecl-description-list-term>
+          <ecl-description-list-definition items="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example.html&quot;},&quot;Taxonomy item 3&quot;]" theme="ec" type="taxonomy"></ecl-description-list-definition>
+        </dl>
+      </ecl-description-list>
+    </div>
+  </div>
+</ecl-content-block>
+`;
