@@ -138,6 +138,11 @@ ClassicEditor.defaultConfig = {
             ],
           },
           {
+            label: 'content block',
+            withText: true,
+            items: ['ecl-webcomponents-ecl-content-block'],
+          },
+          {
             label: 'carousel',
             withText: true,
             items: [
@@ -397,6 +402,24 @@ ClassicEditor.defaultConfig = {
         editable: true,
       },
       {
+        tag: 'ecl-content-block',
+        attributes: {
+          'theme': 'ec',
+          'hasDescription': 'true',
+          'hasTitle': 'true',
+          'hasLabels': 'false',
+          'hasLinks': 'false',
+          'hasSecondaryLinks': 'false',
+          'hasLists': 'false',
+          'metaPrimary': '["PRIMARY META", "DD Month Year"]',
+          'metaSecondary': '',
+          'style-class': '',
+        },
+        inline: false,
+        editable: true,
+        children: ['ecl-label', 'ecl-link', 'ecl-description-list', 'p'],
+      },
+      {
         tag: 'ecl-gallery',
         attributes: {
           'ecl-script': true,
@@ -459,6 +482,7 @@ ClassicEditor.defaultConfig = {
           'path': '/example.html',
           'title-attr': 'Title attribute',
           'external': 'false',
+          'slot': '',
         },
         inline: true,
         editable: true,
@@ -554,6 +578,7 @@ ClassicEditor.defaultConfig = {
           'style-class': '',
           'theme': 'ec',
           'variant': 'highlight',
+          'slot': '',
         },
         inline: true,
         editable: true,
@@ -815,6 +840,7 @@ ClassicEditor.defaultConfig = {
           'style-class': '',
           'theme': 'ec',
           'variant': 'vertical',
+          'slot': '',
         },
         inline: false,
         editable: true,
@@ -869,6 +895,7 @@ ClassicEditor.defaultConfig = {
           'variant': 'warning',
           'message-title': 'Warning message',
           'close-label': 'Close',
+          'slot': '',
         },
         inline: false,
         editable: true,

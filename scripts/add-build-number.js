@@ -5,6 +5,9 @@ const { generate } = require('build-number-generator');
 const getLatestVersion = require('get-latest-version');
 const eclWebComponentsVersion = require('../package.json').version;
 
+const inspectorScript = '<script src="../../ckeditor5/node_modules/@ckeditor/ckeditor5-inspector/build/inspector.js"></script>';
+const inspector = 'CKEditorInspector.attach( editor );';
+
 const buildNumber = generate();
 
 getLatestVersion('ckeditor5')
@@ -28,6 +31,18 @@ getLatestVersion('ckeditor5')
       to: eclWebComponentsVersion,
     };
 
+    const disableInspector = {
+      files: './build/playground/index.html',
+      from: inspectorScript,
+      to: `<!-- ${inspectorScript} -->`,
+    };
+
+    const disableInspectorCode = {
+      files: './build/playground/index.html',
+      from: inspector,
+      to: `// ${inspector}`,
+    };
+
     try {
       replace.sync(build);
     } catch (error) {
@@ -42,6 +57,18 @@ getLatestVersion('ckeditor5')
 
     try {
       replace.sync(eclWc);
+    } catch (error) {
+      console.error('Error occurred:', error);
+    }
+
+    try {
+      replace.sync(disableInspector);
+    } catch (error) {
+      console.error('Error occurred:', error);
+    }
+
+    try {
+      replace.sync(disableInspectorCode);
     } catch (error) {
       console.error('Error occurred:', error);
     }

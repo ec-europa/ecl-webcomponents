@@ -10,6 +10,10 @@
 	content: 'fact & figures';
 }
 
+.ecl-content-block.ck-editor__editable::before {
+	content: 'content block';
+}
+
 .ecl-accordion.ck-editor__editable::before {
 	content: 'accordion';
 }
@@ -109,7 +113,8 @@
 .ecl-carousel.ck-editor__editable,
 .ecl-page-header.ck-editor__editable,
 .ecl-breadcrumb.ck-editor__editable,
-.ecl-gallery.ck-editor__editable  {
+.ecl-gallery.ck-editor__editable,
+.ecl-content-block.ck-editor__editable {
 	background: #E9E9E9;
 	margin-bottom: 0.5rem;
 	padding-top: 0.5rem;
@@ -134,7 +139,8 @@
 .ck-editor__editable.ecl-blockquote::before,
 .ck-editor__editable.ecl-carousel::before,
 .ck-editor__editable.ecl-page-header::before,
-.ecl-gallery.ck-editor__editable::before {
+.ecl-gallery.ck-editor__editable::before,
+.ecl-content-block.ck-editor__editable::before {
 	border-right: 2px solid #ccc;
 	font-size: 0.875rem;
 	font-weight: 700;

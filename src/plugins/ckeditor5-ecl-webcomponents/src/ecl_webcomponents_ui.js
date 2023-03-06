@@ -26,6 +26,7 @@ export default class CustomElemUI extends Plugin {
       const inline = this._safeGet(items[i].inline, false);
       const editable = this._safeGet(items[i].editable, false);
       const parent = this._safeGet(items[i].parent, false);
+      const children = this._safeGet(items[i].children, false);
       let icon = this._safeGet(items[i].icon, defaultIcon);
 
       const attrkeys = Object.keys(attr);
@@ -42,6 +43,7 @@ export default class CustomElemUI extends Plugin {
       } else {
         editor.model.schema.register(tag, {
           allowIn: ['$root', '$container'],
+          allowChildren: children || ['$text', '$block'],
           allowAttributes: attrkeys,
           isObject: true,
           isBlock: true,

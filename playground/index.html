@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
     <script type="module" src="ecl-webcomponents/ecl-webcomponents.esm.js"></script>
     <script src="editor/ckeditor.js"></script>
-    <!-- <script src="../../ckeditor5/node_modules/@ckeditor/ckeditor5-inspector/build/inspector.js"></script> -->
+    <script src="../../ckeditor5/node_modules/@ckeditor/ckeditor5-inspector/build/inspector.js"></script>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -72,7 +72,7 @@
       ClassicEditor.create(document.querySelector('#editor'))
         .then(newEditor => {
           editor = newEditor;
-          // CKEditorInspector.attach( editor );
+          CKEditorInspector.attach(editor);
           editor.model.document.on('change:data', (evt, data) => {
             const preview = document.getElementById('preview');
             preview.innerHTML = editor.getData();
