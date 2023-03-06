@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-description-list renders 1`] = `
+<ecl-description-list theme="ec" variant="vertical">
+  <!---->
+  <dl class="ecl-description-list ecl-description-list--vertical">
+    <ecl-description-list-term theme="ec">
+      <!---->
+      <dt class="ecl-description-list__term sc-ecl-description-list-ec">
+        Standard text
+      </dt>
+    </ecl-description-list-term>
+    <ecl-description-list-definition theme="ec" type="text">
+      <!---->
+      <dd class="ecl-description-list__definition ecl-description-list__definition--text sc-ecl-description-list-ec">
+        Lorem ipsum dolor sit amet,
+        <a class="ecl-link" href="/component-library/example">
+          consectetur adipiscing elit
+        </a>
+        . Suspendisse ut sapien condimentum, aliquet turpis sit amet, finibus purus. Donec porttitor iaculis felis ut dapibus. Sed blandit, massa ac suscipit facilisis
+      </dd>
+    </ecl-description-list-definition>
+    <ecl-description-list-term theme="ec">
+      <!---->
+      <dt class="ecl-description-list__term sc-ecl-description-list-ec">
+        Standalone links
+      </dt>
+    </ecl-description-list-term>
+    <ecl-description-list-definition items="[{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;, &quot;icon&quot;: &quot;copy&quot;},{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;, &quot;icon&quot;: &quot;download&quot;}]" theme="ec" type="link">
+      <!---->
+      <dd class="ecl-description-list__definition ecl-description-list__definition--link sc-ecl-description-list-ec">
+        <ecl-link path="/example.html" style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+          <ecl-icon icon="copy" slot="icon-before"></ecl-icon>
+          Lorem ipsum dolor sit amet
+        </ecl-link>
+        <ecl-link path="/example.html" style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+          <ecl-icon icon="download" slot="icon-before"></ecl-icon>
+          Lorem ipsum dolor sit amet
+        </ecl-link>
+      </dd>
+    </ecl-description-list-definition>
+    <ecl-description-list-term theme="ec">
+      <!---->
+      <dt class="ecl-description-list__term sc-ecl-description-list-ec">
+        Links inline
+      </dt>
+    </ecl-description-list-term>
+    <ecl-description-list-definition items="[{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;},{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;}]" theme="ec" type="inline">
+      <!---->
+      <dd class="ecl-description-list__definition ecl-description-list__definition--inline sc-ecl-description-list-ec">
+        <ecl-link path="/example.html" style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+          Lorem ipsum dolor sit amet
+        </ecl-link>
+        <ecl-link path="/example.html" style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+          Lorem ipsum dolor sit amet
+        </ecl-link>
+      </dd>
+    </ecl-description-list-definition>
+    <ecl-description-list-term theme="ec">
+      <!---->
+      <dt class="ecl-description-list__term sc-ecl-description-list-ec">
+        Taxonomy list
+      </dt>
+    </ecl-description-list-term>
+    <ecl-description-list-definition items="[&quot;Taxonomy item 1&quot;, {&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example.html&quot;}, &quot;Taxonomy item 3&quot;]" theme="ec" type="taxonomy">
+      <!---->
+      <dd class="ecl-description-list__definition ecl-description-list__definition--taxonomy sc-ecl-description-list-ec">
+        <span class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+          Taxonomy item 1
+        </span>
+        <span class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+          <ecl-link path="/example.html">
+            Taxonomy item 2
+          </ecl-link>
+        </span>
+        <span class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+          Taxonomy item 3
+        </span>
+      </dd>
+    </ecl-description-list-definition>
+  </dl>
+</ecl-description-list>
+`;

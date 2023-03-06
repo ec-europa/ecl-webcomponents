@@ -5,11 +5,12 @@ import { EclLink } from '../../ecl-link/ecl-link';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
 import { EclDescriptionList } from '../../ecl-description-list/ecl-description-list';
 import { EclDescriptionListTerm } from '../../ecl-description-list/ecl-description-list-term';
+import { EclDescriptionListDefinition } from '../../ecl-description-list/ecl-description-list-definition';
 
 describe('ecl-content-block', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclContentBlock, EclLink, EclIcon, EclDescriptionList, EclLabel, EclDescriptionListTerm],
+      components: [EclContentBlock, EclLink, EclIcon, EclDescriptionList, EclLabel, EclDescriptionListDefinition, EclDescriptionListTerm],
       html: `<ecl-content-block
         theme="ec"
         meta-primary='["PRIMARY META", "DD Month Year"]'

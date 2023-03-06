@@ -105,7 +105,6 @@
     "puppeteer": "19.5.2",
     "replace-in-file": "6.3.5",
     "rimraf": "4.1.2",
-    "stencil-fragment": "1.0.1",
     "stylelint": "14.16.1",
     "stylelint-config-css-modules": "4.2.0",
     "stylelint-config-prettier": "9.0.5",

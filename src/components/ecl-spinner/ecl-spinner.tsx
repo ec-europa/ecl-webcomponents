@@ -1,4 +1,4 @@
-import { Component, Prop, h, Fragment } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core';
 
 @Component({
   tag: 'ecl-spinner',
@@ -49,7 +49,7 @@ export class EclSpinner {
 
   render() {
     return (
-    <Fragment>
+    <div>
       <div class={this.getClass()}>
         <svg
           class="ecl-spinner__loader"
@@ -73,7 +73,7 @@ export class EclSpinner {
     { this.overlay ? 
       <div class={this.getOverlayClass()}></div> : '' 
     }
-    </Fragment>
+    </div>
     )
   }
 }

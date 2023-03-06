@@ -1,5 +1,4 @@
 import { Component, h, Prop } from '@stencil/core';
-import Fragment from 'stencil-fragment';
 
 @Component({
   tag: 'ecl-rating-star',
@@ -24,7 +23,7 @@ export class EclRatingStar {
 
   render() {
     return (
-      <Fragment>
+      <div>
         <input
           id={this.itemId}
           class="ecl-rating-field__input ecl-rating-field__star"
@@ -54,7 +53,7 @@ export class EclRatingStar {
           >
           </ecl-icon>
         </label>
-      </Fragment>
+      </div>
     );
   }
 }

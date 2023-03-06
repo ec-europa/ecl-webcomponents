@@ -1,5 +1,4 @@
 import { Component, Prop, h } from '@stencil/core';
-import Fragment from 'stencil-fragment'
 
 @Component({
   tag: 'ecl-description-list-definition',
@@ -20,68 +19,69 @@ export class EclDescriptionListDefinition {
     ].join(' ');
   }
 
+  getMarkup = (itemsArray) => {
+    if (this.type === 'link' && itemsArray) {
+      return itemsArray.map((link) => (
+        <ecl-link
+          style-class={`ecl-description-list__definition-item sc-ecl-description-list-${this.theme}`}
+          path={link.path}
+        >
+      { link.icon ? 
+        <ecl-icon
+          slot="icon-before"
+          icon={link.icon}
+        >
+        </ecl-icon>
+        : '' }
+          {link.label}
+        </ecl-link> 
+        ));
+    } else if (this.type === 'link' && !itemsArray) {
+        return <slot></slot>;
+    }
+
+    if (this.type === 'inline' && itemsArray) {
+      return itemsArray.map((inline) => (
+        <ecl-link
+          style-class={`ecl-description-list__definition-item sc-ecl-description-list-${this.theme}`}
+          path={inline.path}
+        >
+          {inline.label}
+        </ecl-link> 
+        ));
+    } else if (this.type === 'inline' && !itemsArray) {
+      return <slot></slot>;
+    }
+    
+    if (this.type === 'taxonomy' && itemsArray) {
+      return itemsArray.map((taxonomy) => (
+        <span
+          class={`ecl-description-list__definition-item sc-ecl-description-list-${this.theme}`}
+        >
+        { taxonomy.path ? 
+          <ecl-link
+            path={taxonomy.path}
+          >
+            {taxonomy.label}
+          </ecl-link> : taxonomy
+        }
+        </span> 
+      ))
+    } else if (this.type === 'taxonomy' && !itemsArray) {
+      return <slot></slot>;
+    }
+    
+    if (this.type === 'text') {
+      return <slot></slot>
+    }
+  }
+
   render() {
-    const itemsArray = this.items ? JSON.parse(this.items) : '';
+    const itemsArray = this.items ? JSON.parse(this.items) : false;
 
     return (
       <dd class={this.getClass()}>
-      { this.type === 'link' ?
-        <Fragment>
-        { itemsArray ? itemsArray.map((link) => (
-          <ecl-link
-            style-class={`ecl-description-list__definition-item sc-ecl-description-list-${this.theme}`}
-            path={link.path}
-          >
-        { link.icon ? 
-          <ecl-icon
-            slot="icon-before"
-            icon={link.icon}
-          >
-          </ecl-icon>
-          : '' }
-            {link.label}
-          </ecl-link> 
-          )) : <slot></slot>
-        }
-        </Fragment> : ''
-      }
-
-      { this.type === 'inline' ?
-        <Fragment>
-        { itemsArray ? itemsArray.map((inline) => (
-          <ecl-link
-            style-class={`ecl-description-list__definition-item sc-ecl-description-list-${this.theme}`}
-            path={inline.path}
-          >
-            {inline.label}
-          </ecl-link> 
-          )) : <slot></slot>
-        } 
-        </Fragment> : ''
-      }
-
-      { this.type === 'taxonomy' ?
-        <Fragment>
-        { itemsArray ? itemsArray.map((taxonomy) => (
-          <span
-            class={`ecl-description-list__definition-item sc-ecl-description-list-${this.theme}`}
-          >
-            { taxonomy.path ? 
-              <ecl-link
-                path={taxonomy.path}
-              >
-                {taxonomy.label}
-              </ecl-link> : taxonomy
-            }
-          </span> 
-          )) : <slot></slot>
-        }
-        </Fragment> : ''
-      }
-
-      { this.type === 'text' ? 
-        <slot></slot> : '' 
-      }
+        {this.getMarkup(itemsArray)}
       </dd>
     )
   }

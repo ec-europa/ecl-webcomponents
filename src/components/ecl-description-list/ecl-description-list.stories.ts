@@ -48,7 +48,7 @@ const Template = (args) =>
     <ecl-description-list-definition
       type="taxonomy"
       theme="${args.theme}"
-      items='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"},"Taxonomy item 3"]'
+      items='["Taxonomy item 1", {"label": "Taxonomy item 2", "path": "/example.html"}, "Taxonomy item 3"]'
     >
     </ecl-description-list-definition>
   </ecl-description-list>`;
