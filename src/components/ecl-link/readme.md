@@ -33,6 +33,7 @@
  - [ecl-inpage-navigation-item](../ecl-inpage-navigation)
  - [ecl-news-ticker-item](../ecl-news-ticker)
  - [ecl-page-banner](../ecl-page-banner)
+ - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover-item](../ecl-popover)
  - [ecl-site-header](../ecl-site-header)
  - [ecl-social-media-share-item](../ecl-social-media-share)
@@ -56,6 +57,7 @@ graph TD;
   ecl-inpage-navigation-item --> ecl-link
   ecl-news-ticker-item --> ecl-link
   ecl-page-banner --> ecl-link
+  ecl-pagination-item --> ecl-link
   ecl-popover-item --> ecl-link
   ecl-site-header --> ecl-link
   ecl-social-media-share-item --> ecl-link

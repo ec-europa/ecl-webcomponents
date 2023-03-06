@@ -44,6 +44,7 @@
  - [ecl-message](../ecl-message)
  - [ecl-news-ticker](../ecl-news-ticker)
  - [ecl-page-banner](../ecl-page-banner)
+ - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover](../ecl-popover)
  - [ecl-popover-item](../ecl-popover)
  - [ecl-rating-star](../ecl-rating-field)
@@ -80,6 +81,7 @@ graph TD;
   ecl-message --> ecl-icon
   ecl-news-ticker --> ecl-icon
   ecl-page-banner --> ecl-icon
+  ecl-pagination-item --> ecl-icon
   ecl-popover --> ecl-icon
   ecl-popover-item --> ecl-icon
   ecl-rating-star --> ecl-icon

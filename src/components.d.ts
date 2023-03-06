@@ -406,6 +406,19 @@ export namespace Components {
         "thumbnailAlt": string;
         "variant": string;
     }
+    interface EclPagination {
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclPaginationItem {
+        "ariaLabel": string;
+        "current": boolean;
+        "next": boolean;
+        "path": string;
+        "previous": boolean;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclPopover {
         "eclScript": boolean;
         "icon": string;
@@ -801,6 +814,18 @@ declare global {
         prototype: HTMLEclPageHeaderElement;
         new (): HTMLEclPageHeaderElement;
     };
+    interface HTMLEclPaginationElement extends Components.EclPagination, HTMLStencilElement {
+    }
+    var HTMLEclPaginationElement: {
+        prototype: HTMLEclPaginationElement;
+        new (): HTMLEclPaginationElement;
+    };
+    interface HTMLEclPaginationItemElement extends Components.EclPaginationItem, HTMLStencilElement {
+    }
+    var HTMLEclPaginationItemElement: {
+        prototype: HTMLEclPaginationItemElement;
+        new (): HTMLEclPaginationItemElement;
+    };
     interface HTMLEclPopoverElement extends Components.EclPopover, HTMLStencilElement {
     }
     var HTMLEclPopoverElement: {
@@ -927,6 +952,8 @@ declare global {
         "ecl-news-ticker-item": HTMLEclNewsTickerItemElement;
         "ecl-page-banner": HTMLEclPageBannerElement;
         "ecl-page-header": HTMLEclPageHeaderElement;
+        "ecl-pagination": HTMLEclPaginationElement;
+        "ecl-pagination-item": HTMLEclPaginationItemElement;
         "ecl-popover": HTMLEclPopoverElement;
         "ecl-popover-item": HTMLEclPopoverItemElement;
         "ecl-rating-field": HTMLEclRatingFieldElement;
@@ -1344,6 +1371,19 @@ declare namespace LocalJSX {
         "thumbnailAlt"?: string;
         "variant"?: string;
     }
+    interface EclPagination {
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclPaginationItem {
+        "ariaLabel"?: string;
+        "current"?: boolean;
+        "next"?: boolean;
+        "path"?: string;
+        "previous"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclPopover {
         "eclScript"?: boolean;
         "icon"?: string;
@@ -1533,6 +1573,8 @@ declare namespace LocalJSX {
         "ecl-news-ticker-item": EclNewsTickerItem;
         "ecl-page-banner": EclPageBanner;
         "ecl-page-header": EclPageHeader;
+        "ecl-pagination": EclPagination;
+        "ecl-pagination-item": EclPaginationItem;
         "ecl-popover": EclPopover;
         "ecl-popover-item": EclPopoverItem;
         "ecl-rating-field": EclRatingField;
@@ -1594,6 +1636,8 @@ declare module "@stencil/core" {
             "ecl-news-ticker-item": LocalJSX.EclNewsTickerItem & JSXBase.HTMLAttributes<HTMLEclNewsTickerItemElement>;
             "ecl-page-banner": LocalJSX.EclPageBanner & JSXBase.HTMLAttributes<HTMLEclPageBannerElement>;
             "ecl-page-header": LocalJSX.EclPageHeader & JSXBase.HTMLAttributes<HTMLEclPageHeaderElement>;
+            "ecl-pagination": LocalJSX.EclPagination & JSXBase.HTMLAttributes<HTMLEclPaginationElement>;
+            "ecl-pagination-item": LocalJSX.EclPaginationItem & JSXBase.HTMLAttributes<HTMLEclPaginationItemElement>;
             "ecl-popover": LocalJSX.EclPopover & JSXBase.HTMLAttributes<HTMLEclPopoverElement>;
             "ecl-popover-item": LocalJSX.EclPopoverItem & JSXBase.HTMLAttributes<HTMLEclPopoverItemElement>;
             "ecl-rating-field": LocalJSX.EclRatingField & JSXBase.HTMLAttributes<HTMLEclRatingFieldElement>;
