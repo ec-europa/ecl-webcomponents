@@ -83,6 +83,10 @@
 	content: 'file';
 }
 
+.ecl-pagination.ck-editor__editable::before {
+	content: 'pagination';
+}
+
 .ecl-carousel.ck-editor__editable::before {
 	content: 'carousel';
 }
@@ -114,7 +118,8 @@
 .ecl-page-header.ck-editor__editable,
 .ecl-breadcrumb.ck-editor__editable,
 .ecl-gallery.ck-editor__editable,
-.ecl-content-block.ck-editor__editable {
+.ecl-content-block.ck-editor__editable,
+.ecl-pagination.ck-editor__editable {
 	background: #E9E9E9;
 	margin-bottom: 0.5rem;
 	padding-top: 0.5rem;
@@ -140,7 +145,8 @@
 .ck-editor__editable.ecl-carousel::before,
 .ck-editor__editable.ecl-page-header::before,
 .ecl-gallery.ck-editor__editable::before,
-.ecl-content-block.ck-editor__editable::before {
+.ecl-content-block.ck-editor__editable::before,
+.ecl-pagination.ck-editor__editable::before {
 	border-right: 2px solid #ccc;
 	font-size: 0.875rem;
 	font-weight: 700;
@@ -164,7 +170,8 @@
 .ck-editor__nested-editable.ecl-inpage-navigation__item::before,
 .ck-editor__nested-editable.ecl-carousel__item::before,
 .ck-editor__nested-editable.ecl-breadcrumb__item::before,
-.ck-editor__nested-editable.ecl-gallery__item::before {
+.ck-editor__nested-editable.ecl-gallery__item::before,
+.ck-editor__nested-editable.ecl-pagination__item::before {
 	border-right: 2px solid teal;
 	color: teal;
 	font-style: italic;
@@ -190,7 +197,8 @@
 .ck-editor__nested-editable.ecl-inpage-navigation__item,
 .ck-editor__nested-editable.ecl-carousel__item,
 .ck-editor__nested-editable.ecl-breadcrumb__item,
-.ck-editor__nested-editable.ecl-gallery__item {
+.ck-editor__nested-editable.ecl-gallery__item,
+.ck-editor__nested-editable.ecl-pagination__item  {
 	border: 2px solid teal;
 	border-right: 0;
 	margin-top: 0.25rem;
@@ -208,6 +216,10 @@
 
 .ck-editor__nested-editable.ecl-description-list__definition::before {
 	content: 'definition';
+}
+
+.ck-editor__nested-editable.ecl-pagination__item::before {
+	content: 'items';
 }
 
 .ck-editor__nested-editable.ecl-fact-figures__item::before {

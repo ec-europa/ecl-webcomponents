@@ -19,6 +19,7 @@ export class EclLink {
   @Prop() variant: string = 'default';
   @Prop() titleAttr: string;
   @Prop() external: boolean = false;
+  @Prop() ariaLabel: string;
   @Prop() name: string;
 
   getClass(): string {
@@ -70,13 +71,25 @@ export class EclLink {
     )  
   }
 
+  getAttrs() {
+    const attrs = {
+      'class': this.getClass(),
+      'href': this.path,
+    };
+
+    if (this.titleAttr) {
+      attrs['title'] = this.titleAttr;
+    }
+    if (this.ariaLabel) {
+      attrs['aria-label'] = this.ariaLabel;
+    }
+
+    return attrs;
+  }
+
   render() {
     return (
-      <a
-        class={this.getClass()}
-        href={this.path}
-        title={this.titleAttr}
-      >
+      <a {...this.getAttrs()}>
         <slot name="icon-before"></slot>
         <slot></slot>
         <slot name="icon-after">{ this.external ? this.getExternal() : '' }</slot>

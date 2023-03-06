@@ -184,6 +184,18 @@ ClassicEditor.defaultConfig = {
             items: ['ecl-webcomponents-ecl-media-container'],
           },
           {
+            label: 'pagination',
+            withText: true,
+            items: [
+              'ecl-webcomponents-ecl-pagination',
+              {
+                withText: true,
+                label: 'items',
+                items: ['ecl-webcomponents-ecl-pagination-item'],
+              },
+            ],
+          },
+          {
             label: 'banner',
             withText: true,
             items: ['ecl-webcomponents-ecl-banner'],
@@ -486,6 +498,30 @@ ClassicEditor.defaultConfig = {
         },
         inline: true,
         editable: true,
+      },
+      {
+        tag: 'ecl-pagination',
+        attributes: {
+          'style-class': '',
+          'theme': 'ec',
+        },
+        inline: false,
+        editable: true,
+      },
+      {
+        tag: 'ecl-pagination-item',
+        attributes: {
+          'style-class': '',
+          'theme': 'ec',
+          'path': '',
+          'aria-label': '',
+          'current': 'false',
+          'next': 'false',
+          'previous': 'false',
+        },
+        inline: true,
+        editable: true,
+        parent: 'ecl-pagination',
       },
       {
         tag: 'ecl-breadcrumb',

@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-pagination renders 1`] = `
+<ecl-pagination theme="ec">
+  <!---->
+  <div class="ecl-pagination">
+    <ul class="ecl-pagination__list">
+      <li class="ecl-pagination__item ecl-pagination__item--previous sc-ecl-pagination-ec">
+        <ecl-link aria-label="Previous page">
+          <!---->
+          <a aria-label="Previous page" class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone" href="/example.html">
+            <ecl-icon slot="icon-before" style-class="sc-ecl-pagination-ec">
+              <svg class="ecl-icon ecl-icon--rotate-270 ecl-icon--xs ecl-link__icon ecl-link__icon--before sc-ecl-pagination-ec">
+                <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
+              </svg>
+            </ecl-icon>
+            Previous
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-pagination__item sc-ecl-pagination-ec">
+        <ecl-link aria-label="Page 24">
+          <!---->
+          <a aria-label="Page 24" class="ecl-link ecl-link--standalone" href="/example.html">
+            24
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-pagination__item sc-ecl-pagination-ec">
+        <ecl-link aria-label="Page 25">
+          <!---->
+          <a aria-label="Page 25" class="ecl-link ecl-link--standalone" href="/example.html">
+            25
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-pagination__item ecl-pagination__item--current sc-ecl-pagination-ec">
+        <span class="ecl-pagination__text ecl-pagination__text--summary sc-ecl-pagination-ec">
+          26
+        </span>
+        <span class="ecl-pagination__text ecl-pagination__text--full sc-ecl-pagination-ec">
+          Page 26
+        </span>
+      </li>
+      <li class="ecl-pagination__item sc-ecl-pagination-ec">
+        <ecl-link aria-label="Page 27">
+          <!---->
+          <a aria-label="Page 27" class="ecl-link ecl-link--standalone" href="/example.html">
+            27
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-pagination__item sc-ecl-pagination-ec">
+        <ecl-link aria-label="Page 28">
+          <!---->
+          <a aria-label="Page 28" class="ecl-link ecl-link--standalone">
+            28
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-pagination__item ecl-pagination__item--next sc-ecl-pagination-ec">
+        <ecl-link aria-label="Next page">
+          <!---->
+          <a aria-label="Next page" class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone">
+            <ecl-icon slot="icon-after" style-class="sc-ecl-pagination-ec">
+              <svg class="ecl-icon ecl-icon--rotate-90 ecl-icon--xs ecl-link__icon ecl-link__icon--after sc-ecl-pagination-ec">
+                <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
+              </svg>
+            </ecl-icon>
+            Next
+            <slot-fb hidden="" name="icon-after"></slot-fb>
+          </a>
+        </ecl-link>
+      </li>
+    </ul>
+  </div>
+</ecl-pagination>
+`;
