@@ -111,6 +111,14 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
     }
+    interface EclContentItem {
+        "image": string;
+        "imageAlt": string;
+        "imagePosition": string;
+        "imageSize": string;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclDateBlock {
         "dateTime": string;
         "day": string;
@@ -338,6 +346,7 @@ export namespace Components {
         "theme": string;
     }
     interface EclLink {
+        "ariaLabel": string;
         "external": boolean;
         "name": string;
         "path": string;
@@ -416,6 +425,13 @@ export namespace Components {
         "next": boolean;
         "path": string;
         "previous": boolean;
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclPicture {
+        "image": string;
+        "imageAlt": string;
+        "imgClass": string;
         "styleClass": string;
         "theme": string;
     }
@@ -640,6 +656,12 @@ declare global {
         prototype: HTMLEclContentBlockElement;
         new (): HTMLEclContentBlockElement;
     };
+    interface HTMLEclContentItemElement extends Components.EclContentItem, HTMLStencilElement {
+    }
+    var HTMLEclContentItemElement: {
+        prototype: HTMLEclContentItemElement;
+        new (): HTMLEclContentItemElement;
+    };
     interface HTMLEclDateBlockElement extends Components.EclDateBlock, HTMLStencilElement {
     }
     var HTMLEclDateBlockElement: {
@@ -826,6 +848,12 @@ declare global {
         prototype: HTMLEclPaginationItemElement;
         new (): HTMLEclPaginationItemElement;
     };
+    interface HTMLEclPictureElement extends Components.EclPicture, HTMLStencilElement {
+    }
+    var HTMLEclPictureElement: {
+        prototype: HTMLEclPictureElement;
+        new (): HTMLEclPictureElement;
+    };
     interface HTMLEclPopoverElement extends Components.EclPopover, HTMLStencilElement {
     }
     var HTMLEclPopoverElement: {
@@ -923,6 +951,7 @@ declare global {
         "ecl-category-filter": HTMLEclCategoryFilterElement;
         "ecl-category-filter-item": HTMLEclCategoryFilterItemElement;
         "ecl-content-block": HTMLEclContentBlockElement;
+        "ecl-content-item": HTMLEclContentItemElement;
         "ecl-date-block": HTMLEclDateBlockElement;
         "ecl-datepicker": HTMLEclDatepickerElement;
         "ecl-description-list": HTMLEclDescriptionListElement;
@@ -954,6 +983,7 @@ declare global {
         "ecl-page-header": HTMLEclPageHeaderElement;
         "ecl-pagination": HTMLEclPaginationElement;
         "ecl-pagination-item": HTMLEclPaginationItemElement;
+        "ecl-picture": HTMLEclPictureElement;
         "ecl-popover": HTMLEclPopoverElement;
         "ecl-popover-item": HTMLEclPopoverItemElement;
         "ecl-rating-field": HTMLEclRatingFieldElement;
@@ -1073,6 +1103,14 @@ declare namespace LocalJSX {
         "hasTitle"?: boolean;
         "metaPrimary"?: string;
         "metaSecondary"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclContentItem {
+        "image"?: string;
+        "imageAlt"?: string;
+        "imagePosition"?: string;
+        "imageSize"?: string;
         "styleClass"?: string;
         "theme"?: string;
     }
@@ -1303,6 +1341,7 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclLink {
+        "ariaLabel"?: string;
         "external"?: boolean;
         "name"?: string;
         "path"?: string;
@@ -1381,6 +1420,13 @@ declare namespace LocalJSX {
         "next"?: boolean;
         "path"?: string;
         "previous"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclPicture {
+        "image"?: string;
+        "imageAlt"?: string;
+        "imgClass"?: string;
         "styleClass"?: string;
         "theme"?: string;
     }
@@ -1544,6 +1590,7 @@ declare namespace LocalJSX {
         "ecl-category-filter": EclCategoryFilter;
         "ecl-category-filter-item": EclCategoryFilterItem;
         "ecl-content-block": EclContentBlock;
+        "ecl-content-item": EclContentItem;
         "ecl-date-block": EclDateBlock;
         "ecl-datepicker": EclDatepicker;
         "ecl-description-list": EclDescriptionList;
@@ -1575,6 +1622,7 @@ declare namespace LocalJSX {
         "ecl-page-header": EclPageHeader;
         "ecl-pagination": EclPagination;
         "ecl-pagination-item": EclPaginationItem;
+        "ecl-picture": EclPicture;
         "ecl-popover": EclPopover;
         "ecl-popover-item": EclPopoverItem;
         "ecl-rating-field": EclRatingField;
@@ -1607,6 +1655,7 @@ declare module "@stencil/core" {
             "ecl-category-filter": LocalJSX.EclCategoryFilter & JSXBase.HTMLAttributes<HTMLEclCategoryFilterElement>;
             "ecl-category-filter-item": LocalJSX.EclCategoryFilterItem & JSXBase.HTMLAttributes<HTMLEclCategoryFilterItemElement>;
             "ecl-content-block": LocalJSX.EclContentBlock & JSXBase.HTMLAttributes<HTMLEclContentBlockElement>;
+            "ecl-content-item": LocalJSX.EclContentItem & JSXBase.HTMLAttributes<HTMLEclContentItemElement>;
             "ecl-date-block": LocalJSX.EclDateBlock & JSXBase.HTMLAttributes<HTMLEclDateBlockElement>;
             "ecl-datepicker": LocalJSX.EclDatepicker & JSXBase.HTMLAttributes<HTMLEclDatepickerElement>;
             "ecl-description-list": LocalJSX.EclDescriptionList & JSXBase.HTMLAttributes<HTMLEclDescriptionListElement>;
@@ -1638,6 +1687,7 @@ declare module "@stencil/core" {
             "ecl-page-header": LocalJSX.EclPageHeader & JSXBase.HTMLAttributes<HTMLEclPageHeaderElement>;
             "ecl-pagination": LocalJSX.EclPagination & JSXBase.HTMLAttributes<HTMLEclPaginationElement>;
             "ecl-pagination-item": LocalJSX.EclPaginationItem & JSXBase.HTMLAttributes<HTMLEclPaginationItemElement>;
+            "ecl-picture": LocalJSX.EclPicture & JSXBase.HTMLAttributes<HTMLEclPictureElement>;
             "ecl-popover": LocalJSX.EclPopover & JSXBase.HTMLAttributes<HTMLEclPopoverElement>;
             "ecl-popover-item": LocalJSX.EclPopoverItem & JSXBase.HTMLAttributes<HTMLEclPopoverItemElement>;
             "ecl-rating-field": LocalJSX.EclRatingField & JSXBase.HTMLAttributes<HTMLEclRatingFieldElement>;

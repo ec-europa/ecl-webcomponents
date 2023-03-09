@@ -9,6 +9,7 @@
 
 | Property     | Attribute     | Description | Type      | Default     |
 | ------------ | ------------- | ----------- | --------- | ----------- |
+| `ariaLabel`  | `aria-label`  |             | `string`  | `undefined` |
 | `external`   | `external`    |             | `boolean` | `false`     |
 | `name`       | `name`        |             | `string`  | `undefined` |
 | `path`       | `path`        |             | `string`  | `undefined` |
