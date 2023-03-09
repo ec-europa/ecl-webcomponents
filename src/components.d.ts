@@ -61,6 +61,12 @@ export namespace Components {
         "type": string;
         "variant": string;
     }
+    interface EclCard {
+        "image": string;
+        "imageAlt": string;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclCarousel {
         "carouselId": string;
         "counterLabel": string;
@@ -626,6 +632,12 @@ declare global {
         prototype: HTMLEclButtonElement;
         new (): HTMLEclButtonElement;
     };
+    interface HTMLEclCardElement extends Components.EclCard, HTMLStencilElement {
+    }
+    var HTMLEclCardElement: {
+        prototype: HTMLEclCardElement;
+        new (): HTMLEclCardElement;
+    };
     interface HTMLEclCarouselElement extends Components.EclCarousel, HTMLStencilElement {
     }
     var HTMLEclCarouselElement: {
@@ -946,6 +958,7 @@ declare global {
         "ecl-breadcrumb": HTMLEclBreadcrumbElement;
         "ecl-breadcrumb-item": HTMLEclBreadcrumbItemElement;
         "ecl-button": HTMLEclButtonElement;
+        "ecl-card": HTMLEclCardElement;
         "ecl-carousel": HTMLEclCarouselElement;
         "ecl-carousel-item": HTMLEclCarouselItemElement;
         "ecl-category-filter": HTMLEclCategoryFilterElement;
@@ -1055,6 +1068,12 @@ declare namespace LocalJSX {
         "theme"?: string;
         "type"?: string;
         "variant"?: string;
+    }
+    interface EclCard {
+        "image"?: string;
+        "imageAlt"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
     }
     interface EclCarousel {
         "carouselId"?: string;
@@ -1585,6 +1604,7 @@ declare namespace LocalJSX {
         "ecl-breadcrumb": EclBreadcrumb;
         "ecl-breadcrumb-item": EclBreadcrumbItem;
         "ecl-button": EclButton;
+        "ecl-card": EclCard;
         "ecl-carousel": EclCarousel;
         "ecl-carousel-item": EclCarouselItem;
         "ecl-category-filter": EclCategoryFilter;
@@ -1650,6 +1670,7 @@ declare module "@stencil/core" {
             "ecl-breadcrumb": LocalJSX.EclBreadcrumb & JSXBase.HTMLAttributes<HTMLEclBreadcrumbElement>;
             "ecl-breadcrumb-item": LocalJSX.EclBreadcrumbItem & JSXBase.HTMLAttributes<HTMLEclBreadcrumbItemElement>;
             "ecl-button": LocalJSX.EclButton & JSXBase.HTMLAttributes<HTMLEclButtonElement>;
+            "ecl-card": LocalJSX.EclCard & JSXBase.HTMLAttributes<HTMLEclCardElement>;
             "ecl-carousel": LocalJSX.EclCarousel & JSXBase.HTMLAttributes<HTMLEclCarouselElement>;
             "ecl-carousel-item": LocalJSX.EclCarouselItem & JSXBase.HTMLAttributes<HTMLEclCarouselItemElement>;
             "ecl-category-filter": LocalJSX.EclCategoryFilter & JSXBase.HTMLAttributes<HTMLEclCategoryFilterElement>;
