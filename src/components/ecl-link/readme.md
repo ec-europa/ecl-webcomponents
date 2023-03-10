@@ -37,6 +37,7 @@
  - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover-item](../ecl-popover)
  - [ecl-site-header](../ecl-site-header)
+ - [ecl-social-media-follow-item](../ecl-social-media-follow)
  - [ecl-social-media-share-item](../ecl-social-media-share)
 
 ### Depends on
@@ -61,6 +62,7 @@ graph TD;
   ecl-pagination-item --> ecl-link
   ecl-popover-item --> ecl-link
   ecl-site-header --> ecl-link
+  ecl-social-media-follow-item --> ecl-link
   ecl-social-media-share-item --> ecl-link
   style ecl-link fill:#f9f,stroke:#333,stroke-width:4px
 ```

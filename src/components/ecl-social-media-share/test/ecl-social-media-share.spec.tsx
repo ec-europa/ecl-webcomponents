@@ -1,5 +1,6 @@
 import { newSpecPage } from '@stencil/core/testing';
 import { EclSocialMediaShare } from '../ecl-social-media-share';
+import { EclSocialMediaShareItem } from '../ecl-social-media-share-item';
 import { EclLink } from '../../ecl-link/ecl-link';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
 import { EclPopover } from '../../ecl-popover/ecl-popover';
@@ -7,7 +8,7 @@ import { EclPopover } from '../../ecl-popover/ecl-popover';
 describe('ecl-social-media-share', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclSocialMediaShare, EclLink, EclIcon, EclPopover],
+      components: [EclSocialMediaShare, EclSocialMediaShareItem, EclLink, EclIcon, EclPopover],
       html: `<ecl-social-media-share
         variant="horizontal"
         theme="ec"

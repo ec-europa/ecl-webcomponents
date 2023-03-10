@@ -9,6 +9,76 @@ exports[`ecl-social-media-share renders 1`] = `
     </p>
     <ul class="ecl-social-media-share__list">
       <li class="ecl-social-media-share__item sc-ecl-social-media-share-ec">
+        <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-share__link sc-ecl-social-media-share-ec">
+          <!---->
+          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-share__link sc-ecl-social-media-share-ec" href="http://facebook.com">
+            <ecl-icon slot="icon-before">
+              <svg class="ecl-icon ecl-icon--m ecl-link__icon ecl-link__icon--before">
+                <use xlink:href="/build/images/ec/icons-social-media.svg#facebook-color"></use>
+              </svg>
+            </ecl-icon>
+            Facebook
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-social-media-share__item sc-ecl-social-media-share-ec">
+        <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-share__link sc-ecl-social-media-share-ec">
+          <!---->
+          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-share__link sc-ecl-social-media-share-ec" href="http://twitter.com">
+            <ecl-icon slot="icon-before">
+              <svg class="ecl-icon ecl-icon--m ecl-link__icon ecl-link__icon--before">
+                <use xlink:href="/build/images/ec/icons-social-media.svg#twitter-color"></use>
+              </svg>
+            </ecl-icon>
+            Twitter
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-social-media-share__item sc-ecl-social-media-share-ec">
+        <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-share__link sc-ecl-social-media-share-ec">
+          <!---->
+          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-share__link sc-ecl-social-media-share-ec" href="http://instagram.com">
+            <ecl-icon slot="icon-before">
+              <svg class="ecl-icon ecl-icon--m ecl-link__icon ecl-link__icon--before">
+                <use xlink:href="/build/images/ec/icons-social-media.svg#instagram-color"></use>
+              </svg>
+            </ecl-icon>
+            Instagram
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-social-media-share__item sc-ecl-social-media-share-ec">
+        <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-share__link sc-ecl-social-media-share-ec">
+          <!---->
+          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-share__link sc-ecl-social-media-share-ec" href="http://linkedin.com">
+            <ecl-icon slot="icon-before">
+              <svg class="ecl-icon ecl-icon--m ecl-link__icon ecl-link__icon--before">
+                <use xlink:href="/build/images/ec/icons-social-media.svg#linkedin-color"></use>
+              </svg>
+            </ecl-icon>
+            Linkedin
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-social-media-share__item sc-ecl-social-media-share-ec">
+        <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-share__link sc-ecl-social-media-share-ec">
+          <!---->
+          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-share__link sc-ecl-social-media-share-ec" href="http://telegram.com">
+            <ecl-icon slot="icon-before">
+              <svg class="ecl-icon ecl-icon--m ecl-link__icon ecl-link__icon--before">
+                <use xlink:href="/build/images/ec/icons-social-media.svg#telegram-color"></use>
+              </svg>
+            </ecl-icon>
+            Telegram
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-social-media-share__item sc-ecl-social-media-share-ec">
         <ecl-popover ecl-script="" icon="share" icon-size="s" item-id="popover-example" list="" theme="ec" toggle-label="Popover">
           <!---->
           <div class="ecl-popover">

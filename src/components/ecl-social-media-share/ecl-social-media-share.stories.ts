@@ -22,7 +22,7 @@ const Template = (args) =>
 `<ecl-social-media-share
   variant="${args.variant}"
   theme="${args.theme}"
-  description="Share on social media"
+  description="Share this page"
 >
   <ecl-social-media-share-item
     theme="${args.theme}"
@@ -62,7 +62,7 @@ const Template = (args) =>
   <ecl-popover
     ecl-script
     theme="${args.theme}"
-    toggle-label="Popover"
+    toggle-label="Other social networks"
     list
     icon="share"
     icon-size="s"

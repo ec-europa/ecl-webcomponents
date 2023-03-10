@@ -553,6 +553,18 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
     }
+    interface EclSocialMediaFollow {
+        "description": string;
+        "styleClass": string;
+        "theme": string;
+        "variant": string;
+    }
+    interface EclSocialMediaFollowItem {
+        "icon": string;
+        "sharePath": string;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclSocialMediaShare {
         "description": string;
         "styleClass": string;
@@ -936,6 +948,18 @@ declare global {
         prototype: HTMLEclSiteHeaderElement;
         new (): HTMLEclSiteHeaderElement;
     };
+    interface HTMLEclSocialMediaFollowElement extends Components.EclSocialMediaFollow, HTMLStencilElement {
+    }
+    var HTMLEclSocialMediaFollowElement: {
+        prototype: HTMLEclSocialMediaFollowElement;
+        new (): HTMLEclSocialMediaFollowElement;
+    };
+    interface HTMLEclSocialMediaFollowItemElement extends Components.EclSocialMediaFollowItem, HTMLStencilElement {
+    }
+    var HTMLEclSocialMediaFollowItemElement: {
+        prototype: HTMLEclSocialMediaFollowItemElement;
+        new (): HTMLEclSocialMediaFollowItemElement;
+    };
     interface HTMLEclSocialMediaShareElement extends Components.EclSocialMediaShare, HTMLStencilElement {
     }
     var HTMLEclSocialMediaShareElement: {
@@ -1034,6 +1058,8 @@ declare global {
         "ecl-search-form": HTMLEclSearchFormElement;
         "ecl-select": HTMLEclSelectElement;
         "ecl-site-header": HTMLEclSiteHeaderElement;
+        "ecl-social-media-follow": HTMLEclSocialMediaFollowElement;
+        "ecl-social-media-follow-item": HTMLEclSocialMediaFollowItemElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
         "ecl-social-media-share-item": HTMLEclSocialMediaShareItemElement;
         "ecl-spinner": HTMLEclSpinnerElement;
@@ -1591,6 +1617,18 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
     }
+    interface EclSocialMediaFollow {
+        "description"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "variant"?: string;
+    }
+    interface EclSocialMediaFollowItem {
+        "icon"?: string;
+        "sharePath"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclSocialMediaShare {
         "description"?: string;
         "styleClass"?: string;
@@ -1698,6 +1736,8 @@ declare namespace LocalJSX {
         "ecl-search-form": EclSearchForm;
         "ecl-select": EclSelect;
         "ecl-site-header": EclSiteHeader;
+        "ecl-social-media-follow": EclSocialMediaFollow;
+        "ecl-social-media-follow-item": EclSocialMediaFollowItem;
         "ecl-social-media-share": EclSocialMediaShare;
         "ecl-social-media-share-item": EclSocialMediaShareItem;
         "ecl-spinner": EclSpinner;
@@ -1766,6 +1806,8 @@ declare module "@stencil/core" {
             "ecl-search-form": LocalJSX.EclSearchForm & JSXBase.HTMLAttributes<HTMLEclSearchFormElement>;
             "ecl-select": LocalJSX.EclSelect & JSXBase.HTMLAttributes<HTMLEclSelectElement>;
             "ecl-site-header": LocalJSX.EclSiteHeader & JSXBase.HTMLAttributes<HTMLEclSiteHeaderElement>;
+            "ecl-social-media-follow": LocalJSX.EclSocialMediaFollow & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowElement>;
+            "ecl-social-media-follow-item": LocalJSX.EclSocialMediaFollowItem & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowItemElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
             "ecl-social-media-share-item": LocalJSX.EclSocialMediaShareItem & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareItemElement>;
             "ecl-spinner": LocalJSX.EclSpinner & JSXBase.HTMLAttributes<HTMLEclSpinnerElement>;
