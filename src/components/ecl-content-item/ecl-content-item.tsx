@@ -21,6 +21,7 @@ export class EclContentItem {
 
   componentDidRender() {
     const picture = this.el.getElementsByTagName('picture')[0];
+    const themeClass = `sc-ecl-content-item-${this.theme}`;
     if (picture) {
       picture.classList.add(
         `sc-ecl-content-item-${this.theme}`,
@@ -35,13 +36,13 @@ export class EclContentItem {
 
       const img = picture.getElementsByTagName('img')[0];
       if (img) {
-        img.classList.add(`ecl-content-item__image`, `sc-ecl-content-item-${this.theme}`);
+        img.classList.add(`ecl-content-item__image`, themeClass);
       }
     }
 
     const block = this.el.querySelector('.ecl-content-block');
     if (block) {
-      block.classList.add(`ecl-content-item__content-block`, `sc-ecl-content-item-${this.theme}`);
+      block.classList.add(`ecl-content-item__content-block`, themeClass);
     }
   }
 

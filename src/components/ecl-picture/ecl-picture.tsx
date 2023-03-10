@@ -7,6 +7,7 @@ import { Component, Prop, h } from '@stencil/core';
     eu: './build/styles/ecl-picture-eu.css',
   },
   shadow: false,
+  scoped: true,
 })
 
 export class EclPicture {
