@@ -361,6 +361,22 @@ export namespace Components {
         "titleAttr": string;
         "variant": string;
     }
+    interface EclListIllustration {
+        "column": number;
+        "styleClass": string;
+        "theme": string;
+        "variant": string;
+        "zebra": boolean;
+    }
+    interface EclListIllustrationItem {
+        "icon": string;
+        "image": string;
+        "imageAlt": string;
+        "itemTitle": string;
+        "squareImage": boolean;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclMediaContainer {
         "alt": string;
         "description": string;
@@ -812,6 +828,18 @@ declare global {
         prototype: HTMLEclLinkElement;
         new (): HTMLEclLinkElement;
     };
+    interface HTMLEclListIllustrationElement extends Components.EclListIllustration, HTMLStencilElement {
+    }
+    var HTMLEclListIllustrationElement: {
+        prototype: HTMLEclListIllustrationElement;
+        new (): HTMLEclListIllustrationElement;
+    };
+    interface HTMLEclListIllustrationItemElement extends Components.EclListIllustrationItem, HTMLStencilElement {
+    }
+    var HTMLEclListIllustrationItemElement: {
+        prototype: HTMLEclListIllustrationItemElement;
+        new (): HTMLEclListIllustrationItemElement;
+    };
     interface HTMLEclMediaContainerElement extends Components.EclMediaContainer, HTMLStencilElement {
     }
     var HTMLEclMediaContainerElement: {
@@ -988,6 +1016,8 @@ declare global {
         "ecl-label": HTMLEclLabelElement;
         "ecl-language-item": HTMLEclLanguageItemElement;
         "ecl-link": HTMLEclLinkElement;
+        "ecl-list-illustration": HTMLEclListIllustrationElement;
+        "ecl-list-illustration-item": HTMLEclListIllustrationItemElement;
         "ecl-media-container": HTMLEclMediaContainerElement;
         "ecl-message": HTMLEclMessageElement;
         "ecl-news-ticker": HTMLEclNewsTickerElement;
@@ -1369,6 +1399,22 @@ declare namespace LocalJSX {
         "titleAttr"?: string;
         "variant"?: string;
     }
+    interface EclListIllustration {
+        "column"?: number;
+        "styleClass"?: string;
+        "theme"?: string;
+        "variant"?: string;
+        "zebra"?: boolean;
+    }
+    interface EclListIllustrationItem {
+        "icon"?: string;
+        "image"?: string;
+        "imageAlt"?: string;
+        "itemTitle"?: string;
+        "squareImage"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclMediaContainer {
         "alt"?: string;
         "description"?: string;
@@ -1634,6 +1680,8 @@ declare namespace LocalJSX {
         "ecl-label": EclLabel;
         "ecl-language-item": EclLanguageItem;
         "ecl-link": EclLink;
+        "ecl-list-illustration": EclListIllustration;
+        "ecl-list-illustration-item": EclListIllustrationItem;
         "ecl-media-container": EclMediaContainer;
         "ecl-message": EclMessage;
         "ecl-news-ticker": EclNewsTicker;
@@ -1700,6 +1748,8 @@ declare module "@stencil/core" {
             "ecl-label": LocalJSX.EclLabel & JSXBase.HTMLAttributes<HTMLEclLabelElement>;
             "ecl-language-item": LocalJSX.EclLanguageItem & JSXBase.HTMLAttributes<HTMLEclLanguageItemElement>;
             "ecl-link": LocalJSX.EclLink & JSXBase.HTMLAttributes<HTMLEclLinkElement>;
+            "ecl-list-illustration": LocalJSX.EclListIllustration & JSXBase.HTMLAttributes<HTMLEclListIllustrationElement>;
+            "ecl-list-illustration-item": LocalJSX.EclListIllustrationItem & JSXBase.HTMLAttributes<HTMLEclListIllustrationItemElement>;
             "ecl-media-container": LocalJSX.EclMediaContainer & JSXBase.HTMLAttributes<HTMLEclMediaContainerElement>;
             "ecl-message": LocalJSX.EclMessage & JSXBase.HTMLAttributes<HTMLEclMessageElement>;
             "ecl-news-ticker": LocalJSX.EclNewsTicker & JSXBase.HTMLAttributes<HTMLEclNewsTickerElement>;

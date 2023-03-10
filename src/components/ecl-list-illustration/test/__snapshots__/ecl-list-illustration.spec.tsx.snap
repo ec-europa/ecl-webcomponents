@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-list-illustration renders 1`] = `
+<ecl-list-illustration column="1" theme="ec" zebra="true">
+  <!---->
+  <div class="ecl-list-illustration ecl-list-illustration--col-1 ecl-list-illustration--zebra">
+    <div class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+      <div class="ecl-list-illustration__image sc-ecl-list-illustration-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
+        <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
+          <div class="ecl-list-illustration__title sc-ecl-list-illustration-ec">
+            List with illustration item 1
+          </div>
+        </div>
+        <div class="ecl-list-illustration__description sc-ecl-list-illustration-ec">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </div>
+      </div>
+    </div>
+    <div class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+      <div class="ecl-list-illustration__image sc-ecl-list-illustration-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
+        <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
+          <div class="ecl-list-illustration__title sc-ecl-list-illustration-ec">
+            List with illustration item 2
+          </div>
+        </div>
+        <div class="ecl-list-illustration__description sc-ecl-list-illustration-ec">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </div>
+      </div>
+    </div>
+    <div class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+      <div class="ecl-list-illustration__image sc-ecl-list-illustration-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
+        <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
+          <div class="ecl-list-illustration__title sc-ecl-list-illustration-ec">
+            List with illustration item 3
+          </div>
+        </div>
+        <div class="ecl-list-illustration__description sc-ecl-list-illustration-ec">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </div>
+      </div>
+    </div>
+    <div class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+      <div class="ecl-list-illustration__image sc-ecl-list-illustration-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
+        <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
+          <div class="ecl-list-illustration__title sc-ecl-list-illustration-ec">
+            List with illustration item 4
+          </div>
+        </div>
+        <div class="ecl-list-illustration__description sc-ecl-list-illustration-ec">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </div>
+      </div>
+    </div>
+    <div class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+      <div class="ecl-list-illustration__image sc-ecl-list-illustration-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
+        <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
+          <div class="ecl-list-illustration__title sc-ecl-list-illustration-ec">
+            List with illustration item 5
+          </div>
+        </div>
+        <div class="ecl-list-illustration__description sc-ecl-list-illustration-ec">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </div>
+      </div>
+    </div>
+  </div>
+</ecl-list-illustration>
+`;
