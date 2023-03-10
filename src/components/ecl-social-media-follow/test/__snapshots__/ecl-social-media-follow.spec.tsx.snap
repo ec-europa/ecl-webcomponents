@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-social-media-follow renders 1`] = `
+<ecl-social-media-follow description="Follow on social media" theme="ec" variant="horizontal">
+  <!---->
+  <div class="ecl-social-media-follow ecl-social-media-follow--horizontal">
+    <p class="ecl-social-media-follow__description">
+      Follow on social media
+    </p>
+    <ul class="ecl-social-media-follow__list">
+      <li class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec">
+        <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
+          <!---->
+          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://facebook.com">
+            <ecl-icon slot="icon-before">
+              <svg class="ecl-icon ecl-icon--m ecl-link__icon ecl-link__icon--before">
+                <use xlink:href="/build/images/ec/icons-social-media.svg#facebook-color"></use>
+              </svg>
+            </ecl-icon>
+            Facebook
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec">
+        <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
+          <!---->
+          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://twitter.com">
+            <ecl-icon slot="icon-before">
+              <svg class="ecl-icon ecl-icon--m ecl-link__icon ecl-link__icon--before">
+                <use xlink:href="/build/images/ec/icons-social-media.svg#twitter-color"></use>
+              </svg>
+            </ecl-icon>
+            Twitter
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec">
+        <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
+          <!---->
+          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://instagram.com">
+            <ecl-icon slot="icon-before">
+              <svg class="ecl-icon ecl-icon--m ecl-link__icon ecl-link__icon--before">
+                <use xlink:href="/build/images/ec/icons-social-media.svg#instagram-color"></use>
+              </svg>
+            </ecl-icon>
+            Instagram
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec">
+        <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
+          <!---->
+          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://linkedin.com">
+            <ecl-icon slot="icon-before">
+              <svg class="ecl-icon ecl-icon--m ecl-link__icon ecl-link__icon--before">
+                <use xlink:href="/build/images/ec/icons-social-media.svg#linkedin-color"></use>
+              </svg>
+            </ecl-icon>
+            Linkedin
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec">
+        <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
+          <!---->
+          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://telegram.com">
+            <ecl-icon slot="icon-before">
+              <svg class="ecl-icon ecl-icon--m ecl-link__icon ecl-link__icon--before">
+                <use xlink:href="/build/images/ec/icons-social-media.svg#telegram-color"></use>
+              </svg>
+            </ecl-icon>
+            Telegram
+            <slot-fb name="icon-after"></slot-fb>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec">
+        <ecl-popover ecl-script="" icon="share" icon-size="s" item-id="popover-example" list="" theme="ec" toggle-label="Popover">
+          <!---->
+          <div class="ecl-popover">
+            <a aria-controls="popover-example" aria-expanded="false" class="ecl-link ecl-link--standalone ecl-popover__toggle ecl-social-media-follow__link sc-ecl-social-media-follow-ec" data-ecl-popover-toggle="data-ecl-popover-toggle">
+              <ecl-icon style-class="ecl-link__icon--before">
+                <svg class="ecl-icon ecl-icon--s ecl-link__icon--before">
+                  <use xlink:href="/build/images/ec/icons.svg#share"></use>
+                </svg>
+              </ecl-icon>
+              Popover
+            </a>
+            <div class="ecl-popover__container" hidden="" id="popover-example">
+              <div class="ecl-popover__content">
+                <ul class="ecl-popover__list"></ul>
+              </div>
+            </div>
+          </div>
+        </ecl-popover>
+      </li>
+    </ul>
+  </div>
+</ecl-social-media-follow>
+`;
