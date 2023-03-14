@@ -7,9 +7,11 @@ export const config: Config = {
     {
       type: 'dist',
       esmLoaderPath: '../loader',
+      dir: 'ecl-webcomponents/dist',
     },
     {
       type: 'dist-custom-elements',
+      dir: 'ecl-webcomponents/dist',
     },
     {
       type: 'docs-readme',

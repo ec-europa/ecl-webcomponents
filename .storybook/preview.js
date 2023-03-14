@@ -1,4 +1,4 @@
-import { defineCustomElements } from '../loader';
+import { defineCustomElements } from '../ecl-webcomponents/loader';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 defineCustomElements();

@@ -1,29 +1,24 @@
 {
-  "name": "@ecl/ecl-webcomponents",
+  "name": "@ecl/ecl-webcomponents-library",
   "version": "0.0.0",
-  "description": "ECL web components",
+  "description": "ECL web components library",
   "license": "EUPL-1.2",
   "private": true,
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.js",
-  "es2015": "dist/esm/index.mjs",
-  "es2017": "dist/esm/index.mjs",
-  "types": "dist/types/components.d.ts",
-  "collection": "dist/collection/collection-manifest.json",
-  "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/ecl-webcomponents/ecl-webcomponents.esm.js",
+  "main": "ecl-webcomponents/dist/index.cjs.js",
+  "module": "ecl-webcomponents/dist/index.js",
+  "es2015": "ecl-webcomponents/dist/esm/index.mjs",
+  "es2017": "ecl-webcomponents/dist/esm/index.mjs",
+  "types": "ecl-webcomponents/dist/types/components.d.ts",
+  "collection": "ecl-webcomponents/dist/collection/collection-manifest.json",
+  "collection:main": "ecl-webcomponents/dist/collection/index.js",
   "engines": {
-    "node": ">=12.0.0",
-    "yarn": ">=1.0.0"
+    "node": ">=18.0.0",
+    "yarn": ">=1.1.0"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/ec-europa/ecl-webcomponents"
   },
-  "files": [
-    "dist/",
-    "loader/"
-  ],
   "scripts": {
     "build": "run-s build:*",
     "build:clean": "rimraf build dist",
@@ -32,7 +27,7 @@
     "build:storybook": "NODE_ENV=production build-storybook -o build",
     "build:playground": "run-s build:playground:*",
     "build:playground:clean": "rimraf playground/ecl-webcomponents",
-    "build:playground:copy": "ncp dist/ecl-webcomponents playground/ecl-webcomponents && ncp ./playground ./build/playground",
+    "build:playground:copy": "ncp ecl-webcomponents/dist/ecl-webcomponents playground/ecl-webcomponents && ncp ./playground ./build/playground",
     "build:playground:version": "scripts/add-build-number.js",
     "build:copy": "scripts/copy-assets.sh",
     "lint:js": "eslint . --ext .js",
@@ -42,6 +37,7 @@
     "prepare": "npx husky install",
     "pretty-check": "prettier --check \"src/**/*.{md,mdx,html,json,yml,js,jsx,scss}\"",
     "pretty-write": "prettier --write \"src/**/*.{md,mdx,html,json,yml,js,jsx,scss}\"",
+    "publish": "scripts/publish.sh",
     "start": "stencil build --watch",
     "test": "yarn pretty-check && stencil test --spec",
     "test:update": "rimraf src/components/*/test/__snapshots__ && yarn test",
@@ -54,12 +50,14 @@
     "plugins:make": "lerna --scope \"@ecl/ckeditor5-*\" run build",
     "postinstall": "patch-package && [ -z \"$NOYARNPOSTINSTALL\" ] && (lerna run postinstall && lerna run prepublish) || echo \"Bypass prepublish\"",
     "refresh-playground": "lerna --scope \"@ecl/ckeditor5-*\" run dev:install-plugin && lerna --scope \"@ecl/ckeditor5-*\" run build && yarn build:playground",
-    "dev": "start-storybook -p 6006"
+    "dev": "start-storybook -p 6006",
+    "update-version": "scripts/update-version.sh"
   },
   "workspaces": [
     "src/components/**",
     "playground",
-    "src/plugins/**"
+    "src/plugins/**",
+    "ecl-webcomponents"
   ],
   "dependencies": {
     "@stencil/core": "3.1.0"
