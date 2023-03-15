@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-picture",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.0.0",
+  "version": "0.1.0-alpha.0",
   "description": "ECL Picture",
   "main": "ecl-picture.tsx",
   "private": true,

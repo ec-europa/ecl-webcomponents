@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-breadcrumb",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "3.7.0",
+  "version": "0.1.0-alpha.0",
   "description": "ECL Breadcrumb",
   "main": "ecl-breadcrumb.js",
   "private": true,
