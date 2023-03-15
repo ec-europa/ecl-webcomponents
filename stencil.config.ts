@@ -11,7 +11,7 @@ export const config: Config = {
     },
     {
       type: 'dist-custom-elements',
-      dir: 'ecl-webcomponents/dist',
+      dir: 'ecl-webcomponents/dist/custom-elements',
     },
     {
       type: 'docs-readme',

@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Insert ECL components in ckeditor5",
   "main": "src/ecl_webcomponents.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev:fetch": "npm install --ignore-scripts --silent --no-save git+https://github.com/ckeditor/ckeditor5.git",
     "dev:copy": "ncp ../../../node_modules/ckeditor5 ../../../ckeditor5",
