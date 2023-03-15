@@ -1,6 +1,5 @@
 {
   "name": "@ecl/ecl-webcomponents-library",
-  "version": "0.0.0",
   "description": "ECL web components library",
   "license": "EUPL-1.2",
   "private": true,

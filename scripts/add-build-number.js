@@ -3,7 +3,7 @@
 const replace = require('replace-in-file');
 const { generate } = require('build-number-generator');
 const getLatestVersion = require('get-latest-version');
-const eclWebComponentsVersion = require('../package.json').version;
+const eclWebComponentsVersion = require('../lerna.json').version;
 
 const inspectorScript = '<script src="../../ckeditor5/node_modules/@ckeditor/ckeditor5-inspector/build/inspector.js"></script>';
 const inspector = 'CKEditorInspector.attach( editor );';
@@ -12,7 +12,6 @@ const buildNumber = generate();
 
 getLatestVersion('ckeditor5')
   .then(version => {
-    console.log(version);
     const build = {
       files: './build/playground/index.html',
       from: /{####}/g,
