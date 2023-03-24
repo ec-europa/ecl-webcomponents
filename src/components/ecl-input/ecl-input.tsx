@@ -126,6 +126,7 @@ export class EclInput {
         const range = new ECL.Range(formGroup);
         range.init();
       };
+      document.body.appendChild(script);
     }
     if (this.type === 'file' && this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-file-upload-vanilla.js');
@@ -164,7 +165,6 @@ export class EclInput {
         childList: true,
         subtree: true,
       });
-
       document.body.appendChild(script);
     }
   }

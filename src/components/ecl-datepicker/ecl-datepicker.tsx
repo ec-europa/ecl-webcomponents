@@ -56,7 +56,6 @@ export class EclDatepicker {
     const script = document.createElement('script');
     script.src = src;
     script.onload = () => {
-      console.log(this.el);
       const datepicker = new ECL.Datepicker(this.el.querySelector('.ecl-datepicker__field'));
       datepicker.init();
     };
