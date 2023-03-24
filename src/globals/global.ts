@@ -1,8 +1,14 @@
 import { setMode } from '@stencil/core';
 
+declare global {
+  interface Window {
+      eclTheme:any;
+  }
+}
+
 export default () => {
   const themeResolver = (elm: HTMLElement) => {
-    const theme = (elm as any).theme || elm.getAttribute('theme');
+    const theme = window.eclTheme || (elm as any).theme || elm.getAttribute('theme');
     if (theme) {
       return theme;
     } else if (!elm.parentElement) {
