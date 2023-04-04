@@ -154,6 +154,7 @@ const Template = (args) =>
   `<ecl-form-group
     helper-text="${args.helperText}"
     helper-id="helper-id"
+    theme="${args.theme}"
     invalid=${args.invalid}
     invalid-text="${args.invalidText}"
     invalid-icon="${args.invalidIcon}"
@@ -175,6 +176,7 @@ const Template = (args) =>
       multiple-clear-all-text="${args.multipleClearAllText}"
       ecl-script=${args.multiple}
       name="ecl-select"
+      theme="${args.theme}"
       width=${args.width}
     > 
       <optgroup label="European countries">
