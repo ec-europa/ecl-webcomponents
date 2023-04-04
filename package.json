@@ -23,7 +23,7 @@
     "build:clean": "rimraf build dist",
     "build:web-components": "lerna --scope \"@ecl/web-components-*\" run build",
     "build:stencil": "stencil build",
-    "build:storybook": "NODE_ENV=production build-storybook -o build",
+    "build:storybook": "NODE_ENV=production sb build -o build",
     "build:playground": "run-s build:playground:*",
     "build:playground:clean": "rimraf playground/ecl-webcomponents",
     "build:playground:copy": "ncp ecl-webcomponents/dist/ecl-webcomponents playground/ecl-webcomponents && ncp ./playground ./build/playground",
@@ -49,7 +49,7 @@
     "plugins:make": "lerna --scope \"@ecl/ckeditor5-*\" run build",
     "postinstall": "patch-package && [ -z \"$NOYARNPOSTINSTALL\" ] && (lerna run postinstall && lerna run prepublish) || echo \"Bypass prepublish\"",
     "refresh-playground": "lerna --scope \"@ecl/ckeditor5-*\" run dev:install-plugin && lerna --scope \"@ecl/ckeditor5-*\" run build && yarn build:playground",
-    "dev": "start-storybook -p 6006",
+    "dev": "sb dev -p 6006",
     "update-version": "scripts/update-version.sh"
   },
   "workspaces": [
@@ -68,14 +68,16 @@
     "@babel/preset-react": "7.18.6",
     "@babel/preset-typescript": "7.21.4",
     "@prettier/plugin-xml": "2.2.0",
-    "@storybook/addon-essentials": "6.5.16",
-    "@storybook/addon-links": "6.5.16",
-    "@storybook/builder-webpack5": "6.5.16",
-    "@storybook/html": "6.5.16",
-    "@storybook/manager-webpack5": "6.5.16",
+    "@storybook/addon-essentials": "7.0.2",
+    "@storybook/addon-links": "7.0.2",
+    "@storybook/builder-webpack5": "7.0.2",
+    "@storybook/cli": "7.0.2",
+    "@storybook/html": "7.0.2",
+    "@storybook/html-webpack5": "7.0.2",
     "@types/jest": "27.0.3",
     "babel-loader": "9.1.2",
     "build-number-generator": "2.0.4",
+    "core-js": "3.30.0",
     "copyfiles": "2.4.1",
     "cross-env": "7.0.3",
     "eslint": "8.37.0",
@@ -100,6 +102,8 @@
     "patch-package": "6.5.1",
     "prettier": "2.8.7",
     "puppeteer": "19.5.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "replace-in-file": "6.3.5",
     "rimraf": "4.4.1",
     "stylelint": "15.4.0",
@@ -131,6 +135,7 @@
     "glob-parent": ">=5.1.2",
     "trim": ">=0.0.3",
     "json5": ">=1.0.2",
-    "http-cache-semantics": ">=4.1.1"
+    "http-cache-semantics": ">=4.1.1",
+    "trim-newlines": ">=3.0.1"
   }
 }

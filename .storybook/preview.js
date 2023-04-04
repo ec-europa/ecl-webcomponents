@@ -5,9 +5,7 @@ defineCustomElements();
 
 export const parameters = {
   docs: {
-    source: {
-      state: 'open',
-    },
+    canvas: { sourceState: 'shown' },
   },
   viewMode: 'docs',
   layout: 'padded',

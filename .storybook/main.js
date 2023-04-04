@@ -28,12 +28,15 @@ if (!isProd) {
 }
 
 module.exports = {
-  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-viewport'],
-  framework: '@storybook/html',
+  framework: '@storybook/html-webpack5',
   staticDirs,
   core: {
-    builder: 'webpack5',
+    builder: '@storybook/builder-webpack5',
+  },
+  docs: {
+    autodocs: true,
   },
   features: {
     postcss: false,
