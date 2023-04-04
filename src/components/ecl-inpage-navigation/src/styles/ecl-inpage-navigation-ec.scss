@@ -2,7 +2,7 @@
 
 @use '@ecl/vanilla-component-inpage-navigation/inpage-navigation-ec';
 
-@media (min-width: 996px) {
+@media (width >= 996px) {
   .ecl-inpage-navigation__trigger.sc-ecl-inpage-navigation-ec {
     display: none !important;
   }

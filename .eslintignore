@@ -8,4 +8,6 @@
 **/static
 loader
 src/plugins/
+ckeditor5
 playground/editor
+playground/ecl-webcomponents
