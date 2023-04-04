@@ -14,7 +14,7 @@
   padding: calc(0.75rem - 1px) !important;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .ecl-search-form__button.sc-ecl-search-form-ec {
     padding-inline-start: calc(1rem - 1px) !important;
     padding-inline-end: calc(1rem - 1px) !important;

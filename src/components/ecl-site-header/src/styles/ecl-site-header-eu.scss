@@ -8,7 +8,7 @@
   position: absolute;
 }
 
-@media (min-width: 996px) {
+@media (width >= 996px) {
   .ecl-search-form.ecl-site-header__search {
     display: flex;
   }
@@ -18,7 +18,7 @@
   display: none;
 }
 
-@media (min-width: 996px) {
+@media (width >= 996px) {
   .ecl-search-form.ecl-site-header__search {
     display: flex !important;
     position: relative;
@@ -29,7 +29,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 996px) {
+@media (width >= 996px) {
   .ecl-site-header__language-icon.sc-ecl-site-header-eu {
     flex-direction: row;
   }
@@ -40,7 +40,7 @@
   left: 38%;
 }
 
-@media (min-width: 996px) {
+@media (width >= 996px) {
   .ecl-site-header__language-code.sc-ecl-site-header-eu {
     left: 48%;
   }
