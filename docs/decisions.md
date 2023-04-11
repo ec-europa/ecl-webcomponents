@@ -1,9 +1,9 @@
 ### Vanilla web-component versus framework, library, tool
 
 We started implementing ECL components as vanilla web-components from scratch, using the Web apis directly, developing like this was time demanding and producing a certain amount of code for each component without preparing for any distribution of those web-components, browser compatibility, polyfill.
-We then switched to [stencil.js](https://stencil.js) that Piotr Nowak suggested us, ecl-webcomponents started as an investigation using the [POC](https://github.com/pnowak2/eui-ecl-webcomponents/tree/master/src/components) that he made.
+We then switched to [Stencil](https://stenciljs.com/) that Piotr Nowak suggested us, ecl-webcomponents started as an investigation using the [POC](https://github.com/pnowak2/eui-ecl-webcomponents/tree/master/src/components) that he made.
 
-So, [Stencil.js](https://stenciljs.com/) is used to compile our typescript files into vanilla web components.
+So, [Stencil](https://stenciljs.com/) is used to compile our typescript files into vanilla web components.
 Please refer to the documentation of this project, particularly about the available lifecycle methods.
 Generally speaking this tool has been chosen because:
 
