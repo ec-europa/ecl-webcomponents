@@ -29,6 +29,7 @@
     "build:playground:copy": "ncp ecl-webcomponents/dist/ecl-webcomponents playground/ecl-webcomponents && ncp ./playground ./build/playground",
     "build:playground:version": "scripts/add-build-number.js",
     "build:copy": "scripts/copy-assets.sh",
+    "changelog": "lerna-changelog",
     "lint:js": "eslint . --ext .js",
     "lint:scss": "stylelint \"./src/**/*.scss\"",
     "lint": "npm-run-all --parallel lint:* -cln",
