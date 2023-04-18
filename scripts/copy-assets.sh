@@ -24,7 +24,7 @@ cp -r ./src/components/ecl-carousel/build ./build
 cp -r ./src/components/ecl-file/build ./build
 cp -r ./src/components/ecl-news-ticker/build ./build
 cp -r ./src/components/ecl-select/build ./build
-cp -r ./src/components/ecl-input/build ./build
+cp -r ./src/components/ecl-file-upload/build ./build
 cp -r ./src/components/ecl-category-filter/build ./build
 cp -r ./src/components/ecl-select/build ./build
 cp -r ./src/components/ecl-timeline/build ./build
@@ -34,3 +34,4 @@ cp -r ./src/components/ecl-popover/build ./build
 cp -r ./src/components/ecl-datepicker/build ./build
 cp -r ./src/components/ecl-site-header/build ./build
 cp -r ./src/components/ecl-gallery/build ./build
+cp -r ./src/components/ecl-range/build ./build
