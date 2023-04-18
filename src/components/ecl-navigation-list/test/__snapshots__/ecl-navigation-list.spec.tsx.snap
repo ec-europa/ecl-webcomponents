@@ -1,0 +1,329 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-navigation-list renders 1`] = `
+<ecl-navigation-list column="2" theme="ec">
+  <!---->
+  <div class="ecl-navigation-list ecl-navigation-list--col-2">
+    <div class="ecl-navigation-list__item sc-ecl-navigation-list-ec">
+      <div aria-label="Alt text of the image" class="ecl-navigation-list__image sc-ecl-navigation-list-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="" theme="ec">
+        <!---->
+        <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
+          <h1 class="ecl-content-block__title">
+            <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
+              <!---->
+              <a class="ecl-link ecl-link--standalone" href="/example.html">
+                Title 1
+                <slot-fb name="icon-after"></slot-fb>
+              </a>
+            </ecl-link>
+          </h1>
+          <div class="ecl-content-block__description">
+            <p slot="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida ipsum ut lorem cursus, quis tincidunt sem viverra. Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus
+            </p>
+          </div>
+          <div class="ecl-content-block__link-container">
+            <ul class="ecl-content-block__link-list">
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 1
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 2
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 3
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 4
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+            </ul>
+            <ul class="ecl-content-block__link-list">
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Secondary Link 1
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Secondary Link 2
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </ecl-content-block>
+    </div>
+    <div class="ecl-navigation-list__item sc-ecl-navigation-list-ec">
+      <div aria-label="Alt text of the image" class="ecl-navigation-list__image sc-ecl-navigation-list-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="" theme="ec">
+        <!---->
+        <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
+          <h1 class="ecl-content-block__title">
+            <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
+              <!---->
+              <a class="ecl-link ecl-link--standalone" href="/example.html">
+                Title 2
+                <slot-fb name="icon-after"></slot-fb>
+              </a>
+            </ecl-link>
+          </h1>
+          <div class="ecl-content-block__description">
+            <p slot="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida ipsum ut lorem cursus, quis tincidunt sem viverra. Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus
+            </p>
+          </div>
+          <div class="ecl-content-block__link-container">
+            <ul class="ecl-content-block__link-list">
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 1
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 2
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 3
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 4
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+            </ul>
+            <ul class="ecl-content-block__link-list">
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Secondary Link 1
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Secondary Link 2
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </ecl-content-block>
+    </div>
+    <div class="ecl-navigation-list__item sc-ecl-navigation-list-ec">
+      <div aria-label="Alt text of the image" class="ecl-navigation-list__image sc-ecl-navigation-list-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="" theme="ec">
+        <!---->
+        <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
+          <h1 class="ecl-content-block__title">
+            <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
+              <!---->
+              <a class="ecl-link ecl-link--standalone" href="/example.html">
+                Title 3
+                <slot-fb name="icon-after"></slot-fb>
+              </a>
+            </ecl-link>
+          </h1>
+          <div class="ecl-content-block__description">
+            <p slot="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida ipsum ut lorem cursus, quis tincidunt sem viverra. Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus
+            </p>
+          </div>
+          <div class="ecl-content-block__link-container">
+            <ul class="ecl-content-block__link-list">
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 1
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 2
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 3
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 4
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+            </ul>
+            <ul class="ecl-content-block__link-list">
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Secondary Link 1
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Secondary Link 2
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </ecl-content-block>
+    </div>
+    <div class="ecl-navigation-list__item sc-ecl-navigation-list-ec">
+      <div aria-label="Alt text of the image" class="ecl-navigation-list__image sc-ecl-navigation-list-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="" theme="ec">
+        <!---->
+        <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
+          <h1 class="ecl-content-block__title">
+            <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
+              <!---->
+              <a class="ecl-link ecl-link--standalone" href="/example.html">
+                Title 4
+                <slot-fb name="icon-after"></slot-fb>
+              </a>
+            </ecl-link>
+          </h1>
+          <div class="ecl-content-block__description">
+            <p slot="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida ipsum ut lorem cursus, quis tincidunt sem viverra. Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus
+            </p>
+          </div>
+          <div class="ecl-content-block__link-container">
+            <ul class="ecl-content-block__link-list">
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 1
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 2
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 3
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 4
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+            </ul>
+            <ul class="ecl-content-block__link-list">
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Secondary Link 1
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Secondary Link 2
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </ecl-content-block>
+    </div>
+    <div class="ecl-navigation-list__item sc-ecl-navigation-list-ec">
+      <div aria-label="Alt text of the image" class="ecl-navigation-list__image sc-ecl-navigation-list-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="" theme="ec">
+        <!---->
+        <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
+          <h1 class="ecl-content-block__title">
+            <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
+              <!---->
+              <a class="ecl-link ecl-link--standalone" href="/example.html">
+                Title 5
+                <slot-fb name="icon-after"></slot-fb>
+              </a>
+            </ecl-link>
+          </h1>
+          <div class="ecl-content-block__description">
+            <p slot="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida ipsum ut lorem cursus, quis tincidunt sem viverra. Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus
+            </p>
+          </div>
+          <div class="ecl-content-block__link-container">
+            <ul class="ecl-content-block__link-list">
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 1
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 2
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 3
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Primary Link 4
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+            </ul>
+            <ul class="ecl-content-block__link-list">
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Secondary Link 1
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+              <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                  Secondary Link 2
+                  <slot-fb name="icon-after"></slot-fb>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </ecl-content-block>
+    </div>
+  </div>
+</ecl-navigation-list>
+`;

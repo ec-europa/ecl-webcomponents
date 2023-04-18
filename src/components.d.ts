@@ -399,6 +399,19 @@ export namespace Components {
         "theme": string;
         "variant": string;
     }
+    interface EclNavigationList {
+        "column": number;
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclNavigationListItem {
+        "border": boolean;
+        "image": string;
+        "imageAlt": string;
+        "itemTitle": string;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclNewsTicker {
         "counterLabel": string;
         "eclScript": boolean;
@@ -864,6 +877,18 @@ declare global {
         prototype: HTMLEclMessageElement;
         new (): HTMLEclMessageElement;
     };
+    interface HTMLEclNavigationListElement extends Components.EclNavigationList, HTMLStencilElement {
+    }
+    var HTMLEclNavigationListElement: {
+        prototype: HTMLEclNavigationListElement;
+        new (): HTMLEclNavigationListElement;
+    };
+    interface HTMLEclNavigationListItemElement extends Components.EclNavigationListItem, HTMLStencilElement {
+    }
+    var HTMLEclNavigationListItemElement: {
+        prototype: HTMLEclNavigationListItemElement;
+        new (): HTMLEclNavigationListItemElement;
+    };
     interface HTMLEclNewsTickerElement extends Components.EclNewsTicker, HTMLStencilElement {
     }
     var HTMLEclNewsTickerElement: {
@@ -1044,6 +1069,8 @@ declare global {
         "ecl-list-illustration-item": HTMLEclListIllustrationItemElement;
         "ecl-media-container": HTMLEclMediaContainerElement;
         "ecl-message": HTMLEclMessageElement;
+        "ecl-navigation-list": HTMLEclNavigationListElement;
+        "ecl-navigation-list-item": HTMLEclNavigationListItemElement;
         "ecl-news-ticker": HTMLEclNewsTickerElement;
         "ecl-news-ticker-item": HTMLEclNewsTickerItemElement;
         "ecl-page-banner": HTMLEclPageBannerElement;
@@ -1463,6 +1490,19 @@ declare namespace LocalJSX {
         "theme"?: string;
         "variant"?: string;
     }
+    interface EclNavigationList {
+        "column"?: number;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclNavigationListItem {
+        "border"?: boolean;
+        "image"?: string;
+        "imageAlt"?: string;
+        "itemTitle"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclNewsTicker {
         "counterLabel"?: string;
         "eclScript"?: boolean;
@@ -1722,6 +1762,8 @@ declare namespace LocalJSX {
         "ecl-list-illustration-item": EclListIllustrationItem;
         "ecl-media-container": EclMediaContainer;
         "ecl-message": EclMessage;
+        "ecl-navigation-list": EclNavigationList;
+        "ecl-navigation-list-item": EclNavigationListItem;
         "ecl-news-ticker": EclNewsTicker;
         "ecl-news-ticker-item": EclNewsTickerItem;
         "ecl-page-banner": EclPageBanner;
@@ -1792,6 +1834,8 @@ declare module "@stencil/core" {
             "ecl-list-illustration-item": LocalJSX.EclListIllustrationItem & JSXBase.HTMLAttributes<HTMLEclListIllustrationItemElement>;
             "ecl-media-container": LocalJSX.EclMediaContainer & JSXBase.HTMLAttributes<HTMLEclMediaContainerElement>;
             "ecl-message": LocalJSX.EclMessage & JSXBase.HTMLAttributes<HTMLEclMessageElement>;
+            "ecl-navigation-list": LocalJSX.EclNavigationList & JSXBase.HTMLAttributes<HTMLEclNavigationListElement>;
+            "ecl-navigation-list-item": LocalJSX.EclNavigationListItem & JSXBase.HTMLAttributes<HTMLEclNavigationListItemElement>;
             "ecl-news-ticker": LocalJSX.EclNewsTicker & JSXBase.HTMLAttributes<HTMLEclNewsTickerElement>;
             "ecl-news-ticker-item": LocalJSX.EclNewsTickerItem & JSXBase.HTMLAttributes<HTMLEclNewsTickerItemElement>;
             "ecl-page-banner": LocalJSX.EclPageBanner & JSXBase.HTMLAttributes<HTMLEclPageBannerElement>;
