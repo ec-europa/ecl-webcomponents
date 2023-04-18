@@ -1,4 +1,4 @@
-import { Component, h, Prop, Element, getAssetPath } from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 declare const ECL: any;
 
 @Component({
@@ -12,12 +12,10 @@ declare const ECL: any;
   assetsDirs: ['build'],
 })
 export class EclInput {
-  @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
   @Prop() inputClass: string;
   @Prop() eclScript: boolean = false;
-  @Prop() withUtils: boolean = false;
   @Prop() disabled: boolean = false;
   @Prop() required: boolean = false;
   @Prop() invalid: boolean = false;
@@ -30,10 +28,6 @@ export class EclInput {
   @Prop() inputId: string;
   @Prop() name: string;
   @Prop() defaultValue: string;
-  @Prop() valueLabel: string;
-  @Prop() buttonChooseLabel: string;
-  @Prop() buttonReplaceLabel: string;
-  @Prop() multiple: boolean = false;
 
   getClass(): string {
     const styleClasses = ['ecl-input', this.styleClass];
@@ -64,9 +58,6 @@ export class EclInput {
   getInputClasses(input): string {
     let inputClasses = [`ecl-${input}__input`];
 
-    if (this.type === 'file') {
-      inputClasses = ['ecl-file-upload'];
-    }
     if (this.type === 'text' || this.type === 'search') {
       inputClasses = ['ecl-text-input', `ecl-text-input--${this.width}`];
       if (this.invalid) {
@@ -95,65 +86,9 @@ export class EclInput {
     return boxClasses.join(' ');
   }
 
-  componentWillLoad() {
-    if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
-      const style = document.createElement('link');
-      style.rel = 'stylesheet';
-      style.type = 'text/css';
-      style.id = 'ecl-utils-styles';
-      style.href = getAssetPath(`./build/styles/ecl-utilities-${this.theme}.css`);
-      document.body.appendChild(style);
-    }
-  }
-
-  componentDidRender() {
-    if (this.type === 'file' && this.eclScript) {
-      const src = getAssetPath('./build/scripts/ecl-file-upload-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        const fileUpload = new ECL.FileUpload(this.el.firstElementChild);
-        fileUpload.init();
-      };
-      // @ts-ignore
-      const observer = new MutationObserver((mutationsList, observer) => {
-        for (const mutation of mutationsList) {
-          if (mutation.type === 'childList') {
-            const nodes = mutation.addedNodes;
-            nodes.forEach(node => {
-              const htmlNode = node as HTMLElement;
-              htmlNode.classList.add(`sc-ecl-input-${this.theme}`);
-              const name = htmlNode.querySelector('.ecl-file-upload__item-name');
-              if (name) {
-                name.classList.add(`sc-ecl-input-${this.theme}`);
-              }
-              const meta = htmlNode.querySelector('.ecl-file-upload__item-meta');
-              if (meta) {
-                meta.classList.add(`sc-ecl-input-${this.theme}`);
-              }
-            });
-          }
-        }
-      });
-
-      observer.observe(this.el.querySelector('.ecl-file-upload__list'), {
-        attributes: true,
-        childList: true,
-        subtree: true,
-      });
-      document.body.appendChild(script);
-    }
-  }
-
   render() {
     const wrapperAttrs = {};
 
-    if (this.type === 'file') {
-      wrapperAttrs['data-ecl-file-upload-group'] = true
-    }
     const attributes = {
       class: this.getInputClasses(this.type),
       type: this.type,
@@ -164,11 +99,6 @@ export class EclInput {
       value: this.defaultValue,
       placeholder: this.placeholder,
     };
-
-    if (this.type === 'file') {
-      attributes['data-ecl-file-upload-input'] = true;
-      attributes['multiple'] = this.multiple;
-    }
 
     return (
       <div 
@@ -221,28 +151,6 @@ export class EclInput {
           {this.helperText}
         </div>
         : ''
-      }
-      { this.type === 'file' ?
-        <label
-          class="ecl-file-upload__button-container"
-          htmlFor={this.inputId}
-        >
-          <span
-            class="ecl-file-upload__button ecl-button ecl-button--primary"
-            data-ecl-file-upload-button
-            data-ecl-file-upload-label-choose={this.buttonChooseLabel}
-            data-ecl-file-upload-label-replace={this.buttonReplaceLabel}
-          >
-            {this.buttonChooseLabel}
-          </span>
-        </label> : '' 
-      }
-      { this.type === 'file' ?
-        <ul
-          class="ecl-file-upload__list"
-          data-ecl-file-upload-list
-          > 
-        </ul> : ''
       }
       </div>
     );

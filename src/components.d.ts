@@ -232,6 +232,28 @@ export namespace Components {
         "theme": string;
         "variant": string;
     }
+    interface EclFileUpload {
+        "buttonChooseLabel": string;
+        "buttonReplaceLabel": string;
+        "defaultValue": string;
+        "disabled": boolean;
+        "eclScript": boolean;
+        "helperId": string;
+        "helperText": string;
+        "inputClass": string;
+        "inputId": string;
+        "invalid": boolean;
+        "label": string;
+        "multiple": boolean;
+        "name": string;
+        "placeholder": string;
+        "required": boolean;
+        "styleClass": string;
+        "theme": string;
+        "type": string;
+        "width": string;
+        "withUtils": boolean;
+    }
     interface EclFormGroup {
         "helperId": string;
         "helperText": string;
@@ -313,8 +335,6 @@ export namespace Components {
         "theme": string;
     }
     interface EclInput {
-        "buttonChooseLabel": string;
-        "buttonReplaceLabel": string;
         "defaultValue": string;
         "disabled": boolean;
         "eclScript": boolean;
@@ -324,16 +344,13 @@ export namespace Components {
         "inputId": string;
         "invalid": boolean;
         "label": string;
-        "multiple": boolean;
         "name": string;
         "placeholder": string;
         "required": boolean;
         "styleClass": string;
         "theme": string;
         "type": string;
-        "valueLabel": string;
         "width": string;
-        "withUtils": boolean;
     }
     interface EclLabel {
         "styleClass": string;
@@ -805,6 +822,12 @@ declare global {
         prototype: HTMLEclFileTranslationsItemElement;
         new (): HTMLEclFileTranslationsItemElement;
     };
+    interface HTMLEclFileUploadElement extends Components.EclFileUpload, HTMLStencilElement {
+    }
+    var HTMLEclFileUploadElement: {
+        prototype: HTMLEclFileUploadElement;
+        new (): HTMLEclFileUploadElement;
+    };
     interface HTMLEclFormGroupElement extends Components.EclFormGroup, HTMLStencilElement {
     }
     var HTMLEclFormGroupElement: {
@@ -1078,6 +1101,7 @@ declare global {
         "ecl-file": HTMLEclFileElement;
         "ecl-file-translations": HTMLEclFileTranslationsElement;
         "ecl-file-translations-item": HTMLEclFileTranslationsItemElement;
+        "ecl-file-upload": HTMLEclFileUploadElement;
         "ecl-form-group": HTMLEclFormGroupElement;
         "ecl-gallery": HTMLEclGalleryElement;
         "ecl-gallery-item": HTMLEclGalleryItemElement;
@@ -1348,6 +1372,28 @@ declare namespace LocalJSX {
         "theme"?: string;
         "variant"?: string;
     }
+    interface EclFileUpload {
+        "buttonChooseLabel"?: string;
+        "buttonReplaceLabel"?: string;
+        "defaultValue"?: string;
+        "disabled"?: boolean;
+        "eclScript"?: boolean;
+        "helperId"?: string;
+        "helperText"?: string;
+        "inputClass"?: string;
+        "inputId"?: string;
+        "invalid"?: boolean;
+        "label"?: string;
+        "multiple"?: boolean;
+        "name"?: string;
+        "placeholder"?: string;
+        "required"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+        "type"?: string;
+        "width"?: string;
+        "withUtils"?: boolean;
+    }
     interface EclFormGroup {
         "helperId"?: string;
         "helperText"?: string;
@@ -1429,8 +1475,6 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclInput {
-        "buttonChooseLabel"?: string;
-        "buttonReplaceLabel"?: string;
         "defaultValue"?: string;
         "disabled"?: boolean;
         "eclScript"?: boolean;
@@ -1440,16 +1484,13 @@ declare namespace LocalJSX {
         "inputId"?: string;
         "invalid"?: boolean;
         "label"?: string;
-        "multiple"?: boolean;
         "name"?: string;
         "placeholder"?: string;
         "required"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
         "type"?: string;
-        "valueLabel"?: string;
         "width"?: string;
-        "withUtils"?: boolean;
     }
     interface EclLabel {
         "styleClass"?: string;
@@ -1790,6 +1831,7 @@ declare namespace LocalJSX {
         "ecl-file": EclFile;
         "ecl-file-translations": EclFileTranslations;
         "ecl-file-translations-item": EclFileTranslationsItem;
+        "ecl-file-upload": EclFileUpload;
         "ecl-form-group": EclFormGroup;
         "ecl-gallery": EclGallery;
         "ecl-gallery-item": EclGalleryItem;
@@ -1863,6 +1905,7 @@ declare module "@stencil/core" {
             "ecl-file": LocalJSX.EclFile & JSXBase.HTMLAttributes<HTMLEclFileElement>;
             "ecl-file-translations": LocalJSX.EclFileTranslations & JSXBase.HTMLAttributes<HTMLEclFileTranslationsElement>;
             "ecl-file-translations-item": LocalJSX.EclFileTranslationsItem & JSXBase.HTMLAttributes<HTMLEclFileTranslationsItemElement>;
+            "ecl-file-upload": LocalJSX.EclFileUpload & JSXBase.HTMLAttributes<HTMLEclFileUploadElement>;
             "ecl-form-group": LocalJSX.EclFormGroup & JSXBase.HTMLAttributes<HTMLEclFormGroupElement>;
             "ecl-gallery": LocalJSX.EclGallery & JSXBase.HTMLAttributes<HTMLEclGalleryElement>;
             "ecl-gallery-item": LocalJSX.EclGalleryItem & JSXBase.HTMLAttributes<HTMLEclGalleryItemElement>;

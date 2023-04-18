@@ -1,36 +1,20 @@
 const getArgs = () => {
   return {
-    type: 'text',
-    width: 'm',
     disabled: false,
     required: true,
     invalid: false,
     inputId: 'input-id',
     name: 'input-name',
-    label: 'Item label',
+    label: 'Label',
     placeholder: 'Placeholder text',
-    defaultValue: '',
+    multiple: false,
+    buttonReplaceLabel: 'Replace file',
+    buttonChooseLabel: 'Choose file',
   };
 };
 
 const getArgTypes = () => {
   return {
-    type: {
-      type: { name: 'select' },
-      options: ['text', 'search', 'radio', 'checkbox'],
-      description: 'Input type (text, radio, search, checkbox)',
-      table: {
-        category: 'Input type',
-      },
-    },
-    width: {
-      type: { name: 'select' },
-      options: ['s', 'm', 'l'],
-      description: 'Width of the input',
-      table: {
-        category: 'Styles',
-      },
-    },
     disabled: {
       type: { name: 'boolean' },
       description: 'Disabled input',
@@ -53,9 +37,9 @@ const getArgTypes = () => {
       },
     },
     inputId: {
-      name: 'input id',
+      name: 'FileUpload id',
       type: { name: 'string' },
-      description: 'Input variant',
+      description: 'FileUpload variant',
       table: {
         category: 'Content',
       },
@@ -76,55 +60,76 @@ const getArgTypes = () => {
     },
     label: {
       type: { name: 'string' },
-      description: 'Checkbox/Radio label',
+      description: 'Form group label',
       table: {
         category: 'Content',
       },
     },
-    defaultValue: {
-      name: 'value',
-      type: { name: 'string' },
-      description: 'Default value of the input',
+    multiple: {
+      type: 'boolean',
+      desription: 'Multiple files upload',
       table: {
-        category: 'Content',
+        type: { summary: 'boolean' },
+        category: 'File upload input',
+      },
+    },
+    buttonReplaceLabel: {
+      name: 'button-replace-label',
+      type: 'string',
+      description: 'Label for the replace button',
+      table: {
+        type: { summary: 'string' },
+        category: 'File upload input',
+      },
+    },
+    buttonChooseLabel: {
+      name: 'button-choose-label',
+      type: 'string',
+      description: 'Label for the button',
+      table: {
+        type: { summary: 'string' },
+        category: 'File upload input',
       },
     },
   };
 };
 
 export default {
-  title: 'Components/form/input-field',
+  title: 'Components/form/file-upload',
 };
 
 const Template = args =>
 `<ecl-form-group
-  label="Label"
+  label="${args.label}"
   required=${args.required}
   optional-text="(optional)"
-  helper-text="This is the input helper text"
+  helper-text="This is the input's helper text."
   invalid=${args.invalid}
   disabled=${args.disabled}
   invalid-text="This is an error message"
   theme="${args.theme}"
 >
-  <ecl-input
-    type="${args.type}"
+  <ecl-file-upload
+    type="file"
     theme="${args.theme}"
     input-id="${args.inputId}"
-    default-value="${args.defaultValue}"
-    label="${(args.type === 'checkbox' || args.type === 'radio') ? args.label : ''}"
+    label="${args.label}"
     required=${args.required}
     disabled=${args.disabled}
     invalid=${args.invalid}
-    width="${args.width}"
     placeholder="${args.placeholder}"
     helper-text="${args.type === 'checkbox' || args.type === 'radio' ? 'This is the input helper text' : '' }"
     name="${args.name}"
+    ecl-script
+    button-choose-label="${args.multiple ? 'Choose files' : args.buttonChooseLabel}"
+    button-replace-label="${args.buttonReplaceLabel}"
+    multiple="${args.multiple}"
   >
-  </ecl-input>
+
+  </ecl-file-upload>
 </ecl-form-group>`;
 
-export const Input = Template.bind({});
-Input.storyName = 'default';
-Input.args = getArgs();
-Input.argTypes = getArgTypes();
+export const FileUpload = Template.bind({});
+FileUpload.storyName = 'default';
+FileUpload.args = getArgs();
+FileUpload.argTypes = getArgTypes();
