@@ -20,13 +20,10 @@
 | `inputId`            | `input-id`             |             | `string`  | `undefined` |
 | `invalid`            | `invalid`              |             | `boolean` | `false`     |
 | `label`              | `label`                |             | `string`  | `undefined` |
-| `max`                | `max`                  |             | `number`  | `undefined` |
-| `min`                | `min`                  |             | `number`  | `undefined` |
 | `multiple`           | `multiple`             |             | `boolean` | `false`     |
 | `name`               | `name`                 |             | `string`  | `undefined` |
 | `placeholder`        | `placeholder`          |             | `string`  | `undefined` |
 | `required`           | `required`             |             | `boolean` | `false`     |
-| `step`               | `step`                 |             | `number`  | `1`         |
 | `styleClass`         | `style-class`          |             | `string`  | `undefined` |
 | `theme`              | `theme`                |             | `string`  | `'ec'`      |
 | `type`               | `type`                 |             | `string`  | `undefined` |

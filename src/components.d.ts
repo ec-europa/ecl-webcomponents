@@ -324,13 +324,10 @@ export namespace Components {
         "inputId": string;
         "invalid": boolean;
         "label": string;
-        "max": number;
-        "min": number;
         "multiple": boolean;
         "name": string;
         "placeholder": string;
         "required": boolean;
-        "step": number;
         "styleClass": string;
         "theme": string;
         "type": string;
@@ -488,6 +485,27 @@ export namespace Components {
         "path": string;
         "styleClass": string;
         "theme": string;
+    }
+    interface EclRange {
+        "defaultValue": string;
+        "disabled": boolean;
+        "eclScript": boolean;
+        "helperId": string;
+        "helperText": string;
+        "inputClass": string;
+        "inputId": string;
+        "invalid": boolean;
+        "label": string;
+        "max": number;
+        "min": number;
+        "name": string;
+        "placeholder": string;
+        "required": boolean;
+        "step": number;
+        "styleClass": string;
+        "theme": string;
+        "valueLabel": string;
+        "width": string;
     }
     interface EclRatingField {
         "disabled": boolean;
@@ -943,6 +961,12 @@ declare global {
         prototype: HTMLEclPopoverItemElement;
         new (): HTMLEclPopoverItemElement;
     };
+    interface HTMLEclRangeElement extends Components.EclRange, HTMLStencilElement {
+    }
+    var HTMLEclRangeElement: {
+        prototype: HTMLEclRangeElement;
+        new (): HTMLEclRangeElement;
+    };
     interface HTMLEclRatingFieldElement extends Components.EclRatingField, HTMLStencilElement {
     }
     var HTMLEclRatingFieldElement: {
@@ -1080,6 +1104,7 @@ declare global {
         "ecl-picture": HTMLEclPictureElement;
         "ecl-popover": HTMLEclPopoverElement;
         "ecl-popover-item": HTMLEclPopoverItemElement;
+        "ecl-range": HTMLEclRangeElement;
         "ecl-rating-field": HTMLEclRatingFieldElement;
         "ecl-rating-star": HTMLEclRatingStarElement;
         "ecl-search-form": HTMLEclSearchFormElement;
@@ -1415,13 +1440,10 @@ declare namespace LocalJSX {
         "inputId"?: string;
         "invalid"?: boolean;
         "label"?: string;
-        "max"?: number;
-        "min"?: number;
         "multiple"?: boolean;
         "name"?: string;
         "placeholder"?: string;
         "required"?: boolean;
-        "step"?: number;
         "styleClass"?: string;
         "theme"?: string;
         "type"?: string;
@@ -1579,6 +1601,27 @@ declare namespace LocalJSX {
         "path"?: string;
         "styleClass"?: string;
         "theme"?: string;
+    }
+    interface EclRange {
+        "defaultValue"?: string;
+        "disabled"?: boolean;
+        "eclScript"?: boolean;
+        "helperId"?: string;
+        "helperText"?: string;
+        "inputClass"?: string;
+        "inputId"?: string;
+        "invalid"?: boolean;
+        "label"?: string;
+        "max"?: number;
+        "min"?: number;
+        "name"?: string;
+        "placeholder"?: string;
+        "required"?: boolean;
+        "step"?: number;
+        "styleClass"?: string;
+        "theme"?: string;
+        "valueLabel"?: string;
+        "width"?: string;
     }
     interface EclRatingField {
         "disabled"?: boolean;
@@ -1773,6 +1816,7 @@ declare namespace LocalJSX {
         "ecl-picture": EclPicture;
         "ecl-popover": EclPopover;
         "ecl-popover-item": EclPopoverItem;
+        "ecl-range": EclRange;
         "ecl-rating-field": EclRatingField;
         "ecl-rating-star": EclRatingStar;
         "ecl-search-form": EclSearchForm;
@@ -1845,6 +1889,7 @@ declare module "@stencil/core" {
             "ecl-picture": LocalJSX.EclPicture & JSXBase.HTMLAttributes<HTMLEclPictureElement>;
             "ecl-popover": LocalJSX.EclPopover & JSXBase.HTMLAttributes<HTMLEclPopoverElement>;
             "ecl-popover-item": LocalJSX.EclPopoverItem & JSXBase.HTMLAttributes<HTMLEclPopoverItemElement>;
+            "ecl-range": LocalJSX.EclRange & JSXBase.HTMLAttributes<HTMLEclRangeElement>;
             "ecl-rating-field": LocalJSX.EclRatingField & JSXBase.HTMLAttributes<HTMLEclRatingFieldElement>;
             "ecl-rating-star": LocalJSX.EclRatingStar & JSXBase.HTMLAttributes<HTMLEclRatingStarElement>;
             "ecl-search-form": LocalJSX.EclSearchForm & JSXBase.HTMLAttributes<HTMLEclSearchFormElement>;

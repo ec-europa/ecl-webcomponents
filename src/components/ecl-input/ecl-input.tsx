@@ -30,9 +30,6 @@ export class EclInput {
   @Prop() inputId: string;
   @Prop() name: string;
   @Prop() defaultValue: string;
-  @Prop() max: number;
-  @Prop() min: number;
-  @Prop() step: number = 1;
   @Prop() valueLabel: string;
   @Prop() buttonChooseLabel: string;
   @Prop() buttonReplaceLabel: string;
@@ -67,9 +64,6 @@ export class EclInput {
   getInputClasses(input): string {
     let inputClasses = [`ecl-${input}__input`];
 
-    if (this.type === 'range') {
-      inputClasses = ['ecl-range', `ecl-range--${this.width}`];
-    }
     if (this.type === 'file') {
       inputClasses = ['ecl-file-upload'];
     }
@@ -113,21 +107,6 @@ export class EclInput {
   }
 
   componentDidRender() {
-    if (this.type === 'range' && this.eclScript) {
-      const src = getAssetPath('./build/scripts/ecl-range-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        const formGroup = this.el.closest('.ecl-form-group');
-        formGroup.setAttribute('data-ecl-range', 'data-ecl-range');
-        const range = new ECL.Range(formGroup);
-        range.init();
-      };
-      document.body.appendChild(script);
-    }
     if (this.type === 'file' && this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-file-upload-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
@@ -171,9 +150,7 @@ export class EclInput {
 
   render() {
     const wrapperAttrs = {};
-    if (this.type === 'range') {
-      wrapperAttrs['data-ecl-range'] = true;
-    }
+
     if (this.type === 'file') {
       wrapperAttrs['data-ecl-file-upload-group'] = true
     }
@@ -191,13 +168,6 @@ export class EclInput {
     if (this.type === 'file') {
       attributes['data-ecl-file-upload-input'] = true;
       attributes['multiple'] = this.multiple;
-    }
-
-    if (this.type === 'range') {
-      attributes['data-ecl-range-input'] = true;
-      attributes['min'] = this.min;
-      attributes['max'] = this.max;
-      attributes['step'] = this.step;
     }
 
     return (
@@ -251,12 +221,6 @@ export class EclInput {
           {this.helperText}
         </div>
         : ''
-      }
-      { this.type === 'range' ?
-        <div class="ecl-range__value">
-          {this.valueLabel}
-          <span class="ecl-range__value-current" data-ecl-range-value-current> </span>
-        </div> : ''
       }
       { this.type === 'file' ?
         <label

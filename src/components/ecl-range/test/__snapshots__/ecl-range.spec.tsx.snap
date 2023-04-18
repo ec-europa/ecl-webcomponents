@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-range renders 1`] = `
+<ecl-form-group helper-text="This is the input helper text" label="Label" required="" theme="ec">
+  <!---->
+  <fieldset class="ecl-form-group">
+    <legend class="ecl-form-label">
+      Label
+      <span class="ecl-form-label__required">
+        *
+      </span>
+    </legend>
+    <div class="ecl-help-block">
+      This is the input helper text
+    </div>
+    <ecl-range default-value="15" ecl-script="" input-id="input-id" label="Range slider" max="30" min="1" name="input-range" required="" step="1" theme="ec" value-label="Value: " width="m">
+      <div class="ecl-input" data-ecl-range>
+        <input class="ecl-range ecl-range--m" data-ecl-range-input id="input-id" max="30" min="1" name="input-range" required="" step="1" type="range" value="15">
+        <div class="ecl-range__value">
+          Value:
+          <span class="ecl-range__value-current" data-ecl-range-value-current></span>
+        </div>
+      </div>
+    </ecl-range>
+  </fieldset>
+</ecl-form-group>
+`;
