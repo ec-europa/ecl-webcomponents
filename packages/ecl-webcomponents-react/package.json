@@ -1,0 +1,53 @@
+{
+  "name": "@ecl/ecl-webcomponents-react",
+  "version": "0.1.0-alpha.0",
+  "description": "ECL react app",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "keywords": [
+    "webcomponents",
+    "europa",
+    "component",
+    "library",
+    "react"
+  ],
+  "author": "planctus <davidepuntoferrante@gmail.com>",
+  "homepage": "https://github.com/ec-europa/ecl-webcomponents",
+  "license": "EUPL-1.2",
+  "main": "lib/index.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@ecl/ecl-webcomponents": "0.1.0-alpha.0"
+  },
+  "devDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.4",
+    "@types/react": "18.0.37",
+    "rimraf": "5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ec-europa/ecl-webcomponents.git"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "test": "node ./__tests__/react-library.test.js",
+    "build": "npm run clean && npm run tsc",
+    "tsc": "tsc -p ."
+  },
+  "bugs": {
+    "url": "https://github.com/ec-europa/ecl-webcomponents/issues"
+  }
+
+}

@@ -3,13 +3,13 @@
   "description": "ECL web components library",
   "license": "EUPL-1.2",
   "private": true,
-  "main": "ecl-webcomponents/dist/index.cjs.js",
-  "module": "ecl-webcomponents/dist/index.js",
-  "es2015": "ecl-webcomponents/dist/esm/index.mjs",
-  "es2017": "ecl-webcomponents/dist/esm/index.mjs",
-  "types": "ecl-webcomponents/dist/types/components.d.ts",
-  "collection": "ecl-webcomponents/dist/collection/collection-manifest.json",
-  "collection:main": "ecl-webcomponents/dist/collection/index.js",
+  "main": "packages/ecl-webcomponents/dist/index.cjs.js",
+  "module": "packages/ecl-webcomponents/dist/index.js",
+  "es2015": "packages/ecl-webcomponents/dist/esm/index.mjs",
+  "es2017": "packages/ecl-webcomponents/dist/esm/index.mjs",
+  "types": "packages/ecl-webcomponents/dist/types/components.d.ts",
+  "collection": "packages/ecl-webcomponents/dist/collection/collection-manifest.json",
+  "collection:main": "packages/ecl-webcomponents/dist/collection/index.js",
   "engines": {
     "node": ">=18.0.0",
     "yarn": ">=1.1.0"
@@ -23,6 +23,7 @@
     "build:clean": "rimraf build dist",
     "build:web-components": "lerna --scope \"@ecl/web-components-*\" run build",
     "build:stencil": "stencil build",
+    "build:react": "lerna --scope \"@ecl/ecl-webcomponents-react*\" run build",
     "build:storybook": "NODE_ENV=production sb build -o build",
     "build:playground": "run-s build:playground:*",
     "build:playground:clean": "rimraf playground/ecl-webcomponents",
@@ -51,13 +52,14 @@
     "postinstall": "patch-package && [ -z \"$NOYARNPOSTINSTALL\" ] && (lerna run postinstall && lerna run prepublish) || echo \"Bypass prepublish\"",
     "refresh-playground": "lerna --scope \"@ecl/ckeditor5-*\" run dev:install-plugin && lerna --scope \"@ecl/ckeditor5-*\" run build && yarn build:playground",
     "dev": "sb dev -p 6006",
+    "dev-react": "lerna --scope \"@ecl/ecl-webcomponents-react*\" run dev",
     "update-version": "scripts/update-version.sh"
   },
   "workspaces": [
     "src/components/**",
     "playground",
     "src/plugins/**",
-    "ecl-webcomponents"
+    "packages/**"
   ],
   "dependencies": {
     "@stencil/core": "3.2.1"
