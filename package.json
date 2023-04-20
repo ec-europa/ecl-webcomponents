@@ -28,7 +28,7 @@
     "build:storybook": "NODE_ENV=production sb build -o build",
     "build:playground": "run-s build:playground:*",
     "build:playground:clean": "rimraf playground/ecl-webcomponents",
-    "build:playground:copy": "ncp ecl-webcomponents/dist/ecl-webcomponents playground/ecl-webcomponents && ncp ./playground ./build/playground",
+    "build:playground:copy": "ncp packages/ecl-webcomponents/dist/ecl-webcomponents playground/ecl-webcomponents && ncp ./playground ./build/playground",
     "build:playground:version": "scripts/add-build-number.js",
     "build:copy": "scripts/copy-assets.sh",
     "changelog": "lerna-changelog",
