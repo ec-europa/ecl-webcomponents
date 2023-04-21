@@ -77,7 +77,6 @@ export class EclTag {
         this.toBeRemoved = true;
       });
     }
-    console.log(this.toBeRemoved);
   }
 
   render() {
