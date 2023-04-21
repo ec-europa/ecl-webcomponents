@@ -1,4 +1,4 @@
-import { Component, h, Prop} from '@stencil/core';
+import { Component, h, Prop, State} from '@stencil/core';
 
 @Component({
   tag: 'ecl-textarea',
@@ -20,6 +20,7 @@ export class EclTextarea{
   @Prop() name: string;
   @Prop() rows: number = 4;
   @Prop() placeholder: string;
+  @State() value: string;
 
   getClass(): string {
     const styleClasses = [
@@ -38,6 +39,10 @@ export class EclTextarea{
     return styleClasses.join(' ');
   }
 
+  handleChange(event) {
+    this.value = event.target.value;
+  }
+
   render() {
     let attributes = {
       class: this.getClass(),
@@ -50,7 +55,7 @@ export class EclTextarea{
     };
 
     return (
-      <textarea {...attributes}>
+      <textarea {...attributes} onInput={(event) => this.handleChange(event)}>
           <slot></slot>
       </textarea>
     );

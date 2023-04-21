@@ -1,4 +1,4 @@
-import { Component, h, Prop, Element, getAssetPath } from '@stencil/core';
+import { Component, h, Prop, Element, getAssetPath, State } from '@stencil/core';
 declare const ECL: any;
 
 @Component({
@@ -32,6 +32,7 @@ export class EclRange {
   @Prop() min: number;
   @Prop() step: number = 1;
   @Prop() valueLabel: string;
+  @State() value: number;
 
   getClass(): string {
     const styleClasses = ['ecl-input', this.styleClass];
@@ -76,6 +77,10 @@ export class EclRange {
     }
   }
 
+  handleChange(event) {
+    this.value = event.target.value;
+  }
+
   render() {
     const wrapperAttrs = {};
     wrapperAttrs['data-ecl-range'] = true;
@@ -100,7 +105,7 @@ export class EclRange {
         class={this.getClass()}
         {...wrapperAttrs}
       >
-        <input {...attributes} />
+        <input {...attributes} onInput={(event) => this.handleChange(event)} />
       
         <div class="ecl-range__value">
           {this.valueLabel}

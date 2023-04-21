@@ -1,4 +1,4 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, State } from '@stencil/core';
 declare const ECL: any;
 
 @Component({
@@ -28,6 +28,7 @@ export class EclInput {
   @Prop() inputId: string;
   @Prop() name: string;
   @Prop() defaultValue: string;
+  @State() value: string;
 
   getClass(): string {
     const styleClasses = ['ecl-input', this.styleClass];
@@ -86,6 +87,10 @@ export class EclInput {
     return boxClasses.join(' ');
   }
 
+  handleChange(event) {
+    this.value = event.target.value;
+  }
+
   render() {
     const wrapperAttrs = {};
 
@@ -105,7 +110,7 @@ export class EclInput {
         class={this.getClass()}
         {...wrapperAttrs}
       >
-        <input {...attributes} />
+        <input {...attributes} onInput={(event) => this.handleChange(event)}  />
       { this.type === 'checkbox' ?
         <label
           class={this.getBoxClasses('checkbox', 'label')}

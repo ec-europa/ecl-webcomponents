@@ -1,4 +1,4 @@
-import { Component, h, Prop, Element, getAssetPath } from '@stencil/core';
+import { Component, h, Prop, Element, getAssetPath, State } from '@stencil/core';
 declare const ECL: any;
 
 @Component({
@@ -29,6 +29,7 @@ export class EclSelect {
   @Prop() multipleAllText: string;
   @Prop() multipleClearAllText: string;
   @Prop() multipleCloseText: string;
+  @State() value: string;
 
   getClass(): string {
     const styleClasses = [
@@ -65,6 +66,10 @@ export class EclSelect {
     }
   }
 
+  handleChange(event) {
+    this.value = event.target.value;
+  }
+
   render() {
     let attributes = {
       class: 'ecl-select',
@@ -88,7 +93,7 @@ export class EclSelect {
       <div 
         class={this.getClass()}
       >
-        <select {...attributes}>
+        <select {...attributes} onInput={(event) => this.handleChange(event)}  >
           <slot></slot>
         </select>
         <div class="ecl-select__icon">
