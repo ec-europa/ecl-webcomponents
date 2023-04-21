@@ -17,6 +17,7 @@ export class EclAccordion {
   @Prop() eclScript: boolean = false;
   @Prop() withUtils: boolean = false;
   @Prop() theme: string = 'ec';
+  @Prop() clickedItem: HTMLElement;
 
   getClass(): string {
     return [
@@ -47,6 +48,15 @@ export class EclAccordion {
       style.href = getAssetPath(`./build/styles/ecl-utilities-${this.theme}.css`);
       document.body.appendChild(style);
     }
+  }
+
+  componentDidRender() {
+    this.el.querySelectorAll('.ecl-accordion__item button').forEach((item) => {
+      item.addEventListener('click', (e) => {
+        const target = e.currentTarget as HTMLButtonElement;
+        this.clickedItem = target.parentElement.parentElement;
+      });
+    });
   }
 
   render() {

@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface EclAccordion {
+        "clickedItem": HTMLElement;
         "eclScript": boolean;
         "styleClass": string;
         "theme": string;
@@ -1147,6 +1148,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface EclAccordion {
+        "clickedItem"?: HTMLElement;
         "eclScript"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
