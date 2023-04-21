@@ -2,7 +2,7 @@ import { setMode } from '@stencil/core';
 
 declare global {
   interface Window {
-      eclTheme:any;
+    eclTheme:any;
   }
 }
 

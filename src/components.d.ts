@@ -642,6 +642,7 @@ export namespace Components {
         "external": boolean;
         "styleClass": string;
         "theme": string;
+        "toBeRemoved": boolean;
         "variant": string;
     }
     interface EclTextarea {
@@ -1786,6 +1787,7 @@ declare namespace LocalJSX {
         "external"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
+        "toBeRemoved"?: boolean;
         "variant"?: string;
     }
     interface EclTextarea {

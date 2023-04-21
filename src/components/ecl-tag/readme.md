@@ -7,12 +7,13 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type      | Default     |
-| ------------ | ------------- | ----------- | --------- | ----------- |
-| `external`   | `external`    |             | `boolean` | `false`     |
-| `styleClass` | `style-class` |             | `string`  | `undefined` |
-| `theme`      | `theme`       |             | `string`  | `'ec'`      |
-| `variant`    | `variant`     |             | `string`  | `'display'` |
+| Property      | Attribute       | Description | Type      | Default     |
+| ------------- | --------------- | ----------- | --------- | ----------- |
+| `external`    | `external`      |             | `boolean` | `false`     |
+| `styleClass`  | `style-class`   |             | `string`  | `undefined` |
+| `theme`       | `theme`         |             | `string`  | `'ec'`      |
+| `toBeRemoved` | `to-be-removed` |             | `boolean` | `false`     |
+| `variant`     | `variant`       |             | `string`  | `'display'` |
 
 
 ## Dependencies

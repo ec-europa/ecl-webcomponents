@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, Element } from '@stencil/core';
 
 @Component({
   tag: 'ecl-tag',
@@ -10,10 +10,12 @@ import { Component, Prop, h } from '@stencil/core';
   scoped: true,
 })
 export class EclTag {
+  @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
   @Prop() external: boolean = false;
   @Prop() variant: string = 'display';
+  @Prop() toBeRemoved: boolean = false;
 
   getClass(): string {
     return [
@@ -65,6 +67,17 @@ export class EclTag {
         ></ecl-icon>
       </span>
     )
+  }
+
+  componentDidRender() {
+    const closeButton = this.el.querySelector('.ecl-tag__icon');
+    
+    if (closeButton) {
+      closeButton.addEventListener('click', () => {
+        this.toBeRemoved = true;
+      });
+    }
+    console.log(this.toBeRemoved);
   }
 
   render() {
