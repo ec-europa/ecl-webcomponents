@@ -23,6 +23,8 @@ export class EclDatepicker {
   @Prop() type: string;
   @Prop() name: string;
   @Prop() defaultValue: string;
+  @Prop() dateFormat: string = 'DD-MM-YYYY';
+  @Prop() yearRange: number = 40;
 
   getClass(): string {
     const styleClasses = ['ecl-datepicker', this.styleClass];
@@ -56,7 +58,10 @@ export class EclDatepicker {
     const script = document.createElement('script');
     script.src = src;
     script.onload = () => {
-      const datepicker = new ECL.Datepicker(this.el.querySelector('.ecl-datepicker__field'));
+      const datepicker = new ECL.Datepicker(
+        this.el.querySelector('.ecl-datepicker__field'),
+        { format: this.dateFormat, yearRange: Number(this.yearRange) }
+      );
       datepicker.init();
     };
     document.body.appendChild(script);

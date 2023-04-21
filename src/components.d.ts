@@ -23,6 +23,7 @@ export namespace Components {
         "bannerTitle": string;
         "centered": boolean;
         "credit": string;
+        "ctaClicked": boolean;
         "ctaLabel": string;
         "ctaLink": string;
         "external": boolean;
@@ -137,6 +138,7 @@ export namespace Components {
         "year": string;
     }
     interface EclDatepicker {
+        "dateFormat": string;
         "defaultValue": string;
         "disabled": boolean;
         "inputId": string;
@@ -147,6 +149,7 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
         "type": string;
+        "yearRange": number;
     }
     interface EclDescriptionList {
         "styleClass": string;
@@ -1164,6 +1167,7 @@ declare namespace LocalJSX {
         "bannerTitle"?: string;
         "centered"?: boolean;
         "credit"?: string;
+        "ctaClicked"?: boolean;
         "ctaLabel"?: string;
         "ctaLink"?: string;
         "external"?: boolean;
@@ -1278,6 +1282,7 @@ declare namespace LocalJSX {
         "year"?: string;
     }
     interface EclDatepicker {
+        "dateFormat"?: string;
         "defaultValue"?: string;
         "disabled"?: boolean;
         "inputId"?: string;
@@ -1288,6 +1293,7 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "type"?: string;
+        "yearRange"?: number;
     }
     interface EclDescriptionList {
         "styleClass"?: string;

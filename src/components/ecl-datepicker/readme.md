@@ -9,6 +9,7 @@
 
 | Property       | Attribute       | Description | Type      | Default        |
 | -------------- | --------------- | ----------- | --------- | -------------- |
+| `dateFormat`   | `date-format`   |             | `string`  | `'DD-MM-YYYY'` |
 | `defaultValue` | `default-value` |             | `string`  | `undefined`    |
 | `disabled`     | `disabled`      |             | `boolean` | `false`        |
 | `inputId`      | `input-id`      |             | `string`  | `undefined`    |
@@ -19,6 +20,7 @@
 | `styleClass`   | `style-class`   |             | `string`  | `undefined`    |
 | `theme`        | `theme`         |             | `string`  | `'ec'`         |
 | `type`         | `type`          |             | `string`  | `undefined`    |
+| `yearRange`    | `year-range`    |             | `number`  | `40`           |
 
 
 ## Dependencies

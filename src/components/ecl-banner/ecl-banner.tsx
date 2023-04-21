@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, Element } from '@stencil/core';
 
 @Component({
   tag: 'ecl-banner',
@@ -9,7 +9,9 @@ import { Component, Prop, h } from '@stencil/core';
   shadow: false,
   scoped: true,
 })
+
 export class EclBanner {
+  @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
   @Prop() external: boolean = false;
@@ -22,6 +24,7 @@ export class EclBanner {
   @Prop() centered: boolean = true;
   @Prop() credit: string;
   @Prop() size: string = 'm';
+  @Prop() ctaClicked: boolean = false;
 
   getClass(): string {
     const styleClasses = [
@@ -39,6 +42,12 @@ export class EclBanner {
     }
 
     return styleClasses.join(' ');
+  }
+
+  componentDidRender() {
+    this.el.querySelector('.ecl-banner__cta').addEventListener('click', () => {
+      this.ctaClicked = true;
+    });
   }
 
   render() {
