@@ -19,6 +19,7 @@ export class EclMessage {
   @Prop() messageTitle: string;
   @Prop() closeLabel: string;
   @Prop() eclScript: boolean = false;
+  @Prop() withClose: boolean = true;
 
   getClass(): string {
     return [
@@ -61,6 +62,7 @@ export class EclMessage {
         >
         </ecl-icon>
         <div class="ecl-message__content">
+        { this.withClose ?
           <ecl-button
             variant="ghost"
             type="button"
@@ -74,10 +76,11 @@ export class EclMessage {
               theme={this.theme}
               style-class="ecl-button__icon ecl-button__icon--after" 
             ></ecl-icon>
-          </ecl-button>
-          { this.messageTitle ?
-            <div class="ecl-message__title">{this.messageTitle}</div>
-           : '' }
+          </ecl-button> : ''
+        }
+        { this.messageTitle ?
+          <div class="ecl-message__title">{this.messageTitle}</div>
+         : '' }
           <div class="ecl-message__description">
             <slot></slot>
           </div>

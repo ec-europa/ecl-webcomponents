@@ -3,6 +3,7 @@ const getArgs = () => ({
   title: 'Information message',
   closeLabel: 'Close',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan semper lorem, ac mollis lacus tincidunt eu. Duis scelerisque diam eu tempus fringilla.',
+  withClose: true,
   withUtils: true,
   eclScript: true,
 });
@@ -27,11 +28,16 @@ const getArgTypes = () => ({
       description: 'Text of the message',
     },
   },
-  closeLabel: {
-    control: { name: 'string' },
+  withClose: {
+    name: 'with the close button',
+    control: { name: 'boolean' },
     table: {
-      description: 'Label of the close button',
+      description: 'With close button',
     },
+  },
+  closeLabel: {
+    name: 'label of the close button',
+    control: { name: 'string' },
   },
 });
 
@@ -46,6 +52,7 @@ const Template = args =>
     variant="${args.variant}"
     close-label="${args.closeLabel}"
     ecl-script
+    with-close=${args.withClose}
   >
     ${args.description}
   </ecl-message>`;

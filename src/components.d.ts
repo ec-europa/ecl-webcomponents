@@ -416,6 +416,7 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
         "variant": string;
+        "withClose": boolean;
     }
     interface EclNavigationList {
         "column": number;
@@ -1561,6 +1562,7 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "variant"?: string;
+        "withClose"?: boolean;
     }
     interface EclNavigationList {
         "column"?: number;
