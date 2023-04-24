@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-message",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0",
   "description": "ECL Message",
   "main": "ecl-message.tsx",
   "private": true,
@@ -14,12 +14,12 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "cross-env": "7.0.3",
     "@ecl/builder": "3.7.1",
     "@ecl/resources-ec-icons": "3.7.1",
     "@ecl/resources-eu-icons": "3.7.1",
     "@ecl/vanilla-component-icon": "3.7.1",
-    "@ecl/vanilla-component-message": "3.7.1"
+    "@ecl/vanilla-component-message": "3.7.1",
+    "cross-env": "7.0.3"
   },
   "repository": {
     "type": "git",

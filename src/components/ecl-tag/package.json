@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-tag",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0",
   "description": "ECL Tag",
   "main": "ecl-tag.tsx",
   "private": true,
@@ -13,13 +13,13 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "cross-env": "7.0.3",
     "@ecl/builder": "3.7.1",
     "@ecl/resources-ec-icons": "3.7.1",
     "@ecl/resources-eu-icons": "3.7.1",
     "@ecl/specs-component-icon": "3.7.1",
     "@ecl/vanilla-component-icon": "3.7.1",
-    "@ecl/vanilla-component-tag": "3.7.1"
+    "@ecl/vanilla-component-tag": "3.7.1",
+    "cross-env": "7.0.3"
   },
   "repository": {
     "type": "git",

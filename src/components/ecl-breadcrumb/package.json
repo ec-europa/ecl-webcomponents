@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-breadcrumb",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0",
   "description": "ECL Breadcrumb",
   "main": "ecl-breadcrumb.js",
   "private": true,
@@ -15,11 +15,11 @@
     "prepublish": "npm run build "
   },
   "devDependencies": {
-    "cross-env": "7.0.3",
     "@ecl/builder": "3.7.1",
     "@ecl/theme-ec": "3.7.1",
     "@ecl/theme-eu": "3.7.1",
-    "@ecl/vanilla-component-breadcrumb": "3.7.1"
+    "@ecl/vanilla-component-breadcrumb": "3.7.1",
+    "cross-env": "7.0.3"
   },
   "repository": {
     "type": "git",
