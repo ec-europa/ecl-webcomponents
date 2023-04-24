@@ -7,13 +7,14 @@
   "main": "ecl-media-container.tsx",
   "private": true,
   "scripts": {
-    "build:styles": "cross-env ecl-builder styles",
+    "build:styles": "cross-env NODE_ENV=production ecl-builder styles",
     "build:scripts": "cross-env ecl-builder scripts",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
     "prepublish": "npm run build"
   },
   "devDependencies": {
+    "cross-env": "7.0.3",
     "@ecl/builder": "3.7.1",
     "@ecl/vanilla-component-media-container": "3.7.1",
     "@ecl/vanilla-layout-grid": "3.7.1",

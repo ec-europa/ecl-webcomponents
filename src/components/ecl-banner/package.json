@@ -7,12 +7,13 @@
   "main": "ecl-banner.tsx",
   "private": true,
   "scripts": {
-    "build:styles": "cross-env ecl-builder styles",
+    "build:styles": "cross-env NODE_ENV=production ecl-builder styles",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
     "prepublish": "npm run build"
   },
   "devDependencies": {
+    "cross-env": "7.0.3",
     "@ecl/builder": "3.7.1",
     "@ecl/vanilla-component-banner": "3.7.1"
   },
