@@ -1,4 +1,4 @@
-import { Component, h, Prop, State} from '@stencil/core';
+import { Component, h, Prop, State, Event, EventEmitter} from '@stencil/core';
 
 @Component({
   tag: 'ecl-textarea',
@@ -21,6 +21,11 @@ export class EclTextarea{
   @Prop() rows: number = 4;
   @Prop() placeholder: string;
   @State() value: string;
+  @Prop() hasChanged: boolean = false;
+  @Prop() isFocused: boolean = false;
+  @Event() inputFocus: EventEmitter<FocusEvent>;
+  @Event() inputBlur: EventEmitter<FocusEvent>;
+  @Event() inputChange: EventEmitter;
 
   getClass(): string {
     const styleClasses = [
@@ -39,8 +44,23 @@ export class EclTextarea{
     return styleClasses.join(' ');
   }
 
-  handleChange(event) {
+  handleInput(event) {
     this.value = event.target.value;
+  }
+
+  handleFocus(event) {
+    this.inputFocus.emit(event);
+    this.isFocused = true;
+  }
+
+  handleChange(event) {
+    this.inputChange.emit(event);
+    this.hasChanged = true;
+  }
+
+  handleBlur(event) {
+    this.inputBlur.emit(event);
+    this.isFocused = false;
   }
 
   render() {
@@ -55,7 +75,13 @@ export class EclTextarea{
     };
 
     return (
-      <textarea {...attributes} onInput={(event) => this.handleChange(event)}>
+      <textarea
+        {...attributes}
+        onInput={(event) => this.handleChange(event)}
+        onFocus={ev => this.handleFocus(ev)}
+        onBlur={ev => this.handleBlur(ev)}
+        onChange={ev => this.handleChange(ev)}
+      >
           <slot></slot>
       </textarea>
     );

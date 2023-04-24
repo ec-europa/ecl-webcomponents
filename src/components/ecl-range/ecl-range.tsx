@@ -1,4 +1,4 @@
-import { Component, h, Prop, Element, getAssetPath, State } from '@stencil/core';
+import { Component, h, Prop, Element, getAssetPath, State, Event, EventEmitter } from '@stencil/core';
 declare const ECL: any;
 
 @Component({
@@ -33,6 +33,11 @@ export class EclRange {
   @Prop() step: number = 1;
   @Prop() valueLabel: string;
   @State() value: number;
+  @Prop() hasChanged: boolean = false;
+  @Prop() isFocused: boolean = false;
+  @Event() inputFocus: EventEmitter<FocusEvent>;
+  @Event() inputBlur: EventEmitter<FocusEvent>;
+  @Event() inputChange: EventEmitter;
 
   getClass(): string {
     const styleClasses = ['ecl-input', this.styleClass];
@@ -77,8 +82,23 @@ export class EclRange {
     }
   }
 
-  handleChange(event) {
+  handleInput(event) {
     this.value = event.target.value;
+  }
+
+  handleFocus(event) {
+    this.inputFocus.emit(event);
+    this.isFocused = true;
+  }
+
+  handleChange(event) {
+    this.inputChange.emit(event);
+    this.hasChanged = true;
+  }
+
+  handleBlur(event) {
+    this.inputBlur.emit(event);
+    this.isFocused = false;
   }
 
   render() {
@@ -105,7 +125,13 @@ export class EclRange {
         class={this.getClass()}
         {...wrapperAttrs}
       >
-        <input {...attributes} onInput={(event) => this.handleChange(event)} />
+        <input
+          {...attributes}
+          onInput={ev => this.handleInput(ev)}
+          onFocus={ev => this.handleFocus(ev)}
+          onBlur={ev => this.handleBlur(ev)}
+          onChange={ev => this.handleChange(ev)}
+        />
       
         <div class="ecl-range__value">
           {this.valueLabel}

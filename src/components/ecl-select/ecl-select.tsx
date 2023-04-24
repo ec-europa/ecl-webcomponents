@@ -1,4 +1,4 @@
-import { Component, h, Prop, Element, getAssetPath, State } from '@stencil/core';
+import { Component, h, Prop, Element, getAssetPath, State, Event, EventEmitter } from '@stencil/core';
 declare const ECL: any;
 
 @Component({
@@ -11,6 +11,7 @@ declare const ECL: any;
   scoped: false,
   assetsDirs: ['build'],
 })
+
 export class EclSelect {
   @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
@@ -30,6 +31,11 @@ export class EclSelect {
   @Prop() multipleClearAllText: string;
   @Prop() multipleCloseText: string;
   @State() value: string;
+  @Prop() hasChanged: boolean = false;
+  @Prop() isFocused: boolean = false;
+  @Event() inputFocus: EventEmitter<FocusEvent>;
+  @Event() inputBlur: EventEmitter<FocusEvent>;
+  @Event() inputChange: EventEmitter;
 
   getClass(): string {
     const styleClasses = [
@@ -66,8 +72,23 @@ export class EclSelect {
     }
   }
 
-  handleChange(event) {
+  handleInput(event) {
     this.value = event.target.value;
+  }
+
+  handleFocus(event) {
+    this.inputFocus.emit(event);
+    this.isFocused = true;
+  }
+
+  handleChange(event) {
+    this.inputChange.emit(event);
+    this.hasChanged = true;
+  }
+
+  handleBlur(event) {
+    this.inputBlur.emit(event);
+    this.isFocused = false;
   }
 
   render() {
@@ -93,7 +114,13 @@ export class EclSelect {
       <div 
         class={this.getClass()}
       >
-        <select {...attributes} onInput={(event) => this.handleChange(event)}  >
+        <select
+          {...attributes}
+          onInput={ev => this.handleInput(ev)}
+          onFocus={ev => this.handleFocus(ev)}
+          onBlur={ev => this.handleBlur(ev)}
+          onChange={ev => this.handleChange(ev)}
+        >
           <slot></slot>
         </select>
         <div class="ecl-select__icon">

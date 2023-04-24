@@ -143,8 +143,10 @@ export namespace Components {
         "dateFormat": string;
         "defaultValue": string;
         "disabled": boolean;
+        "hasChanged": boolean;
         "inputId": string;
         "invalid": boolean;
+        "isFocused": boolean;
         "name": string;
         "placeholder": string;
         "required": boolean;
@@ -344,11 +346,13 @@ export namespace Components {
         "defaultValue": string;
         "disabled": boolean;
         "eclScript": boolean;
+        "hasChanged": boolean;
         "helperId": string;
         "helperText": string;
         "inputClass": string;
         "inputId": string;
         "invalid": boolean;
+        "isFocused": boolean;
         "label": string;
         "name": string;
         "placeholder": string;
@@ -514,11 +518,13 @@ export namespace Components {
         "defaultValue": string;
         "disabled": boolean;
         "eclScript": boolean;
+        "hasChanged": boolean;
         "helperId": string;
         "helperText": string;
         "inputClass": string;
         "inputId": string;
         "invalid": boolean;
+        "isFocused": boolean;
         "label": string;
         "max": number;
         "min": number;
@@ -540,8 +546,10 @@ export namespace Components {
     interface EclRatingStar {
         "checked": boolean;
         "disabled": boolean;
+        "hasChanged": boolean;
         "icon": string;
         "iconFilled": string;
+        "isFocused": boolean;
         "itemId": string;
         "label": string;
         "name": string;
@@ -571,7 +579,9 @@ export namespace Components {
     interface EclSelect {
         "disabled": boolean;
         "eclScript": boolean;
+        "hasChanged": boolean;
         "invalid": boolean;
+        "isFocused": boolean;
         "multiple": boolean;
         "multipleAllText": string;
         "multipleClearAllText": string;
@@ -650,7 +660,9 @@ export namespace Components {
     }
     interface EclTextarea {
         "disabled": boolean;
+        "hasChanged": boolean;
         "invalid": boolean;
+        "isFocused": boolean;
         "name": string;
         "placeholder": string;
         "required": boolean;
@@ -672,6 +684,30 @@ export namespace Components {
         "theme": string;
         "type": string;
     }
+}
+export interface EclDatepickerCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLEclDatepickerElement;
+}
+export interface EclInputCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLEclInputElement;
+}
+export interface EclRangeCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLEclRangeElement;
+}
+export interface EclRatingStarCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLEclRatingStarElement;
+}
+export interface EclSelectCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLEclSelectElement;
+}
+export interface EclTextareaCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLEclTextareaElement;
 }
 declare global {
     interface HTMLEclAccordionElement extends Components.EclAccordion, HTMLStencilElement {
@@ -1291,9 +1327,14 @@ declare namespace LocalJSX {
         "dateFormat"?: string;
         "defaultValue"?: string;
         "disabled"?: boolean;
+        "hasChanged"?: boolean;
         "inputId"?: string;
         "invalid"?: boolean;
+        "isFocused"?: boolean;
         "name"?: string;
+        "onInputBlur"?: (event: EclDatepickerCustomEvent<FocusEvent>) => void;
+        "onInputChange"?: (event: EclDatepickerCustomEvent<any>) => void;
+        "onInputFocus"?: (event: EclDatepickerCustomEvent<FocusEvent>) => void;
         "placeholder"?: string;
         "required"?: boolean;
         "styleClass"?: string;
@@ -1492,13 +1533,18 @@ declare namespace LocalJSX {
         "defaultValue"?: string;
         "disabled"?: boolean;
         "eclScript"?: boolean;
+        "hasChanged"?: boolean;
         "helperId"?: string;
         "helperText"?: string;
         "inputClass"?: string;
         "inputId"?: string;
         "invalid"?: boolean;
+        "isFocused"?: boolean;
         "label"?: string;
         "name"?: string;
+        "onInputBlur"?: (event: EclInputCustomEvent<FocusEvent>) => void;
+        "onInputChange"?: (event: EclInputCustomEvent<any>) => void;
+        "onInputFocus"?: (event: EclInputCustomEvent<FocusEvent>) => void;
         "placeholder"?: string;
         "required"?: boolean;
         "styleClass"?: string;
@@ -1662,15 +1708,20 @@ declare namespace LocalJSX {
         "defaultValue"?: string;
         "disabled"?: boolean;
         "eclScript"?: boolean;
+        "hasChanged"?: boolean;
         "helperId"?: string;
         "helperText"?: string;
         "inputClass"?: string;
         "inputId"?: string;
         "invalid"?: boolean;
+        "isFocused"?: boolean;
         "label"?: string;
         "max"?: number;
         "min"?: number;
         "name"?: string;
+        "onInputBlur"?: (event: EclRangeCustomEvent<FocusEvent>) => void;
+        "onInputChange"?: (event: EclRangeCustomEvent<any>) => void;
+        "onInputFocus"?: (event: EclRangeCustomEvent<FocusEvent>) => void;
         "placeholder"?: string;
         "required"?: boolean;
         "step"?: number;
@@ -1688,11 +1739,16 @@ declare namespace LocalJSX {
     interface EclRatingStar {
         "checked"?: boolean;
         "disabled"?: boolean;
+        "hasChanged"?: boolean;
         "icon"?: string;
         "iconFilled"?: string;
+        "isFocused"?: boolean;
         "itemId"?: string;
         "label"?: string;
         "name"?: string;
+        "onInputBlur"?: (event: EclRatingStarCustomEvent<FocusEvent>) => void;
+        "onInputChange"?: (event: EclRatingStarCustomEvent<any>) => void;
+        "onInputFocus"?: (event: EclRatingStarCustomEvent<FocusEvent>) => void;
         "required"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
@@ -1719,7 +1775,9 @@ declare namespace LocalJSX {
     interface EclSelect {
         "disabled"?: boolean;
         "eclScript"?: boolean;
+        "hasChanged"?: boolean;
         "invalid"?: boolean;
+        "isFocused"?: boolean;
         "multiple"?: boolean;
         "multipleAllText"?: string;
         "multipleClearAllText"?: string;
@@ -1728,6 +1786,9 @@ declare namespace LocalJSX {
         "multipleSearchNoResultsText"?: string;
         "multipleSearchText"?: string;
         "name"?: string;
+        "onInputBlur"?: (event: EclSelectCustomEvent<FocusEvent>) => void;
+        "onInputChange"?: (event: EclSelectCustomEvent<any>) => void;
+        "onInputFocus"?: (event: EclSelectCustomEvent<FocusEvent>) => void;
         "required"?: boolean;
         "selectId"?: string;
         "styleClass"?: string;
@@ -1798,8 +1859,13 @@ declare namespace LocalJSX {
     }
     interface EclTextarea {
         "disabled"?: boolean;
+        "hasChanged"?: boolean;
         "invalid"?: boolean;
+        "isFocused"?: boolean;
         "name"?: string;
+        "onInputBlur"?: (event: EclTextareaCustomEvent<FocusEvent>) => void;
+        "onInputChange"?: (event: EclTextareaCustomEvent<any>) => void;
+        "onInputFocus"?: (event: EclTextareaCustomEvent<FocusEvent>) => void;
         "placeholder"?: string;
         "required"?: boolean;
         "rows"?: number;

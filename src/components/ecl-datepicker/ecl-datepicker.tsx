@@ -1,4 +1,4 @@
-import { Component, h, Prop, Element, getAssetPath } from '@stencil/core';
+import { Component, h, Prop, Element, getAssetPath, Event, EventEmitter } from '@stencil/core';
 declare const ECL: any;
 
 @Component({
@@ -25,6 +25,11 @@ export class EclDatepicker {
   @Prop() defaultValue: string;
   @Prop() dateFormat: string = 'DD-MM-YYYY';
   @Prop() yearRange: number = 40;
+  @Prop() hasChanged: boolean = false;
+  @Prop() isFocused: boolean = false;
+  @Event() inputFocus: EventEmitter<FocusEvent>;
+  @Event() inputBlur: EventEmitter<FocusEvent>;
+  @Event() inputChange: EventEmitter;
 
   getClass(): string {
     const styleClasses = ['ecl-datepicker', this.styleClass];
@@ -67,6 +72,21 @@ export class EclDatepicker {
     document.body.appendChild(script);
   }
 
+  handleFocus(event) {
+    this.inputFocus.emit(event);
+    this.isFocused = true;
+  }
+
+  handleChange(event) {
+    this.inputChange.emit(event);
+    this.hasChanged = true;
+  }
+
+  handleBlur(event) {
+    this.inputBlur.emit(event);
+    this.isFocused = false;
+  }
+
   render() {
     return (
       <div class={this.getClass()}>
@@ -79,6 +99,9 @@ export class EclDatepicker {
           required={this.required}
           disabled={this.disabled}
           placeholder={this.placeholder}
+          onFocus={ev => this.handleFocus(ev)}
+          onBlur={ev => this.handleBlur(ev)}
+          onChange={ev => this.handleChange(ev)}
         />
         <ecl-icon
           style-class={`ecl-datepicker__icon sc-ecl-datepicker-${this.theme}`}
