@@ -1,6 +1,6 @@
 {
   "name": "@ecl/ecl-webcomponents",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0",
   "description": "ECL web components",
   "license": "EUPL-1.2",
   "main": "dist/index.cjs.js",

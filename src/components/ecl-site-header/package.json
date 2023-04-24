@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-site-header",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0",
   "description": "ECL Site header",
   "main": "ecl-site-header.tsx",
   "private": true,
@@ -15,12 +15,12 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "cross-env": "7.0.3",
     "@ecl/builder": "3.7.1",
     "@ecl/resources-ec-logo": "3.7.1",
     "@ecl/resources-eu-logo": "3.7.1",
     "@ecl/vanilla-component-button": "3.7.1",
-    "@ecl/vanilla-component-site-header": "3.7.1"
+    "@ecl/vanilla-component-site-header": "3.7.1",
+    "cross-env": "7.0.3"
   },
   "repository": {
     "type": "git",
