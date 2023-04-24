@@ -100,7 +100,9 @@ export namespace Components {
         "theme": string;
     }
     interface EclCategoryFilterItem {
+        "expanded": boolean;
         "label": string;
+        "lastClicked": HTMLElement;
         "level": number;
         "path": string;
         "styleClass": string;
@@ -1246,7 +1248,9 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclCategoryFilterItem {
+        "expanded"?: boolean;
         "label"?: string;
+        "lastClicked"?: HTMLElement;
         "level"?: number;
         "path"?: string;
         "styleClass"?: string;
