@@ -9,6 +9,7 @@
 
 | Property     | Attribute     | Description | Type      | Default     |
 | ------------ | ------------- | ----------- | --------- | ----------- |
+| `current`    | `current`     |             | `boolean` | `false`     |
 | `label`      | `label`       |             | `string`  | `undefined` |
 | `level`      | `level`       |             | `number`  | `undefined` |
 | `path`       | `path`        |             | `string`  | `undefined` |

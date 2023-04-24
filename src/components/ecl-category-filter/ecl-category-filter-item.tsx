@@ -13,6 +13,7 @@ export class EclCategoryFilterItem {
   @Prop() path: string;
   @Prop() level: number;
   @Prop() subItems: boolean = false;
+  @Prop() current: boolean = false;
 
   getClass(): string {
     return [
@@ -38,7 +39,14 @@ export class EclCategoryFilterItem {
   }
 
   render() {
-    const elAttrs = this.subItems ? { 'aria-expanded': "false" } : {};
+    const elAttrs = {};
+    if (this.subItems) {
+      elAttrs['aria-expanded'] = "false";
+    }
+    if (this.current) {
+      elAttrs['aria-expanded'] = "true";
+    }
+
     return (
       <li
         class={this.getClass()}

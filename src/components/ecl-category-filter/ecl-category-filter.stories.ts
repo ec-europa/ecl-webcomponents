@@ -18,12 +18,14 @@ const Template = (args) =>
     label="Item 2 label"
     level="1"
     sub-items
+    current
   >
     <ecl-category-filter-item
       path="/example.html"
       label="Item 2.1"
       level="2"
       sub-items
+      current
     >
       <ecl-category-filter-item
         label="Item 2.1.1"

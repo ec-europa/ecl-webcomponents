@@ -5,3 +5,7 @@
 .ecl-category-filter__item-icon.sc-ecl-category-filter-ec {
   margin: -3px 0 !important;
 }
+
+.ecl-category-filter__list-item.sc-ecl-category-filter-ec:last-child .ecl-category-filter__item.sc-ecl-category-filter-ec {
+  border-bottom: 1px solid #e3e3e3;
+}
