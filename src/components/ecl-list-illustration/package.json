@@ -2,19 +2,20 @@
   "name": "@ecl/web-components-list-illustration",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0",
   "description": "ECL Lst with illustration",
   "main": "ecl-list-illustration.tsx",
   "private": true,
   "scripts": {
-    "build:styles": "cross-env ecl-builder styles",
+    "build:styles": "cross-env NODE_ENV=production ecl-builder styles",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
     "prepublish": "npm run build"
   },
   "devDependencies": {
     "@ecl/builder": "3.7.1",
-    "@ecl/vanilla-component-list-illustration": "3.7.1"
+    "@ecl/vanilla-component-list-illustration": "3.7.1",
+    "cross-env": "7.0.3"
   },
   "repository": {
     "type": "git",

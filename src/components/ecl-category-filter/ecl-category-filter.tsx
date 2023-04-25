@@ -26,6 +26,11 @@ export class EclCategoryFilter {
   }
 
   componentDidRender() {
+    const items = Array.from(this.el.querySelectorAll('.ecl-category-filter__item--level-1'));
+    if (items[0]) {
+      const lastItem = items[items.length - 1] as HTMLElement;
+      lastItem.parentElement.parentElement.style.border = 'none';
+    }
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-category-filter-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {

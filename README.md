@@ -1,7 +1,7 @@
 # ECL Web-components
 
 Repository for the implementation and distribution of ECL [Europa component library](https://ec.europa.eu/component-library) as vanilla web-components.
-ECL web-components are written and compiled using [stencil.js](https://stenciljs.com/).
+ECL web-components are written and compiled using [stencil](https://stenciljs.com/).
 
 To quickly run the app:
 
@@ -15,8 +15,7 @@ yarn dev (start storybook)
 
 ### Command reference
 
-**generate** ecl-{component} runs stencil generate
-**generate:template** ecl-{component} creates empty files in the package of the component  
+**generate** ecl-{component} runs stencil generate and generates empty files
 **build** builds the application, including storybook  
 **lint** runs stylelint on scss files and eslint on js files  
 **test** Runs the prettier checks and the snapshot tests  
@@ -30,7 +29,6 @@ yarn dev (start storybook)
 
 ```
 yarn generate ecl-{component} (choose only the spec file)
-yarn generate:template ecl-{component}
 ```
 
 This will create most of the files needed in src/components/ecl-{component}

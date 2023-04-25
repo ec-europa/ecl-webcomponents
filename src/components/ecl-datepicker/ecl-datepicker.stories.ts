@@ -11,6 +11,8 @@ const getArgs = () => {
     invalid: false,
     label: 'Label',
     placeholder: 'DD-MM-YYYY',
+    dateFormat: 'DD-MM-YYYY',
+    yearRange: 40,
   };
 }
 
@@ -67,6 +69,21 @@ const getArgTypes = () => {
         category: 'Content',
       },
     },
+    dateFormat: {
+      name: 'format for the date',
+      type: { name: 'string' },
+      description: 'You can use any valid date format',
+      table: {
+        category: 'Content',
+      },
+    },
+    yearRange: {
+      name: 'range of years to be considered',
+      type: { name: 'number' },
+      table: {
+        category: 'Content',
+      },
+    },
   };
 }
 
@@ -88,6 +105,8 @@ const Template = args =>
       input-id="${args.inputId}"
       default-value="${args.defaultValue}"
       placeholder="${args.placeholder}"
+      date-format="${args.dateFormat}"
+      year-range="${args.yearRange}"
     >
     </ecl-datepicker>
   </ecl-form-group>`;

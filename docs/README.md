@@ -3,7 +3,7 @@
 ECL webcomponents is an implementation of the vanilla [ECL](https://github.com/ec-europa/europa-component-library) components as vanilla web-components.
 All the available resources in ECL will be used to build the web-components, retrieving styles, scripts, resources like icons from the ECL packages and then used to produce the needed bundle for a specific component.
 This means that ECL webcomponents have dependencies on the ECL pacakges, therefore a package version need to be released before it can be used in this library.
-The components are written in typescript, using [stencil.js](https://stencil.js) and then bundled as vanilla webcomponents.
+The components are written in typescript, using [stencil](https://stenciljs.com) and then bundled as vanilla webcomponents.
 
 ## Where can i find the source code of ECL webcomponents?
 

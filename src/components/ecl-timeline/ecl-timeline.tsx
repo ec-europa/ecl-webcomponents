@@ -1,4 +1,4 @@
-import { Component, h, Prop, Element, getAssetPath} from '@stencil/core';
+import { Component, h, Prop, Element, getAssetPath, State } from '@stencil/core';
 declare const ECL: any;
 
 @Component({
@@ -16,6 +16,7 @@ export class EclTimeline {
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
   @Prop() eclScript: boolean = false;
+  @State() toBeToggled: boolean = false;
 
   getClass(): string {
     const styleClasses = [
@@ -45,6 +46,14 @@ export class EclTimeline {
       };
 
       document.body.appendChild(script);
+    }
+
+    const toggle = this.el.querySelector('.ecl-timeline__item--toggle');
+
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        this.toBeToggled = true;
+      });
     }
   }
 

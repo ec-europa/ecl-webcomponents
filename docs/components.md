@@ -104,7 +104,7 @@ This ensures that the script tag is created only if requested and if already pre
 declare const ECL: any;
 ```
 
-if we have javascript in a component we also need to import the stencil.js component `Element` and define that as:
+if we have javascript in a component we also need to import the stencil component `Element` and define that as:
 
 ```typescript
 @Element() el: HTMLElement;
@@ -137,4 +137,4 @@ Stencil defines additional methods in the lifecycle of a web-component defined b
 - `componentWillUpdate()`
 - `componentDidUpdate()`
 
-Please refer to the [stencil.js documentation](https://stenciljs.com/docs/component-lifecycle) for a better understanding of this lifecycle, but at the moment only one method is used, and it's `componentDidRender()` which seems the most reliable for the operations we need to perform, loading a js and initialising a component and loading the utils css where potentially needed.
+Please refer to the [stencil documentation](https://stenciljs.com/docs/component-lifecycle) for a better understanding of this lifecycle, but at the moment only one method is used, and it's `componentDidRender()` which seems the most reliable for the operations we need to perform, loading a js and initialising a component and loading the utils css where potentially needed.

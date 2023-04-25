@@ -1,15 +1,15 @@
 ### Vanilla web-component versus framework, library, tool
 
 We started implementing ECL components as vanilla web-components from scratch, using the Web apis directly, developing like this was time demanding and producing a certain amount of code for each component without preparing for any distribution of those web-components, browser compatibility, polyfill.
-We then switched to [stencil.js](https://stencil.js) that Piotr Nowak suggested us, ecl-webcomponents started as an investigation using the [POC](https://github.com/pnowak2/eui-ecl-webcomponents/tree/master/src/components) that he made.
+We then switched to [stencil](https://stenciljs.com) that Piotr Nowak suggested us, ecl-webcomponents started as an investigation using the [POC](https://github.com/pnowak2/eui-ecl-webcomponents/tree/master/src/components) that he made.
 
-So, [Stencil.js](https://stenciljs.com/) is used to compile our typescript files into vanilla web components.
+So, [Stencil](https://stenciljs.com/) is used to compile our typescript files into vanilla web components.
 Please refer to the documentation of this project, particularly about the available lifecycle methods.
 Generally speaking this tool has been chosen because:
 
 - it simplifies the writing of the component source
 - it has builtin configs for rollup that simplify the distribution of the library in different formats
-- the initial setup will mainly focus on releasing the library as such, using the lazy loading feature of stencil.js, in the future other bundle types might be introduced if needed.
+- the initial setup will mainly focus on releasing the library as such, using the lazy loading feature of stencil, in the future other bundle types might be introduced if needed.
 
 ## Light dom versus shadow dom
 
@@ -30,7 +30,7 @@ This means that we will reproduce the entire html of a component inside the cust
 The library is built as a component library, where "atoms" are defined and reused everywhere they are needed, similarly to the way these are defined and implemented using twig on ECL.
 Custom elements can be nested as normal html, so we end up with a potential complex structure of dependencies between the different components, and a complex markup reproduced by blocks represented by the nested custom elements.
 This can generate problems related to the styling, the html structure might not be the same due to the presence of the custom-elements.
-The system of the dependencies of a component is automagically reported in the readme.md file generated and managed by stencil.js, do not touch those files manually.
+The system of the dependencies of a component is automagically reported in the readme.md file generated and managed by stencil, do not touch those files manually.
 
 Example:
 

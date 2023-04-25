@@ -1,4 +1,4 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, State, Event, EventEmitter } from '@stencil/core';
 declare const ECL: any;
 
 @Component({
@@ -28,6 +28,12 @@ export class EclInput {
   @Prop() inputId: string;
   @Prop() name: string;
   @Prop() defaultValue: string;
+  @State() value: string;
+  @Prop() hasChanged: boolean = false;
+  @Prop() isFocused: boolean = false;
+  @Event() inputFocus: EventEmitter<FocusEvent>;
+  @Event() inputBlur: EventEmitter<FocusEvent>;
+  @Event() inputChange: EventEmitter;
 
   getClass(): string {
     const styleClasses = ['ecl-input', this.styleClass];
@@ -86,6 +92,25 @@ export class EclInput {
     return boxClasses.join(' ');
   }
 
+  handleInput(event) {
+    this.value = event.target.value;
+  }
+
+  handleFocus(event) {
+    this.inputFocus.emit(event);
+    this.isFocused = true;
+  }
+
+  handleChange(event) {
+    this.inputChange.emit(event);
+    this.hasChanged = true;
+  }
+
+  handleBlur(event) {
+    this.inputBlur.emit(event);
+    this.isFocused = false;
+  }
+
   render() {
     const wrapperAttrs = {};
 
@@ -105,7 +130,13 @@ export class EclInput {
         class={this.getClass()}
         {...wrapperAttrs}
       >
-        <input {...attributes} />
+        <input
+          {...attributes}
+          onInput={ev => this.handleInput(ev)}
+          onFocus={ev => this.handleFocus(ev)}
+          onBlur={ev => this.handleBlur(ev)}
+          onChange={ev => this.handleChange(ev)}
+        />
       { this.type === 'checkbox' ?
         <label
           class={this.getBoxClasses('checkbox', 'label')}

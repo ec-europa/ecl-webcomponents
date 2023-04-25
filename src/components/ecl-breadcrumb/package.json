@@ -2,13 +2,13 @@
   "name": "@ecl/web-components-breadcrumb",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0",
   "description": "ECL Breadcrumb",
   "main": "ecl-breadcrumb.js",
   "private": true,
   "scripts": {
     "build:scripts": "cross-env ecl-builder scripts",
-    "build:styles": "cross-env ecl-builder styles",
+    "build:styles": "cross-env NODE_ENV=production ecl-builder styles",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
     "dist": "cross-env NODE_ENV=production run-p clean build:*",
@@ -18,7 +18,8 @@
     "@ecl/builder": "3.7.1",
     "@ecl/theme-ec": "3.7.1",
     "@ecl/theme-eu": "3.7.1",
-    "@ecl/vanilla-component-breadcrumb": "3.7.1"
+    "@ecl/vanilla-component-breadcrumb": "3.7.1",
+    "cross-env": "7.0.3"
   },
   "repository": {
     "type": "git",

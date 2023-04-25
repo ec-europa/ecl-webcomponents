@@ -11,8 +11,10 @@
 | ------------ | ------------- | ----------- | --------- | ---------------- |
 | `checked`    | `checked`     |             | `boolean` | `false`          |
 | `disabled`   | `disabled`    |             | `boolean` | `false`          |
+| `hasChanged` | `has-changed` |             | `boolean` | `false`          |
 | `icon`       | `icon`        |             | `string`  | `'star-outline'` |
 | `iconFilled` | `icon-filled` |             | `string`  | `'star-filled'`  |
+| `isFocused`  | `is-focused`  |             | `boolean` | `false`          |
 | `itemId`     | `item-id`     |             | `string`  | `undefined`      |
 | `label`      | `label`       |             | `string`  | `undefined`      |
 | `name`       | `name`        |             | `string`  | `undefined`      |
@@ -20,6 +22,15 @@
 | `styleClass` | `style-class` |             | `string`  | `undefined`      |
 | `theme`      | `theme`       |             | `string`  | `'ec'`           |
 | `value`      | `value`       |             | `string`  | `undefined`      |
+
+
+## Events
+
+| Event         | Description | Type                      |
+| ------------- | ----------- | ------------------------- |
+| `inputBlur`   |             | `CustomEvent<FocusEvent>` |
+| `inputChange` |             | `CustomEvent<any>`        |
+| `inputFocus`  |             | `CustomEvent<FocusEvent>` |
 
 
 ## Dependencies

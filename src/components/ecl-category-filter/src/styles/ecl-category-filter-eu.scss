@@ -5,3 +5,11 @@
 .ecl-category-filter__item-icon.sc-ecl-category-filter-eu {
   margin: -3px 0 !important;
 }
+
+.ecl-category-filter__list-item.sc-ecl-category-filter-eu {
+  border-bottom: 1px solid #e3e3e3;
+
+  .ecl-category-filter__list-item {
+    border: none;
+  }
+}

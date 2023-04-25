@@ -11,7 +11,9 @@
 | ----------------------------- | --------------------------------- | ----------- | --------- | ----------- |
 | `disabled`                    | `disabled`                        |             | `boolean` | `false`     |
 | `eclScript`                   | `ecl-script`                      |             | `boolean` | `false`     |
+| `hasChanged`                  | `has-changed`                     |             | `boolean` | `false`     |
 | `invalid`                     | `invalid`                         |             | `boolean` | `false`     |
+| `isFocused`                   | `is-focused`                      |             | `boolean` | `false`     |
 | `multiple`                    | `multiple`                        |             | `boolean` | `false`     |
 | `multipleAllText`             | `multiple-all-text`               |             | `string`  | `undefined` |
 | `multipleClearAllText`        | `multiple-clear-all-text`         |             | `string`  | `undefined` |
@@ -25,6 +27,15 @@
 | `styleClass`                  | `style-class`                     |             | `string`  | `undefined` |
 | `theme`                       | `theme`                           |             | `string`  | `'ec'`      |
 | `width`                       | `width`                           |             | `string`  | `'m'`       |
+
+
+## Events
+
+| Event         | Description | Type                      |
+| ------------- | ----------- | ------------------------- |
+| `inputBlur`   |             | `CustomEvent<FocusEvent>` |
+| `inputChange` |             | `CustomEvent<any>`        |
+| `inputFocus`  |             | `CustomEvent<FocusEvent>` |
 
 
 ## Dependencies

@@ -1,4 +1,4 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, Event, EventEmitter } from '@stencil/core';
 
 @Component({
   tag: 'ecl-rating-star',
@@ -20,6 +20,26 @@ export class EclRatingStar {
   @Prop() icon: string = 'star-outline';
   @Prop() iconFilled: string = 'star-filled';
   @Prop() label: string;
+  @Prop() hasChanged: boolean = false;
+  @Prop() isFocused: boolean = false;
+  @Event() inputFocus: EventEmitter<FocusEvent>;
+  @Event() inputBlur: EventEmitter<FocusEvent>;
+  @Event() inputChange: EventEmitter;
+
+  handleFocus(event) {
+    this.inputFocus.emit(event);
+    this.isFocused = true;
+  }
+
+  handleChange(event) {
+    this.inputChange.emit(event);
+    this.hasChanged = true;
+  }
+
+  handleBlur(event) {
+    this.inputBlur.emit(event);
+    this.isFocused = false;
+  }
 
   render() {
     return (
@@ -33,6 +53,9 @@ export class EclRatingStar {
           checked={this.checked}
           required={this.required}
           disabled={this.disabled}
+          onFocus={ev => this.handleFocus(ev)}
+          onBlur={ev => this.handleBlur(ev)}
+          onChange={ev => this.handleChange(ev)}
         />
         <label 
           class="ecl-rating-field__label ecl-rating-field__star" 

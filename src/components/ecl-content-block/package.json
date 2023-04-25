@@ -2,12 +2,12 @@
   "name": "@ecl/web-components-content-block",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0",
   "description": "ECL Content Block",
   "main": "ecl-content-block.tsx",
   "private": true,
   "scripts": {
-    "build:styles": "cross-env ecl-builder styles",
+    "build:styles": "cross-env NODE_ENV=production ecl-builder styles",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
     "prepublish": "npm run build"
@@ -18,7 +18,8 @@
     "@ecl/vanilla-component-description-list": "3.7.1",
     "@ecl/vanilla-component-icon": "3.7.1",
     "@ecl/vanilla-component-label": "3.7.1",
-    "@ecl/vanilla-component-link": "3.7.1"
+    "@ecl/vanilla-component-link": "3.7.1",
+    "cross-env": "7.0.3"
   },
   "repository": {
     "type": "git",

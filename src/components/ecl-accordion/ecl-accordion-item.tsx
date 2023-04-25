@@ -1,4 +1,4 @@
-import { Component, Prop, h, Host, Element } from '@stencil/core';
+import { Component, Prop, Element, h } from '@stencil/core';
 
 @Component({
   tag: 'ecl-accordion-item',
@@ -14,7 +14,7 @@ export class EclAccordionItem {
   @Prop() label: string;
   @Prop({reflect:true}) expanded: boolean;
   @Prop() theme: string = 'ec';
-
+  
   getClass(): string {
     return [
       `ecl-accordion__item`,
@@ -24,7 +24,7 @@ export class EclAccordionItem {
 
   render() {
     return (
-      <Host class={this.getClass()}>
+      <div class={this.getClass()}>
         <h3 class="ecl-accordion__title">
           <button
             data-ecl-accordion-toggle
@@ -56,7 +56,7 @@ export class EclAccordionItem {
         >
           <slot></slot>
         </div>
-      </Host>
+      </div>
     )
   }
 }
