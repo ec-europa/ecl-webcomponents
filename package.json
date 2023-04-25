@@ -136,6 +136,7 @@
     "glob-parent": ">=5.1.2",
     "trim": ">=0.0.3",
     "json5": ">=1.0.2",
-    "http-cache-semantics": ">=4.1.1"
+    "http-cache-semantics": ">=4.1.1",
+    "yaml": ">=2.2.2"
   }
 }
