@@ -25,6 +25,7 @@
     "build:stencil": "stencil build",
     "build:react": "lerna --scope \"@ecl/ecl-webcomponents-react\" run build",
     "build:react-consumer": "lerna --scope \"@ecl/ecl-webcomponents-react-consumer\" run build",
+    "build:angular": "lerna --scope \"@ecl/ecl-webcomponents-angular\" run build",
     "build:storybook": "NODE_ENV=production sb build -o build",
     "build:playground": "run-s build:playground:*",
     "build:playground:clean": "rimraf playground/ecl-webcomponents",
@@ -60,7 +61,7 @@
     "src/components/**",
     "playground",
     "src/plugins/**",
-    "packages/**"
+    "packages/*"
   ],
   "dependencies": {
     "@stencil/core": "3.2.1"

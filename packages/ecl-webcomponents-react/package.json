@@ -27,7 +27,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@ecl/ecl-webcomponents": "0.1.0-alpha.0"
+    "@ecl/ecl-webcomponents": "0.1.0"
   },
   "devDependencies": {
     "react": "18.2.0",
