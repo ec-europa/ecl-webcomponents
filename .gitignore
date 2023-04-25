@@ -6,6 +6,7 @@ ckeditor5
 playground/ecl-webcomponents
 playground/editor/translations
 packages/ecl-webcomponents-react/lib/components/stencil-generated
+packages/ecl-webcomponents-angular/projects/component-library/src/lib/stencil-generated
 
 *~
 *.sw[mnpcod]
