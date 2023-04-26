@@ -25,7 +25,7 @@
     "build:stencil": "stencil build",
     "build:react": "lerna --scope \"@ecl/ecl-webcomponents-react\" run build",
     "build:react-consumer": "lerna --scope \"@ecl/ecl-webcomponents-react-consumer\" run build",
-    "build:angular": "lerna --scope \"@ecl/ecl-webcomponents-angular\" run build",
+    "build:angular": "lerna --scope \"@ecl/ecl-webcomponents-angular-workspace\" run build",
     "build:storybook": "NODE_ENV=production sb build -o build",
     "build:playground": "run-s build:playground:*",
     "build:playground:clean": "rimraf playground/ecl-webcomponents",
@@ -55,13 +55,16 @@
     "refresh-playground": "lerna --scope \"@ecl/ckeditor5-*\" run dev:install-plugin && lerna --scope \"@ecl/ckeditor5-*\" run build && yarn build:playground",
     "dev": "sb dev -p 6006",
     "dev-react": "lerna --scope \"@ecl/ecl-webcomponents-react*\" run dev",
+    "dev-angular": "lerna --scope \"@ecl/ecl-webcomponents-angular-workspace*\" run start",
     "update-version": "scripts/update-version.sh"
   },
   "workspaces": [
     "src/components/**",
     "playground",
     "src/plugins/**",
-    "packages/*"
+    "packages/*",
+    "packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular",
+    "!packages/**/dist"
   ],
   "dependencies": {
     "@stencil/core": "3.2.1"

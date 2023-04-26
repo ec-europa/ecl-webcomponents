@@ -1,7 +1,7 @@
 /*
- * Public API Surface of component-library
+ * Public API Surface of ecl-webcomponents-angular
  */
 
-export * from './lib/component-library.module';
+export * from './lib/ecl-webcomponents-angular.module';
 export { DIRECTIVES } from './lib/stencil-generated';
 export * from './lib/stencil-generated/components';

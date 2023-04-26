@@ -24,8 +24,8 @@ export const config: Config = {
     }),
     angularOutputTarget({
       componentCorePackage: '@ecl/ecl-webcomponents',
-      directivesProxyFile: 'packages/ecl-webcomponents-angular/projects/component-library/src/lib/stencil-generated/components.ts',
-      directivesArrayFile: 'packages/ecl-webcomponents-angular/projects/component-library/src/lib/stencil-generated/index.ts',
+      directivesProxyFile: 'packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular/src/lib/stencil-generated/components.ts',
+      directivesArrayFile: 'packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular/src/lib/stencil-generated/index.ts',
     }),
   ],
 };

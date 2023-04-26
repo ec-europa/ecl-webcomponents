@@ -1,12 +1,12 @@
 {
-  "name": "@ecl/ecl-webcomponents-angular",
+  "name": "@ecl/ecl-webcomponents-angular-workspace",
   "version": "0.0.0",
   "scripts": {
     "clean": "rimraf dist",
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm run clean && ng build",
-    "watch": "ng build --watch --configuration development",
+    "build": "npm run clean && cd projects/ecl-webcomponents-angular && ng build",
+    "watch": "cd projects/ecl-webcomponents-angular && ng build --watch --configuration development",
     "test": "ng test"
   },
   "private": true,
@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@ecl/ecl-webcomponents": "0.1.0",
+    "@ecl/ecl-webcomponents-angular": "0.1.0",
     "@angular-devkit/build-angular": "^15.2.6",
     "@angular/cli": "~15.2.6",
     "@angular/compiler-cli": "^15.2.0",
