@@ -24,48 +24,56 @@ const Template = (args) =>
     language-aria-label="Choose language"
   >
   <ecl-language-item
+    theme="${args.theme}"
     slot="eu-category"
     path="/example.html"
     lang-code="bg"
     language="български"
   ></ecl-language-item>
   <ecl-language-item
+    theme="${args.theme}"
     slot="eu-category"
     path="/example.html"
     lang-code="es"
     language="español"
   ></ecl-language-item>
   <ecl-language-item
+    theme="${args.theme}"
     slot="eu-category"
     path="/example.html"
     lang-code="cs"
     language="čeština"
   ></ecl-language-item>
   <ecl-language-item
+    theme="${args.theme}"
     slot="eu-category"
     path="/example.html"
     lang-code="da"
     language="dansk"
   ></ecl-language-item>
   <ecl-language-item
+    theme="${args.theme}"
     slot="eu-category"
     path="/example.html"
     lang-code="de"
     language="Deutsch"
   ></ecl-language-item>
   <ecl-language-item
+    theme="${args.theme}"
     slot="eu-category"
     path="/example.html"
     lang-code="et"
     language="eesti"
   ></ecl-language-item>
   <ecl-language-item
+    theme="${args.theme}"
     slot="eu-category"
     path="/example.html"
     lang-code="el"
     language="ελληνικά"
   ></ecl-language-item>
   <ecl-language-item
+    theme="${args.theme}"
     slot="eu-category"
     path="/example.html"
     lang-code="en"
@@ -73,36 +81,42 @@ const Template = (args) =>
     active
   ></ecl-language-item>
   <ecl-language-item
+    theme="${args.theme}"
     slot="eu-category"
     path="/example.html"
     lang-code="fr"
     language="français"
   ></ecl-language-item>
   <ecl-language-item
+    theme="${args.theme}"
     slot="eu-category"
     path="/example.html"
     lang-code="ga"
     language="Gaeilge"
   ></ecl-language-item>
   <ecl-language-item
+    theme="${args.theme}"
     slot="eu-category"
     path="/example.html"
     lang-code="hr"
     language="hrvatski"
   ></ecl-language-item>
   <ecl-language-item
+    theme="${args.theme}"
     slot="eu-category"
     path="/example.html"
     lang-code="it"
     language="italiano"
   ></ecl-language-item>
   <ecl-language-item
+    theme="${args.theme}"
     slot="non-eu-category"
     path="/example.html"
     lang-code="zh"
     language="中文"
   ></ecl-language-item>
   <ecl-language-item
+    theme="${args.theme}"
     slot="non-eu-category"
     path="/example.html"
     lang-code="tr"

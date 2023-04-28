@@ -18,20 +18,20 @@
   logo-title="European commission"
   language-aria-label="Choose language"
 >
-  <ecl-language-item slot="eu-category" path="/example.html" lang-code="bg" language="български"></ecl-language-item>
-  <ecl-language-item slot="eu-category" path="/example.html" lang-code="es" language="español"></ecl-language-item>
-  <ecl-language-item slot="eu-category" path="/example.html" lang-code="cs" language="čeština"></ecl-language-item>
-  <ecl-language-item slot="eu-category" path="/example.html" lang-code="da" language="dansk"></ecl-language-item>
-  <ecl-language-item slot="eu-category" path="/example.html" lang-code="de" language="Deutsch"></ecl-language-item>
-  <ecl-language-item slot="eu-category" path="/example.html" lang-code="et" language="eesti"></ecl-language-item>
-  <ecl-language-item slot="eu-category" path="/example.html" lang-code="el" language="ελληνικά"></ecl-language-item>
-  <ecl-language-item slot="eu-category" path="/example.html" lang-code="en" language="English" active></ecl-language-item>
-  <ecl-language-item slot="eu-category" path="/example.html" lang-code="fr" language="français"></ecl-language-item>
-  <ecl-language-item slot="eu-category" path="/example.html" lang-code="ga" language="Gaeilge"></ecl-language-item>
-  <ecl-language-item slot="eu-category" path="/example.html" lang-code="hr" language="hrvatski"></ecl-language-item>
-  <ecl-language-item slot="eu-category" path="/example.html" lang-code="it" language="italiano"></ecl-language-item>
-  <ecl-language-item slot="non-eu-category" path="/example.html" lang-code="zh" language="中文"></ecl-language-item>
-  <ecl-language-item slot="non-eu-category" path="/example.html" lang-code="tr" language="Türk"></ecl-language-item>
+  <ecl-language-item theme="eu" slot="eu-category" path="/example.html" lang-code="bg" language="български"></ecl-language-item>
+  <ecl-language-item theme="eu" slot="eu-category" path="/example.html" lang-code="es" language="español"></ecl-language-item>
+  <ecl-language-item theme="eu" slot="eu-category" path="/example.html" lang-code="cs" language="čeština"></ecl-language-item>
+  <ecl-language-item theme="eu" slot="eu-category" path="/example.html" lang-code="da" language="dansk"></ecl-language-item>
+  <ecl-language-item theme="eu" slot="eu-category" path="/example.html" lang-code="de" language="Deutsch"></ecl-language-item>
+  <ecl-language-item theme="eu" slot="eu-category" path="/example.html" lang-code="et" language="eesti"></ecl-language-item>
+  <ecl-language-item theme="eu" slot="eu-category" path="/example.html" lang-code="el" language="ελληνικά"></ecl-language-item>
+  <ecl-language-item theme="eu" slot="eu-category" path="/example.html" lang-code="en" language="English" active></ecl-language-item>
+  <ecl-language-item theme="eu" slot="eu-category" path="/example.html" lang-code="fr" language="français"></ecl-language-item>
+  <ecl-language-item theme="eu" slot="eu-category" path="/example.html" lang-code="ga" language="Gaeilge"></ecl-language-item>
+  <ecl-language-item theme="eu" slot="eu-category" path="/example.html" lang-code="hr" language="hrvatski"></ecl-language-item>
+  <ecl-language-item theme="eu" slot="eu-category" path="/example.html" lang-code="it" language="italiano"></ecl-language-item>
+  <ecl-language-item theme="eu" slot="non-eu-category" path="/example.html" lang-code="zh" language="中文"></ecl-language-item>
+  <ecl-language-item theme="eu" slot="non-eu-category" path="/example.html" lang-code="tr" language="Türk"></ecl-language-item>
 </ecl-site-header>
 <ecl-page-header variant="core" theme="eu" header-title="Page title" meta="Meta info | DD Month YYYY">
   <ecl-breadcrumb slot="breadcrumb" variant="default" theme="eu" ecl-script>
@@ -45,11 +45,70 @@
   Lorem ipsum dolor sit amet, <a class="ecl-link" href="/example.html">consectetur adipiscing elit</a>. Quisque nec ullamcorper mi. Morbi interdum fermentum tempus. Nam nec rhoncus
   risus, <a class="ecl-link" href="/example.html">eget dictum elit</a>. Vestibulum gravida tincidunt venenatis.
 </ecl-page-header>
-<ecl-button type="call" theme="eu">
-  <ecl-icon slot="icon-after" icon="corner-arrow" transform="rotate-90" theme="eu"></ecl-icon>
-  Label
-</ecl-button>
+<div class="ecl-container">
+  <div class="ecl-row">
+    <ecl-grid columns="3" breakpoint="l" styleClass="ecl-sidebar">
+      <ecl-inpage-navigation inpage-title="Page contents" inpage-id="inpage-id" theme="eu" ecl-script with-utils>
+        <ecl-inpage-navigation-item path="#inline-nav-1" theme="eu"> Heading 1 </ecl-inpage-navigation-item>
+        <ecl-inpage-navigation-item path="#inline-nav-2" theme="eu"> Heading 2 with a long title going on several lines </ecl-inpage-navigation-item>
+        <ecl-inpage-navigation-item path="#inline-nav-3" theme="eu"> Heading 3 </ecl-inpage-navigation-item>
+      </ecl-inpage-navigation>
+    </ecl-grid>
 
-<ecl-tag variant="display" theme="eu"> An ecl-tag </ecl-tag>
+    <ecl-grid columns="9" breakpoint="l" styleClass="ecl-main">
+      <ecl-featured-item
+        variant="extended"
+        theme="eu"
+        item-title="Featured item"
+        position="${args.position}"
+        image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+        media-caption="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        id="inline-nav-1"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </ecl-featured-item>
+      <div style="margin-top: 2rem"></div>
+      <ecl-list-illustration theme="eu" column="3" id="inline-nav-2">
+        <ecl-list-illustration-item theme="eu" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut
+          felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </ecl-list-illustration-item>
+        <ecl-list-illustration-item theme="eu" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut
+          felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </ecl-list-illustration-item>
+        <ecl-list-illustration-item theme="eu" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut
+          felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </ecl-list-illustration-item>
+      </ecl-list-illustration>
+      <div style="margin-top: 2rem"></div>
+      <ecl-fact-figures columns="3" theme="eu" id="inline-nav-3">
+        <ecl-fact-figures-item item-title="Lorem ipsum" value="00.0 million" icon="infographic" theme="eu">
+          Nunc condimentum sapien ut nibh finibus suscipit vitae at justo. Morbi quis odio faucibus, commodo tortor id, elementum libero.
+        </ecl-fact-figures-item>
 
-<ecl-date-block variant="ongoing" theme="eu" day="Mon" month="Dec" year="2022" date-time=""> </ecl-date-block>
+        <ecl-fact-figures-item item-title="Sed hendrerit" value="00.0 million" icon="spreadsheet" theme="eu">
+          Turpis varius congue venenatis, erat dui feugiat felis.
+        </ecl-fact-figures-item>
+
+        <ecl-fact-figures-item item-title="Donec suscipit interdum augue, ac dapibus eros finibus a." value="00.0 million" icon="growth" theme="eu">
+          Cras vestibulum efficitur mi, quis porta tellus rutrum ut. Quisque at pulvinar sem.
+        </ecl-fact-figures-item>
+
+        <ecl-fact-figures-item item-title="Aenean dapibus" value="00.0 million" icon="digital" theme="eu">
+          Aliquam lacinia diam eu sem malesuada, in interdum ante bibendum.
+        </ecl-fact-figures-item>
+
+        <ecl-fact-figures-item item-title="Aliquam faucibus nulla eget eleifend" value="00.0 million" icon="regulation" theme="eu">
+          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec lectus tortor.
+        </ecl-fact-figures-item>
+
+        <ecl-fact-figures-item item-title="Aliquam faucibus nulla eget eleifend" value="00.0 million" icon="image" theme="eu">
+          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec lectus tortor.
+        </ecl-fact-figures-item>
+      </ecl-fact-figures>
+    </ecl-grid>
+  </div>
+</div>

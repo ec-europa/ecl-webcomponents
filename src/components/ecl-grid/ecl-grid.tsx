@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, Element } from '@stencil/core';
 
 @Component({
   tag: 'ecl-grid',
@@ -7,19 +7,37 @@ import { Component, Prop, h } from '@stencil/core';
     eu: './build/styles/ecl-grid-eu.css',
   },
   shadow: false,
-  scoped: true,
+  scoped: false,
 })
 
 export class EclGrid {
+  @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop() theme: string = 'ec';
   @Prop() columns: number = 12;
+  @Prop() breakpoint: string;
 
   getClass(): string {
-    return [
-      `ecl-col-${this.columns}`,
-      this.styleClass
-    ].join(' ');
+    let styleClasses = [];
+    if (!this.breakpoint) {
+      styleClasses = [
+        `ecl-col-${this.columns}`,
+        this.styleClass,
+      ];
+    } else {
+      styleClasses = [
+        `ecl-col-${this.breakpoint}-${this.columns}`,
+        this.styleClass,
+      ];
+    }
+    
+    return styleClasses.join(' ');
+  }
+
+  componentDidRender() {
+    const parent = this.el.parentNode;
+    while (this.el.firstChild) parent.insertBefore(this.el.firstChild, this.el);
+    parent.removeChild(this.el);
   }
 
   render() {

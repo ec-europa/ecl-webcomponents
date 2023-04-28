@@ -307,6 +307,7 @@ export namespace Components {
         "type": string;
     }
     interface EclGrid {
+        "breakpoint": string;
         "columns": number;
         "styleClass": string;
         "theme": string;
@@ -1506,6 +1507,7 @@ declare namespace LocalJSX {
         "type"?: string;
     }
     interface EclGrid {
+        "breakpoint"?: string;
         "columns"?: number;
         "styleClass"?: string;
         "theme"?: string;
