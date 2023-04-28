@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-grid renders 1`] = `
+<ecl-grid columns="6">
+  <!---->
+  <div class="ecl-col-6">
+    Content in 6 columns
+  </div>
+</ecl-grid>
+`;
