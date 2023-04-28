@@ -66,6 +66,10 @@ export class EclSiteHeader {
   }
 
   render() {
+    let logoPath = getAssetPath(`./build/images/${this.theme}/logos/logo-${this.theme}--${this.langCode}.svg`);
+    if (this.theme === 'eu') {
+      logoPath = getAssetPath(`./build/images/${this.theme}/logos/standard-version/positive/logo-${this.theme}--${this.langCode}.svg`);
+    }
     return (
       <header class="ecl-site-header">
         <div class="ecl-site-header__header">
@@ -82,7 +86,7 @@ export class EclSiteHeader {
                   alt={this.logoAlt}
                   title={this.logoTitle}
                   class="ecl-site-header__logo-image ecl-site-header__logo-image-desktop"
-                  src={getAssetPath(`./build/images/${this.theme}/logos/logo-${this.theme}--${this.langCode}.svg`)}
+                  src={logoPath}
                 />
               </ecl-link>
               <div class="ecl-site-header__action">

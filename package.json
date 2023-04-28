@@ -55,7 +55,10 @@
     "refresh-playground": "lerna --scope \"@ecl/ckeditor5-*\" run dev:install-plugin && lerna --scope \"@ecl/ckeditor5-*\" run build && yarn build:playground",
     "dev": "sb dev -p 6006",
     "dev-react": "lerna --scope \"@ecl/ecl-webcomponents-react*\" run dev",
-    "dev-angular": "lerna --scope \"@ecl/ecl-webcomponents-angular-workspace*\" run start",
+    "dev-angular:watch": "cd packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular-consumer && npm run watch",
+    "dev-angular:start": "lerna --scope \"@ecl/ecl-webcomponents-angular-workspace*\" run serve",
+    "dev-angular:reload": "lerna --scope \"@ecl/ecl-webcomponents-angular-workspace*\" run reload",
+    "dev-angular": "run-p dev-angular:*",
     "update-version": "scripts/update-version.sh"
   },
   "workspaces": [

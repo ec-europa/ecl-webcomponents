@@ -17,9 +17,9 @@ module.exports = {
       options: { up: true },
     },
     {
-      from: [path.resolve(nodeModules, '@ecl/resources-eu-logo/dist/positive/*.svg')],
+      from: [path.resolve(nodeModules, '@ecl/resources-eu-logo/dist/**/*.svg')],
       to: path.resolve(outputFolder, 'images/eu/logos'),
-      options: { up: true },
+      options: { up: 9 },
     },
   ],
   scripts: [
