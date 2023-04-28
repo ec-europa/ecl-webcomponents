@@ -306,6 +306,11 @@ export namespace Components {
         "theme": string;
         "type": string;
     }
+    interface EclGrid {
+        "columns": number;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclHeroBanner {
         "bannerTitle": string;
         "centered": boolean;
@@ -890,6 +895,12 @@ declare global {
         prototype: HTMLEclGalleryItemElement;
         new (): HTMLEclGalleryItemElement;
     };
+    interface HTMLEclGridElement extends Components.EclGrid, HTMLStencilElement {
+    }
+    var HTMLEclGridElement: {
+        prototype: HTMLEclGridElement;
+        new (): HTMLEclGridElement;
+    };
     interface HTMLEclHeroBannerElement extends Components.EclHeroBanner, HTMLStencilElement {
     }
     var HTMLEclHeroBannerElement: {
@@ -1149,6 +1160,7 @@ declare global {
         "ecl-form-group": HTMLEclFormGroupElement;
         "ecl-gallery": HTMLEclGalleryElement;
         "ecl-gallery-item": HTMLEclGalleryItemElement;
+        "ecl-grid": HTMLEclGridElement;
         "ecl-hero-banner": HTMLEclHeroBannerElement;
         "ecl-icon": HTMLEclIconElement;
         "ecl-inpage-navigation": HTMLEclInpageNavigationElement;
@@ -1492,6 +1504,11 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "type"?: string;
+    }
+    interface EclGrid {
+        "columns"?: number;
+        "styleClass"?: string;
+        "theme"?: string;
     }
     interface EclHeroBanner {
         "bannerTitle"?: string;
@@ -1917,6 +1934,7 @@ declare namespace LocalJSX {
         "ecl-form-group": EclFormGroup;
         "ecl-gallery": EclGallery;
         "ecl-gallery-item": EclGalleryItem;
+        "ecl-grid": EclGrid;
         "ecl-hero-banner": EclHeroBanner;
         "ecl-icon": EclIcon;
         "ecl-inpage-navigation": EclInpageNavigation;
@@ -1991,6 +2009,7 @@ declare module "@stencil/core" {
             "ecl-form-group": LocalJSX.EclFormGroup & JSXBase.HTMLAttributes<HTMLEclFormGroupElement>;
             "ecl-gallery": LocalJSX.EclGallery & JSXBase.HTMLAttributes<HTMLEclGalleryElement>;
             "ecl-gallery-item": LocalJSX.EclGalleryItem & JSXBase.HTMLAttributes<HTMLEclGalleryItemElement>;
+            "ecl-grid": LocalJSX.EclGrid & JSXBase.HTMLAttributes<HTMLEclGridElement>;
             "ecl-hero-banner": LocalJSX.EclHeroBanner & JSXBase.HTMLAttributes<HTMLEclHeroBannerElement>;
             "ecl-icon": LocalJSX.EclIcon & JSXBase.HTMLAttributes<HTMLEclIconElement>;
             "ecl-inpage-navigation": LocalJSX.EclInpageNavigation & JSXBase.HTMLAttributes<HTMLEclInpageNavigationElement>;
