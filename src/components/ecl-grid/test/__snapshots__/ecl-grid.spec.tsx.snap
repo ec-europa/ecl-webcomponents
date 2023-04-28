@@ -1,8 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-grid renders 1`] = `
-<ecl-grid class="ecl-col-6" columns="6">
+<div class="ecl-container">
   <!---->
-  Content in 6 columns
-</ecl-grid>
+  <div class="ecl-col-6">
+    Content in 6 columns
+  </div>
+  <!---->
+  <div class="ecl-col-4">
+    Content in 4 columns
+  </div>
+  <!---->
+  <div class="ecl-col-2">
+    Content in 2 columns
+  </div>
+</div>
 `;
