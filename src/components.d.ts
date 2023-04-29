@@ -262,6 +262,22 @@ export namespace Components {
         "width": string;
         "withUtils": boolean;
     }
+    interface EclFooter {
+        "description": string;
+        "logoAlt": string;
+        "logoAriaLabel": string;
+        "logoLangCode": string;
+        "logoTitle": string;
+        "siteName": string;
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclFooterItem {
+        "ariaLabel": string;
+        "link": string;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclFormGroup {
         "helperId": string;
         "helperText": string;
@@ -877,6 +893,18 @@ declare global {
         prototype: HTMLEclFileUploadElement;
         new (): HTMLEclFileUploadElement;
     };
+    interface HTMLEclFooterElement extends Components.EclFooter, HTMLStencilElement {
+    }
+    var HTMLEclFooterElement: {
+        prototype: HTMLEclFooterElement;
+        new (): HTMLEclFooterElement;
+    };
+    interface HTMLEclFooterItemElement extends Components.EclFooterItem, HTMLStencilElement {
+    }
+    var HTMLEclFooterItemElement: {
+        prototype: HTMLEclFooterItemElement;
+        new (): HTMLEclFooterItemElement;
+    };
     interface HTMLEclFormGroupElement extends Components.EclFormGroup, HTMLStencilElement {
     }
     var HTMLEclFormGroupElement: {
@@ -1157,6 +1185,8 @@ declare global {
         "ecl-file-translations": HTMLEclFileTranslationsElement;
         "ecl-file-translations-item": HTMLEclFileTranslationsItemElement;
         "ecl-file-upload": HTMLEclFileUploadElement;
+        "ecl-footer": HTMLEclFooterElement;
+        "ecl-footer-item": HTMLEclFooterItemElement;
         "ecl-form-group": HTMLEclFormGroupElement;
         "ecl-gallery": HTMLEclGalleryElement;
         "ecl-gallery-item": HTMLEclGalleryItemElement;
@@ -1460,6 +1490,22 @@ declare namespace LocalJSX {
         "type"?: string;
         "width"?: string;
         "withUtils"?: boolean;
+    }
+    interface EclFooter {
+        "description"?: string;
+        "logoAlt"?: string;
+        "logoAriaLabel"?: string;
+        "logoLangCode"?: string;
+        "logoTitle"?: string;
+        "siteName"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclFooterItem {
+        "ariaLabel"?: string;
+        "link"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
     }
     interface EclFormGroup {
         "helperId"?: string;
@@ -1931,6 +1977,8 @@ declare namespace LocalJSX {
         "ecl-file-translations": EclFileTranslations;
         "ecl-file-translations-item": EclFileTranslationsItem;
         "ecl-file-upload": EclFileUpload;
+        "ecl-footer": EclFooter;
+        "ecl-footer-item": EclFooterItem;
         "ecl-form-group": EclFormGroup;
         "ecl-gallery": EclGallery;
         "ecl-gallery-item": EclGalleryItem;
@@ -2006,6 +2054,8 @@ declare module "@stencil/core" {
             "ecl-file-translations": LocalJSX.EclFileTranslations & JSXBase.HTMLAttributes<HTMLEclFileTranslationsElement>;
             "ecl-file-translations-item": LocalJSX.EclFileTranslationsItem & JSXBase.HTMLAttributes<HTMLEclFileTranslationsItemElement>;
             "ecl-file-upload": LocalJSX.EclFileUpload & JSXBase.HTMLAttributes<HTMLEclFileUploadElement>;
+            "ecl-footer": LocalJSX.EclFooter & JSXBase.HTMLAttributes<HTMLEclFooterElement>;
+            "ecl-footer-item": LocalJSX.EclFooterItem & JSXBase.HTMLAttributes<HTMLEclFooterItemElement>;
             "ecl-form-group": LocalJSX.EclFormGroup & JSXBase.HTMLAttributes<HTMLEclFormGroupElement>;
             "ecl-gallery": LocalJSX.EclGallery & JSXBase.HTMLAttributes<HTMLEclGalleryElement>;
             "ecl-gallery-item": LocalJSX.EclGalleryItem & JSXBase.HTMLAttributes<HTMLEclGalleryItemElement>;
