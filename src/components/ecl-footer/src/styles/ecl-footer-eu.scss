@@ -1,0 +1,9 @@
+@use '@ecl/theme-eu';
+
+@use '@ecl/vanilla-layout-grid/grid';
+@use '@ecl/vanilla-component-site-footer/site-footer-eu';
+
+.ecl-site-footer__logo-link.sc-ecl-footer-ec {
+  margin-bottom: 1rem;
+  width: 100%;
+}

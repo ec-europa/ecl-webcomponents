@@ -22,22 +22,10 @@ module.exports = {
       options: { up: 9 },
     },
   ],
-  scripts: [
-    {
-      entry: path.resolve(nodeModules, '@ecl/vanilla-component-site-header/site-header.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-site-header-vanilla.js'),
-      options: {
-        banner,
-        moduleName: 'ECL',
-        includePaths,
-        sourceMap: false,
-      },
-    },
-  ],
   styles: [
     {
-      entry: path.resolve(__dirname, 'src/styles/ecl-site-header-ec.scss'),
-      dest: path.resolve(outputFolder, 'styles/ecl-site-header-ec.css'),
+      entry: path.resolve(__dirname, 'src/styles/ecl-footer-ec.scss'),
+      dest: path.resolve(outputFolder, 'styles/ecl-footer-ec.css'),
       options: {
         banner,
         includePaths,
@@ -45,8 +33,8 @@ module.exports = {
       },
     },
     {
-      entry: path.resolve(__dirname, 'src/styles/ecl-site-header-eu.scss'),
-      dest: path.resolve(outputFolder, 'styles/ecl-site-header-eu.css'),
+      entry: path.resolve(__dirname, 'src/styles/ecl-footer-eu.scss'),
+      dest: path.resolve(outputFolder, 'styles/ecl-footer-eu.css'),
       options: {
         banner,
         includePaths,
