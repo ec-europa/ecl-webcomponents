@@ -1,0 +1,27 @@
+@use '@ecl/theme-eu';
+
+@use '@ecl/vanilla-layout-grid/grid';
+@use '@ecl/vanilla-component-menu/menu-eu';
+
+.ecl-menu__button-caret.sc-ecl-menu-eu {
+  background-color: #e7edfa;
+}
+
+.ecl-menu__close,
+.ecl-menu__back {
+  background-color: transparent;
+}
+
+.ecl-menu__back .ecl-button__label {
+  margin-inline-start: 0.5rem;
+}
+
+.ecl-menu__close-container {
+  display: flex;
+}
+
+@media screen and (width >= 996px) {
+  .ecl-menu__list {
+    align-items: center;
+  }
+}

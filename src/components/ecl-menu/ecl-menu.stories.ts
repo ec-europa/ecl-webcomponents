@@ -1,259 +1,56 @@
-export default {
-  title: 'Components/Site-wide/site header',
+const getArgs = () => {
+  return {
+    group: 'group1',
+    menuTitle: 'Menu',
+    menuLink: '/example.html',
+    backMenu: 'Back',
+    closeMenu: 'Close',
+  };
 };
 
-const Template = (args) => 
-  `<ecl-site-header
-    ecl-script
-    theme="${args.theme}"
-    login-block
-    language-block
-    search-block
-    search-text="search"
-    search-placeholder="Placeholder text"
-    language="english"
-    lang-code="en"
-    login-text="Log in"
-    eu-label="Official EU languages:"
-    non-eu-label="Other languages:"
-    language-title="Choose your language"
-    login-link="/example.html"
-    language-id="language-switcher"
-    logo-alt="European Commission"
-    logo-title="European commission"
-    language-aria-label="Choose language"
-    site-name="${args.siteName}"
-  >
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="bg"
-    language="български"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="es"
-    language="español"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="cs"
-    language="čeština"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="da"
-    language="dansk"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="de"
-    language="Deutsch"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="et"
-    language="eesti"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="el"
-    language="ελληνικά"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="en"
-    language="English"
-    active
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="fr"
-    language="français"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="ga"
-    language="Gaeilge"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="hr"
-    language="hrvatski"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="it"
-    language="italiano"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="non-eu-category"
-    path="/example.html"
-    lang-code="zh"
-    language="中文"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="non-eu-category"
-    path="/example.html"
-    lang-code="tr"
-    language="Türk"
-  ></ecl-language-item>
-  </ecl-site-header>`;
+const getArgTypes = () => {
+  return {
+    group: {
+      type: { name: 'select' },
+      options: ['group1'],
+      description: 'Menu variant',
+    },
+    menuTitle: {
+      name: 'Title of the menu',
+      type: { name: 'string' },
+      description: '',
+    },
+    menuLink: {
+      name: 'Menu link',
+      type: { name: 'string' },
+      description: '',
+    },
+    closeMenu: {
+      name: 'Label of the close button',
+      type: { name: 'string' },
+      description: '',
+    },
+    backMenu: {
+      name: 'Label of the back button',
+      type: { name: 'string' },
+      description: '',
+    },
+  };
+};
 
-const TemplateHarmonised = (args) => 
-  `<ecl-site-header
+export default {
+  title: 'Components/Navigation/menu',
+};
+
+const Template = args =>
+  `<ecl-menu
+    group="${args.group}"
+    theme="${args.theme}"
+    close-label="${args.closeMenu}"
+    back-label="${args.backMenu}"
+    menu-link="${args.menuLink}"
     ecl-script
-    theme="${args.theme}"
-    login-block
-    language-block
-    search-block
-    search-text="search"
-    search-placeholder="Placeholder text"
-    language="english"
-    lang-code="en"
-    login-text="Log in"
-    eu-label="Official EU languages:"
-    non-eu-label="Other languages:"
-    language-title="Choose your language"
-    login-link="/example.html"
-    language-id="language-switcher"
-    logo-alt="European Commission"
-    logo-title="European commission"
-    language-aria-label="Choose language"
-    site-name="${args.siteName}"
-  > 
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="bg"
-    language="български"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="es"
-    language="español"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="cs"
-    language="čeština"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="da"
-    language="dansk"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="de"
-    language="Deutsch"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="et"
-    language="eesti"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="el"
-    language="ελληνικά"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="en"
-    language="English"
-    active
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="fr"
-    language="français"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="ga"
-    language="Gaeilge"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="hr"
-    language="hrvatski"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="eu-category"
-    path="/example.html"
-    lang-code="it"
-    language="italiano"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="non-eu-category"
-    path="/example.html"
-    lang-code="zh"
-    language="中文"
-  ></ecl-language-item>
-  <ecl-language-item
-    theme="${args.theme}"
-    slot="non-eu-category"
-    path="/example.html"
-    lang-code="tr"
-    language="Türk"
-  ></ecl-language-item>
-  <ecl-menu
-    slot="menu"
-    theme="${args.theme}"
-    close-label="Close"
-    back-label="Back"
-    menu-link="/example.html"
-    ecl-script
-    menu-title="Menu"
+    menu-title="${args.menuTitle}"
   >
     <ecl-menu-item
       link="/example.html"
@@ -606,20 +403,9 @@ const TemplateHarmonised = (args) =>
         Item 7.8
       </ecl-menu-item>
     </ecl-menu-item>
-  </ecl-menu>
-  </ecl-site-header>`;
+  </ecl-menu>`;
 
-export const SiteHeader = Template.bind({});
-SiteHeader.storyName = 'core';
-
-export const SiteHeaderHarmonised = TemplateHarmonised.bind({});
-SiteHeaderHarmonised.storyName = 'harmonised'
-SiteHeaderHarmonised.args = {
-  siteName: 'Site name',
-};
-SiteHeaderHarmonised.argTypes = {
-  siteName: {
-    name: 'site name',
-    type: { name: 'string' },
-  },
-};
+export const Menu = Template.bind({});
+Menu.storyName = 'default';
+Menu.args = getArgs();
+Menu.argTypes = getArgTypes();

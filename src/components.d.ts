@@ -437,6 +437,27 @@ export namespace Components {
         "tracks": string;
         "withUtils": boolean;
     }
+    interface EclMenu {
+        "backLabel": string;
+        "closeLabel": string;
+        "eclScript": boolean;
+        "group": string;
+        "maxLines": number;
+        "menuLink": string;
+        "menuTitle": string;
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclMenuItem {
+        "child": boolean;
+        "current": boolean;
+        "external": boolean;
+        "hasChildren": boolean;
+        "link": string;
+        "styleClass": string;
+        "theme": string;
+        "triggerAriaLabel": string;
+    }
     interface EclMessage {
         "closeLabel": string;
         "eclScript": boolean;
@@ -637,6 +658,7 @@ export namespace Components {
         "searchBlock": boolean;
         "searchPlaceholder": string;
         "searchText": string;
+        "siteName": string;
         "styleClass": string;
         "theme": string;
     }
@@ -996,6 +1018,18 @@ declare global {
         prototype: HTMLEclMediaContainerElement;
         new (): HTMLEclMediaContainerElement;
     };
+    interface HTMLEclMenuElement extends Components.EclMenu, HTMLStencilElement {
+    }
+    var HTMLEclMenuElement: {
+        prototype: HTMLEclMenuElement;
+        new (): HTMLEclMenuElement;
+    };
+    interface HTMLEclMenuItemElement extends Components.EclMenuItem, HTMLStencilElement {
+    }
+    var HTMLEclMenuItemElement: {
+        prototype: HTMLEclMenuItemElement;
+        new (): HTMLEclMenuItemElement;
+    };
     interface HTMLEclMessageElement extends Components.EclMessage, HTMLStencilElement {
     }
     var HTMLEclMessageElement: {
@@ -1203,6 +1237,8 @@ declare global {
         "ecl-list-illustration": HTMLEclListIllustrationElement;
         "ecl-list-illustration-item": HTMLEclListIllustrationItemElement;
         "ecl-media-container": HTMLEclMediaContainerElement;
+        "ecl-menu": HTMLEclMenuElement;
+        "ecl-menu-item": HTMLEclMenuItemElement;
         "ecl-message": HTMLEclMessageElement;
         "ecl-navigation-list": HTMLEclNavigationListElement;
         "ecl-navigation-list-item": HTMLEclNavigationListItemElement;
@@ -1670,6 +1706,27 @@ declare namespace LocalJSX {
         "tracks"?: string;
         "withUtils"?: boolean;
     }
+    interface EclMenu {
+        "backLabel"?: string;
+        "closeLabel"?: string;
+        "eclScript"?: boolean;
+        "group"?: string;
+        "maxLines"?: number;
+        "menuLink"?: string;
+        "menuTitle"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclMenuItem {
+        "child"?: boolean;
+        "current"?: boolean;
+        "external"?: boolean;
+        "hasChildren"?: boolean;
+        "link"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "triggerAriaLabel"?: string;
+    }
     interface EclMessage {
         "closeLabel"?: string;
         "eclScript"?: boolean;
@@ -1879,6 +1936,7 @@ declare namespace LocalJSX {
         "searchBlock"?: boolean;
         "searchPlaceholder"?: string;
         "searchText"?: string;
+        "siteName"?: string;
         "styleClass"?: string;
         "theme"?: string;
     }
@@ -1996,6 +2054,8 @@ declare namespace LocalJSX {
         "ecl-list-illustration": EclListIllustration;
         "ecl-list-illustration-item": EclListIllustrationItem;
         "ecl-media-container": EclMediaContainer;
+        "ecl-menu": EclMenu;
+        "ecl-menu-item": EclMenuItem;
         "ecl-message": EclMessage;
         "ecl-navigation-list": EclNavigationList;
         "ecl-navigation-list-item": EclNavigationListItem;
@@ -2073,6 +2133,8 @@ declare module "@stencil/core" {
             "ecl-list-illustration": LocalJSX.EclListIllustration & JSXBase.HTMLAttributes<HTMLEclListIllustrationElement>;
             "ecl-list-illustration-item": LocalJSX.EclListIllustrationItem & JSXBase.HTMLAttributes<HTMLEclListIllustrationItemElement>;
             "ecl-media-container": LocalJSX.EclMediaContainer & JSXBase.HTMLAttributes<HTMLEclMediaContainerElement>;
+            "ecl-menu": LocalJSX.EclMenu & JSXBase.HTMLAttributes<HTMLEclMenuElement>;
+            "ecl-menu-item": LocalJSX.EclMenuItem & JSXBase.HTMLAttributes<HTMLEclMenuItemElement>;
             "ecl-message": LocalJSX.EclMessage & JSXBase.HTMLAttributes<HTMLEclMessageElement>;
             "ecl-navigation-list": LocalJSX.EclNavigationList & JSXBase.HTMLAttributes<HTMLEclNavigationListElement>;
             "ecl-navigation-list-item": LocalJSX.EclNavigationListItem & JSXBase.HTMLAttributes<HTMLEclNavigationListItemElement>;

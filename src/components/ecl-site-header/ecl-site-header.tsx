@@ -34,6 +34,7 @@ export class EclSiteHeader {
   @Prop() languageTitle: string;
   @Prop() languageId: string;
   @Prop() languageAriaLabel: string;
+  @Prop() siteName: string
 
   getClass(): string {
     const styleClasses = [
@@ -235,6 +236,14 @@ export class EclSiteHeader {
             </div>
           </div>
         </div>
+      { this.siteName ?
+        <div class="ecl-site-header__banner">
+          <div class="ecl-container">
+            <div class="ecl-site-header__site-name">{this.siteName}</div>
+          </div>
+        </div> : ''
+      }
+        <slot name="menu"></slot>
       </header>
     );
   }

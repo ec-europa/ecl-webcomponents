@@ -21,6 +21,7 @@
  - [ecl-expandable](../ecl-expandable)
  - [ecl-file-translations](../ecl-file)
  - [ecl-gallery](../ecl-gallery)
+ - [ecl-menu-item](../ecl-menu)
  - [ecl-message](../ecl-message)
  - [ecl-news-ticker](../ecl-news-ticker)
  - [ecl-search-form](../ecl-search-form)
@@ -33,6 +34,7 @@ graph TD;
   ecl-expandable --> ecl-button
   ecl-file-translations --> ecl-button
   ecl-gallery --> ecl-button
+  ecl-menu-item --> ecl-button
   ecl-message --> ecl-button
   ecl-news-ticker --> ecl-button
   ecl-search-form --> ecl-button
