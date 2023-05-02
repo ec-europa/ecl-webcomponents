@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-card",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "ECL Content Item",
   "main": "ecl-card.tsx",
   "private": true,

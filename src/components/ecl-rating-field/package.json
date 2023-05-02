@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-rating-field",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "ECL Rating field",
   "main": "ecl-tag.tsx",
   "private": true,

@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-form-group",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "ECL form group",
   "main": "ecl-form-group.tsx",
   "private": true,
