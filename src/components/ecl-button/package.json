@@ -10,8 +10,7 @@
     "build:styles": "cross-env NODE_ENV=production ecl-builder styles",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
-    "dist": "cross-env NODE_ENV=production run-p clean build:*",
-    "prepublish": "npm run build "
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "@ecl/builder": "3.7.1",
