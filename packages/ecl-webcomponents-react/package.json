@@ -45,7 +45,7 @@
     "test": "node ./__tests__/react-library.test.js",
     "build": "npm run clean && npm run tsc",
     "tsc": "tsc -p .",
-    "prepublish": "npm run build"
+    "pre-publish": "npm run build"
   },
   "bugs": {
     "url": "https://github.com/ec-europa/ecl-webcomponents/issues"

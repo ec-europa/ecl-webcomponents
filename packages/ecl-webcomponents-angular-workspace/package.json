@@ -9,7 +9,7 @@
     "test": "ng test",
     "reload": "browser-sync start --proxy 'localhost:3000' --files 'dist/**/*'",
     "serve": "nodemon server.js --watch dist",
-    "prepublish": "npm run build"
+    "pre-publish": "npm run build"
   },
   "private": true,
   "dependencies": {
