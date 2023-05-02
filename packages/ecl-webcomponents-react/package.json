@@ -44,8 +44,7 @@
     "clean": "rimraf dist",
     "test": "node ./__tests__/react-library.test.js",
     "build": "npm run clean && npm run tsc",
-    "tsc": "tsc -p .",
-    "prepublish": "npm run build"
+    "tsc": "tsc -p ."
   },
   "bugs": {
     "url": "https://github.com/ec-europa/ecl-webcomponents/issues"
