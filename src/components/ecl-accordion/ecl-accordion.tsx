@@ -8,6 +8,7 @@ declare const ECL: any;
     eu: './build/styles/ecl-accordion-eu.css',
   },
   shadow: false,
+  scoped: true,
   assetsDirs: ['build'],
 })
 
