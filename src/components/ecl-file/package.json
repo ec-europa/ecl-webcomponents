@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-file",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "ECL File",
   "main": "ecl-hero-banner.tsx",
   "private": true,
