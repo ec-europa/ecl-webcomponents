@@ -1,7 +1,7 @@
 {
   "name": "@ecl/ecl-webcomponents-react-consumer",
   "private": true,
-  "version": "0.1.0-alpha.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "clean": "rimraf dist",
@@ -11,10 +11,10 @@
     "pre-publish": "npm run build"
   },
   "dependencies": {
+    "@ecl/ecl-webcomponents-react": "0.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "rimraf": "5.0.0",
-    "@ecl/ecl-webcomponents-react": "0.1.0"
+    "rimraf": "5.0.0"
   },
   "devDependencies": {
     "@types/react": "18.0.37",
