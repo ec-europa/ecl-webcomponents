@@ -5,6 +5,8 @@ loader/
 ckeditor5
 playground/ecl-webcomponents
 playground/editor/translations
+packages/ecl-webcomponents-react/lib/components/stencil-generated
+packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular/src/lib/stencil-generated
 
 *~
 *.sw[mnpcod]

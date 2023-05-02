@@ -1,0 +1,13 @@
+@use '@ecl/theme-ec';
+
+@use '@ecl/vanilla-layout-grid/grid';
+@use '@ecl/vanilla-component-site-footer/site-footer-ec';
+
+.ecl-site-footer__link.sc-ecl-footer-ec {
+  color: #fff;
+}
+
+.ecl-site-footer__logo-link.sc-ecl-footer-ec {
+  margin-bottom: 1rem;
+  width: 100%;
+}

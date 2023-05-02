@@ -29,6 +29,8 @@
  - [ecl-description-list-definition](../ecl-description-list)
  - [ecl-file](../ecl-file)
  - [ecl-file-translations-item](../ecl-file)
+ - [ecl-footer](../ecl-footer)
+ - [ecl-footer-item](../ecl-footer)
  - [ecl-gallery](../ecl-gallery)
  - [ecl-hero-banner](../ecl-hero-banner)
  - [ecl-inpage-navigation-item](../ecl-inpage-navigation)
@@ -54,6 +56,8 @@ graph TD;
   ecl-description-list-definition --> ecl-link
   ecl-file --> ecl-link
   ecl-file-translations-item --> ecl-link
+  ecl-footer --> ecl-link
+  ecl-footer-item --> ecl-link
   ecl-gallery --> ecl-link
   ecl-hero-banner --> ecl-link
   ecl-inpage-navigation-item --> ecl-link

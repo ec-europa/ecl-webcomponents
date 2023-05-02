@@ -1,0 +1,19 @@
+{
+  "name": "@ecl/ecl-webcomponents-angular",
+  "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": ["dist"],
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0"
+  },
+  "scripts": {
+    "copy": "ncp ../../../ecl-webcomponents/dist/ecl-webcomponents/build dist/build"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

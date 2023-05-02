@@ -262,6 +262,22 @@ export namespace Components {
         "width": string;
         "withUtils": boolean;
     }
+    interface EclFooter {
+        "description": string;
+        "logoAlt": string;
+        "logoAriaLabel": string;
+        "logoLangCode": string;
+        "logoTitle": string;
+        "siteName": string;
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclFooterItem {
+        "ariaLabel": string;
+        "link": string;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclFormGroup {
         "helperId": string;
         "helperText": string;
@@ -307,6 +323,7 @@ export namespace Components {
         "type": string;
     }
     interface EclGrid {
+        "breakpoint": string;
         "columns": number;
         "styleClass": string;
         "theme": string;
@@ -419,6 +436,27 @@ export namespace Components {
         "theme": string;
         "tracks": string;
         "withUtils": boolean;
+    }
+    interface EclMenu {
+        "backLabel": string;
+        "closeLabel": string;
+        "eclScript": boolean;
+        "group": string;
+        "maxLines": number;
+        "menuLink": string;
+        "menuTitle": string;
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclMenuItem {
+        "child": boolean;
+        "current": boolean;
+        "external": boolean;
+        "hasChildren": boolean;
+        "link": string;
+        "styleClass": string;
+        "theme": string;
+        "triggerAriaLabel": string;
     }
     interface EclMessage {
         "closeLabel": string;
@@ -620,6 +658,7 @@ export namespace Components {
         "searchBlock": boolean;
         "searchPlaceholder": string;
         "searchText": string;
+        "siteName": string;
         "styleClass": string;
         "theme": string;
     }
@@ -877,6 +916,18 @@ declare global {
         prototype: HTMLEclFileUploadElement;
         new (): HTMLEclFileUploadElement;
     };
+    interface HTMLEclFooterElement extends Components.EclFooter, HTMLStencilElement {
+    }
+    var HTMLEclFooterElement: {
+        prototype: HTMLEclFooterElement;
+        new (): HTMLEclFooterElement;
+    };
+    interface HTMLEclFooterItemElement extends Components.EclFooterItem, HTMLStencilElement {
+    }
+    var HTMLEclFooterItemElement: {
+        prototype: HTMLEclFooterItemElement;
+        new (): HTMLEclFooterItemElement;
+    };
     interface HTMLEclFormGroupElement extends Components.EclFormGroup, HTMLStencilElement {
     }
     var HTMLEclFormGroupElement: {
@@ -966,6 +1017,18 @@ declare global {
     var HTMLEclMediaContainerElement: {
         prototype: HTMLEclMediaContainerElement;
         new (): HTMLEclMediaContainerElement;
+    };
+    interface HTMLEclMenuElement extends Components.EclMenu, HTMLStencilElement {
+    }
+    var HTMLEclMenuElement: {
+        prototype: HTMLEclMenuElement;
+        new (): HTMLEclMenuElement;
+    };
+    interface HTMLEclMenuItemElement extends Components.EclMenuItem, HTMLStencilElement {
+    }
+    var HTMLEclMenuItemElement: {
+        prototype: HTMLEclMenuItemElement;
+        new (): HTMLEclMenuItemElement;
     };
     interface HTMLEclMessageElement extends Components.EclMessage, HTMLStencilElement {
     }
@@ -1157,6 +1220,8 @@ declare global {
         "ecl-file-translations": HTMLEclFileTranslationsElement;
         "ecl-file-translations-item": HTMLEclFileTranslationsItemElement;
         "ecl-file-upload": HTMLEclFileUploadElement;
+        "ecl-footer": HTMLEclFooterElement;
+        "ecl-footer-item": HTMLEclFooterItemElement;
         "ecl-form-group": HTMLEclFormGroupElement;
         "ecl-gallery": HTMLEclGalleryElement;
         "ecl-gallery-item": HTMLEclGalleryItemElement;
@@ -1172,6 +1237,8 @@ declare global {
         "ecl-list-illustration": HTMLEclListIllustrationElement;
         "ecl-list-illustration-item": HTMLEclListIllustrationItemElement;
         "ecl-media-container": HTMLEclMediaContainerElement;
+        "ecl-menu": HTMLEclMenuElement;
+        "ecl-menu-item": HTMLEclMenuItemElement;
         "ecl-message": HTMLEclMessageElement;
         "ecl-navigation-list": HTMLEclNavigationListElement;
         "ecl-navigation-list-item": HTMLEclNavigationListItemElement;
@@ -1461,6 +1528,22 @@ declare namespace LocalJSX {
         "width"?: string;
         "withUtils"?: boolean;
     }
+    interface EclFooter {
+        "description"?: string;
+        "logoAlt"?: string;
+        "logoAriaLabel"?: string;
+        "logoLangCode"?: string;
+        "logoTitle"?: string;
+        "siteName"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclFooterItem {
+        "ariaLabel"?: string;
+        "link"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclFormGroup {
         "helperId"?: string;
         "helperText"?: string;
@@ -1506,6 +1589,7 @@ declare namespace LocalJSX {
         "type"?: string;
     }
     interface EclGrid {
+        "breakpoint"?: string;
         "columns"?: number;
         "styleClass"?: string;
         "theme"?: string;
@@ -1621,6 +1705,27 @@ declare namespace LocalJSX {
         "theme"?: string;
         "tracks"?: string;
         "withUtils"?: boolean;
+    }
+    interface EclMenu {
+        "backLabel"?: string;
+        "closeLabel"?: string;
+        "eclScript"?: boolean;
+        "group"?: string;
+        "maxLines"?: number;
+        "menuLink"?: string;
+        "menuTitle"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclMenuItem {
+        "child"?: boolean;
+        "current"?: boolean;
+        "external"?: boolean;
+        "hasChildren"?: boolean;
+        "link"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "triggerAriaLabel"?: string;
     }
     interface EclMessage {
         "closeLabel"?: string;
@@ -1831,6 +1936,7 @@ declare namespace LocalJSX {
         "searchBlock"?: boolean;
         "searchPlaceholder"?: string;
         "searchText"?: string;
+        "siteName"?: string;
         "styleClass"?: string;
         "theme"?: string;
     }
@@ -1931,6 +2037,8 @@ declare namespace LocalJSX {
         "ecl-file-translations": EclFileTranslations;
         "ecl-file-translations-item": EclFileTranslationsItem;
         "ecl-file-upload": EclFileUpload;
+        "ecl-footer": EclFooter;
+        "ecl-footer-item": EclFooterItem;
         "ecl-form-group": EclFormGroup;
         "ecl-gallery": EclGallery;
         "ecl-gallery-item": EclGalleryItem;
@@ -1946,6 +2054,8 @@ declare namespace LocalJSX {
         "ecl-list-illustration": EclListIllustration;
         "ecl-list-illustration-item": EclListIllustrationItem;
         "ecl-media-container": EclMediaContainer;
+        "ecl-menu": EclMenu;
+        "ecl-menu-item": EclMenuItem;
         "ecl-message": EclMessage;
         "ecl-navigation-list": EclNavigationList;
         "ecl-navigation-list-item": EclNavigationListItem;
@@ -2006,6 +2116,8 @@ declare module "@stencil/core" {
             "ecl-file-translations": LocalJSX.EclFileTranslations & JSXBase.HTMLAttributes<HTMLEclFileTranslationsElement>;
             "ecl-file-translations-item": LocalJSX.EclFileTranslationsItem & JSXBase.HTMLAttributes<HTMLEclFileTranslationsItemElement>;
             "ecl-file-upload": LocalJSX.EclFileUpload & JSXBase.HTMLAttributes<HTMLEclFileUploadElement>;
+            "ecl-footer": LocalJSX.EclFooter & JSXBase.HTMLAttributes<HTMLEclFooterElement>;
+            "ecl-footer-item": LocalJSX.EclFooterItem & JSXBase.HTMLAttributes<HTMLEclFooterItemElement>;
             "ecl-form-group": LocalJSX.EclFormGroup & JSXBase.HTMLAttributes<HTMLEclFormGroupElement>;
             "ecl-gallery": LocalJSX.EclGallery & JSXBase.HTMLAttributes<HTMLEclGalleryElement>;
             "ecl-gallery-item": LocalJSX.EclGalleryItem & JSXBase.HTMLAttributes<HTMLEclGalleryItemElement>;
@@ -2021,6 +2133,8 @@ declare module "@stencil/core" {
             "ecl-list-illustration": LocalJSX.EclListIllustration & JSXBase.HTMLAttributes<HTMLEclListIllustrationElement>;
             "ecl-list-illustration-item": LocalJSX.EclListIllustrationItem & JSXBase.HTMLAttributes<HTMLEclListIllustrationItemElement>;
             "ecl-media-container": LocalJSX.EclMediaContainer & JSXBase.HTMLAttributes<HTMLEclMediaContainerElement>;
+            "ecl-menu": LocalJSX.EclMenu & JSXBase.HTMLAttributes<HTMLEclMenuElement>;
+            "ecl-menu-item": LocalJSX.EclMenuItem & JSXBase.HTMLAttributes<HTMLEclMenuItemElement>;
             "ecl-message": LocalJSX.EclMessage & JSXBase.HTMLAttributes<HTMLEclMessageElement>;
             "ecl-navigation-list": LocalJSX.EclNavigationList & JSXBase.HTMLAttributes<HTMLEclNavigationListElement>;
             "ecl-navigation-list-item": LocalJSX.EclNavigationListItem & JSXBase.HTMLAttributes<HTMLEclNavigationListItemElement>;

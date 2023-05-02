@@ -34,6 +34,7 @@ export class EclSiteHeader {
   @Prop() languageTitle: string;
   @Prop() languageId: string;
   @Prop() languageAriaLabel: string;
+  @Prop() siteName: string
 
   getClass(): string {
     const styleClasses = [
@@ -45,6 +46,12 @@ export class EclSiteHeader {
   }
 
   componentDidLoad() {
+    if (this.el.querySelector('.ecl-site-header__logo-link')) {
+      const logo = this.el.querySelector('.ecl-site-header__logo-link');
+      const headerTop = logo.parentElement.parentElement;
+      headerTop.insertBefore(logo, headerTop.firstElementChild);
+      //logo.parentElement.remove();
+    }
     if (this.el.querySelector('.ecl-search-form')) {
       this.el.querySelector('.ecl-search-form').setAttribute('data-ecl-search-form', '');
     }
@@ -66,6 +73,10 @@ export class EclSiteHeader {
   }
 
   render() {
+    const logoPath = this.theme === 'ec' ?
+      getAssetPath(`./build/images/${this.theme}/logos/positive/logo-${this.theme}--${this.langCode}.svg`) :
+      getAssetPath(`./build/images/${this.theme}/logos/standard-version/positive/logo-${this.theme}--${this.langCode}.svg`);
+
     return (
       <header class="ecl-site-header">
         <div class="ecl-site-header__header">
@@ -76,13 +87,21 @@ export class EclSiteHeader {
             >
               <ecl-link
                 variant="standalone"
-                style-class={`ecl-site-header__logo-link sc-ecl-site-header-${this.theme}`}
+                styleClass={`ecl-site-header__logo-link sc-ecl-site-header-${this.theme}`}
               >
+              { this.theme === 'eu' ?
+                <img 
+                  alt={this.logoAlt}
+                  title={this.logoTitle}
+                  class="ecl-site-header__logo-image-mobile"
+                  src={getAssetPath(`./build/images/${this.theme}/logos/condensed-version/positive/logo-${this.theme}--${this.langCode}.svg`)}
+                /> : ''
+              }
                 <img 
                   alt={this.logoAlt}
                   title={this.logoTitle}
                   class="ecl-site-header__logo-image ecl-site-header__logo-image-desktop"
-                  src={getAssetPath(`./build/images/${this.theme}/logos/logo-${this.theme}--${this.langCode}.svg`)}
+                  src={logoPath}
                 />
               </ecl-link>
               <div class="ecl-site-header__action">
@@ -96,6 +115,7 @@ export class EclSiteHeader {
                       style-class={`ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
                       icon="log-in"
                       size="s"
+                      theme={this.theme}
                     ></ecl-icon>
                     {this.loginText}
                   </a>
@@ -114,6 +134,7 @@ export class EclSiteHeader {
                         icon="language"
                         size="s"
                         style-class={`ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
+                        theme={this.theme}
                       ></ecl-icon>
                       <span class="ecl-site-header__language-code">
                         {this.langCode}
@@ -152,6 +173,7 @@ export class EclSiteHeader {
                             style-class={`ecl-button__icon ecl-button__icon--after sc-ecl-site-header-${this.theme}`}
                             data-ecl-icon
                             icon="close-filled"
+                            theme={this.theme}
                           ></ecl-icon>
                         </span>
                       </button>
@@ -195,6 +217,7 @@ export class EclSiteHeader {
                       icon="search"
                       style-class={`ecl-icon ecl-icon--s ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
                       size="s"
+                      theme={this.theme}
                     >
                      </ecl-icon>
                     {this.searchText}
@@ -213,6 +236,14 @@ export class EclSiteHeader {
             </div>
           </div>
         </div>
+      { this.siteName ?
+        <div class="ecl-site-header__banner">
+          <div class="ecl-container">
+            <div class="ecl-site-header__site-name">{this.siteName}</div>
+          </div>
+        </div> : ''
+      }
+        <slot name="menu"></slot>
       </header>
     );
   }

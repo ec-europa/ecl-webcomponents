@@ -1,0 +1,23 @@
+@use '@ecl/theme-ec';
+
+@use '@ecl/vanilla-layout-grid/grid';
+@use '@ecl/vanilla-component-menu/menu-ec';
+
+.ecl-menu__close,
+.ecl-menu__back {
+  background-color: transparent;
+}
+
+.ecl-menu__back .ecl-button__label {
+  margin-inline-start: 0.5rem;
+}
+
+.ecl-menu__close-container {
+  display: flex;
+}
+
+@media screen and (width >= 996px) {
+  .ecl-menu__list {
+    align-items: center;
+  }
+}

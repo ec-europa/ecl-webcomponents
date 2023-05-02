@@ -27,6 +27,7 @@
 | `searchBlock`       | `search-block`        |             | `boolean` | `true`      |
 | `searchPlaceholder` | `search-placeholder`  |             | `string`  | `undefined` |
 | `searchText`        | `search-text`         |             | `string`  | `undefined` |
+| `siteName`          | `site-name`           |             | `string`  | `undefined` |
 | `styleClass`        | `style-class`         |             | `string`  | `undefined` |
 | `theme`             | `theme`               |             | `string`  | `'ec'`      |
 

@@ -1,0 +1,47 @@
+{
+  "name": "@ecl/ecl-webcomponents-angular-workspace",
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "rimraf dist",
+    "ng": "ng",
+    "build": "npm run clean && cd projects/ecl-webcomponents-angular && ng build && npm run copy && cd ../ecl-webcomponents-angular-consumer && ng build",
+    "watch": "cd projects/ecl-webcomponents-angular-consumer && ng build --watch --configuration development",
+    "test": "ng test",
+    "reload": "browser-sync start --proxy 'localhost:3000' --files 'dist/**/*'",
+    "serve": "nodemon server.js --watch dist",
+    "pre-publish": "npm run build"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^15.2.0",
+    "@angular/common": "^15.2.0",
+    "@angular/compiler": "^15.2.0",
+    "@angular/core": "^15.2.0",
+    "@angular/forms": "^15.2.0",
+    "@angular/platform-browser": "^15.2.0",
+    "@angular/platform-browser-dynamic": "^15.2.0",
+    "@angular/router": "^15.2.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.12.0"
+  },
+  "devDependencies": {
+    "@ecl/ecl-webcomponents": "0.1.0",
+    "@ecl/ecl-webcomponents-angular": "0.1.0",
+    "@angular-devkit/build-angular": "^15.2.6",
+    "@angular/cli": "~15.2.6",
+    "@angular/compiler-cli": "^15.2.0",
+    "express": "4.18.2",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "browser-sync": "2.29.1",
+    "nodemon": "2.0.22",
+    "ng-packagr": "^15.2.2",
+    "typescript": "~4.9.4",
+    "rimraf": "5.0.0",
+    "ncp": "2.0.0"
+  }
+}

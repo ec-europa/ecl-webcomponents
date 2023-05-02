@@ -14,27 +14,30 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
     steps:
-      - uses: amannn/action-semantic-pull-request@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+      - uses: amannn/action-semantic-pull-request@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   audit:
     name: audit
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '18.x'
       - name: Test
         run: ./scripts/audit.sh
   tests:
     name: tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '18.x'
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Build stencil
@@ -46,10 +49,10 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request'
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '18.x'
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Package application
@@ -68,10 +71,10 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '18.x'
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Package application
@@ -90,10 +93,10 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '18.x'
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Package application

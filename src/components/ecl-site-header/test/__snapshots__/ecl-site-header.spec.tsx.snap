@@ -7,20 +7,20 @@ exports[`ecl-site-header renders 1`] = `
     <div class="ecl-site-header__header">
       <div class="ecl-container ecl-site-header__container">
         <div class="ecl-site-header__top" data-ecl-site-header-top>
-          <ecl-link style-class="ecl-site-header__logo-link sc-ecl-site-header-ec" variant="standalone">
-            <img alt="European Commission" class="ecl-site-header__logo-image ecl-site-header__logo-image-desktop" src="/build/images/ec/logos/logo-ec--en.svg" title="European commission">
+          <ecl-link styleclass="ecl-site-header__logo-link sc-ecl-site-header-ec" variant="standalone">
+            <img alt="European Commission" class="ecl-site-header__logo-image ecl-site-header__logo-image-desktop" src="/build/images/ec/logos/positive/logo-ec--en.svg" title="European commission">
           </ecl-link>
           <div class="ecl-site-header__action">
             <div class="ecl-site-header__login-container">
               <a class="ecl-button ecl-button--ghost ecl-site-header__login-toggle" href="/example.html">
-                <ecl-icon icon="log-in" size="s" style-class="ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
+                <ecl-icon icon="log-in" size="s" style-class="ecl-site-header__icon sc-ecl-site-header-ec" theme="ec"></ecl-icon>
                 Log in
               </a>
             </div>
             <div class="ecl-site-header__language">
               <a aria-controls="language-switcher" aria-label="Choose language" class="ecl-button ecl-button--ghost ecl-site-header__language-selector" data-ecl-language-selector>
                 <span class="ecl-site-header__language-icon">
-                  <ecl-icon icon="language" size="s" style-class="ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
+                  <ecl-icon icon="language" size="s" style-class="ecl-site-header__icon sc-ecl-site-header-ec" theme="ec"></ecl-icon>
                   <span class="ecl-site-header__language-code">
                     en
                   </span>
@@ -35,7 +35,7 @@ exports[`ecl-site-header renders 1`] = `
                   <button class="ecl-button ecl-button--ghost ecl-site-header__language-close" data-ecl-language-list-close type="submit">
                     <span class="ecl-button__container">
                       <span class="ecl-u-sr-only" data-ecl-label="true"></span>
-                      <ecl-icon data-ecl-icon icon="close-filled" size="s" slot="icon-after" style-class="ecl-button__icon ecl-button__icon--after sc-ecl-site-header-ec"></ecl-icon>
+                      <ecl-icon data-ecl-icon icon="close-filled" size="s" slot="icon-after" style-class="ecl-button__icon ecl-button__icon--after sc-ecl-site-header-ec" theme="ec"></ecl-icon>
                     </span>
                   </button>
                 </div>
@@ -227,7 +227,7 @@ exports[`ecl-site-header renders 1`] = `
             </div>
             <div class="ecl-site-header__search-container">
               <a aria-controls="search-form-id" aria-expanded="false" class="ecl-button ecl-button--ghost ecl-site-header__search-toggle" data-ecl-search-toggle>
-                <ecl-icon icon="search" size="s" style-class="ecl-icon ecl-icon--s ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
+                <ecl-icon icon="search" size="s" style-class="ecl-icon ecl-icon--s ecl-site-header__icon sc-ecl-site-header-ec" theme="ec"></ecl-icon>
                 search
               </a>
               <ecl-search-form button-aria-label="search" button-label="search" style-class="ecl-site-header__search sc-ecl-site-header-ec">
@@ -238,9 +238,9 @@ exports[`ecl-site-header renders 1`] = `
                       <ecl-input input-class="ecl-search-form__text-input sc-ecl-search-form-ec" placeholder="Placeholder text" style-class="ecl-search-form__text-input sc-ecl-search-form-ec" theme="ec" type="search" width="m"></ecl-input>
                     </fieldset>
                   </ecl-form-group>
-                  <ecl-button aria-label="search" style-class="ecl-search-form__button sc-ecl-search-form-ec" variant="search">
+                  <ecl-button aria-label="search" style-class="ecl-search-form__button sc-ecl-search-form-ec" theme="ec" variant="search">
                     search
-                    <ecl-icon icon="search" size="xs" slot="icon-after" style-class="sc-ecl-search-form-ec"></ecl-icon>
+                    <ecl-icon icon="search" size="xs" slot="icon-after" style-class="sc-ecl-search-form-ec" theme="ec"></ecl-icon>
                   </ecl-button>
                 </form>
               </ecl-search-form>

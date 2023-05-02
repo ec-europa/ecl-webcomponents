@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-footer renders 1`] = `
+<ecl-footer description="This site is managed by the Directorate-General for Communication" logo-alt="European Union" logo-lang-code="en" logo-title="European union" site-name="European Commission website" theme="ec">
+  <!---->
+  <footer class="ecl-site-footer ecl-site-footer--split-columns">
+    <div class="ecl-container ecl-site-footer__container">
+      <div class="ecl-site-footer__row">
+        <div class="ecl-site-footer__column">
+          <div class="ecl-site-footer__section">
+            <ecl-link>
+              <!---->
+              <a class="ecl-link ecl-link--standalone ecl-site-footer__logo-link sc-ecl-footer-ec">
+                <img alt="European Union" class="ecl-site-footer__logo-image-desktop" src="/build/images/ec/logos/negative/logo-ec--en.svg" title="European union">
+                <slot-fb name="icon-after"></slot-fb>
+              </a>
+            </ecl-link>
+            <h2 class="ecl-site-footer__title">
+              European Commission website
+            </h2>
+            <div class="ecl-site-footer__description">
+              This site is managed by the Directorate-General for Communication
+            </div>
+          </div>
+        </div>
+        <div class="ecl-site-footer__column">
+          <div class="ecl-site-footer__section ecl-site-footer__section--separator">
+            <ul class="ecl-site-footer__list ecl-site-footer__list--columns">
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Strategy
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    About the European Commission
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Business, Economy, Euro
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Live, work, travel in the EU
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Law
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Funding, Tenders
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Research and innovation
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Energy, Climate change, Environment
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Education
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Aid, Development cooperation, Fundamental rights
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Food, Farming, Fisheries
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    EU regional and urban development
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Jobs at the European Commission
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Statistics
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    News
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Events
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Publications
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+            </ul>
+          </div>
+          <div class="ecl-site-footer__section">
+            <ul class="ecl-site-footer__list">
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    About the European Commission's web presence
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Contact the European Commission
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Follow the European Commission on social media
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Resources for partners
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+            </ul>
+          </div>
+          <div class="ecl-site-footer__section">
+            <ul class="ecl-site-footer__list">
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Languages on our websites
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Cookies
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Privacy policy
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                    Legal notice
+                    <slot-fb name="icon-after"></slot-fb>
+                  </a>
+                </ecl-link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</ecl-footer>
+`;
