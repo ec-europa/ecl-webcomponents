@@ -49,6 +49,7 @@
     "generate:stencil": "stencil generate",
     "generate:docs": "stencil build --docs",
     "generate:template": "scripts/template.sh",
+    "prepublish": "yarn build:stencil",
     "plugins:dev": "lerna --scope \"@ecl/ckeditor5-*\" run dev",
     "plugins:make": "lerna --scope \"@ecl/ckeditor5-*\" run build",
     "postinstall": "patch-package && [ -z \"$NOYARNPOSTINSTALL\" ] && (lerna run postinstall && lerna run prepublish) || echo \"Bypass prepublish\"",

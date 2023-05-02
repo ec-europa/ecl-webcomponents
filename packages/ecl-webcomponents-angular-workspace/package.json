@@ -8,7 +8,8 @@
     "watch": "cd projects/ecl-webcomponents-angular-consumer && ng build --watch --configuration development",
     "test": "ng test",
     "reload": "browser-sync start --proxy 'localhost:3000' --files 'dist/**/*'",
-    "serve": "nodemon server.js --watch dist"
+    "serve": "nodemon server.js --watch dist",
+    "prepublish": "npm run build"
   },
   "private": true,
   "dependencies": {
