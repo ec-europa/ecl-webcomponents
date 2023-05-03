@@ -10,6 +10,14 @@
 	content: 'fact & figures';
 }
 
+.ecl-footer.ck-editor__editable::before {
+	content: 'footer';
+}
+
+.ecl-menu.ck-editor__editable::before {
+	content: 'menu';
+}
+
 .ecl-content-block.ck-editor__editable::before {
 	content: 'content block';
 }
@@ -119,7 +127,9 @@
 .ecl-breadcrumb.ck-editor__editable,
 .ecl-gallery.ck-editor__editable,
 .ecl-content-block.ck-editor__editable,
-.ecl-pagination.ck-editor__editable {
+.ecl-pagination.ck-editor__editable,
+.ecl-footer.ck-editor__editable,
+.ecl-menu.ck-editor__editable {
 	background: #E9E9E9;
 	margin-bottom: 0.5rem;
 	padding-top: 0.5rem;
@@ -146,7 +156,9 @@
 .ck-editor__editable.ecl-page-header::before,
 .ecl-gallery.ck-editor__editable::before,
 .ecl-content-block.ck-editor__editable::before,
-.ecl-pagination.ck-editor__editable::before {
+.ecl-pagination.ck-editor__editable::before,
+.ecl-footer.ck-editor__editable::before,
+.ecl-menu.ck-editor__editable::before {
 	border-right: 2px solid #ccc;
 	font-size: 0.875rem;
 	font-weight: 700;
@@ -171,7 +183,9 @@
 .ck-editor__nested-editable.ecl-carousel__item::before,
 .ck-editor__nested-editable.ecl-breadcrumb__item::before,
 .ck-editor__nested-editable.ecl-gallery__item::before,
-.ck-editor__nested-editable.ecl-pagination__item::before {
+.ck-editor__nested-editable.ecl-pagination__item::before,
+.ck-editor__nested-editable.ecl-footer__item::before,
+.ck-editor__nested-editable.ecl-menu__item::before {
 	border-right: 2px solid teal;
 	color: teal;
 	font-style: italic;
@@ -198,7 +212,9 @@
 .ck-editor__nested-editable.ecl-carousel__item,
 .ck-editor__nested-editable.ecl-breadcrumb__item,
 .ck-editor__nested-editable.ecl-gallery__item,
-.ck-editor__nested-editable.ecl-pagination__item  {
+.ck-editor__nested-editable.ecl-pagination__item,
+.ck-editor__nested-editable.ecl-footer__item,
+.ck-editor__nested-editable.ecl-menu__item  {
 	border: 2px solid teal;
 	border-right: 0;
 	margin-top: 0.25rem;
@@ -212,6 +228,11 @@
 
 .ck-editor__nested-editable.ecl-description-list__term::before {
 	content: 'term';
+}
+
+.ck-editor__nested-editable.ecl-footer__item::before,
+.ck-editor__nested-editable.ecl-menu__item::before {
+	content: 'item';
 }
 
 .ck-editor__nested-editable.ecl-description-list__definition::before {

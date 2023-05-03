@@ -18,13 +18,12 @@ export class CustomElemCommand extends Command {
       const position = model.document.selection.getFirstPosition();
       if (position.parent.name.endsWith(this.tagName)) {
         const toBeUpdated = position.findAncestor(this.tagName);
-        if (toBeUpdated) {
+        if (toBeUpdated && this.tagName !== 'ecl-menu-item') {
           writer.setAttributes(attrs, toBeUpdated);
         }
       } else {
         const elem = writer.createElement(this.tagName, attrs);
         model.insertContent(elem, position);
-        //writer.insertText('ciao', elem, writer.createPositionAt(elem, 'start'));
         writer.setSelection(elem, 'in');
       }
     });

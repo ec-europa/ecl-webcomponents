@@ -267,6 +267,18 @@ ClassicEditor.defaultConfig = {
             items: ['ecl-webcomponents-ecl-date-block'],
           },
           {
+            label: 'ecl-footer',
+            withText: true,
+            items: [
+              'ecl-webcomponents-ecl-footer',
+              {
+                label: 'items',
+                withText: true,
+                items: ['ecl-webcomponents-ecl-footer-item'],
+              },
+            ],
+          },
+          {
             label: 'spinner',
             withText: true,
             items: ['ecl-webcomponents-ecl-spinner'],
@@ -282,6 +294,11 @@ ClassicEditor.defaultConfig = {
                 items: ['ecl-webcomponents-ecl-popover-item'],
               },
             ],
+          },
+          {
+            label: 'grid',
+            withText: true,
+            items: ['ecl-webcomponents-ecl-grid'],
           },
           {
             label: 'inpage nav',
@@ -362,6 +379,18 @@ ClassicEditor.defaultConfig = {
                 withText: true,
                 items: ['ecl-webcomponents-ecl-language-item'],
               },
+              {
+                label: 'ecl-menu',
+                withText: true,
+                items: [
+                  'ecl-webcomponents-ecl-menu',
+                  {
+                    label: 'items',
+                    withText: true,
+                    items: ['ecl-webcomponents-ecl-menu-item'],
+                  },
+                ],
+              },
             ],
           },
           {
@@ -389,6 +418,16 @@ ClassicEditor.defaultConfig = {
   },
   CustomElement: {
     items: [
+      {
+        tag: 'ecl-grid',
+        attributes: {
+          'ecl-script': true,
+          'columns': 12,
+          'breakpoint': '',
+        },
+        inline: false,
+        editable: true,
+      },
       {
         tag: 'ecl-icon',
         attributes: {
@@ -462,6 +501,61 @@ ClassicEditor.defaultConfig = {
         inline: true,
         editable: true,
         parent: 'ecl-gallery',
+      },
+      {
+        tag: 'ecl-footer',
+        attributes: {
+          'theme': 'ec',
+          'logo-alt': 'European Union',
+          'logo-title': 'European union',
+          'logo-lang-code': 'en',
+          'description': 'This site is managed by the Directorate-General for Communication',
+          'site-name': 'European Commission website',
+        },
+        inline: false,
+        editable: true,
+      },
+      {
+        tag: 'ecl-footer-item',
+        attributes: {
+          theme: 'ec',
+          link: '/example.html',
+          theme: 'ec',
+          slot: 'ecl-footer-list-main',
+        },
+        inline: true,
+        editable: true,
+        parent: 'ecl-footer',
+      },
+      {
+        tag: 'ecl-menu',
+        attributes: {
+          'ecl-script': true,
+          'group': 'group1',
+          'slot': 'menu',
+          'theme': 'ec',
+          'close-label': 'Close',
+          'back-label': 'Back',
+          'menu-link': '/example.html',
+          'menu-title': 'Menu',
+        },
+        parent: 'ecl-site-header',
+        inline: true,
+        editable: true,
+      },
+      {
+        tag: 'ecl-menu-item',
+        attributes: {
+          'theme': 'ec',
+          'child': false,
+          'link': '/example.html',
+          'has-children': false,
+          'trigger-aria-label': "Access item's children",
+          'current': false,
+        },
+        inline: true,
+        editable: true,
+        parent: ['ecl-menu'],
       },
       {
         tag: 'ecl-inpage-navigation',
