@@ -7,8 +7,6 @@ import { EclSiteHeader, EclFeaturedItem, EclFactFigures, EclFactFiguresItem, Ecl
 defineCustomElements();
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
       <EclSiteHeader

@@ -6,7 +6,7 @@ const getLatestVersion = require('get-latest-version');
 const eclWebComponentsVersion = require('../lerna.json').version;
 
 const inspectorScript = '<script src="../../ckeditor5/node_modules/@ckeditor/ckeditor5-inspector/build/inspector.js"></script>';
-const inspector = 'CKEditorInspector.attach( editor );';
+const inspector = 'CKEditorInspector.attach(editor);';
 
 const buildNumber = generate();
 
