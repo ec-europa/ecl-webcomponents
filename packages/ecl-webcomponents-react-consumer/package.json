@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "clean": "rimraf dist",
+    "copy": "ncp ../ecl-webcomponents/dist/ecl-webcomponents/build src/assets",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && npm run copy",
     "preview": "vite preview",
     "pre-publish": "npm run build"
   },
