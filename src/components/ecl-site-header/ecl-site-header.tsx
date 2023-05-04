@@ -9,7 +9,7 @@ declare const ECL: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['./build']
+  assetsDirs: ['build']
 })
 
 export class EclSiteHeader {

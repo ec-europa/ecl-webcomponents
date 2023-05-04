@@ -12,14 +12,14 @@ const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()
 module.exports = {
   copy: [
     {
-      from: [path.resolve(nodeModules, '@ecl/resources-ec-logo/dist/**/*.svg')],
+      from: [`${nodeModules}/@ecl/resources-ec-logo/dist/**/*.svg`],
       to: path.resolve(outputFolder, 'images/ec/logos'),
-      options: { up: 9 },
+      options: { up: 7 },
     },
     {
-      from: [path.resolve(nodeModules, '@ecl/resources-eu-logo/dist/**/*.svg')],
+      from: [`${nodeModules}/@ecl/resources-eu-logo/dist/**/*.svg`],
       to: path.resolve(outputFolder, 'images/eu/logos'),
-      options: { up: 9 },
+      options: { up: 7 },
     },
   ],
   styles: [

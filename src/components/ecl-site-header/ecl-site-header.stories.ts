@@ -22,7 +22,6 @@ const Template = (args) =>
     logo-alt="European Commission"
     logo-title="European commission"
     language-aria-label="Choose language"
-    site-name="${args.siteName}"
   >
   <ecl-language-item
     theme="${args.theme}"
