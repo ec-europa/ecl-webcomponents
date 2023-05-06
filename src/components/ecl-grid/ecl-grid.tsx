@@ -16,19 +16,36 @@ export class EclGrid {
   @Prop() theme: string = 'ec';
   @Prop() columns: number = 12;
   @Prop() breakpoint: string;
+  @Prop() row: boolean = false;
+  @Prop() container: boolean = false;
 
   getClass(): string {
     let styleClasses = [];
-    if (!this.breakpoint) {
-      styleClasses = [
-        `ecl-col-${this.columns}`,
-        this.styleClass,
-      ];
+
+    if (this.row || this.container) {
+      if (this.row) {
+        styleClasses = [
+          `ecl-row`,
+          this.styleClass,
+        ];
+      } else {
+         styleClasses = [
+          `ecl-container`,
+          this.styleClass,
+        ];
+      }
     } else {
-      styleClasses = [
-        `ecl-col-${this.breakpoint}-${this.columns}`,
-        this.styleClass,
-      ];
+      if (!this.breakpoint) {
+        styleClasses = [
+          `ecl-col-${this.columns}`,
+          this.styleClass,
+        ];
+      } else {
+        styleClasses = [
+          `ecl-col-${this.breakpoint}-${this.columns}`,
+          this.styleClass,
+        ];
+      }
     }
     
     return styleClasses.join(' ');

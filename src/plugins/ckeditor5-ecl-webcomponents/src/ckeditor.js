@@ -284,6 +284,11 @@ ClassicEditor.defaultConfig = {
             items: ['ecl-webcomponents-ecl-spinner'],
           },
           {
+            label: 'featured item',
+            withText: true,
+            items: ['ecl-webcomponents-ecl-featured-item'],
+          },
+          {
             label: 'popover',
             withText: true,
             items: [
@@ -365,6 +370,18 @@ ClassicEditor.defaultConfig = {
             ],
           },
           {
+            label: 'list-illustration',
+            withText: true,
+            items: [
+              'ecl-webcomponents-ecl-list-illustration',
+              {
+                label: 'item',
+                withText: true,
+                items: ['ecl-webcomponents-ecl-list-illustration-item'],
+              },
+            ],
+          },
+          {
             label: 'page-header',
             withText: true,
             items: ['ecl-webcomponents-ecl-page-header'],
@@ -421,12 +438,14 @@ ClassicEditor.defaultConfig = {
       {
         tag: 'ecl-grid',
         attributes: {
-          'ecl-script': true,
-          'columns': 12,
-          'breakpoint': '',
+          columns: 12,
+          breakpoint: '',
+          row: false,
+          container: false,
         },
         inline: false,
         editable: true,
+        parent: 'ecl-grid',
       },
       {
         tag: 'ecl-icon',
@@ -530,6 +549,7 @@ ClassicEditor.defaultConfig = {
       {
         tag: 'ecl-menu',
         attributes: {
+          'style-class': '',
           'ecl-script': true,
           'group': 'group1',
           'slot': 'menu',
@@ -544,14 +564,44 @@ ClassicEditor.defaultConfig = {
         editable: true,
       },
       {
+        tag: 'ecl-list-illustration',
+        attributes: {
+          'theme': 'ec',
+          'style-class': '',
+          'id': '',
+          'variant': 'image',
+          'zebra': false,
+          'column': 1,
+        },
+        inline: false,
+        editable: true,
+      },
+      {
+        tag: 'ecl-list-illustration-item',
+        attributes: {
+          'style-class': '',
+          'theme': 'ec',
+          'itemTitle': 'List with illustration item',
+          'image': 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
+          'icon': '',
+          'image-alt': 'Alternative text',
+          'square-image': false,
+        },
+        parent: 'ecl-list-illustration',
+        inline: false,
+        editable: true,
+      },
+      {
         tag: 'ecl-menu-item',
         attributes: {
+          'style-class': '',
           'theme': 'ec',
           'child': false,
           'link': '/example.html',
           'has-children': false,
           'trigger-aria-label': "Access item's children",
           'current': false,
+          'slot': '',
         },
         inline: true,
         editable: true,
@@ -560,9 +610,10 @@ ClassicEditor.defaultConfig = {
       {
         tag: 'ecl-inpage-navigation',
         attributes: {
+          'theme': 'ec',
+          'style-class': '',
           'inpage-title': 'Page contents',
           'inpage-id': 'inpage-id',
-          'theme': 'ec',
           'ecl-script': true,
           'with-utils': true,
         },
@@ -572,8 +623,9 @@ ClassicEditor.defaultConfig = {
       {
         tag: 'ecl-inpage-navigation-item',
         attributes: {
-          path: '',
-          theme: 'ec',
+          'theme': 'ec',
+          'style-class': '',
+          'path': '',
         },
         inline: true,
         editable: true,
@@ -1143,6 +1195,23 @@ ClassicEditor.defaultConfig = {
         inline: true,
         editable: true,
         parent: 'ecl-form-group',
+      },
+      {
+        tag: 'ecl-featured-item',
+        attributes: {
+          'style-class': '',
+          'id': '',
+          'variant': 'extended',
+          'position': 'left',
+          'item-title': 'Title',
+          'image': 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
+          'description':
+            '<p class="ecl-u-type-paragraph-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>',
+          'mediaCaption': 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+          'with-utils': true,
+        },
+        inline: false,
+        editable: true,
       },
       {
         tag: 'ecl-site-header',

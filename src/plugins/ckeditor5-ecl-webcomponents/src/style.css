@@ -99,6 +99,10 @@
 	content: 'carousel';
 }
 
+.ecl-featured-item.ck-editor__editable::before {
+	content: 'featured item';
+}
+
 .ecl-page-header.ck-editor__editable::before {
 	content: 'page-header';
 }
@@ -109,6 +113,10 @@
 
 .ecl-gallery.ck-editor__editable::before {
 	content: 'gallery';
+}
+
+.ecl-list-illustration.ck-editor__editable::before {
+	content: 'list with illustrations';
 }
 
 .ecl-news-ticker.ck-editor__editable,
@@ -129,8 +137,18 @@
 .ecl-content-block.ck-editor__editable,
 .ecl-pagination.ck-editor__editable,
 .ecl-footer.ck-editor__editable,
-.ecl-menu.ck-editor__editable {
+.ecl-menu.ck-editor__editable,
+.ecl-site-header .ecl-menu.ck-editor__editable,
+.ecl-list-illustration.ck-editor__editable,
+.ecl-featured-item.ck-editor__editable {
 	background: #E9E9E9;
+	margin-bottom: 0.5rem;
+	padding-top: 0.5rem;
+}
+
+.ecl-grid.ck-editor__editable {
+	background: #fff;
+	border: 1px dashed black;
 	margin-bottom: 0.5rem;
 	padding-top: 0.5rem;
 }
@@ -158,7 +176,9 @@
 .ecl-content-block.ck-editor__editable::before,
 .ecl-pagination.ck-editor__editable::before,
 .ecl-footer.ck-editor__editable::before,
-.ecl-menu.ck-editor__editable::before {
+.ecl-menu.ck-editor__editable::before,
+.ecl-list-illustration.ck-editor__editable::before,
+.ecl-featured-item.ck-editor__editable::before {
 	border-right: 2px solid #ccc;
 	font-size: 0.875rem;
 	font-weight: 700;
@@ -185,7 +205,8 @@
 .ck-editor__nested-editable.ecl-gallery__item::before,
 .ck-editor__nested-editable.ecl-pagination__item::before,
 .ck-editor__nested-editable.ecl-footer__item::before,
-.ck-editor__nested-editable.ecl-menu__item::before {
+.ck-editor__nested-editable.ecl-menu__item::before,
+.ck-editor__nested-editable.ecl-list-illustration__item::before {
 	border-right: 2px solid teal;
 	color: teal;
 	font-style: italic;
@@ -214,7 +235,8 @@
 .ck-editor__nested-editable.ecl-gallery__item,
 .ck-editor__nested-editable.ecl-pagination__item,
 .ck-editor__nested-editable.ecl-footer__item,
-.ck-editor__nested-editable.ecl-menu__item  {
+.ck-editor__nested-editable.ecl-menu__item,
+.ck-editor__nested-editable.ecl-list-illustration__item {
 	border: 2px solid teal;
 	border-right: 0;
 	margin-top: 0.25rem;
@@ -231,7 +253,19 @@
 }
 
 .ck-editor__nested-editable.ecl-footer__item::before,
-.ck-editor__nested-editable.ecl-menu__item::before {
+.ck-editor__nested-editable.ecl-menu__item::before,
+.ck-editor__nested-editable.ecl-list-illustration__item::before,
+.ck-editor__nested-editable.ecl-social-media-share__item::before,
+.ck-editor__nested-editable.ecl-pagination__item::before,
+.ck-editor__nested-editable.ecl-inpage-navigation__item::before,
+.ck-editor__nested-editable.ecl-gallery__item::before,
+.ck-editor__nested-editable.ecl-breadcrumb__item::before,
+.ck-editor__nested-editable.ecl-carousel__item::before,
+.ck-editor__nested-editable.ecl-file-translation__item::before,
+.ck-editor__nested-editable.ecl-popover__item::before,
+.ck-editor__nested-editable.ecl-fact-figures__item::before,
+.ck-editor__nested-editable.ecl-accordion__item::before,
+.ck-editor__nested-editable.ecl-news-ticker__item::before {
 	content: 'item';
 }
 
@@ -239,28 +273,8 @@
 	content: 'definition';
 }
 
-.ck-editor__nested-editable.ecl-pagination__item::before {
-	content: 'items';
-}
-
-.ck-editor__nested-editable.ecl-fact-figures__item::before {
-	content: 'facts & figures item';
-}
-
-.ck-editor__nested-editable.ecl-accordion__item::before {
-	content: 'accordion item';
-}
-
-.ck-editor__nested-editable.ecl-news-ticker__item::before {
-	content: 'news ticker item';
-}
-
 .ck-editor__nested-editable.ecl-language__item::before {
 	content: 'language item';
-}
-
-.ck-editor__nested-editable.ecl-popover__item::before {
-	content: 'popover-item';
 }
 
 .ck-editor__nested-editable.ecl-input::before {
@@ -277,28 +291,4 @@
 
 .ck-editor__nested-editable.ecl-social-media-share__item {
 	margin-inline-end: 0;
-}
-
-.ck-editor__nested-editable.ecl-social-media-share__item::before {
-	content: 'item';
-}
-
-.ck-editor__nested-editable.ecl-file-translation__item::before {
-	content: 'translation item';
-}
-
-.ck-editor__nested-editable.ecl-inpage-navigation__item::before {
-	content: 'inpage item';
-}
-
-.ck-editor__nested-editable.ecl-carousel__item::before {
-	content: 'carousel item';
-}
-
-.ck-editor__nested-editable.ecl-breadcrumb__item::before {
-	content: 'breadcrumb item';
-}
-
-.ck-editor__nested-editable.ecl-gallery__item::before {
-	content: 'gallery item';
 }

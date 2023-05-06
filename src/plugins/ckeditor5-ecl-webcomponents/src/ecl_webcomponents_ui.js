@@ -42,8 +42,8 @@ export default class CustomElemUI extends Plugin {
         });
       } else {
         editor.model.schema.register(tag, {
-          allowIn: ['$root', '$container'],
-          allowChildren: children || ['$text', '$block'],
+          allowIn: ['$root', '$container', '$text', '$block'],
+          allowChildren: children || ['$text', '$block', '$root'],
           allowAttributes: attrkeys,
           isObject: true,
           isBlock: true,
@@ -134,6 +134,17 @@ export default class CustomElemUI extends Plugin {
       //---toolbar
       this._createToolbarButton(com, icon);
     }
+
+    editor.model.schema.extend('ecl-grid', {
+      inheritAllFrom: '$block',
+      allowIn: 'ecl-grid',
+      allowContent: ['ecl-grid', '$block'],
+    });
+    editor.model.schema.extend('ecl-menu-item', {
+      inheritAllFrom: '$block',
+      allowIn: 'ecl-menu-item',
+      allowContent: ['ecl-menu-item', '$block'],
+    });
   }
 
   afterInit() {

@@ -28,7 +28,7 @@ function App() {
         logo-alt="European Commission"
         logo-title="European commission"
         language-aria-label="Choose language"
-        site-name="ECL Webcomponents in an angular app"
+        site-name="ECL Webcomponents in an react app"
       >
         <EclLanguageItem theme="eu" slot="eu-category" path="/example.html" lang-code="bg" language="български"></EclLanguageItem>
         <EclLanguageItem theme="eu" slot="eu-category" path="/example.html" lang-code="es" language="español"></EclLanguageItem>
