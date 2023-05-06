@@ -688,6 +688,17 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
     }
+    interface EclSpacing {
+        "breakpoint": string;
+        "direction": string;
+        "horizontal": boolean;
+        "inner": boolean;
+        "outer": boolean;
+        "styleClass": string;
+        "theme": string;
+        "value": string;
+        "vertical": boolean;
+    }
     interface EclSpinner {
         "centered": boolean;
         "overlay": boolean;
@@ -1164,6 +1175,12 @@ declare global {
         prototype: HTMLEclSocialMediaShareItemElement;
         new (): HTMLEclSocialMediaShareItemElement;
     };
+    interface HTMLEclSpacingElement extends Components.EclSpacing, HTMLStencilElement {
+    }
+    var HTMLEclSpacingElement: {
+        prototype: HTMLEclSpacingElement;
+        new (): HTMLEclSpacingElement;
+    };
     interface HTMLEclSpinnerElement extends Components.EclSpinner, HTMLStencilElement {
     }
     var HTMLEclSpinnerElement: {
@@ -1263,6 +1280,7 @@ declare global {
         "ecl-social-media-follow-item": HTMLEclSocialMediaFollowItemElement;
         "ecl-social-media-share": HTMLEclSocialMediaShareElement;
         "ecl-social-media-share-item": HTMLEclSocialMediaShareItemElement;
+        "ecl-spacing": HTMLEclSpacingElement;
         "ecl-spinner": HTMLEclSpinnerElement;
         "ecl-tag": HTMLEclTagElement;
         "ecl-textarea": HTMLEclTextareaElement;
@@ -1968,6 +1986,17 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
     }
+    interface EclSpacing {
+        "breakpoint"?: string;
+        "direction"?: string;
+        "horizontal"?: boolean;
+        "inner"?: boolean;
+        "outer"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+        "value"?: string;
+        "vertical"?: boolean;
+    }
     interface EclSpinner {
         "centered"?: boolean;
         "overlay"?: boolean;
@@ -2082,6 +2111,7 @@ declare namespace LocalJSX {
         "ecl-social-media-follow-item": EclSocialMediaFollowItem;
         "ecl-social-media-share": EclSocialMediaShare;
         "ecl-social-media-share-item": EclSocialMediaShareItem;
+        "ecl-spacing": EclSpacing;
         "ecl-spinner": EclSpinner;
         "ecl-tag": EclTag;
         "ecl-textarea": EclTextarea;
@@ -2161,6 +2191,7 @@ declare module "@stencil/core" {
             "ecl-social-media-follow-item": LocalJSX.EclSocialMediaFollowItem & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowItemElement>;
             "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
             "ecl-social-media-share-item": LocalJSX.EclSocialMediaShareItem & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareItemElement>;
+            "ecl-spacing": LocalJSX.EclSpacing & JSXBase.HTMLAttributes<HTMLEclSpacingElement>;
             "ecl-spinner": LocalJSX.EclSpinner & JSXBase.HTMLAttributes<HTMLEclSpinnerElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
             "ecl-textarea": LocalJSX.EclTextarea & JSXBase.HTMLAttributes<HTMLEclTextareaElement>;

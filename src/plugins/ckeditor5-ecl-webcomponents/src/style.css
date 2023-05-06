@@ -99,7 +99,7 @@
 	content: 'carousel';
 }
 
-.ecl-featured-item.ck-editor__editable::before {
+.ecl-featured__item.ck-editor__editable::before {
 	content: 'featured item';
 }
 
@@ -113,6 +113,10 @@
 
 .ecl-gallery.ck-editor__editable::before {
 	content: 'gallery';
+}
+
+.ecl-spacing.ck-editor__editable::before {
+	content: 'spacing';
 }
 
 .ecl-list-illustration.ck-editor__editable::before {
@@ -140,7 +144,8 @@
 .ecl-menu.ck-editor__editable,
 .ecl-site-header .ecl-menu.ck-editor__editable,
 .ecl-list-illustration.ck-editor__editable,
-.ecl-featured-item.ck-editor__editable {
+.ecl-featured__item.ck-editor__editable,
+.ecl-spacing.ck-editor__editable {
 	background: #E9E9E9;
 	margin-bottom: 0.5rem;
 	padding-top: 0.5rem;
@@ -178,7 +183,8 @@
 .ecl-footer.ck-editor__editable::before,
 .ecl-menu.ck-editor__editable::before,
 .ecl-list-illustration.ck-editor__editable::before,
-.ecl-featured-item.ck-editor__editable::before {
+.ecl-featured__item.ck-editor__editable::before,
+.ecl-spacing.ck-editor__editable::before  {
 	border-right: 2px solid #ccc;
 	font-size: 0.875rem;
 	font-weight: 700;

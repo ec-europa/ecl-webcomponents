@@ -306,6 +306,11 @@ ClassicEditor.defaultConfig = {
             items: ['ecl-webcomponents-ecl-grid'],
           },
           {
+            label: 'spacing',
+            withText: true,
+            items: ['ecl-webcomponents-ecl-spacing'],
+          },
+          {
             label: 'inpage nav',
             withText: true,
             items: [
@@ -446,6 +451,18 @@ ClassicEditor.defaultConfig = {
         inline: false,
         editable: true,
         parent: 'ecl-grid',
+      },
+      {
+        tag: 'ecl-spacing',
+        attributes: {
+          direction: 't',
+          breakpoint: '',
+          value: 'l',
+          outer: true,
+          inner: false,
+        },
+        inline: true,
+        editable: true,
       },
       {
         tag: 'ecl-icon',

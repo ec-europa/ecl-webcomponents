@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-spacing margin and padding horizontal renders 1`] = `
+<ecl-spacing direction="h" inner="" outer="" value="l">
+  <!---->
+  <div class="ecl-u-mh-l ecl-u-ph-l"></div>
+</ecl-spacing>
+`;
+
+exports[`ecl-spacing margin horizontal auto renders 1`] = `
+<ecl-spacing direction="h" outer="" value="auto">
+  <!---->
+  <div class="ecl-u-mh-auto"></div>
+</ecl-spacing>
+`;
+
+exports[`ecl-spacing margin horizontal l in xl breakpoint renders 1`] = `
+<ecl-spacing breakpoint="xl" direction="a" outer="" value="l">
+  <!---->
+  <div class="ecl-u-ma-xl-l"></div>
+</ecl-spacing>
+`;
+
+exports[`ecl-spacing margin horizontal none renders 1`] = `
+<ecl-spacing direction="a" outer="" value="none">
+  <!---->
+  <div class="ecl-u-ma-none"></div>
+</ecl-spacing>
+`;
+
+exports[`ecl-spacing margin vertical renders 1`] = `
+<ecl-spacing direction="v" outer="" value="s">
+  <!---->
+  <div class="ecl-u-mv-s"></div>
+</ecl-spacing>
+`;
