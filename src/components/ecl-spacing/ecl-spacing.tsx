@@ -19,7 +19,6 @@ export class EclSpacing {
   @Prop() inner: boolean = false;
   @Prop() vertical: boolean = false;
   @Prop() horizontal: boolean = false;
-  @Prop() breakpoint: boolean = '';
   @Prop() direction: string = 'a';
   @Prop() value: string = 'm';
 
