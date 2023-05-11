@@ -509,6 +509,7 @@ ClassicEditor.defaultConfig = {
       {
         tag: 'ecl-gallery',
         attributes: {
+          'theme': 'ec',
           'ecl-script': true,
           'counter-label': 'Media files in this gallery',
           'view-all-label': 'View all',
@@ -1233,6 +1234,7 @@ ClassicEditor.defaultConfig = {
       {
         tag: 'ecl-site-header',
         attributes: {
+          'theme': 'ec',
           'style-class': '',
           'ecl-script': 'true',
           'login-block': 'true',
@@ -1258,6 +1260,7 @@ ClassicEditor.defaultConfig = {
       {
         tag: 'ecl-language-item',
         attributes: {
+          'theme': 'ec',
           'style-class': '',
           'slot': 'eu-category',
           'path': '/example.html',
@@ -1271,6 +1274,7 @@ ClassicEditor.defaultConfig = {
       {
         tag: 'ecl-timeline',
         attributes: {
+          'theme': 'ec',
           'style-class': '',
           'ecl-script': 'true',
         },
@@ -1280,6 +1284,7 @@ ClassicEditor.defaultConfig = {
       {
         tag: 'ecl-timeline-item',
         attributes: {
+          'theme': 'ec',
           'style-class': '',
           'item-id': '1',
           'label': '28-29 September 2017',
@@ -1293,10 +1298,11 @@ ClassicEditor.defaultConfig = {
   htmlSupport: {
     allow: [
       {
-        name: 'div',
+        name: 'h2',
         classes: true,
         attributes: {
           id: true,
+          slot: true,
         },
       },
     ],

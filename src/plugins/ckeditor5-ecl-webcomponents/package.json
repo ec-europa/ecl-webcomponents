@@ -7,9 +7,8 @@
     "access": "public"
   },
   "scripts": {
-    "dev:fetch": "npm install --ignore-scripts --silent --no-save git+https://github.com/ckeditor/ckeditor5.git",
-    "dev:copy": "ncp ../../../node_modules/ckeditor5 ../../../ckeditor5",
-    "dev:clean": "rimraf ../../../node_modules/ckeditor5",
+    "dev:clean": "rimraf ../../../ckeditor5",
+    "dev:fetch": "git clone --depth 1 --single-branch --branch v36.0.1 https://github.com/ckeditor/ckeditor5 ../../../ckeditor5",
     "dev:install": "cd ../../../ckeditor5 && yarn install --ignore-scripts",
     "dev:install-plugin": "cd ../../../ckeditor5 && yarn add -W --ignore-scripts file:../src/plugins/ckeditor5-ecl-webcomponents",
     "dev": "run-s dev:*",
