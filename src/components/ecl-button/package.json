@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-button",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "ECL Button",
   "main": "ecl-button.tsx",
   "private": true,
