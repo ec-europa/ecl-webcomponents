@@ -28061,7 +28061,7 @@
             }
             _showUI(t) {
               const e = this.editor.commands.get(t).attributes,
-                n = editor.model.document.selection.getFirstPosition();
+                n = this.editor.model.document.selection.getFirstPosition();
               t.endsWith(n.parent.name)
                 ? this.formView[t].inputs.forEach(t => {
                     const e = t.label,

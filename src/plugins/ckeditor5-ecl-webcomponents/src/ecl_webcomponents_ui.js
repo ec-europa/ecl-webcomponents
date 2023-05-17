@@ -239,7 +239,7 @@ export default class CustomElemUI extends Plugin {
 
   _showUI(component) {
     const commandValue = this.editor.commands.get(component).attributes;
-    const position = editor.model.document.selection.getFirstPosition();
+    const position = this.editor.model.document.selection.getFirstPosition();
 
     if (component.endsWith(position.parent.name)) {
       this.formView[component].inputs.forEach(input => {
