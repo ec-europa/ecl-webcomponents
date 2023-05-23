@@ -74,7 +74,7 @@ export class EclSiteHeader {
 
   render() {
     const logoPath = this.theme === 'ec' ?
-      getAssetPath(`./build/images/${this.theme}/logos/positive/logo-${this.theme}--${this.langCode}.svg`) :
+      `/build/images/${this.theme}/logos/positive/logo-${this.theme}--${this.langCode}.svg` :
       getAssetPath(`./build/images/${this.theme}/logos/standard-version/positive/logo-${this.theme}--${this.langCode}.svg`);
 
     return (

@@ -27962,6 +27962,7 @@
                       isBlock: !0,
                     }),
                   t.model.schema.extend('$text', { allowIn: i }),
+                  t.model.schema.extend('$root', { allowIn: '$text', allowTextOf: '$root' }),
                   t.conversion.for('editingDowncast').elementToElement(
                     a
                       ? {
@@ -30226,7 +30227,7 @@
                       'menu-title': 'Menu',
                     },
                     parent: 'ecl-site-header',
-                    inline: !0,
+                    inline: !1,
                     editable: !0,
                   },
                   {

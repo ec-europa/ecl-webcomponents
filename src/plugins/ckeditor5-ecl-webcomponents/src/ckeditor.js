@@ -578,7 +578,7 @@ ClassicEditor.defaultConfig = {
           'menu-title': 'Menu',
         },
         parent: 'ecl-site-header',
-        inline: true,
+        inline: false,
         editable: true,
       },
       {

@@ -53,6 +53,7 @@ export default class CustomElemUI extends Plugin {
       editor.model.schema.extend('$text', {
         allowIn: tag,
       });
+      editor.model.schema.extend('$root', { allowIn: '$text', allowTextOf: '$root' });
 
       //---conversion
       editor.conversion.for('editingDowncast').elementToElement(
