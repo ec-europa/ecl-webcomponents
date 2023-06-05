@@ -140,10 +140,8 @@ export namespace Components {
         "dateFormat": string;
         "defaultValue": string;
         "disabled": boolean;
-        "hasChanged": boolean;
         "inputId": string;
         "invalid": boolean;
-        "isFocused": boolean;
         "name": string;
         "placeholder": string;
         "required": boolean;
@@ -1432,14 +1430,12 @@ declare namespace LocalJSX {
         "dateFormat"?: string;
         "defaultValue"?: string;
         "disabled"?: boolean;
-        "hasChanged"?: boolean;
         "inputId"?: string;
         "invalid"?: boolean;
-        "isFocused"?: boolean;
         "name"?: string;
-        "onInputBlur"?: (event: EclDatepickerCustomEvent<FocusEvent>) => void;
-        "onInputChange"?: (event: EclDatepickerCustomEvent<any>) => void;
-        "onInputFocus"?: (event: EclDatepickerCustomEvent<FocusEvent>) => void;
+        "onBlurred"?: (event: EclDatepickerCustomEvent<void>) => void;
+        "onFocused"?: (event: EclDatepickerCustomEvent<void>) => void;
+        "onValueChanged"?: (event: EclDatepickerCustomEvent<string>) => void;
         "placeholder"?: string;
         "required"?: boolean;
         "styleClass"?: string;
