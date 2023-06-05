@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-social-media-follow",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "ECL Social Media Follow",
   "main": "ecl-social-media-follow.tsx",
   "private": true,
