@@ -4,7 +4,7 @@
   "license": "EUPL-1.2",
   "version": "0.3.0",
   "description": "ECL Rating field",
-  "main": "ecl-tag.tsx",
+  "main": "ecl-rating-field.tsx",
   "private": true,
   "scripts": {
     "build:styles": "cross-env NODE_ENV=production ecl-builder styles",

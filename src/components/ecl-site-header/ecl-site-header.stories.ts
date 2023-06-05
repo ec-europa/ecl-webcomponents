@@ -8,7 +8,6 @@ const Template = (args) =>
     theme="${args.theme}"
     login-block
     language-block
-    search-block
     search-text="search"
     search-placeholder="Placeholder text"
     language="english"
@@ -122,6 +121,17 @@ const Template = (args) =>
     lang-code="tr"
     language="Türk"
   ></ecl-language-item>
+  <div slot="search" class="ecl-site-header__search-container sc-ecl-search-form-ec">
+    <ecl-search-form
+        theme="${args.theme}"
+        input-id="ecl-search-form"
+        width="m"
+        placeholder="Placeholder text"
+        button-label="Cerca"
+        button-aria-label="Search"
+      >
+    </ecl-search-form>
+  </div>
   </ecl-site-header>`;
 
 const TemplateHarmonised = (args) => 

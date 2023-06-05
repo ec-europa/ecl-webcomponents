@@ -13,7 +13,6 @@ describe('ecl-message', () => {
                 variant="information"
                 close-label="Close"
                 ecl-script
-                with-utils
               >
                 Lorem ipsum dolor sit amet
               </ecl-message>`,

@@ -14,8 +14,6 @@ export class EclContentItem {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop() theme: string = 'ec';
-  @Prop() image: string;
-  @Prop() imageAlt: string;
   @Prop() imagePosition: string = 'left';
   @Prop() imageSize: string = 'medium';
 

@@ -169,7 +169,7 @@ export default class CustomElemUI extends Plugin {
     if (enterCommand) {
       this.listenTo(enterCommand, 'afterExecute', (evt, data) => {
         const positionParent = editor.model.document.selection.getFirstPosition().parent;
-        const isEcl = positionParent.name.includes('ecl');
+        const isEcl = positionParent.name.includes('ecl') || positionParent.name === 'source';
         const isEclChild = positionParent.parent.name.includes('ecl');
 
         if (isEcl && !positionParent.is('element', 'paragraph') && !isEclChild) {

@@ -4,7 +4,7 @@
   "license": "EUPL-1.2",
   "version": "0.3.0",
   "description": "ECL Social Media Share",
-  "main": "ecl-tag.tsx",
+  "main": "ecl-social-media-share.tsx",
   "private": true,
   "scripts": {
     "build:copy": "cross-env ecl-builder copy",

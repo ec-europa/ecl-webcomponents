@@ -1,4 +1,5 @@
-import { Component, h, Prop, getAssetPath, Element } from '@stencil/core';
+import { Component, h, Prop, Element } from '@stencil/core';
+import getAssetPath from "../../utils/assetPath";
 declare const ECL: any;
 
 @Component({
@@ -21,9 +22,9 @@ export class EclMediaContainer {
   @Prop() fullWidth: boolean = false;
   @Prop() sources: string;
   @Prop() tracks: string;
+  @Prop() hasCaption: boolean = false;
   @Prop() ratio: string = '16-9';
   @Prop() eclScript: boolean = false;
-  @Prop() withUtils: boolean = false;
   @Prop() embeddedMedia: boolean = false;
 
   getClass(): string {
@@ -35,14 +36,6 @@ export class EclMediaContainer {
   }
 
   componentWillLoad() {
-    if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
-      const style = document.createElement('link');
-      style.rel = 'stylesheet';
-      style.type = 'text/css';
-      style.id = 'ecl-utils-styles';
-      style.href = getAssetPath(`./build/styles/ecl-utilities-${this.theme}.css`);
-      document.body.appendChild(style);
-    }
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-media-container-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
@@ -97,10 +90,11 @@ export class EclMediaContainer {
         </video> : '' }
 
         <slot name="embedded-media"></slot>
-
+      { this.hasCaption ?
         <figcaption class="ecl-media-container__caption">
           <slot></slot>
-        </figcaption>
+        </figcaption> : ''
+      }
       </figure> 
     );
   }

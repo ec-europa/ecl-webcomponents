@@ -4,7 +4,6 @@ const getArgs = () => ({
   closeLabel: 'Close',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan semper lorem, ac mollis lacus tincidunt eu. Duis scelerisque diam eu tempus fringilla.',
   withClose: true,
-  withUtils: true,
   eclScript: true,
 });
 

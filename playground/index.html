@@ -1,6 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta data-ecl-asset-path="./ecl-webcomponents" />
     <script type="module" src="ecl-webcomponents/ecl-webcomponents.esm.js"></script>
     <script src="editor/ckeditor.js"></script>
     <script src="../../ckeditor5/node_modules/@ckeditor/ckeditor5-inspector/build/inspector.js"></script>
@@ -84,9 +85,9 @@
     </script>
   </body>
   <footer>
-    <div class="ecl-container">
-      <span class="ecl-u-type-heading-5">Build number: {####}</span> | <span class="ecl-u-type-heading-5">Ckeditor: {!!!!}</span> |
-      <span class="ecl-u-type-heading-5">Ecl Webcomponents: {----}</span>
-    </div>
+    <ecl-grid container="true">
+      <ecl-text is-bold tag="span" level="5">Build number: {####}</ecl-text> | <ecl-text is-bold tag="span" level="5">Ckeditor: {!!!!}</ecl-text> |
+      <ecl-text is-bold tag="span" level="5">Ecl Webcomponents: {----}</ecl-text>
+    </ecl-grid>
   </footer>
 </html>

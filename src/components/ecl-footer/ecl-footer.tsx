@@ -1,4 +1,5 @@
-import { Component, Prop, h, Element, getAssetPath } from '@stencil/core';
+import { Component, Prop, h, Element } from '@stencil/core';
+import getAssetPath from "../../utils/assetPath";
 
 @Component({
   tag: 'ecl-footer',

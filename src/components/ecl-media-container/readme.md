@@ -14,13 +14,13 @@
 | `eclScript`     | `ecl-script`     |             | `boolean` | `false`     |
 | `embeddedMedia` | `embedded-media` |             | `boolean` | `false`     |
 | `fullWidth`     | `full-width`     |             | `boolean` | `false`     |
+| `hasCaption`    | `has-caption`    |             | `boolean` | `false`     |
 | `image`         | `image`          |             | `string`  | `undefined` |
 | `ratio`         | `ratio`          |             | `string`  | `'16-9'`    |
 | `sources`       | `sources`        |             | `string`  | `undefined` |
 | `styleClass`    | `style-class`    |             | `string`  | `undefined` |
 | `theme`         | `theme`          |             | `string`  | `'ec'`      |
 | `tracks`        | `tracks`         |             | `string`  | `undefined` |
-| `withUtils`     | `with-utils`     |             | `boolean` | `false`     |
 
 
 ## Dependencies

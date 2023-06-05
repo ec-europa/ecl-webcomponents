@@ -13,7 +13,6 @@
 | `labelExpanded`  | `label-expanded`  |             | `string`  | `''`    |
 | `styleClass`     | `style-class`     |             | `string`  | `''`    |
 | `theme`          | `theme`           |             | `string`  | `'ec'`  |
-| `withUtils`      | `with-utils`      |             | `boolean` | `false` |
 
 
 ## Dependencies

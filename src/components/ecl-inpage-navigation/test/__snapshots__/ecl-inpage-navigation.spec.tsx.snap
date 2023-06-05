@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-inpage-navigation renders 1`] = `
-<ecl-inpage-navigation ecl-script="" inpage-id="inpage-id" inpage-title="Page contents" theme="ec" with-utils="">
+<ecl-inpage-navigation ecl-script="" inpage-id="inpage-id" inpage-title="Page contents" theme="ec">
   <!---->
   <nav aria-labelledby="inpage-id" class="ecl-inpage-navigation" data-ecl-inpage-navigation>
     <div class="ecl-inpage-navigation__title" id="inpage-id">

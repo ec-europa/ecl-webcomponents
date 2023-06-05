@@ -64,6 +64,7 @@ const Template = (args) =>
       theme="${args.theme}"
       image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
       item-title="List with illustration item 5"
+      item-link="/example"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
       Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,

@@ -45,9 +45,11 @@ export class EclBanner {
   }
 
   componentDidRender() {
-    this.el.querySelector('.ecl-banner__cta').addEventListener('click', () => {
-      this.ctaClicked = true;
-    });
+    if (this.el.querySelector('.ecl-banner__cta')) {
+      this.el.querySelector('.ecl-banner__cta').addEventListener('click', () => {
+        this.ctaClicked = true;
+      });
+    }
   }
 
   render() {

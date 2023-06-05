@@ -7,14 +7,12 @@
 
 ## Properties
 
-| Property        | Attribute        | Description | Type     | Default     |
-| --------------- | ---------------- | ----------- | -------- | ----------- |
-| `image`         | `image`          |             | `string` | `undefined` |
-| `imageAlt`      | `image-alt`      |             | `string` | `undefined` |
-| `imagePosition` | `image-position` |             | `string` | `'left'`    |
-| `imageSize`     | `image-size`     |             | `string` | `'medium'`  |
-| `styleClass`    | `style-class`    |             | `string` | `''`        |
-| `theme`         | `theme`          |             | `string` | `'ec'`      |
+| Property        | Attribute        | Description | Type     | Default    |
+| --------------- | ---------------- | ----------- | -------- | ---------- |
+| `imagePosition` | `image-position` |             | `string` | `'left'`   |
+| `imageSize`     | `image-size`     |             | `string` | `'medium'` |
+| `styleClass`    | `style-class`    |             | `string` | `''`       |
+| `theme`         | `theme`          |             | `string` | `'ec'`     |
 
 
 ----------------------------------------------

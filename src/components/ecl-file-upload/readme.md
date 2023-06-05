@@ -28,7 +28,6 @@
 | `theme`              | `theme`                |             | `string`  | `'ec'`      |
 | `type`               | `type`                 |             | `string`  | `undefined` |
 | `width`              | `width`                |             | `string`  | `'m'`       |
-| `withUtils`          | `with-utils`           |             | `boolean` | `false`     |
 
 
 ----------------------------------------------

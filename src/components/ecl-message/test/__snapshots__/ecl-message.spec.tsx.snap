@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-message renders 1`] = `
-<ecl-message close-label="Close" ecl-script="" message-title="Title for a message" theme="ec" variant="information" with-utils="">
+<ecl-message close-label="Close" ecl-script="" message-title="Title for a message" theme="ec" variant="information">
   <!---->
   <div class="ecl-message ecl-message--info" data-ecl-message role="alert">
     <ecl-icon style-class="ecl-message__icon sc-ecl-message-ec">

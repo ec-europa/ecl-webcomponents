@@ -16,6 +16,7 @@
     "@ecl/builder": "3.7.1",
     "@ecl/specs-component-icon": "3.7.1",
     "@ecl/vanilla-component-icon": "3.7.1",
+    "@ecl/vanilla-component-button": "3.7.1",
     "@ecl/vanilla-component-link": "3.7.1",
     "cross-env": "7.0.3"
   },
