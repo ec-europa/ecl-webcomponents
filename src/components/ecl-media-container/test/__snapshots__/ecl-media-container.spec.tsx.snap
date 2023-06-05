@@ -1,15 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-media-container renders correctly with an embedded video 1`] = `
-<ecl-media-container data-ecl-media-container ecl-script="" ratio="16-9" theme="ec" with-utils="">
+<ecl-media-container data-ecl-media-container ecl-script="" ratio="16-9" theme="ec">
   <!---->
+  caption for the media container
   <figure class="ecl-media-container ecl-media-container--16-9">
     <div class="ecl-media-container__media" slot="embedded-media">
       <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="197" src="https://www.youtube.com/embed/fgi-GSCB6ho" title="New digital strategy" width="350"></iframe>
     </div>
-    <figcaption class="ecl-media-container__caption">
-      caption for the media container
-    </figcaption>
   </figure>
 </ecl-media-container>
 `;
@@ -17,6 +15,7 @@ exports[`ecl-media-container renders correctly with an embedded video 1`] = `
 exports[`ecl-media-container renders correctly with an html5 video 1`] = `
 <ecl-media-container ratio="16-9" sources="[{&quot;src&quot;: &quot;https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4&quot;, &quot;type&quot;: &quot;video/mp4&quot;}, {&quot;src&quot;: &quot;https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm&quot;, &quot;type&quot;: &quot;video/webm&quot;}]" theme="ec" tracks="[{&quot;src&quot;: &quot;/captions/bunny-en.vtt&quot;, &quot;kind&quot;: &quot;captions&quot;, &quot;src_lang&quot;: &quot;en&quot;, &quot;label&quot;: &quot;English&quot;}, {&quot;src&quot;: &quot;/captions/bunny-fr.vtt&quot;, &quot;kind&quot;: &quot;captions&quot;, &quot;src_lang&quot;: &quot;fr&quot;, &quot;label&quot;: &quot;français&quot;}]">
   <!---->
+  caption for the media container
   <figure class="ecl-media-container ecl-media-container--16-9">
     <video class="ecl-media-container__media" controls="">
       <source src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4" type="video/mp4">
@@ -24,9 +23,6 @@ exports[`ecl-media-container renders correctly with an html5 video 1`] = `
       <track kind="captions" label="English" src="/captions/bunny-en.vtt" srclang="en"></track>
       <track kind="captions" label="français" src="/captions/bunny-fr.vtt" srclang="fr"></track>
     </video>
-    <figcaption class="ecl-media-container__caption">
-      caption for the media container
-    </figcaption>
   </figure>
 </ecl-media-container>
 `;
@@ -36,8 +32,6 @@ exports[`ecl-media-container renders correctly with an image 1`] = `
   <!---->
   <figure class="ecl-media-container ecl-media-container--16-9">
     <img class="ecl-media-container__media" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
-    <figcaption class="ecl-media-container__caption">
-    </figcaption>
   </figure>
 </ecl-media-container>
 `;

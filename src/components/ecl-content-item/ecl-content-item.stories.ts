@@ -62,10 +62,6 @@ const Template = (args) =>
       meta-secondary='[{"label": "2018/10/22", "icon": "calendar"}, {"label": "Luxembourg", "icon": "location"}]'
       has-title
       has-description
-      has-lists
-      has-labels
-      has-links
-      has-secondary-links
     >
       <ecl-label
         slot="labels"

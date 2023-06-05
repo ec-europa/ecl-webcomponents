@@ -18,7 +18,6 @@
 | `styleClass`            | `style-class`             |             | `string`  | `undefined`                      |
 | `theme`                 | `theme`                   |             | `string`  | `'ec'`                           |
 | `variant`               | `variant`                 |             | `string`  | `'default'`                      |
-| `withUtils`             | `with-utils`              |             | `boolean` | `true`                           |
 
 
 ## Dependencies

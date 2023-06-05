@@ -1,4 +1,5 @@
-import { Component, h, Prop, Element, getAssetPath, State } from '@stencil/core';
+import { Component, h, Prop, Element, State } from '@stencil/core';
+import getAssetPath from "../../utils/assetPath";
 declare const ECL: any;
 
 @Component({

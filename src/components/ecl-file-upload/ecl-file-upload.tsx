@@ -1,4 +1,5 @@
-import { Component, h, Prop, Element, getAssetPath } from '@stencil/core';
+import { Component, h, Prop, Element } from '@stencil/core';
+import getAssetPath from "../../utils/assetPath";
 declare const ECL: any;
 
 @Component({
@@ -17,7 +18,6 @@ export class EclFileUpload {
   @Prop() styleClass: string;
   @Prop() inputClass: string;
   @Prop() eclScript: boolean = false;
-  @Prop() withUtils: boolean = false;
   @Prop() disabled: boolean = false;
   @Prop() required: boolean = false;
   @Prop() invalid: boolean = false;
@@ -48,17 +48,6 @@ export class EclFileUpload {
     }
 
     return inputClasses.join(' ');
-  }
-
-  componentWillLoad() {
-    if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
-      const style = document.createElement('link');
-      style.rel = 'stylesheet';
-      style.type = 'text/css';
-      style.id = 'ecl-utils-styles';
-      style.href = getAssetPath(`./build/styles/ecl-utilities-${this.theme}.css`);
-      document.body.appendChild(style);
-    }
   }
 
   componentDidRender() {

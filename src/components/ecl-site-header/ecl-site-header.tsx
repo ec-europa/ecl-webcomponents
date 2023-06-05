@@ -1,4 +1,5 @@
-import { Component, Prop, h, Element, getAssetPath } from '@stencil/core';
+import { Component, Prop, h, Element } from '@stencil/core';
+import getAssetPath from '../../utils/assetPath';
 declare const ECL: any;
 
 @Component({
@@ -190,6 +191,7 @@ export class EclSiteHeader {
                           <slot name="eu-category"></slot>
                         </ul>
                       </div>
+                    { this.nonEuLabel ?
                       <div 
                         class="ecl-site-header__language-category"
                         data-ecl-language-list-non-eu
@@ -200,7 +202,8 @@ export class EclSiteHeader {
                         <ul class="ecl-site-header__language-list">
                           <slot name="non-eu-category"></slot>
                         </ul>
-                      </div>
+                      </div> : ''
+                    }
                     </div>
                   </div>
                 </div> : ''
@@ -230,7 +233,7 @@ export class EclSiteHeader {
                     button-label={this.searchText}
                     button-aria-label={this.searchText}
                   ></ecl-search-form>
-                </div> : ''
+                </div> : <slot name="search"></slot>
               }
               </div>
             </div>

@@ -1,4 +1,5 @@
-import { Component, h, Prop, Element, getAssetPath } from '@stencil/core';
+import { Component, h, Prop, Element } from '@stencil/core';
+import getAssetPath from "../../utils/assetPath";
 declare const ECL: any;
 
 @Component({
@@ -15,7 +16,6 @@ export class EclInpageNavigation {
   @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
-  @Prop() withUtils: boolean = false;
   @Prop() eclScript: boolean = false;
   @Prop() inpageTitle: string;
   @Prop() inpageId: string;
@@ -25,17 +25,6 @@ export class EclInpageNavigation {
       `ecl-inpage-navigation`,
       this.styleClass
     ].join(' ');
-  }
-
-  componentWillRender() {
-    if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
-      const style = document.createElement('link');
-      style.rel = 'stylesheet';
-      style.type = 'text/css';
-      style.id = 'ecl-utils-styles';
-      style.href = getAssetPath(`./build/styles/ecl-utilities-${this.theme}.css`);
-      document.body.appendChild(style);
-    }
   }
 
   componentDidRender() {

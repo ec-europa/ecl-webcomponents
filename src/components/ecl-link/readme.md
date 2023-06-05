@@ -34,6 +34,7 @@
  - [ecl-gallery](../ecl-gallery)
  - [ecl-hero-banner](../ecl-hero-banner)
  - [ecl-inpage-navigation-item](../ecl-inpage-navigation)
+ - [ecl-list-illustration-item](../ecl-list-illustration)
  - [ecl-news-ticker-item](../ecl-news-ticker)
  - [ecl-page-banner](../ecl-page-banner)
  - [ecl-pagination-item](../ecl-pagination)
@@ -61,6 +62,7 @@ graph TD;
   ecl-gallery --> ecl-link
   ecl-hero-banner --> ecl-link
   ecl-inpage-navigation-item --> ecl-link
+  ecl-list-illustration-item --> ecl-link
   ecl-news-ticker-item --> ecl-link
   ecl-page-banner --> ecl-link
   ecl-pagination-item --> ecl-link

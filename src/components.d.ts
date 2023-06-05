@@ -11,7 +11,6 @@ export namespace Components {
         "eclScript": boolean;
         "styleClass": string;
         "theme": string;
-        "withUtils": boolean;
     }
     interface EclAccordionItem {
         "expanded": boolean;
@@ -122,8 +121,6 @@ export namespace Components {
         "theme": string;
     }
     interface EclContentItem {
-        "image": string;
-        "imageAlt": string;
         "imagePosition": string;
         "imageSize": string;
         "styleClass": string;
@@ -143,10 +140,8 @@ export namespace Components {
         "dateFormat": string;
         "defaultValue": string;
         "disabled": boolean;
-        "hasChanged": boolean;
         "inputId": string;
         "invalid": boolean;
-        "isFocused": boolean;
         "name": string;
         "placeholder": string;
         "required": boolean;
@@ -177,14 +172,12 @@ export namespace Components {
         "labelExpanded": string;
         "styleClass": string;
         "theme": string;
-        "withUtils": boolean;
     }
     interface EclFactFigures {
         "columns": number;
         "displayIcons": boolean;
         "styleClass": string;
         "theme": string;
-        "withUtils": boolean;
     }
     interface EclFactFiguresItem {
         "icon": string;
@@ -204,7 +197,6 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
         "variant": string;
-        "withUtils": boolean;
     }
     interface EclFile {
         "ariaLabel": string;
@@ -260,7 +252,6 @@ export namespace Components {
         "theme": string;
         "type": string;
         "width": string;
-        "withUtils": boolean;
     }
     interface EclFooter {
         "description": string;
@@ -359,7 +350,6 @@ export namespace Components {
         "inpageTitle": string;
         "styleClass": string;
         "theme": string;
-        "withUtils": boolean;
     }
     interface EclInpageNavigationItem {
         "path": string;
@@ -420,6 +410,7 @@ export namespace Components {
         "icon": string;
         "image": string;
         "imageAlt": string;
+        "itemLink": string;
         "itemTitle": string;
         "squareImage": boolean;
         "styleClass": string;
@@ -431,13 +422,13 @@ export namespace Components {
         "eclScript": boolean;
         "embeddedMedia": boolean;
         "fullWidth": boolean;
+        "hasCaption": boolean;
         "image": string;
         "ratio": string;
         "sources": string;
         "styleClass": string;
         "theme": string;
         "tracks": string;
-        "withUtils": boolean;
     }
     interface EclMenu {
         "backLabel": string;
@@ -714,6 +705,15 @@ export namespace Components {
         "theme": string;
         "toBeRemoved": boolean;
         "variant": string;
+    }
+    interface EclText {
+        "isBold": boolean;
+        "itemId": string;
+        "level": 1 | 2 | 3 | 4 | 5 | undefined;
+        "size": 'l' | 'm' | 's' | 'xs' | undefined;
+        "styleClass": string;
+        "tag": 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
+        "theme": string;
     }
     interface EclTextarea {
         "disabled": boolean;
@@ -1193,6 +1193,12 @@ declare global {
         prototype: HTMLEclTagElement;
         new (): HTMLEclTagElement;
     };
+    interface HTMLEclTextElement extends Components.EclText, HTMLStencilElement {
+    }
+    var HTMLEclTextElement: {
+        prototype: HTMLEclTextElement;
+        new (): HTMLEclTextElement;
+    };
     interface HTMLEclTextareaElement extends Components.EclTextarea, HTMLStencilElement {
     }
     var HTMLEclTextareaElement: {
@@ -1283,6 +1289,7 @@ declare global {
         "ecl-spacing": HTMLEclSpacingElement;
         "ecl-spinner": HTMLEclSpinnerElement;
         "ecl-tag": HTMLEclTagElement;
+        "ecl-text": HTMLEclTextElement;
         "ecl-textarea": HTMLEclTextareaElement;
         "ecl-timeline": HTMLEclTimelineElement;
         "ecl-timeline-item": HTMLEclTimelineItemElement;
@@ -1294,7 +1301,6 @@ declare namespace LocalJSX {
         "eclScript"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
-        "withUtils"?: boolean;
     }
     interface EclAccordionItem {
         "expanded"?: boolean;
@@ -1405,8 +1411,6 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclContentItem {
-        "image"?: string;
-        "imageAlt"?: string;
         "imagePosition"?: string;
         "imageSize"?: string;
         "styleClass"?: string;
@@ -1426,14 +1430,12 @@ declare namespace LocalJSX {
         "dateFormat"?: string;
         "defaultValue"?: string;
         "disabled"?: boolean;
-        "hasChanged"?: boolean;
         "inputId"?: string;
         "invalid"?: boolean;
-        "isFocused"?: boolean;
         "name"?: string;
-        "onInputBlur"?: (event: EclDatepickerCustomEvent<FocusEvent>) => void;
-        "onInputChange"?: (event: EclDatepickerCustomEvent<any>) => void;
-        "onInputFocus"?: (event: EclDatepickerCustomEvent<FocusEvent>) => void;
+        "onBlurred"?: (event: EclDatepickerCustomEvent<void>) => void;
+        "onFocused"?: (event: EclDatepickerCustomEvent<void>) => void;
+        "onValueChanged"?: (event: EclDatepickerCustomEvent<string>) => void;
         "placeholder"?: string;
         "required"?: boolean;
         "styleClass"?: string;
@@ -1463,14 +1465,12 @@ declare namespace LocalJSX {
         "labelExpanded"?: string;
         "styleClass"?: string;
         "theme"?: string;
-        "withUtils"?: boolean;
     }
     interface EclFactFigures {
         "columns"?: number;
         "displayIcons"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
-        "withUtils"?: boolean;
     }
     interface EclFactFiguresItem {
         "icon"?: string;
@@ -1490,7 +1490,6 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "variant"?: string;
-        "withUtils"?: boolean;
     }
     interface EclFile {
         "ariaLabel"?: string;
@@ -1546,7 +1545,6 @@ declare namespace LocalJSX {
         "theme"?: string;
         "type"?: string;
         "width"?: string;
-        "withUtils"?: boolean;
     }
     interface EclFooter {
         "description"?: string;
@@ -1645,7 +1643,6 @@ declare namespace LocalJSX {
         "inpageTitle"?: string;
         "styleClass"?: string;
         "theme"?: string;
-        "withUtils"?: boolean;
     }
     interface EclInpageNavigationItem {
         "path"?: string;
@@ -1709,6 +1706,7 @@ declare namespace LocalJSX {
         "icon"?: string;
         "image"?: string;
         "imageAlt"?: string;
+        "itemLink"?: string;
         "itemTitle"?: string;
         "squareImage"?: boolean;
         "styleClass"?: string;
@@ -1720,13 +1718,13 @@ declare namespace LocalJSX {
         "eclScript"?: boolean;
         "embeddedMedia"?: boolean;
         "fullWidth"?: boolean;
+        "hasCaption"?: boolean;
         "image"?: string;
         "ratio"?: string;
         "sources"?: string;
         "styleClass"?: string;
         "theme"?: string;
         "tracks"?: string;
-        "withUtils"?: boolean;
     }
     interface EclMenu {
         "backLabel"?: string;
@@ -2013,6 +2011,15 @@ declare namespace LocalJSX {
         "toBeRemoved"?: boolean;
         "variant"?: string;
     }
+    interface EclText {
+        "isBold"?: boolean;
+        "itemId"?: string;
+        "level"?: 1 | 2 | 3 | 4 | 5 | undefined;
+        "size"?: 'l' | 'm' | 's' | 'xs' | undefined;
+        "styleClass"?: string;
+        "tag"?: 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
+        "theme"?: string;
+    }
     interface EclTextarea {
         "disabled"?: boolean;
         "hasChanged"?: boolean;
@@ -2114,6 +2121,7 @@ declare namespace LocalJSX {
         "ecl-spacing": EclSpacing;
         "ecl-spinner": EclSpinner;
         "ecl-tag": EclTag;
+        "ecl-text": EclText;
         "ecl-textarea": EclTextarea;
         "ecl-timeline": EclTimeline;
         "ecl-timeline-item": EclTimelineItem;
@@ -2194,6 +2202,7 @@ declare module "@stencil/core" {
             "ecl-spacing": LocalJSX.EclSpacing & JSXBase.HTMLAttributes<HTMLEclSpacingElement>;
             "ecl-spinner": LocalJSX.EclSpinner & JSXBase.HTMLAttributes<HTMLEclSpinnerElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
+            "ecl-text": LocalJSX.EclText & JSXBase.HTMLAttributes<HTMLEclTextElement>;
             "ecl-textarea": LocalJSX.EclTextarea & JSXBase.HTMLAttributes<HTMLEclTextareaElement>;
             "ecl-timeline": LocalJSX.EclTimeline & JSXBase.HTMLAttributes<HTMLEclTimelineElement>;
             "ecl-timeline-item": LocalJSX.EclTimelineItem & JSXBase.HTMLAttributes<HTMLEclTimelineItemElement>;

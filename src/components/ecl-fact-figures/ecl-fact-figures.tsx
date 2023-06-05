@@ -1,4 +1,4 @@
-import { Component, h, Prop, getAssetPath} from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'ecl-fact-figures',
@@ -15,7 +15,6 @@ export class EclFactFigures {
   @Prop() styleClass: string;
   @Prop() columns: number = 3;
   @Prop() displayIcons: boolean = true;
-  @Prop() withUtils: boolean = false;
 
   getClass(): string {
     return [
@@ -23,17 +22,6 @@ export class EclFactFigures {
       `ecl-fact-figures--col-${this.columns}`,
       this.styleClass
     ].join(' ');
-  }
-
-  componentWillLoad() {
-    if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
-      const style = document.createElement('link');
-      style.rel = 'stylesheet';
-      style.type = 'text/css';
-      style.id = 'ecl-utils-styles';
-      style.href = getAssetPath(`./build/styles/ecl-utilities-${this.theme}.css`);
-      document.body.appendChild(style);
-    }
   }
 
   render() {

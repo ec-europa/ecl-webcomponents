@@ -2,9 +2,9 @@
   "name": "@ecl/web-components-date-block",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "ECL Date Block",
-  "main": "ecl-tag.tsx",
+  "main": "ecl-date-block.tsx",
   "private": true,
   "scripts": {
     "build:styles": "cross-env NODE_ENV=production ecl-builder styles",
@@ -15,6 +15,7 @@
   "devDependencies": {
     "@ecl/builder": "3.7.1",
     "@ecl/vanilla-component-date-block": "3.7.1",
+    "@ecl/vanilla-utility-screen-reader": "3.7.1",
     "cross-env": "7.0.3"
   },
   "repository": {

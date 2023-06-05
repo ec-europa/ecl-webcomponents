@@ -1,4 +1,5 @@
-import { Component, Prop, h, Element, getAssetPath } from '@stencil/core';
+import { Component, Prop, h, Element } from '@stencil/core';
+import getAssetPath from "../../utils/assetPath";
 declare const ECL: any;
 
 @Component({
@@ -16,7 +17,6 @@ export class EclAccordion {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop() eclScript: boolean = false;
-  @Prop() withUtils: boolean = false;
   @Prop() theme: string = 'ec';
   @Prop() clickedItem: HTMLElement;
 
@@ -40,14 +40,6 @@ export class EclAccordion {
         accordion.init();
       };
       document.body.appendChild(script);
-    }
-    if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
-      const style = document.createElement('link');
-      style.rel = 'stylesheet';
-      style.type = 'text/css';
-      style.id = 'ecl-utils-styles';
-      style.href = getAssetPath(`./build/styles/ecl-utilities-${this.theme}.css`);
-      document.body.appendChild(style);
     }
   }
 

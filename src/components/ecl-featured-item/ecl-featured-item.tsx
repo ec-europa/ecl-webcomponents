@@ -1,4 +1,4 @@
-import { Component, h, Prop, getAssetPath } from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'ecl-featured-item',
@@ -9,6 +9,7 @@ import { Component, h, Prop, getAssetPath } from '@stencil/core';
   shadow: false,
   scoped: true,
 })
+
 export class EclFeaturedItem {
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
@@ -18,7 +19,6 @@ export class EclFeaturedItem {
   @Prop() mediaCaption: string;
   @Prop() position: string = 'left';
   @Prop() eclScript: boolean = false;
-  @Prop() withUtils: boolean = true;
   @Prop() defaultContainerClass = 'ecl-featured-item__container';
 
   getClass(): string {
@@ -27,17 +27,6 @@ export class EclFeaturedItem {
       `ecl-featured-item--${this.variant}`,
       this.styleClass
     ].join(' ');
-  }
-
-  componentWillLoad() {
-    if (this.withUtils && !document.querySelector('#ecl-utils-styles')) {
-      const style = document.createElement('link');
-      style.rel = 'stylesheet';
-      style.type = 'text/css';
-      style.id = 'ecl-utils-styles';
-      style.href = getAssetPath(`./build/styles/ecl-utilities-${this.theme}.css`);
-      document.body.appendChild(style);
-    }
   }
 
   render() {
@@ -52,6 +41,7 @@ export class EclFeaturedItem {
             <ecl-media-container
               styleClass="ecl-featured-item__media_container"
               image={this.image}
+              hasCaption={this.mediaCaption !== ''}
             >
              {this.mediaCaption}
             </ecl-media-container>

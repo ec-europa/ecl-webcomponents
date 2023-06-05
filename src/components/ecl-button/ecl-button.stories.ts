@@ -3,7 +3,8 @@ import iconsAllEc from '@ecl/resources-ec-icons/dist/lists/all.json';
 const getArgs = () => {
   return {
     label: 'Button label',
-    type: 'primary',
+    type: 'button',
+    variant: 'primary',
     icon: '',
     iconPosition: 'after',
     iconTransform: '',
@@ -12,11 +13,17 @@ const getArgs = () => {
 
 const getArgTypes = () => {
   return {
-    type: {
+    variant: {
       name: 'button variant',
       type: { name: 'select' },
       options: ['primary', 'secondary', 'ghost', 'call'],
       description: "Button variant"
+    },
+    type: {
+      name: 'button type',
+      type: { name: 'select' },
+      options: ['button', 'submit'],
+      description: "Button type"
     },
     label: {
       name: 'button label',
@@ -59,6 +66,7 @@ const Template = (args) =>
     type="${args.type}"
     data-ecl-button-icon
     theme="${args.theme}"
+    variant="${args.variant}"
   >
   ${args.icon && args.iconPosition === 'before' ?
     `<ecl-icon 

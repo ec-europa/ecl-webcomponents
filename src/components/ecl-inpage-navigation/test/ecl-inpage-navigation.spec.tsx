@@ -11,7 +11,6 @@ describe('ecl-inpage-navigation', () => {
               inpage-id="inpage-id"
               theme="ec"
               ecl-script
-              with-utils
             >
               <ecl-inpage-navigation-item
                 path="#inline-nav-1"

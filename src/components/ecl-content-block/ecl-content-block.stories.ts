@@ -61,7 +61,7 @@ const Template = (args) =>
     >
       High importance
     </ecl-label>
-    <p slot="description">${args.description}</p>
+    <ecl-text tag="p" slot="description">${args.description}</ecl-tag>
     <ecl-link
       theme="${args.theme}"
       slot="title"

@@ -63,23 +63,5 @@ module.exports = {
         sourceMap: false,
       },
     },
-    {
-      entry: path.resolve(__dirname, 'src/styles/ecl-utilities-ec.scss'),
-      dest: path.resolve(outputFolder, 'styles/ecl-utilities-ec.css'),
-      options: {
-        banner,
-        includePaths,
-        sourceMap: false,
-      },
-    },
-    {
-      entry: path.resolve(__dirname, 'src/styles/ecl-utilities-eu.scss'),
-      dest: path.resolve(outputFolder, 'styles/ecl-utilities-eu.css'),
-      options: {
-        banner,
-        includePaths,
-        sourceMap: false,
-      },
-    },
   ],
 };

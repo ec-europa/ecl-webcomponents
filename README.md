@@ -42,6 +42,13 @@ The scss in src/styles normally "use" the theme (ec/eu) and the vanilla scss fro
 **dev-react** Launches the react consumer app
 **dev-angular** Launches the angular consumer app
 
+### Assets
+
+Due to a bug in stencil.js the getAssetPath() helper it provides has been replaced in ecl-webcomponents and it expects a
+`<meta data-ecl-asset-path="/" />` to be defined in the head or a `__ECL_ASSET_PATH__` variable set on the window object.
+Assets will then be resolved from that path, typically our assets are in build/images/... so defining the data-ecl-asseth-path will
+generate requests at /build/images...
+
 ### Ckeditor plugin
 
 **plugins:dev** Collection of script to fetch the ckeditor5 filesystem from github and install the plugin

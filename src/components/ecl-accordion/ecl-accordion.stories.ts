@@ -5,7 +5,6 @@ export default {
 const Template = (args) => 
   `<ecl-accordion 
     theme="${args.theme}"
-    with-utils
     ecl-script
   >
     <ecl-accordion-item
@@ -32,7 +31,7 @@ const Template = (args) =>
       label="Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy"
       theme="${args.theme}"
     >
-      In the modern global economy trade is essential for growth, <a class="ecl-u-mh-2xl ecl-u-type-color-blue-n" href="https://ec.europa.eu/">jobs</a> and competiveness, and the EU is committed to
+      In the modern global economy trade is essential for growth, <ecl-link path="https://ec.europa.eu/">jobs</ecl-link> and competiveness, and the EU is committed to
       maintaining an open and rules-based trading system. With the rising threat of protectionism and weakened
       commitment of large players to global trade governance, the EU must take the lead.
     </ecl-accordion-item>
@@ -40,6 +39,3 @@ const Template = (args) =>
 
 export const Accordion = Template.bind({});
 Accordion.storyName = 'default';
-Accordion.args = {
-  withUtils: true,
-}

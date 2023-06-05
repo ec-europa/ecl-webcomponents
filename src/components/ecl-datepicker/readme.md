@@ -12,10 +12,8 @@
 | `dateFormat`   | `date-format`   |             | `string`  | `'DD-MM-YYYY'` |
 | `defaultValue` | `default-value` |             | `string`  | `undefined`    |
 | `disabled`     | `disabled`      |             | `boolean` | `false`        |
-| `hasChanged`   | `has-changed`   |             | `boolean` | `false`        |
 | `inputId`      | `input-id`      |             | `string`  | `undefined`    |
 | `invalid`      | `invalid`       |             | `boolean` | `false`        |
-| `isFocused`    | `is-focused`    |             | `boolean` | `false`        |
 | `name`         | `name`          |             | `string`  | `undefined`    |
 | `placeholder`  | `placeholder`   |             | `string`  | `'DD-MM-YYYY'` |
 | `required`     | `required`      |             | `boolean` | `false`        |
@@ -27,11 +25,11 @@
 
 ## Events
 
-| Event         | Description | Type                      |
-| ------------- | ----------- | ------------------------- |
-| `inputBlur`   |             | `CustomEvent<FocusEvent>` |
-| `inputChange` |             | `CustomEvent<any>`        |
-| `inputFocus`  |             | `CustomEvent<FocusEvent>` |
+| Event          | Description | Type                  |
+| -------------- | ----------- | --------------------- |
+| `blurred`      |             | `CustomEvent<void>`   |
+| `focused`      |             | `CustomEvent<void>`   |
+| `valueChanged` |             | `CustomEvent<string>` |
 
 
 ## Dependencies

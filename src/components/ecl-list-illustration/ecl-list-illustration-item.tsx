@@ -9,6 +9,7 @@ import { Component, h, Prop} from '@stencil/core';
 export class EclListIllustrationItem {
   @Prop() theme: string = 'ec';
   @Prop() itemTitle: string;
+  @Prop() itemLink: string;
   @Prop() image: string;
   @Prop() icon: string;
   @Prop() imageAlt: string;
@@ -70,11 +71,15 @@ export class EclListIllustrationItem {
               style-class={`ecl-list-illustration__icon sc-ecl-list-illustration-${this.theme}`}
             ></ecl-icon> : '' 
           }
-          { this.itemTitle ?
+          { this.itemTitle && (
             <div class={`ecl-list-illustration__title sc-ecl-list-illustration-${this.theme}`}>
-              {this.itemTitle}
-            </div> : ''
-          }
+              {this.itemLink ? (
+                <ecl-link variant="standalone" path={this.itemLink}>{this.itemTitle}</ecl-link>
+              ) : (
+                this.itemTitle
+              )}
+            </div>
+          )}
           </div>
           <div class={`ecl-list-illustration__description sc-ecl-list-illustration-${this.theme}`}>
             <slot></slot>

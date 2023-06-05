@@ -40,7 +40,6 @@ describe('ecl-media-container', () => {
               ratio="16-9"
               theme="ec"
               ecl-script
-              with-utils
               data-ecl-media-container
             >
               caption for the media container

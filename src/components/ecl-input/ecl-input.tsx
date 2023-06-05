@@ -102,8 +102,8 @@ export class EclInput {
   }
 
   handleChange(event) {
-    this.inputChange.emit(event);
-    this.hasChanged = true;
+    const value = (event.target as HTMLInputElement).value;
+    this.inputChange.emit(value);
   }
 
   handleBlur(event) {
