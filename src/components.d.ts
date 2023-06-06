@@ -57,6 +57,7 @@ export namespace Components {
         "variant": string;
     }
     interface EclButton {
+        "itemId": string;
         "styleClass": string;
         "theme": string;
         "type": string;
@@ -459,6 +460,18 @@ export namespace Components {
         "theme": string;
         "variant": string;
         "withClose": boolean;
+    }
+    interface EclModal {
+        "closeLabel": string;
+        "eclScript": boolean;
+        "itemId": string;
+        "styleClass": string;
+        "theme": string;
+        "toggleId": string;
+        "variant": string;
+        "withBody": boolean;
+        "withFooter": boolean;
+        "withHeader": boolean;
     }
     interface EclNavigationList {
         "column": number;
@@ -1049,6 +1062,12 @@ declare global {
         prototype: HTMLEclMessageElement;
         new (): HTMLEclMessageElement;
     };
+    interface HTMLEclModalElement extends Components.EclModal, HTMLStencilElement {
+    }
+    var HTMLEclModalElement: {
+        prototype: HTMLEclModalElement;
+        new (): HTMLEclModalElement;
+    };
     interface HTMLEclNavigationListElement extends Components.EclNavigationList, HTMLStencilElement {
     }
     var HTMLEclNavigationListElement: {
@@ -1265,6 +1284,7 @@ declare global {
         "ecl-menu": HTMLEclMenuElement;
         "ecl-menu-item": HTMLEclMenuItemElement;
         "ecl-message": HTMLEclMessageElement;
+        "ecl-modal": HTMLEclModalElement;
         "ecl-navigation-list": HTMLEclNavigationListElement;
         "ecl-navigation-list-item": HTMLEclNavigationListItemElement;
         "ecl-news-ticker": HTMLEclNewsTickerElement;
@@ -1347,6 +1367,7 @@ declare namespace LocalJSX {
         "variant"?: string;
     }
     interface EclButton {
+        "itemId"?: string;
         "styleClass"?: string;
         "theme"?: string;
         "type"?: string;
@@ -1756,6 +1777,18 @@ declare namespace LocalJSX {
         "variant"?: string;
         "withClose"?: boolean;
     }
+    interface EclModal {
+        "closeLabel"?: string;
+        "eclScript"?: boolean;
+        "itemId"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "toggleId"?: string;
+        "variant"?: string;
+        "withBody"?: boolean;
+        "withFooter"?: boolean;
+        "withHeader"?: boolean;
+    }
     interface EclNavigationList {
         "column"?: number;
         "styleClass"?: string;
@@ -2097,6 +2130,7 @@ declare namespace LocalJSX {
         "ecl-menu": EclMenu;
         "ecl-menu-item": EclMenuItem;
         "ecl-message": EclMessage;
+        "ecl-modal": EclModal;
         "ecl-navigation-list": EclNavigationList;
         "ecl-navigation-list-item": EclNavigationListItem;
         "ecl-news-ticker": EclNewsTicker;
@@ -2178,6 +2212,7 @@ declare module "@stencil/core" {
             "ecl-menu": LocalJSX.EclMenu & JSXBase.HTMLAttributes<HTMLEclMenuElement>;
             "ecl-menu-item": LocalJSX.EclMenuItem & JSXBase.HTMLAttributes<HTMLEclMenuItemElement>;
             "ecl-message": LocalJSX.EclMessage & JSXBase.HTMLAttributes<HTMLEclMessageElement>;
+            "ecl-modal": LocalJSX.EclModal & JSXBase.HTMLAttributes<HTMLEclModalElement>;
             "ecl-navigation-list": LocalJSX.EclNavigationList & JSXBase.HTMLAttributes<HTMLEclNavigationListElement>;
             "ecl-navigation-list-item": LocalJSX.EclNavigationListItem & JSXBase.HTMLAttributes<HTMLEclNavigationListItemElement>;
             "ecl-news-ticker": LocalJSX.EclNewsTicker & JSXBase.HTMLAttributes<HTMLEclNewsTickerElement>;

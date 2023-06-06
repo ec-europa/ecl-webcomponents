@@ -36,3 +36,4 @@ cp -r ./src/components/ecl-site-header/build ./build
 cp -r ./src/components/ecl-gallery/build ./build
 cp -r ./src/components/ecl-range/build ./build
 cp -r ./src/components/ecl-menu/build ./build
+cp -r ./src/components/ecl-modal/build ./build

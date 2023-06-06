@@ -16,6 +16,7 @@ export class EclButton {
   @Prop() type: string = 'submit';
   @Prop() variant: string = 'primary';
   @Prop() theme: string = 'ec';
+  @Prop() itemId: string;
 
   componentDidRender() {
     const dataAttrs = Object.keys(this.el.dataset);
@@ -49,7 +50,7 @@ export class EclButton {
       <button
         class={this.getClass()}
         type={this.type}
-      >
+        {...(this.itemId && { id: this.itemId })}>
         <span class="ecl-button__container">
           <slot name="icon-before"></slot>
           <span class="ecl-button__label">

@@ -7,6 +7,7 @@
 
 | Property     | Attribute     | Description | Type     | Default     |
 | ------------ | ------------- | ----------- | -------- | ----------- |
+| `itemId`     | `item-id`     |             | `string` | `undefined` |
 | `styleClass` | `style-class` |             | `string` | `''`        |
 | `theme`      | `theme`       |             | `string` | `'ec'`      |
 | `type`       | `type`        |             | `string` | `'submit'`  |
@@ -23,6 +24,7 @@
  - [ecl-gallery](../ecl-gallery)
  - [ecl-menu-item](../ecl-menu)
  - [ecl-message](../ecl-message)
+ - [ecl-modal](../ecl-modal)
  - [ecl-news-ticker](../ecl-news-ticker)
  - [ecl-search-form](../ecl-search-form)
  - [ecl-timeline-item](../ecl-timeline)
@@ -36,6 +38,7 @@ graph TD;
   ecl-gallery --> ecl-button
   ecl-menu-item --> ecl-button
   ecl-message --> ecl-button
+  ecl-modal --> ecl-button
   ecl-news-ticker --> ecl-button
   ecl-search-form --> ecl-button
   ecl-timeline-item --> ecl-button

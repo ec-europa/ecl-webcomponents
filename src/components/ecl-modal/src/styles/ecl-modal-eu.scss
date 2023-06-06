@@ -1,0 +1,13 @@
+@use '@ecl/theme-eu';
+
+@use '@ecl/vanilla-layout-grid/grid';
+@use '@ecl/vanilla-component-modal/modal-eu';
+
+.ecl-modal__icon,
+.ecl-modal__close * {
+  vertical-align: middle;
+}
+
+.ecl-modal__close * {
+  margin-inline-start: 0.5rem;
+}
