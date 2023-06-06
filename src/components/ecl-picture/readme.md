@@ -16,6 +16,19 @@
 | `theme`      | `theme`       |             | `string` | `'ec'`      |
 
 
+## Dependencies
+
+### Used by
+
+ - [ecl-list-illustration-item](../ecl-list-illustration)
+
+### Graph
+```mermaid
+graph TD;
+  ecl-list-illustration-item --> ecl-picture
+  style ecl-picture fill:#f9f,stroke:#333,stroke-width:4px
+```
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*

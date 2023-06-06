@@ -5,7 +5,7 @@ exports[`ecl-list-illustration renders 1`] = `
   <!---->
   <div class="ecl-list-illustration ecl-list-illustration--col-1 ecl-list-illustration--zebra">
     <div class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
-      <div class="ecl-list-illustration__image sc-ecl-list-illustration-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imgclass="sc-ecl-list-illustration-ec ecl-list-illustration__image" role="img" styleclass="ecl-list-illustration__picture sc-ecl-list-illustration-ec"></ecl-picture>
       <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
         <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
           <div class="ecl-list-illustration__title sc-ecl-list-illustration-ec">
@@ -18,7 +18,7 @@ exports[`ecl-list-illustration renders 1`] = `
       </div>
     </div>
     <div class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
-      <div class="ecl-list-illustration__image sc-ecl-list-illustration-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imgclass="sc-ecl-list-illustration-ec ecl-list-illustration__image" role="img" styleclass="ecl-list-illustration__picture sc-ecl-list-illustration-ec"></ecl-picture>
       <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
         <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
           <div class="ecl-list-illustration__title sc-ecl-list-illustration-ec">
@@ -31,7 +31,7 @@ exports[`ecl-list-illustration renders 1`] = `
       </div>
     </div>
     <div class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
-      <div class="ecl-list-illustration__image sc-ecl-list-illustration-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imgclass="sc-ecl-list-illustration-ec ecl-list-illustration__image" role="img" styleclass="ecl-list-illustration__picture sc-ecl-list-illustration-ec"></ecl-picture>
       <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
         <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
           <div class="ecl-list-illustration__title sc-ecl-list-illustration-ec">
@@ -44,7 +44,7 @@ exports[`ecl-list-illustration renders 1`] = `
       </div>
     </div>
     <div class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
-      <div class="ecl-list-illustration__image sc-ecl-list-illustration-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imgclass="sc-ecl-list-illustration-ec ecl-list-illustration__image" role="img" styleclass="ecl-list-illustration__picture sc-ecl-list-illustration-ec"></ecl-picture>
       <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
         <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
           <div class="ecl-list-illustration__title sc-ecl-list-illustration-ec">
@@ -57,7 +57,7 @@ exports[`ecl-list-illustration renders 1`] = `
       </div>
     </div>
     <div class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
-      <div class="ecl-list-illustration__image sc-ecl-list-illustration-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imgclass="sc-ecl-list-illustration-ec ecl-list-illustration__image" role="img" styleclass="ecl-list-illustration__picture sc-ecl-list-illustration-ec"></ecl-picture>
       <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
         <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
           <div class="ecl-list-illustration__title sc-ecl-list-illustration-ec">

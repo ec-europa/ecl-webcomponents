@@ -17,6 +17,7 @@ export class EclListIllustration {
   @Prop() zebra: boolean = false;
   @Prop() column: number = 1;
   @Prop() styleClass: string;
+  @Prop() centered: boolean = false;
 
   getClass(): string {
     const styleClasses = [
@@ -27,6 +28,10 @@ export class EclListIllustration {
 
     if (this.zebra) {
       styleClasses.push('ecl-list-illustration--zebra');
+    }
+
+    if (this.centered) {
+      styleClasses.push('ecl-list-illustration--centered');
     }
 
     return styleClasses.join(' ');

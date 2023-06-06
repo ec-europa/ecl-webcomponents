@@ -15,7 +15,8 @@ export class EclListIllustrationItem {
   @Prop() imageAlt: string;
   @Prop() squareImage: boolean = false;
   @Prop() styleClass: string;
-
+  @Prop() mediaSize: string = 'm';
+  @Prop() itemValue: string;
 
   getClass(): string {
     const styleClasses = [
@@ -35,6 +36,7 @@ export class EclListIllustrationItem {
 
     if (this.squareImage) {
       imgClasses.push('ecl-list-illustration__image--square');
+      imgClasses.push(`ecl-list-illustration__image--${this.mediaSize}`);
     }
 
     return imgClasses.join(' ');
@@ -52,24 +54,35 @@ export class EclListIllustrationItem {
     return attrs;
   }
 
+  getIconSize() {
+    return this.mediaSize === 'l' ? '2xl' : 'l';
+  }
+
   render() {
     return (
       <div class={this.getClass()}>
       { this.image ?
-        <div
-          class={this.getImgClass()}
-          style={{ backgroundImage: "url(" + this.image + ")"}}
+        <ecl-picture
+          styleClass={`ecl-list-illustration__picture sc-ecl-list-illustration-${this.theme}`}
+          imgClass={this.getImgClass()}
+          image={this.image}
+          imageAlt={this.imageAlt}
           {...this.getImgAttr()}
-        ></div> : ''
+        >
+          <slot name="sources"></slot>
+        </ecl-picture> : ''
       }
         <div class={`ecl-list-illustration__detail sc-ecl-list-illustration-${this.theme}`}>
           <div class={`ecl-list-illustration__title-container sc-ecl-list-illustration-${this.theme}`}>
           { this.icon ?
             <ecl-icon
               icon={this.icon}
-              size="xl"
+              size={this.getIconSize()}
               style-class={`ecl-list-illustration__icon sc-ecl-list-illustration-${this.theme}`}
             ></ecl-icon> : '' 
+          }
+          { this.itemValue ?
+            <div class={`ecl-list-illustration__value sc-ecl-list-illustration-${this.theme}`}>{this.itemValue}</div> : ''
           }
           { this.itemTitle && (
             <div class={`ecl-list-illustration__title sc-ecl-list-illustration-${this.theme}`}>

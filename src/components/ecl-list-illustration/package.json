@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@ecl/builder": "3.7.1",
-    "@ecl/vanilla-component-list-illustration": "3.7.1",
+    "@ecl/vanilla-component-list-illustration": "3.8.2",
     "cross-env": "7.0.3"
   },
   "repository": {

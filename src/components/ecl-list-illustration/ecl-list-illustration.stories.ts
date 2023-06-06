@@ -1,6 +1,9 @@
 const getArgs = () => ({
   column: 1,
-  zebra: true,
+  zebra: false,
+  squareImage: false,
+  mediaSize: 'm',
+  centered: false,
 });
 
 const getArgTypes = () => ({
@@ -11,6 +14,22 @@ const getArgTypes = () => ({
   zebra: {
     control: { type: 'boolean' },
     description: 'Zebra styling',
+  },
+  squareImage: {
+    name: 'squared images',
+    control: { type: 'boolean' },
+    description: 'Squared images',
+  },
+  mediaSize: {
+    name: 'size of the media (for squared images only)',
+    control: { type: 'select' },
+    options: ['s', 'm', 'l'],
+    description: 'Size of the squared images',
+  },
+  centered: {
+    name: 'centered',
+    control: { type: 'boolean' },
+    description: 'Centered content in multiple columns layout',
   },
 });
 
@@ -23,11 +42,15 @@ const Template = (args) =>
     theme="${args.theme}"
     zebra=${args.zebra}
     column="${args.column}"
+    centered=${args.centered}
   >
     <ecl-list-illustration-item
       theme="${args.theme}"
       image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
       item-title="List with illustration item 1"
+      media-size="${args.mediaSize}"
+      square-image=${args.squareImage}
+      item-value="3.2 million"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
       Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
@@ -37,6 +60,9 @@ const Template = (args) =>
       theme="${args.theme}"
       image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
       item-title="List with illustration item 2"
+      media-size="${args.mediaSize}"
+      square-image=${args.squareImage}
+      item-value="3.2 million"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
       Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
@@ -46,6 +72,9 @@ const Template = (args) =>
       theme="${args.theme}"
       image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
       item-title="List with illustration item 3"
+      media-size="${args.mediaSize}"
+      square-image=${args.squareImage}
+      item-value="3.2 million"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
       Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
@@ -55,6 +84,9 @@ const Template = (args) =>
       theme="${args.theme}"
       image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
       item-title="List with illustration item 4"
+      media-size="${args.mediaSize}"
+      square-image=${args.squareImage}
+      item-value="3.2 million"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
       Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
@@ -65,6 +97,9 @@ const Template = (args) =>
       image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
       item-title="List with illustration item 5"
       item-link="/example"
+      media-size="${args.mediaSize}"
+      square-image=${args.squareImage}
+      item-value="3.2 million"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
       Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,

@@ -401,6 +401,7 @@ export namespace Components {
         "variant": string;
     }
     interface EclListIllustration {
+        "centered": boolean;
         "column": number;
         "styleClass": string;
         "theme": string;
@@ -413,6 +414,8 @@ export namespace Components {
         "imageAlt": string;
         "itemLink": string;
         "itemTitle": string;
+        "itemValue": string;
+        "mediaSize": string;
         "squareImage": boolean;
         "styleClass": string;
         "theme": string;
@@ -1717,6 +1720,7 @@ declare namespace LocalJSX {
         "variant"?: string;
     }
     interface EclListIllustration {
+        "centered"?: boolean;
         "column"?: number;
         "styleClass"?: string;
         "theme"?: string;
@@ -1729,6 +1733,8 @@ declare namespace LocalJSX {
         "imageAlt"?: string;
         "itemLink"?: string;
         "itemTitle"?: string;
+        "itemValue"?: string;
+        "mediaSize"?: string;
         "squareImage"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
