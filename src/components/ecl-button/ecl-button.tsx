@@ -16,6 +16,7 @@ export class EclButton {
   @Prop() type: string = 'submit';
   @Prop() variant: string = 'primary';
   @Prop() theme: string = 'ec';
+  @Prop() hideLabel: boolean = false;
   @Prop() itemId: string;
 
   componentDidRender() {
@@ -23,7 +24,12 @@ export class EclButton {
     if (dataAttrs) {
       dataAttrs.forEach((attr) => {
         const button = this.el.firstElementChild as HTMLElement;
-        button.dataset[attr] = '';
+        const attrValue = this.el.dataset[attr];
+        if (attrValue === '' || attrValue === attr) {
+          button.dataset[attr] = attr; // Booleans
+        } else {
+          button.dataset[attr] = attrValue;
+        }
         delete this.el.dataset[attr];
       });
     }
@@ -53,9 +59,14 @@ export class EclButton {
         {...(this.itemId && { id: this.itemId })}>
         <span class="ecl-button__container">
           <slot name="icon-before"></slot>
+        { !this.hideLabel ?
           <span class="ecl-button__label">
             <slot></slot>
+          </span> : 
+          <span class="ecl-u-sr-only" data-ecl-label>
+            <slot></slot>
           </span>
+        }
           <slot name="icon-after"></slot>
         </span>
       </button>

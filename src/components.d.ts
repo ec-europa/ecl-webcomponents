@@ -57,6 +57,7 @@ export namespace Components {
         "variant": string;
     }
     interface EclButton {
+        "hideLabel": boolean;
         "itemId": string;
         "styleClass": string;
         "theme": string;
@@ -290,10 +291,13 @@ export namespace Components {
         "counterLabel": string;
         "counterSeparator": string;
         "description": string;
+        "disableOverlay": boolean;
         "downloadLabel": string;
         "eclScript": boolean;
+        "expandable": boolean;
         "footerLinkLabel": string;
         "footerLinkPath": string;
+        "fullWidth": boolean;
         "meta": string;
         "nextLabel": string;
         "prevLabel": string;
@@ -301,7 +305,9 @@ export namespace Components {
         "slidesNumber": number;
         "styleClass": string;
         "theme": string;
+        "viewAllExpandedLabel": string;
         "viewAllLabel": string;
+        "visibleItems": number;
     }
     interface EclGalleryItem {
         "icon": string;
@@ -1370,6 +1376,7 @@ declare namespace LocalJSX {
         "variant"?: string;
     }
     interface EclButton {
+        "hideLabel"?: boolean;
         "itemId"?: string;
         "styleClass"?: string;
         "theme"?: string;
@@ -1606,10 +1613,13 @@ declare namespace LocalJSX {
         "counterLabel"?: string;
         "counterSeparator"?: string;
         "description"?: string;
+        "disableOverlay"?: boolean;
         "downloadLabel"?: string;
         "eclScript"?: boolean;
+        "expandable"?: boolean;
         "footerLinkLabel"?: string;
         "footerLinkPath"?: string;
+        "fullWidth"?: boolean;
         "meta"?: string;
         "nextLabel"?: string;
         "prevLabel"?: string;
@@ -1617,7 +1627,9 @@ declare namespace LocalJSX {
         "slidesNumber"?: number;
         "styleClass"?: string;
         "theme"?: string;
+        "viewAllExpandedLabel"?: string;
         "viewAllLabel"?: string;
+        "visibleItems"?: number;
     }
     interface EclGalleryItem {
         "icon"?: string;

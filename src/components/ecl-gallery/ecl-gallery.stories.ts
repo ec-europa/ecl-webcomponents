@@ -7,13 +7,16 @@ const Template = (args) =>
   theme="${args.theme}"
   ecl-script
   counter-label="Media files in this gallery"
-  view-all-label="View all"
+  view-all-label="See all"
+  view-all-expanded-label="Back"
   counter-separator="of"
   next-label="Next"
   prev-label="Previous"
   close-label="Close"
   download-label="Download"
   share-label="Share"
+  footer-link-path="/example"
+  footer-link-label="further media items"
 >
   <ecl-gallery-item
     theme="${args.theme}"

@@ -3,12 +3,12 @@
 exports[`ecl-gallery renders 1`] = `
 <ecl-gallery close-label="Close" counter-label="Media files in this gallery" counter-separator="of" download-label="Download" ecl-script="" next-label="Next" prev-label="Previous" share-label="Share" theme="ec" view-all-label="View all">
   <!---->
-  <section class="ecl-gallery" data-ecl-gallery>
+  <section class="ecl-gallery" data-ecl-gallery data-ecl-gallery-visible-items="8">
     <ul class="ecl-gallery__list">
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <img alt="Image 1" class="ecl-gallery__image sc-ecl-gallery-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" image-alt="Image 1" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               The EU in brief, institutions and bodies, countries, symbols, history, facts and figures
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -21,12 +21,14 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-embed-src="https://www.youtube.com/embed/fgi-GSCB6ho" href="https://www.youtube.com/embed/fgi-GSCB6ho">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <img alt="New digital strategy" class="ecl-gallery__image sc-ecl-gallery-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-external-video.jpg">
-            <ecl-icon style-class="ecl-gallery__image-icon sc-ecl-gallery-ec">
-              <svg class="ecl-gallery__image-icon ecl-icon ecl-icon--l sc-ecl-gallery-ec">
-                <use xlink:href="/build/images/ec/icons.svg#video"></use>
-              </svg>
-            </ecl-icon>
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-external-video.jpg" image-alt="New digital strategy" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
+            <div class="ecl-gallery__item-icon-wrapper sc-ecl-gallery-ec">
+              <ecl-icon style-class="ecl-gallery__item-icon sc-ecl-gallery-ec">
+                <svg class="ecl-gallery__item-icon ecl-icon ecl-icon--inverted ecl-icon--l sc-ecl-gallery-ec">
+                  <use xlink:href="/build/images/ec/icons.svg#play-filled"></use>
+                </svg>
+              </ecl-icon>
+            </div>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               New digital strategy
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -39,7 +41,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <img alt="Image 2" class="ecl-gallery__image sc-ecl-gallery-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" image-alt="Image 2" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               Information on agriculture, business, culture, health, etc.
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -52,7 +54,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <img alt="Image 3" class="ecl-gallery__image sc-ecl-gallery-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg" image-alt="Image 3" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               Living, working, travelling in the EU
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -65,7 +67,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <img alt="Image 3" class="ecl-gallery__image sc-ecl-gallery-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg" image-alt="Image 3" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               Information on taxes, customs, importing and exporting goods, financial support for businesses
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -84,11 +86,13 @@ exports[`ecl-gallery renders 1`] = `
               <track kind="captions" label="English" src="/captions/bunny-en.vtt" srclang="en"></track>
               <track kind="captions" label="français" src="/captions/bunny-fr.vtt" srclang="fr"></track>
             </video>
-            <ecl-icon style-class="ecl-gallery__image-icon sc-ecl-gallery-ec">
-              <svg class="ecl-gallery__image-icon ecl-icon ecl-icon--l sc-ecl-gallery-ec">
-                <use xlink:href="/build/images/ec/icons.svg#video"></use>
-              </svg>
-            </ecl-icon>
+            <div class="ecl-gallery__item-icon-wrapper sc-ecl-gallery-ec">
+              <ecl-icon style-class="ecl-gallery__item-icon sc-ecl-gallery-ec">
+                <svg class="ecl-gallery__item-icon ecl-icon ecl-icon--inverted ecl-icon--l sc-ecl-gallery-ec">
+                  <use xlink:href="/build/images/ec/icons.svg#play-filled"></use>
+                </svg>
+              </ecl-icon>
+            </div>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               EU law
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -101,7 +105,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <img alt="Image 6" class="ecl-gallery__image sc-ecl-gallery-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg" image-alt="Image 6" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               Find official documents, publications, statistics, open data and more resources
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -114,7 +118,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <img alt="Image 7" class="ecl-gallery__image sc-ecl-gallery-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg" image-alt="Image 7" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               Teaching material about the EU, including books and maps
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -127,7 +131,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-embed-src="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&amp;lg=EN" data-ecl-gallery-item-share="/example.html" href="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&amp;lg=EN">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <img alt="Image 8" class="ecl-gallery__image sc-ecl-gallery-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg" image-alt="Image 8" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               Teaching material about the EU, including books and maps
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -140,7 +144,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <img alt="Image 9" class="ecl-gallery__image sc-ecl-gallery-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg" image-alt="Image 9" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               About the EU
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -153,7 +157,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <img alt="Image 10" class="ecl-gallery__image sc-ecl-gallery-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg" image-alt="Image 10" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               EU by topic
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -164,27 +168,30 @@ exports[`ecl-gallery renders 1`] = `
         </a>
       </li>
     </ul>
-    <div class="ecl-gallery__info">
-      <strong data-ecl-gallery-count>
-        0
-      </strong>
-      Media files in this gallery
+    <div class="ecl-gallery__footer">
+      <div class="ecl-gallery__info">
+        <strong class="ecl-gallery__info-total" data-ecl-gallery-count>
+          0
+        </strong>
+        Media files in this gallery,
+        <ecl-button data-ecl-gallery-all data-ecl-gallery-collapsed-label="View all">
+          <!---->
+          <button class="ecl-button ecl-button--ghost ecl-gallery__view-all sc-ecl-gallery-ec" data-ecl-gallery-all="eclGalleryAll" data-ecl-gallery-collapsed-label="View all" type="submit">
+            <span class="ecl-button__container">
+              <span class="ecl-button__label">
+                View all
+              </span>
+            </span>
+          </button>
+        </ecl-button>
+      </div>
+      <hr class="ecl-gallery__footer-divider">
     </div>
-    <ecl-button data-ecl-gallery-all style-class="ecl-gallery__view-all">
-      <!---->
-      <button class="ecl-button ecl-button--ghost ecl-gallery__view-all" data-ecl-gallery-all type="submit">
-        <span class="ecl-button__container">
-          <span class="ecl-button__label">
-            View all
-          </span>
-        </span>
-      </button>
-    </ecl-button>
     <dialog class="ecl-gallery__overlay" data-ecl-gallery-overlay>
       <header class="ecl-gallery__close" data-ecl-gallery-overlay-header>
         <ecl-button data-ecl-gallery-close style-class="ecl-gallery__close-button sc-ecl-gallery-ec">
           <!---->
-          <button class="ecl-button ecl-button--ghost ecl-gallery__close-button sc-ecl-gallery-ec" data-ecl-gallery-close type="submit">
+          <button class="ecl-button ecl-button--ghost ecl-gallery__close-button sc-ecl-gallery-ec" data-ecl-gallery-close="eclGalleryClose" type="submit">
             <span class="ecl-button__container">
               <span class="ecl-button__label">
                 Close
@@ -200,67 +207,71 @@ exports[`ecl-gallery renders 1`] = `
       </header>
       <section class="ecl-gallery__slider">
         <div class="ecl-gallery__slider-media-container" data-ecl-gallery-overlay-media></div>
-        <ecl-button data-ecl-gallery-overlay-previous style-class="ecl-gallery__slider-previous sc-ecl-gallery-ec">
-          <!---->
-          <button class="ecl-button ecl-button--ghost ecl-gallery__slider-previous sc-ecl-gallery-ec" data-ecl-gallery-overlay-previous type="button">
-            <span class="ecl-button__container">
-              <ecl-icon slot="icon-before" style-class="sc-ecl-gallery-ec">
-                <svg class="ecl-button__icon ecl-button__icon--before ecl-icon ecl-icon--rotate-270 ecl-icon--s sc-ecl-button-ec sc-ecl-gallery-ec">
-                  <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
-                </svg>
-              </ecl-icon>
-              <span class="ecl-button__label">
-                Previous
-              </span>
-            </span>
-          </button>
-        </ecl-button>
-        <ecl-button data-ecl-gallery-overlay-next style-class="ecl-gallery__slider-next sc-ecl-gallery-ec">
-          <!---->
-          <button class="ecl-button ecl-button--ghost ecl-gallery__slider-next sc-ecl-gallery-ec" data-ecl-gallery-overlay-next type="button">
-            <span class="ecl-button__container">
-              <span class="ecl-button__label">
-                Next
-              </span>
-              <ecl-icon slot="icon-after" style-class="sc-ecl-gallery-ec">
-                <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--rotate-90 ecl-icon--s sc-ecl-button-ec sc-ecl-gallery-ec">
-                  <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
-                </svg>
-              </ecl-icon>
-            </span>
-          </button>
-        </ecl-button>
       </section>
       <footer class="ecl-gallery__detail" data-ecl-gallery-overlay-footer>
-        <div class="ecl-gallery__detail-counter">
-          <span data-ecl-gallery-overlay-counter-current>
-            0
-          </span>
-          of
-          <span data-ecl-gallery-overlay-counter-max>
-            0
-          </span>
+        <div class="ecl-container">
+          <div class="ecl-gallery__pager">
+            <ecl-button data-ecl-gallery-overlay-previous hide-label="" style-class="ecl-gallery__slider-previous sc-ecl-gallery-ec">
+              <!---->
+              <button class="ecl-button ecl-button--ghost ecl-gallery__slider-previous sc-ecl-gallery-ec" data-ecl-gallery-overlay-previous="eclGalleryOverlayPrevious" type="button">
+                <span class="ecl-button__container">
+                  <ecl-icon slot="icon-before" style-class="sc-ecl-gallery-ec">
+                    <svg class="ecl-button__icon ecl-button__icon--before ecl-icon ecl-icon--rotate-270 ecl-icon--s sc-ecl-button-ec sc-ecl-gallery-ec">
+                      <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
+                    </svg>
+                  </ecl-icon>
+                  <span class="ecl-u-sr-only" data-ecl-label>
+                    Previous
+                  </span>
+                </span>
+              </button>
+            </ecl-button>
+            <div class="ecl-gallery__detail-counter">
+              <span data-ecl-gallery-overlay-counter-current>
+                0
+              </span>
+              of
+              <span data-ecl-gallery-overlay-counter-max>
+                0
+              </span>
+            </div>
+            <ecl-button data-ecl-gallery-overlay-next hide-label="" style-class="ecl-gallery__slider-next sc-ecl-gallery-ec">
+              <!---->
+              <button class="ecl-button ecl-button--ghost ecl-gallery__slider-next sc-ecl-gallery-ec" data-ecl-gallery-overlay-next="eclGalleryOverlayNext" type="button">
+                <span class="ecl-button__container">
+                  <span class="ecl-u-sr-only" data-ecl-label>
+                    Next
+                  </span>
+                  <ecl-icon slot="icon-after" style-class="sc-ecl-gallery-ec">
+                    <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--rotate-90 ecl-icon--s sc-ecl-button-ec sc-ecl-gallery-ec">
+                      <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
+                    </svg>
+                  </ecl-icon>
+                </span>
+              </button>
+            </ecl-button>
+          </div>
+          <div class="ecl-gallery__detail-meta" data-ecl-gallery-overlay-meta></div>
+          <div class="ecl-gallery__detail-description" data-ecl-gallery-overlay-description></div>
+          <div class="ecl-gallery__detail-actions">
+            <ecl-link data-ecl-gallery-overlay-download name="download" path="" style-class="ecl-gallery__download sc-ecl-gallery-ec" variant="standalone">
+              Download
+              <ecl-icon slot="icon-after">
+                <svg class="ecl-icon ecl-icon--fluid">
+                  <use xlink:href="/build/images/ec/icons.svg#download"></use>
+                </svg>
+              </ecl-icon>
+            </ecl-link>
+            <ecl-link data-ecl-gallery-overlay-share path="" style-class="ecl-gallery__share sc-ecl-gallery-ec" variant="standalone">
+              Share
+              <ecl-icon slot="icon-after">
+                <svg class="ecl-icon ecl-icon--fluid">
+                  <use xlink:href="/build/images/ec/icons.svg#share"></use>
+                </svg>
+              </ecl-icon>
+            </ecl-link>
+          </div>
         </div>
-        <div class="ecl-gallery__detail-actions">
-          <ecl-link data-ecl-gallery-overlay-download name="download" path="" style-class="ecl-gallery__download sc-ecl-gallery-ec" variant="standalone">
-            Download
-            <ecl-icon slot="icon-after">
-              <svg class="ecl-icon ecl-icon--fluid">
-                <use xlink:href="/build/images/ec/icons.svg#download"></use>
-              </svg>
-            </ecl-icon>
-          </ecl-link>
-          <ecl-link data-ecl-gallery-overlay-share path="" style-class="ecl-gallery__share sc-ecl-gallery-ec" variant="standalone">
-            Share
-            <ecl-icon slot="icon-after">
-              <svg class="ecl-icon ecl-icon--fluid">
-                <use xlink:href="/build/images/ec/icons.svg#share"></use>
-              </svg>
-            </ecl-icon>
-          </ecl-link>
-        </div>
-        <div class="ecl-gallery__detail-description" data-ecl-gallery-overlay-description></div>
-        <div class="ecl-gallery__detail-meta" data-ecl-gallery-overlay-meta></div>
       </footer>
     </dialog>
   </section>
