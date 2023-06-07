@@ -9,6 +9,7 @@ export class EclDescriptionListDefinition {
   @Prop() styleClass: string = '';
   @Prop() theme: string = 'ec';
   @Prop() items: string;
+  @Prop() collapsible: boolean = false;
 
   getClass(): string {
     return [
@@ -80,7 +81,10 @@ export class EclDescriptionListDefinition {
     const itemsArray = this.items ? JSON.parse(this.items) : false;
 
     return (
-      <dd class={this.getClass()}>
+      <dd
+        class={this.getClass()}
+        {...(this.collapsible ? {'data-ecl-description-list-collapsible': true} : {})}
+      >
         {this.getMarkup(itemsArray)}
       </dd>
     )

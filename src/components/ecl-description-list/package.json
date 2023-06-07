@@ -8,13 +8,14 @@
   "private": true,
   "scripts": {
     "build:styles": "cross-env NODE_ENV=production ecl-builder styles",
+    "build:scripts": "cross-env NODE_ENV=production ecl-builder scripts",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.7.1",
-    "@ecl/vanilla-component-description-list": "3.7.1",
+    "@ecl/builder": "3.8.2",
+    "@ecl/vanilla-component-description-list": "3.8.2",
     "cross-env": "7.0.3"
   },
   "repository": {

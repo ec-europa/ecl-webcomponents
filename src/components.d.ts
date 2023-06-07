@@ -153,11 +153,15 @@ export namespace Components {
         "yearRange": number;
     }
     interface EclDescriptionList {
+        "eclScript": boolean;
+        "moreLabel": string;
         "styleClass": string;
         "theme": string;
         "variant": string;
+        "visibleItems": number;
     }
     interface EclDescriptionListDefinition {
+        "collapsible": boolean;
         "items": string;
         "styleClass": string;
         "theme": string;
@@ -1475,11 +1479,15 @@ declare namespace LocalJSX {
         "yearRange"?: number;
     }
     interface EclDescriptionList {
+        "eclScript"?: boolean;
+        "moreLabel"?: string;
         "styleClass"?: string;
         "theme"?: string;
         "variant"?: string;
+        "visibleItems"?: number;
     }
     interface EclDescriptionListDefinition {
+        "collapsible"?: boolean;
         "items"?: string;
         "styleClass"?: string;
         "theme"?: string;
