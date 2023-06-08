@@ -19,6 +19,7 @@ export class EclBanner {
   @Prop() fullWidth: boolean = false;
   @Prop() bannerTitle: string;
   @Prop() image: string;
+  @Prop() imageAlt: string;
   @Prop() ctaLabel: string;
   @Prop() ctaLink: string;
   @Prop() centered: boolean = true;
@@ -61,11 +62,14 @@ export class EclBanner {
     return (
       <section class={this.getClass()}>
       { imageBanners.includes(this.variant) && this.image ?
-        <div
-          class="ecl-banner__image"
-          style={{ backgroundImage: "url(" + this.image + ")"}}
+        <ecl-picture
+          styleClass="ecl-banner__picture"
+          image={this.image}
+          imageAlt={this.imageAlt}
+          imgClass="ecl-banner__image"
         >
-        </div>
+          <slot name="sources"></slot>
+        </ecl-picture>
         : '' }
       { this.credit && this.variant != 'plain-background' ?
         <div class="ecl-banner__credit">{this.credit}</div> : ''

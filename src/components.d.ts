@@ -28,6 +28,7 @@ export namespace Components {
         "external": boolean;
         "fullWidth": boolean;
         "image": string;
+        "imageAlt": string;
         "size": string;
         "styleClass": string;
         "theme": string;
@@ -1354,6 +1355,7 @@ declare namespace LocalJSX {
         "external"?: boolean;
         "fullWidth"?: boolean;
         "image"?: string;
+        "imageAlt"?: string;
         "size"?: string;
         "styleClass"?: string;
         "theme"?: string;
