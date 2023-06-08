@@ -7,7 +7,11 @@ const getArgTypes = () => {
     },
     image: {
       type: { name: 'string' },
-      description: 'Image background',
+      description: 'Main page header image',
+    },
+    imageAlt: {
+      type: { name: 'string' },
+      description: 'Image alt attribute',
     },
     title: {
       type: { name: 'string' },
@@ -41,10 +45,11 @@ const Template = args =>
     variant="${args.variant}"
     theme="${args.theme}"
     header-title="${args.title}"
-    image="${args.image}"
+    image="${args.image || ''}"
     thumbnail="${args.thumbnail}"
     thumbnail-alt="${args.thumbnailAlt}"
     meta="${args.meta}"
+    image-alt="${args.imageAlt}"
   >
     <ecl-breadcrumb
       slot="breadcrumb"
@@ -102,6 +107,7 @@ PageHeaderCore.args = {
                 <a class="ecl-link" href="/example.html">eget dictum elit</a>. Vestibulum gravida tincidunt venenatis.`,
   image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg',
   thumbnail: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg',
+  imageAlt: 'image alternative text',
   meta: 'Meta info | DD Month YYYY',
   thumbnailAlt: 'Europe map',
   breadcrumbVariant: 'negative',
@@ -131,6 +137,8 @@ PageHeaderStandardised.args = {
   thumbnail: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg',
   meta: 'Meta info | DD Month YYYY',
   image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg',
+  imageAlt: 'Alternative text for the image',
   breadcrumbVariant: 'default',
+  thumbnailAlt: 'Thumbnail alt attribute',
 }
 PageHeaderStandardised.argTypes = getArgTypes();

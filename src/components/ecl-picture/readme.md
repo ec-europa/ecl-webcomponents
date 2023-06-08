@@ -23,6 +23,7 @@
  - [ecl-banner](../ecl-banner)
  - [ecl-gallery-item](../ecl-gallery)
  - [ecl-list-illustration-item](../ecl-list-illustration)
+ - [ecl-page-header](../ecl-page-header)
 
 ### Graph
 ```mermaid
@@ -30,6 +31,7 @@ graph TD;
   ecl-banner --> ecl-picture
   ecl-gallery-item --> ecl-picture
   ecl-list-illustration-item --> ecl-picture
+  ecl-page-header --> ecl-picture
   style ecl-picture fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

@@ -533,6 +533,7 @@ export namespace Components {
     interface EclPageHeader {
         "headerTitle": string;
         "image": string;
+        "imageAlt": string;
         "meta": string;
         "overlay": string;
         "styleClass": string;
@@ -1866,6 +1867,7 @@ declare namespace LocalJSX {
     interface EclPageHeader {
         "headerTitle"?: string;
         "image"?: string;
+        "imageAlt"?: string;
         "meta"?: string;
         "overlay"?: string;
         "styleClass"?: string;
