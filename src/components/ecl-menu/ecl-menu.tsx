@@ -24,6 +24,9 @@ export class EclMenu {
   @Prop() closeLabel: string;
   @Prop() backLabel: string;
   @Prop() menuLink: string;
+  @Prop() siteName: string;
+  @Prop() previousLabel: string;
+  @Prop() nextLabel: string;
 
   getClass(): string {
     const styleClasses = [
@@ -125,7 +128,39 @@ export class EclMenu {
                 </span>
               </button>
             </header>
-            <ul class="ecl-menu__list">
+            <ecl-button
+              type="button"
+              variant="ghost"
+              hideLabel
+              styleClass={`ecl-menu__item ecl-menu__items-previous sc-ecl-menu-${this.theme}`}
+              data-ecl-menu-items-previous
+              tabindex="-1"
+            >
+              <ecl-icon
+                slot="icon-before"
+                icon="corner-arrow"
+                transform="rotate-270"
+                size="s"
+              ></ecl-icon>
+              {this.previousLabel}
+            </ecl-button>
+            <ecl-button
+              type="button"
+              variant="ghost"
+              hideLabel
+              styleClass={`ecl-menu__item ecl-menu__items-next sc-ecl-menu-${this.theme}`}
+              data-ecl-menu-items-next
+              tabindex="-1"
+            >
+              <ecl-icon
+                slot="icon-before"
+                icon="corner-arrow"
+                transform="rotate-270"
+                size="s"
+              ></ecl-icon>
+              {this.nextLabel}
+            </ecl-button>
+            <ul class="ecl-menu__list" data-ecl-menu-list>
               <slot></slot>
             </ul>
           </section>

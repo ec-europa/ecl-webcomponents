@@ -452,6 +452,9 @@ export namespace Components {
         "maxLines": number;
         "menuLink": string;
         "menuTitle": string;
+        "nextLabel": string;
+        "previousLabel": string;
+        "siteName": string;
         "styleClass": string;
         "theme": string;
     }
@@ -1781,6 +1784,9 @@ declare namespace LocalJSX {
         "maxLines"?: number;
         "menuLink"?: string;
         "menuTitle"?: string;
+        "nextLabel"?: string;
+        "previousLabel"?: string;
+        "siteName"?: string;
         "styleClass"?: string;
         "theme"?: string;
     }

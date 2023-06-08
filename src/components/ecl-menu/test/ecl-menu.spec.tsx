@@ -16,6 +16,9 @@ describe('ecl-menu', () => {
         menu-link="/example.html"
         ecl-script
         menu-title="Menu"
+        next-label="next"
+        previous-label="previous"
+        max-lines=2
       >
         <ecl-menu-item
           link="/example.html"

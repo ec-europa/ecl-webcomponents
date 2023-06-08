@@ -23,6 +23,7 @@
  - [ecl-expandable](../ecl-expandable)
  - [ecl-file-translations](../ecl-file)
  - [ecl-gallery](../ecl-gallery)
+ - [ecl-menu](../ecl-menu)
  - [ecl-menu-item](../ecl-menu)
  - [ecl-message](../ecl-message)
  - [ecl-modal](../ecl-modal)
@@ -37,6 +38,7 @@ graph TD;
   ecl-expandable --> ecl-button
   ecl-file-translations --> ecl-button
   ecl-gallery --> ecl-button
+  ecl-menu --> ecl-button
   ecl-menu-item --> ecl-button
   ecl-message --> ecl-button
   ecl-modal --> ecl-button
