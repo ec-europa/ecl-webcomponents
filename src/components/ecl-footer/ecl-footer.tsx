@@ -75,20 +75,24 @@ export class EclFooter {
                   styleClass={`ecl-site-footer__logo-link sc-ecl-footer-${this.theme}`}
                   ariaLabel={this.logoAriaLabel}
                 >
-                { this.theme === 'eu' ?
-                  <img 
-                    alt={this.logoAlt}
-                    title={this.logoTitle}
-                    class="ecl-site-footer__logo-image-mobile"
-                    src={getAssetPath(`./build/images/${this.theme}/logos/condensed-version/positive/logo-${this.theme}--${this.logoLangCode}.svg`)}
-                  /> : ''
+                { this.theme === 'eu' ? (
+                  <ecl-picture
+                    imageAlt={this.logoAlt}
+                    imgClass={`ecl-site-footer__logo-image-mobile sc-ecl-footer-${this.theme}`}
+                    styleClass={`ecl-site-footer__picture sc-ecl-site-footer-${this.theme}`}
+                    image={getAssetPath(`./build/images/${this.theme}/logos/condensed-version/positive/logo-${this.theme}--${this.logoLangCode}.svg`)}
+                  >
+                    <slot name="sources"></slot>
+                  </ecl-picture> ) : ( '' )
                 }
-                  <img 
-                    alt={this.logoAlt}
-                    title={this.logoTitle}
-                    class="ecl-site-footer__logo-image-desktop"
-                    src={logoPath}
-                  />
+                  <ecl-picture
+                    imageAlt={this.logoAlt}
+                    imgClass={`ecl-site-footer__logo-image-desktop sc-ecl-site-footer-${this.theme}`}
+                    image={logoPath}
+                    styleClass={`ecl-site-footer__picture sc-ecl-site-footer-${this.theme}`}
+                  >
+                    <slot name="sources"></slot>
+                  </ecl-picture>
                 </ecl-link>
               { this.theme === 'ec' ?
                 <h2 class="ecl-site-footer__title">{this.siteName}</h2> : ''

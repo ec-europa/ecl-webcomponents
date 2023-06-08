@@ -42,6 +42,7 @@ module.exports = {
         banner,
         includePaths,
         sourceMap: false,
+        minify: true,
       },
     },
     {
@@ -51,6 +52,7 @@ module.exports = {
         banner,
         includePaths,
         sourceMap: false,
+        minify: true,
       },
     },
   ],

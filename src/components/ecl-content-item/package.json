@@ -15,7 +15,9 @@
   "devDependencies": {
     "@ecl/builder": "3.8.2",
     "@ecl/vanilla-component-content-item": "3.8.2",
-    "cross-env": "7.0.3"
+    "cross-env": "7.0.3",
+    "@ecl/theme-ec": "3.8.2",
+    "@ecl/theme-eu": "3.8.2"
   },
   "repository": {
     "type": "git",

@@ -16,7 +16,7 @@ export class EclMediaContainer {
   @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
-  @Prop() alt: string;
+  @Prop() imageAlt: string;
   @Prop() description: string;
   @Prop() image: string;
   @Prop() fullWidth: boolean = false;
@@ -54,7 +54,6 @@ export class EclMediaContainer {
   render() {
     const sources = this.sources ? JSON.parse(this.sources) : '';
     const tracks = this.tracks ? JSON.parse(this.tracks) : '';
-    const alt = this.alt ? { alt: this.alt } : '';
     const videoSources =  sources ? sources.map((source) => (
       <source type={source.type} src={ source.src } />
     )) : '';
@@ -71,14 +70,16 @@ export class EclMediaContainer {
       <figure
         class={this.getClass()}
       >
-      { this.image ?
-        <img
-          class="ecl-media-container__media"
-          src={this.image}
-          { ...alt }
-        />
-        : '' }
-
+      { this.image ? (
+        <ecl-picture
+          styleClass={`ecl-media-container__picture sc-ecl-media-container-${this.theme}`}
+          imgClass={`ecl-media-container__media sc-ecl-media-container-${this.theme}`}
+          image={this.image}
+          imageAlt={this.imageAlt}
+        >
+          <slot name="sources"></slot>
+        </ecl-picture> ) : ( '' ) 
+      }
       { sources && tracks ?
         <video 
           class="ecl-media-container__media"

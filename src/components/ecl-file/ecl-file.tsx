@@ -153,7 +153,14 @@ export class EclFile {
               </div>
             </div>
           { this.image ?
-            <img class="ecl-file__image" src={this.image} alt={this.imageAlt} /> : '' 
+            <ecl-picture
+              image={this.image}
+              imageAlt={this.imageAlt}
+              imgClass={`ecl-file__image sc-ecl-file-${this.theme}`}
+              styleClass={`ecl-file__picture sc-ecl-file-${this.theme}`}
+            >
+              <slot name="sources"></slot>
+            </ecl-picture> : ''
           }
           </div>
         }

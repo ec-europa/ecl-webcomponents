@@ -5,7 +5,7 @@ exports[`ecl-navigation-list renders 1`] = `
   <!---->
   <div class="ecl-navigation-list ecl-navigation-list--col-2">
     <div class="ecl-navigation-list__item sc-ecl-navigation-list-ec">
-      <div aria-label="Alt text of the image" class="ecl-navigation-list__image sc-ecl-navigation-list-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imagealt="Alt text of the image" imgclass="sc-ecl-navigation-list-ec ecl-navigation-list__image" styleclass="ecl-navigation-list__picture sc-ecl-navigation-list-ec"></ecl-picture>
       <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="" theme="ec">
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
@@ -69,7 +69,7 @@ exports[`ecl-navigation-list renders 1`] = `
       </ecl-content-block>
     </div>
     <div class="ecl-navigation-list__item sc-ecl-navigation-list-ec">
-      <div aria-label="Alt text of the image" class="ecl-navigation-list__image sc-ecl-navigation-list-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imagealt="Alt text of the image" imgclass="sc-ecl-navigation-list-ec ecl-navigation-list__image" styleclass="ecl-navigation-list__picture sc-ecl-navigation-list-ec"></ecl-picture>
       <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="" theme="ec">
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
@@ -133,7 +133,7 @@ exports[`ecl-navigation-list renders 1`] = `
       </ecl-content-block>
     </div>
     <div class="ecl-navigation-list__item sc-ecl-navigation-list-ec">
-      <div aria-label="Alt text of the image" class="ecl-navigation-list__image sc-ecl-navigation-list-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imagealt="Alt text of the image" imgclass="sc-ecl-navigation-list-ec ecl-navigation-list__image" styleclass="ecl-navigation-list__picture sc-ecl-navigation-list-ec"></ecl-picture>
       <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="" theme="ec">
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
@@ -197,7 +197,7 @@ exports[`ecl-navigation-list renders 1`] = `
       </ecl-content-block>
     </div>
     <div class="ecl-navigation-list__item sc-ecl-navigation-list-ec">
-      <div aria-label="Alt text of the image" class="ecl-navigation-list__image sc-ecl-navigation-list-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imagealt="Alt text of the image" imgclass="sc-ecl-navigation-list-ec ecl-navigation-list__image" styleclass="ecl-navigation-list__picture sc-ecl-navigation-list-ec"></ecl-picture>
       <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="" theme="ec">
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
@@ -261,7 +261,7 @@ exports[`ecl-navigation-list renders 1`] = `
       </ecl-content-block>
     </div>
     <div class="ecl-navigation-list__item sc-ecl-navigation-list-ec">
-      <div aria-label="Alt text of the image" class="ecl-navigation-list__image sc-ecl-navigation-list-ec" role="img" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg);"></div>
+      <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imagealt="Alt text of the image" imgclass="sc-ecl-navigation-list-ec ecl-navigation-list__image" styleclass="ecl-navigation-list__picture sc-ecl-navigation-list-ec"></ecl-picture>
       <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="" theme="ec">
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">

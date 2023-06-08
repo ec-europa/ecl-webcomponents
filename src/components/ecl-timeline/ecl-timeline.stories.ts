@@ -39,7 +39,7 @@ const Template = (args) =>
       <a href="/example.html" class="ecl-link">Economic and Monetary Union package of proposals</a>
     </ecl-timeline-item>
     <ecl-timeline-item type="toggle">
-      Show/Hide hidden items
+      View all
     </ecl-timeline-item>
     <ecl-timeline-item
       item-id="5"

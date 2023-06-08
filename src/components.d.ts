@@ -432,13 +432,13 @@ export namespace Components {
         "theme": string;
     }
     interface EclMediaContainer {
-        "alt": string;
         "description": string;
         "eclScript": boolean;
         "embeddedMedia": boolean;
         "fullWidth": boolean;
         "hasCaption": boolean;
         "image": string;
+        "imageAlt": string;
         "ratio": string;
         "sources": string;
         "styleClass": string;
@@ -1766,13 +1766,13 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclMediaContainer {
-        "alt"?: string;
         "description"?: string;
         "eclScript"?: boolean;
         "embeddedMedia"?: boolean;
         "fullWidth"?: boolean;
         "hasCaption"?: boolean;
         "image"?: string;
+        "imageAlt"?: string;
         "ratio"?: string;
         "sources"?: string;
         "styleClass"?: string;

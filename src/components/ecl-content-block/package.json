@@ -19,6 +19,8 @@
     "@ecl/vanilla-component-icon": "3.8.2",
     "@ecl/vanilla-component-label": "3.8.2",
     "@ecl/vanilla-component-link": "3.8.2",
+    "@ecl/theme-ec": "3.8.2",
+    "@ecl/theme-eu": "3.8.2",
     "cross-env": "7.0.3"
   },
   "repository": {

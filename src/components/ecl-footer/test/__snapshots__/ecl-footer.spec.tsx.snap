@@ -11,7 +11,7 @@ exports[`ecl-footer renders 1`] = `
             <ecl-link>
               <!---->
               <a class="ecl-link ecl-link--standalone ecl-site-footer__logo-link sc-ecl-footer-ec">
-                <img alt="European Union" class="ecl-site-footer__logo-image-desktop" src="/build/images/ec/logos/negative/logo-ec--en.svg" title="European union">
+                <ecl-picture image="/build/images/ec/logos/negative/logo-ec--en.svg" imagealt="European Union" imgclass="ecl-site-footer__logo-image-desktop sc-ecl-site-footer-ec" styleclass="ecl-site-footer__picture sc-ecl-site-footer-ec"></ecl-picture>
                 <slot-fb name="icon-after"></slot-fb>
               </a>
             </ecl-link>

@@ -54,6 +54,7 @@ const TemplateImg = (args) =>
     theme="${args.theme}"
     has-caption=${args.hasCaption}
   	image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+    image-alt="Alternative text for the image"
   >
      ${args.hasCaption ? args.description : ''}
   </ecl-media-container>`;

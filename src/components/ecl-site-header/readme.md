@@ -37,6 +37,7 @@
 ### Depends on
 
 - [ecl-link](../ecl-link)
+- [ecl-picture](../ecl-picture)
 - [ecl-icon](../ecl-icon)
 - [ecl-search-form](../ecl-search-form)
 
@@ -44,6 +45,7 @@
 ```mermaid
 graph TD;
   ecl-site-header --> ecl-link
+  ecl-site-header --> ecl-picture
   ecl-site-header --> ecl-icon
   ecl-site-header --> ecl-search-form
   ecl-link --> ecl-icon

@@ -38,27 +38,18 @@ export class EclNavigationListItem {
     return imgClasses.join(' ');
   }
 
-  getImgAttr() {
-    const attrs = {
-      role: 'img',
-    }
-
-    if (this.imageAlt) {
-      attrs['aria-label'] = this.imageAlt;
-    }
-
-    return attrs;
-  }
-
   render() {
     return (
       <div class={this.getClass()}>
       { this.image ?
-        <div
-          class={this.getImgClass()}
-          style={{ backgroundImage: "url(" + this.image + ")"}}
-          {...this.getImgAttr()}
-        ></div> : ''
+        <ecl-picture
+          styleClass={`ecl-navigation-list__picture sc-ecl-navigation-list-${this.theme}`}
+          image={this.image}
+          imgClass={this.getImgClass()}
+          imageAlt={this.imageAlt}
+        >
+          <slot name="sources"></slot>
+        </ecl-picture> : ''
       }
         <slot></slot>
       </div>
