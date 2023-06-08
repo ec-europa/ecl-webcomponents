@@ -1,8 +1,8 @@
 diff --git a/node_modules/@ecl/theme-dev/maps/color.scss b/node_modules/@ecl/theme-dev/maps/color.scss
-index 867d310..6061473 100644
+index 0c6ca02..42ecd0b 100644
 --- a/node_modules/@ecl/theme-dev/maps/color.scss
 +++ b/node_modules/@ecl/theme-dev/maps/color.scss
-@@ -10,6 +10,7 @@ $color: (
+@@ -32,12 +32,14 @@ $color: (
    'blue-120': #003776,
    'blue-110': #003d84,
    'blue-100': #004494,
@@ -10,11 +10,10 @@ index 867d310..6061473 100644
    'blue-75': #4073af,
    'blue-50': #7fa1c9,
    'blue-25': #bfd0e4,
-@@ -20,6 +21,7 @@ $color: (
-   'yellow-75': #ffde39,
-   'yellow-50': #ffe879,
-   'yellow-25': #fff4bb,
-+  'grey-140': #171a22,
+   'blue-5': #f2f5f9,
+   'green-100': #467a39,
    'grey-100': #404040,
++  'grey-140': #171a22,
    'grey-75': #707070,
    'grey-50': #9f9f9f,
+   'grey-25': #cfcfcf,

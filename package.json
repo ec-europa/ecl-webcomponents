@@ -120,7 +120,7 @@
     "react-dom": "18.2.0",
     "replace-in-file": "6.3.5",
     "rimraf": "5.0.1",
-    "stylelint": "15.6.3",
+    "stylelint": "15.7.0",
     "stylelint-config-css-modules": "4.2.0",
     "stylelint-config-prettier": "9.0.5",
     "stylelint-config-standard": "33.0.0",
