@@ -14,10 +14,10 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.7.1",
-    "@ecl/theme-ec": "3.7.1",
-    "@ecl/theme-eu": "3.7.1",
-    "@ecl/vanilla-component-breadcrumb": "3.7.1",
+    "@ecl/builder": "3.8.2",
+    "@ecl/theme-ec": "3.8.2",
+    "@ecl/theme-eu": "3.8.2",
+    "@ecl/vanilla-component-breadcrumb": "3.8.2",
     "cross-env": "7.0.3"
   },
   "repository": {
