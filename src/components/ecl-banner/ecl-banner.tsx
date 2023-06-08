@@ -63,10 +63,10 @@ export class EclBanner {
       <section class={this.getClass()}>
       { imageBanners.includes(this.variant) && this.image ?
         <ecl-picture
-          styleClass="ecl-banner__picture"
+          styleClass={`ecl-banner__picture sc-ecl-banner-${this.theme}`}
           image={this.image}
           imageAlt={this.imageAlt}
-          imgClass="ecl-banner__image"
+          imgClass={`ecl-banner__image sc-ecl-banner-${this.theme}`}
         >
           <slot name="sources"></slot>
         </ecl-picture>
