@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-file renders 1`] = `
-<ecl-file detail-meta="[&quot;Resource type&quot;, &quot;Publication date&quot;]" download-label="Download" download-link="/example.html" ecl-script="" file-title="State of the Union 2018 brochure" language="English" meta="(16.2 MB - PDF)" taxonomies="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example.html&quot;},&quot;Taxonomy item 3&quot;]" taxonomies-label="Taxonomy list" theme="ec" variant="default">
+<ecl-file detail-meta="[&quot;Resource type&quot;, &quot;Publication date&quot;]" download-label="Download" download-link="/example" ecl-script="" file-title="State of the Union 2018 brochure" language="English" meta="(16.2 MB - PDF)" taxonomies="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example&quot;},&quot;Taxonomy item 3&quot;]" taxonomies-label="Taxonomy list" theme="ec" variant="default">
   <!---->
   <ecl-file-translations hidden="" others="" theme="ec" toggle-label="Other languages" translations-total="3">
     <!---->
@@ -20,7 +20,7 @@ exports[`ecl-file renders 1`] = `
               (15.7 MB - PDF)
             </div>
           </div>
-          <ecl-link path="/example.html" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
+          <ecl-link path="/example" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
             Download
             <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
           </ecl-link>
@@ -34,7 +34,7 @@ exports[`ecl-file renders 1`] = `
               (15.98 MB - PDF)
             </div>
           </div>
-          <ecl-link path="/example.html" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
+          <ecl-link path="/example" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
             Download
             <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
           </ecl-link>
@@ -48,7 +48,7 @@ exports[`ecl-file renders 1`] = `
               (15.98 MB - PDF)
             </div>
           </div>
-          <ecl-link path="/example.html" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
+          <ecl-link path="/example" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
             Download
             <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
           </ecl-link>
@@ -56,7 +56,7 @@ exports[`ecl-file renders 1`] = `
         <li class="ecl-file__translation-description ecl-file__translation-item sc-ecl-file-ec">
           <p slot="others">
             Looking for another language which is not on the list?
-            <a class="ecl-link" href="/example.html">
+            <a class="ecl-link" href="/example">
               Find out why
             </a>
             .
@@ -73,7 +73,7 @@ exports[`ecl-file renders 1`] = `
           <ecl-description-list-term style-class="sc-ecl-file-ec" theme="ec">
             Taxonomy list
           </ecl-description-list-term>
-          <ecl-description-list-definition items="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example.html&quot;},&quot;Taxonomy item 3&quot;]" style-class="sc-ecl-file-ec" theme="ec" type="taxonomy"></ecl-description-list-definition>
+          <ecl-description-list-definition items="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example&quot;},&quot;Taxonomy item 3&quot;]" style-class="sc-ecl-file-ec" theme="ec" type="taxonomy"></ecl-description-list-definition>
         </ecl-description-list>
       </div>
       <div class="ecl-file__info">
@@ -95,7 +95,7 @@ exports[`ecl-file renders 1`] = `
           (16.2 MB - PDF)
         </div>
       </div>
-      <ecl-link path="/example.html" variant="standalone">
+      <ecl-link path="/example" variant="standalone">
         Download
         <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
       </ecl-link>

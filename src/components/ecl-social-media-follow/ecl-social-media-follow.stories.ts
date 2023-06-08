@@ -70,7 +70,7 @@ const Template = (args) =>
   >
     <ecl-popover-item
       theme="${args.theme}"
-      path="/example.html"
+      path="/example"
       icon="pinterest-color"
       icon-sprite="icons-social-media"
       icon-size="s"
@@ -79,7 +79,7 @@ const Template = (args) =>
     </ecl-popover-item>
     <ecl-popover-item
       theme="${args.theme}"
-      path="/example.html"
+      path="/example"
       icon="mastodon-color"
       icon-sprite="icons-social-media"
       icon-size="s"
@@ -88,7 +88,7 @@ const Template = (args) =>
     </ecl-popover-item>
     <ecl-popover-item
       theme="${args.theme}"
-      path="/example.html"
+      path="/example"
       icon="reddit-color"
       icon-sprite="icons-social-media"
       icon-size="s"
@@ -97,7 +97,7 @@ const Template = (args) =>
     </ecl-popover-item>
     <ecl-popover-item
       theme="${args.theme}"
-      path="/example.html"
+      path="/example"
       icon="youtube-color"
       icon-sprite="icons-social-media"
       icon-size="s"
@@ -106,7 +106,7 @@ const Template = (args) =>
     </ecl-popover-item>
     <ecl-popover-item
       theme="${args.theme}"
-      path="/example.html"
+      path="/example"
       icon="flickr-color"
       icon-sprite="icons-social-media"
       icon-size="s"
@@ -115,7 +115,7 @@ const Template = (args) =>
     </ecl-popover-item>
     <ecl-popover-item
       theme="${args.theme}"
-      path="/example.html"
+      path="/example"
       icon="skype-color"
       icon-sprite="icons-social-media"
       icon-size="s"

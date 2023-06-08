@@ -10,7 +10,7 @@ describe('ecl-hero-banner', () => {
       html: `<ecl-hero-banner
               variant="primary"
               theme="ec"
-              cta-link="/example.html"
+              cta-link="/example"
               cta-label="Subscribe"
               image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
               banner-title="EU Budget for the future"

@@ -11,12 +11,12 @@ describe('ecl-file', () => {
         variant="default"
         theme="ec"
         file-title="State of the Union 2018 brochure"
-        download-link="/example.html"
+        download-link="/example"
         download-label="Download"
         language="English"
         meta="(16.2 MB - PDF)"
         taxonomies-label="Taxonomy list"
-        taxonomies='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"},"Taxonomy item 3"]'
+        taxonomies='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example"},"Taxonomy item 3"]'
         detail-meta='["Resource type", "Publication date"]'
         ecl-script
       >
@@ -29,7 +29,7 @@ describe('ecl-file', () => {
           <ecl-file-translations-item
             language="bg"
             download-label="Download"
-            download-link="/example.html"
+            download-link="/example"
             meta="(15.7 MB - PDF)"
             file-title="български"
             theme="ec"
@@ -38,7 +38,7 @@ describe('ecl-file', () => {
           <ecl-file-translations-item
             language="es"
             download-label="Download"
-            download-link="/example.html"
+            download-link="/example"
             meta="(15.98 MB - PDF)"
             file-title="español"
             theme="ec"
@@ -47,14 +47,14 @@ describe('ecl-file', () => {
           <ecl-file-translations-item
             language="fr"
             download-label="Download"
-            download-link="/example.html"
+            download-link="/example"
             meta="(15.98 MB - PDF)"
             file-title="français"
             theme="ec"
           >
           </ecl-file-translations-item>
           <p slot="others">
-            Looking for another language which is not on the list? <a href="/example.html" class="ecl-link">Find out why</a>.
+            Looking for another language which is not on the list? <a href="/example" class="ecl-link">Find out why</a>.
           </p>
         </ecl-file-translations>
       </ecl-file>`,

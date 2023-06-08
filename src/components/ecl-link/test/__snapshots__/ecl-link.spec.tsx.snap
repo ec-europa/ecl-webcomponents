@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-link renders correctly as a default link 1`] = `
-<ecl-link path="/example.html" theme="ec" variant="default">
+<ecl-link path="/example" theme="ec" variant="default">
   <!---->
-  <a class="ecl-link ecl-link--default" href="/example.html">
+  <a class="ecl-link ecl-link--default" href="/example">
     A default link
     <slot-fb name="icon-after"></slot-fb>
   </a>
@@ -11,9 +11,9 @@ exports[`ecl-link renders correctly as a default link 1`] = `
 `;
 
 exports[`ecl-link renders correctly as a standalone link 1`] = `
-<ecl-link path="/example.html" theme="ec" variant="standalone">
+<ecl-link path="/example" theme="ec" variant="standalone">
   <!---->
-  <a class="ecl-link ecl-link--standalone" href="/example.html">
+  <a class="ecl-link ecl-link--standalone" href="/example">
     A standalone link
     <slot-fb name="icon-after"></slot-fb>
   </a>
@@ -21,14 +21,14 @@ exports[`ecl-link renders correctly as a standalone link 1`] = `
 `;
 
 exports[`ecl-link renders correctly with an icon 1`] = `
-<ecl-link path="/example.html" theme="ec" variant="standalone">
+<ecl-link path="/example" theme="ec" variant="standalone">
   <!---->
   <ecl-icon hidden="" icon="check" slot="ecl-icon-after">
     <svg class="ecl-icon ecl-icon--xs ecl-link__icon ecl-link__icon--before">
       <use xlink:href="/build/images/ec/icons.svg#check"></use>
     </svg>
   </ecl-icon>
-  <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone" href="/example.html">
+  <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone" href="/example">
     <slot-fb name="icon-after"></slot-fb>
   </a>
 </ecl-link>

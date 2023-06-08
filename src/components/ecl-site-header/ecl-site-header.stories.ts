@@ -16,7 +16,7 @@ const Template = (args) =>
     eu-label="Official EU languages:"
     non-eu-label="Other languages:"
     language-title="Choose your language"
-    login-link="/example.html"
+    login-link="/example"
     language-id="language-switcher"
     logo-alt="European Commission"
     logo-title="European commission"
@@ -25,56 +25,56 @@ const Template = (args) =>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="bg"
     language="български"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="es"
     language="español"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="cs"
     language="čeština"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="da"
     language="dansk"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="de"
     language="Deutsch"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="et"
     language="eesti"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="el"
     language="ελληνικά"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="en"
     language="English"
     active
@@ -82,42 +82,42 @@ const Template = (args) =>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="fr"
     language="français"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="ga"
     language="Gaeilge"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="hr"
     language="hrvatski"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="it"
     language="italiano"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="non-eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="zh"
     language="中文"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="non-eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="tr"
     language="Türk"
   ></ecl-language-item>
@@ -149,7 +149,7 @@ const TemplateHarmonised = (args) =>
     eu-label="Official EU languages:"
     non-eu-label="Other languages:"
     language-title="Choose your language"
-    login-link="/example.html"
+    login-link="/example"
     language-id="language-switcher"
     logo-alt="European Commission"
     logo-title="European commission"
@@ -159,56 +159,56 @@ const TemplateHarmonised = (args) =>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="bg"
     language="български"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="es"
     language="español"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="cs"
     language="čeština"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="da"
     language="dansk"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="de"
     language="Deutsch"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="et"
     language="eesti"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="el"
     language="ελληνικά"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="en"
     language="English"
     active
@@ -216,42 +216,42 @@ const TemplateHarmonised = (args) =>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="fr"
     language="français"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="ga"
     language="Gaeilge"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="hr"
     language="hrvatski"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="it"
     language="italiano"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="non-eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="zh"
     language="中文"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
     slot="non-eu-category"
-    path="/example.html"
+    path="/example"
     lang-code="tr"
     language="Türk"
   ></ecl-language-item>
@@ -260,19 +260,19 @@ const TemplateHarmonised = (args) =>
     theme="${args.theme}"
     close-label="Close"
     back-label="Back"
-    menu-link="/example.html"
+    menu-link="/example"
     ecl-script
     menu-title="Menu"
   >
     <ecl-menu-item
-      link="/example.html"
+      link="/example"
       theme="${args.theme}"
     >
       Home
     </ecl-menu-item>
     <ecl-menu-item
       theme="${args.theme}"
-      link="/example.html"
+      link="/example"
       has-children
       trigger-aria-label="Access item's children"
       current
@@ -280,7 +280,7 @@ const TemplateHarmonised = (args) =>
       Item 2 label
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -288,7 +288,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -296,7 +296,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         current
         slot="sublist"
@@ -305,7 +305,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
         external
@@ -317,13 +317,13 @@ const TemplateHarmonised = (args) =>
       theme="${args.theme}"
       has-children
       trigger-aria-label="Access item's children"
-      link="/example.html"
+      link="/example"
     >
       Item 3 with a very long label
       <ecl-menu-item
         theme="${args.theme}"
         child
-        link="/example.html"
+        link="/example"
         slot="sublist"
       >
         Item 3.1
@@ -331,7 +331,7 @@ const TemplateHarmonised = (args) =>
       <ecl-menu-item
         theme="${args.theme}"
         child
-        link="/example.html"
+        link="/example"
         slot="sublist"
       >
         Item 3.2
@@ -339,7 +339,7 @@ const TemplateHarmonised = (args) =>
       <ecl-menu-item
         theme="${args.theme}"
         child
-        link="/example.html"
+        link="/example"
         slot="sublist"
       >
         Item 3.3
@@ -347,20 +347,20 @@ const TemplateHarmonised = (args) =>
     </ecl-menu-item>
     <ecl-menu-item
       theme="${args.theme}"
-      link="/example.html"
+      link="/example"
     >
       Item 4 label
     </ecl-menu-item>
     <ecl-menu-item
       theme="${args.theme}"
-      link="/example.html"
+      link="/example"
       has-children
       trigger-aria-label="Access item's children"
     >
       Item 5 label
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -368,7 +368,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -376,7 +376,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -384,7 +384,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -393,14 +393,14 @@ const TemplateHarmonised = (args) =>
     </ecl-menu-item>
     <ecl-menu-item
       theme="${args.theme}"
-      link="/example.html"
+      link="/example"
       has-children
       trigger-aria-label="Access item's children"
     >
       Item 6
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -408,7 +408,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -416,7 +416,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -424,7 +424,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -432,7 +432,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -440,7 +440,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -448,7 +448,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -456,7 +456,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -464,7 +464,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -472,7 +472,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -480,7 +480,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -488,7 +488,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -496,7 +496,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -504,7 +504,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -512,7 +512,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -520,7 +520,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -528,7 +528,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -536,7 +536,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -546,13 +546,13 @@ const TemplateHarmonised = (args) =>
     <ecl-menu-item
       theme="${args.theme}"
       has-children
-      link="/example.html"
+      link="/example"
       trigger-aria-label="Access item's children"
     >
       Item 7 label
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -560,7 +560,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -568,7 +568,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -576,7 +576,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -584,7 +584,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -592,7 +592,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -600,7 +600,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >
@@ -608,7 +608,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
       <ecl-menu-item
         theme="${args.theme}"
-        link="/example.html"
+        link="/example"
         child
         slot="sublist"
       >

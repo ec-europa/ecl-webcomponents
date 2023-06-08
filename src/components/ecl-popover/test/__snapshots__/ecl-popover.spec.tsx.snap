@@ -12,49 +12,49 @@ exports[`ecl-popover renders 1`] = `
       <div class="ecl-popover__content">
         <ul class="ecl-popover__list">
           <li class="ecl-popover__item sc-ecl-popover-ec">
-            <ecl-link path="/example.html" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
+            <ecl-link path="/example" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
               <ecl-icon icon="global" size="fluid" slot="icon-before" sprite="" style-class="sc-ecl-popover-ec ecl-link__icon"></ecl-icon>
               Item 1
             </ecl-link>
           </li>
           <li class="ecl-popover__item sc-ecl-popover-ec">
-            <ecl-link path="/example.html" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
+            <ecl-link path="/example" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
               <ecl-icon icon="global" size="fluid" slot="icon-before" sprite="" style-class="sc-ecl-popover-ec ecl-link__icon"></ecl-icon>
               Item 2
             </ecl-link>
           </li>
           <li class="ecl-popover__item sc-ecl-popover-ec">
-            <ecl-link path="/example.html" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
+            <ecl-link path="/example" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
               <ecl-icon icon="global" size="fluid" slot="icon-before" sprite="" style-class="sc-ecl-popover-ec ecl-link__icon"></ecl-icon>
               Item 3
             </ecl-link>
           </li>
           <li class="ecl-popover__item sc-ecl-popover-ec">
-            <ecl-link path="/example.html" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
+            <ecl-link path="/example" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
               <ecl-icon icon="global" size="fluid" slot="icon-before" sprite="" style-class="sc-ecl-popover-ec ecl-link__icon"></ecl-icon>
               Item 4
             </ecl-link>
           </li>
           <li class="ecl-popover__item sc-ecl-popover-ec">
-            <ecl-link path="/example.html" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
+            <ecl-link path="/example" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
               <ecl-icon icon="global" size="fluid" slot="icon-before" sprite="" style-class="sc-ecl-popover-ec ecl-link__icon"></ecl-icon>
               Item 5
             </ecl-link>
           </li>
           <li class="ecl-popover__item sc-ecl-popover-ec">
-            <ecl-link path="/example.html" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
+            <ecl-link path="/example" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
               <ecl-icon icon="global" size="fluid" slot="icon-before" sprite="" style-class="sc-ecl-popover-ec ecl-link__icon"></ecl-icon>
               Item 6
             </ecl-link>
           </li>
           <li class="ecl-popover__item sc-ecl-popover-ec">
-            <ecl-link path="/example.html" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
+            <ecl-link path="/example" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
               <ecl-icon icon="global" size="fluid" slot="icon-before" sprite="" style-class="sc-ecl-popover-ec ecl-link__icon"></ecl-icon>
               Item 7
             </ecl-link>
           </li>
           <li class="ecl-popover__item sc-ecl-popover-ec">
-            <ecl-link path="/example.html" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
+            <ecl-link path="/example" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
               <ecl-icon icon="global" size="fluid" slot="icon-before" sprite="" style-class="sc-ecl-popover-ec ecl-link__icon"></ecl-icon>
               Item 8
             </ecl-link>

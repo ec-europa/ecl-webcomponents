@@ -4,7 +4,7 @@ const getArgs = () => {
     bannerTitle: 'EU Budget for the future',
     description: 'Innovation, economy, environment and geopolitics',
     ctaLabel: 'Subscribe',
-    ctaLink: '/example.html',
+    ctaLink: '/example',
     image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
     fullWidth: false,
     centered: true,

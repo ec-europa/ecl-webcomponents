@@ -26,14 +26,14 @@ exports[`ecl-description-list renders 1`] = `
         Standalone links
       </dt>
     </ecl-description-list-term>
-    <ecl-description-list-definition items="[{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;, &quot;icon&quot;: &quot;copy&quot;},{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;, &quot;icon&quot;: &quot;download&quot;}]" theme="ec" type="link">
+    <ecl-description-list-definition items="[{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example&quot;, &quot;icon&quot;: &quot;copy&quot;},{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example&quot;, &quot;icon&quot;: &quot;download&quot;}]" theme="ec" type="link">
       <!---->
       <dd class="ecl-description-list__definition ecl-description-list__definition--link sc-ecl-description-list-ec">
-        <ecl-link path="/example.html" style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+        <ecl-link path="/example" style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
           <ecl-icon icon="copy" slot="icon-before"></ecl-icon>
           Lorem ipsum dolor sit amet
         </ecl-link>
-        <ecl-link path="/example.html" style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+        <ecl-link path="/example" style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
           <ecl-icon icon="download" slot="icon-before"></ecl-icon>
           Lorem ipsum dolor sit amet
         </ecl-link>
@@ -45,13 +45,13 @@ exports[`ecl-description-list renders 1`] = `
         Links inline
       </dt>
     </ecl-description-list-term>
-    <ecl-description-list-definition items="[{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;},{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;}]" theme="ec" type="inline">
+    <ecl-description-list-definition items="[{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example&quot;},{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example&quot;}]" theme="ec" type="inline">
       <!---->
       <dd class="ecl-description-list__definition ecl-description-list__definition--inline sc-ecl-description-list-ec">
-        <ecl-link path="/example.html" style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+        <ecl-link path="/example" style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
           Lorem ipsum dolor sit amet
         </ecl-link>
-        <ecl-link path="/example.html" style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+        <ecl-link path="/example" style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
           Lorem ipsum dolor sit amet
         </ecl-link>
       </dd>
@@ -62,14 +62,14 @@ exports[`ecl-description-list renders 1`] = `
         Taxonomy list
       </dt>
     </ecl-description-list-term>
-    <ecl-description-list-definition items="[&quot;Taxonomy item 1&quot;, {&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example.html&quot;}, &quot;Taxonomy item 3&quot;]" theme="ec" type="taxonomy">
+    <ecl-description-list-definition items="[&quot;Taxonomy item 1&quot;, {&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example&quot;}, &quot;Taxonomy item 3&quot;]" theme="ec" type="taxonomy">
       <!---->
       <dd class="ecl-description-list__definition ecl-description-list__definition--taxonomy sc-ecl-description-list-ec">
         <span class="ecl-description-list__definition-item sc-ecl-description-list-ec">
           Taxonomy item 1
         </span>
         <span class="ecl-description-list__definition-item sc-ecl-description-list-ec">
-          <ecl-link path="/example.html">
+          <ecl-link path="/example">
             Taxonomy item 2
           </ecl-link>
         </span>

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-site-header renders 1`] = `
-<ecl-site-header ecl-script="" eu-label="Official EU languages:" lang-code="en" language="english" language-aria-label="Choose language" language-block="" language-id="language-switcher" language-title="Choose your language" login-block="" login-link="/example.html" login-text="Log in" logo-alt="European Commission" logo-title="European commission" non-eu-label="Other languages:" search-block="" search-placeholder="Placeholder text" search-text="search" theme="ec">
+<ecl-site-header ecl-script="" eu-label="Official EU languages:" lang-code="en" language="english" language-aria-label="Choose language" language-block="" language-id="language-switcher" language-title="Choose your language" login-block="" login-link="/example" login-text="Log in" logo-alt="European Commission" logo-title="European commission" non-eu-label="Other languages:" search-block="" search-placeholder="Placeholder text" search-text="search" theme="ec">
   <!---->
   <header class="ecl-site-header">
     <div class="ecl-site-header__header">
@@ -12,7 +12,7 @@ exports[`ecl-site-header renders 1`] = `
           </ecl-link>
           <div class="ecl-site-header__action">
             <div class="ecl-site-header__login-container">
-              <a class="ecl-button ecl-button--ghost ecl-site-header__login-toggle" href="/example.html">
+              <a class="ecl-button ecl-button--ghost ecl-site-header__login-toggle" href="/example">
                 <ecl-icon icon="log-in" size="s" style-class="ecl-site-header__icon sc-ecl-site-header-ec" theme="ec"></ecl-icon>
                 Log in
               </a>
@@ -45,9 +45,9 @@ exports[`ecl-site-header renders 1`] = `
                       Official EU languages:
                     </div>
                     <ul class="ecl-site-header__language-list">
-                      <ecl-language-item lang-code="bg" language="български" path="/example.html" slot="eu-category">
+                      <ecl-language-item lang-code="bg" language="български" path="/example" slot="eu-category">
                         <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
-                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example">
                             <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
                               bg
                             </span>
@@ -57,9 +57,9 @@ exports[`ecl-site-header renders 1`] = `
                           </a>
                         </li>
                       </ecl-language-item>
-                      <ecl-language-item lang-code="es" language="español" path="/example.html" slot="eu-category">
+                      <ecl-language-item lang-code="es" language="español" path="/example" slot="eu-category">
                         <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
-                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example">
                             <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
                               es
                             </span>
@@ -69,9 +69,9 @@ exports[`ecl-site-header renders 1`] = `
                           </a>
                         </li>
                       </ecl-language-item>
-                      <ecl-language-item lang-code="cs" language="čeština" path="/example.html" slot="eu-category">
+                      <ecl-language-item lang-code="cs" language="čeština" path="/example" slot="eu-category">
                         <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
-                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example">
                             <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
                               cs
                             </span>
@@ -81,9 +81,9 @@ exports[`ecl-site-header renders 1`] = `
                           </a>
                         </li>
                       </ecl-language-item>
-                      <ecl-language-item lang-code="da" language="dansk" path="/example.html" slot="eu-category">
+                      <ecl-language-item lang-code="da" language="dansk" path="/example" slot="eu-category">
                         <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
-                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example">
                             <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
                               da
                             </span>
@@ -93,9 +93,9 @@ exports[`ecl-site-header renders 1`] = `
                           </a>
                         </li>
                       </ecl-language-item>
-                      <ecl-language-item lang-code="de" language="Deutsch" path="/example.html" slot="eu-category">
+                      <ecl-language-item lang-code="de" language="Deutsch" path="/example" slot="eu-category">
                         <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
-                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example">
                             <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
                               de
                             </span>
@@ -105,9 +105,9 @@ exports[`ecl-site-header renders 1`] = `
                           </a>
                         </li>
                       </ecl-language-item>
-                      <ecl-language-item lang-code="et" language="eesti" path="/example.html" slot="eu-category">
+                      <ecl-language-item lang-code="et" language="eesti" path="/example" slot="eu-category">
                         <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
-                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example">
                             <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
                               et
                             </span>
@@ -117,9 +117,9 @@ exports[`ecl-site-header renders 1`] = `
                           </a>
                         </li>
                       </ecl-language-item>
-                      <ecl-language-item lang-code="el" language="ελληνικά" path="/example.html" slot="eu-category">
+                      <ecl-language-item lang-code="el" language="ελληνικά" path="/example" slot="eu-category">
                         <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
-                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example">
                             <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
                               el
                             </span>
@@ -129,9 +129,9 @@ exports[`ecl-site-header renders 1`] = `
                           </a>
                         </li>
                       </ecl-language-item>
-                      <ecl-language-item active="" lang-code="en" language="English" path="/example.html" slot="eu-category">
+                      <ecl-language-item active="" lang-code="en" language="English" path="/example" slot="eu-category">
                         <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
-                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link ecl-site-header__language-link--active sc-ecl-site-header-ec" href="/example.html">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link ecl-site-header__language-link--active sc-ecl-site-header-ec" href="/example">
                             <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
                               en
                             </span>
@@ -141,9 +141,9 @@ exports[`ecl-site-header renders 1`] = `
                           </a>
                         </li>
                       </ecl-language-item>
-                      <ecl-language-item lang-code="fr" language="français" path="/example.html" slot="eu-category">
+                      <ecl-language-item lang-code="fr" language="français" path="/example" slot="eu-category">
                         <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
-                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example">
                             <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
                               fr
                             </span>
@@ -153,9 +153,9 @@ exports[`ecl-site-header renders 1`] = `
                           </a>
                         </li>
                       </ecl-language-item>
-                      <ecl-language-item lang-code="ga" language="Gaeilge" path="/example.html" slot="eu-category">
+                      <ecl-language-item lang-code="ga" language="Gaeilge" path="/example" slot="eu-category">
                         <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
-                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example">
                             <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
                               ga
                             </span>
@@ -165,9 +165,9 @@ exports[`ecl-site-header renders 1`] = `
                           </a>
                         </li>
                       </ecl-language-item>
-                      <ecl-language-item lang-code="hr" language="hrvatski" path="/example.html" slot="eu-category">
+                      <ecl-language-item lang-code="hr" language="hrvatski" path="/example" slot="eu-category">
                         <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
-                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example">
                             <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
                               hr
                             </span>
@@ -177,9 +177,9 @@ exports[`ecl-site-header renders 1`] = `
                           </a>
                         </li>
                       </ecl-language-item>
-                      <ecl-language-item lang-code="it" language="italiano" path="/example.html" slot="eu-category">
+                      <ecl-language-item lang-code="it" language="italiano" path="/example" slot="eu-category">
                         <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
-                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example">
                             <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
                               it
                             </span>
@@ -196,9 +196,9 @@ exports[`ecl-site-header renders 1`] = `
                       Other languages:
                     </div>
                     <ul class="ecl-site-header__language-list">
-                      <ecl-language-item lang-code="zh" language="中文" path="/example.html" slot="non-eu-category">
+                      <ecl-language-item lang-code="zh" language="中文" path="/example" slot="non-eu-category">
                         <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
-                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example">
                             <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
                               zh
                             </span>
@@ -208,9 +208,9 @@ exports[`ecl-site-header renders 1`] = `
                           </a>
                         </li>
                       </ecl-language-item>
-                      <ecl-language-item lang-code="tr" language="Türk" path="/example.html" slot="non-eu-category">
+                      <ecl-language-item lang-code="tr" language="Türk" path="/example" slot="non-eu-category">
                         <li class="ecl-site-header__language-item sc-ecl-site-header-ec">
-                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example.html">
+                          <a class="ecl-link ecl-link--standalone ecl-site-header__language-link sc-ecl-site-header-ec" href="/example">
                             <span class="ecl-site-header__language-link-code sc-ecl-site-header-ec">
                               tr
                             </span>

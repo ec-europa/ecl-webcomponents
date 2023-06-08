@@ -25,7 +25,7 @@ const Template = (args) =>
     ecl-script
    >
     <ecl-breadcrumb-item
-      path="/example.html"
+      path="/example"
       theme="${args.theme}"
     >
       Home
@@ -36,19 +36,19 @@ const Template = (args) =>
      >
      </ecl-breadcrumb-item>
     <ecl-breadcrumb-item
-      path="/example.html"
+      path="/example"
       theme="${args.theme}"
     >
       About the European Commission
     </ecl-breadcrumb-item>
     <ecl-breadcrumb-item
-      path="/example.html"
+      path="/example"
       theme="${args.theme}"
     >
       Organisational structure
     </ecl-breadcrumb-item>
     <ecl-breadcrumb-item
-      path="/example.html"
+      path="/example"
       theme="${args.theme}"
     >
       How the Commission is organised

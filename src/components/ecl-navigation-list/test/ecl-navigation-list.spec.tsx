@@ -28,7 +28,7 @@ describe('ecl-navigation-list', () => {
             <ecl-link
               theme="ec"
               slot="title"
-              path="/example.html"
+              path="/example"
               variant="standalone"
             >
               Title 1
@@ -40,7 +40,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 1
             </ecl-link>
@@ -48,7 +48,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 2
             </ecl-link>
@@ -56,7 +56,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 3
             </ecl-link>
@@ -64,7 +64,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 4
             </ecl-link>
@@ -72,7 +72,7 @@ describe('ecl-navigation-list', () => {
               slot="links-secondary"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Secondary Link 1
             </ecl-link>
@@ -80,7 +80,7 @@ describe('ecl-navigation-list', () => {
               slot="links-secondary"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Secondary Link 2
             </ecl-link>
@@ -102,7 +102,7 @@ describe('ecl-navigation-list', () => {
             <ecl-link
               theme="ec"
               slot="title"
-              path="/example.html"
+              path="/example"
               variant="standalone"
             >
               Title 2
@@ -114,7 +114,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 1
             </ecl-link>
@@ -122,7 +122,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 2
             </ecl-link>
@@ -130,7 +130,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 3
             </ecl-link>
@@ -138,7 +138,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 4
             </ecl-link>
@@ -146,7 +146,7 @@ describe('ecl-navigation-list', () => {
               slot="links-secondary"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Secondary Link 1
             </ecl-link>
@@ -154,7 +154,7 @@ describe('ecl-navigation-list', () => {
               slot="links-secondary"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Secondary Link 2
             </ecl-link>
@@ -176,7 +176,7 @@ describe('ecl-navigation-list', () => {
             <ecl-link
               theme="ec"
               slot="title"
-              path="/example.html"
+              path="/example"
               variant="standalone"
             >
               Title 3
@@ -188,7 +188,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 1
             </ecl-link>
@@ -196,7 +196,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 2
             </ecl-link>
@@ -204,7 +204,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 3
             </ecl-link>
@@ -212,7 +212,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 4
             </ecl-link>
@@ -220,7 +220,7 @@ describe('ecl-navigation-list', () => {
               slot="links-secondary"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Secondary Link 1
             </ecl-link>
@@ -228,7 +228,7 @@ describe('ecl-navigation-list', () => {
               slot="links-secondary"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Secondary Link 2
             </ecl-link>
@@ -250,7 +250,7 @@ describe('ecl-navigation-list', () => {
             <ecl-link
               theme="ec"
               slot="title"
-              path="/example.html"
+              path="/example"
               variant="standalone"
             >
               Title 4
@@ -262,7 +262,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 1
             </ecl-link>
@@ -270,7 +270,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 2
             </ecl-link>
@@ -278,7 +278,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 3
             </ecl-link>
@@ -286,7 +286,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 4
             </ecl-link>
@@ -294,7 +294,7 @@ describe('ecl-navigation-list', () => {
               slot="links-secondary"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Secondary Link 1
             </ecl-link>
@@ -302,7 +302,7 @@ describe('ecl-navigation-list', () => {
               slot="links-secondary"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Secondary Link 2
             </ecl-link>
@@ -324,7 +324,7 @@ describe('ecl-navigation-list', () => {
             <ecl-link
               theme="ec"
               slot="title"
-              path="/example.html"
+              path="/example"
               variant="standalone"
             >
               Title 5
@@ -336,7 +336,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 1
             </ecl-link>
@@ -344,7 +344,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 2
             </ecl-link>
@@ -352,7 +352,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 3
             </ecl-link>
@@ -360,7 +360,7 @@ describe('ecl-navigation-list', () => {
               slot="links"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Primary Link 4
             </ecl-link>
@@ -368,7 +368,7 @@ describe('ecl-navigation-list', () => {
               slot="links-secondary"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Secondary Link 1
             </ecl-link>
@@ -376,7 +376,7 @@ describe('ecl-navigation-list', () => {
               slot="links-secondary"
               theme="ec"
               variant="standalone"
-              path="/example.html"
+              path="/example"
             >
               Secondary Link 2
             </ecl-link>

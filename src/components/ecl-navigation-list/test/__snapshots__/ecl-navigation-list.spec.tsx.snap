@@ -10,9 +10,9 @@ exports[`ecl-navigation-list renders 1`] = `
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
           <h1 class="ecl-content-block__title">
-            <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
+            <ecl-link path="/example" slot="title" theme="ec" variant="standalone">
               <!---->
-              <a class="ecl-link ecl-link--standalone" href="/example.html">
+              <a class="ecl-link ecl-link--standalone" href="/example">
                 Title 1
                 <slot-fb name="icon-after"></slot-fb>
               </a>
@@ -26,25 +26,25 @@ exports[`ecl-navigation-list renders 1`] = `
           <div class="ecl-content-block__link-container">
             <ul class="ecl-content-block__link-list">
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 1
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 2
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 3
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 4
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
@@ -52,13 +52,13 @@ exports[`ecl-navigation-list renders 1`] = `
             </ul>
             <ul class="ecl-content-block__link-list">
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Secondary Link 1
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Secondary Link 2
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
@@ -74,9 +74,9 @@ exports[`ecl-navigation-list renders 1`] = `
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
           <h1 class="ecl-content-block__title">
-            <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
+            <ecl-link path="/example" slot="title" theme="ec" variant="standalone">
               <!---->
-              <a class="ecl-link ecl-link--standalone" href="/example.html">
+              <a class="ecl-link ecl-link--standalone" href="/example">
                 Title 2
                 <slot-fb name="icon-after"></slot-fb>
               </a>
@@ -90,25 +90,25 @@ exports[`ecl-navigation-list renders 1`] = `
           <div class="ecl-content-block__link-container">
             <ul class="ecl-content-block__link-list">
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 1
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 2
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 3
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 4
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
@@ -116,13 +116,13 @@ exports[`ecl-navigation-list renders 1`] = `
             </ul>
             <ul class="ecl-content-block__link-list">
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Secondary Link 1
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Secondary Link 2
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
@@ -138,9 +138,9 @@ exports[`ecl-navigation-list renders 1`] = `
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
           <h1 class="ecl-content-block__title">
-            <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
+            <ecl-link path="/example" slot="title" theme="ec" variant="standalone">
               <!---->
-              <a class="ecl-link ecl-link--standalone" href="/example.html">
+              <a class="ecl-link ecl-link--standalone" href="/example">
                 Title 3
                 <slot-fb name="icon-after"></slot-fb>
               </a>
@@ -154,25 +154,25 @@ exports[`ecl-navigation-list renders 1`] = `
           <div class="ecl-content-block__link-container">
             <ul class="ecl-content-block__link-list">
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 1
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 2
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 3
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 4
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
@@ -180,13 +180,13 @@ exports[`ecl-navigation-list renders 1`] = `
             </ul>
             <ul class="ecl-content-block__link-list">
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Secondary Link 1
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Secondary Link 2
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
@@ -202,9 +202,9 @@ exports[`ecl-navigation-list renders 1`] = `
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
           <h1 class="ecl-content-block__title">
-            <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
+            <ecl-link path="/example" slot="title" theme="ec" variant="standalone">
               <!---->
-              <a class="ecl-link ecl-link--standalone" href="/example.html">
+              <a class="ecl-link ecl-link--standalone" href="/example">
                 Title 4
                 <slot-fb name="icon-after"></slot-fb>
               </a>
@@ -218,25 +218,25 @@ exports[`ecl-navigation-list renders 1`] = `
           <div class="ecl-content-block__link-container">
             <ul class="ecl-content-block__link-list">
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 1
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 2
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 3
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 4
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
@@ -244,13 +244,13 @@ exports[`ecl-navigation-list renders 1`] = `
             </ul>
             <ul class="ecl-content-block__link-list">
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Secondary Link 1
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Secondary Link 2
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
@@ -266,9 +266,9 @@ exports[`ecl-navigation-list renders 1`] = `
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
           <h1 class="ecl-content-block__title">
-            <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
+            <ecl-link path="/example" slot="title" theme="ec" variant="standalone">
               <!---->
-              <a class="ecl-link ecl-link--standalone" href="/example.html">
+              <a class="ecl-link ecl-link--standalone" href="/example">
                 Title 5
                 <slot-fb name="icon-after"></slot-fb>
               </a>
@@ -282,25 +282,25 @@ exports[`ecl-navigation-list renders 1`] = `
           <div class="ecl-content-block__link-container">
             <ul class="ecl-content-block__link-list">
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 1
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 2
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 3
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Primary Link 4
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
@@ -308,13 +308,13 @@ exports[`ecl-navigation-list renders 1`] = `
             </ul>
             <ul class="ecl-content-block__link-list">
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Secondary Link 1
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </li>
               <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
                   Secondary Link 2
                   <slot-fb name="icon-after"></slot-fb>
                 </a>

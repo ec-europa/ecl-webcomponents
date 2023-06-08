@@ -12,49 +12,49 @@ const Template = (args) =>
     item-id="popover-example"
   >
     <ecl-popover-item
-      path="/example.html"
+      path="/example"
       icon="global"
     >
       Item 1
     </ecl-popover-item>
     <ecl-popover-item
-      path="/example.html"
+      path="/example"
       icon="global"
     >
       Item 2
     </ecl-popover-item>
     <ecl-popover-item
-      path="/example.html"
+      path="/example"
       icon="global"
     >
       Item 3
     </ecl-popover-item>
     <ecl-popover-item
-      path="/example.html"
+      path="/example"
       icon="global"
     >
       Item 4
     </ecl-popover-item>
       <ecl-popover-item
-      path="/example.html"
+      path="/example"
       icon="global"
     >
       Item 5
     </ecl-popover-item>
     <ecl-popover-item
-      path="/example.html"
+      path="/example"
       icon="global"
     >
       Item 6
     </ecl-popover-item>
     <ecl-popover-item
-      path="/example.html"
+      path="/example"
       icon="global"
     >
       Item 7
     </ecl-popover-item>
     <ecl-popover-item
-      path="/example.html"
+      path="/example"
       icon="global"
     >
       Item 8

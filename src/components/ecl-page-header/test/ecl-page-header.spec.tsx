@@ -23,7 +23,7 @@ describe('ecl-page-header', () => {
           ecl-script
          >
           <ecl-breadcrumb-item
-            path="/example.html"
+            path="/example"
             variant="negative"
             theme="ec"
           >
@@ -37,21 +37,21 @@ describe('ecl-page-header', () => {
            </ecl-breadcrumb-item>
           <ecl-breadcrumb-item
             variant="negative"
-            path="/example.html"
+            path="/example"
             theme="ec"
           >
             About the European Commission
           </ecl-breadcrumb-item>
           <ecl-breadcrumb-item
             variant="negative"
-            path="/example.html"
+            path="/example"
             theme="ec"
           >
             Organisational structure
           </ecl-breadcrumb-item>
           <ecl-breadcrumb-item
             variant="negative"
-            path="/example.html"
+            path="/example"
             theme="ec"
           >
             How the Commission is organised
@@ -65,9 +65,9 @@ describe('ecl-page-header', () => {
             News
           </ecl-breadcrumb-item>
         </ecl-breadcrumb>
-        Lorem ipsum dolor sit amet, <a class="ecl-link" href="/example.html">consectetur adipiscing elit</a>.
+        Lorem ipsum dolor sit amet, <a class="ecl-link" href="/example">consectetur adipiscing elit</a>.
         Quisque nec ullamcorper mi. Morbi interdum fermentum tempus. Nam nec rhoncus risus,
-        <a class="ecl-link" href="/example.html">eget dictum elit</a>. Vestibulum gravida tincidunt venenatis
+        <a class="ecl-link" href="/example">eget dictum elit</a>. Vestibulum gravida tincidunt venenatis
       </ecl-page-header>`,
     });
 

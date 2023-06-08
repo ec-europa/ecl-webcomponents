@@ -82,7 +82,7 @@ const Template = (args) =>
       <ecl-link
         theme="${args.theme}"
         slot="title"
-        path="/example.html"
+        path="/example"
         variant="standalone"
       >
         Title
@@ -91,7 +91,7 @@ const Template = (args) =>
         slot="links"
         theme="${args.theme}"
         variant="standalone"
-        path="/example.html"
+        path="/example"
       >
         Primary Link 1
       </ecl-link>
@@ -99,7 +99,7 @@ const Template = (args) =>
         slot="links"
         theme="${args.theme}"
         variant="standalone"
-        path="/example.html"
+        path="/example"
       >
         Primary Link 2
       </ecl-link>
@@ -107,7 +107,7 @@ const Template = (args) =>
         slot="links"
         theme="${args.theme}"
         variant="standalone"
-        path="/example.html"
+        path="/example"
       >
         Primary Link 3
       </ecl-link>
@@ -115,7 +115,7 @@ const Template = (args) =>
         slot="links"
         theme="${args.theme}"
         variant="standalone"
-        path="/example.html"
+        path="/example"
       >
         Primary Link 4
       </ecl-link>
@@ -123,7 +123,7 @@ const Template = (args) =>
         slot="links-secondary"
         theme="${args.theme}"
         variant="standalone"
-        path="/example.html"
+        path="/example"
       >
         Secondary Link 1
       </ecl-link>
@@ -131,7 +131,7 @@ const Template = (args) =>
         slot="links-secondary"
         theme="${args.theme}"
         variant="standalone"
-        path="/example.html"
+        path="/example"
       >
         Secondary Link 2
       </ecl-link>
@@ -158,7 +158,7 @@ const Template = (args) =>
         <ecl-description-list-definition
           type="link"
           theme="${args.theme}"
-          items='[{"label": "Lorem ipsum dolor sit amet", "path": "/example.html", "icon": "copy"},{"label": "Lorem ipsum dolor sit amet", "path": "/example.html", "icon": "download"}]'
+          items='[{"label": "Lorem ipsum dolor sit amet", "path": "/example", "icon": "copy"},{"label": "Lorem ipsum dolor sit amet", "path": "/example", "icon": "download"}]'
         >
         </ecl-description-list-definition>
         <ecl-description-list-term
@@ -169,7 +169,7 @@ const Template = (args) =>
         <ecl-description-list-definition
           type="inline"
           theme="${args.theme}"
-          items='[{"label": "Lorem ipsum dolor sit amet", "path": "/example.html"},{"label": "Lorem ipsum dolor sit amet", "path": "/example.html"}]'
+          items='[{"label": "Lorem ipsum dolor sit amet", "path": "/example"},{"label": "Lorem ipsum dolor sit amet", "path": "/example"}]'
         >
         </ecl-description-list-definition>
         <ecl-description-list-term
@@ -180,7 +180,7 @@ const Template = (args) =>
         <ecl-description-list-definition
           type="taxonomy"
           theme="${args.theme}"
-          items='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"},"Taxonomy item 3"]'
+          items='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example"},"Taxonomy item 3"]'
         ></ecl-description-list-definition>
       </ecl-description-list>
     </ecl-content-block>

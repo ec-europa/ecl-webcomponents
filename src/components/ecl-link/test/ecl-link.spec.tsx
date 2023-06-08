@@ -9,7 +9,7 @@ describe('ecl-link', () => {
       html: `<ecl-link
               variant="default"
               theme="ec"
-              path="/example.html"
+              path="/example"
             >
               A default link
             </ecl-link>`,
@@ -23,7 +23,7 @@ describe('ecl-link', () => {
       html: `<ecl-link
               variant="standalone"
               theme="ec"
-              path="/example.html"
+              path="/example"
             >
               A standalone link
             </ecl-link>`,
@@ -37,7 +37,7 @@ describe('ecl-link', () => {
       html: `<ecl-link
               variant="standalone"
               theme="ec"
-              path="/example.html"
+              path="/example"
             >
               <ecl-icon slot="ecl-icon-after" icon="check"> 
             </ecl-link>`,

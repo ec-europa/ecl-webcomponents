@@ -23,7 +23,7 @@ describe('ecl-site-header', () => {
         eu-label="Official EU languages:"
         non-eu-label="Other languages:"
         language-title="Choose your language"
-        login-link="/example.html"
+        login-link="/example"
         language-id="language-switcher"
         logo-alt="European Commission"
         logo-title="European commission"
@@ -31,86 +31,86 @@ describe('ecl-site-header', () => {
       >
       <ecl-language-item
         slot="eu-category"
-        path="/example.html"
+        path="/example"
         lang-code="bg"
         language="български"
       ></ecl-language-item>
       <ecl-language-item
         slot="eu-category"
-        path="/example.html"
+        path="/example"
         lang-code="es"
         language="español"
       ></ecl-language-item>
       <ecl-language-item
         slot="eu-category"
-        path="/example.html"
+        path="/example"
         lang-code="cs"
         language="čeština"
       ></ecl-language-item>
       <ecl-language-item
         slot="eu-category"
-        path="/example.html"
+        path="/example"
         lang-code="da"
         language="dansk"
       ></ecl-language-item>
       <ecl-language-item
         slot="eu-category"
-        path="/example.html"
+        path="/example"
         lang-code="de"
         language="Deutsch"
       ></ecl-language-item>
       <ecl-language-item
         slot="eu-category"
-        path="/example.html"
+        path="/example"
         lang-code="et"
         language="eesti"
       ></ecl-language-item>
       <ecl-language-item
         slot="eu-category"
-        path="/example.html"
+        path="/example"
         lang-code="el"
         language="ελληνικά"
       ></ecl-language-item>
       <ecl-language-item
         slot="eu-category"
-        path="/example.html"
+        path="/example"
         lang-code="en"
         language="English"
         active
       ></ecl-language-item>
       <ecl-language-item
         slot="eu-category"
-        path="/example.html"
+        path="/example"
         lang-code="fr"
         language="français"
       ></ecl-language-item>
       <ecl-language-item
         slot="eu-category"
-        path="/example.html"
+        path="/example"
         lang-code="ga"
         language="Gaeilge"
       ></ecl-language-item>
       <ecl-language-item
         slot="eu-category"
-        path="/example.html"
+        path="/example"
         lang-code="hr"
         language="hrvatski"
       ></ecl-language-item>
       <ecl-language-item
         slot="eu-category"
-        path="/example.html"
+        path="/example"
         lang-code="it"
         language="italiano"
       ></ecl-language-item>
       <ecl-language-item
         slot="non-eu-category"
-        path="/example.html"
+        path="/example"
         lang-code="zh"
         language="中文"
       ></ecl-language-item>
       <ecl-language-item
         slot="non-eu-category"
-        path="/example.html"
+        path="/example"
         lang-code="tr"
         language="Türk"
       ></ecl-language-item>

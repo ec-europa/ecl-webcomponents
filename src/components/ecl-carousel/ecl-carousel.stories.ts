@@ -29,7 +29,7 @@ const Template = (args) =>
     <ecl-carousel-item
       banner-variant="text-box"
       theme="${args.theme}"
-      cta-link="/example.html"
+      cta-link="/example"
       cta-label="Subscribe"
       centered=false
       size="${args.size}"
@@ -41,7 +41,7 @@ const Template = (args) =>
     <ecl-carousel-item
       banner-variant="text-highlight"
       theme="${args.theme}"
-      cta-link="/example.html"
+      cta-link="/example"
       cta-label="Subscribe"
       centered=false
       size="${args.size}"
@@ -53,7 +53,7 @@ const Template = (args) =>
     <ecl-carousel-item
       banner-variant="image-overlay"
       theme="${args.theme}"
-      cta-link="/example.html"
+      cta-link="/example"
       size="${args.size}"
       cta-label="Subscribe"
       image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"

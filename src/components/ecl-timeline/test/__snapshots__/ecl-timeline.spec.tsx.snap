@@ -13,7 +13,7 @@ exports[`ecl-timeline renders 1`] = `
         Item title
       </div>
       <div class="ecl-timeline__content">
-        <a class="ecl-link" href="/example.html">
+        <a class="ecl-link" href="/example">
           President Juncker's State of the Union speech
         </a>
       </div>

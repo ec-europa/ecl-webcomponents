@@ -12,7 +12,7 @@ describe('ecl-pagination', () => {
         theme="ec"
       >
         <ecl-pagination-item
-          path="/example.html"
+          path="/example"
           theme="ec"
           aria-label="Previous page"
           previous
@@ -21,20 +21,20 @@ describe('ecl-pagination', () => {
         </ecl-pagination-item>
         <ecl-pagination-item
           theme="ec"
-          path="/example.html"
+          path="/example"
           aria-label="Page 24"
          >
           24
          </ecl-pagination-item>
         <ecl-pagination-item
-          path="/example.html"
+          path="/example"
           theme="ec"
           aria-label="Page 25"
         >
           25
         </ecl-pagination-item>
         <ecl-pagination-item
-          path="/example.html"
+          path="/example"
           theme="ec"
           aria-label="Page 26"
           current
@@ -42,7 +42,7 @@ describe('ecl-pagination', () => {
           26
         </ecl-pagination-item>
         <ecl-pagination-item
-          path="/example.html"
+          path="/example"
           theme="ec"
           aria-label="Page 27"
         >

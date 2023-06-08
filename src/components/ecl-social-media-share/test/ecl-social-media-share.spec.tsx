@@ -54,7 +54,7 @@ describe('ecl-social-media-share', () => {
           item-id="popover-example"
         >
           <ecl-popover-item
-            path="/example.html"
+            path="/example"
             icon="pinterest-color"
             icon-sprite="icons-social-media"
             icon-size="s"
@@ -62,7 +62,7 @@ describe('ecl-social-media-share', () => {
             Pinterest
           </ecl-popover-item>
           <ecl-popover-item
-            path="/example.html"
+            path="/example"
             icon="mastodon-color"
             icon-sprite="icons-social-media"
             icon-size="s"
@@ -70,7 +70,7 @@ describe('ecl-social-media-share', () => {
             Mastodon
           </ecl-popover-item>
           <ecl-popover-item
-            path="/example.html"
+            path="/example"
             icon="reddit-color"
             icon-sprite="icons-social-media"
             icon-size="s"
@@ -78,7 +78,7 @@ describe('ecl-social-media-share', () => {
             Reddit
           </ecl-popover-item>
           <ecl-popover-item
-            path="/example.html"
+            path="/example"
             icon="youtube-color"
             icon-sprite="icons-social-media"
             icon-size="s"
@@ -86,7 +86,7 @@ describe('ecl-social-media-share', () => {
             Youtube
           </ecl-popover-item>
           <ecl-popover-item
-            path="/example.html"
+            path="/example"
             icon="flickr-color"
             icon-sprite="icons-social-media"
             icon-size="s"
@@ -94,7 +94,7 @@ describe('ecl-social-media-share', () => {
             Flickr
           </ecl-popover-item>
           <ecl-popover-item
-            path="/example.html"
+            path="/example"
             icon="skype-color"
             icon-sprite="icons-social-media"
             icon-size="s"

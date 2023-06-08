@@ -23,7 +23,7 @@ describe('ecl-gallery', () => {
         <ecl-gallery-item
           theme="ec"
           meta="Copyright, Author, Licence for image 1"
-          media-share-path="/example.html"
+          media-share-path="/example"
           media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           image-alt="Image 1"
         >    
@@ -42,7 +42,7 @@ describe('ecl-gallery', () => {
         <ecl-gallery-item
           theme="ec"
           meta="Copyright, Author, Licence for image 2"
-          media-share-path="/example.html"
+          media-share-path="/example"
           media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
           image-alt="Image 2"
         >
@@ -51,7 +51,7 @@ describe('ecl-gallery', () => {
         <ecl-gallery-item
           theme="ec"
           meta="Copyright, Author, Licence for image 3"
-          media-share-path="/example.html"
+          media-share-path="/example"
           media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"
           image-alt="Image 3"
         >
@@ -60,7 +60,7 @@ describe('ecl-gallery', () => {
         <ecl-gallery-item
           theme="ec"
           meta="Copyright, Author, Licence for image 4"
-          media-share-path="/example.html"
+          media-share-path="/example"
           media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg"
           image-alt="Image 3"
         >
@@ -68,7 +68,7 @@ describe('ecl-gallery', () => {
         </ecl-gallery-item>
         <ecl-gallery-item
           theme="ec"
-          media-share-path="/example.html"
+          media-share-path="/example"
           meta="Copyright, Author, Licence for video"
           type="html-video"
         >
@@ -103,7 +103,7 @@ describe('ecl-gallery', () => {
         <ecl-gallery-item
           theme="ec"
           meta="Copyright, Author, Licence for image 6"
-          media-share-path="/example.html"
+          media-share-path="/example"
           media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg"
           image-alt="Image 6"
         >
@@ -112,7 +112,7 @@ describe('ecl-gallery', () => {
         <ecl-gallery-item
           theme="ec"
           meta="Copyright, Author, Licence for image 7"
-          media-share-path="/example.html"
+          media-share-path="/example"
           media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg"
           image-alt="Image 7"
         >
@@ -121,7 +121,7 @@ describe('ecl-gallery', () => {
         <ecl-gallery-item
           theme="ec"
           meta="Copyright, Author, Licence for image 8"
-          media-share-path="/example.html"
+          media-share-path="/example"
           media-iframe-href="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&lg=EN"
           media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg"
           image-alt="Image 8"
@@ -131,7 +131,7 @@ describe('ecl-gallery', () => {
         <ecl-gallery-item
           theme="ec"
           meta="Copyright, Author, Licence for image 9"
-          media-share-path="/example.html"
+          media-share-path="/example"
           media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg"
           image-alt="Image 9"
         >
@@ -140,7 +140,7 @@ describe('ecl-gallery', () => {
         <ecl-gallery-item
           theme="ec"
           meta="Copyright, Author, Licence for image 10"
-          media-share-path="/example.html"
+          media-share-path="/example"
           media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg"
           image-alt="Image 10"
         >
