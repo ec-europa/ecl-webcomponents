@@ -38,4 +38,4 @@ cp -r ./src/components/ecl-range/build ./build
 cp -r ./src/components/ecl-menu/build ./build
 cp -r ./src/components/ecl-modal/build ./build
 cp -r ./src/components/ecl-description-list/build ./build
-cp ./static/example.html ./build
+cp -a ./static/* ./build
