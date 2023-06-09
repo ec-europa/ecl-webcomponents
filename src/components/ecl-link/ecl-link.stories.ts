@@ -1,9 +1,10 @@
+import { randomizedLink } from "../../utils/randomizedLink"; 
 import iconsAllEc from '@ecl/resources-ec-icons/dist/lists/all.json';
 
 const getArgs = () => {
   return {
     variant: 'default',
-    path: '/example.html',
+    path: randomizedLink('/example.html'),
     external: false,
     label: 'An ECL link',
     icon: '',

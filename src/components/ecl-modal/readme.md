@@ -25,14 +25,14 @@
 
 ### Depends on
 
-- [ecl-button](../ecl-button)
 - [ecl-icon](../ecl-icon)
+- [ecl-button](../ecl-button)
 
 ### Graph
 ```mermaid
 graph TD;
-  ecl-modal --> ecl-button
   ecl-modal --> ecl-icon
+  ecl-modal --> ecl-button
   style ecl-modal fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

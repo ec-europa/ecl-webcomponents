@@ -59,12 +59,21 @@ export class EclModal {
         <div class="ecl-modal__container ecl-container">
           <div class="ecl-modal__content ecl-col-12 ecl-col-m-8 ecl-offset-m-2 ecl-col-l-6 ecl-offset-l-3">
             <header class="ecl-modal__header">
-            { this.withHeader ?
+            {this.withHeader && this.variant !== 'default' ? (
+              <ecl-icon
+                theme={this.theme}
+                icon={this.variant}
+                size="m"
+                class={`ecl-modal__icon sc-ecl-modal-${this.theme}`}
+              ></ecl-icon>
+            ) : ''}
+            {this.withHeader ? (
               <div class="ecl-modal__header-content">
                 <slot name="header"></slot>
-              </div> : ''
-            }
+              </div>
+            ) : ''}
             <ecl-button
+              theme={this.theme}
               type="button"
               variant="ghost"
               styleClass={`ecl-modal__close sc-ecl-modal-${this.theme}`}
@@ -72,6 +81,7 @@ export class EclModal {
             >
               {this.closeLabel}
               <ecl-icon
+                theme={this.theme}
                 icon="close-filled"
                 size="s"
               ></ecl-icon>

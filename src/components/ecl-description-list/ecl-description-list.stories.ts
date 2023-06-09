@@ -1,3 +1,5 @@
+import { randomizedLink } from "../../utils/randomizedLink";
+
 export default {
   title: 'Components/List/description-list',
 };
@@ -19,7 +21,7 @@ const Template = (args) =>
       type="text"
       theme="${args.theme}"
     >
-      Lorem ipsum dolor sit amet, <ecl-link path="/example.html" title"title">consectetur adipiscing elit</ecl-link>. Suspendisse ut sapien condimentum, aliquet turpis sit amet, finibus purus. Donec porttitor iaculis felis ut dapibus. Sed blandit, massa ac suscipit facilisis
+      Lorem ipsum dolor sit amet, <ecl-link path="${randomizedLink('/example.html')}" title"title">consectetur adipiscing elit</ecl-link>. Suspendisse ut sapien condimentum, aliquet turpis sit amet, finibus purus. Donec porttitor iaculis felis ut dapibus. Sed blandit, massa ac suscipit facilisis
     </ecl-description-list-definition>
     <ecl-description-list-term
       theme="${args.theme}"
@@ -29,7 +31,7 @@ const Template = (args) =>
     <ecl-description-list-definition
       type="link"
       theme="${args.theme}"
-      items='[{"label": "Lorem ipsum dolor sit amet", "path": "/example.html", "icon": "copy"},{"label": "Lorem ipsum dolor sit amet", "path": "/example.html", "icon": "download"}]'
+      items='[{"label": "Lorem ipsum dolor sit amet", "path": "${randomizedLink('/example.html')}", "icon": "copy"},{"label": "Lorem ipsum dolor sit amet", "path": "${randomizedLink('/example.html')}", "icon": "download"}]'
     >
     </ecl-description-list-definition>
     <ecl-description-list-term
@@ -40,7 +42,7 @@ const Template = (args) =>
     <ecl-description-list-definition
       type="inline"
       theme="${args.theme}"
-      items='[{"label": "Lorem ipsum dolor sit amet", "path": "/example.html"},{"label": "Lorem ipsum dolor sit amet", "path": "/example.html"}]'
+      items='[{"label": "Lorem ipsum dolor sit amet", "path": "${randomizedLink('/example.html')}"},{"label": "Lorem ipsum dolor sit amet", "path": "${randomizedLink('/example.html')}"}]'
     >
     </ecl-description-list-definition>
     <ecl-description-list-term
@@ -52,7 +54,7 @@ const Template = (args) =>
       type="taxonomy"
       theme="${args.theme}"
       collapsible
-      items='["Taxonomy item 1", {"label": "Taxonomy item 2", "path": "/example.html"}, "Taxonomy item 3"]'
+      items='["Taxonomy item 1", {"label": "Taxonomy item 2", "path": "${randomizedLink('/example.html')}"}, "Taxonomy item 3"]'
     >
     </ecl-description-list-definition>
   </ecl-description-list>`;

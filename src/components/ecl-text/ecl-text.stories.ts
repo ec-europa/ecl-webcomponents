@@ -21,6 +21,7 @@ const getArgTypes = () => {
       description: 'Font size (not for paragraphs)',
     },
     isBold: {
+      name: 'is-bold',
       type: { name: 'boolean' },
       description: 'Higher font weight',
     },
@@ -48,7 +49,7 @@ const Template = args => {
     tag="${args.tag}"
     theme="${args.theme}"
     level="${args.level}"
-    isBold=${args.isBold}
+    is-bold=${args.isBold}
     size="${args.size}"
   >
     ${args.text}

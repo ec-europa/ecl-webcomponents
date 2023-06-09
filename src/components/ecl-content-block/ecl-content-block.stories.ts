@@ -1,3 +1,5 @@
+import { randomizedLink } from "../../utils/randomizedLink"; 
+
 const getArgs = () => {
   return {
     title: 'Title',
@@ -61,20 +63,20 @@ const Template = (args) =>
     >
       High importance
     </ecl-label>
-    <ecl-text tag="p" slot="description">${args.description}</ecl-tag>
     <ecl-link
       theme="${args.theme}"
       slot="title"
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
       variant="standalone"
     >
-      ${args.title}
+      Title
     </ecl-link>
+    <ecl-text tag="p" slot="description">${args.description}</ecl-text>
     <ecl-link
       slot="links"
       theme="${args.theme}"
       variant="standalone"
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
     >
       Primary Link 1
     </ecl-link>
@@ -82,7 +84,7 @@ const Template = (args) =>
       slot="links"
       theme="${args.theme}"
       variant="standalone"
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
     >
       Primary Link 2
     </ecl-link>
@@ -90,7 +92,7 @@ const Template = (args) =>
       slot="links"
       theme="${args.theme}"
       variant="standalone"
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
     >
       Primary Link 3
     </ecl-link>
@@ -98,7 +100,7 @@ const Template = (args) =>
       slot="links"
       theme="${args.theme}"
       variant="standalone"
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
     >
       Primary Link 4
     </ecl-link>
@@ -106,7 +108,7 @@ const Template = (args) =>
       slot="links-secondary"
       theme="${args.theme}"
       variant="standalone"
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
     >
       Secondary Link 1
     </ecl-link>
@@ -114,7 +116,7 @@ const Template = (args) =>
       slot="links-secondary"
       theme="${args.theme}"
       variant="standalone"
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
     >
       Secondary Link 2
     </ecl-link>
@@ -141,7 +143,7 @@ const Template = (args) =>
       <ecl-description-list-definition
         type="link"
         theme="${args.theme}"
-        items='[{"label": "Lorem ipsum dolor sit amet", "path": "/example.html", "icon": "copy"},{"label": "Lorem ipsum dolor sit amet", "path": "/example.html", "icon": "download"}]'
+        items='[{"label": "Lorem ipsum dolor sit amet", "path": "${randomizedLink('/example.html')}", "icon": "copy"},{"label": "Lorem ipsum dolor sit amet", "path": "${randomizedLink('/example.html')}", "icon": "download"}]'
       >
       </ecl-description-list-definition>
       <ecl-description-list-term
@@ -152,7 +154,7 @@ const Template = (args) =>
       <ecl-description-list-definition
         type="inline"
         theme="${args.theme}"
-        items='[{"label": "Lorem ipsum dolor sit amet", "path": "/example.html"},{"label": "Lorem ipsum dolor sit amet", "path": "/example.html"}]'
+        items='[{"label": "Lorem ipsum dolor sit amet", "path": "${randomizedLink('/example.html')}"},{"label": "Lorem ipsum dolor sit amet", "path": "${randomizedLink('/example.html')}"}]'
       >
       </ecl-description-list-definition>
       <ecl-description-list-term
@@ -163,7 +165,7 @@ const Template = (args) =>
       <ecl-description-list-definition
         type="taxonomy"
         theme="${args.theme}"
-        items='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"},"Taxonomy item 3"]'
+        items='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "${randomizedLink('/example.html')}"},"Taxonomy item 3"]'
       ></ecl-description-list-definition>
     </ecl-description-list>
   </ecl-content-block>`;

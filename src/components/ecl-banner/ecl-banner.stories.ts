@@ -1,9 +1,11 @@
+import { randomizedLink } from "../../utils/randomizedLink"; 
+
 const getArgs = () => ({
   variant: 'plain-background',
   bannerTitle: 'Headline sed elit lorem.',
   description: 'Pellentesque tempor tincidunt quam, finibus vulputate eros iaculis pharetra orci arcu, dictum maximus arcu pellentesque eget. Cras massa nunc.',
   ctaLabel: 'Subscribe',
-  ctaLink: '/example.html',
+  ctaLink: randomizedLink('/example.html'),
   image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
   fullWidth: false,
   credit: '© Copyright or credit',

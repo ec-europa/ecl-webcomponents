@@ -1,3 +1,5 @@
+import { randomizedLink } from "../../utils/randomizedLink"; 
+
 const getArgs = () => ({
   image: true,
   column: 2,
@@ -51,7 +53,7 @@ const Template = (args) =>
         <ecl-link
           theme="${args.theme}"
           slot="title"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
           variant="standalone"
         >
           Title 1
@@ -61,7 +63,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 1
         </ecl-link>
@@ -69,7 +71,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 2
         </ecl-link>
@@ -77,7 +79,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 3
         </ecl-link>
@@ -85,7 +87,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 4
         </ecl-link>
@@ -93,7 +95,7 @@ const Template = (args) =>
           slot="links-secondary"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Secondary Link 1
         </ecl-link>
@@ -101,7 +103,7 @@ const Template = (args) =>
           slot="links-secondary"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Secondary Link 2
         </ecl-link>
@@ -123,7 +125,7 @@ const Template = (args) =>
         <ecl-link
           theme="${args.theme}"
           slot="title"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
           variant="standalone"
         >
           Title 2
@@ -133,7 +135,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 1
         </ecl-link>
@@ -141,7 +143,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 2
         </ecl-link>
@@ -149,7 +151,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 3
         </ecl-link>
@@ -157,7 +159,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 4
         </ecl-link>
@@ -165,7 +167,7 @@ const Template = (args) =>
           slot="links-secondary"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Secondary Link 1
         </ecl-link>
@@ -173,7 +175,7 @@ const Template = (args) =>
           slot="links-secondary"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Secondary Link 2
         </ecl-link>
@@ -195,7 +197,7 @@ const Template = (args) =>
         <ecl-link
           theme="${args.theme}"
           slot="title"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
           variant="standalone"
         >
           Title 3
@@ -205,7 +207,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 1
         </ecl-link>
@@ -213,7 +215,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 2
         </ecl-link>
@@ -221,7 +223,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 3
         </ecl-link>
@@ -229,7 +231,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 4
         </ecl-link>
@@ -237,7 +239,7 @@ const Template = (args) =>
           slot="links-secondary"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Secondary Link 1
         </ecl-link>
@@ -245,7 +247,7 @@ const Template = (args) =>
           slot="links-secondary"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Secondary Link 2
         </ecl-link>
@@ -267,7 +269,7 @@ const Template = (args) =>
         <ecl-link
           theme="${args.theme}"
           slot="title"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
           variant="standalone"
         >
           Title 4
@@ -277,7 +279,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 1
         </ecl-link>
@@ -285,7 +287,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 2
         </ecl-link>
@@ -293,7 +295,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 3
         </ecl-link>
@@ -301,7 +303,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 4
         </ecl-link>
@@ -309,7 +311,7 @@ const Template = (args) =>
           slot="links-secondary"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Secondary Link 1
         </ecl-link>
@@ -317,7 +319,7 @@ const Template = (args) =>
           slot="links-secondary"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Secondary Link 2
         </ecl-link>
@@ -339,7 +341,7 @@ const Template = (args) =>
         <ecl-link
           theme="${args.theme}"
           slot="title"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
           variant="standalone"
         >
           Title 5
@@ -349,7 +351,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 1
         </ecl-link>
@@ -357,7 +359,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 2
         </ecl-link>
@@ -365,7 +367,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 3
         </ecl-link>
@@ -373,7 +375,7 @@ const Template = (args) =>
           slot="links"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Primary Link 4
         </ecl-link>
@@ -381,7 +383,7 @@ const Template = (args) =>
           slot="links-secondary"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Secondary Link 1
         </ecl-link>
@@ -389,7 +391,7 @@ const Template = (args) =>
           slot="links-secondary"
           theme="${args.theme}"
           variant="standalone"
-          path="/example.html"
+          path="${randomizedLink('/example.html')}"
         >
           Secondary Link 2
         </ecl-link>

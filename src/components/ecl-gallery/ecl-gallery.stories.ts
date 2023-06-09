@@ -1,3 +1,5 @@
+import { randomizedLink } from "../../utils/randomizedLink"; 
+
 export default {
   title: 'Components/gallery',
 };
@@ -16,14 +18,14 @@ const Template = (args) =>
   download-label="Download"
   share-label="Share"
   visible-items=8
-  footer-link-path="/example.html"
+  footer-link-path="${randomizedLink('/example.html')}"
   footer-link-label="further media items"
   expandable
 >
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 1"
-    media-share-path="/example.html"
+    media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
     image-alt="Image 1"
   >    
@@ -42,7 +44,7 @@ const Template = (args) =>
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 2"
-    media-share-path="/example.html"
+    media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
     image-alt="Image 2"
   >
@@ -51,7 +53,7 @@ const Template = (args) =>
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 3"
-    media-share-path="/example.html"
+    media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"
     image-alt="Image 3"
   >
@@ -60,7 +62,7 @@ const Template = (args) =>
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 4"
-    media-share-path="/example.html"
+    media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg"
     image-alt="Image 3"
   >
@@ -68,7 +70,7 @@ const Template = (args) =>
   </ecl-gallery-item>
   <ecl-gallery-item
     theme="${args.theme}"
-    media-share-path="/example.html"
+    media-share-path="${randomizedLink('/example.html')}"
     meta="Copyright, Author, Licence for video"
     type="html-video"
   >
@@ -103,7 +105,7 @@ const Template = (args) =>
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 6"
-    media-share-path="/example.html"
+    media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg"
     image-alt="Image 6"
   >
@@ -112,7 +114,7 @@ const Template = (args) =>
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 7"
-    media-share-path="/example.html"
+    media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg"
     image-alt="Image 7"
   >
@@ -121,7 +123,7 @@ const Template = (args) =>
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 8"
-    media-share-path="/example.html"
+    media-share-path="${randomizedLink('/example.html')}"
     media-iframe-href="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&lg=EN"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg"
     image-alt="Image 8"
@@ -131,7 +133,7 @@ const Template = (args) =>
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 9"
-    media-share-path="/example.html"
+    media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg"
     image-alt="Image 9"
   >
@@ -140,7 +142,7 @@ const Template = (args) =>
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 10"
-    media-share-path="/example.html"
+    media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg"
     image-alt="Image 10"
   >

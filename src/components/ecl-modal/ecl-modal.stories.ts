@@ -22,12 +22,14 @@ export default {
 const Template = args =>
   `<ecl-button
     type="button"
-    item-id="modal-demo-toggle" 
+    item-id="modal-demo-toggle"
+    theme="${args.theme}"
   >
     Open modal
   </ecl-button>
   <ecl-modal
     theme="${args.theme}"
+    variant="${args.variant}"
     with-header
     with-footer
     with-body
@@ -35,20 +37,14 @@ const Template = args =>
     toggle-id="modal-demo-toggle"
     close-label="Close"
   >
-    <div slot="header">
-      <ecl-icon
-        icon="information"
-        size="m"
-        style-class="ecl-modal__icon sc-ecl-modal-${args.theme}"
-      ></ecl-icon>
-      <ecl-text tag="span">Lorem ipsum dolor sit amet</ecl-text>
-    </div>
+    <ecl-text slot="header" theme="${args.theme}" tag="span">Lorem ipsum dolor sit amet</ecl-text>
     <div slot="body">Sed quam augue, volutpat sed dapibus in, accumsan a arcu. 
       Nulla quam enim, porttitor at neque a, egestas porttitor tortor. Nam tortor sem, elementum id augue quis, posuere vestibulum dui.
       Donec id posuere libero, sit amet egestas lorem. Aliquam finibus ipsum mauris, a molestie tortor laoreet.
     </div>
     <div slot="footer">
       <ecl-button
+        theme="${args.theme}"
         type="submit"
         variant="primary"
         style-class="ecl-modal__button"
@@ -56,6 +52,7 @@ const Template = args =>
         Primary action
       </ecl-button>
       <ecl-button
+        theme="${args.theme}"
         type="button"
         variant="secondary"
         style-class="ecl-modal__button"
