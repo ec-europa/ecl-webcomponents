@@ -28,10 +28,10 @@ exports[`ecl-media-container renders correctly with an html5 video 1`] = `
 `;
 
 exports[`ecl-media-container renders correctly with an image 1`] = `
-<ecl-media-container description="caption for the media container" image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg" ratio="16-9" theme="ec">
+<ecl-media-container description="caption for the media container" image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg" ratio="16-9" theme="ec">
   <!---->
   <figure class="ecl-media-container ecl-media-container--16-9">
-    <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg" imgclass="ecl-media-container__media sc-ecl-media-container-ec" styleclass="ecl-media-container__picture sc-ecl-media-container-ec"></ecl-picture>
+    <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg" imgclass="ecl-media-container__media sc-ecl-media-container-ec" styleclass="ecl-media-container__picture sc-ecl-media-container-ec"></ecl-picture>
   </figure>
 </ecl-media-container>
 `;

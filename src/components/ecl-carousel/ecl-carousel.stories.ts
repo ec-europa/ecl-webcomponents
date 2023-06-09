@@ -33,7 +33,7 @@ const Template = (args) =>
       cta-label="Subscribe"
       centered=false
       size="${args.size}"
-      image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
+      image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
       banner-title="Duis vitae pulvinar turpis"
     >
       Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur
@@ -45,7 +45,7 @@ const Template = (args) =>
       cta-label="Subscribe"
       centered=false
       size="${args.size}"
-      image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
+      image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
       banner-title="Duis vitae pulvinar turpis"
     >
       Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur
@@ -56,7 +56,7 @@ const Template = (args) =>
       cta-link="/example.html"
       size="${args.size}"
       cta-label="Subscribe"
-      image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
+      image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"
       banner-title="Duis vitae pulvinar turpis"
     >
       Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur

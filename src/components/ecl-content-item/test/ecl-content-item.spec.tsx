@@ -21,12 +21,12 @@ describe('ecl-content-item', () => {
       >
       <ecl-picture
         slot="picture"
-        image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image2.jpg"
+        image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image2.jpg"
       >
         <source
           media="(min-width: 480px)"
           type="image/jpg"
-          srcset="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
+          srcset="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg"
         >
       </ecl-picture>
       <ecl-content-block

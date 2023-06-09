@@ -9,7 +9,7 @@ describe('ecl-media-container', () => {
               ratio="16-9"
               theme="ec"
               description="caption for the media container"
-              image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
+              image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg"
             >
             </ecl-media-container>`,
     });

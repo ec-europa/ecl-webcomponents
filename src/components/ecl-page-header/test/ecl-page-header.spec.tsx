@@ -11,8 +11,8 @@ describe('ecl-page-header', () => {
         variant="negative"
         theme="ec"
         header-title="Page title"
-        image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image2.jpg"
-        thumbnail="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image2.jpg"
+        image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image2.jpg"
+        thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image2.jpg"
         thumbnail-alt="Eu map"
         meta="Meta info | DD Month YYYY"
       >

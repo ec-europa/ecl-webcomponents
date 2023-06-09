@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-page-header renders 1`] = `
-<ecl-page-header header-title="Page title" image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image2.jpg" meta="Meta info | DD Month YYYY" theme="ec" thumbnail="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image2.jpg" thumbnail-alt="Eu map" variant="negative">
+<ecl-page-header header-title="Page title" image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image2.jpg" meta="Meta info | DD Month YYYY" theme="ec" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image2.jpg" thumbnail-alt="Eu map" variant="negative">
   <!---->
   <div class="ecl-page-header ecl-page-header--image ecl-page-header--negative">
-    <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image2.jpg" imgclass="ecl-page-header__background sc-ecl-page-header-ec" styleclass="ecl-page-header__picture-background sc-ecl-page-header-ec"></ecl-picture>
+    <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image2.jpg" imgclass="ecl-page-header__background sc-ecl-page-header-ec" styleclass="ecl-page-header__picture-background sc-ecl-page-header-ec"></ecl-picture>
     <div class="ecl-container">
       <ecl-breadcrumb ecl-script="" slot="breadcrumb" theme="ec" variant="negative">
         <!---->
@@ -57,7 +57,7 @@ exports[`ecl-page-header renders 1`] = `
         </h1>
       </div>
       <div class="ecl-page-header__description-container">
-        <img alt="Eu map" class="ecl-page-header__description-thumbnail" src="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image2.jpg">
+        <img alt="Eu map" class="ecl-page-header__description-thumbnail" src="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image2.jpg">
         <p class="ecl-page-header__description">
           Lorem ipsum dolor sit amet,
           <a class="ecl-link" href="/example.html">

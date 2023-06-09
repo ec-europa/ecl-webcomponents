@@ -14,7 +14,7 @@ describe('ecl-list-illustration', () => {
       >
         <ecl-list-illustration-item
           theme="ec"
-          image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg"
           item-title="List with illustration item 1"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
@@ -23,7 +23,7 @@ describe('ecl-list-illustration', () => {
         </ecl-list-illustration-item>
         <ecl-list-illustration-item
           theme="ec"
-          image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg"
           item-title="List with illustration item 2"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
@@ -32,7 +32,7 @@ describe('ecl-list-illustration', () => {
         </ecl-list-illustration-item>
         <ecl-list-illustration-item
           theme="ec"
-          image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg"
           item-title="List with illustration item 3"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
@@ -41,7 +41,7 @@ describe('ecl-list-illustration', () => {
         </ecl-list-illustration-item>
         <ecl-list-illustration-item
           theme="ec"
-          image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg"
           item-title="List with illustration item 4"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
@@ -50,7 +50,7 @@ describe('ecl-list-illustration', () => {
         </ecl-list-illustration-item>
         <ecl-list-illustration-item
           theme="ec"
-          image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg"
           item-title="List with illustration item 5"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.

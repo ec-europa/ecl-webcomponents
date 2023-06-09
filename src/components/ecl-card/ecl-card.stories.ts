@@ -6,7 +6,7 @@ const Template = (args) =>
   `<ecl-card
     theme="${args.theme}"
     image-alt="Image alternative"
-    image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
+    image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
   >
     <ecl-content-block
       theme="${args.theme}"

@@ -105,8 +105,8 @@ PageHeaderCore.args = {
   description: `Lorem ipsum dolor sit amet, <a class="ecl-link" href="/example.html">consectetur adipiscing elit</a>.
                 Quisque nec ullamcorper mi. Morbi interdum fermentum tempus. Nam nec rhoncus risus,
                 <a class="ecl-link" href="/example.html">eget dictum elit</a>. Vestibulum gravida tincidunt venenatis.`,
-  image: 'https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image2.jpg',
-  thumbnail: 'https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image2.jpg',
+  image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg',
+  thumbnail: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image-square.jpg',
   imageAlt: 'image alternative text',
   meta: 'Meta info | DD Month YYYY',
   thumbnailAlt: 'Europe map',
@@ -121,7 +121,7 @@ PageHeaderHarmonised.args = {
   description: `Lorem ipsum dolor sit amet, <ecl-link path="/example.html">consectetur adipiscing elit</ecl-link>.
                 Quisque nec ullamcorper mi. Morbi interdum fermentum tempus. Nam nec rhoncus risus,
                 <ecl-link path="/example.html">eget dictum elit</ecl-link>. Vestibulum gravida tincidunt venenatis.`,
-  thumbnail: 'https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image2.jpg',
+  thumbnail: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg',
   meta: 'Meta info | DD Month YYYY',
   breadcrumbVariant: 'default',
 }
@@ -134,9 +134,9 @@ PageHeaderStandardised.args = {
   description: `Lorem ipsum dolor sit amet, <a class="ecl-link" href="/example.html">consectetur adipiscing elit</a>.
                 Quisque nec ullamcorper mi. Morbi interdum fermentum tempus. Nam nec rhoncus risus,
                 <a class="ecl-link" href="/example.html">eget dictum elit</a>. Vestibulum gravida tincidunt venenatis.`,
-  thumbnail: 'https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image2.jpg',
+  thumbnail: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg',
   meta: 'Meta info | DD Month YYYY',
-  image: 'https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image2.jpg',
+  image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image-square.jpg',
   imageAlt: 'Alternative text for the image',
   breadcrumbVariant: 'default',
   thumbnailAlt: 'Thumbnail alt attribute',

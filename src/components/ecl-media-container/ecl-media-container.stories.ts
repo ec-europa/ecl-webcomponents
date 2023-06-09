@@ -53,7 +53,7 @@ const TemplateImg = (args) =>
     ratio="${args.ratio}"
     theme="${args.theme}"
     has-caption=${args.hasCaption}
-  	image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
+  	image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
     image-alt="Alternative text for the image"
   >
      ${args.hasCaption ? args.description : ''}

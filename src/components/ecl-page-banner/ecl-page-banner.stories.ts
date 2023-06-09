@@ -5,7 +5,7 @@ const getArgs = () => {
     description: 'Innovation, economy, environment and geopolitics',
     ctaLabel: 'Subscribe',
     ctaLink: '/example.html',
-    image: 'https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg',
+    image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
     fullWidth: false,
     centered: true,
   };

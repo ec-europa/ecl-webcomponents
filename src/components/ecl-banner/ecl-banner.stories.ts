@@ -4,7 +4,7 @@ const getArgs = () => ({
   description: 'Pellentesque tempor tincidunt quam, finibus vulputate eros iaculis pharetra orci arcu, dictum maximus arcu pellentesque eget. Cras massa nunc.',
   ctaLabel: 'Subscribe',
   ctaLink: '/example.html',
-  image: 'https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg',
+  image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
   fullWidth: false,
   credit: '© Copyright or credit',
   size: 'm',

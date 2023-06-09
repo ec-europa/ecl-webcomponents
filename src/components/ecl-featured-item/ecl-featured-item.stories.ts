@@ -3,7 +3,7 @@ const getArgs = () => {
     variant: 'extended',
     position: 'left',
     itemTitle: 'Title',
-    image: 'https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg',
+    image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
     description: `
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 

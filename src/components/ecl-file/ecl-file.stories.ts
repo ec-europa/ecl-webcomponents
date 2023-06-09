@@ -71,7 +71,7 @@ const TemplateWithTranslation = args =>
   download-label="${args.downloadLabel}"
   language="${args.language}"
   meta="${args.meta}"
-  image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
+  image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
   image-alt="thumbnail alt"
   detail-meta='["Resource type", "Publication date"]'
   ecl-script
