@@ -42,10 +42,8 @@ export class EclModal {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        console.log(this.el);
         const modal = new ECL.Modal(this.el.firstElementChild);
         modal.init();
-        console.log(modal);
       };
       document.body.appendChild(script);
     }

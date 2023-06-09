@@ -15,8 +15,10 @@ const Template = (args) =>
   close-label="Close"
   download-label="Download"
   share-label="Share"
+  visible-items=8
   footer-link-path="/example.html"
   footer-link-label="further media items"
+  expandable
 >
   <ecl-gallery-item
     theme="${args.theme}"
