@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "build:copy": "cross-env ecl-builder copy",
-    "build:styles": "cross-env NODE_ENV=production ecl-builder styles",
+    "build:styles": "cross-env ecl-builder styles",
     "build:scripts": "cross-env ecl-builder scripts",
     "build": "run-p clean build:*",
     "clean": "rimraf build",

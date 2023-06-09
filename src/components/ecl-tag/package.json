@@ -7,7 +7,7 @@
   "main": "ecl-tag.tsx",
   "private": true,
   "scripts": {
-    "build:styles": "cross-env NODE_ENV=production ecl-builder styles",
+    "build:styles": "cross-env ecl-builder styles",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
     "prepublish": "npm run build"

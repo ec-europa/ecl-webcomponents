@@ -7,7 +7,7 @@
   "main": "ecl-icon.ts",
   "private": true,
   "scripts": {
-    "build:styles": "cross-env NODE_ENV=production ecl-builder styles",
+    "build:styles": "cross-env ecl-builder styles",
     "build:copy": "cross-env ecl-builder copy",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
