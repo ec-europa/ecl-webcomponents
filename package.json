@@ -90,6 +90,7 @@
     "@storybook/html-webpack5": "7.0.18",
     "@types/jest": "27.0.3",
     "babel-loader": "9.1.2",
+    "browser-update": "3.3.44",
     "build-number-generator": "2.0.4",
     "copyfiles": "2.4.1",
     "core-js": "3.30.2",
