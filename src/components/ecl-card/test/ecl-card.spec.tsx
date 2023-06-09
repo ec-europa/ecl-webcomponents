@@ -10,7 +10,7 @@ describe('ecl-card', () => {
       html: `<ecl-card
       theme="ec"
       image-alt="Image alternative"
-      image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+      image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
     >
     <ecl-content-block
       theme="ec"

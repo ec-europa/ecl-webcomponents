@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-blockquote renders 1`] = `
-<ecl-blockquote author="President Juncker" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image-square.jpg" theme="ec">
+<ecl-blockquote author="President Juncker" image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image-square.jpg" theme="ec">
   <!---->
   <figure class="ecl-blockquote">
     <div class="ecl-blockquote__body">
@@ -16,7 +16,7 @@ exports[`ecl-blockquote renders 1`] = `
         </cite>
       </footer>
     </div>
-    <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image-square.jpg" imgclass="ecl-blockquote__image sc-ecl-blockquote-ec" styleclass="ecl-blockquote__picture sc-ecl-picture-ec"></ecl-picture>
+    <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image-square.jpg" imgclass="ecl-blockquote__image sc-ecl-blockquote-ec" styleclass="ecl-blockquote__picture sc-ecl-picture-ec"></ecl-picture>
   </figure>
 </ecl-blockquote>
 `;

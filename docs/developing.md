@@ -2,7 +2,7 @@
 
 ## Software requirements
 
-- Node.js = 14
+- Node.js = 18
 - yarn >= 1.10.1
 
 ## How to start?

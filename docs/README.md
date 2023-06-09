@@ -7,7 +7,7 @@ The components are written in typescript, using [stencil](https://stenciljs.com)
 
 ## Where can i find the source code of ECL webcomponents?
 
-ECL webcomponents is on [github](https://github.com/planctus/ecl-webcomponents), at the moment as a private repository, will be then moved in the ec-europa organisation in github and it will be public.
+ECL webcomponents is on [github](https://github.com/ec-europa/ecl-webcomponents) as a public repository.
 
 ## What is the ECL webcomponents website?
 
@@ -21,13 +21,16 @@ The library is distributed on npm, in the `@ecl` organisation, as a single packa
 The distributed package contains all that is needed, including resources like images, icons, scripts, styles.
 The main entrypoint for the library is a single js, in `dist/ecl-webcomponents/ecl-webcomponents.esm.js` which enables
 the usage of any of the custom elements exported, but only the ones really used will be loaded.
-**This distribution might not be ideal for angular, since it would probably expect all the js to be statically defined**
 
 ## Where can ECL webcomponents be used?
 
 Everywhere the ECL visual identity needs to be used and there is javascript available, basically.
 Vanilla web-components are widely supported, only old browser might not be capable of using them, for this polyfills exists,
 but at the moment there is no clear definition of the browsers to support.
+
+## React and Angular
+
+We release two packages which are meant to offer a seamless usage of the library in React and Angular.
 
 ## Doc pages
 

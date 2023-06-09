@@ -29,6 +29,8 @@ if (!isProd) {
     path.resolve(`${__dirname}/../src/components/ecl-menu`),
     path.resolve(`${__dirname}/../src/components/ecl-modal`),
     path.resolve(`${__dirname}/../src/components/ecl-description-list`),
+    path.resolve(`${__dirname}/../static`),
+    path.resolve(`${__dirname}/../playground`),
   ];
 }
 

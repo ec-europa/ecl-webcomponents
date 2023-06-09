@@ -3,7 +3,7 @@ import iconsAllEc from '@ecl/resources-ec-icons/dist/lists/all.json';
 const getArgs = () => {
   return {
     variant: 'default',
-    path: '/example',
+    path: '/example.html',
     external: false,
     label: 'An ECL link',
     icon: '',

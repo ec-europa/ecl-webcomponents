@@ -46,7 +46,7 @@ const Template = (args) =>
   >
     <ecl-list-illustration-item
       theme="${args.theme}"
-      image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+      image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
       item-title="List with illustration item 1"
       media-size="${args.mediaSize}"
       square-image=${args.squareImage}
@@ -58,7 +58,7 @@ const Template = (args) =>
     </ecl-list-illustration-item>
     <ecl-list-illustration-item
       theme="${args.theme}"
-      image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+      image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
       item-title="List with illustration item 2"
       media-size="${args.mediaSize}"
       square-image=${args.squareImage}
@@ -70,7 +70,7 @@ const Template = (args) =>
     </ecl-list-illustration-item>
     <ecl-list-illustration-item
       theme="${args.theme}"
-      image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+      image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
       item-title="List with illustration item 3"
       media-size="${args.mediaSize}"
       square-image=${args.squareImage}
@@ -82,7 +82,7 @@ const Template = (args) =>
     </ecl-list-illustration-item>
     <ecl-list-illustration-item
       theme="${args.theme}"
-      image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+      image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
       item-title="List with illustration item 4"
       media-size="${args.mediaSize}"
       square-image=${args.squareImage}
@@ -94,9 +94,9 @@ const Template = (args) =>
     </ecl-list-illustration-item>
     <ecl-list-illustration-item
       theme="${args.theme}"
-      image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+      image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
       item-title="List with illustration item 5"
-      item-link="/example"
+      item-link="/example.html"
       media-size="${args.mediaSize}"
       square-image=${args.squareImage}
       item-value="3.2 million"

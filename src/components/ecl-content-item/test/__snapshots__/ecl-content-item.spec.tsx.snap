@@ -4,11 +4,11 @@ exports[`ecl-content-item renders 1`] = `
 <ecl-content-item image-alt="Alternative text" image-position="left" image-size="large" theme="ec">
   <!---->
   <article class="ecl-content-item">
-    <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" slot="picture">
+    <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image2.jpg" slot="picture">
       <!---->
       <picture class="ecl-content-item__picture ecl-content-item__picture--large ecl-content-item__picture--left ecl-picture sc-ecl-content-item-ec">
-        <source media="(min-width: 480px)" srcset="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" type="image/jpg">
-        <img class="ecl-content-item__image sc-ecl-content-item-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
+        <source media="(min-width: 480px)" srcset="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg" type="image/jpg">
+        <img class="ecl-content-item__image sc-ecl-content-item-ec" src="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image2.jpg">
       </picture>
     </ecl-picture>
     <ecl-content-block has-description="" has-labels="" has-links="" has-lists="" has-secondary-links="" has-title="" meta-primary="[&quot;PRIMARY META&quot;, &quot;DD Month Year&quot;]" meta-secondary="[{&quot;label&quot;: &quot;2018/10/22&quot;, &quot;icon&quot;: &quot;calendar&quot;}, {&quot;label&quot;: &quot;Luxembourg&quot;, &quot;icon&quot;: &quot;location&quot;}]" slot="content-block" theme="ec">
@@ -35,9 +35,9 @@ exports[`ecl-content-item renders 1`] = `
           </li>
         </ul>
         <h1 class="ecl-content-block__title">
-          <ecl-link path="/example" slot="title" theme="ec" variant="standalone">
+          <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
             <!---->
-            <a class="ecl-link ecl-link--standalone" href="/example">
+            <a class="ecl-link ecl-link--standalone" href="/example.html">
               Title
               <slot-fb name="icon-after"></slot-fb>
             </a>
@@ -73,25 +73,25 @@ exports[`ecl-content-item renders 1`] = `
         <div class="ecl-content-block__link-container">
           <ul class="ecl-content-block__link-list">
             <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
+              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
                 Primary Link 1
                 <slot-fb name="icon-after"></slot-fb>
               </a>
             </li>
             <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
+              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
                 Primary Link 2
                 <slot-fb name="icon-after"></slot-fb>
               </a>
             </li>
             <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
+              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
                 Primary Link 3
                 <slot-fb name="icon-after"></slot-fb>
               </a>
             </li>
             <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
+              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
                 Primary Link 4
                 <slot-fb name="icon-after"></slot-fb>
               </a>
@@ -99,13 +99,13 @@ exports[`ecl-content-item renders 1`] = `
           </ul>
           <ul class="ecl-content-block__link-list">
             <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
+              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
                 Secondary Link 1
                 <slot-fb name="icon-after"></slot-fb>
               </a>
             </li>
             <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example">
+              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
                 Secondary Link 2
                 <slot-fb name="icon-after"></slot-fb>
               </a>
@@ -126,7 +126,7 @@ exports[`ecl-content-item renders 1`] = `
                 <!---->
                 <dd class="ecl-description-list__definition ecl-description-list__definition--text sc-ecl-description-list-ec">
                   Lorem ipsum dolor sit amet,
-                  <a class="ecl-link" href="/component-library/example">
+                  <a class="ecl-link" href="/component-library/example.html">
                     consectetur adipiscing elit
                   </a>
                   . Suspendisse ut sapien condimentum, aliquet turpis sit amet, finibus purus. Donec porttitor iaculis felis ut dapibus. Sed blandit, massa ac suscipit facilisis
@@ -138,12 +138,12 @@ exports[`ecl-content-item renders 1`] = `
                   Standalone links
                 </dt>
               </ecl-description-list-term>
-              <ecl-description-list-definition items="[{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example&quot;, &quot;icon&quot;: &quot;copy&quot;},{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example&quot;, &quot;icon&quot;: &quot;download&quot;}]" theme="ec" type="link">
+              <ecl-description-list-definition items="[{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;, &quot;icon&quot;: &quot;copy&quot;},{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;, &quot;icon&quot;: &quot;download&quot;}]" theme="ec" type="link">
                 <!---->
                 <dd class="ecl-description-list__definition ecl-description-list__definition--link sc-ecl-description-list-ec">
                   <ecl-link style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
                     <!---->
-                    <a class="ecl-description-list__definition-item ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before sc-ecl-description-list-ec" href="/example">
+                    <a class="ecl-description-list__definition-item ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before sc-ecl-description-list-ec" href="/example.html">
                       <ecl-icon slot="icon-before">
                         <svg class="ecl-icon ecl-icon--xs ecl-link__icon ecl-link__icon--before">
                           <use xlink:href="/build/images/ec/icons.svg#copy"></use>
@@ -155,7 +155,7 @@ exports[`ecl-content-item renders 1`] = `
                   </ecl-link>
                   <ecl-link style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
                     <!---->
-                    <a class="ecl-description-list__definition-item ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before sc-ecl-description-list-ec" href="/example">
+                    <a class="ecl-description-list__definition-item ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before sc-ecl-description-list-ec" href="/example.html">
                       <ecl-icon slot="icon-before">
                         <svg class="ecl-icon ecl-icon--xs ecl-link__icon ecl-link__icon--before">
                           <use xlink:href="/build/images/ec/icons.svg#download"></use>
@@ -173,19 +173,19 @@ exports[`ecl-content-item renders 1`] = `
                   Links inline
                 </dt>
               </ecl-description-list-term>
-              <ecl-description-list-definition items="[{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example&quot;},{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example&quot;}]" theme="ec" type="inline">
+              <ecl-description-list-definition items="[{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;},{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;}]" theme="ec" type="inline">
                 <!---->
                 <dd class="ecl-description-list__definition ecl-description-list__definition--inline sc-ecl-description-list-ec">
                   <ecl-link style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
                     <!---->
-                    <a class="ecl-description-list__definition-item ecl-link ecl-link--default sc-ecl-description-list-ec" href="/example">
+                    <a class="ecl-description-list__definition-item ecl-link ecl-link--default sc-ecl-description-list-ec" href="/example.html">
                       Lorem ipsum dolor sit amet
                       <slot-fb name="icon-after"></slot-fb>
                     </a>
                   </ecl-link>
                   <ecl-link style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
                     <!---->
-                    <a class="ecl-description-list__definition-item ecl-link ecl-link--default sc-ecl-description-list-ec" href="/example">
+                    <a class="ecl-description-list__definition-item ecl-link ecl-link--default sc-ecl-description-list-ec" href="/example.html">
                       Lorem ipsum dolor sit amet
                       <slot-fb name="icon-after"></slot-fb>
                     </a>
@@ -198,7 +198,7 @@ exports[`ecl-content-item renders 1`] = `
                   Taxonomy list
                 </dt>
               </ecl-description-list-term>
-              <ecl-description-list-definition items="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example&quot;},&quot;Taxonomy item 3&quot;]" theme="ec" type="taxonomy">
+              <ecl-description-list-definition items="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example.html&quot;},&quot;Taxonomy item 3&quot;]" theme="ec" type="taxonomy">
                 <!---->
                 <dd class="ecl-description-list__definition ecl-description-list__definition--taxonomy sc-ecl-description-list-ec">
                   <span class="ecl-description-list__definition-item sc-ecl-description-list-ec">
@@ -207,7 +207,7 @@ exports[`ecl-content-item renders 1`] = `
                   <span class="ecl-description-list__definition-item sc-ecl-description-list-ec">
                     <ecl-link>
                       <!---->
-                      <a class="ecl-link ecl-link--default" href="/example">
+                      <a class="ecl-link ecl-link--default" href="/example.html">
                         Taxonomy item 2
                         <slot-fb name="icon-after"></slot-fb>
                       </a>

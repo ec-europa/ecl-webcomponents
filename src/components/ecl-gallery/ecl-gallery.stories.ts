@@ -15,14 +15,14 @@ const Template = (args) =>
   close-label="Close"
   download-label="Download"
   share-label="Share"
-  footer-link-path="/example"
+  footer-link-path="/example.html"
   footer-link-label="further media items"
 >
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 1"
-    media-share-path="/example"
-    media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+    media-share-path="/example.html"
+    media-href="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
     image-alt="Image 1"
   >    
     The EU in brief, institutions and bodies, countries, symbols, history, facts and figures
@@ -31,7 +31,7 @@ const Template = (args) =>
     theme="${args.theme}"
     type="video"
     meta="Copyright, Author, Licence for embedded media"
-    media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-external-video.jpg"
+    media-href="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-external-video.jpg"
     image-alt="New digital strategy"
     media-iframe-href="https://www.youtube.com/embed/fgi-GSCB6ho"
   >
@@ -40,8 +40,8 @@ const Template = (args) =>
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 2"
-    media-share-path="/example"
-    media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
+    media-share-path="/example.html"
+    media-href="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image2.jpg"
     image-alt="Image 2"
   >
     Information on agriculture, business, culture, health, etc.
@@ -49,8 +49,8 @@ const Template = (args) =>
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 3"
-    media-share-path="/example"
-    media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"
+    media-share-path="/example.html"
+    media-href="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image3.jpg"
     image-alt="Image 3"
   >
     Living, working, travelling in the EU
@@ -58,15 +58,15 @@ const Template = (args) =>
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 4"
-    media-share-path="/example"
-    media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg"
+    media-share-path="/example.html"
+    media-href="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image4.jpg"
     image-alt="Image 3"
   >
     Information on taxes, customs, importing and exporting goods, financial support for businesses
   </ecl-gallery-item>
   <ecl-gallery-item
     theme="${args.theme}"
-    media-share-path="/example"
+    media-share-path="/example.html"
     meta="Copyright, Author, Licence for video"
     type="html-video"
   >
@@ -74,7 +74,7 @@ const Template = (args) =>
     <video
       slot="video"
       class="ecl-gallery__image sc-ecl-gallery-ec"
-      poster="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg"
+      poster="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image5.jpg"
     >
       <source
         src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4"
@@ -101,8 +101,8 @@ const Template = (args) =>
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 6"
-    media-share-path="/example"
-    media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg"
+    media-share-path="/example.html"
+    media-href="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image6.jpg"
     image-alt="Image 6"
   >
     Find official documents, publications, statistics, open data and more resources
@@ -110,8 +110,8 @@ const Template = (args) =>
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 7"
-    media-share-path="/example"
-    media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg"
+    media-share-path="/example.html"
+    media-href="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image7.jpg"
     image-alt="Image 7"
   >
     Teaching material about the EU, including books and maps
@@ -119,9 +119,9 @@ const Template = (args) =>
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 8"
-    media-share-path="/example"
+    media-share-path="/example.html"
     media-iframe-href="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&lg=EN"
-    media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg"
+    media-href="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image8.jpg"
     image-alt="Image 8"
   >
     Teaching material about the EU, including books and maps
@@ -129,8 +129,8 @@ const Template = (args) =>
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 9"
-    media-share-path="/example"
-    media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg"
+    media-share-path="/example.html"
+    media-href="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image9.jpg"
     image-alt="Image 9"
   >
     About the EU
@@ -138,8 +138,8 @@ const Template = (args) =>
   <ecl-gallery-item
     theme="${args.theme}"
     meta="Copyright, Author, Licence for image 10"
-    media-share-path="/example"
-    media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg"
+    media-share-path="/example.html"
+    media-href="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image10.jpg"
     image-alt="Image 10"
   >
     EU by topic

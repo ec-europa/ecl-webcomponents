@@ -29,11 +29,11 @@ const Template = (args) =>
     <ecl-carousel-item
       banner-variant="text-box"
       theme="${args.theme}"
-      cta-link="/example"
+      cta-link="/example.html"
       cta-label="Subscribe"
       centered=false
       size="${args.size}"
-      image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+      image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
       banner-title="Duis vitae pulvinar turpis"
     >
       Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur
@@ -41,11 +41,11 @@ const Template = (args) =>
     <ecl-carousel-item
       banner-variant="text-highlight"
       theme="${args.theme}"
-      cta-link="/example"
+      cta-link="/example.html"
       cta-label="Subscribe"
       centered=false
       size="${args.size}"
-      image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+      image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
       banner-title="Duis vitae pulvinar turpis"
     >
       Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur
@@ -53,10 +53,10 @@ const Template = (args) =>
     <ecl-carousel-item
       banner-variant="image-overlay"
       theme="${args.theme}"
-      cta-link="/example"
+      cta-link="/example.html"
       size="${args.size}"
       cta-label="Subscribe"
-      image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+      image="https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image.jpg"
       banner-title="Duis vitae pulvinar turpis"
     >
       Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur

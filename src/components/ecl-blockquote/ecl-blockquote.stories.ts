@@ -39,7 +39,7 @@ const Template = (args) =>
 `<ecl-blockquote
   author="${args.author}"
   theme="${args.theme}"
-  image="${args.image ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image-square.jpg' : ''}"
+  image="${args.image ? 'https://inno-ecl.s3.amazonaws.com/media/example.htmls/example.html-image-square.jpg' : ''}"
   image-alt="${args.imageAlt}"
 >
   ${args.quote}

@@ -20,12 +20,6 @@
   .ecl-gallery__slider-next {
     background: rgba(0, 0, 0, 0.7) !important;
 
-    .ecl-button__icon--after:only-child,
-    .ecl-button__icon--before:only-child {
-      margin-inline-end: 0 !important;
-      margin-inline-start: 0 !important;
-    }
-
     &:hover {
       background: #fff !important;
     }

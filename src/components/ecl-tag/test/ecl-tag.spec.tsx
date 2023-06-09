@@ -36,7 +36,7 @@ describe('ecl-tag', () => {
       components: [EclTag],
       html: `<ecl-tag
               type="link"
-              url="/example"
+              url="/example.html"
               theme="ec"
             >
               An ECL tag
@@ -50,7 +50,7 @@ describe('ecl-tag', () => {
       components: [EclTag],
       html: `<ecl-tag
               type="link"
-              url="/example"
+              url="/example.html"
               theme="eu"
             >
               An ECL tag

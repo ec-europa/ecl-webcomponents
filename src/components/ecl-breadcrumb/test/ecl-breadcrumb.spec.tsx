@@ -12,7 +12,7 @@ describe('ecl-breadcrumb', () => {
         ecl-script
        >
         <ecl-breadcrumb-item
-          path="/example"
+          path="/example.html"
           variant="negative"
           theme="ec"
         >
@@ -26,21 +26,21 @@ describe('ecl-breadcrumb', () => {
          </ecl-breadcrumb-item>
         <ecl-breadcrumb-item
           variant="negative"
-          path="/example"
+          path="/example.html"
           theme="ec"
         >
           About the European Commission
         </ecl-breadcrumb-item>
         <ecl-breadcrumb-item
           variant="negative"
-          path="/example"
+          path="/example.html"
           theme="ec"
         >
           Organisational structure
         </ecl-breadcrumb-item>
         <ecl-breadcrumb-item
           variant="negative"
-          path="/example"
+          path="/example.html"
           theme="ec"
         >
           How the Commission is organised

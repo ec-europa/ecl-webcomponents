@@ -65,7 +65,7 @@ const Template = (args) =>
     <ecl-link
       theme="${args.theme}"
       slot="title"
-      path="/example"
+      path="/example.html"
       variant="standalone"
     >
       ${args.title}
@@ -74,7 +74,7 @@ const Template = (args) =>
       slot="links"
       theme="${args.theme}"
       variant="standalone"
-      path="/example"
+      path="/example.html"
     >
       Primary Link 1
     </ecl-link>
@@ -82,7 +82,7 @@ const Template = (args) =>
       slot="links"
       theme="${args.theme}"
       variant="standalone"
-      path="/example"
+      path="/example.html"
     >
       Primary Link 2
     </ecl-link>
@@ -90,7 +90,7 @@ const Template = (args) =>
       slot="links"
       theme="${args.theme}"
       variant="standalone"
-      path="/example"
+      path="/example.html"
     >
       Primary Link 3
     </ecl-link>
@@ -98,7 +98,7 @@ const Template = (args) =>
       slot="links"
       theme="${args.theme}"
       variant="standalone"
-      path="/example"
+      path="/example.html"
     >
       Primary Link 4
     </ecl-link>
@@ -106,7 +106,7 @@ const Template = (args) =>
       slot="links-secondary"
       theme="${args.theme}"
       variant="standalone"
-      path="/example"
+      path="/example.html"
     >
       Secondary Link 1
     </ecl-link>
@@ -114,7 +114,7 @@ const Template = (args) =>
       slot="links-secondary"
       theme="${args.theme}"
       variant="standalone"
-      path="/example"
+      path="/example.html"
     >
       Secondary Link 2
     </ecl-link>
@@ -131,7 +131,7 @@ const Template = (args) =>
         type="text"
         theme="${args.theme}"
       >
-        Lorem ipsum dolor sit amet, <a href="/component-library/example" class="ecl-link">consectetur adipiscing elit</a>. Suspendisse ut sapien condimentum, aliquet turpis sit amet, finibus purus. Donec porttitor iaculis felis ut dapibus. Sed blandit, massa ac suscipit facilisis
+        Lorem ipsum dolor sit amet, <a href="/component-library/example.html" class="ecl-link">consectetur adipiscing elit</a>. Suspendisse ut sapien condimentum, aliquet turpis sit amet, finibus purus. Donec porttitor iaculis felis ut dapibus. Sed blandit, massa ac suscipit facilisis
       </ecl-description-list-definition>
       <ecl-description-list-term
         theme="${args.theme}"
@@ -141,7 +141,7 @@ const Template = (args) =>
       <ecl-description-list-definition
         type="link"
         theme="${args.theme}"
-        items='[{"label": "Lorem ipsum dolor sit amet", "path": "/example", "icon": "copy"},{"label": "Lorem ipsum dolor sit amet", "path": "/example", "icon": "download"}]'
+        items='[{"label": "Lorem ipsum dolor sit amet", "path": "/example.html", "icon": "copy"},{"label": "Lorem ipsum dolor sit amet", "path": "/example.html", "icon": "download"}]'
       >
       </ecl-description-list-definition>
       <ecl-description-list-term
@@ -152,7 +152,7 @@ const Template = (args) =>
       <ecl-description-list-definition
         type="inline"
         theme="${args.theme}"
-        items='[{"label": "Lorem ipsum dolor sit amet", "path": "/example"},{"label": "Lorem ipsum dolor sit amet", "path": "/example"}]'
+        items='[{"label": "Lorem ipsum dolor sit amet", "path": "/example.html"},{"label": "Lorem ipsum dolor sit amet", "path": "/example.html"}]'
       >
       </ecl-description-list-definition>
       <ecl-description-list-term
@@ -163,7 +163,7 @@ const Template = (args) =>
       <ecl-description-list-definition
         type="taxonomy"
         theme="${args.theme}"
-        items='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example"},"Taxonomy item 3"]'
+        items='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"},"Taxonomy item 3"]'
       ></ecl-description-list-definition>
     </ecl-description-list>
   </ecl-content-block>`;

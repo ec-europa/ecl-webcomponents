@@ -13,7 +13,7 @@ describe('ecl-menu', () => {
         theme="ec"
         close-label="Close"
         back-label="Back"
-        menu-link="/example"
+        menu-link="/example.html"
         ecl-script
         menu-title="Menu"
         next-label="next"
@@ -21,14 +21,14 @@ describe('ecl-menu', () => {
         max-lines=2
       >
         <ecl-menu-item
-          link="/example"
+          link="/example.html"
           theme="ec"
         >
           Home
         </ecl-menu-item>
         <ecl-menu-item
           theme="ec"
-          link="/example"
+          link="/example.html"
           has-children
           trigger-aria-label="Access item's children"
           current
@@ -36,7 +36,7 @@ describe('ecl-menu', () => {
           Item 2 label
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -44,7 +44,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -52,7 +52,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             current
             slot="sublist"
@@ -61,7 +61,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
             external
@@ -73,13 +73,13 @@ describe('ecl-menu', () => {
           theme="ec"
           has-children
           trigger-aria-label="Access item's children"
-          link="/example"
+          link="/example.html"
         >
           Item 3 with a very long label
           <ecl-menu-item
             theme="ec"
             child
-            link="/example"
+            link="/example.html"
             slot="sublist"
           >
             Item 3.1
@@ -87,7 +87,7 @@ describe('ecl-menu', () => {
           <ecl-menu-item
             theme="ec"
             child
-            link="/example"
+            link="/example.html"
             slot="sublist"
           >
             Item 3.2
@@ -95,7 +95,7 @@ describe('ecl-menu', () => {
           <ecl-menu-item
             theme="ec"
             child
-            link="/example"
+            link="/example.html"
             slot="sublist"
           >
             Item 3.3
@@ -103,20 +103,20 @@ describe('ecl-menu', () => {
         </ecl-menu-item>
         <ecl-menu-item
           theme="ec"
-          link="/example"
+          link="/example.html"
         >
           Item 4 label
         </ecl-menu-item>
         <ecl-menu-item
           theme="ec"
-          link="/example"
+          link="/example.html"
           has-children
           trigger-aria-label="Access item's children"
         >
           Item 5 label
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -124,7 +124,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -132,7 +132,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -140,7 +140,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -149,14 +149,14 @@ describe('ecl-menu', () => {
         </ecl-menu-item>
         <ecl-menu-item
           theme="ec"
-          link="/example"
+          link="/example.html"
           has-children
           trigger-aria-label="Access item's children"
         >
           Item 6
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -164,7 +164,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -172,7 +172,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -180,7 +180,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -188,7 +188,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -196,7 +196,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -204,7 +204,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -212,7 +212,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -220,7 +220,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -228,7 +228,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -236,7 +236,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -244,7 +244,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -252,7 +252,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -260,7 +260,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -268,7 +268,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -276,7 +276,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -284,7 +284,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -292,7 +292,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -302,13 +302,13 @@ describe('ecl-menu', () => {
         <ecl-menu-item
           theme="ec"
           has-children
-          link="/example"
+          link="/example.html"
           trigger-aria-label="Access item's children"
         >
           Item 7 label
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -316,7 +316,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -324,7 +324,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -332,7 +332,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -340,7 +340,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -348,7 +348,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -356,7 +356,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
@@ -364,7 +364,7 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
           <ecl-menu-item
             theme="ec"
-            link="/example"
+            link="/example.html"
             child
             slot="sublist"
           >
