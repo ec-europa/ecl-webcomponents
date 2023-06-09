@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-banner renders 1`] = `
-<ecl-banner banner-title="EU Budget for the future" centered="" credit="© Copyright or credit" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg" theme="ec" variant="primary">
+<ecl-banner banner-title="EU Budget for the future" centered="" credit="© Copyright or credit" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" theme="ec" variant="primary">
   <!---->
   <section class="ecl-banner ecl-banner--centered ecl-banner--m ecl-banner--primary">
     <div class="ecl-banner__credit">

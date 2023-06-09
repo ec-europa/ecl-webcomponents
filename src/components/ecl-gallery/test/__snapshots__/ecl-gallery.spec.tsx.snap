@@ -6,9 +6,9 @@ exports[`ecl-gallery renders 1`] = `
   <section class="ecl-gallery" data-ecl-gallery data-ecl-gallery-visible-items="8">
     <ul class="ecl-gallery__list">
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
-        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg">
+        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg" image-alt="Image 1" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" image-alt="Image 1" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               The EU in brief, institutions and bodies, countries, symbols, history, facts and figures
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -39,9 +39,9 @@ exports[`ecl-gallery renders 1`] = `
         </a>
       </li>
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
-        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image2.jpg">
+        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image2.jpg" image-alt="Image 2" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" image-alt="Image 2" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               Information on agriculture, business, culture, health, etc.
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -52,9 +52,9 @@ exports[`ecl-gallery renders 1`] = `
         </a>
       </li>
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
-        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image3.jpg">
+        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image3.jpg" image-alt="Image 3" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg" image-alt="Image 3" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               Living, working, travelling in the EU
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -65,9 +65,9 @@ exports[`ecl-gallery renders 1`] = `
         </a>
       </li>
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
-        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image4.jpg">
+        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image4.jpg" image-alt="Image 3" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg" image-alt="Image 3" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               Information on taxes, customs, importing and exporting goods, financial support for businesses
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -80,7 +80,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <video class="ecl-gallery__image sc-ecl-gallery-ec" poster="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image5.jpg" slot="video">
+            <video class="ecl-gallery__image sc-ecl-gallery-ec" poster="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg" slot="video">
               <source src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4" type="video/mp4">
               <source src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm" type="video/webm">
               <track kind="captions" label="English" src="/captions/bunny-en.vtt" srclang="en"></track>
@@ -103,9 +103,9 @@ exports[`ecl-gallery renders 1`] = `
         </a>
       </li>
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
-        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image6.jpg">
+        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image6.jpg" image-alt="Image 6" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg" image-alt="Image 6" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               Find official documents, publications, statistics, open data and more resources
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -116,9 +116,9 @@ exports[`ecl-gallery renders 1`] = `
         </a>
       </li>
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
-        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image7.jpg">
+        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image7.jpg" image-alt="Image 7" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg" image-alt="Image 7" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               Teaching material about the EU, including books and maps
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -131,7 +131,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-embed-src="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&amp;lg=EN" data-ecl-gallery-item-share="/example.html" href="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&amp;lg=EN">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image8.jpg" image-alt="Image 8" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg" image-alt="Image 8" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               Teaching material about the EU, including books and maps
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -142,9 +142,9 @@ exports[`ecl-gallery renders 1`] = `
         </a>
       </li>
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
-        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image9.jpg">
+        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image9.jpg" image-alt="Image 9" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" image-alt="Image 9" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               About the EU
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
@@ -155,9 +155,9 @@ exports[`ecl-gallery renders 1`] = `
         </a>
       </li>
       <li class="ecl-gallery__item sc-ecl-gallery-ec">
-        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image10.jpg">
+        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
-            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image10.jpg" image-alt="Image 10" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg" image-alt="Image 10" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               EU by topic
               <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>

@@ -19,7 +19,7 @@ describe('ecl-carousel', () => {
                 cta-label="Subscribe"
                 centered=false
                 size="l"
-                image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg"
+                image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
                 banner-title="Duis vitae pulvinar turpis"
               >
                 Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur
@@ -31,7 +31,7 @@ describe('ecl-carousel', () => {
                 cta-link="/example.html"
                 cta-label="Subscribe"
                 centered=false
-                image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg"
+                image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
                 banner-title="Duis vitae pulvinar turpis"
               >
                 Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur
@@ -42,7 +42,7 @@ describe('ecl-carousel', () => {
                 size="l"
                 cta-link="/example.html"
                 cta-label="Subscribe"
-                image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg"
+                image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
                 banner-title="Duis vitae pulvinar turpis"
               >
                 Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur

@@ -14,7 +14,7 @@ describe('ecl-navigation-list', () => {
       >
         <ecl-navigation-list-item
           theme="ec"
-          image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           image-alt="Alt text of the image"
           border
         >
@@ -88,7 +88,7 @@ describe('ecl-navigation-list', () => {
         </ecl-navigation-list-item>
         <ecl-navigation-list-item
           theme="ec"
-          image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           border
           image-alt="Alt text of the image"
         >
@@ -162,7 +162,7 @@ describe('ecl-navigation-list', () => {
         </ecl-navigation-list-item>
         <ecl-navigation-list-item
           theme="ec"
-          image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           border
           image-alt="Alt text of the image"
         >
@@ -236,7 +236,7 @@ describe('ecl-navigation-list', () => {
         </ecl-navigation-list-item>
         <ecl-navigation-list-item
           theme="ec"
-          image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           border
           image-alt="Alt text of the image"
         >
@@ -310,7 +310,7 @@ describe('ecl-navigation-list', () => {
         </ecl-navigation-list-item>
         <ecl-navigation-list-item
           theme="ec"
-          image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image.jpg"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           border
           image-alt="Alt text of the image"
         >
