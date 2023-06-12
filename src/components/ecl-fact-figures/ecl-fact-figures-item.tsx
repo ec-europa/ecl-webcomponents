@@ -30,7 +30,7 @@ export class EclFactFiguresItem {
       <div class={this.getClass()}>
         <ecl-icon
           icon={this.icon}
-          size={this.theme === 'ec' ? 'm' : 'l'}
+          size="m"
           transform={this.iconTransform}
           style-class={`ecl-fact-figures__icon sc-ecl-fact-figures-item-${this.theme}`}
         ></ecl-icon>

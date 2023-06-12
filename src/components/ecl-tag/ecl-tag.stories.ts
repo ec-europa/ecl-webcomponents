@@ -1,8 +1,8 @@
 const getArgs = () => {
   return {
-    variant: 'display',
+    variant: 'link',
     url: '',
-    external: '',
+    external: false,
     ariaLabel: 'aria label',
   };
 };
@@ -11,7 +11,7 @@ const getArgTypes = () => {
   return {
     variant: {
       type: { name: 'select' },
-      options: ['link', 'removable', 'display'],
+      options: ['link', 'removable'],
       description: "Tag variant"
     },
     external: {
@@ -37,7 +37,7 @@ const Template = (args) =>
   theme="${args.theme}"
   url="${args.url}"
   aria-label="${args.ariaLabel}"
-  external="${args.external}"
+  external=${args.external}
 >
   An ECL tag
 </ecl-tag>`;

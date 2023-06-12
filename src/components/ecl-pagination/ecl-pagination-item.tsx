@@ -2,6 +2,8 @@ import { Component, Prop, h } from '@stencil/core';
 
 @Component({
   tag: 'ecl-pagination-item',
+  scoped: false,
+  shadow: false,
 })
 
 export class EclPaginationItem {
@@ -38,9 +40,11 @@ export class EclPaginationItem {
       <li class={this.getClass()}>
       { !this.current ?
         <ecl-link
+          theme={this.theme}
           variant="standalone"
           path={this.path}
           aria-label={this.ariaLabel}
+          styleClass={`sc-ecl-pagination-${this.theme}`}
         >
           <slot></slot>
         { this.previous || this.next ? 

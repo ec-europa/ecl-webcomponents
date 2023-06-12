@@ -196,8 +196,8 @@ exports[`ecl-gallery renders 1`] = `
               <span class="ecl-button__label">
                 Close
               </span>
-              <ecl-icon slot="icon-after" style-class="">
-                <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--s sc-ecl-button-ec">
+              <ecl-icon slot="icon-after" style-class="sc-ecl-gallery-ec">
+                <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--s sc-ecl-button-ec sc-ecl-gallery-ec">
                   <use xlink:href="/build/images/ec/icons.svg#close-filled"></use>
                 </svg>
               </ecl-icon>
@@ -216,7 +216,7 @@ exports[`ecl-gallery renders 1`] = `
               <button class="ecl-button ecl-button--ghost ecl-gallery__slider-previous sc-ecl-gallery-ec" data-ecl-gallery-overlay-previous="eclGalleryOverlayPrevious" type="button">
                 <span class="ecl-button__container">
                   <ecl-icon slot="icon-before" style-class="sc-ecl-gallery-ec">
-                    <svg class="ecl-button__icon ecl-button__icon--before ecl-icon ecl-icon--rotate-270 ecl-icon--s sc-ecl-button-ec sc-ecl-gallery-ec">
+                    <svg class="ecl-button__icon ecl-icon ecl-icon--rotate-270 ecl-icon--s sc-ecl-gallery-ec">
                       <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
                     </svg>
                   </ecl-icon>
@@ -243,7 +243,7 @@ exports[`ecl-gallery renders 1`] = `
                     Next
                   </span>
                   <ecl-icon slot="icon-after" style-class="sc-ecl-gallery-ec">
-                    <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--rotate-90 ecl-icon--s sc-ecl-button-ec sc-ecl-gallery-ec">
+                    <svg class="ecl-button__icon ecl-icon ecl-icon--rotate-90 ecl-icon--s sc-ecl-gallery-ec">
                       <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
                     </svg>
                   </ecl-icon>
@@ -254,7 +254,7 @@ exports[`ecl-gallery renders 1`] = `
           <div class="ecl-gallery__detail-meta" data-ecl-gallery-overlay-meta></div>
           <div class="ecl-gallery__detail-description" data-ecl-gallery-overlay-description></div>
           <div class="ecl-gallery__detail-actions">
-            <ecl-link data-ecl-gallery-overlay-download name="download" path="" style-class="ecl-gallery__download sc-ecl-gallery-ec" variant="standalone">
+            <ecl-link data-ecl-gallery-overlay-download name="download" path="" style-class="ecl-gallery__download sc-ecl-gallery-ec" theme="ec" variant="standalone">
               Download
               <ecl-icon slot="icon-after">
                 <svg class="ecl-icon ecl-icon--fluid">
@@ -262,7 +262,7 @@ exports[`ecl-gallery renders 1`] = `
                 </svg>
               </ecl-icon>
             </ecl-link>
-            <ecl-link data-ecl-gallery-overlay-share path="" style-class="ecl-gallery__share sc-ecl-gallery-ec" variant="standalone">
+            <ecl-link data-ecl-gallery-overlay-share path="" style-class="ecl-gallery__share sc-ecl-gallery-ec" theme="ec" variant="standalone">
               Share
               <ecl-icon slot="icon-after">
                 <svg class="ecl-icon ecl-icon--fluid">

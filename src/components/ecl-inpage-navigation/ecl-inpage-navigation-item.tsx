@@ -22,6 +22,7 @@ export class EclInpageNavigationItem {
     return (
       <li class={this.getClass()}>
         <ecl-link
+          theme={this.theme}
           path={this.path}
           style-class={`ecl-inpage-navigation__link sc-ecl-inpage-navigation-${this.theme}`}
           data-ecl-inpage-navigation-link

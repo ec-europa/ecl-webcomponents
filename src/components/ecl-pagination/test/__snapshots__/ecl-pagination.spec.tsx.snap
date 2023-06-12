@@ -8,7 +8,7 @@ exports[`ecl-pagination renders 1`] = `
       <li class="ecl-pagination__item ecl-pagination__item--previous sc-ecl-pagination-ec">
         <ecl-link aria-label="Previous page">
           <!---->
-          <a aria-label="Previous page" class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone" href="/example.html">
+          <a aria-label="Previous page" class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone sc-ecl-pagination-ec" href="/example.html">
             <ecl-icon slot="icon-before" style-class="sc-ecl-pagination-ec">
               <svg class="ecl-icon ecl-icon--rotate-270 ecl-icon--xs ecl-link__icon ecl-link__icon--before sc-ecl-pagination-ec">
                 <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
@@ -22,7 +22,7 @@ exports[`ecl-pagination renders 1`] = `
       <li class="ecl-pagination__item sc-ecl-pagination-ec">
         <ecl-link aria-label="Page 24">
           <!---->
-          <a aria-label="Page 24" class="ecl-link ecl-link--standalone" href="/example.html">
+          <a aria-label="Page 24" class="ecl-link ecl-link--standalone sc-ecl-pagination-ec" href="/example.html">
             24
             <slot-fb name="icon-after"></slot-fb>
           </a>
@@ -31,7 +31,7 @@ exports[`ecl-pagination renders 1`] = `
       <li class="ecl-pagination__item sc-ecl-pagination-ec">
         <ecl-link aria-label="Page 25">
           <!---->
-          <a aria-label="Page 25" class="ecl-link ecl-link--standalone" href="/example.html">
+          <a aria-label="Page 25" class="ecl-link ecl-link--standalone sc-ecl-pagination-ec" href="/example.html">
             25
             <slot-fb name="icon-after"></slot-fb>
           </a>
@@ -48,7 +48,7 @@ exports[`ecl-pagination renders 1`] = `
       <li class="ecl-pagination__item sc-ecl-pagination-ec">
         <ecl-link aria-label="Page 27">
           <!---->
-          <a aria-label="Page 27" class="ecl-link ecl-link--standalone" href="/example.html">
+          <a aria-label="Page 27" class="ecl-link ecl-link--standalone sc-ecl-pagination-ec" href="/example.html">
             27
             <slot-fb name="icon-after"></slot-fb>
           </a>
@@ -57,7 +57,7 @@ exports[`ecl-pagination renders 1`] = `
       <li class="ecl-pagination__item sc-ecl-pagination-ec">
         <ecl-link aria-label="Page 28">
           <!---->
-          <a aria-label="Page 28" class="ecl-link ecl-link--standalone">
+          <a aria-label="Page 28" class="ecl-link ecl-link--standalone sc-ecl-pagination-ec">
             28
             <slot-fb name="icon-after"></slot-fb>
           </a>
@@ -66,7 +66,7 @@ exports[`ecl-pagination renders 1`] = `
       <li class="ecl-pagination__item ecl-pagination__item--next sc-ecl-pagination-ec">
         <ecl-link aria-label="Next page">
           <!---->
-          <a aria-label="Next page" class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone">
+          <a aria-label="Next page" class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-pagination-ec">
             <ecl-icon slot="icon-after" style-class="sc-ecl-pagination-ec">
               <svg class="ecl-icon ecl-icon--rotate-90 ecl-icon--xs ecl-link__icon ecl-link__icon--after sc-ecl-pagination-ec">
                 <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>

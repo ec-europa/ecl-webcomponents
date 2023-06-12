@@ -129,6 +129,7 @@ export class EclMenu {
               </button>
             </header>
             <ecl-button
+              theme={this.theme}
               type="button"
               variant="ghost"
               hideLabel
@@ -137,6 +138,7 @@ export class EclMenu {
               tabindex="-1"
             >
               <ecl-icon
+                theme={this.theme}
                 slot="icon-before"
                 icon="corner-arrow"
                 transform="rotate-270"
@@ -145,6 +147,7 @@ export class EclMenu {
               {this.previousLabel}
             </ecl-button>
             <ecl-button
+              theme={this.theme}
               type="button"
               variant="ghost"
               hideLabel
@@ -153,6 +156,7 @@ export class EclMenu {
               tabindex="-1"
             >
               <ecl-icon
+                theme={this.theme}
                 slot="icon-before"
                 icon="corner-arrow"
                 transform="rotate-270"

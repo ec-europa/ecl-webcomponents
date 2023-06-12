@@ -22,7 +22,7 @@ export class EclExpandable {
   @Prop() labelExpanded: string = '';
   @Prop() theme: string = 'ec';
 
-  componentWillLoad() {
+  componentDidRender() {
     const src = getAssetPath('./build/scripts/ecl-expandable-vanilla.js');
     if (document.querySelector(`script[src="${src}"]`)) {
       document.querySelector(`script[src="${src}"]`).remove();
@@ -49,10 +49,11 @@ export class EclExpandable {
         class={this.getClass()}
       > 
         <ecl-button
+          theme={this.theme}
           variant="secondary"
-          style-class="ecl-expandable__toggle"
+          style-class={`ecl-expandable__toggle sc-ecl-expandable-${this.theme}`}
           type="button"
-          aria-controls={`${this.el.id}-content`}
+          ariaControls={`${this.el.id}-content`}
           data-ecl-expandable-toggle
           data-ecl-label-expanded={this.labelExpanded}
           data-ecl-label-collapsed={this.labelCollapsed} 
@@ -70,7 +71,7 @@ export class EclExpandable {
             size="fluid"
             theme={this.theme}
             transform="rotate-180"
-            style-class={`ecl-button__icon ecl-button__icon--after sc-ecl-button-${this.theme}`}
+            style-class={`ecl-button__icon ecl-button__icon--after sc-ecl-button-${this.theme} sc-ecl-expandable-${this.theme}`}
           ></ecl-icon>
         </ecl-button>
         <div

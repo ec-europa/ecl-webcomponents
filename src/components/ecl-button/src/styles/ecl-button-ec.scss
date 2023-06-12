@@ -8,18 +8,18 @@
   display: contents;
 }
 
-.ecl-button .ecl-icon {
-  vertical-align: text-top;
+.ecl-button__icon {
+  vertical-align: middle;
 }
 
 .ecl-button__icon--after,
 .ecl-button__icon--after:only-child {
-  margin-inline-start: 0.5rem !important;
+  margin-inline-start: 0.5rem;
 }
 
 .ecl-button__icon--before,
 .ecl-button__icon--before:only-child {
-  margin-inline-end: 0.5rem !important;
+  margin-inline-end: 0.5rem;
 }
 
 .ecl-u-sr-only {

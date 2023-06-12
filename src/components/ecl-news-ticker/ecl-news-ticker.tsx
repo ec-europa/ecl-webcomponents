@@ -20,6 +20,7 @@ export class EclNewsTicker {
   @Prop() srNext: string;
   @Prop() srPrev: string;
   @Prop() srPause: string;
+  @Prop() srPlay: string;
   @Prop() eclScript: boolean = false;
 
   getClass(): string {
@@ -93,9 +94,12 @@ export class EclNewsTicker {
         </div>
         <div class="ecl-news-ticker__controls">
           <ecl-button
+            theme={this.theme}
             styleClass={`ecl-news-ticker__prev sc-ecl-news-ticker-${this.theme}`}
             data-ecl-news-ticker-prev
-            type="default"
+            hideLabel
+            type="button"
+            variant="default"
           >
             <ecl-icon 
               styleClass={`ecl-news-ticker__icon-default sc-ecl-news-ticker-${this.theme}`}
@@ -107,12 +111,15 @@ export class EclNewsTicker {
               theme={this.theme}
             >
             </ecl-icon>
-            <span class="ecl-u-sr-only">{this.srPrev}</span>
+              {this.srPrev}
           </ecl-button>
           <ecl-button
+            theme={this.theme}
             styleClass={`ecl-news-ticker__next sc-ecl-news-ticker-${this.theme}`}
             data-ecl-news-ticker-next
-            type="default"
+            type="button"
+            variant="default"
+            hideLabel
           >
             <ecl-icon 
               styleClass={`ecl-news-ticker__icon-default sc-ecl-news-ticker-${this.theme}`}
@@ -124,12 +131,15 @@ export class EclNewsTicker {
               theme={this.theme}
             >
             </ecl-icon>
-            <span class="ecl-u-sr-only">{this.srNext}</span>
+              {this.srNext}
           </ecl-button>
           <ecl-button
+            theme={this.theme}
             styleClass={`ecl-news-ticker__play sc-ecl-news-ticker-${this.theme}`}
             data-ecl-news-ticker-play
-            type="default"
+            type="button"
+            hideLabel
+            variant="default"
           >
             <ecl-icon 
               styleClass={`ecl-news-ticker__icon-default sc-ecl-news-ticker-${this.theme}`}
@@ -149,11 +159,15 @@ export class EclNewsTicker {
               theme={this.theme}
             >
             </ecl-icon>
+              {this.srPlay}
           </ecl-button>
           <ecl-button
+            variant="default"
+            theme={this.theme}
             styleClass={`ecl-news-ticker__pause sc-ecl-news-ticker-${this.theme}`}
             data-ecl-news-ticker-pause
-            type="default"
+            hideLabel
+            type="button"
           >
             <ecl-icon 
               styleClass={`ecl-news-ticker__icon-default sc-ecl-news-ticker-${this.theme}`}
@@ -173,7 +187,7 @@ export class EclNewsTicker {
               theme={this.theme}
             >
             </ecl-icon>
-            <span class="ecl-u-sr-only">{this.srPause}</span>
+            {this.srPause}
           </ecl-button>
           <div class="ecl-news-ticker__counter">
             <span class="ecl-news-ticker__counter--current">1</span>

@@ -16,7 +16,8 @@ export class EclButton {
   @Prop() type: string = 'submit';
   @Prop() variant: string = 'primary';
   @Prop() theme: string = 'ec';
-  @Prop() hideLabel: boolean = false;
+  @Prop() hideLabel: boolean = false;    
+  @Prop() ariaControls: string;
   @Prop() itemId: string;
 
   componentDidRender() {
@@ -37,7 +38,7 @@ export class EclButton {
     if (this.el.getElementsByTagName('ecl-icon')[0] && this.el.querySelector('.ecl-icon')) {
       const slot = this.el.getElementsByTagName('ecl-icon')[0].getAttribute('slot');
       this.el.querySelector('.ecl-icon').classList.add('ecl-button__icon');
-      if (slot) {
+      if (slot && !this.hideLabel) {
         this.el.querySelector('.ecl-icon').classList.add(`ecl-button__${slot.substring(0, 5) + '-' + slot.substring(5)}`, `sc-ecl-button-${this.theme}`);
       }
     }
@@ -56,7 +57,9 @@ export class EclButton {
       <button
         class={this.getClass()}
         type={this.type}
-        {...(this.itemId && { id: this.itemId })}>
+        {...(this.ariaControls && { 'aria-controls': this.ariaControls })}
+        {...(this.itemId && { id: this.itemId })}
+      >
         <span class="ecl-button__container">
           <slot name="icon-before"></slot>
         { !this.hideLabel ?

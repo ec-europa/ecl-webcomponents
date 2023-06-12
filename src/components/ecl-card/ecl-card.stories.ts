@@ -39,7 +39,7 @@ const Template = (args) =>
       >
         Call status: Upcoming
       </ecl-label>
-      <p slot="description">Transparently designing and evaluating evidence-based EU legislation, backed by citizens views.</p>
+      <ecl-text theme="${args.theme}" tag="div" level="5" slot="description">Transparently designing and evaluating evidence-based EU legislation, backed by citizens views.</ecl-text>
     </ecl-content-block>
   </ecl-card>`;
 

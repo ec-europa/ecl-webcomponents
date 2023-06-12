@@ -7,7 +7,7 @@ import { Component, h, Prop, Element} from '@stencil/core';
     eu: './build/styles/ecl-link-eu.css',
   },
   shadow: false,
-  scoped: false,
+  scoped: true,
   assetsDirs: ['build'],
 })
 
@@ -21,6 +21,7 @@ export class EclLink {
   @Prop() external: boolean = false;
   @Prop() ariaLabel: string;
   @Prop() name: string;
+  @Prop() download: boolean = false;
 
   getClass(): string {
     const styleClasses = [
@@ -79,6 +80,9 @@ export class EclLink {
 
     if (this.titleAttr) {
       attrs['title'] = this.titleAttr;
+    }
+    if (this.download) {
+      attrs['download'] = true;
     }
     if (this.ariaLabel) {
       attrs['aria-label'] = this.ariaLabel;

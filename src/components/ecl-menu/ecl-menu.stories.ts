@@ -1,6 +1,5 @@
 const getArgs = () => {
   return {
-    group: 'group1',
     menuTitle: 'Menu',
     menuLink: '/example.html',
     backMenu: 'Back',
@@ -13,11 +12,6 @@ const getArgs = () => {
 
 const getArgTypes = () => {
   return {
-    group: {
-      type: { name: 'select' },
-      options: ['group1'],
-      description: 'Menu variant',
-    },
     menuTitle: {
       name: 'Title of the menu',
       type: { name: 'string' },
@@ -63,7 +57,6 @@ export default {
 
 const Template = args =>
   `<ecl-menu
-    group="${args.group}"
     theme="${args.theme}"
     close-label="${args.closeMenu}"
     back-label="${args.backMenu}"
@@ -428,6 +421,9 @@ const Template = args =>
   </ecl-menu>`;
 
 export const Menu = Template.bind({});
+Menu.parameters = {
+  viewMode: 'canvas',
+};
 Menu.storyName = 'default';
 Menu.args = getArgs();
 Menu.argTypes = getArgTypes();

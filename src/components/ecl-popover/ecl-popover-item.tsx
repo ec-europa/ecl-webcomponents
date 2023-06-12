@@ -3,6 +3,7 @@ import { Component, h, Prop } from '@stencil/core';
 @Component({
   tag: 'ecl-popover-item',
   shadow: false,
+  scoped: false,
 })
 export class EclPopoverItem {
   @Prop() theme: string = 'ec';

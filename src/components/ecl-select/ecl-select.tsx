@@ -34,9 +34,10 @@ export class EclSelect {
   @State() value: string;
   @Prop() hasChanged: boolean = false;
   @Prop() isFocused: boolean = false;
+  @Event() inputChange: EventEmitter;
   @Event() inputFocus: EventEmitter<FocusEvent>;
   @Event() inputBlur: EventEmitter<FocusEvent>;
-  @Event() inputChange: EventEmitter;
+
 
   getClass(): string {
     const styleClasses = [
@@ -73,18 +74,14 @@ export class EclSelect {
     }
   }
 
-  handleInput(event) {
-    this.value = event.target.value;
-  }
-
   handleFocus(event) {
     this.inputFocus.emit(event);
     this.isFocused = true;
   }
 
   handleChange(event) {
-    this.inputChange.emit(event);
-    this.hasChanged = true;
+    const value = (event.target as HTMLInputElement).value;
+    this.inputChange.emit(value);
   }
 
   handleBlur(event) {
@@ -117,7 +114,6 @@ export class EclSelect {
       >
         <select
           {...attributes}
-          onInput={ev => this.handleInput(ev)}
           onFocus={ev => this.handleFocus(ev)}
           onBlur={ev => this.handleBlur(ev)}
           onChange={ev => this.handleChange(ev)}
@@ -126,6 +122,7 @@ export class EclSelect {
         </select>
         <div class="ecl-select__icon">
           <ecl-icon
+            theme={this.theme}
             style-class={`ecl-select__icon-shape sc-ecl-select-${this.theme}`}
             icon="corner-arrow"
             size="s"

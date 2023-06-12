@@ -46,7 +46,7 @@ export class EclRatingStar {
       <div>
         <input
           id={this.itemId}
-          class="ecl-rating-field__input ecl-rating-field__star"
+          class={`ecl-rating-field__input ecl-rating-field-${this.theme} ecl-rating-field__star`}
           type="radio"
           name={this.name}
           value={this.value}
@@ -58,20 +58,22 @@ export class EclRatingStar {
           onChange={ev => this.handleChange(ev)}
         />
         <label 
-          class="ecl-rating-field__label ecl-rating-field__star" 
+          class={`ecl-rating-field__label ecl-rating-field-${this.theme} ecl-rating-field__star`} 
           htmlFor={this.itemId}
         >
         { this.label ?
           <span class="ecl-u-sr-only">{ this.label }</span> : '' }
           <ecl-icon
+            theme={this.theme}
             icon={this.iconFilled}
-            styleClass="ecl-rating-field__icon-filled"
+            styleClass={`ecl-rating-field__icon-filled ecl-rating-field-${this.theme}`}
             size="m"
           >
           </ecl-icon>
           <ecl-icon
+            theme={this.theme}
             icon={this.icon}
-            styleClass="ecl-rating-field__icon-outline"
+            styleClass={`ecl-rating-field__icon-outline ecl-rating-field-${this.theme}`}
             size="m"
           >
           </ecl-icon>

@@ -8,6 +8,7 @@ const getArgs = () => {
     icon: '',
     iconPosition: 'after',
     iconTransform: '',
+    hideLabel: false,
   };
 };
 
@@ -29,6 +30,11 @@ const getArgTypes = () => {
       name: 'button label',
       type: { name: 'string'},
       description: 'The text in the button',
+    },
+    hideLabel: {
+      name: 'Icon only',
+      type: { name: 'boolean'},
+      description: 'Hides the label (not for screen-readers)',
     },
     icon: {
       name: 'icon',
@@ -67,6 +73,7 @@ const Template = (args) =>
     data-ecl-button-icon
     theme="${args.theme}"
     variant="${args.variant}"
+    hide-label=${args.hideLabel}
   >
   ${args.icon && args.iconPosition === 'before' ?
     `<ecl-icon 

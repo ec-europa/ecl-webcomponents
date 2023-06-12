@@ -4,16 +4,16 @@ exports[`ecl-expandable renders 1`] = `
 <ecl-expandable ecl-script="" icon-path="/icons.svg" id="expandable-id" label-collapsed="Expand" label-expanded="Collapse" theme="ec">
   <!---->
   <div class="ecl-expandable">
-    <ecl-button aria-controls="expandable-id-content" data-ecl-expandable-toggle data-ecl-label-collapsed="Expand" data-ecl-label-expanded="Collapse" style-class="ecl-expandable__toggle">
+    <ecl-button data-ecl-expandable-toggle data-ecl-label-collapsed="Expand" data-ecl-label-expanded="Collapse" style-class="ecl-expandable__toggle sc-ecl-expandable-ec">
       <!---->
-      <button class="ecl-button ecl-button--secondary ecl-expandable__toggle" data-ecl-expandable-toggle="eclExpandableToggle" data-ecl-label-collapsed="Expand" data-ecl-label-expanded="Collapse" type="button">
+      <button aria-controls="expandable-id-content" class="ecl-button ecl-button--secondary ecl-expandable__toggle sc-ecl-expandable-ec" data-ecl-expandable-toggle="eclExpandableToggle" data-ecl-label-collapsed="Expand" data-ecl-label-expanded="Collapse" type="button">
         <span class="ecl-button__container">
           <span class="ecl-button__label">
             <span class="ecl-button__label" data-ecl-label>
               Expand
             </span>
           </span>
-          <ecl-icon icon="corner-arrow" size="fluid" slot="icon-after" style-class="ecl-button__icon ecl-button__icon--after sc-ecl-button-ec" theme="ec" transform="rotate-180"></ecl-icon>
+          <ecl-icon icon="corner-arrow" size="fluid" slot="icon-after" style-class="ecl-button__icon ecl-button__icon--after sc-ecl-button-ec sc-ecl-expandable-ec" theme="ec" transform="rotate-180"></ecl-icon>
         </span>
       </button>
     </ecl-button>

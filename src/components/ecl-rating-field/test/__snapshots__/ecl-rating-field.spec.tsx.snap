@@ -4,45 +4,45 @@ exports[`ecl-rating-field renders 1`] = `
 <ecl-rating-field required="" theme="ec">
   <!---->
   <div class="ecl-rating-field">
-    <input class="ecl-rating-field__input ecl-rating-field__star" id="item-id-1" required="" type="radio" value="1">
-    <label class="ecl-rating-field__label ecl-rating-field__star" htmlfor="item-id-1">
+    <input class="ecl-rating-field-ec ecl-rating-field__input ecl-rating-field__star" id="item-id-1" required="" type="radio" value="1">
+    <label class="ecl-rating-field-ec ecl-rating-field__label ecl-rating-field__star" htmlfor="item-id-1">
       <span class="ecl-u-sr-only">
         1 stars
       </span>
-      <ecl-icon icon="star-filled" size="m" styleclass="ecl-rating-field__icon-filled"></ecl-icon>
-      <ecl-icon icon="star-outline" size="m" styleclass="ecl-rating-field__icon-outline"></ecl-icon>
+      <ecl-icon icon="star-filled" size="m" styleclass="ecl-rating-field__icon-filled ecl-rating-field-ec" theme="ec"></ecl-icon>
+      <ecl-icon icon="star-outline" size="m" styleclass="ecl-rating-field__icon-outline ecl-rating-field-ec" theme="ec"></ecl-icon>
     </label>
-    <input class="ecl-rating-field__input ecl-rating-field__star" id="item-id-2" required="" type="radio" value="2">
-    <label class="ecl-rating-field__label ecl-rating-field__star" htmlfor="item-id-2">
+    <input class="ecl-rating-field-ec ecl-rating-field__input ecl-rating-field__star" id="item-id-2" required="" type="radio" value="2">
+    <label class="ecl-rating-field-ec ecl-rating-field__label ecl-rating-field__star" htmlfor="item-id-2">
       <span class="ecl-u-sr-only">
         2 stars
       </span>
-      <ecl-icon icon="star-filled" size="m" styleclass="ecl-rating-field__icon-filled"></ecl-icon>
-      <ecl-icon icon="star-outline" size="m" styleclass="ecl-rating-field__icon-outline"></ecl-icon>
+      <ecl-icon icon="star-filled" size="m" styleclass="ecl-rating-field__icon-filled ecl-rating-field-ec" theme="ec"></ecl-icon>
+      <ecl-icon icon="star-outline" size="m" styleclass="ecl-rating-field__icon-outline ecl-rating-field-ec" theme="ec"></ecl-icon>
     </label>
-    <input class="ecl-rating-field__input ecl-rating-field__star" id="item-id-3" required="" type="radio" value="3">
-    <label class="ecl-rating-field__label ecl-rating-field__star" htmlfor="item-id-3">
+    <input class="ecl-rating-field-ec ecl-rating-field__input ecl-rating-field__star" id="item-id-3" required="" type="radio" value="3">
+    <label class="ecl-rating-field-ec ecl-rating-field__label ecl-rating-field__star" htmlfor="item-id-3">
       <span class="ecl-u-sr-only">
         3 stars
       </span>
-      <ecl-icon icon="star-filled" size="m" styleclass="ecl-rating-field__icon-filled"></ecl-icon>
-      <ecl-icon icon="star-outline" size="m" styleclass="ecl-rating-field__icon-outline"></ecl-icon>
+      <ecl-icon icon="star-filled" size="m" styleclass="ecl-rating-field__icon-filled ecl-rating-field-ec" theme="ec"></ecl-icon>
+      <ecl-icon icon="star-outline" size="m" styleclass="ecl-rating-field__icon-outline ecl-rating-field-ec" theme="ec"></ecl-icon>
     </label>
-    <input class="ecl-rating-field__input ecl-rating-field__star" id="item-id-4" required="" type="radio" value="4">
-    <label class="ecl-rating-field__label ecl-rating-field__star" htmlfor="item-id-4">
+    <input class="ecl-rating-field-ec ecl-rating-field__input ecl-rating-field__star" id="item-id-4" required="" type="radio" value="4">
+    <label class="ecl-rating-field-ec ecl-rating-field__label ecl-rating-field__star" htmlfor="item-id-4">
       <span class="ecl-u-sr-only">
         4 stars
       </span>
-      <ecl-icon icon="star-filled" size="m" styleclass="ecl-rating-field__icon-filled"></ecl-icon>
-      <ecl-icon icon="star-outline" size="m" styleclass="ecl-rating-field__icon-outline"></ecl-icon>
+      <ecl-icon icon="star-filled" size="m" styleclass="ecl-rating-field__icon-filled ecl-rating-field-ec" theme="ec"></ecl-icon>
+      <ecl-icon icon="star-outline" size="m" styleclass="ecl-rating-field__icon-outline ecl-rating-field-ec" theme="ec"></ecl-icon>
     </label>
-    <input class="ecl-rating-field__input ecl-rating-field__star" id="item-id-5" required="" type="radio" value="5">
-    <label class="ecl-rating-field__label ecl-rating-field__star" htmlfor="item-id-5">
+    <input class="ecl-rating-field-ec ecl-rating-field__input ecl-rating-field__star" id="item-id-5" required="" type="radio" value="5">
+    <label class="ecl-rating-field-ec ecl-rating-field__label ecl-rating-field__star" htmlfor="item-id-5">
       <span class="ecl-u-sr-only">
         5 stars
       </span>
-      <ecl-icon icon="star-filled" size="m" styleclass="ecl-rating-field__icon-filled"></ecl-icon>
-      <ecl-icon icon="star-outline" size="m" styleclass="ecl-rating-field__icon-outline"></ecl-icon>
+      <ecl-icon icon="star-filled" size="m" styleclass="ecl-rating-field__icon-filled ecl-rating-field-ec" theme="ec"></ecl-icon>
+      <ecl-icon icon="star-outline" size="m" styleclass="ecl-rating-field__icon-outline ecl-rating-field-ec" theme="ec"></ecl-icon>
     </label>
   </div>
 </ecl-rating-field>

@@ -3,6 +3,7 @@ import { Component, Prop, h, Element } from '@stencil/core';
 @Component({
   tag: 'ecl-category-filter-item',
   shadow: false,
+  scoped: false,
 })
 
 export class EclCategoryFilterItem {
@@ -60,13 +61,15 @@ export class EclCategoryFilterItem {
       >
       { this.path ?
         <ecl-link
-          style-class={this.getLinkClass()}
+          theme={this.theme}
+          styleClass={this.getLinkClass()}
           path={this.path}
         >
           {this.label}
           {this.subItems ?
             <ecl-icon
-              style-class={`ecl-category-filter__item-icon sc-ecl-category-filter-${this.theme}`}
+              theme={this.theme}
+              styleClass={`ecl-category-filter__item-icon sc-ecl-category-filter-${this.theme}`}
               icon={this.level === 1 ? 'corner-arrow' : 'solid-arrow'}
               size={this.level === 1 ? 'xs' : 'm'}
               transform={this.level === 1 ? 'rotate-180' : 'rotate-90'}

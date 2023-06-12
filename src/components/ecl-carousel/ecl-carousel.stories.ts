@@ -27,13 +27,13 @@ const Template = (args) =>
     carousel-id="ecl-carousel-demo"
     ecl-script
     slides-number=3
+    theme="${args.theme}"
   >
     <ecl-carousel-item
       banner-variant="text-box"
       theme="${args.theme}"
       cta-link="${randomizedLink('/example.html')}"
       cta-label="Subscribe"
-      centered=false
       size="${args.size}"
       image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
       banner-title="Duis vitae pulvinar turpis"
@@ -45,7 +45,6 @@ const Template = (args) =>
       theme="${args.theme}"
       cta-link="${randomizedLink('/example.html')}"
       cta-label="Subscribe"
-      centered=false
       size="${args.size}"
       image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
       banner-title="Duis vitae pulvinar turpis"

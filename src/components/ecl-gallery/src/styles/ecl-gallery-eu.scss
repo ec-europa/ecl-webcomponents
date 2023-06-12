@@ -6,7 +6,9 @@
 .ecl-gallery__slider-previous,
 .ecl-gallery__slider-next,
 .ecl-gallery__close-button,
-.ecl-gallery__image-icon {
+.ecl-gallery__image-icon,
+.ecl-gallery__download,
+.ecl-gallery__share {
   color: #fff !important;
 }
 
@@ -27,13 +29,12 @@
   }
 }
 
-.ecl-gallery__close-button * {
-  margin-inline-start: 0.5rem;
-  margin-top: 0.25rem;
-}
-
 .ecl-gallery__footer.sc-ecl-gallery-eu {
   align-items: center;
+}
+
+.ecl-gallery__share.sc-ecl-gallery-eu {
+  margin-inline-start: 0.75rem !important;
 }
 
 .ecl-gallery__view-all.sc-ecl-gallery-eu {

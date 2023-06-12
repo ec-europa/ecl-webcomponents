@@ -7,7 +7,7 @@ import { Component, Prop, h, Element } from '@stencil/core';
     eu: './build/styles/ecl-text-eu.css',
   },
   shadow: false,
-  scoped: true
+  scoped: true,
 })
 
 export class EclText {

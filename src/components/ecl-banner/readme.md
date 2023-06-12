@@ -10,7 +10,7 @@
 | Property      | Attribute      | Description | Type      | Default     |
 | ------------- | -------------- | ----------- | --------- | ----------- |
 | `bannerTitle` | `banner-title` |             | `string`  | `undefined` |
-| `centered`    | `centered`     |             | `boolean` | `true`      |
+| `centered`    | `centered`     |             | `boolean` | `false`     |
 | `credit`      | `credit`       |             | `string`  | `undefined` |
 | `ctaClicked`  | `cta-clicked`  |             | `boolean` | `false`     |
 | `ctaLabel`    | `cta-label`    |             | `string`  | `undefined` |

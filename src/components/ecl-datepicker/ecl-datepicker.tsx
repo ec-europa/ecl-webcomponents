@@ -97,7 +97,7 @@ export class EclDatepicker {
     return (
       <div class={this.getClass()}>
         <input
-          class={`ecl-datepicker__field ecl-text-input ecl-text-input--s ${this.invalid ? 'ecl-text-input--invalid' : ''}`}
+          class={`ecl-datepicker__field ecl-text-input sc-ecl-text-input-${this.theme} ecl-text-input--s ${this.invalid ? 'ecl-text-input--invalid' : ''}`}
           autocomplete="off"
           data-ecl-datepicker-toggle
           id={this.inputId}
@@ -110,7 +110,8 @@ export class EclDatepicker {
           onBlur={() => this.handleBlur()}
         />
         <ecl-icon
-          style-class={`ecl-datepicker__icon sc-ecl-datepicker-${this.theme}`}
+          theme={this.theme}
+          styleClass={`ecl-datepicker__icon sc-ecl-datepicker-${this.theme}`}
           icon="calendar"
           size="s"
         >  

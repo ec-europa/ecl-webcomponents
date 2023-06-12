@@ -22,7 +22,7 @@ export class EclBanner {
   @Prop() imageAlt: string;
   @Prop() ctaLabel: string;
   @Prop() ctaLink: string;
-  @Prop() centered: boolean = true;
+  @Prop() centered: boolean = false;
   @Prop() credit: string;
   @Prop() size: string = 'm';
   @Prop() ctaClicked: boolean = false;
@@ -90,6 +90,7 @@ export class EclBanner {
             { this.ctaLabel && this.ctaLink ?
               <div class="ecl-banner__cta">
                 <ecl-link
+                  theme={this.theme}
                   variant="cta"
                   path={this.ctaLink}
                   style-class={`ecl-banner__link-cta sc-ecl-banner-${this.theme}`}
@@ -99,6 +100,7 @@ export class EclBanner {
                     icon="corner-arrow"
                     slot="icon-after"
                     transform="rotate-90"
+                    theme={this.theme}
                   ></ecl-icon>
                 </ecl-link>
               </div>

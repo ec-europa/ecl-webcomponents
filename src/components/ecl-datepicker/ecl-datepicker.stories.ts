@@ -99,6 +99,7 @@ const Template = args =>
     theme="${args.theme}"
   >
     <ecl-datepicker
+      theme="${args.theme}"
       required=${args.required}
       disabled=${args.disabled}
       invalid=${args.invalid}

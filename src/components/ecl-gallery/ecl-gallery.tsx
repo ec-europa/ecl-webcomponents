@@ -116,13 +116,15 @@ export class EclGallery {
             data-ecl-gallery-overlay-header
           >
             <ecl-button
+              theme={this.theme}
               style-class={`ecl-gallery__close-button sc-ecl-gallery-${this.theme}`}
               variant="ghost"
               data-ecl-gallery-close
             >
               {this.closeLabel}
               <ecl-icon
-                style-class
+                theme={this.theme}
+                style-class={`sc-ecl-gallery-${this.theme}`}
                 icon="close-filled"
                 size="s"
                 slot="icon-after"
@@ -142,6 +144,7 @@ export class EclGallery {
             <div class="ecl-container">
               <div class="ecl-gallery__pager">
                 <ecl-button
+                  theme={this.theme}
                   style-class={`ecl-gallery__slider-previous sc-ecl-gallery-${this.theme}`}
                   data-ecl-gallery-overlay-previous
                   variant="ghost"
@@ -149,6 +152,7 @@ export class EclGallery {
                   hide-label
                 >
                   <ecl-icon
+                    theme={this.theme}
                     style-class={`sc-ecl-gallery-${this.theme}`}
                     slot="icon-before"
                     size="s"
@@ -163,6 +167,7 @@ export class EclGallery {
                   <span data-ecl-gallery-overlay-counter-max>0</span>
                 </div>
                 <ecl-button
+                  theme={this.theme}
                   style-class={`ecl-gallery__slider-next sc-ecl-gallery-${this.theme}`}
                   data-ecl-gallery-overlay-next
                   variant="ghost"
@@ -171,6 +176,7 @@ export class EclGallery {
                 >
                   {this.nextLabel}
                   <ecl-icon
+                    theme={this.theme}
                     style-class={`sc-ecl-gallery-${this.theme}`}
                     slot="icon-after"
                     size="s"
@@ -191,6 +197,7 @@ export class EclGallery {
               </div>
               <div class="ecl-gallery__detail-actions">
                 <ecl-link
+                  theme={this.theme}
                   style-class={`ecl-gallery__download sc-ecl-gallery-${this.theme}`}
                   data-ecl-gallery-overlay-download
                   name="download"
@@ -199,13 +206,16 @@ export class EclGallery {
                 >
                   {this.downloadLabel}
                   <ecl-icon
+                    theme={this.theme}
                     icon="download"
                     size="fluid"
                     slot="icon-after"
                   ></ecl-icon>
 
                 </ecl-link>
+              { this.shareLabel ? 
                 <ecl-link
+                  theme={this.theme}
                   style-class={`ecl-gallery__share sc-ecl-gallery-${this.theme}`}
                   data-ecl-gallery-overlay-share
                   variant="standalone"
@@ -213,11 +223,13 @@ export class EclGallery {
                 >
                   {this.shareLabel}
                   <ecl-icon
+                    theme={this.theme}
                     icon="share"
                     size="fluid"
                     slot="icon-after"
                   ></ecl-icon>
-                </ecl-link>
+                </ecl-link> : ''
+              }
               </div>
             </div>
           </footer>

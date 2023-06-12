@@ -71,7 +71,7 @@ const Template = (args) =>
     >
       Title
     </ecl-link>
-    <ecl-text tag="p" slot="description">${args.description}</ecl-text>
+    <ecl-text theme="${args.theme}" tag="div" slot="description">${args.description}</ecl-text>
     <ecl-link
       slot="links"
       theme="${args.theme}"

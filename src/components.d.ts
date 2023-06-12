@@ -58,6 +58,7 @@ export namespace Components {
         "variant": string;
     }
     interface EclButton {
+        "ariaControls": string;
         "hideLabel": boolean;
         "itemId": string;
         "styleClass": string;
@@ -403,6 +404,7 @@ export namespace Components {
     }
     interface EclLink {
         "ariaLabel": string;
+        "download": boolean;
         "external": boolean;
         "name": string;
         "path": string;
@@ -508,6 +510,7 @@ export namespace Components {
         "eclScript": boolean;
         "srNext": string;
         "srPause": string;
+        "srPlay": string;
         "srPrev": string;
         "styleClass": string;
         "theme": string;
@@ -1386,6 +1389,7 @@ declare namespace LocalJSX {
         "variant"?: string;
     }
     interface EclButton {
+        "ariaControls"?: string;
         "hideLabel"?: boolean;
         "itemId"?: string;
         "styleClass"?: string;
@@ -1737,6 +1741,7 @@ declare namespace LocalJSX {
     }
     interface EclLink {
         "ariaLabel"?: string;
+        "download"?: boolean;
         "external"?: boolean;
         "name"?: string;
         "path"?: string;
@@ -1842,6 +1847,7 @@ declare namespace LocalJSX {
         "eclScript"?: boolean;
         "srNext"?: string;
         "srPause"?: string;
+        "srPlay"?: string;
         "srPrev"?: string;
         "styleClass"?: string;
         "theme"?: string;

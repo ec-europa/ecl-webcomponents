@@ -64,8 +64,8 @@ export default {
   title: 'Components/Navigation/link',
 };
 
-const Template = (args) => 
-  `<ecl-link
+const Template = (args) => `
+  <ecl-link
     variant="${args.variant}"
     theme="${args.theme}"
     path="${args.path}"

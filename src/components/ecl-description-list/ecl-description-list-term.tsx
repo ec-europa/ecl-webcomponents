@@ -3,6 +3,7 @@ import { Component, Prop, h } from '@stencil/core';
 @Component({
   tag: 'ecl-description-list-term',
   shadow: false,
+  scoped: false,
 })
 export class EclDescriptionListTerm {
   @Prop() styleClass: string = '';

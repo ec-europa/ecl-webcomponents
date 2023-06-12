@@ -5,14 +5,15 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type      | Default     |
-| ------------ | ------------- | ----------- | --------- | ----------- |
-| `hideLabel`  | `hide-label`  |             | `boolean` | `false`     |
-| `itemId`     | `item-id`     |             | `string`  | `undefined` |
-| `styleClass` | `style-class` |             | `string`  | `''`        |
-| `theme`      | `theme`       |             | `string`  | `'ec'`      |
-| `type`       | `type`        |             | `string`  | `'submit'`  |
-| `variant`    | `variant`     |             | `string`  | `'primary'` |
+| Property       | Attribute       | Description | Type      | Default     |
+| -------------- | --------------- | ----------- | --------- | ----------- |
+| `ariaControls` | `aria-controls` |             | `string`  | `undefined` |
+| `hideLabel`    | `hide-label`    |             | `boolean` | `false`     |
+| `itemId`       | `item-id`       |             | `string`  | `undefined` |
+| `styleClass`   | `style-class`   |             | `string`  | `''`        |
+| `theme`        | `theme`         |             | `string`  | `'ec'`      |
+| `type`         | `type`          |             | `string`  | `'submit'`  |
+| `variant`      | `variant`       |             | `string`  | `'primary'` |
 
 
 ## Dependencies

@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@ecl/builder": "3.8.2",
+    "@ecl/vanilla-component-link": "3.8.2",
     "@ecl/vanilla-component-popover": "3.8.2",
     "cross-env": "7.0.3"
   },

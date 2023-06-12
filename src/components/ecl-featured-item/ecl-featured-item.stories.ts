@@ -14,7 +14,7 @@ const getArgs = () => {
     <ecl-spacing direction="t" value="s">
       <ecl-link
         variant="standalone"
-        style-class="ecl-button sc-ecl-button-ec ecl-button--call"
+        style-class="ecl-button sc-ecl-button-ec sc-ecl-button-ec ecl-button--call"
         href="${randomizedLink('/example.html')}"
       >
         Read more
