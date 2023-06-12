@@ -5,10 +5,10 @@
 
 :host ::slotted(ecl-icon[slot='icon-after']) svg {
   margin-inline-start: 0.5rem;
-  vertical-align: text-top;
+  vertical-align: middle;
 }
 
 :host ::slotted(ecl-icon[slot='icon-before']) svg {
   margin-inline-end: 0.5rem;
-  vertical-align: text-top;
+  vertical-align: middle;
 }
