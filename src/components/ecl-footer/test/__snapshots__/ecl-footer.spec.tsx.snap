@@ -3,29 +3,69 @@
 exports[`ecl-footer renders 1`] = `
 <ecl-footer description="This site is managed by the Directorate-General for Communication" logo-alt="European Union" logo-lang-code="en" logo-title="European union" site-name="European Commission website" theme="ec">
   <!---->
-  <footer class="ecl-site-footer ecl-site-footer--split-columns">
+  <ecl-footer-item hidden="" link="/example.html" slot="ecl-footer-list-bottom-right" theme="ec">
+    <!---->
+    <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+      <ecl-link>
+        <!---->
+        <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+          Languages on our websites
+          <slot-fb name="icon-after"></slot-fb>
+        </a>
+      </ecl-link>
+    </li>
+  </ecl-footer-item>
+  <ecl-footer-item hidden="" link="/example.html" slot="ecl-footer-list-bottom-right" theme="ec">
+    <!---->
+    <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+      <ecl-link>
+        <!---->
+        <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+          Cookies
+          <slot-fb name="icon-after"></slot-fb>
+        </a>
+      </ecl-link>
+    </li>
+  </ecl-footer-item>
+  <ecl-footer-item hidden="" link="/example.html" slot="ecl-footer-list-bottom-right" theme="ec">
+    <!---->
+    <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+      <ecl-link>
+        <!---->
+        <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+          Privacy policy
+          <slot-fb name="icon-after"></slot-fb>
+        </a>
+      </ecl-link>
+    </li>
+  </ecl-footer-item>
+  <ecl-footer-item hidden="" link="/example.html" slot="ecl-footer-list-bottom-right" theme="ec">
+    <!---->
+    <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+      <ecl-link>
+        <!---->
+        <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+          Legal notice
+          <slot-fb name="icon-after"></slot-fb>
+        </a>
+      </ecl-link>
+    </li>
+  </ecl-footer-item>
+  <footer class="ecl-site-footer ecl-site-footer--undefined">
     <div class="ecl-container ecl-site-footer__container">
       <div class="ecl-site-footer__row">
         <div class="ecl-site-footer__column">
           <div class="ecl-site-footer__section">
-            <ecl-link>
-              <!---->
-              <a class="ecl-link ecl-link--standalone ecl-site-footer__logo-link sc-ecl-footer-ec">
-                <ecl-picture image="/build/images/ec/logos/negative/logo-ec--en.svg" imagealt="European Union" imgclass="ecl-site-footer__logo-image-desktop sc-ecl-site-footer-ec" styleclass="ecl-site-footer__picture sc-ecl-site-footer-ec"></ecl-picture>
-                <slot-fb name="icon-after"></slot-fb>
-              </a>
-            </ecl-link>
             <h2 class="ecl-site-footer__title">
               European Commission website
             </h2>
-            <div class="ecl-site-footer__description">
-              This site is managed by the Directorate-General for Communication
-            </div>
+            <div class="ecl-site-footer__description"></div>
+            <ul class="ecl-site-footer__list"></ul>
           </div>
         </div>
         <div class="ecl-site-footer__column">
-          <div class="ecl-site-footer__section ecl-site-footer__section--separator">
-            <ul class="ecl-site-footer__list ecl-site-footer__list--columns">
+          <div class="ecl-site-footer__section">
+            <ul class="ecl-site-footer__list">
               <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
                 <ecl-link>
                   <!---->
@@ -215,46 +255,6 @@ exports[`ecl-footer renders 1`] = `
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
                     Resources for partners
-                    <slot-fb name="icon-after"></slot-fb>
-                  </a>
-                </ecl-link>
-              </li>
-            </ul>
-          </div>
-          <div class="ecl-site-footer__section">
-            <ul class="ecl-site-footer__list">
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Languages on our websites
-                    <slot-fb name="icon-after"></slot-fb>
-                  </a>
-                </ecl-link>
-              </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Cookies
-                    <slot-fb name="icon-after"></slot-fb>
-                  </a>
-                </ecl-link>
-              </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Privacy policy
-                    <slot-fb name="icon-after"></slot-fb>
-                  </a>
-                </ecl-link>
-              </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Legal notice
                     <slot-fb name="icon-after"></slot-fb>
                   </a>
                 </ecl-link>

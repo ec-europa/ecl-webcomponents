@@ -199,6 +199,9 @@ const Template = (args) =>
   </ecl-form-group>`;
 
 export const Select = Template.bind({});
+Select.parameters = {
+  viewMode: 'story',
+};
 Select.storyName = 'default';
 Select.args = getArgs();
 Select.argTypes = getArgTypes();

@@ -34,6 +34,7 @@ export class EclFooterItem{
           theme={this.theme}
           ariaLabel={this.ariaLabel}
         >
+          <slot name="icon-before"></slot>
           <slot></slot>  
         </ecl-link>
       </li>

@@ -3,7 +3,7 @@
 exports[`ecl-text renders correctly as a paragraph with with bold font style 1`] = `
 <ecl-text is-bold="" tag="p">
   <!---->
-  <p class="ecl-u-type-bold ecl-u-type-prolonged-m">
+  <p class="ecl-u-type-bold">
     The quick brown fox jumps over the lazy dog
   </p>
 </ecl-text>

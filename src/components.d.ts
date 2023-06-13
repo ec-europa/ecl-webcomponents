@@ -266,10 +266,12 @@ export namespace Components {
         "logoAlt": string;
         "logoAriaLabel": string;
         "logoLangCode": string;
+        "logoLink": string;
         "logoTitle": string;
         "siteName": string;
         "styleClass": string;
         "theme": string;
+        "variant": string;
     }
     interface EclFooterItem {
         "ariaLabel": string;
@@ -1600,10 +1602,12 @@ declare namespace LocalJSX {
         "logoAlt"?: string;
         "logoAriaLabel"?: string;
         "logoLangCode"?: string;
+        "logoLink"?: string;
         "logoTitle"?: string;
         "siteName"?: string;
         "styleClass"?: string;
         "theme"?: string;
+        "variant"?: string;
     }
     interface EclFooterItem {
         "ariaLabel"?: string;

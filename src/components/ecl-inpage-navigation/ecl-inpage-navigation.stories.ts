@@ -59,3 +59,6 @@ const Template = args =>
 
 export const InpageNavigation = Template.bind({});
 InpageNavigation.storyName = 'default';
+InpageNavigation.parameters = {
+  viewMode: 'story',
+};

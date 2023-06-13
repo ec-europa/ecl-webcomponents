@@ -422,7 +422,7 @@ const Template = args =>
 
 export const Menu = Template.bind({});
 Menu.parameters = {
-  viewMode: 'canvas',
+  viewMode: 'story',
 };
 Menu.storyName = 'default';
 Menu.args = getArgs();

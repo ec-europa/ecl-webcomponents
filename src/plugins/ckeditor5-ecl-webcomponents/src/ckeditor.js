@@ -664,14 +664,17 @@ ClassicEditor.defaultConfig = {
         tag: 'ecl-footer',
         attributes: {
           'theme': 'ec',
+          'variant': 'standardised',
           'logo-alt': 'European Union',
           'logo-title': 'European union',
           'logo-lang-code': 'en',
+          'logo-link': '',
           'description': 'This site is managed by the Directorate-General for Communication',
           'site-name': 'European Commission website',
         },
         inline: false,
         editable: true,
+        children: ['ecl-footer-item', 'ecl-text'],
       },
       {
         tag: 'ecl-footer-item',

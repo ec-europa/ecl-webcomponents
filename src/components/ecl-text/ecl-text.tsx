@@ -21,7 +21,7 @@ export class EclText {
   @Prop() itemId: string;
 
   getClass(): string {
-    let styleClasses = [];
+    let styleClasses = [this.styleClass];
 
     if (this.level && !(this.size && this.tag === 'p')) {
       switch(this.level) {
