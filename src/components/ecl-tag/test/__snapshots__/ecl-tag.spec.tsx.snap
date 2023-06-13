@@ -19,7 +19,7 @@ exports[`ecl-tag renders correctly in the display variant in EU 1`] = `
 `;
 
 exports[`ecl-tag renders correctly in the link variant in EC 1`] = `
-<ecl-tag theme="ec" type="link" url="/example">
+<ecl-tag theme="ec" type="link" url="/example.html">
   <!---->
   <span class="ecl-tag ecl-tag--display">
     An ECL tag
@@ -28,7 +28,7 @@ exports[`ecl-tag renders correctly in the link variant in EC 1`] = `
 `;
 
 exports[`ecl-tag renders correctly in the link variant in EU 1`] = `
-<ecl-tag theme="eu" type="link" url="/example">
+<ecl-tag theme="eu" type="link" url="/example.html">
   <!---->
   <span class="ecl-tag ecl-tag--display">
     An ECL tag

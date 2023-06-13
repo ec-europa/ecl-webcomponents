@@ -10,6 +10,7 @@
 | Property     | Attribute     | Description | Type      | Default     |
 | ------------ | ------------- | ----------- | --------- | ----------- |
 | `ariaLabel`  | `aria-label`  |             | `string`  | `undefined` |
+| `download`   | `download`    |             | `boolean` | `false`     |
 | `external`   | `external`    |             | `boolean` | `false`     |
 | `name`       | `name`        |             | `string`  | `undefined` |
 | `path`       | `path`        |             | `string`  | `undefined` |

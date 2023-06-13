@@ -1,3 +1,5 @@
+import { randomizedLink } from "../../utils/randomizedLink";
+
 export default {
   title: 'Components/card',
 };
@@ -16,6 +18,13 @@ const Template = (args) =>
       has-description
       has-labels
     >
+      <ecl-link
+        slot="title"
+        path="${randomizedLink('/example')}"
+        variant="standalone"
+      >
+        Title
+      </ecl-link>
       <ecl-label
         slot="labels"
         variant="highlight"
@@ -30,7 +39,7 @@ const Template = (args) =>
       >
         Call status: Upcoming
       </ecl-label>
-      <p slot="description">Transparently designing and evaluating evidence-based EU legislation, backed by citizens views.</p>
+      <ecl-text theme="${args.theme}" tag="div" level="5" slot="description">Transparently designing and evaluating evidence-based EU legislation, backed by citizens views.</ecl-text>
     </ecl-content-block>
   </ecl-card>`;
 

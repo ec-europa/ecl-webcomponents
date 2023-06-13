@@ -1,3 +1,5 @@
+import { randomizedLink } from "../../utils/randomizedLink"; 
+
 const getArgs = () => {
   return {
     variant: 'extended',
@@ -12,8 +14,8 @@ const getArgs = () => {
     <ecl-spacing direction="t" value="s">
       <ecl-link
         variant="standalone"
-        style-class="ecl-button sc-ecl-button-ec ecl-button--call"
-        href="/example"
+        style-class="ecl-button sc-ecl-button-ec sc-ecl-button-ec ecl-button--call"
+        href="${randomizedLink('/example.html')}"
       >
         Read more
         <ecl-icon slot="icon-after" icon="corner-arrow" transform="rotate-90" />

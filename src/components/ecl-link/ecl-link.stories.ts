@@ -1,9 +1,10 @@
+import { randomizedLink } from "../../utils/randomizedLink"; 
 import iconsAllEc from '@ecl/resources-ec-icons/dist/lists/all.json';
 
 const getArgs = () => {
   return {
     variant: 'default',
-    path: '/example.html',
+    path: randomizedLink('/example.html'),
     external: false,
     label: 'An ECL link',
     icon: '',
@@ -63,8 +64,8 @@ export default {
   title: 'Components/Navigation/link',
 };
 
-const Template = (args) => 
-  `<ecl-link
+const Template = (args) => `
+  <ecl-link
     variant="${args.variant}"
     theme="${args.theme}"
     path="${args.path}"

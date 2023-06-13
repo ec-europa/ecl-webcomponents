@@ -16,6 +16,7 @@ export class EclPageHeader {
   @Prop() variant: string = 'default';
   @Prop() theme: string = 'ec';
   @Prop() image: string ;
+  @Prop() imageAlt: string;
   @Prop() meta: string;
   @Prop() headerTitle: string;
   @Prop() thumbnail: string;
@@ -54,11 +55,13 @@ export class EclPageHeader {
     return (
       <div class={this.getClass()}>
       { this.image ?
-        <div 
-          class="ecl-page-header__background"
-          style={{ backgroundImage: "url(" + this.image + ")"}} 
-          aria-hidden="true"
-        ></div> : ''
+        <ecl-picture
+          styleClass={`ecl-page-header__picture-background sc-ecl-page-header-${this.theme}`}
+          image={this.image}
+          imgClass={`ecl-page-header__background sc-ecl-page-header-${this.theme}`}
+        >
+          <slot name="sources"></slot>
+        </ecl-picture> : ''
       }
         <div class="ecl-container">
           <slot name="breadcrumb"></slot>

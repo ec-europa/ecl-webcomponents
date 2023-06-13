@@ -7,7 +7,7 @@ import { Component, Prop, h, Element } from '@stencil/core';
     eu: './build/styles/ecl-text-eu.css',
   },
   shadow: false,
-  scoped: true
+  scoped: true,
 })
 
 export class EclText {
@@ -21,7 +21,7 @@ export class EclText {
   @Prop() itemId: string;
 
   getClass(): string {
-    let styleClasses = [];
+    let styleClasses = [this.styleClass];
 
     if (this.level && !(this.size && this.tag === 'p')) {
       switch(this.level) {

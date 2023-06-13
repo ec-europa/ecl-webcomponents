@@ -1,10 +1,19 @@
-@use '@ecl/theme-ec';
+@use '@ecl/theme-eu';
 
-@use '@ecl/vanilla-component-news-ticker/news-ticker-ec';
+@use '@ecl/vanilla-component-news-ticker/news-ticker-eu';
 
 .ecl-news-ticker__icon.sc-ecl-news-ticker-eu {
   margin: 0.75rem !important;
-  fill: #0e47cb !important;
+  color: #fff !important;
+  fill: #004494 !important;
+}
+
+.ecl-news-ticker__prev {
+  margin-inline-start: 0.5rem !important;
+}
+
+.ecl-news-ticker__next {
+  margin-inline-end: 0.5rem !important;
 }
 
 .ecl-u-sr-only {

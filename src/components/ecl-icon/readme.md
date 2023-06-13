@@ -45,6 +45,7 @@
  - [ecl-menu](../ecl-menu)
  - [ecl-menu-item](../ecl-menu)
  - [ecl-message](../ecl-message)
+ - [ecl-modal](../ecl-modal)
  - [ecl-news-ticker](../ecl-news-ticker)
  - [ecl-page-banner](../ecl-page-banner)
  - [ecl-pagination-item](../ecl-pagination)
@@ -86,6 +87,7 @@ graph TD;
   ecl-menu --> ecl-icon
   ecl-menu-item --> ecl-icon
   ecl-message --> ecl-icon
+  ecl-modal --> ecl-icon
   ecl-news-ticker --> ecl-icon
   ecl-page-banner --> ecl-icon
   ecl-pagination-item --> ecl-icon

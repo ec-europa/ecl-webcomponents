@@ -16,9 +16,9 @@ exports[`ecl-carousel renders 1`] = `
           Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur
         </ecl-carousel-item>
       </div>
-      <button class="ecl-carousel__prev">
+      <button class="ecl-carousel__prev" type="button">
         <ecl-icon style-class="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec">
-          <svg class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted ecl-icon--rotate-270 ecl-icon--xs sc-ecl-carousel-ec">
+          <svg class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted ecl-icon--m ecl-icon--rotate-270 sc-ecl-carousel-ec">
             <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
           </svg>
         </ecl-icon>
@@ -26,9 +26,9 @@ exports[`ecl-carousel renders 1`] = `
           Prev slides
         </span>
       </button>
-      <button class="ecl-carousel__next">
+      <button class="ecl-carousel__next" type="button">
         <ecl-icon style-class="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec">
-          <svg class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted ecl-icon--rotate-90 ecl-icon--xs sc-ecl-carousel-ec">
+          <svg class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted ecl-icon--m ecl-icon--rotate-90 sc-ecl-carousel-ec">
             <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
           </svg>
         </ecl-icon>
@@ -40,7 +40,7 @@ exports[`ecl-carousel renders 1`] = `
     <div class="ecl-carousel__controls">
       <div class="ecl-container">
         <div class="ecl-carousel__autoplay">
-          <button class="ecl-carousel__play">
+          <button class="ecl-carousel__play" type="button">
             <ecl-icon style-class="ecl-carousel__icon-default sc-ecl-carousel-ec">
               <svg class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted ecl-icon--l sc-ecl-carousel-ec">
                 <use xlink:href="/build/images/ec/icons.svg#play"></use>
@@ -55,7 +55,7 @@ exports[`ecl-carousel renders 1`] = `
               Play carousel
             </span>
           </button>
-          <button class="ecl-carousel__pause">
+          <button class="ecl-carousel__pause" type="button">
             <ecl-icon style-class="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec">
               <svg class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted ecl-icon--l sc-ecl-carousel-ec">
                 <use xlink:href="/build/images/ec/icons.svg#pause"></use>
@@ -72,17 +72,17 @@ exports[`ecl-carousel renders 1`] = `
           </button>
         </div>
         <div class="ecl-carousel__navigation">
-          <button class="ecl-carousel__navigation-item">
+          <button class="ecl-carousel__navigation-item" type="button">
             <span class="ecl-u-sr-only">
               Go to slide undefined
             </span>
           </button>
-          <button class="ecl-carousel__navigation-item">
+          <button class="ecl-carousel__navigation-item" type="button">
             <span class="ecl-u-sr-only">
               Go to slide undefined
             </span>
           </button>
-          <button class="ecl-carousel__navigation-item">
+          <button class="ecl-carousel__navigation-item" type="button">
             <span class="ecl-u-sr-only">
               Go to slide undefined
             </span>

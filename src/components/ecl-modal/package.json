@@ -1,0 +1,36 @@
+{
+  "name": "@ecl/web-components-modal",
+  "author": "European Commission",
+  "license": "EUPL-1.2",
+  "version": "0.4.0",
+  "description": "ECL Modal",
+  "main": "ecl-modal.tsx",
+  "private": true,
+  "scripts": {
+    "build:styles": "cross-env ecl-builder styles",
+    "build:scripts": "cross-env ecl-builder scripts",
+    "build": "run-s clean build:*",
+    "clean": "rimraf build",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@ecl/builder": "3.8.3",
+    "@ecl/vanilla-component-modal": "3.8.3",
+    "@ecl/vanilla-layout-grid": "3.8.3",
+    "cross-env": "7.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planctus/ecl-webcomponents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/planctus/ecl-webcomponents/issues"
+  },
+  "homepage": "https://github.com/planctus/ecl-webcomponents",
+  "keywords": [
+    "ecl",
+    "europa-component-library",
+    "design-system",
+    "web-components"
+  ]
+}

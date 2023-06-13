@@ -93,6 +93,7 @@ export class EclMenuItem {
         <a
           href={this.link}
           class={this.getLinkClass()}
+          data-ecl-menu-link
         >
           <slot></slot>
           { this.external ? 

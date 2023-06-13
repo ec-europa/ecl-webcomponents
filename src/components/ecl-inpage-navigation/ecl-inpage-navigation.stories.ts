@@ -18,21 +18,25 @@ const Template = args =>
       >
         <ecl-inpage-navigation-item
           path="#inline-nav-1"
+          theme="${args.theme}"
         >
           Heading 1
         </ecl-inpage-navigation-item>
         <ecl-inpage-navigation-item
           path="#inline-nav-2"
+          theme="${args.theme}"
         >
           Heading 2 with a long title going on several lines
         </ecl-inpage-navigation-item>
         <ecl-inpage-navigation-item
           path="#inline-nav-3"
+          theme="${args.theme}"
         >
           Heading 3
         </ecl-inpage-navigation-item>
         <ecl-inpage-navigation-item
           path="inline-nav-4"
+          theme="${args.theme}"
         >
           Heading 4
         </ecl-inpage-navigation-item>
@@ -55,3 +59,6 @@ const Template = args =>
 
 export const InpageNavigation = Template.bind({});
 InpageNavigation.storyName = 'default';
+InpageNavigation.parameters = {
+  viewMode: 'story',
+};

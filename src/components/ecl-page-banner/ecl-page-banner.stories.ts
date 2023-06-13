@@ -1,10 +1,12 @@
+import { randomizedLink } from "../../utils/randomizedLink"; 
+
 const getArgs = () => {
   return {
     variant: 'primary',
     bannerTitle: 'EU Budget for the future',
     description: 'Innovation, economy, environment and geopolitics',
     ctaLabel: 'Subscribe',
-    ctaLink: '/example.html',
+    ctaLink: randomizedLink('/example.html'),
     image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
     fullWidth: false,
     centered: true,

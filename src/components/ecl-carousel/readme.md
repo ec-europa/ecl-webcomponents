@@ -31,6 +31,7 @@
 ```mermaid
 graph TD;
   ecl-carousel-item --> ecl-banner
+  ecl-banner --> ecl-picture
   ecl-banner --> ecl-link
   ecl-banner --> ecl-icon
   ecl-link --> ecl-icon

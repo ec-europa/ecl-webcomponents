@@ -26,7 +26,7 @@ describe('ecl-content-item', () => {
         <source
           media="(min-width: 480px)"
           type="image/jpg"
-          srcset="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+          srcset="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
         >
       </ecl-picture>
       <ecl-content-block
@@ -127,7 +127,7 @@ describe('ecl-content-item', () => {
             type="text"
             theme="ec"
           >
-            Lorem ipsum dolor sit amet, <a href="/component-library/example" class="ecl-link">consectetur adipiscing elit</a>. Suspendisse ut sapien condimentum, aliquet turpis sit amet, finibus purus. Donec porttitor iaculis felis ut dapibus. Sed blandit, massa ac suscipit facilisis
+            Lorem ipsum dolor sit amet, <a href="/component-library/example.html" class="ecl-link">consectetur adipiscing elit</a>. Suspendisse ut sapien condimentum, aliquet turpis sit amet, finibus purus. Donec porttitor iaculis felis ut dapibus. Sed blandit, massa ac suscipit facilisis
           </ecl-description-list-definition>
           <ecl-description-list-term
             theme="ec"

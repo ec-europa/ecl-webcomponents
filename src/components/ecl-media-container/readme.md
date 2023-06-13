@@ -9,13 +9,13 @@
 
 | Property        | Attribute        | Description | Type      | Default     |
 | --------------- | ---------------- | ----------- | --------- | ----------- |
-| `alt`           | `alt`            |             | `string`  | `undefined` |
 | `description`   | `description`    |             | `string`  | `undefined` |
 | `eclScript`     | `ecl-script`     |             | `boolean` | `false`     |
 | `embeddedMedia` | `embedded-media` |             | `boolean` | `false`     |
 | `fullWidth`     | `full-width`     |             | `boolean` | `false`     |
 | `hasCaption`    | `has-caption`    |             | `boolean` | `false`     |
 | `image`         | `image`          |             | `string`  | `undefined` |
+| `imageAlt`      | `image-alt`      |             | `string`  | `undefined` |
 | `ratio`         | `ratio`          |             | `string`  | `'16-9'`    |
 | `sources`       | `sources`        |             | `string`  | `undefined` |
 | `styleClass`    | `style-class`    |             | `string`  | `undefined` |
@@ -29,9 +29,14 @@
 
  - [ecl-featured-item](../ecl-featured-item)
 
+### Depends on
+
+- [ecl-picture](../ecl-picture)
+
 ### Graph
 ```mermaid
 graph TD;
+  ecl-media-container --> ecl-picture
   ecl-featured-item --> ecl-media-container
   style ecl-media-container fill:#f9f,stroke:#333,stroke-width:4px
 ```

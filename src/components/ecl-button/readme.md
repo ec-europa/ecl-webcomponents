@@ -5,12 +5,15 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type     | Default     |
-| ------------ | ------------- | ----------- | -------- | ----------- |
-| `styleClass` | `style-class` |             | `string` | `''`        |
-| `theme`      | `theme`       |             | `string` | `'ec'`      |
-| `type`       | `type`        |             | `string` | `'submit'`  |
-| `variant`    | `variant`     |             | `string` | `'primary'` |
+| Property       | Attribute       | Description | Type      | Default     |
+| -------------- | --------------- | ----------- | --------- | ----------- |
+| `ariaControls` | `aria-controls` |             | `string`  | `undefined` |
+| `hideLabel`    | `hide-label`    |             | `boolean` | `false`     |
+| `itemId`       | `item-id`       |             | `string`  | `undefined` |
+| `styleClass`   | `style-class`   |             | `string`  | `''`        |
+| `theme`        | `theme`         |             | `string`  | `'ec'`      |
+| `type`         | `type`          |             | `string`  | `'submit'`  |
+| `variant`      | `variant`       |             | `string`  | `'primary'` |
 
 
 ## Dependencies
@@ -21,8 +24,10 @@
  - [ecl-expandable](../ecl-expandable)
  - [ecl-file-translations](../ecl-file)
  - [ecl-gallery](../ecl-gallery)
+ - [ecl-menu](../ecl-menu)
  - [ecl-menu-item](../ecl-menu)
  - [ecl-message](../ecl-message)
+ - [ecl-modal](../ecl-modal)
  - [ecl-news-ticker](../ecl-news-ticker)
  - [ecl-search-form](../ecl-search-form)
  - [ecl-timeline-item](../ecl-timeline)
@@ -34,8 +39,10 @@ graph TD;
   ecl-expandable --> ecl-button
   ecl-file-translations --> ecl-button
   ecl-gallery --> ecl-button
+  ecl-menu --> ecl-button
   ecl-menu-item --> ecl-button
   ecl-message --> ecl-button
+  ecl-modal --> ecl-button
   ecl-news-ticker --> ecl-button
   ecl-search-form --> ecl-button
   ecl-timeline-item --> ecl-button

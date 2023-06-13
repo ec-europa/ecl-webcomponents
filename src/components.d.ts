@@ -28,6 +28,7 @@ export namespace Components {
         "external": boolean;
         "fullWidth": boolean;
         "image": string;
+        "imageAlt": string;
         "size": string;
         "styleClass": string;
         "theme": string;
@@ -57,6 +58,9 @@ export namespace Components {
         "variant": string;
     }
     interface EclButton {
+        "ariaControls": string;
+        "hideLabel": boolean;
+        "itemId": string;
         "styleClass": string;
         "theme": string;
         "type": string;
@@ -151,11 +155,15 @@ export namespace Components {
         "yearRange": number;
     }
     interface EclDescriptionList {
+        "eclScript": boolean;
+        "moreLabel": string;
         "styleClass": string;
         "theme": string;
         "variant": string;
+        "visibleItems": number;
     }
     interface EclDescriptionListDefinition {
+        "collapsible": boolean;
         "items": string;
         "styleClass": string;
         "theme": string;
@@ -258,10 +266,12 @@ export namespace Components {
         "logoAlt": string;
         "logoAriaLabel": string;
         "logoLangCode": string;
+        "logoLink": string;
         "logoTitle": string;
         "siteName": string;
         "styleClass": string;
         "theme": string;
+        "variant": string;
     }
     interface EclFooterItem {
         "ariaLabel": string;
@@ -289,10 +299,13 @@ export namespace Components {
         "counterLabel": string;
         "counterSeparator": string;
         "description": string;
+        "disableOverlay": boolean;
         "downloadLabel": string;
         "eclScript": boolean;
+        "expandable": boolean;
         "footerLinkLabel": string;
         "footerLinkPath": string;
+        "fullWidth": boolean;
         "meta": string;
         "nextLabel": string;
         "prevLabel": string;
@@ -300,7 +313,9 @@ export namespace Components {
         "slidesNumber": number;
         "styleClass": string;
         "theme": string;
+        "viewAllExpandedLabel": string;
         "viewAllLabel": string;
+        "visibleItems": number;
     }
     interface EclGalleryItem {
         "icon": string;
@@ -391,6 +406,7 @@ export namespace Components {
     }
     interface EclLink {
         "ariaLabel": string;
+        "download": boolean;
         "external": boolean;
         "name": string;
         "path": string;
@@ -400,6 +416,7 @@ export namespace Components {
         "variant": string;
     }
     interface EclListIllustration {
+        "centered": boolean;
         "column": number;
         "styleClass": string;
         "theme": string;
@@ -412,18 +429,20 @@ export namespace Components {
         "imageAlt": string;
         "itemLink": string;
         "itemTitle": string;
+        "itemValue": string;
+        "mediaSize": string;
         "squareImage": boolean;
         "styleClass": string;
         "theme": string;
     }
     interface EclMediaContainer {
-        "alt": string;
         "description": string;
         "eclScript": boolean;
         "embeddedMedia": boolean;
         "fullWidth": boolean;
         "hasCaption": boolean;
         "image": string;
+        "imageAlt": string;
         "ratio": string;
         "sources": string;
         "styleClass": string;
@@ -438,6 +457,9 @@ export namespace Components {
         "maxLines": number;
         "menuLink": string;
         "menuTitle": string;
+        "nextLabel": string;
+        "previousLabel": string;
+        "siteName": string;
         "styleClass": string;
         "theme": string;
     }
@@ -460,6 +482,18 @@ export namespace Components {
         "variant": string;
         "withClose": boolean;
     }
+    interface EclModal {
+        "closeLabel": string;
+        "eclScript": boolean;
+        "itemId": string;
+        "styleClass": string;
+        "theme": string;
+        "toggleId": string;
+        "variant": string;
+        "withBody": boolean;
+        "withFooter": boolean;
+        "withHeader": boolean;
+    }
     interface EclNavigationList {
         "column": number;
         "styleClass": string;
@@ -478,6 +512,7 @@ export namespace Components {
         "eclScript": boolean;
         "srNext": string;
         "srPause": string;
+        "srPlay": string;
         "srPrev": string;
         "styleClass": string;
         "theme": string;
@@ -503,6 +538,7 @@ export namespace Components {
     interface EclPageHeader {
         "headerTitle": string;
         "image": string;
+        "imageAlt": string;
         "meta": string;
         "overlay": string;
         "styleClass": string;
@@ -1049,6 +1085,12 @@ declare global {
         prototype: HTMLEclMessageElement;
         new (): HTMLEclMessageElement;
     };
+    interface HTMLEclModalElement extends Components.EclModal, HTMLStencilElement {
+    }
+    var HTMLEclModalElement: {
+        prototype: HTMLEclModalElement;
+        new (): HTMLEclModalElement;
+    };
     interface HTMLEclNavigationListElement extends Components.EclNavigationList, HTMLStencilElement {
     }
     var HTMLEclNavigationListElement: {
@@ -1265,6 +1307,7 @@ declare global {
         "ecl-menu": HTMLEclMenuElement;
         "ecl-menu-item": HTMLEclMenuItemElement;
         "ecl-message": HTMLEclMessageElement;
+        "ecl-modal": HTMLEclModalElement;
         "ecl-navigation-list": HTMLEclNavigationListElement;
         "ecl-navigation-list-item": HTMLEclNavigationListItemElement;
         "ecl-news-ticker": HTMLEclNewsTickerElement;
@@ -1318,6 +1361,7 @@ declare namespace LocalJSX {
         "external"?: boolean;
         "fullWidth"?: boolean;
         "image"?: string;
+        "imageAlt"?: string;
         "size"?: string;
         "styleClass"?: string;
         "theme"?: string;
@@ -1347,6 +1391,9 @@ declare namespace LocalJSX {
         "variant"?: string;
     }
     interface EclButton {
+        "ariaControls"?: string;
+        "hideLabel"?: boolean;
+        "itemId"?: string;
         "styleClass"?: string;
         "theme"?: string;
         "type"?: string;
@@ -1444,11 +1491,15 @@ declare namespace LocalJSX {
         "yearRange"?: number;
     }
     interface EclDescriptionList {
+        "eclScript"?: boolean;
+        "moreLabel"?: string;
         "styleClass"?: string;
         "theme"?: string;
         "variant"?: string;
+        "visibleItems"?: number;
     }
     interface EclDescriptionListDefinition {
+        "collapsible"?: boolean;
         "items"?: string;
         "styleClass"?: string;
         "theme"?: string;
@@ -1551,10 +1602,12 @@ declare namespace LocalJSX {
         "logoAlt"?: string;
         "logoAriaLabel"?: string;
         "logoLangCode"?: string;
+        "logoLink"?: string;
         "logoTitle"?: string;
         "siteName"?: string;
         "styleClass"?: string;
         "theme"?: string;
+        "variant"?: string;
     }
     interface EclFooterItem {
         "ariaLabel"?: string;
@@ -1582,10 +1635,13 @@ declare namespace LocalJSX {
         "counterLabel"?: string;
         "counterSeparator"?: string;
         "description"?: string;
+        "disableOverlay"?: boolean;
         "downloadLabel"?: string;
         "eclScript"?: boolean;
+        "expandable"?: boolean;
         "footerLinkLabel"?: string;
         "footerLinkPath"?: string;
+        "fullWidth"?: boolean;
         "meta"?: string;
         "nextLabel"?: string;
         "prevLabel"?: string;
@@ -1593,7 +1649,9 @@ declare namespace LocalJSX {
         "slidesNumber"?: number;
         "styleClass"?: string;
         "theme"?: string;
+        "viewAllExpandedLabel"?: string;
         "viewAllLabel"?: string;
+        "visibleItems"?: number;
     }
     interface EclGalleryItem {
         "icon"?: string;
@@ -1687,6 +1745,7 @@ declare namespace LocalJSX {
     }
     interface EclLink {
         "ariaLabel"?: string;
+        "download"?: boolean;
         "external"?: boolean;
         "name"?: string;
         "path"?: string;
@@ -1696,6 +1755,7 @@ declare namespace LocalJSX {
         "variant"?: string;
     }
     interface EclListIllustration {
+        "centered"?: boolean;
         "column"?: number;
         "styleClass"?: string;
         "theme"?: string;
@@ -1708,18 +1768,20 @@ declare namespace LocalJSX {
         "imageAlt"?: string;
         "itemLink"?: string;
         "itemTitle"?: string;
+        "itemValue"?: string;
+        "mediaSize"?: string;
         "squareImage"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
     }
     interface EclMediaContainer {
-        "alt"?: string;
         "description"?: string;
         "eclScript"?: boolean;
         "embeddedMedia"?: boolean;
         "fullWidth"?: boolean;
         "hasCaption"?: boolean;
         "image"?: string;
+        "imageAlt"?: string;
         "ratio"?: string;
         "sources"?: string;
         "styleClass"?: string;
@@ -1734,6 +1796,9 @@ declare namespace LocalJSX {
         "maxLines"?: number;
         "menuLink"?: string;
         "menuTitle"?: string;
+        "nextLabel"?: string;
+        "previousLabel"?: string;
+        "siteName"?: string;
         "styleClass"?: string;
         "theme"?: string;
     }
@@ -1756,6 +1821,18 @@ declare namespace LocalJSX {
         "variant"?: string;
         "withClose"?: boolean;
     }
+    interface EclModal {
+        "closeLabel"?: string;
+        "eclScript"?: boolean;
+        "itemId"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "toggleId"?: string;
+        "variant"?: string;
+        "withBody"?: boolean;
+        "withFooter"?: boolean;
+        "withHeader"?: boolean;
+    }
     interface EclNavigationList {
         "column"?: number;
         "styleClass"?: string;
@@ -1774,6 +1851,7 @@ declare namespace LocalJSX {
         "eclScript"?: boolean;
         "srNext"?: string;
         "srPause"?: string;
+        "srPlay"?: string;
         "srPrev"?: string;
         "styleClass"?: string;
         "theme"?: string;
@@ -1799,6 +1877,7 @@ declare namespace LocalJSX {
     interface EclPageHeader {
         "headerTitle"?: string;
         "image"?: string;
+        "imageAlt"?: string;
         "meta"?: string;
         "overlay"?: string;
         "styleClass"?: string;
@@ -2097,6 +2176,7 @@ declare namespace LocalJSX {
         "ecl-menu": EclMenu;
         "ecl-menu-item": EclMenuItem;
         "ecl-message": EclMessage;
+        "ecl-modal": EclModal;
         "ecl-navigation-list": EclNavigationList;
         "ecl-navigation-list-item": EclNavigationListItem;
         "ecl-news-ticker": EclNewsTicker;
@@ -2178,6 +2258,7 @@ declare module "@stencil/core" {
             "ecl-menu": LocalJSX.EclMenu & JSXBase.HTMLAttributes<HTMLEclMenuElement>;
             "ecl-menu-item": LocalJSX.EclMenuItem & JSXBase.HTMLAttributes<HTMLEclMenuItemElement>;
             "ecl-message": LocalJSX.EclMessage & JSXBase.HTMLAttributes<HTMLEclMessageElement>;
+            "ecl-modal": LocalJSX.EclModal & JSXBase.HTMLAttributes<HTMLEclModalElement>;
             "ecl-navigation-list": LocalJSX.EclNavigationList & JSXBase.HTMLAttributes<HTMLEclNavigationListElement>;
             "ecl-navigation-list-item": LocalJSX.EclNavigationListItem & JSXBase.HTMLAttributes<HTMLEclNavigationListItemElement>;
             "ecl-news-ticker": LocalJSX.EclNewsTicker & JSXBase.HTMLAttributes<HTMLEclNewsTickerElement>;

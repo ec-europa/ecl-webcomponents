@@ -71,11 +71,12 @@ export class EclPopover {
         class={this.getClass()}
       >
         <a
-          class="ecl-link ecl-link--standalone ecl-popover__toggle"
+          class={`ecl-link sc-ecl-link-${this.theme} ecl-link--standalone ecl-popover__toggle`}
           {...this.getAttrs()}
         >
         { this.icon ?
           <ecl-icon
+            theme={this.theme}
             icon={this.icon}
             size={this.iconSize}
             style-class="ecl-link__icon--before"

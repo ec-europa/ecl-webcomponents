@@ -14,7 +14,7 @@ exports[`ecl-description-list renders 1`] = `
       <!---->
       <dd class="ecl-description-list__definition ecl-description-list__definition--text sc-ecl-description-list-ec">
         Lorem ipsum dolor sit amet,
-        <a class="ecl-link" href="/component-library/example">
+        <a class="ecl-link" href="/component-library/example.html">
           consectetur adipiscing elit
         </a>
         . Suspendisse ut sapien condimentum, aliquet turpis sit amet, finibus purus. Donec porttitor iaculis felis ut dapibus. Sed blandit, massa ac suscipit facilisis
@@ -29,12 +29,12 @@ exports[`ecl-description-list renders 1`] = `
     <ecl-description-list-definition items="[{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;, &quot;icon&quot;: &quot;copy&quot;},{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;, &quot;icon&quot;: &quot;download&quot;}]" theme="ec" type="link">
       <!---->
       <dd class="ecl-description-list__definition ecl-description-list__definition--link sc-ecl-description-list-ec">
-        <ecl-link path="/example.html" style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
-          <ecl-icon icon="copy" slot="icon-before"></ecl-icon>
+        <ecl-link path="/example.html" styleclass="ecl-description-list__definition-item sc-ecl-description-list-ec" theme="ec">
+          <ecl-icon icon="copy" slot="icon-before" theme="ec"></ecl-icon>
           Lorem ipsum dolor sit amet
         </ecl-link>
-        <ecl-link path="/example.html" style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
-          <ecl-icon icon="download" slot="icon-before"></ecl-icon>
+        <ecl-link path="/example.html" styleclass="ecl-description-list__definition-item sc-ecl-description-list-ec" theme="ec">
+          <ecl-icon icon="download" slot="icon-before" theme="ec"></ecl-icon>
           Lorem ipsum dolor sit amet
         </ecl-link>
       </dd>
@@ -48,10 +48,10 @@ exports[`ecl-description-list renders 1`] = `
     <ecl-description-list-definition items="[{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;},{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;}]" theme="ec" type="inline">
       <!---->
       <dd class="ecl-description-list__definition ecl-description-list__definition--inline sc-ecl-description-list-ec">
-        <ecl-link path="/example.html" style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+        <ecl-link path="/example.html" styleclass="ecl-description-list__definition-item sc-ecl-description-list-ec" theme="ec">
           Lorem ipsum dolor sit amet
         </ecl-link>
-        <ecl-link path="/example.html" style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+        <ecl-link path="/example.html" styleclass="ecl-description-list__definition-item sc-ecl-description-list-ec" theme="ec">
           Lorem ipsum dolor sit amet
         </ecl-link>
       </dd>
@@ -69,7 +69,7 @@ exports[`ecl-description-list renders 1`] = `
           Taxonomy item 1
         </span>
         <span class="ecl-description-list__definition-item sc-ecl-description-list-ec">
-          <ecl-link path="/example.html">
+          <ecl-link path="/example.html" theme="ec">
             Taxonomy item 2
           </ecl-link>
         </span>

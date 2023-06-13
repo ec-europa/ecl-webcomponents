@@ -1,3 +1,17 @@
 @use '@ecl/theme-eu';
 
+@use '@ecl/vanilla-component-link/link-eu';
 @use '@ecl/vanilla-component-popover/popover';
+
+:host {
+  cursor: pointer;
+}
+
+.ecl-link--icon-before.sc-ecl-link-ec {
+  display: flex;
+}
+
+.ecl-popover__toggle * {
+  margin-inline-end: 0.5rem;
+  vertical-align: middle;
+}

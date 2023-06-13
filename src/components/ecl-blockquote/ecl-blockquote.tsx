@@ -38,11 +38,14 @@ export class EclBlockquote {
           </footer> : '' }
         </div>
         { this.image ?
-          <img 
-            class="ecl-blockquote__image"
-            src={this.image}
-            alt={this.imageAlt}
-          />
+        <ecl-picture
+          styleClass={`ecl-blockquote__picture sc-ecl-picture-${this.theme}`}
+          imgClass={`ecl-blockquote__image sc-ecl-blockquote-${this.theme}`}
+          image={this.image}
+          imageAlt={this.imageAlt}
+        >
+          <slot name="sources"></slot>
+        </ecl-picture>
           : ''}
       </figure>
     );

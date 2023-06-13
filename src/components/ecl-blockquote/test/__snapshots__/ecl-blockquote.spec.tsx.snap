@@ -16,7 +16,7 @@ exports[`ecl-blockquote renders 1`] = `
         </cite>
       </footer>
     </div>
-    <img class="ecl-blockquote__image" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image-square.jpg">
+    <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image-square.jpg" imgclass="ecl-blockquote__image sc-ecl-blockquote-ec" styleclass="ecl-blockquote__picture sc-ecl-picture-ec"></ecl-picture>
   </figure>
 </ecl-blockquote>
 `;

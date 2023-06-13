@@ -1,20 +1,17 @@
 const getArgs = () => {
   return {
-    group: 'group1',
     menuTitle: 'Menu',
     menuLink: '/example.html',
     backMenu: 'Back',
     closeMenu: 'Close',
+    nextLabel: 'next',
+    previousLabel: 'previous',
+    maxLines: 2,
   };
 };
 
 const getArgTypes = () => {
   return {
-    group: {
-      type: { name: 'select' },
-      options: ['group1'],
-      description: 'Menu variant',
-    },
     menuTitle: {
       name: 'Title of the menu',
       type: { name: 'string' },
@@ -35,6 +32,22 @@ const getArgTypes = () => {
       type: { name: 'string' },
       description: '',
     },
+    previousLabel: {
+      name: 'Label of the back button (slider)',
+      type: { name: 'string' },
+      description: '',
+    },
+    nextLabel: {
+      name: 'Label of the next button (slider)',
+      type: { name: 'string' },
+      description: '',
+    },
+    maxLines: {
+      name: 'Allowed number of text lines per item',
+      type: { name: 'select' },
+      options: [1, 2, 3, 4],
+      description: 'You can limit the number of lines for item when it wraps',
+    },    
   };
 };
 
@@ -44,13 +57,15 @@ export default {
 
 const Template = args =>
   `<ecl-menu
-    group="${args.group}"
     theme="${args.theme}"
     close-label="${args.closeMenu}"
     back-label="${args.backMenu}"
     menu-link="${args.menuLink}"
     ecl-script
     menu-title="${args.menuTitle}"
+    previousLabel="${args.previousLabel}"
+    nextLabel="${args.nextLabel}"
+    max-lines=${args.maxLines}
   >
     <ecl-menu-item
       link="/example.html"
@@ -107,7 +122,7 @@ const Template = args =>
       trigger-aria-label="Access item's children"
       link="/example.html"
     >
-      Item 3 with a very long label
+      Item 3 with a very long label leading to the menu overflow management
       <ecl-menu-item
         theme="${args.theme}"
         child
@@ -137,7 +152,7 @@ const Template = args =>
       theme="${args.theme}"
       link="/example.html"
     >
-      Item 4 label
+      Item 4 label with some additional text
     </ecl-menu-item>
     <ecl-menu-item
       theme="${args.theme}"
@@ -406,6 +421,9 @@ const Template = args =>
   </ecl-menu>`;
 
 export const Menu = Template.bind({});
+Menu.parameters = {
+  viewMode: 'story',
+};
 Menu.storyName = 'default';
 Menu.args = getArgs();
 Menu.argTypes = getArgTypes();

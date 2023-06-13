@@ -3,14 +3,12 @@
 @use '@ecl/vanilla-component-button/button-ec';
 @use '@ecl/vanilla-component-link/link-ec';
 
-.ecl-link .ecl-icon {
+:host ::slotted(ecl-icon[slot='icon-after']) svg {
+  margin-inline-start: 0.5rem;
   vertical-align: middle;
 }
 
-.ecl-link__icon--after {
-  margin-inline-start: 0.5rem !important;
-}
-
-.ecl-link__icon--before {
-  margin-inline-end: 0.5rem !important;
+:host ::slotted(ecl-icon[slot='icon-before']) svg {
+  margin-inline-end: 0.5rem;
+  vertical-align: middle;
 }

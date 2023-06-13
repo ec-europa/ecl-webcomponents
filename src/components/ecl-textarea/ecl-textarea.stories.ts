@@ -109,6 +109,7 @@ export default {
 
 const Template = (args) => 
   `<ecl-form-group
+    theme="${args.theme}"
     helper-text="${args.helperText}"
     helper-id="helper-id"
     invalid=${args.invalid}
@@ -120,6 +121,7 @@ const Template = (args) =>
     disabled="${args.disabled}"
   >
     <ecl-textarea
+      theme="${args.theme}"
       required=${args.required}
       invalid=${args.invalid}
       disabled=${args.disabled}

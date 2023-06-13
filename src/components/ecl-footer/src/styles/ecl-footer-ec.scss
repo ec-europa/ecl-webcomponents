@@ -11,3 +11,12 @@
   margin-bottom: 1rem;
   width: 100%;
 }
+
+.ecl-site-footer--standardised .ecl-site-footer--split-columns.sc-ecl-footer-ec .ecl-site-footer__column.sc-ecl-footer-ec:last-child {
+  grid-column-end: 0;
+  grid-column-start: 0;
+}
+
+.ecl-site-footer__link.sc-ecl-footer-ec:hover {
+  color: #fff;
+}

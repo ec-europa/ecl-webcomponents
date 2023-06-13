@@ -90,20 +90,24 @@ export class EclSiteHeader {
                 variant="standalone"
                 styleClass={`ecl-site-header__logo-link sc-ecl-site-header-${this.theme}`}
               >
-              { this.theme === 'eu' ?
-                <img 
-                  alt={this.logoAlt}
-                  title={this.logoTitle}
-                  class="ecl-site-header__logo-image-mobile"
-                  src={getAssetPath(`./build/images/${this.theme}/logos/condensed-version/positive/logo-${this.theme}--${this.langCode}.svg`)}
-                /> : ''
+              { this.theme === 'eu' ? (
+                <ecl-picture
+                  styleClass={`ecl-site-header__picture sc-ecl-picture-${this.theme}`}
+                  imageAlt={this.logoAlt}
+                  imgClass={`ecl-site-header__logo-image-mobile sc-ecl-site-header-${this.theme}`}
+                  image={getAssetPath(`./build/images/${this.theme}/logos/condensed-version/positive/logo-${this.theme}--${this.langCode}.svg`)}
+                >
+                  <slot name="sources"></slot>
+                </ecl-picture> ) : ( '' )
               }
-                <img 
-                  alt={this.logoAlt}
-                  title={this.logoTitle}
-                  class="ecl-site-header__logo-image ecl-site-header__logo-image-desktop"
-                  src={logoPath}
-                />
+                <ecl-picture
+                  styleClass={`ecl-site-header__picture sc-ecl-picture-${this.theme}`}
+                  imageAlt={this.logoAlt}
+                  imgClass={`ecl-site-header__logo-image ecl-site-header__logo-image-desktop sc-ecl-site-header-${this.theme}`}
+                  image={logoPath}
+                >
+                  <slot name="sources"></slot>
+                </ecl-picture>
               </ecl-link>
               <div class="ecl-site-header__action">
               { this.loginBlock ?

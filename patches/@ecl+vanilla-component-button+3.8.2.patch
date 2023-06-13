@@ -1,0 +1,15 @@
+diff --git a/node_modules/@ecl/vanilla-component-button/_button.scss b/node_modules/@ecl/vanilla-component-button/_button.scss
+index 4531e25..8698461 100644
+--- a/node_modules/@ecl/vanilla-component-button/_button.scss
++++ b/node_modules/@ecl/vanilla-component-button/_button.scss
+@@ -67,10 +67,6 @@ $_shadow-hover: null !default;
+   margin-inline-start: map.get(theme.$spacing, 'xs');
+ }
+ 
+-.ecl-button__icon:only-child {
+-  margin: 0;
+-}
+-
+ /**
+ * Primary
+ */

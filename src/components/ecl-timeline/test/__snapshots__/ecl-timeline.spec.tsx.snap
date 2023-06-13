@@ -3,16 +3,16 @@
 exports[`ecl-timeline renders 1`] = `
 <ecl-timeline-item item-title="Item title" itemid="0" label="13 September 2017">
   <!---->
-  <li class="ecl-timeline__item">
-    <div class="ecl-timeline__tooltip">
-      <div class="ecl-timeline__tooltip-arrow"></div>
-      <div class="ecl-timeline__label">
+  <li class="ecl-timeline__item sc-ecl-timeline-ec">
+    <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
+      <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
+      <div class="ecl-timeline__label sc-ecl-timeline-ec">
         13 September 2017
       </div>
-      <div class="ecl-timeline__title">
+      <div class="ecl-timeline__title sc-ecl-timeline-ec">
         Item title
       </div>
-      <div class="ecl-timeline__content">
+      <div class="ecl-timeline__content sc-ecl-timeline-ec">
         <a class="ecl-link" href="/example.html">
           President Juncker's State of the Union speech
         </a>

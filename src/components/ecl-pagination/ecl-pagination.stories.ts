@@ -1,3 +1,5 @@
+import { randomizedLink } from "../../utils/randomizedLink"; 
+
 export default {
   title: 'Components/Navigation/pagination',
 };
@@ -7,7 +9,7 @@ const Template = args =>
     theme="${args.theme}"
   >
     <ecl-pagination-item
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
       theme="${args.theme}"
       aria-label="Previous page"
       previous
@@ -16,20 +18,20 @@ const Template = args =>
     </ecl-pagination-item>
     <ecl-pagination-item
       theme="${args.theme}"
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
       aria-label="Page 24"
      >
       24
      </ecl-pagination-item>
     <ecl-pagination-item
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
       theme="${args.theme}"
       aria-label="Page 25"
     >
       25
     </ecl-pagination-item>
     <ecl-pagination-item
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
       theme="${args.theme}"
       aria-label="Page 26"
       current
@@ -37,7 +39,7 @@ const Template = args =>
       26
     </ecl-pagination-item>
     <ecl-pagination-item
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
       theme="${args.theme}"
       aria-label="Page 27"
     >

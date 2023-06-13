@@ -105,7 +105,7 @@ describe('ecl-timeline', () => {
           label="17 May 2018"
           style-class="ecl-timeline__item--collapsed"
         >
-          <a href="/component-library/example" class="ecl-link">EU-Western Balkans Summit</a> (Sofia, Bulgaria)
+          <a href="/component-library/example.html" class="ecl-link">EU-Western Balkans Summit</a> (Sofia, Bulgaria)
         </ecl-timeline-item>
       </ecl-timeline>`,
     });

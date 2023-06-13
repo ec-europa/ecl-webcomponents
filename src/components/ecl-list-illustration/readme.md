@@ -14,6 +14,8 @@
 | `imageAlt`    | `image-alt`    |             | `string`  | `undefined` |
 | `itemLink`    | `item-link`    |             | `string`  | `undefined` |
 | `itemTitle`   | `item-title`   |             | `string`  | `undefined` |
+| `itemValue`   | `item-value`   |             | `string`  | `undefined` |
+| `mediaSize`   | `media-size`   |             | `string`  | `'m'`       |
 | `squareImage` | `square-image` |             | `boolean` | `false`     |
 | `styleClass`  | `style-class`  |             | `string`  | `undefined` |
 | `theme`       | `theme`        |             | `string`  | `'ec'`      |
@@ -23,12 +25,14 @@
 
 ### Depends on
 
+- [ecl-picture](../ecl-picture)
 - [ecl-icon](../ecl-icon)
 - [ecl-link](../ecl-link)
 
 ### Graph
 ```mermaid
 graph TD;
+  ecl-list-illustration-item --> ecl-picture
   ecl-list-illustration-item --> ecl-icon
   ecl-list-illustration-item --> ecl-link
   ecl-link --> ecl-icon

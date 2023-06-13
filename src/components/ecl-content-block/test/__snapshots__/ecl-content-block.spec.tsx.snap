@@ -116,7 +116,7 @@ exports[`ecl-content-block renders 1`] = `
             <!---->
             <dd class="ecl-description-list__definition ecl-description-list__definition--text sc-ecl-description-list-ec">
               Lorem ipsum dolor sit amet,
-              <a class="ecl-link" href="/component-library/example">
+              <a class="ecl-link" href="/component-library/example.html">
                 consectetur adipiscing elit
               </a>
               . Suspendisse ut sapien condimentum, aliquet turpis sit amet, finibus purus. Donec porttitor iaculis felis ut dapibus. Sed blandit, massa ac suscipit facilisis
@@ -131,7 +131,7 @@ exports[`ecl-content-block renders 1`] = `
           <ecl-description-list-definition items="[{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;, &quot;icon&quot;: &quot;copy&quot;},{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;, &quot;icon&quot;: &quot;download&quot;}]" theme="ec" type="link">
             <!---->
             <dd class="ecl-description-list__definition ecl-description-list__definition--link sc-ecl-description-list-ec">
-              <ecl-link style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+              <ecl-link>
                 <!---->
                 <a class="ecl-description-list__definition-item ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before sc-ecl-description-list-ec" href="/example.html">
                   <ecl-icon slot="icon-before">
@@ -143,7 +143,7 @@ exports[`ecl-content-block renders 1`] = `
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </ecl-link>
-              <ecl-link style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+              <ecl-link>
                 <!---->
                 <a class="ecl-description-list__definition-item ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before sc-ecl-description-list-ec" href="/example.html">
                   <ecl-icon slot="icon-before">
@@ -166,14 +166,14 @@ exports[`ecl-content-block renders 1`] = `
           <ecl-description-list-definition items="[{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;},{&quot;label&quot;: &quot;Lorem ipsum dolor sit amet&quot;, &quot;path&quot;: &quot;/example.html&quot;}]" theme="ec" type="inline">
             <!---->
             <dd class="ecl-description-list__definition ecl-description-list__definition--inline sc-ecl-description-list-ec">
-              <ecl-link style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+              <ecl-link>
                 <!---->
                 <a class="ecl-description-list__definition-item ecl-link ecl-link--default sc-ecl-description-list-ec" href="/example.html">
                   Lorem ipsum dolor sit amet
                   <slot-fb name="icon-after"></slot-fb>
                 </a>
               </ecl-link>
-              <ecl-link style-class="ecl-description-list__definition-item sc-ecl-description-list-ec">
+              <ecl-link>
                 <!---->
                 <a class="ecl-description-list__definition-item ecl-link ecl-link--default sc-ecl-description-list-ec" href="/example.html">
                   Lorem ipsum dolor sit amet

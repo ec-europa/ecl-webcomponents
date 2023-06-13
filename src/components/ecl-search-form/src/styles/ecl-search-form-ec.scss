@@ -21,6 +21,6 @@
   }
 }
 
-.ecl-search-form__text-input.sc-ecl-search-form-ec {
-  border-inline-end-width: 0 !important;
+.ecl-search-form__text-input.sc-ecl-search-form-ec:not(:focus-visible) {
+  border-inline-end-color: transparent !important;
 }

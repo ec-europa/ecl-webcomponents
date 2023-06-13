@@ -18,6 +18,10 @@
 	content: 'picture';
 }
 
+.ecl-modal.ck-editor__editable::before {
+	content: 'modal';
+}
+
 .ecl-content__item.ck-editor__editable::before {
 	content: 'content item';
 }
@@ -167,6 +171,7 @@
 .ecl-content__item.ck-editor__editable,
 .ecl-banner.ck-editor__editable,
 .ecl-link.ck-editor__editable,
+.ecl-modal.ck-editor__editable
  {
 	background: #E9E9E9;
 	margin-bottom: 0.5rem;
@@ -220,7 +225,8 @@
 .ecl-content__item.ck-editor__editable::before,
 .ecl-banner.ck-editor__editable::before,
 .ecl-link.ck-editor__editable::before,
-.ecl-picture.ck-editor__editable::before {
+.ecl-picture.ck-editor__editable::before,
+.ecl-modal.ck-editor__editable::before {
 	border-right: 2px solid #ccc;
 	font-size: 0.875rem;
 	font-weight: 700;

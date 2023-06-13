@@ -47,22 +47,20 @@ export class EclContentBlock {
     }
     if (this.hasLinks) {
       const linksContainers = this.el.querySelectorAll('.ecl-content-block__link-list');
-      const links = this.el.querySelectorAll('.ecl-content-block__link-list .ecl-link');
-      if (links) {
-        linksContainers.forEach((linkList) => {
-          const thisLinks = linkList.querySelectorAll('.ecl-link');
-          if (thisLinks) {
-            linkList.innerHTML = '';
-            thisLinks.forEach((link) => {
-              link.classList.add(`sc-ecl-content-block-${this.theme}`);
-              const listEl = document.createElement('li');
-              listEl.classList.add('ecl-content-block__link-item', `sc-ecl-content-block-${this.theme}`);
-              listEl.appendChild(link);
-              linkList.appendChild(listEl);
-            });
-          }
-        });
-      }
+
+      linksContainers.forEach((linkList) => {
+        const thisLinks = linkList.querySelectorAll('.ecl-link');
+        if (thisLinks) {
+          linkList.innerHTML = '';
+          thisLinks.forEach((link) => {
+            link.classList.add(`sc-ecl-content-block-${this.theme}`);
+            const listEl = document.createElement('li');
+            listEl.classList.add('ecl-content-block__link-item', `sc-ecl-content-block-${this.theme}`);
+            listEl.appendChild(link);
+            linkList.appendChild(listEl);
+          });
+        }
+      });
     }
     if (this.hasLists) {
       const list = this.el.querySelector('.ecl-content-block__list-container .ecl-description-list');

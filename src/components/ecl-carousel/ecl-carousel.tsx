@@ -63,21 +63,29 @@ export class EclCarousel {
           >
             <slot></slot>
           </div>
-          <button 
+          <button
+            type="button"
             class="ecl-carousel__prev"
           >
             <ecl-icon
+              theme={this.theme}
               icon="corner-arrow"
+              size="m"
               transform="rotate-270"
-              style-class="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec"
+              style-class={`ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-${this.theme}`}
             ></ecl-icon>
              <span class="ecl-u-sr-only">{this.srPrevious}</span>
           </button>
-          <button class="ecl-carousel__next">
+          <button
+            type="button"
+            class="ecl-carousel__next"
+          >
             <ecl-icon
+              theme={this.theme}
               icon="corner-arrow"
+              size="m"
               transform="rotate-90"
-              style-class="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec"
+              style-class={`ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-${this.theme}`}
             ></ecl-icon>
             <span class="ecl-u-sr-only">{this.srNext}</span>
           </button>
@@ -85,14 +93,16 @@ export class EclCarousel {
         <div class="ecl-carousel__controls">
           <div class="ecl-container">
             <div class="ecl-carousel__autoplay">
-              <button class="ecl-carousel__play">
+              <button type="button" class="ecl-carousel__play">
                 <ecl-icon
+                  theme={this.theme}
                   icon="play"
                   size="l"
                   color="inverted"
                   style-class={`ecl-carousel__icon-default sc-ecl-carousel-${this.theme}`}
                 ></ecl-icon>
                 <ecl-icon
+                  theme={this.theme}
                   icon="play-filled"
                   size="l"
                   color="inverted"
@@ -100,13 +110,15 @@ export class EclCarousel {
                 ></ecl-icon>
                 <span class="ecl-u-sr-only">{this.srPlay}</span>
               </button>
-              <button class="ecl-carousel__pause">
+              <button type="button" class="ecl-carousel__pause">
                 <ecl-icon
+                  theme={this.theme}
                   icon="pause"
                   size="l"
-                  style-class="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec"
+                  style-class={`ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-${this.theme}`}
                 ></ecl-icon>
                 <ecl-icon
+                  theme={this.theme}
                   icon="pause-filled"
                   size="l"
                   color="inverted"
@@ -117,7 +129,7 @@ export class EclCarousel {
             </div>
             <div class="ecl-carousel__navigation">
             { [...Array(this.slidesNumber)].map((i) =>
-              <button class="ecl-carousel__navigation-item">
+              <button type="button" class="ecl-carousel__navigation-item">
                 <span class="ecl-u-sr-only">{this.srNavigation.replace('%d', i)}</span>
               </button>
             ) } 

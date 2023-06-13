@@ -4,7 +4,7 @@ exports[`ecl-page-header renders 1`] = `
 <ecl-page-header header-title="Page title" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" meta="Meta info | DD Month YYYY" theme="ec" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" thumbnail-alt="Eu map" variant="negative">
   <!---->
   <div class="ecl-page-header ecl-page-header--image ecl-page-header--negative">
-    <div aria-hidden="true" class="ecl-page-header__background" style="background-image: url(https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg);"></div>
+    <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" imgclass="ecl-page-header__background sc-ecl-page-header-ec" styleclass="ecl-page-header__picture-background sc-ecl-page-header-ec"></ecl-picture>
     <div class="ecl-container">
       <ecl-breadcrumb ecl-script="" slot="breadcrumb" theme="ec" variant="negative">
         <!---->

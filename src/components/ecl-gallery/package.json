@@ -7,16 +7,16 @@
   "main": "ecl-hero-banner.tsx",
   "private": true,
   "scripts": {
-    "build:styles": "cross-env NODE_ENV=production ecl-builder styles",
+    "build:styles": "cross-env ecl-builder styles",
     "build:scripts": "cross-env ecl-builder scripts",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.7.1",
-    "@ecl/vanilla-component-gallery": "3.7.1",
-    "@ecl/vanilla-layout-grid": "3.7.1",
+    "@ecl/builder": "3.8.3",
+    "@ecl/vanilla-component-gallery": "3.8.3",
+    "@ecl/vanilla-layout-grid": "3.8.3",
     "cross-env": "7.0.3"
   },
   "repository": {

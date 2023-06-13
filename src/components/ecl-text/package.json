@@ -7,14 +7,14 @@
   "main": "ecl-text.ts",
   "private": true,
   "scripts": {
-    "build:styles": "cross-env NODE_ENV=production ecl-builder styles",
+    "build:styles": "cross-env ecl-builder styles",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.7.1",
-    "@ecl/vanilla-utility-typography": "3.7.1",
+    "@ecl/builder": "3.8.3",
+    "@ecl/vanilla-utility-typography": "3.8.3",
     "cross-env": "7.0.3"
   },
   "repository": {

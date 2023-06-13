@@ -23,26 +23,17 @@ export class EclCard {
     ].join(' ');
   }
 
-  getImgAttr() {
-    const attrs = {
-      class: 'ecl-card__image',
-      role: 'img',
-    }
-
-    if (this.imageAlt) {
-      attrs['alt'] = this.imageAlt;
-    }
-
-    return attrs;
-  }
-
   render() {
     return (
      <article class={this.getClass()}>
-      <div
-        style={{ backgroundImage: "url(" + this.image + ")"}}
-        {...this.getImgAttr()}
-      ></div>
+      <ecl-picture
+        image={this.image}
+        imageAlt={this.imageAlt}
+        imgClass={`ecl-card__image sc-ecl-card-${this.theme}`}
+        styleClass={`ecl-card__picture sc-ecl-picture-${this.theme}`}
+      >
+        <slot name="sources"></slot>
+      </ecl-picture>
       <div class="ecl-card__body">
         <slot></slot>
       </div>

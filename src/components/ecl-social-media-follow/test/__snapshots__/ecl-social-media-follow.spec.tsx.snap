@@ -82,7 +82,7 @@ exports[`ecl-social-media-follow renders 1`] = `
         <ecl-popover ecl-script="" icon="share" icon-size="s" item-id="popover-example" list="" theme="ec" toggle-label="Popover">
           <!---->
           <div class="ecl-popover">
-            <a aria-controls="popover-example" aria-expanded="false" class="ecl-link ecl-link--standalone ecl-popover__toggle ecl-social-media-follow__link sc-ecl-social-media-follow-ec" data-ecl-popover-toggle="data-ecl-popover-toggle">
+            <a aria-controls="popover-example" aria-expanded="false" class="ecl-link ecl-link--standalone ecl-popover__toggle ecl-social-media-follow__link sc-ecl-link-ec sc-ecl-social-media-follow-ec" data-ecl-popover-toggle="data-ecl-popover-toggle">
               <ecl-icon style-class="ecl-link__icon--before">
                 <svg class="ecl-icon ecl-icon--s ecl-link__icon--before">
                   <use xlink:href="/build/images/ec/icons.svg#share"></use>

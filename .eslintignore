@@ -11,3 +11,5 @@ src/plugins/
 ckeditor5
 playground/editor
 playground/ecl-webcomponents
+packages/ecl-webcomponents-react-consumer/src/assets/
+packages/ecl-webcomponents-angular-workspace/server.js

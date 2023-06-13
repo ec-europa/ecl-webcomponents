@@ -9,7 +9,7 @@ declare const ECL: any;
     eu: './build/styles/ecl-timeline-eu.css',
   },
   shadow: false,
-  scoped: false,
+  scoped: true,
   assetsDirs: ['build'],
 })
 export class EclTimeline {

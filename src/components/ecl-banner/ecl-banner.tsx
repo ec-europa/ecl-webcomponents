@@ -19,9 +19,10 @@ export class EclBanner {
   @Prop() fullWidth: boolean = false;
   @Prop() bannerTitle: string;
   @Prop() image: string;
+  @Prop() imageAlt: string;
   @Prop() ctaLabel: string;
   @Prop() ctaLink: string;
-  @Prop() centered: boolean = true;
+  @Prop() centered: boolean = false;
   @Prop() credit: string;
   @Prop() size: string = 'm';
   @Prop() ctaClicked: boolean = false;
@@ -61,11 +62,14 @@ export class EclBanner {
     return (
       <section class={this.getClass()}>
       { imageBanners.includes(this.variant) && this.image ?
-        <div
-          class="ecl-banner__image"
-          style={{ backgroundImage: "url(" + this.image + ")"}}
+        <ecl-picture
+          styleClass={`ecl-banner__picture sc-ecl-banner-${this.theme}`}
+          image={this.image}
+          imageAlt={this.imageAlt}
+          imgClass={`ecl-banner__image sc-ecl-banner-${this.theme}`}
         >
-        </div>
+          <slot name="sources"></slot>
+        </ecl-picture>
         : '' }
       { this.credit && this.variant != 'plain-background' ?
         <div class="ecl-banner__credit">{this.credit}</div> : ''
@@ -86,6 +90,7 @@ export class EclBanner {
             { this.ctaLabel && this.ctaLink ?
               <div class="ecl-banner__cta">
                 <ecl-link
+                  theme={this.theme}
                   variant="cta"
                   path={this.ctaLink}
                   style-class={`ecl-banner__link-cta sc-ecl-banner-${this.theme}`}
@@ -95,6 +100,7 @@ export class EclBanner {
                     icon="corner-arrow"
                     slot="icon-after"
                     transform="rotate-90"
+                    theme={this.theme}
                   ></ecl-icon>
                 </ecl-link>
               </div>

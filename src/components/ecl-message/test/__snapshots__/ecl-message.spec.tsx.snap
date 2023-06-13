@@ -12,7 +12,7 @@ exports[`ecl-message renders 1`] = `
     <div class="ecl-message__content">
       <ecl-button data-ecl-message-close style-class="ecl-message__close sc-ecl-message-ec">
         <!---->
-        <button class="ecl-button ecl-button--ghost ecl-message__close sc-ecl-message-ec" data-ecl-message-close type="button">
+        <button class="ecl-button ecl-button--ghost ecl-message__close sc-ecl-message-ec" data-ecl-message-close="eclMessageClose" type="button">
           <span class="ecl-button__container">
             <span class="ecl-button__label">
               Close

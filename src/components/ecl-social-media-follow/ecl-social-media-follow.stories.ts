@@ -1,3 +1,5 @@
+import { randomizedLink } from "../../utils/randomizedLink"; 
+
 const getArgs = () => {
   return {
     variant: 'horizontal',
@@ -70,7 +72,7 @@ const Template = (args) =>
   >
     <ecl-popover-item
       theme="${args.theme}"
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
       icon="pinterest-color"
       icon-sprite="icons-social-media"
       icon-size="s"
@@ -79,7 +81,7 @@ const Template = (args) =>
     </ecl-popover-item>
     <ecl-popover-item
       theme="${args.theme}"
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
       icon="mastodon-color"
       icon-sprite="icons-social-media"
       icon-size="s"
@@ -88,7 +90,7 @@ const Template = (args) =>
     </ecl-popover-item>
     <ecl-popover-item
       theme="${args.theme}"
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
       icon="reddit-color"
       icon-sprite="icons-social-media"
       icon-size="s"
@@ -97,7 +99,7 @@ const Template = (args) =>
     </ecl-popover-item>
     <ecl-popover-item
       theme="${args.theme}"
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
       icon="youtube-color"
       icon-sprite="icons-social-media"
       icon-size="s"
@@ -106,7 +108,7 @@ const Template = (args) =>
     </ecl-popover-item>
     <ecl-popover-item
       theme="${args.theme}"
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
       icon="flickr-color"
       icon-sprite="icons-social-media"
       icon-size="s"
@@ -115,7 +117,7 @@ const Template = (args) =>
     </ecl-popover-item>
     <ecl-popover-item
       theme="${args.theme}"
-      path="/example.html"
+      path="${randomizedLink('/example.html')}"
       icon="skype-color"
       icon-sprite="icons-social-media"
       icon-size="s"

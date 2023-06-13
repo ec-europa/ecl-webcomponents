@@ -8,7 +8,7 @@ exports[`ecl-site-header renders 1`] = `
       <div class="ecl-container ecl-site-header__container">
         <div class="ecl-site-header__top" data-ecl-site-header-top>
           <ecl-link styleclass="ecl-site-header__logo-link sc-ecl-site-header-ec" variant="standalone">
-            <img alt="European Commission" class="ecl-site-header__logo-image ecl-site-header__logo-image-desktop" src="/build/images/ec/logos/positive/logo-ec--en.svg" title="European commission">
+            <ecl-picture image="/build/images/ec/logos/positive/logo-ec--en.svg" imagealt="European Commission" imgclass="ecl-site-header__logo-image ecl-site-header__logo-image-desktop sc-ecl-site-header-ec" styleclass="ecl-site-header__picture sc-ecl-picture-ec"></ecl-picture>
           </ecl-link>
           <div class="ecl-site-header__action">
             <div class="ecl-site-header__login-container">

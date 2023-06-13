@@ -14,22 +14,22 @@ exports[`ecl-inpage-navigation renders 1`] = `
       </button>
       <ul class="ecl-inpage-navigation__list" data-ecl-inpage-navigation-list id="inpage-id-list">
         <li class="ecl-inpage-navigation__item sc-ecl-inpage-navigation-ec">
-          <ecl-link data-ecl-inpage-navigation-link path="#inline-nav-1" style-class="ecl-inpage-navigation__link sc-ecl-inpage-navigation-ec">
+          <ecl-link data-ecl-inpage-navigation-link path="#inline-nav-1" style-class="ecl-inpage-navigation__link sc-ecl-inpage-navigation-ec" theme="ec">
             Heading 1
           </ecl-link>
         </li>
         <li class="ecl-inpage-navigation__item sc-ecl-inpage-navigation-ec">
-          <ecl-link data-ecl-inpage-navigation-link path="#inline-nav-2" style-class="ecl-inpage-navigation__link sc-ecl-inpage-navigation-ec">
+          <ecl-link data-ecl-inpage-navigation-link path="#inline-nav-2" style-class="ecl-inpage-navigation__link sc-ecl-inpage-navigation-ec" theme="ec">
             Heading 2 with a long title going on several lines
           </ecl-link>
         </li>
         <li class="ecl-inpage-navigation__item sc-ecl-inpage-navigation-ec">
-          <ecl-link data-ecl-inpage-navigation-link path="#inline-nav-3" style-class="ecl-inpage-navigation__link sc-ecl-inpage-navigation-ec">
+          <ecl-link data-ecl-inpage-navigation-link path="#inline-nav-3" style-class="ecl-inpage-navigation__link sc-ecl-inpage-navigation-ec" theme="ec">
             Heading 3
           </ecl-link>
         </li>
         <li class="ecl-inpage-navigation__item sc-ecl-inpage-navigation-ec">
-          <ecl-link data-ecl-inpage-navigation-link path="inline-nav-4" style-class="ecl-inpage-navigation__link sc-ecl-inpage-navigation-ec">
+          <ecl-link data-ecl-inpage-navigation-link path="inline-nav-4" style-class="ecl-inpage-navigation__link sc-ecl-inpage-navigation-ec" theme="ec">
             Heading 4
           </ecl-link>
         </li>

@@ -4,7 +4,16 @@
 
 .ecl-news-ticker__icon.sc-ecl-news-ticker-ec {
   margin: 0.75rem !important;
+  color: #fff !important;
   fill: #004494 !important;
+}
+
+.ecl-news-ticker__prev {
+  margin-inline-start: 0.5rem !important;
+}
+
+.ecl-news-ticker__next {
+  margin-inline-end: 0.5rem !important;
 }
 
 .ecl-u-sr-only {

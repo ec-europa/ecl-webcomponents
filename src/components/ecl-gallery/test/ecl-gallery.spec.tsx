@@ -33,7 +33,7 @@ describe('ecl-gallery', () => {
           theme="ec"
           type="video"
           meta="Copyright, Author, Licence for embedded media"
-          media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-external-video.jpg"
+          media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-external-video.jpg"
           image-alt="New digital strategy"
           media-iframe-href="https://www.youtube.com/embed/fgi-GSCB6ho"
         >
@@ -76,7 +76,7 @@ describe('ecl-gallery', () => {
           <video
             slot="video"
             class="ecl-gallery__image sc-ecl-gallery-ec"
-            poster="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg"
+            poster="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg"
           >
             <source
               src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4"
@@ -104,7 +104,7 @@ describe('ecl-gallery', () => {
           theme="ec"
           meta="Copyright, Author, Licence for image 6"
           media-share-path="/example.html"
-          media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg"
+          media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg"
           image-alt="Image 6"
         >
           Find official documents, publications, statistics, open data and more resources
@@ -113,7 +113,7 @@ describe('ecl-gallery', () => {
           theme="ec"
           meta="Copyright, Author, Licence for image 7"
           media-share-path="/example.html"
-          media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg"
+          media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg"
           image-alt="Image 7"
         >
           Teaching material about the EU, including books and maps
@@ -123,7 +123,7 @@ describe('ecl-gallery', () => {
           meta="Copyright, Author, Licence for image 8"
           media-share-path="/example.html"
           media-iframe-href="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&lg=EN"
-          media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg"
+          media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg"
           image-alt="Image 8"
         >
           Teaching material about the EU, including books and maps
@@ -132,7 +132,7 @@ describe('ecl-gallery', () => {
           theme="ec"
           meta="Copyright, Author, Licence for image 9"
           media-share-path="/example.html"
-          media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg"
+          media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           image-alt="Image 9"
         >
           About the EU
