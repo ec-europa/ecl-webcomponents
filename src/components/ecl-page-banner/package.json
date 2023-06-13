@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-page-banner",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "ECL Page Banner",
   "main": "ecl-page-banner.tsx",
   "private": true,
