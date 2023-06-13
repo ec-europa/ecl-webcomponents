@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-datepicker",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "ECL Datepicker",
   "main": "ecl-datepicker.ts",
   "private": true,
@@ -15,10 +15,10 @@
   },
   "devDependencies": {
     "@ecl/builder": "3.8.3",
-    "@ecl/vanilla-component-datepicker": "3.8.3",
-    "cross-env": "7.0.3",
     "@ecl/theme-ec": "3.8.3",
-    "@ecl/theme-eu": "3.8.3"
+    "@ecl/theme-eu": "3.8.3",
+    "@ecl/vanilla-component-datepicker": "3.8.3",
+    "cross-env": "7.0.3"
   },
   "repository": {
     "type": "git",
