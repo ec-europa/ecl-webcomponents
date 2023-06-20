@@ -1,3 +1,7 @@
 @use '@ecl/theme-ec';
 
 @use '@ecl/vanilla-layout-grid/grid';
+
+:host {
+  height: fit-content;
+}
