@@ -8,7 +8,6 @@ import { Component, h, Prop} from '@stencil/core';
 
 export class EclNavigationListItem {
   @Prop() theme: string = 'ec';
-  @Prop() itemTitle: string;
   @Prop() image: string;
   @Prop() imageAlt: string;
   @Prop() styleClass: string;

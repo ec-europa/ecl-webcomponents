@@ -448,6 +448,18 @@ ClassicEditor.defaultConfig = {
             ],
           },
           {
+            label: 'navigation-list',
+            withText: true,
+            items: [
+              'ecl-webcomponents-ecl-navigation-list',
+              {
+                label: 'navigation list item',
+                withText: true,
+                items: ['ecl-webcomponents-ecl-navigation-list-item'],
+              },
+            ],
+          },
+          {
             label: 'timeline',
             withText: true,
             items: [
@@ -581,6 +593,31 @@ ClassicEditor.defaultConfig = {
         inline: false,
         editable: true,
         children: ['ecl-content-block', 'ecl-picture'],
+      },
+      {
+        tag: 'ecl-navigation-list',
+        attributes: {
+          'style-class': '',
+          'theme': 'ec',
+          'column': '',
+        },
+        inline: false,
+        editable: true,
+        children: ['ecl-content-block', 'ecl-navigation-list-item', 'ecl-content-item'],
+      },
+      {
+        tag: 'ecl-navigation-list-item',
+        attributes: {
+          'style-class': '',
+          'theme': 'ec',
+          'border': '',
+          'image': '',
+          'image-alt': '',
+        },
+        inline: true,
+        editable: true,
+        parent: ['ecl-navigation-list'],
+        children: ['ecl-content-block'],
       },
       {
         tag: 'ecl-picture',

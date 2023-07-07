@@ -503,7 +503,6 @@ export namespace Components {
         "border": boolean;
         "image": string;
         "imageAlt": string;
-        "itemTitle": string;
         "styleClass": string;
         "theme": string;
     }
@@ -1842,7 +1841,6 @@ declare namespace LocalJSX {
         "border"?: boolean;
         "image"?: string;
         "imageAlt"?: string;
-        "itemTitle"?: string;
         "styleClass"?: string;
         "theme"?: string;
     }
