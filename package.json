@@ -105,7 +105,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
-    "get-latest-version": "5.0.1",
+    "get-latest-version": "5.1.0",
     "husky": "8.0.3",
     "jest": "27.0.3",
     "jest-cli": "27.4.5",
@@ -151,6 +151,7 @@
     "trim": ">=0.0.3",
     "json5": ">=1.0.2",
     "http-cache-semantics": ">=4.1.1",
-    "yaml": ">=2.2.2"
+    "yaml": ">=2.2.2",
+    "semver": ">=7.5.2"
   }
 }

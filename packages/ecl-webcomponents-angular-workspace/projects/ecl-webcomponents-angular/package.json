@@ -15,7 +15,7 @@
     "copy": "ncp ../../../ecl-webcomponents/dist/ecl-webcomponents/build dist/build"
   },
   "dependencies": {
-    "tslib": "2.5.3"
+    "tslib": "2.6.0"
   },
   "sideEffects": false
 }
