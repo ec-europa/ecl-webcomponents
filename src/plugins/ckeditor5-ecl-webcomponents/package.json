@@ -15,8 +15,13 @@
     "build": "run-s build:*",
     "build:copy": "cross-env ecl-builder copy",
     "build:plugin": "cd ../../../ckeditor5/packages/ckeditor5-build-classic/ && yarn build",
-    "build:playground": "ncp ../../../ckeditor5/packages/ckeditor5-build-classic/build ../../../playground/editor/"
+    "build:playground": "ncp ../../../ckeditor5/packages/ckeditor5-build-classic/build ../../../playground/editor/",
+    "pre-publish": "ncp ../../../ckeditor5/packages/ckeditor5-build-classic/build ./dist"
   },
+  "files": [
+    "src",
+    "dist"
+  ],
   "keywords": [
     "ckeditor5",
     "ECL",

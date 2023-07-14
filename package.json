@@ -40,7 +40,7 @@
     "prepare": "npx husky install",
     "pretty-check": "prettier --check \"src/**/*.{md,mdx,html,json,yml,js,jsx,scss}\"",
     "pretty-write": "prettier --write \"src/**/*.{md,mdx,html,json,yml,js,jsx,scss}\"",
-    "publish": "scripts/publish.sh",
+    "publish": "lerna --scope \"@ecl/ckeditor5-ecl-webcomponents\" run pre-publish && scripts/publish.sh",
     "start": "stencil build --watch",
     "test": "yarn pretty-check && stencil test --spec",
     "test:update": "rimraf src/components/*/test/__snapshots__ && yarn test",
