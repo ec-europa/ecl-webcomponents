@@ -13,11 +13,11 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.8.4",
-    "@ecl/theme-ec": "3.8.4",
-    "@ecl/theme-eu": "3.8.4",
-    "@ecl/vanilla-component-date-block": "3.8.4",
-    "@ecl/vanilla-utility-screen-reader": "3.8.4",
+    "@ecl/builder": "3.9.1",
+    "@ecl/theme-ec": "3.9.1",
+    "@ecl/theme-eu": "3.9.1",
+    "@ecl/vanilla-component-date-block": "3.9.1",
+    "@ecl/vanilla-utility-screen-reader": "3.9.1",
     "cross-env": "7.0.3"
   },
   "repository": {

@@ -14,14 +14,14 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.8.4",
-    "@ecl/vanilla-component-button": "3.8.4",
-    "@ecl/vanilla-component-checkbox": "3.8.4",
-    "@ecl/vanilla-component-datepicker": "3.8.4",
-    "@ecl/vanilla-component-file-upload": "3.8.4",
-    "@ecl/vanilla-component-radio": "3.8.4",
-    "@ecl/vanilla-component-search-form": "3.8.4",
-    "@ecl/vanilla-component-text-input": "3.8.4",
+    "@ecl/builder": "3.9.1",
+    "@ecl/vanilla-component-button": "3.9.1",
+    "@ecl/vanilla-component-checkbox": "3.9.1",
+    "@ecl/vanilla-component-datepicker": "3.9.1",
+    "@ecl/vanilla-component-file-upload": "3.9.1",
+    "@ecl/vanilla-component-radio": "3.9.1",
+    "@ecl/vanilla-component-search-form": "3.9.1",
+    "@ecl/vanilla-component-text-input": "3.9.1",
     "cross-env": "7.0.3"
   },
   "repository": {

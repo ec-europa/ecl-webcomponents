@@ -13,11 +13,11 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.8.4",
-    "@ecl/specs-component-icon": "3.8.4",
-    "@ecl/vanilla-component-button": "3.8.4",
-    "@ecl/vanilla-component-icon": "3.8.4",
-    "@ecl/vanilla-component-link": "3.8.4",
+    "@ecl/builder": "3.9.1",
+    "@ecl/specs-component-icon": "3.9.1",
+    "@ecl/vanilla-component-button": "3.9.1",
+    "@ecl/vanilla-component-icon": "3.9.1",
+    "@ecl/vanilla-component-link": "3.9.1",
     "cross-env": "7.0.3"
   },
   "repository": {
