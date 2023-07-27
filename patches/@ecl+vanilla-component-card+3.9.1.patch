@@ -1,0 +1,12 @@
+diff --git a/node_modules/@ecl/vanilla-component-card/_card.scss b/node_modules/@ecl/vanilla-component-card/_card.scss
+index 0c0e435..9722633 100644
+--- a/node_modules/@ecl/vanilla-component-card/_card.scss
++++ b/node_modules/@ecl/vanilla-component-card/_card.scss
+@@ -23,7 +23,6 @@ $_body-padding: null !default;
+   border-radius: $_border-radius;
+   box-shadow: $_shadow;
+   box-sizing: border-box;
+-  height: 100%;
+   margin: 0;
+   overflow: hidden;
+   overflow-wrap: break-word;
