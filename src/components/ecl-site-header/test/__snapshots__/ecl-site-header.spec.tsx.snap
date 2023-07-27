@@ -8,7 +8,7 @@ exports[`ecl-site-header renders 1`] = `
       <div class="ecl-container ecl-site-header__container">
         <div class="ecl-site-header__top" data-ecl-site-header-top>
           <ecl-link styleclass="ecl-site-header__logo-link sc-ecl-site-header-ec" variant="standalone">
-            <ecl-picture image="/build/images/ec/logos/positive/logo-ec--undefined.svg" imagealt="European Commission" imgclass="ecl-site-header__logo-image ecl-site-header__logo-image-desktop sc-ecl-site-header-ec" styleclass="ecl-site-header__picture sc-ecl-picture-ec"></ecl-picture>
+            <ecl-picture image="/build/images/ec/logos/positive/logo-ec--en.svg" imagealt="European Commission" imgclass="ecl-site-header__logo-image ecl-site-header__logo-image-desktop sc-ecl-site-header-ec" styleclass="ecl-site-header__picture sc-ecl-picture-ec"></ecl-picture>
           </ecl-link>
           <div class="ecl-site-header__action">
             <div class="ecl-site-header__login-container">
@@ -222,7 +222,7 @@ exports[`ecl-site-header renders 1`] = `
                 </div>
               </div>
             </div>
-            <div class="ecl-site-header__search-container">
+            <div class="ecl-site-header__search-container" role="search">
               <a aria-controls="search-form-id" aria-expanded="false" class="ecl-button ecl-button--ghost ecl-site-header__search-toggle" data-ecl-search-toggle>
                 <ecl-icon icon="search" size="s" style-class="ecl-icon ecl-icon--s ecl-site-header__icon sc-ecl-site-header-ec" theme="ec"></ecl-icon>
                 search

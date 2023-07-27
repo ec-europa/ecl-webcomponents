@@ -75,6 +75,7 @@ const TemplateWithTranslation = args =>
   image-alt="thumbnail alt"
   detail-meta='["Resource type", "Publication date"]'
   ecl-script
+  aria-label="Download file State of the Union 2018 brochure"
   taxonomies-label="Taxonomy list"
   taxonomies='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"},"Taxonomy item 3"]'
   labels='${args.labels || args.variant === 'thumbnail' ? '[{"variant": "highlight", "label": "Highlight"}, {"variant": "medium", "label": "Medium"}]' : ''}'
@@ -94,6 +95,7 @@ const TemplateWithTranslation = args =>
       file-title="български"
       variant="${args.variant}"
       theme="${args.theme}"
+      aria-label="Download file State of the Union 2018 brochure"
     >
     </ecl-file-translations-item>
     <ecl-file-translations-item
@@ -104,6 +106,7 @@ const TemplateWithTranslation = args =>
       file-title="español"
       variant="${args.variant}"
       theme="${args.theme}"
+      aria-label="Download file State of the Union 2018 brochure"
     >
     </ecl-file-translations-item>
     <ecl-file-translations-item
@@ -114,6 +117,7 @@ const TemplateWithTranslation = args =>
       file-title="français"
       variant="${args.variant}"
       theme="${args.theme}"
+      aria-label="Download file State of the Union 2018 brochure"
     >
     </ecl-file-translations-item>
     <p slot="others">

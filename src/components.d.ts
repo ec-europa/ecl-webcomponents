@@ -231,6 +231,7 @@ export namespace Components {
         "toggleLabel": string;
     }
     interface EclFileTranslationsItem {
+        "ariaLabel": string;
         "downloadLabel": string;
         "downloadLink": string;
         "fileTitle": string;
@@ -672,6 +673,7 @@ export namespace Components {
         "closeLabel": string;
         "eclScript": boolean;
         "euLabel": string;
+        "langCode": string;
         "language": string;
         "languageAriaLabel": string;
         "languageBlock": boolean;
@@ -1566,6 +1568,7 @@ declare namespace LocalJSX {
         "toggleLabel"?: string;
     }
     interface EclFileTranslationsItem {
+        "ariaLabel"?: string;
         "downloadLabel"?: string;
         "downloadLink"?: string;
         "fileTitle"?: string;
@@ -2019,6 +2022,7 @@ declare namespace LocalJSX {
         "closeLabel"?: string;
         "eclScript"?: boolean;
         "euLabel"?: string;
+        "langCode"?: string;
         "language"?: string;
         "languageAriaLabel"?: string;
         "languageBlock"?: boolean;

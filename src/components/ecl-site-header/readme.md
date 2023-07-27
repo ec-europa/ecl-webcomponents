@@ -12,8 +12,8 @@
 | `closeLabel`        | `close-label`         |             | `string`  | `undefined` |
 | `eclScript`         | `ecl-script`          |             | `boolean` | `false`     |
 | `euLabel`           | `eu-label`            |             | `string`  | `undefined` |
-| `langCode`          | `lang-code`           |             | `string`  | `'en'`      |
-| `language`          | `language`            |             | `string`  | `'english'` |
+| `langCode`          | `lang-code`           |             | `string`  | `undefined` |
+| `language`          | `language`            |             | `string`  | `undefined` |
 | `languageAriaLabel` | `language-aria-label` |             | `string`  | `undefined` |
 | `languageBlock`     | `language-block`      |             | `boolean` | `false`     |
 | `languageId`        | `language-id`         |             | `string`  | `undefined` |

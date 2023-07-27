@@ -25,7 +25,8 @@ export class EclSiteHeader {
   @Prop() logoTitle: string;
   @Prop() searchText: string;
   @Prop() searchPlaceholder: string;
-  @Prop() language: string = '';
+  @Prop() language: string;
+  @Prop() langCode: string;
   @Prop() loginText: string;
   @Prop() loginLink: string;
   @Prop() euLabel: string;
@@ -34,7 +35,7 @@ export class EclSiteHeader {
   @Prop() languageTitle: string;
   @Prop() languageId: string;
   @Prop() languageAriaLabel: string;
-  @Prop() siteName: string
+  @Prop() siteName: string;
 
   getClass(): string {
     const styleClasses = [
@@ -209,7 +210,10 @@ export class EclSiteHeader {
                 </div> : ''
               }
               { this.searchBlock ?
-                <div class="ecl-site-header__search-container">
+                <div
+                  class="ecl-site-header__search-container"
+                  role="search"
+                >
                   <a
                     class="ecl-button ecl-button--ghost ecl-site-header__search-toggle"
                     data-ecl-search-toggle

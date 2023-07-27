@@ -14,6 +14,7 @@ export class EclFileTranslationsItem{
   @Prop() downloadLink: string;
   @Prop() downloadLabel: string;
   @Prop() language: string;
+  @Prop() ariaLabel: string;
 
   getClass(): string {
     const styleClasses = [
@@ -68,6 +69,7 @@ export class EclFileTranslationsItem{
           variant="standalone"
           styleClass={`ecl-file__translation-download sc-ecl-file-${this.theme}`}
           theme={this.theme}
+          aria-label={this.ariaLabel}
         >
           {this.downloadLabel}
           <ecl-icon 
