@@ -300,7 +300,6 @@ export namespace Components {
         "counterLabel": string;
         "counterSeparator": string;
         "description": string;
-        "disableOverlay": boolean;
         "eclScript": boolean;
         "expandable": boolean;
         "footerLinkLabel": string;
@@ -309,6 +308,7 @@ export namespace Components {
         "fullWidth": boolean;
         "meta": string;
         "nextLabel": string;
+        "noOverlay": boolean;
         "prevLabel": string;
         "shareLabel": string;
         "slidesNumber": number;
@@ -1637,7 +1637,6 @@ declare namespace LocalJSX {
         "counterLabel"?: string;
         "counterSeparator"?: string;
         "description"?: string;
-        "disableOverlay"?: boolean;
         "eclScript"?: boolean;
         "expandable"?: boolean;
         "footerLinkLabel"?: string;
@@ -1646,6 +1645,7 @@ declare namespace LocalJSX {
         "fullWidth"?: boolean;
         "meta"?: string;
         "nextLabel"?: string;
+        "noOverlay"?: boolean;
         "prevLabel"?: string;
         "shareLabel"?: string;
         "slidesNumber"?: number;
