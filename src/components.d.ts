@@ -231,6 +231,7 @@ export namespace Components {
         "toggleLabel": string;
     }
     interface EclFileTranslationsItem {
+        "ariaLabel": string;
         "downloadLabel": string;
         "downloadLink": string;
         "fileTitle": string;
@@ -299,15 +300,15 @@ export namespace Components {
         "counterLabel": string;
         "counterSeparator": string;
         "description": string;
-        "disableOverlay": boolean;
-        "downloadLabel": string;
         "eclScript": boolean;
         "expandable": boolean;
         "footerLinkLabel": string;
         "footerLinkPath": string;
+        "fullScreenLabel": string;
         "fullWidth": boolean;
         "meta": string;
         "nextLabel": string;
+        "noOverlay": boolean;
         "prevLabel": string;
         "shareLabel": string;
         "slidesNumber": number;
@@ -411,6 +412,7 @@ export namespace Components {
         "name": string;
         "path": string;
         "styleClass": string;
+        "target": string;
         "theme": string;
         "titleAttr": string;
         "variant": string;
@@ -1566,6 +1568,7 @@ declare namespace LocalJSX {
         "toggleLabel"?: string;
     }
     interface EclFileTranslationsItem {
+        "ariaLabel"?: string;
         "downloadLabel"?: string;
         "downloadLink"?: string;
         "fileTitle"?: string;
@@ -1634,15 +1637,15 @@ declare namespace LocalJSX {
         "counterLabel"?: string;
         "counterSeparator"?: string;
         "description"?: string;
-        "disableOverlay"?: boolean;
-        "downloadLabel"?: string;
         "eclScript"?: boolean;
         "expandable"?: boolean;
         "footerLinkLabel"?: string;
         "footerLinkPath"?: string;
+        "fullScreenLabel"?: string;
         "fullWidth"?: boolean;
         "meta"?: string;
         "nextLabel"?: string;
+        "noOverlay"?: boolean;
         "prevLabel"?: string;
         "shareLabel"?: string;
         "slidesNumber"?: number;
@@ -1749,6 +1752,7 @@ declare namespace LocalJSX {
         "name"?: string;
         "path"?: string;
         "styleClass"?: string;
+        "target"?: string;
         "theme"?: string;
         "titleAttr"?: string;
         "variant"?: string;

@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-icon",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "ECL Icon",
   "main": "ecl-icon.ts",
   "private": true,
@@ -14,11 +14,11 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.8.4",
-    "@ecl/resources-ec-icons": "3.8.4",
-    "@ecl/resources-eu-icons": "3.8.4",
-    "@ecl/specs-component-icon": "3.8.4",
-    "@ecl/vanilla-component-icon": "3.8.4",
+    "@ecl/builder": "3.9.1",
+    "@ecl/resources-ec-icons": "3.9.1",
+    "@ecl/resources-eu-icons": "3.9.1",
+    "@ecl/specs-component-icon": "3.9.1",
+    "@ecl/vanilla-component-icon": "3.9.1",
     "cross-env": "7.0.3"
   },
   "repository": {

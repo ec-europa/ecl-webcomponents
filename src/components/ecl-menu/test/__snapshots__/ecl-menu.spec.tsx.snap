@@ -3,7 +3,7 @@
 exports[`ecl-menu renders 1`] = `
 <ecl-menu back-label="Back" close-label="Close" ecl-script="" group="group1" max-lines="2" menu-link="/example.html" menu-title="Menu" next-label="next" previous-label="previous" theme="ec">
   <!---->
-  <nav aria-expanded="false" class="ecl-menu sc-ecl-menu-ec" data-ecl-menu-max-lines="2">
+  <nav aria-expanded="false" class="ecl-menu sc-ecl-menu-ec" data-ecl-menu-max-lines="2" role="navigation">
     <div class="ecl-menu__overlay" data-ecl-menu-overlay></div>
     <div class="ecl-container ecl-menu__container">
       <a class="ecl-link ecl-link--standalone ecl-menu__open" data-ecl-menu-open href="/example.html">

@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-footer",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "ECL Footer",
   "main": "ecl-hero-banner.tsx",
   "private": true,
@@ -14,12 +14,12 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.8.4",
-    "@ecl/resources-ec-logo": "3.8.4",
-    "@ecl/resources-eu-logo": "3.8.4",
-    "@ecl/vanilla-component-link": "3.8.4",
-    "@ecl/vanilla-component-site-footer": "3.8.4",
-    "@ecl/vanilla-layout-grid": "3.8.4",
+    "@ecl/builder": "3.9.1",
+    "@ecl/resources-ec-logo": "3.9.1",
+    "@ecl/resources-eu-logo": "3.9.1",
+    "@ecl/vanilla-component-link": "3.9.1",
+    "@ecl/vanilla-component-site-footer": "3.9.1",
+    "@ecl/vanilla-layout-grid": "3.9.1",
     "cross-env": "7.0.3"
   },
   "repository": {

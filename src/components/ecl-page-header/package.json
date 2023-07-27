@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-page-header",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "ECL Page Header",
   "main": "ecl-page-header.tsx",
   "private": true,
@@ -13,9 +13,9 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.8.4",
-    "@ecl/vanilla-component-page-header": "3.8.4",
-    "@ecl/vanilla-layout-grid": "3.8.4",
+    "@ecl/builder": "3.9.1",
+    "@ecl/vanilla-component-page-header": "3.9.1",
+    "@ecl/vanilla-layout-grid": "3.9.1",
     "cross-env": "7.0.3"
   },
   "repository": {

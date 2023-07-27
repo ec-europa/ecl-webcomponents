@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-file-upload",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "ECL File upload",
   "main": "ecl-file-upload.tsx",
   "private": true,
@@ -14,9 +14,9 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.8.4",
-    "@ecl/vanilla-component-button": "3.8.4",
-    "@ecl/vanilla-component-file-upload": "3.8.4",
+    "@ecl/builder": "3.9.1",
+    "@ecl/vanilla-component-button": "3.9.1",
+    "@ecl/vanilla-component-file-upload": "3.9.1",
     "cross-env": "7.0.3"
   },
   "repository": {

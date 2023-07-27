@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-content-block",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "ECL Content Block",
   "main": "ecl-content-block.tsx",
   "private": true,
@@ -13,14 +13,14 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.8.4",
-    "@ecl/theme-ec": "3.8.4",
-    "@ecl/theme-eu": "3.8.4",
-    "@ecl/vanilla-component-content-block": "3.8.4",
-    "@ecl/vanilla-component-description-list": "3.8.4",
-    "@ecl/vanilla-component-icon": "3.8.4",
-    "@ecl/vanilla-component-label": "3.8.4",
-    "@ecl/vanilla-component-link": "3.8.4",
+    "@ecl/builder": "3.9.1",
+    "@ecl/theme-ec": "3.9.1",
+    "@ecl/theme-eu": "3.9.1",
+    "@ecl/vanilla-component-content-block": "3.9.1",
+    "@ecl/vanilla-component-description-list": "3.9.1",
+    "@ecl/vanilla-component-icon": "3.9.1",
+    "@ecl/vanilla-component-label": "3.9.1",
+    "@ecl/vanilla-component-link": "3.9.1",
     "cross-env": "7.0.3"
   },
   "repository": {

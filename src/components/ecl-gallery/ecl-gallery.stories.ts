@@ -15,7 +15,7 @@ const Template = (args) =>
   next-label="Next"
   prev-label="Previous"
   close-label="Close"
-  download-label="Download"
+  full-screen-label="View original"
   share-label="Share"
   visible-items=8
   footer-link-path="${randomizedLink('/example.html')}"

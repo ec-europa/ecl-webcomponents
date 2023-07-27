@@ -20,10 +20,7 @@ exports[`ecl-site-header renders 1`] = `
             <div class="ecl-site-header__language">
               <a aria-controls="language-switcher" aria-label="Choose language" class="ecl-button ecl-button--ghost ecl-site-header__language-selector" data-ecl-language-selector>
                 <span class="ecl-site-header__language-icon">
-                  <ecl-icon icon="language" size="s" style-class="ecl-site-header__icon sc-ecl-site-header-ec" theme="ec"></ecl-icon>
-                  <span class="ecl-site-header__language-code">
-                    en
-                  </span>
+                  <ecl-icon icon="global" size="s" style-class="ecl-site-header__icon sc-ecl-site-header-ec" theme="ec"></ecl-icon>
                   english
                 </span>
               </a>
@@ -225,7 +222,7 @@ exports[`ecl-site-header renders 1`] = `
                 </div>
               </div>
             </div>
-            <div class="ecl-site-header__search-container">
+            <div class="ecl-site-header__search-container" role="search">
               <a aria-controls="search-form-id" aria-expanded="false" class="ecl-button ecl-button--ghost ecl-site-header__search-toggle" data-ecl-search-toggle>
                 <ecl-icon icon="search" size="s" style-class="ecl-icon ecl-icon--s ecl-site-header__icon sc-ecl-site-header-ec" theme="ec"></ecl-icon>
                 search

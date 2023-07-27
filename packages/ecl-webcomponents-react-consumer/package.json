@@ -1,7 +1,7 @@
 {
   "name": "@ecl/ecl-webcomponents-react-consumer",
   "private": true,
-  "version": "0.8.0",
+  "version": "0.9.0",
   "type": "module",
   "scripts": {
     "clean": "rimraf dist",
@@ -12,16 +12,16 @@
     "pre-publish": "npm run build"
   },
   "dependencies": {
-    "@ecl/ecl-webcomponents-react": "0.8.0",
+    "@ecl/ecl-webcomponents-react": "0.9.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rimraf": "5.0.1"
   },
   "devDependencies": {
-    "@types/react": "18.2.14",
-    "@types/react-dom": "18.2.6",
+    "@types/react": "18.2.16",
+    "@types/react-dom": "18.2.7",
     "@vitejs/plugin-react": "4.0.3",
     "typescript": "5.1.6",
-    "vite": "4.4.2"
+    "vite": "4.4.7"
   }
 }
