@@ -30,18 +30,24 @@ export class EclGallery {
   @Prop() footerLinkPath: string;
   @Prop() footerLinkLabel: string;
   @Prop() visibleItems: number = 8;
-  @Prop() disableOverlay: boolean = false;
   @Prop() fullWidth: boolean = false;
   @Prop() viewAllLabel: string;
   @Prop() viewAllExpandedLabel: string;
   @Prop() expandable: boolean = true;
   @Prop() fullScreenLabel: string = '';
+  @Prop() noOverlay: boolean = false;
 
   getClass(): string {
-    return [
+    const styleClasses = [
       `ecl-gallery`,
       this.styleClass
-    ].join(' ');
+    ];
+
+    if (this.fullWidth) {
+      styleClasses.push('ecl-gallery--full-width');
+    }
+
+    return styleClasses.join(' ');
   }
 
   componentDidRender() {
@@ -71,6 +77,7 @@ export class EclGallery {
         data-ecl-gallery
         data-ecl-gallery-visible-items={this.visibleItems}
         {...!this.expandable && ({ 'data-ecl-gallery-not-expandable' : true })}
+        {...this.noOverlay && ({ 'data-ecl-gallery-no-overlay' : true })}
       >
         <ul class="ecl-gallery__list">
           <slot></slot>
