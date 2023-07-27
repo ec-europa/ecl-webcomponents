@@ -27,7 +27,6 @@ export class EclGallery {
   @Prop() prevLabel: string;
   @Prop() closeLabel: string;
   @Prop() shareLabel: string;
-  @Prop() downloadLabel: string;
   @Prop() footerLinkPath: string;
   @Prop() footerLinkLabel: string;
   @Prop() visibleItems: number = 8;
@@ -36,6 +35,7 @@ export class EclGallery {
   @Prop() viewAllLabel: string;
   @Prop() viewAllExpandedLabel: string;
   @Prop() expandable: boolean = true;
+  @Prop() fullScreenLabel: string = '';
 
   getClass(): string {
     return [
@@ -142,6 +142,52 @@ export class EclGallery {
             data-ecl-gallery-overlay-footer
           >
             <div class="ecl-container">
+             <div class="ecl-gallery__detail-actions">
+                <ecl-link
+                  theme={this.theme}
+                  style-class={`ecl-gallery__download sc-ecl-gallery-${this.theme}`}
+                  data-ecl-gallery-overlay-download
+                  variant="standalone"
+                  path=""
+                  target="blank"
+                >
+                  {this.fullScreenLabel}
+                  <ecl-icon
+                    theme={this.theme}
+                    icon="fullscreen"
+                    size="fluid"
+                    slot="icon-after"
+                  ></ecl-icon>
+
+                </ecl-link>
+              { this.shareLabel ? 
+                <ecl-link
+                  theme={this.theme}
+                  style-class={`ecl-gallery__share sc-ecl-gallery-${this.theme}`}
+                  data-ecl-gallery-overlay-share
+                  variant="standalone"
+                  path=""
+                >
+                  {this.shareLabel}
+                  <ecl-icon
+                    theme={this.theme}
+                    icon="share"
+                    size="fluid"
+                    slot="icon-after"
+                  ></ecl-icon>
+                </ecl-link> : ''
+              }
+              </div>
+              <div
+                class="ecl-gallery__detail-description"
+                data-ecl-gallery-overlay-description
+              >
+              </div>
+              <div
+                class="ecl-gallery__detail-meta"
+                data-ecl-gallery-overlay-meta
+              >
+              </div>    
               <div class="ecl-gallery__pager">
                 <ecl-button
                   theme={this.theme}
@@ -184,53 +230,7 @@ export class EclGallery {
                     icon="corner-arrow"
                   ></ecl-icon>
                 </ecl-button>
-              </div>
-              <div
-                class="ecl-gallery__detail-meta"
-                data-ecl-gallery-overlay-meta
-              >
-              </div>
-              <div
-                class="ecl-gallery__detail-description"
-                data-ecl-gallery-overlay-description
-              >
-              </div>
-              <div class="ecl-gallery__detail-actions">
-                <ecl-link
-                  theme={this.theme}
-                  style-class={`ecl-gallery__download sc-ecl-gallery-${this.theme}`}
-                  data-ecl-gallery-overlay-download
-                  name="download"
-                  variant="standalone"
-                  path=""
-                >
-                  {this.downloadLabel}
-                  <ecl-icon
-                    theme={this.theme}
-                    icon="download"
-                    size="fluid"
-                    slot="icon-after"
-                  ></ecl-icon>
-
-                </ecl-link>
-              { this.shareLabel ? 
-                <ecl-link
-                  theme={this.theme}
-                  style-class={`ecl-gallery__share sc-ecl-gallery-${this.theme}`}
-                  data-ecl-gallery-overlay-share
-                  variant="standalone"
-                  path=""
-                >
-                  {this.shareLabel}
-                  <ecl-icon
-                    theme={this.theme}
-                    icon="share"
-                    size="fluid"
-                    slot="icon-after"
-                  ></ecl-icon>
-                </ecl-link> : ''
-              }
-              </div>
+              </div>       
             </div>
           </footer>
         </dialog>

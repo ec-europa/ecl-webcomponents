@@ -21,6 +21,7 @@ export class EclLink {
   @Prop() external: boolean = false;
   @Prop() ariaLabel: string;
   @Prop() name: string;
+  @Prop() target: string;
   @Prop() download: boolean = false;
 
   getClass(): string {
@@ -86,6 +87,9 @@ export class EclLink {
     }
     if (this.ariaLabel) {
       attrs['aria-label'] = this.ariaLabel;
+    }
+    if (this.target) {
+      attrs['target'] = this.target;
     }
 
     return attrs;
