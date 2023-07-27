@@ -231,6 +231,7 @@ export namespace Components {
         "toggleLabel": string;
     }
     interface EclFileTranslationsItem {
+        "ariaLabel": string;
         "downloadLabel": string;
         "downloadLink": string;
         "fileTitle": string;
@@ -300,11 +301,11 @@ export namespace Components {
         "counterSeparator": string;
         "description": string;
         "disableOverlay": boolean;
-        "downloadLabel": string;
         "eclScript": boolean;
         "expandable": boolean;
         "footerLinkLabel": string;
         "footerLinkPath": string;
+        "fullScreenLabel": string;
         "fullWidth": boolean;
         "meta": string;
         "nextLabel": string;
@@ -411,6 +412,7 @@ export namespace Components {
         "name": string;
         "path": string;
         "styleClass": string;
+        "target": string;
         "theme": string;
         "titleAttr": string;
         "variant": string;
@@ -1566,6 +1568,7 @@ declare namespace LocalJSX {
         "toggleLabel"?: string;
     }
     interface EclFileTranslationsItem {
+        "ariaLabel"?: string;
         "downloadLabel"?: string;
         "downloadLink"?: string;
         "fileTitle"?: string;
@@ -1635,11 +1638,11 @@ declare namespace LocalJSX {
         "counterSeparator"?: string;
         "description"?: string;
         "disableOverlay"?: boolean;
-        "downloadLabel"?: string;
         "eclScript"?: boolean;
         "expandable"?: boolean;
         "footerLinkLabel"?: string;
         "footerLinkPath"?: string;
+        "fullScreenLabel"?: string;
         "fullWidth"?: boolean;
         "meta"?: string;
         "nextLabel"?: string;
@@ -1749,6 +1752,7 @@ declare namespace LocalJSX {
         "name"?: string;
         "path"?: string;
         "styleClass"?: string;
+        "target"?: string;
         "theme"?: string;
         "titleAttr"?: string;
         "variant"?: string;

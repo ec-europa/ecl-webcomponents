@@ -9,6 +9,7 @@
 
 | Property        | Attribute        | Description | Type     | Default     |
 | --------------- | ---------------- | ----------- | -------- | ----------- |
+| `ariaLabel`     | `aria-label`     |             | `string` | `undefined` |
 | `downloadLabel` | `download-label` |             | `string` | `undefined` |
 | `downloadLink`  | `download-link`  |             | `string` | `undefined` |
 | `fileTitle`     | `file-title`     |             | `string` | `undefined` |

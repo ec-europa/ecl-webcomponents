@@ -23,14 +23,13 @@ export class EclMediaContainer {
   @Prop() sources: string;
   @Prop() tracks: string;
   @Prop() hasCaption: boolean = false;
-  @Prop() ratio: string = '16-9';
+  @Prop() ratio: string = '';
   @Prop() eclScript: boolean = false;
   @Prop() embeddedMedia: boolean = false;
 
   getClass(): string {
     return [
       `ecl-media-container`,
-      `ecl-media-container--${this.ratio}`,
       this.styleClass
     ].join(' ');
   }
@@ -51,6 +50,29 @@ export class EclMediaContainer {
     }
   }
 
+  componentDidRender() {
+    const iframe = this.el.querySelector('iframe');
+    if (iframe) {
+      const iframeWrap = document.createElement('div');
+      iframeWrap.classList.add('ecl-media-container__media', `sc-ecl-media-container-${this.theme}`);
+      iframe.insertAdjacentElement('beforebegin', iframeWrap);
+      iframeWrap.appendChild(iframe);
+      if (this.ratio) {
+        iframeWrap.classList.add(`ecl-media-container__media--ratio-${this.ratio}`);
+      }
+    }
+
+    const expandable = this.el.querySelector('.ecl-expandable');
+    if (expandable) {
+      expandable.classList.add('ecl-media-container__expandable', `sc-ecl-media-container-${this.theme}`);
+      const expandableContent = expandable.querySelector('.ecl-expandable__content');
+      if (expandableContent) {
+        expandableContent.classList.add(`sc-ecl-media-container-${this.theme}`);
+        this.el.firstElementChild.setAttribute('aria-describedby', `${expandableContent.id}`);
+      }
+    }
+  }
+
   render() {
     const sources = this.sources ? JSON.parse(this.sources) : '';
     const tracks = this.tracks ? JSON.parse(this.tracks) : '';
@@ -67,36 +89,39 @@ export class EclMediaContainer {
     )) : '';
 
     return (
-      <figure
-        class={this.getClass()}
-      >
-      { this.image ? (
-        <ecl-picture
-          styleClass={`ecl-media-container__picture sc-ecl-media-container-${this.theme}`}
-          imgClass={`ecl-media-container__media sc-ecl-media-container-${this.theme}`}
-          image={this.image}
-          imageAlt={this.imageAlt}
+      <div class={this.getClass()}>
+        <figure
+          class="ecl-media-container__figure"
         >
-          <slot name="sources"></slot>
-        </ecl-picture> ) : ( '' ) 
-      }
-      { sources && tracks ?
-        <video 
-          class="ecl-media-container__media"
-          poster={this.image}
-          controls
-        >
-          { ...videoSources }
-          { ...videoTracks }
-        </video> : '' }
+        { this.image ? (
+          <ecl-picture
+            styleClass={`ecl-media-container__picture sc-ecl-media-container-${this.theme}`}
+            imgClass={`ecl-media-container__media sc-ecl-media-container-${this.theme}`}
+            image={this.image}
+            imageAlt={this.imageAlt}
+          >
+            <slot name="sources"></slot>
+          </ecl-picture> ) : ( '' )
+        }
+        { sources && tracks ?
+          <video
+            class="ecl-media-container__media"
+            poster={this.image}
+            controls
+          >
+            { ...videoSources }
+            { ...videoTracks }
+          </video> : '' }
 
-        <slot name="embedded-media"></slot>
-      { this.hasCaption ?
-        <figcaption class="ecl-media-container__caption">
-          <slot></slot>
-        </figcaption> : ''
-      }
-      </figure> 
+          <slot name="embedded-media"></slot>
+        { this.hasCaption ?
+          <figcaption class="ecl-media-container__caption">
+            <slot></slot>
+          </figcaption> : ''
+        }
+        </figure>
+        <slot name="expandable"></slot>
+      </div>
     );
   }
 }

@@ -210,6 +210,25 @@ exports[`ecl-gallery renders 1`] = `
       </section>
       <footer class="ecl-gallery__detail" data-ecl-gallery-overlay-footer>
         <div class="ecl-container">
+          <div class="ecl-gallery__detail-actions">
+            <ecl-link data-ecl-gallery-overlay-download path="" style-class="ecl-gallery__download sc-ecl-gallery-ec" target="blank" theme="ec" variant="standalone">
+              <ecl-icon slot="icon-after">
+                <svg class="ecl-icon ecl-icon--fluid">
+                  <use xlink:href="/build/images/ec/icons.svg#fullscreen"></use>
+                </svg>
+              </ecl-icon>
+            </ecl-link>
+            <ecl-link data-ecl-gallery-overlay-share path="" style-class="ecl-gallery__share sc-ecl-gallery-ec" theme="ec" variant="standalone">
+              Share
+              <ecl-icon slot="icon-after">
+                <svg class="ecl-icon ecl-icon--fluid">
+                  <use xlink:href="/build/images/ec/icons.svg#share"></use>
+                </svg>
+              </ecl-icon>
+            </ecl-link>
+          </div>
+          <div class="ecl-gallery__detail-description" data-ecl-gallery-overlay-description></div>
+          <div class="ecl-gallery__detail-meta" data-ecl-gallery-overlay-meta></div>
           <div class="ecl-gallery__pager">
             <ecl-button data-ecl-gallery-overlay-previous hide-label="" style-class="ecl-gallery__slider-previous sc-ecl-gallery-ec">
               <!---->
@@ -250,26 +269,6 @@ exports[`ecl-gallery renders 1`] = `
                 </span>
               </button>
             </ecl-button>
-          </div>
-          <div class="ecl-gallery__detail-meta" data-ecl-gallery-overlay-meta></div>
-          <div class="ecl-gallery__detail-description" data-ecl-gallery-overlay-description></div>
-          <div class="ecl-gallery__detail-actions">
-            <ecl-link data-ecl-gallery-overlay-download name="download" path="" style-class="ecl-gallery__download sc-ecl-gallery-ec" theme="ec" variant="standalone">
-              Download
-              <ecl-icon slot="icon-after">
-                <svg class="ecl-icon ecl-icon--fluid">
-                  <use xlink:href="/build/images/ec/icons.svg#download"></use>
-                </svg>
-              </ecl-icon>
-            </ecl-link>
-            <ecl-link data-ecl-gallery-overlay-share path="" style-class="ecl-gallery__share sc-ecl-gallery-ec" theme="ec" variant="standalone">
-              Share
-              <ecl-icon slot="icon-after">
-                <svg class="ecl-icon ecl-icon--fluid">
-                  <use xlink:href="/build/images/ec/icons.svg#share"></use>
-                </svg>
-              </ecl-icon>
-            </ecl-link>
           </div>
         </div>
       </footer>

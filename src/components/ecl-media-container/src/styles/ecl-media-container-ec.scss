@@ -1,3 +1,7 @@
 @use '@ecl/theme-ec';
 
 @use '@ecl/vanilla-component-media-container/media-container-ec';
+
+.ecl-media-container__expandable.sc-ecl-media-container-ec.ecl-expandable.sc-ecl-expandable-ec {
+  margin-top: 0.5rem;
+}

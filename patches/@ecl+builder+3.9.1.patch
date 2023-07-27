@@ -1,28 +1,21 @@
 diff --git a/node_modules/@ecl/builder/bin/build.js b/node_modules/@ecl/builder/bin/build.js
-index c2aaaae..3967914 100755
+index edd25b9..0c98c60 100755
 --- a/node_modules/@ecl/builder/bin/build.js
 +++ b/node_modules/@ecl/builder/bin/build.js
-@@ -57,12 +57,12 @@ program
-   });
- 
- program
--  .command('copy')
--  .description('copy static files')
-+  .command("copy")
-+  .description("copy static files")
+@@ -62,7 +62,7 @@ program
    .action(() => {
      const config = loadConfig(program.config);
      config.copy.forEach((conf) =>
--      copyFiles(conf.patterns || '**', conf.from, conf.to)
-+      copyFiles(conf.from || "**", conf.to, conf.options)
+-      copyFiles(conf.patterns || '**', conf.from, conf.to),
++      copyFiles(conf.from || "**", conf.to, conf.options),
      );
    });
  
 diff --git a/node_modules/@ecl/builder/scripts/copy.js b/node_modules/@ecl/builder/scripts/copy.js
-index 30019d2..8fd8607 100644
+index 30019d2..30e38be 100644
 --- a/node_modules/@ecl/builder/scripts/copy.js
 +++ b/node_modules/@ecl/builder/scripts/copy.js
-@@ -1,21 +1,29 @@
+@@ -1,23 +1,32 @@
 -const fs = require('fs');
 -const path = require('path');
 -const { promisify } = require('util');
@@ -44,26 +37,31 @@ index 30019d2..8fd8607 100644
 + *   },
 + * ],
 + */
- 
+  
 -const copy = promisify(ncp);
-+const fs = require("fs");
-+const path = require("path");
-+const copy = require("copyfiles");
  
 -module.exports = (patterns, from, to) => {
-+module.exports = (from, to, options) => {
-   const executor = async () => {
+-  const executor = async () => {
 -    const paths = await globby(patterns, { nodir: true, cwd: from });
 -
 -    paths.map(async (file) => {
 -      const input = path.resolve(from, file);
 -      const dest = path.resolve(to, file);
--
++const fs = require("fs");
++const path = require("path");
++const copy = require("copyfiles");
+  
 -      fs.mkdirSync(path.dirname(dest), { recursive: true });
 -      await copy(input, dest);
+-    });
++module.exports = (from, to, options) => {
++  const executor = async () => {
 +    from.push(to);
 +    await copy(from, options, function (err) {
 +      if (err) console.error(err);
-     });
++    })
    };
  
+   executor();
+-};
++}

@@ -16,7 +16,7 @@
 | `hasCaption`    | `has-caption`    |             | `boolean` | `false`     |
 | `image`         | `image`          |             | `string`  | `undefined` |
 | `imageAlt`      | `image-alt`      |             | `string`  | `undefined` |
-| `ratio`         | `ratio`          |             | `string`  | `'16-9'`    |
+| `ratio`         | `ratio`          |             | `string`  | `''`        |
 | `sources`       | `sources`        |             | `string`  | `undefined` |
 | `styleClass`    | `style-class`    |             | `string`  | `undefined` |
 | `theme`         | `theme`          |             | `string`  | `'ec'`      |

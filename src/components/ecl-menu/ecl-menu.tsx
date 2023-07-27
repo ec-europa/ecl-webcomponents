@@ -57,8 +57,9 @@ export class EclMenu {
 
   getAttrs() {
     const attrs = {
-      'aria-expanded': "false",
+      'aria-expanded': 'false',
       'data-ecl-menu-max-lines': this.maxLines,
+      'role': 'navigation',
     };
 
     return attrs;

@@ -114,6 +114,7 @@ export class EclFile {
     <ecl-link
       path={this.downloadLink}
       variant="standalone"
+      aria-label={this.ariaLabel}
     >
       {this.downloadLabel}
       <ecl-icon
