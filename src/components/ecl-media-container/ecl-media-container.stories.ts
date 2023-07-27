@@ -96,6 +96,35 @@ MediaContainerIframe.storyName = 'embedded media';
 MediaContainerIframe.args = getArgs();
 MediaContainerIframe.argTypes = getArgTypes();
 
+const TemplateInfographic = (args) =>
+  `<ecl-media-container
+    ratio="${args.ratio}"
+    theme="${args.theme}"
+    has-caption=${args.hasCaption}
+    image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
+  >
+    ${args.hasCaption ? 'Infographic title and copyright' : ''}
+    <ecl-expandable
+      theme="${args.theme}"
+      ecl-script
+      slot="expandable"
+      label-collapsed="collapsed"
+      label-expanded="expanded"
+      id="mediaContainerExpandable"
+    >
+      <ecl-text tag="p" size="m">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et varius est. Sed elementum rutrum libero,
+        at vulputate nisl posuere et. Morbi dui sem, rhoncus non fermentum eget, finibus non purus.
+      </ecl-text>
+    </ecl-expandable>
+  </ecl-media-container>`;
+
+export const MediaContainerInfographic = TemplateInfographic.bind({});
+
+MediaContainerInfographic.storyName = 'infographic';
+MediaContainerInfographic.args = getArgs();
+MediaContainerInfographic.argTypes = getArgTypes();
+
 
 
 

@@ -21,6 +21,16 @@ module.exports = {
       to: path.resolve(outputFolder, 'images/eu'),
       options: { up: true },
     },
+    {
+      from: [path.resolve(nodeModules, '@ecl/resources-ec-icons/dist/sprites/icons.svg')],
+      to: path.resolve(outputFolder, 'images/ec'),
+      options: { up: true },
+    },
+    {
+      from: [path.resolve(nodeModules, '@ecl/resources-eu-icons/dist/sprites/icon.svg')],
+      to: path.resolve(outputFolder, 'images/eu'),
+      options: { up: true },
+    },
   ],
   styles: [
     {
