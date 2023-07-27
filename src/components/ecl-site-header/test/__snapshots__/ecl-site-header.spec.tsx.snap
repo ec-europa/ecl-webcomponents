@@ -8,7 +8,7 @@ exports[`ecl-site-header renders 1`] = `
       <div class="ecl-container ecl-site-header__container">
         <div class="ecl-site-header__top" data-ecl-site-header-top>
           <ecl-link styleclass="ecl-site-header__logo-link sc-ecl-site-header-ec" variant="standalone">
-            <ecl-picture image="/build/images/ec/logos/positive/logo-ec--en.svg" imagealt="European Commission" imgclass="ecl-site-header__logo-image ecl-site-header__logo-image-desktop sc-ecl-site-header-ec" styleclass="ecl-site-header__picture sc-ecl-picture-ec"></ecl-picture>
+            <ecl-picture image="/build/images/ec/logos/positive/logo-ec--undefined.svg" imagealt="European Commission" imgclass="ecl-site-header__logo-image ecl-site-header__logo-image-desktop sc-ecl-site-header-ec" styleclass="ecl-site-header__picture sc-ecl-picture-ec"></ecl-picture>
           </ecl-link>
           <div class="ecl-site-header__action">
             <div class="ecl-site-header__login-container">
@@ -20,10 +20,7 @@ exports[`ecl-site-header renders 1`] = `
             <div class="ecl-site-header__language">
               <a aria-controls="language-switcher" aria-label="Choose language" class="ecl-button ecl-button--ghost ecl-site-header__language-selector" data-ecl-language-selector>
                 <span class="ecl-site-header__language-icon">
-                  <ecl-icon icon="language" size="s" style-class="ecl-site-header__icon sc-ecl-site-header-ec" theme="ec"></ecl-icon>
-                  <span class="ecl-site-header__language-code">
-                    en
-                  </span>
+                  <ecl-icon icon="global" size="s" style-class="ecl-site-header__icon sc-ecl-site-header-ec" theme="ec"></ecl-icon>
                   english
                 </span>
               </a>

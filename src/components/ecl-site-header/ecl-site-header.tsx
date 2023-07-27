@@ -25,8 +25,7 @@ export class EclSiteHeader {
   @Prop() logoTitle: string;
   @Prop() searchText: string;
   @Prop() searchPlaceholder: string;
-  @Prop() language: string = 'english';
-  @Prop() langCode: string = 'en';
+  @Prop() language: string = '';
   @Prop() loginText: string;
   @Prop() loginLink: string;
   @Prop() euLabel: string;
@@ -136,14 +135,11 @@ export class EclSiteHeader {
                   >
                     <span class="ecl-site-header__language-icon">
                       <ecl-icon
-                        icon="language"
+                        icon="global"
                         size="s"
                         style-class={`ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
                         theme={this.theme}
                       ></ecl-icon>
-                      <span class="ecl-site-header__language-code">
-                        {this.langCode}
-                      </span>
                       {this.language}
                     </span>
                   </a>

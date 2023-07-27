@@ -12,8 +12,7 @@ const Template = (args) =>
     language-block
     search-text="search"
     search-placeholder="Placeholder text"
-    language="english"
-    lang-code="en"
+    language="English"
     login-text="Log in"
     eu-label="Official EU languages:"
     non-eu-label="Other languages:"
@@ -145,8 +144,7 @@ const TemplateHarmonised = (args) =>
     search-block
     search-text="search"
     search-placeholder="Placeholder text"
-    language="english"
-    lang-code="en"
+    language="English"
     login-text="Log in"
     eu-label="Official EU languages:"
     non-eu-label="Other languages:"

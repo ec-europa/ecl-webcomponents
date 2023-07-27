@@ -672,7 +672,6 @@ export namespace Components {
         "closeLabel": string;
         "eclScript": boolean;
         "euLabel": string;
-        "langCode": string;
         "language": string;
         "languageAriaLabel": string;
         "languageBlock": boolean;
@@ -2020,7 +2019,6 @@ declare namespace LocalJSX {
         "closeLabel"?: string;
         "eclScript"?: boolean;
         "euLabel"?: string;
-        "langCode"?: string;
         "language"?: string;
         "languageAriaLabel"?: string;
         "languageBlock"?: boolean;
