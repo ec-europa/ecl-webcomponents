@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-news-ticker",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "ECL Page Banner",
   "main": "ecl-news-ticker.tsx",
   "private": true,

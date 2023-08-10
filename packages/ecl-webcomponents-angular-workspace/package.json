@@ -1,6 +1,6 @@
 {
   "name": "@ecl/ecl-webcomponents-angular-workspace",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "scripts": {
     "clean": "rimraf dist",
     "ng": "ng",
@@ -30,8 +30,8 @@
     "@angular/cli": "16.2.0",
     "@angular/compiler-cli": "16.2.0",
     "@babel/plugin-proposal-private-property-in-object": "7.21.11",
-    "@ecl/ecl-webcomponents": "0.9.0",
-    "@ecl/ecl-webcomponents-angular": "0.9.0",
+    "@ecl/ecl-webcomponents": "0.10.0",
+    "@ecl/ecl-webcomponents-angular": "0.10.0",
     "browser-sync": "2.29.3",
     "express": "4.18.2",
     "karma": "~6.4.0",
