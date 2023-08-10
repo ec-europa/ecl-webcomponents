@@ -5,33 +5,18 @@
 
 // The editor creator to use.
 import ClassicEditorBase from '@ckeditor/ckeditor5-editor-classic/src/classiceditor';
-
+import { BlockToolbar } from '@ckeditor/ckeditor5-ui';
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
-import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
-import CKBox from '@ckeditor/ckeditor5-ckbox/src/ckbox';
-import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
-import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
-import Heading from '@ckeditor/ckeditor5-heading/src/heading';
-import Image from '@ckeditor/ckeditor5-image/src/image';
-import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
-import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
-import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
-import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
-import Indent from '@ckeditor/ckeditor5-indent/src/indent';
-import Link from '@ckeditor/ckeditor5-link/src/link';
-import List from '@ckeditor/ckeditor5-list/src/list';
-import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
-import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
-import PictureEditing from '@ckeditor/ckeditor5-image/src/pictureediting';
+import Heading from '@ckeditor/ckeditor5-heading/src/heading';
+import List from '@ckeditor/ckeditor5-list/src/list';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
-import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 import EclWebComponentsPlugin from '@ecl/ckeditor5-ecl-webcomponents/src/ecl_webcomponents';
 import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting';
 import GeneralHtmlSupport from '@ckeditor/ckeditor5-html-support/src/generalhtmlsupport';
@@ -43,444 +28,417 @@ export default class ClassicEditor extends ClassicEditorBase {}
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
   Essentials,
-  UploadAdapter,
   Autoformat,
   Bold,
   Italic,
-  BlockQuote,
-  CKBox,
-  CKFinder,
-  CloudServices,
-  EasyImage,
-  Heading,
-  Image,
-  ImageCaption,
-  ImageStyle,
-  ImageToolbar,
-  ImageUpload,
-  Indent,
-  Link,
   List,
-  MediaEmbed,
   Paragraph,
-  PasteFromOffice,
-  PictureEditing,
   Table,
   TableToolbar,
   TextTransformation,
   EclWebComponentsPlugin,
   SourceEditing,
   GeneralHtmlSupport,
+  BlockToolbar,
+];
+
+const toolbarItems = [
+  {
+    label: 'icon',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-icon'],
+  },
+  {
+    label: 'button',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-button'],
+  },
+  {
+    label: 'link',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-link'],
+  },
+  {
+    label: 'card',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-card'],
+  },
+  {
+    label: 'text',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-text'],
+  },
+  {
+    label: 'accordion',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-accordion',
+      {
+        label: 'items',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-accordion-item'],
+      },
+    ],
+  },
+  {
+    label: 'facts & figures',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-fact-figures',
+      {
+        label: 'items',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-fact-figures-item'],
+      },
+    ],
+  },
+  {
+    label: 'content block',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-content-block'],
+  },
+  {
+    label: 'content item',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-content-item'],
+  },
+  {
+    label: 'picture',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-picture',
+      {
+        label: 'source',
+        withText: true,
+        items: ['ecl-webcomponents-source'],
+      },
+    ],
+  },
+  {
+    label: 'carousel',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-carousel',
+      {
+        label: 'items',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-carousel-item'],
+      },
+    ],
+  },
+  {
+    label: 'news ticker',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-news-ticker',
+      {
+        label: 'items',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-news-ticker-item'],
+      },
+    ],
+  },
+  {
+    label: 'gallery',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-gallery',
+      {
+        label: 'items',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-gallery-item'],
+      },
+    ],
+  },
+  {
+    label: 'media container',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-media-container'],
+  },
+  {
+    label: 'pagination',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-pagination',
+      {
+        withText: true,
+        label: 'items',
+        items: ['ecl-webcomponents-ecl-pagination-item'],
+      },
+    ],
+  },
+  {
+    label: 'banner',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-banner'],
+  },
+  {
+    label: 'blockquote',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-blockquote'],
+  },
+  {
+    label: 'expandable',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-expandable'],
+  },
+  {
+    label: 'description list',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-description-list',
+      {
+        label: 'term and definition',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-description-list-term', 'ecl-webcomponents-ecl-description-list-definition'],
+      },
+    ],
+  },
+  {
+    label: 'file',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-file',
+      {
+        label: 'translations',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-file-translations', 'ecl-webcomponents-ecl-file-translation-item'],
+      },
+    ],
+  },
+  {
+    label: 'label',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-label'],
+  },
+  {
+    label: 'tag',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-tag'],
+  },
+  {
+    label: 'message',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-message'],
+  },
+  {
+    label: 'media share',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-social-media-share',
+      {
+        label: 'items',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-social-media-share-item'],
+      },
+    ],
+  },
+  {
+    label: 'date-block',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-date-block'],
+  },
+  {
+    label: 'modal',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-modal'],
+  },
+  {
+    label: 'ecl-footer',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-footer',
+      {
+        label: 'items',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-footer-item'],
+      },
+    ],
+  },
+  {
+    label: 'spinner',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-spinner'],
+  },
+  {
+    label: 'featured item',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-featured-item'],
+  },
+  {
+    label: 'popover',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-popover',
+      {
+        label: 'items',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-popover-item'],
+      },
+    ],
+  },
+  {
+    label: 'grid',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-grid'],
+  },
+  {
+    label: 'spacing',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-spacing'],
+  },
+  {
+    label: 'inpage nav',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-inpage-navigation',
+      {
+        label: 'items',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-inpage-navigation-item'],
+      },
+    ],
+  },
+  {
+    label: 'form',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-form-group',
+      {
+        label: 'input(s)',
+        withText: true,
+        items: [
+          {
+            label: 'input field',
+            withText: true,
+            items: ['ecl-webcomponents-ecl-input'],
+          },
+          {
+            label: 'rating field',
+            withText: true,
+            items: [
+              'ecl-webcomponents-ecl-rating-field',
+              {
+                label: 'rating star',
+                withText: true,
+                items: ['ecl-webcomponents-ecl-rating-star'],
+              },
+            ],
+          },
+          {
+            label: 'select',
+            withText: true,
+            items: ['ecl-webcomponents-ecl-select'],
+          },
+          {
+            label: 'textarea',
+            withText: true,
+            items: ['ecl-webcomponents-ecl-textarea'],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: 'breadcrumb',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-breadcrumb',
+      {
+        label: 'item',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-breadcrumb-item'],
+      },
+    ],
+  },
+  {
+    label: 'list-illustration',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-list-illustration',
+      {
+        label: 'item',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-list-illustration-item'],
+      },
+    ],
+  },
+  {
+    label: 'page-header',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-page-header'],
+  },
+  {
+    label: 'site header',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-site-header',
+      {
+        label: 'language item',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-language-item'],
+      },
+      {
+        label: 'ecl-menu',
+        withText: true,
+        items: [
+          'ecl-webcomponents-ecl-menu',
+          {
+            label: 'items',
+            withText: true,
+            items: ['ecl-webcomponents-ecl-menu-item'],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: 'navigation-list',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-navigation-list',
+      {
+        label: 'navigation list item',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-navigation-list-item'],
+      },
+    ],
+  },
+  {
+    label: 'timeline',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-timeline',
+      {
+        label: 'timeline item',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-timeline-item'],
+      },
+    ],
+  },
 ];
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
   toolbar: {
     items: [
-      'heading',
-      '|',
       'bold',
       'italic',
-      'link',
       'bulletedList',
       'numberedList',
-      '|',
-      'outdent',
-      'indent',
-      '|',
-      'uploadImage',
-      'blockQuote',
       'insertTable',
-      'mediaEmbed',
       'undo',
       'redo',
+      'sourceEditing',
       {
         label: 'ECL',
         withText: true,
-        items: [
-          {
-            label: 'icon',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-icon'],
-          },
-          {
-            label: 'button',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-button'],
-          },
-          {
-            label: 'link',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-link'],
-          },
-          {
-            label: 'card',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-card'],
-          },
-          {
-            label: 'text',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-text'],
-          },
-          {
-            label: 'accordion',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-accordion',
-              {
-                label: 'items',
-                withText: true,
-                items: ['ecl-webcomponents-ecl-accordion-item'],
-              },
-            ],
-          },
-          {
-            label: 'facts & figures',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-fact-figures',
-              {
-                label: 'items',
-                withText: true,
-                items: ['ecl-webcomponents-ecl-fact-figures-item'],
-              },
-            ],
-          },
-          {
-            label: 'content block',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-content-block'],
-          },
-          {
-            label: 'content item',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-content-item'],
-          },
-          {
-            label: 'picture',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-picture',
-              {
-                label: 'source',
-                withText: true,
-                items: ['ecl-webcomponents-source'],
-              },
-            ],
-          },
-          {
-            label: 'carousel',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-carousel',
-              {
-                label: 'items',
-                withText: true,
-                items: ['ecl-webcomponents-ecl-carousel-item'],
-              },
-            ],
-          },
-          {
-            label: 'news ticker',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-news-ticker',
-              {
-                label: 'items',
-                withText: true,
-                items: ['ecl-webcomponents-ecl-news-ticker-item'],
-              },
-            ],
-          },
-          {
-            label: 'gallery',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-gallery',
-              {
-                label: 'items',
-                withText: true,
-                items: ['ecl-webcomponents-ecl-gallery-item'],
-              },
-            ],
-          },
-          {
-            label: 'media container',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-media-container'],
-          },
-          {
-            label: 'pagination',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-pagination',
-              {
-                withText: true,
-                label: 'items',
-                items: ['ecl-webcomponents-ecl-pagination-item'],
-              },
-            ],
-          },
-          {
-            label: 'banner',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-banner'],
-          },
-          {
-            label: 'blockquote',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-blockquote'],
-          },
-          {
-            label: 'expandable',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-expandable'],
-          },
-          {
-            label: 'description list',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-description-list',
-              {
-                label: 'term and definition',
-                withText: true,
-                items: ['ecl-webcomponents-ecl-description-list-term', 'ecl-webcomponents-ecl-description-list-definition'],
-              },
-            ],
-          },
-          {
-            label: 'file',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-file',
-              {
-                label: 'translations',
-                withText: true,
-                items: ['ecl-webcomponents-ecl-file-translations', 'ecl-webcomponents-ecl-file-translation-item'],
-              },
-            ],
-          },
-          {
-            label: 'label',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-label'],
-          },
-          {
-            label: 'tag',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-tag'],
-          },
-          {
-            label: 'message',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-message'],
-          },
-          {
-            label: 'media share',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-social-media-share',
-              {
-                label: 'items',
-                withText: true,
-                items: ['ecl-webcomponents-ecl-social-media-share-item'],
-              },
-            ],
-          },
-          {
-            label: 'date-block',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-date-block'],
-          },
-          {
-            label: 'modal',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-modal'],
-          },
-          {
-            label: 'ecl-footer',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-footer',
-              {
-                label: 'items',
-                withText: true,
-                items: ['ecl-webcomponents-ecl-footer-item'],
-              },
-            ],
-          },
-          {
-            label: 'spinner',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-spinner'],
-          },
-          {
-            label: 'featured item',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-featured-item'],
-          },
-          {
-            label: 'popover',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-popover',
-              {
-                label: 'items',
-                withText: true,
-                items: ['ecl-webcomponents-ecl-popover-item'],
-              },
-            ],
-          },
-          {
-            label: 'grid',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-grid'],
-          },
-          {
-            label: 'spacing',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-spacing'],
-          },
-          {
-            label: 'inpage nav',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-inpage-navigation',
-              {
-                label: 'items',
-                withText: true,
-                items: ['ecl-webcomponents-ecl-inpage-navigation-item'],
-              },
-            ],
-          },
-          {
-            label: 'form',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-form-group',
-              {
-                label: 'input(s)',
-                withText: true,
-                items: [
-                  {
-                    label: 'input field',
-                    withText: true,
-                    items: ['ecl-webcomponents-ecl-input'],
-                  },
-                  {
-                    label: 'rating field',
-                    withText: true,
-                    items: [
-                      'ecl-webcomponents-ecl-rating-field',
-                      {
-                        label: 'rating star',
-                        withText: true,
-                        items: ['ecl-webcomponents-ecl-rating-star'],
-                      },
-                    ],
-                  },
-                  {
-                    label: 'select',
-                    withText: true,
-                    items: ['ecl-webcomponents-ecl-select'],
-                  },
-                  {
-                    label: 'textarea',
-                    withText: true,
-                    items: ['ecl-webcomponents-ecl-textarea'],
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            label: 'breadcrumb',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-breadcrumb',
-              {
-                label: 'item',
-                withText: true,
-                items: ['ecl-webcomponents-ecl-breadcrumb-item'],
-              },
-            ],
-          },
-          {
-            label: 'list-illustration',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-list-illustration',
-              {
-                label: 'item',
-                withText: true,
-                items: ['ecl-webcomponents-ecl-list-illustration-item'],
-              },
-            ],
-          },
-          {
-            label: 'page-header',
-            withText: true,
-            items: ['ecl-webcomponents-ecl-page-header'],
-          },
-          {
-            label: 'site header',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-site-header',
-              {
-                label: 'language item',
-                withText: true,
-                items: ['ecl-webcomponents-ecl-language-item'],
-              },
-              {
-                label: 'ecl-menu',
-                withText: true,
-                items: [
-                  'ecl-webcomponents-ecl-menu',
-                  {
-                    label: 'items',
-                    withText: true,
-                    items: ['ecl-webcomponents-ecl-menu-item'],
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            label: 'navigation-list',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-navigation-list',
-              {
-                label: 'navigation list item',
-                withText: true,
-                items: ['ecl-webcomponents-ecl-navigation-list-item'],
-              },
-            ],
-          },
-          {
-            label: 'timeline',
-            withText: true,
-            items: [
-              'ecl-webcomponents-ecl-timeline',
-              {
-                label: 'timeline item',
-                withText: true,
-                items: ['ecl-webcomponents-ecl-timeline-item'],
-              },
-            ],
-          },
-        ],
+        items: toolbarItems,
       },
-      'sourceEditing',
     ],
   },
-  image: {
-    toolbar: ['imageStyle:inline', 'imageStyle:block', 'imageStyle:side', '|', 'toggleImageCaption', 'imageTextAlternative'],
-  },
-  table: {
-    contentToolbar: ['tableColumn', 'tableRow', 'mergeTableCells'],
+  blockToolbar: {
+    items: toolbarItems,
   },
   CustomElement: {
     items: [
