@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-carousel",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "ECL Carousel",
   "main": "ecl-carousel.tsx",
   "private": true,
