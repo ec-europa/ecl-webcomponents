@@ -44,31 +44,6 @@ ClassicEditor.builtinPlugins = [
 
 const toolbarItems = [
   {
-    label: 'icon',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-icon'],
-  },
-  {
-    label: 'button',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-button'],
-  },
-  {
-    label: 'link',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-link'],
-  },
-  {
-    label: 'card',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-card'],
-  },
-  {
-    label: 'text',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-text'],
-  },
-  {
     label: 'accordion',
     withText: true,
     items: [
@@ -77,93 +52,6 @@ const toolbarItems = [
         label: 'items',
         withText: true,
         items: ['ecl-webcomponents-ecl-accordion-item'],
-      },
-    ],
-  },
-  {
-    label: 'facts & figures',
-    withText: true,
-    items: [
-      'ecl-webcomponents-ecl-fact-figures',
-      {
-        label: 'items',
-        withText: true,
-        items: ['ecl-webcomponents-ecl-fact-figures-item'],
-      },
-    ],
-  },
-  {
-    label: 'content block',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-content-block'],
-  },
-  {
-    label: 'content item',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-content-item'],
-  },
-  {
-    label: 'picture',
-    withText: true,
-    items: [
-      'ecl-webcomponents-ecl-picture',
-      {
-        label: 'source',
-        withText: true,
-        items: ['ecl-webcomponents-source'],
-      },
-    ],
-  },
-  {
-    label: 'carousel',
-    withText: true,
-    items: [
-      'ecl-webcomponents-ecl-carousel',
-      {
-        label: 'items',
-        withText: true,
-        items: ['ecl-webcomponents-ecl-carousel-item'],
-      },
-    ],
-  },
-  {
-    label: 'news ticker',
-    withText: true,
-    items: [
-      'ecl-webcomponents-ecl-news-ticker',
-      {
-        label: 'items',
-        withText: true,
-        items: ['ecl-webcomponents-ecl-news-ticker-item'],
-      },
-    ],
-  },
-  {
-    label: 'gallery',
-    withText: true,
-    items: [
-      'ecl-webcomponents-ecl-gallery',
-      {
-        label: 'items',
-        withText: true,
-        items: ['ecl-webcomponents-ecl-gallery-item'],
-      },
-    ],
-  },
-  {
-    label: 'media container',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-media-container'],
-  },
-  {
-    label: 'pagination',
-    withText: true,
-    items: [
-      'ecl-webcomponents-ecl-pagination',
-      {
-        withText: true,
-        label: 'items',
-        items: ['ecl-webcomponents-ecl-pagination-item'],
       },
     ],
   },
@@ -178,9 +66,53 @@ const toolbarItems = [
     items: ['ecl-webcomponents-ecl-blockquote'],
   },
   {
-    label: 'expandable',
+    label: 'breadcrumb',
     withText: true,
-    items: ['ecl-webcomponents-ecl-expandable'],
+    items: [
+      'ecl-webcomponents-ecl-breadcrumb',
+      {
+        label: 'item',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-breadcrumb-item'],
+      },
+    ],
+  },
+  {
+    label: 'button',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-button'],
+  },
+  {
+    label: 'card',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-card'],
+  },
+  {
+    label: 'carousel',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-carousel',
+      {
+        label: 'items',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-carousel-item'],
+      },
+    ],
+  },
+  {
+    label: 'content block',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-content-block'],
+  },
+  {
+    label: 'content item',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-content-item'],
+  },
+  {
+    label: 'date-block',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-date-block'],
   },
   {
     label: 'description list',
@@ -195,6 +127,28 @@ const toolbarItems = [
     ],
   },
   {
+    label: 'expandable',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-expandable'],
+  },
+  {
+    label: 'facts & figures',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-fact-figures',
+      {
+        label: 'items',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-fact-figures-item'],
+      },
+    ],
+  },
+  {
+    label: 'featured item',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-featured-item'],
+  },
+  {
     label: 'file',
     withText: true,
     items: [
@@ -207,44 +161,7 @@ const toolbarItems = [
     ],
   },
   {
-    label: 'label',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-label'],
-  },
-  {
-    label: 'tag',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-tag'],
-  },
-  {
-    label: 'message',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-message'],
-  },
-  {
-    label: 'media share',
-    withText: true,
-    items: [
-      'ecl-webcomponents-ecl-social-media-share',
-      {
-        label: 'items',
-        withText: true,
-        items: ['ecl-webcomponents-ecl-social-media-share-item'],
-      },
-    ],
-  },
-  {
-    label: 'date-block',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-date-block'],
-  },
-  {
-    label: 'modal',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-modal'],
-  },
-  {
-    label: 'ecl-footer',
+    label: 'footer',
     withText: true,
     items: [
       'ecl-webcomponents-ecl-footer',
@@ -252,50 +169,6 @@ const toolbarItems = [
         label: 'items',
         withText: true,
         items: ['ecl-webcomponents-ecl-footer-item'],
-      },
-    ],
-  },
-  {
-    label: 'spinner',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-spinner'],
-  },
-  {
-    label: 'featured item',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-featured-item'],
-  },
-  {
-    label: 'popover',
-    withText: true,
-    items: [
-      'ecl-webcomponents-ecl-popover',
-      {
-        label: 'items',
-        withText: true,
-        items: ['ecl-webcomponents-ecl-popover-item'],
-      },
-    ],
-  },
-  {
-    label: 'grid',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-grid'],
-  },
-  {
-    label: 'spacing',
-    withText: true,
-    items: ['ecl-webcomponents-ecl-spacing'],
-  },
-  {
-    label: 'inpage nav',
-    withText: true,
-    items: [
-      'ecl-webcomponents-ecl-inpage-navigation',
-      {
-        label: 'items',
-        withText: true,
-        items: ['ecl-webcomponents-ecl-inpage-navigation-item'],
       },
     ],
   },
@@ -340,16 +213,48 @@ const toolbarItems = [
     ],
   },
   {
-    label: 'breadcrumb',
+    label: 'gallery',
     withText: true,
     items: [
-      'ecl-webcomponents-ecl-breadcrumb',
+      'ecl-webcomponents-ecl-gallery',
       {
-        label: 'item',
+        label: 'items',
         withText: true,
-        items: ['ecl-webcomponents-ecl-breadcrumb-item'],
+        items: ['ecl-webcomponents-ecl-gallery-item'],
       },
     ],
+  },
+  {
+    label: 'grid',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-grid'],
+  },
+  {
+    label: 'icon',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-icon'],
+  },
+  {
+    label: 'inpage nav',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-inpage-navigation',
+      {
+        label: 'items',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-inpage-navigation-item'],
+      },
+    ],
+  },
+  {
+    label: 'label',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-label'],
+  },
+  {
+    label: 'link',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-link'],
   },
   {
     label: 'list-illustration',
@@ -364,9 +269,96 @@ const toolbarItems = [
     ],
   },
   {
+    label: 'media container',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-media-container'],
+  },
+  {
+    label: 'media share',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-social-media-share',
+      {
+        label: 'items',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-social-media-share-item'],
+      },
+    ],
+  },
+  {
+    label: 'message',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-message'],
+  },
+  {
+    label: 'modal',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-modal'],
+  },
+  {
+    label: 'navigation-list',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-navigation-list',
+      {
+        label: 'navigation list item',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-navigation-list-item'],
+      },
+    ],
+  },
+  {
+    label: 'news ticker',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-news-ticker',
+      {
+        label: 'items',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-news-ticker-item'],
+      },
+    ],
+  },
+  {
     label: 'page-header',
     withText: true,
     items: ['ecl-webcomponents-ecl-page-header'],
+  },
+  {
+    label: 'pagination',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-pagination',
+      {
+        withText: true,
+        label: 'items',
+        items: ['ecl-webcomponents-ecl-pagination-item'],
+      },
+    ],
+  },
+  {
+    label: 'picture',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-picture',
+      {
+        label: 'source',
+        withText: true,
+        items: ['ecl-webcomponents-source'],
+      },
+    ],
+  },
+  {
+    label: 'popover',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-popover',
+      {
+        label: 'items',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-popover-item'],
+      },
+    ],
   },
   {
     label: 'site header',
@@ -393,16 +385,24 @@ const toolbarItems = [
     ],
   },
   {
-    label: 'navigation-list',
+    label: 'spacing',
     withText: true,
-    items: [
-      'ecl-webcomponents-ecl-navigation-list',
-      {
-        label: 'navigation list item',
-        withText: true,
-        items: ['ecl-webcomponents-ecl-navigation-list-item'],
-      },
-    ],
+    items: ['ecl-webcomponents-ecl-spacing'],
+  },
+  {
+    label: 'spinner',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-spinner'],
+  },
+  {
+    label: 'tag',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-tag'],
+  },
+  {
+    label: 'text',
+    withText: true,
+    items: ['ecl-webcomponents-ecl-text'],
   },
   {
     label: 'timeline',

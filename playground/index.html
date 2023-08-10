@@ -16,22 +16,24 @@
     </style>
     <link
       rel="stylesheet"
-      href="https://cdn1.fpfis.tech.ec.europa.eu/ecl/v3.7.0/ec/styles/ecl-ec.css"
-      integrity="sha256-ZdpU8ceybZJrA2Wrwn/eMYUN2CcWPI74zyrjeeNUku8= sha384-yC56h5ewovjkjGHvHAKHxbM3V5aQoNp+fhu3jW6DUe1xpqPheP4olfuoAE1LRqNt
-      sha512-AmZLFl1p0U7seKqqVCROPCN/vNkJhyBPUnHZnU3CCRLaNF3HZYa6/+U5yva37N9LwROsvEcY2t0oEW3WZMAtwg=="
+      href="https://cdn1.fpfis.tech.ec.europa.eu/ecl/v3.9.1/ec/styles/ecl-ec.css"
+      integrity="sha256-0zRqC/6eLuVDDye5qE8BFP258QkL1B0rm2kFIv9QNZw= sha384-lM8ckpRRZXbx9MZOw2alQ5IgNRzx6dIAHZYK/kTR19IYoz67xoDLQyWkLdhQaSUO
+      sha512-B7VbIvT5ZvN/Beo0ZbigT4NgCaLzx4QCLJQOnINY5R3P5qro04ckYu8d45ILtBrUORTM//TM2YgMpkoq0ZmjVg=="
       crossorigin="anonymous"
       media="screen"
     />
   </head>
   <body>
     <div class="ecl-container">
-      <ecl-site-header logo-alt="European Commission" logo-title="European commission" search-block="false"> </ecl-site-header>
+      <ecl-site-header logo-alt="European Commission" logo-title="European commission" lang-code="en" search-block="false"> </ecl-site-header>
       <h1>Ecl Webcomponents playground</h1>
       <ecl-accordion ecl-script id="introduction">
         <ecl-accordion-item label="How to use the playground" id="playground">
           <p class="ecl-u-type-paragraph-m">
-            Use the editor to insert the content you want. To include Ecl components, click on the Ecl button in the toolbar to see all the available components and click on the
-            chosen component's button and submit the form where you can edit all the available attributes.<br />
+            Use the editor to insert the content you want. To include Ecl components, click on the Ecl button in the toolbar or click on the paragraph symbol appearing on the left,
+            find the desired component and click on its icon, a popover with a form where you can edit all the available attributes will appear, once you click on the green tick
+            the element will be inserted in the editor
+            <br />
 
             For simple components you will see in the editor something that will look like the real component, but it's just a mock of it, the styles are coming from the main Ecl
             css that has been included in this page for this purpose.
@@ -39,7 +41,7 @@
         </ecl-accordion-item>
         <ecl-accordion-item label="Hierarchical components" id="hierarchical">
           <p class="ecl-u-type-paragraph-m">
-            Ecl components can have a hierarchical structure, in those case after submitting the parent form, the Ui will help you identifying the component in the editor. You can
+            Ecl components can have a hierarchical structure, in these case after submitting the parent form, the Ui will help you identifying the component in the editor. You can
             start creating children by clicking on the right button in the toolbar and submitting the related form.<br />
 
             Children components usually expect content to be inserted, you can start typing it right after submitting the form. You can also insert Ecl components as content of
