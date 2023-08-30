@@ -152,7 +152,6 @@
     "json5": ">=1.0.2",
     "http-cache-semantics": ">=4.1.1",
     "yaml": ">=2.2.2",
-    "semver": ">=7.5.2",
-    "string-width": "^4.0.0"
+    "semver": ">=7.5.2"
   }
 }
