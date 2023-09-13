@@ -2,3 +2,7 @@
 
 @use '@ecl/vanilla-component-button/button-ec';
 @use '@ecl/vanilla-component-expandable/expandable-ec';
+
+.ecl-expandable__content p {
+  max-width: 80ch;
+}

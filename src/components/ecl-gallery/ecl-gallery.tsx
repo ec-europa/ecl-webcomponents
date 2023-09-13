@@ -36,6 +36,7 @@ export class EclGallery {
   @Prop() expandable: boolean = true;
   @Prop() fullScreenLabel: string = '';
   @Prop() noOverlay: boolean = false;
+  @Prop() ariaLabel: string;
 
   getClass(): string {
     const styleClasses = [
@@ -117,6 +118,7 @@ export class EclGallery {
         <dialog
           class="ecl-gallery__overlay"
           data-ecl-gallery-overlay
+          aria-label={this.ariaLabel || null}
         >
           <header
             class="ecl-gallery__close"

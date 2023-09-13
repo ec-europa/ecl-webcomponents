@@ -21,6 +21,7 @@ const Template = (args) =>
   footer-link-path="${randomizedLink('/example.html')}"
   footer-link-label="further media items"
   expandable
+  aria-label="Gallery overlay"
 >
   <ecl-gallery-item
     theme="${args.theme}"

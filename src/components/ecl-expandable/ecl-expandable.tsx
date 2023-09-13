@@ -23,6 +23,14 @@ export class EclExpandable {
   @Prop() theme: string = 'ec';
 
   componentDidRender() {
+    const p = this.el.querySelectorAll('p');
+
+    if (p[0]) {
+      p.forEach((paragraph) => {
+        paragraph.classList.add(`sc-ecl-expandable-${this.theme}`);
+      });
+    }
+
     const src = getAssetPath('./build/scripts/ecl-expandable-vanilla.js');
     if (document.querySelector(`script[src="${src}"]`)) {
       document.querySelector(`script[src="${src}"]`).remove();

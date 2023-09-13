@@ -14,6 +14,7 @@
 | `sprite`     | `sprite`      |             | `string` | `''`        |
 | `styleClass` | `style-class` |             | `string` | `''`        |
 | `theme`      | `theme`       |             | `string` | `'ec'`      |
+| `titleTag`   | `title-tag`   |             | `string` | `''`        |
 | `transform`  | `transform`   |             | `string` | `''`        |
 
 

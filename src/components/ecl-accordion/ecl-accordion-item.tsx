@@ -12,6 +12,8 @@ export class EclAccordionItem {
   @Element() el: HTMLElement;
   @Prop() styleClass: string;
   @Prop() label: string;
+  @Prop() itemId: string;
+  @Prop() titleId: string;
   @Prop({reflect:true}) expanded: boolean;
   @Prop() theme: string = 'ec';
   
@@ -25,8 +27,15 @@ export class EclAccordionItem {
 
   render() {
     return (
-      <div class={this.getClass()}>
-        <h3 class={`ecl-accordion__title sc-ecl-accordion-${this.theme}`}>
+      <div
+        class={this.getClass()}
+        id={this.itemId || null}
+        aria-labelledby={this.titleId || null}
+      >
+        <h3 
+          class={`ecl-accordion__title sc-ecl-accordion-${this.theme}`}
+          id={this.titleId || null}
+        >
           <button
             data-ecl-accordion-toggle
             aria-controls={`${this.el.id}-content`}

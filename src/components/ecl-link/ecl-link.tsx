@@ -67,7 +67,8 @@ export class EclLink {
       <ecl-icon 
         icon="external"
         style-class={`ecl-link__icon ecl-link__icon--after sc-ecl-link-${this.theme}`}
-        size = "2xs"
+        size="2xs"
+        title-tag={this.ariaLabel}
       >
       </ecl-icon>
     )  
@@ -85,7 +86,7 @@ export class EclLink {
     if (this.download) {
       attrs['download'] = true;
     }
-    if (this.ariaLabel) {
+    if (this.ariaLabel && !this.external) {
       attrs['aria-label'] = this.ariaLabel;
     }
     if (this.target) {

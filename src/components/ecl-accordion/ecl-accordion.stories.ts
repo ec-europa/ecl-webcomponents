@@ -8,7 +8,8 @@ const Template = (args) =>
     ecl-script
   >
     <ecl-accordion-item
-      id="ecl-accordion-item-id-1"
+      item-id="ecl-accordion-item-id-1"
+      title-id="accordion-example-title-1"
       label="Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy"
       theme="${args.theme}"
     >
@@ -18,8 +19,9 @@ const Template = (args) =>
     </ecl-accordion-item>
 
     <ecl-accordion-item
-      id="ecl-accordion-item-id-2"
+      item-id="ecl-accordion-item-id-2"
       label="Energy union and climate"
+      title-id="accordion-example-title-2"
       expanded
       theme="${args.theme}"
     >
@@ -27,7 +29,8 @@ const Template = (args) =>
     </ecl-accordion-item>
 
     <ecl-accordion-item
-      id="ecl-accordion-item-id-3"
+      item-id="ecl-accordion-item-id-3"
+      title-id="accordion-example-title-3"
       label="Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy"
       theme="${args.theme}"
     >

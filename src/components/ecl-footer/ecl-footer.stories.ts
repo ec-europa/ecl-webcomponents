@@ -295,7 +295,7 @@ const TemplateEu = () =>
       Privacy policy
     </ecl-footer-item>
     <ecl-footer-item
-      link="https://european-union.europa.eu/privacy-policy_en"
+      link="https://european-union.europa.eu/legal-notice_en"
       theme="eu"
       slot="ecl-footer-list-bottom-right"
     >
@@ -345,7 +345,7 @@ const TemplateEu = () =>
       Council of the European Union
     </ecl-footer-item>
     <ecl-footer-item
-      link="https://ec.europa.eu/commission/index_en"
+      link="https://commission.europa.eu/index_en"
       theme="eu"
       slot="ecl-footer-list-right"
     >
@@ -626,7 +626,7 @@ const TemplateEuHarmonised = () =>
       Privacy policy
     </ecl-footer-item>
     <ecl-footer-item
-      link="https://european-union.europa.eu/privacy-policy_en"
+      link="https://european-union.europa.eu/legal-notice_en"
       theme="eu"
       slot="ecl-footer-list-main-bottom"
     >

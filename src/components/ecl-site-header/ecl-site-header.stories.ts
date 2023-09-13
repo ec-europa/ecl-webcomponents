@@ -111,10 +111,129 @@ const Template = (args) =>
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="lv"
+    language="latviešu"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="lt"
+    language="lietuvių"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="hu"
+    language="magyar"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="mt"
+    language="Malti"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="nl"
+    language="Nederlands"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="pl"
+    language="polski"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="pt"
+    language="português"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="ro"
+    language="română'"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="sk"
+    language="slovenčina"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="fi"
+    language="suomi"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="sv"
+    language="svenska"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
     slot="non-eu-category"
     path="${randomizedLink('/example.html')}"
-    lang-code="zh"
-    language="中文"
+    lang-code="ar"
+    language="عَرَبِيّ"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="non-eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="ca"
+    language="Català"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="non-eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="is"
+    language="Íslenska"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="non-eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="lb"
+    language="Lëtzebuergesch"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="non-eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="ja"
+    language="日本語"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="non-eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="nb"
+    language="Norsk bokmål"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="non-eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="ru"
+    language="русский язык"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
@@ -122,6 +241,20 @@ const Template = (args) =>
     path="${randomizedLink('/example.html')}"
     lang-code="tr"
     language="Türk"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="non-eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="uk"
+    language="українська мова"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="non-eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="zh"
+    language="中文"
   ></ecl-language-item>
   <div slot="search" class="ecl-site-header__search-container sc-ecl-search-form-ec">
     <ecl-search-form
@@ -224,6 +357,7 @@ const TemplateHarmonised = (args) =>
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
+    slot="eu-category"
     path="${randomizedLink('/example.html')}"
     lang-code="ga"
     language="Gaeilge"
@@ -244,10 +378,129 @@ const TemplateHarmonised = (args) =>
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="lv"
+    language="latviešu"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="lt"
+    language="lietuvių"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="hu"
+    language="magyar"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="mt"
+    language="Malti"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="nl"
+    language="Nederlands"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="pl"
+    language="polski"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="pt"
+    language="português"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="ro"
+    language="română'"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="sk"
+    language="slovenčina"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="fi"
+    language="suomi"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="sv"
+    language="svenska"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
     slot="non-eu-category"
-    path="${randomizedLink('/example.html')}"l"
-    lang-code="zh"
-    language="中文"
+    path="${randomizedLink('/example.html')}"
+    lang-code="ar"
+    language="عَرَبِيّ"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="non-eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="ca"
+    language="Català"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="non-eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="is"
+    language="Íslenska"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="non-eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="lb"
+    language="Lëtzebuergesch"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="non-eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="ja"
+    language="日本語"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="non-eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="nb"
+    language="Norsk bokmål"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="non-eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="ru"
+    language="русский язык"
   ></ecl-language-item>
   <ecl-language-item
     theme="${args.theme}"
@@ -255,6 +508,20 @@ const TemplateHarmonised = (args) =>
     path="${randomizedLink('/example.html')}"
     lang-code="tr"
     language="Türk"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="non-eu-category"
+    path="${randomizedLink('/example.html')}"
+    lang-code="uk"
+    language="українська мова"
+  ></ecl-language-item>
+  <ecl-language-item
+    theme="${args.theme}"
+    slot="non-eu-category"
+    path="${randomizedLink('/example.html')}
+    lang-code="zh"
+    language="中文"
   ></ecl-language-item>
   <ecl-menu
     slot="menu"

@@ -17,6 +17,7 @@ export class EclIcon {
   @Prop() icon: string = '';
   @Prop() size: string = 'xs';
   @Prop() color: string = '';
+  @Prop() titleTag: string = '';
   @Prop({ mutable: true }) path: string;
   @Prop() transform: string = '';
   @Prop() theme: string = 'ec';
@@ -53,6 +54,7 @@ export class EclIcon {
   render() {
     return (
       <svg class={this.getClass()}>
+      { this.titleTag ? <title>{this.titleTag}</title> : '' } 
         <use xlinkHref={`${this.path}#${this.icon}`}></use>
       </svg>
     )
