@@ -12,7 +12,7 @@ const Template = (args) =>
   sr-next="Next item"
   sr-prev="Prev item"
   sr-pause="Pause news ticker"
-  sr-play:"Play news ticker"
+  sr-play="Play news ticker"
 >
   <ecl-news-ticker-item
     theme="${args.theme}"
