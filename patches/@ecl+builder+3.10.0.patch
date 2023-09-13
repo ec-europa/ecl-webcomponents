@@ -12,7 +12,7 @@ index edd25b9..0c98c60 100755
    });
  
 diff --git a/node_modules/@ecl/builder/scripts/copy.js b/node_modules/@ecl/builder/scripts/copy.js
-index 30019d2..30e38be 100644
+index 30019d2..3bfefde 100644
 --- a/node_modules/@ecl/builder/scripts/copy.js
 +++ b/node_modules/@ecl/builder/scripts/copy.js
 @@ -1,23 +1,32 @@
@@ -37,7 +37,7 @@ index 30019d2..30e38be 100644
 + *   },
 + * ],
 + */
-  
+ 
 -const copy = promisify(ncp);
  
 -module.exports = (patterns, from, to) => {
@@ -50,7 +50,7 @@ index 30019d2..30e38be 100644
 +const fs = require("fs");
 +const path = require("path");
 +const copy = require("copyfiles");
-  
+ 
 -      fs.mkdirSync(path.dirname(dest), { recursive: true });
 -      await copy(input, dest);
 -    });
