@@ -14,9 +14,11 @@ export namespace Components {
     }
     interface EclAccordionItem {
         "expanded": boolean;
+        "itemId": string;
         "label": string;
         "styleClass": string;
         "theme": string;
+        "titleId": string;
     }
     interface EclBanner {
         "bannerTitle": string;
@@ -296,6 +298,7 @@ export namespace Components {
         "theme": string;
     }
     interface EclGallery {
+        "ariaLabel": string;
         "closeLabel": string;
         "counterLabel": string;
         "counterSeparator": string;
@@ -358,6 +361,7 @@ export namespace Components {
         "sprite": string;
         "styleClass": string;
         "theme": string;
+        "titleTag": string;
         "transform": string;
     }
     interface EclInpageNavigation {
@@ -1348,9 +1352,11 @@ declare namespace LocalJSX {
     }
     interface EclAccordionItem {
         "expanded"?: boolean;
+        "itemId"?: string;
         "label"?: string;
         "styleClass"?: string;
         "theme"?: string;
+        "titleId"?: string;
     }
     interface EclBanner {
         "bannerTitle"?: string;
@@ -1633,6 +1639,7 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclGallery {
+        "ariaLabel"?: string;
         "closeLabel"?: string;
         "counterLabel"?: string;
         "counterSeparator"?: string;
@@ -1695,6 +1702,7 @@ declare namespace LocalJSX {
         "sprite"?: string;
         "styleClass"?: string;
         "theme"?: string;
+        "titleTag"?: string;
         "transform"?: string;
     }
     interface EclInpageNavigation {

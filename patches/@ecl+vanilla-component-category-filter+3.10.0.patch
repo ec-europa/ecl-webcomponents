@@ -1,5 +1,5 @@
 diff --git a/node_modules/@ecl/vanilla-component-category-filter/category-filter.js b/node_modules/@ecl/vanilla-component-category-filter/category-filter.js
-index 76b4353..3f86846 100644
+index 76b4353..ed7da7d 100644
 --- a/node_modules/@ecl/vanilla-component-category-filter/category-filter.js
 +++ b/node_modules/@ecl/vanilla-component-category-filter/category-filter.js
 @@ -90,21 +90,24 @@ export class CategoryFilter {
@@ -27,7 +27,7 @@ index 76b4353..3f86846 100644
          return;
        }
      }
-     
+ 
 -    this.items.forEach((item) => {
 +    this.items.forEach(function (item) {
        if (item === treeItem) {

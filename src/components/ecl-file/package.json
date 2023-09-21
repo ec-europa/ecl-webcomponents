@@ -14,9 +14,9 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.9.1",
-    "@ecl/vanilla-component-file": "3.9.1",
-    "@ecl/vanilla-layout-grid": "3.9.1",
+    "@ecl/builder": "3.10.0",
+    "@ecl/vanilla-component-file": "3.10.0",
+    "@ecl/vanilla-layout-grid": "3.10.0",
     "cross-env": "7.0.3"
   },
   "repository": {

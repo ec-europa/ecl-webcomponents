@@ -70,6 +70,7 @@ const Template = (args) => `
     theme="${args.theme}"
     path="${args.path}"
     external="${args.external}"
+    aria-label="Accessibility enhancer"
   >
   ${args.icon && args.iconPosition === 'before' ?
     `<ecl-icon 

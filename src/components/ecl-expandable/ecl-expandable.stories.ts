@@ -19,11 +19,9 @@ Expandable.args = {
   id: 'expandable-example',
   labelCollapsed: 'Expand',
   labelExpanded: 'Collapse',
-  content: `<ecl-text tag="p" size="m">
-    The EU is building an energy union that ensures Europe’s energy supply is safe,
+  content: `<p>The EU is building an energy union that ensures Europe’s energy supply is safe,
     viable and accessible to all. In doing so, it can boost the economy and attract investments that can create new jobs
-    opportunities.
-  </ecl-text>`,
+    opportunities.</p>`,
 };
 Expandable.argTypes = {
   id: {
