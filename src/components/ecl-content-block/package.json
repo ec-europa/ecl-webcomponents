@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-content-block",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "ECL Content Block",
   "main": "ecl-content-block.tsx",
   "private": true,

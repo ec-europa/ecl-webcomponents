@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-file-upload",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "ECL File upload",
   "main": "ecl-file-upload.tsx",
   "private": true,
