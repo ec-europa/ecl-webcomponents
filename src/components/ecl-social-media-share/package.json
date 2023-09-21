@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-social-media-share",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "ECL Social Media Share",
   "main": "ecl-social-media-share.tsx",
   "private": true,
