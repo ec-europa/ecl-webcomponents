@@ -15,12 +15,12 @@
     "@ecl/ecl-webcomponents-react": "0.11.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "rimraf": "5.0.1"
+    "rimraf": "5.0.4"
   },
   "devDependencies": {
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
-    "@vitejs/plugin-react": "4.0.4",
+    "@vitejs/plugin-react": "4.1.0",
     "typescript": "5.2.2",
     "vite": "4.4.9"
   }
