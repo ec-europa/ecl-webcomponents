@@ -898,7 +898,20 @@ declare global {
         prototype: HTMLEclDateBlockElement;
         new (): HTMLEclDateBlockElement;
     };
+    interface HTMLEclDatepickerElementEventMap {
+        "valueChanged": string;
+        "focused": void;
+        "blurred": void;
+    }
     interface HTMLEclDatepickerElement extends Components.EclDatepicker, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLEclDatepickerElementEventMap>(type: K, listener: (this: HTMLEclDatepickerElement, ev: EclDatepickerCustomEvent<HTMLEclDatepickerElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLEclDatepickerElementEventMap>(type: K, listener: (this: HTMLEclDatepickerElement, ev: EclDatepickerCustomEvent<HTMLEclDatepickerElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
     }
     var HTMLEclDatepickerElement: {
         prototype: HTMLEclDatepickerElement;
@@ -1030,7 +1043,20 @@ declare global {
         prototype: HTMLEclInpageNavigationItemElement;
         new (): HTMLEclInpageNavigationItemElement;
     };
+    interface HTMLEclInputElementEventMap {
+        "inputFocus": FocusEvent;
+        "inputBlur": FocusEvent;
+        "inputChange": any;
+    }
     interface HTMLEclInputElement extends Components.EclInput, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLEclInputElementEventMap>(type: K, listener: (this: HTMLEclInputElement, ev: EclInputCustomEvent<HTMLEclInputElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLEclInputElementEventMap>(type: K, listener: (this: HTMLEclInputElement, ev: EclInputCustomEvent<HTMLEclInputElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
     }
     var HTMLEclInputElement: {
         prototype: HTMLEclInputElement;
@@ -1162,7 +1188,20 @@ declare global {
         prototype: HTMLEclPopoverItemElement;
         new (): HTMLEclPopoverItemElement;
     };
+    interface HTMLEclRangeElementEventMap {
+        "inputFocus": FocusEvent;
+        "inputBlur": FocusEvent;
+        "inputChange": any;
+    }
     interface HTMLEclRangeElement extends Components.EclRange, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLEclRangeElementEventMap>(type: K, listener: (this: HTMLEclRangeElement, ev: EclRangeCustomEvent<HTMLEclRangeElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLEclRangeElementEventMap>(type: K, listener: (this: HTMLEclRangeElement, ev: EclRangeCustomEvent<HTMLEclRangeElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
     }
     var HTMLEclRangeElement: {
         prototype: HTMLEclRangeElement;
@@ -1174,7 +1213,20 @@ declare global {
         prototype: HTMLEclRatingFieldElement;
         new (): HTMLEclRatingFieldElement;
     };
+    interface HTMLEclRatingStarElementEventMap {
+        "inputFocus": FocusEvent;
+        "inputBlur": FocusEvent;
+        "inputChange": any;
+    }
     interface HTMLEclRatingStarElement extends Components.EclRatingStar, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLEclRatingStarElementEventMap>(type: K, listener: (this: HTMLEclRatingStarElement, ev: EclRatingStarCustomEvent<HTMLEclRatingStarElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLEclRatingStarElementEventMap>(type: K, listener: (this: HTMLEclRatingStarElement, ev: EclRatingStarCustomEvent<HTMLEclRatingStarElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
     }
     var HTMLEclRatingStarElement: {
         prototype: HTMLEclRatingStarElement;
@@ -1186,7 +1238,20 @@ declare global {
         prototype: HTMLEclSearchFormElement;
         new (): HTMLEclSearchFormElement;
     };
+    interface HTMLEclSelectElementEventMap {
+        "inputChange": any;
+        "inputFocus": FocusEvent;
+        "inputBlur": FocusEvent;
+    }
     interface HTMLEclSelectElement extends Components.EclSelect, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLEclSelectElementEventMap>(type: K, listener: (this: HTMLEclSelectElement, ev: EclSelectCustomEvent<HTMLEclSelectElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLEclSelectElementEventMap>(type: K, listener: (this: HTMLEclSelectElement, ev: EclSelectCustomEvent<HTMLEclSelectElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
     }
     var HTMLEclSelectElement: {
         prototype: HTMLEclSelectElement;
@@ -1246,7 +1311,20 @@ declare global {
         prototype: HTMLEclTextElement;
         new (): HTMLEclTextElement;
     };
+    interface HTMLEclTextareaElementEventMap {
+        "inputFocus": FocusEvent;
+        "inputBlur": FocusEvent;
+        "inputChange": any;
+    }
     interface HTMLEclTextareaElement extends Components.EclTextarea, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLEclTextareaElementEventMap>(type: K, listener: (this: HTMLEclTextareaElement, ev: EclTextareaCustomEvent<HTMLEclTextareaElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLEclTextareaElementEventMap>(type: K, listener: (this: HTMLEclTextareaElement, ev: EclTextareaCustomEvent<HTMLEclTextareaElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
     }
     var HTMLEclTextareaElement: {
         prototype: HTMLEclTextareaElement;
