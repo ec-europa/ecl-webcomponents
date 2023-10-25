@@ -111,7 +111,7 @@
     "jest-cli": "27.4.5",
     "lerna": "7.4.1",
     "lerna-changelog": "2.2.0",
-    "lint-staged": "14.0.1",
+    "lint-staged": "15.0.2",
     "ncp": "2.0.0",
     "npm-run-all": "4.1.5",
     "patch-package": "8.0.0",
@@ -125,7 +125,7 @@
     "stylelint-config-css-modules": "4.3.0",
     "stylelint-config-prettier": "9.0.5",
     "stylelint-config-standard": "34.0.0",
-    "stylelint-config-standard-scss": "10.0.0",
+    "stylelint-config-standard-scss": "11.0.0",
     "stylelint-order": "6.0.3",
     "stylelint-scss": "5.2.1"
   },
