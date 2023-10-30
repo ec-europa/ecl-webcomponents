@@ -31,6 +31,7 @@ export class EclCard {
         imageAlt={this.imageAlt}
         imgClass={`ecl-card__image sc-ecl-card-${this.theme}`}
         styleClass={`ecl-card__picture sc-ecl-picture-${this.theme}`}
+        data-ecl-picture-link
       >
         <slot name="sources"></slot>
       </ecl-picture>

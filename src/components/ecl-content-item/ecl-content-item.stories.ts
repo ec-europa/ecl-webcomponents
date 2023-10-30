@@ -50,6 +50,7 @@ const Template = (args) =>
     <ecl-picture
       slot="picture"
       image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-image2.jpg"
+      data-ecl-picture-link
     >
       <source
         media="(min-width: 480px)"
@@ -65,6 +66,7 @@ const Template = (args) =>
       has-title
       has-description
       has-labels
+      ecl-script
       has-lists
     >
       <ecl-label
@@ -89,6 +91,7 @@ const Template = (args) =>
         slot="title"
         path="${randomizedLink('/example.html')}"
         variant="standalone"
+        data-ecl-title-link
       >
         Title
       </ecl-link>

@@ -4,7 +4,7 @@ exports[`ecl-card renders 1`] = `
 <ecl-card image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" image-alt="Image alternative" theme="ec">
   <!---->
   <article class="ecl-card">
-    <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imagealt="Image alternative" imgclass="ecl-card__image sc-ecl-card-ec" styleclass="ecl-card__picture sc-ecl-picture-ec"></ecl-picture>
+    <ecl-picture data-ecl-picture-link image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imagealt="Image alternative" imgclass="ecl-card__image sc-ecl-card-ec" styleclass="ecl-card__picture sc-ecl-picture-ec"></ecl-picture>
     <div class="ecl-card__body">
       <ecl-content-block has-description="" has-labels="" has-title="" meta-primary="[&quot;META1&quot;, &quot;Meta2&quot;]" meta-secondary="[{&quot;label&quot;: &quot;2018/10/22&quot;, &quot;icon&quot;: &quot;calendar&quot;}, {&quot;label&quot;: &quot;Luxembourg&quot;, &quot;icon&quot;: &quot;location&quot;}]" theme="ec">
         <!---->

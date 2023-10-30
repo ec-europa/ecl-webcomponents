@@ -115,6 +115,7 @@ export namespace Components {
         "theme": string;
     }
     interface EclContentBlock {
+        "eclScript": boolean;
         "hasDescription": boolean;
         "hasLabels": boolean;
         "hasLinks": boolean;
@@ -1531,6 +1532,7 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclContentBlock {
+        "eclScript"?: boolean;
         "hasDescription"?: boolean;
         "hasLabels"?: boolean;
         "hasLinks"?: boolean;

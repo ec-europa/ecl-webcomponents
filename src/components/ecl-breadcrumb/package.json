@@ -4,7 +4,7 @@
   "license": "EUPL-1.2",
   "version": "0.11.0",
   "description": "ECL Breadcrumb",
-  "main": "ecl-breadcrumb.js",
+  "main": "ecl-breadcrumb.tsx",
   "private": true,
   "scripts": {
     "build:scripts": "cross-env ecl-builder scripts",

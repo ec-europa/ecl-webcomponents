@@ -17,11 +17,13 @@ const Template = (args) =>
       has-title
       has-description
       has-labels
+      ecl-script
     >
       <ecl-link
         slot="title"
         path="${randomizedLink('/example')}"
         variant="standalone"
+        data-ecl-title-link
       >
         Title
       </ecl-link>

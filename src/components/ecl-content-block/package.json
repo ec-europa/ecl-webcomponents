@@ -8,6 +8,7 @@
   "private": true,
   "scripts": {
     "build:styles": "cross-env ecl-builder styles",
+    "build:scripts": "cross-env ecl-builder scripts",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
     "prepublish": "npm run build"
