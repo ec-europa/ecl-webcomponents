@@ -30,7 +30,7 @@
     "@ecl/ecl-webcomponents": "0.11.0"
   },
   "devDependencies": {
-    "@types/react": "18.2.31",
+    "@types/react": "18.2.33",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rimraf": "5.0.5",
