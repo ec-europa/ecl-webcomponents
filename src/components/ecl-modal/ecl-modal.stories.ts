@@ -59,19 +59,19 @@ const Template = args =>
     <div slot="footer">
       <ecl-button
         theme="${args.theme}"
-        type="submit"
-        variant="primary"
-        style-class="ecl-modal__button"
-      >
-        Primary action
-      </ecl-button>
-      <ecl-button
-        theme="${args.theme}"
         type="button"
         variant="secondary"
         style-class="ecl-modal__button"
       >
         Secondary action
+      </ecl-button>
+      <ecl-button
+        theme="${args.theme}"
+        type="submit"
+        variant="primary"
+        style-class="ecl-modal__button"
+      >
+        Primary action
       </ecl-button>
     </div>
   </ecl-modal>`;
