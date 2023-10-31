@@ -115,6 +115,7 @@ export namespace Components {
         "theme": string;
     }
     interface EclContentBlock {
+        "eclScript": boolean;
         "hasDescription": boolean;
         "hasLabels": boolean;
         "hasLinks": boolean;
@@ -492,11 +493,13 @@ export namespace Components {
         "closeLabel": string;
         "eclScript": boolean;
         "itemId": string;
+        "size": string;
         "styleClass": string;
         "theme": string;
         "toggleId": string;
         "variant": string;
         "withBody": boolean;
+        "withBodyFixed": boolean;
         "withFooter": boolean;
         "withHeader": boolean;
     }
@@ -1531,6 +1534,7 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclContentBlock {
+        "eclScript"?: boolean;
         "hasDescription"?: boolean;
         "hasLabels"?: boolean;
         "hasLinks"?: boolean;
@@ -1914,11 +1918,13 @@ declare namespace LocalJSX {
         "closeLabel"?: string;
         "eclScript"?: boolean;
         "itemId"?: string;
+        "size"?: string;
         "styleClass"?: string;
         "theme"?: string;
         "toggleId"?: string;
         "variant"?: string;
         "withBody"?: boolean;
+        "withBodyFixed"?: boolean;
         "withFooter"?: boolean;
         "withHeader"?: boolean;
     }

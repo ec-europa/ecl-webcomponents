@@ -118,7 +118,7 @@ describe('ecl-footer', () => {
           theme="ec"
           slot="ecl-footer-list-main"
         >
-          News
+          Press corner
         </ecl-footer-item>
         <ecl-footer-item
           link="/example.html"

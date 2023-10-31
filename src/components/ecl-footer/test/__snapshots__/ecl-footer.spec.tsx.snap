@@ -196,7 +196,7 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    News
+                    Press corner
                     <slot-fb name="icon-after"></slot-fb>
                   </a>
                 </ecl-link>

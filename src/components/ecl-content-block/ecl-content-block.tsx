@@ -1,4 +1,6 @@
 import { Component, Prop, h, Element } from '@stencil/core';
+import getAssetPath from "../../utils/assetPath";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-content-block',
@@ -6,6 +8,7 @@ import { Component, Prop, h, Element } from '@stencil/core';
     ec: './build/styles/ecl-content-block-ec.css',
     eu: './build/styles/ecl-content-block-eu.css',
   },
+  assetsDirs: ['build'],
   shadow: false,
   scoped: true,
 })
@@ -15,6 +18,7 @@ export class EclContentBlock {
   @Prop() styleClass: string = '';
   @Prop() theme: string = 'ec';
   @Prop() hasDescription: boolean;
+  @Prop() eclScript: boolean = false;
   @Prop() hasTitle: boolean;
   @Prop() hasLabels: boolean;
   @Prop() hasLinks: boolean;
@@ -67,6 +71,22 @@ export class EclContentBlock {
       if (list) {
         list.classList.add('ecl-content-block__list', `sc-ecl-content-block-${this.theme}`);
       }
+    }
+
+    if (this.eclScript) {
+      // Load the ECL vanilla js if not already present.
+      const src = getAssetPath('./build/scripts/ecl-content-block-vanilla.js');
+      if (document.querySelector(`script[src="${src}"]`)) {
+        document.querySelector(`script[src="${src}"]`).remove();
+      }
+      const script = document.createElement('script');
+      script.src = src;
+      script.onload = () => {
+        const contentBlock = new ECL.ContentBlock(this.el);
+        contentBlock.init();
+      };
+
+      document.body.appendChild(script);
     }
   }
 

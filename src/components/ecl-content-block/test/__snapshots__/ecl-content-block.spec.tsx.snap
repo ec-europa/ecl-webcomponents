@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-content-block renders 1`] = `
-<ecl-content-block has-description="" has-labels="" has-links="" has-lists="" has-secondary-links="" has-title="" meta-primary="[&quot;PRIMARY META&quot;, &quot;DD Month Year&quot;]" meta-secondary="[{&quot;label&quot;: &quot;2018/10/22&quot;, &quot;icon&quot;: &quot;calendar&quot;}, {&quot;label&quot;: &quot;Luxembourg&quot;, &quot;icon&quot;: &quot;location&quot;}]" theme="ec">
+<ecl-content-block ecl-script="" has-description="" has-labels="" has-links="" has-lists="" has-secondary-links="" has-title="" meta-primary="[&quot;PRIMARY META&quot;, &quot;DD Month Year&quot;]" meta-secondary="[{&quot;label&quot;: &quot;2018/10/22&quot;, &quot;icon&quot;: &quot;calendar&quot;}, {&quot;label&quot;: &quot;Luxembourg&quot;, &quot;icon&quot;: &quot;location&quot;}]" theme="ec">
   <!---->
   <div class="ecl-content-block">
     <ul class="ecl-content-block__label-container">

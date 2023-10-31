@@ -13,8 +13,8 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.10.0",
-    "@ecl/vanilla-utility-typography": "3.10.0",
+    "@ecl/builder": "3.11.0",
+    "@ecl/vanilla-utility-typography": "3.11.0",
     "cross-env": "7.0.3"
   },
   "repository": {

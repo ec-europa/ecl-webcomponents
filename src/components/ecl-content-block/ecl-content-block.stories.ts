@@ -48,6 +48,7 @@ const Template = (args) =>
     has-labels
     has-links
     has-secondary-links
+    ecl-script
   >
     <ecl-label
       slot="labels"
