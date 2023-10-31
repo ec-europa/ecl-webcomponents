@@ -493,11 +493,13 @@ export namespace Components {
         "closeLabel": string;
         "eclScript": boolean;
         "itemId": string;
+        "size": string;
         "styleClass": string;
         "theme": string;
         "toggleId": string;
         "variant": string;
         "withBody": boolean;
+        "withBodyFixed": boolean;
         "withFooter": boolean;
         "withHeader": boolean;
     }
@@ -1916,11 +1918,13 @@ declare namespace LocalJSX {
         "closeLabel"?: string;
         "eclScript"?: boolean;
         "itemId"?: string;
+        "size"?: string;
         "styleClass"?: string;
         "theme"?: string;
         "toggleId"?: string;
         "variant"?: string;
         "withBody"?: boolean;
+        "withBodyFixed"?: boolean;
         "withFooter"?: boolean;
         "withHeader"?: boolean;
     }

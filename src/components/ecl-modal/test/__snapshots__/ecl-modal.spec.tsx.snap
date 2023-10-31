@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-modal renders 1`] = `
-<ecl-modal close-label="Close" ecl-script="" theme="ecl-modal" toggle-id="modal-demo-toggle" with-body="" with-footer="" with-header="">
+<ecl-modal close-label="Close" ecl-script="" theme="ec" toggle-id="modal-demo-toggle" with-body="" with-body-fixed="" with-footer="" with-header="">
   <!---->
-  <dialog class="ecl-modal ecl-modal--default" data-ecl-modal-toggle="modal-demo-toggle">
+  <dialog class="ecl-modal ecl-modal--default ecl-modal--l" data-ecl-modal-toggle="modal-demo-toggle">
     <div class="ecl-container ecl-modal__container">
-      <div class="ecl-col-12 ecl-col-l-6 ecl-col-m-8 ecl-modal__content ecl-offset-l-3 ecl-offset-m-2">
+      <div class="ecl-col-l-8 ecl-col-m-10 ecl-modal__content">
         <header class="ecl-modal__header">
           <div class="ecl-modal__header-content">
             <div slot="header">
@@ -21,13 +21,13 @@ exports[`ecl-modal renders 1`] = `
           </div>
           <ecl-button data-ecl-modal-close>
             <!---->
-            <button class="ecl-button ecl-button--ghost ecl-modal__close sc-ecl-modal-ecl-modal" data-ecl-modal-close="eclModalClose" type="button">
+            <button class="ecl-button ecl-button--ghost ecl-modal__close sc-ecl-modal-ec" data-ecl-modal-close="eclModalClose" type="button">
               <span class="ecl-button__container">
                 <span class="ecl-button__label">
                   Close
                   <ecl-icon>
                     <svg class="ecl-button__icon ecl-icon ecl-icon--s">
-                      <use xlink:href="/build/images/ecl-modal/icons.svg#close-filled"></use>
+                      <use xlink:href="/build/images/ec/icons.svg#close-filled"></use>
                     </svg>
                   </ecl-icon>
                 </span>
@@ -36,29 +36,53 @@ exports[`ecl-modal renders 1`] = `
           </ecl-button>
         </header>
         <div class="ecl-modal__body">
-          <div slot="body">
-            Sed quam augue, volutpat sed dapibus in, accumsan a arcu. Nulla quam enim, porttitor at neque a, egestas porttitor tortor. Nam tortor sem, elementum id augue quis, posuere vestibulum dui. Donec id posuere libero, sit amet egestas lorem. Aliquam finibus ipsum mauris, a molestie tortor laoreet.
+          <div class="ecl-modal__body-scroll" data-ecl-modal-scroll>
+            <div slot="body">
+              Sed quam augue, volutpat sed dapibus in, accumsan a arcu. Nulla quam enim, porttitor at neque a, egestas porttitor tortor. Nam tortor sem, elementum id augue quis, posuere vestibulum dui. Donec id posuere libero, sit amet egestas lorem. Aliquam finibus ipsum mauris, a molestie tortor laoreet.
+            </div>
+          </div>
+          <div aria-hidden="true" class="ecl-modal__body-overflow"></div>
+          <div class="ecl-modal__body-fixed">
+            <div slot="body-fixed">
+              <ecl-input input-class="ecl-checkbox__input" input-id="checkbox-default-1" label="Option label" name="checkbox-default" theme="ec" type="checkbox">
+                <div class="ecl-checkbox ecl-checkbox--m ecl-input">
+                  <input class="ecl-checkbox__input" id="checkbox-default-1" name="checkbox-default" type="checkbox">
+                  <label class="ecl-checkbox__label" htmlfor="checkbox-default-1">
+                    <span class="ecl-checkbox__box">
+                      <ecl-icon style-class="ecl-checkbox__icon sc-ecl-input-ec">
+                        <svg class="ecl-checkbox__icon ecl-icon ecl-icon--m sc-ecl-input-ec">
+                          <use xlink:href="/build/images/ec/icons.svg#check"></use>
+                        </svg>
+                      </ecl-icon>
+                    </span>
+                    <span class="ecl-checkbox__text">
+                      Option label
+                    </span>
+                  </label>
+                </div>
+              </ecl-input>
+            </div>
           </div>
         </div>
         <footer class="ecl-modal__footer">
           <div class="ecl-modal__footer-content">
             <div slot="footer">
-              <ecl-button style-class="ecl-modal__button" type="submit" variant="primary">
-                <!---->
-                <button class="ecl-button ecl-button--primary ecl-modal__button" type="submit">
-                  <span class="ecl-button__container">
-                    <span class="ecl-button__label">
-                      Primary action
-                    </span>
-                  </span>
-                </button>
-              </ecl-button>
               <ecl-button style-class="ecl-modal__button" type="button" variant="secondary">
                 <!---->
                 <button class="ecl-button ecl-button--secondary ecl-modal__button" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label">
                       Secondary action
+                    </span>
+                  </span>
+                </button>
+              </ecl-button>
+              <ecl-button style-class="ecl-modal__button" type="submit" variant="primary">
+                <!---->
+                <button class="ecl-button ecl-button--primary ecl-modal__button" type="submit">
+                  <span class="ecl-button__container">
+                    <span class="ecl-button__label">
+                      Primary action
                     </span>
                   </span>
                 </button>

@@ -120,7 +120,7 @@ const Template = () =>
       theme="ec"
       slot="ecl-footer-list-main"
     >
-      News
+      Press Corner
     </ecl-footer-item>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
