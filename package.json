@@ -71,14 +71,14 @@
     "!packages/**/dist"
   ],
   "dependencies": {
-    "@stencil/core": "4.6.0"
+    "@stencil/core": "4.10.0"
   },
   "devDependencies": {
-    "@babel/core": "7.23.2",
+    "@babel/core": "7.23.7",
     "@babel/eslint-parser": "7.22.15",
-    "@babel/plugin-transform-runtime": "7.23.2",
+    "@babel/plugin-transform-runtime": "7.23.7",
     "@babel/preset-react": "7.22.15",
-    "@babel/preset-typescript": "7.23.2",
+    "@babel/preset-typescript": "7.23.3",
     "@prettier/plugin-xml": "3.2.2",
     "@stencil/angular-output-target": "0.8.3",
     "@stencil/react-output-target": "0.5.3",
@@ -99,8 +99,8 @@
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "9.0.0",
-    "eslint-plugin-import": "2.29.0",
-    "eslint-plugin-jest": "27.6.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-jest": "27.6.3",
     "eslint-plugin-jsx-a11y": "6.7.1",
     "eslint-plugin-prettier": "5.0.1",
     "eslint-plugin-react": "7.33.2",
@@ -126,7 +126,7 @@
     "stylelint-config-prettier": "9.0.5",
     "stylelint-config-standard": "34.0.0",
     "stylelint-config-standard-scss": "11.0.0",
-    "stylelint-order": "6.0.3",
+    "stylelint-order": "6.0.4",
     "stylelint-scss": "5.3.0"
   },
   "nohoist": [
