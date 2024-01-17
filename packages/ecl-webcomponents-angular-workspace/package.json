@@ -32,7 +32,7 @@
     "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "@ecl/ecl-webcomponents": "0.12.0",
     "@ecl/ecl-webcomponents-angular": "0.12.0",
-    "browser-sync": "2.29.3",
+    "browser-sync": "3.0.2",
     "express": "4.18.2",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "3.2.0",
