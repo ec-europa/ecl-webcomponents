@@ -15,11 +15,11 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.11.0",
-    "@ecl/resources-ec-logo": "3.11.0",
-    "@ecl/resources-eu-logo": "3.11.0",
-    "@ecl/vanilla-component-button": "3.11.0",
-    "@ecl/vanilla-component-site-header": "3.11.0",
+    "@ecl/builder": "3.13.0",
+    "@ecl/resources-ec-logo": "3.13.0",
+    "@ecl/resources-eu-logo": "3.13.0",
+    "@ecl/vanilla-component-button": "3.13.0",
+    "@ecl/vanilla-component-site-header": "3.13.0",
     "cross-env": "7.0.3"
   },
   "repository": {

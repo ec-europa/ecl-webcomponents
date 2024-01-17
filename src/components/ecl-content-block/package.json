@@ -14,14 +14,14 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.11.0",
-    "@ecl/theme-ec": "3.11.0",
-    "@ecl/theme-eu": "3.11.0",
-    "@ecl/vanilla-component-content-block": "3.11.0",
-    "@ecl/vanilla-component-description-list": "3.11.0",
-    "@ecl/vanilla-component-icon": "3.11.0",
-    "@ecl/vanilla-component-label": "3.11.0",
-    "@ecl/vanilla-component-link": "3.11.0",
+    "@ecl/builder": "3.13.0",
+    "@ecl/theme-ec": "3.13.0",
+    "@ecl/theme-eu": "3.13.0",
+    "@ecl/vanilla-component-content-block": "3.13.0",
+    "@ecl/vanilla-component-description-list": "3.13.0",
+    "@ecl/vanilla-component-icon": "3.13.0",
+    "@ecl/vanilla-component-label": "3.13.0",
+    "@ecl/vanilla-component-link": "3.13.0",
     "cross-env": "7.0.3"
   },
   "repository": {
