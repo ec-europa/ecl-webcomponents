@@ -1,0 +1,48 @@
+diff --git a/node_modules/@ecl/vanilla-component-category-filter/category-filter.js b/node_modules/@ecl/vanilla-component-category-filter/category-filter.js
+index a1d3c09..d48617c 100644
+--- a/node_modules/@ecl/vanilla-component-category-filter/category-filter.js
++++ b/node_modules/@ecl/vanilla-component-category-filter/category-filter.js
+@@ -96,21 +96,24 @@ export class CategoryFilter {
+ 
+     const treeItem = e.target.closest('.ecl-category-filter__item');
+ 
++    const liItem = treeItem.closest('.ecl-category-filter__list-item');
++    const ariaExpanded = liItem.getAttribute('aria-expanded');
++
+     if (treeItem.classList.contains('ecl-category-filter__item--level-1')) {
+-      this.items.forEach((item) => {
++      this.items.forEach(function (item) {
+         if (item !== treeItem) {
+-          item.parentElement.setAttribute('aria-expanded', 'false');
++          liItem.setAttribute('aria-expanded', 'false');
+         }
+       });
+ 
+-      if (treeItem.parentElement.getAttribute('aria-expanded') === 'true') {
+-        treeItem.parentElement.setAttribute('aria-expanded', 'false');
+-        treeItem.classList.remove('ecl-category-filter__item--current');
++      if (ariaExpanded === 'true') {
++        liItem.setAttribute('aria-expanded', 'false');
++        liItem.classList.remove('ecl-category-filter__item--current');
+         return;
+       }
+     }
+ 
+-    this.items.forEach((item) => {
++    this.items.forEach(function (item) {
+       if (item === treeItem) {
+         item.classList.add('ecl-category-filter__item--current');
+       } else {
+@@ -118,11 +121,7 @@ export class CategoryFilter {
+       }
+     });
+ 
+-    const ariaExpanded = treeItem.parentElement.getAttribute('aria-expanded');
+-    treeItem.parentElement.setAttribute(
+-      'aria-expanded',
+-      ariaExpanded === 'false' ? 'true' : 'false',
+-    );
++    liItem.setAttribute('aria-expanded', ariaExpanded === 'false' ? 'true' : 'false');
+   }
+ }
+ 

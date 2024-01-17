@@ -1,0 +1,13 @@
+diff --git a/node_modules/@ecl/vanilla-component-carousel/carousel.js b/node_modules/@ecl/vanilla-component-carousel/carousel.js
+index f37281d..6b799b9 100644
+--- a/node_modules/@ecl/vanilla-component-carousel/carousel.js
++++ b/node_modules/@ecl/vanilla-component-carousel/carousel.js
+@@ -136,6 +136,8 @@ export class Carousel {
+     this.direction = getComputedStyle(this.element).direction;
+ 
+     this.slides = queryAll(this.slideClass, this.element);
++    this.slidesContainer.innerHTML = '';
++    this.slidesContainer.append(...this.slides);
+     this.total = this.slides.length;
+ 
+     // If only one slide, don't initialize carousel and hide controls

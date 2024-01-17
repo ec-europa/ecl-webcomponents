@@ -1,0 +1,29 @@
+diff --git a/node_modules/@ecl/vanilla-component-accordion/accordion.js b/node_modules/@ecl/vanilla-component-accordion/accordion.js
+index 08c5b16..cd41037 100644
+--- a/node_modules/@ecl/vanilla-component-accordion/accordion.js
++++ b/node_modules/@ecl/vanilla-component-accordion/accordion.js
+@@ -138,14 +138,21 @@ export class Accordion {
+     if (iconElement) {
+       const useNode = queryOne('use', iconElement);
+       if (useNode) {
+-        const originalXlinkHref = useNode.getAttribute('xlink:href');
+-        let newXlinkHref = '';
++        var originalXlinkHref = useNode.getAttribute('xlink:href');
++        if (!originalXlinkHref) {
++          originalXlinkHref = useNode.getAttribute('href');
++        }
++        var newXlinkHref = '';
+         if (isExpanded) {
+           newXlinkHref = originalXlinkHref.replace('minus', 'plus');
+         } else {
+           newXlinkHref = originalXlinkHref.replace('plus', 'minus');
+         }
+-        useNode.setAttribute('xlink:href', newXlinkHref);
++        if (useNode.getAttribute('xlink:href')) {
++          useNode.setAttribute('xlink:href', newXlinkHref);
++        } else {
++          useNode.setAttribute('href', newXlinkHref);
++        }
+       }
+     }
+ 
