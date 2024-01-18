@@ -57,6 +57,19 @@ export class EclSelect {
   }
 
   componentDidLoad() {
+    if (this.selectId) {
+      const group = this.el.closest('.ecl-form-group');
+      if (group) {
+        const label =  group.querySelector('.ecl-form-label');
+        if (label) {
+          label.setAttribute('id', `${this.selectId}-label`);
+        }
+        const helper = group.querySelector('.ecl-help-block');
+        if (helper) {
+          helper.setAttribute('id', `${this.selectId}-helper`);
+        }
+      }
+    }
     if (this.eclScript && this.multiple) {
       // Load the ECL vanilla js if not already present.
       const src = getAssetPath('./build/scripts/ecl-select-vanilla.js');
@@ -111,6 +124,7 @@ export class EclSelect {
     return (
       <div 
         class={this.getClass()}
+        role="application"
       >
         <select
           {...attributes}

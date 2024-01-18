@@ -108,6 +108,8 @@ const Template = args =>
   disabled=${args.disabled}
   invalid-text="This is an error message"
   theme="${args.theme}"
+  aria-label-optional="Aria label optional"
+  aria-label-required="Aria label required"
 >
   <ecl-file-upload
     type="file"

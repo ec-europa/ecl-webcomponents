@@ -231,9 +231,9 @@ exports[`ecl-site-header renders 1`] = `
                 <form class="ecl-search-form ecl-site-header__search sc-ecl-site-header-ec" data-ecl-search-form role="search">
                   <ecl-form-group style-class="sc-ecl-search-form-ec">
                     <!---->
-                    <fieldset class="ecl-form-group sc-ecl-search-form-ec">
+                    <div class="ecl-form-group sc-ecl-search-form-ec">
                       <ecl-input input-class="ecl-search-form__text-input sc-ecl-search-form-ec" placeholder="Placeholder text" style-class="ecl-search-form__text-input sc-ecl-search-form-ec" theme="ec" type="search" width="m"></ecl-input>
-                    </fieldset>
+                    </div>
                   </ecl-form-group>
                   <ecl-button aria-label="search" style-class="ecl-search-form__button sc-ecl-search-form-ec" theme="ec" variant="search">
                     search

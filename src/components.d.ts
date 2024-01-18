@@ -284,6 +284,8 @@ export namespace Components {
         "theme": string;
     }
     interface EclFormGroup {
+        "ariaLabelOptional": string;
+        "ariaLabelRequired": string;
         "helperId": string;
         "helperText": string;
         "invalid": boolean;
@@ -291,11 +293,13 @@ export namespace Components {
         "invalidText": string;
         "label": string;
         "labelClass": string;
+        "labelTag": string;
         "name": string;
         "optionalText": string;
         "required": boolean;
         "requiredText": string;
         "styleClass": string;
+        "tag": string;
         "theme": string;
     }
     interface EclGallery {
@@ -382,7 +386,6 @@ export namespace Components {
         "disabled": boolean;
         "eclScript": boolean;
         "hasChanged": boolean;
-        "helperId": string;
         "helperText": string;
         "inputClass": string;
         "inputId": string;
@@ -762,6 +765,7 @@ export namespace Components {
     interface EclTextarea {
         "disabled": boolean;
         "hasChanged": boolean;
+        "inputId": string;
         "invalid": boolean;
         "isFocused": boolean;
         "name": string;
@@ -1706,6 +1710,8 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclFormGroup {
+        "ariaLabelOptional"?: string;
+        "ariaLabelRequired"?: string;
         "helperId"?: string;
         "helperText"?: string;
         "invalid"?: boolean;
@@ -1713,11 +1719,13 @@ declare namespace LocalJSX {
         "invalidText"?: string;
         "label"?: string;
         "labelClass"?: string;
+        "labelTag"?: string;
         "name"?: string;
         "optionalText"?: string;
         "required"?: boolean;
         "requiredText"?: string;
         "styleClass"?: string;
+        "tag"?: string;
         "theme"?: string;
     }
     interface EclGallery {
@@ -1804,7 +1812,6 @@ declare namespace LocalJSX {
         "disabled"?: boolean;
         "eclScript"?: boolean;
         "hasChanged"?: boolean;
-        "helperId"?: string;
         "helperText"?: string;
         "inputClass"?: string;
         "inputId"?: string;
@@ -2196,6 +2203,7 @@ declare namespace LocalJSX {
     interface EclTextarea {
         "disabled"?: boolean;
         "hasChanged"?: boolean;
+        "inputId"?: string;
         "invalid"?: boolean;
         "isFocused"?: boolean;
         "name"?: string;

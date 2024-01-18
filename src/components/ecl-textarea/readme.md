@@ -11,6 +11,7 @@
 | ------------- | ------------- | ----------- | --------- | ----------- |
 | `disabled`    | `disabled`    |             | `boolean` | `false`     |
 | `hasChanged`  | `has-changed` |             | `boolean` | `false`     |
+| `inputId`     | `input-id`    |             | `string`  | `undefined` |
 | `invalid`     | `invalid`     |             | `boolean` | `false`     |
 | `isFocused`   | `is-focused`  |             | `boolean` | `false`     |
 | `name`        | `name`        |             | `string`  | `undefined` |

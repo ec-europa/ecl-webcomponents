@@ -1,4 +1,4 @@
-import { Component, h, Prop, State, Event, EventEmitter} from '@stencil/core';
+import { Component, h, Prop, Element, State, Event, EventEmitter} from '@stencil/core';
 
 @Component({
   tag: 'ecl-textarea',
@@ -10,6 +10,7 @@ import { Component, h, Prop, State, Event, EventEmitter} from '@stencil/core';
   scoped: true,
 })
 export class EclTextarea{
+  @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
   @Prop() disabled: boolean = false;
@@ -19,6 +20,7 @@ export class EclTextarea{
   @Prop() textareaId: string;
   @Prop() name: string;
   @Prop() rows: number = 4;
+  @Prop() inputId: string;
   @Prop() placeholder: string;
   @State() value: string;
   @Prop() hasChanged: boolean = false;
@@ -26,6 +28,23 @@ export class EclTextarea{
   @Event() inputFocus: EventEmitter<FocusEvent>;
   @Event() inputBlur: EventEmitter<FocusEvent>;
   @Event() inputChange: EventEmitter;
+
+  componentDidRender() {
+    if (this.textareaId) {
+      const group = this.el.closest('.ecl-form-group');
+      if (group) {
+        const label =  group.querySelector('.ecl-form-label');
+        if (label) {
+          label.setAttribute('for', this.textareaId);
+          label.setAttribute('id', `${this.textareaId}-label`);
+        }
+        const helper = group.querySelector('.ecl-help-block');
+        if (helper) {
+          helper.setAttribute('id', `${this.textareaId}-helper`);
+        }
+      }
+    }
+  }
 
   getClass(): string {
     const styleClasses = [

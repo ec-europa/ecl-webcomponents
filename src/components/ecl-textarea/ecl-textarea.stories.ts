@@ -111,7 +111,6 @@ const Template = (args) =>
   `<ecl-form-group
     theme="${args.theme}"
     helper-text="${args.helperText}"
-    helper-id="helper-id"
     invalid=${args.invalid}
     invalid-text="${args.invalidText}"
     invalid-icon="${args.invalidIcon}"
@@ -119,6 +118,8 @@ const Template = (args) =>
     label="${args.label}"
     required=${args.required}
     disabled="${args.disabled}"
+    aria-label-optional="Aria label optional"
+    aria-label-required="Aria label required"
   >
     <ecl-textarea
       theme="${args.theme}"

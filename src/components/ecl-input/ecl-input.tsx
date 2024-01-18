@@ -1,4 +1,4 @@
-import { Component, h, Prop, State, Event, EventEmitter } from '@stencil/core';
+import { Component, h, Prop, State, Event, Element, EventEmitter } from '@stencil/core';
 declare const ECL: any;
 
 @Component({
@@ -12,6 +12,7 @@ declare const ECL: any;
   assetsDirs: ['build'],
 })
 export class EclInput {
+  @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
   @Prop() inputClass: string;
@@ -19,7 +20,6 @@ export class EclInput {
   @Prop() disabled: boolean = false;
   @Prop() required: boolean = false;
   @Prop() invalid: boolean = false;
-  @Prop() helperId: string;
   @Prop() helperText: string;
   @Prop() placeholder: string;
   @Prop() width: string = 'm';
@@ -34,6 +34,27 @@ export class EclInput {
   @Event() inputFocus: EventEmitter<FocusEvent>;
   @Event() inputBlur: EventEmitter<FocusEvent>;
   @Event() inputChange: EventEmitter;
+
+  componentDidRender() {
+    if (this.inputId) {
+      const group = this.el.closest('.ecl-form-group');
+      if (group) {
+        const label =  group.querySelector('.ecl-form-label');
+        if (label) {
+          if (this.type !== 'radio' &&  this.type !== 'checkbox') {
+            label.setAttribute('for', this.inputId);
+          }
+          label.setAttribute('id', `${this.inputId}-label`);
+        }
+        const helper = group.querySelector('.ecl-help-block');
+        if (helper) {
+          if (this.type !== 'radio' &&  this.type !== 'checkbox') {
+            helper.setAttribute('id', `${this.inputId}-helper`);
+          }
+        }
+      }
+    }
+  }
 
   getClass(): string {
     const styleClasses = ['ecl-input', this.styleClass];
@@ -156,7 +177,7 @@ export class EclInput {
       { this.type === 'checkbox' && this.helperText ?
         <div
           class="ecl-checkbox__help"
-          id={this.helperId}
+          {...( this.inputId ? { 'id': `${this.inputId}-helper` } : {})}
         >
           {this.helperText}
         </div>
@@ -177,7 +198,7 @@ export class EclInput {
       { this.type === 'radio' && this.helperText ?
         <div 
           class="ecl-radio__help"
-          id={this.helperId}
+          {...( this.inputId ? { 'id': `${this.inputId}-helper` } : {})}
         >
           {this.helperText}
         </div>

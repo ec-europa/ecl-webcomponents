@@ -21,9 +21,13 @@ export class EclFormGroup {
   @Prop() invalidText: string;
   @Prop() helperText: string;
   @Prop() helperId: string;
+  @Prop() labelTag: string = 'label';
+  @Prop() tag: string = 'div';
   @Prop() name: string;
   @Prop() invalidIcon: string = 'error';
   @Prop() labelClass: string;
+  @Prop() ariaLabelOptional: string;
+  @Prop() ariaLabelRequired: string;
 
   getClass(): string {
     return [
@@ -34,22 +38,32 @@ export class EclFormGroup {
 
   render() {
     return (
-      <fieldset
+      <this.tag
         class={this.getClass()}
         aria-describedby={this.helperId}
       >
       { this.label ?
-        <legend
+        <this.labelTag
           class={`ecl-form-label ${this.invalid ? 'ecl-form-label--invalid' : ''} ${this.labelClass || ''}`}
+          {...(this.ariaLabelRequired ? { 'aria-label': this.ariaLabelRequired } : {})}
         >
           {this.label}
-      { this.required && this.requiredText ?
-        <span class="ecl-form-label__required">{this.requiredText}</span> : ''
-      }
+      {this.required && this.requiredText ? (
+        <span
+          class="ecl-form-label__required" 
+          {...(this.ariaLabelRequired ? { 'aria-label': this.ariaLabelRequired } : {})}
+        >
+          {this.requiredText}
+        </span>
+      ) : ''}
       { !this.required && this.optionalText ?
-        <span class="ecl-form-label__optional">{this.optionalText}</span> : ''
+        <span
+          class="ecl-form-label__optional"
+          {...(this.ariaLabelOptional ? { 'aria-label': this.ariaLabelOptional } : {})}
+        >
+          {this.optionalText}</span> : ''
       }
-        </legend> : ''
+        </this.labelTag> : ''
       }
       { this.helperText ? 
         <div
@@ -71,7 +85,7 @@ export class EclFormGroup {
         </div> : '' 
       }
         <slot></slot>
-      </fieldset>
+      </this.tag>
     )
   }
 }

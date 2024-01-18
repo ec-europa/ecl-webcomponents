@@ -3,14 +3,14 @@
 exports[`ecl-input renders 1`] = `
 <ecl-form-group helper-text="This is the form group helper text." label="Label" optional-text="(optional)" required="true" theme="ec">
   <!---->
-  <fieldset class="ecl-form-group">
-    <legend class="ecl-form-label">
+  <div class="ecl-form-group">
+    <label class="ecl-form-label" for="input-id" id="input-id-label">
       Label
       <span class="ecl-form-label__required">
         *
       </span>
-    </legend>
-    <div class="ecl-help-block">
+    </label>
+    <div class="ecl-help-block" id="input-id-helper">
       This is the form group helper text.
     </div>
     <ecl-input input-id="input-id" placeholder="placeholder" required="true" theme="ec" type="text" width="l">
@@ -18,6 +18,6 @@ exports[`ecl-input renders 1`] = `
         <input class="ecl-text-input ecl-text-input--l" id="input-id" placeholder="placeholder" required="" type="text">
       </div>
     </ecl-input>
-  </fieldset>
+  </div>
 </ecl-form-group>
 `;

@@ -51,6 +51,14 @@ const getArgTypes = () => {
         category: 'Content',
       },
     },
+    selectId: {
+      name: 'select-id',
+      type: { name: 'string' },
+      description: 'Id of the select',
+      table: {
+        category: 'Content',
+      },
+    },
     requiredText: {
       name: 'required-text',
       type: { name: 'string' },
@@ -153,7 +161,6 @@ export default {
 const Template = (args) => 
   `<ecl-form-group
     helper-text="${args.helperText}"
-    helper-id="helper-id"
     theme="${args.theme}"
     invalid=${args.invalid}
     invalid-text="${args.invalidText}"
@@ -162,6 +169,8 @@ const Template = (args) =>
     label="${args.label}"
     required=${args.required}
     disabled="${args.disabled}"
+    aria-label-optional="Aria label optional"
+    aria-label-required="Aria label required"
   >
     <ecl-select
       required=${args.required}
@@ -175,7 +184,9 @@ const Template = (args) =>
       multiple-all-text="${args.multipleAllText}"
       multiple-clear-all-text="${args.multipleClearAllText}"
       ecl-script=${args.multiple}
+      select-id="custom-select"
       name="ecl-select"
+      value="Italy"
       theme="${args.theme}"
       width=${args.width}
     > 
@@ -184,7 +195,7 @@ const Template = (args) =>
         <option value=2>France</option>
         <option value=3 disabled>Luxembourg</option>
         <option value=4>Germany</option>
-        <option value=5 selected>Bulgaria</option>
+        <option value=5>Bulgaria</option>
         <option value=6>Italy</option>
         <option value=7>Romania</option>
         <option value=8>Greece</option>

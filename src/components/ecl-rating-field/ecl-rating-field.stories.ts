@@ -60,7 +60,6 @@ export default {
 const Template = (args) => 
   `<ecl-form-group
     helper-text="${args.helperText}"
-    helper-id="helper-id"
     invalid-text="${args.invalidText}"
     invalid-icon="${args.invalidIcon}"
     optional-text="${args.optionalText}"
@@ -68,6 +67,8 @@ const Template = (args) =>
     required=${args.required}
     disabled="${args.disabled}"
     theme="${args.theme}"
+    aria-label-optional="Aria label optional"
+    aria-label-required="Aria label required"
   >
     <ecl-rating-field
       disabled=${args.disabled}
