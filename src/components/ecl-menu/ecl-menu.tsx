@@ -16,6 +16,7 @@ declare const ECL: any;
 export class EclMenu {
   @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
+  @Prop() menuId: string;
   @Prop() eclScript: boolean = false;
   @Prop() styleClass: string;
   @Prop() group: string = 'group1';
@@ -55,6 +56,17 @@ export class EclMenu {
     }
   }
 
+  componentDidRender() {
+    if (this.menuId) {
+      const items = this.el.querySelectorAll('.ecl-menu__item');
+      if (items) {
+        items.forEach((item, i) => {
+          item.id = `ecl-menu-item-${this.menuId}-${i}`;
+        });
+      }
+    }
+  }
+
   getAttrs() {
     const attrs = {
       'aria-expanded': 'false',
@@ -86,7 +98,11 @@ export class EclMenu {
             ></ecl-icon>
             {this.menuTitle}
           </a>
-          <section class="ecl-menu__inner" data-ecl-menu-inner>
+          <section
+            class="ecl-menu__inner"
+            data-ecl-menu-inner role="application"
+            aria-label={this.menuTitle}
+          >
             <header class="ecl-menu__inner-header">
               <button
                 class="ecl-menu__close ecl-button ecl-button--text"

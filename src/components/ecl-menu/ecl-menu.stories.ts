@@ -1,5 +1,6 @@
 const getArgs = () => {
   return {
+    menuId: 'menu-demo',
     menuTitle: 'Menu',
     menuLink: '/example.html',
     backMenu: 'Back',
@@ -12,41 +13,46 @@ const getArgs = () => {
 
 const getArgTypes = () => {
   return {
-    menuTitle: {
-      name: 'Title of the menu',
+    menuId: {
+      name: 'menu-id',
       type: { name: 'string' },
-      description: '',
+      description: 'Id of the menu',
+    },
+    menuTitle: {
+      name: 'menu-title',
+      type: { name: 'string' },
+      description: 'Title of the menu',
     },
     menuLink: {
-      name: 'Menu link',
+      name: 'menu-link',
       type: { name: 'string' },
-      description: '',
+      description: 'Link for the menu',
     },
     closeMenu: {
-      name: 'Label of the close button',
+      name: 'close-menu',
       type: { name: 'string' },
-      description: '',
+      description: 'Label for the close button',
     },
     backMenu: {
-      name: 'Label of the back button',
+      name: 'back-menu',
       type: { name: 'string' },
-      description: '',
+      description: 'Label of the back button',
     },
     previousLabel: {
-      name: 'Label of the back button (slider)',
+      name: 'previous-label',
       type: { name: 'string' },
-      description: '',
+      description: 'Label of the back button (slider)',
     },
     nextLabel: {
-      name: 'Label of the next button (slider)',
+      name: 'next-label',
       type: { name: 'string' },
-      description: '',
+      description: 'Label of the next button (slider)',
     },
     maxLines: {
-      name: 'Allowed number of text lines per item',
+      name: 'max-lines',
       type: { name: 'select' },
       options: [1, 2, 3, 4],
-      description: 'You can limit the number of lines for item when it wraps',
+      description: 'Allowed number of text lines per item',
     },    
   };
 };
@@ -62,6 +68,7 @@ const Template = args =>
     back-label="${args.backMenu}"
     menu-link="${args.menuLink}"
     ecl-script
+    menu-id="${args.menuId}"
     menu-title="${args.menuTitle}"
     previousLabel="${args.previousLabel}"
     nextLabel="${args.nextLabel}"

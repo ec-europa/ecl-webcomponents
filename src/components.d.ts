@@ -465,6 +465,7 @@ export namespace Components {
         "eclScript": boolean;
         "group": string;
         "maxLines": number;
+        "menuId": string;
         "menuLink": string;
         "menuTitle": string;
         "nextLabel": string;
@@ -1894,6 +1895,7 @@ declare namespace LocalJSX {
         "eclScript"?: boolean;
         "group"?: string;
         "maxLines"?: number;
+        "menuId"?: string;
         "menuLink"?: string;
         "menuTitle"?: string;
         "nextLabel"?: string;

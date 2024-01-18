@@ -14,7 +14,7 @@ exports[`ecl-menu renders 1`] = `
         </ecl-icon>
         Menu
       </a>
-      <section class="ecl-menu__inner" data-ecl-menu-inner>
+      <section aria-label="Menu" class="ecl-menu__inner" data-ecl-menu-inner role="application">
         <header class="ecl-menu__inner-header">
           <button class="ecl-button ecl-button--text ecl-menu__close" data-ecl-menu-close type="submit">
             <span class="ecl-button__container ecl-menu__close-container">

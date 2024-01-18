@@ -525,6 +525,7 @@ const TemplateHarmonised = (args) =>
   ></ecl-language-item>
   <ecl-menu
     slot="menu"
+    menu-id="site-header-menu"
     theme="${args.theme}"
     close-label="Close"
     back-label="Back"
