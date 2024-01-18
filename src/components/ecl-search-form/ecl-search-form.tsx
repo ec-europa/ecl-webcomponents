@@ -20,6 +20,7 @@ export class EclSearchForm {
   @Prop() helperText: string;
   @Prop() placeholder: string;
   @Prop() inputId: string;
+  @Prop() inputDefaultValue: string;
   @Prop() width: string = 'm';
   @Prop() label: string;
   @Prop() type: string;
@@ -58,6 +59,7 @@ export class EclSearchForm {
             invalid={this.invalid}
             width="m"
             placeholder={this.placeholder}
+            default-value={this.inputDefaultValue}
           >
           </ecl-input>
         </ecl-form-group>

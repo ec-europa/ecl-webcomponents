@@ -7,24 +7,25 @@
 
 ## Properties
 
-| Property          | Attribute           | Description | Type      | Default     |
-| ----------------- | ------------------- | ----------- | --------- | ----------- |
-| `buttonAriaLabel` | `button-aria-label` |             | `string`  | `undefined` |
-| `buttonLabel`     | `button-label`      |             | `string`  | `undefined` |
-| `disabled`        | `disabled`          |             | `boolean` | `false`     |
-| `helperId`        | `helper-id`         |             | `string`  | `undefined` |
-| `helperText`      | `helper-text`       |             | `string`  | `undefined` |
-| `inputId`         | `input-id`          |             | `string`  | `undefined` |
-| `invalid`         | `invalid`           |             | `boolean` | `false`     |
-| `invalidText`     | `invalid-text`      |             | `string`  | `undefined` |
-| `label`           | `label`             |             | `string`  | `undefined` |
-| `name`            | `name`              |             | `string`  | `undefined` |
-| `placeholder`     | `placeholder`       |             | `string`  | `undefined` |
-| `required`        | `required`          |             | `boolean` | `false`     |
-| `styleClass`      | `style-class`       |             | `string`  | `undefined` |
-| `theme`           | `theme`             |             | `string`  | `'ec'`      |
-| `type`            | `type`              |             | `string`  | `undefined` |
-| `width`           | `width`             |             | `string`  | `'m'`       |
+| Property            | Attribute             | Description | Type      | Default     |
+| ------------------- | --------------------- | ----------- | --------- | ----------- |
+| `buttonAriaLabel`   | `button-aria-label`   |             | `string`  | `undefined` |
+| `buttonLabel`       | `button-label`        |             | `string`  | `undefined` |
+| `disabled`          | `disabled`            |             | `boolean` | `false`     |
+| `helperId`          | `helper-id`           |             | `string`  | `undefined` |
+| `helperText`        | `helper-text`         |             | `string`  | `undefined` |
+| `inputDefaultValue` | `input-default-value` |             | `string`  | `undefined` |
+| `inputId`           | `input-id`            |             | `string`  | `undefined` |
+| `invalid`           | `invalid`             |             | `boolean` | `false`     |
+| `invalidText`       | `invalid-text`        |             | `string`  | `undefined` |
+| `label`             | `label`               |             | `string`  | `undefined` |
+| `name`              | `name`                |             | `string`  | `undefined` |
+| `placeholder`       | `placeholder`         |             | `string`  | `undefined` |
+| `required`          | `required`            |             | `boolean` | `false`     |
+| `styleClass`        | `style-class`         |             | `string`  | `undefined` |
+| `theme`             | `theme`               |             | `string`  | `'ec'`      |
+| `type`              | `type`                |             | `string`  | `undefined` |
+| `width`             | `width`               |             | `string`  | `'m'`       |
 
 
 ## Dependencies

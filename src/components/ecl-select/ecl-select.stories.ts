@@ -186,7 +186,6 @@ const Template = (args) =>
       ecl-script=${args.multiple}
       select-id="custom-select"
       name="ecl-select"
-      value="Italy"
       theme="${args.theme}"
       width=${args.width}
     > 
@@ -195,7 +194,7 @@ const Template = (args) =>
         <option value=2>France</option>
         <option value=3 disabled>Luxembourg</option>
         <option value=4>Germany</option>
-        <option value=5>Bulgaria</option>
+        <option value=5 selected>Bulgaria</option>
         <option value=6>Italy</option>
         <option value=7>Romania</option>
         <option value=8>Greece</option>
@@ -204,7 +203,7 @@ const Template = (args) =>
       </optgroup>
       <optgroup label="Non European countries">
         <option value=11>China</option>
-        <option value=11>Turkey</option>
+        <option value=12>Turkey</option>
       </optgroup>
     </ecl-select>
   </ecl-form-group>`;

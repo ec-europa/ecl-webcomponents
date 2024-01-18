@@ -97,10 +97,6 @@ export class EclRange {
     }
   }
 
-  handleInput(event) {
-    this.value = event.target.value;
-  }
-
   handleFocus(event) {
     this.inputFocus.emit(event);
     this.isFocused = true;
@@ -142,7 +138,7 @@ export class EclRange {
       >
         <input
           {...attributes}
-          onInput={ev => this.handleInput(ev)}
+          onInput={ev => this.handleChange(ev)}
           onFocus={ev => this.handleFocus(ev)}
           onBlur={ev => this.handleBlur(ev)}
           onChange={ev => this.handleChange(ev)}

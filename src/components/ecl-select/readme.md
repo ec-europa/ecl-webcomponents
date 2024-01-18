@@ -12,8 +12,8 @@
 | `disabled`                    | `disabled`                        |             | `boolean` | `false`     |
 | `eclScript`                   | `ecl-script`                      |             | `boolean` | `false`     |
 | `hasChanged`                  | `has-changed`                     |             | `boolean` | `false`     |
+| `inputValue`                  | `input-value`                     |             | `string`  | `undefined` |
 | `invalid`                     | `invalid`                         |             | `boolean` | `false`     |
-| `isFocused`                   | `is-focused`                      |             | `boolean` | `false`     |
 | `multiple`                    | `multiple`                        |             | `boolean` | `false`     |
 | `multipleAllText`             | `multiple-all-text`               |             | `string`  | `undefined` |
 | `multipleClearAllText`        | `multiple-clear-all-text`         |             | `string`  | `undefined` |

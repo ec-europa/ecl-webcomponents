@@ -648,6 +648,7 @@ export namespace Components {
         "disabled": boolean;
         "helperId": string;
         "helperText": string;
+        "inputDefaultValue": string;
         "inputId": string;
         "invalid": boolean;
         "invalidText": string;
@@ -664,8 +665,8 @@ export namespace Components {
         "disabled": boolean;
         "eclScript": boolean;
         "hasChanged": boolean;
+        "inputValue": string;
         "invalid": boolean;
-        "isFocused": boolean;
         "multiple": boolean;
         "multipleAllText": string;
         "multipleClearAllText": string;
@@ -764,6 +765,7 @@ export namespace Components {
         "theme": string;
     }
     interface EclTextarea {
+        "defaultValue": string;
         "disabled": boolean;
         "hasChanged": boolean;
         "inputId": string;
@@ -2084,6 +2086,7 @@ declare namespace LocalJSX {
         "disabled"?: boolean;
         "helperId"?: string;
         "helperText"?: string;
+        "inputDefaultValue"?: string;
         "inputId"?: string;
         "invalid"?: boolean;
         "invalidText"?: string;
@@ -2100,8 +2103,8 @@ declare namespace LocalJSX {
         "disabled"?: boolean;
         "eclScript"?: boolean;
         "hasChanged"?: boolean;
+        "inputValue"?: string;
         "invalid"?: boolean;
-        "isFocused"?: boolean;
         "multiple"?: boolean;
         "multipleAllText"?: string;
         "multipleClearAllText"?: string;
@@ -2203,6 +2206,7 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclTextarea {
+        "defaultValue"?: string;
         "disabled"?: boolean;
         "hasChanged"?: boolean;
         "inputId"?: string;
