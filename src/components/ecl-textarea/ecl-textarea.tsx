@@ -1,4 +1,4 @@
-import { Component, h, Prop, State, Event, EventEmitter} from '@stencil/core';
+import { Component, h, Prop, Element, Event, EventEmitter} from '@stencil/core';
 
 @Component({
   tag: 'ecl-textarea',
@@ -10,6 +10,7 @@ import { Component, h, Prop, State, Event, EventEmitter} from '@stencil/core';
   scoped: true,
 })
 export class EclTextarea{
+  @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
   @Prop() disabled: boolean = false;
@@ -19,13 +20,31 @@ export class EclTextarea{
   @Prop() textareaId: string;
   @Prop() name: string;
   @Prop() rows: number = 4;
+  @Prop() inputId: string;
   @Prop() placeholder: string;
-  @State() value: string;
+  @Prop() defaultValue: string;
   @Prop() hasChanged: boolean = false;
   @Prop() isFocused: boolean = false;
   @Event() inputFocus: EventEmitter<FocusEvent>;
   @Event() inputBlur: EventEmitter<FocusEvent>;
   @Event() inputChange: EventEmitter;
+
+  componentDidRender() {
+    if (this.textareaId) {
+      const group = this.el.closest('.ecl-form-group');
+      if (group) {
+        const label =  group.querySelector('.ecl-form-label');
+        if (label) {
+          label.setAttribute('for', this.textareaId);
+          label.setAttribute('id', `${this.textareaId}-label`);
+        }
+        const helper = group.querySelector('.ecl-help-block');
+        if (helper) {
+          helper.setAttribute('id', `${this.textareaId}-helper`);
+        }
+      }
+    }
+  }
 
   getClass(): string {
     const styleClasses = [
@@ -42,10 +61,6 @@ export class EclTextarea{
     }
 
     return styleClasses.join(' ');
-  }
-
-  handleInput(event) {
-    this.value = event.target.value;
   }
 
   handleFocus(event) {
@@ -72,12 +87,13 @@ export class EclTextarea{
       disabled: this.disabled,
       placeholder: this.placeholder,
       rows: this.rows,
+      value: this.defaultValue,
     };
 
     return (
       <textarea
         {...attributes}
-        onInput={(event) => this.handleChange(event)}
+        onInput={ev => this.handleChange(ev)}
         onFocus={ev => this.handleFocus(ev)}
         onBlur={ev => this.handleBlur(ev)}
         onChange={ev => this.handleChange(ev)}

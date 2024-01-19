@@ -51,6 +51,20 @@ export class EclFileUpload {
   }
 
   componentDidRender() {
+    if (this.inputId) {
+      const group = this.el.closest('.ecl-form-group');
+      if (group) {
+        const label =  group.querySelector('.ecl-form-label');
+        if (label) {
+          label.setAttribute('for', this.inputId);
+          label.setAttribute('id', `${this.inputId}-label`);
+        }
+        const helper = group.querySelector('.ecl-help-block');
+        if (helper) {
+          helper.setAttribute('id', `${this.inputId}-helper`);
+        }
+      }
+    }
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-file-upload-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {

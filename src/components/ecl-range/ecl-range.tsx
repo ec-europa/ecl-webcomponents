@@ -65,6 +65,20 @@ export class EclRange {
   }
 
   componentDidRender() {
+    if (this.inputId) {
+      const group = this.el.closest('.ecl-form-group');
+      if (group) {
+        const label =  group.querySelector('.ecl-form-label');
+        if (label) {
+          label.setAttribute('for', this.inputId);
+          label.setAttribute('id', `${this.inputId}-label`);
+        }
+        const helper = group.querySelector('.ecl-help-block');
+        if (helper) {
+          helper.setAttribute('id', `${this.inputId}-helper`);
+        }
+      }
+    }
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-range-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
@@ -81,10 +95,6 @@ export class EclRange {
       };
       document.body.appendChild(script);
     }
-  }
-
-  handleInput(event) {
-    this.value = event.target.value;
   }
 
   handleFocus(event) {
@@ -128,7 +138,7 @@ export class EclRange {
       >
         <input
           {...attributes}
-          onInput={ev => this.handleInput(ev)}
+          onInput={ev => this.handleChange(ev)}
           onFocus={ev => this.handleFocus(ev)}
           onBlur={ev => this.handleBlur(ev)}
           onChange={ev => this.handleChange(ev)}

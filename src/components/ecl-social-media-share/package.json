@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-social-media-share",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "ECL Social Media Share",
   "main": "ecl-social-media-share.tsx",
   "private": true,
@@ -14,11 +14,11 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.11.0",
-    "@ecl/resources-social-media-icons": "3.11.0",
-    "@ecl/specs-component-icon": "3.11.0",
-    "@ecl/vanilla-component-icon": "3.11.0",
-    "@ecl/vanilla-component-social-media-share": "3.11.0",
+    "@ecl/builder": "3.13.0",
+    "@ecl/resources-social-media-icons": "3.13.0",
+    "@ecl/specs-component-icon": "3.13.0",
+    "@ecl/vanilla-component-icon": "3.13.0",
+    "@ecl/vanilla-component-social-media-share": "3.13.0",
     "cross-env": "7.0.3"
   },
   "repository": {

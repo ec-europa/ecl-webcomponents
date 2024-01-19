@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-input",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "ECL Select",
   "main": "ecl-input.tsx",
   "private": true,
@@ -14,14 +14,14 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.11.0",
-    "@ecl/vanilla-component-button": "3.11.0",
-    "@ecl/vanilla-component-checkbox": "3.11.0",
-    "@ecl/vanilla-component-datepicker": "3.11.0",
-    "@ecl/vanilla-component-file-upload": "3.11.0",
-    "@ecl/vanilla-component-radio": "3.11.0",
-    "@ecl/vanilla-component-search-form": "3.11.0",
-    "@ecl/vanilla-component-text-input": "3.11.0",
+    "@ecl/builder": "3.13.0",
+    "@ecl/vanilla-component-button": "3.13.0",
+    "@ecl/vanilla-component-checkbox": "3.13.0",
+    "@ecl/vanilla-component-datepicker": "3.13.0",
+    "@ecl/vanilla-component-file-upload": "3.13.0",
+    "@ecl/vanilla-component-radio": "3.13.0",
+    "@ecl/vanilla-component-search-form": "3.13.0",
+    "@ecl/vanilla-component-text-input": "3.13.0",
     "cross-env": "7.0.3"
   },
   "repository": {

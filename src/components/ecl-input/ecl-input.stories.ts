@@ -106,6 +106,10 @@ const Template = args =>
   disabled=${args.disabled}
   invalid-text="This is an error message"
   theme="${args.theme}"
+  aria-label-optional="Aria label optional"
+  ${args.type === 'checkbox' || args.type === 'radio' ? `tag="${args.type === 'checkbox' || args.type === 'radio' ? 'fieldset' : ''}"` : ''}
+  ${args.type === 'checkbox' || args.type === 'radio' ? `label-tag="${args.type === 'checkbox' || args.type === 'radio' ? 'legend' : ''}"` : ''}
+  aria-label-required="Aria label required"
 >
   <ecl-input
     type="${args.type}"

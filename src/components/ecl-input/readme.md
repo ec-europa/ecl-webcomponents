@@ -13,7 +13,6 @@
 | `disabled`     | `disabled`      |             | `boolean` | `false`     |
 | `eclScript`    | `ecl-script`    |             | `boolean` | `false`     |
 | `hasChanged`   | `has-changed`   |             | `boolean` | `false`     |
-| `helperId`     | `helper-id`     |             | `string`  | `undefined` |
 | `helperText`   | `helper-text`   |             | `string`  | `undefined` |
 | `inputClass`   | `input-class`   |             | `string`  | `undefined` |
 | `inputId`      | `input-id`      |             | `string`  | `undefined` |
@@ -31,11 +30,11 @@
 
 ## Events
 
-| Event         | Description | Type                      |
-| ------------- | ----------- | ------------------------- |
-| `inputBlur`   |             | `CustomEvent<FocusEvent>` |
-| `inputChange` |             | `CustomEvent<any>`        |
-| `inputFocus`  |             | `CustomEvent<FocusEvent>` |
+| Event         | Description | Type                                            |
+| ------------- | ----------- | ----------------------------------------------- |
+| `inputBlur`   |             | `CustomEvent<FocusEvent>`                       |
+| `inputChange` |             | `CustomEvent<{ type: string; value: string; }>` |
+| `inputFocus`  |             | `CustomEvent<FocusEvent>`                       |
 
 
 ## Dependencies

@@ -58,6 +58,21 @@ export class EclDatepicker {
   }
 
   componentDidRender() {
+    if (this.inputId) {
+      const group = this.el.closest('.ecl-form-group');
+      if (group) {
+        const label = group.querySelector('.ecl-form-label');
+        if (label) {
+          label.setAttribute('for', this.inputId);
+          label.setAttribute('id', `${this.inputId}-label`);
+        }
+        const helper = group.querySelector('.ecl-help-block');
+        if (helper) {
+          helper.setAttribute('id', `${this.inputId}-helper`);
+        }
+      }
+    }
+  
     const momentSrc = 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js';
 
     if (document.querySelector(`script[src="${momentSrc}"]`)) {

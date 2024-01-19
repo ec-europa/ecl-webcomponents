@@ -3,19 +3,19 @@
 exports[`ecl-select renders 1`] = `
 <ecl-form-group helper-id="helper-id" helper-text="Helper text" label="Select input field" required="">
   <!---->
-  <fieldset aria-describedby="helper-id" class="ecl-form-group">
-    <legend class="ecl-form-label">
+  <div aria-describedby="helper-id" class="ecl-form-group">
+    <label class="ecl-form-label">
       Select input field
       <span class="ecl-form-label__required">
         *
       </span>
-    </legend>
+    </label>
     <div class="ecl-help-block">
       Helper text
     </div>
     <ecl-select name="ecl-select" required="" width="s">
       <!---->
-      <div class="ecl-select__container ecl-select__container--s">
+      <div class="ecl-select__container ecl-select__container--s" role="application">
         <select class="ecl-select" name="ecl-select" required="">
           <option value="1">
             Belgium
@@ -57,6 +57,6 @@ exports[`ecl-select renders 1`] = `
         </div>
       </div>
     </ecl-select>
-  </fieldset>
+  </div>
 </ecl-form-group>
 `;

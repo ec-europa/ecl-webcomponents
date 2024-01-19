@@ -3,10 +3,10 @@
 exports[`ecl-textarea renders 1`] = `
 <ecl-form-group helper-id="helper-id" helper-text="Helper text" label="Select input field">
   <!---->
-  <fieldset aria-describedby="helper-id" class="ecl-form-group">
-    <legend class="ecl-form-label">
+  <div aria-describedby="helper-id" class="ecl-form-group">
+    <label class="ecl-form-label">
       Select input field
-    </legend>
+    </label>
     <div class="ecl-help-block">
       Helper text
     </div>
@@ -14,6 +14,6 @@ exports[`ecl-textarea renders 1`] = `
       <!----><textarea class="ecl-text-area ecl-text-area--l" name="ecl-textarea" required="" rows="4">
         </textarea>
     </ecl-textarea>
-  </fieldset>
+  </div>
 </ecl-form-group>
 `;

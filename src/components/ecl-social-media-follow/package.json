@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-social-media-follow",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "ECL Social Media Follow",
   "main": "ecl-social-media-follow.tsx",
   "private": true,
@@ -14,9 +14,9 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "3.11.0",
-    "@ecl/vanilla-component-social-media-follow": "3.11.0",
-    "@ecl/vanilla-component-social-media-share": "3.11.0",
+    "@ecl/builder": "3.13.0",
+    "@ecl/vanilla-component-social-media-follow": "3.13.0",
+    "@ecl/vanilla-component-social-media-share": "3.13.0",
     "cross-env": "7.0.3"
   },
   "repository": {

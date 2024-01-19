@@ -97,6 +97,8 @@ const Template = args =>
     disabled=${args.disabled}
     invalid-text="This is the error message"
     theme="${args.theme}"
+    aria-label-optional="Aria label optional"
+    aria-label-required="Aria label required"
   >
     <ecl-datepicker
       theme="${args.theme}"

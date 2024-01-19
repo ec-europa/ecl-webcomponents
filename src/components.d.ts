@@ -284,6 +284,8 @@ export namespace Components {
         "theme": string;
     }
     interface EclFormGroup {
+        "ariaLabelOptional": string;
+        "ariaLabelRequired": string;
         "helperId": string;
         "helperText": string;
         "invalid": boolean;
@@ -291,11 +293,13 @@ export namespace Components {
         "invalidText": string;
         "label": string;
         "labelClass": string;
+        "labelTag": string;
         "name": string;
         "optionalText": string;
         "required": boolean;
         "requiredText": string;
         "styleClass": string;
+        "tag": string;
         "theme": string;
     }
     interface EclGallery {
@@ -382,7 +386,6 @@ export namespace Components {
         "disabled": boolean;
         "eclScript": boolean;
         "hasChanged": boolean;
-        "helperId": string;
         "helperText": string;
         "inputClass": string;
         "inputId": string;
@@ -462,6 +465,7 @@ export namespace Components {
         "eclScript": boolean;
         "group": string;
         "maxLines": number;
+        "menuId": string;
         "menuLink": string;
         "menuTitle": string;
         "nextLabel": string;
@@ -644,6 +648,7 @@ export namespace Components {
         "disabled": boolean;
         "helperId": string;
         "helperText": string;
+        "inputDefaultValue": string;
         "inputId": string;
         "invalid": boolean;
         "invalidText": string;
@@ -660,8 +665,8 @@ export namespace Components {
         "disabled": boolean;
         "eclScript": boolean;
         "hasChanged": boolean;
+        "inputValue": string;
         "invalid": boolean;
-        "isFocused": boolean;
         "multiple": boolean;
         "multipleAllText": string;
         "multipleClearAllText": string;
@@ -760,8 +765,10 @@ export namespace Components {
         "theme": string;
     }
     interface EclTextarea {
+        "defaultValue": string;
         "disabled": boolean;
         "hasChanged": boolean;
+        "inputId": string;
         "invalid": boolean;
         "isFocused": boolean;
         "name": string;
@@ -1049,7 +1056,7 @@ declare global {
     interface HTMLEclInputElementEventMap {
         "inputFocus": FocusEvent;
         "inputBlur": FocusEvent;
-        "inputChange": any;
+        "inputChange": { type: string; value: string };
     }
     interface HTMLEclInputElement extends Components.EclInput, HTMLStencilElement {
         addEventListener<K extends keyof HTMLEclInputElementEventMap>(type: K, listener: (this: HTMLEclInputElement, ev: EclInputCustomEvent<HTMLEclInputElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
@@ -1706,6 +1713,8 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclFormGroup {
+        "ariaLabelOptional"?: string;
+        "ariaLabelRequired"?: string;
         "helperId"?: string;
         "helperText"?: string;
         "invalid"?: boolean;
@@ -1713,11 +1722,13 @@ declare namespace LocalJSX {
         "invalidText"?: string;
         "label"?: string;
         "labelClass"?: string;
+        "labelTag"?: string;
         "name"?: string;
         "optionalText"?: string;
         "required"?: boolean;
         "requiredText"?: string;
         "styleClass"?: string;
+        "tag"?: string;
         "theme"?: string;
     }
     interface EclGallery {
@@ -1804,7 +1815,6 @@ declare namespace LocalJSX {
         "disabled"?: boolean;
         "eclScript"?: boolean;
         "hasChanged"?: boolean;
-        "helperId"?: string;
         "helperText"?: string;
         "inputClass"?: string;
         "inputId"?: string;
@@ -1813,7 +1823,7 @@ declare namespace LocalJSX {
         "label"?: string;
         "name"?: string;
         "onInputBlur"?: (event: EclInputCustomEvent<FocusEvent>) => void;
-        "onInputChange"?: (event: EclInputCustomEvent<any>) => void;
+        "onInputChange"?: (event: EclInputCustomEvent<{ type: string; value: string }>) => void;
         "onInputFocus"?: (event: EclInputCustomEvent<FocusEvent>) => void;
         "placeholder"?: string;
         "required"?: boolean;
@@ -1887,6 +1897,7 @@ declare namespace LocalJSX {
         "eclScript"?: boolean;
         "group"?: string;
         "maxLines"?: number;
+        "menuId"?: string;
         "menuLink"?: string;
         "menuTitle"?: string;
         "nextLabel"?: string;
@@ -2075,6 +2086,7 @@ declare namespace LocalJSX {
         "disabled"?: boolean;
         "helperId"?: string;
         "helperText"?: string;
+        "inputDefaultValue"?: string;
         "inputId"?: string;
         "invalid"?: boolean;
         "invalidText"?: string;
@@ -2091,8 +2103,8 @@ declare namespace LocalJSX {
         "disabled"?: boolean;
         "eclScript"?: boolean;
         "hasChanged"?: boolean;
+        "inputValue"?: string;
         "invalid"?: boolean;
-        "isFocused"?: boolean;
         "multiple"?: boolean;
         "multipleAllText"?: string;
         "multipleClearAllText"?: string;
@@ -2194,8 +2206,10 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclTextarea {
+        "defaultValue"?: string;
         "disabled"?: boolean;
         "hasChanged"?: boolean;
+        "inputId"?: string;
         "invalid"?: boolean;
         "isFocused"?: boolean;
         "name"?: string;

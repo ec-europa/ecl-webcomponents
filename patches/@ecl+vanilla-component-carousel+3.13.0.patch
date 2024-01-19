@@ -1,8 +1,8 @@
 diff --git a/node_modules/@ecl/vanilla-component-carousel/carousel.js b/node_modules/@ecl/vanilla-component-carousel/carousel.js
-index 3e1dc99..08cdab4 100644
+index f37281d..6b799b9 100644
 --- a/node_modules/@ecl/vanilla-component-carousel/carousel.js
 +++ b/node_modules/@ecl/vanilla-component-carousel/carousel.js
-@@ -131,6 +131,8 @@ export class Carousel {
+@@ -136,6 +136,8 @@ export class Carousel {
      this.direction = getComputedStyle(this.element).direction;
  
      this.slides = queryAll(this.slideClass, this.element);

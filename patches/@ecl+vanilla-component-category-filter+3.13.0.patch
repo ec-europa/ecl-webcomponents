@@ -1,8 +1,8 @@
 diff --git a/node_modules/@ecl/vanilla-component-category-filter/category-filter.js b/node_modules/@ecl/vanilla-component-category-filter/category-filter.js
-index 76b4353..ed7da7d 100644
+index a1d3c09..d48617c 100644
 --- a/node_modules/@ecl/vanilla-component-category-filter/category-filter.js
 +++ b/node_modules/@ecl/vanilla-component-category-filter/category-filter.js
-@@ -90,21 +90,24 @@ export class CategoryFilter {
+@@ -96,21 +96,24 @@ export class CategoryFilter {
  
      const treeItem = e.target.closest('.ecl-category-filter__item');
  
@@ -33,7 +33,7 @@ index 76b4353..ed7da7d 100644
        if (item === treeItem) {
          item.classList.add('ecl-category-filter__item--current');
        } else {
-@@ -112,11 +115,7 @@ export class CategoryFilter {
+@@ -118,11 +121,7 @@ export class CategoryFilter {
        }
      });
  

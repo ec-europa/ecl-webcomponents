@@ -3,14 +3,14 @@
 exports[`ecl-range renders 1`] = `
 <ecl-form-group helper-text="This is the input helper text" label="Label" required="" theme="ec">
   <!---->
-  <fieldset class="ecl-form-group">
-    <legend class="ecl-form-label">
+  <div class="ecl-form-group">
+    <label class="ecl-form-label" for="input-id" id="input-id-label">
       Label
       <span class="ecl-form-label__required">
         *
       </span>
-    </legend>
-    <div class="ecl-help-block">
+    </label>
+    <div class="ecl-help-block" id="input-id-helper">
       This is the input helper text
     </div>
     <ecl-range default-value="15" ecl-script="" input-id="input-id" label="Range slider" max="30" min="1" name="input-range" required="" step="1" theme="ec" value-label="Value: " width="m">
@@ -22,6 +22,6 @@ exports[`ecl-range renders 1`] = `
         </div>
       </div>
     </ecl-range>
-  </fieldset>
+  </div>
 </ecl-form-group>
 `;

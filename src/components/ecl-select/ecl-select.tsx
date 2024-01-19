@@ -1,4 +1,4 @@
-import { Component, h, Prop, Element, State, Event, EventEmitter } from '@stencil/core';
+import { Component, h, Prop, State, Element, Event, EventEmitter } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
 declare const ECL: any;
 
@@ -31,13 +31,13 @@ export class EclSelect {
   @Prop() multipleAllText: string;
   @Prop() multipleClearAllText: string;
   @Prop() multipleCloseText: string;
-  @State() value: string;
+  @Prop() inputValue: string;
+  @State() selectValue: string[];
   @Prop() hasChanged: boolean = false;
-  @Prop() isFocused: boolean = false;
+  @State() isFocused: boolean = false;
   @Event() inputChange: EventEmitter;
   @Event() inputFocus: EventEmitter<FocusEvent>;
   @Event() inputBlur: EventEmitter<FocusEvent>;
-
 
   getClass(): string {
     const styleClasses = [
@@ -56,7 +56,24 @@ export class EclSelect {
     return styleClasses.join(' ');
   }
 
+  componentWillLoad() {
+    this.selectValue = JSON.parse(this.inputValue || '[]');
+  }
+
   componentDidLoad() {
+    if (this.selectId) {
+      const group = this.el.closest('.ecl-form-group');
+      if (group) {
+        const label =  group.querySelector('.ecl-form-label');
+        if (label) {
+          label.setAttribute('id', `${this.selectId}-label`);
+        }
+        const helper = group.querySelector('.ecl-help-block');
+        if (helper) {
+          helper.setAttribute('id', `${this.selectId}-helper`);
+        }
+      }
+    }
     if (this.eclScript && this.multiple) {
       // Load the ECL vanilla js if not already present.
       const src = getAssetPath('./build/scripts/ecl-select-vanilla.js');
@@ -72,6 +89,10 @@ export class EclSelect {
 
       document.body.appendChild(script);
     }
+
+    if (this.inputValue) {
+      this.handleSelection();
+    }
   }
 
   handleFocus(event) {
@@ -80,8 +101,18 @@ export class EclSelect {
   }
 
   handleChange(event) {
-    const value = (event.target as HTMLInputElement).value;
-    this.inputChange.emit(value);
+    const selectElement = event.target as HTMLSelectElement;
+    const selectedOptions = Array.from(selectElement.selectedOptions).map(option => option.value);
+    this.selectValue = selectedOptions;
+    this.inputChange.emit(this.selectValue);
+  }
+
+  private handleSelection() {;
+    const options = this.el.querySelectorAll('option');
+    options.forEach((option: HTMLOptionElement) => {
+      const optionValue = String(option.value);
+      option.selected = this.selectValue.some(val => String(val) === optionValue);
+    });
   }
 
   handleBlur(event) {
@@ -96,6 +127,7 @@ export class EclSelect {
       name: this.name,
       required: this.required,
       disabled: this.disabled,
+      value: this.inputValue,
     };
 
     if (this.multiple) {
@@ -111,12 +143,14 @@ export class EclSelect {
     return (
       <div 
         class={this.getClass()}
+        role="application"
       >
         <select
           {...attributes}
           onFocus={ev => this.handleFocus(ev)}
           onBlur={ev => this.handleBlur(ev)}
           onChange={ev => this.handleChange(ev)}
+          onInput={ev => this.handleChange(ev)}
         >
           <slot></slot>
         </select>
