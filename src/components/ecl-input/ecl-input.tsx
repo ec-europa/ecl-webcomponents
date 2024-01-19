@@ -33,7 +33,8 @@ export class EclInput {
   @Prop() isFocused: boolean = false;
   @Event() inputFocus: EventEmitter<FocusEvent>;
   @Event() inputBlur: EventEmitter<FocusEvent>;
-  @Event() inputChange: EventEmitter;
+  @Event() inputChange: EventEmitter<{ type: string; value: string }>;
+
 
   componentDidRender() {
     if (this.inputId) {
@@ -124,7 +125,7 @@ export class EclInput {
 
   handleChange(event) {
     const value = (event.target as HTMLInputElement).value;
-    this.inputChange.emit(value);
+    this.inputChange.emit({ type: this.type, value });
   }
 
   handleBlur(event) {

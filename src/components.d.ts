@@ -1056,7 +1056,7 @@ declare global {
     interface HTMLEclInputElementEventMap {
         "inputFocus": FocusEvent;
         "inputBlur": FocusEvent;
-        "inputChange": any;
+        "inputChange": { type: string; value: string };
     }
     interface HTMLEclInputElement extends Components.EclInput, HTMLStencilElement {
         addEventListener<K extends keyof HTMLEclInputElementEventMap>(type: K, listener: (this: HTMLEclInputElement, ev: EclInputCustomEvent<HTMLEclInputElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
@@ -1823,7 +1823,7 @@ declare namespace LocalJSX {
         "label"?: string;
         "name"?: string;
         "onInputBlur"?: (event: EclInputCustomEvent<FocusEvent>) => void;
-        "onInputChange"?: (event: EclInputCustomEvent<any>) => void;
+        "onInputChange"?: (event: EclInputCustomEvent<{ type: string; value: string }>) => void;
         "onInputFocus"?: (event: EclInputCustomEvent<FocusEvent>) => void;
         "placeholder"?: string;
         "required"?: boolean;

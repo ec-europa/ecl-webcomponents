@@ -30,11 +30,11 @@
 
 ## Events
 
-| Event         | Description | Type                      |
-| ------------- | ----------- | ------------------------- |
-| `inputBlur`   |             | `CustomEvent<FocusEvent>` |
-| `inputChange` |             | `CustomEvent<any>`        |
-| `inputFocus`  |             | `CustomEvent<FocusEvent>` |
+| Event         | Description | Type                                            |
+| ------------- | ----------- | ----------------------------------------------- |
+| `inputBlur`   |             | `CustomEvent<FocusEvent>`                       |
+| `inputChange` |             | `CustomEvent<{ type: string; value: string; }>` |
+| `inputFocus`  |             | `CustomEvent<FocusEvent>`                       |
 
 
 ## Dependencies
