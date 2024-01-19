@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-media-container",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "ECL Media container",
   "main": "ecl-media-container.tsx",
   "private": true,
