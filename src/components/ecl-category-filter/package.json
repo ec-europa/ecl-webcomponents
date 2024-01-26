@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-category-filter",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.13.0",
+  "version": "0.14.0",
   "description": "ECL Category Filter",
   "main": "ecl-category-filter.tsx",
   "private": true,
