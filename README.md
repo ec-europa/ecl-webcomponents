@@ -58,7 +58,7 @@ generate requests at /build/images...
 ### Npm packages
 
 - @ecl/ecl-webcomponents - ECL webcomponents package
-- @ecl/ecl-wecomponents-react - Ecl webcomponents for React
+- @ecl/ecl-webcomponents-react - Ecl webcomponents for React
 - @ecl/ecl-webcomponents-angular - Ecl webcomponents for Angular
 - @ecl/ckeditor5-ecl-webcomponents - Ckeditor 5 plugin for ECL Webcomponents
 
