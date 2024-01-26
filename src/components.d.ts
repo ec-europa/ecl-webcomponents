@@ -16,9 +16,10 @@ export namespace Components {
         "expanded": boolean;
         "itemId": string;
         "label": string;
+        "labelCollapsed": string;
+        "labelExpanded": string;
         "styleClass": string;
         "theme": string;
-        "titleId": string;
     }
     interface EclBanner {
         "bannerTitle": string;
@@ -1442,9 +1443,10 @@ declare namespace LocalJSX {
         "expanded"?: boolean;
         "itemId"?: string;
         "label"?: string;
+        "labelCollapsed"?: string;
+        "labelExpanded"?: string;
         "styleClass"?: string;
         "theme"?: string;
-        "titleId"?: string;
     }
     interface EclBanner {
         "bannerTitle"?: string;

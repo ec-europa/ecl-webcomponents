@@ -13,9 +13,10 @@ export class EclAccordionItem {
   @Prop() styleClass: string;
   @Prop() label: string;
   @Prop() itemId: string;
-  @Prop() titleId: string;
   @Prop({reflect:true}) expanded: boolean;
   @Prop() theme: string = 'ec';
+  @Prop() labelExpanded = '';
+  @Prop() labelCollapsed = '';
   
   getClass(): string {
     return [
@@ -26,24 +27,31 @@ export class EclAccordionItem {
   }
 
   render() {
+    const titleId = `${this.itemId}-title`;
+    const contentId = `${this.itemId}-content`;
     return (
       <div
         class={this.getClass()}
-        id={this.itemId || null}
-        aria-labelledby={this.titleId || null}
+        aria-labelledby={titleId}
       >
         <h3 
           class={`ecl-accordion__title sc-ecl-accordion-${this.theme}`}
-          id={this.titleId || null}
+          id={titleId}
         >
           <button
+            type="button"
             data-ecl-accordion-toggle
-            aria-controls={`${this.el.id}-content`}
+            aria-controls={contentId}
             class={`ecl-accordion__toggle sc-ecl-accordion-${this.theme}`}
             aria-expanded={this.expanded ? 'true' : 'false'}
+            data-ecl-label-collapsed={this.labelCollapsed}
+            data-ecl-label-expanded={this.labelExpanded}
           >
             <span class={`ecl-accordion__toggle-flex sc-ecl-accordion-${this.theme}`}>
               <span class={`ecl-accordion__toggle-indicator sc-ecl-accordion-${this.theme}`}>
+                <span class={`ecl-accordion__toggle-label sc-ecl-accordion-${this.theme}`}>
+                  {this.expanded ? this.labelExpanded : this.labelCollapsed}
+                </span>
                 <ecl-icon
                   icon={this.expanded ? "minus" : 'plus'}
                   theme={this.theme}
@@ -61,7 +69,7 @@ export class EclAccordionItem {
         <div 
           class={`ecl-accordion__content sc-ecl-accordion-${this.theme}`}
           role="region"
-          id={`${this.el.id}-content`}
+          id={contentId}
           hidden={this.expanded !== true}
         >
           <slot></slot>

@@ -7,14 +7,15 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type      | Default     |
-| ------------ | ------------- | ----------- | --------- | ----------- |
-| `expanded`   | `expanded`    |             | `boolean` | `undefined` |
-| `itemId`     | `item-id`     |             | `string`  | `undefined` |
-| `label`      | `label`       |             | `string`  | `undefined` |
-| `styleClass` | `style-class` |             | `string`  | `undefined` |
-| `theme`      | `theme`       |             | `string`  | `'ec'`      |
-| `titleId`    | `title-id`    |             | `string`  | `undefined` |
+| Property         | Attribute         | Description | Type      | Default     |
+| ---------------- | ----------------- | ----------- | --------- | ----------- |
+| `expanded`       | `expanded`        |             | `boolean` | `undefined` |
+| `itemId`         | `item-id`         |             | `string`  | `undefined` |
+| `label`          | `label`           |             | `string`  | `undefined` |
+| `labelCollapsed` | `label-collapsed` |             | `string`  | `''`        |
+| `labelExpanded`  | `label-expanded`  |             | `string`  | `''`        |
+| `styleClass`     | `style-class`     |             | `string`  | `undefined` |
+| `theme`          | `theme`           |             | `string`  | `'ec'`      |
 
 
 ## Dependencies
