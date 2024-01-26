@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-range",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.13.0",
+  "version": "0.14.0",
   "description": "ECL Range",
   "main": "ecl-range.tsx",
   "private": true,
