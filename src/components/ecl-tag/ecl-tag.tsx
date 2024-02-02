@@ -80,7 +80,7 @@ export class EclTag {
     return (
       <Element 
         class={this.getClass()}
-        {...(this.variant === 'link' && this.url && { href: this.url })}
+        {...(this.variant === 'link' && { href: this.url })}
       >
         <slot></slot>
         { this.variant === 'link' && this.external ? this.getExternal() : '' }
