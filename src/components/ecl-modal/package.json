@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-modal",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "description": "ECL Modal",
   "main": "ecl-modal.tsx",
   "private": true,
