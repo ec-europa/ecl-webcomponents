@@ -753,7 +753,7 @@ export namespace Components {
         "external": boolean;
         "styleClass": string;
         "theme": string;
-        "toBeRemoved": boolean;
+        "url": string;
         "variant": string;
     }
     interface EclText {
@@ -813,6 +813,10 @@ export interface EclRatingStarCustomEvent<T> extends CustomEvent<T> {
 export interface EclSelectCustomEvent<T> extends CustomEvent<T> {
     detail: T;
     target: HTMLEclSelectElement;
+}
+export interface EclTagCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLEclTagElement;
 }
 export interface EclTextareaCustomEvent<T> extends CustomEvent<T> {
     detail: T;
@@ -1310,7 +1314,18 @@ declare global {
         prototype: HTMLEclSpinnerElement;
         new (): HTMLEclSpinnerElement;
     };
+    interface HTMLEclTagElementEventMap {
+        "removeTag": boolean;
+    }
     interface HTMLEclTagElement extends Components.EclTag, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLEclTagElementEventMap>(type: K, listener: (this: HTMLEclTagElement, ev: EclTagCustomEvent<HTMLEclTagElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLEclTagElementEventMap>(type: K, listener: (this: HTMLEclTagElement, ev: EclTagCustomEvent<HTMLEclTagElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
     }
     var HTMLEclTagElement: {
         prototype: HTMLEclTagElement;
@@ -2193,9 +2208,10 @@ declare namespace LocalJSX {
     }
     interface EclTag {
         "external"?: boolean;
+        "onRemoveTag"?: (event: EclTagCustomEvent<boolean>) => void;
         "styleClass"?: string;
         "theme"?: string;
-        "toBeRemoved"?: boolean;
+        "url"?: string;
         "variant"?: string;
     }
     interface EclText {

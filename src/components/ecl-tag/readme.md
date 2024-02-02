@@ -7,13 +7,20 @@
 
 ## Properties
 
-| Property      | Attribute       | Description | Type      | Default     |
-| ------------- | --------------- | ----------- | --------- | ----------- |
-| `external`    | `external`      |             | `boolean` | `false`     |
-| `styleClass`  | `style-class`   |             | `string`  | `undefined` |
-| `theme`       | `theme`         |             | `string`  | `'ec'`      |
-| `toBeRemoved` | `to-be-removed` |             | `boolean` | `false`     |
-| `variant`     | `variant`       |             | `string`  | `'display'` |
+| Property     | Attribute     | Description | Type      | Default     |
+| ------------ | ------------- | ----------- | --------- | ----------- |
+| `external`   | `external`    |             | `boolean` | `false`     |
+| `styleClass` | `style-class` |             | `string`  | `undefined` |
+| `theme`      | `theme`       |             | `string`  | `'ec'`      |
+| `url`        | `url`         |             | `string`  | `''`        |
+| `variant`    | `variant`     |             | `string`  | `'display'` |
+
+
+## Events
+
+| Event       | Description | Type                   |
+| ----------- | ----------- | ---------------------- |
+| `removeTag` |             | `CustomEvent<boolean>` |
 
 
 ## Dependencies

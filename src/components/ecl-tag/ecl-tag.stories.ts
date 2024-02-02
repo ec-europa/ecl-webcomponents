@@ -1,7 +1,9 @@
+import { randomizedLink } from "../../utils/randomizedLink"; 
+
 const getArgs = () => {
   return {
     variant: 'link',
-    url: '',
+    url: randomizedLink('/example.html'),
     external: false,
     ariaLabel: 'aria label',
   };
@@ -13,6 +15,11 @@ const getArgTypes = () => {
       type: { name: 'select' },
       options: ['link', 'removable'],
       description: "Tag variant"
+    },
+    url: {
+      type: { name: 'string' },
+      description: "Link url",
+      if: { arg: 'variant', eq: 'link' },
     },
     external: {
       name: 'external',

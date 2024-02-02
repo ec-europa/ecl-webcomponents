@@ -1,4 +1,4 @@
-import { Component, Prop, h, Element } from '@stencil/core';
+import { Component, Prop, h, State, Event, EventEmitter } from '@stencil/core';
 
 @Component({
   tag: 'ecl-tag',
@@ -10,12 +10,14 @@ import { Component, Prop, h, Element } from '@stencil/core';
   scoped: true,
 })
 export class EclTag {
-  @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
   @Prop() external: boolean = false;
   @Prop() variant: string = 'display';
-  @Prop() toBeRemoved: boolean = false;
+  @Prop() url: string = '';
+  @State() toBeRemoved: boolean = false;
+
+  @Event() removeTag: EventEmitter<boolean>;
 
   getClass(): string {
     return [
@@ -28,7 +30,7 @@ export class EclTag {
   getTag(variant) {
     switch (variant) {
       case 'link':
-        return 'a'
+        return 'a';
 
       case 'display':
         return 'span';
@@ -36,7 +38,7 @@ export class EclTag {
       case 'removable':
         return 'button';
 
-       default:
+      default:
     }
   }
 
@@ -45,7 +47,7 @@ export class EclTag {
       <ecl-icon 
         icon="external"
         style-class={`ecl-tag__icon ecl-tag__icon--external sc-ecl-tag-${this.theme}`}
-        size = "2xs"
+        size="2xs"
       >
       </ecl-icon>
     )  
@@ -55,6 +57,10 @@ export class EclTag {
     return (
       <span
         class="ecl-tag__icon"
+        onClick={() => {
+          this.toBeRemoved = true;
+          this.removeTag.emit(true); // Emit the custom event
+        }}
       >
         <ecl-icon 
           icon="close"
@@ -69,21 +75,12 @@ export class EclTag {
     )
   }
 
-  componentDidRender() {
-    const closeButton = this.el.querySelector('.ecl-tag__icon');
-    
-    if (closeButton) {
-      closeButton.addEventListener('click', () => {
-        this.toBeRemoved = true;
-      });
-    }
-  }
-
   render() {
     const Element = this.getTag(this.variant);
     return (
       <Element 
         class={this.getClass()}
+        {...(this.variant === 'link' && this.url && { href: this.url })}
       >
         <slot></slot>
         { this.variant === 'link' && this.external ? this.getExternal() : '' }
