@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-label",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.15.0",
+  "version": "0.15.1",
   "description": "ECL Label",
   "main": "ecl-label.tsx",
   "private": true,
