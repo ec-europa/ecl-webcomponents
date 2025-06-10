@@ -1,6 +1,6 @@
 {
   "version": "0.15.1",
-  "npmClient": "yarn",
+  "npmClient": "pnpm",
   "changelog": {
     "repo": "ec-europa/ecl-webcomponents",
     "labels": {

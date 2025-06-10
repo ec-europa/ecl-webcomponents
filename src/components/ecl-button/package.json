@@ -19,6 +19,7 @@
     "@ecl/specs-component-button": "3.13.0",
     "@ecl/theme-ec": "3.13.0",
     "@ecl/theme-eu": "3.13.0",
+    "@ecl/web-components-icon": "0.15.1",
     "@ecl/vanilla-component-button": "3.13.0",
     "@ecl/vanilla-component-icon": "3.13.0",
     "@ecl/vanilla-component-link": "3.13.0",

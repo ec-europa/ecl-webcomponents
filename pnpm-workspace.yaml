@@ -1,0 +1,7 @@
+packages:
+  - "src/components/**"
+  - "playground"
+  - "src/plugins/**"
+  - "packages/*"
+  - "packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular"
+  - "!packages/**/dist"

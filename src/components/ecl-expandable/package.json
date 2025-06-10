@@ -18,6 +18,7 @@
     "@ecl/specs-component-expandable": "3.13.0",
     "@ecl/theme-ec": "3.13.0",
     "@ecl/theme-eu": "3.13.0",
+    "@ecl/web-components-button": "0.15.1",
     "@ecl/vanilla-component-button": "3.13.0",
     "@ecl/vanilla-component-expandable": "3.13.0",
     "cross-env": "7.0.3"
