@@ -64,7 +64,7 @@
     "update-version": "scripts/update-version.sh"
   },
   "dependencies": {
-    "@stencil/core": "4.34.0"
+    "@stencil/core": "4.11.0"
   },
   "devDependencies": {
     "@babel/core": "7.27.4",
@@ -73,8 +73,8 @@
     "@babel/preset-react": "7.27.1",
     "@babel/preset-typescript": "7.27.1",
     "@prettier/plugin-xml": "3.4.1",
-    "@stencil/angular-output-target": "0.10.2",
-    "@stencil/react-output-target": "1.0.4",
+    "@stencil/angular-output-target": "0.8.4",
+    "@stencil/react-output-target": "0.5.3",
     "@storybook/addon-essentials": "7.6.10",
     "@storybook/addon-links": "7.6.10",
     "@storybook/builder-webpack5": "7.6.10",

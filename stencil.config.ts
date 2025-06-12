@@ -14,15 +14,13 @@ export const config: Config = {
     {
       type: 'dist-custom-elements',
       dir: 'packages/ecl-webcomponents/dist/custom-elements',
-      externalRuntime: false,
     },
     {
       type: 'docs-readme',
     },
     reactOutputTarget({
       componentCorePackage: '@ecl/ecl-webcomponents',
-      proxiesFile: 'packages/ecl-webcomponents-react/dist/components/stencil-generated/index.ts'
-      outDir: 'packages/ecl-webcomponents-react/dist',
+      proxiesFile: 'packages/ecl-webcomponents-react/lib/components/stencil-generated/index.ts',
     }),
     angularOutputTarget({
       componentCorePackage: '@ecl/ecl-webcomponents',
