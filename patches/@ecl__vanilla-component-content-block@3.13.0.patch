@@ -1,7 +1,7 @@
-diff --git a/node_modules/@ecl/vanilla-component-content-block/content-block.js b/node_modules/@ecl/vanilla-component-content-block/content-block.js
-index e231bd7..72de3e9 100644
---- a/node_modules/@ecl/vanilla-component-content-block/content-block.js
-+++ b/node_modules/@ecl/vanilla-component-content-block/content-block.js
+diff --git a/content-block.js b/content-block.js
+index e231bd7ae011bcf9f1f9b7b81d9c5b51177d2642..72de3e95f1ddef5b6e739f12b00778a51f602dea 100644
+--- a/content-block.js
++++ b/content-block.js
 @@ -77,7 +77,7 @@ export class ContentBlock {
      }
  

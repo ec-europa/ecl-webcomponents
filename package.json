@@ -37,7 +37,6 @@
     "lint:js": "eslint . --ext .js",
     "lint:scss": "stylelint \"./src/**/*.scss\"",
     "lint": "npm-run-all --parallel lint:* -cln",
-    "patch": "patch-package",
     "prepare": "npx husky install",
     "pretty-check": "prettier --check \"src/**/*.{md,mdx,html,json,yml,js,jsx,scss}\"",
     "pretty-write": "prettier --write \"src/**/*.{md,mdx,html,json,yml,js,jsx,scss}\"",
@@ -50,10 +49,10 @@
     "generate:stencil": "stencil generate",
     "generate:docs": "stencil build --docs",
     "generate:template": "scripts/template.sh",
-    "prepublish": "npm run build:stencil && lerna --scope \"@ecl/ecl-webcomponents-*\" run pre-publish",
+    "prepublish": "npm run build:stencil && pnpm --filter \"@ecl/ecl-webcomponents-*\" run pre-publish",
     "plugins:dev": "pnpm --filter \"@ecl/ckeditor5-*\" run dev",
     "plugins:make": "pnpm --filter \"@ecl/ckeditor5-*\" run build",
-    "postinstall": "patch-package && [ -z \"$NOpnpmPOSTINSTALL\" ] && (lerna run postinstall && lerna run prepublish) || echo \"Bypass prepublish\"",
+    "postinstall": "[ -z \"$NOpnpmPOSTINSTALL\" ] && (pnpm recursive run postinstall && pnpm recursive run prepublish) || echo \"Bypass prepublish\"",
     "refresh-playground": "pnpm --filter \"@ecl/ckeditor5-*\" run dev:install-plugin && lerna --scope \"@ecl/ckeditor5-*\" run build && pnpm build:playground",
     "dev": "sb dev -p 6006",
     "dev-react": "pnpm --filter \"@ecl/ecl-webcomponents-react*\" run dev",
@@ -109,7 +108,6 @@
     "ncp": "2.0.0",
     "npm-check-updates": "18.0.1",
     "npm-run-all": "4.1.5",
-    "patch-package": "8.0.0",
     "prettier": "3.2.4",
     "puppeteer": "19.5.2",
     "react": "18.2.0",
@@ -151,6 +149,18 @@
       "semver": ">=7.5.2",
       "jackspeak": "2.1.1",
       "cli-truncate": "2.1.0"
+    },
+    "patchedDependencies": {
+      "@ecl/builder@3.13.0": "patches/@ecl__builder@3.13.0.patch",
+      "@ecl/theme-dev@3.13.0": "patches/@ecl__theme-dev@3.13.0.patch",
+      "@ecl/vanilla-component-accordion@3.13.0": "patches/@ecl__vanilla-component-accordion@3.13.0.patch",
+      "@ecl/vanilla-component-button@3.13.0": "patches/@ecl__vanilla-component-button@3.13.0.patch",
+      "@ecl/vanilla-component-card@3.13.0": "patches/@ecl__vanilla-component-card@3.13.0.patch",
+      "@ecl/vanilla-component-carousel@3.13.0": "patches/@ecl__vanilla-component-carousel@3.13.0.patch",
+      "@ecl/vanilla-component-category-filter@3.13.0": "patches/@ecl__vanilla-component-category-filter@3.13.0.patch",
+      "@ecl/vanilla-component-content-block@3.13.0": "patches/@ecl__vanilla-component-content-block@3.13.0.patch",
+      "@ecl/vanilla-component-select@3.13.0": "patches/@ecl__vanilla-component-select@3.13.0.patch",
+      "@stencil/react-output-target@0.5.3": "patches/@stencil__react-output-target@0.5.3.patch"
     }
   }
 }

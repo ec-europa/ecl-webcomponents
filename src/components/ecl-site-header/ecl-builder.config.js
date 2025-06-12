@@ -1,7 +1,7 @@
 const path = require('path');
 const pkg = require('./package.json');
 
-const nodeModules = '../../../node_modules';
+const nodeModules = './node_modules';
 const outputFolder = './build';
 
 // SCSS includePaths
@@ -14,12 +14,12 @@ module.exports = {
     {
       from: [`${nodeModules}/@ecl/resources-ec-logo/dist/**/*.svg`],
       to: path.resolve(outputFolder, 'images/ec/logos'),
-      options: { up: 7 },
+      options: { up: 4 },
     },
     {
       from: [`${nodeModules}/@ecl/resources-eu-logo/dist/**/*.svg`],
       to: path.resolve(outputFolder, 'images/eu/logos'),
-      options: { up: 7 },
+      options: { up: 4 },
     },
   ],
   scripts: [

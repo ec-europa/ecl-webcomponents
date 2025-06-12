@@ -13,6 +13,9 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
+    "@ecl/theme-ec": "3.13.0",
+    "@ecl/theme-eu": "3.13.0",
+    "@ecl/theme-dev": "3.13.0",
     "@ecl/builder": "3.13.0",
     "@ecl/resources-ec-icons": "3.13.0",
     "@ecl/specs-component-icon": "3.13.0",

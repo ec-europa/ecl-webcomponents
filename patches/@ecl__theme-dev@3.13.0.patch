@@ -1,7 +1,7 @@
-diff --git a/node_modules/@ecl/theme-dev/maps/color.scss b/node_modules/@ecl/theme-dev/maps/color.scss
-index 0c6ca02..42ecd0b 100644
---- a/node_modules/@ecl/theme-dev/maps/color.scss
-+++ b/node_modules/@ecl/theme-dev/maps/color.scss
+diff --git a/maps/color.scss b/maps/color.scss
+index 0c6ca0277d23b785d377968bd6f70a0065171e47..42ecd0b77e579910102ecd47013bdd8ea061dd7c 100644
+--- a/maps/color.scss
++++ b/maps/color.scss
 @@ -32,12 +32,14 @@ $color: (
    'blue-120': #003776,
    'blue-110': #003d84,

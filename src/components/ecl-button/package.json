@@ -23,6 +23,7 @@
     "@ecl/vanilla-component-button": "3.13.0",
     "@ecl/vanilla-component-icon": "3.13.0",
     "@ecl/vanilla-component-link": "3.13.0",
+    "@ecl/theme-dev": "3.13.0",
     "cross-env": "7.0.3"
   },
   "repository": {

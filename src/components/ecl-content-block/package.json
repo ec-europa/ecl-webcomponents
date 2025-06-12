@@ -17,6 +17,8 @@
     "@ecl/builder": "3.13.0",
     "@ecl/theme-ec": "3.13.0",
     "@ecl/theme-eu": "3.13.0",
+    "@ecl/theme-dev": "3.13.0",
+    "@ecl/vanilla-layout-grid": "3.13.0",
     "@ecl/vanilla-component-content-block": "3.13.0",
     "@ecl/vanilla-component-description-list": "3.13.0",
     "@ecl/vanilla-component-icon": "3.13.0",
