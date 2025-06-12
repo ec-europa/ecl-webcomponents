@@ -1,7 +1,7 @@
-diff --git a/node_modules/@ecl/builder/bin/build.js b/node_modules/@ecl/builder/bin/build.js
-index edd25b9..0c98c60 100755
---- a/node_modules/@ecl/builder/bin/build.js
-+++ b/node_modules/@ecl/builder/bin/build.js
+diff --git a/bin/build.js b/bin/build.js
+index edd25b979a063de7f53f28a7ad472a92e7ec5680..0c98c608fb24993a50fe1db8cfe743174016dbd2 100755
+--- a/bin/build.js
++++ b/bin/build.js
 @@ -62,7 +62,7 @@ program
    .action(() => {
      const config = loadConfig(program.config);
@@ -11,10 +11,10 @@ index edd25b9..0c98c60 100755
      );
    });
  
-diff --git a/node_modules/@ecl/builder/scripts/copy.js b/node_modules/@ecl/builder/scripts/copy.js
-index 30019d2..3bfefde 100644
---- a/node_modules/@ecl/builder/scripts/copy.js
-+++ b/node_modules/@ecl/builder/scripts/copy.js
+diff --git a/scripts/copy.js b/scripts/copy.js
+index 30019d299cb537e67d28a7a85f5fd23654a90e56..3bfefdea5fe1be3603260a3fd029fd24917ffce1 100644
+--- a/scripts/copy.js
++++ b/scripts/copy.js
 @@ -1,23 +1,32 @@
 -const fs = require('fs');
 -const path = require('path');

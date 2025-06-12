@@ -1,7 +1,7 @@
-diff --git a/node_modules/@ecl/vanilla-component-category-filter/category-filter.js b/node_modules/@ecl/vanilla-component-category-filter/category-filter.js
-index a1d3c09..d48617c 100644
---- a/node_modules/@ecl/vanilla-component-category-filter/category-filter.js
-+++ b/node_modules/@ecl/vanilla-component-category-filter/category-filter.js
+diff --git a/category-filter.js b/category-filter.js
+index a1d3c09d61d40c1a0050ee36b4598fb72070141e..d48617c9be9aa35e43caa74ad0c64018fbddf84b 100644
+--- a/category-filter.js
++++ b/category-filter.js
 @@ -96,21 +96,24 @@ export class CategoryFilter {
  
      const treeItem = e.target.closest('.ecl-category-filter__item');

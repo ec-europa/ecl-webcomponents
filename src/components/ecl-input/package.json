@@ -14,7 +14,11 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
+    "@ecl/theme-ec": "3.13.0",
+    "@ecl/theme-eu": "3.13.0",
+    "@ecl/theme-dev": "3.13.0",
     "@ecl/builder": "3.13.0",
+    "@ecl/vanilla-layout-grid": "3.13.0",
     "@ecl/vanilla-component-button": "3.13.0",
     "@ecl/vanilla-component-checkbox": "3.13.0",
     "@ecl/vanilla-component-datepicker": "3.13.0",

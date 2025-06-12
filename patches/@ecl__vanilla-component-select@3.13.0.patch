@@ -1,7 +1,7 @@
-diff --git a/node_modules/@ecl/vanilla-component-select/select.js b/node_modules/@ecl/vanilla-component-select/select.js
-index af9c468..5696a1a 100644
---- a/node_modules/@ecl/vanilla-component-select/select.js
-+++ b/node_modules/@ecl/vanilla-component-select/select.js
+diff --git a/select.js b/select.js
+index af9c468227e205e3714541c6872671e1725bc9f0..5696a1ada73466cec4300b11b5330f18bb20d451 100644
+--- a/select.js
++++ b/select.js
 @@ -495,7 +495,7 @@ export class Select {
      }
      this.visibleOptions = this.checkboxes;

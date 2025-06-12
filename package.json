@@ -11,21 +11,22 @@
   "collection": "packages/ecl-webcomponents/dist/collection/collection-manifest.json",
   "collection:main": "packages/ecl-webcomponents/dist/collection/index.js",
   "engines": {
-    "node": ">=18.0.0",
-    "yarn": ">=1.1.0"
+    "node": ">=22.0.0",
+    "pnpm": "10.9.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/ec-europa/ecl-webcomponents"
   },
+  "packageManager": "pnpm@10.9.0",
   "scripts": {
     "build": "run-s build:*",
     "build:clean": "rimraf build dist",
-    "build:web-components": "lerna --scope \"@ecl/web-components-*\" run build",
+    "build:web-components": "pnpm --filter \"@ecl/web-components-*\" run build",
     "build:stencil": "stencil build",
-    "build:react": "lerna --scope \"@ecl/ecl-webcomponents-react\" run build",
-    "build:react-consumer": "lerna --scope \"@ecl/ecl-webcomponents-react-consumer\" run build",
-    "build:angular": "lerna --scope \"@ecl/ecl-webcomponents-angular-workspace\" run build",
+    "build:react": "pnpm --filter \"@ecl/ecl-webcomponents-react\" run build",
+    "build:react-consumer": "pnpm --filter \"@ecl/ecl-webcomponents-react-consumer\" run build",
+    "build:angular": "pnpm --filter \"@ecl/ecl-webcomponents-angular-workspace\" run build",
     "build:storybook": "NODE_ENV=production sb build -o build",
     "build:playground": "run-s build:playground:*",
     "build:playground:clean": "rimraf playground/ecl-webcomponents",
@@ -36,40 +37,32 @@
     "lint:js": "eslint . --ext .js",
     "lint:scss": "stylelint \"./src/**/*.scss\"",
     "lint": "npm-run-all --parallel lint:* -cln",
-    "patch": "patch-package",
     "prepare": "npx husky install",
     "pretty-check": "prettier --check \"src/**/*.{md,mdx,html,json,yml,js,jsx,scss}\"",
     "pretty-write": "prettier --write \"src/**/*.{md,mdx,html,json,yml,js,jsx,scss}\"",
     "publish": "lerna --scope \"@ecl/ckeditor5-ecl-webcomponents\" run pre-publish && scripts/publish.sh",
     "start": "stencil build --watch",
-    "test": "yarn pretty-check && stencil test --spec",
-    "test:update": "rimraf src/components/*/test/__snapshots__ && yarn test",
+    "test": "pnpm pretty-check && stencil test --spec",
+    "test:update": "rimraf src/components/*/test/__snapshots__ && pnpm test",
     "test:dev": "stencil test --spec --watchAll",
     "generate": "run-s \"generate:* {@}\" --",
     "generate:stencil": "stencil generate",
     "generate:docs": "stencil build --docs",
     "generate:template": "scripts/template.sh",
-    "prepublish": "npm run build:stencil && lerna --scope \"@ecl/ecl-webcomponents-*\" run pre-publish",
-    "plugins:dev": "lerna --scope \"@ecl/ckeditor5-*\" run dev",
-    "plugins:make": "lerna --scope \"@ecl/ckeditor5-*\" run build",
-    "postinstall": "patch-package && [ -z \"$NOYARNPOSTINSTALL\" ] && (lerna run postinstall && lerna run prepublish) || echo \"Bypass prepublish\"",
-    "refresh-playground": "lerna --scope \"@ecl/ckeditor5-*\" run dev:install-plugin && lerna --scope \"@ecl/ckeditor5-*\" run build && yarn build:playground",
+    "prepublish": "npm run build:stencil && pnpm --filter \"@ecl/ecl-webcomponents-*\" run pre-publish",
+    "plugins:dev": "pnpm --filter \"@ecl/ckeditor5-*\" run dev",
+    "plugins:make": "pnpm --filter \"@ecl/ckeditor5-*\" run build",
+    "postinstall": "[ -z \"$NOpnpmPOSTINSTALL\" ] && (pnpm recursive run postinstall && pnpm recursive run prepublish) || echo \"Bypass prepublish\"",
+    "refresh-playground": "pnpm --filter \"@ecl/ckeditor5-*\" run dev:install-plugin && lerna --scope \"@ecl/ckeditor5-*\" run build && pnpm build:playground",
     "dev": "sb dev -p 6006",
-    "dev-react": "lerna --scope \"@ecl/ecl-webcomponents-react*\" run dev",
+    "dev-react": "pnpm --filter \"@ecl/ecl-webcomponents-react*\" run dev",
     "dev-angular:watch": "cd packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular-consumer && npm run watch",
-    "dev-angular:start": "lerna --scope \"@ecl/ecl-webcomponents-angular-workspace*\" run serve",
-    "dev-angular:reload": "lerna --scope \"@ecl/ecl-webcomponents-angular-workspace*\" run reload",
+    "dev-angular:start": "pnpm --filter \"@ecl/ecl-webcomponents-angular-workspace*\" run serve",
+    "dev-angular:reload": "pnpm --filter \"@ecl/ecl-webcomponents-angular-workspace*\" run reload",
     "dev-angular": "run-p dev-angular:*",
+    "update-deps": "npm-check-updates -i -ws",
     "update-version": "scripts/update-version.sh"
   },
-  "workspaces": [
-    "src/components/**",
-    "playground",
-    "src/plugins/**",
-    "packages/*",
-    "packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular",
-    "!packages/**/dist"
-  ],
   "dependencies": {
     "@stencil/core": "4.11.0"
   },
@@ -113,8 +106,8 @@
     "lerna-changelog": "2.2.0",
     "lint-staged": "15.2.0",
     "ncp": "2.0.0",
+    "npm-check-updates": "18.0.1",
     "npm-run-all": "4.1.5",
-    "patch-package": "8.0.0",
     "prettier": "3.2.4",
     "puppeteer": "19.5.2",
     "react": "18.2.0",
@@ -146,14 +139,28 @@
       "stylelint"
     ]
   },
-  "resolutions": {
-    "glob-parent": ">=5.1.2",
-    "trim": ">=0.0.3",
-    "json5": ">=1.0.2",
-    "http-cache-semantics": ">=4.1.1",
-    "yaml": ">=2.2.2",
-    "semver": ">=7.5.2",
-    "jackspeak": "2.1.1",
-    "cli-truncate": "2.1.0"
+  "pnpm": {
+    "overrides": {
+      "glob-parent": ">=5.1.2",
+      "trim": ">=0.0.3",
+      "json5": ">=1.0.2",
+      "http-cache-semantics": ">=4.1.1",
+      "yaml": ">=2.2.2",
+      "semver": ">=7.5.2",
+      "jackspeak": "2.1.1",
+      "cli-truncate": "2.1.0"
+    },
+    "patchedDependencies": {
+      "@ecl/builder@3.13.0": "patches/@ecl__builder@3.13.0.patch",
+      "@ecl/theme-dev@3.13.0": "patches/@ecl__theme-dev@3.13.0.patch",
+      "@ecl/vanilla-component-accordion@3.13.0": "patches/@ecl__vanilla-component-accordion@3.13.0.patch",
+      "@ecl/vanilla-component-button@3.13.0": "patches/@ecl__vanilla-component-button@3.13.0.patch",
+      "@ecl/vanilla-component-card@3.13.0": "patches/@ecl__vanilla-component-card@3.13.0.patch",
+      "@ecl/vanilla-component-carousel@3.13.0": "patches/@ecl__vanilla-component-carousel@3.13.0.patch",
+      "@ecl/vanilla-component-category-filter@3.13.0": "patches/@ecl__vanilla-component-category-filter@3.13.0.patch",
+      "@ecl/vanilla-component-content-block@3.13.0": "patches/@ecl__vanilla-component-content-block@3.13.0.patch",
+      "@ecl/vanilla-component-select@3.13.0": "patches/@ecl__vanilla-component-select@3.13.0.patch",
+      "@stencil/react-output-target@0.5.3": "patches/@stencil__react-output-target@0.5.3.patch"
+    }
   }
 }

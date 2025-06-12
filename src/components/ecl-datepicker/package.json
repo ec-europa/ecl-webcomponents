@@ -17,7 +17,11 @@
     "@ecl/builder": "3.13.0",
     "@ecl/theme-ec": "3.13.0",
     "@ecl/theme-eu": "3.13.0",
+    "@ecl/theme-dev": "3.13.0",
+    "@ecl/vanilla-layout-grid": "3.13.0",
+    "@ecl/vanilla-component-text-input": "3.13.0",
     "@ecl/vanilla-component-datepicker": "3.13.0",
+    "pikaday": "1.8.2",
     "cross-env": "7.0.3"
   },
   "repository": {

@@ -1,0 +1,15 @@
+diff --git a/_button.scss b/_button.scss
+index 4531e25086345cf5a78a57626f620c1c1897e218..8698461fc871013a6349054ca4ddbc0a8ddc82c9 100644
+--- a/_button.scss
++++ b/_button.scss
+@@ -67,10 +67,6 @@ $_shadow-hover: null !default;
+   margin-inline-start: map.get(theme.$spacing, 'xs');
+ }
+ 
+-.ecl-button__icon:only-child {
+-  margin: 0;
+-}
+-
+ /**
+ * Primary
+ */

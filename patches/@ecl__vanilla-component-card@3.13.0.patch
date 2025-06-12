@@ -1,0 +1,12 @@
+diff --git a/_card.scss b/_card.scss
+index 0c0e435f768429f57040a8f7cc685921588f623e..97226338182640f09dd3ffa1559b00f9882c21d3 100644
+--- a/_card.scss
++++ b/_card.scss
+@@ -23,7 +23,6 @@ $_body-padding: null !default;
+   border-radius: $_border-radius;
+   box-shadow: $_shadow;
+   box-sizing: border-box;
+-  height: 100%;
+   margin: 0;
+   overflow: hidden;
+   overflow-wrap: break-word;

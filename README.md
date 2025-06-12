@@ -8,9 +8,9 @@ To quickly run the app:
 ```
 git clone https://github.com/planctus/ecl-webcomponents
 
-yarn (install dependencies and run prepublish script in the packages
-yarn start (build stencil and watch files)
-yarn dev (start storybook)
+pnpm (install dependencies and run prepublish script in the packages
+pnpm start (build stencil and watch files)
+pnpm dev (start storybook)
 ```
 
 ### Command reference
@@ -28,7 +28,7 @@ yarn dev (start storybook)
 ### Adding a new component
 
 ```
-yarn generate ecl-{component} (choose only the spec file)
+pnpm generate ecl-{component} (choose only the spec file)
 ```
 
 This will create most of the files needed in src/components/ecl-{component}

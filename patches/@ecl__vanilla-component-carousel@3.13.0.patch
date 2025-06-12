@@ -1,7 +1,7 @@
-diff --git a/node_modules/@ecl/vanilla-component-carousel/carousel.js b/node_modules/@ecl/vanilla-component-carousel/carousel.js
-index f37281d..6b799b9 100644
---- a/node_modules/@ecl/vanilla-component-carousel/carousel.js
-+++ b/node_modules/@ecl/vanilla-component-carousel/carousel.js
+diff --git a/carousel.js b/carousel.js
+index f37281da7b79e6e5f0b3622a6b4dae8802fc5d69..6b799b9effc841f584b95aafb7742a58a4b243ff 100644
+--- a/carousel.js
++++ b/carousel.js
 @@ -136,6 +136,8 @@ export class Carousel {
      this.direction = getComputedStyle(this.element).direction;
  

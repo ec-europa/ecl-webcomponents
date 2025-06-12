@@ -1,7 +1,7 @@
 const path = require('path');
 const pkg = require('./package.json');
 
-const nodeModules = path.resolve(__dirname, '../../../node_modules');
+const nodeModules = path.resolve(__dirname, './node_modules');
 const outputFolder = './build';
 
 // SCSS includePaths

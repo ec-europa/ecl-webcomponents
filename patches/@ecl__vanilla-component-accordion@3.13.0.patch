@@ -1,7 +1,7 @@
-diff --git a/node_modules/@ecl/vanilla-component-accordion/accordion.js b/node_modules/@ecl/vanilla-component-accordion/accordion.js
-index 08c5b16..cd41037 100644
---- a/node_modules/@ecl/vanilla-component-accordion/accordion.js
-+++ b/node_modules/@ecl/vanilla-component-accordion/accordion.js
+diff --git a/accordion.js b/accordion.js
+index 08c5b160fb93ae39d28c7c450d9fe03cbdf55649..cd410378234668c4b90c4a4e905e1eab9d23e749 100644
+--- a/accordion.js
++++ b/accordion.js
 @@ -138,14 +138,21 @@ export class Accordion {
      if (iconElement) {
        const useNode = queryOne('use', iconElement);
