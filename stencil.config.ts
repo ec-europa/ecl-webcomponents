@@ -21,7 +21,7 @@ export const config: Config = {
     },
     reactOutputTarget({
       componentCorePackage: '@ecl/ecl-webcomponents',
-      proxiesFile: 'packages/ecl-webcomponents-react/lib/components/stencil-generated/index.ts',
+      proxiesFile: 'packages/ecl-webcomponents-react/dist/components/stencil-generated/index.ts'
       outDir: 'packages/ecl-webcomponents-react/dist',
     }),
     angularOutputTarget({
