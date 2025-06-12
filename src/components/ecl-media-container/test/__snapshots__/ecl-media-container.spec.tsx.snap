@@ -25,8 +25,8 @@ exports[`ecl-media-container renders correctly with an html5 video 1`] = `
       <video class="ecl-media-container__media" controls="">
         <source src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4" type="video/mp4">
         <source src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm" type="video/webm">
-        <track kind="captions" label="English" src="/captions/bunny-en.vtt" srclang="en"></track>
-        <track kind="captions" label="français" src="/captions/bunny-fr.vtt" srclang="fr"></track>
+        <track kind="captions" label="English" src="/captions/bunny-en.vtt" srclang="en">
+        <track kind="captions" label="français" src="/captions/bunny-fr.vtt" srclang="fr">
       </video>
     </figure>
   </div>

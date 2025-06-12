@@ -7,16 +7,16 @@
 
 ## Properties
 
-| Property      | Attribute     | Description | Type          | Default     |
-| ------------- | ------------- | ----------- | ------------- | ----------- |
-| `expanded`    | `expanded`    |             | `boolean`     | `false`     |
-| `label`       | `label`       |             | `string`      | `undefined` |
-| `lastClicked` | --            |             | `HTMLElement` | `undefined` |
-| `level`       | `level`       |             | `number`      | `undefined` |
-| `path`        | `path`        |             | `string`      | `undefined` |
-| `styleClass`  | `style-class` |             | `string`      | `''`        |
-| `subItems`    | `sub-items`   |             | `boolean`     | `false`     |
-| `theme`       | `theme`       |             | `string`      | `'ec'`      |
+| Property      | Attribute      | Description | Type          | Default     |
+| ------------- | -------------- | ----------- | ------------- | ----------- |
+| `expanded`    | `expanded`     |             | `boolean`     | `false`     |
+| `label`       | `label`        |             | `string`      | `undefined` |
+| `lastClicked` | `last-clicked` |             | `HTMLElement` | `undefined` |
+| `level`       | `level`        |             | `number`      | `undefined` |
+| `path`        | `path`         |             | `string`      | `undefined` |
+| `styleClass`  | `style-class`  |             | `string`      | `''`        |
+| `subItems`    | `sub-items`    |             | `boolean`     | `false`     |
+| `theme`       | `theme`        |             | `string`      | `'ec'`      |
 
 
 ## Dependencies
