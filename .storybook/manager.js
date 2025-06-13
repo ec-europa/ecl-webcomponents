@@ -1,6 +1,6 @@
-import { addons } from '@storybook/manager-api';
+import { addons } from 'storybook/manager-api';
 import browserUpdate from 'browser-update';
-import { create } from '@storybook/theming';
+import { create } from 'storybook/theming';
 
 addons.setConfig({
   isFullscreen: false,

@@ -37,14 +37,10 @@ if (!isProd) {
 module.exports = {
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-viewport'],
-  framework: '@storybook/html-webpack5',
+  framework: {
+    name: '@storybook/html-vite',
+  },
   staticDirs,
-  core: {
-    builder: '@storybook/builder-webpack5',
-  },
-  docs: {
-    autodocs: true,
-  },
   features: {
     postcss: false,
   },
