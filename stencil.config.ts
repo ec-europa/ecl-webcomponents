@@ -28,4 +28,7 @@ export const config: Config = {
       directivesArrayFile: 'packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular/src/lib/stencil-generated/index.ts',
     }),
   ],
+  extras: {
+    experimentalImportInjection: true,
+  },
 };
