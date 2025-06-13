@@ -27,7 +27,7 @@
     "build:react": "pnpm --filter \"@ecl/ecl-webcomponents-react\" run build",
     "build:react-consumer": "pnpm --filter \"@ecl/ecl-webcomponents-react-consumer\" run build",
     "build:angular": "pnpm --filter \"@ecl/ecl-webcomponents-angular-workspace\" run build",
-    "build:storybook": "NODE_ENV=production sb build -o build",
+    "build:storybook": "NODE_ENV=production storybook build -o build",
     "build:playground": "run-s build:playground:*",
     "build:playground:clean": "rimraf playground/ecl-webcomponents",
     "build:playground:copy": "ncp packages/ecl-webcomponents/dist/ecl-webcomponents playground/ecl-webcomponents && ncp ./playground ./build/playground",
