@@ -29,6 +29,6 @@ export const config: Config = {
     }),
   ],
   extras: {
-    experimentalImportInjection: true,
+    enableImportInjection: true, //https://github.com/storybookjs/storybook/issues/25704
   },
 };

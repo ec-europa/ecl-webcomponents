@@ -19,13 +19,13 @@ exports[`ecl-page-banner renders 1`] = `
             <ecl-link style-class="ecl-page-banner__link-cta sc-ecl-page-banner-ec">
               <!---->
               <a class="ecl-link ecl-link--cta ecl-link--icon ecl-link--icon-after ecl-page-banner__link-cta sc-ecl-page-banner-ec" href="/example.html">
+                Subscribe
+                <slot-fb hidden="" name="icon-after"></slot-fb>
                 <ecl-icon slot="icon-after">
                   <svg class="ecl-icon ecl-icon--rotate-90 ecl-icon--xs ecl-link__icon ecl-link__icon--after">
                     <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
                   </svg>
                 </ecl-icon>
-                Subscribe
-                <slot-fb hidden="" name="icon-after"></slot-fb>
               </a>
             </ecl-link>
           </div>

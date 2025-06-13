@@ -64,7 +64,7 @@
     "update-version": "scripts/update-version.sh"
   },
   "dependencies": {
-    "@stencil/core": "4.11.0"
+    "@stencil/core": "4.35.0"
   },
   "devDependencies": {
     "@ecl/ecl-webcomponents": "0.15.1",
