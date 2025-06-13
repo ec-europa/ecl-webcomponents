@@ -36,28 +36,12 @@ if (!isProd) {
 
 module.exports = {
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-viewport'],
+  addons: ['@storybook/addon-links', 'storybook/viewport'],
   framework: {
     name: '@storybook/html-vite',
   },
   staticDirs,
   features: {
     postcss: false,
-  },
-  viteFinal: config => {
-    return {
-      ...config,
-      build: {
-        ...config.build,
-        rollupOptions: {
-          ...config.build?.rollupOptions,
-          output: {
-            entryFileNames: `assets/[name].js`,
-            chunkFileNames: `assets/[name].js`,
-            assetFileNames: `assets/[name][extname]`,
-          },
-        },
-      },
-    };
   },
 };
