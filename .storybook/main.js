@@ -44,4 +44,20 @@ module.exports = {
   features: {
     postcss: false,
   },
+  viteFinal: config => {
+    return {
+      ...config,
+      build: {
+        ...config.build,
+        rollupOptions: {
+          ...config.build?.rollupOptions,
+          output: {
+            entryFileNames: `assets/[name].js`,
+            chunkFileNames: `assets/[name].js`,
+            assetFileNames: `assets/[name][extname]`,
+          },
+        },
+      },
+    };
+  },
 };
