@@ -75,7 +75,7 @@
     "@babel/preset-typescript": "7.27.1",
     "@prettier/plugin-xml": "3.4.1",
     "@stencil/angular-output-target": "0.10.2",
-    "@stencil/react-output-target": "0.5.3",
+    "@stencil/react-output-target": "1.0.4",
     "@storybook/addon-links": "9.0.9",
     "@storybook/html-vite": "9.0.9",
     "storybook": "9.0.9",

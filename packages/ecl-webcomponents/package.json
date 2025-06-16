@@ -11,6 +11,25 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/ecl-webcomponents/ecl-webcomponents.esm.js",
+  "exports": {
+    ".": {
+     "import": "./dist/ecl-webcomponents/ecl-webcomponents.esm.js",
+     "require": "./dist/ecl-webcomponents/ecl-webcomponents.cjs.js"
+   },
+   "./dist/*": {
+     "import": "./dist/*",
+     "types": "./dist/*"
+   },
+   "./components/*": {
+     "import": "./dist/components/*.js",
+     "types": "./dist/components/*.d.ts"
+   },
+   "./loader": {
+     "import": "./loader/index.js",
+     "require": "./loader/index.cjs",
+     "types": "./loader/index.d.ts"
+   }
+  },
   "files": [
     "dist/",
     "loader/"

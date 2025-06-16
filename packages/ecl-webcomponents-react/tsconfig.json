@@ -11,8 +11,13 @@
     "jsx": "react-jsx",
     "jsxFactory": "",
     "allowSyntheticDefaultImports": true,
-    "declarationDir": "./dist/types"
+    "declarationDir": "./dist/types",
+    "paths": {
+      "@ecl/ecl-webcomponents-library/*": ["../../ecl-webcomponents/dist/*"],
+      "@ecl/ecl-webcomponents": ["../../ecl-webcomponents/dist/index.js"],
+      "@ecl/ecl-webcomponents/*": ["../../ecl-webcomponents/dist/*"]
+    }
   },
   "include": ["lib"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }
