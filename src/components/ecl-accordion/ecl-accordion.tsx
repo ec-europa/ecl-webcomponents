@@ -1,4 +1,4 @@
-import { Component, Prop, h, Element } from '@stencil/core';
+import { Component, Prop, h, Element, State } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
 declare const ECL: any;
 
@@ -18,13 +18,24 @@ export class EclAccordion {
   @Prop() styleClass: string = '';
   @Prop() eclScript: boolean = false;
   @Prop() theme: string = 'ec';
-  @Prop() clickedItem: HTMLElement;
+  @Prop() colorMode: string = '';
+  @State() openItemId: string;
+
+  handleToggle = (itemId: string) => {
+    this.openItemId = this.openItemId === itemId ? null : itemId;
+  };
 
   getClass(): string {
-    return [
+    const styleClasses = [
       `ecl-accordion`,
       this.styleClass
-    ].join(' ');
+    ];
+
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`);
+    }
+
+    return styleClasses.join(' ');
   }
 
   componentWillLoad() {
@@ -43,11 +54,23 @@ export class EclAccordion {
     }
   }
 
-  componentDidRender() {
-    this.el.querySelectorAll('.ecl-accordion__item button').forEach((item) => {
-      item.addEventListener('click', (e) => {
-        const target = e.currentTarget as HTMLButtonElement;
-        this.clickedItem = target.parentElement.parentElement;
+  componentDidLoad() {
+    const items = this.el.querySelectorAll('ecl-accordion-item');
+
+    items.forEach((item: any, index: number) => { 
+      const container = item.querySelector('.ecl-accordion__item');
+      if (container) {
+        container.classList.toggle('is-first', index === 0);
+        container.classList.toggle('is-last', index === items.length - 1);
+      }
+
+      item.addEventListener('toggleItem', (e) => {
+        const id = e.detail;
+
+        // Just toggle the clicked item, don't collapse the others
+        if (item.itemId === id) {
+          item.expanded = !item.expanded;
+        }
       });
     });
   }

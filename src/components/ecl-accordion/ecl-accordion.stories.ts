@@ -6,6 +6,7 @@ const Template = (args) =>
   `<ecl-accordion 
     theme="${args.theme}"
     ecl-script
+    color-mode="${args.color_mode}"
   >
     <ecl-accordion-item
       item-id="ecl-accordion-item-id-1"

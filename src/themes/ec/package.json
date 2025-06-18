@@ -1,30 +1,24 @@
 {
-  "name": "@ecl/web-components-accordion",
+  "name": "@ecl/web-components-theme-ec",
   "author": "European Commission",
   "license": "EUPL-1.2",
   "version": "0.15.1",
-  "description": "ECL Button",
-  "main": "ecl-accordion.tsx",
+  "description": "ECL Web components theme EC",
+  "main": "src/custom-properties-ec.scss",
   "private": true,
   "scripts": {
-    "build:copy": "cross-env ecl-builder copy",
     "build:styles": "cross-env ecl-builder styles",
-    "build:scripts": "cross-env ecl-builder scripts",
-    "build": "run-p clean build:*",
-    "clean": "rimraf build",
-    "prepublish": "npm run build"
+    "build": "npm run build:styles",
+    "prepublish": "npm run build",
+    "copy:colors": "ncp ./node_modules/@ecl/preset-ec/dist/styles/ecl-ec-color-modes.css ../../../static/ecl-ec-color-modes.css",
+    "copy:font": "ncp node_modules/@ecl/preset-ec/dist/fonts ../../../static/fonts/",
+    "postinstall": "run-p copy:*"
   },
   "devDependencies": {
     "@ecl/builder": "5.0.0-alpha.13",
-    "@ecl/resources-icons": "5.0.0-alpha.13",
     "@ecl/theme-ec": "5.0.0-alpha.13",
-    "@ecl/theme-eu": "5.0.0-alpha.13",
-    "@ecl/accordion": "5.0.0-alpha.13",
-    "@ecl/button": "5.0.0-alpha.13",
-    "@ecl/icon": "5.0.0-alpha.13",
-    "@ecl/grid": "5.0.0-alpha.13",
-    "@ecl/utility-screen-reader": "5.0.0-alpha.13",
-    "cross-env": "7.0.3"
+    "@ecl/preset-ec": "5.0.0-alpha.13",
+    "npm-run-all": "4.1.5"
   },
   "repository": {
     "type": "git",

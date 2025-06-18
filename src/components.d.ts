@@ -7,7 +7,10 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface EclAccordion {
-        "clickedItem": HTMLElement;
+        /**
+          * @default ''
+         */
+        "colorMode": string;
         /**
           * @default false
          */
@@ -25,14 +28,6 @@ export namespace Components {
         "expanded": boolean;
         "itemId": string;
         "label": string;
-        /**
-          * @default ''
-         */
-        "labelCollapsed": string;
-        /**
-          * @default ''
-         */
-        "labelExpanded": string;
         "styleClass": string;
         /**
           * @default 'ec'
@@ -1724,6 +1719,10 @@ export namespace Components {
         "type": string;
     }
 }
+export interface EclAccordionItemCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLEclAccordionItemElement;
+}
 export interface EclDatepickerCustomEvent<T> extends CustomEvent<T> {
     detail: T;
     target: HTMLEclDatepickerElement;
@@ -1759,7 +1758,18 @@ declare global {
         prototype: HTMLEclAccordionElement;
         new (): HTMLEclAccordionElement;
     };
+    interface HTMLEclAccordionItemElementEventMap {
+        "toggleItem": string;
+    }
     interface HTMLEclAccordionItemElement extends Components.EclAccordionItem, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLEclAccordionItemElementEventMap>(type: K, listener: (this: HTMLEclAccordionItemElement, ev: EclAccordionItemCustomEvent<HTMLEclAccordionItemElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLEclAccordionItemElementEventMap>(type: K, listener: (this: HTMLEclAccordionItemElement, ev: EclAccordionItemCustomEvent<HTMLEclAccordionItemElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
     }
     var HTMLEclAccordionItemElement: {
         prototype: HTMLEclAccordionItemElement;
@@ -2379,7 +2389,10 @@ declare global {
 }
 declare namespace LocalJSX {
     interface EclAccordion {
-        "clickedItem"?: HTMLElement;
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
         /**
           * @default false
          */
@@ -2397,14 +2410,7 @@ declare namespace LocalJSX {
         "expanded"?: boolean;
         "itemId"?: string;
         "label"?: string;
-        /**
-          * @default ''
-         */
-        "labelCollapsed"?: string;
-        /**
-          * @default ''
-         */
-        "labelExpanded"?: string;
+        "onToggleItem"?: (event: EclAccordionItemCustomEvent<string>) => void;
         "styleClass"?: string;
         /**
           * @default 'ec'

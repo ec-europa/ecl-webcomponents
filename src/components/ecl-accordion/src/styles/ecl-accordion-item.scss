@@ -2,6 +2,27 @@
   display: block;
 }
 
-.ecl-accordion__item {
-  margin-top: 0.5rem;
+.ecl-accordion__item.sc-ecl-accordion-ec {
+  border-bottom-width: 1px !important;
+}
+
+.ecl-accordion__item.sc-ecl-accordion-eu {
+  border-bottom-width: 2px !important;
+}
+
+.ecl-accordion__item.sc-ecl-accordion-eu:not(.is-first)::before {
+  display: none;
+}
+
+.ecl-accordion__item.is-last {
+  border-bottom: none !important;
+}
+
+.ecl-accordion__item.sc-ecl-accordion-eu:not(.is-first) .ecl-accordion__toggle.sc-ecl-accordion-eu {
+  border-radius: 0 !important;
+}
+
+.ecl-accordion__item.sc-ecl-accordion-eu.is-last .ecl-accordion__toggle.sc-ecl-accordion-eu {
+  border-end-end-radius: var(--s-xs) !important;
+  border-end-start-radius: var(--s-xs) !important;
 }

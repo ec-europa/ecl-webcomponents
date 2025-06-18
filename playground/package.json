@@ -6,7 +6,6 @@
   "description": "ECL web components playground",
   "main": "index.html",
   "private": true,
-  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/planctus/ecl-webcomponents.git"

@@ -13,22 +13,23 @@ const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()
 module.exports = {
   copy: [
     {
-      from: [path.resolve(nodeModules, '@ecl/resources-ec-icons/dist/sprites/icons.svg')],
+      from: [path.resolve(nodeModules, '@ecl/resources-icons/dist/sprites/icons.svg')],
       to: path.resolve(outputFolder, 'images/ec'),
       options: { up: true },
     },
     {
-      from: [path.resolve(nodeModules, '@ecl/resources-eu-icons/dist/sprites/icons.svg')],
+      from: [path.resolve(nodeModules, '@ecl/resources-icons/dist/sprites/icons.svg')],
       to: path.resolve(outputFolder, 'images/eu'),
       options: { up: true },
     },
   ],
   scripts: [
     {
-      entry: path.resolve(nodeModules, '@ecl/vanilla-component-accordion/accordion.js'),
+      entry: path.resolve(nodeModules, '@ecl/accordion/accordion.js'),
       dest: path.resolve(outputFolder, 'scripts/ecl-accordion-vanilla.js'),
       options: {
         banner,
+        format: 'iife',
         moduleName: 'ECL',
         includePaths,
         sourceMap: false,
