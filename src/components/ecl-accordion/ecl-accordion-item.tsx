@@ -17,7 +17,6 @@ export class EclAccordionItem {
   @Prop() theme: string = 'ec';
   @Event() toggleItem: EventEmitter<string>;
 
-
   handleClick = () => {
     this.toggleItem.emit(this.itemId);
   };
@@ -36,9 +35,8 @@ export class EclAccordionItem {
     return (
       <div
         class={this.getClass()}
-        aria-labelledby={titleId}
       >
-        <h3 
+        <div
           class={`ecl-accordion__title sc-ecl-accordion-${this.theme}`}
           id={titleId}
         >
@@ -48,7 +46,6 @@ export class EclAccordionItem {
             onClick={this.handleClick}
             aria-controls={contentId}
             class={`ecl-accordion__toggle sc-ecl-accordion-${this.theme}`}
-            aria-expanded={this.expanded ? 'true' : 'false'}
           >
             <span class={`ecl-accordion__toggle-flex sc-ecl-accordion-${this.theme}`}>
               <span class={`ecl-accordion__toggle-title sc-ecl-accordion-${this.theme}`}>
@@ -58,18 +55,19 @@ export class EclAccordionItem {
                 <ecl-icon
                   icon={this.expanded ? "minus" : 'plus'}
                   theme={this.theme}
-                  size="m"
+                  size="s"
                   style-class={`ecl-accordion__toggle-icon sc-ecl-accordion-${this.theme}`}
                   data-ecl-accordion-icon
                 ></ecl-icon>
               </span>
             </span>
           </button>
-        </h3>
+        </div>
         <div 
           class={`ecl-accordion__content sc-ecl-accordion-${this.theme}`}
           role="region"
           id={contentId}
+          aria-labelledby={titleId}
           hidden={this.expanded !== true}
         >
           <slot></slot>

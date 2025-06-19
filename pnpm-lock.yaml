@@ -432,6 +432,9 @@ importers:
       '@ecl/utility-screen-reader':
         specifier: 5.0.0-alpha.13
         version: 5.0.0-alpha.13
+      '@ecl/web-components-icon':
+        specifier: 0.15.1
+        version: link:../ecl-icon
       cross-env:
         specifier: 7.0.3
         version: 7.0.3

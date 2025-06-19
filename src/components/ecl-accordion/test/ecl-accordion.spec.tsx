@@ -1,11 +1,12 @@
 import { newSpecPage } from '@stencil/core/testing';
 import { EclAccordion } from '../ecl-accordion';
 import { EclAccordionItem } from '../ecl-accordion-item';
+import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-accordion', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclAccordion, EclAccordionItem],
+      components: [EclAccordion, EclAccordionItem, EclIcon],
       html: `<ecl-accordion theme="ec">
               <ecl-accordion-item
                 item-id="ecl-accordion-item-id-1"
