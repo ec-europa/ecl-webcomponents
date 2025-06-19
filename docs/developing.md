@@ -32,8 +32,13 @@ pnpm dev
 ```
 
 It will open a tab in your browser with storybook loaded.
-Any change the developers make on a file used by the component, or to the component itself will also trigger an hmr action, out of the box,
-reloading the page is rarely needed.
+Any change the developers make on a file used by the component, or to the component itself will also trigger an hmr action, out of the box.
+If the change is on a scss file in the src folder, you will need to run the build script of the component itself:
+
+```bash
+cd src/components/ecl-{name of the component}
+pnpm build
+```
 
 ## Generate the file system for a new component
 

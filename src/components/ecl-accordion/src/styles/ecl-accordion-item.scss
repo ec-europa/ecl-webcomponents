@@ -26,3 +26,8 @@
   border-end-end-radius: var(--s-xs) !important;
   border-end-start-radius: var(--s-xs) !important;
 }
+
+.ecl-accordion__item.sc-ecl-accordion-eu.is-first .ecl-accordion__toggle.sc-ecl-accordion-eu {
+  border-end-end-radius: 0 !important;
+  border-end-start-radius: 0 !important;
+}
