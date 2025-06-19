@@ -117,6 +117,7 @@
     "replace-in-file": "7.1.0",
     "rimraf": "6.0.1",
     "storybook": "9.0.10",
+    "@storybook/addon-docs": "9.0.10",
     "stylelint": "16.20.0",
     "stylelint-config-css-modules": "4.4.0",
     "stylelint-config-prettier": "9.0.5",

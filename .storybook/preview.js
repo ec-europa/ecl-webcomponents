@@ -5,6 +5,7 @@ defineCustomElements();
 
 export const parameters = {
   docs: {
+    codePanel: true,
     canvas: { sourceState: 'shown' },
   },
   viewMode: 'docs',
