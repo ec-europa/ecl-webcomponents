@@ -5,15 +5,21 @@ This should be limited as much as possible, but in some cases it's really needed
 
 ## How to patch a package?
 
-Make the needed modifications to the files in node_modules and run:
+Run pnpm patch
 
 ```bash
-yarn patch {nameOfThePackage}
+pnpm patch {name of the package}
+```
+
+Make the needed modifications to the files in the folder where the package has been copied
+
+```bash
+pnpm patch-commit {path to the patched package}
 ```
 
 ## How are the patches applied?
 
-Simply running yarn is also applying the patches defined in the `patches` folder.
+Simply running pnpm install is also applying the patches defined in the `patches` folder.
 
 ## How are these patches maintained?
 

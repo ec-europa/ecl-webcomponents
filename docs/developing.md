@@ -2,8 +2,8 @@
 
 ## Software requirements
 
-- Node.js = 18
-- yarn >= 1.10.1
+- Node.js = 22.11.0
+- pnpm >= 10.9.0
 
 ## How to start?
 
@@ -13,22 +13,22 @@ Cloning the repository from [github](https://github.com/ec-europa/ecl-webcompone
 git clone git@github.com:ec-europa/ecl-webcomponents.git
 ```
 
-Then running yarn in the folder where the repository was cloned into.
+Then running pnpm install in the folder where the repository was cloned into.
 
 ```bash
-yarn
+pnpm install
 ```
 
 To run stencil that will compile the components and the documentation:
 
 ```bash
-yarn start
+pnpm start
 ```
 
 In a different shell you can then start storybook:
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 It will open a tab in your browser with storybook loaded.
@@ -38,7 +38,7 @@ reloading the page is rarely needed.
 ## Generate the file system for a new component
 
 ```bash
-yarn generate ecl-{component}
+pnpm generate ecl-{component}
 ```
 
 ## Defining tests
@@ -50,13 +50,13 @@ The test is defined in the test folder inside the component root and it is named
 ## Run tests on the component
 
 ```bash
-yarn test ecl-{component}
+pnpm test ecl-{component}
 ```
 
 ## Linting files
 
 ```bash
-yarn lint
+pnpm lint
 ```
 
 This will run linters on css and js files separately.
