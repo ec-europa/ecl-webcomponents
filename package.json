@@ -64,7 +64,7 @@
     "update-version": "scripts/update-version.sh"
   },
   "dependencies": {
-    "@stencil/core": "4.35.0"
+    "@stencil/core": "4.35.1"
   },
   "devDependencies": {
     "@ecl/ecl-webcomponents": "0.15.1",
@@ -76,11 +76,11 @@
     "@prettier/plugin-xml": "3.4.1",
     "@stencil/angular-output-target": "0.8.4",
     "@stencil/react-output-target": "0.5.3",
-    "@storybook/addon-links": "9.0.10",
-    "@storybook/html-vite": "9.0.10",
-    "@typescript-eslint/parser": "8.34.0",
-    "@typescript-eslint/eslint-plugin": "8.34.0",
-    "storybook": "9.0.10",
+    "@storybook/addon-links": "9.0.12",
+    "@storybook/html-vite": "9.0.12",
+    "@typescript-eslint/parser": "8.34.1",
+    "@typescript-eslint/eslint-plugin": "8.34.1",
+    "storybook": "9.0.12",
     "@types/jest": "28.1.3",
     "babel-loader": "10.0.0",
     "browser-update": "3.3.55",
@@ -94,9 +94,9 @@
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "10.1.5",
     "eslint-plugin-import": "2.31.0",
-    "eslint-plugin-jest": "28.14.0",
+    "eslint-plugin-jest": "29.0.1",
     "eslint-plugin-jsx-a11y": "6.10.2",
-    "eslint-plugin-prettier": "5.4.1",
+    "eslint-plugin-prettier": "5.5.0",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "5.2.0",
     "get-latest-version": "5.1.0",
@@ -116,7 +116,7 @@
     "react-dom": "18.2.0",
     "replace-in-file": "7.1.0",
     "rimraf": "6.0.1",
-    "stylelint": "16.20.0",
+    "stylelint": "16.21.0",
     "stylelint-config-css-modules": "4.4.0",
     "stylelint-config-prettier": "9.0.5",
     "stylelint-config-standard": "38.0.0",
