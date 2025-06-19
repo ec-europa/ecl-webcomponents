@@ -8,7 +8,7 @@ exports[`ecl-accordion renders 1`] = `
       <!---->
       <div class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
         <div class="ecl-accordion__title sc-ecl-accordion-ec" id="ecl-accordion-item-id-1-title">
-          <button aria-controls="ecl-accordion-item-id-1-content" class="ecl-accordion__toggle sc-ecl-accordion-ec" data-ecl-accordion-toggle type="button">
+          <button aria-controls="ecl-accordion-item-id-1-content" aria-expanded="false" class="ecl-accordion__toggle sc-ecl-accordion-ec" data-ecl-accordion-toggle type="button">
             <span class="ecl-accordion__toggle-flex sc-ecl-accordion-ec">
               <span class="ecl-accordion__toggle-title sc-ecl-accordion-ec">
                 Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy
@@ -32,7 +32,7 @@ exports[`ecl-accordion renders 1`] = `
       <!---->
       <div class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
         <div class="ecl-accordion__title sc-ecl-accordion-ec" id="ecl-accordion-item-id-2-title">
-          <button aria-controls="ecl-accordion-item-id-2-content" class="ecl-accordion__toggle sc-ecl-accordion-ec" data-ecl-accordion-toggle type="button">
+          <button aria-controls="ecl-accordion-item-id-2-content" aria-expanded="true" class="ecl-accordion__toggle sc-ecl-accordion-ec" data-ecl-accordion-toggle type="button">
             <span class="ecl-accordion__toggle-flex sc-ecl-accordion-ec">
               <span class="ecl-accordion__toggle-title sc-ecl-accordion-ec">
                 Energy union and climate
@@ -56,7 +56,7 @@ exports[`ecl-accordion renders 1`] = `
       <!---->
       <div class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
         <div class="ecl-accordion__title sc-ecl-accordion-ec" id="ecl-accordion-item-id-3-title">
-          <button aria-controls="ecl-accordion-item-id-3-content" class="ecl-accordion__toggle sc-ecl-accordion-ec" data-ecl-accordion-toggle type="button">
+          <button aria-controls="ecl-accordion-item-id-3-content" aria-expanded="false" class="ecl-accordion__toggle sc-ecl-accordion-ec" data-ecl-accordion-toggle type="button">
             <span class="ecl-accordion__toggle-flex sc-ecl-accordion-ec">
               <span class="ecl-accordion__toggle-title sc-ecl-accordion-ec">
                 Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy

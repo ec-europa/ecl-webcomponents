@@ -45,6 +45,7 @@ export class EclAccordionItem {
             data-ecl-accordion-toggle
             onClick={this.handleClick}
             aria-controls={contentId}
+            aria-expanded={this.expanded ? 'true' : 'false'}
             class={`ecl-accordion__toggle sc-ecl-accordion-${this.theme}`}
           >
             <span class={`ecl-accordion__toggle-flex sc-ecl-accordion-${this.theme}`}>
