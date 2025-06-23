@@ -4,9 +4,10 @@ exports[`ecl-blockquote renders 1`] = `
 <ecl-blockquote author="President Juncker" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image-square.jpg" theme="ec">
   <!---->
   <figure class="ecl-blockquote">
+    <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image-square.jpg" imgclass="ecl-blockquote__image sc-ecl-blockquote-ec" styleclass="ecl-blockquote__picture sc-ecl-picture-ec"></ecl-picture>
     <div class="ecl-blockquote__body">
       <blockquote class="ecl-blockquote__quote">
-        <p class="ecl-blockquote__citation">
+        <p class="ecl-blockquote__citation" lang="en">
           An interconnected grid will help deliver the ultimate goal of the Energy Union, to make sure affordable, secure and sustainable energy, and also growth across the EU.
         </p>
       </blockquote>
@@ -16,7 +17,6 @@ exports[`ecl-blockquote renders 1`] = `
         </cite>
       </footer>
     </div>
-    <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image-square.jpg" imgclass="ecl-blockquote__image sc-ecl-blockquote-ec" styleclass="ecl-blockquote__picture sc-ecl-picture-ec"></ecl-picture>
   </figure>
 </ecl-blockquote>
 `;

@@ -73,8 +73,13 @@ export namespace Components {
     }
     interface EclBlockquote {
         "author": string;
+        "colorMode": string;
         "image": string;
         "imageAlt": string;
+        /**
+          * @default 'en'
+         */
+        "language": string;
         /**
           * @default ''
          */
@@ -2456,8 +2461,13 @@ declare namespace LocalJSX {
     }
     interface EclBlockquote {
         "author"?: string;
+        "colorMode"?: string;
         "image"?: string;
         "imageAlt"?: string;
+        /**
+          * @default 'en'
+         */
+        "language"?: string;
         /**
           * @default ''
          */
