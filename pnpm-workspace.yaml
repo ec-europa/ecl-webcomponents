@@ -2,6 +2,7 @@ packages:
   - "src/components/**"
   - "playground"
   - "src/plugins/**"
+  - "src/themes/*"
   - "packages/*"
   - "packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular"
   - "!packages/**/dist"

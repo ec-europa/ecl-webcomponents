@@ -1,4 +1,4 @@
-import { Component, Prop, Element, h } from '@stencil/core';
+import { Component, Prop, Element, h, Event, EventEmitter } from '@stencil/core';
 
 @Component({
   tag: 'ecl-accordion-item',
@@ -15,8 +15,11 @@ export class EclAccordionItem {
   @Prop() itemId: string;
   @Prop({reflect:true}) expanded: boolean;
   @Prop() theme: string = 'ec';
-  @Prop() labelExpanded = '';
-  @Prop() labelCollapsed = '';
+  @Event() toggleItem: EventEmitter<string>;
+
+  handleClick = () => {
+    this.toggleItem.emit(this.itemId);
+  };
   
   getClass(): string {
     return [
@@ -32,44 +35,40 @@ export class EclAccordionItem {
     return (
       <div
         class={this.getClass()}
-        aria-labelledby={titleId}
       >
-        <h3 
+        <div
           class={`ecl-accordion__title sc-ecl-accordion-${this.theme}`}
           id={titleId}
         >
           <button
             type="button"
             data-ecl-accordion-toggle
+            onClick={this.handleClick}
             aria-controls={contentId}
-            class={`ecl-accordion__toggle sc-ecl-accordion-${this.theme}`}
             aria-expanded={this.expanded ? 'true' : 'false'}
-            data-ecl-label-collapsed={this.labelCollapsed}
-            data-ecl-label-expanded={this.labelExpanded}
+            class={`ecl-accordion__toggle sc-ecl-accordion-${this.theme}`}
           >
             <span class={`ecl-accordion__toggle-flex sc-ecl-accordion-${this.theme}`}>
+              <span class={`ecl-accordion__toggle-title sc-ecl-accordion-${this.theme}`}>
+                {this.label}
+              </span>
               <span class={`ecl-accordion__toggle-indicator sc-ecl-accordion-${this.theme}`}>
-                <span class={`ecl-accordion__toggle-label sc-ecl-accordion-${this.theme}`}>
-                  {this.expanded ? this.labelExpanded : this.labelCollapsed}
-                </span>
                 <ecl-icon
                   icon={this.expanded ? "minus" : 'plus'}
                   theme={this.theme}
-                  size="m"
+                  size="s"
                   style-class={`ecl-accordion__toggle-icon sc-ecl-accordion-${this.theme}`}
                   data-ecl-accordion-icon
                 ></ecl-icon>
               </span>
-              <span class={`ecl-accordion__toggle-title sc-ecl-accordion-${this.theme}`}>
-                {this.label}
-              </span>
             </span>
           </button>
-        </h3>
+        </div>
         <div 
           class={`ecl-accordion__content sc-ecl-accordion-${this.theme}`}
           role="region"
           id={contentId}
+          aria-labelledby={titleId}
           hidden={this.expanded !== true}
         >
           <slot></slot>

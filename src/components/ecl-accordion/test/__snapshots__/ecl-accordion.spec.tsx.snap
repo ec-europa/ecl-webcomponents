@@ -6,69 +6,72 @@ exports[`ecl-accordion renders 1`] = `
   <div class="ecl-accordion">
     <ecl-accordion-item icon-path="/icons.svg" item-id="ecl-accordion-item-id-1" label="Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy" label-collapsed="Open" label-expanded="Close">
       <!---->
-      <div aria-labelledby="ecl-accordion-item-id-1-title" class="ecl-accordion__item sc-ecl-accordion-ec">
-        <h3 class="ecl-accordion__title sc-ecl-accordion-ec" id="ecl-accordion-item-id-1-title">
-          <button aria-controls="ecl-accordion-item-id-1-content" aria-expanded="false" class="ecl-accordion__toggle sc-ecl-accordion-ec" data-ecl-accordion-toggle data-ecl-label-collapsed="Open" data-ecl-label-expanded="Close" type="button">
+      <div class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
+        <div class="ecl-accordion__title sc-ecl-accordion-ec" id="ecl-accordion-item-id-1-title">
+          <button aria-controls="ecl-accordion-item-id-1-content" aria-expanded="false" class="ecl-accordion__toggle sc-ecl-accordion-ec" data-ecl-accordion-toggle type="button">
             <span class="ecl-accordion__toggle-flex sc-ecl-accordion-ec">
-              <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
-                <span class="ecl-accordion__toggle-label sc-ecl-accordion-ec">
-                  Open
-                </span>
-                <ecl-icon data-ecl-accordion-icon icon="plus" size="m" style-class="ecl-accordion__toggle-icon sc-ecl-accordion-ec" theme="ec"></ecl-icon>
-              </span>
               <span class="ecl-accordion__toggle-title sc-ecl-accordion-ec">
                 Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy
               </span>
+              <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
+                <ecl-icon data-ecl-accordion-icon style-class="ecl-accordion__toggle-icon sc-ecl-accordion-ec">
+                  <svg class="ecl-accordion__toggle-icon ecl-icon ecl-icon--s sc-ecl-accordion-ec">
+                    <use xlink:href="/build/images/ec/icons.svg#plus"></use>
+                  </svg>
+                </ecl-icon>
+              </span>
             </span>
           </button>
-        </h3>
-        <div class="ecl-accordion__content sc-ecl-accordion-ec" hidden="" id="ecl-accordion-item-id-1-content" role="region">
+        </div>
+        <div aria-labelledby="ecl-accordion-item-id-1-title" class="ecl-accordion__content sc-ecl-accordion-ec" hidden="" id="ecl-accordion-item-id-1-content" role="region">
           Accordion item label
         </div>
       </div>
     </ecl-accordion-item>
     <ecl-accordion-item expanded="" icon-path="/icons.svg" item-id="ecl-accordion-item-id-2" label="Energy union and climate" label-collapsed="Open" label-expanded="Close">
       <!---->
-      <div aria-labelledby="ecl-accordion-item-id-2-title" class="ecl-accordion__item sc-ecl-accordion-ec">
-        <h3 class="ecl-accordion__title sc-ecl-accordion-ec" id="ecl-accordion-item-id-2-title">
-          <button aria-controls="ecl-accordion-item-id-2-content" aria-expanded="true" class="ecl-accordion__toggle sc-ecl-accordion-ec" data-ecl-accordion-toggle data-ecl-label-collapsed="Open" data-ecl-label-expanded="Close" type="button">
+      <div class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
+        <div class="ecl-accordion__title sc-ecl-accordion-ec" id="ecl-accordion-item-id-2-title">
+          <button aria-controls="ecl-accordion-item-id-2-content" aria-expanded="true" class="ecl-accordion__toggle sc-ecl-accordion-ec" data-ecl-accordion-toggle type="button">
             <span class="ecl-accordion__toggle-flex sc-ecl-accordion-ec">
-              <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
-                <span class="ecl-accordion__toggle-label sc-ecl-accordion-ec">
-                  Close
-                </span>
-                <ecl-icon data-ecl-accordion-icon icon="minus" size="m" style-class="ecl-accordion__toggle-icon sc-ecl-accordion-ec" theme="ec"></ecl-icon>
-              </span>
               <span class="ecl-accordion__toggle-title sc-ecl-accordion-ec">
                 Energy union and climate
               </span>
+              <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
+                <ecl-icon data-ecl-accordion-icon style-class="ecl-accordion__toggle-icon sc-ecl-accordion-ec">
+                  <svg class="ecl-accordion__toggle-icon ecl-icon ecl-icon--s sc-ecl-accordion-ec">
+                    <use xlink:href="/build/images/ec/icons.svg#minus"></use>
+                  </svg>
+                </ecl-icon>
+              </span>
             </span>
           </button>
-        </h3>
-        <div class="ecl-accordion__content sc-ecl-accordion-ec" id="ecl-accordion-item-id-2-content" role="region">
+        </div>
+        <div aria-labelledby="ecl-accordion-item-id-2-title" class="ecl-accordion__content sc-ecl-accordion-ec" id="ecl-accordion-item-id-2-content" role="region">
           Accordion item label
         </div>
       </div>
     </ecl-accordion-item>
     <ecl-accordion-item item-id="ecl-accordion-item-id-3" label="Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy" label-collapsed="Open" label-expanded="Close">
       <!---->
-      <div aria-labelledby="ecl-accordion-item-id-3-title" class="ecl-accordion__item sc-ecl-accordion-ec">
-        <h3 class="ecl-accordion__title sc-ecl-accordion-ec" id="ecl-accordion-item-id-3-title">
-          <button aria-controls="ecl-accordion-item-id-3-content" aria-expanded="false" class="ecl-accordion__toggle sc-ecl-accordion-ec" data-ecl-accordion-toggle data-ecl-label-collapsed="Open" data-ecl-label-expanded="Close" type="button">
+      <div class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
+        <div class="ecl-accordion__title sc-ecl-accordion-ec" id="ecl-accordion-item-id-3-title">
+          <button aria-controls="ecl-accordion-item-id-3-content" aria-expanded="false" class="ecl-accordion__toggle sc-ecl-accordion-ec" data-ecl-accordion-toggle type="button">
             <span class="ecl-accordion__toggle-flex sc-ecl-accordion-ec">
-              <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
-                <span class="ecl-accordion__toggle-label sc-ecl-accordion-ec">
-                  Open
-                </span>
-                <ecl-icon data-ecl-accordion-icon icon="plus" size="m" style-class="ecl-accordion__toggle-icon sc-ecl-accordion-ec" theme="ec"></ecl-icon>
-              </span>
               <span class="ecl-accordion__toggle-title sc-ecl-accordion-ec">
                 Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy
               </span>
+              <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
+                <ecl-icon data-ecl-accordion-icon style-class="ecl-accordion__toggle-icon sc-ecl-accordion-ec">
+                  <svg class="ecl-accordion__toggle-icon ecl-icon ecl-icon--s sc-ecl-accordion-ec">
+                    <use xlink:href="/build/images/ec/icons.svg#plus"></use>
+                  </svg>
+                </ecl-icon>
+              </span>
             </span>
           </button>
-        </h3>
-        <div class="ecl-accordion__content sc-ecl-accordion-ec" hidden="" id="ecl-accordion-item-id-3-content" role="region">
+        </div>
+        <div aria-labelledby="ecl-accordion-item-id-3-title" class="ecl-accordion__content sc-ecl-accordion-ec" hidden="" id="ecl-accordion-item-id-3-content" role="region">
           Accordion item label
         </div>
       </div>

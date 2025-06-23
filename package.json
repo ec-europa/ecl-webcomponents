@@ -53,7 +53,7 @@
     "plugins:dev": "pnpm --filter \"@ecl/ckeditor5-*\" run dev",
     "plugins:make": "pnpm --filter \"@ecl/ckeditor5-*\" run build",
     "postinstall": "[ -z \"$NOpnpmPOSTINSTALL\" ] && (pnpm recursive run postinstall && pnpm recursive run prepublish) || echo \"Bypass prepublish\"",
-    "refresh-playground": "pnpm --filter \"@ecl/ckeditor5-*\" run dev:install-plugin && lerna --scope \"@ecl/ckeditor5-*\" run build && pnpm build:playground",
+    "refresh-playground": "pnpm --filter \"@ecl/ckeditor5-*\" run dev:install-plugin && pnpm --filter \"@ecl/ckeditor5-*\" run build && pnpm build:playground",
     "dev": "storybook dev -p 6006",
     "dev-react": "pnpm --filter \"@ecl/ecl-webcomponents-react*\" run dev",
     "dev-angular:watch": "cd packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular-consumer && npm run watch",
@@ -67,12 +67,14 @@
     "@stencil/core": "4.35.1"
   },
   "devDependencies": {
-    "@ecl/ecl-webcomponents": "0.15.1",
     "@babel/core": "7.27.4",
     "@babel/eslint-parser": "7.27.5",
     "@babel/plugin-transform-runtime": "7.27.4",
     "@babel/preset-react": "7.27.1",
     "@babel/preset-typescript": "7.27.1",
+    "@ecl/ecl-webcomponents": "0.15.1",
+    "@eslint/js": "9.29.0",
+    "@ecl/preset-ec": "5.0.0-alpha.13",
     "@prettier/plugin-xml": "3.4.1",
     "@stencil/angular-output-target": "0.8.4",
     "@stencil/react-output-target": "0.5.3",
@@ -82,6 +84,8 @@
     "@typescript-eslint/eslint-plugin": "8.34.1",
     "storybook": "9.0.12",
     "@types/jest": "28.1.3",
+    "@typescript-eslint/eslint-plugin": "8.34.0",
+    "@typescript-eslint/parser": "8.34.0",
     "babel-loader": "10.0.0",
     "browser-update": "3.3.55",
     "build-number-generator": "2.0.4",
@@ -89,7 +93,6 @@
     "core-js": "3.43.0",
     "cross-env": "7.0.3",
     "eslint": "9.29.0",
-    "@eslint/js": "9.29.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "10.1.5",
@@ -116,6 +119,8 @@
     "react-dom": "18.2.0",
     "replace-in-file": "7.1.0",
     "rimraf": "6.0.1",
+    "storybook": "9.0.12",
+    "@storybook/addon-docs": "9.0.12",
     "stylelint": "16.21.0",
     "stylelint-config-css-modules": "4.4.0",
     "stylelint-config-prettier": "9.0.5",
@@ -155,14 +160,14 @@
     "patchedDependencies": {
       "@ecl/builder@3.13.0": "patches/@ecl__builder@3.13.0.patch",
       "@ecl/theme-dev@3.13.0": "patches/@ecl__theme-dev@3.13.0.patch",
-      "@ecl/vanilla-component-accordion@3.13.0": "patches/@ecl__vanilla-component-accordion@3.13.0.patch",
       "@ecl/vanilla-component-button@3.13.0": "patches/@ecl__vanilla-component-button@3.13.0.patch",
       "@ecl/vanilla-component-card@3.13.0": "patches/@ecl__vanilla-component-card@3.13.0.patch",
       "@ecl/vanilla-component-carousel@3.13.0": "patches/@ecl__vanilla-component-carousel@3.13.0.patch",
       "@ecl/vanilla-component-category-filter@3.13.0": "patches/@ecl__vanilla-component-category-filter@3.13.0.patch",
       "@ecl/vanilla-component-content-block@3.13.0": "patches/@ecl__vanilla-component-content-block@3.13.0.patch",
       "@ecl/vanilla-component-select@3.13.0": "patches/@ecl__vanilla-component-select@3.13.0.patch",
-      "@stencil/react-output-target@0.5.3": "patches/@stencil__react-output-target@0.5.3.patch"
+      "@stencil/react-output-target@0.5.3": "patches/@stencil__react-output-target@0.5.3.patch",
+      "@ecl/builder@5.0.0-alpha.13": "patches/@ecl__builder@5.0.0-alpha.13.patch"
     }
   }
 }

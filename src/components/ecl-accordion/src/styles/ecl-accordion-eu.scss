@@ -1,8 +1,19 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-layout-grid/grid';
-@use '@ecl/vanilla-component-icon/icon-eu';
-@use '@ecl/vanilla-component-button/button-eu';
-@use '@ecl/vanilla-component-accordion/accordion-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/icon/icon' with (
+  $theme: theme.$theme
+);
+@use '@ecl/button/button' with (
+  $theme: theme.$theme,
+  $button: var.$button
+);
+@use '@ecl/accordion/accordion' with (
+  $theme: theme.$theme,
+  $accordion: var.$accordion
+);
 
 :host {
   @extend .ecl-accordion;

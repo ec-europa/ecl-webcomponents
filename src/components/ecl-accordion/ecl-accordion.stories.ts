@@ -6,13 +6,12 @@ const Template = (args) =>
   `<ecl-accordion 
     theme="${args.theme}"
     ecl-script
+    color-mode="${args.color_mode}"
   >
     <ecl-accordion-item
       item-id="ecl-accordion-item-id-1"
       label="Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy"
       theme="${args.theme}"
-      label-expanded="Close"
-      label-collapsed="Open"
     >
       The College of Commissioners held today the first weekly meeting of 2019 which was devoted to discussing the
       challenges of this new year. Commissioners used the opportunity to take stock and discuss the year ahead,
@@ -24,8 +23,6 @@ const Template = (args) =>
       label="Energy union and climate"
       expanded
       theme="${args.theme}"
-      label-expanded="Close"
-      label-collapsed="Open"
     >
       A balanced and progressive trade policy to harness globalisation
     </ecl-accordion-item>
@@ -34,8 +31,6 @@ const Template = (args) =>
       item-id="ecl-accordion-item-id-3"
       label="Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy"
       theme="${args.theme}"
-      label-expanded="Close"
-      label-collapsed="Open"
     >
       In the modern global economy trade is essential for growth, <ecl-link path="https://ec.europa.eu/">jobs</ecl-link> and competiveness, and the EU is committed to
       maintaining an open and rules-based trading system. With the rising threat of protectionism and weakened
