@@ -465,24 +465,21 @@ importers:
 
   src/components/ecl-blockquote:
     devDependencies:
-      '@ecl//vanilla-layout-grid':
-        specifier: 3.13.0
-        version: '@ecl/vanilla-layout-grid@3.13.0'
+      '@ecl/blockquote':
+        specifier: 5.0.0-alpha.13
+        version: 5.0.0-alpha.13
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.29.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.13
+        version: 5.0.0-alpha.13(patch_hash=c0fbb443cc50de86c9f4da2dfe52fcd05b116b3dd223671a33c1a30d2ca0f516)(@types/babel__core@7.20.5)(eslint@9.29.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.13
+        version: 5.0.0-alpha.13
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.13
+        version: 5.0.0-alpha.13
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-blockquote':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.13
+        version: 5.0.0-alpha.13
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -3139,9 +3136,6 @@ packages:
 
   '@ecl/vanilla-component-banner@3.13.0':
     resolution: {integrity: sha512-bkzQWitK/G34gsljJi8UeMF4WiyQGpWdb2CYAi8/08voMg/RiQG591E1bvQqzxqDjIpsSG1928gVwE/RCa0QBw==}
-
-  '@ecl/vanilla-component-blockquote@3.13.0':
-    resolution: {integrity: sha512-9dukeaBQ6RWB7vLfSuO0C2/DvxB/eBi5hRrZ4SAXp3HI9z7KZBXZcAKUsNlGMh2An3DwpCK22Ta2uaAgr7On9g==}
 
   '@ecl/vanilla-component-breadcrumb@3.13.0':
     resolution: {integrity: sha512-2tmWkyyg5IHSGVHgs9F/ZiXBlyzOUw9Rod7G/ulWOJsK8rJpfHtwCse8BgEoE7fX+/irmP2CDDul+1/boy/MpQ==}
@@ -14707,11 +14701,6 @@ snapshots:
   '@ecl/utility-z-index@5.0.0-alpha.13': {}
 
   '@ecl/vanilla-component-banner@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
-
-  '@ecl/vanilla-component-blockquote@3.13.0':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
       '@ecl/vanilla-layout-grid': 3.13.0

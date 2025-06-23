@@ -15,29 +15,26 @@ export class EclBlockquote {
   @Prop() image: string;
   @Prop() author: string;
   @Prop() imageAlt: string;
+  @Prop() colorMode: string;
+  @Prop() language: string = 'en';
 
   getClass(): string {
-    return [
+    const styleClasses = [
       `ecl-blockquote`,
       this.styleClass
-    ].join(' ');
+    ];
+
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`)
+    }
+
+    return styleClasses.join(' ');
   }
 
   render() {
     return (
       <figure class={this.getClass()}>
-        <div class="ecl-blockquote__body">
-          <blockquote class="ecl-blockquote__quote">
-            <p class="ecl-blockquote__citation">
-              <slot></slot>
-            </p>
-          </blockquote>
-          { this.author ?
-          <footer class="ecl-blockquote__attribution">
-            <cite class="ecl-blockquote__author">{this.author}</cite>
-          </footer> : '' }
-        </div>
-        { this.image ?
+      { this.image ?
         <ecl-picture
           styleClass={`ecl-blockquote__picture sc-ecl-picture-${this.theme}`}
           imgClass={`ecl-blockquote__image sc-ecl-blockquote-${this.theme}`}
@@ -46,7 +43,18 @@ export class EclBlockquote {
         >
           <slot name="sources"></slot>
         </ecl-picture>
-          : ''}
+      : ''}
+        <div class="ecl-blockquote__body">
+          <blockquote class="ecl-blockquote__quote">
+            <p class="ecl-blockquote__citation" lang={this.language}>
+              <slot></slot>
+            </p>
+          </blockquote>
+          { this.author ?
+          <footer class="ecl-blockquote__attribution">
+            <cite class="ecl-blockquote__author">{this.author}</cite>
+          </footer> : '' }
+        </div>
       </figure>
     );
   }

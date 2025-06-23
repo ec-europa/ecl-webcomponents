@@ -1,2 +1,9 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-component-blockquote/blockquote-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/blockquote/blockquote' with (
+  $theme: theme.$theme,
+  $blockquote: var.$blockquote
+);
