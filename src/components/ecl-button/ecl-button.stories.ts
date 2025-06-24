@@ -60,6 +60,11 @@ const getArgTypes = () => {
         'flip-vertical',
       ],
     },
+    showIndicator: {
+      name: 'show indicator',
+      type: { name: 'boolean' },
+      description: 'Show an indicator (only visible when label is hidden and icon exists)',
+    },
   };
 };
 
@@ -67,13 +72,16 @@ export default {
   title: 'Components/button',
 };
 
-const Template = (args) => 
-  `<ecl-button
+const Template = (args) => {
+  const shouldShowIndicator = args.showIndicator && args.hideLabel && args.icon;
+
+  return `<ecl-button
     type="${args.type}"
     data-ecl-button-icon
     theme="${args.theme}"
     variant="${args.variant}"
     hide-label=${args.hideLabel}
+    ${shouldShowIndicator ? `show-indicator indicator-value="3"` : ''}
   >
   ${args.icon && args.iconPosition === 'before' ?
     `<ecl-icon 
@@ -93,6 +101,7 @@ const Template = (args) =>
     >
     </ecl-icon>` : ''}
   </ecl-button>`;
+}
 
 export const Button = Template.bind({});
 Button.storyName = 'default';

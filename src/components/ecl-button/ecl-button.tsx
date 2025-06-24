@@ -1,4 +1,4 @@
-import { Component, Prop, h, Element } from '@stencil/core';
+import { Component, Prop, h, Element, State } from '@stencil/core';
 
 @Component({
   tag: 'ecl-button',
@@ -19,15 +19,20 @@ export class EclButton {
   @Prop() hideLabel: boolean = false;    
   @Prop() ariaControls: string;
   @Prop() itemId: string;
+  @Prop() showIndicator: boolean = false;
+  @Prop() indicatorValue: string = '';
 
-  componentDidRender() {
+  @State() indicatorSlot: 'before' | 'after' = 'after';
+  @State() hasLabelContent: boolean = false;
+
+  componentDidLoad() {
     const dataAttrs = Object.keys(this.el.dataset);
     if (dataAttrs) {
       dataAttrs.forEach((attr) => {
         const button = this.el.firstElementChild as HTMLElement;
         const attrValue = this.el.dataset[attr];
         if (attrValue === '' || attrValue === attr) {
-          button.dataset[attr] = attr; // Booleans
+          button.dataset[attr] = attr;
         } else {
           button.dataset[attr] = attrValue;
         }
@@ -35,21 +40,40 @@ export class EclButton {
       });
     }
 
-    if (this.el.getElementsByTagName('ecl-icon')[0] && this.el.querySelector('.ecl-icon')) {
-      const slot = this.el.getElementsByTagName('ecl-icon')[0].getAttribute('slot');
-      this.el.querySelector('.ecl-icon').classList.add('ecl-button__icon');
-      if (slot && !this.hideLabel) {
-        this.el.querySelector('.ecl-icon').classList.add(`ecl-button__${slot.substring(0, 5) + '-' + slot.substring(5)}`, `sc-ecl-button-${this.theme}`);
+    const iconEl = this.el.querySelector('ecl-icon');
+    if (iconEl && iconEl.shadowRoot === null) {
+      const slot = iconEl.getAttribute('slot');
+      const svgIcon = this.el.querySelector('.ecl-icon');
+      if (svgIcon) {
+        svgIcon.classList.add('ecl-button__icon');
+        if (slot && !this.hideLabel) {
+          svgIcon.classList.add(`ecl-button__${slot.substring(0, 5)}-${slot.substring(5)}`);
+        }
       }
+    }
+
+    const iconBefore = this.el.querySelector('[slot="icon-before"]');
+    const iconAfter = this.el.querySelector('[slot="icon-after"]');
+
+    if (iconBefore) {
+      this.indicatorSlot = 'before';
+    } else if (iconAfter) {
+      this.indicatorSlot = 'after';
+    }
+
+    const labelEl = this.el.querySelector('.ecl-button__label');
+    if (labelEl) {
+      this.hasLabelContent = labelEl.textContent.trim() !== '';
     }
   }
 
   getClass(): string {
     return [
-      `ecl-button`,
+      'ecl-button',
       `ecl-button--${this.variant}`,
-      this.styleClass
-    ].join(' ');
+      this.hasLabelContent ? 'ecl-button--has-label' : '',
+      this.styleClass,
+    ].join(' ').trim();
   }
 
   render() {
@@ -61,18 +85,31 @@ export class EclButton {
         {...(this.itemId && { id: this.itemId })}
       >
         <span class="ecl-button__container">
-          <slot name="icon-before"></slot>
-        { !this.hideLabel ?
-          <span class="ecl-button__label">
-            <slot></slot>
-          </span> : 
-          <span class="ecl-u-sr-only" data-ecl-label>
-            <slot></slot>
+          <span class="ecl-button__icon-container">
+            <slot name="icon-before"></slot>
+            {this.showIndicator && this.hideLabel && this.indicatorSlot === 'before' && (
+              <ecl-indicator value={this.indicatorValue}></ecl-indicator>
+            )}
           </span>
-        }
-          <slot name="icon-after"></slot>
+
+          {!this.hideLabel ? (
+            <span class="ecl-button__label">
+              <slot></slot>
+            </span>
+          ) : (
+            <span class="ecl-u-sr-only" data-ecl-label>
+              <slot></slot>
+            </span>
+          )}
+
+          <span class="ecl-button__icon-container">
+            <slot name="icon-after"></slot>
+            {this.showIndicator && this.hideLabel && this.indicatorSlot === 'after' && (
+              <ecl-indicator value={this.indicatorValue}></ecl-indicator>
+            )}
+          </span>
         </span>
       </button>
-    )
+    );
   }
 }

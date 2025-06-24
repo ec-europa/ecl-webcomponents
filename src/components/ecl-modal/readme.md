@@ -35,6 +35,7 @@
 graph TD;
   ecl-modal --> ecl-icon
   ecl-modal --> ecl-button
+  ecl-button --> ecl-indicator
   style ecl-modal fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

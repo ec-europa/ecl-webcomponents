@@ -1,29 +1,25 @@
 {
-  "name": "@ecl/web-components-button",
+  "name": "@ecl/web-components-indicator",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.15.1",
-  "description": "ECL Button",
-  "main": "ecl-button.tsx",
+  "version": "0.1.0",
+  "description": "ECL Indicator",
+  "main": "ecl-indicator.ts",
   "private": true,
   "scripts": {
     "build:styles": "cross-env ecl-builder styles",
+    "build:scripts": "cross-env ecl-builder scripts",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
     "prepublish": "npm run build"
   },
   "devDependencies": {
     "@ecl/builder": "5.0.0-alpha.13",
-    "@ecl/button": "5.0.0-alpha.13",
-    "@ecl/grid": "5.0.0-alpha.13",
-    "@ecl/icon": "5.0.0-alpha.13",
-    "@ecl/link": "5.0.0-alpha.13",
-    "@ecl/resources-ec-icons": "3.13.0",
-    "@ecl/resources-eu-icons": "3.13.0",
-    "@ecl/utility-screen-reader": "5.0.0-alpha.13",
+    "@ecl/indicator": "5.0.0-alpha.13",
     "@ecl/theme-ec": "5.0.0-alpha.13",
     "@ecl/theme-eu": "5.0.0-alpha.13",
-    "cross-env": "7.0.3"
+    "cross-env": "7.0.3",
+    "rimraf": "5.0.5"
   },
   "repository": {
     "type": "git",
