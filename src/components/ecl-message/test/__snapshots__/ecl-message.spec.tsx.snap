@@ -12,16 +12,18 @@ exports[`ecl-message renders 1`] = `
     <div class="ecl-message__content">
       <ecl-button data-ecl-message-close style-class="ecl-message__close sc-ecl-message-ec">
         <!---->
-        <button class="ecl-button ecl-button--ghost ecl-message__close sc-ecl-message-ec" data-ecl-message-close="eclMessageClose" type="button">
+        <button class="ecl-button ecl-button--ghost ecl-button--has-label ecl-message__close sc-ecl-message-ec" data-ecl-message-close="eclMessageClose" type="button">
           <span class="ecl-button__container">
             <span class="ecl-button__label">
               Close
             </span>
-            <ecl-icon slot="icon-after" style-class="ecl-button__icon ecl-button__icon--after">
-              <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs sc-ecl-button-ec">
-                <use xlink:href="/build/images/ec/icons.svg#close-filled"></use>
-              </svg>
-            </ecl-icon>
+            <span class="ecl-button__icon-container">
+              <ecl-icon slot="icon-after" style-class="ecl-button__icon ecl-button__icon--after">
+                <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs">
+                  <use xlink:href="/build/images/ec/icons.svg#close-filled"></use>
+                </svg>
+              </ecl-icon>
+            </span>
           </span>
         </button>
       </ecl-button>

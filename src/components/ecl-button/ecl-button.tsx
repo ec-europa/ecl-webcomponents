@@ -21,15 +21,16 @@ export class EclButton {
   @Prop() itemId: string;
   @Prop() showIndicator: boolean = false;
   @Prop() indicatorValue: string = '';
-
   @State() indicatorSlot: 'before' | 'after' = 'after';
   @State() hasLabelContent: boolean = false;
+  @State() hasIconBefore: boolean = false;
+  @State() hasIconAfter: boolean = false;
 
   componentDidLoad() {
     const dataAttrs = Object.keys(this.el.dataset);
     if (dataAttrs) {
       dataAttrs.forEach((attr) => {
-        const button = this.el.firstElementChild as HTMLElement;
+        const button = this.el.querySelector('button');
         const attrValue = this.el.dataset[attr];
         if (attrValue === '' || attrValue === attr) {
           button.dataset[attr] = attr;
@@ -55,12 +56,16 @@ export class EclButton {
     const iconBefore = this.el.querySelector('[slot="icon-before"]');
     const iconAfter = this.el.querySelector('[slot="icon-after"]');
 
-    if (iconBefore) {
+    this.hasIconBefore = !!iconBefore;
+    this.hasIconAfter = !!iconAfter;
+
+    if (this.hasIconBefore) {
       this.indicatorSlot = 'before';
-    } else if (iconAfter) {
+    } else if (this.hasIconAfter) {
       this.indicatorSlot = 'after';
     }
 
+    // Check for label content
     const labelEl = this.el.querySelector('.ecl-button__label');
     if (labelEl) {
       this.hasLabelContent = labelEl.textContent.trim() !== '';
@@ -77,6 +82,11 @@ export class EclButton {
   }
 
   render() {
+    const showBeforeContainer =
+      this.hasIconBefore || (this.showIndicator && this.hideLabel && this.indicatorSlot === 'before');
+    const showAfterContainer =
+      this.hasIconAfter || (this.showIndicator && this.hideLabel && this.indicatorSlot === 'after');
+
     return (
       <button
         class={this.getClass()}
@@ -85,12 +95,14 @@ export class EclButton {
         {...(this.itemId && { id: this.itemId })}
       >
         <span class="ecl-button__container">
-          <span class="ecl-button__icon-container">
-            <slot name="icon-before"></slot>
-            {this.showIndicator && this.hideLabel && this.indicatorSlot === 'before' && (
-              <ecl-indicator value={this.indicatorValue}></ecl-indicator>
-            )}
-          </span>
+          {showBeforeContainer && (
+            <span class="ecl-button__icon-container">
+              <slot name="icon-before"></slot>
+              {this.showIndicator && this.hideLabel && this.indicatorSlot === 'before' && (
+                <ecl-indicator value={this.indicatorValue}></ecl-indicator>
+              )}
+            </span>
+          )}
 
           {!this.hideLabel ? (
             <span class="ecl-button__label">
@@ -102,12 +114,14 @@ export class EclButton {
             </span>
           )}
 
-          <span class="ecl-button__icon-container">
-            <slot name="icon-after"></slot>
-            {this.showIndicator && this.hideLabel && this.indicatorSlot === 'after' && (
-              <ecl-indicator value={this.indicatorValue}></ecl-indicator>
-            )}
-          </span>
+          {showAfterContainer && (
+            <span class="ecl-button__icon-container">
+              <slot name="icon-after"></slot>
+              {this.showIndicator && this.hideLabel && this.indicatorSlot === 'after' && (
+                <ecl-indicator value={this.indicatorValue}></ecl-indicator>
+              )}
+            </span>
+          )}
         </span>
       </button>
     );

@@ -11,16 +11,18 @@ exports[`ecl-search-form renders 1`] = `
     </ecl-form-group>
     <ecl-button aria-label="Search" style-class="ecl-search-form__button sc-ecl-search-form-ec">
       <!---->
-      <button class="ecl-button ecl-button--search ecl-search-form__button sc-ecl-search-form-ec" type="submit">
+      <button class="ecl-button ecl-button--has-label ecl-button--search ecl-search-form__button sc-ecl-search-form-ec" type="submit">
         <span class="ecl-button__container">
           <span class="ecl-button__label">
             Search
           </span>
-          <ecl-icon slot="icon-after" style-class="sc-ecl-search-form-ec">
-            <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-search-form-ec">
-              <use xlink:href="/build/images/ec/icons.svg#search"></use>
-            </svg>
-          </ecl-icon>
+          <span class="ecl-button__icon-container">
+            <ecl-icon slot="icon-after" style-class="sc-ecl-search-form-ec">
+              <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs sc-ecl-search-form-ec">
+                <use xlink:href="/build/images/ec/icons.svg#search"></use>
+              </svg>
+            </ecl-icon>
+          </span>
         </span>
       </button>
     </ecl-button>
