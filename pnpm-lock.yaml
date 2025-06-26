@@ -506,6 +506,13 @@ importers:
         version: 7.0.3
 
   src/components/ecl-button:
+    dependencies:
+      '@ecl/web-components-icon':
+        specifier: 0.15.1
+        version: link:../ecl-icon
+      '@ecl/web-components-indicator':
+        specifier: 0.15.1
+        version: link:../ecl-indicator
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.13
@@ -537,9 +544,6 @@ importers:
       '@ecl/utility-screen-reader':
         specifier: 5.0.0-alpha.13
         version: 5.0.0-alpha.13
-      '@ecl/web-components-icon':
-        specifier: 0.15.1
-        version: link:../ecl-icon
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -1039,12 +1043,6 @@ importers:
         specifier: 5.0.0-alpha.13
         version: 5.0.0-alpha.13(patch_hash=c0fbb443cc50de86c9f4da2dfe52fcd05b116b3dd223671a33c1a30d2ca0f516)(@types/babel__core@7.20.5)(eslint@9.29.0(jiti@1.21.7))
       '@ecl/indicator':
-        specifier: 5.0.0-alpha.13
-        version: 5.0.0-alpha.13
-      '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.13
-        version: 5.0.0-alpha.13
-      '@ecl/theme-eu':
         specifier: 5.0.0-alpha.13
         version: 5.0.0-alpha.13
       cross-env:
