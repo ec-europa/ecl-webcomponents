@@ -74,7 +74,7 @@ const getArgTypes = () => {
       name: 'indicator value',
       type: { name: 'number' },
       description: 'Value of the indicator (only visible when showIndicator is true)',
-      if: { arg: 'showIndicator', truthy: false },
+      if: { arg: 'indicator', truthy: true },
     },
   };
 };
