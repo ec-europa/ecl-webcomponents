@@ -9,11 +9,14 @@ const getArgs = () => {
     iconPosition: 'after',
     iconTransform: '',
     hideLabel: false,
+    indicator: false,
+    indicatorValue: 3,
   };
 };
 
 const getArgTypes = () => {
   return {
+    color_mode: { table: { disable: true } },
     variant: {
       name: 'button variant',
       type: { name: 'select' },
@@ -35,6 +38,7 @@ const getArgTypes = () => {
       name: 'Icon only',
       type: { name: 'boolean'},
       description: 'Hides the label (not for screen-readers)',
+      if: { arg: 'icon', truthy: true },
     },
     icon: {
       name: 'icon',
@@ -60,10 +64,17 @@ const getArgTypes = () => {
         'flip-vertical',
       ],
     },
-    showIndicator: {
-      name: 'show indicator',
+    indicator: {
+      name: 'indicator',
       type: { name: 'boolean' },
       description: 'Show an indicator (only visible when label is hidden and icon exists)',
+      if: { arg: 'icon', truthy: true },
+    },
+    indicatorValue: {
+      name: 'indicator value',
+      type: { name: 'number' },
+      description: 'Value of the indicator (only visible when showIndicator is true)',
+      if: { arg: 'showIndicator', truthy: false },
     },
   };
 };
@@ -73,33 +84,31 @@ export default {
 };
 
 const Template = (args) => {
-  const shouldShowIndicator = args.showIndicator && args.hideLabel && args.icon;
-
   return `<ecl-button
     type="${args.type}"
     data-ecl-button-icon
     theme="${args.theme}"
     variant="${args.variant}"
-    hide-label=${args.hideLabel}
-    ${shouldShowIndicator ? `show-indicator indicator-value="3"` : ''}
+    ${args.hideLabel ? 'hide-label="true"' : ''}s
+    ${args.indicator && args.hideLabel ? `indicator indicator-value="${args.indicatorValue}"` : ''}
   >
-  ${args.icon && args.iconPosition === 'before' ?
-    `<ecl-icon 
-      slot="icon-before"
-      icon="${args.icon}"
-      transform="${args.iconTransform}"
-      theme="${args.theme}"
-    >
-    </ecl-icon>` : ''}
-      ${args.label}
+    ${args.icon && args.iconPosition === 'before' ?
+      `<ecl-icon 
+        slot="icon-before"
+        icon="${args.icon}"
+        transform="${args.iconTransform}"
+        theme="${args.theme}"
+      >
+      </ecl-icon>` : ''}
+    ${args.label}
     ${args.icon && args.iconPosition === 'after' ?
       `<ecl-icon 
         slot="icon-after"
         icon="${args.icon}"
         theme="${args.theme}"
         transform="${args.iconTransform}"
-    >
-    </ecl-icon>` : ''}
+      >
+      </ecl-icon>` : ''}
   </ecl-button>`;
 }
 

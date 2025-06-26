@@ -9,9 +9,9 @@
 | ---------------- | ----------------- | ----------- | --------- | ----------- |
 | `ariaControls`   | `aria-controls`   |             | `string`  | `undefined` |
 | `hideLabel`      | `hide-label`      |             | `boolean` | `false`     |
+| `indicator`      | `indicator`       |             | `boolean` | `false`     |
 | `indicatorValue` | `indicator-value` |             | `string`  | `''`        |
 | `itemId`         | `item-id`         |             | `string`  | `undefined` |
-| `showIndicator`  | `show-indicator`  |             | `boolean` | `false`     |
 | `styleClass`     | `style-class`     |             | `string`  | `''`        |
 | `theme`          | `theme`           |             | `string`  | `'ec'`      |
 | `type`           | `type`            |             | `string`  | `'submit'`  |

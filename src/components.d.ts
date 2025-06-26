@@ -139,14 +139,14 @@ export namespace Components {
          */
         "hideLabel": boolean;
         /**
+          * @default false
+         */
+        "indicator": boolean;
+        /**
           * @default ''
          */
         "indicatorValue": string;
         "itemId": string;
-        /**
-          * @default false
-         */
-        "showIndicator": boolean;
         /**
           * @default ''
          */
@@ -834,6 +834,10 @@ export namespace Components {
           * @default ''
          */
         "extraClasses": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
         /**
           * @default ''
          */
@@ -2556,14 +2560,14 @@ declare namespace LocalJSX {
          */
         "hideLabel"?: boolean;
         /**
+          * @default false
+         */
+        "indicator"?: boolean;
+        /**
           * @default ''
          */
         "indicatorValue"?: string;
         "itemId"?: string;
-        /**
-          * @default false
-         */
-        "showIndicator"?: boolean;
         /**
           * @default ''
          */
@@ -3254,6 +3258,10 @@ declare namespace LocalJSX {
           * @default ''
          */
         "extraClasses"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
         /**
           * @default ''
          */

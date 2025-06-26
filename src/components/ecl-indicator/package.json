@@ -2,9 +2,9 @@
   "name": "@ecl/web-components-indicator",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.1.0",
+  "version": "0.15.1",
   "description": "ECL Indicator",
-  "main": "ecl-indicator.ts",
+  "main": "ecl-indicator.tsx",
   "private": true,
   "scripts": {
     "build:styles": "cross-env ecl-builder styles",
@@ -16,8 +16,6 @@
   "devDependencies": {
     "@ecl/builder": "5.0.0-alpha.13",
     "@ecl/indicator": "5.0.0-alpha.13",
-    "@ecl/theme-ec": "5.0.0-alpha.13",
-    "@ecl/theme-eu": "5.0.0-alpha.13",
     "cross-env": "7.0.3",
     "rimraf": "5.0.5"
   },

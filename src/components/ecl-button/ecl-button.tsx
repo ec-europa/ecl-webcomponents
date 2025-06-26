@@ -19,14 +19,13 @@ export class EclButton {
   @Prop() hideLabel: boolean = false;    
   @Prop() ariaControls: string;
   @Prop() itemId: string;
-  @Prop() showIndicator: boolean = false;
+  @Prop() indicator: boolean = false;
   @Prop() indicatorValue: string = '';
-  @State() indicatorSlot: 'before' | 'after' = 'after';
   @State() hasLabelContent: boolean = false;
   @State() hasIconBefore: boolean = false;
   @State() hasIconAfter: boolean = false;
 
-  componentDidLoad() {
+  componentDidRender() {
     const dataAttrs = Object.keys(this.el.dataset);
     if (dataAttrs) {
       dataAttrs.forEach((attr) => {
@@ -41,15 +40,11 @@ export class EclButton {
       });
     }
 
-    const iconEl = this.el.querySelector('ecl-icon');
-    if (iconEl && iconEl.shadowRoot === null) {
-      const slot = iconEl.getAttribute('slot');
-      const svgIcon = this.el.querySelector('.ecl-icon');
-      if (svgIcon) {
-        svgIcon.classList.add('ecl-button__icon');
-        if (slot && !this.hideLabel) {
-          svgIcon.classList.add(`ecl-button__${slot.substring(0, 5)}-${slot.substring(5)}`);
-        }
+    if (this.el.getElementsByTagName('ecl-icon')[0] && this.el.querySelector('.ecl-icon')) {
+      const slot = this.el.getElementsByTagName('ecl-icon')[0].getAttribute('slot');
+      this.el.querySelector('.ecl-icon').classList.add('ecl-button__icon');
+      if (slot && !this.hideLabel) {
+        this.el.querySelector('.ecl-icon').classList.add(`ecl-button__${slot.substring(0, 5) + '-' + slot.substring(5)}`, `sc-ecl-button-${this.theme}`);
       }
     }
 
@@ -58,12 +53,6 @@ export class EclButton {
 
     this.hasIconBefore = !!iconBefore;
     this.hasIconAfter = !!iconAfter;
-
-    if (this.hasIconBefore) {
-      this.indicatorSlot = 'before';
-    } else if (this.hasIconAfter) {
-      this.indicatorSlot = 'after';
-    }
 
     // Check for label content
     const labelEl = this.el.querySelector('.ecl-button__label');
@@ -82,11 +71,6 @@ export class EclButton {
   }
 
   render() {
-    const showBeforeContainer =
-      this.hasIconBefore || (this.showIndicator && this.hideLabel && this.indicatorSlot === 'before');
-    const showAfterContainer =
-      this.hasIconAfter || (this.showIndicator && this.hideLabel && this.indicatorSlot === 'after');
-
     return (
       <button
         class={this.getClass()}
@@ -95,12 +79,13 @@ export class EclButton {
         {...(this.itemId && { id: this.itemId })}
       >
         <span class="ecl-button__container">
-          {showBeforeContainer && (
+          {this.hasIconBefore && !this.indicator && (
+            <slot name="icon-before"></slot>
+          )}
+          {this.indicator && this.hasIconBefore && (
             <span class="ecl-button__icon-container">
               <slot name="icon-before"></slot>
-              {this.showIndicator && this.hideLabel && this.indicatorSlot === 'before' && (
-                <ecl-indicator value={this.indicatorValue}></ecl-indicator>
-              )}
+              <ecl-indicator value={this.indicatorValue}></ecl-indicator>
             </span>
           )}
 
@@ -114,12 +99,13 @@ export class EclButton {
             </span>
           )}
 
-          {showAfterContainer && (
+          {this.hasIconAfter && !this.indicator && (
+            <slot name="icon-after"></slot>
+          )}
+          {this.indicator && this.hasIconAfter && (
             <span class="ecl-button__icon-container">
               <slot name="icon-after"></slot>
-              {this.showIndicator && this.hideLabel && this.indicatorSlot === 'after' && (
-                <ecl-indicator value={this.indicatorValue}></ecl-indicator>
-              )}
+              <ecl-indicator value={this.indicatorValue}></ecl-indicator>
             </span>
           )}
         </span>

@@ -17,6 +17,17 @@ export class EclIndicator {
   @Prop() value: string = '';
   @Prop() extraClasses: string = '';
   @Prop() eclScript: boolean = false;
+  @Prop() styleClass: string = '';
+
+  getClass(): string {
+    const styleClasses = ['ecl-indicator', this.styleClass];
+
+    if (this.extraClasses) {
+      styleClasses.push(this.extraClasses);
+    }
+
+    return styleClasses.join(' ').trim();
+  }
 
   componentDidRender() {
     if (this.eclScript) {
@@ -37,16 +48,10 @@ export class EclIndicator {
   }
 
   render() {
-    const classes = ['ecl-indicator'];
-    if (this.extraClasses) {
-      classes.push(this.extraClasses);
-    }
-
     return (
       <span
-        class={classes.join(' ')}
+        class={this.getClass()} // Use the getClass method to handle the classes
         data-ecl-indicator
-        data-ecl-auto-init="Indicator"
       >
         {this.value}
       </span>

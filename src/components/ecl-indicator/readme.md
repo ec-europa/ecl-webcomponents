@@ -11,6 +11,7 @@
 | -------------- | --------------- | ----------- | --------- | ------- |
 | `eclScript`    | `ecl-script`    |             | `boolean` | `false` |
 | `extraClasses` | `extra-classes` |             | `string`  | `''`    |
+| `styleClass`   | `style-class`   |             | `string`  | `''`    |
 | `value`        | `value`         |             | `string`  | `''`    |
 
 
