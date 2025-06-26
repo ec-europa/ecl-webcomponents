@@ -16,13 +16,11 @@ exports[`ecl-search-form renders 1`] = `
           <span class="ecl-button__label">
             Search
           </span>
-          <span class="ecl-button__icon-container">
-            <ecl-icon slot="icon-after" style-class="sc-ecl-search-form-ec">
-              <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs sc-ecl-search-form-ec">
-                <use xlink:href="/build/images/ec/icons.svg#search"></use>
-              </svg>
-            </ecl-icon>
-          </span>
+          <ecl-icon slot="icon-after" style-class="sc-ecl-search-form-ec">
+            <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-search-form-ec">
+              <use xlink:href="/build/images/ec/icons.svg#search"></use>
+            </svg>
+          </ecl-icon>
         </span>
       </button>
     </ecl-button>
