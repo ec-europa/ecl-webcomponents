@@ -6,7 +6,7 @@ exports[`ecl-expandable renders 1`] = `
   <div class="ecl-expandable">
     <ecl-button data-ecl-expandable-toggle data-ecl-label-collapsed="Expand" data-ecl-label-expanded="Collapse" style-class="ecl-expandable__toggle sc-ecl-expandable-ec">
       <!---->
-      <button aria-controls="expandable-id-content" class="ecl-button ecl-button--has-label ecl-button--secondary ecl-expandable__toggle sc-ecl-expandable-ec" data-ecl-expandable-toggle="eclExpandableToggle" data-ecl-label-collapsed="Expand" data-ecl-label-expanded="Collapse" type="button">
+      <button aria-controls="expandable-id-content" class="ecl-button ecl-button--secondary ecl-expandable__toggle sc-ecl-expandable-ec" data-ecl-expandable-toggle="eclExpandableToggle" data-ecl-label-collapsed="Expand" data-ecl-label-expanded="Collapse" type="button">
         <span class="ecl-button__container">
           <span class="ecl-button__label">
             <span class="ecl-button__label" data-ecl-label>

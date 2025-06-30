@@ -191,7 +191,7 @@ exports[`ecl-gallery renders 1`] = `
       <header class="ecl-gallery__close" data-ecl-gallery-overlay-header>
         <ecl-button data-ecl-gallery-close style-class="ecl-gallery__close-button sc-ecl-gallery-ec">
           <!---->
-          <button class="ecl-button ecl-button--ghost ecl-button--has-label ecl-gallery__close-button sc-ecl-gallery-ec" data-ecl-gallery-close="eclGalleryClose" type="submit">
+          <button class="ecl-button ecl-button--ghost ecl-gallery__close-button sc-ecl-gallery-ec" data-ecl-gallery-close="eclGalleryClose" type="submit">
             <span class="ecl-button__container">
               <span class="ecl-button__label">
                 Close
@@ -232,10 +232,10 @@ exports[`ecl-gallery renders 1`] = `
           <div class="ecl-gallery__pager">
             <ecl-button data-ecl-gallery-overlay-previous hide-label="" style-class="ecl-gallery__slider-previous sc-ecl-gallery-ec">
               <!---->
-              <button class="ecl-button ecl-button--ghost ecl-gallery__slider-previous sc-ecl-gallery-ec" data-ecl-gallery-overlay-previous="eclGalleryOverlayPrevious" type="button">
+              <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-gallery__slider-previous sc-ecl-gallery-ec" data-ecl-gallery-overlay-previous="eclGalleryOverlayPrevious" type="button">
                 <span class="ecl-button__container">
                   <ecl-icon slot="icon-before" style-class="sc-ecl-gallery-ec">
-                    <svg class="ecl-button__icon ecl-icon ecl-icon--rotate-270 ecl-icon--s sc-ecl-gallery-ec">
+                    <svg class="ecl-button__icon ecl-icon ecl-icon--rotate-270 ecl-icon--s sc-ecl-button-ec sc-ecl-gallery-ec">
                       <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
                     </svg>
                   </ecl-icon>
@@ -256,13 +256,13 @@ exports[`ecl-gallery renders 1`] = `
             </div>
             <ecl-button data-ecl-gallery-overlay-next hide-label="" style-class="ecl-gallery__slider-next sc-ecl-gallery-ec">
               <!---->
-              <button class="ecl-button ecl-button--ghost ecl-gallery__slider-next sc-ecl-gallery-ec" data-ecl-gallery-overlay-next="eclGalleryOverlayNext" type="button">
+              <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-gallery__slider-next sc-ecl-gallery-ec" data-ecl-gallery-overlay-next="eclGalleryOverlayNext" type="button">
                 <span class="ecl-button__container">
                   <span class="ecl-u-sr-only" data-ecl-label>
                     Next
                   </span>
                   <ecl-icon slot="icon-after" style-class="sc-ecl-gallery-ec">
-                    <svg class="ecl-button__icon ecl-icon ecl-icon--rotate-90 ecl-icon--s sc-ecl-gallery-ec">
+                    <svg class="ecl-button__icon ecl-icon ecl-icon--rotate-90 ecl-icon--s sc-ecl-button-ec sc-ecl-gallery-ec">
                       <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
                     </svg>
                   </ecl-icon>
