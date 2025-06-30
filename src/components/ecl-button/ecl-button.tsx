@@ -42,9 +42,9 @@ export class EclButton {
 
     if (this.el.getElementsByTagName('ecl-icon')[0] && this.el.querySelector('.ecl-icon')) {
       const slot = this.el.getElementsByTagName('ecl-icon')[0].getAttribute('slot');
-      this.el.querySelector('.ecl-icon').classList.add('ecl-button__icon');
+      this.el.querySelector('.ecl-icon').classList.add('ecl-button__icon', `sc-ecl-button-${this.theme}`);
       if (slot && !this.hideLabel) {
-        this.el.querySelector('.ecl-icon').classList.add(`ecl-button__${slot.substring(0, 5) + '-' + slot.substring(5)}`, `sc-ecl-button-${this.theme}`);
+        this.el.querySelector('.ecl-icon').classList.add(`ecl-button__${slot.substring(0, 5) + '-' + slot.substring(5)}`);
       }
     }
 
@@ -53,19 +53,13 @@ export class EclButton {
 
     this.hasIconBefore = !!iconBefore;
     this.hasIconAfter = !!iconAfter;
-
-    // Only check for label content if at least one icon is present
-    if (this.hasIconBefore || this.hasIconAfter) {
-      const labelEl = this.el.querySelector('.ecl-button__label');
-      this.hasLabelContent = labelEl ? labelEl.textContent.trim() !== '' : false;
-    }
   }
 
   getClass(): string {
     return [
       'ecl-button',
       `ecl-button--${this.variant}`,
-      this.hasLabelContent ? 'ecl-button--has-label' : '',
+      this.hideLabel ? 'ecl-button--icon-only' : '',
       this.styleClass,
     ].join(' ').trim();
   }
