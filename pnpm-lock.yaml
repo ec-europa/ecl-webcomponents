@@ -520,9 +520,6 @@ importers:
       '@ecl/button':
         specifier: 5.0.0-alpha.13
         version: 5.0.0-alpha.13
-      '@ecl/grid':
-        specifier: 5.0.0-alpha.13
-        version: 5.0.0-alpha.13
       '@ecl/icon':
         specifier: 5.0.0-alpha.13
         version: 5.0.0-alpha.13
