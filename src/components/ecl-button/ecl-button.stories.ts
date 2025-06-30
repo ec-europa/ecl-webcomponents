@@ -38,6 +38,7 @@ const getArgTypes = () => {
       name: 'Icon only',
       type: { name: 'boolean'},
       description: 'Hides the label (not for screen-readers)',
+      defaultValue: false,
       if: { arg: 'icon', truthy: true },
     },
     icon: {
@@ -51,6 +52,7 @@ const getArgTypes = () => {
       type: { name: 'select' },
       options: ['before', 'after'],
       description: 'Before or after the button label',
+      if: { arg: 'icon', truthy: true },
     },
     iconTransform: {
       name: 'icon transform',
@@ -63,12 +65,13 @@ const getArgTypes = () => {
         'flip-horizontal',
         'flip-vertical',
       ],
+      if: { arg: 'icon', truthy: true },
     },
     indicator: {
       name: 'indicator',
       type: { name: 'boolean' },
       description: 'Show an indicator (only visible when label is hidden and icon exists)',
-      if: { arg: 'icon', truthy: true },
+      if: { arg: 'hideLabel', truthy: true },
     },
     indicatorValue: {
       name: 'indicator value',
@@ -89,7 +92,7 @@ const Template = (args) => {
     data-ecl-button-icon
     theme="${args.theme}"
     variant="${args.variant}"
-    ${args.hideLabel ? 'hide-label="true"' : ''}s
+    hide-label="${!!args.hideLabel}"
     ${args.indicator && args.hideLabel ? `indicator indicator-value="${args.indicatorValue}"` : ''}
   >
     ${args.icon && args.iconPosition === 'before' ?

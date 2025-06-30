@@ -7,12 +7,11 @@
 
 ## Properties
 
-| Property       | Attribute       | Description | Type      | Default |
-| -------------- | --------------- | ----------- | --------- | ------- |
-| `eclScript`    | `ecl-script`    |             | `boolean` | `false` |
-| `extraClasses` | `extra-classes` |             | `string`  | `''`    |
-| `styleClass`   | `style-class`   |             | `string`  | `''`    |
-| `value`        | `value`         |             | `string`  | `''`    |
+| Property     | Attribute     | Description | Type      | Default |
+| ------------ | ------------- | ----------- | --------- | ------- |
+| `eclScript`  | `ecl-script`  |             | `boolean` | `false` |
+| `styleClass` | `style-class` |             | `string`  | `''`    |
+| `value`      | `value`       |             | `string`  | `''`    |
 
 
 ## Dependencies

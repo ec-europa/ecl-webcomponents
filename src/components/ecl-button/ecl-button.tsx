@@ -25,7 +25,7 @@ export class EclButton {
   @State() hasIconBefore: boolean = false;
   @State() hasIconAfter: boolean = false;
 
-  componentDidRender() {
+  componentDidLoad() {
     const dataAttrs = Object.keys(this.el.dataset);
     if (dataAttrs) {
       dataAttrs.forEach((attr) => {
@@ -54,10 +54,10 @@ export class EclButton {
     this.hasIconBefore = !!iconBefore;
     this.hasIconAfter = !!iconAfter;
 
-    // Check for label content
-    const labelEl = this.el.querySelector('.ecl-button__label');
-    if (labelEl) {
-      this.hasLabelContent = labelEl.textContent.trim() !== '';
+    // Only check for label content if at least one icon is present
+    if (this.hasIconBefore || this.hasIconAfter) {
+      const labelEl = this.el.querySelector('.ecl-button__label');
+      this.hasLabelContent = labelEl ? labelEl.textContent.trim() !== '' : false;
     }
   }
 

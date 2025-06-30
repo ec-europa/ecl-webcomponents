@@ -1,8 +1,5 @@
 @use '@ecl/theme-eu/theme' as theme;
 @use '@ecl/theme-eu/variables' as var;
-@use '@ecl/grid/grid' with (
-  $theme: theme.$theme
-);
 @use '@ecl/button/button' with (
   $theme: theme.$theme,
   $button: var.$button

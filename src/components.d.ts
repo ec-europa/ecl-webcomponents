@@ -833,10 +833,6 @@ export namespace Components {
         /**
           * @default ''
          */
-        "extraClasses": string;
-        /**
-          * @default ''
-         */
         "styleClass": string;
         /**
           * @default ''
@@ -3254,10 +3250,6 @@ declare namespace LocalJSX {
           * @default false
          */
         "eclScript"?: boolean;
-        /**
-          * @default ''
-         */
-        "extraClasses"?: string;
         /**
           * @default ''
          */

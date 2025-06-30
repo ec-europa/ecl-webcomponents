@@ -15,16 +15,11 @@ declare const ECL: any;
 export class EclIndicator {
   @Element() el: HTMLElement;
   @Prop() value: string = '';
-  @Prop() extraClasses: string = '';
   @Prop() eclScript: boolean = false;
   @Prop() styleClass: string = '';
 
   getClass(): string {
     const styleClasses = ['ecl-indicator', this.styleClass];
-
-    if (this.extraClasses) {
-      styleClasses.push(this.extraClasses);
-    }
 
     return styleClasses.join(' ').trim();
   }

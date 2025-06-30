@@ -176,7 +176,7 @@ exports[`ecl-gallery renders 1`] = `
         Media files in this gallery,
         <ecl-button data-ecl-gallery-all data-ecl-gallery-collapsed-label="View all">
           <!---->
-          <button class="ecl-button ecl-button--ghost ecl-button--has-label ecl-gallery__view-all sc-ecl-gallery-ec" data-ecl-gallery-all="eclGalleryAll" data-ecl-gallery-collapsed-label="View all" type="submit">
+          <button class="ecl-button ecl-button--ghost ecl-gallery__view-all sc-ecl-gallery-ec" data-ecl-gallery-all="eclGalleryAll" data-ecl-gallery-collapsed-label="View all" type="submit">
             <span class="ecl-button__container">
               <span class="ecl-button__label">
                 View all
