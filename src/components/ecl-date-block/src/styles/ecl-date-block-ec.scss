@@ -1,2 +1,9 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-component-date-block/date-block-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/date-block/date-block' with (
+  $theme: theme.$theme,
+  $date-block: var.$date-block
+);

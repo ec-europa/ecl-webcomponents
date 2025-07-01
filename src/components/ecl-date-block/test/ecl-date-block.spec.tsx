@@ -6,10 +6,11 @@ describe('ecl-date-block', () => {
     const page = await newSpecPage({
       components: [EclDateBlock],
       html: `<ecl-date-block
-              variant="default"
+              variant="ongoing"
               theme="ec"
               day="24"
               month="Sep"
+              month-full="September"
               year="2022"
               date-time="2022-09-24" 
             >
