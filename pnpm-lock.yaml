@@ -73,8 +73,8 @@ importers:
         specifier: 0.15.1
         version: link:packages/ecl-webcomponents
       '@ecl/preset-ec':
-        specifier: 5.0.0-alpha.13
-        version: 5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
       '@eslint/js':
         specifier: 9.30.1
         version: 9.30.1
@@ -2846,26 +2846,14 @@ packages:
   '@dual-bundle/import-meta-resolve@4.1.0':
     resolution: {integrity: sha512-+nxncfwHM5SgAtrVzgpzJOI1ol0PkumhVo469KCf9lUi21IGcY90G98VuHm9VRrUypmAzawAHO9bs6hqeADaVg==}
 
-  '@ecl/accordion@5.0.0-alpha.13':
-    resolution: {integrity: sha512-jC8FB19q+T4SjcoYU2Lz2yRjFWkopZphJaCkWQBwobBXgR9+yGT+3y4G56ErW2+BAGclhiZx39dyMs7pW4Lu9Q==}
-
   '@ecl/accordion@5.0.0-alpha.14':
     resolution: {integrity: sha512-0HxWv0BLtA2orzeP4iKLtnwMZTh6630XrFwfuO7dIn1lxEaUcwe0gpd2yhMWSu4UUUNjHskygiL5qvBKM1fIDA==}
-
-  '@ecl/banner@5.0.0-alpha.13':
-    resolution: {integrity: sha512-k5v7SFHL+sGg4EdP0Hu6wEiSjJwpWpixHcmki6nH/iouXV3hWRPguzMgqm3GnuEP0TaeZQQeFHstqxb5ypAolg==}
 
   '@ecl/banner@5.0.0-alpha.14':
     resolution: {integrity: sha512-7uodn/PyhMEiHhi2Lb3TF5301PoH5oN+i6j554ZHdF+zZumgSeT0zZ/BHMNsk1XQQgMRs/pIIugXffBjrf3Hng==}
 
-  '@ecl/blockquote@5.0.0-alpha.13':
-    resolution: {integrity: sha512-dwvjuMASoDebRIfhdzPCDjw+R4tpGBC5KJ09KLoPaENhrgMNi5Aj4uXglic01rbl8eo3nefjY7BA8oY4a6RZ9A==}
-
   '@ecl/blockquote@5.0.0-alpha.14':
     resolution: {integrity: sha512-2NA+FSvLAjFTODeCGC8JBepMzF3DXMoWDOiHOznTr6FRruxcqF2TRdQuN0VTliPtv6tC/L8gietiqgMCi/E+Eg==}
-
-  '@ecl/breadcrumb@5.0.0-alpha.13':
-    resolution: {integrity: sha512-srk1JQqDG4tWdomUBSwLr2S4RhS66lt20d4tM68W6VRb+Orn/I0hOOH13x+cWov6IDzxOQp/TOPGHiN8VXmc9Q==}
 
   '@ecl/breadcrumb@5.0.0-alpha.14':
     resolution: {integrity: sha512-3MYYlyfixs1yuYS+W+YDMpKkhBYLVrJIwzjGT2Z7camr/i5UTQ0Cqj7qXKgis1m86hgJ7SdbvwSrH7RVMwrdFQ==}
@@ -2875,78 +2863,40 @@ packages:
     engines: {node: '>=12.0.0'}
     hasBin: true
 
-  '@ecl/builder@5.0.0-alpha.13':
-    resolution: {integrity: sha512-pqfR+uRZqiDgagW6CHGRoaQjuDo0ZgI6xY/d/uy9WKVHnF9BZSXIQWlLcygkbPQj7IeZqT13QHWnobNY4nkUhQ==}
-    engines: {node: '>=22.11.0'}
-    hasBin: true
-
   '@ecl/builder@5.0.0-alpha.14':
     resolution: {integrity: sha512-GszJhN6QXmE4SGh1yP9xq6HzqTqHwV6KJIBUgQWoQhYAI/wWcgdLzefBbcpllev7XeQkQKZz3794uornUhwJYA==}
     engines: {node: '>=22.11.0'}
     hasBin: true
 
-  '@ecl/button@5.0.0-alpha.13':
-    resolution: {integrity: sha512-cRaph3CfvTFMjYo4s36R/L7cQxFUACVhapqaFODT7d+xyKT6cZU0PSdmSC+GeMoyLsUzB1tUgUw+Y3pUd8t7HA==}
-
   '@ecl/button@5.0.0-alpha.14':
     resolution: {integrity: sha512-lA6L69CsgngEW3L1LRk19x1OnAD6VQGvbbdEFI/gntZ0WMC93aSbjZXazvP+44kVc37vMGRjfkGKt1oFbfs75Q==}
-
-  '@ecl/card@5.0.0-alpha.13':
-    resolution: {integrity: sha512-B5Dhkmc5IUOUvVrkcuUWZ+L2e+MqcMybv7yqFFxHVfAYwTK+9AUD7+2V39tKaa7e/5Q3hOP8hZ8gqyNG9IClhA==}
 
   '@ecl/card@5.0.0-alpha.14':
     resolution: {integrity: sha512-pDgrCZARcwONIlnsEL0c0ke86viRQxjGjeq0+rSoclcxmpcdwjaRnOwRA1gcE02ogJ9Tt23tnx8+tR9/8iOmIg==}
 
-  '@ecl/carousel@5.0.0-alpha.13':
-    resolution: {integrity: sha512-K2pWWcnLElqi4n/WZ9WTmieP8V5qeh+NCJNFxWjlZeFIO0zq9RCNqpb3bg7EBgDI3gdGgi+3m+gWWUgpW23eyA==}
-
   '@ecl/carousel@5.0.0-alpha.14':
     resolution: {integrity: sha512-N4BBBNkKeCWFrUrGY28+ZN1c/29a/ZL2M1tUjM5aMzqYyTX/3kAoZsq39Kj+aH2B3hinv8uF1AR5anWbyL1lLg==}
-
-  '@ecl/category-filter@5.0.0-alpha.13':
-    resolution: {integrity: sha512-hf+qfQwtzux3S93ptnoZR0yv9iAqqmnSlG+pV0SmSdnELV5Ni4fclEjnOkfRZ2QXOvvlKOA4f3VheieNa48ouw==}
 
   '@ecl/category-filter@5.0.0-alpha.14':
     resolution: {integrity: sha512-lyx41jQp8bbP8iAjx0iwhmFpcqJFlZxyKGrlBWvrSFvxgOi6Cp3085dUWeHd5uX6TYIeeFi77YIb4sV5yRCfNQ==}
 
-  '@ecl/checkbox@5.0.0-alpha.13':
-    resolution: {integrity: sha512-dfhwnK75dbNAC9oJQHeJdglNqCtQfzv20LpS2+7i+gEuUFbSjrFa0habxx6UKoE1Fzm5F0l6AwZxABFHUfWWqQ==}
-
   '@ecl/checkbox@5.0.0-alpha.14':
     resolution: {integrity: sha512-O7ftW2OkqTQHaoOvzn+3aAXNL/NBh2F/KRgCEjp6REgo5PVMyBJ94zsbRTh098zn71nR8BJ1PGS+DpwDwYKM3Q==}
-
-  '@ecl/color-modes@5.0.0-alpha.13':
-    resolution: {integrity: sha512-vIeMandQR22fM3EPW0JqgrkX6xveqDGsA2qZ3+5h6KZnXXhZ9Txd57IsZc6HXYQLDUSeGO6J7Kl+SHNAx/9WDg==}
 
   '@ecl/color-modes@5.0.0-alpha.14':
     resolution: {integrity: sha512-cYdRjMcVkrYyC5L31UGuSGvW1tMkO0RCNw+yHhd4zJwONBMAlAjedm2UMafoSxsVhf/+xdfW9bhFMQwM7S9a3w==}
 
-  '@ecl/content-block@5.0.0-alpha.13':
-    resolution: {integrity: sha512-l0IJ0Hpqv8e/8UMz9agRkrE8DTQ7dzUwN5bbD/P6nHQGIWdecKXe1QJf+XjuCAeR77XXKDdSLOZoBnmFAZQW7Q==}
-
   '@ecl/content-block@5.0.0-alpha.14':
     resolution: {integrity: sha512-+8fRd0iZPTX3ijRMDtOdBCSKCJ5XB8z6DjqvmTrn2Bo9+D0flvsAbFHdrp9DpgJvvQz5RmxwBcnXtkEhoWQodA==}
-
-  '@ecl/content-item@5.0.0-alpha.13':
-    resolution: {integrity: sha512-pfcepezwp39a09zXSpkFVSGHaHRiPMc8BoIDeET2mRduaQrfk528PlPU4VcDvYoznQM0msqqq0jVaHsQAar6MQ==}
 
   '@ecl/content-item@5.0.0-alpha.14':
     resolution: {integrity: sha512-rCHkySFrvQgYab8z60pIjF6zmOkLB5lOFVO1DTEFmqQDzvLxbQ2XXp1bOxdFQpwpxSDMzsSmhuY5PxHR5Ell6g==}
 
-  '@ecl/date-block@5.0.0-alpha.13':
-    resolution: {integrity: sha512-r+muObLjvSYeJDilgEunj+8kMRKe9EMSflz4ZIIvF0rHknLAGQCrzKUyqs8CtLX58CLCk/8DwlfpSag2G1bu6Q==}
-
   '@ecl/date-block@5.0.0-alpha.14':
     resolution: {integrity: sha512-VyIdnpAWuGO8B5kdT50BD+4hao+wa2JyfQiUHu4XduON0juY818y8SnIuHpuegHusatKgfgdRFBSoQIfuEue9w==}
 
-  '@ecl/datepicker@5.0.0-alpha.13':
-    resolution: {integrity: sha512-IQrNadZBGPQRpL23QOub2LCNRhth/hCpKhEgComeKMPQ4FwPTfyTo7xkh4nDBP2pBgS3kBJDFmEl9Rbs7YD4EQ==}
-
   '@ecl/datepicker@5.0.0-alpha.14':
     resolution: {integrity: sha512-AwfYvhH9vDQUhhg02QfzFCvVP4ASk1tNMIKHM6zupbRLT2bOqzZQcJTawcEnoYVsFWwR0TyOm1r4M883fQ7OWA==}
-
-  '@ecl/description-list@5.0.0-alpha.13':
-    resolution: {integrity: sha512-w7gTh5QsyeRNcJWzVHAS9hXcErQ7fSM+yKl+LKaXZGRqNpzPaE0eIn0Ar9iLpzWal2u7DgoC0OR2K8TYMNAGBw==}
 
   '@ecl/description-list@5.0.0-alpha.14':
     resolution: {integrity: sha512-QRyyPFrmtLNyBO3jU6R9mmKDI2lctliykO+hZtL58ONKLwjfifKkJJiXa6XTlypFy6sgPONXMKLpNHAY2yBu1A==}
@@ -2954,188 +2904,95 @@ packages:
   '@ecl/dom-utils@3.13.0':
     resolution: {integrity: sha512-fziu4kmJGXh4tMlN8jXo3wgxXCyvgXtcvELbOeDGrAkWBU4zoYtClNC1V/d+KWfWQHeQHMKkc1JT+nC3NOctkA==}
 
-  '@ecl/dom-utils@5.0.0-alpha.13':
-    resolution: {integrity: sha512-qcGxhuj5+/LGK+iscCLHjvQe5ckVMMY/mIapk9vVOLYOEq9uZ43HV+qui1OzczDL99yG8OjmWwzrDKv0kekOrg==}
-
   '@ecl/dom-utils@5.0.0-alpha.14':
     resolution: {integrity: sha512-gaiE3XC2FESS3wwKD2/EdSzyueKoAShHTJNcCbdZnv1zy6dBL3spfSXAElzO1kINMj+UvCTLzCiVJbqPYU6Z6g==}
-
-  '@ecl/event-manager@5.0.0-alpha.13':
-    resolution: {integrity: sha512-I8yM5RPoaTGTXaROXGMEpPqohvlmxP9S7mOo7S4BaM/guBKFR+kRYH8O0l/viH0hsYBoNfwVmyL+GGA9CU0xog==}
 
   '@ecl/event-manager@5.0.0-alpha.14':
     resolution: {integrity: sha512-Sa9bEQZEKDPhCXwKy/i7HCz/31gOMR8MaT8oM6ex18l70+wEZ+6X27bYDfOdOX20QYjIQnJPK5Y6LPbky5eJjQ==}
 
-  '@ecl/expandable@5.0.0-alpha.13':
-    resolution: {integrity: sha512-eu4xPQG3DmWWItbbAX4iU1taXDvdzNCfi/CLCxAL9PMgV26cjwVezXsDlTNv6xa1EiMMeie9wtZv35kNYkasrw==}
-
   '@ecl/expandable@5.0.0-alpha.14':
     resolution: {integrity: sha512-Imb7L5C9uENl2TJnU0H7VJaMEVSg7+0iqS7jpbixlauxnuQK7AgLT4zv6JYHp3QyWWytitvE+9jBKIBmxNKSMA==}
-
-  '@ecl/fact-figures@5.0.0-alpha.13':
-    resolution: {integrity: sha512-NRhaxANQUat3egqoUGDwQoO/3Nbg4YeGD4XVppKzeCI2iHR8KESjzoyR4pkf/lJ3B5X2BMXzqlxOBq/XtmMMew==}
 
   '@ecl/fact-figures@5.0.0-alpha.14':
     resolution: {integrity: sha512-I1RoGTD1MlaS94Lm/GddfYPSCUfDiL8DG6pm2/t/ZKYVbIBjJy84nnPv87bOGzNqasoazb2LuEVFV4sOPXATxg==}
 
-  '@ecl/featured-item@5.0.0-alpha.13':
-    resolution: {integrity: sha512-yDE5A68/2d6dtqLmcyTgXNr3+xLoCsHaFp0so6X22b1KpNM5b6qP+Em1OXGV0BEjXfij0x5neck0GYWoJrcIGQ==}
-
   '@ecl/featured-item@5.0.0-alpha.14':
     resolution: {integrity: sha512-8+hnlhmQPaJrtDfb5cGrZICuOkoGPCv/Pt/sL6USUKK0EfL12gOZi/L+1TNCjuLUkWfM387L9Sd7DbDHt45qFw==}
-
-  '@ecl/file-upload@5.0.0-alpha.13':
-    resolution: {integrity: sha512-uTQrI4zoM2hlkWm08B/xyvoPTI1vyEbnhAKpbu25lYvCwH2xS6ES7526MEgFuXGu2ZaWrH2mL4nxlqypZlBKNw==}
 
   '@ecl/file-upload@5.0.0-alpha.14':
     resolution: {integrity: sha512-Y9azn96+NNsFAgsbIprQIDlhJe1+1kV+LLBWz/bRQmozBMCg+x/joGNQRdTAD8jAtwyC/VfgtJJvKWK/ao1Cdg==}
 
-  '@ecl/file@5.0.0-alpha.13':
-    resolution: {integrity: sha512-/VGVBFdIXh5HVQHu7mHBCDfxXf2qYB6MUmS8oy3vURmO/rX3J9wR/Iu5eI8QGkmTP2QD7tcNV0sW3hg7LaPoiQ==}
-
   '@ecl/file@5.0.0-alpha.14':
     resolution: {integrity: sha512-6I3ihHGKM/UzWVEFlUbJwFfRcA6RoS4kE8jCfvOhzQmJSiHRn/zXhDyfRELVjV0w8xLYxMzi2rzgLUJQi1oYJg==}
-
-  '@ecl/form-group@5.0.0-alpha.13':
-    resolution: {integrity: sha512-ASLdI5rNLYwDllg/EaEI/V4v5tINIg6YKZ/jvqJwL+wZ2ux0QjFbytqBqT4hDvpRKyHP0esYg0YPBbl/qklmpA==}
 
   '@ecl/form-group@5.0.0-alpha.14':
     resolution: {integrity: sha512-OTu22bICgm/HV/5vAn35AT2tCZReP0SBKf3qVPO6dz7CZhH2XRDJ5BHEL7HNusK0RpUfekfkaPwJZj9NkzqDfg==}
 
-  '@ecl/gallery@5.0.0-alpha.13':
-    resolution: {integrity: sha512-uvoRtOGVNKZHwtZgCo7lw9BAEnXPSbNBd84NFxRdPqjVge8SuRmWMqGBFth84xMIlcLY0mIHGkEcD/BZZkUfdQ==}
-
   '@ecl/gallery@5.0.0-alpha.14':
     resolution: {integrity: sha512-fxdJ9vAdDyywaA+Ii8l0y/MgFYxD1avsglxKGa89eVmbsVC00dJ2pRDs/FiC+y5wxa3gyznPxu3cgd1rhxLVoA==}
-
-  '@ecl/grid@5.0.0-alpha.13':
-    resolution: {integrity: sha512-9J8Hwcv5CnuC/tpXLO1txaWiBiYVpKYBi+R94LA0fyRyE7aTBCxAwRxiWJwmqIO2I4gJ7b3TCM7RAFk3ekSeoQ==}
 
   '@ecl/grid@5.0.0-alpha.14':
     resolution: {integrity: sha512-j5Nd2Rr6pYIWH8fweA1KlXIMEdclm9K6AbGHDoG++DrwKIjWCcw0VL6gjcixRBbNVpiAeUhela9AazwJ67bhFQ==}
 
-  '@ecl/icon@5.0.0-alpha.13':
-    resolution: {integrity: sha512-PYJ0QCb8HPYLGnQsTD9qQnp9H/sJqKCYBuAk7f9EeSuRNI+rHtSiNPF+NQFnhBPjA4NjnkzNhxG8N+I14zegFQ==}
-
   '@ecl/icon@5.0.0-alpha.14':
     resolution: {integrity: sha512-NvGd6S0l/HjflrCtXQtV/gA6avcFQP2ymSLKrTqkI09qTZGrMLLaETClrQujD7X5rnRsVshUVLtfta5i87AJWQ==}
-
-  '@ecl/indicator@5.0.0-alpha.13':
-    resolution: {integrity: sha512-32Q1TgVetkPcJ642qX8dEbPI91TPnm5PhyzHhbZaMIGMWEUqIMe7PcEfLw66wmVxU/xPuGOyWanlOzDp13CKow==}
 
   '@ecl/indicator@5.0.0-alpha.14':
     resolution: {integrity: sha512-/nSr0SRvuD1dns9EZDUpKvEqX6gOsvvj4JH+UF3uAokXpm9kkuJNURwTAgdhbqsMyz88bh+e5q92dXOiJaHfng==}
 
-  '@ecl/inpage-navigation@5.0.0-alpha.13':
-    resolution: {integrity: sha512-CgsvftVxgnSo2crXMs/RD881UfRzhWVL0Z5SDeVwzM6mg70UxX+TgXQ6ANSwktlSjP0K5YIia1LfOCbi0gofOA==}
-
   '@ecl/inpage-navigation@5.0.0-alpha.14':
     resolution: {integrity: sha512-rXkvT6yWqNm5dezZSWR4KrY2yzIA7BkzqFVRqmoELyHUGppmPaiK14h7JaHBvoUemX8ri6mXCD7Cirr4+G/1ow==}
-
-  '@ecl/label@5.0.0-alpha.13':
-    resolution: {integrity: sha512-AJemFNnDh1C+xTJFQVAUspk8kcl74vL5FcWjYilBxp3FUFrg4wPR++AS/bu7dO4OkaZIDxLeCmk04S9SEyFisw==}
 
   '@ecl/label@5.0.0-alpha.14':
     resolution: {integrity: sha512-30n93pvZa0LyNCIcjuKr6bJmXPRgKlACyvaJY7DC1z25paoN5SnF3YzrqMPsr7pnNjAbYT6M7m/SdwRBRKLnDQ==}
 
-  '@ecl/layout-form@5.0.0-alpha.13':
-    resolution: {integrity: sha512-vizmKKGqiGJ8v/CxDkHJLeZKJYqNHtghGtecyi4Yh1COGua6u3dTV075Mgp/Z0+0FigtH04nYqFqj/Th0u1Ucg==}
-
   '@ecl/layout-form@5.0.0-alpha.14':
     resolution: {integrity: sha512-JchLOfl9732Sk58kjWJUlujAMF2DwLdMtKWgKfiF8s/qwEOMRXuhiCbYdeMZb9vkooGnGTYVo3Uyv4xLtvuNaA==}
-
-  '@ecl/link@5.0.0-alpha.13':
-    resolution: {integrity: sha512-fnLBOm5r7laJJV0EyTdmdma7nNmKuS1oePjw3L1gA+u9VMJ/2ki4mFZwrvdYpCrsjDfzdfVp1KDg890+TuSO+A==}
 
   '@ecl/link@5.0.0-alpha.14':
     resolution: {integrity: sha512-8s29J9tFOhJVCAXzm5qAYAYX8Y/4dP/xb0AjeJmM1+F6sWFnRLl2CDz213p4nFdZj9QfeAjFjLKNOys0BhyZRg==}
 
-  '@ecl/list-illustration@5.0.0-alpha.13':
-    resolution: {integrity: sha512-NQwsbLXMRcqHIMx/5B6K7YSm2DTUE81KOJVm7C7/5sDWrcrxaGgDOk+ndApaIkDcATCU2UssrubXdgXmid97WA==}
-
   '@ecl/list-illustration@5.0.0-alpha.14':
     resolution: {integrity: sha512-khQq1TRNrxZDh333HkDb0EP85x4bQjtrM/KG5K/rt2DzTinpLOdB6HgU9fQ62xRzXjHz8e0rHRZ7WMn3xyKx2w==}
-
-  '@ecl/media-container@5.0.0-alpha.13':
-    resolution: {integrity: sha512-nXXFcmfWUHyKJ8wxpSysUSzdFLmYOjvDa1X8hErmXmt80/ime30iSROmcoKnbwgV24CAznEg/xPm6MNPOVFeOw==}
 
   '@ecl/media-container@5.0.0-alpha.14':
     resolution: {integrity: sha512-KQ+hLJBT6kZ/ak70Ut6exLp3vUZKxqHMxhyYYQ4mDeOpHuv/VyiPoiAGfRfQBjGLFEBNTG4Eb6Gau5L4yIvF2g==}
 
-  '@ecl/mega-menu@5.0.0-alpha.13':
-    resolution: {integrity: sha512-Mn+8HybN02Q2iM5xyZN1UVgRlGkjXs7aOw/vc6AQXQqJkPWr53mjYleYv0JPA8GwMK6n4Yre1aWUTXzBQAI0rQ==}
-
   '@ecl/mega-menu@5.0.0-alpha.14':
     resolution: {integrity: sha512-8GsbxdZUrXaZkcg58L3FYelZOrgQTlm9YR1x/w+v+fkFelo0w44VBGcm/rwy7GZOeg72oKv/BL/pjb96e1RSWw==}
-
-  '@ecl/menu@5.0.0-alpha.13':
-    resolution: {integrity: sha512-+7j+lBLqjm5nCWHLoXwuKVYLDH21sahPXJtFqHEvtyHVatDGdbDNWMIKlfJ5zY9DG7Rwps8aRqCT/+D/vYUXGA==}
 
   '@ecl/menu@5.0.0-alpha.14':
     resolution: {integrity: sha512-o6oSvzxI9BAL59guAwI9k7rCT5OANrWJrfjrjZ8Ylm4JNeaK6W9FTuZE2+uRXEmiOl9sNryqYpH3TgEAc2sgxw==}
 
-  '@ecl/mixins-typography@5.0.0-alpha.13':
-    resolution: {integrity: sha512-+pC97A2ZdbXzcZp7oOS03eNdWc7YV34C7xohAPwGqdE7soJdaUWtJJqmJ2nNEdvvQWoqH3zqGA/vF12ORosn+Q==}
-
   '@ecl/mixins-typography@5.0.0-alpha.14':
     resolution: {integrity: sha512-Y5+Y7LsXtt87MtdFOCGAnksRhatf7ra0oHfC9hyBeBtNiMOLQQdZl/Yr+Mgb0fKyyUHwcit0au/IR4lTon1HUw==}
-
-  '@ecl/modal@5.0.0-alpha.13':
-    resolution: {integrity: sha512-oUzvgGtBkUaX+DvHcnLsxQYEVuPSKtR9n0B5k95bWOKRllWccyIGXTJGWUm1gCAeYWr8dytnZmws19srLcolPg==}
 
   '@ecl/modal@5.0.0-alpha.14':
     resolution: {integrity: sha512-+q7gVhtTzAlMggC5/8hRcIY6xpVUKRWqa+9QKnFJglK7aKaSlhGnIoSBJeTE51toZG75QXFDMXNBMYJ4cMZMMw==}
 
-  '@ecl/navigation-list@5.0.0-alpha.13':
-    resolution: {integrity: sha512-+UI6xzjTpCtV3c176jM1ZaFyEqn8HqlR9DE2qrIOteMD0cS9IcOPVpnWf+Dqk584jze/7RZnZauGD0AgBowVaA==}
-
   '@ecl/navigation-list@5.0.0-alpha.14':
     resolution: {integrity: sha512-hZpuOyU5HiFsht8md4+SGKip2tAX7Nap3sli9+5N8HRHXicBfJiu9Krwo2NAGL7VqVj3LOUPsMCCI/IHiLzS9g==}
-
-  '@ecl/news-ticker@5.0.0-alpha.13':
-    resolution: {integrity: sha512-9jCaaBY88jnO8Xz8ZMc43iSHEO5lx/dZtYfZ+a4VvL4AXT+9DfdZrLCTYDrHoyqmHkRhh/HkMNsXyYlHUhd/8w==}
 
   '@ecl/news-ticker@5.0.0-alpha.14':
     resolution: {integrity: sha512-c6wJbypYRA01kAWwlBsTHy+QLPDQzY11v/KcEmB0tw9Tp4FprQ0yzcNtez4Zz35Q7381fTaFF+K91OBXe9XOpg==}
 
-  '@ecl/notification@5.0.0-alpha.13':
-    resolution: {integrity: sha512-OSTp2zQ4w0rqz/xqmK3UMXizTFNBEJLv2ehkVXDquc7Ql0/p9V27p1N3fvMOf/dXymBaxrqxAPehNnxWQGRl8g==}
-
   '@ecl/notification@5.0.0-alpha.14':
     resolution: {integrity: sha512-nRQrUIHr/t07SDFlnkh2GxQZLpNjoH+NMgeoZbE82HVEDlY1cAQ1lueAOA6/nlvANQHv1suE/wiB81kyMyfumA==}
-
-  '@ecl/ordered-list@5.0.0-alpha.13':
-    resolution: {integrity: sha512-x8U3JR4D97yORlpBsHWolmOm1QgYFUs7RYO84TMwNFHdoyU+Ojfd+68/zwCAj8hiDKMBqgr3wUjaY2lS+sTMOw==}
 
   '@ecl/ordered-list@5.0.0-alpha.14':
     resolution: {integrity: sha512-6g7hbLAWnzZSUuJ7MfeWPurxp2pTvW+GbepXaV0Dr4TG5oC5E9hK6F3+GRwnTlyyZm08AguchtmZXX1aumga0Q==}
 
-  '@ecl/page-header@5.0.0-alpha.13':
-    resolution: {integrity: sha512-VXAny0FsSaCgtK2IENEka2d80Nm9crUmq/UxulUEFI2q6rEgtzAZNl0yYMmqpndg29Xy0aOg6kuSarI8/kRWfA==}
-
   '@ecl/page-header@5.0.0-alpha.14':
     resolution: {integrity: sha512-sjvtGwe+tPpiFx2et0AI8BwKKpl1PX+E8s2NcDj3TSYOO/1Ho65tbULqW8fNAkCBMfvtbTGUYE/i0gwI9Zcc8A==}
-
-  '@ecl/pagination@5.0.0-alpha.13':
-    resolution: {integrity: sha512-YXz5/Axr1BhLOIo/28cbve9dBC7DrFqH5fy41phuLrTgvxIOOPz5PrrC/AMaLu34bXf3pZAxVFq6FwelEn9xaw==}
 
   '@ecl/pagination@5.0.0-alpha.14':
     resolution: {integrity: sha512-w9Ew9A6LeRSqpinR3mol7V5VrAsWsqukqdQPsu/8QVd7iBXeQDX/JhWpjz7QdN6vpf4+KJJy8R5awXZwlXV1rA==}
 
-  '@ecl/picture@5.0.0-alpha.13':
-    resolution: {integrity: sha512-54bYzg/I4w+vaGkh+bpOZkc+MFVGK1/86XC964O7k3z6osAbLQb1k5KhF9bAS9fj3zyKlacF7JtyWxuBwGtXPQ==}
-
   '@ecl/picture@5.0.0-alpha.14':
     resolution: {integrity: sha512-+doRb41xhFWI9MumgfpQnch9aguKTXb1uiT1VJM0XlqBLsqqhqPO39ZassYKtjHz7CZUvA54ZIo5d1aCzDoE1g==}
 
-  '@ecl/popover@5.0.0-alpha.13':
-    resolution: {integrity: sha512-sf2h75zGAMjHQL/BeT5xOV9dtzDW0Qfks+QkFW91C7f77PC1LLrE7ll2/IqfwTryXgavX2ioiJ5kYgfXpqMimA==}
-
   '@ecl/popover@5.0.0-alpha.14':
     resolution: {integrity: sha512-AWq7DQHYMvTn8FEBbDkVPkmu4c3qvbGTYUBrQ2Mi4uNm0k0py3zqdAFXZC/xeJwqukEkKFn4cKo84AJGJuK3DA==}
-
-  '@ecl/preset-ec@5.0.0-alpha.13':
-    resolution: {integrity: sha512-zciMpB4SeR4zSN8ahqiiFo26BPtxs+h+hFasojn4A0h5I0VdSing6srKtaQ55frM7VpUmOsbg1xxwe4l5BEYSg==}
 
   '@ecl/preset-ec@5.0.0-alpha.14':
     resolution: {integrity: sha512-Xm447sIDFl/BXlweZNg6w4HQAfmGAo2RD/4t0BpF51pUJPEB0i/9MPy7jT6Ifneb1s1nb5skDSjMeNwWaBe9gQ==}
@@ -3143,20 +3000,11 @@ packages:
   '@ecl/preset-eu@5.0.0-alpha.14':
     resolution: {integrity: sha512-Ycs/LQE6hVEr5FvXAp3cPLESWQd0Pz3HzKcOLW+aeLKFGiBKH9AxlCWJ1j6+GcfHu2RCf9BeiFG4JdoAB0YCrQ==}
 
-  '@ecl/radio@5.0.0-alpha.13':
-    resolution: {integrity: sha512-sgbxIQv+bHJSXY25BGQdrWfHkAriBysHeoG0CxS0oU0bSvfFH003FDKdo+KM5WXd4ws2lJRAQlrLV4S6QHnMhw==}
-
   '@ecl/radio@5.0.0-alpha.14':
     resolution: {integrity: sha512-K5H8SBrIIv9NrDraogwdzyXEu18Kxcs6nlLg6qE8MKUpN5fiSCEeaBB6r+7PJN+bpFaXFVA1CDdZYYrL13eR7w==}
 
-  '@ecl/range@5.0.0-alpha.13':
-    resolution: {integrity: sha512-xclQu6NBCooM7OUUBWDhthNQ+g3o9Ruh8uKLSXvsY0q68nWARZbM0tP0LlxzQOl6H22knSLThyTR/JazkSTW6Q==}
-
   '@ecl/range@5.0.0-alpha.14':
     resolution: {integrity: sha512-aeQ0mKaESKZfzOLVsee76u7LSJf2zwIA9FWyrTNBHG1X38nSO+C/5aQeHbZCsSmsU1oUo6auKUySRDgnmdzVMA==}
-
-  '@ecl/rating-field@5.0.0-alpha.13':
-    resolution: {integrity: sha512-RBhxYeAU+OORBuqdi3PT5x+TLZqZTbtP70CQsxSYnPF1n5+QXmTcBnvr3nmN6UtYsLl+KwiOYvRdV0aBfh1nng==}
 
   '@ecl/rating-field@5.0.0-alpha.14':
     resolution: {integrity: sha512-NLkWf4S7oCf1iGi2V8EKnQVo10RD/ZhQUsbME5j1Mh5BN60HO7RRk3IufJ4Mx6c+qGHyjG148xSy/33S8QO1Cg==}
@@ -3173,53 +3021,29 @@ packages:
   '@ecl/resources-eu-logo@3.13.0':
     resolution: {integrity: sha512-XjpQqIK8GclrKn48piw2FYFjf1uxLjAWXCx9RZwFLa2X2qGSl7tYDSuMdwYT6gJ2JGKa+DMr15Qwf1kJ8IRTrA==}
 
-  '@ecl/resources-icons@5.0.0-alpha.13':
-    resolution: {integrity: sha512-UHi+HB05kuiO3qFs0FBX+VB+5OQLe7X8Q8ztIAcC4WDtTQuO9dzO5Lp+OVZJZ9eovdhNh5jWp1yLdDERpjlWFQ==}
-
   '@ecl/resources-icons@5.0.0-alpha.14':
     resolution: {integrity: sha512-OwvRbkgqzuPMAugVZ5P1KfvbsbQYRCmzFlh/tEmXaGpA6yZ6E9LXWJvDXG3aKHzCi+/uBGuAcibbTr7Aae8Scw==}
 
   '@ecl/resources-social-media-icons@3.13.0':
     resolution: {integrity: sha512-19ryzCpjscG0YSdfH4leUyF0CmvVV0/TAi1wdnlF5rddG9St9vpZ+K2dcxmrCEbbgQ5GOFW8RgxwqdD4VxHW4g==}
 
-  '@ecl/search-form@5.0.0-alpha.13':
-    resolution: {integrity: sha512-xG6bdsLRTUbOdIVMBDr18EsBStpjfMvs248eS3ZZCnz/PggpzTSHMSJT32Mq/zNDhDYwtfKX63dJCn+J7jTqOA==}
-
   '@ecl/search-form@5.0.0-alpha.14':
     resolution: {integrity: sha512-1z7fMMp02gzWOQE6W+Rgd2YPqnRelWWUBHm7TYkiOTp+WRrHOXgMZAY2vH3vFZZiuxZDk/RQPt/yj0CdC1Hlbg==}
-
-  '@ecl/select@5.0.0-alpha.13':
-    resolution: {integrity: sha512-jadl3LnaQ5DsUpOTLmXjtoqoLHIWE6kndbTi8vZZjLH3z+OJySfayL0fRHG/ljhGieTPSYzA5E19FDTMnRH44w==}
 
   '@ecl/select@5.0.0-alpha.14':
     resolution: {integrity: sha512-YFoAG8zYOLK1Z5N7kIrrYl0jWetjQ4VaWGY41rCjrnKAI+Bk0JcaIarvLz5FdaIgIfprt4CAERGonT3E+QA36Q==}
 
-  '@ecl/separator@5.0.0-alpha.13':
-    resolution: {integrity: sha512-qKl87yCgFKTA6MSCwkaIe5Zo+7xCN7nQ55xdGADNwQdZ/S0+ZrwXTTpJ7fUzjefzofsPp/zCMbapalnuJp+w9w==}
-
   '@ecl/separator@5.0.0-alpha.14':
     resolution: {integrity: sha512-KVjs2y0VsXDVxcWEWglWXRYnNy/FS+HCHoz4Glm4HytnL0nAYOMk+A+KizYCdAdVAkTQKFmOTi1zB42II1OV3A==}
-
-  '@ecl/site-footer@5.0.0-alpha.13':
-    resolution: {integrity: sha512-sfT8JVWS2PRGug4notuEFLfuiIfSLplsVZvwpRy/Xj/sqrM8AWcYadJBOdcZYh0H3VJ3Fx0NcJvNPqJaN5C3Vg==}
 
   '@ecl/site-footer@5.0.0-alpha.14':
     resolution: {integrity: sha512-MaCUFDLRMMe5q7Ea9TJCoPvW+SR++53y+zqjooMEd7Q8Q7wDQ1CEydf9ODfl1Cu4t4SpADlQH4Rmeq0Sc/IIsQ==}
 
-  '@ecl/site-header@5.0.0-alpha.13':
-    resolution: {integrity: sha512-x6OX2BQ2+UmXxANolkowv6xOH5l5/0Wr3Z4SuLGTQKeSqSKvk3UeAhHaCIyNDkNuV1MGB59TTtdUVQ9Ks2y3mg==}
-
   '@ecl/site-header@5.0.0-alpha.14':
     resolution: {integrity: sha512-q9bZ4CSX+y1k8VkDMKHnZ4Wl7Fim5nAQAi+1CArQthZf61UZs3rIoZf3cIbkqjfMUnC6rgMkphxPGSgE0xGDog==}
 
-  '@ecl/skip-link@5.0.0-alpha.13':
-    resolution: {integrity: sha512-ZulhCY58fuVxq/ibLBGpjH8j6y7nG7vIKh7pd0HYfBPqu2MsKCDjssf7NfjJFuhsE/ofXor/saEyDoJlYZ6RJw==}
-
   '@ecl/skip-link@5.0.0-alpha.14':
     resolution: {integrity: sha512-RQvymidVdjkFpgHoLrwXI16DF8BnMmsjh2FA/t6QO8rIeZtsWTqivhGPXmRS/GDibc8JegLSUiZuWofP5z+dNA==}
-
-  '@ecl/social-media-follow@5.0.0-alpha.13':
-    resolution: {integrity: sha512-sXIAgWKbkBwrZbJeGktFWdI41Lu4M8/nOHxHcZTCTGuzOt2310En1npj8xBxtoMZlsQ0HL08HLllFGdMsco7sQ==}
 
   '@ecl/social-media-follow@5.0.0-alpha.14':
     resolution: {integrity: sha512-qwpYWKPvvwnD1JyBxvqULdGplSwktbSSG9ojOc2VkCuItxaoyPYA3m4tayFJjwF4mKjC0oCMsBgUoDeSrd9+Uw==}
@@ -3233,44 +3057,23 @@ packages:
   '@ecl/specs-component-icon@3.13.0':
     resolution: {integrity: sha512-nV+SYw/NvCClYUuKTi+VwE/9wwfRns0D+RU5ry2NLE9r3SreMoy5LwQsEMkt/fNVFAElHdqbafN9D8AZYfpj1w==}
 
-  '@ecl/spinner@5.0.0-alpha.13':
-    resolution: {integrity: sha512-rjQcHFGG+8asesxdfTJORLjycx7SWMrS31V8p7Kd2Of3+uau3DZJlQb+/iyxcUBfRLSwW6TyOyCWd0UdArzTdg==}
-
   '@ecl/spinner@5.0.0-alpha.14':
     resolution: {integrity: sha512-BzdKZ/V3v1gPDXkIaYMnMTvRNbaRdYmeP8hMqCWBJpmu6iL0jiTvOOYX+fuYeIWh3W667KSEKIpapZeQ2USNSA==}
-
-  '@ecl/splash-page@5.0.0-alpha.13':
-    resolution: {integrity: sha512-6PtxfJ3c/9dLToTLCvLDLhhmimQ6LmM/DMCkC1ASIbnb+RtcmaXywxSNUp2FQCQFAYnbmmSls4cJ41xB6RlUxw==}
 
   '@ecl/splash-page@5.0.0-alpha.14':
     resolution: {integrity: sha512-EI/CjNJqdgZgHcGtw7pOhnpUlTo6gHOOutYO/IqS9WIdxWdW5LhyIOhBXKj1VbMRriLeaI07f6qDU1NqWM8K6w==}
 
-  '@ecl/table@5.0.0-alpha.13':
-    resolution: {integrity: sha512-QcFgX3WWDoHJafZFfzlf4nl6hK8A8LvGJ3ud1XhcaOU8DLt3+66g/m1xeuJ/i/JPyNHhLT3dHYyV5LFzLB04Ig==}
-
   '@ecl/table@5.0.0-alpha.14':
     resolution: {integrity: sha512-gGIa2HAqUPiPwBz/QDX8riluhjGpbMPWMhiTamE/+4uyXM5fyVbpE66DhHCkzfwO4tZJ4jnp2p1x/2ixgu8Lww==}
-
-  '@ecl/tabs@5.0.0-alpha.13':
-    resolution: {integrity: sha512-xcjhNRayEdAoYBYvUWDCsCaxz7rLGWGLe4a+TdEwuE2PzLj1YB6XxTKga55xJvJe2rOejU8dDqRySLKnwQodPQ==}
 
   '@ecl/tabs@5.0.0-alpha.14':
     resolution: {integrity: sha512-ynV8C2evSKtL3RoXSYr2HknlZniAK6Qfq5HC1m1tD0yPool1T5jhq0yncKDARVS+juzpZZrRgOWHJYsfdnh20w==}
 
-  '@ecl/tag@5.0.0-alpha.13':
-    resolution: {integrity: sha512-Pv2lEwDo6VjfxE4nAL/3jrAFtCaWYgzz0ZC7SeCpcKGGKARyXBwdhaO4vVL8OQ4vvuQFTQrBgDKC6lTKQ6KUjQ==}
-
   '@ecl/tag@5.0.0-alpha.14':
     resolution: {integrity: sha512-aV/SWPuR1I3Ws8Ldqrs0GYKwH/4Ol4PaHQDW2yERPXdzEA78rc8utOEoebvvFFcWvuWDAA9vU5cvNiSwK7VOMg==}
 
-  '@ecl/text-area@5.0.0-alpha.13':
-    resolution: {integrity: sha512-rpL2G8bh6JY7o9m4/CKiOp/9EXGM7hTF+bu+BIFOZePBVZYfbbcKfsZydm6Epm7rhXs1rXayobYgKqFuCdMPlQ==}
-
   '@ecl/text-area@5.0.0-alpha.14':
     resolution: {integrity: sha512-19mB8NTo3WhplDHT0xXzGe4YSn+gUmmbVi3AAu6Lowm8Zmz8beycGTslpeIVeAzkV6DiUzFEe1eZcGYo0+oijQ==}
-
-  '@ecl/text-input@5.0.0-alpha.13':
-    resolution: {integrity: sha512-rLjd9jeot7IcHrmwCYWAhdWPpoIQe2KQy7/bkaTvCoZ1njFh+86jYyS9GQAT+3G2mT9KV/CXtrpFJ3uk87e58A==}
 
   '@ecl/text-input@5.0.0-alpha.14':
     resolution: {integrity: sha512-M4u5labF5TLYxXLo0KhCN8tnoJtKSM2mwtaijnrF5Vw/zOWdYOjjpAaz8E6XLWmlffJWOmOyDsoJUWfw6HUfqQ==}
@@ -3281,9 +3084,6 @@ packages:
   '@ecl/theme-ec@3.13.0':
     resolution: {integrity: sha512-fValW/6s60VxkP6ZyF9IPsV3K40fHxIwlDu0r8nKhGaCxjml8mk61TfkQKoaR0WgpT7dvZxO8s3q0Fl5SKcwzQ==}
 
-  '@ecl/theme-ec@5.0.0-alpha.13':
-    resolution: {integrity: sha512-9Tn+x5efhypDG5UigfJ5FyaqTcyjJRREGvkK2DBjDU9UYr0r9d6ceuF0olnq45FK/l8EDPuHWYhdU0RFD/EyiA==}
-
   '@ecl/theme-ec@5.0.0-alpha.14':
     resolution: {integrity: sha512-fWkLasNyh+VhF6kf5fyaMC5W6SS+2Lr5rwSRUsnWWtyr+32gtsC2YhMy/yR3e8Gg1rYZle3cAuylmxg+bp6xBg==}
 
@@ -3293,104 +3093,53 @@ packages:
   '@ecl/theme-eu@5.0.0-alpha.14':
     resolution: {integrity: sha512-WLUOLiiI9IbPl2iWTt0BkdiWZfomzXP6gnPEFPNjDYuMtLI9R3zc4vlAE+jS9y9Di8tm3oIzDWBiejOlntLjzw==}
 
-  '@ecl/timeline@5.0.0-alpha.13':
-    resolution: {integrity: sha512-8ntAJx47A8F5zH9mM8s52CEqpyB6qQ6X6iEZ4X/GwMjFphx0LCGd7BZMd7PWNDeUZylhCI0sTfhlSmk9xAXKuw==}
-
   '@ecl/timeline@5.0.0-alpha.14':
     resolution: {integrity: sha512-jzGV0RSbMpX5sUmx6wn+JjNVsOPkO/w8uaesAIwOeQLRuGHbJloEGE/MRDkzSSmKtJYhgDbEvvgZUnVZyJg2sg==}
-
-  '@ecl/unordered-list@5.0.0-alpha.13':
-    resolution: {integrity: sha512-aF0NnzLnlhLTvKDeZePExPSb4FOj1HlVuyYsD3JSETqO/nhGri5hl3F6uau57tMQ67BwCge9swIFpf3c5DStvA==}
 
   '@ecl/unordered-list@5.0.0-alpha.14':
     resolution: {integrity: sha512-TOQjErgjqppA8on1hPhw13VSN8nEa0MAoPr0HVuOzx43ZauB+fhW5D4Qi/7Dy5IBuXetS2rYRNeT4qcmj8TbUA==}
 
-  '@ecl/utility-background@5.0.0-alpha.13':
-    resolution: {integrity: sha512-T1UlpfSNOPYV1T7udYzW56xCL6nJqpobavTkxf2u287mOh3miCSpa2n4G74R4+SWLo1o03Y4/m5mxRjY+kcmhg==}
-
   '@ecl/utility-background@5.0.0-alpha.14':
     resolution: {integrity: sha512-CKZ+bKUfnaR1dHgmIpYVqhO0PPa+BYar2jttGMb3ZabPy9WA1O0oCbjvLplkpfEz4qn/tWxZpQCrlc1PR0VfbQ==}
-
-  '@ecl/utility-border@5.0.0-alpha.13':
-    resolution: {integrity: sha512-NjdtXdKVr2c/HFIZ2gNgP8AXkZ4YohH+5dFXFmiPRA1DziL+ZzYetrE8mzkGbqJAj84VwgeSXuKRsvVAgePDnA==}
 
   '@ecl/utility-border@5.0.0-alpha.14':
     resolution: {integrity: sha512-dpIgwVYFtFoGw1mifWt/snqY9LnlkDnJVnfkC87T3pK5GyRE3G3eGwOcfjFIUPqr+TgVT7tTz08sWCQQzQO95Q==}
 
-  '@ecl/utility-clearfix@5.0.0-alpha.13':
-    resolution: {integrity: sha512-W1zHVrM5rioi2jP6ES3nxaDgs2OfUD27BiUfulQ/m02gPvFTHpNvpbLlz5LjtfPNm/9jf7iXr/eNv9LtvspGDA==}
-
   '@ecl/utility-clearfix@5.0.0-alpha.14':
     resolution: {integrity: sha512-+fLOR4VRYqx5N5vWnCH8W/Yr8175Tk9jpNbRraDwK4l2Sy0zqcy2PPJZY2r7X76sEMHZx0caUCSgZzG52iZYtw==}
-
-  '@ecl/utility-dimension@5.0.0-alpha.13':
-    resolution: {integrity: sha512-Di38xX73nxVo8kbLwkSMhAy9rCef9SgcOSXANhi0sA1YnvwHljL4G0T6U7PIY+2NECn5Qayx2gTfb2A53dcbNQ==}
 
   '@ecl/utility-dimension@5.0.0-alpha.14':
     resolution: {integrity: sha512-98nayodOK0xK3lB6OIZ3NLgojqdhXJPKIpKF1kaIkz3EmfQcJI6J9vp1mkJyb9f1RnFArJEIPUauRhIcGvPVMw==}
 
-  '@ecl/utility-disablescroll@5.0.0-alpha.13':
-    resolution: {integrity: sha512-60DLGkLSpOX2sSmt9iuN9jBa7bSyFa+7C9asJwe5VZWfWeAJR600ncV/zYAeldq7XvtPeTCkTI+RJjkQh6CcWQ==}
-
   '@ecl/utility-disablescroll@5.0.0-alpha.14':
     resolution: {integrity: sha512-rh52mYBBaADPFKiRNTRvHV6HZYgk3NHAWZGsg1TyR6++i1QpghEd+kQ9GiObG9ThsE7rxPORj5+ON7dieHWJ3A==}
-
-  '@ecl/utility-display@5.0.0-alpha.13':
-    resolution: {integrity: sha512-T4OeXW1cdOjI4kxrs5OS2KkOAhhprw+nlDruvvLvtaDsOWRGINvZiKRYXrEI1ji4dga7YQUCnBEy4jLK5JonFQ==}
 
   '@ecl/utility-display@5.0.0-alpha.14':
     resolution: {integrity: sha512-0wSqPAJgCcS7XLy8Q4KhcRKgUqKthz2V8x8JeuVTElypF6zG7gx/4zpM5Ixl9X0NswzfLcb0Mv8R95RanljDtg==}
 
-  '@ecl/utility-flex@5.0.0-alpha.13':
-    resolution: {integrity: sha512-R+ZhDwt2mnORVoM/pvnvXjhBVBMJDaaURHokH1k1BdPTxP6meglLJxrXNLrpo0pCRHLFDntxCYuMEYJKkytK5Q==}
-
   '@ecl/utility-flex@5.0.0-alpha.14':
     resolution: {integrity: sha512-mCkXBdQfZNcsFA7NIoGEKDv9tYy7tAlGAYvDaxzfbeh8VMJLxQjVx3NPuUjE8hXZkyDUAboh9DTJ4CvYmSzqiA==}
-
-  '@ecl/utility-float@5.0.0-alpha.13':
-    resolution: {integrity: sha512-n88OCsDgflUdvSLoB7eEztDd6nxtC9Aj8EG6DZru8G+ijFHMvHUnyHLRgbgRgRLlZJudIUvReMRA7J01kX1Gng==}
 
   '@ecl/utility-float@5.0.0-alpha.14':
     resolution: {integrity: sha512-pvg6DXWyb3gCSd9PFl6VXENPFUi8XL7blvyELZO8GzXXlnbYE1wsG46Q7S5M9hNEGMI/thGCTt4BOIpMBWbHeg==}
 
-  '@ecl/utility-media@5.0.0-alpha.13':
-    resolution: {integrity: sha512-rbqt2EtK7a/jGHyG1xDgRyAOQbIpnbcdPGlR54rJG7S4RgonLkDaqjBmkGPPczUPGYHp62jZcfu5AMeUjer0Gg==}
-
   '@ecl/utility-media@5.0.0-alpha.14':
     resolution: {integrity: sha512-X/266ismbC84TwQ9r1hmTWFoCrboDAK2fevldXvLUhsj5eGjDUCs5LB0Nto7/nfnsXxXlzAh0PGTJfQwk+sQIQ==}
-
-  '@ecl/utility-print@5.0.0-alpha.13':
-    resolution: {integrity: sha512-L+lZJhBMSkj/TSAV4PMidRbXMmV22O/Q4a2SYNr6ubgCE25VXncLd1mV/oB9O6y72VW/Wg3yvPCzf4exHTAD9w==}
 
   '@ecl/utility-print@5.0.0-alpha.14':
     resolution: {integrity: sha512-H/6BGJF6O3GrC6MP9IwKL2+4087JfQHnxbq+wLC/0cGjRVGSb6tBN6wWvnYE9kuUrZ6vBMQDi2pDoMC8+XD1Fg==}
 
-  '@ecl/utility-screen-reader@5.0.0-alpha.13':
-    resolution: {integrity: sha512-IDbukHWjr0G7vF7sYRs5369R2lbp17whydwI+azbjdkWK9hekhwOD4nQQ6KPZ1+lSBaZema0eArZXlYTFm1htQ==}
-
   '@ecl/utility-screen-reader@5.0.0-alpha.14':
     resolution: {integrity: sha512-/plf3zzBUvLZhays6pIx95xBXNU9/1J+uUMDlnIQmMYBW0a+qz16wGfJcR7YvOVPaTdtJ7wuNYjyrEgbM5vYTQ==}
-
-  '@ecl/utility-shadow@5.0.0-alpha.13':
-    resolution: {integrity: sha512-/ScCcSiGzEQtyMKvsmfHT+7Xx+Z6/NGYrC1HnQy73Eu5Ozh7lWB9i62qarROmyNQE55Vg9CJOoE687gh4lqhjQ==}
 
   '@ecl/utility-shadow@5.0.0-alpha.14':
     resolution: {integrity: sha512-QfhX3kdo/ulLU/6Lz6TxXy/NsScJ+BhQgIlFpN+nUH1Xsmpgp3dKcxMldSzK6mciRvs9S4Vz5CuVHLXfvOrpWA==}
 
-  '@ecl/utility-spacing@5.0.0-alpha.13':
-    resolution: {integrity: sha512-fqML9TpTs/3ces3VVFs0FAVO6Rr5Pks65hqs2so0HHH9cxpv8P7ekpcEw1P7k1UyUbczcA70tedmh0Oj2K1gyg==}
-
   '@ecl/utility-spacing@5.0.0-alpha.14':
     resolution: {integrity: sha512-I8XWftBO6J+NIF/4Kljsrb6jAoBKcG9580Ea1e4eLh2uzozUUS/9ckyxG212qwKr4Z+uomQYz32BXkfv6nV8gg==}
 
-  '@ecl/utility-typography@5.0.0-alpha.13':
-    resolution: {integrity: sha512-W9B5Kipbnn9HyXwxQU9XbukfaI7CcLUrg+7og+LnINWvg4TyI1SzW2QIHR6OksDXPVnCxYth8wITPoYq9/an8g==}
-
   '@ecl/utility-typography@5.0.0-alpha.14':
     resolution: {integrity: sha512-Q2ZP9bWp/NL21pOUGMCbYGK5XFEsz7sMx8tsyZeVBLwfNRcMHc/QP40vlVIy99z6G9svMAYlugaPCbMUWvWX4Q==}
-
-  '@ecl/utility-z-index@5.0.0-alpha.13':
-    resolution: {integrity: sha512-Om2y8oqutOeUEzpWz78hIlIRrNzNIN+eHEQnfhvFrkClPjH926CGuQprCEkq+F8h/kEQBf73F3CyFy4CXX2A3w==}
 
   '@ecl/utility-z-index@5.0.0-alpha.14':
     resolution: {integrity: sha512-55SLeJnCubJLrvHYax0ugslk2h7A4u37IJ3IysZGJwgpSgiQT41NvWSFbdS3gG9CA6R85Bw5TknTPEQnzEoR/w==}
@@ -3558,9 +3307,6 @@ packages:
 
   '@ecl/vanilla-utility-typography@3.13.0':
     resolution: {integrity: sha512-18qc5t+Sp3kMmdUOMBK7kJekfPRzZSp+rCGqcKEechZdBKyHDwL9Zq5BuAujqG9eKb8/+pE0g2D7Fr0pEoO5Gw==}
-
-  '@ecl/video@5.0.0-alpha.13':
-    resolution: {integrity: sha512-99eW7Q4Ggkltzbf4Y36W/auqrCW1ubZqJk7OwE/NRtFtm+k72XHzY+uVi0vOaBRt9Kc5EJgonAok8s4IfzdwxQ==}
 
   '@ecl/video@5.0.0-alpha.14':
     resolution: {integrity: sha512-SoaH5klyArMjYJtU8AWr9EZwGZ4SQ4tiicrzvR/L5T2RroN0QT34/KkS3WbkQg5UEYcubC16KzGgt6N8FihTgQ==}
@@ -14358,29 +14104,12 @@ snapshots:
 
   '@dual-bundle/import-meta-resolve@4.1.0': {}
 
-  '@ecl/accordion@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/event-manager': 5.0.0-alpha.13
-      '@ecl/grid': 5.0.0-alpha.13
-      '@ecl/icon': 5.0.0-alpha.13
-
   '@ecl/accordion@5.0.0-alpha.14':
     dependencies:
       '@ecl/dom-utils': 5.0.0-alpha.14
       '@ecl/event-manager': 5.0.0-alpha.14
       '@ecl/grid': 5.0.0-alpha.14
       '@ecl/icon': 5.0.0-alpha.14
-
-  '@ecl/banner@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/event-manager': 5.0.0-alpha.13
-      '@ecl/grid': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
-      '@ecl/picture': 5.0.0-alpha.13
-      '@ecl/video': 5.0.0-alpha.13
 
   '@ecl/banner@5.0.0-alpha.14':
     dependencies:
@@ -14392,20 +14121,9 @@ snapshots:
       '@ecl/picture': 5.0.0-alpha.14
       '@ecl/video': 5.0.0-alpha.14
 
-  '@ecl/blockquote@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/picture': 5.0.0-alpha.13
-
   '@ecl/blockquote@5.0.0-alpha.14':
     dependencies:
       '@ecl/picture': 5.0.0-alpha.14
-
-  '@ecl/breadcrumb@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/icon': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
 
   '@ecl/breadcrumb@5.0.0-alpha.14':
     dependencies:
@@ -14438,40 +14156,6 @@ snapshots:
       rollup-plugin-uglify: 6.0.4(rollup@4.9.4)
       sass: 1.69.7
     transitivePeerDependencies:
-      - bufferutil
-      - debug
-      - eslint
-      - supports-color
-      - utf-8-validate
-
-  '@ecl/builder@5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))':
-    dependencies:
-      '@babel/core': 7.27.1
-      '@babel/eslint-parser': 7.27.1(@babel/core@7.27.1)(eslint@9.30.1(jiti@1.21.7))
-      '@babel/plugin-transform-runtime': 7.27.1(@babel/core@7.27.1)
-      '@babel/preset-env': 7.27.2(@babel/core@7.27.1)
-      '@babel/runtime': 7.27.1
-      '@rollup/plugin-babel': 6.0.4(@babel/core@7.27.1)(@types/babel__core@7.20.5)(rollup@4.41.1)
-      '@rollup/plugin-commonjs': 28.0.3(rollup@4.41.1)
-      '@rollup/plugin-node-resolve': 16.0.1(rollup@4.41.1)
-      '@rollup/plugin-replace': 6.0.2(rollup@4.41.1)
-      '@rollup/plugin-terser': 0.4.4(rollup@4.41.1)
-      autoprefixer: 10.4.21(postcss@8.5.3)
-      browser-sync: 3.0.4
-      browserslist: 4.24.5
-      commander: 14.0.0
-      cssnano: 7.0.7(postcss@8.5.3)
-      globby: 11.0.4
-      ncp: 2.0.0
-      postcss: 8.5.3
-      postcss-banner: 4.0.1
-      postcss-input-range: 6.0.0(postcss@8.5.3)
-      rollup: 4.41.1
-      rollup-plugin-external-globals: 0.13.0(rollup@4.41.1)
-      rollup-plugin-svg: 2.0.0
-      sass: 1.89.0
-    transitivePeerDependencies:
-      - '@types/babel__core'
       - bufferutil
       - debug
       - eslint
@@ -14512,31 +14196,15 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/button@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/icon': 5.0.0-alpha.13
-      '@ecl/indicator': 5.0.0-alpha.13
-
   '@ecl/button@5.0.0-alpha.14':
     dependencies:
       '@ecl/icon': 5.0.0-alpha.14
       '@ecl/indicator': 5.0.0-alpha.14
 
-  '@ecl/card@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/content-block': 5.0.0-alpha.13
-      '@ecl/picture': 5.0.0-alpha.13
-
   '@ecl/card@5.0.0-alpha.14':
     dependencies:
       '@ecl/content-block': 5.0.0-alpha.14
       '@ecl/picture': 5.0.0-alpha.14
-
-  '@ecl/carousel@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/banner': 5.0.0-alpha.13
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
 
   '@ecl/carousel@5.0.0-alpha.14':
     dependencies:
@@ -14544,35 +14212,16 @@ snapshots:
       '@ecl/button': 5.0.0-alpha.14
       '@ecl/dom-utils': 5.0.0-alpha.14
 
-  '@ecl/category-filter@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/icon': 5.0.0-alpha.13
-
   '@ecl/category-filter@5.0.0-alpha.14':
     dependencies:
       '@ecl/dom-utils': 5.0.0-alpha.14
       '@ecl/icon': 5.0.0-alpha.14
 
-  '@ecl/checkbox@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/icon': 5.0.0-alpha.13
-
   '@ecl/checkbox@5.0.0-alpha.14':
     dependencies:
       '@ecl/icon': 5.0.0-alpha.14
 
-  '@ecl/color-modes@5.0.0-alpha.13': {}
-
   '@ecl/color-modes@5.0.0-alpha.14': {}
-
-  '@ecl/content-block@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/description-list': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/icon': 5.0.0-alpha.13
-      '@ecl/label': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
 
   '@ecl/content-block@5.0.0-alpha.14':
     dependencies:
@@ -14582,37 +14231,18 @@ snapshots:
       '@ecl/label': 5.0.0-alpha.14
       '@ecl/link': 5.0.0-alpha.14
 
-  '@ecl/content-item@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/content-block': 5.0.0-alpha.13
-      '@ecl/date-block': 5.0.0-alpha.13
-      '@ecl/picture': 5.0.0-alpha.13
-
   '@ecl/content-item@5.0.0-alpha.14':
     dependencies:
       '@ecl/content-block': 5.0.0-alpha.14
       '@ecl/date-block': 5.0.0-alpha.14
       '@ecl/picture': 5.0.0-alpha.14
 
-  '@ecl/date-block@5.0.0-alpha.13': {}
-
   '@ecl/date-block@5.0.0-alpha.14': {}
-
-  '@ecl/datepicker@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/icon': 5.0.0-alpha.13
-      pikaday: 1.8.2
 
   '@ecl/datepicker@5.0.0-alpha.14':
     dependencies:
       '@ecl/icon': 5.0.0-alpha.14
       pikaday: 1.8.2
-
-  '@ecl/description-list@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
-      '@ecl/tag': 5.0.0-alpha.13
 
   '@ecl/description-list@5.0.0-alpha.14':
     dependencies:
@@ -14622,19 +14252,9 @@ snapshots:
 
   '@ecl/dom-utils@3.13.0': {}
 
-  '@ecl/dom-utils@5.0.0-alpha.13': {}
-
   '@ecl/dom-utils@5.0.0-alpha.14': {}
 
-  '@ecl/event-manager@5.0.0-alpha.13': {}
-
   '@ecl/event-manager@5.0.0-alpha.14': {}
-
-  '@ecl/expandable@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/event-manager': 5.0.0-alpha.13
 
   '@ecl/expandable@5.0.0-alpha.14':
     dependencies:
@@ -14642,22 +14262,10 @@ snapshots:
       '@ecl/dom-utils': 5.0.0-alpha.14
       '@ecl/event-manager': 5.0.0-alpha.14
 
-  '@ecl/fact-figures@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/icon': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
-
   '@ecl/fact-figures@5.0.0-alpha.14':
     dependencies:
       '@ecl/icon': 5.0.0-alpha.14
       '@ecl/link': 5.0.0-alpha.14
-
-  '@ecl/featured-item@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/link': 5.0.0-alpha.13
-      '@ecl/media-container': 5.0.0-alpha.13
-      '@ecl/mixins-typography': 5.0.0-alpha.13
-      '@ecl/picture': 5.0.0-alpha.13
 
   '@ecl/featured-item@5.0.0-alpha.14':
     dependencies:
@@ -14666,25 +14274,10 @@ snapshots:
       '@ecl/mixins-typography': 5.0.0-alpha.14
       '@ecl/picture': 5.0.0-alpha.14
 
-  '@ecl/file-upload@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/event-manager': 5.0.0-alpha.13
-
   '@ecl/file-upload@5.0.0-alpha.14':
     dependencies:
       '@ecl/dom-utils': 5.0.0-alpha.14
       '@ecl/event-manager': 5.0.0-alpha.14
-
-  '@ecl/file@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/description-list': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/icon': 5.0.0-alpha.13
-      '@ecl/label': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
-      '@ecl/picture': 5.0.0-alpha.13
 
   '@ecl/file@5.0.0-alpha.14':
     dependencies:
@@ -14695,26 +14288,6 @@ snapshots:
       '@ecl/label': 5.0.0-alpha.14
       '@ecl/link': 5.0.0-alpha.14
       '@ecl/picture': 5.0.0-alpha.14
-
-  '@ecl/form-group@5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))':
-    dependencies:
-      '@ecl/checkbox': 5.0.0-alpha.13
-      '@ecl/datepicker': 5.0.0-alpha.13
-      '@ecl/file-upload': 5.0.0-alpha.13
-      '@ecl/icon': 5.0.0-alpha.13
-      '@ecl/radio': 5.0.0-alpha.13
-      '@ecl/range': 5.0.0-alpha.13
-      '@ecl/rating-field': 5.0.0-alpha.13
-      '@ecl/select': 5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
-      '@ecl/text-area': 5.0.0-alpha.13
-      '@ecl/text-input': 5.0.0-alpha.13
-    transitivePeerDependencies:
-      - '@types/babel__core'
-      - bufferutil
-      - debug
-      - eslint
-      - supports-color
-      - utf-8-validate
 
   '@ecl/form-group@5.0.0-alpha.14(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))':
     dependencies:
@@ -14736,16 +14309,6 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/gallery@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/icon': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
-      '@ecl/picture': 5.0.0-alpha.13
-      '@ecl/video': 5.0.0-alpha.13
-      focus-trap: 7.6.4
-
   '@ecl/gallery@5.0.0-alpha.14':
     dependencies:
       '@ecl/button': 5.0.0-alpha.14
@@ -14756,28 +14319,11 @@ snapshots:
       '@ecl/video': 5.0.0-alpha.14
       focus-trap: 7.6.4
 
-  '@ecl/grid@5.0.0-alpha.13': {}
-
   '@ecl/grid@5.0.0-alpha.14': {}
-
-  '@ecl/icon@5.0.0-alpha.13': {}
 
   '@ecl/icon@5.0.0-alpha.14': {}
 
-  '@ecl/indicator@5.0.0-alpha.13': {}
-
   '@ecl/indicator@5.0.0-alpha.14': {}
-
-  '@ecl/inpage-navigation@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/event-manager': 5.0.0-alpha.13
-      '@ecl/grid': 5.0.0-alpha.13
-      '@ecl/icon': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
-      focus-trap: 7.6.4
-      gumshoejs: 5.1.2
-      stickyfilljs: 2.1.0
 
   '@ecl/inpage-navigation@5.0.0-alpha.14':
     dependencies:
@@ -14790,43 +14336,20 @@ snapshots:
       gumshoejs: 5.1.2
       stickyfilljs: 2.1.0
 
-  '@ecl/label@5.0.0-alpha.13': {}
-
   '@ecl/label@5.0.0-alpha.14': {}
-
-  '@ecl/layout-form@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/grid': 5.0.0-alpha.13
 
   '@ecl/layout-form@5.0.0-alpha.14':
     dependencies:
       '@ecl/grid': 5.0.0-alpha.14
 
-  '@ecl/link@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/icon': 5.0.0-alpha.13
-
   '@ecl/link@5.0.0-alpha.14':
     dependencies:
       '@ecl/icon': 5.0.0-alpha.14
-
-  '@ecl/list-illustration@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/icon': 5.0.0-alpha.13
-      '@ecl/picture': 5.0.0-alpha.13
 
   '@ecl/list-illustration@5.0.0-alpha.14':
     dependencies:
       '@ecl/icon': 5.0.0-alpha.14
       '@ecl/picture': 5.0.0-alpha.14
-
-  '@ecl/media-container@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/event-manager': 5.0.0-alpha.13
-      '@ecl/expandable': 5.0.0-alpha.13
-      '@ecl/picture': 5.0.0-alpha.13
-      '@ecl/video': 5.0.0-alpha.13
 
   '@ecl/media-container@5.0.0-alpha.14':
     dependencies:
@@ -14836,16 +14359,6 @@ snapshots:
       '@ecl/picture': 5.0.0-alpha.14
       '@ecl/video': 5.0.0-alpha.14
 
-  '@ecl/mega-menu@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/event-manager': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
-      '@ecl/picture': 5.0.0-alpha.13
-      bowser: 2.11.0
-      focus-trap: 7.6.4
-
   '@ecl/mega-menu@5.0.0-alpha.14':
     dependencies:
       '@ecl/button': 5.0.0-alpha.14
@@ -14853,15 +14366,6 @@ snapshots:
       '@ecl/event-manager': 5.0.0-alpha.14
       '@ecl/link': 5.0.0-alpha.14
       '@ecl/picture': 5.0.0-alpha.14
-      bowser: 2.11.0
-      focus-trap: 7.6.4
-
-  '@ecl/menu@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/event-manager': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
       bowser: 2.11.0
       focus-trap: 7.6.4
 
@@ -14874,20 +14378,9 @@ snapshots:
       bowser: 2.11.0
       focus-trap: 7.6.4
 
-  '@ecl/mixins-typography@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/grid': 5.0.0-alpha.13
-
   '@ecl/mixins-typography@5.0.0-alpha.14':
     dependencies:
       '@ecl/grid': 5.0.0-alpha.14
-
-  '@ecl/modal@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/icon': 5.0.0-alpha.13
-      focus-trap: 7.6.4
 
   '@ecl/modal@5.0.0-alpha.14':
     dependencies:
@@ -14896,22 +14389,10 @@ snapshots:
       '@ecl/icon': 5.0.0-alpha.14
       focus-trap: 7.6.4
 
-  '@ecl/navigation-list@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/content-block': 5.0.0-alpha.13
-      '@ecl/picture': 5.0.0-alpha.13
-
   '@ecl/navigation-list@5.0.0-alpha.14':
     dependencies:
       '@ecl/content-block': 5.0.0-alpha.14
       '@ecl/picture': 5.0.0-alpha.14
-
-  '@ecl/news-ticker@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/icon': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
 
   '@ecl/news-ticker@5.0.0-alpha.14':
     dependencies:
@@ -14920,13 +14401,6 @@ snapshots:
       '@ecl/icon': 5.0.0-alpha.14
       '@ecl/link': 5.0.0-alpha.14
 
-  '@ecl/notification@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/event-manager': 5.0.0-alpha.13
-      '@ecl/icon': 5.0.0-alpha.13
-
   '@ecl/notification@5.0.0-alpha.14':
     dependencies:
       '@ecl/button': 5.0.0-alpha.14
@@ -14934,15 +14408,7 @@ snapshots:
       '@ecl/event-manager': 5.0.0-alpha.14
       '@ecl/icon': 5.0.0-alpha.14
 
-  '@ecl/ordered-list@5.0.0-alpha.13': {}
-
   '@ecl/ordered-list@5.0.0-alpha.14': {}
-
-  '@ecl/page-header@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/breadcrumb': 5.0.0-alpha.13
-      '@ecl/grid': 5.0.0-alpha.13
-      '@ecl/picture': 5.0.0-alpha.13
 
   '@ecl/page-header@5.0.0-alpha.14':
     dependencies:
@@ -14950,27 +14416,12 @@ snapshots:
       '@ecl/grid': 5.0.0-alpha.14
       '@ecl/picture': 5.0.0-alpha.14
 
-  '@ecl/pagination@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/grid': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
-
   '@ecl/pagination@5.0.0-alpha.14':
     dependencies:
       '@ecl/grid': 5.0.0-alpha.14
       '@ecl/link': 5.0.0-alpha.14
 
-  '@ecl/picture@5.0.0-alpha.13': {}
-
   '@ecl/picture@5.0.0-alpha.14': {}
-
-  '@ecl/popover@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/event-manager': 5.0.0-alpha.13
-      '@ecl/grid': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
 
   '@ecl/popover@5.0.0-alpha.14':
     dependencies:
@@ -14979,98 +14430,6 @@ snapshots:
       '@ecl/event-manager': 5.0.0-alpha.14
       '@ecl/grid': 5.0.0-alpha.14
       '@ecl/link': 5.0.0-alpha.14
-
-  '@ecl/preset-ec@5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))':
-    dependencies:
-      '@ecl/accordion': 5.0.0-alpha.13
-      '@ecl/banner': 5.0.0-alpha.13
-      '@ecl/blockquote': 5.0.0-alpha.13
-      '@ecl/breadcrumb': 5.0.0-alpha.13
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/card': 5.0.0-alpha.13
-      '@ecl/carousel': 5.0.0-alpha.13
-      '@ecl/category-filter': 5.0.0-alpha.13
-      '@ecl/checkbox': 5.0.0-alpha.13
-      '@ecl/color-modes': 5.0.0-alpha.13
-      '@ecl/content-block': 5.0.0-alpha.13
-      '@ecl/content-item': 5.0.0-alpha.13
-      '@ecl/date-block': 5.0.0-alpha.13
-      '@ecl/datepicker': 5.0.0-alpha.13
-      '@ecl/description-list': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/expandable': 5.0.0-alpha.13
-      '@ecl/fact-figures': 5.0.0-alpha.13
-      '@ecl/featured-item': 5.0.0-alpha.13
-      '@ecl/file': 5.0.0-alpha.13
-      '@ecl/file-upload': 5.0.0-alpha.13
-      '@ecl/form-group': 5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
-      '@ecl/gallery': 5.0.0-alpha.13
-      '@ecl/grid': 5.0.0-alpha.13
-      '@ecl/icon': 5.0.0-alpha.13
-      '@ecl/indicator': 5.0.0-alpha.13
-      '@ecl/inpage-navigation': 5.0.0-alpha.13
-      '@ecl/label': 5.0.0-alpha.13
-      '@ecl/layout-form': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
-      '@ecl/list-illustration': 5.0.0-alpha.13
-      '@ecl/media-container': 5.0.0-alpha.13
-      '@ecl/mega-menu': 5.0.0-alpha.13
-      '@ecl/menu': 5.0.0-alpha.13
-      '@ecl/mixins-typography': 5.0.0-alpha.13
-      '@ecl/modal': 5.0.0-alpha.13
-      '@ecl/navigation-list': 5.0.0-alpha.13
-      '@ecl/news-ticker': 5.0.0-alpha.13
-      '@ecl/notification': 5.0.0-alpha.13
-      '@ecl/ordered-list': 5.0.0-alpha.13
-      '@ecl/page-header': 5.0.0-alpha.13
-      '@ecl/pagination': 5.0.0-alpha.13
-      '@ecl/picture': 5.0.0-alpha.13
-      '@ecl/popover': 5.0.0-alpha.13
-      '@ecl/radio': 5.0.0-alpha.13
-      '@ecl/range': 5.0.0-alpha.13
-      '@ecl/rating-field': 5.0.0-alpha.13
-      '@ecl/search-form': 5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
-      '@ecl/select': 5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
-      '@ecl/separator': 5.0.0-alpha.13
-      '@ecl/site-footer': 5.0.0-alpha.13
-      '@ecl/site-header': 5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
-      '@ecl/skip-link': 5.0.0-alpha.13
-      '@ecl/social-media-follow': 5.0.0-alpha.13
-      '@ecl/spinner': 5.0.0-alpha.13
-      '@ecl/splash-page': 5.0.0-alpha.13
-      '@ecl/table': 5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
-      '@ecl/tabs': 5.0.0-alpha.13
-      '@ecl/tag': 5.0.0-alpha.13
-      '@ecl/text-area': 5.0.0-alpha.13
-      '@ecl/text-input': 5.0.0-alpha.13
-      '@ecl/theme-ec': 5.0.0-alpha.13
-      '@ecl/timeline': 5.0.0-alpha.13
-      '@ecl/unordered-list': 5.0.0-alpha.13
-      '@ecl/utility-background': 5.0.0-alpha.13
-      '@ecl/utility-border': 5.0.0-alpha.13
-      '@ecl/utility-clearfix': 5.0.0-alpha.13
-      '@ecl/utility-dimension': 5.0.0-alpha.13
-      '@ecl/utility-disablescroll': 5.0.0-alpha.13
-      '@ecl/utility-display': 5.0.0-alpha.13
-      '@ecl/utility-flex': 5.0.0-alpha.13
-      '@ecl/utility-float': 5.0.0-alpha.13
-      '@ecl/utility-media': 5.0.0-alpha.13
-      '@ecl/utility-print': 5.0.0-alpha.13
-      '@ecl/utility-screen-reader': 5.0.0-alpha.13
-      '@ecl/utility-shadow': 5.0.0-alpha.13
-      '@ecl/utility-spacing': 5.0.0-alpha.13
-      '@ecl/utility-typography': 5.0.0-alpha.13
-      '@ecl/utility-z-index': 5.0.0-alpha.13
-      '@ecl/video': 5.0.0-alpha.13
-      normalize.css: 8.0.1
-      pikaday: 1.8.2
-    transitivePeerDependencies:
-      - '@types/babel__core'
-      - bufferutil
-      - debug
-      - eslint
-      - supports-color
-      - utf-8-validate
 
   '@ecl/preset-ec@5.0.0-alpha.14(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))':
     dependencies:
@@ -15255,23 +14614,12 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/radio@5.0.0-alpha.13': {}
-
   '@ecl/radio@5.0.0-alpha.14': {}
-
-  '@ecl/range@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/layout-form': 5.0.0-alpha.13
 
   '@ecl/range@5.0.0-alpha.14':
     dependencies:
       '@ecl/dom-utils': 5.0.0-alpha.14
       '@ecl/layout-form': 5.0.0-alpha.14
-
-  '@ecl/rating-field@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/icon': 5.0.0-alpha.13
 
   '@ecl/rating-field@5.0.0-alpha.14':
     dependencies:
@@ -15293,43 +14641,14 @@ snapshots:
       npm-run-all: 4.1.5
       rimraf: 5.0.5
 
-  '@ecl/resources-icons@5.0.0-alpha.13': {}
-
   '@ecl/resources-icons@5.0.0-alpha.14': {}
 
   '@ecl/resources-social-media-icons@3.13.0': {}
-
-  '@ecl/search-form@5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))':
-    dependencies:
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/form-group': 5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
-    transitivePeerDependencies:
-      - '@types/babel__core'
-      - bufferutil
-      - debug
-      - eslint
-      - supports-color
-      - utf-8-validate
 
   '@ecl/search-form@5.0.0-alpha.14(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))':
     dependencies:
       '@ecl/button': 5.0.0-alpha.14
       '@ecl/form-group': 5.0.0-alpha.14(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
-    transitivePeerDependencies:
-      - '@types/babel__core'
-      - bufferutil
-      - debug
-      - eslint
-      - supports-color
-      - utf-8-validate
-
-  '@ecl/select@5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))':
-    dependencies:
-      '@ecl/builder': 5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/event-manager': 5.0.0-alpha.13
-      '@ecl/layout-form': 5.0.0-alpha.13
     transitivePeerDependencies:
       - '@types/babel__core'
       - bufferutil
@@ -15353,41 +14672,13 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/separator@5.0.0-alpha.13': {}
-
   '@ecl/separator@5.0.0-alpha.14': {}
-
-  '@ecl/site-footer@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/link': 5.0.0-alpha.13
-      '@ecl/picture': 5.0.0-alpha.13
-      '@ecl/social-media-follow': 5.0.0-alpha.13
 
   '@ecl/site-footer@5.0.0-alpha.14':
     dependencies:
       '@ecl/link': 5.0.0-alpha.14
       '@ecl/picture': 5.0.0-alpha.14
       '@ecl/social-media-follow': 5.0.0-alpha.14
-
-  '@ecl/site-header@5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))':
-    dependencies:
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/grid': 5.0.0-alpha.13
-      '@ecl/icon': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
-      '@ecl/menu': 5.0.0-alpha.13
-      '@ecl/notification': 5.0.0-alpha.13
-      '@ecl/picture': 5.0.0-alpha.13
-      '@ecl/search-form': 5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
-      focus-trap: 7.6.4
-    transitivePeerDependencies:
-      - '@types/babel__core'
-      - bufferutil
-      - debug
-      - eslint
-      - supports-color
-      - utf-8-validate
 
   '@ecl/site-header@5.0.0-alpha.14(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))':
     dependencies:
@@ -15409,20 +14700,10 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/skip-link@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/link': 5.0.0-alpha.13
-      '@ecl/utility-screen-reader': 5.0.0-alpha.13
-
   '@ecl/skip-link@5.0.0-alpha.14':
     dependencies:
       '@ecl/link': 5.0.0-alpha.14
       '@ecl/utility-screen-reader': 5.0.0-alpha.14
-
-  '@ecl/social-media-follow@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/grid': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
 
   '@ecl/social-media-follow@5.0.0-alpha.14':
     dependencies:
@@ -15435,33 +14716,12 @@ snapshots:
 
   '@ecl/specs-component-icon@3.13.0': {}
 
-  '@ecl/spinner@5.0.0-alpha.13': {}
-
   '@ecl/spinner@5.0.0-alpha.14': {}
-
-  '@ecl/splash-page@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/link': 5.0.0-alpha.13
-      '@ecl/picture': 5.0.0-alpha.13
 
   '@ecl/splash-page@5.0.0-alpha.14':
     dependencies:
       '@ecl/link': 5.0.0-alpha.14
       '@ecl/picture': 5.0.0-alpha.14
-
-  '@ecl/table@5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))':
-    dependencies:
-      '@ecl/builder': 5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/grid': 5.0.0-alpha.13
-      '@ecl/resources-icons': 5.0.0-alpha.13
-    transitivePeerDependencies:
-      - '@types/babel__core'
-      - bufferutil
-      - debug
-      - eslint
-      - supports-color
-      - utf-8-validate
 
   '@ecl/table@5.0.0-alpha.14(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))':
     dependencies:
@@ -15477,15 +14737,6 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/tabs@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/event-manager': 5.0.0-alpha.13
-      '@ecl/grid': 5.0.0-alpha.13
-      '@ecl/link': 5.0.0-alpha.13
-      '@ecl/utility-screen-reader': 5.0.0-alpha.13
-
   '@ecl/tabs@5.0.0-alpha.14':
     dependencies:
       '@ecl/button': 5.0.0-alpha.14
@@ -15495,19 +14746,11 @@ snapshots:
       '@ecl/link': 5.0.0-alpha.14
       '@ecl/utility-screen-reader': 5.0.0-alpha.14
 
-  '@ecl/tag@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/icon': 5.0.0-alpha.13
-
   '@ecl/tag@5.0.0-alpha.14':
     dependencies:
       '@ecl/icon': 5.0.0-alpha.14
 
-  '@ecl/text-area@5.0.0-alpha.13': {}
-
   '@ecl/text-area@5.0.0-alpha.14': {}
-
-  '@ecl/text-input@5.0.0-alpha.13': {}
 
   '@ecl/text-input@5.0.0-alpha.14': {}
 
@@ -15517,8 +14760,6 @@ snapshots:
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
 
-  '@ecl/theme-ec@5.0.0-alpha.13': {}
-
   '@ecl/theme-ec@5.0.0-alpha.14': {}
 
   '@ecl/theme-eu@3.13.0':
@@ -15527,105 +14768,54 @@ snapshots:
 
   '@ecl/theme-eu@5.0.0-alpha.14': {}
 
-  '@ecl/timeline@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/button': 5.0.0-alpha.13
-      '@ecl/dom-utils': 5.0.0-alpha.13
-      '@ecl/grid': 5.0.0-alpha.13
-
   '@ecl/timeline@5.0.0-alpha.14':
     dependencies:
       '@ecl/button': 5.0.0-alpha.14
       '@ecl/dom-utils': 5.0.0-alpha.14
       '@ecl/grid': 5.0.0-alpha.14
 
-  '@ecl/unordered-list@5.0.0-alpha.13': {}
-
   '@ecl/unordered-list@5.0.0-alpha.14': {}
 
-  '@ecl/utility-background@5.0.0-alpha.13': {}
-
   '@ecl/utility-background@5.0.0-alpha.14': {}
-
-  '@ecl/utility-border@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/grid': 5.0.0-alpha.13
 
   '@ecl/utility-border@5.0.0-alpha.14':
     dependencies:
       '@ecl/grid': 5.0.0-alpha.14
 
-  '@ecl/utility-clearfix@5.0.0-alpha.13': {}
-
   '@ecl/utility-clearfix@5.0.0-alpha.14': {}
-
-  '@ecl/utility-dimension@5.0.0-alpha.13': {}
 
   '@ecl/utility-dimension@5.0.0-alpha.14': {}
 
-  '@ecl/utility-disablescroll@5.0.0-alpha.13': {}
-
   '@ecl/utility-disablescroll@5.0.0-alpha.14': {}
-
-  '@ecl/utility-display@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/grid': 5.0.0-alpha.13
 
   '@ecl/utility-display@5.0.0-alpha.14':
     dependencies:
       '@ecl/grid': 5.0.0-alpha.14
 
-  '@ecl/utility-flex@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/grid': 5.0.0-alpha.13
-
   '@ecl/utility-flex@5.0.0-alpha.14':
     dependencies:
       '@ecl/grid': 5.0.0-alpha.14
 
-  '@ecl/utility-float@5.0.0-alpha.13': {}
-
   '@ecl/utility-float@5.0.0-alpha.14': {}
-
-  '@ecl/utility-media@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/grid': 5.0.0-alpha.13
 
   '@ecl/utility-media@5.0.0-alpha.14':
     dependencies:
       '@ecl/grid': 5.0.0-alpha.14
 
-  '@ecl/utility-print@5.0.0-alpha.13': {}
-
   '@ecl/utility-print@5.0.0-alpha.14': {}
-
-  '@ecl/utility-screen-reader@5.0.0-alpha.13': {}
 
   '@ecl/utility-screen-reader@5.0.0-alpha.14': {}
 
-  '@ecl/utility-shadow@5.0.0-alpha.13': {}
-
   '@ecl/utility-shadow@5.0.0-alpha.14': {}
-
-  '@ecl/utility-spacing@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/grid': 5.0.0-alpha.13
 
   '@ecl/utility-spacing@5.0.0-alpha.14':
     dependencies:
       '@ecl/grid': 5.0.0-alpha.14
 
-  '@ecl/utility-typography@5.0.0-alpha.13':
-    dependencies:
-      '@ecl/grid': 5.0.0-alpha.13
-      '@ecl/mixins-typography': 5.0.0-alpha.13
-
   '@ecl/utility-typography@5.0.0-alpha.14':
     dependencies:
       '@ecl/grid': 5.0.0-alpha.14
       '@ecl/mixins-typography': 5.0.0-alpha.14
-
-  '@ecl/utility-z-index@5.0.0-alpha.13': {}
 
   '@ecl/utility-z-index@5.0.0-alpha.14': {}
 
@@ -15894,8 +15084,6 @@ snapshots:
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
       '@ecl/vanilla-layout-grid': 3.13.0
-
-  '@ecl/video@5.0.0-alpha.13': {}
 
   '@ecl/video@5.0.0-alpha.14': {}
 
