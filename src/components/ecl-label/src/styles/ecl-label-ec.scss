@@ -1,2 +1,6 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-component-label/label-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/label/label' with (
+  $theme: theme.$theme,
+  $label: var.$label
+);
