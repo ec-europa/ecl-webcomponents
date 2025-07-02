@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-divider renders 1`] = `
+<ecl-divider theme="ec">
+  <hr class="ecl-separator">
+</ecl-divider>
+`;

@@ -417,6 +417,13 @@ export namespace Components {
          */
         "theme": string;
     }
+    interface EclDivider {
+        "styleClass": string;
+        /**
+          * @default 'ec'
+         */
+        "theme": string;
+    }
     interface EclExpandable {
         /**
           * @default false
@@ -1895,6 +1902,12 @@ declare global {
         prototype: HTMLEclDescriptionListTermElement;
         new (): HTMLEclDescriptionListTermElement;
     };
+    interface HTMLEclDividerElement extends Components.EclDivider, HTMLStencilElement {
+    }
+    var HTMLEclDividerElement: {
+        prototype: HTMLEclDividerElement;
+        new (): HTMLEclDividerElement;
+    };
     interface HTMLEclExpandableElement extends Components.EclExpandable, HTMLStencilElement {
     }
     var HTMLEclExpandableElement: {
@@ -2333,6 +2346,7 @@ declare global {
         "ecl-description-list": HTMLEclDescriptionListElement;
         "ecl-description-list-definition": HTMLEclDescriptionListDefinitionElement;
         "ecl-description-list-term": HTMLEclDescriptionListTermElement;
+        "ecl-divider": HTMLEclDividerElement;
         "ecl-expandable": HTMLEclExpandableElement;
         "ecl-fact-figures": HTMLEclFactFiguresElement;
         "ecl-fact-figures-item": HTMLEclFactFiguresItemElement;
@@ -2802,6 +2816,13 @@ declare namespace LocalJSX {
         /**
           * @default ''
          */
+        "styleClass"?: string;
+        /**
+          * @default 'ec'
+         */
+        "theme"?: string;
+    }
+    interface EclDivider {
         "styleClass"?: string;
         /**
           * @default 'ec'
@@ -4150,6 +4171,7 @@ declare namespace LocalJSX {
         "ecl-description-list": EclDescriptionList;
         "ecl-description-list-definition": EclDescriptionListDefinition;
         "ecl-description-list-term": EclDescriptionListTerm;
+        "ecl-divider": EclDivider;
         "ecl-expandable": EclExpandable;
         "ecl-fact-figures": EclFactFigures;
         "ecl-fact-figures-item": EclFactFiguresItem;
@@ -4232,6 +4254,7 @@ declare module "@stencil/core" {
             "ecl-description-list": LocalJSX.EclDescriptionList & JSXBase.HTMLAttributes<HTMLEclDescriptionListElement>;
             "ecl-description-list-definition": LocalJSX.EclDescriptionListDefinition & JSXBase.HTMLAttributes<HTMLEclDescriptionListDefinitionElement>;
             "ecl-description-list-term": LocalJSX.EclDescriptionListTerm & JSXBase.HTMLAttributes<HTMLEclDescriptionListTermElement>;
+            "ecl-divider": LocalJSX.EclDivider & JSXBase.HTMLAttributes<HTMLEclDividerElement>;
             "ecl-expandable": LocalJSX.EclExpandable & JSXBase.HTMLAttributes<HTMLEclExpandableElement>;
             "ecl-fact-figures": LocalJSX.EclFactFigures & JSXBase.HTMLAttributes<HTMLEclFactFiguresElement>;
             "ecl-fact-figures-item": LocalJSX.EclFactFiguresItem & JSXBase.HTMLAttributes<HTMLEclFactFiguresItemElement>;
