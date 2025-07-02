@@ -21,6 +21,7 @@ export class EclButton {
   @Prop() itemId: string;
   @Prop() indicator: boolean = false;
   @Prop() indicatorValue: string = '';
+  @Prop({ reflect: true }) disabled: boolean = false;
   @State() hasLabelContent: boolean = false;
   @State() hasIconBefore: boolean = false;
   @State() hasIconAfter: boolean = false;
@@ -69,6 +70,7 @@ export class EclButton {
       <button
         class={this.getClass()}
         type={this.type}
+        disabled={this.disabled}
         {...(this.ariaControls && { 'aria-controls': this.ariaControls })}
         {...(this.itemId && { id: this.itemId })}
       >

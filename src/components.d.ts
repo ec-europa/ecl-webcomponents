@@ -137,6 +137,10 @@ export namespace Components {
         /**
           * @default false
          */
+        "disabled": boolean;
+        /**
+          * @default false
+         */
         "hideLabel": boolean;
         /**
           * @default false
@@ -2551,6 +2555,10 @@ declare namespace LocalJSX {
     }
     interface EclButton {
         "ariaControls"?: string;
+        /**
+          * @default false
+         */
+        "disabled"?: boolean;
         /**
           * @default false
          */

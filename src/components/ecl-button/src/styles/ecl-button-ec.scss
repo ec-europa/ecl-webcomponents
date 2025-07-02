@@ -9,6 +9,10 @@
   display: contents;
 }
 
+.ecl-button--icon-only ecl-icon {
+  display: flex;
+}
+
 .ecl-button:not(.ecl-button--icon-only) ::slotted([slot='icon-before']) {
   margin-inline-end: var(--s-xs);
   line-height: 0;
