@@ -7,6 +7,7 @@ const getArgs = () => {
 
 const getArgTypes = () => {
   return {
+    color_mode: { table: { disable: true } },
     variant: {
       type: { name: 'select' },
       options: ['low', 'medium', 'high', 'highlight'],

@@ -1105,20 +1105,17 @@ importers:
   src/components/ecl-label:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.29.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.13
+        version: 5.0.0-alpha.13(patch_hash=c0fbb443cc50de86c9f4da2dfe52fcd05b116b3dd223671a33c1a30d2ca0f516)(@types/babel__core@7.20.5)(eslint@9.29.0(jiti@1.21.7))
+      '@ecl/label':
+        specifier: 5.0.0-alpha.13
+        version: 5.0.0-alpha.13
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.13
+        version: 5.0.0-alpha.13
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-label':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.13
+        version: 5.0.0-alpha.13
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
