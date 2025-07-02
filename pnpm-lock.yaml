@@ -1684,23 +1684,20 @@ importers:
   src/components/ecl-spinner:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.30.1(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14(patch_hash=b6ad42f8f626741a7c0770d35959f5023291e2cb9b398da24440ce165f0a54a2)(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
+      '@ecl/spinner':
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-spinner':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -3277,9 +3274,6 @@ packages:
 
   '@ecl/vanilla-component-social-media-share@3.13.0':
     resolution: {integrity: sha512-ff5S8Evwr/Z/N9KFLBMbOIYE2WdQiX03ejC4GUSp5Q5Ew3neMfAnBmb9RnhOA77YnE1NKV8tue16ElsCjNO/bg==}
-
-  '@ecl/vanilla-component-spinner@3.13.0':
-    resolution: {integrity: sha512-4/6cpRyV9fri1Me/UX+MbVNdpXgg7p6TXrm9botK7sU8aWW1+NTTOmEQbrc+nNeaJ1Y5q2HyS6Mk0M8ELgJ9Lw==}
 
   '@ecl/vanilla-component-tag@3.13.0':
     resolution: {integrity: sha512-9S0MnuiUQ2XMQjMciegS+D/v/39QveDcdMLnQpyjOmlfl84hHXCaIj8eWGvfDzNoFE5VA2akkdxYXN8Wy4Ub/g==}
@@ -15042,10 +15036,6 @@ snapshots:
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
 
-  '@ecl/vanilla-component-spinner@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
   '@ecl/vanilla-component-tag@3.13.0':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
@@ -17948,7 +17938,7 @@ snapshots:
 
   caniuse-api@3.0.0:
     dependencies:
-      browserslist: 4.24.5
+      browserslist: 4.25.1
       caniuse-lite: 1.0.30001726
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
@@ -18447,7 +18437,7 @@ snapshots:
 
   cssnano-preset-default@7.0.7(postcss@8.5.3):
     dependencies:
-      browserslist: 4.24.5
+      browserslist: 4.25.1
       css-declaration-sorter: 7.2.0(postcss@8.5.3)
       cssnano-utils: 5.0.1(postcss@8.5.3)
       postcss: 8.5.3
@@ -22021,7 +22011,7 @@ snapshots:
   ora@5.3.0:
     dependencies:
       bl: 4.1.0
-      chalk: 4.1.0
+      chalk: 4.1.2
       cli-cursor: 3.1.0
       cli-spinners: 2.6.1
       is-interactive: 1.0.0
@@ -22313,7 +22303,7 @@ snapshots:
 
   postcss-banner@4.0.1:
     dependencies:
-      postcss: 8.5.3
+      postcss: 8.5.6
 
   postcss-calc@10.1.1(postcss@8.5.3):
     dependencies:
@@ -22337,7 +22327,7 @@ snapshots:
 
   postcss-colormin@7.0.3(postcss@8.5.3):
     dependencies:
-      browserslist: 4.24.5
+      browserslist: 4.25.1
       caniuse-api: 3.0.0
       colord: 2.9.3
       postcss: 8.5.3
@@ -22351,7 +22341,7 @@ snapshots:
 
   postcss-convert-values@7.0.5(postcss@8.5.3):
     dependencies:
-      browserslist: 4.24.5
+      browserslist: 4.25.1
       postcss: 8.5.3
       postcss-value-parser: 4.2.0
 
@@ -22432,7 +22422,7 @@ snapshots:
 
   postcss-merge-rules@7.0.5(postcss@8.5.3):
     dependencies:
-      browserslist: 4.24.5
+      browserslist: 4.25.1
       caniuse-api: 3.0.0
       cssnano-utils: 5.0.1(postcss@8.5.3)
       postcss: 8.5.3
@@ -22471,7 +22461,7 @@ snapshots:
 
   postcss-minify-params@7.0.3(postcss@8.5.3):
     dependencies:
-      browserslist: 4.24.5
+      browserslist: 4.25.1
       cssnano-utils: 5.0.1(postcss@8.5.3)
       postcss: 8.5.3
       postcss-value-parser: 4.2.0
@@ -22574,7 +22564,7 @@ snapshots:
 
   postcss-normalize-unicode@7.0.3(postcss@8.5.3):
     dependencies:
-      browserslist: 4.24.5
+      browserslist: 4.25.1
       postcss: 8.5.3
       postcss-value-parser: 4.2.0
 
@@ -22618,7 +22608,7 @@ snapshots:
 
   postcss-reduce-initial@7.0.3(postcss@8.5.3):
     dependencies:
-      browserslist: 4.24.5
+      browserslist: 4.25.1
       caniuse-api: 3.0.0
       postcss: 8.5.3
 
@@ -23929,7 +23919,7 @@ snapshots:
 
   stylehacks@7.0.5(postcss@8.5.3):
     dependencies:
-      browserslist: 4.24.5
+      browserslist: 4.25.1
       postcss: 8.5.3
       postcss-selector-parser: 7.1.0
 

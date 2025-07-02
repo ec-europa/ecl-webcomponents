@@ -1,7 +1,7 @@
 const getArgs = () => {
   return {
     variant: 'primary',
-    label: 'Loading...',
+    label: 'Loading',
     centered: true,
     visible: true,
     overlay: false,
@@ -10,9 +10,10 @@ const getArgs = () => {
 
 const getArgTypes = () => {
   return {
+    color_mode: { table: { disable: true } },
     variant: {
       type: { name: 'select' },
-      options: ['primary', 'negative'],
+      options: ['primary', 'inverted'],
       description: 'Spinner variant',
     },
     label: {
@@ -35,7 +36,7 @@ const getArgTypes = () => {
 };
 
 export default {
-  title: 'Components/spinner',
+  title: 'Components/loading indicator',
 };
 
 const Template = args => {
@@ -49,7 +50,7 @@ const Template = args => {
     ${args.label}
   </ecl-spinner>`;
 
-  if (args.variant === 'negative') {
+  if (args.variant === 'inverted') {
     story = `<div style="background: #004494; position: relative; height: 150px;">${story}</div>`
   }
 

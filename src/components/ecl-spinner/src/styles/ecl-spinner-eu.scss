@@ -1,2 +1,6 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-spinner/spinner-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/spinner/spinner' with (
+  $theme: theme.$theme,
+  $spinner: var.$spinner
+);
