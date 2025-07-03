@@ -81,7 +81,7 @@ export class EclButton {
           {this.indicator && this.hasIconBefore && (
             <span class="ecl-button__icon-container">
               <slot name="icon-before"></slot>
-              <ecl-indicator value={this.indicatorValue}></ecl-indicator>
+              <ecl-indicator ecl-script value={this.indicatorValue}></ecl-indicator>
             </span>
           )}
 
@@ -101,7 +101,7 @@ export class EclButton {
           {this.indicator && this.hasIconAfter && (
             <span class="ecl-button__icon-container">
               <slot name="icon-after"></slot>
-              <ecl-indicator value={this.indicatorValue}></ecl-indicator>
+              <ecl-indicator ecl-script value={this.indicatorValue}></ecl-indicator>
             </span>
           )}
         </span>

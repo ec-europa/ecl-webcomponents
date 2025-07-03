@@ -35,7 +35,7 @@ export class EclIndicator {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const indicator = new ECL.Indicator(this.el);
+        const indicator = new ECL.Indicator(this.el.firstElementChild);
         indicator.init();
       };
       document.body.appendChild(script);

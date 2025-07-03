@@ -15,6 +15,7 @@ module.exports = {
       dest: path.resolve(outputFolder, 'scripts/ecl-indicator.js'),
       options: {
         banner,
+        format: 'iife',
         moduleName: 'ECL',
         includePaths,
         sourceMap: false,

@@ -16,6 +16,7 @@ if (!isProd) {
     path.resolve(`${__dirname}/../src/components/ecl-news-ticker`),
     path.resolve(`${__dirname}/../src/components/ecl-select`),
     path.resolve(`${__dirname}/../src/components/ecl-input`),
+    path.resolve(`${__dirname}/../src/components/ecl-indicator`),
     path.resolve(`${__dirname}/../src/components/ecl-file-upload`),
     path.resolve(`${__dirname}/../src/components/ecl-category-filter`),
     path.resolve(`${__dirname}/../src/components/ecl-timeline`),
