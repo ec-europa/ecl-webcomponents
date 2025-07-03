@@ -9,7 +9,7 @@
   display: contents;
 }
 
-.ecl-button--icon-only ecl-icon {
+.ecl-button--icon-only ::slotted([slot^='icon-']) {
   display: flex;
 }
 

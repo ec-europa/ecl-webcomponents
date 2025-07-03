@@ -35,7 +35,7 @@ const getArgTypes = () => {
       description: "Button variant"
     },
     disabled: {
-      name: 'Disabled',
+      name: 'disabled',
       type: { name: 'boolean' },
       description: 'Disables the button',
     },
@@ -104,7 +104,6 @@ export default {
 const Template = (args) => {
   const buttonHtml = `<ecl-button
     type="${args.type}"
-    data-ecl-button-icon
     theme="${args.theme}"
     variant="${args.variant}"
     ${args.disabled ? 'disabled' : ''}
