@@ -1037,11 +1037,11 @@ importers:
   src/components/ecl-indicator:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.13
-        version: 5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14(patch_hash=b6ad42f8f626741a7c0770d35959f5023291e2cb9b398da24440ce165f0a54a2)(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
       '@ecl/indicator':
-        specifier: 5.0.0-alpha.13
-        version: 5.0.0-alpha.13
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -2909,11 +2909,6 @@ packages:
     engines: {node: '>=12.0.0'}
     hasBin: true
 
-  '@ecl/builder@5.0.0-alpha.13':
-    resolution: {integrity: sha512-pqfR+uRZqiDgagW6CHGRoaQjuDo0ZgI6xY/d/uy9WKVHnF9BZSXIQWlLcygkbPQj7IeZqT13QHWnobNY4nkUhQ==}
-    engines: {node: '>=22.11.0'}
-    hasBin: true
-
   '@ecl/builder@5.0.0-alpha.14':
     resolution: {integrity: sha512-GszJhN6QXmE4SGh1yP9xq6HzqTqHwV6KJIBUgQWoQhYAI/wWcgdLzefBbcpllev7XeQkQKZz3794uornUhwJYA==}
     engines: {node: '>=22.11.0'}
@@ -2987,9 +2982,6 @@ packages:
 
   '@ecl/icon@5.0.0-alpha.14':
     resolution: {integrity: sha512-NvGd6S0l/HjflrCtXQtV/gA6avcFQP2ymSLKrTqkI09qTZGrMLLaETClrQujD7X5rnRsVshUVLtfta5i87AJWQ==}
-
-  '@ecl/indicator@5.0.0-alpha.13':
-    resolution: {integrity: sha512-32Q1TgVetkPcJ642qX8dEbPI91TPnm5PhyzHhbZaMIGMWEUqIMe7PcEfLw66wmVxU/xPuGOyWanlOzDp13CKow==}
 
   '@ecl/indicator@5.0.0-alpha.14':
     resolution: {integrity: sha512-/nSr0SRvuD1dns9EZDUpKvEqX6gOsvvj4JH+UF3uAokXpm9kkuJNURwTAgdhbqsMyz88bh+e5q92dXOiJaHfng==}
@@ -14312,40 +14304,6 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/builder@5.0.0-alpha.13(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))':
-    dependencies:
-      '@babel/core': 7.27.1
-      '@babel/eslint-parser': 7.27.1(@babel/core@7.27.1)(eslint@9.30.1(jiti@1.21.7))
-      '@babel/plugin-transform-runtime': 7.27.1(@babel/core@7.27.1)
-      '@babel/preset-env': 7.27.2(@babel/core@7.27.1)
-      '@babel/runtime': 7.27.1
-      '@rollup/plugin-babel': 6.0.4(@babel/core@7.27.1)(@types/babel__core@7.20.5)(rollup@4.41.1)
-      '@rollup/plugin-commonjs': 28.0.3(rollup@4.41.1)
-      '@rollup/plugin-node-resolve': 16.0.1(rollup@4.41.1)
-      '@rollup/plugin-replace': 6.0.2(rollup@4.41.1)
-      '@rollup/plugin-terser': 0.4.4(rollup@4.41.1)
-      autoprefixer: 10.4.21(postcss@8.5.3)
-      browser-sync: 3.0.4
-      browserslist: 4.24.5
-      commander: 14.0.0
-      cssnano: 7.0.7(postcss@8.5.3)
-      globby: 11.0.4
-      ncp: 2.0.0
-      postcss: 8.5.3
-      postcss-banner: 4.0.1
-      postcss-input-range: 6.0.0(postcss@8.5.3)
-      rollup: 4.41.1
-      rollup-plugin-external-globals: 0.13.0(rollup@4.41.1)
-      rollup-plugin-svg: 2.0.0
-      sass: 1.89.0
-    transitivePeerDependencies:
-      - '@types/babel__core'
-      - bufferutil
-      - debug
-      - eslint
-      - supports-color
-      - utf-8-validate
-
   '@ecl/builder@5.0.0-alpha.14(patch_hash=b6ad42f8f626741a7c0770d35959f5023291e2cb9b398da24440ce165f0a54a2)(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))':
     dependencies:
       '@babel/core': 7.27.1
@@ -14506,8 +14464,6 @@ snapshots:
   '@ecl/grid@5.0.0-alpha.14': {}
 
   '@ecl/icon@5.0.0-alpha.14': {}
-
-  '@ecl/indicator@5.0.0-alpha.13': {}
 
   '@ecl/indicator@5.0.0-alpha.14': {}
 
