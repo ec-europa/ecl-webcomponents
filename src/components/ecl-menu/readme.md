@@ -31,6 +31,7 @@
 graph TD;
   ecl-menu-item --> ecl-icon
   ecl-menu-item --> ecl-button
+  ecl-button --> ecl-indicator
   style ecl-menu-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

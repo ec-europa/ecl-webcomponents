@@ -33,6 +33,7 @@ graph TD;
   ecl-breadcrumb-item --> ecl-icon
   ecl-breadcrumb-item --> ecl-button
   ecl-link --> ecl-icon
+  ecl-button --> ecl-indicator
   style ecl-breadcrumb-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
