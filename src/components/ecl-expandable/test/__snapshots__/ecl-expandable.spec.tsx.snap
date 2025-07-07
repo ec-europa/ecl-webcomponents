@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-expandable renders 1`] = `
-<ecl-expandable ecl-script="" icon-path="/icons.svg" id="expandable-id" label-collapsed="Expand" label-expanded="Collapse" theme="ec">
+<ecl-expandable ecl-script="" el-id="expandable-id" icon-path="/icons.svg" label-collapsed="Expand" label-expanded="Collapse" theme="ec">
   <!---->
   <div class="ecl-expandable">
     <ecl-button data-ecl-expandable-toggle data-ecl-label-collapsed="Expand" data-ecl-label-expanded="Collapse" style-class="ecl-expandable__toggle sc-ecl-expandable-ec">
       <!---->
-      <button aria-controls="expandable-id-content" class="ecl-button ecl-button--secondary ecl-expandable__toggle sc-ecl-expandable-ec" data-ecl-expandable-toggle="eclExpandableToggle" data-ecl-label-collapsed="Expand" data-ecl-label-expanded="Collapse" type="button">
+      <button aria-controls="expandable-id-content" aria-expanded="false" class="ecl-button ecl-button--ghost ecl-expandable__toggle sc-ecl-expandable-ec" data-ecl-expandable-toggle="eclExpandableToggle" data-ecl-label-collapsed="Expand" data-ecl-label-expanded="Collapse" type="button">
         <span class="ecl-button__container">
           <span class="ecl-button__label">
             <span class="ecl-button__label" data-ecl-label>

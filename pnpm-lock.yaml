@@ -758,32 +758,32 @@ importers:
   src/components/ecl-expandable:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.30.1(jiti@1.21.7))
-      '@ecl/specs-component-expandable':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14(patch_hash=b6ad42f8f626741a7c0770d35959f5023291e2cb9b398da24440ce165f0a54a2)(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
+      '@ecl/button':
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
+      '@ecl/expandable':
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-button':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=b10260c5c193e3f2f20a5d6721d43be35a19d874c7cfff32ab7e4f55a2c60e38)
-      '@ecl/vanilla-component-expandable':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
+      '@ecl/utility-screen-reader':
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       '@ecl/web-components-button':
         specifier: 0.15.1
         version: link:../ecl-button
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
+      rimraf:
+        specifier: 5.0.5
+        version: 5.0.5
 
   src/components/ecl-fact-figures:
     devDependencies:
@@ -3094,9 +3094,6 @@ packages:
   '@ecl/social-media-follow@5.0.0-alpha.14':
     resolution: {integrity: sha512-qwpYWKPvvwnD1JyBxvqULdGplSwktbSSG9ojOc2VkCuItxaoyPYA3m4tayFJjwF4mKjC0oCMsBgUoDeSrd9+Uw==}
 
-  '@ecl/specs-component-expandable@3.13.0':
-    resolution: {integrity: sha512-znBP6/1sdqDTJaQHBqZOPaEJG/JNxtvUws5b4aAfW6kgwS8ae5su1NAW5kX1nUOc3Zj0ynhAEuubZj+6Id8yPw==}
-
   '@ecl/specs-component-icon@3.13.0':
     resolution: {integrity: sha512-nV+SYw/NvCClYUuKTi+VwE/9wwfRns0D+RU5ry2NLE9r3SreMoy5LwQsEMkt/fNVFAElHdqbafN9D8AZYfpj1w==}
 
@@ -3222,9 +3219,6 @@ packages:
 
   '@ecl/vanilla-component-description-list@3.13.0':
     resolution: {integrity: sha512-yJUBjM8Sz0TmjqFS5TJDVzR09Y/QhS13vNg5M5OZsSb6hvoFhKxhErm+TcUCcRHwL1I+SQNPPQlXpIkcuPRUpg==}
-
-  '@ecl/vanilla-component-expandable@3.13.0':
-    resolution: {integrity: sha512-dKsStwCZSMBAR/BgwUAxxxTIjK9Kvdl0Ms8kVNQ4mPw8BtZrHhi8ZOpBrS++nZHF2mcBZ9AHvfN6qEphHs0cFA==}
 
   '@ecl/vanilla-component-fact-figures@3.13.0':
     resolution: {integrity: sha512-tTjRt0a9YVDIFwvWq6ANjSqHBStXlGvNpcnSgmH9121S6/NOtOMzDhH+A71mq9wbrRd3E0TZi1n0G/9FsXEp4w==}
@@ -14852,8 +14846,6 @@ snapshots:
       '@ecl/grid': 5.0.0-alpha.14
       '@ecl/link': 5.0.0-alpha.14
 
-  '@ecl/specs-component-expandable@3.13.0': {}
-
   '@ecl/specs-component-icon@3.13.0': {}
 
   '@ecl/spinner@5.0.0-alpha.14': {}
@@ -15017,11 +15009,6 @@ snapshots:
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
       '@ecl/vanilla-layout-grid': 3.13.0
-
-  '@ecl/vanilla-component-expandable@3.13.0':
-    dependencies:
-      '@ecl/dom-utils': 3.13.0
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
 
   '@ecl/vanilla-component-fact-figures@3.13.0':
     dependencies:

@@ -5,14 +5,15 @@
 
 ## Properties
 
-| Property         | Attribute         | Description | Type      | Default |
-| ---------------- | ----------------- | ----------- | --------- | ------- |
-| `eclScript`      | `ecl-script`      |             | `boolean` | `false` |
-| `isExpanded`     | `is-expanded`     |             | `boolean` | `false` |
-| `labelCollapsed` | `label-collapsed` |             | `string`  | `''`    |
-| `labelExpanded`  | `label-expanded`  |             | `string`  | `''`    |
-| `styleClass`     | `style-class`     |             | `string`  | `''`    |
-| `theme`          | `theme`           |             | `string`  | `'ec'`  |
+| Property         | Attribute         | Description | Type      | Default                                                           |
+| ---------------- | ----------------- | ----------- | --------- | ----------------------------------------------------------------- |
+| `eclScript`      | `ecl-script`      |             | `boolean` | `false`                                                           |
+| `elId`           | `el-id`           |             | `string`  | `` `ecl-expandable-${Math.random().toString(36).substr(2, 9)}` `` |
+| `isExpanded`     | `is-expanded`     |             | `boolean` | `false`                                                           |
+| `labelCollapsed` | `label-collapsed` |             | `string`  | `''`                                                              |
+| `labelExpanded`  | `label-expanded`  |             | `string`  | `''`                                                              |
+| `styleClass`     | `style-class`     |             | `string`  | `''`                                                              |
+| `theme`          | `theme`           |             | `string`  | `'ec'`                                                            |
 
 
 ## Dependencies

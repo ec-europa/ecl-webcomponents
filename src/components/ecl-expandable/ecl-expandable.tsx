@@ -18,11 +18,16 @@ export class EclExpandable {
   @Prop() styleClass: string = '';
   @Prop() eclScript: boolean = false;
   @Prop() isExpanded: boolean = false;
+  @Prop() elId: string = `ecl-expandable-${Math.random().toString(36).substr(2, 9)}`;
   @Prop() labelCollapsed: string = '';
   @Prop() labelExpanded: string = '';
   @Prop() theme: string = 'ec';
 
   componentDidRender() {
+    const button = this.el.querySelector('button');
+    button.setAttribute('aria-expanded', "false");
+    button.setAttribute('aria-controls', `${this.elId}-content`);
+
     const p = this.el.querySelectorAll('p');
 
     if (p[0]) {
@@ -38,7 +43,7 @@ export class EclExpandable {
     const script = document.createElement('script');
     script.src = src;
     script.onload = () => {
-      const expandable = new ECL.Expandable(this.el);
+      const expandable = new ECL.Expandable(this.el.firstElementChild);
       expandable.init();
     };
     document.body.appendChild(script);
@@ -58,15 +63,13 @@ export class EclExpandable {
       > 
         <ecl-button
           theme={this.theme}
-          variant="secondary"
+          variant="ghost"
           style-class={`ecl-expandable__toggle sc-ecl-expandable-${this.theme}`}
           type="button"
-          ariaControls={`${this.el.id}-content`}
           data-ecl-expandable-toggle
           data-ecl-label-expanded={this.labelExpanded}
           data-ecl-label-collapsed={this.labelCollapsed} 
         >
-
           <span
             class="ecl-button__label"
             data-ecl-label
@@ -84,7 +87,7 @@ export class EclExpandable {
         </ecl-button>
         <div
           class="ecl-expandable__content"
-          id={`${this.el.id}-content`}
+          id={`${this.elId}-content`}
           hidden
         >
           <slot></slot>
