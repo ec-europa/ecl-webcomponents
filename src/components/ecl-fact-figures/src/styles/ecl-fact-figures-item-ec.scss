@@ -1,5 +1,12 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-component-fact-figures/fact-figures-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/fact-figures/fact-figures' with (
+  $theme: theme.$theme,
+  $fact-figures: var.$fact-figures
+);
 
 :host {
   @extend .ecl-fact-figures__item;

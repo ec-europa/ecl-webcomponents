@@ -1,4 +1,4 @@
-import { Component, h, Prop} from '@stencil/core';
+import { Component, h, Prop, Element } from '@stencil/core';
 
 @Component({
   tag: 'ecl-fact-figures-item',
@@ -9,7 +9,9 @@ import { Component, h, Prop} from '@stencil/core';
   },
   scoped: true,
 })
+
 export class EclFactFiguresItem {
+  @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
   @Prop() styleClass: string;
   @Prop() icon: string;
@@ -25,17 +27,25 @@ export class EclFactFiguresItem {
     ].join(' ');
   }
 
+  private get iconSize(): string {
+    return this.el.closest('ecl-fact-figures').getAttribute('icon-size');
+  }
+
   render() {
     return (
       <div class={this.getClass()}>
         <ecl-icon
           icon={this.icon}
-          size="m"
+          size={this.iconSize || 'l'}
           transform={this.iconTransform}
           style-class={`ecl-fact-figures__icon sc-ecl-fact-figures-item-${this.theme}`}
         ></ecl-icon>
+      { this.value && (
         <div class="ecl-fact-figures__value">{this.value}</div>
+      )}
+      { this.itemTitle && (
         <div class="ecl-fact-figures__title">{this.itemTitle}</div>
+      )}
         <div class="ecl-fact-figures__description">
           <slot></slot>
         </div>
