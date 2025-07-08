@@ -457,6 +457,14 @@ export namespace Components {
     }
     interface EclFactFigures {
         /**
+          * @default false
+         */
+        "centered": boolean;
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
           * @default 3
          */
         "columns": number;
@@ -464,11 +472,27 @@ export namespace Components {
           * @default true
          */
         "displayIcons": boolean;
+        /**
+          * @default 'l'
+         */
+        "fontSize": string;
+        /**
+          * @default 'm'
+         */
+        "iconSize": string;
         "styleClass": string;
         /**
           * @default 'ec'
          */
         "theme": string;
+        /**
+          * @default ''
+         */
+        "viewAllLinkLabel": string;
+        /**
+          * @default ''
+         */
+        "viewAllLinkPath": string;
     }
     interface EclFactFiguresItem {
         "icon": string;
@@ -2881,6 +2905,14 @@ declare namespace LocalJSX {
     }
     interface EclFactFigures {
         /**
+          * @default false
+         */
+        "centered"?: boolean;
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
           * @default 3
          */
         "columns"?: number;
@@ -2888,11 +2920,27 @@ declare namespace LocalJSX {
           * @default true
          */
         "displayIcons"?: boolean;
+        /**
+          * @default 'l'
+         */
+        "fontSize"?: string;
+        /**
+          * @default 'm'
+         */
+        "iconSize"?: string;
         "styleClass"?: string;
         /**
           * @default 'ec'
          */
         "theme"?: string;
+        /**
+          * @default ''
+         */
+        "viewAllLinkLabel"?: string;
+        /**
+          * @default ''
+         */
+        "viewAllLinkPath"?: string;
     }
     interface EclFactFiguresItem {
         "icon"?: string;

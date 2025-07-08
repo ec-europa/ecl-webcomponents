@@ -1,6 +1,11 @@
 const getArgs = () => {
   return {
     columns: '3',
+    centered: false,
+    viewAllLinkPath: './example',
+    viewAllLinkLabel: 'View all',
+    fontSize: 'l',
+    iconSize: 'medium',
   };
 };
 
@@ -13,6 +18,43 @@ const getArgTypes = () => {
 	      description: "Number of columns"
 	    },
 	  },
+    centered: {
+      type: { name: 'boolean' },
+    },
+    viewAllLinkPath:{
+      name: 'view-all-link-path',
+      type: { name: 'string' },
+    },
+    viewAllLinkLabel: {
+      name: 'view-all-link-label',
+      type: { name: 'string'},
+    },
+    fontSize: {
+      name: 'font-size',
+      type: 'select',
+      description: 'Change font size',
+      options: ['m', 'l'],
+      control: {
+        labels: {
+          m: 'medium',
+          l: 'large',
+        },
+      },
+      mapping: {
+        medium: 'm',
+        large: 'l',
+      },
+    },
+    iconSize: {
+      name: 'icon-size',
+      description: 'Size of the icon',
+      type: 'select',
+      options: ['medium', 'large'],
+      mapping: {
+        medium: 'l',
+        large: '2xl',
+      },
+    },
   };
 };
 
@@ -24,6 +66,12 @@ const Template = (args) =>
   `<ecl-fact-figures
     columns="${args.columns}"
     theme="${args.theme}"
+    centered="${args.centered}"
+    color-mode="${args.color_mode}"
+    view-all-link-path="${args.viewAllLinkPath}"
+    view-all-link-label="${args.viewAllLinkLabel}"
+    icon-size="${args.iconSize}"
+    font-size="${args.fontSize}"
   >
     <ecl-fact-figures-item
       item-title="Lorem ipsum",

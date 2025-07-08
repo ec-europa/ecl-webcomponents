@@ -786,25 +786,29 @@ importers:
         version: 7.0.3
 
   src/components/ecl-fact-figures:
+    dependencies:
+      '@ecl/web-components-icon':
+        specifier: 0.15.1
+        version: link:../ecl-icon
+      '@ecl/web-components-link':
+        specifier: 0.15.1
+        version: link:../ecl-link
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.30.1(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14(patch_hash=b6ad42f8f626741a7c0770d35959f5023291e2cb9b398da24440ce165f0a54a2)(@types/babel__core@7.20.5)(eslint@9.30.1(jiti@1.21.7))
+      '@ecl/fact-figures':
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-fact-figures':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -3225,9 +3229,6 @@ packages:
 
   '@ecl/vanilla-component-expandable@3.13.0':
     resolution: {integrity: sha512-dKsStwCZSMBAR/BgwUAxxxTIjK9Kvdl0Ms8kVNQ4mPw8BtZrHhi8ZOpBrS++nZHF2mcBZ9AHvfN6qEphHs0cFA==}
-
-  '@ecl/vanilla-component-fact-figures@3.13.0':
-    resolution: {integrity: sha512-tTjRt0a9YVDIFwvWq6ANjSqHBStXlGvNpcnSgmH9121S6/NOtOMzDhH+A71mq9wbrRd3E0TZi1n0G/9FsXEp4w==}
 
   '@ecl/vanilla-component-featured-item@3.13.0':
     resolution: {integrity: sha512-YyYfjTcJuZni+eDVUrWO94bHFL3EZdzm77fhtEh2N/VwPxAA/afRmGglW70K1KEIocgLXkixGagnNq6nX+g0hw==}
@@ -15022,11 +15023,6 @@ snapshots:
     dependencies:
       '@ecl/dom-utils': 3.13.0
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
-  '@ecl/vanilla-component-fact-figures@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
 
   '@ecl/vanilla-component-featured-item@3.13.0':
     dependencies:
