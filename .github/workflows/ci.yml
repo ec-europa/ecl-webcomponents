@@ -88,6 +88,30 @@ jobs:
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+  deploy-v5-branch:
+    name: deploy preview for the v5 branch
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/ecl-v5-dev'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.11.0
+      - name: Install pnpm
+        run: npm install -g pnpm@10.9.0
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Package application
+        run: pnpm build
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2.1
+        with:
+          alias: ecl-v5-dev
+          publish-dir: 'build'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
   deploy-master:
     name: deploy master branch
     runs-on: ubuntu-latest
