@@ -435,6 +435,10 @@ export namespace Components {
          */
         "eclScript": boolean;
         /**
+          * @default `ecl-expandable-${Math.random().toString(36).substr(2, 9)}`
+         */
+        "elId": string;
+        /**
           * @default false
          */
         "isExpanded": boolean;
@@ -2858,6 +2862,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "eclScript"?: boolean;
+        /**
+          * @default `ecl-expandable-${Math.random().toString(36).substr(2, 9)}`
+         */
+        "elId"?: string;
         /**
           * @default false
          */
