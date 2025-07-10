@@ -27,6 +27,7 @@
 graph TD;
   ecl-expandable --> ecl-button
   ecl-expandable --> ecl-icon
+  ecl-button --> ecl-indicator
   style ecl-expandable fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

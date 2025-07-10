@@ -5,15 +5,18 @@
 
 ## Properties
 
-| Property       | Attribute       | Description | Type      | Default     |
-| -------------- | --------------- | ----------- | --------- | ----------- |
-| `ariaControls` | `aria-controls` |             | `string`  | `undefined` |
-| `hideLabel`    | `hide-label`    |             | `boolean` | `false`     |
-| `itemId`       | `item-id`       |             | `string`  | `undefined` |
-| `styleClass`   | `style-class`   |             | `string`  | `''`        |
-| `theme`        | `theme`         |             | `string`  | `'ec'`      |
-| `type`         | `type`          |             | `string`  | `'submit'`  |
-| `variant`      | `variant`       |             | `string`  | `'primary'` |
+| Property         | Attribute         | Description | Type      | Default     |
+| ---------------- | ----------------- | ----------- | --------- | ----------- |
+| `ariaControls`   | `aria-controls`   |             | `string`  | `undefined` |
+| `disabled`       | `disabled`        |             | `boolean` | `false`     |
+| `hideLabel`      | `hide-label`      |             | `boolean` | `false`     |
+| `indicator`      | `indicator`       |             | `boolean` | `false`     |
+| `indicatorValue` | `indicator-value` |             | `string`  | `''`        |
+| `itemId`         | `item-id`         |             | `string`  | `undefined` |
+| `styleClass`     | `style-class`     |             | `string`  | `''`        |
+| `theme`          | `theme`           |             | `string`  | `'ec'`      |
+| `type`           | `type`            |             | `string`  | `'submit'`  |
+| `variant`        | `variant`         |             | `string`  | `'primary'` |
 
 
 ## Dependencies
@@ -32,9 +35,14 @@
  - [ecl-search-form](../ecl-search-form)
  - [ecl-timeline-item](../ecl-timeline)
 
+### Depends on
+
+- [ecl-indicator](../ecl-indicator)
+
 ### Graph
 ```mermaid
 graph TD;
+  ecl-button --> ecl-indicator
   ecl-breadcrumb-item --> ecl-button
   ecl-expandable --> ecl-button
   ecl-file-translations --> ecl-button
