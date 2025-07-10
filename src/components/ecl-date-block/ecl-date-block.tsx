@@ -12,7 +12,7 @@ import { Component, Prop, h } from '@stencil/core';
 
 export class EclDateBlock {
   @Prop() styleClass: string = '';
-  @Prop() variant: string = 'default';
+  @Prop() variant: string = '';
   @Prop() theme: string = 'ec';
   @Prop() day: string;
   @Prop() month: string;
@@ -30,7 +30,10 @@ export class EclDateBlock {
 
   render() {
     return (
-      <time class={this.getClass()}>
+      <time 
+        class={this.getClass()}
+        {...(this.dateTime ? { dateTime: this.dateTime } : {})}
+      >
       { this.dateTime ? 
         <span class="ecl-date-block__daytime">
           {this.dateTime}

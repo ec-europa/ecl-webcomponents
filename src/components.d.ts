@@ -340,7 +340,7 @@ export namespace Components {
          */
         "theme": string;
         /**
-          * @default 'default'
+          * @default ''
          */
         "variant": string;
         "year": string;
@@ -2761,7 +2761,7 @@ declare namespace LocalJSX {
          */
         "theme"?: string;
         /**
-          * @default 'default'
+          * @default ''
          */
         "variant"?: string;
         "year"?: string;

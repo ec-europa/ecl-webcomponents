@@ -15,7 +15,7 @@
 | `monthFull`  | `month-full`  |             | `string` | `undefined` |
 | `styleClass` | `style-class` |             | `string` | `''`        |
 | `theme`      | `theme`       |             | `string` | `'ec'`      |
-| `variant`    | `variant`     |             | `string` | `'default'` |
+| `variant`    | `variant`     |             | `string` | `''`        |
 | `year`       | `year`        |             | `string` | `undefined` |
 
 
