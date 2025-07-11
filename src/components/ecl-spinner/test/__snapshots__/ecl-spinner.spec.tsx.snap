@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-spinner renders 1`] = `
-<ecl-spinner centered="" theme="ec" variant="primary" visible="">
+<ecl-spinner centered="" size="l" variant="primary" visible="">
   <!---->
   <div>
-    <div class="ecl-spinner ecl-spinner--centered ecl-spinner--medium ecl-spinner--primary ecl-spinner--visible">
+    <div class="ecl-spinner ecl-spinner--centered ecl-spinner--l ecl-spinner--primary ecl-spinner--visible">
       <svg class="ecl-spinner__loader" viewBox="25 25 50 50">
         <circle class="ecl-spinner__circle" cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="4px" vector-effect="non-scaling-stroke"></circle>
       </svg>

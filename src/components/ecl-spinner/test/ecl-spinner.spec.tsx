@@ -7,9 +7,9 @@ describe('ecl-spinner', () => {
       components: [EclSpinner],
       html: `<ecl-spinner
         variant="primary"
-        theme="ec"
         centered
         visible
+        size="l"
       >
         Loading...
       </ecl-spinner>`,

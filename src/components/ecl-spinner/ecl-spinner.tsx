@@ -17,7 +17,7 @@ export class EclSpinner {
   @Prop() centered: boolean = false;
   @Prop() visible: boolean = false;
   @Prop() overlay: boolean = false;
-  @Prop() size: string = 'medium';
+  @Prop() size: string = 'm';
 
   getClass(): string {
     const classes = [
@@ -50,6 +50,9 @@ export class EclSpinner {
   render() {
     return (
     <div>
+    { this.overlay ? 
+      <div class={this.getOverlayClass()}></div> : '' 
+    }
       <div class={this.getClass()}>
         <svg
           class="ecl-spinner__loader"
@@ -70,9 +73,6 @@ export class EclSpinner {
           <slot></slot>
         </div>
       </div>
-    { this.overlay ? 
-      <div class={this.getOverlayClass()}></div> : '' 
-    }
     </div>
     )
   }
