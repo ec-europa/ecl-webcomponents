@@ -50,12 +50,11 @@ function injectThemeCss(theme: string) {
 
 export default () => {
   const themeResolver = (elm: HTMLElement): string => {
-    const theme = window.eclTheme || (elm as any).theme || elm.getAttribute('theme');
+    const theme = document.documentElement.getAttribute('data-ecl-theme') || elm.getAttribute('theme') || (elm as any).theme;
     if (theme) {
+      document.documentElement.setAttribute('data-ecl-theme', theme);
       injectThemeCss(theme);
-      if (theme === 'ec') {
-        injectWebtoolsLoad();
-      }
+      injectWebtoolsLoad();
       return theme;
     } else if (!elm.parentElement) {
       injectThemeCss('ec');
@@ -64,7 +63,7 @@ export default () => {
       return themeResolver(elm.parentElement);
     }
   };
-
+  
   setMode((elm: HTMLElement) => {
     return themeResolver(elm);
   });

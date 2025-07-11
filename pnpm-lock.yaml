@@ -404,6 +404,10 @@ importers:
   playground: {}
 
   src/components/ecl-accordion:
+    dependencies:
+      '@ecl/web-components-icon':
+        specifier: 0.15.1
+        version: link:../ecl-icon
     devDependencies:
       '@ecl/accordion':
         specifier: 5.0.0-alpha.14
@@ -421,8 +425,8 @@ importers:
         specifier: 5.0.0-alpha.14
         version: 5.0.0-alpha.14
       '@ecl/resources-icons':
-        specifier: 5.0.0-alpha.14
-        version: 5.0.0-alpha.14
+        specifier: 4.11.0
+        version: 4.11.0
       '@ecl/theme-ec':
         specifier: 5.0.0-alpha.14
         version: 5.0.0-alpha.14
@@ -432,9 +436,6 @@ importers:
       '@ecl/utility-screen-reader':
         specifier: 5.0.0-alpha.14
         version: 5.0.0-alpha.14
-      '@ecl/web-components-icon':
-        specifier: 0.15.1
-        version: link:../ecl-icon
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -526,12 +527,9 @@ importers:
       '@ecl/link':
         specifier: 5.0.0-alpha.14
         version: 5.0.0-alpha.14
-      '@ecl/resources-ec-icons':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/resources-eu-icons':
-        specifier: 3.13.0
-        version: 3.13.0
+      '@ecl/resources-icons':
+        specifier: 4.11.0
+        version: 4.11.0
       '@ecl/theme-ec':
         specifier: 5.0.0-alpha.14
         version: 5.0.0-alpha.14
@@ -3066,6 +3064,9 @@ packages:
 
   '@ecl/resources-eu-logo@3.13.0':
     resolution: {integrity: sha512-XjpQqIK8GclrKn48piw2FYFjf1uxLjAWXCx9RZwFLa2X2qGSl7tYDSuMdwYT6gJ2JGKa+DMr15Qwf1kJ8IRTrA==}
+
+  '@ecl/resources-icons@4.11.0':
+    resolution: {integrity: sha512-OUpgXS2sJWn4vGNavCtZXZ3/MUvvVlcwJtBjqVf9SCv9Z5BNT1k1zhrK/fwsrSTj0n/ZkzgwEFyeKqLOqf08jg==}
 
   '@ecl/resources-icons@5.0.0-alpha.14':
     resolution: {integrity: sha512-OwvRbkgqzuPMAugVZ5P1KfvbsbQYRCmzFlh/tEmXaGpA6yZ6E9LXWJvDXG3aKHzCi+/uBGuAcibbTr7Aae8Scw==}
@@ -14782,6 +14783,8 @@ snapshots:
       ncp: 2.0.0
       npm-run-all: 4.1.5
       rimraf: 5.0.5
+
+  '@ecl/resources-icons@4.11.0': {}
 
   '@ecl/resources-icons@5.0.0-alpha.14': {}
 

@@ -17,7 +17,7 @@ export class EclAccordion {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop() eclScript: boolean = false;
-  @Prop() theme: string = 'ec';
+  @Prop() theme: string;
   @Prop() colorMode: string = '';
   @State() openItemId: string;
 
@@ -39,6 +39,8 @@ export class EclAccordion {
   }
 
   componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') || 'ec';
+
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-accordion-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
