@@ -1,9 +1,12 @@
+import { loremIpsum } from 'lorem-ipsum';
+
 const getArgs = () => {
   return {
     variant: 'primary',
     label: 'Loading',
     centered: true,
     visible: true,
+    size: 'm',
     overlay: false,
   };
 };
@@ -27,10 +30,23 @@ const getArgTypes = () => {
     visible: {
       type: { name: 'boolean' },
       description: 'Visible spinner',
+      if: { arg: 'centered', truthy: true },
     },
-    overlay: {
-      type: { name: 'boolean' },
-      description: 'with overlay',
+    size: {
+      type: 'select',
+      description: "Possible sizes ('small', 'medium' or 'large')",
+      options: ['s', 'm', 'l'],
+      control: {
+        labels: {
+          s: 'small',
+          m: 'medium',
+          l: 'large',
+        },
+      },
+      overlay: {
+        type: { name: 'boolean' },
+        description: 'with overlay',
+      },
     },
   };
 };
@@ -41,17 +57,22 @@ export default {
 
 const Template = args => {
   let story = `<ecl-spinner
-    variant="${args.variant}"
+    variant="${!args.overlay ? args.variant : 'primary' }"
     theme="${args.theme}"
     centered=${args.centered}
     visible=${args.visible}
     overlay=${args.overlay}
+    size="${args.size}"
   >
     ${args.label}
   </ecl-spinner>`;
 
   if (args.variant === 'inverted') {
     story = `<div style="background: #004494; position: relative; height: 150px;">${story}</div>`
+  }
+
+  if (args.overlay) {
+    story = `${story}<p>${loremIpsum({ count: 25 })}</p><p>${loremIpsum({ count: 25 })}</p>`;
   }
 
   return story;

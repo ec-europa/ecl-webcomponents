@@ -1701,6 +1701,9 @@ importers:
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
+      lorem-ipsum:
+        specifier: 2.0.8
+        version: 2.0.8
 
   src/components/ecl-tag:
     devDependencies:

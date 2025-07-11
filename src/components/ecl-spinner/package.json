@@ -18,6 +18,7 @@
     "@ecl/builder": "5.0.0-alpha.14",
     "@ecl/grid": "5.0.0-alpha.14",
     "@ecl/spinner": "5.0.0-alpha.14",
+    "lorem-ipsum": "2.0.8",
     "cross-env": "7.0.3"
   },
   "repository": {

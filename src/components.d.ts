@@ -1605,7 +1605,7 @@ export namespace Components {
          */
         "overlay": boolean;
         /**
-          * @default 'medium'
+          * @default 'm'
          */
         "size": string;
         /**
@@ -4008,7 +4008,7 @@ declare namespace LocalJSX {
          */
         "overlay"?: boolean;
         /**
-          * @default 'medium'
+          * @default 'm'
          */
         "size"?: string;
         /**
