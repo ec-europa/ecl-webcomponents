@@ -67,7 +67,7 @@ const Template = args => {
     ${args.label}
   </ecl-spinner>`;
 
-  if (args.variant === 'inverted') {
+  if (args.variant === 'inverted' && !args.overlay) {
     story = `<div style="background: #004494; position: relative; height: 150px;">${story}</div>`
   }
 
