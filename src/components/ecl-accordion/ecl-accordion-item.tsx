@@ -14,7 +14,7 @@ export class EclAccordionItem {
   @Prop() label: string;
   @Prop() itemId: string;
   @Prop({reflect:true}) expanded: boolean;
-  @Prop() theme: string = 'ec';
+  @Prop() theme: string;
   @Event() toggleItem: EventEmitter<string>;
 
   handleClick = () => {
@@ -27,6 +27,10 @@ export class EclAccordionItem {
       `sc-ecl-accordion-${this.theme}`,
       this.styleClass
     ].join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') || 'ec';
   }
 
   render() {

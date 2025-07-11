@@ -15,7 +15,7 @@
 | `imageAlt`   | `image-alt`   |             | `string` | `undefined` |
 | `language`   | `language`    |             | `string` | `'en'`      |
 | `styleClass` | `style-class` |             | `string` | `''`        |
-| `theme`      | `theme`       |             | `string` | `'ec'`      |
+| `theme`      | `theme`       |             | `string` | `undefined` |
 
 
 ## Dependencies
