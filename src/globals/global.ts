@@ -58,6 +58,7 @@ export default () => {
       return theme;
     } else if (!elm.parentElement) {
       injectThemeCss('ec');
+      injectWebtoolsLoad();
       return 'ec';
     } else {
       return themeResolver(elm.parentElement);
