@@ -55,6 +55,7 @@ graph TD;
   ecl-search-form --> ecl-icon
   ecl-form-group --> ecl-icon
   ecl-input --> ecl-icon
+  ecl-button --> ecl-indicator
   style ecl-site-header fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
