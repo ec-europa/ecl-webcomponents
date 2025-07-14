@@ -13,7 +13,7 @@
 | `size`       | `size`        |             | `string` | `'xs'`      |
 | `sprite`     | `sprite`      |             | `string` | `''`        |
 | `styleClass` | `style-class` |             | `string` | `''`        |
-| `theme`      | `theme`       |             | `string` | `'ec'`      |
+| `theme`      | `theme`       |             | `string` | `undefined` |
 | `titleTag`   | `title-tag`   |             | `string` | `''`        |
 | `transform`  | `transform`   |             | `string` | `''`        |
 

@@ -65,7 +65,6 @@ export default {
 const Template = (args) => 
   `<ecl-fact-figures
     columns="${args.columns}"
-    theme="${args.theme}"
     centered="${args.centered}"
     color-mode="${args.color_mode}"
     view-all-link-path="${args.viewAllLinkPath}"

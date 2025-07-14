@@ -11,7 +11,7 @@ import { Component, h, Prop } from '@stencil/core';
   assetsDirs: ['build'],
 })
 export class EclFactFigures {
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() columns: number = 3;
   @Prop() displayIcons: boolean = true;
@@ -42,6 +42,10 @@ export class EclFactFigures {
     }
 
     return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {

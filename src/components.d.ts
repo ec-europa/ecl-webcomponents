@@ -469,9 +469,6 @@ export namespace Components {
          */
         "iconSize": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -487,9 +484,6 @@ export namespace Components {
         "iconTransform": string;
         "itemTitle": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "value": string;
     }
@@ -828,9 +822,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -2905,9 +2896,6 @@ declare namespace LocalJSX {
          */
         "iconSize"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -2923,9 +2911,6 @@ declare namespace LocalJSX {
         "iconTransform"?: string;
         "itemTitle"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "value"?: string;
     }
@@ -3264,9 +3249,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''

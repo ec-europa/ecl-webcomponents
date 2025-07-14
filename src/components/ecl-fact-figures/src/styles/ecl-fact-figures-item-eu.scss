@@ -3,6 +3,7 @@
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
+@use '@ecl/grid/mixins/breakpoints';
 @use '@ecl/fact-figures/fact-figures' with (
   $theme: theme.$theme,
   $fact-figures: var.$fact-figures
@@ -13,4 +14,14 @@
 
   margin: 0;
   padding: 0;
+}
+
+.ecl-fact-figures__item--font-m .ecl-fact-figures__value {
+  font: var(--f-2xl);
+}
+
+@include breakpoints.up('l') {
+  .ecl-fact-figures__item--font-m .ecl-fact-figures__value {
+    font: var(--f-3xl);
+  }
 }

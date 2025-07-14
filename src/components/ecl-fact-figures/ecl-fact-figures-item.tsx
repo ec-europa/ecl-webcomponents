@@ -12,7 +12,7 @@ import { Component, h, Prop, Element } from '@stencil/core';
 
 export class EclFactFiguresItem {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() icon: string;
   @Prop() value: string;
@@ -20,15 +20,29 @@ export class EclFactFiguresItem {
   @Prop() iconTransform: string;
 
   getClass(): string {
-    return [
+   const styleClasses = [
       `ecl-fact-figures__item`,
       `sc-ecl-fact-figures-${this.theme}`,
       this.styleClass
-    ].join(' ');
+    ];
+
+    if (this.fontSize === 'm') {
+      styleClasses.push('ecl-fact-figures__item--font-m');
+    }
+
+    return styleClasses.join(' ');
   }
 
   private get iconSize(): string {
     return this.el.closest('ecl-fact-figures').getAttribute('icon-size');
+  }
+
+  private get fontSize(): string {
+    return this.el.closest('ecl-fact-figures').getAttribute('font-size');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {
