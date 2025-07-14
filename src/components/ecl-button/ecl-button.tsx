@@ -27,7 +27,7 @@ export class EclButton {
   @State() hasIconAfter: boolean = false;
 
   componentWillLoad() {
-    this.theme = document.documentElement.getAttribute('data-ecl-theme') || 'ec';
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? this.theme || 'ec';
   }
 
   componentDidLoad() {
