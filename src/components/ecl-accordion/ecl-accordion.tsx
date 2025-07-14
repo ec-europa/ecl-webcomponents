@@ -39,7 +39,7 @@ export class EclAccordion {
   }
 
   componentWillLoad() {
-    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? this.theme || 'ec';
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
 
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-accordion-vanilla.js');
