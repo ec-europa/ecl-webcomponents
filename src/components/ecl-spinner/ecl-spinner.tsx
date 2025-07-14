@@ -13,7 +13,7 @@ import { Component, Prop, h } from '@stencil/core';
 export class EclSpinner {
   @Prop() styleClass: string = '';
   @Prop() variant: string = 'primary';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() centered: boolean = false;
   @Prop() visible: boolean = false;
   @Prop() overlay: boolean = false;
@@ -45,6 +45,10 @@ export class EclSpinner {
     }
 
     return overlayClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {

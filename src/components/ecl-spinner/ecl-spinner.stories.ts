@@ -58,7 +58,6 @@ export default {
 const Template = args => {
   let story = `<ecl-spinner
     variant="${!args.overlay ? args.variant : 'primary' }"
-    theme="${args.theme}"
     centered=${args.centered}
     visible=${args.visible}
     overlay=${args.overlay}
