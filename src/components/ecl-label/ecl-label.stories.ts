@@ -7,6 +7,7 @@ const getArgs = () => {
 
 const getArgTypes = () => {
   return {
+    color_mode: { table: { disable: true } },
     variant: {
       type: { name: 'select' },
       options: ['low', 'medium', 'high', 'highlight'],
@@ -26,7 +27,6 @@ export default {
 const Template = args =>
   `<ecl-label
     variant="${args.variant}"
-    theme="${args.theme}"
   >
     ${args.label}
   </ecl-label>`;
