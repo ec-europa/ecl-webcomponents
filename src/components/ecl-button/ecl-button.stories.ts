@@ -1,4 +1,4 @@
-import iconsAllEc from '@ecl/resources-ec-icons/dist/lists/all.json';
+import iconsAllEc from '@ecl/resources-icons/dist/lists/all.json';
 
 const getArgs = () => {
   return {
@@ -104,7 +104,6 @@ export default {
 const Template = (args) => {
   const buttonHtml = `<ecl-button
     type="${args.type}"
-    theme="${args.theme}"
     variant="${args.variant}"
     ${args.disabled ? 'disabled' : ''}
     hide-label="${!!args.hideLabel}"
@@ -115,14 +114,12 @@ const Template = (args) => {
         slot="icon-before"
         icon="${args.icon}"
         transform="${args.iconTransform}"
-        theme="${args.theme}"
       ></ecl-icon>` : ''}
     ${args.label}
     ${args.icon && args.iconPosition === 'after' ?
       `<ecl-icon 
         slot="icon-after"
         icon="${args.icon}"
-        theme="${args.theme}"
         transform="${args.iconTransform}"
       ></ecl-icon>` : ''}
   </ecl-button>`;

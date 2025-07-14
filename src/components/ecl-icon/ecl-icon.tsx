@@ -24,6 +24,8 @@ export class EclIcon {
   @Prop() sprite: string = '';
 
   componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') || 'ec';
+    
     if (!this.sprite) {
       this.path = getAssetPath(`./build/images/${this.theme}/icons.svg`);
     } else {

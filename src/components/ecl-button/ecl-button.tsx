@@ -15,7 +15,7 @@ export class EclButton {
   @Prop() styleClass: string = '';
   @Prop() type: string = 'submit';
   @Prop() variant: string = 'primary';
-  @Prop() theme: string = 'ec';
+  @Prop() theme: string;
   @Prop() hideLabel: boolean = false;    
   @Prop() ariaControls: string;
   @Prop() itemId: string;
@@ -25,6 +25,10 @@ export class EclButton {
   @State() hasLabelContent: boolean = false;
   @State() hasIconBefore: boolean = false;
   @State() hasIconAfter: boolean = false;
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
 
   componentDidLoad() {
     const dataAttrs = Object.keys(this.el.dataset);
