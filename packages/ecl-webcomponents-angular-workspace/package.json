@@ -21,8 +21,8 @@
     "@angular/platform-browser": "16.2.11",
     "@angular/platform-browser-dynamic": "16.2.11",
     "@angular/router": "16.2.11",
-    "rxjs": "~7.8.0",
-    "tslib": "2.6.2",
+    "rxjs": "~7.8.2",
+    "tslib": "2.8.1",
     "zone.js": "0.13.2"
   },
   "devDependencies": {
@@ -32,17 +32,17 @@
     "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "@ecl/ecl-webcomponents": "0.15.1",
     "@ecl/ecl-webcomponents-angular": "0.15.1",
-    "browser-sync": "3.0.2",
+    "browser-sync": "3.0.4",
     "express": "4.18.2",
-    "karma": "~6.4.0",
+    "karma": "~6.4.4",
     "karma-chrome-launcher": "3.2.0",
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "2.1.0",
     "ncp": "2.0.0",
     "ng-packagr": "16.2.3",
-    "nodemon": "3.0.3",
-    "rimraf": "5.0.5",
+    "nodemon": "3.1.10",
+    "rimraf": "6.0.1",
     "typescript": "~4.9.4"
   }
 }
