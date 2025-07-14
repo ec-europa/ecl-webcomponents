@@ -11,7 +11,7 @@ import { Component, Prop, h } from '@stencil/core';
 })
 export class EclBlockquote {
   @Prop() styleClass: string = '';
-  @Prop() theme: string;
+  @Prop({ mutable: true }) theme: string;
   @Prop() image: string;
   @Prop() author: string;
   @Prop() imageAlt: string;

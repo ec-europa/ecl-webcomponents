@@ -14,7 +14,7 @@ export class EclAccordionItem {
   @Prop() label: string;
   @Prop() itemId: string;
   @Prop({reflect:true}) expanded: boolean;
-  @Prop() theme: string;
+  @Prop({ mutable: true }) theme: string;
   @Event() toggleItem: EventEmitter<string>;
 
   handleClick = () => {

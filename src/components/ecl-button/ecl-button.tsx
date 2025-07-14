@@ -15,7 +15,7 @@ export class EclButton {
   @Prop() styleClass: string = '';
   @Prop() type: string = 'submit';
   @Prop() variant: string = 'primary';
-  @Prop() theme: string;
+  @Prop({ mutable: true }) theme: string;
   @Prop() hideLabel: boolean = false;    
   @Prop() ariaControls: string;
   @Prop() itemId: string;

@@ -20,11 +20,11 @@ export class EclIcon {
   @Prop() titleTag: string = '';
   @Prop({ mutable: true }) path: string;
   @Prop() transform: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() sprite: string = '';
 
   componentWillLoad() {
-    this.theme = document.documentElement.getAttribute('data-ecl-theme') || 'ec';
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
     
     if (!this.sprite) {
       this.path = getAssetPath(`./build/images/${this.theme}/icons.svg`);

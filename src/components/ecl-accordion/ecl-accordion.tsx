@@ -17,7 +17,7 @@ export class EclAccordion {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop() eclScript: boolean = false;
-  @Prop() theme: string;
+  @Prop({ mutable: true }) theme: string;
   @Prop() colorMode: string = '';
   @State() openItemId: string;
 
