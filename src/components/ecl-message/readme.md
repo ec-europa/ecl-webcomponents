@@ -30,6 +30,7 @@
 graph TD;
   ecl-message --> ecl-icon
   ecl-message --> ecl-button
+  ecl-button --> ecl-indicator
   style ecl-message fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

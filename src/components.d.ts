@@ -19,9 +19,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclAccordionItem {
@@ -29,9 +26,6 @@ export namespace Components {
         "itemId": string;
         "label": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclBanner {
@@ -84,9 +78,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclBreadcrumb {
@@ -137,15 +128,24 @@ export namespace Components {
         /**
           * @default false
          */
+        "disabled": boolean;
+        /**
+          * @default false
+         */
         "hideLabel": boolean;
+        /**
+          * @default false
+         */
+        "indicator": boolean;
+        /**
+          * @default ''
+         */
+        "indicatorValue": string;
         "itemId": string;
         /**
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'submit'
@@ -816,6 +816,20 @@ export namespace Components {
           * @default ''
          */
         "transform": string;
+    }
+    interface EclIndicator {
+        /**
+          * @default false
+         */
+        "eclScript": boolean;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        /**
+          * @default ''
+         */
+        "value": string;
     }
     interface EclInpageNavigation {
         /**
@@ -1991,6 +2005,12 @@ declare global {
         prototype: HTMLEclIconElement;
         new (): HTMLEclIconElement;
     };
+    interface HTMLEclIndicatorElement extends Components.EclIndicator, HTMLStencilElement {
+    }
+    var HTMLEclIndicatorElement: {
+        prototype: HTMLEclIndicatorElement;
+        new (): HTMLEclIndicatorElement;
+    };
     interface HTMLEclInpageNavigationElement extends Components.EclInpageNavigation, HTMLStencilElement {
     }
     var HTMLEclInpageNavigationElement: {
@@ -2349,6 +2369,7 @@ declare global {
         "ecl-grid": HTMLEclGridElement;
         "ecl-hero-banner": HTMLEclHeroBannerElement;
         "ecl-icon": HTMLEclIconElement;
+        "ecl-indicator": HTMLEclIndicatorElement;
         "ecl-inpage-navigation": HTMLEclInpageNavigationElement;
         "ecl-inpage-navigation-item": HTMLEclInpageNavigationItemElement;
         "ecl-input": HTMLEclInputElement;
@@ -2406,9 +2427,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclAccordionItem {
@@ -2417,9 +2435,6 @@ declare namespace LocalJSX {
         "label"?: string;
         "onToggleItem"?: (event: EclAccordionItemCustomEvent<string>) => void;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclBanner {
@@ -2472,9 +2487,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclBreadcrumb {
@@ -2525,15 +2537,24 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
+        "disabled"?: boolean;
+        /**
+          * @default false
+         */
         "hideLabel"?: boolean;
+        /**
+          * @default false
+         */
+        "indicator"?: boolean;
+        /**
+          * @default ''
+         */
+        "indicatorValue"?: string;
         "itemId"?: string;
         /**
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'submit'
@@ -3207,6 +3228,20 @@ declare namespace LocalJSX {
           * @default ''
          */
         "transform"?: string;
+    }
+    interface EclIndicator {
+        /**
+          * @default false
+         */
+        "eclScript"?: boolean;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        /**
+          * @default ''
+         */
+        "value"?: string;
     }
     interface EclInpageNavigation {
         /**
@@ -4166,6 +4201,7 @@ declare namespace LocalJSX {
         "ecl-grid": EclGrid;
         "ecl-hero-banner": EclHeroBanner;
         "ecl-icon": EclIcon;
+        "ecl-indicator": EclIndicator;
         "ecl-inpage-navigation": EclInpageNavigation;
         "ecl-inpage-navigation-item": EclInpageNavigationItem;
         "ecl-input": EclInput;
@@ -4248,6 +4284,7 @@ declare module "@stencil/core" {
             "ecl-grid": LocalJSX.EclGrid & JSXBase.HTMLAttributes<HTMLEclGridElement>;
             "ecl-hero-banner": LocalJSX.EclHeroBanner & JSXBase.HTMLAttributes<HTMLEclHeroBannerElement>;
             "ecl-icon": LocalJSX.EclIcon & JSXBase.HTMLAttributes<HTMLEclIconElement>;
+            "ecl-indicator": LocalJSX.EclIndicator & JSXBase.HTMLAttributes<HTMLEclIndicatorElement>;
             "ecl-inpage-navigation": LocalJSX.EclInpageNavigation & JSXBase.HTMLAttributes<HTMLEclInpageNavigationElement>;
             "ecl-inpage-navigation-item": LocalJSX.EclInpageNavigationItem & JSXBase.HTMLAttributes<HTMLEclInpageNavigationItemElement>;
             "ecl-input": LocalJSX.EclInput & JSXBase.HTMLAttributes<HTMLEclInputElement>;
