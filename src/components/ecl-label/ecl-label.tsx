@@ -13,7 +13,7 @@ import { Component, Prop, h } from '@stencil/core';
 export class EclLabel {
   @Prop() styleClass: string = '';
   @Prop() variant: string = 'low';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
 
   getClass(): string {
     return [
@@ -21,6 +21,10 @@ export class EclLabel {
       `ecl-label--${this.variant}`,
       this.styleClass
     ].join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {
