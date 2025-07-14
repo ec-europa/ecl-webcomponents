@@ -55,7 +55,6 @@ export default {
 const Template = (args) => 
   `<ecl-date-block
     variant="${args.variant}"
-    theme="${args.theme}"
     day="${args.day}"
     month="${args.month}"
     month-full="${args.monthFull}"

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-date-block renders 1`] = `
-<ecl-date-block date-time="2022-09-24" day="24" month="Sep" month-full="September" theme="ec" variant="ongoing" year="2022">
+<ecl-date-block date-time="2022-09-24" day="24" month="Sep" month-full="September" variant="ongoing" year="2022">
   <time class="ecl-date-block ecl-date-block--ongoing" datetime="2022-09-24">
     <span class="ecl-date-block__daytime">
       2022-09-24

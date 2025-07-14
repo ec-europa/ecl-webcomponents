@@ -7,7 +7,6 @@ describe('ecl-date-block', () => {
       components: [EclDateBlock],
       html: `<ecl-date-block
               variant="ongoing"
-              theme="ec"
               day="24"
               month="Sep"
               month-full="September"
