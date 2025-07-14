@@ -30,7 +30,7 @@ export class EclAccordionItem {
   }
 
   componentWillLoad() {
-    this.theme = document.documentElement.getAttribute('data-ecl-theme') || 'ec';
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {
