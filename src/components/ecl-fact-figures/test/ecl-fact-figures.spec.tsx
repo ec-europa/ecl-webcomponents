@@ -10,7 +10,6 @@ describe('ecl-fact-figures', () => {
       components: [EclFactFigures, EclFactFiguresItem, EclIcon, EclLink],
       html: `<ecl-fact-figures
         columns="4"
-        theme="ec"
         view-all-link-path="/example"
         view-all-link-label="View all"
         font-size="m"
@@ -20,7 +19,6 @@ describe('ecl-fact-figures', () => {
           item-title="Lorem ipsum"
           value="00.0 million"
           icon="infographic"
-          theme="ec"
         >
           Nunc condimentum sapien ut nibh finibus suscipit vitae at justo. Morbi quis odio faucibus, commodo tortor id, elementum libero.
         </ecl-fact-figures-item>
@@ -38,7 +36,6 @@ describe('ecl-fact-figures', () => {
           item-title="Donec suscipit interdum augue, ac dapibus eros finibus"
           value="00.0 million"
           icon="growth"
-          theme="ec"
         >
           Cras vestibulum efficitur mi, quis porta tellus rutrum ut. Quisque at pulvinar sem.
         </ecl-fact-figures-item>
@@ -47,7 +44,6 @@ describe('ecl-fact-figures', () => {
           item-title="Aenean dapibus"
           value="00.0 million"
           icon="digital"
-          theme="ec"
         >
           Aliquam lacinia diam eu sem malesuada, in interdum ante bibendum.
         </ecl-fact-figures-item>
@@ -56,7 +52,6 @@ describe('ecl-fact-figures', () => {
           item-title="Aliquam faucibus nulla eget eleifend",
           value="00.0 million"
           icon="regulation"
-          theme="ec"
         >
           Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec lectus tortor.
         </ecl-fact-figures-item>
@@ -65,7 +60,6 @@ describe('ecl-fact-figures', () => {
           item-title="Aliquam faucibus nulla eget eleifend"
           value="00.0 million"
           icon="image"
-          theme="ec"
         >
           Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec lectus tortor.
         </ecl-fact-figures-item>

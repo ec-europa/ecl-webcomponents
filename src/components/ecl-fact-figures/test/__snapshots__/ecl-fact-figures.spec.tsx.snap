@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-fact-figures renders 1`] = `
-<ecl-fact-figures columns="4" font-size="m" icon-size="2xl" theme="ec" view-all-link-label="View all" view-all-link-path="/example">
+<ecl-fact-figures columns="4" font-size="m" icon-size="2xl" view-all-link-label="View all" view-all-link-path="/example">
   <!---->
   <div class="ecl-fact-figures ecl-fact-figures--col-4 ecl-fact-figures--font-m">
     <div class="ecl-fact-figures__items">
-      <ecl-fact-figures-item icon="infographic" item-title="Lorem ipsum" theme="ec" value="00.0 million">
+      <ecl-fact-figures-item icon="infographic" item-title="Lorem ipsum" value="00.0 million">
         <!---->
-        <div class="ecl-fact-figures__item sc-ecl-fact-figures-ec">
+        <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
             <svg class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec">
               <use xlink:href="/build/images/ec/icons.svg#infographic"></use>
@@ -26,7 +26,7 @@ exports[`ecl-fact-figures renders 1`] = `
       </ecl-fact-figures-item>
       <ecl-fact-figures-item icon="spreadsheet" item-title="Sed hendrerit" theme="ec" value="00.0 million">
         <!---->
-        <div class="ecl-fact-figures__item sc-ecl-fact-figures-ec">
+        <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
             <svg class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec">
               <use xlink:href="/build/images/ec/icons.svg#spreadsheet"></use>
@@ -43,9 +43,9 @@ exports[`ecl-fact-figures renders 1`] = `
           </div>
         </div>
       </ecl-fact-figures-item>
-      <ecl-fact-figures-item icon="growth" item-title="Donec suscipit interdum augue, ac dapibus eros finibus" theme="ec" value="00.0 million">
+      <ecl-fact-figures-item icon="growth" item-title="Donec suscipit interdum augue, ac dapibus eros finibus" value="00.0 million">
         <!---->
-        <div class="ecl-fact-figures__item sc-ecl-fact-figures-ec">
+        <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
             <svg class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec">
               <use xlink:href="/build/images/ec/icons.svg#growth"></use>
@@ -62,9 +62,9 @@ exports[`ecl-fact-figures renders 1`] = `
           </div>
         </div>
       </ecl-fact-figures-item>
-      <ecl-fact-figures-item icon="digital" item-title="Aenean dapibus" theme="ec" value="00.0 million">
+      <ecl-fact-figures-item icon="digital" item-title="Aenean dapibus" value="00.0 million">
         <!---->
-        <div class="ecl-fact-figures__item sc-ecl-fact-figures-ec">
+        <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
             <svg class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec">
               <use xlink:href="/build/images/ec/icons.svg#digital"></use>
@@ -81,9 +81,9 @@ exports[`ecl-fact-figures renders 1`] = `
           </div>
         </div>
       </ecl-fact-figures-item>
-      <ecl-fact-figures-item ,="" icon="regulation" item-title="Aliquam faucibus nulla eget eleifend" theme="ec" value="00.0 million">
+      <ecl-fact-figures-item ,="" icon="regulation" item-title="Aliquam faucibus nulla eget eleifend" value="00.0 million">
         <!---->
-        <div class="ecl-fact-figures__item sc-ecl-fact-figures-ec">
+        <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
             <svg class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec">
               <use xlink:href="/build/images/ec/icons.svg#regulation"></use>
@@ -100,9 +100,9 @@ exports[`ecl-fact-figures renders 1`] = `
           </div>
         </div>
       </ecl-fact-figures-item>
-      <ecl-fact-figures-item icon="image" item-title="Aliquam faucibus nulla eget eleifend" theme="ec" value="00.0 million">
+      <ecl-fact-figures-item icon="image" item-title="Aliquam faucibus nulla eget eleifend" value="00.0 million">
         <!---->
-        <div class="ecl-fact-figures__item sc-ecl-fact-figures-ec">
+        <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
             <svg class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec">
               <use xlink:href="/build/images/ec/icons.svg#image"></use>
