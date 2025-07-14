@@ -11,7 +11,7 @@
 | ------------ | ------------- | ----------- | --------- | ----------- |
 | `centered`   | `centered`    |             | `boolean` | `false`     |
 | `overlay`    | `overlay`     |             | `boolean` | `false`     |
-| `size`       | `size`        |             | `string`  | `'medium'`  |
+| `size`       | `size`        |             | `string`  | `'m'`       |
 | `styleClass` | `style-class` |             | `string`  | `''`        |
 | `theme`      | `theme`       |             | `string`  | `'ec'`      |
 | `variant`    | `variant`     |             | `string`  | `'primary'` |

@@ -1692,26 +1692,26 @@ importers:
   src/components/ecl-spinner:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.31.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14(patch_hash=b6ad42f8f626741a7c0770d35959f5023291e2cb9b398da24440ce165f0a54a2)(@types/babel__core@7.20.5)(eslint@9.31.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
+      '@ecl/spinner':
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-spinner':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
+      lorem-ipsum:
+        specifier: 2.0.8
+        version: 2.0.8
 
   src/components/ecl-tag:
     devDependencies:
@@ -3303,9 +3303,6 @@ packages:
 
   '@ecl/vanilla-component-social-media-share@3.13.0':
     resolution: {integrity: sha512-ff5S8Evwr/Z/N9KFLBMbOIYE2WdQiX03ejC4GUSp5Q5Ew3neMfAnBmb9RnhOA77YnE1NKV8tue16ElsCjNO/bg==}
-
-  '@ecl/vanilla-component-spinner@3.13.0':
-    resolution: {integrity: sha512-4/6cpRyV9fri1Me/UX+MbVNdpXgg7p6TXrm9botK7sU8aWW1+NTTOmEQbrc+nNeaJ1Y5q2HyS6Mk0M8ELgJ9Lw==}
 
   '@ecl/vanilla-component-tag@3.13.0':
     resolution: {integrity: sha512-9S0MnuiUQ2XMQjMciegS+D/v/39QveDcdMLnQpyjOmlfl84hHXCaIj8eWGvfDzNoFE5VA2akkdxYXN8Wy4Ub/g==}
@@ -15117,10 +15114,6 @@ snapshots:
       '@ecl/vanilla-layout-grid': 3.13.0
 
   '@ecl/vanilla-component-social-media-share@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
-  '@ecl/vanilla-component-spinner@3.13.0':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
 
