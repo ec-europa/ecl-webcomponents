@@ -1,4 +1,4 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, Element } from '@stencil/core';
 
 @Component({
   tag: 'ecl-fact-figures',
@@ -11,6 +11,7 @@ import { Component, h, Prop } from '@stencil/core';
   assetsDirs: ['build'],
 })
 export class EclFactFigures {
+  @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() columns: number = 3;
@@ -46,6 +47,14 @@ export class EclFactFigures {
 
   componentWillLoad() {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
+  componentDidLoad() {
+    const items = this.el.querySelectorAll('.ecl-fact-figures__item');
+  
+    if (items.length > 0) {
+      items[0].classList.add('is-first');
+    }
   }
 
   render() {
