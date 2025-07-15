@@ -445,6 +445,14 @@ export namespace Components {
     }
     interface EclFactFigures {
         /**
+          * @default false
+         */
+        "centered": boolean;
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
           * @default 3
          */
         "columns": number;
@@ -452,20 +460,30 @@ export namespace Components {
           * @default true
          */
         "displayIcons": boolean;
-        "styleClass": string;
         /**
-          * @default 'ec'
+          * @default 'l'
          */
+        "fontSize": string;
+        /**
+          * @default 'm'
+         */
+        "iconSize": string;
+        "styleClass": string;
         "theme": string;
+        /**
+          * @default ''
+         */
+        "viewAllLinkLabel": string;
+        /**
+          * @default ''
+         */
+        "viewAllLinkPath": string;
     }
     interface EclFactFiguresItem {
         "icon": string;
         "iconTransform": string;
         "itemTitle": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "value": string;
     }
@@ -804,9 +822,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -2857,6 +2872,14 @@ declare namespace LocalJSX {
     }
     interface EclFactFigures {
         /**
+          * @default false
+         */
+        "centered"?: boolean;
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
           * @default 3
          */
         "columns"?: number;
@@ -2864,20 +2887,30 @@ declare namespace LocalJSX {
           * @default true
          */
         "displayIcons"?: boolean;
-        "styleClass"?: string;
         /**
-          * @default 'ec'
+          * @default 'l'
          */
+        "fontSize"?: string;
+        /**
+          * @default 'm'
+         */
+        "iconSize"?: string;
+        "styleClass"?: string;
         "theme"?: string;
+        /**
+          * @default ''
+         */
+        "viewAllLinkLabel"?: string;
+        /**
+          * @default ''
+         */
+        "viewAllLinkPath"?: string;
     }
     interface EclFactFiguresItem {
         "icon"?: string;
         "iconTransform"?: string;
         "itemTitle"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "value"?: string;
     }
@@ -3216,9 +3249,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''

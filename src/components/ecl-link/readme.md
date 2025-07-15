@@ -29,6 +29,7 @@
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
  - [ecl-category-filter-item](../ecl-category-filter)
  - [ecl-description-list-definition](../ecl-description-list)
+ - [ecl-fact-figures](../ecl-fact-figures)
  - [ecl-file](../ecl-file)
  - [ecl-file-translations-item](../ecl-file)
  - [ecl-footer](../ecl-footer)
@@ -57,6 +58,7 @@ graph TD;
   ecl-breadcrumb-item --> ecl-link
   ecl-category-filter-item --> ecl-link
   ecl-description-list-definition --> ecl-link
+  ecl-fact-figures --> ecl-link
   ecl-file --> ecl-link
   ecl-file-translations-item --> ecl-link
   ecl-footer --> ecl-link

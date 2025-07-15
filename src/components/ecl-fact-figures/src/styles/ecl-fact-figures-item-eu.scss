@@ -1,9 +1,39 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-fact-figures/fact-figures-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/grid/mixins/breakpoints';
+@use '@ecl/fact-figures/fact-figures' with (
+  $theme: theme.$theme,
+  $fact-figures: var.$fact-figures
+);
 
 :host {
   @extend .ecl-fact-figures__item;
 
   margin: 0;
   padding: 0;
+}
+
+.ecl-fact-figures__item.sc-ecl-fact-figures-item-eu:first-of-type {
+  margin-top: var(--s-xl);
+}
+
+.ecl-fact-figures__item.sc-ecl-fact-figures-item-eu.is-first {
+  margin-top: 0;
+}
+
+.ecl-fact-figures__item--font-m .ecl-fact-figures__value {
+  font: var(--f-2xl);
+}
+
+@include breakpoints.up('l') {
+  .ecl-fact-figures__item.sc-ecl-fact-figures-item-eu:first-of-type {
+    margin-top: 0;
+  }
+
+  .ecl-fact-figures__item--font-m .ecl-fact-figures__value {
+    font: var(--f-3xl);
+  }
 }
