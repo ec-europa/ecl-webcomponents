@@ -46,3 +46,6 @@ const Template = () =>
 
 export const Breadcrumb = Template.bind({});
 Breadcrumb.storyName = 'default';
+Breadcrumb.argTypes = {
+  color_mode: { table: { disable: true } },
+};

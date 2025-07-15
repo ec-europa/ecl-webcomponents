@@ -7,3 +7,12 @@
   $theme: theme.$theme,
   $breadcrumb: var.$breadcrumb
 );
+
+:host {
+  display: contents;
+}
+
+.ecl-breadcrumb__segment > ::slotted([slot='icon-after']) {
+  display: flex;
+  align-items: center;
+}
