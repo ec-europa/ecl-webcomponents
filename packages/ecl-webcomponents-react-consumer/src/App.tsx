@@ -102,7 +102,7 @@ function App() {
         </EclMenu>
       </EclSiteHeader>
       <EclPageHeader variant="core" theme="eu" header-title="Page title" meta="Meta info | DD Month YYYY" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
-        <EclBreadcrumb slot="breadcrumb" variant="default" theme="eu" ecl-script>
+        <EclBreadcrumb slot="breadcrumb" theme="eu" ecl-script>
           <EclBreadcrumbItem path="/example.html" theme="eu"> Home </EclBreadcrumbItem>
           <EclBreadcrumbItem theme="eu" ellipsis button-aria-label="Click to expand"> </EclBreadcrumbItem>
           <EclBreadcrumbItem path="/example.html" theme="eu"> About the European Commission </EclBreadcrumbItem>

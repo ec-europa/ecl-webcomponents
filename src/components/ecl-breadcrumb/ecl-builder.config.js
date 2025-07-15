@@ -12,10 +12,11 @@ const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()
 module.exports = {
   scripts: [
     {
-      entry: path.resolve(nodeModules, '@ecl/vanilla-component-breadcrumb/breadcrumb.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-breadcrumb-vanilla.js'),
+      entry: path.resolve(nodeModules, '@ecl/breadcrumb/breadcrumb.js'),
+      dest: path.resolve(outputFolder, 'scripts/ecl-breadcrumb.js'),
       options: {
         banner,
+        format: 'iife',
         moduleName: 'ECL',
         includePaths,
         sourceMap: false,

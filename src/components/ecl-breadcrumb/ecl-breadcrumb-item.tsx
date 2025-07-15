@@ -6,10 +6,9 @@ import { Component, h, Prop, Element } from '@stencil/core';
 })
 export class EclBreadcrumbItem {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
-  @Prop() styleClass: string;
-  @Prop() variant: string;
-  @Prop() path: string;
+  @Prop() theme: string;
+  @Prop() styleClass: string = '';
+  @Prop() path: string = '';
   @Prop() currentPage: boolean = false;
   @Prop() ellipsis: boolean = false;
   @Prop() buttonAriaLabel: string = '';
@@ -29,27 +28,34 @@ export class EclBreadcrumbItem {
       styleClasses.push('ecl-breadcrumb__current-page');
     }
 
-    return styleClasses.join(' ');
+    return styleClasses.filter(Boolean).join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   getLinkClass(): string {
-    const linkClasses = [
+    return [
+      'ecl-link',
+      'sc-ecl-link-ec',
       `sc-ecl-breadcrumb-${this.theme}`,
-      'ecl-breadcrumb__link',
+      'ecl-link--standalone', 
       'ecl-link--no-visited',
-    ];
-
-    if (this.el.closest('.ecl-breadcrumb--negative')) {
-      linkClasses.push('ecl-link--negative');
-    }
-
-    return linkClasses.join(' ');
+      'ecl-breadcrumb__link'
+    ].join(' ');
   }
 
   getLiAttrs() {
-    const attrs = { 'data-ecl-breadcrumb-item' : 'static' };
+    const attrs: any = {};
+
     if (this.ellipsis) {
-      attrs['data-ecl-breadcrumb-ellipsis'] = 'data-ecl-breadcrumb-ellipsis';
+      attrs['data-ecl-breadcrumb-ellipsis'] = '';
+      attrs['aria-hidden'] = 'true';
+    }
+
+    if (this.currentPage) {
+      attrs['aria-current'] = 'page';
     }
 
     return attrs;
@@ -67,37 +73,45 @@ export class EclBreadcrumbItem {
           path={this.path}
           style-class={this.getLinkClass()}
         >
-          <ecl-icon
-            slot="icon-after"
-            style-class={`ecl-breadcrumb__icon sc-ecl-breadcrumb-${this.theme}`}
-            icon="corner-arrow"
-            transform="rotate-90"
-            size="2xs"
-          ></ecl-icon>
           <slot></slot>
         </ecl-link> :
         <slot></slot>
       }
-      { this.ellipsis ? 
-        <ecl-button
-          style-class={`ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-${this.theme}`}
-          variant="ghost"
-          data-ecl-breadcrumb-ellipsis-button
-          aria-label={this.buttonAriaLabel}
-        >
-          ...
+      {this.ellipsis &&
+        [
+          <ecl-button
+            style-class={`ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-${this.theme}`}
+            variant="ghost"
+            data-ecl-breadcrumb-ellipsis-button
+            aria-label={this.buttonAriaLabel}
+            key="button"
+          >
+            ...
+          </ecl-button>,
           <ecl-icon
-            style-class={`ecl-breadcrumb__icon sc-ecl-breadcrumb-${this.theme}`}
-            size="2xs"
-            transform="rotate-90"
-            icon="corner-arrow"
             slot="icon-after"
+            style-class={`ecl-breadcrumb__icon sc-ecl-breadcrumb-${this.theme}`}
+            icon="corner-arrow"
+            size="fluid"
+            transform="rotate-90"
+            role="presentation"
           ></ecl-icon>
-        </ecl-button> : '' 
+        ]
       }
-      { this.currentPage ?
-        <slot></slot> : ''
-      }
+      {this.currentPage ? (
+        <slot></slot>
+      ) : null}
+
+        {!this.currentPage && !this.ellipsis ? (
+          <ecl-icon
+            slot="icon-after"
+            style-class={`ecl-breadcrumb__icon sc-ecl-breadcrumb-${this.theme}`}
+            icon="corner-arrow"
+            size="fluid"
+            transform="rotate-90"
+            role="presentation"
+          ></ecl-icon>
+        ) : null}
       </li>
     );
   }
