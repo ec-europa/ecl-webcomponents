@@ -86,21 +86,26 @@ export namespace Components {
          */
         "eclScript": boolean;
         /**
+          * @default ''
+         */
+        "ellipsisLabel": string;
+        /**
+          * @default 1
+         */
+        "minItemsLeft": number;
+        /**
           * @default 2
          */
         "minItemsRight": number;
         /**
           * @default ''
          */
+        "navigationText": string;
+        /**
+          * @default ''
+         */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
-        /**
-          * @default 'default'
-         */
-        "variant": string;
     }
     interface EclBreadcrumbItem {
         /**
@@ -115,13 +120,15 @@ export namespace Components {
           * @default false
          */
         "ellipsis": boolean;
-        "path": string;
-        "styleClass": string;
         /**
-          * @default 'ec'
+          * @default ''
          */
+        "path": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
         "theme": string;
-        "variant": string;
     }
     interface EclButton {
         "ariaControls": string;
@@ -804,9 +811,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -2495,21 +2499,26 @@ declare namespace LocalJSX {
          */
         "eclScript"?: boolean;
         /**
+          * @default ''
+         */
+        "ellipsisLabel"?: string;
+        /**
+          * @default 1
+         */
+        "minItemsLeft"?: number;
+        /**
           * @default 2
          */
         "minItemsRight"?: number;
         /**
           * @default ''
          */
+        "navigationText"?: string;
+        /**
+          * @default ''
+         */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
-        /**
-          * @default 'default'
-         */
-        "variant"?: string;
     }
     interface EclBreadcrumbItem {
         /**
@@ -2524,13 +2533,15 @@ declare namespace LocalJSX {
           * @default false
          */
         "ellipsis"?: boolean;
-        "path"?: string;
-        "styleClass"?: string;
         /**
-          * @default 'ec'
+          * @default ''
          */
+        "path"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
         "theme"?: string;
-        "variant"?: string;
     }
     interface EclButton {
         "ariaControls"?: string;
@@ -3216,9 +3227,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''

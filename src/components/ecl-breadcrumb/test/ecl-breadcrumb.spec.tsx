@@ -3,53 +3,36 @@ import { EclBreadcrumb } from '../ecl-breadcrumb';
 import { EclBreadcrumbItem } from '../ecl-breadcrumb-item';
 
 describe('ecl-breadcrumb', () => {
-  it('renders', async () => {
+  it('renders with ellipsis and current page', async () => {
     const page = await newSpecPage({
       components: [EclBreadcrumb, EclBreadcrumbItem],
       html: `<ecl-breadcrumb
-        variant="negative"
-        theme="ec"
-        ecl-script
-       >
-        <ecl-breadcrumb-item
-          path="/example.html"
-          variant="negative"
-          theme="ec"
-        >
+        min-items-left="1"
+        min-items-right="2"
+        ecl-script="true"
+        navigation-text="Breadcrumb"
+        ellipsis-label="Expand breadcrumb"
+      >
+        <ecl-breadcrumb-item path="/example.html">
           Home
         </ecl-breadcrumb-item>
         <ecl-breadcrumb-item
-          style-class="ecl-breadcrumb__segment--ellipsis"
-          ellipsis
-          button-aria-label="Click to expand"
-         >
-         </ecl-breadcrumb-item>
-        <ecl-breadcrumb-item
-          variant="negative"
           path="/example.html"
-          theme="ec"
         >
           About the European Commission
         </ecl-breadcrumb-item>
         <ecl-breadcrumb-item
-          variant="negative"
           path="/example.html"
-          theme="ec"
         >
           Organisational structure
         </ecl-breadcrumb-item>
         <ecl-breadcrumb-item
-          variant="negative"
           path="/example.html"
-          theme="ec"
         >
           How the Commission is organised
         </ecl-breadcrumb-item>
         <ecl-breadcrumb-item
-          variant="negative"
           current-page
-          style-class="ecl-breadcrumb__current-page"
-          theme="ec"
         >
           News
         </ecl-breadcrumb-item>

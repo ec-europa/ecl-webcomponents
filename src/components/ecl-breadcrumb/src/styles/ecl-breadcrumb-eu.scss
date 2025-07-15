@@ -1,14 +1,18 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-breadcrumb/breadcrumb-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/breadcrumb/breadcrumb' with (
+  $theme: theme.$theme,
+  $breadcrumb: var.$breadcrumb
+);
 
-.ecl-breadcrumb__icon.sc-ecl-breadcrumb-eu {
-  margin-inline-end: 0.5rem !important;
+:host {
+  display: contents;
 }
 
-.ecl-breadcrumb__ellipsis.sc-ecl-breadcrumb-eu {
-  padding: 0 !important;
-}
-
-.ecl-breadcrumb__ellipsis .ecl-icon {
-  margin-inline-start: 0.5rem !important;
+.ecl-breadcrumb__segment > ::slotted([slot='icon-after']) {
+  display: flex;
+  align-items: center;
 }
