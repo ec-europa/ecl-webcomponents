@@ -7,12 +7,3 @@
   $theme: theme.$theme,
   $breadcrumb: var.$breadcrumb
 );
-
-.ecl-breadcrumb__segment ::slotted([slot='icon-after']) {
-  display: flex;
-  align-items: center;
-}
-
-.ecl-breadcrumb__segment .ecl-breadcrumb__link.sc-ecl-breadcrumb-ec {
-  vertical-align: top;
-}
