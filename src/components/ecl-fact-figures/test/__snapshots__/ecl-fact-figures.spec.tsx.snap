@@ -7,7 +7,7 @@ exports[`ecl-fact-figures renders 1`] = `
     <div class="ecl-fact-figures__items">
       <ecl-fact-figures-item icon="infographic" item-title="Lorem ipsum" value="00.0 million">
         <!---->
-        <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
+        <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m is-first sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
             <svg class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec">
               <use xlink:href="/build/images/ec/icons.svg#infographic"></use>
