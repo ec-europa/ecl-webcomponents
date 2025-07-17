@@ -1134,32 +1134,29 @@ importers:
   src/components/ecl-link:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.31.0(jiti@1.21.7))
-      '@ecl/resources-ec-icons':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/specs-component-icon':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14(patch_hash=b6ad42f8f626741a7c0770d35959f5023291e2cb9b398da24440ce165f0a54a2)(@types/babel__core@7.20.5)(eslint@9.31.0(jiti@1.21.7))
+      '@ecl/button':
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
+      '@ecl/icon':
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
+      '@ecl/link':
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
+      '@ecl/resources-icons':
+        specifier: 4.11.0
+        version: 4.11.0
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-button':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=b10260c5c193e3f2f20a5d6721d43be35a19d874c7cfff32ab7e4f55a2c60e38)
-      '@ecl/vanilla-component-icon':
-        specifier: 3.13.0
-        version: 3.13.0(svg4everybody@2.1.9)
-      '@ecl/vanilla-component-link':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
+      '@ecl/utility-screen-reader':
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       cross-env:
         specifier: 7.0.3
         version: 7.0.3

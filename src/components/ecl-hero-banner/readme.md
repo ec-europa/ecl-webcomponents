@@ -35,6 +35,7 @@ graph TD;
   ecl-hero-banner --> ecl-link
   ecl-hero-banner --> ecl-icon
   ecl-link --> ecl-icon
+  ecl-link --> ecl-indicator
   style ecl-hero-banner fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

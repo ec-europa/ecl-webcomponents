@@ -14,7 +14,7 @@
 | `indicatorValue` | `indicator-value` |             | `string`  | `''`        |
 | `itemId`         | `item-id`         |             | `string`  | `undefined` |
 | `styleClass`     | `style-class`     |             | `string`  | `''`        |
-| `theme`          | `theme`           |             | `string`  | `undefined` |
+| `theme`          | `theme`           |             | `string`  | `'ec'`      |
 | `type`           | `type`            |             | `string`  | `'submit'`  |
 | `variant`        | `variant`         |             | `string`  | `'primary'` |
 

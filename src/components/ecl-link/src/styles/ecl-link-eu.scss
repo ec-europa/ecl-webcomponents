@@ -1,6 +1,13 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-button/button-eu';
-@use '@ecl/vanilla-component-link/link-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/button/button' with (
+  $theme: theme.$theme,
+  $button: var.$button
+);
+@use '@ecl/link/link' with (
+  $theme: theme.$theme,
+  $link: var.$link
+);
 
 :host ::slotted(ecl-icon[slot='icon-after']) svg {
   margin-inline-start: 0.5rem;
