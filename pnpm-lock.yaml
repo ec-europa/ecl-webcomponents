@@ -1132,6 +1132,13 @@ importers:
         version: 7.0.3
 
   src/components/ecl-link:
+    dependencies:
+      '@ecl/web-components-icon':
+        specifier: 0.15.1
+        version: link:../ecl-icon
+      '@ecl/web-components-indicator':
+        specifier: 0.15.1
+        version: link:../ecl-indicator
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.14
@@ -1140,6 +1147,9 @@ importers:
         specifier: 5.0.0-alpha.14
         version: 5.0.0-alpha.14
       '@ecl/icon':
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
+      '@ecl/indicator':
         specifier: 5.0.0-alpha.14
         version: 5.0.0-alpha.14
       '@ecl/link':
