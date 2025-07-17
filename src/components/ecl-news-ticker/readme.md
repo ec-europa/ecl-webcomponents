@@ -25,6 +25,7 @@
 graph TD;
   ecl-news-ticker-item --> ecl-link
   ecl-link --> ecl-icon
+  ecl-link --> ecl-indicator
   style ecl-news-ticker-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

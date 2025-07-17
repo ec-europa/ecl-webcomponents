@@ -25,6 +25,7 @@
 graph TD;
   ecl-inpage-navigation-item --> ecl-link
   ecl-link --> ecl-icon
+  ecl-link --> ecl-indicator
   style ecl-inpage-navigation-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

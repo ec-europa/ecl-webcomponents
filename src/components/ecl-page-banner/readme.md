@@ -35,6 +35,7 @@ graph TD;
   ecl-page-banner --> ecl-link
   ecl-page-banner --> ecl-icon
   ecl-link --> ecl-icon
+  ecl-link --> ecl-indicator
   style ecl-page-banner fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

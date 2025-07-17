@@ -146,6 +146,9 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
+        /**
+          * @default 'ec'
+         */
         "theme": string;
         /**
           * @default 'submit'
@@ -323,9 +326,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -804,9 +804,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -900,9 +897,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'low'
@@ -933,13 +927,24 @@ export namespace Components {
           * @default false
          */
         "external": boolean;
+        /**
+          * @default false
+         */
+        "indicator": boolean;
+        "indicatorValue": string;
+        /**
+          * @default false
+         */
+        "inverted": boolean;
         "name": string;
+        /**
+          * @default false
+         */
+        "noVisited": boolean;
         "path": string;
+        "srExternal": string;
         "styleClass": string;
         "target": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "titleAttr": string;
         /**
@@ -1626,9 +1631,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'primary'
@@ -2555,6 +2557,9 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
+        /**
+          * @default 'ec'
+         */
         "theme"?: string;
         /**
           * @default 'submit'
@@ -2732,9 +2737,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -3216,9 +3218,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -3315,9 +3314,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'low'
@@ -3348,13 +3344,24 @@ declare namespace LocalJSX {
           * @default false
          */
         "external"?: boolean;
+        /**
+          * @default false
+         */
+        "indicator"?: boolean;
+        "indicatorValue"?: string;
+        /**
+          * @default false
+         */
+        "inverted"?: boolean;
         "name"?: string;
+        /**
+          * @default false
+         */
+        "noVisited"?: boolean;
         "path"?: string;
+        "srExternal"?: string;
         "styleClass"?: string;
         "target"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "titleAttr"?: string;
         /**
@@ -4050,9 +4057,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'primary'
