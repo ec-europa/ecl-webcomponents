@@ -14,12 +14,14 @@ declare const ECL: any;
 })
 export class EclFile {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() variant: string = 'default';
+  @Prop() downloadAttribute: boolean = false;
   @Prop() downloadLabel: string;
   @Prop() downloadLink: string;
   @Prop() fileTitle: string;
+  @Prop() fileTitlePath: string;
   @Prop() detailMeta: string;
   @Prop() language: string;
   @Prop() meta: string;
@@ -41,12 +43,24 @@ export class EclFile {
     return styleClasses.join(' ');
   }
 
-  componentDidRender() {
-    if (this.el.querySelector('.ecl-file__translation-list') && this.eclScript) {
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
+  componentDidLoad() {
+    const list = this.el.querySelector('.ecl-file__translation-list');
+    if (list && this.eclScript) {
       // Clean the html so that the script finds what it expects.
+      const button = this.el.querySelector('.ecl-file__translation-toggle');
+      if (button) {
+        button.parentElement.remove();
+        this.el.querySelector('.ecl-file__translation-container').prepend(button);
+      }
+      
       const translations = this.el.querySelectorAll('.ecl-file__translation-item');
-      this.el.querySelector('.ecl-file__translation-list').innerHTML = '';
-      this.el.querySelector('.ecl-file__translation-list').append(...translations);
+      list.innerHTML = '';
+      list.append(...translations);
+      
       // Load the ECL vanilla js if not already present.
       const src = getAssetPath('./build/scripts/ecl-file-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
@@ -102,7 +116,11 @@ export class EclFile {
   }
 
   getTitle() {
-    return <div class="ecl-file__title">{this.fileTitle}</div>
+    if (!this.fileTitlePath) {
+      return <div class="ecl-file__title">{this.fileTitle}</div>
+    } else {
+      return <div class="ecl-file__title"><ecl-link variant="standalone" path={this.fileTitlePath}>{this.fileTitle}</ecl-link></div>
+    }
   }
 
   getLanguage() {
@@ -115,6 +133,8 @@ export class EclFile {
       path={this.downloadLink}
       variant="standalone"
       aria-label={this.ariaLabel}
+      style-class="ecl-file__download"
+      {...(this.downloadAttribute ? { download: true } : {})}
     >
       {this.downloadLabel}
       <ecl-icon
@@ -137,23 +157,15 @@ export class EclFile {
         data-ecl-file
       >
         <div class="ecl-file__container">
-        { isDefault ?
+        { isDefault &&
           <ecl-icon
             icon="file"
             size={this.theme === 'ec' ? '2xl' : 'm'}
             styleClass={`ecl-file__icon sc-ecl-file-${this.theme}`}
             theme={this.theme}
-          ></ecl-icon> : 
-          <div class="ecl-file__detail">
-            <div class="ecl-file__detail-info">
-              {this.getLabels()}
-              {this.getDetailedMeta()}
-              {this.getTitle()}
-              <div class="ecl-file__description">
-                <slot></slot>
-              </div>
-            </div>
-          { this.image ?
+          ></ecl-icon>
+        }
+        { !isDefault && this.image &&
             <ecl-picture
               image={this.image}
               imageAlt={this.imageAlt}
@@ -161,46 +173,52 @@ export class EclFile {
               styleClass={`ecl-file__picture sc-ecl-file-${this.theme}`}
             >
               <slot name="sources"></slot>
-            </ecl-picture> : ''
-          }
-          </div>
+            </ecl-picture> 
         }
-        { this.taxonomies ? 
-          <div class="ecl-file__taxonomy">
-            <ecl-description-list
-              theme={this.theme}
-              variant="horizontal"
-            >
-              <ecl-description-list-term
-                theme={this.theme}
-                style-class={`sc-ecl-file-${this.theme}`}
-              >
-                {this.taxonomiesLabel}
-              </ecl-description-list-term>
-              <ecl-description-list-definition
-                theme={this.theme}
-                items={this.taxonomies}
-                type="taxonomy"
-                style-class={`sc-ecl-file-${this.theme}`}
-              >
-              </ecl-description-list-definition>
-            </ecl-description-list>
-          </div> : '' 
-        }
-        { isDefault ?
+        { !isDefault &&
           <div class="ecl-file__info">
             {this.getLabels()}
             {this.getDetailedMeta()}
             {this.getTitle()}
-            {this.getLanguage()}        
-            {this.getMeta()}
-          </div> :
-          <div class="ecl-file__info">
-            {this.getLanguage()}
-            {this.getMeta()}
+            <div class="ecl-file__description">
+              <slot></slot>
+            </div>
+          { this.taxonomies &&
+            <div class="ecl-file__taxonomy">
+              <ecl-description-list
+                theme={this.theme}
+                variant="horizontal"
+              >
+                <ecl-description-list-term
+                  theme={this.theme}
+                  style-class={`sc-ecl-file-${this.theme}`}
+                >
+                  {this.taxonomiesLabel}
+                </ecl-description-list-term>
+                <ecl-description-list-definition
+                  theme={this.theme}
+                  items={this.taxonomies}
+                  type="taxonomy"
+                  style-class={`sc-ecl-file-${this.theme}`}
+                >
+                </ecl-description-list-definition>
+              </ecl-description-list>
+            </div>
+          }
           </div>
         }
-          {this.getDownload()}
+        { isDefault &&
+          <div class="ecl-file__info">
+            {this.getTitle()}
+          </div>
+        }
+        </div>
+        <div class="ecl-file__footer">
+          {this.getLanguage()}        
+          {this.getMeta()}
+          <div class="ecl-file__action">
+            {this.getDownload()}
+          </div>
         </div>
         <slot name="file-translations"></slot>
       </div>

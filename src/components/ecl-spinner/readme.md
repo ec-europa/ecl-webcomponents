@@ -13,7 +13,7 @@
 | `overlay`    | `overlay`     |             | `boolean` | `false`     |
 | `size`       | `size`        |             | `string`  | `'m'`       |
 | `styleClass` | `style-class` |             | `string`  | `''`        |
-| `theme`      | `theme`       |             | `string`  | `'ec'`      |
+| `theme`      | `theme`       |             | `string`  | `undefined` |
 | `variant`    | `variant`     |             | `string`  | `'primary'` |
 | `visible`    | `visible`     |             | `boolean` | `false`     |
 

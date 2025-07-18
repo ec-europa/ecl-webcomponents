@@ -323,9 +323,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -498,6 +495,10 @@ export namespace Components {
     interface EclFile {
         "ariaLabel": string;
         "detailMeta": string;
+        /**
+          * @default false
+         */
+        "downloadAttribute": boolean;
         "downloadLabel": string;
         "downloadLink": string;
         /**
@@ -505,6 +506,7 @@ export namespace Components {
          */
         "eclScript": boolean;
         "fileTitle": string;
+        "fileTitlePath": string;
         "image": string;
         "imageAlt": string;
         "labels": string;
@@ -513,9 +515,6 @@ export namespace Components {
         "styleClass": string;
         "taxonomies": string;
         "taxonomiesLabel": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'default'
@@ -528,9 +527,6 @@ export namespace Components {
          */
         "others": boolean;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "toggleLabel": string;
     }
@@ -542,9 +538,6 @@ export namespace Components {
         "language": string;
         "meta": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'default'
@@ -804,9 +797,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -900,9 +890,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'low'
@@ -1626,9 +1613,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'primary'
@@ -2732,9 +2716,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -2910,6 +2891,10 @@ declare namespace LocalJSX {
     interface EclFile {
         "ariaLabel"?: string;
         "detailMeta"?: string;
+        /**
+          * @default false
+         */
+        "downloadAttribute"?: boolean;
         "downloadLabel"?: string;
         "downloadLink"?: string;
         /**
@@ -2917,6 +2902,7 @@ declare namespace LocalJSX {
          */
         "eclScript"?: boolean;
         "fileTitle"?: string;
+        "fileTitlePath"?: string;
         "image"?: string;
         "imageAlt"?: string;
         "labels"?: string;
@@ -2925,9 +2911,6 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "taxonomies"?: string;
         "taxonomiesLabel"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'default'
@@ -2940,9 +2923,6 @@ declare namespace LocalJSX {
          */
         "others"?: boolean;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "toggleLabel"?: string;
     }
@@ -2954,9 +2934,6 @@ declare namespace LocalJSX {
         "language"?: string;
         "meta"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'default'
@@ -3216,9 +3193,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -3315,9 +3289,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'low'
@@ -4050,9 +4021,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'primary'

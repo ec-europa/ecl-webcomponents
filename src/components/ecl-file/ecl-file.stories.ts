@@ -2,6 +2,8 @@ const getArgs = () => ({
   labels: false,
   variant: 'thumbnail',
   fileTitle: 'State of the Union 2018 brochure',
+  fileTitlePath: '/example.html',
+  downloadAttribute: false,
   downloadLabel: 'Download',
   downloadLink: '/example.html',
   language: 'English',
@@ -13,6 +15,7 @@ const getArgs = () => ({
 });
 
 const getArgTypes = () => ({
+  color_mode: { table: { disable: true} },
   labels: {
     type: { name: 'boolean' },
     description: 'Show file labels',
@@ -28,16 +31,26 @@ const getArgTypes = () => ({
   },
   fileTitle: {
     type: { name: 'string' },
-    name: 'title of the file',
+    name: 'file-title',
+  },
+  fileTitlePath: {
+    name: 'file-title-path',
+    type: { name: 'string' },
+    description: 'href of the title, when is is a link'
+  },
+  downloadAttribute: {
+    name: 'download-attribute',
+    type: { name: 'boolean' },
+    description: 'Whether you want a file download link or not',
   },
   downloadLabel: {
     type: { name: 'string' },
-    name: 'download link label',
+    name: 'download-label',
     description: 'Label for the download button',
   },
   downloadLink: {
     type: { name: 'string' },
-    name: 'download link',
+    name: 'download-link',
     description: 'Link for the file download',
   },
   meta: {
@@ -65,10 +78,11 @@ export default {
 const TemplateWithTranslation = args =>
 `<ecl-file
   variant="${args.variant}"
-  theme="${args.theme}"
   file-title="${args.fileTitle}"
+  file-title-path="${args.fileTitlePath}"
   download-link="${args.downloadLink}"
   download-label="${args.downloadLabel}"
+  download-attribute=${args.downloadAttribute}
   language="${args.language}"
   meta="${args.meta}"
   image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
@@ -77,15 +91,14 @@ const TemplateWithTranslation = args =>
   ecl-script
   aria-label="Download file State of the Union 2018 brochure"
   taxonomies-label="Taxonomy list"
-  taxonomies='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"},"Taxonomy item 3"]'
-  labels='${args.labels || args.variant === 'thumbnail' ? '[{"variant": "highlight", "label": "Highlight"}, {"variant": "medium", "label": "Medium"}]' : ''}'
+  taxonomies='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"}]'
+  labels='${args.labels || args.variant === 'thumbnail' ? '[{"variant": "highlight", "label": "Highlighted"}]' : ''}'
 >
   ${args.variant === 'thumbnail' ? args.description : ''}
   <ecl-file-translations
-    theme="${args.theme}"
-    toggle-label="Other languages"
-    others
+    toggle-label="Translations"
     slot="file-translations"
+    others
   >
     <ecl-file-translations-item
       language="bg"
@@ -94,7 +107,6 @@ const TemplateWithTranslation = args =>
       meta="(15.7 MB - PDF)"
       file-title="български"
       variant="${args.variant}"
-      theme="${args.theme}"
       aria-label="Download file State of the Union 2018 brochure"
     >
     </ecl-file-translations-item>
@@ -105,7 +117,6 @@ const TemplateWithTranslation = args =>
       meta="(15.98 MB - PDF)"
       file-title="español"
       variant="${args.variant}"
-      theme="${args.theme}"
       aria-label="Download file State of the Union 2018 brochure"
     >
     </ecl-file-translations-item>
@@ -116,7 +127,6 @@ const TemplateWithTranslation = args =>
       meta="(15.98 MB - PDF)"
       file-title="français"
       variant="${args.variant}"
-      theme="${args.theme}"
       aria-label="Download file State of the Union 2018 brochure"
     >
     </ecl-file-translations-item>
