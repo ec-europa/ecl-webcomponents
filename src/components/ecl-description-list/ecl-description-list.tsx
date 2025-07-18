@@ -15,18 +15,25 @@ declare const ECL: any;
 export class EclDescriptionList {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop() colorMode: string = '';
+  @Prop({ mutable: true }) theme: string;
   @Prop() variant: string = 'vertical';
   @Prop() visibleItems: number;
   @Prop() moreLabel: string;
   @Prop() eclScript: boolean = false;
 
   getClass(): string {
-    return [
+    const styleClasses = [
       `ecl-description-list`,
       `ecl-description-list--${this.variant}`,
       this.styleClass
-    ].join(' ');
+    ];
+
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`);
+    }
+
+    return styleClasses.join(' ');
   }
 
   getAttrs() {
@@ -43,7 +50,9 @@ export class EclDescriptionList {
     return attrs;
   }
 
-  componentDidRender() {
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-description-list-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
@@ -54,6 +63,11 @@ export class EclDescriptionList {
       script.onload = () => {
         const descriptionList = new ECL.DescriptionList(this.el.firstElementChild);
         descriptionList.init();
+        const firstTerm = this.el.querySelectorAll('.ecl-description-list__term');
+        if (firstTerm[0]) {
+          firstTerm[0].classList.add('is-first');
+        } 
+
         const seeMore = this.el.querySelectorAll('.ecl-description-list__see_more');
         if (seeMore[0]) {
           seeMore.forEach((more) => {

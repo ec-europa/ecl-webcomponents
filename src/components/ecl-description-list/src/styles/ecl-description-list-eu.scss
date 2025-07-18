@@ -1,8 +1,19 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-description-list/description-list-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/description-list/description-list' with (
+  $theme: theme.$theme,
+  $description-list: var.$description-list
+);
 
 .ecl-description-list__term.sc-ecl-description-list-eu:first-child {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+.ecl-description-list__term.is-first {
+  margin-top: 0;
 }
 
 .ecl-link--icon-before .ecl-icon {

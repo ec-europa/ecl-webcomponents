@@ -6,53 +6,49 @@ export default {
 
 const Template = (args) =>
   `<ecl-description-list
-    theme="${args.theme}"
     variant="${args.variant}"
-    visible-items="2"
+    visible-items="${args.visibleItems}"
     more-label="See all items"
     ecl-script
   >
-    <ecl-description-list-term
-      theme="${args.theme}"
-    >
+    <ecl-description-list-term>
       Standard text
     </ecl-description-list-term>
     <ecl-description-list-definition
       type="text"
-      theme="${args.theme}"
     >
-      Lorem ipsum dolor sit amet, <ecl-link path="${randomizedLink('/example.html')}" title"title">consectetur adipiscing elit</ecl-link>. Suspendisse ut sapien condimentum, aliquet turpis sit amet, finibus purus. Donec porttitor iaculis felis ut dapibus. Sed blandit, massa ac suscipit facilisis
+      Lorem ipsum dolor sit amet, <ecl-link path="${randomizedLink('/example.html')}" title="title">consectetur adipiscing elit</ecl-link>. Suspendisse ut sapien condimentum, aliquet turpis sit amet, finibus purus. Donec porttitor iaculis felis ut dapibus. Sed blandit, massa ac suscipit facilisis
     </ecl-description-list-definition>
     <ecl-description-list-term
-      theme="${args.theme}"
     >
       Standalone links
     </ecl-description-list-term>
     <ecl-description-list-definition
       type="link"
-      theme="${args.theme}"
-      items='[{"label": "Lorem ipsum dolor sit amet", "path": "${randomizedLink('/example.html')}", "icon": "copy"},{"label": "Lorem ipsum dolor sit amet", "path": "${randomizedLink('/example.html')}", "icon": "download"}]'
+      items='[{"label": "Lorem ipsum dolor sit amet", "path": "${randomizedLink('/example.html')}"},{"label": "Lorem ipsum dolor sit amet", "path": "${randomizedLink('/example.html')}"}]'
     >
     </ecl-description-list-definition>
-    <ecl-description-list-term
-      theme="${args.theme}"
-    >
+    <ecl-description-list-term>
       Links inline
     </ecl-description-list-term>
     <ecl-description-list-definition
       type="inline"
-      theme="${args.theme}"
       items='[{"label": "Lorem ipsum dolor sit amet", "path": "${randomizedLink('/example.html')}"},{"label": "Lorem ipsum dolor sit amet", "path": "${randomizedLink('/example.html')}"}]'
     >
     </ecl-description-list-definition>
-    <ecl-description-list-term
-      theme="${args.theme}"
+    <ecl-description-list-term>
+      Tag list
+    </ecl-description-list-term>
+    <ecl-description-list-definition
+      type="tag"
+      items='[{"label": "Link tag", "url": "${randomizedLink('/example.html')}"},{"label": "Long link tag", "url": "${randomizedLink('/example.html')}"}]'
     >
+    </ecl-description-list-definition>
+    <ecl-description-list-term>
       Taxonomy list
     </ecl-description-list-term>
     <ecl-description-list-definition
       type="taxonomy"
-      theme="${args.theme}"
       collapsible
       items='["Taxonomy item 1", {"label": "Taxonomy item 2", "path": "${randomizedLink('/example.html')}"}, "Taxonomy item 3"]'
     >
@@ -63,6 +59,7 @@ export const DescriptionList = Template.bind({});
 DescriptionList.storyName = 'default';
 DescriptionList.args = {
   variant: 'vertical',
+  visibleItems: 2,
 };
 DescriptionList.argTypes = {
   variant: {
@@ -72,5 +69,9 @@ DescriptionList.argTypes = {
       'horizontal',
     ],
     description: 'Choose variant',
+  },
+  visibleItems: {
+    type: { name: 'number' },
+    name: 'visible-items',
   },
 };
