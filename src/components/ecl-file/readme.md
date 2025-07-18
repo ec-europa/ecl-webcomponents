@@ -16,7 +16,7 @@
 | `language`      | `language`       |             | `string` | `undefined` |
 | `meta`          | `meta`           |             | `string` | `undefined` |
 | `styleClass`    | `style-class`    |             | `string` | `undefined` |
-| `theme`         | `theme`          |             | `string` | `'ec'`      |
+| `theme`         | `theme`          |             | `string` | `undefined` |
 | `variant`       | `variant`        |             | `string` | `'default'` |
 
 

@@ -6,7 +6,7 @@
 })
 
 export class EclFileTranslationsItem{
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() variant: string = 'default';
   @Prop() meta: string;
@@ -45,6 +45,10 @@ export class EclFileTranslationsItem{
             </div>
   }
 
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
   render() { 
     return (
       <li
@@ -64,22 +68,24 @@ export class EclFileTranslationsItem{
           {this.getMeta()}
         </div> 
       }
-        <ecl-link
-          path={this.downloadLink}
-          variant="standalone"
-          styleClass={`ecl-file__translation-download sc-ecl-file-${this.theme}`}
-          theme={this.theme}
-          aria-label={this.ariaLabel}
-        >
-          {this.downloadLabel}
-          <ecl-icon 
-            slot="icon-after"
-            size="fluid"
-            icon="download"
+        <div class={`ecl-file__translation-action sc-ecl-file-${this.theme}`}>
+          <ecl-link
+            path={this.downloadLink}
+            variant="standalone"
+            styleClass={`ecl-file__translation-download sc-ecl-file-${this.theme}`}
             theme={this.theme}
+            aria-label={this.ariaLabel}
           >
-          </ecl-icon>    
-        </ecl-link>
+            {this.downloadLabel}
+            <ecl-icon 
+              slot="icon-after"
+              size="fluid"
+              icon="download"
+              theme={this.theme}
+            >
+            </ecl-icon>    
+          </ecl-link>
+        </div>
       </li>
     );
   }

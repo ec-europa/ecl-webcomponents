@@ -8,7 +8,7 @@ exports[`ecl-file renders 1`] = `
     <div class="ecl-file__translation-container sc-ecl-file-ec" data-ecl-file-translation-container>
       <ecl-button data-ecl-file-translation-toggle styleclass="ecl-file__translation-toggle sc-ecl-file-ec" theme="ec" variant="ghost">
         Other languages
-        <ecl-icon icon="corener-arrow" size="fluid" styleclass="ecl-button__icon ecl-button__icon--after" transform="rotate-180"></ecl-icon>
+        <ecl-icon icon="corner-arrow" size="fluid" styleclass="ecl-button__icon ecl-button__icon--after sc-ecl-file-ec" transform="rotate-180"></ecl-icon>
       </ecl-button>
       <ul class="ecl-file__translation-list sc-ecl-file-ec">
         <li class="ecl-file__translation-item sc-ecl-file-ec">
@@ -20,10 +20,12 @@ exports[`ecl-file renders 1`] = `
               (15.7 MB - PDF)
             </div>
           </div>
-          <ecl-link path="/example.html" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
-            Download
-            <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
-          </ecl-link>
+          <div class="ecl-file__translation-action sc-ecl-file-ec">
+            <ecl-link path="/example.html" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
+              Download
+              <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
+            </ecl-link>
+          </div>
         </li>
         <li class="ecl-file__translation-item sc-ecl-file-ec">
           <div class="ecl-file__translation-info sc-ecl-file-ec">
@@ -34,10 +36,12 @@ exports[`ecl-file renders 1`] = `
               (15.98 MB - PDF)
             </div>
           </div>
-          <ecl-link path="/example.html" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
-            Download
-            <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
-          </ecl-link>
+          <div class="ecl-file__translation-action sc-ecl-file-ec">
+            <ecl-link path="/example.html" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
+              Download
+              <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
+            </ecl-link>
+          </div>
         </li>
         <li class="ecl-file__translation-item sc-ecl-file-ec">
           <div class="ecl-file__translation-info sc-ecl-file-ec">
@@ -48,10 +52,12 @@ exports[`ecl-file renders 1`] = `
               (15.98 MB - PDF)
             </div>
           </div>
-          <ecl-link path="/example.html" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
-            Download
-            <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
-          </ecl-link>
+          <div class="ecl-file__translation-action sc-ecl-file-ec">
+            <ecl-link path="/example.html" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
+              Download
+              <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
+            </ecl-link>
+          </div>
         </li>
         <li class="ecl-file__translation-description ecl-file__translation-item sc-ecl-file-ec">
           <p slot="others">
@@ -68,37 +74,25 @@ exports[`ecl-file renders 1`] = `
   <div class="ecl-file ecl-file--default" data-ecl-file>
     <div class="ecl-file__container">
       <ecl-icon icon="file" size="2xl" styleclass="ecl-file__icon sc-ecl-file-ec" theme="ec"></ecl-icon>
-      <div class="ecl-file__taxonomy">
-        <ecl-description-list theme="ec" variant="horizontal">
-          <ecl-description-list-term style-class="sc-ecl-file-ec" theme="ec">
-            Taxonomy list
-          </ecl-description-list-term>
-          <ecl-description-list-definition items="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example.html&quot;},&quot;Taxonomy item 3&quot;]" style-class="sc-ecl-file-ec" theme="ec" type="taxonomy"></ecl-description-list-definition>
-        </ecl-description-list>
-      </div>
       <div class="ecl-file__info">
-        <div class="ecl-file__detail-meta">
-          <span class="ecl-file__detail-meta-item">
-            Resource type
-          </span>
-          <span class="ecl-file__detail-meta-item">
-            Publication date
-          </span>
-        </div>
         <div class="ecl-file__title">
           State of the Union 2018 brochure
         </div>
-        <div class="ecl-file__language">
-          English
-        </div>
-        <div class="ecl-file__meta">
-          (16.2 MB - PDF)
-        </div>
       </div>
-      <ecl-link path="/example.html" variant="standalone">
-        Download
-        <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
-      </ecl-link>
+    </div>
+    <div class="ecl-file__footer">
+      <div class="ecl-file__language">
+        English
+      </div>
+      <div class="ecl-file__meta">
+        (16.2 MB - PDF)
+      </div>
+      <div class="ecl-file__action">
+        <ecl-link path="/example.html" style-class="ecl-file__download" variant="standalone">
+          Download
+          <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
+        </ecl-link>
+      </div>
     </div>
   </div>
 </ecl-file>

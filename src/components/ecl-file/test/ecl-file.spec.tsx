@@ -32,7 +32,6 @@ describe('ecl-file', () => {
             download-link="/example.html"
             meta="(15.7 MB - PDF)"
             file-title="български"
-            theme="ec"
           >
           </ecl-file-translations-item>
           <ecl-file-translations-item
@@ -41,7 +40,6 @@ describe('ecl-file', () => {
             download-link="/example.html"
             meta="(15.98 MB - PDF)"
             file-title="español"
-            theme="ec"
           >
           </ecl-file-translations-item>
           <ecl-file-translations-item
@@ -50,7 +48,6 @@ describe('ecl-file', () => {
             download-link="/example.html"
             meta="(15.98 MB - PDF)"
             file-title="français"
-            theme="ec"
           >
           </ecl-file-translations-item>
           <p slot="others">

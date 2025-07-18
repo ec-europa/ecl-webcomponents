@@ -831,23 +831,20 @@ importers:
   src/components/ecl-file:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.31.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14(patch_hash=b6ad42f8f626741a7c0770d35959f5023291e2cb9b398da24440ce165f0a54a2)(@types/babel__core@7.20.5)(eslint@9.31.0(jiti@1.21.7))
+      '@ecl/file':
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-file':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.14
+        version: 5.0.0-alpha.14
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -3217,9 +3214,6 @@ packages:
 
   '@ecl/vanilla-component-file-upload@3.13.0':
     resolution: {integrity: sha512-yNL829ZGa+Ap2CZTdr//OnssV/qLIMo38CdJouppteVWLou3j91mY0YKF9Vo1LBuP8TMUeZFuMoivw7LVx0M8Q==}
-
-  '@ecl/vanilla-component-file@3.13.0':
-    resolution: {integrity: sha512-EY00730TcDt0Nx6cQIUwYCwsgmDtZm4TfPZ7gLetgE5y37b5PR3Eaw1r/FU8Dj6ddE9KOHFQZX1uwr9qody9mw==}
 
   '@ecl/vanilla-component-form@3.13.0':
     resolution: {integrity: sha512-gRhuPjQ9IECfwikiyBwCpQLxC+Gzz88iB6W6iLPZ3japeXZaxJcm+ZjzN1tM/4wRARnGqvD/1PXQ2z1P0st9kw==}
@@ -14971,12 +14965,6 @@ snapshots:
     dependencies:
       '@ecl/dom-utils': 3.13.0
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
-  '@ecl/vanilla-component-file@3.13.0':
-    dependencies:
-      '@ecl/dom-utils': 3.13.0
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
 
   '@ecl/vanilla-component-form@3.13.0':
     dependencies:
