@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type     | Default |
-| ------------ | ------------- | ----------- | -------- | ------- |
-| `styleClass` | `style-class` |             | `string` | `''`    |
-| `theme`      | `theme`       |             | `string` | `'ec'`  |
+| Property     | Attribute     | Description | Type     | Default     |
+| ------------ | ------------- | ----------- | -------- | ----------- |
+| `styleClass` | `style-class` |             | `string` | `''`        |
+| `theme`      | `theme`       |             | `string` | `undefined` |
 
 
 ## Dependencies

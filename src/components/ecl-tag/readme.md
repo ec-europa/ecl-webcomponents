@@ -25,6 +25,10 @@
 
 ## Dependencies
 
+### Used by
+
+ - [ecl-description-list-definition](../ecl-description-list)
+
 ### Depends on
 
 - [ecl-icon](../ecl-icon)
@@ -33,6 +37,7 @@
 ```mermaid
 graph TD;
   ecl-tag --> ecl-icon
+  ecl-description-list-definition --> ecl-tag
   style ecl-tag fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
