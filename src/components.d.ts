@@ -499,13 +499,29 @@ export namespace Components {
           * @default false
          */
         "downloadAttribute": boolean;
+        /**
+          * @default `${this.elId}-link`
+         */
+        "downloadId": string;
         "downloadLabel": string;
+        /**
+          * @default `${this.elId}-link-label`
+         */
+        "downloadLabelId": string;
         "downloadLink": string;
         /**
           * @default false
          */
         "eclScript": boolean;
+        /**
+          * @default `ecl-file-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "elId": string;
         "fileTitle": string;
+        /**
+          * @default `${this.elId}-title`
+         */
+        "fileTitleId": string;
         "fileTitlePath": string;
         "image": string;
         "imageAlt": string;
@@ -531,12 +547,16 @@ export namespace Components {
         "toggleLabel": string;
     }
     interface EclFileTranslationsItem {
-        "ariaLabel": string;
+        /**
+          * @default false
+         */
+        "downloadAttribute": boolean;
         "downloadLabel": string;
         "downloadLink": string;
         "fileTitle": string;
         "language": string;
         "meta": string;
+        "parentId": string;
         "styleClass": string;
         "theme": string;
         /**
@@ -2895,13 +2915,29 @@ declare namespace LocalJSX {
           * @default false
          */
         "downloadAttribute"?: boolean;
+        /**
+          * @default `${this.elId}-link`
+         */
+        "downloadId"?: string;
         "downloadLabel"?: string;
+        /**
+          * @default `${this.elId}-link-label`
+         */
+        "downloadLabelId"?: string;
         "downloadLink"?: string;
         /**
           * @default false
          */
         "eclScript"?: boolean;
+        /**
+          * @default `ecl-file-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "elId"?: string;
         "fileTitle"?: string;
+        /**
+          * @default `${this.elId}-title`
+         */
+        "fileTitleId"?: string;
         "fileTitlePath"?: string;
         "image"?: string;
         "imageAlt"?: string;
@@ -2927,12 +2963,16 @@ declare namespace LocalJSX {
         "toggleLabel"?: string;
     }
     interface EclFileTranslationsItem {
-        "ariaLabel"?: string;
+        /**
+          * @default false
+         */
+        "downloadAttribute"?: boolean;
         "downloadLabel"?: string;
         "downloadLink"?: string;
         "fileTitle"?: string;
         "language"?: string;
         "meta"?: string;
+        "parentId"?: string;
         "styleClass"?: string;
         "theme"?: string;
         /**

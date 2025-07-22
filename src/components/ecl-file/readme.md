@@ -7,17 +7,18 @@
 
 ## Properties
 
-| Property        | Attribute        | Description | Type     | Default     |
-| --------------- | ---------------- | ----------- | -------- | ----------- |
-| `ariaLabel`     | `aria-label`     |             | `string` | `undefined` |
-| `downloadLabel` | `download-label` |             | `string` | `undefined` |
-| `downloadLink`  | `download-link`  |             | `string` | `undefined` |
-| `fileTitle`     | `file-title`     |             | `string` | `undefined` |
-| `language`      | `language`       |             | `string` | `undefined` |
-| `meta`          | `meta`           |             | `string` | `undefined` |
-| `styleClass`    | `style-class`    |             | `string` | `undefined` |
-| `theme`         | `theme`          |             | `string` | `undefined` |
-| `variant`       | `variant`        |             | `string` | `'default'` |
+| Property            | Attribute            | Description | Type      | Default     |
+| ------------------- | -------------------- | ----------- | --------- | ----------- |
+| `downloadAttribute` | `download-attribute` |             | `boolean` | `false`     |
+| `downloadLabel`     | `download-label`     |             | `string`  | `undefined` |
+| `downloadLink`      | `download-link`      |             | `string`  | `undefined` |
+| `fileTitle`         | `file-title`         |             | `string`  | `undefined` |
+| `language`          | `language`           |             | `string`  | `undefined` |
+| `meta`              | `meta`               |             | `string`  | `undefined` |
+| `parentId`          | `parent-id`          |             | `string`  | `undefined` |
+| `styleClass`        | `style-class`        |             | `string`  | `undefined` |
+| `theme`             | `theme`              |             | `string`  | `undefined` |
+| `variant`           | `variant`            |             | `string`  | `'default'` |
 
 
 ## Dependencies

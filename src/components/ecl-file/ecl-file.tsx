@@ -14,13 +14,17 @@ declare const ECL: any;
 })
 export class EclFile {
   @Element() el: HTMLElement;
+  @Prop() elId: string = `ecl-file-${Math.random().toString(36).slice(2, 10)}`;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() variant: string = 'default';
   @Prop() downloadAttribute: boolean = false;
+  @Prop() downloadId: string = `${this.elId}-link`
   @Prop() downloadLabel: string;
+  @Prop() downloadLabelId: string = `${this.elId}-link-label`;
   @Prop() downloadLink: string;
   @Prop() fileTitle: string;
+  @Prop() fileTitleId: string = `${this.elId}-title`;
   @Prop() fileTitlePath: string;
   @Prop() detailMeta: string;
   @Prop() language: string;
@@ -117,9 +121,9 @@ export class EclFile {
 
   getTitle() {
     if (!this.fileTitlePath) {
-      return <div class="ecl-file__title">{this.fileTitle}</div>
+      return <div class="ecl-file__title" id={this.fileTitleId}>{this.fileTitle}</div>
     } else {
-      return <div class="ecl-file__title"><ecl-link variant="standalone" path={this.fileTitlePath}>{this.fileTitle}</ecl-link></div>
+      return <div class="ecl-file__title" id={this.fileTitleId}><ecl-link variant="standalone" path={this.fileTitlePath}>{this.fileTitle}</ecl-link></div>
     }
   }
 
@@ -134,6 +138,7 @@ export class EclFile {
       variant="standalone"
       aria-label={this.ariaLabel}
       style-class="ecl-file__download"
+      id={this.downloadId}
       {...(this.downloadAttribute ? { download: true } : {})}
     >
       {this.downloadLabel}
@@ -154,6 +159,7 @@ export class EclFile {
     return (
       <div 
         class={this.getClass()}
+        id={this.elId}
         data-ecl-file
       >
         <div class="ecl-file__container">

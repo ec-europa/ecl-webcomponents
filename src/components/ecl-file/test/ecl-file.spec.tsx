@@ -9,7 +9,7 @@ describe('ecl-file', () => {
       components: [EclFile, EclFileTranslations, EclFileTranslationsItem],
       html: `<ecl-file
         variant="default"
-        theme="ec"
+        el-id="file-download-test"
         file-title="State of the Union 2018 brochure"
         download-link="/example.html"
         download-label="Download"
@@ -21,7 +21,6 @@ describe('ecl-file', () => {
         ecl-script
       >
         <ecl-file-translations
-          theme="ec"
           translations-total="3"
           toggle-label="Other languages"
           others
@@ -57,6 +56,25 @@ describe('ecl-file', () => {
       </ecl-file>`,
     });
 
+    expect(page.root).toMatchSnapshot();
+  });
+
+  it('renders correctly with download attribute', async () => {
+    const page = await newSpecPage({
+      components: [EclFile],
+      html: `
+      <ecl-file
+          variant="thumbnail"
+          el-id="file-download-test"
+          file-title="State of the Union 2018 brochure (download)"
+          download-link="/example.html"
+          download-label="Download"
+          download-attribute
+          language="English"
+          meta="(16.2 MB - PDF)"
+          detail-meta='["Resource type", "Publication date"]'
+        ></ecl-file>`,
+    });
     expect(page.root).toMatchSnapshot();
   });
 });
