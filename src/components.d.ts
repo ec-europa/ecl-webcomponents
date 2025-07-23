@@ -86,26 +86,18 @@ export namespace Components {
          */
         "eclScript": boolean;
         /**
-          * @default ''
-         */
-        "ellipsisLabel": string;
-        /**
-          * @default 1
-         */
-        "minItemsLeft": number;
-        /**
           * @default 2
          */
         "minItemsRight": number;
         /**
           * @default ''
          */
-        "navigationText": string;
-        /**
-          * @default ''
-         */
         "styleClass": string;
         "theme": string;
+        /**
+          * @default 'default'
+         */
+        "variant": string;
     }
     interface EclBreadcrumbItem {
         /**
@@ -120,18 +112,14 @@ export namespace Components {
           * @default false
          */
         "ellipsis": boolean;
-        /**
-          * @default ''
-         */
         "path": string;
-        /**
-          * @default ''
-         */
         "styleClass": string;
         "theme": string;
+        "variant": string;
     }
     interface EclButton {
         "ariaControls": string;
+        "ariaLabel": string;
         /**
           * @default false
          */
@@ -2499,26 +2487,18 @@ declare namespace LocalJSX {
          */
         "eclScript"?: boolean;
         /**
-          * @default ''
-         */
-        "ellipsisLabel"?: string;
-        /**
-          * @default 1
-         */
-        "minItemsLeft"?: number;
-        /**
           * @default 2
          */
         "minItemsRight"?: number;
         /**
           * @default ''
          */
-        "navigationText"?: string;
-        /**
-          * @default ''
-         */
         "styleClass"?: string;
         "theme"?: string;
+        /**
+          * @default 'default'
+         */
+        "variant"?: string;
     }
     interface EclBreadcrumbItem {
         /**
@@ -2533,18 +2513,14 @@ declare namespace LocalJSX {
           * @default false
          */
         "ellipsis"?: boolean;
-        /**
-          * @default ''
-         */
         "path"?: string;
-        /**
-          * @default ''
-         */
         "styleClass"?: string;
         "theme"?: string;
+        "variant"?: string;
     }
     interface EclButton {
         "ariaControls"?: string;
+        "ariaLabel"?: string;
         /**
           * @default false
          */

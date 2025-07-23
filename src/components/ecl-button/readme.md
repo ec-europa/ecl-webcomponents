@@ -8,6 +8,7 @@
 | Property         | Attribute         | Description | Type      | Default     |
 | ---------------- | ----------------- | ----------- | --------- | ----------- |
 | `ariaControls`   | `aria-controls`   |             | `string`  | `undefined` |
+| `ariaLabel`      | `aria-label`      |             | `string`  | `undefined` |
 | `disabled`       | `disabled`        |             | `boolean` | `false`     |
 | `hideLabel`      | `hide-label`      |             | `boolean` | `false`     |
 | `indicator`      | `indicator`       |             | `boolean` | `false`     |

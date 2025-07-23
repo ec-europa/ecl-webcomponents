@@ -487,6 +487,9 @@ importers:
 
   src/components/ecl-breadcrumb:
     dependencies:
+      '@ecl/web-components-button':
+        specifier: 0.15.1
+        version: link:../ecl-button
       '@ecl/web-components-icon':
         specifier: 0.15.1
         version: link:../ecl-icon
@@ -500,7 +503,13 @@ importers:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.31.0(jiti@1.21.7))
+      '@ecl/button':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/mixins-typography':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
       '@ecl/theme-ec':
@@ -3096,6 +3105,9 @@ packages:
 
   '@ecl/mixins-typography@5.0.0-alpha.14':
     resolution: {integrity: sha512-Y5+Y7LsXtt87MtdFOCGAnksRhatf7ra0oHfC9hyBeBtNiMOLQQdZl/Yr+Mgb0fKyyUHwcit0au/IR4lTon1HUw==}
+
+  '@ecl/mixins-typography@5.0.0-alpha.15':
+    resolution: {integrity: sha512-wvgFHvQQAIJEwuQSyWXsqBjL4wY/63M+G/Q3kf6mkpBtMyMja+n6gKG5M8yBrBEgjvmuks8Yrb0HNC0WFdR5kA==}
 
   '@ecl/modal@5.0.0-alpha.14':
     resolution: {integrity: sha512-+q7gVhtTzAlMggC5/8hRcIY6xpVUKRWqa+9QKnFJglK7aKaSlhGnIoSBJeTE51toZG75QXFDMXNBMYJ4cMZMMw==}
@@ -15256,6 +15268,10 @@ snapshots:
   '@ecl/mixins-typography@5.0.0-alpha.14':
     dependencies:
       '@ecl/grid': 5.0.0-alpha.14
+
+  '@ecl/mixins-typography@5.0.0-alpha.15':
+    dependencies:
+      '@ecl/grid': 5.0.0-alpha.15
 
   '@ecl/modal@5.0.0-alpha.14':
     dependencies:

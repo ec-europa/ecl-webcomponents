@@ -19,6 +19,7 @@ export class EclButton {
   @Prop() hideLabel: boolean = false;    
   @Prop() ariaControls: string;
   @Prop() itemId: string;
+  @Prop() ariaLabel: string;
   @Prop() indicator: boolean = false;
   @Prop() indicatorValue: string = '';
   @Prop({ reflect: true }) disabled: boolean = false;
@@ -76,6 +77,7 @@ export class EclButton {
         type={this.type}
         disabled={this.disabled}
         {...(this.ariaControls && { 'aria-controls': this.ariaControls })}
+        {...(this.ariaLabel && { 'aria-controls': this.ariaLabel })}
         {...(this.itemId && { id: this.itemId })}
       >
         <span class="ecl-button__container">

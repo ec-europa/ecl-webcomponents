@@ -6,16 +6,17 @@ export default {
 
 const Template = () => 
   `<ecl-breadcrumb
-    min-items-left="1"
-    min-items-right="2"
-    ecl-script="true"
-    navigation-text="Breadcrumb"
-    ellipsis-label="Expand breadcrumb"
+    ecl-script
   >
     <ecl-breadcrumb-item
       path="${randomizedLink('/example.html')}"
     >
       Home
+    </ecl-breadcrumb-item>
+    <ecl-breadcrumb-item
+      ellipsis="true"
+      button-aria-label="Show more breadcrumb items"
+    >
     </ecl-breadcrumb-item>
     <ecl-breadcrumb-item
       path="${randomizedLink('/example.html')}"

@@ -3,16 +3,11 @@
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
+@use '@ecl/button/button' with (
+  $theme: theme.$theme,
+  $button: var.$button
+);
 @use '@ecl/breadcrumb/breadcrumb' with (
   $theme: theme.$theme,
   $breadcrumb: var.$breadcrumb
 );
-
-:host {
-  display: contents;
-}
-
-.ecl-breadcrumb__segment > ::slotted([slot='icon-after']) {
-  display: flex;
-  align-items: center;
-}

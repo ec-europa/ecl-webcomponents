@@ -13,7 +13,7 @@ module.exports = {
   scripts: [
     {
       entry: path.resolve(nodeModules, '@ecl/breadcrumb/breadcrumb.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-breadcrumb.js'),
+      dest: path.resolve(outputFolder, 'scripts/ecl-breadcrumb-vanilla.js'),
       options: {
         banner,
         format: 'iife',
