@@ -6,13 +6,7 @@ describe('ecl-breadcrumb', () => {
   it('renders with ellipsis and current page', async () => {
     const page = await newSpecPage({
       components: [EclBreadcrumb, EclBreadcrumbItem],
-      html: `<ecl-breadcrumb
-        min-items-left="1"
-        min-items-right="2"
-        ecl-script="true"
-        navigation-text="Breadcrumb"
-        ellipsis-label="Expand breadcrumb"
-      >
+      html: `<ecl-breadcrumb>
         <ecl-breadcrumb-item path="/example.html">
           Home
         </ecl-breadcrumb-item>
