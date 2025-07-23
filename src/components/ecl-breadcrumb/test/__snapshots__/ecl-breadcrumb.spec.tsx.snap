@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-breadcrumb renders with ellipsis and current page 1`] = `
-<ecl-breadcrumb ecl-script="true" ellipsis-label="Expand breadcrumb" min-items-left="1" min-items-right="2" navigation-text="Breadcrumb">
+<ecl-breadcrumb>
   <!---->
   <nav class="ecl-breadcrumb ecl-breadcrumb--default" data-ecl-breadcrumb>
     <ol class="ecl-breadcrumb__container">
