@@ -1,5 +1,19 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-component-inpage-navigation/inpage-navigation-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' with (
+  $typography: var.$typography
+);
+@use '@ecl/inpage-navigation/inpage-navigation' with (
+  $theme: theme.$theme,
+  $inpage-navigation: var.$inpage-navigation
+);
+
+.ecl-inpage-navigation__trigger ecl-icon {
+  margin-inline-start: auto;
+}
 
 @media (width >= 996px) {
   .ecl-inpage-navigation__trigger.sc-ecl-inpage-navigation-ec {

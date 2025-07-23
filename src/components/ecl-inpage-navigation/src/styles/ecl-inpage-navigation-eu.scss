@@ -1,5 +1,15 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-inpage-navigation/inpage-navigation-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' with (
+  $typography: var.$typography
+);
+@use '@ecl/inpage-navigation/inpage-navigation' with (
+  $theme: theme.$theme,
+  $inpage-navigation: var.$inpage-navigation
+);
 
 @media (width >= 996px) {
   .ecl-inpage-navigation__trigger.sc-ecl-inpage-navigation-eu {
