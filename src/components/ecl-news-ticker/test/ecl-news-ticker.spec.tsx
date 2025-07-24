@@ -3,11 +3,12 @@ import { EclNewsTicker } from '../ecl-news-ticker';
 import { EclNewsTickerItem } from '../ecl-news-ticker-item';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
 import { EclLink } from '../../ecl-link/ecl-link';
+import { EclButton } from '../../ecl-button/ecl-button';
 
 describe('ecl-news-ticker', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclNewsTicker, EclNewsTickerItem, EclIcon, EclLink],
+      components: [EclNewsTicker, EclNewsTickerItem, EclIcon, EclLink, EclButton],
       html: `<ecl-news-ticker
         items-length="6"
         ecl-script
