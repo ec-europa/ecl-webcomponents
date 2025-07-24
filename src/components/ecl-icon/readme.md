@@ -13,7 +13,7 @@
 | `size`       | `size`        |             | `string` | `'xs'`      |
 | `sprite`     | `sprite`      |             | `string` | `''`        |
 | `styleClass` | `style-class` |             | `string` | `''`        |
-| `theme`      | `theme`       |             | `string` | `'ec'`      |
+| `theme`      | `theme`       |             | `string` | `undefined` |
 | `titleTag`   | `title-tag`   |             | `string` | `''`        |
 | `transform`  | `transform`   |             | `string` | `''`        |
 
@@ -48,6 +48,7 @@
  - [ecl-message](../ecl-message)
  - [ecl-modal](../ecl-modal)
  - [ecl-news-ticker](../ecl-news-ticker)
+ - [ecl-news-ticker-item](../ecl-news-ticker)
  - [ecl-page-banner](../ecl-page-banner)
  - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover](../ecl-popover)
@@ -90,6 +91,7 @@ graph TD;
   ecl-message --> ecl-icon
   ecl-modal --> ecl-icon
   ecl-news-ticker --> ecl-icon
+  ecl-news-ticker-item --> ecl-icon
   ecl-page-banner --> ecl-icon
   ecl-pagination-item --> ecl-icon
   ecl-popover --> ecl-icon

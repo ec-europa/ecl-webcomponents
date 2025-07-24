@@ -323,9 +323,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -804,9 +801,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -900,9 +894,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'low'
@@ -1169,18 +1160,16 @@ export namespace Components {
         "srPlay": string;
         "srPrev": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclNewsTickerItem {
+        "altAttr": string;
+        "icon": string;
+        "image": string;
         "path": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
+        "titleAttr": string;
     }
     interface EclPageBanner {
         "bannerTitle": string;
@@ -1626,9 +1615,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'primary'
@@ -2732,9 +2718,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -3216,9 +3199,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -3315,9 +3295,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'low'
@@ -3584,18 +3561,16 @@ declare namespace LocalJSX {
         "srPlay"?: string;
         "srPrev"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclNewsTickerItem {
+        "altAttr"?: string;
+        "icon"?: string;
+        "image"?: string;
         "path"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
+        "titleAttr"?: string;
     }
     interface EclPageBanner {
         "bannerTitle"?: string;
@@ -4050,9 +4025,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'primary'
