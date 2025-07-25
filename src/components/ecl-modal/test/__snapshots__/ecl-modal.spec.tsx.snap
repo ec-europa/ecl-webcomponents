@@ -23,7 +23,7 @@ exports[`ecl-modal renders 1`] = `
             <!---->
             <button class="ecl-button ecl-button--ghost ecl-modal__close sc-ecl-modal-ec" data-ecl-modal-close="eclModalClose" type="button">
               <span class="ecl-button__container">
-                <span class="ecl-button__label">
+                <span class="ecl-button__label" data-ecl-label>
                   Close
                   <ecl-icon>
                     <svg class="ecl-button__icon ecl-icon ecl-icon--s sc-ecl-button-ec">
@@ -71,7 +71,7 @@ exports[`ecl-modal renders 1`] = `
                 <!---->
                 <button class="ecl-button ecl-button--secondary ecl-modal__button" type="button">
                   <span class="ecl-button__container">
-                    <span class="ecl-button__label">
+                    <span class="ecl-button__label" data-ecl-label>
                       Secondary action
                     </span>
                   </span>
@@ -81,7 +81,7 @@ exports[`ecl-modal renders 1`] = `
                 <!---->
                 <button class="ecl-button ecl-button--primary ecl-modal__button" type="submit">
                   <span class="ecl-button__container">
-                    <span class="ecl-button__label">
+                    <span class="ecl-button__label" data-ecl-label>
                       Primary action
                     </span>
                   </span>

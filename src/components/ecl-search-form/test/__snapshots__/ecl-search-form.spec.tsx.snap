@@ -13,7 +13,7 @@ exports[`ecl-search-form renders 1`] = `
       <!---->
       <button class="ecl-button ecl-button--search ecl-search-form__button sc-ecl-search-form-ec" type="submit">
         <span class="ecl-button__container">
-          <span class="ecl-button__label">
+          <span class="ecl-button__label" data-ecl-label>
             Search
           </span>
           <ecl-icon slot="icon-after" style-class="sc-ecl-search-form-ec">
