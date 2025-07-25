@@ -323,9 +323,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -804,9 +801,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -900,9 +894,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'low'
@@ -1075,27 +1066,6 @@ export namespace Components {
         "theme": string;
         "triggerAriaLabel": string;
     }
-    interface EclMessage {
-        "closeLabel": string;
-        /**
-          * @default false
-         */
-        "eclScript": boolean;
-        "messageTitle": string;
-        "styleClass": string;
-        /**
-          * @default 'ec'
-         */
-        "theme": string;
-        /**
-          * @default 'info'
-         */
-        "variant": string;
-        /**
-          * @default true
-         */
-        "withClose": boolean;
-    }
     interface EclModal {
         "closeLabel": string;
         /**
@@ -1181,6 +1151,24 @@ export namespace Components {
           * @default 'ec'
          */
         "theme": string;
+    }
+    interface EclNotification {
+        "closeLabel": string;
+        /**
+          * @default false
+         */
+        "eclScript": boolean;
+        "notificationTitle": string;
+        "styleClass": string;
+        "theme": string;
+        /**
+          * @default 'info'
+         */
+        "variant": string;
+        /**
+          * @default true
+         */
+        "withClose": boolean;
     }
     interface EclPageBanner {
         "bannerTitle": string;
@@ -1626,9 +1614,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'primary'
@@ -2090,12 +2075,6 @@ declare global {
         prototype: HTMLEclMenuItemElement;
         new (): HTMLEclMenuItemElement;
     };
-    interface HTMLEclMessageElement extends Components.EclMessage, HTMLStencilElement {
-    }
-    var HTMLEclMessageElement: {
-        prototype: HTMLEclMessageElement;
-        new (): HTMLEclMessageElement;
-    };
     interface HTMLEclModalElement extends Components.EclModal, HTMLStencilElement {
     }
     var HTMLEclModalElement: {
@@ -2125,6 +2104,12 @@ declare global {
     var HTMLEclNewsTickerItemElement: {
         prototype: HTMLEclNewsTickerItemElement;
         new (): HTMLEclNewsTickerItemElement;
+    };
+    interface HTMLEclNotificationElement extends Components.EclNotification, HTMLStencilElement {
+    }
+    var HTMLEclNotificationElement: {
+        prototype: HTMLEclNotificationElement;
+        new (): HTMLEclNotificationElement;
     };
     interface HTMLEclPageBannerElement extends Components.EclPageBanner, HTMLStencilElement {
     }
@@ -2381,12 +2366,12 @@ declare global {
         "ecl-media-container": HTMLEclMediaContainerElement;
         "ecl-menu": HTMLEclMenuElement;
         "ecl-menu-item": HTMLEclMenuItemElement;
-        "ecl-message": HTMLEclMessageElement;
         "ecl-modal": HTMLEclModalElement;
         "ecl-navigation-list": HTMLEclNavigationListElement;
         "ecl-navigation-list-item": HTMLEclNavigationListItemElement;
         "ecl-news-ticker": HTMLEclNewsTickerElement;
         "ecl-news-ticker-item": HTMLEclNewsTickerItemElement;
+        "ecl-notification": HTMLEclNotificationElement;
         "ecl-page-banner": HTMLEclPageBannerElement;
         "ecl-page-header": HTMLEclPageHeaderElement;
         "ecl-pagination": HTMLEclPaginationElement;
@@ -2732,9 +2717,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -3216,9 +3198,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -3315,9 +3294,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'low'
@@ -3490,27 +3466,6 @@ declare namespace LocalJSX {
         "theme"?: string;
         "triggerAriaLabel"?: string;
     }
-    interface EclMessage {
-        "closeLabel"?: string;
-        /**
-          * @default false
-         */
-        "eclScript"?: boolean;
-        "messageTitle"?: string;
-        "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
-        "theme"?: string;
-        /**
-          * @default 'info'
-         */
-        "variant"?: string;
-        /**
-          * @default true
-         */
-        "withClose"?: boolean;
-    }
     interface EclModal {
         "closeLabel"?: string;
         /**
@@ -3596,6 +3551,24 @@ declare namespace LocalJSX {
           * @default 'ec'
          */
         "theme"?: string;
+    }
+    interface EclNotification {
+        "closeLabel"?: string;
+        /**
+          * @default false
+         */
+        "eclScript"?: boolean;
+        "notificationTitle"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        /**
+          * @default 'info'
+         */
+        "variant"?: string;
+        /**
+          * @default true
+         */
+        "withClose"?: boolean;
     }
     interface EclPageBanner {
         "bannerTitle"?: string;
@@ -4050,9 +4023,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'primary'
@@ -4213,12 +4183,12 @@ declare namespace LocalJSX {
         "ecl-media-container": EclMediaContainer;
         "ecl-menu": EclMenu;
         "ecl-menu-item": EclMenuItem;
-        "ecl-message": EclMessage;
         "ecl-modal": EclModal;
         "ecl-navigation-list": EclNavigationList;
         "ecl-navigation-list-item": EclNavigationListItem;
         "ecl-news-ticker": EclNewsTicker;
         "ecl-news-ticker-item": EclNewsTickerItem;
+        "ecl-notification": EclNotification;
         "ecl-page-banner": EclPageBanner;
         "ecl-page-header": EclPageHeader;
         "ecl-pagination": EclPagination;
@@ -4296,12 +4266,12 @@ declare module "@stencil/core" {
             "ecl-media-container": LocalJSX.EclMediaContainer & JSXBase.HTMLAttributes<HTMLEclMediaContainerElement>;
             "ecl-menu": LocalJSX.EclMenu & JSXBase.HTMLAttributes<HTMLEclMenuElement>;
             "ecl-menu-item": LocalJSX.EclMenuItem & JSXBase.HTMLAttributes<HTMLEclMenuItemElement>;
-            "ecl-message": LocalJSX.EclMessage & JSXBase.HTMLAttributes<HTMLEclMessageElement>;
             "ecl-modal": LocalJSX.EclModal & JSXBase.HTMLAttributes<HTMLEclModalElement>;
             "ecl-navigation-list": LocalJSX.EclNavigationList & JSXBase.HTMLAttributes<HTMLEclNavigationListElement>;
             "ecl-navigation-list-item": LocalJSX.EclNavigationListItem & JSXBase.HTMLAttributes<HTMLEclNavigationListItemElement>;
             "ecl-news-ticker": LocalJSX.EclNewsTicker & JSXBase.HTMLAttributes<HTMLEclNewsTickerElement>;
             "ecl-news-ticker-item": LocalJSX.EclNewsTickerItem & JSXBase.HTMLAttributes<HTMLEclNewsTickerItemElement>;
+            "ecl-notification": LocalJSX.EclNotification & JSXBase.HTMLAttributes<HTMLEclNotificationElement>;
             "ecl-page-banner": LocalJSX.EclPageBanner & JSXBase.HTMLAttributes<HTMLEclPageBannerElement>;
             "ecl-page-header": LocalJSX.EclPageHeader & JSXBase.HTMLAttributes<HTMLEclPageHeaderElement>;
             "ecl-pagination": LocalJSX.EclPagination & JSXBase.HTMLAttributes<HTMLEclPaginationElement>;

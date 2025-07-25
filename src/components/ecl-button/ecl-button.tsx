@@ -23,8 +23,6 @@ export class EclButton {
   @Prop() indicatorValue: string = '';
   @Prop({ reflect: true }) disabled: boolean = false;
   @State() hasLabelContent: boolean = false;
-  @State() hasIconBefore: boolean = false;
-  @State() hasIconAfter: boolean = false;
 
   componentWillLoad() {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
@@ -52,12 +50,6 @@ export class EclButton {
         this.el.querySelector('.ecl-icon').classList.add(`ecl-button__${slot.substring(0, 5) + '-' + slot.substring(5)}`);
       }
     }
-
-    const iconBefore = this.el.querySelector('[slot="icon-before"]');
-    const iconAfter = this.el.querySelector('[slot="icon-after"]');
-
-    this.hasIconBefore = !!iconBefore;
-    this.hasIconAfter = !!iconAfter;
   }
 
   getClass(): string {
@@ -67,6 +59,15 @@ export class EclButton {
       this.hideLabel ? 'ecl-button--icon-only' : '',
       this.styleClass,
     ].join(' ').trim();
+  }
+
+
+  private get hasIconBefore(): boolean {
+    return !!this.el.querySelector('[slot="icon-before"]');
+  }
+
+  private get hasIconAfter(): boolean {
+    return !!this.el.querySelector('[slot="icon-after"]');
   }
 
   render() {
@@ -89,15 +90,9 @@ export class EclButton {
             </span>
           )}
 
-          {!this.hideLabel ? (
-            <span class="ecl-button__label">
-              <slot></slot>
-            </span>
-          ) : (
-            <span class="ecl-u-sr-only" data-ecl-label>
-              <slot></slot>
-            </span>
-          )}
+          <span class="ecl-button__label" data-ecl-label>
+            <slot></slot>
+          </span>
 
           {this.hasIconAfter && !this.indicator && (
             <slot name="icon-after"></slot>

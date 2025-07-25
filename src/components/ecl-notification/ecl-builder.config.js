@@ -12,10 +12,11 @@ const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()
 module.exports = {
   scripts: [
     {
-      entry: path.resolve(nodeModules, '@ecl/vanilla-component-message/message.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-message-vanilla.js'),
+      entry: path.resolve(nodeModules, '@ecl/notification/notification.js'),
+      dest: path.resolve(outputFolder, 'scripts/ecl-notification-vanilla.js'),
       options: {
         banner,
+        format: 'iife',
         moduleName: 'ECL',
         includePaths,
         sourceMap: false,
@@ -24,8 +25,8 @@ module.exports = {
   ],
   styles: [
     {
-      entry: path.resolve(__dirname, 'src/styles/ecl-message-ec.scss'),
-      dest: path.resolve(outputFolder, 'styles/ecl-message-ec.css'),
+      entry: path.resolve(__dirname, 'src/styles/ecl-notification-ec.scss'),
+      dest: path.resolve(outputFolder, 'styles/ecl-notification-ec.css'),
       options: {
         banner,
         includePaths,
@@ -34,8 +35,8 @@ module.exports = {
       },
     },
     {
-      entry: path.resolve(__dirname, 'src/styles/ecl-message-eu.scss'),
-      dest: path.resolve(outputFolder, 'styles/ecl-message-eu.css'),
+      entry: path.resolve(__dirname, 'src/styles/ecl-notification-eu.scss'),
+      dest: path.resolve(outputFolder, 'styles/ecl-notification-eu.css'),
       options: {
         banner,
         includePaths,
