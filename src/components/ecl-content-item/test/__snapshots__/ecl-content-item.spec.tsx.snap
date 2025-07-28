@@ -70,48 +70,6 @@ exports[`ecl-content-item renders 1`] = `
             </span>
           </li>
         </ul>
-        <div class="ecl-content-block__link-container">
-          <ul class="ecl-content-block__link-list">
-            <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-                Primary Link 1
-                <slot-fb name="icon-after"></slot-fb>
-              </a>
-            </li>
-            <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-                Primary Link 2
-                <slot-fb name="icon-after"></slot-fb>
-              </a>
-            </li>
-            <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-                Primary Link 3
-                <slot-fb name="icon-after"></slot-fb>
-              </a>
-            </li>
-            <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-                Primary Link 4
-                <slot-fb name="icon-after"></slot-fb>
-              </a>
-            </li>
-          </ul>
-          <ul class="ecl-content-block__link-list">
-            <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-                Secondary Link 1
-                <slot-fb name="icon-after"></slot-fb>
-              </a>
-            </li>
-            <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
-              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-                Secondary Link 2
-                <slot-fb name="icon-after"></slot-fb>
-              </a>
-            </li>
-          </ul>
-        </div>
         <div class="ecl-content-block__list-container">
           <ecl-description-list slot="lists" theme="ec">
             <!---->
@@ -220,6 +178,48 @@ exports[`ecl-content-item renders 1`] = `
               </ecl-description-list-definition>
             </dl>
           </ecl-description-list>
+        </div>
+        <div class="ecl-content-block__link-container">
+          <ul class="ecl-content-block__link-list">
+            <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                Primary Link 1
+                <slot-fb name="icon-after"></slot-fb>
+              </a>
+            </li>
+            <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                Primary Link 2
+                <slot-fb name="icon-after"></slot-fb>
+              </a>
+            </li>
+            <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                Primary Link 3
+                <slot-fb name="icon-after"></slot-fb>
+              </a>
+            </li>
+            <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                Primary Link 4
+                <slot-fb name="icon-after"></slot-fb>
+              </a>
+            </li>
+          </ul>
+          <ul class="ecl-content-block__link-list">
+            <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                Secondary Link 1
+                <slot-fb name="icon-after"></slot-fb>
+              </a>
+            </li>
+            <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+              <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
+                Secondary Link 2
+                <slot-fb name="icon-after"></slot-fb>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </ecl-content-block>
