@@ -164,7 +164,8 @@
       "@ecl/vanilla-component-select@3.13.0": "patches/@ecl__vanilla-component-select@3.13.0.patch",
       "@stencil/react-output-target@0.5.3": "patches/@stencil__react-output-target@0.5.3.patch",
       "@ecl/builder@5.0.0-alpha.14": "patches/@ecl__builder@5.0.0-alpha.14.patch",
-      "@ecl/content-block@5.0.0-alpha.14": "patches/@ecl__content-block@5.0.0-alpha.14.patch"
+      "@ecl/content-block@5.0.0-alpha.14": "patches/@ecl__content-block@5.0.0-alpha.14.patch",
+      "@ecl/content-block@5.0.0-alpha.15": "patches/@ecl__content-block@5.0.0-alpha.15.patch"
     }
   }
 }

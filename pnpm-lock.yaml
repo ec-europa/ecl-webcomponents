@@ -24,6 +24,9 @@ patchedDependencies:
   '@ecl/content-block@5.0.0-alpha.14':
     hash: 86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752
     path: patches/@ecl__content-block@5.0.0-alpha.14.patch
+  '@ecl/content-block@5.0.0-alpha.15':
+    hash: 86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752
+    path: patches/@ecl__content-block@5.0.0-alpha.15.patch
   '@ecl/theme-dev@3.13.0':
     hash: 241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65
     path: patches/@ecl__theme-dev@3.13.0.patch
@@ -619,7 +622,7 @@ importers:
         version: 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.31.0(jiti@1.21.7))
       '@ecl/content-block':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)
       '@ecl/description-list':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -15056,7 +15059,7 @@ snapshots:
       '@ecl/label': 5.0.0-alpha.14
       '@ecl/link': 5.0.0-alpha.14
 
-  '@ecl/content-block@5.0.0-alpha.15':
+  '@ecl/content-block@5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)':
     dependencies:
       '@ecl/description-list': 5.0.0-alpha.15
       '@ecl/dom-utils': 5.0.0-alpha.15
