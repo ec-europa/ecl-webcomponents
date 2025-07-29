@@ -20,6 +20,21 @@ describe('ecl-media-container', () => {
     expect(page.root).toMatchSnapshot();
   });
 
+  it('renders correctly in full width', async () => {
+    const page = await newSpecPage({
+      components: [EclMediaContainer, EclVideo, EclButton, EclIcon, EclPicture],
+      html: `<ecl-media-container
+              image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+              image-alt="Alternative text"
+              full-width
+            >
+              caption for the media container
+            </ecl-media-container>`,
+    });
+
+    expect(page.root).toMatchSnapshot();
+  });
+
   it('renders correctly with an html5 video', async () => {
     const page = await newSpecPage({
       components: [EclMediaContainer, EclVideo, EclButton, EclIcon, EclPicture],

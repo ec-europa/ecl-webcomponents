@@ -988,7 +988,6 @@ export namespace Components {
           * @default false
          */
         "autoplay": boolean;
-        "description": string;
         /**
           * @default false
          */
@@ -3435,7 +3434,6 @@ declare namespace LocalJSX {
           * @default false
          */
         "autoplay"?: boolean;
-        "description"?: string;
         /**
           * @default false
          */

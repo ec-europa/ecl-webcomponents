@@ -1193,6 +1193,9 @@ importers:
       '@ecl/web-components-button':
         specifier: 0.15.1
         version: link:../ecl-button
+      '@ecl/web-components-expandable':
+        specifier: 0.15.1
+        version: link:../ecl-expandable
       '@ecl/web-components-icon':
         specifier: 0.15.1
         version: link:../ecl-icon

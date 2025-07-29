@@ -1,5 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ecl-media-container renders correctly in full width 1`] = `
+<ecl-media-container full-width="" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" image-alt="Alternative text">
+  <!---->
+  caption for the media container
+  <div class="ecl-media-container">
+    <figure class="ecl-media-container--full-width ecl-media-container__figure">
+      <ecl-picture>
+        <!---->
+        <picture class="ecl-media-container__picture ecl-picture sc-ecl-media-container-ec">
+          <img alt="Alternative text" class="ecl-media-container__media sc-ecl-media-container-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
+        </picture>
+      </ecl-picture>
+    </figure>
+  </div>
+</ecl-media-container>
+`;
+
 exports[`ecl-media-container renders correctly with an embedded video 1`] = `
 <ecl-media-container ecl-script="" ratio="16-9">
   <!---->

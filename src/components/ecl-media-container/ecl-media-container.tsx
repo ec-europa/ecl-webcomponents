@@ -32,10 +32,12 @@ export class EclMediaContainer {
   @Prop() embeddedMedia: boolean = false;
 
   getClass(): string {
-    return [
+    const styleClass = [
       `ecl-media-container`,
       this.styleClass
-    ].join(' ');
+    ];
+
+    return styleClass.join(' ');
   }
 
   componentWillLoad() {
@@ -99,7 +101,7 @@ export class EclMediaContainer {
     return (
       <div class={this.getClass()}>
         <figure
-          class="ecl-media-container__figure"
+          class={`ecl-media-container__figure${this.fullWidth ? ' ecl-media-container--full-width' : ''}`}
         >
         { this.image &&
           <ecl-picture

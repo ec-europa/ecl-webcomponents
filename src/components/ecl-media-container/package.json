@@ -27,7 +27,8 @@
     "@ecl/web-components-video": "0.15.1",
     "@ecl/web-components-button": "0.15.1",
     "@ecl/web-components-icon": "0.15.1",
-    "@ecl/web-components-picture": "0.15.1"
+    "@ecl/web-components-picture": "0.15.1",
+    "@ecl/web-components-expandable": "0.15.1"
   },
   "repository": {
     "type": "git",
