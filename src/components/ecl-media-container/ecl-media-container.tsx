@@ -47,6 +47,12 @@ export class EclMediaContainer {
   componentDidLoad() {
     if (this.eclScript && (this.embeddedMedia || (this.sources || this.tracks))) {
       this.el.firstElementChild.setAttribute('data-ecl-media-container', "");
+      if (this.sources || this.tracks) {
+        const video = this.el.querySelector('video');
+        if (video) {
+          video.setAttribute('data-ecl-media-container-video', '');
+        }
+      }
       const src = getAssetPath('./build/scripts/ecl-media-container-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
         document.querySelector(`script[src="${src}"]`).remove();
@@ -122,7 +128,6 @@ export class EclMediaContainer {
               loop={this.autoplay}
               muted={this.autoplay}
               controls={!this.autoplay}
-              data-ecl-media-container-video
               sr-video-player={this.srVideoPlayer}
               sr-video-audio={this.srVideoAudio}
             >
