@@ -48,7 +48,7 @@ const getArgTypes = (storyName = '') => {
     },
   };
 
-  if (storyName === 'video' || storyName === 'iframe') {
+  if (storyName === 'iframe') {
     argTypes['ratio'] = {
       control: { 
         type: 'select',
@@ -69,7 +69,9 @@ const getArgTypes = (storyName = '') => {
         description: "Ratio of the media"
       },
     };
+  }
 
+  if (storyName === 'video' || storyName === 'iframe') {
     argTypes['eclScript'] = {
       name: 'ecl-script',
       control: { type: 'boolean' },
