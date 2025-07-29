@@ -1,33 +1,20 @@
 {
-  "name": "@ecl/web-components-media-container",
+  "name": "@ecl/web-components-video",
   "author": "European Commission",
   "license": "EUPL-1.2",
   "version": "0.15.1",
-  "description": "ECL Media container",
-  "main": "ecl-media-container.tsx",
+  "description": "ECL Video",
+  "main": "ecl-video.tsx",
   "private": true,
   "scripts": {
     "build:styles": "cross-env ecl-builder styles",
-    "build:scripts": "cross-env ecl-builder scripts",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/theme-ec": "5.0.0-alpha.15",
-    "@ecl/theme-eu": "5.0.0-alpha.15",
-    "@ecl/builder": "5.0.0-alpha.15",
-    "@ecl/utility-media": "5.0.0-alpha.15",
-    "@ecl/media-container": "5.0.0-alpha.15",
-    "@ecl/utility-screen-reader": "5.0.0-alpha.15",
-    "@ecl/grid": "5.0.0-alpha.15",
+    "@ecl/video": "5.0.0-alpha.15",
     "cross-env": "7.0.3"
-  },
-  "dependencies": {
-    "@ecl/web-components-video": "0.15.1",
-    "@ecl/web-components-button": "0.15.1",
-    "@ecl/web-components-icon": "0.15.1",
-    "@ecl/web-components-picture": "0.15.1"
   },
   "repository": {
     "type": "git",

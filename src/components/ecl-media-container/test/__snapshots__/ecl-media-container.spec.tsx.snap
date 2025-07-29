@@ -1,15 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-media-container renders correctly with an embedded video 1`] = `
-<ecl-media-container data-ecl-media-container ecl-script="" ratio="16-9" theme="ec">
+<ecl-media-container ecl-script="" ratio="16-9">
   <!---->
   caption for the media container
   <div class="ecl-media-container">
     <figure class="ecl-media-container__figure">
-      <div class="ecl-media-container__media" slot="embedded-media">
-        <div class="ecl-media-container__media ecl-media-container__media--ratio-16-9 sc-ecl-media-container-ec">
-          <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="197" src="https://www.youtube.com/embed/fgi-GSCB6ho" title="New digital strategy" width="350"></iframe>
-        </div>
+      <div class="ecl-media-container__media ecl-media-container__media--ratio-16-9 sc-ecl-media-container-ec">
+        <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="sc-ecl-media-container-ec" frameborder="0" height="197" slot="embedded-media" src="https://www.youtube.com/embed/fgi-GSCB6ho" title="New digital strategy" width="350"></iframe>
       </div>
     </figure>
   </div>
@@ -17,28 +15,65 @@ exports[`ecl-media-container renders correctly with an embedded video 1`] = `
 `;
 
 exports[`ecl-media-container renders correctly with an html5 video 1`] = `
-<ecl-media-container ratio="16-9" sources="[{&quot;src&quot;: &quot;https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4&quot;, &quot;type&quot;: &quot;video/mp4&quot;}, {&quot;src&quot;: &quot;https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm&quot;, &quot;type&quot;: &quot;video/webm&quot;}]" theme="ec" tracks="[{&quot;src&quot;: &quot;/captions/bunny-en.vtt&quot;, &quot;kind&quot;: &quot;captions&quot;, &quot;src_lang&quot;: &quot;en&quot;, &quot;label&quot;: &quot;English&quot;}, {&quot;src&quot;: &quot;/captions/bunny-fr.vtt&quot;, &quot;kind&quot;: &quot;captions&quot;, &quot;src_lang&quot;: &quot;fr&quot;, &quot;label&quot;: &quot;français&quot;}]">
+<ecl-media-container autoplay="" ecl-script="" ratio="16-9" sources="[{&quot;src&quot;: &quot;https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4&quot;, &quot;type&quot;: &quot;video/mp4&quot;}, {&quot;src&quot;: &quot;https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm&quot;, &quot;type&quot;: &quot;video/webm&quot;}]" tracks="[{&quot;src&quot;: &quot;/captions/bunny-en.vtt&quot;, &quot;kind&quot;: &quot;captions&quot;, &quot;src_lang&quot;: &quot;en&quot;, &quot;label&quot;: &quot;English&quot;}, {&quot;src&quot;: &quot;/captions/bunny-fr.vtt&quot;, &quot;kind&quot;: &quot;captions&quot;, &quot;src_lang&quot;: &quot;fr&quot;, &quot;label&quot;: &quot;français&quot;}]">
   <!---->
   caption for the media container
-  <div class="ecl-media-container">
+  <div class="ecl-media-container" data-ecl-media-container>
     <figure class="ecl-media-container__figure">
-      <video class="ecl-media-container__media" controls="">
-        <source src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4" type="video/mp4">
-        <source src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm" type="video/webm">
-        <track kind="captions" label="English" src="/captions/bunny-en.vtt" srclang="en">
-        <track kind="captions" label="français" src="/captions/bunny-fr.vtt" srclang="fr">
-      </video>
+      <div class="ecl-media-container__video-wrapper">
+        <ecl-video data-ecl-media-container-video style-class="ecl-media-container__media sc-ecl-media-container-ec">
+          <!---->
+          <video autoplay="" class="ecl-media-container__media ecl-video sc-ecl-media-container-ec" loop="" muted="" playsinline="">
+            <source src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4" type="video/mp4">
+            <source src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm" type="video/webm">
+            <track kind="captions" label="English" src="/captions/bunny-en.vtt" srclang="en">
+            <track kind="captions" label="français" src="/captions/bunny-fr.vtt" srclang="fr">
+          </video>
+        </ecl-video>
+        <ecl-button container-extra-classes="sc-ecl-media-container-ec" data-ecl-media-container-play hide-label="" style-class="ecl-media-container__play sc-ecl-media-container-ec">
+          <!---->
+          <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-media-container__play sc-ecl-media-container-ec" data-ecl-media-container-play="eclMediaContainerPlay" type="button">
+            <span class="ecl-button__container sc-ecl-media-container-ec">
+              <span class="ecl-u-sr-only" data-ecl-label></span>
+              <ecl-icon slot="icon-after" style-class="sc-ecl-media-container-ec">
+                <svg class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-button-ec sc-ecl-media-container-ec">
+                  <use xlink:href="/build/images/ec/icons.svg#play-outline"></use>
+                </svg>
+              </ecl-icon>
+            </span>
+          </button>
+        </ecl-button>
+        <ecl-button container-extra-classes="sc-ecl-media-container-ec" data-ecl-media-container-pause hide-label="" style-class="ecl-media-container__pause sc-ecl-media-container-ec">
+          <!---->
+          <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-media-container__pause sc-ecl-media-container-ec" data-ecl-media-container-pause="eclMediaContainerPause" type="button">
+            <span class="ecl-button__container sc-ecl-media-container-ec">
+              <span class="ecl-u-sr-only" data-ecl-label></span>
+              <ecl-icon slot="icon-after" style-class="sc-ecl-media-container-ec">
+                <svg class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-button-ec sc-ecl-media-container-ec">
+                  <use xlink:href="/build/images/ec/icons.svg#pause-outline"></use>
+                </svg>
+              </ecl-icon>
+            </span>
+          </button>
+        </ecl-button>
+      </div>
     </figure>
   </div>
 </ecl-media-container>
 `;
 
 exports[`ecl-media-container renders correctly with an image 1`] = `
-<ecl-media-container description="caption for the media container" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" ratio="16-9" theme="ec">
+<ecl-media-container image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" image-alt="Alternative text">
   <!---->
+  caption for the media container
   <div class="ecl-media-container">
     <figure class="ecl-media-container__figure">
-      <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imgclass="ecl-media-container__media sc-ecl-media-container-ec" styleclass="ecl-media-container__picture sc-ecl-media-container-ec"></ecl-picture>
+      <ecl-picture>
+        <!---->
+        <picture class="ecl-media-container__picture ecl-picture sc-ecl-media-container-ec">
+          <img alt="Alternative text" class="ecl-media-container__media sc-ecl-media-container-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
+        </picture>
+      </ecl-picture>
     </figure>
   </div>
 </ecl-media-container>

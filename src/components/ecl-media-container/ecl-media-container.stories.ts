@@ -7,29 +7,18 @@ const getArgs = () => {
   };
 };
 
-const getArgTypes = () => {
-  return {
-    ratio: {
-      control: { name: 'select' },
-	    options: {
-	      auto: '',
-	      '16/9': '16-9',
-	      '4/3': '4-3',
-	      '3/2': '3-2',
-	      '1/1': '1-1',
-	    },
-	    table: {
-	      description: "Ratio of the media"
-	    },
-	  },
+const getArgTypes = (storyName = '') => {
+  const argTypes = {
+    color_mode: { table: { disable: true } },
     fullWidth: {
+      name: 'full-width',
     	control: { name: 'boolean'},
     	table: {
     		description: 'Makes the component render in full width',
     	},
     },
     hasCaption: {
-      name: 'with caption',
+      name: 'has-caption',
       control: { name: 'boolean'},
       table: {
         description: 'Renders the caption',
@@ -42,6 +31,30 @@ const getArgTypes = () => {
     	},
     },
   };
+
+  if (storyName === 'video') {
+    argTypes['ratio'] = {
+      control: { 
+        type: 'select',
+        labels: {
+        auto: '',
+        '16-9': '16/9', 
+        '4-3': '4/3',
+        '3-2': '3/2',
+        '1-1': '1/1',
+        },
+      },
+      options: [
+        '16-9',
+        '4-3',
+        '3-2',
+        '1-1'
+      ],
+      table: {
+        description: "Ratio of the media"
+      },
+    };
+  };
 };
 
 export default {
@@ -50,8 +63,6 @@ export default {
 
 const TemplateImg = (args) => 
   `<ecl-media-container
-    ratio="${args.ratio}"
-    theme="${args.theme}"
     has-caption=${args.hasCaption}
   	image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
     image-alt="Alternative text for the image"
@@ -66,9 +77,11 @@ MediaContainerImage.argTypes = getArgTypes();
 
 const TemplateVideo = (args) => 
   `<ecl-media-container
-    ratio="${args.ratio}"
-    theme="${args.theme}"
     has-caption=${args.hasCaption}
+    autoplay
+    ecl-script
+    sr-play="play"
+    sr-pause="pause"
   	sources='[{"src": "https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4", "type": "video/mp4"}, {"src": "https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm", "type": "video/webm"}]'
   	tracks='[{"src": "/captions/bunny-en.vtt", "kind": "captions", "src_lang": "en", "label": "English"}, {"src": "/captions/bunny-fr.vtt", "kind": "captions", "src_lang": "fr", "label": "français"}]'
   >
@@ -85,27 +98,24 @@ const TemplateIframe = (args) =>
     ratio="${args.ratio}"
     theme="${args.theme}"
     has-caption=${args.hasCaption}
-    data-ecl-media-container
+    ecl-script
   >
     ${args.hasCaption ? args.description : ''}
-  	<div class="ecl-media-container__media" slot="embedded-media"><iframe title="New digital strategy" width="350" height="197" src="https://www.youtube.com/embed/fgi-GSCB6ho" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
+  	<iframe slot="embedded-media" title="New digital strategy" src="https://www.youtube.com/embed/fgi-GSCB6ho" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
   </ecl-media-container>`;
 
 export const MediaContainerIframe = TemplateIframe.bind({});
 MediaContainerIframe.storyName = 'embedded media';
 MediaContainerIframe.args = getArgs();
-MediaContainerIframe.argTypes = getArgTypes();
+MediaContainerIframe.argTypes = getArgTypes('video');
 
 const TemplateInfographic = (args) =>
   `<ecl-media-container
-    ratio="${args.ratio}"
-    theme="${args.theme}"
     has-caption=${args.hasCaption}
     image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
   >
     ${args.hasCaption ? 'Infographic title and copyright' : ''}
     <ecl-expandable
-      theme="${args.theme}"
       ecl-script
       slot="expandable"
       label-collapsed="collapsed"
