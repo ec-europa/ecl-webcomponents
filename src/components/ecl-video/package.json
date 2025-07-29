@@ -13,6 +13,7 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
+    "@ecl/builder": "5.0.0-alpha.15",
     "@ecl/video": "5.0.0-alpha.15",
     "cross-env": "7.0.3"
   },

@@ -1842,6 +1842,9 @@ importers:
 
   src/components/ecl-video:
     devDependencies:
+      '@ecl/builder':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
       '@ecl/video':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
