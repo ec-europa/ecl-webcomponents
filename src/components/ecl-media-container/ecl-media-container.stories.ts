@@ -164,9 +164,10 @@ const TemplateIframe = (args) =>
       has-caption=${args.hasCaption}
       ecl-script=${args.eclScript}
       full-width=${args.fullWidth}
+      embedded-media
     >
       ${args.hasCaption ? args.caption : ''}
-    	<iframe slot="embedded-media" title="New digital strategy" src="https://www.youtube.com/embed/fgi-GSCB6ho" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+    	<iframe slot="embedded-media" width="350" height="197" title="New digital strategy" src="https://www.youtube.com/embed/fgi-GSCB6ho" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       ${args.hasExpandable ?
       `<ecl-expandable
         ecl-script
