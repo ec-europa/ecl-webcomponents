@@ -10,23 +10,10 @@ const includePaths = [nodeModules];
 const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()}`;
 
 module.exports = {
-  scripts: [
-    {
-      entry: path.resolve(nodeModules, '@ecl/banner/banner.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-banner-vanilla.js'),
-      options: {
-        banner,
-        format: 'iife',
-        moduleName: 'ECL',
-        includePaths,
-        sourceMap: false,
-      },
-    },
-  ],
   styles: [
     {
-      entry: path.resolve(__dirname, 'src/styles/ecl-banner-ec.scss'),
-      dest: path.resolve(outputFolder, 'styles/ecl-banner-ec.css'),
+      entry: path.resolve(__dirname, 'src/styles/ecl-video-ec.scss'),
+      dest: path.resolve(outputFolder, 'styles/ecl-video-ec.css'),
       options: {
         banner,
         includePaths,
@@ -35,8 +22,8 @@ module.exports = {
       },
     },
     {
-      entry: path.resolve(__dirname, 'src/styles/ecl-banner-eu.scss'),
-      dest: path.resolve(outputFolder, 'styles/ecl-banner-eu.css'),
+      entry: path.resolve(__dirname, 'src/styles/ecl-video-eu.scss'),
+      dest: path.resolve(outputFolder, 'styles/ecl-video-eu.css'),
       options: {
         banner,
         includePaths,

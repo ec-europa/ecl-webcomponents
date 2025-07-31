@@ -5,24 +5,26 @@
 
 ## Properties
 
-| Property         | Attribute         | Description | Type      | Default     |
-| ---------------- | ----------------- | ----------- | --------- | ----------- |
-| `ariaControls`   | `aria-controls`   |             | `string`  | `undefined` |
-| `disabled`       | `disabled`        |             | `boolean` | `false`     |
-| `hideLabel`      | `hide-label`      |             | `boolean` | `false`     |
-| `indicator`      | `indicator`       |             | `boolean` | `false`     |
-| `indicatorValue` | `indicator-value` |             | `string`  | `''`        |
-| `itemId`         | `item-id`         |             | `string`  | `undefined` |
-| `styleClass`     | `style-class`     |             | `string`  | `''`        |
-| `theme`          | `theme`           |             | `string`  | `undefined` |
-| `type`           | `type`            |             | `string`  | `'submit'`  |
-| `variant`        | `variant`         |             | `string`  | `'primary'` |
+| Property                | Attribute                 | Description | Type      | Default     |
+| ----------------------- | ------------------------- | ----------- | --------- | ----------- |
+| `ariaControls`          | `aria-controls`           |             | `string`  | `undefined` |
+| `containerExtraClasses` | `container-extra-classes` |             | `string`  | `undefined` |
+| `disabled`              | `disabled`                |             | `boolean` | `false`     |
+| `hideLabel`             | `hide-label`              |             | `boolean` | `false`     |
+| `indicator`             | `indicator`               |             | `boolean` | `false`     |
+| `indicatorValue`        | `indicator-value`         |             | `string`  | `''`        |
+| `itemId`                | `item-id`                 |             | `string`  | `undefined` |
+| `styleClass`            | `style-class`             |             | `string`  | `''`        |
+| `theme`                 | `theme`                   |             | `string`  | `undefined` |
+| `type`                  | `type`                    |             | `string`  | `'submit'`  |
+| `variant`               | `variant`                 |             | `string`  | `'primary'` |
 
 
 ## Dependencies
 
 ### Used by
 
+ - [ecl-banner](../ecl-banner)
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
  - [ecl-expandable](../ecl-expandable)
  - [ecl-file-translations](../ecl-file)
@@ -43,6 +45,7 @@
 ```mermaid
 graph TD;
   ecl-button --> ecl-indicator
+  ecl-banner --> ecl-button
   ecl-breadcrumb-item --> ecl-button
   ecl-expandable --> ecl-button
   ecl-file-translations --> ecl-button

@@ -1,29 +1,21 @@
 {
-  "name": "@ecl/web-components-banner",
+  "name": "@ecl/web-components-video",
   "author": "European Commission",
   "license": "EUPL-1.2",
   "version": "0.15.1",
-  "description": "ECL Page Banner",
-  "main": "ecl-banner.tsx",
+  "description": "ECL Video",
+  "main": "ecl-video.tsx",
   "private": true,
   "scripts": {
     "build:styles": "cross-env ecl-builder styles",
-    "build:scripts": "cross-env ecl-builder scripts",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
     "prepublish": "npm run build"
   },
   "devDependencies": {
     "@ecl/builder": "5.0.0-alpha.15",
-    "@ecl/theme-ec": "5.0.0-alpha.15",
-    "@ecl/theme-eu": "5.0.0-alpha.15",
-    "@ecl/grid": "5.0.0-alpha.15",
-    "@ecl/banner": "5.0.0-alpha.15",
+    "@ecl/video": "5.0.0-alpha.15",
     "cross-env": "7.0.3"
-  },
-  "dependencies": {
-    "@ecl/web-components-icon": "0.15.1",
-    "@ecl/web-components-link": "0.15.1"
   },
   "repository": {
     "type": "git",

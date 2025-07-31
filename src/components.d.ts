@@ -30,10 +30,15 @@ export namespace Components {
     }
     interface EclBanner {
         "bannerTitle": string;
+        "bannerTitleLink": string;
         /**
-          * @default false
+          * @default 'light'
          */
-        "centered": boolean;
+        "boxBackground": string;
+        /**
+          * @default ''
+         */
+        "colorMode": string;
         "credit": string;
         /**
           * @default false
@@ -44,26 +49,43 @@ export namespace Components {
         /**
           * @default false
          */
+        "eclScript": boolean;
+        /**
+          * @default false
+         */
         "external": boolean;
+        /**
+          * @default 'dark'
+         */
+        "fontColor": string;
+        /**
+          * @default 'm'
+         */
+        "fontSize": string;
         /**
           * @default false
          */
         "fullWidth": boolean;
+        /**
+          * @default 'left'
+         */
+        "horizontal": string;
         "image": string;
         "imageAlt": string;
         /**
           * @default 'm'
          */
         "size": string;
+        "sources": string;
+        "srPause": string;
+        "srPlay": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
+        "tracks": string;
         /**
-          * @default 'display'
+          * @default 'center'
          */
-        "variant": string;
+        "vertical": string;
     }
     interface EclBlockquote {
         "author": string;
@@ -125,6 +147,7 @@ export namespace Components {
     }
     interface EclButton {
         "ariaControls": string;
+        "containerExtraClasses": string;
         /**
           * @default false
          */
@@ -214,10 +237,6 @@ export namespace Components {
           * @default ''
          */
         "bannerTitle": string;
-        /**
-          * @default ''
-         */
-        "bannerVariant": string;
         "centered": boolean;
         "ctaLabel": string;
         "ctaLink": string;
@@ -323,9 +342,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -804,9 +820,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -900,9 +913,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'low'
@@ -1626,9 +1636,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'primary'
@@ -1736,6 +1743,37 @@ export namespace Components {
          */
         "theme": string;
         "type": string;
+    }
+    interface EclVideo {
+        /**
+          * @default false
+         */
+        "autoplay": boolean;
+        /**
+          * @default true
+         */
+        "controls": boolean;
+        /**
+          * @default false
+         */
+        "loop": boolean;
+        /**
+          * @default false
+         */
+        "muted": boolean;
+        "poster": string;
+        "srVideoLabel": string;
+        "srVideoPlayer": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+        "videoTitle": string;
+        /**
+          * @default false
+         */
+        "zoom": boolean;
     }
 }
 export interface EclAccordionItemCustomEvent<T> extends CustomEvent<T> {
@@ -2333,6 +2371,12 @@ declare global {
         prototype: HTMLEclTimelineItemElement;
         new (): HTMLEclTimelineItemElement;
     };
+    interface HTMLEclVideoElement extends Components.EclVideo, HTMLStencilElement {
+    }
+    var HTMLEclVideoElement: {
+        prototype: HTMLEclVideoElement;
+        new (): HTMLEclVideoElement;
+    };
     interface HTMLElementTagNameMap {
         "ecl-accordion": HTMLEclAccordionElement;
         "ecl-accordion-item": HTMLEclAccordionItemElement;
@@ -2411,6 +2455,7 @@ declare global {
         "ecl-textarea": HTMLEclTextareaElement;
         "ecl-timeline": HTMLEclTimelineElement;
         "ecl-timeline-item": HTMLEclTimelineItemElement;
+        "ecl-video": HTMLEclVideoElement;
     }
 }
 declare namespace LocalJSX {
@@ -2439,10 +2484,15 @@ declare namespace LocalJSX {
     }
     interface EclBanner {
         "bannerTitle"?: string;
+        "bannerTitleLink"?: string;
         /**
-          * @default false
+          * @default 'light'
          */
-        "centered"?: boolean;
+        "boxBackground"?: string;
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
         "credit"?: string;
         /**
           * @default false
@@ -2453,26 +2503,43 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
+        "eclScript"?: boolean;
+        /**
+          * @default false
+         */
         "external"?: boolean;
+        /**
+          * @default 'dark'
+         */
+        "fontColor"?: string;
+        /**
+          * @default 'm'
+         */
+        "fontSize"?: string;
         /**
           * @default false
          */
         "fullWidth"?: boolean;
+        /**
+          * @default 'left'
+         */
+        "horizontal"?: string;
         "image"?: string;
         "imageAlt"?: string;
         /**
           * @default 'm'
          */
         "size"?: string;
+        "sources"?: string;
+        "srPause"?: string;
+        "srPlay"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
+        "tracks"?: string;
         /**
-          * @default 'display'
+          * @default 'center'
          */
-        "variant"?: string;
+        "vertical"?: string;
     }
     interface EclBlockquote {
         "author"?: string;
@@ -2534,6 +2601,7 @@ declare namespace LocalJSX {
     }
     interface EclButton {
         "ariaControls"?: string;
+        "containerExtraClasses"?: string;
         /**
           * @default false
          */
@@ -2623,10 +2691,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "bannerTitle"?: string;
-        /**
-          * @default ''
-         */
-        "bannerVariant"?: string;
         "centered"?: boolean;
         "ctaLabel"?: string;
         "ctaLink"?: string;
@@ -2732,9 +2796,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -3216,9 +3277,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -3315,9 +3373,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'low'
@@ -4050,9 +4105,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'primary'
@@ -4165,6 +4217,37 @@ declare namespace LocalJSX {
         "theme"?: string;
         "type"?: string;
     }
+    interface EclVideo {
+        /**
+          * @default false
+         */
+        "autoplay"?: boolean;
+        /**
+          * @default true
+         */
+        "controls"?: boolean;
+        /**
+          * @default false
+         */
+        "loop"?: boolean;
+        /**
+          * @default false
+         */
+        "muted"?: boolean;
+        "poster"?: string;
+        "srVideoLabel"?: string;
+        "srVideoPlayer"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+        "videoTitle"?: string;
+        /**
+          * @default false
+         */
+        "zoom"?: boolean;
+    }
     interface IntrinsicElements {
         "ecl-accordion": EclAccordion;
         "ecl-accordion-item": EclAccordionItem;
@@ -4243,6 +4326,7 @@ declare namespace LocalJSX {
         "ecl-textarea": EclTextarea;
         "ecl-timeline": EclTimeline;
         "ecl-timeline-item": EclTimelineItem;
+        "ecl-video": EclVideo;
     }
 }
 export { LocalJSX as JSX };
@@ -4326,6 +4410,7 @@ declare module "@stencil/core" {
             "ecl-textarea": LocalJSX.EclTextarea & JSXBase.HTMLAttributes<HTMLEclTextareaElement>;
             "ecl-timeline": LocalJSX.EclTimeline & JSXBase.HTMLAttributes<HTMLEclTimelineElement>;
             "ecl-timeline-item": LocalJSX.EclTimelineItem & JSXBase.HTMLAttributes<HTMLEclTimelineItemElement>;
+            "ecl-video": LocalJSX.EclVideo & JSXBase.HTMLAttributes<HTMLEclVideoElement>;
         }
     }
 }

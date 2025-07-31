@@ -16,6 +16,7 @@ export class EclButton {
   @Prop() type: string = 'submit';
   @Prop() variant: string = 'primary';
   @Prop({ mutable: true }) theme: string;
+  @Prop() containerExtraClasses: string;
   @Prop() hideLabel: boolean = false;    
   @Prop() ariaControls: string;
   @Prop() itemId: string;
@@ -78,7 +79,7 @@ export class EclButton {
         {...(this.ariaControls && { 'aria-controls': this.ariaControls })}
         {...(this.itemId && { id: this.itemId })}
       >
-        <span class="ecl-button__container">
+        <span class={`ecl-button__container${this.containerExtraClasses ? ' ' + this.containerExtraClasses : ''}`}>
           {this.hasIconBefore && !this.indicator && (
             <slot name="icon-before"></slot>
           )}
