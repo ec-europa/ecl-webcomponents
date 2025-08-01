@@ -323,7 +323,7 @@ export namespace Components {
          */
         "theme": string;
         /**
-          * @default 'default'
+          * @default ''
          */
         "variant": string;
         "year": string;
@@ -1611,7 +1611,7 @@ export namespace Components {
          */
         "overlay": boolean;
         /**
-          * @default 'medium'
+          * @default 'm'
          */
         "size": string;
         /**
@@ -2724,7 +2724,7 @@ declare namespace LocalJSX {
          */
         "theme"?: string;
         /**
-          * @default 'default'
+          * @default ''
          */
         "variant"?: string;
         "year"?: string;
@@ -4027,7 +4027,7 @@ declare namespace LocalJSX {
          */
         "overlay"?: boolean;
         /**
-          * @default 'medium'
+          * @default 'm'
          */
         "size"?: string;
         /**
