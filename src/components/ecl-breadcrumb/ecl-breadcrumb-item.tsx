@@ -2,14 +2,12 @@ import { Component, h, Prop, Element } from '@stencil/core';
 
 @Component({
   tag: 'ecl-breadcrumb-item',
-  styleUrl: 'build/styles/ecl-breadcrumb-item.css',
   shadow: false,
 })
 export class EclBreadcrumbItem {
   @Element() el: HTMLElement;
-  @Prop() theme: string;
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
-  @Prop() variant: string;
   @Prop() path: string;
   @Prop() currentPage: boolean = false;
   @Prop() ellipsis: boolean = false;

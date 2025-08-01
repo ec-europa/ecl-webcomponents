@@ -94,10 +94,6 @@ export namespace Components {
          */
         "styleClass": string;
         "theme": string;
-        /**
-          * @default 'default'
-         */
-        "variant": string;
     }
     interface EclBreadcrumbItem {
         /**
@@ -115,11 +111,8 @@ export namespace Components {
         "path": string;
         "styleClass": string;
         "theme": string;
-        "variant": string;
     }
     interface EclButton {
-        "ariaControls": string;
-        "ariaLabel": string;
         /**
           * @default false
          */
@@ -318,9 +311,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -892,9 +882,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'low'
@@ -1618,9 +1605,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'primary'
@@ -2495,10 +2479,6 @@ declare namespace LocalJSX {
          */
         "styleClass"?: string;
         "theme"?: string;
-        /**
-          * @default 'default'
-         */
-        "variant"?: string;
     }
     interface EclBreadcrumbItem {
         /**
@@ -2516,11 +2496,8 @@ declare namespace LocalJSX {
         "path"?: string;
         "styleClass"?: string;
         "theme"?: string;
-        "variant"?: string;
     }
     interface EclButton {
-        "ariaControls"?: string;
-        "ariaLabel"?: string;
         /**
           * @default false
          */
@@ -2719,9 +2696,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -3299,9 +3273,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'low'
@@ -4034,9 +4005,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'primary'

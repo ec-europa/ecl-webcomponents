@@ -15,7 +15,6 @@
 | `path`            | `path`              |             | `string`  | `undefined` |
 | `styleClass`      | `style-class`       |             | `string`  | `undefined` |
 | `theme`           | `theme`             |             | `string`  | `undefined` |
-| `variant`         | `variant`           |             | `string`  | `undefined` |
 
 
 ## Dependencies
