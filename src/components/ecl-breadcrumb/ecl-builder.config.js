@@ -44,15 +44,5 @@ module.exports = {
         minify: true,
       },
     },
-    {
-      entry: path.resolve(__dirname, 'src/styles/ecl-breadcrumb-item.scss'),
-      dest: path.resolve(outputFolder, 'styles/ecl-breadcrumb-item.css'),
-      options: {
-        banner,
-        includePaths,
-        sourceMap: false,
-        minify: true,
-      },
-    },
   ],
 };
