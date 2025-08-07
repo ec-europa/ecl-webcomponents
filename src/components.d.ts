@@ -1512,6 +1512,10 @@ export namespace Components {
           * @default true
          */
         "searchBlock": boolean;
+        /**
+          * @default `ecl-site-header-search-form-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "searchFormId": string;
         "searchPlaceholder": string;
         "searchText": string;
         "siteName": string;
@@ -3919,6 +3923,10 @@ declare namespace LocalJSX {
           * @default true
          */
         "searchBlock"?: boolean;
+        /**
+          * @default `ecl-site-header-search-form-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "searchFormId"?: string;
         "searchPlaceholder"?: string;
         "searchText"?: string;
         "siteName"?: string;
