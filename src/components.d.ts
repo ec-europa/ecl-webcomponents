@@ -323,9 +323,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -343,6 +340,9 @@ export namespace Components {
           * @default false
          */
         "disabled": boolean;
+        /**
+          * @default `ecl-datepicker-${Math.random().toString(36).slice(2, 10)}`
+         */
         "inputId": string;
         /**
           * @default false
@@ -358,9 +358,6 @@ export namespace Components {
          */
         "required": boolean;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "type": string;
         /**
@@ -566,6 +563,9 @@ export namespace Components {
         "helperId": string;
         "helperText": string;
         "inputClass": string;
+        /**
+          * @default `ecl-file-upload-${Math.random().toString(36).slice(2, 10)}`
+         */
         "inputId": string;
         /**
           * @default false
@@ -583,9 +583,6 @@ export namespace Components {
          */
         "required": boolean;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "type": string;
         /**
@@ -628,6 +625,10 @@ export namespace Components {
         /**
           * @default false
          */
+        "hideLabel": boolean;
+        /**
+          * @default false
+         */
         "invalid": boolean;
         /**
           * @default 'error'
@@ -658,9 +659,6 @@ export namespace Components {
           * @default 'div'
          */
         "tag": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclGallery {
@@ -804,9 +802,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -867,6 +862,10 @@ export namespace Components {
          */
         "hasChanged": boolean;
         "helperText": string;
+        /**
+          * @default false
+         */
+        "hideLabel": boolean;
         "inputClass": string;
         "inputId": string;
         /**
@@ -885,9 +884,6 @@ export namespace Components {
          */
         "required": boolean;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "type": string;
         /**
@@ -900,9 +896,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'low'
@@ -1329,6 +1322,9 @@ export namespace Components {
         "helperId": string;
         "helperText": string;
         "inputClass": string;
+        /**
+          * @default `ecl-range-${Math.random().toString(36).slice(2, 10)}`
+         */
         "inputId": string;
         /**
           * @default false
@@ -1352,9 +1348,6 @@ export namespace Components {
          */
         "step": number;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "valueLabel": string;
         /**
@@ -1367,6 +1360,10 @@ export namespace Components {
           * @default false
          */
         "disabled": boolean;
+        /**
+          * @default `ecl-rating-field-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "inputId": string;
         /**
           * @default false
          */
@@ -1410,9 +1407,6 @@ export namespace Components {
          */
         "required": boolean;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "value": string;
     }
@@ -1426,6 +1420,9 @@ export namespace Components {
         "helperId": string;
         "helperText": string;
         "inputDefaultValue": string;
+        /**
+          * @default `ecl-search-form-${Math.random().toString(36).slice(2, 10)}`
+         */
         "inputId": string;
         /**
           * @default false
@@ -1440,17 +1437,11 @@ export namespace Components {
          */
         "required": boolean;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "type": string;
-        /**
-          * @default 'm'
-         */
-        "width": string;
     }
     interface EclSelect {
+        "buttonLabel": string;
         /**
           * @default false
          */
@@ -1463,6 +1454,7 @@ export namespace Components {
           * @default false
          */
         "hasChanged": boolean;
+        "inputId": string;
         "inputValue": string;
         /**
           * @default false
@@ -1485,9 +1477,6 @@ export namespace Components {
         "required": boolean;
         "selectId": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'm'
@@ -1626,9 +1615,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'primary'
@@ -1707,9 +1693,6 @@ export namespace Components {
         "rows": number;
         "styleClass": string;
         "textareaId": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'm'
@@ -2732,9 +2715,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -2752,6 +2732,9 @@ declare namespace LocalJSX {
           * @default false
          */
         "disabled"?: boolean;
+        /**
+          * @default `ecl-datepicker-${Math.random().toString(36).slice(2, 10)}`
+         */
         "inputId"?: string;
         /**
           * @default false
@@ -2770,9 +2753,6 @@ declare namespace LocalJSX {
          */
         "required"?: boolean;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "type"?: string;
         /**
@@ -2978,6 +2958,9 @@ declare namespace LocalJSX {
         "helperId"?: string;
         "helperText"?: string;
         "inputClass"?: string;
+        /**
+          * @default `ecl-file-upload-${Math.random().toString(36).slice(2, 10)}`
+         */
         "inputId"?: string;
         /**
           * @default false
@@ -2995,9 +2978,6 @@ declare namespace LocalJSX {
          */
         "required"?: boolean;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "type"?: string;
         /**
@@ -3040,6 +3020,10 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
+        "hideLabel"?: boolean;
+        /**
+          * @default false
+         */
         "invalid"?: boolean;
         /**
           * @default 'error'
@@ -3070,9 +3054,6 @@ declare namespace LocalJSX {
           * @default 'div'
          */
         "tag"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclGallery {
@@ -3216,9 +3197,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -3279,6 +3257,10 @@ declare namespace LocalJSX {
          */
         "hasChanged"?: boolean;
         "helperText"?: string;
+        /**
+          * @default false
+         */
+        "hideLabel"?: boolean;
         "inputClass"?: string;
         "inputId"?: string;
         /**
@@ -3300,9 +3282,6 @@ declare namespace LocalJSX {
          */
         "required"?: boolean;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "type"?: string;
         /**
@@ -3315,9 +3294,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'low'
@@ -3744,6 +3720,9 @@ declare namespace LocalJSX {
         "helperId"?: string;
         "helperText"?: string;
         "inputClass"?: string;
+        /**
+          * @default `ecl-range-${Math.random().toString(36).slice(2, 10)}`
+         */
         "inputId"?: string;
         /**
           * @default false
@@ -3770,9 +3749,6 @@ declare namespace LocalJSX {
          */
         "step"?: number;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "valueLabel"?: string;
         /**
@@ -3785,6 +3761,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "disabled"?: boolean;
+        /**
+          * @default `ecl-rating-field-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "inputId"?: string;
         /**
           * @default false
          */
@@ -3831,9 +3811,6 @@ declare namespace LocalJSX {
          */
         "required"?: boolean;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "value"?: string;
     }
@@ -3847,6 +3824,9 @@ declare namespace LocalJSX {
         "helperId"?: string;
         "helperText"?: string;
         "inputDefaultValue"?: string;
+        /**
+          * @default `ecl-search-form-${Math.random().toString(36).slice(2, 10)}`
+         */
         "inputId"?: string;
         /**
           * @default false
@@ -3861,17 +3841,11 @@ declare namespace LocalJSX {
          */
         "required"?: boolean;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "type"?: string;
-        /**
-          * @default 'm'
-         */
-        "width"?: string;
     }
     interface EclSelect {
+        "buttonLabel"?: string;
         /**
           * @default false
          */
@@ -3884,6 +3858,7 @@ declare namespace LocalJSX {
           * @default false
          */
         "hasChanged"?: boolean;
+        "inputId"?: string;
         "inputValue"?: string;
         /**
           * @default false
@@ -3909,9 +3884,6 @@ declare namespace LocalJSX {
         "required"?: boolean;
         "selectId"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'm'
@@ -4050,9 +4022,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'primary'
@@ -4135,9 +4104,6 @@ declare namespace LocalJSX {
         "rows"?: number;
         "styleClass"?: string;
         "textareaId"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'm'

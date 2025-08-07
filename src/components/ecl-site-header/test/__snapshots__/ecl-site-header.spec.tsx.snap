@@ -232,12 +232,12 @@ exports[`ecl-site-header renders 1`] = `
                   <ecl-form-group style-class="sc-ecl-search-form-ec">
                     <!---->
                     <div class="ecl-form-group sc-ecl-search-form-ec">
-                      <ecl-input input-class="ecl-search-form__text-input sc-ecl-search-form-ec" placeholder="Placeholder text" style-class="ecl-search-form__text-input sc-ecl-search-form-ec" theme="ec" type="search" width="m"></ecl-input>
+                      <ecl-input input-class="ecl-search-form__text-input sc-ecl-search-form-ec" input-id="ecl-search-form-cj2jh74j" placeholder="Placeholder text" style-class="sc-ecl-search-form-ec" theme="ec" type="search"></ecl-input>
                     </div>
                   </ecl-form-group>
-                  <ecl-button aria-label="search" style-class="ecl-search-form__button sc-ecl-search-form-ec" theme="ec" variant="search">
+                  <ecl-button aria-label="search" style-class="ecl-search-form__button sc-ecl-search-form-ec" theme="ec" type="search" variant="ghost">
                     search
-                    <ecl-icon icon="search" size="xs" slot="icon-after" style-class="sc-ecl-search-form-ec" theme="ec"></ecl-icon>
+                    <ecl-icon icon="search" size="xs" slot="icon-before" style-class="sc-ecl-search-form-ec" theme="ec"></ecl-icon>
                   </ecl-button>
                 </form>
               </ecl-search-form>

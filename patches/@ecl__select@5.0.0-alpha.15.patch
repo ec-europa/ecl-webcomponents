@@ -1,0 +1,13 @@
+diff --git a/select.js b/select.js
+index 148e8c50a86c11b1bf155a20190a4affb8f8dcbf..70e646c1677c1edae9ae94df1158ffc854fcb923 100644
+--- a/select.js
++++ b/select.js
+@@ -568,7 +568,7 @@ export class Select {
+       }
+       this.visibleOptions = this.checkboxes;
+ 
+-      this.select.parentNode.parentNode.insertBefore(
++       this.select.closest('.ecl-form-group').insertBefore(
+         this.selectMultiple,
+         this.select.parentNode.nextSibling,
+       );

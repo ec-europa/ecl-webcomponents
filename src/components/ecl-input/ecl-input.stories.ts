@@ -5,6 +5,8 @@ const getArgs = () => {
     disabled: false,
     required: true,
     invalid: false,
+    hideLabel: false,
+    helperText: 'This is an helper text',
     inputId: 'input-id',
     name: 'input-name',
     label: 'Item label',
@@ -15,12 +17,27 @@ const getArgs = () => {
 
 const getArgTypes = () => {
   return {
+    color_mode: { table: { disable: true }},
     type: {
       type: { name: 'select' },
       options: ['text', 'search', 'radio', 'checkbox'],
       description: 'Input type (text, radio, search, checkbox)',
       table: {
         category: 'Input type',
+      },
+    },
+    hideLabel: {
+      name: 'hide-label',
+      control: { type: 'boolean' },
+      table: {
+        category: 'Content',
+      },
+    },
+    helperText: {
+      name: 'helper-text',
+      type: { name: 'string' },
+      table: {
+        category: 'Content',
       },
     },
     width: {
@@ -30,6 +47,7 @@ const getArgTypes = () => {
       table: {
         category: 'Styles',
       },
+      if: { arg: 'type', eq: 'text' },
     },
     disabled: {
       type: { name: 'boolean' },
@@ -101,11 +119,12 @@ const Template = args =>
   label="Label"
   required=${args.required}
   optional-text="(optional)"
-  helper-text="This is the input helper text"
+  required-text="(required)"
+  helper-text="${args.helperText}"
+  hide-label=${args.hideLabel}
   invalid=${args.invalid}
   disabled=${args.disabled}
   invalid-text="This is an error message"
-  theme="${args.theme}"
   aria-label-optional="Aria label optional"
   ${args.type === 'checkbox' || args.type === 'radio' ? `tag="${args.type === 'checkbox' || args.type === 'radio' ? 'fieldset' : ''}"` : ''}
   ${args.type === 'checkbox' || args.type === 'radio' ? `label-tag="${args.type === 'checkbox' || args.type === 'radio' ? 'legend' : ''}"` : ''}
@@ -113,7 +132,6 @@ const Template = args =>
 >
   <ecl-input
     type="${args.type}"
-    theme="${args.theme}"
     input-id="${args.inputId}"
     default-value="${args.defaultValue}"
     label="${(args.type === 'checkbox' || args.type === 'radio') ? args.label : ''}"
@@ -122,7 +140,6 @@ const Template = args =>
     invalid=${args.invalid}
     width="${args.width}"
     placeholder="${args.placeholder}"
-    helper-text="${args.type === 'checkbox' || args.type === 'radio' ? 'This is the input helper text' : '' }"
     name="${args.name}"
   >
   </ecl-input>

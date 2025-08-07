@@ -232,7 +232,6 @@ export class EclSiteHeader {
                   <ecl-search-form
                     style-class={`ecl-site-header__search sc-ecl-site-header-${this.theme}`}
                     theme={this.theme}
-                    width="m"
                     placeholder={this.searchPlaceholder}
                     button-label={this.searchText}
                     button-aria-label={this.searchText}

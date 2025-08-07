@@ -9,7 +9,7 @@ import { Component, h, Prop, Event, EventEmitter } from '@stencil/core';
   shadow: false,
 })
 export class EclRatingStar {
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() itemId: string;
   @Prop() value: string;
@@ -39,6 +39,10 @@ export class EclRatingStar {
   handleBlur(event) {
     this.inputBlur.emit(event);
     this.isFocused = false;
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {

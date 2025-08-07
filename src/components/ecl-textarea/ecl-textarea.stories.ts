@@ -5,17 +5,25 @@ const getArgs = () => {
     invalid: false,
     width: 'm',
     label: 'Label',
+    hideLabel: false,
     textareaId: 'textarea-id',
     helperText: `This is the input helper text.`,
-    requiredText: '*',
+    requiredText: '(required)',
     invalidText: 'This is the error message',
-    invalidIcon: 'error',
+    invalidIcon: 'error-outline',
     optionalText: '(optional)',
   };
 };
 
 const getArgTypes = () => {
   return {
+    hideLabel: {
+      name: 'hide-label',
+      control: { type: 'boolean' },
+      table: {
+        category: 'Content',
+      },
+    },
     required: {
       type: { name: 'boolean' },
       description: 'Required input',
@@ -109,20 +117,20 @@ export default {
 
 const Template = (args) => 
   `<ecl-form-group
-    theme="${args.theme}"
+    hide-label=${args.hideLabel}
     helper-text="${args.helperText}"
     invalid=${args.invalid}
     invalid-text="${args.invalidText}"
     invalid-icon="${args.invalidIcon}"
     optional-text="${args.optionalText}"
     label="${args.label}"
+    required-text="${args.requiredText}"
     required=${args.required}
     disabled="${args.disabled}"
     aria-label-optional="Aria label optional"
     aria-label-required="Aria label required"
   >
     <ecl-textarea
-      theme="${args.theme}"
       required=${args.required}
       invalid=${args.invalid}
       disabled=${args.disabled}
