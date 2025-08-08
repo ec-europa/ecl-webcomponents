@@ -12,8 +12,8 @@ import { Component, Prop, h } from '@stencil/core';
 
 export class EclDateBlock {
   @Prop() styleClass: string = '';
-  @Prop() variant: string = 'default';
-  @Prop() theme: string = 'ec';
+  @Prop() variant: string = '';
+  @Prop({ mutable: true }) theme: string;
   @Prop() day: string;
   @Prop() month: string;
   @Prop() year: string;
@@ -28,9 +28,16 @@ export class EclDateBlock {
     ].join(' ');
   }
 
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
   render() {
     return (
-      <time class={this.getClass()}>
+      <time 
+        class={this.getClass()}
+        {...(this.dateTime ? { dateTime: this.dateTime } : {})}
+      >
       { this.dateTime ? 
         <span class="ecl-date-block__daytime">
           {this.dateTime}

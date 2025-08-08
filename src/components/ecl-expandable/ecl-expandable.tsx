@@ -21,13 +21,13 @@ export class EclExpandable {
   @Prop() elId: string = `ecl-expandable-${Math.random().toString(36).substr(2, 9)}`;
   @Prop() labelCollapsed: string = '';
   @Prop() labelExpanded: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
 
-  componentDidRender() {
-    const button = this.el.querySelector('button');
-    button.setAttribute('aria-expanded', "false");
-    button.setAttribute('aria-controls', `${this.elId}-content`);
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
 
+  componentDidLoad() {
     const p = this.el.querySelectorAll('p');
 
     if (p[0]) {
@@ -66,6 +66,8 @@ export class EclExpandable {
           variant="ghost"
           style-class={`ecl-expandable__toggle sc-ecl-expandable-${this.theme}`}
           type="button"
+          aria-controls={`${this.elId}-content`}
+          aria-expanded="false"
           data-ecl-expandable-toggle
           data-ecl-label-expanded={this.labelExpanded}
           data-ecl-label-collapsed={this.labelCollapsed} 

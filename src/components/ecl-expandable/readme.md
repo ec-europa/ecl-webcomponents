@@ -13,7 +13,7 @@
 | `labelCollapsed` | `label-collapsed` |             | `string`  | `''`                                                              |
 | `labelExpanded`  | `label-expanded`  |             | `string`  | `''`                                                              |
 | `styleClass`     | `style-class`     |             | `string`  | `''`                                                              |
-| `theme`          | `theme`           |             | `string`  | `'ec'`                                                            |
+| `theme`          | `theme`           |             | `string`  | `undefined`                                                       |
 
 
 ## Dependencies

@@ -7,11 +7,11 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type     | Default |
-| ------------ | ------------- | ----------- | -------- | ------- |
-| `styleClass` | `style-class` |             | `string` | `''`    |
-| `theme`      | `theme`       |             | `string` | `'ec'`  |
-| `variant`    | `variant`     |             | `string` | `'low'` |
+| Property     | Attribute     | Description | Type     | Default     |
+| ------------ | ------------- | ----------- | -------- | ----------- |
+| `styleClass` | `style-class` |             | `string` | `''`        |
+| `theme`      | `theme`       |             | `string` | `undefined` |
+| `variant`    | `variant`     |             | `string` | `'low'`     |
 
 
 ## Dependencies

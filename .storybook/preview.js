@@ -100,3 +100,11 @@ export const args = {
   theme: 'ec',
   color_mode: 'default',
 };
+
+export const decorators = [
+  (Story, context) => {
+    const theme = context.args.theme || 'ec';
+    document.documentElement.setAttribute('data-ecl-theme', theme);
+    return Story();
+  },
+];

@@ -13,12 +13,12 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/theme-ec": "3.13.0",
-    "@ecl/theme-eu": "3.13.0",
-    "@ecl/theme-dev": "3.13.0",
-    "@ecl/builder": "3.13.0",
-    "@ecl/vanilla-layout-grid": "3.13.0",
-    "@ecl/vanilla-component-spinner": "3.13.0",
+    "@ecl/theme-ec": "5.0.0-alpha.14",
+    "@ecl/theme-eu": "5.0.0-alpha.14",
+    "@ecl/builder": "5.0.0-alpha.14",
+    "@ecl/grid": "5.0.0-alpha.14",
+    "@ecl/spinner": "5.0.0-alpha.14",
+    "lorem-ipsum": "2.0.8",
     "cross-env": "7.0.3"
   },
   "repository": {

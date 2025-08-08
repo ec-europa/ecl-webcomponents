@@ -1,69 +1,52 @@
-import { randomizedLink } from "../../utils/randomizedLink"; 
-
-const getArgs = () => {
-  return {
-    variant: 'negative',
-  };
-};
-
-const getArgTypes = () => {
-  return {
-    variant: {
-      type: { name: 'select' },
-      options: ['default', 'negative'],
-      description: "Breadcrumb variant",
-    },
-  };
-};
+import { randomizedLink } from "../../utils/randomizedLink";
 
 export default {
   title: 'Components/Navigation/breadcrumb',
 };
 
-const Template = (args) => 
+const Template = () => 
   `<ecl-breadcrumb
-    variant="${args.variant}"
-    theme="${args.theme}"
     ecl-script
-   >
+  >
     <ecl-breadcrumb-item
       path="${randomizedLink('/example.html')}"
-      theme="${args.theme}"
     >
       Home
     </ecl-breadcrumb-item>
     <ecl-breadcrumb-item
-      ellipsis
-      button-aria-label="Click to expand"
-     >
-     </ecl-breadcrumb-item>
-    <ecl-breadcrumb-item
-      path="${randomizedLink('/example.html')}"
-      theme="${args.theme}"
+      ellipsis="true"
+      button-aria-label="Show more breadcrumb items"
     >
-      About the European Commission
     </ecl-breadcrumb-item>
     <ecl-breadcrumb-item
       path="${randomizedLink('/example.html')}"
-      theme="${args.theme}"
     >
-      Organisational structure
+      Parent Page label
     </ecl-breadcrumb-item>
     <ecl-breadcrumb-item
       path="${randomizedLink('/example.html')}"
-      theme="${args.theme}"
     >
-      How the Commission is organised
+      Parent Page label
+    </ecl-breadcrumb-item>
+    <ecl-breadcrumb-item
+      path="${randomizedLink('/example.html')}"
+    >
+      Parent Page label
+    </ecl-breadcrumb-item>
+    <ecl-breadcrumb-item
+      path="${randomizedLink('/example.html')}"
+    >
+      Parent Page label
     </ecl-breadcrumb-item>
     <ecl-breadcrumb-item
       current-page
-      theme="${args.theme}"
     >
-      News
+      Current Page label
     </ecl-breadcrumb-item>
   </ecl-breadcrumb>`;
 
 export const Breadcrumb = Template.bind({});
 Breadcrumb.storyName = 'default';
-Breadcrumb.args = getArgs();
-Breadcrumb.argTypes = getArgTypes();
+Breadcrumb.argTypes = {
+  color_mode: { table: { disable: true } },
+};

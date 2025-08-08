@@ -13,11 +13,11 @@ import { Component, Prop, h } from '@stencil/core';
 export class EclSpinner {
   @Prop() styleClass: string = '';
   @Prop() variant: string = 'primary';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() centered: boolean = false;
   @Prop() visible: boolean = false;
   @Prop() overlay: boolean = false;
-  @Prop() size: string = 'medium';
+  @Prop() size: string = 'm';
 
   getClass(): string {
     const classes = [
@@ -47,9 +47,16 @@ export class EclSpinner {
     return overlayClasses.join(' ');
   }
 
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
   render() {
     return (
     <div>
+    { this.overlay ? 
+      <div class={this.getOverlayClass()}></div> : '' 
+    }
       <div class={this.getClass()}>
         <svg
           class="ecl-spinner__loader"
@@ -70,9 +77,6 @@ export class EclSpinner {
           <slot></slot>
         </div>
       </div>
-    { this.overlay ? 
-      <div class={this.getOverlayClass()}></div> : '' 
-    }
     </div>
     )
   }

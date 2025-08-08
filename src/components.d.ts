@@ -19,9 +19,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclAccordionItem {
@@ -29,9 +26,6 @@ export namespace Components {
         "itemId": string;
         "label": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclBanner {
@@ -84,9 +78,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclBreadcrumb {
@@ -102,14 +93,7 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
-        /**
-          * @default 'default'
-         */
-        "variant": string;
     }
     interface EclBreadcrumbItem {
         /**
@@ -126,11 +110,7 @@ export namespace Components {
         "ellipsis": boolean;
         "path": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
-        "variant": string;
     }
     interface EclButton {
         "ariaControls": string;
@@ -155,9 +135,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'submit'
@@ -335,12 +312,9 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
-          * @default 'default'
+          * @default ''
          */
         "variant": string;
         "year": string;
@@ -454,9 +428,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclFactFigures {
@@ -820,9 +791,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -916,9 +884,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'low'
@@ -949,13 +914,24 @@ export namespace Components {
           * @default false
          */
         "external": boolean;
+        /**
+          * @default false
+         */
+        "indicator": boolean;
+        "indicatorValue": string;
+        /**
+          * @default false
+         */
+        "inverted": boolean;
         "name": string;
+        /**
+          * @default false
+         */
+        "noVisited": boolean;
         "path": string;
+        "srExternal": string;
         "styleClass": string;
         "target": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "titleAttr": string;
         /**
@@ -1635,16 +1611,13 @@ export namespace Components {
          */
         "overlay": boolean;
         /**
-          * @default 'medium'
+          * @default 'm'
          */
         "size": string;
         /**
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'primary'
@@ -2443,9 +2416,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclAccordionItem {
@@ -2454,9 +2424,6 @@ declare namespace LocalJSX {
         "label"?: string;
         "onToggleItem"?: (event: EclAccordionItemCustomEvent<string>) => void;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclBanner {
@@ -2509,9 +2476,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclBreadcrumb {
@@ -2527,14 +2491,7 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
-        /**
-          * @default 'default'
-         */
-        "variant"?: string;
     }
     interface EclBreadcrumbItem {
         /**
@@ -2551,11 +2508,7 @@ declare namespace LocalJSX {
         "ellipsis"?: boolean;
         "path"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
-        "variant"?: string;
     }
     interface EclButton {
         "ariaControls"?: string;
@@ -2580,9 +2533,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'submit'
@@ -2760,12 +2710,9 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
-          * @default 'default'
+          * @default ''
          */
         "variant"?: string;
         "year"?: string;
@@ -2882,9 +2829,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclFactFigures {
@@ -3248,9 +3192,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -3347,9 +3288,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'low'
@@ -3380,13 +3318,24 @@ declare namespace LocalJSX {
           * @default false
          */
         "external"?: boolean;
+        /**
+          * @default false
+         */
+        "indicator"?: boolean;
+        "indicatorValue"?: string;
+        /**
+          * @default false
+         */
+        "inverted"?: boolean;
         "name"?: string;
+        /**
+          * @default false
+         */
+        "noVisited"?: boolean;
         "path"?: string;
+        "srExternal"?: string;
         "styleClass"?: string;
         "target"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "titleAttr"?: string;
         /**
@@ -4075,16 +4024,13 @@ declare namespace LocalJSX {
          */
         "overlay"?: boolean;
         /**
-          * @default 'medium'
+          * @default 'm'
          */
         "size"?: string;
         /**
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'primary'
