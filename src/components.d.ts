@@ -323,9 +323,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -804,9 +801,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default ''
@@ -900,9 +894,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'low'
@@ -1135,6 +1126,7 @@ export namespace Components {
         "withHeader": boolean;
     }
     interface EclNavigationList {
+        "colorMode": string;
         /**
           * @default 2
          */
@@ -1150,6 +1142,7 @@ export namespace Components {
           * @default true
          */
         "border": boolean;
+        "colorMode": string;
         "image": string;
         "imageAlt": string;
         "styleClass": string;
@@ -1157,6 +1150,7 @@ export namespace Components {
           * @default 'ec'
          */
         "theme": string;
+        "variant": string;
     }
     interface EclNewsTicker {
         "counterLabel": string;
@@ -1626,9 +1620,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'primary'
@@ -2732,9 +2723,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -3216,9 +3204,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
@@ -3315,9 +3300,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'low'
@@ -3550,6 +3532,7 @@ declare namespace LocalJSX {
         "withHeader"?: boolean;
     }
     interface EclNavigationList {
+        "colorMode"?: string;
         /**
           * @default 2
          */
@@ -3565,6 +3548,7 @@ declare namespace LocalJSX {
           * @default true
          */
         "border"?: boolean;
+        "colorMode"?: string;
         "image"?: string;
         "imageAlt"?: string;
         "styleClass"?: string;
@@ -3572,6 +3556,7 @@ declare namespace LocalJSX {
           * @default 'ec'
          */
         "theme"?: string;
+        "variant"?: string;
     }
     interface EclNewsTicker {
         "counterLabel"?: string;
@@ -4050,9 +4035,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'primary'
