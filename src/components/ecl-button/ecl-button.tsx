@@ -16,8 +16,7 @@ export class EclButton {
   @Prop() type: string = 'submit';
   @Prop() variant: string = 'primary';
   @Prop({ mutable: true }) theme: string;
-  @Prop() hideLabel: boolean = false;    
-  @Prop() ariaControls: string;
+  @Prop() hideLabel: boolean = false;
   @Prop() itemId: string;
   @Prop() indicator: boolean = false;
   @Prop() indicatorValue: string = '';
@@ -44,6 +43,13 @@ export class EclButton {
         delete this.el.dataset[attr];
       });
     }
+
+    const attributes = this.el.attributes;
+    Array.from(attributes).forEach((attr) => {
+      if (attr.name.startsWith('aria-')) {
+        this.el.querySelector('button').setAttribute(attr.name, attr.value);
+      }
+    });
 
     if (this.el.getElementsByTagName('ecl-icon')[0] && this.el.querySelector('.ecl-icon')) {
       const slot = this.el.getElementsByTagName('ecl-icon')[0].getAttribute('slot');
@@ -75,8 +81,7 @@ export class EclButton {
         class={this.getClass()}
         type={this.type}
         disabled={this.disabled}
-        {...(this.ariaControls && { 'aria-controls': this.ariaControls })}
-        {...(this.itemId && { id: this.itemId })}
+        id={this.itemId}
       >
         <span class="ecl-button__container">
           {this.hasIconBefore && !this.indicator && (

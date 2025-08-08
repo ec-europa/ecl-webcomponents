@@ -14,8 +14,7 @@
 | `ellipsis`        | `ellipsis`          |             | `boolean` | `false`     |
 | `path`            | `path`              |             | `string`  | `undefined` |
 | `styleClass`      | `style-class`       |             | `string`  | `undefined` |
-| `theme`           | `theme`             |             | `string`  | `'ec'`      |
-| `variant`         | `variant`           |             | `string`  | `undefined` |
+| `theme`           | `theme`             |             | `string`  | `undefined` |
 
 
 ## Dependencies
