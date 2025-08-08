@@ -15,7 +15,7 @@ export class EclButton {
   @Prop() styleClass: string = '';
   @Prop() type: string = 'submit';
   @Prop() variant: string = 'primary';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() hideLabel: boolean = false;    
   @Prop() ariaControls: string;
   @Prop() itemId: string;
@@ -23,6 +23,10 @@ export class EclButton {
   @Prop() indicatorValue: string = '';
   @Prop({ reflect: true }) disabled: boolean = false;
   @State() hasLabelContent: boolean = false;
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
 
   componentDidLoad() {
     const dataAttrs = Object.keys(this.el.dataset);
@@ -38,6 +42,13 @@ export class EclButton {
         delete this.el.dataset[attr];
       });
     }
+
+    const attributes = this.el.attributes;
+    Array.from(attributes).forEach((attr) => {
+      if (attr.name.startsWith('aria-')) {
+        this.el.querySelector('button').setAttribute(attr.name, attr.value);
+      }
+    });
 
     if (this.el.getElementsByTagName('ecl-icon')[0] && this.el.querySelector('.ecl-icon')) {
       const slot = this.el.getElementsByTagName('ecl-icon')[0].getAttribute('slot');
@@ -71,7 +82,6 @@ export class EclButton {
         class={this.getClass()}
         type={this.type}
         disabled={this.disabled}
-        {...(this.ariaControls && { 'aria-controls': this.ariaControls })}
         {...(this.itemId && { id: this.itemId })}
       >
         <span class="ecl-button__container">
