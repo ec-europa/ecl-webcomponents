@@ -16,14 +16,13 @@ export class EclButton {
   @Prop() type: string = 'submit';
   @Prop() variant: string = 'primary';
   @Prop({ mutable: true }) theme: string;
-  @Prop() hideLabel: boolean = false;
+  @Prop() hideLabel: boolean = false;    
+  @Prop() ariaControls: string;
   @Prop() itemId: string;
   @Prop() indicator: boolean = false;
   @Prop() indicatorValue: string = '';
   @Prop({ reflect: true }) disabled: boolean = false;
   @State() hasLabelContent: boolean = false;
-  @State() hasIconBefore: boolean = false;
-  @State() hasIconAfter: boolean = false;
 
   componentWillLoad() {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
@@ -58,12 +57,6 @@ export class EclButton {
         this.el.querySelector('.ecl-icon').classList.add(`ecl-button__${slot.substring(0, 5) + '-' + slot.substring(5)}`);
       }
     }
-
-    const iconBefore = this.el.querySelector('[slot="icon-before"]');
-    const iconAfter = this.el.querySelector('[slot="icon-after"]');
-
-    this.hasIconBefore = !!iconBefore;
-    this.hasIconAfter = !!iconAfter;
   }
 
   getClass(): string {
@@ -75,13 +68,21 @@ export class EclButton {
     ].join(' ').trim();
   }
 
+  private get hasIconBefore(): boolean {
+    return !!this.el.querySelector('[slot="icon-before"]');
+  }
+  
+  private get hasIconAfter(): boolean {
+    return !!this.el.querySelector('[slot="icon-after"]');
+  }
+
   render() {
     return (
       <button
         class={this.getClass()}
         type={this.type}
         disabled={this.disabled}
-        id={this.itemId}
+        {...(this.itemId && { id: this.itemId })}
       >
         <span class="ecl-button__container">
           {this.hasIconBefore && !this.indicator && (
