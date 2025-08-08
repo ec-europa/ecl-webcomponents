@@ -93,14 +93,7 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
-        /**
-          * @default 'default'
-         */
-        "variant": string;
     }
     interface EclBreadcrumbItem {
         /**
@@ -117,11 +110,7 @@ export namespace Components {
         "ellipsis": boolean;
         "path": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
-        "variant": string;
     }
     interface EclButton {
         "ariaControls": string;
@@ -924,13 +913,24 @@ export namespace Components {
           * @default false
          */
         "external": boolean;
+        /**
+          * @default false
+         */
+        "indicator": boolean;
+        "indicatorValue": string;
+        /**
+          * @default false
+         */
+        "inverted": boolean;
         "name": string;
+        /**
+          * @default false
+         */
+        "noVisited": boolean;
         "path": string;
+        "srExternal": string;
         "styleClass": string;
         "target": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "titleAttr": string;
         /**
@@ -2504,14 +2504,7 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
-        /**
-          * @default 'default'
-         */
-        "variant"?: string;
     }
     interface EclBreadcrumbItem {
         /**
@@ -2528,11 +2521,7 @@ declare namespace LocalJSX {
         "ellipsis"?: boolean;
         "path"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
-        "variant"?: string;
     }
     interface EclButton {
         "ariaControls"?: string;
@@ -3341,13 +3330,24 @@ declare namespace LocalJSX {
           * @default false
          */
         "external"?: boolean;
+        /**
+          * @default false
+         */
+        "indicator"?: boolean;
+        "indicatorValue"?: string;
+        /**
+          * @default false
+         */
+        "inverted"?: boolean;
         "name"?: string;
+        /**
+          * @default false
+         */
+        "noVisited"?: boolean;
         "path"?: string;
+        "srExternal"?: string;
         "styleClass"?: string;
         "target"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "titleAttr"?: string;
         /**

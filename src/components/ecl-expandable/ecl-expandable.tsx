@@ -61,7 +61,7 @@ export class EclExpandable {
           variant="secondary"
           style-class={`ecl-expandable__toggle sc-ecl-expandable-${this.theme}`}
           type="button"
-          ariaControls={`${this.el.id}-content`}
+          aria-controls={`${this.el.id}-content`}
           data-ecl-expandable-toggle
           data-ecl-label-expanded={this.labelExpanded}
           data-ecl-label-collapsed={this.labelCollapsed} 
