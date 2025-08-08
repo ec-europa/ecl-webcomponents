@@ -8,7 +8,7 @@ describe('ecl-expandable', () => {
       components: [EclExpandable, EclButton],
       html: `<ecl-expandable
               theme="ec"
-              id="expandable-id"
+              el-id="expandable-id"
               icon-path="/icons.svg"
               label-collapsed="Expand"
               label-expanded="Collapse"

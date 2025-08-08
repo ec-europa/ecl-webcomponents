@@ -409,6 +409,10 @@ export namespace Components {
          */
         "eclScript": boolean;
         /**
+          * @default `ecl-expandable-${Math.random().toString(36).substr(2, 9)}`
+         */
+        "elId": string;
+        /**
           * @default false
          */
         "isExpanded": boolean;
@@ -424,9 +428,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclFactFigures {
@@ -2809,6 +2810,10 @@ declare namespace LocalJSX {
          */
         "eclScript"?: boolean;
         /**
+          * @default `ecl-expandable-${Math.random().toString(36).substr(2, 9)}`
+         */
+        "elId"?: string;
+        /**
           * @default false
          */
         "isExpanded"?: boolean;
@@ -2824,9 +2829,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclFactFigures {
