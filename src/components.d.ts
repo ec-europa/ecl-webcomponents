@@ -1100,9 +1100,6 @@ export namespace Components {
          */
         "size": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "toggleId": string;
         /**
@@ -3504,9 +3501,6 @@ declare namespace LocalJSX {
          */
         "size"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "toggleId"?: string;
         /**

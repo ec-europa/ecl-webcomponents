@@ -25,12 +25,12 @@ exports[`ecl-modal renders 1`] = `
               <span class="ecl-button__container">
                 <span class="ecl-button__label">
                   Close
-                  <ecl-icon>
-                    <svg class="ecl-button__icon ecl-icon ecl-icon--s sc-ecl-button-ec">
-                      <use xlink:href="/build/images/ec/icons.svg#close-filled"></use>
-                    </svg>
-                  </ecl-icon>
                 </span>
+                <ecl-icon slot="icon-after" style-class="sc-ecl-modal-ec">
+                  <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--s sc-ecl-button-ec sc-ecl-modal-ec">
+                    <use xlink:href="/build/images/ec/icons.svg#close-filled"></use>
+                  </svg>
+                </ecl-icon>
               </span>
             </button>
           </ecl-button>

@@ -1301,23 +1301,20 @@ importers:
   src/components/ecl-modal:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.32.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/modal':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-modal':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -3113,6 +3110,9 @@ packages:
   '@ecl/modal@5.0.0-alpha.14':
     resolution: {integrity: sha512-+q7gVhtTzAlMggC5/8hRcIY6xpVUKRWqa+9QKnFJglK7aKaSlhGnIoSBJeTE51toZG75QXFDMXNBMYJ4cMZMMw==}
 
+  '@ecl/modal@5.0.0-alpha.15':
+    resolution: {integrity: sha512-KjvH/1K2IWZt8WR14B7u2jnQe+OVMsnavyxT0asyySl4KJhceyxW+4IcSUYCtSrjnX1FEC69oxga3AVLdiPHlQ==}
+
   '@ecl/navigation-list@5.0.0-alpha.14':
     resolution: {integrity: sha512-hZpuOyU5HiFsht8md4+SGKip2tAX7Nap3sli9+5N8HRHXicBfJiu9Krwo2NAGL7VqVj3LOUPsMCCI/IHiLzS9g==}
 
@@ -3369,9 +3369,6 @@ packages:
 
   '@ecl/vanilla-component-message@3.13.0':
     resolution: {integrity: sha512-QhNGZs3iawuAUNMDatE2kurl1cEhUOhkt0setIs+ecEd7rtO6XRsnTOnuCrEZRPoAaHBwFwUg9KAmFY8UqzoOg==}
-
-  '@ecl/vanilla-component-modal@3.13.0':
-    resolution: {integrity: sha512-0bOkK/anx2R65kUmSMM+eo3SzObHmJfdFxuce5EHv/owwGfLGnIZxPKik3P1bm6zFz1JVnrIP0+neD4HPDLZ4A==}
 
   '@ecl/vanilla-component-navigation-list@3.13.0':
     resolution: {integrity: sha512-9Mol3AcICdHUANxZBWAYDjhk++AcVvXxB2+dWsO9aNqxlQ8C1lmI9JEd46rWulO+TZk6YZklkv8RsowaTtnqdA==}
@@ -7424,6 +7421,9 @@ packages:
 
   focus-trap@7.6.4:
     resolution: {integrity: sha512-xx560wGBk7seZ6y933idtjJQc1l+ck+pI3sKvhKozdBV1dRZoKhkW5xoCaFv9tQiX5RH1xfSxjuNu6g+lmN/gw==}
+
+  focus-trap@7.6.5:
+    resolution: {integrity: sha512-7Ke1jyybbbPZyZXFxEftUtxFGLMpE2n6A+z//m4CRDlj0hW+o3iYSmh8nFlYMurOiJVDmJRilUQtJr08KfIxlg==}
 
   follow-redirects@1.15.9:
     resolution: {integrity: sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==}
@@ -15276,6 +15276,13 @@ snapshots:
       '@ecl/icon': 5.0.0-alpha.14
       focus-trap: 7.6.4
 
+  '@ecl/modal@5.0.0-alpha.15':
+    dependencies:
+      '@ecl/button': 5.0.0-alpha.15
+      '@ecl/dom-utils': 5.0.0-alpha.15
+      '@ecl/icon': 5.0.0-alpha.15
+      focus-trap: 7.6.5
+
   '@ecl/navigation-list@5.0.0-alpha.14':
     dependencies:
       '@ecl/content-block': 5.0.0-alpha.14
@@ -15836,12 +15843,6 @@ snapshots:
     dependencies:
       '@ecl/dom-utils': 3.13.0
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
-  '@ecl/vanilla-component-modal@3.13.0':
-    dependencies:
-      '@ecl/dom-utils': 3.13.0
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      focus-trap: 7.5.4
 
   '@ecl/vanilla-component-navigation-list@3.13.0':
     dependencies:
@@ -20614,6 +20615,10 @@ snapshots:
       tabbable: 6.2.0
 
   focus-trap@7.6.4:
+    dependencies:
+      tabbable: 6.2.0
+
+  focus-trap@7.6.5:
     dependencies:
       tabbable: 6.2.0
 
