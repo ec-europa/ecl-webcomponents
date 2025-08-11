@@ -17,10 +17,11 @@
     "@ecl/theme-eu": "5.0.0-alpha.15",
     "@ecl/builder": "5.0.0-alpha.15",
     "@ecl/resources-icons": "4.10.0",
-    "@ecl/icon": "5.0.0-alpha.15",
     "@ecl/tag": "5.0.0-alpha.15",
-    "@ecl/link": "5.0.0-alpha.15",
     "cross-env": "7.0.3"
+  },
+  "dependencies": {
+    "@ecl/web-components-icon": "5.0.0-alpha.15"
   },
   "repository": {
     "type": "git",
