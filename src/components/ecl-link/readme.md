@@ -39,11 +39,9 @@
  - [ecl-footer](../ecl-footer)
  - [ecl-footer-item](../ecl-footer)
  - [ecl-gallery](../ecl-gallery)
- - [ecl-hero-banner](../ecl-hero-banner)
  - [ecl-inpage-navigation-item](../ecl-inpage-navigation)
  - [ecl-list-illustration-item](../ecl-list-illustration)
  - [ecl-news-ticker-item](../ecl-news-ticker)
- - [ecl-page-banner](../ecl-page-banner)
  - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover-item](../ecl-popover)
  - [ecl-site-header](../ecl-site-header)
@@ -69,11 +67,9 @@ graph TD;
   ecl-footer --> ecl-link
   ecl-footer-item --> ecl-link
   ecl-gallery --> ecl-link
-  ecl-hero-banner --> ecl-link
   ecl-inpage-navigation-item --> ecl-link
   ecl-list-illustration-item --> ecl-link
   ecl-news-ticker-item --> ecl-link
-  ecl-page-banner --> ecl-link
   ecl-pagination-item --> ecl-link
   ecl-popover-item --> ecl-link
   ecl-site-header --> ecl-link
