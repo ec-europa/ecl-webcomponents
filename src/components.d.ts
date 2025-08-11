@@ -1629,23 +1629,30 @@ export namespace Components {
         "visible": boolean;
     }
     interface EclTag {
+        "colorMode": string;
         /**
           * @default false
          */
         "external": boolean;
-        "styleClass": string;
         /**
-          * @default 'ec'
+          * @default false
          */
+        "noWrap": boolean;
+        "styleClass": string;
         "theme": string;
         /**
           * @default ''
          */
         "url": string;
         /**
-          * @default 'display'
+          * @default 'link'
          */
         "variant": string;
+    }
+    interface EclTagSet {
+        "colorMode": string;
+        "styleClass": string;
+        "theme": string;
     }
     interface EclText {
         /**
@@ -2285,6 +2292,12 @@ declare global {
         prototype: HTMLEclTagElement;
         new (): HTMLEclTagElement;
     };
+    interface HTMLEclTagSetElement extends Components.EclTagSet, HTMLStencilElement {
+    }
+    var HTMLEclTagSetElement: {
+        prototype: HTMLEclTagSetElement;
+        new (): HTMLEclTagSetElement;
+    };
     interface HTMLEclTextElement extends Components.EclText, HTMLStencilElement {
     }
     var HTMLEclTextElement: {
@@ -2396,6 +2409,7 @@ declare global {
         "ecl-spacing": HTMLEclSpacingElement;
         "ecl-spinner": HTMLEclSpinnerElement;
         "ecl-tag": HTMLEclTagElement;
+        "ecl-tag-set": HTMLEclTagSetElement;
         "ecl-text": HTMLEclTextElement;
         "ecl-textarea": HTMLEclTextareaElement;
         "ecl-timeline": HTMLEclTimelineElement;
@@ -4042,24 +4056,31 @@ declare namespace LocalJSX {
         "visible"?: boolean;
     }
     interface EclTag {
+        "colorMode"?: string;
         /**
           * @default false
          */
         "external"?: boolean;
+        /**
+          * @default false
+         */
+        "noWrap"?: boolean;
         "onRemoveTag"?: (event: EclTagCustomEvent<boolean>) => void;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
          */
         "url"?: string;
         /**
-          * @default 'display'
+          * @default 'link'
          */
         "variant"?: string;
+    }
+    interface EclTagSet {
+        "colorMode"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
     }
     interface EclText {
         /**
@@ -4217,6 +4238,7 @@ declare namespace LocalJSX {
         "ecl-spacing": EclSpacing;
         "ecl-spinner": EclSpinner;
         "ecl-tag": EclTag;
+        "ecl-tag-set": EclTagSet;
         "ecl-text": EclText;
         "ecl-textarea": EclTextarea;
         "ecl-timeline": EclTimeline;
@@ -4300,6 +4322,7 @@ declare module "@stencil/core" {
             "ecl-spacing": LocalJSX.EclSpacing & JSXBase.HTMLAttributes<HTMLEclSpacingElement>;
             "ecl-spinner": LocalJSX.EclSpinner & JSXBase.HTMLAttributes<HTMLEclSpinnerElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
+            "ecl-tag-set": LocalJSX.EclTagSet & JSXBase.HTMLAttributes<HTMLEclTagSetElement>;
             "ecl-text": LocalJSX.EclText & JSXBase.HTMLAttributes<HTMLEclTextElement>;
             "ecl-textarea": LocalJSX.EclTextarea & JSXBase.HTMLAttributes<HTMLEclTextareaElement>;
             "ecl-timeline": LocalJSX.EclTimeline & JSXBase.HTMLAttributes<HTMLEclTimelineElement>;
