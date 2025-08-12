@@ -1,7 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-icon renders 1`] = `
-<ecl-icon color="primary" icon="close-filled" path="/icons.svg" size="l">
+<ecl-icon color="primary" icon="close-filled" size="l">
   <span class="ecl-icon wt-icon--close-filled wt-icon--l wt-icon--placeholder wt-icon--primary"></span>
+</ecl-icon>
+`;
+
+exports[`ecl-icon renders correctly from a sprite 1`] = `
+<ecl-icon color="primary" icon="calendar" size="2xs" sprite="icons">
+  <svg class="ecl-icon ecl-icon--2xs ecl-icon--primary">
+    <use xlink:href="/build/images/ec/icons.svg#calendar"></use>
+  </svg>
+</ecl-icon>
+`;
+
+exports[`ecl-icon renders correctly with a family 1`] = `
+<ecl-icon color="monochrome" family="social" icon="check-filled" size="m">
+  <span class="ecl-icon wt-icon--m wt-icon--monochrome wt-icon--placeholder wt-icon-social--check-filled"></span>
 </ecl-icon>
 `;

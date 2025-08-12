@@ -18,7 +18,7 @@ export class EclIcon {
   @Prop() icon: string = '';
   @Prop() size: string = 'xs';
   @Prop() color: string;
-  @Prop() family: string;
+  @Prop() family: string = '';
   @Prop() flip: string;
   @Prop() titleTag: string = '';
   @Prop({ mutable: true }) path: string;
@@ -35,7 +35,9 @@ export class EclIcon {
   }
 
   getClass(): string {
-    const baseClass = this.sprite ? 'ecl-icon' : `wt-icon--${this.icon}`;
+    const baseClass = this.sprite 
+      ? 'ecl-icon' 
+      : `wt-icon${this.family ? `-${this.family}` : ''}--${this.icon}`;
     const pref = this.sprite ? 'ecl' : 'wt';
 
     const styleClasses = [
