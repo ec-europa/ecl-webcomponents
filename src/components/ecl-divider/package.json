@@ -1,0 +1,36 @@
+{
+  "name": "@ecl/web-components-divider",
+  "author": "European Commission",
+  "license": "EUPL-1.2",
+  "version": "0.15.1",
+  "description": "ECL divider",
+  "main": "ecl-divider.tsx",
+  "private": true,
+  "scripts": {
+    "build:styles": "cross-env ecl-builder styles",
+    "build": "run-s clean build:*",
+    "clean": "rimraf build",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@ecl/theme-ec": "5.0.0-alpha.14",
+    "@ecl/theme-eu": "5.0.0-alpha.14",
+    "@ecl/builder": "5.0.0-alpha.14",
+    "@ecl/separator": "5.0.0-alpha.14",
+    "cross-env": "7.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planctus/ecl-webcomponents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/planctus/ecl-webcomponents/issues"
+  },
+  "homepage": "https://github.com/planctus/ecl-webcomponents",
+  "keywords": [
+    "ecl",
+    "europa-component-library",
+    "design-system",
+    "web-components"
+  ]
+}
