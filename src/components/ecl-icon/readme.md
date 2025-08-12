@@ -31,6 +31,7 @@
  - [ecl-datepicker](../ecl-datepicker)
  - [ecl-description-list-definition](../ecl-description-list)
  - [ecl-expandable](../ecl-expandable)
+ - [ecl-fact-figures](../ecl-fact-figures)
  - [ecl-fact-figures-item](../ecl-fact-figures)
  - [ecl-file](../ecl-file)
  - [ecl-file-translations](../ecl-file)
@@ -71,6 +72,7 @@ graph TD;
   ecl-datepicker --> ecl-icon
   ecl-description-list-definition --> ecl-icon
   ecl-expandable --> ecl-icon
+  ecl-fact-figures --> ecl-icon
   ecl-fact-figures-item --> ecl-icon
   ecl-file --> ecl-icon
   ecl-file-translations --> ecl-icon
