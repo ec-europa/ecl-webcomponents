@@ -38,6 +38,11 @@ const getArgTypes = () => ({
 
 export default {
   title: 'Components/modal',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = args =>

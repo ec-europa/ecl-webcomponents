@@ -997,30 +997,6 @@ importers:
         specifier: 7.0.3
         version: 7.0.3
 
-  src/components/ecl-hero-banner:
-    devDependencies:
-      '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.32.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-hero-banner':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
-      cross-env:
-        specifier: 7.0.3
-        version: 7.0.3
-
   src/components/ecl-icon:
     devDependencies:
       '@ecl/builder':
@@ -1302,6 +1278,10 @@ importers:
         version: 7.0.3
 
   src/components/ecl-modal:
+    dependencies:
+      '@ecl/web-components-button':
+        specifier: 5.0.0-alpha.15
+        version: link:../ecl-button
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
@@ -1361,30 +1341,6 @@ importers:
         specifier: 3.13.0
         version: 3.13.0
       '@ecl/vanilla-component-news-ticker':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
-      cross-env:
-        specifier: 7.0.3
-        version: 7.0.3
-
-  src/components/ecl-page-banner:
-    devDependencies:
-      '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.32.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-page-banner':
         specifier: 3.13.0
         version: 3.13.0
       '@ecl/vanilla-layout-grid':
@@ -3333,9 +3289,6 @@ packages:
 
   '@ecl/vanilla-component-gallery@3.13.0':
     resolution: {integrity: sha512-K0R/DyvdJwoA26xoDxUvou1Ytg9nOplnz0XNjFiMHZvGlgvLH/tqWL6WXrL8qhmOAthH7J3gBws7fS4kIPxE7w==}
-
-  '@ecl/vanilla-component-hero-banner@3.13.0':
-    resolution: {integrity: sha512-xK/RXu+dqY+7m7aElp4DorEVnqefZE6GMVLasOqcFXCm/G1CJAaCJ2K+e3pC1YO7iKN2BO45ORKDo7hhezlnVQ==}
 
   '@ecl/vanilla-component-icon@3.13.0':
     resolution: {integrity: sha512-1Cvi62OrgycYiOQ6ZTY+by9nqT+ZUa7Fl2n0rdZBmEUpgrbJfWTFIbFh396Qnh0na48a+kFj53Levuwj251Fdg==}
@@ -15860,11 +15813,6 @@ snapshots:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
       '@ecl/vanilla-utility-media': 3.13.0
       focus-trap: 7.5.4
-
-  '@ecl/vanilla-component-hero-banner@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
 
   '@ecl/vanilla-component-icon@3.13.0(svg4everybody@2.1.9)':
     dependencies:
