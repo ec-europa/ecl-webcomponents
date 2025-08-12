@@ -1,4 +1,4 @@
-import { Component, h, Prop, Element } from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'ecl-divider',
@@ -11,7 +11,6 @@ import { Component, h, Prop, Element } from '@stencil/core';
 })
 
 export class EclDivider {
-  @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
 

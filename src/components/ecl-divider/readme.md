@@ -10,7 +10,7 @@
 | Property     | Attribute     | Description | Type     | Default     |
 | ------------ | ------------- | ----------- | -------- | ----------- |
 | `styleClass` | `style-class` |             | `string` | `undefined` |
-| `theme`      | `theme`       |             | `string` | `'ec'`      |
+| `theme`      | `theme`       |             | `string` | `undefined` |
 
 
 ----------------------------------------------

@@ -405,9 +405,6 @@ export namespace Components {
     }
     interface EclDivider {
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclExpandable {
@@ -2764,9 +2761,6 @@ declare namespace LocalJSX {
     }
     interface EclDivider {
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclExpandable {
