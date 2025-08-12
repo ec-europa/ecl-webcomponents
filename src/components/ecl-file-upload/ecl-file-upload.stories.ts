@@ -97,6 +97,11 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/form/file-upload',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = args =>

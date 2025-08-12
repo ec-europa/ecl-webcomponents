@@ -30,6 +30,11 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/form/search-form',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = args =>

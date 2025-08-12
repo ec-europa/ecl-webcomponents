@@ -174,6 +174,11 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/form/select',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = (args) => 

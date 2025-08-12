@@ -113,6 +113,11 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/form/range',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = args =>

@@ -112,6 +112,11 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/form/input-field',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = args =>
