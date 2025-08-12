@@ -12,21 +12,23 @@ const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()
 module.exports = {
   styles: [
     {
-      entry: path.resolve(__dirname, 'src/styles/ecl-hero-banner-ec.scss'),
-      dest: path.resolve(outputFolder, 'styles/ecl-hero-banner-ec.css'),
+      entry: path.resolve(__dirname, 'src/styles/ecl-divider-ec.scss'),
+      dest: path.resolve(outputFolder, 'styles/ecl-divider-ec.css'),
       options: {
         banner,
         includePaths,
         sourceMap: false,
+        minify: true,
       },
     },
     {
-      entry: path.resolve(__dirname, 'src/styles/ecl-hero-banner-eu.scss'),
-      dest: path.resolve(outputFolder, 'styles/ecl-hero-banner-eu.css'),
+      entry: path.resolve(__dirname, 'src/styles/ecl-divider-eu.scss'),
+      dest: path.resolve(outputFolder, 'styles/ecl-divider-eu.css'),
       options: {
         banner,
         includePaths,
         sourceMap: false,
+        minify: true,
       },
     },
   ],

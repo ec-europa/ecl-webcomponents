@@ -1,55 +1,102 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ecl-tag renders correctly in the display variant in EC 1`] = `
-<ecl-tag data-ecl-button-icon theme="ec" type="display">
+exports[`ecl-tag renders correctly as a tag set 1`] = `
+<ecl-tag-set>
+  <ul class="ecl-tag-set sc-ecl-tag-ec">
+    <li class="ecl-tag-set__item sc-ecl-tag-ec">
+      <ecl-tag url="/example.html" variant="link">
+        <!---->
+        <a class="ecl-tag ecl-tag--link" href="/example.html">
+          A link ECL tag
+        </a>
+      </ecl-tag>
+    </li>
+    <li class="ecl-tag-set__item sc-ecl-tag-ec">
+      <ecl-tag variant="removable">
+        <!---->
+        <button class="ecl-tag ecl-tag--removable" type="button">
+          A removable ECL tag
+          <span class="ecl-tag__icon">
+            <ecl-icon style-class="ecl-tag__icon-close sc-ecl-tag-ec">
+              <svg class="ecl-icon ecl-icon--xs ecl-tag__icon-close sc-ecl-tag-ec">
+                <use xlink:href="/build/images/ec/icons.svg#close-outline"></use>
+              </svg>
+            </ecl-icon>
+          </span>
+        </button>
+      </ecl-tag>
+    </li>
+  </ul>
+</ecl-tag-set>
+`;
+
+exports[`ecl-tag renders correctly in the link variant 1`] = `
+<ecl-tag url="/example.html" variant="link">
   <!---->
-  <span class="ecl-tag ecl-tag--display">
-    An ECL tag
-  </span>
+  <a class="ecl-tag ecl-tag--link" href="/example.html">
+    A link ECL tag
+  </a>
 </ecl-tag>
 `;
 
-exports[`ecl-tag renders correctly in the display variant in EU 1`] = `
-<ecl-tag data-ecl-button-icon theme="ec" type="display">
+exports[`ecl-tag renders correctly in the removable variant 1`] = `
+<ecl-tag variant="removable">
   <!---->
-  <span class="ecl-tag ecl-tag--display">
-    An ECL tag
-  </span>
+  <button class="ecl-tag ecl-tag--removable" type="button">
+    A removable ECL tag
+    <span class="ecl-tag__icon">
+      <ecl-icon style-class="ecl-tag__icon-close sc-ecl-tag-ec">
+        <svg class="ecl-icon ecl-icon--xs ecl-tag__icon-close sc-ecl-tag-ec">
+          <use xlink:href="/build/images/ec/icons.svg#close-outline"></use>
+        </svg>
+      </ecl-icon>
+    </span>
+  </button>
 </ecl-tag>
 `;
 
-exports[`ecl-tag renders correctly in the link variant in EC 1`] = `
-<ecl-tag theme="ec" type="link" url="/example.html">
+exports[`ecl-tag renders correctly with a custom color mode 1`] = `
+<ecl-tag color-mode="blue-navy" variant="removable">
   <!---->
-  <span class="ecl-tag ecl-tag--display">
-    An ECL tag
-  </span>
+  <button class="ecl-color-mode--blue-navy ecl-tag ecl-tag--removable" type="button">
+    A removable ECL tag
+    <span class="ecl-tag__icon">
+      <ecl-icon style-class="ecl-tag__icon-close sc-ecl-tag-ec">
+        <svg class="ecl-icon ecl-icon--xs ecl-tag__icon-close sc-ecl-tag-ec">
+          <use xlink:href="/build/images/ec/icons.svg#close-outline"></use>
+        </svg>
+      </ecl-icon>
+    </span>
+  </button>
 </ecl-tag>
 `;
 
-exports[`ecl-tag renders correctly in the link variant in EU 1`] = `
-<ecl-tag theme="eu" type="link" url="/example.html">
+exports[`ecl-tag renders correctly with external 1`] = `
+<ecl-tag external="" url="/example.html" variant="link">
   <!---->
-  <span class="ecl-tag ecl-tag--display">
-    An ECL tag
-  </span>
+  <a class="ecl-tag ecl-tag--link" href="/example.html">
+    An external link ECL tag
+    <ecl-icon style-class="ecl-tag__icon ecl-tag__icon--external sc-ecl-tag-ec">
+      <svg class="ecl-icon ecl-icon--2xs ecl-tag__icon ecl-tag__icon--external sc-ecl-tag-ec">
+        <use xlink:href="/build/images/ec/icons.svg#external"></use>
+      </svg>
+    </ecl-icon>
+  </a>
 </ecl-tag>
 `;
 
-exports[`ecl-tag renders correctly in the removable variant in EC 1`] = `
-<ecl-tag theme="ec" type="removable">
+exports[`ecl-tag renders correctly with no-wrap 1`] = `
+<ecl-tag no-wrap="" variant="removable">
   <!---->
-  <span class="ecl-tag ecl-tag--display">
-    An ECL tag
-  </span>
-</ecl-tag>
-`;
-
-exports[`ecl-tag renders correctly in the removable variant in EU 1`] = `
-<ecl-tag theme="eu" type="removable">
-  <!---->
-  <span class="ecl-tag ecl-tag--display">
-    An ECL tag
-  </span>
+  <button class="ecl-tag ecl-tag--nowrap ecl-tag--removable" type="button">
+    A no wrap ECL tag
+    <span class="ecl-tag__icon">
+      <ecl-icon style-class="ecl-tag__icon-close sc-ecl-tag-ec">
+        <svg class="ecl-icon ecl-icon--xs ecl-tag__icon-close sc-ecl-tag-ec">
+          <use xlink:href="/build/images/ec/icons.svg#close-outline"></use>
+        </svg>
+      </ecl-icon>
+    </span>
+  </button>
 </ecl-tag>
 `;

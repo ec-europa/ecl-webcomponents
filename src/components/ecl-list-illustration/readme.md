@@ -36,6 +36,7 @@ graph TD;
   ecl-list-illustration-item --> ecl-icon
   ecl-list-illustration-item --> ecl-link
   ecl-link --> ecl-icon
+  ecl-link --> ecl-indicator
   style ecl-list-illustration-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

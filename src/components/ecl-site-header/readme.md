@@ -49,6 +49,7 @@ graph TD;
   ecl-site-header --> ecl-icon
   ecl-site-header --> ecl-search-form
   ecl-link --> ecl-icon
+  ecl-link --> ecl-indicator
   ecl-search-form --> ecl-form-group
   ecl-search-form --> ecl-input
   ecl-search-form --> ecl-button
