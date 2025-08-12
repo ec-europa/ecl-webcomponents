@@ -18,7 +18,7 @@ const getArgs = () => {
         href="${randomizedLink('/example.html')}"
       >
         Read more
-        <ecl-icon slot="icon-after" icon="corner-arrow" transform="rotate-90" />
+        <ecl-icon slot="icon-after" icon="corner-arrow" rotate="90" />
       </ecl-link>
     </ecl-spacing>
     `,

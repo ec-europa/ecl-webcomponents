@@ -74,12 +74,7 @@ export class EclLink {
     }
 
     if (this.el.querySelector('ecl-icon')) {
-      this.el.querySelector('ecl-icon svg').classList.add('ecl-link__icon');
-      if (this.el.querySelector('ecl-icon').getAttribute('slot') === 'icon-after') {
-        this.el.querySelector('ecl-icon svg').classList.add('ecl-link__icon--after');
-      } else {
-        this.el.querySelector('ecl-icon svg').classList.add('ecl-link__icon--before');
-      }
+      this.el.querySelector('ecl-icon').classList.add('ecl-link__icon');
     }
   }
 
@@ -87,7 +82,7 @@ export class EclLink {
     return (
       <ecl-icon 
         icon="external"
-        style-class={`ecl-link__icon ecl-link__icon--after sc-ecl-link-${this.theme}`}
+        style-class={`ecl-link__icon sc-ecl-link-${this.theme}`}
         size="2xs"
         title-tag={this.srExternal}
       >

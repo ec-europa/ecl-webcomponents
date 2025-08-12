@@ -30,11 +30,11 @@ exports[`ecl-description-list renders 1`] = `
       <!---->
       <dd class="ecl-description-list__definition ecl-description-list__definition--link sc-ecl-description-list-ec">
         <ecl-link path="/example.html" styleclass="ecl-description-list__definition-item sc-ecl-description-list-ec" theme="ec">
-          <ecl-icon icon="copy" slot="icon-before" theme="ec"></ecl-icon>
+          <ecl-icon icon="copy" slot="icon-before"></ecl-icon>
           Lorem ipsum dolor sit amet
         </ecl-link>
         <ecl-link path="/example.html" styleclass="ecl-description-list__definition-item sc-ecl-description-list-ec" theme="ec">
-          <ecl-icon icon="download" slot="icon-before" theme="ec"></ecl-icon>
+          <ecl-icon icon="download" slot="icon-before"></ecl-icon>
           Lorem ipsum dolor sit amet
         </ecl-link>
       </dd>

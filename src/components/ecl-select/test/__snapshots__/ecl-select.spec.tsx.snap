@@ -50,9 +50,7 @@ exports[`ecl-select renders 1`] = `
         </select>
         <div class="ecl-select__icon">
           <ecl-icon style-class="ecl-select__icon-shape sc-ecl-select-ec">
-            <svg class="ecl-icon ecl-icon--rotate-180 ecl-icon--s ecl-select__icon-shape sc-ecl-select-ec">
-              <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
-            </svg>
+            <span class="ecl-icon ecl-select__icon-shape sc-ecl-select-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180 wt-icon--s"></span>
           </ecl-icon>
         </div>
       </div>

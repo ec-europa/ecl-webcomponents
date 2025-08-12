@@ -742,22 +742,19 @@ export namespace Components {
         "theme": string;
     }
     interface EclIcon {
-        /**
-          * @default ''
-         */
         "color": string;
+        "family": string;
+        "flip": string;
         /**
           * @default ''
          */
         "icon": string;
         "path": string;
+        "rotate": string;
         /**
           * @default 'xs'
          */
         "size": string;
-        /**
-          * @default ''
-         */
         "sprite": string;
         /**
           * @default ''
@@ -768,10 +765,6 @@ export namespace Components {
           * @default ''
          */
         "titleTag": string;
-        /**
-          * @default ''
-         */
-        "transform": string;
     }
     interface EclIndicator {
         /**
@@ -1489,27 +1482,6 @@ export namespace Components {
          */
         "theme": string;
     }
-    interface EclSocialMediaShare {
-        "description": string;
-        "styleClass": string;
-        /**
-          * @default 'ec'
-         */
-        "theme": string;
-        /**
-          * @default 'horizontal'
-         */
-        "variant": string;
-    }
-    interface EclSocialMediaShareItem {
-        "icon": string;
-        "sharePath": string;
-        "styleClass": string;
-        /**
-          * @default 'ec'
-         */
-        "theme": string;
-    }
     interface EclSpacing {
         "breakpoint": string;
         /**
@@ -2183,18 +2155,6 @@ declare global {
         prototype: HTMLEclSocialMediaFollowItemElement;
         new (): HTMLEclSocialMediaFollowItemElement;
     };
-    interface HTMLEclSocialMediaShareElement extends Components.EclSocialMediaShare, HTMLStencilElement {
-    }
-    var HTMLEclSocialMediaShareElement: {
-        prototype: HTMLEclSocialMediaShareElement;
-        new (): HTMLEclSocialMediaShareElement;
-    };
-    interface HTMLEclSocialMediaShareItemElement extends Components.EclSocialMediaShareItem, HTMLStencilElement {
-    }
-    var HTMLEclSocialMediaShareItemElement: {
-        prototype: HTMLEclSocialMediaShareItemElement;
-        new (): HTMLEclSocialMediaShareItemElement;
-    };
     interface HTMLEclSpacingElement extends Components.EclSpacing, HTMLStencilElement {
     }
     var HTMLEclSpacingElement: {
@@ -2334,8 +2294,6 @@ declare global {
         "ecl-site-header": HTMLEclSiteHeaderElement;
         "ecl-social-media-follow": HTMLEclSocialMediaFollowElement;
         "ecl-social-media-follow-item": HTMLEclSocialMediaFollowItemElement;
-        "ecl-social-media-share": HTMLEclSocialMediaShareElement;
-        "ecl-social-media-share-item": HTMLEclSocialMediaShareItemElement;
         "ecl-spacing": HTMLEclSpacingElement;
         "ecl-spinner": HTMLEclSpinnerElement;
         "ecl-tag": HTMLEclTagElement;
@@ -3087,22 +3045,19 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclIcon {
-        /**
-          * @default ''
-         */
         "color"?: string;
+        "family"?: string;
+        "flip"?: string;
         /**
           * @default ''
          */
         "icon"?: string;
         "path"?: string;
+        "rotate"?: string;
         /**
           * @default 'xs'
          */
         "size"?: string;
-        /**
-          * @default ''
-         */
         "sprite"?: string;
         /**
           * @default ''
@@ -3113,10 +3068,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "titleTag"?: string;
-        /**
-          * @default ''
-         */
-        "transform"?: string;
     }
     interface EclIndicator {
         /**
@@ -3846,27 +3797,6 @@ declare namespace LocalJSX {
          */
         "theme"?: string;
     }
-    interface EclSocialMediaShare {
-        "description"?: string;
-        "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
-        "theme"?: string;
-        /**
-          * @default 'horizontal'
-         */
-        "variant"?: string;
-    }
-    interface EclSocialMediaShareItem {
-        "icon"?: string;
-        "sharePath"?: string;
-        "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
-        "theme"?: string;
-    }
     interface EclSpacing {
         "breakpoint"?: string;
         /**
@@ -4105,8 +4035,6 @@ declare namespace LocalJSX {
         "ecl-site-header": EclSiteHeader;
         "ecl-social-media-follow": EclSocialMediaFollow;
         "ecl-social-media-follow-item": EclSocialMediaFollowItem;
-        "ecl-social-media-share": EclSocialMediaShare;
-        "ecl-social-media-share-item": EclSocialMediaShareItem;
         "ecl-spacing": EclSpacing;
         "ecl-spinner": EclSpinner;
         "ecl-tag": EclTag;
@@ -4187,8 +4115,6 @@ declare module "@stencil/core" {
             "ecl-site-header": LocalJSX.EclSiteHeader & JSXBase.HTMLAttributes<HTMLEclSiteHeaderElement>;
             "ecl-social-media-follow": LocalJSX.EclSocialMediaFollow & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowElement>;
             "ecl-social-media-follow-item": LocalJSX.EclSocialMediaFollowItem & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowItemElement>;
-            "ecl-social-media-share": LocalJSX.EclSocialMediaShare & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareElement>;
-            "ecl-social-media-share-item": LocalJSX.EclSocialMediaShareItem & JSXBase.HTMLAttributes<HTMLEclSocialMediaShareItemElement>;
             "ecl-spacing": LocalJSX.EclSpacing & JSXBase.HTMLAttributes<HTMLEclSpacingElement>;
             "ecl-spinner": LocalJSX.EclSpinner & JSXBase.HTMLAttributes<HTMLEclSpinnerElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;

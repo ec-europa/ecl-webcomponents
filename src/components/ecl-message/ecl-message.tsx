@@ -74,7 +74,6 @@ export class EclMessage {
             <ecl-icon
               slot="icon-after"
               icon="close-filled"
-              theme={this.theme}
               style-class="ecl-button__icon ecl-button__icon--after" 
             ></ecl-icon>
           </ecl-button> : ''

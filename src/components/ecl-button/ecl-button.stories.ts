@@ -7,7 +7,8 @@ const getArgs = () => {
     variant: 'primary',
     icon: '',
     iconPosition: 'after',
-    iconTransform: '',
+    iconRotate: '',
+    iconFlip: '',
     hideLabel: false,
     indicator: false,
     disabled: false,
@@ -69,16 +70,23 @@ const getArgTypes = () => {
       description: 'Before or after the button label',
       if: { arg: 'icon', truthy: true },
     },
-    iconTransform: {
-      name: 'icon transform',
+    iconRotate: {
+      name: 'rotate',
       type: { name: 'select' },
       description: 'Button icon transform',
       options: [
-        'rotate-90',
-        'rotate-180',
-        'rotate-270',
-        'flip-horizontal',
-        'flip-vertical',
+        '90',
+        '180',
+        '270',
+      ],
+      if: { arg: 'icon', truthy: true },
+    },
+    iconFlip: {
+      name: 'flip',
+      control: { type: 'select' },
+      options: [
+        'horizontal',
+        'vertical',
       ],
       if: { arg: 'icon', truthy: true },
     },
@@ -118,14 +126,16 @@ const Template = (args) => {
       `<ecl-icon 
         slot="icon-before"
         icon="${args.icon}"
-        transform="${args.iconTransform}"
+        rotate="${args.iconRotate}"
+        flip="${args.iconFlip}"
       ></ecl-icon>` : ''}
     ${args.label}
     ${args.icon && args.iconPosition === 'after' ?
       `<ecl-icon 
         slot="icon-after"
         icon="${args.icon}"
-        transform="${args.iconTransform}"
+        rotate="${args.iconRotate}"
+        flip="${args.iconFlip}"
       ></ecl-icon>` : ''}
   </ecl-button>`;
 

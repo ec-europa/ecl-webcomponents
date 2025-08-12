@@ -31,7 +31,6 @@ export class EclDescriptionListDefinition {
         >
         { link.icon ? 
           <ecl-icon
-            theme={this.theme}
             slot="icon-before"
             icon={link.icon}
           >

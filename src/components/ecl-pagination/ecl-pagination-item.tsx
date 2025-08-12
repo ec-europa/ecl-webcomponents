@@ -51,8 +51,7 @@ export class EclPaginationItem {
           <ecl-icon
             icon="corner-arrow"
             size="xs"
-            theme={this.theme}
-            transform={this.previous ? 'rotate-270' : 'rotate-90'}
+            rotate={this.previous ? '270' : '90'}
             slot={this.previous ? 'icon-before' : 'icon-after'}
             style-class={`sc-ecl-pagination-${this.theme}`}
           ></ecl-icon> : ''

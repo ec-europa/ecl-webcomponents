@@ -10,7 +10,7 @@ exports[`ecl-inpage-navigation renders 1`] = `
     <div class="ecl-inpage-navigation__body">
       <button aria-controls="ecl-inpage-navigation-list" aria-expanded="false" aria-label="" class="ecl-inpage-navigation__trigger sc-ecl-inpage-navigation-ec" data-ecl-inpage-navigation-trigger id="inpage-id-trigger">
         <span class="ecl-inpage-navigation__trigger-current" data-ecl-inpage-navigation-trigger-current></span>
-        <ecl-icon icon="corner-arrow" size="s" style-class="ecl-inpage-navigation__trigger-icon" transform="rotate-180"></ecl-icon>
+        <ecl-icon icon="corner-arrow" rotate="180" size="s" style-class="ecl-inpage-navigation__trigger-icon"></ecl-icon>
       </button>
       <ul class="ecl-inpage-navigation__list" data-ecl-inpage-navigation-list id="inpage-id-list">
         <li class="ecl-inpage-navigation__item sc-ecl-inpage-navigation-ec">

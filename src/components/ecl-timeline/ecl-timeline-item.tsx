@@ -72,9 +72,8 @@ export class EclTimelineItem {
             styleClass={`ecl-button__icon--after sc-ecl-timeline-${this.theme}`}
             icon="corner-arrow"
             size="xs"
-            transform="rotate-180"
+            rotate="180"
             slot="icon-after"
-            theme={this.theme}
           ></ecl-icon>
           <slot></slot>
         </ecl-button> : ''

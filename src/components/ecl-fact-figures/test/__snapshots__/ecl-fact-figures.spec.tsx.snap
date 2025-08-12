@@ -12,9 +12,7 @@ exports[`ecl-fact-figures renders 1`] = `
         </span>
         <div class="ecl-fact-figures__item sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <svg class="ecl-fact-figures__icon ecl-icon ecl-icon--m sc-ecl-fact-figures-item-ec">
-              <use xlink:href="/build/images/ec/icons.svg#infographic"></use>
-            </svg>
+            <span class="ecl-fact-figures__icon ecl-icon sc-ecl-fact-figures-item-ec wt-icon--infographic wt-icon--m wt-icon--placeholder"></span>
           </ecl-icon>
           <div class="ecl-fact-figures__value">
             00.0 million
@@ -33,9 +31,7 @@ exports[`ecl-fact-figures renders 1`] = `
         </span>
         <div class="ecl-fact-figures__item sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <svg class="ecl-fact-figures__icon ecl-icon ecl-icon--m sc-ecl-fact-figures-item-ec">
-              <use xlink:href="/build/images/ec/icons.svg#spreadsheet"></use>
-            </svg>
+            <span class="ecl-fact-figures__icon ecl-icon sc-ecl-fact-figures-item-ec wt-icon--m wt-icon--placeholder wt-icon--spreadsheet"></span>
           </ecl-icon>
           <div class="ecl-fact-figures__value">
             00.0 million
@@ -54,9 +50,7 @@ exports[`ecl-fact-figures renders 1`] = `
         </span>
         <div class="ecl-fact-figures__item sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <svg class="ecl-fact-figures__icon ecl-icon ecl-icon--m sc-ecl-fact-figures-item-ec">
-              <use xlink:href="/build/images/ec/icons.svg#growth"></use>
-            </svg>
+            <span class="ecl-fact-figures__icon ecl-icon sc-ecl-fact-figures-item-ec wt-icon--growth wt-icon--m wt-icon--placeholder"></span>
           </ecl-icon>
           <div class="ecl-fact-figures__value">
             00.0 million
@@ -75,9 +69,7 @@ exports[`ecl-fact-figures renders 1`] = `
         </span>
         <div class="ecl-fact-figures__item sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <svg class="ecl-fact-figures__icon ecl-icon ecl-icon--m sc-ecl-fact-figures-item-ec">
-              <use xlink:href="/build/images/ec/icons.svg#digital"></use>
-            </svg>
+            <span class="ecl-fact-figures__icon ecl-icon sc-ecl-fact-figures-item-ec wt-icon--digital wt-icon--m wt-icon--placeholder"></span>
           </ecl-icon>
           <div class="ecl-fact-figures__value">
             00.0 million
@@ -96,9 +88,7 @@ exports[`ecl-fact-figures renders 1`] = `
         </span>
         <div class="ecl-fact-figures__item sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <svg class="ecl-fact-figures__icon ecl-icon ecl-icon--m sc-ecl-fact-figures-item-ec">
-              <use xlink:href="/build/images/ec/icons.svg#regulation"></use>
-            </svg>
+            <span class="ecl-fact-figures__icon ecl-icon sc-ecl-fact-figures-item-ec wt-icon--m wt-icon--placeholder wt-icon--regulation"></span>
           </ecl-icon>
           <div class="ecl-fact-figures__value">
             00.0 million
@@ -117,9 +107,7 @@ exports[`ecl-fact-figures renders 1`] = `
         </span>
         <div class="ecl-fact-figures__item sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <svg class="ecl-fact-figures__icon ecl-icon ecl-icon--m sc-ecl-fact-figures-item-ec">
-              <use xlink:href="/build/images/ec/icons.svg#image"></use>
-            </svg>
+            <span class="ecl-fact-figures__icon ecl-icon sc-ecl-fact-figures-item-ec wt-icon--image wt-icon--m wt-icon--placeholder"></span>
           </ecl-icon>
           <div class="ecl-fact-figures__value">
             00.0 million

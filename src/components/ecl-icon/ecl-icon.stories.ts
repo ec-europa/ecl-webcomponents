@@ -2,21 +2,29 @@ import iconsAllEc from '@ecl/resources-ec-icons/dist/lists/all.json';
 
 export default {
   title: 'Components/icon',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = (args) => `<ecl-icon 
                               icon="${args.icon}"
+                              sprite="${args.sprite}"
                               color="${args.color}"
                               size="${args.size}"
-                              transform="${args.transform}"
-                              theme="${args.theme}"
+                              flip="${args.flip}"
+                              rotate="${args.rotate}"
                             ></ecl-icon>`;
 
 export const Icon = Template.bind({});
 Icon.storyName = 'default';
 Icon.args = {
   icon: 'close',
-  transform: '',
+  rotate: '',
+  flip: '',
+  sprite: 'none',
   color: 'default',
   size: '2xl',
 };
@@ -26,6 +34,22 @@ Icon.argTypes = {
     options: iconsAllEc,
     description: "Add an icon",
   },
+  sprite: {
+    type: { name: 'select' },
+    options: [
+      'none',
+      'icons',
+    ],
+    labels: {
+      '': 'none',
+      icons: 'default',
+    },
+    mapping: {
+      none: '',
+      icons: 'icons',
+      social: 'social',
+    },
+  },
   size: {
     type: { name: 'select' },
     options: ['2xs','xs', 's', 'm', 'l', 'xl', '2xl'],
@@ -33,18 +57,27 @@ Icon.argTypes = {
   },
   color: {
     type: { name: 'select' },
-    options: ['default', 'primary', 'inverted'],
+    options: ['default', 'primary', 'inverted', 'monochrome'],
     description: "icon color",
   },
-  transform: {
+  flip: {
+    type: { name: 'select' },
+    options: [ 'horizontal', 'vertical' ],
+  },
+  rotate: {
     type: { name: 'select' },
     description: 'Button icon transform',
     options: [
-      'rotate-90',
-      'rotate-180',
-      'rotate-270',
-      'flip-horizontal',
-      'flip-vertical',
+      'none',
+      '90',
+      '180',
+      '270',
     ],
+    labels: {
+      '': 'none',
+      90: '90',
+      180: '180',
+      270: '270',
+    },
   },
 };

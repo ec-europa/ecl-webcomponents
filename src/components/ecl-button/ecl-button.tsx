@@ -51,11 +51,7 @@ export class EclButton {
     });
 
     if (this.el.getElementsByTagName('ecl-icon')[0] && this.el.querySelector('.ecl-icon')) {
-      const slot = this.el.getElementsByTagName('ecl-icon')[0].getAttribute('slot');
       this.el.querySelector('.ecl-icon').classList.add('ecl-button__icon', `sc-ecl-button-${this.theme}`);
-      if (slot && !this.hideLabel) {
-        this.el.querySelector('.ecl-icon').classList.add(`ecl-button__${slot.substring(0, 5) + '-' + slot.substring(5)}`);
-      }
     }
   }
 

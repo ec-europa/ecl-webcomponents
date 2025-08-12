@@ -118,7 +118,6 @@ export class EclFile {
     >
       {this.downloadLabel}
       <ecl-icon
-        theme={this.theme}
         icon="download"
         size="fluid"
         slot="icon-after"
@@ -142,7 +141,6 @@ export class EclFile {
             icon="file"
             size={this.theme === 'ec' ? '2xl' : 'm'}
             styleClass={`ecl-file__icon sc-ecl-file-${this.theme}`}
-            theme={this.theme}
           ></ecl-icon> : 
           <div class="ecl-file__detail">
             <div class="ecl-file__detail-info">

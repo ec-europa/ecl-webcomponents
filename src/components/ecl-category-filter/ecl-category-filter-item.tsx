@@ -68,11 +68,10 @@ export class EclCategoryFilterItem {
           {this.label}
           {this.subItems ?
             <ecl-icon
-              theme={this.theme}
               styleClass={`ecl-category-filter__item-icon sc-ecl-category-filter-${this.theme}`}
               icon={this.level === 1 ? 'corner-arrow' : 'solid-arrow'}
               size={this.level === 1 ? 'xs' : 'm'}
-              transform={this.level === 1 ? 'rotate-180' : 'rotate-90'}
+              rotate={this.level === 1 ? '180' : '90'}
               slot={this.level === 1 ? 'icon-after' : 'icon-before'}
             ></ecl-icon> : '' 
           }

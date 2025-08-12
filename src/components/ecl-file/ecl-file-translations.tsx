@@ -45,8 +45,8 @@ export class EclFileTranslations {
           {this.toggleLabel}
           <ecl-icon
             styleClass="ecl-button__icon ecl-button__icon--after"
-            icon="corener-arrow"
-            transform="rotate-180"
+            icon="corner-arrow"
+            rotate="180"
             size="fluid"
           >
           </ecl-icon>

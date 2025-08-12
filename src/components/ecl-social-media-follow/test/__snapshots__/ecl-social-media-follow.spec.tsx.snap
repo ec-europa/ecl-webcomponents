@@ -12,8 +12,8 @@ exports[`ecl-social-media-follow renders 1`] = `
         <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
           <!---->
           <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://facebook.com">
-            <ecl-icon slot="icon-before">
-              <svg class="ecl-icon ecl-icon--m ecl-link__icon ecl-link__icon--before">
+            <ecl-icon class="ecl-link__icon" slot="icon-before">
+              <svg class="ecl-icon ecl-icon--m">
                 <use xlink:href="/build/images/ec/icons-social-media.svg#facebook-color"></use>
               </svg>
             </ecl-icon>
@@ -25,8 +25,8 @@ exports[`ecl-social-media-follow renders 1`] = `
         <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
           <!---->
           <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://twitter.com">
-            <ecl-icon slot="icon-before">
-              <svg class="ecl-icon ecl-icon--m ecl-link__icon ecl-link__icon--before">
+            <ecl-icon class="ecl-link__icon" slot="icon-before">
+              <svg class="ecl-icon ecl-icon--m">
                 <use xlink:href="/build/images/ec/icons-social-media.svg#twitter-color"></use>
               </svg>
             </ecl-icon>
@@ -38,8 +38,8 @@ exports[`ecl-social-media-follow renders 1`] = `
         <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
           <!---->
           <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://instagram.com">
-            <ecl-icon slot="icon-before">
-              <svg class="ecl-icon ecl-icon--m ecl-link__icon ecl-link__icon--before">
+            <ecl-icon class="ecl-link__icon" slot="icon-before">
+              <svg class="ecl-icon ecl-icon--m">
                 <use xlink:href="/build/images/ec/icons-social-media.svg#instagram-color"></use>
               </svg>
             </ecl-icon>
@@ -51,8 +51,8 @@ exports[`ecl-social-media-follow renders 1`] = `
         <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
           <!---->
           <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://linkedin.com">
-            <ecl-icon slot="icon-before">
-              <svg class="ecl-icon ecl-icon--m ecl-link__icon ecl-link__icon--before">
+            <ecl-icon class="ecl-link__icon" slot="icon-before">
+              <svg class="ecl-icon ecl-icon--m">
                 <use xlink:href="/build/images/ec/icons-social-media.svg#linkedin-color"></use>
               </svg>
             </ecl-icon>
@@ -64,8 +64,8 @@ exports[`ecl-social-media-follow renders 1`] = `
         <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
           <!---->
           <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://telegram.com">
-            <ecl-icon slot="icon-before">
-              <svg class="ecl-icon ecl-icon--m ecl-link__icon ecl-link__icon--before">
+            <ecl-icon class="ecl-link__icon" slot="icon-before">
+              <svg class="ecl-icon ecl-icon--m">
                 <use xlink:href="/build/images/ec/icons-social-media.svg#telegram-color"></use>
               </svg>
             </ecl-icon>
@@ -79,9 +79,7 @@ exports[`ecl-social-media-follow renders 1`] = `
           <div class="ecl-popover">
             <a aria-controls="popover-example" aria-expanded="false" class="ecl-link ecl-link--standalone ecl-popover__toggle ecl-social-media-follow__link sc-ecl-link-ec sc-ecl-social-media-follow-ec" data-ecl-popover-toggle="data-ecl-popover-toggle">
               <ecl-icon style-class="ecl-link__icon--before">
-                <svg class="ecl-icon ecl-icon--s ecl-link__icon--before">
-                  <use xlink:href="/build/images/ec/icons.svg#share"></use>
-                </svg>
+                <span class="ecl-icon ecl-link__icon--before wt-icon--placeholder wt-icon--s wt-icon--share"></span>
               </ecl-icon>
               Popover
             </a>

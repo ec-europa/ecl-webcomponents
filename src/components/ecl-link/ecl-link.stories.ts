@@ -10,7 +10,8 @@ const getArgs = () => {
     label: 'An ECL link',
     icon: '',
     iconPosition: 'after',
-    iconTransform: '',
+    iconRotate: '',
+    iconFlip: '',
     indicator: false,
     indicatorValue: 2,
   };
@@ -55,16 +56,24 @@ const getArgTypes = () => {
       description: 'Before or after the link label',
       if: { arg: 'icon', truthy: true },
     },
-    iconTransform: {
+    iconRotate: {
       name: 'icon transform',
       type: { name: 'select' },
       description: 'Link icon transform',
       options: [
-        'rotate-90',
-        'rotate-180',
-        'rotate-270',
-        'flip-horizontal',
-        'flip-vertical',
+        '90',
+        '180',
+        '270',
+      ],
+      if: { arg: 'icon', truthy: true },
+    },
+    iconFlip: {
+      name: 'icon flip',
+      type: { name: 'select' },
+      description: 'Link icon flip',
+      options: [
+        'horizontal',
+        'vertical',
       ],
       if: { arg: 'icon', truthy: true },
     },
@@ -108,6 +117,7 @@ const Template = (args) => {
         slot="icon-before"
         icon="${args.icon}"
         transform="${args.iconTransform}"
+        flip="${args.iconFlip}"
       >
       </ecl-icon>` : '' }
         ${args.label}
@@ -116,6 +126,7 @@ const Template = (args) => {
         slot="icon-after"
         icon="${args.icon}"
         transform="${args.iconTransform}"
+        flip="${args.iconFlip}"
       >
       </ecl-icon>` : '' }
     </ecl-link>`;

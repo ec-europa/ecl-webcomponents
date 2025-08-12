@@ -50,9 +50,7 @@ exports[`ecl-content-item renders 1`] = `
         <ul class="ecl-content-block__secondary-meta-container">
           <li class="ecl-content-block__secondary-meta-item">
             <ecl-icon style-class="ecl-content-block__secondary-meta-icon sc-ecl-content-block-ec">
-              <svg class="ecl-content-block__secondary-meta-icon ecl-icon ecl-icon--s sc-ecl-content-block-ec">
-                <use xlink:href="/build/images/ec/icons.svg#calendar"></use>
-              </svg>
+              <span class="ecl-content-block__secondary-meta-icon ecl-icon sc-ecl-content-block-ec wt-icon--calendar wt-icon--placeholder wt-icon--s"></span>
             </ecl-icon>
             <span class="ecl-content-block__secondary-meta-label">
               2018/10/22
@@ -60,9 +58,7 @@ exports[`ecl-content-item renders 1`] = `
           </li>
           <li class="ecl-content-block__secondary-meta-item">
             <ecl-icon style-class="ecl-content-block__secondary-meta-icon sc-ecl-content-block-ec">
-              <svg class="ecl-content-block__secondary-meta-icon ecl-icon ecl-icon--s sc-ecl-content-block-ec">
-                <use xlink:href="/build/images/ec/icons.svg#location"></use>
-              </svg>
+              <span class="ecl-content-block__secondary-meta-icon ecl-icon sc-ecl-content-block-ec wt-icon--location wt-icon--placeholder wt-icon--s"></span>
             </ecl-icon>
             <span class="ecl-content-block__secondary-meta-label">
               Luxembourg
@@ -137,10 +133,8 @@ exports[`ecl-content-item renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-description-list__definition-item ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before sc-ecl-description-list-ec" href="/example.html">
-                      <ecl-icon slot="icon-before">
-                        <svg class="ecl-icon ecl-icon--xs ecl-link__icon ecl-link__icon--before">
-                          <use xlink:href="/build/images/ec/icons.svg#copy"></use>
-                        </svg>
+                      <ecl-icon class="ecl-link__icon" slot="icon-before">
+                        <span class="ecl-icon wt-icon--copy wt-icon--placeholder wt-icon--xs"></span>
                       </ecl-icon>
                       Lorem ipsum dolor sit amet
                     </a>
@@ -148,10 +142,8 @@ exports[`ecl-content-item renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-description-list__definition-item ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before sc-ecl-description-list-ec" href="/example.html">
-                      <ecl-icon slot="icon-before">
-                        <svg class="ecl-icon ecl-icon--xs ecl-link__icon ecl-link__icon--before">
-                          <use xlink:href="/build/images/ec/icons.svg#download"></use>
-                        </svg>
+                      <ecl-icon class="ecl-link__icon" slot="icon-before">
+                        <span class="ecl-icon wt-icon--download wt-icon--placeholder wt-icon--xs"></span>
                       </ecl-icon>
                       Lorem ipsum dolor sit amet
                     </a>

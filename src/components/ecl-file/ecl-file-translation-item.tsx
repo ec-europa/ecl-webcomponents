@@ -76,7 +76,6 @@ export class EclFileTranslationsItem{
             slot="icon-after"
             size="fluid"
             icon="download"
-            theme={this.theme}
           >
           </ecl-icon>    
         </ecl-link>

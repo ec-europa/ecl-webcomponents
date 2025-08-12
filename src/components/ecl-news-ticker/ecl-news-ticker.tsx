@@ -107,8 +107,7 @@ export class EclNewsTicker {
               icon="corner-arrow"
               size="l"
               color="inverted"
-              transform="rotate-270"
-              theme={this.theme}
+              rotate="270"
             >
             </ecl-icon>
               {this.srPrev}
@@ -127,8 +126,7 @@ export class EclNewsTicker {
               icon="corner-arrow"
               size="l"
               color="inverted"
-              transform="rotate-90"
-              theme={this.theme}
+              rotate="90"
             >
             </ecl-icon>
               {this.srNext}
@@ -147,7 +145,6 @@ export class EclNewsTicker {
               icon="play"
               size="l"
               color="inverted"
-              theme={this.theme}
             >
             </ecl-icon>
             <ecl-icon 
@@ -156,7 +153,6 @@ export class EclNewsTicker {
               icon="play-filled"
               size="l"
               color="inverted"
-              theme={this.theme}
             >
             </ecl-icon>
               {this.srPlay}
@@ -175,7 +171,6 @@ export class EclNewsTicker {
               icon="pause"
               size="l"
               color="inverted"
-              theme={this.theme}
             >
             </ecl-icon>
             <ecl-icon 
@@ -184,7 +179,6 @@ export class EclNewsTicker {
               icon="pause-filled"
               size="l"
               color="inverted"
-              theme={this.theme}
             >
             </ecl-icon>
             {this.srPause}

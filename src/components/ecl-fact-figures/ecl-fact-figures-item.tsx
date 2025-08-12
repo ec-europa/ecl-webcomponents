@@ -31,7 +31,7 @@ export class EclFactFiguresItem {
         <ecl-icon
           icon={this.icon}
           size="m"
-          transform={this.iconTransform}
+          rotate={this.iconTransform}
           style-class={`ecl-fact-figures__icon sc-ecl-fact-figures-item-${this.theme}`}
         ></ecl-icon>
         <div class="ecl-fact-figures__value">{this.value}</div>

@@ -156,11 +156,10 @@ export class EclSelect {
         </select>
         <div class="ecl-select__icon">
           <ecl-icon
-            theme={this.theme}
             style-class={`ecl-select__icon-shape sc-ecl-select-${this.theme}`}
             icon="corner-arrow"
             size="s"
-            transform="rotate-180"
+            rotate="180"
             ></ecl-icon>
         </div>
       </div>
