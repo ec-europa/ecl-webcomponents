@@ -26,6 +26,7 @@
 graph TD;
   ecl-footer-item --> ecl-link
   ecl-link --> ecl-icon
+  ecl-link --> ecl-indicator
   style ecl-footer-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

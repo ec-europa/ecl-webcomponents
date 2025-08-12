@@ -30,6 +30,7 @@ graph TD;
   ecl-popover-item --> ecl-link
   ecl-popover-item --> ecl-icon
   ecl-link --> ecl-icon
+  ecl-link --> ecl-indicator
   style ecl-popover-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

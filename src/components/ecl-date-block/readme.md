@@ -14,8 +14,8 @@
 | `month`      | `month`       |             | `string` | `undefined` |
 | `monthFull`  | `month-full`  |             | `string` | `undefined` |
 | `styleClass` | `style-class` |             | `string` | `''`        |
-| `theme`      | `theme`       |             | `string` | `'ec'`      |
-| `variant`    | `variant`     |             | `string` | `'default'` |
+| `theme`      | `theme`       |             | `string` | `undefined` |
+| `variant`    | `variant`     |             | `string` | `''`        |
 | `year`       | `year`        |             | `string` | `undefined` |
 
 
