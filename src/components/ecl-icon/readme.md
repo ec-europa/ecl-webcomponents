@@ -29,7 +29,6 @@
  - [ecl-category-filter-item](../ecl-category-filter)
  - [ecl-content-block](../ecl-content-block)
  - [ecl-datepicker](../ecl-datepicker)
- - [ecl-description-list-definition](../ecl-description-list)
  - [ecl-expandable](../ecl-expandable)
  - [ecl-fact-figures](../ecl-fact-figures)
  - [ecl-fact-figures-item](../ecl-fact-figures)
@@ -70,7 +69,6 @@ graph TD;
   ecl-category-filter-item --> ecl-icon
   ecl-content-block --> ecl-icon
   ecl-datepicker --> ecl-icon
-  ecl-description-list-definition --> ecl-icon
   ecl-expandable --> ecl-icon
   ecl-fact-figures --> ecl-icon
   ecl-fact-figures-item --> ecl-icon

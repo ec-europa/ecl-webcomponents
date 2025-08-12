@@ -7,7 +7,11 @@ import { Component, Prop, h } from '@stencil/core';
 })
 export class EclDescriptionListTerm {
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
 
   getClass(): string {
     return [
