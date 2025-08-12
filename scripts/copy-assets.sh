@@ -17,7 +17,6 @@ mkdir -p ./build/scripts
 mkdir -p ./build/images
 cp -r ./src/components/ecl-accordion/build ./build
 cp -r ./src/components/ecl-expandable/build ./build
-cp -r ./src/components/ecl-social-media-share/build ./build
 cp -r ./src/components/ecl-media-container/build ./build
 cp -r ./src/components/ecl-message/build ./build
 cp -r ./src/components/ecl-carousel/build ./build
