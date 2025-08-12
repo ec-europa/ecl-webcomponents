@@ -16,8 +16,7 @@ declare const ECL: any;
 export class EclBreadcrumb {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() variant: string = 'default';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() eclScript: boolean = false;
   @Prop() minItemsRight: number = 2;
 
@@ -25,9 +24,12 @@ export class EclBreadcrumb {
   getClass(): string {
     return [
       `ecl-breadcrumb`,
-      `ecl-breadcrumb--${this.variant}`,
       this.styleClass
     ].join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   componentDidRender() {
@@ -74,4 +76,3 @@ export class EclBreadcrumb {
     )
   }
 }
-

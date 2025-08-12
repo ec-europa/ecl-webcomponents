@@ -44,6 +44,7 @@ graph TD;
   ecl-banner --> ecl-link
   ecl-banner --> ecl-icon
   ecl-link --> ecl-icon
+  ecl-link --> ecl-indicator
   ecl-carousel-item --> ecl-banner
   style ecl-banner fill:#f9f,stroke:#333,stroke-width:4px
 ```

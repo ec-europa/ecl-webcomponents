@@ -26,7 +26,7 @@ exports[`ecl-modal renders 1`] = `
                 <span class="ecl-button__label">
                   Close
                   <ecl-icon>
-                    <svg class="ecl-button__icon ecl-icon ecl-icon--s">
+                    <svg class="ecl-button__icon ecl-icon ecl-icon--s sc-ecl-button-ec">
                       <use xlink:href="/build/images/ec/icons.svg#close-filled"></use>
                     </svg>
                   </ecl-icon>

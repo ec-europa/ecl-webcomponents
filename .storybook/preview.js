@@ -1,9 +1,21 @@
 import { defineCustomElements } from '@ecl/ecl-webcomponents/loader';
 import { INITIAL_VIEWPORTS } from 'storybook/viewport';
+import { BADGE_LOCATION } from '@geometricpanda/storybook-addon-badges';
 
 defineCustomElements();
 
 export const parameters = {
+  badgesConfig: {
+    updated: {
+      styles: {
+        backgroundColor: '#018786',
+        borderColor: '#273d39',
+        color: '#FFF',
+      },
+      title: 'Updated to v5',
+      tooltip: 'This component has been updated to match the ECL markup and v5 styles',
+    },
+  },
   docs: {
     codePanel: true,
     canvas: { sourceState: 'shown' },
@@ -100,3 +112,11 @@ export const args = {
   theme: 'ec',
   color_mode: 'default',
 };
+
+export const decorators = [
+  (Story, context) => {
+    const theme = context.args.theme || 'ec';
+    document.documentElement.setAttribute('data-ecl-theme', theme);
+    return Story();
+  },
+];

@@ -12,7 +12,7 @@ import { Component, h, Prop, Element } from '@stencil/core';
 
 export class EclDivider {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
 
   getClass(): string {
@@ -22,6 +22,10 @@ export class EclDivider {
     ];
 
     return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {

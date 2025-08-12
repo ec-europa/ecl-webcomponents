@@ -11,7 +11,7 @@ import { Component, Prop, h } from '@stencil/core';
 })
 export class EclBlockquote {
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() image: string;
   @Prop() author: string;
   @Prop() imageAlt: string;
@@ -29,6 +29,10 @@ export class EclBlockquote {
     }
 
     return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {

@@ -28,6 +28,7 @@
 graph TD;
   ecl-timeline-item --> ecl-button
   ecl-timeline-item --> ecl-icon
+  ecl-button --> ecl-indicator
   style ecl-timeline-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

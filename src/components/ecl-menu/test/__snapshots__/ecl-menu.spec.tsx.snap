@@ -46,10 +46,10 @@ exports[`ecl-menu renders 1`] = `
         </header>
         <ecl-button data-ecl-menu-items-previous tabindex="-1">
           <!---->
-          <button class="ecl-button ecl-button--ghost ecl-menu__item ecl-menu__items-previous sc-ecl-menu-ec" data-ecl-menu-items-previous="eclMenuItemsPrevious" type="button">
+          <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-menu__item ecl-menu__items-previous sc-ecl-menu-ec" data-ecl-menu-items-previous="eclMenuItemsPrevious" type="button">
             <span class="ecl-button__container">
               <ecl-icon slot="icon-before">
-                <svg class="ecl-button__icon ecl-icon ecl-icon--rotate-270 ecl-icon--s">
+                <svg class="ecl-button__icon ecl-icon ecl-icon--rotate-270 ecl-icon--s sc-ecl-button-ec">
                   <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
                 </svg>
               </ecl-icon>
@@ -61,10 +61,10 @@ exports[`ecl-menu renders 1`] = `
         </ecl-button>
         <ecl-button data-ecl-menu-items-next tabindex="-1">
           <!---->
-          <button class="ecl-button ecl-button--ghost ecl-menu__item ecl-menu__items-next sc-ecl-menu-ec" data-ecl-menu-items-next="eclMenuItemsNext" type="button">
+          <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-menu__item ecl-menu__items-next sc-ecl-menu-ec" data-ecl-menu-items-next="eclMenuItemsNext" type="button">
             <span class="ecl-button__container">
               <ecl-icon slot="icon-before">
-                <svg class="ecl-button__icon ecl-icon ecl-icon--rotate-270 ecl-icon--s">
+                <svg class="ecl-button__icon ecl-icon ecl-icon--rotate-270 ecl-icon--s sc-ecl-button-ec">
                   <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
                 </svg>
               </ecl-icon>

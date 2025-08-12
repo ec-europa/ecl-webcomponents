@@ -49,12 +49,14 @@ graph TD;
   ecl-site-header --> ecl-icon
   ecl-site-header --> ecl-search-form
   ecl-link --> ecl-icon
+  ecl-link --> ecl-indicator
   ecl-search-form --> ecl-form-group
   ecl-search-form --> ecl-input
   ecl-search-form --> ecl-button
   ecl-search-form --> ecl-icon
   ecl-form-group --> ecl-icon
   ecl-input --> ecl-icon
+  ecl-button --> ecl-indicator
   style ecl-site-header fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
