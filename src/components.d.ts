@@ -356,6 +356,10 @@ export namespace Components {
     }
     interface EclDescriptionList {
         /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
           * @default false
          */
         "eclScript": boolean;
@@ -364,9 +368,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'vertical'
@@ -384,9 +385,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'text'
@@ -398,9 +396,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclDivider {
@@ -2730,6 +2725,10 @@ declare namespace LocalJSX {
     }
     interface EclDescriptionList {
         /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
           * @default false
          */
         "eclScript"?: boolean;
@@ -2738,9 +2737,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'vertical'
@@ -2758,9 +2754,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'text'
@@ -2772,9 +2765,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclDivider {

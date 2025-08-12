@@ -44,6 +44,14 @@ describe('ecl-description-list', () => {
           items='[{"label": "Lorem ipsum dolor sit amet", "path": "/example.html"},{"label": "Lorem ipsum dolor sit amet", "path": "/example.html"}]'
         >
         </ecl-description-list-definition>
+        <ecl-description-list-term>
+          Tag list
+        </ecl-description-list-term>
+        <ecl-description-list-definition
+          type="tag"
+          items='[{"label": "Link tag", "url": "/example.html"},{"label": "Long link tag", "url": "/example.html"}]'
+        >
+        </ecl-description-list-definition>
         <ecl-description-list-term
           theme="ec"
         >
