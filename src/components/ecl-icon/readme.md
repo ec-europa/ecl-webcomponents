@@ -38,7 +38,6 @@
  - [ecl-form-group](../ecl-form-group)
  - [ecl-gallery](../ecl-gallery)
  - [ecl-gallery-item](../ecl-gallery)
- - [ecl-hero-banner](../ecl-hero-banner)
  - [ecl-inpage-navigation](../ecl-inpage-navigation)
  - [ecl-input](../ecl-input)
  - [ecl-link](../ecl-link)
@@ -48,7 +47,6 @@
  - [ecl-message](../ecl-message)
  - [ecl-modal](../ecl-modal)
  - [ecl-news-ticker](../ecl-news-ticker)
- - [ecl-page-banner](../ecl-page-banner)
  - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover](../ecl-popover)
  - [ecl-popover-item](../ecl-popover)
@@ -80,7 +78,6 @@ graph TD;
   ecl-form-group --> ecl-icon
   ecl-gallery --> ecl-icon
   ecl-gallery-item --> ecl-icon
-  ecl-hero-banner --> ecl-icon
   ecl-inpage-navigation --> ecl-icon
   ecl-input --> ecl-icon
   ecl-link --> ecl-icon
@@ -90,7 +87,6 @@ graph TD;
   ecl-message --> ecl-icon
   ecl-modal --> ecl-icon
   ecl-news-ticker --> ecl-icon
-  ecl-page-banner --> ecl-icon
   ecl-pagination-item --> ecl-icon
   ecl-popover --> ecl-icon
   ecl-popover-item --> ecl-icon
