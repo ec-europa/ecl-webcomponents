@@ -1,0 +1,4 @@
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/separator/separator' with (
+  $separator: var.$separator
+);

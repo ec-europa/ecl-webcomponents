@@ -15,7 +15,6 @@ exports[`ecl-pagination renders 1`] = `
               </svg>
             </ecl-icon>
             Previous
-            <slot-fb name="icon-after"></slot-fb>
           </a>
         </ecl-link>
       </li>
@@ -24,7 +23,6 @@ exports[`ecl-pagination renders 1`] = `
           <!---->
           <a aria-label="Page 24" class="ecl-link ecl-link--standalone sc-ecl-pagination-ec" href="/example.html">
             24
-            <slot-fb name="icon-after"></slot-fb>
           </a>
         </ecl-link>
       </li>
@@ -33,7 +31,6 @@ exports[`ecl-pagination renders 1`] = `
           <!---->
           <a aria-label="Page 25" class="ecl-link ecl-link--standalone sc-ecl-pagination-ec" href="/example.html">
             25
-            <slot-fb name="icon-after"></slot-fb>
           </a>
         </ecl-link>
       </li>
@@ -50,7 +47,6 @@ exports[`ecl-pagination renders 1`] = `
           <!---->
           <a aria-label="Page 27" class="ecl-link ecl-link--standalone sc-ecl-pagination-ec" href="/example.html">
             27
-            <slot-fb name="icon-after"></slot-fb>
           </a>
         </ecl-link>
       </li>
@@ -59,7 +55,6 @@ exports[`ecl-pagination renders 1`] = `
           <!---->
           <a aria-label="Page 28" class="ecl-link ecl-link--standalone sc-ecl-pagination-ec">
             28
-            <slot-fb name="icon-after"></slot-fb>
           </a>
         </ecl-link>
       </li>

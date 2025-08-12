@@ -1,7 +1,16 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-component-button/button-ec';
-@use '@ecl/vanilla-component-expandable/expandable-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/button/button' with (
+  $theme: theme.$theme,
+  $button: var.$button
+);
+@use '@ecl/expandable/expandable' with (
+  $theme: theme.$theme,
+  $expandable: var.$expandable
+);
 
-.ecl-expandable__content p {
+.ecl-expandable__content {
+  border-bottom: 1px solid var(--cm-border-neutral);
+  font: var(--f-m);
   max-width: 80ch;
 }
