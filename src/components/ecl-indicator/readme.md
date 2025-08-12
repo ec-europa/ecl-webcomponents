@@ -19,11 +19,13 @@
 ### Used by
 
  - [ecl-button](../ecl-button)
+ - [ecl-link](../ecl-link)
 
 ### Graph
 ```mermaid
 graph TD;
   ecl-button --> ecl-indicator
+  ecl-link --> ecl-indicator
   style ecl-indicator fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

@@ -117,6 +117,11 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/blockquote',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = (args) => 

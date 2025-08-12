@@ -10,30 +10,39 @@ import { Component, Prop, h, State, Event, EventEmitter } from '@stencil/core';
   scoped: true,
 })
 export class EclTag {
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() external: boolean = false;
-  @Prop() variant: string = 'display';
+  @Prop() colorMode: string;
+  @Prop() variant: string = 'link';
   @Prop() url: string = '';
+  @Prop() noWrap: boolean = false;
   @State() toBeRemoved: boolean = false;
 
   @Event() removeTag: EventEmitter<boolean>;
 
   getClass(): string {
-    return [
+    const styleClasses = [
       `ecl-tag`,
       `ecl-tag--${this.variant}`,
       this.styleClass
-    ].join(' ');
+    ];
+
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`);
+    }
+
+    if (this.noWrap) {
+      styleClasses.push('ecl-tag--nowrap');
+    }
+
+    return styleClasses.join(' ');
   }
 
   getTag(variant) {
     switch (variant) {
       case 'link':
         return 'a';
-
-      case 'display':
-        return 'span';
 
       case 'removable':
         return 'button';
@@ -63,16 +72,17 @@ export class EclTag {
         }}
       >
         <ecl-icon 
-          icon="close"
+          icon="close-outline"
           style-class={`ecl-tag__icon-close sc-ecl-tag-${this.theme}`}
+          size="xs"
         >
         </ecl-icon>
-        <ecl-icon
-          icon="close-filled"
-          style-class={`ecl-tag__icon-close-filled sc-ecl-tag-${this.theme}`}
-        ></ecl-icon>
       </span>
     )
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {
@@ -81,6 +91,7 @@ export class EclTag {
       <Element 
         class={this.getClass()}
         {...(this.variant === 'link' && { href: this.url })}
+        {...(this.variant === 'removable' && { type: 'button' })}
       >
         <slot></slot>
         { this.variant === 'link' && this.external ? this.getExternal() : '' }

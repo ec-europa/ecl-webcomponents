@@ -11,7 +11,7 @@ exports[`ecl-search-form renders 1`] = `
     </ecl-form-group>
     <ecl-button aria-label="Search" style-class="ecl-search-form__button sc-ecl-search-form-ec">
       <!---->
-      <button class="ecl-button ecl-button--ghost ecl-search-form__button sc-ecl-search-form-ec" type="search">
+      <button aria-label="Search" class="ecl-button ecl-button--ghost ecl-search-form__button sc-ecl-search-form-ec" type="search">
         <span class="ecl-button__container">
           <ecl-icon slot="icon-before" style-class="sc-ecl-search-form-ec">
             <svg class="ecl-button__icon ecl-button__icon--before ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-search-form-ec">

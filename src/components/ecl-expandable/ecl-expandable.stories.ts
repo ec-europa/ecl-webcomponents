@@ -5,7 +5,7 @@ export default {
 const Template = (args) =>
   `<ecl-expandable
     theme="${args.theme}"
-    id="${args.id}"
+    el-id="${args.elId}"
     label-collapsed="${args.labelCollapsed}"
     label-expanded="${args.labelExpanded}"
     ecl-script
@@ -16,7 +16,7 @@ const Template = (args) =>
 export const Expandable = Template.bind({});
 Expandable.storyName = 'default';
 Expandable.args = {
-  id: 'expandable-example',
+  elId: 'expandable-example',
   labelCollapsed: 'Expand',
   labelExpanded: 'Collapse',
   content: `<p>The EU is building an energy union that ensures Europe’s energy supply is safe,
@@ -24,7 +24,8 @@ Expandable.args = {
     opportunities.</p>`,
 };
 Expandable.argTypes = {
-  id: {
+  elId: {
+    name: 'el-id',
     description: 'Id of the element',
   },
   labelCollapsed: {

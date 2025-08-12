@@ -93,14 +93,7 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
-        /**
-          * @default 'default'
-         */
-        "variant": string;
     }
     interface EclBreadcrumbItem {
         /**
@@ -117,11 +110,7 @@ export namespace Components {
         "ellipsis": boolean;
         "path": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
-        "variant": string;
     }
     interface EclButton {
         "ariaControls": string;
@@ -414,11 +403,19 @@ export namespace Components {
          */
         "theme": string;
     }
+    interface EclDivider {
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclExpandable {
         /**
           * @default false
          */
         "eclScript": boolean;
+        /**
+          * @default `ecl-expandable-${Math.random().toString(36).substr(2, 9)}`
+         */
+        "elId": string;
         /**
           * @default false
          */
@@ -435,12 +432,17 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclFactFigures {
+        /**
+          * @default false
+         */
+        "centered": boolean;
+        /**
+          * @default ''
+         */
+        "colorMode": string;
         /**
           * @default 3
          */
@@ -449,20 +451,30 @@ export namespace Components {
           * @default true
          */
         "displayIcons": boolean;
-        "styleClass": string;
         /**
-          * @default 'ec'
+          * @default 'l'
          */
+        "fontSize": string;
+        /**
+          * @default 'm'
+         */
+        "iconSize": string;
+        "styleClass": string;
         "theme": string;
+        /**
+          * @default ''
+         */
+        "viewAllLinkLabel": string;
+        /**
+          * @default ''
+         */
+        "viewAllLinkPath": string;
     }
     interface EclFactFiguresItem {
         "icon": string;
         "iconTransform": string;
         "itemTitle": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "value": string;
     }
@@ -752,34 +764,6 @@ export namespace Components {
          */
         "theme": string;
     }
-    interface EclHeroBanner {
-        "bannerTitle": string;
-        /**
-          * @default true
-         */
-        "centered": boolean;
-        "credit": string;
-        "ctaLabel": string;
-        "ctaLink": string;
-        /**
-          * @default false
-         */
-        "external": boolean;
-        /**
-          * @default false
-         */
-        "fullWidth": boolean;
-        "image": string;
-        "styleClass": string;
-        /**
-          * @default 'ec'
-         */
-        "theme": string;
-        /**
-          * @default 'display'
-         */
-        "variant": string;
-    }
     interface EclIcon {
         /**
           * @default ''
@@ -926,13 +910,24 @@ export namespace Components {
           * @default false
          */
         "external": boolean;
+        /**
+          * @default false
+         */
+        "indicator": boolean;
+        "indicatorValue": string;
+        /**
+          * @default false
+         */
+        "inverted": boolean;
         "name": string;
+        /**
+          * @default false
+         */
+        "noVisited": boolean;
         "path": string;
+        "srExternal": string;
         "styleClass": string;
         "target": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "titleAttr": string;
         /**
@@ -1174,34 +1169,6 @@ export namespace Components {
           * @default 'ec'
          */
         "theme": string;
-    }
-    interface EclPageBanner {
-        "bannerTitle": string;
-        /**
-          * @default true
-         */
-        "centered": boolean;
-        "credit": string;
-        "ctaLabel": string;
-        "ctaLink": string;
-        /**
-          * @default false
-         */
-        "external": boolean;
-        /**
-          * @default false
-         */
-        "fullWidth": boolean;
-        "image": string;
-        "styleClass": string;
-        /**
-          * @default 'ec'
-         */
-        "theme": string;
-        /**
-          * @default 'display'
-         */
-        "variant": string;
     }
     interface EclPageHeader {
         "headerTitle": string;
@@ -1630,23 +1597,30 @@ export namespace Components {
         "visible": boolean;
     }
     interface EclTag {
+        "colorMode": string;
         /**
           * @default false
          */
         "external": boolean;
-        "styleClass": string;
         /**
-          * @default 'ec'
+          * @default false
          */
+        "noWrap": boolean;
+        "styleClass": string;
         "theme": string;
         /**
           * @default ''
          */
         "url": string;
         /**
-          * @default 'display'
+          * @default 'link'
          */
         "variant": string;
+    }
+    interface EclTagSet {
+        "colorMode": string;
+        "styleClass": string;
+        "theme": string;
     }
     interface EclText {
         /**
@@ -1896,6 +1870,12 @@ declare global {
         prototype: HTMLEclDescriptionListTermElement;
         new (): HTMLEclDescriptionListTermElement;
     };
+    interface HTMLEclDividerElement extends Components.EclDivider, HTMLStencilElement {
+    }
+    var HTMLEclDividerElement: {
+        prototype: HTMLEclDividerElement;
+        new (): HTMLEclDividerElement;
+    };
     interface HTMLEclExpandableElement extends Components.EclExpandable, HTMLStencilElement {
     }
     var HTMLEclExpandableElement: {
@@ -1979,12 +1959,6 @@ declare global {
     var HTMLEclGridElement: {
         prototype: HTMLEclGridElement;
         new (): HTMLEclGridElement;
-    };
-    interface HTMLEclHeroBannerElement extends Components.EclHeroBanner, HTMLStencilElement {
-    }
-    var HTMLEclHeroBannerElement: {
-        prototype: HTMLEclHeroBannerElement;
-        new (): HTMLEclHeroBannerElement;
     };
     interface HTMLEclIconElement extends Components.EclIcon, HTMLStencilElement {
     }
@@ -2112,12 +2086,6 @@ declare global {
     var HTMLEclNewsTickerItemElement: {
         prototype: HTMLEclNewsTickerItemElement;
         new (): HTMLEclNewsTickerItemElement;
-    };
-    interface HTMLEclPageBannerElement extends Components.EclPageBanner, HTMLStencilElement {
-    }
-    var HTMLEclPageBannerElement: {
-        prototype: HTMLEclPageBannerElement;
-        new (): HTMLEclPageBannerElement;
     };
     interface HTMLEclPageHeaderElement extends Components.EclPageHeader, HTMLStencilElement {
     }
@@ -2283,6 +2251,12 @@ declare global {
         prototype: HTMLEclTagElement;
         new (): HTMLEclTagElement;
     };
+    interface HTMLEclTagSetElement extends Components.EclTagSet, HTMLStencilElement {
+    }
+    var HTMLEclTagSetElement: {
+        prototype: HTMLEclTagSetElement;
+        new (): HTMLEclTagSetElement;
+    };
     interface HTMLEclTextElement extends Components.EclText, HTMLStencilElement {
     }
     var HTMLEclTextElement: {
@@ -2340,6 +2314,7 @@ declare global {
         "ecl-description-list": HTMLEclDescriptionListElement;
         "ecl-description-list-definition": HTMLEclDescriptionListDefinitionElement;
         "ecl-description-list-term": HTMLEclDescriptionListTermElement;
+        "ecl-divider": HTMLEclDividerElement;
         "ecl-expandable": HTMLEclExpandableElement;
         "ecl-fact-figures": HTMLEclFactFiguresElement;
         "ecl-fact-figures-item": HTMLEclFactFiguresItemElement;
@@ -2354,7 +2329,6 @@ declare global {
         "ecl-gallery": HTMLEclGalleryElement;
         "ecl-gallery-item": HTMLEclGalleryItemElement;
         "ecl-grid": HTMLEclGridElement;
-        "ecl-hero-banner": HTMLEclHeroBannerElement;
         "ecl-icon": HTMLEclIconElement;
         "ecl-indicator": HTMLEclIndicatorElement;
         "ecl-inpage-navigation": HTMLEclInpageNavigationElement;
@@ -2374,7 +2348,6 @@ declare global {
         "ecl-navigation-list-item": HTMLEclNavigationListItemElement;
         "ecl-news-ticker": HTMLEclNewsTickerElement;
         "ecl-news-ticker-item": HTMLEclNewsTickerItemElement;
-        "ecl-page-banner": HTMLEclPageBannerElement;
         "ecl-page-header": HTMLEclPageHeaderElement;
         "ecl-pagination": HTMLEclPaginationElement;
         "ecl-pagination-item": HTMLEclPaginationItemElement;
@@ -2394,6 +2367,7 @@ declare global {
         "ecl-spacing": HTMLEclSpacingElement;
         "ecl-spinner": HTMLEclSpinnerElement;
         "ecl-tag": HTMLEclTagElement;
+        "ecl-tag-set": HTMLEclTagSetElement;
         "ecl-text": HTMLEclTextElement;
         "ecl-textarea": HTMLEclTextareaElement;
         "ecl-timeline": HTMLEclTimelineElement;
@@ -2489,14 +2463,7 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
-        /**
-          * @default 'default'
-         */
-        "variant"?: string;
     }
     interface EclBreadcrumbItem {
         /**
@@ -2513,11 +2480,7 @@ declare namespace LocalJSX {
         "ellipsis"?: boolean;
         "path"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
-        "variant"?: string;
     }
     interface EclButton {
         "ariaControls"?: string;
@@ -2813,11 +2776,19 @@ declare namespace LocalJSX {
          */
         "theme"?: string;
     }
+    interface EclDivider {
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclExpandable {
         /**
           * @default false
          */
         "eclScript"?: boolean;
+        /**
+          * @default `ecl-expandable-${Math.random().toString(36).substr(2, 9)}`
+         */
+        "elId"?: string;
         /**
           * @default false
          */
@@ -2834,12 +2805,17 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclFactFigures {
+        /**
+          * @default false
+         */
+        "centered"?: boolean;
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
         /**
           * @default 3
          */
@@ -2848,20 +2824,30 @@ declare namespace LocalJSX {
           * @default true
          */
         "displayIcons"?: boolean;
-        "styleClass"?: string;
         /**
-          * @default 'ec'
+          * @default 'l'
          */
+        "fontSize"?: string;
+        /**
+          * @default 'm'
+         */
+        "iconSize"?: string;
+        "styleClass"?: string;
         "theme"?: string;
+        /**
+          * @default ''
+         */
+        "viewAllLinkLabel"?: string;
+        /**
+          * @default ''
+         */
+        "viewAllLinkPath"?: string;
     }
     interface EclFactFiguresItem {
         "icon"?: string;
         "iconTransform"?: string;
         "itemTitle"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "value"?: string;
     }
@@ -3151,34 +3137,6 @@ declare namespace LocalJSX {
          */
         "theme"?: string;
     }
-    interface EclHeroBanner {
-        "bannerTitle"?: string;
-        /**
-          * @default true
-         */
-        "centered"?: boolean;
-        "credit"?: string;
-        "ctaLabel"?: string;
-        "ctaLink"?: string;
-        /**
-          * @default false
-         */
-        "external"?: boolean;
-        /**
-          * @default false
-         */
-        "fullWidth"?: boolean;
-        "image"?: string;
-        "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
-        "theme"?: string;
-        /**
-          * @default 'display'
-         */
-        "variant"?: string;
-    }
     interface EclIcon {
         /**
           * @default ''
@@ -3328,13 +3286,24 @@ declare namespace LocalJSX {
           * @default false
          */
         "external"?: boolean;
+        /**
+          * @default false
+         */
+        "indicator"?: boolean;
+        "indicatorValue"?: string;
+        /**
+          * @default false
+         */
+        "inverted"?: boolean;
         "name"?: string;
+        /**
+          * @default false
+         */
+        "noVisited"?: boolean;
         "path"?: string;
+        "srExternal"?: string;
         "styleClass"?: string;
         "target"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "titleAttr"?: string;
         /**
@@ -3576,34 +3545,6 @@ declare namespace LocalJSX {
           * @default 'ec'
          */
         "theme"?: string;
-    }
-    interface EclPageBanner {
-        "bannerTitle"?: string;
-        /**
-          * @default true
-         */
-        "centered"?: boolean;
-        "credit"?: string;
-        "ctaLabel"?: string;
-        "ctaLink"?: string;
-        /**
-          * @default false
-         */
-        "external"?: boolean;
-        /**
-          * @default false
-         */
-        "fullWidth"?: boolean;
-        "image"?: string;
-        "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
-        "theme"?: string;
-        /**
-          * @default 'display'
-         */
-        "variant"?: string;
     }
     interface EclPageHeader {
         "headerTitle"?: string;
@@ -4041,24 +3982,31 @@ declare namespace LocalJSX {
         "visible"?: boolean;
     }
     interface EclTag {
+        "colorMode"?: string;
         /**
           * @default false
          */
         "external"?: boolean;
+        /**
+          * @default false
+         */
+        "noWrap"?: boolean;
         "onRemoveTag"?: (event: EclTagCustomEvent<boolean>) => void;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default ''
          */
         "url"?: string;
         /**
-          * @default 'display'
+          * @default 'link'
          */
         "variant"?: string;
+    }
+    interface EclTagSet {
+        "colorMode"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
     }
     interface EclText {
         /**
@@ -4159,6 +4107,7 @@ declare namespace LocalJSX {
         "ecl-description-list": EclDescriptionList;
         "ecl-description-list-definition": EclDescriptionListDefinition;
         "ecl-description-list-term": EclDescriptionListTerm;
+        "ecl-divider": EclDivider;
         "ecl-expandable": EclExpandable;
         "ecl-fact-figures": EclFactFigures;
         "ecl-fact-figures-item": EclFactFiguresItem;
@@ -4173,7 +4122,6 @@ declare namespace LocalJSX {
         "ecl-gallery": EclGallery;
         "ecl-gallery-item": EclGalleryItem;
         "ecl-grid": EclGrid;
-        "ecl-hero-banner": EclHeroBanner;
         "ecl-icon": EclIcon;
         "ecl-indicator": EclIndicator;
         "ecl-inpage-navigation": EclInpageNavigation;
@@ -4193,7 +4141,6 @@ declare namespace LocalJSX {
         "ecl-navigation-list-item": EclNavigationListItem;
         "ecl-news-ticker": EclNewsTicker;
         "ecl-news-ticker-item": EclNewsTickerItem;
-        "ecl-page-banner": EclPageBanner;
         "ecl-page-header": EclPageHeader;
         "ecl-pagination": EclPagination;
         "ecl-pagination-item": EclPaginationItem;
@@ -4213,6 +4160,7 @@ declare namespace LocalJSX {
         "ecl-spacing": EclSpacing;
         "ecl-spinner": EclSpinner;
         "ecl-tag": EclTag;
+        "ecl-tag-set": EclTagSet;
         "ecl-text": EclText;
         "ecl-textarea": EclTextarea;
         "ecl-timeline": EclTimeline;
@@ -4242,6 +4190,7 @@ declare module "@stencil/core" {
             "ecl-description-list": LocalJSX.EclDescriptionList & JSXBase.HTMLAttributes<HTMLEclDescriptionListElement>;
             "ecl-description-list-definition": LocalJSX.EclDescriptionListDefinition & JSXBase.HTMLAttributes<HTMLEclDescriptionListDefinitionElement>;
             "ecl-description-list-term": LocalJSX.EclDescriptionListTerm & JSXBase.HTMLAttributes<HTMLEclDescriptionListTermElement>;
+            "ecl-divider": LocalJSX.EclDivider & JSXBase.HTMLAttributes<HTMLEclDividerElement>;
             "ecl-expandable": LocalJSX.EclExpandable & JSXBase.HTMLAttributes<HTMLEclExpandableElement>;
             "ecl-fact-figures": LocalJSX.EclFactFigures & JSXBase.HTMLAttributes<HTMLEclFactFiguresElement>;
             "ecl-fact-figures-item": LocalJSX.EclFactFiguresItem & JSXBase.HTMLAttributes<HTMLEclFactFiguresItemElement>;
@@ -4256,7 +4205,6 @@ declare module "@stencil/core" {
             "ecl-gallery": LocalJSX.EclGallery & JSXBase.HTMLAttributes<HTMLEclGalleryElement>;
             "ecl-gallery-item": LocalJSX.EclGalleryItem & JSXBase.HTMLAttributes<HTMLEclGalleryItemElement>;
             "ecl-grid": LocalJSX.EclGrid & JSXBase.HTMLAttributes<HTMLEclGridElement>;
-            "ecl-hero-banner": LocalJSX.EclHeroBanner & JSXBase.HTMLAttributes<HTMLEclHeroBannerElement>;
             "ecl-icon": LocalJSX.EclIcon & JSXBase.HTMLAttributes<HTMLEclIconElement>;
             "ecl-indicator": LocalJSX.EclIndicator & JSXBase.HTMLAttributes<HTMLEclIndicatorElement>;
             "ecl-inpage-navigation": LocalJSX.EclInpageNavigation & JSXBase.HTMLAttributes<HTMLEclInpageNavigationElement>;
@@ -4276,7 +4224,6 @@ declare module "@stencil/core" {
             "ecl-navigation-list-item": LocalJSX.EclNavigationListItem & JSXBase.HTMLAttributes<HTMLEclNavigationListItemElement>;
             "ecl-news-ticker": LocalJSX.EclNewsTicker & JSXBase.HTMLAttributes<HTMLEclNewsTickerElement>;
             "ecl-news-ticker-item": LocalJSX.EclNewsTickerItem & JSXBase.HTMLAttributes<HTMLEclNewsTickerItemElement>;
-            "ecl-page-banner": LocalJSX.EclPageBanner & JSXBase.HTMLAttributes<HTMLEclPageBannerElement>;
             "ecl-page-header": LocalJSX.EclPageHeader & JSXBase.HTMLAttributes<HTMLEclPageHeaderElement>;
             "ecl-pagination": LocalJSX.EclPagination & JSXBase.HTMLAttributes<HTMLEclPaginationElement>;
             "ecl-pagination-item": LocalJSX.EclPaginationItem & JSXBase.HTMLAttributes<HTMLEclPaginationItemElement>;
@@ -4296,6 +4243,7 @@ declare module "@stencil/core" {
             "ecl-spacing": LocalJSX.EclSpacing & JSXBase.HTMLAttributes<HTMLEclSpacingElement>;
             "ecl-spinner": LocalJSX.EclSpinner & JSXBase.HTMLAttributes<HTMLEclSpinnerElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
+            "ecl-tag-set": LocalJSX.EclTagSet & JSXBase.HTMLAttributes<HTMLEclTagSetElement>;
             "ecl-text": LocalJSX.EclText & JSXBase.HTMLAttributes<HTMLEclTextElement>;
             "ecl-textarea": LocalJSX.EclTextarea & JSXBase.HTMLAttributes<HTMLEclTextareaElement>;
             "ecl-timeline": LocalJSX.EclTimeline & JSXBase.HTMLAttributes<HTMLEclTimelineElement>;
