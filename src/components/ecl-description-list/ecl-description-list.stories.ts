@@ -14,6 +14,7 @@ const Template = (args) =>
     variant="${args.variant}"
     visible-items="${args.visibleItems}"
     more-label="See all items"
+    color-mode="${args.color_mode}"
     ecl-script
   >
     <ecl-description-list-term>
