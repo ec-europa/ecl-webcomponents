@@ -97,7 +97,7 @@ const TemplateWithTranslation = args =>
   aria-label="Download file State of the Union 2018 brochure"
   taxonomies-label="Taxonomy list"
   taxonomies='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"}]'
-  labels='${args.labels || args.variant === 'thumbnail' ? '[{"variant": "highlight", "label": "Highlighted"}]' : ''}'
+  labels='${args.labels && args.variant === 'thumbnail' ? '[{"variant": "highlight", "label": "Highlighted"}]' : ''}'
 >
   ${args.variant === 'thumbnail' ? args.description : ''}
   <ecl-file-translations
