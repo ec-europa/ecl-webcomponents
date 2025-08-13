@@ -17,7 +17,6 @@ exports[`ecl-news-ticker renders 1`] = `
               <!---->
               <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-                <slot-fb name="icon-after"></slot-fb>
               </a>
             </ecl-link>
           </li>
@@ -31,7 +30,6 @@ exports[`ecl-news-ticker renders 1`] = `
               <!---->
               <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                <slot-fb name="icon-after"></slot-fb>
               </a>
             </ecl-link>
           </li>
@@ -40,7 +38,6 @@ exports[`ecl-news-ticker renders 1`] = `
               <!---->
               <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                <slot-fb name="icon-after"></slot-fb>
               </a>
             </ecl-link>
           </li>
@@ -54,7 +51,6 @@ exports[`ecl-news-ticker renders 1`] = `
               <!---->
               <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
                 Excepteur sint occaecat cupidatat officia deserunt mollit anim id est laborum
-                <slot-fb name="icon-after"></slot-fb>
               </a>
             </ecl-link>
           </li>
@@ -68,7 +64,6 @@ exports[`ecl-news-ticker renders 1`] = `
               <!---->
               <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                <slot-fb name="icon-after"></slot-fb>
               </a>
             </ecl-link>
           </li>
@@ -77,7 +72,6 @@ exports[`ecl-news-ticker renders 1`] = `
               <!---->
               <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores
-                <slot-fb name="icon-after"></slot-fb>
               </a>
             </ecl-link>
           </li>
@@ -88,7 +82,7 @@ exports[`ecl-news-ticker renders 1`] = `
       <div class="ecl-news-ticker__actions">
         <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-news-ticker__prev sc-ecl-news-ticker-ec" data-ecl-news-ticker-prev="eclNewsTickerPrev" type="button">
           <span class="ecl-button__container">
-            <span class="ecl-u-sr-only" data-ecl-label>
+            <span class="ecl-button__label" data-ecl-label>
               Prev item
             </span>
             <ecl-icon slot="icon-after">
@@ -100,7 +94,7 @@ exports[`ecl-news-ticker renders 1`] = `
         </button>
         <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-news-ticker__play sc-ecl-news-ticker-ec" data-ecl-news-ticker-play="eclNewsTickerPlay" type="button">
           <span class="ecl-button__container">
-            <span class="ecl-u-sr-only" data-ecl-label></span>
+            <span class="ecl-button__label" data-ecl-label></span>
             <ecl-icon slot="icon-after">
               <svg class="ecl-button__icon ecl-icon ecl-icon--l ecl-news-ticker__icon-active sc-ecl-button-ec sc-ecl-news-ticker-ec">
                 <use xlink:href="/build/images/ec/icons.svg#play-outline"></use>
@@ -110,7 +104,7 @@ exports[`ecl-news-ticker renders 1`] = `
         </button>
         <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-news-ticker__pause sc-ecl-news-ticker-ec" data-ecl-news-ticker-pause="eclNewsTickerPause" type="button">
           <span class="ecl-button__container">
-            <span class="ecl-u-sr-only" data-ecl-label>
+            <span class="ecl-button__label" data-ecl-label>
               Pause news ticker
             </span>
             <ecl-icon slot="icon-after">
@@ -122,7 +116,7 @@ exports[`ecl-news-ticker renders 1`] = `
         </button>
         <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-news-ticker__next sc-ecl-news-ticker-ec" data-ecl-news-ticker-next="eclNewsTickerNext" type="button">
           <span class="ecl-button__container">
-            <span class="ecl-u-sr-only" data-ecl-label>
+            <span class="ecl-button__label" data-ecl-label>
               Next item
             </span>
             <ecl-icon slot="icon-after">
