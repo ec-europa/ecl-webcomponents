@@ -1170,18 +1170,16 @@ export namespace Components {
         "srPlay": string;
         "srPrev": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclNewsTickerItem {
+        "altAttr": string;
+        "icon": string;
+        "image": string;
         "path": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
+        "titleAttr": string;
     }
     interface EclNotification {
         "closeLabel": string;
@@ -3615,18 +3613,16 @@ declare namespace LocalJSX {
         "srPlay"?: string;
         "srPrev"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclNewsTickerItem {
+        "altAttr"?: string;
+        "icon"?: string;
+        "image"?: string;
         "path"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
+        "titleAttr"?: string;
     }
     interface EclNotification {
         "closeLabel"?: string;

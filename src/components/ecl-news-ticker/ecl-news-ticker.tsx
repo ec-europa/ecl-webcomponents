@@ -14,7 +14,7 @@ declare const ECL: any;
 })
 export class EclNewsTicker {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() counterLabel: string;
   @Prop() srNext: string;
@@ -30,7 +30,13 @@ export class EclNewsTicker {
     ].join(' ');
   }
 
-  componentDidRender() {
+  componentWillLoad() {
+    this.theme =
+      document.documentElement.getAttribute('data-ecl-theme') ??
+      (this.theme || 'ec');
+  }
+
+  componentDidLoad() {
     const counterMax = this.el.querySelector('.ecl-news-ticker__counter--max');
     const countMax = this.el.querySelectorAll('.ecl-news-ticker__slide').length as unknown as string;
     counterMax.innerHTML = countMax;
@@ -42,15 +48,15 @@ export class EclNewsTicker {
       this.el.querySelector('.ecl-news-ticker__slides').append(...slides);
     }
     if (this.el.querySelector('.ecl-news-ticker__controls')) {
-      const controls = this.el.querySelectorAll('.ecl-news-ticker__controls button');
+      const controls = this.el.querySelectorAll('.ecl-news-ticker__actions button');
       const counter = this.el.querySelectorAll('.ecl-news-ticker__counter');
-      this.el.querySelector('.ecl-news-ticker__controls').innerHTML = '';
-      this.el.querySelector('.ecl-news-ticker__controls').append(...controls);
+      this.el.querySelector('.ecl-news-ticker__actions').innerHTML = '';
+      this.el.querySelector('.ecl-news-ticker__actions').append(...controls);
       this.el.querySelector('.ecl-news-ticker__controls').append(...counter);
     }
   }
 
-  componentDidLoad() {
+  componentDidRender() {
     if (this.el.querySelector('.ecl-news-ticker__slides') && this.eclScript) {
       // Load the ECL vanilla js if not already present.
       const src = getAssetPath('./build/scripts/ecl-news-ticker-vanilla.js');
@@ -80,12 +86,6 @@ export class EclNewsTicker {
         class={this.getClass()}
       >
         <div class="ecl-news-ticker__container">
-          <ecl-icon 
-            icon="information"
-            size="m"
-            style-class={`ecl-news-ticker__icon sc-ecl-news-ticker-${this.theme}`}
-          >
-          </ecl-icon>
           <div class="ecl-news-ticker__content">
             <ul class="ecl-news-ticker__slides">
               <slot></slot>
@@ -93,102 +93,82 @@ export class EclNewsTicker {
           </div>
         </div>
         <div class="ecl-news-ticker__controls">
-          <ecl-button
-            theme={this.theme}
-            styleClass={`ecl-news-ticker__prev sc-ecl-news-ticker-${this.theme}`}
-            data-ecl-news-ticker-prev
-            hideLabel
-            type="button"
-            variant="default"
-          >
-            <ecl-icon 
-              styleClass={`ecl-news-ticker__icon-default sc-ecl-news-ticker-${this.theme}`}
-              slot="icon-after"
-              icon="corner-arrow"
-              size="l"
-              color="inverted"
-              transform="rotate-270"
+          <div class="ecl-news-ticker__actions">
+            <ecl-button
               theme={this.theme}
+              styleClass={`ecl-news-ticker__prev sc-ecl-news-ticker-${this.theme}`}
+              data-ecl-news-ticker-prev
+              hideLabel
+              type="button"
+              variant="tertiary"
             >
-            </ecl-icon>
-              {this.srPrev}
-          </ecl-button>
-          <ecl-button
-            theme={this.theme}
-            styleClass={`ecl-news-ticker__next sc-ecl-news-ticker-${this.theme}`}
-            data-ecl-news-ticker-next
-            type="button"
-            variant="default"
-            hideLabel
-          >
-            <ecl-icon 
-              styleClass={`ecl-news-ticker__icon-default sc-ecl-news-ticker-${this.theme}`}
-              slot="icon-after"
-              icon="corner-arrow"
-              size="l"
-              color="inverted"
-              transform="rotate-90"
+              <ecl-icon 
+                styleClass={`sc-ecl-news-ticker-${this.theme}`}
+                slot="icon-after"
+                icon="corner-arrow"
+                size="l"
+                transform="rotate-270"
+                theme={this.theme}
+              >
+              </ecl-icon>
+                {this.srPrev}
+            </ecl-button>
+            <ecl-button
               theme={this.theme}
+              styleClass={`ecl-news-ticker__play sc-ecl-news-ticker-${this.theme}`}
+              data-ecl-news-ticker-play
+              type="button"
+              hideLabel
+              variant="tertiary"
             >
-            </ecl-icon>
-              {this.srNext}
-          </ecl-button>
-          <ecl-button
-            theme={this.theme}
-            styleClass={`ecl-news-ticker__play sc-ecl-news-ticker-${this.theme}`}
-            data-ecl-news-ticker-play
-            type="button"
-            hideLabel
-            variant="default"
-          >
-            <ecl-icon 
-              styleClass={`ecl-news-ticker__icon-default sc-ecl-news-ticker-${this.theme}`}
-              slot="icon-before"
-              icon="play"
-              size="l"
-              color="inverted"
+              <ecl-icon 
+                styleClass={`ecl-news-ticker__icon-active sc-ecl-news-ticker-${this.theme}`}
+                slot="icon-after"
+                icon="play-outline"
+                size="l"
+                theme={this.theme}
+              >
+              </ecl-icon>
+                {this.srPlay}
+            </ecl-button>
+            <ecl-button
+              variant="tertiary"
               theme={this.theme}
+              styleClass={`ecl-news-ticker__pause sc-ecl-news-ticker-${this.theme}`}
+              data-ecl-news-ticker-pause
+              hideLabel
+              type="button"
             >
-            </ecl-icon>
-            <ecl-icon 
-              styleClass={`ecl-news-ticker__icon-active sc-ecl-news-ticker-${this.theme}`}
-              slot="icon-after"
-              icon="play-filled"
-              size="l"
-              color="inverted"
+              <ecl-icon 
+                styleClass={`ecl-news-ticker__icon-active sc-ecl-news-ticker-${this.theme}`}
+                slot="icon-after"
+                icon="pause-outline"
+                size="l"
+                theme={this.theme}
+              >
+              </ecl-icon>
+              {this.srPause}
+            </ecl-button>
+            <ecl-button
               theme={this.theme}
+              styleClass={`ecl-news-ticker__next sc-ecl-news-ticker-${this.theme}`}
+              data-ecl-news-ticker-next
+              type="button"
+              variant="tertiary"
+              hideLabel
             >
-            </ecl-icon>
-              {this.srPlay}
-          </ecl-button>
-          <ecl-button
-            variant="default"
-            theme={this.theme}
-            styleClass={`ecl-news-ticker__pause sc-ecl-news-ticker-${this.theme}`}
-            data-ecl-news-ticker-pause
-            hideLabel
-            type="button"
-          >
-            <ecl-icon 
-              styleClass={`ecl-news-ticker__icon-default sc-ecl-news-ticker-${this.theme}`}
-              slot="icon-before"
-              icon="pause"
-              size="l"
-              color="inverted"
-              theme={this.theme}
-            >
-            </ecl-icon>
-            <ecl-icon 
-              styleClass={`ecl-news-ticker__icon-active sc-ecl-news-ticker-${this.theme}`}
-              slot="icon-after"
-              icon="pause-filled"
-              size="l"
-              color="inverted"
-              theme={this.theme}
-            >
-            </ecl-icon>
-            {this.srPause}
-          </ecl-button>
+              <ecl-icon 
+                styleClass={`sc-ecl-news-ticker-${this.theme}`}
+                slot="icon-after"
+                icon="corner-arrow"
+                size="l"
+                transform="rotate-90"
+                theme={this.theme}
+              >
+              </ecl-icon>
+                {this.srNext}
+            </ecl-button>
+          </div>
           <div class="ecl-news-ticker__counter">
             <span class="ecl-news-ticker__counter--current">1</span>
               {` ${this.counterLabel} `}

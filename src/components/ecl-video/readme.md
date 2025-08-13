@@ -26,8 +26,8 @@
 
 ### Used by
 
- - [ecl-media-container](../ecl-media-container)
  - [ecl-banner](../ecl-banner)
+ - [ecl-media-container](../ecl-media-container)
 
 ### Graph
 ```mermaid

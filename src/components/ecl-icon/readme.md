@@ -47,6 +47,7 @@
  - [ecl-menu-item](../ecl-menu)
  - [ecl-modal](../ecl-modal)
  - [ecl-news-ticker](../ecl-news-ticker)
+ - [ecl-news-ticker-item](../ecl-news-ticker)
  - [ecl-notification](../ecl-notification)
  - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover](../ecl-popover)
@@ -88,6 +89,7 @@ graph TD;
   ecl-menu-item --> ecl-icon
   ecl-modal --> ecl-icon
   ecl-news-ticker --> ecl-icon
+  ecl-news-ticker-item --> ecl-icon
   ecl-notification --> ecl-icon
   ecl-pagination-item --> ecl-icon
   ecl-popover --> ecl-icon
