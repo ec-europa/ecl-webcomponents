@@ -15,6 +15,7 @@ export class EclNavigationList {
   @Prop() theme: string = 'ec';
   @Prop() column: number = 2;
   @Prop() styleClass: string;
+  @Prop() colorMode: string;
 
   getClass(): string {
     const styleClasses = [
@@ -23,10 +24,14 @@ export class EclNavigationList {
       this.styleClass
     ];
 
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`);
+    }
+
     return styleClasses.join(' ');
   }
 
-  componentDidRender() {
+  componentDidLoad() {
     // Clean the html to make the zebra work,.
     const items = this.el.querySelectorAll('.ecl-navigation-list__item');
     if (items) {

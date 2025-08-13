@@ -1,2 +1,9 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-navigation-list/navigation-list-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/navigation-list/navigation-list' with (
+  $theme: theme.$theme,
+  $navigation-list: var.$navigation-list
+);

@@ -10,10 +10,12 @@
 | Property     | Attribute     | Description | Type      | Default     |
 | ------------ | ------------- | ----------- | --------- | ----------- |
 | `border`     | `border`      |             | `boolean` | `true`      |
+| `colorMode`  | `color-mode`  |             | `string`  | `undefined` |
 | `image`      | `image`       |             | `string`  | `undefined` |
 | `imageAlt`   | `image-alt`   |             | `string`  | `undefined` |
 | `styleClass` | `style-class` |             | `string`  | `undefined` |
 | `theme`      | `theme`       |             | `string`  | `'ec'`      |
+| `variant`    | `variant`     |             | `string`  | `undefined` |
 
 
 ## Dependencies
