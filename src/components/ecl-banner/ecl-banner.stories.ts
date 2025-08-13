@@ -3,7 +3,7 @@ const getArgs = () => ({
   bannerTitle: 'Headline sed elit lorem.',
   description: 'Pellentesque tempor tincidunt quam, finibus vulputate eros iaculis pharetra orci arcu, dictum maximus arcu pellentesque eget. Cras massa nunc.',
   ctaLabel: "",
-  ctaLink: "",
+  ctaLink: "/example.html",
   image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
   fullWidth: false,
   horizontal: 'left',
@@ -103,6 +103,7 @@ const getArgTypes = () => ({
     name: 'link of the CTA link',
     type: { name: 'string' },
     description: 'Link path or url',
+    if: { arg: 'ctaLabel' },
   },
   fullWidth: {
     name: 'full width banner',
