@@ -21,6 +21,9 @@ patchedDependencies:
   '@ecl/builder@5.0.0-alpha.15':
     hash: d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec
     path: patches/@ecl__builder@5.0.0-alpha.15.patch
+  '@ecl/content-block@5.0.0-alpha.15':
+    hash: 86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752
+    path: patches/@ecl__content-block@5.0.0-alpha.15.patch
   '@ecl/select@5.0.0-alpha.15':
     hash: 77372e7785ab162dbc0eacd1e119e9467fcdfc3de46ad333aa5ca01f2f2b094e
     path: patches/@ecl__select@5.0.0-alpha.15.patch
@@ -39,9 +42,6 @@ patchedDependencies:
   '@ecl/vanilla-component-category-filter@3.13.0':
     hash: bdaed1fc75d7ffcc9186cdd0b0ee588ecff032ed89a33f2686e833a76276688b
     path: patches/@ecl__vanilla-component-category-filter@3.13.0.patch
-  '@ecl/vanilla-component-content-block@3.13.0':
-    hash: 933f91570df60191fc77f1085b64245ade78a24120f8c5f56cf9d465493a7d8f
-    path: patches/@ecl__vanilla-component-content-block@3.13.0.patch
   '@stencil/react-output-target@0.5.3':
     hash: 403ac53588c2362c9db2125ba3fb502cfee8a4ac96ab3c883a9e43c2be4a423a
     path: patches/@stencil__react-output-target@0.5.3.patch
@@ -650,35 +650,38 @@ importers:
   src/components/ecl-content-block:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.33.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.33.0(jiti@1.21.7))
+      '@ecl/content-block':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)
+      '@ecl/description-list':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/icon':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/label':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/link':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-content-block':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=933f91570df60191fc77f1085b64245ade78a24120f8c5f56cf9d465493a7d8f)
-      '@ecl/vanilla-component-description-list':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-icon':
-        specifier: 3.13.0
-        version: 3.13.0(svg4everybody@2.1.9)
-      '@ecl/vanilla-component-label':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-link':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/utility-screen-reader':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -3284,14 +3287,8 @@ packages:
   '@ecl/vanilla-component-category-filter@3.13.0':
     resolution: {integrity: sha512-/qpb1OBE+0pzeIPOYb3yLFpN2bYbUKjxGTW0zsGRayGOxH12MMyJjSA9mo6UUmA0mSaKtBsKjhYAVkCal7VLGg==}
 
-  '@ecl/vanilla-component-content-block@3.13.0':
-    resolution: {integrity: sha512-hojTx7bH1HyWRhDYXlb3zbLcGTFfneizT/RLGgvIdk0Mbbi0lpDnJp+FTdtzUl5YO2dwyIjffv+HH2WsPKFfww==}
-
   '@ecl/vanilla-component-content-item@3.13.0':
     resolution: {integrity: sha512-Sy2yI5xJYGJP044Dv90bB005RlM8b1WKUKD2Jp5yl7cNg21PbSWgDEIEizM2hmBPsVezxVxx2dIuu72VuNvQwA==}
-
-  '@ecl/vanilla-component-description-list@3.13.0':
-    resolution: {integrity: sha512-yJUBjM8Sz0TmjqFS5TJDVzR09Y/QhS13vNg5M5OZsSb6hvoFhKxhErm+TcUCcRHwL1I+SQNPPQlXpIkcuPRUpg==}
 
   '@ecl/vanilla-component-featured-item@3.13.0':
     resolution: {integrity: sha512-YyYfjTcJuZni+eDVUrWO94bHFL3EZdzm77fhtEh2N/VwPxAA/afRmGglW70K1KEIocgLXkixGagnNq6nX+g0hw==}
@@ -3306,9 +3303,6 @@ packages:
 
   '@ecl/vanilla-component-inpage-navigation@3.13.0':
     resolution: {integrity: sha512-sxmg8wQMXnNYxbaisDLLxyMo88C1kDkD+S5lsaE05PzjkbL2vOVmS/pw7DcwOwFsBl3M+BtRyBQSqJbSlkLI2g==}
-
-  '@ecl/vanilla-component-label@3.13.0':
-    resolution: {integrity: sha512-Bb6txf3g9h/ewBQki6GZ71Ubw7lbYd31TxYxcA3WvxnfPhwEIc3jpYY8jW9EnAhG1psRienVxb8qOeYn4ABrIw==}
 
   '@ecl/vanilla-component-link@3.13.0':
     resolution: {integrity: sha512-KrRISO2jswpAXnSoJz6ofd0iTx7lIcL8aRTpBUQsedeL9zYxgGMSHjQYR6Xb845mXGFhFJYuRg3qlRZt7RyrCw==}
@@ -14323,7 +14317,7 @@ snapshots:
 
   '@ecl/card@5.0.0-alpha.15':
     dependencies:
-      '@ecl/content-block': 5.0.0-alpha.15
+      '@ecl/content-block': 5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)
       '@ecl/picture': 5.0.0-alpha.15
 
   '@ecl/carousel@5.0.0-alpha.15':
@@ -14343,7 +14337,7 @@ snapshots:
 
   '@ecl/color-modes@5.0.0-alpha.15': {}
 
-  '@ecl/content-block@5.0.0-alpha.15':
+  '@ecl/content-block@5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)':
     dependencies:
       '@ecl/description-list': 5.0.0-alpha.15
       '@ecl/dom-utils': 5.0.0-alpha.15
@@ -14354,7 +14348,7 @@ snapshots:
 
   '@ecl/content-item@5.0.0-alpha.15':
     dependencies:
-      '@ecl/content-block': 5.0.0-alpha.15
+      '@ecl/content-block': 5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)
       '@ecl/date-block': 5.0.0-alpha.15
       '@ecl/picture': 5.0.0-alpha.15
 
@@ -14512,7 +14506,7 @@ snapshots:
 
   '@ecl/navigation-list@5.0.0-alpha.15':
     dependencies:
-      '@ecl/content-block': 5.0.0-alpha.15
+      '@ecl/content-block': 5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)
       '@ecl/picture': 5.0.0-alpha.15
 
   '@ecl/news-ticker@5.0.0-alpha.15':
@@ -14564,7 +14558,7 @@ snapshots:
       '@ecl/category-filter': 5.0.0-alpha.15
       '@ecl/checkbox': 5.0.0-alpha.15
       '@ecl/color-modes': 5.0.0-alpha.15
-      '@ecl/content-block': 5.0.0-alpha.15
+      '@ecl/content-block': 5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)
       '@ecl/content-item': 5.0.0-alpha.15
       '@ecl/date-block': 5.0.0-alpha.15
       '@ecl/datepicker': 5.0.0-alpha.15
@@ -14655,7 +14649,7 @@ snapshots:
       '@ecl/carousel': 5.0.0-alpha.15
       '@ecl/category-filter': 5.0.0-alpha.15
       '@ecl/checkbox': 5.0.0-alpha.15
-      '@ecl/content-block': 5.0.0-alpha.15
+      '@ecl/content-block': 5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)
       '@ecl/content-item': 5.0.0-alpha.15
       '@ecl/date-block': 5.0.0-alpha.15
       '@ecl/datepicker': 5.0.0-alpha.15
@@ -14960,18 +14954,9 @@ snapshots:
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
 
-  '@ecl/vanilla-component-content-block@3.13.0(patch_hash=933f91570df60191fc77f1085b64245ade78a24120f8c5f56cf9d465493a7d8f)':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
   '@ecl/vanilla-component-content-item@3.13.0':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
-  '@ecl/vanilla-component-description-list@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
 
   '@ecl/vanilla-component-featured-item@3.13.0':
     dependencies:
@@ -14995,10 +14980,6 @@ snapshots:
       '@ecl/vanilla-layout-grid': 3.13.0
       gumshoejs: 5.1.2
       stickyfilljs: 2.1.0
-
-  '@ecl/vanilla-component-label@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
 
   '@ecl/vanilla-component-link@3.13.0':
     dependencies:
