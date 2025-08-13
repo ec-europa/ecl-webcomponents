@@ -21,6 +21,9 @@ patchedDependencies:
   '@ecl/builder@5.0.0-alpha.15':
     hash: d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec
     path: patches/@ecl__builder@5.0.0-alpha.15.patch
+  '@ecl/select@5.0.0-alpha.15':
+    hash: 77372e7785ab162dbc0eacd1e119e9467fcdfc3de46ad333aa5ca01f2f2b094e
+    path: patches/@ecl__select@5.0.0-alpha.15.patch
   '@ecl/theme-dev@3.13.0':
     hash: 241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65
     path: patches/@ecl__theme-dev@3.13.0.patch
@@ -1612,7 +1615,7 @@ importers:
         version: 5.0.0-alpha.15
       '@ecl/select':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=77372e7785ab162dbc0eacd1e119e9467fcdfc3de46ad333aa5ca01f2f2b094e)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
       '@ecl/text-input':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -14414,7 +14417,7 @@ snapshots:
       '@ecl/radio': 5.0.0-alpha.15
       '@ecl/range': 5.0.0-alpha.15
       '@ecl/rating-field': 5.0.0-alpha.15
-      '@ecl/select': 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/select': 5.0.0-alpha.15(patch_hash=77372e7785ab162dbc0eacd1e119e9467fcdfc3de46ad333aa5ca01f2f2b094e)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
       '@ecl/text-area': 5.0.0-alpha.15
       '@ecl/text-input': 5.0.0-alpha.15
     transitivePeerDependencies:
@@ -14597,7 +14600,7 @@ snapshots:
       '@ecl/range': 5.0.0-alpha.15
       '@ecl/rating-field': 5.0.0-alpha.15
       '@ecl/search-form': 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
-      '@ecl/select': 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/select': 5.0.0-alpha.15(patch_hash=77372e7785ab162dbc0eacd1e119e9467fcdfc3de46ad333aa5ca01f2f2b094e)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
       '@ecl/separator': 5.0.0-alpha.15
       '@ecl/site-footer': 5.0.0-alpha.15
       '@ecl/site-header': 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
@@ -14688,7 +14691,7 @@ snapshots:
       '@ecl/range': 5.0.0-alpha.15
       '@ecl/rating-field': 5.0.0-alpha.15
       '@ecl/search-form': 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
-      '@ecl/select': 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/select': 5.0.0-alpha.15(patch_hash=77372e7785ab162dbc0eacd1e119e9467fcdfc3de46ad333aa5ca01f2f2b094e)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
       '@ecl/separator': 5.0.0-alpha.15
       '@ecl/site-footer': 5.0.0-alpha.15
       '@ecl/site-header': 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
@@ -14777,7 +14780,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/select@5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))':
+  '@ecl/select@5.0.0-alpha.15(patch_hash=77372e7785ab162dbc0eacd1e119e9467fcdfc3de46ad333aa5ca01f2f2b094e)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))':
     dependencies:
       '@ecl/builder': 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
       '@ecl/button': 5.0.0-alpha.15
