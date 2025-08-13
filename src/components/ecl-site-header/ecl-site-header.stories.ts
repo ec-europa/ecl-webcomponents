@@ -14,6 +14,7 @@ const Template = (args) =>
     search-placeholder="Placeholder text"
     language="English"
     lang-code="en"
+    search-form-id="ecl-site-header-search-form"
     login-text="Log in"
     eu-label="Official EU languages:"
     non-eu-label="Other languages:"

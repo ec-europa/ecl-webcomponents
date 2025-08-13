@@ -20,7 +20,7 @@
 | `name`       | `name`        |             | `string`  | `undefined`      |
 | `required`   | `required`    |             | `boolean` | `false`          |
 | `styleClass` | `style-class` |             | `string`  | `undefined`      |
-| `theme`      | `theme`       |             | `string`  | `'ec'`           |
+| `theme`      | `theme`       |             | `string`  | `undefined`      |
 | `value`      | `value`       |             | `string`  | `undefined`      |
 
 

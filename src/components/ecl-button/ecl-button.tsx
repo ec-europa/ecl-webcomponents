@@ -72,7 +72,7 @@ export class EclButton {
   private get hasIconBefore(): boolean {
     return !!this.el.querySelector('[slot="icon-before"]');
   }
-  
+
   private get hasIconAfter(): boolean {
     return !!this.el.querySelector('[slot="icon-after"]');
   }
@@ -96,15 +96,9 @@ export class EclButton {
             </span>
           )}
 
-          {!this.hideLabel ? (
-            <span class="ecl-button__label">
-              <slot></slot>
-            </span>
-          ) : (
-            <span class="ecl-u-sr-only" data-ecl-label>
-              <slot></slot>
-            </span>
-          )}
+          <span class="ecl-button__label" data-ecl-label>
+            <slot></slot>
+          </span>
 
           {this.hasIconAfter && !this.indicator && (
             <slot name="icon-after"></slot>

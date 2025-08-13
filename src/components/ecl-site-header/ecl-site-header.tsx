@@ -24,6 +24,7 @@ export class EclSiteHeader {
   @Prop() logoAlt: string;
   @Prop() logoTitle: string;
   @Prop() searchText: string;
+  @Prop() searchFormId: string = `ecl-site-header-search-form-${Math.random().toString(36).slice(2, 10)}`;
   @Prop() searchPlaceholder: string;
   @Prop() language: string;
   @Prop() langCode: string;
@@ -232,7 +233,7 @@ export class EclSiteHeader {
                   <ecl-search-form
                     style-class={`ecl-site-header__search sc-ecl-site-header-${this.theme}`}
                     theme={this.theme}
-                    width="m"
+                    input-id={this.searchFormId}
                     placeholder={this.searchPlaceholder}
                     button-label={this.searchText}
                     button-aria-label={this.searchText}

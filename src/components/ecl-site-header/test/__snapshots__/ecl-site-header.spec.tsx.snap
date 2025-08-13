@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-site-header renders 1`] = `
-<ecl-site-header ecl-script="" eu-label="Official EU languages:" lang-code="en" language="english" language-aria-label="Choose language" language-block="" language-id="language-switcher" language-title="Choose your language" login-block="" login-link="/example.html" login-text="Log in" logo-alt="European Commission" logo-title="European commission" non-eu-label="Other languages:" search-block="" search-placeholder="Placeholder text" search-text="search" theme="ec">
+<ecl-site-header ecl-script="" eu-label="Official EU languages:" lang-code="en" language="english" language-aria-label="Choose language" language-block="" language-id="language-switcher" language-title="Choose your language" login-block="" login-link="/example.html" login-text="Log in" logo-alt="European Commission" logo-title="European commission" non-eu-label="Other languages:" search-block="" search-form-id="ecl-site-header-search-form" search-placeholder="Placeholder text" search-text="search" theme="ec">
   <!---->
   <header class="ecl-site-header">
     <div class="ecl-site-header__header">
@@ -227,17 +227,17 @@ exports[`ecl-site-header renders 1`] = `
                 <ecl-icon icon="search" size="s" style-class="ecl-icon ecl-icon--s ecl-site-header__icon sc-ecl-site-header-ec" theme="ec"></ecl-icon>
                 search
               </a>
-              <ecl-search-form button-aria-label="search" button-label="search" style-class="ecl-site-header__search sc-ecl-site-header-ec">
+              <ecl-search-form button-aria-label="search" button-label="search" input-id="ecl-site-header-search-form" style-class="ecl-site-header__search sc-ecl-site-header-ec">
                 <form class="ecl-search-form ecl-site-header__search sc-ecl-site-header-ec" data-ecl-search-form role="search">
                   <ecl-form-group style-class="sc-ecl-search-form-ec">
                     <!---->
                     <div class="ecl-form-group sc-ecl-search-form-ec">
-                      <ecl-input input-class="ecl-search-form__text-input sc-ecl-search-form-ec" placeholder="Placeholder text" style-class="ecl-search-form__text-input sc-ecl-search-form-ec" theme="ec" type="search" width="m"></ecl-input>
+                      <ecl-input input-class="ecl-search-form__text-input sc-ecl-search-form-ec" input-id="ecl-site-header-search-form" placeholder="Placeholder text" style-class="sc-ecl-search-form-ec" theme="ec" type="search"></ecl-input>
                     </div>
                   </ecl-form-group>
-                  <ecl-button aria-label="search" style-class="ecl-search-form__button sc-ecl-search-form-ec" theme="ec" variant="search">
+                  <ecl-button aria-label="search" style-class="ecl-search-form__button sc-ecl-search-form-ec" theme="ec" type="search" variant="ghost">
                     search
-                    <ecl-icon icon="search" size="xs" slot="icon-after" style-class="sc-ecl-search-form-ec" theme="ec"></ecl-icon>
+                    <ecl-icon icon="search" size="xs" slot="icon-before" style-class="sc-ecl-search-form-ec" theme="ec"></ecl-icon>
                   </ecl-button>
                 </form>
               </ecl-search-form>

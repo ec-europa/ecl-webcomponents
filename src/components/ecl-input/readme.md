@@ -14,6 +14,7 @@
 | `eclScript`    | `ecl-script`    |             | `boolean` | `false`     |
 | `hasChanged`   | `has-changed`   |             | `boolean` | `false`     |
 | `helperText`   | `helper-text`   |             | `string`  | `undefined` |
+| `hideLabel`    | `hide-label`    |             | `boolean` | `false`     |
 | `inputClass`   | `input-class`   |             | `string`  | `undefined` |
 | `inputId`      | `input-id`      |             | `string`  | `undefined` |
 | `invalid`      | `invalid`       |             | `boolean` | `false`     |
@@ -23,7 +24,7 @@
 | `placeholder`  | `placeholder`   |             | `string`  | `undefined` |
 | `required`     | `required`      |             | `boolean` | `false`     |
 | `styleClass`   | `style-class`   |             | `string`  | `undefined` |
-| `theme`        | `theme`         |             | `string`  | `'ec'`      |
+| `theme`        | `theme`         |             | `string`  | `undefined` |
 | `type`         | `type`          |             | `string`  | `undefined` |
 | `width`        | `width`         |             | `string`  | `'m'`       |
 

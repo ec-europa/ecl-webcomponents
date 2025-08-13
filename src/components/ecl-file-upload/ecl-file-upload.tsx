@@ -14,7 +14,8 @@ declare const ECL: any;
 })
 export class EclFileUpload {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop() inputId: string = `ecl-file-upload-${Math.random().toString(36).slice(2, 10)}`;
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() inputClass: string;
   @Prop() eclScript: boolean = false;
@@ -27,7 +28,6 @@ export class EclFileUpload {
   @Prop() width: string = 'm';
   @Prop() label: string;
   @Prop() type: string;
-  @Prop() inputId: string;
   @Prop() name: string;
   @Prop() multiple: boolean = false;
   @Prop() defaultValue: string;
@@ -50,21 +50,11 @@ export class EclFileUpload {
     return inputClasses.join(' ');
   }
 
-  componentDidRender() {
-    if (this.inputId) {
-      const group = this.el.closest('.ecl-form-group');
-      if (group) {
-        const label =  group.querySelector('.ecl-form-label');
-        if (label) {
-          label.setAttribute('for', this.inputId);
-          label.setAttribute('id', `${this.inputId}-label`);
-        }
-        const helper = group.querySelector('.ecl-help-block');
-        if (helper) {
-          helper.setAttribute('id', `${this.inputId}-helper`);
-        }
-      }
-    }
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
+  componentDidLoad() {
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-file-upload-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
@@ -122,6 +112,22 @@ export class EclFileUpload {
       'data-ecl-file-upload-input': true,
       multiple: this.multiple,
       value: this.defaultValue,
+    }
+
+    if (this.inputId) {
+      const group = this.el.closest('.ecl-form-group');
+      if (group) {
+        const label =  group.querySelector('.ecl-form-label');
+        if (label) {
+          label.setAttribute('for', this.inputId);
+          label.setAttribute('id', `${this.inputId}-label`);
+        }
+        const helper = group.querySelector('.ecl-help-block');
+        if (helper) {
+          helper.setAttribute('id', `${this.inputId}-helper`);
+          attributes['aria-describedby'] = `${this.inputId}-helper`;
+        }
+      }
     }
 
     return (

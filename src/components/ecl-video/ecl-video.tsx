@@ -44,7 +44,6 @@ export class EclVideo {
     if (this.loop) attrs.loop = true;
     if (this.autoplay) attrs.autoplay = true;
     if (this.controls) attrs.controls = true;
-
     if (this.poster) {
       attrs['poster'] = this.poster;
     }

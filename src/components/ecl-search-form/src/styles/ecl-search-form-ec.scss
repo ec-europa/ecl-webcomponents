@@ -1,25 +1,22 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-component-search-form/search-form-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/button/button' with (
+  $theme: theme.$theme,
+  $button: var.$button
+);
+@use '@ecl/search-form/search-form' with (
+  $theme: theme.$theme,
+  $search-form: var.$search-form
+);
 
-.ecl-search-form__text-input .ecl-text-input {
-  width: 100% !important;
+.ecl-search-form__text-input {
+  height: 2.875rem;
 }
 
-.ecl-search-form__button.sc-ecl-search-form-ec {
-  background: #ebebeb !important;
-  border-bottom: 1px solid #707070 !important;
-  border-right: 1px solid #707070 !important;
-  border-top: 1px solid #707070 !important;
-  padding: calc(0.75rem - 1px) !important;
-}
-
-@media (width >= 768px) {
-  .ecl-search-form__button.sc-ecl-search-form-ec {
-    padding-inline-start: calc(1rem - 1px) !important;
-    padding-inline-end: calc(1rem - 1px) !important;
-  }
-}
-
-.ecl-search-form__text-input.sc-ecl-search-form-ec:not(:focus-visible) {
-  border-inline-end-color: transparent !important;
+.ecl-search-form__button .ecl-icon {
+  height: 1.125rem;
+  width: 1.125rem;
 }
