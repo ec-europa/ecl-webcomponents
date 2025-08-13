@@ -6,7 +6,7 @@ exports[`ecl-select renders 1`] = `
   <div aria-describedby="helper-id" class="ecl-form-group">
     <label class="ecl-form-label">
       Select input field
-      <span class="ecl-form-label__required">
+      <span class="ecl-form-label__required" role="note">
         *
       </span>
     </label>
@@ -49,11 +49,13 @@ exports[`ecl-select renders 1`] = `
           </option>
         </select>
         <div class="ecl-select__icon">
-          <ecl-icon style-class="ecl-select__icon-shape sc-ecl-select-ec">
-            <svg class="ecl-icon ecl-icon--rotate-180 ecl-icon--s ecl-select__icon-shape sc-ecl-select-ec">
-              <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
-            </svg>
-          </ecl-icon>
+          <ecl-button hide-label="" styleclass="sc-ecl-select-ec" theme="ec" variant="ghost">
+            <ecl-icon slot="icon-after" style-class="sc-ecl-select-ec">
+              <svg class="ecl-icon ecl-icon--rotate-180 ecl-icon--xs sc-ecl-select-ec">
+                <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
+              </svg>
+            </ecl-icon>
+          </ecl-button>
         </div>
       </div>
     </ecl-select>

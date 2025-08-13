@@ -12,11 +12,12 @@ const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()
 module.exports = {
   scripts: [
     {
-      entry: path.resolve(nodeModules, '@ecl/vanilla-component-range/range.js'),
+      entry: path.resolve(nodeModules, '@ecl/range/range.js'),
       dest: path.resolve(outputFolder, 'scripts/ecl-range-vanilla.js'),
       options: {
         banner,
         moduleName: 'ECL',
+        format: 'iife',
         includePaths,
         sourceMap: false,
       },

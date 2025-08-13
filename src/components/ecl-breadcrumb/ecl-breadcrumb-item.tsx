@@ -6,13 +6,16 @@ import { Component, h, Prop, Element } from '@stencil/core';
 })
 export class EclBreadcrumbItem {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
-  @Prop() variant: string;
   @Prop() path: string;
   @Prop() currentPage: boolean = false;
   @Prop() ellipsis: boolean = false;
   @Prop() buttonAriaLabel: string = '';
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
 
   getClass(): string {
     const styleClasses = [
@@ -34,14 +37,13 @@ export class EclBreadcrumbItem {
 
   getLinkClass(): string {
     const linkClasses = [
+      'ecl-link',
+      'sc-ecl-link-ec',
       `sc-ecl-breadcrumb-${this.theme}`,
-      'ecl-breadcrumb__link',
+      'ecl-link--standalone',
       'ecl-link--no-visited',
+      'ecl-breadcrumb__link'
     ];
-
-    if (this.el.closest('.ecl-breadcrumb--negative')) {
-      linkClasses.push('ecl-link--negative');
-    }
 
     return linkClasses.join(' ');
   }
@@ -49,7 +51,11 @@ export class EclBreadcrumbItem {
   getLiAttrs() {
     const attrs = { 'data-ecl-breadcrumb-item' : 'static' };
     if (this.ellipsis) {
-      attrs['data-ecl-breadcrumb-ellipsis'] = 'data-ecl-breadcrumb-ellipsis';
+      attrs['data-ecl-breadcrumb-ellipsis'] = '';
+      attrs['aria-hidden'] = 'true';
+    }
+    if (this.currentPage) {
+      attrs['aria-current'] = 'page';
     }
 
     return attrs;
@@ -57,48 +63,51 @@ export class EclBreadcrumbItem {
 
   render() {
     return (
-      <li
-        class={this.getClass()}
-        {...this.getLiAttrs()}
-      >
-      { !this.currentPage && !this.ellipsis ? 
-        <ecl-link
-          variant="standalone"
-          path={this.path}
-          style-class={this.getLinkClass()}
-        >
-          <ecl-icon
-            slot="icon-after"
-            style-class={`ecl-breadcrumb__icon sc-ecl-breadcrumb-${this.theme}`}
-            icon="corner-arrow"
-            transform="rotate-90"
-            size="2xs"
-          ></ecl-icon>
+      <li class={this.getClass()} {...this.getLiAttrs()}>
+        { !this.currentPage && !this.ellipsis ?
+          [
+            <ecl-link
+              variant="standalone"
+              path={this.path}
+              style-class={this.getLinkClass()}
+            >
+              <slot></slot>
+            </ecl-link>,
+            <ecl-icon
+              style-class={`ecl-breadcrumb__icon sc-ecl-breadcrumb-${this.theme}`}
+              icon="corner-arrow"
+              transform="rotate-90"
+              size="fluid"
+            ></ecl-icon>
+          ]
+          :
           <slot></slot>
-        </ecl-link> :
-        <slot></slot>
-      }
-      { this.ellipsis ? 
-        <ecl-button
-          style-class={`ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-${this.theme}`}
-          variant="ghost"
-          data-ecl-breadcrumb-ellipsis-button
-          aria-label={this.buttonAriaLabel}
-        >
-          ...
-          <ecl-icon
-            style-class={`ecl-breadcrumb__icon sc-ecl-breadcrumb-${this.theme}`}
-            size="2xs"
-            transform="rotate-90"
-            icon="corner-arrow"
-            slot="icon-after"
-          ></ecl-icon>
-        </ecl-button> : '' 
-      }
-      { this.currentPage ?
-        <slot></slot> : ''
-      }
+        }
+
+        { this.ellipsis ?
+          [
+            <ecl-button
+              style-class={`ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-${this.theme}`}
+              variant="ghost"
+              data-ecl-breadcrumb-ellipsis-button
+              aria-label={this.buttonAriaLabel}
+            >
+              ...
+            </ecl-button>,
+            <ecl-icon
+              style-class={`ecl-breadcrumb__icon sc-ecl-breadcrumb-${this.theme}`}
+              size="fluid"
+              transform="rotate-90"
+              icon="corner-arrow"
+            ></ecl-icon>
+          ] : ''
+        }
+
+        { this.currentPage ?
+          <slot></slot> : ''
+        }
       </li>
     );
   }
+
 }

@@ -178,7 +178,7 @@ exports[`ecl-gallery renders 1`] = `
           <!---->
           <button class="ecl-button ecl-button--ghost ecl-gallery__view-all sc-ecl-gallery-ec" data-ecl-gallery-all="eclGalleryAll" data-ecl-gallery-collapsed-label="View all" type="submit">
             <span class="ecl-button__container">
-              <span class="ecl-button__label">
+              <span class="ecl-button__label" data-ecl-label>
                 View all
               </span>
             </span>
@@ -193,7 +193,7 @@ exports[`ecl-gallery renders 1`] = `
           <!---->
           <button class="ecl-button ecl-button--ghost ecl-gallery__close-button sc-ecl-gallery-ec" data-ecl-gallery-close="eclGalleryClose" type="submit">
             <span class="ecl-button__container">
-              <span class="ecl-button__label">
+              <span class="ecl-button__label" data-ecl-label>
                 Close
               </span>
               <ecl-icon slot="icon-after" style-class="sc-ecl-gallery-ec">
@@ -239,7 +239,7 @@ exports[`ecl-gallery renders 1`] = `
                       <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
                     </svg>
                   </ecl-icon>
-                  <span class="ecl-u-sr-only" data-ecl-label>
+                  <span class="ecl-button__label" data-ecl-label>
                     Previous
                   </span>
                 </span>
@@ -258,7 +258,7 @@ exports[`ecl-gallery renders 1`] = `
               <!---->
               <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-gallery__slider-next sc-ecl-gallery-ec" data-ecl-gallery-overlay-next="eclGalleryOverlayNext" type="button">
                 <span class="ecl-button__container">
-                  <span class="ecl-u-sr-only" data-ecl-label>
+                  <span class="ecl-button__label" data-ecl-label>
                     Next
                   </span>
                   <ecl-icon slot="icon-after" style-class="sc-ecl-gallery-ec">

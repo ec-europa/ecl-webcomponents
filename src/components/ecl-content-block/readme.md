@@ -19,7 +19,7 @@
 | `metaPrimary`       | `meta-primary`        |             | `string`  | `undefined` |
 | `metaSecondary`     | `meta-secondary`      |             | `string`  | `undefined` |
 | `styleClass`        | `style-class`         |             | `string`  | `''`        |
-| `theme`             | `theme`               |             | `string`  | `'ec'`      |
+| `theme`             | `theme`               |             | `string`  | `undefined` |
 
 
 ## Dependencies

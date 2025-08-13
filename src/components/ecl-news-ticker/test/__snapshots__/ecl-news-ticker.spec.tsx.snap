@@ -1,16 +1,132 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-news-ticker renders 1`] = `
-<ecl-news-ticker counter-label="of" ecl-script="" items-length="6" sr-next="Next item" sr-pause="Pause news ticker" sr-prev="Prev item" theme="ec">
+<ecl-news-ticker counter-label="of" ecl-script="" items-length="6" sr-next="Next item" sr-pause="Pause news ticker" sr-prev="Prev item">
   <!---->
   <div class="ecl-news-ticker">
     <div class="ecl-news-ticker__container">
-      <ecl-icon icon="information" size="m" style-class="ecl-news-ticker__icon sc-ecl-news-ticker-ec"></ecl-icon>
       <div class="ecl-news-ticker__content">
-        <ul class="ecl-news-ticker__slides"></ul>
+        <ul class="ecl-news-ticker__slides">
+          <li class="ecl-news-ticker__slide sc-ecl-news-ticker-ec">
+            <ecl-icon>
+              <svg class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec">
+                <use xlink:href="/build/images/ec/icons.svg#global"></use>
+              </svg>
+            </ecl-icon>
+            <ecl-link>
+              <!---->
+              <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+              </a>
+            </ecl-link>
+          </li>
+          <li class="ecl-news-ticker__slide sc-ecl-news-ticker-ec">
+            <ecl-icon>
+              <svg class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec">
+                <use xlink:href="/build/images/ec/icons.svg#information"></use>
+              </svg>
+            </ecl-icon>
+            <ecl-link>
+              <!---->
+              <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+              </a>
+            </ecl-link>
+          </li>
+          <li class="ecl-news-ticker__slide sc-ecl-news-ticker-ec">
+            <ecl-link>
+              <!---->
+              <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+              </a>
+            </ecl-link>
+          </li>
+          <li class="ecl-news-ticker__slide sc-ecl-news-ticker-ec">
+            <ecl-icon>
+              <svg class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec">
+                <use xlink:href="/build/images/ec/icons.svg#livestreaming"></use>
+              </svg>
+            </ecl-icon>
+            <ecl-link>
+              <!---->
+              <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+                Excepteur sint occaecat cupidatat officia deserunt mollit anim id est laborum
+              </a>
+            </ecl-link>
+          </li>
+          <li class="ecl-news-ticker__slide sc-ecl-news-ticker-ec">
+            <ecl-icon>
+              <svg class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec">
+                <use xlink:href="/build/images/ec/icons.svg#global"></use>
+              </svg>
+            </ecl-icon>
+            <ecl-link>
+              <!---->
+              <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+              </a>
+            </ecl-link>
+          </li>
+          <li class="ecl-news-ticker__slide sc-ecl-news-ticker-ec">
+            <ecl-link>
+              <!---->
+              <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores
+              </a>
+            </ecl-link>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="ecl-news-ticker__controls">
+      <div class="ecl-news-ticker__actions">
+        <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-news-ticker__prev sc-ecl-news-ticker-ec" data-ecl-news-ticker-prev="eclNewsTickerPrev" type="button">
+          <span class="ecl-button__container">
+            <span class="ecl-button__label" data-ecl-label>
+              Prev item
+            </span>
+            <ecl-icon slot="icon-after">
+              <svg class="ecl-button__icon ecl-icon ecl-icon--l ecl-icon--rotate-270 sc-ecl-button-ec sc-ecl-news-ticker-ec">
+                <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
+              </svg>
+            </ecl-icon>
+          </span>
+        </button>
+        <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-news-ticker__play sc-ecl-news-ticker-ec" data-ecl-news-ticker-play="eclNewsTickerPlay" type="button">
+          <span class="ecl-button__container">
+            <span class="ecl-button__label" data-ecl-label></span>
+            <ecl-icon slot="icon-after">
+              <svg class="ecl-button__icon ecl-icon ecl-icon--l ecl-news-ticker__icon-active sc-ecl-button-ec sc-ecl-news-ticker-ec">
+                <use xlink:href="/build/images/ec/icons.svg#play-outline"></use>
+              </svg>
+            </ecl-icon>
+          </span>
+        </button>
+        <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-news-ticker__pause sc-ecl-news-ticker-ec" data-ecl-news-ticker-pause="eclNewsTickerPause" type="button">
+          <span class="ecl-button__container">
+            <span class="ecl-button__label" data-ecl-label>
+              Pause news ticker
+            </span>
+            <ecl-icon slot="icon-after">
+              <svg class="ecl-button__icon ecl-icon ecl-icon--l ecl-news-ticker__icon-active sc-ecl-button-ec sc-ecl-news-ticker-ec">
+                <use xlink:href="/build/images/ec/icons.svg#pause-outline"></use>
+              </svg>
+            </ecl-icon>
+          </span>
+        </button>
+        <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-news-ticker__next sc-ecl-news-ticker-ec" data-ecl-news-ticker-next="eclNewsTickerNext" type="button">
+          <span class="ecl-button__container">
+            <span class="ecl-button__label" data-ecl-label>
+              Next item
+            </span>
+            <ecl-icon slot="icon-after">
+              <svg class="ecl-button__icon ecl-icon ecl-icon--l ecl-icon--rotate-90 sc-ecl-button-ec sc-ecl-news-ticker-ec">
+                <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
+              </svg>
+            </ecl-icon>
+          </span>
+        </button>
+      </div>
       <div class="ecl-news-ticker__counter">
         <span class="ecl-news-ticker__counter--current">
           1

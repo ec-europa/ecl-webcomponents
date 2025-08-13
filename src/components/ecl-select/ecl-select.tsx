@@ -15,14 +15,16 @@ declare const ECL: any;
 
 export class EclSelect {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() eclScript: boolean = false;
   @Prop() disabled: boolean = false;
   @Prop() required: boolean = false;
   @Prop() invalid: boolean = false;
   @Prop() width: string = 'm';
+  @Prop() inputId: string;
   @Prop() selectId: string;
+  @Prop() buttonLabel: string;
   @Prop() name: string;
   @Prop() multiple: boolean = false;
   @Prop() multiplePlaceholder: string;
@@ -58,22 +60,10 @@ export class EclSelect {
 
   componentWillLoad() {
     this.selectValue = JSON.parse(this.inputValue || '[]');
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   componentDidLoad() {
-    if (this.selectId) {
-      const group = this.el.closest('.ecl-form-group');
-      if (group) {
-        const label =  group.querySelector('.ecl-form-label');
-        if (label) {
-          label.setAttribute('id', `${this.selectId}-label`);
-        }
-        const helper = group.querySelector('.ecl-help-block');
-        if (helper) {
-          helper.setAttribute('id', `${this.selectId}-helper`);
-        }
-      }
-    }
     if (this.eclScript && this.multiple) {
       // Load the ECL vanilla js if not already present.
       const src = getAssetPath('./build/scripts/ecl-select-vanilla.js');
@@ -131,13 +121,29 @@ export class EclSelect {
     };
 
     if (this.multiple) {
-      attributes['multiple'] = 'data-ecl-select-multiple';
+      attributes['data-ecl-select-multiple'] = true;
+      attributes['multiple'] = true;
       attributes['data-ecl-select-default'] = this.multiplePlaceholder;
       attributes['data-ecl-select-no-results'] = this.multipleSearchNoResultsText;
       attributes['data-ecl-select-all'] = this.multipleAllText;
       attributes['data-ecl-select-clear-all'] = this.multipleClearAllText;
       attributes['data-ecl-select-close'] = this.multipleCloseText;
       attributes['data-ecl-select-search'] = this.multipleSearchText;
+    }
+
+    if (this.selectId) {
+      const group = this.el.closest('.ecl-form-group');
+      if (group) {
+        const label =  group.querySelector('.ecl-form-label');
+        if (label) {
+          label.setAttribute('id', `${this.selectId}-label`);
+        }
+        const helper = group.querySelector('.ecl-help-block');
+        if (helper) {
+          helper.setAttribute('id', `${this.selectId}-helper`);
+          attributes['aria-describedby'] = `${this.inputId}-helper`;
+        }
+      }
     }
 
     return (
@@ -155,13 +161,21 @@ export class EclSelect {
           <slot></slot>
         </select>
         <div class="ecl-select__icon">
-          <ecl-icon
+          <ecl-button
+            styleClass={`sc-ecl-select-${this.theme}`}
             theme={this.theme}
-            style-class={`ecl-select__icon-shape sc-ecl-select-${this.theme}`}
+            variant="ghost"
+            hide-label
+          >
+            {this.buttonLabel}
+          <ecl-icon
+            slot="icon-after"
+            style-class={`sc-ecl-select-${this.theme}`}
             icon="corner-arrow"
-            size="s"
+            size="xs"
             transform="rotate-180"
             ></ecl-icon>
+          </ecl-button>
         </div>
       </div>
     );
