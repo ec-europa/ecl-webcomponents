@@ -42,6 +42,7 @@
  - [ecl-input](../ecl-input)
  - [ecl-link](../ecl-link)
  - [ecl-list-illustration-item](../ecl-list-illustration)
+ - [ecl-media-container](../ecl-media-container)
  - [ecl-menu](../ecl-menu)
  - [ecl-menu-item](../ecl-menu)
  - [ecl-message](../ecl-message)
@@ -82,6 +83,7 @@ graph TD;
   ecl-input --> ecl-icon
   ecl-link --> ecl-icon
   ecl-list-illustration-item --> ecl-icon
+  ecl-media-container --> ecl-icon
   ecl-menu --> ecl-icon
   ecl-menu-item --> ecl-icon
   ecl-message --> ecl-icon

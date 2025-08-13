@@ -1252,28 +1252,44 @@ importers:
         version: 7.0.3
 
   src/components/ecl-media-container:
+    dependencies:
+      '@ecl/web-components-button':
+        specifier: 0.15.1
+        version: link:../ecl-button
+      '@ecl/web-components-expandable':
+        specifier: 0.15.1
+        version: link:../ecl-expandable
+      '@ecl/web-components-icon':
+        specifier: 0.15.1
+        version: link:../ecl-icon
+      '@ecl/web-components-picture':
+        specifier: 0.15.1
+        version: link:../ecl-picture
+      '@ecl/web-components-video':
+        specifier: 0.15.1
+        version: link:../ecl-video
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.33.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.33.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/media-container':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-media-container':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-utility-media':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/utility-media':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/utility-screen-reader':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -1869,6 +1885,18 @@ importers:
       '@ecl/vanilla-layout-grid':
         specifier: 3.13.0
         version: 3.13.0
+      cross-env:
+        specifier: 7.0.3
+        version: 7.0.3
+
+  src/components/ecl-video:
+    devDependencies:
+      '@ecl/builder':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.33.0(jiti@1.21.7))
+      '@ecl/video':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -3292,9 +3320,6 @@ packages:
 
   '@ecl/vanilla-component-list-illustration@3.13.0':
     resolution: {integrity: sha512-/N8gjU3YDCB1xkDg0zQE5FDJjpPlx/39ku76XrC7+ymO1K3tJau4s2TrOqjUyudJqD6ZhliPp+yJRRbNOVl88A==}
-
-  '@ecl/vanilla-component-media-container@3.13.0':
-    resolution: {integrity: sha512-fh2U9hB6AtfZjiHJwD8yYGnMnebAhVoOdsx3Vl93yUdSJr3Rhtyc6BeN2xOUHguz2aydpM/Iui4WOkAYKKHTOA==}
 
   '@ecl/vanilla-component-menu@3.13.0':
     resolution: {integrity: sha512-ZHHTQIQeXAnHyeCh8z1/ZWoPqdAHteWXR5/BrFhevkj4K/itlobu2vfNjhWgh8uSX6ZytDAt4AuLQRSB+y9qgQ==}
@@ -5290,12 +5315,6 @@ packages:
     peerDependencies:
       typescript: '>=4.8.4 <5.9.0'
 
-  '@typescript-eslint/tsconfig-utils@8.37.0':
-    resolution: {integrity: sha512-1/YHvAVTimMM9mmlPvTec9NP4bobA1RkDbMydxG8omqwJJLEW/Iy2C4adsAESIXU3WGLXFHSZUU+C9EoFWl4Zg==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-    peerDependencies:
-      typescript: '>=4.8.4 <5.9.0'
-
   '@typescript-eslint/tsconfig-utils@8.39.1':
     resolution: {integrity: sha512-ePUPGVtTMR8XMU2Hee8kD0Pu4NDE1CN9Q1sxGSGd/mbOtGZDM7pnhXNJnzW63zk/q+Z54zVzj44HtwXln5CvHA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -5311,10 +5330,6 @@ packages:
 
   '@typescript-eslint/types@8.34.1':
     resolution: {integrity: sha512-rjLVbmE7HR18kDsjNIZQHxmv9RZwlgzavryL5Lnj2ujIRTeXlKtILHgRNmQ3j4daw7zd+mQgy+uyt6Zo6I0IGA==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
-  '@typescript-eslint/types@8.37.0':
-    resolution: {integrity: sha512-ax0nv7PUF9NOVPs+lmQ7yIE7IQmAf8LGcXbMvHX5Gm+YJUYNAl340XkGnrimxZ0elXyoQJuN5sbg6C4evKA4SQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@typescript-eslint/types@8.39.1':
@@ -15007,11 +15022,6 @@ snapshots:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
       '@ecl/vanilla-layout-grid': 3.13.0
 
-  '@ecl/vanilla-component-media-container@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-utility-media': 3.13.0
-
   '@ecl/vanilla-component-menu@3.13.0':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
@@ -16932,8 +16942,8 @@ snapshots:
 
   '@typescript-eslint/project-service@8.34.1(typescript@4.9.5)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.37.0(typescript@4.9.5)
-      '@typescript-eslint/types': 8.37.0
+      '@typescript-eslint/tsconfig-utils': 8.39.1(typescript@4.9.5)
+      '@typescript-eslint/types': 8.39.1
       debug: 4.4.1(supports-color@5.5.0)
       typescript: 4.9.5
     transitivePeerDependencies:
@@ -16962,10 +16972,6 @@ snapshots:
     dependencies:
       typescript: 4.9.5
 
-  '@typescript-eslint/tsconfig-utils@8.37.0(typescript@4.9.5)':
-    dependencies:
-      typescript: 4.9.5
-
   '@typescript-eslint/tsconfig-utils@8.39.1(typescript@4.9.5)':
     dependencies:
       typescript: 4.9.5
@@ -16983,8 +16989,6 @@ snapshots:
       - supports-color
 
   '@typescript-eslint/types@8.34.1': {}
-
-  '@typescript-eslint/types@8.37.0': {}
 
   '@typescript-eslint/types@8.39.1': {}
 

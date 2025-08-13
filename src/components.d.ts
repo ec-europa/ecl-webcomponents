@@ -114,6 +114,7 @@ export namespace Components {
     }
     interface EclButton {
         "ariaControls": string;
+        "containerExtraClasses": string;
         /**
           * @default false
          */
@@ -991,7 +992,10 @@ export namespace Components {
         "theme": string;
     }
     interface EclMediaContainer {
-        "description": string;
+        /**
+          * @default false
+         */
+        "autoplay": boolean;
         /**
           * @default false
          */
@@ -1015,10 +1019,11 @@ export namespace Components {
          */
         "ratio": string;
         "sources": string;
+        "srPause": string;
+        "srPlay": string;
+        "srVideoAudio": string;
+        "srVideoPlayer": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "tracks": string;
     }
@@ -1709,6 +1714,37 @@ export namespace Components {
         "theme": string;
         "type": string;
     }
+    interface EclVideo {
+        /**
+          * @default false
+         */
+        "autoplay": boolean;
+        /**
+          * @default true
+         */
+        "controls": boolean;
+        /**
+          * @default false
+         */
+        "loop": boolean;
+        /**
+          * @default false
+         */
+        "muted": boolean;
+        "poster": string;
+        "srVideoLabel": string;
+        "srVideoPlayer": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+        "videoTitle": string;
+        /**
+          * @default false
+         */
+        "zoom": boolean;
+    }
 }
 export interface EclAccordionItemCustomEvent<T> extends CustomEvent<T> {
     detail: T;
@@ -2305,6 +2341,12 @@ declare global {
         prototype: HTMLEclTimelineItemElement;
         new (): HTMLEclTimelineItemElement;
     };
+    interface HTMLEclVideoElement extends Components.EclVideo, HTMLStencilElement {
+    }
+    var HTMLEclVideoElement: {
+        prototype: HTMLEclVideoElement;
+        new (): HTMLEclVideoElement;
+    };
     interface HTMLElementTagNameMap {
         "ecl-accordion": HTMLEclAccordionElement;
         "ecl-accordion-item": HTMLEclAccordionItemElement;
@@ -2383,6 +2425,7 @@ declare global {
         "ecl-textarea": HTMLEclTextareaElement;
         "ecl-timeline": HTMLEclTimelineElement;
         "ecl-timeline-item": HTMLEclTimelineItemElement;
+        "ecl-video": HTMLEclVideoElement;
     }
 }
 declare namespace LocalJSX {
@@ -2495,6 +2538,7 @@ declare namespace LocalJSX {
     }
     interface EclButton {
         "ariaControls"?: string;
+        "containerExtraClasses"?: string;
         /**
           * @default false
          */
@@ -3378,7 +3422,10 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclMediaContainer {
-        "description"?: string;
+        /**
+          * @default false
+         */
+        "autoplay"?: boolean;
         /**
           * @default false
          */
@@ -3402,10 +3449,11 @@ declare namespace LocalJSX {
          */
         "ratio"?: string;
         "sources"?: string;
+        "srPause"?: string;
+        "srPlay"?: string;
+        "srVideoAudio"?: string;
+        "srVideoPlayer"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "tracks"?: string;
     }
@@ -4109,6 +4157,37 @@ declare namespace LocalJSX {
         "theme"?: string;
         "type"?: string;
     }
+    interface EclVideo {
+        /**
+          * @default false
+         */
+        "autoplay"?: boolean;
+        /**
+          * @default true
+         */
+        "controls"?: boolean;
+        /**
+          * @default false
+         */
+        "loop"?: boolean;
+        /**
+          * @default false
+         */
+        "muted"?: boolean;
+        "poster"?: string;
+        "srVideoLabel"?: string;
+        "srVideoPlayer"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+        "videoTitle"?: string;
+        /**
+          * @default false
+         */
+        "zoom"?: boolean;
+    }
     interface IntrinsicElements {
         "ecl-accordion": EclAccordion;
         "ecl-accordion-item": EclAccordionItem;
@@ -4187,6 +4266,7 @@ declare namespace LocalJSX {
         "ecl-textarea": EclTextarea;
         "ecl-timeline": EclTimeline;
         "ecl-timeline-item": EclTimelineItem;
+        "ecl-video": EclVideo;
     }
 }
 export { LocalJSX as JSX };
@@ -4270,6 +4350,7 @@ declare module "@stencil/core" {
             "ecl-textarea": LocalJSX.EclTextarea & JSXBase.HTMLAttributes<HTMLEclTextareaElement>;
             "ecl-timeline": LocalJSX.EclTimeline & JSXBase.HTMLAttributes<HTMLEclTimelineElement>;
             "ecl-timeline-item": LocalJSX.EclTimelineItem & JSXBase.HTMLAttributes<HTMLEclTimelineItemElement>;
+            "ecl-video": LocalJSX.EclVideo & JSXBase.HTMLAttributes<HTMLEclVideoElement>;
         }
     }
 }
