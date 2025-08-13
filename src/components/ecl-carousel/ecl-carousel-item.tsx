@@ -7,7 +7,6 @@ import { Component, h, Prop } from '@stencil/core';
 export class EclCarouselItem {
   @Prop() styleClass: string = '';
   @Prop() bannerTitle: string = '';
-  @Prop() bannerVariant: string = '';
   @Prop() image: string = '';
   @Prop() theme: string = 'ec';
   @Prop() ctaLink: string;
@@ -33,11 +32,9 @@ export class EclCarouselItem {
         <ecl-banner
           banner-title={this.bannerTitle}
           image={this.image}
-          variant={this.bannerVariant}
           theme={this.theme}
           cta-link={this.ctaLink}
           cta-label={this.ctaLabel}
-          centered={this.centered}
           size={this.size}
         >
           <slot></slot>

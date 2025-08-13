@@ -24,6 +24,7 @@
 
 ### Used by
 
+ - [ecl-banner](../ecl-banner)
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
  - [ecl-expandable](../ecl-expandable)
  - [ecl-file-translations](../ecl-file)
@@ -46,6 +47,7 @@
 ```mermaid
 graph TD;
   ecl-button --> ecl-indicator
+  ecl-banner --> ecl-button
   ecl-breadcrumb-item --> ecl-button
   ecl-expandable --> ecl-button
   ecl-file-translations --> ecl-button

@@ -30,10 +30,15 @@ export namespace Components {
     }
     interface EclBanner {
         "bannerTitle": string;
+        "bannerTitleLink": string;
         /**
-          * @default false
+          * @default 'light'
          */
-        "centered": boolean;
+        "boxBackground": string;
+        /**
+          * @default ''
+         */
+        "colorMode": string;
         "credit": string;
         /**
           * @default false
@@ -44,26 +49,43 @@ export namespace Components {
         /**
           * @default false
          */
+        "eclScript": boolean;
+        /**
+          * @default false
+         */
         "external": boolean;
+        /**
+          * @default 'dark'
+         */
+        "fontColor": string;
+        /**
+          * @default 'm'
+         */
+        "fontSize": string;
         /**
           * @default false
          */
         "fullWidth": boolean;
+        /**
+          * @default 'left'
+         */
+        "horizontal": string;
         "image": string;
         "imageAlt": string;
         /**
           * @default 'm'
          */
         "size": string;
+        "sources": string;
+        "srPause": string;
+        "srPlay": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
+        "tracks": string;
         /**
-          * @default 'display'
+          * @default 'center'
          */
-        "variant": string;
+        "vertical": string;
     }
     interface EclBlockquote {
         "author": string;
@@ -204,10 +226,6 @@ export namespace Components {
           * @default ''
          */
         "bannerTitle": string;
-        /**
-          * @default ''
-         */
-        "bannerVariant": string;
         "centered": boolean;
         "ctaLabel": string;
         "ctaLink": string;
@@ -2451,10 +2469,15 @@ declare namespace LocalJSX {
     }
     interface EclBanner {
         "bannerTitle"?: string;
+        "bannerTitleLink"?: string;
         /**
-          * @default false
+          * @default 'light'
          */
-        "centered"?: boolean;
+        "boxBackground"?: string;
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
         "credit"?: string;
         /**
           * @default false
@@ -2465,26 +2488,43 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
+        "eclScript"?: boolean;
+        /**
+          * @default false
+         */
         "external"?: boolean;
+        /**
+          * @default 'dark'
+         */
+        "fontColor"?: string;
+        /**
+          * @default 'm'
+         */
+        "fontSize"?: string;
         /**
           * @default false
          */
         "fullWidth"?: boolean;
+        /**
+          * @default 'left'
+         */
+        "horizontal"?: string;
         "image"?: string;
         "imageAlt"?: string;
         /**
           * @default 'm'
          */
         "size"?: string;
+        "sources"?: string;
+        "srPause"?: string;
+        "srPlay"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
+        "tracks"?: string;
         /**
-          * @default 'display'
+          * @default 'center'
          */
-        "variant"?: string;
+        "vertical"?: string;
     }
     interface EclBlockquote {
         "author"?: string;
@@ -2625,10 +2665,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "bannerTitle"?: string;
-        /**
-          * @default ''
-         */
-        "bannerVariant"?: string;
         "centered"?: boolean;
         "ctaLabel"?: string;
         "ctaLink"?: string;

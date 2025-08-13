@@ -27,10 +27,12 @@
 ### Used by
 
  - [ecl-media-container](../ecl-media-container)
+ - [ecl-banner](../ecl-banner)
 
 ### Graph
 ```mermaid
 graph TD;
+  ecl-banner --> ecl-video
   ecl-media-container --> ecl-video
   style ecl-video fill:#f9f,stroke:#333,stroke-width:4px
 ```
