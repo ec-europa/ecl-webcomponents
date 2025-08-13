@@ -1,10 +1,10 @@
 {
-  "name": "@ecl/web-components-message",
+  "name": "@ecl/web-components-notification",
   "author": "European Commission",
   "license": "EUPL-1.2",
   "version": "0.15.1",
   "description": "ECL Message",
-  "main": "ecl-message.tsx",
+  "main": "ecl-notification.tsx",
   "private": true,
   "scripts": {
     "build:styles": "cross-env ecl-builder styles",
@@ -14,15 +14,13 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/theme-ec": "3.13.0",
-    "@ecl/theme-eu": "3.13.0",
-    "@ecl/theme-dev": "3.13.0",
-    "@ecl/builder": "3.13.0",
-    "@ecl/resources-ec-icons": "3.13.0",
-    "@ecl/resources-eu-icons": "3.13.0",
-    "@ecl/vanilla-component-icon": "3.13.0",
-    "@ecl/vanilla-component-message": "3.13.0",
-    "@ecl/vanilla-layout-grid": "3.13.0",
+    "@ecl/theme-ec": "5.0.0-alpha.15",
+    "@ecl/theme-eu": "5.0.0-alpha.15",
+    "@ecl/builder": "5.0.0-alpha.15",
+    "@ecl/resources-icons": "4.10.0",
+    "@ecl/icon": "5.0.0-alpha.15",
+    "@ecl/notification": "5.0.0-alpha.15",
+    "@ecl/grid": "5.0.0-alpha.15",
     "cross-env": "7.0.3"
   },
   "repository": {

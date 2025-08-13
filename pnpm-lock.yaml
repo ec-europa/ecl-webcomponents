@@ -1318,39 +1318,6 @@ importers:
         specifier: 7.0.3
         version: 7.0.3
 
-  src/components/ecl-message:
-    devDependencies:
-      '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.33.0(jiti@1.21.7))
-      '@ecl/resources-ec-icons':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/resources-eu-icons':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-icon':
-        specifier: 3.13.0
-        version: 3.13.0(svg4everybody@2.1.9)
-      '@ecl/vanilla-component-message':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
-      cross-env:
-        specifier: 7.0.3
-        version: 7.0.3
-
   src/components/ecl-modal:
     devDependencies:
       '@ecl/builder':
@@ -1419,6 +1386,33 @@ importers:
       '@ecl/vanilla-layout-grid':
         specifier: 3.13.0
         version: 3.13.0
+      cross-env:
+        specifier: 7.0.3
+        version: 7.0.3
+
+  src/components/ecl-notification:
+    devDependencies:
+      '@ecl/builder':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.33.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/icon':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/notification':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/resources-icons':
+        specifier: 4.10.0
+        version: 4.10.0
+      '@ecl/theme-ec':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/theme-eu':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -3323,9 +3317,6 @@ packages:
 
   '@ecl/vanilla-component-menu@3.13.0':
     resolution: {integrity: sha512-ZHHTQIQeXAnHyeCh8z1/ZWoPqdAHteWXR5/BrFhevkj4K/itlobu2vfNjhWgh8uSX6ZytDAt4AuLQRSB+y9qgQ==}
-
-  '@ecl/vanilla-component-message@3.13.0':
-    resolution: {integrity: sha512-QhNGZs3iawuAUNMDatE2kurl1cEhUOhkt0setIs+ecEd7rtO6XRsnTOnuCrEZRPoAaHBwFwUg9KAmFY8UqzoOg==}
 
   '@ecl/vanilla-component-modal@3.13.0':
     resolution: {integrity: sha512-0bOkK/anx2R65kUmSMM+eo3SzObHmJfdFxuce5EHv/owwGfLGnIZxPKik3P1bm6zFz1JVnrIP0+neD4HPDLZ4A==}
@@ -15028,11 +15019,6 @@ snapshots:
       mobile-device-detect: 0.4.3
       stickyfilljs: 2.1.0
       swipe-listener: 1.3.0
-
-  '@ecl/vanilla-component-message@3.13.0':
-    dependencies:
-      '@ecl/dom-utils': 3.13.0
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
 
   '@ecl/vanilla-component-modal@3.13.0':
     dependencies:

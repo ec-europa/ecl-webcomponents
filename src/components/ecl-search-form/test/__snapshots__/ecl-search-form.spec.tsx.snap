@@ -18,7 +18,7 @@ exports[`ecl-search-form renders 1`] = `
               <use xlink:href="/build/images/ec/icons.svg#search"></use>
             </svg>
           </ecl-icon>
-          <span class="ecl-button__label">
+          <span class="ecl-button__label" data-ecl-label>
             Search
           </span>
         </span>

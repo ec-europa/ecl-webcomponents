@@ -31,9 +31,9 @@
  - [ecl-media-container](../ecl-media-container)
  - [ecl-menu](../ecl-menu)
  - [ecl-menu-item](../ecl-menu)
- - [ecl-message](../ecl-message)
  - [ecl-modal](../ecl-modal)
  - [ecl-news-ticker](../ecl-news-ticker)
+ - [ecl-notification](../ecl-notification)
  - [ecl-search-form](../ecl-search-form)
  - [ecl-select](../ecl-select)
  - [ecl-timeline-item](../ecl-timeline)
@@ -53,9 +53,9 @@ graph TD;
   ecl-media-container --> ecl-button
   ecl-menu --> ecl-button
   ecl-menu-item --> ecl-button
-  ecl-message --> ecl-button
   ecl-modal --> ecl-button
   ecl-news-ticker --> ecl-button
+  ecl-notification --> ecl-button
   ecl-search-form --> ecl-button
   ecl-select --> ecl-button
   ecl-timeline-item --> ecl-button

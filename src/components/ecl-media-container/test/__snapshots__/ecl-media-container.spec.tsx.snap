@@ -51,7 +51,7 @@ exports[`ecl-media-container renders correctly with an html5 video 1`] = `
           <!---->
           <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-media-container__play sc-ecl-media-container-ec" data-ecl-media-container-play="eclMediaContainerPlay" type="button">
             <span class="ecl-button__container sc-ecl-media-container-ec">
-              <span class="ecl-u-sr-only" data-ecl-label></span>
+              <span class="ecl-button__label" data-ecl-label></span>
               <ecl-icon slot="icon-after" style-class="sc-ecl-media-container-ec">
                 <svg class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-button-ec sc-ecl-media-container-ec">
                   <use xlink:href="/build/images/ec/icons.svg#play-outline"></use>
@@ -64,7 +64,7 @@ exports[`ecl-media-container renders correctly with an html5 video 1`] = `
           <!---->
           <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-media-container__pause sc-ecl-media-container-ec" data-ecl-media-container-pause="eclMediaContainerPause" type="button">
             <span class="ecl-button__container sc-ecl-media-container-ec">
-              <span class="ecl-u-sr-only" data-ecl-label></span>
+              <span class="ecl-button__label" data-ecl-label></span>
               <ecl-icon slot="icon-after" style-class="sc-ecl-media-container-ec">
                 <svg class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-button-ec sc-ecl-media-container-ec">
                   <use xlink:href="/build/images/ec/icons.svg#pause-outline"></use>
