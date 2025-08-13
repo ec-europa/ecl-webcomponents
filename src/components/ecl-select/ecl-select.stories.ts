@@ -3,6 +3,7 @@ const getArgs = () => {
     required: true,
     disabled: false,
     invalid: false,
+    hideLabel: false,
     width: 'm',
     label: 'Select a country',
     selectId: 'select-id',
@@ -11,6 +12,7 @@ const getArgs = () => {
     invalidText: 'This is the error message',
     invalidIcon: 'error',
     optionalText: '(optional)',
+    buttonLabel: 'Toggle dropdwon',
     multiple: false,
     multiplePlaceholder: 'Select an item',
     multipleSearchNoResultsText: 'No results found',
@@ -23,6 +25,7 @@ const getArgs = () => {
 
 const getArgTypes = () => {
   return {
+    color_mode: { table: { disable: true }},
     required: {
       type: { name: 'boolean' },
       description: 'Required input',
@@ -42,6 +45,13 @@ const getArgTypes = () => {
       description: 'Invalid input',
       table: {
         category: 'States',
+      },
+    },
+    hideLabel: {
+      name: 'hide-label',
+      control: { type: 'boolean' },
+      table: {
+        category: 'Content',
       },
     },
     label: {
@@ -95,6 +105,14 @@ const getArgTypes = () => {
       name: 'invalid-icon',
       type: { name: 'string' },
       description: 'Error icon',
+      table: {
+        category: 'Content',
+      },
+    },
+    buttonLabel: {
+      name: 'button-label',
+      type: { name: 'string' },
+      description: 'Hidden label for the button',
       table: {
         category: 'Content',
       },
@@ -156,6 +174,11 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/form/select',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = (args) => 
@@ -165,6 +188,7 @@ const Template = (args) =>
     invalid=${args.invalid}
     invalid-text="${args.invalidText}"
     invalid-icon="${args.invalidIcon}"
+    hide-label=${args.hideLabel}
     optional-text="${args.optionalText}"
     label="${args.label}"
     required=${args.required}
@@ -184,6 +208,7 @@ const Template = (args) =>
       multiple-all-text="${args.multipleAllText}"
       multiple-clear-all-text="${args.multipleClearAllText}"
       ecl-script=${args.multiple}
+      button-label="${args.buttonLabel}"
       select-id="custom-select"
       name="ecl-select"
       theme="${args.theme}"

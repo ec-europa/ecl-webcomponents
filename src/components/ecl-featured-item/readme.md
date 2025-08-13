@@ -31,6 +31,10 @@
 graph TD;
   ecl-featured-item --> ecl-media-container
   ecl-media-container --> ecl-picture
+  ecl-media-container --> ecl-video
+  ecl-media-container --> ecl-button
+  ecl-media-container --> ecl-icon
+  ecl-button --> ecl-indicator
   style ecl-featured-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

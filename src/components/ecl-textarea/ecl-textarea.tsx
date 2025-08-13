@@ -11,7 +11,7 @@ import { Component, h, Prop, Element, Event, EventEmitter} from '@stencil/core';
 })
 export class EclTextarea{
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() disabled: boolean = false;
   @Prop() required: boolean = false;
@@ -29,21 +29,8 @@ export class EclTextarea{
   @Event() inputBlur: EventEmitter<FocusEvent>;
   @Event() inputChange: EventEmitter;
 
-  componentDidRender() {
-    if (this.textareaId) {
-      const group = this.el.closest('.ecl-form-group');
-      if (group) {
-        const label =  group.querySelector('.ecl-form-label');
-        if (label) {
-          label.setAttribute('for', this.textareaId);
-          label.setAttribute('id', `${this.textareaId}-label`);
-        }
-        const helper = group.querySelector('.ecl-help-block');
-        if (helper) {
-          helper.setAttribute('id', `${this.textareaId}-helper`);
-        }
-      }
-    }
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   getClass(): string {
@@ -89,6 +76,22 @@ export class EclTextarea{
       rows: this.rows,
       value: this.defaultValue,
     };
+
+    if (this.textareaId) {
+      const group = this.el.closest('.ecl-form-group');
+      if (group) {
+        const label =  group.querySelector('.ecl-form-label');
+        if (label) {
+          label.setAttribute('for', this.textareaId);
+          label.setAttribute('id', `${this.textareaId}-label`);
+        }
+        const helper = group.querySelector('.ecl-help-block');
+        if (helper) {
+          helper.setAttribute('id', `${this.textareaId}-helper`);
+          attributes['aria-describedby'] = `${this.inputId}-helper`;
+        }
+      }
+    }
 
     return (
       <textarea

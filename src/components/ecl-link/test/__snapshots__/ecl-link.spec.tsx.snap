@@ -1,35 +1,88 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-link renders correctly as a default link 1`] = `
-<ecl-link path="/example.html" theme="ec" variant="default">
+<ecl-link path="/example.html" variant="default">
   <!---->
   <a class="ecl-link ecl-link--default" href="/example.html">
     A default link
-    <slot-fb name="icon-after"></slot-fb>
   </a>
 </ecl-link>
 `;
 
 exports[`ecl-link renders correctly as a standalone link 1`] = `
-<ecl-link path="/example.html" theme="ec" variant="standalone">
+<ecl-link path="/example.html" variant="standalone">
   <!---->
   <a class="ecl-link ecl-link--standalone" href="/example.html">
     A standalone link
-    <slot-fb name="icon-after"></slot-fb>
   </a>
 </ecl-link>
 `;
 
-exports[`ecl-link renders correctly with an icon 1`] = `
+exports[`ecl-link renders correctly when external 1`] = `
+<ecl-link external="" path="/example.html" sr-external="will move you outside of this website" variant="standalone">
+  <!---->
+  <a class="ecl-link ecl-link--standalone" href="/example.html">
+    Link label
+    <slot-fb name="icon-after">
+      <ecl-icon style-class="ecl-link__icon ecl-link__icon--after sc-ecl-link-ec" title-tag="will move you outside of this website">
+        <svg class="ecl-icon ecl-icon--2xs ecl-link__icon ecl-link__icon--after ecl-link__icon--before sc-ecl-link-ec">
+          <title>
+            will move you outside of this website
+          </title>
+          <use xlink:href="/build/images/ec/icons.svg#external"></use>
+        </svg>
+      </ecl-icon>
+    </slot-fb>
+  </a>
+</ecl-link>
+`;
+
+exports[`ecl-link renders correctly with an icon after 1`] = `
+<ecl-link path="/example.html" variant="standalone">
+  <!---->
+  <a class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone" href="/example.html">
+    Link label
+    <slot-fb hidden="" name="icon-after"></slot-fb>
+    <ecl-icon icon="check" slot="icon-after">
+      <svg class="ecl-icon ecl-icon--xs ecl-link__icon ecl-link__icon--after">
+        <use xlink:href="/build/images/ec/icons.svg#check"></use>
+      </svg>
+    </ecl-icon>
+  </a>
+</ecl-link>
+`;
+
+exports[`ecl-link renders correctly with an icon before 1`] = `
 <ecl-link path="/example.html" theme="ec" variant="standalone">
   <!---->
-  <ecl-icon hidden="" icon="check" slot="ecl-icon-after">
-    <svg class="ecl-icon ecl-icon--xs ecl-link__icon ecl-link__icon--before">
-      <use xlink:href="/build/images/ec/icons.svg#check"></use>
-    </svg>
-  </ecl-icon>
   <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone" href="/example.html">
-    <slot-fb name="icon-after"></slot-fb>
+    <ecl-icon icon="arrow-left" slot="icon-before">
+      <svg class="ecl-icon ecl-icon--xs ecl-link__icon ecl-link__icon--before">
+        <use xlink:href="/build/images/ec/icons.svg#arrow-left"></use>
+      </svg>
+    </ecl-icon>
+    Link label
+  </a>
+</ecl-link>
+`;
+
+exports[`ecl-link renders correctly with an indicator 1`] = `
+<ecl-link indicator="true" indicator-value="5" path="/example.html" variant="standalone">
+  <!---->
+  <a class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone" href="/example.html">
+    Link label
+    <span class="ecl-link__icon-container">
+      <ecl-icon icon="check" slot="icon-after">
+        <svg class="ecl-icon ecl-icon--xs ecl-link__icon ecl-link__icon--after">
+          <use xlink:href="/build/images/ec/icons.svg#check"></use>
+        </svg>
+      </ecl-icon>
+      <ecl-indicator ecl-script="">
+        <span class="ecl-indicator" data-ecl-indicator>
+          5
+        </span>
+      </ecl-indicator>
+    </span>
   </a>
 </ecl-link>
 `;

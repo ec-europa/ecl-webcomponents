@@ -12,6 +12,7 @@ import { Component, h, Prop, Element } from '@stencil/core';
 export class EclRatingField {
   @Element() el: HTMLElement;
   @Prop() theme: string = 'ec';
+  @Prop() inputId: string = `ecl-rating-field-${Math.random().toString(36).slice(2, 10)}`;
   @Prop() styleClass: string;
   @Prop() disabled: boolean = false;
   @Prop() required: boolean = false;

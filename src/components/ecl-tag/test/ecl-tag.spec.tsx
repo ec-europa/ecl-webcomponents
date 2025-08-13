@@ -1,86 +1,96 @@
 import { newSpecPage } from '@stencil/core/testing';
 import { EclTag } from '../ecl-tag';
+import { EclTagSet } from '../ecl-tag-set'; 
 import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-tag', () => {
-  it('renders correctly in the display variant in EC', async () => {
+  it('renders correctly in the link variant', async () => {
     const page = await newSpecPage({
       components: [EclTag],
       html: `<ecl-tag
-              type="display"
-              data-ecl-button-icon
-              theme="ec"
-            >
-              An ECL tag
-            </ecl-tag>`,
-    });
-
-    expect(page.root).toMatchSnapshot();
-  });
-  it('renders correctly in the display variant in EU', async () => {
-    const page = await newSpecPage({
-      components: [EclTag],
-      html: `<ecl-tag
-              type="display"
-              data-ecl-button-icon
-              theme="ec"
-            >
-              An ECL tag
-            </ecl-tag>`,
-    });
-
-    expect(page.root).toMatchSnapshot();
-  });
-  it('renders correctly in the link variant in EC', async () => {
-    const page = await newSpecPage({
-      components: [EclTag],
-      html: `<ecl-tag
-              type="link"
+              variant="link"
               url="/example.html"
-              theme="ec"
             >
-              An ECL tag
+              A link ECL tag
             </ecl-tag>`,
     });
 
     expect(page.root).toMatchSnapshot();
   });
-  it('renders correctly in the link variant in EU', async () => {
-    const page = await newSpecPage({
-      components: [EclTag],
-      html: `<ecl-tag
-              type="link"
-              url="/example.html"
-              theme="eu"
-            >
-              An ECL tag
-            </ecl-tag>`,
-    });
 
-    expect(page.root).toMatchSnapshot();
-  });
-  it('renders correctly in the removable variant in EC', async () => {
+  it('renders correctly with external', async () => {
     const page = await newSpecPage({
       components: [EclTag, EclIcon],
       html: `<ecl-tag
-              type="removable"
-              theme="ec"
+              variant="link"
+              url="/example.html"
+              external
             >
-              An ECL tag
+              An external link ECL tag
             </ecl-tag>`,
     });
 
     expect(page.root).toMatchSnapshot();
   });
-  it('renders correctly in the removable variant in EU', async () => {
+
+  it('renders correctly with a custom color mode', async () => {
     const page = await newSpecPage({
       components: [EclTag, EclIcon],
       html: `<ecl-tag
-              type="removable"
-              theme="eu"
+              variant="removable"
+              color-mode="blue-navy"
             >
-              An ECL tag
+              A removable ECL tag
             </ecl-tag>`,
+    });
+
+    expect(page.root).toMatchSnapshot();
+  });
+
+
+  it('renders correctly in the removable variant', async () => {
+    const page = await newSpecPage({
+      components: [EclTag, EclIcon],
+      html: `<ecl-tag
+              variant="removable"
+            >
+              A removable ECL tag
+            </ecl-tag>`,
+    });
+
+    expect(page.root).toMatchSnapshot();
+  });
+
+  it('renders correctly with no-wrap', async () => {
+    const page = await newSpecPage({
+      components: [EclTag, EclIcon],
+      html: `<ecl-tag
+              variant="removable"
+              no-wrap
+            >
+              A no wrap ECL tag
+            </ecl-tag>`,
+    });
+
+    expect(page.root).toMatchSnapshot();
+  });
+
+  it('renders correctly as a tag set', async () => {
+    const page = await newSpecPage({
+      components: [EclTag, EclTagSet, EclIcon],
+      html: `<ecl-tag-set>
+              <ecl-tag
+                 variant="link"
+                 url="/example.html"
+              >
+                A link ECL tag
+              </ecl-tag>
+              <ecl-tag
+                 variant="removable"
+              >
+                A removable ECL tag
+              </ecl-tag>
+            </ecl-tag-set>`,
     });
 
     expect(page.root).toMatchSnapshot();

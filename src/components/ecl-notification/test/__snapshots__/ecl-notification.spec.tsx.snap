@@ -33,7 +33,6 @@ exports[`ecl-notification renders correctly in the information variant 1`] = `
           <!---->
           <a class="ecl-link ecl-link--default ecl-notification__link sc-ecl-notification-ec" href="/example.html">
             Lorem ipsum
-            <slot-fb name="icon-after"></slot-fb>
           </a>
         </ecl-link>
       </div>
@@ -75,7 +74,6 @@ exports[`ecl-notification renders correctly in the success variant 1`] = `
           <!---->
           <a class="ecl-link ecl-link--default ecl-notification__link sc-ecl-notification-ec" href="/example.html">
             Lorem ipsum
-            <slot-fb name="icon-after"></slot-fb>
           </a>
         </ecl-link>
       </div>
@@ -102,7 +100,6 @@ exports[`ecl-notification renders correctly without the close button 1`] = `
           <!---->
           <a class="ecl-link ecl-link--default ecl-notification__link sc-ecl-notification-ec" href="/example.html">
             Lorem ipsum
-            <slot-fb name="icon-after"></slot-fb>
           </a>
         </ecl-link>
       </div>

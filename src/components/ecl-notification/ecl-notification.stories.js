@@ -47,6 +47,9 @@ const getArgTypes = () => ({
 
 export default {
   title: 'Components/notification',
+  parameters: {
+    badges: ['updated'],
+  },
 };
 
 const Template = args =>

@@ -12,8 +12,8 @@ const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()
 module.exports = {
   styles: [
     {
-      entry: path.resolve(__dirname, 'src/styles/ecl-page-banner-ec.scss'),
-      dest: path.resolve(outputFolder, 'styles/ecl-page-banner-ec.css'),
+      entry: path.resolve(__dirname, 'src/styles/ecl-video-ec.scss'),
+      dest: path.resolve(outputFolder, 'styles/ecl-video-ec.css'),
       options: {
         banner,
         includePaths,
@@ -22,8 +22,8 @@ module.exports = {
       },
     },
     {
-      entry: path.resolve(__dirname, 'src/styles/ecl-page-banner-eu.scss'),
-      dest: path.resolve(outputFolder, 'styles/ecl-page-banner-eu.css'),
+      entry: path.resolve(__dirname, 'src/styles/ecl-video-eu.scss'),
+      dest: path.resolve(outputFolder, 'styles/ecl-video-eu.css'),
       options: {
         banner,
         includePaths,

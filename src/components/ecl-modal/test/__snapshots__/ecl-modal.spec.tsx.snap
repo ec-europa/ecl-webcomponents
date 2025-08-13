@@ -45,7 +45,7 @@ exports[`ecl-modal renders 1`] = `
           <div class="ecl-modal__body-fixed">
             <div slot="body-fixed">
               <ecl-input input-class="ecl-checkbox__input" input-id="checkbox-default-1" label="Option label" name="checkbox-default" theme="ec" type="checkbox">
-                <div class="ecl-checkbox ecl-checkbox--m ecl-input">
+                <div class="ecl-checkbox ecl-input">
                   <input class="ecl-checkbox__input" id="checkbox-default-1" name="checkbox-default" type="checkbox">
                   <label class="ecl-checkbox__label" htmlfor="checkbox-default-1">
                     <span class="ecl-checkbox__box">
