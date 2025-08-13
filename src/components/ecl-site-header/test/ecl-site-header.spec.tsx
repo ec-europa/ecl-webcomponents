@@ -28,6 +28,7 @@ describe('ecl-site-header', () => {
         logo-alt="European Commission"
         logo-title="European commission"
         language-aria-label="Choose language"
+        search-form-id="ecl-site-header-search-form"
       >
       <ecl-language-item
         slot="eu-category"

@@ -15,6 +15,7 @@ const getArgs = () => {
 
 const getArgTypes = () => {
   return {
+    color_mode: { table: { disable: true }},
     disabled: {
       type: { name: 'boolean' },
       description: 'Disabled input',
@@ -96,6 +97,11 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/form/file-upload',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = args =>

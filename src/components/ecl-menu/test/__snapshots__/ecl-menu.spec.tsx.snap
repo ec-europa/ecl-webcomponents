@@ -53,7 +53,7 @@ exports[`ecl-menu renders 1`] = `
                   <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
                 </svg>
               </ecl-icon>
-              <span class="ecl-u-sr-only" data-ecl-label>
+              <span class="ecl-button__label" data-ecl-label>
                 previous
               </span>
             </span>
@@ -68,7 +68,7 @@ exports[`ecl-menu renders 1`] = `
                   <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
                 </svg>
               </ecl-icon>
-              <span class="ecl-u-sr-only" data-ecl-label>
+              <span class="ecl-button__label" data-ecl-label>
                 next
               </span>
             </span>
@@ -93,7 +93,7 @@ exports[`ecl-menu renders 1`] = `
                 <!---->
                 <button class="ecl-button ecl-button--ghost ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
-                    <span class="ecl-button__label"></span>
+                    <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
                       <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--rotate-180 ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec">
                         <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
@@ -155,7 +155,7 @@ exports[`ecl-menu renders 1`] = `
                 <!---->
                 <button class="ecl-button ecl-button--ghost ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
-                    <span class="ecl-button__label"></span>
+                    <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
                       <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--rotate-180 ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec">
                         <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
@@ -212,7 +212,7 @@ exports[`ecl-menu renders 1`] = `
                 <!---->
                 <button class="ecl-button ecl-button--ghost ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
-                    <span class="ecl-button__label"></span>
+                    <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
                       <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--rotate-180 ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec">
                         <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
@@ -269,7 +269,7 @@ exports[`ecl-menu renders 1`] = `
                 <!---->
                 <button class="ecl-button ecl-button--ghost ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
-                    <span class="ecl-button__label"></span>
+                    <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
                       <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--rotate-180 ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec">
                         <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
@@ -438,7 +438,7 @@ exports[`ecl-menu renders 1`] = `
                 <!---->
                 <button class="ecl-button ecl-button--ghost ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
-                    <span class="ecl-button__label"></span>
+                    <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
                       <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--rotate-180 ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec">
                         <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>

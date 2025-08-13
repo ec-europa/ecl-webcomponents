@@ -40,6 +40,11 @@ const getArgTypes = () => ({
 
 export default {
   title: 'Components/Navigation/navigation-list',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = (args) => {
