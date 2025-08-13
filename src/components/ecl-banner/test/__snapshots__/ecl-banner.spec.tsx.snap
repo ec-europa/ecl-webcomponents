@@ -1,14 +1,106 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ecl-banner renders 1`] = `
-<ecl-banner banner-title="EU Budget for the future" centered="" credit="© Copyright or credit" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" theme="ec" variant="primary">
+exports[`ecl-banner renders correctly in full width, with large size, text on the right and at the bottom, with small font size 1`] = `
+<ecl-banner banner-title="EU Budget for the future" credit="© Copyright or credit" font-size="s" full-width="true" horizontal="right" size="l" vertical="botttom">
   <!---->
-  <section class="ecl-banner ecl-banner--centered ecl-banner--m ecl-banner--primary">
-    <div class="ecl-banner__credit">
-      © Copyright or credit
+  <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--font-s ecl-banner--full-width ecl-banner--h-right ecl-banner--l ecl-banner--no-media ecl-banner--v-botttom">
+    <div class="ecl-banner__info ecl-container">
+      <div class="ecl-banner__container" data-ecl-banner-container>
+        <div class="ecl-banner__content">
+          <div class="ecl-banner__title">
+            <span class="ecl-banner__title-text">
+              EU Budget for the future
+            </span>
+          </div>
+          <p class="ecl-banner__description">
+            <span class="ecl-banner__description-text">
+              Innovation, economy, environment and geopolitics
+            </span>
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="ecl-container">
-      <div class="ecl-banner__container">
+  </section>
+</ecl-banner>
+`;
+
+exports[`ecl-banner renders correctly with a video 1`] = `
+<ecl-banner banner-title="EU Budget for the future" credit="© Copyright or credit" poster="https://vod.prd.commavservices.eu/12/224712/THUMB_I224712EN1W_V_1.jpg" sources="[{&quot;src&quot;: &quot;https://vod.prd.commavservices.eu/12/224712/LR_I224712EN1W.mp&quot;, &quot;type&quot;: &quot;video/mp4&quot;}]">
+  <!---->
+  <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--color-dark ecl-banner--font-m ecl-banner--h-left ecl-banner--m ecl-banner--v-center">
+    <div class="ecl-banner__video-container">
+      <ecl-video>
+        <!---->
+        <video autoplay="" class="ecl-banner__video ecl-video sc-ecl-banner-ec" data-ecl-banner-video loop="" muted="" playsinline="">
+          <source src="https://vod.prd.commavservices.eu/12/224712/LR_I224712EN1W.mp" type="video/mp4">
+        </video>
+      </ecl-video>
+      <div class="ecl-banner__credit" data-ecl-banner-footer>
+        <div class="ecl-container">
+          © Copyright or credit
+        </div>
+      </div>
+      <ecl-button data-ecl-banner-play>
+        <!---->
+        <button class="ecl-banner__play ecl-button ecl-button--icon-only ecl-button--tertiary sc-ecl-banner-ec" data-ecl-banner-play="eclBannerPlay" type="button">
+          <span class="ecl-button__container sc-ecl-banner-ec">
+            <span class="ecl-button__label" data-ecl-label></span>
+            <ecl-icon slot="icon-after">
+              <svg class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-banner-ec sc-ecl-button-ec">
+                <use xlink:href="/build/images/ec/icons.svg#play-outline"></use>
+              </svg>
+            </ecl-icon>
+          </span>
+        </button>
+      </ecl-button>
+      <ecl-button data-ecl-banner-pause>
+        <!---->
+        <button class="ecl-banner__pause ecl-button ecl-button--icon-only ecl-button--tertiary sc-ecl-banner-ec" data-ecl-banner-pause="eclBannerPause" type="button">
+          <span class="ecl-button__container sc-ecl-banner-ec">
+            <span class="ecl-button__label" data-ecl-label></span>
+            <ecl-icon slot="icon-after">
+              <svg class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-banner-ec sc-ecl-button-ec">
+                <use xlink:href="/build/images/ec/icons.svg#pause-outline"></use>
+              </svg>
+            </ecl-icon>
+          </span>
+        </button>
+      </ecl-button>
+    </div>
+    <div class="ecl-banner__info ecl-container">
+      <div class="ecl-banner__container" data-ecl-banner-container>
+        <div class="ecl-banner__content">
+          <div class="ecl-banner__title">
+            <span class="ecl-banner__title-text">
+              EU Budget for the future
+            </span>
+          </div>
+          <p class="ecl-banner__description">
+            <span class="ecl-banner__description-text">
+              Innovation, economy, environment and geopolitics
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</ecl-banner>
+`;
+
+exports[`ecl-banner renders correctly with an image 1`] = `
+<ecl-banner banner-title="EU Budget for the future" credit="© Copyright or credit" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
+  <!---->
+  <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--color-dark ecl-banner--font-m ecl-banner--h-left ecl-banner--m ecl-banner--v-center">
+    <figure class="ecl-banner__picture-container">
+      <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imgclass="ecl-banner__image sc-ecl-banner-ec" styleclass="ecl-banner__picture sc-ecl-banner-ec"></ecl-picture>
+      <footer class="ecl-banner__credit" data-ecl-banner-footer>
+        <div class="ecl-container">
+          © Copyright or credit
+        </div>
+      </footer>
+    </figure>
+    <div class="ecl-banner__info ecl-container">
+      <div class="ecl-banner__container" data-ecl-banner-container>
         <div class="ecl-banner__content">
           <div class="ecl-banner__title">
             <span class="ecl-banner__title-text">
@@ -34,6 +126,30 @@ exports[`ecl-banner renders 1`] = `
               </a>
             </ecl-link>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</ecl-banner>
+`;
+
+exports[`ecl-banner renders correctly without a media 1`] = `
+<ecl-banner banner-title="EU Budget for the future" credit="© Copyright or credit">
+  <!---->
+  <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--font-m ecl-banner--h-left ecl-banner--m ecl-banner--no-media ecl-banner--v-center">
+    <div class="ecl-banner__info ecl-container">
+      <div class="ecl-banner__container" data-ecl-banner-container>
+        <div class="ecl-banner__content">
+          <div class="ecl-banner__title">
+            <span class="ecl-banner__title-text">
+              EU Budget for the future
+            </span>
+          </div>
+          <p class="ecl-banner__description">
+            <span class="ecl-banner__description-text">
+              Innovation, economy, environment and geopolitics
+            </span>
+          </p>
         </div>
       </div>
     </div>

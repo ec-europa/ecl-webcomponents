@@ -1,5 +1,6 @@
 const getArgs = () => {
   return {
+    hideLabel: false,
     width: 'm',
     disabled: false,
     required: true,
@@ -16,6 +17,14 @@ const getArgs = () => {
 
 const getArgTypes = () => {
   return {
+    color_mode: { table: { disable: true }},
+    hideLabel: {
+      name: 'hide-label',
+      control: { type: 'boolean' },
+      table: {
+        category: 'Content',
+      },
+    },
     width: {
       type: { name: 'select' },
       options: ['s', 'm', 'l'],
@@ -46,9 +55,9 @@ const getArgTypes = () => {
       },
     },
     inputId: {
-      name: 'Range id',
+      name: 'input-id',
       type: { name: 'string' },
-      description: 'Range variant',
+      description: 'Range id',
       table: {
         category: 'Content',
       },
@@ -104,23 +113,28 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/form/range',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = args =>
 `<ecl-form-group
   label="Range slider"
   required=${args.required}
+  required-text="(required)"
   optional-text="(optional)"
+  hide-label=${args.hideLabel}
   helper-text="This is the input helper text"
   invalid=${args.invalid}
   disabled=${args.disabled}
   invalid-text="This is an error message"
-  theme="${args.theme}"
   aria-label-optional="Aria label optional"
   aria-label-required="Aria label required"
 >
   <ecl-range
-    theme="${args.theme}"
     input-id="${args.inputId}"
     default-value="${args.defaultValue}"
     label="${args.label}"

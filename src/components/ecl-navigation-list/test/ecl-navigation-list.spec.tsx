@@ -9,24 +9,20 @@ describe('ecl-navigation-list', () => {
     const page = await newSpecPage({
       components: [EclNavigationList, EclNavigationListItem, EclContentBlock, EclLink],
       html: `<ecl-navigation-list
-        theme="ec"
         column="2"
       >
         <ecl-navigation-list-item
-          theme="ec"
           image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           image-alt="Alt text of the image"
           border
         >
           <ecl-content-block
-            theme="ec"
             has-title
             has-description
             has-links
             has-secondary-links
           >
             <ecl-link
-              theme="ec"
               slot="title"
               path="/example.html"
               variant="standalone"
@@ -38,7 +34,6 @@ describe('ecl-navigation-list', () => {
     Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus</p>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -46,7 +41,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -54,7 +48,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -62,7 +55,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -70,7 +62,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links-secondary"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -78,7 +69,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links-secondary"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -87,20 +77,17 @@ describe('ecl-navigation-list', () => {
           </ecl-content-block>
         </ecl-navigation-list-item>
         <ecl-navigation-list-item
-          theme="ec"
           image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           border
           image-alt="Alt text of the image"
         >
           <ecl-content-block
-            theme="ec"
             has-title
             has-description
             has-links
             has-secondary-links
           >
             <ecl-link
-              theme="ec"
               slot="title"
               path="/example.html"
               variant="standalone"
@@ -112,7 +99,6 @@ describe('ecl-navigation-list', () => {
     Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus</p>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -120,7 +106,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -128,7 +113,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -136,7 +120,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -144,7 +127,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links-secondary"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -152,7 +134,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links-secondary"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -161,20 +142,17 @@ describe('ecl-navigation-list', () => {
           </ecl-content-block>
         </ecl-navigation-list-item>
         <ecl-navigation-list-item
-          theme="ec"
           image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           border
           image-alt="Alt text of the image"
         >
           <ecl-content-block
-            theme="ec"
             has-title
             has-description
             has-links
             has-secondary-links
           >
             <ecl-link
-              theme="ec"
               slot="title"
               path="/example.html"
               variant="standalone"
@@ -186,7 +164,6 @@ describe('ecl-navigation-list', () => {
     Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus</p>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -194,7 +171,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -202,7 +178,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -210,7 +185,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -218,7 +192,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links-secondary"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -226,7 +199,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links-secondary"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -235,20 +207,17 @@ describe('ecl-navigation-list', () => {
           </ecl-content-block>
         </ecl-navigation-list-item>
         <ecl-navigation-list-item
-          theme="ec"
           image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           border
           image-alt="Alt text of the image"
         >
           <ecl-content-block
-            theme="ec"
             has-title
             has-description
             has-links
             has-secondary-links
           >
             <ecl-link
-              theme="ec"
               slot="title"
               path="/example.html"
               variant="standalone"
@@ -260,7 +229,6 @@ describe('ecl-navigation-list', () => {
     Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus</p>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -268,7 +236,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -276,7 +243,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -284,7 +250,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -292,7 +257,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links-secondary"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -300,7 +264,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links-secondary"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -309,20 +272,17 @@ describe('ecl-navigation-list', () => {
           </ecl-content-block>
         </ecl-navigation-list-item>
         <ecl-navigation-list-item
-          theme="ec"
           image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           border
           image-alt="Alt text of the image"
         >
           <ecl-content-block
-            theme="ec"
             has-title
             has-description
             has-links
             has-secondary-links
           >
             <ecl-link
-              theme="ec"
               slot="title"
               path="/example.html"
               variant="standalone"
@@ -334,7 +294,6 @@ describe('ecl-navigation-list', () => {
     Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus</p>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -342,7 +301,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -350,7 +308,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -358,7 +315,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -366,7 +322,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links-secondary"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >
@@ -374,7 +329,6 @@ describe('ecl-navigation-list', () => {
             </ecl-link>
             <ecl-link
               slot="links-secondary"
-              theme="ec"
               variant="standalone"
               path="/example.html"
             >

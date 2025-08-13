@@ -13,7 +13,7 @@
 | `iconTransform` | `icon-transform` |             | `string` | `undefined` |
 | `itemTitle`     | `item-title`     |             | `string` | `undefined` |
 | `styleClass`    | `style-class`    |             | `string` | `undefined` |
-| `theme`         | `theme`          |             | `string` | `'ec'`      |
+| `theme`         | `theme`          |             | `string` | `undefined` |
 | `value`         | `value`          |             | `string` | `undefined` |
 
 

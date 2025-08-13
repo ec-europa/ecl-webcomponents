@@ -1,9 +1,30 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-icon/icon-eu';
-@use '@ecl/vanilla-component-link/link-eu';
-@use '@ecl/vanilla-component-label/label-eu';
-@use '@ecl/vanilla-component-description-list/description-list-eu';
-@use '@ecl/vanilla-component-content-block/content-block-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' with (
+  $typography: var.$typography
+);
+@use '@ecl/icon/icon' with (
+  $theme: theme.$theme
+);
+@use '@ecl/link/link' with (
+  $theme: theme.$theme,
+  $link: var.$link
+);
+@use '@ecl/label/label' with (
+  $theme: theme.$theme,
+  $label: var.$label
+);
+@use '@ecl/description-list/description-list' with (
+  $theme: theme.$theme,
+  $description-list: var.$description-list
+);
+@use '@ecl/content-block/content-block' with (
+  $theme: theme.$theme,
+  $content-block: var.$content-block
+);
 
 .ecl-content-block__secondary-meta-icon.sc-ecl-content-block-eu {
   fill: #7fa1c9;

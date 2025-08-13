@@ -53,6 +53,11 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/loading indicator',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = args => {

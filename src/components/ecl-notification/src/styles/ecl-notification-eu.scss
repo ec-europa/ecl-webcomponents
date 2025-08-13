@@ -1,0 +1,9 @@
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/notification/notification' with (
+  $theme: theme.$theme,
+  $notification: var.$notification
+);
