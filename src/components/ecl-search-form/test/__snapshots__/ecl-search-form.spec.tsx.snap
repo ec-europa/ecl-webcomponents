@@ -6,21 +6,21 @@ exports[`ecl-search-form renders 1`] = `
     <ecl-form-group style-class="sc-ecl-search-form-ec">
       <!---->
       <div class="ecl-form-group sc-ecl-search-form-ec">
-        <ecl-input input-class="ecl-search-form__text-input sc-ecl-search-form-ec" input-id="ecl-search-form" placeholder="Placeholder text" style-class="ecl-search-form__text-input sc-ecl-search-form-ec" theme="ec" type="search" width="m"></ecl-input>
+        <ecl-input input-class="ecl-search-form__text-input sc-ecl-search-form-ec" input-id="ecl-search-form" placeholder="Placeholder text" style-class="sc-ecl-search-form-ec" theme="ec" type="search"></ecl-input>
       </div>
     </ecl-form-group>
     <ecl-button aria-label="Search" style-class="ecl-search-form__button sc-ecl-search-form-ec">
       <!---->
-      <button aria-label="Search" class="ecl-button ecl-button--search ecl-search-form__button sc-ecl-search-form-ec" type="submit">
+      <button aria-label="Search" class="ecl-button ecl-button--ghost ecl-search-form__button sc-ecl-search-form-ec" type="search">
         <span class="ecl-button__container">
-          <span class="ecl-button__label">
-            Search
-          </span>
-          <ecl-icon slot="icon-after" style-class="sc-ecl-search-form-ec">
-            <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-search-form-ec">
+          <ecl-icon slot="icon-before" style-class="sc-ecl-search-form-ec">
+            <svg class="ecl-button__icon ecl-button__icon--before ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-search-form-ec">
               <use xlink:href="/build/images/ec/icons.svg#search"></use>
             </svg>
           </ecl-icon>
+          <span class="ecl-button__label">
+            Search
+          </span>
         </span>
       </button>
     </ecl-button>

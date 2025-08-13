@@ -13,6 +13,7 @@
 | `ariaLabelRequired` | `aria-label-required` |             | `string`  | `undefined` |
 | `helperId`          | `helper-id`           |             | `string`  | `undefined` |
 | `helperText`        | `helper-text`         |             | `string`  | `undefined` |
+| `hideLabel`         | `hide-label`          |             | `boolean` | `false`     |
 | `invalid`           | `invalid`             |             | `boolean` | `false`     |
 | `invalidIcon`       | `invalid-icon`        |             | `string`  | `'error'`   |
 | `invalidText`       | `invalid-text`        |             | `string`  | `undefined` |
@@ -25,7 +26,7 @@
 | `requiredText`      | `required-text`       |             | `string`  | `'*'`       |
 | `styleClass`        | `style-class`         |             | `string`  | `''`        |
 | `tag`               | `tag`                 |             | `string`  | `'div'`     |
-| `theme`             | `theme`               |             | `string`  | `'ec'`      |
+| `theme`             | `theme`               |             | `string`  | `undefined` |
 
 
 ## Dependencies

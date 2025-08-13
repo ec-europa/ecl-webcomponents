@@ -1,18 +1,26 @@
 const getArgs = () => {
   return {
+    hideLabel: false,
     label: 'Please rate',
     required: true,
+    invalid: false,
     disabled: false,
     helperText: `This is the group's helper text.`,
-    requiredText: '*',
+    requiredText: '(required)',
     invalidText: 'This is the error message',
-    invalidIcon: 'error',
+    invalidIcon: 'error-outline',
     optionalText: '(optional)',
   };
 };
 
 const getArgTypes = () => {
   return {
+    color_mode: { table: { disable: true }},
+    hideLabel: {
+      name: 'hide-label',
+      control: { type: 'boolean' },
+      description: 'Hide the label',
+    },
     required: {
       type: { name: 'boolean' },
       description: 'Required input',
@@ -20,6 +28,10 @@ const getArgTypes = () => {
     disabled: {
       type: { name: 'boolean' },
       description: 'Disabled input',
+    },
+    invalid: {
+      type: { name: 'boolean' },
+      description: 'Invalid input',
     },
     label: {
       type: { name: 'string' },
@@ -55,17 +67,25 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/form/rating field',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = (args) => 
   `<ecl-form-group
+    hide-label=${args.hideLabel}
     helper-text="${args.helperText}"
     invalid-text="${args.invalidText}"
+    required-text="${args.requiredText}"
     invalid-icon="${args.invalidIcon}"
     optional-text="${args.optionalText}"
     label="${args.label}"
     required=${args.required}
     disabled="${args.disabled}"
+    invalid=${args.invalid}
     theme="${args.theme}"
     aria-label-optional="Aria label optional"
     aria-label-required="Aria label required"
