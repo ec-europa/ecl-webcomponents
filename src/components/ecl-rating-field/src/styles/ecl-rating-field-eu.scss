@@ -1,5 +1,13 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-rating-field/rating-field';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/utility-screen-reader/screen-reader';
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/rating-field/rating-field' with (
+  $theme: theme.$theme,
+  $rating-field: var.$rating-field
+);
 
 .ecl-rating-field {
   margin-top: 0.75rem;
@@ -18,14 +26,5 @@
 }
 
 .ecl-u-sr-only {
-  clip: rect(0, 0, 0, 0) !important;
-  border: 0 !important;
-  clip-path: inset(50%) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  white-space: nowrap !important;
-  width: 1px !important;
+  @include screen-reader.sr-only;
 }

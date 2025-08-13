@@ -21,7 +21,7 @@
 | `rows`         | `rows`          |             | `number`  | `4`         |
 | `styleClass`   | `style-class`   |             | `string`  | `undefined` |
 | `textareaId`   | `textarea-id`   |             | `string`  | `undefined` |
-| `theme`        | `theme`         |             | `string`  | `'ec'`      |
+| `theme`        | `theme`         |             | `string`  | `undefined` |
 | `width`        | `width`         |             | `string`  | `'m'`       |
 
 

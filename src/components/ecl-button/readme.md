@@ -33,6 +33,7 @@
  - [ecl-modal](../ecl-modal)
  - [ecl-news-ticker](../ecl-news-ticker)
  - [ecl-search-form](../ecl-search-form)
+ - [ecl-select](../ecl-select)
  - [ecl-timeline-item](../ecl-timeline)
 
 ### Depends on
@@ -53,6 +54,7 @@ graph TD;
   ecl-modal --> ecl-button
   ecl-news-ticker --> ecl-button
   ecl-search-form --> ecl-button
+  ecl-select --> ecl-button
   ecl-timeline-item --> ecl-button
   style ecl-button fill:#f9f,stroke:#333,stroke-width:4px
 ```

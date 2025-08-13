@@ -9,6 +9,7 @@ const getArgs = () => {
     required: true,
     disabled: false,
     invalid: false,
+    hideLabel: false,
     label: 'Label',
     placeholder: 'DD-MM-YYYY',
     dateFormat: 'DD-MM-YYYY',
@@ -37,6 +38,14 @@ const getArgTypes = () => {
       description: 'Invalid input',
       table: {
         category: 'States',
+      },
+    },
+    hideLabel: {
+      name: 'hide-label',
+      control: { type: 'boolean' },
+      description: 'Hide the label',
+      table: {
+        category: 'Content',
       },
     },
     label: {
@@ -95,6 +104,7 @@ const Template = args =>
     helper-text="This is the input's helper text."
     invalid=${args.invalid}
     disabled=${args.disabled}
+    hide-label=${args.hideLabel}
     invalid-text="This is the error message"
     theme="${args.theme}"
     aria-label-optional="Aria label optional"

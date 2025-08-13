@@ -6,7 +6,7 @@ exports[`ecl-input renders 1`] = `
   <div class="ecl-form-group">
     <label class="ecl-form-label" for="input-id" id="input-id-label">
       Label
-      <span class="ecl-form-label__required">
+      <span class="ecl-form-label__required" role="note">
         *
       </span>
     </label>
@@ -15,7 +15,7 @@ exports[`ecl-input renders 1`] = `
     </div>
     <ecl-input input-id="input-id" placeholder="placeholder" required="true" theme="ec" type="text" width="l">
       <div class="ecl-input">
-        <input class="ecl-text-input ecl-text-input--l" id="input-id" placeholder="placeholder" required="" type="text">
+        <input aria-describedby="input-id-helper" class="ecl-text-input ecl-text-input--l" id="input-id" placeholder="placeholder" required="" type="text">
       </div>
     </ecl-input>
   </div>

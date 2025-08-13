@@ -21,6 +21,9 @@ patchedDependencies:
   '@ecl/builder@5.0.0-alpha.15':
     hash: d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec
     path: patches/@ecl__builder@5.0.0-alpha.15.patch
+  '@ecl/select@5.0.0-alpha.15':
+    hash: 77372e7785ab162dbc0eacd1e119e9467fcdfc3de46ad333aa5ca01f2f2b094e
+    path: patches/@ecl__select@5.0.0-alpha.15.patch
   '@ecl/theme-dev@3.13.0':
     hash: 241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65
     path: patches/@ecl__theme-dev@3.13.0.patch
@@ -39,9 +42,6 @@ patchedDependencies:
   '@ecl/vanilla-component-content-block@3.13.0':
     hash: 933f91570df60191fc77f1085b64245ade78a24120f8c5f56cf9d465493a7d8f
     path: patches/@ecl__vanilla-component-content-block@3.13.0.patch
-  '@ecl/vanilla-component-select@3.13.0':
-    hash: 856eb5a443ca58465f00fea48900501b4d5ea76bfc9a95312ff2a8a52a22de9b
-    path: patches/@ecl__vanilla-component-select@3.13.0.patch
   '@stencil/react-output-target@0.5.3':
     hash: 403ac53588c2362c9db2125ba3fb502cfee8a4ac96ab3c883a9e43c2be4a423a
     path: patches/@stencil__react-output-target@0.5.3.patch
@@ -730,26 +730,29 @@ importers:
   src/components/ecl-datepicker:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.32.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/datepicker':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/layout-form':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/text-input':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-datepicker':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-text-input':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -908,23 +911,29 @@ importers:
   src/components/ecl-file-upload:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.32.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/button':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/file-upload':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-button':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=b10260c5c193e3f2f20a5d6721d43be35a19d874c7cfff32ab7e4f55a2c60e38)
-      '@ecl/vanilla-component-file-upload':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/utility-screen-reader':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -965,20 +974,26 @@ importers:
   src/components/ecl-form-group:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.32.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/form-group':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-form':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/utility-screen-reader':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -1103,41 +1118,47 @@ importers:
   src/components/ecl-input:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.32.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/button':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/checkbox':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/datepicker':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/file-upload':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/layout-form':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/radio':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/search-form':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/text-input':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-button':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=b10260c5c193e3f2f20a5d6721d43be35a19d874c7cfff32ab7e4f55a2c60e38)
-      '@ecl/vanilla-component-checkbox':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-datepicker':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-file-upload':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-radio':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-search-form':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-text-input':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/utility-screen-reader':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -1485,23 +1506,26 @@ importers:
   src/components/ecl-range:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.32.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/layout-form':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/range':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-range':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -1509,23 +1533,23 @@ importers:
   src/components/ecl-rating-field:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.32.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/rating-field':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-rating-field':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/utility-screen-reader':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -1533,23 +1557,29 @@ importers:
   src/components/ecl-search-form:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.32.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/button':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/search-form':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-search-form':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/utility-screen-reader':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -1557,35 +1587,41 @@ importers:
   src/components/ecl-select:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.32.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/button':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/checkbox':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/icon':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/layout-form':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/select':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=77372e7785ab162dbc0eacd1e119e9467fcdfc3de46ad333aa5ca01f2f2b094e)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/text-input':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-button':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=b10260c5c193e3f2f20a5d6721d43be35a19d874c7cfff32ab7e4f55a2c60e38)
-      '@ecl/vanilla-component-checkbox':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-icon':
-        specifier: 3.13.0
-        version: 3.13.0(svg4everybody@2.1.9)
-      '@ecl/vanilla-component-select':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=856eb5a443ca58465f00fea48900501b4d5ea76bfc9a95312ff2a8a52a22de9b)
-      '@ecl/vanilla-component-text-input':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/utility-screen-reader':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -1783,23 +1819,26 @@ importers:
   src/components/ecl-textarea:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.32.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/layout-form':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/text-area':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-text-area':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -3222,29 +3261,17 @@ packages:
   '@ecl/vanilla-component-category-filter@3.13.0':
     resolution: {integrity: sha512-/qpb1OBE+0pzeIPOYb3yLFpN2bYbUKjxGTW0zsGRayGOxH12MMyJjSA9mo6UUmA0mSaKtBsKjhYAVkCal7VLGg==}
 
-  '@ecl/vanilla-component-checkbox@3.13.0':
-    resolution: {integrity: sha512-QFlywHMH3EMq2zchlv9v8uWmIwrHqZte2gZyxkqY/OdozwpR5D4ynaKoN5Bluekw5k7lj9XoET5ViP75skjQDw==}
-
   '@ecl/vanilla-component-content-block@3.13.0':
     resolution: {integrity: sha512-hojTx7bH1HyWRhDYXlb3zbLcGTFfneizT/RLGgvIdk0Mbbi0lpDnJp+FTdtzUl5YO2dwyIjffv+HH2WsPKFfww==}
 
   '@ecl/vanilla-component-content-item@3.13.0':
     resolution: {integrity: sha512-Sy2yI5xJYGJP044Dv90bB005RlM8b1WKUKD2Jp5yl7cNg21PbSWgDEIEizM2hmBPsVezxVxx2dIuu72VuNvQwA==}
 
-  '@ecl/vanilla-component-datepicker@3.13.0':
-    resolution: {integrity: sha512-mDJfCqkyN2W3NZAgf69iBokGuFa6sTxuag0xfg4yEFCDemOZQ8ww6YkGC8KVQk4mQyWJBtKjaacYD/mgV8earA==}
-
   '@ecl/vanilla-component-description-list@3.13.0':
     resolution: {integrity: sha512-yJUBjM8Sz0TmjqFS5TJDVzR09Y/QhS13vNg5M5OZsSb6hvoFhKxhErm+TcUCcRHwL1I+SQNPPQlXpIkcuPRUpg==}
 
   '@ecl/vanilla-component-featured-item@3.13.0':
     resolution: {integrity: sha512-YyYfjTcJuZni+eDVUrWO94bHFL3EZdzm77fhtEh2N/VwPxAA/afRmGglW70K1KEIocgLXkixGagnNq6nX+g0hw==}
-
-  '@ecl/vanilla-component-file-upload@3.13.0':
-    resolution: {integrity: sha512-yNL829ZGa+Ap2CZTdr//OnssV/qLIMo38CdJouppteVWLou3j91mY0YKF9Vo1LBuP8TMUeZFuMoivw7LVx0M8Q==}
-
-  '@ecl/vanilla-component-form@3.13.0':
-    resolution: {integrity: sha512-gRhuPjQ9IECfwikiyBwCpQLxC+Gzz88iB6W6iLPZ3japeXZaxJcm+ZjzN1tM/4wRARnGqvD/1PXQ2z1P0st9kw==}
 
   '@ecl/vanilla-component-gallery@3.13.0':
     resolution: {integrity: sha512-K0R/DyvdJwoA26xoDxUvou1Ytg9nOplnz0XNjFiMHZvGlgvLH/tqWL6WXrL8qhmOAthH7J3gBws7fS4kIPxE7w==}
@@ -3296,21 +3323,6 @@ packages:
   '@ecl/vanilla-component-popover@3.13.0':
     resolution: {integrity: sha512-/Pr8WG372DuCBLAk4motIbEeeQyc6EAirocfDgi2MsSV1K1wuA3+NUvgU0PgCP1BUzZ9fSucQbVog7Z+u/1nEw==}
 
-  '@ecl/vanilla-component-radio@3.13.0':
-    resolution: {integrity: sha512-34Zl4et2w8F5csYW808AqQIRhPOQftv4YxCz004ZAaXsivLa4SirieYIQA33VpnhgpYa4kzZv+lY+gD7nrU9vg==}
-
-  '@ecl/vanilla-component-range@3.13.0':
-    resolution: {integrity: sha512-ILu0T88joHi67e8BN2LDgtNgl9JSUp39+U4k/9N4WaEndHIT3UPpHluGAmrU0O+zDPmGr0pYo1ntAWAWQDExcA==}
-
-  '@ecl/vanilla-component-rating-field@3.13.0':
-    resolution: {integrity: sha512-6TC+mTiDwA45LNUe57bdTOJZggY/cR/NlHIVxQBh8NyWjG6dQuQcCr4OhdjFbAPLqjfGpD4HZNQJhPiZYbLtew==}
-
-  '@ecl/vanilla-component-search-form@3.13.0':
-    resolution: {integrity: sha512-MRLFiJ6xJm5Asxg+kJuGml4H4l9+BwTghsXHnCFeNYpFBGHZwD98VX/ckB2tQcCUHA8eZTb1c8HrXdHYIjzFIA==}
-
-  '@ecl/vanilla-component-select@3.13.0':
-    resolution: {integrity: sha512-wkdkOlSeBBr85v9j73o/fnvY/HwHLM2qyj45las3BB4WyiifaCXKOi3Rhh/bUKd07OOeYTbCqggxYIl0YMjdEQ==}
-
   '@ecl/vanilla-component-site-footer@3.13.0':
     resolution: {integrity: sha512-qOj+Er8fCPL1b+wflzJfX5MGJwnCtUDdzdtxtlUlQwHbZqqRxHh4a8t0g8Y5/Bauxs3CZNSRqegjEQobZwFe5A==}
 
@@ -3322,12 +3334,6 @@ packages:
 
   '@ecl/vanilla-component-social-media-share@3.13.0':
     resolution: {integrity: sha512-ff5S8Evwr/Z/N9KFLBMbOIYE2WdQiX03ejC4GUSp5Q5Ew3neMfAnBmb9RnhOA77YnE1NKV8tue16ElsCjNO/bg==}
-
-  '@ecl/vanilla-component-text-area@3.13.0':
-    resolution: {integrity: sha512-d3E907hNQTYi1PMrcBNBv8nW5cBpzgTfKixdItqXnE9t9piumOAlfwP608Jcdl9JRJF9uY234izp0EwW4nLclg==}
-
-  '@ecl/vanilla-component-text-input@3.13.0':
-    resolution: {integrity: sha512-bf83ECwQVoH8/VOBbRoKNJEsz8TOs3Nrk/mFEC16Mny0JSmam11C6S0Dm7wYhse5lWkWoISY/rrn7mbtV/GO+g==}
 
   '@ecl/vanilla-component-timeline@3.13.0':
     resolution: {integrity: sha512-pTkHLhk3vqf1AT4atUa42379/khJzdbG0pEnMR2ewmY7GfukmFbb4i0uLHBZ7AyfstflG9yejJJSDoHyAQ0BIA==}
@@ -12822,7 +12828,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/plugin-transform-async-generator-functions@7.27.1(@babel/core@7.23.7)':
+  '@babel/plugin-transform-async-generator-functions@7.28.0(@babel/core@7.23.7)':
     dependencies:
       '@babel/core': 7.23.7
       '@babel/helper-plugin-utils': 7.27.1
@@ -12896,7 +12902,7 @@ snapshots:
       '@babel/core': 7.22.9
       '@babel/helper-plugin-utils': 7.27.1
 
-  '@babel/plugin-transform-block-scoping@7.27.5(@babel/core@7.23.7)':
+  '@babel/plugin-transform-block-scoping@7.28.0(@babel/core@7.23.7)':
     dependencies:
       '@babel/core': 7.23.7
       '@babel/helper-plugin-utils': 7.27.1
@@ -12966,15 +12972,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/plugin-transform-classes@7.27.1(@babel/core@7.23.7)':
+  '@babel/plugin-transform-classes@7.28.0(@babel/core@7.23.7)':
     dependencies:
       '@babel/core': 7.23.7
       '@babel/helper-annotate-as-pure': 7.27.3
       '@babel/helper-compilation-targets': 7.27.2
+      '@babel/helper-globals': 7.28.0
       '@babel/helper-plugin-utils': 7.27.1
       '@babel/helper-replace-supers': 7.27.1(@babel/core@7.23.7)
       '@babel/traverse': 7.28.0
-      globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
 
@@ -13013,10 +13019,13 @@ snapshots:
       '@babel/core': 7.22.9
       '@babel/helper-plugin-utils': 7.27.1
 
-  '@babel/plugin-transform-destructuring@7.27.3(@babel/core@7.23.7)':
+  '@babel/plugin-transform-destructuring@7.28.0(@babel/core@7.23.7)':
     dependencies:
       '@babel/core': 7.23.7
       '@babel/helper-plugin-utils': 7.27.1
+      '@babel/traverse': 7.28.0
+    transitivePeerDependencies:
+      - supports-color
 
   '@babel/plugin-transform-destructuring@7.28.0(@babel/core@7.28.0)':
     dependencies:
@@ -13402,13 +13411,16 @@ snapshots:
       '@babel/plugin-transform-destructuring': 7.27.3(@babel/core@7.22.9)
       '@babel/plugin-transform-parameters': 7.27.1(@babel/core@7.22.9)
 
-  '@babel/plugin-transform-object-rest-spread@7.27.3(@babel/core@7.23.7)':
+  '@babel/plugin-transform-object-rest-spread@7.28.0(@babel/core@7.23.7)':
     dependencies:
       '@babel/core': 7.23.7
       '@babel/helper-compilation-targets': 7.27.2
       '@babel/helper-plugin-utils': 7.27.1
-      '@babel/plugin-transform-destructuring': 7.27.3(@babel/core@7.23.7)
-      '@babel/plugin-transform-parameters': 7.27.1(@babel/core@7.23.7)
+      '@babel/plugin-transform-destructuring': 7.28.0(@babel/core@7.23.7)
+      '@babel/plugin-transform-parameters': 7.27.7(@babel/core@7.23.7)
+      '@babel/traverse': 7.28.0
+    transitivePeerDependencies:
+      - supports-color
 
   '@babel/plugin-transform-object-rest-spread@7.28.0(@babel/core@7.28.0)':
     dependencies:
@@ -13489,7 +13501,7 @@ snapshots:
       '@babel/core': 7.22.9
       '@babel/helper-plugin-utils': 7.27.1
 
-  '@babel/plugin-transform-parameters@7.27.1(@babel/core@7.23.7)':
+  '@babel/plugin-transform-parameters@7.27.7(@babel/core@7.23.7)':
     dependencies:
       '@babel/core': 7.23.7
       '@babel/helper-plugin-utils': 7.27.1
@@ -13609,7 +13621,7 @@ snapshots:
       '@babel/core': 7.22.9
       '@babel/helper-plugin-utils': 7.27.1
 
-  '@babel/plugin-transform-regenerator@7.27.5(@babel/core@7.23.7)':
+  '@babel/plugin-transform-regenerator@7.28.1(@babel/core@7.23.7)':
     dependencies:
       '@babel/core': 7.23.7
       '@babel/helper-plugin-utils': 7.27.1
@@ -13944,15 +13956,15 @@ snapshots:
       '@babel/plugin-syntax-top-level-await': 7.14.5(@babel/core@7.23.7)
       '@babel/plugin-syntax-unicode-sets-regex': 7.18.6(@babel/core@7.23.7)
       '@babel/plugin-transform-arrow-functions': 7.27.1(@babel/core@7.23.7)
-      '@babel/plugin-transform-async-generator-functions': 7.27.1(@babel/core@7.23.7)
+      '@babel/plugin-transform-async-generator-functions': 7.28.0(@babel/core@7.23.7)
       '@babel/plugin-transform-async-to-generator': 7.27.1(@babel/core@7.23.7)
       '@babel/plugin-transform-block-scoped-functions': 7.27.1(@babel/core@7.23.7)
-      '@babel/plugin-transform-block-scoping': 7.27.5(@babel/core@7.23.7)
+      '@babel/plugin-transform-block-scoping': 7.28.0(@babel/core@7.23.7)
       '@babel/plugin-transform-class-properties': 7.27.1(@babel/core@7.23.7)
       '@babel/plugin-transform-class-static-block': 7.27.1(@babel/core@7.23.7)
-      '@babel/plugin-transform-classes': 7.27.1(@babel/core@7.23.7)
+      '@babel/plugin-transform-classes': 7.28.0(@babel/core@7.23.7)
       '@babel/plugin-transform-computed-properties': 7.27.1(@babel/core@7.23.7)
-      '@babel/plugin-transform-destructuring': 7.27.3(@babel/core@7.23.7)
+      '@babel/plugin-transform-destructuring': 7.28.0(@babel/core@7.23.7)
       '@babel/plugin-transform-dotall-regex': 7.27.1(@babel/core@7.23.7)
       '@babel/plugin-transform-duplicate-keys': 7.27.1(@babel/core@7.23.7)
       '@babel/plugin-transform-dynamic-import': 7.27.1(@babel/core@7.23.7)
@@ -13972,15 +13984,15 @@ snapshots:
       '@babel/plugin-transform-new-target': 7.27.1(@babel/core@7.23.7)
       '@babel/plugin-transform-nullish-coalescing-operator': 7.27.1(@babel/core@7.23.7)
       '@babel/plugin-transform-numeric-separator': 7.27.1(@babel/core@7.23.7)
-      '@babel/plugin-transform-object-rest-spread': 7.27.3(@babel/core@7.23.7)
+      '@babel/plugin-transform-object-rest-spread': 7.28.0(@babel/core@7.23.7)
       '@babel/plugin-transform-object-super': 7.27.1(@babel/core@7.23.7)
       '@babel/plugin-transform-optional-catch-binding': 7.27.1(@babel/core@7.23.7)
       '@babel/plugin-transform-optional-chaining': 7.27.1(@babel/core@7.23.7)
-      '@babel/plugin-transform-parameters': 7.27.1(@babel/core@7.23.7)
+      '@babel/plugin-transform-parameters': 7.27.7(@babel/core@7.23.7)
       '@babel/plugin-transform-private-methods': 7.27.1(@babel/core@7.23.7)
       '@babel/plugin-transform-private-property-in-object': 7.27.1(@babel/core@7.23.7)
       '@babel/plugin-transform-property-literals': 7.27.1(@babel/core@7.23.7)
-      '@babel/plugin-transform-regenerator': 7.27.5(@babel/core@7.23.7)
+      '@babel/plugin-transform-regenerator': 7.28.1(@babel/core@7.23.7)
       '@babel/plugin-transform-reserved-words': 7.27.1(@babel/core@7.23.7)
       '@babel/plugin-transform-shorthand-properties': 7.27.1(@babel/core@7.23.7)
       '@babel/plugin-transform-spread': 7.27.1(@babel/core@7.23.7)
@@ -14396,7 +14408,7 @@ snapshots:
       '@ecl/radio': 5.0.0-alpha.15
       '@ecl/range': 5.0.0-alpha.15
       '@ecl/rating-field': 5.0.0-alpha.15
-      '@ecl/select': 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/select': 5.0.0-alpha.15(patch_hash=77372e7785ab162dbc0eacd1e119e9467fcdfc3de46ad333aa5ca01f2f2b094e)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
       '@ecl/text-area': 5.0.0-alpha.15
       '@ecl/text-input': 5.0.0-alpha.15
     transitivePeerDependencies:
@@ -14579,7 +14591,7 @@ snapshots:
       '@ecl/range': 5.0.0-alpha.15
       '@ecl/rating-field': 5.0.0-alpha.15
       '@ecl/search-form': 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
-      '@ecl/select': 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/select': 5.0.0-alpha.15(patch_hash=77372e7785ab162dbc0eacd1e119e9467fcdfc3de46ad333aa5ca01f2f2b094e)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
       '@ecl/separator': 5.0.0-alpha.15
       '@ecl/site-footer': 5.0.0-alpha.15
       '@ecl/site-header': 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
@@ -14670,7 +14682,7 @@ snapshots:
       '@ecl/range': 5.0.0-alpha.15
       '@ecl/rating-field': 5.0.0-alpha.15
       '@ecl/search-form': 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
-      '@ecl/select': 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
+      '@ecl/select': 5.0.0-alpha.15(patch_hash=77372e7785ab162dbc0eacd1e119e9467fcdfc3de46ad333aa5ca01f2f2b094e)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
       '@ecl/separator': 5.0.0-alpha.15
       '@ecl/site-footer': 5.0.0-alpha.15
       '@ecl/site-header': 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
@@ -14759,7 +14771,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/select@5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))':
+  '@ecl/select@5.0.0-alpha.15(patch_hash=77372e7785ab162dbc0eacd1e119e9467fcdfc3de46ad333aa5ca01f2f2b094e)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))':
     dependencies:
       '@ecl/builder': 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.32.0(jiti@1.21.7))
       '@ecl/button': 5.0.0-alpha.15
@@ -14942,10 +14954,6 @@ snapshots:
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
 
-  '@ecl/vanilla-component-checkbox@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
   '@ecl/vanilla-component-content-block@3.13.0(patch_hash=933f91570df60191fc77f1085b64245ade78a24120f8c5f56cf9d465493a7d8f)':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
@@ -14954,29 +14962,12 @@ snapshots:
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
 
-  '@ecl/vanilla-component-datepicker@3.13.0':
-    dependencies:
-      '@ecl/dom-utils': 3.13.0
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-component-text-input': 3.13.0
-      '@ecl/vanilla-layout-grid': 3.13.0
-      pikaday: 1.8.2
-
   '@ecl/vanilla-component-description-list@3.13.0':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
       '@ecl/vanilla-layout-grid': 3.13.0
 
   '@ecl/vanilla-component-featured-item@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
-  '@ecl/vanilla-component-file-upload@3.13.0':
-    dependencies:
-      '@ecl/dom-utils': 3.13.0
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
-  '@ecl/vanilla-component-form@3.13.0':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
 
@@ -15065,30 +15056,6 @@ snapshots:
       '@ecl/dom-utils': 3.13.0
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
 
-  '@ecl/vanilla-component-radio@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
-  '@ecl/vanilla-component-range@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
-  '@ecl/vanilla-component-rating-field@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
-
-  '@ecl/vanilla-component-search-form@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
-
-  '@ecl/vanilla-component-select@3.13.0(patch_hash=856eb5a443ca58465f00fea48900501b4d5ea76bfc9a95312ff2a8a52a22de9b)':
-    dependencies:
-      '@ecl/dom-utils': 3.13.0
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
-
   '@ecl/vanilla-component-site-footer@3.13.0':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
@@ -15109,16 +15076,6 @@ snapshots:
   '@ecl/vanilla-component-social-media-share@3.13.0':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
-  '@ecl/vanilla-component-text-area@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
-
-  '@ecl/vanilla-component-text-input@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
 
   '@ecl/vanilla-component-timeline@3.13.0':
     dependencies:
@@ -17508,7 +17465,7 @@ snapshots:
   autoprefixer@10.4.16(postcss@8.4.33):
     dependencies:
       browserslist: 4.25.1
-      caniuse-lite: 1.0.30001723
+      caniuse-lite: 1.0.30001727
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.1.1
