@@ -9,9 +9,11 @@
 
 | Property                      | Attribute                         | Description | Type      | Default     |
 | ----------------------------- | --------------------------------- | ----------- | --------- | ----------- |
+| `buttonLabel`                 | `button-label`                    |             | `string`  | `undefined` |
 | `disabled`                    | `disabled`                        |             | `boolean` | `false`     |
 | `eclScript`                   | `ecl-script`                      |             | `boolean` | `false`     |
 | `hasChanged`                  | `has-changed`                     |             | `boolean` | `false`     |
+| `inputId`                     | `input-id`                        |             | `string`  | `undefined` |
 | `inputValue`                  | `input-value`                     |             | `string`  | `undefined` |
 | `invalid`                     | `invalid`                         |             | `boolean` | `false`     |
 | `multiple`                    | `multiple`                        |             | `boolean` | `false`     |
@@ -25,7 +27,7 @@
 | `required`                    | `required`                        |             | `boolean` | `false`     |
 | `selectId`                    | `select-id`                       |             | `string`  | `undefined` |
 | `styleClass`                  | `style-class`                     |             | `string`  | `undefined` |
-| `theme`                       | `theme`                           |             | `string`  | `'ec'`      |
+| `theme`                       | `theme`                           |             | `string`  | `undefined` |
 | `width`                       | `width`                           |             | `string`  | `'m'`       |
 
 
@@ -42,12 +44,15 @@
 
 ### Depends on
 
+- [ecl-button](../ecl-button)
 - [ecl-icon](../ecl-icon)
 
 ### Graph
 ```mermaid
 graph TD;
+  ecl-select --> ecl-button
   ecl-select --> ecl-icon
+  ecl-button --> ecl-indicator
   style ecl-select fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

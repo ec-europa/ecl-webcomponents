@@ -1,6 +1,22 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-component-text-input/text-input-ec';
-@use '@ecl/vanilla-component-datepicker/datepicker-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/layout-form/mixins' as layoutFormMixins with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $typography: var.$typography
+);
+@use '@ecl/text-input/text-input' with (
+  $theme: theme.$theme,
+  $text-input: var.$text-input
+);
+@use '@ecl/datepicker/datepicker' with (
+  $theme: theme.$theme,
+  $datepicker: var.$datepicker
+);
 
 .ecl-form-group .ecl-datepicker {
   margin-top: 0.75rem;

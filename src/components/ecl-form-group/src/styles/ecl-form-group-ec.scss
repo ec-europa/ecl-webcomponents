@@ -1,12 +1,16 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-component-form/form-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' with (
+  $typography: var.$typography
+);
+@use '@ecl/form-group/form-group' with (
+  $theme: theme.$theme,
+  $form-group: var.$form-group
+);
 
 .ecl-feedback-message__icon.sc-ecl-form-group-ec {
-  margin-inline-end: 0.5rem !important;
   vertical-align: bottom;
-}
-
-.ecl-form-label__optional {
-  align-self: center;
-  margin-inline-start: 0.5rem;
 }

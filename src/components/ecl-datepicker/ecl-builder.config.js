@@ -12,11 +12,12 @@ const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()
 module.exports = {
   scripts: [
     {
-      entry: path.resolve(nodeModules, '@ecl/vanilla-component-datepicker/datepicker.js'),
+      entry: path.resolve(nodeModules, '@ecl/datepicker/datepicker.js'),
       dest: path.resolve(outputFolder, 'scripts/ecl-datepicker-vanilla.js'),
       options: {
         banner,
         moduleName: 'ECL',
+        format: 'iife',
         includePaths,
         sourceMap: false,
       },

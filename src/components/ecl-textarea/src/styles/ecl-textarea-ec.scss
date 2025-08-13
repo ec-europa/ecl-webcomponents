@@ -1,5 +1,18 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-component-text-area/text-area-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $typography: var.$typography
+);
+@use '@ecl/layout-form/mixins' as layoutFormMixins with (
+  $theme: theme.$theme
+);
+@use '@ecl/text-area/text-area' with (
+  $theme: theme.$theme,
+  $textarea: var.$textarea
+);
 
 .ecl-text-area.sc-ecl-textarea-ec {
   margin-top: 0.75rem;

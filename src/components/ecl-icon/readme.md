@@ -42,11 +42,12 @@
  - [ecl-input](../ecl-input)
  - [ecl-link](../ecl-link)
  - [ecl-list-illustration-item](../ecl-list-illustration)
+ - [ecl-media-container](../ecl-media-container)
  - [ecl-menu](../ecl-menu)
  - [ecl-menu-item](../ecl-menu)
- - [ecl-message](../ecl-message)
  - [ecl-modal](../ecl-modal)
  - [ecl-news-ticker](../ecl-news-ticker)
+ - [ecl-notification](../ecl-notification)
  - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover](../ecl-popover)
  - [ecl-popover-item](../ecl-popover)
@@ -82,11 +83,12 @@ graph TD;
   ecl-input --> ecl-icon
   ecl-link --> ecl-icon
   ecl-list-illustration-item --> ecl-icon
+  ecl-media-container --> ecl-icon
   ecl-menu --> ecl-icon
   ecl-menu-item --> ecl-icon
-  ecl-message --> ecl-icon
   ecl-modal --> ecl-icon
   ecl-news-ticker --> ecl-icon
+  ecl-notification --> ecl-icon
   ecl-pagination-item --> ecl-icon
   ecl-popover --> ecl-icon
   ecl-popover-item --> ecl-icon

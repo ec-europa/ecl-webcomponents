@@ -13,13 +13,14 @@ declare const ECL: any;
 })
 export class EclInput {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() inputClass: string;
   @Prop() eclScript: boolean = false;
   @Prop() disabled: boolean = false;
   @Prop() required: boolean = false;
   @Prop() invalid: boolean = false;
+  @Prop() hideLabel: boolean = false;
   @Prop() helperText: string;
   @Prop() placeholder: string;
   @Prop() width: string = 'm';
@@ -35,32 +36,14 @@ export class EclInput {
   @Event() inputBlur: EventEmitter<FocusEvent>;
   @Event() inputChange: EventEmitter<{ type: string; value: string }>;
 
-
-  componentDidRender() {
-    if (this.inputId) {
-      const group = this.el.closest('.ecl-form-group');
-      if (group) {
-        const label =  group.querySelector('.ecl-form-label');
-        if (label) {
-          if (this.type !== 'radio' &&  this.type !== 'checkbox') {
-            label.setAttribute('for', this.inputId);
-          }
-          label.setAttribute('id', `${this.inputId}-label`);
-        }
-        const helper = group.querySelector('.ecl-help-block');
-        if (helper) {
-          if (this.type !== 'radio' &&  this.type !== 'checkbox') {
-            helper.setAttribute('id', `${this.inputId}-helper`);
-          }
-        }
-      }
-    }
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   getClass(): string {
     const styleClasses = ['ecl-input', this.styleClass];
     if (this.type === 'checkbox') {
-      styleClasses.push('ecl-checkbox', `ecl-checkbox--${this.width}`);
+      styleClasses.push('ecl-checkbox');
 
       if (this.disabled) {
         styleClasses.push('ecl-checkbox--disabled');
@@ -70,7 +53,7 @@ export class EclInput {
       }
     }
     if (this.type === 'radio') {
-      styleClasses.push('ecl-radio', `ecl-radio--${this.width}`);
+      styleClasses.push('ecl-radio');
 
       if (this.disabled) {
         styleClasses.push('ecl-radio--disabled');
@@ -146,6 +129,24 @@ export class EclInput {
       value: this.defaultValue,
       placeholder: this.placeholder,
     };
+
+    if (this.inputId) {
+      const group = this.el.closest('.ecl-form-group');
+      if (group) {
+        const label =  group.querySelector('.ecl-form-label');
+        if (label) {
+          label.setAttribute('for', this.inputId);
+          label.setAttribute('id', `${this.inputId}-label`);
+        }
+        const helper = group.querySelector('.ecl-help-block');
+        if (helper) {
+          if (this.type !== 'radio' &&  this.type !== 'checkbox') {
+            helper.setAttribute('id', `${this.inputId}-helper`);
+          }
+          attributes['aria-describedby'] = `${this.inputId}-helper`;
+        }
+      }
+    }
 
     return (
       <div 

@@ -1,13 +1,34 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-button/button-eu';
-@use '@ecl/vanilla-component-checkbox/checkbox-eu';
-@use '@ecl/vanilla-component-text-input/text-input-eu';
-@use '@ecl/vanilla-component-radio/radio-eu';
-@use '@ecl/vanilla-component-file-upload/file-upload-eu';
-
-.ecl-input.sc-ecl-input-eu {
-  margin-top: 0.75rem;
-}
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/layout-form/mixins' as layoutFormMixins with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $typography: var.$typography
+);
+@use '@ecl/button/button' with (
+  $theme: theme.$theme,
+  $button: var.$button
+);
+@use '@ecl/checkbox/checkbox' with (
+  $theme: theme.$theme,
+  $checkbox: var.$checkbox
+);
+@use '@ecl/text-input/text-input' with (
+  $theme: theme.$theme,
+  $text-input: var.$text-input
+);
+@use '@ecl/radio/radio' with (
+  $theme: theme.$theme,
+  $radio: var.$radio
+);
+@use '@ecl/file-upload/file-upload' with (
+  $theme: theme.$theme,
+  $file-upload: var.$file-upload
+);
 
 .ecl-checkbox__icon.sc-ecl-input-eu {
   fill: white !important;
