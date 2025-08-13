@@ -11,6 +11,10 @@
   $inpage-navigation: var.$inpage-navigation
 );
 
+.ecl-inpage-navigation__trigger ecl-icon {
+  margin-inline-start: auto;
+}
+
 @media (width >= 996px) {
   .ecl-inpage-navigation__trigger.sc-ecl-inpage-navigation-eu {
     display: none !important;

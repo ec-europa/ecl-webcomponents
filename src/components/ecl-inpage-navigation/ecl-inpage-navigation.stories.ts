@@ -4,6 +4,11 @@ const lorem = loremIpsum({ count: 25 });
 
 export default {
   title: 'Components/Navigation/inpage-navigation',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = args =>

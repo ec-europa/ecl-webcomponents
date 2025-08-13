@@ -854,9 +854,6 @@ export namespace Components {
     interface EclInpageNavigationItem {
         "path": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclInput {
@@ -3295,9 +3292,6 @@ declare namespace LocalJSX {
     interface EclInpageNavigationItem {
         "path"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclInput {
