@@ -50,6 +50,11 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/date-block',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = (args) => 

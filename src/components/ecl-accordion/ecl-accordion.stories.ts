@@ -1,5 +1,10 @@
 export default {
   title: 'Components/accordion',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = (args) => 

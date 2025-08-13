@@ -1,3 +1,15 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-button/button-eu';
-@use '@ecl/vanilla-component-expandable/expandable-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/button/button' with (
+  $theme: theme.$theme,
+  $button: var.$button
+);
+@use '@ecl/expandable/expandable' with (
+  $theme: theme.$theme,
+  $expandable: var.$expandable
+);
+
+.ecl-expandable__content {
+  font: var(--f-m);
+  max-width: 80ch;
+}

@@ -28,6 +28,7 @@ graph TD;
   ecl-social-media-follow-item --> ecl-link
   ecl-social-media-follow-item --> ecl-icon
   ecl-link --> ecl-icon
+  ecl-link --> ecl-indicator
   style ecl-social-media-follow-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

@@ -1,5 +1,12 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-file/file-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/file/file' with (
+  $theme: theme.$theme,
+  $file: var.$file
+);
 
 .ecl-file__icon {
   fill: #0e47cb !important;
@@ -23,11 +30,6 @@
 
 .ecl-link--icon-after .ecl-icon.sc-ecl-icon-eu {
   margin-inline-start: 0.5rem;
-}
-
-.ecl-file .ecl-button.ecl-file__translation-toggle {
-  border: 2px solid #0e47cb;
-  margin: 0.75rem -1rem 0.75rem 0;
 }
 
 .ecl-file__description {
