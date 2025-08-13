@@ -1096,25 +1096,29 @@ importers:
         version: 6.0.1
 
   src/components/ecl-inpage-navigation:
+    dependencies:
+      '@ecl/web-components-icon':
+        specifier: 0.15.1
+        version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.33.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.33.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/inpage-navigation':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-inpage-navigation':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -3294,9 +3298,6 @@ packages:
     resolution: {integrity: sha512-1Cvi62OrgycYiOQ6ZTY+by9nqT+ZUa7Fl2n0rdZBmEUpgrbJfWTFIbFh396Qnh0na48a+kFj53Levuwj251Fdg==}
     peerDependencies:
       svg4everybody: ^2.1.9
-
-  '@ecl/vanilla-component-inpage-navigation@3.13.0':
-    resolution: {integrity: sha512-sxmg8wQMXnNYxbaisDLLxyMo88C1kDkD+S5lsaE05PzjkbL2vOVmS/pw7DcwOwFsBl3M+BtRyBQSqJbSlkLI2g==}
 
   '@ecl/vanilla-component-link@3.13.0':
     resolution: {integrity: sha512-KrRISO2jswpAXnSoJz6ofd0iTx7lIcL8aRTpBUQsedeL9zYxgGMSHjQYR6Xb845mXGFhFJYuRg3qlRZt7RyrCw==}
@@ -14961,13 +14962,6 @@ snapshots:
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
       svg4everybody: 2.1.9
-
-  '@ecl/vanilla-component-inpage-navigation@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
-      gumshoejs: 5.1.2
-      stickyfilljs: 2.1.0
 
   '@ecl/vanilla-component-link@3.13.0':
     dependencies:

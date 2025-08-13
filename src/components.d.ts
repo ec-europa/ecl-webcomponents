@@ -839,23 +839,21 @@ export namespace Components {
     }
     interface EclInpageNavigation {
         /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
           * @default false
          */
         "eclScript": boolean;
         "inpageId": string;
         "inpageTitle": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclInpageNavigationItem {
         "path": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclInput {
@@ -3279,23 +3277,21 @@ declare namespace LocalJSX {
     }
     interface EclInpageNavigation {
         /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
           * @default false
          */
         "eclScript"?: boolean;
         "inpageId"?: string;
         "inpageTitle"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclInpageNavigationItem {
         "path"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclInput {

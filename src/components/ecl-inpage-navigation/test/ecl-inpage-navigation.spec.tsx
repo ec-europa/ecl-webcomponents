@@ -9,7 +9,6 @@ describe('ecl-inpage-navigation', () => {
       html: `<ecl-inpage-navigation
               inpage-title="Page contents"
               inpage-id="inpage-id"
-              theme="ec"
               ecl-script
             >
               <ecl-inpage-navigation-item

@@ -6,7 +6,7 @@ import { Component, h, Prop } from '@stencil/core';
 })
 
 export class EclInpageNavigationItem {
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() path: string;
 
@@ -16,6 +16,10 @@ export class EclInpageNavigationItem {
       `sc-ecl-inpage-navigation-${this.theme}`,
       this.styleClass
     ].join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {

@@ -12,10 +12,11 @@ const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()
 module.exports = {
   scripts: [
     {
-      entry: path.resolve(nodeModules, '@ecl/vanilla-component-inpage-navigation/inpage-navigation.js'),
+      entry: path.resolve(nodeModules, '@ecl/inpage-navigation/inpage-navigation.js'),
       dest: path.resolve(outputFolder, 'scripts/ecl-inpage-navigation-vanilla.js'),
       options: {
         banner,
+        format: 'iife',
         moduleName: 'ECL',
         includePaths,
         sourceMap: false,
