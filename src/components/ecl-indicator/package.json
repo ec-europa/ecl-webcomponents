@@ -14,8 +14,8 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "5.0.0-alpha.14",
-    "@ecl/indicator": "5.0.0-alpha.14",
+    "@ecl/builder": "5.0.0-alpha.15",
+    "@ecl/indicator": "5.0.0-alpha.15",
     "cross-env": "7.0.3",
     "rimraf": "6.0.1"
   },

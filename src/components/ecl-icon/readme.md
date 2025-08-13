@@ -29,8 +29,8 @@
  - [ecl-category-filter-item](../ecl-category-filter)
  - [ecl-content-block](../ecl-content-block)
  - [ecl-datepicker](../ecl-datepicker)
- - [ecl-description-list-definition](../ecl-description-list)
  - [ecl-expandable](../ecl-expandable)
+ - [ecl-fact-figures](../ecl-fact-figures)
  - [ecl-fact-figures-item](../ecl-fact-figures)
  - [ecl-file](../ecl-file)
  - [ecl-file-translations](../ecl-file)
@@ -38,7 +38,6 @@
  - [ecl-form-group](../ecl-form-group)
  - [ecl-gallery](../ecl-gallery)
  - [ecl-gallery-item](../ecl-gallery)
- - [ecl-hero-banner](../ecl-hero-banner)
  - [ecl-inpage-navigation](../ecl-inpage-navigation)
  - [ecl-input](../ecl-input)
  - [ecl-link](../ecl-link)
@@ -49,7 +48,6 @@
  - [ecl-message](../ecl-message)
  - [ecl-modal](../ecl-modal)
  - [ecl-news-ticker](../ecl-news-ticker)
- - [ecl-page-banner](../ecl-page-banner)
  - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover](../ecl-popover)
  - [ecl-popover-item](../ecl-popover)
@@ -72,8 +70,8 @@ graph TD;
   ecl-category-filter-item --> ecl-icon
   ecl-content-block --> ecl-icon
   ecl-datepicker --> ecl-icon
-  ecl-description-list-definition --> ecl-icon
   ecl-expandable --> ecl-icon
+  ecl-fact-figures --> ecl-icon
   ecl-fact-figures-item --> ecl-icon
   ecl-file --> ecl-icon
   ecl-file-translations --> ecl-icon
@@ -81,7 +79,6 @@ graph TD;
   ecl-form-group --> ecl-icon
   ecl-gallery --> ecl-icon
   ecl-gallery-item --> ecl-icon
-  ecl-hero-banner --> ecl-icon
   ecl-inpage-navigation --> ecl-icon
   ecl-input --> ecl-icon
   ecl-link --> ecl-icon
@@ -92,7 +89,6 @@ graph TD;
   ecl-message --> ecl-icon
   ecl-modal --> ecl-icon
   ecl-news-ticker --> ecl-icon
-  ecl-page-banner --> ecl-icon
   ecl-pagination-item --> ecl-icon
   ecl-popover --> ecl-icon
   ecl-popover-item --> ecl-icon

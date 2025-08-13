@@ -94,6 +94,11 @@ export default {
   globals: {
     viewport: { value: 'tablet' },
   },
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const TemplateImg = (args) => 
