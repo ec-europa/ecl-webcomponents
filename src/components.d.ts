@@ -502,13 +502,34 @@ export namespace Components {
     interface EclFile {
         "ariaLabel": string;
         "detailMeta": string;
+        /**
+          * @default false
+         */
+        "downloadAttribute": boolean;
+        /**
+          * @default `${this.elId}-link`
+         */
+        "downloadId": string;
         "downloadLabel": string;
+        /**
+          * @default `${this.elId}-link-label`
+         */
+        "downloadLabelId": string;
         "downloadLink": string;
         /**
           * @default false
          */
         "eclScript": boolean;
+        /**
+          * @default `ecl-file-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "elId": string;
         "fileTitle": string;
+        /**
+          * @default `${this.elId}-title`
+         */
+        "fileTitleId": string;
+        "fileTitlePath": string;
         "image": string;
         "imageAlt": string;
         "labels": string;
@@ -517,9 +538,6 @@ export namespace Components {
         "styleClass": string;
         "taxonomies": string;
         "taxonomiesLabel": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'default'
@@ -532,23 +550,21 @@ export namespace Components {
          */
         "others": boolean;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "toggleLabel": string;
     }
     interface EclFileTranslationsItem {
-        "ariaLabel": string;
+        /**
+          * @default false
+         */
+        "downloadAttribute": boolean;
         "downloadLabel": string;
         "downloadLink": string;
         "fileTitle": string;
         "language": string;
         "meta": string;
+        "parentId": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'default'
@@ -2871,13 +2887,34 @@ declare namespace LocalJSX {
     interface EclFile {
         "ariaLabel"?: string;
         "detailMeta"?: string;
+        /**
+          * @default false
+         */
+        "downloadAttribute"?: boolean;
+        /**
+          * @default `${this.elId}-link`
+         */
+        "downloadId"?: string;
         "downloadLabel"?: string;
+        /**
+          * @default `${this.elId}-link-label`
+         */
+        "downloadLabelId"?: string;
         "downloadLink"?: string;
         /**
           * @default false
          */
         "eclScript"?: boolean;
+        /**
+          * @default `ecl-file-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "elId"?: string;
         "fileTitle"?: string;
+        /**
+          * @default `${this.elId}-title`
+         */
+        "fileTitleId"?: string;
+        "fileTitlePath"?: string;
         "image"?: string;
         "imageAlt"?: string;
         "labels"?: string;
@@ -2886,9 +2923,6 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "taxonomies"?: string;
         "taxonomiesLabel"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'default'
@@ -2901,23 +2935,21 @@ declare namespace LocalJSX {
          */
         "others"?: boolean;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "toggleLabel"?: string;
     }
     interface EclFileTranslationsItem {
-        "ariaLabel"?: string;
+        /**
+          * @default false
+         */
+        "downloadAttribute"?: boolean;
         "downloadLabel"?: string;
         "downloadLink"?: string;
         "fileTitle"?: string;
         "language"?: string;
         "meta"?: string;
+        "parentId"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'default'
