@@ -22,6 +22,11 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/label',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = args =>

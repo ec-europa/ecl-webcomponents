@@ -38,7 +38,7 @@ if (!isProd) {
 
 module.exports = {
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
-  addons: ['@storybook/addon-links', 'storybook/viewport', '@storybook/addon-docs'],
+  addons: ['@storybook/addon-links', 'storybook/viewport', '@storybook/addon-docs', '@geometricpanda/storybook-addon-badges'],
   framework: {
     name: '@storybook/html-vite',
   },

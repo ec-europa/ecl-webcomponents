@@ -37,6 +37,7 @@ graph TD;
   ecl-banner --> ecl-link
   ecl-button --> ecl-indicator
   ecl-link --> ecl-icon
+  ecl-link --> ecl-indicator
   style ecl-carousel-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
