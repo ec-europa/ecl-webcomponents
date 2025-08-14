@@ -1,5 +1,10 @@
 export default {
   title: 'Components/form/datepicker',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const getArgs = () => {

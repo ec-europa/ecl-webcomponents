@@ -1,10 +1,14 @@
 export default {
   title: 'Components/expandable',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = (args) =>
   `<ecl-expandable
-    theme="${args.theme}"
     el-id="${args.elId}"
     label-collapsed="${args.labelCollapsed}"
     label-expanded="${args.labelExpanded}"
