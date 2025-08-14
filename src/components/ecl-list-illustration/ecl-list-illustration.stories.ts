@@ -30,25 +30,48 @@ const getArgTypes = () => ({
   },
   iconSize: {
     name: 'icon-size',
-    control: { type: 'select' },
+    control: {
+      type: 'select',
+      labels: {
+        l: 'medium',
+        '2xl': 'large', 
+      },
+    },
     description: 'Size of the icon',
     options: [
-      '2xl',
       'l',
+      '2xl',
     ],
+    if: { arg: 'icon', truthy: true },
   },
   fontSize: {
     name: 'font-size',
-    control: { type: 'select' },
-    options: ['s', 'm', 'l'],
+    control: { 
+      type: 'select',
+      labels: {
+        m: 'medium',
+        l: 'large' 
+      },
+    },
+    options: [
+      'm',
+      'l'
+    ],
     description: 'Size of the fonts used',
   },
   mediaSize: {
     name: 'size of the media (for squared images only)',
-    control: { type: 'select' },
+    control: {
+      type: 'select',
+      labels: {
+        s: 'small',
+        m: 'medium',
+        l: 'large',
+      },
+    },
     options: ['s', 'm', 'l'],
     description: 'Size of the squared images',
-    if: { arg: 'icon', truthy: false },
+    if: { arg: 'squareImage', truthy: true },
   },
   centered: {
     name: 'centered',
