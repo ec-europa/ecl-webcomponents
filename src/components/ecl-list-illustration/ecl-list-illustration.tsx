@@ -17,11 +17,14 @@ export class EclListIllustration {
   @Prop() zebra: boolean = false;
   @Prop() column: number = 1;
   @Prop() styleClass: string;
+  @Prop() colorMode: string;
+  @Prop() fontSize: string = 'l';
   @Prop() centered: boolean = false;
 
   getClass(): string {
     const styleClasses = [
       `ecl-list-illustration`,
+      `ecl-list-illustration--font-${this.fontSize}`,
       `ecl-list-illustration--col-${this.column}`,
       this.styleClass
     ];
@@ -32,6 +35,10 @@ export class EclListIllustration {
 
     if (this.centered) {
       styleClasses.push('ecl-list-illustration--centered');
+    }
+
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`);
     }
 
     return styleClasses.join(' ');
