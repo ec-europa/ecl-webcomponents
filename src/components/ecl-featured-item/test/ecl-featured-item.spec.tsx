@@ -7,7 +7,7 @@ import { EclIcon } from '../../ecl-icon/ecl-icon';
 describe('ecl-featured-item', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclFeaturedItem],
+      components: [EclFeaturedItem, EclLink, EclIcon, EclMediaContainer],
       html: `<ecl-featured-item
         variant="highlight"
         item-title="Title"
