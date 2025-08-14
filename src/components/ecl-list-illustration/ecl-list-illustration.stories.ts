@@ -22,7 +22,7 @@ const getArgTypes = () => ({
     name: 'squared images',
     control: { type: 'boolean' },
     description: 'Squared images',
-    if: { arg: 'image', truthy: true },
+    if: { arg: 'icon', truthy: false },
   },
   icon: {
     control: { type: 'boolean' },
@@ -48,7 +48,7 @@ const getArgTypes = () => ({
     control: { type: 'select' },
     options: ['s', 'm', 'l'],
     description: 'Size of the squared images',
-    if: { arg: 'image', truthy: true },
+    if: { arg: 'icon', truthy: false },
   },
   centered: {
     name: 'centered',
