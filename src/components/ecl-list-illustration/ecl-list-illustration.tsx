@@ -12,7 +12,7 @@ import { Component, h, Prop, Element} from '@stencil/core';
 
 export class EclListIllustration {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() variant: string = 'image';
   @Prop() zebra: boolean = false;
   @Prop() column: number = 1;
@@ -35,6 +35,10 @@ export class EclListIllustration {
     }
 
     return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   componentDidRender() {

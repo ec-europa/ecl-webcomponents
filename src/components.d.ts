@@ -970,9 +970,6 @@ export namespace Components {
          */
         "column": number;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'image'
@@ -3376,9 +3373,6 @@ declare namespace LocalJSX {
          */
         "column"?: number;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'image'
