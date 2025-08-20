@@ -8,7 +8,7 @@ exports[`ecl-button renders 1`] = `
       <ecl-icon icon="corner-arrow" path="/icons.svg" rotate="90" slot="icon-before" style-class="ecl-button__icon ecl-button__icon--before">
         <span class="ecl-button__icon ecl-button__icon--before ecl-icon sc-ecl-button-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-90 wt-icon--xs"></span>
       </ecl-icon>
-      <span class="ecl-button__label">
+      <span class="ecl-button__label" data-ecl-label>
         Button label
       </span>
     </span>

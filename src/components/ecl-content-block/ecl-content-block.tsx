@@ -16,7 +16,7 @@ declare const ECL: any;
 export class EclContentBlock {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() hasDescription: boolean;
   @Prop() eclScript: boolean = false;
   @Prop() hasTitle: boolean;
@@ -34,7 +34,11 @@ export class EclContentBlock {
     ].join(' ');
   }
 
-  componentDidRender() {
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
+  componentDidLoad() {
     if (this.hasLabels) {
       const labelsContainer = this.el.querySelector('.ecl-content-block__label-container');
       const labels = this.el.querySelectorAll('.ecl-label');
@@ -95,12 +99,12 @@ export class EclContentBlock {
     const metaSecondaryArray = this.metaSecondary ? JSON.parse(this.metaSecondary) : '';
     return (
      <div class={this.getClass()}>
-      { this.hasLabels ?
+      { this.hasLabels &&
         <ul class="ecl-content-block__label-container">
           <slot name="labels"></slot>
-        </ul> : ''
+        </ul>
       }
-      { metaPrimaryArray ?
+      { metaPrimaryArray &&
         <ul class="ecl-content-block__primary-meta-container">
         { metaPrimaryArray.map((meta) => (
           <li class="ecl-content-block__primary-meta-item">
@@ -108,55 +112,55 @@ export class EclContentBlock {
           </li>
           ))
         }  
-        </ul> : '' 
+        </ul>
       }
-      { this.hasTitle ?
+      { this.hasTitle &&
         <h1 class="ecl-content-block__title">
           <slot name="title"></slot>
-        </h1> : ''
+        </h1>
       }
-      { this.hasDescription ?
+      { this.hasDescription &&
         <div class="ecl-content-block__description">
           <slot name="description"></slot>
-        </div> : ''
+        </div>
       }
-      { metaSecondaryArray ?
+      { metaSecondaryArray &&
         <ul class="ecl-content-block__secondary-meta-container">
         { metaSecondaryArray.map((meta) => (
           <li class="ecl-content-block__secondary-meta-item">
-          { meta.icon ?
+          { meta.icon &&
             <ecl-icon
               icon={meta.icon}
               size="s"
               style-class={`ecl-content-block__secondary-meta-icon sc-ecl-content-block-${this.theme}`}
-            ></ecl-icon> : ''
+            ></ecl-icon>
           }
-          { meta.label ? 
+          { meta.label &&
             <span class="ecl-content-block__secondary-meta-label">
               {meta.label}
-            </span> : ''
+            </span>
           }
           </li>
           ))
         }  
-        </ul> : '' 
+        </ul>
       }
-      { this.hasLinks ?
+      { this.hasLists &&
+        <div class="ecl-content-block__list-container">
+          <slot name="lists"></slot>
+        </div>
+      }
+      { this.hasLinks &&
         <div class="ecl-content-block__link-container">
           <ul class="ecl-content-block__link-list">
             <slot name="links"></slot>
           </ul>
-          { this.hasSecondaryLinks ?
+          { this.hasSecondaryLinks &&
           <ul class="ecl-content-block__link-list">
             <slot name="links-secondary"></slot>
-          </ul> : ''
+          </ul>
           }
-        </div> : ''
-      }
-      { this.hasLists ?
-        <div class="ecl-content-block__list-container">
-          <slot name="lists"></slot>
-        </div> : ''
+        </div>
       }
      </div> 
     )

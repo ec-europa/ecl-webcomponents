@@ -14,7 +14,8 @@ declare const ECL: any;
 })
 export class EclRange {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
+  @Prop() inputId: string = `ecl-range-${Math.random().toString(36).slice(2, 10)}`;
   @Prop() styleClass: string;
   @Prop() inputClass: string;
   @Prop() eclScript: boolean = false;
@@ -26,7 +27,6 @@ export class EclRange {
   @Prop() placeholder: string;
   @Prop() width: string = 'm';
   @Prop() label: string;
-  @Prop() inputId: string;
   @Prop() name: string;
   @Prop() defaultValue: string;
   @Prop() max: number;
@@ -64,21 +64,11 @@ export class EclRange {
     return inputClasses.join(' ');
   }
 
-  componentDidRender() {
-    if (this.inputId) {
-      const group = this.el.closest('.ecl-form-group');
-      if (group) {
-        const label =  group.querySelector('.ecl-form-label');
-        if (label) {
-          label.setAttribute('for', this.inputId);
-          label.setAttribute('id', `${this.inputId}-label`);
-        }
-        const helper = group.querySelector('.ecl-help-block');
-        if (helper) {
-          helper.setAttribute('id', `${this.inputId}-helper`);
-        }
-      }
-    }
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
+  componentDidLoad() {
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-range-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
@@ -131,6 +121,22 @@ export class EclRange {
       value: this.defaultValue,
     };
 
+    if (this.inputId) {
+      const group = this.el.closest('.ecl-form-group');
+      if (group) {
+        const label =  group.querySelector('.ecl-form-label');
+        if (label) {
+          label.setAttribute('for', this.inputId);
+          label.setAttribute('id', `${this.inputId}-label`);
+        }
+        const helper = group.querySelector('.ecl-help-block');
+        if (helper) {
+          helper.setAttribute('id', `${this.inputId}-helper`);
+          attributes['aria-describedby'] = `${this.inputId}-helper`;
+        }
+      }
+    }
+
     return (
       <div 
         class={this.getClass()}
@@ -142,11 +148,20 @@ export class EclRange {
           onFocus={ev => this.handleFocus(ev)}
           onBlur={ev => this.handleBlur(ev)}
           onChange={ev => this.handleChange(ev)}
+          aria-describedby={`${this.inputId}-helper ${this.inputId}-value`}
         />
-      
+        <div
+          class="ecl-range__bubble"
+          data-ecl-range-bubble
+          data-ecl-range-value-current>
+        </div>
         <div class="ecl-range__value">
           {this.valueLabel}
-          <span class="ecl-range__value-current" data-ecl-range-value-current></span>
+          <span
+            class="ecl-range__value-current"
+            id={`${this.inputId}-value`}
+            data-ecl-range-value-current>
+          </span>
         </div>
       </div>
     );

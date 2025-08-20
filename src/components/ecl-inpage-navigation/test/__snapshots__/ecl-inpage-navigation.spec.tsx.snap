@@ -1,16 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-inpage-navigation renders 1`] = `
-<ecl-inpage-navigation ecl-script="" inpage-id="inpage-id" inpage-title="Page contents" theme="ec">
+<ecl-inpage-navigation ecl-script="" inpage-id="inpage-id" inpage-title="Page contents">
   <!---->
   <nav aria-labelledby="inpage-id" class="ecl-inpage-navigation" data-ecl-inpage-navigation>
     <div class="ecl-inpage-navigation__title" id="inpage-id">
+      <ecl-icon icon="list" size="s" style-class="ecl-inpage-navigation__title-icon sc-ecl-inpage-navigation-ec"></ecl-icon>
       Page contents
     </div>
     <div class="ecl-inpage-navigation__body">
       <button aria-controls="ecl-inpage-navigation-list" aria-expanded="false" aria-label="" class="ecl-inpage-navigation__trigger sc-ecl-inpage-navigation-ec" data-ecl-inpage-navigation-trigger id="inpage-id-trigger">
         <span class="ecl-inpage-navigation__trigger-current" data-ecl-inpage-navigation-trigger-current></span>
-        <ecl-icon icon="corner-arrow" rotate="180" size="s" style-class="ecl-inpage-navigation__trigger-icon"></ecl-icon>
+        <ecl-icon icon="corner-arrow" rotate="180" size="s" style-class="ecl-inpage-navigation__trigger-icon sc-ecl-inpage-navigation-ec"></ecl-icon>
       </button>
       <ul class="ecl-inpage-navigation__list" data-ecl-inpage-navigation-list id="inpage-id-list">
         <li class="ecl-inpage-navigation__item sc-ecl-inpage-navigation-ec">

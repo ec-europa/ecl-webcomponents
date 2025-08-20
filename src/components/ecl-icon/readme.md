@@ -31,8 +31,8 @@
  - [ecl-category-filter-item](../ecl-category-filter)
  - [ecl-content-block](../ecl-content-block)
  - [ecl-datepicker](../ecl-datepicker)
- - [ecl-description-list-definition](../ecl-description-list)
  - [ecl-expandable](../ecl-expandable)
+ - [ecl-fact-figures](../ecl-fact-figures)
  - [ecl-fact-figures-item](../ecl-fact-figures)
  - [ecl-file](../ecl-file)
  - [ecl-file-translations](../ecl-file)
@@ -44,11 +44,13 @@
  - [ecl-input](../ecl-input)
  - [ecl-link](../ecl-link)
  - [ecl-list-illustration-item](../ecl-list-illustration)
+ - [ecl-media-container](../ecl-media-container)
  - [ecl-menu](../ecl-menu)
  - [ecl-menu-item](../ecl-menu)
- - [ecl-message](../ecl-message)
  - [ecl-modal](../ecl-modal)
  - [ecl-news-ticker](../ecl-news-ticker)
+ - [ecl-news-ticker-item](../ecl-news-ticker)
+ - [ecl-notification](../ecl-notification)
  - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover](../ecl-popover)
  - [ecl-popover-item](../ecl-popover)
@@ -70,8 +72,8 @@ graph TD;
   ecl-category-filter-item --> ecl-icon
   ecl-content-block --> ecl-icon
   ecl-datepicker --> ecl-icon
-  ecl-description-list-definition --> ecl-icon
   ecl-expandable --> ecl-icon
+  ecl-fact-figures --> ecl-icon
   ecl-fact-figures-item --> ecl-icon
   ecl-file --> ecl-icon
   ecl-file-translations --> ecl-icon
@@ -83,11 +85,13 @@ graph TD;
   ecl-input --> ecl-icon
   ecl-link --> ecl-icon
   ecl-list-illustration-item --> ecl-icon
+  ecl-media-container --> ecl-icon
   ecl-menu --> ecl-icon
   ecl-menu-item --> ecl-icon
-  ecl-message --> ecl-icon
   ecl-modal --> ecl-icon
   ecl-news-ticker --> ecl-icon
+  ecl-news-ticker-item --> ecl-icon
+  ecl-notification --> ecl-icon
   ecl-pagination-item --> ecl-icon
   ecl-popover --> ecl-icon
   ecl-popover-item --> ecl-icon

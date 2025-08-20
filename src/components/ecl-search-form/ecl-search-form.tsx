@@ -10,7 +10,7 @@ import { Component, h, Prop } from '@stencil/core';
   scoped: true,
 })
 export class EclSearchForm {
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() disabled: boolean = false;
   @Prop() required: boolean = false;
@@ -19,9 +19,8 @@ export class EclSearchForm {
   @Prop() helperId: string;
   @Prop() helperText: string;
   @Prop() placeholder: string;
-  @Prop() inputId: string;
+  @Prop() inputId: string = `ecl-search-form-${Math.random().toString(36).slice(2, 10)}`;
   @Prop() inputDefaultValue: string;
-  @Prop() width: string = 'm';
   @Prop() label: string;
   @Prop() type: string;
   @Prop() name: string;
@@ -32,6 +31,10 @@ export class EclSearchForm {
     const styleClasses = ['ecl-search-form', this.styleClass];
 
     return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {
@@ -49,7 +52,7 @@ export class EclSearchForm {
           theme={this.theme}
         >
           <ecl-input
-            style-class={`ecl-search-form__text-input sc-ecl-search-form-${this.theme}`}
+            style-class={`sc-ecl-search-form-${this.theme}`}
             type="search"
             input-class={`ecl-search-form__text-input sc-ecl-search-form-${this.theme}`}
             theme={this.theme}
@@ -57,7 +60,6 @@ export class EclSearchForm {
             required={this.required}
             disabled={this.disabled}
             invalid={this.invalid}
-            width="m"
             placeholder={this.placeholder}
             default-value={this.inputDefaultValue}
           >
@@ -66,13 +68,14 @@ export class EclSearchForm {
         <ecl-button
           style-class={`ecl-search-form__button sc-ecl-search-form-${this.theme}`}
           aria-label={this.buttonAriaLabel}
-          variant="search"
+          variant={this.theme === 'ec' ? 'ghost' : 'primary'}
+          type="search"
           theme={this.theme}
         >
           {this.buttonLabel}
           <ecl-icon
             style-class={`sc-ecl-search-form-${this.theme}`}
-            slot="icon-after"
+            slot="icon-before"
             icon="search"
             size="xs"
           >

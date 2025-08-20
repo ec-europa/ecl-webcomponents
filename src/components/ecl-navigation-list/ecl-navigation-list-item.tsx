@@ -12,7 +12,8 @@ export class EclNavigationListItem {
   @Prop() imageAlt: string;
   @Prop() styleClass: string;
   @Prop() border: boolean = true;
-
+  @Prop() colorMode: string;
+  @Prop() variant: string;
 
   getClass(): string {
     const styleClasses = [
@@ -23,6 +24,14 @@ export class EclNavigationListItem {
 
     if (!this.border) {
       styleClasses.push('ecl-navigation-list__item--no-border');
+    }
+
+    if (this.variant) {
+      styleClasses.push(`ecl-navigation-list__item--${this.variant}`);
+    }
+
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`);
     }
 
     return styleClasses.join(' ');

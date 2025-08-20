@@ -10,22 +10,10 @@ const includePaths = [nodeModules];
 const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()}`;
 
 module.exports = {
-  scripts: [
-    {
-      entry: path.resolve(nodeModules, '@ecl/vanilla-component-message/message.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-message-vanilla.js'),
-      options: {
-        banner,
-        moduleName: 'ECL',
-        includePaths,
-        sourceMap: false,
-      },
-    },
-  ],
   styles: [
     {
-      entry: path.resolve(__dirname, 'src/styles/ecl-message-ec.scss'),
-      dest: path.resolve(outputFolder, 'styles/ecl-message-ec.css'),
+      entry: path.resolve(__dirname, 'src/styles/ecl-divider-ec.scss'),
+      dest: path.resolve(outputFolder, 'styles/ecl-divider-ec.css'),
       options: {
         banner,
         includePaths,
@@ -34,8 +22,8 @@ module.exports = {
       },
     },
     {
-      entry: path.resolve(__dirname, 'src/styles/ecl-message-eu.scss'),
-      dest: path.resolve(outputFolder, 'styles/ecl-message-eu.css'),
+      entry: path.resolve(__dirname, 'src/styles/ecl-divider-eu.scss'),
+      dest: path.resolve(outputFolder, 'styles/ecl-divider-eu.css'),
       options: {
         banner,
         includePaths,

@@ -57,9 +57,9 @@ const getArgTypes = () => {
       if: { arg: 'icon', truthy: true },
     },
     iconRotate: {
-      name: 'icon transform',
+      name: 'icon rotate',
       type: { name: 'select' },
-      description: 'Link icon transform',
+      description: 'Link icon rotate',
       options: [
         '90',
         '180',
@@ -116,7 +116,7 @@ const Template = (args) => {
       `<ecl-icon 
         slot="icon-before"
         icon="${args.icon}"
-        transform="${args.iconTransform}"
+        rotate="${args.iconRotate}"
         flip="${args.iconFlip}"
       >
       </ecl-icon>` : '' }
@@ -125,7 +125,7 @@ const Template = (args) => {
       `<ecl-icon 
         slot="icon-after"
         icon="${args.icon}"
-        transform="${args.iconTransform}"
+        rotate="${args.iconRotate}"
         flip="${args.iconFlip}"
       >
       </ecl-icon>` : '' }

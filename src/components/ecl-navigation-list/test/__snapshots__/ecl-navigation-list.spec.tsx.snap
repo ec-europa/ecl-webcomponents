@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-navigation-list renders 1`] = `
-<ecl-navigation-list column="2" theme="ec">
+<ecl-navigation-list column="2">
   <!---->
   <div class="ecl-navigation-list ecl-navigation-list--col-2">
     <div class="ecl-navigation-list__item sc-ecl-navigation-list-ec">
       <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imagealt="Alt text of the image" imgclass="sc-ecl-navigation-list-ec ecl-navigation-list__image" styleclass="ecl-navigation-list__picture sc-ecl-navigation-list-ec"></ecl-picture>
-      <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="" theme="ec">
+      <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="">
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
           <h1 class="ecl-content-block__title">
-            <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
+            <ecl-link path="/example.html" slot="title" variant="standalone">
               <!---->
               <a class="ecl-link ecl-link--standalone" href="/example.html">
                 Title 1
@@ -63,11 +63,11 @@ exports[`ecl-navigation-list renders 1`] = `
     </div>
     <div class="ecl-navigation-list__item sc-ecl-navigation-list-ec">
       <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imagealt="Alt text of the image" imgclass="sc-ecl-navigation-list-ec ecl-navigation-list__image" styleclass="ecl-navigation-list__picture sc-ecl-navigation-list-ec"></ecl-picture>
-      <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="" theme="ec">
+      <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="">
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
           <h1 class="ecl-content-block__title">
-            <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
+            <ecl-link path="/example.html" slot="title" variant="standalone">
               <!---->
               <a class="ecl-link ecl-link--standalone" href="/example.html">
                 Title 2
@@ -120,11 +120,11 @@ exports[`ecl-navigation-list renders 1`] = `
     </div>
     <div class="ecl-navigation-list__item sc-ecl-navigation-list-ec">
       <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imagealt="Alt text of the image" imgclass="sc-ecl-navigation-list-ec ecl-navigation-list__image" styleclass="ecl-navigation-list__picture sc-ecl-navigation-list-ec"></ecl-picture>
-      <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="" theme="ec">
+      <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="">
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
           <h1 class="ecl-content-block__title">
-            <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
+            <ecl-link path="/example.html" slot="title" variant="standalone">
               <!---->
               <a class="ecl-link ecl-link--standalone" href="/example.html">
                 Title 3
@@ -177,11 +177,11 @@ exports[`ecl-navigation-list renders 1`] = `
     </div>
     <div class="ecl-navigation-list__item sc-ecl-navigation-list-ec">
       <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imagealt="Alt text of the image" imgclass="sc-ecl-navigation-list-ec ecl-navigation-list__image" styleclass="ecl-navigation-list__picture sc-ecl-navigation-list-ec"></ecl-picture>
-      <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="" theme="ec">
+      <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="">
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
           <h1 class="ecl-content-block__title">
-            <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
+            <ecl-link path="/example.html" slot="title" variant="standalone">
               <!---->
               <a class="ecl-link ecl-link--standalone" href="/example.html">
                 Title 4
@@ -234,11 +234,11 @@ exports[`ecl-navigation-list renders 1`] = `
     </div>
     <div class="ecl-navigation-list__item sc-ecl-navigation-list-ec">
       <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imagealt="Alt text of the image" imgclass="sc-ecl-navigation-list-ec ecl-navigation-list__image" styleclass="ecl-navigation-list__picture sc-ecl-navigation-list-ec"></ecl-picture>
-      <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="" theme="ec">
+      <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="">
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
           <h1 class="ecl-content-block__title">
-            <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
+            <ecl-link path="/example.html" slot="title" variant="standalone">
               <!---->
               <a class="ecl-link ecl-link--standalone" href="/example.html">
                 Title 5

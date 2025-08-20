@@ -1,6 +1,19 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-button/button-eu';
-@use '@ecl/vanilla-component-file-upload/file-upload-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $typography: var.$typography
+);
+@use '@ecl/button/button' with (
+  $theme: theme.$theme,
+  $button: var.$button
+);
+@use '@ecl/file-upload/file-upload' with (
+  $theme: theme.$theme,
+  $file-upload: var.$file-upload
+);
 
 .ecl-file-upload__button-container {
   margin-top: 0.75rem;

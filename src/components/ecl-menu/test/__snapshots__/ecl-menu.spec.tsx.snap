@@ -45,7 +45,7 @@ exports[`ecl-menu renders 1`] = `
               <ecl-icon slot="icon-before">
                 <span class="ecl-button__icon ecl-icon sc-ecl-button-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270 wt-icon--s"></span>
               </ecl-icon>
-              <span class="ecl-u-sr-only" data-ecl-label>
+              <span class="ecl-button__label" data-ecl-label>
                 previous
               </span>
             </span>
@@ -58,7 +58,7 @@ exports[`ecl-menu renders 1`] = `
               <ecl-icon slot="icon-before">
                 <span class="ecl-button__icon ecl-icon sc-ecl-button-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270 wt-icon--s"></span>
               </ecl-icon>
-              <span class="ecl-u-sr-only" data-ecl-label>
+              <span class="ecl-button__label" data-ecl-label>
                 next
               </span>
             </span>
@@ -83,7 +83,7 @@ exports[`ecl-menu renders 1`] = `
                 <!---->
                 <button class="ecl-button ecl-button--ghost ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
-                    <span class="ecl-button__label"></span>
+                    <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
                       <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180 wt-icon--xs"></span>
                     </ecl-icon>
@@ -141,7 +141,7 @@ exports[`ecl-menu renders 1`] = `
                 <!---->
                 <button class="ecl-button ecl-button--ghost ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
-                    <span class="ecl-button__label"></span>
+                    <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
                       <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180 wt-icon--xs"></span>
                     </ecl-icon>
@@ -196,7 +196,7 @@ exports[`ecl-menu renders 1`] = `
                 <!---->
                 <button class="ecl-button ecl-button--ghost ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
-                    <span class="ecl-button__label"></span>
+                    <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
                       <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180 wt-icon--xs"></span>
                     </ecl-icon>
@@ -251,7 +251,7 @@ exports[`ecl-menu renders 1`] = `
                 <!---->
                 <button class="ecl-button ecl-button--ghost ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
-                    <span class="ecl-button__label"></span>
+                    <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
                       <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180 wt-icon--xs"></span>
                     </ecl-icon>
@@ -418,7 +418,7 @@ exports[`ecl-menu renders 1`] = `
                 <!---->
                 <button class="ecl-button ecl-button--ghost ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
-                    <span class="ecl-button__label"></span>
+                    <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
                       <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180 wt-icon--xs"></span>
                     </ecl-icon>

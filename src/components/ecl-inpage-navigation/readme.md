@@ -11,7 +11,7 @@
 | ------------ | ------------- | ----------- | -------- | ----------- |
 | `path`       | `path`        |             | `string` | `undefined` |
 | `styleClass` | `style-class` |             | `string` | `undefined` |
-| `theme`      | `theme`       |             | `string` | `'ec'`      |
+| `theme`      | `theme`       |             | `string` | `undefined` |
 
 
 ## Dependencies
