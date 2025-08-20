@@ -29,6 +29,7 @@ Icon.args = {
   size: '2xl',
 };
 Icon.argTypes = {
+  color_mode: { table: { disable: true }},
   icon: {
     type: { name: 'select' },
     options: iconsAllEc,
