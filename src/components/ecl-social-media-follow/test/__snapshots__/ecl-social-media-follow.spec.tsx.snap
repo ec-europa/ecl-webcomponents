@@ -13,9 +13,7 @@ exports[`ecl-social-media-follow renders 1`] = `
           <!---->
           <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://facebook.com">
             <ecl-icon class="ecl-link__icon" slot="icon-before">
-              <svg class="ecl-icon ecl-icon--m">
-                <use xlink:href="/build/images/ec/icons-social-media.svg#facebook-color"></use>
-              </svg>
+              <span class="ecl-icon wt-icon--m wt-icon--monochrome wt-icon--placeholder wt-icon-networks--facebook-color"></span>
             </ecl-icon>
             Facebook
           </a>
@@ -26,9 +24,7 @@ exports[`ecl-social-media-follow renders 1`] = `
           <!---->
           <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://twitter.com">
             <ecl-icon class="ecl-link__icon" slot="icon-before">
-              <svg class="ecl-icon ecl-icon--m">
-                <use xlink:href="/build/images/ec/icons-social-media.svg#twitter-color"></use>
-              </svg>
+              <span class="ecl-icon wt-icon--m wt-icon--monochrome wt-icon--placeholder wt-icon-networks--twitter-color"></span>
             </ecl-icon>
             Twitter
           </a>
@@ -39,9 +35,7 @@ exports[`ecl-social-media-follow renders 1`] = `
           <!---->
           <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://instagram.com">
             <ecl-icon class="ecl-link__icon" slot="icon-before">
-              <svg class="ecl-icon ecl-icon--m">
-                <use xlink:href="/build/images/ec/icons-social-media.svg#instagram-color"></use>
-              </svg>
+              <span class="ecl-icon wt-icon--m wt-icon--monochrome wt-icon--placeholder wt-icon-networks--instagram-color"></span>
             </ecl-icon>
             Instagram
           </a>
@@ -52,9 +46,7 @@ exports[`ecl-social-media-follow renders 1`] = `
           <!---->
           <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://linkedin.com">
             <ecl-icon class="ecl-link__icon" slot="icon-before">
-              <svg class="ecl-icon ecl-icon--m">
-                <use xlink:href="/build/images/ec/icons-social-media.svg#linkedin-color"></use>
-              </svg>
+              <span class="ecl-icon wt-icon--m wt-icon--monochrome wt-icon--placeholder wt-icon-networks--linkedin-color"></span>
             </ecl-icon>
             Linkedin
           </a>
@@ -65,9 +57,7 @@ exports[`ecl-social-media-follow renders 1`] = `
           <!---->
           <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://telegram.com">
             <ecl-icon class="ecl-link__icon" slot="icon-before">
-              <svg class="ecl-icon ecl-icon--m">
-                <use xlink:href="/build/images/ec/icons-social-media.svg#telegram-color"></use>
-              </svg>
+              <span class="ecl-icon wt-icon--m wt-icon--monochrome wt-icon--placeholder wt-icon-networks--telegram-color"></span>
             </ecl-icon>
             Telegram
           </a>

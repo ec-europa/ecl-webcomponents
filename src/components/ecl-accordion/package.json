@@ -7,7 +7,6 @@
   "main": "ecl-accordion.tsx",
   "private": true,
   "scripts": {
-    "build:copy": "cross-env ecl-builder copy",
     "build:styles": "cross-env ecl-builder styles",
     "build:scripts": "cross-env ecl-builder scripts",
     "build": "run-p clean build:*",

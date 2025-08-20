@@ -1,5 +1,5 @@
 import { randomizedLink } from "../../utils/randomizedLink"; 
-import iconsAllEc from '@ecl/resources-icons/dist/lists/all.json';
+import iconsAllEc from '@ecl/resources-icons/list.json';
 
 const getArgs = () => {
   return {

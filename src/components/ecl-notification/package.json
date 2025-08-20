@@ -17,7 +17,7 @@
     "@ecl/theme-ec": "5.0.0-alpha.15",
     "@ecl/theme-eu": "5.0.0-alpha.15",
     "@ecl/builder": "5.0.0-alpha.15",
-    "@ecl/resources-icons": "4.10.0",
+    "@ecl/resources-icons": "5.0.0-alpha.15",
     "@ecl/icon": "5.0.0-alpha.15",
     "@ecl/notification": "5.0.0-alpha.15",
     "@ecl/grid": "5.0.0-alpha.15",

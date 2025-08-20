@@ -8,7 +8,7 @@
 | Property     | Attribute     | Description | Type     | Default     |
 | ------------ | ------------- | ----------- | -------- | ----------- |
 | `color`      | `color`       |             | `string` | `undefined` |
-| `family`     | `family`      |             | `string` | `undefined` |
+| `family`     | `family`      |             | `string` | `''`        |
 | `flip`       | `flip`        |             | `string` | `undefined` |
 | `icon`       | `icon`        |             | `string` | `''`        |
 | `path`       | `path`        |             | `string` | `undefined` |

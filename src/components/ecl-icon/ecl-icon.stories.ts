@@ -1,4 +1,4 @@
-import iconsAllEc from '@ecl/resources-ec-icons/dist/lists/all.json';
+import iconsAllEc from '@ecl/resources-icons/list.json';
 
 export default {
   title: 'Components/icon',

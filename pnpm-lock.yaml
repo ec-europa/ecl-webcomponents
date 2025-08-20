@@ -563,8 +563,8 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
       '@ecl/resources-icons':
-        specifier: 4.11.0
-        version: 4.11.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1053,29 +1053,20 @@ importers:
   src/components/ecl-icon:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.33.0(jiti@1.21.7))
-      '@ecl/resources-ec-icons':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/resources-eu-icons':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/specs-component-icon':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.33.0(jiti@1.21.7))
+      '@ecl/icon':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/resources-icons':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-icon':
-        specifier: 3.13.0
-        version: 3.13.0(svg4everybody@2.1.9)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -1223,8 +1214,8 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
       '@ecl/resources-icons':
-        specifier: 4.11.0
-        version: 4.11.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1410,8 +1401,8 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
       '@ecl/resources-icons':
-        specifier: 4.10.0
-        version: 4.10.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1759,8 +1750,8 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.33.0(jiti@1.21.7))
       '@ecl/resources-icons':
-        specifier: 4.10.0
-        version: 4.10.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/tag':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -3105,20 +3096,11 @@ packages:
   '@ecl/rating-field@5.0.0-alpha.15':
     resolution: {integrity: sha512-jeImTjobR5Lw3768HPAabko8+aXBnNJMqRsHYD/F3kfsb2VJlLqxmmpwttIWLaFHtlHbXml5v9ZkKJpG9D48nA==}
 
-  '@ecl/resources-ec-icons@3.13.0':
-    resolution: {integrity: sha512-bQ+ng/kH9mv4eloUrx0s4H0by3pDQvWO8LaGsXAVbelO5MKmOUg2W6JlR9GUn8uTrbBcJd73V2vWsPI8eOGC8Q==}
-
   '@ecl/resources-ec-logo@3.13.0':
     resolution: {integrity: sha512-mR1wjh9xnpFpBwLN0333Om+Wav9jBCtFL/LMpPzBjmY9hM6D1l3jSYyQGazivR/3GBsBwcEcZ0hmJHXMYxoPEg==}
 
-  '@ecl/resources-eu-icons@3.13.0':
-    resolution: {integrity: sha512-AF9dWG9XS1Ia4XcpCRnIJlz/xVT+KoFR9uVuPtsq7OM5rUKxvRMwQrXfdy3GhmfpHNc0eZfSGQ7DEcAwAhV80w==}
-
   '@ecl/resources-eu-logo@3.13.0':
     resolution: {integrity: sha512-XjpQqIK8GclrKn48piw2FYFjf1uxLjAWXCx9RZwFLa2X2qGSl7tYDSuMdwYT6gJ2JGKa+DMr15Qwf1kJ8IRTrA==}
-
-  '@ecl/resources-icons@4.10.0':
-    resolution: {integrity: sha512-0/o2LCPRV6n+7AZmWpO3OYE6NFtczMzN8Ljxj901p9SWLeBeqZbtQinuOMdRcmrTLPxJSqjPHIQ1cBzzHHe/4g==}
 
   '@ecl/resources-icons@4.11.0':
     resolution: {integrity: sha512-OUpgXS2sJWn4vGNavCtZXZ3/MUvvVlcwJtBjqVf9SCv9Z5BNT1k1zhrK/fwsrSTj0n/ZkzgwEFyeKqLOqf08jg==}
@@ -3146,9 +3128,6 @@ packages:
 
   '@ecl/social-media-follow@5.0.0-alpha.15':
     resolution: {integrity: sha512-qjDRo1a66dzGVyTmuip2jz6K3Uz+NmdH64c2UDbnufPtfM2mTWm5gG5D+P+zD+B7dwbxDJ4OSyp6J4kLzKIoDA==}
-
-  '@ecl/specs-component-icon@3.13.0':
-    resolution: {integrity: sha512-nV+SYw/NvCClYUuKTi+VwE/9wwfRns0D+RU5ry2NLE9r3SreMoy5LwQsEMkt/fNVFAElHdqbafN9D8AZYfpj1w==}
 
   '@ecl/spinner@5.0.0-alpha.15':
     resolution: {integrity: sha512-Kxnd65fIVeZVRblV4TVIgPBVDvWxdGa/aGfbLlxE5Xq0aUwYhTg0ctpaZr6tyQMULtG4p20P/25ogbuIEZkQRQ==}
@@ -3257,11 +3236,6 @@ packages:
 
   '@ecl/vanilla-component-gallery@3.13.0':
     resolution: {integrity: sha512-K0R/DyvdJwoA26xoDxUvou1Ytg9nOplnz0XNjFiMHZvGlgvLH/tqWL6WXrL8qhmOAthH7J3gBws7fS4kIPxE7w==}
-
-  '@ecl/vanilla-component-icon@3.13.0':
-    resolution: {integrity: sha512-1Cvi62OrgycYiOQ6ZTY+by9nqT+ZUa7Fl2n0rdZBmEUpgrbJfWTFIbFh396Qnh0na48a+kFj53Levuwj251Fdg==}
-    peerDependencies:
-      svg4everybody: ^2.1.9
 
   '@ecl/vanilla-component-link@3.13.0':
     resolution: {integrity: sha512-KrRISO2jswpAXnSoJz6ofd0iTx7lIcL8aRTpBUQsedeL9zYxgGMSHjQYR6Xb845mXGFhFJYuRg3qlRZt7RyrCw==}
@@ -10881,10 +10855,6 @@ packages:
   svg-tags@1.0.0:
     resolution: {integrity: sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==}
 
-  svg4everybody@2.1.9:
-    resolution: {integrity: sha512-AS9WORVV/vk520ZHxGTlQzyDBizp/h6WyAYUbKhze/kwvQr43DwJpkIIPBomsUyKqN7N+h1deF92N9PmW+o+9A==}
-    engines: {node: '>=0.8.0'}
-
   svgo@3.3.2:
     resolution: {integrity: sha512-OoohrmuUlBs8B8o6MB2Aevn+pRIH9zDALSR+6hhqVfa6fRwG/Qw9VUMSMW9VNg2CFc/MTIfabtdOVl9ODIJjpw==}
     engines: {node: '>=14.0.0'}
@@ -14693,23 +14663,17 @@ snapshots:
     dependencies:
       '@ecl/icon': 5.0.0-alpha.15
 
-  '@ecl/resources-ec-icons@3.13.0': {}
-
   '@ecl/resources-ec-logo@3.13.0':
     dependencies:
       ncp: 2.0.0
       npm-run-all: 4.1.5
       rimraf: 5.0.5
 
-  '@ecl/resources-eu-icons@3.13.0': {}
-
   '@ecl/resources-eu-logo@3.13.0':
     dependencies:
       ncp: 2.0.0
       npm-run-all: 4.1.5
       rimraf: 5.0.5
-
-  '@ecl/resources-icons@4.10.0': {}
 
   '@ecl/resources-icons@4.11.0': {}
 
@@ -14779,8 +14743,6 @@ snapshots:
     dependencies:
       '@ecl/grid': 5.0.0-alpha.15
       '@ecl/link': 5.0.0-alpha.15
-
-  '@ecl/specs-component-icon@3.13.0': {}
 
   '@ecl/spinner@5.0.0-alpha.15': {}
 
@@ -14919,11 +14881,6 @@ snapshots:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
       '@ecl/vanilla-utility-media': 3.13.0
       focus-trap: 7.5.4
-
-  '@ecl/vanilla-component-icon@3.13.0(svg4everybody@2.1.9)':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      svg4everybody: 2.1.9
 
   '@ecl/vanilla-component-link@3.13.0':
     dependencies:
@@ -24027,8 +23984,6 @@ snapshots:
   supports-preserve-symlinks-flag@1.0.0: {}
 
   svg-tags@1.0.0: {}
-
-  svg4everybody@2.1.9: {}
 
   svgo@3.3.2:
     dependencies:

@@ -793,6 +793,9 @@ export namespace Components {
     }
     interface EclIcon {
         "color": string;
+        /**
+          * @default ''
+         */
         "family": string;
         "flip": string;
         /**
@@ -1525,6 +1528,14 @@ export namespace Components {
         "variant": string;
     }
     interface EclSocialMediaFollowItem {
+        /**
+          * @default 'monochrome'
+         */
+        "color": string;
+        /**
+          * @default 'networks'
+         */
+        "family": string;
         "icon": string;
         "sharePath": string;
         "styleClass": string;
@@ -3189,6 +3200,9 @@ declare namespace LocalJSX {
     }
     interface EclIcon {
         "color"?: string;
+        /**
+          * @default ''
+         */
         "family"?: string;
         "flip"?: string;
         /**
@@ -3933,6 +3947,14 @@ declare namespace LocalJSX {
         "variant"?: string;
     }
     interface EclSocialMediaFollowItem {
+        /**
+          * @default 'monochrome'
+         */
+        "color"?: string;
+        /**
+          * @default 'networks'
+         */
+        "family"?: string;
         "icon"?: string;
         "sharePath"?: string;
         "styleClass"?: string;
