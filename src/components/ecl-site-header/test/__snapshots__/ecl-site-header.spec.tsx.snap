@@ -13,14 +13,14 @@ exports[`ecl-site-header renders 1`] = `
           <div class="ecl-site-header__action">
             <div class="ecl-site-header__login-container">
               <a class="ecl-button ecl-button--ghost ecl-site-header__login-toggle" href="/example.html">
-                <ecl-icon icon="log-in" size="s" style-class="ecl-site-header__icon sc-ecl-site-header-ec" theme="ec"></ecl-icon>
+                <ecl-icon icon="log-in" size="s" style-class="ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
                 Log in
               </a>
             </div>
             <div class="ecl-site-header__language">
               <a aria-controls="language-switcher" aria-label="Choose language" class="ecl-button ecl-button--ghost ecl-site-header__language-selector" data-ecl-language-selector>
                 <span class="ecl-site-header__language-icon">
-                  <ecl-icon icon="global" size="s" style-class="ecl-site-header__icon sc-ecl-site-header-ec" theme="ec"></ecl-icon>
+                  <ecl-icon icon="global" size="s" style-class="ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
                   english
                 </span>
               </a>
@@ -32,7 +32,7 @@ exports[`ecl-site-header renders 1`] = `
                   <button class="ecl-button ecl-button--ghost ecl-site-header__language-close" data-ecl-language-list-close type="submit">
                     <span class="ecl-button__container">
                       <span class="ecl-u-sr-only" data-ecl-label="true"></span>
-                      <ecl-icon data-ecl-icon icon="close-filled" size="s" slot="icon-after" style-class="ecl-button__icon ecl-button__icon--after sc-ecl-site-header-ec" theme="ec"></ecl-icon>
+                      <ecl-icon data-ecl-icon icon="close-filled" size="s" slot="icon-after" style-class="ecl-button__icon ecl-button__icon--after sc-ecl-site-header-ec"></ecl-icon>
                     </span>
                   </button>
                 </div>
@@ -224,7 +224,7 @@ exports[`ecl-site-header renders 1`] = `
             </div>
             <div class="ecl-site-header__search-container" role="search">
               <a aria-controls="search-form-id" aria-expanded="false" class="ecl-button ecl-button--ghost ecl-site-header__search-toggle" data-ecl-search-toggle>
-                <ecl-icon icon="search" size="s" style-class="ecl-icon ecl-icon--s ecl-site-header__icon sc-ecl-site-header-ec" theme="ec"></ecl-icon>
+                <ecl-icon icon="search" size="s" style-class="ecl-icon ecl-icon--s ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
                 search
               </a>
               <ecl-search-form button-aria-label="search" button-label="search" input-id="ecl-site-header-search-form" style-class="ecl-site-header__search sc-ecl-site-header-ec">
@@ -237,7 +237,7 @@ exports[`ecl-site-header renders 1`] = `
                   </ecl-form-group>
                   <ecl-button aria-label="search" style-class="ecl-search-form__button sc-ecl-search-form-ec" theme="ec" type="search" variant="ghost">
                     search
-                    <ecl-icon icon="search" size="xs" slot="icon-before" style-class="sc-ecl-search-form-ec" theme="ec"></ecl-icon>
+                    <ecl-icon icon="search" size="xs" slot="icon-before" style-class="sc-ecl-search-form-ec"></ecl-icon>
                   </ecl-button>
                 </form>
               </ecl-search-form>

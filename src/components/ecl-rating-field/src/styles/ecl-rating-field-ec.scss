@@ -13,7 +13,8 @@
   margin-top: 0.75rem;
 }
 
-.ecl-rating-field__icon-filled {
+.ecl-rating-field__icon-filled[class*='wt-icon-'] {
+  display: none;
   fill: #ffd617 !important;
 }
 

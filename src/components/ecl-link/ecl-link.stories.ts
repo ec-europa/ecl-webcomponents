@@ -1,5 +1,5 @@
 import { randomizedLink } from "../../utils/randomizedLink"; 
-import iconsAllEc from '@ecl/resources-icons/dist/lists/all.json';
+import iconsAllEc from '@ecl/resources-icons/list.json';
 
 const getArgs = () => {
   return {
@@ -10,7 +10,8 @@ const getArgs = () => {
     label: 'An ECL link',
     icon: '',
     iconPosition: 'after',
-    iconTransform: '',
+    iconRotate: '',
+    iconFlip: '',
     indicator: false,
     indicatorValue: 2,
   };
@@ -55,16 +56,24 @@ const getArgTypes = () => {
       description: 'Before or after the link label',
       if: { arg: 'icon', truthy: true },
     },
-    iconTransform: {
-      name: 'icon transform',
+    iconRotate: {
+      name: 'icon rotate',
       type: { name: 'select' },
-      description: 'Link icon transform',
+      description: 'Link icon rotate',
       options: [
-        'rotate-90',
-        'rotate-180',
-        'rotate-270',
-        'flip-horizontal',
-        'flip-vertical',
+        '90',
+        '180',
+        '270',
+      ],
+      if: { arg: 'icon', truthy: true },
+    },
+    iconFlip: {
+      name: 'icon flip',
+      type: { name: 'select' },
+      description: 'Link icon flip',
+      options: [
+        'horizontal',
+        'vertical',
       ],
       if: { arg: 'icon', truthy: true },
     },
@@ -107,7 +116,8 @@ const Template = (args) => {
       `<ecl-icon 
         slot="icon-before"
         icon="${args.icon}"
-        transform="${args.iconTransform}"
+        rotate="${args.iconRotate}"
+        flip="${args.iconFlip}"
       >
       </ecl-icon>` : '' }
         ${args.label}
@@ -115,7 +125,8 @@ const Template = (args) => {
       `<ecl-icon 
         slot="icon-after"
         icon="${args.icon}"
-        transform="${args.iconTransform}"
+        rotate="${args.iconRotate}"
+        flip="${args.iconFlip}"
       >
       </ecl-icon>` : '' }
     </ecl-link>`;

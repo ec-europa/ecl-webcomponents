@@ -73,7 +73,7 @@ export class EclFactFigures {
             <ecl-icon
               icon="arrow-left"
               size="xs"
-              transform="flip-horizontal"
+              flip="horizontal"
               slot="icon-after"
             >
             </ecl-icon>

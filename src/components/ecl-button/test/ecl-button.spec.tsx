@@ -9,13 +9,12 @@ describe('ecl-button', () => {
       html: `<ecl-button
               variant="primary"
               data-ecl-button-icon
-              theme="ec"
             >
               <ecl-icon 
                 slot="icon-before"
                 path="/icons.svg"
                 icon="corner-arrow"
-                transform="rotate-90"
+                rotate="90"
                 style-class="ecl-button__icon ecl-button__icon--before"
               >
               </ecl-icon>

@@ -78,7 +78,6 @@ export class EclSearchForm {
             slot="icon-before"
             icon="search"
             size="xs"
-            theme={this.theme}
           >
           </ecl-icon>
         </ecl-button>

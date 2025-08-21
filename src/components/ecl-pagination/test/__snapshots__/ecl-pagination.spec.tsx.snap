@@ -9,10 +9,8 @@ exports[`ecl-pagination renders 1`] = `
         <ecl-link aria-label="Previous page">
           <!---->
           <a aria-label="Previous page" class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone sc-ecl-pagination-ec" href="/example.html">
-            <ecl-icon slot="icon-before" style-class="sc-ecl-pagination-ec">
-              <svg class="ecl-icon ecl-icon--rotate-270 ecl-icon--xs ecl-link__icon ecl-link__icon--before sc-ecl-pagination-ec">
-                <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
-              </svg>
+            <ecl-icon class="ecl-link__icon" slot="icon-before" style-class="sc-ecl-pagination-ec">
+              <span class="ecl-icon sc-ecl-pagination-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270 wt-icon--xs"></span>
             </ecl-icon>
             Previous
           </a>
@@ -64,10 +62,8 @@ exports[`ecl-pagination renders 1`] = `
           <a aria-label="Next page" class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-pagination-ec">
             Next
             <slot-fb hidden="" name="icon-after"></slot-fb>
-            <ecl-icon slot="icon-after" style-class="sc-ecl-pagination-ec">
-              <svg class="ecl-icon ecl-icon--rotate-90 ecl-icon--xs ecl-link__icon ecl-link__icon--after sc-ecl-pagination-ec">
-                <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
-              </svg>
+            <ecl-icon class="ecl-link__icon" slot="icon-after" style-class="sc-ecl-pagination-ec">
+              <span class="ecl-icon sc-ecl-pagination-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-90 wt-icon--xs"></span>
             </ecl-icon>
           </a>
         </ecl-link>

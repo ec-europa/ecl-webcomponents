@@ -53,9 +53,7 @@ exports[`ecl-media-container renders correctly with an html5 video 1`] = `
             <span class="ecl-button__container sc-ecl-media-container-ec">
               <span class="ecl-button__label" data-ecl-label></span>
               <ecl-icon slot="icon-after" style-class="sc-ecl-media-container-ec">
-                <svg class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-button-ec sc-ecl-media-container-ec">
-                  <use xlink:href="/build/images/ec/icons.svg#play-outline"></use>
-                </svg>
+                <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-media-container-ec wt-icon--m wt-icon--placeholder wt-icon--play-outline"></span>
               </ecl-icon>
             </span>
           </button>
@@ -66,9 +64,7 @@ exports[`ecl-media-container renders correctly with an html5 video 1`] = `
             <span class="ecl-button__container sc-ecl-media-container-ec">
               <span class="ecl-button__label" data-ecl-label></span>
               <ecl-icon slot="icon-after" style-class="sc-ecl-media-container-ec">
-                <svg class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-button-ec sc-ecl-media-container-ec">
-                  <use xlink:href="/build/images/ec/icons.svg#pause-outline"></use>
-                </svg>
+                <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-media-container-ec wt-icon--m wt-icon--pause-outline wt-icon--placeholder"></span>
               </ecl-icon>
             </span>
           </button>

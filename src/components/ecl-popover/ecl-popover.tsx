@@ -76,7 +76,6 @@ export class EclPopover {
         >
         { this.icon ?
           <ecl-icon
-            theme={this.theme}
             icon={this.icon}
             size={this.iconSize}
             style-class="ecl-link__icon--before"

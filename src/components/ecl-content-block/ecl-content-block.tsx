@@ -130,7 +130,6 @@ export class EclContentBlock {
           <li class="ecl-content-block__secondary-meta-item">
           { meta.icon &&
             <ecl-icon
-              theme={this.theme}
               icon={meta.icon}
               size="s"
               style-class={`ecl-content-block__secondary-meta-icon sc-ecl-content-block-${this.theme}`}

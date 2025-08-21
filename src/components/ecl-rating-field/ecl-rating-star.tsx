@@ -68,14 +68,12 @@ export class EclRatingStar {
         { this.label ?
           <span class="ecl-u-sr-only">{ this.label }</span> : '' }
           <ecl-icon
-            theme={this.theme}
             icon={this.iconFilled}
             styleClass={`ecl-rating-field__icon-filled ecl-rating-field-${this.theme}`}
             size="m"
           >
           </ecl-icon>
           <ecl-icon
-            theme={this.theme}
             icon={this.icon}
             styleClass={`ecl-rating-field__icon-outline ecl-rating-field-${this.theme}`}
             size="m"

@@ -76,7 +76,6 @@ const Template = (args) =>
   variant="${args.variant }"
   theme="${args.theme}"
   item-title="${args.itemTitle}"
-  color-mode="${args.color_mode}"
   position="${args.position}"
   image="${args.media ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg' : '' }"
   link-path="${args.link ? randomizedLink('/example.html') : '' }"

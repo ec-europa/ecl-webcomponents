@@ -7,7 +7,6 @@
   "main": "ecl-accordion.tsx",
   "private": true,
   "scripts": {
-    "build:copy": "cross-env ecl-builder copy",
     "build:styles": "cross-env ecl-builder styles",
     "build:scripts": "cross-env ecl-builder scripts",
     "build": "run-p clean build:*",
@@ -16,7 +15,6 @@
   },
   "devDependencies": {
     "@ecl/builder": "5.0.0-alpha.15",
-    "@ecl/resources-icons": "4.11.0",
     "@ecl/theme-ec": "5.0.0-alpha.15",
     "@ecl/theme-eu": "5.0.0-alpha.15",
     "@ecl/accordion": "5.0.0-alpha.15",

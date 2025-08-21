@@ -7,15 +7,16 @@
 
 | Property     | Attribute     | Description | Type     | Default     |
 | ------------ | ------------- | ----------- | -------- | ----------- |
-| `color`      | `color`       |             | `string` | `''`        |
+| `color`      | `color`       |             | `string` | `undefined` |
+| `family`     | `family`      |             | `string` | `''`        |
+| `flip`       | `flip`        |             | `string` | `undefined` |
 | `icon`       | `icon`        |             | `string` | `''`        |
-| `path`       | `path`        |             | `string` | `undefined` |
+| `rotate`     | `rotate`      |             | `string` | `undefined` |
 | `size`       | `size`        |             | `string` | `'xs'`      |
-| `sprite`     | `sprite`      |             | `string` | `''`        |
+| `sprite`     | `sprite`      |             | `string` | `undefined` |
 | `styleClass` | `style-class` |             | `string` | `''`        |
 | `theme`      | `theme`       |             | `string` | `undefined` |
 | `titleTag`   | `title-tag`   |             | `string` | `''`        |
-| `transform`  | `transform`   |             | `string` | `''`        |
 
 
 ## Dependencies

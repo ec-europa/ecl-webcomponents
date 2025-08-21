@@ -107,7 +107,7 @@ export class EclNewsTicker {
                 slot="icon-after"
                 icon="corner-arrow"
                 size="l"
-                transform="rotate-270"
+                rotate="270"
                 theme={this.theme}
               >
               </ecl-icon>
@@ -162,7 +162,7 @@ export class EclNewsTicker {
                 slot="icon-after"
                 icon="corner-arrow"
                 size="l"
-                transform="rotate-90"
+                rotate="90"
                 theme={this.theme}
               >
               </ecl-icon>
