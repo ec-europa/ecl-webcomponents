@@ -9,9 +9,7 @@ exports[`ecl-news-ticker renders 1`] = `
         <ul class="ecl-news-ticker__slides">
           <li class="ecl-news-ticker__slide sc-ecl-news-ticker-ec">
             <ecl-icon>
-              <svg class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec">
-                <use xlink:href="/build/images/ec/icons.svg#global"></use>
-              </svg>
+              <span class="ecl-icon ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--global wt-icon--l wt-icon--placeholder"></span>
             </ecl-icon>
             <ecl-link>
               <!---->
@@ -22,9 +20,7 @@ exports[`ecl-news-ticker renders 1`] = `
           </li>
           <li class="ecl-news-ticker__slide sc-ecl-news-ticker-ec">
             <ecl-icon>
-              <svg class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec">
-                <use xlink:href="/build/images/ec/icons.svg#information"></use>
-              </svg>
+              <span class="ecl-icon ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--information wt-icon--l wt-icon--placeholder"></span>
             </ecl-icon>
             <ecl-link>
               <!---->
@@ -43,9 +39,7 @@ exports[`ecl-news-ticker renders 1`] = `
           </li>
           <li class="ecl-news-ticker__slide sc-ecl-news-ticker-ec">
             <ecl-icon>
-              <svg class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec">
-                <use xlink:href="/build/images/ec/icons.svg#livestreaming"></use>
-              </svg>
+              <span class="ecl-icon ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--l wt-icon--livestreaming wt-icon--placeholder"></span>
             </ecl-icon>
             <ecl-link>
               <!---->
@@ -56,9 +50,7 @@ exports[`ecl-news-ticker renders 1`] = `
           </li>
           <li class="ecl-news-ticker__slide sc-ecl-news-ticker-ec">
             <ecl-icon>
-              <svg class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec">
-                <use xlink:href="/build/images/ec/icons.svg#global"></use>
-              </svg>
+              <span class="ecl-icon ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--global wt-icon--l wt-icon--placeholder"></span>
             </ecl-icon>
             <ecl-link>
               <!---->
@@ -86,9 +78,7 @@ exports[`ecl-news-ticker renders 1`] = `
               Prev item
             </span>
             <ecl-icon slot="icon-after">
-              <svg class="ecl-button__icon ecl-icon ecl-icon--l ecl-icon--rotate-270 sc-ecl-button-ec sc-ecl-news-ticker-ec">
-                <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
-              </svg>
+              <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--corner-arrow wt-icon--l wt-icon--placeholder wt-icon--rotate-270"></span>
             </ecl-icon>
           </span>
         </button>
@@ -96,9 +86,7 @@ exports[`ecl-news-ticker renders 1`] = `
           <span class="ecl-button__container">
             <span class="ecl-button__label" data-ecl-label></span>
             <ecl-icon slot="icon-after">
-              <svg class="ecl-button__icon ecl-icon ecl-icon--l ecl-news-ticker__icon-active sc-ecl-button-ec sc-ecl-news-ticker-ec">
-                <use xlink:href="/build/images/ec/icons.svg#play-outline"></use>
-              </svg>
+              <span class="ecl-button__icon ecl-icon ecl-news-ticker__icon-active sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--l wt-icon--placeholder wt-icon--play-outline"></span>
             </ecl-icon>
           </span>
         </button>
@@ -108,9 +96,7 @@ exports[`ecl-news-ticker renders 1`] = `
               Pause news ticker
             </span>
             <ecl-icon slot="icon-after">
-              <svg class="ecl-button__icon ecl-icon ecl-icon--l ecl-news-ticker__icon-active sc-ecl-button-ec sc-ecl-news-ticker-ec">
-                <use xlink:href="/build/images/ec/icons.svg#pause-outline"></use>
-              </svg>
+              <span class="ecl-button__icon ecl-icon ecl-news-ticker__icon-active sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--l wt-icon--pause-outline wt-icon--placeholder"></span>
             </ecl-icon>
           </span>
         </button>
@@ -120,9 +106,7 @@ exports[`ecl-news-ticker renders 1`] = `
               Next item
             </span>
             <ecl-icon slot="icon-after">
-              <svg class="ecl-button__icon ecl-icon ecl-icon--l ecl-icon--rotate-90 sc-ecl-button-ec sc-ecl-news-ticker-ec">
-                <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
-              </svg>
+              <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--corner-arrow wt-icon--l wt-icon--placeholder wt-icon--rotate-90"></span>
             </ecl-icon>
           </span>
         </button>

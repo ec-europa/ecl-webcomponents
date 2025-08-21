@@ -121,7 +121,6 @@ export class EclSiteHeader {
                       style-class={`ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
                       icon="log-in"
                       size="s"
-                      theme={this.theme}
                     ></ecl-icon>
                     {this.loginText}
                   </a>
@@ -140,7 +139,6 @@ export class EclSiteHeader {
                         icon="global"
                         size="s"
                         style-class={`ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
-                        theme={this.theme}
                       ></ecl-icon>
                       {this.language}
                     </span>
@@ -176,7 +174,6 @@ export class EclSiteHeader {
                             style-class={`ecl-button__icon ecl-button__icon--after sc-ecl-site-header-${this.theme}`}
                             data-ecl-icon
                             icon="close-filled"
-                            theme={this.theme}
                           ></ecl-icon>
                         </span>
                       </button>
@@ -225,7 +222,6 @@ export class EclSiteHeader {
                       icon="search"
                       style-class={`ecl-icon ecl-icon--s ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
                       size="s"
-                      theme={this.theme}
                     >
                      </ecl-icon>
                     {this.searchText}

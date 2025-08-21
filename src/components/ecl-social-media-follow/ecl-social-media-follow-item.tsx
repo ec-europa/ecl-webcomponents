@@ -9,6 +9,8 @@ export class EclSocialMediaFollowItem {
   @Prop() styleClass: string;
   @Prop() sharePath: string;
   @Prop() icon: string;
+  @Prop() family: string = 'networks';
+  @Prop() color: string = 'monochrome';
 
   getClass(): string {
     return [
@@ -28,7 +30,8 @@ export class EclSocialMediaFollowItem {
         >
           <ecl-icon
             slot="icon-before"
-            sprite="icons-social-media"
+            family={this.family}
+            color={this.color}
             icon={this.icon}
             size="m"
           ></ecl-icon>

@@ -18,7 +18,7 @@
     "@ecl/icon": "5.0.0-alpha.15",
     "@ecl/link": "5.0.0-alpha.15",
     "@ecl/grid": "5.0.0-alpha.15",
-    "@ecl/resources-icons": "4.11.0",
+    "@ecl/resources-icons": "5.0.0-alpha.15",
     "@ecl/utility-screen-reader": "5.0.0-alpha.15",
     "@ecl/mixins-typography": "5.0.0-alpha.15",
     "@ecl/theme-ec": "5.0.0-alpha.15",

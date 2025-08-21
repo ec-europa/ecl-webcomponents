@@ -37,13 +37,13 @@ exports[`ecl-card renders 1`] = `
           </div>
           <ul class="ecl-content-block__secondary-meta-container">
             <li class="ecl-content-block__secondary-meta-item">
-              <ecl-icon icon="calendar" size="s" style-class="ecl-content-block__secondary-meta-icon sc-ecl-content-block-ec" theme="ec"></ecl-icon>
+              <ecl-icon icon="calendar" size="s" style-class="ecl-content-block__secondary-meta-icon sc-ecl-content-block-ec"></ecl-icon>
               <span class="ecl-content-block__secondary-meta-label">
                 2018/10/22
               </span>
             </li>
             <li class="ecl-content-block__secondary-meta-item">
-              <ecl-icon icon="location" size="s" style-class="ecl-content-block__secondary-meta-icon sc-ecl-content-block-ec" theme="ec"></ecl-icon>
+              <ecl-icon icon="location" size="s" style-class="ecl-content-block__secondary-meta-icon sc-ecl-content-block-ec"></ecl-icon>
               <span class="ecl-content-block__secondary-meta-label">
                 Luxembourg
               </span>

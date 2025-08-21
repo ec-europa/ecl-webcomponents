@@ -3,6 +3,7 @@
 _imports
 build
 dist
+static/images
 node_modules
 package.json
 yarn.lock

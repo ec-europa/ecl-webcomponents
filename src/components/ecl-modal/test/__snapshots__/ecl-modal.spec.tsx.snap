@@ -10,9 +10,7 @@ exports[`ecl-modal renders 1`] = `
           <div class="ecl-modal__header-content">
             <div slot="header">
               <ecl-icon icon="information" size="m" style-class="ecl-modal__icon sc-ecl-modal-ec">
-                <svg class="ecl-icon ecl-icon--m ecl-modal__icon sc-ecl-modal-ec">
-                  <use xlink:href="/build/images/ec/icons.svg#information"></use>
-                </svg>
+                <span class="ecl-icon ecl-modal__icon sc-ecl-modal-ec wt-icon--information wt-icon--m wt-icon--placeholder"></span>
               </ecl-icon>
               <ecl-text tag="span">
                 Lorem ipsum dolor sit amet
@@ -26,9 +24,7 @@ exports[`ecl-modal renders 1`] = `
                 <span class="ecl-button__label" data-ecl-label>
                   Close
                   <ecl-icon>
-                    <svg class="ecl-button__icon ecl-icon ecl-icon--s sc-ecl-button-ec">
-                      <use xlink:href="/build/images/ec/icons.svg#close-filled"></use>
-                    </svg>
+                    <span class="ecl-button__icon ecl-icon sc-ecl-button-ec wt-icon--close-filled wt-icon--placeholder wt-icon--s"></span>
                   </ecl-icon>
                 </span>
               </span>
@@ -50,9 +46,7 @@ exports[`ecl-modal renders 1`] = `
                   <label class="ecl-checkbox__label" htmlfor="checkbox-default-1">
                     <span class="ecl-checkbox__box">
                       <ecl-icon style-class="ecl-checkbox__icon sc-ecl-input-ec">
-                        <svg class="ecl-checkbox__icon ecl-icon ecl-icon--m sc-ecl-input-ec">
-                          <use xlink:href="/build/images/ec/icons.svg#check"></use>
-                        </svg>
+                        <span class="ecl-checkbox__icon ecl-icon sc-ecl-input-ec wt-icon--check wt-icon--m wt-icon--placeholder"></span>
                       </ecl-icon>
                     </span>
                     <span class="ecl-checkbox__text">

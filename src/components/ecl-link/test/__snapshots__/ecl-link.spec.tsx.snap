@@ -24,13 +24,8 @@ exports[`ecl-link renders correctly when external 1`] = `
   <a class="ecl-link ecl-link--standalone" href="/example.html">
     Link label
     <slot-fb name="icon-after">
-      <ecl-icon style-class="ecl-link__icon ecl-link__icon--after sc-ecl-link-ec" title-tag="will move you outside of this website">
-        <svg class="ecl-icon ecl-icon--2xs ecl-link__icon ecl-link__icon--after ecl-link__icon--before sc-ecl-link-ec">
-          <title>
-            will move you outside of this website
-          </title>
-          <use xlink:href="/build/images/ec/icons.svg#external"></use>
-        </svg>
+      <ecl-icon class="ecl-link__icon" style-class="ecl-link__icon sc-ecl-link-ec" title-tag="will move you outside of this website">
+        <span class="ecl-icon ecl-link__icon sc-ecl-link-ec wt-icon--2xs wt-icon--external wt-icon--placeholder"></span>
       </ecl-icon>
     </slot-fb>
   </a>
@@ -43,10 +38,8 @@ exports[`ecl-link renders correctly with an icon after 1`] = `
   <a class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone" href="/example.html">
     Link label
     <slot-fb hidden="" name="icon-after"></slot-fb>
-    <ecl-icon icon="check" slot="icon-after">
-      <svg class="ecl-icon ecl-icon--xs ecl-link__icon ecl-link__icon--after">
-        <use xlink:href="/build/images/ec/icons.svg#check"></use>
-      </svg>
+    <ecl-icon class="ecl-link__icon" icon="check" slot="icon-after">
+      <span class="ecl-icon wt-icon--check wt-icon--placeholder wt-icon--xs"></span>
     </ecl-icon>
   </a>
 </ecl-link>
@@ -56,10 +49,8 @@ exports[`ecl-link renders correctly with an icon before 1`] = `
 <ecl-link path="/example.html" theme="ec" variant="standalone">
   <!---->
   <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone" href="/example.html">
-    <ecl-icon icon="arrow-left" slot="icon-before">
-      <svg class="ecl-icon ecl-icon--xs ecl-link__icon ecl-link__icon--before">
-        <use xlink:href="/build/images/ec/icons.svg#arrow-left"></use>
-      </svg>
+    <ecl-icon class="ecl-link__icon" icon="arrow-left" slot="icon-before">
+      <span class="ecl-icon wt-icon--arrow-left wt-icon--placeholder wt-icon--xs"></span>
     </ecl-icon>
     Link label
   </a>
@@ -72,10 +63,8 @@ exports[`ecl-link renders correctly with an indicator 1`] = `
   <a class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone" href="/example.html">
     Link label
     <span class="ecl-link__icon-container">
-      <ecl-icon icon="check" slot="icon-after">
-        <svg class="ecl-icon ecl-icon--xs ecl-link__icon ecl-link__icon--after">
-          <use xlink:href="/build/images/ec/icons.svg#check"></use>
-        </svg>
+      <ecl-icon class="ecl-link__icon" icon="check" slot="icon-after">
+        <span class="ecl-icon wt-icon--check wt-icon--placeholder wt-icon--xs"></span>
       </ecl-icon>
       <ecl-indicator ecl-script="">
         <span class="ecl-indicator" data-ecl-indicator>

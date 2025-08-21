@@ -76,7 +76,7 @@ export class EclBreadcrumbItem {
             <ecl-icon
               style-class={`ecl-breadcrumb__icon sc-ecl-breadcrumb-${this.theme}`}
               icon="corner-arrow"
-              transform="rotate-90"
+              rotate="90"
               size="fluid"
             ></ecl-icon>
           ]
@@ -97,7 +97,7 @@ export class EclBreadcrumbItem {
             <ecl-icon
               style-class={`ecl-breadcrumb__icon sc-ecl-breadcrumb-${this.theme}`}
               size="fluid"
-              transform="rotate-90"
+              rotate="90"
               icon="corner-arrow"
             ></ecl-icon>
           ] : ''

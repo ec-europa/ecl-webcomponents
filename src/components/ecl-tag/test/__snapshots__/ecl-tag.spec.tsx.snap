@@ -18,9 +18,7 @@ exports[`ecl-tag renders correctly as a tag set 1`] = `
           A removable ECL tag
           <span class="ecl-tag__icon">
             <ecl-icon style-class="ecl-tag__icon-close sc-ecl-tag-ec">
-              <svg class="ecl-icon ecl-icon--xs ecl-tag__icon-close sc-ecl-tag-ec">
-                <use xlink:href="/build/images/ec/icons.svg#close-outline"></use>
-              </svg>
+              <span class="ecl-icon ecl-tag__icon-close sc-ecl-tag-ec wt-icon--close-outline wt-icon--placeholder wt-icon--xs"></span>
             </ecl-icon>
           </span>
         </button>
@@ -46,9 +44,7 @@ exports[`ecl-tag renders correctly in the removable variant 1`] = `
     A removable ECL tag
     <span class="ecl-tag__icon">
       <ecl-icon style-class="ecl-tag__icon-close sc-ecl-tag-ec">
-        <svg class="ecl-icon ecl-icon--xs ecl-tag__icon-close sc-ecl-tag-ec">
-          <use xlink:href="/build/images/ec/icons.svg#close-outline"></use>
-        </svg>
+        <span class="ecl-icon ecl-tag__icon-close sc-ecl-tag-ec wt-icon--close-outline wt-icon--placeholder wt-icon--xs"></span>
       </ecl-icon>
     </span>
   </button>
@@ -62,9 +58,7 @@ exports[`ecl-tag renders correctly with a custom color mode 1`] = `
     A removable ECL tag
     <span class="ecl-tag__icon">
       <ecl-icon style-class="ecl-tag__icon-close sc-ecl-tag-ec">
-        <svg class="ecl-icon ecl-icon--xs ecl-tag__icon-close sc-ecl-tag-ec">
-          <use xlink:href="/build/images/ec/icons.svg#close-outline"></use>
-        </svg>
+        <span class="ecl-icon ecl-tag__icon-close sc-ecl-tag-ec wt-icon--close-outline wt-icon--placeholder wt-icon--xs"></span>
       </ecl-icon>
     </span>
   </button>
@@ -77,9 +71,7 @@ exports[`ecl-tag renders correctly with external 1`] = `
   <a class="ecl-tag ecl-tag--link" href="/example.html">
     An external link ECL tag
     <ecl-icon style-class="ecl-tag__icon ecl-tag__icon--external sc-ecl-tag-ec">
-      <svg class="ecl-icon ecl-icon--2xs ecl-tag__icon ecl-tag__icon--external sc-ecl-tag-ec">
-        <use xlink:href="/build/images/ec/icons.svg#external"></use>
-      </svg>
+      <span class="ecl-icon ecl-tag__icon ecl-tag__icon--external sc-ecl-tag-ec wt-icon--2xs wt-icon--external wt-icon--placeholder"></span>
     </ecl-icon>
   </a>
 </ecl-tag>
@@ -92,9 +84,7 @@ exports[`ecl-tag renders correctly with no-wrap 1`] = `
     A no wrap ECL tag
     <span class="ecl-tag__icon">
       <ecl-icon style-class="ecl-tag__icon-close sc-ecl-tag-ec">
-        <svg class="ecl-icon ecl-icon--xs ecl-tag__icon-close sc-ecl-tag-ec">
-          <use xlink:href="/build/images/ec/icons.svg#close-outline"></use>
-        </svg>
+        <span class="ecl-icon ecl-tag__icon-close sc-ecl-tag-ec wt-icon--close-outline wt-icon--placeholder wt-icon--xs"></span>
       </ecl-icon>
     </span>
   </button>

@@ -132,7 +132,6 @@ export class EclGallery {
             >
               {this.closeLabel}
               <ecl-icon
-                theme={this.theme}
                 style-class={`sc-ecl-gallery-${this.theme}`}
                 icon="close-filled"
                 size="s"
@@ -162,7 +161,6 @@ export class EclGallery {
                 >
                   {this.fullScreenLabel}
                   <ecl-icon
-                    theme={this.theme}
                     icon="fullscreen"
                     size="fluid"
                     slot="icon-after"
@@ -179,7 +177,6 @@ export class EclGallery {
                 >
                   {this.shareLabel}
                   <ecl-icon
-                    theme={this.theme}
                     icon="share"
                     size="fluid"
                     slot="icon-after"
@@ -207,11 +204,10 @@ export class EclGallery {
                   hide-label
                 >
                   <ecl-icon
-                    theme={this.theme}
                     style-class={`sc-ecl-gallery-${this.theme}`}
                     slot="icon-before"
                     size="s"
-                    transform="rotate-270"
+                    rotate="270"
                     icon="corner-arrow"
                   ></ecl-icon>
                   {this.prevLabel}
@@ -231,11 +227,10 @@ export class EclGallery {
                 >
                   {this.nextLabel}
                   <ecl-icon
-                    theme={this.theme}
                     style-class={`sc-ecl-gallery-${this.theme}`}
                     slot="icon-after"
                     size="s"
-                    transform="rotate-90"
+                    rotate="90"
                     icon="corner-arrow"
                   ></ecl-icon>
                 </ecl-button>

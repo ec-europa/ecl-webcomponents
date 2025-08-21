@@ -173,7 +173,7 @@ export class EclSelect {
             style-class={`sc-ecl-select-${this.theme}`}
             icon="corner-arrow"
             size="xs"
-            transform="rotate-180"
+            rotate="180"
             ></ecl-icon>
           </ecl-button>
         </div>

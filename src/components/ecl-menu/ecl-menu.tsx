@@ -92,7 +92,6 @@ export class EclMenu {
           >
             <ecl-icon
               icon="hamburger"
-              theme={this.theme}
               size="s"
               styleClass={`sc-ecl-menu-${this.theme}`}
             ></ecl-icon>
@@ -112,7 +111,6 @@ export class EclMenu {
                 <span class="ecl-menu__close-container ecl-button__container">
                   <ecl-icon
                     icon="close-filled"
-                    theme={this.theme}
                     size="s"
                     styleClass={`ecl-button__icon ecl-button__icon--before sc-ecl-menu-${this.theme}`}
                   ></ecl-icon>
@@ -132,7 +130,7 @@ export class EclMenu {
                 <span class="ecl-button__container">
                   <ecl-icon
                     icon="corner-arrow"
-                    transform="rotate-270"
+                    rotate="270"
                     size="xs"
                     styleClass={`ecl-button__icon ecl-button__icon--before sc-ecl-menu-${this.theme}`}
                   ></ecl-icon>
@@ -155,10 +153,9 @@ export class EclMenu {
               tabindex="-1"
             >
               <ecl-icon
-                theme={this.theme}
                 slot="icon-before"
                 icon="corner-arrow"
-                transform="rotate-270"
+                rotate="270"
                 size="s"
               ></ecl-icon>
               {this.previousLabel}
@@ -173,10 +170,9 @@ export class EclMenu {
               tabindex="-1"
             >
               <ecl-icon
-                theme={this.theme}
                 slot="icon-before"
                 icon="corner-arrow"
-                transform="rotate-270"
+                rotate="270"
                 size="s"
               ></ecl-icon>
               {this.nextLabel}
