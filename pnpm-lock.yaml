@@ -430,9 +430,6 @@ importers:
       '@ecl/mixins-typography':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
-      '@ecl/resources-icons':
-        specifier: 4.11.0
-        version: 4.11.0
       '@ecl/theme-ec':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1387,6 +1384,13 @@ importers:
         version: 7.0.3
 
   src/components/ecl-notification:
+    dependencies:
+      '@ecl/web-components-button':
+        specifier: 0.15.1
+        version: link:../ecl-button
+      '@ecl/web-components-icon':
+        specifier: 0.15.1
+        version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
@@ -1394,13 +1398,7 @@ importers:
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
-      '@ecl/icon':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
       '@ecl/notification':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
-      '@ecl/resources-icons':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
       '@ecl/theme-ec':
@@ -1749,9 +1747,6 @@ importers:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.33.0(jiti@1.21.7))
-      '@ecl/resources-icons':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
       '@ecl/tag':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -3101,9 +3096,6 @@ packages:
 
   '@ecl/resources-eu-logo@3.13.0':
     resolution: {integrity: sha512-XjpQqIK8GclrKn48piw2FYFjf1uxLjAWXCx9RZwFLa2X2qGSl7tYDSuMdwYT6gJ2JGKa+DMr15Qwf1kJ8IRTrA==}
-
-  '@ecl/resources-icons@4.11.0':
-    resolution: {integrity: sha512-OUpgXS2sJWn4vGNavCtZXZ3/MUvvVlcwJtBjqVf9SCv9Z5BNT1k1zhrK/fwsrSTj0n/ZkzgwEFyeKqLOqf08jg==}
 
   '@ecl/resources-icons@5.0.0-alpha.15':
     resolution: {integrity: sha512-4UCQbkOLjteydADl5rsQlM5immoRPXmIQxz7xVOr2unuhBmjKYBQl1Wuw+iKk66+MfF+zQnFJa1KmTUK2k5/jA==}
@@ -14674,8 +14666,6 @@ snapshots:
       ncp: 2.0.0
       npm-run-all: 4.1.5
       rimraf: 5.0.5
-
-  '@ecl/resources-icons@4.11.0': {}
 
   '@ecl/resources-icons@5.0.0-alpha.15': {}
 

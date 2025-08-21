@@ -57,8 +57,22 @@ Icon.argTypes = {
     description: "icon size",
   },
   color: {
-    type: { name: 'select' },
+    type: 'select',
     options: ['default', 'primary', 'inverted', 'monochrome'],
+    control: {
+      labels: {
+        '' : 'default',
+        primary: 'primary',
+        inverted: 'inverted',
+        monochrome: 'monochrome',
+      },
+    },
+    mapping: {
+      default: '',
+      primary: 'primary',
+      inverted: 'inverted',
+      monochrome: 'monochrome',
+    },
     description: "icon color",
   },
   flip: {
