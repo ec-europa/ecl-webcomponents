@@ -12,12 +12,12 @@ const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()
 module.exports = {
   copy: [
     {
-      from: [path.resolve(__dirname, '../../../static/images/icons.svg')],
+      from: [path.resolve(__dirname, '../../../static/images/ec/icons.svg')],
       to: path.resolve(outputFolder, 'images/ec'),
       options: { up: true },
     },
     {
-      from: [path.resolve(__dirname, '../../../static/images/icons.svg')],
+      from: [path.resolve(__dirname, '../../../static/images/eu/icons.svg')],
       to: path.resolve(outputFolder, 'images/eu'),
       options: { up: true },
     },
