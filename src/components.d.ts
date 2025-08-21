@@ -490,6 +490,7 @@ export namespace Components {
         "value": string;
     }
     interface EclFeaturedItem {
+        "colorMode": string;
         /**
           * @default 'ecl-featured-item__container'
          */
@@ -500,15 +501,14 @@ export namespace Components {
         "eclScript": boolean;
         "image": string;
         "itemTitle": string;
+        "linkLabel": string;
+        "linkPath": string;
         "mediaCaption": string;
         /**
           * @default 'left'
          */
         "position": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'default'
@@ -2896,6 +2896,7 @@ declare namespace LocalJSX {
         "value"?: string;
     }
     interface EclFeaturedItem {
+        "colorMode"?: string;
         /**
           * @default 'ecl-featured-item__container'
          */
@@ -2906,15 +2907,14 @@ declare namespace LocalJSX {
         "eclScript"?: boolean;
         "image"?: string;
         "itemTitle"?: string;
+        "linkLabel"?: string;
+        "linkPath"?: string;
         "mediaCaption"?: string;
         /**
           * @default 'left'
          */
         "position"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'default'
