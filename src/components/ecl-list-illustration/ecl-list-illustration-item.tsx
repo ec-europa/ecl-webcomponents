@@ -7,11 +7,12 @@ import { Component, h, Prop} from '@stencil/core';
 })
 
 export class EclListIllustrationItem {
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() itemTitle: string;
   @Prop() itemLink: string;
   @Prop() image: string;
   @Prop() icon: string;
+  @Prop() iconSize: string = '2xl';
   @Prop() imageAlt: string;
   @Prop() squareImage: boolean = false;
   @Prop() styleClass: string;
@@ -54,8 +55,8 @@ export class EclListIllustrationItem {
     return attrs;
   }
 
-  getIconSize() {
-    return this.mediaSize === 'l' ? '2xl' : 'l';
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {
@@ -77,7 +78,7 @@ export class EclListIllustrationItem {
           { this.icon ?
             <ecl-icon
               icon={this.icon}
-              size={this.getIconSize()}
+              size={this.iconSize}
               style-class={`ecl-list-illustration__icon sc-ecl-list-illustration-${this.theme}`}
             ></ecl-icon> : '' 
           }

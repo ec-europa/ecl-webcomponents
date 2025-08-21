@@ -960,14 +960,16 @@ export namespace Components {
           * @default false
          */
         "centered": boolean;
+        "colorMode": string;
         /**
           * @default 1
          */
         "column": number;
-        "styleClass": string;
         /**
-          * @default 'ec'
+          * @default 'l'
          */
+        "fontSize": string;
+        "styleClass": string;
         "theme": string;
         /**
           * @default 'image'
@@ -980,6 +982,10 @@ export namespace Components {
     }
     interface EclListIllustrationItem {
         "icon": string;
+        /**
+          * @default '2xl'
+         */
+        "iconSize": string;
         "image": string;
         "imageAlt": string;
         "itemLink": string;
@@ -994,9 +1000,6 @@ export namespace Components {
          */
         "squareImage": boolean;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclMediaContainer {
@@ -3369,14 +3372,16 @@ declare namespace LocalJSX {
           * @default false
          */
         "centered"?: boolean;
+        "colorMode"?: string;
         /**
           * @default 1
          */
         "column"?: number;
-        "styleClass"?: string;
         /**
-          * @default 'ec'
+          * @default 'l'
          */
+        "fontSize"?: string;
+        "styleClass"?: string;
         "theme"?: string;
         /**
           * @default 'image'
@@ -3389,6 +3394,10 @@ declare namespace LocalJSX {
     }
     interface EclListIllustrationItem {
         "icon"?: string;
+        /**
+          * @default '2xl'
+         */
+        "iconSize"?: string;
         "image"?: string;
         "imageAlt"?: string;
         "itemLink"?: string;
@@ -3403,9 +3412,6 @@ declare namespace LocalJSX {
          */
         "squareImage"?: boolean;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclMediaContainer {

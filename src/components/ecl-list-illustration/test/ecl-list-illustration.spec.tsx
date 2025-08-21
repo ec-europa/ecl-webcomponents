@@ -8,12 +8,12 @@ describe('ecl-list-illustration', () => {
     const page = await newSpecPage({
       components: [EclListIllustration, EclListIllustrationItem, EclIcon],
       html: `<ecl-list-illustration
-        theme="ec"
         zebra=true
         column="1"
+        font-size="m"
+        color-mode="blue"
       >
         <ecl-list-illustration-item
-          theme="ec"
           image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           item-title="List with illustration item 1"
         >
@@ -22,7 +22,6 @@ describe('ecl-list-illustration', () => {
           in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
         </ecl-list-illustration-item>
         <ecl-list-illustration-item
-          theme="ec"
           image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           item-title="List with illustration item 2"
         >
@@ -31,7 +30,6 @@ describe('ecl-list-illustration', () => {
           in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
         </ecl-list-illustration-item>
         <ecl-list-illustration-item
-          theme="ec"
           image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           item-title="List with illustration item 3"
         >
@@ -40,7 +38,6 @@ describe('ecl-list-illustration', () => {
           in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
         </ecl-list-illustration-item>
         <ecl-list-illustration-item
-          theme="ec"
           image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           item-title="List with illustration item 4"
         >
@@ -49,7 +46,6 @@ describe('ecl-list-illustration', () => {
           in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
         </ecl-list-illustration-item>
         <ecl-list-illustration-item
-          theme="ec"
           image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
           item-title="List with illustration item 5"
         >
@@ -62,4 +58,58 @@ describe('ecl-list-illustration', () => {
 
     expect(page.root).toMatchSnapshot();
   });
+
+  it('renders correctly with an icon', async () => {
+    const page = await newSpecPage({
+      components: [EclListIllustration, EclListIllustrationItem, EclIcon],
+      html: `<ecl-list-illustration
+        column="1"
+        font-size="m"
+        color-mode="blue"
+      >
+        <ecl-list-illustration-item
+          icon="regulation"
+          item-title="List with illustration item 1"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
+          Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
+          in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </ecl-list-illustration-item>
+        <ecl-list-illustration-item
+          icon="regulation"
+          item-title="List with illustration item 2"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
+          Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
+          in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </ecl-list-illustration-item>
+        <ecl-list-illustration-item
+          icon="regulation"
+          item-title="List with illustration item 3"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
+          Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
+          in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </ecl-list-illustration-item>
+        <ecl-list-illustration-item
+          icon="regulation"
+          item-title="List with illustration item 4"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
+          Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
+          in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </ecl-list-illustration-item>
+        <ecl-list-illustration-item
+          icon="regulation"
+          item-title="List with illustration item 5"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
+          Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
+          in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </ecl-list-illustration-item>
+      </ecl-list-illustration>`,
+    });
+
+    expect(page.root).toMatchSnapshot();
+  })
 });
