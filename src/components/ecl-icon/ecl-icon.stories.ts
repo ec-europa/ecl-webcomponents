@@ -24,7 +24,7 @@ Icon.args = {
   icon: 'close',
   rotate: '',
   flip: '',
-  sprite: 'none',
+  sprite: '',
   color: 'default',
   size: '2xl',
 };
@@ -39,11 +39,13 @@ Icon.argTypes = {
     type: { name: 'select' },
     options: [
       '',
-      'icons',
+      'build/images/icons.svg',
     ],
-    labels: {
-      '': 'none',
-      'build/images/icons.svg': 'icons',
+    control: {
+      labels: {
+        '': 'none',
+        'build/images/icons.svg': 'icons',
+      },
     },
     mapping: {
       none: '',
