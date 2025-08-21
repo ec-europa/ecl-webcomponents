@@ -80,7 +80,7 @@ export class EclFeaturedItem {
                 style-class={`sc-ecl-featured-item-${this.theme}`}
                 slot="icon-after"
                 icon="arrow-left"
-                transform="flip-horizontal"
+                flip="horizontal"
               />
             </ecl-link>
           }

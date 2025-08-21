@@ -30,10 +30,8 @@ exports[`ecl-featured-item renders 1`] = `
           <a class="ecl-featured-item__link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-featured-item-ec" href="/example.html">
             Read more
             <slot-fb hidden="" name="icon-after"></slot-fb>
-            <ecl-icon slot="icon-after" style-class="sc-ecl-featured-item-ec">
-              <svg class="ecl-icon ecl-icon--flip-horizontal ecl-icon--xs ecl-link__icon ecl-link__icon--after sc-ecl-featured-item-ec">
-                <use xlink:href="/build/images/ec/icons.svg#arrow-left"></use>
-              </svg>
+            <ecl-icon class="ecl-link__icon" slot="icon-after" style-class="sc-ecl-featured-item-ec">
+              <span class="ecl-icon sc-ecl-featured-item-ec wt-icon--arrow-left wt-icon--flip-horizontal wt-icon--placeholder wt-icon--xs"></span>
             </ecl-icon>
           </a>
         </ecl-link>
