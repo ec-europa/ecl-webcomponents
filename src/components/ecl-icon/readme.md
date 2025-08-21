@@ -11,7 +11,6 @@
 | `family`     | `family`      |             | `string` | `''`        |
 | `flip`       | `flip`        |             | `string` | `undefined` |
 | `icon`       | `icon`        |             | `string` | `''`        |
-| `path`       | `path`        |             | `string` | `undefined` |
 | `rotate`     | `rotate`      |             | `string` | `undefined` |
 | `size`       | `size`        |             | `string` | `'xs'`      |
 | `sprite`     | `sprite`      |             | `string` | `undefined` |

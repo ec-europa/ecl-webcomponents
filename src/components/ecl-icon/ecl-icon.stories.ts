@@ -38,17 +38,16 @@ Icon.argTypes = {
   sprite: {
     type: { name: 'select' },
     options: [
-      'none',
+      '',
       'icons',
     ],
     labels: {
       '': 'none',
-      icons: 'default',
+      'build/images/icons.svg': 'icons',
     },
     mapping: {
       none: '',
-      icons: 'icons',
-      social: 'social',
+      icons: 'build/images/icons.svg'
     },
   },
   size: {

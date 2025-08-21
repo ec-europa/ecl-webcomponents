@@ -7,9 +7,9 @@ exports[`ecl-icon renders 1`] = `
 `;
 
 exports[`ecl-icon renders correctly from a sprite 1`] = `
-<ecl-icon color="primary" icon="calendar" size="2xs" sprite="icons">
+<ecl-icon color="primary" icon="calendar" size="2xs" sprite="/build/images/icons.svg">
   <svg class="ecl-icon ecl-icon--2xs ecl-icon--primary">
-    <use xlink:href="/build/images/ec/icons.svg#calendar"></use>
+    <use xlink:href="/build/images/icons.svg#calendar"></use>
   </svg>
 </ecl-icon>
 `;

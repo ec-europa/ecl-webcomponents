@@ -1,5 +1,4 @@
 import { Component, Prop, h } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
 
 @Component({
   tag: 'ecl-icon',
@@ -9,7 +8,6 @@ import getAssetPath from "../../utils/assetPath";
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build'],
 })
 
 export class EclIcon {
@@ -21,17 +19,11 @@ export class EclIcon {
   @Prop() family: string = '';
   @Prop() flip: string;
   @Prop() titleTag: string = '';
-  @Prop({ mutable: true }) path: string;
   @Prop() rotate: string;
   @Prop() sprite: string;
 
   componentWillLoad() {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
-    if (!this.sprite) {
-      this.path = getAssetPath(`./build/images/${this.theme}/icons.svg`);
-    } else {
-      this.path = getAssetPath(`./build/images/${this.theme}/${this.sprite}.svg`);
-    }
   }
 
   getClass(): string {
@@ -42,7 +34,7 @@ export class EclIcon {
 
     const styleClasses = [
       baseClass,
-      `ecl-icon`,
+      ...(this.sprite ? [] : ['ecl-icon']),
       `${pref}-icon--${this.size}`,
       this.styleClass,
     ];
@@ -72,7 +64,7 @@ export class EclIcon {
       {...this.sprite ? (
       <svg class={this.getClass()}>
       { this.titleTag ? <title>{this.titleTag}</title> : '' } 
-        <use xlinkHref={`${this.path}#${this.icon}`}></use>
+        <use xlinkHref={`${this.sprite}#${this.icon}`}></use>
       </svg> ) : ( <span class={this.getClass()}></span> )
       }
     )

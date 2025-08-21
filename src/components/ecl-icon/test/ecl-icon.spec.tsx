@@ -36,7 +36,7 @@ describe('ecl-icon', () => {
               icon="calendar"
               color="primary"
               size="2xs"
-              sprite="icons"
+              sprite="/build/images/icons.svg"
              ></ecl-icon>`,
     });
 

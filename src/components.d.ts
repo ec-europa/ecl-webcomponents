@@ -802,7 +802,6 @@ export namespace Components {
           * @default ''
          */
         "icon": string;
-        "path": string;
         "rotate": string;
         /**
           * @default 'xs'
@@ -3209,7 +3208,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "icon"?: string;
-        "path"?: string;
         "rotate"?: string;
         /**
           * @default 'xs'
