@@ -302,6 +302,11 @@ export namespace Components {
         "theme": string;
     }
     interface EclContentItem {
+        "colorMode": string;
+        /**
+          * @default false
+         */
+        "divider": boolean;
         /**
           * @default 'left'
          */
@@ -314,9 +319,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclDateBlock {
@@ -2708,6 +2710,11 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclContentItem {
+        "colorMode"?: string;
+        /**
+          * @default false
+         */
+        "divider"?: boolean;
         /**
           * @default 'left'
          */
@@ -2720,9 +2727,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclDateBlock {

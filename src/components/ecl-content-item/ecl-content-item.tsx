@@ -13,12 +13,19 @@ import { Component, Prop, h, Element } from '@stencil/core';
 export class EclContentItem {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() imagePosition: string = 'left';
   @Prop() imageSize: string = 'medium';
+  @Prop() divider: boolean = false;
+  @Prop() colorMode: string;
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
 
   componentDidRender() {
     const picture = this.el.getElementsByTagName('picture')[0];
+    const date = this.el.getElementsByTagName('ecl-date-block')[0];
     const themeClass = `sc-ecl-content-item-${this.theme}`;
     if (picture) {
       picture.classList.add(
@@ -35,8 +42,11 @@ export class EclContentItem {
       const img = picture.getElementsByTagName('img')[0];
       if (img) {
         img.classList.add(`ecl-content-item__image`, themeClass);
-      }
+      } 
+    } else if (date) {
+      date.firstElementChild.classList.add('ecl-content-item__date', `sc-ecl-content-item-${this.theme}`);
     }
+
 
     const block = this.el.querySelector('.ecl-content-block');
     if (block) {
@@ -45,16 +55,26 @@ export class EclContentItem {
   }
 
   getClass(): string {
-    return [
+    const styleClasses = [
       `ecl-content-item`,
       this.styleClass
-    ].join(' ');
+    ];
+
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`);
+    }
+
+    if (this.divider) {
+      styleClasses.push('ecl-content-item--divider');
+    }
+
+    return styleClasses.join(' ');
   }
 
   render() {
     return (
      <article class={this.getClass()}>
-      <slot name="picture"></slot>
+      <slot name="sidebar"></slot>
       <slot name="content-block"></slot>
      </article>
     )
