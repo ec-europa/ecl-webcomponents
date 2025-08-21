@@ -11,6 +11,7 @@ static/custom-properties-ec.css
 static/custom-properties-eu.css
 static/ecl-ec-color-modes.css
 static/fonts/
+!static/build/
 
 *~
 *.sw[mnpcod]
