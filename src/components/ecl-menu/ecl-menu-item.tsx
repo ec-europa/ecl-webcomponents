@@ -100,7 +100,6 @@ export class EclMenuItem {
             <ecl-icon
               icon="external"
               size="xs"
-              theme={this.theme}
               styleClass={`sc-ecl-icon-${this.theme} sc-ecl-menu-${this.theme} ecl-menu__link-icon--external ${this.child ? 'ecl-menu__sublink-icon' : 'ecl-menu__link-icon'}`}
             ></ecl-icon> : ''
           }
@@ -116,9 +115,8 @@ export class EclMenuItem {
           <ecl-icon
             icon="corner-arrow"
             size="xs"
-            transform="rotate-180"
+            rotate="180"
             slot="icon-after"
-            theme={this.theme}
             styleClass={`sc-ecl-icon-${this.theme} sc-ecl-menu-${this.theme}`}
           >
           </ecl-icon>

@@ -131,7 +131,6 @@ export class EclDatepicker {
           {...attributes}
         />
         <ecl-icon
-          theme={this.theme}
           styleClass={`ecl-datepicker__icon sc-ecl-datepicker-${this.theme}`}
           icon="calendar"
           size="xs"

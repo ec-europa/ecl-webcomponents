@@ -9,25 +9,25 @@ exports[`ecl-breadcrumb renders with ellipsis and current page 1`] = `
         <ecl-link path="/example.html" style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link" variant="standalone">
           Home
         </ecl-link>
-        <ecl-icon icon="corner-arrow" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec" transform="rotate-90"></ecl-icon>
+        <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
       </li>
       <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec" data-ecl-breadcrumb-item="expandable">
         <ecl-link path="/example.html" style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link" variant="standalone">
           About the European Commission
         </ecl-link>
-        <ecl-icon icon="corner-arrow" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec" transform="rotate-90"></ecl-icon>
+        <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
       </li>
       <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec" data-ecl-breadcrumb-item="expandable">
         <ecl-link path="/example.html" style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link" variant="standalone">
           Organisational structure
         </ecl-link>
-        <ecl-icon icon="corner-arrow" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec" transform="rotate-90"></ecl-icon>
+        <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
       </li>
       <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec" data-ecl-breadcrumb-item="static">
         <ecl-link path="/example.html" style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link" variant="standalone">
           How the Commission is organised
         </ecl-link>
-        <ecl-icon icon="corner-arrow" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec" transform="rotate-90"></ecl-icon>
+        <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
       </li>
       <li aria-current="page" class="ecl-breadcrumb__current-page ecl-breadcrumb__segment sc-ecl-breadcrumb-ec" data-ecl-breadcrumb-item="static">
         News

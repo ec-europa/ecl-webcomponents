@@ -13,7 +13,7 @@ exports[`ecl-expandable renders 1`] = `
               Expand
             </span>
           </span>
-          <ecl-icon icon="corner-arrow" size="fluid" slot="icon-after" style-class="ecl-button__icon ecl-button__icon--after sc-ecl-button-ec sc-ecl-expandable-ec" theme="ec" transform="rotate-180"></ecl-icon>
+          <ecl-icon icon="corner-arrow" rotate="180" size="fluid" slot="icon-after" style-class="ecl-button__icon ecl-button__icon--after sc-ecl-button-ec sc-ecl-expandable-ec"></ecl-icon>
         </span>
       </button>
     </ecl-button>

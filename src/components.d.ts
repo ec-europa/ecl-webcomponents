@@ -792,22 +792,21 @@ export namespace Components {
         "theme": string;
     }
     interface EclIcon {
-        /**
-          * @default ''
-         */
         "color": string;
         /**
           * @default ''
          */
+        "family": string;
+        "flip": string;
+        /**
+          * @default ''
+         */
         "icon": string;
-        "path": string;
+        "rotate": string;
         /**
           * @default 'xs'
          */
         "size": string;
-        /**
-          * @default ''
-         */
         "sprite": string;
         /**
           * @default ''
@@ -818,10 +817,6 @@ export namespace Components {
           * @default ''
          */
         "titleTag": string;
-        /**
-          * @default ''
-         */
-        "transform": string;
     }
     interface EclIndicator {
         /**
@@ -1535,6 +1530,14 @@ export namespace Components {
         "variant": string;
     }
     interface EclSocialMediaFollowItem {
+        /**
+          * @default 'monochrome'
+         */
+        "color": string;
+        /**
+          * @default 'networks'
+         */
+        "family": string;
         "icon": string;
         "sharePath": string;
         "styleClass": string;
@@ -3198,22 +3201,21 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclIcon {
-        /**
-          * @default ''
-         */
         "color"?: string;
         /**
           * @default ''
          */
+        "family"?: string;
+        "flip"?: string;
+        /**
+          * @default ''
+         */
         "icon"?: string;
-        "path"?: string;
+        "rotate"?: string;
         /**
           * @default 'xs'
          */
         "size"?: string;
-        /**
-          * @default ''
-         */
         "sprite"?: string;
         /**
           * @default ''
@@ -3224,10 +3226,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "titleTag"?: string;
-        /**
-          * @default ''
-         */
-        "transform"?: string;
     }
     interface EclIndicator {
         /**
@@ -3953,6 +3951,14 @@ declare namespace LocalJSX {
         "variant"?: string;
     }
     interface EclSocialMediaFollowItem {
+        /**
+          * @default 'monochrome'
+         */
+        "color"?: string;
+        /**
+          * @default 'networks'
+         */
+        "family"?: string;
         "icon"?: string;
         "sharePath"?: string;
         "styleClass"?: string;

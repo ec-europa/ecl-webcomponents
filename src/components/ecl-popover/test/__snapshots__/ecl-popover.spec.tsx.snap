@@ -5,7 +5,7 @@ exports[`ecl-popover renders 1`] = `
   <!---->
   <div class="ecl-popover">
     <a aria-controls="popover-example" aria-expanded="false" class="ecl-link ecl-link--standalone ecl-popover__toggle sc-ecl-link-ec" data-ecl-popover-toggle="data-ecl-popover-toggle">
-      <ecl-icon icon="share" size="fluid" sprite="" style-class="ecl-link__icon--before" theme="ec"></ecl-icon>
+      <ecl-icon icon="share" size="fluid" sprite="" style-class="ecl-link__icon--before"></ecl-icon>
       Popover
     </a>
     <div class="ecl-popover__container" hidden="" id="popover-example">

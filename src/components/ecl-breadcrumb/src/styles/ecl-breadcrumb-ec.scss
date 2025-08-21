@@ -11,3 +11,11 @@
   $theme: theme.$theme,
   $breadcrumb: var.$breadcrumb
 );
+
+.ecl-breadcrumb__icon {
+  vertical-align: text-top;
+}
+
+.ecl-breadcrumb__current-page {
+  margin-block-start: 0;
+}

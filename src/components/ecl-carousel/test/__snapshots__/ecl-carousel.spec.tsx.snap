@@ -18,9 +18,7 @@ exports[`ecl-carousel renders 1`] = `
       </div>
       <button class="ecl-carousel__prev" type="button">
         <ecl-icon style-class="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec">
-          <svg class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted ecl-icon--m ecl-icon--rotate-270 sc-ecl-carousel-ec">
-            <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
-          </svg>
+          <span class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted sc-ecl-carousel-ec wt-icon--corner-arrow wt-icon--m wt-icon--placeholder wt-icon--rotate-270"></span>
         </ecl-icon>
         <span class="ecl-u-sr-only">
           Prev slides
@@ -28,9 +26,7 @@ exports[`ecl-carousel renders 1`] = `
       </button>
       <button class="ecl-carousel__next" type="button">
         <ecl-icon style-class="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec">
-          <svg class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted ecl-icon--m ecl-icon--rotate-90 sc-ecl-carousel-ec">
-            <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
-          </svg>
+          <span class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted sc-ecl-carousel-ec wt-icon--corner-arrow wt-icon--m wt-icon--placeholder wt-icon--rotate-90"></span>
         </ecl-icon>
         <span class="ecl-u-sr-only">
           Next slides
@@ -42,14 +38,10 @@ exports[`ecl-carousel renders 1`] = `
         <div class="ecl-carousel__autoplay">
           <button class="ecl-carousel__play" type="button">
             <ecl-icon style-class="ecl-carousel__icon-default sc-ecl-carousel-ec">
-              <svg class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted ecl-icon--l sc-ecl-carousel-ec">
-                <use xlink:href="/build/images/ec/icons.svg#play"></use>
-              </svg>
+              <span class="ecl-carousel__icon-default ecl-icon sc-ecl-carousel-ec wt-icon--inverted wt-icon--l wt-icon--placeholder wt-icon--play"></span>
             </ecl-icon>
             <ecl-icon style-class="ecl-carousel__icon-active sc-ecl-carousel-ec">
-              <svg class="ecl-carousel__icon-active ecl-icon ecl-icon--inverted ecl-icon--l sc-ecl-carousel-ec">
-                <use xlink:href="/build/images/ec/icons.svg#play-filled"></use>
-              </svg>
+              <span class="ecl-carousel__icon-active ecl-icon sc-ecl-carousel-ec wt-icon--inverted wt-icon--l wt-icon--placeholder wt-icon--play-filled"></span>
             </ecl-icon>
             <span class="ecl-u-sr-only">
               Play carousel
@@ -57,14 +49,10 @@ exports[`ecl-carousel renders 1`] = `
           </button>
           <button class="ecl-carousel__pause" type="button">
             <ecl-icon style-class="ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-ec">
-              <svg class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted ecl-icon--l sc-ecl-carousel-ec">
-                <use xlink:href="/build/images/ec/icons.svg#pause"></use>
-              </svg>
+              <span class="ecl-carousel__icon-default ecl-icon ecl-icon--inverted sc-ecl-carousel-ec wt-icon--l wt-icon--pause wt-icon--placeholder"></span>
             </ecl-icon>
             <ecl-icon style-class="ecl-carousel__icon-active sc-ecl-carousel-ec">
-              <svg class="ecl-carousel__icon-active ecl-icon ecl-icon--inverted ecl-icon--l sc-ecl-carousel-ec">
-                <use xlink:href="/build/images/ec/icons.svg#pause-filled"></use>
-              </svg>
+              <span class="ecl-carousel__icon-active ecl-icon sc-ecl-carousel-ec wt-icon--inverted wt-icon--l wt-icon--pause-filled wt-icon--placeholder"></span>
             </ecl-icon>
             <span class="ecl-u-sr-only">
               Pause carousel

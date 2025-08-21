@@ -24,9 +24,7 @@ exports[`ecl-gallery renders 1`] = `
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-external-video.jpg" image-alt="New digital strategy" img-class="ecl-gallery__image sc-ecl-gallery-ec" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <div class="ecl-gallery__item-icon-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__item-icon sc-ecl-gallery-ec">
-                <svg class="ecl-gallery__item-icon ecl-icon ecl-icon--inverted ecl-icon--l sc-ecl-gallery-ec">
-                  <use xlink:href="/build/images/ec/icons.svg#play-filled"></use>
-                </svg>
+                <span class="ecl-gallery__item-icon ecl-icon sc-ecl-gallery-ec wt-icon--inverted wt-icon--l wt-icon--placeholder wt-icon--play-filled"></span>
               </ecl-icon>
             </div>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
@@ -88,9 +86,7 @@ exports[`ecl-gallery renders 1`] = `
             </video>
             <div class="ecl-gallery__item-icon-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__item-icon sc-ecl-gallery-ec">
-                <svg class="ecl-gallery__item-icon ecl-icon ecl-icon--inverted ecl-icon--l sc-ecl-gallery-ec">
-                  <use xlink:href="/build/images/ec/icons.svg#play-filled"></use>
-                </svg>
+                <span class="ecl-gallery__item-icon ecl-icon sc-ecl-gallery-ec wt-icon--inverted wt-icon--l wt-icon--placeholder wt-icon--play-filled"></span>
               </ecl-icon>
             </div>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
@@ -197,9 +193,7 @@ exports[`ecl-gallery renders 1`] = `
                 Close
               </span>
               <ecl-icon slot="icon-after" style-class="sc-ecl-gallery-ec">
-                <svg class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--s sc-ecl-button-ec sc-ecl-gallery-ec">
-                  <use xlink:href="/build/images/ec/icons.svg#close-filled"></use>
-                </svg>
+                <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-gallery-ec wt-icon--close-filled wt-icon--placeholder wt-icon--s"></span>
               </ecl-icon>
             </span>
           </button>
@@ -213,17 +207,13 @@ exports[`ecl-gallery renders 1`] = `
           <div class="ecl-gallery__detail-actions">
             <ecl-link data-ecl-gallery-overlay-download path="" style-class="ecl-gallery__download sc-ecl-gallery-ec" target="blank" theme="ec" variant="standalone">
               <ecl-icon slot="icon-after">
-                <svg class="ecl-icon ecl-icon--fluid">
-                  <use xlink:href="/build/images/ec/icons.svg#fullscreen"></use>
-                </svg>
+                <span class="ecl-icon wt-icon--fluid wt-icon--fullscreen wt-icon--placeholder"></span>
               </ecl-icon>
             </ecl-link>
             <ecl-link data-ecl-gallery-overlay-share path="" style-class="ecl-gallery__share sc-ecl-gallery-ec" theme="ec" variant="standalone">
               Share
               <ecl-icon slot="icon-after">
-                <svg class="ecl-icon ecl-icon--fluid">
-                  <use xlink:href="/build/images/ec/icons.svg#share"></use>
-                </svg>
+                <span class="ecl-icon wt-icon--fluid wt-icon--placeholder wt-icon--share"></span>
               </ecl-icon>
             </ecl-link>
           </div>
@@ -235,9 +225,7 @@ exports[`ecl-gallery renders 1`] = `
               <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-gallery__slider-previous sc-ecl-gallery-ec" data-ecl-gallery-overlay-previous="eclGalleryOverlayPrevious" type="button">
                 <span class="ecl-button__container">
                   <ecl-icon slot="icon-before" style-class="sc-ecl-gallery-ec">
-                    <svg class="ecl-button__icon ecl-icon ecl-icon--rotate-270 ecl-icon--s sc-ecl-button-ec sc-ecl-gallery-ec">
-                      <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
-                    </svg>
+                    <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-gallery-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270 wt-icon--s"></span>
                   </ecl-icon>
                   <span class="ecl-button__label" data-ecl-label>
                     Previous
@@ -262,9 +250,7 @@ exports[`ecl-gallery renders 1`] = `
                     Next
                   </span>
                   <ecl-icon slot="icon-after" style-class="sc-ecl-gallery-ec">
-                    <svg class="ecl-button__icon ecl-icon ecl-icon--rotate-90 ecl-icon--s sc-ecl-button-ec sc-ecl-gallery-ec">
-                      <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
-                    </svg>
+                    <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-gallery-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-90 wt-icon--s"></span>
                   </ecl-icon>
                 </span>
               </button>

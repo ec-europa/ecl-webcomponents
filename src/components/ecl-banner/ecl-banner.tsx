@@ -225,8 +225,7 @@ export class EclBanner {
                   <ecl-icon
                     icon="corner-arrow"
                     slot="icon-after"
-                    transform="rotate-90"
-                    theme={this.theme}
+                    rotate="90"
                   ></ecl-icon>
                 </ecl-link>
               </div>

@@ -46,9 +46,7 @@ exports[`ecl-banner renders correctly with a video 1`] = `
           <span class="ecl-button__container sc-ecl-banner-ec">
             <span class="ecl-button__label" data-ecl-label></span>
             <ecl-icon slot="icon-after">
-              <svg class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-banner-ec sc-ecl-button-ec">
-                <use xlink:href="/build/images/ec/icons.svg#play-outline"></use>
-              </svg>
+              <span class="ecl-button__icon ecl-icon sc-ecl-banner-ec sc-ecl-button-ec wt-icon--m wt-icon--placeholder wt-icon--play-outline"></span>
             </ecl-icon>
           </span>
         </button>
@@ -59,9 +57,7 @@ exports[`ecl-banner renders correctly with a video 1`] = `
           <span class="ecl-button__container sc-ecl-banner-ec">
             <span class="ecl-button__label" data-ecl-label></span>
             <ecl-icon slot="icon-after">
-              <svg class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-banner-ec sc-ecl-button-ec">
-                <use xlink:href="/build/images/ec/icons.svg#pause-outline"></use>
-              </svg>
+              <span class="ecl-button__icon ecl-icon sc-ecl-banner-ec sc-ecl-button-ec wt-icon--m wt-icon--pause-outline wt-icon--placeholder"></span>
             </ecl-icon>
           </span>
         </button>
@@ -118,10 +114,8 @@ exports[`ecl-banner renders correctly with an image 1`] = `
               <a class="ecl-banner__link-cta ecl-link ecl-link--cta ecl-link--icon ecl-link--icon-after sc-ecl-banner-ec" href="/example.html">
                 Subscribe
                 <slot-fb hidden="" name="icon-after"></slot-fb>
-                <ecl-icon slot="icon-after">
-                  <svg class="ecl-icon ecl-icon--rotate-90 ecl-icon--xs ecl-link__icon ecl-link__icon--after">
-                    <use xlink:href="/build/images/ec/icons.svg#corner-arrow"></use>
-                  </svg>
+                <ecl-icon class="ecl-link__icon" slot="icon-after">
+                  <span class="ecl-icon wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-90 wt-icon--xs"></span>
                 </ecl-icon>
               </a>
             </ecl-link>

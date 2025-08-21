@@ -15,9 +15,7 @@ exports[`ecl-accordion renders 1`] = `
               </span>
               <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
                 <ecl-icon data-ecl-accordion-icon style-class="ecl-accordion__toggle-icon sc-ecl-accordion-ec">
-                  <svg class="ecl-accordion__toggle-icon ecl-icon ecl-icon--s sc-ecl-accordion-ec">
-                    <use xlink:href="/build/images/ec/icons.svg#plus"></use>
-                  </svg>
+                  <span class="ecl-accordion__toggle-icon ecl-icon sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus wt-icon--s"></span>
                 </ecl-icon>
               </span>
             </span>
@@ -39,9 +37,7 @@ exports[`ecl-accordion renders 1`] = `
               </span>
               <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
                 <ecl-icon data-ecl-accordion-icon style-class="ecl-accordion__toggle-icon sc-ecl-accordion-ec">
-                  <svg class="ecl-accordion__toggle-icon ecl-icon ecl-icon--s sc-ecl-accordion-ec">
-                    <use xlink:href="/build/images/ec/icons.svg#minus"></use>
-                  </svg>
+                  <span class="ecl-accordion__toggle-icon ecl-icon sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder wt-icon--s"></span>
                 </ecl-icon>
               </span>
             </span>
@@ -63,9 +59,7 @@ exports[`ecl-accordion renders 1`] = `
               </span>
               <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
                 <ecl-icon data-ecl-accordion-icon style-class="ecl-accordion__toggle-icon sc-ecl-accordion-ec">
-                  <svg class="ecl-accordion__toggle-icon ecl-icon ecl-icon--s sc-ecl-accordion-ec">
-                    <use xlink:href="/build/images/ec/icons.svg#plus"></use>
-                  </svg>
+                  <span class="ecl-accordion__toggle-icon ecl-icon sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus wt-icon--s"></span>
                 </ecl-icon>
               </span>
             </span>

@@ -103,7 +103,7 @@ export class EclInpageNavigation {
             <ecl-icon
               icon="corner-arrow"
               size="s"
-              transform="rotate-180"
+              rotate="180"
               style-class={`ecl-inpage-navigation__trigger-icon sc-ecl-inpage-navigation-${this.theme}`}
             ></ecl-icon>
           </button>
