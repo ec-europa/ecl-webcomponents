@@ -169,7 +169,7 @@ const Template = (args) =>
     media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg"
     image-alt="Image 6"
-    thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
+    thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg"
   >
     Find official documents, publications, statistics, open data and more resources
   </ecl-gallery-item>
@@ -206,7 +206,7 @@ const Template = (args) =>
     media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg"
     image-alt="Image 10"
-    thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg"
+    thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image11.jpg"
   >
     EU by topic
   </ecl-gallery-item>

@@ -97,8 +97,10 @@ export class EclGallery {
         <div class="ecl-gallery__footer">
         {this.expandable ? (
           <div class="ecl-gallery__info">
-            <strong class="ecl-gallery__info-total" data-ecl-gallery-count>0</strong>
-            {this.counterLabel},
+            <div class="ecl-gallery__info-total">
+              <strong data-ecl-gallery-count>0</strong>
+              {this.counterLabel}
+            </div>
             {this.viewAllLabel || this.viewAllExpandedLabel ? (
               <ecl-button
                 styleClass={`ecl-gallery__view-all sc-ecl-gallery-${this.theme}`}
