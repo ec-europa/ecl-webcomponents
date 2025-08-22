@@ -302,6 +302,11 @@ export namespace Components {
         "theme": string;
     }
     interface EclContentItem {
+        "colorMode": string;
+        /**
+          * @default false
+         */
+        "divider": boolean;
         /**
           * @default 'left'
          */
@@ -311,12 +316,13 @@ export namespace Components {
          */
         "imageSize": string;
         /**
+          * @default false
+         */
+        "imageZoom": boolean;
+        /**
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclDateBlock {
@@ -1253,6 +1259,10 @@ export namespace Components {
           * @default 'ec'
          */
         "theme": string;
+        /**
+          * @default false
+         */
+        "zoom": boolean;
     }
     interface EclPopover {
         /**
@@ -2708,6 +2718,11 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclContentItem {
+        "colorMode"?: string;
+        /**
+          * @default false
+         */
+        "divider"?: boolean;
         /**
           * @default 'left'
          */
@@ -2717,12 +2732,13 @@ declare namespace LocalJSX {
          */
         "imageSize"?: string;
         /**
+          * @default false
+         */
+        "imageZoom"?: boolean;
+        /**
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclDateBlock {
@@ -3665,6 +3681,10 @@ declare namespace LocalJSX {
           * @default 'ec'
          */
         "theme"?: string;
+        /**
+          * @default false
+         */
+        "zoom"?: boolean;
     }
     interface EclPopover {
         /**
