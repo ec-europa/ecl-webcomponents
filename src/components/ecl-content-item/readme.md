@@ -13,6 +13,7 @@
 | `divider`       | `divider`        |             | `boolean` | `false`     |
 | `imagePosition` | `image-position` |             | `string`  | `'left'`    |
 | `imageSize`     | `image-size`     |             | `string`  | `'medium'`  |
+| `imageZoom`     | `image-zoom`     |             | `boolean` | `false`     |
 | `styleClass`    | `style-class`    |             | `string`  | `''`        |
 | `theme`         | `theme`          |             | `string`  | `undefined` |
 

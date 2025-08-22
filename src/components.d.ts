@@ -316,6 +316,10 @@ export namespace Components {
          */
         "imageSize": string;
         /**
+          * @default false
+         */
+        "imageZoom": boolean;
+        /**
           * @default ''
          */
         "styleClass": string;
@@ -1255,6 +1259,10 @@ export namespace Components {
           * @default 'ec'
          */
         "theme": string;
+        /**
+          * @default false
+         */
+        "zoom": boolean;
     }
     interface EclPopover {
         /**
@@ -2724,6 +2732,10 @@ declare namespace LocalJSX {
          */
         "imageSize"?: string;
         /**
+          * @default false
+         */
+        "imageZoom"?: boolean;
+        /**
           * @default ''
          */
         "styleClass"?: string;
@@ -3669,6 +3681,10 @@ declare namespace LocalJSX {
           * @default 'ec'
          */
         "theme"?: string;
+        /**
+          * @default false
+         */
+        "zoom"?: boolean;
     }
     interface EclPopover {
         /**

@@ -16,6 +16,7 @@ export class EclContentItem {
   @Prop({ mutable: true }) theme: string;
   @Prop() imagePosition: string = 'left';
   @Prop() imageSize: string = 'medium';
+  @Prop() imageZoom: boolean = false;
   @Prop() divider: boolean = false;
   @Prop() colorMode: string;
 
@@ -35,6 +36,10 @@ export class EclContentItem {
         `ecl-content-item__picture--${this.imagePosition}`,
       );
 
+      if (this.imageZoom) {
+        picture.classList.add('ecl-picture--zoom');
+      }
+
       if (this.imagePosition === 'right') {
         picture.parentElement.style.order = '1';
       }
@@ -45,6 +50,7 @@ export class EclContentItem {
       } 
     } else if (date) {
       date.firstElementChild.classList.add('ecl-content-item__date', `sc-ecl-content-item-${this.theme}`);
+      this.el.firstElementChild.classList.add('ecl-content-item--inline');
     }
 
 

@@ -5,6 +5,7 @@ const getArgs = () => {
     imagePosition: 'left',
     imageAlt: `Alternative text`,
     imageSize: 'large',
+    imageZoom: false,
     divider: false,
     event: false,
     primaryMeta: true,
@@ -27,7 +28,7 @@ const getArgTypes = () => {
       if: { arg: 'event', truthy: false },
     },
     imagePosition: {
-      name: 'image position',
+      name: 'image-position',
       type: { name: 'select'},
       options: [
         'left',
@@ -40,6 +41,12 @@ const getArgTypes = () => {
       name: "alternative text",
       type: { name: 'string'},
       description: 'Image alternative text',
+      if: { arg: 'event', truthy: false },
+    },
+    imageZoom: {
+      name: 'image-zoom',
+      type: { name: 'boolean' },
+      description: 'Animate the image on hover',
       if: { arg: 'event', truthy: false },
     },
     event: {
@@ -113,6 +120,7 @@ const Template = (args) => {
       image-position="${args.imagePosition}"
       image-alt="${args.imageAlt}"
       image-size="${args.imageSize}"
+      image-zoom="${args.imageZoom}"
       divider="${args.divider}"
       color-mode="${args.color_mode}"
       event="${args.event}"
