@@ -16,13 +16,16 @@ declare const ECL: any;
 export class EclGallery {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() eclScript: boolean = false;
   @Prop() slidesNumber: number;
   @Prop() counterLabel: string ;
   @Prop() counterSeparator: string;
   @Prop() description: string;
   @Prop() meta: string;
+  @Prop() grid: boolean = false;
+  @Prop() gridTemplate: number = 1;
+  @Prop() ratio: string = '3-2';
   @Prop() nextLabel: string;
   @Prop() prevLabel: string;
   @Prop() closeLabel: string;
@@ -48,7 +51,15 @@ export class EclGallery {
       styleClasses.push('ecl-gallery--full-width');
     }
 
+    if (this.grid) {
+      styleClasses.push('ecl-gallery--grid', `ecl-gallery--template-${this.gridTemplate}`, `ecl-gallery--ratio-${this.ratio}`);
+    }
+
     return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   componentDidRender() {
@@ -128,13 +139,14 @@ export class EclGallery {
               theme={this.theme}
               style-class={`ecl-gallery__close-button sc-ecl-gallery-${this.theme}`}
               variant="ghost"
+              hide-label
               data-ecl-gallery-close
             >
               {this.closeLabel}
               <ecl-icon
                 style-class={`sc-ecl-gallery-${this.theme}`}
-                icon="close-filled"
-                size="s"
+                icon="close"
+                size="m"
                 slot="icon-after"
               ></ecl-icon>
             </ecl-button>
@@ -150,39 +162,84 @@ export class EclGallery {
             data-ecl-gallery-overlay-footer
           >
             <div class="ecl-container">
-             <div class="ecl-gallery__detail-actions">
-                <ecl-link
-                  theme={this.theme}
-                  style-class={`ecl-gallery__download sc-ecl-gallery-${this.theme}`}
-                  data-ecl-gallery-overlay-download
-                  variant="standalone"
-                  path=""
-                  target="blank"
-                >
-                  {this.fullScreenLabel}
-                  <ecl-icon
-                    icon="fullscreen"
-                    size="fluid"
-                    slot="icon-after"
-                  ></ecl-icon>
+              <div class="ecl-gallery__detail-container">
+                <div class="ecl-gallery__pager">
+                  <div class="ecl-gallery__detail-counter">
+                    <span data-ecl-gallery-overlay-counter-current>0</span>
+                      {` ${this.counterSeparator} `}
+                    <span data-ecl-gallery-overlay-counter-max>0</span>
+                  </div>
+                  <div class="ecl-gallery__controls">
+                    <ecl-button
+                      theme={this.theme}
+                      style-class={`ecl-gallery__slider-previous sc-ecl-gallery-${this.theme}`}
+                      data-ecl-gallery-overlay-previous
+                      variant="ghost"
+                      type="button"
+                      hide-label
+                    >
+                      <ecl-icon
+                        style-class={`sc-ecl-gallery-${this.theme}`}
+                        slot="icon-before"
+                        size="s"
+                        rotate="270"
+                        icon="corner-arrow"
+                      ></ecl-icon>
+                      {this.prevLabel}
+                    </ecl-button>
+                  </div>
+                  <ecl-button
+                    theme={this.theme}
+                    style-class={`ecl-gallery__slider-next sc-ecl-gallery-${this.theme}`}
+                    data-ecl-gallery-overlay-next
+                    variant="ghost"
+                    type="button"
+                    hide-label
+                  >
+                    {this.nextLabel}
+                    <ecl-icon
+                      style-class={`sc-ecl-gallery-${this.theme}`}
+                      slot="icon-after"
+                      size="s"
+                      rotate="90"
+                      icon="corner-arrow"
+                    ></ecl-icon>
+                  </ecl-button>
+                </div>       
+                <div class="ecl-gallery__detail-actions">
+                  <ecl-link
+                    theme={this.theme}
+                    style-class={`ecl-gallery__download sc-ecl-gallery-${this.theme}`}
+                    data-ecl-gallery-overlay-download
+                    variant="standalone"
+                    path=""
+                    target="blank"
+                  >
+                    {this.fullScreenLabel}
+                    <ecl-icon
+                      icon="fullscreen"
+                      size="fluid"
+                      slot="icon-after"
+                    ></ecl-icon>
 
-                </ecl-link>
-              { this.shareLabel ? 
-                <ecl-link
-                  theme={this.theme}
-                  style-class={`ecl-gallery__share sc-ecl-gallery-${this.theme}`}
-                  data-ecl-gallery-overlay-share
-                  variant="standalone"
-                  path=""
-                >
-                  {this.shareLabel}
-                  <ecl-icon
-                    icon="share"
-                    size="fluid"
-                    slot="icon-after"
-                  ></ecl-icon>
-                </ecl-link> : ''
-              }
+                  </ecl-link>
+                { this.shareLabel ? 
+                  <ecl-link
+                    theme={this.theme}
+                    style-class={`ecl-gallery__share sc-ecl-gallery-${this.theme}`}
+                    data-ecl-gallery-overlay-share
+                    variant="standalone"
+                    path=""
+                  >
+                    {this.shareLabel}
+                    <ecl-icon
+                      icon="share"
+                      size="fluid"
+                      slot="icon-after"
+                    ></ecl-icon>
+                  </ecl-link> : ''
+                }
+                </div>
               </div>
               <div
                 class="ecl-gallery__detail-description"
@@ -194,47 +251,6 @@ export class EclGallery {
                 data-ecl-gallery-overlay-meta
               >
               </div>    
-              <div class="ecl-gallery__pager">
-                <ecl-button
-                  theme={this.theme}
-                  style-class={`ecl-gallery__slider-previous sc-ecl-gallery-${this.theme}`}
-                  data-ecl-gallery-overlay-previous
-                  variant="ghost"
-                  type="button"
-                  hide-label
-                >
-                  <ecl-icon
-                    style-class={`sc-ecl-gallery-${this.theme}`}
-                    slot="icon-before"
-                    size="s"
-                    rotate="270"
-                    icon="corner-arrow"
-                  ></ecl-icon>
-                  {this.prevLabel}
-                </ecl-button>
-                <div class="ecl-gallery__detail-counter">
-                  <span data-ecl-gallery-overlay-counter-current>0</span>
-                    {` ${this.counterSeparator} `}
-                  <span data-ecl-gallery-overlay-counter-max>0</span>
-                </div>
-                <ecl-button
-                  theme={this.theme}
-                  style-class={`ecl-gallery__slider-next sc-ecl-gallery-${this.theme}`}
-                  data-ecl-gallery-overlay-next
-                  variant="ghost"
-                  type="button"
-                  hide-label
-                >
-                  {this.nextLabel}
-                  <ecl-icon
-                    style-class={`sc-ecl-gallery-${this.theme}`}
-                    slot="icon-after"
-                    size="s"
-                    rotate="90"
-                    icon="corner-arrow"
-                  ></ecl-icon>
-                </ecl-button>
-              </div>       
             </div>
           </footer>
         </dialog>

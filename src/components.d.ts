@@ -724,6 +724,14 @@ export namespace Components {
           * @default false
          */
         "fullWidth": boolean;
+        /**
+          * @default false
+         */
+        "grid": boolean;
+        /**
+          * @default 1
+         */
+        "gridTemplate": number;
         "meta": string;
         "nextLabel": string;
         /**
@@ -731,15 +739,16 @@ export namespace Components {
          */
         "noOverlay": boolean;
         "prevLabel": string;
+        /**
+          * @default '3-2'
+         */
+        "ratio": string;
         "shareLabel": string;
         "slidesNumber": number;
         /**
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "viewAllExpandedLabel": string;
         "viewAllLabel": string;
@@ -749,6 +758,7 @@ export namespace Components {
         "visibleItems": number;
     }
     interface EclGalleryItem {
+        "elId": string;
         "icon": string;
         "imageAlt": string;
         "mediaHref": string;
@@ -759,10 +769,12 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
+        /**
+          * @default false
+         */
+        "thumbZoom": boolean;
+        "thumbnail": string;
         /**
           * @default 'image'
          */
@@ -1245,6 +1257,10 @@ export namespace Components {
         "image": string;
         "imageAlt": string;
         "imgClass": string;
+        /**
+          * @default false
+         */
+        "lazy": boolean;
         /**
           * @default ''
          */
@@ -3133,6 +3149,14 @@ declare namespace LocalJSX {
           * @default false
          */
         "fullWidth"?: boolean;
+        /**
+          * @default false
+         */
+        "grid"?: boolean;
+        /**
+          * @default 1
+         */
+        "gridTemplate"?: number;
         "meta"?: string;
         "nextLabel"?: string;
         /**
@@ -3140,15 +3164,16 @@ declare namespace LocalJSX {
          */
         "noOverlay"?: boolean;
         "prevLabel"?: string;
+        /**
+          * @default '3-2'
+         */
+        "ratio"?: string;
         "shareLabel"?: string;
         "slidesNumber"?: number;
         /**
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "viewAllExpandedLabel"?: string;
         "viewAllLabel"?: string;
@@ -3158,6 +3183,7 @@ declare namespace LocalJSX {
         "visibleItems"?: number;
     }
     interface EclGalleryItem {
+        "elId"?: string;
         "icon"?: string;
         "imageAlt"?: string;
         "mediaHref"?: string;
@@ -3168,10 +3194,12 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
+        /**
+          * @default false
+         */
+        "thumbZoom"?: boolean;
+        "thumbnail"?: string;
         /**
           * @default 'image'
          */
@@ -3657,6 +3685,10 @@ declare namespace LocalJSX {
         "image"?: string;
         "imageAlt"?: string;
         "imgClass"?: string;
+        /**
+          * @default false
+         */
+        "lazy"?: boolean;
         /**
           * @default ''
          */

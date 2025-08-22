@@ -1,12 +1,69 @@
 import { randomizedLink } from "../../utils/randomizedLink"; 
 
+const getArgs = () => {
+  return {
+    fullWidth: false,
+    expandable: true,
+    thumbZoom: false,
+    grid: false,
+    gridTemplate: 1,
+    ratio: '3-2',
+  };
+};
+
+const getArgTypes = () => {
+  return {
+    color_mode: { table: { disable: true } },
+    fullWidth: {
+      name: 'full-width',
+      type: { name: 'boolean' },
+      description: "Make the gallery use the full available width",
+    },
+    expandable: {
+      name: { type: 'boolean' },
+      description: 'Make the gallery expandable',
+    },
+    thumbZoom: {
+      name: 'thumb-zoom',
+      type: { name: 'boolean' },
+      description: 'Animate the thumbnails'
+    },
+    grid: {
+      type: { name: 'boolean' },
+      description: 'Use a grid display',
+    },
+    gridTemplate: {
+      type: { name: 'select' },
+      options: [1, 2, 3, 4],
+      description: 'Choose the template to use in the grid display',
+      if: { arg: 'grid' },
+    },
+    ratio: {
+      name: 'Image ratio',
+      type: { name: 'select' },
+      description: 'Image ratio, for grid display',
+      options: ['3-1', '3-2'],
+      mapping: {
+        '3-1': '3-1',
+        '3-2': '3-2',
+      },
+      if: { arg: 'grid' },
+    },
+  };
+};
+
+
 export default {
   title: 'Components/gallery',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = (args) => 
 `<ecl-gallery
-  theme="${args.theme}"
   ecl-script
   counter-label="Media files in this gallery"
   view-all-label="See all"
@@ -14,6 +71,10 @@ const Template = (args) =>
   counter-separator="of"
   next-label="Next"
   prev-label="Previous"
+  full-width="${args.fullWidth}"
+  grid="${args.grid}"
+  gridTemplate="${args.gridTemplate}"
+  ratio="${args.ratio}"
   close-label="Close"
   full-screen-label="View original"
   share-label="Share"
@@ -24,56 +85,56 @@ const Template = (args) =>
   aria-label="Gallery overlay"
 >
   <ecl-gallery-item
-    theme="${args.theme}"
     meta="Copyright, Author, Licence for image 1"
     media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
     image-alt="Image 1"
+    thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"
   >    
     The EU in brief, institutions and bodies, countries, symbols, history, facts and figures
   </ecl-gallery-item>
   <ecl-gallery-item
-    theme="${args.theme}"
     type="video"
     meta="Copyright, Author, Licence for embedded media"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-external-video.jpg"
     image-alt="New digital strategy"
     media-iframe-href="https://www.youtube.com/embed/fgi-GSCB6ho"
+    thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg"
   >
     New digital strategy
   </ecl-gallery-item>
   <ecl-gallery-item
-    theme="${args.theme}"
     meta="Copyright, Author, Licence for image 2"
     media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
+    thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
     image-alt="Image 2"
   >
     Information on agriculture, business, culture, health, etc.
   </ecl-gallery-item>
   <ecl-gallery-item
-    theme="${args.theme}"
     meta="Copyright, Author, Licence for image 3"
     media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"
+    thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg"
     image-alt="Image 3"
   >
     Living, working, travelling in the EU
   </ecl-gallery-item>
   <ecl-gallery-item
-    theme="${args.theme}"
     meta="Copyright, Author, Licence for image 4"
     media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg"
     image-alt="Image 3"
+    thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg"
   >
     Information on taxes, customs, importing and exporting goods, financial support for businesses
   </ecl-gallery-item>
   <ecl-gallery-item
-    theme="${args.theme}"
     media-share-path="${randomizedLink('/example.html')}"
     meta="Copyright, Author, Licence for video"
     type="html-video"
+    thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg"
   >
     EU law
     <video
@@ -104,48 +165,48 @@ const Template = (args) =>
     </video>
   </ecl-gallery-item>
   <ecl-gallery-item
-    theme="${args.theme}"
     meta="Copyright, Author, Licence for image 6"
     media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg"
     image-alt="Image 6"
+    thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
   >
     Find official documents, publications, statistics, open data and more resources
   </ecl-gallery-item>
   <ecl-gallery-item
-    theme="${args.theme}"
     meta="Copyright, Author, Licence for image 7"
     media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg"
     image-alt="Image 7"
+    thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
   >
     Teaching material about the EU, including books and maps
   </ecl-gallery-item>
   <ecl-gallery-item
-    theme="${args.theme}"
     meta="Copyright, Author, Licence for image 8"
     media-share-path="${randomizedLink('/example.html')}"
     media-iframe-href="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&lg=EN"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg"
     image-alt="Image 8"
+    thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg"
   >
     Teaching material about the EU, including books and maps
   </ecl-gallery-item>
   <ecl-gallery-item
-    theme="${args.theme}"
     meta="Copyright, Author, Licence for image 9"
     media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg"
     image-alt="Image 9"
+    thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
   >
     About the EU
   </ecl-gallery-item>
   <ecl-gallery-item
-    theme="${args.theme}"
     meta="Copyright, Author, Licence for image 10"
     media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg"
     image-alt="Image 10"
+    thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg"
   >
     EU by topic
   </ecl-gallery-item>
@@ -153,3 +214,5 @@ const Template = (args) =>
 
 export const Gallery = Template.bind({});
 Gallery.storyName = 'default';
+Gallery.args = getArgs();
+Gallery.argTypes = getArgTypes();

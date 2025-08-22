@@ -1,12 +1,15 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, Element } from '@stencil/core';
 
 @Component({
   tag: 'ecl-gallery-item',
 })
 
 export class EclGalleryItem {
+  @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
+  @Prop() thumbnail: string;
+  @Prop() thumbZoom: boolean = false;
   @Prop() imageAlt: string;
   @Prop() mediaHref: string;
   @Prop() mediaIframeHref: string;
@@ -14,6 +17,23 @@ export class EclGalleryItem {
   @Prop() meta: string;
   @Prop() type: string = 'image';
   @Prop() icon: string;
+  @Prop() elId: string;
+
+  addScopedClassToDetailActions() {
+    setTimeout(() => {
+      const elements = [
+        ...document.querySelectorAll('.ecl-gallery__detail-actions-mobile'),
+        ...document.querySelectorAll('.ecl-gallery__slider-embed'),
+        ...document.querySelectorAll('.ecl-gallery__slider-embed-audio'),
+        ...document.querySelectorAll('.ecl-gallery__slider-video'),
+        ...document.querySelectorAll('.ecl-gallery__slider-image'),
+      ];
+
+      elements.forEach(el => {
+        el.classList.add(`sc-ecl-gallery-${this.theme}`);
+      });
+    }, 0);
+  }
 
   getClass(): string {
     return [
@@ -21,6 +41,19 @@ export class EclGalleryItem {
       `sc-ecl-gallery-${this.theme}`,
       this.styleClass
     ].join(' ');
+  }
+
+  getThumbClass() {
+    const thumbClass = [
+      'ecl-gallery__thumbnail',
+      `sc-ecl-gallery-${this.theme}`,
+    ];
+
+    if (this.thumbZoom) {
+      thumbClass.push('ecl-picture--zoom');
+    }
+
+    return thumbClass.join(' ');
   }
 
   getLinkAttr() {
@@ -36,7 +69,31 @@ export class EclGalleryItem {
     }
 
     return attrs;
-  } 
+  }
+
+  getId() {
+    if (this.elId) {
+      return this.elId;
+    }
+
+    const galleryId = this.el.closest('.ecl-gallery').id;
+    const itemId = `${galleryId}-item-${Math.random().toString(36).slice(2, 10)}`;
+
+    return itemId;
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
+  componentDidRender() {
+    const images = this.el.querySelectorAll('.ecl-gallery__image');
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        this.addScopedClassToDetailActions();
+      });
+    });
+  }
 
   render() {
     return (
@@ -47,6 +104,15 @@ export class EclGalleryItem {
           {...this.getLinkAttr()}
         >
           <figure class={`ecl-gallery__image-container sc-ecl-gallery-${this.theme}`}>
+          { this.thumbnail &&
+            <ecl-picture
+              image={this.thumbnail}
+              style-class={this.getThumbClass()}
+              img-class={`ecl-gallery__image sc-ecl-gallery-${this.theme}`}
+            >
+              <slot name="thumbnail-sources"></slot>
+            </ecl-picture>
+          }
             <slot name="video"></slot>
           { this.type !== 'html-video' ?
             <ecl-picture 
@@ -54,6 +120,7 @@ export class EclGalleryItem {
               image-alt={this.imageAlt}
               styleClass={`ecl-gallery__picture sc-ecl-gallery-${this.theme}`}
               img-class={`ecl-gallery__image sc-ecl-gallery-${this.theme}`}
+              lazy
             >
               <slot name="sources"></slot>
             </ecl-picture> : ''
@@ -79,7 +146,7 @@ export class EclGalleryItem {
                 size="s"
               ></ecl-icon> : ''
             }
-              <slot></slot>
+              <div class="ecl-gallery__title" data-ecl-gallery-title id={this.getId()}><slot></slot></div>
               <span
                 class={`ecl-gallery__meta sc-ecl-gallery-${this.theme}`}
                 data-ecl-gallery-meta
