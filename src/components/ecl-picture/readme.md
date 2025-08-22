@@ -15,6 +15,7 @@
 | `lazy`       | `lazy`        |             | `boolean` | `false`     |
 | `styleClass` | `style-class` |             | `string`  | `''`        |
 | `theme`      | `theme`       |             | `string`  | `'ec'`      |
+| `zoom`       | `zoom`        |             | `boolean` | `false`     |
 
 
 ## Dependencies

@@ -17,12 +17,17 @@ export class EclPicture {
   @Prop() imgClass: string;
   @Prop() imageAlt: string;
   @Prop() lazy: boolean = false;
+  @Prop() zoom: boolean = false;
 
   getClass(): string {
     const styleClasses = [
       `ecl-picture`,
       this.styleClass
     ]
+
+    if (this.zoom) {
+      styleClasses.push('ecl-picture--zoom');      
+    }
 
     return styleClasses.join(' ');
   }
