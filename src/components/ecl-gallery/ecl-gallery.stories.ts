@@ -20,7 +20,7 @@ const getArgTypes = () => {
       description: "Make the gallery use the full available width",
     },
     expandable: {
-      name: { type: 'boolean' },
+      type: { name: 'boolean' },
       description: 'Make the gallery expandable',
     },
     thumbZoom: {
@@ -65,6 +65,7 @@ export default {
 const Template = (args) => 
 `<ecl-gallery
   ecl-script
+  el-id="ecl-gallery-demo"
   counter-label="Media files in this gallery"
   view-all-label="See all"
   view-all-expanded-label="Back"
@@ -85,6 +86,7 @@ const Template = (args) =>
   aria-label="Gallery overlay"
 >
   <ecl-gallery-item
+    el-id="ecl-gallery-demo-item-1"
     meta="Copyright, Author, Licence for image 1"
     media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"

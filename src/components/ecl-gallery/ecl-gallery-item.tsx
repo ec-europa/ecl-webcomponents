@@ -97,7 +97,7 @@ export class EclGalleryItem {
 
   render() {
     return (
-      <li class={this.getClass()}>
+      <li class={this.getClass()} id={this.getId()}>
         <a
           href={this.mediaIframeHref ? this.mediaIframeHref : this.mediaHref}
           class={`ecl-gallery__item-link sc-ecl-gallery-${this.theme}`}
@@ -146,7 +146,7 @@ export class EclGalleryItem {
                 size="s"
               ></ecl-icon> : ''
             }
-              <div class="ecl-gallery__title" data-ecl-gallery-title id={this.getId()}><slot></slot></div>
+              <div class="ecl-gallery__title" data-ecl-gallery-title id={`${this.getId()}-title`}><slot></slot></div>
               <span
                 class={`ecl-gallery__meta sc-ecl-gallery-${this.theme}`}
                 data-ecl-gallery-meta

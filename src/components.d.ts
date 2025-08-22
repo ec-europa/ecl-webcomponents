@@ -717,6 +717,10 @@ export namespace Components {
          */
         "eclScript": boolean;
         /**
+          * @default `ecl-gallery-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "elId": string;
+        /**
           * @default true
          */
         "expandable": boolean;
@@ -3151,6 +3155,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "eclScript"?: boolean;
+        /**
+          * @default `ecl-gallery-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "elId"?: string;
         /**
           * @default true
          */

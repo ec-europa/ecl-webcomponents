@@ -15,6 +15,7 @@ declare const ECL: any;
 
 export class EclGallery {
   @Element() el: HTMLElement;
+  @Prop() elId: string = `ecl-gallery-${Math.random().toString(36).slice(2, 10)}`;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
   @Prop() eclScript: boolean = false;
@@ -86,6 +87,7 @@ export class EclGallery {
     return (
       <section
         class={this.getClass()}
+        id={this.elId}
         data-ecl-gallery
         data-ecl-gallery-visible-items={this.visibleItems}
         {...!this.expandable && ({ 'data-ecl-gallery-not-expandable' : true })}
