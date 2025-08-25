@@ -251,7 +251,7 @@ export class EclGallery {
                 <div class="ecl-gallery__detail-actions">
                   <ecl-link
                     theme={this.theme}
-                    style-class={`ecl-gallery__download sc-ecl-gallery-${this.theme}`}
+                    style-class={`ecl-gallery__download sc-ecl-link-${this.theme} sc-ecl-gallery-${this.theme}`}
                     data-ecl-gallery-overlay-download
                     variant="standalone"
                     path=""

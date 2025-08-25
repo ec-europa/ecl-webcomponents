@@ -279,7 +279,7 @@ exports[`ecl-gallery renders 1`] = `
               </ecl-button>
             </div>
             <div class="ecl-gallery__detail-actions">
-              <ecl-link data-ecl-gallery-overlay-download path="" style-class="ecl-gallery__download sc-ecl-gallery-ec" target="blank" theme="ec" variant="standalone">
+              <ecl-link data-ecl-gallery-overlay-download path="" style-class="ecl-gallery__download sc-ecl-link-ec sc-ecl-gallery-ec" target="blank" theme="ec" variant="standalone">
                 <ecl-icon slot="icon-after">
                   <span class="ecl-icon wt-icon--fluid wt-icon--fullscreen wt-icon--placeholder"></span>
                 </ecl-icon>
