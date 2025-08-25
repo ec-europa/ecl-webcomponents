@@ -15,6 +15,7 @@ export class EclCard {
   @Prop() theme: string = 'ec';
   @Prop() image: string;
   @Prop() imageAlt: string;
+  @Prop() imageZoom: boolean = false;
 
   getClass(): string {
     return [
@@ -31,6 +32,7 @@ export class EclCard {
         imageAlt={this.imageAlt}
         imgClass={`ecl-card__image sc-ecl-card-${this.theme}`}
         styleClass={`ecl-card__picture sc-ecl-picture-${this.theme}`}
+        zoom={this.imageZoom}
         data-ecl-picture-link
       >
         <slot name="sources"></slot>

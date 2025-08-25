@@ -33,9 +33,6 @@ patchedDependencies:
   '@ecl/vanilla-component-button@3.13.0':
     hash: b10260c5c193e3f2f20a5d6721d43be35a19d874c7cfff32ab7e4f55a2c60e38
     path: patches/@ecl__vanilla-component-button@3.13.0.patch
-  '@ecl/vanilla-component-card@3.13.0':
-    hash: b20d9a3b089c299915ffab0249f14403fbe5d7785ce69aded62dc19692263e40
-    path: patches/@ecl__vanilla-component-card@3.13.0.patch
   '@ecl/vanilla-component-carousel@3.13.0':
     hash: 3546b846e0440ff2e10073e828289e1324bb721c13b6cc8dca9ad57572158fcb
     path: patches/@ecl__vanilla-component-carousel@3.13.0.patch
@@ -578,23 +575,20 @@ importers:
   src/components/ecl-card:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.33.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.33.0(jiti@1.21.7))
+      '@ecl/card':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-card':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=b20d9a3b089c299915ffab0249f14403fbe5d7785ce69aded62dc19692263e40)
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -3198,9 +3192,6 @@ packages:
 
   '@ecl/vanilla-component-button@3.13.0':
     resolution: {integrity: sha512-XR2heA/m3NeC92B9XaN/inVU/3zIfKMycirB5nrjf7/D+2Gz6gOwOKxejEF44I/EyL9g4PYPF65GpHn3uofAkg==}
-
-  '@ecl/vanilla-component-card@3.13.0':
-    resolution: {integrity: sha512-Ad1KrThtOqMirxqQbghXSbc9rNDGcewGqFJZymUP+gl7OxlBxSZoAA5gXiHCxhqvqTyliIdDvAE/GXu2/gy5yA==}
 
   '@ecl/vanilla-component-carousel@3.13.0':
     resolution: {integrity: sha512-nLf03MzeUPkTybKCcLnDRgi+IxoNwei8CymZ8k4+Mg56y2tOad3c2/fIEYu3xV9kR9XTHPNbI5I4mvr8D6PSwg==}
@@ -14812,10 +14803,6 @@ snapshots:
   '@ecl/utility-z-index@5.0.0-alpha.15': {}
 
   '@ecl/vanilla-component-button@3.13.0(patch_hash=b10260c5c193e3f2f20a5d6721d43be35a19d874c7cfff32ab7e4f55a2c60e38)':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
-  '@ecl/vanilla-component-card@3.13.0(patch_hash=b20d9a3b089c299915ffab0249f14403fbe5d7785ce69aded62dc19692263e40)':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
 
