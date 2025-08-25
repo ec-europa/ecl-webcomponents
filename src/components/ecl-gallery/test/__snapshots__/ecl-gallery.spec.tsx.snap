@@ -1,13 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-gallery renders 1`] = `
-<ecl-gallery close-label="Close" counter-label="Media files in this gallery" counter-separator="of" download-label="Download" ecl-script="" el-id="ecl-gallery-demo-test" next-label="Next" prev-label="Previous" share-label="Share" view-all-label="View all">
+<ecl-gallery close-label="Close" counter-label="Media files in this gallery" counter-separator="of" download-label="Download" ecl-script="" el-id="ecl-gallery-demo-test" grid="" grid-template="2" next-label="Next" prev-label="Previous" share-label="Share" view-all-label="View all" visible-items="9">
   <!---->
-  <section class="ecl-gallery" data-ecl-gallery data-ecl-gallery-visible-items="8" id="ecl-gallery-demo-test">
+  <section class="ecl-gallery ecl-gallery--grid ecl-gallery--ratio-3-2 ecl-gallery--template-2" data-ecl-gallery data-ecl-gallery-visible-items="9" id="ecl-gallery-demo-test">
     <ul class="ecl-gallery__list">
       <li class="ecl-gallery__item sc-ecl-gallery-ec" id="ecl-gallery-demo-test-item-1">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" image-alt="Image 1" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-1-title">
@@ -23,6 +24,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec" id="ecl-gallery-demo-test-item-2">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-embed-src="https://www.youtube.com/embed/fgi-GSCB6ho" href="https://www.youtube.com/embed/fgi-GSCB6ho">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-external-video.jpg" image-alt="New digital strategy" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <div class="ecl-gallery__item-icon-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__item-icon sc-ecl-gallery-ec">
@@ -43,6 +45,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec" id="ecl-gallery-demo-test-item-3">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image11.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" image-alt="Image 2" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-3-title">
@@ -58,6 +61,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec" id="ecl-gallery-demo-test-item-4">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg" image-alt="Image 3" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-4-title">
@@ -73,6 +77,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec" id="ecl-gallery-demo-test-item-5">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg" image-alt="Image 3" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-5-title">
@@ -113,6 +118,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec" id="ecl-gallery-demo-test-item-7">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg" image-alt="Image 6" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-7-title">
@@ -128,6 +134,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec" id="ecl-gallery-demo-test-item-8">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg" image-alt="Image 7" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-8-title">
@@ -143,6 +150,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec" id="ecl-gallery-demo-test-item-9">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-embed-src="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&amp;lg=EN" data-ecl-gallery-item-share="/example.html" href="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&amp;lg=EN">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg" image-alt="Image 8" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-9-title">
@@ -158,6 +166,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec" id="ecl-gallery-demo-test-item-10">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image1.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" image-alt="Image 9" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-10-title">
@@ -173,6 +182,7 @@ exports[`ecl-gallery renders 1`] = `
       <li class="ecl-gallery__item sc-ecl-gallery-ec" id="ecl-gallery-demo-test-item-10">
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
+            <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg" image-alt="Image 10" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-10-title">

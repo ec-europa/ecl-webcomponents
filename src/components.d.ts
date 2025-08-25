@@ -715,6 +715,10 @@ export namespace Components {
         /**
           * @default false
          */
+        "disableOverlay": boolean;
+        /**
+          * @default false
+         */
         "eclScript": boolean;
         /**
           * @default `ecl-gallery-${Math.random().toString(36).slice(2, 10)}`
@@ -755,6 +759,7 @@ export namespace Components {
         "ratio": string;
         "shareLabel": string;
         "slidesNumber": number;
+        "srGalleryLabel": string;
         /**
           * @default ''
          */
@@ -3154,6 +3159,10 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
+        "disableOverlay"?: boolean;
+        /**
+          * @default false
+         */
         "eclScript"?: boolean;
         /**
           * @default `ecl-gallery-${Math.random().toString(36).slice(2, 10)}`
@@ -3194,6 +3203,7 @@ declare namespace LocalJSX {
         "ratio"?: string;
         "shareLabel"?: string;
         "slidesNumber"?: number;
+        "srGalleryLabel"?: string;
         /**
           * @default ''
          */

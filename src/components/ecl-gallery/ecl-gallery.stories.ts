@@ -8,6 +8,8 @@ const getArgs = () => {
     grid: false,
     gridTemplate: 1,
     ratio: '3-2',
+    visibleItems: 8,
+    disableOverlay: false,
   };
 };
 
@@ -33,6 +35,7 @@ const getArgTypes = () => {
       description: 'Use a grid display',
     },
     gridTemplate: {
+      name: 'grid-template',
       type: { name: 'select' },
       options: [1, 2, 3, 4],
       description: 'Choose the template to use in the grid display',
@@ -48,6 +51,22 @@ const getArgTypes = () => {
         '3-2': '3-2',
       },
       if: { arg: 'grid' },
+    },
+    disableOverlay: {
+      name: 'disable-overlay',
+      control: { type: 'boolean' },
+      description: 'Disable the overlay when clicking on the thumbnails'
+    },
+    visibleItems: {
+      name: 'visible-items',
+      control: {
+        type: 'range',
+        step: 1,
+        min: 1,
+        max: 11,
+      },
+      description: 'Only relevant when the gallery is set to be expandable',
+      if: { arg: 'expandable' },
     },
   };
 };
@@ -79,11 +98,12 @@ const Template = (args) =>
   close-label="Close"
   full-screen-label="View original"
   share-label="Share"
-  visible-items=8
   footer-link-path="${randomizedLink('/example.html')}"
   footer-link-label="further media items"
-  expandable
+  expandable=${args.expandable}
   aria-label="Gallery overlay"
+  disable-overlay="${args.disableOverlay}"
+  visible-items=${args.visibleItems}
 >
   <ecl-gallery-item
     el-id="ecl-gallery-demo-item-1"

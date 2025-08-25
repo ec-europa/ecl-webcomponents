@@ -41,6 +41,24 @@ export class EclGallery {
   @Prop() fullScreenLabel: string = '';
   @Prop() noOverlay: boolean = false;
   @Prop() ariaLabel: string;
+  @Prop() disableOverlay: boolean = false;
+  @Prop() srGalleryLabel: string;
+
+  addScopedClassToDetailActions() {
+    setTimeout(() => {
+      const elements = [
+        ...document.querySelectorAll('.ecl-gallery__detail-actions-mobile'),
+        ...document.querySelectorAll('.ecl-gallery__slider-embed'),
+        ...document.querySelectorAll('.ecl-gallery__slider-embed-audio'),
+        ...document.querySelectorAll('.ecl-gallery__slider-video'),
+        ...document.querySelectorAll('.ecl-gallery__slider-image'),
+      ];
+
+      elements.forEach(el => {
+        el.classList.add(`sc-ecl-gallery-${this.theme}`);
+      });
+    }, 0);
+  }
 
   getClass(): string {
     const styleClasses = [
@@ -56,6 +74,10 @@ export class EclGallery {
       styleClasses.push('ecl-gallery--grid', `ecl-gallery--template-${this.gridTemplate}`, `ecl-gallery--ratio-${this.ratio}`);
     }
 
+    if (this.disableOverlay) {
+      styleClasses.push('.ecl-gallery--no-overlay');
+    }
+
     return styleClasses.join(' ');
   }
 
@@ -67,6 +89,18 @@ export class EclGallery {
     const items = this.el.querySelectorAll('.ecl-gallery__item');
     this.el.querySelector('.ecl-gallery__list').innerHTML = '';
     this.el.querySelector('.ecl-gallery__list').append(...items);
+    
+    const images = [
+      ...this.el.querySelectorAll('.ecl-gallery__image'),
+      ...this.el.querySelectorAll('.ecl-gallery__slider-previous'),
+      ...this.el.querySelectorAll('.ecl-gallery__slider-next'),
+    ];
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        this.addScopedClassToDetailActions();
+      });
+    });
 
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-gallery-vanilla.js');
@@ -89,9 +123,13 @@ export class EclGallery {
         class={this.getClass()}
         id={this.elId}
         data-ecl-gallery
-        data-ecl-gallery-visible-items={this.visibleItems}
-        {...!this.expandable && ({ 'data-ecl-gallery-not-expandable' : true })}
+        {...( !this.expandable 
+          ? { 'data-ecl-gallery-not-expandable': true } 
+          : { 'data-ecl-gallery-visible-items': this.visibleItems }
+        )}
         {...this.noOverlay && ({ 'data-ecl-gallery-no-overlay' : true })}
+        {...this.disableOverlay && ({ 'data-ecl-gallery-no-overlay' : true })}
+        {...(!this.expandable && this.srGalleryLabel) && ({ 'aria-label': this.srGalleryLabel })}
       >
         <ul class="ecl-gallery__list">
           <slot></slot>

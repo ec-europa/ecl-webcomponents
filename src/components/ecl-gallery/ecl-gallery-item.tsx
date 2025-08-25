@@ -19,21 +19,6 @@ export class EclGalleryItem {
   @Prop() icon: string;
   @Prop() elId: string;
 
-  addScopedClassToDetailActions() {
-    setTimeout(() => {
-      const elements = [
-        ...document.querySelectorAll('.ecl-gallery__detail-actions-mobile'),
-        ...document.querySelectorAll('.ecl-gallery__slider-embed'),
-        ...document.querySelectorAll('.ecl-gallery__slider-embed-audio'),
-        ...document.querySelectorAll('.ecl-gallery__slider-video'),
-        ...document.querySelectorAll('.ecl-gallery__slider-image'),
-      ];
-
-      elements.forEach(el => {
-        el.classList.add(`sc-ecl-gallery-${this.theme}`);
-      });
-    }, 0);
-  }
 
   getClass(): string {
     return [
@@ -84,15 +69,6 @@ export class EclGalleryItem {
 
   componentWillLoad() {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
-  }
-
-  componentDidRender() {
-    const images = this.el.querySelectorAll('.ecl-gallery__image');
-    images.forEach(img => {
-      img.addEventListener('click', () => {
-        this.addScopedClassToDetailActions();
-      });
-    });
   }
 
   render() {
