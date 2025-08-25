@@ -7,17 +7,20 @@
 
 ## Properties
 
-| Property          | Attribute           | Description | Type     | Default     |
-| ----------------- | ------------------- | ----------- | -------- | ----------- |
-| `icon`            | `icon`              |             | `string` | `undefined` |
-| `imageAlt`        | `image-alt`         |             | `string` | `undefined` |
-| `mediaHref`       | `media-href`        |             | `string` | `undefined` |
-| `mediaIframeHref` | `media-iframe-href` |             | `string` | `undefined` |
-| `mediaSharePath`  | `media-share-path`  |             | `string` | `undefined` |
-| `meta`            | `meta`              |             | `string` | `undefined` |
-| `styleClass`      | `style-class`       |             | `string` | `''`        |
-| `theme`           | `theme`             |             | `string` | `'ec'`      |
-| `type`            | `type`              |             | `string` | `'image'`   |
+| Property          | Attribute           | Description | Type      | Default     |
+| ----------------- | ------------------- | ----------- | --------- | ----------- |
+| `elId`            | `el-id`             |             | `string`  | `undefined` |
+| `icon`            | `icon`              |             | `string`  | `undefined` |
+| `imageAlt`        | `image-alt`         |             | `string`  | `undefined` |
+| `mediaHref`       | `media-href`        |             | `string`  | `undefined` |
+| `mediaIframeHref` | `media-iframe-href` |             | `string`  | `undefined` |
+| `mediaSharePath`  | `media-share-path`  |             | `string`  | `undefined` |
+| `meta`            | `meta`              |             | `string`  | `undefined` |
+| `styleClass`      | `style-class`       |             | `string`  | `''`        |
+| `theme`           | `theme`             |             | `string`  | `undefined` |
+| `thumbZoom`       | `thumb-zoom`        |             | `boolean` | `false`     |
+| `thumbnail`       | `thumbnail`         |             | `string`  | `undefined` |
+| `type`            | `type`              |             | `string`  | `'image'`   |
 
 
 ## Dependencies

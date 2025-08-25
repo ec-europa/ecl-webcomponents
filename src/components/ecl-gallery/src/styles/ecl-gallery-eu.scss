@@ -1,6 +1,12 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-layout-grid/grid';
-@use '@ecl/vanilla-component-gallery/gallery-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/gallery/gallery' with (
+  $theme: theme.$theme,
+  $gallery: var.$gallery
+);
 
 .ecl-gallery__slider-previous,
 .ecl-gallery__slider-next,

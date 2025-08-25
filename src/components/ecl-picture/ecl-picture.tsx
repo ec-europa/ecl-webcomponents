@@ -16,6 +16,7 @@ export class EclPicture {
   @Prop() image: string;
   @Prop() imgClass: string;
   @Prop() imageAlt: string;
+  @Prop() lazy: boolean = false;
   @Prop() zoom: boolean = false;
 
   getClass(): string {
@@ -42,6 +43,10 @@ export class EclPicture {
 
     if (this.imageAlt) {
       attrs['alt'] = this.imageAlt;
+    }
+
+    if (this.lazy) {
+      attrs['loading'] = 'lazy';
     }
 
     return attrs;

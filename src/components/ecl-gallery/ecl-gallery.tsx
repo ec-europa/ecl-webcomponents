@@ -15,14 +15,18 @@ declare const ECL: any;
 
 export class EclGallery {
   @Element() el: HTMLElement;
+  @Prop() elId: string = `ecl-gallery-${Math.random().toString(36).slice(2, 10)}`;
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() eclScript: boolean = false;
   @Prop() slidesNumber: number;
   @Prop() counterLabel: string ;
   @Prop() counterSeparator: string;
   @Prop() description: string;
   @Prop() meta: string;
+  @Prop() grid: boolean = false;
+  @Prop() gridTemplate: number = 1;
+  @Prop() ratio: string = '3-2';
   @Prop() nextLabel: string;
   @Prop() prevLabel: string;
   @Prop() closeLabel: string;
@@ -37,6 +41,24 @@ export class EclGallery {
   @Prop() fullScreenLabel: string = '';
   @Prop() noOverlay: boolean = false;
   @Prop() ariaLabel: string;
+  @Prop() disableOverlay: boolean = false;
+  @Prop() srGalleryLabel: string;
+
+  addScopedClassToDetailActions() {
+    setTimeout(() => {
+      const elements = [
+        ...document.querySelectorAll('.ecl-gallery__detail-actions-mobile'),
+        ...document.querySelectorAll('.ecl-gallery__slider-embed'),
+        ...document.querySelectorAll('.ecl-gallery__slider-embed-audio'),
+        ...document.querySelectorAll('.ecl-gallery__slider-video'),
+        ...document.querySelectorAll('.ecl-gallery__slider-image'),
+      ];
+
+      elements.forEach(el => {
+        el.classList.add(`sc-ecl-gallery-${this.theme}`);
+      });
+    }, 0);
+  }
 
   getClass(): string {
     const styleClasses = [
@@ -48,13 +70,37 @@ export class EclGallery {
       styleClasses.push('ecl-gallery--full-width');
     }
 
+    if (this.grid) {
+      styleClasses.push('ecl-gallery--grid', `ecl-gallery--template-${this.gridTemplate}`, `ecl-gallery--ratio-${this.ratio}`);
+    }
+
+    if (this.disableOverlay) {
+      styleClasses.push('.ecl-gallery--no-overlay');
+    }
+
     return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   componentDidRender() {
     const items = this.el.querySelectorAll('.ecl-gallery__item');
     this.el.querySelector('.ecl-gallery__list').innerHTML = '';
     this.el.querySelector('.ecl-gallery__list').append(...items);
+    
+    const images = [
+      ...this.el.querySelectorAll('.ecl-gallery__image'),
+      ...this.el.querySelectorAll('.ecl-gallery__slider-previous'),
+      ...this.el.querySelectorAll('.ecl-gallery__slider-next'),
+    ];
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        this.addScopedClassToDetailActions();
+      });
+    });
 
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-gallery-vanilla.js');
@@ -75,10 +121,15 @@ export class EclGallery {
     return (
       <section
         class={this.getClass()}
+        id={this.elId}
         data-ecl-gallery
-        data-ecl-gallery-visible-items={this.visibleItems}
-        {...!this.expandable && ({ 'data-ecl-gallery-not-expandable' : true })}
+        {...( !this.expandable 
+          ? { 'data-ecl-gallery-not-expandable': true } 
+          : { 'data-ecl-gallery-visible-items': this.visibleItems }
+        )}
         {...this.noOverlay && ({ 'data-ecl-gallery-no-overlay' : true })}
+        {...this.disableOverlay && ({ 'data-ecl-gallery-no-overlay' : true })}
+        {...(!this.expandable && this.srGalleryLabel) && ({ 'aria-label': this.srGalleryLabel })}
       >
         <ul class="ecl-gallery__list">
           <slot></slot>
@@ -86,8 +137,10 @@ export class EclGallery {
         <div class="ecl-gallery__footer">
         {this.expandable ? (
           <div class="ecl-gallery__info">
-            <strong class="ecl-gallery__info-total" data-ecl-gallery-count>0</strong>
-            {this.counterLabel},
+            <div class="ecl-gallery__info-total">
+              <strong data-ecl-gallery-count>0</strong>
+              {this.counterLabel}
+            </div>
             {this.viewAllLabel || this.viewAllExpandedLabel ? (
               <ecl-button
                 styleClass={`ecl-gallery__view-all sc-ecl-gallery-${this.theme}`}
@@ -128,13 +181,14 @@ export class EclGallery {
               theme={this.theme}
               style-class={`ecl-gallery__close-button sc-ecl-gallery-${this.theme}`}
               variant="ghost"
+              hide-label
               data-ecl-gallery-close
             >
               {this.closeLabel}
               <ecl-icon
                 style-class={`sc-ecl-gallery-${this.theme}`}
-                icon="close-filled"
-                size="s"
+                icon="close"
+                size="m"
                 slot="icon-after"
               ></ecl-icon>
             </ecl-button>
@@ -150,39 +204,84 @@ export class EclGallery {
             data-ecl-gallery-overlay-footer
           >
             <div class="ecl-container">
-             <div class="ecl-gallery__detail-actions">
-                <ecl-link
-                  theme={this.theme}
-                  style-class={`ecl-gallery__download sc-ecl-gallery-${this.theme}`}
-                  data-ecl-gallery-overlay-download
-                  variant="standalone"
-                  path=""
-                  target="blank"
-                >
-                  {this.fullScreenLabel}
-                  <ecl-icon
-                    icon="fullscreen"
-                    size="fluid"
-                    slot="icon-after"
-                  ></ecl-icon>
+              <div class="ecl-gallery__detail-container">
+                <div class="ecl-gallery__pager">
+                  <div class="ecl-gallery__detail-counter">
+                    <span data-ecl-gallery-overlay-counter-current>0</span>
+                      {` ${this.counterSeparator} `}
+                    <span data-ecl-gallery-overlay-counter-max>0</span>
+                  </div>
+                  <div class="ecl-gallery__controls">
+                    <ecl-button
+                      theme={this.theme}
+                      style-class={`ecl-gallery__slider-previous sc-ecl-gallery-${this.theme}`}
+                      data-ecl-gallery-overlay-previous
+                      variant="ghost"
+                      type="button"
+                      hide-label
+                    >
+                      <ecl-icon
+                        style-class={`sc-ecl-gallery-${this.theme}`}
+                        slot="icon-before"
+                        size="s"
+                        rotate="270"
+                        icon="corner-arrow"
+                      ></ecl-icon>
+                      {this.prevLabel}
+                    </ecl-button>
+                  </div>
+                  <ecl-button
+                    theme={this.theme}
+                    style-class={`ecl-gallery__slider-next sc-ecl-gallery-${this.theme}`}
+                    data-ecl-gallery-overlay-next
+                    variant="ghost"
+                    type="button"
+                    hide-label
+                  >
+                    {this.nextLabel}
+                    <ecl-icon
+                      style-class={`sc-ecl-gallery-${this.theme}`}
+                      slot="icon-after"
+                      size="s"
+                      rotate="90"
+                      icon="corner-arrow"
+                    ></ecl-icon>
+                  </ecl-button>
+                </div>       
+                <div class="ecl-gallery__detail-actions">
+                  <ecl-link
+                    theme={this.theme}
+                    style-class={`ecl-gallery__download sc-ecl-link-${this.theme} sc-ecl-gallery-${this.theme}`}
+                    data-ecl-gallery-overlay-download
+                    variant="standalone"
+                    path=""
+                    target="blank"
+                  >
+                    {this.fullScreenLabel}
+                    <ecl-icon
+                      icon="fullscreen"
+                      size="fluid"
+                      slot="icon-after"
+                    ></ecl-icon>
 
-                </ecl-link>
-              { this.shareLabel ? 
-                <ecl-link
-                  theme={this.theme}
-                  style-class={`ecl-gallery__share sc-ecl-gallery-${this.theme}`}
-                  data-ecl-gallery-overlay-share
-                  variant="standalone"
-                  path=""
-                >
-                  {this.shareLabel}
-                  <ecl-icon
-                    icon="share"
-                    size="fluid"
-                    slot="icon-after"
-                  ></ecl-icon>
-                </ecl-link> : ''
-              }
+                  </ecl-link>
+                { this.shareLabel ? 
+                  <ecl-link
+                    theme={this.theme}
+                    style-class={`ecl-gallery__share sc-ecl-gallery-${this.theme}`}
+                    data-ecl-gallery-overlay-share
+                    variant="standalone"
+                    path=""
+                  >
+                    {this.shareLabel}
+                    <ecl-icon
+                      icon="share"
+                      size="fluid"
+                      slot="icon-after"
+                    ></ecl-icon>
+                  </ecl-link> : ''
+                }
+                </div>
               </div>
               <div
                 class="ecl-gallery__detail-description"
@@ -194,47 +293,6 @@ export class EclGallery {
                 data-ecl-gallery-overlay-meta
               >
               </div>    
-              <div class="ecl-gallery__pager">
-                <ecl-button
-                  theme={this.theme}
-                  style-class={`ecl-gallery__slider-previous sc-ecl-gallery-${this.theme}`}
-                  data-ecl-gallery-overlay-previous
-                  variant="ghost"
-                  type="button"
-                  hide-label
-                >
-                  <ecl-icon
-                    style-class={`sc-ecl-gallery-${this.theme}`}
-                    slot="icon-before"
-                    size="s"
-                    rotate="270"
-                    icon="corner-arrow"
-                  ></ecl-icon>
-                  {this.prevLabel}
-                </ecl-button>
-                <div class="ecl-gallery__detail-counter">
-                  <span data-ecl-gallery-overlay-counter-current>0</span>
-                    {` ${this.counterSeparator} `}
-                  <span data-ecl-gallery-overlay-counter-max>0</span>
-                </div>
-                <ecl-button
-                  theme={this.theme}
-                  style-class={`ecl-gallery__slider-next sc-ecl-gallery-${this.theme}`}
-                  data-ecl-gallery-overlay-next
-                  variant="ghost"
-                  type="button"
-                  hide-label
-                >
-                  {this.nextLabel}
-                  <ecl-icon
-                    style-class={`sc-ecl-gallery-${this.theme}`}
-                    slot="icon-after"
-                    size="s"
-                    rotate="90"
-                    icon="corner-arrow"
-                  ></ecl-icon>
-                </ecl-button>
-              </div>       
             </div>
           </footer>
         </dialog>
