@@ -41,7 +41,9 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/card',
-  viewport: { value: 'tablet' }, 
+  globals: {
+    viewport: { value: 'tablet' },
+  },
 };
 
 const Template = (args) => 
