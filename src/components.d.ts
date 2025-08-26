@@ -182,6 +182,7 @@ export namespace Components {
     }
     interface EclCarousel {
         "carouselId": string;
+        "colorMode": string;
         /**
           * @default 'of'
          */
@@ -190,6 +191,10 @@ export namespace Components {
           * @default false
          */
         "eclScript": boolean;
+        /**
+          * @default false
+         */
+        "fullWidth": boolean;
         "slidesNumber": number;
         /**
           * @default 'Go to slide %d'
@@ -215,9 +220,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclCarouselItem {
@@ -227,6 +229,7 @@ export namespace Components {
          */
         "bannerTitle": string;
         "centered": boolean;
+        "credit": string;
         "ctaLabel": string;
         "ctaLink": string;
         /**
@@ -241,9 +244,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclCategoryFilter {
@@ -2623,6 +2623,7 @@ declare namespace LocalJSX {
     }
     interface EclCarousel {
         "carouselId"?: string;
+        "colorMode"?: string;
         /**
           * @default 'of'
          */
@@ -2631,6 +2632,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "eclScript"?: boolean;
+        /**
+          * @default false
+         */
+        "fullWidth"?: boolean;
         "slidesNumber"?: number;
         /**
           * @default 'Go to slide %d'
@@ -2656,9 +2661,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclCarouselItem {
@@ -2668,6 +2670,7 @@ declare namespace LocalJSX {
          */
         "bannerTitle"?: string;
         "centered"?: boolean;
+        "credit"?: string;
         "ctaLabel"?: string;
         "ctaLink"?: string;
         /**
@@ -2682,9 +2685,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclCategoryFilter {

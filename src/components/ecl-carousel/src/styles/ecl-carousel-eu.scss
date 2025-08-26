@@ -1,15 +1,13 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-carousel/carousel-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/carousel/carousel' with (
+  $theme: theme.$theme,
+  $carousel: var.$carousel
+);
 
-.ecl-u-sr-only.sc-ecl-carousel-eu {
-  clip: rect(0, 0, 0, 0) !important;
-  border: 0 !important;
-  clip-path: inset(50%) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  white-space: nowrap !important;
-  width: 1px !important;
+.ecl-carousel__navigation-item.sc-ecl-carousel-ec:last-child {
+  margin-inline-end: var(--s-xs);
 }

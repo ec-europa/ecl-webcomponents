@@ -12,11 +12,11 @@ const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()
 module.exports = {
   scripts: [
     {
-      entry: path.resolve(nodeModules, '@ecl/vanilla-component-carousel/carousel.js'),
+      entry: path.resolve(nodeModules, '@ecl/carousel/carousel.js'),
       dest: path.resolve(outputFolder, 'scripts/ecl-carousel-vanilla.js'),
       options: {
-        banner,
-        moduleName: 'ECL',
+        format: 'iife',
+        moduleName: 'CAROUSEL',
         includePaths,
         sourceMap: false,
       },
