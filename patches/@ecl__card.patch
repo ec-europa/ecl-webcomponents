@@ -1,0 +1,12 @@
+diff --git a/card.scss b/card.scss
+index aa7578c0970adad8f352b1c386e9577c4f4638e0..666b6f0f2cf8ad3357c98fd096260c9d703e6496 100644
+--- a/card.scss
++++ b/card.scss
+@@ -15,7 +15,6 @@ $card: null !default;
+   border-radius: map.get($card, 'border-radius');
+   box-shadow: map.get($card, 'shadow');
+   box-sizing: border-box;
+-  height: 100%;
+   margin: 0;
+   overflow: hidden;
+   overflow-wrap: break-word;
