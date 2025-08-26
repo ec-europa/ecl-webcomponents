@@ -21,6 +21,9 @@ patchedDependencies:
   '@ecl/builder@5.0.0-alpha.15':
     hash: d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec
     path: patches/@ecl__builder@5.0.0-alpha.15.patch
+  '@ecl/card':
+    hash: 47d193af49511053eb04a9537ca5c39ff19e2bb81f03c5c06adcff68b2332bcd
+    path: patches/@ecl__card.patch
   '@ecl/content-block@5.0.0-alpha.15':
     hash: 86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752
     path: patches/@ecl__content-block@5.0.0-alpha.15.patch
@@ -579,7 +582,7 @@ importers:
         version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.33.0(jiti@1.21.7))
       '@ecl/card':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=47d193af49511053eb04a9537ca5c39ff19e2bb81f03c5c06adcff68b2332bcd)
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -14194,7 +14197,7 @@ snapshots:
       '@ecl/icon': 5.0.0-alpha.15
       '@ecl/indicator': 5.0.0-alpha.15
 
-  '@ecl/card@5.0.0-alpha.15':
+  '@ecl/card@5.0.0-alpha.15(patch_hash=47d193af49511053eb04a9537ca5c39ff19e2bb81f03c5c06adcff68b2332bcd)':
     dependencies:
       '@ecl/content-block': 5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)
       '@ecl/picture': 5.0.0-alpha.15
@@ -14432,7 +14435,7 @@ snapshots:
       '@ecl/blockquote': 5.0.0-alpha.15
       '@ecl/breadcrumb': 5.0.0-alpha.15
       '@ecl/button': 5.0.0-alpha.15
-      '@ecl/card': 5.0.0-alpha.15
+      '@ecl/card': 5.0.0-alpha.15(patch_hash=47d193af49511053eb04a9537ca5c39ff19e2bb81f03c5c06adcff68b2332bcd)
       '@ecl/carousel': 5.0.0-alpha.15
       '@ecl/category-filter': 5.0.0-alpha.15
       '@ecl/checkbox': 5.0.0-alpha.15
@@ -14524,7 +14527,7 @@ snapshots:
       '@ecl/blockquote': 5.0.0-alpha.15
       '@ecl/breadcrumb': 5.0.0-alpha.15
       '@ecl/button': 5.0.0-alpha.15
-      '@ecl/card': 5.0.0-alpha.15
+      '@ecl/card': 5.0.0-alpha.15(patch_hash=47d193af49511053eb04a9537ca5c39ff19e2bb81f03c5c06adcff68b2332bcd)
       '@ecl/carousel': 5.0.0-alpha.15
       '@ecl/category-filter': 5.0.0-alpha.15
       '@ecl/checkbox': 5.0.0-alpha.15
