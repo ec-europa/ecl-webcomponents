@@ -172,6 +172,10 @@ export namespace Components {
         "image": string;
         "imageAlt": string;
         /**
+          * @default false
+         */
+        "imageZoom": boolean;
+        /**
           * @default ''
          */
         "styleClass": string;
@@ -2612,6 +2616,10 @@ declare namespace LocalJSX {
     interface EclCard {
         "image"?: string;
         "imageAlt"?: string;
+        /**
+          * @default false
+         */
+        "imageZoom"?: boolean;
         /**
           * @default ''
          */

@@ -159,13 +159,13 @@
       "@ecl/builder@3.13.0": "patches/@ecl__builder@3.13.0.patch",
       "@ecl/theme-dev@3.13.0": "patches/@ecl__theme-dev@3.13.0.patch",
       "@ecl/vanilla-component-button@3.13.0": "patches/@ecl__vanilla-component-button@3.13.0.patch",
-      "@ecl/vanilla-component-card@3.13.0": "patches/@ecl__vanilla-component-card@3.13.0.patch",
       "@ecl/vanilla-component-carousel@3.13.0": "patches/@ecl__vanilla-component-carousel@3.13.0.patch",
       "@ecl/vanilla-component-category-filter@3.13.0": "patches/@ecl__vanilla-component-category-filter@3.13.0.patch",
       "@stencil/react-output-target@0.5.3": "patches/@stencil__react-output-target@0.5.3.patch",
       "@ecl/builder@5.0.0-alpha.15": "patches/@ecl__builder@5.0.0-alpha.15.patch",
       "@ecl/content-block@5.0.0-alpha.15": "patches/@ecl__content-block@5.0.0-alpha.15.patch",
-      "@ecl/select@5.0.0-alpha.15": "patches/@ecl__select@5.0.0-alpha.15.patch"
+      "@ecl/select@5.0.0-alpha.15": "patches/@ecl__select@5.0.0-alpha.15.patch",
+      "@ecl/card": "patches/@ecl__card.patch"
     }
   }
 }

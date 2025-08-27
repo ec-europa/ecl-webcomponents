@@ -11,6 +11,7 @@ describe('ecl-card', () => {
       theme="ec"
       image-alt="Image alternative"
       image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+      image-zoom
     >
     <ecl-content-block
       theme="ec"
