@@ -88,7 +88,7 @@ exports[`ecl-banner renders correctly with an image 1`] = `
   <!---->
   <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--color-dark ecl-banner--font-m ecl-banner--h-left ecl-banner--m ecl-banner--v-center">
     <figure class="ecl-banner__picture-container">
-      <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imgclass="ecl-banner__image sc-ecl-banner-ec" styleclass="ecl-banner__picture sc-ecl-banner-ec"></ecl-picture>
+      <ecl-picture data-ecl-banner-image image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imgclass="ecl-banner__image sc-ecl-banner-ec" styleclass="ecl-banner__picture sc-ecl-banner-ec"></ecl-picture>
       <footer class="ecl-banner__credit" data-ecl-banner-footer>
         <div class="ecl-container">
           © Copyright or credit
