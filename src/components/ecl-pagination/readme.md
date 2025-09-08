@@ -15,7 +15,8 @@
 | `path`       | `path`        |             | `string`  | `undefined` |
 | `previous`   | `previous`    |             | `boolean` | `undefined` |
 | `styleClass` | `style-class` |             | `string`  | `''`        |
-| `theme`      | `theme`       |             | `string`  | `'ec'`      |
+| `theme`      | `theme`       |             | `string`  | `undefined` |
+| `truncation` | `truncation`  |             | `boolean` | `false`     |
 
 
 ## Dependencies

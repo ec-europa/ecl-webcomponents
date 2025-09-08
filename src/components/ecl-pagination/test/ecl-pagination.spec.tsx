@@ -9,18 +9,25 @@ describe('ecl-pagination', () => {
     const page = await newSpecPage({
       components: [EclPagination, EclPaginationItem, EclLink, EclIcon],
       html: `<ecl-pagination
-        theme="ec"
       >
         <ecl-pagination-item
           path="/example.html"
-          theme="ec"
           aria-label="Previous page"
           previous
         >
           Previous
         </ecl-pagination-item>
         <ecl-pagination-item
-          theme="ec"
+          path="/example.html"
+          aria-label="Page 1"
+        >
+          1
+        </ecl-pagination-item>
+        <ecl-pagination-item
+          truncation
+        >
+        </ecl-pagination-item>
+        <ecl-pagination-item
           path="/example.html"
           aria-label="Page 24"
          >
@@ -28,14 +35,12 @@ describe('ecl-pagination', () => {
          </ecl-pagination-item>
         <ecl-pagination-item
           path="/example.html"
-          theme="ec"
           aria-label="Page 25"
         >
           25
         </ecl-pagination-item>
         <ecl-pagination-item
           path="/example.html"
-          theme="ec"
           aria-label="Page 26"
           current
         >
@@ -43,20 +48,27 @@ describe('ecl-pagination', () => {
         </ecl-pagination-item>
         <ecl-pagination-item
           path="/example.html"
-          theme="ec"
           aria-label="Page 27"
         >
           27
         </ecl-pagination-item>
         <ecl-pagination-item
           current-page
-          theme="ec"
           aria-label="Page 28"
         >
           28
         </ecl-pagination-item>
         <ecl-pagination-item
-          theme="ec"
+          truncation
+        >
+        </ecl-pagination-item>
+        <ecl-pagination-item
+          path="/example.html"
+          aria-label="Page 40"
+        >
+          40
+        </ecl-pagination-item>
+        <ecl-pagination-item
           next
           aria-label="Next page"
         >

@@ -9,6 +9,10 @@
   $link: var.$link
 );
 
+.ecl-link--icon-only ::slotted([slot^='icon-']) {
+  display: flex;
+}
+
 :host ::slotted(ecl-icon[slot='icon-after']) svg {
   margin-inline-start: var(--s-3xs);
   vertical-align: middle;

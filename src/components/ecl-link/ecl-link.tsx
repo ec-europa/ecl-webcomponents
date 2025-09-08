@@ -21,6 +21,7 @@ export class EclLink {
   @Prop() variant: string = 'default';
   @Prop() titleAttr: string;
   @Prop() external: boolean = false;
+  @Prop() hideLabel: boolean = false;
   @Prop() ariaLabel: string;
   @Prop() srExternal: string;
   @Prop() name: string;
@@ -41,6 +42,10 @@ export class EclLink {
 
     if (this.inverted) {
       styleClasses.push('ecl-link--inverted');
+    }
+
+    if (this.hideLabel) {
+      styleClasses.push('ecl-link--icon-only');
     }
 
     if (this.noVisited) {
@@ -132,7 +137,9 @@ export class EclLink {
           <ecl-indicator ecl-script value={this.indicatorValue}></ecl-indicator>
         </span>
       )}
+      <span class="ecl-link__label">
         <slot></slot>
+      </span>
       {(this.external || (this.hasIconAfter && !this.indicator)) && (
         <slot name="icon-after">{ this.external ? this.getExternal() : '' }</slot>
       )}
