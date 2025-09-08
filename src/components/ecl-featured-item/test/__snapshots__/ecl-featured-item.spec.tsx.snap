@@ -28,7 +28,9 @@ exports[`ecl-featured-item renders 1`] = `
         <ecl-link style-class="ecl-featured-item__link sc-ecl-featured-item-ec">
           <!---->
           <a class="ecl-featured-item__link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-featured-item-ec" href="/example.html">
-            Read more
+            <span class="ecl-link__label">
+              Read more
+            </span>
             <slot-fb hidden="" name="icon-after"></slot-fb>
             <ecl-icon class="ecl-link__icon" slot="icon-after" style-class="sc-ecl-featured-item-ec">
               <span class="ecl-icon sc-ecl-featured-item-ec wt-icon--arrow-left wt-icon--flip-horizontal wt-icon--placeholder wt-icon--xs"></span>

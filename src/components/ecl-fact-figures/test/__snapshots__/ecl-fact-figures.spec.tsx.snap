@@ -112,7 +112,9 @@ exports[`ecl-fact-figures renders 1`] = `
       <ecl-link style-class="ecl-fact-figures__view-all-link">
         <!---->
         <a class="ecl-fact-figures__view-all-link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone" href="/example">
-          View all
+          <span class="ecl-link__label">
+            View all
+          </span>
           <slot-fb hidden="" name="icon-after"></slot-fb>
           <ecl-icon class="ecl-link__icon" slot="icon-after">
             <span class="ecl-icon wt-icon--arrow-left wt-icon--flip-horizontal wt-icon--placeholder wt-icon--xs"></span>
