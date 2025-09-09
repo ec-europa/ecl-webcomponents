@@ -2,22 +2,34 @@ import { randomizedLink } from "../../utils/randomizedLink";
 
 export default {
   title: 'Components/Navigation/pagination',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
-const Template = args =>
+const Template = () =>
   `<ecl-pagination
-    theme="${args.theme}"
   >
     <ecl-pagination-item
       path="${randomizedLink('/example.html')}"
-      theme="${args.theme}"
       aria-label="Previous page"
       previous
     >
       Previous
     </ecl-pagination-item>
     <ecl-pagination-item
-      theme="${args.theme}"
+      path="${randomizedLink('/example.html')}"
+      aria-label="Page 1"
+     >
+      1
+    </ecl-pagination-item>
+    <ecl-pagination-item
+      truncation
+     >
+     </ecl-pagination-item>
+    <ecl-pagination-item
       path="${randomizedLink('/example.html')}"
       aria-label="Page 24"
      >
@@ -25,14 +37,12 @@ const Template = args =>
      </ecl-pagination-item>
     <ecl-pagination-item
       path="${randomizedLink('/example.html')}"
-      theme="${args.theme}"
       aria-label="Page 25"
     >
       25
     </ecl-pagination-item>
     <ecl-pagination-item
       path="${randomizedLink('/example.html')}"
-      theme="${args.theme}"
       aria-label="Page 26"
       current
     >
@@ -40,20 +50,27 @@ const Template = args =>
     </ecl-pagination-item>
     <ecl-pagination-item
       path="${randomizedLink('/example.html')}"
-      theme="${args.theme}"
       aria-label="Page 27"
     >
       27
     </ecl-pagination-item>
     <ecl-pagination-item
       current-page
-      theme="${args.theme}"
       aria-label="Page 28"
     >
       28
     </ecl-pagination-item>
     <ecl-pagination-item
-      theme="${args.theme}"
+      truncation
+     >
+     </ecl-pagination-item>
+    <ecl-pagination-item
+      path="${randomizedLink('/example.html')}"
+      aria-label="Page 40"
+    >
+      40
+    </ecl-pagination-item>
+    <ecl-pagination-item
       next
       aria-label="Next page"
     >
@@ -63,3 +80,8 @@ const Template = args =>
 
 export const Pagination = Template.bind({});
 Pagination.storyName = 'default';
+Pagination.argTypes = {
+  color_mode: {
+    table: { disable: true },
+  },
+}

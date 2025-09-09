@@ -12,6 +12,7 @@
 | `ariaLabel`      | `aria-label`      |             | `string`  | `undefined` |
 | `download`       | `download`        |             | `boolean` | `false`     |
 | `external`       | `external`        |             | `boolean` | `false`     |
+| `hideLabel`      | `hide-label`      |             | `boolean` | `false`     |
 | `indicator`      | `indicator`       |             | `boolean` | `false`     |
 | `indicatorValue` | `indicator-value` |             | `string`  | `undefined` |
 | `inverted`       | `inverted`        |             | `boolean` | `false`     |
