@@ -39,9 +39,6 @@ patchedDependencies:
   '@ecl/vanilla-component-carousel@3.13.0':
     hash: 3546b846e0440ff2e10073e828289e1324bb721c13b6cc8dca9ad57572158fcb
     path: patches/@ecl__vanilla-component-carousel@3.13.0.patch
-  '@ecl/vanilla-component-category-filter@3.13.0':
-    hash: bdaed1fc75d7ffcc9186cdd0b0ee588ecff032ed89a33f2686e833a76276688b
-    path: patches/@ecl__vanilla-component-category-filter@3.13.0.patch
   '@stencil/react-output-target@0.5.3':
     hash: 403ac53588c2362c9db2125ba3fb502cfee8a4ac96ab3c883a9e43c2be4a423a
     path: patches/@stencil__react-output-target@0.5.3.patch
@@ -623,20 +620,17 @@ importers:
   src/components/ecl-category-filter:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.35.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.35.0(jiti@1.21.7))
+      '@ecl/category-filter':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-category-filter':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=bdaed1fc75d7ffcc9186cdd0b0ee588ecff032ed89a33f2686e833a76276688b)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -3236,9 +3230,6 @@ packages:
 
   '@ecl/vanilla-component-carousel@3.13.0':
     resolution: {integrity: sha512-nLf03MzeUPkTybKCcLnDRgi+IxoNwei8CymZ8k4+Mg56y2tOad3c2/fIEYu3xV9kR9XTHPNbI5I4mvr8D6PSwg==}
-
-  '@ecl/vanilla-component-category-filter@3.13.0':
-    resolution: {integrity: sha512-/qpb1OBE+0pzeIPOYb3yLFpN2bYbUKjxGTW0zsGRayGOxH12MMyJjSA9mo6UUmA0mSaKtBsKjhYAVkCal7VLGg==}
 
   '@ecl/vanilla-component-link@3.13.0':
     resolution: {integrity: sha512-KrRISO2jswpAXnSoJz6ofd0iTx7lIcL8aRTpBUQsedeL9zYxgGMSHjQYR6Xb845mXGFhFJYuRg3qlRZt7RyrCw==}
@@ -11966,14 +11957,14 @@ snapshots:
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@babel/code-frame': 7.27.1
-      '@babel/generator': 7.28.0
+      '@babel/generator': 7.28.3
       '@babel/helper-compilation-targets': 7.27.2
-      '@babel/helper-module-transforms': 7.27.3(@babel/core@7.28.0)
-      '@babel/helpers': 7.27.6
-      '@babel/parser': 7.28.0
+      '@babel/helper-module-transforms': 7.28.3(@babel/core@7.28.0)
+      '@babel/helpers': 7.28.4
+      '@babel/parser': 7.28.4
       '@babel/template': 7.27.2
-      '@babel/traverse': 7.28.0
-      '@babel/types': 7.28.0
+      '@babel/traverse': 7.28.4
+      '@babel/types': 7.28.4
       convert-source-map: 2.0.0
       debug: 4.4.1(supports-color@5.5.0)
       gensync: 1.0.0-beta.2
@@ -12312,6 +12303,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@babel/helper-module-transforms@7.28.3(@babel/core@7.28.0)':
+    dependencies:
+      '@babel/core': 7.28.0
+      '@babel/helper-module-imports': 7.27.1
+      '@babel/helper-validator-identifier': 7.27.1
+      '@babel/traverse': 7.28.4
+    transitivePeerDependencies:
+      - supports-color
+
   '@babel/helper-module-transforms@7.28.3(@babel/core@7.28.4)':
     dependencies:
       '@babel/core': 7.28.4
@@ -12450,7 +12450,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.28.0
       '@babel/helper-plugin-utils': 7.27.1
-      '@babel/traverse': 7.28.0
+      '@babel/traverse': 7.28.4
     transitivePeerDependencies:
       - supports-color
 
@@ -15005,10 +15005,6 @@ snapshots:
       '@ecl/vanilla-component-page-banner': 3.13.0
       '@ecl/vanilla-layout-grid': 3.13.0
 
-  '@ecl/vanilla-component-category-filter@3.13.0(patch_hash=bdaed1fc75d7ffcc9186cdd0b0ee588ecff032ed89a33f2686e833a76276688b)':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
   '@ecl/vanilla-component-link@3.13.0':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
@@ -17525,7 +17521,7 @@ snapshots:
   babel-plugin-jest-hoist@28.1.3:
     dependencies:
       '@babel/template': 7.27.2
-      '@babel/types': 7.28.0
+      '@babel/types': 7.28.4
       '@types/babel__core': 7.20.5
       '@types/babel__traverse': 7.20.7
 

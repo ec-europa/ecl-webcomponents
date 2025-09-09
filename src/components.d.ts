@@ -256,9 +256,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclCategoryFilterItem {
@@ -278,9 +275,6 @@ export namespace Components {
           * @default false
          */
         "subItems": boolean;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclContentBlock {
@@ -2672,9 +2666,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclCategoryFilterItem {
@@ -2694,9 +2685,6 @@ declare namespace LocalJSX {
           * @default false
          */
         "subItems"?: boolean;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclContentBlock {

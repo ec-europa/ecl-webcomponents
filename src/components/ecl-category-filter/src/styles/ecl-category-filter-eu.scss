@@ -1,5 +1,9 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-category-filter/category-filter-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/category-filter/category-filter' with (
+  $theme: theme.$theme,
+  $category-filter: var.$category-filter
+);
 
 .ecl-category-filter__item-icon.sc-ecl-category-filter-eu {
   margin: -3px 0 !important;
