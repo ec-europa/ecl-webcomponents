@@ -81,4 +81,8 @@ const Template = (args) =>
 export const SocialMediaFollow = Template.bind({});
 SocialMediaFollow.storyName = 'default';
 SocialMediaFollow.args = getArgs();
-SocialMediaFollow.argTypes = getArgTypes();
+SocialMediaFollow.argTypes = getArgTypes(
+  color_mode: {
+    table: { disable: true },
+  },
+);
