@@ -8,6 +8,9 @@ const getArgs = () => {
 
 const getArgTypes = () => {
   return {
+    color_mode: {
+      table: { disable: true },
+    },
     variant: {
       type: { name: 'select' },
       options: ['horizontal', 'vertical'],
@@ -81,8 +84,4 @@ const Template = (args) =>
 export const SocialMediaFollow = Template.bind({});
 SocialMediaFollow.storyName = 'default';
 SocialMediaFollow.args = getArgs();
-SocialMediaFollow.argTypes = getArgTypes(
-  color_mode: {
-    table: { disable: true },
-  },
-);
+SocialMediaFollow.argTypes = getArgTypes();
