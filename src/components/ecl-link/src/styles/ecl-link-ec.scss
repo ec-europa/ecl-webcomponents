@@ -13,12 +13,12 @@
   display: flex;
 }
 
-:host ::slotted(ecl-icon[slot='icon-after']) svg {
+:host .ecl-link:not(.ecl-link--icon-only) ::slotted(ecl-icon[slot='icon-after']) svg {
   margin-inline-start: var(--s-3xs);
   vertical-align: middle;
 }
 
-:host ::slotted(ecl-icon[slot='icon-before']) svg {
+:host .ecl-link:not(.ecl-link--icon-only) ::slotted(ecl-icon[slot='icon-before']) svg {
   margin-inline-end: var(--s-3xs);
   vertical-align: middle;
 }
