@@ -4,7 +4,9 @@ exports[`ecl-link renders correctly as a default link 1`] = `
 <ecl-link path="/example.html" variant="default">
   <!---->
   <a class="ecl-link ecl-link--default" href="/example.html">
-    A default link
+    <span class="ecl-link__label">
+      A default link
+    </span>
   </a>
 </ecl-link>
 `;
@@ -13,7 +15,9 @@ exports[`ecl-link renders correctly as a standalone link 1`] = `
 <ecl-link path="/example.html" variant="standalone">
   <!---->
   <a class="ecl-link ecl-link--standalone" href="/example.html">
-    A standalone link
+    <span class="ecl-link__label">
+      A standalone link
+    </span>
   </a>
 </ecl-link>
 `;
@@ -22,7 +26,9 @@ exports[`ecl-link renders correctly when external 1`] = `
 <ecl-link external="" path="/example.html" sr-external="will move you outside of this website" variant="standalone">
   <!---->
   <a class="ecl-link ecl-link--standalone" href="/example.html">
-    Link label
+    <span class="ecl-link__label">
+      Link label
+    </span>
     <slot-fb name="icon-after">
       <ecl-icon class="ecl-link__icon" style-class="ecl-link__icon sc-ecl-link-ec" title-tag="will move you outside of this website">
         <span class="ecl-icon ecl-link__icon sc-ecl-link-ec wt-icon--2xs wt-icon--external wt-icon--placeholder"></span>
@@ -36,7 +42,9 @@ exports[`ecl-link renders correctly with an icon after 1`] = `
 <ecl-link path="/example.html" variant="standalone">
   <!---->
   <a class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone" href="/example.html">
-    Link label
+    <span class="ecl-link__label">
+      Link label
+    </span>
     <slot-fb hidden="" name="icon-after"></slot-fb>
     <ecl-icon class="ecl-link__icon" icon="check" slot="icon-after">
       <span class="ecl-icon wt-icon--check wt-icon--placeholder wt-icon--xs"></span>
@@ -52,7 +60,9 @@ exports[`ecl-link renders correctly with an icon before 1`] = `
     <ecl-icon class="ecl-link__icon" icon="arrow-left" slot="icon-before">
       <span class="ecl-icon wt-icon--arrow-left wt-icon--placeholder wt-icon--xs"></span>
     </ecl-icon>
-    Link label
+    <span class="ecl-link__label">
+      Link label
+    </span>
   </a>
 </ecl-link>
 `;
@@ -61,7 +71,9 @@ exports[`ecl-link renders correctly with an indicator 1`] = `
 <ecl-link indicator="true" indicator-value="5" path="/example.html" variant="standalone">
   <!---->
   <a class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone" href="/example.html">
-    Link label
+    <span class="ecl-link__label">
+      Link label
+    </span>
     <span class="ecl-link__icon-container">
       <ecl-icon class="ecl-link__icon" icon="check" slot="icon-after">
         <span class="ecl-icon wt-icon--check wt-icon--placeholder wt-icon--xs"></span>

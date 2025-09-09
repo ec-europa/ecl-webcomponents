@@ -1,34 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-pagination renders 1`] = `
-<ecl-pagination theme="ec">
+<ecl-pagination>
   <!---->
   <div class="ecl-pagination">
     <ul class="ecl-pagination__list">
       <li class="ecl-pagination__item ecl-pagination__item--previous sc-ecl-pagination-ec">
-        <ecl-link aria-label="Previous page">
+        <ecl-link aria-label="Previous page" hide-label="">
           <!---->
-          <a aria-label="Previous page" class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone sc-ecl-pagination-ec" href="/example.html">
+          <a aria-label="Previous page" class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--icon-only ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
             <ecl-icon class="ecl-link__icon" slot="icon-before" style-class="sc-ecl-pagination-ec">
               <span class="ecl-icon sc-ecl-pagination-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270 wt-icon--xs"></span>
             </ecl-icon>
-            Previous
+            <span class="ecl-link__label">
+              Previous
+            </span>
           </a>
         </ecl-link>
       </li>
       <li class="ecl-pagination__item sc-ecl-pagination-ec">
+        <ecl-link aria-label="Page 1">
+          <!---->
+          <a aria-label="Page 1" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
+            <span class="ecl-link__label">
+              1
+            </span>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-pagination__item ecl-pagination__item--truncation sc-ecl-pagination-ec">
+        <span class="ecl-pagination__text ecl-pagination__text--summary sc-ecl-pagination-ec">
+          ...
+        </span>
+      </li>
+      <li class="ecl-pagination__item sc-ecl-pagination-ec">
         <ecl-link aria-label="Page 24">
           <!---->
-          <a aria-label="Page 24" class="ecl-link ecl-link--standalone sc-ecl-pagination-ec" href="/example.html">
-            24
+          <a aria-label="Page 24" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
+            <span class="ecl-link__label">
+              24
+            </span>
           </a>
         </ecl-link>
       </li>
       <li class="ecl-pagination__item sc-ecl-pagination-ec">
         <ecl-link aria-label="Page 25">
           <!---->
-          <a aria-label="Page 25" class="ecl-link ecl-link--standalone sc-ecl-pagination-ec" href="/example.html">
-            25
+          <a aria-label="Page 25" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
+            <span class="ecl-link__label">
+              25
+            </span>
           </a>
         </ecl-link>
       </li>
@@ -43,24 +64,45 @@ exports[`ecl-pagination renders 1`] = `
       <li class="ecl-pagination__item sc-ecl-pagination-ec">
         <ecl-link aria-label="Page 27">
           <!---->
-          <a aria-label="Page 27" class="ecl-link ecl-link--standalone sc-ecl-pagination-ec" href="/example.html">
-            27
+          <a aria-label="Page 27" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
+            <span class="ecl-link__label">
+              27
+            </span>
           </a>
         </ecl-link>
       </li>
       <li class="ecl-pagination__item sc-ecl-pagination-ec">
         <ecl-link aria-label="Page 28">
           <!---->
-          <a aria-label="Page 28" class="ecl-link ecl-link--standalone sc-ecl-pagination-ec">
-            28
+          <a aria-label="Page 28" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec">
+            <span class="ecl-link__label">
+              28
+            </span>
+          </a>
+        </ecl-link>
+      </li>
+      <li class="ecl-pagination__item ecl-pagination__item--truncation sc-ecl-pagination-ec">
+        <span class="ecl-pagination__text ecl-pagination__text--summary sc-ecl-pagination-ec">
+          ...
+        </span>
+      </li>
+      <li class="ecl-pagination__item sc-ecl-pagination-ec">
+        <ecl-link aria-label="Page 40">
+          <!---->
+          <a aria-label="Page 40" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
+            <span class="ecl-link__label">
+              40
+            </span>
           </a>
         </ecl-link>
       </li>
       <li class="ecl-pagination__item ecl-pagination__item--next sc-ecl-pagination-ec">
-        <ecl-link aria-label="Next page">
+        <ecl-link aria-label="Next page" hide-label="">
           <!---->
-          <a aria-label="Next page" class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-pagination-ec">
-            Next
+          <a aria-label="Next page" class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--icon-only ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec">
+            <span class="ecl-link__label">
+              Next
+            </span>
             <slot-fb hidden="" name="icon-after"></slot-fb>
             <ecl-icon class="ecl-link__icon" slot="icon-after" style-class="sc-ecl-pagination-ec">
               <span class="ecl-icon sc-ecl-pagination-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-90 wt-icon--xs"></span>

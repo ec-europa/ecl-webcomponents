@@ -112,7 +112,9 @@ exports[`ecl-banner renders correctly with an image 1`] = `
             <ecl-link style-class="ecl-banner__link-cta sc-ecl-banner-ec">
               <!---->
               <a class="ecl-banner__link-cta ecl-link ecl-link--cta ecl-link--icon ecl-link--icon-after sc-ecl-banner-ec" href="/example.html">
-                Subscribe
+                <span class="ecl-link__label">
+                  Subscribe
+                </span>
                 <slot-fb hidden="" name="icon-after"></slot-fb>
                 <ecl-icon class="ecl-link__icon" slot="icon-after">
                   <span class="ecl-icon wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-90 wt-icon--xs"></span>

@@ -964,6 +964,10 @@ export namespace Components {
         /**
           * @default false
          */
+        "hideLabel": boolean;
+        /**
+          * @default false
+         */
         "indicator": boolean;
         "indicatorValue": string;
         /**
@@ -1252,9 +1256,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclPaginationItem {
@@ -1267,10 +1268,11 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
+        /**
+          * @default false
+         */
+        "truncation": boolean;
     }
     interface EclPicture {
         "image": string;
@@ -3415,6 +3417,10 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
+        "hideLabel"?: boolean;
+        /**
+          * @default false
+         */
         "indicator"?: boolean;
         "indicatorValue"?: string;
         /**
@@ -3703,9 +3709,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclPaginationItem {
@@ -3718,10 +3721,11 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
+        /**
+          * @default false
+         */
+        "truncation"?: boolean;
     }
     interface EclPicture {
         "image"?: string;

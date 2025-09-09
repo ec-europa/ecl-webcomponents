@@ -12,6 +12,7 @@ const getArgs = () => {
     iconPosition: 'after',
     iconRotate: '',
     iconFlip: '',
+    hideLabel: false,
     indicator: false,
     indicatorValue: 2,
   };
@@ -77,6 +78,12 @@ const getArgTypes = () => {
       ],
       if: { arg: 'icon', truthy: true },
     },
+    hideLabel: {
+      name: 'hide-label',
+      type: { name: 'boolean' },
+      description: 'hide-label',
+      if: { arg: 'icon', neq: undefined },
+    },
     indicator: {
       name: 'indicator',
       type: { name: 'boolean' },
@@ -111,6 +118,7 @@ const Template = (args) => {
       aria-label="Accessibility enhancer"
       indicator="${args.indicator}"
       indicator-value="${args.indicatorValue}"
+      ${args.hideLabel ? 'hide-label' : ''}
     >
     ${args.icon && args.iconPosition === 'before' ?
       `<ecl-icon 

@@ -15,7 +15,9 @@ exports[`ecl-social-media-follow renders 1`] = `
             <ecl-icon class="ecl-link__icon" slot="icon-before">
               <span class="ecl-icon wt-icon--m wt-icon--monochrome wt-icon--placeholder wt-icon-networks--facebook-color"></span>
             </ecl-icon>
-            Facebook
+            <span class="ecl-link__label">
+              Facebook
+            </span>
           </a>
         </ecl-link>
       </li>
@@ -26,7 +28,9 @@ exports[`ecl-social-media-follow renders 1`] = `
             <ecl-icon class="ecl-link__icon" slot="icon-before">
               <span class="ecl-icon wt-icon--m wt-icon--monochrome wt-icon--placeholder wt-icon-networks--twitter-color"></span>
             </ecl-icon>
-            Twitter
+            <span class="ecl-link__label">
+              Twitter
+            </span>
           </a>
         </ecl-link>
       </li>
@@ -37,7 +41,9 @@ exports[`ecl-social-media-follow renders 1`] = `
             <ecl-icon class="ecl-link__icon" slot="icon-before">
               <span class="ecl-icon wt-icon--m wt-icon--monochrome wt-icon--placeholder wt-icon-networks--instagram-color"></span>
             </ecl-icon>
-            Instagram
+            <span class="ecl-link__label">
+              Instagram
+            </span>
           </a>
         </ecl-link>
       </li>
@@ -48,7 +54,9 @@ exports[`ecl-social-media-follow renders 1`] = `
             <ecl-icon class="ecl-link__icon" slot="icon-before">
               <span class="ecl-icon wt-icon--m wt-icon--monochrome wt-icon--placeholder wt-icon-networks--linkedin-color"></span>
             </ecl-icon>
-            Linkedin
+            <span class="ecl-link__label">
+              Linkedin
+            </span>
           </a>
         </ecl-link>
       </li>
@@ -59,7 +67,9 @@ exports[`ecl-social-media-follow renders 1`] = `
             <ecl-icon class="ecl-link__icon" slot="icon-before">
               <span class="ecl-icon wt-icon--m wt-icon--monochrome wt-icon--placeholder wt-icon-networks--telegram-color"></span>
             </ecl-icon>
-            Telegram
+            <span class="ecl-link__label">
+              Telegram
+            </span>
           </a>
         </ecl-link>
       </li>
