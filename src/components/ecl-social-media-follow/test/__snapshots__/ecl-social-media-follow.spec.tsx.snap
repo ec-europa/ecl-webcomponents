@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-social-media-follow renders 1`] = `
-<ecl-social-media-follow description="Follow on social media" theme="ec" variant="horizontal">
+<ecl-social-media-follow description="Follow on social media" position="right" variant="horizontal">
   <!---->
-  <div class="ecl-social-media-follow ecl-social-media-follow--horizontal">
+  <div class="ecl-social-media-follow ecl-social-media-follow--horizontal ecl-social-media-follow--right">
     <p class="ecl-social-media-follow__description">
       Follow on social media
     </p>
@@ -74,22 +74,17 @@ exports[`ecl-social-media-follow renders 1`] = `
         </ecl-link>
       </li>
       <li class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec">
-        <ecl-popover ecl-script="" icon="share" icon-size="s" item-id="popover-example" list="" theme="ec" toggle-label="Popover">
+        <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
           <!---->
-          <div class="ecl-popover">
-            <a aria-controls="popover-example" aria-expanded="false" class="ecl-link ecl-link--standalone ecl-popover__toggle ecl-social-media-follow__link sc-ecl-link-ec sc-ecl-social-media-follow-ec" data-ecl-popover-toggle="data-ecl-popover-toggle">
-              <ecl-icon style-class="ecl-link__icon--before">
-                <span class="ecl-icon ecl-link__icon--before wt-icon--placeholder wt-icon--s wt-icon--share"></span>
-              </ecl-icon>
-              Popover
-            </a>
-            <div class="ecl-popover__container" hidden="" id="popover-example">
-              <div class="ecl-popover__content">
-                <ul class="ecl-popover__list"></ul>
-              </div>
-            </div>
-          </div>
-        </ecl-popover>
+          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://example.html">
+            <ecl-icon class="ecl-link__icon" slot="icon-before">
+              <span class="ecl-icon wt-icon--m wt-icon--monochrome wt-icon--placeholder wt-icon-networks--chain"></span>
+            </ecl-icon>
+            <span class="ecl-link__label">
+              Other
+            </span>
+          </a>
+        </ecl-link>
       </li>
     </ul>
   </div>

@@ -1534,10 +1534,15 @@ export namespace Components {
     }
     interface EclSocialMediaFollow {
         "description": string;
-        "styleClass": string;
         /**
-          * @default 'ec'
+          * @default false
          */
+        "inlineTitle": boolean;
+        /**
+          * @default 'left'
+         */
+        "position": string;
+        "styleClass": string;
         "theme": string;
         /**
           * @default 'horizontal'
@@ -1556,9 +1561,6 @@ export namespace Components {
         "icon": string;
         "sharePath": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclSpacing {
@@ -3963,10 +3965,15 @@ declare namespace LocalJSX {
     }
     interface EclSocialMediaFollow {
         "description"?: string;
-        "styleClass"?: string;
         /**
-          * @default 'ec'
+          * @default false
          */
+        "inlineTitle"?: boolean;
+        /**
+          * @default 'left'
+         */
+        "position"?: string;
+        "styleClass"?: string;
         "theme"?: string;
         /**
           * @default 'horizontal'
@@ -3985,9 +3992,6 @@ declare namespace LocalJSX {
         "icon"?: string;
         "sharePath"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclSpacing {

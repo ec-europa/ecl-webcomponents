@@ -5,7 +5,7 @@ import { Component, h, Prop } from '@stencil/core';
   shadow: false,
 })
 export class EclSocialMediaFollowItem {
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() sharePath: string;
   @Prop() icon: string;
@@ -18,6 +18,10 @@ export class EclSocialMediaFollowItem {
       `sc-ecl-social-media-follow-${this.theme}`,
       this.styleClass
     ].join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {
