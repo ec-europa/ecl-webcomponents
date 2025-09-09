@@ -12,7 +12,7 @@ import { Component, Prop, h } from '@stencil/core';
 
 export class EclCard {
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() image: string;
   @Prop() imageAlt: string;
   @Prop() imageZoom: boolean = false;
@@ -22,6 +22,10 @@ export class EclCard {
       `ecl-card`,
       this.styleClass
     ].join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {

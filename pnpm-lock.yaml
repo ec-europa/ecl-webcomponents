@@ -1465,26 +1465,26 @@ importers:
   src/components/ecl-popover:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.33.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.33.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/link':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/popover':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-link':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-popover':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/utility-screen-reader':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -3213,9 +3213,6 @@ packages:
 
   '@ecl/vanilla-component-page-header@3.13.0':
     resolution: {integrity: sha512-MPu2KEQVq4rE2HEaAJ+vjtSQZSWaNlFjcWf/CQp279sapns113jAfRE3lJ+DM8Rz5JSH5zYmUrFGT3nZ4tU+Pw==}
-
-  '@ecl/vanilla-component-popover@3.13.0':
-    resolution: {integrity: sha512-/Pr8WG372DuCBLAk4motIbEeeQyc6EAirocfDgi2MsSV1K1wuA3+NUvgU0PgCP1BUzZ9fSucQbVog7Z+u/1nEw==}
 
   '@ecl/vanilla-component-site-footer@3.13.0':
     resolution: {integrity: sha512-qOj+Er8fCPL1b+wflzJfX5MGJwnCtUDdzdtxtlUlQwHbZqqRxHh4a8t0g8Y5/Bauxs3CZNSRqegjEQobZwFe5A==}
@@ -14841,11 +14838,6 @@ snapshots:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
       '@ecl/vanilla-component-link': 3.13.0
       '@ecl/vanilla-layout-grid': 3.13.0
-
-  '@ecl/vanilla-component-popover@3.13.0':
-    dependencies:
-      '@ecl/dom-utils': 3.13.0
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
 
   '@ecl/vanilla-component-site-footer@3.13.0':
     dependencies:
