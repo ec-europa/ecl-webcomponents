@@ -78,6 +78,13 @@ export class EclLink {
       });
     }
 
+    const attributes = this.el.attributes;
+    Array.from(attributes).forEach((attr) => {
+      if (attr.name.startsWith('aria-')) {
+        this.el.querySelector('.ecl-link').setAttribute(attr.name, attr.value);
+      }
+    });
+
     if (this.el.querySelector('ecl-icon')) {
       this.el.querySelector('ecl-icon').classList.add('ecl-link__icon');
     }

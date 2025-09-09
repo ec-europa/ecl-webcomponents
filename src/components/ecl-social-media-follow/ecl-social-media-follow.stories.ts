@@ -1,8 +1,8 @@
-import { randomizedLink } from "../../utils/randomizedLink"; 
-
 const getArgs = () => {
   return {
     variant: 'horizontal',
+    position: 'left',
+    inlineTitle: false,
   };
 };
 
@@ -13,115 +13,76 @@ const getArgTypes = () => {
       options: ['horizontal', 'vertical'],
       description: "Social media follow variant"
     },
+    position: {
+      type: { name: 'select' },
+      options: [ 'left', 'right' ],
+    },
+    inlineTitle: {
+      name: 'inline-title',
+      type: { name: 'boolean'},
+    },
   };
 };
 
 export default {
   title: 'Components/social media follow',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = (args) => 
 `<ecl-social-media-follow
   variant="${args.variant}"
-  theme="${args.theme}"
-  description="Follow the latest progress and learn more about getting involved"
+  description="Follow us"
+  position="${args.position}"
+  inline-title="${args.inlineTitle}"
 >
   <ecl-social-media-follow-item
-    theme="${args.theme}"
     icon="facebook"
     share-path="http://facebook.com"
   >
     Facebook
   </ecl-social-media-follow-item>
   <ecl-social-media-follow-item
-    theme="${args.theme}"
     icon="twitter"
     share-path="http://twitter.com"
   >
     Twitter
   </ecl-social-media-follow-item>
   <ecl-social-media-follow-item
-    theme="${args.theme}"
     icon="instagram"
     share-path="http://instagram.com"
   >
     Instagram
   </ecl-social-media-follow-item>
   <ecl-social-media-follow-item
-    theme="${args.theme}"
     icon="linkedin"
     share-path="http://linkedin.com"
   >
     Linkedin
   </ecl-social-media-follow-item>
   <ecl-social-media-follow-item
-    theme="${args.theme}"
     icon="telegram"
     share-path="http://telegram.com"
   >
     Telegram
   </ecl-social-media-follow-item>
-  <ecl-popover
-    ecl-script
-    theme="${args.theme}"
-    toggle-label="Other social networks"
-    family=""
+  <ecl-social-media-follow-item
     icon="chain"
-    icon-size="s"
-    item-id="popover-example"
+    share-path="http://example.html"
   >
-    <ecl-popover-item
-      theme="${args.theme}"
-      path="${randomizedLink('/example.html')}"
-      icon="pinteres"
-      icon-size="s"
-    >
-      Pinterest
-    </ecl-popover-item>
-    <ecl-popover-item
-      theme="${args.theme}"
-      path="${randomizedLink('/example.html')}"
-      icon="mastodon"
-      icon-size="s"
-    >
-      Mastodon
-    </ecl-popover-item>
-    <ecl-popover-item
-      theme="${args.theme}"
-      path="${randomizedLink('/example.html')}"
-      icon="reddit"
-      icon-size="s"
-    >
-      Reddit
-    </ecl-popover-item>
-    <ecl-popover-item
-      theme="${args.theme}"
-      path="${randomizedLink('/example.html')}"
-      icon="youtube"
-      icon-size="s"
-    >
-      Youtube
-    </ecl-popover-item>
-    <ecl-popover-item
-      theme="${args.theme}"
-      path="${randomizedLink('/example.html')}"
-      icon="flickr-color"
-      icon-size="s"
-    >
-      Flickr
-    </ecl-popover-item>
-    <ecl-popover-item
-      theme="${args.theme}"
-      path="${randomizedLink('/example.html')}"
-      icon="skype-color"
-      icon-size="s"
-    >
-      Skype
-    </ecl-popover-item>
-  </ecl-popover>
+    Other
+  </ecl-social-media-follow-item>
 </ecl-social-media-follow>`;
 
 export const SocialMediaFollow = Template.bind({});
 SocialMediaFollow.storyName = 'default';
 SocialMediaFollow.args = getArgs();
-SocialMediaFollow.argTypes = getArgTypes();
+SocialMediaFollow.argTypes = getArgTypes(
+  color_mode: {
+    table: { disable: true },
+  },
+);

@@ -179,9 +179,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclCarousel {
@@ -1299,44 +1296,21 @@ export namespace Components {
         /**
           * @default false
          */
-        "eclScript": boolean;
-        "icon": string;
-        /**
-          * @default 'fluid'
-         */
-        "iconSize": string;
-        /**
-          * @default ''
-         */
-        "iconSprite": string;
-        "itemId": string;
+        "close": boolean;
         /**
           * @default false
          */
-        "list": boolean;
-        "styleClass": string;
-        /**
-          * @default 'ec'
-         */
-        "theme": string;
-        "toggleLabel": string;
-    }
-    interface EclPopoverItem {
+        "eclScript": boolean;
         "icon": string;
         /**
-          * @default 'fluid'
+          * @default false
          */
-        "iconSize": string;
-        /**
-          * @default ''
-         */
-        "iconSprite": string;
-        "path": string;
+        "indicator": boolean;
+        "indicatorValue": number;
+        "itemId": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
+        "toggleLabel": string;
     }
     interface EclRange {
         "defaultValue": string;
@@ -1560,10 +1534,15 @@ export namespace Components {
     }
     interface EclSocialMediaFollow {
         "description": string;
-        "styleClass": string;
         /**
-          * @default 'ec'
+          * @default false
          */
+        "inlineTitle": boolean;
+        /**
+          * @default 'left'
+         */
+        "position": string;
+        "styleClass": string;
         "theme": string;
         /**
           * @default 'horizontal'
@@ -1582,9 +1561,6 @@ export namespace Components {
         "icon": string;
         "sharePath": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclSpacing {
@@ -2201,12 +2177,6 @@ declare global {
         prototype: HTMLEclPopoverElement;
         new (): HTMLEclPopoverElement;
     };
-    interface HTMLEclPopoverItemElement extends Components.EclPopoverItem, HTMLStencilElement {
-    }
-    var HTMLEclPopoverItemElement: {
-        prototype: HTMLEclPopoverItemElement;
-        new (): HTMLEclPopoverItemElement;
-    };
     interface HTMLEclRangeElementEventMap {
         "inputFocus": FocusEvent;
         "inputBlur": FocusEvent;
@@ -2431,7 +2401,6 @@ declare global {
         "ecl-pagination-item": HTMLEclPaginationItemElement;
         "ecl-picture": HTMLEclPictureElement;
         "ecl-popover": HTMLEclPopoverElement;
-        "ecl-popover-item": HTMLEclPopoverItemElement;
         "ecl-range": HTMLEclRangeElement;
         "ecl-rating-field": HTMLEclRatingFieldElement;
         "ecl-rating-star": HTMLEclRatingStarElement;
@@ -2626,9 +2595,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclCarousel {
@@ -3752,44 +3718,21 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
-        "eclScript"?: boolean;
-        "icon"?: string;
-        /**
-          * @default 'fluid'
-         */
-        "iconSize"?: string;
-        /**
-          * @default ''
-         */
-        "iconSprite"?: string;
-        "itemId"?: string;
+        "close"?: boolean;
         /**
           * @default false
          */
-        "list"?: boolean;
-        "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
-        "theme"?: string;
-        "toggleLabel"?: string;
-    }
-    interface EclPopoverItem {
+        "eclScript"?: boolean;
         "icon"?: string;
         /**
-          * @default 'fluid'
+          * @default false
          */
-        "iconSize"?: string;
-        /**
-          * @default ''
-         */
-        "iconSprite"?: string;
-        "path"?: string;
+        "indicator"?: boolean;
+        "indicatorValue"?: number;
+        "itemId"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
+        "toggleLabel"?: string;
     }
     interface EclRange {
         "defaultValue"?: string;
@@ -4022,10 +3965,15 @@ declare namespace LocalJSX {
     }
     interface EclSocialMediaFollow {
         "description"?: string;
-        "styleClass"?: string;
         /**
-          * @default 'ec'
+          * @default false
          */
+        "inlineTitle"?: boolean;
+        /**
+          * @default 'left'
+         */
+        "position"?: string;
+        "styleClass"?: string;
         "theme"?: string;
         /**
           * @default 'horizontal'
@@ -4044,9 +3992,6 @@ declare namespace LocalJSX {
         "icon"?: string;
         "sharePath"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclSpacing {
@@ -4307,7 +4252,6 @@ declare namespace LocalJSX {
         "ecl-pagination-item": EclPaginationItem;
         "ecl-picture": EclPicture;
         "ecl-popover": EclPopover;
-        "ecl-popover-item": EclPopoverItem;
         "ecl-range": EclRange;
         "ecl-rating-field": EclRatingField;
         "ecl-rating-star": EclRatingStar;
@@ -4389,7 +4333,6 @@ declare module "@stencil/core" {
             "ecl-pagination-item": LocalJSX.EclPaginationItem & JSXBase.HTMLAttributes<HTMLEclPaginationItemElement>;
             "ecl-picture": LocalJSX.EclPicture & JSXBase.HTMLAttributes<HTMLEclPictureElement>;
             "ecl-popover": LocalJSX.EclPopover & JSXBase.HTMLAttributes<HTMLEclPopoverElement>;
-            "ecl-popover-item": LocalJSX.EclPopoverItem & JSXBase.HTMLAttributes<HTMLEclPopoverItemElement>;
             "ecl-range": LocalJSX.EclRange & JSXBase.HTMLAttributes<HTMLEclRangeElement>;
             "ecl-rating-field": LocalJSX.EclRatingField & JSXBase.HTMLAttributes<HTMLEclRatingFieldElement>;
             "ecl-rating-star": LocalJSX.EclRatingStar & JSXBase.HTMLAttributes<HTMLEclRatingStarElement>;

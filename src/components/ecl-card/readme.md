@@ -13,7 +13,7 @@
 | `imageAlt`   | `image-alt`   |             | `string`  | `undefined` |
 | `imageZoom`  | `image-zoom`  |             | `boolean` | `false`     |
 | `styleClass` | `style-class` |             | `string`  | `''`        |
-| `theme`      | `theme`       |             | `string`  | `'ec'`      |
+| `theme`      | `theme`       |             | `string`  | `undefined` |
 
 
 ## Dependencies

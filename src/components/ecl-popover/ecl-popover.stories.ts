@@ -1,75 +1,28 @@
-import { randomizedLink } from "../../utils/randomizedLink";
-
 export default {
   title: 'Components/popover',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
-const Template = (args) => 
+const Template = () => 
   `<ecl-popover
     ecl-script
-    theme="${args.theme}"
     toggle-label="Popover"
-    list
     icon="share"
     item-id="popover-example"
+    close
   >
-    <ecl-popover-item
-      theme="${args.theme}"
-      path="${randomizedLink('/example.html')}"
-      icon="global"
-    >
-      Item 1
-    </ecl-popover-item>
-    <ecl-popover-item
-      theme="${args.theme}"
-      path="${randomizedLink('/example.html')}"
-      icon="global"
-    >
-      Item 2
-    </ecl-popover-item>
-    <ecl-popover-item
-      theme="${args.theme}"
-      path="${randomizedLink('/example.html')}"
-      icon="global"
-    >
-      Item 3
-    </ecl-popover-item>
-    <ecl-popover-item
-      theme="${args.theme}"
-      path="${randomizedLink('/example.html')}"
-      icon="global"
-    >
-      Item 4
-    </ecl-popover-item>
-    <ecl-popover-item
-      theme="${args.theme}"
-      path="${randomizedLink('/example.html')}"
-      icon="global"
-    >
-      Item 5
-    </ecl-popover-item>
-    <ecl-popover-item
-      theme="${args.theme}"
-      path="${randomizedLink('/example.html')}"
-      icon="global"
-    >
-      Item 6
-    </ecl-popover-item>
-    <ecl-popover-item
-      theme="${args.theme}"
-      path="${randomizedLink('/example.html')}"
-      icon="global"
-    >
-      Item 7
-    </ecl-popover-item>
-    <ecl-popover-item
-      theme="${args.theme}"
-      path="${randomizedLink('/example.html')}"
-      icon="global"
-    >
-      Item 8
-    </ecl-popover-item>
+    Nulla est ad excepteur sint officia fugiat aute commodo ullamco amet culpa eiusmod labore.
+    Esse nostrud aliqua pariatur pariatur officia non laboris cillum velit dolore in sit laboris fugiat.
   </ecl-popover>`;
 
 export const Popover = Template.bind({});
 Popover.storyName = 'default';
+Popover.argTypes = {
+  color_mode: {
+    table: { disable: true },
+  },
+};

@@ -46,7 +46,7 @@
  - [ecl-list-illustration-item](../ecl-list-illustration)
  - [ecl-news-ticker-item](../ecl-news-ticker)
  - [ecl-pagination-item](../ecl-pagination)
- - [ecl-popover-item](../ecl-popover)
+ - [ecl-popover](../ecl-popover)
  - [ecl-site-header](../ecl-site-header)
  - [ecl-social-media-follow-item](../ecl-social-media-follow)
 
@@ -75,7 +75,7 @@ graph TD;
   ecl-list-illustration-item --> ecl-link
   ecl-news-ticker-item --> ecl-link
   ecl-pagination-item --> ecl-link
-  ecl-popover-item --> ecl-link
+  ecl-popover --> ecl-link
   ecl-site-header --> ecl-link
   ecl-social-media-follow-item --> ecl-link
   style ecl-link fill:#f9f,stroke:#333,stroke-width:4px

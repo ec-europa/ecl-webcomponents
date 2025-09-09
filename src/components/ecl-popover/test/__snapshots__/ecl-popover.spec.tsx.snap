@@ -1,65 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-popover renders 1`] = `
-<ecl-popover ecl-script="" icon="share" item-id="popover-example" list="" theme="ec" toggle-label="Popover">
+<ecl-popover close="" ecl-script="" icon="share" item-id="popover-example" toggle-label="Popover">
   <!---->
   <div class="ecl-popover">
-    <a aria-controls="popover-example" aria-expanded="false" class="ecl-link ecl-link--standalone ecl-popover__toggle sc-ecl-link-ec" data-ecl-popover-toggle="data-ecl-popover-toggle">
-      <ecl-icon icon="share" size="fluid" sprite="" style-class="ecl-link__icon--before"></ecl-icon>
-      Popover
-    </a>
+    <ecl-link aria-controls="popover-example" aria-expanded="false" data-ecl-popover-toggle="data-ecl-popover-toggle" style-class="sc-ecl-link-ec sc-ecl-popover-ec ecl-popover__toggle">
+      <!---->
+      <a aria-controls="popover-example" aria-expanded="false" class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone ecl-popover__toggle sc-ecl-link-ec sc-ecl-popover-ec" data-ecl-popover-toggle>
+        <span class="ecl-link__label">
+          Popover
+        </span>
+        <slot-fb hidden="" name="icon-after"></slot-fb>
+        <ecl-icon class="ecl-link__icon" slot="icon-after" style-class="ecl-link__icon--before">
+          <span class="ecl-icon ecl-link__icon--before wt-icon--fluid wt-icon--placeholder wt-icon--share"></span>
+        </ecl-icon>
+      </a>
+    </ecl-link>
     <div class="ecl-popover__container" hidden="" id="popover-example">
-      <div class="ecl-popover__content">
-        <ul class="ecl-popover__list">
-          <li class="ecl-popover__item sc-ecl-popover-ec">
-            <ecl-link path="/example.html" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
-              <ecl-icon icon="global" size="fluid" slot="icon-before" sprite="" style-class="sc-ecl-popover-ec ecl-link__icon"></ecl-icon>
-              Item 1
-            </ecl-link>
-          </li>
-          <li class="ecl-popover__item sc-ecl-popover-ec">
-            <ecl-link path="/example.html" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
-              <ecl-icon icon="global" size="fluid" slot="icon-before" sprite="" style-class="sc-ecl-popover-ec ecl-link__icon"></ecl-icon>
-              Item 2
-            </ecl-link>
-          </li>
-          <li class="ecl-popover__item sc-ecl-popover-ec">
-            <ecl-link path="/example.html" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
-              <ecl-icon icon="global" size="fluid" slot="icon-before" sprite="" style-class="sc-ecl-popover-ec ecl-link__icon"></ecl-icon>
-              Item 3
-            </ecl-link>
-          </li>
-          <li class="ecl-popover__item sc-ecl-popover-ec">
-            <ecl-link path="/example.html" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
-              <ecl-icon icon="global" size="fluid" slot="icon-before" sprite="" style-class="sc-ecl-popover-ec ecl-link__icon"></ecl-icon>
-              Item 4
-            </ecl-link>
-          </li>
-          <li class="ecl-popover__item sc-ecl-popover-ec">
-            <ecl-link path="/example.html" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
-              <ecl-icon icon="global" size="fluid" slot="icon-before" sprite="" style-class="sc-ecl-popover-ec ecl-link__icon"></ecl-icon>
-              Item 5
-            </ecl-link>
-          </li>
-          <li class="ecl-popover__item sc-ecl-popover-ec">
-            <ecl-link path="/example.html" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
-              <ecl-icon icon="global" size="fluid" slot="icon-before" sprite="" style-class="sc-ecl-popover-ec ecl-link__icon"></ecl-icon>
-              Item 6
-            </ecl-link>
-          </li>
-          <li class="ecl-popover__item sc-ecl-popover-ec">
-            <ecl-link path="/example.html" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
-              <ecl-icon icon="global" size="fluid" slot="icon-before" sprite="" style-class="sc-ecl-popover-ec ecl-link__icon"></ecl-icon>
-              Item 7
-            </ecl-link>
-          </li>
-          <li class="ecl-popover__item sc-ecl-popover-ec">
-            <ecl-link path="/example.html" style-class="sc-ecl-popover-ec ecl-popover__link" variant="standalone">
-              <ecl-icon icon="global" size="fluid" slot="icon-before" sprite="" style-class="sc-ecl-popover-ec ecl-link__icon"></ecl-icon>
-              Item 8
-            </ecl-link>
-          </li>
-        </ul>
+      <div class="ecl-popover__scrollable">
+        <ecl-button data-ecl-popover-close hide-label="" style-class="sc-ecl-popover-ec ecl-popover__close" type="button" variant="tertiary">
+          Close
+          <ecl-icon slot="icon-after" style-class="sc-ecl-popover-ec">
+            <span class="ecl-icon sc-ecl-popover-ec wt-icon--close wt-icon--placeholder wt-icon--xs"></span>
+          </ecl-icon>
+        </ecl-button>
+        <div class="ecl-popover__content">
+          Nulla est ad excepteur sint officia fugiat aute commodo ullamco amet culpa eiusmod labore. Esse nostrud aliqua pariatur pariatur officia non laboris cillum velit dolore in sit laboris fugiat.
+        </div>
       </div>
     </div>
   </div>
