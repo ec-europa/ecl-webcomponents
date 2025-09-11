@@ -75,7 +75,7 @@ exports[`ecl-menu renders 1`] = `
           </button>
         </ecl-button>
         <ul class="ecl-menu__list" data-ecl-menu-list>
-          <ecl-menu-item link="/example.html" theme="ec">
+          <ecl-menu-item link="/example.html">
             <!---->
             <li aria-expanded="false" class="ecl-menu__item sc-ecl-menu-ec" data-ecl-menu-item>
               <a class="ecl-link--standalone ecl-menu__link sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -83,7 +83,7 @@ exports[`ecl-menu renders 1`] = `
               </a>
             </li>
           </ecl-menu-item>
-          <ecl-menu-item current="" has-children="" link="/example.html" theme="ec" trigger-aria-label="Access item's children">
+          <ecl-menu-item current="" has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li aria-expanded="false" class="ecl-menu__item ecl-menu__item--current sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item>
               <a class="ecl-link--standalone ecl-menu__link sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -102,7 +102,7 @@ exports[`ecl-menu renders 1`] = `
               </ecl-button>
               <div class="ecl-menu__mega sc-ecl-menu-ec" data-ecl-menu-mega>
                 <ul class="ecl-menu__sublist sc-ecl-menu-ec">
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -110,7 +110,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -118,7 +118,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" current="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" current="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem ecl-menu__subitem--current sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink ecl-menu__sublink--current sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -126,7 +126,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" external="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" external="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--icon-after ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -141,11 +141,11 @@ exports[`ecl-menu renders 1`] = `
               </div>
             </li>
           </ecl-menu-item>
-          <ecl-menu-item has-children="" link="/example.html" theme="ec" trigger-aria-label="Access item's children">
+          <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li aria-expanded="false" class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item>
               <a class="ecl-link--standalone ecl-menu__link sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
-                Item 3 with a very long label
+                Principles, countries, history
               </a>
               <ecl-button data-ecl-menu-caret hide-label="">
                 <!---->
@@ -160,7 +160,7 @@ exports[`ecl-menu renders 1`] = `
               </ecl-button>
               <div class="ecl-menu__mega sc-ecl-menu-ec" data-ecl-menu-mega>
                 <ul class="ecl-menu__sublist sc-ecl-menu-ec">
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -168,7 +168,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -176,7 +176,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -188,19 +188,19 @@ exports[`ecl-menu renders 1`] = `
               </div>
             </li>
           </ecl-menu-item>
-          <ecl-menu-item link="/example.html" theme="ec">
+          <ecl-menu-item link="/example.html">
             <!---->
             <li aria-expanded="false" class="ecl-menu__item sc-ecl-menu-ec" data-ecl-menu-item>
               <a class="ecl-link--standalone ecl-menu__link sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
-                Item 4 label
+                Institutions, law, budget
               </a>
             </li>
           </ecl-menu-item>
-          <ecl-menu-item has-children="" link="/example.html" theme="ec" trigger-aria-label="Access item's children">
+          <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li aria-expanded="false" class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item>
               <a class="ecl-link--standalone ecl-menu__link sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
-                Item 5 label
+                Priorities and actions
               </a>
               <ecl-button data-ecl-menu-caret hide-label="">
                 <!---->
@@ -215,7 +215,7 @@ exports[`ecl-menu renders 1`] = `
               </ecl-button>
               <div class="ecl-menu__mega sc-ecl-menu-ec" data-ecl-menu-mega>
                 <ul class="ecl-menu__sublist sc-ecl-menu-ec">
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -223,7 +223,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -231,7 +231,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -239,7 +239,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -251,11 +251,11 @@ exports[`ecl-menu renders 1`] = `
               </div>
             </li>
           </ecl-menu-item>
-          <ecl-menu-item has-children="" link="/example.html" theme="ec" trigger-aria-label="Access item's children">
+          <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li aria-expanded="false" class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item>
               <a class="ecl-link--standalone ecl-menu__link sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
-                Item 6
+                Live, work, study
               </a>
               <ecl-button data-ecl-menu-caret hide-label="">
                 <!---->
@@ -270,7 +270,7 @@ exports[`ecl-menu renders 1`] = `
               </ecl-button>
               <div class="ecl-menu__mega sc-ecl-menu-ec" data-ecl-menu-mega>
                 <ul class="ecl-menu__sublist sc-ecl-menu-ec">
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -278,7 +278,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -286,7 +286,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -294,7 +294,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -302,7 +302,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -310,7 +310,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -318,7 +318,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -326,7 +326,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -334,7 +334,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -342,7 +342,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -350,7 +350,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -358,7 +358,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -366,7 +366,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -374,7 +374,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -382,7 +382,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -390,7 +390,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -398,7 +398,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -406,7 +406,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -418,11 +418,11 @@ exports[`ecl-menu renders 1`] = `
               </div>
             </li>
           </ecl-menu-item>
-          <ecl-menu-item has-children="" link="/example.html" theme="ec" trigger-aria-label="Access item's children">
+          <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li aria-expanded="false" class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item>
               <a class="ecl-link--standalone ecl-menu__link sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
-                Item 7 label
+                News and events
               </a>
               <ecl-button data-ecl-menu-caret hide-label="">
                 <!---->
@@ -437,7 +437,7 @@ exports[`ecl-menu renders 1`] = `
               </ecl-button>
               <div class="ecl-menu__mega sc-ecl-menu-ec" data-ecl-menu-mega>
                 <ul class="ecl-menu__sublist sc-ecl-menu-ec">
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -445,7 +445,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -453,7 +453,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -461,7 +461,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -469,7 +469,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -477,7 +477,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -485,7 +485,7 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
@@ -493,11 +493,144 @@ exports[`ecl-menu renders 1`] = `
                       </a>
                     </li>
                   </ecl-menu-item>
-                  <ecl-menu-item child="" link="/example.html" slot="sublist" theme="ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
                     <!---->
                     <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
                       <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                         Item 7.8
+                      </a>
+                    </li>
+                  </ecl-menu-item>
+                </ul>
+              </div>
+            </li>
+          </ecl-menu-item>
+          <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
+            <!---->
+            <li aria-expanded="false" class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item>
+              <a class="ecl-link--standalone ecl-menu__link sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+                European years
+              </a>
+              <ecl-button data-ecl-menu-caret hide-label="">
+                <!---->
+                <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                  <span class="ecl-button__container">
+                    <span class="ecl-button__label" data-ecl-label></span>
+                    <ecl-icon slot="icon-after">
+                      <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180 wt-icon--xs"></span>
+                    </ecl-icon>
+                  </span>
+                </button>
+              </ecl-button>
+              <div class="ecl-menu__mega sc-ecl-menu-ec" data-ecl-menu-mega>
+                <ul class="ecl-menu__sublist sc-ecl-menu-ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
+                    <!---->
+                    <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
+                      <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+                        Item 8.1
+                      </a>
+                    </li>
+                  </ecl-menu-item>
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
+                    <!---->
+                    <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
+                      <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+                        Item 8.2
+                      </a>
+                    </li>
+                  </ecl-menu-item>
+                </ul>
+              </div>
+            </li>
+          </ecl-menu-item>
+          <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
+            <!---->
+            <li aria-expanded="false" class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item>
+              <a class="ecl-link--standalone ecl-menu__link sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+                Visit a European Union institution
+              </a>
+              <ecl-button data-ecl-menu-caret hide-label="">
+                <!---->
+                <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                  <span class="ecl-button__container">
+                    <span class="ecl-button__label" data-ecl-label></span>
+                    <ecl-icon slot="icon-after">
+                      <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180 wt-icon--xs"></span>
+                    </ecl-icon>
+                  </span>
+                </button>
+              </ecl-button>
+              <div class="ecl-menu__mega sc-ecl-menu-ec" data-ecl-menu-mega>
+                <ul class="ecl-menu__sublist sc-ecl-menu-ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
+                    <!---->
+                    <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
+                      <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+                        Item 9.1
+                      </a>
+                    </li>
+                  </ecl-menu-item>
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
+                    <!---->
+                    <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
+                      <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+                        Item 9.2
+                      </a>
+                    </li>
+                  </ecl-menu-item>
+                </ul>
+              </div>
+            </li>
+          </ecl-menu-item>
+          <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
+            <!---->
+            <li aria-expanded="false" class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item>
+              <a class="ecl-link--standalone ecl-menu__link sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+                Jobs &amp; traineeships in EU institutions
+              </a>
+              <ecl-button data-ecl-menu-caret hide-label="">
+                <!---->
+                <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                  <span class="ecl-button__container">
+                    <span class="ecl-button__label" data-ecl-label></span>
+                    <ecl-icon slot="icon-after">
+                      <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180 wt-icon--xs"></span>
+                    </ecl-icon>
+                  </span>
+                </button>
+              </ecl-button>
+              <div class="ecl-menu__mega sc-ecl-menu-ec" data-ecl-menu-mega>
+                <ul class="ecl-menu__sublist sc-ecl-menu-ec">
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
+                    <!---->
+                    <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
+                      <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+                        Item 10.1
+                      </a>
+                    </li>
+                  </ecl-menu-item>
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
+                    <!---->
+                    <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
+                      <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+                        Item 10.2
+                      </a>
+                    </li>
+                  </ecl-menu-item>
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
+                    <!---->
+                    <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
+                      <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+                        Item 10.3
+                      </a>
+                    </li>
+                  </ecl-menu-item>
+                  <ecl-menu-item child="" link="/example.html" slot="sublist">
+                    <!---->
+                    <li aria-expanded="false" class="ecl-menu__subitem sc-ecl-menu-ec" data-ecl-menu-subitem>
+                      <a class="ecl-link--standalone ecl-menu__sublink sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+                        Item 10.4
                       </a>
                     </li>
                   </ecl-menu-item>

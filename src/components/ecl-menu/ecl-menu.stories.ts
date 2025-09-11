@@ -63,7 +63,6 @@ export default {
 
 const Template = args =>
   `<ecl-menu
-    theme="${args.theme}"
     close-label="${args.closeMenu}"
     back-label="${args.backMenu}"
     menu-link="${args.menuLink}"
@@ -76,12 +75,10 @@ const Template = args =>
   >
     <ecl-menu-item
       link="/example.html"
-      theme="${args.theme}"
     >
       Home
     </ecl-menu-item>
     <ecl-menu-item
-      theme="${args.theme}"
       link="/example.html"
       has-children
       trigger-aria-label="Access item's children"
@@ -89,7 +86,6 @@ const Template = args =>
     >
       Item 2 label
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -97,7 +93,6 @@ const Template = args =>
         Item 2.1
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -105,7 +100,6 @@ const Template = args =>
         Item 2.2
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         current
@@ -114,7 +108,6 @@ const Template = args =>
         Item 2.3
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -124,14 +117,12 @@ const Template = args =>
       </ecl-menu-item>
     </ecl-menu-item>
     <ecl-menu-item
-      theme="${args.theme}"
       has-children
       trigger-aria-label="Access item's children"
       link="/example.html"
     >
       Principles, countries, history
       <ecl-menu-item
-        theme="${args.theme}"
         child
         link="/example.html"
         slot="sublist"
@@ -139,7 +130,6 @@ const Template = args =>
         Item 3.1
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         child
         link="/example.html"
         slot="sublist"
@@ -147,7 +137,6 @@ const Template = args =>
         Item 3.2
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         child
         link="/example.html"
         slot="sublist"
@@ -156,20 +145,17 @@ const Template = args =>
       </ecl-menu-item>
     </ecl-menu-item>
     <ecl-menu-item
-      theme="${args.theme}"
       link="/example.html"
     >
       Institutions, law, budget
     </ecl-menu-item>
     <ecl-menu-item
-      theme="${args.theme}"
       link="/example.html"
       has-children
       trigger-aria-label="Access item's children"
     >
       Priorities and actions
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -177,7 +163,6 @@ const Template = args =>
         Item 5.1
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -185,7 +170,6 @@ const Template = args =>
         Item 5.2
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -193,7 +177,6 @@ const Template = args =>
         Item 5.3
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -202,14 +185,12 @@ const Template = args =>
       </ecl-menu-item>
     </ecl-menu-item>
     <ecl-menu-item
-      theme="${args.theme}"
       link="/example.html"
       has-children
       trigger-aria-label="Access item's children"
     >
       Live, work, study
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -217,7 +198,6 @@ const Template = args =>
         Item 6.1
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -225,7 +205,6 @@ const Template = args =>
         Item 6.2
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -233,7 +212,6 @@ const Template = args =>
         Item 6.3
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -241,7 +219,6 @@ const Template = args =>
         Item 6.4
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -249,7 +226,6 @@ const Template = args =>
         Item 6.5
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -257,7 +233,6 @@ const Template = args =>
         Item 6.6
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -265,7 +240,6 @@ const Template = args =>
         Item 6.7
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -273,7 +247,6 @@ const Template = args =>
         Item 6.8
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -281,7 +254,6 @@ const Template = args =>
         Item 6.9 with a very long label
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -289,7 +261,6 @@ const Template = args =>
         Item 6.10
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -297,7 +268,6 @@ const Template = args =>
         Item 6.11
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -305,7 +275,6 @@ const Template = args =>
         Item 6.12
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -313,7 +282,6 @@ const Template = args =>
         Item 6.13
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -321,7 +289,6 @@ const Template = args =>
         Item 6.14
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -329,7 +296,6 @@ const Template = args =>
         Item 6.15
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -337,7 +303,6 @@ const Template = args =>
         Item 6.16
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -345,7 +310,6 @@ const Template = args =>
         Item 6.17
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -354,14 +318,12 @@ const Template = args =>
       </ecl-menu-item>
     </ecl-menu-item>
     <ecl-menu-item
-      theme="${args.theme}"
       has-children
       link="/example.html"
       trigger-aria-label="Access item's children"
     >
       News and events
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -369,7 +331,6 @@ const Template = args =>
         Item 7.1
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -377,7 +338,6 @@ const Template = args =>
         Item 7.2
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -385,7 +345,6 @@ const Template = args =>
         Item 7.3
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -393,7 +352,6 @@ const Template = args =>
         Item 7.4
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -401,7 +359,6 @@ const Template = args =>
         Item 7.5
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
