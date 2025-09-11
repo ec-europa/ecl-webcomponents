@@ -1,6 +1,31 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-layout-grid/grid';
-@use '@ecl/vanilla-component-menu/menu-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/menu/menu' with (
+  $theme: theme.$theme,
+  $menu: var.$menu
+);
+
+.ecl-menu:not(.ecl-menu--forced-mobile) .ecl-menu__item:last-child::after {
+  display: none;
+}
+
+.ecl-menu__open .ecl-icon:last-of-type {
+  display: flex;
+}
+
+.ecl-menu__open .ecl-menu__close-switch:last-of-type {
+  display: none;
+}
+
+.ecl-menu__sublink,
+.ecl-menu__link {
+  .ecl-link--standalone {
+    text-decoration: none;
+  }
+}
 
 .ecl-menu__button-caret.sc-ecl-menu-eu {
   background-color: #e7edfa;

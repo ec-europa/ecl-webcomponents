@@ -129,7 +129,7 @@ const Template = args =>
       trigger-aria-label="Access item's children"
       link="/example.html"
     >
-      Item 3 with a very long label leading to the menu overflow management
+      Principles, countries, history
       <ecl-menu-item
         theme="${args.theme}"
         child
@@ -159,7 +159,7 @@ const Template = args =>
       theme="${args.theme}"
       link="/example.html"
     >
-      Item 4 label with some additional text
+      Institutions, law, budget
     </ecl-menu-item>
     <ecl-menu-item
       theme="${args.theme}"
@@ -167,7 +167,7 @@ const Template = args =>
       has-children
       trigger-aria-label="Access item's children"
     >
-      Item 5 label
+      Priorities and actions
       <ecl-menu-item
         theme="${args.theme}"
         link="/example.html"
@@ -207,7 +207,7 @@ const Template = args =>
       has-children
       trigger-aria-label="Access item's children"
     >
-      Item 6
+      Live, work, study
       <ecl-menu-item
         theme="${args.theme}"
         link="/example.html"
@@ -359,7 +359,7 @@ const Template = args =>
       link="/example.html"
       trigger-aria-label="Access item's children"
     >
-      Item 7 label
+      News and events
       <ecl-menu-item
         theme="${args.theme}"
         link="/example.html"
@@ -409,7 +409,6 @@ const Template = args =>
         Item 7.6
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
@@ -417,12 +416,88 @@ const Template = args =>
         Item 7.7
       </ecl-menu-item>
       <ecl-menu-item
-        theme="${args.theme}"
         link="/example.html"
         child
         slot="sublist"
       >
         Item 7.8
+      </ecl-menu-item>
+    </ecl-menu-item>
+    <ecl-menu-item
+      has-children
+      link="/example.html"
+      trigger-aria-label="Access item's children"
+    >
+      European years
+      <ecl-menu-item
+        link="/example.html"
+        child
+        slot="sublist"
+      >
+        Item 8.1
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="/example.html"
+        child
+        slot="sublist"
+      >
+        Item 8.2
+      </ecl-menu-item>
+    </ecl-menu-item>
+    <ecl-menu-item
+      has-children
+      link="/example.html"
+      trigger-aria-label="Access item's children"
+    >
+      Visit a European Union institution
+      <ecl-menu-item
+        link="/example.html"
+        child
+        slot="sublist"
+      >
+        Item 9.1
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="/example.html"
+        child
+        slot="sublist"
+      >
+        Item 9.2
+      </ecl-menu-item>
+    </ecl-menu-item>
+    <ecl-menu-item
+      has-children
+      link="/example.html"
+      trigger-aria-label="Access item's children"
+    >
+      Jobs & traineeships in EU institutions
+      <ecl-menu-item
+        link="/example.html"
+        child
+        slot="sublist"
+      >
+        Item 10.1
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="/example.html"
+        child
+        slot="sublist"
+      >
+        Item 10.2
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="/example.html"
+        child
+        slot="sublist"
+      >
+        Item 10.3
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="/example.html"
+        child
+        slot="sublist"
+      >
+        Item 10.4
       </ecl-menu-item>
     </ecl-menu-item>
   </ecl-menu>`;

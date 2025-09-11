@@ -1086,15 +1086,11 @@ export namespace Components {
          */
         "maxLines": number;
         "menuId": string;
-        "menuLink": string;
         "menuTitle": string;
         "nextLabel": string;
         "previousLabel": string;
         "siteName": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclMenuItem {
@@ -1116,9 +1112,6 @@ export namespace Components {
         "hasChildren": boolean;
         "link": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "triggerAriaLabel": string;
     }
@@ -3508,15 +3501,11 @@ declare namespace LocalJSX {
          */
         "maxLines"?: number;
         "menuId"?: string;
-        "menuLink"?: string;
         "menuTitle"?: string;
         "nextLabel"?: string;
         "previousLabel"?: string;
         "siteName"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclMenuItem {
@@ -3538,9 +3527,6 @@ declare namespace LocalJSX {
         "hasChildren"?: boolean;
         "link"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "triggerAriaLabel"?: string;
     }
