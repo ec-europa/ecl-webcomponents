@@ -1,0 +1,13 @@
+diff --git a/banner.js b/banner.js
+index 993c69934495749802a35a85a2f3212549d8f48e..f46039825613d9129b062ffb76b312156482b4de 100644
+--- a/banner.js
++++ b/banner.js
+@@ -185,7 +185,7 @@ export class Banner {
+       this.maxIterations > this.attemptCounter
+     ) {
+       setTimeout(() => this.waitForAspectRatioToBeDefined(), 100);
+-    } else {
++    } else if (typeof aspectRatio === 'undefined' || aspectRatio === '') {
+       this.setHeight(aspectRatio);
+     }
+   }

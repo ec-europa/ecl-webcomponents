@@ -1,6 +1,6 @@
 import { Component, Prop, h, Element } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const BANNER: any;
 
 @Component({
   tag: 'ecl-banner',
@@ -78,6 +78,7 @@ export class EclBanner {
         video.setAttribute('data-ecl-banner-video', '');
       }
     }
+
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-banner-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
@@ -86,7 +87,8 @@ export class EclBanner {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const banner = new ECL.Banner(this.el.firstElementChild);
+        ;(window as any).ECL = (window as any).ECL || {};
+        const banner = new BANNER.Banner(this.el.firstElementChild);
         banner.init();
       };
       document.body.appendChild(script);
@@ -124,6 +126,7 @@ export class EclBanner {
             image={this.image}
             imageAlt={this.imageAlt}
             imgClass={`ecl-banner__image sc-ecl-banner-${this.theme}`}
+            data-ecl-banner-image
           >
             <slot name="sources"></slot>
           </ecl-picture>
