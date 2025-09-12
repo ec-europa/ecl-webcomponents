@@ -9,12 +9,16 @@
   $link: var.$link
 );
 
-:host ::slotted(ecl-icon[slot='icon-after']) svg {
+.ecl-link--icon-only ::slotted([slot^='icon-']) {
+  display: flex;
+}
+
+:host .ecl-link:not(.ecl-link--icon-only) ::slotted(ecl-icon[slot='icon-after']) svg {
   margin-inline-start: 0.5rem;
   vertical-align: text-top;
 }
 
-:host ::slotted(ecl-icon[slot='icon-before']) svg {
+:host .ecl-link:not(.ecl-link--icon-only) ::slotted(ecl-icon[slot='icon-before']) svg {
   margin-inline-end: 0.5rem;
   vertical-align: text-top;
 }

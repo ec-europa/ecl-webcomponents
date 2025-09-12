@@ -13,7 +13,7 @@ import { Component, Prop, h, Element } from '@stencil/core';
 export class EclPagination {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
 
   getClass(): string {
     const styleClasses = [
@@ -22,6 +22,10 @@ export class EclPagination {
     ]
 
     return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   componentDidRender() {

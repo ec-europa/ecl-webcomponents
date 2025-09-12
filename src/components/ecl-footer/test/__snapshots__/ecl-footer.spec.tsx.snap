@@ -9,7 +9,9 @@ exports[`ecl-footer renders 1`] = `
       <ecl-link>
         <!---->
         <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-          Languages on our websites
+          <span class="ecl-link__label">
+            Languages on our websites
+          </span>
         </a>
       </ecl-link>
     </li>
@@ -20,7 +22,9 @@ exports[`ecl-footer renders 1`] = `
       <ecl-link>
         <!---->
         <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-          Cookies
+          <span class="ecl-link__label">
+            Cookies
+          </span>
         </a>
       </ecl-link>
     </li>
@@ -31,7 +35,9 @@ exports[`ecl-footer renders 1`] = `
       <ecl-link>
         <!---->
         <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-          Privacy policy
+          <span class="ecl-link__label">
+            Privacy policy
+          </span>
         </a>
       </ecl-link>
     </li>
@@ -42,7 +48,9 @@ exports[`ecl-footer renders 1`] = `
       <ecl-link>
         <!---->
         <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-          Legal notice
+          <span class="ecl-link__label">
+            Legal notice
+          </span>
         </a>
       </ecl-link>
     </li>
@@ -66,7 +74,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Strategy
+                    <span class="ecl-link__label">
+                      Strategy
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -74,7 +84,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    About the European Commission
+                    <span class="ecl-link__label">
+                      About the European Commission
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -82,7 +94,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Business, Economy, Euro
+                    <span class="ecl-link__label">
+                      Business, Economy, Euro
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -90,7 +104,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Live, work, travel in the EU
+                    <span class="ecl-link__label">
+                      Live, work, travel in the EU
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -98,7 +114,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Law
+                    <span class="ecl-link__label">
+                      Law
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -106,7 +124,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Funding, Tenders
+                    <span class="ecl-link__label">
+                      Funding, Tenders
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -114,7 +134,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Research and innovation
+                    <span class="ecl-link__label">
+                      Research and innovation
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -122,7 +144,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Energy, Climate change, Environment
+                    <span class="ecl-link__label">
+                      Energy, Climate change, Environment
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -130,7 +154,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Education
+                    <span class="ecl-link__label">
+                      Education
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -138,7 +164,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Aid, Development cooperation, Fundamental rights
+                    <span class="ecl-link__label">
+                      Aid, Development cooperation, Fundamental rights
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -146,7 +174,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Food, Farming, Fisheries
+                    <span class="ecl-link__label">
+                      Food, Farming, Fisheries
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -154,7 +184,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    EU regional and urban development
+                    <span class="ecl-link__label">
+                      EU regional and urban development
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -162,7 +194,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Jobs at the European Commission
+                    <span class="ecl-link__label">
+                      Jobs at the European Commission
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -170,7 +204,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Statistics
+                    <span class="ecl-link__label">
+                      Statistics
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -178,7 +214,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Press corner
+                    <span class="ecl-link__label">
+                      Press corner
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -186,7 +224,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Events
+                    <span class="ecl-link__label">
+                      Events
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -194,7 +234,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Publications
+                    <span class="ecl-link__label">
+                      Publications
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -206,7 +248,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    About the European Commission's web presence
+                    <span class="ecl-link__label">
+                      About the European Commission's web presence
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -214,7 +258,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Contact the European Commission
+                    <span class="ecl-link__label">
+                      Contact the European Commission
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -222,7 +268,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Follow the European Commission on social media
+                    <span class="ecl-link__label">
+                      Follow the European Commission on social media
+                    </span>
                   </a>
                 </ecl-link>
               </li>
@@ -230,7 +278,9 @@ exports[`ecl-footer renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    Resources for partners
+                    <span class="ecl-link__label">
+                      Resources for partners
+                    </span>
                   </a>
                 </ecl-link>
               </li>

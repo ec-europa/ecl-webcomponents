@@ -11,17 +11,33 @@ import { Component, h, Prop, Element } from '@stencil/core';
 })
 export class EclSocialMediaFollow {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() variant: string = 'horizontal';
   @Prop() description: string;
+  @Prop() position: string = 'left';
+  @Prop() inlineTitle: boolean = false;
 
   getClass(): string {
-    return [
+    const styleClasses = [
       `ecl-social-media-follow`,
       `ecl-social-media-follow--${this.variant}`,
       this.styleClass
-    ].join(' ');
+    ];
+
+    if (this.position === 'right') {
+      styleClasses.push('ecl-social-media-follow--right');
+    }
+
+    if (this.inlineTitle) {
+      styleClasses.push('ecl-social-media-follow--description_inline');
+    }
+
+    return styleClasses.join(' '); 
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   componentDidRender() {

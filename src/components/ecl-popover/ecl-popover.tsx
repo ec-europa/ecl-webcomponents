@@ -12,17 +12,18 @@ declare const ECL: any;
   scoped: true,
   assetsDirs: ['build'],
 })
+
 export class EclPopover {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() eclScript: boolean = false;
   @Prop() itemId: string;
   @Prop() toggleLabel: string;
-  @Prop() list: boolean = false;
+  @Prop() close: boolean = false;
   @Prop() icon: string;
-  @Prop() iconSize: string = 'fluid';
-  @Prop() iconSprite: string = '';
+  @Prop() indicator: boolean = false;
+  @Prop() indicatorValue: number;
 
   getClass(): string {
     const styleClasses = [
@@ -34,20 +35,29 @@ export class EclPopover {
   }
 
   getAttrs() {
-    return {
+    const attrs = {
       'aria-controls': this.itemId,
       'data-ecl-popover-toggle': 'data-ecl-popover-toggle',
       'aria-expanded': 'false',
     };
+
+    if (this.indicator) {
+      attrs['indicator'] = true;
+    }
+
+    if (this.indicatorValue) {
+      attrs['hide-label'] = true;
+      attrs["indicator-value"] = this.indicatorValue;
+    }
+
+    return attrs;
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   componentDidLoad() {
-    if (this.el.querySelector('.ecl-popover__list')) {
-      // Clean the html so that the script finds what it expects.
-      const items = this.el.querySelectorAll('.ecl-popover__item');
-      this.el.querySelector('.ecl-popover__list').innerHTML = '';
-      this.el.querySelector('.ecl-popover__list').append(...items);
-    }
     if (this.eclScript) {
       // Load the ECL vanilla js if not already present.
       const src = getAssetPath('./build/scripts/ecl-popover-vanilla.js');
@@ -70,34 +80,46 @@ export class EclPopover {
       <div 
         class={this.getClass()}
       >
-        <a
-          class={`ecl-link sc-ecl-link-${this.theme} ecl-link--standalone ecl-popover__toggle`}
+        <ecl-link
+          style-class={`sc-ecl-link-${this.theme} sc-ecl-popover-${this.theme} ecl-popover__toggle`}
+          variant="standalone"
           {...this.getAttrs()}
         >
-        { this.icon ?
+        { this.icon &&
           <ecl-icon
             icon={this.icon}
-            size={this.iconSize}
+            size="fluid"
             style-class="ecl-link__icon--before"
-            sprite={this.iconSprite}
-          ></ecl-icon> : ''
+            slot="icon-after"
+          ></ecl-icon>
         }
           {this.toggleLabel}
-        </a>
+        </ecl-link>
         <div
           class="ecl-popover__container"
           id={this.itemId}
           hidden
         >
-          <div class="ecl-popover__content">
-          { this.list ?
-            <ul class="ecl-popover__list">
+          <div class="ecl-popover__scrollable">
+          { this.close &&
+            <ecl-button
+              variant="tertiary"
+              type="button"
+              style-class={`sc-ecl-popover-${this.theme} ecl-popover__close`}
+              hide-label
+              data-ecl-popover-close
+            >
+              Close
+              <ecl-icon
+                icon="close"
+                slot="icon-after"
+                style-class={`sc-ecl-popover-${this.theme}`}
+              ></ecl-icon>
+            </ecl-button>
+          }
+            <div class="ecl-popover__content">
               <slot></slot>
-            </ul> : ''
-          }
-          { !this.list ?
-            <slot></slot> : ''
-          }
+            </div>
           </div>
         </div>
       </div>
