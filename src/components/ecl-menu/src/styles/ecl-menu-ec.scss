@@ -1,10 +1,37 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-layout-grid/grid';
-@use '@ecl/vanilla-component-menu/menu-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/menu/menu' with (
+  $theme: theme.$theme,
+  $menu: var.$menu
+);
+
+.ecl-menu:not(.ecl-menu--forced-mobile) .ecl-menu__item:last-child::after {
+  display: none;
+}
+
+.ecl-menu__open .ecl-icon:last-of-type {
+  display: flex;
+}
+
+.ecl-menu__open .ecl-menu__close-switch:last-of-type {
+  display: none;
+}
+
+.ecl-menu__sublink,
+.ecl-menu__link {
+  &.ecl-link--standalone {
+    text-decoration: none;
+  }
+}
 
 .ecl-menu__close,
 .ecl-menu__back {
   background-color: transparent;
+  text-align: left;
+  border: none;
 }
 
 .ecl-menu__back .ecl-button__label {
