@@ -1230,16 +1230,9 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "thumbnail": string;
         "thumbnailAlt": string;
-        /**
-          * @default 'default'
-         */
-        "variant": string;
     }
     interface EclPagination {
         /**
@@ -3645,16 +3638,9 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "thumbnail"?: string;
         "thumbnailAlt"?: string;
-        /**
-          * @default 'default'
-         */
-        "variant"?: string;
     }
     interface EclPagination {
         /**

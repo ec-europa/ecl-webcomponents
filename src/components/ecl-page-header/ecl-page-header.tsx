@@ -13,8 +13,7 @@ import { Component, Prop, h, Element } from '@stencil/core';
 export class EclPageHeader {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() variant: string = 'default';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() image: string ;
   @Prop() imageAlt: string;
   @Prop() meta: string;
@@ -26,7 +25,6 @@ export class EclPageHeader {
   getClass(): string {
     const styleClasses = [
       `ecl-page-header`,
-      `ecl-page-header--${this.variant}`,
       this.styleClass
     ]
 
@@ -34,11 +32,19 @@ export class EclPageHeader {
       styleClasses.push('ecl-page-header--image');
     }
 
+    if (!this.headerTitle) {
+      styleClasses.push('ecl-page-header__info--no-margin');
+    }
+
     if (this.overlay) {
       styleClasses.push(`ecl-page-header--overlay-${this.overlay}`);
     }
 
     return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   componentDidRender() {
@@ -54,32 +60,37 @@ export class EclPageHeader {
   render() {
     return (
       <div class={this.getClass()}>
-      { this.image ?
-        <ecl-picture
-          styleClass={`ecl-page-header__picture-background sc-ecl-page-header-${this.theme}`}
-          image={this.image}
-          imgClass={`ecl-page-header__background sc-ecl-page-header-${this.theme}`}
-        >
-          <slot name="sources"></slot>
-        </ecl-picture> : ''
+      { this.image &&
+        <div class="ecl-page-header__background-container" aria-hidden="true">
+          <ecl-picture
+            styleClass={`ecl-page-header__picture-background sc-ecl-page-header-${this.theme}`}
+            image={this.image}
+            imgClass={`ecl-page-header__background sc-ecl-page-header-${this.theme}`}
+          >
+            <slot name="sources"></slot>
+          </ecl-picture>
+        </div>
       }
         <div class="ecl-container">
           <slot name="breadcrumb"></slot>
-        { this.meta ? 
-          <div class="ecl-page-header__meta">
-            <span class="ecl-page-header__meta-item">{this.meta}</span>
-          </div> : ''
-        }
-          <div class="ecl-page-header__title-container">
+          <div class="page-header__info">
+          { this.meta &&
+            <div class="ecl-page-header__meta">
+              <span class="ecl-page-header__meta-item">{this.meta}</span>
+            </div>
+          }
+          { this.headerTitle &&
             <h1 class="ecl-page-header__title">{this.headerTitle}</h1>
+          }
           </div>
           <div class="ecl-page-header__description-container">
-          { this.thumbnail ?
-            <img
-              class="ecl-page-header__description-thumbnail"
-              src={this.thumbnail}
-              alt={this.thumbnailAlt}
-            /> : ''
+          { this.thumbnail &&
+            <ecl-picture
+              style-class={`ecl-page-header__picture-thumbnail sc-ecl-page-header-${this.theme}`}
+              image={this.thumbnail}
+              imageAlt={this.thumbnailAlt}
+              imgClass={`ecl-page-header__description-thumbnail sc-ecl-page-header-${this.theme}`}
+            ></ecl-picture>
           }
             <p class="ecl-page-header__description">
               <slot></slot>
