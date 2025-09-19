@@ -1700,24 +1700,25 @@ export namespace Components {
         "width": string;
     }
     interface EclTimeline {
+        "colorMode": string;
         /**
           * @default false
          */
         "eclScript": boolean;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclTimelineItem {
+        /**
+          * @default `ecl-timeline-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
+         */
+        "elId": string;
         "itemTitle": string;
         "label": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
+        "toggleLabelCollapsed": string;
+        "toggleLabelExpanded": string;
         "type": string;
     }
     interface EclVideo {
@@ -4128,24 +4129,25 @@ declare namespace LocalJSX {
         "width"?: string;
     }
     interface EclTimeline {
+        "colorMode"?: string;
         /**
           * @default false
          */
         "eclScript"?: boolean;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclTimelineItem {
+        /**
+          * @default `ecl-timeline-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
+         */
+        "elId"?: string;
         "itemTitle"?: string;
         "label"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
+        "toggleLabelCollapsed"?: string;
+        "toggleLabelExpanded"?: string;
         "type"?: string;
     }
     interface EclVideo {

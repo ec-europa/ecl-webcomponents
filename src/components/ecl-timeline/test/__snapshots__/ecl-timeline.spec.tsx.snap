@@ -3,7 +3,7 @@
 exports[`ecl-timeline renders 1`] = `
 <ecl-timeline-item item-title="Item title" itemid="0" label="13 September 2017">
   <!---->
-  <li class="ecl-timeline__item sc-ecl-timeline-ec">
+  <li class="ecl-timeline__item sc-ecl-timeline-ec" id="ecl-timeline-item-19961ea0bd17f2335e0">
     <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
       <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
       <div class="ecl-timeline__label sc-ecl-timeline-ec">

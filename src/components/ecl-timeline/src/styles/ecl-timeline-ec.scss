@@ -1,7 +1,23 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-component-link/link-ec';
-@use '@ecl/vanilla-component-button/button-ec';
-@use '@ecl/vanilla-component-timeline/timeline-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $typography: var.$typography
+);
+@use '@ecl/link/link' with (
+  $theme: theme.$theme,
+  $link: var.$link
+);
+@use '@ecl/button/button' with (
+  $theme: theme.$theme,
+  $button: var.$button
+);
+@use '@ecl/timeline/timeline' with (
+  $theme: theme.$theme,
+  $timeline: var.$timeline
+);
 
 .ecl-button__icon--after {
   margin-inline-start: 0.5rem !important;

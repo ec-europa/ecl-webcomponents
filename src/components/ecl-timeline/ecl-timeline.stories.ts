@@ -6,114 +6,102 @@ export default {
 
 const Template = (args) => 
   `<ecl-timeline
-    theme="${args.theme}"
     ecl-script
+    color-mode="${args.color_mode}"
    >
     <ecl-timeline-item
-      label="13 September 2017"
-      item-title="Item title"
-      itemId="0"
-      theme="${args.theme}"
+      type="headline"
+      label="2025"
+      item-title="Headline title"
     >
-      <ecl-link theme="${args.theme}" path="${randomizedLink('/example.html')}">President Juncker's State of the Union speech</ecl-link>
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu metus risus.
     </ecl-timeline-item>
     <ecl-timeline-item
-      item-id="1"
-      label="28-29 September 2017"
-      theme="${args.theme}"
+      label="Item 1 label"
+      item-title="Item 1 title"
     >
-      <ecl-link theme="${args.theme}" path="${randomizedLink('/example.html')}">Informal Digital Summit, Tallinn</ecl-link>
+      Nulla vel mattis justo
     </ecl-timeline-item>
     <ecl-timeline-item
-      item-id="2"
-      label="14 November 2017"
-      theme="${args.theme}"
+      item-title="Item 2 title"
+      label="Item 2 label"
     >
-      <ecl-link path="${randomizedLink('/example.html')}">Strengthening European identity through education and culture: European Commission's contribution to the Leaders' meeting, Gothenburg, Sweden</ecl-link>
+      Etiam tempus augue mi, in tincidunt dolor tincidunt id
     </ecl-timeline-item>
     <ecl-timeline-item
-      item-id="3"
-      label="17 November 2017"
-      theme="${args.theme}"
+      item-title="Item 3 title"
+      label="Item 3 label"
     >
-      <ecl-link theme="${args.theme}" path="${randomizedLink('/example.html')}">Social Summit in Gothenburg, Sweden</ecl-link>
+      Suspendisse venenatis condimentum turpis, in lobortis ante finibus nec. Morbi consequat purus in nulla facilisis lacinia.
     </ecl-timeline-item>
     <ecl-timeline-item
-      item-id="4"
-      label="6 December 2017"
-      theme="${args.theme}"
+      item-title="Item 4 title"
+      label="Item 4 label"
     >
-      <ecl-link theme="${args.theme}" path="${randomizedLink('/example.html')}">Economic and Monetary Union package of proposals</ecl-link>
+      <ecl-link path="${randomizedLink('/example.html')}">Nulla finibus eleifend felis</ecl-link>
+    </ecl-timeline-item>
+    <ecl-timeline-item
+      item-title="Item 5 title"
+      label="Item 5 label"
+    >
+      Suspendisse varius neque at nunc auctor, vel dictum purus pellentesque. Etiam ac ex mi. Fusce sed posuere ligula, sed malesuada nisl. Nulla elementum condimentum nunc at bibendum
     </ecl-timeline-item>
     <ecl-timeline-item 
       type="toggle"
-      theme="${args.theme}"
+      toggle-label-collapsed="Show 10 more items"
+      toggle-label-expanded="Hide 10 items"
     >
-      View all
     </ecl-timeline-item>
     <ecl-timeline-item
-      item-id="5"
-      label="14-15 December 2017"
+      label="Item 6 label"
       style-class="ecl-timeline__item--collapsed"
-      theme="${args.theme}"
     >
       <ecl-link path="${randomizedLink('/example.html')}">EU Leaders' meeting on migration, Brussels</ecl-link>
     </ecl-timeline-item>
     <ecl-timeline-item
-      item-id="6"
-      label="15 December 2017"
-      theme="${args.theme}"
+      item-title-"Item 7 title"
     >
-      <ecl-link theme="${args.theme}" path="${randomizedLink('/example.html')}">Euro Summit</ecl-link>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
     </ecl-timeline-item>
     <ecl-timeline-item
-      item-id="7"
-      label="6 February 2018"
-      theme="${args.theme}"
     >
-      <ecl-link theme="${args.theme}" path="${randomizedLink('/example.html')}">EU-Western Balkans Strategy</ecl-link>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
     </ecl-timeline-item>
     <ecl-timeline-item
-      item-id="8"
-      label="14 February 2018"
-      theme="${args.theme}"
+      item-title="Item 9 title"
+      label="Item 9 label"
     >
       <ecl-link path="${randomizedLink('/example.html')}">Multiannual Financial Framework</ecl-link> and <ecl-link path="${randomizedLink('/example.html')}">institutional issues</ecl-link> - enhancing efficiency at the helm of the European Union
     </ecl-timeline-item>
     <ecl-timeline-item
-      item-id="9"
-      label="23 February 2018"
-      theme="${args.theme}"
+      item-title="Item 10 title"
+      label="Item 10 label"
     >
-      <ecl-link path="${randomizedLink('/example.html')}">Informal European Council</ecl-link>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
     </ecl-timeline-item>
     <ecl-timeline-item
-      item-id="10"
-      label="22-23 March 2018"
-      theme="${args.theme}"
+      item-title="Item 11 title"
+      label="Item 11 label"
     >
-      <ecl-link path="${randomizedLink('/example.html')}">European Council</ecl-link>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
     </ecl-timeline-item>
     <ecl-timeline-item
-      item-id="11"
-      label="2 May 2018"
-      theme="${args.theme}"
+      item-title="Item 12 title"
+      label="Item 12 label"
     >
-      <ecl-link path="${randomizedLink('/example.html')}">Commission proposal: Long-term budget post-2020</ecl-link>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
     </ecl-timeline-item>
     <ecl-timeline-item
-      item-id="12"
-      label="15 May 2018"
-      theme="${args.theme}"
+      item-title="Item 13 title"
+      label="Item 13 label"
     >
-      <ecl-link path="${randomizedLink('/example.html')}">European Commission’s contribution to the Informal Leaders' meeting</ecl-link>, Sofia, Bulgaria (16 May 2018)
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
     </ecl-timeline-item>
     <ecl-timeline-item
-      item-id="13"
-      label="17 May 2018"
-      theme="${args.theme}"
+      item-title="Item 14 title"
+      label="Item 14 label"
     >
-      <ecl-link theme="${args.theme}" path="${randomizedLink('/example.html')}">EU-Western Balkans Summit</ecl-link> (Sofia, Bulgaria)
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
     </ecl-timeline-item>
   </ecl-timeline>`;
 

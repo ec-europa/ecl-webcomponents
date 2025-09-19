@@ -7,7 +7,6 @@ describe('ecl-timeline', () => {
     const page = await newSpecPage({
       components: [EclTimeline, EclTimelineItem],
       html: `ecl-timeline
-        theme="ec"
         ecl-script
        >
         <ecl-timeline-item
