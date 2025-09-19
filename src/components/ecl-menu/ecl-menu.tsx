@@ -89,7 +89,7 @@ export class EclMenu {
         <div class="ecl-menu__overlay" data-ecl-menu-overlay></div>
         <div class="ecl-container ecl-menu__container">
           <ecl-button
-            class={`ecl-menu__open sc-ecl-menu-${this.theme}`}
+            styleClass={`ecl-menu__open sc-ecl-menu-${this.theme}`}
             data-ecl-menu-open
             hide-label
             variant="tertiary"
@@ -114,45 +114,33 @@ export class EclMenu {
             data-ecl-menu-inner
           >
             <header class="ecl-menu__inner-header">
-              <button
-                class="ecl-menu__close ecl-button"
+              <ecl-button
+                styleClass="ecl-menu__close ecl-button"
                 type="submit"
                 data-ecl-menu-close
               >
-                <span class="ecl-menu__close-container ecl-button__container">
-                  <ecl-icon
-                    icon="close-filled"
-                    size="s"
-                    styleClass={`ecl-button__icon ecl-button__icon--before sc-ecl-menu-${this.theme}`}
-                  ></ecl-icon>
-                  <span
-                    class="ecl-button__label"
-                    data-ecl-label="true">
-                      {this.closeLabel}
-                  </span>
-                </span>
-              </button>
+                <ecl-icon
+                  icon="close-filled"
+                  size="s"
+                  slot="icon-before"
+                  styleClass={`ecl-button__icon ecl-button__icon--before sc-ecl-menu-${this.theme}`}
+                ></ecl-icon>
+                {this.closeLabel}
+              </ecl-button>
               <div class="ecl-menu__title">{this.menuTitle}</div>
-              <button
+              <ecl-button
                 data-ecl-menu-back
                 type="submit"
-                class="ecl-menu__back ecl-button ecl-button--ghost"
+                styleClass="ecl-menu__back ecl-button ecl-button--ghost"
               >
-                <span class="ecl-button__container">
-                  <ecl-icon
-                    icon="corner-arrow"
-                    rotate="270"
-                    size="xs"
-                    styleClass={`ecl-button__icon ecl-button__icon--before sc-ecl-menu-${this.theme}`}
-                  ></ecl-icon>
-                  <span
-                    class="ecl-button__label"
-                    data-ecl-label
-                  >
+                <ecl-icon
+                  icon="corner-arrow"
+                  rotate="270"
+                  size="xs"
+                  styleClass={`ecl-button__icon ecl-button__icon--before sc-ecl-menu-${this.theme}`}
+                ></ecl-icon>
                     {this.backLabel}
-                  </span>
-                </span>
-              </button>
+              </ecl-button>
             </header>
             <ecl-button
               theme={this.theme}

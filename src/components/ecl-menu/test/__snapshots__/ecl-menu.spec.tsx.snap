@@ -6,9 +6,9 @@ exports[`ecl-menu renders 1`] = `
   <nav aria-expanded="false" class="ecl-menu sc-ecl-menu-ec" data-ecl-menu-max-lines="2" role="navigation">
     <div class="ecl-menu__overlay" data-ecl-menu-overlay></div>
     <div class="ecl-container ecl-menu__container">
-      <ecl-button class="ecl-menu__open sc-ecl-menu-ec" data-ecl-menu-open hide-label="">
+      <ecl-button data-ecl-menu-open hide-label="">
         <!---->
-        <button class="ecl-button ecl-button--icon-only ecl-button--tertiary" data-ecl-menu-open="eclMenuOpen" type="submit">
+        <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-menu__open sc-ecl-menu-ec" data-ecl-menu-open="eclMenuOpen" type="submit">
           <span class="ecl-button__container">
             <ecl-icon slot="icon-before">
               <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-menu-ec wt-icon--hamburger wt-icon--m wt-icon--placeholder"></span>
@@ -24,29 +24,35 @@ exports[`ecl-menu renders 1`] = `
       </ecl-button>
       <section aria-label="Menu" class="ecl-menu__inner" data-ecl-menu-inner>
         <header class="ecl-menu__inner-header">
-          <button class="ecl-button ecl-menu__close" data-ecl-menu-close type="submit">
-            <span class="ecl-button__container ecl-menu__close-container">
-              <ecl-icon>
-                <span class="ecl-button__icon ecl-button__icon--before ecl-icon sc-ecl-menu-ec wt-icon--close-filled wt-icon--placeholder wt-icon--s"></span>
-              </ecl-icon>
-              <span class="ecl-button__label" data-ecl-label="true">
-                Close
+          <ecl-button data-ecl-menu-close>
+            <!---->
+            <button class="ecl-button ecl-button--primary ecl-menu__close" data-ecl-menu-close="eclMenuClose" type="submit">
+              <span class="ecl-button__container">
+                <ecl-icon slot="icon-before">
+                  <span class="ecl-button__icon ecl-button__icon--before ecl-icon sc-ecl-button-ec sc-ecl-menu-ec wt-icon--close-filled wt-icon--placeholder wt-icon--s"></span>
+                </ecl-icon>
+                <span class="ecl-button__label" data-ecl-label>
+                  Close
+                </span>
               </span>
-            </span>
-          </button>
+            </button>
+          </ecl-button>
           <div class="ecl-menu__title">
             Menu
           </div>
-          <button class="ecl-button ecl-button--ghost ecl-menu__back" data-ecl-menu-back type="submit">
-            <span class="ecl-button__container">
-              <ecl-icon>
-                <span class="ecl-button__icon ecl-button__icon--before ecl-icon sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270 wt-icon--xs"></span>
-              </ecl-icon>
-              <span class="ecl-button__label" data-ecl-label>
-                Back
+          <ecl-button data-ecl-menu-back>
+            <!---->
+            <button class="ecl-button ecl-button--ghost ecl-button--primary ecl-menu__back" data-ecl-menu-back="eclMenuBack" type="submit">
+              <span class="ecl-button__container">
+                <span class="ecl-button__label" data-ecl-label>
+                  <ecl-icon>
+                    <span class="ecl-button__icon ecl-button__icon--before ecl-icon sc-ecl-button-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270 wt-icon--xs"></span>
+                  </ecl-icon>
+                  Back
+                </span>
               </span>
-            </span>
-          </button>
+            </button>
+          </ecl-button>
         </header>
         <ecl-button data-ecl-menu-items-previous tabindex="-1">
           <!---->

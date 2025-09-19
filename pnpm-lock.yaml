@@ -1626,32 +1626,35 @@ importers:
   src/components/ecl-site-header:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.35.0(jiti@1.21.7))
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.35.0(jiti@1.21.7))
+      '@ecl/button':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/resources-ec-logo':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/resources-eu-logo':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/site-header':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.35.0(jiti@1.21.7))
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-button':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=b10260c5c193e3f2f20a5d6721d43be35a19d874c7cfff32ab7e4f55a2c60e38)
-      '@ecl/vanilla-component-site-header':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/utility-screen-reader':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -3121,8 +3124,14 @@ packages:
   '@ecl/resources-ec-logo@3.13.0':
     resolution: {integrity: sha512-mR1wjh9xnpFpBwLN0333Om+Wav9jBCtFL/LMpPzBjmY9hM6D1l3jSYyQGazivR/3GBsBwcEcZ0hmJHXMYxoPEg==}
 
+  '@ecl/resources-ec-logo@5.0.0-alpha.15':
+    resolution: {integrity: sha512-EGoN95aq36K4jJB+7TP48H4cAKXnZh3NqmvGM6oNGZxZwzjNvtoTL+5st9YvrXm/ftEcbHS4A9BW+d0STnt5TQ==}
+
   '@ecl/resources-eu-logo@3.13.0':
     resolution: {integrity: sha512-XjpQqIK8GclrKn48piw2FYFjf1uxLjAWXCx9RZwFLa2X2qGSl7tYDSuMdwYT6gJ2JGKa+DMr15Qwf1kJ8IRTrA==}
+
+  '@ecl/resources-eu-logo@5.0.0-alpha.15':
+    resolution: {integrity: sha512-xSlT4y6YzoDQkMHulGkFso0birY7zZKmiCiya/uoRKKfdB9M3xS8hXdWf+bLhkTLLfo7cfMoOiVzV6YQNpwAqg==}
 
   '@ecl/resources-icons@5.0.0-alpha.15':
     resolution: {integrity: sha512-4UCQbkOLjteydADl5rsQlM5immoRPXmIQxz7xVOr2unuhBmjKYBQl1Wuw+iKk66+MfF+zQnFJa1KmTUK2k5/jA==}
@@ -3252,9 +3261,6 @@ packages:
 
   '@ecl/vanilla-component-site-footer@3.13.0':
     resolution: {integrity: sha512-qOj+Er8fCPL1b+wflzJfX5MGJwnCtUDdzdtxtlUlQwHbZqqRxHh4a8t0g8Y5/Bauxs3CZNSRqegjEQobZwFe5A==}
-
-  '@ecl/vanilla-component-site-header@3.13.0':
-    resolution: {integrity: sha512-Ds8YuQl55utN7q63loE2Z0lXg+Ukk5iktK6+uLH+eHVeTVtwQYc+NNzM5UucZ05GpNPk/xm/orNXqNxj3atiPg==}
 
   '@ecl/vanilla-component-timeline@3.13.0':
     resolution: {integrity: sha512-pTkHLhk3vqf1AT4atUa42379/khJzdbG0pEnMR2ewmY7GfukmFbb4i0uLHBZ7AyfstflG9yejJJSDoHyAQ0BIA==}
@@ -14815,11 +14821,15 @@ snapshots:
       npm-run-all: 4.1.5
       rimraf: 5.0.5
 
+  '@ecl/resources-ec-logo@5.0.0-alpha.15': {}
+
   '@ecl/resources-eu-logo@3.13.0':
     dependencies:
       ncp: 2.0.0
       npm-run-all: 4.1.5
       rimraf: 5.0.5
+
+  '@ecl/resources-eu-logo@5.0.0-alpha.15': {}
 
   '@ecl/resources-icons@5.0.0-alpha.15': {}
 
@@ -15020,13 +15030,6 @@ snapshots:
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
       '@ecl/vanilla-layout-grid': 3.13.0
-
-  '@ecl/vanilla-component-site-header@3.13.0':
-    dependencies:
-      '@ecl/dom-utils': 3.13.0
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
-      focus-trap: 7.5.4
 
   '@ecl/vanilla-component-timeline@3.13.0':
     dependencies:
