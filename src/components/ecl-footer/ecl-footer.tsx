@@ -15,7 +15,7 @@ import getAssetPath from "../../utils/assetPath";
 export class EclFooter {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() logoAlt: string;
   @Prop() logoTitle: string;
   @Prop() logoLink: string;
@@ -37,6 +37,10 @@ export class EclFooter {
     }
 
     return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   componentDidLoad() {

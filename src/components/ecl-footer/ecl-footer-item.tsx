@@ -6,7 +6,7 @@
 })
 
 export class EclFooterItem{
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() link: string;
   @Prop() ariaLabel: string;
@@ -19,6 +19,10 @@ export class EclFooterItem{
     ];
 
     return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() { 

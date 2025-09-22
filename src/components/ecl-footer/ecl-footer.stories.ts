@@ -18,7 +18,6 @@ const Template = () =>
       This site is managed by: [name of the manager of the site]
     </ecl-text>
     <ecl-footer-item
-      theme="ec"
       link="${randomizedLink('/example.html')}"
       slot="ecl-footer-list-main"
     >

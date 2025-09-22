@@ -648,9 +648,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "variant": string;
     }
@@ -658,9 +655,6 @@ export namespace Components {
         "ariaLabel": string;
         "link": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclFormGroup {
@@ -3060,9 +3054,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "variant"?: string;
     }
@@ -3070,9 +3061,6 @@ declare namespace LocalJSX {
         "ariaLabel"?: string;
         "link"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclFormGroup {

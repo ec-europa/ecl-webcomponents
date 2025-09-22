@@ -12,7 +12,7 @@
 | `ariaLabel`  | `aria-label`  |             | `string` | `undefined` |
 | `link`       | `link`        |             | `string` | `undefined` |
 | `styleClass` | `style-class` |             | `string` | `undefined` |
-| `theme`      | `theme`       |             | `string` | `'ec'`      |
+| `theme`      | `theme`       |             | `string` | `undefined` |
 
 
 ## Dependencies
