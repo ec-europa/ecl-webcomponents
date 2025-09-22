@@ -14,7 +14,7 @@ export class EclText {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop() tag: 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() isBold: boolean = false;
   @Prop() level: 1 | 2 | 3 | 4 | 5 | undefined;
   @Prop() size: 'l' | 'm' | 's' | 'xs' | undefined;
@@ -62,6 +62,10 @@ export class EclText {
     }
 
     return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {
