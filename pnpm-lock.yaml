@@ -36,12 +36,6 @@ patchedDependencies:
   '@ecl/theme-dev@3.13.0':
     hash: 241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65
     path: patches/@ecl__theme-dev@3.13.0.patch
-  '@ecl/vanilla-component-button@3.13.0':
-    hash: b10260c5c193e3f2f20a5d6721d43be35a19d874c7cfff32ab7e4f55a2c60e38
-    path: patches/@ecl__vanilla-component-button@3.13.0.patch
-  '@ecl/vanilla-component-category-filter@3.13.0':
-    hash: bdaed1fc75d7ffcc9186cdd0b0ee588ecff032ed89a33f2686e833a76276688b
-    path: patches/@ecl__vanilla-component-category-filter@3.13.0.patch
   '@stencil/react-output-target@0.5.3':
     hash: 403ac53588c2362c9db2125ba3fb502cfee8a4ac96ab3c883a9e43c2be4a423a
     path: patches/@stencil__react-output-target@0.5.3.patch
@@ -630,20 +624,17 @@ importers:
   src/components/ecl-category-filter:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.35.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.35.0(jiti@1.21.7))
+      '@ecl/category-filter':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-category-filter':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=bdaed1fc75d7ffcc9186cdd0b0ee588ecff032ed89a33f2686e833a76276688b)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -1646,7 +1637,7 @@ importers:
         version: 3.13.0
       '@ecl/vanilla-component-button':
         specifier: 3.13.0
-        version: 3.13.0(patch_hash=b10260c5c193e3f2f20a5d6721d43be35a19d874c7cfff32ab7e4f55a2c60e38)
+        version: 3.13.0
       '@ecl/vanilla-component-site-header':
         specifier: 3.13.0
         version: 3.13.0
@@ -1812,7 +1803,7 @@ importers:
         version: 3.13.0
       '@ecl/vanilla-component-button':
         specifier: 3.13.0
-        version: 3.13.0(patch_hash=b10260c5c193e3f2f20a5d6721d43be35a19d874c7cfff32ab7e4f55a2c60e38)
+        version: 3.13.0
       '@ecl/vanilla-component-link':
         specifier: 3.13.0
         version: 3.13.0
@@ -3235,9 +3226,6 @@ packages:
 
   '@ecl/vanilla-component-button@3.13.0':
     resolution: {integrity: sha512-XR2heA/m3NeC92B9XaN/inVU/3zIfKMycirB5nrjf7/D+2Gz6gOwOKxejEF44I/EyL9g4PYPF65GpHn3uofAkg==}
-
-  '@ecl/vanilla-component-category-filter@3.13.0':
-    resolution: {integrity: sha512-/qpb1OBE+0pzeIPOYb3yLFpN2bYbUKjxGTW0zsGRayGOxH12MMyJjSA9mo6UUmA0mSaKtBsKjhYAVkCal7VLGg==}
 
   '@ecl/vanilla-component-link@3.13.0':
     resolution: {integrity: sha512-KrRISO2jswpAXnSoJz6ofd0iTx7lIcL8aRTpBUQsedeL9zYxgGMSHjQYR6Xb845mXGFhFJYuRg3qlRZt7RyrCw==}
@@ -14990,11 +14978,7 @@ snapshots:
 
   '@ecl/utility-z-index@5.0.0-alpha.15': {}
 
-  '@ecl/vanilla-component-button@3.13.0(patch_hash=b10260c5c193e3f2f20a5d6721d43be35a19d874c7cfff32ab7e4f55a2c60e38)':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
-  '@ecl/vanilla-component-category-filter@3.13.0(patch_hash=bdaed1fc75d7ffcc9186cdd0b0ee588ecff032ed89a33f2686e833a76276688b)':
+  '@ecl/vanilla-component-button@3.13.0':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
 

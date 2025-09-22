@@ -16,7 +16,7 @@
 | `path`        | `path`         |             | `string`      | `undefined` |
 | `styleClass`  | `style-class`  |             | `string`      | `''`        |
 | `subItems`    | `sub-items`    |             | `boolean`     | `false`     |
-| `theme`       | `theme`        |             | `string`      | `'ec'`      |
+| `theme`       | `theme`        |             | `string`      | `undefined` |
 
 
 ## Dependencies
