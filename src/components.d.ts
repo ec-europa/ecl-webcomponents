@@ -1575,9 +1575,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'm'
@@ -1654,9 +1651,6 @@ export namespace Components {
          */
         "styleClass": string;
         "tag": 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclTextarea {
@@ -3996,9 +3990,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'm'
@@ -4076,9 +4067,6 @@ declare namespace LocalJSX {
          */
         "styleClass"?: string;
         "tag"?: 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclTextarea {

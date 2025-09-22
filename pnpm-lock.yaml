@@ -1681,23 +1681,20 @@ importers:
   src/components/ecl-spacing:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.35.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.35.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-utility-spacing':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/utility-spacing':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -1751,23 +1748,23 @@ importers:
   src/components/ecl-text:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.35.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.35.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-utility-typography':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/utility-typography':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -3259,12 +3256,6 @@ packages:
 
   '@ecl/vanilla-layout-grid@3.13.0':
     resolution: {integrity: sha512-tHlK4PN3j7/eSUvHAJ50bd9L+X4qdxvY6gTBUprmDn2L+p3KDeiJQKg+Vx7OGaIFdGmKJfctzl47iobA7TWwOw==}
-
-  '@ecl/vanilla-utility-spacing@3.13.0':
-    resolution: {integrity: sha512-0Ipc3zgf53W+kohyifC/VqkzI0l1noFoNMgWjO+SYDkaQZiBaRNV0T7NjG7yoRg/dPmDM3LZ7UPGbJMHnBwReA==}
-
-  '@ecl/vanilla-utility-typography@3.13.0':
-    resolution: {integrity: sha512-18qc5t+Sp3kMmdUOMBK7kJekfPRzZSp+rCGqcKEechZdBKyHDwL9Zq5BuAujqG9eKb8/+pE0g2D7Fr0pEoO5Gw==}
 
   '@ecl/video@5.0.0-alpha.15':
     resolution: {integrity: sha512-FqExHS4at/oXWYoenSAuwK1VOpugehz6VEIpf/FzNsOW+ovDxMY3YrWQ449xRRn/fPZFsBUXdn8fXz2PxDT7Wg==}
@@ -15037,16 +15028,6 @@ snapshots:
   '@ecl/vanilla-layout-grid@3.13.0':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
-  '@ecl/vanilla-utility-spacing@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
-
-  '@ecl/vanilla-utility-typography@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
 
   '@ecl/video@5.0.0-alpha.15': {}
 

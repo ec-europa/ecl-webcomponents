@@ -85,13 +85,14 @@ export class EclModal {
             <ecl-button
               theme={this.theme}
               type="button"
-              variant="ghost"
+              variant="tertiary"
+              hide-label
               styleClass={`ecl-modal__close sc-ecl-modal-${this.theme}`}
               data-ecl-modal-close
             >
               {this.closeLabel}
               <ecl-icon
-                icon="close-filled"
+                icon="close"
                 size="s"
                 slot="icon-after"
                 style-class={`sc-ecl-modal-${this.theme}`}
