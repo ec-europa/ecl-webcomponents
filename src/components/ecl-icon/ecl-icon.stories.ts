@@ -1,30 +1,56 @@
-import iconsAllEc from '@ecl/resources-ec-icons/dist/lists/all.json';
+import iconsAllEc from '@ecl/resources-icons/list.json';
 
 export default {
   title: 'Components/icon',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = (args) => `<ecl-icon 
                               icon="${args.icon}"
+                              sprite="${args.sprite}"
                               color="${args.color}"
                               size="${args.size}"
-                              transform="${args.transform}"
-                              theme="${args.theme}"
+                              flip="${args.flip}"
+                              rotate="${args.rotate}"
                             ></ecl-icon>`;
 
 export const Icon = Template.bind({});
 Icon.storyName = 'default';
 Icon.args = {
   icon: 'close',
-  transform: '',
+  rotate: '',
+  flip: '',
+  sprite: '',
   color: 'default',
   size: '2xl',
 };
 Icon.argTypes = {
+  color_mode: { table: { disable: true }},
   icon: {
     type: { name: 'select' },
     options: iconsAllEc,
     description: "Add an icon",
+  },
+  sprite: {
+    type: { name: 'select' },
+    options: [
+      '',
+      'build/images/icons.svg',
+    ],
+    control: {
+      labels: {
+        '': 'none',
+        'build/images/icons.svg': 'icons',
+      },
+    },
+    mapping: {
+      none: '',
+      icons: 'build/images/icons.svg'
+    },
   },
   size: {
     type: { name: 'select' },
@@ -32,19 +58,42 @@ Icon.argTypes = {
     description: "icon size",
   },
   color: {
-    type: { name: 'select' },
-    options: ['default', 'primary', 'inverted'],
+    type: 'select',
+    options: ['default', 'primary', 'inverted', 'monochrome'],
+    control: {
+      labels: {
+        '' : 'default',
+        primary: 'primary',
+        inverted: 'inverted',
+        monochrome: 'monochrome',
+      },
+    },
+    mapping: {
+      default: '',
+      primary: 'primary',
+      inverted: 'inverted',
+      monochrome: 'monochrome',
+    },
     description: "icon color",
   },
-  transform: {
+  flip: {
+    type: { name: 'select' },
+    options: [ 'horizontal', 'vertical' ],
+  },
+  rotate: {
     type: { name: 'select' },
     description: 'Button icon transform',
     options: [
-      'rotate-90',
-      'rotate-180',
-      'rotate-270',
-      'flip-horizontal',
-      'flip-vertical',
+      'none',
+      '90',
+      '180',
+      '270',
     ],
+    labels: {
+      '': 'none',
+      90: '90',
+      180: '180',
+      270: '270',
+    },
   },
 };

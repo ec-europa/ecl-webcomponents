@@ -1,13 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-featured-item renders 1`] = `
-<ecl-featured-item image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="Title" media-caption="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." position="left" theme="ec" variant="extended">
+<ecl-featured-item image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="Title" link-label="Read more" link-path="/example.html" media-caption="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." position="right" variant="highlight">
   <!---->
-  <article class="ecl-featured-item ecl-featured-item--extended">
-    <div class="ecl-featured-item__container">
+  <article class="ecl-featured-item ecl-featured-item--highlight">
+    <div class="ecl-featured-item__container ecl-featured-item__container--right">
       <div class="ecl-featured-item__item">
-        <ecl-media-container hascaption="" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" styleclass="ecl-featured-item__media_container">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        <ecl-media-container>
+          <!---->
+          <div class="ecl-featured-item__media_container ecl-media-container">
+            <figure class="ecl-media-container__figure">
+              <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imgclass="ecl-media-container__media sc-ecl-media-container-ec" styleclass="ecl-media-container__picture sc-ecl-media-container-ec"></ecl-picture>
+              <figcaption class="ecl-media-container__caption">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </figcaption>
+            </figure>
+          </div>
         </ecl-media-container>
       </div>
       <div class="ecl-featured-item__item">
@@ -15,10 +23,20 @@ exports[`ecl-featured-item renders 1`] = `
           Title
         </div>
         <div class="ecl-featured-item__description">
-          <p class="ecl-u-type-paragraph-m">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          </p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </div>
+        <ecl-link style-class="ecl-featured-item__link sc-ecl-featured-item-ec">
+          <!---->
+          <a class="ecl-featured-item__link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-featured-item-ec" href="/example.html">
+            <span class="ecl-link__label">
+              Read more
+            </span>
+            <slot-fb hidden="" name="icon-after"></slot-fb>
+            <ecl-icon class="ecl-link__icon" slot="icon-after" style-class="sc-ecl-featured-item-ec">
+              <span class="ecl-icon sc-ecl-featured-item-ec wt-icon--arrow-left wt-icon--flip-horizontal wt-icon--placeholder wt-icon--xs"></span>
+            </ecl-icon>
+          </a>
+        </ecl-link>
       </div>
     </div>
   </article>

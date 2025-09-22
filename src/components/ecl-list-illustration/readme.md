@@ -10,6 +10,7 @@
 | Property      | Attribute      | Description | Type      | Default     |
 | ------------- | -------------- | ----------- | --------- | ----------- |
 | `icon`        | `icon`         |             | `string`  | `undefined` |
+| `iconSize`    | `icon-size`    |             | `string`  | `'2xl'`     |
 | `image`       | `image`        |             | `string`  | `undefined` |
 | `imageAlt`    | `image-alt`    |             | `string`  | `undefined` |
 | `itemLink`    | `item-link`    |             | `string`  | `undefined` |
@@ -18,7 +19,7 @@
 | `mediaSize`   | `media-size`   |             | `string`  | `'m'`       |
 | `squareImage` | `square-image` |             | `boolean` | `false`     |
 | `styleClass`  | `style-class`  |             | `string`  | `undefined` |
-| `theme`       | `theme`        |             | `string`  | `'ec'`      |
+| `theme`       | `theme`        |             | `string`  | `undefined` |
 
 
 ## Dependencies

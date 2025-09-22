@@ -1,2 +1,13 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-list-illustration/list-illustration-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/list-illustration/list-illustration' with (
+  $theme: theme.$theme,
+  $list-illustration: var.$list-illustration
+);
+
+.ecl-list-illustration__icon.sc-ecl-list-illustration-eu {
+  margin-bottom: var(--s-s);
+}

@@ -12,6 +12,7 @@
 | `ariaLabel`      | `aria-label`      |             | `string`  | `undefined` |
 | `download`       | `download`        |             | `boolean` | `false`     |
 | `external`       | `external`        |             | `boolean` | `false`     |
+| `hideLabel`      | `hide-label`      |             | `boolean` | `false`     |
 | `indicator`      | `indicator`       |             | `boolean` | `false`     |
 | `indicatorValue` | `indicator-value` |             | `string`  | `undefined` |
 | `inverted`       | `inverted`        |             | `boolean` | `false`     |
@@ -34,6 +35,8 @@
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
  - [ecl-category-filter-item](../ecl-category-filter)
  - [ecl-description-list-definition](../ecl-description-list)
+ - [ecl-fact-figures](../ecl-fact-figures)
+ - [ecl-featured-item](../ecl-featured-item)
  - [ecl-file](../ecl-file)
  - [ecl-file-translations-item](../ecl-file)
  - [ecl-footer](../ecl-footer)
@@ -43,10 +46,9 @@
  - [ecl-list-illustration-item](../ecl-list-illustration)
  - [ecl-news-ticker-item](../ecl-news-ticker)
  - [ecl-pagination-item](../ecl-pagination)
- - [ecl-popover-item](../ecl-popover)
+ - [ecl-popover](../ecl-popover)
  - [ecl-site-header](../ecl-site-header)
  - [ecl-social-media-follow-item](../ecl-social-media-follow)
- - [ecl-social-media-share-item](../ecl-social-media-share)
 
 ### Depends on
 
@@ -62,6 +64,8 @@ graph TD;
   ecl-breadcrumb-item --> ecl-link
   ecl-category-filter-item --> ecl-link
   ecl-description-list-definition --> ecl-link
+  ecl-fact-figures --> ecl-link
+  ecl-featured-item --> ecl-link
   ecl-file --> ecl-link
   ecl-file-translations-item --> ecl-link
   ecl-footer --> ecl-link
@@ -71,10 +75,9 @@ graph TD;
   ecl-list-illustration-item --> ecl-link
   ecl-news-ticker-item --> ecl-link
   ecl-pagination-item --> ecl-link
-  ecl-popover-item --> ecl-link
+  ecl-popover --> ecl-link
   ecl-site-header --> ecl-link
   ecl-social-media-follow-item --> ecl-link
-  ecl-social-media-share-item --> ecl-link
   style ecl-link fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

@@ -8,7 +8,7 @@ import { Component, Prop, h } from '@stencil/core';
 export class EclDescriptionListDefinition {
   @Prop() type: string = 'text';
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() items: string;
   @Prop() collapsible: boolean = false;
 
@@ -23,57 +23,73 @@ export class EclDescriptionListDefinition {
 
   getMarkup = (itemsArray) => {
     if (this.type === 'link' && itemsArray) {
-      return itemsArray.map((link) => (
-        <ecl-link
-          theme={this.theme}
-          styleClass={`ecl-description-list__definition-item sc-ecl-description-list-${this.theme}`}
-          path={link.path}
-        >
-        { link.icon ? 
-          <ecl-icon
-            theme={this.theme}
-            slot="icon-before"
-            icon={link.icon}
-          >
-          </ecl-icon>
-          : '' }
-          {link.label}
-        </ecl-link> 
-        ));
+      return (
+          itemsArray.map((link) => (
+            <li class={`ecl-description-list__definition-item sc-ecl-description-list-${this.theme}`}>
+              <ecl-link
+                theme={this.theme}
+                styleClass={`sc-ecl-description-list-${this.theme}`}
+                path={link.path}
+              >
+                {link.label}
+              </ecl-link>
+            </li>
+          ))
+        );
     } else if (this.type === 'link' && !itemsArray) {
         return <slot></slot>;
     }
 
     if (this.type === 'inline' && itemsArray) {
-      return itemsArray.map((inline) => (
-        <ecl-link
-          styleClass={`ecl-description-list__definition-item sc-ecl-description-list-${this.theme}`}
-          path={inline.path}
-          theme={this.theme}
-        >
-          {inline.label}
-        </ecl-link> 
-        ));
+      return (
+        itemsArray.map((inline) => (
+          <li class={`ecl-description-list__definition-item sc-ecl-description-list-${this.theme}`}>
+            <ecl-link
+              styleClass={`sc-ecl-description-list-${this.theme}`}
+              path={inline.path}
+              theme={this.theme}
+            >
+              {inline.label}
+            </ecl-link>
+          </li>
+        ))
+      );
     } else if (this.type === 'inline' && !itemsArray) {
       return <slot></slot>;
     }
     
     if (this.type === 'taxonomy' && itemsArray) {
-      return itemsArray.map((taxonomy) => (
-        <span
-          class={`ecl-description-list__definition-item sc-ecl-description-list-${this.theme}`}
-        >
-        { taxonomy.path ? 
-          <ecl-link
-            theme={this.theme}
-            path={taxonomy.path}
-          >
-            {taxonomy.label}
-          </ecl-link> : taxonomy
-        }
-        </span> 
-      ))
+      return (
+        itemsArray.map((taxonomy) => (
+          <li class={`ecl-description-list__definition-item sc-ecl-description-list-${this.theme}`} >
+          { taxonomy.path ? 
+            <ecl-link
+              theme={this.theme}
+              path={taxonomy.path}
+            >
+              {taxonomy.label}
+            </ecl-link> : taxonomy
+          }
+          </li> 
+        ))
+      );
     } else if (this.type === 'taxonomy' && !itemsArray) {
+      return <slot></slot>;
+    }
+
+    if (this.type === 'tag' && itemsArray) {
+      return (
+        itemsArray.map((tag) => (
+        <li class={`ecl-description-list__definition-item sc-ecl-description-list-${this.theme}`} >
+          <ecl-tag 
+            variant="link"
+            url={tag.url}
+            > {tag.label}
+          </ecl-tag>
+        </li> 
+        ))
+      );
+    } else if (this.type === 'tag' && !itemsArray) {
       return <slot></slot>;
     }
     
@@ -82,15 +98,23 @@ export class EclDescriptionListDefinition {
     }
   }
 
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
   render() {
     const itemsArray = this.items ? JSON.parse(this.items) : false;
 
     return (
       <dd
         class={this.getClass()}
-        {...(this.collapsible ? {'data-ecl-description-list-collapsible': true} : {})}
       >
-        {this.getMarkup(itemsArray)}
+        <ul
+          class={`ecl-description-list__definition-list sc-ecl-description-list-${this.theme}`}
+          {...(this.collapsible ? {'data-ecl-description-list-collapsible': true} : {})}
+        >
+          {this.getMarkup(itemsArray)}
+        </ul>
       </dd>
     )
   }

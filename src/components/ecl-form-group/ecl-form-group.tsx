@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, Element } from '@stencil/core';
 
 @Component({
   tag: 'ecl-form-group',
@@ -11,8 +11,9 @@ import { Component, Prop, h } from '@stencil/core';
 })
 
 export class EclFormGroup {
+  @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() label: string;
   @Prop() invalid: boolean = false;
   @Prop() required: boolean = false;
@@ -21,6 +22,7 @@ export class EclFormGroup {
   @Prop() invalidText: string;
   @Prop() helperText: string;
   @Prop() helperId: string;
+  @Prop() hideLabel: boolean = false;
   @Prop() labelTag: string = 'label';
   @Prop() tag: string = 'div';
   @Prop() name: string;
@@ -36,6 +38,32 @@ export class EclFormGroup {
     ].join(' ');
   }
 
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
+  componentDidRender() {
+    if (this.hideLabel) {
+      const inputs = this.el.querySelectorAll('ecl-input');
+      if (inputs.length === 1 && (inputs[0].getAttribute('type') === 'checkbox' || inputs[0].getAttribute('type') === 'radio')) {
+        const label = inputs[0].querySelector('.ecl-checkbox__text') || inputs[0].querySelector('.ecl-radio__text');
+        if (label) {
+          const span = document.createElement('span');
+          if (this.required) {
+            span.className = `ecl-form-label__required sc-ecl-form-group-${this.theme}`;
+            span.textContent = this.requiredText;
+          } else if (this.optionalText) {
+              span.className = `ecl-form-label__optional sc-ecl-form-group-${this.theme}`;
+              span.textContent = this.optionalText;
+          }
+          if (span.textContent) {
+            label.after(span);
+          }
+        }
+      }
+    }
+  }
+
   render() {
     return (
       <this.tag
@@ -44,13 +72,14 @@ export class EclFormGroup {
       >
       { this.label ?
         <this.labelTag
-          class={`ecl-form-label ${this.invalid ? 'ecl-form-label--invalid' : ''} ${this.labelClass || ''}`}
+          class={`ecl-form-label ${this.invalid ? 'ecl-form-label--invalid' : ''} ${this.hideLabel ? 'ecl-form-label--hidden' : ''} ${this.labelClass || ''}`}
           {...(this.ariaLabelRequired ? { 'aria-label': this.ariaLabelRequired } : {})}
         >
           {this.label}
       {this.required && this.requiredText ? (
         <span
-          class="ecl-form-label__required" 
+          class="ecl-form-label__required"
+          role="note"
           {...(this.ariaLabelRequired ? { 'aria-label': this.ariaLabelRequired } : {})}
         >
           {this.requiredText}
@@ -59,6 +88,7 @@ export class EclFormGroup {
       { !this.required && this.optionalText ?
         <span
           class="ecl-form-label__optional"
+          role="note"
           {...(this.ariaLabelOptional ? { 'aria-label': this.ariaLabelOptional } : {})}
         >
           {this.optionalText}</span> : ''
@@ -72,19 +102,19 @@ export class EclFormGroup {
           {this.helperText}
         </div> : ''
       }
+        <slot></slot>
       { this.invalid && this.invalidText ?
         <div class="ecl-feedback-message">
         { this.invalidIcon ? 
           <ecl-icon
             styleClass={`ecl-feedback-message__icon sc-ecl-form-group-${this.theme}`}
             icon={this.invalidIcon}
-            size="m"
+            size="xs"
           ></ecl-icon> : '' 
         }
           {this.invalidText}
         </div> : '' 
       }
-        <slot></slot>
       </this.tag>
     )
   }

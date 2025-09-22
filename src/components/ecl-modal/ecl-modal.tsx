@@ -72,7 +72,6 @@ export class EclModal {
             <header class="ecl-modal__header">
             {this.withHeader && this.variant !== 'default' ? (
               <ecl-icon
-                theme={this.theme}
                 icon={this.variant}
                 size="m"
                 styleClass={`ecl-modal__icon sc-ecl-modal-${this.theme}`}
@@ -92,7 +91,6 @@ export class EclModal {
             >
               {this.closeLabel}
               <ecl-icon
-                theme={this.theme}
                 icon="close-filled"
                 size="s"
                 slot="icon-after"

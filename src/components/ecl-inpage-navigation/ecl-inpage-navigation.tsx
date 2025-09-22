@@ -14,20 +14,31 @@ declare const ECL: any;
 })
 export class EclInpageNavigation {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
+  @Prop() colorMode: string = '';
   @Prop() eclScript: boolean = false;
   @Prop() inpageTitle: string;
   @Prop() inpageId: string;
 
   getClass(): string {
-    return [
+    const styleClasses = [
       `ecl-inpage-navigation`,
       this.styleClass
-    ].join(' ');
+    ];
+
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`);
+    }
+
+    return styleClasses.join(' ');
   }
 
-  componentDidRender() {
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
+  componentDidLoad() {
     const items = this.el.querySelectorAll('.ecl-inpage-navigation__item');
     if (items) {
       items.forEach((item) => {
@@ -69,6 +80,11 @@ export class EclInpageNavigation {
           class="ecl-inpage-navigation__title"
           id={this.inpageId}
         >
+          <ecl-icon
+            icon="list"
+            size="s"
+            style-class={`ecl-inpage-navigation__title-icon sc-ecl-inpage-navigation-${this.theme}`}>
+          </ecl-icon>
           {this.inpageTitle}
         </div>
         <div class="ecl-inpage-navigation__body">
@@ -87,8 +103,8 @@ export class EclInpageNavigation {
             <ecl-icon
               icon="corner-arrow"
               size="s"
-              transform="rotate-180"
-              style-class="ecl-inpage-navigation__trigger-icon"
+              rotate="180"
+              style-class={`ecl-inpage-navigation__trigger-icon sc-ecl-inpage-navigation-${this.theme}`}
             ></ecl-icon>
           </button>
           <ul

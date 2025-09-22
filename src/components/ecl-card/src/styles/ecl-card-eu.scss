@@ -1,2 +1,6 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-card/card-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/card/card' with (
+  $theme: theme.$theme,
+  $card: var.$card
+);

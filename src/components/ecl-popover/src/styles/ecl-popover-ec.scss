@@ -1,9 +1,20 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-component-link/link-ec';
-@use '@ecl/vanilla-component-popover/popover';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/popover/popover' with (
+  $theme: theme.$theme,
+  $popover: var.$popover
+);
 
 :host {
   cursor: pointer;
+  display: contents;
+}
+
+.ecl-popover__container {
+  height: max-content;
 }
 
 .ecl-link--icon-before.sc-ecl-link-ec {

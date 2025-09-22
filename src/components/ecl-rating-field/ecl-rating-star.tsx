@@ -9,7 +9,7 @@ import { Component, h, Prop, Event, EventEmitter } from '@stencil/core';
   shadow: false,
 })
 export class EclRatingStar {
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() itemId: string;
   @Prop() value: string;
@@ -41,6 +41,10 @@ export class EclRatingStar {
     this.isFocused = false;
   }
 
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
   render() {
     return (
       <div>
@@ -64,14 +68,12 @@ export class EclRatingStar {
         { this.label ?
           <span class="ecl-u-sr-only">{ this.label }</span> : '' }
           <ecl-icon
-            theme={this.theme}
             icon={this.iconFilled}
             styleClass={`ecl-rating-field__icon-filled ecl-rating-field-${this.theme}`}
             size="m"
           >
           </ecl-icon>
           <ecl-icon
-            theme={this.theme}
             icon={this.icon}
             styleClass={`ecl-rating-field__icon-outline ecl-rating-field-${this.theme}`}
             size="m"

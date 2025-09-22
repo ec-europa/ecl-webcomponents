@@ -15,7 +15,7 @@ declare const ECL: any;
 
 export class EclMenu {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() menuId: string;
   @Prop() eclScript: boolean = false;
   @Prop() styleClass: string;
@@ -24,7 +24,6 @@ export class EclMenu {
   @Prop() menuTitle: string;
   @Prop() closeLabel: string;
   @Prop() backLabel: string;
-  @Prop() menuLink: string;
   @Prop() siteName: string;
   @Prop() previousLabel: string;
   @Prop() nextLabel: string;
@@ -77,6 +76,10 @@ export class EclMenu {
     return attrs;
   }
 
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
   render() {
     return (
       <nav
@@ -85,34 +88,40 @@ export class EclMenu {
       >
         <div class="ecl-menu__overlay" data-ecl-menu-overlay></div>
         <div class="ecl-container ecl-menu__container">
-          <a
-            class="ecl-link ecl-link--standalone ecl-menu__open"
-            href={this.menuLink}
+          <ecl-button
+            class={`ecl-menu__open sc-ecl-menu-${this.theme}`}
             data-ecl-menu-open
+            hide-label
+            variant="tertiary"
           >
             <ecl-icon
               icon="hamburger"
-              theme={this.theme}
-              size="s"
+              size="m"
+              slot="icon-before"
               styleClass={`sc-ecl-menu-${this.theme}`}
             ></ecl-icon>
             {this.menuTitle}
-          </a>
+            <ecl-icon
+              icon="close"
+              size="m"
+              slot="icon-after"
+              styleClass={`sc-ecl-menu-${this.theme} ecl-menu__close-switch`}
+            ></ecl-icon>
+          </ecl-button>
           <section
             class="ecl-menu__inner"
-            data-ecl-menu-inner role="application"
             aria-label={this.menuTitle}
+            data-ecl-menu-inner
           >
             <header class="ecl-menu__inner-header">
               <button
-                class="ecl-menu__close ecl-button ecl-button--text"
+                class="ecl-menu__close ecl-button"
                 type="submit"
                 data-ecl-menu-close
               >
                 <span class="ecl-menu__close-container ecl-button__container">
                   <ecl-icon
                     icon="close-filled"
-                    theme={this.theme}
                     size="s"
                     styleClass={`ecl-button__icon ecl-button__icon--before sc-ecl-menu-${this.theme}`}
                   ></ecl-icon>
@@ -127,12 +136,12 @@ export class EclMenu {
               <button
                 data-ecl-menu-back
                 type="submit"
-                class="ecl-menu__back ecl-button ecl-button--text"
+                class="ecl-menu__back ecl-button ecl-button--ghost"
               >
                 <span class="ecl-button__container">
                   <ecl-icon
                     icon="corner-arrow"
-                    transform="rotate-270"
+                    rotate="270"
                     size="xs"
                     styleClass={`ecl-button__icon ecl-button__icon--before sc-ecl-menu-${this.theme}`}
                   ></ecl-icon>
@@ -155,10 +164,9 @@ export class EclMenu {
               tabindex="-1"
             >
               <ecl-icon
-                theme={this.theme}
                 slot="icon-before"
                 icon="corner-arrow"
-                transform="rotate-270"
+                rotate="270"
                 size="s"
               ></ecl-icon>
               {this.previousLabel}
@@ -173,10 +181,9 @@ export class EclMenu {
               tabindex="-1"
             >
               <ecl-icon
-                theme={this.theme}
                 slot="icon-before"
                 icon="corner-arrow"
-                transform="rotate-270"
+                rotate="270"
                 size="s"
               ></ecl-icon>
               {this.nextLabel}

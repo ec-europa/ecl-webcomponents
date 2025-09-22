@@ -4,6 +4,11 @@ const lorem = loremIpsum({ count: 25 });
 
 export default {
   title: 'Components/Navigation/inpage-navigation',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = args =>
@@ -13,30 +18,26 @@ const Template = args =>
       <ecl-inpage-navigation
         inpage-title="Page contents"
         inpage-id="inpage-id"
-        theme="${args.theme}"
         ecl-script
+        color-mode="${args.color_mode}"
       >
         <ecl-inpage-navigation-item
           path="#inline-nav-1"
-          theme="${args.theme}"
         >
           Heading 1
         </ecl-inpage-navigation-item>
         <ecl-inpage-navigation-item
           path="#inline-nav-2"
-          theme="${args.theme}"
         >
           Heading 2 with a long title going on several lines
         </ecl-inpage-navigation-item>
         <ecl-inpage-navigation-item
           path="#inline-nav-3"
-          theme="${args.theme}"
         >
           Heading 3
         </ecl-inpage-navigation-item>
         <ecl-inpage-navigation-item
           path="inline-nav-4"
-          theme="${args.theme}"
         >
           Heading 4
         </ecl-inpage-navigation-item>

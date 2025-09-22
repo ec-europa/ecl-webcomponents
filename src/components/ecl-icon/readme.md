@@ -7,15 +7,16 @@
 
 | Property     | Attribute     | Description | Type     | Default     |
 | ------------ | ------------- | ----------- | -------- | ----------- |
-| `color`      | `color`       |             | `string` | `''`        |
+| `color`      | `color`       |             | `string` | `undefined` |
+| `family`     | `family`      |             | `string` | `''`        |
+| `flip`       | `flip`        |             | `string` | `undefined` |
 | `icon`       | `icon`        |             | `string` | `''`        |
-| `path`       | `path`        |             | `string` | `undefined` |
+| `rotate`     | `rotate`      |             | `string` | `undefined` |
 | `size`       | `size`        |             | `string` | `'xs'`      |
-| `sprite`     | `sprite`      |             | `string` | `''`        |
+| `sprite`     | `sprite`      |             | `string` | `undefined` |
 | `styleClass` | `style-class` |             | `string` | `''`        |
 | `theme`      | `theme`       |             | `string` | `undefined` |
 | `titleTag`   | `title-tag`   |             | `string` | `''`        |
-| `transform`  | `transform`   |             | `string` | `''`        |
 
 
 ## Dependencies
@@ -29,9 +30,10 @@
  - [ecl-category-filter-item](../ecl-category-filter)
  - [ecl-content-block](../ecl-content-block)
  - [ecl-datepicker](../ecl-datepicker)
- - [ecl-description-list-definition](../ecl-description-list)
  - [ecl-expandable](../ecl-expandable)
+ - [ecl-fact-figures](../ecl-fact-figures)
  - [ecl-fact-figures-item](../ecl-fact-figures)
+ - [ecl-featured-item](../ecl-featured-item)
  - [ecl-file](../ecl-file)
  - [ecl-file-translations](../ecl-file)
  - [ecl-file-translations-item](../ecl-file)
@@ -42,20 +44,20 @@
  - [ecl-input](../ecl-input)
  - [ecl-link](../ecl-link)
  - [ecl-list-illustration-item](../ecl-list-illustration)
+ - [ecl-media-container](../ecl-media-container)
  - [ecl-menu](../ecl-menu)
  - [ecl-menu-item](../ecl-menu)
- - [ecl-message](../ecl-message)
  - [ecl-modal](../ecl-modal)
  - [ecl-news-ticker](../ecl-news-ticker)
+ - [ecl-news-ticker-item](../ecl-news-ticker)
+ - [ecl-notification](../ecl-notification)
  - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover](../ecl-popover)
- - [ecl-popover-item](../ecl-popover)
  - [ecl-rating-star](../ecl-rating-field)
  - [ecl-search-form](../ecl-search-form)
  - [ecl-select](../ecl-select)
  - [ecl-site-header](../ecl-site-header)
  - [ecl-social-media-follow-item](../ecl-social-media-follow)
- - [ecl-social-media-share-item](../ecl-social-media-share)
  - [ecl-tag](../ecl-tag)
  - [ecl-timeline-item](../ecl-timeline)
 
@@ -69,9 +71,10 @@ graph TD;
   ecl-category-filter-item --> ecl-icon
   ecl-content-block --> ecl-icon
   ecl-datepicker --> ecl-icon
-  ecl-description-list-definition --> ecl-icon
   ecl-expandable --> ecl-icon
+  ecl-fact-figures --> ecl-icon
   ecl-fact-figures-item --> ecl-icon
+  ecl-featured-item --> ecl-icon
   ecl-file --> ecl-icon
   ecl-file-translations --> ecl-icon
   ecl-file-translations-item --> ecl-icon
@@ -82,20 +85,20 @@ graph TD;
   ecl-input --> ecl-icon
   ecl-link --> ecl-icon
   ecl-list-illustration-item --> ecl-icon
+  ecl-media-container --> ecl-icon
   ecl-menu --> ecl-icon
   ecl-menu-item --> ecl-icon
-  ecl-message --> ecl-icon
   ecl-modal --> ecl-icon
   ecl-news-ticker --> ecl-icon
+  ecl-news-ticker-item --> ecl-icon
+  ecl-notification --> ecl-icon
   ecl-pagination-item --> ecl-icon
   ecl-popover --> ecl-icon
-  ecl-popover-item --> ecl-icon
   ecl-rating-star --> ecl-icon
   ecl-search-form --> ecl-icon
   ecl-select --> ecl-icon
   ecl-site-header --> ecl-icon
   ecl-social-media-follow-item --> ecl-icon
-  ecl-social-media-share-item --> ecl-icon
   ecl-tag --> ecl-icon
   ecl-timeline-item --> ecl-icon
   style ecl-icon fill:#f9f,stroke:#333,stroke-width:4px

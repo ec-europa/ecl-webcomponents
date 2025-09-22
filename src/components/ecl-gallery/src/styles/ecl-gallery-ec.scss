@@ -1,9 +1,13 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-layout-grid/grid';
-@use '@ecl/vanilla-component-gallery/gallery-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/gallery/gallery' with (
+  $theme: theme.$theme,
+  $gallery: var.$gallery
+);
 
-.ecl-gallery__slider-previous,
-.ecl-gallery__slider-next,
 .ecl-gallery__close-button,
 .ecl-gallery__image-icon,
 .ecl-gallery__download,
@@ -11,25 +15,11 @@
   color: #fff !important;
 }
 
-@media screen and (width >= 1140px) {
-  .ecl-gallery__slider-previous,
-  .ecl-gallery__slider-next {
-    background: rgb(0, 0, 0, 0.7) !important;
-
-    &:hover {
-      background: #fff !important;
-    }
-  }
+.ecl-gallery__close-button:hover {
+  color: var(--cm-on-surface-brand) !important;
 }
 
-.ecl-gallery__footer.sc-ecl-gallery-ec {
-  align-items: center;
-}
-
-.ecl-gallery__view-all.sc-ecl-gallery-ec {
-  margin-top: -0.75rem !important;
-}
-
-.ecl-gallery__share.sc-ecl-gallery-ec {
-  margin-inline-start: 0.75rem !important;
+.ecl-gallery__slider-previous,
+.ecl-gallery__slider-next {
+  color: var(--cm-on-surface-brand);
 }

@@ -7,12 +7,13 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type     | Default     |
-| ------------ | ------------- | ----------- | -------- | ----------- |
-| `image`      | `image`       |             | `string` | `undefined` |
-| `imageAlt`   | `image-alt`   |             | `string` | `undefined` |
-| `styleClass` | `style-class` |             | `string` | `''`        |
-| `theme`      | `theme`       |             | `string` | `'ec'`      |
+| Property     | Attribute     | Description | Type      | Default     |
+| ------------ | ------------- | ----------- | --------- | ----------- |
+| `image`      | `image`       |             | `string`  | `undefined` |
+| `imageAlt`   | `image-alt`   |             | `string`  | `undefined` |
+| `imageZoom`  | `image-zoom`  |             | `boolean` | `false`     |
+| `styleClass` | `style-class` |             | `string`  | `''`        |
+| `theme`      | `theme`       |             | `string`  | `undefined` |
 
 
 ## Dependencies

@@ -18,7 +18,7 @@ exports[`ecl-category-filter renders 1`] = `
         <li aria-expanded="false" class="ecl-category-filter__list-item sc-ecl-category-filter-ec">
           <ecl-link path="/example.html" styleclass="ecl-category-filter__item sc-ecl-category-filter-ec ecl-category-filter__item--level-1  ecl-category-filter__item--has-children" theme="ec">
             Item 2 label
-            <ecl-icon icon="corner-arrow" size="xs" slot="icon-after" styleclass="ecl-category-filter__item-icon sc-ecl-category-filter-ec" theme="ec" transform="rotate-180"></ecl-icon>
+            <ecl-icon icon="corner-arrow" rotate="180" size="xs" slot="icon-after" styleclass="ecl-category-filter__item-icon sc-ecl-category-filter-ec"></ecl-icon>
           </ecl-link>
           <ul class="ecl-category-filter__list sc-ecl-category-filter-ec">
             <ecl-category-filter-item label="Item 2.1" level="2" path="/example.html" sub-items="">
@@ -26,7 +26,7 @@ exports[`ecl-category-filter renders 1`] = `
               <li aria-expanded="false" class="ecl-category-filter__list-item sc-ecl-category-filter-ec">
                 <ecl-link path="/example.html" styleclass="ecl-category-filter__item sc-ecl-category-filter-ec ecl-category-filter__item--level-2  ecl-category-filter__item--has-children" theme="ec">
                   Item 2.1
-                  <ecl-icon icon="solid-arrow" size="m" slot="icon-before" styleclass="ecl-category-filter__item-icon sc-ecl-category-filter-ec" theme="ec" transform="rotate-90"></ecl-icon>
+                  <ecl-icon icon="solid-arrow" rotate="90" size="m" slot="icon-before" styleclass="ecl-category-filter__item-icon sc-ecl-category-filter-ec"></ecl-icon>
                 </ecl-link>
                 <ul class="ecl-category-filter__list sc-ecl-category-filter-ec">
                   <ecl-category-filter-item label="Item 2.1.1" level="3" path="/example.html">
@@ -42,7 +42,7 @@ exports[`ecl-category-filter renders 1`] = `
                     <li aria-expanded="false" class="ecl-category-filter__list-item sc-ecl-category-filter-ec">
                       <ecl-link path="/example.html" styleclass="ecl-category-filter__item sc-ecl-category-filter-ec ecl-category-filter__item--level-3  ecl-category-filter__item--has-children" theme="ec">
                         Item 2.1.2
-                        <ecl-icon icon="solid-arrow" size="m" slot="icon-before" styleclass="ecl-category-filter__item-icon sc-ecl-category-filter-ec" theme="ec" transform="rotate-90"></ecl-icon>
+                        <ecl-icon icon="solid-arrow" rotate="90" size="m" slot="icon-before" styleclass="ecl-category-filter__item-icon sc-ecl-category-filter-ec"></ecl-icon>
                       </ecl-link>
                       <ul class="ecl-category-filter__list sc-ecl-category-filter-ec">
                         <ecl-category-filter-item label="Item 2.1.2 a" level="4" path="/example.html">
@@ -147,7 +147,7 @@ exports[`ecl-category-filter renders 1`] = `
         <li aria-expanded="false" class="ecl-category-filter__list-item sc-ecl-category-filter-ec">
           <ecl-link path="/example.html" styleclass="ecl-category-filter__item sc-ecl-category-filter-ec ecl-category-filter__item--level-1  ecl-category-filter__item--has-children" theme="ec">
             Item 3 with a very long label
-            <ecl-icon icon="corner-arrow" size="xs" slot="icon-after" styleclass="ecl-category-filter__item-icon sc-ecl-category-filter-ec" theme="ec" transform="rotate-180"></ecl-icon>
+            <ecl-icon icon="corner-arrow" rotate="180" size="xs" slot="icon-after" styleclass="ecl-category-filter__item-icon sc-ecl-category-filter-ec"></ecl-icon>
           </ecl-link>
           <ul class="ecl-category-filter__list sc-ecl-category-filter-ec">
             <ecl-category-filter-item label="Item 3.1" level="2" path="/example.html" sub-items="">
@@ -155,7 +155,7 @@ exports[`ecl-category-filter renders 1`] = `
               <li aria-expanded="false" class="ecl-category-filter__list-item sc-ecl-category-filter-ec">
                 <ecl-link path="/example.html" styleclass="ecl-category-filter__item sc-ecl-category-filter-ec ecl-category-filter__item--level-2  ecl-category-filter__item--has-children" theme="ec">
                   Item 3.1
-                  <ecl-icon icon="solid-arrow" size="m" slot="icon-before" styleclass="ecl-category-filter__item-icon sc-ecl-category-filter-ec" theme="ec" transform="rotate-90"></ecl-icon>
+                  <ecl-icon icon="solid-arrow" rotate="90" size="m" slot="icon-before" styleclass="ecl-category-filter__item-icon sc-ecl-category-filter-ec"></ecl-icon>
                 </ecl-link>
                 <ul class="ecl-category-filter__list sc-ecl-category-filter-ec">
                   <ecl-category-filter-item label="Item 3.1.1" level="3" path="/example.html">
@@ -171,7 +171,7 @@ exports[`ecl-category-filter renders 1`] = `
                     <li aria-expanded="false" class="ecl-category-filter__list-item sc-ecl-category-filter-ec">
                       <ecl-link path="/example.html" styleclass="ecl-category-filter__item sc-ecl-category-filter-ec ecl-category-filter__item--level-3  ecl-category-filter__item--has-children" theme="ec">
                         Item 3.1.2
-                        <ecl-icon icon="solid-arrow" size="m" slot="icon-before" styleclass="ecl-category-filter__item-icon sc-ecl-category-filter-ec" theme="ec" transform="rotate-90"></ecl-icon>
+                        <ecl-icon icon="solid-arrow" rotate="90" size="m" slot="icon-before" styleclass="ecl-category-filter__item-icon sc-ecl-category-filter-ec"></ecl-icon>
                       </ecl-link>
                       <ul class="ecl-category-filter__list sc-ecl-category-filter-ec">
                         <ecl-category-filter-item label="Item 3.1.2 a" level="4" path="/example.html">

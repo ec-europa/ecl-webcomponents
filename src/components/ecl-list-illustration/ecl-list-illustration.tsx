@@ -12,16 +12,19 @@ import { Component, h, Prop, Element} from '@stencil/core';
 
 export class EclListIllustration {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() variant: string = 'image';
   @Prop() zebra: boolean = false;
   @Prop() column: number = 1;
   @Prop() styleClass: string;
+  @Prop() colorMode: string;
+  @Prop() fontSize: string = 'l';
   @Prop() centered: boolean = false;
 
   getClass(): string {
     const styleClasses = [
       `ecl-list-illustration`,
+      `ecl-list-illustration--font-${this.fontSize}`,
       `ecl-list-illustration--col-${this.column}`,
       this.styleClass
     ];
@@ -34,7 +37,15 @@ export class EclListIllustration {
       styleClasses.push('ecl-list-illustration--centered');
     }
 
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`);
+    }
+
     return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   componentDidRender() {

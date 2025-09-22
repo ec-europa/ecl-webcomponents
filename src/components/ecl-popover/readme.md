@@ -7,14 +7,17 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type     | Default     |
-| ------------ | ------------- | ----------- | -------- | ----------- |
-| `icon`       | `icon`        |             | `string` | `undefined` |
-| `iconSize`   | `icon-size`   |             | `string` | `'fluid'`   |
-| `iconSprite` | `icon-sprite` |             | `string` | `''`        |
-| `path`       | `path`        |             | `string` | `undefined` |
-| `styleClass` | `style-class` |             | `string` | `undefined` |
-| `theme`      | `theme`       |             | `string` | `'ec'`      |
+| Property         | Attribute         | Description | Type      | Default     |
+| ---------------- | ----------------- | ----------- | --------- | ----------- |
+| `close`          | `close`           |             | `boolean` | `false`     |
+| `eclScript`      | `ecl-script`      |             | `boolean` | `false`     |
+| `icon`           | `icon`            |             | `string`  | `undefined` |
+| `indicator`      | `indicator`       |             | `boolean` | `false`     |
+| `indicatorValue` | `indicator-value` |             | `number`  | `undefined` |
+| `itemId`         | `item-id`         |             | `string`  | `undefined` |
+| `styleClass`     | `style-class`     |             | `string`  | `undefined` |
+| `theme`          | `theme`           |             | `string`  | `undefined` |
+| `toggleLabel`    | `toggle-label`    |             | `string`  | `undefined` |
 
 
 ## Dependencies
@@ -23,15 +26,18 @@
 
 - [ecl-link](../ecl-link)
 - [ecl-icon](../ecl-icon)
+- [ecl-button](../ecl-button)
 
 ### Graph
 ```mermaid
 graph TD;
-  ecl-popover-item --> ecl-link
-  ecl-popover-item --> ecl-icon
+  ecl-popover --> ecl-link
+  ecl-popover --> ecl-icon
+  ecl-popover --> ecl-button
   ecl-link --> ecl-icon
   ecl-link --> ecl-indicator
-  style ecl-popover-item fill:#f9f,stroke:#333,stroke-width:4px
+  ecl-button --> ecl-indicator
+  style ecl-popover fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

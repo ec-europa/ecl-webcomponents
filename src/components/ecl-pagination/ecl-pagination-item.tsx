@@ -8,11 +8,12 @@ import { Component, Prop, h } from '@stencil/core';
 
 export class EclPaginationItem {
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() path: string;
   @Prop() ariaLabel: string;
   @Prop() current: boolean;
   @Prop() previous: boolean;
+  @Prop() truncation: boolean = false;
   @Prop() next: boolean;
 
   getClass(): string {
@@ -31,28 +32,37 @@ export class EclPaginationItem {
     if (this.next) {
       styleClasses.push('ecl-pagination__item--next');
     }
+    if (this.truncation) {
+      styleClasses.push('ecl-pagination__item--truncation');
+    }
 
     return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {
     return (
       <li class={this.getClass()}>
-      { !this.current ?
+      { this.truncation ?
+        <span class={`ecl-pagination__text ecl-pagination__text--summary sc-ecl-pagination-${this.theme}`}>...</span>
+      : !this.current ?
         <ecl-link
           theme={this.theme}
           variant="standalone"
           path={this.path}
           aria-label={this.ariaLabel}
-          styleClass={`sc-ecl-pagination-${this.theme}`}
+          hide-label={!!(this.previous || this.next)}
+          styleClass={`sc-ecl-pagination-${this.theme} ecl-pagination__link`}
         >
           <slot></slot>
         { this.previous || this.next ? 
           <ecl-icon
             icon="corner-arrow"
             size="xs"
-            theme={this.theme}
-            transform={this.previous ? 'rotate-270' : 'rotate-90'}
+            rotate={this.previous ? '270' : '90'}
             slot={this.previous ? 'icon-before' : 'icon-after'}
             style-class={`sc-ecl-pagination-${this.theme}`}
           ></ecl-icon> : ''

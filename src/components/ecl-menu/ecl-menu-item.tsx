@@ -7,7 +7,7 @@ import { Component, h, Prop, Element } from '@stencil/core';
 
 export class EclMenuItem {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() external: boolean = false;
   @Prop() current: boolean = false;
@@ -62,12 +62,14 @@ export class EclMenuItem {
   getLinkClass(): string {
     let linkClasses = [
       'ecl-menu__link',
+      'ecl-link--standalone',
       `sc-ecl-menu-${this.theme}`,
     ];
 
     if (this.child) {
       linkClasses = [
         'ecl-menu__sublink',
+        'ecl-link--standalone',
         `sc-ecl-menu-${this.theme}`,
       ];
 
@@ -81,6 +83,10 @@ export class EclMenuItem {
     }
 
     return linkClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {
@@ -100,7 +106,6 @@ export class EclMenuItem {
             <ecl-icon
               icon="external"
               size="xs"
-              theme={this.theme}
               styleClass={`sc-ecl-icon-${this.theme} sc-ecl-menu-${this.theme} ecl-menu__link-icon--external ${this.child ? 'ecl-menu__sublink-icon' : 'ecl-menu__link-icon'}`}
             ></ecl-icon> : ''
           }
@@ -111,14 +116,14 @@ export class EclMenuItem {
           type="button"
           theme={this.theme}
           variant="ghost"
+          hide-label
           {...buttonAttrs}
         > 
           <ecl-icon
             icon="corner-arrow"
             size="xs"
-            transform="rotate-180"
+            rotate="180"
             slot="icon-after"
-            theme={this.theme}
             styleClass={`sc-ecl-icon-${this.theme} sc-ecl-menu-${this.theme}`}
           >
           </ecl-icon>

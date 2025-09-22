@@ -21,6 +21,7 @@ export class EclLink {
   @Prop() variant: string = 'default';
   @Prop() titleAttr: string;
   @Prop() external: boolean = false;
+  @Prop() hideLabel: boolean = false;
   @Prop() ariaLabel: string;
   @Prop() srExternal: string;
   @Prop() name: string;
@@ -41,6 +42,10 @@ export class EclLink {
 
     if (this.inverted) {
       styleClasses.push('ecl-link--inverted');
+    }
+
+    if (this.hideLabel) {
+      styleClasses.push('ecl-link--icon-only');
     }
 
     if (this.noVisited) {
@@ -73,13 +78,15 @@ export class EclLink {
       });
     }
 
-    if (this.el.querySelector('ecl-icon')) {
-      this.el.querySelector('ecl-icon svg').classList.add('ecl-link__icon');
-      if (this.el.querySelector('ecl-icon').getAttribute('slot') === 'icon-after') {
-        this.el.querySelector('ecl-icon svg').classList.add('ecl-link__icon--after');
-      } else {
-        this.el.querySelector('ecl-icon svg').classList.add('ecl-link__icon--before');
+    const attributes = this.el.attributes;
+    Array.from(attributes).forEach((attr) => {
+      if (attr.name.startsWith('aria-')) {
+        this.el.querySelector('.ecl-link').setAttribute(attr.name, attr.value);
       }
+    });
+
+    if (this.el.querySelector('ecl-icon')) {
+      this.el.querySelector('ecl-icon').classList.add('ecl-link__icon');
     }
   }
 
@@ -87,7 +94,7 @@ export class EclLink {
     return (
       <ecl-icon 
         icon="external"
-        style-class={`ecl-link__icon ecl-link__icon--after sc-ecl-link-${this.theme}`}
+        style-class={`ecl-link__icon sc-ecl-link-${this.theme}`}
         size="2xs"
         title-tag={this.srExternal}
       >
@@ -137,7 +144,9 @@ export class EclLink {
           <ecl-indicator ecl-script value={this.indicatorValue}></ecl-indicator>
         </span>
       )}
+      <span class="ecl-link__label">
         <slot></slot>
+      </span>
       {(this.external || (this.hasIconAfter && !this.indicator)) && (
         <slot name="icon-after">{ this.external ? this.getExternal() : '' }</slot>
       )}

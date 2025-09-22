@@ -1,6 +1,8 @@
 import { Component, h, Prop, Element } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare var ECL: any;
+declare const CAROUSEL: any;
+declare const BANNER: any;
 
 @Component({
   tag: 'ecl-carousel',
@@ -16,10 +18,12 @@ declare const ECL: any;
 export class EclCarousel {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() eclScript: boolean = false;
   @Prop() carouselId: string;
+  @Prop() colorMode: string;
   @Prop() slidesNumber: number;
+  @Prop() fullWidth: boolean = false;
   @Prop() counterLabel: string = 'of';
   @Prop() srNavigation: string = 'Go to slide %d';
   @Prop() srPrevious: string = 'Prev slides';
@@ -28,13 +32,32 @@ export class EclCarousel {
   @Prop() srPlay: string = 'Play carousel';
 
   getClass(): string {
-    return [
+    const styleClasses = [
       `ecl-carousel`,
       this.styleClass
-    ].join(' ');
+    ];
+
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`);
+    }
+
+    if (this.fullWidth) {
+      styleClasses.push('ecl-carousel--full-width');
+    }
+
+    return styleClasses.join(' ');
   }
 
-  componentDidRender() {
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
+  componentDidLoad() {
+    const slides = this.el.querySelectorAll('.ecl-carousel__slide');
+    slides.forEach((slide) => {
+      slide.classList.add(`sc-ecl-carousel-${this.theme}`);
+    });
+
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-carousel-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
@@ -43,7 +66,9 @@ export class EclCarousel {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const carousel = new ECL.Carousel(this.el.firstElementChild);
+        ;(window as any).ECL = (window as any).ECL || {};
+        ECL.Banner = BANNER.Banner;
+        const carousel = new CAROUSEL.Carousel(this.el.firstElementChild);
         carousel.init();
       };
       document.body.appendChild(script);
@@ -56,87 +81,57 @@ export class EclCarousel {
         class={this.getClass()}
         data-ecl-carosuel
       >
+        <div class="ecl-carousel__controls">
+          <div class="ecl-container">
+            <div class="ecl-carousel__autoplay">
+              <ecl-button
+                type="button"
+                variant="tertiary"
+                styleClass={`ecl-carousel__play sc-ecl-carousel-${this.theme}`}
+                hideLabel
+              >
+                <ecl-icon
+                  icon="play-outline"
+                  size="m"
+                  slot="icon-after"
+                  style-class={`ecl-carousel__icon-default sc-ecl-carousel-${this.theme}`}
+                ></ecl-icon>
+                {this.srPlay}
+              </ecl-button>
+              <ecl-button 
+                type="button" 
+                styleClass={`ecl-carousel__pause sc-ecl-carousel-${this.theme}`}
+                hideLabel
+                variant="tertiary"
+              >
+                <ecl-icon
+                  icon="pause-outline"
+                  size="m"
+                  slot="icon-after"
+                  style-class={`ecl-carousel__icon-default sc-ecl-carousel-${this.theme}`}
+                ></ecl-icon>
+                {this.srPause}
+              </ecl-button>
+            </div>
+            <div class="ecl-carousel__navigation" role="tablist">
+            { [...Array(this.slidesNumber)].map((_, i) =>
+              <ecl-button
+                type="button"
+                variant="tertiary"
+                styleClass={`ecl-carousel__navigation-item sc-ecl-carousel-${this.theme}`}
+              >
+                {i + 1}
+              </ecl-button>
+            ) } 
+            </div>
+          </div>
+        </div>
         <div class="ecl-carousel__container">
           <div
             class="ecl-carousel__slides"
             id={this.carouselId}
           >
             <slot></slot>
-          </div>
-          <button
-            type="button"
-            class="ecl-carousel__prev"
-          >
-            <ecl-icon
-              theme={this.theme}
-              icon="corner-arrow"
-              size="m"
-              transform="rotate-270"
-              style-class={`ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-${this.theme}`}
-            ></ecl-icon>
-             <span class="ecl-u-sr-only">{this.srPrevious}</span>
-          </button>
-          <button
-            type="button"
-            class="ecl-carousel__next"
-          >
-            <ecl-icon
-              theme={this.theme}
-              icon="corner-arrow"
-              size="m"
-              transform="rotate-90"
-              style-class={`ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-${this.theme}`}
-            ></ecl-icon>
-            <span class="ecl-u-sr-only">{this.srNext}</span>
-          </button>
-        </div>
-        <div class="ecl-carousel__controls">
-          <div class="ecl-container">
-            <div class="ecl-carousel__autoplay">
-              <button type="button" class="ecl-carousel__play">
-                <ecl-icon
-                  theme={this.theme}
-                  icon="play"
-                  size="l"
-                  color="inverted"
-                  style-class={`ecl-carousel__icon-default sc-ecl-carousel-${this.theme}`}
-                ></ecl-icon>
-                <ecl-icon
-                  theme={this.theme}
-                  icon="play-filled"
-                  size="l"
-                  color="inverted"
-                  style-class={`ecl-carousel__icon-active sc-ecl-carousel-${this.theme}`}
-                ></ecl-icon>
-                <span class="ecl-u-sr-only">{this.srPlay}</span>
-              </button>
-              <button type="button" class="ecl-carousel__pause">
-                <ecl-icon
-                  theme={this.theme}
-                  icon="pause"
-                  size="l"
-                  style-class={`ecl-icon--inverted ecl-carousel__icon-default sc-ecl-carousel-${this.theme}`}
-                ></ecl-icon>
-                <ecl-icon
-                  theme={this.theme}
-                  icon="pause-filled"
-                  size="l"
-                  color="inverted"
-                  style-class={`ecl-carousel__icon-active sc-ecl-carousel-${this.theme}`}
-                ></ecl-icon>
-                <span class="ecl-u-sr-only">{this.srPause}</span>
-              </button>
-            </div>
-            <div class="ecl-carousel__navigation">
-            { [...Array(this.slidesNumber)].map((i) =>
-              <button type="button" class="ecl-carousel__navigation-item">
-                <span class="ecl-u-sr-only">{this.srNavigation.replace('%d', i)}</span>
-              </button>
-            ) } 
-            </div>
-            <div class="ecl-carousel__pagination">
-              <span class="ecl-carousel__current"></span> {this.counterLabel} <span class="ecl-carousel__max">{this.slidesNumber}</span>
-            </div>
           </div>
         </div>
       </div>

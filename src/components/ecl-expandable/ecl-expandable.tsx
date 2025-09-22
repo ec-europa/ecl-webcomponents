@@ -82,8 +82,7 @@ export class EclExpandable {
             slot="icon-after"
             icon="corner-arrow"
             size="fluid"
-            theme={this.theme}
-            transform="rotate-180"
+            rotate="180"
             style-class={`ecl-button__icon ecl-button__icon--after sc-ecl-button-${this.theme} sc-ecl-expandable-${this.theme}`}
           ></ecl-icon>
         </ecl-button>

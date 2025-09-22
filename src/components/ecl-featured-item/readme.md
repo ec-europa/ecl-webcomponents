@@ -9,14 +9,17 @@
 
 | Property                | Attribute                 | Description | Type      | Default                          |
 | ----------------------- | ------------------------- | ----------- | --------- | -------------------------------- |
+| `colorMode`             | `color-mode`              |             | `string`  | `undefined`                      |
 | `defaultContainerClass` | `default-container-class` |             | `string`  | `'ecl-featured-item__container'` |
 | `eclScript`             | `ecl-script`              |             | `boolean` | `false`                          |
 | `image`                 | `image`                   |             | `string`  | `undefined`                      |
 | `itemTitle`             | `item-title`              |             | `string`  | `undefined`                      |
+| `linkLabel`             | `link-label`              |             | `string`  | `undefined`                      |
+| `linkPath`              | `link-path`               |             | `string`  | `undefined`                      |
 | `mediaCaption`          | `media-caption`           |             | `string`  | `undefined`                      |
 | `position`              | `position`                |             | `string`  | `'left'`                         |
 | `styleClass`            | `style-class`             |             | `string`  | `undefined`                      |
-| `theme`                 | `theme`                   |             | `string`  | `'ec'`                           |
+| `theme`                 | `theme`                   |             | `string`  | `undefined`                      |
 | `variant`               | `variant`                 |             | `string`  | `'default'`                      |
 
 
@@ -25,12 +28,22 @@
 ### Depends on
 
 - [ecl-media-container](../ecl-media-container)
+- [ecl-link](../ecl-link)
+- [ecl-icon](../ecl-icon)
 
 ### Graph
 ```mermaid
 graph TD;
   ecl-featured-item --> ecl-media-container
+  ecl-featured-item --> ecl-link
+  ecl-featured-item --> ecl-icon
   ecl-media-container --> ecl-picture
+  ecl-media-container --> ecl-video
+  ecl-media-container --> ecl-button
+  ecl-media-container --> ecl-icon
+  ecl-button --> ecl-indicator
+  ecl-link --> ecl-icon
+  ecl-link --> ecl-indicator
   style ecl-featured-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

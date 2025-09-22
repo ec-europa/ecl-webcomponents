@@ -16,6 +16,7 @@ export class EclButton {
   @Prop() type: string = 'submit';
   @Prop() variant: string = 'primary';
   @Prop({ mutable: true }) theme: string;
+  @Prop() containerExtraClasses: string;
   @Prop() hideLabel: boolean = false;    
   @Prop() ariaControls: string;
   @Prop() itemId: string;
@@ -51,11 +52,7 @@ export class EclButton {
     });
 
     if (this.el.getElementsByTagName('ecl-icon')[0] && this.el.querySelector('.ecl-icon')) {
-      const slot = this.el.getElementsByTagName('ecl-icon')[0].getAttribute('slot');
       this.el.querySelector('.ecl-icon').classList.add('ecl-button__icon', `sc-ecl-button-${this.theme}`);
-      if (slot && !this.hideLabel) {
-        this.el.querySelector('.ecl-icon').classList.add(`ecl-button__${slot.substring(0, 5) + '-' + slot.substring(5)}`);
-      }
     }
   }
 
@@ -71,7 +68,7 @@ export class EclButton {
   private get hasIconBefore(): boolean {
     return !!this.el.querySelector('[slot="icon-before"]');
   }
-  
+
   private get hasIconAfter(): boolean {
     return !!this.el.querySelector('[slot="icon-after"]');
   }
@@ -84,7 +81,7 @@ export class EclButton {
         disabled={this.disabled}
         {...(this.itemId && { id: this.itemId })}
       >
-        <span class="ecl-button__container">
+        <span class={`ecl-button__container${this.containerExtraClasses ? ' ' + this.containerExtraClasses : ''}`}>
           {this.hasIconBefore && !this.indicator && (
             <slot name="icon-before"></slot>
           )}
@@ -95,15 +92,9 @@ export class EclButton {
             </span>
           )}
 
-          {!this.hideLabel ? (
-            <span class="ecl-button__label">
-              <slot></slot>
-            </span>
-          ) : (
-            <span class="ecl-u-sr-only" data-ecl-label>
-              <slot></slot>
-            </span>
-          )}
+          <span class="ecl-button__label" data-ecl-label>
+            <slot></slot>
+          </span>
 
           {this.hasIconAfter && !this.indicator && (
             <slot name="icon-after"></slot>

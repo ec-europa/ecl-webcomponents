@@ -17,12 +17,12 @@ export class EclDatepicker {
   @Event() focused: EventEmitter<void>;
   @Event() blurred: EventEmitter<void>;
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() disabled: boolean = false;
   @Prop() required: boolean = false;
   @Prop() placeholder: string = 'DD-MM-YYYY';
-  @Prop() inputId: string;
+  @Prop() inputId: string = `ecl-datepicker-${Math.random().toString(36).slice(2, 10)}`;
   @Prop() invalid: boolean = false;
   @Prop() type: string;
   @Prop() name: string;
@@ -57,34 +57,22 @@ export class EclDatepicker {
     return styleClasses.join(' ');
   }
 
-  componentDidRender() {
-    if (this.inputId) {
-      const group = this.el.closest('.ecl-form-group');
-      if (group) {
-        const label = group.querySelector('.ecl-form-label');
-        if (label) {
-          label.setAttribute('for', this.inputId);
-          label.setAttribute('id', `${this.inputId}-label`);
-        }
-        const helper = group.querySelector('.ecl-help-block');
-        if (helper) {
-          helper.setAttribute('id', `${this.inputId}-helper`);
-        }
-      }
-    }
-  
-    const momentSrc = 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js';
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
 
-    if (document.querySelector(`script[src="${momentSrc}"]`)) {
-      document.querySelector(`script[src="${momentSrc}"]`).remove();
+  componentDidLoad() {
+    const pikadaySrc = 'https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.2/pikaday.js';
+
+    if (document.querySelector(`script[src="${pikadaySrc}"]`)) {
+      document.querySelector(`script[src="${pikadaySrc}"]`).remove();
     }
 
-    const moment = document.createElement('script');
-    moment.setAttribute('integrity', 'sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=');
-    moment.setAttribute('crossorigin', 'anonymous');
-    moment.src = momentSrc;
+    const pikaday = document.createElement('script');
+    pikaday.setAttribute('crossorigin', 'anonymous');
+    pikaday.src = pikadaySrc;
 
-    moment.onload = () => {
+    pikaday.onload = () => {
       const src = getAssetPath('./build/scripts/ecl-datepicker-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
         document.querySelector(`script[src="${src}"]`).remove();
@@ -99,16 +87,33 @@ export class EclDatepicker {
           { format: this.dateFormat, yearRange: Number(this.yearRange) }
         );
 
-          datepicker.init();
+        datepicker.init();
       };
 
       document.body.appendChild(script);
     };
 
-    document.body.appendChild(moment);
+    document.body.appendChild(pikaday);
   }
 
   render() {
+    const attributes = {};
+    if (this.inputId) {
+      const group = this.el.closest('.ecl-form-group');
+      if (group) {
+        const label = group.querySelector('.ecl-form-label');
+        if (label) {
+          label.setAttribute('for', this.inputId);
+          label.setAttribute('id', `${this.inputId}-label`);
+        }
+        const helper = group.querySelector('.ecl-help-block');
+        if (helper) {
+          helper.setAttribute('id', `${this.inputId}-helper`);
+          attributes['aria-describedby'] = `${this.inputId}-helper`;
+        }
+      }
+    }
+
     return (
       <div class={this.getClass()}>
         <input
@@ -123,12 +128,12 @@ export class EclDatepicker {
           onChange={event => this.handleChange(event)}
           onFocus={() => this.handleFocus()}
           onBlur={() => this.handleBlur()}
+          {...attributes}
         />
         <ecl-icon
-          theme={this.theme}
           styleClass={`ecl-datepicker__icon sc-ecl-datepicker-${this.theme}`}
           icon="calendar"
-          size="s"
+          size="xs"
         >  
         </ecl-icon>
       </div>

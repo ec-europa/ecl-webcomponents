@@ -1,8 +1,19 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-component-description-list/description-list-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/description-list/description-list' with (
+  $theme: theme.$theme,
+  $description-list: var.$description-list
+);
 
 .ecl-description-list__term.sc-ecl-description-list-ec:first-child {
-  margin-top: 1rem;
+  margin-top: var(--s-xl);
+}
+
+.ecl-description-list__term:first-child.is-first {
+  margin-top: 0;
 }
 
 .ecl-link--icon-before .ecl-icon {
@@ -11,11 +22,5 @@
 
 .ecl-description-list--horizontal.sc-ecl-description-list-ec .ecl-description-list__term.sc-ecl-description-list-ec,
 .ecl-description-list--horizontal.sc-ecl-description-list-ec .ecl-description-list__definition.sc-ecl-description-list-ec {
-  margin-top: 1rem;
-}
-
-.ecl-description-list__definition--inline.sc-ecl-description-list-ec .ecl-description-list__definition-item.sc-ecl-description-list-ec:last-child {
-  border-inline-end: 1px solid #404040;
-  margin-inline-end: 0.5rem;
-  padding-inline-end: 0.5rem;
+  margin-top: var(--s-l);
 }

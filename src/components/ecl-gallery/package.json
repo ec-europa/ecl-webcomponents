@@ -3,8 +3,8 @@
   "author": "European Commission",
   "license": "EUPL-1.2",
   "version": "0.15.1",
-  "description": "ECL Page Banner",
-  "main": "ecl-hero-banner.tsx",
+  "description": "ECL Gallery",
+  "main": "ecl-gallery.tsx",
   "private": true,
   "scripts": {
     "build:styles": "cross-env ecl-builder styles",
@@ -14,12 +14,12 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/theme-ec": "3.13.0",
-    "@ecl/theme-eu": "3.13.0",
-    "@ecl/theme-dev": "3.13.0",
-    "@ecl/builder": "3.13.0",
-    "@ecl/vanilla-component-gallery": "3.13.0",
-    "@ecl/vanilla-layout-grid": "3.13.0",
+    "@ecl/theme-ec": "5.0.0-alpha.15",
+    "@ecl/theme-eu": "5.0.0-alpha.15",
+    "@ecl/builder": "5.0.0-alpha.15",
+    "@ecl/gallery": "5.0.0-alpha.15",
+    "@ecl/grid": "5.0.0-alpha.15",
+    "@ecl/utility-screen-reader": "5.0.0-alpha.15",
     "cross-env": "7.0.3"
   },
   "repository": {

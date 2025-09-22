@@ -1,2 +1,9 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-component-content-item/content-item-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/content-item/content-item' with (
+  $theme: theme.$theme,
+  $content-item: var.$content-item
+);

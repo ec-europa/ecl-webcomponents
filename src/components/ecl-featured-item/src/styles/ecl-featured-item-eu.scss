@@ -1,2 +1,12 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-component-featured-item/featured-item-eu';
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' with (
+  $typography: var.$typography
+);
+@use '@ecl/featured-item/featured-item' with (
+  $theme: theme.$theme,
+  $featured-item: var.$featured-item
+);

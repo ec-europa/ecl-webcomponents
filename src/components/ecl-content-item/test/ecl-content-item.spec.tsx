@@ -14,10 +14,10 @@ describe('ecl-content-item', () => {
     const page = await newSpecPage({
       components: [EclContentItem, EclPicture, EclContentBlock, EclLink, EclIcon, EclDescriptionList, EclLabel, EclDescriptionListDefinition, EclDescriptionListTerm],
       html: `<ecl-content-item
-        theme="ec"
         image-position="left"
         image-alt="Alternative text"
         image-size="large"
+        image-zoom
       >
       <ecl-picture
         slot="picture"
@@ -31,7 +31,6 @@ describe('ecl-content-item', () => {
       </ecl-picture>
       <ecl-content-block
         slot="content-block"
-        theme="ec"
         meta-primary='["PRIMARY META", "DD Month Year"]'
         meta-secondary='[{"label": "2018/10/22", "icon": "calendar"}, {"label": "Luxembourg", "icon": "location"}]'
         has-title
@@ -44,14 +43,12 @@ describe('ecl-content-item', () => {
         <ecl-label
           slot="labels"
           variant="highlight"
-          theme="ec"
         >
           Highlight
         </ecl-label>
         <ecl-label
           slot="labels"
           variant="high"
-          theme="ec"
         >
           High importance
         </ecl-label>
@@ -59,7 +56,6 @@ describe('ecl-content-item', () => {
           quis tincidunt sem viverra. Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus
         </p>
         <ecl-link
-          theme="ec"
           slot="title"
           path="/example.html"
           variant="standalone"
@@ -68,7 +64,6 @@ describe('ecl-content-item', () => {
         </ecl-link>
         <ecl-link
           slot="links"
-          theme="ec"
           variant="standalone"
           path="/example.html"
         >
@@ -76,7 +71,6 @@ describe('ecl-content-item', () => {
         </ecl-link>
         <ecl-link
           slot="links"
-          theme="ec"
           variant="standalone"
           path="/example.html"
         >
@@ -84,7 +78,6 @@ describe('ecl-content-item', () => {
         </ecl-link>
         <ecl-link
           slot="links"
-          theme="ec"
           variant="standalone"
           path="/example.html"
         >
@@ -92,7 +85,6 @@ describe('ecl-content-item', () => {
         </ecl-link>
         <ecl-link
           slot="links"
-          theme="ec"
           variant="standalone"
           path="/example.html"
         >
@@ -100,7 +92,6 @@ describe('ecl-content-item', () => {
         </ecl-link>
         <ecl-link
           slot="links-secondary"
-          theme="ec"
           variant="standalone"
           path="/example.html"
         >
@@ -108,57 +99,47 @@ describe('ecl-content-item', () => {
         </ecl-link>
         <ecl-link
           slot="links-secondary"
-          theme="ec"
           variant="standalone"
           path="/example.html"
         >
           Secondary Link 2
         </ecl-link>
         <ecl-description-list
-          theme="ec"
           slot="lists"
         >
           <ecl-description-list-term
-            theme="ec"
           >
             Standard text
           </ecl-description-list-term>
           <ecl-description-list-definition
             type="text"
-            theme="ec"
           >
             Lorem ipsum dolor sit amet, <a href="/component-library/example.html" class="ecl-link">consectetur adipiscing elit</a>. Suspendisse ut sapien condimentum, aliquet turpis sit amet, finibus purus. Donec porttitor iaculis felis ut dapibus. Sed blandit, massa ac suscipit facilisis
           </ecl-description-list-definition>
           <ecl-description-list-term
-            theme="ec"
           >
             Standalone links
           </ecl-description-list-term>
           <ecl-description-list-definition
             type="link"
-            theme="ec"
             items='[{"label": "Lorem ipsum dolor sit amet", "path": "/example.html", "icon": "copy"},{"label": "Lorem ipsum dolor sit amet", "path": "/example.html", "icon": "download"}]'
           >
           </ecl-description-list-definition>
           <ecl-description-list-term
-            theme="ec"
           >
             Links inline
           </ecl-description-list-term>
           <ecl-description-list-definition
             type="inline"
-            theme="ec"
             items='[{"label": "Lorem ipsum dolor sit amet", "path": "/example.html"},{"label": "Lorem ipsum dolor sit amet", "path": "/example.html"}]'
           >
           </ecl-description-list-definition>
           <ecl-description-list-term
-            theme="ec"
           >
             Taxonomy list
           </ecl-description-list-term>
           <ecl-description-list-definition
             type="taxonomy"
-            theme="ec"
             items='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"},"Taxonomy item 3"]'
           ></ecl-description-list-definition>
         </ecl-description-list>
