@@ -1,12 +1,9 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-layout-grid/grid';
-@use '@ecl/vanilla-component-modal/modal-ec';
-
-.ecl-modal__icon,
-.ecl-modal__close * {
-  vertical-align: middle;
-}
-
-.ecl-modal__close * {
-  margin-inline-start: 0.5rem;
-}
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/modal/modal' with (
+  $theme: theme.$theme,
+  $modal: var.$modal
+);

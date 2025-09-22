@@ -248,6 +248,7 @@ export namespace Components {
         "theme": string;
     }
     interface EclCategoryFilter {
+        "colorMode": string;
         /**
           * @default false
          */
@@ -256,9 +257,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclCategoryFilterItem {
@@ -278,9 +276,6 @@ export namespace Components {
           * @default false
          */
         "subItems": boolean;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclContentBlock {
@@ -1127,9 +1122,6 @@ export namespace Components {
          */
         "size": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "toggleId": string;
         /**
@@ -1578,9 +1570,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'm'
@@ -1657,9 +1646,6 @@ export namespace Components {
          */
         "styleClass": string;
         "tag": 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclTextarea {
@@ -2658,6 +2644,7 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclCategoryFilter {
+        "colorMode"?: string;
         /**
           * @default false
          */
@@ -2666,9 +2653,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclCategoryFilterItem {
@@ -2688,9 +2672,6 @@ declare namespace LocalJSX {
           * @default false
          */
         "subItems"?: boolean;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclContentBlock {
@@ -3543,9 +3524,6 @@ declare namespace LocalJSX {
          */
         "size"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "toggleId"?: string;
         /**
@@ -4003,9 +3981,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'm'
@@ -4083,9 +4058,6 @@ declare namespace LocalJSX {
          */
         "styleClass"?: string;
         "tag"?: 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclTextarea {
