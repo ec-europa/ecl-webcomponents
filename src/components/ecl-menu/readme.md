@@ -15,7 +15,7 @@
 | `hasChildren`      | `has-children`       |             | `boolean` | `false`     |
 | `link`             | `link`               |             | `string`  | `undefined` |
 | `styleClass`       | `style-class`        |             | `string`  | `undefined` |
-| `theme`            | `theme`              |             | `string`  | `'ec'`      |
+| `theme`            | `theme`              |             | `string`  | `undefined` |
 | `triggerAriaLabel` | `trigger-aria-label` |             | `string`  | `undefined` |
 
 

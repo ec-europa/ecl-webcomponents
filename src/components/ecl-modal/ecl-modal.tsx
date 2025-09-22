@@ -14,7 +14,7 @@ declare const ECL: any;
 })
 export class EclModal {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() variant: string = 'default';
   @Prop() styleClass: string;
   @Prop() withBody: boolean = false;
@@ -40,7 +40,11 @@ export class EclModal {
     return this.size === 's' ? 'ecl-modal__content ecl-col-12' : 'ecl-modal__content ecl-col-m-10 ecl-col-l-8';
   }
 
-  componentDidRender() {
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
+  componentDidLoad() {
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-modal-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
@@ -70,7 +74,7 @@ export class EclModal {
               <ecl-icon
                 icon={this.variant}
                 size="m"
-                class={`ecl-modal__icon sc-ecl-modal-${this.theme}`}
+                styleClass={`ecl-modal__icon sc-ecl-modal-${this.theme}`}
               ></ecl-icon>
             ) : ''}
             {this.withHeader ? (
@@ -81,14 +85,17 @@ export class EclModal {
             <ecl-button
               theme={this.theme}
               type="button"
-              variant="ghost"
+              variant="tertiary"
+              hide-label
               styleClass={`ecl-modal__close sc-ecl-modal-${this.theme}`}
               data-ecl-modal-close
             >
               {this.closeLabel}
               <ecl-icon
-                icon="close-filled"
+                icon="close"
                 size="s"
+                slot="icon-after"
+                style-class={`sc-ecl-modal-${this.theme}`}
               ></ecl-icon>
               </ecl-button>
             </header>

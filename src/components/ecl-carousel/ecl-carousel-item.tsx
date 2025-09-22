@@ -7,8 +7,9 @@ import { Component, h, Prop } from '@stencil/core';
 export class EclCarouselItem {
   @Prop() styleClass: string = '';
   @Prop() bannerTitle: string = '';
+  @Prop() credit: string;
   @Prop() image: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() ctaLink: string;
   @Prop() ctaLabel: string;
   @Prop() size: string = 'm';
@@ -22,6 +23,10 @@ export class EclCarouselItem {
     ].join(' ');
   }
 
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
   render() {
     return (
       <div
@@ -30,12 +35,14 @@ export class EclCarouselItem {
         aria-label={this.ariaLabel}
       >
         <ecl-banner
+          ecl-script
           banner-title={this.bannerTitle}
           image={this.image}
           theme={this.theme}
           cta-link={this.ctaLink}
           cta-label={this.ctaLabel}
           size={this.size}
+          credit={this.credit}
         >
           <slot></slot>
         </ecl-banner>

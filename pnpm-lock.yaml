@@ -15,15 +15,18 @@ overrides:
   cli-truncate: 2.1.0
 
 patchedDependencies:
+  '@ecl/banner':
+    hash: a39e3a0b55efa10bbc0da27664c450abe160a9016a379a89eca812043aa0620a
+    path: patches/@ecl__banner.patch
   '@ecl/builder@3.13.0':
     hash: 8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d
     path: patches/@ecl__builder@3.13.0.patch
   '@ecl/builder@5.0.0-alpha.15':
     hash: d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec
     path: patches/@ecl__builder@5.0.0-alpha.15.patch
-  '@ecl/card':
-    hash: 47d193af49511053eb04a9537ca5c39ff19e2bb81f03c5c06adcff68b2332bcd
-    path: patches/@ecl__card.patch
+  '@ecl/carousel':
+    hash: abf77f5c3eb76bcd9e6d8ca74130b0b1be33bfe6f666980d03ebad98799bdfc5
+    path: patches/@ecl__carousel.patch
   '@ecl/content-block@5.0.0-alpha.15':
     hash: 86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752
     path: patches/@ecl__content-block@5.0.0-alpha.15.patch
@@ -33,12 +36,6 @@ patchedDependencies:
   '@ecl/theme-dev@3.13.0':
     hash: 241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65
     path: patches/@ecl__theme-dev@3.13.0.patch
-  '@ecl/vanilla-component-button@3.13.0':
-    hash: b10260c5c193e3f2f20a5d6721d43be35a19d874c7cfff32ab7e4f55a2c60e38
-    path: patches/@ecl__vanilla-component-button@3.13.0.patch
-  '@ecl/vanilla-component-carousel@3.13.0':
-    hash: 3546b846e0440ff2e10073e828289e1324bb721c13b6cc8dca9ad57572158fcb
-    path: patches/@ecl__vanilla-component-carousel@3.13.0.patch
   '@stencil/react-output-target@0.5.3':
     hash: 403ac53588c2362c9db2125ba3fb502cfee8a4ac96ab3c883a9e43c2be4a423a
     path: patches/@stencil__react-output-target@0.5.3.patch
@@ -451,7 +448,7 @@ importers:
     devDependencies:
       '@ecl/banner':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=a39e3a0b55efa10bbc0da27664c450abe160a9016a379a89eca812043aa0620a)
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.35.0(jiti@1.21.7))
@@ -579,7 +576,7 @@ importers:
         version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.35.0(jiti@1.21.7))
       '@ecl/card':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=47d193af49511053eb04a9537ca5c39ff19e2bb81f03c5c06adcff68b2332bcd)
+        version: 5.0.0-alpha.15
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -594,25 +591,32 @@ importers:
         version: 7.0.3
 
   src/components/ecl-carousel:
+    dependencies:
+      '@ecl/web-components-button':
+        specifier: 0.15.1
+        version: link:../ecl-button
+      '@ecl/web-components-icon':
+        specifier: 0.15.1
+        version: link:../ecl-icon
     devDependencies:
+      '@ecl/banner':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=a39e3a0b55efa10bbc0da27664c450abe160a9016a379a89eca812043aa0620a)
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.35.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.35.0(jiti@1.21.7))
+      '@ecl/carousel':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=abf77f5c3eb76bcd9e6d8ca74130b0b1be33bfe6f666980d03ebad98799bdfc5)
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-carousel':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=3546b846e0440ff2e10073e828289e1324bb721c13b6cc8dca9ad57572158fcb)
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -1281,47 +1285,45 @@ importers:
   src/components/ecl-menu:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.35.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.35.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/menu':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-menu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
 
   src/components/ecl-modal:
+    dependencies:
+      '@ecl/web-components-button':
+        specifier: 5.0.0-alpha.15
+        version: link:../ecl-button
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.35.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.35.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/modal':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-component-modal':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -1635,7 +1637,7 @@ importers:
         version: 3.13.0
       '@ecl/vanilla-component-button':
         specifier: 3.13.0
-        version: 3.13.0(patch_hash=b10260c5c193e3f2f20a5d6721d43be35a19d874c7cfff32ab7e4f55a2c60e38)
+        version: 3.13.0
       '@ecl/vanilla-component-site-header':
         specifier: 3.13.0
         version: 3.13.0
@@ -1670,23 +1672,20 @@ importers:
   src/components/ecl-spacing:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.35.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.35.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-utility-spacing':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/utility-spacing':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -1740,23 +1739,23 @@ importers:
   src/components/ecl-text:
     devDependencies:
       '@ecl/builder':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=8b1e32157f0711ddefadd4718e178b4d98d3bede98c29c6831d81ffbb2fc946d)(eslint@9.35.0(jiti@1.21.7))
-      '@ecl/theme-dev':
-        specifier: 3.13.0
-        version: 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.35.0(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-ec':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       '@ecl/theme-eu':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-layout-grid':
-        specifier: 3.13.0
-        version: 3.13.0
-      '@ecl/vanilla-utility-typography':
-        specifier: 3.13.0
-        version: 3.13.0
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
+      '@ecl/utility-typography':
+        specifier: 5.0.0-alpha.15
+        version: 5.0.0-alpha.15
       cross-env:
         specifier: 7.0.3
         version: 7.0.3
@@ -1804,7 +1803,7 @@ importers:
         version: 3.13.0
       '@ecl/vanilla-component-button':
         specifier: 3.13.0
-        version: 3.13.0(patch_hash=b10260c5c193e3f2f20a5d6721d43be35a19d874c7cfff32ab7e4f55a2c60e38)
+        version: 3.13.0
       '@ecl/vanilla-component-link':
         specifier: 3.13.0
         version: 3.13.0
@@ -3228,20 +3227,8 @@ packages:
   '@ecl/vanilla-component-button@3.13.0':
     resolution: {integrity: sha512-XR2heA/m3NeC92B9XaN/inVU/3zIfKMycirB5nrjf7/D+2Gz6gOwOKxejEF44I/EyL9g4PYPF65GpHn3uofAkg==}
 
-  '@ecl/vanilla-component-carousel@3.13.0':
-    resolution: {integrity: sha512-nLf03MzeUPkTybKCcLnDRgi+IxoNwei8CymZ8k4+Mg56y2tOad3c2/fIEYu3xV9kR9XTHPNbI5I4mvr8D6PSwg==}
-
   '@ecl/vanilla-component-link@3.13.0':
     resolution: {integrity: sha512-KrRISO2jswpAXnSoJz6ofd0iTx7lIcL8aRTpBUQsedeL9zYxgGMSHjQYR6Xb845mXGFhFJYuRg3qlRZt7RyrCw==}
-
-  '@ecl/vanilla-component-menu@3.13.0':
-    resolution: {integrity: sha512-ZHHTQIQeXAnHyeCh8z1/ZWoPqdAHteWXR5/BrFhevkj4K/itlobu2vfNjhWgh8uSX6ZytDAt4AuLQRSB+y9qgQ==}
-
-  '@ecl/vanilla-component-modal@3.13.0':
-    resolution: {integrity: sha512-0bOkK/anx2R65kUmSMM+eo3SzObHmJfdFxuce5EHv/owwGfLGnIZxPKik3P1bm6zFz1JVnrIP0+neD4HPDLZ4A==}
-
-  '@ecl/vanilla-component-page-banner@3.13.0':
-    resolution: {integrity: sha512-t0uIMYgC6/rHf1YlAXsk2VQM3wnTLQ4bcGiAaZPoV2Zz+XvsNpvMPHQ6XejJBjQV8J80kHl0ZDStKMMBX4nGZQ==}
 
   '@ecl/vanilla-component-page-header@3.13.0':
     resolution: {integrity: sha512-MPu2KEQVq4rE2HEaAJ+vjtSQZSWaNlFjcWf/CQp279sapns113jAfRE3lJ+DM8Rz5JSH5zYmUrFGT3nZ4tU+Pw==}
@@ -3257,12 +3244,6 @@ packages:
 
   '@ecl/vanilla-layout-grid@3.13.0':
     resolution: {integrity: sha512-tHlK4PN3j7/eSUvHAJ50bd9L+X4qdxvY6gTBUprmDn2L+p3KDeiJQKg+Vx7OGaIFdGmKJfctzl47iobA7TWwOw==}
-
-  '@ecl/vanilla-utility-spacing@3.13.0':
-    resolution: {integrity: sha512-0Ipc3zgf53W+kohyifC/VqkzI0l1noFoNMgWjO+SYDkaQZiBaRNV0T7NjG7yoRg/dPmDM3LZ7UPGbJMHnBwReA==}
-
-  '@ecl/vanilla-utility-typography@3.13.0':
-    resolution: {integrity: sha512-18qc5t+Sp3kMmdUOMBK7kJekfPRzZSp+rCGqcKEechZdBKyHDwL9Zq5BuAujqG9eKb8/+pE0g2D7Fr0pEoO5Gw==}
 
   '@ecl/video@5.0.0-alpha.15':
     resolution: {integrity: sha512-FqExHS4at/oXWYoenSAuwK1VOpugehz6VEIpf/FzNsOW+ovDxMY3YrWQ449xRRn/fPZFsBUXdn8fXz2PxDT7Wg==}
@@ -8778,9 +8759,6 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  mobile-device-detect@0.4.3:
-    resolution: {integrity: sha512-SN9EBE9SoJgkb83kuUVoIp3R9OGYE5dYEnLEz2oLooh0DzgtQ72BJmpNGqrgFvmfE4iLR2CaVJ3RjUcStheVZg==}
-
   modify-values@1.0.1:
     resolution: {integrity: sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==}
     engines: {node: '>=0.10.0'}
@@ -10863,9 +10841,6 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  swipe-listener@1.3.0:
-    resolution: {integrity: sha512-8cOZEHn8I2aVjKiAiu4tprZAS6e0nTy4RjuN/cAALKU/8212u+dqT1cytWGIoWjVzVxVggIduUtuckrHGu6/8Q==}
-
   symbol-observable@4.0.0:
     resolution: {integrity: sha512-b19dMThMV4HVFynSAM1++gBHAbk2Tc/osgLIBZMKsyqh34jb2e8Os7T6ZW/Bt3pJFdBTd2JwAnAAEQV7rSNvcQ==}
     engines: {node: '>=0.10'}
@@ -11937,14 +11912,14 @@ snapshots:
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@babel/code-frame': 7.27.1
-      '@babel/generator': 7.28.0
+      '@babel/generator': 7.28.3
       '@babel/helper-compilation-targets': 7.27.2
-      '@babel/helper-module-transforms': 7.27.3(@babel/core@7.23.7)
-      '@babel/helpers': 7.27.6
-      '@babel/parser': 7.28.0
+      '@babel/helper-module-transforms': 7.28.3(@babel/core@7.23.7)
+      '@babel/helpers': 7.28.4
+      '@babel/parser': 7.28.4
       '@babel/template': 7.27.2
-      '@babel/traverse': 7.28.0
-      '@babel/types': 7.28.0
+      '@babel/traverse': 7.28.4
+      '@babel/types': 7.28.4
       convert-source-map: 2.0.0
       debug: 4.4.1(supports-color@5.5.0)
       gensync: 1.0.0-beta.2
@@ -12303,6 +12278,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@babel/helper-module-transforms@7.28.3(@babel/core@7.23.7)':
+    dependencies:
+      '@babel/core': 7.23.7
+      '@babel/helper-module-imports': 7.27.1
+      '@babel/helper-validator-identifier': 7.27.1
+      '@babel/traverse': 7.28.4
+    transitivePeerDependencies:
+      - supports-color
+
   '@babel/helper-module-transforms@7.28.3(@babel/core@7.28.0)':
     dependencies:
       '@babel/core': 7.28.0
@@ -12419,8 +12403,8 @@ snapshots:
   '@babel/helper-wrap-function@7.27.1':
     dependencies:
       '@babel/template': 7.27.2
-      '@babel/traverse': 7.28.0
-      '@babel/types': 7.28.0
+      '@babel/traverse': 7.28.4
+      '@babel/types': 7.28.4
     transitivePeerDependencies:
       - supports-color
 
@@ -13019,7 +13003,7 @@ snapshots:
       '@babel/helper-globals': 7.28.0
       '@babel/helper-plugin-utils': 7.27.1
       '@babel/helper-replace-supers': 7.27.1(@babel/core@7.23.7)
-      '@babel/traverse': 7.28.0
+      '@babel/traverse': 7.28.4
     transitivePeerDependencies:
       - supports-color
 
@@ -13031,7 +13015,7 @@ snapshots:
       '@babel/helper-globals': 7.28.0
       '@babel/helper-plugin-utils': 7.27.1
       '@babel/helper-replace-supers': 7.27.1(@babel/core@7.28.0)
-      '@babel/traverse': 7.28.0
+      '@babel/traverse': 7.28.4
     transitivePeerDependencies:
       - supports-color
 
@@ -14160,14 +14144,14 @@ snapshots:
     dependencies:
       '@babel/core': 7.23.7
       '@babel/helper-plugin-utils': 7.27.1
-      '@babel/types': 7.28.0
+      '@babel/types': 7.28.4
       esutils: 2.0.3
 
   '@babel/preset-modules@0.1.6-no-external-plugins(@babel/core@7.28.0)':
     dependencies:
       '@babel/core': 7.28.0
       '@babel/helper-plugin-utils': 7.27.1
-      '@babel/types': 7.28.0
+      '@babel/types': 7.28.4
       esutils: 2.0.3
 
   '@babel/preset-react@7.27.1(@babel/core@7.28.4)':
@@ -14296,7 +14280,7 @@ snapshots:
       '@ecl/grid': 5.0.0-alpha.15
       '@ecl/icon': 5.0.0-alpha.15
 
-  '@ecl/banner@5.0.0-alpha.15':
+  '@ecl/banner@5.0.0-alpha.15(patch_hash=a39e3a0b55efa10bbc0da27664c450abe160a9016a379a89eca812043aa0620a)':
     dependencies:
       '@ecl/button': 5.0.0-alpha.15
       '@ecl/dom-utils': 5.0.0-alpha.15
@@ -14386,14 +14370,14 @@ snapshots:
       '@ecl/icon': 5.0.0-alpha.15
       '@ecl/indicator': 5.0.0-alpha.15
 
-  '@ecl/card@5.0.0-alpha.15(patch_hash=47d193af49511053eb04a9537ca5c39ff19e2bb81f03c5c06adcff68b2332bcd)':
+  '@ecl/card@5.0.0-alpha.15':
     dependencies:
       '@ecl/content-block': 5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)
       '@ecl/picture': 5.0.0-alpha.15
 
-  '@ecl/carousel@5.0.0-alpha.15':
+  '@ecl/carousel@5.0.0-alpha.15(patch_hash=abf77f5c3eb76bcd9e6d8ca74130b0b1be33bfe6f666980d03ebad98799bdfc5)':
     dependencies:
-      '@ecl/banner': 5.0.0-alpha.15
+      '@ecl/banner': 5.0.0-alpha.15(patch_hash=a39e3a0b55efa10bbc0da27664c450abe160a9016a379a89eca812043aa0620a)
       '@ecl/button': 5.0.0-alpha.15
       '@ecl/dom-utils': 5.0.0-alpha.15
 
@@ -14620,12 +14604,12 @@ snapshots:
   '@ecl/preset-ec@5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.35.0(jiti@1.21.7))':
     dependencies:
       '@ecl/accordion': 5.0.0-alpha.15
-      '@ecl/banner': 5.0.0-alpha.15
+      '@ecl/banner': 5.0.0-alpha.15(patch_hash=a39e3a0b55efa10bbc0da27664c450abe160a9016a379a89eca812043aa0620a)
       '@ecl/blockquote': 5.0.0-alpha.15
       '@ecl/breadcrumb': 5.0.0-alpha.15
       '@ecl/button': 5.0.0-alpha.15
-      '@ecl/card': 5.0.0-alpha.15(patch_hash=47d193af49511053eb04a9537ca5c39ff19e2bb81f03c5c06adcff68b2332bcd)
-      '@ecl/carousel': 5.0.0-alpha.15
+      '@ecl/card': 5.0.0-alpha.15
+      '@ecl/carousel': 5.0.0-alpha.15(patch_hash=abf77f5c3eb76bcd9e6d8ca74130b0b1be33bfe6f666980d03ebad98799bdfc5)
       '@ecl/category-filter': 5.0.0-alpha.15
       '@ecl/checkbox': 5.0.0-alpha.15
       '@ecl/color-modes': 5.0.0-alpha.15
@@ -14712,12 +14696,12 @@ snapshots:
   '@ecl/preset-eu@5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.35.0(jiti@1.21.7))':
     dependencies:
       '@ecl/accordion': 5.0.0-alpha.15
-      '@ecl/banner': 5.0.0-alpha.15
+      '@ecl/banner': 5.0.0-alpha.15(patch_hash=a39e3a0b55efa10bbc0da27664c450abe160a9016a379a89eca812043aa0620a)
       '@ecl/blockquote': 5.0.0-alpha.15
       '@ecl/breadcrumb': 5.0.0-alpha.15
       '@ecl/button': 5.0.0-alpha.15
-      '@ecl/card': 5.0.0-alpha.15(patch_hash=47d193af49511053eb04a9537ca5c39ff19e2bb81f03c5c06adcff68b2332bcd)
-      '@ecl/carousel': 5.0.0-alpha.15
+      '@ecl/card': 5.0.0-alpha.15
+      '@ecl/carousel': 5.0.0-alpha.15(patch_hash=abf77f5c3eb76bcd9e6d8ca74130b0b1be33bfe6f666980d03ebad98799bdfc5)
       '@ecl/category-filter': 5.0.0-alpha.15
       '@ecl/checkbox': 5.0.0-alpha.15
       '@ecl/content-block': 5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)
@@ -14994,38 +14978,13 @@ snapshots:
 
   '@ecl/utility-z-index@5.0.0-alpha.15': {}
 
-  '@ecl/vanilla-component-button@3.13.0(patch_hash=b10260c5c193e3f2f20a5d6721d43be35a19d874c7cfff32ab7e4f55a2c60e38)':
+  '@ecl/vanilla-component-button@3.13.0':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
-  '@ecl/vanilla-component-carousel@3.13.0(patch_hash=3546b846e0440ff2e10073e828289e1324bb721c13b6cc8dca9ad57572158fcb)':
-    dependencies:
-      '@ecl/dom-utils': 3.13.0
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-component-page-banner': 3.13.0
-      '@ecl/vanilla-layout-grid': 3.13.0
 
   '@ecl/vanilla-component-link@3.13.0':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
-  '@ecl/vanilla-component-menu@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      mobile-device-detect: 0.4.3
-      stickyfilljs: 2.1.0
-      swipe-listener: 1.3.0
-
-  '@ecl/vanilla-component-modal@3.13.0':
-    dependencies:
-      '@ecl/dom-utils': 3.13.0
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      focus-trap: 7.5.4
-
-  '@ecl/vanilla-component-page-banner@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
 
   '@ecl/vanilla-component-page-header@3.13.0':
     dependencies:
@@ -15053,16 +15012,6 @@ snapshots:
   '@ecl/vanilla-layout-grid@3.13.0':
     dependencies:
       '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-
-  '@ecl/vanilla-utility-spacing@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
-
-  '@ecl/vanilla-utility-typography@3.13.0':
-    dependencies:
-      '@ecl/theme-dev': 3.13.0(patch_hash=241fbfcd369eac2826740aa3b74448b935b1d8a46acab077abf6243b86263b65)
-      '@ecl/vanilla-layout-grid': 3.13.0
 
   '@ecl/video@5.0.0-alpha.15': {}
 
@@ -20735,10 +20684,10 @@ snapshots:
   jest-snapshot@28.1.3:
     dependencies:
       '@babel/core': 7.28.4
-      '@babel/generator': 7.28.0
+      '@babel/generator': 7.28.3
       '@babel/plugin-syntax-typescript': 7.27.1(@babel/core@7.28.4)
-      '@babel/traverse': 7.28.0
-      '@babel/types': 7.28.0
+      '@babel/traverse': 7.28.4
+      '@babel/types': 7.28.4
       '@jest/expect-utils': 28.1.3
       '@jest/transform': 28.1.3
       '@jest/types': 28.1.3
@@ -21640,8 +21589,6 @@ snapshots:
       minimist: 1.2.8
 
   mkdirp@1.0.4: {}
-
-  mobile-device-detect@0.4.3: {}
 
   modify-values@1.0.1: {}
 
@@ -24136,8 +24083,6 @@ snapshots:
       css-what: 6.1.0
       csso: 5.0.5
       picocolors: 1.1.1
-
-  swipe-listener@1.3.0: {}
 
   symbol-observable@4.0.0: {}
 

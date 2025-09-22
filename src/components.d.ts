@@ -183,6 +183,7 @@ export namespace Components {
     }
     interface EclCarousel {
         "carouselId": string;
+        "colorMode": string;
         /**
           * @default 'of'
          */
@@ -191,6 +192,10 @@ export namespace Components {
           * @default false
          */
         "eclScript": boolean;
+        /**
+          * @default false
+         */
+        "fullWidth": boolean;
         "slidesNumber": number;
         /**
           * @default 'Go to slide %d'
@@ -216,9 +221,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclCarouselItem {
@@ -228,6 +230,7 @@ export namespace Components {
          */
         "bannerTitle": string;
         "centered": boolean;
+        "credit": string;
         "ctaLabel": string;
         "ctaLink": string;
         /**
@@ -242,9 +245,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclCategoryFilter {
@@ -1080,15 +1080,11 @@ export namespace Components {
          */
         "maxLines": number;
         "menuId": string;
-        "menuLink": string;
         "menuTitle": string;
         "nextLabel": string;
         "previousLabel": string;
         "siteName": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclMenuItem {
@@ -1110,9 +1106,6 @@ export namespace Components {
         "hasChildren": boolean;
         "link": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "triggerAriaLabel": string;
     }
@@ -1128,9 +1121,6 @@ export namespace Components {
          */
         "size": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "toggleId": string;
         /**
@@ -1579,9 +1569,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'm'
@@ -1658,9 +1645,6 @@ export namespace Components {
          */
         "styleClass": string;
         "tag": 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclTextarea {
@@ -2593,6 +2577,7 @@ declare namespace LocalJSX {
     }
     interface EclCarousel {
         "carouselId"?: string;
+        "colorMode"?: string;
         /**
           * @default 'of'
          */
@@ -2601,6 +2586,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "eclScript"?: boolean;
+        /**
+          * @default false
+         */
+        "fullWidth"?: boolean;
         "slidesNumber"?: number;
         /**
           * @default 'Go to slide %d'
@@ -2626,9 +2615,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclCarouselItem {
@@ -2638,6 +2624,7 @@ declare namespace LocalJSX {
          */
         "bannerTitle"?: string;
         "centered"?: boolean;
+        "credit"?: string;
         "ctaLabel"?: string;
         "ctaLink"?: string;
         /**
@@ -2652,9 +2639,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclCategoryFilter {
@@ -3496,15 +3480,11 @@ declare namespace LocalJSX {
          */
         "maxLines"?: number;
         "menuId"?: string;
-        "menuLink"?: string;
         "menuTitle"?: string;
         "nextLabel"?: string;
         "previousLabel"?: string;
         "siteName"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclMenuItem {
@@ -3526,9 +3506,6 @@ declare namespace LocalJSX {
         "hasChildren"?: boolean;
         "link"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "triggerAriaLabel"?: string;
     }
@@ -3544,9 +3521,6 @@ declare namespace LocalJSX {
          */
         "size"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "toggleId"?: string;
         /**
@@ -4004,9 +3978,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'm'
@@ -4084,9 +4055,6 @@ declare namespace LocalJSX {
          */
         "styleClass"?: string;
         "tag"?: 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclTextarea {

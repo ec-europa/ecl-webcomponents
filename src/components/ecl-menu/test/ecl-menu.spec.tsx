@@ -22,12 +22,10 @@ describe('ecl-menu', () => {
       >
         <ecl-menu-item
           link="/example.html"
-          theme="ec"
         >
           Home
         </ecl-menu-item>
         <ecl-menu-item
-          theme="ec"
           link="/example.html"
           has-children
           trigger-aria-label="Access item's children"
@@ -35,7 +33,6 @@ describe('ecl-menu', () => {
         >
           Item 2 label
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -43,7 +40,6 @@ describe('ecl-menu', () => {
             Item 2.1
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -51,7 +47,6 @@ describe('ecl-menu', () => {
             Item 2.2
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             current
@@ -60,7 +55,6 @@ describe('ecl-menu', () => {
             Item 2.3
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -70,14 +64,12 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
         </ecl-menu-item>
         <ecl-menu-item
-          theme="ec"
           has-children
           trigger-aria-label="Access item's children"
           link="/example.html"
         >
-          Item 3 with a very long label
+          Principles, countries, history
           <ecl-menu-item
-            theme="ec"
             child
             link="/example.html"
             slot="sublist"
@@ -85,7 +77,6 @@ describe('ecl-menu', () => {
             Item 3.1
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             child
             link="/example.html"
             slot="sublist"
@@ -93,7 +84,6 @@ describe('ecl-menu', () => {
             Item 3.2
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             child
             link="/example.html"
             slot="sublist"
@@ -102,20 +92,17 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
         </ecl-menu-item>
         <ecl-menu-item
-          theme="ec"
           link="/example.html"
         >
-          Item 4 label
+          Institutions, law, budget
         </ecl-menu-item>
         <ecl-menu-item
-          theme="ec"
           link="/example.html"
           has-children
           trigger-aria-label="Access item's children"
         >
-          Item 5 label
+          Priorities and actions
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -123,7 +110,6 @@ describe('ecl-menu', () => {
             Item 5.1
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -131,7 +117,6 @@ describe('ecl-menu', () => {
             Item 5.2
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -139,7 +124,6 @@ describe('ecl-menu', () => {
             Item 5.3
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -148,14 +132,12 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
         </ecl-menu-item>
         <ecl-menu-item
-          theme="ec"
           link="/example.html"
           has-children
           trigger-aria-label="Access item's children"
         >
-          Item 6
+          Live, work, study
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -163,7 +145,6 @@ describe('ecl-menu', () => {
             Item 6.1
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -171,7 +152,6 @@ describe('ecl-menu', () => {
             Item 6.2
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -179,7 +159,6 @@ describe('ecl-menu', () => {
             Item 6.3
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -187,7 +166,6 @@ describe('ecl-menu', () => {
             Item 6.4
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -195,7 +173,6 @@ describe('ecl-menu', () => {
             Item 6.5
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -203,7 +180,6 @@ describe('ecl-menu', () => {
             Item 6.6
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -211,7 +187,6 @@ describe('ecl-menu', () => {
             Item 6.7
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -219,7 +194,6 @@ describe('ecl-menu', () => {
             Item 6.8
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -227,7 +201,6 @@ describe('ecl-menu', () => {
             Item 6.9 with a very long label
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -235,7 +208,6 @@ describe('ecl-menu', () => {
             Item 6.10
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -243,7 +215,6 @@ describe('ecl-menu', () => {
             Item 6.11
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -251,7 +222,6 @@ describe('ecl-menu', () => {
             Item 6.12
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -259,7 +229,6 @@ describe('ecl-menu', () => {
             Item 6.13
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -267,7 +236,6 @@ describe('ecl-menu', () => {
             Item 6.14
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -275,7 +243,6 @@ describe('ecl-menu', () => {
             Item 6.15
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -283,7 +250,6 @@ describe('ecl-menu', () => {
             Item 6.16
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -291,7 +257,6 @@ describe('ecl-menu', () => {
             Item 6.17
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -300,14 +265,12 @@ describe('ecl-menu', () => {
           </ecl-menu-item>
         </ecl-menu-item>
         <ecl-menu-item
-          theme="ec"
           has-children
           link="/example.html"
           trigger-aria-label="Access item's children"
         >
-          Item 7 label
+          News and events
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -315,7 +278,6 @@ describe('ecl-menu', () => {
             Item 7.1
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -323,7 +285,6 @@ describe('ecl-menu', () => {
             Item 7.2
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -331,7 +292,6 @@ describe('ecl-menu', () => {
             Item 7.3
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -339,7 +299,6 @@ describe('ecl-menu', () => {
             Item 7.4
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -347,7 +306,6 @@ describe('ecl-menu', () => {
             Item 7.5
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -355,7 +313,6 @@ describe('ecl-menu', () => {
             Item 7.6
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
@@ -363,12 +320,88 @@ describe('ecl-menu', () => {
             Item 7.7
           </ecl-menu-item>
           <ecl-menu-item
-            theme="ec"
             link="/example.html"
             child
             slot="sublist"
           >
             Item 7.8
+          </ecl-menu-item>
+        </ecl-menu-item>
+        <ecl-menu-item
+          has-children
+          link="/example.html"
+          trigger-aria-label="Access item's children"
+        >
+          European years
+          <ecl-menu-item
+            link="/example.html"
+            child
+            slot="sublist"
+          >
+            Item 8.1
+          </ecl-menu-item>
+          <ecl-menu-item
+            link="/example.html"
+            child
+            slot="sublist"
+          >
+            Item 8.2
+          </ecl-menu-item>
+        </ecl-menu-item>
+        <ecl-menu-item
+          has-children
+          link="/example.html"
+          trigger-aria-label="Access item's children"
+        >
+          Visit a European Union institution
+          <ecl-menu-item
+            link="/example.html"
+            child
+            slot="sublist"
+          >
+            Item 9.1
+          </ecl-menu-item>
+          <ecl-menu-item
+            link="/example.html"
+            child
+            slot="sublist"
+          >
+            Item 9.2
+          </ecl-menu-item>
+        </ecl-menu-item>
+        <ecl-menu-item
+          has-children
+          link="/example.html"
+          trigger-aria-label="Access item's children"
+        >
+          Jobs & traineeships in EU institutions
+          <ecl-menu-item
+            link="/example.html"
+            child
+            slot="sublist"
+          >
+            Item 10.1
+          </ecl-menu-item>
+          <ecl-menu-item
+            link="/example.html"
+            child
+            slot="sublist"
+          >
+            Item 10.2
+          </ecl-menu-item>
+          <ecl-menu-item
+            link="/example.html"
+            child
+            slot="sublist"
+          >
+            Item 10.3
+          </ecl-menu-item>
+          <ecl-menu-item
+            link="/example.html"
+            child
+            slot="sublist"
+          >
+            Item 10.4
           </ecl-menu-item>
         </ecl-menu-item>
       </ecl-menu>`,

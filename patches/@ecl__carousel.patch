@@ -1,8 +1,8 @@
 diff --git a/carousel.js b/carousel.js
-index f37281da7b79e6e5f0b3622a6b4dae8802fc5d69..6b799b9effc841f584b95aafb7742a58a4b243ff 100644
+index 13ae29108baf48051194ab8b976d84a5658563c3..fa8d132cbe913279a8a11a1a8d6f85d7655137b9 100644
 --- a/carousel.js
 +++ b/carousel.js
-@@ -136,6 +136,8 @@ export class Carousel {
+@@ -129,6 +129,8 @@ export class Carousel {
      this.direction = getComputedStyle(this.element).direction;
  
      this.slides = queryAll(this.slideClass, this.element);
