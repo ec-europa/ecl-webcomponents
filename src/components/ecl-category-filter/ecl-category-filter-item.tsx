@@ -51,43 +51,49 @@ export class EclCategoryFilterItem {
   render() {
     const elAttrs = {};
     if (this.subItems) {
-      elAttrs['aria-expanded'] =  "false";
+      elAttrs['aria-expanded'] = "false";
     }
     if (this.expanded) {
-      elAttrs['aria-expanded'] =  "true";
+      elAttrs['aria-expanded'] = "true";
     }
 
     return (
       <li
         class={this.getClass()}
-        {...elAttrs}
         onClick={ev => this.clickedItem(ev)}
       >
-      { this.path ?
-        <ecl-link
-          theme={this.theme}
-          styleClass={this.getLinkClass()}
-          path={this.path}
-        >
-          {this.label}
-          {this.subItems ?
+        {this.path && !this.subItems && (
+          <ecl-link
+            styleClass={this.getLinkClass()}
+            path={this.path}
+          >
+            {this.label}
+          </ecl-link>
+        )}
+
+        {this.path && this.subItems && (
+          <button
+            class={this.getLinkClass()}
+            {...elAttrs}
+          >
+            { this.level === 1 && this.label }
             <ecl-icon
               styleClass={`ecl-category-filter__item-icon sc-ecl-category-filter-${this.theme}`}
               icon={this.level === 1 ? 'corner-arrow' : 'solid-arrow'}
-              size={this.level === 1 ? 'xs' : 'm'}
               rotate={this.level === 1 ? '180' : '90'}
-              slot={this.level === 1 ? 'icon-after' : 'icon-before'}
-            ></ecl-icon> : '' 
-          }
-        </ecl-link> : '' 
-      }
-      { !this.path ? this.label : '' }
-      { this.subItems ?
-        <ul class={`ecl-category-filter__list sc-ecl-category-filter-${this.theme}`}>
-          <slot></slot>
-        </ul> : ''
-      }
+            />
+            { this.level > 1 && this.label }
+          </button>
+        )}
+
+        {!this.path && this.label}
+
+        {this.subItems && (
+          <ul class={`ecl-category-filter__list sc-ecl-category-filter-${this.theme}`}>
+            <slot></slot>
+          </ul>
+        )}
       </li>
-    )
+    );
   }
 }

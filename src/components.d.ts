@@ -248,6 +248,7 @@ export namespace Components {
         "theme": string;
     }
     interface EclCategoryFilter {
+        "colorMode": string;
         /**
           * @default false
          */
@@ -2642,6 +2643,7 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclCategoryFilter {
+        "colorMode"?: string;
         /**
           * @default false
          */

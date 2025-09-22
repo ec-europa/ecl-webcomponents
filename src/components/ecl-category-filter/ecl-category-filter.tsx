@@ -18,12 +18,19 @@ export class EclCategoryFilter {
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
   @Prop() eclScript: boolean = false;
+  @Prop() colorMode: string;
 
   getClass(): string {
-    return [
+    const styleClasses = [
       `ecl-category-filter`,
       this.styleClass
-    ].join(' ');
+    ];
+
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`);
+    }
+
+    return styleClasses.join(' ');
   }
 
   componentWillLoad() {
