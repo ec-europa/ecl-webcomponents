@@ -118,9 +118,10 @@ export class EclMenu {
                 styleClass="ecl-menu__close ecl-button"
                 type="submit"
                 data-ecl-menu-close
+                variant="ghost"
               >
                 <ecl-icon
-                  icon="close-filled"
+                  icon="close"
                   size="s"
                   slot="icon-before"
                   styleClass={`ecl-button__icon ecl-button__icon--before sc-ecl-menu-${this.theme}`}
@@ -131,13 +132,15 @@ export class EclMenu {
               <ecl-button
                 data-ecl-menu-back
                 type="submit"
-                styleClass="ecl-menu__back ecl-button ecl-button--ghost"
+                variant="ghost"
+                styleClass={`ecl-menu__back sc-ecl-menu-${this.theme}`}
               >
                 <ecl-icon
                   icon="corner-arrow"
                   rotate="270"
                   size="xs"
-                  styleClass={`ecl-button__icon ecl-button__icon--before sc-ecl-menu-${this.theme}`}
+                  slot="icon-before"
+                  styleClass={`sc-ecl-menu-${this.theme}`}
                 ></ecl-icon>
                     {this.backLabel}
               </ecl-button>

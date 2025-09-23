@@ -75,6 +75,10 @@ export class EclSiteHeader {
       this.el.firstElementChild.classList.add('ecl-site-header--has-menu');
       const open = this.el.querySelector('.ecl-menu__open');
       open.classList.add(`sc-ecl-site-header-${this.theme}`);
+      const close = this.el.querySelector('.ecl-menu__close');
+      close.classList.add(`sc-ecl-site-header-${this.theme}`);
+      const inner = this.el.querySelector('.ecl-menu__inner-header');
+      inner.classList.add(`sc-ecl-site-header-${this.theme}`);
     }
     if (this.el.querySelector('.ecl-mega-menu')) {
       this.el.firstElementChild.classList.add('ecl-site-header--has-mega-menu');

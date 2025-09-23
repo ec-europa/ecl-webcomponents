@@ -26,10 +26,10 @@ exports[`ecl-menu renders 1`] = `
         <header class="ecl-menu__inner-header">
           <ecl-button data-ecl-menu-close>
             <!---->
-            <button class="ecl-button ecl-button--primary ecl-menu__close" data-ecl-menu-close="eclMenuClose" type="submit">
+            <button class="ecl-button ecl-button--ghost ecl-menu__close" data-ecl-menu-close="eclMenuClose" type="submit">
               <span class="ecl-button__container">
                 <ecl-icon slot="icon-before">
-                  <span class="ecl-button__icon ecl-button__icon--before ecl-icon sc-ecl-button-ec sc-ecl-menu-ec wt-icon--close-filled wt-icon--placeholder wt-icon--s"></span>
+                  <span class="ecl-button__icon ecl-button__icon--before ecl-icon sc-ecl-button-ec sc-ecl-menu-ec wt-icon--close wt-icon--placeholder wt-icon--s"></span>
                 </ecl-icon>
                 <span class="ecl-button__label" data-ecl-label>
                   Close
@@ -42,12 +42,12 @@ exports[`ecl-menu renders 1`] = `
           </div>
           <ecl-button data-ecl-menu-back>
             <!---->
-            <button class="ecl-button ecl-button--ghost ecl-button--primary ecl-menu__back" data-ecl-menu-back="eclMenuBack" type="submit">
+            <button class="ecl-button ecl-button--ghost ecl-menu__back sc-ecl-menu-ec" data-ecl-menu-back="eclMenuBack" type="submit">
               <span class="ecl-button__container">
+                <ecl-icon slot="icon-before">
+                  <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270 wt-icon--xs"></span>
+                </ecl-icon>
                 <span class="ecl-button__label" data-ecl-label>
-                  <ecl-icon>
-                    <span class="ecl-button__icon ecl-button__icon--before ecl-icon sc-ecl-button-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270 wt-icon--xs"></span>
-                  </ecl-icon>
                   Back
                 </span>
               </span>
