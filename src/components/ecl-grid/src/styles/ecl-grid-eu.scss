@@ -1,5 +1,7 @@
-@use '@ecl/theme-eu';
-@use '@ecl/vanilla-layout-grid/grid';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
 
 :host {
   height: fit-content;
