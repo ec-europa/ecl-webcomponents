@@ -1,6 +1,12 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-layout-grid/grid';
-@use '@ecl/vanilla-component-page-header/page-header-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/page-header/page-header-ec' with (
+  $theme: theme.$theme,
+  $page-header: var.$page-header
+);
 
 .ecl-page-header--negative .ecl-page-header__description ::slotted(a) {
   color: #fff;
