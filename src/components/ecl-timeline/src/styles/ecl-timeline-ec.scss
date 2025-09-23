@@ -10,10 +10,6 @@
   $theme: theme.$theme,
   $link: var.$link
 );
-@use '@ecl/button/button' with (
-  $theme: theme.$theme,
-  $button: var.$button
-);
 @use '@ecl/timeline/timeline' with (
   $theme: theme.$theme,
   $timeline: var.$timeline
