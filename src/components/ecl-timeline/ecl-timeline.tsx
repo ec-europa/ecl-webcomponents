@@ -37,11 +37,7 @@ export class EclTimeline {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
-  componentDidRender() {
-    const items = this.el.querySelectorAll('.ecl-timeline__item');
-    this.el.querySelector('.ecl-timeline').innerHTML = '';
-    this.el.querySelector('.ecl-timeline').append(...items);
-
+  componentDidLoad() {
     if (this.eclScript) {
       // Load the ECL vanilla js if not already present.
       const src = getAssetPath('./build/scripts/ecl-timeline-vanilla.js');
@@ -65,6 +61,12 @@ export class EclTimeline {
         this.toBeToggled = true;
       });
     }
+  }
+
+  componentDidRender() {
+    const items = this.el.querySelectorAll('.ecl-timeline__item');
+    this.el.querySelector('.ecl-timeline').innerHTML = '';
+    this.el.querySelector('.ecl-timeline').append(...items);
   }
 
   render() {
