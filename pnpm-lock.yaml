@@ -1792,9 +1792,6 @@ importers:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.35.0(jiti@1.21.7))
-      '@ecl/button':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
