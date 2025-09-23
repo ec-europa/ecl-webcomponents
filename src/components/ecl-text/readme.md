@@ -15,7 +15,7 @@
 | `size`       | `size`        |             | `"l" \| "m" \| "s" \| "xs"`                                              | `undefined` |
 | `styleClass` | `style-class` |             | `string`                                                                 | `''`        |
 | `tag`        | `tag`         |             | `"div" \| "h1" \| "h2" \| "h3" \| "h4" \| "h5" \| "h6" \| "p" \| "span"` | `undefined` |
-| `theme`      | `theme`       |             | `string`                                                                 | `'ec'`      |
+| `theme`      | `theme`       |             | `string`                                                                 | `undefined` |
 
 
 ----------------------------------------------

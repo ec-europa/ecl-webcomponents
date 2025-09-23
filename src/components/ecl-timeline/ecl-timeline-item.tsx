@@ -7,11 +7,14 @@ import { Component, h, Prop, Element} from '@stencil/core';
 })
 export class EclTimelineItem {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() label: string;
   @Prop() type: string;
+  @Prop() elId: string = `ecl-timeline-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`;
   @Prop() itemTitle: string;
+  @Prop() toggleLabelCollapsed: string;
+  @Prop() toggleLabelExpanded: string;
 
   getClass(): string {
     const styleClasses = [
@@ -24,12 +27,22 @@ export class EclTimelineItem {
       styleClasses.push(`ecl-timeline__item--toggle`);
     }
 
+    if (this.type === 'headline') {
+      styleClasses.push(`ecl-timeline__item--headline`);
+    }
+
     return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   componentDidRender() {
     const element = this.el;
-
+    if (element.querySelector('ecl-timeline__item--headline')) {
+      element.parentElement.classList.add('ecl-timeline--has-headline');
+    }
     let previousSibling = element.previousElementSibling;
     while (previousSibling) {
       if (previousSibling instanceof HTMLElement && previousSibling.getAttribute('type') === 'toggle') {
@@ -42,7 +55,10 @@ export class EclTimelineItem {
 
   render() {
     return (
-      <li class={this.getClass()}>
+      <li
+        class={this.getClass()}
+        id={this.elId}
+      >
       { this.type !== 'toggle' ?
         <div class={`ecl-timeline__tooltip sc-ecl-timeline-${this.theme}`}>
           <div class={`ecl-timeline__tooltip-arrow sc-ecl-timeline-${this.theme}`}></div>
@@ -66,7 +82,9 @@ export class EclTimelineItem {
           theme={this.theme}
           variant="secondary"
           data-ecl-timeline-button
-          styleClass={`sc-ecl-timeline-${this.theme}`}
+          styleClass={`ecl-timeline__toggle sc-ecl-timeline-${this.theme}`}
+          data-ecl-label-expanded={this.toggleLabelExpanded}
+          data-ecl-label-collapsed={this.toggleLabelCollapsed}
         >
           <ecl-icon
             styleClass={`ecl-button__icon--after sc-ecl-timeline-${this.theme}`}
@@ -75,7 +93,7 @@ export class EclTimelineItem {
             rotate="180"
             slot="icon-after"
           ></ecl-icon>
-          <slot></slot>
+          {this.toggleLabelCollapsed}
         </ecl-button> : ''
       }
       </li>

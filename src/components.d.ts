@@ -248,6 +248,7 @@ export namespace Components {
         "theme": string;
     }
     interface EclCategoryFilter {
+        "colorMode": string;
         /**
           * @default false
          */
@@ -256,9 +257,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclCategoryFilterItem {
@@ -278,9 +276,6 @@ export namespace Components {
           * @default false
          */
         "subItems": boolean;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclContentBlock {
@@ -1124,9 +1119,6 @@ export namespace Components {
          */
         "size": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "toggleId": string;
         /**
@@ -1227,16 +1219,9 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "thumbnail": string;
         "thumbnailAlt": string;
-        /**
-          * @default 'default'
-         */
-        "variant": string;
     }
     interface EclPagination {
         /**
@@ -1591,9 +1576,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'm'
@@ -1670,9 +1652,6 @@ export namespace Components {
          */
         "styleClass": string;
         "tag": 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclTextarea {
@@ -1713,24 +1692,25 @@ export namespace Components {
         "width": string;
     }
     interface EclTimeline {
+        "colorMode": string;
         /**
           * @default false
          */
         "eclScript": boolean;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclTimelineItem {
+        /**
+          * @default `ecl-timeline-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
+         */
+        "elId": string;
         "itemTitle": string;
         "label": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
+        "toggleLabelCollapsed": string;
+        "toggleLabelExpanded": string;
         "type": string;
     }
     interface EclVideo {
@@ -2670,6 +2650,7 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclCategoryFilter {
+        "colorMode"?: string;
         /**
           * @default false
          */
@@ -2678,9 +2659,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclCategoryFilterItem {
@@ -2700,9 +2678,6 @@ declare namespace LocalJSX {
           * @default false
          */
         "subItems"?: boolean;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclContentBlock {
@@ -3552,9 +3527,6 @@ declare namespace LocalJSX {
          */
         "size"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "toggleId"?: string;
         /**
@@ -3655,16 +3627,9 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "thumbnail"?: string;
         "thumbnailAlt"?: string;
-        /**
-          * @default 'default'
-         */
-        "variant"?: string;
     }
     interface EclPagination {
         /**
@@ -4028,9 +3993,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'm'
@@ -4108,9 +4070,6 @@ declare namespace LocalJSX {
          */
         "styleClass"?: string;
         "tag"?: 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclTextarea {
@@ -4154,24 +4113,25 @@ declare namespace LocalJSX {
         "width"?: string;
     }
     interface EclTimeline {
+        "colorMode"?: string;
         /**
           * @default false
          */
         "eclScript"?: boolean;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclTimelineItem {
+        /**
+          * @default `ecl-timeline-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
+         */
+        "elId"?: string;
         "itemTitle"?: string;
         "label"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
+        "toggleLabelCollapsed"?: string;
+        "toggleLabelExpanded"?: string;
         "type"?: string;
     }
     interface EclVideo {

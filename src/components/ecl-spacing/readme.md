@@ -15,7 +15,7 @@
 | `inner`      | `inner`       |             | `boolean` | `false`     |
 | `outer`      | `outer`       |             | `boolean` | `true`      |
 | `styleClass` | `style-class` |             | `string`  | `''`        |
-| `theme`      | `theme`       |             | `string`  | `'ec'`      |
+| `theme`      | `theme`       |             | `string`  | `undefined` |
 | `value`      | `value`       |             | `string`  | `'m'`       |
 | `vertical`   | `vertical`    |             | `boolean` | `false`     |
 
