@@ -267,7 +267,7 @@ export class EclSiteHeader {
                     role="search"
                   >
                     <a
-                      class="ecl-button ecl-button--ghost ecl-site-header__search-toggle"
+                      class="ecl-button ecl-button--tertiary ecl-site-header__search-toggle"
                       data-ecl-search-toggle
                       aria-controls="search-form-id"
                       aria-expanded="false"
