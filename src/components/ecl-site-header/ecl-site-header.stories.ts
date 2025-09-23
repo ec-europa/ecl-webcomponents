@@ -5,14 +5,22 @@ export default {
   parameters: {
     badges: [
       'updated',
-    ],  
+    ],
+    layout: 'fullscreen',
+  },
+  args: {
+    logo_size: 'l',
   },
   argTypes: {
     color_mode: { table: { disable: true } },
+    logo_size: {
+      control: { type: 'select' },
+      options: ['s', 'm', 'l'],
+    }
   },
 };
 
-const Template = () => 
+const Template = (args) => 
   `<ecl-site-header
     ecl-script
     login-block
@@ -23,6 +31,7 @@ const Template = () =>
     lang-code="en"
     search-form-id="ecl-site-header-search-form"
     login-text="Log in"
+    logo-size="${args.logo_size}"
     eu-label="Official EU languages:"
     non-eu-label="Other languages:"
     language-title="Choose your language"
@@ -809,7 +818,6 @@ const TemplateHarmonised = (args) =>
     language-aria-label="Choose language"
     site-name="${args.siteName}"
   >
-  <span slot="ecl-site-header-login-description">'Logged in as "last name" "first name"'</span>
   <ecl-language-item
     slot="eu-category"
     path="${randomizedLink('/example.html')}"
@@ -1327,6 +1335,7 @@ const TemplateHarmonised = (args) =>
       </ecl-menu-item>
     </ecl-menu-item>
   </ecl-menu>
+    <span slot="ecl-site-header-login-description">'Logged in as "last name" "first name"'</span>
   </ecl-site-header>`;
 
 export const SiteHeader = Template.bind({});
@@ -1361,7 +1370,7 @@ SiteHeaderHarmonised.argTypes = {
     type: { name: 'string' },
   },
   logged: {
-    name: 'Logged in',
+    name: 'logged in',
     control: { type: 'boolean' },
   },
 };

@@ -141,39 +141,26 @@ export class EclSiteHeader {
                   </ecl-picture>
                 </ecl-link>
                 <div class="ecl-site-header__action">
-                { (this.loginBlock && !this.logged) &&
                   <div class="ecl-site-header__login-container">
-                    <a 
-                      class="ecl-button ecl-button--tertiary ecl-site-header__login-toggle"
+                  { this.loginBlock &&
+                    <a
+                      class={`ecl-button ecl-button--tertiary ecl-site-header__login-toggle sc-ecl-site-header-${this.theme}`}
+                      data-ecl-login-toggle
+                      aria-expanded="false"
                       href={this.loginLink}
                     >
                       <ecl-icon
-                        style-class={`ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
-                        icon="log-in"
-                        size="s"
-                      ></ecl-icon>
-                      {this.loginText}
-                    </a>
-                  </div>
-                }
-                { this.logged &&
-                  <div class="ecl-site-header__login-container">
-                    <ecl-link
-                      style-class={`ecl-button ecl-button--tertiary ecl-button--neutral ecl-site-header__login-toggle sc-ecl-site-header-${this.theme}`}
-                      data-ecl-login-toggle
-                      aria-expanded="false"
-                      variant="standalone"
-                    >
-                      <ecl-icon
-                        icon='logged-in'
+                        icon={this.logged ? 'logged-in' : 'log-in'}
                         size="m"
                         as-image
                         slot="icon-before"
-                        style-class="ecl-site-header__icon"
+                        style-class={`ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
                       >
                       </ecl-icon>
-                      { this.loggedInText }
-                    </ecl-link>
+                      {this.logged ? this.loggedInText : this.loginText }
+                    </a>
+                  }
+                  { this.loginBlock &&
                     <div
                       class="ecl-site-header__login-box"
                       data-ecl-login-box
@@ -189,8 +176,8 @@ export class EclSiteHeader {
                         {this.logoutText}
                       </ecl-link> 
                     </div>
+                  }
                   </div>
-                }
                 { this.languageBlock ?
                   <div class="ecl-site-header__language">
                     <a

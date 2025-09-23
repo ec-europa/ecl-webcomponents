@@ -15,10 +15,15 @@ exports[`ecl-site-header renders 1`] = `
             </ecl-link>
             <div class="ecl-site-header__action">
               <div class="ecl-site-header__login-container">
-                <a class="ecl-button ecl-button--tertiary ecl-site-header__login-toggle" href="/example.html">
-                  <ecl-icon icon="log-in" size="s" style-class="ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
+                <a aria-expanded="false" class="ecl-button ecl-button--tertiary ecl-site-header__login-toggle sc-ecl-site-header-ec" data-ecl-login-toggle href="/example.html">
+                  <ecl-icon as-image="" icon="log-in" size="m" slot="icon-before" style-class="ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
                   Log in
                 </a>
+                <div class="ecl-site-header__login-box" data-ecl-login-box>
+                  <p class="ecl-site-header__login-description"></p>
+                  <hr class="ecl-site-header__login-separator">
+                  <ecl-link variant="standalone"></ecl-link>
+                </div>
               </div>
               <div class="ecl-site-header__language">
                 <a aria-controls="language-switcher" aria-label="Choose language" class="ecl-button ecl-button--tertiary ecl-site-header__language-selector" data-ecl-language-selector role="button">
