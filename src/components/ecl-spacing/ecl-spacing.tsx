@@ -13,7 +13,7 @@ import { Component, Prop, h, Element } from '@stencil/core';
 export class EclSpacing {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() breakpoint: string;
   @Prop() outer: boolean = true;
   @Prop() inner: boolean = false;
@@ -42,6 +42,10 @@ export class EclSpacing {
     }
     
     return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {

@@ -1,13 +1,13 @@
 import { newSpecPage } from '@stencil/core/testing';
 import { EclCategoryFilter } from '../ecl-category-filter';
 import { EclCategoryFilterItem } from '../ecl-category-filter-item';
+import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-category-filter', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclCategoryFilter, EclCategoryFilterItem],
+      components: [EclCategoryFilter, EclCategoryFilterItem, EclIcon],
       html: `<ecl-category-filter
-        theme="ec"
         ecl-script
       >
         <ecl-category-filter-item

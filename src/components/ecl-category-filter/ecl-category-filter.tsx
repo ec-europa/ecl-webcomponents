@@ -16,14 +16,25 @@ declare const ECL: any;
 export class EclCategoryFilter {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() eclScript: boolean = false;
+  @Prop() colorMode: string;
 
   getClass(): string {
-    return [
+    const styleClasses = [
       `ecl-category-filter`,
       this.styleClass
-    ].join(' ');
+    ];
+
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`);
+    }
+
+    return styleClasses.join(' ');
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   componentDidRender() {
