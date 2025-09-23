@@ -14,9 +14,10 @@ declare const ECL: any;
 })
 export class EclTimeline {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() eclScript: boolean = false;
+  @Prop() colorMode: string;
   @State() toBeToggled: boolean = false;
 
   getClass(): string {
@@ -25,14 +26,18 @@ export class EclTimeline {
       this.styleClass
     ];
 
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`);
+    }
+
     return styleClasses.join(' ');
   }
 
-  componentDidRender() {
-    const items = this.el.querySelectorAll('.ecl-timeline__item');
-    this.el.querySelector('.ecl-timeline').innerHTML = '';
-    this.el.querySelector('.ecl-timeline').append(...items);
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
 
+  componentDidLoad() {
     if (this.eclScript) {
       // Load the ECL vanilla js if not already present.
       const src = getAssetPath('./build/scripts/ecl-timeline-vanilla.js');
@@ -56,6 +61,12 @@ export class EclTimeline {
         this.toBeToggled = true;
       });
     }
+  }
+
+  componentDidRender() {
+    const items = this.el.querySelectorAll('.ecl-timeline__item');
+    this.el.querySelector('.ecl-timeline').innerHTML = '';
+    this.el.querySelector('.ecl-timeline').append(...items);
   }
 
   render() {

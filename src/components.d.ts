@@ -248,6 +248,7 @@ export namespace Components {
         "theme": string;
     }
     interface EclCategoryFilter {
+        "colorMode": string;
         /**
           * @default false
          */
@@ -256,9 +257,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclCategoryFilterItem {
@@ -278,9 +276,6 @@ export namespace Components {
           * @default false
          */
         "subItems": boolean;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclContentBlock {
@@ -937,9 +932,6 @@ export namespace Components {
         "language": string;
         "path": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclLink {
@@ -1121,9 +1113,6 @@ export namespace Components {
          */
         "size": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "toggleId": string;
         /**
@@ -1224,16 +1213,9 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         "thumbnail": string;
         "thumbnailAlt": string;
-        /**
-          * @default 'default'
-         */
-        "variant": string;
     }
     interface EclPagination {
         /**
@@ -1406,6 +1388,7 @@ export namespace Components {
     }
     interface EclSearchForm {
         "buttonAriaLabel": string;
+        "buttonClass": string;
         "buttonLabel": string;
         /**
           * @default false
@@ -1478,6 +1461,8 @@ export namespace Components {
         "width": string;
     }
     interface EclSiteHeader {
+        "bannerTop": string;
+        "bannerTopLink": string;
         "closeLabel": string;
         /**
           * @default false
@@ -1496,11 +1481,23 @@ export namespace Components {
         /**
           * @default false
          */
+        "logged": boolean;
+        "loggedInText": string;
+        /**
+          * @default false
+         */
         "loginBlock": boolean;
         "loginLink": string;
         "loginText": string;
+        "logo": string;
         "logoAlt": string;
+        /**
+          * @default 'l'
+         */
+        "logoSize": string;
         "logoTitle": string;
+        "logoutLink": string;
+        "logoutText": string;
         "nonEuLabel": string;
         /**
           * @default true
@@ -1513,10 +1510,11 @@ export namespace Components {
         "searchPlaceholder": string;
         "searchText": string;
         "siteName": string;
-        "styleClass": string;
         /**
-          * @default 'ec'
+          * @default false
          */
+        "siteNameMobileOnly": boolean;
+        "styleClass": string;
         "theme": string;
     }
     interface EclSocialMediaFollow {
@@ -1572,9 +1570,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default 'm'
@@ -1651,9 +1646,6 @@ export namespace Components {
          */
         "styleClass": string;
         "tag": 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclTextarea {
@@ -1694,24 +1686,25 @@ export namespace Components {
         "width": string;
     }
     interface EclTimeline {
+        "colorMode": string;
         /**
           * @default false
          */
         "eclScript": boolean;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclTimelineItem {
+        /**
+          * @default `ecl-timeline-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
+         */
+        "elId": string;
         "itemTitle": string;
         "label": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
+        "toggleLabelCollapsed": string;
+        "toggleLabelExpanded": string;
         "type": string;
     }
     interface EclVideo {
@@ -2651,6 +2644,7 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclCategoryFilter {
+        "colorMode"?: string;
         /**
           * @default false
          */
@@ -2659,9 +2653,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclCategoryFilterItem {
@@ -2681,9 +2672,6 @@ declare namespace LocalJSX {
           * @default false
          */
         "subItems"?: boolean;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclContentBlock {
@@ -3346,9 +3334,6 @@ declare namespace LocalJSX {
         "language"?: string;
         "path"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclLink {
@@ -3530,9 +3515,6 @@ declare namespace LocalJSX {
          */
         "size"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "toggleId"?: string;
         /**
@@ -3633,16 +3615,9 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         "thumbnail"?: string;
         "thumbnailAlt"?: string;
-        /**
-          * @default 'default'
-         */
-        "variant"?: string;
     }
     interface EclPagination {
         /**
@@ -3821,6 +3796,7 @@ declare namespace LocalJSX {
     }
     interface EclSearchForm {
         "buttonAriaLabel"?: string;
+        "buttonClass"?: string;
         "buttonLabel"?: string;
         /**
           * @default false
@@ -3896,6 +3872,8 @@ declare namespace LocalJSX {
         "width"?: string;
     }
     interface EclSiteHeader {
+        "bannerTop"?: string;
+        "bannerTopLink"?: string;
         "closeLabel"?: string;
         /**
           * @default false
@@ -3914,11 +3892,23 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
+        "logged"?: boolean;
+        "loggedInText"?: string;
+        /**
+          * @default false
+         */
         "loginBlock"?: boolean;
         "loginLink"?: string;
         "loginText"?: string;
+        "logo"?: string;
         "logoAlt"?: string;
+        /**
+          * @default 'l'
+         */
+        "logoSize"?: string;
         "logoTitle"?: string;
+        "logoutLink"?: string;
+        "logoutText"?: string;
         "nonEuLabel"?: string;
         /**
           * @default true
@@ -3931,10 +3921,11 @@ declare namespace LocalJSX {
         "searchPlaceholder"?: string;
         "searchText"?: string;
         "siteName"?: string;
-        "styleClass"?: string;
         /**
-          * @default 'ec'
+          * @default false
          */
+        "siteNameMobileOnly"?: boolean;
+        "styleClass"?: string;
         "theme"?: string;
     }
     interface EclSocialMediaFollow {
@@ -3990,9 +3981,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default 'm'
@@ -4070,9 +4058,6 @@ declare namespace LocalJSX {
          */
         "styleClass"?: string;
         "tag"?: 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclTextarea {
@@ -4116,24 +4101,25 @@ declare namespace LocalJSX {
         "width"?: string;
     }
     interface EclTimeline {
+        "colorMode"?: string;
         /**
           * @default false
          */
         "eclScript"?: boolean;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclTimelineItem {
+        /**
+          * @default `ecl-timeline-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
+         */
+        "elId"?: string;
         "itemTitle"?: string;
         "label"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
+        "toggleLabelCollapsed"?: string;
+        "toggleLabelExpanded"?: string;
         "type"?: string;
     }
     interface EclVideo {

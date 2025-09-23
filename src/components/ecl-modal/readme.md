@@ -14,7 +14,7 @@
 | `itemId`        | `item-id`         |             | `string`  | `undefined` |
 | `size`          | `size`            |             | `string`  | `'l'`       |
 | `styleClass`    | `style-class`     |             | `string`  | `undefined` |
-| `theme`         | `theme`           |             | `string`  | `'ec'`      |
+| `theme`         | `theme`           |             | `string`  | `undefined` |
 | `toggleId`      | `toggle-id`       |             | `string`  | `undefined` |
 | `variant`       | `variant`         |             | `string`  | `'default'` |
 | `withBody`      | `with-body`       |             | `boolean` | `false`     |

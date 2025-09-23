@@ -1,8 +1,10 @@
 const getArgs = () => ({
   variant: 'default',
+  size: 'l',
 });
 
 const getArgTypes = () => ({
+  color_mode: { table: { disable: true}},
   variant: {
     type: { name: 'select' },
     description: 'modal variant',
@@ -12,25 +14,48 @@ const getArgTypes = () => ({
       'success',
       'warning',
     ],
-  }
+  },
+  size: {
+    type: { name: 'select' },
+    description: 'The width of the modal',
+    options: ['s', 'm', 'l', 'full'],
+    control: {
+      labels: {
+        s: 'small',
+        m: 'medium',
+        l: 'large',
+        full: 'full container',
+      },
+    },
+    mapping: {
+      small: 's',
+      medium: 'm',
+      large: 'l',
+      'full container': 'full',
+    },
+  },
 });
 
 export default {
   title: 'Components/modal',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = args =>
   `<ecl-button
     type="button"
     item-id="modal-demo-toggle"
-    theme="${args.theme}"
     variant="secondary"
   >
     Open modal
   </ecl-button>
   <ecl-modal
-    theme="${args.theme}"
     variant="${args.variant}"
+    size="${args.size}"
     with-header
     with-footer
     with-body
@@ -38,9 +63,9 @@ const Template = args =>
     with-body-fixed
     toggle-id="modal-demo-toggle"
     close-label="Close"
-  >
-    <ecl-text slot="header" theme="${args.theme}" tag="span">Lorem ipsum dolor sit amet</ecl-text>
-    <ecl-text slot="body" tag="p" theme="${args.theme}">
+  > 
+    <ecl-text slot="header" tag="span">Lorem ipsum dolor sit amet</ecl-text>
+    <ecl-text slot="body" tag="p">
       Scrollable content:
       <br>
       Sed quam augue, volutpat sed dapibus in, accumsan a arcu. Nulla quam enim, porttitor at neque a, egestas porttitor tortor. Nam tortor sem, elementum id augue quis, posuere vestibulum dui. Donec id posuere libero, sit amet egestas lorem. Aliquam finibus ipsum mauris, a molestie tortor laoreet. Morbi interdum orci arcu, tempor porta nisl elementum non. Morbi blandit risus sed turpis mollis mattis. Maecenas semper, risus nec sollicitudin aliquet, dui eros vehicula nulla, ac bibendum mauris mauris a lectus. Ut ut justo in sem vestibulum mollis. Pellentesque ac commodo erat. Phasellus vitae aliquet mi. Suspendisse sed nisl feugiat, porta ante a, finibus nisi.
@@ -48,7 +73,6 @@ const Template = args =>
     </ecl-text>
     <div slot="body-fixed">
       <ecl-input
-        theme="${args.theme}"
         type="checkbox"
         name="checkbox-default"
         input-class="ecl-checkbox__input"
@@ -56,20 +80,18 @@ const Template = args =>
         label="Option label"
       ></ecl-input>
     </div>
-    <div slot="footer">
+    <div slot="footer" style="display: flex; flex-grow: 1;">
       <ecl-button
-        theme="${args.theme}"
         type="button"
         variant="secondary"
-        style-class="ecl-modal__button"
+        style-class="ecl-modal__button sc-ecl-modal-${args.theme}"
       >
         Secondary action
       </ecl-button>
       <ecl-button
-        theme="${args.theme}"
         type="submit"
         variant="primary"
-        style-class="ecl-modal__button"
+        style-class="ecl-modal__button sc-ecl-modal-${args.theme}"
       >
         Primary action
       </ecl-button>

@@ -24,10 +24,11 @@ module.exports = {
   ],
   scripts: [
     {
-      entry: path.resolve(nodeModules, '@ecl/vanilla-component-site-header/site-header.js'),
+      entry: path.resolve(nodeModules, '@ecl/site-header/site-header.js'),
       dest: path.resolve(outputFolder, 'scripts/ecl-site-header-vanilla.js'),
       options: {
         banner,
+        format: 'iife',
         moduleName: 'ECL',
         includePaths,
         sourceMap: false,

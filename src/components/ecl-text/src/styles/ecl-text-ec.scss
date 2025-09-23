@@ -1,2 +1,12 @@
-@use '@ecl/theme-ec';
-@use '@ecl/vanilla-utility-typography/typography-ec';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' with (
+  $typography: var.$typography
+);
+@use '@ecl/utility-typography/typography' with (
+  $theme: theme.$theme,
+  $typography: var.$typography
+);
