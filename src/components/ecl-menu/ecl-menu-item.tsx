@@ -63,6 +63,7 @@ export class EclMenuItem {
     let linkClasses = [
       'ecl-menu__link',
       'ecl-link--standalone',
+      `sc-ecl-link-${this.theme}`,
       `sc-ecl-menu-${this.theme}`,
     ];
 
@@ -70,6 +71,7 @@ export class EclMenuItem {
       linkClasses = [
         'ecl-menu__sublink',
         'ecl-link--standalone',
+        `sc-ecl-link-${this.theme}`,
         `sc-ecl-menu-${this.theme}`,
       ];
 
