@@ -44,8 +44,6 @@
   display: flex;
 }
 
-@media screen and (width >= 996px) {
-  .ecl-menu__list {
-    align-items: center;
-  }
+.ecl-menu[data-expanded] .ecl-menu__open [slot='icon-before'] {
+  display: none;
 }

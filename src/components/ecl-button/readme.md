@@ -39,6 +39,7 @@
  - [ecl-popover](../ecl-popover)
  - [ecl-search-form](../ecl-search-form)
  - [ecl-select](../ecl-select)
+ - [ecl-site-header](../ecl-site-header)
  - [ecl-timeline-item](../ecl-timeline)
 
 ### Depends on
@@ -64,6 +65,7 @@ graph TD;
   ecl-popover --> ecl-button
   ecl-search-form --> ecl-button
   ecl-select --> ecl-button
+  ecl-site-header --> ecl-button
   ecl-timeline-item --> ecl-button
   style ecl-button fill:#f9f,stroke:#333,stroke-width:4px
 ```

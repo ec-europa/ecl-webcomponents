@@ -25,6 +25,7 @@ export class EclSearchForm {
   @Prop() type: string;
   @Prop() name: string;
   @Prop() buttonLabel: string;
+  @Prop() buttonClass: string;
   @Prop() buttonAriaLabel: string;
 
   getClass(): string {
@@ -66,7 +67,7 @@ export class EclSearchForm {
           </ecl-input>
         </ecl-form-group>
         <ecl-button
-          style-class={`ecl-search-form__button sc-ecl-search-form-${this.theme}`}
+          style-class={`ecl-search-form__button sc-ecl-search-form-${this.theme} ${this.buttonClass}`}
           aria-label={this.buttonAriaLabel}
           variant={this.theme === 'ec' ? 'ghost' : 'primary'}
           type="search"

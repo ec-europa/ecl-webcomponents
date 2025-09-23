@@ -8,7 +8,7 @@ import { Component, Prop, h, Element } from '@stencil/core';
 
 export class EclLanguageItem {
   @Element() el: HTMLElement;
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() path: string;
   @Prop() langCode: string;
@@ -23,6 +23,11 @@ export class EclLanguageItem {
     ];
 
     return styleClasses.join(' ');
+  }
+
+  
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {

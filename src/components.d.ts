@@ -938,9 +938,6 @@ export namespace Components {
         "language": string;
         "path": string;
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
     }
     interface EclLink {
@@ -1397,6 +1394,7 @@ export namespace Components {
     }
     interface EclSearchForm {
         "buttonAriaLabel": string;
+        "buttonClass": string;
         "buttonLabel": string;
         /**
           * @default false
@@ -1469,6 +1467,8 @@ export namespace Components {
         "width": string;
     }
     interface EclSiteHeader {
+        "bannerTop": string;
+        "bannerTopLink": string;
         "closeLabel": string;
         /**
           * @default false
@@ -1487,11 +1487,23 @@ export namespace Components {
         /**
           * @default false
          */
+        "logged": boolean;
+        "loggedInText": string;
+        /**
+          * @default false
+         */
         "loginBlock": boolean;
         "loginLink": string;
         "loginText": string;
+        "logo": string;
         "logoAlt": string;
+        /**
+          * @default 'l'
+         */
+        "logoSize": string;
         "logoTitle": string;
+        "logoutLink": string;
+        "logoutText": string;
         "nonEuLabel": string;
         /**
           * @default true
@@ -1504,10 +1516,11 @@ export namespace Components {
         "searchPlaceholder": string;
         "searchText": string;
         "siteName": string;
-        "styleClass": string;
         /**
-          * @default 'ec'
+          * @default false
          */
+        "siteNameMobileOnly": boolean;
+        "styleClass": string;
         "theme": string;
     }
     interface EclSocialMediaFollow {
@@ -3333,9 +3346,6 @@ declare namespace LocalJSX {
         "language"?: string;
         "path"?: string;
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
     }
     interface EclLink {
@@ -3798,6 +3808,7 @@ declare namespace LocalJSX {
     }
     interface EclSearchForm {
         "buttonAriaLabel"?: string;
+        "buttonClass"?: string;
         "buttonLabel"?: string;
         /**
           * @default false
@@ -3873,6 +3884,8 @@ declare namespace LocalJSX {
         "width"?: string;
     }
     interface EclSiteHeader {
+        "bannerTop"?: string;
+        "bannerTopLink"?: string;
         "closeLabel"?: string;
         /**
           * @default false
@@ -3891,11 +3904,23 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
+        "logged"?: boolean;
+        "loggedInText"?: string;
+        /**
+          * @default false
+         */
         "loginBlock"?: boolean;
         "loginLink"?: string;
         "loginText"?: string;
+        "logo"?: string;
         "logoAlt"?: string;
+        /**
+          * @default 'l'
+         */
+        "logoSize"?: string;
         "logoTitle"?: string;
+        "logoutLink"?: string;
+        "logoutText"?: string;
         "nonEuLabel"?: string;
         /**
           * @default true
@@ -3908,10 +3933,11 @@ declare namespace LocalJSX {
         "searchPlaceholder"?: string;
         "searchText"?: string;
         "siteName"?: string;
-        "styleClass"?: string;
         /**
-          * @default 'ec'
+          * @default false
          */
+        "siteNameMobileOnly"?: boolean;
+        "styleClass"?: string;
         "theme"?: string;
     }
     interface EclSocialMediaFollow {

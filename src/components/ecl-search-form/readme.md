@@ -10,6 +10,7 @@
 | Property            | Attribute             | Description | Type      | Default                                                            |
 | ------------------- | --------------------- | ----------- | --------- | ------------------------------------------------------------------ |
 | `buttonAriaLabel`   | `button-aria-label`   |             | `string`  | `undefined`                                                        |
+| `buttonClass`       | `button-class`        |             | `string`  | `undefined`                                                        |
 | `buttonLabel`       | `button-label`        |             | `string`  | `undefined`                                                        |
 | `disabled`          | `disabled`            |             | `boolean` | `false`                                                            |
 | `helperId`          | `helper-id`           |             | `string`  | `undefined`                                                        |
