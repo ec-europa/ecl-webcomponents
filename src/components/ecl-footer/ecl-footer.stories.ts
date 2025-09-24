@@ -2,6 +2,11 @@ import { randomizedLink } from "../../utils/randomizedLink";
 
 export default {
   title: 'Components/Site-wide/footer',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
   argTypes: {
     theme: {
       table: { disable: true },
@@ -402,8 +407,8 @@ FooterHarmonised.storyName = 'EC - harmonised';
 
 const TemplateEu = () =>
   `<ecl-footer-eu
-    logo-alt="European Commission"
-    logo-title="European commission"
+    logo-alt="European Union"
+    logo-title="European union"
     logo-lang-code="en"
     description="This site is managed by the Directorate-General for Communication"
     variant="core"
