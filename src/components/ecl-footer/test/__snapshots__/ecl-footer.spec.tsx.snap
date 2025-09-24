@@ -1,241 +1,267 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ecl-footer renders 1`] = `
-<ecl-footer description="This site is managed by the Directorate-General for Communication" logo-alt="European Union" logo-lang-code="en" logo-title="European union" site-name="European Commission website" theme="ec">
+exports[`ecl-footer EC renders 1`] = `
+<ecl-footer-ec description="This site is managed by:" logo-alt="European Commission" logo-lang-code="en" logo-link="/example.html" logo-title="European Commission" site-name="European Commission website" variant="core">
   <!---->
-  <ecl-footer-item hidden="" link="/example.html" slot="ecl-footer-list-bottom-right" theme="ec">
+  <ecl-footer-item hidden="" link="/example.html" theme="ec">
     <!---->
-    <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+    <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
       <ecl-link>
         <!---->
-        <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+        <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
           <span class="ecl-link__label">
-            Languages on our websites
+            Report an IT vulnerability
           </span>
         </a>
       </ecl-link>
     </li>
   </ecl-footer-item>
-  <ecl-footer-item hidden="" link="/example.html" slot="ecl-footer-list-bottom-right" theme="ec">
+  <footer class="ecl-site-footer ecl-site-footer--core">
+    <div class="ecl-container ecl-site-footer__container">
+      <div class="ecl-site-footer__row ecl-site-footer__row--specific">
+        <div class="ecl-site-footer__section ecl-site-footer__section--site-info">
+          <ecl-link>
+            <!---->
+            <a class="ecl-link ecl-link--standalone ecl-site-footer__logo-link sc-ecl-footer-ec-ec" href="/example.html">
+              <span class="ecl-link__label">
+                <ecl-picture image="/build/images/ec/logos/negative/logo-ec--en.svg" imagealt="European Commission" imgclass="sc-ecl-footer-ec-ec ecl-site-footer__logo-image" styleclass="ecl-site-footer__picture sc-ecl-site-footer-ec-ec" theme="ec">
+                  <source media="(min-width: 996px)" srcset="/build/images/ec/logos/negative/logo-ec--en.svg">
+                </ecl-picture>
+              </span>
+            </a>
+          </ecl-link>
+          <div class="ecl-site-footer__description">
+            This site is managed by:
+          </div>
+        </div>
+        <div class="ecl-site-footer__section ecl-site-footer__section--core">
+          <ul class="ecl-site-footer__list">
+            <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
+                  <span class="ecl-link__label">
+                    About us
+                  </span>
+                </a>
+              </ecl-link>
+            </li>
+            <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
+                  <span class="ecl-link__label">
+                    Contact us
+                  </span>
+                </a>
+              </ecl-link>
+            </li>
+            <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
+                  <span class="ecl-link__label">
+                    Priorities
+                  </span>
+                </a>
+              </ecl-link>
+            </li>
+            <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
+                  <span class="ecl-link__label">
+                    Topics
+                  </span>
+                </a>
+              </ecl-link>
+            </li>
+            <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
+                  <span class="ecl-link__label">
+                    Funding and tenders
+                  </span>
+                </a>
+              </ecl-link>
+            </li>
+            <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
+                  <span class="ecl-link__label">
+                    Jobs
+                  </span>
+                </a>
+              </ecl-link>
+            </li>
+            <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
+                  <span class="ecl-link__label">
+                    Press corner
+                  </span>
+                </a>
+              </ecl-link>
+            </li>
+            <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
+                  <span class="ecl-link__label">
+                    Events
+                  </span>
+                </a>
+              </ecl-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="ecl-site-footer__row ecl-site-footer__row--common">
+        <div class="ecl-site-footer__section ecl-site-footer__section--common">
+          <div class="ecl-site-footer__extra-links-container">
+            <ecl-social-media-follow description="Follow us" inline-title="Follow us" position="left" slot="ecl-footer-social-follow" style-class="ecl-site-footer__social-media" variant="horizontal">
+              <!---->
+              <div class="ecl-site-footer__social-media ecl-social-media-follow ecl-social-media-follow--description_inline ecl-social-media-follow--horizontal">
+                <p class="ecl-social-media-follow__description sc-ecl-footer-ec-ec">
+                  Follow us
+                </p>
+                <ul class="ecl-social-media-follow__list"></ul>
+              </div>
+            </ecl-social-media-follow>
+          </div>
+          <ul class="ecl-site-footer__list ecl-site-footer__list--inline">
+            <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
+                  <span class="ecl-link__label">
+                    Languages on our websites
+                  </span>
+                </a>
+              </ecl-link>
+            </li>
+            <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
+                  <span class="ecl-link__label">
+                    Cookies
+                  </span>
+                </a>
+              </ecl-link>
+            </li>
+            <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
+                  <span class="ecl-link__label">
+                    Privacy policy
+                  </span>
+                </a>
+              </ecl-link>
+            </li>
+            <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
+                  <span class="ecl-link__label">
+                    Legal notice
+                  </span>
+                </a>
+              </ecl-link>
+            </li>
+            <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
+                  <span class="ecl-link__label">
+                    Accessibility
+                  </span>
+                </a>
+              </ecl-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</ecl-footer-ec>
+`;
+
+exports[`ecl-footer EU renders 1`] = `
+<ecl-footer-eu description="This site is managed by the Directorate-General for Communication" logo-alt="European Union" logo-lang-code="en" logo-link="/example.html" logo-title="European union" variant="core">
+  <!---->
+  <ecl-text hidden="" slot="description" tag="p">
     <!---->
-    <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-      <ecl-link>
-        <!---->
-        <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-          <span class="ecl-link__label">
-            Cookies
-          </span>
-        </a>
-      </ecl-link>
-    </li>
-  </ecl-footer-item>
-  <ecl-footer-item hidden="" link="/example.html" slot="ecl-footer-list-bottom-right" theme="ec">
-    <!---->
-    <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-      <ecl-link>
-        <!---->
-        <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-          <span class="ecl-link__label">
-            Privacy policy
-          </span>
-        </a>
-      </ecl-link>
-    </li>
-  </ecl-footer-item>
-  <ecl-footer-item hidden="" link="/example.html" slot="ecl-footer-list-bottom-right" theme="ec">
-    <!---->
-    <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-      <ecl-link>
-        <!---->
-        <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-          <span class="ecl-link__label">
-            Legal notice
-          </span>
-        </a>
-      </ecl-link>
-    </li>
-  </ecl-footer-item>
-  <footer class="ecl-site-footer ecl-site-footer--undefined">
+    <p>
+      This site is managed by: [name of the manager of the site]
+    </p>
+  </ecl-text>
+  <footer class="ecl-site-footer ecl-site-footer--core">
     <div class="ecl-container ecl-site-footer__container">
       <div class="ecl-site-footer__row">
         <div class="ecl-site-footer__column">
           <div class="ecl-site-footer__section">
-            <h2 class="ecl-site-footer__title">
-              European Commission website
-            </h2>
-            <div class="ecl-site-footer__description"></div>
-            <ul class="ecl-site-footer__list"></ul>
+            <ecl-link>
+              <!---->
+              <a class="ecl-link ecl-link--standalone ecl-site-footer__logo-link sc-ecl-footer-eu-eu" href="/example.html">
+                <span class="ecl-link__label">
+                  <ecl-picture image="/build/images/eu/logos/condensed-version/positive/logo-eu--en.svg" imagealt="European Union" imgclass="sc-ecl-footer-eu-eu ecl-site-footer__logo-image" styleclass="ecl-site-footer__picture sc-ecl-site-footer-eu-eu" theme="eu">
+                    <source media="(min-width: 996px)" srcset="/build/images/eu/logos/standard-version/positive/logo-eu--en.svg">
+                  </ecl-picture>
+                </span>
+              </a>
+            </ecl-link>
+            <div class="ecl-site-footer__description">
+              This site is managed by the Directorate-General for Communication
+            </div>
           </div>
         </div>
         <div class="ecl-site-footer__column">
           <div class="ecl-site-footer__section">
+            <div class="ecl-site-footer__title ecl-site-footer__title--separator ecl-u-type-prolonged-l sc-ecl-footer-eu-eu">
+              Contact the EU
+            </div>
             <ul class="ecl-site-footer__list">
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
                 <ecl-link>
                   <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                  <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="tel:0080067891011">
                     <span class="ecl-link__label">
-                      Strategy
+                      Call us 00 800 6 7 8 9 10 11
                     </span>
                   </a>
                 </ecl-link>
               </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
                 <ecl-link>
                   <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                  <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="https://european-union.europa.eu/contact-eu/call-us_en">
                     <span class="ecl-link__label">
-                      About the European Commission
+                      Use other telephone options
                     </span>
                   </a>
                 </ecl-link>
               </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
                 <ecl-link>
                   <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                  <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="https://european-union.europa.eu/contact-eu/write-us_en">
                     <span class="ecl-link__label">
-                      Business, Economy, Euro
+                      Write us via our contact form
                     </span>
                   </a>
                 </ecl-link>
               </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
                 <ecl-link>
                   <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                  <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="https://european-union.europa.eu/contact-eu/meet-us_en">
                     <span class="ecl-link__label">
-                      Live, work, travel in the EU
-                    </span>
-                  </a>
-                </ecl-link>
-              </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Law
-                    </span>
-                  </a>
-                </ecl-link>
-              </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Funding, Tenders
-                    </span>
-                  </a>
-                </ecl-link>
-              </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Research and innovation
-                    </span>
-                  </a>
-                </ecl-link>
-              </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Energy, Climate change, Environment
-                    </span>
-                  </a>
-                </ecl-link>
-              </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Education
-                    </span>
-                  </a>
-                </ecl-link>
-              </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Aid, Development cooperation, Fundamental rights
-                    </span>
-                  </a>
-                </ecl-link>
-              </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Food, Farming, Fisheries
-                    </span>
-                  </a>
-                </ecl-link>
-              </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      EU regional and urban development
-                    </span>
-                  </a>
-                </ecl-link>
-              </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Jobs at the European Commission
-                    </span>
-                  </a>
-                </ecl-link>
-              </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Statistics
-                    </span>
-                  </a>
-                </ecl-link>
-              </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Press corner
-                    </span>
-                  </a>
-                </ecl-link>
-              </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Events
-                    </span>
-                  </a>
-                </ecl-link>
-              </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
-                <ecl-link>
-                  <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Publications
+                      Meet us at one of the EU centres
                     </span>
                   </a>
                 </ecl-link>
@@ -243,43 +269,95 @@ exports[`ecl-footer renders 1`] = `
             </ul>
           </div>
           <div class="ecl-site-footer__section">
+            <div class="ecl-site-footer__title ecl-site-footer__title--separator ecl-u-type-prolonged-l sc-ecl-footer-eu-eu">
+              Social Media
+            </div>
             <ul class="ecl-site-footer__list">
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+              <li class="ecl-site-footer__list-item sc-ecl-footer-eu-eu">
                 <ecl-link>
                   <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-eu-eu" href="https://european-union.europa.eu/contact-eu/social-media-channels_en">
                     <span class="ecl-link__label">
-                      About the European Commission's web presence
+                      Search for EU social media channels
                     </span>
                   </a>
                 </ecl-link>
               </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+            </ul>
+          </div>
+          <div class="ecl-site-footer__section">
+            <ul class="ecl-site-footer__list"></ul>
+          </div>
+        </div>
+        <div class="ecl-site-footer__column">
+          <div class="ecl-site-footer__section">
+            <div class="ecl-site-footer__title ecl-site-footer__title--separator ecl-u-type-prolonged-l sc-ecl-footer-eu-eu">
+              Legal
+            </div>
+            <ul class="ecl-site-footer__list">
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
                 <ecl-link>
                   <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                  <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="https://european-union.europa.eu/languages-our-websites_en">
                     <span class="ecl-link__label">
-                      Contact the European Commission
+                      Languages on our websites
                     </span>
                   </a>
                 </ecl-link>
               </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
                 <ecl-link>
                   <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                  <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="https://european-union.europa.eu/privacy-policy_en">
                     <span class="ecl-link__label">
-                      Follow the European Commission on social media
+                      Privacy policy
                     </span>
                   </a>
                 </ecl-link>
               </li>
-              <li class="ecl-site-footer__list-item sc-ecl-footer-ec">
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
                 <ecl-link>
                   <!---->
-                  <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec" href="/example.html">
+                  <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="https://european-union.europa.eu/legal-notice_en">
                     <span class="ecl-link__label">
-                      Resources for partners
+                      Legal notice
+                    </span>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="https://european-union.europa.eu/cookies_en">
+                    <span class="ecl-link__label">
+                      Cookies
+                    </span>
+                  </a>
+                </ecl-link>
+              </li>
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="https://european-union.europa.eu/web-accessibility-policy_en">
+                    <span class="ecl-link__label">
+                      Accessibility
+                    </span>
+                  </a>
+                </ecl-link>
+              </li>
+            </ul>
+          </div>
+          <div class="ecl-site-footer__section">
+            <div class="ecl-site-footer__title ecl-site-footer__title--separator ecl-u-type-prolonged-l sc-ecl-footer-eu-eu">
+              EU institutions
+            </div>
+            <ul class="ecl-site-footer__list">
+              <li class="ecl-site-footer__list-item sc-ecl-footer-ec-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="http://www.europarl.europa.eu/portal/">
+                    <span class="ecl-link__label">
+                      Search all EU institutions and bodies
                     </span>
                   </a>
                 </ecl-link>
@@ -290,5 +368,5 @@ exports[`ecl-footer renders 1`] = `
       </div>
     </div>
   </footer>
-</ecl-footer>
+</ecl-footer-eu>
 `;

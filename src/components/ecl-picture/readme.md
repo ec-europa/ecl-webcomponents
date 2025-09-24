@@ -26,7 +26,8 @@
  - [ecl-blockquote](../ecl-blockquote)
  - [ecl-card](../ecl-card)
  - [ecl-file](../ecl-file)
- - [ecl-footer](../ecl-footer)
+ - [ecl-footer-ec](../ecl-footer)
+ - [ecl-footer-eu](../ecl-footer)
  - [ecl-gallery-item](../ecl-gallery)
  - [ecl-list-illustration-item](../ecl-list-illustration)
  - [ecl-media-container](../ecl-media-container)
@@ -41,7 +42,8 @@ graph TD;
   ecl-blockquote --> ecl-picture
   ecl-card --> ecl-picture
   ecl-file --> ecl-picture
-  ecl-footer --> ecl-picture
+  ecl-footer-ec --> ecl-picture
+  ecl-footer-eu --> ecl-picture
   ecl-gallery-item --> ecl-picture
   ecl-list-illustration-item --> ecl-picture
   ecl-media-container --> ecl-picture

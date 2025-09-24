@@ -156,8 +156,6 @@
       "cli-truncate": "2.1.0"
     },
     "patchedDependencies": {
-      "@ecl/builder@3.13.0": "patches/@ecl__builder@3.13.0.patch",
-      "@ecl/theme-dev@3.13.0": "patches/@ecl__theme-dev@3.13.0.patch",
       "@stencil/react-output-target@0.5.3": "patches/@stencil__react-output-target@0.5.3.patch",
       "@ecl/builder@5.0.0-alpha.15": "patches/@ecl__builder@5.0.0-alpha.15.patch",
       "@ecl/content-block@5.0.0-alpha.15": "patches/@ecl__content-block@5.0.0-alpha.15.patch",
