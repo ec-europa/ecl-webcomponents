@@ -7,14 +7,15 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type     | Default        |
-| ------------ | ------------- | ----------- | -------- | -------------- |
-| `color`      | `color`       |             | `string` | `'monochrome'` |
-| `family`     | `family`      |             | `string` | `'networks'`   |
-| `icon`       | `icon`        |             | `string` | `undefined`    |
-| `sharePath`  | `share-path`  |             | `string` | `undefined`    |
-| `styleClass` | `style-class` |             | `string` | `undefined`    |
-| `theme`      | `theme`       |             | `string` | `undefined`    |
+| Property     | Attribute     | Description | Type      | Default        |
+| ------------ | ------------- | ----------- | --------- | -------------- |
+| `color`      | `color`       |             | `string`  | `'monochrome'` |
+| `family`     | `family`      |             | `string`  | `'networks'`   |
+| `hideLabel`  | `hide-label`  |             | `boolean` | `false`        |
+| `icon`       | `icon`        |             | `string`  | `undefined`    |
+| `sharePath`  | `share-path`  |             | `string`  | `undefined`    |
+| `styleClass` | `style-class` |             | `string`  | `undefined`    |
+| `theme`      | `theme`       |             | `string`  | `undefined`    |
 
 
 ## Dependencies

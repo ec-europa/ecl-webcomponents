@@ -2,213 +2,410 @@ import { randomizedLink } from "../../utils/randomizedLink";
 
 export default {
   title: 'Components/Site-wide/footer',
+  argTypes: {
+    theme: {
+      table: { disable: true },
+    },
+    color_mode: {
+      table: { disable: true },
+    },
+  },
 };
 
-const Template = () =>
-  `<ecl-footer
-    theme="ec"
+const Template = (args) =>
+  `<ecl-footer-ec
     logo-alt="European Commission"
     logo-title="European Commission"
     logo-lang-code="en"
     variant="core"
+    description="This site is managed by:"
     site-name="European Commission website"
     logo-link="${randomizedLink('/example.html')}"
   >
-    <ecl-text tag="p" slot="description">
-      This site is managed by: [name of the manager of the site]
-    </ecl-text>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
-      slot="ecl-footer-list-main"
+      slot="ecl-footer-list-core"
     >
-      Strategy
+      About us
     </ecl-footer-item>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main"
+      slot="ecl-footer-list-core"
     >
-      About the European Commission
+      Contact us
     </ecl-footer-item>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main"
+      slot="ecl-footer-list-core"
     >
-      Business, Economy, Euro
+      Priorities
     </ecl-footer-item>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main"
+      slot="ecl-footer-list-core"
     >
-      Live, work, travel in the EU
+      Topics
     </ecl-footer-item>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main"
+      slot="ecl-footer-list-core"
     >
-      Law
+      Funding and tenders
     </ecl-footer-item>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main"
+      slot="ecl-footer-list-core"
     >
-      Funding, Tenders
+      Jobs
     </ecl-footer-item>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main"
+      slot="ecl-footer-list-core"
     >
-      Research and innovation
+      Press corner
     </ecl-footer-item>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main"
-    >
-      Energy, Climate change, Environment
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main"
-    >
-      Education
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main"
-    >
-      Aid, Development cooperation, Fundamental rights
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main"
-    >
-      Food, Farming, Fisheries
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main"
-    >
-      EU regional and urban development
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main"
-    >
-      Jobs at the European Commission
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main"
-    >
-      Statistics
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main"
-    >
-      Press Corner
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main"
+      slot="ecl-footer-list-core"
     >
       Events
     </ecl-footer-item>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
       theme="ec"
-      slot="ecl-footer-list-main"
     >
-      Publications
+      Report an IT vulnerability
     </ecl-footer-item>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
-      theme="ec"
       slot="ecl-footer-list-bottom-left"
-    >
-      About the European Commission's web presence
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-bottom-left"
-    >
-      Contact the European Commission
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-bottom-left"
-    >
-      Accessibility
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-bottom-left"
-    >
-      Follow the European Commission on social media
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-bottom-left"
-    >
-      Resources for partners
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-bottom-right"
     >
       Languages on our websites
     </ecl-footer-item>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-bottom-right"
+      slot="ecl-footer-list-bottom-left"
     >
       Cookies
     </ecl-footer-item>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-bottom-right"
+      slot="ecl-footer-list-bottom-left"
     >
       Privacy policy
     </ecl-footer-item>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-bottom-right"
+      slot="ecl-footer-list-bottom-left"
     >
       Legal notice
     </ecl-footer-item>
-  </ecl-footer>`;
+    <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-list-bottom-left"
+    >
+      Accessibility
+    </ecl-footer-item>
+    <ecl-social-media-follow
+      variant="horizontal"
+      description="Follow us"
+      position="left"
+      style-class="${`ecl-site-footer__social-media sc-ecl-footer-${args.theme}-${args.theme}`}"
+      inline-title="Follow us"
+      slot="ecl-footer-social-follow"
+    >
+      <ecl-social-media-follow-item
+        icon="x"
+        color="inverted"
+        hide-label
+        share-path="http://example.html"
+      >
+        X
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="instagram"
+        color="inverted"
+        hide-label
+        share-path="http://instagram.com"
+      >
+        Instagram
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="linkedin"
+        color="inverted"
+        hide-label
+        share-path="http://linkedin.com"
+      >
+        Linkedin
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="telegram"
+        color="inverted"
+        hide-label
+        share-path="http://telegram.com"
+      >
+        Telegram
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="chain"
+        color="inverted"
+        hide-label
+        share-path="http://example.html"
+      >
+        Other
+      </ecl-social-media-follow-item>
+    </ecl-social-media-follow>
+  </ecl-footer-ec>`;
 
 export const FooterEc = Template.bind({});
-FooterEc.storyName = 'ec - core';
+FooterEc.storyName = 'EC - core';
+
+const TemplateStandardised = (args) => `
+  <ecl-footer-ec
+    logo-alt="European Commission"
+    logo-title="European Commission"
+    logo-lang-code="en"
+    site-name="Site name"
+    variant="standardised"
+    description="This site is managed by:"
+    logo-link="${randomizedLink('/example.html')}"
+  >
+    <ecl-social-media-follow
+      variant="horizontal"
+      position="left"
+      style-class="${`ecl-site-footer__social-media sc-ecl-footer-${args.theme}-${args.theme}`}""
+      slot="ecl-footer-social-follow-info"
+    >
+      <ecl-social-media-follow-item
+        icon="x"
+        color="inverted"
+        hide-label
+        share-path="http://example.html"
+      >
+        X
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="instagram"
+        color="inverted"
+        hide-label
+        share-path="http://instagram.com"
+      >
+        Instagram
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="linkedin"
+        color="inverted"
+        hide-label
+        share-path="http://linkedin.com"
+      >
+        Linkedin
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="telegram"
+        color="inverted"
+        hide-label
+        share-path="http://telegram.com"
+      >
+        Telegram
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="chain"
+        color="inverted"
+        hide-label
+        share-path="http://example.html"
+      >
+        Other
+      </ecl-social-media-follow-item>
+    </ecl-social-media-follow>
+    <ecl-text
+      level="5"
+      is-bold
+      tag="div"
+      slot="ecl-footer-list-contact"
+      style-class="ecl-site-footer__title"
+    >
+      Contact us
+    </ecl-text>
+    <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-list-contact"
+    >
+      Contact information of the DG
+    </ecl-footer-item>
+    <ecl-text
+      level="5"
+      is-bold
+      tag="div"
+      slot="ecl-footer-list-about"
+      style-class="ecl-site-footer__title"
+    >
+      About us
+    </ecl-text>
+    <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-list-about"
+    >
+      Information about the DG
+    </ecl-footer-item>
+    <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-list-about"
+    >
+      Information about the DG
+    </ecl-footer-item>
+    <ecl-text
+      level="5"
+      is-bold
+      tag="div"
+      slot="ecl-footer-list-more"
+      style-class="ecl-site-footer__title"
+    >
+      More information on
+    </ecl-text>
+    <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-list-more"
+    >
+      Class name 1
+    </ecl-footer-item>
+    <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-list-more"
+    >
+      Class name 2
+    </ecl-footer-item>
+    <ecl-text
+      level="5"
+      tag="div"
+      is-bold
+      slot="ecl-footer-list-related"
+      style-class="ecl-site-footer__title"
+    >
+      Related links
+    </ecl-text>
+    <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-list-related"
+    >
+      Related link 1
+    </ecl-footer-item>
+    <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-list-related"
+    >
+      Related link 2
+    </ecl-footer-item>
+    <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-list-related"
+    >
+      Related link 3
+    </ecl-footer-item>
+    <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-list-related"
+    >
+      Related link 4
+    </ecl-footer-item>
+    <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-list-related"
+    >
+      Related link 5
+    </ecl-footer-item>
+    <ecl-social-media-follow
+      variant="horizontal"
+      description="Follow the European Commission"
+      position="left"
+      style-class="${`ecl-site-footer__social-media sc-ecl-footer-${args.theme}-${args.theme}`}"
+      inline-title="Follow us"
+      slot="ecl-footer-social-follow"
+    >
+      <ecl-social-media-follow-item
+        icon="x"
+        color="inverted"
+        hide-label
+        share-path="http://example.html"
+      >
+        X
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="instagram"
+        color="inverted"
+        hide-label
+        share-path="http://instagram.com"
+      >
+        Instagram
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="linkedin"
+        color="inverted"
+        hide-label
+        share-path="http://linkedin.com"
+      >
+        Linkedin
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="telegram"
+        color="inverted"
+        hide-label
+        share-path="http://telegram.com"
+      >
+        Telegram
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="chain"
+        color="inverted"
+        hide-label
+        share-path="http://example.html"
+      >
+        Other
+      </ecl-social-media-follow-item>
+    </ecl-social-media-follow>
+    <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-list-bottom-left"
+    >
+      Languages on our websites
+    </ecl-footer-item>
+    <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-list-bottom-left"
+    >
+      Cookies
+    </ecl-footer-item>
+    <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-list-bottom-left"
+    >
+      Privacy policy
+    </ecl-footer-item>
+    <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-list-bottom-left"
+    >
+      Legal notice
+    </ecl-footer-item>
+    <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-list-bottom-left"
+    >
+      Accessibility
+    </ecl-footer-item>
+  </ecl-footer-ec>`;
+
+export const FooterStandardised = TemplateStandardised.bind({});
+FooterStandardised.storyName = 'EC - standardised';
+
+export const FooterHarmonised= TemplateStandardised.bind({});
+FooterHarmonised.storyName = 'EC - harmonised';
 
 const TemplateEu = () =>
-  `<ecl-footer
-    theme="eu"
+  `<ecl-footer-eu
     logo-alt="European Commission"
     logo-title="European commission"
     logo-lang-code="en"
+    description="This site is managed by the Directorate-General for Communication"
     variant="core"
     logo-link="${randomizedLink('/example.html')}"
   >
@@ -216,48 +413,40 @@ const TemplateEu = () =>
       This site is managed by: [name of the manager of the site]
     </ecl-text>
     <ecl-text
-      level="1"
+      level="4"
       slot="ecl-footer-list-main"
-      tag="h2"
+      tag="div"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
     >
       Contact the EU
     </ecl-text>
     <ecl-footer-item
-      theme="eu"
       link="tel:0080067891011"
       slot="ecl-footer-list-main"
     >
-      <span slot="ecl-footer-item-desc">Call us</span>
-      00 800 6 7 8 9 10 11
+      Call us 00 800 6 7 8 9 10 11
     </ecl-footer-item>
     <ecl-footer-item
       link="https://european-union.europa.eu/contact-eu/call-us_en"
-      theme="eu"
       slot="ecl-footer-list-main"
     >
-    <span slot="ecl-footer-item-desc">Use other</span>
-      telephone options
+      Use other telephone options
     </ecl-footer-item>
     <ecl-footer-item
       link="https://european-union.europa.eu/contact-eu/write-us_en"
-      theme="eu"
       slot="ecl-footer-list-main"
     >
-      <span slot="ecl-footer-item-desc">Write us via</span>
-      contact form
+      Write us via our contact form
     </ecl-footer-item>
     <ecl-footer-item
       link="https://european-union.europa.eu/contact-eu/meet-us_en"
-      theme="eu"
       slot="ecl-footer-list-main"
     >
-      <span slot="ecl-footer-item-desc">Meet us at one of the</span>
-      EU centres
+      Meet us at one of the EU centres
     </ecl-footer-item>
     <ecl-text
-      level="1"
-      tag="h2"
+      level="4"
+      tag="div"
       slot="ecl-footer-list-bottom-left"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
     >
@@ -268,55 +457,49 @@ const TemplateEu = () =>
       theme="eu"
       slot="ecl-footer-list-bottom-left"
     >
-      <span slot="ecl-footer-item-desc">Meet us at one of the</span>
-      EU social media channels
+      Search for EU social media channels
     </ecl-footer-item>
     <ecl-text
-      tag="h2"
-      level="1"
+      tag="div"
+      level="4"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
-      slot="ecl-footer-list-bottom-right"
+      slot="ecl-footer-list-right-top"
     >
       Legal
     </ecl-text>
     <ecl-footer-item
       link="https://european-union.europa.eu/languages-our-websites_en"
-      theme="eu"
-      slot="ecl-footer-list-bottom-right"
+      slot="ecl-footer-list-right-top"
     >
       Languages on our websites
     </ecl-footer-item>
     <ecl-footer-item
       link="https://european-union.europa.eu/privacy-policy_en"
-      theme="eu"
-      slot="ecl-footer-list-bottom-right"
+      slot="ecl-footer-list-right-top"
     >
       Privacy policy
     </ecl-footer-item>
     <ecl-footer-item
       link="https://european-union.europa.eu/legal-notice_en"
-      theme="eu"
-      slot="ecl-footer-list-bottom-right"
+      slot="ecl-footer-list-right-top"
     >
       Legal notice
     </ecl-footer-item>
     <ecl-footer-item
       link="https://european-union.europa.eu/cookies_en"
-      theme="eu"
-      slot="ecl-footer-list-bottom-right"
+      slot="ecl-footer-list-right-top"
     >
       Cookies
     </ecl-footer-item>
     <ecl-footer-item
       link="https://european-union.europa.eu/web-accessibility-policy_en"
-      theme="eu"
-      slot="ecl-footer-list-bottom-right"
+      slot="ecl-footer-list-right-top"
     >
       Accessibility
     </ecl-footer-item>
     <ecl-text
-      tag="h2"
-      level="1"
+      tag="div"
+      level="4"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-right"
     >
@@ -324,139 +507,21 @@ const TemplateEu = () =>
     </ecl-text>
     <ecl-footer-item
       link="http://www.europarl.europa.eu/portal/"
-      theme="eu"
       slot="ecl-footer-list-right"
     >
-      European Parliament
+      Search all EU institutions and bodies
     </ecl-footer-item>
-    <ecl-footer-item
-      link="http://www.consilium.europa.eu/en/european-council/"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Council
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="http://www.consilium.europa.eu/en/home/"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      Council of the European Union
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://commission.europa.eu/index_en"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Commission
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="http://curia.europa.eu/jcms/jcms/j_6/en/"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      Court of Justice of the European Union (CJEU)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="European Central Bank (ECB)"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Central Bank (ECB)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="http://www.eca.europa.eu/en"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Court of Auditors (ECA)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="http://www.eca.europa.eu/en"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Court of Auditors (ECA)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://eeas.europa.eu/headquarters/headquarters-homepage_en"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European External Action Service (EEAS)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="http://www.eesc.europa.eu/?i=portal.en.home"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Economic and Social Committee (EESC)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="http://cor.europa.eu/en/"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Committee of the Regions (CoR)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://www.eib.org/en/index.htm"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Investment Bank (EIB)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://www.ombudsman.europa.eu/en/home"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Ombudsman
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://secure.edps.europa.eu/EDPSWEB/edps/EDPS?lang=ene"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Data Protection Supervisor (EDPS)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://edpb.europa.eu/edpb_en"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      The European Data Protection Board
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://epso.europa.eu/en"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Personnel Selection Office
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://op.europa.eu/en/home"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      Publications Office of the European Union
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://european-union.europa.eu/institutions-law-budget/institutions-and-bodies/institutions-and-bodies-profiles_en?f%5B0%5D=oe_organisation_eu_type%3Ahttp%3A//publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_DEC&f%5B1%5D=oe_organisation_eu_type%3Ahttp%3A//publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_EXEC&f%5B2%5D=oe_organisation_eu_type%3Ahttp%3A//publications.europa.eu/resource/authority/corporate-body-classification/EU_JU"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      Agencies
-    </ecl-footer-item>
-  </ecl-footer>`;
+  </ecl-footer-eu>`;
 
 export const FooterEu = TemplateEu.bind({});
-FooterEu.storyName = 'eu - core';
+FooterEu.storyName = 'EU - core';
+FooterEu.args = {
+  theme: 'eu',
+};
 
 
 const TemplateEuHarmonised = () =>
-  `<ecl-footer
-    theme="eu"
+  `<ecl-footer-eu
     logo-alt="European Union"
     logo-title="European Union"
     logo-lang-code="en"
@@ -465,24 +530,15 @@ const TemplateEuHarmonised = () =>
     variant="harmonised"
     logo-link="${randomizedLink('/example.html')}"
   >
-    <ecl-footer-item
-      theme="eu"
-      slot="description"
-      link="${randomizedLink('/example.html')}"
-    >
-      <span slot="ecl-footer-item-desc">Discover more on</span>
-      europa.eu
-    </ecl-footer-item>
     <ecl-text
-      level="1"
-      tag="h2"
+      level="4"
+      tag="div"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-top-middle"
     >
       Contact site name
     </ecl-text>
     <ecl-footer-item
-      theme="eu"
       link="${randomizedLink('/example.html')}"
       slot="ecl-footer-list-top-middle"
     >
@@ -491,104 +547,91 @@ const TemplateEuHarmonised = () =>
     <ecl-text
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-top-middle-bottom"
-      level="1"
-      tag="h2"
+      level="4"
+      tag="div"
     >
       Follow us
     </ecl-text>
     <ecl-footer-item
-      theme="eu"
       link="${randomizedLink('/example.html')}"
       slot="ecl-footer-list-top-middle-bottom"
     >
       Social 1
     </ecl-footer-item>
     <ecl-footer-item
-      theme="eu"
       link="${randomizedLink('/example.html')}"
       slot="ecl-footer-list-top-middle-bottom"
     >
       Social 2
     </ecl-footer-item>
     <ecl-footer-item
-      theme="eu"
       link="${randomizedLink('/example.html')}"
       slot="ecl-footer-list-top-middle-bottom"
     >
       Social 3
     </ecl-footer-item>
     <ecl-text
-      level="1"
-      tag="h2"
+      level="4"
+      tag="div"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-top-right"
     >
       Optional links
     </ecl-text>
     <ecl-footer-item
-      theme="eu"
       link="${randomizedLink('/example.html')}"
       slot="ecl-footer-list-top-right"
     >
       Link 1
     </ecl-footer-item>
     <ecl-footer-item
-      theme="eu"
       link="${randomizedLink('/example.html')}"
       slot="ecl-footer-list-top-right"
     >
       Link 2
     </ecl-footer-item>
     <ecl-footer-item
-      theme="eu"
       link="${randomizedLink('/example.html')}"
       slot="ecl-footer-list-top-right"
     >
       Link 3
     </ecl-footer-item>
     <ecl-text
-      tag="h2"
-      level="1"
+      tag="div"
+      level="4"
       slot="ecl-footer-list-main"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
     >
       Contact the EU
     </ecl-text>
     <ecl-footer-item
-      theme="eu"
       link="tel:0080067891011"
       slot="ecl-footer-list-main"
     >
-      <span slot="ecl-footer-item-desc">Call us</span>
-      00 800 6 7 8 9 10 11
+      Call us 00 800 6 7 8 9 10 11
     </ecl-footer-item>
     <ecl-footer-item
       link="https://european-union.europa.eu/contact-eu/call-us_en"
-      theme="eu"
       slot="ecl-footer-list-main"
     >
-    <span slot="ecl-footer-item-desc">Use other</span>
-      telephone options
+      Use other telephone options
     </ecl-footer-item>
     <ecl-footer-item
       link="https://european-union.europa.eu/contact-eu/write-us_en"
-      theme="eu"
       slot="ecl-footer-list-main"
     >
-      <span slot="ecl-footer-item-desc">Write us via</span>
-      contact form
+      Write us via our contact form
     </ecl-footer-item>
     <ecl-footer-item
       link="https://european-union.europa.eu/contact-eu/meet-us_en"
-      theme="eu"
       slot="ecl-footer-list-main"
     >
       <span slot="ecl-footer-item-desc">Meet us at one of the</span>
       EU centres
     </ecl-footer-item>
     <ecl-text
-      tag="h2"
-      level="1"
+      tag="div"
+      level="4"
       slot="ecl-footer-list-bottom-left"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
     >
@@ -596,401 +639,78 @@ const TemplateEuHarmonised = () =>
     </ecl-text>
     <ecl-footer-item
       link="https://european-union.europa.eu/contact-eu/social-media-channels_en"
-      theme="eu"
       slot="ecl-footer-list-bottom-left"
     >
-      <span slot="ecl-footer-item-desc">Search for</span>
-      EU social media channels
+      Search for EU social media channels
     </ecl-footer-item>
     <ecl-text
-      level="1"
-      tag="h2"
+      level="4"
+      tag="div"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
-      slot="ecl-footer-list-main-bottom"
+      slot="ecl-footer-list-right-top"
     >
       Legal
     </ecl-text>
     <ecl-footer-item
       link="https://european-union.europa.eu/languages-our-websites_en"
-      theme="eu"
-      slot="ecl-footer-list-main-bottom"
+      slot="ecl-footer-list-right-top"
     >
       Languages on our websites
     </ecl-footer-item>
     <ecl-footer-item
       link="https://european-union.europa.eu/privacy-policy_en"
-      theme="eu"
-      slot="ecl-footer-list-main-bottom"
+      slot="ecl-footer-list-right-top"
     >
       Privacy policy
     </ecl-footer-item>
     <ecl-footer-item
       link="https://european-union.europa.eu/legal-notice_en"
-      theme="eu"
-      slot="ecl-footer-list-main-bottom"
+      slot="ecl-footer-list-right-top"
     >
       Legal notice
     </ecl-footer-item>
     <ecl-footer-item
       link="https://european-union.europa.eu/cookies_en"
-      theme="eu"
-      slot="ecl-footer-list-main-bottom"
+      slot="ecl-footer-list-right-top"
     >
       Cookies
     </ecl-footer-item>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
-      theme="eu"
       slot="ecl-footer-list-info"
     >
-      Accessibility
+      Accessibility statement
+    </ecl-footer-item>
+      <ecl-footer-item
+      link="${randomizedLink('/example.html')}"
+      slot="ecl-footer-logo-info"
+    >
+      Discover more on europa.eu
     </ecl-footer-item>
     <ecl-footer-item
       link="https://european-union.europa.eu/web-accessibility-policy_en"
-      theme="eu"
-      slot="ecl-footer-list-main-bottom"
+      slot="ecl-footer-list-right-top"
     >
       Accessibility
     </ecl-footer-item>
     <ecl-text
-      level="1"
-      tag="h2"
+      level="4"
+      tag="div"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-right"
     >
-      EU institutions
+      EU institutions and bodies
     </ecl-text>
     <ecl-footer-item
       link="http://www.europarl.europa.eu/portal/"
-      theme="eu"
       slot="ecl-footer-list-right"
     >
-      European Parliament
+      Search all EU institutions and bodies
     </ecl-footer-item>
-    <ecl-footer-item
-      link="http://www.consilium.europa.eu/en/european-council/"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Council
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="http://www.consilium.europa.eu/en/home/"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      Council of the European Union
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://ec.europa.eu/commission/index_en"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Commission
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="http://curia.europa.eu/jcms/jcms/j_6/en/"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      Court of Justice of the European Union (CJEU)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="European Central Bank (ECB)"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Central Bank (ECB)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="http://www.eca.europa.eu/en"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Court of Auditors (ECA)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="http://www.eca.europa.eu/en"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Court of Auditors (ECA)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://eeas.europa.eu/headquarters/headquarters-homepage_en"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European External Action Service (EEAS)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="http://www.eesc.europa.eu/?i=portal.en.home"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Economic and Social Committee (EESC)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="http://cor.europa.eu/en/"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Committee of the Regions (CoR)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://www.eib.org/en/index.htm"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Investment Bank (EIB)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://www.ombudsman.europa.eu/en/home"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Ombudsman
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://secure.edps.europa.eu/EDPSWEB/edps/EDPS?lang=ene"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Data Protection Supervisor (EDPS)
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://edpb.europa.eu/edpb_en"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      The European Data Protection Board
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://epso.europa.eu/en"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      European Personnel Selection Office
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://op.europa.eu/en/home"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      Publications Office of the European Union
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="https://european-union.europa.eu/institutions-law-budget/institutions-and-bodies/institutions-and-bodies-profiles_en?f%5B0%5D=oe_organisation_eu_type%3Ahttp%3A//publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_DEC&f%5B1%5D=oe_organisation_eu_type%3Ahttp%3A//publications.europa.eu/resource/authority/corporate-body-classification/AGENCY_EXEC&f%5B2%5D=oe_organisation_eu_type%3Ahttp%3A//publications.europa.eu/resource/authority/corporate-body-classification/EU_JU"
-      theme="eu"
-      slot="ecl-footer-list-right"
-    >
-      Agencies
-    </ecl-footer-item>
-  </ecl-footer>`;
+  </ecl-footer-eu>`;
 
 export const FooterEuHarmonised = TemplateEuHarmonised.bind({});
-FooterEuHarmonised.storyName = 'eu - harmonised';
-
-const TemplateStandardised = () => `
-  <ecl-footer
-    theme="ec"
-    logo-alt="European Commission"
-    logo-title="European Commission"
-    logo-lang-code="en"
-    site-name="European Commission website"
-    variant="standardised"
-    logo-link="${randomizedLink('/example.html')}"
-  >
-    <ecl-text tag="p"
-      theme="eu"
-      slot="description"
-    >
-      This site is managed by: [name of the manager of the site]
-    </ecl-text>
-    <ecl-text
-      level="5"
-      is-bold
-      tag="h2"
-      slot="ecl-footer-list-main"
-      style-class="ecl-site-footer__title ecl-site-footer__title--separator"
-    >
-      Contact us
-    </ecl-text>
-    <ecl-footer-item
-      theme="ec"
-      link="${randomizedLink('/example.html')}"
-      slot="ecl-footer-list-main"
-    >
-      Contact information of the DG
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-info"
-    >
-      Accessibility
-    </ecl-footer-item>
-    <ecl-text
-      level="5"
-      is-bold
-      tag="h2"
-      slot="ecl-footer-list-main-bottom"
-      style-class="ecl-site-footer__title ecl-site-footer__title--separator"
-    >
-      Follow us on
-    </ecl-text>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main-bottom"
-    >
-      Facebook
-      <ecl-icon
-        icon="facebook-negative"
-        slot="icon-before"
-        sprite="icons-social-media"
-        size="xs"
-      ></ecl-icon>
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main-bottom"
-    >
-      Twitter
-      <ecl-icon
-        icon="twitter-negative"
-        slot="icon-before"
-        sprite="icons-social-media"
-        size="xs"
-      ></ecl-icon>
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main-bottom"
-    >
-      Linkedin
-      <ecl-icon
-        icon="linkedin-negative"
-        slot="icon-before"
-        sprite="icons-social-media"
-        size="xs"
-      ></ecl-icon>
-    </ecl-footer-item>
-    <ecl-text
-      level="5"
-      tag="h2"
-      is-bold
-      slot="ecl-footer-list-main-right"
-      style-class="ecl-site-footer__title ecl-site-footer__title--separator"
-    >
-      About us
-    </ecl-text>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main-right"
-    >
-      Information about the DG
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main-right"
-    >
-      Information about the DG
-    </ecl-footer-item>
-    <ecl-text
-      level="5"
-      tag="h2"
-      is-bold
-      slot="ecl-footer-list-main-right-bottom"
-      style-class="ecl-site-footer__title ecl-site-footer__title--separator"
-    >
-      Related site
-    </ecl-text>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main-right-bottom"
-    >
-      Related link 1
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-main-right-bottom"
-    >
-      Relatd link 2
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-middle"
-    >
-      Class name 1
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-middle"
-    >
-      Class name 2
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-bottom-center"
-    >
-      Contact the European Commission
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-bottom-center"
-    >
-      Follow the European Commission on social media
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-bottom-center"
-    >
-      Resources for partners
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-bottom-right"
-    >
-      Languages on our websites
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-bottom-right"
-    >
-      Cookies
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-bottom-right"
-    >
-      Privacy policy
-    </ecl-footer-item>
-    <ecl-footer-item
-      link="${randomizedLink('/example.html')}"
-      theme="ec"
-      slot="ecl-footer-list-bottom-right"
-    >
-      Legal notice
-    </ecl-footer-item>
-  </ecl-footer>`;
-
-export const FooterStandardised = TemplateStandardised.bind({});
-FooterStandardised.storyName = 'ec - standardised';
-
-export const FooterHarmonised= TemplateStandardised.bind({});
-FooterHarmonised.storyName = 'ec - harmonised';
+FooterEuHarmonised.storyName = 'EU - harmonised';
+FooterEuHarmonised.args = {
+  theme: 'eu',
+};

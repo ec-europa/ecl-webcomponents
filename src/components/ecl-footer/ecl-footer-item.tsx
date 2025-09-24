@@ -14,7 +14,7 @@ export class EclFooterItem{
   getClass(): string {
     const styleClasses = [
       `ecl-site-footer__list-item`,
-      `sc-ecl-footer-${this.theme}`,
+      `sc-ecl-footer-${this.theme}-${this.theme}`,
       this.styleClass
     ];
 
@@ -34,9 +34,10 @@ export class EclFooterItem{
         <ecl-link
           path={this.link}
           variant="standalone"
-          styleClass={`ecl-site-footer__link sc-ecl-footer-${this.theme}`}
+          styleClass={`ecl-site-footer__link sc-ecl-footer-${this.theme}-${this.theme}`}
           theme={this.theme}
           ariaLabel={this.ariaLabel}
+          {...(this.theme === 'ec' ? {inverted: true} : {})}
         >
           <slot name="icon-before"></slot>
           <slot></slot>  

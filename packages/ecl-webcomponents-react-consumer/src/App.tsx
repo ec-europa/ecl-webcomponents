@@ -178,7 +178,7 @@ function App() {
           </EclGrid>
         </div>
         <div style={{marginTop: '2rem'}}></div>
-        <EclFooter
+        <EclFooterEu
           theme="eu"
           logo-alt="European Commission"
           logo-title="European commission"
@@ -229,7 +229,7 @@ function App() {
           >
             Agencies
           </EclFooterItem>
-        </EclFooter>
+        </EclFooterEu>
       </div>
     </div>
   )

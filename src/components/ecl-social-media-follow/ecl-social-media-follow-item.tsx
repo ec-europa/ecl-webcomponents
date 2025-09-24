@@ -9,6 +9,7 @@ export class EclSocialMediaFollowItem {
   @Prop() styleClass: string;
   @Prop() sharePath: string;
   @Prop() icon: string;
+  @Prop() hideLabel: boolean = false;
   @Prop() family: string = 'networks';
   @Prop() color: string = 'monochrome';
 
@@ -31,6 +32,7 @@ export class EclSocialMediaFollowItem {
           style-class={`ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-${this.theme}`}
           path={this.sharePath}
           icon-position="before"
+          {...(this.hideLabel ? {hideLabel: true} : {})}
         >
           <ecl-icon
             slot="icon-before"
