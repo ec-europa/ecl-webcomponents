@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { EclSiteHeader, EclFeaturedItem, EclFactFigures, EclFactFiguresItem, EclListIllustration, EclInpageNavigation, EclInpageNavigationItem, EclListIllustrationItem, EclPageHeader, EclGrid, EclBreadcrumb, EclBreadcrumbItem, EclFooter, EclFooterItem, EclLanguageItem, EclMenu, EclMenuItem, defineCustomElements } from '@ecl/ecl-webcomponents-react';
+import { EclSiteHeader, EclFeaturedItem, EclFactFigures, EclFactFiguresItem, EclListIllustration, EclInpageNavigation, EclInpageNavigationItem, EclListIllustrationItem, EclPageHeader, EclGrid, EclBreadcrumb, EclBreadcrumbItem, EclFooterEu, EclFooterItem, EclLanguageItem, EclMenu, EclMenuItem, defineCustomElements } from '@ecl/ecl-webcomponents-react';
 
 defineCustomElements();
 
@@ -178,7 +178,7 @@ function App() {
           </EclGrid>
         </div>
         <div style={{marginTop: '2rem'}}></div>
-        <EclFooter
+        <EclFooterEu
           theme="eu"
           logo-alt="European Commission"
           logo-title="European commission"
@@ -229,7 +229,7 @@ function App() {
           >
             Agencies
           </EclFooterItem>
-        </EclFooter>
+        </EclFooterEu>
       </div>
     </div>
   )
