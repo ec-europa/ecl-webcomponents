@@ -77,8 +77,8 @@
     "@eslint/js": "9.35.0",
     "@geometricpanda/storybook-addon-badges": "2.0.5",
     "@prettier/plugin-xml": "3.4.2",
-    "@stencil/angular-output-target": "0.8.4",
-    "@stencil/react-output-target": "0.5.3",
+    "@stencil/angular-output-target": "0.10.2",
+    "@stencil/react-output-target": "1.2.0",
     "@storybook/addon-docs": "9.1.5",
     "@storybook/addon-links": "9.1.5",
     "@storybook/html-vite": "9.1.5",
@@ -156,7 +156,6 @@
       "cli-truncate": "2.1.0"
     },
     "patchedDependencies": {
-      "@stencil/react-output-target@0.5.3": "patches/@stencil__react-output-target@0.5.3.patch",
       "@ecl/builder@5.0.0-alpha.15": "patches/@ecl__builder@5.0.0-alpha.15.patch",
       "@ecl/content-block@5.0.0-alpha.15": "patches/@ecl__content-block@5.0.0-alpha.15.patch",
       "@ecl/select@5.0.0-alpha.15": "patches/@ecl__select@5.0.0-alpha.15.patch",

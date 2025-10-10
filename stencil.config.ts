@@ -19,8 +19,9 @@ export const config: Config = {
       type: 'docs-readme',
     },
     reactOutputTarget({
+      outDir: '../ecl-webcomponents-react/lib/components/stencil-generated/',
       componentCorePackage: '@ecl/ecl-webcomponents',
-      proxiesFile: 'packages/ecl-webcomponents-react/lib/components/stencil-generated/index.ts',
+      // proxiesFile: 'packages/ecl-webcomponents-react/lib/components/stencil-generated/index.ts',
     }),
     angularOutputTarget({
       componentCorePackage: '@ecl/ecl-webcomponents',
