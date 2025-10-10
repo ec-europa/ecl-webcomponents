@@ -19,8 +19,8 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=18.0.0",
-    "yarn": ">=1.1.0"
+    "node": ">=20.0.0",
+    "pnpm": "10.9.0"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,6 @@
   },
   "devDependencies": {
     "@stencil/angular-output-target": "0.10.2",
-    "@stencil/react-output-target": "1.2.0"
+    "@stencil/react-output-target": "0.5.3"
   }
 }

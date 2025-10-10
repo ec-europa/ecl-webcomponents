@@ -78,7 +78,7 @@
     "@geometricpanda/storybook-addon-badges": "2.0.5",
     "@prettier/plugin-xml": "3.4.2",
     "@stencil/angular-output-target": "0.10.2",
-    "@stencil/react-output-target": "1.2.0",
+    "@stencil/react-output-target": "0.5.3",
     "@storybook/addon-docs": "9.1.5",
     "@storybook/addon-links": "9.1.5",
     "@storybook/html-vite": "9.1.5",
