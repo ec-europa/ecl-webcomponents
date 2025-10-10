@@ -8,8 +8,8 @@
     "dist"
   ],
   "peerDependencies": {
-    "@angular/common": "^15.2.0",
-    "@angular/core": "^15.2.0",
+    "@angular/common": "18.2.0",
+    "@angular/core": "18.2.0",
     "@ecl/ecl-webcomponents": "0.15.1"
   },
   "scripts": {
