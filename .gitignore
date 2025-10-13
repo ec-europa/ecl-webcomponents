@@ -9,6 +9,7 @@ packages/ecl-webcomponents-react/lib/components/stencil-generated
 packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular/src/lib/stencil-generated
 static/build/fonts/*
 static/build/styles/*
+!static/build/styles/.gitkeep
 !static/build/
 
 *~
