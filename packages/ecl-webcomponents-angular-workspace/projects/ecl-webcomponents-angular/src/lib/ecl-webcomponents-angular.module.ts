@@ -2,16 +2,20 @@ import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { DIRECTIVES } from './stencil-generated';
 import { defineCustomElements } from '@ecl/ecl-webcomponents/loader';
 
+export function appInitializerFactory() {
+  return () => defineCustomElements();
+}
+
 @NgModule({
   declarations: [...DIRECTIVES],
   exports: [...DIRECTIVES],
   providers: [
     {
       provide: APP_INITIALIZER,
-      useFactory: () => {
-        return defineCustomElements();
-      },
+      useFactory: appInitializerFactory,
+      multi: true,
     },
-  ]
+  ],
 })
 export class ComponentLibraryModule {}
+

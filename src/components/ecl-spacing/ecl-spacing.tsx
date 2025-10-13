@@ -19,12 +19,18 @@ export class EclSpacing {
   @Prop() inner: boolean = false;
   @Prop() vertical: boolean = false;
   @Prop() horizontal: boolean = false;
-  @Prop() direction: string = 'a';
+  @Prop({ mutable: true }) direction: string = 'a';
   @Prop() value: string = 'm';
 
   getClass(): string {
     let baseClass = 'ecl-u-'; 
     let styleClasses = [];
+
+    if (this.vertical) {
+      this.direction = 'v';
+    } else if (this.horizontal) {
+      this.direction = 'h';
+    }
 
     if (this.outer) {
       if (!this.breakpoint) {

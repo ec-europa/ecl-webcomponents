@@ -10,8 +10,8 @@
     "build:styles": "cross-env ecl-builder styles",
     "build": "npm run build:styles",
     "prepublish": "npm run build",
-    "copy:colors": "ncp ./node_modules/@ecl/preset-ec/dist/styles/ecl-ec-color-modes.css ../../../static/ecl-ec-color-modes.css",
-    "copy:font": "ncp node_modules/@ecl/preset-ec/dist/fonts ../../../static/fonts/",
+    "copy:colors": "ncp ./node_modules/@ecl/preset-ec/dist/styles/ecl-ec-color-modes.css ../../../static/build/styles/ecl-ec-color-modes.css",
+    "copy:font": "ncp node_modules/@ecl/preset-ec/dist/fonts ../../../static/build/fonts/",
     "postinstall": "run-p copy:*"
   },
   "devDependencies": {

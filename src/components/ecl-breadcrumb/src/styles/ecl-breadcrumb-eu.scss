@@ -11,3 +11,18 @@
   $theme: theme.$theme,
   $breadcrumb: var.$breadcrumb
 );
+
+.ecl-breadcrumb__segment .ecl-breadcrumb__icon {
+  margin-top: -8px;
+}
+
+.ecl-breadcrumb__current-page {
+  margin-top: 8px;
+}
+
+.ecl-breadcrumb__ellipsis {
+  background-color: var(--c-p-5) !important;
+  display: flex !important;
+  justify-content: center;
+  margin-top: -8px !important;
+}

@@ -72,6 +72,7 @@ export class EclSiteHeader {
       this.el.querySelector('.ecl-search-form').setAttribute('data-ecl-search-form', '');
     }
     if (this.el.querySelector('.ecl-menu')) {
+      this.el.querySelector('.ecl-menu').classList.add(`sc-ecl-site-header-${this.theme}`);
       this.el.firstElementChild.classList.add('ecl-site-header--has-menu');
       const open = this.el.querySelector('.ecl-menu__open');
       open.classList.add(`sc-ecl-site-header-${this.theme}`);

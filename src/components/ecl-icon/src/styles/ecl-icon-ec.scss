@@ -2,3 +2,7 @@
 @use '@ecl/icon/icon' with (
   $theme: theme.$theme
 );
+
+:host {
+  display: contents;
+}
