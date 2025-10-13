@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { EclSiteHeader, EclFeaturedItem, EclFactFigures, EclFactFiguresItem, EclListIllustration, EclInpageNavigation, EclInpageNavigationItem, EclListIllustrationItem, EclPageHeader, EclGrid, EclBreadcrumb, EclBreadcrumbItem, EclFooterEu, EclFooterItem, EclLanguageItem, EclMenu, EclMenuItem, defineCustomElements } from '@ecl/ecl-webcomponents-react';
+import { EclSiteHeader, EclDivider, EclButton, EclText, EclSocialMediaFollow, EclSocialMediaFollowItem, EclSpacing, EclFooterEc, EclGallery, EclGalleryItem, EclFeaturedItem, EclFactFigures, EclFactFiguresItem, EclListIllustration, EclInpageNavigation, EclInpageNavigationItem, EclListIllustrationItem, EclPageHeader, EclGrid, EclBreadcrumb, EclBreadcrumbItem, EclFooterEu, EclFooterItem, EclLanguageItem, EclMenu, EclMenuItem, defineCustomElements } from '@ecl/ecl-webcomponents-react';
 
 defineCustomElements();
 
@@ -25,17 +25,17 @@ function App() {
     <div className="App">
       <ul className="ecl-theme-switcher">
         <li>
-          <ecl-button variant="cta" onClick={() => switchTheme('ec')}>
+          <EclButton variant="cta" onClick={() => switchTheme('ec')}>
             EC
-          </ecl-button>
+          </EclButton>
         </li>
         <li>
-          <ecl-button variant="cta" onClick={() => switchTheme('eu')}>
+          <EclButton variant="cta" onClick={() => switchTheme('eu')}>
             EU
-          </ecl-button>
+          </EclButton>
         </li>
       </ul>
-      <ecl-site-header
+      <EclSiteHeader
         ecl-script
         login-block
         language-block
@@ -55,140 +55,140 @@ function App() {
         language-aria-label="Choose language"
         site-name="ECL Webcomponents in an angular app"
       >
-        <ecl-language-item slot="eu-category" path="/example.html" lang-code="bg" language="български"></ecl-language-item>
-        <ecl-language-item slot="eu-category" path="/example.html" lang-code="es" language="español"></ecl-language-item>
-        <ecl-language-item slot="eu-category" path="/example.html" lang-code="cs" language="čeština"></ecl-language-item>
-        <ecl-language-item slot="eu-category" path="/example.html" lang-code="da" language="dansk"></ecl-language-item>
-        <ecl-language-item slot="eu-category" path="/example.html" lang-code="de" language="Deutsch"></ecl-language-item>
-        <ecl-language-item slot="eu-category" path="/example.html" lang-code="et" language="eesti"></ecl-language-item>
-        <ecl-language-item slot="eu-category" path="/example.html" lang-code="el" language="ελληνικά"></ecl-language-item>
-        <ecl-language-item slot="eu-category" path="/example.html" lang-code="en" language="English" active></ecl-language-item>
-        <ecl-language-item slot="eu-category" path="/example.html" lang-code="fr" language="français"></ecl-language-item>
-        <ecl-language-item slot="eu-category" path="/example.html" lang-code="ga" language="Gaeilge"></ecl-language-item>
-        <ecl-language-item slot="eu-category" path="/example.html" lang-code="hr" language="hrvatski"></ecl-language-item>
-        <ecl-language-item slot="eu-category" path="/example.html" lang-code="it" language="italiano"></ecl-language-item>
-        <ecl-language-item slot="non-eu-category" path="/example.html" lang-code="zh" language="中文"></ecl-language-item>
-        <ecl-language-item slot="non-eu-category" path="/example.html" lang-code="tr" language="Türk"></ecl-language-item>
-        <ecl-menu slot="menu" close-label="Close" back-label="Back" menu-link="/example.html" ecl-script menu-title="Menu">
-          <ecl-menu-item link="/example.html"> Home </ecl-menu-item>
-          <ecl-menu-item link="/example.html" has-children trigger-aria-label="Access item's children" current>
+        <EclLanguageItem slot="eu-category" path="/example.html" lang-code="bg" language="български"></EclLanguageItem>
+        <EclLanguageItem slot="eu-category" path="/example.html" lang-code="es" language="español"></EclLanguageItem>
+        <EclLanguageItem slot="eu-category" path="/example.html" lang-code="cs" language="čeština"></EclLanguageItem>
+        <EclLanguageItem slot="eu-category" path="/example.html" lang-code="da" language="dansk"></EclLanguageItem>
+        <EclLanguageItem slot="eu-category" path="/example.html" lang-code="de" language="Deutsch"></EclLanguageItem>
+        <EclLanguageItem slot="eu-category" path="/example.html" lang-code="et" language="eesti"></EclLanguageItem>
+        <EclLanguageItem slot="eu-category" path="/example.html" lang-code="el" language="ελληνικά"></EclLanguageItem>
+        <EclLanguageItem slot="eu-category" path="/example.html" lang-code="en" language="English" active></EclLanguageItem>
+        <EclLanguageItem slot="eu-category" path="/example.html" lang-code="fr" language="français"></EclLanguageItem>
+        <EclLanguageItem slot="eu-category" path="/example.html" lang-code="ga" language="Gaeilge"></EclLanguageItem>
+        <EclLanguageItem slot="eu-category" path="/example.html" lang-code="hr" language="hrvatski"></EclLanguageItem>
+        <EclLanguageItem slot="eu-category" path="/example.html" lang-code="it" language="italiano"></EclLanguageItem>
+        <EclLanguageItem slot="non-eu-category" path="/example.html" lang-code="zh" language="中文"></EclLanguageItem>
+        <EclLanguageItem slot="non-eu-category" path="/example.html" lang-code="tr" language="Türk"></EclLanguageItem>
+        <EclMenu slot="menu" close-label="Close" back-label="Back" menu-link="/example.html" ecl-script menu-title="Menu">
+          <EclMenuItem link="/example.html"> Home </EclMenuItem>
+          <EclMenuItem link="/example.html" has-children trigger-aria-label="Access item's children" current>
             Item 2 label
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 2.1 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 2.2 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child current slot="sublist"> Item 2.3 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist" external> Item 2.4 </ecl-menu-item>
-          </ecl-menu-item>
-          <ecl-menu-item has-children trigger-aria-label="Access item's children" link="/example.html">
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 2.1 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 2.2 </EclMenuItem>
+            <EclMenuItem link="/example.html" child current slot="sublist"> Item 2.3 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist" external> Item 2.4 </EclMenuItem>
+          </EclMenuItem>
+          <EclMenuItem has-children trigger-aria-label="Access item's children" link="/example.html">
             Item 3 with a very long label
-            <ecl-menu-item child link="/example.html" slot="sublist"> Item 3.1 </ecl-menu-item>
-            <ecl-menu-item child link="/example.html" slot="sublist"> Item 3.2 </ecl-menu-item>
-            <ecl-menu-item child link="/example.html" slot="sublist"> Item 3.3 </ecl-menu-item>
-          </ecl-menu-item>
-          <ecl-menu-item link="/example.html"> Item 4 label </ecl-menu-item>
-          <ecl-menu-item link="/example.html" has-children trigger-aria-label="Access item's children">
+            <EclMenuItem child link="/example.html" slot="sublist"> Item 3.1 </EclMenuItem>
+            <EclMenuItem child link="/example.html" slot="sublist"> Item 3.2 </EclMenuItem>
+            <EclMenuItem child link="/example.html" slot="sublist"> Item 3.3 </EclMenuItem>
+          </EclMenuItem>
+          <EclMenuItem link="/example.html"> Item 4 label </EclMenuItem>
+          <EclMenuItem link="/example.html" has-children trigger-aria-label="Access item's children">
             Item 5 label
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 5.1 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 5.2 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 5.3 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 5.4 </ecl-menu-item>
-          </ecl-menu-item>
-          <ecl-menu-item link="/example.html" has-children trigger-aria-label="Access item's children">
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 5.1 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 5.2 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 5.3 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 5.4 </EclMenuItem>
+          </EclMenuItem>
+          <EclMenuItem link="/example.html" has-children trigger-aria-label="Access item's children">
             Item 6
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.1 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.2 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.3 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.4 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.5 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.6 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.7 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.8 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.9 with a very long label </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.10 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.11 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.12 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.13 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.14 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.15 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.16 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.17 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 6.18 </ecl-menu-item>
-          </ecl-menu-item>
-          <ecl-menu-item has-children link="/example.html" trigger-aria-label="Access item's children">
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.1 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.2 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.3 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.4 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.5 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.6 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.7 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.8 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.9 with a very long label </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.10 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.11 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.12 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.13 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.14 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.15 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.16 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.17 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.18 </EclMenuItem>
+          </EclMenuItem>
+          <EclMenuItem has-children link="/example.html" trigger-aria-label="Access item's children">
             Item 7 label
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 7.1 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 7.2 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 7.3 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 7.4 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 7.5 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 7.6 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 7.7 </ecl-menu-item>
-            <ecl-menu-item link="/example.html" child slot="sublist"> Item 7.8 </ecl-menu-item>
-          </ecl-menu-item>
-        </ecl-menu>
-      </ecl-site-header>
-      <ecl-page-header variant="core" header-title="Page title" meta="Meta info | DD Month YYYY" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
-        <ecl-breadcrumb slot="breadcrumb" ecl-script>
-          <ecl-breadcrumb-item path="/example.html"> Home </ecl-breadcrumb-item>
-          <ecl-breadcrumb-item ellipsis button-aria-label="Click to expand"> </ecl-breadcrumb-item>
-          <ecl-breadcrumb-item path="/example.html"> About the European Commission </ecl-breadcrumb-item>
-          <ecl-breadcrumb-item path="/example.html"> Organisational structure </ecl-breadcrumb-item>
-          <ecl-breadcrumb-item path="/example.html"> How the Commission is organised </ecl-breadcrumb-item>
-          <ecl-breadcrumb-item current-page> News </ecl-breadcrumb-item>
-        </ecl-breadcrumb>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 7.1 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 7.2 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 7.3 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 7.4 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 7.5 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 7.6 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 7.7 </EclMenuItem>
+            <EclMenuItem link="/example.html" child slot="sublist"> Item 7.8 </EclMenuItem>
+          </EclMenuItem>
+        </EclMenu>
+      </EclSiteHeader>
+      <EclPageHeader header-title="Page title" meta="Meta info | DD Month YYYY" image="https://inno-.s3.amazonaws.com/media/examples/example-image2.jpg">
+        <EclBreadcrumb slot="breadcrumb" ecl-script>
+          <EclBreadcrumbItem path="/example.html"> Home </EclBreadcrumbItem>
+          <EclBreadcrumbItem ellipsis button-aria-label="Click to expand"> </EclBreadcrumbItem>
+          <EclBreadcrumbItem path="/example.html"> About the European Commission </EclBreadcrumbItem>
+          <EclBreadcrumbItem path="/example.html"> Organisational structure </EclBreadcrumbItem>
+          <EclBreadcrumbItem path="/example.html"> How the Commission is organised </EclBreadcrumbItem>
+          <EclBreadcrumbItem current-page> News </EclBreadcrumbItem>
+        </EclBreadcrumb>
         Lorem ipsum dolor sit amet, <a className="ecl-link" href="/example.html">consectetur adipiscing elit</a>. Quisque nec ullamcorper mi. Morbi interdum fermentum tempus. Nam nec rhoncus
         risus, <a className="ecl-link" href="/example.html">eget dictum elit</a>. Vestibulum gravida tincidunt venenatis.
-      </ecl-page-header>
-      <ecl-spacing direction="t" value="2xl" outer></ecl-spacing>
-      <ecl-grid container>
-        <ecl-grid row>
-          <ecl-grid columns="3" breakpoint="l" styleClass="ecl-sidebar">
-            <ecl-inpage-navigation inpage-title="Page contents" inpage-id="inpage-id" ecl-script with-utils>
-              <ecl-inpage-navigation-item path="#inline-nav-1">Heading 1</ecl-inpage-navigation-item>
-              <ecl-inpage-navigation-item path="#inline-nav-2">Heading 2 with a long title going on several lines</ecl-inpage-navigation-item>
-              <ecl-inpage-navigation-item path="#inline-nav-3">Heading 3</ecl-inpage-navigation-item>
-              <ecl-inpage-navigation-item path="#inline-nav-4">Heading 4</ecl-inpage-navigation-item>
-            </ecl-inpage-navigation>
-          </ecl-grid>
-          <ecl-grid columns="9" breakpoint="l" styleClass="ecl-main">
-            <ecl-spacing direction="t" outer value="xl"></ecl-spacing>
-            <ecl-text tag="div" level="1" id="inline-nav-1">Featured</ecl-text>
-            <ecl-spacing direction="b" outer value="s"></ecl-spacing>
-            <ecl-divider></ecl-divider>
-            <ecl-spacing value="l" direction="t"></ecl-spacing>
-            <ecl-featured-item
+      </EclPageHeader>
+      <EclSpacing direction="t" value="2xl" outer></EclSpacing>
+      <EclGrid container>
+        <EclGrid row>
+          <EclGrid columns={3} breakpoint="l" styleClass="ecl-sidebar">
+            <EclInpageNavigation inpage-title="Page contents" inpage-id="inpage-id" ecl-script with-utils>
+              <EclInpageNavigationItem path="#inline-nav-1">Heading 1</EclInpageNavigationItem>
+              <EclInpageNavigationItem path="#inline-nav-2">Heading 2 with a long title going on several lines</EclInpageNavigationItem>
+              <EclInpageNavigationItem path="#inline-nav-3">Heading 3</EclInpageNavigationItem>
+              <EclInpageNavigationItem path="#inline-nav-4">Heading 4</EclInpageNavigationItem>
+            </EclInpageNavigation>
+          </EclGrid>
+          <EclGrid columns={9} breakpoint="l" styleClass="ecl-main">
+            <EclSpacing direction="t" outer value="xl"></EclSpacing>
+            <EclText tag="div" level={1} id="inline-nav-1">Featured</EclText>
+            <EclSpacing direction="b" outer value="s"></EclSpacing>
+            <EclDivider></EclDivider>
+            <EclSpacing value="l" direction="t"></EclSpacing>
+            <EclFeaturedItem
               variant="extended"
               item-title="Featured item"
-              image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+              image="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg"
               media-caption="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
               exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </ecl-featured-item>
-            <ecl-spacing value="l" direction="b"></ecl-spacing>
-            <ecl-text tag="div" level="1" id="inline-nav-2">News</ecl-text>
-            <ecl-spacing direction="b" outer value="s"></ecl-spacing>
-            <ecl-divider></ecl-divider>
-            <ecl-spacing value="l" direction="t"></ecl-spacing>
-            <ecl-list-illustration column="3">
-              <ecl-list-illustration-item image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 1">
+            </EclFeaturedItem>
+            <EclSpacing value="l" direction="b"></EclSpacing>
+            <EclText tag="div" level={1} id="inline-nav-2">News</EclText>
+            <EclSpacing direction="b" outer value="s"></EclSpacing>
+            <EclDivider></EclDivider>
+            <EclSpacing value="l" direction="t"></EclSpacing>
+            <EclListIllustration column={3}>
+              <EclListIllustrationItem image="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut
                 felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
-              </ecl-list-illustration-item>
-              <ecl-list-illustration-item image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 2">
+              </EclListIllustrationItem>
+              <EclListIllustrationItem image="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut
                 felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
-              </ecl-list-illustration-item>
-              <ecl-list-illustration-item image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 3">
+              </EclListIllustrationItem>
+              <EclListIllustrationItem image="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut
                 felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
-              </ecl-list-illustration-item>
-            </ecl-list-illustration>
-            <ecl-spacing direction="t" value="xl" outer></ecl-spacing>
-            <ecl-text tag="div" level="2" id="inline-nav-3">Gallery</ecl-text>
-            <ecl-spacing direction="b" outer value="s"></ecl-spacing>
-            <ecl-divider></ecl-divider>
-            <ecl-spacing value="l" direction="t"></ecl-spacing>
-            <ecl-gallery
+              </EclListIllustrationItem>
+            </EclListIllustration>
+            <EclSpacing direction="t" value="xl" outer></EclSpacing>
+            <EclText tag="div" level={2} id="inline-nav-3">Gallery</EclText>
+            <EclSpacing direction="b" outer value="s"></EclSpacing>
+            <EclDivider></EclDivider>
+            <EclSpacing value="l" direction="t"></EclSpacing>
+            <EclGallery
               ecl-script
               el-id="ecl-gallery-demo"
               counter-label="Media files in this gallery"
@@ -206,160 +206,160 @@ function App() {
               aria-label="Gallery overlay"
               visible-items="9"
             >
-              <ecl-gallery-item
+              <EclGalleryItem
                 el-id="ecl-gallery-demo-item-1"
                 meta="Copyright, Author, Licence for image 1"
                 media-share-path="/example.html"
-                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg"
                 image-alt="Image 1"
                 thumb-zoom
-                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"
+                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image3.jpg"
               >
                 The EU in brief, institutions and bodies, countries, symbols, history, facts and figures
-              </ecl-gallery-item>
-              <ecl-gallery-item
+              </EclGalleryItem>
+              <EclGalleryItem
                 type="video"
                 thumb-zoom
                 meta="Copyright, Author, Licence for embedded media"
-                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-external-video.jpg"
+                media-href="https://inno-.s3.amazonaws.com/media/examples/example-external-video.jpg"
                 image-alt="New digital strategy"
                 media-iframe-href="https://www.youtube.com/embed/fgi-GSCB6ho"
-                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg"
+                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image4.jpg"
               >
                 New digital strategy
-              </ecl-gallery-item>
-              <ecl-gallery-item
+              </EclGalleryItem>
+              <EclGalleryItem
                 meta="Copyright, Author, Licence for image 2"
                 thumb-zoom
                 media-share-path="/example.html"
-                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
-                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image2.jpg"
+                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg"
                 image-alt="Image 2"
               >
                 Information on agriculture, business, culture, health, etc.
-              </ecl-gallery-item>
-              <ecl-gallery-item
+              </EclGalleryItem>
+              <EclGalleryItem
                 meta="Copyright, Author, Licence for image 3"
                 thumb-zoom
                 media-share-path="/example.html"
-                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"
-                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg"
+                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image3.jpg"
+                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image7.jpg"
                 image-alt="Image 3"
               >
                 Living, working, travelling in the EU
-              </ecl-gallery-item>
-              <ecl-gallery-item
+              </EclGalleryItem>
+              <EclGalleryItem
                 meta="Copyright, Author, Licence for image 4"
                 thumb-zoom
                 media-share-path="/example.html"
-                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg"
+                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image4.jpg"
                 image-alt="Image 3"
-                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg"
+                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image6.jpg"
               >
                 Information on taxes, customs, importing and exporting goods, financial support for businesses
-              </ecl-gallery-item>
-              <ecl-gallery-item
+              </EclGalleryItem>
+              <EclGalleryItem
                 media-share-path="/example.html"
                 thumb-zoom
                 meta="Copyright, Author, Licence for video"
                 type="html-video"
-                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg"
+                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image8.jpg"
               >
                 EU law
-                <video slot="video" className="ecl-gallery__image sc-ecl-gallery-ec" poster="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg">
-                  <source src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4" type="video/mp4" />
-                  <source src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm" type="video/webm" />
+                <video slot="video" className="ecl-gallery__image sc-ecl-gallery-ec" poster="https://inno-.s3.amazonaws.com/media/examples/example-image5.jpg">
+                  <source src="https://inno-.s3.amazonaws.com/media/videos/big_buck_bunny.mp4" type="video/mp4" />
+                  <source src="https://inno-.s3.amazonaws.com/media/videos/big_buck_bunny.webm" type="video/webm" />
                   <track kind="captions" label="English" src="/captions/bunny-en.vtt" srcLang="en" />
                   <track kind="captions" label="français" src="/captions/bunny-fr.vtt" srcLang="fr" />
                 </video>
-              </ecl-gallery-item>
-              <ecl-gallery-item
+              </EclGalleryItem>
+              <EclGalleryItem
                 meta="Copyright, Author, Licence for image 6"
                 thumb-zoom
                 media-share-path="/example.html"
-                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg"
+                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image6.jpg"
                 image-alt="Image 6"
-                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg"
+                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image5.jpg"
               >
                 Find official documents, publications, statistics, open data and more resources
-              </ecl-gallery-item>
-              <ecl-gallery-item
+              </EclGalleryItem>
+              <EclGalleryItem
                 thumb-zoom
                 meta="Copyright, Author, Licence for image 7"
                 media-share-path="/example.html"
-                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg"
+                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image7.jpg"
                 image-alt="Image 7"
-                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
+                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image2.jpg"
               >
                 Teaching material about the EU, including books and maps
-              </ecl-gallery-item>
-              <ecl-gallery-item
+              </EclGalleryItem>
+              <EclGalleryItem
                 meta="Copyright, Author, Licence for image 8"
                 thumb-zoom
                 media-share-path="/example.html"
                 media-iframe-href="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&lg=EN"
-                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg"
+                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image8.jpg"
                 image-alt="Image 8"
-                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg"
+                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image9.jpg"
               >
                 Teaching material about the EU, including books and maps
-              </ecl-gallery-item>
-              <ecl-gallery-item
+              </EclGalleryItem>
+              <EclGalleryItem
                 meta="Copyright, Author, Licence for image 9"
                 thumb-zoom
                 media-share-path="/example.html"
-                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg"
+                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image9.jpg"
                 image-alt="Image 9"
-                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
+                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image2.jpg"
               >
                 About the EU
-              </ecl-gallery-item>
-              <ecl-gallery-item
+              </EclGalleryItem>
+              <EclGalleryItem
                 meta="Copyright, Author, Licence for image 10"
                 thumb-zoom
                 media-share-path="/example.html"
-                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg"
+                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image10.jpg"
                 image-alt="Image 10"
-                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image11.jpg"
+                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image11.jpg"
               >
                 EU by topic
-              </ecl-gallery-item>
-            </ecl-gallery>
-            <ecl-spacing outer vertical value="l"></ecl-spacing>
-            <ecl-spacing direction="t" value="xl" outer></ecl-spacing>
-            <ecl-text tag="div" level="1" id="inline-nav-4">Facts and figures</ecl-text>
-            <ecl-spacing direction="b" outer value="s"></ecl-spacing>
-            <ecl-divider></ecl-divider>
-            <ecl-spacing value="l" direction="t"></ecl-spacing>
-            <ecl-fact-figures columns="3" id="inline-nav-3">
-              <ecl-fact-figures-item item-title="Lorem ipsum" value="00.0 million" icon="infographic">
+              </EclGalleryItem>
+            </EclGallery>
+            <EclSpacing outer vertical value="l"></EclSpacing>
+            <EclSpacing direction="t" value="xl" outer></EclSpacing>
+            <EclText tag="div" level={1} id="inline-nav-4">Facts and figures</EclText>
+            <EclSpacing direction="b" outer value="s"></EclSpacing>
+            <EclDivider></EclDivider>
+            <EclSpacing value="l" direction="t"></EclSpacing>
+            <EclFactFigures columns={3} id="inline-nav-3">
+              <EclFactFiguresItem item-title="Lorem ipsum" value="00.0 million" icon="infographic">
                 Nunc condimentum sapien ut nibh finibus suscipit vitae at justo. Morbi quis odio faucibus, commodo tortor id, elementum libero.
-              </ecl-fact-figures-item>
+              </EclFactFiguresItem>
 
-              <ecl-fact-figures-item item-title="Sed hendrerit" value="00.0 million" icon="spreadsheet"> Turpis varius congue venenatis, erat dui feugiat felis. </ecl-fact-figures-item>
+              <EclFactFiguresItem item-title="Sed hendrerit" value="00.0 million" icon="spreadsheet"> Turpis varius congue venenatis, erat dui feugiat felis. </EclFactFiguresItem>
 
-              <ecl-fact-figures-item item-title="Donec suscipit interdum augue, ac dapibus eros finibus a." value="00.0 million" icon="growth">
+              <EclFactFiguresItem item-title="Donec suscipit interdum augue, ac dapibus eros finibus a." value="00.0 million" icon="growth">
                 Cras vestibulum efficitur mi, quis porta tellus rutrum ut. Quisque at pulvinar sem.
-              </ecl-fact-figures-item>
+              </EclFactFiguresItem>
 
-              <ecl-fact-figures-item item-title="Aenean dapibus" value="00.0 million" icon="digital">
+              <EclFactFiguresItem item-title="Aenean dapibus" value="00.0 million" icon="digital">
                 Aliquam lacinia diam eu sem malesuada, in interdum ante bibendum.
-              </ecl-fact-figures-item>
+              </EclFactFiguresItem>
 
-              <ecl-fact-figures-item item-title="Aliquam faucibus nulla eget eleifend" value="00.0 million" icon="regulation">
+              <EclFactFiguresItem item-title="Aliquam faucibus nulla eget eleifend" value="00.0 million" icon="regulation">
                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec lectus tortor.
-              </ecl-fact-figures-item>
+              </EclFactFiguresItem>
 
-              <ecl-fact-figures-item item-title="Aliquam faucibus nulla eget eleifend" value="00.0 million" icon="image">
+              <EclFactFiguresItem item-title="Aliquam faucibus nulla eget eleifend" value="00.0 million" icon="image">
                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec lectus tortor.
-              </ecl-fact-figures-item>
-            </ecl-fact-figures>
-          </ecl-grid>
-        </ecl-grid>
-      </ecl-grid>
-      <ecl-spacing direction="b" outer value="3xl"></ecl-spacing>
+              </EclFactFiguresItem>
+            </EclFactFigures>
+          </EclGrid>
+        </EclGrid>
+      </EclGrid>
+      <EclSpacing direction="b" outer value="3xl"></EclSpacing>
     {currentTheme === 'eu' ? 
-      <ecl-footer-eu
+      <EclFooterEu
         logo-alt="European Union"
         logo-title="European Union"
         logo-lang-code="en"
@@ -368,41 +368,41 @@ function App() {
         variant="harmonised"
         logo-link="/example.html"
       >
-        <ecl-text level="4" tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-middle"> Contact site name </ecl-text>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-top-middle"> Link </ecl-footer-item>
-        <ecl-text style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-middle-bottom" level="4" tag="div"> Follow us </ecl-text>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-top-middle-bottom"> Social 1 </ecl-footer-item>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-top-middle-bottom"> Social 2 </ecl-footer-item>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-top-middle-bottom"> Social 3 </ecl-footer-item>
-        <ecl-text level="4" tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-right"> Optional links </ecl-text>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-top-right"> Link 1 </ecl-footer-item>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-top-right"> Link 2 </ecl-footer-item>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-top-right"> Link 3 </ecl-footer-item>
-        <ecl-text tag="div" level="4" slot="ecl-footer-list-main" style-class="ecl-site-footer__title ecl-site-footer__title--separator"> Contact the EU </ecl-text>
-        <ecl-footer-item link="tel:0080067891011" slot="ecl-footer-list-main"> Call us 00 800 6 7 8 9 10 11 </ecl-footer-item>
-        <ecl-footer-item link="https://european-union.europa.eu/contact-eu/call-us_en" slot="ecl-footer-list-main"> Use other telephone options </ecl-footer-item>
-        <ecl-footer-item link="https://european-union.europa.eu/contact-eu/write-us_en" slot="ecl-footer-list-main"> Write us via our contact form </ecl-footer-item>
-        <ecl-footer-item link="https://european-union.europa.eu/contact-eu/meet-us_en" slot="ecl-footer-list-main">
+        <EclText level={4} tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-middle"> Contact site name </EclText>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-top-middle"> Link </EclFooterItem>
+        <EclText style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-middle-bottom" level={4} tag="div"> Follow us </EclText>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-top-middle-bottom"> Social 1 </EclFooterItem>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-top-middle-bottom"> Social 2 </EclFooterItem>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-top-middle-bottom"> Social 3 </EclFooterItem>
+        <EclText level={4} tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-right"> Optional links </EclText>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-top-right"> Link 1 </EclFooterItem>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-top-right"> Link 2 </EclFooterItem>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-top-right"> Link 3 </EclFooterItem>
+        <EclText tag="div" level={4} slot="ecl-footer-list-main" style-class="ecl-site-footer__title ecl-site-footer__title--separator"> Contact the EU </EclText>
+        <EclFooterItem link="tel:0080067891011" slot="ecl-footer-list-main"> Call us 00 800 6 7 8 9 10 11 </EclFooterItem>
+        <EclFooterItem link="https://european-union.europa.eu/contact-eu/call-us_en" slot="ecl-footer-list-main"> Use other telephone options </EclFooterItem>
+        <EclFooterItem link="https://european-union.europa.eu/contact-eu/write-us_en" slot="ecl-footer-list-main"> Write us via our contact form </EclFooterItem>
+        <EclFooterItem link="https://european-union.europa.eu/contact-eu/meet-us_en" slot="ecl-footer-list-main">
           <span slot="ecl-footer-item-desc">Meet us at one of the</span>
           EU centres
-        </ecl-footer-item>
-        <ecl-text tag="div" level="4" slot="ecl-footer-list-bottom-left" style-class="ecl-site-footer__title ecl-site-footer__title--separator"> Social Media </ecl-text>
-        <ecl-footer-item link="https://european-union.europa.eu/contact-eu/social-media-channels_en" slot="ecl-footer-list-bottom-left">
+        </EclFooterItem>
+        <EclText tag="div" level={4} slot="ecl-footer-list-bottom-left" style-class="ecl-site-footer__title ecl-site-footer__title--separator"> Social Media </EclText>
+        <EclFooterItem link="https://european-union.europa.eu/contact-eu/social-media-channels_en" slot="ecl-footer-list-bottom-left">
           Search for EU social media channels
-        </ecl-footer-item>
-        <ecl-text level="4" tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-right-top"> Legal </ecl-text>
-        <ecl-footer-item link="https://european-union.europa.eu/languages-our-websites_en" slot="ecl-footer-list-right-top"> Languages on our websites </ecl-footer-item>
-        <ecl-footer-item link="https://european-union.europa.eu/privacy-policy_en" slot="ecl-footer-list-right-top"> Privacy policy </ecl-footer-item>
-        <ecl-footer-item link="https://european-union.europa.eu/legal-notice_en" slot="ecl-footer-list-right-top"> Legal notice </ecl-footer-item>
-        <ecl-footer-item link="https://european-union.europa.eu/cookies_en" slot="ecl-footer-list-right-top"> Cookies </ecl-footer-item>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-info"> Accessibility statement </ecl-footer-item>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-logo-info"> Discover more on europa.eu </ecl-footer-item>
-        <ecl-footer-item link="https://european-union.europa.eu/web-accessibility-policy_en" slot="ecl-footer-list-right-top"> Accessibility </ecl-footer-item>
-        <ecl-text level="4" tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-right"> EU institutions and bodies </ecl-text>
-        <ecl-footer-item link="http://www.europarl.europa.eu/portal/" slot="ecl-footer-list-right"> Search all EU institutions and bodies </ecl-footer-item>
-      </ecl-footer-eu>
+        </EclFooterItem>
+        <EclText level={4} tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-right-top"> Legal </EclText>
+        <EclFooterItem link="https://european-union.europa.eu/languages-our-websites_en" slot="ecl-footer-list-right-top"> Languages on our websites </EclFooterItem>
+        <EclFooterItem link="https://european-union.europa.eu/privacy-policy_en" slot="ecl-footer-list-right-top"> Privacy policy </EclFooterItem>
+        <EclFooterItem link="https://european-union.europa.eu/legal-notice_en" slot="ecl-footer-list-right-top"> Legal notice </EclFooterItem>
+        <EclFooterItem link="https://european-union.europa.eu/cookies_en" slot="ecl-footer-list-right-top"> Cookies </EclFooterItem>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-info"> Accessibility statement </EclFooterItem>
+        <EclFooterItem link="/example.html" slot="ecl-footer-logo-info"> Discover more on europa.eu </EclFooterItem>
+        <EclFooterItem link="https://european-union.europa.eu/web-accessibility-policy_en" slot="ecl-footer-list-right-top"> Accessibility </EclFooterItem>
+        <EclText level={4} tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-right"> EU institutions and bodies </EclText>
+        <EclFooterItem link="http://www.europarl.europa.eu/portal/" slot="ecl-footer-list-right"> Search all EU institutions and bodies </EclFooterItem>
+      </EclFooterEu>
     :
-      <ecl-footer-ec
+      <EclFooterEc
         logo-alt="European Commission"
         logo-title="European Commission"
         logo-lang-code="en"
@@ -411,47 +411,47 @@ function App() {
         description="This site is managed by:"
         logo-link="/example.html"
       >
-        <ecl-social-media-follow variant="horizontal" position="left" style-class="ecl-site-footer__social-media sc-ecl-footer-ec-ec" slot="ecl-footer-social-follow-info">
-          <ecl-social-media-follow-item icon="x" color="inverted" hide-label share-path="http://example.html"> X </ecl-social-media-follow-item>
-          <ecl-social-media-follow-item icon="instagram" color="inverted" hide-label share-path="http://instagram.com"> Instagram </ecl-social-media-follow-item>
-          <ecl-social-media-follow-item icon="linkedin" color="inverted" hide-label share-path="http://linkedin.com"> Linkedin </ecl-social-media-follow-item>
-          <ecl-social-media-follow-item icon="telegram" color="inverted" hide-label share-path="http://telegram.com"> Telegram </ecl-social-media-follow-item>
-          <ecl-social-media-follow-item icon="chain" color="inverted" hide-label share-path="http://example.html"> Other </ecl-social-media-follow-item>
-        </ecl-social-media-follow>
-        <ecl-text level="5" is-bold tag="div" slot="ecl-footer-list-contact" style-class="ecl-site-footer__title"> Contact us </ecl-text>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-contact"> Contact information of the DG </ecl-footer-item>
-        <ecl-text level="5" is-bold tag="div" slot="ecl-footer-list-about" style-class="ecl-site-footer__title"> About us </ecl-text>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-about"> Information about the DG </ecl-footer-item>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-about"> Information about the DG </ecl-footer-item>
-        <ecl-text level="5" is-bold tag="div" slot="ecl-footer-list-more" style-class="ecl-site-footer__title"> More information on </ecl-text>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-more"> Class name 1 </ecl-footer-item>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-more"> Class name 2 </ecl-footer-item>
-        <ecl-text level="5" tag="div" is-bold slot="ecl-footer-list-related" style-class="ecl-site-footer__title"> Related links </ecl-text>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-related"> Related link 1 </ecl-footer-item>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-related"> Related link 2 </ecl-footer-item>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-related"> Related link 3 </ecl-footer-item>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-related"> Related link 4 </ecl-footer-item>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-related"> Related link 5 </ecl-footer-item>
-        <ecl-social-media-follow
+        <EclSocialMediaFollow variant="horizontal" position="left" style-class="ecl-site-footer__social-media sc-ecl-footer-ec" slot="ecl-footer-social-follow-info">
+          <EclSocialMediaFollowItem icon="x" color="inverted" hide-label share-path="http://example.html"> X </EclSocialMediaFollowItem>
+          <EclSocialMediaFollowItem icon="instagram" color="inverted" hide-label share-path="http://instagram.com"> Instagram </EclSocialMediaFollowItem>
+          <EclSocialMediaFollowItem icon="linkedin" color="inverted" hide-label share-path="http://linkedin.com"> Linkedin </EclSocialMediaFollowItem>
+          <EclSocialMediaFollowItem icon="telegram" color="inverted" hide-label share-path="http://telegram.com"> Telegram </EclSocialMediaFollowItem>
+          <EclSocialMediaFollowItem icon="chain" color="inverted" hide-label share-path="http://example.html"> Other </EclSocialMediaFollowItem>
+        </EclSocialMediaFollow>
+        <EclText level={5} is-bold tag="div" slot="ecl-footer-list-contact" style-class="ecl-site-footer__title"> Contact us </EclText>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-contact"> Contact information of the DG </EclFooterItem>
+        <EclText level={5} is-bold tag="div" slot="ecl-footer-list-about" style-class="ecl-site-footer__title"> About us </EclText>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-about"> Information about the DG </EclFooterItem>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-about"> Information about the DG </EclFooterItem>
+        <EclText level={5} is-bold tag="div" slot="ecl-footer-list-more" style-class="ecl-site-footer__title"> More information on </EclText>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-more"> Class name 1 </EclFooterItem>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-more"> Class name 2 </EclFooterItem>
+        <EclText level={5} tag="div" is-bold slot="ecl-footer-list-related" style-class="ecl-site-footer__title"> Related links </EclText>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-related"> Related link 1 </EclFooterItem>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-related"> Related link 2 </EclFooterItem>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-related"> Related link 3 </EclFooterItem>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-related"> Related link 4 </EclFooterItem>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-related"> Related link 5 </EclFooterItem>
+        <EclSocialMediaFollow
           variant="horizontal"
           description="Follow the European Commission"
           position="left"
-          style-class="ecl-site-footer__social-media sc-ecl-footer-ec-ec"
+          style-class="ecl-site-footer__social-media sc-ecl-footer-ec"
           inline-title="Follow us"
           slot="ecl-footer-social-follow"
         >
-          <ecl-social-media-follow-item icon="x" color="inverted" hide-label share-path="http://example.html"> X </ecl-social-media-follow-item>
-          <ecl-social-media-follow-item icon="instagram" color="inverted" hide-label share-path="http://instagram.com"> Instagram </ecl-social-media-follow-item>
-          <ecl-social-media-follow-item icon="linkedin" color="inverted" hide-label share-path="http://linkedin.com"> Linkedin </ecl-social-media-follow-item>
-          <ecl-social-media-follow-item icon="telegram" color="inverted" hide-label share-path="http://telegram.com"> Telegram </ecl-social-media-follow-item>
-          <ecl-social-media-follow-item icon="chain" color="inverted" hide-label share-path="http://example.html"> Other </ecl-social-media-follow-item>
-        </ecl-social-media-follow>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-bottom-left"> Languages on our websites </ecl-footer-item>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-bottom-left"> Cookies </ecl-footer-item>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-bottom-left"> Privacy policy </ecl-footer-item>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-bottom-left"> Legal notice </ecl-footer-item>
-        <ecl-footer-item link="/example.html" slot="ecl-footer-list-bottom-left"> Accessibility </ecl-footer-item>
-      </ecl-footer-ec>
+          <EclSocialMediaFollowItem icon="x" color="inverted" hide-label share-path="http://example.html"> X </EclSocialMediaFollowItem>
+          <EclSocialMediaFollowItem icon="instagram" color="inverted" hide-label share-path="http://instagram.com"> Instagram </EclSocialMediaFollowItem>
+          <EclSocialMediaFollowItem icon="linkedin" color="inverted" hide-label share-path="http://linkedin.com"> Linkedin </EclSocialMediaFollowItem>
+          <EclSocialMediaFollowItem icon="telegram" color="inverted" hide-label share-path="http://telegram.com"> Telegram </EclSocialMediaFollowItem>
+          <EclSocialMediaFollowItem icon="chain" color="inverted" hide-label share-path="http://example.html"> Other </EclSocialMediaFollowItem>
+        </EclSocialMediaFollow>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-bottom-left"> Languages on our websites </EclFooterItem>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-bottom-left"> Cookies </EclFooterItem>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-bottom-left"> Privacy policy </EclFooterItem>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-bottom-left"> Legal notice </EclFooterItem>
+        <EclFooterItem link="/example.html" slot="ecl-footer-list-bottom-left"> Accessibility </EclFooterItem>
+      </EclFooterEc>
     }
     </div>
   )
