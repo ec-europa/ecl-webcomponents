@@ -22,7 +22,7 @@
     "@ecl/theme-ec": "5.0.0-alpha.15",
     "@ecl/theme-eu": "5.0.0-alpha.15",
     "@ecl/grid": "5.0.0-alpha.15",
-    "cross-env": "7.0.3"
+    "cross-env": "10.1.0"
   },
   "dependencies": {
     "@ecl/web-components-icon": "0.15.1",

@@ -23,8 +23,8 @@
     "@ecl/utility-screen-reader": "5.0.0-alpha.15",
     "@ecl/mixins-typography": "5.0.0-alpha.15",
     "@ecl/grid": "5.0.0-alpha.15",
-    "cross-env": "7.0.3",
-    "rimraf": "5.0.5"
+    "cross-env": "10.1.0",
+    "rimraf": "6.0.1"
   },
   "repository": {
     "type": "git",

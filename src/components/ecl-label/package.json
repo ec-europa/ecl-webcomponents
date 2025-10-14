@@ -17,7 +17,7 @@
     "@ecl/theme-eu": "5.0.0-alpha.15",
     "@ecl/builder": "5.0.0-alpha.15",
     "@ecl/label": "5.0.0-alpha.15",
-    "cross-env": "7.0.3"
+    "cross-env": "10.1.0"
   },
   "repository": {
     "type": "git",
