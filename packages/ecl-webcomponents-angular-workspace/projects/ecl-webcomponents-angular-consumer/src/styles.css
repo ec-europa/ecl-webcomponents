@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+	margin: 0;
+}
+
+.ecl-theme-switcher {
+	list-style: none;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	right: 0;
+	top: 0;
+	z-index: 53;
+	margin: -2px 0 0;
+}
+
+.ecl-theme-switcher li {
+	margin-inline-end: 0.5rem;
+}
+
+.ecl-theme-switcher li .ecl-button--cta {
+	font-size: 0.75rem;
+	font-weight: bold;
+	min-height: auto;
+	min-width: auto;
+	padding: 1px 6px;
+}

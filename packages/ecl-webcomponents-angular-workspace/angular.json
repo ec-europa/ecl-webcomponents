@@ -48,7 +48,15 @@
             "main": "projects/ecl-webcomponents-angular-consumer/src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "projects/ecl-webcomponents-angular-consumer/tsconfig.app.json",
-            "assets": ["projects/ecl-webcomponents-angular-consumer/src/favicon.ico", "projects/ecl-webcomponents-angular-consumer/src/assets"],
+            "assets": [
+              "projects/ecl-webcomponents-angular-consumer/src/favicon.ico",
+              "projects/ecl-webcomponents-angular-consumer/src/assets",
+              {
+                "glob": "**/*",
+                "input": "../../static/build",
+                "output": "build"
+              }
+            ],
             "styles": ["projects/ecl-webcomponents-angular-consumer/src/styles.css"],
             "scripts": []
           },
@@ -87,7 +95,16 @@
             },
             "development": {
               "browserTarget": "ecl-webcomponents-angular-consumer:build:development"
-            }
+            },
+            "assets": [
+              "projects/ecl-webcomponents-angular-consumer/src/favicon.ico",
+              "projects/ecl-webcomponents-angular-consumer/src/assets",
+              {
+                "glob": "**/*",
+                "input": "../../static/build",
+                "output": "build"
+              }
+            ]
           },
           "defaultConfiguration": "development"
         },

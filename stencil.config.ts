@@ -10,10 +10,14 @@ export const config: Config = {
       type: 'dist',
       esmLoaderPath: '../loader',
       dir: 'packages/ecl-webcomponents/dist',
+      copy: [
+        { src: '../static/build', dest: 'build' },
+      ],
     },
     {
       type: 'dist-custom-elements',
       dir: 'packages/ecl-webcomponents/dist/custom-elements',
+      externalRuntime: false,
     },
     {
       type: 'docs-readme',

@@ -3,7 +3,7 @@ const pkg = require('./package.json');
 
 const nodeModules = path.resolve(__dirname, './node_modules');
 
-const outputFolder = '../../../static/';
+const outputFolder = '../../../static/build/styles';
 
 // SCSS includePaths
 const includePaths = [nodeModules];

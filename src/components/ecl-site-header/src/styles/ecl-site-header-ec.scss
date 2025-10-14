@@ -65,9 +65,9 @@
 }
 
 .ecl-search-form__button {
-  border-color: var(--cm-on-surface-dark);
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-inline-start: none;
+  border-color: var(--cm-on-surface-brand) !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-inline-start: none !important;
   border-width: 1px;
 }

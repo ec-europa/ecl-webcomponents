@@ -33,20 +33,28 @@ function injectThemeCss(theme: string) {
   // Inject new theme CSS
   const themeLink = document.createElement('link');
   themeLink.rel = 'stylesheet';
-  themeLink.href = `/custom-properties-${theme}.css`;
-  themeLink.setAttribute('data-ecl-theme-css', ''); // marker for cleanup
+  themeLink.href = `/build/styles/custom-properties-${theme}.css`;
+  themeLink.setAttribute('data-ecl-theme-css', ''); 
   document.head.appendChild(themeLink);
 
   if (theme === 'ec') {
     const ecModeLink = document.createElement('link');
     ecModeLink.rel = 'stylesheet';
-    ecModeLink.href = `/ecl-ec-color-modes.css`;
+    ecModeLink.href = `/build/styles/ecl-ec-color-modes.css`;
     ecModeLink.setAttribute('data-ecl-theme-css', '');
     document.head.appendChild(ecModeLink);
   }
 
   window.__eclCurrentTheme = theme;
 }
+
+function switchTheme(theme: string) {
+  localStorage.setItem('ecl-theme', theme);
+  document.documentElement.setAttribute('data-ecl-theme', theme);
+  window.location.reload();
+}
+
+(window as any).switchTheme = switchTheme;
 
 export default () => {
   const themeResolver = (elm: HTMLElement): string => {
