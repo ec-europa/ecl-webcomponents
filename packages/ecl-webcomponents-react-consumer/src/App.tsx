@@ -151,7 +151,7 @@ function App() {
           </EclGrid>
           <EclGrid columns={9} breakpoint="l" styleClass="ecl-main">
             <EclSpacing direction="t" outer value="xl"></EclSpacing>
-            <EclText tag="div" level={1} id="inline-nav-1">Featured</EclText>
+            <EclText tag="h2" type="heading" level={2} id="inline-nav-1">Featured</EclText>
             <EclSpacing direction="b" outer value="s"></EclSpacing>
             <EclDivider></EclDivider>
             <EclSpacing value="l" direction="t"></EclSpacing>
@@ -165,7 +165,7 @@ function App() {
               exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </EclFeaturedItem>
             <EclSpacing value="l" direction="b"></EclSpacing>
-            <EclText tag="div" level={1} id="inline-nav-2">News</EclText>
+            <EclText tag="h2" type="heading" level={2} id="inline-nav-2">News</EclText>
             <EclSpacing direction="b" outer value="s"></EclSpacing>
             <EclDivider></EclDivider>
             <EclSpacing value="l" direction="t"></EclSpacing>
@@ -184,7 +184,7 @@ function App() {
               </EclListIllustrationItem>
             </EclListIllustration>
             <EclSpacing direction="t" value="xl" outer></EclSpacing>
-            <EclText tag="div" level={2} id="inline-nav-3">Gallery</EclText>
+            <EclText tag="h2" level={2} type="heading" id="inline-nav-3">Gallery</EclText>
             <EclSpacing direction="b" outer value="s"></EclSpacing>
             <EclDivider></EclDivider>
             <EclSpacing value="l" direction="t"></EclSpacing>
@@ -327,7 +327,7 @@ function App() {
             </EclGallery>
             <EclSpacing outer vertical value="l"></EclSpacing>
             <EclSpacing direction="t" value="xl" outer></EclSpacing>
-            <EclText tag="div" level={1} id="inline-nav-4">Facts and figures</EclText>
+            <EclText tag="h2" level={2} type="heading" id="inline-nav-4">Facts and figures</EclText>
             <EclSpacing direction="b" outer value="s"></EclSpacing>
             <EclDivider></EclDivider>
             <EclSpacing value="l" direction="t"></EclSpacing>
@@ -368,17 +368,17 @@ function App() {
         variant="harmonised"
         logo-link="/example.html"
       >
-        <EclText level={4} tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-middle"> Contact site name </EclText>
+        <EclText size="l" tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-middle"> Contact site name </EclText>
         <EclFooterItem link="/example.html" slot="ecl-footer-list-top-middle"> Link </EclFooterItem>
-        <EclText style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-middle-bottom" level={4} tag="div"> Follow us </EclText>
+        <EclText style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-middle-bottom" size="l" tag="div"> Follow us </EclText>
         <EclFooterItem link="/example.html" slot="ecl-footer-list-top-middle-bottom"> Social 1 </EclFooterItem>
         <EclFooterItem link="/example.html" slot="ecl-footer-list-top-middle-bottom"> Social 2 </EclFooterItem>
         <EclFooterItem link="/example.html" slot="ecl-footer-list-top-middle-bottom"> Social 3 </EclFooterItem>
-        <EclText level={4} tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-right"> Optional links </EclText>
+        <EclText size="l" tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-right"> Optional links </EclText>
         <EclFooterItem link="/example.html" slot="ecl-footer-list-top-right"> Link 1 </EclFooterItem>
         <EclFooterItem link="/example.html" slot="ecl-footer-list-top-right"> Link 2 </EclFooterItem>
         <EclFooterItem link="/example.html" slot="ecl-footer-list-top-right"> Link 3 </EclFooterItem>
-        <EclText tag="div" level={4} slot="ecl-footer-list-main" style-class="ecl-site-footer__title ecl-site-footer__title--separator"> Contact the EU </EclText>
+        <EclText tag="div" size="l" slot="ecl-footer-list-main" style-class="ecl-site-footer__title ecl-site-footer__title--separator"> Contact the EU </EclText>
         <EclFooterItem link="tel:0080067891011" slot="ecl-footer-list-main"> Call us 00 800 6 7 8 9 10 11 </EclFooterItem>
         <EclFooterItem link="https://european-union.europa.eu/contact-eu/call-us_en" slot="ecl-footer-list-main"> Use other telephone options </EclFooterItem>
         <EclFooterItem link="https://european-union.europa.eu/contact-eu/write-us_en" slot="ecl-footer-list-main"> Write us via our contact form </EclFooterItem>
@@ -386,11 +386,11 @@ function App() {
           <span slot="ecl-footer-item-desc">Meet us at one of the</span>
           EU centres
         </EclFooterItem>
-        <EclText tag="div" level={4} slot="ecl-footer-list-bottom-left" style-class="ecl-site-footer__title ecl-site-footer__title--separator"> Social Media </EclText>
+        <EclText tag="div" size="l" slot="ecl-footer-list-bottom-left" style-class="ecl-site-footer__title ecl-site-footer__title--separator"> Social Media </EclText>
         <EclFooterItem link="https://european-union.europa.eu/contact-eu/social-media-channels_en" slot="ecl-footer-list-bottom-left">
           Search for EU social media channels
         </EclFooterItem>
-        <EclText level={4} tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-right-top"> Legal </EclText>
+        <EclText size="l" tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-right-top"> Legal </EclText>
         <EclFooterItem link="https://european-union.europa.eu/languages-our-websites_en" slot="ecl-footer-list-right-top"> Languages on our websites </EclFooterItem>
         <EclFooterItem link="https://european-union.europa.eu/privacy-policy_en" slot="ecl-footer-list-right-top"> Privacy policy </EclFooterItem>
         <EclFooterItem link="https://european-union.europa.eu/legal-notice_en" slot="ecl-footer-list-right-top"> Legal notice </EclFooterItem>
@@ -398,7 +398,7 @@ function App() {
         <EclFooterItem link="/example.html" slot="ecl-footer-list-info"> Accessibility statement </EclFooterItem>
         <EclFooterItem link="/example.html" slot="ecl-footer-logo-info"> Discover more on europa.eu </EclFooterItem>
         <EclFooterItem link="https://european-union.europa.eu/web-accessibility-policy_en" slot="ecl-footer-list-right-top"> Accessibility </EclFooterItem>
-        <EclText level={4} tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-right"> EU institutions and bodies </EclText>
+        <EclText size="l" tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-right"> EU institutions and bodies </EclText>
         <EclFooterItem link="http://www.europarl.europa.eu/portal/" slot="ecl-footer-list-right"> Search all EU institutions and bodies </EclFooterItem>
       </EclFooterEu>
     :
@@ -418,15 +418,15 @@ function App() {
           <EclSocialMediaFollowItem icon="telegram" color="inverted" hide-label share-path="http://telegram.com"> Telegram </EclSocialMediaFollowItem>
           <EclSocialMediaFollowItem icon="chain" color="inverted" hide-label share-path="http://example.html"> Other </EclSocialMediaFollowItem>
         </EclSocialMediaFollow>
-        <EclText level={5} is-bold tag="div" slot="ecl-footer-list-contact" style-class="ecl-site-footer__title"> Contact us </EclText>
+        <EclText size="m" is-bold tag="div" slot="ecl-footer-list-contact" style-class="ecl-site-footer__title"> Contact us </EclText>
         <EclFooterItem link="/example.html" slot="ecl-footer-list-contact"> Contact information of the DG </EclFooterItem>
-        <EclText level={5} is-bold tag="div" slot="ecl-footer-list-about" style-class="ecl-site-footer__title"> About us </EclText>
+        <EclText size="m" is-bold tag="div" slot="ecl-footer-list-about" style-class="ecl-site-footer__title"> About us </EclText>
         <EclFooterItem link="/example.html" slot="ecl-footer-list-about"> Information about the DG </EclFooterItem>
         <EclFooterItem link="/example.html" slot="ecl-footer-list-about"> Information about the DG </EclFooterItem>
-        <EclText level={5} is-bold tag="div" slot="ecl-footer-list-more" style-class="ecl-site-footer__title"> More information on </EclText>
+        <EclText size="m" is-bold tag="div" slot="ecl-footer-list-more" style-class="ecl-site-footer__title"> More information on </EclText>
         <EclFooterItem link="/example.html" slot="ecl-footer-list-more"> Class name 1 </EclFooterItem>
         <EclFooterItem link="/example.html" slot="ecl-footer-list-more"> Class name 2 </EclFooterItem>
-        <EclText level={5} tag="div" is-bold slot="ecl-footer-list-related" style-class="ecl-site-footer__title"> Related links </EclText>
+        <EclText size="m" tag="div" is-bold slot="ecl-footer-list-related" style-class="ecl-site-footer__title"> Related links </EclText>
         <EclFooterItem link="/example.html" slot="ecl-footer-list-related"> Related link 1 </EclFooterItem>
         <EclFooterItem link="/example.html" slot="ecl-footer-list-related"> Related link 2 </EclFooterItem>
         <EclFooterItem link="/example.html" slot="ecl-footer-list-related"> Related link 3 </EclFooterItem>

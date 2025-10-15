@@ -18,7 +18,7 @@ module.exports = {
       options: {
         banner,
         format: 'iife',
-        moduleName: 'ECL',
+        moduleName: 'ACCORDION',
         includePaths,
         sourceMap: false,
       },

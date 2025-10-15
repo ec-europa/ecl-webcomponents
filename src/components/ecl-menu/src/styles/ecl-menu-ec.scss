@@ -54,4 +54,9 @@
 
 .ecl-menu__button-caret {
   border-radius: 0 !important;
+
+  .ecl-button__icon {
+    height: 1.125rem !important;
+    width: 1.125rem !important;
+  }
 }

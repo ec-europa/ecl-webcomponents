@@ -38,7 +38,7 @@ export class EclBreadcrumbItem {
   getLinkClass(): string {
     const linkClasses = [
       'ecl-link',
-      'sc-ecl-link-ec',
+      `sc-ecl-link-${this.theme}`,
       `sc-ecl-breadcrumb-${this.theme}`,
       'ecl-link--standalone',
       'ecl-link--no-visited',

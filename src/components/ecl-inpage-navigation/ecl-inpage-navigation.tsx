@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const INPAGE: any;
 
 @Component({
   tag: 'ecl-inpage-navigation',
@@ -61,7 +61,8 @@ export class EclInpageNavigation {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const inpageNavigation = new ECL.InpageNavigation(this.el.firstElementChild);
+        ;(window as any).ECL = (window as any).ECL || {};
+        const inpageNavigation = new INPAGE.InpageNavigation(this.el.firstElementChild);
         inpageNavigation.init();
       };
 

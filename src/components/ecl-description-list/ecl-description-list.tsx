@@ -1,6 +1,6 @@
 import { Component, Prop, h, Element } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const DESCRIPTIONLIST: any;
 
 @Component({
   tag: 'ecl-description-list',
@@ -61,7 +61,8 @@ export class EclDescriptionList {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const descriptionList = new ECL.DescriptionList(this.el.firstElementChild);
+        ;(window as any).ECL = (window as any).ECL || {};
+        const descriptionList = new DESCRIPTIONLIST.DescriptionList(this.el.firstElementChild);
         descriptionList.init();
         const firstTerm = this.el.querySelectorAll('.ecl-description-list__term');
         if (firstTerm[0]) {

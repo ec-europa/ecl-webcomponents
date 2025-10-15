@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const NEWSTICKER: any;
 
 @Component({
   tag: 'ecl-news-ticker',
@@ -66,7 +66,8 @@ export class EclNewsTicker {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const newsTicker = new ECL.NewsTicker(
+        ;(window as any).ECL = (window as any).ECL || {};
+        const newsTicker = new NEWSTICKER.NewsTicker(
           this.el.firstElementChild,
           { playSelector: '.ecl-news-ticker__play',
             pauseSelector: '.ecl-news-ticker__pause',

@@ -6,7 +6,7 @@ body {
 
 .ecl-theme-switcher {
 	list-style: none;
-	position: absolute;
+	position: fixed;
 	display: flex;
 	flex-direction: row;
 	right: 0;

@@ -16,7 +16,7 @@ module.exports = {
       dest: path.resolve(outputFolder, 'scripts/ecl-file-upload-vanilla.js'),
       options: {
         banner,
-        moduleName: 'ECL',
+        moduleName: 'FILE',
         format: 'iife',
         includePaths,
         sourceMap: false,

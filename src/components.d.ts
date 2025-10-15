@@ -1653,19 +1653,40 @@ export namespace Components {
         "theme": string;
     }
     interface EclText {
+        "alignment": 'left' | 'right' | 'center' | undefined;
+        "color": 'primary' | 'secondary' | 'white' |' success' | 'error' | undefined;
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
+          * @default ''
+         */
+        "colorModeTypography": string;
         /**
           * @default false
          */
-        "isBold": boolean;
+        "enhance": boolean;
+        /**
+          * @default 'enhance'
+         */
+        "enhanceType": 'enhance' | 'strong' | 'light';
+        "fontStyle": 'italic' | 'lowercase' | 'uppercase' | 'capitalize' | 'overline' | 'underline' | 'strike' | undefined;
+        /**
+          * @default false
+         */
+        "highlighted": boolean;
         "itemId": string;
-        "level": 1 | 2 | 3 | 4 | 5 | undefined;
-        "size": 'l' | 'm' | 's' | 'xs' | undefined;
+        "level": 1 | 2 | 3 | 4 | 5 | 6 | undefined;
+        "size": '10xl' | '9xl' | '8xl' |'7xl' | '6xl' | '5xl' | '4xl' | '3xl' | '2xl' | 'xl' | 'l' | 'm' | 's' | 'xs' | undefined;
         /**
           * @default ''
          */
         "styleClass": string;
         "tag": 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
         "theme": string;
+        "type": 'display' | 'heading' | 'paragraph' | 'microcopy' | undefined;
+        "weight": 'thin' | 'extra-light' | 'light' | 'regular' | 'medium' | 'semi-bold' | 'bold' | 'extra-bold' | 'black' | undefined;
     }
     interface EclTextarea {
         "defaultValue": string;
@@ -4091,19 +4112,40 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclText {
+        "alignment"?: 'left' | 'right' | 'center' | undefined;
+        "color"?: 'primary' | 'secondary' | 'white' |' success' | 'error' | undefined;
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
+          * @default ''
+         */
+        "colorModeTypography"?: string;
         /**
           * @default false
          */
-        "isBold"?: boolean;
+        "enhance"?: boolean;
+        /**
+          * @default 'enhance'
+         */
+        "enhanceType"?: 'enhance' | 'strong' | 'light';
+        "fontStyle"?: 'italic' | 'lowercase' | 'uppercase' | 'capitalize' | 'overline' | 'underline' | 'strike' | undefined;
+        /**
+          * @default false
+         */
+        "highlighted"?: boolean;
         "itemId"?: string;
-        "level"?: 1 | 2 | 3 | 4 | 5 | undefined;
-        "size"?: 'l' | 'm' | 's' | 'xs' | undefined;
+        "level"?: 1 | 2 | 3 | 4 | 5 | 6 | undefined;
+        "size"?: '10xl' | '9xl' | '8xl' |'7xl' | '6xl' | '5xl' | '4xl' | '3xl' | '2xl' | 'xl' | 'l' | 'm' | 's' | 'xs' | undefined;
         /**
           * @default ''
          */
         "styleClass"?: string;
         "tag"?: 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
         "theme"?: string;
+        "type"?: 'display' | 'heading' | 'paragraph' | 'microcopy' | undefined;
+        "weight"?: 'thin' | 'extra-light' | 'light' | 'regular' | 'medium' | 'semi-bold' | 'bold' | 'extra-bold' | 'black' | undefined;
     }
     interface EclTextarea {
         "defaultValue"?: string;

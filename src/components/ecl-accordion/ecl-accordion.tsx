@@ -1,6 +1,6 @@
 import { Component, Prop, h, Element, State } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const ACCORDION;
 
 @Component({
   tag: 'ecl-accordion',
@@ -49,7 +49,8 @@ export class EclAccordion {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const accordion = new ECL.Accordion(this.el);
+        ;(window as any).ECL = (window as any).ECL || {};
+        const accordion = new ACCORDION.Accordion(this.el);
         accordion.init();
       };
       document.body.appendChild(script);

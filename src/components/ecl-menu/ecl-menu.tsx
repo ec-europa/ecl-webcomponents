@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const MENU: any;
 
 @Component({
   tag: 'ecl-menu',
@@ -47,7 +47,8 @@ export class EclMenu {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const menu = new ECL.Menu(this.el.firstElementChild);
+        ;(window as any).ECL = (window as any).ECL || {};
+        const menu = new MENU.Menu(this.el.firstElementChild);
         menu.init();
       };
 

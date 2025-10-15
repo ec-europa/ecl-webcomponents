@@ -16,7 +16,7 @@ module.exports = {
       dest: path.resolve(outputFolder, 'scripts/ecl-datepicker-vanilla.js'),
       options: {
         banner,
-        moduleName: 'ECL',
+        moduleName: 'DATEPICKER',
         format: 'iife',
         includePaths,
         sourceMap: false,

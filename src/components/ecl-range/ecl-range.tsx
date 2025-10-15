@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element, State, Event, EventEmitter } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const RANGE: any;
 
 @Component({
   tag: 'ecl-range',
@@ -77,10 +77,11 @@ export class EclRange {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
+        ;(window as any).ECL = (window as any).ECL || {};
         const formGroup = this.el.closest('.ecl-form-group');
         formGroup.setAttribute('data-ecl-range', 'data-ecl-range');
         formGroup.classList.add(`sc-ecl-range-${this.theme}`);
-        const range = new ECL.Range(formGroup);
+        const range = new RANGE.Range(formGroup);
         range.init();
       };
       document.body.appendChild(script);

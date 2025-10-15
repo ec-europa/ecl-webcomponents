@@ -12,10 +12,17 @@
   $breadcrumb: var.$breadcrumb
 );
 
-.ecl-breadcrumb__icon {
-  vertical-align: text-top;
+.ecl-breadcrumb__segment .ecl-breadcrumb__icon {
+  margin-top: -8px;
 }
 
 .ecl-breadcrumb__current-page {
-  margin-block-start: 0;
+  margin-top: 0;
+}
+
+.ecl-breadcrumb__ellipsis {
+  background-color: var(--c-p-5) !important;
+  display: flex !important;
+  justify-content: center;
+  margin-top: -8px !important;
 }

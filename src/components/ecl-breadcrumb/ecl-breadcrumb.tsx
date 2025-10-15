@@ -1,6 +1,6 @@
 import { Component, Prop, h, Element } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const BREADCRUMB: any;
 
 @Component({
   tag: 'ecl-breadcrumb',
@@ -55,7 +55,8 @@ export class EclBreadcrumb {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const breadcrumb = new ECL.Breadcrumb(this.el.firstElementChild);
+        ;(window as any).ECL = (window as any).ECL || {};
+        const breadcrumb = new BREADCRUMB.Breadcrumb(this.el.firstElementChild);
         breadcrumb.init();
       };
 

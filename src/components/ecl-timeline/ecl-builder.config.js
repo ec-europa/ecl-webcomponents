@@ -17,7 +17,7 @@ module.exports = {
       options: {
         banner,
         format: 'iife',
-        moduleName: 'ECL',
+        moduleName: 'TIMELINE',
         includePaths,
         sourceMap: false,
       },

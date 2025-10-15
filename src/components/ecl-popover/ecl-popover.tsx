@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const POPOVER: any;
 
 @Component({
   tag: 'ecl-popover',
@@ -67,7 +67,8 @@ export class EclPopover {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const popover = new ECL.Popover(this.el.firstElementChild);
+        ;(window as any).ECL = (window as any).ECL || {};
+        const popover = new POPOVER.Popover(this.el.firstElementChild);
         popover.init();
       };
 

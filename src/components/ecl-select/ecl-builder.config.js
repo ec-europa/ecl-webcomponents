@@ -16,7 +16,7 @@ module.exports = {
       dest: path.resolve(outputFolder, 'scripts/ecl-select-vanilla.js'),
       options: {
         banner,
-        moduleName: 'ECL',
+        moduleName: 'SELECT',
         format: 'iife',
         includePaths,
         sourceMap: false,

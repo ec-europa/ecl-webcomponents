@@ -17,7 +17,7 @@ module.exports = {
       options: {
         banner,
         format: 'iife',
-        moduleName: 'ECL',
+        moduleName: 'EXPANDABLE',
         includePaths,
         sourceMap: false,
       },

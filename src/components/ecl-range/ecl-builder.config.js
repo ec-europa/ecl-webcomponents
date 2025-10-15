@@ -16,7 +16,7 @@ module.exports = {
       dest: path.resolve(outputFolder, 'scripts/ecl-range-vanilla.js'),
       options: {
         banner,
-        moduleName: 'ECL',
+        moduleName: 'RANGE',
         format: 'iife',
         includePaths,
         sourceMap: false,

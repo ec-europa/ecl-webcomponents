@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const NOTIFICATION: any;
 
 @Component({
   tag: 'ecl-notification',
@@ -60,7 +60,8 @@ export class EclNotification {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const notification = new ECL.Notification(this.el.firstElementChild);
+        ;(window as any).ECL = (window as any).ECL || {};
+        const notification = new NOTIFICATION.Notification(this.el.firstElementChild);
         notification.init();
       };
       document.body.appendChild(script);

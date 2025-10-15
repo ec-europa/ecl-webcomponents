@@ -14,51 +14,77 @@ export class EclText {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop() tag: 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
+  @Prop() fontStyle: 'italic' | 'lowercase' | 'uppercase' | 'capitalize' | 'overline' | 'underline' | 'strike' | undefined
   @Prop({ mutable: true }) theme: string;
-  @Prop() isBold: boolean = false;
-  @Prop() level: 1 | 2 | 3 | 4 | 5 | undefined;
-  @Prop() size: 'l' | 'm' | 's' | 'xs' | undefined;
+  @Prop() alignment: 'left' | 'right' | 'center' | undefined;
+  @Prop() color: 'primary' | 'secondary' | 'white' |' success' | 'error' | undefined;
+  @Prop() level: 1 | 2 | 3 | 4 | 5 | 6 | undefined;
+  @Prop() weight: 'thin' | 'extra-light' | 'light' | 'regular' | 'medium' | 'semi-bold' | 'bold' | 'extra-bold' | 'black' | undefined; 
+  @Prop() type: 'display' | 'heading' | 'paragraph' | 'microcopy' | undefined;
+  @Prop() size: '10xl' | '9xl' | '8xl' |'7xl' | '6xl' | '5xl' | '4xl' | '3xl' | '2xl' | 'xl' | 'l' | 'm' | 's' | 'xs' | undefined; 
+  @Prop() highlighted: boolean = false;
+  @Prop() enhance: boolean = false;
+  @Prop() enhanceType: 'enhance' | 'strong' | 'light' = 'enhance';
+  @Prop() colorMode: string = '';
+  @Prop() colorModeTypography: string = '';
   @Prop() itemId: string;
 
   getClass(): string {
     let styleClasses = [this.styleClass];
 
-    if (this.level && !(this.size && this.tag === 'p')) {
-      switch(this.level) {
-        case 1:
-          styleClasses.push('ecl-u-type-3xl');
-          break;
-    
-        case 2:
-          styleClasses.push('ecl-u-type-2xl');
-          break;
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`);
+    }
 
-        case 3:
-          styleClasses.push('ecl-u-type-xl');
-          break;
+    if (this.colorModeTypography) {
+      styleClasses.push(`ecl-u-type-color-${this.colorModeTypography}`);
+      this.color = undefined;
+    }
 
-        case 4:
-          styleClasses.push('ecl-u-type-prolonged-l');
-          break;
-
-        case 5:
-          styleClasses.push('ecl-u-type-prolonged-m');
-          break;
-
-         default:
+    if (this.type) {
+      if (this.type === 'paragraph') {
+        styleClasses.push(`ecl-u-type-paragraph-${this.size}`);
+      } else if (this.type === 'heading' && this.level) {
+        styleClasses.push(`ecl-u-type-${this.type}-${this.level}`);
+      } else if (this.type === 'microcopy') {
+        styleClasses.push(`ecl-u-type-microcopy-${this.size}`);
+      } else {
+        styleClasses.push(`ecl-u-type-${this.type}`)
       }
+
+      this.size = undefined;
     }
 
-    if (this.size && this.tag === 'p') {
-      styleClasses.push(`ecl-u-type-prolonged-${this.size}`);
+    if (this.size) {
+      styleClasses.push(`ecl-u-type-${this.size}`);
     }
 
-    if (styleClasses.length === 0) {
-      styleClasses.push('ecl-u-type-prolonged-m');
+    if (this.weight) {
+      styleClasses.push(`ecl-u-type-weight-${this.weight}`);
     }
 
-    if (this.isBold) {
-      styleClasses.push('ecl-u-type-bold');
+    if (this.alignment) {
+      styleClasses.push(`ecl-u-type-align-${this.alignment}`);
+    }
+
+    if (this.fontStyle) {
+      styleClasses.push(`ecl-u-type-${this.fontStyle}`);
+    }
+
+    if (this.color) {
+      styleClasses.push(`ecl-u-type-color-${this.color}`);
+    }
+
+    if (this.highlighted) {
+      styleClasses.push(`ecl-u-type-highlight`);
+    }
+
+    if (this.enhance) {
+      if (this.enhanceType === 'enhance') {
+        styleClasses.push(`ecl-u-type-enhance`);
+      } else {
+        styleClasses.push(`ecl-u-type-enhance-${this.enhanceType}`);
+      }
     }
 
     return styleClasses.join(' ');
@@ -66,10 +92,11 @@ export class EclText {
 
   componentWillLoad() {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+    this.size = this.size || 'm';
   }
 
   render() {
-    const Tag = this.tag;
+    const Tag = this.tag || 'div';
     return (
       <Tag class={this.getClass()} id={this.itemId ? this.itemId : null}>
         <slot></slot>

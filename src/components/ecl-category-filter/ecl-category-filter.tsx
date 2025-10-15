@@ -1,6 +1,6 @@
 import { Component, Prop, h, Element } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const CATEGORYFILTER: any;
 
 @Component({
   tag: 'ecl-category-filter',
@@ -51,7 +51,8 @@ export class EclCategoryFilter {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const categoryFilter = new ECL.CategoryFilter(this.el.firstElementChild);
+        ;(window as any).ECL = (window as any).ECL || {};
+        const categoryFilter = new CATEGORYFILTER.CategoryFilter(this.el.firstElementChild);
         categoryFilter.init();
       };
       document.body.appendChild(script);

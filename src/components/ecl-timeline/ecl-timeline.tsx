@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element, State } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const TIMELINE: any;
 
 @Component({
   tag: 'ecl-timeline',
@@ -47,7 +47,8 @@ export class EclTimeline {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const timeline = new ECL.Timeline(this.el.firstElementChild);
+       ;(window as any).ECL = (window as any).ECL || {};
+        const timeline = new TIMELINE.Timeline(this.el.firstElementChild);
         timeline.init();
       };
 

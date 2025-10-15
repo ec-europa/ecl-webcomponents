@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const EXPANDABLE: any;
 
 @Component({
   tag: 'ecl-expandable',
@@ -43,7 +43,8 @@ export class EclExpandable {
     const script = document.createElement('script');
     script.src = src;
     script.onload = () => {
-      const expandable = new ECL.Expandable(this.el.firstElementChild);
+      ;(window as any).ECL = (window as any).ECL || {};
+      const expandable = new EXPANDABLE.Expandable(this.el.firstElementChild);
       expandable.init();
     };
     document.body.appendChild(script);

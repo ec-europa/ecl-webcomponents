@@ -1,6 +1,6 @@
 import { Component, Prop, h, Element } from '@stencil/core';
 import getAssetPath from '../../utils/assetPath';
-declare const ECL: any;
+declare const SITEHEADER: any;
 
 @Component({
   tag: 'ecl-site-header',
@@ -95,7 +95,8 @@ export class EclSiteHeader {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const siteHeader = new ECL.SiteHeader(this.el.firstElementChild);
+        ;(window as any).ECL = (window as any).ECL || {};
+        const siteHeader = new SITEHEADER.SiteHeader(this.el.firstElementChild);
         siteHeader.init();
       };
 
@@ -165,7 +166,7 @@ export class EclSiteHeader {
                       {this.logged ? this.loggedInText : this.loginText }
                     </a>
                   }
-                  { this.loginBlock &&
+                  { (this.loginBlock && this.logged) &&
                     <div
                       class="ecl-site-header__login-box"
                       data-ecl-login-box

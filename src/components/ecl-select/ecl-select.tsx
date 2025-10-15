@@ -1,6 +1,6 @@
 import { Component, h, Prop, State, Element, Event, EventEmitter } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const SELECT: any;
 
 @Component({
   tag: 'ecl-select',
@@ -73,7 +73,8 @@ export class EclSelect {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const select = new ECL.Select(this.el.getElementsByTagName('select')[0]);
+        ;(window as any).ECL = (window as any).ECL || {};
+        const select = new SELECT.Select(this.el.getElementsByTagName('select')[0]);
         select.init();
       };
 

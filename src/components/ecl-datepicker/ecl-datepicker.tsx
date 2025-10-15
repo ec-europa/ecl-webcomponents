@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element, Event, EventEmitter } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const DATEPICKER: any;
 
 @Component({
   tag: 'ecl-datepicker',
@@ -82,7 +82,8 @@ export class EclDatepicker {
       script.src = src;
       script.defer = true;
       script.onload = () => {
-        const datepicker = new ECL.Datepicker(
+        ;(window as any).ECL = (window as any).ECL || {};
+        const datepicker = new DATEPICKER.Datepicker(
           this.el.querySelector('.ecl-datepicker__field'),
           { format: this.dateFormat, yearRange: Number(this.yearRange) }
         );

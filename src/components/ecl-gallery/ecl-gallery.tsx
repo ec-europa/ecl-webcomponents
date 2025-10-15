@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const GALLERY: any;
 
 @Component({
   tag: 'ecl-gallery',
@@ -110,7 +110,8 @@ export class EclGallery {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const gallery = new ECL.Gallery(this.el.firstElementChild);
+        ;(window as any).ECL = (window as any).ECL || {};
+        const gallery = new GALLERY.Gallery(this.el.firstElementChild);
         gallery.init();
       };
       document.body.appendChild(script);

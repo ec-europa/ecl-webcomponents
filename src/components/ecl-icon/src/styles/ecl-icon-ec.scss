@@ -3,6 +3,6 @@
   $theme: theme.$theme
 );
 
-:host {
+:host[style-class='ecl-breadcrumb__icon sc-ecl-breadcrumb-ec'] {
   display: contents;
 }

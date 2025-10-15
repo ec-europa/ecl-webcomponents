@@ -122,7 +122,7 @@
     </ecl-grid>
     <ecl-grid columns="9" breakpoint="l" styleClass="ecl-main">
       <ecl-spacing direction="t" outer value="xl"></ecl-spacing>
-      <ecl-text tag="div" level="1" id="inline-nav-1">Featured</ecl-text>
+      <ecl-text tag="div" type="heading" level="2" weight="semi-bold" id="inline-nav-1">Featured</ecl-text>
       <ecl-spacing direction="b" outer value="s"></ecl-spacing>
       <ecl-divider></ecl-divider>
       <ecl-spacing value="l" direction="t"></ecl-spacing>
@@ -136,7 +136,7 @@
         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       </ecl-featured-item>
       <ecl-spacing value="l" direction="b"></ecl-spacing>
-      <ecl-text tag="div" level="1" id="inline-nav-2">News</ecl-text>
+      <ecl-text tag="div" type="heading" level="2" id="inline-nav-2" weight="semi-bold">News</ecl-text>
       <ecl-spacing direction="b" outer value="s"></ecl-spacing>
       <ecl-divider></ecl-divider>
       <ecl-spacing value="l" direction="t"></ecl-spacing>
@@ -155,7 +155,7 @@
         </ecl-list-illustration-item>
       </ecl-list-illustration>
       <ecl-spacing direction="t" value="xl" outer></ecl-spacing>
-      <ecl-text tag="div" level="2" id="inline-nav-3">Gallery</ecl-text>
+      <ecl-text tag="div" type="heading" weight="semi-bold" level="2" id="inline-nav-3">Gallery</ecl-text>
       <ecl-spacing direction="b" outer value="s"></ecl-spacing>
       <ecl-divider></ecl-divider>
       <ecl-spacing value="l" direction="t"></ecl-spacing>
@@ -298,7 +298,7 @@
       </ecl-gallery>
       <ecl-spacing outer vertical value="l"></ecl-spacing>
       <ecl-spacing direction="t" value="xl" outer></ecl-spacing>
-      <ecl-text tag="div" level="1" id="inline-nav-4">Facts and figures</ecl-text>
+      <ecl-text tag="div" type="heading" level="2" weight="semi-bold" id="inline-nav-4">Facts and figures</ecl-text>
       <ecl-spacing direction="b" outer value="s"></ecl-spacing>
       <ecl-divider></ecl-divider>
       <ecl-spacing value="l" direction="t"></ecl-spacing>
@@ -325,6 +325,37 @@
           Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec lectus tortor.
         </ecl-fact-figures-item>
       </ecl-fact-figures>
+      <ecl-spacing direction="t" outer value="2xl"></ecl-spacing>
+      <ecl-carousel carousel-id="ecl-carousel-demo" ecl-script slides-number="3">
+        <ecl-carousel-item
+          cta-link="/example.html"
+          cta-label="Subscribe"
+          size="s"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+          banner-title="Duis vitae pulvinar turpis"
+          credit="© Copyright or credit"
+        >
+          Integer quis lorem tellus. Nullam sollicitudin suscipit diam.
+        </ecl-carousel-item>
+        <ecl-carousel-item
+          cta-link="/example.html"
+          cta-label="Subscribe"
+          size="s"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
+          banner-title="Duis vitae pulvinar turpis"
+        >
+          Integer quis lorem tellus.
+        </ecl-carousel-item>
+        <ecl-carousel-item
+          cta-link="/example.html"
+          size="s"
+          cta-label="Subscribe"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"
+          banner-title="Duis vitae pulvinar turpis"
+          credit="© Copyright or credit"
+        >
+        </ecl-carousel-item>
+      </ecl-carousel>
     </ecl-grid>
   </ecl-grid>
 </ecl-grid>
@@ -339,17 +370,17 @@
   variant="harmonised"
   logo-link="/example.html"
 >
-  <ecl-text level="4" tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-middle"> Contact site name </ecl-text>
+  <ecl-text size="l" tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-middle"> Contact site name </ecl-text>
   <ecl-footer-item link="/example.html" slot="ecl-footer-list-top-middle"> Link </ecl-footer-item>
-  <ecl-text style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-middle-bottom" level="4" tag="div"> Follow us </ecl-text>
+  <ecl-text style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-middle-bottom" size="l" tag="div"> Follow us </ecl-text>
   <ecl-footer-item link="/example.html" slot="ecl-footer-list-top-middle-bottom"> Social 1 </ecl-footer-item>
   <ecl-footer-item link="/example.html" slot="ecl-footer-list-top-middle-bottom"> Social 2 </ecl-footer-item>
   <ecl-footer-item link="/example.html" slot="ecl-footer-list-top-middle-bottom"> Social 3 </ecl-footer-item>
-  <ecl-text level="4" tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-right"> Optional links </ecl-text>
+  <ecl-text size="l" tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-top-right"> Optional links </ecl-text>
   <ecl-footer-item link="/example.html" slot="ecl-footer-list-top-right"> Link 1 </ecl-footer-item>
   <ecl-footer-item link="/example.html" slot="ecl-footer-list-top-right"> Link 2 </ecl-footer-item>
   <ecl-footer-item link="/example.html" slot="ecl-footer-list-top-right"> Link 3 </ecl-footer-item>
-  <ecl-text tag="div" level="4" slot="ecl-footer-list-main" style-class="ecl-site-footer__title ecl-site-footer__title--separator"> Contact the EU </ecl-text>
+  <ecl-text tag="div" size="l" slot="ecl-footer-list-main" style-class="ecl-site-footer__title ecl-site-footer__title--separator"> Contact the EU </ecl-text>
   <ecl-footer-item link="tel:0080067891011" slot="ecl-footer-list-main"> Call us 00 800 6 7 8 9 10 11 </ecl-footer-item>
   <ecl-footer-item link="https://european-union.europa.eu/contact-eu/call-us_en" slot="ecl-footer-list-main"> Use other telephone options </ecl-footer-item>
   <ecl-footer-item link="https://european-union.europa.eu/contact-eu/write-us_en" slot="ecl-footer-list-main"> Write us via our contact form </ecl-footer-item>
@@ -357,11 +388,11 @@
     <span slot="ecl-footer-item-desc">Meet us at one of the</span>
     EU centres
   </ecl-footer-item>
-  <ecl-text tag="div" level="4" slot="ecl-footer-list-bottom-left" style-class="ecl-site-footer__title ecl-site-footer__title--separator"> Social Media </ecl-text>
+  <ecl-text tag="div" size="l" slot="ecl-footer-list-bottom-left" style-class="ecl-site-footer__title ecl-site-footer__title--separator"> Social Media </ecl-text>
   <ecl-footer-item link="https://european-union.europa.eu/contact-eu/social-media-channels_en" slot="ecl-footer-list-bottom-left">
     Search for EU social media channels
   </ecl-footer-item>
-  <ecl-text level="4" tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-right-top"> Legal </ecl-text>
+  <ecl-text size="l" tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-right-top"> Legal </ecl-text>
   <ecl-footer-item link="https://european-union.europa.eu/languages-our-websites_en" slot="ecl-footer-list-right-top"> Languages on our websites </ecl-footer-item>
   <ecl-footer-item link="https://european-union.europa.eu/privacy-policy_en" slot="ecl-footer-list-right-top"> Privacy policy </ecl-footer-item>
   <ecl-footer-item link="https://european-union.europa.eu/legal-notice_en" slot="ecl-footer-list-right-top"> Legal notice </ecl-footer-item>
@@ -369,7 +400,7 @@
   <ecl-footer-item link="/example.html" slot="ecl-footer-list-info"> Accessibility statement </ecl-footer-item>
   <ecl-footer-item link="/example.html" slot="ecl-footer-logo-info"> Discover more on europa.eu </ecl-footer-item>
   <ecl-footer-item link="https://european-union.europa.eu/web-accessibility-policy_en" slot="ecl-footer-list-right-top"> Accessibility </ecl-footer-item>
-  <ecl-text level="4" tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-right"> EU institutions and bodies </ecl-text>
+  <ecl-text size="l" tag="div" style-class="ecl-site-footer__title ecl-site-footer__title--separator" slot="ecl-footer-list-right"> EU institutions and bodies </ecl-text>
   <ecl-footer-item link="http://www.europarl.europa.eu/portal/" slot="ecl-footer-list-right"> Search all EU institutions and bodies </ecl-footer-item>
 </ecl-footer-eu>
 
@@ -390,15 +421,15 @@
     <ecl-social-media-follow-item icon="telegram" color="inverted" hide-label share-path="http://telegram.com"> Telegram </ecl-social-media-follow-item>
     <ecl-social-media-follow-item icon="chain" color="inverted" hide-label share-path="http://example.html"> Other </ecl-social-media-follow-item>
   </ecl-social-media-follow>
-  <ecl-text level="5" is-bold tag="div" slot="ecl-footer-list-contact" style-class="ecl-site-footer__title"> Contact us </ecl-text>
+  <ecl-text size="m" is-bold tag="div" slot="ecl-footer-list-contact" style-class="ecl-site-footer__title"> Contact us </ecl-text>
   <ecl-footer-item link="/example.html" slot="ecl-footer-list-contact"> Contact information of the DG </ecl-footer-item>
-  <ecl-text level="5" is-bold tag="div" slot="ecl-footer-list-about" style-class="ecl-site-footer__title"> About us </ecl-text>
+  <ecl-text size="m" is-bold tag="div" slot="ecl-footer-list-about" style-class="ecl-site-footer__title"> About us </ecl-text>
   <ecl-footer-item link="/example.html" slot="ecl-footer-list-about"> Information about the DG </ecl-footer-item>
   <ecl-footer-item link="/example.html" slot="ecl-footer-list-about"> Information about the DG </ecl-footer-item>
-  <ecl-text level="5" is-bold tag="div" slot="ecl-footer-list-more" style-class="ecl-site-footer__title"> More information on </ecl-text>
+  <ecl-text size="m" is-bold tag="div" slot="ecl-footer-list-more" style-class="ecl-site-footer__title"> More information on </ecl-text>
   <ecl-footer-item link="/example.html" slot="ecl-footer-list-more"> Class name 1 </ecl-footer-item>
   <ecl-footer-item link="/example.html" slot="ecl-footer-list-more"> Class name 2 </ecl-footer-item>
-  <ecl-text level="5" tag="div" is-bold slot="ecl-footer-list-related" style-class="ecl-site-footer__title"> Related links </ecl-text>
+  <ecl-text size="m" tag="div" is-bold slot="ecl-footer-list-related" style-class="ecl-site-footer__title"> Related links </ecl-text>
   <ecl-footer-item link="/example.html" slot="ecl-footer-list-related"> Related link 1 </ecl-footer-item>
   <ecl-footer-item link="/example.html" slot="ecl-footer-list-related"> Related link 2 </ecl-footer-item>
   <ecl-footer-item link="/example.html" slot="ecl-footer-list-related"> Related link 3 </ecl-footer-item>

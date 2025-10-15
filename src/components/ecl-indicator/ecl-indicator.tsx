@@ -1,6 +1,6 @@
 import { Component, Prop, h, Element } from '@stencil/core';
 import getAssetPath from '../../utils/assetPath';
-declare const ECL: any;
+declare const INDICATOR: any;
 
 @Component({
   tag: 'ecl-indicator',
@@ -35,7 +35,8 @@ export class EclIndicator {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const indicator = new ECL.Indicator(this.el.firstElementChild);
+        ;(window as any).ECL = (window as any).ECL || {};  
+        const indicator = new INDICATOR.Indicator(this.el.firstElementChild);
         indicator.init();
       };
       document.body.appendChild(script);

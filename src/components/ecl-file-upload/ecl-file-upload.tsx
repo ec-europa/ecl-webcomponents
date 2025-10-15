@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
 import getAssetPath from "../../utils/assetPath";
-declare const ECL: any;
+declare const FILE: any;
 
 @Component({
   tag: 'ecl-file-upload',
@@ -63,7 +63,8 @@ export class EclFileUpload {
       const script = document.createElement('script');
       script.src = src;
       script.onload = () => {
-        const fileUpload = new ECL.FileUpload(this.el.firstElementChild);
+        ;(window as any).ECL = (window as any).ECL || {};
+        const fileUpload = new FILE.FileUpload(this.el.firstElementChild);
         fileUpload.init();
       };
       // @ts-ignore

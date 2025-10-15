@@ -16,7 +16,7 @@ module.exports = {
       options: {
         banner,
         format: 'iife',
-        moduleName: 'ECL',
+        moduleName: 'INDICATOR',
         includePaths,
         sourceMap: false,
       },
