@@ -175,7 +175,7 @@ describe('ecl-footer EU', () => {
           This site is managed by: [name of the manager of the site]
         </ecl-text>
         <ecl-text
-          level="4"
+          size="m"
           slot="ecl-footer-list-main"
           tag="div"
           style-class="ecl-site-footer__title ecl-site-footer__title--separator"
@@ -207,7 +207,7 @@ describe('ecl-footer EU', () => {
           Meet us at one of the EU centres
         </ecl-footer-item>
         <ecl-text
-          level="4"
+          size="m"
           tag="div"
           slot="ecl-footer-list-bottom-left"
           style-class="ecl-site-footer__title ecl-site-footer__title--separator"
@@ -223,7 +223,7 @@ describe('ecl-footer EU', () => {
         </ecl-footer-item>
         <ecl-text
           tag="div"
-          level="4"
+          size="m"
           style-class="ecl-site-footer__title ecl-site-footer__title--separator"
           slot="ecl-footer-list-right-top"
         >
@@ -261,7 +261,7 @@ describe('ecl-footer EU', () => {
         </ecl-footer-item>
         <ecl-text
           tag="div"
-          level="4"
+          size="m"
           style-class="ecl-site-footer__title ecl-site-footer__title--separator"
           slot="ecl-footer-list-right"
         >
