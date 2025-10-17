@@ -21,7 +21,7 @@ export class EclText {
   @Prop() level: 1 | 2 | 3 | 4 | 5 | 6 | undefined;
   @Prop() weight: 'thin' | 'extra-light' | 'light' | 'regular' | 'medium' | 'semi-bold' | 'bold' | 'extra-bold' | 'black' | undefined; 
   @Prop() type: 'display' | 'heading' | 'paragraph' | 'microcopy' | undefined;
-  @Prop() size: '10xl' | '9xl' | '8xl' |'7xl' | '6xl' | '5xl' | '4xl' | '3xl' | '2xl' | 'xl' | 'l' | 'm' | 's' | 'xs' | undefined; 
+  @Prop({ mutable: true }) size: '10xl' | '9xl' | '8xl' |'7xl' | '6xl' | '5xl' | '4xl' | '3xl' | '2xl' | 'xl' | 'l' | 'm' | 's' | 'xs' | undefined; 
   @Prop() highlighted: boolean = false;
   @Prop() enhance: boolean = false;
   @Prop() enhanceType: 'enhance' | 'strong' | 'light' = 'enhance';
@@ -31,6 +31,7 @@ export class EclText {
 
   getClass(): string {
     let styleClasses = [this.styleClass];
+    let effectiveSize = this.size; // make a copy so we don't mutate the prop
 
     if (this.colorMode) {
       styleClasses.push(`ecl-color-mode--${this.colorMode}`);
@@ -38,25 +39,25 @@ export class EclText {
 
     if (this.colorModeTypography) {
       styleClasses.push(`ecl-u-type-color-${this.colorModeTypography}`);
-      this.color = undefined;
+      this.color = undefined; // ⚠️ ideally avoid mutating this too
     }
 
     if (this.type) {
       if (this.type === 'paragraph') {
-        styleClasses.push(`ecl-u-type-paragraph-${this.size}`);
+        styleClasses.push(`ecl-u-type-paragraph-${effectiveSize}`);
       } else if (this.type === 'heading' && this.level) {
         styleClasses.push(`ecl-u-type-${this.type}-${this.level}`);
       } else if (this.type === 'microcopy') {
-        styleClasses.push(`ecl-u-type-microcopy-${this.size}`);
+        styleClasses.push(`ecl-u-type-microcopy-${effectiveSize}`);
       } else {
-        styleClasses.push(`ecl-u-type-${this.type}`)
+        styleClasses.push(`ecl-u-type-${this.type}`);
       }
 
-      this.size = undefined;
+      effectiveSize = undefined; // update only the local variable
     }
 
-    if (this.size) {
-      styleClasses.push(`ecl-u-type-${this.size}`);
+    if (effectiveSize) {
+      styleClasses.push(`ecl-u-type-${effectiveSize}`);
     }
 
     if (this.weight) {
