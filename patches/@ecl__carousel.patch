@@ -1,8 +1,26 @@
 diff --git a/carousel.js b/carousel.js
-index 13ae29108baf48051194ab8b976d84a5658563c3..fa8d132cbe913279a8a11a1a8d6f85d7655137b9 100644
+index 13ae29108baf48051194ab8b976d84a5658563c3..082b6794d47c33924511f877743eac22f621613a 100644
 --- a/carousel.js
 +++ b/carousel.js
-@@ -129,6 +129,8 @@ export class Carousel {
+@@ -67,7 +67,7 @@ export class Carousel {
+     this.slides = null;
+     this.btnPlay = null;
+     this.btnPause = null;
+-    this.index = 1;
++    this.index = 0;
+     this.total = 0;
+     this.allowShift = true;
+     this.activeNav = null;
+@@ -84,8 +84,6 @@ export class Carousel {
+     this.navigation = null;
+     this.controls = null;
+     this.direction = 'ltr';
+-    this.cloneFirstSLide = null;
+-    this.cloneLastSLide = null;
+     this.executionCount = 0;
+     this.maxExecutions = 5;
+     this.slideWidth = 0;
+@@ -129,6 +127,8 @@ export class Carousel {
      this.direction = getComputedStyle(this.element).direction;
  
      this.slides = queryAll(this.slideClass, this.element);
@@ -11,3 +29,184 @@ index 13ae29108baf48051194ab8b976d84a5658563c3..fa8d132cbe913279a8a11a1a8d6f85d7
      this.total = this.slides.length;
  
      // If only one slide, don't initialize carousel and hide controls
+@@ -142,30 +142,11 @@ export class Carousel {
+       return false;
+     }
+ 
+-    // Start initializing carousel
+-    const firstSlide = this.slides[0];
+-    const lastSlide = this.slides[this.slides.length - 1];
+-
+-    // Clone first and last slide
+-    this.cloneFirstSlide = firstSlide.cloneNode(true);
+-    this.cloneLastSlide = lastSlide.cloneNode(true);
+-    this.slidesContainer.appendChild(this.cloneFirstSlide);
+-    this.slidesContainer.insertBefore(this.cloneLastSlide, firstSlide);
+-
+-    // Initialize the js for the two cloned slides
+-    const cloneFirstBanner = new ECL.Banner(
+-      this.cloneFirstSlide.firstElementChild,
+-    );
+-    const cloneLastBanner = new ECL.Banner(
+-      this.cloneLastSlide.firstElementChild,
+-    );
+-
+-    cloneFirstBanner.init();
+-    cloneLastBanner.init();
+-
+-    // Refresh the slides variable after adding new cloned slides
+-    this.slides = queryAll(this.slideClass, this.element);
+-
++    this.slides.forEach((slide) => {
++      const banner = new ECL.Banner(slide.firstElementChild.firstElementChild);
++      banner.init();
++    });
++    
+     // Initialze pagination and navigation
+     this.handleResize();
+     // Bind events
+@@ -217,10 +198,6 @@ export class Carousel {
+    * Destroy component.
+    */
+   destroy() {
+-    if (this.cloneFirstSLide && this.cloneLastSLide) {
+-      this.cloneFirstSLide.remove();
+-      this.cloneLastSLide.remove();
+-    }
+     if (this.btnPlay) {
+       this.btnPlay.replaceWith(this.btnPlay.cloneNode(true));
+     }
+@@ -272,56 +249,40 @@ export class Carousel {
+       this.executionCount = 0;
+       return;
+     }
+-    const heightValues = this.slides.map((slide) => {
+-      const banner = queryOne('.ecl-banner', slide);
+-      const bannerInstance = ECL.components.get(banner);
+-      const ratio = bannerInstance.defaultRatio();
+-      bannerInstance.setHeight(ratio);
+-      const padding =
+-        parseInt(banner.style.getPropertyValue('--banner-footer-height'), 10) ||
+-        0;
+-      const height = parseInt(banner.style.height, 10);
+-      const totalHeight = height + padding;
++
++    var heightValues = this.slides.map(function (slide) {
++      var banner = queryOne('.ecl-banner', slide);
++      var padding = parseInt(banner.style.getPropertyValue('--banner-footer-height'), 10) || 0;
++      var height = parseInt(banner.style.height, 10);
++      var totalHeight = height + padding;
+       if (banner.style.height === 'auto') {
+         return 0;
+       }
+       if (Number.isNaN(height) || height === 100) {
+         return 1;
+       }
+-
+       return totalHeight;
+     });
+-
+-    const elementHeights = heightValues.filter(
+-      (height) => height !== undefined,
+-    );
+-
+-    const tallestElementHeight = Math.max(...elementHeights);
++    var elementHeights = heightValues.filter(function (height) {
++      return height !== undefined;
++    });
++    var tallestElementHeight = Math.max.apply(Math, elementHeights);
+     // We stop checking the heights of the banner if we know that all the slides
+     // have height: auto; or if a banner with an height that is not 100% or undefined is found.
+-    if (
+-      (elementHeights.length === this.slides.length &&
+-        tallestElementHeight === 0) ||
+-      tallestElementHeight > 1
+-    ) {
++    if (elementHeights.length === this.slides.length && tallestElementHeight === 0 || tallestElementHeight > 1) {
+       clearInterval(this.intervalId);
+-
+       if (tallestElementHeight > 0) {
+         this.executionCount = 0;
+-        this.slides.forEach((slide) => {
+-          let bannerImage = null;
+-          let bannerVideo = null;
+-          const banner = queryOne('.ecl-banner', slide);
++        this.slides.forEach(function (slide) {
++          var banner = queryOne('.ecl-banner', slide);
++          var bannerImage = null;
++          var bannerVideo = null;
+           if (banner) {
+             bannerImage = queryOne('img', banner);
+             bannerVideo = queryOne('video', banner);
+-            const footerHeight =
+-              parseInt(
+-                banner.style.getPropertyValue('--banner-footer-height'),
+-                10,
+-              ) || 0;
+-            const newHeight = tallestElementHeight - footerHeight;
+-            banner.style.height = `${newHeight}px`;
++            var footerHeight = parseInt(banner.style.getPropertyValue('--banner-footer-height'), 10) || 0;
++            var newHeight = tallestElementHeight - footerHeight;
++            banner.style.height = newHeight + "px";
+           }
+           if (bannerImage) {
+             bannerImage.style.aspectRatio = 'auto';
+@@ -437,16 +398,23 @@ export class Carousel {
+   shiftSlide(dir, stopAutoPlay) {
+     if (this.allowShift) {
+       if (typeof dir === 'number') {
+-        this.index = dir;
++        this.index = dir - 1;
+       } else {
+-        this.index = dir === 'next' ? this.index + 1 : this.index - 1;
++        if (dir === 'next') {
++          if (this.total > this.index + 1) {
++            this.index = this.index + 1;
++          } else {
++            this.index = 0;
++          }
++        } else {
++          this.index - 1;
++        }
+       }
+       this.moveSlides(true);
+     }
+     if (stopAutoPlay && this.autoPlay) {
+       this.handleAutoPlay();
+     }
+-
+     this.allowShift = false;
+   }
+ 
+@@ -476,11 +444,8 @@ export class Carousel {
+       }
+     }
+     // Update index
+-    if (this.index === 0) {
+-      this.index = this.total;
+-    }
+-    if (this.index === this.total + 1) {
+-      this.index = 1;
++    if (this.index === this.total) {
++      this.index = 0;
+     }
+ 
+     // Move slide without transition to ensure infinity loop
+@@ -488,7 +453,7 @@ export class Carousel {
+ 
+     // Update pagination
+     if (this.currentSlide) {
+-      this.currentSlide.textContent = this.index;
++      this.currentSlide.textContent = this.index + 1;
+     }
+ 
+     // Update slides
+@@ -512,7 +477,7 @@ export class Carousel {
+     // Update navigation
+     if (this.navigationItems) {
+       this.navigationItems.forEach((nav, index) => {
+-        if (this.index === index + 1) {
++        if (this.index === index) {
+           nav.setAttribute('aria-current', 'true');
+           nav.removeAttribute('tabindex', -1);
+         } else {
