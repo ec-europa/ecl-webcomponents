@@ -1,7 +1,7 @@
 import { randomizedLink } from "../../utils/randomizedLink";
 
 export default {
-  title: 'Components/List/description-list',
+  title: 'Components/description-list',
   parameters: {
     badges: [
       'updated',
