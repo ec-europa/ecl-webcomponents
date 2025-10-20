@@ -2,6 +2,7 @@ import { Component, h, Prop, Element } from '@stencil/core';
 
 @Component({
   tag: 'ecl-gallery-item',
+  styleUrl: 'build/styles/ecl-gallery-item.css',
 })
 
 export class EclGalleryItem {
