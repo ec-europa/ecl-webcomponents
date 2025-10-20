@@ -34,7 +34,7 @@ export class EclBanner {
   @Prop() vertical: string = 'center';
   @Prop() srPlay: string;
   @Prop() srPause: string;
-  @Prop() fontColor: string = 'dark';
+  @Prop({mutable: true}) fontColor: string = 'dark';
   @Prop() fontSize: string = 'm';
   @Prop() credit: string;
   @Prop() size: string = 'm';
@@ -69,6 +69,10 @@ export class EclBanner {
 
   componentWillLoad() {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+
+    if (this.boxBackground === 'dark') {
+      this.fontColor = 'light';
+    }
   }
 
   componentDidLoad() {
