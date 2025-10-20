@@ -14,8 +14,11 @@ exports[`ecl-accordion renders 1`] = `
                 Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy
               </span>
               <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
-                <ecl-icon data-ecl-accordion-icon style-class="ecl-accordion__toggle-icon sc-ecl-accordion-ec">
-                  <span class="ecl-accordion__toggle-icon ecl-icon sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus wt-icon--s"></span>
+                <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
+                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder wt-icon--s"></span>
+                </ecl-icon>
+                <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
+                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus wt-icon--s"></span>
                 </ecl-icon>
               </span>
             </span>
@@ -36,8 +39,11 @@ exports[`ecl-accordion renders 1`] = `
                 Energy union and climate
               </span>
               <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
-                <ecl-icon data-ecl-accordion-icon style-class="ecl-accordion__toggle-icon sc-ecl-accordion-ec">
-                  <span class="ecl-accordion__toggle-icon ecl-icon sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder wt-icon--s"></span>
+                <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
+                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder wt-icon--s"></span>
+                </ecl-icon>
+                <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
+                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus wt-icon--s"></span>
                 </ecl-icon>
               </span>
             </span>
@@ -58,8 +64,11 @@ exports[`ecl-accordion renders 1`] = `
                 Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy
               </span>
               <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
-                <ecl-icon data-ecl-accordion-icon style-class="ecl-accordion__toggle-icon sc-ecl-accordion-ec">
-                  <span class="ecl-accordion__toggle-icon ecl-icon sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus wt-icon--s"></span>
+                <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
+                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder wt-icon--s"></span>
+                </ecl-icon>
+                <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
+                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus wt-icon--s"></span>
                 </ecl-icon>
               </span>
             </span>

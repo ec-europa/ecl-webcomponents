@@ -31,3 +31,12 @@
   border-end-end-radius: 0 !important;
   border-end-start-radius: 0 !important;
 }
+
+.ecl-accordion__item .ecl-accordion__toggle[aria-expanded='false'][data-ecl-accordion-toggle] .ecl-accordion__toggle-indicator ecl-icon .ecl-accordion__toggle-icon--minus,
+.ecl-accordion__item
+  .ecl-accordion__toggle[aria-expanded='true'][data-ecl-accordion-toggle]
+  .ecl-accordion__toggle-indicator
+  ecl-icon
+  .ecl-accordion__toggle-icon--plus:only-child {
+  display: none;
+}

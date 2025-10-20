@@ -66,15 +66,6 @@ export class EclAccordion {
         container.classList.toggle('is-first', index === 0);
         container.classList.toggle('is-last', index === items.length - 1);
       }
-
-      item.addEventListener('toggleItem', (e) => {
-        const id = e.detail;
-
-        // Just toggle the clicked item, don't collapse the others
-        if (item.itemId === id) {
-          item.expanded = !item.expanded;
-        }
-      });
     });
   }
 

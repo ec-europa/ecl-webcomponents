@@ -58,10 +58,14 @@ export class EclAccordionItem {
               </span>
               <span class={`ecl-accordion__toggle-indicator sc-ecl-accordion-${this.theme}`}>
                 <ecl-icon
-                  icon={this.expanded ? "minus" : 'plus'}
+                  icon="minus"
                   size="s"
-                  style-class={`ecl-accordion__toggle-icon sc-ecl-accordion-${this.theme}`}
-                  data-ecl-accordion-icon
+                  style-class={`ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-${this.theme}`}
+                ></ecl-icon>
+                <ecl-icon
+                  icon="plus"
+                  size="s"
+                  style-class={`ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-${this.theme}`}
                 ></ecl-icon>
               </span>
             </span>
