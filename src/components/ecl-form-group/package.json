@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-form-group",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.15.1",
+  "version": "0.16.0",
   "description": "ECL form group",
   "main": "ecl-form-group.tsx",
   "private": true,
@@ -13,13 +13,13 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/theme-ec": "5.0.0-alpha.15",
-    "@ecl/theme-eu": "5.0.0-alpha.15",
     "@ecl/builder": "5.0.0-alpha.15",
     "@ecl/form-group": "5.0.0-alpha.15",
-    "@ecl/mixins-typography": "5.0.0-alpha.15",
-    "@ecl/utility-screen-reader": "5.0.0-alpha.15",
     "@ecl/grid": "5.0.0-alpha.15",
+    "@ecl/mixins-typography": "5.0.0-alpha.15",
+    "@ecl/theme-ec": "5.0.0-alpha.15",
+    "@ecl/theme-eu": "5.0.0-alpha.15",
+    "@ecl/utility-screen-reader": "5.0.0-alpha.15",
     "cross-env": "10.1.0"
   },
   "repository": {

@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-banner",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.15.1",
+  "version": "0.16.0",
   "description": "ECL Page Banner",
   "main": "ecl-banner.tsx",
   "private": true,
@@ -14,16 +14,16 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
+    "@ecl/banner": "5.0.0-alpha.15",
     "@ecl/builder": "5.0.0-alpha.15",
+    "@ecl/grid": "5.0.0-alpha.15",
     "@ecl/theme-ec": "5.0.0-alpha.15",
     "@ecl/theme-eu": "5.0.0-alpha.15",
-    "@ecl/grid": "5.0.0-alpha.15",
-    "@ecl/banner": "5.0.0-alpha.15",
     "cross-env": "10.1.0"
   },
   "dependencies": {
-    "@ecl/web-components-icon": "0.15.1",
-    "@ecl/web-components-link": "0.15.1"
+    "@ecl/web-components-icon": "0.16.0",
+    "@ecl/web-components-link": "0.16.0"
   },
   "repository": {
     "type": "git",

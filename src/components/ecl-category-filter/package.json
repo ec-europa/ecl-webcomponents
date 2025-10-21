@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-category-filter",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.15.1",
+  "version": "0.16.0",
   "description": "ECL Category Filter",
   "main": "ecl-category-filter.tsx",
   "private": true,
@@ -14,10 +14,10 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/theme-ec": "5.0.0-alpha.15",
-    "@ecl/theme-eu": "5.0.0-alpha.15",
     "@ecl/builder": "5.0.0-alpha.15",
     "@ecl/category-filter": "5.0.0-alpha.15",
+    "@ecl/theme-ec": "5.0.0-alpha.15",
+    "@ecl/theme-eu": "5.0.0-alpha.15",
     "cross-env": "10.1.0"
   },
   "repository": {

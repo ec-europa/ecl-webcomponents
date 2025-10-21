@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-indicator",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.15.1",
+  "version": "0.16.0",
   "description": "ECL Indicator",
   "main": "ecl-indicator.tsx",
   "private": true,

@@ -126,7 +126,7 @@ jobs:
   deploy-master:
     name: deploy master branch
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/v5'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

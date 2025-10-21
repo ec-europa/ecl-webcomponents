@@ -56,7 +56,7 @@ importers:
         version: 7.27.1(@babel/core@7.28.4)
       '@ecl/ecl-webcomponents':
         specifier: 0.15.1
-        version: link:packages/ecl-webcomponents
+        version: 0.15.1
       '@ecl/preset-ec':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
@@ -279,10 +279,10 @@ importers:
         specifier: 7.21.11
         version: 7.21.11(@babel/core@7.25.2)
       '@ecl/ecl-webcomponents':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-webcomponents
       '@ecl/ecl-webcomponents-angular':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:projects/ecl-webcomponents-angular
       browser-sync:
         specifier: 3.0.4
@@ -331,7 +331,7 @@ importers:
         version: 18.2.0(rxjs@7.8.2)(zone.js@0.13.2)
       '@ecl/ecl-webcomponents':
         specifier: 0.15.1
-        version: link:../../../ecl-webcomponents
+        version: 0.15.1
       tslib:
         specifier: 2.8.1
         version: 2.8.1
@@ -339,7 +339,7 @@ importers:
   packages/ecl-webcomponents-react:
     dependencies:
       '@ecl/ecl-webcomponents':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-webcomponents
     devDependencies:
       '@types/node':
@@ -364,7 +364,7 @@ importers:
   packages/ecl-webcomponents-react-consumer:
     dependencies:
       '@ecl/ecl-webcomponents-react':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-webcomponents-react
       react:
         specifier: 18.2.0
@@ -397,7 +397,7 @@ importers:
   src/components/ecl-accordion:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-icon
     devDependencies:
       '@ecl/accordion':
@@ -434,10 +434,10 @@ importers:
   src/components/ecl-banner:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-icon
       '@ecl/web-components-link':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-link
     devDependencies:
       '@ecl/banner':
@@ -483,13 +483,13 @@ importers:
   src/components/ecl-breadcrumb:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-button
       '@ecl/web-components-icon':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-icon
       '@ecl/web-components-link':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-link
     devDependencies:
       '@ecl/breadcrumb':
@@ -523,10 +523,10 @@ importers:
   src/components/ecl-button:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-icon
       '@ecl/web-components-indicator':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-indicator
     devDependencies:
       '@ecl/builder':
@@ -587,10 +587,10 @@ importers:
   src/components/ecl-carousel:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-button
       '@ecl/web-components-icon':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-icon
     devDependencies:
       '@ecl/banner':
@@ -816,7 +816,7 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
       '@ecl/web-components-button':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-button
       cross-env:
         specifier: 10.1.0
@@ -828,10 +828,10 @@ importers:
   src/components/ecl-fact-figures:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-icon
       '@ecl/web-components-link':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-link
     devDependencies:
       '@ecl/builder':
@@ -1066,7 +1066,7 @@ importers:
   src/components/ecl-inpage-navigation:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
@@ -1163,10 +1163,10 @@ importers:
   src/components/ecl-link:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-icon
       '@ecl/web-components-indicator':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-indicator
     devDependencies:
       '@ecl/builder':
@@ -1230,19 +1230,19 @@ importers:
   src/components/ecl-media-container:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-button
       '@ecl/web-components-expandable':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-expandable
       '@ecl/web-components-icon':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-icon
       '@ecl/web-components-picture':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-picture
       '@ecl/web-components-video':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-video
     devDependencies:
       '@ecl/builder':
@@ -1361,10 +1361,10 @@ importers:
   src/components/ecl-notification:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-button
       '@ecl/web-components-icon':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
@@ -1446,10 +1446,10 @@ importers:
   src/components/ecl-popover:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-icon
       '@ecl/web-components-link':
-        specifier: 0.15.1
+        specifier: 0.16.0
         version: link:../ecl-link
     devDependencies:
       '@ecl/builder':
@@ -2872,6 +2872,10 @@ packages:
 
   '@ecl/dom-utils@5.0.0-alpha.15':
     resolution: {integrity: sha512-qkdyIw94bDmOrzqZAHV4We8kOz8gZp9gJr66XDIC9EE360egOOFpAaREmMnf2u8e2ijJ/jD98H5nScYhC3Duvg==}
+
+  '@ecl/ecl-webcomponents@0.15.1':
+    resolution: {integrity: sha512-hinqikNjx6eR7/BJWbWwXGWzYoIfKotYK56QWa3N/N8JekM9Pe5uh0NkIiwNd19sbHw2ISeH00U0mI6dnW5mkw==}
+    engines: {node: '>=18.0.0', yarn: '>=1.1.0'}
 
   '@ecl/event-manager@5.0.0-alpha.15':
     resolution: {integrity: sha512-CrXOmNwbyK9pVApS6hRUOKJ60rCPTy9pL9oFACU+Gbr+8xWegkB0Es+NnN8XTUXT4iLMerbGrCW8R403cRLu9g==}
@@ -5043,6 +5047,11 @@ packages:
     resolution: {integrity: sha512-jPRa2NMAPtm/iMY+mUaWATbIhgY5zPJfUNQyF8nwC0rMrfXifPoRCf6BbH2S4Gy7SX0X4hlP+jAbVUjQNg/P+Q==}
     peerDependencies:
       '@stencil/core': '>=2.0.0 || >=3 || >= 4.0.0-beta.0 || >= 4.0.0'
+
+  '@stencil/core@4.11.0':
+    resolution: {integrity: sha512-zsKhgIkTGo+s7IthitxR/MKiMS3Ck1yIypOdXr0aE6ofboKqe9NdffTcxZ0vel0wD2bZYOb6WfPMzuhRKk6+FA==}
+    engines: {node: '>=16.0.0', npm: '>=7.10.0'}
+    hasBin: true
 
   '@stencil/core@4.36.3':
     resolution: {integrity: sha512-C9DOaAjm+hSYRuVoUuYWG/lrYT8+4DG0AL0m1Ea9+G5v2Y6ApVpNJLbXvFlRZIdDMGecH86s6v0Gp39uockLxg==}
@@ -13474,6 +13483,10 @@ snapshots:
 
   '@ecl/dom-utils@5.0.0-alpha.15': {}
 
+  '@ecl/ecl-webcomponents@0.15.1':
+    dependencies:
+      '@stencil/core': 4.11.0
+
   '@ecl/event-manager@5.0.0-alpha.15': {}
 
   '@ecl/expandable@5.0.0-alpha.15':
@@ -15875,6 +15888,8 @@ snapshots:
   '@stencil/angular-output-target@0.10.2(@stencil/core@4.36.3)':
     dependencies:
       '@stencil/core': 4.36.3
+
+  '@stencil/core@4.11.0': {}
 
   '@stencil/core@4.36.3':
     optionalDependencies:
