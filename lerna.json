@@ -18,7 +18,7 @@
       "allowBranch": "chore/release-*"
     },
     "publish": {
-      "allowBranch": "dev"
+      "allowBranch": "v5"
     },
     "ignoreChanges": ["**/test/**", "**/*.md"]
   }
