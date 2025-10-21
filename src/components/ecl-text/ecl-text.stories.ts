@@ -116,6 +116,11 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/text',
+  parameters: {
+    badges: [
+      'updated',
+    ],  
+  },
 };
 
 const Template = args => {
