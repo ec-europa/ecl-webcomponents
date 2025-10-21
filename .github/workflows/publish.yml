@@ -1,0 +1,25 @@
+name: Publish ECL Webcomponents Packages
+
+on:
+  push:
+    branches:
+      - v5
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.12.0
+      - name: Install pnpm
+        run: npm install -g pnpm@10.9.0
+      - name: Authenticate npm
+        run: npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Package application
+        run: pnpm build
+      - name: Publish packages
+        run: ./node_modules/.bin/lerna publish from-package --yes
