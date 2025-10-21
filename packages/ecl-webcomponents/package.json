@@ -27,7 +27,7 @@
     "url": "https://github.com/ec-europa/ecl-webcomponents"
   },
   "dependencies": {
-    "@stencil/core": "4.36.3"
+    "@stencil/core": "4.38.2"
   },
   "devDependencies": {
     "@stencil/angular-output-target": "0.10.2",
