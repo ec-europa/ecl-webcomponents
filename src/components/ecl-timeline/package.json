@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-timeline",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.15.1",
+  "version": "0.16.0",
   "description": "ECL Timeline",
   "main": "ecl-textarea.tsx",
   "private": true,
@@ -14,13 +14,13 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
+    "@ecl/builder": "5.0.0-alpha.15",
+    "@ecl/grid": "5.0.0-alpha.15",
+    "@ecl/link": "5.0.0-alpha.15",
+    "@ecl/mixins-typography": "5.0.0-alpha.15",
     "@ecl/theme-ec": "5.0.0-alpha.15",
     "@ecl/theme-eu": "5.0.0-alpha.15",
-    "@ecl/builder": "5.0.0-alpha.15",
     "@ecl/timeline": "5.0.0-alpha.15",
-    "@ecl/link": "5.0.0-alpha.15",
-    "@ecl/grid": "5.0.0-alpha.15",
-    "@ecl/mixins-typography": "5.0.0-alpha.15",
     "@ecl/utility-screen-reader": "5.0.0-alpha.15",
     "cross-env": "10.1.0"
   },

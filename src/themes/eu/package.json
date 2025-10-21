@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-theme-eu",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.15.1",
+  "version": "0.16.0",
   "description": "ECL Web components theme EU",
   "main": "src/custom-properties-eu.scss",
   "private": true,
@@ -13,8 +13,8 @@
   },
   "devDependencies": {
     "@ecl/builder": "5.0.0-alpha.15",
-    "@ecl/theme-eu": "5.0.0-alpha.15",
-    "@ecl/preset-eu": "5.0.0-alpha.15"
+    "@ecl/preset-eu": "5.0.0-alpha.15",
+    "@ecl/theme-eu": "5.0.0-alpha.15"
   },
   "repository": {
     "type": "git",

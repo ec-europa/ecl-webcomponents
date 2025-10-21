@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-rating-field",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.15.1",
+  "version": "0.16.0",
   "description": "ECL Rating field",
   "main": "ecl-rating-field.tsx",
   "private": true,
@@ -13,11 +13,11 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/theme-ec": "5.0.0-alpha.15",
-    "@ecl/theme-eu": "5.0.0-alpha.15",
     "@ecl/builder": "5.0.0-alpha.15",
     "@ecl/grid": "5.0.0-alpha.15",
     "@ecl/rating-field": "5.0.0-alpha.15",
+    "@ecl/theme-ec": "5.0.0-alpha.15",
+    "@ecl/theme-eu": "5.0.0-alpha.15",
     "@ecl/utility-screen-reader": "5.0.0-alpha.15",
     "cross-env": "10.1.0"
   },

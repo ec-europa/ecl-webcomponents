@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-accordion",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.15.1",
+  "version": "0.16.0",
   "description": "ECL Button",
   "main": "ecl-accordion.tsx",
   "private": true,
@@ -14,19 +14,19 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
+    "@ecl/accordion": "5.0.0-alpha.15",
     "@ecl/builder": "5.0.0-alpha.15",
+    "@ecl/button": "5.0.0-alpha.15",
+    "@ecl/grid": "5.0.0-alpha.15",
+    "@ecl/icon": "5.0.0-alpha.15",
+    "@ecl/mixins-typography": "5.0.0-alpha.15",
     "@ecl/theme-ec": "5.0.0-alpha.15",
     "@ecl/theme-eu": "5.0.0-alpha.15",
-    "@ecl/accordion": "5.0.0-alpha.15",
-    "@ecl/button": "5.0.0-alpha.15",
-    "@ecl/icon": "5.0.0-alpha.15",
-    "@ecl/grid": "5.0.0-alpha.15",
-    "@ecl/mixins-typography": "5.0.0-alpha.15",
     "@ecl/utility-screen-reader": "5.0.0-alpha.15",
     "cross-env": "10.1.0"
   },
   "dependencies": {
-    "@ecl/web-components-icon": "0.15.1"
+    "@ecl/web-components-icon": "0.16.0"
   },
   "repository": {
     "type": "git",

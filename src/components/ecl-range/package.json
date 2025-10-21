@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-range",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.15.1",
+  "version": "0.16.0",
   "description": "ECL Range",
   "main": "ecl-range.tsx",
   "private": true,
@@ -14,13 +14,13 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/theme-ec": "5.0.0-alpha.15",
-    "@ecl/theme-eu": "5.0.0-alpha.15",
     "@ecl/builder": "5.0.0-alpha.15",
     "@ecl/grid": "5.0.0-alpha.15",
-    "@ecl/range": "5.0.0-alpha.15",
-    "@ecl/mixins-typography": "5.0.0-alpha.15",
     "@ecl/layout-form": "5.0.0-alpha.15",
+    "@ecl/mixins-typography": "5.0.0-alpha.15",
+    "@ecl/range": "5.0.0-alpha.15",
+    "@ecl/theme-ec": "5.0.0-alpha.15",
+    "@ecl/theme-eu": "5.0.0-alpha.15",
     "cross-env": "10.1.0"
   },
   "repository": {
