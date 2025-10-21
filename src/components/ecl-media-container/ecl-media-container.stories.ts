@@ -50,23 +50,21 @@ const getArgTypes = (storyName = '') => {
 
   if (storyName === 'iframe') {
     argTypes['ratio'] = {
-      control: { 
-        type: 'select',
-        labels: {
-          '16-9': '16/9', 
-          '4-3': '4/3',
-          '3-2': '3/2',
-          '1-1': '1/1',
-        },
+      type: { name: 'select' },
+      description: 'Media ratio (if empty the ratio will be set by the js)',
+      options: {
+        auto: '',
+        '16/9': '16-9',
+        '4/3': '4-3',
+        '3/2': '3-2',
+        '1/1': '1-1',
       },
-      options: [
-        '16-9',
-        '4-3',
-        '3-2',
-        '1-1'
-      ],
-      table: {
-        description: "Ratio of the media"
+      mapping: {
+        auto: '',
+        '16/9': '16-9',
+        '4/3': '4-3',
+        '3/2': '3-2',
+        '1/1': '1-1',
       },
     };
   }
@@ -106,6 +104,7 @@ const TemplateImg = (args) =>
     has-caption=${args.hasCaption}
   	image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
     image-alt="Alternative text for the image"
+    ratio="${args.ratio}"
     full-width=${args.fullWidth}
   >
     ${args.hasCaption ? args.caption : ''}
