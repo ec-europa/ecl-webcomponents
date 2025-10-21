@@ -6,6 +6,7 @@ const getArgs = () => ({
   downloadAttribute: false,
   downloadLabel: 'Download',
   downloadLink: '/example.html',
+  previewLink: false,
   language: 'English',
   meta: '(16.2 MB - PDF)',
   ariaLabel: 'Download file State of the Union 2018 brochure',
@@ -53,6 +54,10 @@ const getArgTypes = () => ({
     name: 'download-link',
     description: 'Link for the file download',
   },
+  previewLink: {
+    type: { name: 'boolean' },
+    name: 'preview-link',
+  },
   meta: {
     type: { name: 'string' },
     name: 'additional info',
@@ -86,6 +91,7 @@ const TemplateWithTranslation = args =>
   file-title="${args.fileTitle}"
   file-title-path="${args.fileTitlePath}"
   download-link="${args.downloadLink}"
+  preview-link="${args.previewLink}"
   download-label="${args.downloadLabel}"
   download-attribute=${args.downloadAttribute}
   language="${args.language}"
@@ -100,6 +106,12 @@ const TemplateWithTranslation = args =>
   labels='${args.labels && args.variant === 'thumbnail' ? '[{"variant": "highlight", "label": "Highlighted"}]' : ''}'
 >
   ${args.variant === 'thumbnail' ? args.description : ''}
+  ${args.previewLink ? 
+  `<ecl-link
+    slot="ecl-file-preview"
+    path="/example.html"
+    variant="standalone">Preview (placeholder)<span style="margin-inline-end: 24px"></span>
+  </ecl-link>` : '' }
   <ecl-file-translations
     toggle-label="Translations"
     slot="file-translations"

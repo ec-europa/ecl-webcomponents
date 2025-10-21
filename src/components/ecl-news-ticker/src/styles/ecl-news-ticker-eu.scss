@@ -7,3 +7,13 @@
   $theme: theme.$theme,
   $news-ticker: var.$news-ticker
 );
+
+@media (width >= 996px) {
+  .ecl-news-ticker__prev {
+    margin-inline-start: var(--s-xs);
+  }
+
+  .ecl-news-ticker__next {
+    margin-inline-end: var(--s-xs);
+  }
+}

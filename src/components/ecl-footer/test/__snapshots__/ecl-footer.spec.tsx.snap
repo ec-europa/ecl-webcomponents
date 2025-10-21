@@ -196,7 +196,7 @@ exports[`ecl-footer EU renders 1`] = `
   <!---->
   <ecl-text hidden="" slot="description" tag="p">
     <!---->
-    <p>
+    <p class="ecl-u-type-m">
       This site is managed by: [name of the manager of the site]
     </p>
   </ecl-text>
@@ -222,7 +222,7 @@ exports[`ecl-footer EU renders 1`] = `
         </div>
         <div class="ecl-site-footer__column">
           <div class="ecl-site-footer__section">
-            <div class="ecl-site-footer__title ecl-site-footer__title--separator ecl-u-type-prolonged-l sc-ecl-footer-eu-eu">
+            <div class="ecl-site-footer__title ecl-site-footer__title--separator ecl-u-type-m sc-ecl-footer-eu-eu">
               Contact the EU
             </div>
             <ul class="ecl-site-footer__list">
@@ -269,7 +269,7 @@ exports[`ecl-footer EU renders 1`] = `
             </ul>
           </div>
           <div class="ecl-site-footer__section">
-            <div class="ecl-site-footer__title ecl-site-footer__title--separator ecl-u-type-prolonged-l sc-ecl-footer-eu-eu">
+            <div class="ecl-site-footer__title ecl-site-footer__title--separator ecl-u-type-m sc-ecl-footer-eu-eu">
               Social Media
             </div>
             <ul class="ecl-site-footer__list">
@@ -291,7 +291,7 @@ exports[`ecl-footer EU renders 1`] = `
         </div>
         <div class="ecl-site-footer__column">
           <div class="ecl-site-footer__section">
-            <div class="ecl-site-footer__title ecl-site-footer__title--separator ecl-u-type-prolonged-l sc-ecl-footer-eu-eu">
+            <div class="ecl-site-footer__title ecl-site-footer__title--separator ecl-u-type-m sc-ecl-footer-eu-eu">
               Legal
             </div>
             <ul class="ecl-site-footer__list">
@@ -348,7 +348,7 @@ exports[`ecl-footer EU renders 1`] = `
             </ul>
           </div>
           <div class="ecl-site-footer__section">
-            <div class="ecl-site-footer__title ecl-site-footer__title--separator ecl-u-type-prolonged-l sc-ecl-footer-eu-eu">
+            <div class="ecl-site-footer__title ecl-site-footer__title--separator ecl-u-type-m sc-ecl-footer-eu-eu">
               EU institutions
             </div>
             <ul class="ecl-site-footer__list">

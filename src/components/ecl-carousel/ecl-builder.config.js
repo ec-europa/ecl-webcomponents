@@ -21,6 +21,16 @@ module.exports = {
         sourceMap: false,
       },
     },
+    {
+      entry: path.resolve(nodeModules, '@ecl/banner/banner.js'),
+      dest: path.resolve(outputFolder, 'scripts/ecl-banner-vanilla.js'),
+      options: {
+        format: 'iife',
+        moduleName: 'BANNER',
+        includePaths,
+        sourceMap: false,
+      },
+    },
   ],
   styles: [
     {

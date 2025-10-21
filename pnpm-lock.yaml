@@ -16,13 +16,13 @@ overrides:
 
 patchedDependencies:
   '@ecl/banner':
-    hash: a39e3a0b55efa10bbc0da27664c450abe160a9016a379a89eca812043aa0620a
+    hash: 476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759
     path: patches/@ecl__banner.patch
   '@ecl/builder@5.0.0-alpha.15':
-    hash: d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec
+    hash: 8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904
     path: patches/@ecl__builder@5.0.0-alpha.15.patch
   '@ecl/carousel':
-    hash: abf77f5c3eb76bcd9e6d8ca74130b0b1be33bfe6f666980d03ebad98799bdfc5
+    hash: e1576af690a67fe1f6ba64ed109575f564b81466bd8dc217a6523b5c8338cad6
     path: patches/@ecl__carousel.patch
   '@ecl/content-block@5.0.0-alpha.15':
     hash: 86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752
@@ -405,7 +405,7 @@ importers:
         version: 5.0.0-alpha.15
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/button':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -442,10 +442,10 @@ importers:
     devDependencies:
       '@ecl/banner':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=a39e3a0b55efa10bbc0da27664c450abe160a9016a379a89eca812043aa0620a)
+        version: 5.0.0-alpha.15(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -466,7 +466,7 @@ importers:
         version: 5.0.0-alpha.15
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -497,7 +497,7 @@ importers:
         version: 5.0.0-alpha.15
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/button':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -531,7 +531,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/button':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -567,7 +567,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/card':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -595,13 +595,13 @@ importers:
     devDependencies:
       '@ecl/banner':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=a39e3a0b55efa10bbc0da27664c450abe160a9016a379a89eca812043aa0620a)
+        version: 5.0.0-alpha.15(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/carousel':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=abf77f5c3eb76bcd9e6d8ca74130b0b1be33bfe6f666980d03ebad98799bdfc5)
+        version: 5.0.0-alpha.15(patch_hash=e1576af690a67fe1f6ba64ed109575f564b81466bd8dc217a6523b5c8338cad6)
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -619,7 +619,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/category-filter':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -637,7 +637,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/content-block':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)
@@ -676,7 +676,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/content-item':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -697,7 +697,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/date-block':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -721,7 +721,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/datepicker':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -754,7 +754,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/description-list':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -775,7 +775,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/separator':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -793,7 +793,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/button':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -836,7 +836,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/fact-figures':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -857,7 +857,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/featured-item':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -881,7 +881,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/file':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -902,7 +902,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/button':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -932,7 +932,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -962,7 +962,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/form-group':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
@@ -989,7 +989,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/gallery':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1013,7 +1013,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1031,7 +1031,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/icon':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1052,7 +1052,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/indicator':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1071,7 +1071,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1098,7 +1098,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/button':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1146,7 +1146,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/label':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1171,7 +1171,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/button':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1210,7 +1210,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1247,7 +1247,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1274,7 +1274,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1299,7 +1299,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1320,7 +1320,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1341,7 +1341,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1369,7 +1369,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1390,7 +1390,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1414,7 +1414,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1435,7 +1435,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/picture':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1454,7 +1454,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1481,7 +1481,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1508,7 +1508,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1532,7 +1532,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/button':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1562,7 +1562,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/button':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1604,7 +1604,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/button':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1640,7 +1640,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1661,7 +1661,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1682,7 +1682,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1710,7 +1710,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/tag':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1728,7 +1728,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1752,7 +1752,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1779,7 +1779,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/grid':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1809,7 +1809,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/video':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15
@@ -1821,7 +1821,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       ncp:
         specifier: 2.0.0
         version: 2.0.0
@@ -1836,7 +1836,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/preset-ec':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
@@ -1851,7 +1851,7 @@ importers:
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+        version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/preset-eu':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
@@ -13362,7 +13362,7 @@ snapshots:
       '@ecl/grid': 5.0.0-alpha.15
       '@ecl/icon': 5.0.0-alpha.15
 
-  '@ecl/banner@5.0.0-alpha.15(patch_hash=a39e3a0b55efa10bbc0da27664c450abe160a9016a379a89eca812043aa0620a)':
+  '@ecl/banner@5.0.0-alpha.15(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)':
     dependencies:
       '@ecl/button': 5.0.0-alpha.15
       '@ecl/dom-utils': 5.0.0-alpha.15
@@ -13383,7 +13383,7 @@ snapshots:
       '@ecl/icon': 5.0.0-alpha.15
       '@ecl/link': 5.0.0-alpha.15
 
-  '@ecl/builder@5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))':
+  '@ecl/builder@5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))':
     dependencies:
       '@babel/core': 7.28.0
       '@babel/eslint-parser': 7.28.0(@babel/core@7.28.0)(eslint@9.37.0(jiti@1.21.7))
@@ -13427,9 +13427,9 @@ snapshots:
       '@ecl/content-block': 5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)
       '@ecl/picture': 5.0.0-alpha.15
 
-  '@ecl/carousel@5.0.0-alpha.15(patch_hash=abf77f5c3eb76bcd9e6d8ca74130b0b1be33bfe6f666980d03ebad98799bdfc5)':
+  '@ecl/carousel@5.0.0-alpha.15(patch_hash=e1576af690a67fe1f6ba64ed109575f564b81466bd8dc217a6523b5c8338cad6)':
     dependencies:
-      '@ecl/banner': 5.0.0-alpha.15(patch_hash=a39e3a0b55efa10bbc0da27664c450abe160a9016a379a89eca812043aa0620a)
+      '@ecl/banner': 5.0.0-alpha.15(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
       '@ecl/button': 5.0.0-alpha.15
       '@ecl/dom-utils': 5.0.0-alpha.15
 
@@ -13654,12 +13654,12 @@ snapshots:
   '@ecl/preset-ec@5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))':
     dependencies:
       '@ecl/accordion': 5.0.0-alpha.15
-      '@ecl/banner': 5.0.0-alpha.15(patch_hash=a39e3a0b55efa10bbc0da27664c450abe160a9016a379a89eca812043aa0620a)
+      '@ecl/banner': 5.0.0-alpha.15(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
       '@ecl/blockquote': 5.0.0-alpha.15
       '@ecl/breadcrumb': 5.0.0-alpha.15
       '@ecl/button': 5.0.0-alpha.15
       '@ecl/card': 5.0.0-alpha.15
-      '@ecl/carousel': 5.0.0-alpha.15(patch_hash=abf77f5c3eb76bcd9e6d8ca74130b0b1be33bfe6f666980d03ebad98799bdfc5)
+      '@ecl/carousel': 5.0.0-alpha.15(patch_hash=e1576af690a67fe1f6ba64ed109575f564b81466bd8dc217a6523b5c8338cad6)
       '@ecl/category-filter': 5.0.0-alpha.15
       '@ecl/checkbox': 5.0.0-alpha.15
       '@ecl/color-modes': 5.0.0-alpha.15
@@ -13746,12 +13746,12 @@ snapshots:
   '@ecl/preset-eu@5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))':
     dependencies:
       '@ecl/accordion': 5.0.0-alpha.15
-      '@ecl/banner': 5.0.0-alpha.15(patch_hash=a39e3a0b55efa10bbc0da27664c450abe160a9016a379a89eca812043aa0620a)
+      '@ecl/banner': 5.0.0-alpha.15(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
       '@ecl/blockquote': 5.0.0-alpha.15
       '@ecl/breadcrumb': 5.0.0-alpha.15
       '@ecl/button': 5.0.0-alpha.15
       '@ecl/card': 5.0.0-alpha.15
-      '@ecl/carousel': 5.0.0-alpha.15(patch_hash=abf77f5c3eb76bcd9e6d8ca74130b0b1be33bfe6f666980d03ebad98799bdfc5)
+      '@ecl/carousel': 5.0.0-alpha.15(patch_hash=e1576af690a67fe1f6ba64ed109575f564b81466bd8dc217a6523b5c8338cad6)
       '@ecl/category-filter': 5.0.0-alpha.15
       '@ecl/checkbox': 5.0.0-alpha.15
       '@ecl/content-block': 5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)
@@ -13865,7 +13865,7 @@ snapshots:
 
   '@ecl/select@5.0.0-alpha.15(patch_hash=77372e7785ab162dbc0eacd1e119e9467fcdfc3de46ad333aa5ca01f2f2b094e)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))':
     dependencies:
-      '@ecl/builder': 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+      '@ecl/builder': 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/button': 5.0.0-alpha.15
       '@ecl/dom-utils': 5.0.0-alpha.15
       '@ecl/event-manager': 5.0.0-alpha.15
@@ -13925,7 +13925,7 @@ snapshots:
 
   '@ecl/table@5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))':
     dependencies:
-      '@ecl/builder': 5.0.0-alpha.15(patch_hash=d13b903a775e3b612ccd08330aa6e751a0157b84e32809a967dfa8d8db3500ec)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
+      '@ecl/builder': 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/dom-utils': 5.0.0-alpha.15
       '@ecl/grid': 5.0.0-alpha.15
       '@ecl/resources-icons': 5.0.0-alpha.15

@@ -223,8 +223,8 @@ const TemplateStandardised = (args) => `
       </ecl-social-media-follow-item>
     </ecl-social-media-follow>
     <ecl-text
-      level="5"
-      is-bold
+      size="m"
+      weight="bold"
       tag="div"
       slot="ecl-footer-list-contact"
       style-class="ecl-site-footer__title"
@@ -238,8 +238,8 @@ const TemplateStandardised = (args) => `
       Contact information of the DG
     </ecl-footer-item>
     <ecl-text
-      level="5"
-      is-bold
+      size="m"
+      weight="bold"
       tag="div"
       slot="ecl-footer-list-about"
       style-class="ecl-site-footer__title"
@@ -259,8 +259,8 @@ const TemplateStandardised = (args) => `
       Information about the DG
     </ecl-footer-item>
     <ecl-text
-      level="5"
-      is-bold
+      size="m"
+      weight="bold"
       tag="div"
       slot="ecl-footer-list-more"
       style-class="ecl-site-footer__title"
@@ -280,9 +280,9 @@ const TemplateStandardised = (args) => `
       Class name 2
     </ecl-footer-item>
     <ecl-text
-      level="5"
+      size="m"
+      weight="bold"
       tag="div"
-      is-bold
       slot="ecl-footer-list-related"
       style-class="ecl-site-footer__title"
     >
@@ -418,7 +418,7 @@ const TemplateEu = () =>
       This site is managed by: [name of the manager of the site]
     </ecl-text>
     <ecl-text
-      level="4"
+      size="m"
       slot="ecl-footer-list-main"
       tag="div"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
@@ -450,7 +450,7 @@ const TemplateEu = () =>
       Meet us at one of the EU centres
     </ecl-footer-item>
     <ecl-text
-      level="4"
+      size="m"
       tag="div"
       slot="ecl-footer-list-bottom-left"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
@@ -466,7 +466,7 @@ const TemplateEu = () =>
     </ecl-footer-item>
     <ecl-text
       tag="div"
-      level="4"
+      size="m"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-right-top"
     >
@@ -504,7 +504,7 @@ const TemplateEu = () =>
     </ecl-footer-item>
     <ecl-text
       tag="div"
-      level="4"
+      size="m"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-right"
     >
@@ -536,7 +536,7 @@ const TemplateEuHarmonised = () =>
     logo-link="${randomizedLink('/example.html')}"
   >
     <ecl-text
-      level="4"
+      size="m"
       tag="div"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-top-middle"
@@ -552,7 +552,7 @@ const TemplateEuHarmonised = () =>
     <ecl-text
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-top-middle-bottom"
-      level="4"
+      size="m"
       tag="div"
     >
       Follow us
@@ -576,7 +576,7 @@ const TemplateEuHarmonised = () =>
       Social 3
     </ecl-footer-item>
     <ecl-text
-      level="4"
+      size="m"
       tag="div"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-top-right"
@@ -603,7 +603,7 @@ const TemplateEuHarmonised = () =>
     </ecl-footer-item>
     <ecl-text
       tag="div"
-      level="4"
+      size="m"
       slot="ecl-footer-list-main"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
     >
@@ -636,7 +636,7 @@ const TemplateEuHarmonised = () =>
     </ecl-footer-item>
     <ecl-text
       tag="div"
-      level="4"
+      size="m"
       slot="ecl-footer-list-bottom-left"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
     >
@@ -649,7 +649,7 @@ const TemplateEuHarmonised = () =>
       Search for EU social media channels
     </ecl-footer-item>
     <ecl-text
-      level="4"
+      size="m"
       tag="div"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-right-top"
@@ -699,7 +699,7 @@ const TemplateEuHarmonised = () =>
       Accessibility
     </ecl-footer-item>
     <ecl-text
-      level="4"
+      size="m"
       tag="div"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-right"

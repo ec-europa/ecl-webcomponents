@@ -44,5 +44,15 @@ module.exports = {
         minify: true,
       },
     },
+    {
+      entry: path.resolve(__dirname, 'src/styles/ecl-gallery-item.scss'),
+      dest: path.resolve(outputFolder, 'styles/ecl-gallery-item.css'),
+      options: {
+        banner,
+        includePaths,
+        sourceMap: false,
+        minify: true,
+      },
+    },
   ],
 };

@@ -3,6 +3,7 @@ import { Component, h, Prop, Element } from '@stencil/core';
 @Component({
   tag: 'ecl-menu-item',
   scoped: false,
+  styleUrl: 'build/styles/ecl-menu-item.css',
 })
 
 export class EclMenuItem {

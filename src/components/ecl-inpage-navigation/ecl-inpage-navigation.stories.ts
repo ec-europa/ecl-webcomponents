@@ -44,15 +44,15 @@ const Template = args =>
       </ecl-inpage-navigation>
     </ecl-grid>
     <ecl-grid columns=9 breakpoint="l">
-      <ecl-text tag="h2" level="2" item-id="inline-nav-1">Heading 1</ecl-text>
+      <ecl-text tag="h2" type="heading" level="2" item-id="inline-nav-1">Heading 1</ecl-text>
       <ecl-text tag="p" size="m">${lorem}</ecl-text>
       <ecl-text tag="p" size="m">${lorem}</ecl-text>
-      <ecl-text tag="h2" level="2" item-id="inline-nav-2">Heading 2</ecl-text>
+      <ecl-text tag="h2" type="heading" level="2" item-id="inline-nav-2">Heading 2</ecl-text>
       <ecl-text tag="p" size="m">${lorem}</ecl-text>
       <ecl-text tag="p" size="m">${lorem}</ecl-text>
-      <ecl-text tag="h2" level="2" item-id="inline-nav-3">Heading 3</ecl-text>
+      <ecl-text tag="h2" type="heading" level="2" item-id="inline-nav-3">Heading 3</ecl-text>
       <ecl-text tag="p" size="m">${lorem}</ecl-text>
-      <ecl-text tag="h2" level="2" item-id="inline-nav-4">Heading 4</ecl-text>
+      <ecl-text tag="h2" type="heading" level="2" item-id="inline-nav-4">Heading 4</ecl-text>
       <ecl-text tag="p" size="m">${lorem}</ecl-text>
     </ecl-grid>
   </ecl-grid>

@@ -7,7 +7,7 @@ index 993c69934495749802a35a85a2f3212549d8f48e..f46039825613d9129b062ffb76b31215
      ) {
        setTimeout(() => this.waitForAspectRatioToBeDefined(), 100);
 -    } else {
-+    } else if (typeof aspectRatio === 'undefined' || aspectRatio === '') {
++    } else if (typeof aspectRatio !== 'undefined' || aspectRatio !== '') {
        this.setHeight(aspectRatio);
      }
    }

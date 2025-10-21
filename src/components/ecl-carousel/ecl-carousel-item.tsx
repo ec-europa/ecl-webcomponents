@@ -35,7 +35,6 @@ export class EclCarouselItem {
         aria-label={this.ariaLabel}
       >
         <ecl-banner
-          ecl-script
           banner-title={this.bannerTitle}
           image={this.image}
           theme={this.theme}

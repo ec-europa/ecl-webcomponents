@@ -81,8 +81,8 @@ export default {
   },
 };
 
-const Template = (args) => 
-`<ecl-gallery
+const Template = (args) =>
+`<ecl-grid container><ecl-gallery
   ecl-script
   el-id="ecl-gallery-demo"
   counter-label="Media files in this gallery"
@@ -93,7 +93,7 @@ const Template = (args) =>
   prev-label="Previous"
   full-width="${args.fullWidth}"
   grid="${args.grid}"
-  gridTemplate="${args.gridTemplate}"
+  grid-template="${args.gridTemplate}"
   ratio="${args.ratio}"
   close-label="Close"
   full-screen-label="View original"
@@ -242,7 +242,7 @@ const Template = (args) =>
   >
     EU by topic
   </ecl-gallery-item>
-</ecl-gallery>`;
+</ecl-gallery></ecl-grid>`;
 
 export const Gallery = Template.bind({});
 Gallery.storyName = 'default';

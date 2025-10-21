@@ -52,12 +52,11 @@ export class EclCarousel {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
-  componentDidLoad() {
+  componentDidRender() {
     const slides = this.el.querySelectorAll('.ecl-carousel__slide');
     slides.forEach((slide) => {
       slide.classList.add(`sc-ecl-carousel-${this.theme}`);
     });
-
     if (this.eclScript) {
       const src = getAssetPath('./build/scripts/ecl-carousel-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
@@ -65,12 +64,25 @@ export class EclCarousel {
       }
       const script = document.createElement('script');
       script.src = src;
-      script.onload = () => {
+
+      const bannerSrc = getAssetPath('./build/scripts/ecl-banner-vanilla.js');
+      if (document.querySelector(`script[src="${bannerSrc}"]`)) {
+        document.querySelector(`script[src="${bannerSrc}"]`).remove();
+      }
+      const bannerScript = document.createElement('script');
+      bannerScript.src = bannerSrc;
+      document.body.appendChild(bannerScript);
+      bannerScript.onload = () => {
         ;(window as any).ECL = (window as any).ECL || {};
         ECL.Banner = BANNER.Banner;
+      };
+
+      script.onload = () => {
+        ;(window as any).ECL = (window as any).ECL || {};
         const carousel = new CAROUSEL.Carousel(this.el.firstElementChild);
         carousel.init();
       };
+
       document.body.appendChild(script);
     }
   }

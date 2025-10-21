@@ -3,13 +3,6 @@
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
-@use '@ecl/icon/icon' with (
-  $theme: theme.$theme
-);
-@use '@ecl/button/button' with (
-  $theme: theme.$theme,
-  $button: var.$button
-);
 @use '@ecl/accordion/accordion' with (
   $theme: theme.$theme,
   $accordion: var.$accordion

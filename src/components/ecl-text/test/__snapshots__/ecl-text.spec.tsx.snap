@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-text renders correctly as a paragraph with with bold font style 1`] = `
-<ecl-text is-bold="" tag="p">
+<ecl-text tag="p" weight="bold">
   <!---->
-  <p class="ecl-u-type-bold">
+  <p class="ecl-u-type-m ecl-u-type-weight-bold">
     The quick brown fox jumps over the lazy dog
   </p>
 </ecl-text>
 `;
 
 exports[`ecl-text renders correctly as an h2 with h3 font size 1`] = `
-<ecl-text level="3" tag="h2">
+<ecl-text level="3" tag="h2" type="heading">
   <!---->
-  <h2 class="ecl-u-type-xl">
+  <h2 class="ecl-u-type-heading-3">
     The quick brown fox jumps over the lazy dog
   </h2>
 </ecl-text>

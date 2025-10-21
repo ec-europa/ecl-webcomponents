@@ -32,12 +32,12 @@ export class EclMediaContainer {
   @Prop() embeddedMedia: boolean = false;
 
   getClass(): string {
-    const styleClass = [
+    const styleClasses = [
       `ecl-media-container`,
       this.styleClass
     ];
 
-    return styleClass.join(' ');
+    return styleClasses.join(' ');
   }
 
   componentWillLoad() {

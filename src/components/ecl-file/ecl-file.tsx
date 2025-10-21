@@ -223,6 +223,7 @@ export class EclFile {
           {this.getLanguage()}        
           {this.getMeta()}
           <div class="ecl-file__action">
+            <slot name="ecl-file-preview"></slot>
             {this.getDownload()}
           </div>
         </div>

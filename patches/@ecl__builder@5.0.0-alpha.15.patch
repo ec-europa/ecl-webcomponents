@@ -16,7 +16,7 @@ index 63950a8e2632fb496e3cd4a7cd71055b72fbbd7b..07b3e6cc83afc7ffe4c2330efde64204
  
  program
 diff --git a/scripts/copy.js b/scripts/copy.js
-index 9cf847004c6382b4ad32be622dc3a15d96ed3a5b..e5743449d59effa826b50a3ec5e5e9b7154358a3 100644
+index 9cf847004c6382b4ad32be622dc3a15d96ed3a5b..6c775bbde3335ebbd9e9c1e7ddce0889c1101b2e 100644
 --- a/scripts/copy.js
 +++ b/scripts/copy.js
 @@ -1,19 +1,38 @@
@@ -74,3 +74,15 @@ index 9cf847004c6382b4ad32be622dc3a15d96ed3a5b..e5743449d59effa826b50a3ec5e5e9b7
 +    }
 +  });
  };
+diff --git a/scripts/scripts.js b/scripts/scripts.js
+index 2163437431774c460fbe84df051bb14fb578fe44..49feea65572d22736b3fca57068a70844b209314 100644
+--- a/scripts/scripts.js
++++ b/scripts/scripts.js
+@@ -63,7 +63,6 @@ export default async (input, dest, options) => {
+     name: moduleName,
+     sourcemap: sourceMap,
+     globals: options.globals,
+-    footer: `ECL.version = "${pkg.version}";`,
+   };
+ 
+   if (format === 'es') {
