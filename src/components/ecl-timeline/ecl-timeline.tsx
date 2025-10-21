@@ -38,6 +38,10 @@ export class EclTimeline {
   }
 
   componentDidLoad() {
+    if (this.el.querySelector('.ecl-timeline__item--headline')) {
+      this.el.firstElementChild.classList.add('ecl-timeline--has-headline');
+    }
+
     if (this.eclScript) {
       // Load the ECL vanilla js if not already present.
       const src = getAssetPath('./build/scripts/ecl-timeline-vanilla.js');

@@ -103,6 +103,7 @@ const getArgTypes = () => {
       name: 'enhanced type',
       type: { name: 'select' },
       options: ['enhanced', 'strong', 'light'],
+      if: { arg: 'enhance', truthy: true },
     },
     text: {
       type: { name: 'string' },
