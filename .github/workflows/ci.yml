@@ -5,7 +5,7 @@ on:
     types: [opened, synchronize]
   push:
     branches:
-      - master
+      - v5
       - dev
       - ecl-v5-dev
 
@@ -124,7 +124,7 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
   deploy-master:
-    name: deploy master branch
+    name: deploy v5 branch
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/v5'
     steps:

@@ -23,4 +23,4 @@ jobs:
       - name: Package application
         run: pnpm build
       - name: Publish packages
-        run: ./node_modules/.bin/lerna publish from-package --yes
+        run: ./node_modules/.bin/lerna publish from-package --no-private --yes
