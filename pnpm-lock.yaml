@@ -1618,32 +1618,32 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/resources-ec-logo':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/resources-eu-logo':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/site-header':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -2944,6 +2944,9 @@ packages:
   '@ecl/datepicker@5.0.0-alpha.15':
     resolution: {integrity: sha512-qssdb81h9GFnn0ZlqC+OvuD1QsxUQHFN+qd4M0ydliE1AwnXreTEyoJGeEOb4CNCRe/nlL5KP3XJbExmkfIptQ==}
 
+  '@ecl/datepicker@5.0.0-alpha.17':
+    resolution: {integrity: sha512-uhUrAgDc8uT34lU4EwFnwQQKyOqmRLcfyQonosguTe2c/9N56wvcjkPz6Ke+YLu+mN6DvBMbFnic41q6LzroSw==}
+
   '@ecl/description-list@5.0.0-alpha.15':
     resolution: {integrity: sha512-Fg3U8LTbPKt5PYEnrzim7s1kzR4WPdCGf8gNiJDISOJiQAQlnSeZFcn32+sy2Phd3+nyoIq74i0Nm0A/huyHYA==}
 
@@ -2977,11 +2980,17 @@ packages:
   '@ecl/file-upload@5.0.0-alpha.15':
     resolution: {integrity: sha512-pTaBgRTNw4Sd/KKOQE20wCWGBpqFQylumkegJx3mjcmni7cIMT1LziJEGl73JH3up9cROZIH1fJkhFvMa+j+1Q==}
 
+  '@ecl/file-upload@5.0.0-alpha.17':
+    resolution: {integrity: sha512-7h9g8q31XlrEIxZ2Ab2OrbAe0WdiliQyS4nRiz1aMq/YuDlbtq2+/Zhh0gthufHyVCvMosNISUC8a9BhQPYsZA==}
+
   '@ecl/file@5.0.0-alpha.15':
     resolution: {integrity: sha512-IJkWum3XBnBokTCLHCZbyAT5hnYlKNp9+gfdf+Xm5PwykCHqm4uwAh+QKLE+oemSIUV09IQybNrk46B/Ms04zw==}
 
   '@ecl/form-group@5.0.0-alpha.15':
     resolution: {integrity: sha512-JCe5AdO5U+Qr3KPLkPHJI2mqGyNoBs/gxJ3Rf3MW0NtL/SkvWGoYUSUE4QgVx8WjUTSXfCKyhWpX2Hd5pn0vNA==}
+
+  '@ecl/form-group@5.0.0-alpha.17':
+    resolution: {integrity: sha512-EPIcZSIxGmjOvIK6BuUW228aPM7BVScKblbhVhHVFL1fZpcFOJCckK+hmZ6MdCqJdQab4ieGfHNEcjPt9agQsQ==}
 
   '@ecl/gallery@5.0.0-alpha.15':
     resolution: {integrity: sha512-T0fJhREion3uCPNOY234HKjy4OXZSgd4zHByqbY0VxrlDEoIyMyEYsqoBcBMsi09y2BxZ4PK/IGePmnh84GDuQ==}
@@ -3037,6 +3046,9 @@ packages:
   '@ecl/menu@5.0.0-alpha.15':
     resolution: {integrity: sha512-ECYC2RXCLmPoiHT00E5twC/N4BrLcJDh/jJYYUVUReyjHP8YJqI2vIEH0s2zJjjzfheIZXK5A8SClB/oAKIIjQ==}
 
+  '@ecl/menu@5.0.0-alpha.17':
+    resolution: {integrity: sha512-YuDrGL6Rlv5pQMB0zc7mIjLtkOYzjfTyHz0TM78auzV/YHM4YxVnb4zjNnlc30foog49FcTs3FCtHtJ6W44tyQ==}
+
   '@ecl/mixins-typography@5.0.0-alpha.15':
     resolution: {integrity: sha512-wvgFHvQQAIJEwuQSyWXsqBjL4wY/63M+G/Q3kf6mkpBtMyMja+n6gKG5M8yBrBEgjvmuks8Yrb0HNC0WFdR5kA==}
 
@@ -3054,6 +3066,9 @@ packages:
 
   '@ecl/notification@5.0.0-alpha.15':
     resolution: {integrity: sha512-jq3dqUlbYqKdo3KGc0ufvCTGuMA0/9fjOKaeXnQk0KQF5KB8z90fUqhm42KWfevyhX/Rre+0NW3WuzOMUaLJAA==}
+
+  '@ecl/notification@5.0.0-alpha.17':
+    resolution: {integrity: sha512-/uvw29LQfthkVRzgmyzQTeMbDLdfoIBZFgwwnn4Pzg/DmOQvFYL7QlEPx/r8CM2nxl8EXImfUOQtaI5zDxNkfg==}
 
   '@ecl/ordered-list@5.0.0-alpha.15':
     resolution: {integrity: sha512-QCxGwA9XTwJJzCCo4aIgCaMBC8pv15Zurw2vi2cTfOyzdXPhn4slRpq2Bk+dEAITSlUMLo2YuTqEg+g8iKcpWQ==}
@@ -3082,23 +3097,41 @@ packages:
   '@ecl/radio@5.0.0-alpha.15':
     resolution: {integrity: sha512-AZSWtxyZyHYQaP7UNGmUcRRjOulBcqcInJ2k/RmI7C1DM09/EVjKZLfyqSN3ZAujieA99TBcKGvNHhY4Om1ueQ==}
 
+  '@ecl/radio@5.0.0-alpha.17':
+    resolution: {integrity: sha512-3Gps2P7uno3w2cMsBUG0G+qDkRubLM87hC78zTZLPL9kEKmROp4YC9Kj7Gn/BRV4ZUwSSk695hSaETSmip17jw==}
+
   '@ecl/range@5.0.0-alpha.15':
     resolution: {integrity: sha512-6dVhtc3n7uT72tADXmmndI/MiqSsfH7rQkLEXleYVf2exOrIoy83R0mD/saHjoKipjNVsKHhkPriuhYBSsnGKA==}
+
+  '@ecl/range@5.0.0-alpha.17':
+    resolution: {integrity: sha512-nSJ8QT2himufoorWAeF5pQyhPmW4BQ9nsu5JkiRtyO/faW7p7iJRThotcdS+EFxk+2PY6NnQXuJ+eh7o3AeGUQ==}
 
   '@ecl/rating-field@5.0.0-alpha.15':
     resolution: {integrity: sha512-jeImTjobR5Lw3768HPAabko8+aXBnNJMqRsHYD/F3kfsb2VJlLqxmmpwttIWLaFHtlHbXml5v9ZkKJpG9D48nA==}
 
+  '@ecl/rating-field@5.0.0-alpha.17':
+    resolution: {integrity: sha512-Cy5hseh+k9iq1lE3FJP/7E5WgiGnujznXuf11k8hk7pqu8mw7ftRN0xyxmOHYixji8VKgimlJj69z8kcNv9ahQ==}
+
   '@ecl/resources-ec-logo@5.0.0-alpha.15':
     resolution: {integrity: sha512-EGoN95aq36K4jJB+7TP48H4cAKXnZh3NqmvGM6oNGZxZwzjNvtoTL+5st9YvrXm/ftEcbHS4A9BW+d0STnt5TQ==}
 
+  '@ecl/resources-ec-logo@5.0.0-alpha.17':
+    resolution: {integrity: sha512-t3yRM3iDwIsZa4Ishi4tPP5Q92UTmv+ZX2yllV6VEy4HDNlLygwsz25d9OXL810jQhj7ojtc8A3d+SekK2UA3Q==}
+
   '@ecl/resources-eu-logo@5.0.0-alpha.15':
     resolution: {integrity: sha512-xSlT4y6YzoDQkMHulGkFso0birY7zZKmiCiya/uoRKKfdB9M3xS8hXdWf+bLhkTLLfo7cfMoOiVzV6YQNpwAqg==}
+
+  '@ecl/resources-eu-logo@5.0.0-alpha.17':
+    resolution: {integrity: sha512-Ux1PI9MduZQpCRwnbvgka1WzA0+u5rfY692AdH3rp/3gh/vnrjikuyXQJPLWG1692u993HOhBXoFa7TYMbWOpg==}
 
   '@ecl/resources-icons@5.0.0-alpha.15':
     resolution: {integrity: sha512-4UCQbkOLjteydADl5rsQlM5immoRPXmIQxz7xVOr2unuhBmjKYBQl1Wuw+iKk66+MfF+zQnFJa1KmTUK2k5/jA==}
 
   '@ecl/search-form@5.0.0-alpha.15':
     resolution: {integrity: sha512-tNpmuZJVoE+yDeOTvp9wAki+F5ml3hQB+KFp6ARveEONJxrVMwtzO1C10GST8e5awBWhlzjqRHvCyfZCiMEwcA==}
+
+  '@ecl/search-form@5.0.0-alpha.17':
+    resolution: {integrity: sha512-aLXOih3ECQ5TjiDYVcP6ngXFSomLayX+eofrtaKlRfrs2RsI7U4nS4+A9Qy+f2S+3Y3D8RgZgt1Nb4FGCtAQ0Q==}
 
   '@ecl/select@5.0.0-alpha.15':
     resolution: {integrity: sha512-qCQdYAu8SFcXhlQQU2bo3nFB6o0mhGkf6DBn8Aon2EWgz+w6ErBj7BPPNEoo4qLu5X0cRCIN5qzb7gnmVBB07Q==}
@@ -3114,6 +3147,9 @@ packages:
 
   '@ecl/site-header@5.0.0-alpha.15':
     resolution: {integrity: sha512-FstSQT0BdiiqwEyg5cVWz+sA0Sdm1otPeQvishHnYgmxJIbkwPlkYKZFeZItVce60ZMvftvDBy5GryZNVBs2Yg==}
+
+  '@ecl/site-header@5.0.0-alpha.17':
+    resolution: {integrity: sha512-Fu1EFymxp5Atwh+CN9HxifScjjqVpjCHrSNnB56W39cdhi+0yJtiXaA/AlvMeRaexj3snb8PQ9jXXAOouk3slw==}
 
   '@ecl/skip-link@5.0.0-alpha.15':
     resolution: {integrity: sha512-XA0tJQR89Wuyeh5OzWMnRQSRMSP0YPDZ6Q6K5GytxaAdaZ3N/VpXO2HtRzqc5BAF6CwLitThEASPqjfWF6S6Uw==}
@@ -3141,6 +3177,9 @@ packages:
 
   '@ecl/text-area@5.0.0-alpha.15':
     resolution: {integrity: sha512-p/wwB1JTz/VunBV43pKNiU3uVIJPnyfml9v4Igtybg2jAE49+LqTzlKVyErn9aWSEurJ4z9JFCtRWXcwVRorFw==}
+
+  '@ecl/text-area@5.0.0-alpha.17':
+    resolution: {integrity: sha512-rfmIsZ4JVEqEFRRwWezYmNBDDG+UwcLC6xKOg8+DOpgtPVKsTuqDbzp1unI4WOQ6N+9x9ra1kpyke2sgS22M1Q==}
 
   '@ecl/text-input@5.0.0-alpha.15':
     resolution: {integrity: sha512-2xflg9riwMryM3rP237N3ZGn1g1HQZhd8CuWufisaHDe6Nx3WQiyLAOZcXqFGD0WnlgAnHNf48r8LyJawy+Kww==}
@@ -6201,6 +6240,9 @@ packages:
 
   bowser@2.11.0:
     resolution: {integrity: sha512-AlcaJBi/pqqJBIQ8U9Mcpc9i8Aqxn88Skv5d+xBX006BY5u8N3mGLHa5Lgppa7L/HfwgwLgZ6NYs+Ag6uUmJRA==}
+
+  bowser@2.12.1:
+    resolution: {integrity: sha512-z4rE2Gxh7tvshQ4hluIT7XcFrgLIQaw9X3A+kTTRdovCz5PMukm/0QC/BKSYPj3omF5Qfypn9O/c5kgpmvYUCw==}
 
   brace-expansion@1.1.12:
     resolution: {integrity: sha512-9T9UjW3r0UW5c1Q7GTwllptXwhvYmEzFhzMfZ9H7FQWt+uZePjZPjBP/W1ZEyZ1twGWom5/56TF4lPcqjnDHcg==}
@@ -14370,6 +14412,11 @@ snapshots:
       '@ecl/icon': 5.0.0-alpha.15
       pikaday: 1.8.2
 
+  '@ecl/datepicker@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/icon': 5.0.0-alpha.17
+      pikaday: 1.8.2
+
   '@ecl/description-list@5.0.0-alpha.15':
     dependencies:
       '@ecl/dom-utils': 5.0.0-alpha.15
@@ -14418,6 +14465,11 @@ snapshots:
       '@ecl/dom-utils': 5.0.0-alpha.15
       '@ecl/event-manager': 5.0.0-alpha.15
 
+  '@ecl/file-upload@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/dom-utils': 5.0.0-alpha.17
+      '@ecl/event-manager': 5.0.0-alpha.17
+
   '@ecl/file@5.0.0-alpha.15':
     dependencies:
       '@ecl/button': 5.0.0-alpha.15
@@ -14440,6 +14492,26 @@ snapshots:
       '@ecl/select': 5.0.0-alpha.15(patch_hash=77372e7785ab162dbc0eacd1e119e9467fcdfc3de46ad333aa5ca01f2f2b094e)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/text-area': 5.0.0-alpha.15
       '@ecl/text-input': 5.0.0-alpha.15
+    transitivePeerDependencies:
+      - '@types/babel__core'
+      - bufferutil
+      - debug
+      - eslint
+      - supports-color
+      - utf-8-validate
+
+  '@ecl/form-group@5.0.0-alpha.17(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))':
+    dependencies:
+      '@ecl/checkbox': 5.0.0-alpha.17
+      '@ecl/datepicker': 5.0.0-alpha.17
+      '@ecl/file-upload': 5.0.0-alpha.17
+      '@ecl/icon': 5.0.0-alpha.17
+      '@ecl/radio': 5.0.0-alpha.17
+      '@ecl/range': 5.0.0-alpha.17
+      '@ecl/rating-field': 5.0.0-alpha.17
+      '@ecl/select': 5.0.0-alpha.17(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
+      '@ecl/text-area': 5.0.0-alpha.17
+      '@ecl/text-input': 5.0.0-alpha.17
     transitivePeerDependencies:
       - '@types/babel__core'
       - bufferutil
@@ -14542,6 +14614,15 @@ snapshots:
       bowser: 2.11.0
       focus-trap: 7.6.5
 
+  '@ecl/menu@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/button': 5.0.0-alpha.17
+      '@ecl/dom-utils': 5.0.0-alpha.17
+      '@ecl/event-manager': 5.0.0-alpha.17
+      '@ecl/link': 5.0.0-alpha.17
+      bowser: 2.12.1
+      focus-trap: 7.6.5
+
   '@ecl/mixins-typography@5.0.0-alpha.15':
     dependencies:
       '@ecl/grid': 5.0.0-alpha.15
@@ -14575,6 +14656,13 @@ snapshots:
       '@ecl/dom-utils': 5.0.0-alpha.15
       '@ecl/event-manager': 5.0.0-alpha.15
       '@ecl/icon': 5.0.0-alpha.15
+
+  '@ecl/notification@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/button': 5.0.0-alpha.17
+      '@ecl/dom-utils': 5.0.0-alpha.17
+      '@ecl/event-manager': 5.0.0-alpha.17
+      '@ecl/icon': 5.0.0-alpha.17
 
   '@ecl/ordered-list@5.0.0-alpha.15': {}
 
@@ -14786,18 +14874,33 @@ snapshots:
 
   '@ecl/radio@5.0.0-alpha.15': {}
 
+  '@ecl/radio@5.0.0-alpha.17': {}
+
   '@ecl/range@5.0.0-alpha.15':
     dependencies:
       '@ecl/dom-utils': 5.0.0-alpha.15
       '@ecl/layout-form': 5.0.0-alpha.15
 
+  '@ecl/range@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/dom-utils': 5.0.0-alpha.17
+      '@ecl/layout-form': 5.0.0-alpha.17
+
   '@ecl/rating-field@5.0.0-alpha.15':
     dependencies:
       '@ecl/icon': 5.0.0-alpha.15
 
+  '@ecl/rating-field@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/icon': 5.0.0-alpha.17
+
   '@ecl/resources-ec-logo@5.0.0-alpha.15': {}
 
+  '@ecl/resources-ec-logo@5.0.0-alpha.17': {}
+
   '@ecl/resources-eu-logo@5.0.0-alpha.15': {}
+
+  '@ecl/resources-eu-logo@5.0.0-alpha.17': {}
 
   '@ecl/resources-icons@5.0.0-alpha.15': {}
 
@@ -14805,6 +14908,18 @@ snapshots:
     dependencies:
       '@ecl/button': 5.0.0-alpha.15
       '@ecl/form-group': 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
+    transitivePeerDependencies:
+      - '@types/babel__core'
+      - bufferutil
+      - debug
+      - eslint
+      - supports-color
+      - utf-8-validate
+
+  '@ecl/search-form@5.0.0-alpha.17(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))':
+    dependencies:
+      '@ecl/button': 5.0.0-alpha.17
+      '@ecl/form-group': 5.0.0-alpha.17(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
     transitivePeerDependencies:
       - '@types/babel__core'
       - bufferutil
@@ -14871,6 +14986,27 @@ snapshots:
       - supports-color
       - utf-8-validate
 
+  '@ecl/site-header@5.0.0-alpha.17(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))':
+    dependencies:
+      '@ecl/button': 5.0.0-alpha.17
+      '@ecl/dom-utils': 5.0.0-alpha.17
+      '@ecl/grid': 5.0.0-alpha.17
+      '@ecl/icon': 5.0.0-alpha.17
+      '@ecl/link': 5.0.0-alpha.17
+      '@ecl/menu': 5.0.0-alpha.17
+      '@ecl/mixins-typography': 5.0.0-alpha.17
+      '@ecl/notification': 5.0.0-alpha.17
+      '@ecl/picture': 5.0.0-alpha.17
+      '@ecl/search-form': 5.0.0-alpha.17(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
+      focus-trap: 7.6.5
+    transitivePeerDependencies:
+      - '@types/babel__core'
+      - bufferutil
+      - debug
+      - eslint
+      - supports-color
+      - utf-8-validate
+
   '@ecl/skip-link@5.0.0-alpha.15':
     dependencies:
       '@ecl/link': 5.0.0-alpha.15
@@ -14920,6 +15056,8 @@ snapshots:
       '@ecl/icon': 5.0.0-alpha.17
 
   '@ecl/text-area@5.0.0-alpha.15': {}
+
+  '@ecl/text-area@5.0.0-alpha.17': {}
 
   '@ecl/text-input@5.0.0-alpha.15': {}
 
@@ -18160,6 +18298,8 @@ snapshots:
   boolbase@1.0.0: {}
 
   bowser@2.11.0: {}
+
+  bowser@2.12.1: {}
 
   brace-expansion@1.1.12:
     dependencies:
