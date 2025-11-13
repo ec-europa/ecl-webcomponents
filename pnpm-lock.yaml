@@ -1654,17 +1654,20 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/social-media-follow':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -3156,6 +3159,9 @@ packages:
 
   '@ecl/social-media-follow@5.0.0-alpha.15':
     resolution: {integrity: sha512-qjDRo1a66dzGVyTmuip2jz6K3Uz+NmdH64c2UDbnufPtfM2mTWm5gG5D+P+zD+B7dwbxDJ4OSyp6J4kLzKIoDA==}
+
+  '@ecl/social-media-follow@5.0.0-alpha.17':
+    resolution: {integrity: sha512-sFSWaSTirwLYkOKazdXft2i6W48D1YGRUfXkAOvb+gZXWrZAEXodfi9VaB1KI7m+sgB7NgjWgFX37punyn5fXA==}
 
   '@ecl/spinner@5.0.0-alpha.15':
     resolution: {integrity: sha512-Kxnd65fIVeZVRblV4TVIgPBVDvWxdGa/aGfbLlxE5Xq0aUwYhTg0ctpaZr6tyQMULtG4p20P/25ogbuIEZkQRQ==}
@@ -15016,6 +15022,10 @@ snapshots:
     dependencies:
       '@ecl/grid': 5.0.0-alpha.15
       '@ecl/link': 5.0.0-alpha.15
+
+  '@ecl/social-media-follow@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/link': 5.0.0-alpha.17
 
   '@ecl/spinner@5.0.0-alpha.15': {}
 
