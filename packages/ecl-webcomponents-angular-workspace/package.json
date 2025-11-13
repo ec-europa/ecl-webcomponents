@@ -41,8 +41,8 @@
     "karma-jasmine-html-reporter": "2.1.0",
     "ncp": "2.0.0",
     "ng-packagr": "18.2.0",
-    "nodemon": "3.1.10",
-    "rimraf": "6.0.1",
+    "nodemon": "3.1.11",
+    "rimraf": "6.1.0",
     "typescript": "5.5.4"
   }
 }
