@@ -838,17 +838,17 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.37.0(jiti@1.21.7))
       '@ecl/fact-figures':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -2840,6 +2840,9 @@ packages:
   '@ecl/button@5.0.0-alpha.15':
     resolution: {integrity: sha512-AgptgvKDl+MtV9vNEsdVJEg/DRiAhSIhc0/5YxWnsBk9NyW2epdTu8Z2Nl4p9LJ89C65tssetQVc3CaHdxtkbA==}
 
+  '@ecl/button@5.0.0-alpha.17':
+    resolution: {integrity: sha512-TOq4E3Z2E2Ky5vGRmoYgdoL8llHiFbbLuKTPgyBoaT/pQ/bD+Al2W7goVQQCco9X4MNBAZ5rGH9E5lfvUEdSgQ==}
+
   '@ecl/card@5.0.0-alpha.15':
     resolution: {integrity: sha512-G5mM+q41D5tI8cUzQBpTjLyLkXCefwgL4ckc5Xq5sWsDf92gPJ7H57KDRRLO0Kz4+pfmsedH+zlgbWb5tEgrfQ==}
 
@@ -2882,6 +2885,9 @@ packages:
   '@ecl/fact-figures@5.0.0-alpha.15':
     resolution: {integrity: sha512-d7y3XXs8TuEhVqgag4cKvYDt/A4Y8JCXoJSZqKUjoVbrPzLVENx2+eGUYhV+N8O9VLBEIn+bb3FIAH/mv1NVwg==}
 
+  '@ecl/fact-figures@5.0.0-alpha.17':
+    resolution: {integrity: sha512-jZhXM2qMZfQUt7gWcm1EOHbMYSZ8IRr/QPa3raNzkb1ViJoZibWAQovROu8F11X0ipRmIY3k9o6CCBHmINe03A==}
+
   '@ecl/featured-item@5.0.0-alpha.15':
     resolution: {integrity: sha512-fbMgeKW0LR8dnZVdEP4YouquqBJ0YK5qXrFykUkly77Zc8zQkQnhwkO8THF5oMgf2WHIX3HqHykf6ohOV2cDog==}
 
@@ -2900,11 +2906,20 @@ packages:
   '@ecl/grid@5.0.0-alpha.15':
     resolution: {integrity: sha512-z1kgc+YriX3U4VRjGibM/NBMzp22NFBdK2QHLVXgNm2ZZ5GT+x/gOI17Sh3ZjTrRuKlGlVImjy+Sz1bI7mg+Ag==}
 
+  '@ecl/grid@5.0.0-alpha.17':
+    resolution: {integrity: sha512-Jzq1rLM/K0tl6462R+zl2a4aoU0eH5F/Rhmt5wm7EXxMf/g14PGabQOL38TAaVjDGdZ/ngCYzvlHV9xMtzyw/A==}
+
   '@ecl/icon@5.0.0-alpha.15':
     resolution: {integrity: sha512-+L1JcNiOaDCcftzTS1mPavBaoAl7aYbZIun7Ryrq/7HC7LJTXoAKEFkMN0muoxrkwiiJX+M0V3PyCyVd7Fgbjg==}
 
+  '@ecl/icon@5.0.0-alpha.17':
+    resolution: {integrity: sha512-64np61RQDVS6a4m2/KGeAh5rcXdjEel/ub7AtgAznb820XjKuL4X42hJoV8zx5DW1ZEcSRz0BxPRjmLP6WZQZQ==}
+
   '@ecl/indicator@5.0.0-alpha.15':
     resolution: {integrity: sha512-wF4Lc7dmKZENc8OrzrfTBC48fnJbCVRBKEcg7S5qybImcGQ4MHq513IJIrBkMgTSMbziu2leZEOWb66oIP7DWA==}
+
+  '@ecl/indicator@5.0.0-alpha.17':
+    resolution: {integrity: sha512-kWoGK8uljlg4KDH1pK3OSLWDtqR+yCbsN0RtMnkszUdXFXhyT7nwhSGilenPWnl5zmHB7d8N5uvcR5mep56TvA==}
 
   '@ecl/inpage-navigation@5.0.0-alpha.15':
     resolution: {integrity: sha512-gQNzGoOKBzdjhmJohffTqQT+vCi67/WZsIRvtEFccOxQYmu0VPplhenXqCWhVSkscEw+RpmbjcoT0Y4X/CKQbA==}
@@ -2917,6 +2932,9 @@ packages:
 
   '@ecl/link@5.0.0-alpha.15':
     resolution: {integrity: sha512-TYJQ87NTOI2cg1PLhVf3n6WoPaQ9Wo9416zOW8HOIi30xMu0oJkFzIEBJMT+3f/Gn6uhpS9QMYO8RdUsXOLcHA==}
+
+  '@ecl/link@5.0.0-alpha.17':
+    resolution: {integrity: sha512-i31FDG8xiqXVZqsOA2JklunRhcpVmCf83NVFu0MQsrt9g1ORdx0kyOi3Pb1gFMj/6uhktRoBN+ekUopyv2Iing==}
 
   '@ecl/list-illustration@5.0.0-alpha.15':
     resolution: {integrity: sha512-pKVkahR4QIbQGWfTFj0N5/CUvOZNHMTG3Y+Ff14gSqTSsO7hLarDBhANhzqx3e8wl8V2VhkIky57jkOKxDDJ1g==}
@@ -3029,8 +3047,14 @@ packages:
   '@ecl/theme-ec@5.0.0-alpha.15':
     resolution: {integrity: sha512-ShAxVBDhkznyeNALppNoWkhEv+zJkzWEirZ83ohQ5s8pFXjTNW1mNo7mmIGdFh8CAZl14PCbGA4sgx0uOeQ0Iw==}
 
+  '@ecl/theme-ec@5.0.0-alpha.17':
+    resolution: {integrity: sha512-HuHCb5yVt8U2v42Nuwt0acZxaia97w5K65lnH6MnKbrydaCRIPcSo+PjQ9K/4YfoOnwgQIrvSgsYLp4y+27o3Q==}
+
   '@ecl/theme-eu@5.0.0-alpha.15':
     resolution: {integrity: sha512-6kTKdhmFUgf4kOc4yHLMrH1ZhJlETF9McJKLMEBr7xr71cGb1VToJmUdr/VaG3oL84L9bL1gwwui4jyK7bXr5A==}
+
+  '@ecl/theme-eu@5.0.0-alpha.17':
+    resolution: {integrity: sha512-deKLvBnFgp/zMdKWoYoQ9w7/CFeKZQV00dfo2p3p3+2wqVf7nBRGcfwlGkb836bIctlVE+jJLaN4NDUndWJuPw==}
 
   '@ecl/timeline@5.0.0-alpha.15':
     resolution: {integrity: sha512-LjqHaajBbQlh3agE7MPlswg387QVXxmRmNaXjHBo1/Ni0PPmaHyKEa/kA8fClOSrYOIxLTvqHHqBUI5rBw9qtg==}
@@ -13422,6 +13446,11 @@ snapshots:
       '@ecl/icon': 5.0.0-alpha.15
       '@ecl/indicator': 5.0.0-alpha.15
 
+  '@ecl/button@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/icon': 5.0.0-alpha.17
+      '@ecl/indicator': 5.0.0-alpha.17
+
   '@ecl/card@5.0.0-alpha.15':
     dependencies:
       '@ecl/content-block': 5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)
@@ -13487,6 +13516,11 @@ snapshots:
       '@ecl/icon': 5.0.0-alpha.15
       '@ecl/link': 5.0.0-alpha.15
 
+  '@ecl/fact-figures@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/icon': 5.0.0-alpha.17
+      '@ecl/link': 5.0.0-alpha.17
+
   '@ecl/featured-item@5.0.0-alpha.15':
     dependencies:
       '@ecl/link': 5.0.0-alpha.15
@@ -13541,9 +13575,15 @@ snapshots:
 
   '@ecl/grid@5.0.0-alpha.15': {}
 
+  '@ecl/grid@5.0.0-alpha.17': {}
+
   '@ecl/icon@5.0.0-alpha.15': {}
 
+  '@ecl/icon@5.0.0-alpha.17': {}
+
   '@ecl/indicator@5.0.0-alpha.15': {}
+
+  '@ecl/indicator@5.0.0-alpha.17': {}
 
   '@ecl/inpage-navigation@5.0.0-alpha.15':
     dependencies:
@@ -13565,6 +13605,11 @@ snapshots:
   '@ecl/link@5.0.0-alpha.15':
     dependencies:
       '@ecl/icon': 5.0.0-alpha.15
+
+  '@ecl/link@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/button': 5.0.0-alpha.17
+      '@ecl/icon': 5.0.0-alpha.17
 
   '@ecl/list-illustration@5.0.0-alpha.15':
     dependencies:
@@ -13956,7 +14001,11 @@ snapshots:
 
   '@ecl/theme-ec@5.0.0-alpha.15': {}
 
+  '@ecl/theme-ec@5.0.0-alpha.17': {}
+
   '@ecl/theme-eu@5.0.0-alpha.15': {}
+
+  '@ecl/theme-eu@5.0.0-alpha.17': {}
 
   '@ecl/timeline@5.0.0-alpha.15':
     dependencies:
