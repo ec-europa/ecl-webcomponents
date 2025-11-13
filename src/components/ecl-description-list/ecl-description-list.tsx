@@ -73,6 +73,7 @@ export class EclDescriptionList {
         if (seeMore[0]) {
           seeMore.forEach((more) => {
             more.classList.add(`sc-ecl-description-list-${this.theme}`);
+            more.firstElementChild.classList.add(`sc-ecl-description-list-${this.theme}`);
           });
         }
       };

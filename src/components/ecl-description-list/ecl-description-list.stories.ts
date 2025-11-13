@@ -13,7 +13,7 @@ const Template = (args) =>
   `<ecl-description-list
     variant="${args.variant}"
     visible-items="${args.visibleItems}"
-    more-label="See all items"
+    more-label="Show more items"
     color-mode="${args.color_mode}"
     ecl-script
   >

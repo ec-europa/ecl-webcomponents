@@ -3,9 +3,7 @@
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
-@use '@ecl/layout-form/mixins' as layoutFormMixins with (
-  $theme: theme.$theme
-);
+@use '@ecl/layout-form/mixins' as layoutFormMixins;
 @use '@ecl/checkbox/checkbox' with (
   $theme: theme.$theme,
   $checkbox: var.$checkbox

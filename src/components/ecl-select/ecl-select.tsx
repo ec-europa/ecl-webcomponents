@@ -163,7 +163,6 @@ export class EclSelect {
         </select>
         <div class="ecl-select__icon">
           <ecl-button
-            styleClass={`sc-ecl-select-${this.theme}`}
             theme={this.theme}
             variant="ghost"
             hide-label
