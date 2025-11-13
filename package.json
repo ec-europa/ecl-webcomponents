@@ -82,6 +82,7 @@
     "@storybook/addon-docs": "10.0.7",
     "@storybook/addon-links": "10.0.7",
     "@storybook/html-vite": "10.0.7",
+    "storybook-addon-rtl": "3.0.1",
     "@types/jest": "28.1.3",
     "@typescript-eslint/eslint-plugin": "8.46.4",
     "@typescript-eslint/parser": "8.46.4",
