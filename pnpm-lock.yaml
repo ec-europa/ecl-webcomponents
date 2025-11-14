@@ -871,20 +871,20 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/featured-item':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -2980,6 +2980,9 @@ packages:
   '@ecl/expandable@5.0.0-alpha.15':
     resolution: {integrity: sha512-DgL7mhEO9nCBH792AOgQGF9DvXOPp/k95ZbVqWCWVaRipDzF8/kcE3AdNWS/W39qivSuNAlMbc1sb2viXI3mYw==}
 
+  '@ecl/expandable@5.0.0-alpha.17':
+    resolution: {integrity: sha512-mCEmI3Jj46phlWs+ko9zP+mBLTu2c0ZQWDuGAYMJTYisfXrvU1tIOPNumTTE5OoMyl9CVxL+weoNqVpL88h66g==}
+
   '@ecl/fact-figures@5.0.0-alpha.15':
     resolution: {integrity: sha512-d7y3XXs8TuEhVqgag4cKvYDt/A4Y8JCXoJSZqKUjoVbrPzLVENx2+eGUYhV+N8O9VLBEIn+bb3FIAH/mv1NVwg==}
 
@@ -2988,6 +2991,9 @@ packages:
 
   '@ecl/featured-item@5.0.0-alpha.15':
     resolution: {integrity: sha512-fbMgeKW0LR8dnZVdEP4YouquqBJ0YK5qXrFykUkly77Zc8zQkQnhwkO8THF5oMgf2WHIX3HqHykf6ohOV2cDog==}
+
+  '@ecl/featured-item@5.0.0-alpha.17':
+    resolution: {integrity: sha512-lHoVgyJ337N0IvyxTXGBt9ORezZrjr4ddj9BhK8+gFcvKnXIT2yysQ6A0F3JoB4Xx47slPOT5SviIhbS0Og1lQ==}
 
   '@ecl/file-upload@5.0.0-alpha.15':
     resolution: {integrity: sha512-pTaBgRTNw4Sd/KKOQE20wCWGBpqFQylumkegJx3mjcmni7cIMT1LziJEGl73JH3up9cROZIH1fJkhFvMa+j+1Q==}
@@ -3057,6 +3063,9 @@ packages:
 
   '@ecl/media-container@5.0.0-alpha.15':
     resolution: {integrity: sha512-b5C8YfE4Ph7NGsUPhuONBeVqdpQbABohcFvPeBmIceU0dTD1li9HLoROPloNyMvwvHw1ru+PbAOsKKqsuw1ACg==}
+
+  '@ecl/media-container@5.0.0-alpha.17':
+    resolution: {integrity: sha512-P4RY5sBSI1e5sBXWIG3SGMqw08d3FKFA5Dctc5xbzL1hxWsJ6cCADKWSvs0NNiEYI+ZRsFH964tF3W3LAucPQQ==}
 
   '@ecl/mega-menu@5.0.0-alpha.15':
     resolution: {integrity: sha512-8LxAW+1BR0+3mhyI6qFLACOgA7UDLRTNaw1wK0OG9iBP0ArzOh0bRHdoIlFFaMrfG05zwGKZj9VwbY4RIHEP0g==}
@@ -14426,6 +14435,12 @@ snapshots:
       '@ecl/dom-utils': 5.0.0-alpha.15
       '@ecl/event-manager': 5.0.0-alpha.15
 
+  '@ecl/expandable@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/button': 5.0.0-alpha.17
+      '@ecl/dom-utils': 5.0.0-alpha.17
+      '@ecl/event-manager': 5.0.0-alpha.17
+
   '@ecl/fact-figures@5.0.0-alpha.15':
     dependencies:
       '@ecl/icon': 5.0.0-alpha.15
@@ -14442,6 +14457,13 @@ snapshots:
       '@ecl/media-container': 5.0.0-alpha.15
       '@ecl/mixins-typography': 5.0.0-alpha.15
       '@ecl/picture': 5.0.0-alpha.15
+
+  '@ecl/featured-item@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/link': 5.0.0-alpha.17
+      '@ecl/media-container': 5.0.0-alpha.17
+      '@ecl/mixins-typography': 5.0.0-alpha.17
+      '@ecl/picture': 5.0.0-alpha.17
 
   '@ecl/file-upload@5.0.0-alpha.15':
     dependencies:
@@ -14590,6 +14612,14 @@ snapshots:
       '@ecl/expandable': 5.0.0-alpha.15
       '@ecl/picture': 5.0.0-alpha.15
       '@ecl/video': 5.0.0-alpha.15
+
+  '@ecl/media-container@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/dom-utils': 5.0.0-alpha.17
+      '@ecl/event-manager': 5.0.0-alpha.17
+      '@ecl/expandable': 5.0.0-alpha.17
+      '@ecl/picture': 5.0.0-alpha.17
+      '@ecl/video': 5.0.0-alpha.17
 
   '@ecl/mega-menu@5.0.0-alpha.15':
     dependencies:

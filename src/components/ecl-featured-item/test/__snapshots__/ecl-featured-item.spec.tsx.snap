@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-featured-item renders 1`] = `
-<ecl-featured-item image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="Title" link-label="Read more" link-path="/example.html" media-caption="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." position="right" variant="highlight">
+<ecl-featured-item el-id="featured-item-demo" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="Title" link-label="Read more" link-path="/example.html" media-caption="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." position="right" variant="highlight">
   <!---->
   <article class="ecl-featured-item ecl-featured-item--highlight">
     <div class="ecl-featured-item__container ecl-featured-item__container--right">
@@ -19,15 +19,15 @@ exports[`ecl-featured-item renders 1`] = `
         </ecl-media-container>
       </div>
       <div class="ecl-featured-item__item">
-        <div class="ecl-featured-item__title">
+        <div class="ecl-featured-item__title" id="featured-item-demo">
           Title
         </div>
         <div class="ecl-featured-item__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </div>
-        <ecl-link style-class="ecl-featured-item__link sc-ecl-featured-item-ec">
+        <ecl-link aria-describedby="featured-item-demo" style-class="ecl-featured-item__link sc-ecl-featured-item-ec">
           <!---->
-          <a class="ecl-featured-item__link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-featured-item-ec" href="/example.html">
+          <a aria-describedby="featured-item-demo" class="ecl-featured-item__link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-featured-item-ec" href="/example.html">
             <span class="ecl-link__label">
               Read more
             </span>

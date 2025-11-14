@@ -12,6 +12,7 @@ describe('ecl-featured-item', () => {
         variant="highlight"
         item-title="Title"
         position="right"
+        el-id="featured-item-demo"
         link-path="/example.html"
         link-label="Read more"
         image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
