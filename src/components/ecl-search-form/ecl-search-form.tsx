@@ -71,6 +71,7 @@ export class EclSearchForm {
           aria-label={this.buttonAriaLabel}
           variant={this.theme === 'ec' ? 'ghost' : 'primary'}
           type="search"
+          hide-label
           theme={this.theme}
         >
           {this.buttonLabel}
@@ -78,7 +79,7 @@ export class EclSearchForm {
             style-class={`sc-ecl-search-form-${this.theme}`}
             slot="icon-before"
             icon="search"
-            size="xs"
+            size="m"
           >
           </ecl-icon>
         </ecl-button>

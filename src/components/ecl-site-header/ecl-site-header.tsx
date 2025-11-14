@@ -196,7 +196,7 @@ export class EclSiteHeader {
                       <span class="ecl-site-header__language-icon">
                         <ecl-icon
                           icon="global"
-                          size="s"
+                          size="m"
                           style-class={`ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
                         ></ecl-icon>
                         {this.language}
@@ -228,7 +228,7 @@ export class EclSiteHeader {
                           {this.closeLabel}
                           <ecl-icon
                             slot="icon-after"
-                            size="s"
+                            size="m"
                             style-class={`sc-ecl-site-header-${this.theme}`}
                             data-ecl-icon
                             icon="close"
@@ -281,7 +281,7 @@ export class EclSiteHeader {
                       <ecl-icon
                         icon="search"
                         style-class={`ecl-icon ecl-icon--s ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
-                        size="s"
+                        size="m"
                       >
                        </ecl-icon>
                       {this.searchText}

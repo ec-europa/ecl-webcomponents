@@ -9,12 +9,12 @@ exports[`ecl-search-form renders 1`] = `
         <ecl-input input-class="ecl-search-form__text-input sc-ecl-search-form-ec" input-id="ecl-search-form" placeholder="Placeholder text" style-class="sc-ecl-search-form-ec" theme="ec" type="search"></ecl-input>
       </div>
     </ecl-form-group>
-    <ecl-button aria-label="Search" style-class="ecl-search-form__button sc-ecl-search-form-ec undefined">
+    <ecl-button aria-label="Search" hide-label="" style-class="ecl-search-form__button sc-ecl-search-form-ec undefined">
       <!---->
-      <button aria-label="Search" class="ecl-button ecl-button--ghost ecl-search-form__button sc-ecl-search-form-ec undefined" type="search">
+      <button aria-label="Search" class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-search-form__button sc-ecl-search-form-ec undefined" type="search">
         <span class="ecl-button__container">
           <ecl-icon slot="icon-before" style-class="sc-ecl-search-form-ec">
-            <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-search-form-ec wt-icon--placeholder wt-icon--search wt-icon--xs"></span>
+            <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-search-form-ec wt-icon--m wt-icon--placeholder wt-icon--search"></span>
           </ecl-icon>
           <span class="ecl-button__label" data-ecl-label>
             Search
