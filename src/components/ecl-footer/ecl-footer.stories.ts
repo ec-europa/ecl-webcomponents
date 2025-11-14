@@ -2,11 +2,6 @@ import { randomizedLink } from "../../utils/randomizedLink";
 
 export default {
   title: 'Components/Site-wide/footer',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
   argTypes: {
     theme: {
       table: { disable: true },

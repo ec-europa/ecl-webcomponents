@@ -44,11 +44,6 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/tag',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => 

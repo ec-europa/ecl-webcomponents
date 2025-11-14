@@ -26,11 +26,6 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/carousel',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => 

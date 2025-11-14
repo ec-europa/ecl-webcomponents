@@ -2,11 +2,6 @@ import { randomizedLink } from "../../utils/randomizedLink";
 
 export default {
   title: 'Components/description-list',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) =>

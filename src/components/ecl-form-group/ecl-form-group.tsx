@@ -93,6 +93,12 @@ export class EclFormGroup {
         >
           {this.optionalText}</span> : ''
       }
+      { (this.labelTag === 'legend' && this.helperText) &&
+        <div class="ecl-help-block--hidden">{ this.helperText }</div>
+      }
+      { (this.labelTag === 'legend' && this.invalidText) && 
+        <div class="ecl-feedback-message--hidden">{ this.invalidText }</div>
+      }
         </this.labelTag> : ''
       }
       { this.helperText ? 

@@ -3,9 +3,6 @@ import { randomizedLink } from "../../utils/randomizedLink";
 export default {
   title: 'Components/Site-wide/site header',
   parameters: {
-    badges: [
-      'updated',
-    ],
     layout: 'fullscreen',
   },
   args: {

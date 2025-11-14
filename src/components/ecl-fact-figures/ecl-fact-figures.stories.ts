@@ -60,11 +60,6 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/fact and figures',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => 

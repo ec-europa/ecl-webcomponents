@@ -77,11 +77,6 @@ const getArgTypes = () => ({
 
 export default {
   title: 'Components/file',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 

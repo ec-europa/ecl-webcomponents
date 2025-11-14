@@ -67,11 +67,6 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/form/rating field',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => 

@@ -2,11 +2,6 @@ import iconsAllEc from '@ecl/resources-icons/list.json';
 
 export default {
   title: 'Components/icon',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => `<ecl-icon 

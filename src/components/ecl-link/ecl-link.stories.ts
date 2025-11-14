@@ -101,11 +101,6 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/Navigation/link',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => {

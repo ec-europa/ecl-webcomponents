@@ -63,11 +63,6 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/featured-item',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => 

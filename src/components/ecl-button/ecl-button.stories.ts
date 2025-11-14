@@ -107,11 +107,6 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/button',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => {

@@ -1,10 +1,5 @@
 export default {
   title: 'Components/popover',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = () => 

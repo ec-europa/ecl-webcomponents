@@ -172,11 +172,6 @@ export default {
       return `<div style="margin-inline: auto; max-width: 100%; width: 1368px">${storyFn()}</div>`;
     }
   ],
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = args =>

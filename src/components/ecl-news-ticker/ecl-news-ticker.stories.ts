@@ -2,11 +2,6 @@ import { randomizedLink } from "../../utils/randomizedLink";
 
 export default {
   title: 'Components/news ticker',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = () => 

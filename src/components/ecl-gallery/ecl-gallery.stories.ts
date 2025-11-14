@@ -74,11 +74,6 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/gallery',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) =>

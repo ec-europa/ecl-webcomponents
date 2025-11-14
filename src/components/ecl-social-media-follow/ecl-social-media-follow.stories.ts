@@ -29,11 +29,6 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/social media follow',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => 
