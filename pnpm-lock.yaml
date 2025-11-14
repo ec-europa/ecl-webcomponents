@@ -401,32 +401,32 @@ importers:
         version: link:../ecl-icon
     devDependencies:
       '@ecl/accordion':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/icon':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -572,17 +572,17 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/card':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -597,23 +597,23 @@ importers:
         version: link:../ecl-icon
     devDependencies:
       '@ecl/banner':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/carousel':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(patch_hash=e1576af690a67fe1f6ba64ed109575f564b81466bd8dc217a6523b5c8338cad6)
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17(patch_hash=e1576af690a67fe1f6ba64ed109575f564b81466bd8dc217a6523b5c8338cad6)
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -624,14 +624,14 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/category-filter':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -681,17 +681,17 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/content-item':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -702,20 +702,20 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/date-block':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -807,26 +807,26 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/expandable':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/web-components-button':
         specifier: 0.16.0
         version: link:../ecl-button
@@ -895,17 +895,17 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/file':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -916,26 +916,26 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/file-upload':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -946,26 +946,26 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/link':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/resources-ec-logo':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/resources-eu-logo':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/site-footer':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1027,14 +1027,14 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1066,8 +1066,8 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/indicator':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1159,15 +1159,21 @@ importers:
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/label':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
+      '@ecl/mixins-typography/':
+        specifier: 5.0.0-alpha.17
+        version: '@ecl/mixins-typography@5.0.0-alpha.17'
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1185,35 +1191,35 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/icon':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/indicator':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/link':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/resources-icons':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1261,23 +1267,23 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/media-container':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/utility-media':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1288,17 +1294,17 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/menu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1313,17 +1319,17 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/modal':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1334,17 +1340,17 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/navigation-list':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1355,17 +1361,17 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/news-ticker':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1383,17 +1389,20 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/notification':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1428,17 +1437,17 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/pagination':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1468,23 +1477,23 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/link':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/popover':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1495,23 +1504,23 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/layout-form':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/range':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1678,17 +1687,17 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/utility-spacing':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1699,17 +1708,17 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/spinner':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1727,14 +1736,14 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/tag':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1745,20 +1754,23 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
+      '@ecl/mixins-color':
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/utility-typography':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1769,23 +1781,23 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/layout-form':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/text-area':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -2892,8 +2904,14 @@ packages:
   '@ecl/accordion@5.0.0-alpha.15':
     resolution: {integrity: sha512-2awM35sgTiniolrYsn8RQNH/NExd4CovFLoMX2LF8Sowc63Kom8Ej1W2zgRwMhH64CPIPf8k36nwmb0ENHDBdg==}
 
+  '@ecl/accordion@5.0.0-alpha.17':
+    resolution: {integrity: sha512-qYdbDXFsW95M5Xa4Q5jFgAUIVlo0OB2NvtBov4IMbqL3Tth4KFrq0C8m7QQ3r40MdWvJ5jDQnKiY8EUKryrNzA==}
+
   '@ecl/banner@5.0.0-alpha.15':
     resolution: {integrity: sha512-08Xw3+k2teH6C5FPG3Ip8Et7+6D1sLOl+W9hkEb389/q+n1fCo46Mf6LpbXsLtvrbXCiuBqmFGFY7nUnb5/tdA==}
+
+  '@ecl/banner@5.0.0-alpha.17':
+    resolution: {integrity: sha512-5K4EJQBImlOyZkeDj2+n/XjbDYia+CxwegAAq1Wdu+TG30pE1b/bbqAXoXVDlj8yVe/3JZrujFD+acdR5xKSNw==}
 
   '@ecl/blockquote@5.0.0-alpha.15':
     resolution: {integrity: sha512-e/dZtb7V+iL7Emy333X7kXaze5zOoRsygdPcfgLnTMlA0srAoEOma3DgLY3YtJA2smneb+b5/IBQ0sB9AVi/gw==}
@@ -2926,11 +2944,20 @@ packages:
   '@ecl/card@5.0.0-alpha.15':
     resolution: {integrity: sha512-G5mM+q41D5tI8cUzQBpTjLyLkXCefwgL4ckc5Xq5sWsDf92gPJ7H57KDRRLO0Kz4+pfmsedH+zlgbWb5tEgrfQ==}
 
+  '@ecl/card@5.0.0-alpha.17':
+    resolution: {integrity: sha512-Pl7KzI+7hw1eDBsgQ1gPFwT2jQ1amaDazrGZy/iBUfoQz2eMXnmOhXK6xm4B6LbZH77erPV4TlxpROD8T2DHUw==}
+
   '@ecl/carousel@5.0.0-alpha.15':
     resolution: {integrity: sha512-xU28xYhAHiNQrcQ55afn7LoSN104AqLE8u4CsYbGZKKVHgOs5WXmz4q6w0JxkRhAkKZgo4af30yUYjC4yRIVmA==}
 
+  '@ecl/carousel@5.0.0-alpha.17':
+    resolution: {integrity: sha512-imZI3KBb2OrICIK3R7iFnt09EX+yA1w1MDyi6gTTroEF2mqe5GrM2L9SijpDcUNjuu7UpwC6zlM2Qn9mSHmNzA==}
+
   '@ecl/category-filter@5.0.0-alpha.15':
     resolution: {integrity: sha512-U+YnbvHz4/+Zl+R+pyZBjsS2S1NkPks8LuMHQVg7m7oKeYLDCeci9CLhVOkHQKtd39PUrTdFqgXcDTwv8Yzjxw==}
+
+  '@ecl/category-filter@5.0.0-alpha.17':
+    resolution: {integrity: sha512-dl25aQ1ebHqnK9nsizpRqpkSbNqxWbBbIaphARQw/BawKM4KkdQQQIG3X4M+eD111Jh6+bwuNJqn0ijdc5TbFw==}
 
   '@ecl/checkbox@5.0.0-alpha.15':
     resolution: {integrity: sha512-yOk9J9vS3GlpHEHmSaKUqLfnTmaLDZmB1qEinR0nmNzMB6i2p6rOzEmY/ymfmhab1+rkDtKKTAZkKIrTA5SLDg==}
@@ -2950,8 +2977,14 @@ packages:
   '@ecl/content-item@5.0.0-alpha.15':
     resolution: {integrity: sha512-zx+7cpWP7XhEVtSgG1bcANaq+j3DGDxeleeB6kSrUu5wvEL4GgaeZHid6NfcuMd0OOkDRxQVmTkp/vu1MzzONA==}
 
+  '@ecl/content-item@5.0.0-alpha.17':
+    resolution: {integrity: sha512-rOmioaz3R4tPJm97XQRM1wz9DDcMc/HFc58b6TmHR4O00waN5D8Mph+fRNZj7bbq/Ymi1li/i3TZ9UzrykgZVA==}
+
   '@ecl/date-block@5.0.0-alpha.15':
     resolution: {integrity: sha512-g6Bj0yfPm9ba0o0wxgWlr0icICP84QxkfUOm1fNP9ZvZAbK5isfCHN2zBNu6Q4BShRVzI8677WInk1yoLSWZQA==}
+
+  '@ecl/date-block@5.0.0-alpha.17':
+    resolution: {integrity: sha512-CGrvewOQZVQIwfm4DgRNAyWoUllQ2zyuKXXrb8bFGpxLhDWK7fo5Fe7TYi6xYPPe0QzzCpKIzxSA3mz/rbkQGA==}
 
   '@ecl/datepicker@5.0.0-alpha.15':
     resolution: {integrity: sha512-qssdb81h9GFnn0ZlqC+OvuD1QsxUQHFN+qd4M0ydliE1AwnXreTEyoJGeEOb4CNCRe/nlL5KP3XJbExmkfIptQ==}
@@ -3003,6 +3036,9 @@ packages:
 
   '@ecl/file@5.0.0-alpha.15':
     resolution: {integrity: sha512-IJkWum3XBnBokTCLHCZbyAT5hnYlKNp9+gfdf+Xm5PwykCHqm4uwAh+QKLE+oemSIUV09IQybNrk46B/Ms04zw==}
+
+  '@ecl/file@5.0.0-alpha.17':
+    resolution: {integrity: sha512-ifg8qAucPy9SeSE2Hnos9V6cah5nQYWZNUZ3rhMuHqHhD8+2XeMSZ7XM86hS04Z+iX7eddixT5wtSbqJqoNJew==}
 
   '@ecl/form-group@5.0.0-alpha.15':
     resolution: {integrity: sha512-JCe5AdO5U+Qr3KPLkPHJI2mqGyNoBs/gxJ3Rf3MW0NtL/SkvWGoYUSUE4QgVx8WjUTSXfCKyhWpX2Hd5pn0vNA==}
@@ -3076,6 +3112,9 @@ packages:
   '@ecl/menu@5.0.0-alpha.17':
     resolution: {integrity: sha512-YuDrGL6Rlv5pQMB0zc7mIjLtkOYzjfTyHz0TM78auzV/YHM4YxVnb4zjNnlc30foog49FcTs3FCtHtJ6W44tyQ==}
 
+  '@ecl/mixins-color@5.0.0-alpha.17':
+    resolution: {integrity: sha512-cjOIhd5DPhlpVxn4hUlVQP9D8S4gFGSWKf9dAEXaUuFxSuSNMogiLt14CVc+JUKXaSgMEqSjUewnbku3SPBEAA==}
+
   '@ecl/mixins-typography@5.0.0-alpha.15':
     resolution: {integrity: sha512-wvgFHvQQAIJEwuQSyWXsqBjL4wY/63M+G/Q3kf6mkpBtMyMja+n6gKG5M8yBrBEgjvmuks8Yrb0HNC0WFdR5kA==}
 
@@ -3085,11 +3124,20 @@ packages:
   '@ecl/modal@5.0.0-alpha.15':
     resolution: {integrity: sha512-KjvH/1K2IWZt8WR14B7u2jnQe+OVMsnavyxT0asyySl4KJhceyxW+4IcSUYCtSrjnX1FEC69oxga3AVLdiPHlQ==}
 
+  '@ecl/modal@5.0.0-alpha.17':
+    resolution: {integrity: sha512-U6zjtdy334EU6CSrIDXlQHhn+6uCWtWYGV5hAFPVgPjRcuHQDXrr9Upc8KbHlrUTc2VU++26DldFeHpXw9TF+g==}
+
   '@ecl/navigation-list@5.0.0-alpha.15':
     resolution: {integrity: sha512-3jT9SjslS7OutWBbmubUwM/SlG9JbT8ZWsBlkNIJm1o1I7x2+7UY95OVSDym5+oc6c/9y3lr5xNcy5HHIwBOhA==}
 
+  '@ecl/navigation-list@5.0.0-alpha.17':
+    resolution: {integrity: sha512-4dl/pym+jdmDL/ioVweP9xWPGv0EAzwcG7GvPhT2aLvd8Ug4G7hukopj5X7anpqyWGDzIilJlF//hfBz6qT9nw==}
+
   '@ecl/news-ticker@5.0.0-alpha.15':
     resolution: {integrity: sha512-UjsNu/QgZZRWyvP1tVgg5z0C1BEtIkUkON0rWKJUH+hHwMPEoizub+2LoXT8GFGA8EbW7fERyPVbu9VHpEblVg==}
+
+  '@ecl/news-ticker@5.0.0-alpha.17':
+    resolution: {integrity: sha512-qHFwMhr/HzC3Msq2cvVhVJQ9S0PQSqATvwvfYJbxwpOwhlkC2xZWYBHOF3XeXUcGyaF5WR78tbITPZDwl/+q+A==}
 
   '@ecl/notification@5.0.0-alpha.15':
     resolution: {integrity: sha512-jq3dqUlbYqKdo3KGc0ufvCTGuMA0/9fjOKaeXnQk0KQF5KB8z90fUqhm42KWfevyhX/Rre+0NW3WuzOMUaLJAA==}
@@ -3106,6 +3154,9 @@ packages:
   '@ecl/pagination@5.0.0-alpha.15':
     resolution: {integrity: sha512-S4/EsX98vXqpKLCX7tH7kUXZEhcGwoIXL+UyJQWWQhmxbiHdGmTimwiF/gMyLoA1uBG5b1tmvM4AsQPpAoKu1A==}
 
+  '@ecl/pagination@5.0.0-alpha.17':
+    resolution: {integrity: sha512-Tbyg87yx9obubL5CFSUs7TfhD761unBhf9vAA/a7Rol6guvTLn3R2BAKOM1vydZhZteIBFy6UycsoUIknF2lpQ==}
+
   '@ecl/picture@5.0.0-alpha.15':
     resolution: {integrity: sha512-3mJFO2H3f7EoHTdSl5Act9SN9CfHrp9g3nDEXPTBf5vzjRRtjx3LEvTxHioKqWrozL4l2qJDKtoCuS8PCJNgOQ==}
 
@@ -3114,6 +3165,9 @@ packages:
 
   '@ecl/popover@5.0.0-alpha.15':
     resolution: {integrity: sha512-jVExY/0yHZ20TqeC98zKmlwv8LhG/gVXREXy4HXyneSEwe0Hl2n44u1KJB5jT4bEGeTKactUSrodC1Voq0f3Rw==}
+
+  '@ecl/popover@5.0.0-alpha.17':
+    resolution: {integrity: sha512-a5CkCWbqQmIcNMZfYF/OOc/7qbk4OcsuPgI9QWccjmfZFy7Wv4qvlU6siuse85Q0xj+EKMFjC3Y4z5EQcVJtfw==}
 
   '@ecl/preset-ec@5.0.0-alpha.15':
     resolution: {integrity: sha512-SDWbc39UsHroKapjlFRXK26/m2oDQRnuPMqustpIe/l2BklGfs0eRX4DnFtKQWtxmfgUVMmR1LAjyr57n8rLhg==}
@@ -3139,20 +3193,17 @@ packages:
   '@ecl/rating-field@5.0.0-alpha.17':
     resolution: {integrity: sha512-Cy5hseh+k9iq1lE3FJP/7E5WgiGnujznXuf11k8hk7pqu8mw7ftRN0xyxmOHYixji8VKgimlJj69z8kcNv9ahQ==}
 
-  '@ecl/resources-ec-logo@5.0.0-alpha.15':
-    resolution: {integrity: sha512-EGoN95aq36K4jJB+7TP48H4cAKXnZh3NqmvGM6oNGZxZwzjNvtoTL+5st9YvrXm/ftEcbHS4A9BW+d0STnt5TQ==}
-
   '@ecl/resources-ec-logo@5.0.0-alpha.17':
     resolution: {integrity: sha512-t3yRM3iDwIsZa4Ishi4tPP5Q92UTmv+ZX2yllV6VEy4HDNlLygwsz25d9OXL810jQhj7ojtc8A3d+SekK2UA3Q==}
-
-  '@ecl/resources-eu-logo@5.0.0-alpha.15':
-    resolution: {integrity: sha512-xSlT4y6YzoDQkMHulGkFso0birY7zZKmiCiya/uoRKKfdB9M3xS8hXdWf+bLhkTLLfo7cfMoOiVzV6YQNpwAqg==}
 
   '@ecl/resources-eu-logo@5.0.0-alpha.17':
     resolution: {integrity: sha512-Ux1PI9MduZQpCRwnbvgka1WzA0+u5rfY692AdH3rp/3gh/vnrjikuyXQJPLWG1692u993HOhBXoFa7TYMbWOpg==}
 
   '@ecl/resources-icons@5.0.0-alpha.15':
     resolution: {integrity: sha512-4UCQbkOLjteydADl5rsQlM5immoRPXmIQxz7xVOr2unuhBmjKYBQl1Wuw+iKk66+MfF+zQnFJa1KmTUK2k5/jA==}
+
+  '@ecl/resources-icons@5.0.0-alpha.17':
+    resolution: {integrity: sha512-+cSSfoi1ncpxgvZpQAZQMIMbzgtpV/163a1axXXVK1U4pRO/NLOta9bWwGuluxz75er2LdjmoqOd4kwvPgPGYg==}
 
   '@ecl/search-form@5.0.0-alpha.15':
     resolution: {integrity: sha512-tNpmuZJVoE+yDeOTvp9wAki+F5ml3hQB+KFp6ARveEONJxrVMwtzO1C10GST8e5awBWhlzjqRHvCyfZCiMEwcA==}
@@ -3172,6 +3223,9 @@ packages:
   '@ecl/site-footer@5.0.0-alpha.15':
     resolution: {integrity: sha512-jUo6xYyxa0M2HGEQV2RGKH/R8GtFdbyngDvrVZVpbtIltltoS2D8kNvEqxbrtDpzFPy6CSwjlKAhlElR4bg/Sg==}
 
+  '@ecl/site-footer@5.0.0-alpha.17':
+    resolution: {integrity: sha512-/3ICcw04oN2JEID0/EiChSlIU+EzsYh5oHuhmQLdd79kP5lEj0Hn7q5QFKGXi8Wg6W/aRzcQv5qWv0XhpKaIDw==}
+
   '@ecl/site-header@5.0.0-alpha.15':
     resolution: {integrity: sha512-FstSQT0BdiiqwEyg5cVWz+sA0Sdm1otPeQvishHnYgmxJIbkwPlkYKZFeZItVce60ZMvftvDBy5GryZNVBs2Yg==}
 
@@ -3189,6 +3243,9 @@ packages:
 
   '@ecl/spinner@5.0.0-alpha.15':
     resolution: {integrity: sha512-Kxnd65fIVeZVRblV4TVIgPBVDvWxdGa/aGfbLlxE5Xq0aUwYhTg0ctpaZr6tyQMULtG4p20P/25ogbuIEZkQRQ==}
+
+  '@ecl/spinner@5.0.0-alpha.17':
+    resolution: {integrity: sha512-K5RUGalGzLexXllvFzWfMSdxNW+zdNhe8oJzgon38na/FIF0bQC8dvLbkg5ijLLarGtOsj5+G0pAFLGQmxjtEQ==}
 
   '@ecl/splash-page@5.0.0-alpha.15':
     resolution: {integrity: sha512-AuwL422PDybwcsN9bXIm1STgAy1OYemec9vgIWD9GlruIXGxBbeStZnbmpGqFkm7cJKc3fCpx8NsfYMXvaIzrw==}
@@ -3229,9 +3286,6 @@ packages:
   '@ecl/theme-eu@5.0.0-alpha.17':
     resolution: {integrity: sha512-deKLvBnFgp/zMdKWoYoQ9w7/CFeKZQV00dfo2p3p3+2wqVf7nBRGcfwlGkb836bIctlVE+jJLaN4NDUndWJuPw==}
 
-  '@ecl/theme-eu@5.0.0-alpha.20':
-    resolution: {integrity: sha512-PCmCNdUBeZDrNqwykpZt+GyChBCk6x96lHT4E+68WqYeuTzaxYgdbai8Nhh5NHx1S8pDBwMkKFpJVGa2dhu5tg==}
-
   '@ecl/timeline@5.0.0-alpha.15':
     resolution: {integrity: sha512-LjqHaajBbQlh3agE7MPlswg387QVXxmRmNaXjHBo1/Ni0PPmaHyKEa/kA8fClOSrYOIxLTvqHHqBUI5rBw9qtg==}
 
@@ -3268,6 +3322,9 @@ packages:
   '@ecl/utility-media@5.0.0-alpha.15':
     resolution: {integrity: sha512-3cZ/o23cWD2BOewZcN4Psa3AXOUMWfo6MNOmmwBC8RD7/ijMUf60KWlYpZtpOZmkIb1xRJIdsIRWGudiHUUewA==}
 
+  '@ecl/utility-media@5.0.0-alpha.17':
+    resolution: {integrity: sha512-fACbC+rG2/XDUQmcPvxkUdMOTUGIjKPDGAhv8jac4Z/CsSq+aohNs9PE+naM3WWe18YjqvxkvQ3l6RiE8p0V7g==}
+
   '@ecl/utility-print@5.0.0-alpha.15':
     resolution: {integrity: sha512-2NsJ7w+MNBSPB+ysbZVPLhow7eHqzC2/IfGfqoaLjyDiZQ/GqnyDoFhKZFn9xwaYcA6STSiE9Dh009+3SPvu8w==}
 
@@ -3283,8 +3340,14 @@ packages:
   '@ecl/utility-spacing@5.0.0-alpha.15':
     resolution: {integrity: sha512-83lQqMv1WNx6T4KCBURd4WohfT5KCDkDQAnatUgnb1MZGKkTfyKLdt9qOwoMJlpApJKb1g3j5MMtm1HquNoupQ==}
 
+  '@ecl/utility-spacing@5.0.0-alpha.17':
+    resolution: {integrity: sha512-LtZou7yLyfxNRPQkQjQ87QXtCQR60PKx6XaWj8aPGMMwfwOfD/xkFKvuAkflrdrKxOtX1RiOpddz7+JfU0neOw==}
+
   '@ecl/utility-typography@5.0.0-alpha.15':
     resolution: {integrity: sha512-uq6KpavbDhZJAVa7tA4ueFp5pVcYXRdkElvwawXscj8dZKzwzmDAin+tGvrD83LZX5SHNs2QfPrBTzWHe6tw1g==}
+
+  '@ecl/utility-typography@5.0.0-alpha.17':
+    resolution: {integrity: sha512-03CwxXwvbiyXEhR0jJl9hapHnI2duRAKNq9ww9IlS1Yq3c1g2kKqV7W0dGstXLnNE5nBx4cOHIrJF9AUFp7evQ==}
 
   '@ecl/utility-z-index@5.0.0-alpha.15':
     resolution: {integrity: sha512-cN5qDAKfVRnuXy0h4TGIwDPyoSe9ZBzTbaa0AU63O3BvtgEpvaqxbz641ZBFWFqYdXxqSw+NS5nbqRG4h0ZKrQ==}
@@ -14235,6 +14298,13 @@ snapshots:
       '@ecl/grid': 5.0.0-alpha.15
       '@ecl/icon': 5.0.0-alpha.15
 
+  '@ecl/accordion@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/dom-utils': 5.0.0-alpha.17
+      '@ecl/event-manager': 5.0.0-alpha.17
+      '@ecl/grid': 5.0.0-alpha.17
+      '@ecl/icon': 5.0.0-alpha.17
+
   '@ecl/banner@5.0.0-alpha.15(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)':
     dependencies:
       '@ecl/button': 5.0.0-alpha.15
@@ -14244,6 +14314,17 @@ snapshots:
       '@ecl/link': 5.0.0-alpha.15
       '@ecl/picture': 5.0.0-alpha.15
       '@ecl/video': 5.0.0-alpha.15
+
+  '@ecl/banner@5.0.0-alpha.17(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)':
+    dependencies:
+      '@ecl/button': 5.0.0-alpha.17
+      '@ecl/dom-utils': 5.0.0-alpha.17
+      '@ecl/event-manager': 5.0.0-alpha.17
+      '@ecl/grid': 5.0.0-alpha.17
+      '@ecl/link': 5.0.0-alpha.17
+      '@ecl/mixins-typography': 5.0.0-alpha.17
+      '@ecl/picture': 5.0.0-alpha.17
+      '@ecl/video': 5.0.0-alpha.17
 
   '@ecl/blockquote@5.0.0-alpha.15':
     dependencies:
@@ -14352,16 +14433,32 @@ snapshots:
       '@ecl/content-block': 5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)
       '@ecl/picture': 5.0.0-alpha.15
 
+  '@ecl/card@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/content-block': 5.0.0-alpha.17
+      '@ecl/picture': 5.0.0-alpha.17
+
   '@ecl/carousel@5.0.0-alpha.15(patch_hash=e1576af690a67fe1f6ba64ed109575f564b81466bd8dc217a6523b5c8338cad6)':
     dependencies:
       '@ecl/banner': 5.0.0-alpha.15(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
       '@ecl/button': 5.0.0-alpha.15
       '@ecl/dom-utils': 5.0.0-alpha.15
 
+  '@ecl/carousel@5.0.0-alpha.17(patch_hash=e1576af690a67fe1f6ba64ed109575f564b81466bd8dc217a6523b5c8338cad6)':
+    dependencies:
+      '@ecl/banner': 5.0.0-alpha.17(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
+      '@ecl/button': 5.0.0-alpha.17
+      '@ecl/dom-utils': 5.0.0-alpha.17
+
   '@ecl/category-filter@5.0.0-alpha.15':
     dependencies:
       '@ecl/dom-utils': 5.0.0-alpha.15
       '@ecl/icon': 5.0.0-alpha.15
+
+  '@ecl/category-filter@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/dom-utils': 5.0.0-alpha.17
+      '@ecl/icon': 5.0.0-alpha.17
 
   '@ecl/checkbox@5.0.0-alpha.15':
     dependencies:
@@ -14397,7 +14494,15 @@ snapshots:
       '@ecl/date-block': 5.0.0-alpha.15
       '@ecl/picture': 5.0.0-alpha.15
 
+  '@ecl/content-item@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/content-block': 5.0.0-alpha.17
+      '@ecl/date-block': 5.0.0-alpha.17
+      '@ecl/picture': 5.0.0-alpha.17
+
   '@ecl/date-block@5.0.0-alpha.15': {}
+
+  '@ecl/date-block@5.0.0-alpha.17': {}
 
   '@ecl/datepicker@5.0.0-alpha.15':
     dependencies:
@@ -14484,6 +14589,16 @@ snapshots:
       '@ecl/label': 5.0.0-alpha.15
       '@ecl/link': 5.0.0-alpha.15
       '@ecl/picture': 5.0.0-alpha.15
+
+  '@ecl/file@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/button': 5.0.0-alpha.17
+      '@ecl/description-list': 5.0.0-alpha.17
+      '@ecl/dom-utils': 5.0.0-alpha.17
+      '@ecl/icon': 5.0.0-alpha.17
+      '@ecl/label': 5.0.0-alpha.17
+      '@ecl/link': 5.0.0-alpha.17
+      '@ecl/picture': 5.0.0-alpha.17
 
   '@ecl/form-group@5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))':
     dependencies:
@@ -14649,6 +14764,8 @@ snapshots:
       bowser: 2.12.1
       focus-trap: 7.6.5
 
+  '@ecl/mixins-color@5.0.0-alpha.17': {}
+
   '@ecl/mixins-typography@5.0.0-alpha.15':
     dependencies:
       '@ecl/grid': 5.0.0-alpha.15
@@ -14664,10 +14781,22 @@ snapshots:
       '@ecl/icon': 5.0.0-alpha.15
       focus-trap: 7.6.5
 
+  '@ecl/modal@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/button': 5.0.0-alpha.17
+      '@ecl/dom-utils': 5.0.0-alpha.17
+      '@ecl/icon': 5.0.0-alpha.17
+      focus-trap: 7.6.5
+
   '@ecl/navigation-list@5.0.0-alpha.15':
     dependencies:
       '@ecl/content-block': 5.0.0-alpha.15(patch_hash=86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752)
       '@ecl/picture': 5.0.0-alpha.15
+
+  '@ecl/navigation-list@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/content-block': 5.0.0-alpha.17
+      '@ecl/picture': 5.0.0-alpha.17
 
   '@ecl/news-ticker@5.0.0-alpha.15':
     dependencies:
@@ -14675,6 +14804,13 @@ snapshots:
       '@ecl/dom-utils': 5.0.0-alpha.15
       '@ecl/icon': 5.0.0-alpha.15
       '@ecl/link': 5.0.0-alpha.15
+
+  '@ecl/news-ticker@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/button': 5.0.0-alpha.17
+      '@ecl/dom-utils': 5.0.0-alpha.17
+      '@ecl/icon': 5.0.0-alpha.17
+      '@ecl/link': 5.0.0-alpha.17
 
   '@ecl/notification@5.0.0-alpha.15':
     dependencies:
@@ -14703,6 +14839,11 @@ snapshots:
       '@ecl/grid': 5.0.0-alpha.15
       '@ecl/link': 5.0.0-alpha.15
 
+  '@ecl/pagination@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/grid': 5.0.0-alpha.17
+      '@ecl/link': 5.0.0-alpha.17
+
   '@ecl/picture@5.0.0-alpha.15': {}
 
   '@ecl/picture@5.0.0-alpha.17': {}
@@ -14714,6 +14855,14 @@ snapshots:
       '@ecl/event-manager': 5.0.0-alpha.15
       '@ecl/grid': 5.0.0-alpha.15
       '@ecl/link': 5.0.0-alpha.15
+
+  '@ecl/popover@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/button': 5.0.0-alpha.17
+      '@ecl/dom-utils': 5.0.0-alpha.17
+      '@ecl/event-manager': 5.0.0-alpha.17
+      '@ecl/grid': 5.0.0-alpha.17
+      '@ecl/link': 5.0.0-alpha.17
 
   '@ecl/preset-ec@5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))':
     dependencies:
@@ -14920,15 +15069,13 @@ snapshots:
     dependencies:
       '@ecl/icon': 5.0.0-alpha.17
 
-  '@ecl/resources-ec-logo@5.0.0-alpha.15': {}
-
   '@ecl/resources-ec-logo@5.0.0-alpha.17': {}
-
-  '@ecl/resources-eu-logo@5.0.0-alpha.15': {}
 
   '@ecl/resources-eu-logo@5.0.0-alpha.17': {}
 
   '@ecl/resources-icons@5.0.0-alpha.15': {}
+
+  '@ecl/resources-icons@5.0.0-alpha.17': {}
 
   '@ecl/search-form@5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))':
     dependencies:
@@ -14992,6 +15139,12 @@ snapshots:
       '@ecl/picture': 5.0.0-alpha.15
       '@ecl/social-media-follow': 5.0.0-alpha.15
 
+  '@ecl/site-footer@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/link': 5.0.0-alpha.17
+      '@ecl/picture': 5.0.0-alpha.17
+      '@ecl/social-media-follow': 5.0.0-alpha.17
+
   '@ecl/site-header@5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))':
     dependencies:
       '@ecl/button': 5.0.0-alpha.15
@@ -15049,6 +15202,8 @@ snapshots:
 
   '@ecl/spinner@5.0.0-alpha.15': {}
 
+  '@ecl/spinner@5.0.0-alpha.17': {}
+
   '@ecl/splash-page@5.0.0-alpha.15':
     dependencies:
       '@ecl/link': 5.0.0-alpha.15
@@ -15101,8 +15256,6 @@ snapshots:
 
   '@ecl/theme-eu@5.0.0-alpha.17': {}
 
-  '@ecl/theme-eu@5.0.0-alpha.20': {}
-
   '@ecl/timeline@5.0.0-alpha.15':
     dependencies:
       '@ecl/button': 5.0.0-alpha.15
@@ -15145,6 +15298,10 @@ snapshots:
     dependencies:
       '@ecl/grid': 5.0.0-alpha.15
 
+  '@ecl/utility-media@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/grid': 5.0.0-alpha.17
+
   '@ecl/utility-print@5.0.0-alpha.15': {}
 
   '@ecl/utility-screen-reader@5.0.0-alpha.15': {}
@@ -15157,10 +15314,20 @@ snapshots:
     dependencies:
       '@ecl/grid': 5.0.0-alpha.15
 
+  '@ecl/utility-spacing@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/grid': 5.0.0-alpha.17
+
   '@ecl/utility-typography@5.0.0-alpha.15':
     dependencies:
       '@ecl/grid': 5.0.0-alpha.15
       '@ecl/mixins-typography': 5.0.0-alpha.15
+
+  '@ecl/utility-typography@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/grid': 5.0.0-alpha.17
+      '@ecl/mixins-color': 5.0.0-alpha.17
+      '@ecl/mixins-typography': 5.0.0-alpha.17
 
   '@ecl/utility-z-index@5.0.0-alpha.15': {}
 

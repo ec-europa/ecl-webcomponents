@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@ecl/builder": "5.0.0-alpha.15",
-    "@ecl/indicator": "5.0.0-alpha.15",
+    "@ecl/indicator": "5.0.0-alpha.17",
     "cross-env": "10.1.0",
     "rimraf": "6.1.0"
   },

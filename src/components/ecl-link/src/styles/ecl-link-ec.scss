@@ -6,7 +6,8 @@
 );
 @use '@ecl/link/link' with (
   $theme: theme.$theme,
-  $link: var.$link
+  $link: var.$link,
+  $button: var.$button
 );
 
 .ecl-link--icon-only ::slotted([slot^='icon-']) {

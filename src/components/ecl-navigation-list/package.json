@@ -14,10 +14,10 @@
   },
   "devDependencies": {
     "@ecl/builder": "5.0.0-alpha.15",
-    "@ecl/grid": "5.0.0-alpha.15",
-    "@ecl/navigation-list": "5.0.0-alpha.15",
-    "@ecl/theme-ec": "5.0.0-alpha.15",
-    "@ecl/theme-eu": "5.0.0-alpha.15",
+    "@ecl/grid": "5.0.0-alpha.17",
+    "@ecl/navigation-list": "5.0.0-alpha.17",
+    "@ecl/theme-ec": "5.0.0-alpha.17",
+    "@ecl/theme-eu": "5.0.0-alpha.17",
     "cross-env": "10.1.0"
   },
   "repository": {

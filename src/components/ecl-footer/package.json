@@ -15,13 +15,13 @@
   },
   "devDependencies": {
     "@ecl/builder": "5.0.0-alpha.15",
-    "@ecl/grid": "5.0.0-alpha.15",
-    "@ecl/link": "5.0.0-alpha.15",
-    "@ecl/resources-ec-logo": "5.0.0-alpha.15",
-    "@ecl/resources-eu-logo": "5.0.0-alpha.15",
-    "@ecl/site-footer": "5.0.0-alpha.15",
-    "@ecl/theme-ec": "5.0.0-alpha.15",
-    "@ecl/theme-eu": "5.0.0-alpha.15",
+    "@ecl/grid": "5.0.0-alpha.17",
+    "@ecl/link": "5.0.0-alpha.17",
+    "@ecl/resources-ec-logo": "5.0.0-alpha.17",
+    "@ecl/resources-eu-logo": "5.0.0-alpha.17",
+    "@ecl/site-footer": "5.0.0-alpha.17",
+    "@ecl/theme-ec": "5.0.0-alpha.17",
+    "@ecl/theme-eu": "5.0.0-alpha.17",
     "cross-env": "10.1.0"
   },
   "repository": {
