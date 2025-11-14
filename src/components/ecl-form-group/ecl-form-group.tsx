@@ -104,13 +104,17 @@ export class EclFormGroup {
       { this.helperText ? 
         <div
           class="ecl-help-block"
+          {...(this.labelTag === 'legend' ? { 'aria-hidden': 'true' } : {})}
         >
           {this.helperText}
         </div> : ''
       }
         <slot></slot>
       { this.invalid && this.invalidText ?
-        <div class="ecl-feedback-message">
+        <div
+          class="ecl-feedback-message"
+          {...(this.labelTag === 'legend' ? { 'aria-hidden': 'true' } : {})}
+        >
         { this.invalidIcon ? 
           <ecl-icon
             styleClass={`ecl-feedback-message__icon sc-ecl-form-group-${this.theme}`}

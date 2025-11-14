@@ -496,29 +496,29 @@ importers:
         version: link:../ecl-link
     devDependencies:
       '@ecl/breadcrumb':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/builder':
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1112,44 +1112,44 @@ importers:
         specifier: 5.0.0-alpha.15
         version: 5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/checkbox':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/datepicker':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/file-upload':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/grid':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/layout-form':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/radio':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/search-form':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/text-input':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.15
-        version: 5.0.0-alpha.15
+        specifier: 5.0.0-alpha.17
+        version: 5.0.0-alpha.17
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -2903,6 +2903,9 @@ packages:
 
   '@ecl/breadcrumb@5.0.0-alpha.15':
     resolution: {integrity: sha512-rdGhxRCkVfJSPQEYVsew82oKtSkHZLF6ceiukR3DeOWUO14FIoa87H+nwWJmjfZ+M/PaMppEA4F6WGEW0WSesw==}
+
+  '@ecl/breadcrumb@5.0.0-alpha.17':
+    resolution: {integrity: sha512-tl70RCM1qMG/9fP26Pw4Gwo7VUwX0Wx9JQLW/Z2u5lkHy7gUyMN5XsUvPj6s4FKdlZN4V7KIzTiRFobfIDaVHA==}
 
   '@ecl/builder@5.0.0-alpha.15':
     resolution: {integrity: sha512-hOdsIxpPaM6+tFhgcIq/bfWetZ3Nttd13EarV3Z6Ecr5Hsna1uJL5aQe+vNEFAeyXN0fcVY4iM6Ynh7amx+sVQ==}
@@ -14248,6 +14251,14 @@ snapshots:
       '@ecl/dom-utils': 5.0.0-alpha.15
       '@ecl/icon': 5.0.0-alpha.15
       '@ecl/link': 5.0.0-alpha.15
+
+  '@ecl/breadcrumb@5.0.0-alpha.17':
+    dependencies:
+      '@ecl/button': 5.0.0-alpha.17
+      '@ecl/dom-utils': 5.0.0-alpha.17
+      '@ecl/icon': 5.0.0-alpha.17
+      '@ecl/link': 5.0.0-alpha.17
+      '@ecl/mixins-typography': 5.0.0-alpha.17
 
   '@ecl/builder@5.0.0-alpha.15(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))':
     dependencies:
