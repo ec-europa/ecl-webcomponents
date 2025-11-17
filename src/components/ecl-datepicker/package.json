@@ -14,14 +14,14 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "5.0.0-alpha.15",
-    "@ecl/datepicker": "5.0.0-alpha.15",
-    "@ecl/grid": "5.0.0-alpha.15",
-    "@ecl/layout-form": "5.0.0-alpha.15",
-    "@ecl/mixins-typography": "5.0.0-alpha.15",
-    "@ecl/text-input": "5.0.0-alpha.15",
-    "@ecl/theme-ec": "5.0.0-alpha.15",
-    "@ecl/theme-eu": "5.0.0-alpha.15",
+    "@ecl/builder": "5.0.0-alpha.20",
+    "@ecl/datepicker": "5.0.0-alpha.20",
+    "@ecl/grid": "5.0.0-alpha.20",
+    "@ecl/layout-form": "5.0.0-alpha.20",
+    "@ecl/mixins-typography": "5.0.0-alpha.20",
+    "@ecl/text-input": "5.0.0-alpha.20",
+    "@ecl/theme-ec": "5.0.0-alpha.20",
+    "@ecl/theme-eu": "5.0.0-alpha.20",
     "cross-env": "10.1.0",
     "pikaday": "1.8.2"
   },

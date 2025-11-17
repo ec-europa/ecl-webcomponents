@@ -73,7 +73,7 @@
     "@babel/preset-react": "7.28.5",
     "@babel/preset-typescript": "7.28.5",
     "@ecl/ecl-webcomponents": "0.16.0",
-    "@ecl/preset-ec": "5.0.0-alpha.15",
+    "@ecl/preset-ec": "5.0.0-alpha.20",
     "@eslint/js": "9.39.1",
     "@prettier/plugin-xml": "3.4.2",
     "@stencil/angular-output-target": "0.10.2",
@@ -156,9 +156,9 @@
       "cli-truncate": "2.1.0"
     },
     "patchedDependencies": {
-      "@ecl/builder@5.0.0-alpha.15": "patches/@ecl__builder@5.0.0-alpha.15.patch",
-      "@ecl/content-block@5.0.0-alpha.15": "patches/@ecl__content-block@5.0.0-alpha.15.patch",
-      "@ecl/select@5.0.0-alpha.15": "patches/@ecl__select@5.0.0-alpha.15.patch",
+      "@ecl/builder": "patches/@ecl__builder.patch",
+      "@ecl/content-block": "patches/@ecl__content-block.patch",
+      "@ecl/select": "patches/@ecl__select.patch",
       "@ecl/carousel": "patches/@ecl__carousel.patch",
       "@ecl/banner": "patches/@ecl__banner.patch"
     }
