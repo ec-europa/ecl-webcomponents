@@ -9,6 +9,8 @@
 
 | Property      | Attribute      | Description | Type      | Default     |
 | ------------- | -------------- | ----------- | --------- | ----------- |
+| `divider`     | `divider`      |             | `boolean` | `false`     |
+| `hasColumns`  | `has-columns`  |             | `boolean` | `false`     |
 | `icon`        | `icon`         |             | `string`  | `undefined` |
 | `iconSize`    | `icon-size`    |             | `string`  | `'2xl'`     |
 | `image`       | `image`        |             | `string`  | `undefined` |

@@ -2,11 +2,12 @@ import { newSpecPage } from '@stencil/core/testing';
 import { EclListIllustration } from '../ecl-list-illustration';
 import { EclListIllustrationItem } from '../ecl-list-illustration-item';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
+import { EclPicture } from '../../ecl-picture/ecl-picture';
 
 describe('ecl-list-illustration', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclListIllustration, EclListIllustrationItem, EclIcon],
+      components: [EclListIllustration, EclListIllustrationItem, EclPicture],
       html: `<ecl-list-illustration
         zebra=true
         column="1"
@@ -111,5 +112,63 @@ describe('ecl-list-illustration', () => {
     });
 
     expect(page.root).toMatchSnapshot();
-  })
+  });
+
+  it('renders correctly as an icon list', async () => {
+    const page = await newSpecPage({
+      components: [EclListIllustration, EclListIllustrationItem, EclIcon],
+      html: `<ecl-list-illustration
+        column="2"
+        icon-list
+        color-mode="blue"
+      >
+        <ecl-list-illustration-item
+          icon="check-bold"
+          item-title="List with illustration item 1"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
+          Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
+          in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </ecl-list-illustration-item>
+        <ecl-list-illustration-item
+          icon="check-bold"
+          item-title="List with illustration item 2"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
+          Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
+          in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </ecl-list-illustration-item>
+      </ecl-list-illustration>`,
+    });
+
+    expect(page.root).toMatchSnapshot();
+  });
+
+  it('renders correctly as a number list', async () => {
+    const page = await newSpecPage({
+      components: [EclListIllustration, EclListIllustrationItem],
+      html: `<ecl-list-illustration
+        column="2"
+        number-list
+        color-mode="blue"
+      >
+        <ecl-list-illustration-item
+          item-title="List with illustration item 1"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
+          Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
+          in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </ecl-list-illustration-item>
+        <ecl-list-illustration-item
+          item-title="List with illustration item 2"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
+          Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
+          in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
+        </ecl-list-illustration-item>
+      </ecl-list-illustration>`,
+    });
+    
+    expect(page.root).toMatchSnapshot();
+  });
 });

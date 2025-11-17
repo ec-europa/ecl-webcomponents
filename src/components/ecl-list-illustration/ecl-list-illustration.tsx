@@ -20,6 +20,11 @@ export class EclListIllustration {
   @Prop() colorMode: string;
   @Prop() fontSize: string = 'l';
   @Prop() centered: boolean = false;
+  @Prop() iconInline: boolean = false;
+  @Prop() iconList: boolean = false;
+  @Prop() numberList: boolean = false;
+  @Prop() counterReset: boolean = true;
+  @Prop() counterStart: number = 0;
 
   getClass(): string {
     const styleClasses = [
@@ -37,6 +42,22 @@ export class EclListIllustration {
       styleClasses.push('ecl-list-illustration--centered');
     }
 
+    if (this.iconInline) {
+      styleClasses.push('ecl-list-illustration--icon-inline');
+    }
+
+    if (this.iconList) {
+      styleClasses.push('ecl-list-illustration--icon-list');
+    }
+
+    if (this.numberList) {
+      styleClasses.push('ecl-list-illustration--number-list');
+    }
+
+    if (this.numberList && this.counterReset) {
+      styleClasses.push('.ecl-list-illustration--number-list-reset');
+    }
+
     if (this.colorMode) {
       styleClasses.push(`ecl-color-mode--${this.colorMode}`);
     }
@@ -48,7 +69,7 @@ export class EclListIllustration {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
-  componentDidRender() {
+  componentDidLoad() {
     // Clean the html to make the zebra work,.
     const items = this.el.querySelectorAll('.ecl-list-illustration__item');
     if (items) {
@@ -59,9 +80,16 @@ export class EclListIllustration {
 
   render() {
     return (
-      <div class={this.getClass()}>
+      <ul
+        class={this.getClass()}
+        {...(
+          this.numberList && this.counterReset
+            ? { style: { '--ecl-list-illustration-counter-start': `${this.counterStart}` } }
+            : {}
+        )} 
+      >
         <slot></slot>
-      </div>
+      </ul>
     );
   }
 }

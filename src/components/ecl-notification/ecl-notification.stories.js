@@ -52,7 +52,6 @@ export default {
 const Template = args =>
   `<ecl-notification
     notification-title="${args.title}"
-    theme="${args.theme}"
     variant="${args.variant}"
     close-label="${args.closeLabel}"
     ecl-script

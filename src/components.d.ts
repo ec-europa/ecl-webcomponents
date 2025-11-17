@@ -501,6 +501,10 @@ export namespace Components {
           * @default false
          */
         "eclScript": boolean;
+        /**
+          * @default `ecl-featured-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
+         */
+        "elId": string;
         "image": string;
         "itemTitle": string;
         "linkLabel": string;
@@ -999,9 +1003,29 @@ export namespace Components {
          */
         "column": number;
         /**
+          * @default true
+         */
+        "counterReset": boolean;
+        /**
+          * @default 0
+         */
+        "counterStart": number;
+        /**
           * @default 'l'
          */
         "fontSize": string;
+        /**
+          * @default false
+         */
+        "iconInline": boolean;
+        /**
+          * @default false
+         */
+        "iconList": boolean;
+        /**
+          * @default false
+         */
+        "numberList": boolean;
         "styleClass": string;
         "theme": string;
         /**
@@ -1014,6 +1038,14 @@ export namespace Components {
         "zebra": boolean;
     }
     interface EclListIllustrationItem {
+        /**
+          * @default false
+         */
+        "divider": boolean;
+        /**
+          * @default false
+         */
+        "hasColumns": boolean;
         "icon": string;
         /**
           * @default '2xl'
@@ -1625,6 +1657,34 @@ export namespace Components {
           * @default false
          */
         "visible": boolean;
+    }
+    interface EclSpotlight {
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        "credit": string;
+        /**
+          * @default 'm'
+         */
+        "fontSize": string;
+        /**
+          * @default false
+         */
+        "fullWidth": boolean;
+        /**
+          * @default true
+         */
+        "hasAnchor": boolean;
+        "header": string;
+        "image": string;
+        "imageAlt": string;
+        "path": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
     }
     interface EclTag {
         "colorMode": string;
@@ -2302,6 +2362,12 @@ declare global {
         prototype: HTMLEclSpinnerElement;
         new (): HTMLEclSpinnerElement;
     };
+    interface HTMLEclSpotlightElement extends Components.EclSpotlight, HTMLStencilElement {
+    }
+    var HTMLEclSpotlightElement: {
+        prototype: HTMLEclSpotlightElement;
+        new (): HTMLEclSpotlightElement;
+    };
     interface HTMLEclTagElementEventMap {
         "removeTag": boolean;
     }
@@ -2438,6 +2504,7 @@ declare global {
         "ecl-social-media-follow-item": HTMLEclSocialMediaFollowItemElement;
         "ecl-spacing": HTMLEclSpacingElement;
         "ecl-spinner": HTMLEclSpinnerElement;
+        "ecl-spotlight": HTMLEclSpotlightElement;
         "ecl-tag": HTMLEclTagElement;
         "ecl-tag-set": HTMLEclTagSetElement;
         "ecl-text": HTMLEclTextElement;
@@ -2947,6 +3014,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "eclScript"?: boolean;
+        /**
+          * @default `ecl-featured-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
+         */
+        "elId"?: string;
         "image"?: string;
         "itemTitle"?: string;
         "linkLabel"?: string;
@@ -3448,9 +3519,29 @@ declare namespace LocalJSX {
          */
         "column"?: number;
         /**
+          * @default true
+         */
+        "counterReset"?: boolean;
+        /**
+          * @default 0
+         */
+        "counterStart"?: number;
+        /**
           * @default 'l'
          */
         "fontSize"?: string;
+        /**
+          * @default false
+         */
+        "iconInline"?: boolean;
+        /**
+          * @default false
+         */
+        "iconList"?: boolean;
+        /**
+          * @default false
+         */
+        "numberList"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
         /**
@@ -3463,6 +3554,14 @@ declare namespace LocalJSX {
         "zebra"?: boolean;
     }
     interface EclListIllustrationItem {
+        /**
+          * @default false
+         */
+        "divider"?: boolean;
+        /**
+          * @default false
+         */
+        "hasColumns"?: boolean;
         "icon"?: string;
         /**
           * @default '2xl'
@@ -4084,6 +4183,34 @@ declare namespace LocalJSX {
          */
         "visible"?: boolean;
     }
+    interface EclSpotlight {
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        "credit"?: string;
+        /**
+          * @default 'm'
+         */
+        "fontSize"?: string;
+        /**
+          * @default false
+         */
+        "fullWidth"?: boolean;
+        /**
+          * @default true
+         */
+        "hasAnchor"?: boolean;
+        "header"?: string;
+        "image"?: string;
+        "imageAlt"?: string;
+        "path"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclTag {
         "colorMode"?: string;
         /**
@@ -4310,6 +4437,7 @@ declare namespace LocalJSX {
         "ecl-social-media-follow-item": EclSocialMediaFollowItem;
         "ecl-spacing": EclSpacing;
         "ecl-spinner": EclSpinner;
+        "ecl-spotlight": EclSpotlight;
         "ecl-tag": EclTag;
         "ecl-tag-set": EclTagSet;
         "ecl-text": EclText;
@@ -4392,6 +4520,7 @@ declare module "@stencil/core" {
             "ecl-social-media-follow-item": LocalJSX.EclSocialMediaFollowItem & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowItemElement>;
             "ecl-spacing": LocalJSX.EclSpacing & JSXBase.HTMLAttributes<HTMLEclSpacingElement>;
             "ecl-spinner": LocalJSX.EclSpinner & JSXBase.HTMLAttributes<HTMLEclSpinnerElement>;
+            "ecl-spotlight": LocalJSX.EclSpotlight & JSXBase.HTMLAttributes<HTMLEclSpotlightElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
             "ecl-tag-set": LocalJSX.EclTagSet & JSXBase.HTMLAttributes<HTMLEclTagSetElement>;
             "ecl-text": LocalJSX.EclText & JSXBase.HTMLAttributes<HTMLEclTextElement>;
