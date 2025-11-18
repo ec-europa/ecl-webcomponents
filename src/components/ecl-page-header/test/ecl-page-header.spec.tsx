@@ -17,6 +17,7 @@ describe('ecl-page-header', () => {
         meta="Meta info | DD Month YYYY"
         expandable-header="this is the page header expandable header"
         expandable-content="this is the page header expandable panel's content"
+        expandable-panel-id="panel-id-test"
       >
         <ecl-breadcrumb
           slot="breadcrumb"

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-page-header renders 1`] = `
-<ecl-page-header expandable-content="this is the page header expandable panel's content" expandable-header="this is the page header expandable header" header-title="Page title" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" meta="Meta info | DD Month YYYY" theme="ec" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" thumbnail-alt="Eu map" variant="negative">
+<ecl-page-header expandable-content="this is the page header expandable panel's content" expandable-header="this is the page header expandable header" expandable-panel-id="panel-id-test" header-title="Page title" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" meta="Meta info | DD Month YYYY" theme="ec" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" thumbnail-alt="Eu map" variant="negative">
   <!---->
   <div class="ecl-page-header ecl-page-header--image">
     <div class="ecl-page-header-expandable">
@@ -10,13 +10,13 @@ exports[`ecl-page-header renders 1`] = `
           <div class="ecl-page-header-expandable__header-text">
             this is the page header expandable header
           </div>
-          <ecl-button aria-controls="ecl-page-header-expandable-panel-4otmn9ed" aria-expanded="false" data-ecl-page-header-expandable-toggle hide-label="" styleclass="ecl-page-header-expandable__toggle sc-ecl-page-header-ec" type="submit" variant="tertiary">
+          <ecl-button aria-controls="panel-id-test" aria-expanded="false" data-ecl-page-header-expandable-toggle hide-label="" styleclass="ecl-page-header-expandable__toggle sc-ecl-page-header-ec" type="submit" variant="tertiary">
             toggle panel's visibility
             <ecl-icon flip="vertical" icon="corner-arrow" size="m" slot="icon-after" styleclass="sc-ecl-page-header-ec"></ecl-icon>
           </ecl-button>
         </div>
       </div>
-      <div class="ecl-page-header-expandable__panel" hidden="" id="ecl-page-header-expandable-panel-4otmn9ed">
+      <div class="ecl-page-header-expandable__panel" hidden="" id="panel-id-test">
         <div class="ecl-container ecl-page-header-expandable__container">
           this is the page header expandable panel's content
         </div>
