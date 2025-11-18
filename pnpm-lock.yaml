@@ -23,7 +23,7 @@ patchedDependencies:
     path: patches/@ecl__builder.patch
   '@ecl/carousel@5.0.0-alpha.20':
     hash: 0971494db7784339e73a151c15c087cab16b7fb9169d6c5d83830abd09427eaa
-    path: patches/@ecl__carousel.patch
+    path: patches/@ecl__carousel@5.0.0-alpha.20.patch
   '@ecl/content-block':
     hash: 86f044e9a4d2d83fb4dd7e35f154167067c80c024e5e908d674b91185961c752
     path: patches/@ecl__content-block.patch
