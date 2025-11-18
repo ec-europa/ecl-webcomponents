@@ -66,7 +66,7 @@ export class EclRatingStar {
           htmlFor={this.itemId}
         >
         { this.label ?
-          <span class="ecl-u-sr-only">{ this.label }</span> : '' }
+          <span class="ecl-rating-field__sr-label">{ this.label }</span> : '' }
           <ecl-icon
             icon={this.iconFilled}
             styleClass={`ecl-rating-field__icon-filled ecl-rating-field-${this.theme}`}

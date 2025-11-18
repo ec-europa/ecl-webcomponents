@@ -42,7 +42,7 @@ exports[`ecl-banner renders correctly with a video 1`] = `
       </div>
       <ecl-button data-ecl-banner-play>
         <!---->
-        <button class="ecl-banner__play ecl-button ecl-button--icon-only ecl-button--tertiary sc-ecl-banner-ec" data-ecl-banner-play="eclBannerPlay" type="button">
+        <button class="ecl-banner__play ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary sc-ecl-banner-ec" data-ecl-banner-play="eclBannerPlay" type="button">
           <span class="ecl-button__container sc-ecl-banner-ec">
             <span class="ecl-button__label" data-ecl-label></span>
             <ecl-icon slot="icon-after">
@@ -53,7 +53,7 @@ exports[`ecl-banner renders correctly with a video 1`] = `
       </ecl-button>
       <ecl-button data-ecl-banner-pause>
         <!---->
-        <button class="ecl-banner__pause ecl-button ecl-button--icon-only ecl-button--tertiary sc-ecl-banner-ec" data-ecl-banner-pause="eclBannerPause" type="button">
+        <button class="ecl-banner__pause ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary sc-ecl-banner-ec" data-ecl-banner-pause="eclBannerPause" type="button">
           <span class="ecl-button__container sc-ecl-banner-ec">
             <span class="ecl-button__label" data-ecl-label></span>
             <ecl-icon slot="icon-after">
@@ -111,7 +111,7 @@ exports[`ecl-banner renders correctly with an image 1`] = `
           <div class="ecl-banner__cta">
             <ecl-link style-class="ecl-banner__link-cta sc-ecl-banner-ec">
               <!---->
-              <a class="ecl-banner__link-cta ecl-link ecl-link--cta ecl-link--icon ecl-link--icon-after sc-ecl-banner-ec" href="/example.html">
+              <a class="ecl-banner__link-cta ecl-link ecl-link--icon ecl-link--icon-after ecl-link--primary-highlight sc-ecl-banner-ec" href="/example.html">
                 <span class="ecl-link__label">
                   Subscribe
                 </span>

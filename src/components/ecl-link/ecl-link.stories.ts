@@ -13,6 +13,7 @@ const getArgs = () => {
     iconRotate: '',
     iconFlip: '',
     hideLabel: false,
+    noVisited: false,
     indicator: false,
     indicatorValue: 2,
   };
@@ -23,7 +24,7 @@ const getArgTypes = () => {
     color_mode: { table: { disable: true } },
     variant: {
       type: { name: 'select' },
-      options: ['standalone', 'cta', 'primary', 'secondary'],
+      options: ['standalone', 'primary', 'primary-highlight', 'secondary'],
       description: "Link variant"
     },
     label: {
@@ -42,6 +43,10 @@ const getArgTypes = () => {
       name: 'path',
       type: { name: 'string' },
       description: 'Path or Url to link to',
+    },
+    noVisited: {
+      name: 'no-visited',
+      type: { name: 'boolean' },
     },
     icon: {
       name: 'icon',
@@ -110,6 +115,7 @@ const Template = (args) => {
       path="${args.path}"
       inverted="${args.inverted}"
       external="${args.external}"
+      no-visited="${args.noVisited}"
       aria-label="Accessibility enhancer"
       indicator="${args.indicator}"
       indicator-value="${args.indicatorValue}"

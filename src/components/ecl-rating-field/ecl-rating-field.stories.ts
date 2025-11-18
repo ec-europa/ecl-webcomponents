@@ -81,7 +81,6 @@ const Template = (args) =>
     required=${args.required}
     disabled="${args.disabled}"
     invalid=${args.invalid}
-    theme="${args.theme}"
     aria-label-optional="Aria label optional"
     aria-label-required="Aria label required"
   >
@@ -89,48 +88,48 @@ const Template = (args) =>
       disabled=${args.disabled}
       required=${args.required}
       theme="${args.theme}"
-    >
+    > 
       <ecl-rating-star
-        theme="${args.theme}"
-        value="1"
-        item-id="item-id-1"
-        label="1 star"
+        value="5"
+        item-id="item-id-5"
+        label="5 stars"
+        name="rating"
         disabled=${args.disabled}
         required=${args.required}
       >
       </ecl-rating-star>
       <ecl-rating-star
-        theme="${args.theme}"
+        value="4"
+        item-id="item-id-4"
+        label="4 stars"
+        name="rating"
+        disabled=${args.disabled}
+        required=${args.required}
+      >
+      </ecl-rating-star>
+      <ecl-rating-star
+        value="3"
+        item-id="item-id-3"
+        label="3 stars"
+        name="rating"
+        disabled=${args.disabled}
+        required=${args.required}
+      >
+      </ecl-rating-star>
+      <ecl-rating-star
         value="2"
         item-id="item-id-2"
+        name="rating"
         label="2 stars"
         disabled=${args.disabled}
         required=${args.required}
       >
       </ecl-rating-star>
       <ecl-rating-star
-        theme="${args.theme}"
-        value="3"
-        item-id="item-id-3"
-        label="3 stars"
-        disabled=${args.disabled}
-        required=${args.required}
-      >
-      </ecl-rating-star>
-      <ecl-rating-star
-        theme="${args.theme}"
-        value="4"
-        item-id="item-id-4"
-        label="4 stars"
-        disabled=${args.disabled}
-        required=${args.required}
-      >
-      </ecl-rating-star>
-      <ecl-rating-star
-        theme="${args.theme}"
-        value="5"
-        item-id="item-id-5"
-        label="5 stars"
+        value="1"
+        item-id="item-id-1"
+        name="rating"
+        label="1 star"
         disabled=${args.disabled}
         required=${args.required}
       >

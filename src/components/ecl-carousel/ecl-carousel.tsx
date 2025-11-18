@@ -99,6 +99,7 @@ export class EclCarousel {
               <ecl-button
                 type="button"
                 variant="tertiary"
+                buttonStyle="neutral"
                 styleClass={`ecl-carousel__play sc-ecl-carousel-${this.theme}`}
                 hideLabel
               >
@@ -114,6 +115,7 @@ export class EclCarousel {
                 type="button" 
                 styleClass={`ecl-carousel__pause sc-ecl-carousel-${this.theme}`}
                 hideLabel
+                buttonStyle="neutral"
                 variant="tertiary"
               >
                 <ecl-icon
@@ -130,6 +132,7 @@ export class EclCarousel {
               <ecl-button
                 type="button"
                 variant="tertiary"
+                buttonStyle="neutral"
                 styleClass={`ecl-carousel__navigation-item sc-ecl-carousel-${this.theme}`}
               >
                 {i + 1}

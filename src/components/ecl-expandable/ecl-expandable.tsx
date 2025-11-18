@@ -64,7 +64,7 @@ export class EclExpandable {
       > 
         <ecl-button
           theme={this.theme}
-          variant="ghost"
+          variant="tertiary"
           style-class={`ecl-expandable__toggle sc-ecl-expandable-${this.theme}`}
           type="button"
           aria-controls={`${this.elId}-content`}

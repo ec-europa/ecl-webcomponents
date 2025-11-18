@@ -14,6 +14,7 @@ export class EclButton {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop() type: string = 'submit';
+  @Prop() buttonStyle: string;
   @Prop() variant: string = 'primary';
   @Prop({ mutable: true }) theme: string;
   @Prop() containerExtraClasses: string;
@@ -61,6 +62,7 @@ export class EclButton {
       'ecl-button',
       `ecl-button--${this.variant}`,
       this.hideLabel ? 'ecl-button--icon-only' : '',
+      this.buttonStyle ? `ecl-button--${this.buttonStyle}` : '',
       this.styleClass,
     ].join(' ').trim();
   }

@@ -20,7 +20,15 @@
 }
 
 .ecl-breadcrumb__current-page {
-  margin-top: 8px;
+  margin-top: 4px;
+}
+
+.ecl-breadcrumb__segment:first-child {
+  margin-top: 0;
+
+  .ecl-icon {
+    margin-top: 0;
+  }
 }
 
 .ecl-breadcrumb__ellipsis {

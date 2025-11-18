@@ -8,6 +8,7 @@
 | Property                | Attribute                 | Description | Type      | Default     |
 | ----------------------- | ------------------------- | ----------- | --------- | ----------- |
 | `ariaControls`          | `aria-controls`           |             | `string`  | `undefined` |
+| `buttonStyle`           | `button-style`            |             | `string`  | `undefined` |
 | `containerExtraClasses` | `container-extra-classes` |             | `string`  | `undefined` |
 | `disabled`              | `disabled`                |             | `boolean` | `false`     |
 | `hideLabel`             | `hide-label`              |             | `boolean` | `false`     |

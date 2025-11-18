@@ -5,6 +5,7 @@ const getArgs = () => {
     label: 'Button label',
     type: 'button',
     variant: 'primary',
+    buttonStyle: '',
     icon: '',
     iconPosition: 'after',
     iconRotate: '',
@@ -22,18 +23,20 @@ const getArgTypes = () => {
     variant: {
       name: 'button variant',
       type: { name: 'select' },
-      options: ['primary', 'secondary', 'ghost', 'cta', 'tertiary', 'ghost-inverted'],
+      options: ['primary', 'secondary', 'tertiary'],
       control: {
         labels: {
           primary: 'Primary',
           secondary: 'Secondary',
-          ghost: 'Ghost',
-          cta: 'Call to action',
           tertiary: 'Tertiary',
-          'ghost-inverted': 'Ghost inverted',
         },
       },
       description: "Button variant"
+    },
+    buttonStyle: {
+      name: 'button style',
+      type: { name: 'select' },
+      options: ['highlight', 'neutral', 'inverted'],
     },
     disabled: {
       name: 'disabled',
@@ -115,6 +118,7 @@ const Template = (args) => {
     variant="${args.variant}"
     ${args.disabled ? 'disabled' : ''}
     hide-label="${!!args.hideLabel}"
+    button-style="${args.buttonStyle}"
     ${args.indicator && args.hideLabel ? `indicator indicator-value="${args.indicatorValue}"` : ''}
   >
     ${args.icon && args.iconPosition === 'before' ?

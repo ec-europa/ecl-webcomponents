@@ -136,6 +136,7 @@ export namespace Components {
     }
     interface EclButton {
         "ariaControls": string;
+        "buttonStyle": string;
         "containerExtraClasses": string;
         /**
           * @default false
@@ -2660,6 +2661,7 @@ declare namespace LocalJSX {
     }
     interface EclButton {
         "ariaControls"?: string;
+        "buttonStyle"?: string;
         "containerExtraClasses"?: string;
         /**
           * @default false

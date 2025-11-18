@@ -20,7 +20,7 @@
     "cross-env": "10.1.0"
   },
   "dependencies": {
-    "@ecl/web-components-icon": "5.0.0-alpha.15"
+    "@ecl/web-components-icon": "5.0.0-alpha.20"
   },
   "repository": {
     "type": "git",

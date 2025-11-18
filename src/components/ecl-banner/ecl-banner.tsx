@@ -164,6 +164,7 @@ export class EclBanner {
             hideLabel
             type="button"
             variant="tertiary"
+            buttonStyle="neutral"
             data-ecl-banner-play
             containerExtraClasses={`sc-ecl-banner-${this.theme}`}
           >
@@ -181,6 +182,7 @@ export class EclBanner {
             hideLabel
             type="button"
             variant="tertiary"
+            buttonStyle="neutral"
             data-ecl-banner-pause
             containerExtraClasses={`sc-ecl-banner-${this.theme}`}
           >
@@ -224,7 +226,7 @@ export class EclBanner {
               <div class="ecl-banner__cta">
                 <ecl-link
                   theme={this.theme}
-                  variant="cta"
+                  variant="primary-highlight"
                   path={this.ctaLink}
                   style-class={`ecl-banner__link-cta sc-ecl-banner-${this.theme}`}
                 >
