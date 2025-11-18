@@ -36,6 +36,7 @@
  - [ecl-modal](../ecl-modal)
  - [ecl-news-ticker](../ecl-news-ticker)
  - [ecl-notification](../ecl-notification)
+ - [ecl-page-header](../ecl-page-header)
  - [ecl-popover](../ecl-popover)
  - [ecl-search-form](../ecl-search-form)
  - [ecl-select](../ecl-select)
@@ -62,6 +63,7 @@ graph TD;
   ecl-modal --> ecl-button
   ecl-news-ticker --> ecl-button
   ecl-notification --> ecl-button
+  ecl-page-header --> ecl-button
   ecl-popover --> ecl-button
   ecl-search-form --> ecl-button
   ecl-select --> ecl-button

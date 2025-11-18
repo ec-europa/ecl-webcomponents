@@ -22,6 +22,7 @@ if (!isProd) {
     path.resolve(`${__dirname}/../src/components/ecl-timeline`),
     path.resolve(`${__dirname}/../src/components/ecl-breadcrumb`),
     path.resolve(`${__dirname}/../src/components/ecl-inpage-navigation`),
+    path.resolve(`${__dirname}/../src/components/ecl-page-header`),
     path.resolve(`${__dirname}/../src/components/ecl-popover`),
     path.resolve(`${__dirname}/../src/components/ecl-datepicker`),
     path.resolve(`${__dirname}/../src/components/ecl-site-header`),

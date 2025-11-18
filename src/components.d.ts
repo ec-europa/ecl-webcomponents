@@ -1251,6 +1251,20 @@ export namespace Components {
         "withClose": boolean;
     }
     interface EclPageHeader {
+        /**
+          * @default false
+         */
+        "eclScript": boolean;
+        "expandableContent": string;
+        "expandableHeader": string;
+        /**
+          * @default `toggle panel's visibility`
+         */
+        "expandableLabel": string;
+        /**
+          * @default `ecl-page-header-expandable-panel-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "expandablePanelId": string;
         "headerTitle": string;
         "image": string;
         "imageAlt": string;
@@ -3767,6 +3781,20 @@ declare namespace LocalJSX {
         "withClose"?: boolean;
     }
     interface EclPageHeader {
+        /**
+          * @default false
+         */
+        "eclScript"?: boolean;
+        "expandableContent"?: string;
+        "expandableHeader"?: string;
+        /**
+          * @default `toggle panel's visibility`
+         */
+        "expandableLabel"?: string;
+        /**
+          * @default `ecl-page-header-expandable-panel-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "expandablePanelId"?: string;
         "headerTitle"?: string;
         "image"?: string;
         "imageAlt"?: string;

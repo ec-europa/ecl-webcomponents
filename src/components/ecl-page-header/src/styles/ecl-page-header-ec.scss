@@ -3,6 +3,9 @@
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
+@use '@ecl/mixins-typography/mixins' with (
+  $typography: var.$typography
+);
 @use '@ecl/page-header/page-header-ec' with (
   $theme: theme.$theme,
   $page-header: var.$page-header
@@ -10,4 +13,13 @@
 
 .ecl-page-header--negative .ecl-page-header__description ::slotted(a) {
   color: #fff;
+}
+
+.ecl-page-header-expandable__toggle {
+  color: var(--cm-on-surface-brand);
+
+  &:hover {
+    border-color: var(--cm-on-surface-brand);
+    color: var(--cm-on-surface-brand);
+  }
 }

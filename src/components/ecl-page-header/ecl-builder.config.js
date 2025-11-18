@@ -10,6 +10,19 @@ const includePaths = [nodeModules];
 const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()}`;
 
 module.exports = {
+  scripts: [
+    {
+      entry: path.resolve(nodeModules, '@ecl/page-header/page-header-expandable.js'),
+      dest: path.resolve(outputFolder, 'scripts/ecl-page-header-expandable-vanilla.js'),
+      options: {
+        banner,
+        format: 'iife',
+        moduleName: 'PAGEHEADER',
+        includePaths,
+        sourceMap: false,
+      },
+    },
+  ],
   styles: [
     {
       entry: path.resolve(__dirname, 'src/styles/ecl-page-header-ec.scss'),

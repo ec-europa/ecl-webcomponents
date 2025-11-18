@@ -1,0 +1,88 @@
+diff --git a/bin/build.js b/bin/build.js
+index 63950a8e2632fb496e3cd4a7cd71055b72fbbd7b..07b3e6cc83afc7ffe4c2330efde64204f411f19d 100755
+--- a/bin/build.js
++++ b/bin/build.js
+@@ -71,9 +71,9 @@ program
+   .description('copy static files')
+   .action(async () => {
+     const config = await loadConfig(program.opts().config);
+-    for (const conf of config.copy) {
+-      await copyFiles(conf.patterns || '**', conf.from, conf.to);
+-    }
++    config.copy.forEach((conf) =>
++      copyFiles(conf.from || ['**'], conf.to, conf.options),
++    );
+   });
+ 
+ program
+diff --git a/scripts/copy.js b/scripts/copy.js
+index 9cf847004c6382b4ad32be622dc3a15d96ed3a5b..6c775bbde3335ebbd9e9c1e7ddce0889c1101b2e 100644
+--- a/scripts/copy.js
++++ b/scripts/copy.js
+@@ -1,19 +1,38 @@
+-import fs from 'node:fs';
+-import path from 'node:path';
+-import { copy } from 'fs-extra';
+-import { globby } from 'globby';
++/**
++ * Copy files.
++ *
++ * @param {string[]} from - Array of file/folder paths to copy from.
++ * @param {string} to - Destination path.
++ * @param {object} options - Options for copyfiles.
++ *
++ * Example config object:
++ * {
++ *   copy: [
++ *     {
++ *       from: [path.resolve(nodeModules, "myfile.js")],
++ *       to: path.resolve(outputFolder, "js"),
++ *       options: { up: true },
++ *     },
++ *   ],
++ * }
++ */
+ 
+-export default async (patterns, from, to) => {
+-  const paths = await globby(patterns, {
+-    nodir: true,
+-    cwd: from,
+-    followSymbolicLinks: true, // Matches globby 11.0.4 behavior
+-  });
++import copyfiles from 'copyfiles';
+ 
+-  for (const file of paths) {
+-    const input = path.resolve(from, file);
+-    const dest = path.resolve(to, file);
+-    fs.mkdirSync(path.dirname(dest), { recursive: true });
+-    await copy(input, dest);
+-  }
++export default async (from, to, options) => {
++  return new Promise((resolve, reject) => {
++    try {
++      from.push(to);
++      copyfiles(from, options || {}, (err) => {
++        if (err) {
++          console.error(err);
++          reject(err);
++        } else {
++          resolve();
++        }
++      });
++    } catch (err) {
++      reject(err);
++    }
++  });
+ };
+diff --git a/scripts/scripts.js b/scripts/scripts.js
+index 2163437431774c460fbe84df051bb14fb578fe44..49feea65572d22736b3fca57068a70844b209314 100644
+--- a/scripts/scripts.js
++++ b/scripts/scripts.js
+@@ -63,7 +63,6 @@ export default async (input, dest, options) => {
+     name: moduleName,
+     sourcemap: sourceMap,
+     globals: options.globals,
+-    footer: `ECL.version = "${pkg.version}";`,
+   };
+ 
+   if (format === 'es') {

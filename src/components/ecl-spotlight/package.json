@@ -1,14 +1,13 @@
 {
-  "name": "@ecl/web-components-page-header",
+  "name": "@ecl/web-components-spotlight",
   "author": "European Commission",
   "license": "EUPL-1.2",
   "version": "0.16.0",
-  "description": "ECL Page Header",
-  "main": "ecl-page-header.tsx",
+  "description": "ECL Spotlight",
+  "main": "ecl-spotlight.tsx",
   "private": true,
   "scripts": {
     "build:styles": "cross-env ecl-builder styles",
-    "build:scripts": "cross-env ecl-builder scripts",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
     "prepublish": "npm run build"
@@ -16,11 +15,11 @@
   "devDependencies": {
     "@ecl/builder": "5.0.0-alpha.20",
     "@ecl/grid": "5.0.0-alpha.20",
-    "@ecl/link": "5.0.0-alpha.20",
-    "@ecl/mixins-typography": "5.0.0-alpha.20",
-    "@ecl/page-header": "5.0.0-alpha.20",
+    "@ecl/spotlight": "5.0.0-alpha.20",
     "@ecl/theme-ec": "5.0.0-alpha.20",
     "@ecl/theme-eu": "5.0.0-alpha.20",
+    "@ecl/mixins-typography": "5.0.0-alpha.20",
+    "@ecl/picture": "5.0.0-alpha.20",
     "cross-env": "10.1.0"
   },
   "repository": {
