@@ -3,6 +3,9 @@
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
+@use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $typography: var.$typography
+);
 @use '@ecl/site-footer/site-footer-eu' with (
   $theme: theme.$theme,
   $site-footer: var.$site-footer
@@ -16,4 +19,8 @@
 .ecl-site-footer--standardised .ecl-site-footer--split-columns.sc-ecl-footer-eu .ecl-site-footer__column.sc-ecl-footer-eu:last-child {
   grid-column-end: 0;
   grid-column-start: 0;
+}
+
+.ecl-site-footer__co-owner-link {
+  color: var(--c-d);
 }

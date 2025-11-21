@@ -24,7 +24,7 @@
 | `target`         | `target`          |             | `string`  | `undefined` |
 | `theme`          | `theme`           |             | `string`  | `undefined` |
 | `titleAttr`      | `title-attr`      |             | `string`  | `undefined` |
-| `variant`        | `variant`         |             | `string`  | `'default'` |
+| `variant`        | `variant`         |             | `string`  | `''`        |
 
 
 ## Dependencies

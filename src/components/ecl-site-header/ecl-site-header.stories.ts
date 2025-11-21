@@ -28,13 +28,13 @@ const Template = (args) =>
     lang-code="en"
     search-form-id="ecl-site-header-search-form"
     login-text="Log in"
-    logo-size="${args.logo_size}"
     eu-label="Official EU languages:"
     non-eu-label="Other languages:"
     language-title="Choose your language"
     login-link="/example.html"
     language-id="language-switcher"
     logo-alt="European Commission"
+    logo-size="${args.logo_size}"
     logo-title="European commission"
     language-aria-label="Choose language"
   >
@@ -238,16 +238,6 @@ const Template = (args) =>
     lang-code="zh"
     language="中文"
   ></ecl-language-item>
-  <div slot="search" class="ecl-site-header__search-container sc-ecl-search-form-ec">
-    <ecl-search-form
-        input-id="ecl-search-form"
-        width="m"
-        placeholder="Placeholder text"
-        button-label="Cerca"
-        button-aria-label="Search"
-      >
-    </ecl-search-form>
-  </div>
   </ecl-site-header>`;
 
 const TemplateStandardised = (args) => 
@@ -265,6 +255,7 @@ const TemplateStandardised = (args) =>
     login-link="${randomizedLink('/example.html')}"
     language-id="language-switcher"
     logo-alt="European Commission"
+    logo-size="${args.logo_size}"
     logo-title="European commission"
     language-aria-label="Choose language"
     site-name="${args.siteName}"
@@ -811,6 +802,7 @@ const TemplateHarmonised = (args) =>
     logout-text="Log out"
     language-id="language-switcher"
     logo-alt="European Commission"
+    logo-size="${args.logo_size}"
     logo-title="European commission"
     language-aria-label="Choose language"
     site-name="${args.siteName}"

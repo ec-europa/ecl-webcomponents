@@ -93,6 +93,7 @@ export class EclMenu {
             styleClass={`ecl-menu__open sc-ecl-menu-${this.theme}`}
             data-ecl-menu-open
             hide-label
+            buttonStyle="neutral"
             variant="tertiary"
           >
             <ecl-icon
@@ -116,10 +117,10 @@ export class EclMenu {
           >
             <header class="ecl-menu__inner-header">
               <ecl-button
-                styleClass="ecl-menu__close ecl-button"
+                styleClass={`ecl-menu__close sc-ecl-menu-${this.theme}`}
                 type="submit"
                 data-ecl-menu-close
-                variant="ghost"
+                variant="tertiary"
               >
                 <ecl-icon
                   icon="close"
@@ -135,6 +136,7 @@ export class EclMenu {
                 type="submit"
                 variant="ghost"
                 styleClass={`ecl-menu__back sc-ecl-menu-${this.theme}`}
+                containerExtraClasses={`sc-ecl-menu-${this.theme}`}
               >
                 <ecl-icon
                   icon="corner-arrow"

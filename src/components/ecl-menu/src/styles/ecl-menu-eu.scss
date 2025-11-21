@@ -34,6 +34,11 @@
 .ecl-menu__close,
 .ecl-menu__back {
   background-color: transparent;
+  border: none;
+
+  .ecl-button__container {
+    justify-content: start;
+  }
 }
 
 .ecl-menu__back .ecl-button__label {
@@ -60,5 +65,16 @@
   .ecl-button__icon {
     height: 1.125rem !important;
     width: 1.125rem !important;
+  }
+}
+
+@media (width >= 1140px) {
+  ecl-menu-item {
+    flex-grow: 0;
+
+    > * {
+      display: flex;
+      flex-grow: 0;
+    }
   }
 }

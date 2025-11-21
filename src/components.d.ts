@@ -637,6 +637,8 @@ export namespace Components {
         "width": string;
     }
     interface EclFooterEc {
+        "coOwnerLinks": string;
+        "coOwnerTitle": string;
         "description": string;
         "logoAlt": string;
         "logoLangCode": string;
@@ -652,6 +654,8 @@ export namespace Components {
         "variant": string;
     }
     interface EclFooterEu {
+        "coOwnerLinks": string;
+        "coOwnerTitle": string;
         "description": string;
         "logoAlt": string;
         "logoAriaLabel": string;
@@ -989,7 +993,7 @@ export namespace Components {
         "theme": string;
         "titleAttr": string;
         /**
-          * @default 'default'
+          * @default ''
          */
         "variant": string;
     }
@@ -3165,6 +3169,8 @@ declare namespace LocalJSX {
         "width"?: string;
     }
     interface EclFooterEc {
+        "coOwnerLinks"?: string;
+        "coOwnerTitle"?: string;
         "description"?: string;
         "logoAlt"?: string;
         "logoLangCode"?: string;
@@ -3180,6 +3186,8 @@ declare namespace LocalJSX {
         "variant"?: string;
     }
     interface EclFooterEu {
+        "coOwnerLinks"?: string;
+        "coOwnerTitle"?: string;
         "description"?: string;
         "logoAlt"?: string;
         "logoAriaLabel"?: string;
@@ -3520,7 +3528,7 @@ declare namespace LocalJSX {
         "theme"?: string;
         "titleAttr"?: string;
         /**
-          * @default 'default'
+          * @default ''
          */
         "variant"?: string;
     }

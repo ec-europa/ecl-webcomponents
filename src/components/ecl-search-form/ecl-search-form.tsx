@@ -43,6 +43,7 @@ export class EclSearchForm {
       <form
         class={this.getClass()}
         role="search"
+        data-ecl-search-form
       >
         <ecl-form-group
           style-class={`sc-ecl-search-form-${this.theme}`}
@@ -50,13 +51,11 @@ export class EclSearchForm {
           required={this.required}
           invalid={this.invalid}
           invalid-text={this.invalidText}
-          theme={this.theme}
         >
           <ecl-input
             style-class={`sc-ecl-search-form-${this.theme}`}
             type="search"
             input-class={`ecl-search-form__text-input sc-ecl-search-form-${this.theme}`}
-            theme={this.theme}
             input-id={this.inputId}
             required={this.required}
             disabled={this.disabled}
@@ -69,10 +68,9 @@ export class EclSearchForm {
         <ecl-button
           style-class={`ecl-search-form__button sc-ecl-search-form-${this.theme} ${this.buttonClass}`}
           aria-label={this.buttonAriaLabel}
-          variant={this.theme === 'ec' ? 'ghost' : 'primary'}
+          variant={this.theme === 'ec' ? 'tertiary' : 'primary'}
           type="search"
           hide-label
-          theme={this.theme}
         >
           {this.buttonLabel}
           <ecl-icon

@@ -118,7 +118,8 @@ export class EclMenuItem {
           styleClass={`ecl-menu__button-caret sc-ecl-menu-${this.theme}`}
           type="button"
           theme={this.theme}
-          variant="ghost"
+          variant="tertiary"
+          buttonStyle="neutral"
           hide-label
           {...buttonAttrs}
         > 

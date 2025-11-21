@@ -21,6 +21,8 @@ const Template = (args) =>
     description="This site is managed by:"
     site-name="European Commission website"
     logo-link="${randomizedLink('/example.html')}"
+    co-owner-title="This page is managed by:"
+    co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"},{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"}]'
   >
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
@@ -169,6 +171,9 @@ const TemplateStandardised = (args) => `
     variant="standardised"
     description="This site is managed by:"
     logo-link="${randomizedLink('/example.html')}"
+    co-owner-title="This page is managed by:"
+    co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"},{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"}]'
+  >
   >
     <ecl-social-media-follow
       variant="horizontal"
@@ -408,6 +413,9 @@ const TemplateEu = () =>
     description="This site is managed by the Directorate-General for Communication"
     variant="core"
     logo-link="${randomizedLink('/example.html')}"
+    co-owner-title="This page is managed by:"
+    co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"},{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"}]'
+  >
   >
     <ecl-text tag="p" slot="description">
       This site is managed by: [name of the manager of the site]
@@ -529,6 +537,9 @@ const TemplateEuHarmonised = () =>
     description="This site is managed by the Directorate-General for Communication"
     variant="harmonised"
     logo-link="${randomizedLink('/example.html')}"
+    co-owner-title="This page is managed by:"
+    co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"},{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"}]'
+  >
   >
     <ecl-text
       size="m"
