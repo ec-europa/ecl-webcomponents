@@ -11,7 +11,7 @@ exports[`ecl-social-media-follow renders 1`] = `
       <li class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec">
         <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
           <!---->
-          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://facebook.com">
+          <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://facebook.com">
             <ecl-icon class="ecl-link__icon" slot="icon-before">
               <span class="ecl-icon wt-icon--monochrome wt-icon--placeholder wt-icon--s wt-icon-networks--facebook-color"></span>
             </ecl-icon>
@@ -24,7 +24,7 @@ exports[`ecl-social-media-follow renders 1`] = `
       <li class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec">
         <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
           <!---->
-          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://twitter.com">
+          <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://twitter.com">
             <ecl-icon class="ecl-link__icon" slot="icon-before">
               <span class="ecl-icon wt-icon--monochrome wt-icon--placeholder wt-icon--s wt-icon-networks--twitter-color"></span>
             </ecl-icon>
@@ -37,7 +37,7 @@ exports[`ecl-social-media-follow renders 1`] = `
       <li class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec">
         <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
           <!---->
-          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://instagram.com">
+          <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://instagram.com">
             <ecl-icon class="ecl-link__icon" slot="icon-before">
               <span class="ecl-icon wt-icon--monochrome wt-icon--placeholder wt-icon--s wt-icon-networks--instagram-color"></span>
             </ecl-icon>
@@ -50,7 +50,7 @@ exports[`ecl-social-media-follow renders 1`] = `
       <li class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec">
         <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
           <!---->
-          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://linkedin.com">
+          <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://linkedin.com">
             <ecl-icon class="ecl-link__icon" slot="icon-before">
               <span class="ecl-icon wt-icon--monochrome wt-icon--placeholder wt-icon--s wt-icon-networks--linkedin-color"></span>
             </ecl-icon>
@@ -63,7 +63,7 @@ exports[`ecl-social-media-follow renders 1`] = `
       <li class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec">
         <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
           <!---->
-          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://telegram.com">
+          <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://telegram.com">
             <ecl-icon class="ecl-link__icon" slot="icon-before">
               <span class="ecl-icon wt-icon--monochrome wt-icon--placeholder wt-icon--s wt-icon-networks--telegram-color"></span>
             </ecl-icon>
@@ -76,7 +76,7 @@ exports[`ecl-social-media-follow renders 1`] = `
       <li class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec">
         <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
           <!---->
-          <a class="ecl-link ecl-link--default ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://example.html">
+          <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://example.html">
             <ecl-icon class="ecl-link__icon" slot="icon-before">
               <span class="ecl-icon wt-icon--monochrome wt-icon--placeholder wt-icon--s wt-icon-networks--chain"></span>
             </ecl-icon>

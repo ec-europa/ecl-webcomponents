@@ -15,13 +15,13 @@ exports[`ecl-site-header renders 1`] = `
             </ecl-link>
             <div class="ecl-site-header__action">
               <div class="ecl-site-header__login-container">
-                <a aria-expanded="false" class="ecl-button ecl-button--tertiary ecl-site-header__login-toggle sc-ecl-site-header-ec" data-ecl-login-toggle href="/example.html">
+                <a aria-expanded="false" class="ecl-button ecl-button--neutral ecl-button--tertiary ecl-site-header__login-toggle sc-ecl-site-header-ec" data-ecl-login-toggle href="/example.html">
                   <ecl-icon as-image="" icon="log-in" size="m" slot="icon-before" style-class="ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
                   Log in
                 </a>
               </div>
               <div class="ecl-site-header__language">
-                <a aria-controls="language-switcher" aria-label="Choose language" class="ecl-button ecl-button--tertiary ecl-site-header__language-selector" data-ecl-language-selector role="button">
+                <a aria-controls="language-switcher" aria-label="Choose language" class="ecl-button ecl-button--neutral ecl-button--tertiary ecl-site-header__language-selector" data-ecl-language-selector role="button">
                   <span class="ecl-site-header__language-icon">
                     <ecl-icon icon="global" size="m" style-class="ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
                     english
@@ -32,7 +32,7 @@ exports[`ecl-site-header renders 1`] = `
                     <div class="ecl-site-header__language-title" id="ecl-site-header__language-title">
                       Choose your language
                     </div>
-                    <ecl-button data-ecl-language-list-close hide-label="" style-class="ecl-site-header__language-close sc-ecl-site-header-ec" type="submit" variant="tertiary">
+                    <ecl-button buttonstyle="neutral" data-ecl-language-list-close hide-label="" style-class="ecl-site-header__language-close sc-ecl-site-header-ec" type="submit" variant="tertiary">
                       <ecl-icon data-ecl-icon icon="close" size="m" slot="icon-after" style-class="sc-ecl-site-header-ec"></ecl-icon>
                     </ecl-button>
                   </div>
@@ -223,19 +223,19 @@ exports[`ecl-site-header renders 1`] = `
                 </div>
               </div>
               <div class="ecl-site-header__search-container" role="search">
-                <a aria-controls="search-form-id" aria-expanded="false" class="ecl-button ecl-button--tertiary ecl-site-header__search-toggle" data-ecl-search-toggle>
+                <a aria-controls="search-form-id" aria-expanded="false" class="ecl-button ecl-button--neutral ecl-button--tertiary ecl-site-header__search-toggle" data-ecl-search-toggle>
                   <ecl-icon icon="search" size="m" style-class="ecl-icon ecl-icon--s ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
                   search
                 </a>
-                <ecl-search-form button-aria-label="search" button-class="sc-ecl-site-header-ec" button-label="search" input-id="ecl-site-header-search-form" style-class="ecl-site-header__search sc-ecl-site-header-ec">
+                <ecl-search-form button-aria-label="search" button-class="ecl-button--neutral sc-ecl-site-header-ec" button-label="search" input-id="ecl-site-header-search-form" style-class="ecl-site-header__search sc-ecl-site-header-ec">
                   <form class="ecl-search-form ecl-site-header__search sc-ecl-site-header-ec" data-ecl-search-form role="search">
                     <ecl-form-group style-class="sc-ecl-search-form-ec">
                       <!---->
                       <div class="ecl-form-group sc-ecl-search-form-ec">
-                        <ecl-input input-class="ecl-search-form__text-input sc-ecl-search-form-ec" input-id="ecl-site-header-search-form" placeholder="Placeholder text" style-class="sc-ecl-search-form-ec" theme="ec" type="search"></ecl-input>
+                        <ecl-input input-class="ecl-search-form__text-input sc-ecl-search-form-ec" input-id="ecl-site-header-search-form" placeholder="Placeholder text" style-class="sc-ecl-search-form-ec" type="search"></ecl-input>
                       </div>
                     </ecl-form-group>
-                    <ecl-button aria-label="search" hide-label="" style-class="ecl-search-form__button sc-ecl-search-form-ec sc-ecl-site-header-ec" theme="ec" type="search" variant="ghost">
+                    <ecl-button aria-label="search" hide-label="" style-class="ecl-search-form__button sc-ecl-search-form-ec ecl-button--neutral sc-ecl-site-header-ec" type="search" variant="tertiary">
                       search
                       <ecl-icon icon="search" size="m" slot="icon-before" style-class="sc-ecl-search-form-ec"></ecl-icon>
                     </ecl-button>

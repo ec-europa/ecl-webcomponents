@@ -13,7 +13,7 @@ exports[`ecl-news-ticker renders 1`] = `
             </ecl-icon>
             <ecl-link>
               <!---->
-              <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+              <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
                 <span class="ecl-link__label">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit'
                 </span>
@@ -26,7 +26,7 @@ exports[`ecl-news-ticker renders 1`] = `
             </ecl-icon>
             <ecl-link>
               <!---->
-              <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+              <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
                 <span class="ecl-link__label">
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
                 </span>
@@ -36,7 +36,7 @@ exports[`ecl-news-ticker renders 1`] = `
           <li class="ecl-news-ticker__slide sc-ecl-news-ticker-ec">
             <ecl-link>
               <!---->
-              <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+              <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
                 <span class="ecl-link__label">
                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
                 </span>
@@ -49,7 +49,7 @@ exports[`ecl-news-ticker renders 1`] = `
             </ecl-icon>
             <ecl-link>
               <!---->
-              <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+              <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
                 <span class="ecl-link__label">
                   Excepteur sint occaecat cupidatat officia deserunt mollit anim id est laborum
                 </span>
@@ -62,7 +62,7 @@ exports[`ecl-news-ticker renders 1`] = `
             </ecl-icon>
             <ecl-link>
               <!---->
-              <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+              <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
                 <span class="ecl-link__label">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                 </span>
@@ -72,7 +72,7 @@ exports[`ecl-news-ticker renders 1`] = `
           <li class="ecl-news-ticker__slide sc-ecl-news-ticker-ec">
             <ecl-link>
               <!---->
-              <a class="ecl-link ecl-link--default ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+              <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
                 <span class="ecl-link__label">
                   Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores
                 </span>

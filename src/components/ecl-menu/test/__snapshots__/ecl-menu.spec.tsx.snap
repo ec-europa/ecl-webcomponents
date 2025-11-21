@@ -8,7 +8,7 @@ exports[`ecl-menu renders 1`] = `
     <div class="ecl-container ecl-menu__container">
       <ecl-button data-ecl-menu-open hide-label="">
         <!---->
-        <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-menu__open sc-ecl-menu-ec" data-ecl-menu-open="eclMenuOpen" type="submit">
+        <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__open sc-ecl-menu-ec" data-ecl-menu-open="eclMenuOpen" type="submit">
           <span class="ecl-button__container">
             <ecl-icon slot="icon-before">
               <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-menu-ec wt-icon--hamburger wt-icon--m wt-icon--placeholder"></span>
@@ -26,7 +26,7 @@ exports[`ecl-menu renders 1`] = `
         <header class="ecl-menu__inner-header">
           <ecl-button data-ecl-menu-close>
             <!---->
-            <button class="ecl-button ecl-button--ghost ecl-menu__close" data-ecl-menu-close="eclMenuClose" type="submit">
+            <button class="ecl-button ecl-button--tertiary ecl-menu__close sc-ecl-menu-ec" data-ecl-menu-close="eclMenuClose" type="submit">
               <span class="ecl-button__container">
                 <ecl-icon slot="icon-before">
                   <span class="ecl-button__icon ecl-button__icon--before ecl-icon sc-ecl-button-ec sc-ecl-menu-ec wt-icon--close wt-icon--placeholder wt-icon--s"></span>
@@ -43,7 +43,7 @@ exports[`ecl-menu renders 1`] = `
           <ecl-button data-ecl-menu-back>
             <!---->
             <button class="ecl-button ecl-button--ghost ecl-menu__back sc-ecl-menu-ec" data-ecl-menu-back="eclMenuBack" type="submit">
-              <span class="ecl-button__container">
+              <span class="ecl-button__container sc-ecl-menu-ec">
                 <ecl-icon slot="icon-before">
                   <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270 wt-icon--xs"></span>
                 </ecl-icon>
@@ -97,7 +97,7 @@ exports[`ecl-menu renders 1`] = `
               </a>
               <ecl-button data-ecl-menu-caret hide-label="">
                 <!---->
-                <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
@@ -155,7 +155,7 @@ exports[`ecl-menu renders 1`] = `
               </a>
               <ecl-button data-ecl-menu-caret hide-label="">
                 <!---->
-                <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
@@ -210,7 +210,7 @@ exports[`ecl-menu renders 1`] = `
               </a>
               <ecl-button data-ecl-menu-caret hide-label="">
                 <!---->
-                <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
@@ -265,7 +265,7 @@ exports[`ecl-menu renders 1`] = `
               </a>
               <ecl-button data-ecl-menu-caret hide-label="">
                 <!---->
-                <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
@@ -432,7 +432,7 @@ exports[`ecl-menu renders 1`] = `
               </a>
               <ecl-button data-ecl-menu-caret hide-label="">
                 <!---->
-                <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
@@ -519,7 +519,7 @@ exports[`ecl-menu renders 1`] = `
               </a>
               <ecl-button data-ecl-menu-caret hide-label="">
                 <!---->
-                <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
@@ -558,7 +558,7 @@ exports[`ecl-menu renders 1`] = `
               </a>
               <ecl-button data-ecl-menu-caret hide-label="">
                 <!---->
-                <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
@@ -597,7 +597,7 @@ exports[`ecl-menu renders 1`] = `
               </a>
               <ecl-button data-ecl-menu-caret hide-label="">
                 <!---->
-                <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
