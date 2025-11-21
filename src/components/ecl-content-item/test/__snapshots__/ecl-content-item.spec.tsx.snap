@@ -102,7 +102,7 @@ exports[`ecl-content-item renders 1`] = `
                     <li class="ecl-description-list__definition-item sc-ecl-description-list-ec">
                       <ecl-link>
                         <!---->
-                        <a class="ecl-link ecl-link--default sc-ecl-description-list-ec" href="/example.html">
+                        <a class="ecl-link sc-ecl-description-list-ec" href="/example.html">
                           <span class="ecl-link__label">
                             Lorem ipsum dolor sit amet
                           </span>
@@ -112,7 +112,7 @@ exports[`ecl-content-item renders 1`] = `
                     <li class="ecl-description-list__definition-item sc-ecl-description-list-ec">
                       <ecl-link>
                         <!---->
-                        <a class="ecl-link ecl-link--default sc-ecl-description-list-ec" href="/example.html">
+                        <a class="ecl-link sc-ecl-description-list-ec" href="/example.html">
                           <span class="ecl-link__label">
                             Lorem ipsum dolor sit amet
                           </span>
@@ -135,7 +135,7 @@ exports[`ecl-content-item renders 1`] = `
                     <li class="ecl-description-list__definition-item sc-ecl-description-list-ec">
                       <ecl-link>
                         <!---->
-                        <a class="ecl-link ecl-link--default sc-ecl-description-list-ec" href="/example.html">
+                        <a class="ecl-link sc-ecl-description-list-ec" href="/example.html">
                           <span class="ecl-link__label">
                             Lorem ipsum dolor sit amet
                           </span>
@@ -145,7 +145,7 @@ exports[`ecl-content-item renders 1`] = `
                     <li class="ecl-description-list__definition-item sc-ecl-description-list-ec">
                       <ecl-link>
                         <!---->
-                        <a class="ecl-link ecl-link--default sc-ecl-description-list-ec" href="/example.html">
+                        <a class="ecl-link sc-ecl-description-list-ec" href="/example.html">
                           <span class="ecl-link__label">
                             Lorem ipsum dolor sit amet
                           </span>
@@ -171,7 +171,7 @@ exports[`ecl-content-item renders 1`] = `
                     <li class="ecl-description-list__definition-item sc-ecl-description-list-ec">
                       <ecl-link>
                         <!---->
-                        <a class="ecl-link ecl-link--default" href="/example.html">
+                        <a class="ecl-link" href="/example.html">
                           <span class="ecl-link__label">
                             Taxonomy item 2
                           </span>
