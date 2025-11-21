@@ -49,7 +49,7 @@ export class EclIcon {
     }
     if (this.rotate) {
       styleClasses.push(
-        `${pref}-icon--rotate-${this.rotate}`
+        `ecl-icon--rotate-${this.rotate}`
       );
     }
     if (pref === 'wt') {

@@ -4,14 +4,22 @@ export default {
   title: 'Components/icon',
 };
 
-const Template = (args) => `<ecl-icon 
-                              icon="${args.icon}"
-                              sprite="${args.sprite}"
-                              color="${args.color}"
-                              size="${args.size}"
-                              flip="${args.flip}"
-                              rotate="${args.rotate}"
-                            ></ecl-icon>`;
+const Template = (args) => {
+  let iconHtml = `<ecl-icon 
+      icon="${args.icon}"
+      sprite="${args.sprite}"
+      color="${args.color}"
+      size="${args.size}"
+      flip="${args.flip}"
+      rotate="${args.rotate}"
+    ></ecl-icon>`;
+
+    if (args.color === 'inverted') {
+      iconHtml = `<div style="background-color: black; padding: 1rem; display: inline-block;">${iconHtml}</div>`;
+    }
+
+    return iconHtml;
+}
 
 export const Icon = Template.bind({});
 Icon.storyName = 'default';
@@ -49,7 +57,7 @@ Icon.argTypes = {
   },
   size: {
     type: { name: 'select' },
-    options: ['2xs','xs', 's', 'm', 'l', 'xl', '2xl'],
+    options: ['2xs','xs', 's', 'm', 'l', 'xl', '2xl', 'fluid'],
     description: "icon size",
   },
   color: {

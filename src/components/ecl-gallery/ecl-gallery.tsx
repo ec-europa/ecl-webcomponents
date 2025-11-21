@@ -145,7 +145,7 @@ export class EclGallery {
             {this.viewAllLabel || this.viewAllExpandedLabel ? (
               <ecl-button
                 styleClass={`ecl-gallery__view-all sc-ecl-gallery-${this.theme}`}
-                variant="ghost"
+                variant="tertiary"
                 data-ecl-gallery-collapsed-label={this.viewAllLabel}
                 data-ecl-gallery-expanded-label={this.viewAllExpandedLabel}
                 data-ecl-gallery-all
@@ -181,7 +181,8 @@ export class EclGallery {
             <ecl-button
               theme={this.theme}
               style-class={`ecl-gallery__close-button sc-ecl-gallery-${this.theme}`}
-              variant="ghost"
+              variant="tertiary"
+              buttonStyle="inverted"
               hide-label
               data-ecl-gallery-close
             >
@@ -217,7 +218,7 @@ export class EclGallery {
                       theme={this.theme}
                       style-class={`ecl-gallery__slider-previous sc-ecl-gallery-${this.theme}`}
                       data-ecl-gallery-overlay-previous
-                      variant="ghost"
+                      variant="tertiary"
                       type="button"
                       hide-label
                     >
@@ -235,7 +236,7 @@ export class EclGallery {
                     theme={this.theme}
                     style-class={`ecl-gallery__slider-next sc-ecl-gallery-${this.theme}`}
                     data-ecl-gallery-overlay-next
-                    variant="ghost"
+                    variant="tertiary"
                     type="button"
                     hide-label
                   >
