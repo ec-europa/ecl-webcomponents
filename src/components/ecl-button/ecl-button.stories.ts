@@ -138,7 +138,7 @@ const Template = (args) => {
       ></ecl-icon>` : ''}
   </ecl-button>`;
 
-  if (args.variant === 'ghost-inverted') {
+  if (args.buttonStyle === 'inverted') {
     return `<div style="background-color: black; padding: 1rem; display: inline-block;">${buttonHtml}</div>`;
   }
 
