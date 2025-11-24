@@ -141,7 +141,7 @@ const Template = (args) => {
     </ecl-link>`;
 
   if (args.inverted) {
-    return `<div style="padding: var(--s-s); background: var(--ecl-color-neutral-dark, var(--ecl-color-dark))">${link}</div>`;
+    return `<div style="padding: var(--s-s); background: var(--cm-surface-brand, var(--ecl-color-dark))">${link}</div>`;
   }
 
   return link;

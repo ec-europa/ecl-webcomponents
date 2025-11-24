@@ -12,6 +12,7 @@ const Template = (args) => {
       size="${args.size}"
       flip="${args.flip}"
       rotate="${args.rotate}"
+      title="${args.title}"
     ></ecl-icon>`;
 
     if (args.color === 'inverted') {
@@ -30,6 +31,7 @@ Icon.args = {
   sprite: '',
   color: 'default',
   size: '2xl',
+  title: '',
 };
 Icon.argTypes = {
   color_mode: { table: { disable: true }},
@@ -98,5 +100,9 @@ Icon.argTypes = {
       180: '180',
       270: '270',
     },
+  },
+  title: {
+    name: 'icon title (accessibility)',
+    type: { name: 'string' },
   },
 };

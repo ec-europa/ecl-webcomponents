@@ -139,7 +139,7 @@ const Template = (args) => {
   </ecl-button>`;
 
   if (args.buttonStyle === 'inverted') {
-    return `<div style="background-color: black; padding: 1rem; display: inline-block;">${buttonHtml}</div>`;
+    return `<div style="background-color: var(--cm-surface-brand); padding: 1rem; display: inline-block;">${buttonHtml}</div>`;
   }
 
   return buttonHtml;

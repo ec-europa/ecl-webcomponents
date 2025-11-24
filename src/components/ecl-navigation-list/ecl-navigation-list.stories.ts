@@ -17,8 +17,9 @@ const getArgTypes = () => ({
     description: 'Choose variant',
   },
   image: {
+    name: 'image or icon',
     control: { type: 'boolean' },
-    description: 'Show image',
+    description: 'Show image or icon',
   },
   column: {
     control: { type: 'range', min: 2, max: 3, step: 1 },

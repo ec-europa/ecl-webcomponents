@@ -88,6 +88,7 @@ export class EclModal {
               type="button"
               variant="tertiary"
               hide-label
+              buttonStyle="neutral"
               styleClass={`ecl-modal__close sc-ecl-modal-${this.theme}`}
               data-ecl-modal-close
             >
