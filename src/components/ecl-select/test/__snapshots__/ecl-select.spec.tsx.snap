@@ -51,7 +51,7 @@ exports[`ecl-select renders 1`] = `
         <div class="ecl-select__icon">
           <ecl-button hide-label="" styleclass="sc-ecl-select-ec" variant="tertiary">
             <ecl-icon slot="icon-after" style-class="sc-ecl-select-ec">
-              <span class="ecl-icon ecl-icon--rotate-180 sc-ecl-select-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--xs"></span>
+              <span class="ecl-icon sc-ecl-select-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180 wt-icon--xs"></span>
             </ecl-icon>
           </ecl-button>
         </div>
