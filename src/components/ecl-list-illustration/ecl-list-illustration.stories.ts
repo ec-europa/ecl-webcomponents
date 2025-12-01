@@ -114,7 +114,6 @@ export default {
 
 const Template = (args) => 
   `<ecl-list-illustration
-    theme="${args.theme}"
     zebra=${args.zebra}
     column="${args.column}"
     centered=${args.centered}
@@ -122,7 +121,6 @@ const Template = (args) =>
     color-mode="${args.color_mode}"
   >
     <ecl-list-illustration-item
-      theme="${args.theme}"
       image="${!args.icon ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg' : ''}"
       item-title="List with illustration item 1"
       media-size="${args.mediaSize}"
@@ -137,7 +135,6 @@ const Template = (args) =>
       in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
     </ecl-list-illustration-item>
     <ecl-list-illustration-item
-      theme="${args.theme}"
       image="${!args.icon ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg' : ''}"
       icon="${args.icon ? "regulation" : ''}"
       icon-size="${args.iconSize}"
@@ -152,7 +149,6 @@ const Template = (args) =>
       in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
     </ecl-list-illustration-item>
     <ecl-list-illustration-item
-      theme="${args.theme}"
       image="${!args.icon ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg' : ''}"
       icon="${args.icon ? "regulation" : ''}"
       icon-size="${args.iconSize}"
@@ -167,7 +163,6 @@ const Template = (args) =>
       in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
     </ecl-list-illustration-item>
     <ecl-list-illustration-item
-      theme="${args.theme}"
       image="${!args.icon ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg' : ''}"
       icon="${args.icon ? "regulation" : ''}"
       icon-size="${args.iconSize}"
@@ -182,7 +177,6 @@ const Template = (args) =>
       in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
     </ecl-list-illustration-item>
     <ecl-list-illustration-item
-      theme="${args.theme}"
       image="${!args.icon ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg' : ''}"
       icon="${args.icon ? "regulation" : ''}"
       icon-size="${args.iconSize}"

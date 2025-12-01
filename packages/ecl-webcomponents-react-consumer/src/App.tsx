@@ -170,15 +170,15 @@ function App() {
             <EclDivider></EclDivider>
             <EclSpacing value="l" direction="t"></EclSpacing>
             <EclListIllustration column={3}>
-              <EclListIllustrationItem image="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 1">
+              <EclListIllustrationItem  has-columns image="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut
                 felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
               </EclListIllustrationItem>
-              <EclListIllustrationItem image="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 2">
+              <EclListIllustrationItem has-columns image="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut
                 felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
               </EclListIllustrationItem>
-              <EclListIllustrationItem image="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 3">
+              <EclListIllustrationItem has-columns image="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut
                 felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
               </EclListIllustrationItem>
