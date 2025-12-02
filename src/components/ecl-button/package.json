@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-button",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.16.0",
+  "version": "0.17.0",
   "description": "ECL Button",
   "main": "ecl-button.tsx",
   "private": true,
@@ -26,8 +26,8 @@
     "cross-env": "10.1.0"
   },
   "dependencies": {
-    "@ecl/web-components-icon": "0.16.0",
-    "@ecl/web-components-indicator": "0.16.0"
+    "@ecl/web-components-icon": "0.17.0",
+    "@ecl/web-components-indicator": "0.17.0"
   },
   "repository": {
     "type": "git",
