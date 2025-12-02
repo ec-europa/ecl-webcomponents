@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-spotlight",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.16.0",
+  "version": "0.17.0",
   "description": "ECL Spotlight",
   "main": "ecl-spotlight.tsx",
   "private": true,
@@ -15,11 +15,11 @@
   "devDependencies": {
     "@ecl/builder": "5.0.0-alpha.20",
     "@ecl/grid": "5.0.0-alpha.20",
+    "@ecl/mixins-typography": "5.0.0-alpha.20",
+    "@ecl/picture": "5.0.0-alpha.20",
     "@ecl/spotlight": "5.0.0-alpha.20",
     "@ecl/theme-ec": "5.0.0-alpha.20",
     "@ecl/theme-eu": "5.0.0-alpha.20",
-    "@ecl/mixins-typography": "5.0.0-alpha.20",
-    "@ecl/picture": "5.0.0-alpha.20",
     "cross-env": "10.1.0"
   },
   "repository": {
