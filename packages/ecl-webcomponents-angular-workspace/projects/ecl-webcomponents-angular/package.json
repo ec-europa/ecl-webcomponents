@@ -10,7 +10,7 @@
   "peerDependencies": {
     "@angular/common": "18.2.0",
     "@angular/core": "18.2.0",
-    "@ecl/ecl-webcomponents": "0.16.0"
+    "@ecl/ecl-webcomponents": "0.17.0"
   },
   "scripts": {
     "copy": "ncp ../../../ecl-webcomponents/dist/ecl-webcomponents/build dist/build"

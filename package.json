@@ -72,7 +72,7 @@
     "@babel/plugin-transform-runtime": "7.28.5",
     "@babel/preset-react": "7.28.5",
     "@babel/preset-typescript": "7.28.5",
-    "@ecl/ecl-webcomponents": "0.16.0",
+    "@ecl/ecl-webcomponents": "0.17.0",
     "@ecl/preset-ec": "5.0.0-alpha.20",
     "@eslint/js": "9.39.1",
     "@prettier/plugin-xml": "3.4.2",
