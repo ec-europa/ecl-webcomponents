@@ -42,7 +42,7 @@ export class EclFileTranslations {
       >
         <ecl-button
           styleClass={`ecl-file__translation-toggle sc-ecl-file-${this.theme}`}
-          variant="ghost"
+          variant="tertiary"
           data-ecl-file-translation-toggle
           theme={this.theme}
         >
