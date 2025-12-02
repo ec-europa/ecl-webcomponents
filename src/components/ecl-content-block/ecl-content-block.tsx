@@ -39,6 +39,12 @@ export class EclContentBlock {
   }
 
   componentDidLoad() {
+    if (this.hasTitle) {
+      const titleLink = this.el.querySelector('.ecl-content-block__title .ecl-link');
+      if (titleLink) {
+        titleLink.setAttribute('data-ecl-title-link', "");
+      }
+    }
     if (this.hasLabels) {
       const labelsContainer = this.el.querySelector('.ecl-content-block__label-container');
       const labels = this.el.querySelectorAll('.ecl-label');
@@ -115,9 +121,9 @@ export class EclContentBlock {
         </ul>
       }
       { this.hasTitle &&
-        <h1 class="ecl-content-block__title">
+        <div class="ecl-content-block__title">
           <slot name="title"></slot>
-        </h1>
+        </div>
       }
       { this.hasDescription &&
         <div class="ecl-content-block__description">

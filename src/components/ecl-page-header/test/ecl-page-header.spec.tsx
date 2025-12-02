@@ -15,6 +15,9 @@ describe('ecl-page-header', () => {
         thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
         thumbnail-alt="Eu map"
         meta="Meta info | DD Month YYYY"
+        expandable-header="this is the page header expandable header"
+        expandable-content="this is the page header expandable panel's content"
+        expandable-panel-id="panel-id-test"
       >
         <ecl-breadcrumb
           slot="breadcrumb"

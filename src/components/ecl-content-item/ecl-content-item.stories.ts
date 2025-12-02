@@ -80,11 +80,6 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/content-item',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => {

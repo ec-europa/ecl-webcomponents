@@ -16,7 +16,8 @@
   display: flex;
 }
 
-.ecl-menu__open .ecl-menu__close-switch:last-of-type {
+.ecl-menu__open .ecl-menu__close-switch:last-of-type,
+.ecl-button.ecl-menu__close {
   display: none;
 }
 
@@ -30,8 +31,15 @@
 .ecl-menu__close,
 .ecl-menu__back {
   background-color: transparent;
-  text-align: left;
   border: none;
+
+  .ecl-button__container {
+    justify-content: start;
+  }
+}
+
+.ecl-menu .ecl-menu__open {
+  margin-inline-start: auto;
 }
 
 .ecl-menu__back .ecl-button__label {

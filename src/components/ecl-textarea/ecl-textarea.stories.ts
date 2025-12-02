@@ -113,11 +113,6 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/form/textarea',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => 

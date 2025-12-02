@@ -18,7 +18,7 @@ export class EclLink {
   @Prop() styleClass: string;
   @Prop() inverted: boolean = false;
   @Prop() noVisited: boolean = false;
-  @Prop() variant: string = 'default';
+  @Prop() variant: string = '';
   @Prop() titleAttr: string;
   @Prop() external: boolean = false;
   @Prop() hideLabel: boolean = false;

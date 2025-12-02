@@ -1,4 +1,7 @@
 import { Component, Prop, h, Element } from '@stencil/core';
+import getAssetPath from "../../utils/assetPath";
+
+declare const PAGEHEADER: any;
 
 @Component({
   tag: 'ecl-page-header',
@@ -12,11 +15,16 @@ import { Component, Prop, h, Element } from '@stencil/core';
 
 export class EclPageHeader {
   @Element() el: HTMLElement;
+  @Prop() eclScript: boolean = false;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
   @Prop() image: string ;
   @Prop() imageAlt: string;
   @Prop() meta: string;
+  @Prop() expandableHeader: string;
+  @Prop() expandableContent: string;
+  @Prop() expandableLabel: string = `toggle panel's visibility`;
+  @Prop() expandablePanelId: string = `ecl-page-header-expandable-panel-${Math.random().toString(36).slice(2, 10)}`;
   @Prop() headerTitle: string;
   @Prop() thumbnail: string;
   @Prop() thumbnailAlt: string;
@@ -55,11 +63,71 @@ export class EclPageHeader {
         segment.classList.add(`sc-ecl-page-header-${this.theme}`);
       })
     }
+    if (this.eclScript && this.expandableHeader) {
+      const src = getAssetPath('./build/scripts/ecl-page-header-expandable-vanilla.js');
+      if (document.querySelector(`script[src="${src}"]`)) {
+        document.querySelector(`script[src="${src}"]`).remove();
+      }
+      const script = document.createElement('script');
+      script.src = src;
+      script.onload = () => {
+        ;(window as any).ECL = (window as any).ECL || {};
+        const expandable = new PAGEHEADER.PageHeaderExpandable(this.el.firstElementChild);
+        expandable.init();
+      };
+
+      document.body.appendChild(script);
+    }
   };
 
   render() {
     return (
-      <div class={this.getClass()}>
+      <div
+        class={this.getClass()}
+      >
+      { this.expandableHeader &&
+        <div class="ecl-page-header-expandable">
+          <div class="ecl-page-header-expandable__header">
+            <div class="ecl-container ecl-page-header-expandable__container">
+              <div class="ecl-page-header-expandable__header-text">
+                { this.expandableHeader }
+              </div>
+            { this.expandableContent &&
+              <ecl-button 
+                styleClass={`ecl-page-header-expandable__toggle sc-ecl-page-header-${this.theme}`}
+                variant="tertiary"
+                type="submit"
+                aria-controls={this.expandablePanelId}
+                aria-expanded="false"
+                hide-label
+                data-ecl-page-header-expandable-toggle
+              >
+                { this.expandableLabel }
+                <ecl-icon
+                  slot="icon-after"
+                  size="m"
+                  flip="vertical"
+                  icon="corner-arrow"
+                  styleClass={`sc-ecl-page-header-${this.theme}`}
+                >
+                </ecl-icon>
+              </ecl-button>
+            } 
+            </div>
+          </div>
+        { this.expandableContent &&
+          <div
+            class="ecl-page-header-expandable__panel"
+            id={this.expandablePanelId}
+            hidden
+          >
+            <div class="ecl-container ecl-page-header-expandable__container">
+              { this.expandableContent }
+            </div>
+          </div>
+        }
+        </div>
+      }
       { this.image &&
         <div class="ecl-page-header__background-container" aria-hidden="true">
           <ecl-picture

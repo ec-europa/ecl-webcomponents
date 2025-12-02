@@ -74,11 +74,6 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/gallery',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) =>
@@ -86,7 +81,7 @@ const Template = (args) =>
   ecl-script
   el-id="ecl-gallery-demo"
   counter-label="Media files in this gallery"
-  view-all-label="See all"
+  view-all-label="Show more items"
   view-all-expanded-label="Back"
   counter-separator="of"
   next-label="Next"

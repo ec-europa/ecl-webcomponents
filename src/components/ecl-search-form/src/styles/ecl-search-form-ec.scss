@@ -12,6 +12,13 @@
   $search-form: var.$search-form
 );
 
+ecl-form-group,
+ecl-input,
+.ecl-input {
+  display: flex;
+  flex-grow: 1;
+}
+
 .ecl-search-form__text-input {
   height: 2.875rem;
 }

@@ -1,0 +1,59 @@
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $theme: theme.$theme,
+  $typography: var.$typography
+);
+@use '@ecl/spotlight/spotlight' with (
+  $theme: theme.$theme,
+  $spotlight: var.$spotlight
+);
+
+@container ecl-spotlight (width >= 480px) {
+  .ecl-spotlight__title.sc-ecl-spotlight-ec {
+    font-size: var(--fs-6xl);
+    line-height: var(--lh-3xl);
+  }
+}
+
+@container ecl-spotlight (width >= 480px) {
+  .ecl-spotlight--font-l.sc-ecl-spotlight-ec .ecl-spotlight__title.sc-ecl-spotlight-ec {
+    font-size: var(--fs-7xl);
+    line-height: var(--lh-7xl);
+  }
+}
+
+@container ecl-spotlight (width >= 768px) {
+  .ecl-spotlight__title.sc-ecl-spotlight-ec {
+    font-size: var(--fs-7xl);
+    line-height: var(--lh-6xl);
+  }
+}
+
+@container ecl-spotlight (width >= 768px) {
+  .ecl-spotlight--font-l.sc-ecl-spotlight-ec .ecl-spotlight__title.sc-ecl-spotlight-ec {
+    font-size: var(--fs-9xl);
+    line-height: var(--lh-9xl);
+  }
+}
+
+@container ecl-spotlight (width >= 1140px) {
+  .ecl-spotlight__title.sc-ecl-spotlight-ec {
+    font-size: var(--fs-8xl);
+    line-height: var(--lh-7xl);
+  }
+}
+
+@container ecl-spotlight (width >= 1140px) {
+  .ecl-spotlight--font-l.sc-ecl-spotlight-ec .ecl-spotlight__title.sc-ecl-spotlight-ec {
+    font-size: var(--fs-10xl);
+    line-height: var(--lh-10xl);
+  }
+}
+
+.ecl-spotlight__credit {
+  right: 0;
+}

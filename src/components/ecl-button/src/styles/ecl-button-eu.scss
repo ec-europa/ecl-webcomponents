@@ -15,6 +15,10 @@
   display: contents;
 }
 
+.ecl-button__container {
+  justify-content: center;
+}
+
 .ecl-button--icon-only ::slotted([slot^='icon-']) {
   display: flex;
 }

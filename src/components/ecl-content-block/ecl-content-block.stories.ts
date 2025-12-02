@@ -35,11 +35,6 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/content-block',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => 

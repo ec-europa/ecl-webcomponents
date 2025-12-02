@@ -1,6 +1,5 @@
 @use '@ecl/theme-ec/theme' as theme;
 @use '@ecl/theme-ec/variables' as var;
-@use '@ecl/utility-screen-reader/screen-reader';
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
@@ -9,23 +8,6 @@
   $rating-field: var.$rating-field
 );
 
-.ecl-rating-field {
-  margin-top: 0.75rem;
-}
-
 .ecl-rating-field__icon-filled[class*='wt-icon-'] {
   display: none;
-  fill: #ffd617 !important;
-}
-
-.ecl-rating-field__icon-outline {
-  fill: #707070 !important;
-}
-
-.ecl-form-label__optional {
-  margin-inline-start: 0.5rem;
-}
-
-.ecl-u-sr-only {
-  @include screen-reader.sr-only;
 }

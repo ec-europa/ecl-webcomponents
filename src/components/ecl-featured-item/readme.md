@@ -7,20 +7,21 @@
 
 ## Properties
 
-| Property                | Attribute                 | Description | Type      | Default                          |
-| ----------------------- | ------------------------- | ----------- | --------- | -------------------------------- |
-| `colorMode`             | `color-mode`              |             | `string`  | `undefined`                      |
-| `defaultContainerClass` | `default-container-class` |             | `string`  | `'ecl-featured-item__container'` |
-| `eclScript`             | `ecl-script`              |             | `boolean` | `false`                          |
-| `image`                 | `image`                   |             | `string`  | `undefined`                      |
-| `itemTitle`             | `item-title`              |             | `string`  | `undefined`                      |
-| `linkLabel`             | `link-label`              |             | `string`  | `undefined`                      |
-| `linkPath`              | `link-path`               |             | `string`  | `undefined`                      |
-| `mediaCaption`          | `media-caption`           |             | `string`  | `undefined`                      |
-| `position`              | `position`                |             | `string`  | `'left'`                         |
-| `styleClass`            | `style-class`             |             | `string`  | `undefined`                      |
-| `theme`                 | `theme`                   |             | `string`  | `undefined`                      |
-| `variant`               | `variant`                 |             | `string`  | `'default'`                      |
+| Property                | Attribute                 | Description | Type      | Default                                                                                       |
+| ----------------------- | ------------------------- | ----------- | --------- | --------------------------------------------------------------------------------------------- |
+| `colorMode`             | `color-mode`              |             | `string`  | `undefined`                                                                                   |
+| `defaultContainerClass` | `default-container-class` |             | `string`  | `'ecl-featured-item__container'`                                                              |
+| `eclScript`             | `ecl-script`              |             | `boolean` | `false`                                                                                       |
+| `elId`                  | `el-id`                   |             | `string`  | `` `ecl-featured-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}` `` |
+| `image`                 | `image`                   |             | `string`  | `undefined`                                                                                   |
+| `itemTitle`             | `item-title`              |             | `string`  | `undefined`                                                                                   |
+| `linkLabel`             | `link-label`              |             | `string`  | `undefined`                                                                                   |
+| `linkPath`              | `link-path`               |             | `string`  | `undefined`                                                                                   |
+| `mediaCaption`          | `media-caption`           |             | `string`  | `undefined`                                                                                   |
+| `position`              | `position`                |             | `string`  | `'left'`                                                                                      |
+| `styleClass`            | `style-class`             |             | `string`  | `undefined`                                                                                   |
+| `theme`                 | `theme`                   |             | `string`  | `undefined`                                                                                   |
+| `variant`               | `variant`                 |             | `string`  | `'default'`                                                                                   |
 
 
 ## Dependencies

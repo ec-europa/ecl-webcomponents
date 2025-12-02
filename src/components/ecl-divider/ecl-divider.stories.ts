@@ -4,11 +4,6 @@ const getArgTypes = () => ({
 
 export default {
   title: 'Components/divider',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = args =>

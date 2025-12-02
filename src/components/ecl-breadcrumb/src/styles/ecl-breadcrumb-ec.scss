@@ -3,6 +3,9 @@
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
+@use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $typography: var.$typography
+);
 @use '@ecl/button/button' with (
   $theme: theme.$theme,
   $button: var.$button
@@ -17,7 +20,15 @@
 }
 
 .ecl-breadcrumb__current-page {
+  margin-top: 4px;
+}
+
+.ecl-breadcrumb__segment:first-child {
   margin-top: 0;
+
+  .ecl-icon {
+    margin-top: 0;
+  }
 }
 
 .ecl-breadcrumb__ellipsis {

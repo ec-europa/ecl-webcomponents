@@ -16,6 +16,8 @@ export class EclListIllustrationItem {
   @Prop() imageAlt: string;
   @Prop() squareImage: boolean = false;
   @Prop() styleClass: string;
+  @Prop() hasColumns: boolean = false;
+  @Prop() divider: boolean = false;
   @Prop() mediaSize: string = 'm';
   @Prop() itemValue: string;
 
@@ -27,6 +29,23 @@ export class EclListIllustrationItem {
     ];
 
     return styleClasses.join(' ');
+  } 
+
+  getContentClass(): string  {
+    const contentClasses = [
+      'ecl-list-illustration__item-content',
+      `sc-ecl-list-illustration-${this.theme}`,
+    ];
+
+    if (this.divider) {
+      contentClasses.push('ecl-list-illustration__divider');
+    }
+
+    if (this.image && !this.hasColumns) {
+      contentClasses.push('ecl-list-illustration__item-content--row');
+    }
+
+    return contentClasses.join(' ');
   }
 
   getImgClass(): string {
@@ -61,45 +80,47 @@ export class EclListIllustrationItem {
 
   render() {
     return (
-      <div class={this.getClass()}>
-      { this.image ?
-        <ecl-picture
-          styleClass={`ecl-list-illustration__picture sc-ecl-list-illustration-${this.theme}`}
-          imgClass={this.getImgClass()}
-          image={this.image}
-          imageAlt={this.imageAlt}
-          {...this.getImgAttr()}
-        >
-          <slot name="sources"></slot>
-        </ecl-picture> : ''
-      }
-        <div class={`ecl-list-illustration__detail sc-ecl-list-illustration-${this.theme}`}>
-          <div class={`ecl-list-illustration__title-container sc-ecl-list-illustration-${this.theme}`}>
-          { this.icon ?
-            <ecl-icon
-              icon={this.icon}
-              size={this.iconSize}
-              style-class={`ecl-list-illustration__icon sc-ecl-list-illustration-${this.theme}`}
-            ></ecl-icon> : '' 
-          }
-          { this.itemValue ?
-            <div class={`ecl-list-illustration__value sc-ecl-list-illustration-${this.theme}`}>{this.itemValue}</div> : ''
-          }
-          { this.itemTitle && (
-            <div class={`ecl-list-illustration__title sc-ecl-list-illustration-${this.theme}`}>
-              {this.itemLink ? (
-                <ecl-link variant="standalone" path={this.itemLink}>{this.itemTitle}</ecl-link>
-              ) : (
-                this.itemTitle
-              )}
+      <li class={this.getClass()}>
+        <div class={this.getContentClass()}>
+        { this.image ?
+          <ecl-picture
+            styleClass={`ecl-list-illustration__picture sc-ecl-list-illustration-${this.theme}`}
+            imgClass={this.getImgClass()}
+            image={this.image}
+            imageAlt={this.imageAlt}
+            {...this.getImgAttr()}
+          >
+            <slot name="sources"></slot>
+          </ecl-picture> : ''
+        }
+        { this.icon ?
+          <ecl-icon
+            icon={this.icon}
+            size={this.iconSize}
+            style-class={`ecl-list-illustration__icon sc-ecl-list-illustration-${this.theme}`}
+          ></ecl-icon> : '' 
+        }
+          <div class={`ecl-list-illustration__detail sc-ecl-list-illustration-${this.theme}`}>
+            <div class={`ecl-list-illustration__title-container sc-ecl-list-illustration-${this.theme}`}>
+            { this.itemValue ?
+              <div class={`ecl-list-illustration__value sc-ecl-list-illustration-${this.theme}`}>{this.itemValue}</div> : ''
+            }
+            { this.itemTitle && (
+              <div class={`ecl-list-illustration__title sc-ecl-list-illustration-${this.theme}`}>
+                {this.itemLink ? (
+                  <ecl-link variant="standalone" path={this.itemLink}>{this.itemTitle}</ecl-link>
+                ) : (
+                  this.itemTitle
+                )}
+              </div>
+            )}
             </div>
-          )}
+            <div class={`ecl-list-illustration__description sc-ecl-list-illustration-${this.theme}`}>
+              <slot></slot>
+            </div>
           </div>
-          <div class={`ecl-list-illustration__description sc-ecl-list-illustration-${this.theme}`}>
-            <slot></slot>
-          </div>
-        </div> 
-      </div>
+        </div>
+      </li>
     );
   }
 }

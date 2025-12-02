@@ -12,9 +12,9 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "5.0.0-alpha.15",
-    "@ecl/preset-eu": "5.0.0-alpha.15",
-    "@ecl/theme-eu": "5.0.0-alpha.15"
+    "@ecl/builder": "5.0.0-alpha.20",
+    "@ecl/preset-eu": "5.0.0-alpha.20",
+    "@ecl/theme-eu": "5.0.0-alpha.20"
   },
   "repository": {
     "type": "git",

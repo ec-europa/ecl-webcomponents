@@ -63,16 +63,12 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/featured-item',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => 
 `<ecl-featured-item
   color-mode="${args.color_mode}"
+  el-id="featured-item-demo"
   variant="${args.variant }"
   theme="${args.theme}"
   item-title="${args.itemTitle}"

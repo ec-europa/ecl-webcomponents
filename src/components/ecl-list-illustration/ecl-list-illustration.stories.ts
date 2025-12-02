@@ -60,7 +60,7 @@ const getArgTypes = () => ({
     description: 'Size of the fonts used',
   },
   mediaSize: {
-    name: 'size of the media (for squared images only)',
+    name: 'size of the media',
     control: {
       type: 'select',
       labels: {
@@ -80,18 +80,40 @@ const getArgTypes = () => ({
   },
 });
 
+const getVariantArgs = () => ({
+  itemTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
+        Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
+        in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.`,
+  divider: false,
+  column: 1,
+});
+
+const getVariantArgTypes = () => {
+  return {
+    description: {
+      control: { type: 'text' },
+    },
+    itemTitle: {
+      name: 'item-title',
+      control: { type: 'text' },
+    },
+    divider: {
+      control: { type: 'boolean' },
+    },
+    column: {
+      name: 'number of columns',
+      control: { type: 'range', min: 1, max: 2, step: 1 },
+    },
+  };
+};
+
 export default {
   title: 'Components/list with illustration',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => 
   `<ecl-list-illustration
-    theme="${args.theme}"
     zebra=${args.zebra}
     column="${args.column}"
     centered=${args.centered}
@@ -99,7 +121,6 @@ const Template = (args) =>
     color-mode="${args.color_mode}"
   >
     <ecl-list-illustration-item
-      theme="${args.theme}"
       image="${!args.icon ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg' : ''}"
       item-title="List with illustration item 1"
       media-size="${args.mediaSize}"
@@ -107,13 +128,13 @@ const Template = (args) =>
       icon-size="${args.iconSize}"
       square-image=${args.squareImage}
       item-value="3.2 million"
+      ${args.column > 1 ? 'has-columns': ''}
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
       Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
       in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
     </ecl-list-illustration-item>
     <ecl-list-illustration-item
-      theme="${args.theme}"
       image="${!args.icon ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg' : ''}"
       icon="${args.icon ? "regulation" : ''}"
       icon-size="${args.iconSize}"
@@ -121,13 +142,13 @@ const Template = (args) =>
       media-size="${args.mediaSize}"
       square-image=${args.squareImage}
       item-value="3.2 million"
+      ${args.column > 1 ? 'has-columns': ''}
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
       Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
       in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
     </ecl-list-illustration-item>
     <ecl-list-illustration-item
-      theme="${args.theme}"
       image="${!args.icon ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg' : ''}"
       icon="${args.icon ? "regulation" : ''}"
       icon-size="${args.iconSize}"
@@ -135,13 +156,13 @@ const Template = (args) =>
       media-size="${args.mediaSize}"
       square-image=${args.squareImage}
       item-value="3.2 million"
+      ${args.column > 1 ? 'has-columns': ''}
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
       Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
       in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
     </ecl-list-illustration-item>
     <ecl-list-illustration-item
-      theme="${args.theme}"
       image="${!args.icon ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg' : ''}"
       icon="${args.icon ? "regulation" : ''}"
       icon-size="${args.iconSize}"
@@ -149,13 +170,13 @@ const Template = (args) =>
       media-size="${args.mediaSize}"
       square-image=${args.squareImage}
       item-value="3.2 million"
+      ${args.column > 1 ? 'has-columns': ''}
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
       Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
       in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
     </ecl-list-illustration-item>
     <ecl-list-illustration-item
-      theme="${args.theme}"
       image="${!args.icon ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg' : ''}"
       icon="${args.icon ? "regulation" : ''}"
       icon-size="${args.iconSize}"
@@ -164,6 +185,7 @@ const Template = (args) =>
       media-size="${args.mediaSize}"
       square-image=${args.squareImage}
       item-value="3.2 million"
+      ${args.column > 1 ? 'has-columns': ''}
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae.
       Nullam id felis eu lorem condimentum rutrum vitae ut felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque,
@@ -175,3 +197,107 @@ export const ListIllustration = Template.bind({});
 ListIllustration.storyName = 'default';
 ListIllustration.args = getArgs();
 ListIllustration.argTypes = getArgTypes();
+
+const IconListTemplate = (args) => 
+  `<ecl-list-illustration
+    icon-list
+    color-mode="${args.color_mode}"
+    column="${args.column}"
+   >
+    <ecl-list-illustration-item
+      icon=${args.icon}
+      ${args.divider ? 'divider' : ''}
+      item-title="${args.itemTitle}"
+    >
+      ${args.description}
+    </ecl-list-illustration-item>
+    <ecl-list-illustration-item
+      icon=${args.icon}
+      ${args.divider ? 'divider' : ''}
+      item-title="${args.itemTitle}"
+    >
+      ${args.description}
+    </ecl-list-illustration-item>
+    <ecl-list-illustration-item
+      icon=${args.icon}
+      ${args.divider && args.column === 1 ? 'divider' : ''}
+      item-title="${args.itemTitle}"
+    >
+      ${args.description}
+    </ecl-list-illustration-item>
+    <ecl-list-illustration-item
+      icon=${args.icon}
+      item-title="${args.itemTitle}"
+    >
+      ${args.description}
+    </ecl-list-illustration-item>
+   </ecl-list-illustration>`;
+
+export const IconList = IconListTemplate.bind({});
+IconList.storyName = 'icon list';
+IconList.args = {
+  ...getVariantArgs(),
+  icon: 'check-bold',
+  column: 1,
+};
+IconList.argTypes = {
+  ...getVariantArgTypes(),
+  icon: {
+    control: {
+      type: 'select',
+    },
+    options: ['check-bold', 'arrow-right-bold', 'close-bold'],
+  },
+};
+
+const NumberListTemplate = (args) => 
+  `<ecl-list-illustration
+     number-list
+     counter-start="${args.counter_start}"
+     color-mode="${args.color_mode}"
+     counter-reset=${args.counter_reset}
+     column="${args.column}"
+   >
+    <ecl-list-illustration-item
+      ${args.divider ? 'divider' : ''}
+      item-title="${args.itemTitle}""
+    >
+      ${args.description}
+    </ecl-list-illustration-item>
+    <ecl-list-illustration-item
+      ${args.divider ? 'divider' : ''}
+      item-title="${args.itemTitle}""
+    >
+      ${args.description}
+    </ecl-list-illustration-item>
+    <ecl-list-illustration-item
+      ${args.divider && args.column === 1 ? 'divider' : ''}
+      item-title="${args.itemTitle}""
+    >
+      ${args.description}
+    </ecl-list-illustration-item>
+    <ecl-list-illustration-item
+      item-title="${args.itemTitle}""
+    >
+      ${args.description}
+    </ecl-list-illustration-item>
+   </ecl-list-illustration>`;
+
+export const NumberList = NumberListTemplate.bind({});
+NumberList.storyName = 'number list';
+NumberList.args = {
+  ...getVariantArgs(),
+  counter_start: 0,
+  counter_reset: true,
+};
+NumberList.argTypes = {
+  ...getVariantArgTypes(),
+  counter_start: {
+    name: 'counter-start',
+    control: { type: 'range', min: 0, max: 20, step: 1 },
+  },
+  counter_reset: {
+    name: 'counter-reset',
+    control: { type: 'boolean' },
+  },
+};

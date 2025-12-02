@@ -22,6 +22,7 @@ if (!isProd) {
     path.resolve(`${__dirname}/../src/components/ecl-timeline`),
     path.resolve(`${__dirname}/../src/components/ecl-breadcrumb`),
     path.resolve(`${__dirname}/../src/components/ecl-inpage-navigation`),
+    path.resolve(`${__dirname}/../src/components/ecl-page-header`),
     path.resolve(`${__dirname}/../src/components/ecl-popover`),
     path.resolve(`${__dirname}/../src/components/ecl-datepicker`),
     path.resolve(`${__dirname}/../src/components/ecl-site-header`),
@@ -37,7 +38,7 @@ if (!isProd) {
 
 module.exports = {
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
-  addons: ['@storybook/addon-links', 'storybook/viewport', '@storybook/addon-docs', '@geometricpanda/storybook-addon-badges'],
+  addons: ['@storybook/addon-links', 'storybook/viewport', '@storybook/addon-docs', 'storybook-addon-rtl'],
   framework: {
     name: '@storybook/html-vite',
   },

@@ -23,6 +23,8 @@ export class EclFooterEu {
   @Prop() siteName: string;
   @Prop() variant: string;
   @Prop() description: string;
+  @Prop() coOwnerTitle: string;
+  @Prop() coOwnerLinks: string;
 
   getClass(): string {
     const styleClasses = [
@@ -61,122 +63,155 @@ export class EclFooterEu {
 
   render() {
     const logoPath = getAssetPath(`./build/images/${this.theme}/logos/standard-version/positive/logo-${this.theme}--${this.logoLangCode}.svg`);
+    const coOwnerLinks = this.coOwnerLinks ? JSON.parse(this.coOwnerLinks) : '';
 
     return (
       <footer
         class={this.getClass()}
       >
-        <div class="ecl-container ecl-site-footer__container">
-        {this.variant === 'harmonised' &&
-          <div class="ecl-site-footer__row">
-            <div class="ecl-site-footer__column">
-              <div class="ecl-site-footer__section  ecl-site-footer__section--site-info">
-                <h2 class="ecl-site-footer__title">{this.siteName}</h2>
-                <div class="ecl-site-footer__description">
-                  {this.description}
-                </div>
-                <ul class="ecl-site-footer__list">
-                  <slot name="ecl-footer-list-info"></slot>
-                </ul>
-              </div>
-            </div>
-            <div class="ecl-site-footer__column">
-              <div class="ecl-site-footer__section">
-                <ul class="ecl-site-footer__list">
-                  <slot name="ecl-footer-list-top-middle"></slot>
-                </ul>
-              </div>
-              <div class="ecl-site-footer__section">
-                <ul class="ecl-site-footer__list">
-                  <slot name="ecl-footer-list-top-middle-bottom"></slot>
-                </ul>
-              </div>
-            </div>
-            <div class="ecl-site-footer__column">
-              <div class="ecl-site-footer__section">
-                <ul class="ecl-site-footer__list">
-                  <slot name="ecl-footer-list-top-right"></slot>
-                </ul>
-              </div>
-            </div>
+        { (this.coOwnerTitle || this.coOwnerLinks) &&
+        <div class="ecl-site-footer__co-owner">
+          <div class="ecl-container ecl-site-footer__co-owner-container">
+          { this.coOwnerTitle &&
+            <div class="ecl-site-footer__co-owner-title">{this.coOwnerTitle}</div>
+          }
+          { coOwnerLinks &&
+            <ul class="ecl-site-footer__co-owner-list">
+              { coOwnerLinks.map((link, i) => {
+                  let liClass = 'ecl-site-footer__co-owner-item';
+                  if (i === 0) {
+                    liClass += ' is-first';
+                  }
+                  return (
+                    <li class={liClass}>
+                      <ecl-link
+                        path={link.path}
+                        styleClass={`ecl-site-footer__co-owner-link sc-ecl-footer-${this.theme}-${this.theme}`}
+                      >
+                        {link.label}
+                      </ecl-link>
+                    </li>
+                  )}
+                )
+              }
+            </ul>
+          }
           </div>
+        </div>
         }
-          <div class="ecl-site-footer__row">
-            <div class="ecl-site-footer__column">
-              <div class="ecl-site-footer__section">
-                <ecl-link
-                  path={this.logoLink}
-                  theme={this.theme}
-                  variant="standalone"
-                  styleClass={`ecl-site-footer__logo-link sc-ecl-footer-eu-${this.theme}`}
-                  ariaLabel={this.logoAriaLabel}
-                >
-                  <ecl-picture
-                    theme={this.theme}
-                    imageAlt={this.logoAlt}
-                    imgClass={`sc-ecl-footer-eu-${this.theme} ecl-site-footer__logo-image`}
-                    styleClass={`ecl-site-footer__picture sc-ecl-site-footer-eu-${this.theme}`}
-                    image={
-                      getAssetPath(`./build/images/${this.theme}/logos/condensed-version/positive/logo-${this.theme}--${this.logoLangCode}.svg`)
-                    }
-                  >   
-                    <source
-                      srcSet={logoPath}
-                      media="(min-width: 996px)"
-                    ></source>
-                    <slot name="sources"></slot>
-                  </ecl-picture>
-                </ecl-link>
-              { this.variant === 'core' &&
-                <div class="ecl-site-footer__description">
-                  {this.description}
+        <div class="ecl-site-footer__main">
+          <div class="ecl-container ecl-site-footer__container">
+          {this.variant === 'harmonised' &&
+            <div class="ecl-site-footer__row">
+              <div class="ecl-site-footer__column">
+                <div class="ecl-site-footer__section  ecl-site-footer__section--site-info">
+                  <h2 class="ecl-site-footer__title">{this.siteName}</h2>
+                  <div class="ecl-site-footer__description">
+                    {this.description}
+                  </div>
+                  <ul class="ecl-site-footer__list">
+                    <slot name="ecl-footer-list-info"></slot>
+                  </ul>
                 </div>
-              }
-              { this.variant === 'harmonised' &&
-                <ul class="ecl-site-footer__list">
-                  <slot name="ecl-footer-logo-info"></slot>
-                </ul>
-              }
+              </div>
+              <div class="ecl-site-footer__column">
+                <div class="ecl-site-footer__section">
+                  <ul class="ecl-site-footer__list">
+                    <slot name="ecl-footer-list-top-middle"></slot>
+                  </ul>
+                </div>
+                <div class="ecl-site-footer__section">
+                  <ul class="ecl-site-footer__list">
+                    <slot name="ecl-footer-list-top-middle-bottom"></slot>
+                  </ul>
+                </div>
+              </div>
+              <div class="ecl-site-footer__column">
+                <div class="ecl-site-footer__section">
+                  <ul class="ecl-site-footer__list">
+                    <slot name="ecl-footer-list-top-right"></slot>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="ecl-site-footer__column">
-              <div class="ecl-site-footer__section">
-                <ul class="ecl-site-footer__list">
-                  <slot name="ecl-footer-list-main"></slot>
-                </ul>
+          }
+            <div class="ecl-site-footer__row">
+              <div class="ecl-site-footer__column">
+                <div class="ecl-site-footer__section">
+                  <ecl-link
+                    path={this.logoLink}
+                    theme={this.theme}
+                    variant="standalone"
+                    styleClass={`ecl-site-footer__logo-link sc-ecl-footer-eu-${this.theme}`}
+                    ariaLabel={this.logoAriaLabel}
+                  >
+                    <ecl-picture
+                      theme={this.theme}
+                      imageAlt={this.logoAlt}
+                      imgClass={`sc-ecl-footer-eu-${this.theme} ecl-site-footer__logo-image`}
+                      styleClass={`ecl-site-footer__picture sc-ecl-site-footer-eu-${this.theme}`}
+                      image={
+                        getAssetPath(`./build/images/${this.theme}/logos/condensed-version/positive/logo-${this.theme}--${this.logoLangCode}.svg`)
+                      }
+                    >   
+                      <source
+                        srcSet={logoPath}
+                        media="(min-width: 996px)"
+                      ></source>
+                      <slot name="sources"></slot>
+                    </ecl-picture>
+                  </ecl-link>
+                { this.variant === 'core' &&
+                  <div class="ecl-site-footer__description">
+                    {this.description}
+                  </div>
+                }
+                { this.variant === 'harmonised' &&
+                  <ul class="ecl-site-footer__list">
+                    <slot name="ecl-footer-logo-info"></slot>
+                  </ul>
+                }
+                </div>
               </div>
-              <div class="ecl-site-footer__section">
-                <ul class="ecl-site-footer__list">
-                   <slot name="ecl-footer-list-bottom-left"></slot>
-                </ul>
+              <div class="ecl-site-footer__column">
+                <div class="ecl-site-footer__section">
+                  <ul class="ecl-site-footer__list">
+                    <slot name="ecl-footer-list-main"></slot>
+                  </ul>
+                </div>
+                <div class="ecl-site-footer__section">
+                  <ul class="ecl-site-footer__list">
+                     <slot name="ecl-footer-list-bottom-left"></slot>
+                  </ul>
+                </div> 
+              { (this.variant === 'harmonised') &&
+                <div class="ecl-site-footer__section">
+                  <ul class={`ecl-site-footer__list`}>
+                    <slot name="ecl-footer-list-main-bottom"></slot>
+                  </ul>
+                </div>
+              }
+              { this.variant === 'core' &&
+                <div class="ecl-site-footer__section">
+                  <ul class="ecl-site-footer__list">
+                     <slot name="ecl-footer-list-bottom-right"></slot>
+                  </ul>
+                </div>
+              }
               </div> 
-            { (this.variant === 'harmonised') &&
-              <div class="ecl-site-footer__section">
-                <ul class={`ecl-site-footer__list`}>
-                  <slot name="ecl-footer-list-main-bottom"></slot>
-                </ul>
-              </div>
-            }
-            { this.variant === 'core' &&
-              <div class="ecl-site-footer__section">
-                <ul class="ecl-site-footer__list">
-                   <slot name="ecl-footer-list-bottom-right"></slot>
-                </ul>
-              </div>
-            }
-            </div> 
-            <div class="ecl-site-footer__column">
-              <div class="ecl-site-footer__section">
-                <ul class="ecl-site-footer__list">
-                  <slot name="ecl-footer-list-right-top"></slot>
-                </ul>
-              </div>   
-              <div class="ecl-site-footer__section">
-                <ul class="ecl-site-footer__list">
-                  <slot name="ecl-footer-list-right"></slot>
-                </ul>
-              </div>              
-            </div> 
+              <div class="ecl-site-footer__column">
+                <div class="ecl-site-footer__section">
+                  <ul class="ecl-site-footer__list">
+                    <slot name="ecl-footer-list-right-top"></slot>
+                  </ul>
+                </div>   
+                <div class="ecl-site-footer__section">
+                  <ul class="ecl-site-footer__list">
+                    <slot name="ecl-footer-list-right"></slot>
+                  </ul>
+                </div>              
+              </div> 
+            </div>
           </div>
         </div>
       </footer>

@@ -8,7 +8,8 @@
 );
 @use '@ecl/link/link' with (
   $theme: theme.$theme,
-  $link: var.$link
+  $link: var.$link,
+  $button: var.$button
 );
 @use '@ecl/timeline/timeline' with (
   $theme: theme.$theme,

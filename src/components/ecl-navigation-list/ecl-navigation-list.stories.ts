@@ -17,8 +17,9 @@ const getArgTypes = () => ({
     description: 'Choose variant',
   },
   image: {
+    name: 'image or icon',
     control: { type: 'boolean' },
-    description: 'Show image',
+    description: 'Show image or icon',
   },
   column: {
     control: { type: 'range', min: 2, max: 3, step: 1 },
@@ -40,11 +41,6 @@ const getArgTypes = () => ({
 
 export default {
   title: 'Components/Navigation/navigation-list',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => {

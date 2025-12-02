@@ -34,6 +34,7 @@
  - [ecl-navigation-list-item](../ecl-navigation-list)
  - [ecl-page-header](../ecl-page-header)
  - [ecl-site-header](../ecl-site-header)
+ - [ecl-spotlight](../ecl-spotlight)
 
 ### Graph
 ```mermaid
@@ -50,6 +51,7 @@ graph TD;
   ecl-navigation-list-item --> ecl-picture
   ecl-page-header --> ecl-picture
   ecl-site-header --> ecl-picture
+  ecl-spotlight --> ecl-picture
   style ecl-picture fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

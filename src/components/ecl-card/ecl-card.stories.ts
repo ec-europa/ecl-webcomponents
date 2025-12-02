@@ -44,11 +44,6 @@ export default {
   globals: {
     viewport: { value: 'tablet' },
   },
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => 

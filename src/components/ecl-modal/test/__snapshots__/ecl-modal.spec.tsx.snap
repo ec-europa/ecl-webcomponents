@@ -19,7 +19,7 @@ exports[`ecl-modal renders 1`] = `
           </div>
           <ecl-button data-ecl-modal-close hide-label="">
             <!---->
-            <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-modal__close sc-ecl-modal-ec" data-ecl-modal-close="eclModalClose" type="button">
+            <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-modal__close sc-ecl-modal-ec" data-ecl-modal-close="eclModalClose" type="button">
               <span class="ecl-button__container">
                 <span class="ecl-button__label" data-ecl-label>
                   Close

@@ -3,7 +3,14 @@
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
+@use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $typography: var.$typography
+);
 @use '@ecl/site-footer/site-footer-ec' with (
   $theme: theme.$theme,
   $site-footer: var.$site-footer
 );
+
+.ecl-site-footer__co-owner-link {
+  color: var(--cm-on-surface-brand);
+}

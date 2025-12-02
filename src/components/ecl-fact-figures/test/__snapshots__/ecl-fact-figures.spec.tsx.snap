@@ -109,9 +109,9 @@ exports[`ecl-fact-figures renders 1`] = `
       </ecl-fact-figures-item>
     </div>
     <div class="ecl-fact-figures__view-all">
-      <ecl-link style-class="ecl-fact-figures__view-all-link">
+      <ecl-link>
         <!---->
-        <a class="ecl-fact-figures__view-all-link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone" href="/example">
+        <a class="ecl-fact-figures__view-all-link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-fact-figures-ec" href="/example">
           <span class="ecl-link__label">
             View all
           </span>

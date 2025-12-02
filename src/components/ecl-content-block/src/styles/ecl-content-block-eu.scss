@@ -11,7 +11,8 @@
 );
 @use '@ecl/link/link' with (
   $theme: theme.$theme,
-  $link: var.$link
+  $link: var.$link,
+  $button: var.$button
 );
 @use '@ecl/label/label' with (
   $theme: theme.$theme,

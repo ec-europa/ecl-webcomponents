@@ -3,7 +3,19 @@
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
+@use '@ecl/mixins-typography/mixins' with (
+  $typography: var.$typography
+);
 @use '@ecl/page-header/page-header-eu' with (
   $theme: theme.$theme,
   $page-header: var.$page-header
 );
+
+.ecl-page-header-expandable__toggle {
+  color: var(--c-d);
+
+  &:hover {
+    border-color: var(--c-d);
+    color: var(--c-d);
+  }
+}

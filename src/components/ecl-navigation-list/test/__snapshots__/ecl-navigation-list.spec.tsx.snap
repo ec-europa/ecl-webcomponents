@@ -9,16 +9,16 @@ exports[`ecl-navigation-list renders 1`] = `
       <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="">
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
-          <h1 class="ecl-content-block__title">
+          <div class="ecl-content-block__title">
             <ecl-link path="/example.html" slot="title" variant="standalone">
               <!---->
-              <a class="ecl-link ecl-link--standalone" href="/example.html">
+              <a class="ecl-link ecl-link--standalone" data-ecl-title-link href="/example.html">
                 <span class="ecl-link__label">
                   Title 1
                 </span>
               </a>
             </ecl-link>
-          </h1>
+          </div>
           <div class="ecl-content-block__description">
             <p slot="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida ipsum ut lorem cursus, quis tincidunt sem viverra. Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus
@@ -80,16 +80,16 @@ exports[`ecl-navigation-list renders 1`] = `
       <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="">
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
-          <h1 class="ecl-content-block__title">
+          <div class="ecl-content-block__title">
             <ecl-link path="/example.html" slot="title" variant="standalone">
               <!---->
-              <a class="ecl-link ecl-link--standalone" href="/example.html">
+              <a class="ecl-link ecl-link--standalone" data-ecl-title-link href="/example.html">
                 <span class="ecl-link__label">
                   Title 2
                 </span>
               </a>
             </ecl-link>
-          </h1>
+          </div>
           <div class="ecl-content-block__description">
             <p slot="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida ipsum ut lorem cursus, quis tincidunt sem viverra. Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus
@@ -151,16 +151,16 @@ exports[`ecl-navigation-list renders 1`] = `
       <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="">
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
-          <h1 class="ecl-content-block__title">
+          <div class="ecl-content-block__title">
             <ecl-link path="/example.html" slot="title" variant="standalone">
               <!---->
-              <a class="ecl-link ecl-link--standalone" href="/example.html">
+              <a class="ecl-link ecl-link--standalone" data-ecl-title-link href="/example.html">
                 <span class="ecl-link__label">
                   Title 3
                 </span>
               </a>
             </ecl-link>
-          </h1>
+          </div>
           <div class="ecl-content-block__description">
             <p slot="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida ipsum ut lorem cursus, quis tincidunt sem viverra. Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus
@@ -222,16 +222,16 @@ exports[`ecl-navigation-list renders 1`] = `
       <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="">
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
-          <h1 class="ecl-content-block__title">
+          <div class="ecl-content-block__title">
             <ecl-link path="/example.html" slot="title" variant="standalone">
               <!---->
-              <a class="ecl-link ecl-link--standalone" href="/example.html">
+              <a class="ecl-link ecl-link--standalone" data-ecl-title-link href="/example.html">
                 <span class="ecl-link__label">
                   Title 4
                 </span>
               </a>
             </ecl-link>
-          </h1>
+          </div>
           <div class="ecl-content-block__description">
             <p slot="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida ipsum ut lorem cursus, quis tincidunt sem viverra. Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus
@@ -293,16 +293,16 @@ exports[`ecl-navigation-list renders 1`] = `
       <ecl-content-block has-description="" has-links="" has-secondary-links="" has-title="">
         <!---->
         <div class="ecl-content-block ecl-navigation-list__content-block sc-ecl-navigation-list-ec">
-          <h1 class="ecl-content-block__title">
+          <div class="ecl-content-block__title">
             <ecl-link path="/example.html" slot="title" variant="standalone">
               <!---->
-              <a class="ecl-link ecl-link--standalone" href="/example.html">
+              <a class="ecl-link ecl-link--standalone" data-ecl-title-link href="/example.html">
                 <span class="ecl-link__label">
                   Title 5
                 </span>
               </a>
             </ecl-link>
-          </h1>
+          </div>
           <div class="ecl-content-block__description">
             <p slot="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida ipsum ut lorem cursus, quis tincidunt sem viverra. Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus

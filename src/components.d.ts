@@ -136,6 +136,7 @@ export namespace Components {
     }
     interface EclButton {
         "ariaControls": string;
+        "buttonStyle": string;
         "containerExtraClasses": string;
         /**
           * @default false
@@ -501,6 +502,10 @@ export namespace Components {
           * @default false
          */
         "eclScript": boolean;
+        /**
+          * @default `ecl-featured-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
+         */
+        "elId": string;
         "image": string;
         "itemTitle": string;
         "linkLabel": string;
@@ -632,6 +637,8 @@ export namespace Components {
         "width": string;
     }
     interface EclFooterEc {
+        "coOwnerLinks": string;
+        "coOwnerTitle": string;
         "description": string;
         "logoAlt": string;
         "logoLangCode": string;
@@ -647,6 +654,8 @@ export namespace Components {
         "variant": string;
     }
     interface EclFooterEu {
+        "coOwnerLinks": string;
+        "coOwnerTitle": string;
         "description": string;
         "logoAlt": string;
         "logoAriaLabel": string;
@@ -984,7 +993,7 @@ export namespace Components {
         "theme": string;
         "titleAttr": string;
         /**
-          * @default 'default'
+          * @default ''
          */
         "variant": string;
     }
@@ -999,9 +1008,29 @@ export namespace Components {
          */
         "column": number;
         /**
+          * @default true
+         */
+        "counterReset": boolean;
+        /**
+          * @default 0
+         */
+        "counterStart": number;
+        /**
           * @default 'l'
          */
         "fontSize": string;
+        /**
+          * @default false
+         */
+        "iconInline": boolean;
+        /**
+          * @default false
+         */
+        "iconList": boolean;
+        /**
+          * @default false
+         */
+        "numberList": boolean;
         "styleClass": string;
         "theme": string;
         /**
@@ -1014,6 +1043,14 @@ export namespace Components {
         "zebra": boolean;
     }
     interface EclListIllustrationItem {
+        /**
+          * @default false
+         */
+        "divider": boolean;
+        /**
+          * @default false
+         */
+        "hasColumns": boolean;
         "icon": string;
         /**
           * @default '2xl'
@@ -1219,6 +1256,20 @@ export namespace Components {
         "withClose": boolean;
     }
     interface EclPageHeader {
+        /**
+          * @default false
+         */
+        "eclScript": boolean;
+        "expandableContent": string;
+        "expandableHeader": string;
+        /**
+          * @default `toggle panel's visibility`
+         */
+        "expandableLabel": string;
+        /**
+          * @default `ecl-page-header-expandable-panel-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "expandablePanelId": string;
         "headerTitle": string;
         "image": string;
         "imageAlt": string;
@@ -1625,6 +1676,34 @@ export namespace Components {
           * @default false
          */
         "visible": boolean;
+    }
+    interface EclSpotlight {
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        "credit": string;
+        /**
+          * @default 'm'
+         */
+        "fontSize": string;
+        /**
+          * @default false
+         */
+        "fullWidth": boolean;
+        /**
+          * @default true
+         */
+        "hasAnchor": boolean;
+        "header": string;
+        "image": string;
+        "imageAlt": string;
+        "path": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
     }
     interface EclTag {
         "colorMode": string;
@@ -2302,6 +2381,12 @@ declare global {
         prototype: HTMLEclSpinnerElement;
         new (): HTMLEclSpinnerElement;
     };
+    interface HTMLEclSpotlightElement extends Components.EclSpotlight, HTMLStencilElement {
+    }
+    var HTMLEclSpotlightElement: {
+        prototype: HTMLEclSpotlightElement;
+        new (): HTMLEclSpotlightElement;
+    };
     interface HTMLEclTagElementEventMap {
         "removeTag": boolean;
     }
@@ -2438,6 +2523,7 @@ declare global {
         "ecl-social-media-follow-item": HTMLEclSocialMediaFollowItemElement;
         "ecl-spacing": HTMLEclSpacingElement;
         "ecl-spinner": HTMLEclSpinnerElement;
+        "ecl-spotlight": HTMLEclSpotlightElement;
         "ecl-tag": HTMLEclTagElement;
         "ecl-tag-set": HTMLEclTagSetElement;
         "ecl-text": HTMLEclTextElement;
@@ -2579,6 +2665,7 @@ declare namespace LocalJSX {
     }
     interface EclButton {
         "ariaControls"?: string;
+        "buttonStyle"?: string;
         "containerExtraClasses"?: string;
         /**
           * @default false
@@ -2947,6 +3034,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "eclScript"?: boolean;
+        /**
+          * @default `ecl-featured-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
+         */
+        "elId"?: string;
         "image"?: string;
         "itemTitle"?: string;
         "linkLabel"?: string;
@@ -3078,6 +3169,8 @@ declare namespace LocalJSX {
         "width"?: string;
     }
     interface EclFooterEc {
+        "coOwnerLinks"?: string;
+        "coOwnerTitle"?: string;
         "description"?: string;
         "logoAlt"?: string;
         "logoLangCode"?: string;
@@ -3093,6 +3186,8 @@ declare namespace LocalJSX {
         "variant"?: string;
     }
     interface EclFooterEu {
+        "coOwnerLinks"?: string;
+        "coOwnerTitle"?: string;
         "description"?: string;
         "logoAlt"?: string;
         "logoAriaLabel"?: string;
@@ -3433,7 +3528,7 @@ declare namespace LocalJSX {
         "theme"?: string;
         "titleAttr"?: string;
         /**
-          * @default 'default'
+          * @default ''
          */
         "variant"?: string;
     }
@@ -3448,9 +3543,29 @@ declare namespace LocalJSX {
          */
         "column"?: number;
         /**
+          * @default true
+         */
+        "counterReset"?: boolean;
+        /**
+          * @default 0
+         */
+        "counterStart"?: number;
+        /**
           * @default 'l'
          */
         "fontSize"?: string;
+        /**
+          * @default false
+         */
+        "iconInline"?: boolean;
+        /**
+          * @default false
+         */
+        "iconList"?: boolean;
+        /**
+          * @default false
+         */
+        "numberList"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
         /**
@@ -3463,6 +3578,14 @@ declare namespace LocalJSX {
         "zebra"?: boolean;
     }
     interface EclListIllustrationItem {
+        /**
+          * @default false
+         */
+        "divider"?: boolean;
+        /**
+          * @default false
+         */
+        "hasColumns"?: boolean;
         "icon"?: string;
         /**
           * @default '2xl'
@@ -3668,6 +3791,20 @@ declare namespace LocalJSX {
         "withClose"?: boolean;
     }
     interface EclPageHeader {
+        /**
+          * @default false
+         */
+        "eclScript"?: boolean;
+        "expandableContent"?: string;
+        "expandableHeader"?: string;
+        /**
+          * @default `toggle panel's visibility`
+         */
+        "expandableLabel"?: string;
+        /**
+          * @default `ecl-page-header-expandable-panel-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "expandablePanelId"?: string;
         "headerTitle"?: string;
         "image"?: string;
         "imageAlt"?: string;
@@ -4084,6 +4221,34 @@ declare namespace LocalJSX {
          */
         "visible"?: boolean;
     }
+    interface EclSpotlight {
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        "credit"?: string;
+        /**
+          * @default 'm'
+         */
+        "fontSize"?: string;
+        /**
+          * @default false
+         */
+        "fullWidth"?: boolean;
+        /**
+          * @default true
+         */
+        "hasAnchor"?: boolean;
+        "header"?: string;
+        "image"?: string;
+        "imageAlt"?: string;
+        "path"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclTag {
         "colorMode"?: string;
         /**
@@ -4310,6 +4475,7 @@ declare namespace LocalJSX {
         "ecl-social-media-follow-item": EclSocialMediaFollowItem;
         "ecl-spacing": EclSpacing;
         "ecl-spinner": EclSpinner;
+        "ecl-spotlight": EclSpotlight;
         "ecl-tag": EclTag;
         "ecl-tag-set": EclTagSet;
         "ecl-text": EclText;
@@ -4392,6 +4558,7 @@ declare module "@stencil/core" {
             "ecl-social-media-follow-item": LocalJSX.EclSocialMediaFollowItem & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowItemElement>;
             "ecl-spacing": LocalJSX.EclSpacing & JSXBase.HTMLAttributes<HTMLEclSpacingElement>;
             "ecl-spinner": LocalJSX.EclSpinner & JSXBase.HTMLAttributes<HTMLEclSpinnerElement>;
+            "ecl-spotlight": LocalJSX.EclSpotlight & JSXBase.HTMLAttributes<HTMLEclSpotlightElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
             "ecl-tag-set": LocalJSX.EclTagSet & JSXBase.HTMLAttributes<HTMLEclTagSetElement>;
             "ecl-text": LocalJSX.EclText & JSXBase.HTMLAttributes<HTMLEclTextElement>;

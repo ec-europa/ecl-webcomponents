@@ -206,7 +206,7 @@ exports[`ecl-gallery renders 1`] = `
         </div>
         <ecl-button data-ecl-gallery-all data-ecl-gallery-collapsed-label="View all">
           <!---->
-          <button class="ecl-button ecl-button--ghost ecl-gallery__view-all sc-ecl-gallery-ec" data-ecl-gallery-all="eclGalleryAll" data-ecl-gallery-collapsed-label="View all" type="submit">
+          <button class="ecl-button ecl-button--tertiary ecl-gallery__view-all sc-ecl-gallery-ec" data-ecl-gallery-all="eclGalleryAll" data-ecl-gallery-collapsed-label="View all" type="submit">
             <span class="ecl-button__container">
               <span class="ecl-button__label" data-ecl-label>
                 View all
@@ -221,7 +221,7 @@ exports[`ecl-gallery renders 1`] = `
       <header class="ecl-gallery__close" data-ecl-gallery-overlay-header>
         <ecl-button data-ecl-gallery-close hide-label="" style-class="ecl-gallery__close-button sc-ecl-gallery-ec">
           <!---->
-          <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-gallery__close-button sc-ecl-gallery-ec" data-ecl-gallery-close="eclGalleryClose" type="submit">
+          <button class="ecl-button ecl-button--icon-only ecl-button--inverted ecl-button--tertiary ecl-gallery__close-button sc-ecl-gallery-ec" data-ecl-gallery-close="eclGalleryClose" type="submit">
             <span class="ecl-button__container">
               <span class="ecl-button__label" data-ecl-label>
                 Close
@@ -252,7 +252,7 @@ exports[`ecl-gallery renders 1`] = `
               <div class="ecl-gallery__controls">
                 <ecl-button data-ecl-gallery-overlay-previous hide-label="" style-class="ecl-gallery__slider-previous sc-ecl-gallery-ec">
                   <!---->
-                  <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-gallery__slider-previous sc-ecl-gallery-ec" data-ecl-gallery-overlay-previous="eclGalleryOverlayPrevious" type="button">
+                  <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-gallery__slider-previous sc-ecl-gallery-ec" data-ecl-gallery-overlay-previous="eclGalleryOverlayPrevious" type="button">
                     <span class="ecl-button__container">
                       <ecl-icon slot="icon-before" style-class="sc-ecl-gallery-ec">
                         <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-gallery-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270 wt-icon--s"></span>
@@ -266,7 +266,7 @@ exports[`ecl-gallery renders 1`] = `
               </div>
               <ecl-button data-ecl-gallery-overlay-next hide-label="" style-class="ecl-gallery__slider-next sc-ecl-gallery-ec">
                 <!---->
-                <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-gallery__slider-next sc-ecl-gallery-ec" data-ecl-gallery-overlay-next="eclGalleryOverlayNext" type="button">
+                <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-gallery__slider-next sc-ecl-gallery-ec" data-ecl-gallery-overlay-next="eclGalleryOverlayNext" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label>
                       Next

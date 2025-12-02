@@ -1,10 +1,5 @@
 export default {
   title: 'Components/expandable',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) =>

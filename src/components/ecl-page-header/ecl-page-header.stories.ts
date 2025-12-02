@@ -32,6 +32,9 @@ const getArgTypes = () => {
       type: { name: 'string' },
       description: 'Alt attribute for the thumbnail',
     },
+    expandable: {
+      type: { name: 'boolean' },
+    },
   };
 };
 
@@ -41,12 +44,16 @@ export default {
 
 const Template = args =>
   `<ecl-page-header
+    ecl-script
     header-title="${args.title}"
     image="${args.image || ''}"
     thumbnail="${args.thumbnail}"
     thumbnail-alt="${args.thumbnailAlt}"
     meta="${args.meta}"
     image-alt="${args.imageAlt}"
+    ${args.expandable ? `expandable-header="this is the page header expandable header"
+                         expandable-content="this is the page header expandable panel's content"`
+    : ''}
   >
     <ecl-breadcrumb
       slot="breadcrumb"
@@ -98,6 +105,7 @@ PageHeaderCore.args = {
   imageAlt: 'image alternative text',
   meta: 'Meta info | DD Month YYYY',
   thumbnailAlt: 'Europe map',
+  expandable: false,
 };
 PageHeaderCore.argTypes = {
    color_mode: { table: { disable: true }},

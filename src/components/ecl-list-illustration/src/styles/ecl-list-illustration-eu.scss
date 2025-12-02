@@ -3,6 +3,9 @@
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
+@use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $typography: var.$typography
+);
 @use '@ecl/list-illustration/list-illustration' with (
   $theme: theme.$theme,
   $list-illustration: var.$list-illustration

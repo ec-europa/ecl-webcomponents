@@ -13,6 +13,7 @@ const getArgs = () => {
     iconRotate: '',
     iconFlip: '',
     hideLabel: false,
+    noVisited: false,
     indicator: false,
     indicatorValue: 2,
   };
@@ -23,7 +24,7 @@ const getArgTypes = () => {
     color_mode: { table: { disable: true } },
     variant: {
       type: { name: 'select' },
-      options: ['standalone', 'cta', 'primary', 'secondary'],
+      options: ['standalone', 'primary', 'primary-highlight', 'secondary'],
       description: "Link variant"
     },
     label: {
@@ -42,6 +43,10 @@ const getArgTypes = () => {
       name: 'path',
       type: { name: 'string' },
       description: 'Path or Url to link to',
+    },
+    noVisited: {
+      name: 'no-visited',
+      type: { name: 'boolean' },
     },
     icon: {
       name: 'icon',
@@ -101,11 +106,6 @@ const getArgTypes = () => {
 
 export default {
   title: 'Components/Navigation/link',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = (args) => {
@@ -115,6 +115,7 @@ const Template = (args) => {
       path="${args.path}"
       inverted="${args.inverted}"
       external="${args.external}"
+      no-visited="${args.noVisited}"
       aria-label="Accessibility enhancer"
       indicator="${args.indicator}"
       indicator-value="${args.indicatorValue}"
@@ -140,7 +141,7 @@ const Template = (args) => {
     </ecl-link>`;
 
   if (args.inverted) {
-    return `<div style="padding: var(--s-s); background: var(--ecl-color-neutral-dark, var(--ecl-color-dark))">${link}</div>`;
+    return `<div style="padding: var(--s-s); background: var(--cm-surface-brand, var(--ecl-color-dark))">${link}</div>`;
   }
 
   return link;

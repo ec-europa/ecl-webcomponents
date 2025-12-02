@@ -126,7 +126,7 @@ function App() {
           </EclMenuItem>
         </EclMenu>
       </EclSiteHeader>
-      <EclPageHeader header-title="Page title" meta="Meta info | DD Month YYYY" image="https://inno-.s3.amazonaws.com/media/examples/example-image2.jpg">
+      <EclPageHeader header-title="Page title" meta="Meta info | DD Month YYYY" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
         <EclBreadcrumb slot="breadcrumb" ecl-script>
           <EclBreadcrumbItem path="/example.html"> Home </EclBreadcrumbItem>
           <EclBreadcrumbItem ellipsis button-aria-label="Click to expand"> </EclBreadcrumbItem>
@@ -158,7 +158,7 @@ function App() {
             <EclFeaturedItem
               variant="extended"
               item-title="Featured item"
-              image="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg"
+              image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
               media-caption="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -170,15 +170,15 @@ function App() {
             <EclDivider></EclDivider>
             <EclSpacing value="l" direction="t"></EclSpacing>
             <EclListIllustration column={3}>
-              <EclListIllustrationItem image="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 1">
+              <EclListIllustrationItem  has-columns image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut
                 felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
               </EclListIllustrationItem>
-              <EclListIllustrationItem image="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 2">
+              <EclListIllustrationItem has-columns image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut
                 felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
               </EclListIllustrationItem>
-              <EclListIllustrationItem image="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 3">
+              <EclListIllustrationItem has-columns image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend quam leo, at malesuada ex viverra vitae. Nullam id felis eu lorem condimentum rutrum vitae ut
                 felis. Nam ultricies, metus vel aliquam euismod, lacus dolor sodales neque, in laoreet tellus erat posuere purus. Fusce sit amet sem dui. In nec lacinia eros.
               </EclListIllustrationItem>
@@ -210,10 +210,10 @@ function App() {
                 el-id="ecl-gallery-demo-item-1"
                 meta="Copyright, Author, Licence for image 1"
                 media-share-path="/example.html"
-                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg"
+                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
                 image-alt="Image 1"
                 thumb-zoom
-                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image3.jpg"
+                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"
               >
                 The EU in brief, institutions and bodies, countries, symbols, history, facts and figures
               </EclGalleryItem>
@@ -221,10 +221,10 @@ function App() {
                 type="video"
                 thumb-zoom
                 meta="Copyright, Author, Licence for embedded media"
-                media-href="https://inno-.s3.amazonaws.com/media/examples/example-external-video.jpg"
+                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-external-video.jpg"
                 image-alt="New digital strategy"
                 media-iframe-href="https://www.youtube.com/embed/fgi-GSCB6ho"
-                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image4.jpg"
+                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg"
               >
                 New digital strategy
               </EclGalleryItem>
@@ -232,8 +232,8 @@ function App() {
                 meta="Copyright, Author, Licence for image 2"
                 thumb-zoom
                 media-share-path="/example.html"
-                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image2.jpg"
-                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image.jpg"
+                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
+                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
                 image-alt="Image 2"
               >
                 Information on agriculture, business, culture, health, etc.
@@ -242,8 +242,8 @@ function App() {
                 meta="Copyright, Author, Licence for image 3"
                 thumb-zoom
                 media-share-path="/example.html"
-                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image3.jpg"
-                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image7.jpg"
+                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"
+                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg"
                 image-alt="Image 3"
               >
                 Living, working, travelling in the EU
@@ -252,9 +252,9 @@ function App() {
                 meta="Copyright, Author, Licence for image 4"
                 thumb-zoom
                 media-share-path="/example.html"
-                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image4.jpg"
+                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg"
                 image-alt="Image 3"
-                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image6.jpg"
+                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg"
               >
                 Information on taxes, customs, importing and exporting goods, financial support for businesses
               </EclGalleryItem>
@@ -263,12 +263,12 @@ function App() {
                 thumb-zoom
                 meta="Copyright, Author, Licence for video"
                 type="html-video"
-                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image8.jpg"
+                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg"
               >
                 EU law
-                <video slot="video" className="ecl-gallery__image sc-ecl-gallery-ec" poster="https://inno-.s3.amazonaws.com/media/examples/example-image5.jpg">
-                  <source src="https://inno-.s3.amazonaws.com/media/videos/big_buck_bunny.mp4" type="video/mp4" />
-                  <source src="https://inno-.s3.amazonaws.com/media/videos/big_buck_bunny.webm" type="video/webm" />
+                <video slot="video" className="ecl-gallery__image sc-ecl-gallery-ec" poster="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg">
+                  <source src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4" type="video/mp4" />
+                  <source src="https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm" type="video/webm" />
                   <track kind="captions" label="English" src="/captions/bunny-en.vtt" srcLang="en" />
                   <track kind="captions" label="français" src="/captions/bunny-fr.vtt" srcLang="fr" />
                 </video>
@@ -277,9 +277,9 @@ function App() {
                 meta="Copyright, Author, Licence for image 6"
                 thumb-zoom
                 media-share-path="/example.html"
-                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image6.jpg"
+                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg"
                 image-alt="Image 6"
-                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image5.jpg"
+                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg"
               >
                 Find official documents, publications, statistics, open data and more resources
               </EclGalleryItem>
@@ -287,9 +287,9 @@ function App() {
                 thumb-zoom
                 meta="Copyright, Author, Licence for image 7"
                 media-share-path="/example.html"
-                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image7.jpg"
+                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg"
                 image-alt="Image 7"
-                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image2.jpg"
+                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
               >
                 Teaching material about the EU, including books and maps
               </EclGalleryItem>
@@ -298,9 +298,9 @@ function App() {
                 thumb-zoom
                 media-share-path="/example.html"
                 media-iframe-href="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&lg=EN"
-                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image8.jpg"
+                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg"
                 image-alt="Image 8"
-                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image9.jpg"
+                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg"
               >
                 Teaching material about the EU, including books and maps
               </EclGalleryItem>
@@ -308,9 +308,9 @@ function App() {
                 meta="Copyright, Author, Licence for image 9"
                 thumb-zoom
                 media-share-path="/example.html"
-                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image9.jpg"
+                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg"
                 image-alt="Image 9"
-                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image2.jpg"
+                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
               >
                 About the EU
               </EclGalleryItem>
@@ -318,9 +318,9 @@ function App() {
                 meta="Copyright, Author, Licence for image 10"
                 thumb-zoom
                 media-share-path="/example.html"
-                media-href="https://inno-.s3.amazonaws.com/media/examples/example-image10.jpg"
+                media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg"
                 image-alt="Image 10"
-                thumbnail="https://inno-.s3.amazonaws.com/media/examples/example-image11.jpg"
+                thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image11.jpg"
               >
                 EU by topic
               </EclGalleryItem>

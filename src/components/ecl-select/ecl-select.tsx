@@ -164,8 +164,7 @@ export class EclSelect {
         <div class="ecl-select__icon">
           <ecl-button
             styleClass={`sc-ecl-select-${this.theme}`}
-            theme={this.theme}
-            variant="ghost"
+            variant="tertiary"
             hide-label
           >
             {this.buttonLabel}

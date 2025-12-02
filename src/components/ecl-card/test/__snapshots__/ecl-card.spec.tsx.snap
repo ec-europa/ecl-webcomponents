@@ -29,7 +29,7 @@ exports[`ecl-card renders 1`] = `
               Meta2
             </li>
           </ul>
-          <h1 class="ecl-content-block__title"></h1>
+          <div class="ecl-content-block__title"></div>
           <div class="ecl-content-block__description">
             <p slot="description">
               Transparently designing and evaluating evidence-based EU legislation, backed by citizens views.

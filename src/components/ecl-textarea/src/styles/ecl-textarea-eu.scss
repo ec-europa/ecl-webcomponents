@@ -6,9 +6,7 @@
 @use '@ecl/mixins-typography/mixins' as typographyMixins with (
   $typography: var.$typography
 );
-@use '@ecl/layout-form/mixins' as layoutFormMixins with (
-  $theme: theme.$theme
-);
+@use '@ecl/layout-form/mixins' as layoutFormMixins;
 @use '@ecl/text-area/text-area' with (
   $theme: theme.$theme,
   $textarea: var.$textarea

@@ -12,6 +12,7 @@ import { Component, h, Prop } from '@stencil/core';
 
 export class EclFeaturedItem {
   @Prop({ mutable: true }) theme: string;
+  @Prop() elId: string = `ecl-featured-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`;
   @Prop() styleClass: string;
   @Prop() variant: string = 'default';
   @Prop() itemTitle: string;
@@ -63,7 +64,10 @@ export class EclFeaturedItem {
         }
           <div class="ecl-featured-item__item">
           { this.itemTitle ?
-            <div class="ecl-featured-item__title">
+            <div 
+              class="ecl-featured-item__title"
+              id={this.elId}
+            >
               {this.itemTitle}
             </div> : '' }
             <div class="ecl-featured-item__description">
@@ -74,6 +78,7 @@ export class EclFeaturedItem {
               variant="standalone"
               style-class={`ecl-featured-item__link sc-ecl-featured-item-${this.theme}`}
               path={this.linkPath}
+              aria-describedby={this.elId}
             >
               {this.linkLabel}
               <ecl-icon

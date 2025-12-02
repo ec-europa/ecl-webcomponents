@@ -7,13 +7,13 @@ exports[`ecl-carousel renders 1`] = `
     <div class="ecl-carousel__controls">
       <div class="ecl-container">
         <div class="ecl-carousel__autoplay">
-          <ecl-button hidelabel="" styleclass="ecl-carousel__play sc-ecl-carousel-ec" type="button" variant="tertiary">
+          <ecl-button buttonstyle="neutral" hidelabel="" styleclass="ecl-carousel__play sc-ecl-carousel-ec" type="button" variant="tertiary">
             <ecl-icon slot="icon-after" style-class="ecl-carousel__icon-default sc-ecl-carousel-ec">
               <span class="ecl-carousel__icon-default ecl-icon sc-ecl-carousel-ec wt-icon--m wt-icon--placeholder wt-icon--play-outline"></span>
             </ecl-icon>
             Play carousel
           </ecl-button>
-          <ecl-button hidelabel="" styleclass="ecl-carousel__pause sc-ecl-carousel-ec" type="button" variant="tertiary">
+          <ecl-button buttonstyle="neutral" hidelabel="" styleclass="ecl-carousel__pause sc-ecl-carousel-ec" type="button" variant="tertiary">
             <ecl-icon slot="icon-after" style-class="ecl-carousel__icon-default sc-ecl-carousel-ec">
               <span class="ecl-carousel__icon-default ecl-icon sc-ecl-carousel-ec wt-icon--m wt-icon--pause-outline wt-icon--placeholder"></span>
             </ecl-icon>
@@ -21,13 +21,13 @@ exports[`ecl-carousel renders 1`] = `
           </ecl-button>
         </div>
         <div class="ecl-carousel__navigation" role="tablist">
-          <ecl-button styleclass="ecl-carousel__navigation-item sc-ecl-carousel-ec" type="button" variant="tertiary">
+          <ecl-button buttonstyle="neutral" styleclass="ecl-carousel__navigation-item sc-ecl-carousel-ec" type="button" variant="tertiary">
             1
           </ecl-button>
-          <ecl-button styleclass="ecl-carousel__navigation-item sc-ecl-carousel-ec" type="button" variant="tertiary">
+          <ecl-button buttonstyle="neutral" styleclass="ecl-carousel__navigation-item sc-ecl-carousel-ec" type="button" variant="tertiary">
             2
           </ecl-button>
-          <ecl-button styleclass="ecl-carousel__navigation-item sc-ecl-carousel-ec" type="button" variant="tertiary">
+          <ecl-button buttonstyle="neutral" styleclass="ecl-carousel__navigation-item sc-ecl-carousel-ec" type="button" variant="tertiary">
             3
           </ecl-button>
         </div>

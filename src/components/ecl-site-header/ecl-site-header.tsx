@@ -68,9 +68,7 @@ export class EclSiteHeader {
       headerTop.insertBefore(logo, headerTop.firstElementChild);
       //logo.parentElement.remove();
     }
-    if (this.el.querySelector('.ecl-search-form')) {
-      this.el.querySelector('.ecl-search-form').setAttribute('data-ecl-search-form', '');
-    }
+
     if (this.el.querySelector('.ecl-menu')) {
       this.el.querySelector('.ecl-menu').classList.add(`sc-ecl-site-header-${this.theme}`);
       this.el.firstElementChild.classList.add('ecl-site-header--has-menu');
@@ -150,7 +148,7 @@ export class EclSiteHeader {
                   <div class="ecl-site-header__login-container">
                   { this.loginBlock &&
                     <a
-                      class={`ecl-button ecl-button--tertiary ecl-site-header__login-toggle sc-ecl-site-header-${this.theme}`}
+                      class={`ecl-button ecl-button--tertiary ecl-button--neutral ecl-site-header__login-toggle sc-ecl-site-header-${this.theme}`}
                       data-ecl-login-toggle
                       aria-expanded="false"
                       href={this.loginLink}
@@ -187,7 +185,7 @@ export class EclSiteHeader {
                 { this.languageBlock ?
                   <div class="ecl-site-header__language">
                     <a
-                      class="ecl-button ecl-button--tertiary ecl-site-header__language-selector"
+                      class="ecl-button ecl-button--tertiary ecl-button--neutral ecl-site-header__language-selector"
                       data-ecl-language-selector
                       aria-label={this.languageAriaLabel}
                       aria-controls={this.languageId}
@@ -196,7 +194,7 @@ export class EclSiteHeader {
                       <span class="ecl-site-header__language-icon">
                         <ecl-icon
                           icon="global"
-                          size="s"
+                          size="m"
                           style-class={`ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
                         ></ecl-icon>
                         {this.language}
@@ -222,13 +220,14 @@ export class EclSiteHeader {
                           style-class={`ecl-site-header__language-close sc-ecl-site-header-${this.theme}`}
                           type="submit"
                           hide-label
+                          buttonStyle="neutral"
                           variant="tertiary"
                           data-ecl-language-list-close
                         >
                           {this.closeLabel}
                           <ecl-icon
                             slot="icon-after"
-                            size="s"
+                            size="m"
                             style-class={`sc-ecl-site-header-${this.theme}`}
                             data-ecl-icon
                             icon="close"
@@ -273,7 +272,7 @@ export class EclSiteHeader {
                     role="search"
                   >
                     <a
-                      class="ecl-button ecl-button--tertiary ecl-site-header__search-toggle"
+                      class="ecl-button ecl-button--tertiary ecl-button--neutral ecl-site-header__search-toggle"
                       data-ecl-search-toggle
                       aria-controls="search-form-id"
                       aria-expanded="false"
@@ -281,7 +280,7 @@ export class EclSiteHeader {
                       <ecl-icon
                         icon="search"
                         style-class={`ecl-icon ecl-icon--s ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
-                        size="s"
+                        size="m"
                       >
                        </ecl-icon>
                       {this.searchText}
@@ -293,7 +292,7 @@ export class EclSiteHeader {
                       placeholder={this.searchPlaceholder}
                       button-label={this.searchText}
                       button-aria-label={this.searchText}
-                      button-class={`sc-ecl-site-header-${this.theme}`}
+                      button-class={`ecl-button--neutral sc-ecl-site-header-${this.theme}`}
                     ></ecl-search-form>
                   </div> : <slot name="search"></slot>
                 }

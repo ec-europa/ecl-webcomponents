@@ -39,7 +39,7 @@ export class EclSocialMediaFollowItem {
             family={this.family}
             color={this.color}
             icon={this.icon}
-            size="m"
+            size="s"
           ></ecl-icon>
           <slot></slot>
         </ecl-link>

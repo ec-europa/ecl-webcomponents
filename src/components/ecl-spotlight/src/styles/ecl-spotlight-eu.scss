@@ -1,0 +1,29 @@
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $theme: theme.$theme,
+  $typography: var.$typography
+);
+@use '@ecl/spotlight/spotlight' with (
+  $theme: theme.$theme,
+  $spotlight: var.$spotlight
+);
+
+@container ecl-spotlight (width >= 1140px) {
+  .ecl-spotlight__title.sc-ecl-spotlight-eu {
+    font: var(--f-4xl);
+  }
+}
+
+@container ecl-spotlight (width >= 1140px) {
+  .ecl-spotlight--font-l.sc-ecl-spotlight-eu .ecl-spotlight__title.sc-ecl-spotlight-eu {
+    font: var(--f-5xl);
+  }
+}
+
+.ecl-spotlight__credit {
+  right: 0;
+}

@@ -3,9 +3,7 @@
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
-@use '@ecl/layout-form/mixins' as layoutFormMixins with (
-  $theme: theme.$theme
-);
+@use '@ecl/layout-form/mixins' as layoutFormMixins;
 @use '@ecl/mixins-typography/mixins' as typographyMixins with (
   $typography: var.$typography
 );

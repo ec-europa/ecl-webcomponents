@@ -67,7 +67,7 @@ export class EclFactFigures {
         <div class="ecl-fact-figures__view-all">
           <ecl-link
             variant="standalone"
-            style-class="ecl-fact-figures__view-all-link"
+            styleClass={`ecl-fact-figures__view-all-link sc-ecl-fact-figures-${this.theme}`}
             path={this.viewAllLinkPath}
           >
             <ecl-icon

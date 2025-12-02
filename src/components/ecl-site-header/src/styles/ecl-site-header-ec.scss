@@ -16,21 +16,6 @@
   $language-list: var.$language-list
 );
 
-.ecl-site-header__search:not(.ecl-site-header__search--active) {
-  display: none;
-}
-
-.ecl-search-form.ecl-site-header__search {
-  position: absolute;
-}
-
-@media (width >= 1140px) {
-  .ecl-search-form.ecl-site-header__search {
-    display: flex;
-    position: relative;
-  }
-}
-
 .ecl-site-header__language-icon.sc-ecl-site-header-ec {
   flex-direction: column;
 }

@@ -2,11 +2,6 @@ import { randomizedLink } from "../../utils/randomizedLink";
 
 export default {
   title: 'Components/Navigation/breadcrumb',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = () => 

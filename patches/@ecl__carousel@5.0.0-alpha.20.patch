@@ -1,5 +1,5 @@
 diff --git a/carousel.js b/carousel.js
-index 13ae29108baf48051194ab8b976d84a5658563c3..082b6794d47c33924511f877743eac22f621613a 100644
+index bb0daf7ebc5287514e1c929d6a10e9da714ddda0..7e496d339c32933ec2161f336cb1b34357bf4182 100644
 --- a/carousel.js
 +++ b/carousel.js
 @@ -67,7 +67,7 @@ export class Carousel {
@@ -20,8 +20,8 @@ index 13ae29108baf48051194ab8b976d84a5658563c3..082b6794d47c33924511f877743eac22
      this.executionCount = 0;
      this.maxExecutions = 5;
      this.slideWidth = 0;
-@@ -129,6 +127,8 @@ export class Carousel {
-     this.direction = getComputedStyle(this.element).direction;
+@@ -128,6 +126,8 @@ export class Carousel {
+     this.currentSlide = queryOne(this.currentSlideClass, this.element);
  
      this.slides = queryAll(this.slideClass, this.element);
 +    this.slidesContainer.innerHTML = '';
@@ -29,7 +29,7 @@ index 13ae29108baf48051194ab8b976d84a5658563c3..082b6794d47c33924511f877743eac22
      this.total = this.slides.length;
  
      // If only one slide, don't initialize carousel and hide controls
-@@ -142,30 +142,11 @@ export class Carousel {
+@@ -141,29 +141,10 @@ export class Carousel {
        return false;
      }
  
@@ -56,16 +56,14 @@ index 13ae29108baf48051194ab8b976d84a5658563c3..082b6794d47c33924511f877743eac22
 -
 -    // Refresh the slides variable after adding new cloned slides
 -    this.slides = queryAll(this.slideClass, this.element);
--
 +    this.slides.forEach((slide) => {
 +      const banner = new ECL.Banner(slide.firstElementChild.firstElementChild);
 +      banner.init();
 +    });
-+    
+ 
      // Initialze pagination and navigation
      this.handleResize();
-     // Bind events
-@@ -217,10 +198,6 @@ export class Carousel {
+@@ -216,10 +197,6 @@ export class Carousel {
     * Destroy component.
     */
    destroy() {
@@ -76,82 +74,74 @@ index 13ae29108baf48051194ab8b976d84a5658563c3..082b6794d47c33924511f877743eac22
      if (this.btnPlay) {
        this.btnPlay.replaceWith(this.btnPlay.cloneNode(true));
      }
-@@ -272,56 +249,40 @@ export class Carousel {
+@@ -271,16 +248,13 @@ export class Carousel {
        this.executionCount = 0;
        return;
      }
 -    const heightValues = this.slides.map((slide) => {
--      const banner = queryOne('.ecl-banner', slide);
++     
++    const heightValues = this.slides.map(function (slide) {
+       const banner = queryOne('.ecl-banner', slide);
 -      const bannerInstance = ECL.components.get(banner);
 -      const ratio = bannerInstance.defaultRatio();
 -      bannerInstance.setHeight(ratio);
 -      const padding =
 -        parseInt(banner.style.getPropertyValue('--banner-footer-height'), 10) ||
 -        0;
--      const height = parseInt(banner.style.height, 10);
--      const totalHeight = height + padding;
-+
-+    var heightValues = this.slides.map(function (slide) {
-+      var banner = queryOne('.ecl-banner', slide);
-+      var padding = parseInt(banner.style.getPropertyValue('--banner-footer-height'), 10) || 0;
-+      var height = parseInt(banner.style.height, 10);
-+      var totalHeight = height + padding;
++      const padding = parseInt(banner.style.getPropertyValue('--banner-footer-height'), 10) || 0;
+       const height = parseInt(banner.style.height, 10);
+       const totalHeight = height + padding;
++    
        if (banner.style.height === 'auto') {
-         return 0;
-       }
-       if (Number.isNaN(height) || height === 100) {
-         return 1;
-       }
--
+         // FRONT-4970 - Always handle banner heights, even when set to auto
+         return banner.offsetHeight;
+@@ -292,34 +266,26 @@ export class Carousel {
        return totalHeight;
      });
--
+ 
 -    const elementHeights = heightValues.filter(
 -      (height) => height !== undefined,
 -    );
 -
 -    const tallestElementHeight = Math.max(...elementHeights);
-+    var elementHeights = heightValues.filter(function (height) {
++    const elementHeights = heightValues.filter(function (height) {
 +      return height !== undefined;
 +    });
-+    var tallestElementHeight = Math.max.apply(Math, elementHeights);
-     // We stop checking the heights of the banner if we know that all the slides
-     // have height: auto; or if a banner with an height that is not 100% or undefined is found.
+ 
 -    if (
--      (elementHeights.length === this.slides.length &&
--        tallestElementHeight === 0) ||
+-      elementHeights.length === this.slides.length &&
 -      tallestElementHeight > 1
 -    ) {
++    const tallestElementHeight = Math.max.apply(Math, elementHeights);
++    
 +    if (elementHeights.length === this.slides.length && tallestElementHeight === 0 || tallestElementHeight > 1) {
        clearInterval(this.intervalId);
--
-       if (tallestElementHeight > 0) {
-         this.executionCount = 0;
--        this.slides.forEach((slide) => {
--          let bannerImage = null;
--          let bannerVideo = null;
--          const banner = queryOne('.ecl-banner', slide);
-+        this.slides.forEach(function (slide) {
-+          var banner = queryOne('.ecl-banner', slide);
-+          var bannerImage = null;
-+          var bannerVideo = null;
-           if (banner) {
-             bannerImage = queryOne('img', banner);
-             bannerVideo = queryOne('video', banner);
--            const footerHeight =
--              parseInt(
--                banner.style.getPropertyValue('--banner-footer-height'),
--                10,
--              ) || 0;
--            const newHeight = tallestElementHeight - footerHeight;
--            banner.style.height = `${newHeight}px`;
-+            var footerHeight = parseInt(banner.style.getPropertyValue('--banner-footer-height'), 10) || 0;
-+            var newHeight = tallestElementHeight - footerHeight;
-+            banner.style.height = newHeight + "px";
-           }
-           if (bannerImage) {
-             bannerImage.style.aspectRatio = 'auto';
-@@ -437,16 +398,23 @@ export class Carousel {
+ 
+       this.executionCount = 0;
+-      this.slides.forEach((slide) => {
+-        let bannerImage = null;
+-        let bannerVideo = null;
++      this.slides.forEach(function (slide) {
+         const banner = queryOne('.ecl-banner', slide);
++        const bannerImage = null;
++        const bannerVideo = null;
+         if (banner) {
+           bannerImage = queryOne('img', banner);
+           bannerVideo = queryOne('video', banner);
+-          const footerHeight =
+-            parseInt(
+-              banner.style.getPropertyValue('--banner-footer-height'),
+-              10,
+-            ) || 0;
++          const footerHeight = parseInt(banner.style.getPropertyValue('--banner-footer-height'), 10) || 0;
+           const newHeight = tallestElementHeight - footerHeight;
+-          banner.style.height = `${newHeight}px`;
+-          banner.style.aspectRatio = 'auto';
++          banner.style.height = newHeight + "px";
+         }
+         if (bannerImage) {
+           bannerImage.style.aspectRatio = 'auto';
+@@ -434,9 +400,17 @@ export class Carousel {
    shiftSlide(dir, stopAutoPlay) {
      if (this.allowShift) {
        if (typeof dir === 'number') {
@@ -171,14 +161,7 @@ index 13ae29108baf48051194ab8b976d84a5658563c3..082b6794d47c33924511f877743eac22
        }
        this.moveSlides(true);
      }
-     if (stopAutoPlay && this.autoPlay) {
-       this.handleAutoPlay();
-     }
--
-     this.allowShift = false;
-   }
- 
-@@ -476,11 +444,8 @@ export class Carousel {
+@@ -474,11 +448,8 @@ export class Carousel {
        }
      }
      // Update index
@@ -192,7 +175,7 @@ index 13ae29108baf48051194ab8b976d84a5658563c3..082b6794d47c33924511f877743eac22
      }
  
      // Move slide without transition to ensure infinity loop
-@@ -488,7 +453,7 @@ export class Carousel {
+@@ -486,7 +457,7 @@ export class Carousel {
  
      // Update pagination
      if (this.currentSlide) {
@@ -201,7 +184,7 @@ index 13ae29108baf48051194ab8b976d84a5658563c3..082b6794d47c33924511f877743eac22
      }
  
      // Update slides
-@@ -512,7 +477,7 @@ export class Carousel {
+@@ -510,7 +481,7 @@ export class Carousel {
      // Update navigation
      if (this.navigationItems) {
        this.navigationItems.forEach((nav, index) => {

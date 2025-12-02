@@ -38,11 +38,6 @@ const getArgTypes = () => ({
 
 export default {
   title: 'Components/modal',
-  parameters: {
-    badges: [
-      'updated',
-    ],  
-  },
 };
 
 const Template = args =>
@@ -86,14 +81,14 @@ const Template = args =>
         variant="secondary"
         style-class="ecl-modal__button sc-ecl-modal-${args.theme}"
       >
-        Secondary action
+        Close
       </ecl-button>
       <ecl-button
         type="submit"
         variant="primary"
         style-class="ecl-modal__button sc-ecl-modal-${args.theme}"
       >
-        Primary action
+        Submit
       </ecl-button>
     </div>
   </ecl-modal>`;

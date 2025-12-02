@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-spotlight renders 1`] = `
+<ecl-spotlight color-mode="blue-electric" credit="credit" font-size="l" has-anchor="" header="In focus" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" path="/example">
+  <!---->
+  <section class="ecl-color-mode--blue-electric ecl-spotlight ecl-spotlight--font-l">
+    <div class="ecl-spotlight__header">
+      <div class="ecl-container"></div>
+    </div>
+    <a class="ecl-spotlight__link" href="/example">
+      <figure class="ecl-spotlight__picture-container">
+        <ecl-picture data-ecl-spotlight-image image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imgclass="ecl-spotlight__image sc-ecl-spotlight-ec" styleclass="ecl-spotlight__picture sc-ecl-spotlight-ec"></ecl-picture>
+      </figure>
+      <div class="ecl-spotlight__container" data-ecl-spotlight-container>
+        <div class="ecl-container">
+          <div class="ecl-spotlight__title">
+            Proin molestie sapien ut blandit
+          </div>
+          <div aria-hidden="true" class="ecl-spotlight__anchor"></div>
+          <footer class="ecl-spotlight__credit">
+            credit
+          </footer>
+        </div>
+      </div>
+    </a>
+  </section>
+</ecl-spotlight>
+`;

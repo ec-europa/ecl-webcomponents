@@ -106,6 +106,7 @@ export class EclPopover {
             <ecl-button
               variant="tertiary"
               type="button"
+              buttonStyle="neutral"
               style-class={`sc-ecl-popover-${this.theme} ecl-popover__close`}
               hide-label
               data-ecl-popover-close
