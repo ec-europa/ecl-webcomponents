@@ -174,7 +174,6 @@ const TemplateStandardised = (args) => `
     co-owner-title="This page is managed by:"
     co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"},{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"}]'
   >
-  >
     <ecl-social-media-follow
       variant="horizontal"
       position="left"
@@ -416,7 +415,6 @@ const TemplateEu = () =>
     co-owner-title="This page is managed by:"
     co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"},{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"}]'
   >
-  >
     <ecl-text tag="p" slot="description">
       This site is managed by: [name of the manager of the site]
     </ecl-text>
@@ -539,7 +537,6 @@ const TemplateEuHarmonised = () =>
     logo-link="${randomizedLink('/example.html')}"
     co-owner-title="This page is managed by:"
     co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"},{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"}]'
-  >
   >
     <ecl-text
       size="m"

@@ -55,7 +55,7 @@ export class EclListIllustration {
     }
 
     if (this.numberList && this.counterReset) {
-      styleClasses.push('.ecl-list-illustration--number-list-reset');
+      styleClasses.push('ecl-list-illustration--number-list-reset');
     }
 
     if (this.colorMode) {

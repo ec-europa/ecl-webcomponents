@@ -60,7 +60,7 @@ const getArgTypes = () => ({
     description: 'Size of the fonts used',
   },
   mediaSize: {
-    name: 'size of the media (for squared images only)',
+    name: 'size of the media',
     control: {
       type: 'select',
       labels: {
@@ -253,8 +253,10 @@ IconList.argTypes = {
 const NumberListTemplate = (args) => 
   `<ecl-list-illustration
      number-list
-     counter-start=${args.counter_start}
+     counter-start="${args.counter_start}"
      color-mode="${args.color_mode}"
+     counter-reset=${args.counter_reset}
+     column="${args.column}"
    >
     <ecl-list-illustration-item
       ${args.divider ? 'divider' : ''}
@@ -286,11 +288,16 @@ NumberList.storyName = 'number list';
 NumberList.args = {
   ...getVariantArgs(),
   counter_start: 0,
+  counter_reset: true,
 };
 NumberList.argTypes = {
   ...getVariantArgTypes(),
   counter_start: {
-    name: 'counter start',
+    name: 'counter-start',
     control: { type: 'range', min: 0, max: 20, step: 1 },
+  },
+  counter_reset: {
+    name: 'counter-reset',
+    control: { type: 'boolean' },
   },
 };
