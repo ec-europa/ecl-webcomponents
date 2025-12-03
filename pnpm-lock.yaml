@@ -55,8 +55,8 @@ importers:
         specifier: 7.28.5
         version: 7.28.5(@babel/core@7.28.5)
       '@ecl/ecl-webcomponents':
-        specifier: 0.17.0
-        version: 0.17.0
+        specifier: 0.17.1
+        version: link:packages/ecl-webcomponents
       '@ecl/preset-ec':
         specifier: 5.0.0-alpha.20
         version: 5.0.0-alpha.20(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
@@ -330,8 +330,8 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(rxjs@7.8.2)(zone.js@0.13.2)
       '@ecl/ecl-webcomponents':
-        specifier: 0.17.0
-        version: 0.17.0
+        specifier: 0.17.1
+        version: link:../../../ecl-webcomponents
       tslib:
         specifier: 2.8.1
         version: 2.8.1
@@ -2935,10 +2935,6 @@ packages:
 
   '@ecl/dom-utils@5.0.0-alpha.20':
     resolution: {integrity: sha512-magAaQJzgvY1gpRwNDImDXsqRa1wZlPXEYo44EpQrSHC1j9sJBddwQZmFPn5TTODZEAxO4Skdzn5c/xbjNW3Bg==}
-
-  '@ecl/ecl-webcomponents@0.17.0':
-    resolution: {integrity: sha512-xLuBtKNl8wAH0mWuW7q9zlNRwbl7ELsvb8C9GVQtyGNzXKy7h+ZrFMylM+Cgfo4GC1cuF0BC/P4fk+U7V8+Viw==}
-    engines: {node: '>=20.0.0', pnpm: 10.9.0}
 
   '@ecl/event-manager@5.0.0-alpha.20':
     resolution: {integrity: sha512-0BonlEv533s205LsNwpmVA+rz1YhjNsDbOeG/D2fqOumRFjAbYL6W5vWX3JUK6UG4RK943ewMB5P/SArxt11XA==}
@@ -13629,10 +13625,6 @@ snapshots:
       '@ecl/tag': 5.0.0-alpha.20
 
   '@ecl/dom-utils@5.0.0-alpha.20': {}
-
-  '@ecl/ecl-webcomponents@0.17.0':
-    dependencies:
-      '@stencil/core': 4.38.3
 
   '@ecl/event-manager@5.0.0-alpha.20': {}
 
