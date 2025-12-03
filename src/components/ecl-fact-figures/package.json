@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-fact-figures",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.17.0",
+  "version": "0.17.1",
   "description": "ECL Fact & figures",
   "main": "ecl-media-container.tsx",
   "private": true,
@@ -21,8 +21,8 @@
     "cross-env": "10.1.0"
   },
   "dependencies": {
-    "@ecl/web-components-icon": "0.17.0",
-    "@ecl/web-components-link": "0.17.0"
+    "@ecl/web-components-icon": "0.17.1",
+    "@ecl/web-components-link": "0.17.1"
   },
   "repository": {
     "type": "git",
