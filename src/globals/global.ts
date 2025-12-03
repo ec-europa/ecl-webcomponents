@@ -1,5 +1,8 @@
 import { setMode } from '@stencil/core';
 
+const isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined';
+
+
 declare global {
   interface Window {
     eclTheme?: string;
@@ -9,6 +12,8 @@ declare global {
 }
 
 function injectWebtoolsLoad(): void {
+  if (!isBrowser) return;
+
   const scriptId = 'webtools-loader';
 
   if (!document.getElementById(scriptId)) {
@@ -22,6 +27,8 @@ function injectWebtoolsLoad(): void {
 }
 
 function injectThemeCss(theme: string) {
+  if (!isBrowser) return;
+
   const existingLinks = document.querySelectorAll('link[data-ecl-theme-css]');
 
   // If the same theme is already injected, skip
@@ -49,16 +56,29 @@ function injectThemeCss(theme: string) {
 }
 
 function switchTheme(theme: string) {
+  if (!isBrowser) return;
+
   localStorage.setItem('ecl-theme', theme);
   document.documentElement.setAttribute('data-ecl-theme', theme);
   window.location.reload();
 }
 
-(window as any).switchTheme = switchTheme;
+if (typeof window !== 'undefined') {
+  (window as any).switchTheme = switchTheme;
+}
 
 export default () => {
+  if (!isBrowser) {
+    setMode(() => 'ec');
+    return;
+  }
+
   const themeResolver = (elm: HTMLElement): string => {
-    const theme = document.documentElement.getAttribute('data-ecl-theme') || elm.getAttribute('theme') || (elm as any).theme;
+    const theme =
+      document.documentElement.getAttribute('data-ecl-theme') ||
+      elm.getAttribute('theme') ||
+      (elm as any).theme;
+    
     if (theme) {
       document.documentElement.setAttribute('data-ecl-theme', theme);
       injectThemeCss(theme);
