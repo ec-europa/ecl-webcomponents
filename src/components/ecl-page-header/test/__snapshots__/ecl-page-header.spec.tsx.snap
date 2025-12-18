@@ -3,94 +3,55 @@
 exports[`ecl-page-header renders 1`] = `
 <ecl-page-header expandable-content="this is the page header expandable panel's content" expandable-header="this is the page header expandable header" expandable-panel-id="panel-id-test" header-title="Page title" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" meta="Meta info | DD Month YYYY" theme="ec" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" thumbnail-alt="Eu map" variant="negative">
   <!---->
-  <div class="ecl-page-header ecl-page-header--image">
-    <div class="ecl-page-header-expandable">
-      <div class="ecl-page-header-expandable__header">
-        <div class="ecl-container ecl-page-header-expandable__container">
-          <div class="ecl-page-header-expandable__header-text">
-            this is the page header expandable header
-          </div>
-          <ecl-button aria-controls="panel-id-test" aria-expanded="false" data-ecl-page-header-expandable-toggle hide-label="" styleclass="ecl-page-header-expandable__toggle sc-ecl-page-header-ec" type="submit" variant="tertiary">
-            toggle panel's visibility
-            <ecl-icon flip="vertical" icon="corner-arrow" size="m" slot="icon-after" styleclass="sc-ecl-page-header-ec"></ecl-icon>
+  <ecl-breadcrumb ecl-script="" slot="breadcrumb" theme="ec" variant="negative">
+    <!---->
+    <nav class="ecl-breadcrumb ecl-page-header__breadcrumb sc-ecl-page-header-ec" data-ecl-breadcrumb>
+      <ol class="ecl-breadcrumb__container sc-ecl-page-header-ec">
+        <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
+          <ecl-link path="/example.html" style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link" variant="standalone">
+            Home
+          </ecl-link>
+          <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+        </li>
+        <li aria-hidden="true" class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-ellipsis data-ecl-breadcrumb-item="static">
+          <ecl-button aria-label="Click to expand" data-ecl-breadcrumb-ellipsis-button style-class="ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-ec" variant="ghost">
+            ...
           </ecl-button>
-        </div>
-      </div>
-      <div class="ecl-page-header-expandable__panel" hidden="" id="panel-id-test">
-        <div class="ecl-container ecl-page-header-expandable__container">
-          this is the page header expandable panel's content
-        </div>
-      </div>
-    </div>
-    <div aria-hidden="true" class="ecl-page-header__background-container">
-      <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" imgclass="ecl-page-header__background sc-ecl-page-header-ec" styleclass="ecl-page-header__picture-background sc-ecl-page-header-ec"></ecl-picture>
-    </div>
-    <div class="ecl-container">
-      <ecl-breadcrumb ecl-script="" slot="breadcrumb" theme="ec" variant="negative">
-        <!---->
-        <nav class="ecl-breadcrumb ecl-page-header__breadcrumb sc-ecl-page-header-ec" data-ecl-breadcrumb>
-          <ol class="ecl-breadcrumb__container sc-ecl-page-header-ec">
-            <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
-              <ecl-link path="/example.html" style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link" variant="standalone">
-                Home
-              </ecl-link>
-              <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-            </li>
-            <li aria-hidden="true" class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-ellipsis data-ecl-breadcrumb-item="static">
-              <ecl-button aria-label="Click to expand" data-ecl-breadcrumb-ellipsis-button style-class="ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-ec" variant="ghost">
-                ...
-              </ecl-button>
-              <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-            </li>
-            <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="expandable">
-              <ecl-link path="/example.html" style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link" variant="standalone">
-                About the European Commission
-              </ecl-link>
-              <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-            </li>
-            <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="expandable">
-              <ecl-link path="/example.html" style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link" variant="standalone">
-                Organisational structure
-              </ecl-link>
-              <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-            </li>
-            <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
-              <ecl-link path="/example.html" style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link" variant="standalone">
-                How the Commission is organised
-              </ecl-link>
-              <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-            </li>
-            <li aria-current="page" class="ecl-breadcrumb__current-page ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
-              News
-            </li>
-          </ol>
-        </nav>
-      </ecl-breadcrumb>
-      <div class="page-header__info">
-        <div class="ecl-page-header__meta">
-          <span class="ecl-page-header__meta-item">
-            Meta info | DD Month YYYY
-          </span>
-        </div>
-        <h1 class="ecl-page-header__title">
-          Page title
-        </h1>
-      </div>
-      <div class="ecl-page-header__description-container">
-        <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" imagealt="Eu map" imgclass="ecl-page-header__description-thumbnail sc-ecl-page-header-ec" style-class="ecl-page-header__picture-thumbnail sc-ecl-page-header-ec"></ecl-picture>
-        <p class="ecl-page-header__description">
-          Lorem ipsum dolor sit amet,
-          <a class="ecl-link" href="/example.html">
-            consectetur adipiscing elit
-          </a>
-          . Quisque nec ullamcorper mi. Morbi interdum fermentum tempus. Nam nec rhoncus risus,
-          <a class="ecl-link" href="/example.html">
-            eget dictum elit
-          </a>
-          . Vestibulum gravida tincidunt venenatis
-        </p>
-      </div>
-    </div>
-  </div>
+          <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+        </li>
+        <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="expandable">
+          <ecl-link path="/example.html" style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link" variant="standalone">
+            About the European Commission
+          </ecl-link>
+          <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+        </li>
+        <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="expandable">
+          <ecl-link path="/example.html" style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link" variant="standalone">
+            Organisational structure
+          </ecl-link>
+          <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+        </li>
+        <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
+          <ecl-link path="/example.html" style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link" variant="standalone">
+            How the Commission is organised
+          </ecl-link>
+          <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+        </li>
+        <li aria-current="page" class="ecl-breadcrumb__current-page ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
+          News
+        </li>
+      </ol>
+    </nav>
+  </ecl-breadcrumb>
+  Lorem ipsum dolor sit amet,
+  <a class="ecl-link" href="/example.html">
+    consectetur adipiscing elit
+  </a>
+  . Quisque nec ullamcorper mi. Morbi interdum fermentum tempus. Nam nec rhoncus risus,
+  <a class="ecl-link" href="/example.html">
+    eget dictum elit
+  </a>
+  . Vestibulum gravida tincidunt venenatis
+  <div class="ecl-page-header ecl-page-header--image ecl-page-header--negative"></div>
 </ecl-page-header>
 `;
