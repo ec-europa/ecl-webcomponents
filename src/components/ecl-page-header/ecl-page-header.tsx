@@ -20,9 +20,12 @@ export class EclPageHeader {
   @Prop({ mutable: true }) theme: string;
   @Prop() image: string ;
   @Prop() imageAlt: string;
-  @Prop() meta: string;
-  @Prop() expandableHeader: string;
-  @Prop() expandableContent: string;
+  @Prop() withMeta: boolean;
+  @Prop() fontSize: string = 'm';
+  @Prop() variant: string;
+  @Prop() descriptionPosition: string = 'top';
+  @Prop() expandable: boolean = false;
+  @Prop() expandableContent: boolean = false;
   @Prop() expandableLabel: string = `toggle panel's visibility`;
   @Prop() expandablePanelId: string = `ecl-page-header-expandable-panel-${Math.random().toString(36).slice(2, 10)}`;
   @Prop() headerTitle: string;
@@ -40,12 +43,20 @@ export class EclPageHeader {
       styleClasses.push('ecl-page-header--image');
     }
 
+    if (this.variant) {
+      styleClasses.push(`ecl-page-header--${this.variant}`);
+    }
+
     if (!this.headerTitle) {
       styleClasses.push('ecl-page-header__info--no-margin');
     }
 
-    if (this.overlay) {
-      styleClasses.push(`ecl-page-header--overlay-${this.overlay}`);
+    if (this.fontSize === 'l') {
+      styleClasses.push(`ecl-page-header--font-${this.fontSize}`);
+    }
+
+    if (this.descriptionPosition === 'bottom') {
+      styleClasses.push('ecl-page-header--descrirption-bottom');
     }
 
     return styleClasses.join(' ');
@@ -63,7 +74,13 @@ export class EclPageHeader {
         segment.classList.add(`sc-ecl-page-header-${this.theme}`);
       })
     }
-    if (this.eclScript && this.expandableHeader) {
+    if (this.withMeta) {
+      const items = this.el.querySelectorAll('ecl-page-header-meta-item');
+      items.forEach((item) => {
+        item.replaceWith(item.firstElementChild);
+      });
+    }
+    if (this.eclScript && this.expandable) {
       const src = getAssetPath('./build/scripts/ecl-page-header-expandable-vanilla.js');
       if (document.querySelector(`script[src="${src}"]`)) {
         document.querySelector(`script[src="${src}"]`).remove();
@@ -80,17 +97,61 @@ export class EclPageHeader {
     }
   };
 
+  getPicture() {
+    if (this.image) {
+      return <div class="ecl-page-header__background-container">
+                <ecl-picture
+                  styleClass={`ecl-page-header__picture-background sc-ecl-page-header-${this.theme}`}
+                  image={this.image}
+                  imgClass={`ecl-page-header__background sc-ecl-page-header-${this.theme}`}
+                >
+                  <slot name="sources"></slot>
+                </ecl-picture>
+              </div>;
+    }
+  }
+
+  getTitle() {
+    if (this.headerTitle) {
+      return <h1 class="ecl-page-header__title">{this.headerTitle}</h1>
+    }
+  }
+
+  getMeta() {
+    if (this.withMeta) {
+      return <ul class="ecl-page-header__meta">
+                <slot name="meta"></slot>
+             </ul>
+    }
+  }
+
+  getDescription() {
+    return <div class="ecl-page-header__description-container">
+          { this.thumbnail &&
+            <ecl-picture
+              style-class={`ecl-page-header__picture-thumbnail sc-ecl-page-header-${this.theme}`}
+              image={this.thumbnail}
+              imageAlt={this.thumbnailAlt}
+              imgClass={`ecl-page-header__description-thumbnail sc-ecl-page-header-${this.theme}`}
+            ></ecl-picture>
+          }
+            <p class="ecl-page-header__description">
+              <slot></slot>
+            </p>
+          </div>
+  }
+
   render() {
     return (
       <div
         class={this.getClass()}
       >
-      { this.expandableHeader &&
+      { this.expandable &&
         <div class="ecl-page-header-expandable">
           <div class="ecl-page-header-expandable__header">
             <div class="ecl-container ecl-page-header-expandable__container">
               <div class="ecl-page-header-expandable__header-text">
-                { this.expandableHeader }
+                <slot name="expandable-header"></slot>
               </div>
             { this.expandableContent &&
               <ecl-button 
@@ -122,51 +183,62 @@ export class EclPageHeader {
             hidden
           >
             <div class="ecl-container ecl-page-header-expandable__container">
-              { this.expandableContent }
+              <slot name="expandable-content"></slot>
             </div>
           </div>
         }
         </div>
       }
-      { this.image &&
-        <div class="ecl-page-header__background-container" aria-hidden="true">
-          <ecl-picture
-            styleClass={`ecl-page-header__picture-background sc-ecl-page-header-${this.theme}`}
-            image={this.image}
-            imgClass={`ecl-page-header__background sc-ecl-page-header-${this.theme}`}
-          >
-            <slot name="sources"></slot>
-          </ecl-picture>
+
+      { this.variant === 'news' &&
+        <div class="ecl-container ecl-page-header__container">
+          <slot name="breadcrumb"></slot>
+          {this.getTitle()}
+          {this.getMeta()}
+          {this.getPicture()}
         </div>
       }
-        <div class="ecl-container">
-          <slot name="breadcrumb"></slot>
-          <div class="page-header__info">
-          { this.meta &&
-            <div class="ecl-page-header__meta">
-              <span class="ecl-page-header__meta-item">{this.meta}</span>
-            </div>
-          }
-          { this.headerTitle &&
-            <h1 class="ecl-page-header__title">{this.headerTitle}</h1>
-          }
-          </div>
-          <div class="ecl-page-header__description-container">
-          { this.thumbnail &&
-            <ecl-picture
-              style-class={`ecl-page-header__picture-thumbnail sc-ecl-page-header-${this.theme}`}
-              image={this.thumbnail}
-              imageAlt={this.thumbnailAlt}
-              imgClass={`ecl-page-header__description-thumbnail sc-ecl-page-header-${this.theme}`}
-            ></ecl-picture>
-          }
-            <p class="ecl-page-header__description">
-              <slot></slot>
-            </p>
+      { this.variant === 'news' &&
+        <div class="ecl-page-header__section-description">
+          <div class="ecl-container">
+            {this.getDescription()}
           </div>
         </div>
-      </div>
-    )
-  };
-}
+      }
 
+      { this.variant === '50-50' &&
+        <div class="ecl-page-header__container">
+          {this.getPicture()}
+          <div class="ecl-page-header__section-info ecl-container">
+            <slot name="breadcrumb"></slot>
+            <div class="ecl-page-header__content-info">
+              {this.getTitle()}
+              <div class="ecl-page-header__description-info">
+                {this.getDescription()}
+              </div>
+            </div>
+            {this.getMeta()}
+          </div>
+        </div>
+      }
+
+      { this.variant === '50-50' &&
+        <div class="ecl-page-header__description-info">
+          {this.getDescription()}
+        </div>
+      }
+
+      { !this.variant ? this.getPicture() : '' }
+
+      { !this.variant &&
+        <div class="ecl-container ecl-page-header__container">
+          <slot name="breadcrumb"></slot>
+          {this.getTitle()}
+          {this.getDescription()}
+          {this.getMeta()}
+        </div>
+      }
+      </div>
+    );
+  }
+}

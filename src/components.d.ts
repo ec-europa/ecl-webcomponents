@@ -1257,11 +1257,21 @@ export namespace Components {
     }
     interface EclPageHeader {
         /**
+          * @default 'top'
+         */
+        "descriptionPosition": string;
+        /**
           * @default false
          */
         "eclScript": boolean;
-        "expandableContent": string;
-        "expandableHeader": string;
+        /**
+          * @default false
+         */
+        "expandable": boolean;
+        /**
+          * @default false
+         */
+        "expandableContent": boolean;
         /**
           * @default `toggle panel's visibility`
          */
@@ -1270,10 +1280,13 @@ export namespace Components {
           * @default `ecl-page-header-expandable-panel-${Math.random().toString(36).slice(2, 10)}`
          */
         "expandablePanelId": string;
+        /**
+          * @default 'm'
+         */
+        "fontSize": string;
         "headerTitle": string;
         "image": string;
         "imageAlt": string;
-        "meta": string;
         "overlay": string;
         /**
           * @default ''
@@ -1282,6 +1295,19 @@ export namespace Components {
         "theme": string;
         "thumbnail": string;
         "thumbnailAlt": string;
+        "variant": string;
+        "withMeta": boolean;
+    }
+    interface EclPageHeaderMetaItem {
+        /**
+          * @default ''
+         */
+        "icon": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
     }
     interface EclPagination {
         /**
@@ -2258,6 +2284,12 @@ declare global {
         prototype: HTMLEclPageHeaderElement;
         new (): HTMLEclPageHeaderElement;
     };
+    interface HTMLEclPageHeaderMetaItemElement extends Components.EclPageHeaderMetaItem, HTMLStencilElement {
+    }
+    var HTMLEclPageHeaderMetaItemElement: {
+        prototype: HTMLEclPageHeaderMetaItemElement;
+        new (): HTMLEclPageHeaderMetaItemElement;
+    };
     interface HTMLEclPaginationElement extends Components.EclPagination, HTMLStencilElement {
     }
     var HTMLEclPaginationElement: {
@@ -2509,6 +2541,7 @@ declare global {
         "ecl-news-ticker-item": HTMLEclNewsTickerItemElement;
         "ecl-notification": HTMLEclNotificationElement;
         "ecl-page-header": HTMLEclPageHeaderElement;
+        "ecl-page-header-meta-item": HTMLEclPageHeaderMetaItemElement;
         "ecl-pagination": HTMLEclPaginationElement;
         "ecl-pagination-item": HTMLEclPaginationItemElement;
         "ecl-picture": HTMLEclPictureElement;
@@ -3792,11 +3825,21 @@ declare namespace LocalJSX {
     }
     interface EclPageHeader {
         /**
+          * @default 'top'
+         */
+        "descriptionPosition"?: string;
+        /**
           * @default false
          */
         "eclScript"?: boolean;
-        "expandableContent"?: string;
-        "expandableHeader"?: string;
+        /**
+          * @default false
+         */
+        "expandable"?: boolean;
+        /**
+          * @default false
+         */
+        "expandableContent"?: boolean;
         /**
           * @default `toggle panel's visibility`
          */
@@ -3805,10 +3848,13 @@ declare namespace LocalJSX {
           * @default `ecl-page-header-expandable-panel-${Math.random().toString(36).slice(2, 10)}`
          */
         "expandablePanelId"?: string;
+        /**
+          * @default 'm'
+         */
+        "fontSize"?: string;
         "headerTitle"?: string;
         "image"?: string;
         "imageAlt"?: string;
-        "meta"?: string;
         "overlay"?: string;
         /**
           * @default ''
@@ -3817,6 +3863,19 @@ declare namespace LocalJSX {
         "theme"?: string;
         "thumbnail"?: string;
         "thumbnailAlt"?: string;
+        "variant"?: string;
+        "withMeta"?: boolean;
+    }
+    interface EclPageHeaderMetaItem {
+        /**
+          * @default ''
+         */
+        "icon"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
     }
     interface EclPagination {
         /**
@@ -4461,6 +4520,7 @@ declare namespace LocalJSX {
         "ecl-news-ticker-item": EclNewsTickerItem;
         "ecl-notification": EclNotification;
         "ecl-page-header": EclPageHeader;
+        "ecl-page-header-meta-item": EclPageHeaderMetaItem;
         "ecl-pagination": EclPagination;
         "ecl-pagination-item": EclPaginationItem;
         "ecl-picture": EclPicture;
@@ -4544,6 +4604,7 @@ declare module "@stencil/core" {
             "ecl-news-ticker-item": LocalJSX.EclNewsTickerItem & JSXBase.HTMLAttributes<HTMLEclNewsTickerItemElement>;
             "ecl-notification": LocalJSX.EclNotification & JSXBase.HTMLAttributes<HTMLEclNotificationElement>;
             "ecl-page-header": LocalJSX.EclPageHeader & JSXBase.HTMLAttributes<HTMLEclPageHeaderElement>;
+            "ecl-page-header-meta-item": LocalJSX.EclPageHeaderMetaItem & JSXBase.HTMLAttributes<HTMLEclPageHeaderMetaItemElement>;
             "ecl-pagination": LocalJSX.EclPagination & JSXBase.HTMLAttributes<HTMLEclPaginationElement>;
             "ecl-pagination-item": LocalJSX.EclPaginationItem & JSXBase.HTMLAttributes<HTMLEclPaginationItemElement>;
             "ecl-picture": LocalJSX.EclPicture & JSXBase.HTMLAttributes<HTMLEclPictureElement>;
