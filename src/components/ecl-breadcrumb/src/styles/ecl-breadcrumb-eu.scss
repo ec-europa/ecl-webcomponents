@@ -16,19 +16,19 @@
 );
 
 .ecl-breadcrumb__segment .ecl-breadcrumb__icon {
-  margin-top: -8px;
-}
-
-.ecl-breadcrumb__current-page {
-  margin-top: 4px;
+  margin-top: -4px;
 }
 
 .ecl-breadcrumb__segment:first-child {
-  margin-top: 0;
+  margin-top: 0.7rem;
 
   .ecl-icon {
     margin-top: 0;
   }
+}
+
+.ecl-breadcrumb__current-page {
+  margin-top: 0.7rem;
 }
 
 .ecl-breadcrumb__ellipsis {

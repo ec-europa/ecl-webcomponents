@@ -19,3 +19,14 @@
     color: var(--c-d);
   }
 }
+
+.ecl-page-header--50-50 {
+  .ecl-page-header__background-container {
+    display: flex;
+    flex-basis: 50%;
+  }
+
+  ecl-picture {
+    display: initial;
+  }
+}

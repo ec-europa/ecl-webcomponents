@@ -5,6 +5,11 @@ const getArgTypes = () => {
     variant: {
       type: { name: 'select' },
       options: ['', 'news', '50-50'],
+      labels: {
+        '': 'default',
+        news: 'news',
+        '50-50': '50-50',
+      },
       description: 'Variant (news or 50-50)',
     },
     withMeta: {
