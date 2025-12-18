@@ -7,20 +7,12 @@
 @use '@ecl/mixins-typography/mixins' as typographyMixins with (
   $typography: var.$typography
 );
-@use '@ecl/text-input/text-input' with (
-  $theme: theme.$theme,
-  $text-input: var.$text-input
-);
 @use '@ecl/datepicker/datepicker' with (
   $theme: theme.$theme,
-  $datepicker: var.$datepicker
+  $datepicker: var.$datepicker,
+  $text-input: var.$text-input
 );
 
 .ecl-form-group .ecl-datepicker {
   margin-top: 0.75rem;
-}
-
-.ecl-datepicker__icon {
-  margin-inline-end: calc(0.75rem - 1px) !important;
-  margin-top: calc(0.75rem - 1px) !important;
 }

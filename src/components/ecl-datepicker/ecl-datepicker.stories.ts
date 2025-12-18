@@ -4,21 +4,20 @@ export default {
 
 const getArgs = () => {
   return {
-    inputId: 'ecl-datepicker',
-    defaultValue: '11-10-2021',
+    inputId: 'ecl-datepicker-demo',
+    defaultValue: '2025-10-11',
     required: true,
     disabled: false,
     invalid: false,
     hideLabel: false,
     label: 'Label',
     placeholder: 'DD-MM-YYYY',
-    dateFormat: 'DD-MM-YYYY',
-    yearRange: 40,
   };
 }
 
 const getArgTypes = () => {
   return {
+    color_mode: { table: { disable: true } },
     disabled: {
       type: { name: 'boolean' },
       description: 'Disabled input',
@@ -56,7 +55,7 @@ const getArgTypes = () => {
       },
     },
     inputId: {
-      name: 'Input id',
+      name: 'input-id',
       type: { name: 'string' },
       description: 'Input id',
       table: {
@@ -71,24 +70,9 @@ const getArgTypes = () => {
       },
     },
     defaultValue: {
-      name: 'value',
+      name: 'default-value',
       type: { name: 'string' },
       description: 'Default value of the input',
-      table: {
-        category: 'Content',
-      },
-    },
-    dateFormat: {
-      name: 'format for the date',
-      type: { name: 'string' },
-      description: 'You can use any valid date format',
-      table: {
-        category: 'Content',
-      },
-    },
-    yearRange: {
-      name: 'range of years to be considered',
-      type: { name: 'number' },
       table: {
         category: 'Content',
       },
@@ -106,20 +90,17 @@ const Template = args =>
     disabled=${args.disabled}
     hide-label=${args.hideLabel}
     invalid-text="This is the error message"
-    theme="${args.theme}"
     aria-label-optional="Aria label optional"
     aria-label-required="Aria label required"
   >
     <ecl-datepicker
-      theme="${args.theme}"
       required=${args.required}
       disabled=${args.disabled}
       invalid=${args.invalid}
       input-id="${args.inputId}"
-      default-value="${args.defaultValue}"
-      placeholder="${args.placeholder}"
-      date-format="${args.dateFormat}"
-      year-range="${args.yearRange}"
+      data-value="${args.defaultValue}"
+      required=${args.required}
+      data-placeholder="${args.placeholder}"
     >
     </ecl-datepicker>
   </ecl-form-group>`;

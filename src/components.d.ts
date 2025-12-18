@@ -339,15 +339,15 @@ export namespace Components {
         "year": string;
     }
     interface EclDatepicker {
-        /**
-          * @default 'DD-MM-YYYY'
-         */
-        "dateFormat": string;
         "defaultValue": string;
         /**
           * @default false
          */
         "disabled": boolean;
+        /**
+          * @default 1
+         */
+        "firstDayOfTheWeek": number;
         /**
           * @default `ecl-datepicker-${Math.random().toString(36).slice(2, 10)}`
          */
@@ -356,6 +356,17 @@ export namespace Components {
           * @default false
          */
         "invalid": boolean;
+        /**
+          * @default ''
+         */
+        "max": string;
+        /**
+          * @default ''
+         */
+        "min": string;
+        /**
+          * @default this.inputId
+         */
         "name": string;
         /**
           * @default 'DD-MM-YYYY'
@@ -367,11 +378,10 @@ export namespace Components {
         "required": boolean;
         "styleClass": string;
         "theme": string;
-        "type": string;
         /**
-          * @default 40
+          * @default 'm'
          */
-        "yearRange": number;
+        "width": string;
     }
     interface EclDescriptionList {
         /**
@@ -2901,15 +2911,15 @@ declare namespace LocalJSX {
         "year"?: string;
     }
     interface EclDatepicker {
-        /**
-          * @default 'DD-MM-YYYY'
-         */
-        "dateFormat"?: string;
         "defaultValue"?: string;
         /**
           * @default false
          */
         "disabled"?: boolean;
+        /**
+          * @default 1
+         */
+        "firstDayOfTheWeek"?: number;
         /**
           * @default `ecl-datepicker-${Math.random().toString(36).slice(2, 10)}`
          */
@@ -2918,6 +2928,17 @@ declare namespace LocalJSX {
           * @default false
          */
         "invalid"?: boolean;
+        /**
+          * @default ''
+         */
+        "max"?: string;
+        /**
+          * @default ''
+         */
+        "min"?: string;
+        /**
+          * @default this.inputId
+         */
         "name"?: string;
         "onBlurred"?: (event: EclDatepickerCustomEvent<void>) => void;
         "onFocused"?: (event: EclDatepickerCustomEvent<void>) => void;
@@ -2932,11 +2953,10 @@ declare namespace LocalJSX {
         "required"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
-        "type"?: string;
         /**
-          * @default 40
+          * @default 'm'
          */
-        "yearRange"?: number;
+        "width"?: string;
     }
     interface EclDescriptionList {
         /**
