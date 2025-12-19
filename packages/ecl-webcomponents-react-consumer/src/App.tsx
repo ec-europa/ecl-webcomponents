@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { EclSiteHeader, EclDivider, EclButton, EclText, EclSocialMediaFollow, EclSocialMediaFollowItem, EclSpacing, EclFooterEc, EclGallery, EclGalleryItem, EclFeaturedItem, EclFactFigures, EclFactFiguresItem, EclListIllustration, EclInpageNavigation, EclInpageNavigationItem, EclListIllustrationItem, EclPageHeader, EclGrid, EclBreadcrumb, EclBreadcrumbItem, EclFooterEu, EclFooterItem, EclLanguageItem, EclMenu, EclMenuItem, defineCustomElements } from '@ecl/ecl-webcomponents-react';
+import { EclSiteHeader, EclDivider, EclButton, EclText, EclSocialMediaFollow, EclPageHeaderMetaItem, EclSocialMediaFollowItem, EclSpacing, EclFooterEc, EclGallery, EclGalleryItem, EclFeaturedItem, EclFactFigures, EclFactFiguresItem, EclListIllustration, EclInpageNavigation, EclInpageNavigationItem, EclListIllustrationItem, EclPageHeader, EclGrid, EclBreadcrumb, EclBreadcrumbItem, EclFooterEu, EclFooterItem, EclLanguageItem, EclMenu, EclMenuItem, defineCustomElements } from '@ecl/ecl-webcomponents-react';
 
 defineCustomElements();
 
@@ -53,7 +53,7 @@ function App() {
         logo-alt="European Commission"
         logo-title="European commission"
         language-aria-label="Choose language"
-        site-name="ECL Webcomponents in an angular app"
+        site-name="ECL Webcomponents in a react app"
       >
         <EclLanguageItem slot="eu-category" path="/example.html" lang-code="bg" language="български"></EclLanguageItem>
         <EclLanguageItem slot="eu-category" path="/example.html" lang-code="es" language="español"></EclLanguageItem>
@@ -126,7 +126,7 @@ function App() {
           </EclMenuItem>
         </EclMenu>
       </EclSiteHeader>
-      <EclPageHeader header-title="Page title" meta="Meta info | DD Month YYYY" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
+      <EclPageHeader with-meta header-title="Page title" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
         <EclBreadcrumb slot="breadcrumb" ecl-script>
           <EclBreadcrumbItem path="/example.html"> Home </EclBreadcrumbItem>
           <EclBreadcrumbItem ellipsis button-aria-label="Click to expand"> </EclBreadcrumbItem>
@@ -135,6 +135,33 @@ function App() {
           <EclBreadcrumbItem path="/example.html"> How the Commission is organised </EclBreadcrumbItem>
           <EclBreadcrumbItem current-page> News </EclBreadcrumbItem>
         </EclBreadcrumb>
+        <EclPageHeaderMetaItem
+          slot="meta"
+        >
+          News article
+        </EclPageHeaderMetaItem>
+        <EclPageHeaderMetaItem
+          slot="meta"
+        >
+          10 March 2025
+        </EclPageHeaderMetaItem>             
+        <EclPageHeaderMetaItem
+          icon="location"
+          slot="meta"
+        >
+          Brussels
+        </EclPageHeaderMetaItem>
+        <EclPageHeaderMetaItem
+          icon="clock"
+          slot="meta"
+        >
+          1 minute read
+        </EclPageHeaderMetaItem>
+        <EclPageHeaderMetaItem
+          slot="meta"
+        >
+          Research center
+        </EclPageHeaderMetaItem>
         Lorem ipsum dolor sit amet, <a className="ecl-link" href="/example.html">consectetur adipiscing elit</a>. Quisque nec ullamcorper mi. Morbi interdum fermentum tempus. Nam nec rhoncus
         risus, <a className="ecl-link" href="/example.html">eget dictum elit</a>. Vestibulum gravida tincidunt venenatis.
       </EclPageHeader>

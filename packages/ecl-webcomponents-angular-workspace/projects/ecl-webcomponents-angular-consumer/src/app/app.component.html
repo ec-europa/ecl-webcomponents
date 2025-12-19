@@ -97,7 +97,12 @@
     </ecl-menu-item>
   </ecl-menu>
 </ecl-site-header>
-<ecl-page-header variant="core" header-title="Page title" meta="Meta info | DD Month YYYY" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
+<ecl-page-header with-meta header-title="Page title" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
+  <ecl-page-header-meta-item slot="meta"> News article </ecl-page-header-meta-item>
+  <ecl-page-header-meta-item slot="meta"> 10 March 2025 </ecl-page-header-meta-item>
+  <ecl-page-header-meta-item icon="location" slot="meta"> Brussels </ecl-page-header-meta-item>
+  <ecl-page-header-meta-item icon="clock" slot="meta"> 1 minute read </ecl-page-header-meta-item>
+  <ecl-page-header-meta-item slot="meta"> Research center </ecl-page-header-meta-item>
   <ecl-breadcrumb slot="breadcrumb" ecl-script>
     <ecl-breadcrumb-item path="/example.html"> Home </ecl-breadcrumb-item>
     <ecl-breadcrumb-item ellipsis button-aria-label="Click to expand"> </ecl-breadcrumb-item>
