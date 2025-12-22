@@ -68,4 +68,41 @@ describe('ecl-fact-figures', () => {
     
     expect(page.root).toMatchSnapshot();
   });
+
+  it('renders correctly without a value and with a title ', async () => {
+    const page = await newSpecPage({
+      components: [EclFactFigures, EclFactFiguresItem, EclIcon, EclLink],
+      html: `<ecl-fact-figures
+        columns="4"
+        view-all-link-path="/example"
+        view-all-link-label="View all"
+        font-size="m"
+        icon-size="2xl"
+      >
+        <ecl-fact-figures-item
+          item-title="Lorem ipsum"
+          icon="infographic"
+        >
+          Nunc condimentum sapien ut nibh finibus suscipit vitae at justo. Morbi quis odio faucibus, commodo tortor id, elementum libero.
+        </ecl-fact-figures-item>
+
+        <ecl-fact-figures-item
+          item-title="Sed hendrerit"
+          icon="spreadsheet"
+          theme="ec"
+        >
+          Turpis varius congue venenatis, erat dui feugiat felis.
+        </ecl-fact-figures-item>
+
+        <ecl-fact-figures-item
+          item-title="Donec suscipit interdum augue, ac dapibus eros finibus"
+          icon="growth"
+        >
+          Cras vestibulum efficitur mi, quis porta tellus rutrum ut. Quisque at pulvinar sem.
+        </ecl-fact-figures-item>
+      </ecl-fact-figures>`,
+    });
+    
+    expect(page.root).toMatchSnapshot();
+  });
 });
