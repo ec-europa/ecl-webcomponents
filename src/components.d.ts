@@ -503,15 +503,14 @@ export namespace Components {
         "value": string;
     }
     interface EclFeaturedItem {
+        /**
+          * @default ''
+         */
         "colorMode": string;
         /**
           * @default 'ecl-featured-item__container'
          */
         "defaultContainerClass": string;
-        /**
-          * @default false
-         */
-        "eclScript": boolean;
         /**
           * @default `ecl-featured-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
          */
@@ -520,6 +519,9 @@ export namespace Components {
         "itemTitle": string;
         "linkLabel": string;
         "linkPath": string;
+        "linkType": string;
+        "mediaAnchor": string;
+        "mediaBehavior": string;
         "mediaCaption": string;
         /**
           * @default 'left'
@@ -531,6 +533,10 @@ export namespace Components {
           * @default 'default'
          */
         "variant": string;
+        /**
+          * @default 'top'
+         */
+        "verticalAlignment": string;
     }
     interface EclFile {
         "ariaLabel": string;
@@ -973,6 +979,10 @@ export namespace Components {
         /**
           * @default false
          */
+        "branded": boolean;
+        /**
+          * @default false
+         */
         "download": boolean;
         /**
           * @default false
@@ -1105,6 +1115,10 @@ export namespace Components {
         "hasCaption": boolean;
         "image": string;
         "imageAlt": string;
+        /**
+          * @default 'center'
+         */
+        "imageAnchor": string;
         /**
           * @default ''
          */
@@ -1345,6 +1359,10 @@ export namespace Components {
     interface EclPicture {
         "image": string;
         "imageAlt": string;
+        /**
+          * @default 'center'
+         */
+        "imageAnchor": string;
         "imgClass": string;
         /**
           * @default false
@@ -3078,15 +3096,14 @@ declare namespace LocalJSX {
         "value"?: string;
     }
     interface EclFeaturedItem {
+        /**
+          * @default ''
+         */
         "colorMode"?: string;
         /**
           * @default 'ecl-featured-item__container'
          */
         "defaultContainerClass"?: string;
-        /**
-          * @default false
-         */
-        "eclScript"?: boolean;
         /**
           * @default `ecl-featured-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
          */
@@ -3095,6 +3112,9 @@ declare namespace LocalJSX {
         "itemTitle"?: string;
         "linkLabel"?: string;
         "linkPath"?: string;
+        "linkType"?: string;
+        "mediaAnchor"?: string;
+        "mediaBehavior"?: string;
         "mediaCaption"?: string;
         /**
           * @default 'left'
@@ -3106,6 +3126,10 @@ declare namespace LocalJSX {
           * @default 'default'
          */
         "variant"?: string;
+        /**
+          * @default 'top'
+         */
+        "verticalAlignment"?: string;
     }
     interface EclFile {
         "ariaLabel"?: string;
@@ -3551,6 +3575,10 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
+        "branded"?: boolean;
+        /**
+          * @default false
+         */
         "download"?: boolean;
         /**
           * @default false
@@ -3683,6 +3711,10 @@ declare namespace LocalJSX {
         "hasCaption"?: boolean;
         "image"?: string;
         "imageAlt"?: string;
+        /**
+          * @default 'center'
+         */
+        "imageAnchor"?: string;
         /**
           * @default ''
          */
@@ -3923,6 +3955,10 @@ declare namespace LocalJSX {
     interface EclPicture {
         "image"?: string;
         "imageAlt"?: string;
+        /**
+          * @default 'center'
+         */
+        "imageAnchor"?: string;
         "imgClass"?: string;
         /**
           * @default false

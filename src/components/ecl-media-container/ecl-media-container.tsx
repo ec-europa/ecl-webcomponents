@@ -18,6 +18,7 @@ export class EclMediaContainer {
   @Prop() styleClass: string;
   @Prop() imageAlt: string;
   @Prop() image: string;
+  @Prop() imageAnchor: string = 'center';
   @Prop() fullWidth: boolean = false;
   @Prop() sources: string;
   @Prop() tracks: string;
@@ -115,6 +116,7 @@ export class EclMediaContainer {
             imgClass={`ecl-media-container__media sc-ecl-media-container-${this.theme}`}
             image={this.image}
             imageAlt={this.imageAlt}
+            imageAnchor={this.imageAnchor}
           >
             <slot name="sources"></slot>
           </ecl-picture>

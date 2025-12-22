@@ -20,6 +20,7 @@ export class EclLink {
   @Prop() noVisited: boolean = false;
   @Prop() variant: string = '';
   @Prop() titleAttr: string;
+  @Prop() branded: boolean = false;
   @Prop() external: boolean = false;
   @Prop() hideLabel: boolean = false;
   @Prop() ariaLabel: string;
@@ -42,6 +43,10 @@ export class EclLink {
 
     if (this.inverted) {
       styleClasses.push('ecl-link--inverted');
+    }
+
+    if (this.branded) {
+      styleClasses.push('ecl-link--brand');
     }
 
     if (this.hideLabel) {

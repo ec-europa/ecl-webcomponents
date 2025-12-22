@@ -7,15 +7,16 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type      | Default     |
-| ------------ | ------------- | ----------- | --------- | ----------- |
-| `image`      | `image`       |             | `string`  | `undefined` |
-| `imageAlt`   | `image-alt`   |             | `string`  | `undefined` |
-| `imgClass`   | `img-class`   |             | `string`  | `undefined` |
-| `lazy`       | `lazy`        |             | `boolean` | `false`     |
-| `styleClass` | `style-class` |             | `string`  | `''`        |
-| `theme`      | `theme`       |             | `string`  | `'ec'`      |
-| `zoom`       | `zoom`        |             | `boolean` | `false`     |
+| Property      | Attribute      | Description | Type      | Default     |
+| ------------- | -------------- | ----------- | --------- | ----------- |
+| `image`       | `image`        |             | `string`  | `undefined` |
+| `imageAlt`    | `image-alt`    |             | `string`  | `undefined` |
+| `imageAnchor` | `image-anchor` |             | `string`  | `'center'`  |
+| `imgClass`    | `img-class`    |             | `string`  | `undefined` |
+| `lazy`        | `lazy`         |             | `boolean` | `false`     |
+| `styleClass`  | `style-class`  |             | `string`  | `''`        |
+| `theme`       | `theme`        |             | `string`  | `'ec'`      |
+| `zoom`        | `zoom`         |             | `boolean` | `false`     |
 
 
 ## Dependencies

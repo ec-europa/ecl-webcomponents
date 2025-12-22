@@ -16,6 +16,7 @@ export class EclPicture {
   @Prop() image: string;
   @Prop() imgClass: string;
   @Prop() imageAlt: string;
+  @Prop() imageAnchor: string = 'center';
   @Prop() lazy: boolean = false;
   @Prop() zoom: boolean = false;
 
@@ -47,6 +48,12 @@ export class EclPicture {
 
     if (this.lazy) {
       attrs['loading'] = 'lazy';
+    }
+
+    if (this.imageAnchor && this.imageAnchor !== 'center') {
+      attrs['style'] = {
+        '--ecl-image-anchor': this.imageAnchor,
+      };
     }
 
     return attrs;

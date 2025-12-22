@@ -16,6 +16,7 @@
 | `hasCaption`    | `has-caption`     |             | `boolean` | `false`     |
 | `image`         | `image`           |             | `string`  | `undefined` |
 | `imageAlt`      | `image-alt`       |             | `string`  | `undefined` |
+| `imageAnchor`   | `image-anchor`    |             | `string`  | `'center'`  |
 | `ratio`         | `ratio`           |             | `string`  | `''`        |
 | `sources`       | `sources`         |             | `string`  | `undefined` |
 | `srPause`       | `sr-pause`        |             | `string`  | `undefined` |

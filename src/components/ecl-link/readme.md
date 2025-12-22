@@ -10,6 +10,7 @@
 | Property         | Attribute         | Description | Type      | Default     |
 | ---------------- | ----------------- | ----------- | --------- | ----------- |
 | `ariaLabel`      | `aria-label`      |             | `string`  | `undefined` |
+| `branded`        | `branded`         |             | `boolean` | `false`     |
 | `download`       | `download`        |             | `boolean` | `false`     |
 | `external`       | `external`        |             | `boolean` | `false`     |
 | `hideLabel`      | `hide-label`      |             | `boolean` | `false`     |

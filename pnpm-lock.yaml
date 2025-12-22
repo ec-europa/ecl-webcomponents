@@ -868,23 +868,26 @@ importers:
   src/components/ecl-featured-item:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/featured-item':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/grid':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
+      '@ecl/media-container':
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1191,38 +1194,38 @@ importers:
         version: link:../ecl-indicator
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/grid':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/icon':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/indicator':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/link':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/resources-icons':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1467,11 +1470,11 @@ importers:
   src/components/ecl-picture:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/picture':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -3213,6 +3216,9 @@ packages:
 
   '@ecl/resources-icons@5.0.0-alpha.20':
     resolution: {integrity: sha512-mj9w3SWomxMpRKEn3qvRWUBd0bmyoZrWRNKHIA6LMyAQ1jbAzUtzfn/rtsqHVYmJLY+x/R0JhNPZp3+ZopjZ8w==}
+
+  '@ecl/resources-icons@5.0.0-alpha.22':
+    resolution: {integrity: sha512-zUzERISF9+ZMiap+Ahop+w7qQv2RFVyLz4IEfdU3pkjZWHT84oB4Lib+2EDzVgbO3QRDuBsgz8RNlxkflbfHFA==}
 
   '@ecl/search-form@5.0.0-alpha.20':
     resolution: {integrity: sha512-unjo/W7fKpJqvy7cVWAiclXh2lG0ZvwmBobWIrFY7kew8KnWrTD3elRNxhNKEtE0COqsQk8p1txygcCdevyTmQ==}
@@ -15367,6 +15373,8 @@ snapshots:
   '@ecl/resources-eu-logo@5.0.0-alpha.20': {}
 
   '@ecl/resources-icons@5.0.0-alpha.20': {}
+
+  '@ecl/resources-icons@5.0.0-alpha.22': {}
 
   '@ecl/search-form@5.0.0-alpha.20(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))':
     dependencies:
