@@ -5,7 +5,6 @@ exports[`ecl-inpage-navigation renders 1`] = `
   <!---->
   <nav aria-labelledby="inpage-id" class="ecl-inpage-navigation" data-ecl-inpage-navigation>
     <div class="ecl-inpage-navigation__title" id="inpage-id">
-      <ecl-icon icon="list" size="s" style-class="ecl-inpage-navigation__title-icon sc-ecl-inpage-navigation-ec"></ecl-icon>
       Page contents
     </div>
     <div class="ecl-inpage-navigation__body">

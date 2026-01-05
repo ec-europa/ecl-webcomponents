@@ -81,11 +81,6 @@ export class EclInpageNavigation {
           class="ecl-inpage-navigation__title"
           id={this.inpageId}
         >
-          <ecl-icon
-            icon="list"
-            size="s"
-            style-class={`ecl-inpage-navigation__title-icon sc-ecl-inpage-navigation-${this.theme}`}>
-          </ecl-icon>
           {this.inpageTitle}
         </div>
         <div class="ecl-inpage-navigation__body">
