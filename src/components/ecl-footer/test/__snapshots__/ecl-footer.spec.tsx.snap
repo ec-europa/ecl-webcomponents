@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-footer EC renders 1`] = `
-<ecl-footer-ec description="This site is managed by:" logo-alt="European Commission" logo-lang-code="en" logo-link="/example.html" logo-title="European Commission" site-name="European Commission website" variant="core">
+<ecl-footer-ec description="This site is managed by:" description-name="[name of the manager of the site]" logo-alt="European Commission" logo-lang-code="en" logo-link="/example.html" logo-title="European Commission" site-name="European Commission website" variant="core">
   <!---->
   <ecl-footer-item hidden="" link="/example.html" theme="ec">
     <!---->
@@ -33,6 +33,9 @@ exports[`ecl-footer EC renders 1`] = `
             </ecl-link>
             <div class="ecl-site-footer__description">
               This site is managed by:
+              <span class="ecl-site-footer__description-name">
+                [name of the manager of the site]
+              </span>
             </div>
           </div>
           <div class="ecl-site-footer__section ecl-site-footer__section--core">
@@ -194,14 +197,8 @@ exports[`ecl-footer EC renders 1`] = `
 `;
 
 exports[`ecl-footer EU renders 1`] = `
-<ecl-footer-eu description="This site is managed by the Directorate-General for Communication" logo-alt="European Union" logo-lang-code="en" logo-link="/example.html" logo-title="European union" variant="core">
+<ecl-footer-eu description="This site is managed by" description-name="the Directorate-General for Communication" logo-alt="European Union" logo-lang-code="en" logo-link="/example.html" logo-title="European union" variant="core">
   <!---->
-  <ecl-text hidden="" slot="description" tag="p">
-    <!---->
-    <p class="ecl-u-type-m">
-      This site is managed by: [name of the manager of the site]
-    </p>
-  </ecl-text>
   <footer class="ecl-site-footer ecl-site-footer--core">
     <div class="ecl-site-footer__main">
       <div class="ecl-container ecl-site-footer__container">
@@ -219,7 +216,7 @@ exports[`ecl-footer EU renders 1`] = `
                 </a>
               </ecl-link>
               <div class="ecl-site-footer__description">
-                This site is managed by the Directorate-General for Communication
+                This site is managed by
               </div>
             </div>
           </div>

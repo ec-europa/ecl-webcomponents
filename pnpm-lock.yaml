@@ -946,32 +946,32 @@ importers:
   src/components/ecl-footer:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/link':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/resources-ec-logo':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/resources-eu-logo':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/site-footer':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.20
-        version: 5.0.0-alpha.20
+        specifier: 5.0.0-alpha.22
+        version: 5.0.0-alpha.22
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -3211,8 +3211,14 @@ packages:
   '@ecl/resources-ec-logo@5.0.0-alpha.20':
     resolution: {integrity: sha512-KZpiKcMmnV1DDD8rQhkxaFu3Xl2zb5qSeUZ8gnCqXclupnhvfB8hToQtQxL7461C2P+ju/JYiPQpPsr5OXOGlg==}
 
+  '@ecl/resources-ec-logo@5.0.0-alpha.22':
+    resolution: {integrity: sha512-Uvqrx2sFQ0340SeCAJycWivgYxER2usps04/SVnERIpbYbIi25CFDUwxROvmixnwEk/2G3py5kcAYU4dSBACpQ==}
+
   '@ecl/resources-eu-logo@5.0.0-alpha.20':
     resolution: {integrity: sha512-qiDM3WtbT6+6f+8b+Gwtev+ei5rjA+GLpLOycGYk4bFumoKHECg7B+36mmO/8418kHiWLpoYGV5jhGHS43FRGQ==}
+
+  '@ecl/resources-eu-logo@5.0.0-alpha.22':
+    resolution: {integrity: sha512-0SbqLcZjQOM8ekyw7iNZSOUQKMCanRIYpSbDn/RkX/ltvfb9vK0WlVHP+svabrxAZ8AfB2H+qMzM7SmqNuFIwA==}
 
   '@ecl/resources-icons@5.0.0-alpha.20':
     resolution: {integrity: sha512-mj9w3SWomxMpRKEn3qvRWUBd0bmyoZrWRNKHIA6LMyAQ1jbAzUtzfn/rtsqHVYmJLY+x/R0JhNPZp3+ZopjZ8w==}
@@ -15370,7 +15376,11 @@ snapshots:
 
   '@ecl/resources-ec-logo@5.0.0-alpha.20': {}
 
+  '@ecl/resources-ec-logo@5.0.0-alpha.22': {}
+
   '@ecl/resources-eu-logo@5.0.0-alpha.20': {}
+
+  '@ecl/resources-eu-logo@5.0.0-alpha.22': {}
 
   '@ecl/resources-icons@5.0.0-alpha.20': {}
 

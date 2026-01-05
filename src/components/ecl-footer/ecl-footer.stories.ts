@@ -19,6 +19,7 @@ const Template = (args) =>
     logo-lang-code="en"
     variant="core"
     description="This site is managed by:"
+    description-name="[name of the manager of the site]"
     site-name="European Commission website"
     logo-link="${randomizedLink('/example.html')}"
     co-owner-title="This page is managed by:"
@@ -170,6 +171,7 @@ const TemplateStandardised = (args) => `
     site-name="Site name"
     variant="standardised"
     description="This site is managed by:"
+    description-name="[name of the manager of the site]"
     logo-link="${randomizedLink('/example.html')}"
     co-owner-title="This page is managed by:"
     co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"},{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"}]'
@@ -415,9 +417,6 @@ const TemplateEu = () =>
     co-owner-title="This page is managed by:"
     co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"},{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"}]'
   >
-    <ecl-text tag="p" slot="description">
-      This site is managed by: [name of the manager of the site]
-    </ecl-text>
     <ecl-text
       size="m"
       slot="ecl-footer-list-main"

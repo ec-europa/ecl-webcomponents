@@ -656,6 +656,7 @@ export namespace Components {
         "coOwnerLinks": string;
         "coOwnerTitle": string;
         "description": string;
+        "descriptionName": string;
         "logoAlt": string;
         "logoLangCode": string;
         "logoLink": string;
@@ -3249,6 +3250,7 @@ declare namespace LocalJSX {
         "coOwnerLinks"?: string;
         "coOwnerTitle"?: string;
         "description"?: string;
+        "descriptionName"?: string;
         "logoAlt"?: string;
         "logoLangCode"?: string;
         "logoLink"?: string;

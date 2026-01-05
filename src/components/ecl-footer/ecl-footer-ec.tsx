@@ -21,6 +21,7 @@ export class EclFooterEc {
   @Prop() logoLangCode: string;
   @Prop() variant: string;
   @Prop() description: string;
+  @Prop() descriptionName: string;
   @Prop() siteName: string;
   @Prop() siteLink: string;
   @Prop() coOwnerTitle: string;
@@ -150,6 +151,11 @@ export class EclFooterEc {
               }
                 <div class="ecl-site-footer__description">
                   {this.description}
+                  {this.descriptionName &&
+                    <span class="ecl-site-footer__description-name">
+                      {this.descriptionName}
+                    </span>
+                  }
                 </div>
                 <slot name="ecl-footer-social-follow-info"></slot>
               </div>
