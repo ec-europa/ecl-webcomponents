@@ -1,6 +1,7 @@
 import { Component, Prop, h, Element } from '@stencil/core';
-import getAssetPath from '../../utils/assetPath';
-declare const SITEHEADER: any;
+import SiteHeader from '@ecl/site-header';
+import getAssetPath from "../../utils/assetPath";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-site-header',
@@ -10,14 +11,14 @@ declare const SITEHEADER: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build']
+  assetsDirs: ['build'],
 })
 
 export class EclSiteHeader {
   @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
   @Prop() loginBlock: boolean = false;
   @Prop() languageBlock: boolean = false;
   @Prop() searchBlock: boolean = true;
@@ -85,20 +86,11 @@ export class EclSiteHeader {
       open.classList.add(`sc-ecl-site-header-${this.theme}`);
     }
     if (this.eclScript) {
-      // Load the ECL vanilla js if not already present.
-      const src = getAssetPath('./build/scripts/ecl-site-header-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const siteHeader = new SITEHEADER.SiteHeader(this.el.firstElementChild);
-        siteHeader.init();
-      };
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.SiteHeader = SiteHeader;
 
-      document.body.appendChild(script);
+      const siteHeader = new SiteHeader(this.el.firstElementChild);
+      siteHeader.init();
     }
   }
 

@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const MODAL: any;
+import Modal from "@ecl/modal";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-modal',
@@ -10,7 +10,6 @@ declare const MODAL: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build'],
 })
 export class EclModal {
   @Element() el: HTMLElement;
@@ -46,18 +45,11 @@ export class EclModal {
 
   componentDidLoad() {
     if (this.eclScript) {
-      const src = getAssetPath('./build/scripts/ecl-modal-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const modal = new MODAL.Modal(this.el.firstElementChild);
-        modal.init();
-      };
-      document.body.appendChild(script);
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Modal = Modal;
+
+      const modal = new Modal(this.el.firstElementChild);
+      modal.init();
     }
   }
 

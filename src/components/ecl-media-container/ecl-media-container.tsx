@@ -1,5 +1,5 @@
 import { Component, h, Prop, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
+import MediaContainer from "@ecl/media-container";
 declare const ECL: any;
 
 @Component({
@@ -10,7 +10,6 @@ declare const ECL: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build'],
 })
 export class EclMediaContainer {
   @Element() el: HTMLElement;
@@ -29,7 +28,7 @@ export class EclMediaContainer {
   @Prop() srPause: string;
   @Prop() srVideoPlayer: string;
   @Prop() srVideoAudio: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
   @Prop() embeddedMedia: boolean = false;
 
   getClass(): string {
@@ -54,17 +53,11 @@ export class EclMediaContainer {
           video.setAttribute('data-ecl-media-container-video', '');
         }
       }
-      const src = getAssetPath('./build/scripts/ecl-media-container-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        const mediaContainer = new ECL.MediaContainer(this.el.firstElementChild);
-        mediaContainer.init();
-      };
-      document.body.appendChild(script);
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.MediaContainer = MediaContainer;
+
+      const mediaContainer = new ECL.MediaContainer(this.el.firstElementChild);
+      mediaContainer.init();
     }
 
     const iframe = this.el.querySelector('iframe');

@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element, Event, EventEmitter } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const DATEPICKER: any;
+import Datepicker from "@ecl/datepicker";
+declare var ECL: any;
 
 @Component({
   tag: 'ecl-datepicker',
@@ -78,24 +78,13 @@ export class EclDatepicker {
     duet.src = duetSrc;
 
     duet.onload = () => {
-      const src = getAssetPath('./build/scripts/ecl-datepicker-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Datepicker = Datepicker;
+      const datepicker = new Datepicker(
+        this.el.querySelector('.ecl-datepicker'),
+      );
 
-      const script = document.createElement('script');
-      script.src = src;
-      script.defer = true;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const datepicker = new DATEPICKER.Datepicker(
-          this.el.querySelector('.ecl-datepicker'),
-        );
-
-        datepicker.init();
-      };
-
-      document.body.appendChild(script);
+      datepicker.init();
     };
 
     document.body.appendChild(duet);

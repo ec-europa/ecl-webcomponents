@@ -12,7 +12,7 @@ export namespace Components {
          */
         "colorMode": string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         /**
@@ -47,7 +47,7 @@ export namespace Components {
         "ctaLabel": string;
         "ctaLink": string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         /**
@@ -104,7 +104,7 @@ export namespace Components {
     }
     interface EclBreadcrumb {
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         /**
@@ -251,7 +251,7 @@ export namespace Components {
     interface EclCategoryFilter {
         "colorMode": string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         /**
@@ -433,7 +433,7 @@ export namespace Components {
     }
     interface EclExpandable {
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         /**
@@ -556,7 +556,7 @@ export namespace Components {
         "downloadLabelId": string;
         "downloadLink": string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         /**
@@ -619,7 +619,7 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         "helperId": string;
@@ -748,7 +748,7 @@ export namespace Components {
          */
         "disableOverlay": boolean;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         /**
@@ -884,6 +884,10 @@ export namespace Components {
         /**
           * @default ''
          */
+        "srLabel": string;
+        /**
+          * @default ''
+         */
         "styleClass": string;
         /**
           * @default ''
@@ -896,7 +900,7 @@ export namespace Components {
          */
         "colorMode": string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         "inpageId": string;
@@ -1099,7 +1103,7 @@ export namespace Components {
          */
         "autoplay": boolean;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         /**
@@ -1137,7 +1141,7 @@ export namespace Components {
         "backLabel": string;
         "closeLabel": string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         /**
@@ -1388,7 +1392,7 @@ export namespace Components {
          */
         "close": boolean;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         "icon": string;
@@ -1409,7 +1413,7 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         /**
@@ -1586,7 +1590,7 @@ export namespace Components {
         "bannerTopLink": string;
         "closeLabel": string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         "euLabel": string;
@@ -2602,7 +2606,7 @@ declare namespace LocalJSX {
          */
         "colorMode"?: string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         /**
@@ -2638,7 +2642,7 @@ declare namespace LocalJSX {
         "ctaLabel"?: string;
         "ctaLink"?: string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         /**
@@ -2695,7 +2699,7 @@ declare namespace LocalJSX {
     }
     interface EclBreadcrumb {
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         /**
@@ -2842,7 +2846,7 @@ declare namespace LocalJSX {
     interface EclCategoryFilter {
         "colorMode"?: string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         /**
@@ -3027,7 +3031,7 @@ declare namespace LocalJSX {
     }
     interface EclExpandable {
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         /**
@@ -3150,7 +3154,7 @@ declare namespace LocalJSX {
         "downloadLabelId"?: string;
         "downloadLink"?: string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         /**
@@ -3213,7 +3217,7 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         "helperId"?: string;
@@ -3342,7 +3346,7 @@ declare namespace LocalJSX {
          */
         "disableOverlay"?: boolean;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         /**
@@ -3478,6 +3482,10 @@ declare namespace LocalJSX {
         /**
           * @default ''
          */
+        "srLabel"?: string;
+        /**
+          * @default ''
+         */
         "styleClass"?: string;
         /**
           * @default ''
@@ -3490,7 +3498,7 @@ declare namespace LocalJSX {
          */
         "colorMode"?: string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         "inpageId"?: string;
@@ -3696,7 +3704,7 @@ declare namespace LocalJSX {
          */
         "autoplay"?: boolean;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         /**
@@ -3734,7 +3742,7 @@ declare namespace LocalJSX {
         "backLabel"?: string;
         "closeLabel"?: string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         /**
@@ -3985,7 +3993,7 @@ declare namespace LocalJSX {
          */
         "close"?: boolean;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         "icon"?: string;
@@ -4006,7 +4014,7 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         /**
@@ -4192,7 +4200,7 @@ declare namespace LocalJSX {
         "bannerTopLink"?: string;
         "closeLabel"?: string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         "euLabel"?: string;

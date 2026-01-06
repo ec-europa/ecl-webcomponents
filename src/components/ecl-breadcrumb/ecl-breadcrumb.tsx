@@ -1,6 +1,6 @@
 import { Component, Prop, h, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const BREADCRUMB: any;
+import Breadcrumb from "@ecl/breadcrumb";
+declare var ECL: any;
 
 @Component({
   tag: 'ecl-breadcrumb',
@@ -17,7 +17,7 @@ export class EclBreadcrumb {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
   @Prop() minItemsRight: number = 2;
 
 
@@ -47,20 +47,11 @@ export class EclBreadcrumb {
     this.el.querySelector('.ecl-breadcrumb__container').append(...items);
 
     if (this.eclScript) {
-      // Load the ECL vanilla js if not already present.
-      const src = getAssetPath('./build/scripts/ecl-breadcrumb-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const breadcrumb = new BREADCRUMB.Breadcrumb(this.el.firstElementChild);
-        breadcrumb.init();
-      };
-
-      document.body.appendChild(script);
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Breadcrumb = Breadcrumb;
+      
+      const breadcrumb = new Breadcrumb(this.el.firstElementChild);
+      breadcrumb.init();
     }
   }
 

@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const POPOVER: any;
+import Popover from "@ecl/popover";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-popover',
@@ -10,14 +10,13 @@ declare const POPOVER: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build'],
 })
 
 export class EclPopover {
   @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
   @Prop() itemId: string;
   @Prop() toggleLabel: string;
   @Prop() close: boolean = false;
@@ -59,20 +58,11 @@ export class EclPopover {
 
   componentDidLoad() {
     if (this.eclScript) {
-      // Load the ECL vanilla js if not already present.
-      const src = getAssetPath('./build/scripts/ecl-popover-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const popover = new POPOVER.Popover(this.el.firstElementChild);
-        popover.init();
-      };
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Popover = Popover;
 
-      document.body.appendChild(script);
+      const popover = new Popover(this.el.firstElementChild);
+      popover.init();
     }
   }
 

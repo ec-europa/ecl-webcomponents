@@ -11,7 +11,7 @@
 | -------------- | --------------- | ----------- | --------- | ------------------------------------------------------------ |
 | `defaultValue` | `default-value` |             | `string`  | `undefined`                                                  |
 | `disabled`     | `disabled`      |             | `boolean` | `false`                                                      |
-| `eclScript`    | `ecl-script`    |             | `boolean` | `false`                                                      |
+| `eclScript`    | `ecl-script`    |             | `boolean` | `true`                                                       |
 | `hasChanged`   | `has-changed`   |             | `boolean` | `false`                                                      |
 | `helperId`     | `helper-id`     |             | `string`  | `undefined`                                                  |
 | `helperText`   | `helper-text`   |             | `string`  | `undefined`                                                  |

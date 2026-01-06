@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const EXPANDABLE: any;
+import Expandable from "@ecl/expandable";
+declare var ECL: any;
 
 @Component({
   tag: 'ecl-expandable',
@@ -10,13 +10,12 @@ declare const EXPANDABLE: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build'],
 })
 
 export class EclExpandable {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
   @Prop() isExpanded: boolean = false;
   @Prop() elId: string = `ecl-expandable-${Math.random().toString(36).substr(2, 9)}`;
   @Prop() labelCollapsed: string = '';
@@ -36,18 +35,12 @@ export class EclExpandable {
       });
     }
 
-    const src = getAssetPath('./build/scripts/ecl-expandable-vanilla.js');
-    if (document.querySelector(`script[src="${src}"]`)) {
-      document.querySelector(`script[src="${src}"]`).remove();
-    }
-    const script = document.createElement('script');
-    script.src = src;
-    script.onload = () => {
+    if (this.eclScript) {
       ;(window as any).ECL = (window as any).ECL || {};
-      const expandable = new EXPANDABLE.Expandable(this.el.firstElementChild);
+      ECL.Expandable = Expandable;
+      const expandable = new Expandable(this.el.firstElementChild);
       expandable.init();
     };
-    document.body.appendChild(script);
   }
 
   getClass(): string {

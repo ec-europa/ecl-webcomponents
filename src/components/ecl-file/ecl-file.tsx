@@ -1,5 +1,5 @@
 import { Component, Prop, h, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
+import FileDownload from "@ecl/file";
 declare const ECL: any;
 
 @Component({
@@ -10,7 +10,6 @@ declare const ECL: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['./build'],
 })
 export class EclFile {
   @Element() el: HTMLElement;
@@ -35,7 +34,7 @@ export class EclFile {
   @Prop() labels: string;
   @Prop() taxonomies: string;
   @Prop() taxonomiesLabel: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
 
   getClass(): string {
     const styleClasses = [
@@ -64,19 +63,11 @@ export class EclFile {
       const translations = this.el.querySelectorAll('.ecl-file__translation-item');
       list.innerHTML = '';
       list.append(...translations);
-      
-      // Load the ECL vanilla js if not already present.
-      const src = getAssetPath('./build/scripts/ecl-file-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        const file = new ECL.FileDownload(this.el.firstElementChild);
-        file.init();
-      };
-      document.body.appendChild(script);
+
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.FileDownload = FileDownload;
+      const file = new FileDownload(this.el.firstElementChild);
+      file.init();
     }
   }
 

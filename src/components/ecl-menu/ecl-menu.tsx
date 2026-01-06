@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const MENU: any;
+import Menu from "@ecl/menu";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-menu',
@@ -17,7 +17,7 @@ export class EclMenu {
   @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() menuId: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
   @Prop() styleClass: string;
   @Prop() group: string = 'group1';
   @Prop() maxLines: number = 2;
@@ -40,19 +40,10 @@ export class EclMenu {
 
   componentDidLoad() {
     if (this.eclScript) {
-      const src = getAssetPath('./build/scripts/ecl-menu-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const menu = new MENU.Menu(this.el.firstElementChild);
-        menu.init();
-      };
-
-      document.body.appendChild(script);
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Menu = Menu;
+      const menu = new Menu(this.el.firstElementChild);
+      menu.init();
     }
   }
 

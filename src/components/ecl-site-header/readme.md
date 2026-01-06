@@ -12,7 +12,7 @@
 | `bannerTop`          | `banner-top`            |             | `string`  | `undefined`                                                                    |
 | `bannerTopLink`      | `banner-top-link`       |             | `string`  | `undefined`                                                                    |
 | `closeLabel`         | `close-label`           |             | `string`  | `undefined`                                                                    |
-| `eclScript`          | `ecl-script`            |             | `boolean` | `false`                                                                        |
+| `eclScript`          | `ecl-script`            |             | `boolean` | `true`                                                                         |
 | `euLabel`            | `eu-label`              |             | `string`  | `undefined`                                                                    |
 | `langCode`           | `lang-code`             |             | `string`  | `undefined`                                                                    |
 | `language`           | `language`              |             | `string`  | `undefined`                                                                    |

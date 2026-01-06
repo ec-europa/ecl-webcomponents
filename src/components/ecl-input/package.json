@@ -7,7 +7,6 @@
   "main": "ecl-input.tsx",
   "private": true,
   "scripts": {
-    "build:scripts": "cross-env ecl-builder scripts",
     "build:styles": "cross-env ecl-builder styles",
     "build": "run-s clean build:*",
     "clean": "rimraf build",

@@ -10,7 +10,7 @@
 | Property        | Attribute         | Description | Type      | Default     |
 | --------------- | ----------------- | ----------- | --------- | ----------- |
 | `autoplay`      | `autoplay`        |             | `boolean` | `false`     |
-| `eclScript`     | `ecl-script`      |             | `boolean` | `false`     |
+| `eclScript`     | `ecl-script`      |             | `boolean` | `true`      |
 | `embeddedMedia` | `embedded-media`  |             | `boolean` | `false`     |
 | `fullWidth`     | `full-width`      |             | `boolean` | `false`     |
 | `hasCaption`    | `has-caption`     |             | `boolean` | `false`     |

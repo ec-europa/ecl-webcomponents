@@ -1,6 +1,6 @@
 import { Component, Prop, h, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const BANNER: any;
+import Banner from "@ecl/banner";
+declare var ECL: any;
 
 @Component({
   tag: 'ecl-banner',
@@ -23,7 +23,7 @@ export class EclBanner {
   @Prop() bannerTitle: string;
   @Prop() bannerTitleLink: string;
   @Prop() image: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
   @Prop() sources: string;
   @Prop() tracks: string;
   @Prop() imageAlt: string;
@@ -84,18 +84,11 @@ export class EclBanner {
     }
 
     if (this.eclScript) {
-      const src = getAssetPath('./build/scripts/ecl-banner-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const banner = new BANNER.Banner(this.el.firstElementChild);
-        banner.init();
-      };
-      document.body.appendChild(script);
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Banner = Banner;
+
+      const banner = new Banner(this.el.firstElementChild);
+      banner.init();
     }
   }
 

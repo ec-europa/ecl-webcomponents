@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const GALLERY: any;
+import Gallery from "@ecl/gallery";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-gallery',
@@ -10,7 +10,6 @@ declare const GALLERY: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build'],
 })
 
 export class EclGallery {
@@ -18,7 +17,7 @@ export class EclGallery {
   @Prop() elId: string = `ecl-gallery-${Math.random().toString(36).slice(2, 10)}`;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
   @Prop() slidesNumber: number;
   @Prop() counterLabel: string ;
   @Prop() counterSeparator: string;
@@ -103,18 +102,10 @@ export class EclGallery {
     });
 
     if (this.eclScript) {
-      const src = getAssetPath('./build/scripts/ecl-gallery-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const gallery = new GALLERY.Gallery(this.el.firstElementChild);
-        gallery.init();
-      };
-      document.body.appendChild(script);
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Gallery = Gallery;
+      const gallery = new Gallery(this.el.firstElementChild);
+      gallery.init();
     }
   }
 

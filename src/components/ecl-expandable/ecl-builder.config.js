@@ -10,19 +10,6 @@ const includePaths = [nodeModules];
 const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()}`;
 
 module.exports = {
-  scripts: [
-    {
-      entry: path.resolve(nodeModules, '@ecl/expandable/expandable.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-expandable-vanilla.js'),
-      options: {
-        banner,
-        format: 'iife',
-        moduleName: 'EXPANDABLE',
-        includePaths,
-        sourceMap: false,
-      },
-    },
-  ],
   styles: [
     {
       entry: path.resolve(__dirname, 'src/styles/ecl-expandable-ec.scss'),

@@ -1,6 +1,6 @@
 import { Component, h, Prop, State, Element, Event, EventEmitter } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const SELECT: any;
+import Select from "@ecl/select";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-select',
@@ -10,7 +10,6 @@ declare const SELECT: any;
   },
   shadow: false,
   scoped: false,
-  assetsDirs: ['build'],
 })
 
 export class EclSelect {
@@ -65,20 +64,11 @@ export class EclSelect {
 
   componentDidLoad() {
     if (this.eclScript && this.multiple) {
-      // Load the ECL vanilla js if not already present.
-      const src = getAssetPath('./build/scripts/ecl-select-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const select = new SELECT.Select(this.el.getElementsByTagName('select')[0]);
-        select.init();
-      };
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Select = Select;
 
-      document.body.appendChild(script);
+      const select = new Select(this.el.getElementsByTagName('select')[0]);
+      select.init();
     }
 
     if (this.inputValue) {

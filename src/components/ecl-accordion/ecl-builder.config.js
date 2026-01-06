@@ -11,19 +11,6 @@ const includePaths = [nodeModules];
 const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()}`;
 
 module.exports = {
-  scripts: [
-    {
-      entry: path.resolve(nodeModules, '@ecl/accordion/accordion.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-accordion-vanilla.js'),
-      options: {
-        banner,
-        format: 'iife',
-        moduleName: 'ACCORDION',
-        includePaths,
-        sourceMap: false,
-      },
-    },
-  ],
   styles: [
     {
       entry: path.resolve(__dirname, 'src/styles/ecl-accordion-ec.scss'),

@@ -10,7 +10,7 @@
 | Property         | Attribute         | Description | Type      | Default     |
 | ---------------- | ----------------- | ----------- | --------- | ----------- |
 | `close`          | `close`           |             | `boolean` | `false`     |
-| `eclScript`      | `ecl-script`      |             | `boolean` | `false`     |
+| `eclScript`      | `ecl-script`      |             | `boolean` | `true`      |
 | `icon`           | `icon`            |             | `string`  | `undefined` |
 | `indicator`      | `indicator`       |             | `boolean` | `false`     |
 | `indicatorValue` | `indicator-value` |             | `number`  | `undefined` |

@@ -7,21 +7,20 @@
   "main": "ecl-breadcrumb.tsx",
   "private": true,
   "scripts": {
-    "build:scripts": "cross-env ecl-builder scripts",
     "build:styles": "cross-env ecl-builder styles",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/breadcrumb": "5.0.0-alpha.20",
-    "@ecl/builder": "5.0.0-alpha.20",
-    "@ecl/button": "5.0.0-alpha.20",
-    "@ecl/grid": "5.0.0-alpha.20",
-    "@ecl/mixins-typography": "5.0.0-alpha.20",
-    "@ecl/theme-ec": "5.0.0-alpha.20",
-    "@ecl/theme-eu": "5.0.0-alpha.20",
-    "@ecl/utility-screen-reader": "5.0.0-alpha.20",
+    "@ecl/breadcrumb": "5.0.0-alpha.22",
+    "@ecl/builder": "5.0.0-alpha.22",
+    "@ecl/button": "5.0.0-alpha.22",
+    "@ecl/grid": "5.0.0-alpha.22",
+    "@ecl/mixins-typography": "5.0.0-alpha.22",
+    "@ecl/theme-ec": "5.0.0-alpha.22",
+    "@ecl/theme-eu": "5.0.0-alpha.22",
+    "@ecl/utility-screen-reader": "5.0.0-alpha.22",
     "cross-env": "10.1.0"
   },
   "dependencies": {

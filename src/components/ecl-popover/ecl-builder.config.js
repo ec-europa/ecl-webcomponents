@@ -10,19 +10,6 @@ const includePaths = [nodeModules];
 const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()}`;
 
 module.exports = {
-  scripts: [
-    {
-      entry: path.resolve(nodeModules, '@ecl/popover/popover.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-popover-vanilla.js'),
-      options: {
-        banner,
-        format: 'iife',
-        moduleName: 'POPOVER',
-        includePaths,
-        sourceMap: false,
-      },
-    },
-  ],
   styles: [
     {
       entry: path.resolve(__dirname, 'src/styles/ecl-popover-ec.scss'),

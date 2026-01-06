@@ -13,7 +13,7 @@
 | `buttonReplaceLabel` | `button-replace-label` |             | `string`  | `undefined`                                                        |
 | `defaultValue`       | `default-value`        |             | `string`  | `undefined`                                                        |
 | `disabled`           | `disabled`             |             | `boolean` | `false`                                                            |
-| `eclScript`          | `ecl-script`           |             | `boolean` | `false`                                                            |
+| `eclScript`          | `ecl-script`           |             | `boolean` | `true`                                                             |
 | `helperId`           | `helper-id`            |             | `string`  | `undefined`                                                        |
 | `helperText`         | `helper-text`          |             | `string`  | `undefined`                                                        |
 | `inputClass`         | `input-class`          |             | `string`  | `undefined`                                                        |
