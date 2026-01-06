@@ -6,6 +6,11 @@ import { EclIcon } from '../../ecl-icon/ecl-icon';
 import { EclPicture } from '../../ecl-picture/ecl-picture';
 
 describe('ecl-media-container', () => {
+  beforeEach(() => {
+    // create a global ECL object so your components can attach classes
+    (global as any).ECL = {};
+  });
+
   it('renders correctly with an image', async () => {
     const page = await newSpecPage({
       components: [EclMediaContainer, EclVideo, EclButton, EclIcon, EclPicture],

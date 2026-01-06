@@ -4,6 +4,10 @@ import { EclCategoryFilterItem } from '../ecl-category-filter-item';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-category-filter', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclCategoryFilter, EclCategoryFilterItem, EclIcon],

@@ -6,6 +6,10 @@ import { EclVideo } from '../../ecl-video/ecl-video';
 import { EclButton } from '../../ecl-button/ecl-button';
 
 describe('ecl-banner', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders correctly with an image', async () => {
     const page = await newSpecPage({
       components: [EclBanner, EclLink, EclIcon],

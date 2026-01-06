@@ -3,6 +3,10 @@ import { EclTimeline } from '../ecl-timeline';
 import { EclTimelineItem } from '../ecl-timeline-item';
 
 describe('ecl-timeline', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclTimeline, EclTimelineItem],

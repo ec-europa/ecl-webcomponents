@@ -4,6 +4,10 @@ import { EclBreadcrumb} from '../../ecl-breadcrumb/ecl-breadcrumb';
 import { EclBreadcrumbItem} from '../../ecl-breadcrumb/ecl-breadcrumb-item';
 
 describe('ecl-page-header', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclPageHeader, EclBreadcrumb, EclBreadcrumbItem],

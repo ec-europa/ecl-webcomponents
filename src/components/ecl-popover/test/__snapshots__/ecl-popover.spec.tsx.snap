@@ -3,7 +3,7 @@
 exports[`ecl-popover renders 1`] = `
 <ecl-popover close="" ecl-script="" icon="share" item-id="popover-example" toggle-label="Popover">
   <!---->
-  <div class="ecl-popover">
+  <div class="ecl-popover" data-ecl-auto-initialized="true">
     <ecl-link aria-controls="popover-example" aria-expanded="false" data-ecl-popover-toggle="data-ecl-popover-toggle" style-class="sc-ecl-link-ec sc-ecl-popover-ec ecl-popover__toggle">
       <!---->
       <a aria-controls="popover-example" aria-expanded="false" class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone ecl-popover__toggle sc-ecl-link-ec sc-ecl-popover-ec" data-ecl-popover-toggle>

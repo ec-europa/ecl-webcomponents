@@ -5,6 +5,10 @@ import { EclButton } from '../../ecl-button/ecl-button';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-gallery', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclGallery, EclGalleryItem, EclButton, EclIcon],

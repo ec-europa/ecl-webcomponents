@@ -5,7 +5,7 @@ exports[`ecl-page-header renders 1`] = `
   <!---->
   <ecl-breadcrumb ecl-script="" slot="breadcrumb" theme="ec" variant="negative">
     <!---->
-    <nav class="ecl-breadcrumb ecl-page-header__breadcrumb sc-ecl-page-header-ec" data-ecl-breadcrumb>
+    <nav class="ecl-breadcrumb ecl-page-header__breadcrumb sc-ecl-page-header-ec" data-ecl-auto-initialized="true" data-ecl-breadcrumb>
       <ol class="ecl-breadcrumb__container sc-ecl-page-header-ec">
         <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
           <ecl-link path="/example.html" style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link" variant="standalone">

@@ -3,6 +3,10 @@ import { EclExpandable } from '../ecl-expandable';
 import { EclButton } from '@ecl/web-components-button/ecl-button';
 
 describe('ecl-expandable', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclExpandable, EclButton],

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-accordion renders 1`] = `
-<ecl-accordion theme="ec">
+<ecl-accordion data-ecl-auto-initialized="true" theme="ec">
   <!---->
   <div class="ecl-accordion">
     <ecl-accordion-item icon-path="/icons.svg" item-id="ecl-accordion-item-id-1" label="Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy" label-collapsed="Open" label-expanded="Close">

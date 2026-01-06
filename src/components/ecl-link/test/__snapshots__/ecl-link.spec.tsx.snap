@@ -79,8 +79,10 @@ exports[`ecl-link renders correctly with an indicator 1`] = `
         <span class="ecl-icon wt-icon--check wt-icon--placeholder wt-icon--xs"></span>
       </ecl-icon>
       <ecl-indicator ecl-script="">
-        <span class="ecl-indicator" data-ecl-indicator>
-          5
+        <span class="ecl-indicator" data-ecl-auto-initialized="true" data-ecl-indicator>
+          <span class="ecl-indicator__value">
+            5
+          </span>
         </span>
       </ecl-indicator>
     </span>

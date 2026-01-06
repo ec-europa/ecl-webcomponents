@@ -3,6 +3,10 @@ import { EclDatepicker } from '../ecl-datepicker';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-datepicker', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclDatepicker, EclIcon],

@@ -3,6 +3,10 @@ import { EclRange } from '../ecl-range';
 import { EclFormGroup } from '../../ecl-form-group/ecl-form-group';
 
 describe('ecl-range', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclRange, EclFormGroup],

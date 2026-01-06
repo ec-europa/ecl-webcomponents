@@ -4,6 +4,10 @@ import { EclLink } from '../../ecl-link/ecl-link';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-popover', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+  
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclPopover, EclLink, EclIcon],

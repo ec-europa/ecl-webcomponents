@@ -5,6 +5,10 @@ import { EclInput } from '../../ecl-input/ecl-input';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-modal', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclModal, EclButton, EclIcon, EclInput],

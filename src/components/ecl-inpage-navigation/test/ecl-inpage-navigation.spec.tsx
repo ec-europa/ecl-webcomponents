@@ -3,6 +3,10 @@ import { EclInpageNavigation } from '../ecl-inpage-navigation';
 import { EclInpageNavigationItem } from '../ecl-inpage-navigation-item';
 
 describe('ecl-inpage-navigation', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclInpageNavigation, EclInpageNavigationItem],

@@ -3,6 +3,10 @@ import { EclButton } from '../ecl-button';
 import { EclIcon } from '@ecl/web-components-icon/ecl-icon';
 
 describe('ecl-button', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclButton, EclIcon],

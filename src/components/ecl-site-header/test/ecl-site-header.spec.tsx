@@ -4,8 +4,11 @@ import { EclSiteHeader } from '../ecl-site-header';
 import { EclLanguageItem } from '../ecl-language-item';
 import { EclFormGroup } from '../../ecl-form-group/ecl-form-group';
 
-
 describe('ecl-site-header', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclSearchForm, EclSiteHeader, EclLanguageItem, EclFormGroup],

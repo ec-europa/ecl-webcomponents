@@ -4,6 +4,10 @@ import { EclIcon } from '../../ecl-icon/ecl-icon';
 import { EclIndicator } from '../../ecl-indicator/ecl-indicator';
 
 describe('ecl-link', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders correctly as a default link', async () => {
     const page = await newSpecPage({
       components: [EclLink],

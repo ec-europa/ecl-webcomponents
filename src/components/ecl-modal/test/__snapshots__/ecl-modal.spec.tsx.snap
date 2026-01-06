@@ -3,7 +3,7 @@
 exports[`ecl-modal renders 1`] = `
 <ecl-modal close-label="Close" ecl-script="" theme="ec" toggle-id="modal-demo-toggle" with-body="" with-body-fixed="" with-footer="" with-header="">
   <!---->
-  <dialog class="ecl-modal ecl-modal--default ecl-modal--l" data-ecl-modal-toggle="modal-demo-toggle">
+  <dialog class="ecl-modal ecl-modal--default ecl-modal--l" data-ecl-auto-initialized="true" data-ecl-modal-toggle="modal-demo-toggle">
     <div class="ecl-container ecl-modal__container">
       <div class="ecl-col-l-8 ecl-col-m-10 ecl-modal__content">
         <header class="ecl-modal__header">

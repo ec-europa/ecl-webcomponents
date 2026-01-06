@@ -4,6 +4,10 @@ import { EclFileTranslations } from '../ecl-file-translations';
 import { EclFileTranslationsItem } from  '../ecl-file-translation-item';
 
 describe('ecl-file', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclFile, EclFileTranslations, EclFileTranslationsItem],

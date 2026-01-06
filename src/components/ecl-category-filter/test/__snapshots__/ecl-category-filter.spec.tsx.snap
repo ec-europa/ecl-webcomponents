@@ -3,7 +3,7 @@
 exports[`ecl-category-filter renders 1`] = `
 <ecl-category-filter ecl-script="">
   <!---->
-  <nav class="ecl-category-filter" data-ecl-category-filter>
+  <nav class="ecl-category-filter" data-ecl-auto-initialized="true" data-ecl-category-filter>
     <ul class="ecl-category-filter__list">
       <ecl-category-filter-item label="Item 1 label" level="1" path="/example.html">
         <!---->

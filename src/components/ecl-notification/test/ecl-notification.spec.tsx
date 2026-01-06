@@ -5,6 +5,10 @@ import { EclIcon } from '../../ecl-icon/ecl-icon';
 import { EclLink } from '../../ecl-link/ecl-link';
 
 describe('ecl-notification', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+  
   it('renders correctly in the information variant', async () => {
     const page = await newSpecPage({
       components: [EclNotification, EclButton, EclIcon, EclLink],

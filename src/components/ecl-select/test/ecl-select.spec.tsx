@@ -4,6 +4,10 @@ import { EclFormGroup } from '../../ecl-form-group/ecl-form-group';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-select', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclSelect, EclFormGroup, EclIcon],
