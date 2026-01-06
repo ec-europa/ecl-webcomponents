@@ -8,16 +8,16 @@ exports[`ecl-featured-item renders correctly 1`] = `
       <div class="ecl-featured-item__item">
         <div class="ecl-featured-item__content">
           <div class="ecl-featured-item__info">
-            <div class="ecl-featured-item__title" id="featured-item-demo">
+            <div class="ecl-featured-item__title" id="featured-item-demo-title">
               Title
             </div>
             <div class="ecl-featured-item__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </div>
           </div>
-          <ecl-link aria-describedby="featured-item-demo" style-class="ecl-featured-item__link sc-ecl-featured-item-ec ">
+          <ecl-link aria-describedby="featured-item-demo-title" style-class="ecl-featured-item__link sc-ecl-featured-item-ec ">
             <!---->
-            <a aria-describedby="featured-item-demo" class="ecl-featured-item__link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-featured-item-ec" href="/example.html">
+            <a aria-describedby="featured-item-demo-title" class="ecl-featured-item__link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-featured-item-ec" href="/example.html">
               <span class="ecl-link__label">
                 Read more
               </span>
@@ -60,16 +60,16 @@ exports[`ecl-featured-item renders correctly with all the options specified 1`] 
       <div class="ecl-featured-item__item">
         <div class="ecl-featured-item__content">
           <div class="ecl-featured-item__info">
-            <div class="ecl-featured-item__title" id="featured-item-demo-with-options">
+            <div class="ecl-featured-item__title" id="featured-item-demo-with-options-title">
               Title
             </div>
             <div class="ecl-featured-item__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </div>
           </div>
-          <ecl-link aria-describedby="featured-item-demo-with-options" style-class="ecl-featured-item__link sc-ecl-featured-item-ec ecl-featured-item--link-highlighted">
+          <ecl-link aria-describedby="featured-item-demo-with-options-title" style-class="ecl-featured-item__link sc-ecl-featured-item-ec ecl-featured-item--link-highlighted">
             <!---->
-            <a aria-describedby="featured-item-demo-with-options" class="ecl-featured-item--link-highlighted ecl-featured-item__link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-featured-item-ec" href="/example.html">
+            <a aria-describedby="featured-item-demo-with-options-title" class="ecl-featured-item--link-highlighted ecl-featured-item__link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-featured-item-ec" href="/example.html">
               <span class="ecl-link__label">
                 Read more
               </span>
