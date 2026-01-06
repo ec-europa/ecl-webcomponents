@@ -22,7 +22,7 @@
     "cross-env": "10.1.0"
   },
   "dependencies": {
-    "@ecl/web-components-button": "5.0.0-alpha.20"
+    "@ecl/web-components-button": "5.0.0-alpha.22"
   },
   "repository": {
     "type": "git",

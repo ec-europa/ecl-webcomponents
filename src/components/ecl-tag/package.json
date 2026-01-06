@@ -13,14 +13,14 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "5.0.0-alpha.20",
-    "@ecl/tag": "5.0.0-alpha.20",
-    "@ecl/theme-ec": "5.0.0-alpha.20",
-    "@ecl/theme-eu": "5.0.0-alpha.20",
+    "@ecl/builder": "5.0.0-alpha.22",
+    "@ecl/tag": "5.0.0-alpha.22",
+    "@ecl/theme-ec": "5.0.0-alpha.22",
+    "@ecl/theme-eu": "5.0.0-alpha.22",
     "cross-env": "10.1.0"
   },
   "dependencies": {
-    "@ecl/web-components-icon": "5.0.0-alpha.20"
+    "@ecl/web-components-icon": "5.0.0-alpha.22"
   },
   "repository": {
     "type": "git",

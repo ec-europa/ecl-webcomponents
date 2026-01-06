@@ -157,9 +157,8 @@
     },
     "patchedDependencies": {
       "@ecl/builder": "patches/@ecl__builder.patch",
-      "@ecl/content-block": "patches/@ecl__content-block.patch",
       "@ecl/select": "patches/@ecl__select.patch",
-      "@ecl/carousel@5.0.0-alpha.20": "patches/@ecl__carousel@5.0.0-alpha.20.patch",
+      "@ecl/carousel": "patches/@ecl__carousel.patch",
       "@ecl/banner": "patches/@ecl__banner.patch"
     }
   }
