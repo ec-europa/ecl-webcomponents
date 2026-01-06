@@ -529,9 +529,6 @@ export namespace Components {
         "position": string;
         "styleClass": string;
         "theme": string;
-        /**
-          * @default 'default'
-         */
         "variant": string;
         /**
           * @default 'top'
@@ -3127,9 +3124,6 @@ declare namespace LocalJSX {
         "position"?: string;
         "styleClass"?: string;
         "theme"?: string;
-        /**
-          * @default 'default'
-         */
         "variant"?: string;
         /**
           * @default 'top'

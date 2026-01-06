@@ -15,7 +15,7 @@ export class EclFeaturedItem {
   @Prop({ mutable: true }) theme: string;
   @Prop() elId: string = `ecl-featured-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`;
   @Prop() styleClass: string;
-  @Prop() variant: string = 'default';
+  @Prop() variant: string;
   @Prop() itemTitle: string;
   @Prop() image: string;
   @Prop() colorMode: string = '';
@@ -82,18 +82,17 @@ export class EclFeaturedItem {
         class={this.getClass()}
       >
         <div class={containerClasses}>
-
           <div class="ecl-featured-item__item">
             <div class="ecl-featured-item__content">
               <div class="ecl-featured-item__info">
-              { this.itemTitle ?
+              { this.itemTitle &&
                 <div 
                   class="ecl-featured-item__title"
-                  id={this.elId}
+                  id={this.elId + '-title'}
                 >
                   {this.itemTitle}
                 </div> 
-              : '' }
+              }
                 <div class="ecl-featured-item__description">
                   <slot></slot>
                 </div>
@@ -103,7 +102,7 @@ export class EclFeaturedItem {
                 variant={`${this.linkType === 'button' ? 'primary-neutral' : 'standalone' }`}
                 style-class={`ecl-featured-item__link sc-ecl-featured-item-${this.theme} ${this.linkType === 'highlighted' ? 'ecl-featured-item--link-highlighted' : ''}`}
                 path={this.linkPath}
-                aria-describedby={this.elId}
+                aria-describedby={this.elId + '-title'}
               >
                 {this.linkLabel}
                 <ecl-icon

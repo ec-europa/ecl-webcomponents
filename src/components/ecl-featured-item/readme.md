@@ -23,7 +23,7 @@
 | `position`              | `position`                |             | `string` | `'left'`                                                                                      |
 | `styleClass`            | `style-class`             |             | `string` | `undefined`                                                                                   |
 | `theme`                 | `theme`                   |             | `string` | `undefined`                                                                                   |
-| `variant`               | `variant`                 |             | `string` | `'default'`                                                                                   |
+| `variant`               | `variant`                 |             | `string` | `undefined`                                                                                   |
 | `verticalAlignment`     | `vertical-alignment`      |             | `string` | `'top'`                                                                                       |
 
 
