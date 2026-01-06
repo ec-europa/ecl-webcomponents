@@ -27,9 +27,6 @@ patchedDependencies:
   '@ecl/select':
     hash: 71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076
     path: patches/@ecl__select.patch
-  '@ecl/select@5.0.0-alpha.22':
-    hash: 71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076
-    path: patches/@ecl__select.patch
 
 importers:
 
