@@ -17,7 +17,6 @@ export class EclLink {
   @Prop() path: string;
   @Prop() styleClass: string;
   @Prop() inverted: boolean = false;
-  @Prop() noVisited: boolean = false;
   @Prop() variant: string = '';
   @Prop() titleAttr: string;
   @Prop() branded: boolean = false;
@@ -30,6 +29,7 @@ export class EclLink {
   @Prop() download: boolean = false;
   @Prop() indicator: boolean = false;
   @Prop() indicatorValue: string;
+  @Prop() indicatorLabel: string;
 
   getClass(): string {
     const styleClasses = [
@@ -51,10 +51,6 @@ export class EclLink {
 
     if (this.hideLabel) {
       styleClasses.push('ecl-link--icon-only');
-    }
-
-    if (this.noVisited) {
-      styleClasses.push('ecl-link--no-visited');
     }
 
     if (this.el.querySelector('ecl-icon')) {
@@ -146,7 +142,7 @@ export class EclLink {
       {this.indicator && this.hasIconBefore && (
         <span class="ecl-link__icon-container">
           <slot name="icon-before"></slot>
-          <ecl-indicator ecl-script value={this.indicatorValue}></ecl-indicator>
+          <ecl-indicator ecl-script value={this.indicatorValue} sr-label={this.indicatorLabel}></ecl-indicator>
         </span>
       )}
       <span class="ecl-link__label">
@@ -158,7 +154,7 @@ export class EclLink {
       {this.indicator && this.hasIconAfter && (
         <span class="ecl-link__icon-container">
           <slot name="icon-after"></slot>
-          <ecl-indicator ecl-script value={this.indicatorValue}></ecl-indicator>
+          <ecl-indicator ecl-script value={this.indicatorValue} sr-label={this.indicatorLabel}></ecl-indicator>
         </span>
       )}
       </a>

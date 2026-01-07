@@ -86,6 +86,7 @@ describe('ecl-link', () => {
               path="/example.html"
               indicator=true
               indicator-value="5"
+              indicator-label="label for screen readers"
             >
               Link label
               <ecl-icon slot="icon-after" icon="check"> 

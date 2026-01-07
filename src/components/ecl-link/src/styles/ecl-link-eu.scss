@@ -10,8 +10,14 @@
   $button: var.$button
 );
 
-.ecl-link--icon-only ::slotted([slot^='icon-']) {
-  display: flex;
+.ecl-link--icon-only {
+  .ecl-link__icon-container {
+    display: inline-block;
+  }
+
+  ::slotted([slot^='icon-']) {
+    display: flex;
+  }
 }
 
 :host .ecl-link:not(.ecl-link--icon-only) ::slotted(ecl-icon[slot='icon-after']) svg {

@@ -14,17 +14,17 @@ const getArgs = () => {
     iconRotate: '',
     iconFlip: '',
     hideLabel: false,
-    noVisited: false,
     indicator: false,
     indicatorValue: 2,
+    indicatorLabel: '',
   };
 };
 
 const getArgTypes = () => {
   return {
     color_mode: { table: { disable: true } },
-    type: {
-      variant: { name: 'select' },
+    variant: {
+      type: { name: 'select' },
       options: ['standalone', 'primary', 'primary-highlight', 'primary-neutral', 'secondary'],
       description: "Link variant"
     },
@@ -48,10 +48,6 @@ const getArgTypes = () => {
       name: 'path',
       type: { name: 'string' },
       description: 'Path or Url to link to',
-    },
-    noVisited: {
-      name: 'no-visited',
-      type: { name: 'boolean' },
     },
     icon: {
       name: 'icon',
@@ -101,11 +97,16 @@ const getArgTypes = () => {
       if: { arg: 'icon', neq: undefined },
     },
     indicatorValue: {
-      name: 'indicator value',
+      name: 'indicator-value',
       type: { name: 'number' },
       description: 'Value of the indicator (only visible when showIndicator is true)',
       if: { arg: 'indicator', truthy: true },
     },
+    indicatorLabel: {
+      name: 'indicator-label',
+      type: { name: 'string' },
+      if: { arg: 'indicator'},
+    }
   };
 };
 
@@ -125,6 +126,7 @@ const Template = (args) => {
       aria-label="Accessibility enhancer"
       indicator="${args.indicator}"
       indicator-value="${args.indicatorValue}"
+      indicator-label="${args.indicatorLabel}"
       ${args.hideLabel ? 'hide-label' : ''}
     >
     ${args.icon && args.iconPosition === 'before' ?

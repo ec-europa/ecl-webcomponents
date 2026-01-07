@@ -15,10 +15,10 @@
 | `external`       | `external`        |             | `boolean` | `false`     |
 | `hideLabel`      | `hide-label`      |             | `boolean` | `false`     |
 | `indicator`      | `indicator`       |             | `boolean` | `false`     |
+| `indicatorLabel` | `indicator-label` |             | `string`  | `undefined` |
 | `indicatorValue` | `indicator-value` |             | `string`  | `undefined` |
 | `inverted`       | `inverted`        |             | `boolean` | `false`     |
 | `name`           | `name`            |             | `string`  | `undefined` |
-| `noVisited`      | `no-visited`      |             | `boolean` | `false`     |
 | `path`           | `path`            |             | `string`  | `undefined` |
 | `srExternal`     | `sr-external`     |             | `string`  | `undefined` |
 | `styleClass`     | `style-class`     |             | `string`  | `undefined` |

@@ -2,7 +2,7 @@
 
 exports[`ecl-icon renders 1`] = `
 <ecl-icon color="primary" icon="close-filled" size="l">
-  <span class="ecl-icon wt-icon--close-filled wt-icon--l wt-icon--placeholder wt-icon--primary"></span>
+  <span class="ecl-icon ecl-icon--l wt-icon--close-filled wt-icon--placeholder wt-icon--primary"></span>
 </ecl-icon>
 `;
 
@@ -16,6 +16,6 @@ exports[`ecl-icon renders correctly from a sprite 1`] = `
 
 exports[`ecl-icon renders correctly with a family 1`] = `
 <ecl-icon color="monochrome" family="social" icon="check-filled" size="m">
-  <span class="ecl-icon wt-icon--m wt-icon--monochrome wt-icon--placeholder wt-icon-social--check-filled"></span>
+  <span class="ecl-icon ecl-icon--m wt-icon--monochrome wt-icon--placeholder wt-icon-social--check-filled"></span>
 </ecl-icon>
 `;

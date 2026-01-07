@@ -998,16 +998,13 @@ export namespace Components {
           * @default false
          */
         "indicator": boolean;
+        "indicatorLabel": string;
         "indicatorValue": string;
         /**
           * @default false
          */
         "inverted": boolean;
         "name": string;
-        /**
-          * @default false
-         */
-        "noVisited": boolean;
         "path": string;
         "srExternal": string;
         "styleClass": string;
@@ -3596,16 +3593,13 @@ declare namespace LocalJSX {
           * @default false
          */
         "indicator"?: boolean;
+        "indicatorLabel"?: string;
         "indicatorValue"?: string;
         /**
           * @default false
          */
         "inverted"?: boolean;
         "name"?: string;
-        /**
-          * @default false
-         */
-        "noVisited"?: boolean;
         "path"?: string;
         "srExternal"?: string;
         "styleClass"?: string;

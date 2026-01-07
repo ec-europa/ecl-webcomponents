@@ -31,7 +31,7 @@ exports[`ecl-link renders correctly when external 1`] = `
     </span>
     <slot-fb name="icon-after">
       <ecl-icon class="ecl-link__icon" style-class="ecl-link__icon sc-ecl-link-ec" title-tag="will move you outside of this website">
-        <span class="ecl-icon ecl-link__icon sc-ecl-link-ec wt-icon--2xs wt-icon--external wt-icon--placeholder"></span>
+        <span class="ecl-icon ecl-icon--2xs ecl-link__icon sc-ecl-link-ec wt-icon--external wt-icon--placeholder"></span>
       </ecl-icon>
     </slot-fb>
   </a>
@@ -47,7 +47,7 @@ exports[`ecl-link renders correctly with an icon after 1`] = `
     </span>
     <slot-fb hidden="" name="icon-after"></slot-fb>
     <ecl-icon class="ecl-link__icon" icon="check" slot="icon-after">
-      <span class="ecl-icon wt-icon--check wt-icon--placeholder wt-icon--xs"></span>
+      <span class="ecl-icon ecl-icon--xs wt-icon--check wt-icon--placeholder"></span>
     </ecl-icon>
   </a>
 </ecl-link>
@@ -58,7 +58,7 @@ exports[`ecl-link renders correctly with an icon before 1`] = `
   <!---->
   <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone" href="/example.html">
     <ecl-icon class="ecl-link__icon" icon="arrow-left" slot="icon-before">
-      <span class="ecl-icon wt-icon--arrow-left wt-icon--placeholder wt-icon--xs"></span>
+      <span class="ecl-icon ecl-icon--xs wt-icon--arrow-left wt-icon--placeholder"></span>
     </ecl-icon>
     <span class="ecl-link__label">
       Link label
@@ -68,7 +68,7 @@ exports[`ecl-link renders correctly with an icon before 1`] = `
 `;
 
 exports[`ecl-link renders correctly with an indicator 1`] = `
-<ecl-link indicator="true" indicator-value="5" path="/example.html" variant="standalone">
+<ecl-link indicator="true" indicator-label="label for screen readers" indicator-value="5" path="/example.html" variant="standalone">
   <!---->
   <a class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone" href="/example.html">
     <span class="ecl-link__label">
@@ -76,12 +76,15 @@ exports[`ecl-link renders correctly with an indicator 1`] = `
     </span>
     <span class="ecl-link__icon-container">
       <ecl-icon class="ecl-link__icon" icon="check" slot="icon-after">
-        <span class="ecl-icon wt-icon--check wt-icon--placeholder wt-icon--xs"></span>
+        <span class="ecl-icon ecl-icon--xs wt-icon--check wt-icon--placeholder"></span>
       </ecl-icon>
-      <ecl-indicator ecl-script="">
+      <ecl-indicator ecl-script="" sr-label="label for screen readers">
         <span class="ecl-indicator" data-ecl-auto-initialized="true" data-ecl-indicator>
           <span class="ecl-indicator__value">
             5
+          </span>
+          <span class="ecl-indicator__label">
+            label for screen readers
           </span>
         </span>
       </ecl-indicator>

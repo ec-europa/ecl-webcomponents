@@ -14,6 +14,7 @@ const getArgs = () => {
     indicator: false,
     disabled: false,
     indicatorValue: 3,
+    indicatorLabel: '',
   };
 };
 
@@ -105,6 +106,11 @@ const getArgTypes = () => {
       description: 'Value of the indicator (only visible when showIndicator is true)',
       if: { arg: 'indicator', truthy: true },
     },
+    indicatorLabel: {
+      name: 'indicator-label',
+      type: { name: 'string' },
+      if: { arg: 'indicator'},
+    }
   };
 };
 
@@ -119,7 +125,7 @@ const Template = (args) => {
     ${args.disabled ? 'disabled' : ''}
     hide-label="${!!args.hideLabel}"
     button-style="${args.buttonStyle}"
-    ${args.indicator && args.hideLabel ? `indicator indicator-value="${args.indicatorValue}"` : ''}
+    ${args.indicator && args.hideLabel ? `indicator indicator-value="${args.indicatorValue}" indicator-label="${args.indicatorLabel}"` : ''}
   >
     ${args.icon && args.iconPosition === 'before' ?
       `<ecl-icon 
