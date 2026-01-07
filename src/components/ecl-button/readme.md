@@ -15,6 +15,7 @@
 | `indicator`             | `indicator`               |             | `boolean` | `false`     |
 | `indicatorValue`        | `indicator-value`         |             | `string`  | `''`        |
 | `itemId`                | `item-id`                 |             | `string`  | `undefined` |
+| `size`                  | `size`                    |             | `string`  | `'l'`       |
 | `styleClass`            | `style-class`             |             | `string`  | `''`        |
 | `theme`                 | `theme`                   |             | `string`  | `undefined` |
 | `type`                  | `type`                    |             | `string`  | `'submit'`  |

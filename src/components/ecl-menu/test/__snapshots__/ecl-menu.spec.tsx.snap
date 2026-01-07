@@ -95,9 +95,9 @@ exports[`ecl-menu renders 1`] = `
               <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Item 2 label
               </a>
-              <ecl-button data-ecl-menu-caret hide-label="">
+              <ecl-button data-ecl-menu-caret>
                 <!---->
-                <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button class="ecl-button ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
@@ -153,9 +153,9 @@ exports[`ecl-menu renders 1`] = `
               <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Principles, countries, history
               </a>
-              <ecl-button data-ecl-menu-caret hide-label="">
+              <ecl-button data-ecl-menu-caret>
                 <!---->
-                <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button class="ecl-button ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
@@ -208,9 +208,9 @@ exports[`ecl-menu renders 1`] = `
               <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Priorities and actions
               </a>
-              <ecl-button data-ecl-menu-caret hide-label="">
+              <ecl-button data-ecl-menu-caret>
                 <!---->
-                <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button class="ecl-button ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
@@ -263,9 +263,9 @@ exports[`ecl-menu renders 1`] = `
               <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Live, work, study
               </a>
-              <ecl-button data-ecl-menu-caret hide-label="">
+              <ecl-button data-ecl-menu-caret>
                 <!---->
-                <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button class="ecl-button ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
@@ -430,9 +430,9 @@ exports[`ecl-menu renders 1`] = `
               <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 News and events
               </a>
-              <ecl-button data-ecl-menu-caret hide-label="">
+              <ecl-button data-ecl-menu-caret>
                 <!---->
-                <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button class="ecl-button ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
@@ -517,9 +517,9 @@ exports[`ecl-menu renders 1`] = `
               <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 European years
               </a>
-              <ecl-button data-ecl-menu-caret hide-label="">
+              <ecl-button data-ecl-menu-caret>
                 <!---->
-                <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button class="ecl-button ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
@@ -556,9 +556,9 @@ exports[`ecl-menu renders 1`] = `
               <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Visit a European Union institution
               </a>
-              <ecl-button data-ecl-menu-caret hide-label="">
+              <ecl-button data-ecl-menu-caret>
                 <!---->
-                <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button class="ecl-button ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
@@ -595,9 +595,9 @@ exports[`ecl-menu renders 1`] = `
               <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Jobs &amp; traineeships in EU institutions
               </a>
-              <ecl-button data-ecl-menu-caret hide-label="">
+              <ecl-button data-ecl-menu-caret>
                 <!---->
-                <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button class="ecl-button ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">

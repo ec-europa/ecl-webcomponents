@@ -20,6 +20,19 @@ describe('ecl-button', () => {
 
     expect(page.root).toMatchSnapshot();
   });
+  it('renders correctly with small size', async () => {
+    const page = await newSpecPage({
+      components: [EclButton, EclIcon],
+      html: `<ecl-button
+              variant="primary"
+              size: 's',
+            >
+              Button label
+            </ecl-button>`,
+    });
+
+    expect(page.root).toMatchSnapshot();
+  });
   it('renders correctly with an icon after', async () => {
     const page = await newSpecPage({
       components: [EclButton, EclIcon],

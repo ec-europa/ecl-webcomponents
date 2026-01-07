@@ -156,6 +156,10 @@ export namespace Components {
         "indicatorValue": string;
         "itemId": string;
         /**
+          * @default 'l'
+         */
+        "size": string;
+        /**
           * @default ''
          */
         "styleClass": string;
@@ -2744,6 +2748,10 @@ declare namespace LocalJSX {
          */
         "indicatorValue"?: string;
         "itemId"?: string;
+        /**
+          * @default 'l'
+         */
+        "size"?: string;
         /**
           * @default ''
          */

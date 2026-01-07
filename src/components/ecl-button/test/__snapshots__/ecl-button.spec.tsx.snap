@@ -69,3 +69,16 @@ exports[`ecl-button renders correctly with an indicator 1`] = `
   </button>
 </ecl-button>
 `;
+
+exports[`ecl-button renders correctly with small size 1`] = `
+<ecl-button 's',="" size:="" variant="primary">
+  <!---->
+  <button class="ecl-button ecl-button--primary" type="submit">
+    <span class="ecl-button__container">
+      <span class="ecl-button__label" data-ecl-label>
+        Button label
+      </span>
+    </span>
+  </button>
+</ecl-button>
+`;

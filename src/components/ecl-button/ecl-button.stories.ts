@@ -5,6 +5,7 @@ const getArgs = () => {
     label: 'Button label',
     type: 'button',
     variant: 'primary',
+    size: 'l',
     buttonStyle: '',
     icon: '',
     iconPosition: 'after',
@@ -38,6 +39,22 @@ const getArgTypes = () => {
       name: 'button style',
       type: { name: 'select' },
       options: ['highlight', 'neutral', 'inverted'],
+    },
+    size: {
+      type: { name: 'select' },
+      options: ['s', 'm', 'l'],
+      control: {
+        labels: {
+          s: 'small',
+          m: 'medium',
+          l: 'large',
+        },
+      },
+      mapping: {
+        small: 's',
+        medium: 'm',
+        large: 'l',
+      },
     },
     disabled: {
       name: 'disabled',
@@ -125,6 +142,7 @@ const Template = (args) => {
     ${args.disabled ? 'disabled' : ''}
     hide-label="${!!args.hideLabel}"
     button-style="${args.buttonStyle}"
+    size="${args.size}"
     ${args.indicator && args.hideLabel ? `indicator indicator-value="${args.indicatorValue}" indicator-label="${args.indicatorLabel}"` : ''}
   >
     ${args.icon && args.iconPosition === 'before' ?

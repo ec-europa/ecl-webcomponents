@@ -17,6 +17,7 @@ export class EclButton {
   @Prop() buttonStyle: string;
   @Prop() variant: string = 'primary';
   @Prop({ mutable: true }) theme: string;
+  @Prop() size: string = 'l';
   @Prop() containerExtraClasses: string;
   @Prop() hideLabel: boolean = false;    
   @Prop() ariaControls: string;
@@ -63,6 +64,7 @@ export class EclButton {
       `ecl-button--${this.variant}`,
       this.hideLabel ? 'ecl-button--icon-only' : '',
       this.buttonStyle ? `ecl-button--${this.buttonStyle}` : '',
+      this.size !== 'l' ? `ecl-button--${this.size}` : '',
       this.styleClass,
     ].join(' ').trim();
   }
