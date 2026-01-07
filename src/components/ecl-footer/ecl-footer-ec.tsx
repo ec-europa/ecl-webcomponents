@@ -136,16 +136,8 @@ export class EclFooterEc {
                   <ecl-link
                     inverted
                     path={this.siteLink}
-                    variant="standalone"
                   >
                     {this.siteName}
-                    <ecl-icon
-                      icon="arrow-left"
-                      flip="horizontal"
-                      slot="icon-after"
-                      color="inverted"
-                      size="s"
-                    ></ecl-icon>
                   </ecl-link>
                 </div>
               }

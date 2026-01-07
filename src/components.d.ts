@@ -675,12 +675,14 @@ export namespace Components {
         "coOwnerLinks": string;
         "coOwnerTitle": string;
         "description": string;
+        "descriptionName": string;
         "logoAlt": string;
         "logoAriaLabel": string;
         "logoLangCode": string;
         "logoLink": string;
         "logoTitle": string;
         "siteName": string;
+        "siteNameLink": string;
         /**
           * @default ''
          */
@@ -3271,12 +3273,14 @@ declare namespace LocalJSX {
         "coOwnerLinks"?: string;
         "coOwnerTitle"?: string;
         "description"?: string;
+        "descriptionName"?: string;
         "logoAlt"?: string;
         "logoAriaLabel"?: string;
         "logoLangCode"?: string;
         "logoLink"?: string;
         "logoTitle"?: string;
         "siteName"?: string;
+        "siteNameLink"?: string;
         /**
           * @default ''
          */

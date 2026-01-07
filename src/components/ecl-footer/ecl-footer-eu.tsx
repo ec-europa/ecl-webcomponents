@@ -21,8 +21,10 @@ export class EclFooterEu {
   @Prop() logoAriaLabel: string;
   @Prop() logoLangCode: string;
   @Prop() siteName: string;
+  @Prop() siteNameLink: string;
   @Prop() variant: string;
   @Prop() description: string;
+  @Prop() descriptionName: string;
   @Prop() coOwnerTitle: string;
   @Prop() coOwnerLinks: string;
 
@@ -105,9 +107,23 @@ export class EclFooterEu {
             <div class="ecl-site-footer__row">
               <div class="ecl-site-footer__column">
                 <div class="ecl-site-footer__section  ecl-site-footer__section--site-info">
-                  <h2 class="ecl-site-footer__title">{this.siteName}</h2>
+                  <h2 class="ecl-site-footer__title">
+                { !this.siteNameLink ? this.siteName : 
+                    <ecl-link
+                      path={this.siteNameLink}
+                      style-class={`ecl-site-footer__title-link sc-ecl-footer-eu-${this.theme}`}
+                    >
+                      {this.siteName}
+                    </ecl-link>
+                }
+                  </h2>
                   <div class="ecl-site-footer__description">
                     {this.description}
+                  {this.descriptionName &&
+                    <span class="ecl-site-footer__description-name">
+                      {` ${this.descriptionName}`}
+                    </span>
+                  }
                   </div>
                   <ul class="ecl-site-footer__list">
                     <slot name="ecl-footer-list-info"></slot>
