@@ -1,5 +1,4 @@
 const getArgs = () => ({
-  eclScript: true,
   bannerTitle: 'Headline sed elit lorem.',
   description: 'Pellentesque tempor tincidunt quam, finibus vulputate eros iaculis pharetra orci arcu, dictum maximus arcu pellentesque eget. Cras massa nunc.',
   ctaLabel: "",
@@ -16,11 +15,6 @@ const getArgs = () => ({
 });
 
 const getArgTypes = () => ({
-  eclScript: {
-    name: 'ecl-script',
-    type: { name: 'boolean' },
-    description: 'Use the ecl script',
-  },
   size: {
     name: 'banner size',
     type: 'select',
