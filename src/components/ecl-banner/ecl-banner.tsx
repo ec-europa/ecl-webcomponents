@@ -22,6 +22,7 @@ export class EclBanner {
   @Prop() fullWidth: boolean = false;
   @Prop() bannerTitle: string;
   @Prop() bannerTitleLink: string;
+  @Prop() descriptionLink: string;
   @Prop() image: string;
   @Prop() eclScript: boolean = true;
   @Prop() sources: string;
@@ -202,7 +203,7 @@ export class EclBanner {
                 { this.bannerTitleLink ?
                   <ecl-link
                     path={this.bannerTitleLink}
-                    variant="standalone"
+                    style-class={`ecl-banner__title-link sc-ecl-banner-${this.theme}`}
                     >
                       { this.bannerTitle }
                     </ecl-link> : this.bannerTitle
@@ -212,7 +213,14 @@ export class EclBanner {
             }
               <p class="ecl-banner__description">
                 <span class="ecl-banner__description-text">
-                  <slot></slot>
+                { this.descriptionLink ?
+                  <ecl-link
+                    path={this.descriptionLink}
+                    style-class={`ecl-banner__description-link sc-ecl-banner-${this.theme}`}
+                  > <slot></slot>
+                  </ecl-link>
+                  : <slot></slot>
+                }
                 </span>
               </p>
             { this.ctaLabel && this.ctaLink ?

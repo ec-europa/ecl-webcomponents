@@ -17,6 +17,7 @@
 | `ctaClicked`      | `cta-clicked`       |             | `boolean` | `false`     |
 | `ctaLabel`        | `cta-label`         |             | `string`  | `undefined` |
 | `ctaLink`         | `cta-link`          |             | `string`  | `undefined` |
+| `descriptionLink` | `description-link`  |             | `string`  | `undefined` |
 | `eclScript`       | `ecl-script`        |             | `boolean` | `true`      |
 | `external`        | `external`          |             | `boolean` | `false`     |
 | `fontColor`       | `font-color`        |             | `string`  | `'dark'`    |

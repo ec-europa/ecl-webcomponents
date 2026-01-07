@@ -1,20 +1,38 @@
+import { randomizedLink } from "../../utils/randomizedLink"; 
+
 const getArgs = () => ({
   bannerTitle: 'Headline sed elit lorem.',
+  bannerTitleLink: true,
   description: 'Pellentesque tempor tincidunt quam, finibus vulputate eros iaculis pharetra orci arcu, dictum maximus arcu pellentesque eget. Cras massa nunc.',
+  descriptionLink: false,
   ctaLabel: "",
   ctaLink: "/example.html",
+  credit: '© Copyright or credit',
   image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
+  size: 'm',
   fullWidth: false,
   horizontal: 'left',
   vertical: 'center',
   fontSize: 'm',
   fontColor: 'dark',
   boxBackground: 'light',
-  credit: '© Copyright or credit',
-  size: 'm',
 });
 
 const getArgTypes = () => ({
+  bannerTitle: {
+    name: 'title',
+    type: { name: 'string' },
+    description: 'Title of the banner',
+  },
+  bannerTitleLink: {
+    name: 'banner-title-link',
+    type: { name: 'boolean' },
+    description: 'Link for the title of the banner',
+  },
+  description: {
+    type: { name: 'string' },
+    description: 'Banner description',
+  },
   size: {
     name: 'banner size',
     type: 'select',
@@ -35,10 +53,9 @@ const getArgTypes = () => ({
       large: 'l',
     },
   },
-  bannerTitle: {
-    name: 'title',
-    type: { name: 'string' },
-    description: 'Title of the banner',
+  descriptionLink: {
+    name: 'description-link',
+    type: { name: 'boolean' },
   },
   horizontal: {
     name: 'horizontal',
@@ -75,10 +92,6 @@ const getArgTypes = () => ({
       center: 'center',
       bottom: 'bottom',
     },
-  },
-  description: {
-    type: { name: 'string' },
-    description: 'Banner description',
   },
   image: {
     type: { name: 'string' },
@@ -184,6 +197,8 @@ const Template = args =>
     ${args.fontColor ? `font-color="${args.fontColor}"` : '' }
     box-background="${args.boxBackground}"
     size="${args.size}"
+    banner-title-link="${args.bannerTitleLink ? randomizedLink('/example.html') : ''}"
+    description-link="${args.descriptionLink ? randomizedLink('/example.html') : ''}"
     ecl-script
   >
     ${args.description}
@@ -212,6 +227,8 @@ const VideoTemplate = args =>
     ${args.fontColor ? `font-color="${args.fontColor}"` : '' }
     font-size="${args.fontSize}"
     box-background="${args.boxBackground}"
+    banner-title-link="${args.bannerTitleLink ? randomizedLink('/example.html') : ''}"
+    description-link="${args.descriptionLink ? randomizedLink('/example.html') : ''}"
     ecl-script
   >
     ${args.description}
@@ -234,6 +251,8 @@ const NomediaTemplate = args =>
     horizontal="${args.horizontal}"
     vertical="${args.vertical}"
     font-size="${args.fontSize}"
+    banner-title-link="${args.bannerTitleLink ? randomizedLink('/example.html') : ''}"
+    description-link="${args.descriptionLink ? randomizedLink('/example.html') : ''}"
     ecl-script
   >
     ${args.description}

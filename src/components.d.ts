@@ -46,6 +46,7 @@ export namespace Components {
         "ctaClicked": boolean;
         "ctaLabel": string;
         "ctaLink": string;
+        "descriptionLink": string;
         /**
           * @default true
          */
@@ -2641,6 +2642,7 @@ declare namespace LocalJSX {
         "ctaClicked"?: boolean;
         "ctaLabel"?: string;
         "ctaLink"?: string;
+        "descriptionLink"?: string;
         /**
           * @default true
          */
