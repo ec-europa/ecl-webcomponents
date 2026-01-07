@@ -298,6 +298,10 @@ export namespace Components {
         "metaPrimary": string;
         "metaSecondary": string;
         /**
+          * @default 'vertical'
+         */
+        "metaSecondaryDir": string;
+        /**
           * @default ''
          */
         "styleClass": string;
@@ -2893,6 +2897,10 @@ declare namespace LocalJSX {
         "hasTitle"?: boolean;
         "metaPrimary"?: string;
         "metaSecondary"?: string;
+        /**
+          * @default 'vertical'
+         */
+        "metaSecondaryDir"?: string;
         /**
           * @default ''
          */

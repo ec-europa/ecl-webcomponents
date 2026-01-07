@@ -7,19 +7,20 @@
 
 ## Properties
 
-| Property            | Attribute             | Description | Type      | Default     |
-| ------------------- | --------------------- | ----------- | --------- | ----------- |
-| `eclScript`         | `ecl-script`          |             | `boolean` | `false`     |
-| `hasDescription`    | `has-description`     |             | `boolean` | `undefined` |
-| `hasLabels`         | `has-labels`          |             | `boolean` | `undefined` |
-| `hasLinks`          | `has-links`           |             | `boolean` | `undefined` |
-| `hasLists`          | `has-lists`           |             | `boolean` | `undefined` |
-| `hasSecondaryLinks` | `has-secondary-links` |             | `boolean` | `undefined` |
-| `hasTitle`          | `has-title`           |             | `boolean` | `undefined` |
-| `metaPrimary`       | `meta-primary`        |             | `string`  | `undefined` |
-| `metaSecondary`     | `meta-secondary`      |             | `string`  | `undefined` |
-| `styleClass`        | `style-class`         |             | `string`  | `''`        |
-| `theme`             | `theme`               |             | `string`  | `undefined` |
+| Property            | Attribute             | Description | Type      | Default      |
+| ------------------- | --------------------- | ----------- | --------- | ------------ |
+| `eclScript`         | `ecl-script`          |             | `boolean` | `false`      |
+| `hasDescription`    | `has-description`     |             | `boolean` | `undefined`  |
+| `hasLabels`         | `has-labels`          |             | `boolean` | `undefined`  |
+| `hasLinks`          | `has-links`           |             | `boolean` | `undefined`  |
+| `hasLists`          | `has-lists`           |             | `boolean` | `undefined`  |
+| `hasSecondaryLinks` | `has-secondary-links` |             | `boolean` | `undefined`  |
+| `hasTitle`          | `has-title`           |             | `boolean` | `undefined`  |
+| `metaPrimary`       | `meta-primary`        |             | `string`  | `undefined`  |
+| `metaSecondary`     | `meta-secondary`      |             | `string`  | `undefined`  |
+| `metaSecondaryDir`  | `meta-secondary-dir`  |             | `string`  | `'vertical'` |
+| `styleClass`        | `style-class`         |             | `string`  | `''`         |
+| `theme`             | `theme`               |             | `string`  | `undefined`  |
 
 
 ## Dependencies

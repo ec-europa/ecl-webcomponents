@@ -26,6 +26,7 @@ export class EclContentBlock {
   @Prop() hasLists: boolean;
   @Prop() metaPrimary: string;
   @Prop() metaSecondary: string;
+  @Prop() metaSecondaryDir: string = 'vertical';
 
   getClass(): string {
     return [
@@ -131,7 +132,7 @@ export class EclContentBlock {
         </div>
       }
       { metaSecondaryArray &&
-        <ul class="ecl-content-block__secondary-meta-container">
+        <ul class={`ecl-content-block__secondary-meta-container ${this.metaSecondaryDir === 'horizontal' ? 'ecl-content-block__secondary-meta-container--horizontal' : ''}`}>
         { metaSecondaryArray.map((meta) => (
           <li class="ecl-content-block__secondary-meta-item">
           { meta.icon &&

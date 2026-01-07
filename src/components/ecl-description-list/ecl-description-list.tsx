@@ -1,6 +1,6 @@
 import { Component, Prop, h, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const DESCRIPTIONLIST: any;
+import DescriptionList from "@ecl/description-list";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-description-list',
@@ -10,7 +10,6 @@ declare const DESCRIPTIONLIST: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build'],
 })
 export class EclDescriptionList {
   @Element() el: HTMLElement;
@@ -52,32 +51,28 @@ export class EclDescriptionList {
 
   componentWillLoad() {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
 
+  componentDidLoad() {
     if (this.eclScript) {
-      const src = getAssetPath('./build/scripts/ecl-description-list-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const descriptionList = new DESCRIPTIONLIST.DescriptionList(this.el.firstElementChild);
-        descriptionList.init();
-        const firstTerm = this.el.querySelectorAll('.ecl-description-list__term');
-        if (firstTerm[0]) {
-          firstTerm[0].classList.add('is-first');
-        } 
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.DescriptionList = DescriptionList;
 
-        const seeMore = this.el.querySelectorAll('.ecl-description-list__see_more');
-        if (seeMore[0]) {
-          seeMore.forEach((more) => {
-            more.classList.add(`sc-ecl-description-list-${this.theme}`);
-            more.firstElementChild.classList.add(`sc-ecl-description-list-${this.theme}`);
-          });
-        }
-      };
-      document.body.appendChild(script);
+      const descriptionList = new DescriptionList(this.el.firstElementChild);
+      descriptionList.init();
+
+      const firstTerm = this.el.querySelectorAll('.ecl-description-list__term');
+      if (firstTerm[0]) {
+        firstTerm[0].classList.add('is-first');
+      } 
+
+      const seeMore = this.el.querySelectorAll('.ecl-description-list__see_more');
+      if (seeMore[0]) {
+        seeMore.forEach((more) => {
+          more.classList.add(`sc-ecl-description-list-${this.theme}`);
+          more.firstElementChild.classList.add(`sc-ecl-description-list-${this.theme}`);
+        });
+      }
     }
   }
 
