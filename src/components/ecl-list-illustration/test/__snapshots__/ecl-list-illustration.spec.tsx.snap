@@ -151,7 +151,7 @@ exports[`ecl-list-illustration renders correctly as an icon list 1`] = `
     <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
       <div class="ecl-list-illustration__item-content sc-ecl-list-illustration-ec">
         <ecl-icon style-class="ecl-list-illustration__icon sc-ecl-list-illustration-ec">
-          <span class="ecl-icon ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--2xl wt-icon--check-bold wt-icon--placeholder"></span>
+          <span class="ecl-icon ecl-icon--2xl ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--check-bold wt-icon--placeholder"></span>
         </ecl-icon>
         <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
           <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
@@ -168,7 +168,7 @@ exports[`ecl-list-illustration renders correctly as an icon list 1`] = `
     <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
       <div class="ecl-list-illustration__item-content sc-ecl-list-illustration-ec">
         <ecl-icon style-class="ecl-list-illustration__icon sc-ecl-list-illustration-ec">
-          <span class="ecl-icon ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--2xl wt-icon--check-bold wt-icon--placeholder"></span>
+          <span class="ecl-icon ecl-icon--2xl ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--check-bold wt-icon--placeholder"></span>
         </ecl-icon>
         <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
           <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
@@ -193,7 +193,7 @@ exports[`ecl-list-illustration renders correctly with an icon 1`] = `
     <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
       <div class="ecl-list-illustration__item-content sc-ecl-list-illustration-ec">
         <ecl-icon style-class="ecl-list-illustration__icon sc-ecl-list-illustration-ec">
-          <span class="ecl-icon ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--2xl wt-icon--placeholder wt-icon--regulation"></span>
+          <span class="ecl-icon ecl-icon--2xl ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--placeholder wt-icon--regulation"></span>
         </ecl-icon>
         <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
           <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
@@ -210,7 +210,7 @@ exports[`ecl-list-illustration renders correctly with an icon 1`] = `
     <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
       <div class="ecl-list-illustration__item-content sc-ecl-list-illustration-ec">
         <ecl-icon style-class="ecl-list-illustration__icon sc-ecl-list-illustration-ec">
-          <span class="ecl-icon ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--2xl wt-icon--placeholder wt-icon--regulation"></span>
+          <span class="ecl-icon ecl-icon--2xl ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--placeholder wt-icon--regulation"></span>
         </ecl-icon>
         <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
           <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
@@ -227,7 +227,7 @@ exports[`ecl-list-illustration renders correctly with an icon 1`] = `
     <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
       <div class="ecl-list-illustration__item-content sc-ecl-list-illustration-ec">
         <ecl-icon style-class="ecl-list-illustration__icon sc-ecl-list-illustration-ec">
-          <span class="ecl-icon ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--2xl wt-icon--placeholder wt-icon--regulation"></span>
+          <span class="ecl-icon ecl-icon--2xl ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--placeholder wt-icon--regulation"></span>
         </ecl-icon>
         <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
           <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
@@ -244,7 +244,7 @@ exports[`ecl-list-illustration renders correctly with an icon 1`] = `
     <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
       <div class="ecl-list-illustration__item-content sc-ecl-list-illustration-ec">
         <ecl-icon style-class="ecl-list-illustration__icon sc-ecl-list-illustration-ec">
-          <span class="ecl-icon ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--2xl wt-icon--placeholder wt-icon--regulation"></span>
+          <span class="ecl-icon ecl-icon--2xl ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--placeholder wt-icon--regulation"></span>
         </ecl-icon>
         <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
           <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
@@ -261,7 +261,7 @@ exports[`ecl-list-illustration renders correctly with an icon 1`] = `
     <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
       <div class="ecl-list-illustration__item-content sc-ecl-list-illustration-ec">
         <ecl-icon style-class="ecl-list-illustration__icon sc-ecl-list-illustration-ec">
-          <span class="ecl-icon ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--2xl wt-icon--placeholder wt-icon--regulation"></span>
+          <span class="ecl-icon ecl-icon--2xl ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--placeholder wt-icon--regulation"></span>
         </ecl-icon>
         <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
           <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">

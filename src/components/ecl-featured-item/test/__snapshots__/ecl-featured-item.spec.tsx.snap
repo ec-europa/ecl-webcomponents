@@ -23,7 +23,7 @@ exports[`ecl-featured-item renders correctly 1`] = `
               </span>
               <slot-fb hidden="" name="icon-after"></slot-fb>
               <ecl-icon class="ecl-link__icon" slot="icon-after" style-class="sc-ecl-featured-item-ec">
-                <span class="ecl-icon sc-ecl-featured-item-ec wt-icon--arrow-left wt-icon--flip-horizontal wt-icon--placeholder wt-icon--xs"></span>
+                <span class="ecl-icon ecl-icon--xs sc-ecl-featured-item-ec wt-icon--arrow-left wt-icon--flip-horizontal wt-icon--placeholder"></span>
               </ecl-icon>
             </a>
           </ecl-link>
@@ -75,7 +75,7 @@ exports[`ecl-featured-item renders correctly with all the options specified 1`] 
               </span>
               <slot-fb hidden="" name="icon-after"></slot-fb>
               <ecl-icon class="ecl-link__icon" slot="icon-after" style-class="sc-ecl-featured-item-ec">
-                <span class="ecl-icon sc-ecl-featured-item-ec wt-icon--arrow-left wt-icon--flip-horizontal wt-icon--placeholder wt-icon--xs"></span>
+                <span class="ecl-icon ecl-icon--xs sc-ecl-featured-item-ec wt-icon--arrow-left wt-icon--flip-horizontal wt-icon--placeholder"></span>
               </ecl-icon>
             </a>
           </ecl-link>

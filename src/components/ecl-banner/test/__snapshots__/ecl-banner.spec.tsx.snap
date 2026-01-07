@@ -46,7 +46,7 @@ exports[`ecl-banner renders correctly with a video 1`] = `
           <span class="ecl-button__container sc-ecl-banner-ec">
             <span class="ecl-button__label" data-ecl-label></span>
             <ecl-icon slot="icon-after">
-              <span class="ecl-button__icon ecl-icon sc-ecl-banner-ec sc-ecl-button-ec wt-icon--m wt-icon--placeholder wt-icon--play-outline"></span>
+              <span class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-banner-ec sc-ecl-button-ec wt-icon--placeholder wt-icon--play-outline"></span>
             </ecl-icon>
           </span>
         </button>
@@ -57,7 +57,7 @@ exports[`ecl-banner renders correctly with a video 1`] = `
           <span class="ecl-button__container sc-ecl-banner-ec">
             <span class="ecl-button__label" data-ecl-label></span>
             <ecl-icon slot="icon-after">
-              <span class="ecl-button__icon ecl-icon sc-ecl-banner-ec sc-ecl-button-ec wt-icon--m wt-icon--pause-outline wt-icon--placeholder"></span>
+              <span class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-banner-ec sc-ecl-button-ec wt-icon--pause-outline wt-icon--placeholder"></span>
             </ecl-icon>
           </span>
         </button>
@@ -117,7 +117,7 @@ exports[`ecl-banner renders correctly with an image 1`] = `
                 </span>
                 <slot-fb hidden="" name="icon-after"></slot-fb>
                 <ecl-icon class="ecl-link__icon" slot="icon-after">
-                  <span class="ecl-icon wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-90 wt-icon--xs"></span>
+                  <span class="ecl-icon ecl-icon--xs wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-90"></span>
                 </ecl-icon>
               </a>
             </ecl-link>

@@ -10,7 +10,7 @@ exports[`ecl-pagination renders 1`] = `
           <!---->
           <a aria-label="Previous page" class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--icon-only ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
             <ecl-icon class="ecl-link__icon" slot="icon-before" style-class="sc-ecl-pagination-ec">
-              <span class="ecl-icon sc-ecl-pagination-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270 wt-icon--xs"></span>
+              <span class="ecl-icon ecl-icon--xs sc-ecl-pagination-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270"></span>
             </ecl-icon>
             <span class="ecl-link__label">
               Previous
@@ -105,7 +105,7 @@ exports[`ecl-pagination renders 1`] = `
             </span>
             <slot-fb hidden="" name="icon-after"></slot-fb>
             <ecl-icon class="ecl-link__icon" slot="icon-after" style-class="sc-ecl-pagination-ec">
-              <span class="ecl-icon sc-ecl-pagination-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-90 wt-icon--xs"></span>
+              <span class="ecl-icon ecl-icon--xs sc-ecl-pagination-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-90"></span>
             </ecl-icon>
           </a>
         </ecl-link>

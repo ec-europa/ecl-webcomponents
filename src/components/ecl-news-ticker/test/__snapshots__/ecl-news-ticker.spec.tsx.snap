@@ -9,7 +9,7 @@ exports[`ecl-news-ticker renders 1`] = `
         <ul class="ecl-news-ticker__slides">
           <li class="ecl-news-ticker__slide sc-ecl-news-ticker-ec">
             <ecl-icon>
-              <span class="ecl-icon ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--global wt-icon--l wt-icon--placeholder"></span>
+              <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--global wt-icon--placeholder"></span>
             </ecl-icon>
             <ecl-link>
               <!---->
@@ -22,7 +22,7 @@ exports[`ecl-news-ticker renders 1`] = `
           </li>
           <li class="ecl-news-ticker__slide sc-ecl-news-ticker-ec">
             <ecl-icon>
-              <span class="ecl-icon ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--information wt-icon--l wt-icon--placeholder"></span>
+              <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--information wt-icon--placeholder"></span>
             </ecl-icon>
             <ecl-link>
               <!---->
@@ -45,7 +45,7 @@ exports[`ecl-news-ticker renders 1`] = `
           </li>
           <li class="ecl-news-ticker__slide sc-ecl-news-ticker-ec">
             <ecl-icon>
-              <span class="ecl-icon ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--l wt-icon--livestreaming wt-icon--placeholder"></span>
+              <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--livestreaming wt-icon--placeholder"></span>
             </ecl-icon>
             <ecl-link>
               <!---->
@@ -58,7 +58,7 @@ exports[`ecl-news-ticker renders 1`] = `
           </li>
           <li class="ecl-news-ticker__slide sc-ecl-news-ticker-ec">
             <ecl-icon>
-              <span class="ecl-icon ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--global wt-icon--l wt-icon--placeholder"></span>
+              <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--global wt-icon--placeholder"></span>
             </ecl-icon>
             <ecl-link>
               <!---->
@@ -90,7 +90,7 @@ exports[`ecl-news-ticker renders 1`] = `
               Prev item
             </span>
             <ecl-icon slot="icon-after">
-              <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--corner-arrow wt-icon--l wt-icon--placeholder wt-icon--rotate-270"></span>
+              <span class="ecl-button__icon ecl-icon ecl-icon--l sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270"></span>
             </ecl-icon>
           </span>
         </button>
@@ -98,7 +98,7 @@ exports[`ecl-news-ticker renders 1`] = `
           <span class="ecl-button__container">
             <span class="ecl-button__label" data-ecl-label></span>
             <ecl-icon slot="icon-after">
-              <span class="ecl-button__icon ecl-icon ecl-news-ticker__icon-active sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--l wt-icon--placeholder wt-icon--play-outline"></span>
+              <span class="ecl-button__icon ecl-icon ecl-icon--l ecl-news-ticker__icon-active sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--placeholder wt-icon--play-outline"></span>
             </ecl-icon>
           </span>
         </button>
@@ -108,7 +108,7 @@ exports[`ecl-news-ticker renders 1`] = `
               Pause news ticker
             </span>
             <ecl-icon slot="icon-after">
-              <span class="ecl-button__icon ecl-icon ecl-news-ticker__icon-active sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--l wt-icon--pause-outline wt-icon--placeholder"></span>
+              <span class="ecl-button__icon ecl-icon ecl-icon--l ecl-news-ticker__icon-active sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--pause-outline wt-icon--placeholder"></span>
             </ecl-icon>
           </span>
         </button>
@@ -118,7 +118,7 @@ exports[`ecl-news-ticker renders 1`] = `
               Next item
             </span>
             <ecl-icon slot="icon-after">
-              <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--corner-arrow wt-icon--l wt-icon--placeholder wt-icon--rotate-90"></span>
+              <span class="ecl-button__icon ecl-icon ecl-icon--l sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-90"></span>
             </ecl-icon>
           </span>
         </button>

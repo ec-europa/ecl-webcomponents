@@ -15,10 +15,10 @@ exports[`ecl-accordion renders 1`] = `
               </span>
               <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
                 <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
-                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder wt-icon--s"></span>
+                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder"></span>
                 </ecl-icon>
                 <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
-                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus wt-icon--s"></span>
+                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus"></span>
                 </ecl-icon>
               </span>
             </span>
@@ -40,10 +40,10 @@ exports[`ecl-accordion renders 1`] = `
               </span>
               <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
                 <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
-                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder wt-icon--s"></span>
+                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder"></span>
                 </ecl-icon>
                 <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
-                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus wt-icon--s"></span>
+                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus"></span>
                 </ecl-icon>
               </span>
             </span>
@@ -65,10 +65,10 @@ exports[`ecl-accordion renders 1`] = `
               </span>
               <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
                 <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
-                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder wt-icon--s"></span>
+                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder"></span>
                 </ecl-icon>
                 <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
-                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus wt-icon--s"></span>
+                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus"></span>
                 </ecl-icon>
               </span>
             </span>

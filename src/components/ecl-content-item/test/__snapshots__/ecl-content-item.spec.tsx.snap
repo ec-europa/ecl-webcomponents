@@ -52,7 +52,7 @@ exports[`ecl-content-item renders 1`] = `
         <ul class="ecl-content-block__secondary-meta-container">
           <li class="ecl-content-block__secondary-meta-item">
             <ecl-icon style-class="ecl-content-block__secondary-meta-icon sc-ecl-content-block-ec">
-              <span class="ecl-content-block__secondary-meta-icon ecl-icon sc-ecl-content-block-ec wt-icon--calendar wt-icon--placeholder wt-icon--s"></span>
+              <span class="ecl-content-block__secondary-meta-icon ecl-icon ecl-icon--s sc-ecl-content-block-ec wt-icon--calendar wt-icon--placeholder"></span>
             </ecl-icon>
             <span class="ecl-content-block__secondary-meta-label">
               2018/10/22
@@ -60,7 +60,7 @@ exports[`ecl-content-item renders 1`] = `
           </li>
           <li class="ecl-content-block__secondary-meta-item">
             <ecl-icon style-class="ecl-content-block__secondary-meta-icon sc-ecl-content-block-ec">
-              <span class="ecl-content-block__secondary-meta-icon ecl-icon sc-ecl-content-block-ec wt-icon--location wt-icon--placeholder wt-icon--s"></span>
+              <span class="ecl-content-block__secondary-meta-icon ecl-icon ecl-icon--s sc-ecl-content-block-ec wt-icon--location wt-icon--placeholder"></span>
             </ecl-icon>
             <span class="ecl-content-block__secondary-meta-label">
               Luxembourg
