@@ -16,7 +16,7 @@ export class EclCarousel {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
   @Prop() carouselId: string;
   @Prop() colorMode: string;
   @Prop() slidesNumber: number;

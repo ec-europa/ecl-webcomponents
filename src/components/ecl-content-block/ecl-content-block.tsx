@@ -18,7 +18,7 @@ export class EclContentBlock {
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
   @Prop() hasDescription: boolean;
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
   @Prop() hasTitle: boolean;
   @Prop() hasLabels: boolean;
   @Prop() hasLinks: boolean;

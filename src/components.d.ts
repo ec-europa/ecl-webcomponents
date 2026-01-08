@@ -195,7 +195,7 @@ export namespace Components {
          */
         "counterLabel": string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         /**
@@ -286,7 +286,7 @@ export namespace Components {
     }
     interface EclContentBlock {
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         "hasDescription": boolean;
@@ -398,7 +398,7 @@ export namespace Components {
          */
         "colorMode": string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         "moreLabel": string;
@@ -886,7 +886,7 @@ export namespace Components {
     }
     interface EclIndicator {
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         /**
@@ -1190,7 +1190,7 @@ export namespace Components {
     interface EclModal {
         "closeLabel": string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         "itemId": string;
@@ -1252,7 +1252,7 @@ export namespace Components {
     interface EclNewsTicker {
         "counterLabel": string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         "srNext": string;
@@ -1274,7 +1274,7 @@ export namespace Components {
     interface EclNotification {
         "closeLabel": string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         "notificationTitle": string;
@@ -1295,7 +1295,7 @@ export namespace Components {
          */
         "descriptionPosition": string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         /**
@@ -1337,6 +1337,13 @@ export namespace Components {
           * @default ''
          */
         "icon": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclPageInformation {
         /**
           * @default ''
          */
@@ -1554,7 +1561,7 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         /**
@@ -1871,7 +1878,7 @@ export namespace Components {
     interface EclTimeline {
         "colorMode": string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript": boolean;
         "styleClass": string;
@@ -2328,6 +2335,12 @@ declare global {
         prototype: HTMLEclPageHeaderMetaItemElement;
         new (): HTMLEclPageHeaderMetaItemElement;
     };
+    interface HTMLEclPageInformationElement extends Components.EclPageInformation, HTMLStencilElement {
+    }
+    var HTMLEclPageInformationElement: {
+        prototype: HTMLEclPageInformationElement;
+        new (): HTMLEclPageInformationElement;
+    };
     interface HTMLEclPaginationElement extends Components.EclPagination, HTMLStencilElement {
     }
     var HTMLEclPaginationElement: {
@@ -2580,6 +2593,7 @@ declare global {
         "ecl-notification": HTMLEclNotificationElement;
         "ecl-page-header": HTMLEclPageHeaderElement;
         "ecl-page-header-meta-item": HTMLEclPageHeaderMetaItemElement;
+        "ecl-page-information": HTMLEclPageInformationElement;
         "ecl-pagination": HTMLEclPaginationElement;
         "ecl-pagination-item": HTMLEclPaginationItemElement;
         "ecl-picture": HTMLEclPictureElement;
@@ -2795,7 +2809,7 @@ declare namespace LocalJSX {
          */
         "counterLabel"?: string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         /**
@@ -2886,7 +2900,7 @@ declare namespace LocalJSX {
     }
     interface EclContentBlock {
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         "hasDescription"?: boolean;
@@ -3001,7 +3015,7 @@ declare namespace LocalJSX {
          */
         "colorMode"?: string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         "moreLabel"?: string;
@@ -3489,7 +3503,7 @@ declare namespace LocalJSX {
     }
     interface EclIndicator {
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         /**
@@ -3796,7 +3810,7 @@ declare namespace LocalJSX {
     interface EclModal {
         "closeLabel"?: string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         "itemId"?: string;
@@ -3858,7 +3872,7 @@ declare namespace LocalJSX {
     interface EclNewsTicker {
         "counterLabel"?: string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         "srNext"?: string;
@@ -3880,7 +3894,7 @@ declare namespace LocalJSX {
     interface EclNotification {
         "closeLabel"?: string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         "notificationTitle"?: string;
@@ -3901,7 +3915,7 @@ declare namespace LocalJSX {
          */
         "descriptionPosition"?: string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         /**
@@ -3943,6 +3957,13 @@ declare namespace LocalJSX {
           * @default ''
          */
         "icon"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclPageInformation {
         /**
           * @default ''
          */
@@ -4166,7 +4187,7 @@ declare namespace LocalJSX {
          */
         "disabled"?: boolean;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         /**
@@ -4490,7 +4511,7 @@ declare namespace LocalJSX {
     interface EclTimeline {
         "colorMode"?: string;
         /**
-          * @default false
+          * @default true
          */
         "eclScript"?: boolean;
         "styleClass"?: string;
@@ -4597,6 +4618,7 @@ declare namespace LocalJSX {
         "ecl-notification": EclNotification;
         "ecl-page-header": EclPageHeader;
         "ecl-page-header-meta-item": EclPageHeaderMetaItem;
+        "ecl-page-information": EclPageInformation;
         "ecl-pagination": EclPagination;
         "ecl-pagination-item": EclPaginationItem;
         "ecl-picture": EclPicture;
@@ -4681,6 +4703,7 @@ declare module "@stencil/core" {
             "ecl-notification": LocalJSX.EclNotification & JSXBase.HTMLAttributes<HTMLEclNotificationElement>;
             "ecl-page-header": LocalJSX.EclPageHeader & JSXBase.HTMLAttributes<HTMLEclPageHeaderElement>;
             "ecl-page-header-meta-item": LocalJSX.EclPageHeaderMetaItem & JSXBase.HTMLAttributes<HTMLEclPageHeaderMetaItemElement>;
+            "ecl-page-information": LocalJSX.EclPageInformation & JSXBase.HTMLAttributes<HTMLEclPageInformationElement>;
             "ecl-pagination": LocalJSX.EclPagination & JSXBase.HTMLAttributes<HTMLEclPaginationElement>;
             "ecl-pagination-item": LocalJSX.EclPaginationItem & JSXBase.HTMLAttributes<HTMLEclPaginationItemElement>;
             "ecl-picture": LocalJSX.EclPicture & JSXBase.HTMLAttributes<HTMLEclPictureElement>;

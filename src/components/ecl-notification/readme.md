@@ -10,7 +10,7 @@
 | Property            | Attribute            | Description | Type      | Default     |
 | ------------------- | -------------------- | ----------- | --------- | ----------- |
 | `closeLabel`        | `close-label`        |             | `string`  | `undefined` |
-| `eclScript`         | `ecl-script`         |             | `boolean` | `false`     |
+| `eclScript`         | `ecl-script`         |             | `boolean` | `true`      |
 | `notificationTitle` | `notification-title` |             | `string`  | `undefined` |
 | `styleClass`        | `style-class`        |             | `string`  | `undefined` |
 | `theme`             | `theme`              |             | `string`  | `undefined` |

@@ -9,7 +9,7 @@
 
 | Property            | Attribute             | Description | Type      | Default      |
 | ------------------- | --------------------- | ----------- | --------- | ------------ |
-| `eclScript`         | `ecl-script`          |             | `boolean` | `false`      |
+| `eclScript`         | `ecl-script`          |             | `boolean` | `true`       |
 | `hasDescription`    | `has-description`     |             | `boolean` | `undefined`  |
 | `hasLabels`         | `has-labels`          |             | `boolean` | `undefined`  |
 | `hasLinks`          | `has-links`           |             | `boolean` | `undefined`  |

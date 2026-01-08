@@ -9,7 +9,7 @@
 
 | Property     | Attribute     | Description | Type      | Default |
 | ------------ | ------------- | ----------- | --------- | ------- |
-| `eclScript`  | `ecl-script`  |             | `boolean` | `false` |
+| `eclScript`  | `ecl-script`  |             | `boolean` | `true`  |
 | `srLabel`    | `sr-label`    |             | `string`  | `''`    |
 | `styleClass` | `style-class` |             | `string`  | `''`    |
 | `value`      | `value`       |             | `string`  | `''`    |

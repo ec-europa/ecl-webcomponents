@@ -16,7 +16,7 @@ declare const ECL: any;
 export class EclIndicator {
   @Element() el: HTMLElement;
   @Prop() value: string = '';
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
   @Prop() srLabel: string = '';
   @Prop() styleClass: string = '';
 

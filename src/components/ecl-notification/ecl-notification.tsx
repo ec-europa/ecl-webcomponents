@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const NOTIFICATION: any;
+import Notification from "@ecl/notification";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-notification',
@@ -20,7 +20,7 @@ export class EclNotification {
   @Prop() styleClass: string;
   @Prop() notificationTitle: string;
   @Prop() closeLabel: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
   @Prop() withClose: boolean = true;
 
   getClass(): string {
@@ -53,18 +53,10 @@ export class EclNotification {
     }
 
     if (this.eclScript) {
-      const src = getAssetPath('./build/scripts/ecl-notification-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const notification = new NOTIFICATION.Notification(this.el.firstElementChild);
-        notification.init();
-      };
-      document.body.appendChild(script);
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Notification = Notification;
+      const notification = new NOTIFICATION.Notification(this.el.firstElementChild);
+      notification.init();
     }
   }
 

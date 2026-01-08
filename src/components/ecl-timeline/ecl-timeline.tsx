@@ -15,7 +15,7 @@ export class EclTimeline {
   @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
   @Prop() colorMode: string;
   @State() toBeToggled: boolean = false;
 

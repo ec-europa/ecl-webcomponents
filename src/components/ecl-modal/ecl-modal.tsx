@@ -19,7 +19,7 @@ export class EclModal {
   @Prop() withBody: boolean = false;
   @Prop() withBodyFixed: boolean = false;
   @Prop() withHeader: boolean = false;
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
   @Prop() withFooter: boolean = false;
   @Prop() toggleId: string;
   @Prop() size: string = 'l';

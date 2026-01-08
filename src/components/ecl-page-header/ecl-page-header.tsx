@@ -1,7 +1,7 @@
 import { Component, Prop, h, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
+import PageHeaderExpandable from "@ecl/page-header";
 
-declare const PAGEHEADER: any;
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-page-header',
@@ -15,7 +15,7 @@ declare const PAGEHEADER: any;
 
 export class EclPageHeader {
   @Element() el: HTMLElement;
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
   @Prop() image: string ;
@@ -80,20 +80,12 @@ export class EclPageHeader {
         item.replaceWith(item.firstElementChild);
       });
     }
-    if (this.eclScript && this.expandable) {
-      const src = getAssetPath('./build/scripts/ecl-page-header-expandable-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const expandable = new PAGEHEADER.PageHeaderExpandable(this.el.firstElementChild);
-        expandable.init();
-      };
+    if (this.eclScript && this.expandable && this.expandableContent) {
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.PageHeaderExpandable = PageHeaderExpandable;
 
-      document.body.appendChild(script);
+      const expandable = new PageHeaderExpandable(this.el.firstElementChild);
+      expandable.init();
     }
   };
 

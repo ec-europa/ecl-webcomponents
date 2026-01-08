@@ -21,7 +21,7 @@ export class EclNewsTicker {
   @Prop() srPrev: string;
   @Prop() srPause: string;
   @Prop() srPlay: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() eclScript: boolean = true;
 
   getClass(): string {
     return [

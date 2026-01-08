@@ -1452,6 +1452,30 @@ importers:
         specifier: 10.1.0
         version: 10.1.0
 
+  src/components/ecl-page-information:
+    devDependencies:
+      '@ecl/builder':
+        specifier: 5.0.0-alpha.22.2
+        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.1(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.22.2
+        version: 5.0.0-alpha.22.2
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.22.2
+        version: 5.0.0-alpha.22.2
+      '@ecl/page-information':
+        specifier: 5.0.0-alpha.22.2
+        version: 5.0.0-alpha.22.2
+      '@ecl/theme-ec':
+        specifier: 5.0.0-alpha.22.2
+        version: 5.0.0-alpha.22.2
+      '@ecl/theme-eu':
+        specifier: 5.0.0-alpha.22.2
+        version: 5.0.0-alpha.22.2
+      cross-env:
+        specifier: 10.1.0
+        version: 10.1.0
+
   src/components/ecl-pagination:
     devDependencies:
       '@ecl/builder':
