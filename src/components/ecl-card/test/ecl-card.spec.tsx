@@ -4,6 +4,10 @@ import { EclContentBlock } from '../../ecl-content-block/ecl-content-block';
 import { EclLabel } from '../../ecl-label/ecl-label';
 
 describe('ecl-card', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclCard, EclLabel, EclContentBlock],

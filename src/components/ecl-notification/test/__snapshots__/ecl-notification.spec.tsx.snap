@@ -3,7 +3,7 @@
 exports[`ecl-notification renders correctly in the information variant 1`] = `
 <ecl-notification close-label="Close" ecl-script="" message-title="Title for a message" variant="information">
   <!---->
-  <div class="ecl-notification ecl-notification--info" data-ecl-notification role="alert">
+  <div class="ecl-notification ecl-notification--info" data-ecl-auto-initialized="true" data-ecl-notification role="alert">
     <ecl-icon style-class="ecl-notification__icon sc-ecl-notification-ec">
       <span class="ecl-icon ecl-icon--m ecl-notification__icon sc-ecl-notification-ec wt-icon--information wt-icon--placeholder"></span>
     </ecl-icon>
@@ -42,7 +42,7 @@ exports[`ecl-notification renders correctly in the information variant 1`] = `
 exports[`ecl-notification renders correctly in the success variant 1`] = `
 <ecl-notification close-label="Close" ecl-script="" message-title="Title for a message" variant="success">
   <!---->
-  <div class="ecl-notification ecl-notification--success" data-ecl-notification role="alert">
+  <div class="ecl-notification ecl-notification--success" data-ecl-auto-initialized="true" data-ecl-notification role="alert">
     <ecl-icon style-class="ecl-notification__icon sc-ecl-notification-ec">
       <span class="ecl-icon ecl-icon--m ecl-notification__icon sc-ecl-notification-ec wt-icon--check-filled wt-icon--placeholder"></span>
     </ecl-icon>
@@ -81,7 +81,7 @@ exports[`ecl-notification renders correctly in the success variant 1`] = `
 exports[`ecl-notification renders correctly without the close button 1`] = `
 <ecl-notification message-title="Title for a message" variant="information" with-close="false">
   <!---->
-  <div class="ecl-notification ecl-notification--info" data-ecl-notification role="alert">
+  <div class="ecl-notification ecl-notification--info" data-ecl-auto-initialized="true" data-ecl-notification role="alert">
     <ecl-icon style-class="ecl-notification__icon sc-ecl-notification-ec">
       <span class="ecl-icon ecl-icon--m ecl-notification__icon sc-ecl-notification-ec wt-icon--information wt-icon--placeholder"></span>
     </ecl-icon>

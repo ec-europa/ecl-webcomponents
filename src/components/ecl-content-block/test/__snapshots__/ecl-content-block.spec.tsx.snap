@@ -63,7 +63,7 @@ exports[`ecl-content-block renders 1`] = `
         <dl class="ecl-content-block__list ecl-description-list ecl-description-list--vertical sc-ecl-content-block-ec">
           <ecl-description-list-term theme="ec">
             <!---->
-            <dt class="ecl-description-list__term sc-ecl-description-list-ec">
+            <dt class="ecl-description-list__term is-first sc-ecl-description-list-ec">
               Standalone links
             </dt>
           </ecl-description-list-term>
