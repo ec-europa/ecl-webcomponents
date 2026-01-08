@@ -80,6 +80,7 @@ export class EclDatepicker {
     duet.onload = () => {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Datepicker = Datepicker;
+
       const datepicker = new Datepicker(
         this.el.querySelector('.ecl-datepicker'),
       );

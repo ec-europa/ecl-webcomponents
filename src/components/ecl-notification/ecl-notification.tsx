@@ -55,7 +55,8 @@ export class EclNotification {
     if (this.eclScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Notification = Notification;
-      const notification = new NOTIFICATION.Notification(this.el.firstElementChild);
+  
+      const notification = new Notification(this.el.firstElementChild);
       notification.init();
     }
   }

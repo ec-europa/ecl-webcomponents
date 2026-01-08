@@ -11,7 +11,7 @@
 | ----------------------------- | --------------------------------- | ----------- | --------- | ----------- |
 | `buttonLabel`                 | `button-label`                    |             | `string`  | `undefined` |
 | `disabled`                    | `disabled`                        |             | `boolean` | `false`     |
-| `eclScript`                   | `ecl-script`                      |             | `boolean` | `false`     |
+| `eclScript`                   | `ecl-script`                      |             | `boolean` | `true`      |
 | `hasChanged`                  | `has-changed`                     |             | `boolean` | `false`     |
 | `inputId`                     | `input-id`                        |             | `string`  | `undefined` |
 | `inputValue`                  | `input-value`                     |             | `string`  | `undefined` |

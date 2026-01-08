@@ -1,5 +1,6 @@
 import { Component, Prop, h, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
+import ContentBlock from "@ecl/content-block";
+
 declare const ECL: any;
 
 @Component({
@@ -85,19 +86,11 @@ export class EclContentBlock {
     }
 
     if (this.eclScript) {
-      // Load the ECL vanilla js if not already present.
-      const src = getAssetPath('./build/scripts/ecl-content-block-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        const contentBlock = new ECL.ContentBlock(this.el);
-        contentBlock.init();
-      };
-
-      document.body.appendChild(script);
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.ContentBlock = ContentBlock;
+      
+      const contentBlock = new ContentBlock(this.el);
+      contentBlock.init();
     }
   }
 

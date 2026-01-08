@@ -10,19 +10,6 @@ const includePaths = [nodeModules];
 const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()}`;
 
 module.exports = {
-  scripts: [
-    {
-      entry: path.resolve(nodeModules, '@ecl/news-ticker/news-ticker.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-news-ticker-vanilla.js'),
-      options: {
-        banner,
-        format: 'iife',
-        moduleName: 'NEWSTICKER',
-        includePaths,
-        sourceMap: false,
-      },
-    },
-  ],
   styles: [
     {
       entry: path.resolve(__dirname, 'src/styles/ecl-news-ticker-ec.scss'),

@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const NEWSTICKER: any;
+import NewsTicker from "@ecl/news-ticker";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-news-ticker',
@@ -54,31 +54,17 @@ export class EclNewsTicker {
       this.el.querySelector('.ecl-news-ticker__actions').append(...controls);
       this.el.querySelector('.ecl-news-ticker__controls').append(...counter);
     }
-  }
+    ;(window as any).ECL = (window as any).ECL || {};
+    ECL.NewsTicker = NewsTicker;
 
-  componentDidRender() {
-    if (this.el.querySelector('.ecl-news-ticker__slides') && this.eclScript) {
-      // Load the ECL vanilla js if not already present.
-      const src = getAssetPath('./build/scripts/ecl-news-ticker-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const newsTicker = new NEWSTICKER.NewsTicker(
-          this.el.firstElementChild,
-          { playSelector: '.ecl-news-ticker__play',
-            pauseSelector: '.ecl-news-ticker__pause',
-            prevSelector: '.ecl-news-ticker__prev',
-            nextSelector: '.ecl-news-ticker__next',
-          });
-        newsTicker.init();
-      };
-
-      document.body.appendChild(script);
-    }
+    const newsTicker = new NewsTicker(
+      this.el.firstElementChild,
+      { playSelector: '.ecl-news-ticker__play',
+        pauseSelector: '.ecl-news-ticker__pause',
+        prevSelector: '.ecl-news-ticker__prev',
+        nextSelector: '.ecl-news-ticker__next',
+      });
+    newsTicker.init();
   }
 
   render() {
