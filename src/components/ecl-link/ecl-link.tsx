@@ -16,6 +16,7 @@ export class EclLink {
   @Prop({ mutable: true }) theme: string;
   @Prop() path: string;
   @Prop() styleClass: string;
+  @Prop() elId: string;
   @Prop() inverted: boolean = false;
   @Prop() variant: string = '';
   @Prop() titleAttr: string;
@@ -109,6 +110,10 @@ export class EclLink {
       'href': this.path,
     };
 
+    if (this.elId) {
+      attrs['id'] = this.elId;
+    }
+
     if (this.titleAttr) {
       attrs['title'] = this.titleAttr;
     }
@@ -145,9 +150,11 @@ export class EclLink {
           <ecl-indicator ecl-script value={this.indicatorValue} sr-label={this.indicatorLabel}></ecl-indicator>
         </span>
       )}
-      <span class="ecl-link__label">
-        <slot></slot>
-      </span>
+      {(this.hasIconBefore || this.hasIconAfter) ?
+        <span class="ecl-link__label">
+          <slot></slot>
+        </span> : <slot></slot>
+      }
       {(this.external || (this.hasIconAfter && !this.indicator)) && (
         <slot name="icon-after">{ this.external ? this.getExternal() : '' }</slot>
       )}

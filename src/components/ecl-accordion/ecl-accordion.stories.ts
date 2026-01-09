@@ -4,7 +4,6 @@ export default {
 
 const Template = (args) => 
   `<ecl-accordion 
-    ecl-script
     color-mode="${args.color_mode}"
   >
     <ecl-accordion-item

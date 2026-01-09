@@ -77,8 +77,8 @@ export default {
 };
 
 const Template = (args) =>
-`<ecl-grid container><ecl-gallery
-  ecl-script
+`<ecl-grid container>
+<ecl-gallery
   el-id="ecl-gallery-demo"
   counter-label="Media files in this gallery"
   view-all-label="Show more items"

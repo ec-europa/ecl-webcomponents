@@ -7,7 +7,6 @@ const Template = (args) =>
     el-id="${args.elId}"
     label-collapsed="${args.labelCollapsed}"
     label-expanded="${args.labelExpanded}"
-    ecl-script
   >
     ${args.content}
   </ecl-expandable>`;

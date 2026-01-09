@@ -105,7 +105,6 @@ const TemplateImg = (args) =>
     ${args.hasCaption ? args.caption : ''}
     ${args.hasExpandable ?
     `<ecl-expandable
-      ecl-script
       slot="expandable"
       label-collapsed="collapsed"
       label-expanded="expanded"

@@ -59,6 +59,7 @@
  - [ecl-select](../ecl-select)
  - [ecl-site-header](../ecl-site-header)
  - [ecl-social-media-follow-item](../ecl-social-media-follow)
+ - [ecl-tabs](../ecl-tabs)
  - [ecl-tag](../ecl-tag)
  - [ecl-timeline-item](../ecl-timeline)
 
@@ -101,6 +102,7 @@ graph TD;
   ecl-select --> ecl-icon
   ecl-site-header --> ecl-icon
   ecl-social-media-follow-item --> ecl-icon
+  ecl-tabs --> ecl-icon
   ecl-tag --> ecl-icon
   ecl-timeline-item --> ecl-icon
   style ecl-icon fill:#f9f,stroke:#333,stroke-width:4px

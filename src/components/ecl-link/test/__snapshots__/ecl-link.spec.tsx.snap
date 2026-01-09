@@ -4,9 +4,7 @@ exports[`ecl-link renders correctly as a default link 1`] = `
 <ecl-link path="/example.html" variant="default">
   <!---->
   <a class="ecl-link ecl-link--default" href="/example.html">
-    <span class="ecl-link__label">
-      A default link
-    </span>
+    A default link
   </a>
 </ecl-link>
 `;
@@ -15,9 +13,7 @@ exports[`ecl-link renders correctly as a standalone link 1`] = `
 <ecl-link path="/example.html" variant="standalone">
   <!---->
   <a class="ecl-link ecl-link--standalone" href="/example.html">
-    <span class="ecl-link__label">
-      A standalone link
-    </span>
+    A standalone link
   </a>
 </ecl-link>
 `;
@@ -26,9 +22,7 @@ exports[`ecl-link renders correctly when external 1`] = `
 <ecl-link external="" path="/example.html" sr-external="will move you outside of this website" variant="standalone">
   <!---->
   <a class="ecl-link ecl-link--standalone" href="/example.html">
-    <span class="ecl-link__label">
-      Link label
-    </span>
+    Link label
     <slot-fb name="icon-after">
       <ecl-icon class="ecl-link__icon" style-class="ecl-link__icon sc-ecl-link-ec" title-tag="will move you outside of this website">
         <span class="ecl-icon ecl-icon--2xs ecl-link__icon sc-ecl-link-ec wt-icon--external wt-icon--placeholder"></span>

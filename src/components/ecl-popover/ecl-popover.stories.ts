@@ -4,7 +4,6 @@ export default {
 
 const Template = () => 
   `<ecl-popover
-    ecl-script
     toggle-label="Popover"
     icon="share"
     item-id="popover-example"

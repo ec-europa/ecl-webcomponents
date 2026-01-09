@@ -997,6 +997,7 @@ export namespace Components {
           * @default false
          */
         "download": boolean;
+        "elId": string;
         /**
           * @default false
          */
@@ -1776,6 +1777,56 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
     }
+    interface EclTabs {
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
+          * @default true
+         */
+        "eclScript": boolean;
+        /**
+          * @default 'Show %d more items'
+         */
+        "moreLabel": string;
+        /**
+          * @default 'Next'
+         */
+        "nextLabel": string;
+        /**
+          * @default 'Previous'
+         */
+        "prevLabel": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+        /**
+          * @default false
+         */
+        "withoutContent": boolean;
+    }
+    interface EclTabsItem {
+        /**
+          * @default `ecl-tabs-item-${Math.random().toString(36).substr(2, 9)}}`
+         */
+        "elId": string;
+        /**
+          * @default false
+         */
+        "isCurrent": boolean;
+        /**
+          * @default ''
+         */
+        "path": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclTag {
         "colorMode": string;
         /**
@@ -2470,6 +2521,18 @@ declare global {
         prototype: HTMLEclSpotlightElement;
         new (): HTMLEclSpotlightElement;
     };
+    interface HTMLEclTabsElement extends Components.EclTabs, HTMLStencilElement {
+    }
+    var HTMLEclTabsElement: {
+        prototype: HTMLEclTabsElement;
+        new (): HTMLEclTabsElement;
+    };
+    interface HTMLEclTabsItemElement extends Components.EclTabsItem, HTMLStencilElement {
+    }
+    var HTMLEclTabsItemElement: {
+        prototype: HTMLEclTabsItemElement;
+        new (): HTMLEclTabsItemElement;
+    };
     interface HTMLEclTagElementEventMap {
         "removeTag": boolean;
     }
@@ -2609,6 +2672,8 @@ declare global {
         "ecl-spacing": HTMLEclSpacingElement;
         "ecl-spinner": HTMLEclSpinnerElement;
         "ecl-spotlight": HTMLEclSpotlightElement;
+        "ecl-tabs": HTMLEclTabsElement;
+        "ecl-tabs-item": HTMLEclTabsItemElement;
         "ecl-tag": HTMLEclTagElement;
         "ecl-tag-set": HTMLEclTagSetElement;
         "ecl-text": HTMLEclTextElement;
@@ -3617,6 +3682,7 @@ declare namespace LocalJSX {
           * @default false
          */
         "download"?: boolean;
+        "elId"?: string;
         /**
           * @default false
          */
@@ -4405,6 +4471,56 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
     }
+    interface EclTabs {
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
+          * @default true
+         */
+        "eclScript"?: boolean;
+        /**
+          * @default 'Show %d more items'
+         */
+        "moreLabel"?: string;
+        /**
+          * @default 'Next'
+         */
+        "nextLabel"?: string;
+        /**
+          * @default 'Previous'
+         */
+        "prevLabel"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+        /**
+          * @default false
+         */
+        "withoutContent"?: boolean;
+    }
+    interface EclTabsItem {
+        /**
+          * @default `ecl-tabs-item-${Math.random().toString(36).substr(2, 9)}}`
+         */
+        "elId"?: string;
+        /**
+          * @default false
+         */
+        "isCurrent"?: boolean;
+        /**
+          * @default ''
+         */
+        "path"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclTag {
         "colorMode"?: string;
         /**
@@ -4634,6 +4750,8 @@ declare namespace LocalJSX {
         "ecl-spacing": EclSpacing;
         "ecl-spinner": EclSpinner;
         "ecl-spotlight": EclSpotlight;
+        "ecl-tabs": EclTabs;
+        "ecl-tabs-item": EclTabsItem;
         "ecl-tag": EclTag;
         "ecl-tag-set": EclTagSet;
         "ecl-text": EclText;
@@ -4719,6 +4837,8 @@ declare module "@stencil/core" {
             "ecl-spacing": LocalJSX.EclSpacing & JSXBase.HTMLAttributes<HTMLEclSpacingElement>;
             "ecl-spinner": LocalJSX.EclSpinner & JSXBase.HTMLAttributes<HTMLEclSpinnerElement>;
             "ecl-spotlight": LocalJSX.EclSpotlight & JSXBase.HTMLAttributes<HTMLEclSpotlightElement>;
+            "ecl-tabs": LocalJSX.EclTabs & JSXBase.HTMLAttributes<HTMLEclTabsElement>;
+            "ecl-tabs-item": LocalJSX.EclTabsItem & JSXBase.HTMLAttributes<HTMLEclTabsItemElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
             "ecl-tag-set": LocalJSX.EclTagSet & JSXBase.HTMLAttributes<HTMLEclTagSetElement>;
             "ecl-text": LocalJSX.EclText & JSXBase.HTMLAttributes<HTMLEclTextElement>;

@@ -13,7 +13,6 @@ const Template = args =>
       <ecl-inpage-navigation
         inpage-title="Page contents"
         inpage-id="inpage-id"
-        ecl-script
         color-mode="${args.color_mode}"
       >
         <ecl-inpage-navigation-item

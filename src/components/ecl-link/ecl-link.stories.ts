@@ -122,7 +122,6 @@ const Template = (args) => {
       inverted="${args.inverted}"
       external="${args.external}"
       branded="${args.branded}"
-      no-visited="${args.noVisited}"
       aria-label="Accessibility enhancer"
       indicator="${args.indicator}"
       indicator-value="${args.indicatorValue}"

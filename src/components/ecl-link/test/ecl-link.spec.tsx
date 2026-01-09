@@ -12,7 +12,6 @@ describe('ecl-link', () => {
     const page = await newSpecPage({
       components: [EclLink],
       html: `<ecl-link
-              variant="default"
               path="/example.html"
             >
               A default link

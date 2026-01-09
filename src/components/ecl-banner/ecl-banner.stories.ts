@@ -184,7 +184,6 @@ export default {
 const Template = args =>
   `<ecl-banner
     color-mode="${args.color_mode}"
-    theme="${args.theme}"
     cta-link="${args.ctaLink}"
     cta-label="${args.ctaLabel}"
     full-width="${args.fullWidth}"
@@ -194,12 +193,11 @@ const Template = args =>
     horizontal="${args.horizontal}"
     vertical="${args.vertical}"
     font-size="${args.fontSize}"
-    ${args.fontColor ? `font-color="${args.fontColor}"` : '' }
     box-background="${args.boxBackground}"
     size="${args.size}"
     banner-title-link="${args.bannerTitleLink ? randomizedLink('/example.html') : ''}"
     description-link="${args.descriptionLink ? randomizedLink('/example.html') : ''}"
-    ecl-script
+    ${args.fontColor ? `font-color="${args.fontColor}"` : '' }
   >
     ${args.description}
   </ecl-banner>`;
@@ -229,7 +227,6 @@ const VideoTemplate = args =>
     box-background="${args.boxBackground}"
     banner-title-link="${args.bannerTitleLink ? randomizedLink('/example.html') : ''}"
     description-link="${args.descriptionLink ? randomizedLink('/example.html') : ''}"
-    ecl-script
   >
     ${args.description}
   </ecl-banner>`;
@@ -253,7 +250,6 @@ const NomediaTemplate = args =>
     font-size="${args.fontSize}"
     banner-title-link="${args.bannerTitleLink ? randomizedLink('/example.html') : ''}"
     description-link="${args.descriptionLink ? randomizedLink('/example.html') : ''}"
-    ecl-script
   >
     ${args.description}
   </ecl-banner>`;

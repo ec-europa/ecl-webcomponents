@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-tabs renders 1`] = `
+<ecl-tabs color-mode="purple" without-content="">
+  <!---->
+  <div class="ecl-color-mode--purple ecl-tabs" data-ecl-auto-initialized="true">
+    <div class="ecl-tabs__container">
+      <div class="ecl-tabs__list" role="tablist">
+        <ecl-tabs-item path="#tab-content-1">
+          Tab 1
+        </ecl-tabs-item>
+        <ecl-tabs-item is-current="" path="#tab-content-2">
+          Tab 2
+        </ecl-tabs-item>
+        <ecl-tabs-item path="#tab-content-3">
+          Tab 3
+        </ecl-tabs-item>
+        <ecl-tabs-item path="#tab-content-4">
+          Tab 4
+        </ecl-tabs-item>
+        <div class="ecl-tabs__item ecl-tabs__item--more">
+          <div class="ecl-tabs__dropdown">
+            <div class="ecl-tabs__dropdown-list"></div>
+          </div>
+        </div>
+      </div>
+      <ecl-button style-class="ecl-tabs__toggle sc-ecl-tabs-ec" tabindex="-1">
+        <!---->
+        <button class="ecl-button ecl-button--tertiary ecl-tabs__toggle sc-ecl-tabs-ec" type="button">
+          <span class="ecl-button__container">
+            <span class="ecl-button__label" data-ecl-label>
+              Show %d more items
+            </span>
+            <ecl-icon icon="corner-arrow" rotate="rotate-180" size="fluid" slot="icon-after"></ecl-icon>
+          </span>
+        </button>
+      </ecl-button>
+    </div>
+    <div class="ecl-tabs__controls">
+      <ecl-button hide-label="" style-class="ecl-tabs__prev ecl-tabs__item--hidden sc-ecl-tabs-ec">
+        <!---->
+        <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-tabs__item--hidden ecl-tabs__prev sc-ecl-tabs-ec" type="button">
+          <span class="ecl-button__container">
+            <span class="ecl-button__label" data-ecl-label>
+              Previous
+            </span>
+            <ecl-icon icon="corner-arrow" rotate="rotate-270" size="s" slot="icon-after"></ecl-icon>
+          </span>
+        </button>
+      </ecl-button>
+      <ecl-button hide-label="" style-class="ecl-tabs__next ecl-tabs__item--hidden sc-ecl-tabs-ec">
+        <!---->
+        <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-tabs__item--hidden ecl-tabs__next sc-ecl-tabs-ec" type="button">
+          <span class="ecl-button__container">
+            <span class="ecl-button__label" data-ecl-label>
+              Next
+            </span>
+            <ecl-icon icon="corner-arrow" rotate="rotate-90" size="s" slot="icon-after"></ecl-icon>
+          </span>
+        </button>
+      </ecl-button>
+    </div>
+  </div>
+</ecl-tabs>
+`;
