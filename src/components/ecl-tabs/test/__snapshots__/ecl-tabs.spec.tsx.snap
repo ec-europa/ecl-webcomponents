@@ -31,7 +31,7 @@ exports[`ecl-tabs renders 1`] = `
             <span class="ecl-button__label" data-ecl-label>
               Show %d more items
             </span>
-            <ecl-icon icon="corner-arrow" rotate="rotate-180" size="fluid" slot="icon-after"></ecl-icon>
+            <ecl-icon icon="corner-arrow" rotate="180" size="fluid" slot="icon-after"></ecl-icon>
           </span>
         </button>
       </ecl-button>
@@ -44,7 +44,7 @@ exports[`ecl-tabs renders 1`] = `
             <span class="ecl-button__label" data-ecl-label>
               Previous
             </span>
-            <ecl-icon icon="corner-arrow" rotate="rotate-270" size="s" slot="icon-after"></ecl-icon>
+            <ecl-icon icon="corner-arrow" rotate="270" size="s" slot="icon-after"></ecl-icon>
           </span>
         </button>
       </ecl-button>
@@ -55,7 +55,7 @@ exports[`ecl-tabs renders 1`] = `
             <span class="ecl-button__label" data-ecl-label>
               Next
             </span>
-            <ecl-icon icon="corner-arrow" rotate="rotate-90" size="s" slot="icon-after"></ecl-icon>
+            <ecl-icon icon="corner-arrow" rotate="90" size="s" slot="icon-after"></ecl-icon>
           </span>
         </button>
       </ecl-button>

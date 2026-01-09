@@ -72,7 +72,7 @@ export class EclTabs {
               slot="icon-after"
               icon="corner-arrow"
               size="fluid"
-              rotate="rotate-180"
+              rotate="180"
             ></ecl-icon>
           </ecl-button>
         </div>
@@ -88,7 +88,7 @@ export class EclTabs {
               slot="icon-after"
               icon="corner-arrow"
               size="s"
-              rotate="rotate-270"
+              rotate="270"
             ></ecl-icon>
           </ecl-button>
           <ecl-button
@@ -102,7 +102,7 @@ export class EclTabs {
               slot="icon-after"
               icon="corner-arrow"
               size="s"
-              rotate="rotate-90"
+              rotate="90"
             ></ecl-icon>
           </ecl-button>
         </div>
