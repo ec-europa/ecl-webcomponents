@@ -11,14 +11,10 @@ exports[`ecl-news-ticker renders 1`] = `
             <ecl-link>
               <!---->
               <a class="ecl-link">
-                <span class="ecl-link__label">
-                  <!---->
-                  <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores
-                    </span>
-                  </a>
-                </span>
+                <!---->
+                <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores
+                </a>
               </a>
             </ecl-link>
           </li>
@@ -29,9 +25,7 @@ exports[`ecl-news-ticker renders 1`] = `
             <ecl-link>
               <!---->
               <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
-                <span class="ecl-link__label">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-                </span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit'
               </a>
             </ecl-link>
           </li>
@@ -42,9 +36,7 @@ exports[`ecl-news-ticker renders 1`] = `
             <ecl-link>
               <!---->
               <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
-                <span class="ecl-link__label">
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                </span>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
               </a>
             </ecl-link>
           </li>
@@ -52,9 +44,7 @@ exports[`ecl-news-ticker renders 1`] = `
             <ecl-link>
               <!---->
               <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
-                <span class="ecl-link__label">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                </span>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
               </a>
             </ecl-link>
           </li>
@@ -65,9 +55,7 @@ exports[`ecl-news-ticker renders 1`] = `
             <ecl-link>
               <!---->
               <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
-                <span class="ecl-link__label">
-                  Excepteur sint occaecat cupidatat officia deserunt mollit anim id est laborum
-                </span>
+                Excepteur sint occaecat cupidatat officia deserunt mollit anim id est laborum
               </a>
             </ecl-link>
           </li>
@@ -78,9 +66,7 @@ exports[`ecl-news-ticker renders 1`] = `
             <ecl-link>
               <!---->
               <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
-                <span class="ecl-link__label">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                </span>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
               </a>
             </ecl-link>
           </li>
@@ -88,9 +74,7 @@ exports[`ecl-news-ticker renders 1`] = `
             <ecl-link>
               <!---->
               <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
-                <span class="ecl-link__label">
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores
-                </span>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores
               </a>
             </ecl-link>
           </li>
@@ -102,14 +86,10 @@ exports[`ecl-news-ticker renders 1`] = `
             <ecl-link>
               <!---->
               <a class="ecl-link">
-                <span class="ecl-link__label">
-                  <!---->
-                  <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-                    </span>
-                  </a>
-                </span>
+                <!---->
+                <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+                </a>
               </a>
             </ecl-link>
           </li>

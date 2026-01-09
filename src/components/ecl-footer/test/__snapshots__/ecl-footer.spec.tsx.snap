@@ -9,9 +9,7 @@ exports[`ecl-footer EC renders 1`] = `
       <ecl-link>
         <!---->
         <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
-          <span class="ecl-link__label">
-            Report an IT vulnerability
-          </span>
+          Report an IT vulnerability
         </a>
       </ecl-link>
     </li>
@@ -24,11 +22,9 @@ exports[`ecl-footer EC renders 1`] = `
             <ecl-link>
               <!---->
               <a class="ecl-link ecl-link--standalone ecl-site-footer__logo-link sc-ecl-footer-ec-ec" href="/example.html">
-                <span class="ecl-link__label">
-                  <ecl-picture image="/build/images/ec/logos/negative/logo-ec--en.svg" imagealt="European Commission" imgclass="sc-ecl-footer-ec-ec ecl-site-footer__logo-image" styleclass="ecl-site-footer__picture sc-ecl-site-footer-ec-ec" theme="ec">
-                    <source media="(min-width: 996px)" srcset="/build/images/ec/logos/negative/logo-ec--en.svg">
-                  </ecl-picture>
-                </span>
+                <ecl-picture image="/build/images/ec/logos/negative/logo-ec--en.svg" imagealt="European Commission" imgclass="sc-ecl-footer-ec-ec ecl-site-footer__logo-image" styleclass="ecl-site-footer__picture sc-ecl-site-footer-ec-ec" theme="ec">
+                  <source media="(min-width: 996px)" srcset="/build/images/ec/logos/negative/logo-ec--en.svg">
+                </ecl-picture>
               </a>
             </ecl-link>
             <div class="ecl-site-footer__description">
@@ -44,9 +40,7 @@ exports[`ecl-footer EC renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      About us
-                    </span>
+                    About us
                   </a>
                 </ecl-link>
               </li>
@@ -54,9 +48,7 @@ exports[`ecl-footer EC renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Contact us
-                    </span>
+                    Contact us
                   </a>
                 </ecl-link>
               </li>
@@ -64,9 +56,7 @@ exports[`ecl-footer EC renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Priorities
-                    </span>
+                    Priorities
                   </a>
                 </ecl-link>
               </li>
@@ -74,9 +64,7 @@ exports[`ecl-footer EC renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Topics
-                    </span>
+                    Topics
                   </a>
                 </ecl-link>
               </li>
@@ -84,9 +72,7 @@ exports[`ecl-footer EC renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Funding and tenders
-                    </span>
+                    Funding and tenders
                   </a>
                 </ecl-link>
               </li>
@@ -94,9 +80,7 @@ exports[`ecl-footer EC renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Jobs
-                    </span>
+                    Jobs
                   </a>
                 </ecl-link>
               </li>
@@ -104,9 +88,7 @@ exports[`ecl-footer EC renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Press corner
-                    </span>
+                    Press corner
                   </a>
                 </ecl-link>
               </li>
@@ -114,9 +96,7 @@ exports[`ecl-footer EC renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Events
-                    </span>
+                    Events
                   </a>
                 </ecl-link>
               </li>
@@ -141,9 +121,7 @@ exports[`ecl-footer EC renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Languages on our websites
-                    </span>
+                    Languages on our websites
                   </a>
                 </ecl-link>
               </li>
@@ -151,9 +129,7 @@ exports[`ecl-footer EC renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Cookies
-                    </span>
+                    Cookies
                   </a>
                 </ecl-link>
               </li>
@@ -161,9 +137,7 @@ exports[`ecl-footer EC renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Privacy policy
-                    </span>
+                    Privacy policy
                   </a>
                 </ecl-link>
               </li>
@@ -171,9 +145,7 @@ exports[`ecl-footer EC renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Legal notice
-                    </span>
+                    Legal notice
                   </a>
                 </ecl-link>
               </li>
@@ -181,9 +153,7 @@ exports[`ecl-footer EC renders 1`] = `
                 <ecl-link>
                   <!---->
                   <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="/example.html">
-                    <span class="ecl-link__label">
-                      Accessibility
-                    </span>
+                    Accessibility
                   </a>
                 </ecl-link>
               </li>
@@ -208,11 +178,9 @@ exports[`ecl-footer EU renders 1`] = `
               <ecl-link>
                 <!---->
                 <a class="ecl-link ecl-link--standalone ecl-site-footer__logo-link sc-ecl-footer-eu-eu" href="/example.html">
-                  <span class="ecl-link__label">
-                    <ecl-picture image="/build/images/eu/logos/condensed-version/positive/logo-eu--en.svg" imagealt="European Union" imgclass="sc-ecl-footer-eu-eu ecl-site-footer__logo-image" styleclass="ecl-site-footer__picture sc-ecl-site-footer-eu-eu" theme="eu">
-                      <source media="(min-width: 996px)" srcset="/build/images/eu/logos/standard-version/positive/logo-eu--en.svg">
-                    </ecl-picture>
-                  </span>
+                  <ecl-picture image="/build/images/eu/logos/condensed-version/positive/logo-eu--en.svg" imagealt="European Union" imgclass="sc-ecl-footer-eu-eu ecl-site-footer__logo-image" styleclass="ecl-site-footer__picture sc-ecl-site-footer-eu-eu" theme="eu">
+                    <source media="(min-width: 996px)" srcset="/build/images/eu/logos/standard-version/positive/logo-eu--en.svg">
+                  </ecl-picture>
                 </a>
               </ecl-link>
               <div class="ecl-site-footer__description">
@@ -230,9 +198,7 @@ exports[`ecl-footer EU renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="tel:0080067891011">
-                      <span class="ecl-link__label">
-                        Call us 00 800 6 7 8 9 10 11
-                      </span>
+                      Call us 00 800 6 7 8 9 10 11
                     </a>
                   </ecl-link>
                 </li>
@@ -240,9 +206,7 @@ exports[`ecl-footer EU renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="https://european-union.europa.eu/contact-eu/call-us_en">
-                      <span class="ecl-link__label">
-                        Use other telephone options
-                      </span>
+                      Use other telephone options
                     </a>
                   </ecl-link>
                 </li>
@@ -250,9 +214,7 @@ exports[`ecl-footer EU renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="https://european-union.europa.eu/contact-eu/write-us_en">
-                      <span class="ecl-link__label">
-                        Write us via our contact form
-                      </span>
+                      Write us via our contact form
                     </a>
                   </ecl-link>
                 </li>
@@ -260,9 +222,7 @@ exports[`ecl-footer EU renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="https://european-union.europa.eu/contact-eu/meet-us_en">
-                      <span class="ecl-link__label">
-                        Meet us at one of the EU centres
-                      </span>
+                      Meet us at one of the EU centres
                     </a>
                   </ecl-link>
                 </li>
@@ -277,9 +237,7 @@ exports[`ecl-footer EU renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link ecl-link--standalone ecl-site-footer__link sc-ecl-footer-eu-eu" href="https://european-union.europa.eu/contact-eu/social-media-channels_en">
-                      <span class="ecl-link__label">
-                        Search for EU social media channels
-                      </span>
+                      Search for EU social media channels
                     </a>
                   </ecl-link>
                 </li>
@@ -299,9 +257,7 @@ exports[`ecl-footer EU renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="https://european-union.europa.eu/languages-our-websites_en">
-                      <span class="ecl-link__label">
-                        Languages on our websites
-                      </span>
+                      Languages on our websites
                     </a>
                   </ecl-link>
                 </li>
@@ -309,9 +265,7 @@ exports[`ecl-footer EU renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="https://european-union.europa.eu/privacy-policy_en">
-                      <span class="ecl-link__label">
-                        Privacy policy
-                      </span>
+                      Privacy policy
                     </a>
                   </ecl-link>
                 </li>
@@ -319,9 +273,7 @@ exports[`ecl-footer EU renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="https://european-union.europa.eu/legal-notice_en">
-                      <span class="ecl-link__label">
-                        Legal notice
-                      </span>
+                      Legal notice
                     </a>
                   </ecl-link>
                 </li>
@@ -329,9 +281,7 @@ exports[`ecl-footer EU renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="https://european-union.europa.eu/cookies_en">
-                      <span class="ecl-link__label">
-                        Cookies
-                      </span>
+                      Cookies
                     </a>
                   </ecl-link>
                 </li>
@@ -339,9 +289,7 @@ exports[`ecl-footer EU renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="https://european-union.europa.eu/web-accessibility-policy_en">
-                      <span class="ecl-link__label">
-                        Accessibility
-                      </span>
+                      Accessibility
                     </a>
                   </ecl-link>
                 </li>
@@ -356,9 +304,7 @@ exports[`ecl-footer EU renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link ecl-link--inverted ecl-link--standalone ecl-site-footer__link sc-ecl-footer-ec-ec" href="http://www.europarl.europa.eu/portal/">
-                      <span class="ecl-link__label">
-                        Search all EU institutions and bodies
-                      </span>
+                      Search all EU institutions and bodies
                     </a>
                   </ecl-link>
                 </li>

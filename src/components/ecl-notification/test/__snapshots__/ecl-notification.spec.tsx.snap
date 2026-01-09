@@ -28,9 +28,7 @@ exports[`ecl-notification renders correctly in the information variant 1`] = `
         <ecl-link path="/example.html" slot="notification-link">
           <!---->
           <a class="ecl-link ecl-notification__link sc-ecl-notification-ec" href="/example.html">
-            <span class="ecl-link__label">
-              Lorem ipsum
-            </span>
+            Lorem ipsum
           </a>
         </ecl-link>
       </div>
@@ -67,9 +65,7 @@ exports[`ecl-notification renders correctly in the success variant 1`] = `
         <ecl-link path="/example.html" slot="notification-link">
           <!---->
           <a class="ecl-link ecl-notification__link sc-ecl-notification-ec" href="/example.html">
-            <span class="ecl-link__label">
-              Lorem ipsum
-            </span>
+            Lorem ipsum
           </a>
         </ecl-link>
       </div>
@@ -93,9 +89,7 @@ exports[`ecl-notification renders correctly without the close button 1`] = `
         <ecl-link path="/example.html" slot="notification-link">
           <!---->
           <a class="ecl-link ecl-notification__link sc-ecl-notification-ec" href="/example.html">
-            <span class="ecl-link__label">
-              Lorem ipsum
-            </span>
+            Lorem ipsum
           </a>
         </ecl-link>
       </div>

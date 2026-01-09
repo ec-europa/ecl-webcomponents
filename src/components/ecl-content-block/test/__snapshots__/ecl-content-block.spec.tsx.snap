@@ -28,9 +28,7 @@ exports[`ecl-content-block renders 1`] = `
       <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
         <!---->
         <a class="ecl-link ecl-link--standalone" data-ecl-title-link href="/example.html">
-          <span class="ecl-link__label">
-            Title
-          </span>
+          Title
         </a>
       </ecl-link>
     </div>
@@ -75,9 +73,7 @@ exports[`ecl-content-block renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link sc-ecl-description-list-ec" href="/example.html">
-                      <span class="ecl-link__label">
-                        Lorem ipsum dolor sit amet
-                      </span>
+                      Lorem ipsum dolor sit amet
                     </a>
                   </ecl-link>
                 </li>
@@ -85,9 +81,7 @@ exports[`ecl-content-block renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link sc-ecl-description-list-ec" href="/example.html">
-                      <span class="ecl-link__label">
-                        Lorem ipsum dolor sit amet
-                      </span>
+                      Lorem ipsum dolor sit amet
                     </a>
                   </ecl-link>
                 </li>
@@ -126,9 +120,7 @@ exports[`ecl-content-block renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link sc-ecl-description-list-ec" href="/example.html">
-                      <span class="ecl-link__label">
-                        Lorem ipsum dolor sit amet
-                      </span>
+                      Lorem ipsum dolor sit amet
                     </a>
                   </ecl-link>
                 </li>
@@ -136,9 +128,7 @@ exports[`ecl-content-block renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link sc-ecl-description-list-ec" href="/example.html">
-                      <span class="ecl-link__label">
-                        Lorem ipsum dolor sit amet
-                      </span>
+                      Lorem ipsum dolor sit amet
                     </a>
                   </ecl-link>
                 </li>
@@ -162,9 +152,7 @@ exports[`ecl-content-block renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link" href="/example.html">
-                      <span class="ecl-link__label">
-                        Taxonomy item 2
-                      </span>
+                      Taxonomy item 2
                     </a>
                   </ecl-link>
                 </li>
@@ -181,46 +169,34 @@ exports[`ecl-content-block renders 1`] = `
       <ul class="ecl-content-block__link-list">
         <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-            <span class="ecl-link__label">
-              Primary Link 1
-            </span>
+            Primary Link 1
           </a>
         </li>
         <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-            <span class="ecl-link__label">
-              Primary Link 2
-            </span>
+            Primary Link 2
           </a>
         </li>
         <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-            <span class="ecl-link__label">
-              Primary Link 3
-            </span>
+            Primary Link 3
           </a>
         </li>
         <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-            <span class="ecl-link__label">
-              Primary Link 4
-            </span>
+            Primary Link 4
           </a>
         </li>
       </ul>
       <ul class="ecl-content-block__link-list">
         <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-            <span class="ecl-link__label">
-              Secondary Link 1
-            </span>
+            Secondary Link 1
           </a>
         </li>
         <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-            <span class="ecl-link__label">
-              Secondary Link 2
-            </span>
+            Secondary Link 2
           </a>
         </li>
       </ul>

@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-link renders correctly as a default link 1`] = `
-<ecl-link path="/example.html" variant="default">
+<ecl-link path="/example.html">
   <!---->
-  <a class="ecl-link ecl-link--default" href="/example.html">
+  <a class="ecl-link" href="/example.html">
     A default link
   </a>
 </ecl-link>

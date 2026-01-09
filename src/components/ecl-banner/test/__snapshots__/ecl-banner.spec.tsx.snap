@@ -17,9 +17,7 @@ exports[`ecl-banner renders correctly in full width, with large size, text on th
               <ecl-link style-class="ecl-banner__description-link sc-ecl-banner-ec">
                 <!---->
                 <a class="ecl-banner__description-link ecl-link sc-ecl-banner-ec" href="/example.html">
-                  <span class="ecl-link__label">
-                    Innovation, economy, environment and geopolitics
-                  </span>
+                  Innovation, economy, environment and geopolitics
                 </a>
               </ecl-link>
             </span>
@@ -115,9 +113,7 @@ exports[`ecl-banner renders correctly with an image 1`] = `
               <ecl-link style-class="ecl-banner__title-link sc-ecl-banner-ec">
                 <!---->
                 <a class="ecl-banner__title-link ecl-link sc-ecl-banner-ec" href="/example.html">
-                  <span class="ecl-link__label">
-                    EU Budget for the future
-                  </span>
+                  EU Budget for the future
                 </a>
               </ecl-link>
             </span>
@@ -160,9 +156,7 @@ exports[`ecl-banner renders correctly without a media 1`] = `
               <ecl-link style-class="ecl-banner__title-link sc-ecl-banner-ec">
                 <!---->
                 <a class="ecl-banner__title-link ecl-link sc-ecl-banner-ec" href="/example.html">
-                  <span class="ecl-link__label">
-                    EU Budget for the future
-                  </span>
+                  EU Budget for the future
                 </a>
               </ecl-link>
             </span>
