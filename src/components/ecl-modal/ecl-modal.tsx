@@ -19,7 +19,7 @@ export class EclModal {
   @Prop() withBody: boolean = false;
   @Prop() withBodyFixed: boolean = false;
   @Prop() withHeader: boolean = false;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() withFooter: boolean = false;
   @Prop() toggleId: string;
   @Prop() size: string = 'l';
@@ -44,7 +44,7 @@ export class EclModal {
   }
 
   componentDidLoad() {
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Modal = Modal;
 

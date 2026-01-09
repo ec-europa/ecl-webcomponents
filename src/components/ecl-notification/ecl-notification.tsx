@@ -20,7 +20,7 @@ export class EclNotification {
   @Prop() styleClass: string;
   @Prop() notificationTitle: string;
   @Prop() closeLabel: string;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() withClose: boolean = true;
 
   getClass(): string {
@@ -52,7 +52,7 @@ export class EclNotification {
       });
     }
 
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Notification = Notification;
   

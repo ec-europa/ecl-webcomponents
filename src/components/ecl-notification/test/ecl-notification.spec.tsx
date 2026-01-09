@@ -16,7 +16,6 @@ describe('ecl-notification', () => {
                 message-title="Title for a message"
                 variant="information"
                 close-label="Close"
-                ecl-script
               >
                 Lorem ipsum dolor sit amet
                 <ecl-link slot="notification-link" path="/example.html">Lorem ipsum</ecl-link>
@@ -33,7 +32,6 @@ describe('ecl-notification', () => {
                 message-title="Title for a message"
                 variant="success"
                 close-label="Close"
-                ecl-script
               >
                 Lorem ipsum dolor sit amet
                 <ecl-link slot="notification-link" path="/example.html">Lorem ipsum</ecl-link>

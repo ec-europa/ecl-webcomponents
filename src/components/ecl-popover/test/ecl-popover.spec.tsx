@@ -12,7 +12,6 @@ describe('ecl-popover', () => {
     const page = await newSpecPage({
       components: [EclPopover, EclLink, EclIcon],
       html:   `<ecl-popover
-        ecl-script
         toggle-label="Popover"
         icon="share"
         item-id="popover-example"

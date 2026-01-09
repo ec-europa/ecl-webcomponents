@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-notification renders correctly in the information variant 1`] = `
-<ecl-notification close-label="Close" ecl-script="" message-title="Title for a message" variant="information">
+<ecl-notification close-label="Close" message-title="Title for a message" variant="information">
   <!---->
   <div class="ecl-notification ecl-notification--info" data-ecl-auto-initialized="true" data-ecl-notification role="alert">
     <ecl-icon style-class="ecl-notification__icon sc-ecl-notification-ec">
@@ -38,7 +38,7 @@ exports[`ecl-notification renders correctly in the information variant 1`] = `
 `;
 
 exports[`ecl-notification renders correctly in the success variant 1`] = `
-<ecl-notification close-label="Close" ecl-script="" message-title="Title for a message" variant="success">
+<ecl-notification close-label="Close" message-title="Title for a message" variant="success">
   <!---->
   <div class="ecl-notification ecl-notification--success" data-ecl-auto-initialized="true" data-ecl-notification role="alert">
     <ecl-icon style-class="ecl-notification__icon sc-ecl-notification-ec">

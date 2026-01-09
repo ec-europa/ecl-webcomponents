@@ -25,7 +25,6 @@ describe('ecl-content-block', () => {
         has-labels
         has-links
         has-secondary-links
-        ecl-script
       >
         <ecl-label
           slot="labels"

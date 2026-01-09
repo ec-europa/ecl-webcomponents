@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-news-ticker renders 1`] = `
-<ecl-news-ticker counter-label="of" ecl-script="" items-length="6" sr-next="Next item" sr-pause="Pause news ticker" sr-prev="Prev item">
+<ecl-news-ticker counter-label="of" items-length="6" sr-next="Next item" sr-pause="Pause news ticker" sr-prev="Prev item">
   <!---->
   <div class="ecl-news-ticker" data-ecl-auto-initialized="true">
     <div class="ecl-news-ticker__container">

@@ -19,7 +19,7 @@ export class EclDescriptionList {
   @Prop() variant: string = 'vertical';
   @Prop() visibleItems: number;
   @Prop() moreLabel: string;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
 
   getClass(): string {
     const styleClasses = [
@@ -54,7 +54,7 @@ export class EclDescriptionList {
   }
 
   componentDidLoad() {
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.DescriptionList = DescriptionList;
 

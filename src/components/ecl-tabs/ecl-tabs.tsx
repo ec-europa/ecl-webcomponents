@@ -15,7 +15,7 @@ declare const ECL: any;
 export class EclTabs {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop({ mutable: true }) theme: string;
   @Prop() colorMode: string = '';
   @Prop() prevLabel: string = 'Previous';
@@ -41,7 +41,7 @@ export class EclTabs {
   }
 
   componentDidLoad() {
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Tabs = Tabs;
 

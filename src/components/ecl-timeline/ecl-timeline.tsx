@@ -15,7 +15,7 @@ export class EclTimeline {
   @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() colorMode: string;
   @State() toBeToggled: boolean = false;
 
@@ -41,7 +41,7 @@ export class EclTimeline {
       this.el.firstElementChild.classList.add('ecl-timeline--has-headline');
     }
 
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Timeline = Timeline;
 

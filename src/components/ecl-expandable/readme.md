@@ -7,11 +7,11 @@
 
 | Property         | Attribute         | Description | Type      | Default                                                           |
 | ---------------- | ----------------- | ----------- | --------- | ----------------------------------------------------------------- |
-| `eclScript`      | `ecl-script`      |             | `boolean` | `true`                                                            |
 | `elId`           | `el-id`           |             | `string`  | `` `ecl-expandable-${Math.random().toString(36).substr(2, 9)}` `` |
 | `isExpanded`     | `is-expanded`     |             | `boolean` | `false`                                                           |
 | `labelCollapsed` | `label-collapsed` |             | `string`  | `''`                                                              |
 | `labelExpanded`  | `label-expanded`  |             | `string`  | `''`                                                              |
+| `noScript`       | `no-script`       |             | `boolean` | `false`                                                           |
 | `styleClass`     | `style-class`     |             | `string`  | `''`                                                              |
 | `theme`          | `theme`           |             | `string`  | `undefined`                                                       |
 

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-file renders 1`] = `
-<ecl-file detail-meta="[&quot;Resource type&quot;, &quot;Publication date&quot;]" download-label="Download" download-link="/example.html" ecl-script="" el-id="file-download-test" file-title="State of the Union 2018 brochure" language="English" meta="(16.2 MB - PDF)" taxonomies="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example.html&quot;},&quot;Taxonomy item 3&quot;]" taxonomies-label="Taxonomy list" variant="default">
+<ecl-file detail-meta="[&quot;Resource type&quot;, &quot;Publication date&quot;]" download-label="Download" download-link="/example.html" el-id="file-download-test" file-title="State of the Union 2018 brochure" language="English" meta="(16.2 MB - PDF)" taxonomies="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example.html&quot;},&quot;Taxonomy item 3&quot;]" taxonomies-label="Taxonomy list" variant="default">
   <!---->
   <ecl-file-translations data-ecl-auto-initialized="true" hidden="" others="" toggle-label="Other languages" translations-total="3">
     <!---->

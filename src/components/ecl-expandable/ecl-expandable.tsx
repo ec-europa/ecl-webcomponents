@@ -15,7 +15,7 @@ declare var ECL: any;
 export class EclExpandable {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() isExpanded: boolean = false;
   @Prop() elId: string = `ecl-expandable-${Math.random().toString(36).substr(2, 9)}`;
   @Prop() labelCollapsed: string = '';
@@ -35,7 +35,7 @@ export class EclExpandable {
       });
     }
 
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Expandable = Expandable;
       const expandable = new Expandable(this.el.firstElementChild);

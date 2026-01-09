@@ -122,7 +122,6 @@ export class EclFeaturedItem {
               image={this.image}
               hasCaption={this.mediaCaption !== ''}
               imageAnchor={this.mediaAnchor}
-              eclScript
             >
              {this.mediaCaption}
             </ecl-media-container>

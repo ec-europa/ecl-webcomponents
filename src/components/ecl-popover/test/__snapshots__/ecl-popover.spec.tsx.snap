@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-popover renders 1`] = `
-<ecl-popover close="" ecl-script="" icon="share" item-id="popover-example" toggle-label="Popover">
+<ecl-popover close="" icon="share" item-id="popover-example" toggle-label="Popover">
   <!---->
   <div class="ecl-popover" data-ecl-auto-initialized="true">
     <ecl-link aria-controls="popover-example" aria-expanded="false" data-ecl-popover-toggle="data-ecl-popover-toggle" style-class="sc-ecl-link-ec sc-ecl-popover-ec ecl-popover__toggle">

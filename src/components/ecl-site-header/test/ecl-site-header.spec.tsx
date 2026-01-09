@@ -13,7 +13,6 @@ describe('ecl-site-header', () => {
     const page = await newSpecPage({
       components: [EclSearchForm, EclSiteHeader, EclLanguageItem, EclFormGroup],
       html: `<ecl-site-header
-        ecl-script
         theme="ec"
         login-block
         language-block

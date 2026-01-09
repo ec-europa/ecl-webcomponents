@@ -17,7 +17,7 @@ export class EclRange {
   @Prop() inputId: string = `ecl-range-${Math.random().toString(36).slice(2, 10)}`;
   @Prop() styleClass: string;
   @Prop() inputClass: string;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() disabled: boolean = false;
   @Prop() required: boolean = false;
   @Prop() invalid: boolean = false;
@@ -68,7 +68,7 @@ export class EclRange {
   }
 
   componentDidLoad() {
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Range = Range;
 

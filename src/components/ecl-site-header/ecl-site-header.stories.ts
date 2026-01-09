@@ -19,7 +19,6 @@ export default {
 
 const Template = (args) => 
   `<ecl-site-header
-    ecl-script
     login-block
     language-block
     search-text="search"
@@ -242,7 +241,6 @@ const Template = (args) =>
 
 const TemplateStandardised = (args) => 
   `<ecl-site-header
-    ecl-script
     language-block
     search-block
     search-text="search"
@@ -468,7 +466,6 @@ const TemplateStandardised = (args) =>
     back-label="Back"
     style-class="${`sc-ecl-site-header-${args.theme}`}"
     menu-link="${randomizedLink('/example.html')}"
-    ecl-script
     menu-title="Menu"
   >
     <ecl-menu-item
@@ -783,7 +780,6 @@ const TemplateStandardised = (args) =>
 
 const TemplateHarmonised = (args) => 
   `<ecl-site-header
-    ecl-script
     login-block
     language-block
     search-block
@@ -1013,7 +1009,6 @@ const TemplateHarmonised = (args) =>
     close-label="Close"
     back-label="Back"
     menu-link="${randomizedLink('/example.html')}"
-    ecl-script
     menu-title="Menu"
   >
     <ecl-menu-item

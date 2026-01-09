@@ -10,13 +10,13 @@
 | Property        | Attribute         | Description | Type      | Default     |
 | --------------- | ----------------- | ----------- | --------- | ----------- |
 | `autoplay`      | `autoplay`        |             | `boolean` | `false`     |
-| `eclScript`     | `ecl-script`      |             | `boolean` | `true`      |
 | `embeddedMedia` | `embedded-media`  |             | `boolean` | `false`     |
 | `fullWidth`     | `full-width`      |             | `boolean` | `false`     |
 | `hasCaption`    | `has-caption`     |             | `boolean` | `false`     |
 | `image`         | `image`           |             | `string`  | `undefined` |
 | `imageAlt`      | `image-alt`       |             | `string`  | `undefined` |
 | `imageAnchor`   | `image-anchor`    |             | `string`  | `'center'`  |
+| `noScript`      | `no-script`       |             | `boolean` | `false`     |
 | `ratio`         | `ratio`           |             | `string`  | `''`        |
 | `sources`       | `sources`         |             | `string`  | `undefined` |
 | `srPause`       | `sr-pause`        |             | `string`  | `undefined` |

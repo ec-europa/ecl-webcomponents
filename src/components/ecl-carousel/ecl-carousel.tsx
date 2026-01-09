@@ -16,7 +16,7 @@ export class EclCarousel {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() carouselId: string;
   @Prop() colorMode: string;
   @Prop() slidesNumber: number;
@@ -54,7 +54,7 @@ export class EclCarousel {
     slides.forEach((slide) => {
       slide.classList.add(`sc-ecl-carousel-${this.theme}`);
     });
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Carousel = Carousel;
       const carousel = new Carousel(this.el.firstElementChild);

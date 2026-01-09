@@ -15,7 +15,6 @@ describe('ecl-news-ticker', () => {
       components: [EclNewsTicker, EclNewsTickerItem, EclIcon, EclLink, EclButton],
       html: `<ecl-news-ticker
         items-length="6"
-        ecl-script
         counter-label="of"
         sr-next="Next item"
         sr-prev="Prev item"

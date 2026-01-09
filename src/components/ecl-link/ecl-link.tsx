@@ -147,7 +147,7 @@ export class EclLink {
       {this.indicator && this.hasIconBefore && (
         <span class="ecl-link__icon-container">
           <slot name="icon-before"></slot>
-          <ecl-indicator ecl-script value={this.indicatorValue} sr-label={this.indicatorLabel}></ecl-indicator>
+          <ecl-indicator value={this.indicatorValue} sr-label={this.indicatorLabel}></ecl-indicator>
         </span>
       )}
       {(this.hasIconBefore || this.hasIconAfter) ?
@@ -161,7 +161,7 @@ export class EclLink {
       {this.indicator && this.hasIconAfter && (
         <span class="ecl-link__icon-container">
           <slot name="icon-after"></slot>
-          <ecl-indicator ecl-script value={this.indicatorValue} sr-label={this.indicatorLabel}></ecl-indicator>
+          <ecl-indicator value={this.indicatorValue} sr-label={this.indicatorLabel}></ecl-indicator>
         </span>
       )}
       </a>

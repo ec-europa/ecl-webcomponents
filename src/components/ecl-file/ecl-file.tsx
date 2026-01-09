@@ -34,7 +34,7 @@ export class EclFile {
   @Prop() labels: string;
   @Prop() taxonomies: string;
   @Prop() taxonomiesLabel: string;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
 
   getClass(): string {
     const styleClasses = [
@@ -52,7 +52,7 @@ export class EclFile {
 
   componentDidLoad() {
     const list = this.el.querySelector('.ecl-file__translation-list');
-    if (list && this.eclScript) {
+    if (list && !this.noScript) {
       // Clean the html so that the script finds what it expects.
       const button = this.el.querySelector('.ecl-file__translation-toggle');
       if (button) {

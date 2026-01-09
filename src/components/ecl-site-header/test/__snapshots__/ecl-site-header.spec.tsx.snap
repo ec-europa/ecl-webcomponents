@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-site-header renders 1`] = `
-<ecl-site-header ecl-script="" eu-label="Official EU languages:" lang-code="en" language="english" language-aria-label="Choose language" language-block="" language-id="language-switcher" language-title="Choose your language" login-block="" login-link="/example.html" login-text="Log in" logo-alt="European Commission" logo-title="European commission" non-eu-label="Other languages:" search-block="" search-form-id="ecl-site-header-search-form" search-placeholder="Placeholder text" search-text="search" theme="ec">
+<ecl-site-header eu-label="Official EU languages:" lang-code="en" language="english" language-aria-label="Choose language" language-block="" language-id="language-switcher" language-title="Choose your language" login-block="" login-link="/example.html" login-text="Log in" logo-alt="European Commission" logo-title="European commission" non-eu-label="Other languages:" search-block="" search-form-id="ecl-site-header-search-form" search-placeholder="Placeholder text" search-text="search" theme="ec">
   <!---->
   <header class="ecl-site-header ecl-site-header-with-logo-l" data-ecl-auto-initialized="true">
     <div class="ecl-site-header__inner">

@@ -16,7 +16,7 @@ export class EclPopover {
   @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() itemId: string;
   @Prop() toggleLabel: string;
   @Prop() close: boolean = false;
@@ -57,7 +57,7 @@ export class EclPopover {
   }
 
   componentDidLoad() {
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Popover = Popover;
 

@@ -13,7 +13,6 @@
 | `buttonReplaceLabel` | `button-replace-label` |             | `string`  | `undefined`                                                        |
 | `defaultValue`       | `default-value`        |             | `string`  | `undefined`                                                        |
 | `disabled`           | `disabled`             |             | `boolean` | `false`                                                            |
-| `eclScript`          | `ecl-script`           |             | `boolean` | `true`                                                             |
 | `helperId`           | `helper-id`            |             | `string`  | `undefined`                                                        |
 | `helperText`         | `helper-text`          |             | `string`  | `undefined`                                                        |
 | `inputClass`         | `input-class`          |             | `string`  | `undefined`                                                        |
@@ -22,6 +21,7 @@
 | `label`              | `label`                |             | `string`  | `undefined`                                                        |
 | `multiple`           | `multiple`             |             | `boolean` | `false`                                                            |
 | `name`               | `name`                 |             | `string`  | `undefined`                                                        |
+| `noScript`           | `no-script`            |             | `boolean` | `false`                                                            |
 | `placeholder`        | `placeholder`          |             | `string`  | `undefined`                                                        |
 | `required`           | `required`             |             | `boolean` | `false`                                                            |
 | `styleClass`         | `style-class`          |             | `string`  | `undefined`                                                        |

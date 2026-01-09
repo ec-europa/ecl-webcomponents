@@ -9,7 +9,6 @@
 
 | Property            | Attribute             | Description | Type      | Default      |
 | ------------------- | --------------------- | ----------- | --------- | ------------ |
-| `eclScript`         | `ecl-script`          |             | `boolean` | `true`       |
 | `hasDescription`    | `has-description`     |             | `boolean` | `undefined`  |
 | `hasLabels`         | `has-labels`          |             | `boolean` | `undefined`  |
 | `hasLinks`          | `has-links`           |             | `boolean` | `undefined`  |
@@ -19,6 +18,7 @@
 | `metaPrimary`       | `meta-primary`        |             | `string`  | `undefined`  |
 | `metaSecondary`     | `meta-secondary`      |             | `string`  | `undefined`  |
 | `metaSecondaryDir`  | `meta-secondary-dir`  |             | `string`  | `'vertical'` |
+| `noScript`          | `no-script`           |             | `boolean` | `false`      |
 | `styleClass`        | `style-class`         |             | `string`  | `''`         |
 | `theme`             | `theme`               |             | `string`  | `undefined`  |
 

@@ -24,7 +24,7 @@ export class EclBanner {
   @Prop() bannerTitleLink: string;
   @Prop() descriptionLink: string;
   @Prop() image: string;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() sources: string;
   @Prop() tracks: string;
   @Prop() imageAlt: string;
@@ -84,7 +84,7 @@ export class EclBanner {
       }
     }
 
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Banner = Banner;
 

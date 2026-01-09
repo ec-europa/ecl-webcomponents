@@ -57,7 +57,7 @@ exports[`ecl-button renders correctly with an indicator 1`] = `
         <ecl-icon icon="check" slot="icon-after">
           <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--check wt-icon--placeholder"></span>
         </ecl-icon>
-        <ecl-indicator ecl-script="">
+        <ecl-indicator>
           <span class="ecl-indicator" data-ecl-auto-initialized="true" data-ecl-indicator>
             <span class="ecl-indicator__value">
               5

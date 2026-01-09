@@ -62,7 +62,6 @@ const Template = (args) =>
       has-description
       ${args.labels ? 'has-labels': '' }
       ${args.lists ? `has-lists` : '' }
-      ecl-script
     >
       <ecl-link
         slot="title"

@@ -26,7 +26,6 @@ describe('ecl-range', () => {
           name="input-range"
           min=1
           max=30
-          ecl-script
           step=1
           value-label="Value: "
         >

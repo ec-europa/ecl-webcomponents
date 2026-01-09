@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-modal renders 1`] = `
-<ecl-modal close-label="Close" ecl-script="" theme="ec" toggle-id="modal-demo-toggle" with-body="" with-body-fixed="" with-footer="" with-header="">
+<ecl-modal close-label="Close" theme="ec" toggle-id="modal-demo-toggle" with-body="" with-body-fixed="" with-footer="" with-header="">
   <!---->
   <dialog class="ecl-modal ecl-modal--default ecl-modal--l" data-ecl-auto-initialized="true" data-ecl-modal-toggle="modal-demo-toggle">
     <div class="ecl-container ecl-modal__container">

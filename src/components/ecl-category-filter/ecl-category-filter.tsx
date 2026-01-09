@@ -17,7 +17,7 @@ export class EclCategoryFilter {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() colorMode: string;
 
   getClass(): string {
@@ -44,7 +44,7 @@ export class EclCategoryFilter {
       lastItem.parentElement.parentElement.style.border = 'none';
     }
 
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.CategoryFilter = CategoryFilter;
       const categoryFilter = new CategoryFilter(this.el.firstElementChild);

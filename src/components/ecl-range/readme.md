@@ -11,7 +11,6 @@
 | -------------- | --------------- | ----------- | --------- | ------------------------------------------------------------ |
 | `defaultValue` | `default-value` |             | `string`  | `undefined`                                                  |
 | `disabled`     | `disabled`      |             | `boolean` | `false`                                                      |
-| `eclScript`    | `ecl-script`    |             | `boolean` | `true`                                                       |
 | `hasChanged`   | `has-changed`   |             | `boolean` | `false`                                                      |
 | `helperId`     | `helper-id`     |             | `string`  | `undefined`                                                  |
 | `helperText`   | `helper-text`   |             | `string`  | `undefined`                                                  |
@@ -23,6 +22,7 @@
 | `max`          | `max`           |             | `number`  | `undefined`                                                  |
 | `min`          | `min`           |             | `number`  | `undefined`                                                  |
 | `name`         | `name`          |             | `string`  | `undefined`                                                  |
+| `noScript`     | `no-script`     |             | `boolean` | `false`                                                      |
 | `placeholder`  | `placeholder`   |             | `string`  | `undefined`                                                  |
 | `required`     | `required`      |             | `boolean` | `false`                                                      |
 | `step`         | `step`          |             | `number`  | `1`                                                          |

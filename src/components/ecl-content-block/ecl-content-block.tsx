@@ -19,7 +19,7 @@ export class EclContentBlock {
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
   @Prop() hasDescription: boolean;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() hasTitle: boolean;
   @Prop() hasLabels: boolean;
   @Prop() hasLinks: boolean;
@@ -85,7 +85,7 @@ export class EclContentBlock {
       }
     }
 
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.ContentBlock = ContentBlock;
       

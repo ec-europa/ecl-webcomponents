@@ -17,7 +17,7 @@ export class EclBreadcrumb {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() minItemsRight: number = 2;
 
 
@@ -46,7 +46,7 @@ export class EclBreadcrumb {
     this.el.querySelector('.ecl-breadcrumb__container').innerHTML = '';
     this.el.querySelector('.ecl-breadcrumb__container').append(...items);
 
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Breadcrumb = Breadcrumb;
       

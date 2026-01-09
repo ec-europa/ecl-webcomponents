@@ -16,7 +16,7 @@ export class EclInpageNavigation {
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() colorMode: string = '';
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() inpageTitle: string;
   @Prop() inpageId: string;
 
@@ -52,7 +52,7 @@ export class EclInpageNavigation {
       this.el.querySelector('.ecl-inpage-navigation__list').append(...items);
     }
 
-    if (this.eclScript) { 
+    if (!this.noScript) { 
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.InpageNavigation = InpageNavigation;
       const inpageNavigation = new InpageNavigation(this.el.firstElementChild);

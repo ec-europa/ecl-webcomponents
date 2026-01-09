@@ -17,7 +17,7 @@ export class EclGallery {
   @Prop() elId: string = `ecl-gallery-${Math.random().toString(36).slice(2, 10)}`;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() slidesNumber: number;
   @Prop() counterLabel: string ;
   @Prop() counterSeparator: string;
@@ -101,7 +101,7 @@ export class EclGallery {
       });
     });
 
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Gallery = Gallery;
       const gallery = new Gallery(this.el.firstElementChild);

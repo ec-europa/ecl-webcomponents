@@ -18,7 +18,6 @@ describe('ecl-modal', () => {
         with-footer
         with-body
         with-body-fixed
-        ecl-script
         toggle-id="modal-demo-toggle"
         close-label="Close"
       >

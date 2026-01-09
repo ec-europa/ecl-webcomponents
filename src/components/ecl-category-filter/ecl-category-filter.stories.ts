@@ -6,7 +6,6 @@ export default {
 
 const Template = (args) => 
 `<ecl-category-filter
-  ecl-script
   color-mode="${args.color_mode}"
 >
   <ecl-category-filter-item

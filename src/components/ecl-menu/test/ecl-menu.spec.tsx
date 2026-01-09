@@ -18,7 +18,6 @@ describe('ecl-menu', () => {
         close-label="Close"
         back-label="Back"
         menu-link="/example.html"
-        ecl-script
         menu-title="Menu"
         next-label="next"
         previous-label="previous"

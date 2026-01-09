@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-carousel renders 1`] = `
-<ecl-carousel carousel-id="ecl-carousel-demo" ecl-script="" slides-number="3">
+<ecl-carousel carousel-id="ecl-carousel-demo" slides-number="3">
   <!---->
   <div class="ecl-carousel" data-ecl-carosuel style="opacity: 0;">
     <div class="ecl-carousel__controls" style="display: none;">

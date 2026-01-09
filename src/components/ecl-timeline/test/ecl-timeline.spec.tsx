@@ -11,7 +11,6 @@ describe('ecl-timeline', () => {
     const page = await newSpecPage({
       components: [EclTimeline, EclTimelineItem],
       html: `<ecl-timeline
-        ecl-script
         color-mode="green"
        >
         <ecl-timeline-item

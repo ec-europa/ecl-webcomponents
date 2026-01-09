@@ -93,7 +93,6 @@ export default {
 
 const Template = args =>
   `<ecl-page-header
-    ecl-script
     variant="${args.variant}"
     header-title="${args.title}"
     image="${args.image || ''}"
@@ -142,7 +141,6 @@ const Template = args =>
     </ecl-page-header-meta-item>
     <ecl-breadcrumb
       slot="breadcrumb"
-      ecl-script
      >
       <ecl-breadcrumb-item
         path="${randomizedLink('/example.html')}"

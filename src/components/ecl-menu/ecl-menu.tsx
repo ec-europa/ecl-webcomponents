@@ -17,7 +17,7 @@ export class EclMenu {
   @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() menuId: string;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() styleClass: string;
   @Prop() group: string = 'group1';
   @Prop() maxLines: number = 2;
@@ -39,7 +39,7 @@ export class EclMenu {
   }
 
   componentDidLoad() {
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Menu = Menu;
       const menu = new Menu(this.el.firstElementChild);
@@ -125,7 +125,7 @@ export class EclMenu {
               <ecl-button
                 data-ecl-menu-back
                 type="submit"
-                variant="ghost"
+                variant="tertiary"
                 styleClass={`ecl-menu__back sc-ecl-menu-${this.theme}`}
                 containerExtraClasses={`sc-ecl-menu-${this.theme}`}
               >
@@ -142,7 +142,7 @@ export class EclMenu {
             <ecl-button
               theme={this.theme}
               type="button"
-              variant="ghost"
+              variant="tertiary"
               hideLabel
               styleClass={`ecl-menu__item ecl-menu__items-previous sc-ecl-menu-${this.theme}`}
               data-ecl-menu-items-previous
@@ -159,7 +159,7 @@ export class EclMenu {
             <ecl-button
               theme={this.theme}
               type="button"
-              variant="ghost"
+              variant="tertiary"
               hideLabel
               styleClass={`ecl-menu__item ecl-menu__items-next sc-ecl-menu-${this.theme}`}
               data-ecl-menu-items-next

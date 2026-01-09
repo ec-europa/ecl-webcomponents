@@ -16,7 +16,7 @@ export class EclSelect {
   @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() disabled: boolean = false;
   @Prop() required: boolean = false;
   @Prop() invalid: boolean = false;
@@ -63,7 +63,7 @@ export class EclSelect {
   }
 
   componentDidLoad() {
-    if (this.eclScript && this.multiple) {
+    if (!this.noScript && this.multiple) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Select = Select;
 

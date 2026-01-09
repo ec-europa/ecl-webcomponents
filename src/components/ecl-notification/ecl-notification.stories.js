@@ -54,7 +54,6 @@ const Template = args =>
     notification-title="${args.title}"
     variant="${args.variant}"
     close-label="${args.closeLabel}"
-    ecl-script
     with-close=${args.withClose}
   >
     ${args.description}

@@ -18,7 +18,7 @@ exports[`ecl-media-container renders correctly in full width 1`] = `
 `;
 
 exports[`ecl-media-container renders correctly with an embedded video 1`] = `
-<ecl-media-container ecl-script="" ratio="16-9">
+<ecl-media-container ratio="16-9">
   <!---->
   caption for the media container
   <div class="ecl-media-container">
@@ -32,7 +32,7 @@ exports[`ecl-media-container renders correctly with an embedded video 1`] = `
 `;
 
 exports[`ecl-media-container renders correctly with an html5 video 1`] = `
-<ecl-media-container autoplay="" ecl-script="" ratio="16-9" sources="[{&quot;src&quot;: &quot;https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4&quot;, &quot;type&quot;: &quot;video/mp4&quot;}, {&quot;src&quot;: &quot;https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm&quot;, &quot;type&quot;: &quot;video/webm&quot;}]" tracks="[{&quot;src&quot;: &quot;/captions/bunny-en.vtt&quot;, &quot;kind&quot;: &quot;captions&quot;, &quot;src_lang&quot;: &quot;en&quot;, &quot;label&quot;: &quot;English&quot;}, {&quot;src&quot;: &quot;/captions/bunny-fr.vtt&quot;, &quot;kind&quot;: &quot;captions&quot;, &quot;src_lang&quot;: &quot;fr&quot;, &quot;label&quot;: &quot;français&quot;}]">
+<ecl-media-container autoplay="" ratio="16-9" sources="[{&quot;src&quot;: &quot;https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4&quot;, &quot;type&quot;: &quot;video/mp4&quot;}, {&quot;src&quot;: &quot;https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm&quot;, &quot;type&quot;: &quot;video/webm&quot;}]" tracks="[{&quot;src&quot;: &quot;/captions/bunny-en.vtt&quot;, &quot;kind&quot;: &quot;captions&quot;, &quot;src_lang&quot;: &quot;en&quot;, &quot;label&quot;: &quot;English&quot;}, {&quot;src&quot;: &quot;/captions/bunny-fr.vtt&quot;, &quot;kind&quot;: &quot;captions&quot;, &quot;src_lang&quot;: &quot;fr&quot;, &quot;label&quot;: &quot;français&quot;}]">
   <!---->
   caption for the media container
   <div class="ecl-media-container" data-ecl-auto-initialized="true" data-ecl-media-container>

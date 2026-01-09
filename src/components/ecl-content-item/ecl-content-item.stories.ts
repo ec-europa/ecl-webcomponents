@@ -128,7 +128,6 @@ const Template = (args) => {
         has-title
         has-description
         has-labels="${args.labels}"
-        ecl-script
         has-lists="${args.lists}"
       >
       ${ args.labels ? `

@@ -15,7 +15,7 @@ declare const ECL: any;
 
 export class EclPageHeader {
   @Element() el: HTMLElement;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
   @Prop() image: string ;
@@ -80,7 +80,7 @@ export class EclPageHeader {
         item.replaceWith(item.firstElementChild);
       });
     }
-    if (this.eclScript && this.expandable && this.expandableContent) {
+    if (!this.noScript && this.expandable && this.expandableContent) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.PageHeaderExpandable = PageHeaderExpandable;
 

@@ -10,8 +10,8 @@
 | Property        | Attribute         | Description | Type      | Default     |
 | --------------- | ----------------- | ----------- | --------- | ----------- |
 | `closeLabel`    | `close-label`     |             | `string`  | `undefined` |
-| `eclScript`     | `ecl-script`      |             | `boolean` | `true`      |
 | `itemId`        | `item-id`         |             | `string`  | `undefined` |
+| `noScript`      | `no-script`       |             | `boolean` | `false`     |
 | `size`          | `size`            |             | `string`  | `'l'`       |
 | `styleClass`    | `style-class`     |             | `string`  | `undefined` |
 | `theme`         | `theme`           |             | `string`  | `undefined` |

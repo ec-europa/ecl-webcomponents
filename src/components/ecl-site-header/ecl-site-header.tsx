@@ -18,7 +18,7 @@ export class EclSiteHeader {
   @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() loginBlock: boolean = false;
   @Prop() languageBlock: boolean = false;
   @Prop() searchBlock: boolean = true;
@@ -85,7 +85,7 @@ export class EclSiteHeader {
       const open = this.el.querySelector('.ecl-mega-menu__open');
       open.classList.add(`sc-ecl-site-header-${this.theme}`);
     }
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.SiteHeader = SiteHeader;
 

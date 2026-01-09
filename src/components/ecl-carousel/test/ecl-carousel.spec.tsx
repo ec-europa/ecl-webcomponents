@@ -13,7 +13,6 @@ describe('ecl-carousel', () => {
       components: [EclCarousel, EclBanner, EclIcon],
       html: `<ecl-carousel
               carousel-id="ecl-carousel-demo"
-              ecl-script
               slides-number="3"
             >
               <ecl-carousel-item

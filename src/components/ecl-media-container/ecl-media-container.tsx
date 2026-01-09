@@ -28,7 +28,7 @@ export class EclMediaContainer {
   @Prop() srPause: string;
   @Prop() srVideoPlayer: string;
   @Prop() srVideoAudio: string;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() embeddedMedia: boolean = false;
 
   getClass(): string {
@@ -45,7 +45,7 @@ export class EclMediaContainer {
   }
 
   componentDidLoad() {
-    if (this.eclScript && (this.embeddedMedia || (this.sources || this.tracks))) {
+    if (!this.noScript && (this.embeddedMedia || (this.sources || this.tracks))) {
       this.el.firstElementChild.setAttribute('data-ecl-media-container', "");
       if (this.sources || this.tracks) {
         const video = this.el.querySelector('video');

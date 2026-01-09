@@ -16,7 +16,6 @@ describe('ecl-expandable', () => {
               icon-path="/icons.svg"
               label-collapsed="Expand"
               label-expanded="Collapse"
-              ecl-script
             >
               <p class="ecl-u-type-paragraph-m">
                 The EU is building an energy union that ensures Europe’s energy supply is safe,

@@ -16,7 +16,7 @@ declare const ECL: any;
 export class EclIndicator {
   @Element() el: HTMLElement;
   @Prop() value: string = '';
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() srLabel: string = '';
   @Prop() styleClass: string = '';
 
@@ -27,7 +27,7 @@ export class EclIndicator {
   }
 
   componentDidRender() {
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Indicator = Indicator;
       const indicator = new Indicator(this.el.firstElementChild);

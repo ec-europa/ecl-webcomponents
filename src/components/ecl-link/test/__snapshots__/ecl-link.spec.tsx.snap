@@ -72,7 +72,7 @@ exports[`ecl-link renders correctly with an indicator 1`] = `
       <ecl-icon class="ecl-link__icon" icon="check" slot="icon-after">
         <span class="ecl-icon ecl-icon--xs wt-icon--check wt-icon--placeholder"></span>
       </ecl-icon>
-      <ecl-indicator ecl-script="" sr-label="label for screen readers">
+      <ecl-indicator sr-label="label for screen readers">
         <span class="ecl-indicator" data-ecl-auto-initialized="true" data-ecl-indicator>
           <span class="ecl-indicator__value">
             5

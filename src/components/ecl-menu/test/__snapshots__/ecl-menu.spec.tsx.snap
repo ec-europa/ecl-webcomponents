@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-menu renders 1`] = `
-<ecl-menu back-label="Back" close-label="Close" ecl-script="" group="group1" max-lines="2" menu-link="/example.html" menu-title="Menu" next-label="next" previous-label="previous" theme="ec">
+<ecl-menu back-label="Back" close-label="Close" group="group1" max-lines="2" menu-link="/example.html" menu-title="Menu" next-label="next" previous-label="previous" theme="ec">
   <!---->
   <nav aria-expanded="false" class="ecl-menu sc-ecl-menu-ec" data-ecl-auto-initialized="true" data-ecl-menu-max-lines="2" role="navigation">
     <div class="ecl-menu__overlay" data-ecl-menu-overlay></div>
@@ -42,7 +42,7 @@ exports[`ecl-menu renders 1`] = `
           </div>
           <ecl-button data-ecl-menu-back>
             <!---->
-            <button class="ecl-button ecl-button--ghost ecl-menu__back sc-ecl-menu-ec" data-ecl-menu-back="eclMenuBack" type="submit">
+            <button class="ecl-button ecl-button--tertiary ecl-menu__back sc-ecl-menu-ec" data-ecl-menu-back="eclMenuBack" type="submit">
               <span class="ecl-button__container sc-ecl-menu-ec">
                 <ecl-icon slot="icon-before">
                   <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270"></span>
@@ -56,7 +56,7 @@ exports[`ecl-menu renders 1`] = `
         </header>
         <ecl-button class="ecl-menu__item--current" data-ecl-menu-items-previous tabindex="-1" style="display: none;">
           <!---->
-          <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-menu__item ecl-menu__items-previous sc-ecl-menu-ec" data-ecl-menu-items-previous="eclMenuItemsPrevious" type="button">
+          <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-menu__item ecl-menu__items-previous sc-ecl-menu-ec" data-ecl-menu-items-previous="eclMenuItemsPrevious" type="button">
             <span class="ecl-button__container">
               <ecl-icon slot="icon-before">
                 <span class="ecl-button__icon ecl-icon ecl-icon--s sc-ecl-button-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270"></span>
@@ -69,7 +69,7 @@ exports[`ecl-menu renders 1`] = `
         </ecl-button>
         <ecl-button data-ecl-menu-items-next tabindex="-1" style="display: none;">
           <!---->
-          <button class="ecl-button ecl-button--ghost ecl-button--icon-only ecl-menu__item ecl-menu__items-next sc-ecl-menu-ec" data-ecl-menu-items-next="eclMenuItemsNext" type="button">
+          <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-menu__item ecl-menu__items-next sc-ecl-menu-ec" data-ecl-menu-items-next="eclMenuItemsNext" type="button">
             <span class="ecl-button__container">
               <ecl-icon slot="icon-before">
                 <span class="ecl-button__icon ecl-icon ecl-icon--s sc-ecl-button-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270"></span>

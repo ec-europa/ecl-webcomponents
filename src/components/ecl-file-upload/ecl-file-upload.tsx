@@ -17,7 +17,7 @@ export class EclFileUpload {
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() inputClass: string;
-  @Prop() eclScript: boolean = true;
+  @Prop() noScript: boolean = false;
   @Prop() disabled: boolean = false;
   @Prop() required: boolean = false;
   @Prop() invalid: boolean = false;
@@ -54,7 +54,7 @@ export class EclFileUpload {
   }
 
   componentDidLoad() {
-    if (this.eclScript) {
+    if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.FileUpload = FileUpload;
       

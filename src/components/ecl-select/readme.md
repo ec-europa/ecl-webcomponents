@@ -11,7 +11,6 @@
 | ----------------------------- | --------------------------------- | ----------- | --------- | ----------- |
 | `buttonLabel`                 | `button-label`                    |             | `string`  | `undefined` |
 | `disabled`                    | `disabled`                        |             | `boolean` | `false`     |
-| `eclScript`                   | `ecl-script`                      |             | `boolean` | `true`      |
 | `hasChanged`                  | `has-changed`                     |             | `boolean` | `false`     |
 | `inputId`                     | `input-id`                        |             | `string`  | `undefined` |
 | `inputValue`                  | `input-value`                     |             | `string`  | `undefined` |
@@ -24,6 +23,7 @@
 | `multipleSearchNoResultsText` | `multiple-search-no-results-text` |             | `string`  | `undefined` |
 | `multipleSearchText`          | `multiple-search-text`            |             | `string`  | `undefined` |
 | `name`                        | `name`                            |             | `string`  | `undefined` |
+| `noScript`                    | `no-script`                       |             | `boolean` | `false`     |
 | `required`                    | `required`                        |             | `boolean` | `false`     |
 | `selectId`                    | `select-id`                       |             | `string`  | `undefined` |
 | `styleClass`                  | `style-class`                     |             | `string`  | `undefined` |
