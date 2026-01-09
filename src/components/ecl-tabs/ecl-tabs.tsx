@@ -54,7 +54,7 @@ export class EclTabs {
     return (
       <div
         class={this.getClass()}
-        {...(this.withContent ? { 'data-ecl-tabs-with-content': '' } : {})}
+        {...(!this.withoutContent ? { 'data-ecl-tabs-with-content': '' } : {})}
       >
         <div class="ecl-tabs__container">
           <div class="ecl-tabs__list" role="tablist">
