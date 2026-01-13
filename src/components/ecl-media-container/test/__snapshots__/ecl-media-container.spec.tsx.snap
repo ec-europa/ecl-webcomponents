@@ -3,7 +3,9 @@
 exports[`ecl-media-container renders correctly in full width 1`] = `
 <ecl-media-container full-width="" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" image-alt="Alternative text">
   <!---->
-  caption for the media container
+  <!--s-nt-
+              caption for the media container
+            -->
   <div class="ecl-media-container">
     <figure class="ecl-media-container--full-width ecl-media-container__figure">
       <ecl-picture>
@@ -20,7 +22,9 @@ exports[`ecl-media-container renders correctly in full width 1`] = `
 exports[`ecl-media-container renders correctly with an embedded video 1`] = `
 <ecl-media-container ratio="16-9">
   <!---->
-  caption for the media container
+  <!--s-nt-
+              caption for the media container
+              -->
   <div class="ecl-media-container">
     <figure class="ecl-media-container__figure">
       <div class="ecl-media-container__media ecl-media-container__media--ratio-16-9 sc-ecl-media-container-ec">
@@ -34,7 +38,9 @@ exports[`ecl-media-container renders correctly with an embedded video 1`] = `
 exports[`ecl-media-container renders correctly with an html5 video 1`] = `
 <ecl-media-container autoplay="" ratio="16-9" sources="[{&quot;src&quot;: &quot;https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4&quot;, &quot;type&quot;: &quot;video/mp4&quot;}, {&quot;src&quot;: &quot;https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm&quot;, &quot;type&quot;: &quot;video/webm&quot;}]" tracks="[{&quot;src&quot;: &quot;/captions/bunny-en.vtt&quot;, &quot;kind&quot;: &quot;captions&quot;, &quot;src_lang&quot;: &quot;en&quot;, &quot;label&quot;: &quot;English&quot;}, {&quot;src&quot;: &quot;/captions/bunny-fr.vtt&quot;, &quot;kind&quot;: &quot;captions&quot;, &quot;src_lang&quot;: &quot;fr&quot;, &quot;label&quot;: &quot;français&quot;}]">
   <!---->
-  caption for the media container
+  <!--s-nt-
+              caption for the media container
+            -->
   <div class="ecl-media-container" data-ecl-auto-initialized="true" data-ecl-media-container>
     <figure class="ecl-media-container__figure">
       <div class="ecl-media-container__video-wrapper">
@@ -78,7 +84,9 @@ exports[`ecl-media-container renders correctly with an html5 video 1`] = `
 exports[`ecl-media-container renders correctly with an image 1`] = `
 <ecl-media-container image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" image-alt="Alternative text">
   <!---->
-  caption for the media container
+  <!--s-nt-
+              caption for the media container
+            -->
   <div class="ecl-media-container">
     <figure class="ecl-media-container__figure">
       <ecl-picture>
