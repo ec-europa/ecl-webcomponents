@@ -121,6 +121,7 @@ export class EclMenuItem {
           theme={this.theme}
           variant="tertiary"
           buttonStyle="neutral"
+          hideLabel
           {...buttonAttrs}
         > 
           <ecl-icon

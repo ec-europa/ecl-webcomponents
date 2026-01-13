@@ -18,9 +18,9 @@ export class EclMenu {
   @Prop() menuId: string;
   @Prop() noScript: boolean = false;
   @Prop() styleClass: string;
-  @Prop() group: string = 'group1';
   @Prop() maxLines: number = 2;
   @Prop() menuTitle: string;
+  @Prop() ariaLabel: string;
   @Prop() closeLabel: string;
   @Prop() backLabel: string;
   @Prop() siteName: string;
@@ -59,7 +59,9 @@ export class EclMenu {
 
   getAttrs() {
     const attrs = {
-      'aria-expanded': 'false',
+      'data-expanded': 'false',
+      'data-ecl-menu': true,
+      'aria-label': this.ariaLabel, 
       'data-ecl-menu-max-lines': this.maxLines,
       'role': 'navigation',
     };

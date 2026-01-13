@@ -245,6 +245,7 @@ const Template = (args) =>
     style-class="${`sc-ecl-site-header-${args.theme}`}"
     menu-link="${randomizedLink('/example.html')}"
     menu-title="Menu"
+    aria-label="Main navigation"
   >
     <ecl-menu-item
       link="${randomizedLink('/example.html')}"
@@ -784,6 +785,7 @@ const TemplateStandardised = (args) =>
     style-class="${`sc-ecl-site-header-${args.theme}`}"
     menu-link="${randomizedLink('/example.html')}"
     menu-title="Menu"
+    aria-label="Main navigation"
   >
     <ecl-menu-item
       link="${randomizedLink('/example.html')}"
@@ -1327,6 +1329,7 @@ const TemplateHarmonised = (args) =>
     back-label="Back"
     menu-link="${randomizedLink('/example.html')}"
     menu-title="Menu"
+    aria-label="Main navigation"
   >
     <ecl-menu-item
       link="${randomizedLink('/example.html')}"

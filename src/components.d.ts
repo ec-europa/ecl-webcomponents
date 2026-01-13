@@ -1144,12 +1144,9 @@ export namespace Components {
         "tracks": string;
     }
     interface EclMenu {
+        "ariaLabel": string;
         "backLabel": string;
         "closeLabel": string;
-        /**
-          * @default 'group1'
-         */
-        "group": string;
         /**
           * @default 2
          */
@@ -3829,12 +3826,9 @@ declare namespace LocalJSX {
         "tracks"?: string;
     }
     interface EclMenu {
+        "ariaLabel"?: string;
         "backLabel"?: string;
         "closeLabel"?: string;
-        /**
-          * @default 'group1'
-         */
-        "group"?: string;
         /**
           * @default 2
          */

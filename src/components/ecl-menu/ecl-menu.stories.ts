@@ -71,6 +71,7 @@ const Template = args =>
     previousLabel="${args.previousLabel}"
     nextLabel="${args.nextLabel}"
     max-lines=${args.maxLines}
+    aria-label="Main navigation"
   >
     <ecl-menu-item
       link="/example.html"
