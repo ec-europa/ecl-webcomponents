@@ -58,7 +58,7 @@
 
 @media (min-width >= 1140px) {
   .ecl-menu:not(.ecl-menu--forced-mobile, .ecl-menu--forced-close) .ecl-menu__item:not(.ecl-menu__items-previous, .ecl-menu__items-next)[aria-expanded='true'] .ecl-menu__link {
-    padding: 1rem 0.5rem;
+    padding-inline: 0.5rem;
   }
 }
 

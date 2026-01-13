@@ -237,6 +237,323 @@ const Template = (args) =>
     lang-code="zh"
     language="中文"
   ></ecl-language-item>
+  <ecl-menu
+    slot="menu"
+    menu-id="site-header-menu"
+    close-label="Close"
+    back-label="Back"
+    style-class="${`sc-ecl-site-header-${args.theme}`}"
+    menu-link="${randomizedLink('/example.html')}"
+    menu-title="Menu"
+  >
+    <ecl-menu-item
+      link="${randomizedLink('/example.html')}"
+    >
+      Home
+    </ecl-menu-item>
+    <ecl-menu-item
+      link="${randomizedLink('/example.html')}"
+      has-children
+      trigger-aria-label="Access item's children"
+      current
+    >
+      News and media
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 2.1
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 2.2
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        current
+        slot="sublist"
+      >
+        Item 2.3
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+        external
+      >
+        Item 2.4
+      </ecl-menu-item>
+    </ecl-menu-item>
+    <ecl-menu-item
+      has-children
+      trigger-aria-label="Access item's children"
+      link="${randomizedLink('/example.html')}"
+    >
+      About the EU
+      <ecl-menu-item
+        child
+        link="${randomizedLink('/example.html')}"
+        slot="sublist"
+      >
+        Item 3.1
+      </ecl-menu-item>
+      <ecl-menu-item
+        child
+        link="${randomizedLink('/example.html')}"
+        slot="sublist"
+      >
+        Item 3.2
+      </ecl-menu-item>
+      <ecl-menu-item
+        child
+        link="${randomizedLink('/example.html')}"
+        slot="sublist"
+      >
+        Item 3.3
+      </ecl-menu-item>
+    </ecl-menu-item>
+    <ecl-menu-item
+      link="${randomizedLink('/example.html')}"
+    >
+      About the EC
+    </ecl-menu-item>
+    <ecl-menu-item
+      link="${randomizedLink('/example.html')}"
+      has-children
+      trigger-aria-label="Access item's children"
+    >
+      Item 5 label
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 5.1
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 5.2
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 5.3
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 5.4
+      </ecl-menu-item>
+    </ecl-menu-item>
+    <ecl-menu-item
+      link="${randomizedLink('/example.html')}"
+      has-children
+      trigger-aria-label="Access item's children"
+    >
+      Topics
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 6.1
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 6.2
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 6.3
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 6.4
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 6.5
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 6.6
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 6.7
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 6.8
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 6.9 with a very long label
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 6.10
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 6.11
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 6.12
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}""
+        child
+        slot="sublist"
+      >
+        Item 6.13
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 6.14
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 6.15
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}""
+        child
+        slot="sublist"
+      >
+        Item 6.16
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 6.17
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 6.18
+      </ecl-menu-item>
+    </ecl-menu-item>
+    <ecl-menu-item
+      has-children
+      link="${randomizedLink('/example.html')}"
+      trigger-aria-label="Access item's children"
+    >
+      Key priorities
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 7.1
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 7.2
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 7.3
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 7.4
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 7.5
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 7.6
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 7.7
+      </ecl-menu-item>
+      <ecl-menu-item
+        link="${randomizedLink('/example.html')}"
+        child
+        slot="sublist"
+      >
+        Item 7.8
+      </ecl-menu-item>
+    </ecl-menu-item>
+  </ecl-menu>
   </ecl-site-header>`;
 
 const TemplateStandardised = (args) => 
@@ -479,7 +796,7 @@ const TemplateStandardised = (args) =>
       trigger-aria-label="Access item's children"
       current
     >
-      Item 2 label
+      News and media
       <ecl-menu-item
         link="${randomizedLink('/example.html')}"
         child
@@ -516,7 +833,7 @@ const TemplateStandardised = (args) =>
       trigger-aria-label="Access item's children"
       link="${randomizedLink('/example.html')}"
     >
-      Item 3 with a very long label
+      About the EU
       <ecl-menu-item
         child
         link="${randomizedLink('/example.html')}"
@@ -542,7 +859,7 @@ const TemplateStandardised = (args) =>
     <ecl-menu-item
       link="${randomizedLink('/example.html')}"
     >
-      Item 4 label
+      About the EC
     </ecl-menu-item>
     <ecl-menu-item
       link="${randomizedLink('/example.html')}"
@@ -584,7 +901,7 @@ const TemplateStandardised = (args) =>
       has-children
       trigger-aria-label="Access item's children"
     >
-      Item 6
+      Topics
       <ecl-menu-item
         link="${randomizedLink('/example.html')}"
         child
@@ -717,7 +1034,7 @@ const TemplateStandardised = (args) =>
       link="${randomizedLink('/example.html')}"
       trigger-aria-label="Access item's children"
     >
-      Item 7 label
+      Key priorities
       <ecl-menu-item
         link="${randomizedLink('/example.html')}"
         child
@@ -1022,7 +1339,7 @@ const TemplateHarmonised = (args) =>
       trigger-aria-label="Access item's children"
       current
     >
-      Item 2 label
+      News and media
       <ecl-menu-item
         link="${randomizedLink('/example.html')}"
         child
@@ -1059,7 +1376,7 @@ const TemplateHarmonised = (args) =>
       trigger-aria-label="Access item's children"
       link="${randomizedLink('/example.html')}"
     >
-      Item 3 with a very long label
+      About the EU
       <ecl-menu-item
         child
         link="${randomizedLink('/example.html')}"
@@ -1085,14 +1402,14 @@ const TemplateHarmonised = (args) =>
     <ecl-menu-item
       link="${randomizedLink('/example.html')}"
     >
-      Item 4 label
+      About the EC
     </ecl-menu-item>
     <ecl-menu-item
       link="${randomizedLink('/example.html')}"
       has-children
       trigger-aria-label="Access item's children"
     >
-      Item 5 label
+      Topics
       <ecl-menu-item
         link="${randomizedLink('/example.html')}"
         child
@@ -1127,7 +1444,7 @@ const TemplateHarmonised = (args) =>
       has-children
       trigger-aria-label="Access item's children"
     >
-      Item 6
+      Key priorities
       <ecl-menu-item
         link="${randomizedLink('/example.html')}"
         child
@@ -1260,7 +1577,7 @@ const TemplateHarmonised = (args) =>
       link="${randomizedLink('/example.html')}"
       trigger-aria-label="Access item's children"
     >
-      Item 7 label
+      Engage
       <ecl-menu-item
         link="${randomizedLink('/example.html')}"
         child
