@@ -56,7 +56,7 @@ export class EclPageHeader {
     }
 
     if (this.descriptionPosition === 'bottom') {
-      styleClasses.push('ecl-page-header--descrirption-bottom');
+      styleClasses.push('ecl-page-header--description-bottom');
     }
 
     return styleClasses.join(' ');
@@ -76,9 +76,11 @@ export class EclPageHeader {
     }
     if (this.withMeta) {
       const items = this.el.querySelectorAll('ecl-page-header-meta-item');
-      items.forEach((item) => {
-        item.replaceWith(item.firstElementChild);
-      });
+      if (items) {
+        items.forEach((item) => {
+          item.replaceWith(item.firstElementChild);
+        });
+      }
     }
     if (!this.noScript && this.expandable && this.expandableContent) {
       ;(window as any).ECL = (window as any).ECL || {};
@@ -206,7 +208,7 @@ export class EclPageHeader {
             <div class="ecl-page-header__content-info">
               {this.getTitle()}
               <div class="ecl-page-header__description-info">
-                {this.getDescription()}
+                {this.descriptionPosition === 'bottom' ? '' : this.getDescription()}
               </div>
             </div>
             {this.getMeta()}
@@ -215,8 +217,10 @@ export class EclPageHeader {
       }
 
       { this.variant === '50-50' &&
-        <div class="ecl-page-header__description-info">
-          {this.getDescription()}
+        <div class="ecl-page-header__section-description">
+          <div class="ecl-container">
+            {this.getDescription()}
+          </div>
         </div>
       }
 

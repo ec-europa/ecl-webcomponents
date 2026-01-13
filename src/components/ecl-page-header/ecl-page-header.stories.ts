@@ -4,12 +4,7 @@ const getArgTypes = () => {
   return {
     variant: {
       type: { name: 'select' },
-      options: ['', 'news', '50-50'],
-      labels: {
-        '': 'default',
-        news: 'news',
-        '50-50': '50-50',
-      },
+      options: ['default', 'news', '50-50'],
       description: 'Variant (news or 50-50)',
     },
     withMeta: {
@@ -93,12 +88,12 @@ export default {
 
 const Template = args =>
   `<ecl-page-header
-    variant="${args.variant}"
+    variant="${args.variant !== 'default' ? args.variant : ''}"
     header-title="${args.title}"
     image="${args.image || ''}"
-    thumbnail="${!args.variant && args.thumbnail ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg': '' }"
+    thumbnail="${args.thumbnail ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg' : '' }"
     thumbnail-alt="${args.thumbnailAlt}"
-    with-meta="${args.meta}"
+    ${args.withMeta ? 'with-meta' : ''}
     font-size="${args.fontSize}"
     expandable="${args.expandable}"
     expandable-content="${args.expandableContent}"
@@ -179,7 +174,7 @@ const Template = args =>
 export const PageHeaderCore = Template.bind({});
 PageHeaderCore.storyName = 'default';
 PageHeaderCore.args = {
-  variant: '',
+  variant: 'default',
   withMeta: true,
   expandable: false,
   expandableContent: false,
