@@ -1,0 +1,18 @@
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $typography: var.$typography
+);
+@use '@ecl/link/link' with (
+  $theme: theme.$theme,
+  $link: var.$link,
+  $button: var.$button
+);
+@use '@ecl/splash-page/splash-page' with (
+  $theme: theme.$theme,
+  $splash-page: var.$splash-page,
+  $language-list: var.$language-list
+);

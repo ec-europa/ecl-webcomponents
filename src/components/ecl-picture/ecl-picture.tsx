@@ -12,7 +12,7 @@ import { Component, Prop, h } from '@stencil/core';
 
 export class EclPicture {
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() image: string;
   @Prop() imgClass: string;
   @Prop() imageAlt: string;
@@ -57,6 +57,10 @@ export class EclPicture {
     }
 
     return attrs;
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {

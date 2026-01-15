@@ -52,6 +52,7 @@
  - [ecl-popover](../ecl-popover)
  - [ecl-site-header](../ecl-site-header)
  - [ecl-social-media-follow-item](../ecl-social-media-follow)
+ - [ecl-splash-page](../ecl-splash-page)
  - [ecl-tabs-item](../ecl-tabs)
 
 ### Depends on
@@ -83,6 +84,7 @@ graph TD;
   ecl-popover --> ecl-link
   ecl-site-header --> ecl-link
   ecl-social-media-follow-item --> ecl-link
+  ecl-splash-page --> ecl-link
   ecl-tabs-item --> ecl-link
   style ecl-link fill:#f9f,stroke:#333,stroke-width:4px
 ```

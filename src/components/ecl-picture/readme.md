@@ -15,7 +15,7 @@
 | `imgClass`    | `img-class`    |             | `string`  | `undefined` |
 | `lazy`        | `lazy`         |             | `boolean` | `false`     |
 | `styleClass`  | `style-class`  |             | `string`  | `''`        |
-| `theme`       | `theme`        |             | `string`  | `'ec'`      |
+| `theme`       | `theme`        |             | `string`  | `undefined` |
 | `zoom`        | `zoom`         |             | `boolean` | `false`     |
 
 
@@ -35,6 +35,7 @@
  - [ecl-navigation-list-item](../ecl-navigation-list)
  - [ecl-page-header](../ecl-page-header)
  - [ecl-site-header](../ecl-site-header)
+ - [ecl-splash-page](../ecl-splash-page)
  - [ecl-spotlight](../ecl-spotlight)
 
 ### Graph
@@ -52,6 +53,7 @@ graph TD;
   ecl-navigation-list-item --> ecl-picture
   ecl-page-header --> ecl-picture
   ecl-site-header --> ecl-picture
+  ecl-splash-page --> ecl-picture
   ecl-spotlight --> ecl-picture
   style ecl-picture fill:#f9f,stroke:#333,stroke-width:4px
 ```

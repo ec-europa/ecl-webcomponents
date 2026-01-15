@@ -1387,9 +1387,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default false
@@ -1745,6 +1742,32 @@ export namespace Components {
           * @default false
          */
         "visible": boolean;
+    }
+    interface EclSplashPage {
+        "elTitle": string;
+        "euLabel": string;
+        "langCode": string;
+        "language": string;
+        "logo": string;
+        "logoAlt": string;
+        "logoLink": string;
+        "nonEuLabel": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclSplashPageLanguageItem {
+        /**
+          * @default false
+         */
+        "active": boolean;
+        "langCode": string;
+        "language": string;
+        "path": string;
+        "styleClass": string;
+        "theme": string;
     }
     interface EclSpotlight {
         /**
@@ -2512,6 +2535,18 @@ declare global {
         prototype: HTMLEclSpinnerElement;
         new (): HTMLEclSpinnerElement;
     };
+    interface HTMLEclSplashPageElement extends Components.EclSplashPage, HTMLStencilElement {
+    }
+    var HTMLEclSplashPageElement: {
+        prototype: HTMLEclSplashPageElement;
+        new (): HTMLEclSplashPageElement;
+    };
+    interface HTMLEclSplashPageLanguageItemElement extends Components.EclSplashPageLanguageItem, HTMLStencilElement {
+    }
+    var HTMLEclSplashPageLanguageItemElement: {
+        prototype: HTMLEclSplashPageLanguageItemElement;
+        new (): HTMLEclSplashPageLanguageItemElement;
+    };
     interface HTMLEclSpotlightElement extends Components.EclSpotlight, HTMLStencilElement {
     }
     var HTMLEclSpotlightElement: {
@@ -2668,6 +2703,8 @@ declare global {
         "ecl-social-media-follow-item": HTMLEclSocialMediaFollowItemElement;
         "ecl-spacing": HTMLEclSpacingElement;
         "ecl-spinner": HTMLEclSpinnerElement;
+        "ecl-splash-page": HTMLEclSplashPageElement;
+        "ecl-splash-page-language-item": HTMLEclSplashPageLanguageItemElement;
         "ecl-spotlight": HTMLEclSpotlightElement;
         "ecl-tabs": HTMLEclTabsElement;
         "ecl-tabs-item": HTMLEclTabsItemElement;
@@ -4069,9 +4106,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default false
@@ -4437,6 +4471,32 @@ declare namespace LocalJSX {
          */
         "visible"?: boolean;
     }
+    interface EclSplashPage {
+        "elTitle"?: string;
+        "euLabel"?: string;
+        "langCode"?: string;
+        "language"?: string;
+        "logo"?: string;
+        "logoAlt"?: string;
+        "logoLink"?: string;
+        "nonEuLabel"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclSplashPageLanguageItem {
+        /**
+          * @default false
+         */
+        "active"?: boolean;
+        "langCode"?: string;
+        "language"?: string;
+        "path"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclSpotlight {
         /**
           * @default ''
@@ -4743,6 +4803,8 @@ declare namespace LocalJSX {
         "ecl-social-media-follow-item": EclSocialMediaFollowItem;
         "ecl-spacing": EclSpacing;
         "ecl-spinner": EclSpinner;
+        "ecl-splash-page": EclSplashPage;
+        "ecl-splash-page-language-item": EclSplashPageLanguageItem;
         "ecl-spotlight": EclSpotlight;
         "ecl-tabs": EclTabs;
         "ecl-tabs-item": EclTabsItem;
@@ -4830,6 +4892,8 @@ declare module "@stencil/core" {
             "ecl-social-media-follow-item": LocalJSX.EclSocialMediaFollowItem & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowItemElement>;
             "ecl-spacing": LocalJSX.EclSpacing & JSXBase.HTMLAttributes<HTMLEclSpacingElement>;
             "ecl-spinner": LocalJSX.EclSpinner & JSXBase.HTMLAttributes<HTMLEclSpinnerElement>;
+            "ecl-splash-page": LocalJSX.EclSplashPage & JSXBase.HTMLAttributes<HTMLEclSplashPageElement>;
+            "ecl-splash-page-language-item": LocalJSX.EclSplashPageLanguageItem & JSXBase.HTMLAttributes<HTMLEclSplashPageLanguageItemElement>;
             "ecl-spotlight": LocalJSX.EclSpotlight & JSXBase.HTMLAttributes<HTMLEclSpotlightElement>;
             "ecl-tabs": LocalJSX.EclTabs & JSXBase.HTMLAttributes<HTMLEclTabsElement>;
             "ecl-tabs-item": LocalJSX.EclTabsItem & JSXBase.HTMLAttributes<HTMLEclTabsItemElement>;
