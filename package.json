@@ -159,7 +159,8 @@
       "@ecl/select": "patches/@ecl__select.patch",
       "@ecl/carousel": "patches/@ecl__carousel.patch",
       "@ecl/banner": "patches/@ecl__banner.patch",
-      "@ecl/tabs": "patches/@ecl__tabs.patch"
+      "@ecl/tabs": "patches/@ecl__tabs.patch",
+      "@ecl/table": "patches/@ecl__table.patch"
     }
   }
 }

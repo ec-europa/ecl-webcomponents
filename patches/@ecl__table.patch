@@ -1,0 +1,11 @@
+diff --git a/table.js b/table.js
+index ef95ebb40527b0c7b82f0cf1b51293c0ce835ec0..614af4264add37d48d85afa0adc6ecf89c81811d 100644
+--- a/table.js
++++ b/table.js
+@@ -1,5 +1,5 @@
+ import { queryAll, queryOne } from '@ecl/dom-utils';
+-import * as getSystem from '@ecl/builder/utils/getSystem';
++import getSystem from '@ecl/builder/utils/getSystem';
+ 
+ const system = getSystem();
+ const iconSvgAllArrowSize = system === 'eu' ? 'm' : 'xs';

@@ -1797,6 +1797,37 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
     }
+    interface EclTable {
+        "caption"?: string;
+        "colorMode": string;
+        /**
+          * @default `ecl-table-${Math.random().toString(36).slice(2)}`
+         */
+        "elId": string;
+        "headers"?: string;
+        "labelSortAscending"?: string;
+        "labelSortDefault"?: string;
+        "labelSortDescending"?: string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
+        "rows"?: string;
+        /**
+          * @default false
+         */
+        "simple": boolean;
+        /**
+          * @default false
+         */
+        "sortable": boolean;
+        "styleClass": string;
+        "theme": string;
+        /**
+          * @default false
+         */
+        "zebra": boolean;
+    }
     interface EclTabs {
         /**
           * @default ''
@@ -2553,6 +2584,12 @@ declare global {
         prototype: HTMLEclSpotlightElement;
         new (): HTMLEclSpotlightElement;
     };
+    interface HTMLEclTableElement extends Components.EclTable, HTMLStencilElement {
+    }
+    var HTMLEclTableElement: {
+        prototype: HTMLEclTableElement;
+        new (): HTMLEclTableElement;
+    };
     interface HTMLEclTabsElement extends Components.EclTabs, HTMLStencilElement {
     }
     var HTMLEclTabsElement: {
@@ -2706,6 +2743,7 @@ declare global {
         "ecl-splash-page": HTMLEclSplashPageElement;
         "ecl-splash-page-language-item": HTMLEclSplashPageLanguageItemElement;
         "ecl-spotlight": HTMLEclSpotlightElement;
+        "ecl-table": HTMLEclTableElement;
         "ecl-tabs": HTMLEclTabsElement;
         "ecl-tabs-item": HTMLEclTabsItemElement;
         "ecl-tag": HTMLEclTagElement;
@@ -4525,6 +4563,37 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
     }
+    interface EclTable {
+        "caption"?: string;
+        "colorMode"?: string;
+        /**
+          * @default `ecl-table-${Math.random().toString(36).slice(2)}`
+         */
+        "elId"?: string;
+        "headers"?: string;
+        "labelSortAscending"?: string;
+        "labelSortDefault"?: string;
+        "labelSortDescending"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
+        "rows"?: string;
+        /**
+          * @default false
+         */
+        "simple"?: boolean;
+        /**
+          * @default false
+         */
+        "sortable"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+        /**
+          * @default false
+         */
+        "zebra"?: boolean;
+    }
     interface EclTabs {
         /**
           * @default ''
@@ -4806,6 +4875,7 @@ declare namespace LocalJSX {
         "ecl-splash-page": EclSplashPage;
         "ecl-splash-page-language-item": EclSplashPageLanguageItem;
         "ecl-spotlight": EclSpotlight;
+        "ecl-table": EclTable;
         "ecl-tabs": EclTabs;
         "ecl-tabs-item": EclTabsItem;
         "ecl-tag": EclTag;
@@ -4895,6 +4965,7 @@ declare module "@stencil/core" {
             "ecl-splash-page": LocalJSX.EclSplashPage & JSXBase.HTMLAttributes<HTMLEclSplashPageElement>;
             "ecl-splash-page-language-item": LocalJSX.EclSplashPageLanguageItem & JSXBase.HTMLAttributes<HTMLEclSplashPageLanguageItemElement>;
             "ecl-spotlight": LocalJSX.EclSpotlight & JSXBase.HTMLAttributes<HTMLEclSpotlightElement>;
+            "ecl-table": LocalJSX.EclTable & JSXBase.HTMLAttributes<HTMLEclTableElement>;
             "ecl-tabs": LocalJSX.EclTabs & JSXBase.HTMLAttributes<HTMLEclTabsElement>;
             "ecl-tabs-item": LocalJSX.EclTabsItem & JSXBase.HTMLAttributes<HTMLEclTabsItemElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
