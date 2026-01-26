@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-gallery renders 1`] = `
-<ecl-gallery close-label="Close" counter-label="Media files in this gallery" counter-separator="of" download-label="Download" ecl-script="" el-id="ecl-gallery-demo-test" grid="" grid-template="2" next-label="Next" prev-label="Previous" share-label="Share" view-all-label="View all" visible-items="9">
+<ecl-gallery close-label="Close" counter-label="Media files in this gallery" counter-separator="of" download-label="Download" ecl-script="" el-id="ecl-gallery-demo-test" grid="" grid-template="2" next-label="Next" prev-label="Previous" share-label="Share" view-all-expanded-label="Show less" view-all-label="View all" visible-items="9">
   <!---->
   <section class="ecl-gallery ecl-gallery--grid ecl-gallery--ratio-3-2 ecl-gallery--template-2" data-ecl-auto-initialized="true" data-ecl-gallery data-ecl-gallery-visible-items="9" id="ecl-gallery-demo-test">
     <ul class="ecl-gallery__list">
@@ -202,9 +202,9 @@ exports[`ecl-gallery renders 1`] = `
           <strong data-ecl-gallery-count></strong>
           Media files in this gallery
         </div>
-        <ecl-button data-ecl-gallery-all data-ecl-gallery-collapsed-label="View all">
+        <ecl-button data-ecl-gallery-all data-ecl-gallery-collapsed-label="View all" data-ecl-gallery-expanded-label="Show less">
           <!---->
-          <button class="ecl-button ecl-button--tertiary ecl-gallery__view-all sc-ecl-gallery-ec" data-ecl-gallery-all="eclGalleryAll" data-ecl-gallery-collapsed-label="View all" type="submit">
+          <button class="ecl-button ecl-button--tertiary ecl-gallery__view-all sc-ecl-gallery-ec" data-ecl-gallery-all="eclGalleryAll" data-ecl-gallery-collapsed-label="View all" data-ecl-gallery-expanded-label="Show less" type="submit">
             <span class="ecl-button__container">
               <span class="ecl-button__label" data-ecl-label>
                 View all

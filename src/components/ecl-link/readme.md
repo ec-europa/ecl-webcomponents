@@ -47,6 +47,9 @@
  - [ecl-gallery](../ecl-gallery)
  - [ecl-inpage-navigation-item](../ecl-inpage-navigation)
  - [ecl-list-illustration-item](../ecl-list-illustration)
+ - [ecl-mega-menu-featured-list-item](../ecl-mega-menu)
+ - [ecl-mega-menu-item](../ecl-mega-menu)
+ - [ecl-mega-menu-subitem](../ecl-mega-menu)
  - [ecl-news-ticker-item](../ecl-news-ticker)
  - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover](../ecl-popover)
@@ -79,6 +82,9 @@ graph TD;
   ecl-gallery --> ecl-link
   ecl-inpage-navigation-item --> ecl-link
   ecl-list-illustration-item --> ecl-link
+  ecl-mega-menu-featured-list-item --> ecl-link
+  ecl-mega-menu-item --> ecl-link
+  ecl-mega-menu-subitem --> ecl-link
   ecl-news-ticker-item --> ecl-link
   ecl-pagination-item --> ecl-link
   ecl-popover --> ecl-link

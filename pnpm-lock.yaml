@@ -24,6 +24,9 @@ patchedDependencies:
   '@ecl/carousel':
     hash: 0971494db7784339e73a151c15c087cab16b7fb9169d6c5d83830abd09427eaa
     path: patches/@ecl__carousel.patch
+  '@ecl/mega-menu':
+    hash: 2c07f0ba291c4b00c1da3dec159ceada3d19ff0dc4e2746b23f3b1a10c4d7a53
+    path: patches/@ecl__mega-menu.patch
   '@ecl/select':
     hash: 71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076
     path: patches/@ecl__select.patch
@@ -1297,6 +1300,40 @@ importers:
         specifier: 5.0.0-alpha.22.2
         version: 5.0.0-alpha.22.2
       '@ecl/utility-screen-reader':
+        specifier: 5.0.0-alpha.22.2
+        version: 5.0.0-alpha.22.2
+      cross-env:
+        specifier: 10.1.0
+        version: 10.1.0
+
+  src/components/ecl-mega-menu:
+    dependencies:
+      '@ecl/web-components-button':
+        specifier: 0.17.1
+        version: link:../ecl-button
+      '@ecl/web-components-grid':
+        specifier: 0.17.1
+        version: link:../ecl-grid
+      '@ecl/web-components-icon':
+        specifier: 0.17.1
+        version: link:../ecl-icon
+    devDependencies:
+      '@ecl/builder':
+        specifier: 5.0.0-alpha.22.2
+        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-alpha.22.2
+        version: 5.0.0-alpha.22.2
+      '@ecl/mega-menu':
+        specifier: 5.0.0-alpha.22.2
+        version: 5.0.0-alpha.22.2(patch_hash=2c07f0ba291c4b00c1da3dec159ceada3d19ff0dc4e2746b23f3b1a10c4d7a53)
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-alpha.22.2
+        version: 5.0.0-alpha.22.2
+      '@ecl/theme-ec':
+        specifier: 5.0.0-alpha.22.2
+        version: 5.0.0-alpha.22.2
+      '@ecl/theme-eu':
         specifier: 5.0.0-alpha.22.2
         version: 5.0.0-alpha.22.2
       cross-env:
@@ -14072,7 +14109,7 @@ snapshots:
       '@ecl/picture': 5.0.0-alpha.22.2
       '@ecl/video': 5.0.0-alpha.22.2
 
-  '@ecl/mega-menu@5.0.0-alpha.22.2':
+  '@ecl/mega-menu@5.0.0-alpha.22.2(patch_hash=2c07f0ba291c4b00c1da3dec159ceada3d19ff0dc4e2746b23f3b1a10c4d7a53)':
     dependencies:
       '@ecl/button': 5.0.0-alpha.22.2
       '@ecl/dom-utils': 5.0.0-alpha.22.2
@@ -14186,7 +14223,7 @@ snapshots:
       '@ecl/link': 5.0.0-alpha.22.2
       '@ecl/list-illustration': 5.0.0-alpha.22.2
       '@ecl/media-container': 5.0.0-alpha.22.2
-      '@ecl/mega-menu': 5.0.0-alpha.22.2
+      '@ecl/mega-menu': 5.0.0-alpha.22.2(patch_hash=2c07f0ba291c4b00c1da3dec159ceada3d19ff0dc4e2746b23f3b1a10c4d7a53)
       '@ecl/menu': 5.0.0-alpha.22.2
       '@ecl/mixins-color': 5.0.0-alpha.22.2
       '@ecl/mixins-typography': 5.0.0-alpha.22.2
@@ -14279,7 +14316,7 @@ snapshots:
       '@ecl/link': 5.0.0-alpha.22.2
       '@ecl/list-illustration': 5.0.0-alpha.22.2
       '@ecl/media-container': 5.0.0-alpha.22.2
-      '@ecl/mega-menu': 5.0.0-alpha.22.2
+      '@ecl/mega-menu': 5.0.0-alpha.22.2(patch_hash=2c07f0ba291c4b00c1da3dec159ceada3d19ff0dc4e2746b23f3b1a10c4d7a53)
       '@ecl/menu': 5.0.0-alpha.22.2
       '@ecl/mixins-color': 5.0.0-alpha.22.2
       '@ecl/mixins-typography': 5.0.0-alpha.22.2

@@ -19,6 +19,7 @@ describe('ecl-gallery', () => {
         grid-template="2"
         counter-label="Media files in this gallery"
         view-all-label="View all"
+        view-all-expanded-label="Show less"
         counter-separator="of"
         next-label="Next"
         prev-label="Previous"

@@ -1143,6 +1143,112 @@ export namespace Components {
         "theme": string;
         "tracks": string;
     }
+    interface EclMegaMenu {
+        "ariaLabel"?: string;
+        "backLabel"?: string;
+        /**
+          * @default 'secondary'
+         */
+        "featuredPriority": 'primary' | 'secondary';
+        /**
+          * @default `ecl-mega-menu-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "menuId"?: string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
+        "secondLevelAriaLabel"?: string;
+        "styleClass": string;
+        "theme": string;
+        "thirdLevelAriaLabel"?: string;
+        "toggleLabel"?: string;
+    }
+    interface EclMegaMenuFeaturedListItem {
+        /**
+          * @default false
+         */
+        "external": boolean;
+        /**
+          * @default false
+         */
+        "hasDescription": boolean;
+        "image": string;
+        "label": string;
+        "path"?: string;
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclMegaMenuItem {
+        /**
+          * @default false
+         */
+        "external": boolean;
+        "featuredImage": string;
+        "featuredTitle": string;
+        /**
+          * @default false
+         */
+        "hasChildren": boolean;
+        /**
+          * @default false
+         */
+        "hasFeatured": boolean;
+        /**
+          * @default false
+         */
+        "hasInfo": boolean;
+        "infoTitle": string;
+        /**
+          * @default false
+         */
+        "isContainer": boolean;
+        /**
+          * @default false
+         */
+        "isPromotional": boolean;
+        "label": string;
+        /**
+          * @default false
+         */
+        "oneLevelOnly": boolean;
+        "path"?: string;
+        /**
+          * @default false
+         */
+        "seeAll": boolean;
+        "seeAllLabel"?: string;
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclMegaMenuSubitem {
+        /**
+          * @default false
+         */
+        "external": boolean;
+        "featuredTitle": string;
+        /**
+          * @default false
+         */
+        "hasChildren": boolean;
+        /**
+          * @default false
+         */
+        "hasFeatured": boolean;
+        "label": string;
+        /**
+          * @default false
+         */
+        "oneLevelOnly": boolean;
+        "path"?: string;
+        /**
+          * @default false
+         */
+        "seeAll": boolean;
+        "seeAllLabel"?: string;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclMenu {
         "ariaLabel": string;
         "backLabel": string;
@@ -2377,6 +2483,30 @@ declare global {
         prototype: HTMLEclMediaContainerElement;
         new (): HTMLEclMediaContainerElement;
     };
+    interface HTMLEclMegaMenuElement extends Components.EclMegaMenu, HTMLStencilElement {
+    }
+    var HTMLEclMegaMenuElement: {
+        prototype: HTMLEclMegaMenuElement;
+        new (): HTMLEclMegaMenuElement;
+    };
+    interface HTMLEclMegaMenuFeaturedListItemElement extends Components.EclMegaMenuFeaturedListItem, HTMLStencilElement {
+    }
+    var HTMLEclMegaMenuFeaturedListItemElement: {
+        prototype: HTMLEclMegaMenuFeaturedListItemElement;
+        new (): HTMLEclMegaMenuFeaturedListItemElement;
+    };
+    interface HTMLEclMegaMenuItemElement extends Components.EclMegaMenuItem, HTMLStencilElement {
+    }
+    var HTMLEclMegaMenuItemElement: {
+        prototype: HTMLEclMegaMenuItemElement;
+        new (): HTMLEclMegaMenuItemElement;
+    };
+    interface HTMLEclMegaMenuSubitemElement extends Components.EclMegaMenuSubitem, HTMLStencilElement {
+    }
+    var HTMLEclMegaMenuSubitemElement: {
+        prototype: HTMLEclMegaMenuSubitemElement;
+        new (): HTMLEclMegaMenuSubitemElement;
+    };
     interface HTMLEclMenuElement extends Components.EclMenu, HTMLStencilElement {
     }
     var HTMLEclMenuElement: {
@@ -2715,6 +2845,10 @@ declare global {
         "ecl-list-illustration": HTMLEclListIllustrationElement;
         "ecl-list-illustration-item": HTMLEclListIllustrationItemElement;
         "ecl-media-container": HTMLEclMediaContainerElement;
+        "ecl-mega-menu": HTMLEclMegaMenuElement;
+        "ecl-mega-menu-featured-list-item": HTMLEclMegaMenuFeaturedListItemElement;
+        "ecl-mega-menu-item": HTMLEclMegaMenuItemElement;
+        "ecl-mega-menu-subitem": HTMLEclMegaMenuSubitemElement;
         "ecl-menu": HTMLEclMenuElement;
         "ecl-menu-item": HTMLEclMenuItemElement;
         "ecl-modal": HTMLEclModalElement;
@@ -3900,6 +4034,112 @@ declare namespace LocalJSX {
         "theme"?: string;
         "tracks"?: string;
     }
+    interface EclMegaMenu {
+        "ariaLabel"?: string;
+        "backLabel"?: string;
+        /**
+          * @default 'secondary'
+         */
+        "featuredPriority"?: 'primary' | 'secondary';
+        /**
+          * @default `ecl-mega-menu-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "menuId"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
+        "secondLevelAriaLabel"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "thirdLevelAriaLabel"?: string;
+        "toggleLabel"?: string;
+    }
+    interface EclMegaMenuFeaturedListItem {
+        /**
+          * @default false
+         */
+        "external"?: boolean;
+        /**
+          * @default false
+         */
+        "hasDescription"?: boolean;
+        "image"?: string;
+        "label": string;
+        "path"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclMegaMenuItem {
+        /**
+          * @default false
+         */
+        "external"?: boolean;
+        "featuredImage"?: string;
+        "featuredTitle"?: string;
+        /**
+          * @default false
+         */
+        "hasChildren"?: boolean;
+        /**
+          * @default false
+         */
+        "hasFeatured"?: boolean;
+        /**
+          * @default false
+         */
+        "hasInfo"?: boolean;
+        "infoTitle"?: string;
+        /**
+          * @default false
+         */
+        "isContainer"?: boolean;
+        /**
+          * @default false
+         */
+        "isPromotional"?: boolean;
+        "label": string;
+        /**
+          * @default false
+         */
+        "oneLevelOnly"?: boolean;
+        "path"?: string;
+        /**
+          * @default false
+         */
+        "seeAll"?: boolean;
+        "seeAllLabel"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclMegaMenuSubitem {
+        /**
+          * @default false
+         */
+        "external"?: boolean;
+        "featuredTitle"?: string;
+        /**
+          * @default false
+         */
+        "hasChildren"?: boolean;
+        /**
+          * @default false
+         */
+        "hasFeatured"?: boolean;
+        "label": string;
+        /**
+          * @default false
+         */
+        "oneLevelOnly"?: boolean;
+        "path"?: string;
+        /**
+          * @default false
+         */
+        "seeAll"?: boolean;
+        "seeAllLabel"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclMenu {
         "ariaLabel"?: string;
         "backLabel"?: string;
@@ -4847,6 +5087,10 @@ declare namespace LocalJSX {
         "ecl-list-illustration": EclListIllustration;
         "ecl-list-illustration-item": EclListIllustrationItem;
         "ecl-media-container": EclMediaContainer;
+        "ecl-mega-menu": EclMegaMenu;
+        "ecl-mega-menu-featured-list-item": EclMegaMenuFeaturedListItem;
+        "ecl-mega-menu-item": EclMegaMenuItem;
+        "ecl-mega-menu-subitem": EclMegaMenuSubitem;
         "ecl-menu": EclMenu;
         "ecl-menu-item": EclMenuItem;
         "ecl-modal": EclModal;
@@ -4937,6 +5181,10 @@ declare module "@stencil/core" {
             "ecl-list-illustration": LocalJSX.EclListIllustration & JSXBase.HTMLAttributes<HTMLEclListIllustrationElement>;
             "ecl-list-illustration-item": LocalJSX.EclListIllustrationItem & JSXBase.HTMLAttributes<HTMLEclListIllustrationItemElement>;
             "ecl-media-container": LocalJSX.EclMediaContainer & JSXBase.HTMLAttributes<HTMLEclMediaContainerElement>;
+            "ecl-mega-menu": LocalJSX.EclMegaMenu & JSXBase.HTMLAttributes<HTMLEclMegaMenuElement>;
+            "ecl-mega-menu-featured-list-item": LocalJSX.EclMegaMenuFeaturedListItem & JSXBase.HTMLAttributes<HTMLEclMegaMenuFeaturedListItemElement>;
+            "ecl-mega-menu-item": LocalJSX.EclMegaMenuItem & JSXBase.HTMLAttributes<HTMLEclMegaMenuItemElement>;
+            "ecl-mega-menu-subitem": LocalJSX.EclMegaMenuSubitem & JSXBase.HTMLAttributes<HTMLEclMegaMenuSubitemElement>;
             "ecl-menu": LocalJSX.EclMenu & JSXBase.HTMLAttributes<HTMLEclMenuElement>;
             "ecl-menu-item": LocalJSX.EclMenuItem & JSXBase.HTMLAttributes<HTMLEclMenuItemElement>;
             "ecl-modal": LocalJSX.EclModal & JSXBase.HTMLAttributes<HTMLEclModalElement>;

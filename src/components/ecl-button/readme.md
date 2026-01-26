@@ -33,6 +33,9 @@
  - [ecl-file-translations](../ecl-file)
  - [ecl-gallery](../ecl-gallery)
  - [ecl-media-container](../ecl-media-container)
+ - [ecl-mega-menu](../ecl-mega-menu)
+ - [ecl-mega-menu-item](../ecl-mega-menu)
+ - [ecl-mega-menu-subitem](../ecl-mega-menu)
  - [ecl-menu](../ecl-menu)
  - [ecl-menu-item](../ecl-menu)
  - [ecl-modal](../ecl-modal)
@@ -61,6 +64,9 @@ graph TD;
   ecl-file-translations --> ecl-button
   ecl-gallery --> ecl-button
   ecl-media-container --> ecl-button
+  ecl-mega-menu --> ecl-button
+  ecl-mega-menu-item --> ecl-button
+  ecl-mega-menu-subitem --> ecl-button
   ecl-menu --> ecl-button
   ecl-menu-item --> ecl-button
   ecl-modal --> ecl-button

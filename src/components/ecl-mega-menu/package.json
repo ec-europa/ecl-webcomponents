@@ -1,0 +1,44 @@
+{
+  "name": "@ecl/web-components-mega-menu",
+  "author": "European Commission",
+  "license": "EUPL-1.2",
+  "version": "0.17.1",
+  "description": "ECL Mega Menu",
+  "main": "ecl-mega-menu.tsx",
+  "private": true,
+  "scripts": {
+    "build:styles": "cross-env ecl-builder styles",
+    "build:scripts": "cross-env ecl-builder scripts",
+    "build": "run-s clean build:*",
+    "clean": "rimraf build",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "@ecl/web-components-grid": "0.17.1",
+    "@ecl/web-components-button": "0.17.1",
+    "@ecl/web-components-icon": "0.17.1"
+  },
+  "devDependencies": {
+    "@ecl/builder": "5.0.0-alpha.22.2",
+    "@ecl/grid": "5.0.0-alpha.22.2",
+    "@ecl/mega-menu": "5.0.0-alpha.22.2",
+    "@ecl/theme-ec": "5.0.0-alpha.22.2",
+    "@ecl/theme-eu": "5.0.0-alpha.22.2",
+    "@ecl/mixins-typography": "5.0.0-alpha.22.2",
+    "cross-env": "10.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planctus/ecl-webcomponents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/planctus/ecl-webcomponents/issues"
+  },
+  "homepage": "https://github.com/planctus/ecl-webcomponents",
+  "keywords": [
+    "ecl",
+    "europa-component-library",
+    "design-system",
+    "web-components"
+  ]
+}

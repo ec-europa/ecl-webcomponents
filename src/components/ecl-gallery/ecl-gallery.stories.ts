@@ -82,7 +82,7 @@ const Template = (args) =>
   el-id="ecl-gallery-demo"
   counter-label="Media files in this gallery"
   view-all-label="Show more items"
-  view-all-expanded-label="Back"
+  view-all-expanded-label="Show less"
   counter-separator="of"
   next-label="Next"
   prev-label="Previous"

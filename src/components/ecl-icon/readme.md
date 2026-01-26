@@ -44,6 +44,9 @@
  - [ecl-link](../ecl-link)
  - [ecl-list-illustration-item](../ecl-list-illustration)
  - [ecl-media-container](../ecl-media-container)
+ - [ecl-mega-menu](../ecl-mega-menu)
+ - [ecl-mega-menu-item](../ecl-mega-menu)
+ - [ecl-mega-menu-subitem](../ecl-mega-menu)
  - [ecl-menu](../ecl-menu)
  - [ecl-menu-item](../ecl-menu)
  - [ecl-modal](../ecl-modal)
@@ -87,6 +90,9 @@ graph TD;
   ecl-link --> ecl-icon
   ecl-list-illustration-item --> ecl-icon
   ecl-media-container --> ecl-icon
+  ecl-mega-menu --> ecl-icon
+  ecl-mega-menu-item --> ecl-icon
+  ecl-mega-menu-subitem --> ecl-icon
   ecl-menu --> ecl-icon
   ecl-menu-item --> ecl-icon
   ecl-modal --> ecl-icon

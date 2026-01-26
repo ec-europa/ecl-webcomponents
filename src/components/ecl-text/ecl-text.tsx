@@ -39,7 +39,7 @@ export class EclText {
 
     if (this.colorModeTypography) {
       styleClasses.push(`ecl-u-type-color-${this.colorModeTypography}`);
-      this.color = undefined; // ⚠️ ideally avoid mutating this too
+      this.color = undefined;
     }
 
     if (this.type) {
@@ -53,7 +53,7 @@ export class EclText {
         styleClasses.push(`ecl-u-type-${this.type}`);
       }
 
-      effectiveSize = undefined; // update only the local variable
+      effectiveSize = undefined;
     }
 
     if (effectiveSize) {

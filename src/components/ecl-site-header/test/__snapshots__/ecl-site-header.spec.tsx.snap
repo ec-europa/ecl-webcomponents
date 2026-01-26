@@ -3,7 +3,7 @@
 exports[`ecl-site-header renders 1`] = `
 <ecl-site-header eu-label="Official EU languages:" lang-code="en" language="english" language-aria-label="Choose language" language-block="" language-id="language-switcher" language-title="Choose your language" login-block="" login-link="/example.html" login-text="Log in" logo-alt="European Commission" logo-title="European commission" non-eu-label="Other languages:" search-block="" search-form-id="ecl-site-header-search-form" search-placeholder="Placeholder text" search-text="search" theme="ec">
   <!---->
-  <header class="ecl-site-header ecl-site-header-with-logo-l" data-ecl-auto-initialized="true">
+  <header class="ecl-site-header ecl-site-header--has-mega-menu ecl-site-header-with-logo-l" data-ecl-auto-initialized="true">
     <div class="ecl-site-header__inner">
       <div class="ecl-site-header__header">
         <div class="ecl-container ecl-site-header__container">
@@ -32,8 +32,14 @@ exports[`ecl-site-header renders 1`] = `
                     <div class="ecl-site-header__language-title" id="ecl-site-header__language-title">
                       Choose your language
                     </div>
-                    <ecl-button buttonstyle="neutral" data-ecl-language-list-close hide-label="" style-class="ecl-site-header__language-close sc-ecl-site-header-ec" type="submit" variant="tertiary">
-                      <ecl-icon data-ecl-icon icon="close" size="m" slot="icon-after" style-class="sc-ecl-site-header-ec"></ecl-icon>
+                    <ecl-button data-ecl-language-list-close hide-label="" style-class="ecl-site-header__language-close sc-ecl-site-header-ec">
+                      <!---->
+                      <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-site-header__language-close sc-ecl-site-header-ec" data-ecl-language-list-close="eclLanguageListClose" type="submit">
+                        <span class="ecl-button__container">
+                          <span class="ecl-button__label" data-ecl-label></span>
+                          <ecl-icon data-ecl-icon icon="close" size="m" slot="icon-after" style-class="sc-ecl-site-header-ec"></ecl-icon>
+                        </span>
+                      </button>
                     </ecl-button>
                   </div>
                   <div class="ecl-site-header__language-content" data-ecl-language-list-content>
@@ -235,9 +241,16 @@ exports[`ecl-site-header renders 1`] = `
                         <ecl-input input-class="ecl-search-form__text-input sc-ecl-search-form-ec" input-id="ecl-site-header-search-form" placeholder="Placeholder text" style-class="sc-ecl-search-form-ec" type="search"></ecl-input>
                       </div>
                     </ecl-form-group>
-                    <ecl-button aria-label="search" hide-label="" style-class="ecl-search-form__button sc-ecl-search-form-ec ecl-button--neutral sc-ecl-site-header-ec" type="search" variant="tertiary">
-                      search
-                      <ecl-icon icon="search" size="m" slot="icon-before" style-class="sc-ecl-search-form-ec"></ecl-icon>
+                    <ecl-button aria-label="search" hide-label="" style-class="ecl-search-form__button sc-ecl-search-form-ec ecl-button--neutral sc-ecl-site-header-ec">
+                      <!---->
+                      <button aria-label="search" class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-search-form__button sc-ecl-search-form-ec sc-ecl-site-header-ec" type="search">
+                        <span class="ecl-button__container">
+                          <ecl-icon icon="search" size="m" slot="icon-before" style-class="sc-ecl-search-form-ec"></ecl-icon>
+                          <span class="ecl-button__label" data-ecl-label>
+                            search
+                          </span>
+                        </span>
+                      </button>
                     </ecl-button>
                   </form>
                 </ecl-search-form>
@@ -247,6 +260,855 @@ exports[`ecl-site-header renders 1`] = `
         </div>
       </div>
     </div>
+    <ecl-mega-menu aria-label="Main navigation" back-label="Back" menu-id="mega-menu-demo" slot="menu" toggle-label="Close">
+      <!---->
+      <nav aria-label="Main navigation" class="ecl-mega-menu sc-ecl-site-header-ec" data-ecl-auto-initialized="true" data-ecl-mega-menu id="mega-menu-demo" role="navigation">
+        <div class="ecl-mega-menu__overlay"></div>
+        <div class="ecl-container ecl-mega-menu__container">
+          <ecl-button aria-expanded="false" button-style="neutral" data-ecl-mega-menu-open hide-label="" style-class="ecl-mega-menu__open sc-ecl-mega-menu-ec">
+            <!---->
+            <button aria-expanded="false" class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-mega-menu__open sc-ecl-mega-menu-ec sc-ecl-site-header-ec" data-ecl-mega-menu-open="eclMegaMenuOpen" type="button">
+              <span class="ecl-button__container">
+                <span class="ecl-button__label" data-ecl-label>
+                  Close
+                </span>
+                <ecl-icon icon="hamburger" size="m" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                <ecl-icon icon="close" size="m" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+              </span>
+            </button>
+          </ecl-button>
+          <section class="ecl-mega-menu__inner" data-ecl-mega-menu-inner>
+            <header class="ecl-mega-menu__inner-header">
+              <ecl-button data-ecl-mega-menu-back icon-position="before" style-class="ecl-mega-menu__back sc-ecl-mega-menu-ec">
+                <!---->
+                <button class="ecl-button ecl-button--tertiary ecl-mega-menu__back sc-ecl-mega-menu-ec" data-ecl-mega-menu-back="eclMegaMenuBack" type="button">
+                  <span class="ecl-button__container">
+                    <span class="ecl-button__label" data-ecl-label>
+                      <ecl-icon icon="corner-arrow" rotate="270" size="xs" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                      Back
+                    </span>
+                  </span>
+                </button>
+              </ecl-button>
+            </header>
+            <ul class="ecl-mega-menu__list">
+              <ecl-mega-menu-item class="ecl-mega-menu__item sc-ecl-mega-menu-ec" data-ecl-mega-menu-item label="Home" path="/example.html">
+                <!---->
+                <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec" variant="standalone">
+                  Home
+                </ecl-link>
+              </ecl-mega-menu-item>
+              <ecl-mega-menu-item class="ecl-mega-menu__item ecl-mega-menu__item--has-children sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item featured-image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" has-children="" has-featured="" has-info="" info-title="About the news and media" label="News and media" see-all="" see-all-label="Discover more">
+                <!---->
+                <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
+                  <!---->
+                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
+                    <span class="ecl-button__container">
+                      <span class="ecl-button__label" data-ecl-label>
+                        News and media
+                      </span>
+                      <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                      <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                    </span>
+                  </button>
+                </ecl-button>
+                <div class="ecl-mega-menu__wrapper sc-ecl-mega-menu-ec">
+                  <div class="ecl-container sc-ecl-mega-menu-ec">
+                    <div class="ecl-mega-menu__info sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
+                      <span class="ecl-mega-menu__info-title sc-ecl-mega-menu-ec">
+                        About the news and media
+                      </span>
+                      <div class="ecl-mega-menu__info-scrollable sc-ecl-mega-menu-ec">
+                        <div class="ecl-mega-menu__info-content sc-ecl-mega-menu-ec">
+                          <span slot="info">
+                            Description text, lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ecl-mega-menu__mega ecl-mega-menu__mega--has-featured sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
+                      <ul class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem has-children="" has-featured="" label="Item 2.1" path="/example.html" see-all="" see-all-label="See all pages">
+                          <!---->
+                          <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-sublink style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec">
+                            <!---->
+                            <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__sublink sc-ecl-mega-menu-ec" data-ecl-mega-menu-sublink="eclMegaMenuSublink" type="button">
+                              <span class="ecl-button__container">
+                                <span class="ecl-button__label" data-ecl-label>
+                                  Item 2.1
+                                </span>
+                                <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                                <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                              </span>
+                            </button>
+                          </ecl-button>
+                          <div class="ecl-mega-menu__mega ecl-mega-menu__mega--level-2 sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
+                            <ul class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
+                              <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 2.1 subitem 1" path="/example.html">
+                                <!---->
+                                <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                                  Item 2.1 subitem 1
+                                </ecl-link>
+                              </ecl-mega-menu-subitem>
+                              <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 2.1 subitem 2" path="/example.html">
+                                <!---->
+                                <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                                  Item 2.1 subitem 2
+                                </ecl-link>
+                              </ecl-mega-menu-subitem>
+                              <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 2.1 subitem 3" path="/example.html">
+                                <!---->
+                                <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                                  Item 2.1 subitem 3
+                                </ecl-link>
+                              </ecl-mega-menu-subitem>
+                              <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 2.1 subitem 4" path="/example.html">
+                                <!---->
+                                <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                                  Item 2.1 subitem 4
+                                </ecl-link>
+                              </ecl-mega-menu-subitem>
+                              <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 2.1 subitem 5" path="/example.html">
+                                <!---->
+                                <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                                  Item 2.1 subitem 5
+                                </ecl-link>
+                              </ecl-mega-menu-subitem>
+                              <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 2.1 subitem 6" path="/example.html">
+                                <!---->
+                                <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                                  Item 2.1 subitem 6
+                                </ecl-link>
+                              </ecl-mega-menu-subitem>
+                              <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 2.1 subitem 7" path="/example.html">
+                                <!---->
+                                <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                                  Item 2.1 subitem 7
+                                </ecl-link>
+                              </ecl-mega-menu-subitem>
+                              <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 2.1 subitem 8" path="/example.html">
+                                <!---->
+                                <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                                  Item 2.1 subitem 8
+                                </ecl-link>
+                              </ecl-mega-menu-subitem>
+                              <li class="ecl-mega-menu__spacer sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem></li>
+                              <li class="ecl-mega-menu__see-all ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem>
+                                <ecl-link path="/example.html" style-class="sc-ecl-mega-menu-ec" variant="standalone">
+                                  See all pages
+                                  <ecl-icon icon="arrow-left" rotate="180" size="xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                                </ecl-link>
+                              </li>
+                            </ul>
+                            <div class="ecl-mega-menu__featured sc-ecl-mega-menu-ec" data-ecl-mega-menu-featured>
+                              <div class="ecl-mega-menu__featured-scrollable sc-ecl-mega-menu-ec">
+                                <ul class="ecl-mega-menu__featured-list sc-ecl-mega-menu-ec">
+                                  <ecl-mega-menu-featured-list-item class="ecl-mega-menu__featured-list__item ecl-mega-menu__featured-list__item--combo sc-ecl-mega-menu-ec" external="" has-description="" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" label="Featured link 1" path="/example.html" slot="featured-second">
+                                    <!---->
+                                    <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" img-class="ecl-mega-menu__featured-image sc-ecl-mega-menu-ec" style-class="ecl-mega-menu__featured-picture sc-ecl-mega-menu-ec"></ecl-picture>
+                                    <ecl-link path="/example.html" style-class="ecl-mega-menu__featured-link sc-ecl-mega-menu-ec" variant="standalone">
+                                      Featured link 1
+                                    </ecl-link>
+                                    <div class="ecl-mega-menu__featured-list__item-description sc-ecl-mega-menu-ec">
+                                      I belong to the sub item
+                                    </div>
+                                  </ecl-mega-menu-featured-list-item>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 2.2" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 2.2
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 2.3" path="/example.html" see-all="" see-all-label="See all pages">
+                          <!---->
+                          <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem hidden="" label="Item 2.3 subitem 1" path="/example.html">
+                            <!---->
+                            <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                              Item 2.3 subitem 1
+                            </ecl-link>
+                          </ecl-mega-menu-subitem>
+                          <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem hidden="" label="Item 2.3 subitem 2" path="/example.html">
+                            <!---->
+                            <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                              Item 2.3 subitem 2
+                            </ecl-link>
+                          </ecl-mega-menu-subitem>
+                          <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem hidden="" label="Item 2.3 subitem 3" path="/example.html">
+                            <!---->
+                            <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                              Item 2.3 subitem 3
+                            </ecl-link>
+                          </ecl-mega-menu-subitem>
+                          <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem hidden="" label="Item 2.3 subitem 4" path="/example.html">
+                            <!---->
+                            <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                              Item 2.3 subitem 4
+                            </ecl-link>
+                          </ecl-mega-menu-subitem>
+                          <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem hidden="" label="Item 2.3 subitem 5" path="/example.html">
+                            <!---->
+                            <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                              Item 2.3 subitem 5
+                            </ecl-link>
+                          </ecl-mega-menu-subitem>
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 2.3
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <li class="ecl-mega-menu__spacer sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem></li>
+                        <li class="ecl-mega-menu__see-all ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem>
+                          <ecl-link style-class="ecl-mega-menu__info-link sc-ecl-mega-menu-ec">
+                            Discover more
+                            <ecl-icon icon="arrow-left" rotate="180" size="xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                          </ecl-link>
+                        </li>
+                      </ul>
+                      <div class="ecl-mega-menu__featured sc-ecl-mega-menu-ec" data-ecl-mega-menu-featured>
+                        <div class="ecl-mega-menu__featured-scrollable sc-ecl-mega-menu-ec">
+                          <ul class="ecl-mega-menu__featured-list sc-ecl-mega-menu-ec">
+                            <ecl-mega-menu-featured-list-item class="ecl-mega-menu__featured-list__item ecl-mega-menu__featured-list__item--combo sc-ecl-mega-menu-ec" external="" has-description="" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" label="Featured link 1" path="/example.html" slot="featured">
+                              <!---->
+                              <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" img-class="ecl-mega-menu__featured-image sc-ecl-mega-menu-ec" style-class="ecl-mega-menu__featured-picture sc-ecl-mega-menu-ec"></ecl-picture>
+                              <ecl-link path="/example.html" style-class="ecl-mega-menu__featured-link sc-ecl-mega-menu-ec" variant="standalone">
+                                Featured link 1
+                              </ecl-link>
+                              <div class="ecl-mega-menu__featured-list__item-description sc-ecl-mega-menu-ec">
+                                Description text, lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                            </ecl-mega-menu-featured-list-item>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ecl-mega-menu-item>
+              <ecl-mega-menu-item class="ecl-mega-menu__item ecl-mega-menu__item--has-children ecl-mega-menu__item--one-level-only sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item has-children="" has-featured="" has-info="" info-title="About the European Union" label="About the EU" one-level-only="">
+                <!---->
+                <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
+                  <!---->
+                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
+                    <span class="ecl-button__container">
+                      <span class="ecl-button__label" data-ecl-label>
+                        About the EU
+                      </span>
+                      <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                      <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                    </span>
+                  </button>
+                </ecl-button>
+                <div class="ecl-mega-menu__wrapper sc-ecl-mega-menu-ec">
+                  <div class="ecl-container sc-ecl-mega-menu-ec">
+                    <div class="ecl-mega-menu__info sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
+                      <span class="ecl-mega-menu__info-title sc-ecl-mega-menu-ec">
+                        About the European Union
+                      </span>
+                      <div class="ecl-mega-menu__info-scrollable sc-ecl-mega-menu-ec">
+                        <div class="ecl-mega-menu__info-content sc-ecl-mega-menu-ec">
+                          <span slot="info">
+                            Description text, lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ecl-mega-menu__mega ecl-mega-menu__mega--has-featured sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
+                      <ul class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 3.1" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 3.1
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 3.2" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 3.2
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 3.3" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 3.3
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 3.4" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 3.4
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 3.5" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 3.5
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 3.6" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 3.6
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 3.7" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 3.7
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 3.8" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 3.8
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 3.9" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 3.9
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <li class="ecl-mega-menu__spacer sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem></li>
+                      </ul>
+                      <div class="ecl-mega-menu__featured sc-ecl-mega-menu-ec" data-ecl-mega-menu-featured>
+                        <div class="ecl-mega-menu__featured-scrollable sc-ecl-mega-menu-ec">
+                          <ul class="ecl-mega-menu__featured-list sc-ecl-mega-menu-ec">
+                            <ecl-mega-menu-featured-list-item class="ecl-mega-menu__featured-list__item ecl-mega-menu__featured-list__item--combo sc-ecl-mega-menu-ec" external="" has-description="" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" label="Featured link 1" path="/example.html" slot="featured">
+                              <!---->
+                              <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" img-class="ecl-mega-menu__featured-image sc-ecl-mega-menu-ec" style-class="ecl-mega-menu__featured-picture sc-ecl-mega-menu-ec"></ecl-picture>
+                              <ecl-link path="/example.html" style-class="ecl-mega-menu__featured-link sc-ecl-mega-menu-ec" variant="standalone">
+                                Featured link 1
+                              </ecl-link>
+                              <div class="ecl-mega-menu__featured-list__item-description sc-ecl-mega-menu-ec">
+                                I belong to the sub item
+                              </div>
+                            </ecl-mega-menu-featured-list-item>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ecl-mega-menu-item>
+              <ecl-mega-menu-item class="ecl-mega-menu__item ecl-mega-menu__item--has-children ecl-mega-menu__item--one-level-only sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item has-children="" has-info="" info-title="About the European Commission" label="About the EC" one-level-only="" see-all="" see-all-label="Discover more">
+                <!---->
+                <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
+                  <!---->
+                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
+                    <span class="ecl-button__container">
+                      <span class="ecl-button__label" data-ecl-label>
+                        About the EC
+                      </span>
+                      <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                      <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                    </span>
+                  </button>
+                </ecl-button>
+                <div class="ecl-mega-menu__wrapper sc-ecl-mega-menu-ec">
+                  <div class="ecl-container sc-ecl-mega-menu-ec">
+                    <div class="ecl-mega-menu__info sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
+                      <span class="ecl-mega-menu__info-title sc-ecl-mega-menu-ec">
+                        About the European Commission
+                      </span>
+                      <div class="ecl-mega-menu__info-scrollable sc-ecl-mega-menu-ec">
+                        <div class="ecl-mega-menu__info-content sc-ecl-mega-menu-ec">
+                          <span slot="info">
+                            Description text, lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ecl-mega-menu__mega sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
+                      <ul class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 4.1" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 4.1
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 4.2" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 4.2
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 4.3" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 4.3
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 4.4" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 4.4
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 4.5" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 4.5
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 4.6" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 4.6
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 4.7" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 4.7
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 4.8" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 4.8
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 4.9" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 4.9
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 4.10" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 4.10
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 4.11" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 4.11
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 4.12" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 4.12
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <li class="ecl-mega-menu__spacer sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem></li>
+                        <li class="ecl-mega-menu__see-all ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem>
+                          <ecl-link style-class="ecl-mega-menu__info-link sc-ecl-mega-menu-ec">
+                            Discover more
+                            <ecl-icon icon="arrow-left" rotate="180" size="xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                          </ecl-link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </ecl-mega-menu-item>
+              <ecl-mega-menu-item class="ecl-mega-menu__item ecl-mega-menu__item--has-children ecl-mega-menu__item--one-level-only sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item has-children="" label="Topics" one-level-only="">
+                <!---->
+                <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
+                  <!---->
+                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
+                    <span class="ecl-button__container">
+                      <span class="ecl-button__label" data-ecl-label>
+                        Topics
+                      </span>
+                      <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                      <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                    </span>
+                  </button>
+                </ecl-button>
+                <div class="ecl-mega-menu__wrapper sc-ecl-mega-menu-ec">
+                  <div class="ecl-container sc-ecl-mega-menu-ec">
+                    <div class="ecl-mega-menu__mega ecl-mega-menu__mega--no-info sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
+                      <ul class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.1" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.1
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.2" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.2
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.3" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.3
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.4" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.4
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.5" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.5
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.6" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.6
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.7" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.7
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.8" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.8
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.9" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.9
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.10" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.10
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.11" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.11
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.12" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.12
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.13" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.13
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.14" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.14
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.15" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.15
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.16" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.16
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.17" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.17
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.18" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.18
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.19" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.19
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.20" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.20
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.21" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.21
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.22" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.22
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.23" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.23
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.24" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Item 5.24
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <li class="ecl-mega-menu__spacer sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </ecl-mega-menu-item>
+              <ecl-mega-menu-item class="ecl-mega-menu__item ecl-mega-menu__item--has-children sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item featured-title="Featured items" has-children="" has-featured="" has-info="" info-title="About key priorities" label="Key priorities" path="/example.html">
+                <!---->
+                <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
+                  <!---->
+                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
+                    <span class="ecl-button__container">
+                      <span class="ecl-button__label" data-ecl-label>
+                        Key priorities
+                      </span>
+                      <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                      <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                    </span>
+                  </button>
+                </ecl-button>
+                <div class="ecl-mega-menu__wrapper sc-ecl-mega-menu-ec">
+                  <div class="ecl-container sc-ecl-mega-menu-ec">
+                    <div class="ecl-mega-menu__info sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
+                      <span class="ecl-mega-menu__info-title sc-ecl-mega-menu-ec">
+                        About key priorities
+                      </span>
+                      <div class="ecl-mega-menu__info-scrollable sc-ecl-mega-menu-ec">
+                        <div class="ecl-mega-menu__info-content sc-ecl-mega-menu-ec">
+                          <span slot="info">
+                            Description text, lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ecl-mega-menu__mega ecl-mega-menu__mega--has-featured sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
+                      <ul class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem has-children="" label="Aid, Development cooperation, Fundamental rights" path="/example.html">
+                          <!---->
+                          <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-sublink style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec">
+                            <!---->
+                            <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__sublink sc-ecl-mega-menu-ec" data-ecl-mega-menu-sublink="eclMegaMenuSublink" type="button">
+                              <span class="ecl-button__container">
+                                <span class="ecl-button__label" data-ecl-label>
+                                  Aid, Development cooperation, Fundamental rights
+                                </span>
+                                <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                                <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                              </span>
+                            </button>
+                          </ecl-button>
+                          <div class="ecl-mega-menu__mega ecl-mega-menu__mega--level-2 sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
+                            <ul class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
+                              <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="A lonely item" path="/example.html">
+                                <!---->
+                                <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                                  A lonely item
+                                </ecl-link>
+                              </ecl-mega-menu-subitem>
+                              <li class="ecl-mega-menu__spacer sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem></li>
+                            </ul>
+                          </div>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Energy, Climate change, Environment" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Energy, Climate change, Environment
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Law" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Law
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="EU regional and urban development" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            EU regional and urban development
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem has-children="" has-featured="" label="Research and innovation" path="/example.html" see-all="" see-all-label="see all pages">
+                          <!---->
+                          <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-sublink style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec">
+                            <!---->
+                            <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__sublink sc-ecl-mega-menu-ec" data-ecl-mega-menu-sublink="eclMegaMenuSublink" type="button">
+                              <span class="ecl-button__container">
+                                <span class="ecl-button__label" data-ecl-label>
+                                  Research and innovation
+                                </span>
+                                <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                                <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                              </span>
+                            </button>
+                          </ecl-button>
+                          <div class="ecl-mega-menu__mega ecl-mega-menu__mega--level-2 sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
+                            <ul class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
+                              <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="How we provide aid" path="/example.html">
+                                <!---->
+                                <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                                  How we provide aid
+                                </ecl-link>
+                              </ecl-mega-menu-subitem>
+                              <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Who we work with" path="/example.html">
+                                <!---->
+                                <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                                  Who we work with
+                                </ecl-link>
+                              </ecl-mega-menu-subitem>
+                              <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Get involved in EU humanitarian aid" path="/example.html">
+                                <!---->
+                                <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                                  Get involved in EU humanitarian aid
+                                </ecl-link>
+                              </ecl-mega-menu-subitem>
+                              <li class="ecl-mega-menu__spacer sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem></li>
+                              <li class="ecl-mega-menu__see-all ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem>
+                                <ecl-link path="/example.html" style-class="sc-ecl-mega-menu-ec" variant="standalone">
+                                  see all pages
+                                  <ecl-icon icon="arrow-left" rotate="180" size="xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                                </ecl-link>
+                              </li>
+                            </ul>
+                            <div class="ecl-mega-menu__featured sc-ecl-mega-menu-ec" data-ecl-mega-menu-featured>
+                              <div class="ecl-mega-menu__featured-scrollable sc-ecl-mega-menu-ec">
+                                <ul class="ecl-mega-menu__featured-list sc-ecl-mega-menu-ec">
+                                  <ecl-mega-menu-featured-list-item class="ecl-mega-menu__featured-list__item ecl-mega-menu__featured-list__item--image-only sc-ecl-mega-menu-ec" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" slot="featured-second">
+                                    <!---->
+                                    <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" img-class="ecl-mega-menu__featured-image sc-ecl-mega-menu-ec" style-class="ecl-mega-menu__featured-picture sc-ecl-mega-menu-ec"></ecl-picture>
+                                  </ecl-mega-menu-featured-list-item>
+                                  <ecl-mega-menu-featured-list-item class="ecl-mega-menu__featured-list__item sc-ecl-mega-menu-ec" label="Featured link 1" path="/example.html" slot="featured-second">
+                                    <!---->
+                                    <ecl-link path="/example.html" style-class="ecl-mega-menu__featured-link sc-ecl-mega-menu-ec" variant="standalone">
+                                      Featured link 1
+                                    </ecl-link>
+                                  </ecl-mega-menu-featured-list-item>
+                                  <ecl-mega-menu-featured-list-item class="ecl-mega-menu__featured-list__item sc-ecl-mega-menu-ec" label="Featured link 2" path="/example.html" slot="featured-second">
+                                    <!---->
+                                    <ecl-link path="/example.html" style-class="ecl-mega-menu__featured-link sc-ecl-mega-menu-ec" variant="standalone">
+                                      Featured link 2
+                                    </ecl-link>
+                                  </ecl-mega-menu-featured-list-item>
+                                  <ecl-mega-menu-featured-list-item class="ecl-mega-menu__featured-list__item sc-ecl-mega-menu-ec" label="Featured link 3" path="/example.html" slot="featured-second">
+                                    <!---->
+                                    <ecl-link path="/example.html" style-class="ecl-mega-menu__featured-link sc-ecl-mega-menu-ec" variant="standalone">
+                                      Featured link 3
+                                    </ecl-link>
+                                  </ecl-mega-menu-featured-list-item>
+                                  <ecl-mega-menu-featured-list-item class="ecl-mega-menu__featured-list__item sc-ecl-mega-menu-ec" label="Featured link 4" path="/example.html" slot="featured-second">
+                                    <!---->
+                                    <ecl-link path="/example.html" style-class="ecl-mega-menu__featured-link sc-ecl-mega-menu-ec" variant="standalone">
+                                      Featured link 4
+                                    </ecl-link>
+                                  </ecl-mega-menu-featured-list-item>
+                                  <ecl-mega-menu-featured-list-item class="ecl-mega-menu__featured-list__item sc-ecl-mega-menu-ec" label="Featured link 5" path="/example.html" slot="featured-second">
+                                    <!---->
+                                    <ecl-link path="/example.html" style-class="ecl-mega-menu__featured-link sc-ecl-mega-menu-ec" variant="standalone">
+                                      Featured link 5
+                                    </ecl-link>
+                                  </ecl-mega-menu-featured-list-item>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </ecl-mega-menu-subitem>
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Food, Farming, Fisheries" path="/example.html">
+                          <!---->
+                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                            Food, Farming, Fisheries
+                          </ecl-link>
+                        </ecl-mega-menu-subitem>
+                        <li class="ecl-mega-menu__spacer sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem></li>
+                      </ul>
+                      <div class="ecl-mega-menu__featured sc-ecl-mega-menu-ec" data-ecl-mega-menu-featured>
+                        <div class="ecl-mega-menu__featured-scrollable sc-ecl-mega-menu-ec">
+                          <div class="ecl-mega-menu__featured-title sc-ecl-mega-menu-ec">
+                            Featured items
+                          </div>
+                          <ul class="ecl-mega-menu__featured-list sc-ecl-mega-menu-ec">
+                            <ecl-mega-menu-featured-list-item class="ecl-mega-menu__featured-list__item ecl-mega-menu__featured-list__item--combo sc-ecl-mega-menu-ec" has-description="" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" path="/example.html" slot="featured">
+                              <!---->
+                              <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" img-class="ecl-mega-menu__featured-image sc-ecl-mega-menu-ec" style-class="ecl-mega-menu__featured-picture sc-ecl-mega-menu-ec"></ecl-picture>
+                              <ecl-link path="/example.html" style-class="ecl-mega-menu__featured-link sc-ecl-mega-menu-ec" variant="standalone"></ecl-link>
+                              <div class="ecl-mega-menu__featured-list__item-description sc-ecl-mega-menu-ec">
+                                Description text, lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              </div>
+                            </ecl-mega-menu-featured-list-item>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ecl-mega-menu-item>
+              <ecl-mega-menu-item class="ecl-mega-menu__item ecl-mega-menu__item--has-container sc-ecl-mega-menu-ec" data-ecl-has-container data-ecl-mega-menu-item is-container="" label="Engage">
+                <!---->
+                <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
+                  <!---->
+                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
+                    <span class="ecl-button__container">
+                      <span class="ecl-button__label" data-ecl-label>
+                        Engage
+                      </span>
+                      <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                      <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                    </span>
+                  </button>
+                </ecl-button>
+                <div class="ecl-mega-menu__mega ecl-mega-menu__mega--no-info ecl-mega-menu__mega-container sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
+                  <ecl-grid container="">
+                    <div class="ecl-mega-menu__mega-container-scrollable">
+                      <div slot="container">
+                        <ecl-text level="2" tag="h2" type="heading">
+                          <!---->
+                          <h2 class="ecl-u-type-heading-2">
+                            Title for the container
+                          </h2>
+                        </ecl-text>
+                        <ecl-text tag="p">
+                          <!---->
+                          <p class="ecl-u-type-m">
+                            Minimal content for the container
+                          </p>
+                        </ecl-text>
+                      </div>
+                    </div>
+                  </ecl-grid>
+                </div>
+              </ecl-mega-menu-item>
+              <ecl-mega-menu-item class="ecl-mega-menu__item ecl-mega-menu__item--promotional sc-ecl-mega-menu-ec" data-ecl-mega-menu-item is-promotional="" label="SOTEU" path="/example.html">
+                <!---->
+                <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec" variant="standalone">
+                  SOTEU
+                </ecl-link>
+              </ecl-mega-menu-item>
+            </ul>
+          </section>
+        </div>
+      </nav>
+    </ecl-mega-menu>
   </header>
 </ecl-site-header>
 `;

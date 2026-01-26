@@ -28,7 +28,7 @@ if (!isProd) {
     path.resolve(`${__dirname}/../src/components/ecl-site-header`),
     path.resolve(`${__dirname}/../src/components/ecl-gallery`),
     path.resolve(`${__dirname}/../src/components/ecl-range`),
-    path.resolve(`${__dirname}/../src/components/ecl-menu`),
+    path.resolve(`${__dirname}/../src/components/ecl-mega-menu`),
     path.resolve(`${__dirname}/../src/components/ecl-modal`),
     path.resolve(`${__dirname}/../src/components/ecl-description-list`),
     path.resolve(`${__dirname}/../src/components/ecl-content-block`),

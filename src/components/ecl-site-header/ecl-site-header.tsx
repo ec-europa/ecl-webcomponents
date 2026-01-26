@@ -81,9 +81,12 @@ export class EclSiteHeader {
       inner.classList.add(`sc-ecl-site-header-${this.theme}`);
     }
     if (this.el.querySelector('.ecl-mega-menu')) {
+      this.el.querySelector('.ecl-mega-menu').classList.add(`sc-ecl-site-header-${this.theme}`);
       this.el.firstElementChild.classList.add('ecl-site-header--has-mega-menu');
       const open = this.el.querySelector('.ecl-mega-menu__open');
-      open.classList.add(`sc-ecl-site-header-${this.theme}`);
+      if (open) {
+        open.classList.add(`sc-ecl-site-header-${this.theme}`);
+      }
     }
     if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
