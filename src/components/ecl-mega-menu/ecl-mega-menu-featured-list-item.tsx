@@ -7,8 +7,8 @@ import { Component, h, Prop, Host } from '@stencil/core';
 export class EclMegaMenuFeaturedListItem {
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
-  @Prop() label!: string;
-  @Prop() path?: string;
+  @Prop() label: string;
+  @Prop() path: string;
   @Prop() image: string;
   @Prop() hasDescription: boolean = false;
   @Prop() external: boolean = false;

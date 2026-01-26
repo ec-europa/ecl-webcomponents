@@ -1173,7 +1173,7 @@ export namespace Components {
         "hasDescription": boolean;
         "image": string;
         "label": string;
-        "path"?: string;
+        "path": string;
         "styleClass": string;
         "theme": string;
     }
@@ -4063,7 +4063,7 @@ declare namespace LocalJSX {
          */
         "hasDescription"?: boolean;
         "image"?: string;
-        "label": string;
+        "label"?: string;
         "path"?: string;
         "styleClass"?: string;
         "theme"?: string;

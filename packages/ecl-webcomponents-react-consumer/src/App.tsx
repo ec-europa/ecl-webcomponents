@@ -320,8 +320,8 @@ function App() {
             is-container
           >
             <div slot="container">
-              <ecl-text tag="h2" type="heading" level="2">Title for the container</ecl-text>
-              <ecl-text tag="p">Minimal content for the container</ecl-text>
+              <EclText tag="h2" type="heading" level={2}>Title for the container</EclText>
+              <EclText tag="p">Minimal content for the container</EclText>
             </div>
           </EclMegaMenuItem>
           <EclMegaMenuItem
