@@ -1144,7 +1144,7 @@ export namespace Components {
         "tracks": string;
     }
     interface EclMegaMenu {
-        "ariaLabel"?: string;
+        "ariaLabel": string;
         "backLabel"?: string;
         /**
           * @default 'secondary'
@@ -1158,10 +1158,8 @@ export namespace Components {
           * @default false
          */
         "noScript": boolean;
-        "secondLevelAriaLabel"?: string;
         "styleClass": string;
         "theme": string;
-        "thirdLevelAriaLabel"?: string;
         "toggleLabel"?: string;
     }
     interface EclMegaMenuFeaturedListItem {
@@ -1180,6 +1178,7 @@ export namespace Components {
         "theme": string;
     }
     interface EclMegaMenuItem {
+        "ariaLabel": string;
         /**
           * @default false
          */
@@ -1222,6 +1221,7 @@ export namespace Components {
         "theme": string;
     }
     interface EclMegaMenuSubitem {
+        "ariaLabel": string;
         /**
           * @default false
          */
@@ -4049,10 +4049,8 @@ declare namespace LocalJSX {
           * @default false
          */
         "noScript"?: boolean;
-        "secondLevelAriaLabel"?: string;
         "styleClass"?: string;
         "theme"?: string;
-        "thirdLevelAriaLabel"?: string;
         "toggleLabel"?: string;
     }
     interface EclMegaMenuFeaturedListItem {
@@ -4071,6 +4069,7 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclMegaMenuItem {
+        "ariaLabel"?: string;
         /**
           * @default false
          */
@@ -4113,6 +4112,7 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclMegaMenuSubitem {
+        "ariaLabel"?: string;
         /**
           * @default false
          */

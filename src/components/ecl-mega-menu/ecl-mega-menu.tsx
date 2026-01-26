@@ -17,9 +17,7 @@ export class EclMegaMenu {
   @Prop({ mutable: true }) theme: string;
   @Prop() noScript: boolean = false;
   @Prop() menuId?: string = `ecl-mega-menu-${Math.random().toString(36).slice(2, 10)}`;
-  @Prop() ariaLabel?: string;
-  @Prop() secondLevelAriaLabel?: string;
-  @Prop() thirdLevelAriaLabel?: string;
+  @Prop() ariaLabel: string;
   @Prop() backLabel?: string;
   @Prop() toggleLabel?: string;
   @Prop() featuredPriority: 'primary' | 'secondary' = 'secondary';
@@ -108,7 +106,9 @@ export class EclMegaMenu {
               )}
             </header>
 
-            <ul class="ecl-mega-menu__list">
+            <ul
+              class="ecl-mega-menu__list"
+            >
               <slot />
             </ul>
           </section>

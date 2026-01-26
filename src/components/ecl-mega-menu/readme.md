@@ -9,6 +9,7 @@
 
 | Property             | Attribute        | Description | Type      | Default     |
 | -------------------- | ---------------- | ----------- | --------- | ----------- |
+| `ariaLabel`          | `aria-label`     |             | `string`  | `undefined` |
 | `external`           | `external`       |             | `boolean` | `false`     |
 | `featuredTitle`      | `featured-title` |             | `string`  | `undefined` |
 | `hasChildren`        | `has-children`   |             | `boolean` | `false`     |

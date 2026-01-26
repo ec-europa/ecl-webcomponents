@@ -21,6 +21,7 @@ export class EclMegaMenuItem {
   @Prop() seeAllLabel?: string;
   @Prop() infoTitle: string;
   @Prop() isContainer: boolean = false;
+  @Prop() ariaLabel: string;
 
   componentWillLoad() {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
@@ -138,7 +139,10 @@ export class EclMegaMenuItem {
               `}
               data-ecl-mega-menu-mega
             >
-              <ul class={`ecl-mega-menu__sublist sc-ecl-mega-menu-${this.theme}`}>
+              <ul
+                class={`ecl-mega-menu__sublist sc-ecl-mega-menu-${this.theme}`}
+                {...(this.ariaLabel && { 'aria-label': this.ariaLabel })}
+              >
                 <slot />
                 <li 
                   class={`ecl-mega-menu__spacer sc-ecl-mega-menu-${this.theme}`}

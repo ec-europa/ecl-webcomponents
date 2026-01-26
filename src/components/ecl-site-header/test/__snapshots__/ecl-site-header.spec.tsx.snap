@@ -298,7 +298,7 @@ exports[`ecl-site-header renders 1`] = `
                   Home
                 </ecl-link>
               </ecl-mega-menu-item>
-              <ecl-mega-menu-item class="ecl-mega-menu__item ecl-mega-menu__item--has-children sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item featured-image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" has-children="" has-featured="" has-info="" info-title="About the news and media" label="News and media" see-all="" see-all-label="Discover more">
+              <ecl-mega-menu-item aria-label="Pages in this section" class="ecl-mega-menu__item ecl-mega-menu__item--has-children sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item featured-image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" has-children="" has-featured="" has-info="" info-title="About the news and media" label="News and media" see-all="" see-all-label="Discover more">
                 <!---->
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
@@ -327,8 +327,8 @@ exports[`ecl-site-header renders 1`] = `
                       </div>
                     </div>
                     <div class="ecl-mega-menu__mega ecl-mega-menu__mega--has-featured sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
-                      <ul class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
-                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem has-children="" has-featured="" label="Item 2.1" path="/example.html" see-all="" see-all-label="See all pages">
+                      <ul aria-label="Pages in this section" class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
+                        <ecl-mega-menu-subitem aria-label="Sub-pages in this section" class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem has-children="" has-featured="" label="Item 2.1" path="/example.html" see-all="" see-all-label="See all pages">
                           <!---->
                           <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-sublink style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec">
                             <!---->
@@ -343,7 +343,7 @@ exports[`ecl-site-header renders 1`] = `
                             </button>
                           </ecl-button>
                           <div class="ecl-mega-menu__mega ecl-mega-menu__mega--level-2 sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
-                            <ul class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
+                            <ul aria-label="Sub-pages in this section" class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
                               <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 2.1 subitem 1" path="/example.html">
                                 <!---->
                                 <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
@@ -488,7 +488,7 @@ exports[`ecl-site-header renders 1`] = `
                   </div>
                 </div>
               </ecl-mega-menu-item>
-              <ecl-mega-menu-item class="ecl-mega-menu__item ecl-mega-menu__item--has-children ecl-mega-menu__item--one-level-only sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item has-children="" has-featured="" has-info="" info-title="About the European Union" label="About the EU" one-level-only="">
+              <ecl-mega-menu-item aria-label="Pages in this section" class="ecl-mega-menu__item ecl-mega-menu__item--has-children ecl-mega-menu__item--one-level-only sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item has-children="" has-featured="" has-info="" info-title="About the European Union" label="About the EU" one-level-only="">
                 <!---->
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
@@ -517,7 +517,7 @@ exports[`ecl-site-header renders 1`] = `
                       </div>
                     </div>
                     <div class="ecl-mega-menu__mega ecl-mega-menu__mega--has-featured sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
-                      <ul class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
+                      <ul aria-label="Pages in this section" class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
                         <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 3.1" path="/example.html">
                           <!---->
                           <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
@@ -594,7 +594,7 @@ exports[`ecl-site-header renders 1`] = `
                   </div>
                 </div>
               </ecl-mega-menu-item>
-              <ecl-mega-menu-item class="ecl-mega-menu__item ecl-mega-menu__item--has-children ecl-mega-menu__item--one-level-only sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item has-children="" has-info="" info-title="About the European Commission" label="About the EC" one-level-only="" see-all="" see-all-label="Discover more">
+              <ecl-mega-menu-item aria-label="Pages in this section" class="ecl-mega-menu__item ecl-mega-menu__item--has-children ecl-mega-menu__item--one-level-only sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item has-children="" has-info="" info-title="About the European Commission" label="About the EC" one-level-only="" see-all="" see-all-label="Discover more">
                 <!---->
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
@@ -623,7 +623,7 @@ exports[`ecl-site-header renders 1`] = `
                       </div>
                     </div>
                     <div class="ecl-mega-menu__mega sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
-                      <ul class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
+                      <ul aria-label="Pages in this section" class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
                         <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 4.1" path="/example.html">
                           <!---->
                           <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
@@ -708,7 +708,7 @@ exports[`ecl-site-header renders 1`] = `
                   </div>
                 </div>
               </ecl-mega-menu-item>
-              <ecl-mega-menu-item class="ecl-mega-menu__item ecl-mega-menu__item--has-children ecl-mega-menu__item--one-level-only sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item has-children="" label="Topics" one-level-only="">
+              <ecl-mega-menu-item aria-label="Pages in this section" class="ecl-mega-menu__item ecl-mega-menu__item--has-children ecl-mega-menu__item--one-level-only sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item has-children="" label="Topics" one-level-only="">
                 <!---->
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
@@ -725,7 +725,7 @@ exports[`ecl-site-header renders 1`] = `
                 <div class="ecl-mega-menu__wrapper sc-ecl-mega-menu-ec">
                   <div class="ecl-container sc-ecl-mega-menu-ec">
                     <div class="ecl-mega-menu__mega ecl-mega-menu__mega--no-info sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
-                      <ul class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
+                      <ul aria-label="Pages in this section" class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
                         <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 5.1" path="/example.html">
                           <!---->
                           <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
@@ -876,7 +876,7 @@ exports[`ecl-site-header renders 1`] = `
                   </div>
                 </div>
               </ecl-mega-menu-item>
-              <ecl-mega-menu-item class="ecl-mega-menu__item ecl-mega-menu__item--has-children sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item featured-title="Featured items" has-children="" has-featured="" has-info="" info-title="About key priorities" label="Key priorities" path="/example.html">
+              <ecl-mega-menu-item aria-label="Pages in this section" class="ecl-mega-menu__item ecl-mega-menu__item--has-children sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item featured-title="Featured items" has-children="" has-featured="" has-info="" info-title="About key priorities" label="Key priorities" path="/example.html">
                 <!---->
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
@@ -905,8 +905,8 @@ exports[`ecl-site-header renders 1`] = `
                       </div>
                     </div>
                     <div class="ecl-mega-menu__mega ecl-mega-menu__mega--has-featured sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
-                      <ul class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
-                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem has-children="" label="Aid, Development cooperation, Fundamental rights" path="/example.html">
+                      <ul aria-label="Pages in this section" class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
+                        <ecl-mega-menu-subitem aria-label="Sub-pages in this section" class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem has-children="" label="Aid, Development cooperation, Fundamental rights" path="/example.html">
                           <!---->
                           <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-sublink style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec">
                             <!---->
@@ -921,7 +921,7 @@ exports[`ecl-site-header renders 1`] = `
                             </button>
                           </ecl-button>
                           <div class="ecl-mega-menu__mega ecl-mega-menu__mega--level-2 sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
-                            <ul class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
+                            <ul aria-label="Sub-pages in this section" class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
                               <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="A lonely item" path="/example.html">
                                 <!---->
                                 <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
@@ -950,7 +950,7 @@ exports[`ecl-site-header renders 1`] = `
                             EU regional and urban development
                           </ecl-link>
                         </ecl-mega-menu-subitem>
-                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem has-children="" has-featured="" label="Research and innovation" path="/example.html" see-all="" see-all-label="see all pages">
+                        <ecl-mega-menu-subitem aria-label="Sub-pages in this section" class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem has-children="" has-featured="" label="Research and innovation" path="/example.html" see-all="" see-all-label="see all pages">
                           <!---->
                           <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-sublink style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec">
                             <!---->
@@ -965,7 +965,7 @@ exports[`ecl-site-header renders 1`] = `
                             </button>
                           </ecl-button>
                           <div class="ecl-mega-menu__mega ecl-mega-menu__mega--level-2 sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
-                            <ul class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
+                            <ul aria-label="Sub-pages in this section" class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
                               <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="How we provide aid" path="/example.html">
                                 <!---->
                                 <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">

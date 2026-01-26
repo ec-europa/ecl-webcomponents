@@ -564,6 +564,7 @@ const megaMenu = (args) => `
       see-all-label="Discover more"
       info-title="About the news and media"
       featured-image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+      aria-label="Pages in this section"
     >
       <span slot="info">
         Description text, lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -585,6 +586,7 @@ const megaMenu = (args) => `
         has-children
         see-all
         see-all-label="See all pages"
+        aria-label="Sub-pages in this section"
       >
         <ecl-mega-menu-subitem path="${randomizedLink('/example.html')}" label="Item 2.1 subitem 1"></ecl-mega-menu-subitem>
         <ecl-mega-menu-subitem path="${randomizedLink('/example.html')}" label="Item 2.1 subitem 2"></ecl-mega-menu-subitem>
@@ -626,6 +628,7 @@ const megaMenu = (args) => `
       info-title="About the European Union"
       has-featured
       one-level-only
+      aria-label="Pages in this section"
     >
       <span slot="info">
         Description text, lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -658,6 +661,7 @@ const megaMenu = (args) => `
       one-level-only
       see-all
       see-all-label="Discover more"
+      aria-label="Pages in this section"
     >
       <span slot="info">
         Description text, lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -679,6 +683,7 @@ const megaMenu = (args) => `
       label="Topics"
       has-children
       one-level-only
+      aria-label="Pages in this section"
     >
       <ecl-mega-menu-subitem label="Item 5.1" path="${randomizedLink('/example.html')}"></ecl-mega-menu-subitem>
       <ecl-mega-menu-subitem label="Item 5.2" path="${randomizedLink('/example.html')}"></ecl-mega-menu-subitem>
@@ -713,6 +718,7 @@ const megaMenu = (args) => `
       has-featured
       info-title="About key priorities"
       featured-title="Featured items"
+      aria-label="Pages in this section"
     >
       <ecl-mega-menu-featured-list-item
         has-description
@@ -729,6 +735,7 @@ const megaMenu = (args) => `
         has-children
         label="Aid, Development cooperation, Fundamental rights"
         path="${randomizedLink('/example.html')}"
+        aria-label="Sub-pages in this section"
       >
         <ecl-mega-menu-subitem label="A lonely item" path="${randomizedLink('/example.html')}"></ecl-mega-menu-subitem>
       </ecl-mega-menu-subitem>
@@ -742,6 +749,7 @@ const megaMenu = (args) => `
         has-featured
         see-all
         see-all-label="see all pages"
+        aria-label="Sub-pages in this section"
       >
         <ecl-mega-menu-featured-list-item 
           slot="featured-second"

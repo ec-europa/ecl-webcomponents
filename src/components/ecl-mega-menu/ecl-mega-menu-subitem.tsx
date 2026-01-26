@@ -16,6 +16,7 @@ export class EclMegaMenuSubitem {
   @Prop() featuredTitle: string;
   @Prop() hasChildren: boolean = false;
   @Prop() seeAllLabel?: string;
+  @Prop() ariaLabel: string;
 
   componentWillLoad() {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
@@ -76,7 +77,10 @@ export class EclMegaMenuSubitem {
           class={`ecl-mega-menu__mega ecl-mega-menu__mega--level-2 sc-ecl-mega-menu-${this.theme} ${!this.hasChildren ? 'ecl-mega-menu-featured-only' : ''}`}
           data-ecl-mega-menu-mega
         >
-          <ul class={`ecl-mega-menu__sublist sc-ecl-mega-menu-${this.theme}`}>
+          <ul
+            class={`ecl-mega-menu__sublist sc-ecl-mega-menu-${this.theme}`}
+            {...(this.ariaLabel && { 'aria-label': this.ariaLabel })}
+          >
             <slot />
             <li 
               class={`ecl-mega-menu__spacer sc-ecl-mega-menu-${this.theme}`}
