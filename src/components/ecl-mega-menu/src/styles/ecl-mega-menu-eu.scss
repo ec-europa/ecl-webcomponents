@@ -61,6 +61,11 @@ ecl-mega-menu-item {
   }
 }
 
+.ecl-mega-menu__sublink.sc-ecl-button-eu,
+.ecl-mega-menu__sublink.sc-ecl-link-eu {
+  color: var(--cm-on-surface-brand);
+}
+
 @media (width >= 1140px) {
   .ecl-mega-menu__link,
   .ecl-mega-menu__sublink {

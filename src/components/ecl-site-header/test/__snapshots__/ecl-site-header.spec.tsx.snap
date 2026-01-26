@@ -302,7 +302,7 @@ exports[`ecl-site-header renders 1`] = `
                 <!---->
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
-                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
+                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
                     <span class="ecl-button__container">
                       <span class="ecl-button__label" data-ecl-label>
                         News and media
@@ -332,7 +332,7 @@ exports[`ecl-site-header renders 1`] = `
                           <!---->
                           <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-sublink style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec">
                             <!---->
-                            <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__sublink sc-ecl-mega-menu-ec" data-ecl-mega-menu-sublink="eclMegaMenuSublink" type="button">
+                            <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__sublink sc-ecl-mega-menu-ec" data-ecl-mega-menu-sublink="eclMegaMenuSublink" type="button">
                               <span class="ecl-button__container">
                                 <span class="ecl-button__label" data-ecl-label>
                                   Item 2.1
@@ -492,7 +492,7 @@ exports[`ecl-site-header renders 1`] = `
                 <!---->
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
-                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
+                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
                     <span class="ecl-button__container">
                       <span class="ecl-button__label" data-ecl-label>
                         About the EU
@@ -598,7 +598,7 @@ exports[`ecl-site-header renders 1`] = `
                 <!---->
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
-                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
+                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
                     <span class="ecl-button__container">
                       <span class="ecl-button__label" data-ecl-label>
                         About the EC
@@ -712,7 +712,7 @@ exports[`ecl-site-header renders 1`] = `
                 <!---->
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
-                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
+                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
                     <span class="ecl-button__container">
                       <span class="ecl-button__label" data-ecl-label>
                         Topics
@@ -880,7 +880,7 @@ exports[`ecl-site-header renders 1`] = `
                 <!---->
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
-                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
+                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
                     <span class="ecl-button__container">
                       <span class="ecl-button__label" data-ecl-label>
                         Key priorities
@@ -910,7 +910,7 @@ exports[`ecl-site-header renders 1`] = `
                           <!---->
                           <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-sublink style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec">
                             <!---->
-                            <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__sublink sc-ecl-mega-menu-ec" data-ecl-mega-menu-sublink="eclMegaMenuSublink" type="button">
+                            <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__sublink sc-ecl-mega-menu-ec" data-ecl-mega-menu-sublink="eclMegaMenuSublink" type="button">
                               <span class="ecl-button__container">
                                 <span class="ecl-button__label" data-ecl-label>
                                   Aid, Development cooperation, Fundamental rights
@@ -954,7 +954,7 @@ exports[`ecl-site-header renders 1`] = `
                           <!---->
                           <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-sublink style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec">
                             <!---->
-                            <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__sublink sc-ecl-mega-menu-ec" data-ecl-mega-menu-sublink="eclMegaMenuSublink" type="button">
+                            <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__sublink sc-ecl-mega-menu-ec" data-ecl-mega-menu-sublink="eclMegaMenuSublink" type="button">
                               <span class="ecl-button__container">
                                 <span class="ecl-button__label" data-ecl-label>
                                   Research and innovation
@@ -1067,7 +1067,7 @@ exports[`ecl-site-header renders 1`] = `
                 <!---->
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
-                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-button--primary ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
+                  <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
                     <span class="ecl-button__container">
                       <span class="ecl-button__label" data-ecl-label>
                         Engage

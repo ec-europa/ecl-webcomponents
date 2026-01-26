@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { EclSiteHeader, EclDivider, EclButton, EclText, EclSocialMediaFollow, EclPageHeaderMetaItem, EclSocialMediaFollowItem, EclSpacing, EclFooterEc, EclGallery, EclGalleryItem, EclFeaturedItem, EclFactFigures, EclFactFiguresItem, EclListIllustration, EclInpageNavigation, EclInpageNavigationItem, EclListIllustrationItem, EclPageHeader, EclGrid, EclBreadcrumb, EclBreadcrumbItem, EclFooterEu, EclFooterItem, EclLanguageItem, EclMenu, EclMenuItem, defineCustomElements } from '@ecl/ecl-webcomponents-react';
+import { EclButton, EclSiteHeader, EclDivider, EclMegaMenu, EclMegaMenuItem, EclMegaMenuSubitem, EclMegaMenuFeaturedListItem, EclText, EclSocialMediaFollow, EclPageHeaderMetaItem, EclSocialMediaFollowItem, EclSpacing, EclFooterEc, EclGallery, EclGalleryItem, EclFeaturedItem, EclFactFigures, EclFactFiguresItem, EclListIllustration, EclInpageNavigation, EclInpageNavigationItem, EclListIllustrationItem, EclPageHeader, EclGrid, EclBreadcrumb, EclBreadcrumbItem, EclFooterEu, EclFooterItem, EclLanguageItem, EclMenu, EclMenuItem, defineCustomElements } from '@ecl/ecl-webcomponents-react';
 
 defineCustomElements();
 
@@ -69,62 +69,267 @@ function App() {
         <EclLanguageItem slot="eu-category" path="/example.html" lang-code="it" language="italiano"></EclLanguageItem>
         <EclLanguageItem slot="non-eu-category" path="/example.html" lang-code="zh" language="中文"></EclLanguageItem>
         <EclLanguageItem slot="non-eu-category" path="/example.html" lang-code="tr" language="Türk"></EclLanguageItem>
-        <EclMenu slot="menu" close-label="Close" back-label="Back" menu-link="/example.html" ecl-script menu-title="Menu">
-          <EclMenuItem link="/example.html"> Home </EclMenuItem>
-          <EclMenuItem link="/example.html" has-children trigger-aria-label="Access item's children" current>
-            Item 2 label
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 2.1 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 2.2 </EclMenuItem>
-            <EclMenuItem link="/example.html" child current slot="sublist"> Item 2.3 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist" external> Item 2.4 </EclMenuItem>
-          </EclMenuItem>
-          <EclMenuItem has-children trigger-aria-label="Access item's children" link="/example.html">
-            Item 3 with a very long label
-            <EclMenuItem child link="/example.html" slot="sublist"> Item 3.1 </EclMenuItem>
-            <EclMenuItem child link="/example.html" slot="sublist"> Item 3.2 </EclMenuItem>
-            <EclMenuItem child link="/example.html" slot="sublist"> Item 3.3 </EclMenuItem>
-          </EclMenuItem>
-          <EclMenuItem link="/example.html"> Item 4 label </EclMenuItem>
-          <EclMenuItem link="/example.html" has-children trigger-aria-label="Access item's children">
-            Item 5 label
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 5.1 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 5.2 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 5.3 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 5.4 </EclMenuItem>
-          </EclMenuItem>
-          <EclMenuItem link="/example.html" has-children trigger-aria-label="Access item's children">
-            Item 6
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.1 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.2 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.3 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.4 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.5 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.6 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.7 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.8 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.9 with a very long label </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.10 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.11 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.12 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.13 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.14 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.15 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.16 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.17 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 6.18 </EclMenuItem>
-          </EclMenuItem>
-          <EclMenuItem has-children link="/example.html" trigger-aria-label="Access item's children">
-            Item 7 label
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 7.1 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 7.2 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 7.3 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 7.4 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 7.5 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 7.6 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 7.7 </EclMenuItem>
-            <EclMenuItem link="/example.html" child slot="sublist"> Item 7.8 </EclMenuItem>
-          </EclMenuItem>
-        </EclMenu>
+        <EclMegaMenu
+          slot="menu"
+          style-class={`sc-ecl-site-header-${currentTheme}`}
+          toggle-label="Close"
+          back-label="Back"
+          menu-id="mega-menu-demo"
+          aria-label="Main navigation"
+        >
+          <EclMegaMenuItem label="Home" path="/example.html"></EclMegaMenuItem>
+          <EclMegaMenuItem
+            label="News and media"
+            has-children
+            has-info 
+            has-featured
+            see-all
+            see-all-label="Discover more"
+            info-title="About the news and media"
+            featured-image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+            aria-label="Pages in this section"
+          >
+            <span slot="info">
+              Description text, lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
+            <EclMegaMenuFeaturedListItem
+              slot="featured"
+              has-description
+              path="/example.html"
+              label="Featured link 1"
+              external
+              image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+            >
+              Description text, lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </EclMegaMenuFeaturedListItem>
+            <EclMegaMenuSubitem
+              path="/example.html"
+              label="Item 2.1"
+              has-featured
+              has-children
+              see-all
+              see-all-label="See all pages"
+              aria-label="Sub-pages in this section"
+            >
+              <EclMegaMenuSubitem path="/example.html" label="Item 2.1 subitem 1"></EclMegaMenuSubitem>
+              <EclMegaMenuSubitem path="/example.html" label="Item 2.1 subitem 2"></EclMegaMenuSubitem>
+              <EclMegaMenuSubitem path="/example.html" label="Item 2.1 subitem 3"></EclMegaMenuSubitem>
+              <EclMegaMenuSubitem path="/example.html" label="Item 2.1 subitem 4"></EclMegaMenuSubitem>
+              <EclMegaMenuSubitem path="/example.html" label="Item 2.1 subitem 5"></EclMegaMenuSubitem>
+              <EclMegaMenuSubitem path="/example.html" label="Item 2.1 subitem 6"></EclMegaMenuSubitem>
+              <EclMegaMenuSubitem path="/example.html" label="Item 2.1 subitem 7"></EclMegaMenuSubitem>
+              <EclMegaMenuSubitem path="/example.html" label="Item 2.1 subitem 8"></EclMegaMenuSubitem>
+              <EclMegaMenuFeaturedListItem
+                slot="featured-second"
+                has-description
+                path="/example.html"
+                label="Featured link 1"
+                external
+                image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+              >
+                I belong to the sub item
+              </EclMegaMenuFeaturedListItem>
+            </EclMegaMenuSubitem>
+            <EclMegaMenuSubitem path="/example.html" label="Item 2.2"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem
+              path="/example.html"
+              label="Item 2.3"
+              see-all
+              see-all-label="See all pages"
+            >
+              <EclMegaMenuSubitem path="/example.html" label="Item 2.3 subitem 1"></EclMegaMenuSubitem>
+              <EclMegaMenuSubitem path="/example.html" label="Item 2.3 subitem 2"></EclMegaMenuSubitem>
+              <EclMegaMenuSubitem path="/example.html" label="Item 2.3 subitem 3"></EclMegaMenuSubitem>
+              <EclMegaMenuSubitem path="/example.html" label="Item 2.3 subitem 4"></EclMegaMenuSubitem>
+              <EclMegaMenuSubitem path="/example.html" label="Item 2.3 subitem 5"></EclMegaMenuSubitem>
+            </EclMegaMenuSubitem>
+          </EclMegaMenuItem>
+          <EclMegaMenuItem
+            label="About the EU"
+            has-children
+            has-info
+            info-title="About the European Union"
+            has-featured
+            one-level-only
+            aria-label="Pages in this section"
+          >
+            <span slot="info">
+              Description text, lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
+            <EclMegaMenuFeaturedListItem
+              slot="featured"
+              has-description
+              path="/example.html"
+              label="Featured link 1"
+              external
+              image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+            >
+              I belong to the sub item
+            </EclMegaMenuFeaturedListItem>
+            <EclMegaMenuSubitem label="Item 3.1" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 3.2" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 3.3" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 3.4" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 3.5" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 3.6" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 3.7" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 3.8" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 3.9" path="/example.html"></EclMegaMenuSubitem>
+          </EclMegaMenuItem>
+          <EclMegaMenuItem
+            label="About the EC"
+            has-children
+            info-title="About the European Commission"  
+            has-info
+            one-level-only
+            see-all
+            see-all-label="Discover more"
+            aria-label="Pages in this section"
+          >
+            <span slot="info">
+              Description text, lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
+            <EclMegaMenuSubitem label="Item 4.1" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 4.2" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 4.3" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 4.4" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 4.5" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 4.6" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 4.7" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 4.8" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 4.9" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 4.10" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 4.11" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 4.12" path="/example.html"></EclMegaMenuSubitem>
+          </EclMegaMenuItem>
+          <EclMegaMenuItem
+            label="Topics"
+            has-children
+            one-level-only
+            aria-label="Pages in this section"
+          >
+            <EclMegaMenuSubitem label="Item 5.1" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.2" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.3" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.4" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.5" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.6" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.7" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.8" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.9" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.10" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.11" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.12" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.13" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.14" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.15" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.16" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.17" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.18" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.19" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.20" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.21" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.22" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.23" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Item 5.24" path="/example.html"></EclMegaMenuSubitem>
+          </EclMegaMenuItem>
+          <EclMegaMenuItem
+            label="Key priorities"
+            path="/example.html"
+            has-children
+            has-info
+            has-featured
+            info-title="About key priorities"
+            featured-title="Featured items"
+            aria-label="Pages in this section"
+          >
+            <EclMegaMenuFeaturedListItem
+              has-description
+              slot="featured"
+              image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+              path="/example.html"
+            >
+              Description text, lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </EclMegaMenuFeaturedListItem>
+            <span slot="info">
+              Description text, lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
+            <EclMegaMenuSubitem
+              has-children
+              label="Aid, Development cooperation, Fundamental rights"
+              path="/example.html"
+              aria-label="Sub-pages in this section"
+            >
+              <EclMegaMenuSubitem label="A lonely item" path="/example.html"></EclMegaMenuSubitem>
+            </EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Energy, Climate change, Environment" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Law" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="EU regional and urban development" path="/example.html"></EclMegaMenuSubitem>
+            <EclMegaMenuSubitem
+              label="Research and innovation"
+              path="/example.html"
+              has-children
+              has-featured
+              see-all
+              see-all-label="see all pages"
+              aria-label="Sub-pages in this section"
+            >
+              <EclMegaMenuFeaturedListItem
+                slot="featured-second"
+                image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+              >
+              </EclMegaMenuFeaturedListItem>
+              <EclMegaMenuFeaturedListItem
+                slot="featured-second"
+                path="/example.html"
+                label="Featured link 1"
+              >
+              </EclMegaMenuFeaturedListItem>
+              <EclMegaMenuFeaturedListItem
+                slot="featured-second"
+                path="/example.html"
+                label="Featured link 2"
+              >
+              </EclMegaMenuFeaturedListItem>
+              <EclMegaMenuFeaturedListItem
+                slot="featured-second"
+                path="/example.html"
+                label="Featured link 3"
+              >
+              </EclMegaMenuFeaturedListItem>
+              <EclMegaMenuFeaturedListItem
+                slot="featured-second"
+                path="/example.html"
+                label="Featured link 4"
+              >
+              </EclMegaMenuFeaturedListItem>
+              <EclMegaMenuFeaturedListItem
+                slot="featured-second"
+                path="/example.html"
+                label="Featured link 5"
+              >
+              </EclMegaMenuFeaturedListItem>
+              <EclMegaMenuSubitem label="How we provide aid" path="/example.html"></EclMegaMenuSubitem>
+              <EclMegaMenuSubitem label="Who we work with" path="/example.html"></EclMegaMenuSubitem>
+              <EclMegaMenuSubitem label="Get involved in EU humanitarian aid" path="/example.html"></EclMegaMenuSubitem>
+            </EclMegaMenuSubitem>
+            <EclMegaMenuSubitem label="Food, Farming, Fisheries" path="/example.html"></EclMegaMenuSubitem>
+          </EclMegaMenuItem>
+          <EclMegaMenuItem
+            label="Engage"
+            is-container
+          >
+            <div slot="container">
+              <ecl-text tag="h2" type="heading" level="2">Title for the container</ecl-text>
+              <ecl-text tag="p">Minimal content for the container</ecl-text>
+            </div>
+          </EclMegaMenuItem>
+          <EclMegaMenuItem
+            label="SOTEU"
+            is-promotional
+            path="/example.html"
+          ></EclMegaMenuItem>
+        </EclMegaMenu>
       </EclSiteHeader>
       <EclPageHeader with-meta header-title="Page title" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
         <EclBreadcrumb slot="breadcrumb" ecl-script>

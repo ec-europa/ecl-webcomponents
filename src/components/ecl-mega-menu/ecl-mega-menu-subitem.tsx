@@ -38,7 +38,6 @@ export class EclMegaMenuSubitem {
         class={this.getClass()}
         data-ecl-mega-menu-subitem
       >
-        
       { this.hasChildren ?
         <ecl-button
           type="button"

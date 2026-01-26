@@ -15,7 +15,7 @@ export class EclButton {
   @Prop() styleClass: string = '';
   @Prop() type: string = 'submit';
   @Prop() buttonStyle: string;
-  @Prop() variant: string = 'primary';
+  @Prop() variant: string = '';
   @Prop({ mutable: true }) theme: string;
   @Prop() size: string = 'l';
   @Prop() containerExtraClasses: string;
@@ -61,7 +61,7 @@ export class EclButton {
   getClass(): string {
     return [
       'ecl-button',
-      `ecl-button--${this.variant}`,
+      this.variant ? `ecl-button--${this.variant}` : '',
       this.hideLabel ? 'ecl-button--icon-only' : '',
       this.buttonStyle ? `ecl-button--${this.buttonStyle}` : '',
       this.size !== 'l' ? `ecl-button--${this.size}` : '',

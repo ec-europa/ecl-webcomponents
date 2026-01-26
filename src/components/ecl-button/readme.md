@@ -19,7 +19,7 @@
 | `styleClass`            | `style-class`             |             | `string`  | `''`        |
 | `theme`                 | `theme`                   |             | `string`  | `undefined` |
 | `type`                  | `type`                    |             | `string`  | `'submit'`  |
-| `variant`               | `variant`                 |             | `string`  | `'primary'` |
+| `variant`               | `variant`                 |             | `string`  | `''`        |
 
 
 ## Dependencies

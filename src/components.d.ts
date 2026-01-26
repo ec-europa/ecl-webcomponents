@@ -170,7 +170,7 @@ export namespace Components {
          */
         "type": string;
         /**
-          * @default 'primary'
+          * @default ''
          */
         "variant": string;
     }
@@ -3055,7 +3055,7 @@ declare namespace LocalJSX {
          */
         "type"?: string;
         /**
-          * @default 'primary'
+          * @default ''
          */
         "variant"?: string;
     }
