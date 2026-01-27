@@ -13,16 +13,16 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "5.0.0-alpha.22.2",
-    "@ecl/button": "5.0.0-alpha.22.2",
-    "@ecl/grid": "5.0.0-alpha.22.2",
-    "@ecl/icon": "5.0.0-alpha.22.2",
-    "@ecl/link": "5.0.0-alpha.22.2",
-    "@ecl/mixins-typography": "5.0.0-alpha.22.2",
-    "@ecl/resources-icons": "5.0.0-alpha.22.2",
-    "@ecl/theme-ec": "5.0.0-alpha.22.2",
-    "@ecl/theme-eu": "5.0.0-alpha.22.2",
-    "@ecl/utility-screen-reader": "5.0.0-alpha.22.2",
+    "@ecl/builder": "5.0.0-alpha.22.3",
+    "@ecl/button": "5.0.0-alpha.22.3",
+    "@ecl/grid": "5.0.0-alpha.22.3",
+    "@ecl/icon": "5.0.0-alpha.22.3",
+    "@ecl/link": "5.0.0-alpha.22.3",
+    "@ecl/mixins-typography": "5.0.0-alpha.22.3",
+    "@ecl/resources-icons": "5.0.0-alpha.22.3",
+    "@ecl/theme-ec": "5.0.0-alpha.22.3",
+    "@ecl/theme-eu": "5.0.0-alpha.22.3",
+    "@ecl/utility-screen-reader": "5.0.0-alpha.22.3",
     "cross-env": "10.1.0"
   },
   "dependencies": {

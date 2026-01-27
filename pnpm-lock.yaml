@@ -64,8 +64,8 @@ importers:
         specifier: 0.17.1
         version: link:packages/ecl-webcomponents
       '@ecl/preset-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@eslint/js':
         specifier: 9.39.2
         version: 9.39.2
@@ -407,32 +407,32 @@ importers:
         version: link:../ecl-icon
     devDependencies:
       '@ecl/accordion':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/icon':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -447,23 +447,23 @@ importers:
         version: link:../ecl-link
     devDependencies:
       '@ecl/banner':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -471,23 +471,23 @@ importers:
   src/components/ecl-blockquote:
     devDependencies:
       '@ecl/blockquote':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -505,29 +505,29 @@ importers:
         version: link:../ecl-link
     devDependencies:
       '@ecl/breadcrumb':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -542,35 +542,35 @@ importers:
         version: link:../ecl-indicator
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/icon':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/link':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/resources-icons':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -578,20 +578,20 @@ importers:
   src/components/ecl-card:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/card':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -606,23 +606,23 @@ importers:
         version: link:../ecl-icon
     devDependencies:
       '@ecl/banner':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/carousel':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=0971494db7784339e73a151c15c087cab16b7fb9169d6c5d83830abd09427eaa)
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=0971494db7784339e73a151c15c087cab16b7fb9169d6c5d83830abd09427eaa)
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -630,17 +630,17 @@ importers:
   src/components/ecl-category-filter:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/category-filter':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -648,38 +648,38 @@ importers:
   src/components/ecl-content-block:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/content-block':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/description-list':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/icon':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/label':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/link':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -687,20 +687,20 @@ importers:
   src/components/ecl-content-item:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/content-item':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -708,23 +708,23 @@ importers:
   src/components/ecl-date-block:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/date-block':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -732,29 +732,29 @@ importers:
   src/components/ecl-datepicker:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/datepicker':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/layout-form':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/text-input':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -762,29 +762,29 @@ importers:
   src/components/ecl-description-list:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/description-list':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/link':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -792,17 +792,17 @@ importers:
   src/components/ecl-divider:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/separator':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -810,29 +810,29 @@ importers:
   src/components/ecl-expandable:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/expandable':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/web-components-button':
         specifier: 0.17.1
         version: link:../ecl-button
@@ -853,20 +853,20 @@ importers:
         version: link:../ecl-link
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/fact-figures':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -874,26 +874,26 @@ importers:
   src/components/ecl-featured-item:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/featured-item':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/media-container':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -901,20 +901,20 @@ importers:
   src/components/ecl-file:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/file':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -922,29 +922,29 @@ importers:
   src/components/ecl-file-upload:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/file-upload':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -952,32 +952,32 @@ importers:
   src/components/ecl-footer:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/link':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/resources-ec-logo':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/resources-eu-logo':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/site-footer':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -985,26 +985,26 @@ importers:
   src/components/ecl-form-group:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/form-group':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1012,23 +1012,23 @@ importers:
   src/components/ecl-gallery:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/gallery':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1036,17 +1036,17 @@ importers:
   src/components/ecl-grid:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1054,20 +1054,20 @@ importers:
   src/components/ecl-icon:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/icon':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/resources-icons':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1075,14 +1075,14 @@ importers:
   src/components/ecl-indicator:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/indicator':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1097,23 +1097,23 @@ importers:
         version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/inpage-navigation':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1124,47 +1124,47 @@ importers:
   src/components/ecl-input:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/checkbox':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/datepicker':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/file-upload':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/layout-form':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/radio':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/search-form':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/text-input':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1172,23 +1172,23 @@ importers:
   src/components/ecl-label:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/label':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography/':
-        specifier: 5.0.0-alpha.22.2
-        version: '@ecl/mixins-typography@5.0.0-alpha.22.2'
+        specifier: 5.0.0-alpha.22.3
+        version: '@ecl/mixins-typography@5.0.0-alpha.22.3'
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1203,38 +1203,38 @@ importers:
         version: link:../ecl-indicator
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/icon':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/indicator':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/link':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/resources-icons':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1242,23 +1242,23 @@ importers:
   src/components/ecl-list-illustration:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/list-illustration':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1282,26 +1282,26 @@ importers:
         version: link:../ecl-video
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/media-container':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-media':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1319,23 +1319,23 @@ importers:
         version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mega-menu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1343,23 +1343,23 @@ importers:
   src/components/ecl-menu:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/menu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1367,27 +1367,27 @@ importers:
   src/components/ecl-modal:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
         version: link:../ecl-button
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/modal':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1395,20 +1395,20 @@ importers:
   src/components/ecl-navigation-list:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/navigation-list':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1416,20 +1416,20 @@ importers:
   src/components/ecl-news-ticker:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/news-ticker':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1444,23 +1444,23 @@ importers:
         version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/notification':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1468,29 +1468,29 @@ importers:
   src/components/ecl-page-header:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/link':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/page-header':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1498,23 +1498,23 @@ importers:
   src/components/ecl-page-information:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/page-information':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1522,20 +1522,20 @@ importers:
   src/components/ecl-pagination:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/pagination':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1543,11 +1543,11 @@ importers:
   src/components/ecl-picture:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/picture':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1562,26 +1562,26 @@ importers:
         version: link:../ecl-link
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/link':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/popover':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1589,26 +1589,26 @@ importers:
   src/components/ecl-range:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/layout-form':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/range':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1616,23 +1616,23 @@ importers:
   src/components/ecl-rating-field:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/rating-field':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1640,29 +1640,29 @@ importers:
   src/components/ecl-search-form:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/search-form':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1670,41 +1670,41 @@ importers:
   src/components/ecl-select:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/checkbox':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/icon':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/layout-form':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/select':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/text-input':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1712,35 +1712,35 @@ importers:
   src/components/ecl-site-header:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/resources-ec-logo':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/resources-eu-logo':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/site-header':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1748,23 +1748,23 @@ importers:
   src/components/ecl-social-media-follow:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/social-media-follow':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1772,20 +1772,20 @@ importers:
   src/components/ecl-spacing:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-spacing':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1793,20 +1793,20 @@ importers:
   src/components/ecl-spinner:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/spinner':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1817,29 +1817,29 @@ importers:
   src/components/ecl-splash-page:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/link':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/splash-page':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/web-components-grid':
         specifier: 0.17.1
         version: link:../ecl-grid
@@ -1853,26 +1853,26 @@ importers:
   src/components/ecl-spotlight:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/picture':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/spotlight':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1880,32 +1880,32 @@ importers:
   src/components/ecl-table:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/button':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/icon':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/table':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=a2360457d26d7487ebb37094806893f593b21f5d36309c0fec1d110a108b7f77)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=a2360457d26d7487ebb37094806893f593b21f5d36309c0fec1d110a108b7f77)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1913,23 +1913,23 @@ importers:
   src/components/ecl-tabs:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/tabs':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=2da6491b1f40429f722e0171484c00aab1abf0623944e03ada8a26c4965aee5a)
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=2da6491b1f40429f722e0171484c00aab1abf0623944e03ada8a26c4965aee5a)
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1940,21 +1940,21 @@ importers:
   src/components/ecl-tag:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
         version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/tag':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1962,26 +1962,26 @@ importers:
   src/components/ecl-text:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-color':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -1989,26 +1989,26 @@ importers:
   src/components/ecl-textarea:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/layout-form':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/text-area':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -2016,29 +2016,29 @@ importers:
   src/components/ecl-timeline:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/grid':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/link':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/mixins-typography':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/timeline':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       '@ecl/utility-screen-reader':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -2046,11 +2046,11 @@ importers:
   src/components/ecl-video:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/video':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -2058,8 +2058,8 @@ importers:
   src/plugins/ckeditor5-ecl-webcomponents:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       ncp:
         specifier: 2.0.0
         version: 2.0.0
@@ -2073,14 +2073,14 @@ importers:
   src/themes/ec:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/preset-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/theme-ec':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
       npm-run-all:
         specifier: 4.1.5
         version: 4.1.5
@@ -2088,14 +2088,14 @@ importers:
   src/themes/eu:
     devDependencies:
       '@ecl/builder':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/preset-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/theme-eu':
-        specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2
+        specifier: 5.0.0-alpha.22.3
+        version: 5.0.0-alpha.22.3
 
 packages:
 
@@ -3096,280 +3096,280 @@ packages:
   '@dual-bundle/import-meta-resolve@4.2.1':
     resolution: {integrity: sha512-id+7YRUgoUX6CgV0DtuhirQWodeeA7Lf4i2x71JS/vtA5pRb/hIGWlw+G6MeXvsM+MXrz0VAydTGElX1rAfgPg==}
 
-  '@ecl/accordion@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-OK/tMlsSlTMlFIh/OWMwsRZUV86WUHxq0/QVrmg4dy+C2N6VxwLUHSrXgFiV8egRYyPpeARd6XegE5S/DQNq/Q==}
+  '@ecl/accordion@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-Q0IxISedb4o+40P3/Nz8J9PYuQekAoEr0fZNPIG6LxHiaX5oW7taFqx+MKLdhU1XWDFnuHSz0Rtup1oiaSe/sA==}
 
-  '@ecl/banner@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-ZT37GhJnHJL/bcLNY3x01LIGDq11UaXeInMYwpat4DoBSDR1v9tCC7PW0wfvMkY2el5ciqSlEOB0zE79vWhEwg==}
+  '@ecl/banner@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-wj3X4pH+fa5s0FMWgOU6inkHI0Ma7Q2iXWRWe4zRolW9XhdQFt3brH+l4zZBJHHITFksXIRIjH7+sZlS6JtZ1A==}
 
-  '@ecl/blockquote@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-f2ktCyhsXPDJ7T9NQ5nNW19Vdoln5LyHJvJbJPwub1GKgGQssjkws7CnciqNq3kA0vS3NDp0Wany/H2gGLNEgQ==}
+  '@ecl/blockquote@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-g9dmUx/TkIahn/FBylqyh4BUHglTurrciD3iEFuR9Lmi0GAgAmokLHe9kqi5o0hMPh8ciMBhg9oOi3fn8vitBQ==}
 
-  '@ecl/breadcrumb@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-dB+mKkGGzXHLmJM0/mm5ozm5iphHHQHvUgUEFlWtW5rN9NX+7Y/U5ecHz4KtMizKdFI5tn4xPoAFgPe9A2/Nww==}
+  '@ecl/breadcrumb@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-ZjPZ2FYbtNJexDRpGFHys+yCsg2EuPfKy7EM1rvuugBSe/S/xYx51m5GuZK/WrxC+dGKg8BBDnyrfutQlYF83Q==}
 
-  '@ecl/builder@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-ezospVP/SA1lWWfV3fIzIPKhF/B7c65Mujbh0JkqrIveReQzPCedkirFLNe4JhGHn9QMZJZTPKUhlZIlpD5tZw==}
+  '@ecl/builder@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-bJk688E86t8XpiAb2D+mivUzJnYLY4szbtkYSUXEKuaBMnj+EQs5/sMwjznJ/QPHunaeRjkPmxiL6xIJ+33RMg==}
     engines: {node: '>=22.12.0'}
     hasBin: true
 
-  '@ecl/button@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-hnKVlwMqhlLFcN/4eXlwlnd67ZWDIyKPH2OeaANtKScicpBf3sgRzf7FSQEG+xlF6MNga5Qt4i81FWUNcLpziA==}
+  '@ecl/button@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-pAqQIzG7sTiGJuHBUiWEqGxIKaXe6vt99no3Sxhkcp05LN91C48FP96xYDKPLz2djwLr/7mJ9etG66w7rrufjQ==}
 
-  '@ecl/card@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-MpP3DG0rffMhfCVR03Fb9TEG5R7g3R1ms7DVd6+IwBgbbWG3TpqIl2agruFZxfZwT9G8ij6rpPUcupWzEPxXtA==}
+  '@ecl/card@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-2I1xo5WydhkeGNnuaSqm22Z9AauQfhBA5jAxvdI4raOrCGXvXmd83y4Ym7UVm+5wGWG1tdo7kJbrSQL46+pyBQ==}
 
-  '@ecl/carousel@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-73Gslv/iLGPB9ujc6WpxmWAvfB/C75W7e3d1kghY8/ko9/YRL64o+EwZluPZTIkK28RYx8WozhcXS018lLDdaQ==}
+  '@ecl/carousel@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-QFI4qcD1siDgVVOH0T1w/h/DFvESJuyrcpZ3ZYJ8FXMV5a9C7TCIea1qTJmHOAJNoMO4J9v4kkEYDZIuZcDuFQ==}
 
-  '@ecl/category-filter@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-hxKq4OpQ8wjrIgnbe6hScdjf+gEaVwRVkmk5/z2qMjCxFbCdGwZJ+IonNDG8ei04ohsOnqVzHgjSp/pyW8ppyg==}
+  '@ecl/category-filter@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-vfUjJMkVRyAI8s++lNG+6NqR0gqryJ/8ylSFHZiUgAQb5rlk0xN0hKKUXNfBzUjKPjXWTAxlvz6dkZF243RE7g==}
 
-  '@ecl/checkbox@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-jklIzDRMLIq2OT2qZFQWbAel7aXU0Pd58cXsNijyfBgMu0BJoWrmc0GQZ+smZkmdzEp2dDTRkryJRYByr/sC3A==}
+  '@ecl/checkbox@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-d4iOsoExQUdYRN8Ogro1Ai+sZB3B771V3eIGtj+v9HH57uiuCCGJUVDADP0CHlwRmKNMgVHHseHl30DocvSxvw==}
 
-  '@ecl/color-modes@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-9346S+vRaKj59Y4mlVy1p2/G/bkMJ61jH1eWmAyI6ZU+oTX5Xo4f6BYDE+y7aFCBqbJ2xvJ6Xy2K5rjX3nbqSg==}
+  '@ecl/color-modes@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-QQ8x3m13R/fD8O4PsxCLVSfcRDuUUKxb7yrewHU8VsQQgFTIwNuANdpglxZ7VVTXEgQw7N1YbPcDzMJ2Dz0Hdg==}
 
-  '@ecl/content-block@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-xZWLsQkvHN24kqMDSdj39y9OvS10CYnVzGbZK32/TgXbw5pQSr6gRgUPN/sA8N5hJlvqg/phdxhexI0hbrK7wQ==}
+  '@ecl/content-block@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-7qhcbCZz7fImgMfuf3epsHtaCbVBW7u23JFH5MLOkgKNG96lsld6GaylOcZGULzcEfqM8avvyAZS4vZ2/ZHg2g==}
 
-  '@ecl/content-item@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-IN2HHbworFLZW9VnKZkrO6cePuJmucfF2bNHqo9AFeGsWBDfvUkUN2rfwMCZ+AoDr4yrML2Lag8+MYU9xRm+KA==}
+  '@ecl/content-item@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-IlwX0PwNXssSmRKKhr+DF+Lta+zcxqRGqp3d1Zii12nayUL3wAKtl4qoSepmoQNDxgM4nIjSjVs7k+X8t17XZA==}
 
-  '@ecl/date-block@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-365RD4LdBT+NxcSHHnby+kU5JJ4FR10LNpEqWAHv+aZR7eFsFLGDx7brZzTEOcVCbrB7pHE4wOtvhgUqFbNZMQ==}
+  '@ecl/date-block@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-llImzA7ScsLd9WuLPB7mYkO1UfaGEOPciOlCgges7X4ZYmXD2Ggo3AqjezMHypGShQWO3TiIPL6+bd34Yb4vBg==}
 
-  '@ecl/datepicker@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-gSV6Ah0bo6doZ6+mpUOf5IkVI0X1uZV4L3ytRmemFgh3c/NU2UzARdipo9YsyteGglvcD9tfQNPE9OLDZRmy1g==}
+  '@ecl/datepicker@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-VuirNEcDYW9sqdJ6ep4NcF+Ftsu7QIeX+bEANvslDXwclqtkcEcnebIeaM+08Nc1QBrQ9uoSHM05UX3DFfFUrQ==}
 
-  '@ecl/description-list@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-uN54TqAno7rL39cJXweibUTDGKhKJR4/28KxIXNGTZstE5V65G8E2vOXpe9xK9ezYK11Z+nQECBPmZMKxn6paA==}
+  '@ecl/description-list@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-yuIvvo6ROV1tszrs61hSkd2Et1UG9vTefwVZOHXKVgRYMfOe5S4mSvZuTljzLa3C8t4GA63ECx7HsJdB+ovChw==}
 
-  '@ecl/dom-utils@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-D4E+6SqEKFPt7I0C71hBTgD55tSyZbpFJ0zooEOg8wYSn+lB9+V5q+j418IIGVso/x8/gGEf2EWJGE08JmbaTQ==}
+  '@ecl/dom-utils@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-t2jQ7qT5JUYMGhZilGu/pTFK8Ikqqrb0zlpIZyH8bey6QhWlkVNJYLfS5DQlMp9DwX2yBaQNghvMcHURq9Rt+Q==}
 
-  '@ecl/event-manager@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-vKTme55T1PCOL5LtsfKHUAPNKyyhlL5z31kOsNzIG9L2nAlwh7ePLxiWpV4QZZM6YEE21P6T4jS23zZIylwS+A==}
+  '@ecl/event-manager@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-4yjQO4iyPZzQHJj8X3WkQ+SbEUqb68eIR3MF+jVbKt0Lz47SQOOXP8PksLAwteoU9T9wolYTk743GO/ZCR5qDA==}
 
-  '@ecl/expandable@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-l3IMIYIWn7WVN63K+GrlUerR088hdB5urdC3dGhuoCmn+XCdMh2CFSShrCh4t92mH6NEhHz2/UdpeSF2w5pcOg==}
+  '@ecl/expandable@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-iliBESyg+qgH67iEav0GraApDntQyJPxXaZLVCYTTApWEoJ6csKv38jkuaIwY8vWZrxC72Y2rGtdQyoyHAHLyA==}
 
-  '@ecl/fact-figures@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-aO5PG8G2PgOrMQcEuLqqwSUFEXjlHcyBvFfeIDA/cjS8UgJ72ayY48CS1SzLErT5mP9nnx8vJzC+hsq7vW3Cqg==}
+  '@ecl/fact-figures@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-is1EJY1XODDiJr/NInAmBCztMcnkMMpg2A72FHLtDzIQAu24iK9/trEQ+4KaAJkICrkDN5vJMrCWugn7taORZw==}
 
-  '@ecl/featured-item@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-Kmg4RiF7pe/Xw9EwoJRqcQduON6l4emH7vlMDwpj6X4GccUc8cBUkNNpFIzR1VQwew4Y1RK1Vxu9GRK6/DZc6g==}
+  '@ecl/featured-item@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-ECk9/RyQ7wfaV5rSywSS5M2nc+x9YbhnP32rYFDw7vx/9VHtl6K2JrpyeqUXpm5E4YJND3onDnTc7IoileLtVQ==}
 
-  '@ecl/file-upload@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-TzmUvsjTVpESFJ8S5VqX6VfH9ypiW4QlpcMW2HKOpKhvA97txiDq/J7rRwQ13fzWY1RgDuJp3ED9GjjgSct+jg==}
+  '@ecl/file-upload@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-cnaH9E8YaNsGSd0tJvLlMHaxbDtP+A/nKDtwbRveZmWDt6qDrIcW5LHY6gLu+WmmfF+bUaQ7r1FuDs1E1IRlVw==}
 
-  '@ecl/file@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-2gir7sbGr/d0hW6g2vz52r3rRLiZWpVF8rTx1wLOVhqp1NLjo6MQmX0cXt1vu5fPMpOS/RNG5qMsLdRZNlcEzw==}
+  '@ecl/file@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-HI2EpeEouqP2FxXuXPCLd3w7JbnxXfvvxOMq4xjlaMZ7FEIlg4eChi0kS47LUMtoK8U71KbNXeP28mdblym/aQ==}
 
-  '@ecl/form-group@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-jKaAdtkbxv7abeV6uM+bpYwzD+eH3kZgX0ZKI2fuYuAwBIcvFjTflq/zgaebQcXKKl6w6LrGcJFARet9GW4fkA==}
+  '@ecl/form-group@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-zNZqjGdevNJ4KaP72KuL/XgjpAwX71asxlxd2HirEvMcZkvgkmczRfRaa6a49XQzl3EkIITOGOTn1otzIjO/2A==}
 
-  '@ecl/gallery@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-0xZzXUj/D87F12/vVHlcGdHj4RE4kNrnXnL/hDZGao4hUPXsgzdnIHOO2RcALjXAFEYPmp5Hv2xxP+YGb/DCPA==}
+  '@ecl/gallery@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-F5YXt/rXIFUTXxqBrLohdHZcwiadLba0ImES2GECVklnQkqNzOqVxZtfVabjYgGpdJEboTpwvbjDwxLZ+mrodA==}
 
-  '@ecl/grid@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-JrGvsvvSilq4a+7oi/MREa1gycmNozUwTyqUIeDT/TbSP0PxGGYK7pJ7CujSRdi90oA6zUy2Gbtp3JPwxa2TKg==}
+  '@ecl/grid@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-vZ+2XUjmO2R7aj6c/ogzqhzFgHLFotDOHvhN0a4nQ5kDMdSHn4qmo79kTrg8usIJIyo/pY6bNN6rr5hXfmofKg==}
 
-  '@ecl/icon@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-FgSXAGx791sRXolAl7ewXmA375r2/gR2PqestolQADj+5b/bHhSvSgYWba3lfLL7bncWL32v+iWfeFi62H0zgA==}
+  '@ecl/icon@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-mLsuVcj9X1cbsJsh1LEmyUFXe+78WAkNMq5FCkUp5QbK1/xU535WEqIHxcUbBmNMd8RnT0yztfyGYi8hKQ6bkw==}
 
-  '@ecl/indicator@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-GVMEFk1yQkSn/3PU4c10V+HY/2yGckCn838+ROqX9OQVJ5o98cT+dy5zwx4Ky/rZHpcw25Wl5XtWfn7KJ8O3KQ==}
+  '@ecl/indicator@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-p6Qk3FePT9MJBBw5Apn3nj3iSbEh6DaBWNNFjDlihjLQNwDBeSlfh9ecCZpCz5ENXe/GfSuoTBb0kKn5fUjpEw==}
 
-  '@ecl/inpage-navigation@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-nQIc3Rw0kv2UwOQD5B3OOxvBkFkw97EVzUdICrmIlfhnWtdgna3F7xu3U8lVl8MWDqfrHXsoa7G/TtKYnaRnPg==}
+  '@ecl/inpage-navigation@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-ZEiRkLaXWdlHgfCHxreVRhVdeXV82ApXEmIe3O56oyncGesQZIfWj/OQkckI+P6Qx/z2xXXQaR2DEqaR9beqcw==}
 
-  '@ecl/label@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-lWhlo9sgEbyXYVJIOznybrJZt1DjZTfjPOzXT6QmY7FpYPtxndAZBLP5cRsGhlG2z599GqR1Zs2RpIoGwhX/wA==}
+  '@ecl/label@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-zC8DMTZVlw+gM0ey9TYo78iEfm81CijgJUBOxMcJro3lZTv60i9uNr90verHLuJvhoh677Z0hTXzGlGMzrcQ9A==}
 
-  '@ecl/layout-form@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-h3PT6BPkSDb2awkGNpFuYOZ0RuAZqjBc0puyU+XJYX8ogzbm50fNC4/BxfUQO5YnuG0SI7vaXWzLjnt6f7/r+Q==}
+  '@ecl/layout-form@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-1wz8YfHOUQHmGF7R2EyWkjdoeSrCuzvrz6hTtK2VVHCZIuzuiaspmG8gjy6sq/M4K58IBbPmC9XnRN0zOiP6CQ==}
 
-  '@ecl/link@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-9b2Btds+PmsvL+r+72+DpAttXF06Skxvf1k1SaYmnFeiuuPULR/4Dofn9euhXgn13bEictS0apZWdC2Lw1Em/A==}
+  '@ecl/link@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-cYaG7uvODfcXN/hTq6uW5eFd4wGUYw8DunOJFoRrXc2P7Y6y8EJeKoBXW49IWx3uSI78/9FoQKrixXE1WC8Q7Q==}
 
-  '@ecl/list-illustration@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-ljMevqycalcokg7aqJHDCtUEgYtfl4CQ4LVUCmrFQXDUw9RbaiASY/AQTKgDKcqCS8CMP+O2Tl8P5ycw0wzX4w==}
+  '@ecl/list-illustration@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-ug26qPMJt+XNEDL4lq9caHHx2NWGMozlgzRwbWpX8HsE2syJMON+NuOWDUtCElx4WOwf35n1cagm79Br2w/s2Q==}
 
-  '@ecl/media-container@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-gyMHsObtXKJSAERVx5NCIplvKPlx/+dCT/QDJM/4c4/rMgFKnSJ9DuhBVTEjTB1Nt8gpzS7Jz8/PkDJqPoW2ng==}
+  '@ecl/media-container@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-hVB0bORA5aV4Vj2iwMAUfdKeYJUmbC7SCTOzX682Zd3mUW/BfkSB1IANvVol40YyNyLN2Nj4BHeeRSnHf+tpBg==}
 
-  '@ecl/mega-menu@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-QSHQkN/x5MdVEGxTqqN/HhDy9+PoqvzwZp67Cy8IRDZGGKL942SmuFWuEcmEusURSsgOIrwJmvMqfopHDt3Wog==}
+  '@ecl/mega-menu@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-QM5dSZkz85+X7QljPgZosCLeK5s88Pnhp2UKuTlRFiRAs+NZvzmVVnY+v5oaGcpmDhUmQbd5KgN3Bp8drvnDqw==}
 
-  '@ecl/menu@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-mEBEgV75JbIxXQdE6duyPke+I+kY9GVjFspS1vq3DmZwTcW7tVdpNYOu7awO/lMd9KAJyIyw+p5GKrcl4SlW+Q==}
+  '@ecl/menu@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-WSScdsaXo0Rd2Ihj80vJSy7K/sB4NzMkReYHqkLu6ugKOuac8FuwPDEYHDJRWtZ3PlNY0+Z1fdXWoIYN3keeHA==}
 
-  '@ecl/mixins-color@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-sOx5MqAJXhpcblXbjJMdnayxNpt9KA0xmCCv4BjLN3lRwArF9dRvw4FpOw428TO+JTBdXzn5vd+L8/KO1yVu2Q==}
+  '@ecl/mixins-color@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-yGGKOY8lNzScv4M8x0dn7AA+8f30uiEbNu0ffDivTYNxb5CxwVTrgf0cM6y4sVqIQ9gIrQ6MuYTdiaKAQXAH8A==}
 
-  '@ecl/mixins-typography@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-3gf2hpKh25nXPO7I74RWq8jXTLmo2Vn3OLzBuPHJBWqvyq13ofTlX62270q/kMCW1wqDR/fVLSBQZht4xoDGxw==}
+  '@ecl/mixins-typography@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-GfxZqTF7LJjj1g3sbpoG1i0LO3EqBqSu2W3QhtivxSHCXVwXsJXEOBwMQCjv1RiAMGXSyrnjaPQSMSlI9AGd1g==}
 
-  '@ecl/modal@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-DomtziNqOAKYItVhNryZhiztqX0yAyqhDikBQrLJDQDuXpUEINE8z4wUPsf3lRMtYh155PO73qobKswnQtXU8Q==}
+  '@ecl/modal@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-jl4+pgsZ0vkP043b6b0NuajvTmRMdBllIZOCYi0b7cLqSsE4nkebr4wDhoq5gPqj5LbJ3M8s0zirJEO+pDFJyw==}
 
-  '@ecl/navigation-list@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-CUAc4L4n846cz4vdWJ2G0Xg1kd1kU7WjJvIzk9WW5wpG4OPno2ROrlYCLepjbXdLl9cZ8Og/veqotzSjjW3w3Q==}
+  '@ecl/navigation-list@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-kNPPCwBNJ/EXP4YLhzsIReXbCZIBJmu5S+aIsTbWcwBowWAKnyJ27tWTa54mkCrMQAZ0IoZclrfEJkzYJ8Mczw==}
 
-  '@ecl/news-ticker@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-JwB0D+pnhwActUz0Z4kxlSijgFley8OD0NaFaWYzoAIqtimKGYrnkBHe7N1US2A8ymIYQPBgC9wYHGdOWEq6mA==}
+  '@ecl/news-ticker@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-qTyH2BGl1hyQ3yk6DrbnU2nPrZNZThpNOE6e5WPGzNOqqUqgJhshXYrcbsPvHGt8rNSMjen9SEkHmC3Dr5PapA==}
 
-  '@ecl/notification@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-sZpDzTGt58KWDyn2bmZ3yN5KCncljCjUrpaYITSe1N6gDtez8lTNYHC2VPL3nAf5YsZctoR20iv2dfyQeZxyDA==}
+  '@ecl/notification@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-pP5/Iqo7Ip7+CBDTR7HnHqBQFolmwiefwIi5JpJOW69yCCK2e47sIa0hP7/p6e0im/eUsq3BPBx0eh9Kz0LB3Q==}
 
-  '@ecl/ordered-list@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-85BFepOrvGI+XKKv1COuAk2GTePN/V4X0Z1CXmV2KqAFrqOhaAxuRX63V6Z+84Cjr08WIDClssBCBYlb/qlDRw==}
+  '@ecl/ordered-list@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-v/rIk9S8nAhxJum5SstRn8X1b6B14nQx8Oa9SATTDArrpwGrBQxy7LCFa8cAu7UJmbISLqoKBDiHECOQqWZ0iQ==}
 
-  '@ecl/page-header@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-x9blOh7J1fVh+m70d0d11ZW75iSXvhni7OlliNbOLLz3Q3MNqdqw4Df9vpMUJx7ZcX8MxWByxjvraLyqz+SmAA==}
+  '@ecl/page-header@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-5ISXwmBeK5iPeNUwuuVenpU9LXxYDnb54a+hJCOT/ftSMHTNH9BGOc0hrO+8HEgfzBTHvxAa3VVZVtQG39ntYQ==}
 
-  '@ecl/page-information@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-kE5betQeCPgCGca1slxPJ1fdixldr9uaLHNxfGyom/alObblBFbjBmka6JaHIJD8i42BxnSNO7mdYKcd/R78Zg==}
+  '@ecl/page-information@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-qPbVjDienFu1Y3UFNPiV6VjE3akwMO0Wwtl750kszWk0euDVuZBcXi0tS9kFfCvNswer5mh4Qh46NoAhc4jjDA==}
 
-  '@ecl/pagination@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-dlyiO/tQOsKPMIi8DGqmDxrcbKiNbO3GTiQWDgABZIV4Xyz1Hr6zhvlnnSeDZOObt2PPQQCpLT8ur7Pq0vrecA==}
+  '@ecl/pagination@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-ACRvQeg66pbvRNpJBbK4pHLNBQihyGEgOcZRWNcNGCgyY855rqoArTzcJMFBGbxQ9Omsys26kmbOpNzX5HvqCw==}
 
-  '@ecl/picture@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-MXWSKwsYxWh78f1koCziIjcPGUPBHExKjE7kdU5Iq8Ys+ABch0XzrbXpvXRAvvr7C3rJh5Su6GK3qyrGdmAmEQ==}
+  '@ecl/picture@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-KEnDTsKYtv5jEIufYIdHCHy/84pWDQcd2iqm01BTbW7fLxc5vAWBOnYFZmH42e8dqrKHi6751nFOr8iNh/8Qwg==}
 
-  '@ecl/popover@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-6PHibLTaEgfMyCR5shQtNryFjJQn91AUeawPtdk4vyl22tvnO+6jPftzr9mUS3e0OzseN7oh1H4AVxcFohjK+Q==}
+  '@ecl/popover@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-+CTou8rZnKKTbGtchpHsfJBYsXWZeyrCkK8ficzDXRF/dXaT4cMdAbJbxnfPDStAq/Rs7SWoqTLWLqAwrcQU4g==}
 
-  '@ecl/preset-ec@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-6obed4BdJxjGHNaTw6rmhUBEcwOCNvRpHEjCSCJ2RMYz+yf2mTU9Xi4fDGaNf7lYVSnBqBSWoQky69DDE1kwHQ==}
+  '@ecl/preset-ec@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-VgbLK97jdyw/FF8LZm7zRhaxi1uBRst7Vu2AfYU3qyZYHQjbRRC6ugAC3OyCru5ashlFPonwH+eMWPCOBXOmkg==}
 
-  '@ecl/preset-eu@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-fKE6ymfgjdNpDuzsb5YX+fmfN1cMqXoJIyw8E/JawbyL3gwRQIXdg4Bq42XzHgrwRZCUXnZGIaNTjJli7+wchw==}
+  '@ecl/preset-eu@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-hdHsm6J0TQuWvzWTI26gGQxVvejcDjQViursbYdUPvPIaediibYILb9paZQ0zlPVuIpoWRDUp6xvROZXOG3TUg==}
 
-  '@ecl/radio@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-6WVcwEFWp19RWaUXhjlmA5XU1FeKoumguKbr5r/tJqCEC74BW/M/MfvbkawL90CB20Jvc0Yz9AQtj2cPfEGECQ==}
+  '@ecl/radio@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-79Puzs4B4yh7QQWHPz/A62sC+2hbUDbFEw4lYzFegLBSVBnqez3Njd/nrMUIAJ/lzbZnetpgDclq2VRpj7CGow==}
 
-  '@ecl/range@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-EeSSh/oPMJcGuOmGXyy8wPO0i9pCB3y9CJNcrHJuvN8jHK4B6MSCjF8PkMoLDJaqgxLrr7uF9NEa8NpJdvjltw==}
+  '@ecl/range@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-XeOCwLHqjKhYdHJGWRzheUDtMboMvCzjBt16c/urq+0wjbOfY+iaEOzd2TEZjRhE20JRoosQ8OEyP9meyOnljw==}
 
-  '@ecl/rating-field@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-G97Zm0N8EVSoLkN1+3bQiHY9njtzT1/JDNsH70dtay1wW/8bPQDQ9v+rM6H26+Orfuqbi8dAFWIuPkTw+tTqHA==}
+  '@ecl/rating-field@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-AOw/wwY5iIYfKWrzzaOo5CWlAtPUI1TsfhqCTdXQKrmg2ceJIm6qkVo+xgU0js5YGyXePDYm0ocFiaPuTju9Qw==}
 
-  '@ecl/resources-ec-logo@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-Vahq4rfY1aNhqxp79kHQA9DwFX2+1MBTrEy/1qxVP+QXATuvRsuj302L+YFZXPJLHiOI6IZklo3bnQADfqGm5w==}
+  '@ecl/resources-ec-logo@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-wXAN8FxW+3oVpMly6Bfyu6YVR9xD3ANnhbpuX4by4+xayRp6UAw5bI1a5gpdrogLwHuH3nZa9RNtb6nkasTBVQ==}
 
-  '@ecl/resources-eu-logo@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-He8WK0c1V9xeecjZXj0IsQ8fW1LGxF6RefVl7LVNxrdeoztnYDjdv06kJgxhRLNQpPhiTgfdGJyrhGY3Vt712Q==}
+  '@ecl/resources-eu-logo@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-cnZ4nTNnqvPgUVHM8skEHKN25TLyx3xCXJLgrOYusFtBpzHeCisyh7F0l10kjxpnpd/WdlfHqRk560IFhX1YQg==}
 
-  '@ecl/resources-icons@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-mYteoh9ic8Z8uiuG0tS7l+zI0ZhppHc3HRbeKFMxVxxLiH37TIEQb78tnTtQ3ywt5f0GSiuA3un/6xuZGDBIrw==}
+  '@ecl/resources-icons@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-80KPZIs8pYL/JgjAF0hQ9xijUir0JyjHzkCZw0V2fgcIKaji36URT/MCU7u0F+L7XW5BJB2kTw45M/zYcBwkOw==}
 
-  '@ecl/search-form@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-K7W4CBFIMy5kbkzd4xXQxXH5EBLIeypSJrnn6raPdvoEm0uh0/wstFfO8n+Jq6SAXeG/E7DYj4FCzwO4UXR46w==}
+  '@ecl/search-form@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-Mb9inDXUv0lzamOUOB4yB0hk6G72E+Wb79ILw8tLem1MS2tRRXO18mqbkBTb4j6tm0u3gvIVT5jOWFbLdBJXLQ==}
 
-  '@ecl/select@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-Pqz6aK3aa0gdj5CHZNgv5+PNacn4IDgfS9ZA2+wnFLZgD/hmRweNCx1BELp32yvVpfktAKmq8Ye4Af2jm5VBIg==}
+  '@ecl/select@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-C5zHZ6XX8XP1CzZ97cTMXAgf+ZNprVMlXNJ7uRLt/2WzapcDmQr6bTG3gLGJzfGF/ncRKQlbNqphlmp9M/Yn9A==}
 
-  '@ecl/separator@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-0uO5ztxqS0ufBtne0XMuLJGgj8/4HyIo7qmMogAy0rVJy4OZDeguc+pEFrmUADRbvd/7zAyWUW/taJMuY/Ollg==}
+  '@ecl/separator@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-+H8urY2/CpoN2xl3KqP0xgXqjkftkdZGxcNKN9hJHqpM8L+5f+HidkSpwNJaW2Kd76JNnkV+2nPvvsFae1s4Cg==}
 
-  '@ecl/site-footer@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-xf/S8rOiJHSvjHp8WX5MaiwQASDrhftrj7fO2nIIFGYQSiJ3XKIAIbBjlBrR0Ta0tUjCWKByeINnbinisFeCFg==}
+  '@ecl/site-footer@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-NNKie4BdUlIEx03BQ/FYrMirVRCdLZ//qSVPmwDhn85nbdAGbmJLBWWZuZwaWxdf2kkOMd6yZHTllYn1RrSK/w==}
 
-  '@ecl/site-header@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-F/oBFcV3W1GC7EKoLTkuGm8JepUG3fCdUZGcVncQ9WVjINnmuk39Aa7RpLF+TL88kCOpx93NNRmoH8urp1OQVw==}
+  '@ecl/site-header@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-y15Rszgpg/onBsEIniXB4CvmqcxWNGKWs+0azEeK0Zlo6uvfakVoZi004lRjwQC34eT7Wh40C1kqHXm02NX5Kw==}
 
-  '@ecl/skip-link@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-HjL829mp8JYfW3FM6grR4ESJ11Y0mJ51rDZzscavLnudkdQaSd1pQNJJX8uPbDCZPQpOsq9fG91NZnai8VFkyw==}
+  '@ecl/skip-link@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-bR80R7HjLsrf3EBWoZGiQPji1nGKwV5ryK99hk51vccOhZVvKkAEcNf1MeF4qY2UaFLwwth410WGzHpoUwYLbQ==}
 
-  '@ecl/social-media-follow@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-jJ2bSEiw9hlxb0ehY2pRrPpnrxItOtwk/ChFPDFDCKeTpbohqYsSX2QklVzNWnwvW7fSVgc+uEIkSJdo2LaGBw==}
+  '@ecl/social-media-follow@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-vPm8aYmL/kkT4MHniaCbrWzo4B/xWZMN/SY0gTgdddGGsiIwFPkW35RZKZZdw/YO2jcTNESBC7Ef53CPMnRTaA==}
 
-  '@ecl/spinner@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-oiiXr8Nh4cJ/1ECmpUILLYzyC9W99gtiETE66zb+OtXMxjlhAKsWN+C1/rsFnsOTd8MUbw2/8sb1mKdUtKTsKQ==}
+  '@ecl/spinner@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-Zn0t/Jn92+Go1w6rM1LUW31omXun/3MEHcHJ+L71QphnrUCnh64heuRggt+Th+3n5/Xg6Zmt9oJAKQvO4GfoSw==}
 
-  '@ecl/splash-page@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-5+nyVRXsKnZGorUcC8E+lIj2yxebqK2rr/XF9sgwe9hDQHmdKyuvo5auRjEkPnGVg94exx5IubDMrwKt7/srTQ==}
+  '@ecl/splash-page@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-xq8EU5QMF0VujooPVUKtWRF3+wcJPKM1N8HhAP9kwijLhbMfoGoOt2J3dw6dOcF5omg2utG2b1JI00Mx9ebDsQ==}
 
-  '@ecl/spotlight@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-mfEMgBiFU+nB/LVADic9z9gH3cJ2vfZjq3IOzEefXnayCfkmDy+8FwIYh73QJJw/8rUGH/FsKtrjv7oT2SWzww==}
+  '@ecl/spotlight@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-fIa+s22Ycu1oOJg0D+dAylnhAoAV9r/6+AXE5Hfe96vESzZpbpu3sxuP98Y70PgNk1CO20xit6V+ILFZvy/8rg==}
 
-  '@ecl/table@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-nJTrIVvqW4DQ8xf0gZqsR4xTa7xj9tD9GStZzL9tCUh8UG56DA8TEbxTBCD1tWeul+lmmNn1BJt+9nRHGWvLxg==}
+  '@ecl/table@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-sSWcHvhfauk0oX+j4Olp+5Kq5H7Zci1hbjOpySLzfH9vfke7c6jLDBZX3fK3PcD185TKsfKNAAM62GG9sCcZbw==}
 
-  '@ecl/tabs@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-j9BiC+0RpMTcQn0bedS0YYSihAMSWsFUwuM7aYua/Btv8Bmo+QmYW9hoILAvhe6i0zBnuA6NHfpkvcCgJQt6xA==}
+  '@ecl/tabs@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-xToh5uX5mR6YTaL1/mjVrBwGJ5U9AT8DzaZWnsKGgBleSV/gkGiwjM9KpzVKwzQVOQX34p4aIpWDlqzAYSRHpQ==}
 
-  '@ecl/tag@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-MCKGJ8fphjTg9jR0grzJR+LHq45Q8e2y4eXFwXft1H5dM1RXrzeaYLIg7xw2VUFcuTHD0rKtfM08w+RW9mhZBw==}
+  '@ecl/tag@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-AWPhyrPewveCj7CP+juy5mvzus+pF40wql5/bpMd+2VvMKCmS3qsiu/37Eq30xzBP4R/LCNbS5OJSR+/3SUwOA==}
 
-  '@ecl/text-area@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-qgmH+fdkbhC2kuKyIwC0t+9lQKuKSSm/P0/vSf3r3GeblY6dTtshYfAk/bWjC1KBFrH3VbGTVylPamWvo0/xYA==}
+  '@ecl/text-area@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-KG3g/ZgGm0GmPX8APMRkNbkbaB+qejkfYgBmS1xHYjRuRsGlw6kHaEdCajFUq4HM3MTCGPccykXqsCyciAcKlQ==}
 
-  '@ecl/text-input@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-55E/fUdJviZ5/5e1jTgsUrg/ZW5wq6MJ5bs/031mUM9j9sZYqna52H7qlGSg1Po7TMzdlyj+HOVg+tNXtqC1mQ==}
+  '@ecl/text-input@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-jqcoMshbHTy/+9yPd9rSdTwSa2gFQV3/YPo8osb6uIgQ46ybVmPZPL0ZBOM2qNhXMINhXAeF1CwX7oDDzzzU7g==}
 
-  '@ecl/theme-ec@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-H/Z39vtavOBVejjefx85FIywPDWGYdNC0o7Vs9HfgPTGMCvRJo+QvQr1GAXWTXS7CeMxfRldHr9ZrgxFWKgZAg==}
+  '@ecl/theme-ec@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-mC/uTtjUZei7bWOYmkDh8XhYlD/jX53Vjzfsb5Q6kY41rzFIOjBBqLL3Ula1FVl/cOl5KSdMCcSQRfmyfj3tFw==}
 
-  '@ecl/theme-eu@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-Zp0DZgVeLbiKA17q+dWRW4JRe/a5rzRS6GkUGX+M/KvPnfmb/YjYGZrIIQTn4s2Ng5gvTkkBi4D6I+XIQ4Rr3w==}
+  '@ecl/theme-eu@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-hXBQnN1SZ05GSkOwz+xgvvZeTe2aogz4amV8MCg7LRuio4l0OyT5YACfPdJp8pKrYYJDt06Y627L5r0Dadv8IA==}
 
-  '@ecl/timeline@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-TlXDa9PvVRWFt6KGC/uHes3ggYem3L5AQomMWqqZfRKDwg3qmg4oOA39qm4SbUFUKs8sQTKsjB2+8LrthunZEA==}
+  '@ecl/timeline@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-gn4CfHNE6Y5KzHGjvJlXJPJMZ5EbuNX6T2tRP6pmMQaDioDHTU4ReVvsN/nXR17NB5/RL2z98IAi+gLZ8/18YA==}
 
-  '@ecl/unordered-list@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-LRKvt4lA/igboDE2G+CTFgKdhdutMqFO4xCnPmFP3kiTkyn3NcwfHVNJjBC4peLUrou8gW2gNELiOrgjQ1nEfw==}
+  '@ecl/unordered-list@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-nmTH7xIw5zHDHtEbQxAb7e97okWSN2U1qeAWEnsPPKRxZHc+NTJ27LEZ1pBalw7yG1WyD1Jti1NGEr041/mdDg==}
 
-  '@ecl/utility-background@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-U77hK7Cc7ipmNLvfg9RwEjkiR5cthPrJYeXwRoHu4d2hoVE4vJyxY5+aIY/YtLXFlQn2ywDQE65zm1HAFy512g==}
+  '@ecl/utility-background@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-o0hsX6jyM6pr1yqnZg86N+QTpUk3y5jxLWdGndWKtKAD3R4B3KoVyKZoiR+W5AWza+sR322mIOCM5wrHcdmbOQ==}
 
-  '@ecl/utility-border@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-PcldXiai0HJlYIgk0Mii7E5TQc6wSaPGUA4pvQSwGje/k+3PTjJml1gTlgBJHKkg5RGtZjKNxG555KD47/cg3A==}
+  '@ecl/utility-border@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-/nOShNZ6NuvrFlHYmS6xA5WFq3+LPWlR7mfVlOiKM85K2nNCYxsqqA1jt/tQYwLNgq14G6U7Hb76lmXWg5Hw/w==}
 
-  '@ecl/utility-clearfix@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-UPEfzmhJ2iREFq53GKm5DoUf6liZVXjPGy4Th6DSbTjXrUSu/az5FYztLiS86lPcKZwQgtL2ZvNxRFJu43r9Kw==}
+  '@ecl/utility-clearfix@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-S0V5bNCYvlGpibwU6NAwxJe8MpBICMC1Jr/xkrUB5lg9244fgeMGy2G+S53mvRbvdATXHCB6i7JaJ1kOEsUpSg==}
 
-  '@ecl/utility-dimension@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-J8GmUUhvO6lbar/AKzveQXk0542bMOjeWaW8+6pOYz08uDpYccoflPKshAGD2l/XClW7O4UQI6/CmyWI2HWtkA==}
+  '@ecl/utility-dimension@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-FmXT2X9Nc8EztG50I+kjg+22oQr48Z29qTvsCbgRORza0ONpI4S5amnzqP/52KqeL0Rmb9RFh7W7W5YdOnu5IQ==}
 
-  '@ecl/utility-disablescroll@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-9JlF2zHSSbZq0B/wv3iMvtS0uJtyLOO8Ui5EanzAo7Y9G6KvvieaMeNe7gHBmhcHZCdlkp0wQ8LsMmhPLcfKVA==}
+  '@ecl/utility-disablescroll@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-W04mW4IvNLNvTQlzVytrOAHqzo8eOgXVxUyruBgDq4Em7pMqeDX2kXSxT6fOGT+Av8GpYwaam26OzO2mvqzy5w==}
 
-  '@ecl/utility-display@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-oZ+odgFJCKy/g9X5Y7w/FjAQsQ3VtuBNKGLnxZf7exnboPaBL0UoJJ3/0DpFvWtEkq8mAEpVZaxxrDZbjeFXog==}
+  '@ecl/utility-display@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-teC701VkBkmaX33BTCLlXzWNpU+nm6bTdDJ6Ofm9ot76ngKkq+82wMyMfhtPtxZxQJjJWKIBDKGPNQtyR5RPcg==}
 
-  '@ecl/utility-flex@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-pcZm/wuRU/fNKpm+kUbSvZcI+RBPWN96jdgB/9kyppySeaSAgcYwoCDst4+gMxNiRKZ4CI+T8mwfdSC70Azu+w==}
+  '@ecl/utility-flex@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-yeYC5/kYpuExBnm0xqmskdqy4oIK9ZvNxq587vAKSHh8sFsJ1eolTvLLv+IyQQ3tiPbbyOcANMNjxpAgenFZYg==}
 
-  '@ecl/utility-float@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-SFrv4x0hKjxh3Jn1INFRMoB75wrm/fdikIEiM6kvY84A0DkYxv2zihQ6SPcWwWsusr0SeQCnoqU6V8Mv6fc+qQ==}
+  '@ecl/utility-float@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-4d7u43yiKx/q//Iptr6iiG9jKze7MQukj63tWluPqzC9YWHs8ldCfGFrUZDrFXO6XyBm0NJxAcqeotTxnmd4nw==}
 
-  '@ecl/utility-media@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-Sgk9889v6fc1erNhedM2n0N83btLpRkoVtAsPKetLSQjsf5dPQfWcJ/OL1cLzQzD9lS2TFnB3ykbpKISHwzpjA==}
+  '@ecl/utility-media@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-AWidrjQm3mxji7jCXw2O1d0VM0w+oW6UzLsytDCilhvzKWzdRQo73Rl/AlicYB6AtGUTRfsbS9gsCIPKUjW3kg==}
 
-  '@ecl/utility-print@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-OuSqEUKhMzd5zFX2m2Kn8s8R7UgWl6a9Kjip30VE1NBMErvGdJKVAZ2nOEAbIuFlBTaL9I6ZVCAWWlBAwBJstQ==}
+  '@ecl/utility-print@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-y16bHYvvV77chAcVweuFu+IwEu1Iyg0YRuP1LslTlNaHS7dzoyxqRSq7kM9AeJF5CNpfw6/1tOcjfwD/stFedQ==}
 
-  '@ecl/utility-screen-reader@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-G8f77L+769F36v1LayhJewBWkspIvPvA7kVJe4EtQXzsdY6ix5DkXFnOHp2xJWXcEKqRibppiarVnHQ0aTob0A==}
+  '@ecl/utility-screen-reader@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-KsivZHEHEW5FO/ae8+SoxaNdC4OFnh0tNX71buewsphH5nSkmBlTY57CdvOOMaoqNtcp+n3Y7Y+Jr/MJo1vNBQ==}
 
-  '@ecl/utility-shadow@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-zLz1odyci5QkiHReFF3OU/pqMdDTNuklGK9R32LTfN+4R5EK9UA7UMBLYwm3kw8ewLI7OxxTo6mSI3aRGRmGEQ==}
+  '@ecl/utility-shadow@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-5T53YF3C6GVXORrRQClAaE/bSHo6rYHdDZMSw4EMGGOp8AyR0mtWcIOrHepvsoSZPuGpHaf2YGDXJzW5gdmwkg==}
 
-  '@ecl/utility-spacing@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-173PA92AxVLyo/yjA9xJu0wXRH0nMcK4TZVXu4W1hO9I7kxLQCRQ0UoXpKu9hzQ7Dbm1yvUSxxVsHp4V9uqfcA==}
+  '@ecl/utility-spacing@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-mACaXaIdgsqb9w11x0IKOn5xuowwM9g7GebcV6gW0qQHgRm+yPZzZC1tKXFITwcWMx3F7+zV5wGP+D/Y6PC7hw==}
 
-  '@ecl/utility-typography@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-Z63QL/OxRS0mybC87Ts3oKk1W0wgfMBt6d3mqdOv3tOaVlHMmm0CaPRSjAQEOZan/NfC2wc0+dB2+/2J73I5Yg==}
+  '@ecl/utility-typography@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-rijsOoB9vh5FEfDu64OkpETrjDi2Gh3WYGZvo4aiU0HTg1PXzw+oCMnGe80b2myuEOEXdoeC7hH0mOzg4iRgSQ==}
 
-  '@ecl/utility-z-index@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-XlAsGkTsipIzo4whCmM3sfvbU4XjXrjn/85MYA8nAf/md4zNY9N26x4dvbo5R86Ogz2Kf3o20qst4ZUBbtD38A==}
+  '@ecl/utility-z-index@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-85ABRsZG+Cf3Rvp184h5Qw/Zyv3YkLCX2WbSe02zM7niW+MA4uOrjqj9A25C/h8+vdPYLCFwtwUyUg1ZHlSKXQ==}
 
-  '@ecl/video@5.0.0-alpha.22.2':
-    resolution: {integrity: sha512-8KCsg/b/0fWYC2m4BoJe74/d4uhWW0LaJfTsbtHKSusM22nAnfIuS5WIahNNSHp8uqHtcwkYfvTXWN++g/FcTQ==}
+  '@ecl/video@5.0.0-alpha.22.3':
+    resolution: {integrity: sha512-I35GVDStvjitvkrX4YpRre0b3zyb3Pc85+BiVYvpCWlUOZ3PbaDAdFESu1S5u4KkPGtkCofRfOh9ioeNWC2prg==}
 
   '@emnapi/core@1.8.1':
     resolution: {integrity: sha512-AvT9QFpxK0Zd8J0jopedNm+w/2fIzvtPKPjqyw9jwvBaReTTqPBk9Hixaz7KbjimP+QNz605/XnjFcDAL2pqBg==}
@@ -12221,15 +12221,15 @@ snapshots:
 
   '@babel/core@7.28.5':
     dependencies:
-      '@babel/code-frame': 7.27.1
-      '@babel/generator': 7.28.5
-      '@babel/helper-compilation-targets': 7.27.2
-      '@babel/helper-module-transforms': 7.28.3(@babel/core@7.28.5)
-      '@babel/helpers': 7.28.4
-      '@babel/parser': 7.28.5
-      '@babel/template': 7.27.2
-      '@babel/traverse': 7.28.5
-      '@babel/types': 7.28.5
+      '@babel/code-frame': 7.28.6
+      '@babel/generator': 7.28.6
+      '@babel/helper-compilation-targets': 7.28.6
+      '@babel/helper-module-transforms': 7.28.6(@babel/core@7.28.5)
+      '@babel/helpers': 7.28.6
+      '@babel/parser': 7.28.6
+      '@babel/template': 7.28.6
+      '@babel/traverse': 7.28.6
+      '@babel/types': 7.28.6
       '@jridgewell/remapping': 2.3.5
       convert-source-map: 2.0.0
       debug: 4.4.3(supports-color@5.5.0)
@@ -12455,6 +12455,15 @@ snapshots:
       '@babel/helper-module-imports': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
       '@babel/traverse': 7.28.5
+    transitivePeerDependencies:
+      - supports-color
+
+  '@babel/helper-module-transforms@7.28.6(@babel/core@7.28.5)':
+    dependencies:
+      '@babel/core': 7.28.5
+      '@babel/helper-module-imports': 7.28.6
+      '@babel/helper-validator-identifier': 7.28.5
+      '@babel/traverse': 7.28.6
     transitivePeerDependencies:
       - supports-color
 
@@ -12871,7 +12880,7 @@ snapshots:
       '@babel/core': 7.28.5
       '@babel/helper-plugin-utils': 7.27.1
       '@babel/helper-remap-async-to-generator': 7.27.1(@babel/core@7.28.5)
-      '@babel/traverse': 7.28.5
+      '@babel/traverse': 7.28.6
     transitivePeerDependencies:
       - supports-color
 
@@ -12887,7 +12896,7 @@ snapshots:
   '@babel/plugin-transform-async-to-generator@7.27.1(@babel/core@7.28.5)':
     dependencies:
       '@babel/core': 7.28.5
-      '@babel/helper-module-imports': 7.27.1
+      '@babel/helper-module-imports': 7.28.6
       '@babel/helper-plugin-utils': 7.27.1
       '@babel/helper-remap-async-to-generator': 7.27.1(@babel/core@7.28.5)
     transitivePeerDependencies:
@@ -13684,9 +13693,9 @@ snapshots:
 
   '@babel/preset-env@7.28.5(@babel/core@7.28.5)':
     dependencies:
-      '@babel/compat-data': 7.28.5
+      '@babel/compat-data': 7.28.6
       '@babel/core': 7.28.5
-      '@babel/helper-compilation-targets': 7.27.2
+      '@babel/helper-compilation-targets': 7.28.6
       '@babel/helper-plugin-utils': 7.27.1
       '@babel/helper-validator-option': 7.27.1
       '@babel/plugin-bugfix-firefox-class-in-computed-class-key': 7.28.5(@babel/core@7.28.5)
@@ -13884,38 +13893,38 @@ snapshots:
 
   '@dual-bundle/import-meta-resolve@4.2.1': {}
 
-  '@ecl/accordion@5.0.0-alpha.22.2':
+  '@ecl/accordion@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/event-manager': 5.0.0-alpha.22.2
-      '@ecl/grid': 5.0.0-alpha.22.2
-      '@ecl/icon': 5.0.0-alpha.22.2
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/event-manager': 5.0.0-alpha.22.3
+      '@ecl/grid': 5.0.0-alpha.22.3
+      '@ecl/icon': 5.0.0-alpha.22.3
 
-  '@ecl/banner@5.0.0-alpha.22.2(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)':
+  '@ecl/banner@5.0.0-alpha.22.3(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)':
     dependencies:
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/event-manager': 5.0.0-alpha.22.2
-      '@ecl/grid': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
-      '@ecl/mixins-typography': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
-      '@ecl/video': 5.0.0-alpha.22.2
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/event-manager': 5.0.0-alpha.22.3
+      '@ecl/grid': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
+      '@ecl/mixins-typography': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
+      '@ecl/video': 5.0.0-alpha.22.3
 
-  '@ecl/blockquote@5.0.0-alpha.22.2':
+  '@ecl/blockquote@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/mixins-typography': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
+      '@ecl/mixins-typography': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
 
-  '@ecl/breadcrumb@5.0.0-alpha.22.2':
+  '@ecl/breadcrumb@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/icon': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
-      '@ecl/mixins-typography': 5.0.0-alpha.22.2
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/icon': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
+      '@ecl/mixins-typography': 5.0.0-alpha.22.3
 
-  '@ecl/builder@5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))':
+  '@ecl/builder@5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))':
     dependencies:
       '@babel/core': 7.28.5
       '@babel/eslint-parser': 7.28.5(@babel/core@7.28.5)(eslint@9.39.2(jiti@1.21.7))
@@ -13949,107 +13958,107 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/button@5.0.0-alpha.22.2':
+  '@ecl/button@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/icon': 5.0.0-alpha.22.2
-      '@ecl/indicator': 5.0.0-alpha.22.2
+      '@ecl/icon': 5.0.0-alpha.22.3
+      '@ecl/indicator': 5.0.0-alpha.22.3
 
-  '@ecl/card@5.0.0-alpha.22.2':
+  '@ecl/card@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/content-block': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
+      '@ecl/content-block': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
 
-  '@ecl/carousel@5.0.0-alpha.22.2(patch_hash=0971494db7784339e73a151c15c087cab16b7fb9169d6c5d83830abd09427eaa)':
+  '@ecl/carousel@5.0.0-alpha.22.3(patch_hash=0971494db7784339e73a151c15c087cab16b7fb9169d6c5d83830abd09427eaa)':
     dependencies:
-      '@ecl/banner': 5.0.0-alpha.22.2(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
+      '@ecl/banner': 5.0.0-alpha.22.3(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
 
-  '@ecl/category-filter@5.0.0-alpha.22.2':
+  '@ecl/category-filter@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/icon': 5.0.0-alpha.22.2
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/icon': 5.0.0-alpha.22.3
 
-  '@ecl/checkbox@5.0.0-alpha.22.2':
+  '@ecl/checkbox@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/icon': 5.0.0-alpha.22.2
+      '@ecl/icon': 5.0.0-alpha.22.3
 
-  '@ecl/color-modes@5.0.0-alpha.22.2': {}
+  '@ecl/color-modes@5.0.0-alpha.22.3': {}
 
-  '@ecl/content-block@5.0.0-alpha.22.2':
+  '@ecl/content-block@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/description-list': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/icon': 5.0.0-alpha.22.2
-      '@ecl/label': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
-      '@ecl/mixins-typography': 5.0.0-alpha.22.2
+      '@ecl/description-list': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/icon': 5.0.0-alpha.22.3
+      '@ecl/label': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
+      '@ecl/mixins-typography': 5.0.0-alpha.22.3
 
-  '@ecl/content-item@5.0.0-alpha.22.2':
+  '@ecl/content-item@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/content-block': 5.0.0-alpha.22.2
-      '@ecl/date-block': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
+      '@ecl/content-block': 5.0.0-alpha.22.3
+      '@ecl/date-block': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
 
-  '@ecl/date-block@5.0.0-alpha.22.2': {}
+  '@ecl/date-block@5.0.0-alpha.22.3': {}
 
-  '@ecl/datepicker@5.0.0-alpha.22.2': {}
+  '@ecl/datepicker@5.0.0-alpha.22.3': {}
 
-  '@ecl/description-list@5.0.0-alpha.22.2':
+  '@ecl/description-list@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
-      '@ecl/tag': 5.0.0-alpha.22.2
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
+      '@ecl/tag': 5.0.0-alpha.22.3
 
-  '@ecl/dom-utils@5.0.0-alpha.22.2': {}
+  '@ecl/dom-utils@5.0.0-alpha.22.3': {}
 
-  '@ecl/event-manager@5.0.0-alpha.22.2': {}
+  '@ecl/event-manager@5.0.0-alpha.22.3': {}
 
-  '@ecl/expandable@5.0.0-alpha.22.2':
+  '@ecl/expandable@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/event-manager': 5.0.0-alpha.22.2
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/event-manager': 5.0.0-alpha.22.3
 
-  '@ecl/fact-figures@5.0.0-alpha.22.2':
+  '@ecl/fact-figures@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/icon': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
+      '@ecl/icon': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
 
-  '@ecl/featured-item@5.0.0-alpha.22.2':
+  '@ecl/featured-item@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/link': 5.0.0-alpha.22.2
-      '@ecl/media-container': 5.0.0-alpha.22.2
-      '@ecl/mixins-typography': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
+      '@ecl/link': 5.0.0-alpha.22.3
+      '@ecl/media-container': 5.0.0-alpha.22.3
+      '@ecl/mixins-typography': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
 
-  '@ecl/file-upload@5.0.0-alpha.22.2':
+  '@ecl/file-upload@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/event-manager': 5.0.0-alpha.22.2
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/event-manager': 5.0.0-alpha.22.3
 
-  '@ecl/file@5.0.0-alpha.22.2':
+  '@ecl/file@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/description-list': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/icon': 5.0.0-alpha.22.2
-      '@ecl/label': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/description-list': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/icon': 5.0.0-alpha.22.3
+      '@ecl/label': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
 
-  '@ecl/form-group@5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))':
+  '@ecl/form-group@5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))':
     dependencies:
-      '@ecl/checkbox': 5.0.0-alpha.22.2
-      '@ecl/datepicker': 5.0.0-alpha.22.2
-      '@ecl/file-upload': 5.0.0-alpha.22.2
-      '@ecl/icon': 5.0.0-alpha.22.2
-      '@ecl/radio': 5.0.0-alpha.22.2
-      '@ecl/range': 5.0.0-alpha.22.2
-      '@ecl/rating-field': 5.0.0-alpha.22.2
-      '@ecl/select': 5.0.0-alpha.22.2(patch_hash=71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
-      '@ecl/text-area': 5.0.0-alpha.22.2
-      '@ecl/text-input': 5.0.0-alpha.22.2
+      '@ecl/checkbox': 5.0.0-alpha.22.3
+      '@ecl/datepicker': 5.0.0-alpha.22.3
+      '@ecl/file-upload': 5.0.0-alpha.22.3
+      '@ecl/icon': 5.0.0-alpha.22.3
+      '@ecl/radio': 5.0.0-alpha.22.3
+      '@ecl/range': 5.0.0-alpha.22.3
+      '@ecl/rating-field': 5.0.0-alpha.22.3
+      '@ecl/select': 5.0.0-alpha.22.3(patch_hash=71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/text-area': 5.0.0-alpha.22.3
+      '@ecl/text-input': 5.0.0-alpha.22.3
     transitivePeerDependencies:
       - '@types/babel__core'
       - bufferutil
@@ -14058,222 +14067,222 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/gallery@5.0.0-alpha.22.2':
+  '@ecl/gallery@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/icon': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
-      '@ecl/video': 5.0.0-alpha.22.2
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/icon': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
+      '@ecl/video': 5.0.0-alpha.22.3
       focus-trap: 7.6.6
 
-  '@ecl/grid@5.0.0-alpha.22.2': {}
+  '@ecl/grid@5.0.0-alpha.22.3': {}
 
-  '@ecl/icon@5.0.0-alpha.22.2': {}
+  '@ecl/icon@5.0.0-alpha.22.3': {}
 
-  '@ecl/indicator@5.0.0-alpha.22.2': {}
+  '@ecl/indicator@5.0.0-alpha.22.3': {}
 
-  '@ecl/inpage-navigation@5.0.0-alpha.22.2':
+  '@ecl/inpage-navigation@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/event-manager': 5.0.0-alpha.22.2
-      '@ecl/grid': 5.0.0-alpha.22.2
-      '@ecl/icon': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/event-manager': 5.0.0-alpha.22.3
+      '@ecl/grid': 5.0.0-alpha.22.3
+      '@ecl/icon': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
       focus-trap: 7.6.6
       gumshoejs: 5.1.2
       stickyfilljs: 2.1.0
 
-  '@ecl/label@5.0.0-alpha.22.2': {}
+  '@ecl/label@5.0.0-alpha.22.3': {}
 
-  '@ecl/layout-form@5.0.0-alpha.22.2':
+  '@ecl/layout-form@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/grid': 5.0.0-alpha.22.2
+      '@ecl/grid': 5.0.0-alpha.22.3
 
-  '@ecl/link@5.0.0-alpha.22.2':
+  '@ecl/link@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/icon': 5.0.0-alpha.22.2
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/icon': 5.0.0-alpha.22.3
 
-  '@ecl/list-illustration@5.0.0-alpha.22.2':
+  '@ecl/list-illustration@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/icon': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
+      '@ecl/icon': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
 
-  '@ecl/media-container@5.0.0-alpha.22.2':
+  '@ecl/media-container@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/event-manager': 5.0.0-alpha.22.2
-      '@ecl/expandable': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
-      '@ecl/video': 5.0.0-alpha.22.2
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/event-manager': 5.0.0-alpha.22.3
+      '@ecl/expandable': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
+      '@ecl/video': 5.0.0-alpha.22.3
 
-  '@ecl/mega-menu@5.0.0-alpha.22.2(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)':
+  '@ecl/mega-menu@5.0.0-alpha.22.3(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)':
     dependencies:
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/event-manager': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/event-manager': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
       bowser: 2.13.1
       focus-trap: 7.6.6
 
-  '@ecl/menu@5.0.0-alpha.22.2':
+  '@ecl/menu@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/event-manager': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/event-manager': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
       bowser: 2.13.1
       focus-trap: 7.6.6
 
-  '@ecl/mixins-color@5.0.0-alpha.22.2': {}
+  '@ecl/mixins-color@5.0.0-alpha.22.3': {}
 
-  '@ecl/mixins-typography@5.0.0-alpha.22.2':
+  '@ecl/mixins-typography@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/grid': 5.0.0-alpha.22.2
+      '@ecl/grid': 5.0.0-alpha.22.3
 
-  '@ecl/modal@5.0.0-alpha.22.2':
+  '@ecl/modal@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/icon': 5.0.0-alpha.22.2
-      '@ecl/mixins-typography': 5.0.0-alpha.22.2
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/icon': 5.0.0-alpha.22.3
+      '@ecl/mixins-typography': 5.0.0-alpha.22.3
       focus-trap: 7.6.6
 
-  '@ecl/navigation-list@5.0.0-alpha.22.2':
+  '@ecl/navigation-list@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/content-block': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
+      '@ecl/content-block': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
 
-  '@ecl/news-ticker@5.0.0-alpha.22.2':
+  '@ecl/news-ticker@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/icon': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/icon': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
 
-  '@ecl/notification@5.0.0-alpha.22.2':
+  '@ecl/notification@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/event-manager': 5.0.0-alpha.22.2
-      '@ecl/icon': 5.0.0-alpha.22.2
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/event-manager': 5.0.0-alpha.22.3
+      '@ecl/icon': 5.0.0-alpha.22.3
 
-  '@ecl/ordered-list@5.0.0-alpha.22.2': {}
+  '@ecl/ordered-list@5.0.0-alpha.22.3': {}
 
-  '@ecl/page-header@5.0.0-alpha.22.2':
+  '@ecl/page-header@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/breadcrumb': 5.0.0-alpha.22.2
-      '@ecl/grid': 5.0.0-alpha.22.2
-      '@ecl/icon': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
-      '@ecl/list-illustration': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
+      '@ecl/breadcrumb': 5.0.0-alpha.22.3
+      '@ecl/grid': 5.0.0-alpha.22.3
+      '@ecl/icon': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
+      '@ecl/list-illustration': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
 
-  '@ecl/page-information@5.0.0-alpha.22.2': {}
+  '@ecl/page-information@5.0.0-alpha.22.3': {}
 
-  '@ecl/pagination@5.0.0-alpha.22.2':
+  '@ecl/pagination@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/grid': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
+      '@ecl/grid': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
 
-  '@ecl/picture@5.0.0-alpha.22.2': {}
+  '@ecl/picture@5.0.0-alpha.22.3': {}
 
-  '@ecl/popover@5.0.0-alpha.22.2':
+  '@ecl/popover@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/event-manager': 5.0.0-alpha.22.2
-      '@ecl/grid': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/event-manager': 5.0.0-alpha.22.3
+      '@ecl/grid': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
 
-  '@ecl/preset-ec@5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))':
+  '@ecl/preset-ec@5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))':
     dependencies:
-      '@ecl/accordion': 5.0.0-alpha.22.2
-      '@ecl/banner': 5.0.0-alpha.22.2(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
-      '@ecl/blockquote': 5.0.0-alpha.22.2
-      '@ecl/breadcrumb': 5.0.0-alpha.22.2
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/card': 5.0.0-alpha.22.2
-      '@ecl/carousel': 5.0.0-alpha.22.2(patch_hash=0971494db7784339e73a151c15c087cab16b7fb9169d6c5d83830abd09427eaa)
-      '@ecl/category-filter': 5.0.0-alpha.22.2
-      '@ecl/checkbox': 5.0.0-alpha.22.2
-      '@ecl/color-modes': 5.0.0-alpha.22.2
-      '@ecl/content-block': 5.0.0-alpha.22.2
-      '@ecl/content-item': 5.0.0-alpha.22.2
-      '@ecl/date-block': 5.0.0-alpha.22.2
-      '@ecl/datepicker': 5.0.0-alpha.22.2
-      '@ecl/description-list': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/expandable': 5.0.0-alpha.22.2
-      '@ecl/fact-figures': 5.0.0-alpha.22.2
-      '@ecl/featured-item': 5.0.0-alpha.22.2
-      '@ecl/file': 5.0.0-alpha.22.2
-      '@ecl/file-upload': 5.0.0-alpha.22.2
-      '@ecl/form-group': 5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
-      '@ecl/gallery': 5.0.0-alpha.22.2
-      '@ecl/grid': 5.0.0-alpha.22.2
-      '@ecl/icon': 5.0.0-alpha.22.2
-      '@ecl/indicator': 5.0.0-alpha.22.2
-      '@ecl/inpage-navigation': 5.0.0-alpha.22.2
-      '@ecl/label': 5.0.0-alpha.22.2
-      '@ecl/layout-form': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
-      '@ecl/list-illustration': 5.0.0-alpha.22.2
-      '@ecl/media-container': 5.0.0-alpha.22.2
-      '@ecl/mega-menu': 5.0.0-alpha.22.2(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)
-      '@ecl/menu': 5.0.0-alpha.22.2
-      '@ecl/mixins-color': 5.0.0-alpha.22.2
-      '@ecl/mixins-typography': 5.0.0-alpha.22.2
-      '@ecl/modal': 5.0.0-alpha.22.2
-      '@ecl/navigation-list': 5.0.0-alpha.22.2
-      '@ecl/news-ticker': 5.0.0-alpha.22.2
-      '@ecl/notification': 5.0.0-alpha.22.2
-      '@ecl/ordered-list': 5.0.0-alpha.22.2
-      '@ecl/page-header': 5.0.0-alpha.22.2
-      '@ecl/page-information': 5.0.0-alpha.22.2
-      '@ecl/pagination': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
-      '@ecl/popover': 5.0.0-alpha.22.2
-      '@ecl/radio': 5.0.0-alpha.22.2
-      '@ecl/range': 5.0.0-alpha.22.2
-      '@ecl/rating-field': 5.0.0-alpha.22.2
-      '@ecl/search-form': 5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
-      '@ecl/select': 5.0.0-alpha.22.2(patch_hash=71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
-      '@ecl/separator': 5.0.0-alpha.22.2
-      '@ecl/site-footer': 5.0.0-alpha.22.2
-      '@ecl/site-header': 5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
-      '@ecl/skip-link': 5.0.0-alpha.22.2
-      '@ecl/social-media-follow': 5.0.0-alpha.22.2
-      '@ecl/spinner': 5.0.0-alpha.22.2
-      '@ecl/splash-page': 5.0.0-alpha.22.2
-      '@ecl/spotlight': 5.0.0-alpha.22.2
-      '@ecl/table': 5.0.0-alpha.22.2(patch_hash=a2360457d26d7487ebb37094806893f593b21f5d36309c0fec1d110a108b7f77)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
-      '@ecl/tabs': 5.0.0-alpha.22.2(patch_hash=2da6491b1f40429f722e0171484c00aab1abf0623944e03ada8a26c4965aee5a)
-      '@ecl/tag': 5.0.0-alpha.22.2
-      '@ecl/text-area': 5.0.0-alpha.22.2
-      '@ecl/text-input': 5.0.0-alpha.22.2
-      '@ecl/theme-ec': 5.0.0-alpha.22.2
-      '@ecl/timeline': 5.0.0-alpha.22.2
-      '@ecl/unordered-list': 5.0.0-alpha.22.2
-      '@ecl/utility-background': 5.0.0-alpha.22.2
-      '@ecl/utility-border': 5.0.0-alpha.22.2
-      '@ecl/utility-clearfix': 5.0.0-alpha.22.2
-      '@ecl/utility-dimension': 5.0.0-alpha.22.2
-      '@ecl/utility-disablescroll': 5.0.0-alpha.22.2
-      '@ecl/utility-display': 5.0.0-alpha.22.2
-      '@ecl/utility-flex': 5.0.0-alpha.22.2
-      '@ecl/utility-float': 5.0.0-alpha.22.2
-      '@ecl/utility-media': 5.0.0-alpha.22.2
-      '@ecl/utility-print': 5.0.0-alpha.22.2
-      '@ecl/utility-screen-reader': 5.0.0-alpha.22.2
-      '@ecl/utility-shadow': 5.0.0-alpha.22.2
-      '@ecl/utility-spacing': 5.0.0-alpha.22.2
-      '@ecl/utility-typography': 5.0.0-alpha.22.2
-      '@ecl/utility-z-index': 5.0.0-alpha.22.2
-      '@ecl/video': 5.0.0-alpha.22.2
+      '@ecl/accordion': 5.0.0-alpha.22.3
+      '@ecl/banner': 5.0.0-alpha.22.3(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
+      '@ecl/blockquote': 5.0.0-alpha.22.3
+      '@ecl/breadcrumb': 5.0.0-alpha.22.3
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/card': 5.0.0-alpha.22.3
+      '@ecl/carousel': 5.0.0-alpha.22.3(patch_hash=0971494db7784339e73a151c15c087cab16b7fb9169d6c5d83830abd09427eaa)
+      '@ecl/category-filter': 5.0.0-alpha.22.3
+      '@ecl/checkbox': 5.0.0-alpha.22.3
+      '@ecl/color-modes': 5.0.0-alpha.22.3
+      '@ecl/content-block': 5.0.0-alpha.22.3
+      '@ecl/content-item': 5.0.0-alpha.22.3
+      '@ecl/date-block': 5.0.0-alpha.22.3
+      '@ecl/datepicker': 5.0.0-alpha.22.3
+      '@ecl/description-list': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/expandable': 5.0.0-alpha.22.3
+      '@ecl/fact-figures': 5.0.0-alpha.22.3
+      '@ecl/featured-item': 5.0.0-alpha.22.3
+      '@ecl/file': 5.0.0-alpha.22.3
+      '@ecl/file-upload': 5.0.0-alpha.22.3
+      '@ecl/form-group': 5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/gallery': 5.0.0-alpha.22.3
+      '@ecl/grid': 5.0.0-alpha.22.3
+      '@ecl/icon': 5.0.0-alpha.22.3
+      '@ecl/indicator': 5.0.0-alpha.22.3
+      '@ecl/inpage-navigation': 5.0.0-alpha.22.3
+      '@ecl/label': 5.0.0-alpha.22.3
+      '@ecl/layout-form': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
+      '@ecl/list-illustration': 5.0.0-alpha.22.3
+      '@ecl/media-container': 5.0.0-alpha.22.3
+      '@ecl/mega-menu': 5.0.0-alpha.22.3(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)
+      '@ecl/menu': 5.0.0-alpha.22.3
+      '@ecl/mixins-color': 5.0.0-alpha.22.3
+      '@ecl/mixins-typography': 5.0.0-alpha.22.3
+      '@ecl/modal': 5.0.0-alpha.22.3
+      '@ecl/navigation-list': 5.0.0-alpha.22.3
+      '@ecl/news-ticker': 5.0.0-alpha.22.3
+      '@ecl/notification': 5.0.0-alpha.22.3
+      '@ecl/ordered-list': 5.0.0-alpha.22.3
+      '@ecl/page-header': 5.0.0-alpha.22.3
+      '@ecl/page-information': 5.0.0-alpha.22.3
+      '@ecl/pagination': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
+      '@ecl/popover': 5.0.0-alpha.22.3
+      '@ecl/radio': 5.0.0-alpha.22.3
+      '@ecl/range': 5.0.0-alpha.22.3
+      '@ecl/rating-field': 5.0.0-alpha.22.3
+      '@ecl/search-form': 5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/select': 5.0.0-alpha.22.3(patch_hash=71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/separator': 5.0.0-alpha.22.3
+      '@ecl/site-footer': 5.0.0-alpha.22.3
+      '@ecl/site-header': 5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/skip-link': 5.0.0-alpha.22.3
+      '@ecl/social-media-follow': 5.0.0-alpha.22.3
+      '@ecl/spinner': 5.0.0-alpha.22.3
+      '@ecl/splash-page': 5.0.0-alpha.22.3
+      '@ecl/spotlight': 5.0.0-alpha.22.3
+      '@ecl/table': 5.0.0-alpha.22.3(patch_hash=a2360457d26d7487ebb37094806893f593b21f5d36309c0fec1d110a108b7f77)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/tabs': 5.0.0-alpha.22.3(patch_hash=2da6491b1f40429f722e0171484c00aab1abf0623944e03ada8a26c4965aee5a)
+      '@ecl/tag': 5.0.0-alpha.22.3
+      '@ecl/text-area': 5.0.0-alpha.22.3
+      '@ecl/text-input': 5.0.0-alpha.22.3
+      '@ecl/theme-ec': 5.0.0-alpha.22.3
+      '@ecl/timeline': 5.0.0-alpha.22.3
+      '@ecl/unordered-list': 5.0.0-alpha.22.3
+      '@ecl/utility-background': 5.0.0-alpha.22.3
+      '@ecl/utility-border': 5.0.0-alpha.22.3
+      '@ecl/utility-clearfix': 5.0.0-alpha.22.3
+      '@ecl/utility-dimension': 5.0.0-alpha.22.3
+      '@ecl/utility-disablescroll': 5.0.0-alpha.22.3
+      '@ecl/utility-display': 5.0.0-alpha.22.3
+      '@ecl/utility-flex': 5.0.0-alpha.22.3
+      '@ecl/utility-float': 5.0.0-alpha.22.3
+      '@ecl/utility-media': 5.0.0-alpha.22.3
+      '@ecl/utility-print': 5.0.0-alpha.22.3
+      '@ecl/utility-screen-reader': 5.0.0-alpha.22.3
+      '@ecl/utility-shadow': 5.0.0-alpha.22.3
+      '@ecl/utility-spacing': 5.0.0-alpha.22.3
+      '@ecl/utility-typography': 5.0.0-alpha.22.3
+      '@ecl/utility-z-index': 5.0.0-alpha.22.3
+      '@ecl/video': 5.0.0-alpha.22.3
       normalize.css: 8.0.1
     transitivePeerDependencies:
       - '@types/babel__core'
@@ -14283,90 +14292,90 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/preset-eu@5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))':
+  '@ecl/preset-eu@5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))':
     dependencies:
-      '@ecl/accordion': 5.0.0-alpha.22.2
-      '@ecl/banner': 5.0.0-alpha.22.2(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
-      '@ecl/blockquote': 5.0.0-alpha.22.2
-      '@ecl/breadcrumb': 5.0.0-alpha.22.2
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/card': 5.0.0-alpha.22.2
-      '@ecl/carousel': 5.0.0-alpha.22.2(patch_hash=0971494db7784339e73a151c15c087cab16b7fb9169d6c5d83830abd09427eaa)
-      '@ecl/category-filter': 5.0.0-alpha.22.2
-      '@ecl/checkbox': 5.0.0-alpha.22.2
-      '@ecl/content-block': 5.0.0-alpha.22.2
-      '@ecl/content-item': 5.0.0-alpha.22.2
-      '@ecl/date-block': 5.0.0-alpha.22.2
-      '@ecl/datepicker': 5.0.0-alpha.22.2
-      '@ecl/description-list': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/expandable': 5.0.0-alpha.22.2
-      '@ecl/fact-figures': 5.0.0-alpha.22.2
-      '@ecl/featured-item': 5.0.0-alpha.22.2
-      '@ecl/file': 5.0.0-alpha.22.2
-      '@ecl/file-upload': 5.0.0-alpha.22.2
-      '@ecl/form-group': 5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
-      '@ecl/gallery': 5.0.0-alpha.22.2
-      '@ecl/grid': 5.0.0-alpha.22.2
-      '@ecl/icon': 5.0.0-alpha.22.2
-      '@ecl/indicator': 5.0.0-alpha.22.2
-      '@ecl/inpage-navigation': 5.0.0-alpha.22.2
-      '@ecl/label': 5.0.0-alpha.22.2
-      '@ecl/layout-form': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
-      '@ecl/list-illustration': 5.0.0-alpha.22.2
-      '@ecl/media-container': 5.0.0-alpha.22.2
-      '@ecl/mega-menu': 5.0.0-alpha.22.2(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)
-      '@ecl/menu': 5.0.0-alpha.22.2
-      '@ecl/mixins-color': 5.0.0-alpha.22.2
-      '@ecl/mixins-typography': 5.0.0-alpha.22.2
-      '@ecl/modal': 5.0.0-alpha.22.2
-      '@ecl/navigation-list': 5.0.0-alpha.22.2
-      '@ecl/news-ticker': 5.0.0-alpha.22.2
-      '@ecl/notification': 5.0.0-alpha.22.2
-      '@ecl/ordered-list': 5.0.0-alpha.22.2
-      '@ecl/page-header': 5.0.0-alpha.22.2
-      '@ecl/page-information': 5.0.0-alpha.22.2
-      '@ecl/pagination': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
-      '@ecl/popover': 5.0.0-alpha.22.2
-      '@ecl/radio': 5.0.0-alpha.22.2
-      '@ecl/range': 5.0.0-alpha.22.2
-      '@ecl/rating-field': 5.0.0-alpha.22.2
-      '@ecl/search-form': 5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
-      '@ecl/select': 5.0.0-alpha.22.2(patch_hash=71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
-      '@ecl/separator': 5.0.0-alpha.22.2
-      '@ecl/site-footer': 5.0.0-alpha.22.2
-      '@ecl/site-header': 5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
-      '@ecl/skip-link': 5.0.0-alpha.22.2
-      '@ecl/social-media-follow': 5.0.0-alpha.22.2
-      '@ecl/spinner': 5.0.0-alpha.22.2
-      '@ecl/splash-page': 5.0.0-alpha.22.2
-      '@ecl/spotlight': 5.0.0-alpha.22.2
-      '@ecl/table': 5.0.0-alpha.22.2(patch_hash=a2360457d26d7487ebb37094806893f593b21f5d36309c0fec1d110a108b7f77)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
-      '@ecl/tabs': 5.0.0-alpha.22.2(patch_hash=2da6491b1f40429f722e0171484c00aab1abf0623944e03ada8a26c4965aee5a)
-      '@ecl/tag': 5.0.0-alpha.22.2
-      '@ecl/text-area': 5.0.0-alpha.22.2
-      '@ecl/text-input': 5.0.0-alpha.22.2
-      '@ecl/theme-ec': 5.0.0-alpha.22.2
-      '@ecl/timeline': 5.0.0-alpha.22.2
-      '@ecl/unordered-list': 5.0.0-alpha.22.2
-      '@ecl/utility-background': 5.0.0-alpha.22.2
-      '@ecl/utility-border': 5.0.0-alpha.22.2
-      '@ecl/utility-clearfix': 5.0.0-alpha.22.2
-      '@ecl/utility-dimension': 5.0.0-alpha.22.2
-      '@ecl/utility-disablescroll': 5.0.0-alpha.22.2
-      '@ecl/utility-display': 5.0.0-alpha.22.2
-      '@ecl/utility-flex': 5.0.0-alpha.22.2
-      '@ecl/utility-float': 5.0.0-alpha.22.2
-      '@ecl/utility-media': 5.0.0-alpha.22.2
-      '@ecl/utility-print': 5.0.0-alpha.22.2
-      '@ecl/utility-screen-reader': 5.0.0-alpha.22.2
-      '@ecl/utility-shadow': 5.0.0-alpha.22.2
-      '@ecl/utility-spacing': 5.0.0-alpha.22.2
-      '@ecl/utility-typography': 5.0.0-alpha.22.2
-      '@ecl/utility-z-index': 5.0.0-alpha.22.2
-      '@ecl/video': 5.0.0-alpha.22.2
+      '@ecl/accordion': 5.0.0-alpha.22.3
+      '@ecl/banner': 5.0.0-alpha.22.3(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
+      '@ecl/blockquote': 5.0.0-alpha.22.3
+      '@ecl/breadcrumb': 5.0.0-alpha.22.3
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/card': 5.0.0-alpha.22.3
+      '@ecl/carousel': 5.0.0-alpha.22.3(patch_hash=0971494db7784339e73a151c15c087cab16b7fb9169d6c5d83830abd09427eaa)
+      '@ecl/category-filter': 5.0.0-alpha.22.3
+      '@ecl/checkbox': 5.0.0-alpha.22.3
+      '@ecl/content-block': 5.0.0-alpha.22.3
+      '@ecl/content-item': 5.0.0-alpha.22.3
+      '@ecl/date-block': 5.0.0-alpha.22.3
+      '@ecl/datepicker': 5.0.0-alpha.22.3
+      '@ecl/description-list': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/expandable': 5.0.0-alpha.22.3
+      '@ecl/fact-figures': 5.0.0-alpha.22.3
+      '@ecl/featured-item': 5.0.0-alpha.22.3
+      '@ecl/file': 5.0.0-alpha.22.3
+      '@ecl/file-upload': 5.0.0-alpha.22.3
+      '@ecl/form-group': 5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/gallery': 5.0.0-alpha.22.3
+      '@ecl/grid': 5.0.0-alpha.22.3
+      '@ecl/icon': 5.0.0-alpha.22.3
+      '@ecl/indicator': 5.0.0-alpha.22.3
+      '@ecl/inpage-navigation': 5.0.0-alpha.22.3
+      '@ecl/label': 5.0.0-alpha.22.3
+      '@ecl/layout-form': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
+      '@ecl/list-illustration': 5.0.0-alpha.22.3
+      '@ecl/media-container': 5.0.0-alpha.22.3
+      '@ecl/mega-menu': 5.0.0-alpha.22.3(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)
+      '@ecl/menu': 5.0.0-alpha.22.3
+      '@ecl/mixins-color': 5.0.0-alpha.22.3
+      '@ecl/mixins-typography': 5.0.0-alpha.22.3
+      '@ecl/modal': 5.0.0-alpha.22.3
+      '@ecl/navigation-list': 5.0.0-alpha.22.3
+      '@ecl/news-ticker': 5.0.0-alpha.22.3
+      '@ecl/notification': 5.0.0-alpha.22.3
+      '@ecl/ordered-list': 5.0.0-alpha.22.3
+      '@ecl/page-header': 5.0.0-alpha.22.3
+      '@ecl/page-information': 5.0.0-alpha.22.3
+      '@ecl/pagination': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
+      '@ecl/popover': 5.0.0-alpha.22.3
+      '@ecl/radio': 5.0.0-alpha.22.3
+      '@ecl/range': 5.0.0-alpha.22.3
+      '@ecl/rating-field': 5.0.0-alpha.22.3
+      '@ecl/search-form': 5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/select': 5.0.0-alpha.22.3(patch_hash=71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/separator': 5.0.0-alpha.22.3
+      '@ecl/site-footer': 5.0.0-alpha.22.3
+      '@ecl/site-header': 5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/skip-link': 5.0.0-alpha.22.3
+      '@ecl/social-media-follow': 5.0.0-alpha.22.3
+      '@ecl/spinner': 5.0.0-alpha.22.3
+      '@ecl/splash-page': 5.0.0-alpha.22.3
+      '@ecl/spotlight': 5.0.0-alpha.22.3
+      '@ecl/table': 5.0.0-alpha.22.3(patch_hash=a2360457d26d7487ebb37094806893f593b21f5d36309c0fec1d110a108b7f77)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/tabs': 5.0.0-alpha.22.3(patch_hash=2da6491b1f40429f722e0171484c00aab1abf0623944e03ada8a26c4965aee5a)
+      '@ecl/tag': 5.0.0-alpha.22.3
+      '@ecl/text-area': 5.0.0-alpha.22.3
+      '@ecl/text-input': 5.0.0-alpha.22.3
+      '@ecl/theme-ec': 5.0.0-alpha.22.3
+      '@ecl/timeline': 5.0.0-alpha.22.3
+      '@ecl/unordered-list': 5.0.0-alpha.22.3
+      '@ecl/utility-background': 5.0.0-alpha.22.3
+      '@ecl/utility-border': 5.0.0-alpha.22.3
+      '@ecl/utility-clearfix': 5.0.0-alpha.22.3
+      '@ecl/utility-dimension': 5.0.0-alpha.22.3
+      '@ecl/utility-disablescroll': 5.0.0-alpha.22.3
+      '@ecl/utility-display': 5.0.0-alpha.22.3
+      '@ecl/utility-flex': 5.0.0-alpha.22.3
+      '@ecl/utility-float': 5.0.0-alpha.22.3
+      '@ecl/utility-media': 5.0.0-alpha.22.3
+      '@ecl/utility-print': 5.0.0-alpha.22.3
+      '@ecl/utility-screen-reader': 5.0.0-alpha.22.3
+      '@ecl/utility-shadow': 5.0.0-alpha.22.3
+      '@ecl/utility-spacing': 5.0.0-alpha.22.3
+      '@ecl/utility-typography': 5.0.0-alpha.22.3
+      '@ecl/utility-z-index': 5.0.0-alpha.22.3
+      '@ecl/video': 5.0.0-alpha.22.3
       normalize.css: 8.0.1
     transitivePeerDependencies:
       - '@types/babel__core'
@@ -14376,27 +14385,27 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/radio@5.0.0-alpha.22.2': {}
+  '@ecl/radio@5.0.0-alpha.22.3': {}
 
-  '@ecl/range@5.0.0-alpha.22.2':
+  '@ecl/range@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/layout-form': 5.0.0-alpha.22.2
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/layout-form': 5.0.0-alpha.22.3
 
-  '@ecl/rating-field@5.0.0-alpha.22.2':
+  '@ecl/rating-field@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/icon': 5.0.0-alpha.22.2
+      '@ecl/icon': 5.0.0-alpha.22.3
 
-  '@ecl/resources-ec-logo@5.0.0-alpha.22.2': {}
+  '@ecl/resources-ec-logo@5.0.0-alpha.22.3': {}
 
-  '@ecl/resources-eu-logo@5.0.0-alpha.22.2': {}
+  '@ecl/resources-eu-logo@5.0.0-alpha.22.3': {}
 
-  '@ecl/resources-icons@5.0.0-alpha.22.2': {}
+  '@ecl/resources-icons@5.0.0-alpha.22.3': {}
 
-  '@ecl/search-form@5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))':
+  '@ecl/search-form@5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))':
     dependencies:
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/form-group': 5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/form-group': 5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
     transitivePeerDependencies:
       - '@types/babel__core'
       - bufferutil
@@ -14405,13 +14414,13 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/select@5.0.0-alpha.22.2(patch_hash=71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))':
+  '@ecl/select@5.0.0-alpha.22.3(patch_hash=71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))':
     dependencies:
-      '@ecl/builder': 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/event-manager': 5.0.0-alpha.22.2
-      '@ecl/layout-form': 5.0.0-alpha.22.2
+      '@ecl/builder': 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/event-manager': 5.0.0-alpha.22.3
+      '@ecl/layout-form': 5.0.0-alpha.22.3
     transitivePeerDependencies:
       - '@types/babel__core'
       - bufferutil
@@ -14420,26 +14429,26 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/separator@5.0.0-alpha.22.2': {}
+  '@ecl/separator@5.0.0-alpha.22.3': {}
 
-  '@ecl/site-footer@5.0.0-alpha.22.2':
+  '@ecl/site-footer@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/link': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
-      '@ecl/social-media-follow': 5.0.0-alpha.22.2
+      '@ecl/link': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
+      '@ecl/social-media-follow': 5.0.0-alpha.22.3
 
-  '@ecl/site-header@5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))':
+  '@ecl/site-header@5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))':
     dependencies:
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/grid': 5.0.0-alpha.22.2
-      '@ecl/icon': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
-      '@ecl/menu': 5.0.0-alpha.22.2
-      '@ecl/mixins-typography': 5.0.0-alpha.22.2
-      '@ecl/notification': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
-      '@ecl/search-form': 5.0.0-alpha.22.2(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/grid': 5.0.0-alpha.22.3
+      '@ecl/icon': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
+      '@ecl/menu': 5.0.0-alpha.22.3
+      '@ecl/mixins-typography': 5.0.0-alpha.22.3
+      '@ecl/notification': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
+      '@ecl/search-form': 5.0.0-alpha.22.3(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       focus-trap: 7.6.6
     transitivePeerDependencies:
       - '@types/babel__core'
@@ -14449,35 +14458,35 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/skip-link@5.0.0-alpha.22.2':
+  '@ecl/skip-link@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/link': 5.0.0-alpha.22.2
-      '@ecl/utility-screen-reader': 5.0.0-alpha.22.2
+      '@ecl/link': 5.0.0-alpha.22.3
+      '@ecl/utility-screen-reader': 5.0.0-alpha.22.3
 
-  '@ecl/social-media-follow@5.0.0-alpha.22.2':
+  '@ecl/social-media-follow@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/link': 5.0.0-alpha.22.2
+      '@ecl/link': 5.0.0-alpha.22.3
 
-  '@ecl/spinner@5.0.0-alpha.22.2': {}
+  '@ecl/spinner@5.0.0-alpha.22.3': {}
 
-  '@ecl/splash-page@5.0.0-alpha.22.2':
+  '@ecl/splash-page@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/link': 5.0.0-alpha.22.2
-      '@ecl/mixins-typography': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
+      '@ecl/link': 5.0.0-alpha.22.3
+      '@ecl/mixins-typography': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
 
-  '@ecl/spotlight@5.0.0-alpha.22.2':
+  '@ecl/spotlight@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/grid': 5.0.0-alpha.22.2
-      '@ecl/mixins-typography': 5.0.0-alpha.22.2
-      '@ecl/picture': 5.0.0-alpha.22.2
+      '@ecl/grid': 5.0.0-alpha.22.3
+      '@ecl/mixins-typography': 5.0.0-alpha.22.3
+      '@ecl/picture': 5.0.0-alpha.22.3
 
-  '@ecl/table@5.0.0-alpha.22.2(patch_hash=a2360457d26d7487ebb37094806893f593b21f5d36309c0fec1d110a108b7f77)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))':
+  '@ecl/table@5.0.0-alpha.22.3(patch_hash=a2360457d26d7487ebb37094806893f593b21f5d36309c0fec1d110a108b7f77)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))':
     dependencies:
-      '@ecl/builder': 5.0.0-alpha.22.2(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/grid': 5.0.0-alpha.22.2
-      '@ecl/mixins-typography': 5.0.0-alpha.22.2
+      '@ecl/builder': 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/grid': 5.0.0-alpha.22.3
+      '@ecl/mixins-typography': 5.0.0-alpha.22.3
     transitivePeerDependencies:
       - '@types/babel__core'
       - bufferutil
@@ -14486,84 +14495,84 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/tabs@5.0.0-alpha.22.2(patch_hash=2da6491b1f40429f722e0171484c00aab1abf0623944e03ada8a26c4965aee5a)':
+  '@ecl/tabs@5.0.0-alpha.22.3(patch_hash=2da6491b1f40429f722e0171484c00aab1abf0623944e03ada8a26c4965aee5a)':
     dependencies:
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/event-manager': 5.0.0-alpha.22.2
-      '@ecl/grid': 5.0.0-alpha.22.2
-      '@ecl/link': 5.0.0-alpha.22.2
-      '@ecl/utility-screen-reader': 5.0.0-alpha.22.2
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/event-manager': 5.0.0-alpha.22.3
+      '@ecl/grid': 5.0.0-alpha.22.3
+      '@ecl/link': 5.0.0-alpha.22.3
+      '@ecl/utility-screen-reader': 5.0.0-alpha.22.3
 
-  '@ecl/tag@5.0.0-alpha.22.2':
+  '@ecl/tag@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/icon': 5.0.0-alpha.22.2
+      '@ecl/icon': 5.0.0-alpha.22.3
 
-  '@ecl/text-area@5.0.0-alpha.22.2': {}
+  '@ecl/text-area@5.0.0-alpha.22.3': {}
 
-  '@ecl/text-input@5.0.0-alpha.22.2': {}
+  '@ecl/text-input@5.0.0-alpha.22.3': {}
 
-  '@ecl/theme-ec@5.0.0-alpha.22.2': {}
+  '@ecl/theme-ec@5.0.0-alpha.22.3': {}
 
-  '@ecl/theme-eu@5.0.0-alpha.22.2': {}
+  '@ecl/theme-eu@5.0.0-alpha.22.3': {}
 
-  '@ecl/timeline@5.0.0-alpha.22.2':
+  '@ecl/timeline@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/button': 5.0.0-alpha.22.2
-      '@ecl/dom-utils': 5.0.0-alpha.22.2
-      '@ecl/grid': 5.0.0-alpha.22.2
-      '@ecl/mixins-typography': 5.0.0-alpha.22.2
+      '@ecl/button': 5.0.0-alpha.22.3
+      '@ecl/dom-utils': 5.0.0-alpha.22.3
+      '@ecl/grid': 5.0.0-alpha.22.3
+      '@ecl/mixins-typography': 5.0.0-alpha.22.3
 
-  '@ecl/unordered-list@5.0.0-alpha.22.2': {}
+  '@ecl/unordered-list@5.0.0-alpha.22.3': {}
 
-  '@ecl/utility-background@5.0.0-alpha.22.2':
+  '@ecl/utility-background@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/mixins-color': 5.0.0-alpha.22.2
+      '@ecl/mixins-color': 5.0.0-alpha.22.3
 
-  '@ecl/utility-border@5.0.0-alpha.22.2':
+  '@ecl/utility-border@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/grid': 5.0.0-alpha.22.2
-      '@ecl/mixins-color': 5.0.0-alpha.22.2
+      '@ecl/grid': 5.0.0-alpha.22.3
+      '@ecl/mixins-color': 5.0.0-alpha.22.3
 
-  '@ecl/utility-clearfix@5.0.0-alpha.22.2': {}
+  '@ecl/utility-clearfix@5.0.0-alpha.22.3': {}
 
-  '@ecl/utility-dimension@5.0.0-alpha.22.2': {}
+  '@ecl/utility-dimension@5.0.0-alpha.22.3': {}
 
-  '@ecl/utility-disablescroll@5.0.0-alpha.22.2': {}
+  '@ecl/utility-disablescroll@5.0.0-alpha.22.3': {}
 
-  '@ecl/utility-display@5.0.0-alpha.22.2':
+  '@ecl/utility-display@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/grid': 5.0.0-alpha.22.2
+      '@ecl/grid': 5.0.0-alpha.22.3
 
-  '@ecl/utility-flex@5.0.0-alpha.22.2':
+  '@ecl/utility-flex@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/grid': 5.0.0-alpha.22.2
+      '@ecl/grid': 5.0.0-alpha.22.3
 
-  '@ecl/utility-float@5.0.0-alpha.22.2': {}
+  '@ecl/utility-float@5.0.0-alpha.22.3': {}
 
-  '@ecl/utility-media@5.0.0-alpha.22.2':
+  '@ecl/utility-media@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/grid': 5.0.0-alpha.22.2
+      '@ecl/grid': 5.0.0-alpha.22.3
 
-  '@ecl/utility-print@5.0.0-alpha.22.2': {}
+  '@ecl/utility-print@5.0.0-alpha.22.3': {}
 
-  '@ecl/utility-screen-reader@5.0.0-alpha.22.2': {}
+  '@ecl/utility-screen-reader@5.0.0-alpha.22.3': {}
 
-  '@ecl/utility-shadow@5.0.0-alpha.22.2': {}
+  '@ecl/utility-shadow@5.0.0-alpha.22.3': {}
 
-  '@ecl/utility-spacing@5.0.0-alpha.22.2':
+  '@ecl/utility-spacing@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/grid': 5.0.0-alpha.22.2
+      '@ecl/grid': 5.0.0-alpha.22.3
 
-  '@ecl/utility-typography@5.0.0-alpha.22.2':
+  '@ecl/utility-typography@5.0.0-alpha.22.3':
     dependencies:
-      '@ecl/grid': 5.0.0-alpha.22.2
-      '@ecl/mixins-color': 5.0.0-alpha.22.2
-      '@ecl/mixins-typography': 5.0.0-alpha.22.2
+      '@ecl/grid': 5.0.0-alpha.22.3
+      '@ecl/mixins-color': 5.0.0-alpha.22.3
+      '@ecl/mixins-typography': 5.0.0-alpha.22.3
 
-  '@ecl/utility-z-index@5.0.0-alpha.22.2': {}
+  '@ecl/utility-z-index@5.0.0-alpha.22.3': {}
 
-  '@ecl/video@5.0.0-alpha.22.2': {}
+  '@ecl/video@5.0.0-alpha.22.3': {}
 
   '@emnapi/core@1.8.1':
     dependencies:
@@ -16080,7 +16089,7 @@ snapshots:
   '@rollup/plugin-babel@6.1.0(@babel/core@7.28.5)(@types/babel__core@7.20.5)(rollup@4.53.3)':
     dependencies:
       '@babel/core': 7.28.5
-      '@babel/helper-module-imports': 7.27.1
+      '@babel/helper-module-imports': 7.28.6
       '@rollup/pluginutils': 5.3.0(rollup@4.53.3)
     optionalDependencies:
       '@types/babel__core': 7.20.5
@@ -17426,8 +17435,8 @@ snapshots:
 
   babel-plugin-jest-hoist@28.1.3:
     dependencies:
-      '@babel/template': 7.27.2
-      '@babel/types': 7.28.5
+      '@babel/template': 7.28.6
+      '@babel/types': 7.28.6
       '@types/babel__core': 7.20.5
       '@types/babel__traverse': 7.28.0
 
@@ -22002,7 +22011,7 @@ snapshots:
 
   parse-json@5.2.0:
     dependencies:
-      '@babel/code-frame': 7.27.1
+      '@babel/code-frame': 7.28.6
       error-ex: 1.3.4
       json-parse-even-better-errors: 2.3.1
       lines-and-columns: 1.2.4
