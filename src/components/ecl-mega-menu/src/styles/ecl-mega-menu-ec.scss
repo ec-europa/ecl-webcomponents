@@ -85,18 +85,18 @@ ecl-mega-menu-item {
   }
 }
 
-.ecl-mega-menu--two-panels .ecl-mega-menu__subitem--expanded .ecl-mega-menu__sublink.ecl-mega-menu__parent-link::after {
-  background: var(--cm-surface-neutral-lowest);
-  content: ' ';
-  display: block;
-  height: var(--s-xl);
-  left: 0;
-  position: absolute;
-  top: 100%;
-  width: 100vw;
-}
-
 @media (width < 1140px) {
+  .ecl-mega-menu--two-panels .ecl-mega-menu__subitem--expanded .ecl-mega-menu__sublink.ecl-mega-menu__parent-link::after {
+    background: var(--cm-surface-neutral-lowest);
+    content: ' ';
+    display: block;
+    height: var(--s-xl);
+    left: 0;
+    position: absolute;
+    top: 100%;
+    width: 100vw;
+  }
+
   .ecl-mega-menu--two-panels .ecl-mega-menu__subitem--expanded .ecl-mega-menu__sublink.ecl-mega-menu__parent-link {
     background-color: var(--cm-surface-neutral-lowest);
     display: flex;

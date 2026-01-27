@@ -27,6 +27,16 @@ export class EclMegaMenu {
   }
 
   componentDidLoad() {
+    const subLists = this.el.querySelectorAll('.ecl-mega-menu__sublist');
+
+    if (subLists) {
+      [...subLists].forEach((list) => {
+        const items = list.querySelectorAll('.ecl-mega-menu__sublink');
+        const lastItem = items[items.length - 1];
+        lastItem.classList.add('ecl-mega-menu__sublink--last');
+      });
+    }
+
     if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       const megaMenu = new MegaMenu(this.el.firstElementChild);

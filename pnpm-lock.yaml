@@ -25,7 +25,7 @@ patchedDependencies:
     hash: 0971494db7784339e73a151c15c087cab16b7fb9169d6c5d83830abd09427eaa
     path: patches/@ecl__carousel.patch
   '@ecl/mega-menu':
-    hash: 2c07f0ba291c4b00c1da3dec159ceada3d19ff0dc4e2746b23f3b1a10c4d7a53
+    hash: 8a8ae004b4ee4ceaf8de860473205ca7006813b3af91ef7a5e8b5097fd57bc63
     path: patches/@ecl__mega-menu.patch
   '@ecl/select':
     hash: 71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076
@@ -1326,7 +1326,7 @@ importers:
         version: 5.0.0-alpha.22.2
       '@ecl/mega-menu':
         specifier: 5.0.0-alpha.22.2
-        version: 5.0.0-alpha.22.2(patch_hash=2c07f0ba291c4b00c1da3dec159ceada3d19ff0dc4e2746b23f3b1a10c4d7a53)
+        version: 5.0.0-alpha.22.2(patch_hash=8a8ae004b4ee4ceaf8de860473205ca7006813b3af91ef7a5e8b5097fd57bc63)
       '@ecl/mixins-typography':
         specifier: 5.0.0-alpha.22.2
         version: 5.0.0-alpha.22.2
@@ -14109,7 +14109,7 @@ snapshots:
       '@ecl/picture': 5.0.0-alpha.22.2
       '@ecl/video': 5.0.0-alpha.22.2
 
-  '@ecl/mega-menu@5.0.0-alpha.22.2(patch_hash=2c07f0ba291c4b00c1da3dec159ceada3d19ff0dc4e2746b23f3b1a10c4d7a53)':
+  '@ecl/mega-menu@5.0.0-alpha.22.2(patch_hash=8a8ae004b4ee4ceaf8de860473205ca7006813b3af91ef7a5e8b5097fd57bc63)':
     dependencies:
       '@ecl/button': 5.0.0-alpha.22.2
       '@ecl/dom-utils': 5.0.0-alpha.22.2
@@ -14223,7 +14223,7 @@ snapshots:
       '@ecl/link': 5.0.0-alpha.22.2
       '@ecl/list-illustration': 5.0.0-alpha.22.2
       '@ecl/media-container': 5.0.0-alpha.22.2
-      '@ecl/mega-menu': 5.0.0-alpha.22.2(patch_hash=2c07f0ba291c4b00c1da3dec159ceada3d19ff0dc4e2746b23f3b1a10c4d7a53)
+      '@ecl/mega-menu': 5.0.0-alpha.22.2(patch_hash=8a8ae004b4ee4ceaf8de860473205ca7006813b3af91ef7a5e8b5097fd57bc63)
       '@ecl/menu': 5.0.0-alpha.22.2
       '@ecl/mixins-color': 5.0.0-alpha.22.2
       '@ecl/mixins-typography': 5.0.0-alpha.22.2
@@ -14316,7 +14316,7 @@ snapshots:
       '@ecl/link': 5.0.0-alpha.22.2
       '@ecl/list-illustration': 5.0.0-alpha.22.2
       '@ecl/media-container': 5.0.0-alpha.22.2
-      '@ecl/mega-menu': 5.0.0-alpha.22.2(patch_hash=2c07f0ba291c4b00c1da3dec159ceada3d19ff0dc4e2746b23f3b1a10c4d7a53)
+      '@ecl/mega-menu': 5.0.0-alpha.22.2(patch_hash=8a8ae004b4ee4ceaf8de860473205ca7006813b3af91ef7a5e8b5097fd57bc63)
       '@ecl/menu': 5.0.0-alpha.22.2
       '@ecl/mixins-color': 5.0.0-alpha.22.2
       '@ecl/mixins-typography': 5.0.0-alpha.22.2

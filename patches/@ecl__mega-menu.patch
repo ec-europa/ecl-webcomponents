@@ -1,19 +1,55 @@
 diff --git a/mega-menu.js b/mega-menu.js
-index 5d87032d4a96bb608cd008ad6b28a8613422d76c..ee0bbcbae114d7d11f2d1b3196f66f7445d871fa 100644
+index 5d87032d4a96bb608cd008ad6b28a8613422d76c..0100eab3537aeb27dc606ef03059d8f0277c3fe4 100644
 --- a/mega-menu.js
 +++ b/mega-menu.js
-@@ -556,7 +556,9 @@ export class MegaMenu {
+@@ -544,8 +544,8 @@ export class MegaMenu {
+         }
+         const menuItem = this.openPanel.item;
+         // Hide siblings
+-        const siblings = menuItem.parentNode.childNodes;
+-        siblings.forEach((sibling) => {
++        const siblings = menuItem.parentNode.children;
++        [...siblings].forEach((sibling) => {
+           if (sibling !== menuItem) {
+             sibling.style.display = 'none';
+           }
+@@ -555,7 +555,7 @@ export class MegaMenu {
+       // Reset styles for the sublist and subitems
        subLists.forEach((list) => {
          list.classList.remove('ecl-mega-menu__sublist--scrollable');
-         list.childNodes.forEach((item) => {
--          item.style.display = '';
-+          if (item.style) {
-+            item.style.display = '';
-+          }
+-        list.childNodes.forEach((item) => {
++        [...list.children].forEach((item) => {
+           item.style.display = '';
          });
        });
+@@ -743,7 +743,7 @@ export class MegaMenu {
+                 .classList.contains('ecl-mega-menu__item--one-level-only')
+             ) {
+               if (items.length > 0) {
+-                Array.from(items).forEach((item) => {
++                [...items].forEach((item) => {
+                   itemsHeight += item.getBoundingClientRect().height;
+                 });
+               }
+@@ -761,7 +761,7 @@ export class MegaMenu {
+           );
+           if (featuredPanelFirst) {
+             // Get the elements inside the scrollable container and calculate their heights.
+-            Array.from(featuredPanelFirst.firstElementChild.children).forEach(
++            [...featuredPanelFirst.firstElementChild.children].forEach(
+               (child) => {
+                 const elStyle = window.getComputedStyle(child);
  
-@@ -836,7 +838,7 @@ export class MegaMenu {
+@@ -790,7 +790,7 @@ export class MegaMenu {
+           featuredPanel = queryOne('.ecl-mega-menu__featured', expanded);
+           if (featuredPanel) {
+             // Get the elements inside the scrollable container and calculate their heights.
+-            Array.from(featuredPanel.firstElementChild.children).forEach(
++            [...featuredPanel.firstElementChild.children].forEach(
+               (child) => {
+                 const elStyle = window.getComputedStyle(child);
+                 const marginHeight =
+@@ -836,7 +836,7 @@ export class MegaMenu {
            mainPanel.style.height = `${height}px`;
            const seeAll = queryOne('.ecl-mega-menu__see-all', mainPanel);
            const firstOnly = mainPanel
@@ -22,25 +58,40 @@ index 5d87032d4a96bb608cd008ad6b28a8613422d76c..ee0bbcbae114d7d11f2d1b3196f66f74
              .classList.contains('ecl-mega-menu__item--one-level-only');
            if (seeAll && firstOnly) {
              const remaining =
-@@ -1520,13 +1522,15 @@ export class MegaMenu {
+@@ -1329,9 +1329,9 @@ export class MegaMenu {
+       const itemLink = queryOne(this.subLinkSelector, level2);
+       itemLink.setAttribute('aria-expanded', 'false');
+       itemLink.classList.remove('ecl-mega-menu__parent-link');
+-      const siblings = level2.parentElement.childNodes;
++      const siblings = level2.parentElement.children;
+       if (siblings) {
+-        siblings.forEach((sibling) => {
++        [...siblings].forEach((sibling) => {
+           sibling.style.display = '';
+         });
+       }
+@@ -1515,17 +1515,17 @@ export class MegaMenu {
+         });
+ 
+         this.openPanel = { num: 2, item: menuItem };
+-        siblings = menuItem.parentNode.childNodes;
++        siblings = menuItem.parentNode.children;
+         if (this.isDesktop) {
            // Reset style for the siblings, in case they were hidden
-           siblings.forEach((sibling) => {
+-          siblings.forEach((sibling) => {
++          [...siblings].forEach((sibling) => {
              if (sibling !== menuItem) {
--              sibling.style.display = '';
-+              if (sibling.style) {
-+                sibling.style.display = '';
-+              }
+               sibling.style.display = '';
              }
            });
          } else {
            // Hide other items in the sublist
-           siblings.forEach((sibling) => {
--            if (sibling !== menuItem) {
-+            if (sibling.style && sibling !== menuItem) {
+-          siblings.forEach((sibling) => {
++          [...siblings].forEach((sibling) => {
+             if (sibling !== menuItem) {
                sibling.style.display = 'none';
              }
-           });
-@@ -1577,7 +1581,7 @@ export class MegaMenu {
+@@ -1577,7 +1577,7 @@ export class MegaMenu {
     */
    handleClickOnItem(e) {
      let isInTheContainer = false;

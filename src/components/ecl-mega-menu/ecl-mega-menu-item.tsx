@@ -112,7 +112,7 @@ export class EclMegaMenuItem {
           </ecl-grid>
         </div>
       }
-      { this.hasChildren &&
+      { (this.hasChildren || this.hasFeatured) &&
         <div class={`ecl-mega-menu__wrapper sc-ecl-mega-menu-${this.theme}`}>
           <div class={`ecl-container sc-ecl-mega-menu-${this.theme}`}>
           { this.hasInfo &&
