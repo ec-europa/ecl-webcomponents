@@ -17,7 +17,7 @@
 | `ctaClicked`      | `cta-clicked`       |             | `boolean` | `false`     |
 | `ctaLabel`        | `cta-label`         |             | `string`  | `undefined` |
 | `ctaLink`         | `cta-link`          |             | `string`  | `undefined` |
-| `eclScript`       | `ecl-script`        |             | `boolean` | `false`     |
+| `descriptionLink` | `description-link`  |             | `string`  | `undefined` |
 | `external`        | `external`          |             | `boolean` | `false`     |
 | `fontColor`       | `font-color`        |             | `string`  | `'dark'`    |
 | `fontSize`        | `font-size`         |             | `string`  | `'m'`       |
@@ -25,6 +25,7 @@
 | `horizontal`      | `horizontal`        |             | `string`  | `'left'`    |
 | `image`           | `image`             |             | `string`  | `undefined` |
 | `imageAlt`        | `image-alt`         |             | `string`  | `undefined` |
+| `noScript`        | `no-script`         |             | `boolean` | `false`     |
 | `size`            | `size`              |             | `string`  | `'m'`       |
 | `sources`         | `sources`           |             | `string`  | `undefined` |
 | `srPause`         | `sr-pause`          |             | `string`  | `undefined` |

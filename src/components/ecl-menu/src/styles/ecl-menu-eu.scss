@@ -3,6 +3,9 @@
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
+@use '@ecl/mixins-typography/mixins' with (
+  $typography: var.$typography
+);
 @use '@ecl/menu/menu' with (
   $theme: theme.$theme,
   $menu: var.$menu
@@ -18,13 +21,6 @@
 
 .ecl-menu__open .ecl-menu__close-switch:last-of-type {
   display: none;
-}
-
-.ecl-menu__sublink,
-.ecl-menu__link {
-  .ecl-link--standalone {
-    text-decoration: none;
-  }
 }
 
 .ecl-menu__button-caret.sc-ecl-menu-eu {
@@ -53,9 +49,15 @@
   display: none;
 }
 
-@media (min-width >= 1140px) {
-  .ecl-menu:not(.ecl-menu--forced-mobile, .ecl-menu--forced-close) .ecl-menu__item:not(.ecl-menu__items-previous, .ecl-menu__items-next)[aria-expanded='true'] .ecl-menu__link {
-    padding: 1rem 0.5rem;
+@media (width >= 1140px) {
+  .ecl-menu:not(.ecl-menu--forced-mobile, .ecl-menu--forced-close) {
+    .ecl-menu__button-caret {
+      padding-inline: 0.25rem 0.75rem !important;
+    }
+
+    .ecl-menu__item:not(.ecl-menu__items-previous, .ecl-menu__items-next)[aria-expanded='true'] .ecl-menu__link {
+      padding-inline: 0.5rem;
+    }
   }
 }
 

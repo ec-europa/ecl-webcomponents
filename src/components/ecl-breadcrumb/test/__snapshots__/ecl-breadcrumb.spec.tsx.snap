@@ -3,7 +3,7 @@
 exports[`ecl-breadcrumb renders with ellipsis and current page 1`] = `
 <ecl-breadcrumb>
   <!---->
-  <nav class="ecl-breadcrumb" data-ecl-breadcrumb>
+  <nav class="ecl-breadcrumb" data-ecl-auto-initialized="true" data-ecl-breadcrumb>
     <ol class="ecl-breadcrumb__container">
       <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec" data-ecl-breadcrumb-item="expandable">
         <ecl-link path="/example.html" style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link" variant="standalone">

@@ -10,28 +10,6 @@ const includePaths = [nodeModules];
 const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()}`;
 
 module.exports = {
-  scripts: [
-    {
-      entry: path.resolve(nodeModules, '@ecl/carousel/carousel.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-carousel-vanilla.js'),
-      options: {
-        format: 'iife',
-        moduleName: 'CAROUSEL',
-        includePaths,
-        sourceMap: false,
-      },
-    },
-    {
-      entry: path.resolve(nodeModules, '@ecl/banner/banner.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-banner-vanilla.js'),
-      options: {
-        format: 'iife',
-        moduleName: 'BANNER',
-        includePaths,
-        sourceMap: false,
-      },
-    },
-  ],
   styles: [
     {
       entry: path.resolve(__dirname, 'src/styles/ecl-carousel-ec.scss'),

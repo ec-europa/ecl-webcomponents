@@ -14,15 +14,15 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "5.0.0-alpha.20",
-    "@ecl/grid": "5.0.0-alpha.20",
-    "@ecl/link": "5.0.0-alpha.20",
-    "@ecl/mixins-typography": "5.0.0-alpha.20",
-    "@ecl/resources-ec-logo": "5.0.0-alpha.20",
-    "@ecl/resources-eu-logo": "5.0.0-alpha.20",
-    "@ecl/site-footer": "5.0.0-alpha.20",
-    "@ecl/theme-ec": "5.0.0-alpha.20",
-    "@ecl/theme-eu": "5.0.0-alpha.20",
+    "@ecl/builder": "5.0.0-alpha.22.2",
+    "@ecl/grid": "5.0.0-alpha.22.2",
+    "@ecl/link": "5.0.0-alpha.22.2",
+    "@ecl/mixins-typography": "5.0.0-alpha.22.2",
+    "@ecl/resources-ec-logo": "5.0.0-alpha.22.2",
+    "@ecl/resources-eu-logo": "5.0.0-alpha.22.2",
+    "@ecl/site-footer": "5.0.0-alpha.22.2",
+    "@ecl/theme-ec": "5.0.0-alpha.22.2",
+    "@ecl/theme-eu": "5.0.0-alpha.22.2",
     "cross-env": "10.1.0"
   },
   "repository": {

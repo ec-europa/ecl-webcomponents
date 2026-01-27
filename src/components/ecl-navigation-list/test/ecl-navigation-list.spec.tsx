@@ -5,6 +5,10 @@ import { EclContentBlock } from '../../ecl-content-block/ecl-content-block';
 import { EclLink } from '../../ecl-link/ecl-link';
 
 describe('ecl-navigation-list', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclNavigationList, EclNavigationListItem, EclContentBlock, EclLink],

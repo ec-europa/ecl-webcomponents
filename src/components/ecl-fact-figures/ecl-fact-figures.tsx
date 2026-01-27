@@ -49,14 +49,6 @@ export class EclFactFigures {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
-  componentDidLoad() {
-    const items = this.el.querySelectorAll('.ecl-fact-figures__item');
-  
-    if (items.length > 0) {
-      items[0].classList.add('is-first');
-    }
-  }
-
   render() {
     return (
       <div class={this.getClass()}>

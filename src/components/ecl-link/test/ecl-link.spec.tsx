@@ -4,11 +4,14 @@ import { EclIcon } from '../../ecl-icon/ecl-icon';
 import { EclIndicator } from '../../ecl-indicator/ecl-indicator';
 
 describe('ecl-link', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders correctly as a default link', async () => {
     const page = await newSpecPage({
       components: [EclLink],
       html: `<ecl-link
-              variant="default"
               path="/example.html"
             >
               A default link
@@ -82,6 +85,7 @@ describe('ecl-link', () => {
               path="/example.html"
               indicator=true
               indicator-value="5"
+              indicator-label="label for screen readers"
             >
               Link label
               <ecl-icon slot="icon-after" icon="check"> 

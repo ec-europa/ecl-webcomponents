@@ -8,7 +8,6 @@
   "private": true,
   "scripts": {
     "build:styles": "cross-env ecl-builder styles",
-    "build:scripts": "cross-env ecl-builder scripts",
     "build": "run-s clean build:*",
     "clean": "rimraf build",
     "prepublish": "npm run build"
@@ -18,12 +17,12 @@
     "@ecl/web-components-icon": "0.17.1"
   },
   "devDependencies": {
-    "@ecl/builder": "5.0.0-alpha.20",
-    "@ecl/grid": "5.0.0-alpha.20",
-    "@ecl/mixins-typography": "5.0.0-alpha.20",
-    "@ecl/notification": "5.0.0-alpha.20",
-    "@ecl/theme-ec": "5.0.0-alpha.20",
-    "@ecl/theme-eu": "5.0.0-alpha.20",
+    "@ecl/builder": "5.0.0-alpha.22.2",
+    "@ecl/grid": "5.0.0-alpha.22.2",
+    "@ecl/mixins-typography": "5.0.0-alpha.22.2",
+    "@ecl/notification": "5.0.0-alpha.22.2",
+    "@ecl/theme-ec": "5.0.0-alpha.22.2",
+    "@ecl/theme-eu": "5.0.0-alpha.22.2",
     "cross-env": "10.1.0"
   },
   "repository": {

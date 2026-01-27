@@ -4,15 +4,18 @@ const getArgs = () => {
   return {
     variant: '',
     position: 'left',
-    itemTitle: 'Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
+    itemTitle: 'Ut enim ad minim veniam quis nostrud exercitation',
     description: `
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
     `,
+    verticalAlignment: 'top',
     mediaCaption: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+    mediaBehavior: 'static',
+    mediaAnchor: 'center',
     link: true,
+    linkType: 'default',
     media: true,
   };
 };
@@ -35,6 +38,12 @@ const getArgTypes = () => {
       options: ['left', 'right'],
       description: 'Position of the image',
     },
+    verticalAlignment: {
+      name: 'vertical-alignment',
+      type: { name: 'select'},
+      options: ['top', 'center'],
+      description: 'Vertical alignmnent of the text content',
+    },
     itemTitle: {
       name: 'item-title',
       type: { name: 'string'},
@@ -54,10 +63,40 @@ const getArgTypes = () => {
       description: 'Caption for the media container',
       if: { arg: 'media', truthy: true },
     },
+    mediaBehavior: {
+      name: 'media-behavior',
+      control: { type: 'select' },
+      options: [
+        'static',
+        'dynamic',
+      ],
+      if: { arg: 'media' }
+    },
+    mediaAnchor: {
+      name: 'media-anchor',
+      control: { type: 'select' },
+      options: [
+        'center',
+        'left',
+        'right',
+        '20% 40%',
+      ],
+      if: { arg: 'media' },
+    },
     link: {
       control: { type: 'boolean' },
       description: ' Show/hide the link',
     },
+    linkType: {
+      name: 'link-type',
+      control: { type: 'select' },
+      options: [
+        'default',
+        'button',
+        'highlighted',
+      ],
+      if: { arg: 'link' }
+    }
   };
 };
 
@@ -67,7 +106,7 @@ export default {
 
 const Template = (args) => 
 `<ecl-featured-item
-  color-mode="${args.color_mode}"
+  color-mode="${args.color_mode || ''}"
   el-id="featured-item-demo"
   variant="${args.variant }"
   theme="${args.theme}"
@@ -76,7 +115,11 @@ const Template = (args) =>
   image="${args.media ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg' : '' }"
   link-path="${args.link ? randomizedLink('/example.html') : '' }"
   link-label="${args.link ? 'Read more' : '' }"
+  link-type="${args.linkType}"
   media-caption="${args.mediaCaption}"
+  media-behavior="${args.mediaBehavior}"
+  vertical-alignment="${args.verticalAlignment}"
+  media-anchor="${args.mediaAnchor}"
 >
   ${args.description}
 </ecl-featured-item>`;

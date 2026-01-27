@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-popover renders 1`] = `
-<ecl-popover close="" ecl-script="" icon="share" item-id="popover-example" toggle-label="Popover">
+<ecl-popover close="" icon="share" item-id="popover-example" toggle-label="Popover">
   <!---->
-  <div class="ecl-popover">
+  <div class="ecl-popover" data-ecl-auto-initialized="true">
     <ecl-link aria-controls="popover-example" aria-expanded="false" data-ecl-popover-toggle="data-ecl-popover-toggle" style-class="sc-ecl-link-ec sc-ecl-popover-ec ecl-popover__toggle">
       <!---->
       <a aria-controls="popover-example" aria-expanded="false" class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone ecl-popover__toggle sc-ecl-link-ec sc-ecl-popover-ec" data-ecl-popover-toggle>
@@ -12,7 +12,7 @@ exports[`ecl-popover renders 1`] = `
         </span>
         <slot-fb hidden="" name="icon-after"></slot-fb>
         <ecl-icon class="ecl-link__icon" slot="icon-after" style-class="ecl-link__icon--before">
-          <span class="ecl-icon ecl-link__icon--before wt-icon--fluid wt-icon--placeholder wt-icon--share"></span>
+          <span class="ecl-icon ecl-icon--fluid ecl-link__icon--before wt-icon--placeholder wt-icon--share"></span>
         </ecl-icon>
       </a>
     </ecl-link>
@@ -21,7 +21,7 @@ exports[`ecl-popover renders 1`] = `
         <ecl-button buttonstyle="neutral" data-ecl-popover-close hide-label="" style-class="sc-ecl-popover-ec ecl-popover__close" type="button" variant="tertiary">
           Close
           <ecl-icon slot="icon-after" style-class="sc-ecl-popover-ec">
-            <span class="ecl-icon sc-ecl-popover-ec wt-icon--close wt-icon--placeholder wt-icon--xs"></span>
+            <span class="ecl-icon ecl-icon--xs sc-ecl-popover-ec wt-icon--close wt-icon--placeholder"></span>
           </ecl-icon>
         </ecl-button>
         <div class="ecl-popover__content">

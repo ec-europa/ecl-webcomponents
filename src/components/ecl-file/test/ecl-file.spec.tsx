@@ -4,6 +4,10 @@ import { EclFileTranslations } from '../ecl-file-translations';
 import { EclFileTranslationsItem } from  '../ecl-file-translation-item';
 
 describe('ecl-file', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclFile, EclFileTranslations, EclFileTranslationsItem],
@@ -18,7 +22,6 @@ describe('ecl-file', () => {
         taxonomies-label="Taxonomy list"
         taxonomies='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"},"Taxonomy item 3"]'
         detail-meta='["Resource type", "Publication date"]'
-        ecl-script
       >
         <ecl-file-translations
           translations-total="3"

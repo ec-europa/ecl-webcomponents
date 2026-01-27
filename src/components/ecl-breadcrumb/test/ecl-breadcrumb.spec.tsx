@@ -3,6 +3,10 @@ import { EclBreadcrumb } from '../ecl-breadcrumb';
 import { EclBreadcrumbItem } from '../ecl-breadcrumb-item';
 
 describe('ecl-breadcrumb', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+  
   it('renders with ellipsis and current page', async () => {
     const page = await newSpecPage({
       components: [EclBreadcrumb, EclBreadcrumbItem],

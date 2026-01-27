@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-timeline renders 1`] = `
-<ecl-timeline color-mode="green" ecl-script="">
+<ecl-timeline color-mode="green">
   <!---->
-  <ol class="ecl-color-mode--green ecl-timeline ecl-timeline--has-headline" data-ecl-timeline>
+  <ol class="ecl-color-mode--green ecl-timeline ecl-timeline--has-headline" data-ecl-auto-initialized="true" data-ecl-timeline>
     <li class="ecl-timeline__item ecl-timeline__item--headline sc-ecl-timeline-ec" id="el-headline">
       <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
         <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>

@@ -94,7 +94,6 @@ const TemplateWithTranslation = args =>
   image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
   image-alt="thumbnail alt"
   detail-meta='["Resource type", "Publication date"]'
-  ecl-script
   aria-label="Download file State of the Union 2018 brochure"
   taxonomies-label="Taxonomy list"
   taxonomies='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"}]'

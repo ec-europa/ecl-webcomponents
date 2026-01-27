@@ -10,14 +10,16 @@
 | Property         | Attribute         | Description | Type      | Default     |
 | ---------------- | ----------------- | ----------- | --------- | ----------- |
 | `ariaLabel`      | `aria-label`      |             | `string`  | `undefined` |
+| `branded`        | `branded`         |             | `boolean` | `false`     |
 | `download`       | `download`        |             | `boolean` | `false`     |
+| `elId`           | `el-id`           |             | `string`  | `undefined` |
 | `external`       | `external`        |             | `boolean` | `false`     |
 | `hideLabel`      | `hide-label`      |             | `boolean` | `false`     |
 | `indicator`      | `indicator`       |             | `boolean` | `false`     |
+| `indicatorLabel` | `indicator-label` |             | `string`  | `undefined` |
 | `indicatorValue` | `indicator-value` |             | `string`  | `undefined` |
 | `inverted`       | `inverted`        |             | `boolean` | `false`     |
 | `name`           | `name`            |             | `string`  | `undefined` |
-| `noVisited`      | `no-visited`      |             | `boolean` | `false`     |
 | `path`           | `path`            |             | `string`  | `undefined` |
 | `srExternal`     | `sr-external`     |             | `string`  | `undefined` |
 | `styleClass`     | `style-class`     |             | `string`  | `undefined` |
@@ -45,11 +47,16 @@
  - [ecl-gallery](../ecl-gallery)
  - [ecl-inpage-navigation-item](../ecl-inpage-navigation)
  - [ecl-list-illustration-item](../ecl-list-illustration)
+ - [ecl-mega-menu-featured-list-item](../ecl-mega-menu)
+ - [ecl-mega-menu-item](../ecl-mega-menu)
+ - [ecl-mega-menu-subitem](../ecl-mega-menu)
  - [ecl-news-ticker-item](../ecl-news-ticker)
  - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover](../ecl-popover)
  - [ecl-site-header](../ecl-site-header)
  - [ecl-social-media-follow-item](../ecl-social-media-follow)
+ - [ecl-splash-page](../ecl-splash-page)
+ - [ecl-tabs-item](../ecl-tabs)
 
 ### Depends on
 
@@ -75,11 +82,16 @@ graph TD;
   ecl-gallery --> ecl-link
   ecl-inpage-navigation-item --> ecl-link
   ecl-list-illustration-item --> ecl-link
+  ecl-mega-menu-featured-list-item --> ecl-link
+  ecl-mega-menu-item --> ecl-link
+  ecl-mega-menu-subitem --> ecl-link
   ecl-news-ticker-item --> ecl-link
   ecl-pagination-item --> ecl-link
   ecl-popover --> ecl-link
   ecl-site-header --> ecl-link
   ecl-social-media-follow-item --> ecl-link
+  ecl-splash-page --> ecl-link
+  ecl-tabs-item --> ecl-link
   style ecl-link fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

@@ -9,19 +9,6 @@ const includePaths = [nodeModules];
 const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()}`;
 
 module.exports = {
-  scripts: [
-    {
-      entry: path.resolve(nodeModules, '@ecl/indicator/indicator.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-indicator.js'),
-      options: {
-        banner,
-        format: 'iife',
-        moduleName: 'INDICATOR',
-        includePaths,
-        sourceMap: false,
-      },
-    },
-  ],
   styles: [
     {
       entry: path.resolve(__dirname, 'src/styles/ecl-indicator-ec.scss'),

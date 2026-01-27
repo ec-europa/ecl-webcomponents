@@ -69,14 +69,6 @@ const getArgTypes = (storyName = '') => {
     };
   }
 
-  if (storyName === 'video' || storyName === 'iframe') {
-    argTypes['eclScript'] = {
-      name: 'ecl-script',
-      control: { type: 'boolean' },
-      description: 'Use the vanilla js from ECL',
-    };
-  }
-
   if (storyName === 'video') {
     argTypes['autoplay'] = {
       control: { type: 'boolean' },
@@ -105,7 +97,6 @@ const TemplateImg = (args) =>
     ${args.hasCaption ? args.caption : ''}
     ${args.hasExpandable ?
     `<ecl-expandable
-      ecl-script
       slot="expandable"
       label-collapsed="collapsed"
       label-expanded="expanded"
@@ -127,7 +118,6 @@ const TemplateVideo = (args) =>
   `<ecl-media-container
     has-caption=${args.hasCaption}
     autoplay=${args.autoplay}
-    ecl-script=${args.eclScript}
     sr-play="play"
     full-width=${args.fullWidth}
     sr-pause="pause"
@@ -137,7 +127,6 @@ const TemplateVideo = (args) =>
      ${args.hasCaption ? args.caption : ''}
     ${args.hasExpandable ?
     `<ecl-expandable
-      ecl-script
       slot="expandable"
       label-collapsed="collapsed"
       label-expanded="expanded"
@@ -161,7 +150,6 @@ const TemplateIframe = (args) =>
       ratio="${args.ratio}"
       theme="${args.theme}"
       has-caption=${args.hasCaption}
-      ecl-script=${args.eclScript}
       full-width=${args.fullWidth}
       embedded-media
     >
@@ -169,7 +157,6 @@ const TemplateIframe = (args) =>
     	<iframe slot="embedded-media" width="350" height="197" title="New digital strategy" src="https://www.youtube.com/embed/fgi-GSCB6ho" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       ${args.hasExpandable ?
       `<ecl-expandable
-        ecl-script
         slot="expandable"
         label-collapsed="collapsed"
         label-expanded="expanded"
@@ -196,7 +183,6 @@ const TemplateInfographic = (args) =>
       ${args.hasCaption ? 'Infographic title and copyright' : ''}
       ${args.hasExpandable ?
       `<ecl-expandable
-        ecl-script
         slot="expandable"
         label-collapsed="collapsed"
         label-expanded="expanded"

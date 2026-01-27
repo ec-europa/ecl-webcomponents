@@ -1,4 +1,4 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, Element } from '@stencil/core';
 
 @Component({
   tag: 'ecl-featured-item',
@@ -11,29 +11,48 @@ import { Component, h, Prop } from '@stencil/core';
 })
 
 export class EclFeaturedItem {
+  @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() elId: string = `ecl-featured-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`;
   @Prop() styleClass: string;
-  @Prop() variant: string = 'default';
+  @Prop() variant: string;
   @Prop() itemTitle: string;
   @Prop() image: string;
-  @Prop() colorMode: string;
+  @Prop() colorMode: string = '';
+  @Prop() linkType: string;
   @Prop() linkPath: string;
   @Prop() linkLabel: string;
   @Prop() mediaCaption: string;
+  @Prop() mediaBehavior: string;
+  @Prop() mediaAnchor: string;
+  @Prop() verticalAlignment: string = 'top';
   @Prop() position: string = 'left';
-  @Prop() eclScript: boolean = false;
   @Prop() defaultContainerClass = 'ecl-featured-item__container';
 
   getClass(): string {
     const styleClasses = [
       `ecl-featured-item`,
-      `ecl-featured-item--${this.variant}`,
       this.styleClass
     ];
 
+    if (this.variant === 'highlight') {
+       styleClasses.push(`ecl-featured-item--${this.variant}`);
+    }
+
+    if (this.linkType === 'highlighted') {
+      styleClasses.push('ecl-featured-item--link-highlighted');
+    }
+
     if (this.colorMode) {
       styleClasses.push(`ecl-color-mode--${this.colorMode}`);
+    }
+
+    if (this.verticalAlignment === 'center') {
+      styleClasses.push('ecl-featured-item--vcenter');
+    }
+
+    if (this.mediaBehavior === 'dynamic') {
+      styleClasses.push('ecl-featured-item--dynamic');
     }
 
     return styleClasses.join(' ');
@@ -41,6 +60,18 @@ export class EclFeaturedItem {
 
   componentWillLoad() {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+  }
+
+  componentDidLoad() {
+    const picture = this.el.querySelector('.ecl-media-container__picture');
+
+    if (picture) {
+      picture.classList.add(`sc-ecl-featured-item-${this.theme}`);
+      const img = picture.querySelector('.ecl-media-container__media');
+      if (img) {
+        img.classList.add(`sc-ecl-featured-item-${this.theme}`);
+      }
+    }
   }
 
   render() {
@@ -51,45 +82,51 @@ export class EclFeaturedItem {
         class={this.getClass()}
       >
         <div class={containerClasses}>
+          <div class="ecl-featured-item__item">
+            <div class="ecl-featured-item__content">
+              <div class="ecl-featured-item__info">
+              { this.itemTitle &&
+                <div 
+                  class="ecl-featured-item__title"
+                  id={this.elId + '-title'}
+                >
+                  {this.itemTitle}
+                </div> 
+              }
+                <div class="ecl-featured-item__description">
+                  <slot></slot>
+                </div>
+              </div>
+            { (this.linkPath && this.linkLabel) &&
+              <ecl-link
+                variant={`${this.linkType === 'button' ? 'primary-neutral' : 'standalone' }`}
+                style-class={`ecl-featured-item__link sc-ecl-featured-item-${this.theme} ${this.linkType === 'highlighted' ? 'ecl-featured-item--link-highlighted' : ''}`}
+                path={this.linkPath}
+                aria-describedby={this.elId + '-title'}
+              >
+                {this.linkLabel}
+                <ecl-icon
+                  style-class={`sc-ecl-featured-item-${this.theme}`}
+                  slot="icon-after"
+                  icon="arrow-left"
+                  flip="horizontal"
+                />
+              </ecl-link>
+            }
+          </div>
+        </div>
         { this.image &&
           <div class="ecl-featured-item__item">
             <ecl-media-container
-              styleClass="ecl-featured-item__media_container"
+              styleClass={`ecl-featured-item__media_container sc-ecl-featured-item-${this.theme}`}
               image={this.image}
               hasCaption={this.mediaCaption !== ''}
+              imageAnchor={this.mediaAnchor}
             >
              {this.mediaCaption}
             </ecl-media-container>
           </div>
         }
-          <div class="ecl-featured-item__item">
-          { this.itemTitle ?
-            <div 
-              class="ecl-featured-item__title"
-              id={this.elId}
-            >
-              {this.itemTitle}
-            </div> : '' }
-            <div class="ecl-featured-item__description">
-              <slot></slot>
-            </div>
-          { (this.linkPath && this.linkLabel) &&
-            <ecl-link
-              variant="standalone"
-              style-class={`ecl-featured-item__link sc-ecl-featured-item-${this.theme}`}
-              path={this.linkPath}
-              aria-describedby={this.elId}
-            >
-              {this.linkLabel}
-              <ecl-icon
-                style-class={`sc-ecl-featured-item-${this.theme}`}
-                slot="icon-after"
-                icon="arrow-left"
-                flip="horizontal"
-              />
-            </ecl-link>
-          }
-          </div>
         </div>
       </article>
     );

@@ -55,11 +55,15 @@ export class EclFactFiguresItem {
           style-class={`ecl-fact-figures__icon sc-ecl-fact-figures-item-${this.theme}`}
         ></ecl-icon>
       { this.value && (
-        <div class="ecl-fact-figures__value">{this.value}</div>
+        <div class="ecl-fact-figures__value">{this.value}
+        { this.itemTitle && (
+          <span class="ecl-fact-figures__title">{this.itemTitle}</span>
+        )}
+        </div>
       )}
-      { this.itemTitle && (
+      { (!this.value && this.itemTitle) &&
         <div class="ecl-fact-figures__title">{this.itemTitle}</div>
-      )}
+      }
         <div class="ecl-fact-figures__description">
           <slot></slot>
         </div>

@@ -5,6 +5,10 @@ import { EclIcon } from '../../ecl-icon/ecl-icon';
 import { EclButton } from '../../ecl-button/ecl-button';
 
 describe('ecl-menu', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclMenu, EclMenuItem, EclIcon, EclButton],
@@ -14,7 +18,6 @@ describe('ecl-menu', () => {
         close-label="Close"
         back-label="Back"
         menu-link="/example.html"
-        ecl-script
         menu-title="Menu"
         next-label="next"
         previous-label="previous"

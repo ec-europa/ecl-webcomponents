@@ -8,6 +8,10 @@ import { EclDescriptionListTerm } from '../../ecl-description-list/ecl-descripti
 import { EclDescriptionListDefinition } from '../../ecl-description-list/ecl-description-list-definition';
 
 describe('ecl-content-block', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclContentBlock, EclLink, EclIcon, EclDescriptionList, EclLabel, EclDescriptionListDefinition, EclDescriptionListTerm],
@@ -21,7 +25,6 @@ describe('ecl-content-block', () => {
         has-labels
         has-links
         has-secondary-links
-        ecl-script
       >
         <ecl-label
           slot="labels"

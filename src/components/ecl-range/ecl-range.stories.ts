@@ -139,8 +139,7 @@ const Template = args =>
     width="${args.width}"
     name="${args.name}"
     min=${args.min}
-    max=${args.max}
-    ecl-script
+    max=${args.max}  
     step=${args.step}
     value-label="Value: "
   >

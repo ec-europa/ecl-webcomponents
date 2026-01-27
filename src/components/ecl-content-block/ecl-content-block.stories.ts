@@ -7,6 +7,7 @@ const getArgs = () => {
                   quis tincidunt sem viverra. Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus`,
     metaPrimary:  '["PRIMARY META", "DD Month Year"]',
     metaSecondary: '[{"label": "2018/10/22", "icon": "calendar"}, {"label": "Luxembourg", "icon": "location"}]',
+    metaSecondaryDir: 'vertical',
   };
 };
 
@@ -21,14 +22,22 @@ const getArgTypes = () => {
       description: 'Description',
     },
     metaPrimary: {
-      name: "Primary meta",
+      name: "meta-primary",
       type: { name: 'string'},
       description: 'Primary meta element',
     },
     metaSecondary: {
-      name: 'Secondary meta',
+      name: 'meta-secondary',
       type: { name: 'string'},
       description: 'Secondary meta element',
+    },
+    metaSecondaryDir: {
+      name: 'meta-secondary-dir',
+      type: { name: 'select' },
+      options: [
+        'vertical',
+        'horizontal',
+      ],
     },
   };
 };
@@ -41,13 +50,13 @@ const Template = (args) =>
   `<ecl-content-block
     meta-primary='${args.metaPrimary}'
     meta-secondary='${args.metaSecondary}'
+    meta-secondary-dir='${args.metaSecondaryDir}'
     has-title
     has-description
     has-lists
     has-labels
     has-links
     has-secondary-links
-    ecl-script
   >
     <ecl-label
       slot="labels"

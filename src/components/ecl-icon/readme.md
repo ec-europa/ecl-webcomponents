@@ -29,7 +29,6 @@
  - [ecl-carousel](../ecl-carousel)
  - [ecl-category-filter-item](../ecl-category-filter)
  - [ecl-content-block](../ecl-content-block)
- - [ecl-datepicker](../ecl-datepicker)
  - [ecl-expandable](../ecl-expandable)
  - [ecl-fact-figures](../ecl-fact-figures)
  - [ecl-fact-figures-item](../ecl-fact-figures)
@@ -37,7 +36,6 @@
  - [ecl-file](../ecl-file)
  - [ecl-file-translations](../ecl-file)
  - [ecl-file-translations-item](../ecl-file)
- - [ecl-footer-ec](../ecl-footer)
  - [ecl-form-group](../ecl-form-group)
  - [ecl-gallery](../ecl-gallery)
  - [ecl-gallery-item](../ecl-gallery)
@@ -46,6 +44,9 @@
  - [ecl-link](../ecl-link)
  - [ecl-list-illustration-item](../ecl-list-illustration)
  - [ecl-media-container](../ecl-media-container)
+ - [ecl-mega-menu](../ecl-mega-menu)
+ - [ecl-mega-menu-item](../ecl-mega-menu)
+ - [ecl-mega-menu-subitem](../ecl-mega-menu)
  - [ecl-menu](../ecl-menu)
  - [ecl-menu-item](../ecl-menu)
  - [ecl-modal](../ecl-modal)
@@ -53,6 +54,7 @@
  - [ecl-news-ticker-item](../ecl-news-ticker)
  - [ecl-notification](../ecl-notification)
  - [ecl-page-header](../ecl-page-header)
+ - [ecl-page-header-meta-item](../ecl-page-header)
  - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover](../ecl-popover)
  - [ecl-rating-star](../ecl-rating-field)
@@ -60,6 +62,7 @@
  - [ecl-select](../ecl-select)
  - [ecl-site-header](../ecl-site-header)
  - [ecl-social-media-follow-item](../ecl-social-media-follow)
+ - [ecl-tabs](../ecl-tabs)
  - [ecl-tag](../ecl-tag)
  - [ecl-timeline-item](../ecl-timeline)
 
@@ -72,7 +75,6 @@ graph TD;
   ecl-carousel --> ecl-icon
   ecl-category-filter-item --> ecl-icon
   ecl-content-block --> ecl-icon
-  ecl-datepicker --> ecl-icon
   ecl-expandable --> ecl-icon
   ecl-fact-figures --> ecl-icon
   ecl-fact-figures-item --> ecl-icon
@@ -80,7 +82,6 @@ graph TD;
   ecl-file --> ecl-icon
   ecl-file-translations --> ecl-icon
   ecl-file-translations-item --> ecl-icon
-  ecl-footer-ec --> ecl-icon
   ecl-form-group --> ecl-icon
   ecl-gallery --> ecl-icon
   ecl-gallery-item --> ecl-icon
@@ -89,6 +90,9 @@ graph TD;
   ecl-link --> ecl-icon
   ecl-list-illustration-item --> ecl-icon
   ecl-media-container --> ecl-icon
+  ecl-mega-menu --> ecl-icon
+  ecl-mega-menu-item --> ecl-icon
+  ecl-mega-menu-subitem --> ecl-icon
   ecl-menu --> ecl-icon
   ecl-menu-item --> ecl-icon
   ecl-modal --> ecl-icon
@@ -96,6 +100,7 @@ graph TD;
   ecl-news-ticker-item --> ecl-icon
   ecl-notification --> ecl-icon
   ecl-page-header --> ecl-icon
+  ecl-page-header-meta-item --> ecl-icon
   ecl-pagination-item --> ecl-icon
   ecl-popover --> ecl-icon
   ecl-rating-star --> ecl-icon
@@ -103,6 +108,7 @@ graph TD;
   ecl-select --> ecl-icon
   ecl-site-header --> ecl-icon
   ecl-social-media-follow-item --> ecl-icon
+  ecl-tabs --> ecl-icon
   ecl-tag --> ecl-icon
   ecl-timeline-item --> ecl-icon
   style ecl-icon fill:#f9f,stroke:#333,stroke-width:4px

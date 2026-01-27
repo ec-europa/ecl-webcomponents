@@ -17,6 +17,7 @@ describe('ecl-footer EC', () => {
         logo-lang-code="en"
         variant="core"
         description="This site is managed by:"
+        description-name="[name of the manager of the site]"
         site-name="European Commission website"
         logo-link="/example.html"
       >
@@ -167,13 +168,11 @@ describe('ecl-footer EU', () => {
         logo-alt="European Union"
         logo-title="European union"
         logo-lang-code="en"
-        description="This site is managed by the Directorate-General for Communication"
+        description="This site is managed by"
+        description-name="the Directorate-General for Communication"
         variant="core"
         logo-link="/example.html"
       >
-        <ecl-text tag="p" slot="description">
-          This site is managed by: [name of the manager of the site]
-        </ecl-text>
         <ecl-text
           size="m"
           slot="ecl-footer-list-main"

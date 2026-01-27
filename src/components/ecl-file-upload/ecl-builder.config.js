@@ -10,19 +10,6 @@ const includePaths = [nodeModules];
 const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()}`;
 
 module.exports = {
-  scripts: [
-    {
-      entry: path.resolve(nodeModules, '@ecl/file-upload/file-upload.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-file-upload-vanilla.js'),
-      options: {
-        banner,
-        moduleName: 'FILE',
-        format: 'iife',
-        includePaths,
-        sourceMap: false,
-      },
-    },
-  ],
   styles: [
     {
       entry: path.resolve(__dirname, 'src/styles/ecl-file-upload-ec.scss'),

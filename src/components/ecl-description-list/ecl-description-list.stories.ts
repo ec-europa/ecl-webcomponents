@@ -10,7 +10,6 @@ const Template = (args) =>
     visible-items="${args.visibleItems}"
     more-label="Show more items"
     color-mode="${args.color_mode}"
-    ecl-script
   >
     <ecl-description-list-term>
       Standard text

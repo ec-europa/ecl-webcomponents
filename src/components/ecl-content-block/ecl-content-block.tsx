@@ -1,5 +1,6 @@
 import { Component, Prop, h, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
+import ContentBlock from "@ecl/content-block";
+
 declare const ECL: any;
 
 @Component({
@@ -18,7 +19,7 @@ export class EclContentBlock {
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
   @Prop() hasDescription: boolean;
-  @Prop() eclScript: boolean = false;
+  @Prop() noScript: boolean = false;
   @Prop() hasTitle: boolean;
   @Prop() hasLabels: boolean;
   @Prop() hasLinks: boolean;
@@ -26,6 +27,7 @@ export class EclContentBlock {
   @Prop() hasLists: boolean;
   @Prop() metaPrimary: string;
   @Prop() metaSecondary: string;
+  @Prop() metaSecondaryDir: string = 'vertical';
 
   getClass(): string {
     return [
@@ -83,20 +85,12 @@ export class EclContentBlock {
       }
     }
 
-    if (this.eclScript) {
-      // Load the ECL vanilla js if not already present.
-      const src = getAssetPath('./build/scripts/ecl-content-block-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        const contentBlock = new ECL.ContentBlock(this.el);
-        contentBlock.init();
-      };
-
-      document.body.appendChild(script);
+    if (!this.noScript) {
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.ContentBlock = ContentBlock;
+      
+      const contentBlock = new ContentBlock(this.el);
+      contentBlock.init();
     }
   }
 
@@ -131,7 +125,7 @@ export class EclContentBlock {
         </div>
       }
       { metaSecondaryArray &&
-        <ul class="ecl-content-block__secondary-meta-container">
+        <ul class={`ecl-content-block__secondary-meta-container ${this.metaSecondaryDir === 'horizontal' ? 'ecl-content-block__secondary-meta-container--horizontal' : ''}`}>
         { metaSecondaryArray.map((meta) => (
           <li class="ecl-content-block__secondary-meta-item">
           { meta.icon &&

@@ -5,6 +5,10 @@ import { EclIcon } from '../../ecl-icon/ecl-icon';
 import { EclLink } from '../../ecl-link/ecl-link';
 
 describe('ecl-notification', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+  
   it('renders correctly in the information variant', async () => {
     const page = await newSpecPage({
       components: [EclNotification, EclButton, EclIcon, EclLink],
@@ -12,7 +16,6 @@ describe('ecl-notification', () => {
                 message-title="Title for a message"
                 variant="information"
                 close-label="Close"
-                ecl-script
               >
                 Lorem ipsum dolor sit amet
                 <ecl-link slot="notification-link" path="/example.html">Lorem ipsum</ecl-link>
@@ -29,7 +32,6 @@ describe('ecl-notification', () => {
                 message-title="Title for a message"
                 variant="success"
                 close-label="Close"
-                ecl-script
               >
                 Lorem ipsum dolor sit amet
                 <ecl-link slot="notification-link" path="/example.html">Lorem ipsum</ecl-link>

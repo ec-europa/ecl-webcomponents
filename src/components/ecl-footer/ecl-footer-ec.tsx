@@ -21,6 +21,7 @@ export class EclFooterEc {
   @Prop() logoLangCode: string;
   @Prop() variant: string;
   @Prop() description: string;
+  @Prop() descriptionName: string;
   @Prop() siteName: string;
   @Prop() siteLink: string;
   @Prop() coOwnerTitle: string;
@@ -135,21 +136,18 @@ export class EclFooterEc {
                   <ecl-link
                     inverted
                     path={this.siteLink}
-                    variant="standalone"
                   >
                     {this.siteName}
-                    <ecl-icon
-                      icon="arrow-left"
-                      flip="horizontal"
-                      slot="icon-after"
-                      color="inverted"
-                      size="s"
-                    ></ecl-icon>
                   </ecl-link>
                 </div>
               }
                 <div class="ecl-site-footer__description">
                   {this.description}
+                  {this.descriptionName &&
+                    <span class="ecl-site-footer__description-name">
+                      {this.descriptionName}
+                    </span>
+                  }
                 </div>
                 <slot name="ecl-footer-social-follow-info"></slot>
               </div>

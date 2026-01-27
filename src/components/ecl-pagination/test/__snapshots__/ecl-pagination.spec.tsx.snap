@@ -10,7 +10,7 @@ exports[`ecl-pagination renders 1`] = `
           <!---->
           <a aria-label="Previous page" class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--icon-only ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
             <ecl-icon class="ecl-link__icon" slot="icon-before" style-class="sc-ecl-pagination-ec">
-              <span class="ecl-icon sc-ecl-pagination-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270 wt-icon--xs"></span>
+              <span class="ecl-icon ecl-icon--xs sc-ecl-pagination-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270"></span>
             </ecl-icon>
             <span class="ecl-link__label">
               Previous
@@ -22,9 +22,7 @@ exports[`ecl-pagination renders 1`] = `
         <ecl-link aria-label="Page 1">
           <!---->
           <a aria-label="Page 1" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
-            <span class="ecl-link__label">
-              1
-            </span>
+            1
           </a>
         </ecl-link>
       </li>
@@ -37,9 +35,7 @@ exports[`ecl-pagination renders 1`] = `
         <ecl-link aria-label="Page 24">
           <!---->
           <a aria-label="Page 24" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
-            <span class="ecl-link__label">
-              24
-            </span>
+            24
           </a>
         </ecl-link>
       </li>
@@ -47,9 +43,7 @@ exports[`ecl-pagination renders 1`] = `
         <ecl-link aria-label="Page 25">
           <!---->
           <a aria-label="Page 25" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
-            <span class="ecl-link__label">
-              25
-            </span>
+            25
           </a>
         </ecl-link>
       </li>
@@ -65,9 +59,7 @@ exports[`ecl-pagination renders 1`] = `
         <ecl-link aria-label="Page 27">
           <!---->
           <a aria-label="Page 27" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
-            <span class="ecl-link__label">
-              27
-            </span>
+            27
           </a>
         </ecl-link>
       </li>
@@ -75,9 +67,7 @@ exports[`ecl-pagination renders 1`] = `
         <ecl-link aria-label="Page 28">
           <!---->
           <a aria-label="Page 28" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec">
-            <span class="ecl-link__label">
-              28
-            </span>
+            28
           </a>
         </ecl-link>
       </li>
@@ -90,9 +80,7 @@ exports[`ecl-pagination renders 1`] = `
         <ecl-link aria-label="Page 40">
           <!---->
           <a aria-label="Page 40" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
-            <span class="ecl-link__label">
-              40
-            </span>
+            40
           </a>
         </ecl-link>
       </li>
@@ -105,7 +93,7 @@ exports[`ecl-pagination renders 1`] = `
             </span>
             <slot-fb hidden="" name="icon-after"></slot-fb>
             <ecl-icon class="ecl-link__icon" slot="icon-after" style-class="sc-ecl-pagination-ec">
-              <span class="ecl-icon sc-ecl-pagination-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-90 wt-icon--xs"></span>
+              <span class="ecl-icon ecl-icon--xs sc-ecl-pagination-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-90"></span>
             </ecl-icon>
           </a>
         </ecl-link>

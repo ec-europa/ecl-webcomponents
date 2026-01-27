@@ -10,3 +10,22 @@
   $theme: theme.$theme,
   $featured-item: var.$featured-item
 );
+
+.ecl-featured-item--dynamic .ecl-featured-item__item:last-child {
+  .ecl-media-container,
+  ecl-media-container {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  picture {
+    height: 100%;
+    flex-grow: 1;
+  }
+
+  *,
+  .ecl-media-container__picture,
+  .ecl-media-container__media {
+    height: 100%;
+  }
+}

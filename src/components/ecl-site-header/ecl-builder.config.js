@@ -22,19 +22,6 @@ module.exports = {
       options: { up: 4 },
     },
   ],
-  scripts: [
-    {
-      entry: path.resolve(nodeModules, '@ecl/site-header/site-header.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-site-header-vanilla.js'),
-      options: {
-        banner,
-        format: 'iife',
-        moduleName: 'SITEHEADER',
-        includePaths,
-        sourceMap: false,
-      },
-    },
-  ],
   styles: [
     {
       entry: path.resolve(__dirname, 'src/styles/ecl-site-header-ec.scss'),

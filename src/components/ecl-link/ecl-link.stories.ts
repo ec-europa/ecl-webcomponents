@@ -7,15 +7,16 @@ const getArgs = () => {
     path: randomizedLink('/example.html'),
     external: false,
     inverted: false,
+    branded: false,
     label: 'An ECL link',
     icon: '',
     iconPosition: 'after',
     iconRotate: '',
     iconFlip: '',
     hideLabel: false,
-    noVisited: false,
     indicator: false,
     indicatorValue: 2,
+    indicatorLabel: '',
   };
 };
 
@@ -24,7 +25,7 @@ const getArgTypes = () => {
     color_mode: { table: { disable: true } },
     variant: {
       type: { name: 'select' },
-      options: ['standalone', 'primary', 'primary-highlight', 'secondary'],
+      options: ['standalone', 'primary', 'primary-highlight', 'primary-neutral', 'secondary'],
       description: "Link variant"
     },
     label: {
@@ -39,14 +40,14 @@ const getArgTypes = () => {
       type: { name: 'boolean' },
       description: 'Inverted link',
     },
+    branded: {
+      type: { name: 'boolean' },
+      description: 'Branded link',
+    },
     path: {
       name: 'path',
       type: { name: 'string' },
       description: 'Path or Url to link to',
-    },
-    noVisited: {
-      name: 'no-visited',
-      type: { name: 'boolean' },
     },
     icon: {
       name: 'icon',
@@ -96,11 +97,16 @@ const getArgTypes = () => {
       if: { arg: 'icon', neq: undefined },
     },
     indicatorValue: {
-      name: 'indicator value',
+      name: 'indicator-value',
       type: { name: 'number' },
       description: 'Value of the indicator (only visible when showIndicator is true)',
       if: { arg: 'indicator', truthy: true },
     },
+    indicatorLabel: {
+      name: 'indicator-label',
+      type: { name: 'string' },
+      if: { arg: 'indicator'},
+    }
   };
 };
 
@@ -115,10 +121,11 @@ const Template = (args) => {
       path="${args.path}"
       inverted="${args.inverted}"
       external="${args.external}"
-      no-visited="${args.noVisited}"
+      branded="${args.branded}"
       aria-label="Accessibility enhancer"
       indicator="${args.indicator}"
       indicator-value="${args.indicatorValue}"
+      indicator-label="${args.indicatorLabel}"
       ${args.hideLabel ? 'hide-label' : ''}
     >
     ${args.icon && args.iconPosition === 'before' ?

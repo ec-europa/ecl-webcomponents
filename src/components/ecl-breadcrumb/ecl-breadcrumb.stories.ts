@@ -5,9 +5,7 @@ export default {
 };
 
 const Template = () => 
-  `<ecl-breadcrumb
-    ecl-script
-  >
+  `<ecl-breadcrumb>
     <ecl-breadcrumb-item
       path="${randomizedLink('/example.html')}"
     >

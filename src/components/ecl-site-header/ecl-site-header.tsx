@@ -1,6 +1,7 @@
 import { Component, Prop, h, Element } from '@stencil/core';
-import getAssetPath from '../../utils/assetPath';
-declare const SITEHEADER: any;
+import SiteHeader from '@ecl/site-header';
+import getAssetPath from "../../utils/assetPath";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-site-header',
@@ -10,14 +11,14 @@ declare const SITEHEADER: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build']
+  assetsDirs: ['build'],
 })
 
 export class EclSiteHeader {
   @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() noScript: boolean = false;
   @Prop() loginBlock: boolean = false;
   @Prop() languageBlock: boolean = false;
   @Prop() searchBlock: boolean = true;
@@ -80,25 +81,19 @@ export class EclSiteHeader {
       inner.classList.add(`sc-ecl-site-header-${this.theme}`);
     }
     if (this.el.querySelector('.ecl-mega-menu')) {
+      this.el.querySelector('.ecl-mega-menu').classList.add(`sc-ecl-site-header-${this.theme}`);
       this.el.firstElementChild.classList.add('ecl-site-header--has-mega-menu');
       const open = this.el.querySelector('.ecl-mega-menu__open');
-      open.classList.add(`sc-ecl-site-header-${this.theme}`);
-    }
-    if (this.eclScript) {
-      // Load the ECL vanilla js if not already present.
-      const src = getAssetPath('./build/scripts/ecl-site-header-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
+      if (open) {
+        open.classList.add(`sc-ecl-site-header-${this.theme}`);
       }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const siteHeader = new SITEHEADER.SiteHeader(this.el.firstElementChild);
-        siteHeader.init();
-      };
+    }
+    if (!this.noScript) {
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.SiteHeader = SiteHeader;
 
-      document.body.appendChild(script);
+      const siteHeader = new SiteHeader(this.el.firstElementChild);
+      siteHeader.init();
     }
   }
 

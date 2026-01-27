@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-page-information renders 1`] = `
+<ecl-page-information>
+  <!---->
+  <div class="ecl-page-info">
+    This page was last updated on 00 Month 0000
+  </div>
+</ecl-page-information>
+`;

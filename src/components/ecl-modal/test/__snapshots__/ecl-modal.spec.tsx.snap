@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-modal renders 1`] = `
-<ecl-modal close-label="Close" ecl-script="" theme="ec" toggle-id="modal-demo-toggle" with-body="" with-body-fixed="" with-footer="" with-header="">
+<ecl-modal close-label="Close" theme="ec" toggle-id="modal-demo-toggle" with-body="" with-body-fixed="" with-footer="" with-header="">
   <!---->
-  <dialog class="ecl-modal ecl-modal--default ecl-modal--l" data-ecl-modal-toggle="modal-demo-toggle">
+  <dialog class="ecl-modal ecl-modal--default ecl-modal--l" data-ecl-auto-initialized="true" data-ecl-modal-toggle="modal-demo-toggle">
     <div class="ecl-container ecl-modal__container">
       <div class="ecl-col-l-8 ecl-col-m-10 ecl-modal__content">
         <header class="ecl-modal__header">
           <div class="ecl-modal__header-content">
             <div slot="header">
               <ecl-icon icon="information" size="m" style-class="ecl-modal__icon sc-ecl-modal-ec">
-                <span class="ecl-icon ecl-modal__icon sc-ecl-modal-ec wt-icon--information wt-icon--m wt-icon--placeholder"></span>
+                <span class="ecl-icon ecl-icon--m ecl-modal__icon sc-ecl-modal-ec wt-icon--information wt-icon--placeholder"></span>
               </ecl-icon>
               <ecl-text tag="span">
                 Lorem ipsum dolor sit amet
@@ -25,7 +25,7 @@ exports[`ecl-modal renders 1`] = `
                   Close
                 </span>
                 <ecl-icon slot="icon-after" style-class="sc-ecl-modal-ec">
-                  <span class="ecl-button__icon ecl-icon sc-ecl-button-ec sc-ecl-modal-ec wt-icon--close wt-icon--placeholder wt-icon--s"></span>
+                  <span class="ecl-button__icon ecl-icon ecl-icon--s sc-ecl-button-ec sc-ecl-modal-ec wt-icon--close wt-icon--placeholder"></span>
                 </ecl-icon>
               </span>
             </button>
@@ -46,7 +46,7 @@ exports[`ecl-modal renders 1`] = `
                   <label class="ecl-checkbox__label" htmlfor="checkbox-default-1">
                     <span class="ecl-checkbox__box">
                       <ecl-icon style-class="ecl-checkbox__icon sc-ecl-input-ec">
-                        <span class="ecl-checkbox__icon ecl-icon sc-ecl-input-ec wt-icon--check wt-icon--m wt-icon--placeholder"></span>
+                        <span class="ecl-checkbox__icon ecl-icon ecl-icon--m sc-ecl-input-ec wt-icon--check wt-icon--placeholder"></span>
                       </ecl-icon>
                     </span>
                     <span class="ecl-checkbox__text">

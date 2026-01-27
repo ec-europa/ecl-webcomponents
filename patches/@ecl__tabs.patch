@@ -1,0 +1,39 @@
+diff --git a/tabs.js b/tabs.js
+index e7e09a7797ada74800b38a2f2ffb00a00793c3b3..480a03e5b7dbe37b71021f01d1fe90b78741643a 100644
+--- a/tabs.js
++++ b/tabs.js
+@@ -144,16 +144,27 @@ export class Tabs {
+       this.dropdownList = document.createElement('div');
+       this.dropdownList.classList.add('ecl-tabs__dropdown-list');
+       this.listItems.forEach((item) => {
+-        const clone = item.cloneNode(true);
+-        const cloneLink = clone.querySelector('a');
+-        if (cloneLink && cloneLink.id) {
+-          cloneLink.setAttribute('data-id', cloneLink.id);
+-          cloneLink.removeAttribute('id');
++        const originalLink = item.querySelector('.ecl-link');
++        if (!originalLink) return;
++
++        const li = document.createElement('div');
++        li.className = 'ecl-tabs__item';
++
++        const a = document.createElement('a');
++        a.className = originalLink.className;
++        a.href = originalLink.getAttribute('href');
++        a.textContent = originalLink.textContent?.trim() ?? '';
++
++        if (originalLink.id) {
++          a.dataset.id = originalLink.id;
+         }
+ 
+-        clone.addEventListener('click', this.handleClickOnTabs);
+-        this.dropdownList.appendChild(clone);
++        li.appendChild(a);
++        li.addEventListener('click', this.handleClickOnTabs);
++
++        this.dropdownList.appendChild(li);
+       });
++
+       this.dropdown.appendChild(this.dropdownList);
+       this.moreItem.appendChild(this.dropdown);
+       this.dropdownItems = queryAll(

@@ -3,14 +3,18 @@ import { EclDatepicker } from '../ecl-datepicker';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-datepicker', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclDatepicker, EclIcon],
       html: `<ecl-datepicker
               required
-              input-id="ecl-datepicker"
-              default-value="11-10-21"
-              placeholder="DD-MM-YYYY"
+              input-id="ecl-datepicker-demo"
+              data-value="11-10-25"
+              data-placeholder="DD-MM-YYYY"
             >
             </ecl-datepicker>`,
     });

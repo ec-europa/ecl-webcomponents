@@ -6,12 +6,15 @@ import { EclLink } from '../../ecl-link/ecl-link';
 import { EclButton } from '../../ecl-button/ecl-button';
 
 describe('ecl-news-ticker', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclNewsTicker, EclNewsTickerItem, EclIcon, EclLink, EclButton],
       html: `<ecl-news-ticker
         items-length="6"
-        ecl-script
         counter-label="of"
         sr-next="Next item"
         sr-prev="Prev item"

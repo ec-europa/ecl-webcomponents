@@ -3,6 +3,10 @@ import { EclRange } from '../ecl-range';
 import { EclFormGroup } from '../../ecl-form-group/ecl-form-group';
 
 describe('ecl-range', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclRange, EclFormGroup],
@@ -22,7 +26,6 @@ describe('ecl-range', () => {
           name="input-range"
           min=1
           max=30
-          ecl-script
           step=1
           value-label="Value: "
         >

@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element, Event, EventEmitter } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const DATEPICKER: any;
+import Datepicker from "@ecl/datepicker";
+declare var ECL: any;
 
 @Component({
   tag: 'ecl-datepicker',
@@ -24,11 +24,12 @@ export class EclDatepicker {
   @Prop() placeholder: string = 'DD-MM-YYYY';
   @Prop() inputId: string = `ecl-datepicker-${Math.random().toString(36).slice(2, 10)}`;
   @Prop() invalid: boolean = false;
-  @Prop() type: string;
-  @Prop() name: string;
+  @Prop() firstDayOfTheWeek: number = 1;
+  @Prop() width: string = 'm';
+  @Prop() min: string = '';
+  @Prop() max: string = '';
+  @Prop() name: string = this.inputId;
   @Prop() defaultValue: string;
-  @Prop() dateFormat: string = 'DD-MM-YYYY';
-  @Prop() yearRange: number = 40;
 
   handleChange(event: Event) {
     const newValue = (event.target as HTMLInputElement).value;
@@ -44,7 +45,11 @@ export class EclDatepicker {
   }
 
   getClass(): string {
-    const styleClasses = ['ecl-datepicker', this.styleClass];
+    const styleClasses = [
+      'ecl-datepicker',
+      `ecl-datepicker--${this.width}`,
+      this.styleClass
+    ];
 
     if (this.invalid) {
       styleClasses.push('ecl-datepicker--invalid');
@@ -62,43 +67,35 @@ export class EclDatepicker {
   }
 
   componentDidLoad() {
-    const pikadaySrc = 'https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.2/pikaday.js';
+    const duetSrc = 'https://cdn.jsdelivr.net/npm/@duetds/date-picker@1.4.0/dist/duet/duet.esm.js';
 
-    if (document.querySelector(`script[src="${pikadaySrc}"]`)) {
-      document.querySelector(`script[src="${pikadaySrc}"]`).remove();
+    if (document.querySelector(`script[src="${duetSrc}"]`)) {
+      document.querySelector(`script[src="${duetSrc}"]`).remove();
     }
 
-    const pikaday = document.createElement('script');
-    pikaday.setAttribute('crossorigin', 'anonymous');
-    pikaday.src = pikadaySrc;
+    const duet = document.createElement('script');
+    duet.setAttribute('type', 'module');
+    duet.src = duetSrc;
 
-    pikaday.onload = () => {
-      const src = getAssetPath('./build/scripts/ecl-datepicker-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
+    duet.onload = () => {
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Datepicker = Datepicker;
 
-      const script = document.createElement('script');
-      script.src = src;
-      script.defer = true;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const datepicker = new DATEPICKER.Datepicker(
-          this.el.querySelector('.ecl-datepicker__field'),
-          { format: this.dateFormat, yearRange: Number(this.yearRange) }
-        );
+      const datepicker = new Datepicker(
+        this.el.querySelector('.ecl-datepicker'),
+      );
 
-        datepicker.init();
-      };
-
-      document.body.appendChild(script);
+      datepicker.init();
     };
 
-    document.body.appendChild(pikaday);
+    document.body.appendChild(duet);
   }
 
   render() {
     const attributes = {};
+    if (this.invalid) {
+      attributes['invalid'] = true;
+    }
     if (this.inputId) {
       const group = this.el.closest('.ecl-form-group');
       if (group) {
@@ -116,27 +113,22 @@ export class EclDatepicker {
     }
 
     return (
-      <div class={this.getClass()}>
-        <input
-          class={`ecl-datepicker__field ecl-text-input sc-ecl-text-input-${this.theme} ecl-text-input--s ${this.invalid ? 'ecl-text-input--invalid' : ''}`}
-          autocomplete="off"
-          data-ecl-datepicker-toggle
-          id={this.inputId}
-          value={this.defaultValue}
+      <div 
+        class={this.getClass()}
+        data-ecl-datepicker-toggle
+        data-placeholder={this.placeholder}
+        data-value={this.defaultValue}
+        {...attributes}
+      >
+        <duet-date-picker
+          identifier={this.inputId}
+          name={this.name}
           required={this.required}
           disabled={this.disabled}
-          placeholder={this.placeholder}
-          onChange={event => this.handleChange(event)}
-          onFocus={() => this.handleFocus()}
-          onBlur={() => this.handleBlur()}
-          {...attributes}
-        />
-        <ecl-icon
-          styleClass={`ecl-datepicker__icon sc-ecl-datepicker-${this.theme}`}
-          icon="calendar"
-          size="xs"
-        >  
-        </ecl-icon>
+          first-day-of-the-week={this.firstDayOfTheWeek}
+          min={this.min}
+          max={this.max}
+        ></duet-date-picker>
       </div>
     );
   }

@@ -10,11 +10,11 @@
 | Property         | Attribute         | Description | Type      | Default     |
 | ---------------- | ----------------- | ----------- | --------- | ----------- |
 | `close`          | `close`           |             | `boolean` | `false`     |
-| `eclScript`      | `ecl-script`      |             | `boolean` | `false`     |
 | `icon`           | `icon`            |             | `string`  | `undefined` |
 | `indicator`      | `indicator`       |             | `boolean` | `false`     |
 | `indicatorValue` | `indicator-value` |             | `number`  | `undefined` |
 | `itemId`         | `item-id`         |             | `string`  | `undefined` |
+| `noScript`       | `no-script`       |             | `boolean` | `false`     |
 | `styleClass`     | `style-class`     |             | `string`  | `undefined` |
 | `theme`          | `theme`           |             | `string`  | `undefined` |
 | `toggleLabel`    | `toggle-label`    |             | `string`  | `undefined` |

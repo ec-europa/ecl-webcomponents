@@ -4,11 +4,14 @@ import { EclLink } from '../../ecl-link/ecl-link';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-popover', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+  
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclPopover, EclLink, EclIcon],
       html:   `<ecl-popover
-        ecl-script
         toggle-label="Popover"
         icon="share"
         item-id="popover-example"

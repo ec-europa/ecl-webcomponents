@@ -12,7 +12,6 @@
 | `bannerTop`          | `banner-top`            |             | `string`  | `undefined`                                                                    |
 | `bannerTopLink`      | `banner-top-link`       |             | `string`  | `undefined`                                                                    |
 | `closeLabel`         | `close-label`           |             | `string`  | `undefined`                                                                    |
-| `eclScript`          | `ecl-script`            |             | `boolean` | `false`                                                                        |
 | `euLabel`            | `eu-label`              |             | `string`  | `undefined`                                                                    |
 | `langCode`           | `lang-code`             |             | `string`  | `undefined`                                                                    |
 | `language`           | `language`              |             | `string`  | `undefined`                                                                    |
@@ -31,6 +30,7 @@
 | `logoTitle`          | `logo-title`            |             | `string`  | `undefined`                                                                    |
 | `logoutLink`         | `logout-link`           |             | `string`  | `undefined`                                                                    |
 | `logoutText`         | `logout-text`           |             | `string`  | `undefined`                                                                    |
+| `noScript`           | `no-script`             |             | `boolean` | `false`                                                                        |
 | `nonEuLabel`         | `non-eu-label`          |             | `string`  | `undefined`                                                                    |
 | `searchBlock`        | `search-block`          |             | `boolean` | `true`                                                                         |
 | `searchFormId`       | `search-form-id`        |             | `string`  | `` `ecl-site-header-search-form-${Math.random().toString(36).slice(2, 10)}` `` |

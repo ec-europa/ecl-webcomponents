@@ -15,8 +15,9 @@ export class EclButton {
   @Prop() styleClass: string = '';
   @Prop() type: string = 'submit';
   @Prop() buttonStyle: string;
-  @Prop() variant: string = 'primary';
+  @Prop() variant: string = '';
   @Prop({ mutable: true }) theme: string;
+  @Prop() size: string = 'l';
   @Prop() containerExtraClasses: string;
   @Prop() hideLabel: boolean = false;    
   @Prop() ariaControls: string;
@@ -60,9 +61,10 @@ export class EclButton {
   getClass(): string {
     return [
       'ecl-button',
-      `ecl-button--${this.variant}`,
+      this.variant ? `ecl-button--${this.variant}` : '',
       this.hideLabel ? 'ecl-button--icon-only' : '',
       this.buttonStyle ? `ecl-button--${this.buttonStyle}` : '',
+      this.size !== 'l' ? `ecl-button--${this.size}` : '',
       this.styleClass,
     ].join(' ').trim();
   }
@@ -90,7 +92,7 @@ export class EclButton {
           {this.indicator && this.hasIconBefore && (
             <span class="ecl-button__icon-container">
               <slot name="icon-before"></slot>
-              <ecl-indicator ecl-script value={this.indicatorValue}></ecl-indicator>
+              <ecl-indicator  value={this.indicatorValue}></ecl-indicator>
             </span>
           )}
 
@@ -104,7 +106,7 @@ export class EclButton {
           {this.indicator && this.hasIconAfter && (
             <span class="ecl-button__icon-container">
               <slot name="icon-after"></slot>
-              <ecl-indicator ecl-script value={this.indicatorValue}></ecl-indicator>
+              <ecl-indicator  value={this.indicatorValue}></ecl-indicator>
             </span>
           )}
         </span>

@@ -10,19 +10,6 @@ const includePaths = [nodeModules];
 const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()}`;
 
 module.exports = {
-  scripts: [
-    {
-      entry: path.resolve(nodeModules, '@ecl/category-filter/category-filter.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-category-filter-vanilla.js'),
-      options: {
-        banner,
-        format: 'iife',
-        moduleName: 'CATEGORYFILTER',
-        includePaths,
-        sourceMap: false,
-      },
-    },
-  ],
   styles: [
     {
       entry: path.resolve(__dirname, 'src/styles/ecl-category-filter-ec.scss'),

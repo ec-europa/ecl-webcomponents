@@ -6,7 +6,6 @@ export default {
 
 const Template = (args) => 
   `<ecl-timeline
-    ecl-script
     color-mode="${args.color_mode}"
    >
     <ecl-timeline-item

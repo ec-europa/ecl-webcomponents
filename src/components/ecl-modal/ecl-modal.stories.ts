@@ -54,7 +54,6 @@ const Template = args =>
     with-header
     with-footer
     with-body
-    ecl-script
     with-body-fixed
     toggle-id="modal-demo-toggle"
     close-label="Close"

@@ -66,12 +66,12 @@ const Template = args =>
     close-label="${args.closeMenu}"
     back-label="${args.backMenu}"
     menu-link="${args.menuLink}"
-    ecl-script
     menu-id="${args.menuId}"
     menu-title="${args.menuTitle}"
     previousLabel="${args.previousLabel}"
     nextLabel="${args.nextLabel}"
     max-lines=${args.maxLines}
+    aria-label="Main navigation"
   >
     <ecl-menu-item
       link="/example.html"

@@ -5,6 +5,10 @@ import { EclInput } from '../../ecl-input/ecl-input';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-modal', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclModal, EclButton, EclIcon, EclInput],
@@ -14,7 +18,6 @@ describe('ecl-modal', () => {
         with-footer
         with-body
         with-body-fixed
-        ecl-script
         toggle-id="modal-demo-toggle"
         close-label="Close"
       >

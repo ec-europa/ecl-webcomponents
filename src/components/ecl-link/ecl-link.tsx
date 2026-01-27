@@ -16,10 +16,11 @@ export class EclLink {
   @Prop({ mutable: true }) theme: string;
   @Prop() path: string;
   @Prop() styleClass: string;
+  @Prop() elId: string;
   @Prop() inverted: boolean = false;
-  @Prop() noVisited: boolean = false;
   @Prop() variant: string = '';
   @Prop() titleAttr: string;
+  @Prop() branded: boolean = false;
   @Prop() external: boolean = false;
   @Prop() hideLabel: boolean = false;
   @Prop() ariaLabel: string;
@@ -29,6 +30,7 @@ export class EclLink {
   @Prop() download: boolean = false;
   @Prop() indicator: boolean = false;
   @Prop() indicatorValue: string;
+  @Prop() indicatorLabel: string;
 
   getClass(): string {
     const styleClasses = [
@@ -44,12 +46,12 @@ export class EclLink {
       styleClasses.push('ecl-link--inverted');
     }
 
-    if (this.hideLabel) {
-      styleClasses.push('ecl-link--icon-only');
+    if (this.branded) {
+      styleClasses.push('ecl-link--brand');
     }
 
-    if (this.noVisited) {
-      styleClasses.push('ecl-link--no-visited');
+    if (this.hideLabel) {
+      styleClasses.push('ecl-link--icon-only');
     }
 
     if (this.el.querySelector('ecl-icon')) {
@@ -108,6 +110,10 @@ export class EclLink {
       'href': this.path,
     };
 
+    if (this.elId) {
+      attrs['id'] = this.elId;
+    }
+
     if (this.titleAttr) {
       attrs['title'] = this.titleAttr;
     }
@@ -141,19 +147,21 @@ export class EclLink {
       {this.indicator && this.hasIconBefore && (
         <span class="ecl-link__icon-container">
           <slot name="icon-before"></slot>
-          <ecl-indicator ecl-script value={this.indicatorValue}></ecl-indicator>
+          <ecl-indicator value={this.indicatorValue} sr-label={this.indicatorLabel}></ecl-indicator>
         </span>
       )}
-      <span class="ecl-link__label">
-        <slot></slot>
-      </span>
+      {(this.hasIconBefore || this.hasIconAfter) ?
+        <span class="ecl-link__label">
+          <slot></slot>
+        </span> : <slot></slot>
+      }
       {(this.external || (this.hasIconAfter && !this.indicator)) && (
         <slot name="icon-after">{ this.external ? this.getExternal() : '' }</slot>
       )}
       {this.indicator && this.hasIconAfter && (
         <span class="ecl-link__icon-container">
           <slot name="icon-after"></slot>
-          <ecl-indicator ecl-script value={this.indicatorValue}></ecl-indicator>
+          <ecl-indicator value={this.indicatorValue} sr-label={this.indicatorLabel}></ecl-indicator>
         </span>
       )}
       </a>

@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element, State } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const TIMELINE: any;
+import Timeline from "@ecl/timeline";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-timeline',
@@ -10,13 +10,12 @@ declare const TIMELINE: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build'],
 })
 export class EclTimeline {
   @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() noScript: boolean = false;
   @Prop() colorMode: string;
   @State() toBeToggled: boolean = false;
 
@@ -42,21 +41,12 @@ export class EclTimeline {
       this.el.firstElementChild.classList.add('ecl-timeline--has-headline');
     }
 
-    if (this.eclScript) {
-      // Load the ECL vanilla js if not already present.
-      const src = getAssetPath('./build/scripts/ecl-timeline-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-       ;(window as any).ECL = (window as any).ECL || {};
-        const timeline = new TIMELINE.Timeline(this.el.firstElementChild);
-        timeline.init();
-      };
+    if (!this.noScript) {
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Timeline = Timeline;
 
-      document.body.appendChild(script);
+      const timeline = new Timeline(this.el.firstElementChild);
+      timeline.init();
     }
 
     const toggle = this.el.querySelector('.ecl-timeline__item--toggle');

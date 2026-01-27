@@ -1,6 +1,6 @@
 import { Component, Prop, h, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const BANNER: any;
+import Banner from "@ecl/banner";
+declare var ECL: any;
 
 @Component({
   tag: 'ecl-banner',
@@ -22,8 +22,9 @@ export class EclBanner {
   @Prop() fullWidth: boolean = false;
   @Prop() bannerTitle: string;
   @Prop() bannerTitleLink: string;
+  @Prop() descriptionLink: string;
   @Prop() image: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() noScript: boolean = false;
   @Prop() sources: string;
   @Prop() tracks: string;
   @Prop() imageAlt: string;
@@ -83,19 +84,12 @@ export class EclBanner {
       }
     }
 
-    if (this.eclScript) {
-      const src = getAssetPath('./build/scripts/ecl-banner-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const banner = new BANNER.Banner(this.el.firstElementChild);
-        banner.init();
-      };
-      document.body.appendChild(script);
+    if (!this.noScript) {
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Banner = Banner;
+
+      const banner = new Banner(this.el.firstElementChild);
+      banner.init();
     }
   }
 
@@ -209,7 +203,7 @@ export class EclBanner {
                 { this.bannerTitleLink ?
                   <ecl-link
                     path={this.bannerTitleLink}
-                    variant="standalone"
+                    style-class={`ecl-banner__title-link sc-ecl-banner-${this.theme}`}
                     >
                       { this.bannerTitle }
                     </ecl-link> : this.bannerTitle
@@ -219,7 +213,14 @@ export class EclBanner {
             }
               <p class="ecl-banner__description">
                 <span class="ecl-banner__description-text">
-                  <slot></slot>
+                { this.descriptionLink ?
+                  <ecl-link
+                    path={this.descriptionLink}
+                    style-class={`ecl-banner__description-link sc-ecl-banner-${this.theme}`}
+                  > <slot></slot>
+                  </ecl-link>
+                  : <slot></slot>
+                }
                 </span>
               </p>
             { this.ctaLabel && this.ctaLink ?

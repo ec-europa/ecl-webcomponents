@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const MENU: any;
+import Menu from "@ecl/menu";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-menu',
@@ -10,18 +10,17 @@ declare const MENU: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build'],
 })
 
 export class EclMenu {
   @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() menuId: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() noScript: boolean = false;
   @Prop() styleClass: string;
-  @Prop() group: string = 'group1';
   @Prop() maxLines: number = 2;
   @Prop() menuTitle: string;
+  @Prop() ariaLabel: string;
   @Prop() closeLabel: string;
   @Prop() backLabel: string;
   @Prop() siteName: string;
@@ -39,20 +38,11 @@ export class EclMenu {
   }
 
   componentDidLoad() {
-    if (this.eclScript) {
-      const src = getAssetPath('./build/scripts/ecl-menu-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const menu = new MENU.Menu(this.el.firstElementChild);
-        menu.init();
-      };
-
-      document.body.appendChild(script);
+    if (!this.noScript) {
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Menu = Menu;
+      const menu = new Menu(this.el.firstElementChild);
+      menu.init();
     }
   }
 
@@ -69,7 +59,9 @@ export class EclMenu {
 
   getAttrs() {
     const attrs = {
-      'aria-expanded': 'false',
+      'data-expanded': 'false',
+      'data-ecl-menu': true,
+      'aria-label': this.ariaLabel, 
       'data-ecl-menu-max-lines': this.maxLines,
       'role': 'navigation',
     };
@@ -134,7 +126,7 @@ export class EclMenu {
               <ecl-button
                 data-ecl-menu-back
                 type="submit"
-                variant="ghost"
+                variant="tertiary"
                 styleClass={`ecl-menu__back sc-ecl-menu-${this.theme}`}
                 containerExtraClasses={`sc-ecl-menu-${this.theme}`}
               >
@@ -151,7 +143,7 @@ export class EclMenu {
             <ecl-button
               theme={this.theme}
               type="button"
-              variant="ghost"
+              variant="tertiary"
               hideLabel
               styleClass={`ecl-menu__item ecl-menu__items-previous sc-ecl-menu-${this.theme}`}
               data-ecl-menu-items-previous
@@ -168,7 +160,7 @@ export class EclMenu {
             <ecl-button
               theme={this.theme}
               type="button"
-              variant="ghost"
+              variant="tertiary"
               hideLabel
               styleClass={`ecl-menu__item ecl-menu__items-next sc-ecl-menu-${this.theme}`}
               data-ecl-menu-items-next

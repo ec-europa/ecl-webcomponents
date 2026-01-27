@@ -1,5 +1,5 @@
 import { Component, h, Prop, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
+import MediaContainer from "@ecl/media-container";
 declare const ECL: any;
 
 @Component({
@@ -10,7 +10,6 @@ declare const ECL: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build'],
 })
 export class EclMediaContainer {
   @Element() el: HTMLElement;
@@ -18,6 +17,7 @@ export class EclMediaContainer {
   @Prop() styleClass: string;
   @Prop() imageAlt: string;
   @Prop() image: string;
+  @Prop() imageAnchor: string = 'center';
   @Prop() fullWidth: boolean = false;
   @Prop() sources: string;
   @Prop() tracks: string;
@@ -28,7 +28,7 @@ export class EclMediaContainer {
   @Prop() srPause: string;
   @Prop() srVideoPlayer: string;
   @Prop() srVideoAudio: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() noScript: boolean = false;
   @Prop() embeddedMedia: boolean = false;
 
   getClass(): string {
@@ -45,7 +45,7 @@ export class EclMediaContainer {
   }
 
   componentDidLoad() {
-    if (this.eclScript && (this.embeddedMedia || (this.sources || this.tracks))) {
+    if (!this.noScript && (this.embeddedMedia || (this.sources || this.tracks))) {
       this.el.firstElementChild.setAttribute('data-ecl-media-container', "");
       if (this.sources || this.tracks) {
         const video = this.el.querySelector('video');
@@ -53,17 +53,11 @@ export class EclMediaContainer {
           video.setAttribute('data-ecl-media-container-video', '');
         }
       }
-      const src = getAssetPath('./build/scripts/ecl-media-container-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        const mediaContainer = new ECL.MediaContainer(this.el.firstElementChild);
-        mediaContainer.init();
-      };
-      document.body.appendChild(script);
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.MediaContainer = MediaContainer;
+
+      const mediaContainer = new ECL.MediaContainer(this.el.firstElementChild);
+      mediaContainer.init();
     }
 
     const iframe = this.el.querySelector('iframe');
@@ -115,6 +109,7 @@ export class EclMediaContainer {
             imgClass={`ecl-media-container__media sc-ecl-media-container-${this.theme}`}
             image={this.image}
             imageAlt={this.imageAlt}
+            imageAnchor={this.imageAnchor}
           >
             <slot name="sources"></slot>
           </ecl-picture>

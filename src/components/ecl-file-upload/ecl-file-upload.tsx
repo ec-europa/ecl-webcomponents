@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const FILE: any;
+import FileUpload from "@ecl/file-upload";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-file-upload',
@@ -10,7 +10,6 @@ declare const FILE: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build'],
 })
 export class EclFileUpload {
   @Element() el: HTMLElement;
@@ -18,7 +17,7 @@ export class EclFileUpload {
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() inputClass: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() noScript: boolean = false;
   @Prop() disabled: boolean = false;
   @Prop() required: boolean = false;
   @Prop() invalid: boolean = false;
@@ -55,18 +54,13 @@ export class EclFileUpload {
   }
 
   componentDidLoad() {
-    if (this.eclScript) {
-      const src = getAssetPath('./build/scripts/ecl-file-upload-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const fileUpload = new FILE.FileUpload(this.el.firstElementChild);
-        fileUpload.init();
-      };
+    if (!this.noScript) {
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.FileUpload = FileUpload;
+      
+      const fileUpload = new FileUpload(this.el.firstElementChild);
+      fileUpload.init();
+
       // @ts-ignore
       const observer = new MutationObserver((mutationsList, observer) => {
         for (const mutation of mutationsList) {
@@ -93,8 +87,6 @@ export class EclFileUpload {
         childList: true,
         subtree: true,
       });
-
-      document.body.appendChild(script);
     }
   }
 

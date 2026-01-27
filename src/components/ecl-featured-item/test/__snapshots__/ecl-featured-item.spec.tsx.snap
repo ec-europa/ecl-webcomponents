@@ -1,16 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ecl-featured-item renders 1`] = `
-<ecl-featured-item el-id="featured-item-demo" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="Title" link-label="Read more" link-path="/example.html" media-caption="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." position="right" variant="highlight">
+exports[`ecl-featured-item renders correctly 1`] = `
+<ecl-featured-item el-id="featured-item-demo" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="Title" link-label="Read more" link-path="/example.html" media-caption="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.">
   <!---->
-  <article class="ecl-featured-item ecl-featured-item--highlight">
-    <div class="ecl-featured-item__container ecl-featured-item__container--right">
+  <article class="ecl-featured-item">
+    <div class="ecl-featured-item__container">
+      <div class="ecl-featured-item__item">
+        <div class="ecl-featured-item__content">
+          <div class="ecl-featured-item__info">
+            <div class="ecl-featured-item__title" id="featured-item-demo-title">
+              Title
+            </div>
+            <div class="ecl-featured-item__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </div>
+          </div>
+          <ecl-link aria-describedby="featured-item-demo-title" style-class="ecl-featured-item__link sc-ecl-featured-item-ec ">
+            <!---->
+            <a aria-describedby="featured-item-demo-title" class="ecl-featured-item__link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-featured-item-ec" href="/example.html">
+              <span class="ecl-link__label">
+                Read more
+              </span>
+              <slot-fb hidden="" name="icon-after"></slot-fb>
+              <ecl-icon class="ecl-link__icon" slot="icon-after" style-class="sc-ecl-featured-item-ec">
+                <span class="ecl-icon ecl-icon--xs sc-ecl-featured-item-ec wt-icon--arrow-left wt-icon--flip-horizontal wt-icon--placeholder"></span>
+              </ecl-icon>
+            </a>
+          </ecl-link>
+        </div>
+      </div>
       <div class="ecl-featured-item__item">
         <ecl-media-container>
           <!---->
-          <div class="ecl-featured-item__media_container ecl-media-container">
+          <div class="ecl-featured-item__media_container ecl-media-container sc-ecl-featured-item-ec">
             <figure class="ecl-media-container__figure">
-              <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imgclass="ecl-media-container__media sc-ecl-media-container-ec" styleclass="ecl-media-container__picture sc-ecl-media-container-ec"></ecl-picture>
+              <ecl-picture>
+                <!---->
+                <picture class="ecl-media-container__picture ecl-picture sc-ecl-featured-item-ec sc-ecl-media-container-ec">
+                  <img class="ecl-media-container__media sc-ecl-featured-item-ec sc-ecl-media-container-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
+                </picture>
+              </ecl-picture>
               <figcaption class="ecl-media-container__caption">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               </figcaption>
@@ -18,25 +47,57 @@ exports[`ecl-featured-item renders 1`] = `
           </div>
         </ecl-media-container>
       </div>
+    </div>
+  </article>
+</ecl-featured-item>
+`;
+
+exports[`ecl-featured-item renders correctly with all the options specified 1`] = `
+<ecl-featured-item el-id="featured-item-demo-with-options" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="Title" link-label="Read more" link-path="/example.html" link-type="highlighted" media-anchor="left" media-behavior="dynamic" media-caption="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." position="right" variant="highlight" vertical-alignment="center">
+  <!---->
+  <article class="ecl-featured-item ecl-featured-item--dynamic ecl-featured-item--highlight ecl-featured-item--link-highlighted ecl-featured-item--vcenter">
+    <div class="ecl-featured-item__container ecl-featured-item__container--right">
       <div class="ecl-featured-item__item">
-        <div class="ecl-featured-item__title" id="featured-item-demo">
-          Title
+        <div class="ecl-featured-item__content">
+          <div class="ecl-featured-item__info">
+            <div class="ecl-featured-item__title" id="featured-item-demo-with-options-title">
+              Title
+            </div>
+            <div class="ecl-featured-item__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </div>
+          </div>
+          <ecl-link aria-describedby="featured-item-demo-with-options-title" style-class="ecl-featured-item__link sc-ecl-featured-item-ec ecl-featured-item--link-highlighted">
+            <!---->
+            <a aria-describedby="featured-item-demo-with-options-title" class="ecl-featured-item--link-highlighted ecl-featured-item__link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-featured-item-ec" href="/example.html">
+              <span class="ecl-link__label">
+                Read more
+              </span>
+              <slot-fb hidden="" name="icon-after"></slot-fb>
+              <ecl-icon class="ecl-link__icon" slot="icon-after" style-class="sc-ecl-featured-item-ec">
+                <span class="ecl-icon ecl-icon--xs sc-ecl-featured-item-ec wt-icon--arrow-left wt-icon--flip-horizontal wt-icon--placeholder"></span>
+              </ecl-icon>
+            </a>
+          </ecl-link>
         </div>
-        <div class="ecl-featured-item__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        </div>
-        <ecl-link aria-describedby="featured-item-demo" style-class="ecl-featured-item__link sc-ecl-featured-item-ec">
+      </div>
+      <div class="ecl-featured-item__item">
+        <ecl-media-container>
           <!---->
-          <a aria-describedby="featured-item-demo" class="ecl-featured-item__link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-featured-item-ec" href="/example.html">
-            <span class="ecl-link__label">
-              Read more
-            </span>
-            <slot-fb hidden="" name="icon-after"></slot-fb>
-            <ecl-icon class="ecl-link__icon" slot="icon-after" style-class="sc-ecl-featured-item-ec">
-              <span class="ecl-icon sc-ecl-featured-item-ec wt-icon--arrow-left wt-icon--flip-horizontal wt-icon--placeholder wt-icon--xs"></span>
-            </ecl-icon>
-          </a>
-        </ecl-link>
+          <div class="ecl-featured-item__media_container ecl-media-container sc-ecl-featured-item-ec">
+            <figure class="ecl-media-container__figure">
+              <ecl-picture>
+                <!---->
+                <picture class="ecl-media-container__picture ecl-picture sc-ecl-featured-item-ec sc-ecl-media-container-ec">
+                  <img class="ecl-media-container__media sc-ecl-featured-item-ec sc-ecl-media-container-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" style="--ecl-image-anchor: left;">
+                </picture>
+              </ecl-picture>
+              <figcaption class="ecl-media-container__caption">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </figcaption>
+            </figure>
+          </div>
+        </ecl-media-container>
       </div>
     </div>
   </article>

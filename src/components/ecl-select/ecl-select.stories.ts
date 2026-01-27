@@ -207,7 +207,6 @@ const Template = (args) =>
       multiple-search-no-results-text="${args.multipleSearchNoResultsText}"
       multiple-all-text="${args.multipleAllText}"
       multiple-clear-all-text="${args.multipleClearAllText}"
-      ecl-script=${args.multiple}
       button-label="${args.buttonLabel}"
       select-id="custom-select"
       name="ecl-select"

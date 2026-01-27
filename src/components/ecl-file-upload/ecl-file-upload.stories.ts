@@ -108,7 +108,6 @@ const Template = args =>
   invalid=${args.invalid}
   disabled=${args.disabled}
   invalid-text="This is an error message"
-  theme="${args.theme}"
   aria-label-optional="Aria label optional"
   aria-label-required="Aria label required"
 >
@@ -123,7 +122,6 @@ const Template = args =>
     placeholder="${args.placeholder}"
     helper-text="${args.type === 'checkbox' || args.type === 'radio' ? 'This is the input helper text' : '' }"
     name="${args.name}"
-    ecl-script
     button-choose-label="${args.multiple ? 'Choose files' : args.buttonChooseLabel}"
     button-replace-label="${args.buttonReplaceLabel}"
     multiple="${args.multiple}"

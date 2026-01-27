@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element, State, Event, EventEmitter } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const RANGE: any;
+import Range from "@ecl/range";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-range',
@@ -10,7 +10,6 @@ declare const RANGE: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build'],
 })
 export class EclRange {
   @Element() el: HTMLElement;
@@ -18,7 +17,7 @@ export class EclRange {
   @Prop() inputId: string = `ecl-range-${Math.random().toString(36).slice(2, 10)}`;
   @Prop() styleClass: string;
   @Prop() inputClass: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() noScript: boolean = false;
   @Prop() disabled: boolean = false;
   @Prop() required: boolean = false;
   @Prop() invalid: boolean = false;
@@ -69,22 +68,16 @@ export class EclRange {
   }
 
   componentDidLoad() {
-    if (this.eclScript) {
-      const src = getAssetPath('./build/scripts/ecl-range-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const formGroup = this.el.closest('.ecl-form-group');
-        formGroup.setAttribute('data-ecl-range', 'data-ecl-range');
-        formGroup.classList.add(`sc-ecl-range-${this.theme}`);
-        const range = new RANGE.Range(formGroup);
-        range.init();
-      };
-      document.body.appendChild(script);
+    if (!this.noScript) {
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Range = Range;
+
+      const formGroup = this.el.closest('.ecl-form-group');
+      formGroup.setAttribute('data-ecl-range', 'data-ecl-range');
+      formGroup.classList.add(`sc-ecl-range-${this.theme}`);
+
+      const range = new Range(formGroup);
+      range.init();
     }
   }
 

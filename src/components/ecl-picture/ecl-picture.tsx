@@ -12,10 +12,11 @@ import { Component, Prop, h } from '@stencil/core';
 
 export class EclPicture {
   @Prop() styleClass: string = '';
-  @Prop() theme: string = 'ec';
+  @Prop({ mutable: true }) theme: string;
   @Prop() image: string;
   @Prop() imgClass: string;
   @Prop() imageAlt: string;
+  @Prop() imageAnchor: string = 'center';
   @Prop() lazy: boolean = false;
   @Prop() zoom: boolean = false;
 
@@ -49,7 +50,17 @@ export class EclPicture {
       attrs['loading'] = 'lazy';
     }
 
+    if (this.imageAnchor && this.imageAnchor !== 'center') {
+      attrs['style'] = {
+        '--ecl-image-anchor': this.imageAnchor,
+      };
+    }
+
     return attrs;
+  }
+
+  componentWillLoad() {
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() {

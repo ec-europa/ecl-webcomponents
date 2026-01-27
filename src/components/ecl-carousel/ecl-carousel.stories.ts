@@ -31,7 +31,6 @@ export default {
 const Template = (args) => 
   `<ecl-carousel
     carousel-id="ecl-carousel-demo"
-    ecl-script
     slides-number=3
     full-width="${args.fullWidth}"
   >

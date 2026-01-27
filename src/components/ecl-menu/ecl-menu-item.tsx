@@ -117,10 +117,11 @@ export class EclMenuItem {
         <ecl-button 
           styleClass={`ecl-menu__button-caret sc-ecl-menu-${this.theme}`}
           type="button"
+          size="m"
           theme={this.theme}
           variant="tertiary"
           buttonStyle="neutral"
-          hide-label
+          hideLabel
           {...buttonAttrs}
         > 
           <ecl-icon

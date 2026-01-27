@@ -6,7 +6,7 @@ exports[`ecl-description-list renders 1`] = `
   <dl class="ecl-description-list ecl-description-list--vertical">
     <ecl-description-list-term theme="ec">
       <!---->
-      <dt class="ecl-description-list__term sc-ecl-description-list-ec">
+      <dt class="ecl-description-list__term is-first sc-ecl-description-list-ec">
         Standard text
       </dt>
     </ecl-description-list-term>

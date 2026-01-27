@@ -1,6 +1,6 @@
 import { Component, Prop, h, Element } from '@stencil/core';
-import getAssetPath from '../../utils/assetPath';
-declare const INDICATOR: any;
+import Indicator from '@ecl/indicator';
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-indicator',
@@ -12,10 +12,12 @@ declare const INDICATOR: any;
   scoped: true,
   assetsDirs: ['build'],
 })
+
 export class EclIndicator {
   @Element() el: HTMLElement;
   @Prop() value: string = '';
-  @Prop() eclScript: boolean = false;
+  @Prop() noScript: boolean = false;
+  @Prop() srLabel: string = '';
   @Prop() styleClass: string = '';
 
   getClass(): string {
@@ -25,31 +27,28 @@ export class EclIndicator {
   }
 
   componentDidRender() {
-    if (this.eclScript) {
-      const src = getAssetPath('./build/scripts/ecl-indicator.js');
-      const existing = document.querySelector(`script[src="${src}"]`);
-      if (existing) {
-        existing.remove();
-      }
-
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};  
-        const indicator = new INDICATOR.Indicator(this.el.firstElementChild);
-        indicator.init();
-      };
-      document.body.appendChild(script);
+    if (!this.noScript) {
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Indicator = Indicator;
+      const indicator = new Indicator(this.el.firstElementChild);
+      indicator.init();
     }
   }
 
   render() {
     return (
       <span
-        class={this.getClass()} // Use the getClass method to handle the classes
+        class={this.getClass()}
         data-ecl-indicator
       >
-        {this.value}
+        <span class="ecl-indicator__value">
+          {this.value}
+        </span>
+      { this.srLabel &&
+        <span class="ecl-indicator__label">
+          {this.srLabel}
+        </span>
+      }
       </span>
     );
   }

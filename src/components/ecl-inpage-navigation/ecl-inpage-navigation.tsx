@@ -1,6 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const INPAGE: any;
+import InpageNavigation from "@ecl/inpage-navigation";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-inpage-navigation',
@@ -10,14 +10,13 @@ declare const INPAGE: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build'],
 })
 export class EclInpageNavigation {
   @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() colorMode: string = '';
-  @Prop() eclScript: boolean = false;
+  @Prop() noScript: boolean = false;
   @Prop() inpageTitle: string;
   @Prop() inpageId: string;
 
@@ -53,20 +52,11 @@ export class EclInpageNavigation {
       this.el.querySelector('.ecl-inpage-navigation__list').append(...items);
     }
 
-    if (this.eclScript) { 
-      const src = getAssetPath('./build/scripts/ecl-inpage-navigation-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const inpageNavigation = new INPAGE.InpageNavigation(this.el.firstElementChild);
-        inpageNavigation.init();
-      };
-
-      document.body.appendChild(script);
+    if (!this.noScript) { 
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.InpageNavigation = InpageNavigation;
+      const inpageNavigation = new InpageNavigation(this.el.firstElementChild);
+      inpageNavigation.init();
     }
   }
 
@@ -81,11 +71,6 @@ export class EclInpageNavigation {
           class="ecl-inpage-navigation__title"
           id={this.inpageId}
         >
-          <ecl-icon
-            icon="list"
-            size="s"
-            style-class={`ecl-inpage-navigation__title-icon sc-ecl-inpage-navigation-${this.theme}`}>
-          </ecl-icon>
           {this.inpageTitle}
         </div>
         <div class="ecl-inpage-navigation__body">

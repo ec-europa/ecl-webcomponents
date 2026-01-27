@@ -7,15 +7,15 @@ exports[`ecl-fact-figures renders 1`] = `
     <div class="ecl-fact-figures__items">
       <ecl-fact-figures-item icon="infographic" item-title="Lorem ipsum" value="00.0 million">
         <!---->
-        <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m is-first sc-ecl-fact-figures-ec">
+        <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <span class="ecl-fact-figures__icon ecl-icon sc-ecl-fact-figures-item-ec wt-icon--2xl wt-icon--infographic wt-icon--placeholder"></span>
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--infographic wt-icon--placeholder"></span>
           </ecl-icon>
           <div class="ecl-fact-figures__value">
             00.0 million
-          </div>
-          <div class="ecl-fact-figures__title">
-            Lorem ipsum
+            <span class="ecl-fact-figures__title">
+              Lorem ipsum
+            </span>
           </div>
           <div class="ecl-fact-figures__description">
             Nunc condimentum sapien ut nibh finibus suscipit vitae at justo. Morbi quis odio faucibus, commodo tortor id, elementum libero.
@@ -26,13 +26,13 @@ exports[`ecl-fact-figures renders 1`] = `
         <!---->
         <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <span class="ecl-fact-figures__icon ecl-icon sc-ecl-fact-figures-item-ec wt-icon--2xl wt-icon--placeholder wt-icon--spreadsheet"></span>
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--placeholder wt-icon--spreadsheet"></span>
           </ecl-icon>
           <div class="ecl-fact-figures__value">
             00.0 million
-          </div>
-          <div class="ecl-fact-figures__title">
-            Sed hendrerit
+            <span class="ecl-fact-figures__title">
+              Sed hendrerit
+            </span>
           </div>
           <div class="ecl-fact-figures__description">
             Turpis varius congue venenatis, erat dui feugiat felis.
@@ -43,13 +43,13 @@ exports[`ecl-fact-figures renders 1`] = `
         <!---->
         <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <span class="ecl-fact-figures__icon ecl-icon sc-ecl-fact-figures-item-ec wt-icon--2xl wt-icon--growth wt-icon--placeholder"></span>
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--growth wt-icon--placeholder"></span>
           </ecl-icon>
           <div class="ecl-fact-figures__value">
             00.0 million
-          </div>
-          <div class="ecl-fact-figures__title">
-            Donec suscipit interdum augue, ac dapibus eros finibus
+            <span class="ecl-fact-figures__title">
+              Donec suscipit interdum augue, ac dapibus eros finibus
+            </span>
           </div>
           <div class="ecl-fact-figures__description">
             Cras vestibulum efficitur mi, quis porta tellus rutrum ut. Quisque at pulvinar sem.
@@ -60,13 +60,13 @@ exports[`ecl-fact-figures renders 1`] = `
         <!---->
         <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <span class="ecl-fact-figures__icon ecl-icon sc-ecl-fact-figures-item-ec wt-icon--2xl wt-icon--digital wt-icon--placeholder"></span>
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--digital wt-icon--placeholder"></span>
           </ecl-icon>
           <div class="ecl-fact-figures__value">
             00.0 million
-          </div>
-          <div class="ecl-fact-figures__title">
-            Aenean dapibus
+            <span class="ecl-fact-figures__title">
+              Aenean dapibus
+            </span>
           </div>
           <div class="ecl-fact-figures__description">
             Aliquam lacinia diam eu sem malesuada, in interdum ante bibendum.
@@ -77,13 +77,13 @@ exports[`ecl-fact-figures renders 1`] = `
         <!---->
         <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <span class="ecl-fact-figures__icon ecl-icon sc-ecl-fact-figures-item-ec wt-icon--2xl wt-icon--placeholder wt-icon--regulation"></span>
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--placeholder wt-icon--regulation"></span>
           </ecl-icon>
           <div class="ecl-fact-figures__value">
             00.0 million
-          </div>
-          <div class="ecl-fact-figures__title">
-            Aliquam faucibus nulla eget eleifend
+            <span class="ecl-fact-figures__title">
+              Aliquam faucibus nulla eget eleifend
+            </span>
           </div>
           <div class="ecl-fact-figures__description">
             Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec lectus tortor.
@@ -94,13 +94,13 @@ exports[`ecl-fact-figures renders 1`] = `
         <!---->
         <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
           <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <span class="ecl-fact-figures__icon ecl-icon sc-ecl-fact-figures-item-ec wt-icon--2xl wt-icon--image wt-icon--placeholder"></span>
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--image wt-icon--placeholder"></span>
           </ecl-icon>
           <div class="ecl-fact-figures__value">
             00.0 million
-          </div>
-          <div class="ecl-fact-figures__title">
-            Aliquam faucibus nulla eget eleifend
+            <span class="ecl-fact-figures__title">
+              Aliquam faucibus nulla eget eleifend
+            </span>
           </div>
           <div class="ecl-fact-figures__description">
             Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec lectus tortor.
@@ -117,7 +117,73 @@ exports[`ecl-fact-figures renders 1`] = `
           </span>
           <slot-fb hidden="" name="icon-after"></slot-fb>
           <ecl-icon class="ecl-link__icon" slot="icon-after">
-            <span class="ecl-icon wt-icon--arrow-left wt-icon--flip-horizontal wt-icon--placeholder wt-icon--xs"></span>
+            <span class="ecl-icon ecl-icon--xs wt-icon--arrow-left wt-icon--flip-horizontal wt-icon--placeholder"></span>
+          </ecl-icon>
+        </a>
+      </ecl-link>
+    </div>
+  </div>
+</ecl-fact-figures>
+`;
+
+exports[`ecl-fact-figures renders correctly without a value and with a title  1`] = `
+<ecl-fact-figures columns="4" font-size="m" icon-size="2xl" view-all-link-label="View all" view-all-link-path="/example">
+  <!---->
+  <div class="ecl-fact-figures ecl-fact-figures--col-4 ecl-fact-figures--font-m">
+    <div class="ecl-fact-figures__items">
+      <ecl-fact-figures-item icon="infographic" item-title="Lorem ipsum">
+        <!---->
+        <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
+          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--infographic wt-icon--placeholder"></span>
+          </ecl-icon>
+          <div class="ecl-fact-figures__title">
+            Lorem ipsum
+          </div>
+          <div class="ecl-fact-figures__description">
+            Nunc condimentum sapien ut nibh finibus suscipit vitae at justo. Morbi quis odio faucibus, commodo tortor id, elementum libero.
+          </div>
+        </div>
+      </ecl-fact-figures-item>
+      <ecl-fact-figures-item icon="spreadsheet" item-title="Sed hendrerit" theme="ec">
+        <!---->
+        <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
+          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--placeholder wt-icon--spreadsheet"></span>
+          </ecl-icon>
+          <div class="ecl-fact-figures__title">
+            Sed hendrerit
+          </div>
+          <div class="ecl-fact-figures__description">
+            Turpis varius congue venenatis, erat dui feugiat felis.
+          </div>
+        </div>
+      </ecl-fact-figures-item>
+      <ecl-fact-figures-item icon="growth" item-title="Donec suscipit interdum augue, ac dapibus eros finibus">
+        <!---->
+        <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
+          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--growth wt-icon--placeholder"></span>
+          </ecl-icon>
+          <div class="ecl-fact-figures__title">
+            Donec suscipit interdum augue, ac dapibus eros finibus
+          </div>
+          <div class="ecl-fact-figures__description">
+            Cras vestibulum efficitur mi, quis porta tellus rutrum ut. Quisque at pulvinar sem.
+          </div>
+        </div>
+      </ecl-fact-figures-item>
+    </div>
+    <div class="ecl-fact-figures__view-all">
+      <ecl-link>
+        <!---->
+        <a class="ecl-fact-figures__view-all-link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--standalone sc-ecl-fact-figures-ec" href="/example">
+          <span class="ecl-link__label">
+            View all
+          </span>
+          <slot-fb hidden="" name="icon-after"></slot-fb>
+          <ecl-icon class="ecl-link__icon" slot="icon-after">
+            <span class="ecl-icon ecl-icon--xs wt-icon--arrow-left wt-icon--flip-horizontal wt-icon--placeholder"></span>
           </ecl-icon>
         </a>
       </ecl-link>

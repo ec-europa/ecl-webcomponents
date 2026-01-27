@@ -4,6 +4,10 @@ import { EclDescriptionListTerm } from '../ecl-description-list-term';
 import { EclDescriptionListDefinition } from '../ecl-description-list-definition';
 
 describe('ecl-description-list', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclDescriptionList, EclDescriptionListDefinition, EclDescriptionListTerm],

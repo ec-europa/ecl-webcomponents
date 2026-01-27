@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-banner renders correctly in full width, with large size, text on the right and at the bottom, with small font size 1`] = `
-<ecl-banner banner-title="EU Budget for the future" credit="© Copyright or credit" font-size="s" full-width="true" horizontal="right" size="l" vertical="botttom">
+<ecl-banner banner-title="EU Budget for the future" credit="© Copyright or credit" description-link="/example.html" font-size="s" full-width="true" horizontal="right" size="l" vertical="botttom">
   <!---->
-  <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--font-s ecl-banner--full-width ecl-banner--h-right ecl-banner--l ecl-banner--no-media ecl-banner--v-botttom">
+  <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--font-s ecl-banner--full-width ecl-banner--h-right ecl-banner--l ecl-banner--no-media ecl-banner--v-botttom" data-ecl-auto-initialized="true" style="height: auto;">
     <div class="ecl-banner__info ecl-container">
       <div class="ecl-banner__container" data-ecl-banner-container>
         <div class="ecl-banner__content">
@@ -14,7 +14,12 @@ exports[`ecl-banner renders correctly in full width, with large size, text on th
           </div>
           <p class="ecl-banner__description">
             <span class="ecl-banner__description-text">
-              Innovation, economy, environment and geopolitics
+              <ecl-link style-class="ecl-banner__description-link sc-ecl-banner-ec">
+                <!---->
+                <a class="ecl-banner__description-link ecl-link sc-ecl-banner-ec" href="/example.html">
+                  Innovation, economy, environment and geopolitics
+                </a>
+              </ecl-link>
             </span>
           </p>
         </div>
@@ -27,7 +32,7 @@ exports[`ecl-banner renders correctly in full width, with large size, text on th
 exports[`ecl-banner renders correctly with a video 1`] = `
 <ecl-banner banner-title="EU Budget for the future" credit="© Copyright or credit" poster="https://vod.prd.commavservices.eu/12/224712/THUMB_I224712EN1W_V_1.jpg" sources="[{&quot;src&quot;: &quot;https://vod.prd.commavservices.eu/12/224712/LR_I224712EN1W.mp&quot;, &quot;type&quot;: &quot;video/mp4&quot;}]">
   <!---->
-  <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--color-dark ecl-banner--font-m ecl-banner--h-left ecl-banner--m ecl-banner--v-center">
+  <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--color-dark ecl-banner--font-m ecl-banner--h-left ecl-banner--m ecl-banner--v-center" data-ecl-auto-initialized="true">
     <div class="ecl-banner__video-container">
       <ecl-video>
         <!---->
@@ -40,24 +45,24 @@ exports[`ecl-banner renders correctly with a video 1`] = `
           © Copyright or credit
         </div>
       </div>
-      <ecl-button data-ecl-banner-play>
+      <ecl-button data-ecl-banner-play style="display: none;">
         <!---->
         <button class="ecl-banner__play ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary sc-ecl-banner-ec" data-ecl-banner-play="eclBannerPlay" type="button">
           <span class="ecl-button__container sc-ecl-banner-ec">
             <span class="ecl-button__label" data-ecl-label></span>
             <ecl-icon slot="icon-after">
-              <span class="ecl-button__icon ecl-icon sc-ecl-banner-ec sc-ecl-button-ec wt-icon--m wt-icon--placeholder wt-icon--play-outline"></span>
+              <span class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-banner-ec sc-ecl-button-ec wt-icon--placeholder wt-icon--play-outline"></span>
             </ecl-icon>
           </span>
         </button>
       </ecl-button>
-      <ecl-button data-ecl-banner-pause>
+      <ecl-button data-ecl-banner-pause style="display: flex;">
         <!---->
         <button class="ecl-banner__pause ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary sc-ecl-banner-ec" data-ecl-banner-pause="eclBannerPause" type="button">
           <span class="ecl-button__container sc-ecl-banner-ec">
             <span class="ecl-button__label" data-ecl-label></span>
             <ecl-icon slot="icon-after">
-              <span class="ecl-button__icon ecl-icon sc-ecl-banner-ec sc-ecl-button-ec wt-icon--m wt-icon--pause-outline wt-icon--placeholder"></span>
+              <span class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-banner-ec sc-ecl-button-ec wt-icon--pause-outline wt-icon--placeholder"></span>
             </ecl-icon>
           </span>
         </button>
@@ -84,11 +89,16 @@ exports[`ecl-banner renders correctly with a video 1`] = `
 `;
 
 exports[`ecl-banner renders correctly with an image 1`] = `
-<ecl-banner banner-title="EU Budget for the future" credit="© Copyright or credit" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
+<ecl-banner banner-title="EU Budget for the future" banner-title-link="/example.html" credit="© Copyright or credit" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
   <!---->
-  <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--color-dark ecl-banner--font-m ecl-banner--h-left ecl-banner--m ecl-banner--v-center">
+  <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--color-dark ecl-banner--font-m ecl-banner--h-left ecl-banner--m ecl-banner--v-center" data-ecl-auto-initialized="true">
     <figure class="ecl-banner__picture-container">
-      <ecl-picture data-ecl-banner-image image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imgclass="ecl-banner__image sc-ecl-banner-ec" styleclass="ecl-banner__picture sc-ecl-banner-ec"></ecl-picture>
+      <ecl-picture data-ecl-banner-image>
+        <!---->
+        <picture class="ecl-banner__picture ecl-picture sc-ecl-banner-ec">
+          <img class="ecl-banner__image sc-ecl-banner-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
+        </picture>
+      </ecl-picture>
       <footer class="ecl-banner__credit" data-ecl-banner-footer>
         <div class="ecl-container">
           © Copyright or credit
@@ -100,7 +110,12 @@ exports[`ecl-banner renders correctly with an image 1`] = `
         <div class="ecl-banner__content">
           <div class="ecl-banner__title">
             <span class="ecl-banner__title-text">
-              EU Budget for the future
+              <ecl-link style-class="ecl-banner__title-link sc-ecl-banner-ec">
+                <!---->
+                <a class="ecl-banner__title-link ecl-link sc-ecl-banner-ec" href="/example.html">
+                  EU Budget for the future
+                </a>
+              </ecl-link>
             </span>
           </div>
           <p class="ecl-banner__description">
@@ -117,7 +132,7 @@ exports[`ecl-banner renders correctly with an image 1`] = `
                 </span>
                 <slot-fb hidden="" name="icon-after"></slot-fb>
                 <ecl-icon class="ecl-link__icon" slot="icon-after">
-                  <span class="ecl-icon wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-90 wt-icon--xs"></span>
+                  <span class="ecl-icon ecl-icon--xs wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-90"></span>
                 </ecl-icon>
               </a>
             </ecl-link>
@@ -130,15 +145,20 @@ exports[`ecl-banner renders correctly with an image 1`] = `
 `;
 
 exports[`ecl-banner renders correctly without a media 1`] = `
-<ecl-banner banner-title="EU Budget for the future" credit="© Copyright or credit">
+<ecl-banner banner-title="EU Budget for the future" banner-title-link="/example.html" credit="© Copyright or credit">
   <!---->
-  <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--font-m ecl-banner--h-left ecl-banner--m ecl-banner--no-media ecl-banner--v-center">
+  <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--font-m ecl-banner--h-left ecl-banner--m ecl-banner--no-media ecl-banner--v-center" data-ecl-auto-initialized="true" style="height: auto;">
     <div class="ecl-banner__info ecl-container">
       <div class="ecl-banner__container" data-ecl-banner-container>
         <div class="ecl-banner__content">
           <div class="ecl-banner__title">
             <span class="ecl-banner__title-text">
-              EU Budget for the future
+              <ecl-link style-class="ecl-banner__title-link sc-ecl-banner-ec">
+                <!---->
+                <a class="ecl-banner__title-link ecl-link sc-ecl-banner-ec" href="/example.html">
+                  EU Budget for the future
+                </a>
+              </ecl-link>
             </span>
           </div>
           <p class="ecl-banner__description">

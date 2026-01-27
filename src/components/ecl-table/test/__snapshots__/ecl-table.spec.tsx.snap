@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-table default renders correctly 1`] = `
+<ecl-table caption="Population of selected EU countries" color-mode="green" el-id="table-id" headers="[[{&quot;label&quot;:&quot;Country&quot;},{&quot;label&quot;:&quot;Capital&quot;},{&quot;label&quot;:&quot;Population&quot;}]]" rows="[{&quot;data&quot;:[{&quot;label&quot;:&quot;Italy&quot;,&quot;data-ecl-table-header&quot;:&quot;country&quot;},{&quot;label&quot;:&quot;Rome&quot;,&quot;data-ecl-table-header&quot;:&quot;capital&quot;},{&quot;label&quot;:&quot;59M&quot;,&quot;data-ecl-table-header&quot;:&quot;population&quot;}]},{&quot;data&quot;:[{&quot;label&quot;:&quot;France&quot;,&quot;data-ecl-table-header&quot;:&quot;country&quot;},{&quot;label&quot;:&quot;Paris&quot;,&quot;data-ecl-table-header&quot;:&quot;capital&quot;},{&quot;label&quot;:&quot;67M&quot;,&quot;data-ecl-table-header&quot;:&quot;population&quot;}]},{&quot;data&quot;:[{&quot;label&quot;:&quot;Germany&quot;,&quot;data-ecl-table-header&quot;:&quot;country&quot;},{&quot;label&quot;:&quot;Berlin&quot;,&quot;data-ecl-table-header&quot;:&quot;capital&quot;},{&quot;label&quot;:&quot;83M&quot;,&quot;data-ecl-table-header&quot;:&quot;population&quot;}]}]" zebra="">
+  <div class="ecl-table-responsive">
+    <table class="ecl-color-mode--green ecl-table ecl-table--zebra" id="table-id">
+      <caption class="ecl-table__caption">
+        Population of selected EU countries
+      </caption>
+      <thead class="ecl-table__head">
+        <tr class="ecl-table__row">
+          <th class="ecl-table__header" id="table-id-header-1" scope="col">
+            Country
+          </th>
+          <th class="ecl-table__header" id="table-id-header-2" scope="col">
+            Capital
+          </th>
+          <th class="ecl-table__header" id="table-id-header-3" scope="col">
+            Population
+          </th>
+        </tr>
+      </thead>
+      <tbody class="ecl-table__body">
+        <tr class="ecl-table__row">
+          <td class="ecl-table__cell" data-ecl-table-header="country">
+            Italy
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="capital">
+            Rome
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="population">
+            59M
+          </td>
+        </tr>
+        <tr class="ecl-table__row">
+          <td class="ecl-table__cell" data-ecl-table-header="country">
+            France
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="capital">
+            Paris
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="population">
+            67M
+          </td>
+        </tr>
+        <tr class="ecl-table__row">
+          <td class="ecl-table__cell" data-ecl-table-header="country">
+            Germany
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="capital">
+            Berlin
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="population">
+            83M
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</ecl-table>
+`;
+
+exports[`ecl-table multiple renders correctly 1`] = `
+<ecl-table caption="Multiple headers table example" el-id="table-id" headers="[[{&quot;label&quot;:&quot;Job title&quot;,&quot;rowspan&quot;:&quot;2&quot;},{&quot;label&quot;:&quot;EFSI finance approved by EIB&quot;,&quot;rowspan&quot;:&quot;2&quot;},{&quot;label&quot;:&quot;Extra information&quot;,&quot;colspan&quot;:&quot;2&quot;},{&quot;label&quot;:&quot;Location&quot;,&quot;rowspan&quot;:&quot;2&quot;}],[{&quot;label&quot;:&quot;Organization&quot;,&quot;headers&quot;:&quot;el-id-header-3&quot;},{&quot;label&quot;:&quot;Type of contract&quot;,&quot;headers&quot;:&quot;el-id-header-3&quot;}]]" rows="[{&quot;data&quot;:[{&quot;label&quot;:&quot;Administators in Competition Law&quot;,&quot;data-ecl-table-header&quot;:&quot;Job title&quot;,&quot;headers&quot;:&quot;el-id-header-1&quot;},{&quot;label&quot;:&quot;AD7&quot;,&quot;data-ecl-table-header&quot;:&quot;EFSI finance approved by EIB&quot;,&quot;headers&quot;:&quot;el-id-header-2&quot;},{&quot;label&quot;:&quot;European Commission&quot;,&quot;data-ecl-table-header&quot;:&quot;Organization&quot;,&quot;data-ecl-table-header-group&quot;:&quot;Extra information&quot;,&quot;group&quot;:true,&quot;headers&quot;:&quot;el-id-header-3 el-id-header-5&quot;},{&quot;label&quot;:&quot;Permanent official&quot;,&quot;data-ecl-table-header&quot;:&quot;Type of contract&quot;,&quot;group&quot;:true,&quot;headers&quot;:&quot;el-id-header-3 el-id-header-6&quot;},{&quot;label&quot;:&quot;Brussels (Belgium), Luxembourg (Luxembourg), Strasbourg (France)&quot;,&quot;data-ecl-table-header&quot;:&quot;Location&quot;,&quot;headers&quot;:&quot;el-id-header-4&quot;}]},{&quot;data&quot;:[{&quot;label&quot;:&quot;Administators in Economic and Monetary Union Law&quot;,&quot;data-ecl-table-header&quot;:&quot;Job title&quot;,&quot;headers&quot;:&quot;el-id-header-1&quot;},{&quot;label&quot;:&quot;AD7&quot;,&quot;data-ecl-table-header&quot;:&quot;EFSI finance approved by EIB&quot;,&quot;headers&quot;:&quot;el-id-header-2&quot;},{&quot;label&quot;:&quot;European Commission&quot;,&quot;data-ecl-table-header&quot;:&quot;Organization&quot;,&quot;data-ecl-table-header-group&quot;:&quot;Extra information&quot;,&quot;group&quot;:true,&quot;headers&quot;:&quot;el-id-header-3 el-id-header-5&quot;},{&quot;label&quot;:&quot;Permanent official&quot;,&quot;data-ecl-table-header&quot;:&quot;Type of contract&quot;,&quot;group&quot;:true,&quot;headers&quot;:&quot;el-id-header-3 el-id-header-6&quot;},{&quot;label&quot;:&quot;Brussels (Belgium), Luxembourg (Luxembourg), Strasbourg (France)&quot;,&quot;data-ecl-table-header&quot;:&quot;Location&quot;,&quot;headers&quot;:&quot;el-id-header-4&quot;}]},{&quot;data&quot;:[{&quot;label&quot;:&quot;Administators in Financial rules appliable to the EU budget&quot;,&quot;data-ecl-table-header&quot;:&quot;Job title&quot;,&quot;headers&quot;:&quot;el-id-header-1&quot;},{&quot;label&quot;:&quot;AD7&quot;,&quot;data-ecl-table-header&quot;:&quot;EFSI finance approved by EIB&quot;,&quot;headers&quot;:&quot;el-id-header-2&quot;},{&quot;label&quot;:&quot;European Commission&quot;,&quot;data-ecl-table-header&quot;:&quot;Organization&quot;,&quot;data-ecl-table-header-group&quot;:&quot;Extra information&quot;,&quot;group&quot;:true,&quot;headers&quot;:&quot;el-id-header-3 el-id-header-5&quot;},{&quot;label&quot;:&quot;Permanent official&quot;,&quot;data-ecl-table-header&quot;:&quot;Type of contract&quot;,&quot;group&quot;:true,&quot;headers&quot;:&quot;el-id-header-3 el-id-header-6&quot;},{&quot;label&quot;:&quot;Brussels (Belgium), Luxembourg (Luxembourg), Strasbourg (France)&quot;,&quot;data-ecl-table-header&quot;:&quot;Location&quot;,&quot;headers&quot;:&quot;el-id-header-4&quot;}]},{&quot;data&quot;:[{&quot;label&quot;:&quot;Corporate Support Officer&quot;,&quot;data-ecl-table-header&quot;:&quot;Job title&quot;,&quot;headers&quot;:&quot;el-id-header-1&quot;},{&quot;label&quot;:&quot;FG IV&quot;,&quot;data-ecl-table-header&quot;:&quot;EFSI finance approved by EIB&quot;,&quot;headers&quot;:&quot;el-id-header-2&quot;},{&quot;label&quot;:&quot;European Commission&quot;,&quot;data-ecl-table-header&quot;:&quot;Organization&quot;,&quot;data-ecl-table-header-group&quot;:&quot;Extra information&quot;,&quot;group&quot;:true,&quot;headers&quot;:&quot;el-id-header-3 el-id-header-5&quot;},{&quot;label&quot;:&quot;Permanent official&quot;,&quot;data-ecl-table-header&quot;:&quot;Type of contract&quot;,&quot;group&quot;:true,&quot;headers&quot;:&quot;el-id-header-3 el-id-header-6&quot;},{&quot;label&quot;:&quot;Prague (Czech Republic)&quot;,&quot;data-ecl-table-header&quot;:&quot;Location&quot;,&quot;headers&quot;:&quot;el-id-header-4&quot;}]},{&quot;data&quot;:[{&quot;label&quot;:&quot;Policy Officer - Clean Energy For All Europeans&quot;,&quot;data-ecl-table-header&quot;:&quot;Job title&quot;,&quot;headers&quot;:&quot;el-id-header-1&quot;},{&quot;label&quot;:&quot;FG II, FG III, FG IV&quot;,&quot;data-ecl-table-header&quot;:&quot;EFSI finance approved by EIB&quot;,&quot;headers&quot;:&quot;el-id-header-2&quot;},{&quot;label&quot;:&quot;EU-LISA&quot;,&quot;data-ecl-table-header&quot;:&quot;Organization&quot;,&quot;data-ecl-table-header-group&quot;:&quot;Extra information&quot;,&quot;group&quot;:true,&quot;headers&quot;:&quot;el-id-header-3 el-id-header-5&quot;},{&quot;label&quot;:&quot;Seconded National Expert (SNE)&quot;,&quot;data-ecl-table-header&quot;:&quot;Type of contract&quot;,&quot;group&quot;:true,&quot;headers&quot;:&quot;el-id-header-3 el-id-header-6&quot;},{&quot;label&quot;:&quot;Vigo (Spain)&quot;,&quot;data-ecl-table-header&quot;:&quot;Location&quot;,&quot;headers&quot;:&quot;el-id-header-4&quot;}]}]">
+  <div class="ecl-table-responsive">
+    <table class="ecl-table" id="table-id">
+      <caption class="ecl-table__caption">
+        Multiple headers table example
+      </caption>
+      <thead class="ecl-table__head">
+        <tr class="ecl-table__row">
+          <th class="ecl-table__header" id="table-id-header-1" rowspan="2" scope="col">
+            Job title
+          </th>
+          <th class="ecl-table__header" id="table-id-header-2" rowspan="2" scope="col">
+            EFSI finance approved by EIB
+          </th>
+          <th class="ecl-table__header" colspan="2" id="table-id-header-3" scope="colgroup">
+            Extra information
+          </th>
+          <th class="ecl-table__header" id="table-id-header-4" rowspan="2" scope="col">
+            Location
+          </th>
+        </tr>
+        <tr class="ecl-table__row">
+          <th class="ecl-table__header" headers="el-id-header-3" id="table-id-header-5" scope="col">
+            Organization
+          </th>
+          <th class="ecl-table__header" headers="el-id-header-3" id="table-id-header-6" scope="col">
+            Type of contract
+          </th>
+        </tr>
+      </thead>
+      <tbody class="ecl-table__body">
+        <tr class="ecl-table__row">
+          <td class="ecl-table__cell" data-ecl-table-header="Job title" headers="el-id-header-1">
+            Administators in Competition Law
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="EFSI finance approved by EIB" headers="el-id-header-2">
+            AD7
+          </td>
+          <td class="ecl-table__cell ecl-table__cell--group" data-ecl-table-header="Organization" data-ecl-table-header-group="Extra information" headers="el-id-header-3 el-id-header-5">
+            European Commission
+          </td>
+          <td class="ecl-table__cell ecl-table__cell--group" data-ecl-table-header="Type of contract" headers="el-id-header-3 el-id-header-6">
+            Permanent official
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="Location" headers="el-id-header-4">
+            Brussels (Belgium), Luxembourg (Luxembourg), Strasbourg (France)
+          </td>
+        </tr>
+        <tr class="ecl-table__row">
+          <td class="ecl-table__cell" data-ecl-table-header="Job title" headers="el-id-header-1">
+            Administators in Economic and Monetary Union Law
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="EFSI finance approved by EIB" headers="el-id-header-2">
+            AD7
+          </td>
+          <td class="ecl-table__cell ecl-table__cell--group" data-ecl-table-header="Organization" data-ecl-table-header-group="Extra information" headers="el-id-header-3 el-id-header-5">
+            European Commission
+          </td>
+          <td class="ecl-table__cell ecl-table__cell--group" data-ecl-table-header="Type of contract" headers="el-id-header-3 el-id-header-6">
+            Permanent official
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="Location" headers="el-id-header-4">
+            Brussels (Belgium), Luxembourg (Luxembourg), Strasbourg (France)
+          </td>
+        </tr>
+        <tr class="ecl-table__row">
+          <td class="ecl-table__cell" data-ecl-table-header="Job title" headers="el-id-header-1">
+            Administators in Financial rules appliable to the EU budget
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="EFSI finance approved by EIB" headers="el-id-header-2">
+            AD7
+          </td>
+          <td class="ecl-table__cell ecl-table__cell--group" data-ecl-table-header="Organization" data-ecl-table-header-group="Extra information" headers="el-id-header-3 el-id-header-5">
+            European Commission
+          </td>
+          <td class="ecl-table__cell ecl-table__cell--group" data-ecl-table-header="Type of contract" headers="el-id-header-3 el-id-header-6">
+            Permanent official
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="Location" headers="el-id-header-4">
+            Brussels (Belgium), Luxembourg (Luxembourg), Strasbourg (France)
+          </td>
+        </tr>
+        <tr class="ecl-table__row">
+          <td class="ecl-table__cell" data-ecl-table-header="Job title" headers="el-id-header-1">
+            Corporate Support Officer
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="EFSI finance approved by EIB" headers="el-id-header-2">
+            FG IV
+          </td>
+          <td class="ecl-table__cell ecl-table__cell--group" data-ecl-table-header="Organization" data-ecl-table-header-group="Extra information" headers="el-id-header-3 el-id-header-5">
+            European Commission
+          </td>
+          <td class="ecl-table__cell ecl-table__cell--group" data-ecl-table-header="Type of contract" headers="el-id-header-3 el-id-header-6">
+            Permanent official
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="Location" headers="el-id-header-4">
+            Prague (Czech Republic)
+          </td>
+        </tr>
+        <tr class="ecl-table__row">
+          <td class="ecl-table__cell" data-ecl-table-header="Job title" headers="el-id-header-1">
+            Policy Officer - Clean Energy For All Europeans
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="EFSI finance approved by EIB" headers="el-id-header-2">
+            FG II, FG III, FG IV
+          </td>
+          <td class="ecl-table__cell ecl-table__cell--group" data-ecl-table-header="Organization" data-ecl-table-header-group="Extra information" headers="el-id-header-3 el-id-header-5">
+            EU-LISA
+          </td>
+          <td class="ecl-table__cell ecl-table__cell--group" data-ecl-table-header="Type of contract" headers="el-id-header-3 el-id-header-6">
+            Seconded National Expert (SNE)
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="Location" headers="el-id-header-4">
+            Vigo (Spain)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</ecl-table>
+`;
+
+exports[`ecl-table sortable renders correctly 1`] = `
+<ecl-table caption="Sortable table example" color-mode="purple" el-id="table-id" headers="[[{&quot;label&quot;:&quot;Country&quot;},{&quot;label&quot;:&quot;Capital&quot;},{&quot;label&quot;:&quot;Population&quot;}]]" label-sort-ascending="Sort ascending" label-sort-default="Sort default" label-sort-descending="Sort descending" rows="[{&quot;data&quot;:[{&quot;label&quot;:&quot;Italy&quot;,&quot;data-ecl-table-header&quot;:&quot;country&quot;},{&quot;label&quot;:&quot;Rome&quot;,&quot;data-ecl-table-header&quot;:&quot;capital&quot;},{&quot;label&quot;:&quot;59M&quot;,&quot;data-ecl-table-header&quot;:&quot;population&quot;}]},{&quot;data&quot;:[{&quot;label&quot;:&quot;France&quot;,&quot;data-ecl-table-header&quot;:&quot;country&quot;},{&quot;label&quot;:&quot;Paris&quot;,&quot;data-ecl-table-header&quot;:&quot;capital&quot;},{&quot;label&quot;:&quot;67M&quot;,&quot;data-ecl-table-header&quot;:&quot;population&quot;}]},{&quot;data&quot;:[{&quot;label&quot;:&quot;Germany&quot;,&quot;data-ecl-table-header&quot;:&quot;country&quot;},{&quot;label&quot;:&quot;Berlin&quot;,&quot;data-ecl-table-header&quot;:&quot;capital&quot;},{&quot;label&quot;:&quot;83M&quot;,&quot;data-ecl-table-header&quot;:&quot;population&quot;}]}]" sortable="">
+  <div class="ecl-table-responsive">
+    <table class="ecl-color-mode--purple ecl-table" data-ecl-auto-initialized="true" data-ecl-table data-ecl-table-sort-label-asc="Sort ascending" data-ecl-table-sort-label-default="Sort default" data-ecl-table-sort-label-desc="Sort descending" id="table-id">
+      <caption class="ecl-table__caption">
+        Sortable table example
+      </caption>
+      <thead class="ecl-table__head">
+        <tr class="ecl-table__row">
+          <th class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-1" scope="col">
+            Country
+            <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
+              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
+              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
+            </button>
+          </th>
+          <th class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-2" scope="col">
+            Capital
+            <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
+              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
+              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
+            </button>
+          </th>
+          <th class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-3" scope="col">
+            Population
+            <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
+              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
+              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
+            </button>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="ecl-table__body">
+        <tr class="ecl-table__row" data-ecl-table-order="0">
+          <td class="ecl-table__cell" data-ecl-table-header="country">
+            Italy
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="capital">
+            Rome
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="population">
+            59M
+          </td>
+        </tr>
+        <tr class="ecl-table__row" data-ecl-table-order="1">
+          <td class="ecl-table__cell" data-ecl-table-header="country">
+            France
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="capital">
+            Paris
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="population">
+            67M
+          </td>
+        </tr>
+        <tr class="ecl-table__row" data-ecl-table-order="2">
+          <td class="ecl-table__cell" data-ecl-table-header="country">
+            Germany
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="capital">
+            Berlin
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="population">
+            83M
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</ecl-table>
+`;

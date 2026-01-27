@@ -35,7 +35,7 @@ export class EclIcon {
     const styleClasses = [
       baseClass,
       ...(this.sprite ? [] : ['ecl-icon']),
-      `${pref}-icon--${this.size}`,
+      `ecl-icon--${this.size}`,
       this.styleClass,
     ];
     if (this.color) {

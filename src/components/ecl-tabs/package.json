@@ -1,0 +1,39 @@
+{
+  "name": "@ecl/web-components-tabs",
+  "author": "European Commission",
+  "license": "EUPL-1.2",
+  "version": "0.17.1",
+  "description": "ECL Tabs",
+  "main": "ecl-tabs.tsx",
+  "private": true,
+  "scripts": {
+    "build:styles": "cross-env ecl-builder styles",
+    "build": "run-s clean build:*",
+    "clean": "rimraf build",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@ecl/builder": "5.0.0-alpha.22.2",
+    "@ecl/grid": "5.0.0-alpha.22.2",
+    "@ecl/tabs": "5.0.0-alpha.22.2",
+    "@ecl/theme-ec": "5.0.0-alpha.22.2",
+    "@ecl/theme-eu": "5.0.0-alpha.22.2",
+    "@ecl/utility-screen-reader": "5.0.0-alpha.22.2",
+    "cross-env": "10.1.0",
+    "lorem-ipsum": "2.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planctus/ecl-webcomponents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/planctus/ecl-webcomponents/issues"
+  },
+  "homepage": "https://github.com/planctus/ecl-webcomponents",
+  "keywords": [
+    "ecl",
+    "europa-component-library",
+    "design-system",
+    "web-components"
+  ]
+}

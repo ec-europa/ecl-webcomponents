@@ -1,0 +1,432 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-splash-page renders 1`] = `
+<ecl-splash-page eu-label="Official EU languages:" lang-code="en" language="EN" language-aria-label="Choose language" language-id="language-switcher" logo-alt="European Commission" logo-title="European commission" non-eu-label="Other languages:" title="Select your language">
+  <!---->
+  <div class="ecl-splash-page">
+    <div class="ecl-splash-page__logo-container">
+      <ecl-grid container="" styleclass="sc-ecl-splash-page-ec">
+        <ecl-link styleclass="ecl-splash-page__logo-link sc-ecl-splash-page-ec" variant="standalone">
+          <ecl-picture image="/build/images/ec/logos/logo-ec--mute.svg" imagealt="European Commission" imgclass="ecl-splash-page__logo-image sc-ecl-splash-page-ec" styleclass="ecl-splash-page__picture sc-ecl-picture-ec">
+            <source media="(min-width: 415px)" srcset="/build/images/ec/logos/positive/logo-ec--en.svg">
+          </ecl-picture>
+        </ecl-link>
+      </ecl-grid>
+    </div>
+    <ecl-grid container="" styleclass="sc-ecl-splash-page-ec ecl-splash-page__language-container">
+      <div class="ecl-splash-page__language-content">
+        <div class="ecl-splash-page__language-category">
+          <h2 class="ecl-splash-page__language-category-title">
+            Official EU languages:
+          </h2>
+          <ul class="ecl-splash-page__language-list">
+            <ecl-splash-page-language-item lang-code="bg" language="български" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    bg
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    български
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="es" language="español" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    es
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    español
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="cs" language="čeština" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    cs
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    čeština
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="da" language="dansk" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    da
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    dansk
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="de" language="Deutsch" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    de
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    Deutsch
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="et" language="eesti" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    et
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    eesti
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="el" language="ελληνικά" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    el
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    ελληνικά
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item active="" lang-code="en" language="English" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link ecl-splash-page__language-link--active sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    en
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    English
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="fr" language="français" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    fr
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    français
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="ga" language="Gaeilge" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    ga
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    Gaeilge
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="hr" language="hrvatski" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    hr
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    hrvatski
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="it" language="italiano" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    it
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    italiano
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="lv" language="latviešu" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    lv
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    latviešu
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="lt" language="lietuvių" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    lt
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    lietuvių
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="hu" language="magyar" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    hu
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    magyar
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="mt" language="Malti" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    mt
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    Malti
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="nl" language="Nederlands" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    nl
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    Nederlands
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="pl" language="polski" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    pl
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    polski
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="pt" language="português" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    pt
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    português
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="ro" language="română'" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    ro
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    română'
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="sk" language="slovenčina" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    sk
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    slovenčina
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="fi" language="suomi" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    fi
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    suomi
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="sv" language="svenska" path="/example.html" slot="eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    sv
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    svenska
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+          </ul>
+        </div>
+        <div class="ecl-splash-page__language-category">
+          <h2 class="ecl-splash-page__language-category-title">
+            Other languages:
+          </h2>
+          <ul class="ecl-splash-page__language-list">
+            <ecl-splash-page-language-item lang-code="ar" language="عَرَبِيّ" path="/example.html" slot="non-eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    ar
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    عَرَبِيّ
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="ca" language="Català" path="/example.html" slot="non-eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    ca
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    Català
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="is" language="Íslenska" path="/example.html" slot="non-eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    is
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    Íslenska
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="lb" language="Lëtzebuergesch" path="/example.html" slot="non-eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    lb
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    Lëtzebuergesch
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="ja" language="日本語" path="/example.html" slot="non-eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    ja
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    日本語
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="nb" language="Norsk bokmål" path="/example.html" slot="non-eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    nb
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    Norsk bokmål
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="ru" language="русский язык" path="/example.html" slot="non-eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    ru
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    русский язык
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="tr" language="Türk" path="/example.html" slot="non-eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    tr
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    Türk
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="uk" language="українська мова" path="/example.html" slot="non-eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    uk
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    українська мова
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+            <ecl-splash-page-language-item lang-code="zh" language="中文" path="/example.html" slot="non-eu-category">
+              <li class="ecl-splash-page__language-item sc-ecl-splash-page-ec">
+                <a class="ecl-link ecl-link--standalone ecl-splash-page__language-link sc-ecl-splash-page-ec" href="/example.html">
+                  <span class="ecl-splash-page__language-link-code sc-ecl-splash-page-ec">
+                    zh
+                  </span>
+                  <span class="ecl-splash-page__language-link-label sc-ecl-splash-page-ec">
+                    中文
+                  </span>
+                </a>
+              </li>
+            </ecl-splash-page-language-item>
+          </ul>
+        </div>
+      </div>
+    </ecl-grid>
+  </div>
+</ecl-splash-page>
+`;

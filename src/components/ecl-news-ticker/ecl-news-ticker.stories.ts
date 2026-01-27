@@ -6,7 +6,6 @@ export default {
 
 const Template = () => 
 `<ecl-news-ticker
-  ecl-script
   counter-label="of"
   sr-next="Next item"
   sr-prev="Prev item"

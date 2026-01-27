@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-content-block renders 1`] = `
-<ecl-content-block ecl-script="" has-description="" has-labels="" has-links="" has-lists="" has-secondary-links="" has-title="" meta-primary="[&quot;PRIMARY META&quot;, &quot;DD Month Year&quot;]" meta-secondary="[{&quot;label&quot;: &quot;2018/10/22&quot;, &quot;icon&quot;: &quot;calendar&quot;}, {&quot;label&quot;: &quot;Luxembourg&quot;, &quot;icon&quot;: &quot;location&quot;}]" theme="ec">
+<ecl-content-block has-description="" has-labels="" has-links="" has-lists="" has-secondary-links="" has-title="" meta-primary="[&quot;PRIMARY META&quot;, &quot;DD Month Year&quot;]" meta-secondary="[{&quot;label&quot;: &quot;2018/10/22&quot;, &quot;icon&quot;: &quot;calendar&quot;}, {&quot;label&quot;: &quot;Luxembourg&quot;, &quot;icon&quot;: &quot;location&quot;}]" theme="ec">
   <!---->
   <div class="ecl-content-block">
     <ul class="ecl-content-block__label-container">
@@ -28,9 +28,7 @@ exports[`ecl-content-block renders 1`] = `
       <ecl-link path="/example.html" slot="title" theme="ec" variant="standalone">
         <!---->
         <a class="ecl-link ecl-link--standalone" data-ecl-title-link href="/example.html">
-          <span class="ecl-link__label">
-            Title
-          </span>
+          Title
         </a>
       </ecl-link>
     </div>
@@ -42,7 +40,7 @@ exports[`ecl-content-block renders 1`] = `
     <ul class="ecl-content-block__secondary-meta-container">
       <li class="ecl-content-block__secondary-meta-item">
         <ecl-icon style-class="ecl-content-block__secondary-meta-icon sc-ecl-content-block-ec">
-          <span class="ecl-content-block__secondary-meta-icon ecl-icon sc-ecl-content-block-ec wt-icon--calendar wt-icon--placeholder wt-icon--s"></span>
+          <span class="ecl-content-block__secondary-meta-icon ecl-icon ecl-icon--s sc-ecl-content-block-ec wt-icon--calendar wt-icon--placeholder"></span>
         </ecl-icon>
         <span class="ecl-content-block__secondary-meta-label">
           2018/10/22
@@ -50,7 +48,7 @@ exports[`ecl-content-block renders 1`] = `
       </li>
       <li class="ecl-content-block__secondary-meta-item">
         <ecl-icon style-class="ecl-content-block__secondary-meta-icon sc-ecl-content-block-ec">
-          <span class="ecl-content-block__secondary-meta-icon ecl-icon sc-ecl-content-block-ec wt-icon--location wt-icon--placeholder wt-icon--s"></span>
+          <span class="ecl-content-block__secondary-meta-icon ecl-icon ecl-icon--s sc-ecl-content-block-ec wt-icon--location wt-icon--placeholder"></span>
         </ecl-icon>
         <span class="ecl-content-block__secondary-meta-label">
           Luxembourg
@@ -63,7 +61,7 @@ exports[`ecl-content-block renders 1`] = `
         <dl class="ecl-content-block__list ecl-description-list ecl-description-list--vertical sc-ecl-content-block-ec">
           <ecl-description-list-term theme="ec">
             <!---->
-            <dt class="ecl-description-list__term sc-ecl-description-list-ec">
+            <dt class="ecl-description-list__term is-first sc-ecl-description-list-ec">
               Standalone links
             </dt>
           </ecl-description-list-term>
@@ -75,9 +73,7 @@ exports[`ecl-content-block renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link sc-ecl-description-list-ec" href="/example.html">
-                      <span class="ecl-link__label">
-                        Lorem ipsum dolor sit amet
-                      </span>
+                      Lorem ipsum dolor sit amet
                     </a>
                   </ecl-link>
                 </li>
@@ -85,9 +81,7 @@ exports[`ecl-content-block renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link sc-ecl-description-list-ec" href="/example.html">
-                      <span class="ecl-link__label">
-                        Lorem ipsum dolor sit amet
-                      </span>
+                      Lorem ipsum dolor sit amet
                     </a>
                   </ecl-link>
                 </li>
@@ -126,9 +120,7 @@ exports[`ecl-content-block renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link sc-ecl-description-list-ec" href="/example.html">
-                      <span class="ecl-link__label">
-                        Lorem ipsum dolor sit amet
-                      </span>
+                      Lorem ipsum dolor sit amet
                     </a>
                   </ecl-link>
                 </li>
@@ -136,9 +128,7 @@ exports[`ecl-content-block renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link sc-ecl-description-list-ec" href="/example.html">
-                      <span class="ecl-link__label">
-                        Lorem ipsum dolor sit amet
-                      </span>
+                      Lorem ipsum dolor sit amet
                     </a>
                   </ecl-link>
                 </li>
@@ -162,9 +152,7 @@ exports[`ecl-content-block renders 1`] = `
                   <ecl-link>
                     <!---->
                     <a class="ecl-link" href="/example.html">
-                      <span class="ecl-link__label">
-                        Taxonomy item 2
-                      </span>
+                      Taxonomy item 2
                     </a>
                   </ecl-link>
                 </li>
@@ -181,46 +169,34 @@ exports[`ecl-content-block renders 1`] = `
       <ul class="ecl-content-block__link-list">
         <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-            <span class="ecl-link__label">
-              Primary Link 1
-            </span>
+            Primary Link 1
           </a>
         </li>
         <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-            <span class="ecl-link__label">
-              Primary Link 2
-            </span>
+            Primary Link 2
           </a>
         </li>
         <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-            <span class="ecl-link__label">
-              Primary Link 3
-            </span>
+            Primary Link 3
           </a>
         </li>
         <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-            <span class="ecl-link__label">
-              Primary Link 4
-            </span>
+            Primary Link 4
           </a>
         </li>
       </ul>
       <ul class="ecl-content-block__link-list">
         <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-            <span class="ecl-link__label">
-              Secondary Link 1
-            </span>
+            Secondary Link 1
           </a>
         </li>
         <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
-            <span class="ecl-link__label">
-              Secondary Link 2
-            </span>
+            Secondary Link 2
           </a>
         </li>
       </ul>

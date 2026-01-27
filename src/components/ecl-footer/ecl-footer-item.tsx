@@ -30,7 +30,6 @@ export class EclFooterItem{
       <li
         class={this.getClass()}
       >
-      <slot name="ecl-footer-item-desc"></slot>
         <ecl-link
           path={this.link}
           variant="standalone"

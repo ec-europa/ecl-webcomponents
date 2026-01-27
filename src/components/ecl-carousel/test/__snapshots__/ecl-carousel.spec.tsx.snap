@@ -1,21 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-carousel renders 1`] = `
-<ecl-carousel carousel-id="ecl-carousel-demo" ecl-script="" slides-number="3">
+<ecl-carousel carousel-id="ecl-carousel-demo" slides-number="3">
   <!---->
-  <div class="ecl-carousel" data-ecl-carosuel>
-    <div class="ecl-carousel__controls">
+  <div class="ecl-carousel" data-ecl-carosuel style="opacity: 0;">
+    <div class="ecl-carousel__controls" style="display: none;">
       <div class="ecl-container">
         <div class="ecl-carousel__autoplay">
           <ecl-button buttonstyle="neutral" hidelabel="" styleclass="ecl-carousel__play sc-ecl-carousel-ec" type="button" variant="tertiary">
             <ecl-icon slot="icon-after" style-class="ecl-carousel__icon-default sc-ecl-carousel-ec">
-              <span class="ecl-carousel__icon-default ecl-icon sc-ecl-carousel-ec wt-icon--m wt-icon--placeholder wt-icon--play-outline"></span>
+              <span class="ecl-carousel__icon-default ecl-icon ecl-icon--m sc-ecl-carousel-ec wt-icon--placeholder wt-icon--play-outline"></span>
             </ecl-icon>
             Play carousel
           </ecl-button>
           <ecl-button buttonstyle="neutral" hidelabel="" styleclass="ecl-carousel__pause sc-ecl-carousel-ec" type="button" variant="tertiary">
             <ecl-icon slot="icon-after" style-class="ecl-carousel__icon-default sc-ecl-carousel-ec">
-              <span class="ecl-carousel__icon-default ecl-icon sc-ecl-carousel-ec wt-icon--m wt-icon--pause-outline wt-icon--placeholder"></span>
+              <span class="ecl-carousel__icon-default ecl-icon ecl-icon--m sc-ecl-carousel-ec wt-icon--pause-outline wt-icon--placeholder"></span>
             </ecl-icon>
             Pause carousel
           </ecl-button>
@@ -34,17 +34,7 @@ exports[`ecl-carousel renders 1`] = `
       </div>
     </div>
     <div class="ecl-carousel__container">
-      <div class="ecl-carousel__slides" id="ecl-carousel-demo">
-        <ecl-carousel-item banner-title="Duis vitae pulvinar turpis" banner-variant="text-box" centered="false" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" size="l" theme="ec">
-          Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur
-        </ecl-carousel-item>
-        <ecl-carousel-item banner-title="Duis vitae pulvinar turpis" banner-variant="text-highlight" centered="false" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" size="l" theme="ec">
-          Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur
-        </ecl-carousel-item>
-        <ecl-carousel-item banner-title="Duis vitae pulvinar turpis" banner-variant="image-overlay" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" size="l" theme="ec">
-          Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur
-        </ecl-carousel-item>
-      </div>
+      <div class="ecl-carousel__slides" id="ecl-carousel-demo" style="display: block;"></div>
     </div>
   </div>
 </ecl-carousel>

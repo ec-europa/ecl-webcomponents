@@ -1,8 +1,6 @@
 import { Component, h, Prop, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
+import Carousel from "@ecl/carousel";
 declare var ECL: any;
-declare const CAROUSEL: any;
-declare const BANNER: any;
 
 @Component({
   tag: 'ecl-carousel',
@@ -12,14 +10,13 @@ declare const BANNER: any;
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build'],
 })
 
 export class EclCarousel {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() noScript: boolean = false;
   @Prop() carouselId: string;
   @Prop() colorMode: string;
   @Prop() slidesNumber: number;
@@ -57,33 +54,11 @@ export class EclCarousel {
     slides.forEach((slide) => {
       slide.classList.add(`sc-ecl-carousel-${this.theme}`);
     });
-    if (this.eclScript) {
-      const src = getAssetPath('./build/scripts/ecl-carousel-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-
-      const bannerSrc = getAssetPath('./build/scripts/ecl-banner-vanilla.js');
-      if (document.querySelector(`script[src="${bannerSrc}"]`)) {
-        document.querySelector(`script[src="${bannerSrc}"]`).remove();
-      }
-      const bannerScript = document.createElement('script');
-      bannerScript.src = bannerSrc;
-      document.body.appendChild(bannerScript);
-      bannerScript.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        ECL.Banner = BANNER.Banner;
-      };
-
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const carousel = new CAROUSEL.Carousel(this.el.firstElementChild);
-        carousel.init();
-      };
-
-      document.body.appendChild(script);
+    if (!this.noScript) {
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Carousel = Carousel;
+      const carousel = new Carousel(this.el.firstElementChild);
+      carousel.init();
     }
   }
 

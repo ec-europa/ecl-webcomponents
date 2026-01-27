@@ -19,6 +19,7 @@ const Template = (args) =>
     logo-lang-code="en"
     variant="core"
     description="This site is managed by:"
+    description-name="[name of the manager of the site]"
     site-name="European Commission website"
     logo-link="${randomizedLink('/example.html')}"
     co-owner-title="This page is managed by:"
@@ -170,6 +171,7 @@ const TemplateStandardised = (args) => `
     site-name="Site name"
     variant="standardised"
     description="This site is managed by:"
+    description-name="[name of the manager of the site]"
     logo-link="${randomizedLink('/example.html')}"
     co-owner-title="This page is managed by:"
     co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"},{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"}]'
@@ -415,9 +417,6 @@ const TemplateEu = () =>
     co-owner-title="This page is managed by:"
     co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"},{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"}]'
   >
-    <ecl-text tag="p" slot="description">
-      This site is managed by: [name of the manager of the site]
-    </ecl-text>
     <ecl-text
       size="m"
       slot="ecl-footer-list-main"
@@ -532,14 +531,16 @@ const TemplateEuHarmonised = () =>
     logo-title="European Union"
     logo-lang-code="en"
     site-name="Site name"
-    description="This site is managed by the Directorate-General for Communication"
+    site-name-link="${randomizedLink('/example.html')}"
+    description="This site is managed by the:"
+    description-name="[name of the manager of the site]"
     variant="harmonised"
     logo-link="${randomizedLink('/example.html')}"
     co-owner-title="This page is managed by:"
     co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"},{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"}]'
   >
     <ecl-text
-      size="m"
+      size="l"
       tag="div"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-top-middle"
@@ -555,7 +556,7 @@ const TemplateEuHarmonised = () =>
     <ecl-text
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-top-middle-bottom"
-      size="m"
+      size="l"
       tag="div"
     >
       Follow us
@@ -564,22 +565,25 @@ const TemplateEuHarmonised = () =>
       link="${randomizedLink('/example.html')}"
       slot="ecl-footer-list-top-middle-bottom"
     >
+      <ecl-icon family="networks" icon="facebook" slot="icon-before"></ecl-icon>
       Social 1
     </ecl-footer-item>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
       slot="ecl-footer-list-top-middle-bottom"
     >
+      <ecl-icon family="networks" icon="twitter" slot="icon-before"></ecl-icon>
       Social 2
     </ecl-footer-item>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
       slot="ecl-footer-list-top-middle-bottom"
     >
+      <ecl-icon family="networks" icon="mastodon" slot="icon-before"></ecl-icon>
       Social 3
     </ecl-footer-item>
     <ecl-text
-      size="m"
+      size="l"
       tag="div"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-top-right"
@@ -606,7 +610,7 @@ const TemplateEuHarmonised = () =>
     </ecl-footer-item>
     <ecl-text
       tag="div"
-      size="m"
+      size="l"
       slot="ecl-footer-list-main"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
     >
@@ -634,12 +638,11 @@ const TemplateEuHarmonised = () =>
       link="https://european-union.europa.eu/contact-eu/meet-us_en"
       slot="ecl-footer-list-main"
     >
-      <span slot="ecl-footer-item-desc">Meet us at one of the</span>
-      EU centres
+      Meet us at one of the EU centres
     </ecl-footer-item>
     <ecl-text
       tag="div"
-      size="m"
+      size="l"
       slot="ecl-footer-list-bottom-left"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
     >
@@ -652,7 +655,7 @@ const TemplateEuHarmonised = () =>
       Search for EU social media channels
     </ecl-footer-item>
     <ecl-text
-      size="m"
+      size="l"
       tag="div"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-right-top"
@@ -702,7 +705,7 @@ const TemplateEuHarmonised = () =>
       Accessibility
     </ecl-footer-item>
     <ecl-text
-      size="m"
+      size="l"
       tag="div"
       style-class="ecl-site-footer__title ecl-site-footer__title--separator"
       slot="ecl-footer-list-right"

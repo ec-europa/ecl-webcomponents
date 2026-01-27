@@ -4,6 +4,10 @@ import { EclAccordionItem } from '../ecl-accordion-item';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-accordion', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+  
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclAccordion, EclAccordionItem, EclIcon],

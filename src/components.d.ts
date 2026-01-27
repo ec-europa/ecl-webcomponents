@@ -14,7 +14,7 @@ export namespace Components {
         /**
           * @default false
          */
-        "eclScript": boolean;
+        "noScript": boolean;
         /**
           * @default ''
          */
@@ -46,10 +46,7 @@ export namespace Components {
         "ctaClicked": boolean;
         "ctaLabel": string;
         "ctaLink": string;
-        /**
-          * @default false
-         */
-        "eclScript": boolean;
+        "descriptionLink": string;
         /**
           * @default false
          */
@@ -72,6 +69,10 @@ export namespace Components {
         "horizontal": string;
         "image": string;
         "imageAlt": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
         /**
           * @default 'm'
          */
@@ -104,13 +105,13 @@ export namespace Components {
     }
     interface EclBreadcrumb {
         /**
-          * @default false
-         */
-        "eclScript": boolean;
-        /**
           * @default 2
          */
         "minItemsRight": number;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
         /**
           * @default ''
          */
@@ -156,6 +157,10 @@ export namespace Components {
         "indicatorValue": string;
         "itemId": string;
         /**
+          * @default 'l'
+         */
+        "size": string;
+        /**
           * @default ''
          */
         "styleClass": string;
@@ -165,7 +170,7 @@ export namespace Components {
          */
         "type": string;
         /**
-          * @default 'primary'
+          * @default ''
          */
         "variant": string;
     }
@@ -192,11 +197,11 @@ export namespace Components {
         /**
           * @default false
          */
-        "eclScript": boolean;
+        "fullWidth": boolean;
         /**
           * @default false
          */
-        "fullWidth": boolean;
+        "noScript": boolean;
         "slidesNumber": number;
         /**
           * @default 'Go to slide %d'
@@ -253,7 +258,7 @@ export namespace Components {
         /**
           * @default false
          */
-        "eclScript": boolean;
+        "noScript": boolean;
         /**
           * @default ''
          */
@@ -280,10 +285,6 @@ export namespace Components {
         "theme": string;
     }
     interface EclContentBlock {
-        /**
-          * @default false
-         */
-        "eclScript": boolean;
         "hasDescription": boolean;
         "hasLabels": boolean;
         "hasLinks": boolean;
@@ -292,6 +293,14 @@ export namespace Components {
         "hasTitle": boolean;
         "metaPrimary": string;
         "metaSecondary": string;
+        /**
+          * @default 'vertical'
+         */
+        "metaSecondaryDir": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
         /**
           * @default ''
          */
@@ -339,15 +348,15 @@ export namespace Components {
         "year": string;
     }
     interface EclDatepicker {
-        /**
-          * @default 'DD-MM-YYYY'
-         */
-        "dateFormat": string;
         "defaultValue": string;
         /**
           * @default false
          */
         "disabled": boolean;
+        /**
+          * @default 1
+         */
+        "firstDayOfTheWeek": number;
         /**
           * @default `ecl-datepicker-${Math.random().toString(36).slice(2, 10)}`
          */
@@ -356,6 +365,17 @@ export namespace Components {
           * @default false
          */
         "invalid": boolean;
+        /**
+          * @default ''
+         */
+        "max": string;
+        /**
+          * @default ''
+         */
+        "min": string;
+        /**
+          * @default this.inputId
+         */
         "name": string;
         /**
           * @default 'DD-MM-YYYY'
@@ -367,22 +387,21 @@ export namespace Components {
         "required": boolean;
         "styleClass": string;
         "theme": string;
-        "type": string;
         /**
-          * @default 40
+          * @default 'm'
          */
-        "yearRange": number;
+        "width": string;
     }
     interface EclDescriptionList {
         /**
           * @default ''
          */
         "colorMode": string;
+        "moreLabel": string;
         /**
           * @default false
          */
-        "eclScript": boolean;
-        "moreLabel": string;
+        "noScript": boolean;
         /**
           * @default ''
          */
@@ -423,10 +442,6 @@ export namespace Components {
     }
     interface EclExpandable {
         /**
-          * @default false
-         */
-        "eclScript": boolean;
-        /**
           * @default `ecl-expandable-${Math.random().toString(36).substr(2, 9)}`
          */
         "elId": string;
@@ -442,6 +457,10 @@ export namespace Components {
           * @default ''
          */
         "labelExpanded": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
         /**
           * @default ''
          */
@@ -493,15 +512,14 @@ export namespace Components {
         "value": string;
     }
     interface EclFeaturedItem {
+        /**
+          * @default ''
+         */
         "colorMode": string;
         /**
           * @default 'ecl-featured-item__container'
          */
         "defaultContainerClass": string;
-        /**
-          * @default false
-         */
-        "eclScript": boolean;
         /**
           * @default `ecl-featured-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
          */
@@ -510,6 +528,9 @@ export namespace Components {
         "itemTitle": string;
         "linkLabel": string;
         "linkPath": string;
+        "linkType": string;
+        "mediaAnchor": string;
+        "mediaBehavior": string;
         "mediaCaption": string;
         /**
           * @default 'left'
@@ -517,10 +538,11 @@ export namespace Components {
         "position": string;
         "styleClass": string;
         "theme": string;
-        /**
-          * @default 'default'
-         */
         "variant": string;
+        /**
+          * @default 'top'
+         */
+        "verticalAlignment": string;
     }
     interface EclFile {
         "ariaLabel": string;
@@ -540,10 +562,6 @@ export namespace Components {
         "downloadLabelId": string;
         "downloadLink": string;
         /**
-          * @default false
-         */
-        "eclScript": boolean;
-        /**
           * @default `ecl-file-${Math.random().toString(36).slice(2, 10)}`
          */
         "elId": string;
@@ -558,6 +576,10 @@ export namespace Components {
         "labels": string;
         "language": string;
         "meta": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
         "styleClass": string;
         "taxonomies": string;
         "taxonomiesLabel": string;
@@ -602,10 +624,6 @@ export namespace Components {
           * @default false
          */
         "disabled": boolean;
-        /**
-          * @default false
-         */
-        "eclScript": boolean;
         "helperId": string;
         "helperText": string;
         "inputClass": string;
@@ -623,6 +641,10 @@ export namespace Components {
          */
         "multiple": boolean;
         "name": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
         "placeholder": string;
         /**
           * @default false
@@ -640,6 +662,7 @@ export namespace Components {
         "coOwnerLinks": string;
         "coOwnerTitle": string;
         "description": string;
+        "descriptionName": string;
         "logoAlt": string;
         "logoLangCode": string;
         "logoLink": string;
@@ -657,12 +680,14 @@ export namespace Components {
         "coOwnerLinks": string;
         "coOwnerTitle": string;
         "description": string;
+        "descriptionName": string;
         "logoAlt": string;
         "logoAriaLabel": string;
         "logoLangCode": string;
         "logoLink": string;
         "logoTitle": string;
         "siteName": string;
+        "siteNameLink": string;
         /**
           * @default ''
          */
@@ -731,10 +756,6 @@ export namespace Components {
          */
         "disableOverlay": boolean;
         /**
-          * @default false
-         */
-        "eclScript": boolean;
-        /**
           * @default `ecl-gallery-${Math.random().toString(36).slice(2, 10)}`
          */
         "elId": string;
@@ -766,6 +787,10 @@ export namespace Components {
           * @default false
          */
         "noOverlay": boolean;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
         "prevLabel": string;
         /**
           * @default '3-2'
@@ -863,7 +888,11 @@ export namespace Components {
         /**
           * @default false
          */
-        "eclScript": boolean;
+        "noScript": boolean;
+        /**
+          * @default ''
+         */
+        "srLabel": string;
         /**
           * @default ''
          */
@@ -878,12 +907,12 @@ export namespace Components {
           * @default ''
          */
         "colorMode": string;
+        "inpageId": string;
+        "inpageTitle": string;
         /**
           * @default false
          */
-        "eclScript": boolean;
-        "inpageId": string;
-        "inpageTitle": string;
+        "noScript": boolean;
         "styleClass": string;
         "theme": string;
     }
@@ -963,7 +992,12 @@ export namespace Components {
         /**
           * @default false
          */
+        "branded": boolean;
+        /**
+          * @default false
+         */
         "download": boolean;
+        "elId": string;
         /**
           * @default false
          */
@@ -976,16 +1010,13 @@ export namespace Components {
           * @default false
          */
         "indicator": boolean;
+        "indicatorLabel": string;
         "indicatorValue": string;
         /**
           * @default false
          */
         "inverted": boolean;
         "name": string;
-        /**
-          * @default false
-         */
-        "noVisited": boolean;
         "path": string;
         "srExternal": string;
         "styleClass": string;
@@ -1080,10 +1111,6 @@ export namespace Components {
         /**
           * @default false
          */
-        "eclScript": boolean;
-        /**
-          * @default false
-         */
         "embeddedMedia": boolean;
         /**
           * @default false
@@ -1095,6 +1122,14 @@ export namespace Components {
         "hasCaption": boolean;
         "image": string;
         "imageAlt": string;
+        /**
+          * @default 'center'
+         */
+        "imageAnchor": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
         /**
           * @default ''
          */
@@ -1108,17 +1143,116 @@ export namespace Components {
         "theme": string;
         "tracks": string;
     }
-    interface EclMenu {
-        "backLabel": string;
-        "closeLabel": string;
+    interface EclMegaMenu {
+        "ariaLabel": string;
+        "backLabel"?: string;
+        /**
+          * @default 'secondary'
+         */
+        "featuredPriority": 'primary' | 'secondary';
+        /**
+          * @default `ecl-mega-menu-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "menuId"?: string;
         /**
           * @default false
          */
-        "eclScript": boolean;
+        "noScript": boolean;
+        "styleClass": string;
+        "theme": string;
+        "toggleLabel"?: string;
+    }
+    interface EclMegaMenuFeaturedListItem {
         /**
-          * @default 'group1'
+          * @default false
          */
-        "group": string;
+        "external": boolean;
+        /**
+          * @default false
+         */
+        "hasDescription": boolean;
+        "image": string;
+        "label": string;
+        "path": string;
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclMegaMenuItem {
+        "ariaLabel": string;
+        /**
+          * @default false
+         */
+        "external": boolean;
+        "featuredImage": string;
+        "featuredTitle": string;
+        /**
+          * @default false
+         */
+        "hasChildren": boolean;
+        /**
+          * @default false
+         */
+        "hasFeatured": boolean;
+        /**
+          * @default false
+         */
+        "hasInfo": boolean;
+        "infoTitle": string;
+        /**
+          * @default false
+         */
+        "isContainer": boolean;
+        /**
+          * @default false
+         */
+        "isPromotional": boolean;
+        "label": string;
+        /**
+          * @default false
+         */
+        "oneLevelOnly": boolean;
+        "path"?: string;
+        /**
+          * @default false
+         */
+        "seeAll": boolean;
+        "seeAllLabel"?: string;
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclMegaMenuSubitem {
+        "ariaLabel": string;
+        /**
+          * @default false
+         */
+        "external": boolean;
+        "featuredTitle": string;
+        /**
+          * @default false
+         */
+        "hasChildren": boolean;
+        /**
+          * @default false
+         */
+        "hasFeatured": boolean;
+        "label": string;
+        /**
+          * @default false
+         */
+        "oneLevelOnly": boolean;
+        "path"?: string;
+        /**
+          * @default false
+         */
+        "seeAll": boolean;
+        "seeAllLabel"?: string;
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclMenu {
+        "ariaLabel": string;
+        "backLabel": string;
+        "closeLabel": string;
         /**
           * @default 2
          */
@@ -1126,6 +1260,10 @@ export namespace Components {
         "menuId": string;
         "menuTitle": string;
         "nextLabel": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
         "previousLabel": string;
         "siteName": string;
         "styleClass": string;
@@ -1155,11 +1293,11 @@ export namespace Components {
     }
     interface EclModal {
         "closeLabel": string;
+        "itemId": string;
         /**
           * @default false
          */
-        "eclScript": boolean;
-        "itemId": string;
+        "noScript": boolean;
         /**
           * @default 'l'
          */
@@ -1220,7 +1358,7 @@ export namespace Components {
         /**
           * @default false
          */
-        "eclScript": boolean;
+        "noScript": boolean;
         "srNext": string;
         "srPause": string;
         "srPlay": string;
@@ -1242,7 +1380,7 @@ export namespace Components {
         /**
           * @default false
          */
-        "eclScript": boolean;
+        "noScript": boolean;
         "notificationTitle": string;
         "styleClass": string;
         "theme": string;
@@ -1257,11 +1395,17 @@ export namespace Components {
     }
     interface EclPageHeader {
         /**
+          * @default 'top'
+         */
+        "descriptionPosition": string;
+        /**
           * @default false
          */
-        "eclScript": boolean;
-        "expandableContent": string;
-        "expandableHeader": string;
+        "expandable": boolean;
+        /**
+          * @default false
+         */
+        "expandableContent": boolean;
         /**
           * @default `toggle panel's visibility`
          */
@@ -1270,10 +1414,17 @@ export namespace Components {
           * @default `ecl-page-header-expandable-panel-${Math.random().toString(36).slice(2, 10)}`
          */
         "expandablePanelId": string;
+        /**
+          * @default 'm'
+         */
+        "fontSize": string;
         "headerTitle": string;
         "image": string;
         "imageAlt": string;
-        "meta": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
         "overlay": string;
         /**
           * @default ''
@@ -1282,6 +1433,26 @@ export namespace Components {
         "theme": string;
         "thumbnail": string;
         "thumbnailAlt": string;
+        "variant": string;
+        "withMeta": boolean;
+    }
+    interface EclPageHeaderMetaItem {
+        /**
+          * @default ''
+         */
+        "icon": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclPageInformation {
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
     }
     interface EclPagination {
         /**
@@ -1309,6 +1480,10 @@ export namespace Components {
     interface EclPicture {
         "image": string;
         "imageAlt": string;
+        /**
+          * @default 'center'
+         */
+        "imageAnchor": string;
         "imgClass": string;
         /**
           * @default false
@@ -1318,9 +1493,6 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
-        /**
-          * @default 'ec'
-         */
         "theme": string;
         /**
           * @default false
@@ -1332,10 +1504,6 @@ export namespace Components {
           * @default false
          */
         "close": boolean;
-        /**
-          * @default false
-         */
-        "eclScript": boolean;
         "icon": string;
         /**
           * @default false
@@ -1343,6 +1511,10 @@ export namespace Components {
         "indicator": boolean;
         "indicatorValue": number;
         "itemId": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
         "styleClass": string;
         "theme": string;
         "toggleLabel": string;
@@ -1353,10 +1525,6 @@ export namespace Components {
           * @default false
          */
         "disabled": boolean;
-        /**
-          * @default false
-         */
-        "eclScript": boolean;
         /**
           * @default false
          */
@@ -1380,6 +1548,10 @@ export namespace Components {
         "max": number;
         "min": number;
         "name": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
         "placeholder": string;
         /**
           * @default false
@@ -1492,10 +1664,6 @@ export namespace Components {
         /**
           * @default false
          */
-        "eclScript": boolean;
-        /**
-          * @default false
-         */
         "hasChanged": boolean;
         "inputId": string;
         "inputValue": string;
@@ -1517,6 +1685,10 @@ export namespace Components {
         /**
           * @default false
          */
+        "noScript": boolean;
+        /**
+          * @default false
+         */
         "required": boolean;
         "selectId": string;
         "styleClass": string;
@@ -1530,10 +1702,6 @@ export namespace Components {
         "bannerTop": string;
         "bannerTopLink": string;
         "closeLabel": string;
-        /**
-          * @default false
-         */
-        "eclScript": boolean;
         "euLabel": string;
         "langCode": string;
         "language": string;
@@ -1564,6 +1732,10 @@ export namespace Components {
         "logoTitle": string;
         "logoutLink": string;
         "logoutText": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
         "nonEuLabel": string;
         /**
           * @default true
@@ -1677,6 +1849,32 @@ export namespace Components {
          */
         "visible": boolean;
     }
+    interface EclSplashPage {
+        "elTitle": string;
+        "euLabel": string;
+        "langCode": string;
+        "language": string;
+        "logo": string;
+        "logoAlt": string;
+        "logoLink": string;
+        "nonEuLabel": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclSplashPageLanguageItem {
+        /**
+          * @default false
+         */
+        "active": boolean;
+        "langCode": string;
+        "language": string;
+        "path": string;
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclSpotlight {
         /**
           * @default ''
@@ -1698,6 +1896,87 @@ export namespace Components {
         "header": string;
         "image": string;
         "imageAlt": string;
+        "path": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclTable {
+        "caption"?: string;
+        "colorMode": string;
+        /**
+          * @default `ecl-table-${Math.random().toString(36).slice(2)}`
+         */
+        "elId": string;
+        "headers"?: string;
+        "labelSortAscending"?: string;
+        "labelSortDefault"?: string;
+        "labelSortDescending"?: string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
+        "rows"?: string;
+        /**
+          * @default false
+         */
+        "simple": boolean;
+        /**
+          * @default false
+         */
+        "sortable": boolean;
+        "styleClass": string;
+        "theme": string;
+        /**
+          * @default false
+         */
+        "zebra": boolean;
+    }
+    interface EclTabs {
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
+          * @default 'Show %d more items'
+         */
+        "moreLabel": string;
+        /**
+          * @default 'Next'
+         */
+        "nextLabel": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
+        /**
+          * @default 'Previous'
+         */
+        "prevLabel": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+        /**
+          * @default false
+         */
+        "withoutContent": boolean;
+    }
+    interface EclTabsItem {
+        /**
+          * @default `ecl-tabs-item-${Math.random().toString(36).substr(2, 9)}}`
+         */
+        "elId": string;
+        /**
+          * @default false
+         */
+        "isCurrent": boolean;
+        /**
+          * @default ''
+         */
         "path": string;
         /**
           * @default ''
@@ -1809,7 +2088,7 @@ export namespace Components {
         /**
           * @default false
          */
-        "eclScript": boolean;
+        "noScript": boolean;
         "styleClass": string;
         "theme": string;
     }
@@ -2204,6 +2483,30 @@ declare global {
         prototype: HTMLEclMediaContainerElement;
         new (): HTMLEclMediaContainerElement;
     };
+    interface HTMLEclMegaMenuElement extends Components.EclMegaMenu, HTMLStencilElement {
+    }
+    var HTMLEclMegaMenuElement: {
+        prototype: HTMLEclMegaMenuElement;
+        new (): HTMLEclMegaMenuElement;
+    };
+    interface HTMLEclMegaMenuFeaturedListItemElement extends Components.EclMegaMenuFeaturedListItem, HTMLStencilElement {
+    }
+    var HTMLEclMegaMenuFeaturedListItemElement: {
+        prototype: HTMLEclMegaMenuFeaturedListItemElement;
+        new (): HTMLEclMegaMenuFeaturedListItemElement;
+    };
+    interface HTMLEclMegaMenuItemElement extends Components.EclMegaMenuItem, HTMLStencilElement {
+    }
+    var HTMLEclMegaMenuItemElement: {
+        prototype: HTMLEclMegaMenuItemElement;
+        new (): HTMLEclMegaMenuItemElement;
+    };
+    interface HTMLEclMegaMenuSubitemElement extends Components.EclMegaMenuSubitem, HTMLStencilElement {
+    }
+    var HTMLEclMegaMenuSubitemElement: {
+        prototype: HTMLEclMegaMenuSubitemElement;
+        new (): HTMLEclMegaMenuSubitemElement;
+    };
     interface HTMLEclMenuElement extends Components.EclMenu, HTMLStencilElement {
     }
     var HTMLEclMenuElement: {
@@ -2257,6 +2560,18 @@ declare global {
     var HTMLEclPageHeaderElement: {
         prototype: HTMLEclPageHeaderElement;
         new (): HTMLEclPageHeaderElement;
+    };
+    interface HTMLEclPageHeaderMetaItemElement extends Components.EclPageHeaderMetaItem, HTMLStencilElement {
+    }
+    var HTMLEclPageHeaderMetaItemElement: {
+        prototype: HTMLEclPageHeaderMetaItemElement;
+        new (): HTMLEclPageHeaderMetaItemElement;
+    };
+    interface HTMLEclPageInformationElement extends Components.EclPageInformation, HTMLStencilElement {
+    }
+    var HTMLEclPageInformationElement: {
+        prototype: HTMLEclPageInformationElement;
+        new (): HTMLEclPageInformationElement;
     };
     interface HTMLEclPaginationElement extends Components.EclPagination, HTMLStencilElement {
     }
@@ -2381,11 +2696,41 @@ declare global {
         prototype: HTMLEclSpinnerElement;
         new (): HTMLEclSpinnerElement;
     };
+    interface HTMLEclSplashPageElement extends Components.EclSplashPage, HTMLStencilElement {
+    }
+    var HTMLEclSplashPageElement: {
+        prototype: HTMLEclSplashPageElement;
+        new (): HTMLEclSplashPageElement;
+    };
+    interface HTMLEclSplashPageLanguageItemElement extends Components.EclSplashPageLanguageItem, HTMLStencilElement {
+    }
+    var HTMLEclSplashPageLanguageItemElement: {
+        prototype: HTMLEclSplashPageLanguageItemElement;
+        new (): HTMLEclSplashPageLanguageItemElement;
+    };
     interface HTMLEclSpotlightElement extends Components.EclSpotlight, HTMLStencilElement {
     }
     var HTMLEclSpotlightElement: {
         prototype: HTMLEclSpotlightElement;
         new (): HTMLEclSpotlightElement;
+    };
+    interface HTMLEclTableElement extends Components.EclTable, HTMLStencilElement {
+    }
+    var HTMLEclTableElement: {
+        prototype: HTMLEclTableElement;
+        new (): HTMLEclTableElement;
+    };
+    interface HTMLEclTabsElement extends Components.EclTabs, HTMLStencilElement {
+    }
+    var HTMLEclTabsElement: {
+        prototype: HTMLEclTabsElement;
+        new (): HTMLEclTabsElement;
+    };
+    interface HTMLEclTabsItemElement extends Components.EclTabsItem, HTMLStencilElement {
+    }
+    var HTMLEclTabsItemElement: {
+        prototype: HTMLEclTabsItemElement;
+        new (): HTMLEclTabsItemElement;
     };
     interface HTMLEclTagElementEventMap {
         "removeTag": boolean;
@@ -2500,6 +2845,10 @@ declare global {
         "ecl-list-illustration": HTMLEclListIllustrationElement;
         "ecl-list-illustration-item": HTMLEclListIllustrationItemElement;
         "ecl-media-container": HTMLEclMediaContainerElement;
+        "ecl-mega-menu": HTMLEclMegaMenuElement;
+        "ecl-mega-menu-featured-list-item": HTMLEclMegaMenuFeaturedListItemElement;
+        "ecl-mega-menu-item": HTMLEclMegaMenuItemElement;
+        "ecl-mega-menu-subitem": HTMLEclMegaMenuSubitemElement;
         "ecl-menu": HTMLEclMenuElement;
         "ecl-menu-item": HTMLEclMenuItemElement;
         "ecl-modal": HTMLEclModalElement;
@@ -2509,6 +2858,8 @@ declare global {
         "ecl-news-ticker-item": HTMLEclNewsTickerItemElement;
         "ecl-notification": HTMLEclNotificationElement;
         "ecl-page-header": HTMLEclPageHeaderElement;
+        "ecl-page-header-meta-item": HTMLEclPageHeaderMetaItemElement;
+        "ecl-page-information": HTMLEclPageInformationElement;
         "ecl-pagination": HTMLEclPaginationElement;
         "ecl-pagination-item": HTMLEclPaginationItemElement;
         "ecl-picture": HTMLEclPictureElement;
@@ -2523,7 +2874,12 @@ declare global {
         "ecl-social-media-follow-item": HTMLEclSocialMediaFollowItemElement;
         "ecl-spacing": HTMLEclSpacingElement;
         "ecl-spinner": HTMLEclSpinnerElement;
+        "ecl-splash-page": HTMLEclSplashPageElement;
+        "ecl-splash-page-language-item": HTMLEclSplashPageLanguageItemElement;
         "ecl-spotlight": HTMLEclSpotlightElement;
+        "ecl-table": HTMLEclTableElement;
+        "ecl-tabs": HTMLEclTabsElement;
+        "ecl-tabs-item": HTMLEclTabsItemElement;
         "ecl-tag": HTMLEclTagElement;
         "ecl-tag-set": HTMLEclTagSetElement;
         "ecl-text": HTMLEclTextElement;
@@ -2542,7 +2898,7 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
-        "eclScript"?: boolean;
+        "noScript"?: boolean;
         /**
           * @default ''
          */
@@ -2575,10 +2931,7 @@ declare namespace LocalJSX {
         "ctaClicked"?: boolean;
         "ctaLabel"?: string;
         "ctaLink"?: string;
-        /**
-          * @default false
-         */
-        "eclScript"?: boolean;
+        "descriptionLink"?: string;
         /**
           * @default false
          */
@@ -2601,6 +2954,10 @@ declare namespace LocalJSX {
         "horizontal"?: string;
         "image"?: string;
         "imageAlt"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
         /**
           * @default 'm'
          */
@@ -2633,13 +2990,13 @@ declare namespace LocalJSX {
     }
     interface EclBreadcrumb {
         /**
-          * @default false
-         */
-        "eclScript"?: boolean;
-        /**
           * @default 2
          */
         "minItemsRight"?: number;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
         /**
           * @default ''
          */
@@ -2685,6 +3042,10 @@ declare namespace LocalJSX {
         "indicatorValue"?: string;
         "itemId"?: string;
         /**
+          * @default 'l'
+         */
+        "size"?: string;
+        /**
           * @default ''
          */
         "styleClass"?: string;
@@ -2694,7 +3055,7 @@ declare namespace LocalJSX {
          */
         "type"?: string;
         /**
-          * @default 'primary'
+          * @default ''
          */
         "variant"?: string;
     }
@@ -2721,11 +3082,11 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
-        "eclScript"?: boolean;
+        "fullWidth"?: boolean;
         /**
           * @default false
          */
-        "fullWidth"?: boolean;
+        "noScript"?: boolean;
         "slidesNumber"?: number;
         /**
           * @default 'Go to slide %d'
@@ -2782,7 +3143,7 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
-        "eclScript"?: boolean;
+        "noScript"?: boolean;
         /**
           * @default ''
          */
@@ -2809,10 +3170,6 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclContentBlock {
-        /**
-          * @default false
-         */
-        "eclScript"?: boolean;
         "hasDescription"?: boolean;
         "hasLabels"?: boolean;
         "hasLinks"?: boolean;
@@ -2821,6 +3178,14 @@ declare namespace LocalJSX {
         "hasTitle"?: boolean;
         "metaPrimary"?: string;
         "metaSecondary"?: string;
+        /**
+          * @default 'vertical'
+         */
+        "metaSecondaryDir"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
         /**
           * @default ''
          */
@@ -2868,15 +3233,15 @@ declare namespace LocalJSX {
         "year"?: string;
     }
     interface EclDatepicker {
-        /**
-          * @default 'DD-MM-YYYY'
-         */
-        "dateFormat"?: string;
         "defaultValue"?: string;
         /**
           * @default false
          */
         "disabled"?: boolean;
+        /**
+          * @default 1
+         */
+        "firstDayOfTheWeek"?: number;
         /**
           * @default `ecl-datepicker-${Math.random().toString(36).slice(2, 10)}`
          */
@@ -2885,6 +3250,17 @@ declare namespace LocalJSX {
           * @default false
          */
         "invalid"?: boolean;
+        /**
+          * @default ''
+         */
+        "max"?: string;
+        /**
+          * @default ''
+         */
+        "min"?: string;
+        /**
+          * @default this.inputId
+         */
         "name"?: string;
         "onBlurred"?: (event: EclDatepickerCustomEvent<void>) => void;
         "onFocused"?: (event: EclDatepickerCustomEvent<void>) => void;
@@ -2899,22 +3275,21 @@ declare namespace LocalJSX {
         "required"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
-        "type"?: string;
         /**
-          * @default 40
+          * @default 'm'
          */
-        "yearRange"?: number;
+        "width"?: string;
     }
     interface EclDescriptionList {
         /**
           * @default ''
          */
         "colorMode"?: string;
+        "moreLabel"?: string;
         /**
           * @default false
          */
-        "eclScript"?: boolean;
-        "moreLabel"?: string;
+        "noScript"?: boolean;
         /**
           * @default ''
          */
@@ -2955,10 +3330,6 @@ declare namespace LocalJSX {
     }
     interface EclExpandable {
         /**
-          * @default false
-         */
-        "eclScript"?: boolean;
-        /**
           * @default `ecl-expandable-${Math.random().toString(36).substr(2, 9)}`
          */
         "elId"?: string;
@@ -2974,6 +3345,10 @@ declare namespace LocalJSX {
           * @default ''
          */
         "labelExpanded"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
         /**
           * @default ''
          */
@@ -3025,15 +3400,14 @@ declare namespace LocalJSX {
         "value"?: string;
     }
     interface EclFeaturedItem {
+        /**
+          * @default ''
+         */
         "colorMode"?: string;
         /**
           * @default 'ecl-featured-item__container'
          */
         "defaultContainerClass"?: string;
-        /**
-          * @default false
-         */
-        "eclScript"?: boolean;
         /**
           * @default `ecl-featured-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
          */
@@ -3042,6 +3416,9 @@ declare namespace LocalJSX {
         "itemTitle"?: string;
         "linkLabel"?: string;
         "linkPath"?: string;
+        "linkType"?: string;
+        "mediaAnchor"?: string;
+        "mediaBehavior"?: string;
         "mediaCaption"?: string;
         /**
           * @default 'left'
@@ -3049,10 +3426,11 @@ declare namespace LocalJSX {
         "position"?: string;
         "styleClass"?: string;
         "theme"?: string;
-        /**
-          * @default 'default'
-         */
         "variant"?: string;
+        /**
+          * @default 'top'
+         */
+        "verticalAlignment"?: string;
     }
     interface EclFile {
         "ariaLabel"?: string;
@@ -3072,10 +3450,6 @@ declare namespace LocalJSX {
         "downloadLabelId"?: string;
         "downloadLink"?: string;
         /**
-          * @default false
-         */
-        "eclScript"?: boolean;
-        /**
           * @default `ecl-file-${Math.random().toString(36).slice(2, 10)}`
          */
         "elId"?: string;
@@ -3090,6 +3464,10 @@ declare namespace LocalJSX {
         "labels"?: string;
         "language"?: string;
         "meta"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
         "styleClass"?: string;
         "taxonomies"?: string;
         "taxonomiesLabel"?: string;
@@ -3134,10 +3512,6 @@ declare namespace LocalJSX {
           * @default false
          */
         "disabled"?: boolean;
-        /**
-          * @default false
-         */
-        "eclScript"?: boolean;
         "helperId"?: string;
         "helperText"?: string;
         "inputClass"?: string;
@@ -3155,6 +3529,10 @@ declare namespace LocalJSX {
          */
         "multiple"?: boolean;
         "name"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
         "placeholder"?: string;
         /**
           * @default false
@@ -3172,6 +3550,7 @@ declare namespace LocalJSX {
         "coOwnerLinks"?: string;
         "coOwnerTitle"?: string;
         "description"?: string;
+        "descriptionName"?: string;
         "logoAlt"?: string;
         "logoLangCode"?: string;
         "logoLink"?: string;
@@ -3189,12 +3568,14 @@ declare namespace LocalJSX {
         "coOwnerLinks"?: string;
         "coOwnerTitle"?: string;
         "description"?: string;
+        "descriptionName"?: string;
         "logoAlt"?: string;
         "logoAriaLabel"?: string;
         "logoLangCode"?: string;
         "logoLink"?: string;
         "logoTitle"?: string;
         "siteName"?: string;
+        "siteNameLink"?: string;
         /**
           * @default ''
          */
@@ -3263,10 +3644,6 @@ declare namespace LocalJSX {
          */
         "disableOverlay"?: boolean;
         /**
-          * @default false
-         */
-        "eclScript"?: boolean;
-        /**
           * @default `ecl-gallery-${Math.random().toString(36).slice(2, 10)}`
          */
         "elId"?: string;
@@ -3298,6 +3675,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "noOverlay"?: boolean;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
         "prevLabel"?: string;
         /**
           * @default '3-2'
@@ -3395,7 +3776,11 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
-        "eclScript"?: boolean;
+        "noScript"?: boolean;
+        /**
+          * @default ''
+         */
+        "srLabel"?: string;
         /**
           * @default ''
          */
@@ -3410,12 +3795,12 @@ declare namespace LocalJSX {
           * @default ''
          */
         "colorMode"?: string;
+        "inpageId"?: string;
+        "inpageTitle"?: string;
         /**
           * @default false
          */
-        "eclScript"?: boolean;
-        "inpageId"?: string;
-        "inpageTitle"?: string;
+        "noScript"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
     }
@@ -3498,7 +3883,12 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
+        "branded"?: boolean;
+        /**
+          * @default false
+         */
         "download"?: boolean;
+        "elId"?: string;
         /**
           * @default false
          */
@@ -3511,16 +3901,13 @@ declare namespace LocalJSX {
           * @default false
          */
         "indicator"?: boolean;
+        "indicatorLabel"?: string;
         "indicatorValue"?: string;
         /**
           * @default false
          */
         "inverted"?: boolean;
         "name"?: string;
-        /**
-          * @default false
-         */
-        "noVisited"?: boolean;
         "path"?: string;
         "srExternal"?: string;
         "styleClass"?: string;
@@ -3615,10 +4002,6 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
-        "eclScript"?: boolean;
-        /**
-          * @default false
-         */
         "embeddedMedia"?: boolean;
         /**
           * @default false
@@ -3630,6 +4013,14 @@ declare namespace LocalJSX {
         "hasCaption"?: boolean;
         "image"?: string;
         "imageAlt"?: string;
+        /**
+          * @default 'center'
+         */
+        "imageAnchor"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
         /**
           * @default ''
          */
@@ -3643,17 +4034,116 @@ declare namespace LocalJSX {
         "theme"?: string;
         "tracks"?: string;
     }
-    interface EclMenu {
+    interface EclMegaMenu {
+        "ariaLabel"?: string;
         "backLabel"?: string;
-        "closeLabel"?: string;
+        /**
+          * @default 'secondary'
+         */
+        "featuredPriority"?: 'primary' | 'secondary';
+        /**
+          * @default `ecl-mega-menu-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "menuId"?: string;
         /**
           * @default false
          */
-        "eclScript"?: boolean;
+        "noScript"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+        "toggleLabel"?: string;
+    }
+    interface EclMegaMenuFeaturedListItem {
         /**
-          * @default 'group1'
+          * @default false
          */
-        "group"?: string;
+        "external"?: boolean;
+        /**
+          * @default false
+         */
+        "hasDescription"?: boolean;
+        "image"?: string;
+        "label"?: string;
+        "path"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclMegaMenuItem {
+        "ariaLabel"?: string;
+        /**
+          * @default false
+         */
+        "external"?: boolean;
+        "featuredImage"?: string;
+        "featuredTitle"?: string;
+        /**
+          * @default false
+         */
+        "hasChildren"?: boolean;
+        /**
+          * @default false
+         */
+        "hasFeatured"?: boolean;
+        /**
+          * @default false
+         */
+        "hasInfo"?: boolean;
+        "infoTitle"?: string;
+        /**
+          * @default false
+         */
+        "isContainer"?: boolean;
+        /**
+          * @default false
+         */
+        "isPromotional"?: boolean;
+        "label": string;
+        /**
+          * @default false
+         */
+        "oneLevelOnly"?: boolean;
+        "path"?: string;
+        /**
+          * @default false
+         */
+        "seeAll"?: boolean;
+        "seeAllLabel"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclMegaMenuSubitem {
+        "ariaLabel"?: string;
+        /**
+          * @default false
+         */
+        "external"?: boolean;
+        "featuredTitle"?: string;
+        /**
+          * @default false
+         */
+        "hasChildren"?: boolean;
+        /**
+          * @default false
+         */
+        "hasFeatured"?: boolean;
+        "label": string;
+        /**
+          * @default false
+         */
+        "oneLevelOnly"?: boolean;
+        "path"?: string;
+        /**
+          * @default false
+         */
+        "seeAll"?: boolean;
+        "seeAllLabel"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclMenu {
+        "ariaLabel"?: string;
+        "backLabel"?: string;
+        "closeLabel"?: string;
         /**
           * @default 2
          */
@@ -3661,6 +4151,10 @@ declare namespace LocalJSX {
         "menuId"?: string;
         "menuTitle"?: string;
         "nextLabel"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
         "previousLabel"?: string;
         "siteName"?: string;
         "styleClass"?: string;
@@ -3690,11 +4184,11 @@ declare namespace LocalJSX {
     }
     interface EclModal {
         "closeLabel"?: string;
+        "itemId"?: string;
         /**
           * @default false
          */
-        "eclScript"?: boolean;
-        "itemId"?: string;
+        "noScript"?: boolean;
         /**
           * @default 'l'
          */
@@ -3755,7 +4249,7 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
-        "eclScript"?: boolean;
+        "noScript"?: boolean;
         "srNext"?: string;
         "srPause"?: string;
         "srPlay"?: string;
@@ -3777,7 +4271,7 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
-        "eclScript"?: boolean;
+        "noScript"?: boolean;
         "notificationTitle"?: string;
         "styleClass"?: string;
         "theme"?: string;
@@ -3792,11 +4286,17 @@ declare namespace LocalJSX {
     }
     interface EclPageHeader {
         /**
+          * @default 'top'
+         */
+        "descriptionPosition"?: string;
+        /**
           * @default false
          */
-        "eclScript"?: boolean;
-        "expandableContent"?: string;
-        "expandableHeader"?: string;
+        "expandable"?: boolean;
+        /**
+          * @default false
+         */
+        "expandableContent"?: boolean;
         /**
           * @default `toggle panel's visibility`
          */
@@ -3805,10 +4305,17 @@ declare namespace LocalJSX {
           * @default `ecl-page-header-expandable-panel-${Math.random().toString(36).slice(2, 10)}`
          */
         "expandablePanelId"?: string;
+        /**
+          * @default 'm'
+         */
+        "fontSize"?: string;
         "headerTitle"?: string;
         "image"?: string;
         "imageAlt"?: string;
-        "meta"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
         "overlay"?: string;
         /**
           * @default ''
@@ -3817,6 +4324,26 @@ declare namespace LocalJSX {
         "theme"?: string;
         "thumbnail"?: string;
         "thumbnailAlt"?: string;
+        "variant"?: string;
+        "withMeta"?: boolean;
+    }
+    interface EclPageHeaderMetaItem {
+        /**
+          * @default ''
+         */
+        "icon"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclPageInformation {
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
     }
     interface EclPagination {
         /**
@@ -3844,6 +4371,10 @@ declare namespace LocalJSX {
     interface EclPicture {
         "image"?: string;
         "imageAlt"?: string;
+        /**
+          * @default 'center'
+         */
+        "imageAnchor"?: string;
         "imgClass"?: string;
         /**
           * @default false
@@ -3853,9 +4384,6 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
-        /**
-          * @default 'ec'
-         */
         "theme"?: string;
         /**
           * @default false
@@ -3867,10 +4395,6 @@ declare namespace LocalJSX {
           * @default false
          */
         "close"?: boolean;
-        /**
-          * @default false
-         */
-        "eclScript"?: boolean;
         "icon"?: string;
         /**
           * @default false
@@ -3878,6 +4402,10 @@ declare namespace LocalJSX {
         "indicator"?: boolean;
         "indicatorValue"?: number;
         "itemId"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
         "toggleLabel"?: string;
@@ -3888,10 +4416,6 @@ declare namespace LocalJSX {
           * @default false
          */
         "disabled"?: boolean;
-        /**
-          * @default false
-         */
-        "eclScript"?: boolean;
         /**
           * @default false
          */
@@ -3915,6 +4439,10 @@ declare namespace LocalJSX {
         "max"?: number;
         "min"?: number;
         "name"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
         "onInputBlur"?: (event: EclRangeCustomEvent<FocusEvent>) => void;
         "onInputChange"?: (event: EclRangeCustomEvent<any>) => void;
         "onInputFocus"?: (event: EclRangeCustomEvent<FocusEvent>) => void;
@@ -4033,10 +4561,6 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
-        "eclScript"?: boolean;
-        /**
-          * @default false
-         */
         "hasChanged"?: boolean;
         "inputId"?: string;
         "inputValue"?: string;
@@ -4055,6 +4579,10 @@ declare namespace LocalJSX {
         "multipleSearchNoResultsText"?: string;
         "multipleSearchText"?: string;
         "name"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
         "onInputBlur"?: (event: EclSelectCustomEvent<FocusEvent>) => void;
         "onInputChange"?: (event: EclSelectCustomEvent<any>) => void;
         "onInputFocus"?: (event: EclSelectCustomEvent<FocusEvent>) => void;
@@ -4074,10 +4602,6 @@ declare namespace LocalJSX {
         "bannerTop"?: string;
         "bannerTopLink"?: string;
         "closeLabel"?: string;
-        /**
-          * @default false
-         */
-        "eclScript"?: boolean;
         "euLabel"?: string;
         "langCode"?: string;
         "language"?: string;
@@ -4108,6 +4632,10 @@ declare namespace LocalJSX {
         "logoTitle"?: string;
         "logoutLink"?: string;
         "logoutText"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
         "nonEuLabel"?: string;
         /**
           * @default true
@@ -4221,6 +4749,32 @@ declare namespace LocalJSX {
          */
         "visible"?: boolean;
     }
+    interface EclSplashPage {
+        "elTitle"?: string;
+        "euLabel"?: string;
+        "langCode"?: string;
+        "language"?: string;
+        "logo"?: string;
+        "logoAlt"?: string;
+        "logoLink"?: string;
+        "nonEuLabel"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclSplashPageLanguageItem {
+        /**
+          * @default false
+         */
+        "active"?: boolean;
+        "langCode"?: string;
+        "language"?: string;
+        "path"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclSpotlight {
         /**
           * @default ''
@@ -4242,6 +4796,87 @@ declare namespace LocalJSX {
         "header"?: string;
         "image"?: string;
         "imageAlt"?: string;
+        "path"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclTable {
+        "caption"?: string;
+        "colorMode"?: string;
+        /**
+          * @default `ecl-table-${Math.random().toString(36).slice(2)}`
+         */
+        "elId"?: string;
+        "headers"?: string;
+        "labelSortAscending"?: string;
+        "labelSortDefault"?: string;
+        "labelSortDescending"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
+        "rows"?: string;
+        /**
+          * @default false
+         */
+        "simple"?: boolean;
+        /**
+          * @default false
+         */
+        "sortable"?: boolean;
+        "styleClass"?: string;
+        "theme"?: string;
+        /**
+          * @default false
+         */
+        "zebra"?: boolean;
+    }
+    interface EclTabs {
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
+          * @default 'Show %d more items'
+         */
+        "moreLabel"?: string;
+        /**
+          * @default 'Next'
+         */
+        "nextLabel"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
+        /**
+          * @default 'Previous'
+         */
+        "prevLabel"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+        /**
+          * @default false
+         */
+        "withoutContent"?: boolean;
+    }
+    interface EclTabsItem {
+        /**
+          * @default `ecl-tabs-item-${Math.random().toString(36).substr(2, 9)}}`
+         */
+        "elId"?: string;
+        /**
+          * @default false
+         */
+        "isCurrent"?: boolean;
+        /**
+          * @default ''
+         */
         "path"?: string;
         /**
           * @default ''
@@ -4357,7 +4992,7 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
-        "eclScript"?: boolean;
+        "noScript"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
     }
@@ -4452,6 +5087,10 @@ declare namespace LocalJSX {
         "ecl-list-illustration": EclListIllustration;
         "ecl-list-illustration-item": EclListIllustrationItem;
         "ecl-media-container": EclMediaContainer;
+        "ecl-mega-menu": EclMegaMenu;
+        "ecl-mega-menu-featured-list-item": EclMegaMenuFeaturedListItem;
+        "ecl-mega-menu-item": EclMegaMenuItem;
+        "ecl-mega-menu-subitem": EclMegaMenuSubitem;
         "ecl-menu": EclMenu;
         "ecl-menu-item": EclMenuItem;
         "ecl-modal": EclModal;
@@ -4461,6 +5100,8 @@ declare namespace LocalJSX {
         "ecl-news-ticker-item": EclNewsTickerItem;
         "ecl-notification": EclNotification;
         "ecl-page-header": EclPageHeader;
+        "ecl-page-header-meta-item": EclPageHeaderMetaItem;
+        "ecl-page-information": EclPageInformation;
         "ecl-pagination": EclPagination;
         "ecl-pagination-item": EclPaginationItem;
         "ecl-picture": EclPicture;
@@ -4475,7 +5116,12 @@ declare namespace LocalJSX {
         "ecl-social-media-follow-item": EclSocialMediaFollowItem;
         "ecl-spacing": EclSpacing;
         "ecl-spinner": EclSpinner;
+        "ecl-splash-page": EclSplashPage;
+        "ecl-splash-page-language-item": EclSplashPageLanguageItem;
         "ecl-spotlight": EclSpotlight;
+        "ecl-table": EclTable;
+        "ecl-tabs": EclTabs;
+        "ecl-tabs-item": EclTabsItem;
         "ecl-tag": EclTag;
         "ecl-tag-set": EclTagSet;
         "ecl-text": EclText;
@@ -4535,6 +5181,10 @@ declare module "@stencil/core" {
             "ecl-list-illustration": LocalJSX.EclListIllustration & JSXBase.HTMLAttributes<HTMLEclListIllustrationElement>;
             "ecl-list-illustration-item": LocalJSX.EclListIllustrationItem & JSXBase.HTMLAttributes<HTMLEclListIllustrationItemElement>;
             "ecl-media-container": LocalJSX.EclMediaContainer & JSXBase.HTMLAttributes<HTMLEclMediaContainerElement>;
+            "ecl-mega-menu": LocalJSX.EclMegaMenu & JSXBase.HTMLAttributes<HTMLEclMegaMenuElement>;
+            "ecl-mega-menu-featured-list-item": LocalJSX.EclMegaMenuFeaturedListItem & JSXBase.HTMLAttributes<HTMLEclMegaMenuFeaturedListItemElement>;
+            "ecl-mega-menu-item": LocalJSX.EclMegaMenuItem & JSXBase.HTMLAttributes<HTMLEclMegaMenuItemElement>;
+            "ecl-mega-menu-subitem": LocalJSX.EclMegaMenuSubitem & JSXBase.HTMLAttributes<HTMLEclMegaMenuSubitemElement>;
             "ecl-menu": LocalJSX.EclMenu & JSXBase.HTMLAttributes<HTMLEclMenuElement>;
             "ecl-menu-item": LocalJSX.EclMenuItem & JSXBase.HTMLAttributes<HTMLEclMenuItemElement>;
             "ecl-modal": LocalJSX.EclModal & JSXBase.HTMLAttributes<HTMLEclModalElement>;
@@ -4544,6 +5194,8 @@ declare module "@stencil/core" {
             "ecl-news-ticker-item": LocalJSX.EclNewsTickerItem & JSXBase.HTMLAttributes<HTMLEclNewsTickerItemElement>;
             "ecl-notification": LocalJSX.EclNotification & JSXBase.HTMLAttributes<HTMLEclNotificationElement>;
             "ecl-page-header": LocalJSX.EclPageHeader & JSXBase.HTMLAttributes<HTMLEclPageHeaderElement>;
+            "ecl-page-header-meta-item": LocalJSX.EclPageHeaderMetaItem & JSXBase.HTMLAttributes<HTMLEclPageHeaderMetaItemElement>;
+            "ecl-page-information": LocalJSX.EclPageInformation & JSXBase.HTMLAttributes<HTMLEclPageInformationElement>;
             "ecl-pagination": LocalJSX.EclPagination & JSXBase.HTMLAttributes<HTMLEclPaginationElement>;
             "ecl-pagination-item": LocalJSX.EclPaginationItem & JSXBase.HTMLAttributes<HTMLEclPaginationItemElement>;
             "ecl-picture": LocalJSX.EclPicture & JSXBase.HTMLAttributes<HTMLEclPictureElement>;
@@ -4558,7 +5210,12 @@ declare module "@stencil/core" {
             "ecl-social-media-follow-item": LocalJSX.EclSocialMediaFollowItem & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowItemElement>;
             "ecl-spacing": LocalJSX.EclSpacing & JSXBase.HTMLAttributes<HTMLEclSpacingElement>;
             "ecl-spinner": LocalJSX.EclSpinner & JSXBase.HTMLAttributes<HTMLEclSpinnerElement>;
+            "ecl-splash-page": LocalJSX.EclSplashPage & JSXBase.HTMLAttributes<HTMLEclSplashPageElement>;
+            "ecl-splash-page-language-item": LocalJSX.EclSplashPageLanguageItem & JSXBase.HTMLAttributes<HTMLEclSplashPageLanguageItemElement>;
             "ecl-spotlight": LocalJSX.EclSpotlight & JSXBase.HTMLAttributes<HTMLEclSpotlightElement>;
+            "ecl-table": LocalJSX.EclTable & JSXBase.HTMLAttributes<HTMLEclTableElement>;
+            "ecl-tabs": LocalJSX.EclTabs & JSXBase.HTMLAttributes<HTMLEclTabsElement>;
+            "ecl-tabs-item": LocalJSX.EclTabsItem & JSXBase.HTMLAttributes<HTMLEclTabsItemElement>;
             "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
             "ecl-tag-set": LocalJSX.EclTagSet & JSXBase.HTMLAttributes<HTMLEclTagSetElement>;
             "ecl-text": LocalJSX.EclText & JSXBase.HTMLAttributes<HTMLEclTextElement>;

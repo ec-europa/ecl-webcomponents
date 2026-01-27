@@ -4,12 +4,15 @@ import { EclBanner } from '../../ecl-banner/ecl-banner';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-carousel', () => {
+  beforeEach(() => {
+    (global as any).ECL = {};
+  });
+
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclCarousel, EclBanner, EclIcon],
       html: `<ecl-carousel
               carousel-id="ecl-carousel-demo"
-              ecl-script
               slides-number="3"
             >
               <ecl-carousel-item

@@ -10,19 +10,6 @@ const includePaths = [nodeModules];
 const banner = `${pkg.name} - ${pkg.version} Built on ${new Date().toISOString()}`;
 
 module.exports = {
-  scripts: [
-    {
-      entry: path.resolve(nodeModules, '@ecl/datepicker/datepicker.js'),
-      dest: path.resolve(outputFolder, 'scripts/ecl-datepicker-vanilla.js'),
-      options: {
-        banner,
-        moduleName: 'DATEPICKER',
-        format: 'iife',
-        includePaths,
-        sourceMap: false,
-      },
-    },
-  ],
   styles: [
     {
       entry: path.resolve(__dirname, 'src/styles/ecl-datepicker-ec.scss'),

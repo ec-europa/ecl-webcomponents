@@ -1,6 +1,6 @@
 import { Component, Prop, h, Element } from '@stencil/core';
-import getAssetPath from "../../utils/assetPath";
-declare const CATEGORYFILTER: any;
+import CategoryFilter from "@ecl/category-filter";
+declare var ECL: any;
 
 @Component({
   tag: 'ecl-category-filter',
@@ -17,7 +17,7 @@ export class EclCategoryFilter {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
-  @Prop() eclScript: boolean = false;
+  @Prop() noScript: boolean = false;
   @Prop() colorMode: string;
 
   getClass(): string {
@@ -43,19 +43,12 @@ export class EclCategoryFilter {
       const lastItem = items[items.length - 1] as HTMLElement;
       lastItem.parentElement.parentElement.style.border = 'none';
     }
-    if (this.eclScript) {
-      const src = getAssetPath('./build/scripts/ecl-category-filter-vanilla.js');
-      if (document.querySelector(`script[src="${src}"]`)) {
-        document.querySelector(`script[src="${src}"]`).remove();
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.onload = () => {
-        ;(window as any).ECL = (window as any).ECL || {};
-        const categoryFilter = new CATEGORYFILTER.CategoryFilter(this.el.firstElementChild);
-        categoryFilter.init();
-      };
-      document.body.appendChild(script);
+
+    if (!this.noScript) {
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.CategoryFilter = CategoryFilter;
+      const categoryFilter = new CategoryFilter(this.el.firstElementChild);
+      categoryFilter.init();
     }
   }
 
