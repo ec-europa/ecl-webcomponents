@@ -1,8 +1,15 @@
 diff --git a/mega-menu.js b/mega-menu.js
-index 5d87032d4a96bb608cd008ad6b28a8613422d76c..0100eab3537aeb27dc606ef03059d8f0277c3fe4 100644
+index 5d87032d4a96bb608cd008ad6b28a8613422d76c..98ae41567e2611f33e45e928a273129745196996 100644
 --- a/mega-menu.js
 +++ b/mega-menu.js
-@@ -544,8 +544,8 @@ export class MegaMenu {
+@@ -538,14 +538,14 @@ export class MegaMenu {
+           this.element,
+         );
+         if (subItemExpanded) {
+-          subItemExpanded.firstChild.classList.add(
++          queryOne(this.subLinkSelector, subItemExpanded).classList.add(
+             'ecl-mega-menu__parent-link',
+           );
          }
          const menuItem = this.openPanel.item;
          // Hide siblings
@@ -22,6 +29,24 @@ index 5d87032d4a96bb608cd008ad6b28a8613422d76c..0100eab3537aeb27dc606ef03059d8f0
            item.style.display = '';
          });
        });
+@@ -571,7 +571,7 @@ export class MegaMenu {
+         this.element,
+       );
+       if (currentItem) {
+-        currentItem.firstElementChild.classList.remove(
++        queryOne(this.subLinkSelector, currentItem).classList.remove(
+           'ecl-mega-menu__parent-link',
+         );
+         currentItems.push(currentItem);
+@@ -600,7 +600,7 @@ export class MegaMenu {
+         this.element,
+       );
+       if (currentSubItem) {
+-        currentSubItem.firstElementChild.classList.remove(
++        queryOne(this.subLinkSelector, currentSubItem).classList.remove(
+           'ecl-mega-menu__parent-link',
+         );
+       }
 @@ -743,7 +743,7 @@ export class MegaMenu {
                  .classList.contains('ecl-mega-menu__item--one-level-only')
              ) {
