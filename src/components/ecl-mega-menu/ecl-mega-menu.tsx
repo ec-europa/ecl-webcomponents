@@ -32,8 +32,10 @@ export class EclMegaMenu {
     if (subLists) {
       [...subLists].forEach((list) => {
         const items = list.querySelectorAll('.ecl-mega-menu__sublink');
-        const lastItem = items[items.length - 1];
-        lastItem.classList.add('ecl-mega-menu__sublink--last');
+        if (items.length > 0) {
+          const lastItem = items[items.length - 1];
+          lastItem.classList.add('ecl-mega-menu__sublink--last');
+        }
       });
     }
 
