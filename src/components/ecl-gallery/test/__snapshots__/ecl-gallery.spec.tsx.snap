@@ -204,7 +204,7 @@ exports[`ecl-gallery renders 1`] = `
         </div>
         <ecl-button data-ecl-gallery-all data-ecl-gallery-collapsed-label="View all" data-ecl-gallery-expanded-label="Show less">
           <!---->
-          <button class="ecl-button ecl-button--tertiary ecl-gallery__view-all sc-ecl-gallery-ec" data-ecl-gallery-all="eclGalleryAll" data-ecl-gallery-collapsed-label="View all" data-ecl-gallery-expanded-label="Show less" type="submit">
+          <button class="ecl-button ecl-button--tertiary ecl-gallery__view-all sc-ecl-gallery-ec" data-ecl-gallery-all="eclGalleryAll" data-ecl-gallery-collapsed-label="View all" data-ecl-gallery-expanded-label="Show less" type="button">
             <span class="ecl-button__container">
               <span class="ecl-button__label" data-ecl-label>
                 View all
@@ -219,7 +219,7 @@ exports[`ecl-gallery renders 1`] = `
       <header class="ecl-gallery__close" data-ecl-gallery-overlay-header>
         <ecl-button data-ecl-gallery-close hide-label="" style-class="ecl-gallery__close-button sc-ecl-gallery-ec">
           <!---->
-          <button class="ecl-button ecl-button--icon-only ecl-button--inverted ecl-button--tertiary ecl-gallery__close-button sc-ecl-gallery-ec" data-ecl-gallery-close="eclGalleryClose" type="submit">
+          <button class="ecl-button ecl-button--icon-only ecl-button--inverted ecl-button--tertiary ecl-gallery__close-button sc-ecl-gallery-ec" data-ecl-gallery-close="eclGalleryClose" type="button">
             <span class="ecl-button__container">
               <span class="ecl-button__label" data-ecl-label>
                 Close

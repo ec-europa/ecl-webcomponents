@@ -8,7 +8,7 @@ exports[`ecl-menu renders 1`] = `
     <div class="ecl-container ecl-menu__container">
       <ecl-button data-ecl-menu-open hide-label="">
         <!---->
-        <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__open sc-ecl-menu-ec" data-ecl-menu-open="eclMenuOpen" type="submit">
+        <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-menu__open sc-ecl-menu-ec" data-ecl-menu-open="eclMenuOpen" type="button">
           <span class="ecl-button__container">
             <ecl-icon slot="icon-before">
               <span class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-button-ec sc-ecl-menu-ec wt-icon--hamburger wt-icon--placeholder"></span>
