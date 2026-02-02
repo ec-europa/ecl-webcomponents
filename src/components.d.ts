@@ -166,7 +166,7 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
         /**
-          * @default 'submit'
+          * @default 'button'
          */
         "type": string;
         /**
@@ -3051,7 +3051,7 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         /**
-          * @default 'submit'
+          * @default 'button'
          */
         "type"?: string;
         /**

@@ -12,6 +12,7 @@ export const config: Config = {
       dir: 'packages/ecl-webcomponents/dist',
       copy: [
         { src: '../static/build', dest: 'build' },
+        { src: '../src/globals/ecl-webcomponents.bridge.js', dest: 'ecl-webcomponents.bridge.js' },
       ],
     },
     {

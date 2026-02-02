@@ -18,7 +18,7 @@
 | `size`                  | `size`                    |             | `string`  | `'l'`       |
 | `styleClass`            | `style-class`             |             | `string`  | `''`        |
 | `theme`                 | `theme`                   |             | `string`  | `undefined` |
-| `type`                  | `type`                    |             | `string`  | `'submit'`  |
+| `type`                  | `type`                    |             | `string`  | `'button'`  |
 | `variant`               | `variant`                 |             | `string`  | `''`        |
 
 

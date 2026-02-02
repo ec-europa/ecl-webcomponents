@@ -13,7 +13,7 @@ import { Component, Prop, h, Element, State } from '@stencil/core';
 export class EclButton {
   @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
-  @Prop() type: string = 'submit';
+  @Prop() type: string = 'button';
   @Prop() buttonStyle: string;
   @Prop() variant: string = '';
   @Prop({ mutable: true }) theme: string;

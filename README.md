@@ -13,6 +13,17 @@ pnpm start (build stencil and watch files)
 pnpm dev (start storybook)
 ```
 
+### Usage
+
+Depending on the technology used the right package can be selected and fetched from npm.
+For the react and angular wrappers the consumer apps in this repository can be used as a reference for a basic usage of the library, here we refer to the vanilla webcomponents:
+
+- Fetch the npm package `@ecl/ecl-webcomponents`
+- Move the folder `dist/ecl-webcomponents` where it can be served as assets in your website or app.
+- The library has two themes, `ec` and `eu`, it expects a `data-ecl-theme` attribute set on the `<html>` tag (or any `document.documentElement`) with one these two values, otherwise it will use `ec` by default.
+- Load `ecl-webcomponents.bridge.js` and `ecl-webcomponents.esm.js`
+  The first one is taking care of loading the global resources like the css custom properties and an additional css in ec for the `color modes`, the second is taking care of lazy loading the webcomponents registering the custom elements and making them available.
+
 ### Command reference
 
 **generate** ecl-{component} runs stencil generate and generates empty files
@@ -51,7 +62,7 @@ generate requests at /build/images...
 
 ### Ckeditor plugin
 
-**plugins:dev** Collection of script to fetch the ckeditor5 filesystem from github and install the plugin
+**dev-playground"** It starts a simple app with a build of ckeditor including the plugin, changes are immediately applied.
 **plugins:make** Builds the plugin
 **build:playground** Builds the playground
 
