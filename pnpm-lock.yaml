@@ -412,6 +412,9 @@ importers:
       ckeditor5:
         specifier: 47.4.0
         version: 47.4.0
+      ncp:
+        specifier: 2.0.0
+        version: 2.0.0
       vite:
         specifier: 7.3.1
         version: 7.3.1(@types/node@24.10.1)(jiti@1.21.7)(less@4.5.1)(sass@1.97.3)(terser@5.46.0)(yaml@2.8.2)
