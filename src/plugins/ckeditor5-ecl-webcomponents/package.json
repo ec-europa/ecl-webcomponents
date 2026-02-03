@@ -13,7 +13,8 @@
     "pre-publish": "pnpm build"
   },
   "dependencies" :{
-    "ckeditor5": "47.4.0"
+    "ckeditor5": "47.4.0",
+    "@ckeditor/ckeditor5-icons": "47.4.0"
   },
   "files": [
     "src",

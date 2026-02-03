@@ -2076,6 +2076,9 @@ importers:
 
   src/plugins/ckeditor5-ecl-webcomponents:
     dependencies:
+      '@ckeditor/ckeditor5-icons':
+        specifier: 47.4.0
+        version: 47.4.0
       ckeditor5:
         specifier: 47.4.0
         version: 47.4.0
