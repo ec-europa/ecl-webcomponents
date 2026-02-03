@@ -419,7 +419,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-navigation-list',
     attributes: {
       'style-class': '',
-
       'color-mode': {
         type: 'select',
         value: '',
@@ -451,7 +450,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-navigation-list-item',
     attributes: {
       'style-class': '',
-
       'color-mode': {
         type: 'select',
         value: '',
@@ -590,7 +588,16 @@ export const DEFAULT_ECL_CONFIG = [
         type: 'boolean',
         value: false,
       },
-      'size': 'l',
+      'size': {
+        type: 'select',
+        value: 'l',
+        options: [
+          { label: 'small', value: 's' },
+          { label: 'medium', value: 'm' },
+          { label: 'large', value: 'l' },
+          { label: 'full', value: 'full' },
+        ],
+      },
       'toggle-id': '',
       'close-label': '',
       'item-id': '',
@@ -633,7 +640,6 @@ export const DEFAULT_ECL_CONFIG = [
         value: false,
       },
       'slot': 'menu',
-
       'close-label': 'Close',
       'back-label': 'Back',
       'menu-id': '',
@@ -653,7 +659,6 @@ export const DEFAULT_ECL_CONFIG = [
         value: false,
       },
       'slot': 'menu',
-
       'close-label': 'Close',
       'back-label': 'Back',
       'menu-link': '/example',
@@ -731,7 +736,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-list-illustration-item',
     attributes: {
       'style-class': '',
-
       'item-title': '',
       'item-link': '',
       'image': '',
@@ -773,7 +777,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-mega-menu-item',
     attributes: {
       'style-class': '',
-
       'path': '',
       'has-children': {
         type: 'boolean',
@@ -794,7 +797,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-mega-menu-subitem',
     attributes: {
       'style-class': '',
-
       'path': '',
       'label': '',
       'has-children': {
@@ -814,7 +816,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-mega-menu-featured-list-item',
     attributes: {
       'style-class': '',
-
       'path': '',
       'has-description': {
         type: 'boolean',
@@ -831,7 +832,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-menu-item',
     attributes: {
       'style-class': '',
-
       'child': {
         type: 'boolean',
         value: false,
@@ -901,7 +901,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-link',
     attributes: {
       'style-class': '',
-
       'variant': {
         type: 'select',
         value: '',
@@ -957,7 +956,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-pagination-item',
     attributes: {
       'style-class': '',
-
       'path': '',
       'aria-label': '',
       'current': {
@@ -981,7 +979,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-breadcrumb',
     attributes: {
       'style-class': '',
-
       'no-script': {
         type: 'boolean',
         value: false,
@@ -996,7 +993,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-breadcrumb-item',
     attributes: {
       'style-class': '',
-
       'variant': 'negative',
       'path': '',
       'ellipsis': {
@@ -1013,7 +1009,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-news-ticker',
     attributes: {
       'style-class': '',
-
       'items-length': 6,
       'counter-label': 'of',
       'sr-next': 'Next',
@@ -1032,7 +1027,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-news-ticker-item',
     attributes: {
       'style-class': '',
-
       'image': '',
       'icon': '',
       'path': '',
@@ -1045,7 +1039,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-accordion',
     attributes: {
       'style-class': '',
-
       'color-mode': {
         type: 'select',
         value: '',
@@ -1080,7 +1073,6 @@ export const DEFAULT_ECL_CONFIG = [
     attributes: {
       'style-class': '',
       'id': '',
-
       'label': '',
     },
     inline: true,
@@ -1091,7 +1083,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-tag',
     attributes: {
       'style-class': '',
-
       'variant': {
         type: 'select',
         value: 'link',
@@ -1112,7 +1103,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-label',
     attributes: {
       'style-class': '',
-
       'variant': {
         type: 'select',
         value: '',
@@ -1132,7 +1122,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-carousel',
     attributes: {
       'style-class': '',
-
       'color-mode': {
         type: 'select',
         value: '',
@@ -1183,7 +1172,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-carousel-item',
     attributes: {
       'style-class': '',
-
       'banner-title': '',
       'centered': {
         type: 'boolean',
@@ -1201,7 +1189,6 @@ export const DEFAULT_ECL_CONFIG = [
   {
     tag: 'ecl-spotlight',
     attributes: {
-      'theme': 'ec',
       'color-mode': {
         type: 'select',
         value: '',
@@ -1261,7 +1248,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-page-header',
     attributes: {
       'style-class': '',
-
       'header-title': '',
       'image': '',
       'thumbnail': '',
@@ -1305,7 +1291,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-fact-figures',
     attributes: {
       'style-class': '',
-
       'color-mode': {
         type: 'select',
         value: '',
@@ -1347,7 +1332,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-fact-figures-item',
     attributes: {
       'style-class': '',
-
       'color-mode': {
         type: 'select',
         value: '',
@@ -1382,7 +1366,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-file',
     attributes: {
       'style-class': '',
-
       'variant': {
         type: 'select',
         value: 'default',
@@ -1416,7 +1399,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-file-translations',
     attributes: {
       'style-class': '',
-
       'toggle-label': 'Other languages',
       'translations-total': '',
       'others': {
@@ -1433,7 +1415,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-file-translation-item',
     attributes: {
       'style-class': '',
-
       'variant': 'default',
       'meta': '',
       'file-title': '',
@@ -1449,7 +1430,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-blockquote',
     attributes: {
       'style-class': '',
-
       'color-mode': {
         type: 'select',
         value: '',
@@ -1482,7 +1462,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-expandable',
     attributes: {
       'style-class': '',
-
       'is-expanded': {
         type: 'boolean',
         value: false,
@@ -1497,7 +1476,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-table',
     attributes: {
       'style-class': '',
-
       'el-id': '',
       'no-script': {
         type: 'boolean',
@@ -1543,7 +1521,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-media-container',
     attributes: {
       'style-class': '',
-
       'image': '',
       'alt': '',
       'full-width': {
@@ -1553,7 +1530,7 @@ export const DEFAULT_ECL_CONFIG = [
       'ratio': '',
       'sources': '',
       'tracks': '',
-      'autopley': {
+      'autoplay': {
         type: 'boolean',
         value: false,
       },
@@ -1582,7 +1559,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-date-block',
     attributes: {
       'style-class': '',
-
       'variant': {
         type: 'select',
         value: 'ongoing',
@@ -1604,7 +1580,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-spinner',
     attributes: {
       'style-class': '',
-
       'variant': 'primary',
       'centered': {
         type: 'boolean',
@@ -1626,7 +1601,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-popover',
     attributes: {
       'style-class': '',
-
       'item-id': '',
       'no-script': {
         type: 'boolean',
@@ -1652,7 +1626,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-popover-item',
     attributes: {
       'style-class': '',
-
       'path': '',
       'icon': '',
     },
@@ -1668,7 +1641,6 @@ export const DEFAULT_ECL_CONFIG = [
         value: false,
       },
       'style-class': '',
-
       'color-mode': {
         type: 'select',
         value: '',
@@ -1702,7 +1674,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-description-list-term',
     attributes: {
       'style-class': '',
-
       'variant': 'vertical',
     },
     inline: true,
@@ -1713,7 +1684,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-description-list-definition',
     attributes: {
       'style-class': '',
-
       'items': '',
       'type': 'link',
     },
@@ -1729,7 +1699,6 @@ export const DEFAULT_ECL_CONFIG = [
         value: false,
       },
       'style-class': '',
-
       'color-mode': {
         type: 'select',
         value: '',
@@ -1814,7 +1783,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-notification',
     attributes: {
       'style-class': '',
-
       'variant': {
         type: 'select',
         value: '',
@@ -1860,7 +1828,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-input',
     attributes: {
       'style-class': '',
-
       'type': {
         type: 'select',
         value: 'text',
@@ -2013,7 +1980,6 @@ export const DEFAULT_ECL_CONFIG = [
         type: 'boolean',
         value: false,
       },
-
       'invalid': {
         type: 'boolean',
         value: false,
