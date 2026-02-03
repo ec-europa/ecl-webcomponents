@@ -10,9 +10,18 @@ Install using NPM:
 
 `npm install @ecl/ckeditor5-ecl-webcomponents`
 
-To add the functionality of this plugin you should make a custom build of the editor. Follow the instructions [here](https://docs.ckeditor.com/ckeditor5/latest/builds/guides/development/installing-plugins.html).
+This plugin needs to be plugged into the configuration of a ckeditor instance.
+Typically an import of the different parts of this plugin would look like this:
 
-The plugin comes with an example ckeditor.js that you can use replacing the file in the ckeditor filesystem at packages/ckeditor-build-classic/src/ckeditor.js, it adds the ECL dropdown in the toolbar and enables the source code plugin, for the rest it uses the same configuration in the standard classic editor.
+`import EclWebComponentsPlugin, { ECL_MAIN_TOOLBAR, ECL_BLOCK_TOOLBAR, DEFAULT_ECL_CONFIG } from '@ecl/ckeditor5-ecl-webcomponents';`
+
+- The plugin needs to added to the `plugins` array
+- The configuration can be provided like this:
+  `CustomElement: {
+    items: DEFAULT_ECL_CONFIG,
+  }`
+- the element of the toolbar can be added in the toolbar array, it will add an ECL button
+  `...ECL_MAIN_TOOLBAR`
 
 ## Use
 
