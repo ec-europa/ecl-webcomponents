@@ -12,6 +12,9 @@
     "build": "pnpm --filter @ecl/web-components-playground run build:*",
     "pre-publish": "pnpm build"
   },
+  "dependencies" :{
+    "ckeditor5": "47.4.0"
+  },
   "files": [
     "src",
     "dist"
