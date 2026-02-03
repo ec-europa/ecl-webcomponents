@@ -20,11 +20,11 @@
 }
 
 .ecl-button:not(.ecl-button--icon-only) ::slotted([slot='icon-before']) {
-  margin-inline-end: var(--s-xs);
+  // margin-inline-end: var(--s-xs);
   line-height: 0;
 }
 
 .ecl-button:not(.ecl-button--icon-only) ::slotted([slot='icon-after']) {
-  margin-inline-start: var(--s-xs);
+  // margin-inline-start: var(--s-xs);
   line-height: 0;
 }

@@ -146,7 +146,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-icon',
     attributes: {
       'style-class': '',
-
       'icon': '',
       'size': {
         type: 'select',
@@ -180,7 +179,14 @@ export const DEFAULT_ECL_CONFIG = [
           { label: '270', value: '270' },
         ],
       },
-      'slot': '',
+      'slot': {
+        type: 'select',
+        value: '',
+        options: [
+          { label: 'before', value: 'icon-before' },
+          { label: 'after', value: 'icon-after' },
+        ],
+      },
     },
     inline: true,
     editable: true,
@@ -226,6 +232,7 @@ export const DEFAULT_ECL_CONFIG = [
     },
     inline: false,
     editable: true,
+    children: ['ecl-icon', 'ecl-indicator'],
   },
   {
     tag: 'ecl-indicator',
@@ -936,6 +943,7 @@ export const DEFAULT_ECL_CONFIG = [
     },
     inline: true,
     editable: true,
+    children: ['ecl-icon', 'ecl-indicator'],
   },
   {
     tag: 'ecl-pagination',
@@ -2035,15 +2043,30 @@ export const DEFAULT_ECL_CONFIG = [
     attributes: {
       'style-class': '',
       'id': '',
-      'variant': '',
-      'position': 'left',
+      'variant': {
+        type: 'select',
+        value: '',
+        options: [
+          { label: 'default', value: '' },
+          { label: 'highlight', value: 'highlight' },
+        ],
+      },
+      'position': {
+        type: 'select',
+        value: 'left',
+        options: [
+          { label: 'left', value: 'left' },
+          { label: 'right', value: 'right' },
+        ],
+      },
       'item-title': '',
+      'image': '',
       'media-caption': '',
-      'image': 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
+      'media-anchor': '',
     },
     inline: false,
     editable: true,
-    children: ['ecl-button', 'ecl-link', 'ecl-icon', 'ecl-media-container'],
+    children: ['ecl-button', 'ecl-link', 'ecl-icon', 'ecl-text'],
   },
   {
     tag: 'ecl-site-header',
