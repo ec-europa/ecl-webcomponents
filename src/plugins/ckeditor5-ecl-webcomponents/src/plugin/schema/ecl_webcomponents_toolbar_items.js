@@ -112,7 +112,14 @@ export const ECL_TOOLBAR_ITEMS = [
       {
         label: 'translations',
         withText: true,
-        items: ['ecl-webcomponents-ecl-file-translations', 'ecl-webcomponents-ecl-file-translation-item'],
+        items: [
+          'ecl-webcomponents-ecl-file-translations',
+          {
+            label: 'translation items',
+            withText: true,
+            items: ['ecl-webcomponents-ecl-file-translation-item'],
+          },
+        ],
       },
     ],
   },

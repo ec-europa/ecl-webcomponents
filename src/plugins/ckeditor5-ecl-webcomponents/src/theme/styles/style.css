@@ -104,6 +104,10 @@
 	content: 'table';
 }
 
+.ecl-tag.ck-editor__editable::before {
+	content: 'tag';
+}
+
 .ecl-page-information.ck-editor__editable::before {
 	content: 'page-information';
 }
@@ -266,6 +270,7 @@
 }
 
 .ecl-button.ck-editor__editable::before,
+.ecl-tag.ck-editor__editable::before,
 .ecl-text.ck-editor__editable::before,
 .ecl-description-list.ck-editor__editable::before,
 .ecl-news-ticker.ck-editor__editable::before,
