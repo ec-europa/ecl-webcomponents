@@ -1,6 +1,6 @@
 {
   "name": "@ecl/ckeditor5-ecl-webcomponents",
-  "version": "0.18.0",
+  "version": "0.19.0",
   "description": "Insert ECL components in ckeditor5",
   "main": "src/index.js",
   "publishConfig": {
@@ -12,9 +12,9 @@
     "build": "pnpm --filter @ecl/web-components-playground run build:*",
     "pre-publish": "pnpm build"
   },
-  "dependencies" :{
-    "ckeditor5": "47.4.0",
-    "@ckeditor/ckeditor5-icons": "47.4.0"
+  "dependencies": {
+    "@ckeditor/ckeditor5-icons": "47.4.0",
+    "ckeditor5": "47.4.0"
   },
   "files": [
     "src",
