@@ -217,7 +217,15 @@ export const DEFAULT_ECL_CONFIG = [
           { label: 'inverted', value: '' },
         ],
       },
-      'type': 'button',
+      'type': {
+        type: 'select',
+        value: 'button',
+        options: [
+          { label: 'button', value: 'button' },
+          { label: 'submit', value: 'submit' },
+          { label: 'reset', value: 'reset' },
+        ],
+      },
       'hide-label': {
         type: 'boolean',
         value: false,
@@ -551,12 +559,20 @@ export const DEFAULT_ECL_CONFIG = [
   {
     tag: 'ecl-gallery-item',
     attributes: {
-      'meta': 'Copyright, Author, Licence for the image',
-      'media-share-path': '/example',
-      'media-href': 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
-      'image-alt': 'Image 1',
+      'meta': '',
+      'media-share-path': '',
+      'media-href': '',
+      'image-alt': '',
       'style-class': '',
-      'type': 'image',
+      'type': {
+        type: 'select',
+        value: 'image',
+        options: [
+          { label: 'image', value: 'image' },
+          { label: 'video', value: 'video' },
+          { label: 'embedded-video', value: 'embedded-video' },
+        ],
+      },
       'media-iframe-href': '',
     },
     inline: true,
@@ -698,7 +714,6 @@ export const DEFAULT_ECL_CONFIG = [
         ],
       },
       'style-class': '',
-      'id': '',
       'variant': 'image',
       'zebra': {
         type: 'boolean',
@@ -1072,7 +1087,7 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-accordion-item',
     attributes: {
       'style-class': '',
-      'id': '',
+      'item-id': '',
       'label': '',
     },
     inline: true,
@@ -1571,7 +1586,7 @@ export const DEFAULT_ECL_CONFIG = [
       'month': '',
       'year': '',
       'month-full': '',
-      'dateTime': '',
+      'date-time': '',
     },
     inline: false,
     editable: true,
@@ -1685,7 +1700,16 @@ export const DEFAULT_ECL_CONFIG = [
     attributes: {
       'style-class': '',
       'items': '',
-      'type': 'link',
+      'type': {
+        type: 'select',
+        value: 'link',
+        options: [
+          { label: 'link', value: 'link' },
+          { label: 'link-inline', value: 'link-inline' },
+          { label: 'taxonomy', value: 'taxonomy' },
+          { label: 'tag', value: 'tag' },
+        ],
+      },
     },
     inline: true,
     editable: true,
@@ -1859,7 +1883,7 @@ export const DEFAULT_ECL_CONFIG = [
         type: 'boolean',
         value: false,
       },
-      'inputId': '',
+      'input-id': '',
       'name': '',
       'max': '',
       'min': '',
@@ -1937,7 +1961,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-rating-field',
     attributes: {
       'style-class': '',
-
       'disabled': {
         type: 'boolean',
         value: false,
@@ -1955,7 +1978,6 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-rating-star',
     attributes: {
       'style-class': '',
-
       'value': '',
       'item-id': '',
       'label': 'star',
@@ -2008,7 +2030,7 @@ export const DEFAULT_ECL_CONFIG = [
     tag: 'ecl-featured-item',
     attributes: {
       'style-class': '',
-      'id': '',
+      'el-id': '',
       'variant': {
         type: 'select',
         value: '',
