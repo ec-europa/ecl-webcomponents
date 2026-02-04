@@ -409,7 +409,8 @@
 .ck-editor__nested-editable.ecl-fact-figures__item::before,
 .ck-editor__nested-editable.ecl-accordion__item::before,
 .ck-editor__nested-editable.ecl-news-ticker__item::before,
-.ck-editor__nested-editable.ecl-navigation-list__item::before {
+.ck-editor__nested-editable.ecl-navigation-list__item::before,
+.ck-editor__nested-editable.ecl-tabs__item::before  {
 	content: 'item';
 }
 
