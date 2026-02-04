@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-tabs",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.18.0",
+  "version": "0.19.0",
   "description": "ECL Tabs",
   "main": "ecl-tabs.tsx",
   "private": true,
