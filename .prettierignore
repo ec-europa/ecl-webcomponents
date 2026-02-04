@@ -8,3 +8,4 @@ node_modules
 package.json
 yarn.lock
 src/components/*/*.md
+src/plugins/ckeditor5-ecl-webcomponents/src/theme/icons/default.svg

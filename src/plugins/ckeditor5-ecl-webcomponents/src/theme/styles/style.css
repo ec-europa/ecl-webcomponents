@@ -1,5 +1,35 @@
+.ck-button-save::before,
+.ck-button-cancel::before {
+  content: '';               /* required for pseudo-element */
+  display: inline-block;
+  width: 16px;               /* size of the icon */
+  height: 16px;
+  margin-right: 4px;         /* space between icon and label */
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Save button: check icon */
+.ck-button-save::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2328a745"><path d="M9 16.17l-3.88-3.88L4.71 13.7 9 18l12-12-1.41-1.42z"/></svg>');
+}
+
+/* Cancel button: close icon */
+.ck-button-cancel::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23dc3545"><path d="M18.3 5.71L12 12l6.3 6.29-1.42 1.42L12 14.83l-6.29 6.3-1.42-1.42L10.59 12 4.29 5.71 5.71 4.29 12 10.59l6.29-6.3z"/></svg>');
+}
+
 .ck-ecl-webcomponents-form .ck-input-text {
 	padding: 0.50rem 0.25rem;
+}
+
+.ecl-button.ck-editor__editable::before {
+	content: 'button';
+}
+
+.ecl-card.ck-editor__editable::before {
+	content: 'card';
 }
 
 .ck-customelement-form .ck-label {
@@ -34,6 +64,10 @@
 	content: 'menu';
 }
 
+.ecl-mega-menu.ck-editor__editable::before {
+	content: 'mega-menu';
+}
+
 .ecl-content-block.ck-editor__editable::before {
 	content: 'content block';
 }
@@ -62,8 +96,28 @@
 	content: 'site-header';
 }
 
+.ecl-spotlight.ck-editor__editable::before {
+	content: 'spotlight';
+}
+
+.ecl-table.ck-editor__editable::before {
+	content: 'table';
+}
+
+.ecl-tag.ck-editor__editable::before {
+	content: 'tag';
+}
+
+.ecl-page-information.ck-editor__editable::before {
+	content: 'page-information';
+}
+
 .ck-editor__editable.ecl-blockquote::before {
 	content: 'blockquote';
+}
+
+.ecl-page-information.ck-editor__editable::before {
+	content: 'page information';
 }
 
 .ecl-popover.ck-editor__editable::before {
@@ -139,6 +193,10 @@
 	content: 'spacing';
 }
 
+.ecl-tabs.ck-editor__editable::before {
+	content: 'tabs';
+}
+
 .ecl-text.ck-editor__editable::before {
 	content: 'text';
 }
@@ -147,6 +205,7 @@
 	content: 'list with illustrations';
 }
 
+.ecl-button.ck-editor__editable,
 .ecl-news-ticker.ck-editor__editable,
 .ecl-description-list.ck-editor__editable,
 .ecl-accordion.ck-editor__editable,
@@ -167,6 +226,8 @@
 .ecl-footer.ck-editor__editable,
 .ecl-menu.ck-editor__editable,
 .ecl-site-header .ecl-menu.ck-editor__editable,
+.ecl-mega-menu.ck-editor__editable,
+.ecl-site-header .ecl-mega-menu.ck-editor__editable,
 .ecl-list-illustration.ck-editor__editable,
 .ecl-featured__item.ck-editor__editable,
 .ecl-spacing.ck-editor__editable,
@@ -176,7 +237,12 @@
 .ecl-banner.ck-editor__editable,
 .ecl-link.ck-editor__editable,
 .ecl-modal.ck-editor__editable,
-.ecl-navigation-lsit.ck-editor__editable
+.ecl-navigation-lsit.ck-editor__editable,
+.ecl-spotlight.ck-editor__editable,
+.ecl-table.ck-editor__editable,
+.ecl-tabs.ck-editor__editable,
+.ecl-page-information.ck-editor__editable,
+.ecl-card.ck-editor__editable
  {
 	background: #E9E9E9;
 	margin-bottom: 0.5rem;
@@ -203,6 +269,8 @@
 	background: #f0e6e6;
 }
 
+.ecl-button.ck-editor__editable::before,
+.ecl-tag.ck-editor__editable::before,
 .ecl-text.ck-editor__editable::before,
 .ecl-description-list.ck-editor__editable::before,
 .ecl-news-ticker.ck-editor__editable::before,
@@ -224,6 +292,7 @@
 .ecl-pagination.ck-editor__editable::before,
 .ecl-footer.ck-editor__editable::before,
 .ecl-menu.ck-editor__editable::before,
+.ecl-mega-menu.ck-editor__editable::before,
 .ecl-list-illustration.ck-editor__editable::before,
 .ecl-featured__item.ck-editor__editable::before,
 .ecl-spacing.ck-editor__editable::before,
@@ -232,7 +301,11 @@
 .ecl-link.ck-editor__editable::before,
 .ecl-picture.ck-editor__editable::before,
 .ecl-modal.ck-editor__editable::before,
-.ecl-navigation-list.ck-editor__editable::before {
+.ecl-navigation-list.ck-editor__editable::before,
+.ecl-spotlight.ck-editor__editable::before,
+.ecl-tabs.ck-editor__editable::before,
+.ecl-page-information.ck-editor__editable::before,
+.ecl-card.ck-editor__editable::before {
 	border-right: 2px solid #ccc;
 	font-size: 0.875rem;
 	font-weight: 700;
@@ -260,9 +333,11 @@
 .ck-editor__nested-editable.ecl-pagination__item::before,
 .ck-editor__nested-editable.ecl-footer__item::before,
 .ck-editor__nested-editable.ecl-menu__item::before,
+.ck-editor__nested-editable.ecl-mega-menu__item::before,
 .ck-editor__nested-editable.ecl-list-illustration__item::before,
 .ck-editor__nested-editable.source::before,
-.ck-editor__nested-editable.ecl-navigation-list__item::before
+.ck-editor__nested-editable.ecl-navigation-list__item::before,
+.ck-editor__nested-editable.ecl-tabs__item::before
  {
 	border-right: 2px solid teal;
 	color: teal;
@@ -293,9 +368,11 @@
 .ck-editor__nested-editable.ecl-pagination__item,
 .ck-editor__nested-editable.ecl-footer__item,
 .ck-editor__nested-editable.ecl-menu__item,
+.ck-editor__nested-editable.ecl-mega-menu__item,
 .ck-editor__nested-editable.ecl-list-illustration__item,
 .ck-editor__nested-editable.source,
-.ck-editor__nested-editable.ecl-naavigation-list__item {
+.ck-editor__nested-editable.ecl-navigation-list__item,
+.ck-editor__nested-editable.ecl-tabs__item {
 	border: 2px solid teal;
 	border-right: 0;
 	margin-top: 0.25rem;
@@ -311,8 +388,15 @@
 	content: 'term';
 }
 
+.ecl-icon.ck-editor__nested-editable::before {
+	content: 'icon';
+	font-size: 80%;
+	font-style: italic;
+}
+
 .ck-editor__nested-editable.ecl-footer__item::before,
 .ck-editor__nested-editable.ecl-menu__item::before,
+.ck-editor__nested-editable.ecl-mega-menu__item::before,
 .ck-editor__nested-editable.ecl-list-illustration__item::before,
 .ck-editor__nested-editable.ecl-social-media-share__item::before,
 .ck-editor__nested-editable.ecl-pagination__item::before,
@@ -325,7 +409,8 @@
 .ck-editor__nested-editable.ecl-fact-figures__item::before,
 .ck-editor__nested-editable.ecl-accordion__item::before,
 .ck-editor__nested-editable.ecl-news-ticker__item::before,
-.ck-editor__nested-editable.ecl-navigation-list__item::before {
+.ck-editor__nested-editable.ecl-navigation-list__item::before,
+.ck-editor__nested-editable.ecl-tabs__item::before  {
 	content: 'item';
 }
 

@@ -1,22 +1,20 @@
 {
   "name": "@ecl/ckeditor5-ecl-webcomponents",
-  "version": "0.17.1",
+  "version": "0.18.0",
   "description": "Insert ECL components in ckeditor5",
-  "main": "src/ecl_webcomponents.js",
+  "main": "src/index.js",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "dev:clean": "rimraf ../../../ckeditor5",
-    "dev:fetch": "git clone --depth 1 --single-branch --branch v36.0.1 https://github.com/ckeditor/ckeditor5 ../../../ckeditor5",
-    "dev:install": "cd ../../../ckeditor5 && yarn install --ignore-scripts",
-    "dev:install-plugin": "cd ../../../ckeditor5 && yarn add -W --ignore-scripts file:../src/plugins/ckeditor5-ecl-webcomponents",
-    "dev": "run-s dev:*",
-    "build": "run-s build:*",
-    "build:copy": "cross-env ecl-builder copy",
-    "build:plugin": "cd ../../../ckeditor5/packages/ckeditor5-build-classic/ && yarn build",
-    "build:playground": "ncp ../../../ckeditor5/packages/ckeditor5-build-classic/build ../../../playground/editor/",
-    "pre-publish": "ncp ../../../ckeditor5/packages/ckeditor5-build-classic/build ./dist"
+    "dev:clean": "rimraf dist",
+    "dev": "pnpm --filter @ecl/web-components-playground run dev",
+    "build": "pnpm --filter @ecl/web-components-playground run build:*",
+    "pre-publish": "pnpm build"
+  },
+  "dependencies" :{
+    "ckeditor5": "47.4.0",
+    "@ckeditor/ckeditor5-icons": "47.4.0"
   },
   "files": [
     "src",

@@ -1,11 +1,8 @@
-import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
-import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
-import { toWidget, toWidgetEditable } from '@ckeditor/ckeditor5-widget/src/utils';
-import { CustomElemCommand } from './ecl_webcomponents_command';
-import { ContextualBalloon, clickOutsideHandler } from '@ckeditor/ckeditor5-ui';
-import defaultIcon from '@ecl/ckeditor5-ecl-webcomponents/theme/icons/default.svg';
+import { toWidget, toWidgetEditable, ButtonView, ContextualBalloon, clickOutsideHandler, Plugin } from 'ckeditor5';
+import { CustomElemCommand } from '../commands/ecl_webcomponents_command';
+import defaultIcon from '../../theme/icons/default.svg?raw';
 import FormView from './ecl_webcomponents_view';
-import style from './style.css';
+import * as style from '../../theme/styles/style.css';
 
 export default class CustomElemUI extends Plugin {
   static get requires() {
@@ -256,9 +253,9 @@ export default class CustomElemUI extends Plugin {
       this.formView[component].inputs.forEach(input => {
         const attributeName = input.label;
         const value = commandValue[attributeName];
-        if (input.fieldView.element) {
-          input.fieldView.element.value = value;
-        } else {
+        if (input.fieldView?.element) {
+          input.fieldView.element.value = value ?? '';
+        } else if ('value' in input.fieldView) {
           input.fieldView.value = value;
         }
       });
@@ -269,7 +266,11 @@ export default class CustomElemUI extends Plugin {
       position: this._getBalloonPositionData(),
     });
 
-    this.formView[component].focus();
+    const view = this.formView[component];
+
+    if (typeof view.focus === 'function') {
+      view.focus();
+    }
   }
 
   _hideUI(component) {

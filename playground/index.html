@@ -1,10 +1,9 @@
-<html>
+<html data-ecl-theme="ec">
   <head>
     <meta charset="utf-8" />
     <meta data-ecl-asset-path="./ecl-webcomponents" />
-    <script type="module" src="ecl-webcomponents/ecl-webcomponents.esm.js"></script>
-    <script src="editor/ckeditor.js"></script>
-    <script src="../../ckeditor5/node_modules/@ckeditor/ckeditor5-inspector/build/inspector.js"></script>
+    <script src="/ecl-webcomponents/ecl-webcomponents.bridge.js"></script>
+    <script type="module" defer src="/ecl-webcomponents/ecl-webcomponents.esm.js"></script>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -13,20 +12,38 @@
         min-height: 300px;
         padding: 1rem;
       }
+
+      .ecl-theme-switcher {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 9999;
+        display: flex;
+        gap: 0.25rem;
+      }
+
+      .ecl-theme-switcher button {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+        border: 1px solid #ccc;
+        background: #fff;
+        cursor: pointer;
+      }
+
+      .ecl-theme-switcher button:hover {
+        background: #f2f2f2;
+      }
     </style>
-    <link
-      rel="stylesheet"
-      href="https://cdn1.fpfis.tech.ec.europa.eu/ecl/v3.10.0/ec/styles/ecl-ec.css"
-      integrity="sha256-LkZQ/rExnBl8MVHlJJ78lfS2CLPbGwgDvYDxsyUBeEs= sha384-lXBeCnbcwbqBiz1jbDX8TDGLDkOphNbczm554BVXhhilIpDCZfusJStxpuLl7eiD sha512-XZxRYBGAF7s3y+bakiQuu6F6PFn7uGl+qmgiFs84VkkV+cop0I11fnrzOqWv6tyfs6DsGuz8mz1Q8xN1nSdTvw=="
-      crossorigin="anonymous"
-      media="screen"
-    />
   </head>
   <body>
+    <div class="ecl-theme-switcher">
+      <button type="button" data-theme="ec">EC</button>
+      <button type="button" data-theme="eu">EU</button>
+    </div>
     <div class="ecl-container">
       <ecl-site-header logo-alt="European Commission" logo-title="European commission" lang-code="en" search-block="false"> </ecl-site-header>
       <h1>Ecl Webcomponents playground</h1>
-      <ecl-accordion ecl-script id="introduction">
+      <ecl-accordion id="introduction" color-mode="purple">
         <ecl-accordion-item label="How to use the playground" id="playground">
           <p class="ecl-u-type-paragraph-m">
             Use the editor to insert the content you want. To include Ecl components, click on the Ecl button in the toolbar or click on the paragraph symbol appearing on the left,
@@ -68,26 +85,11 @@
       <h2>PREVIEW</h2>
       <div id="preview" style="padding: 2rem 0"></div>
     </div>
-    <script>
-      let editor;
-
-      ClassicEditor.create(document.querySelector('#editor'))
-        .then(newEditor => {
-          editor = newEditor;
-          CKEditorInspector.attach(editor);
-          editor.model.document.on('change:data', (evt, data) => {
-            const preview = document.getElementById('preview');
-            preview.innerHTML = editor.getData();
-          });
-        })
-        .catch(err => {
-          console.error(err.stack);
-        });
-    </script>
+    <script type="module" src="./main.js"></script>
   </body>
   <footer>
     <ecl-grid container="true">
-      <ecl-text is-bold tag="span" level="5">Build number: {####}</ecl-text> | <ecl-text is-bold tag="span" level="5">Ckeditor: 36.0.1</ecl-text> |
+      <ecl-text is-bold tag="span" level="5">Build number: {####}</ecl-text> | <ecl-text is-bold tag="span" level="5">Ckeditor: 47.4.0</ecl-text> |
       <ecl-text is-bold tag="span" level="5">Ecl Webcomponents: {----}</ecl-text>
     </ecl-grid>
   </footer>

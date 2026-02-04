@@ -1,6 +1,6 @@
 packages:
   - "src/components/**"
-  - "playground"
+  - "playground/**"
   - "src/plugins/**"
   - "src/themes/*"
   - "packages/*"

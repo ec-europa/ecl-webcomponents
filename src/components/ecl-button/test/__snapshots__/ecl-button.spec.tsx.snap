@@ -3,7 +3,7 @@
 exports[`ecl-button renders 1`] = `
 <ecl-button variant="primary">
   <!---->
-  <button class="ecl-button ecl-button--primary" type="submit">
+  <button class="ecl-button ecl-button--primary" type="button">
     <span class="ecl-button__container">
       <span class="ecl-button__label" data-ecl-label>
         Button label
@@ -16,7 +16,7 @@ exports[`ecl-button renders 1`] = `
 exports[`ecl-button renders correctly with an icon after 1`] = `
 <ecl-button variant="primary">
   <!---->
-  <button class="ecl-button ecl-button--primary" type="submit">
+  <button class="ecl-button ecl-button--primary" type="button">
     <span class="ecl-button__container">
       <span class="ecl-button__label" data-ecl-label>
         Button label
@@ -32,7 +32,7 @@ exports[`ecl-button renders correctly with an icon after 1`] = `
 exports[`ecl-button renders correctly with an icon before 1`] = `
 <ecl-button variant="tertiary">
   <!---->
-  <button class="ecl-button ecl-button--tertiary" type="submit">
+  <button class="ecl-button ecl-button--tertiary" type="button">
     <span class="ecl-button__container">
       <ecl-icon icon="check" slot="icon-before">
         <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--check wt-icon--placeholder"></span>
@@ -48,7 +48,7 @@ exports[`ecl-button renders correctly with an icon before 1`] = `
 exports[`ecl-button renders correctly with an indicator 1`] = `
 <ecl-button indicator="true" indicator-label="label for screen readers" indicator-value="5" variant="secondary">
   <!---->
-  <button class="ecl-button ecl-button--secondary" type="submit">
+  <button class="ecl-button ecl-button--secondary" type="button">
     <span class="ecl-button__container">
       <span class="ecl-button__label" data-ecl-label>
         Button label
@@ -73,7 +73,7 @@ exports[`ecl-button renders correctly with an indicator 1`] = `
 exports[`ecl-button renders correctly with small size 1`] = `
 <ecl-button 's',="" size:="" variant="primary">
   <!---->
-  <button class="ecl-button ecl-button--primary" type="submit">
+  <button class="ecl-button ecl-button--primary" type="button">
     <span class="ecl-button__container">
       <span class="ecl-button__label" data-ecl-label>
         Button label
