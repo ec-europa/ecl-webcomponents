@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-video",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.19.0",
+  "version": "0.19.1",
   "description": "ECL Video",
   "main": "ecl-video.tsx",
   "private": true,
