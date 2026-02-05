@@ -123,8 +123,8 @@ index bb0daf7ebc5287514e1c929d6a10e9da714ddda0..7e496d339c32933ec2161f336cb1b343
 -        let bannerVideo = null;
 +      this.slides.forEach(function (slide) {
          const banner = queryOne('.ecl-banner', slide);
-+        const bannerImage = null;
-+        const bannerVideo = null;
++        let bannerImage = null;
++        let bannerVideo = null;
          if (banner) {
            bannerImage = queryOne('img', banner);
            bannerVideo = queryOne('video', banner);
