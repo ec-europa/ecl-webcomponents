@@ -1,5 +1,5 @@
-import { View, LabeledFieldView, createLabeledDropdown, createLabeledInputText, ButtonView, submitHandler } from 'ckeditor5';
-import * as icons from '@ckeditor/ckeditor5-icons';
+import { View, LabeledFieldView, createLabeledDropdown, createLabeledInputText, ButtonView, submitHandler, IconCheck, IconCancel } from 'ckeditor5';
+console.log(IconCheck);
 
 export default class FormView extends View {
   constructor(locale, attributes) {
@@ -16,9 +16,9 @@ export default class FormView extends View {
       }
     });
 
-    this.saveButtonView = this._createButton('Save', icons.check, 'ck-button-save');
+    this.saveButtonView = this._createButton('Save', IconCheck, 'ck-button-save');
     this.saveButtonView.type = 'submit';
-    this.cancelButtonView = this._createButton('Cancel', icons.cancel, 'ck-button-cancel');
+    this.cancelButtonView = this._createButton('Cancel', IconCancel, 'ck-button-cancel');
     // Delegate ButtonView#execute to FormView#cancel.
     this.cancelButtonView.delegate('execute').to(this, 'cancel');
 
@@ -62,13 +62,18 @@ export default class FormView extends View {
   }
 
   _createButton(label, icon, className) {
-    const button = new ButtonView();
+    const button = new ButtonView(this.locale);
 
     button.set({
       label,
       icon,
       tooltip: true,
-      class: className,
+    });
+
+    button.extendTemplate({
+      attributes: {
+        class: className,
+      },
     });
 
     return button;
