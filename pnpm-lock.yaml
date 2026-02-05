@@ -2076,22 +2076,13 @@ importers:
 
   src/plugins/ckeditor5-ecl-webcomponents:
     dependencies:
-      '@ckeditor/ckeditor5-icons':
-        specifier: 47.4.0
-        version: 47.4.0
       ckeditor5:
         specifier: 47.4.0
         version: 47.4.0
     devDependencies:
-      '@ecl/builder':
-        specifier: 5.0.0-alpha.22.3
-        version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       ncp:
         specifier: 2.0.0
         version: 2.0.0
-      npm-run-all:
-        specifier: 4.1.5
-        version: 4.1.5
       rimraf:
         specifier: 6.1.2
         version: 6.1.2

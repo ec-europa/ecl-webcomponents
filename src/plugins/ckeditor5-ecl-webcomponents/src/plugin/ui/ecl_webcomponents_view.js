@@ -1,5 +1,4 @@
 import { View, LabeledFieldView, createLabeledDropdown, createLabeledInputText, ButtonView, submitHandler, IconCheck, IconCancel } from 'ckeditor5';
-console.log(IconCheck);
 
 export default class FormView extends View {
   constructor(locale, attributes) {
