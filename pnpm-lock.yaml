@@ -369,15 +369,9 @@ importers:
 
   packages/ecl-webcomponents-react-consumer:
     dependencies:
-      '@ckeditor/ckeditor5-react':
-        specifier: 11.0.1
-        version: 11.0.1(ckeditor5@47.4.0)(react@18.2.0)
       '@ecl/ecl-webcomponents-react':
         specifier: 0.19.4
         version: link:../ecl-webcomponents-react
-      ckeditor5:
-        specifier: 47.4.0
-        version: 47.4.0
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -3143,12 +3137,6 @@ packages:
   '@ckeditor/ckeditor5-inspector@5.0.0':
     resolution: {integrity: sha512-WVCa1mtePJkLtI81Rn2E6orV0B2Az/+O7f+corJzYapoH5koVEe9TcVyoKRquKUWeBXMG+D1m72vmR2kuoLNhA==}
 
-  '@ckeditor/ckeditor5-integrations-common@2.2.3':
-    resolution: {integrity: sha512-92kQWQj1wiABF7bY1+J79Ze+WHr7pwVBufn1eeJLWcTXbPQq4sAolfKv8Y8Ka9g69mdyE9+GPWmGFYDeQJVPDg==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
-      ckeditor5: '>=42.0.0 || ^0.0.0-nightly'
-
   '@ckeditor/ckeditor5-language@47.4.0':
     resolution: {integrity: sha512-3FEoS59ZOTm6m0m0O5qEpsf4tGX/r+r0LjkDrRjhIcaGJh0W4Ao2J6cSrXv7hikDpgBjbHIkEy0V6KkIWWAZpg==}
 
@@ -3178,12 +3166,6 @@ packages:
 
   '@ckeditor/ckeditor5-paste-from-office@47.4.0':
     resolution: {integrity: sha512-yKOk+CDV0dAy+XeqUcP5Drur1u69h6UCdLwDUEbS/egSv/+o+tJwCGrTCRzPqBeUxIahUGBMk0obID7v6xT9IQ==}
-
-  '@ckeditor/ckeditor5-react@11.0.1':
-    resolution: {integrity: sha512-LNsggpPjwXjD7/M0As1NcIU0QbEvBl5HqJ1sbusk0abS0QHvZR+RvqvfFXnuQr6E26tc/Oa1szDIfAlfKPBUkg==}
-    peerDependencies:
-      ckeditor5: '>=46.0.0 || ^0.0.0-nightly || ^0.0.0-internal'
-      react: ^16.13.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
   '@ckeditor/ckeditor5-remove-format@47.4.0':
     resolution: {integrity: sha512-XD6LY76m3bZr/twRGTjNRnU4z0VU1akDC7evVMhRPaDruR71km00VT1YNPRChCDmdssEVeWEynHhLQ/kRjy+0w==}
@@ -14608,8 +14590,6 @@ snapshots:
       '@ckeditor/ckeditor5-core': 47.4.0
       '@ckeditor/ckeditor5-engine': 47.4.0
       '@ckeditor/ckeditor5-utils': 47.4.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-essentials@47.4.0':
     dependencies:
@@ -14753,10 +14733,6 @@ snapshots:
 
   '@ckeditor/ckeditor5-inspector@5.0.0': {}
 
-  '@ckeditor/ckeditor5-integrations-common@2.2.3(ckeditor5@47.4.0)':
-    dependencies:
-      ckeditor5: 47.4.0
-
   '@ckeditor/ckeditor5-language@47.4.0':
     dependencies:
       '@ckeditor/ckeditor5-core': 47.4.0
@@ -14833,8 +14809,6 @@ snapshots:
       '@ckeditor/ckeditor5-utils': 47.4.0
       '@ckeditor/ckeditor5-widget': 47.4.0
       ckeditor5: 47.4.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-mention@47.4.0':
     dependencies:
@@ -14854,8 +14828,6 @@ snapshots:
       '@ckeditor/ckeditor5-ui': 47.4.0
       '@ckeditor/ckeditor5-utils': 47.4.0
       ckeditor5: 47.4.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-page-break@47.4.0':
     dependencies:
@@ -14865,8 +14837,6 @@ snapshots:
       '@ckeditor/ckeditor5-utils': 47.4.0
       '@ckeditor/ckeditor5-widget': 47.4.0
       ckeditor5: 47.4.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-paragraph@47.4.0':
     dependencies:
@@ -14875,8 +14845,6 @@ snapshots:
       '@ckeditor/ckeditor5-icons': 47.4.0
       '@ckeditor/ckeditor5-ui': 47.4.0
       '@ckeditor/ckeditor5-utils': 47.4.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-paste-from-office@47.4.0':
     dependencies:
@@ -14884,12 +14852,6 @@ snapshots:
       '@ckeditor/ckeditor5-core': 47.4.0
       '@ckeditor/ckeditor5-engine': 47.4.0
       ckeditor5: 47.4.0
-
-  '@ckeditor/ckeditor5-react@11.0.1(ckeditor5@47.4.0)(react@18.2.0)':
-    dependencies:
-      '@ckeditor/ckeditor5-integrations-common': 2.2.3(ckeditor5@47.4.0)
-      ckeditor5: 47.4.0
-      react: 18.2.0
 
   '@ckeditor/ckeditor5-remove-format@47.4.0':
     dependencies:

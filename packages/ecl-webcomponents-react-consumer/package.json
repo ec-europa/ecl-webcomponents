@@ -12,9 +12,7 @@
     "pre-publish": "npm run build"
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-react": "11.0.1",
     "@ecl/ecl-webcomponents-react": "0.19.4",
-    "ckeditor5": "47.4.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rimraf": "6.1.2"
