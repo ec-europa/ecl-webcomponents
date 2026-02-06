@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-text",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.19.3",
+  "version": "0.19.4",
   "description": "ECL Text",
   "main": "ecl-text.ts",
   "private": true,

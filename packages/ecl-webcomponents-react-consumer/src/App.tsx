@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Editor from './ckeditor';
 import { EclButton, EclSiteHeader, EclDivider, EclMegaMenu, EclMegaMenuItem, EclMegaMenuSubitem, EclMegaMenuFeaturedListItem, EclText, EclSocialMediaFollow, EclPageHeaderMetaItem, EclSocialMediaFollowItem, EclSpacing, EclFooterEc, EclGallery, EclGalleryItem, EclFeaturedItem, EclFactFigures, EclFactFiguresItem, EclListIllustration, EclInpageNavigation, EclInpageNavigationItem, EclListIllustrationItem, EclPageHeader, EclGrid, EclBreadcrumb, EclBreadcrumbItem, EclFooterEu, EclFooterItem, EclLanguageItem, EclMenu, EclMenuItem, defineCustomElements } from '@ecl/ecl-webcomponents-react';
 
 defineCustomElements();
@@ -36,7 +35,6 @@ function App() {
           </EclButton>
         </li>
       </ul>
-      <Editor />
       <EclSiteHeader
         ecl-script
         login-block
