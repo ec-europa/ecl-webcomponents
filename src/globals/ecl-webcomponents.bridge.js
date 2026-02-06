@@ -25,7 +25,6 @@ function injectThemeCss(theme) {
   if (!isBrowser()) return;
   document.querySelectorAll('link[data-ecl-theme-css]').forEach(l => l.remove());
   injectLink(resolve(`${THEME_CSS_PATH}${theme}.css`));
-  console.log(resolve(`${THEME_CSS_PATH}${theme}.css`));
   if (theme === 'ec') injectLink(resolve(EC_MODE_CSS));
   document.documentElement.setAttribute('data-ecl-theme', theme);
   window.__eclCurrentTheme = theme;

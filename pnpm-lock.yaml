@@ -22,7 +22,7 @@ patchedDependencies:
     hash: 8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904
     path: patches/@ecl__builder.patch
   '@ecl/carousel':
-    hash: 0971494db7784339e73a151c15c087cab16b7fb9169d6c5d83830abd09427eaa
+    hash: 3debe342bfdf03a1857d467acf535e6231598e3ed27eb671d2eedb0a9629f392
     path: patches/@ecl__carousel.patch
   '@ecl/mega-menu':
     hash: 5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f
@@ -632,7 +632,7 @@ importers:
         version: 5.0.0-alpha.22.3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
       '@ecl/carousel':
         specifier: 5.0.0-alpha.22.3
-        version: 5.0.0-alpha.22.3(patch_hash=0971494db7784339e73a151c15c087cab16b7fb9169d6c5d83830abd09427eaa)
+        version: 5.0.0-alpha.22.3(patch_hash=3debe342bfdf03a1857d467acf535e6231598e3ed27eb671d2eedb0a9629f392)
       '@ecl/grid':
         specifier: 5.0.0-alpha.22.3
         version: 5.0.0-alpha.22.3
@@ -15103,7 +15103,7 @@ snapshots:
       '@ecl/content-block': 5.0.0-alpha.22.3
       '@ecl/picture': 5.0.0-alpha.22.3
 
-  '@ecl/carousel@5.0.0-alpha.22.3(patch_hash=0971494db7784339e73a151c15c087cab16b7fb9169d6c5d83830abd09427eaa)':
+  '@ecl/carousel@5.0.0-alpha.22.3(patch_hash=3debe342bfdf03a1857d467acf535e6231598e3ed27eb671d2eedb0a9629f392)':
     dependencies:
       '@ecl/banner': 5.0.0-alpha.22.3(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
       '@ecl/button': 5.0.0-alpha.22.3
@@ -15341,7 +15341,7 @@ snapshots:
       '@ecl/breadcrumb': 5.0.0-alpha.22.3
       '@ecl/button': 5.0.0-alpha.22.3
       '@ecl/card': 5.0.0-alpha.22.3
-      '@ecl/carousel': 5.0.0-alpha.22.3(patch_hash=0971494db7784339e73a151c15c087cab16b7fb9169d6c5d83830abd09427eaa)
+      '@ecl/carousel': 5.0.0-alpha.22.3(patch_hash=3debe342bfdf03a1857d467acf535e6231598e3ed27eb671d2eedb0a9629f392)
       '@ecl/category-filter': 5.0.0-alpha.22.3
       '@ecl/checkbox': 5.0.0-alpha.22.3
       '@ecl/color-modes': 5.0.0-alpha.22.3
@@ -15435,7 +15435,7 @@ snapshots:
       '@ecl/breadcrumb': 5.0.0-alpha.22.3
       '@ecl/button': 5.0.0-alpha.22.3
       '@ecl/card': 5.0.0-alpha.22.3
-      '@ecl/carousel': 5.0.0-alpha.22.3(patch_hash=0971494db7784339e73a151c15c087cab16b7fb9169d6c5d83830abd09427eaa)
+      '@ecl/carousel': 5.0.0-alpha.22.3(patch_hash=3debe342bfdf03a1857d467acf535e6231598e3ed27eb671d2eedb0a9629f392)
       '@ecl/category-filter': 5.0.0-alpha.22.3
       '@ecl/checkbox': 5.0.0-alpha.22.3
       '@ecl/content-block': 5.0.0-alpha.22.3
