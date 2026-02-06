@@ -1,5 +1,5 @@
 diff --git a/carousel.js b/carousel.js
-index bb0daf7ebc5287514e1c929d6a10e9da714ddda0..0d925193657aadaeaed3975e22f3617d33a20cbe 100644
+index bb0daf7ebc5287514e1c929d6a10e9da714ddda0..3c14e3103fdc55ee2e31d79698f2032e2e9daea5 100644
 --- a/carousel.js
 +++ b/carousel.js
 @@ -67,7 +67,7 @@ export class Carousel {
@@ -93,7 +93,7 @@ index bb0daf7ebc5287514e1c929d6a10e9da714ddda0..0d925193657aadaeaed3975e22f3617d
        const height = parseInt(banner.style.height, 10);
        const totalHeight = height + padding;
        if (banner.style.height === 'auto') {
-@@ -292,34 +264,22 @@ export class Carousel {
+@@ -292,34 +264,26 @@ export class Carousel {
        return totalHeight;
      });
  
@@ -102,7 +102,10 @@ index bb0daf7ebc5287514e1c929d6a10e9da714ddda0..0d925193657aadaeaed3975e22f3617d
 -    );
 -
 -    const tallestElementHeight = Math.max(...elementHeights);
--
++    const elementHeights = heightValues.filter(function (height) {
++      return height !== undefined;
++    });
+ 
 -    if (
 -      elementHeights.length === this.slides.length &&
 -      tallestElementHeight > 1
@@ -134,7 +137,7 @@ index bb0daf7ebc5287514e1c929d6a10e9da714ddda0..0d925193657aadaeaed3975e22f3617d
          }
          if (bannerImage) {
            bannerImage.style.aspectRatio = 'auto';
-@@ -434,9 +394,17 @@ export class Carousel {
+@@ -434,9 +398,17 @@ export class Carousel {
    shiftSlide(dir, stopAutoPlay) {
      if (this.allowShift) {
        if (typeof dir === 'number') {
@@ -154,7 +157,7 @@ index bb0daf7ebc5287514e1c929d6a10e9da714ddda0..0d925193657aadaeaed3975e22f3617d
        }
        this.moveSlides(true);
      }
-@@ -474,11 +442,8 @@ export class Carousel {
+@@ -474,11 +446,8 @@ export class Carousel {
        }
      }
      // Update index
@@ -168,7 +171,7 @@ index bb0daf7ebc5287514e1c929d6a10e9da714ddda0..0d925193657aadaeaed3975e22f3617d
      }
  
      // Move slide without transition to ensure infinity loop
-@@ -486,7 +451,7 @@ export class Carousel {
+@@ -486,7 +455,7 @@ export class Carousel {
  
      // Update pagination
      if (this.currentSlide) {
@@ -177,7 +180,7 @@ index bb0daf7ebc5287514e1c929d6a10e9da714ddda0..0d925193657aadaeaed3975e22f3617d
      }
  
      // Update slides
-@@ -510,7 +475,7 @@ export class Carousel {
+@@ -510,7 +479,7 @@ export class Carousel {
      // Update navigation
      if (this.navigationItems) {
        this.navigationItems.forEach((nav, index) => {
