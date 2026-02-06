@@ -1,6 +1,5 @@
-import { toWidget, toWidgetEditable, ButtonView, ContextualBalloon, clickOutsideHandler, Plugin } from 'ckeditor5';
+import { toWidget, toWidgetEditable, ButtonView, ContextualBalloon, clickOutsideHandler, Plugin, IconPlus } from 'ckeditor5';
 import { CustomElemCommand } from '../commands/ecl_webcomponents_command';
-import defaultIcon from '../../theme/icons/default.svg?raw';
 import FormView from './ecl_webcomponents_view';
 import * as style from '../../theme/styles/style.css';
 
@@ -24,7 +23,7 @@ export default class CustomElemUI extends Plugin {
       const editable = this._safeGet(items[i].editable, false);
       const parent = this._safeGet(items[i].parent, false);
       const children = this._safeGet(items[i].children, false);
-      let icon = this._safeGet(items[i].icon, defaultIcon);
+      let icon = this._safeGet(items[i].icon, IconPlus);
 
       const attrkeys = Object.keys(attr);
 
