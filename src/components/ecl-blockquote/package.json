@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-blockquote",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.19.2",
+  "version": "0.19.3",
   "description": "ECL Blockquote",
   "main": "ecl-blockquote.tsx",
   "private": true,

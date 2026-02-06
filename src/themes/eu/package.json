@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-theme-eu",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.19.2",
+  "version": "0.19.3",
   "description": "ECL Web components theme EU",
   "main": "src/custom-properties-eu.scss",
   "private": true,
