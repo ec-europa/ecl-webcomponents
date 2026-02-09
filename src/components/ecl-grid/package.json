@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-grid",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.19.4",
+  "version": "0.19.5",
   "description": "ECL Grid",
   "main": "ecl-grid.ts",
   "private": true,
