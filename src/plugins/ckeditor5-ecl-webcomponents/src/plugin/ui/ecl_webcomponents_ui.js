@@ -1,7 +1,7 @@
 import { toWidget, toWidgetEditable, ButtonView, ContextualBalloon, clickOutsideHandler, Plugin, IconPlus } from 'ckeditor5';
 import { CustomElemCommand } from '../commands/ecl_webcomponents_command';
 import FormView from './ecl_webcomponents_view';
-import * as style from '../../theme/styles/style.css';
+import '../../theme/styles/style.css';
 
 export default class CustomElemUI extends Plugin {
   static get requires() {
