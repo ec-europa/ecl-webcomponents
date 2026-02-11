@@ -1,6 +1,6 @@
 {
   "name": "@ecl/ecl-webcomponents-angular",
-  "version": "0.19.5",
+  "version": "0.19.6",
   "publishConfig": {
     "access": "public"
   },
@@ -10,7 +10,7 @@
   "peerDependencies": {
     "@angular/common": "18.2.0",
     "@angular/core": "18.2.0",
-    "@ecl/ecl-webcomponents": "0.19.5"
+    "@ecl/ecl-webcomponents": "0.19.6"
   },
   "scripts": {
     "copy": "ncp ../../../ecl-webcomponents/dist/ecl-webcomponents/build dist/build"
