@@ -74,6 +74,10 @@ export class EclContentItem {
       styleClasses.push('ecl-content-item--divider');
     }
 
+    if (this.imagePosition === 'top') {
+      styleClasses.push('ecl-content-item--stack');
+    }
+
     return styleClasses.join(' ');
   }
 

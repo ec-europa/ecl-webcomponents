@@ -33,6 +33,7 @@ const getArgTypes = () => {
       options: [
         'left',
         'right',
+        'top',
       ],
       description: 'Image position',
       if: { arg: 'event', truthy: false },
