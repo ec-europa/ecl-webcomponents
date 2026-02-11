@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-input",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.19.5",
+  "version": "0.19.6",
   "description": "ECL Select",
   "main": "ecl-input.tsx",
   "private": true,

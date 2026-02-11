@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-popover",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.19.5",
+  "version": "0.19.6",
   "description": "ECL Popover",
   "main": "ecl-popover.tsx",
   "private": true,
@@ -13,8 +13,8 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "@ecl/web-components-icon": "0.19.5",
-    "@ecl/web-components-link": "0.19.5"
+    "@ecl/web-components-icon": "0.19.6",
+    "@ecl/web-components-link": "0.19.6"
   },
   "devDependencies": {
     "@ecl/builder": "5.0.0-alpha.22.3",

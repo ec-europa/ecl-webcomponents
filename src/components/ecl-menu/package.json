@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-menu",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.19.5",
+  "version": "0.19.6",
   "description": "ECL Menu",
   "main": "ecl-menu.tsx",
   "private": true,
