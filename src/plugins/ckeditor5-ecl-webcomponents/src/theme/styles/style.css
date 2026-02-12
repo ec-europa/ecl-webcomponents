@@ -18,6 +18,10 @@
 	content: 'fact & figures';
 }
 
+.ecl-social-media-follow.ck-editor__editable::before {
+	content: 'social media follow';
+}
+
 .ecl-footer.ck-editor__editable::before {
 	content: 'footer';
 }
@@ -199,10 +203,12 @@
 .ecl-page-header.ck-editor__editable,
 .ecl-breadcrumb.ck-editor__editable,
 .ecl-gallery.ck-editor__editable,
+.ecl-social-media-follow.ck-editor__editable,
 .ecl-content-block.ck-editor__editable,
 .ecl-pagination.ck-editor__editable,
 .ecl-footer.ck-editor__editable,
 .ecl-menu.ck-editor__editable,
+.ecl-fact-figures.ck-editor__editable,
 .ecl-site-header .ecl-menu.ck-editor__editable,
 .ecl-mega-menu.ck-editor__editable,
 .ecl-site-header .ecl-mega-menu.ck-editor__editable,
@@ -259,7 +265,7 @@
 .ecl-popover.ck-editor__editable::before,
 .ecl-media-container.ck-editor__editable::before,
 .ecl-form-group.ck-editor__editable::before,
-.ecl-social-media-share.ck-editor__editable::before,
+.ecl-social-media-follow.ck-editor__editable::before,
 .ecl-file.ck-editor__editable::before,
 .ecl-inpage-navigation.ck-editor__editable::before,
 .ck-editor__editable.ecl-blockquote::before,
@@ -302,7 +308,7 @@
 .ck-editor__nested-editable.ecl-input::before,
 .ck-editor__nested-editable.ecl-select::before,
 .ck-editor__nested-editable.ecl-textarea::before,
-.ck-editor__nested-editable.ecl-social-media-share__item::before,
+.ck-editor__nested-editable.ecl-social-media-follow__item::before,
 .ck-editor__nested-editable.ecl-file-translation__item::before,
 .ck-editor__nested-editable.ecl-inpage-navigation__item::before,
 .ck-editor__nested-editable.ecl-carousel__item::before,
@@ -326,31 +332,31 @@
 	margin-right: 0.5rem;
 }
 
-.ck-editor__nested-editable.ecl-fact-figures__item,
-.ck-editor__nested-editable.ecl-accordion__item,
-.ck-editor__nested-editable.ecl-news-ticker__item,
-.ck-editor__nested-editable.ecl-description-list__term,
-.ck-editor__nested-editable.ecl-description-list__definition,
-.ck-editor__nested-editable.ecl-timeline__item,
-.ck-editor__nested-editable.ecl-language__item,
-.ck-editor__nested-editable.ecl-popover__item,
-.ck-editor__nested-editable.ecl-input,
-.ck-editor__nested-editable.ecl-select,
-.ck-editor__nested-editable.ecl-textarea,
-.ck-editor__nested-editable.ecl-social-media-share__item,
-.ck-editor__nested-editable.ecl-file-translation__item,
-.ck-editor__nested-editable.ecl-inpage-navigation__item,
-.ck-editor__nested-editable.ecl-carousel__item,
-.ck-editor__nested-editable.ecl-breadcrumb__item,
-.ck-editor__nested-editable.ecl-gallery__item,
-.ck-editor__nested-editable.ecl-pagination__item,
-.ck-editor__nested-editable.ecl-footer__item,
-.ck-editor__nested-editable.ecl-menu__item,
-.ck-editor__nested-editable.ecl-mega-menu__item,
-.ck-editor__nested-editable.ecl-list-illustration__item,
-.ck-editor__nested-editable.source,
-.ck-editor__nested-editable.ecl-navigation-list__item,
-.ck-editor__nested-editable.ecl-tabs__item {
+.ck .ck-editor__nested-editable.ecl-fact-figures__item,
+.ck .ck-editor__nested-editable.ecl-accordion__item,
+.ck .ck-editor__nested-editable.ecl-news-ticker__item,
+.ck .ck-editor__nested-editable.ecl-description-list__term,
+.ck .ck-editor__nested-editable.ecl-description-list__definition,
+.ck .ck-editor__nested-editable.ecl-timeline__item,
+.ck .ck-editor__nested-editable.ecl-language__item,
+.ck .ck-editor__nested-editable.ecl-popover__item,
+.ck .ck-editor__nested-editable.ecl-input,
+.ck .ck-editor__nested-editable.ecl-select,
+.ck .ck-editor__nested-editable.ecl-textarea,
+.ck .ck-editor__nested-editable.ecl-social-media-follow__item,
+.ck .ck-editor__nested-editable.ecl-file-translation__item,
+.ck .ck-editor__nested-editable.ecl-inpage-navigation__item,
+.ck .ck-editor__nested-editable.ecl-carousel__item,
+.ck .ck-editor__nested-editable.ecl-breadcrumb__item,
+.ck .ck-editor__nested-editable.ecl-gallery__item,
+.ck .ck-editor__nested-editable.ecl-pagination__item,
+.ck .ck-editor__nested-editable.ecl-footer__item,
+.ck .ck-editor__nested-editable.ecl-menu__item,
+.ck .ck-editor__nested-editable.ecl-mega-menu__item,
+.ck .ck-editor__nested-editable.ecl-list-illustration__item,
+.ck .ck-editor__nested-editable.source,
+.ck .ck-editor__nested-editable.ecl-navigation-list__item,
+.ck .ck-editor__nested-editable.ecl-tabs__item {
 	border: 2px solid teal;
 	border-right: 0;
 	margin-top: 0.25rem;
@@ -376,7 +382,7 @@
 .ck-editor__nested-editable.ecl-menu__item::before,
 .ck-editor__nested-editable.ecl-mega-menu__item::before,
 .ck-editor__nested-editable.ecl-list-illustration__item::before,
-.ck-editor__nested-editable.ecl-social-media-share__item::before,
+.ck-editor__nested-editable.ecl-social-media-follow__item::before,
 .ck-editor__nested-editable.ecl-pagination__item::before,
 .ck-editor__nested-editable.ecl-inpage-navigation__item::before,
 .ck-editor__nested-editable.ecl-gallery__item::before,
@@ -416,6 +422,6 @@
 	content: 'textarea';
 }
 
-.ck-editor__nested-editable.ecl-social-media-share__item {
+.ck-editor__nested-editable.ecl-social-media-follow__item {
 	margin-inline-end: 0;
 }

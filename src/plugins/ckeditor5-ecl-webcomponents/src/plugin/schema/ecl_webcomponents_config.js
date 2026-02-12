@@ -2029,6 +2029,51 @@ export const DEFAULT_ECL_CONFIG = [
     parent: 'ecl-form-group',
   },
   {
+    tag: 'ecl-social-media-follow',
+    attributes: {
+      'style-class': '',
+      'variant': {
+        type: 'select',
+        value: 'horizontal',
+        options: [
+          { label: 'horizontal', value: 'horizontal' },
+          { label: 'vertical', value: 'vertical' },
+        ],
+      },
+      'position': {
+        type: 'select',
+        value: 'left',
+        options: [
+          { label: 'left', value: 'left' },
+          { label: 'right', value: 'right' },
+        ],
+      },
+      'description': '',
+      'inline-title': {
+        type: 'boolean',
+        value: false,
+      },
+    },
+    inline: false,
+    editable: true,
+    children: ['ecl-social-media-follow-item'],
+  },
+  {
+    tag: 'ecl-social-media-follow-item',
+    attributes: {
+      'family': 'networks',
+      'color': 'monochrome',
+      'icon': '',
+      'hide-label': {
+        type: 'boolean',
+        value: false,
+      },
+      'share-path': '',
+    },
+    inline: true,
+    editable: true,
+  },
+  {
     tag: 'ecl-featured-item',
     attributes: {
       'style-class': '',

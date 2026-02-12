@@ -34,7 +34,7 @@ buttons.forEach(button => {
 
 ClassicEditor.create(document.querySelector('#editor'), {
   plugins: [Autoformat, Essentials, Paragraph, Heading, List, Bold, Italic, BlockToolbar, EclWebComponentsPlugin, SourceEditing, TextTransformation],
-  toolbar: ['undo', 'redo', '|', 'heading', '|', 'bold', 'italic', '|', 'numberedList', 'bulletedList', '|', ...ECL_MAIN_TOOLBAR],
+  toolbar: ['undo', 'redo', '|', ...ECL_MAIN_TOOLBAR, '|', 'heading', '|', 'bold', 'italic', '|', 'numberedList', 'bulletedList', '|', 'SourceEditing'],
   blockToolbar: ECL_BLOCK_TOOLBAR,
   licenseKey: 'GPL',
   CustomElement: {

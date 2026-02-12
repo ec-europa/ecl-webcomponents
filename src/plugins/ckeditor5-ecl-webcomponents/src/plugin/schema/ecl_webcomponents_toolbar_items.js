@@ -372,6 +372,18 @@ export const ECL_TOOLBAR_ITEMS = [
     ],
   },
   {
+    label: 'social media follow',
+    withText: true,
+    items: [
+      'ecl-webcomponents-ecl-social-media-follow',
+      {
+        label: 'items',
+        withText: true,
+        items: ['ecl-webcomponents-ecl-social-media-follow-item'],
+      },
+    ],
+  },
+  {
     label: 'spacing',
     withText: true,
     items: ['ecl-webcomponents-ecl-spacing'],
