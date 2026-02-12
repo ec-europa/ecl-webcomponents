@@ -1,4 +1,3 @@
-// src/bridge/ecl-webcomponents-bridge.js
 const BASE = new URL('.', document.currentScript.src);
 const THEME_CSS_PATH = './build/styles/custom-properties-';
 const EC_MODE_CSS = './build/styles/ecl-ec-color-modes.css';

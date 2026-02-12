@@ -330,6 +330,7 @@ export const DEFAULT_ECL_CONFIG = [
         options: [
           { label: 'left', value: 'left' },
           { label: 'right', value: 'right' },
+          { label: 'top', value: 'top' },
         ],
       },
       'image-size': {
@@ -509,6 +510,7 @@ export const DEFAULT_ECL_CONFIG = [
     inline: false,
     editable: true,
     children: ['source'],
+    parent: 'ecl-content-item',
   },
   {
     tag: 'source',
