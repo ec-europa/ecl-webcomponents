@@ -13,7 +13,7 @@
     "pre-publish": "pnpm build"
   },
   "peerDependencies": {
-    "ckeditor5": "47.4.0"
+    "ckeditor5": "47.5.0"
   },
   "devDependencies": {
     "ncp": "2.0.0",

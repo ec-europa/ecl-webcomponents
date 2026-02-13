@@ -16,7 +16,7 @@
     "@ckeditor/ckeditor5-inspector": "5.0.0",
     "@ecl/ckeditor5-ecl-webcomponents": "0.20.0",
     "@ecl/ecl-webcomponents": "0.20.0",
-    "ckeditor5": "47.4.0",
+    "ckeditor5": "47.5.0",
     "ncp": "2.0.0",
     "vite": "7.3.1"
   },
