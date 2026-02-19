@@ -1525,7 +1525,15 @@ export const DEFAULT_ECL_CONFIG = [
       'banner-title': '',
       'banner-title-link': '',
       'description-link': '',
-      'box-background': '',
+      'box-background': {
+        type: 'select',
+        value: 'light',
+        options: [
+          { label: 'none', value: 'none' },
+          { label: 'light', value: 'light' },
+          { label: 'dark', value: 'dark' },
+        ],
+      },
       'horizontal': {
         type: 'select',
         value: '',

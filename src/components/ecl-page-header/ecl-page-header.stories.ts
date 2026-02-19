@@ -2,15 +2,19 @@ import { randomizedLink } from "../../utils/randomizedLink";
 
 const getArgTypes = () => {
   return {
-    variant: {
-      type: { name: 'select' },
-      options: ['default', 'news', '50-50'],
-      description: 'Variant (news or 50-50)',
+
+    withBackground: {
+      name: 'with-background',
+      type: { name: 'boolean' },
     },
     withMeta: {
-      name: 'with meta',
+      name: 'with-meta',
       type: { name: 'boolean' },
       description: 'Meta',
+    },
+    withDescription: {
+      name: 'with-description',
+      type: { name: 'boolean' },
     },
     expandable: {
       type: { name: 'boolean' },
@@ -23,6 +27,24 @@ const getArgTypes = () => {
     image: {
       type: { name: 'string' },
       description: 'Main page header image',
+    },
+    imagePosition: {
+      name: 'image-position',
+      type: 'select',
+      description: 'Change image position',
+      options: ['top', 'bottom', 'beside'],
+      control: {
+        labels: {
+          top: 'top',
+          bottom: 'bottom',
+          beside: 'beside',
+        },
+      },
+      mapping: {
+        top: 'top',
+        bottom: 'bottom',
+        beside: 'beside',
+      },
     },
     imageAlt: {
       name: 'image-alt',
@@ -52,7 +74,6 @@ const getArgTypes = () => {
         top: 'top',
         bottom: 'bottom',
       },
-      if: { arg: 'variant', eq: '50-50' },
     },
     thumbnail: {
       type: { name: 'boolean' },
@@ -63,22 +84,6 @@ const getArgTypes = () => {
       description: 'Alt attribute for the thumbnail',
       if: { arg: 'thumbnail' }
     },
-    fontSize: {
-      name: 'font size',
-      type: 'select',
-      description: 'Change title font size',
-      options: ['m', 'l'],
-      control: {
-        labels: {
-          m: 'medium',
-          l: 'large',
-        },
-      },
-      mapping: {
-        medium: 'm',
-        large: 'l',
-      },
-    },
   }
 };
 
@@ -88,13 +93,15 @@ export default {
 
 const Template = args =>
   `<ecl-page-header
-    variant="${args.variant !== 'default' ? args.variant : ''}"
+    color-mode="${args.color_mode}"
     header-title="${args.title}"
+    with-description="${args.withDescription}"
+    with-background="${args.withBackground}"
     image="${args.image || ''}"
+    image-position="${args.imagePosition}"
     thumbnail="${args.thumbnail ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg' : '' }"
     thumbnail-alt="${args.thumbnailAlt}"
     ${args.withMeta ? 'with-meta' : ''}
-    font-size="${args.fontSize}"
     expandable="${args.expandable}"
     expandable-content="${args.expandableContent}"
     description-position="${args.descriptionPosition}"
@@ -174,20 +181,20 @@ const Template = args =>
 export const PageHeaderCore = Template.bind({});
 PageHeaderCore.storyName = 'default';
 PageHeaderCore.args = {
-  variant: 'default',
+  withBackground: false,
+  withDescription: true,
   withMeta: true,
   expandable: false,
   expandableContent: false,
   title: 'Page title',
-  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec ullamcorper mi. Morbi interdum fermentum tempus. Nam nec rhoncus risus, <a class="ecl-link" href="${randomizedLink('/example.html')}">eget dictum elit</a>. Vestibulum gravida tincidunt venenatis`,
+  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec ullamcorper mi. Morbi interdum fermentum tempus. Nam nec rhoncus risus, eget dictum elit. Vestibulum gravida tincidunt venenatis`,
   descriptionPosition: 'top',
   image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg',
+  imagePosition: 'top',
   imageAlt: 'image alternative text',
   thumbnail: false,
   thumbnailAlt: 'Europe map',
-  fontSize: 'm',
 };
 PageHeaderCore.argTypes = {
-   color_mode: { table: { disable: true }},
   ...getArgTypes(),
 };
