@@ -2901,6 +2901,8 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    type OneOf<K extends string, PropT, AttrT = PropT> = { [P in K]: PropT } & { [P in `attr:${K}` | `prop:${K}`]?: never } | { [P in `attr:${K}`]: AttrT } & { [P in K | `prop:${K}`]?: never } | { [P in `prop:${K}`]: PropT } & { [P in K | `attr:${K}`]?: never };
+
     interface EclAccordion {
         /**
           * @default ''
@@ -5062,189 +5064,1239 @@ declare namespace LocalJSX {
          */
         "zoom"?: boolean;
     }
+
+    interface EclAccordionAttributes {
+        "styleClass": string;
+        "noScript": boolean;
+        "theme": string;
+        "colorMode": string;
+    }
+    interface EclAccordionItemAttributes {
+        "styleClass": string;
+        "label": string;
+        "itemId": string;
+        "expanded": boolean;
+        "theme": string;
+    }
+    interface EclBannerAttributes {
+        "colorMode": string;
+        "theme": string;
+        "styleClass": string;
+        "external": boolean;
+        "fullWidth": boolean;
+        "bannerTitle": string;
+        "bannerTitleLink": string;
+        "descriptionLink": string;
+        "image": string;
+        "noScript": boolean;
+        "sources": string;
+        "tracks": string;
+        "imageAlt": string;
+        "ctaLabel": string;
+        "ctaLink": string;
+        "boxBackground": string;
+        "horizontal": string;
+        "vertical": string;
+        "srPlay": string;
+        "srPause": string;
+        "fontColor": string;
+        "fontSize": string;
+        "credit": string;
+        "size": string;
+        "ctaClicked": boolean;
+    }
+    interface EclBlockquoteAttributes {
+        "styleClass": string;
+        "theme": string;
+        "image": string;
+        "author": string;
+        "imageAlt": string;
+        "colorMode": string;
+        "language": string;
+    }
+    interface EclBreadcrumbAttributes {
+        "styleClass": string;
+        "theme": string;
+        "noScript": boolean;
+        "minItemsRight": number;
+    }
+    interface EclBreadcrumbItemAttributes {
+        "theme": string;
+        "styleClass": string;
+        "path": string;
+        "currentPage": boolean;
+        "ellipsis": boolean;
+        "buttonAriaLabel": string;
+    }
+    interface EclButtonAttributes {
+        "styleClass": string;
+        "type": string;
+        "buttonStyle": string;
+        "variant": string;
+        "theme": string;
+        "size": string;
+        "containerExtraClasses": string;
+        "hideLabel": boolean;
+        "ariaControls": string;
+        "itemId": string;
+        "indicator": boolean;
+        "indicatorValue": string;
+        "disabled": boolean;
+    }
+    interface EclCardAttributes {
+        "styleClass": string;
+        "theme": string;
+        "image": string;
+        "imageAlt": string;
+        "imageZoom": boolean;
+    }
+    interface EclCarouselAttributes {
+        "styleClass": string;
+        "theme": string;
+        "noScript": boolean;
+        "carouselId": string;
+        "colorMode": string;
+        "slidesNumber": number;
+        "fullWidth": boolean;
+        "counterLabel": string;
+        "srNavigation": string;
+        "srPrevious": string;
+        "srNext": string;
+        "srPause": string;
+        "srPlay": string;
+    }
+    interface EclCarouselItemAttributes {
+        "styleClass": string;
+        "bannerTitle": string;
+        "credit": string;
+        "image": string;
+        "theme": string;
+        "ctaLink": string;
+        "ctaLabel": string;
+        "size": string;
+        "ariaLabel": string;
+        "centered": boolean;
+    }
+    interface EclCategoryFilterAttributes {
+        "styleClass": string;
+        "theme": string;
+        "noScript": boolean;
+        "colorMode": string;
+    }
+    interface EclCategoryFilterItemAttributes {
+        "styleClass": string;
+        "theme": string;
+        "label": string;
+        "path": string;
+        "level": number;
+        "subItems": boolean;
+        "expanded": boolean;
+    }
+    interface EclContentBlockAttributes {
+        "styleClass": string;
+        "theme": string;
+        "hasDescription": boolean;
+        "noScript": boolean;
+        "hasTitle": boolean;
+        "hasLabels": boolean;
+        "hasLinks": boolean;
+        "hasSecondaryLinks": boolean;
+        "hasLists": boolean;
+        "metaPrimary": string;
+        "metaSecondary": string;
+        "metaSecondaryDir": string;
+    }
+    interface EclContentItemAttributes {
+        "styleClass": string;
+        "theme": string;
+        "imagePosition": string;
+        "imageSize": string;
+        "imageZoom": boolean;
+        "divider": boolean;
+        "colorMode": string;
+    }
+    interface EclDateBlockAttributes {
+        "styleClass": string;
+        "variant": string;
+        "theme": string;
+        "day": string;
+        "month": string;
+        "year": string;
+        "monthFull": string;
+        "dateTime": string;
+    }
+    interface EclDatepickerAttributes {
+        "theme": string;
+        "styleClass": string;
+        "disabled": boolean;
+        "required": boolean;
+        "placeholder": string;
+        "inputId": string;
+        "invalid": boolean;
+        "firstDayOfTheWeek": number;
+        "width": string;
+        "min": string;
+        "max": string;
+        "name": string;
+        "defaultValue": string;
+    }
+    interface EclDescriptionListAttributes {
+        "styleClass": string;
+        "colorMode": string;
+        "theme": string;
+        "variant": string;
+        "visibleItems": number;
+        "moreLabel": string;
+        "noScript": boolean;
+    }
+    interface EclDescriptionListDefinitionAttributes {
+        "type": string;
+        "styleClass": string;
+        "theme": string;
+        "items": string;
+        "collapsible": boolean;
+    }
+    interface EclDescriptionListTermAttributes {
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclDividerAttributes {
+        "theme": string;
+        "styleClass": string;
+    }
+    interface EclExpandableAttributes {
+        "styleClass": string;
+        "noScript": boolean;
+        "isExpanded": boolean;
+        "elId": string;
+        "labelCollapsed": string;
+        "labelExpanded": string;
+        "theme": string;
+    }
+    interface EclFactFiguresAttributes {
+        "theme": string;
+        "styleClass": string;
+        "columns": number;
+        "displayIcons": boolean;
+        "colorMode": string;
+        "centered": boolean;
+        "viewAllLinkPath": string;
+        "viewAllLinkLabel": string;
+        "iconSize": string;
+        "fontSize": string;
+    }
+    interface EclFactFiguresItemAttributes {
+        "theme": string;
+        "styleClass": string;
+        "icon": string;
+        "value": string;
+        "itemTitle": string;
+        "iconTransform": string;
+    }
+    interface EclFeaturedItemAttributes {
+        "theme": string;
+        "elId": string;
+        "styleClass": string;
+        "variant": string;
+        "itemTitle": string;
+        "image": string;
+        "colorMode": string;
+        "linkType": string;
+        "linkPath": string;
+        "linkLabel": string;
+        "mediaCaption": string;
+        "mediaBehavior": string;
+        "mediaAnchor": string;
+        "verticalAlignment": string;
+        "position": string;
+        "defaultContainerClass": string;
+    }
+    interface EclFileAttributes {
+        "elId": string;
+        "theme": string;
+        "styleClass": string;
+        "variant": string;
+        "downloadAttribute": boolean;
+        "downloadId": string;
+        "downloadLabel": string;
+        "downloadLabelId": string;
+        "downloadLink": string;
+        "fileTitle": string;
+        "fileTitleId": string;
+        "fileTitlePath": string;
+        "detailMeta": string;
+        "language": string;
+        "meta": string;
+        "image": string;
+        "imageAlt": string;
+        "ariaLabel": string;
+        "labels": string;
+        "taxonomies": string;
+        "taxonomiesLabel": string;
+        "noScript": boolean;
+    }
+    interface EclFileTranslationsAttributes {
+        "theme": string;
+        "styleClass": string;
+        "toggleLabel": string;
+        "others": boolean;
+    }
+    interface EclFileTranslationsItemAttributes {
+        "theme": string;
+        "styleClass": string;
+        "variant": string;
+        "meta": string;
+        "parentId": string;
+        "fileTitle": string;
+        "downloadLink": string;
+        "downloadLabel": string;
+        "downloadAttribute": boolean;
+        "language": string;
+    }
+    interface EclFileUploadAttributes {
+        "inputId": string;
+        "theme": string;
+        "styleClass": string;
+        "inputClass": string;
+        "noScript": boolean;
+        "disabled": boolean;
+        "required": boolean;
+        "invalid": boolean;
+        "helperId": string;
+        "helperText": string;
+        "placeholder": string;
+        "width": string;
+        "label": string;
+        "type": string;
+        "name": string;
+        "multiple": boolean;
+        "defaultValue": string;
+        "buttonChooseLabel": string;
+        "buttonReplaceLabel": string;
+    }
+    interface EclFooterEcAttributes {
+        "styleClass": string;
+        "theme": string;
+        "logoAlt": string;
+        "logoTitle": string;
+        "logoLink": string;
+        "logoLangCode": string;
+        "variant": string;
+        "description": string;
+        "descriptionName": string;
+        "siteName": string;
+        "siteLink": string;
+        "coOwnerTitle": string;
+        "coOwnerLinks": string;
+    }
+    interface EclFooterEuAttributes {
+        "styleClass": string;
+        "theme": string;
+        "logoAlt": string;
+        "logoTitle": string;
+        "logoLink": string;
+        "logoAriaLabel": string;
+        "logoLangCode": string;
+        "siteName": string;
+        "siteNameLink": string;
+        "variant": string;
+        "description": string;
+        "descriptionName": string;
+        "coOwnerTitle": string;
+        "coOwnerLinks": string;
+    }
+    interface EclFooterItemAttributes {
+        "theme": string;
+        "styleClass": string;
+        "link": string;
+        "ariaLabel": string;
+    }
+    interface EclFormGroupAttributes {
+        "styleClass": string;
+        "theme": string;
+        "label": string;
+        "invalid": boolean;
+        "required": boolean;
+        "requiredText": string;
+        "optionalText": string;
+        "invalidText": string;
+        "helperText": string;
+        "helperId": string;
+        "hideLabel": boolean;
+        "labelTag": string;
+        "tag": string;
+        "name": string;
+        "invalidIcon": string;
+        "labelClass": string;
+        "ariaLabelOptional": string;
+        "ariaLabelRequired": string;
+    }
+    interface EclGalleryAttributes {
+        "elId": string;
+        "styleClass": string;
+        "theme": string;
+        "noScript": boolean;
+        "slidesNumber": number;
+        "counterLabel": string;
+        "counterSeparator": string;
+        "description": string;
+        "meta": string;
+        "grid": boolean;
+        "gridTemplate": number;
+        "ratio": string;
+        "nextLabel": string;
+        "prevLabel": string;
+        "closeLabel": string;
+        "shareLabel": string;
+        "footerLinkPath": string;
+        "footerLinkLabel": string;
+        "visibleItems": number;
+        "fullWidth": boolean;
+        "viewAllLabel": string;
+        "viewAllExpandedLabel": string;
+        "expandable": boolean;
+        "fullScreenLabel": string;
+        "noOverlay": boolean;
+        "ariaLabel": string;
+        "disableOverlay": boolean;
+        "srGalleryLabel": string;
+    }
+    interface EclGalleryItemAttributes {
+        "styleClass": string;
+        "theme": string;
+        "thumbnail": string;
+        "thumbZoom": boolean;
+        "imageAlt": string;
+        "mediaHref": string;
+        "mediaIframeHref": string;
+        "mediaSharePath": string;
+        "meta": string;
+        "type": string;
+        "icon": string;
+        "elId": string;
+    }
+    interface EclGridAttributes {
+        "styleClass": string;
+        "theme": string;
+        "columns": number;
+        "breakpoint": string;
+        "row": boolean;
+        "container": boolean;
+    }
+    interface EclIconAttributes {
+        "styleClass": string;
+        "theme": string;
+        "icon": string;
+        "size": string;
+        "color": string;
+        "family": string;
+        "flip": string;
+        "titleTag": string;
+        "rotate": string;
+        "sprite": string;
+    }
+    interface EclIndicatorAttributes {
+        "value": string;
+        "noScript": boolean;
+        "srLabel": string;
+        "styleClass": string;
+    }
+    interface EclInpageNavigationAttributes {
+        "theme": string;
+        "styleClass": string;
+        "colorMode": string;
+        "noScript": boolean;
+        "inpageTitle": string;
+        "inpageId": string;
+    }
+    interface EclInpageNavigationItemAttributes {
+        "theme": string;
+        "styleClass": string;
+        "path": string;
+    }
+    interface EclInputAttributes {
+        "theme": string;
+        "styleClass": string;
+        "inputClass": string;
+        "eclScript": boolean;
+        "disabled": boolean;
+        "required": boolean;
+        "invalid": boolean;
+        "hideLabel": boolean;
+        "helperText": string;
+        "placeholder": string;
+        "width": string;
+        "label": string;
+        "type": string;
+        "inputId": string;
+        "name": string;
+        "defaultValue": string;
+        "hasChanged": boolean;
+        "isFocused": boolean;
+    }
+    interface EclLabelAttributes {
+        "styleClass": string;
+        "variant": string;
+        "theme": string;
+    }
+    interface EclLanguageItemAttributes {
+        "theme": string;
+        "styleClass": string;
+        "path": string;
+        "langCode": string;
+        "language": string;
+        "active": boolean;
+    }
+    interface EclLinkAttributes {
+        "theme": string;
+        "path": string;
+        "styleClass": string;
+        "elId": string;
+        "inverted": boolean;
+        "variant": string;
+        "titleAttr": string;
+        "branded": boolean;
+        "external": boolean;
+        "hideLabel": boolean;
+        "ariaLabel": string;
+        "srExternal": string;
+        "name": string;
+        "target": string;
+        "download": boolean;
+        "indicator": boolean;
+        "indicatorValue": string;
+        "indicatorLabel": string;
+    }
+    interface EclListIllustrationAttributes {
+        "theme": string;
+        "variant": string;
+        "zebra": boolean;
+        "column": number;
+        "styleClass": string;
+        "colorMode": string;
+        "fontSize": string;
+        "centered": boolean;
+        "iconInline": boolean;
+        "iconList": boolean;
+        "numberList": boolean;
+        "counterReset": boolean;
+        "counterStart": number;
+    }
+    interface EclListIllustrationItemAttributes {
+        "theme": string;
+        "itemTitle": string;
+        "itemLink": string;
+        "image": string;
+        "icon": string;
+        "iconSize": string;
+        "imageAlt": string;
+        "squareImage": boolean;
+        "styleClass": string;
+        "hasColumns": boolean;
+        "divider": boolean;
+        "mediaSize": string;
+        "itemValue": string;
+    }
+    interface EclMediaContainerAttributes {
+        "theme": string;
+        "styleClass": string;
+        "imageAlt": string;
+        "image": string;
+        "imageAnchor": string;
+        "fullWidth": boolean;
+        "sources": string;
+        "tracks": string;
+        "autoplay": boolean;
+        "hasCaption": boolean;
+        "ratio": string;
+        "srPlay": string;
+        "srPause": string;
+        "srVideoPlayer": string;
+        "srVideoAudio": string;
+        "noScript": boolean;
+        "embeddedMedia": boolean;
+    }
+    interface EclMegaMenuAttributes {
+        "styleClass": string;
+        "theme": string;
+        "noScript": boolean;
+        "menuId": string;
+        "ariaLabel": string;
+        "backLabel": string;
+        "toggleLabel": string;
+        "featuredPriority": 'primary' | 'secondary';
+    }
+    interface EclMegaMenuFeaturedListItemAttributes {
+        "theme": string;
+        "styleClass": string;
+        "label": string;
+        "path": string;
+        "image": string;
+        "hasDescription": boolean;
+        "external": boolean;
+    }
+    interface EclMegaMenuItemAttributes {
+        "theme": string;
+        "styleClass": string;
+        "label": string;
+        "path": string;
+        "featuredImage": string;
+        "oneLevelOnly": boolean;
+        "isPromotional": boolean;
+        "external": boolean;
+        "seeAll": boolean;
+        "hasInfo": boolean;
+        "hasFeatured": boolean;
+        "featuredTitle": string;
+        "hasChildren": boolean;
+        "seeAllLabel": string;
+        "infoTitle": string;
+        "isContainer": boolean;
+        "ariaLabel": string;
+    }
+    interface EclMegaMenuSubitemAttributes {
+        "theme": string;
+        "styleClass": string;
+        "label": string;
+        "path": string;
+        "oneLevelOnly": boolean;
+        "external": boolean;
+        "seeAll": boolean;
+        "hasFeatured": boolean;
+        "featuredTitle": string;
+        "hasChildren": boolean;
+        "seeAllLabel": string;
+        "ariaLabel": string;
+    }
+    interface EclMenuAttributes {
+        "theme": string;
+        "menuId": string;
+        "noScript": boolean;
+        "styleClass": string;
+        "maxLines": number;
+        "menuTitle": string;
+        "ariaLabel": string;
+        "closeLabel": string;
+        "backLabel": string;
+        "siteName": string;
+        "previousLabel": string;
+        "nextLabel": string;
+    }
+    interface EclMenuItemAttributes {
+        "theme": string;
+        "styleClass": string;
+        "external": boolean;
+        "current": boolean;
+        "hasChildren": boolean;
+        "child": boolean;
+        "link": string;
+        "triggerAriaLabel": string;
+    }
+    interface EclModalAttributes {
+        "theme": string;
+        "variant": string;
+        "styleClass": string;
+        "withBody": boolean;
+        "withBodyFixed": boolean;
+        "withHeader": boolean;
+        "noScript": boolean;
+        "withFooter": boolean;
+        "toggleId": string;
+        "size": string;
+        "closeLabel": string;
+        "itemId": string;
+    }
+    interface EclNavigationListAttributes {
+        "theme": string;
+        "column": number;
+        "styleClass": string;
+        "colorMode": string;
+    }
+    interface EclNavigationListItemAttributes {
+        "theme": string;
+        "image": string;
+        "imageAlt": string;
+        "styleClass": string;
+        "border": boolean;
+        "colorMode": string;
+        "variant": string;
+    }
+    interface EclNewsTickerAttributes {
+        "theme": string;
+        "styleClass": string;
+        "counterLabel": string;
+        "srNext": string;
+        "srPrev": string;
+        "srPause": string;
+        "srPlay": string;
+        "noScript": boolean;
+    }
+    interface EclNewsTickerItemAttributes {
+        "icon": string;
+        "image": string;
+        "altAttr": string;
+        "titleAttr": string;
+        "theme": string;
+        "styleClass": string;
+        "path": string;
+    }
+    interface EclNotificationAttributes {
+        "theme": string;
+        "variant": string;
+        "styleClass": string;
+        "notificationTitle": string;
+        "closeLabel": string;
+        "noScript": boolean;
+        "withClose": boolean;
+    }
+    interface EclPageHeaderAttributes {
+        "noScript": boolean;
+        "styleClass": string;
+        "theme": string;
+        "colorMode": string;
+        "image": string;
+        "imageAlt": string;
+        "withDescription": boolean;
+        "withMeta": boolean;
+        "withBackground": boolean;
+        "imagePosition": string;
+        "descriptionPosition": string;
+        "expandable": boolean;
+        "expandableContent": boolean;
+        "expandableLabel": string;
+        "expandablePanelId": string;
+        "headerTitle": string;
+        "thumbnail": string;
+        "thumbnailAlt": string;
+        "overlay": string;
+    }
+    interface EclPageHeaderMetaItemAttributes {
+        "styleClass": string;
+        "theme": string;
+        "icon": string;
+    }
+    interface EclPageInformationAttributes {
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclPaginationAttributes {
+        "styleClass": string;
+        "theme": string;
+    }
+    interface EclPaginationItemAttributes {
+        "styleClass": string;
+        "theme": string;
+        "path": string;
+        "ariaLabel": string;
+        "current": boolean;
+        "previous": boolean;
+        "truncation": boolean;
+        "next": boolean;
+    }
+    interface EclPictureAttributes {
+        "styleClass": string;
+        "theme": string;
+        "image": string;
+        "imgClass": string;
+        "imageAlt": string;
+        "imageAnchor": string;
+        "lazy": boolean;
+        "zoom": boolean;
+    }
+    interface EclPopoverAttributes {
+        "theme": string;
+        "styleClass": string;
+        "noScript": boolean;
+        "itemId": string;
+        "toggleLabel": string;
+        "close": boolean;
+        "icon": string;
+        "indicator": boolean;
+        "indicatorValue": number;
+    }
+    interface EclRangeAttributes {
+        "theme": string;
+        "inputId": string;
+        "styleClass": string;
+        "inputClass": string;
+        "noScript": boolean;
+        "disabled": boolean;
+        "required": boolean;
+        "invalid": boolean;
+        "helperId": string;
+        "helperText": string;
+        "placeholder": string;
+        "width": string;
+        "label": string;
+        "name": string;
+        "defaultValue": string;
+        "max": number;
+        "min": number;
+        "step": number;
+        "valueLabel": string;
+        "hasChanged": boolean;
+        "isFocused": boolean;
+    }
+    interface EclRatingFieldAttributes {
+        "theme": string;
+        "inputId": string;
+        "styleClass": string;
+        "disabled": boolean;
+        "required": boolean;
+    }
+    interface EclRatingStarAttributes {
+        "theme": string;
+        "styleClass": string;
+        "itemId": string;
+        "value": string;
+        "name": string;
+        "checked": boolean;
+        "required": boolean;
+        "disabled": boolean;
+        "icon": string;
+        "iconFilled": string;
+        "label": string;
+        "hasChanged": boolean;
+        "isFocused": boolean;
+    }
+    interface EclSearchFormAttributes {
+        "theme": string;
+        "styleClass": string;
+        "disabled": boolean;
+        "required": boolean;
+        "invalid": boolean;
+        "invalidText": string;
+        "helperId": string;
+        "helperText": string;
+        "placeholder": string;
+        "inputId": string;
+        "inputDefaultValue": string;
+        "label": string;
+        "type": string;
+        "name": string;
+        "buttonLabel": string;
+        "buttonClass": string;
+        "buttonAriaLabel": string;
+    }
+    interface EclSelectAttributes {
+        "theme": string;
+        "styleClass": string;
+        "noScript": boolean;
+        "disabled": boolean;
+        "required": boolean;
+        "invalid": boolean;
+        "width": string;
+        "inputId": string;
+        "selectId": string;
+        "buttonLabel": string;
+        "name": string;
+        "multiple": boolean;
+        "multiplePlaceholder": string;
+        "multipleSearchText": string;
+        "multipleSearchNoResultsText": string;
+        "multipleAllText": string;
+        "multipleClearAllText": string;
+        "multipleCloseText": string;
+        "inputValue": string;
+        "hasChanged": boolean;
+    }
+    interface EclSiteHeaderAttributes {
+        "theme": string;
+        "styleClass": string;
+        "noScript": boolean;
+        "loginBlock": boolean;
+        "languageBlock": boolean;
+        "searchBlock": boolean;
+        "logo": string;
+        "logoAlt": string;
+        "logoTitle": string;
+        "logoSize": string;
+        "searchText": string;
+        "searchFormId": string;
+        "searchPlaceholder": string;
+        "language": string;
+        "langCode": string;
+        "loginText": string;
+        "loggedInText": string;
+        "loginLink": string;
+        "logged": boolean;
+        "logoutLink": string;
+        "logoutText": string;
+        "euLabel": string;
+        "nonEuLabel": string;
+        "closeLabel": string;
+        "languageTitle": string;
+        "languageId": string;
+        "languageAriaLabel": string;
+        "siteName": string;
+        "bannerTop": string;
+        "bannerTopLink": string;
+        "siteNameMobileOnly": boolean;
+    }
+    interface EclSocialMediaFollowAttributes {
+        "theme": string;
+        "styleClass": string;
+        "variant": string;
+        "description": string;
+        "position": string;
+        "inlineTitle": boolean;
+    }
+    interface EclSocialMediaFollowItemAttributes {
+        "theme": string;
+        "styleClass": string;
+        "sharePath": string;
+        "icon": string;
+        "hideLabel": boolean;
+        "family": string;
+        "color": string;
+    }
+    interface EclSpacingAttributes {
+        "styleClass": string;
+        "theme": string;
+        "breakpoint": string;
+        "outer": boolean;
+        "inner": boolean;
+        "vertical": boolean;
+        "horizontal": boolean;
+        "direction": string;
+        "value": string;
+    }
+    interface EclSpinnerAttributes {
+        "styleClass": string;
+        "variant": string;
+        "theme": string;
+        "centered": boolean;
+        "visible": boolean;
+        "overlay": boolean;
+        "size": string;
+    }
+    interface EclSplashPageAttributes {
+        "styleClass": string;
+        "theme": string;
+        "elTitle": string;
+        "language": string;
+        "langCode": string;
+        "logo": string;
+        "logoLink": string;
+        "logoAlt": string;
+        "euLabel": string;
+        "nonEuLabel": string;
+    }
+    interface EclSplashPageLanguageItemAttributes {
+        "theme": string;
+        "styleClass": string;
+        "path": string;
+        "langCode": string;
+        "language": string;
+        "active": boolean;
+    }
+    interface EclSpotlightAttributes {
+        "styleClass": string;
+        "theme": string;
+        "hasAnchor": boolean;
+        "colorMode": string;
+        "path": string;
+        "credit": string;
+        "image": string;
+        "imageAlt": string;
+        "fullWidth": boolean;
+        "header": string;
+        "fontSize": string;
+    }
+    interface EclTableAttributes {
+        "elId": string;
+        "theme": string;
+        "noScript": boolean;
+        "colorMode": string;
+        "headers": string;
+        "rows": string;
+        "styleClass": string;
+        "caption": string;
+        "simple": boolean;
+        "zebra": boolean;
+        "sortable": boolean;
+        "labelSortAscending": string;
+        "labelSortDescending": string;
+        "labelSortDefault": string;
+    }
+    interface EclTabsAttributes {
+        "styleClass": string;
+        "noScript": boolean;
+        "theme": string;
+        "colorMode": string;
+        "prevLabel": string;
+        "nextLabel": string;
+        "moreLabel": string;
+        "withoutContent": boolean;
+    }
+    interface EclTabsItemAttributes {
+        "styleClass": string;
+        "theme": string;
+        "path": string;
+        "elId": string;
+        "isCurrent": boolean;
+    }
+    interface EclTagAttributes {
+        "theme": string;
+        "styleClass": string;
+        "external": boolean;
+        "colorMode": string;
+        "variant": string;
+        "url": string;
+        "noWrap": boolean;
+    }
+    interface EclTagSetAttributes {
+        "styleClass": string;
+        "theme": string;
+        "colorMode": string;
+    }
+    interface EclTextAttributes {
+        "styleClass": string;
+        "tag": 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | undefined;
+        "fontStyle": 'italic' | 'lowercase' | 'uppercase' | 'capitalize' | 'overline' | 'underline' | 'strike' | undefined;
+        "theme": string;
+        "alignment": 'left' | 'right' | 'center' | undefined;
+        "color": 'primary' | 'secondary' | 'white' |' success' | 'error' | undefined;
+        "level": 1 | 2 | 3 | 4 | 5 | 6 | undefined;
+        "weight": 'thin' | 'extra-light' | 'light' | 'regular' | 'medium' | 'semi-bold' | 'bold' | 'extra-bold' | 'black' | undefined;
+        "type": 'display' | 'heading' | 'paragraph' | 'microcopy' | undefined;
+        "size": '10xl' | '9xl' | '8xl' |'7xl' | '6xl' | '5xl' | '4xl' | '3xl' | '2xl' | 'xl' | 'l' | 'm' | 's' | 'xs' | undefined;
+        "highlighted": boolean;
+        "enhance": boolean;
+        "enhanceType": 'enhance' | 'strong' | 'light';
+        "colorMode": string;
+        "colorModeTypography": string;
+        "itemId": string;
+    }
+    interface EclTextareaAttributes {
+        "theme": string;
+        "styleClass": string;
+        "disabled": boolean;
+        "required": boolean;
+        "invalid": boolean;
+        "width": string;
+        "textareaId": string;
+        "name": string;
+        "rows": number;
+        "inputId": string;
+        "placeholder": string;
+        "defaultValue": string;
+        "hasChanged": boolean;
+        "isFocused": boolean;
+    }
+    interface EclTimelineAttributes {
+        "theme": string;
+        "styleClass": string;
+        "noScript": boolean;
+        "colorMode": string;
+    }
+    interface EclTimelineItemAttributes {
+        "theme": string;
+        "styleClass": string;
+        "label": string;
+        "type": string;
+        "elId": string;
+        "itemTitle": string;
+        "toggleLabelCollapsed": string;
+        "toggleLabelExpanded": string;
+    }
+    interface EclVideoAttributes {
+        "styleClass": string;
+        "theme": string;
+        "videoTitle": string;
+        "srVideoPlayer": string;
+        "srVideoLabel": string;
+        "poster": string;
+        "controls": boolean;
+        "autoplay": boolean;
+        "loop": boolean;
+        "muted": boolean;
+        "zoom": boolean;
+    }
+
     interface IntrinsicElements {
-        "ecl-accordion": EclAccordion;
-        "ecl-accordion-item": EclAccordionItem;
-        "ecl-banner": EclBanner;
-        "ecl-blockquote": EclBlockquote;
-        "ecl-breadcrumb": EclBreadcrumb;
-        "ecl-breadcrumb-item": EclBreadcrumbItem;
-        "ecl-button": EclButton;
-        "ecl-card": EclCard;
-        "ecl-carousel": EclCarousel;
-        "ecl-carousel-item": EclCarouselItem;
-        "ecl-category-filter": EclCategoryFilter;
-        "ecl-category-filter-item": EclCategoryFilterItem;
-        "ecl-content-block": EclContentBlock;
-        "ecl-content-item": EclContentItem;
-        "ecl-date-block": EclDateBlock;
-        "ecl-datepicker": EclDatepicker;
-        "ecl-description-list": EclDescriptionList;
-        "ecl-description-list-definition": EclDescriptionListDefinition;
-        "ecl-description-list-term": EclDescriptionListTerm;
-        "ecl-divider": EclDivider;
-        "ecl-expandable": EclExpandable;
-        "ecl-fact-figures": EclFactFigures;
-        "ecl-fact-figures-item": EclFactFiguresItem;
-        "ecl-featured-item": EclFeaturedItem;
-        "ecl-file": EclFile;
-        "ecl-file-translations": EclFileTranslations;
-        "ecl-file-translations-item": EclFileTranslationsItem;
-        "ecl-file-upload": EclFileUpload;
-        "ecl-footer-ec": EclFooterEc;
-        "ecl-footer-eu": EclFooterEu;
-        "ecl-footer-item": EclFooterItem;
-        "ecl-form-group": EclFormGroup;
-        "ecl-gallery": EclGallery;
-        "ecl-gallery-item": EclGalleryItem;
-        "ecl-grid": EclGrid;
-        "ecl-icon": EclIcon;
-        "ecl-indicator": EclIndicator;
-        "ecl-inpage-navigation": EclInpageNavigation;
-        "ecl-inpage-navigation-item": EclInpageNavigationItem;
-        "ecl-input": EclInput;
-        "ecl-label": EclLabel;
-        "ecl-language-item": EclLanguageItem;
-        "ecl-link": EclLink;
-        "ecl-list-illustration": EclListIllustration;
-        "ecl-list-illustration-item": EclListIllustrationItem;
-        "ecl-media-container": EclMediaContainer;
-        "ecl-mega-menu": EclMegaMenu;
-        "ecl-mega-menu-featured-list-item": EclMegaMenuFeaturedListItem;
-        "ecl-mega-menu-item": EclMegaMenuItem;
-        "ecl-mega-menu-subitem": EclMegaMenuSubitem;
-        "ecl-menu": EclMenu;
-        "ecl-menu-item": EclMenuItem;
-        "ecl-modal": EclModal;
-        "ecl-navigation-list": EclNavigationList;
-        "ecl-navigation-list-item": EclNavigationListItem;
-        "ecl-news-ticker": EclNewsTicker;
-        "ecl-news-ticker-item": EclNewsTickerItem;
-        "ecl-notification": EclNotification;
-        "ecl-page-header": EclPageHeader;
-        "ecl-page-header-meta-item": EclPageHeaderMetaItem;
-        "ecl-page-information": EclPageInformation;
-        "ecl-pagination": EclPagination;
-        "ecl-pagination-item": EclPaginationItem;
-        "ecl-picture": EclPicture;
-        "ecl-popover": EclPopover;
-        "ecl-range": EclRange;
-        "ecl-rating-field": EclRatingField;
-        "ecl-rating-star": EclRatingStar;
-        "ecl-search-form": EclSearchForm;
-        "ecl-select": EclSelect;
-        "ecl-site-header": EclSiteHeader;
-        "ecl-social-media-follow": EclSocialMediaFollow;
-        "ecl-social-media-follow-item": EclSocialMediaFollowItem;
-        "ecl-spacing": EclSpacing;
-        "ecl-spinner": EclSpinner;
-        "ecl-splash-page": EclSplashPage;
-        "ecl-splash-page-language-item": EclSplashPageLanguageItem;
-        "ecl-spotlight": EclSpotlight;
-        "ecl-table": EclTable;
-        "ecl-tabs": EclTabs;
-        "ecl-tabs-item": EclTabsItem;
-        "ecl-tag": EclTag;
-        "ecl-tag-set": EclTagSet;
-        "ecl-text": EclText;
-        "ecl-textarea": EclTextarea;
-        "ecl-timeline": EclTimeline;
-        "ecl-timeline-item": EclTimelineItem;
-        "ecl-video": EclVideo;
+        "ecl-accordion": Omit<EclAccordion, keyof EclAccordionAttributes> & { [K in keyof EclAccordion & keyof EclAccordionAttributes]?: EclAccordion[K] } & { [K in keyof EclAccordion & keyof EclAccordionAttributes as `attr:${K}`]?: EclAccordionAttributes[K] } & { [K in keyof EclAccordion & keyof EclAccordionAttributes as `prop:${K}`]?: EclAccordion[K] };
+        "ecl-accordion-item": Omit<EclAccordionItem, keyof EclAccordionItemAttributes> & { [K in keyof EclAccordionItem & keyof EclAccordionItemAttributes]?: EclAccordionItem[K] } & { [K in keyof EclAccordionItem & keyof EclAccordionItemAttributes as `attr:${K}`]?: EclAccordionItemAttributes[K] } & { [K in keyof EclAccordionItem & keyof EclAccordionItemAttributes as `prop:${K}`]?: EclAccordionItem[K] };
+        "ecl-banner": Omit<EclBanner, keyof EclBannerAttributes> & { [K in keyof EclBanner & keyof EclBannerAttributes]?: EclBanner[K] } & { [K in keyof EclBanner & keyof EclBannerAttributes as `attr:${K}`]?: EclBannerAttributes[K] } & { [K in keyof EclBanner & keyof EclBannerAttributes as `prop:${K}`]?: EclBanner[K] };
+        "ecl-blockquote": Omit<EclBlockquote, keyof EclBlockquoteAttributes> & { [K in keyof EclBlockquote & keyof EclBlockquoteAttributes]?: EclBlockquote[K] } & { [K in keyof EclBlockquote & keyof EclBlockquoteAttributes as `attr:${K}`]?: EclBlockquoteAttributes[K] } & { [K in keyof EclBlockquote & keyof EclBlockquoteAttributes as `prop:${K}`]?: EclBlockquote[K] };
+        "ecl-breadcrumb": Omit<EclBreadcrumb, keyof EclBreadcrumbAttributes> & { [K in keyof EclBreadcrumb & keyof EclBreadcrumbAttributes]?: EclBreadcrumb[K] } & { [K in keyof EclBreadcrumb & keyof EclBreadcrumbAttributes as `attr:${K}`]?: EclBreadcrumbAttributes[K] } & { [K in keyof EclBreadcrumb & keyof EclBreadcrumbAttributes as `prop:${K}`]?: EclBreadcrumb[K] };
+        "ecl-breadcrumb-item": Omit<EclBreadcrumbItem, keyof EclBreadcrumbItemAttributes> & { [K in keyof EclBreadcrumbItem & keyof EclBreadcrumbItemAttributes]?: EclBreadcrumbItem[K] } & { [K in keyof EclBreadcrumbItem & keyof EclBreadcrumbItemAttributes as `attr:${K}`]?: EclBreadcrumbItemAttributes[K] } & { [K in keyof EclBreadcrumbItem & keyof EclBreadcrumbItemAttributes as `prop:${K}`]?: EclBreadcrumbItem[K] };
+        "ecl-button": Omit<EclButton, keyof EclButtonAttributes> & { [K in keyof EclButton & keyof EclButtonAttributes]?: EclButton[K] } & { [K in keyof EclButton & keyof EclButtonAttributes as `attr:${K}`]?: EclButtonAttributes[K] } & { [K in keyof EclButton & keyof EclButtonAttributes as `prop:${K}`]?: EclButton[K] };
+        "ecl-card": Omit<EclCard, keyof EclCardAttributes> & { [K in keyof EclCard & keyof EclCardAttributes]?: EclCard[K] } & { [K in keyof EclCard & keyof EclCardAttributes as `attr:${K}`]?: EclCardAttributes[K] } & { [K in keyof EclCard & keyof EclCardAttributes as `prop:${K}`]?: EclCard[K] };
+        "ecl-carousel": Omit<EclCarousel, keyof EclCarouselAttributes> & { [K in keyof EclCarousel & keyof EclCarouselAttributes]?: EclCarousel[K] } & { [K in keyof EclCarousel & keyof EclCarouselAttributes as `attr:${K}`]?: EclCarouselAttributes[K] } & { [K in keyof EclCarousel & keyof EclCarouselAttributes as `prop:${K}`]?: EclCarousel[K] };
+        "ecl-carousel-item": Omit<EclCarouselItem, keyof EclCarouselItemAttributes> & { [K in keyof EclCarouselItem & keyof EclCarouselItemAttributes]?: EclCarouselItem[K] } & { [K in keyof EclCarouselItem & keyof EclCarouselItemAttributes as `attr:${K}`]?: EclCarouselItemAttributes[K] } & { [K in keyof EclCarouselItem & keyof EclCarouselItemAttributes as `prop:${K}`]?: EclCarouselItem[K] };
+        "ecl-category-filter": Omit<EclCategoryFilter, keyof EclCategoryFilterAttributes> & { [K in keyof EclCategoryFilter & keyof EclCategoryFilterAttributes]?: EclCategoryFilter[K] } & { [K in keyof EclCategoryFilter & keyof EclCategoryFilterAttributes as `attr:${K}`]?: EclCategoryFilterAttributes[K] } & { [K in keyof EclCategoryFilter & keyof EclCategoryFilterAttributes as `prop:${K}`]?: EclCategoryFilter[K] };
+        "ecl-category-filter-item": Omit<EclCategoryFilterItem, keyof EclCategoryFilterItemAttributes> & { [K in keyof EclCategoryFilterItem & keyof EclCategoryFilterItemAttributes]?: EclCategoryFilterItem[K] } & { [K in keyof EclCategoryFilterItem & keyof EclCategoryFilterItemAttributes as `attr:${K}`]?: EclCategoryFilterItemAttributes[K] } & { [K in keyof EclCategoryFilterItem & keyof EclCategoryFilterItemAttributes as `prop:${K}`]?: EclCategoryFilterItem[K] };
+        "ecl-content-block": Omit<EclContentBlock, keyof EclContentBlockAttributes> & { [K in keyof EclContentBlock & keyof EclContentBlockAttributes]?: EclContentBlock[K] } & { [K in keyof EclContentBlock & keyof EclContentBlockAttributes as `attr:${K}`]?: EclContentBlockAttributes[K] } & { [K in keyof EclContentBlock & keyof EclContentBlockAttributes as `prop:${K}`]?: EclContentBlock[K] };
+        "ecl-content-item": Omit<EclContentItem, keyof EclContentItemAttributes> & { [K in keyof EclContentItem & keyof EclContentItemAttributes]?: EclContentItem[K] } & { [K in keyof EclContentItem & keyof EclContentItemAttributes as `attr:${K}`]?: EclContentItemAttributes[K] } & { [K in keyof EclContentItem & keyof EclContentItemAttributes as `prop:${K}`]?: EclContentItem[K] };
+        "ecl-date-block": Omit<EclDateBlock, keyof EclDateBlockAttributes> & { [K in keyof EclDateBlock & keyof EclDateBlockAttributes]?: EclDateBlock[K] } & { [K in keyof EclDateBlock & keyof EclDateBlockAttributes as `attr:${K}`]?: EclDateBlockAttributes[K] } & { [K in keyof EclDateBlock & keyof EclDateBlockAttributes as `prop:${K}`]?: EclDateBlock[K] };
+        "ecl-datepicker": Omit<EclDatepicker, keyof EclDatepickerAttributes> & { [K in keyof EclDatepicker & keyof EclDatepickerAttributes]?: EclDatepicker[K] } & { [K in keyof EclDatepicker & keyof EclDatepickerAttributes as `attr:${K}`]?: EclDatepickerAttributes[K] } & { [K in keyof EclDatepicker & keyof EclDatepickerAttributes as `prop:${K}`]?: EclDatepicker[K] };
+        "ecl-description-list": Omit<EclDescriptionList, keyof EclDescriptionListAttributes> & { [K in keyof EclDescriptionList & keyof EclDescriptionListAttributes]?: EclDescriptionList[K] } & { [K in keyof EclDescriptionList & keyof EclDescriptionListAttributes as `attr:${K}`]?: EclDescriptionListAttributes[K] } & { [K in keyof EclDescriptionList & keyof EclDescriptionListAttributes as `prop:${K}`]?: EclDescriptionList[K] };
+        "ecl-description-list-definition": Omit<EclDescriptionListDefinition, keyof EclDescriptionListDefinitionAttributes> & { [K in keyof EclDescriptionListDefinition & keyof EclDescriptionListDefinitionAttributes]?: EclDescriptionListDefinition[K] } & { [K in keyof EclDescriptionListDefinition & keyof EclDescriptionListDefinitionAttributes as `attr:${K}`]?: EclDescriptionListDefinitionAttributes[K] } & { [K in keyof EclDescriptionListDefinition & keyof EclDescriptionListDefinitionAttributes as `prop:${K}`]?: EclDescriptionListDefinition[K] };
+        "ecl-description-list-term": Omit<EclDescriptionListTerm, keyof EclDescriptionListTermAttributes> & { [K in keyof EclDescriptionListTerm & keyof EclDescriptionListTermAttributes]?: EclDescriptionListTerm[K] } & { [K in keyof EclDescriptionListTerm & keyof EclDescriptionListTermAttributes as `attr:${K}`]?: EclDescriptionListTermAttributes[K] } & { [K in keyof EclDescriptionListTerm & keyof EclDescriptionListTermAttributes as `prop:${K}`]?: EclDescriptionListTerm[K] };
+        "ecl-divider": Omit<EclDivider, keyof EclDividerAttributes> & { [K in keyof EclDivider & keyof EclDividerAttributes]?: EclDivider[K] } & { [K in keyof EclDivider & keyof EclDividerAttributes as `attr:${K}`]?: EclDividerAttributes[K] } & { [K in keyof EclDivider & keyof EclDividerAttributes as `prop:${K}`]?: EclDivider[K] };
+        "ecl-expandable": Omit<EclExpandable, keyof EclExpandableAttributes> & { [K in keyof EclExpandable & keyof EclExpandableAttributes]?: EclExpandable[K] } & { [K in keyof EclExpandable & keyof EclExpandableAttributes as `attr:${K}`]?: EclExpandableAttributes[K] } & { [K in keyof EclExpandable & keyof EclExpandableAttributes as `prop:${K}`]?: EclExpandable[K] };
+        "ecl-fact-figures": Omit<EclFactFigures, keyof EclFactFiguresAttributes> & { [K in keyof EclFactFigures & keyof EclFactFiguresAttributes]?: EclFactFigures[K] } & { [K in keyof EclFactFigures & keyof EclFactFiguresAttributes as `attr:${K}`]?: EclFactFiguresAttributes[K] } & { [K in keyof EclFactFigures & keyof EclFactFiguresAttributes as `prop:${K}`]?: EclFactFigures[K] };
+        "ecl-fact-figures-item": Omit<EclFactFiguresItem, keyof EclFactFiguresItemAttributes> & { [K in keyof EclFactFiguresItem & keyof EclFactFiguresItemAttributes]?: EclFactFiguresItem[K] } & { [K in keyof EclFactFiguresItem & keyof EclFactFiguresItemAttributes as `attr:${K}`]?: EclFactFiguresItemAttributes[K] } & { [K in keyof EclFactFiguresItem & keyof EclFactFiguresItemAttributes as `prop:${K}`]?: EclFactFiguresItem[K] };
+        "ecl-featured-item": Omit<EclFeaturedItem, keyof EclFeaturedItemAttributes> & { [K in keyof EclFeaturedItem & keyof EclFeaturedItemAttributes]?: EclFeaturedItem[K] } & { [K in keyof EclFeaturedItem & keyof EclFeaturedItemAttributes as `attr:${K}`]?: EclFeaturedItemAttributes[K] } & { [K in keyof EclFeaturedItem & keyof EclFeaturedItemAttributes as `prop:${K}`]?: EclFeaturedItem[K] };
+        "ecl-file": Omit<EclFile, keyof EclFileAttributes> & { [K in keyof EclFile & keyof EclFileAttributes]?: EclFile[K] } & { [K in keyof EclFile & keyof EclFileAttributes as `attr:${K}`]?: EclFileAttributes[K] } & { [K in keyof EclFile & keyof EclFileAttributes as `prop:${K}`]?: EclFile[K] };
+        "ecl-file-translations": Omit<EclFileTranslations, keyof EclFileTranslationsAttributes> & { [K in keyof EclFileTranslations & keyof EclFileTranslationsAttributes]?: EclFileTranslations[K] } & { [K in keyof EclFileTranslations & keyof EclFileTranslationsAttributes as `attr:${K}`]?: EclFileTranslationsAttributes[K] } & { [K in keyof EclFileTranslations & keyof EclFileTranslationsAttributes as `prop:${K}`]?: EclFileTranslations[K] };
+        "ecl-file-translations-item": Omit<EclFileTranslationsItem, keyof EclFileTranslationsItemAttributes> & { [K in keyof EclFileTranslationsItem & keyof EclFileTranslationsItemAttributes]?: EclFileTranslationsItem[K] } & { [K in keyof EclFileTranslationsItem & keyof EclFileTranslationsItemAttributes as `attr:${K}`]?: EclFileTranslationsItemAttributes[K] } & { [K in keyof EclFileTranslationsItem & keyof EclFileTranslationsItemAttributes as `prop:${K}`]?: EclFileTranslationsItem[K] };
+        "ecl-file-upload": Omit<EclFileUpload, keyof EclFileUploadAttributes> & { [K in keyof EclFileUpload & keyof EclFileUploadAttributes]?: EclFileUpload[K] } & { [K in keyof EclFileUpload & keyof EclFileUploadAttributes as `attr:${K}`]?: EclFileUploadAttributes[K] } & { [K in keyof EclFileUpload & keyof EclFileUploadAttributes as `prop:${K}`]?: EclFileUpload[K] };
+        "ecl-footer-ec": Omit<EclFooterEc, keyof EclFooterEcAttributes> & { [K in keyof EclFooterEc & keyof EclFooterEcAttributes]?: EclFooterEc[K] } & { [K in keyof EclFooterEc & keyof EclFooterEcAttributes as `attr:${K}`]?: EclFooterEcAttributes[K] } & { [K in keyof EclFooterEc & keyof EclFooterEcAttributes as `prop:${K}`]?: EclFooterEc[K] };
+        "ecl-footer-eu": Omit<EclFooterEu, keyof EclFooterEuAttributes> & { [K in keyof EclFooterEu & keyof EclFooterEuAttributes]?: EclFooterEu[K] } & { [K in keyof EclFooterEu & keyof EclFooterEuAttributes as `attr:${K}`]?: EclFooterEuAttributes[K] } & { [K in keyof EclFooterEu & keyof EclFooterEuAttributes as `prop:${K}`]?: EclFooterEu[K] };
+        "ecl-footer-item": Omit<EclFooterItem, keyof EclFooterItemAttributes> & { [K in keyof EclFooterItem & keyof EclFooterItemAttributes]?: EclFooterItem[K] } & { [K in keyof EclFooterItem & keyof EclFooterItemAttributes as `attr:${K}`]?: EclFooterItemAttributes[K] } & { [K in keyof EclFooterItem & keyof EclFooterItemAttributes as `prop:${K}`]?: EclFooterItem[K] };
+        "ecl-form-group": Omit<EclFormGroup, keyof EclFormGroupAttributes> & { [K in keyof EclFormGroup & keyof EclFormGroupAttributes]?: EclFormGroup[K] } & { [K in keyof EclFormGroup & keyof EclFormGroupAttributes as `attr:${K}`]?: EclFormGroupAttributes[K] } & { [K in keyof EclFormGroup & keyof EclFormGroupAttributes as `prop:${K}`]?: EclFormGroup[K] };
+        "ecl-gallery": Omit<EclGallery, keyof EclGalleryAttributes> & { [K in keyof EclGallery & keyof EclGalleryAttributes]?: EclGallery[K] } & { [K in keyof EclGallery & keyof EclGalleryAttributes as `attr:${K}`]?: EclGalleryAttributes[K] } & { [K in keyof EclGallery & keyof EclGalleryAttributes as `prop:${K}`]?: EclGallery[K] };
+        "ecl-gallery-item": Omit<EclGalleryItem, keyof EclGalleryItemAttributes> & { [K in keyof EclGalleryItem & keyof EclGalleryItemAttributes]?: EclGalleryItem[K] } & { [K in keyof EclGalleryItem & keyof EclGalleryItemAttributes as `attr:${K}`]?: EclGalleryItemAttributes[K] } & { [K in keyof EclGalleryItem & keyof EclGalleryItemAttributes as `prop:${K}`]?: EclGalleryItem[K] };
+        "ecl-grid": Omit<EclGrid, keyof EclGridAttributes> & { [K in keyof EclGrid & keyof EclGridAttributes]?: EclGrid[K] } & { [K in keyof EclGrid & keyof EclGridAttributes as `attr:${K}`]?: EclGridAttributes[K] } & { [K in keyof EclGrid & keyof EclGridAttributes as `prop:${K}`]?: EclGrid[K] };
+        "ecl-icon": Omit<EclIcon, keyof EclIconAttributes> & { [K in keyof EclIcon & keyof EclIconAttributes]?: EclIcon[K] } & { [K in keyof EclIcon & keyof EclIconAttributes as `attr:${K}`]?: EclIconAttributes[K] } & { [K in keyof EclIcon & keyof EclIconAttributes as `prop:${K}`]?: EclIcon[K] };
+        "ecl-indicator": Omit<EclIndicator, keyof EclIndicatorAttributes> & { [K in keyof EclIndicator & keyof EclIndicatorAttributes]?: EclIndicator[K] } & { [K in keyof EclIndicator & keyof EclIndicatorAttributes as `attr:${K}`]?: EclIndicatorAttributes[K] } & { [K in keyof EclIndicator & keyof EclIndicatorAttributes as `prop:${K}`]?: EclIndicator[K] };
+        "ecl-inpage-navigation": Omit<EclInpageNavigation, keyof EclInpageNavigationAttributes> & { [K in keyof EclInpageNavigation & keyof EclInpageNavigationAttributes]?: EclInpageNavigation[K] } & { [K in keyof EclInpageNavigation & keyof EclInpageNavigationAttributes as `attr:${K}`]?: EclInpageNavigationAttributes[K] } & { [K in keyof EclInpageNavigation & keyof EclInpageNavigationAttributes as `prop:${K}`]?: EclInpageNavigation[K] };
+        "ecl-inpage-navigation-item": Omit<EclInpageNavigationItem, keyof EclInpageNavigationItemAttributes> & { [K in keyof EclInpageNavigationItem & keyof EclInpageNavigationItemAttributes]?: EclInpageNavigationItem[K] } & { [K in keyof EclInpageNavigationItem & keyof EclInpageNavigationItemAttributes as `attr:${K}`]?: EclInpageNavigationItemAttributes[K] } & { [K in keyof EclInpageNavigationItem & keyof EclInpageNavigationItemAttributes as `prop:${K}`]?: EclInpageNavigationItem[K] };
+        "ecl-input": Omit<EclInput, keyof EclInputAttributes> & { [K in keyof EclInput & keyof EclInputAttributes]?: EclInput[K] } & { [K in keyof EclInput & keyof EclInputAttributes as `attr:${K}`]?: EclInputAttributes[K] } & { [K in keyof EclInput & keyof EclInputAttributes as `prop:${K}`]?: EclInput[K] };
+        "ecl-label": Omit<EclLabel, keyof EclLabelAttributes> & { [K in keyof EclLabel & keyof EclLabelAttributes]?: EclLabel[K] } & { [K in keyof EclLabel & keyof EclLabelAttributes as `attr:${K}`]?: EclLabelAttributes[K] } & { [K in keyof EclLabel & keyof EclLabelAttributes as `prop:${K}`]?: EclLabel[K] };
+        "ecl-language-item": Omit<EclLanguageItem, keyof EclLanguageItemAttributes> & { [K in keyof EclLanguageItem & keyof EclLanguageItemAttributes]?: EclLanguageItem[K] } & { [K in keyof EclLanguageItem & keyof EclLanguageItemAttributes as `attr:${K}`]?: EclLanguageItemAttributes[K] } & { [K in keyof EclLanguageItem & keyof EclLanguageItemAttributes as `prop:${K}`]?: EclLanguageItem[K] };
+        "ecl-link": Omit<EclLink, keyof EclLinkAttributes> & { [K in keyof EclLink & keyof EclLinkAttributes]?: EclLink[K] } & { [K in keyof EclLink & keyof EclLinkAttributes as `attr:${K}`]?: EclLinkAttributes[K] } & { [K in keyof EclLink & keyof EclLinkAttributes as `prop:${K}`]?: EclLink[K] };
+        "ecl-list-illustration": Omit<EclListIllustration, keyof EclListIllustrationAttributes> & { [K in keyof EclListIllustration & keyof EclListIllustrationAttributes]?: EclListIllustration[K] } & { [K in keyof EclListIllustration & keyof EclListIllustrationAttributes as `attr:${K}`]?: EclListIllustrationAttributes[K] } & { [K in keyof EclListIllustration & keyof EclListIllustrationAttributes as `prop:${K}`]?: EclListIllustration[K] };
+        "ecl-list-illustration-item": Omit<EclListIllustrationItem, keyof EclListIllustrationItemAttributes> & { [K in keyof EclListIllustrationItem & keyof EclListIllustrationItemAttributes]?: EclListIllustrationItem[K] } & { [K in keyof EclListIllustrationItem & keyof EclListIllustrationItemAttributes as `attr:${K}`]?: EclListIllustrationItemAttributes[K] } & { [K in keyof EclListIllustrationItem & keyof EclListIllustrationItemAttributes as `prop:${K}`]?: EclListIllustrationItem[K] };
+        "ecl-media-container": Omit<EclMediaContainer, keyof EclMediaContainerAttributes> & { [K in keyof EclMediaContainer & keyof EclMediaContainerAttributes]?: EclMediaContainer[K] } & { [K in keyof EclMediaContainer & keyof EclMediaContainerAttributes as `attr:${K}`]?: EclMediaContainerAttributes[K] } & { [K in keyof EclMediaContainer & keyof EclMediaContainerAttributes as `prop:${K}`]?: EclMediaContainer[K] };
+        "ecl-mega-menu": Omit<EclMegaMenu, keyof EclMegaMenuAttributes> & { [K in keyof EclMegaMenu & keyof EclMegaMenuAttributes]?: EclMegaMenu[K] } & { [K in keyof EclMegaMenu & keyof EclMegaMenuAttributes as `attr:${K}`]?: EclMegaMenuAttributes[K] } & { [K in keyof EclMegaMenu & keyof EclMegaMenuAttributes as `prop:${K}`]?: EclMegaMenu[K] };
+        "ecl-mega-menu-featured-list-item": Omit<EclMegaMenuFeaturedListItem, keyof EclMegaMenuFeaturedListItemAttributes> & { [K in keyof EclMegaMenuFeaturedListItem & keyof EclMegaMenuFeaturedListItemAttributes]?: EclMegaMenuFeaturedListItem[K] } & { [K in keyof EclMegaMenuFeaturedListItem & keyof EclMegaMenuFeaturedListItemAttributes as `attr:${K}`]?: EclMegaMenuFeaturedListItemAttributes[K] } & { [K in keyof EclMegaMenuFeaturedListItem & keyof EclMegaMenuFeaturedListItemAttributes as `prop:${K}`]?: EclMegaMenuFeaturedListItem[K] };
+        "ecl-mega-menu-item": Omit<EclMegaMenuItem, keyof EclMegaMenuItemAttributes> & { [K in keyof EclMegaMenuItem & keyof EclMegaMenuItemAttributes]?: EclMegaMenuItem[K] } & { [K in keyof EclMegaMenuItem & keyof EclMegaMenuItemAttributes as `attr:${K}`]?: EclMegaMenuItemAttributes[K] } & { [K in keyof EclMegaMenuItem & keyof EclMegaMenuItemAttributes as `prop:${K}`]?: EclMegaMenuItem[K] } & OneOf<"label", EclMegaMenuItem["label"], EclMegaMenuItemAttributes["label"]>;
+        "ecl-mega-menu-subitem": Omit<EclMegaMenuSubitem, keyof EclMegaMenuSubitemAttributes> & { [K in keyof EclMegaMenuSubitem & keyof EclMegaMenuSubitemAttributes]?: EclMegaMenuSubitem[K] } & { [K in keyof EclMegaMenuSubitem & keyof EclMegaMenuSubitemAttributes as `attr:${K}`]?: EclMegaMenuSubitemAttributes[K] } & { [K in keyof EclMegaMenuSubitem & keyof EclMegaMenuSubitemAttributes as `prop:${K}`]?: EclMegaMenuSubitem[K] } & OneOf<"label", EclMegaMenuSubitem["label"], EclMegaMenuSubitemAttributes["label"]>;
+        "ecl-menu": Omit<EclMenu, keyof EclMenuAttributes> & { [K in keyof EclMenu & keyof EclMenuAttributes]?: EclMenu[K] } & { [K in keyof EclMenu & keyof EclMenuAttributes as `attr:${K}`]?: EclMenuAttributes[K] } & { [K in keyof EclMenu & keyof EclMenuAttributes as `prop:${K}`]?: EclMenu[K] };
+        "ecl-menu-item": Omit<EclMenuItem, keyof EclMenuItemAttributes> & { [K in keyof EclMenuItem & keyof EclMenuItemAttributes]?: EclMenuItem[K] } & { [K in keyof EclMenuItem & keyof EclMenuItemAttributes as `attr:${K}`]?: EclMenuItemAttributes[K] } & { [K in keyof EclMenuItem & keyof EclMenuItemAttributes as `prop:${K}`]?: EclMenuItem[K] };
+        "ecl-modal": Omit<EclModal, keyof EclModalAttributes> & { [K in keyof EclModal & keyof EclModalAttributes]?: EclModal[K] } & { [K in keyof EclModal & keyof EclModalAttributes as `attr:${K}`]?: EclModalAttributes[K] } & { [K in keyof EclModal & keyof EclModalAttributes as `prop:${K}`]?: EclModal[K] };
+        "ecl-navigation-list": Omit<EclNavigationList, keyof EclNavigationListAttributes> & { [K in keyof EclNavigationList & keyof EclNavigationListAttributes]?: EclNavigationList[K] } & { [K in keyof EclNavigationList & keyof EclNavigationListAttributes as `attr:${K}`]?: EclNavigationListAttributes[K] } & { [K in keyof EclNavigationList & keyof EclNavigationListAttributes as `prop:${K}`]?: EclNavigationList[K] };
+        "ecl-navigation-list-item": Omit<EclNavigationListItem, keyof EclNavigationListItemAttributes> & { [K in keyof EclNavigationListItem & keyof EclNavigationListItemAttributes]?: EclNavigationListItem[K] } & { [K in keyof EclNavigationListItem & keyof EclNavigationListItemAttributes as `attr:${K}`]?: EclNavigationListItemAttributes[K] } & { [K in keyof EclNavigationListItem & keyof EclNavigationListItemAttributes as `prop:${K}`]?: EclNavigationListItem[K] };
+        "ecl-news-ticker": Omit<EclNewsTicker, keyof EclNewsTickerAttributes> & { [K in keyof EclNewsTicker & keyof EclNewsTickerAttributes]?: EclNewsTicker[K] } & { [K in keyof EclNewsTicker & keyof EclNewsTickerAttributes as `attr:${K}`]?: EclNewsTickerAttributes[K] } & { [K in keyof EclNewsTicker & keyof EclNewsTickerAttributes as `prop:${K}`]?: EclNewsTicker[K] };
+        "ecl-news-ticker-item": Omit<EclNewsTickerItem, keyof EclNewsTickerItemAttributes> & { [K in keyof EclNewsTickerItem & keyof EclNewsTickerItemAttributes]?: EclNewsTickerItem[K] } & { [K in keyof EclNewsTickerItem & keyof EclNewsTickerItemAttributes as `attr:${K}`]?: EclNewsTickerItemAttributes[K] } & { [K in keyof EclNewsTickerItem & keyof EclNewsTickerItemAttributes as `prop:${K}`]?: EclNewsTickerItem[K] };
+        "ecl-notification": Omit<EclNotification, keyof EclNotificationAttributes> & { [K in keyof EclNotification & keyof EclNotificationAttributes]?: EclNotification[K] } & { [K in keyof EclNotification & keyof EclNotificationAttributes as `attr:${K}`]?: EclNotificationAttributes[K] } & { [K in keyof EclNotification & keyof EclNotificationAttributes as `prop:${K}`]?: EclNotification[K] };
+        "ecl-page-header": Omit<EclPageHeader, keyof EclPageHeaderAttributes> & { [K in keyof EclPageHeader & keyof EclPageHeaderAttributes]?: EclPageHeader[K] } & { [K in keyof EclPageHeader & keyof EclPageHeaderAttributes as `attr:${K}`]?: EclPageHeaderAttributes[K] } & { [K in keyof EclPageHeader & keyof EclPageHeaderAttributes as `prop:${K}`]?: EclPageHeader[K] };
+        "ecl-page-header-meta-item": Omit<EclPageHeaderMetaItem, keyof EclPageHeaderMetaItemAttributes> & { [K in keyof EclPageHeaderMetaItem & keyof EclPageHeaderMetaItemAttributes]?: EclPageHeaderMetaItem[K] } & { [K in keyof EclPageHeaderMetaItem & keyof EclPageHeaderMetaItemAttributes as `attr:${K}`]?: EclPageHeaderMetaItemAttributes[K] } & { [K in keyof EclPageHeaderMetaItem & keyof EclPageHeaderMetaItemAttributes as `prop:${K}`]?: EclPageHeaderMetaItem[K] };
+        "ecl-page-information": Omit<EclPageInformation, keyof EclPageInformationAttributes> & { [K in keyof EclPageInformation & keyof EclPageInformationAttributes]?: EclPageInformation[K] } & { [K in keyof EclPageInformation & keyof EclPageInformationAttributes as `attr:${K}`]?: EclPageInformationAttributes[K] } & { [K in keyof EclPageInformation & keyof EclPageInformationAttributes as `prop:${K}`]?: EclPageInformation[K] };
+        "ecl-pagination": Omit<EclPagination, keyof EclPaginationAttributes> & { [K in keyof EclPagination & keyof EclPaginationAttributes]?: EclPagination[K] } & { [K in keyof EclPagination & keyof EclPaginationAttributes as `attr:${K}`]?: EclPaginationAttributes[K] } & { [K in keyof EclPagination & keyof EclPaginationAttributes as `prop:${K}`]?: EclPagination[K] };
+        "ecl-pagination-item": Omit<EclPaginationItem, keyof EclPaginationItemAttributes> & { [K in keyof EclPaginationItem & keyof EclPaginationItemAttributes]?: EclPaginationItem[K] } & { [K in keyof EclPaginationItem & keyof EclPaginationItemAttributes as `attr:${K}`]?: EclPaginationItemAttributes[K] } & { [K in keyof EclPaginationItem & keyof EclPaginationItemAttributes as `prop:${K}`]?: EclPaginationItem[K] };
+        "ecl-picture": Omit<EclPicture, keyof EclPictureAttributes> & { [K in keyof EclPicture & keyof EclPictureAttributes]?: EclPicture[K] } & { [K in keyof EclPicture & keyof EclPictureAttributes as `attr:${K}`]?: EclPictureAttributes[K] } & { [K in keyof EclPicture & keyof EclPictureAttributes as `prop:${K}`]?: EclPicture[K] };
+        "ecl-popover": Omit<EclPopover, keyof EclPopoverAttributes> & { [K in keyof EclPopover & keyof EclPopoverAttributes]?: EclPopover[K] } & { [K in keyof EclPopover & keyof EclPopoverAttributes as `attr:${K}`]?: EclPopoverAttributes[K] } & { [K in keyof EclPopover & keyof EclPopoverAttributes as `prop:${K}`]?: EclPopover[K] };
+        "ecl-range": Omit<EclRange, keyof EclRangeAttributes> & { [K in keyof EclRange & keyof EclRangeAttributes]?: EclRange[K] } & { [K in keyof EclRange & keyof EclRangeAttributes as `attr:${K}`]?: EclRangeAttributes[K] } & { [K in keyof EclRange & keyof EclRangeAttributes as `prop:${K}`]?: EclRange[K] };
+        "ecl-rating-field": Omit<EclRatingField, keyof EclRatingFieldAttributes> & { [K in keyof EclRatingField & keyof EclRatingFieldAttributes]?: EclRatingField[K] } & { [K in keyof EclRatingField & keyof EclRatingFieldAttributes as `attr:${K}`]?: EclRatingFieldAttributes[K] } & { [K in keyof EclRatingField & keyof EclRatingFieldAttributes as `prop:${K}`]?: EclRatingField[K] };
+        "ecl-rating-star": Omit<EclRatingStar, keyof EclRatingStarAttributes> & { [K in keyof EclRatingStar & keyof EclRatingStarAttributes]?: EclRatingStar[K] } & { [K in keyof EclRatingStar & keyof EclRatingStarAttributes as `attr:${K}`]?: EclRatingStarAttributes[K] } & { [K in keyof EclRatingStar & keyof EclRatingStarAttributes as `prop:${K}`]?: EclRatingStar[K] };
+        "ecl-search-form": Omit<EclSearchForm, keyof EclSearchFormAttributes> & { [K in keyof EclSearchForm & keyof EclSearchFormAttributes]?: EclSearchForm[K] } & { [K in keyof EclSearchForm & keyof EclSearchFormAttributes as `attr:${K}`]?: EclSearchFormAttributes[K] } & { [K in keyof EclSearchForm & keyof EclSearchFormAttributes as `prop:${K}`]?: EclSearchForm[K] };
+        "ecl-select": Omit<EclSelect, keyof EclSelectAttributes> & { [K in keyof EclSelect & keyof EclSelectAttributes]?: EclSelect[K] } & { [K in keyof EclSelect & keyof EclSelectAttributes as `attr:${K}`]?: EclSelectAttributes[K] } & { [K in keyof EclSelect & keyof EclSelectAttributes as `prop:${K}`]?: EclSelect[K] };
+        "ecl-site-header": Omit<EclSiteHeader, keyof EclSiteHeaderAttributes> & { [K in keyof EclSiteHeader & keyof EclSiteHeaderAttributes]?: EclSiteHeader[K] } & { [K in keyof EclSiteHeader & keyof EclSiteHeaderAttributes as `attr:${K}`]?: EclSiteHeaderAttributes[K] } & { [K in keyof EclSiteHeader & keyof EclSiteHeaderAttributes as `prop:${K}`]?: EclSiteHeader[K] };
+        "ecl-social-media-follow": Omit<EclSocialMediaFollow, keyof EclSocialMediaFollowAttributes> & { [K in keyof EclSocialMediaFollow & keyof EclSocialMediaFollowAttributes]?: EclSocialMediaFollow[K] } & { [K in keyof EclSocialMediaFollow & keyof EclSocialMediaFollowAttributes as `attr:${K}`]?: EclSocialMediaFollowAttributes[K] } & { [K in keyof EclSocialMediaFollow & keyof EclSocialMediaFollowAttributes as `prop:${K}`]?: EclSocialMediaFollow[K] };
+        "ecl-social-media-follow-item": Omit<EclSocialMediaFollowItem, keyof EclSocialMediaFollowItemAttributes> & { [K in keyof EclSocialMediaFollowItem & keyof EclSocialMediaFollowItemAttributes]?: EclSocialMediaFollowItem[K] } & { [K in keyof EclSocialMediaFollowItem & keyof EclSocialMediaFollowItemAttributes as `attr:${K}`]?: EclSocialMediaFollowItemAttributes[K] } & { [K in keyof EclSocialMediaFollowItem & keyof EclSocialMediaFollowItemAttributes as `prop:${K}`]?: EclSocialMediaFollowItem[K] };
+        "ecl-spacing": Omit<EclSpacing, keyof EclSpacingAttributes> & { [K in keyof EclSpacing & keyof EclSpacingAttributes]?: EclSpacing[K] } & { [K in keyof EclSpacing & keyof EclSpacingAttributes as `attr:${K}`]?: EclSpacingAttributes[K] } & { [K in keyof EclSpacing & keyof EclSpacingAttributes as `prop:${K}`]?: EclSpacing[K] };
+        "ecl-spinner": Omit<EclSpinner, keyof EclSpinnerAttributes> & { [K in keyof EclSpinner & keyof EclSpinnerAttributes]?: EclSpinner[K] } & { [K in keyof EclSpinner & keyof EclSpinnerAttributes as `attr:${K}`]?: EclSpinnerAttributes[K] } & { [K in keyof EclSpinner & keyof EclSpinnerAttributes as `prop:${K}`]?: EclSpinner[K] };
+        "ecl-splash-page": Omit<EclSplashPage, keyof EclSplashPageAttributes> & { [K in keyof EclSplashPage & keyof EclSplashPageAttributes]?: EclSplashPage[K] } & { [K in keyof EclSplashPage & keyof EclSplashPageAttributes as `attr:${K}`]?: EclSplashPageAttributes[K] } & { [K in keyof EclSplashPage & keyof EclSplashPageAttributes as `prop:${K}`]?: EclSplashPage[K] };
+        "ecl-splash-page-language-item": Omit<EclSplashPageLanguageItem, keyof EclSplashPageLanguageItemAttributes> & { [K in keyof EclSplashPageLanguageItem & keyof EclSplashPageLanguageItemAttributes]?: EclSplashPageLanguageItem[K] } & { [K in keyof EclSplashPageLanguageItem & keyof EclSplashPageLanguageItemAttributes as `attr:${K}`]?: EclSplashPageLanguageItemAttributes[K] } & { [K in keyof EclSplashPageLanguageItem & keyof EclSplashPageLanguageItemAttributes as `prop:${K}`]?: EclSplashPageLanguageItem[K] };
+        "ecl-spotlight": Omit<EclSpotlight, keyof EclSpotlightAttributes> & { [K in keyof EclSpotlight & keyof EclSpotlightAttributes]?: EclSpotlight[K] } & { [K in keyof EclSpotlight & keyof EclSpotlightAttributes as `attr:${K}`]?: EclSpotlightAttributes[K] } & { [K in keyof EclSpotlight & keyof EclSpotlightAttributes as `prop:${K}`]?: EclSpotlight[K] };
+        "ecl-table": Omit<EclTable, keyof EclTableAttributes> & { [K in keyof EclTable & keyof EclTableAttributes]?: EclTable[K] } & { [K in keyof EclTable & keyof EclTableAttributes as `attr:${K}`]?: EclTableAttributes[K] } & { [K in keyof EclTable & keyof EclTableAttributes as `prop:${K}`]?: EclTable[K] };
+        "ecl-tabs": Omit<EclTabs, keyof EclTabsAttributes> & { [K in keyof EclTabs & keyof EclTabsAttributes]?: EclTabs[K] } & { [K in keyof EclTabs & keyof EclTabsAttributes as `attr:${K}`]?: EclTabsAttributes[K] } & { [K in keyof EclTabs & keyof EclTabsAttributes as `prop:${K}`]?: EclTabs[K] };
+        "ecl-tabs-item": Omit<EclTabsItem, keyof EclTabsItemAttributes> & { [K in keyof EclTabsItem & keyof EclTabsItemAttributes]?: EclTabsItem[K] } & { [K in keyof EclTabsItem & keyof EclTabsItemAttributes as `attr:${K}`]?: EclTabsItemAttributes[K] } & { [K in keyof EclTabsItem & keyof EclTabsItemAttributes as `prop:${K}`]?: EclTabsItem[K] };
+        "ecl-tag": Omit<EclTag, keyof EclTagAttributes> & { [K in keyof EclTag & keyof EclTagAttributes]?: EclTag[K] } & { [K in keyof EclTag & keyof EclTagAttributes as `attr:${K}`]?: EclTagAttributes[K] } & { [K in keyof EclTag & keyof EclTagAttributes as `prop:${K}`]?: EclTag[K] };
+        "ecl-tag-set": Omit<EclTagSet, keyof EclTagSetAttributes> & { [K in keyof EclTagSet & keyof EclTagSetAttributes]?: EclTagSet[K] } & { [K in keyof EclTagSet & keyof EclTagSetAttributes as `attr:${K}`]?: EclTagSetAttributes[K] } & { [K in keyof EclTagSet & keyof EclTagSetAttributes as `prop:${K}`]?: EclTagSet[K] };
+        "ecl-text": Omit<EclText, keyof EclTextAttributes> & { [K in keyof EclText & keyof EclTextAttributes]?: EclText[K] } & { [K in keyof EclText & keyof EclTextAttributes as `attr:${K}`]?: EclTextAttributes[K] } & { [K in keyof EclText & keyof EclTextAttributes as `prop:${K}`]?: EclText[K] };
+        "ecl-textarea": Omit<EclTextarea, keyof EclTextareaAttributes> & { [K in keyof EclTextarea & keyof EclTextareaAttributes]?: EclTextarea[K] } & { [K in keyof EclTextarea & keyof EclTextareaAttributes as `attr:${K}`]?: EclTextareaAttributes[K] } & { [K in keyof EclTextarea & keyof EclTextareaAttributes as `prop:${K}`]?: EclTextarea[K] };
+        "ecl-timeline": Omit<EclTimeline, keyof EclTimelineAttributes> & { [K in keyof EclTimeline & keyof EclTimelineAttributes]?: EclTimeline[K] } & { [K in keyof EclTimeline & keyof EclTimelineAttributes as `attr:${K}`]?: EclTimelineAttributes[K] } & { [K in keyof EclTimeline & keyof EclTimelineAttributes as `prop:${K}`]?: EclTimeline[K] };
+        "ecl-timeline-item": Omit<EclTimelineItem, keyof EclTimelineItemAttributes> & { [K in keyof EclTimelineItem & keyof EclTimelineItemAttributes]?: EclTimelineItem[K] } & { [K in keyof EclTimelineItem & keyof EclTimelineItemAttributes as `attr:${K}`]?: EclTimelineItemAttributes[K] } & { [K in keyof EclTimelineItem & keyof EclTimelineItemAttributes as `prop:${K}`]?: EclTimelineItem[K] };
+        "ecl-video": Omit<EclVideo, keyof EclVideoAttributes> & { [K in keyof EclVideo & keyof EclVideoAttributes]?: EclVideo[K] } & { [K in keyof EclVideo & keyof EclVideoAttributes as `attr:${K}`]?: EclVideoAttributes[K] } & { [K in keyof EclVideo & keyof EclVideoAttributes as `prop:${K}`]?: EclVideo[K] };
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "ecl-accordion": LocalJSX.EclAccordion & JSXBase.HTMLAttributes<HTMLEclAccordionElement>;
-            "ecl-accordion-item": LocalJSX.EclAccordionItem & JSXBase.HTMLAttributes<HTMLEclAccordionItemElement>;
-            "ecl-banner": LocalJSX.EclBanner & JSXBase.HTMLAttributes<HTMLEclBannerElement>;
-            "ecl-blockquote": LocalJSX.EclBlockquote & JSXBase.HTMLAttributes<HTMLEclBlockquoteElement>;
-            "ecl-breadcrumb": LocalJSX.EclBreadcrumb & JSXBase.HTMLAttributes<HTMLEclBreadcrumbElement>;
-            "ecl-breadcrumb-item": LocalJSX.EclBreadcrumbItem & JSXBase.HTMLAttributes<HTMLEclBreadcrumbItemElement>;
-            "ecl-button": LocalJSX.EclButton & JSXBase.HTMLAttributes<HTMLEclButtonElement>;
-            "ecl-card": LocalJSX.EclCard & JSXBase.HTMLAttributes<HTMLEclCardElement>;
-            "ecl-carousel": LocalJSX.EclCarousel & JSXBase.HTMLAttributes<HTMLEclCarouselElement>;
-            "ecl-carousel-item": LocalJSX.EclCarouselItem & JSXBase.HTMLAttributes<HTMLEclCarouselItemElement>;
-            "ecl-category-filter": LocalJSX.EclCategoryFilter & JSXBase.HTMLAttributes<HTMLEclCategoryFilterElement>;
-            "ecl-category-filter-item": LocalJSX.EclCategoryFilterItem & JSXBase.HTMLAttributes<HTMLEclCategoryFilterItemElement>;
-            "ecl-content-block": LocalJSX.EclContentBlock & JSXBase.HTMLAttributes<HTMLEclContentBlockElement>;
-            "ecl-content-item": LocalJSX.EclContentItem & JSXBase.HTMLAttributes<HTMLEclContentItemElement>;
-            "ecl-date-block": LocalJSX.EclDateBlock & JSXBase.HTMLAttributes<HTMLEclDateBlockElement>;
-            "ecl-datepicker": LocalJSX.EclDatepicker & JSXBase.HTMLAttributes<HTMLEclDatepickerElement>;
-            "ecl-description-list": LocalJSX.EclDescriptionList & JSXBase.HTMLAttributes<HTMLEclDescriptionListElement>;
-            "ecl-description-list-definition": LocalJSX.EclDescriptionListDefinition & JSXBase.HTMLAttributes<HTMLEclDescriptionListDefinitionElement>;
-            "ecl-description-list-term": LocalJSX.EclDescriptionListTerm & JSXBase.HTMLAttributes<HTMLEclDescriptionListTermElement>;
-            "ecl-divider": LocalJSX.EclDivider & JSXBase.HTMLAttributes<HTMLEclDividerElement>;
-            "ecl-expandable": LocalJSX.EclExpandable & JSXBase.HTMLAttributes<HTMLEclExpandableElement>;
-            "ecl-fact-figures": LocalJSX.EclFactFigures & JSXBase.HTMLAttributes<HTMLEclFactFiguresElement>;
-            "ecl-fact-figures-item": LocalJSX.EclFactFiguresItem & JSXBase.HTMLAttributes<HTMLEclFactFiguresItemElement>;
-            "ecl-featured-item": LocalJSX.EclFeaturedItem & JSXBase.HTMLAttributes<HTMLEclFeaturedItemElement>;
-            "ecl-file": LocalJSX.EclFile & JSXBase.HTMLAttributes<HTMLEclFileElement>;
-            "ecl-file-translations": LocalJSX.EclFileTranslations & JSXBase.HTMLAttributes<HTMLEclFileTranslationsElement>;
-            "ecl-file-translations-item": LocalJSX.EclFileTranslationsItem & JSXBase.HTMLAttributes<HTMLEclFileTranslationsItemElement>;
-            "ecl-file-upload": LocalJSX.EclFileUpload & JSXBase.HTMLAttributes<HTMLEclFileUploadElement>;
-            "ecl-footer-ec": LocalJSX.EclFooterEc & JSXBase.HTMLAttributes<HTMLEclFooterEcElement>;
-            "ecl-footer-eu": LocalJSX.EclFooterEu & JSXBase.HTMLAttributes<HTMLEclFooterEuElement>;
-            "ecl-footer-item": LocalJSX.EclFooterItem & JSXBase.HTMLAttributes<HTMLEclFooterItemElement>;
-            "ecl-form-group": LocalJSX.EclFormGroup & JSXBase.HTMLAttributes<HTMLEclFormGroupElement>;
-            "ecl-gallery": LocalJSX.EclGallery & JSXBase.HTMLAttributes<HTMLEclGalleryElement>;
-            "ecl-gallery-item": LocalJSX.EclGalleryItem & JSXBase.HTMLAttributes<HTMLEclGalleryItemElement>;
-            "ecl-grid": LocalJSX.EclGrid & JSXBase.HTMLAttributes<HTMLEclGridElement>;
-            "ecl-icon": LocalJSX.EclIcon & JSXBase.HTMLAttributes<HTMLEclIconElement>;
-            "ecl-indicator": LocalJSX.EclIndicator & JSXBase.HTMLAttributes<HTMLEclIndicatorElement>;
-            "ecl-inpage-navigation": LocalJSX.EclInpageNavigation & JSXBase.HTMLAttributes<HTMLEclInpageNavigationElement>;
-            "ecl-inpage-navigation-item": LocalJSX.EclInpageNavigationItem & JSXBase.HTMLAttributes<HTMLEclInpageNavigationItemElement>;
-            "ecl-input": LocalJSX.EclInput & JSXBase.HTMLAttributes<HTMLEclInputElement>;
-            "ecl-label": LocalJSX.EclLabel & JSXBase.HTMLAttributes<HTMLEclLabelElement>;
-            "ecl-language-item": LocalJSX.EclLanguageItem & JSXBase.HTMLAttributes<HTMLEclLanguageItemElement>;
-            "ecl-link": LocalJSX.EclLink & JSXBase.HTMLAttributes<HTMLEclLinkElement>;
-            "ecl-list-illustration": LocalJSX.EclListIllustration & JSXBase.HTMLAttributes<HTMLEclListIllustrationElement>;
-            "ecl-list-illustration-item": LocalJSX.EclListIllustrationItem & JSXBase.HTMLAttributes<HTMLEclListIllustrationItemElement>;
-            "ecl-media-container": LocalJSX.EclMediaContainer & JSXBase.HTMLAttributes<HTMLEclMediaContainerElement>;
-            "ecl-mega-menu": LocalJSX.EclMegaMenu & JSXBase.HTMLAttributes<HTMLEclMegaMenuElement>;
-            "ecl-mega-menu-featured-list-item": LocalJSX.EclMegaMenuFeaturedListItem & JSXBase.HTMLAttributes<HTMLEclMegaMenuFeaturedListItemElement>;
-            "ecl-mega-menu-item": LocalJSX.EclMegaMenuItem & JSXBase.HTMLAttributes<HTMLEclMegaMenuItemElement>;
-            "ecl-mega-menu-subitem": LocalJSX.EclMegaMenuSubitem & JSXBase.HTMLAttributes<HTMLEclMegaMenuSubitemElement>;
-            "ecl-menu": LocalJSX.EclMenu & JSXBase.HTMLAttributes<HTMLEclMenuElement>;
-            "ecl-menu-item": LocalJSX.EclMenuItem & JSXBase.HTMLAttributes<HTMLEclMenuItemElement>;
-            "ecl-modal": LocalJSX.EclModal & JSXBase.HTMLAttributes<HTMLEclModalElement>;
-            "ecl-navigation-list": LocalJSX.EclNavigationList & JSXBase.HTMLAttributes<HTMLEclNavigationListElement>;
-            "ecl-navigation-list-item": LocalJSX.EclNavigationListItem & JSXBase.HTMLAttributes<HTMLEclNavigationListItemElement>;
-            "ecl-news-ticker": LocalJSX.EclNewsTicker & JSXBase.HTMLAttributes<HTMLEclNewsTickerElement>;
-            "ecl-news-ticker-item": LocalJSX.EclNewsTickerItem & JSXBase.HTMLAttributes<HTMLEclNewsTickerItemElement>;
-            "ecl-notification": LocalJSX.EclNotification & JSXBase.HTMLAttributes<HTMLEclNotificationElement>;
-            "ecl-page-header": LocalJSX.EclPageHeader & JSXBase.HTMLAttributes<HTMLEclPageHeaderElement>;
-            "ecl-page-header-meta-item": LocalJSX.EclPageHeaderMetaItem & JSXBase.HTMLAttributes<HTMLEclPageHeaderMetaItemElement>;
-            "ecl-page-information": LocalJSX.EclPageInformation & JSXBase.HTMLAttributes<HTMLEclPageInformationElement>;
-            "ecl-pagination": LocalJSX.EclPagination & JSXBase.HTMLAttributes<HTMLEclPaginationElement>;
-            "ecl-pagination-item": LocalJSX.EclPaginationItem & JSXBase.HTMLAttributes<HTMLEclPaginationItemElement>;
-            "ecl-picture": LocalJSX.EclPicture & JSXBase.HTMLAttributes<HTMLEclPictureElement>;
-            "ecl-popover": LocalJSX.EclPopover & JSXBase.HTMLAttributes<HTMLEclPopoverElement>;
-            "ecl-range": LocalJSX.EclRange & JSXBase.HTMLAttributes<HTMLEclRangeElement>;
-            "ecl-rating-field": LocalJSX.EclRatingField & JSXBase.HTMLAttributes<HTMLEclRatingFieldElement>;
-            "ecl-rating-star": LocalJSX.EclRatingStar & JSXBase.HTMLAttributes<HTMLEclRatingStarElement>;
-            "ecl-search-form": LocalJSX.EclSearchForm & JSXBase.HTMLAttributes<HTMLEclSearchFormElement>;
-            "ecl-select": LocalJSX.EclSelect & JSXBase.HTMLAttributes<HTMLEclSelectElement>;
-            "ecl-site-header": LocalJSX.EclSiteHeader & JSXBase.HTMLAttributes<HTMLEclSiteHeaderElement>;
-            "ecl-social-media-follow": LocalJSX.EclSocialMediaFollow & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowElement>;
-            "ecl-social-media-follow-item": LocalJSX.EclSocialMediaFollowItem & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowItemElement>;
-            "ecl-spacing": LocalJSX.EclSpacing & JSXBase.HTMLAttributes<HTMLEclSpacingElement>;
-            "ecl-spinner": LocalJSX.EclSpinner & JSXBase.HTMLAttributes<HTMLEclSpinnerElement>;
-            "ecl-splash-page": LocalJSX.EclSplashPage & JSXBase.HTMLAttributes<HTMLEclSplashPageElement>;
-            "ecl-splash-page-language-item": LocalJSX.EclSplashPageLanguageItem & JSXBase.HTMLAttributes<HTMLEclSplashPageLanguageItemElement>;
-            "ecl-spotlight": LocalJSX.EclSpotlight & JSXBase.HTMLAttributes<HTMLEclSpotlightElement>;
-            "ecl-table": LocalJSX.EclTable & JSXBase.HTMLAttributes<HTMLEclTableElement>;
-            "ecl-tabs": LocalJSX.EclTabs & JSXBase.HTMLAttributes<HTMLEclTabsElement>;
-            "ecl-tabs-item": LocalJSX.EclTabsItem & JSXBase.HTMLAttributes<HTMLEclTabsItemElement>;
-            "ecl-tag": LocalJSX.EclTag & JSXBase.HTMLAttributes<HTMLEclTagElement>;
-            "ecl-tag-set": LocalJSX.EclTagSet & JSXBase.HTMLAttributes<HTMLEclTagSetElement>;
-            "ecl-text": LocalJSX.EclText & JSXBase.HTMLAttributes<HTMLEclTextElement>;
-            "ecl-textarea": LocalJSX.EclTextarea & JSXBase.HTMLAttributes<HTMLEclTextareaElement>;
-            "ecl-timeline": LocalJSX.EclTimeline & JSXBase.HTMLAttributes<HTMLEclTimelineElement>;
-            "ecl-timeline-item": LocalJSX.EclTimelineItem & JSXBase.HTMLAttributes<HTMLEclTimelineItemElement>;
-            "ecl-video": LocalJSX.EclVideo & JSXBase.HTMLAttributes<HTMLEclVideoElement>;
+            "ecl-accordion": LocalJSX.IntrinsicElements["ecl-accordion"] & JSXBase.HTMLAttributes<HTMLEclAccordionElement>;
+            "ecl-accordion-item": LocalJSX.IntrinsicElements["ecl-accordion-item"] & JSXBase.HTMLAttributes<HTMLEclAccordionItemElement>;
+            "ecl-banner": LocalJSX.IntrinsicElements["ecl-banner"] & JSXBase.HTMLAttributes<HTMLEclBannerElement>;
+            "ecl-blockquote": LocalJSX.IntrinsicElements["ecl-blockquote"] & JSXBase.HTMLAttributes<HTMLEclBlockquoteElement>;
+            "ecl-breadcrumb": LocalJSX.IntrinsicElements["ecl-breadcrumb"] & JSXBase.HTMLAttributes<HTMLEclBreadcrumbElement>;
+            "ecl-breadcrumb-item": LocalJSX.IntrinsicElements["ecl-breadcrumb-item"] & JSXBase.HTMLAttributes<HTMLEclBreadcrumbItemElement>;
+            "ecl-button": LocalJSX.IntrinsicElements["ecl-button"] & JSXBase.HTMLAttributes<HTMLEclButtonElement>;
+            "ecl-card": LocalJSX.IntrinsicElements["ecl-card"] & JSXBase.HTMLAttributes<HTMLEclCardElement>;
+            "ecl-carousel": LocalJSX.IntrinsicElements["ecl-carousel"] & JSXBase.HTMLAttributes<HTMLEclCarouselElement>;
+            "ecl-carousel-item": LocalJSX.IntrinsicElements["ecl-carousel-item"] & JSXBase.HTMLAttributes<HTMLEclCarouselItemElement>;
+            "ecl-category-filter": LocalJSX.IntrinsicElements["ecl-category-filter"] & JSXBase.HTMLAttributes<HTMLEclCategoryFilterElement>;
+            "ecl-category-filter-item": LocalJSX.IntrinsicElements["ecl-category-filter-item"] & JSXBase.HTMLAttributes<HTMLEclCategoryFilterItemElement>;
+            "ecl-content-block": LocalJSX.IntrinsicElements["ecl-content-block"] & JSXBase.HTMLAttributes<HTMLEclContentBlockElement>;
+            "ecl-content-item": LocalJSX.IntrinsicElements["ecl-content-item"] & JSXBase.HTMLAttributes<HTMLEclContentItemElement>;
+            "ecl-date-block": LocalJSX.IntrinsicElements["ecl-date-block"] & JSXBase.HTMLAttributes<HTMLEclDateBlockElement>;
+            "ecl-datepicker": LocalJSX.IntrinsicElements["ecl-datepicker"] & JSXBase.HTMLAttributes<HTMLEclDatepickerElement>;
+            "ecl-description-list": LocalJSX.IntrinsicElements["ecl-description-list"] & JSXBase.HTMLAttributes<HTMLEclDescriptionListElement>;
+            "ecl-description-list-definition": LocalJSX.IntrinsicElements["ecl-description-list-definition"] & JSXBase.HTMLAttributes<HTMLEclDescriptionListDefinitionElement>;
+            "ecl-description-list-term": LocalJSX.IntrinsicElements["ecl-description-list-term"] & JSXBase.HTMLAttributes<HTMLEclDescriptionListTermElement>;
+            "ecl-divider": LocalJSX.IntrinsicElements["ecl-divider"] & JSXBase.HTMLAttributes<HTMLEclDividerElement>;
+            "ecl-expandable": LocalJSX.IntrinsicElements["ecl-expandable"] & JSXBase.HTMLAttributes<HTMLEclExpandableElement>;
+            "ecl-fact-figures": LocalJSX.IntrinsicElements["ecl-fact-figures"] & JSXBase.HTMLAttributes<HTMLEclFactFiguresElement>;
+            "ecl-fact-figures-item": LocalJSX.IntrinsicElements["ecl-fact-figures-item"] & JSXBase.HTMLAttributes<HTMLEclFactFiguresItemElement>;
+            "ecl-featured-item": LocalJSX.IntrinsicElements["ecl-featured-item"] & JSXBase.HTMLAttributes<HTMLEclFeaturedItemElement>;
+            "ecl-file": LocalJSX.IntrinsicElements["ecl-file"] & JSXBase.HTMLAttributes<HTMLEclFileElement>;
+            "ecl-file-translations": LocalJSX.IntrinsicElements["ecl-file-translations"] & JSXBase.HTMLAttributes<HTMLEclFileTranslationsElement>;
+            "ecl-file-translations-item": LocalJSX.IntrinsicElements["ecl-file-translations-item"] & JSXBase.HTMLAttributes<HTMLEclFileTranslationsItemElement>;
+            "ecl-file-upload": LocalJSX.IntrinsicElements["ecl-file-upload"] & JSXBase.HTMLAttributes<HTMLEclFileUploadElement>;
+            "ecl-footer-ec": LocalJSX.IntrinsicElements["ecl-footer-ec"] & JSXBase.HTMLAttributes<HTMLEclFooterEcElement>;
+            "ecl-footer-eu": LocalJSX.IntrinsicElements["ecl-footer-eu"] & JSXBase.HTMLAttributes<HTMLEclFooterEuElement>;
+            "ecl-footer-item": LocalJSX.IntrinsicElements["ecl-footer-item"] & JSXBase.HTMLAttributes<HTMLEclFooterItemElement>;
+            "ecl-form-group": LocalJSX.IntrinsicElements["ecl-form-group"] & JSXBase.HTMLAttributes<HTMLEclFormGroupElement>;
+            "ecl-gallery": LocalJSX.IntrinsicElements["ecl-gallery"] & JSXBase.HTMLAttributes<HTMLEclGalleryElement>;
+            "ecl-gallery-item": LocalJSX.IntrinsicElements["ecl-gallery-item"] & JSXBase.HTMLAttributes<HTMLEclGalleryItemElement>;
+            "ecl-grid": LocalJSX.IntrinsicElements["ecl-grid"] & JSXBase.HTMLAttributes<HTMLEclGridElement>;
+            "ecl-icon": LocalJSX.IntrinsicElements["ecl-icon"] & JSXBase.HTMLAttributes<HTMLEclIconElement>;
+            "ecl-indicator": LocalJSX.IntrinsicElements["ecl-indicator"] & JSXBase.HTMLAttributes<HTMLEclIndicatorElement>;
+            "ecl-inpage-navigation": LocalJSX.IntrinsicElements["ecl-inpage-navigation"] & JSXBase.HTMLAttributes<HTMLEclInpageNavigationElement>;
+            "ecl-inpage-navigation-item": LocalJSX.IntrinsicElements["ecl-inpage-navigation-item"] & JSXBase.HTMLAttributes<HTMLEclInpageNavigationItemElement>;
+            "ecl-input": LocalJSX.IntrinsicElements["ecl-input"] & JSXBase.HTMLAttributes<HTMLEclInputElement>;
+            "ecl-label": LocalJSX.IntrinsicElements["ecl-label"] & JSXBase.HTMLAttributes<HTMLEclLabelElement>;
+            "ecl-language-item": LocalJSX.IntrinsicElements["ecl-language-item"] & JSXBase.HTMLAttributes<HTMLEclLanguageItemElement>;
+            "ecl-link": LocalJSX.IntrinsicElements["ecl-link"] & JSXBase.HTMLAttributes<HTMLEclLinkElement>;
+            "ecl-list-illustration": LocalJSX.IntrinsicElements["ecl-list-illustration"] & JSXBase.HTMLAttributes<HTMLEclListIllustrationElement>;
+            "ecl-list-illustration-item": LocalJSX.IntrinsicElements["ecl-list-illustration-item"] & JSXBase.HTMLAttributes<HTMLEclListIllustrationItemElement>;
+            "ecl-media-container": LocalJSX.IntrinsicElements["ecl-media-container"] & JSXBase.HTMLAttributes<HTMLEclMediaContainerElement>;
+            "ecl-mega-menu": LocalJSX.IntrinsicElements["ecl-mega-menu"] & JSXBase.HTMLAttributes<HTMLEclMegaMenuElement>;
+            "ecl-mega-menu-featured-list-item": LocalJSX.IntrinsicElements["ecl-mega-menu-featured-list-item"] & JSXBase.HTMLAttributes<HTMLEclMegaMenuFeaturedListItemElement>;
+            "ecl-mega-menu-item": LocalJSX.IntrinsicElements["ecl-mega-menu-item"] & JSXBase.HTMLAttributes<HTMLEclMegaMenuItemElement>;
+            "ecl-mega-menu-subitem": LocalJSX.IntrinsicElements["ecl-mega-menu-subitem"] & JSXBase.HTMLAttributes<HTMLEclMegaMenuSubitemElement>;
+            "ecl-menu": LocalJSX.IntrinsicElements["ecl-menu"] & JSXBase.HTMLAttributes<HTMLEclMenuElement>;
+            "ecl-menu-item": LocalJSX.IntrinsicElements["ecl-menu-item"] & JSXBase.HTMLAttributes<HTMLEclMenuItemElement>;
+            "ecl-modal": LocalJSX.IntrinsicElements["ecl-modal"] & JSXBase.HTMLAttributes<HTMLEclModalElement>;
+            "ecl-navigation-list": LocalJSX.IntrinsicElements["ecl-navigation-list"] & JSXBase.HTMLAttributes<HTMLEclNavigationListElement>;
+            "ecl-navigation-list-item": LocalJSX.IntrinsicElements["ecl-navigation-list-item"] & JSXBase.HTMLAttributes<HTMLEclNavigationListItemElement>;
+            "ecl-news-ticker": LocalJSX.IntrinsicElements["ecl-news-ticker"] & JSXBase.HTMLAttributes<HTMLEclNewsTickerElement>;
+            "ecl-news-ticker-item": LocalJSX.IntrinsicElements["ecl-news-ticker-item"] & JSXBase.HTMLAttributes<HTMLEclNewsTickerItemElement>;
+            "ecl-notification": LocalJSX.IntrinsicElements["ecl-notification"] & JSXBase.HTMLAttributes<HTMLEclNotificationElement>;
+            "ecl-page-header": LocalJSX.IntrinsicElements["ecl-page-header"] & JSXBase.HTMLAttributes<HTMLEclPageHeaderElement>;
+            "ecl-page-header-meta-item": LocalJSX.IntrinsicElements["ecl-page-header-meta-item"] & JSXBase.HTMLAttributes<HTMLEclPageHeaderMetaItemElement>;
+            "ecl-page-information": LocalJSX.IntrinsicElements["ecl-page-information"] & JSXBase.HTMLAttributes<HTMLEclPageInformationElement>;
+            "ecl-pagination": LocalJSX.IntrinsicElements["ecl-pagination"] & JSXBase.HTMLAttributes<HTMLEclPaginationElement>;
+            "ecl-pagination-item": LocalJSX.IntrinsicElements["ecl-pagination-item"] & JSXBase.HTMLAttributes<HTMLEclPaginationItemElement>;
+            "ecl-picture": LocalJSX.IntrinsicElements["ecl-picture"] & JSXBase.HTMLAttributes<HTMLEclPictureElement>;
+            "ecl-popover": LocalJSX.IntrinsicElements["ecl-popover"] & JSXBase.HTMLAttributes<HTMLEclPopoverElement>;
+            "ecl-range": LocalJSX.IntrinsicElements["ecl-range"] & JSXBase.HTMLAttributes<HTMLEclRangeElement>;
+            "ecl-rating-field": LocalJSX.IntrinsicElements["ecl-rating-field"] & JSXBase.HTMLAttributes<HTMLEclRatingFieldElement>;
+            "ecl-rating-star": LocalJSX.IntrinsicElements["ecl-rating-star"] & JSXBase.HTMLAttributes<HTMLEclRatingStarElement>;
+            "ecl-search-form": LocalJSX.IntrinsicElements["ecl-search-form"] & JSXBase.HTMLAttributes<HTMLEclSearchFormElement>;
+            "ecl-select": LocalJSX.IntrinsicElements["ecl-select"] & JSXBase.HTMLAttributes<HTMLEclSelectElement>;
+            "ecl-site-header": LocalJSX.IntrinsicElements["ecl-site-header"] & JSXBase.HTMLAttributes<HTMLEclSiteHeaderElement>;
+            "ecl-social-media-follow": LocalJSX.IntrinsicElements["ecl-social-media-follow"] & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowElement>;
+            "ecl-social-media-follow-item": LocalJSX.IntrinsicElements["ecl-social-media-follow-item"] & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowItemElement>;
+            "ecl-spacing": LocalJSX.IntrinsicElements["ecl-spacing"] & JSXBase.HTMLAttributes<HTMLEclSpacingElement>;
+            "ecl-spinner": LocalJSX.IntrinsicElements["ecl-spinner"] & JSXBase.HTMLAttributes<HTMLEclSpinnerElement>;
+            "ecl-splash-page": LocalJSX.IntrinsicElements["ecl-splash-page"] & JSXBase.HTMLAttributes<HTMLEclSplashPageElement>;
+            "ecl-splash-page-language-item": LocalJSX.IntrinsicElements["ecl-splash-page-language-item"] & JSXBase.HTMLAttributes<HTMLEclSplashPageLanguageItemElement>;
+            "ecl-spotlight": LocalJSX.IntrinsicElements["ecl-spotlight"] & JSXBase.HTMLAttributes<HTMLEclSpotlightElement>;
+            "ecl-table": LocalJSX.IntrinsicElements["ecl-table"] & JSXBase.HTMLAttributes<HTMLEclTableElement>;
+            "ecl-tabs": LocalJSX.IntrinsicElements["ecl-tabs"] & JSXBase.HTMLAttributes<HTMLEclTabsElement>;
+            "ecl-tabs-item": LocalJSX.IntrinsicElements["ecl-tabs-item"] & JSXBase.HTMLAttributes<HTMLEclTabsItemElement>;
+            "ecl-tag": LocalJSX.IntrinsicElements["ecl-tag"] & JSXBase.HTMLAttributes<HTMLEclTagElement>;
+            "ecl-tag-set": LocalJSX.IntrinsicElements["ecl-tag-set"] & JSXBase.HTMLAttributes<HTMLEclTagSetElement>;
+            "ecl-text": LocalJSX.IntrinsicElements["ecl-text"] & JSXBase.HTMLAttributes<HTMLEclTextElement>;
+            "ecl-textarea": LocalJSX.IntrinsicElements["ecl-textarea"] & JSXBase.HTMLAttributes<HTMLEclTextareaElement>;
+            "ecl-timeline": LocalJSX.IntrinsicElements["ecl-timeline"] & JSXBase.HTMLAttributes<HTMLEclTimelineElement>;
+            "ecl-timeline-item": LocalJSX.IntrinsicElements["ecl-timeline-item"] & JSXBase.HTMLAttributes<HTMLEclTimelineItemElement>;
+            "ecl-video": LocalJSX.IntrinsicElements["ecl-video"] & JSXBase.HTMLAttributes<HTMLEclVideoElement>;
         }
     }
 }
