@@ -1118,35 +1118,47 @@ export const DEFAULT_ECL_CONFIG = [
   {
     tag: 'ecl-page-header',
     attributes: {
+      'color-mode': {
+        type: 'select',
+        value: '',
+        options: colorModes,
+      },
       'style-class': '',
       'header-title': '',
+      'with-background': {
+        type: 'boolean',
+        value: true,
+      },
       'image': '',
+      'image-position': {
+        type: 'select',
+        value: 'top',
+        options: [
+          { label: 'top', value: 'top' },
+          { label: 'bottom', value: 'bottom' },
+        ],
+      },
       'thumbnail': '',
       'with-meta': {
         type: 'boolean',
         value: false,
       },
-      'font-size': {
-        type: 'select',
-        value: 'm',
-        options: [
-          { label: 'small', value: 's' },
-          { label: 'medium', value: 'm' },
-        ],
-      },
-      'variant': {
-        type: 'select',
-        value: 'default',
-        options: [
-          { label: 'default', value: 'default' },
-          { label: 'news', value: 'news' },
-          { label: '50-50', value: '50-50' },
-        ],
+      'with-description': {
+        type: 'boolean',
+        value: true,
       },
       'meta': '',
       'thumbnail-alt': '',
       'image-alt': '',
-      'description-position': 'top',
+      'description-position': {
+        type: 'select',
+        value: 'top',
+        options: [
+          { label: 'top', value: 'top' },
+          { label: 'bottom', value: 'bottom' },
+          { label: 'beside', value: 'beside' },
+        ],
+      },
       'expandable': {
         type: 'boolean',
         value: false,
