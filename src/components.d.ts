@@ -1395,6 +1395,10 @@ export namespace Components {
     }
     interface EclPageHeader {
         /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
           * @default 'top'
          */
         "descriptionPosition": string;
@@ -1414,13 +1418,13 @@ export namespace Components {
           * @default `ecl-page-header-expandable-panel-${Math.random().toString(36).slice(2, 10)}`
          */
         "expandablePanelId": string;
-        /**
-          * @default 'm'
-         */
-        "fontSize": string;
         "headerTitle": string;
         "image": string;
         "imageAlt": string;
+        /**
+          * @default 'top'
+         */
+        "imagePosition": string;
         /**
           * @default false
          */
@@ -1433,7 +1437,14 @@ export namespace Components {
         "theme": string;
         "thumbnail": string;
         "thumbnailAlt": string;
-        "variant": string;
+        /**
+          * @default false
+         */
+        "withBackground": boolean;
+        /**
+          * @default true
+         */
+        "withDescription": boolean;
         "withMeta": boolean;
     }
     interface EclPageHeaderMetaItem {
@@ -4286,6 +4297,10 @@ declare namespace LocalJSX {
     }
     interface EclPageHeader {
         /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
           * @default 'top'
          */
         "descriptionPosition"?: string;
@@ -4305,13 +4320,13 @@ declare namespace LocalJSX {
           * @default `ecl-page-header-expandable-panel-${Math.random().toString(36).slice(2, 10)}`
          */
         "expandablePanelId"?: string;
-        /**
-          * @default 'm'
-         */
-        "fontSize"?: string;
         "headerTitle"?: string;
         "image"?: string;
         "imageAlt"?: string;
+        /**
+          * @default 'top'
+         */
+        "imagePosition"?: string;
         /**
           * @default false
          */
@@ -4324,7 +4339,14 @@ declare namespace LocalJSX {
         "theme"?: string;
         "thumbnail"?: string;
         "thumbnailAlt"?: string;
-        "variant"?: string;
+        /**
+          * @default false
+         */
+        "withBackground"?: boolean;
+        /**
+          * @default true
+         */
+        "withDescription"?: boolean;
         "withMeta"?: boolean;
     }
     interface EclPageHeaderMetaItem {

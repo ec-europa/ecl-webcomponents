@@ -18,11 +18,13 @@ export class EclPageHeader {
   @Prop() noScript: boolean = false;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
+  @Prop() colorMode: string = '';
   @Prop() image: string ;
   @Prop() imageAlt: string;
+  @Prop() withDescription: boolean = true;
   @Prop() withMeta: boolean;
-  @Prop() fontSize: string = 'm';
-  @Prop() variant: string;
+  @Prop() withBackground: boolean = false;
+  @Prop() imagePosition: string = 'top';
   @Prop() descriptionPosition: string = 'top';
   @Prop() expandable: boolean = false;
   @Prop() expandableContent: boolean = false;
@@ -41,22 +43,23 @@ export class EclPageHeader {
 
     if (this.image) {
       styleClasses.push('ecl-page-header--image');
-    }
-
-    if (this.variant) {
-      styleClasses.push(`ecl-page-header--${this.variant}`);
+      styleClasses.push(`ecl-page-header--picture-${this.imagePosition}`);
     }
 
     if (!this.headerTitle) {
       styleClasses.push('ecl-page-header__info--no-margin');
     }
 
-    if (this.fontSize === 'l') {
-      styleClasses.push(`ecl-page-header--font-${this.fontSize}`);
+    if (this.withBackground) {
+      styleClasses.push(`ecl-page-header--background`);
     }
 
-    if (this.descriptionPosition === 'bottom') {
-      styleClasses.push('ecl-page-header--description-bottom');
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`);
+    }
+
+    if (this.withDescription) {
+      styleClasses.push(`ecl-page-header--description-${this.descriptionPosition}`);
     }
 
     return styleClasses.join(' ');
@@ -93,15 +96,13 @@ export class EclPageHeader {
 
   getPicture() {
     if (this.image) {
-      return <div class="ecl-page-header__background-container">
-                <ecl-picture
-                  styleClass={`ecl-page-header__picture-background sc-ecl-page-header-${this.theme}`}
-                  image={this.image}
-                  imgClass={`ecl-page-header__background sc-ecl-page-header-${this.theme}`}
-                >
-                  <slot name="sources"></slot>
-                </ecl-picture>
-              </div>;
+      return <ecl-picture
+              styleClass={`ecl-page-header__picture-background sc-ecl-page-header-${this.theme}`}
+              image={this.image}
+              imgClass={`ecl-page-header__background sc-ecl-page-header-${this.theme}`}
+            >
+              <slot name="sources"></slot>
+            </ecl-picture>;
     }
   }
 
@@ -133,6 +134,46 @@ export class EclPageHeader {
               <slot></slot>
             </p>
           </div>
+  }
+
+  get5050Markup() {
+    return (
+    <div class="ecl-page-header__container">
+      {this.getPicture()}
+      <div class="ecl-page-header__section-info ecl-container">
+        <slot name="breadcrumb"></slot>
+        <div class="ecl-page-header__content-info">
+          {this.getTitle()}
+        { (this.descriptionPosition === 'top' && (this.withDescription || this.thumbnail)) &&
+          <div class="ecl-page-header__description-top">
+            {this.getDescription()}
+          </div>
+        }
+        </div>
+        {this.getMeta()}
+      </div>
+    </div>
+    );
+  }
+
+  getBasicMarkup() {
+    return (
+      <div class="ecl-page-header__container">
+        <div class="ecl-container">
+          <slot name="breadcrumb"></slot>
+          {this.getTitle()}
+          { (this.descriptionPosition === 'top' && (this.withDescription || this.thumbnail)) &&
+          <div class="ecl-page-header__description-top">
+            {this.getDescription()}
+          </div>
+          }
+          {this.getMeta()}
+        {this.imagePosition === 'bottom' &&
+          this.getPicture()
+        }
+        </div>
+      </div>
+    );
   }
 
   render() {
@@ -183,55 +224,23 @@ export class EclPageHeader {
         }
         </div>
       }
-
-      { this.variant === 'news' &&
-        <div class="ecl-container ecl-page-header__container">
-          <slot name="breadcrumb"></slot>
-          {this.getTitle()}
-          {this.getMeta()}
-          {this.getPicture()}
-        </div>
+      { this.imagePosition === 'top' &&
+        this.getPicture()
       }
-      { this.variant === 'news' &&
-        <div class="ecl-page-header__section-description">
+        
+      { (this.image && this.imagePosition === 'beside') ? (
+        this.get5050Markup()
+      )
+       : (
+        this.getBasicMarkup()
+      )
+     }
+
+      { (this.descriptionPosition === 'bottom' && (this.withDescription || this.thumbnail)) &&
+        <div class="ecl-page-header__description-bottom">
           <div class="ecl-container">
             {this.getDescription()}
           </div>
-        </div>
-      }
-
-      { this.variant === '50-50' &&
-        <div class="ecl-page-header__container">
-          {this.getPicture()}
-          <div class="ecl-page-header__section-info ecl-container">
-            <slot name="breadcrumb"></slot>
-            <div class="ecl-page-header__content-info">
-              {this.getTitle()}
-              <div class="ecl-page-header__description-info">
-                {this.descriptionPosition === 'bottom' ? '' : this.getDescription()}
-              </div>
-            </div>
-            {this.getMeta()}
-          </div>
-        </div>
-      }
-
-      { this.variant === '50-50' &&
-        <div class="ecl-page-header__section-description">
-          <div class="ecl-container">
-            {this.getDescription()}
-          </div>
-        </div>
-      }
-
-      { !this.variant ? this.getPicture() : '' }
-
-      { !this.variant &&
-        <div class="ecl-container ecl-page-header__container">
-          <slot name="breadcrumb"></slot>
-          {this.getTitle()}
-          {this.getDescription()}
-          {this.getMeta()}
         </div>
       }
       </div>
