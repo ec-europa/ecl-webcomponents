@@ -64,7 +64,7 @@ importers:
         specifier: 7.28.5
         version: 7.28.5(@babel/core@7.29.0)
       '@ecl/ecl-webcomponents':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:packages/ecl-webcomponents
       '@ecl/preset-ec':
         specifier: 5.0.0-alpha.22.4
@@ -288,10 +288,10 @@ importers:
         specifier: 7.21.11
         version: 7.21.11(@babel/core@7.25.2)
       '@ecl/ecl-webcomponents':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-webcomponents
       '@ecl/ecl-webcomponents-angular':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:projects/ecl-webcomponents-angular
       browser-sync:
         specifier: 3.0.4
@@ -339,7 +339,7 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(rxjs@7.8.2)(zone.js@0.13.2)
       '@ecl/ecl-webcomponents':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../../../ecl-webcomponents
       tslib:
         specifier: 2.8.1
@@ -348,7 +348,7 @@ importers:
   packages/ecl-webcomponents-react:
     dependencies:
       '@ecl/ecl-webcomponents':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-webcomponents
     devDependencies:
       '@types/node':
@@ -373,7 +373,7 @@ importers:
   packages/ecl-webcomponents-react-consumer:
     dependencies:
       '@ecl/ecl-webcomponents-react':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-webcomponents-react
       react:
         specifier: 18.2.0
@@ -407,10 +407,10 @@ importers:
         specifier: 5.0.0
         version: 5.0.0
       '@ecl/ckeditor5-ecl-webcomponents':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../src/plugins/ckeditor5-ecl-webcomponents
       '@ecl/ecl-webcomponents':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../packages/ecl-webcomponents
       ckeditor5:
         specifier: 47.5.0
@@ -425,7 +425,7 @@ importers:
   src/components/ecl-accordion:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-icon
     devDependencies:
       '@ecl/accordion':
@@ -462,10 +462,10 @@ importers:
   src/components/ecl-banner:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-icon
       '@ecl/web-components-link':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-link
     devDependencies:
       '@ecl/banner':
@@ -517,13 +517,13 @@ importers:
   src/components/ecl-breadcrumb:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-button
       '@ecl/web-components-icon':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-icon
       '@ecl/web-components-link':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-link
     devDependencies:
       '@ecl/breadcrumb':
@@ -557,10 +557,10 @@ importers:
   src/components/ecl-button:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-icon
       '@ecl/web-components-indicator':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-indicator
     devDependencies:
       '@ecl/builder':
@@ -621,10 +621,10 @@ importers:
   src/components/ecl-carousel:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-button
       '@ecl/web-components-icon':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-icon
     devDependencies:
       '@ecl/banner':
@@ -856,7 +856,7 @@ importers:
         specifier: 5.0.0-alpha.22.4
         version: 5.0.0-alpha.22.4
       '@ecl/web-components-button':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-button
       cross-env:
         specifier: 10.1.0
@@ -868,10 +868,10 @@ importers:
   src/components/ecl-fact-figures:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-icon
       '@ecl/web-components-link':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-link
     devDependencies:
       '@ecl/builder':
@@ -1115,7 +1115,7 @@ importers:
   src/components/ecl-inpage-navigation:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
@@ -1218,10 +1218,10 @@ importers:
   src/components/ecl-link:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-icon
       '@ecl/web-components-indicator':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-indicator
     devDependencies:
       '@ecl/builder':
@@ -1288,19 +1288,19 @@ importers:
   src/components/ecl-media-container:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-button
       '@ecl/web-components-expandable':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-expandable
       '@ecl/web-components-icon':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-icon
       '@ecl/web-components-picture':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-picture
       '@ecl/web-components-video':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-video
     devDependencies:
       '@ecl/builder':
@@ -1331,13 +1331,13 @@ importers:
   src/components/ecl-mega-menu:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-button
       '@ecl/web-components-grid':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-grid
       '@ecl/web-components-icon':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
@@ -1459,10 +1459,10 @@ importers:
   src/components/ecl-notification:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-button
       '@ecl/web-components-icon':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
@@ -1577,10 +1577,10 @@ importers:
   src/components/ecl-popover:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-icon
       '@ecl/web-components-link':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-link
     devDependencies:
       '@ecl/builder':
@@ -1863,10 +1863,10 @@ importers:
         specifier: 5.0.0-alpha.22.4
         version: 5.0.0-alpha.22.4
       '@ecl/web-components-grid':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-grid
       '@ecl/web-components-picture':
-        specifier: 0.22.0
+        specifier: 0.23.0
         version: link:../ecl-picture
       cross-env:
         specifier: 10.1.0
@@ -11800,6 +11800,7 @@ packages:
   tar@7.5.7:
     resolution: {integrity: sha512-fov56fJiRuThVFXD6o6/Q354S7pnWMJIVlDBYijsTNx6jKSE4pvrDTs6lUnmGvNyfJwFQQwWy3owKz1ucIhveQ==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   temp-dir@1.0.0:
     resolution: {integrity: sha512-xZFXEGbG7SNC3itwBzI3RYjq/cEhBkx2hJuKGIUOcEULmkQExXiHat2z/qkISYsuR+IKumhEfKKbV5qXmhICFQ==}
