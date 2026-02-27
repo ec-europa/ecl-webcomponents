@@ -3,8 +3,9 @@
 exports[`ecl-list-illustration renders 1`] = `
 <ecl-list-illustration color-mode="blue" column="1" font-size="m" zebra="true">
   <!---->
-  <ul class="ecl-color-mode--blue ecl-list-illustration ecl-list-illustration--col-1 ecl-list-illustration--font-m ecl-list-illustration--zebra">
-    <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+  <div class="ecl-color-mode--blue ecl-list-illustration ecl-list-illustration--col-1 ecl-list-illustration--font-m ecl-list-illustration--zebra" role="list">
+    <ecl-list-illustration-item class="ecl-list-illustration__item sc-ecl-list-illustration-ec" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 1" role="listitem">
+      <!---->
       <div class="ecl-list-illustration__item-content ecl-list-illustration__item-content--row sc-ecl-list-illustration-ec">
         <ecl-picture role="img">
           <!---->
@@ -23,8 +24,9 @@ exports[`ecl-list-illustration renders 1`] = `
           </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+    </ecl-list-illustration-item>
+    <ecl-list-illustration-item class="ecl-list-illustration__item sc-ecl-list-illustration-ec" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 2" role="listitem">
+      <!---->
       <div class="ecl-list-illustration__item-content ecl-list-illustration__item-content--row sc-ecl-list-illustration-ec">
         <ecl-picture role="img">
           <!---->
@@ -43,8 +45,9 @@ exports[`ecl-list-illustration renders 1`] = `
           </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+    </ecl-list-illustration-item>
+    <ecl-list-illustration-item class="ecl-list-illustration__item sc-ecl-list-illustration-ec" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 3" role="listitem">
+      <!---->
       <div class="ecl-list-illustration__item-content ecl-list-illustration__item-content--row sc-ecl-list-illustration-ec">
         <ecl-picture role="img">
           <!---->
@@ -63,8 +66,9 @@ exports[`ecl-list-illustration renders 1`] = `
           </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+    </ecl-list-illustration-item>
+    <ecl-list-illustration-item class="ecl-list-illustration__item sc-ecl-list-illustration-ec" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 4" role="listitem">
+      <!---->
       <div class="ecl-list-illustration__item-content ecl-list-illustration__item-content--row sc-ecl-list-illustration-ec">
         <ecl-picture role="img">
           <!---->
@@ -83,8 +87,9 @@ exports[`ecl-list-illustration renders 1`] = `
           </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+    </ecl-list-illustration-item>
+    <ecl-list-illustration-item class="ecl-list-illustration__item sc-ecl-list-illustration-ec" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="List with illustration item 5" role="listitem">
+      <!---->
       <div class="ecl-list-illustration__item-content ecl-list-illustration__item-content--row sc-ecl-list-illustration-ec">
         <ecl-picture role="img">
           <!---->
@@ -103,16 +108,17 @@ exports[`ecl-list-illustration renders 1`] = `
           </div>
         </div>
       </div>
-    </li>
-  </ul>
+    </ecl-list-illustration-item>
+  </div>
 </ecl-list-illustration>
 `;
 
 exports[`ecl-list-illustration renders correctly as a number list 1`] = `
 <ecl-list-illustration color-mode="blue" column="2" number-list="">
   <!---->
-  <ul class="ecl-color-mode--blue ecl-list-illustration ecl-list-illustration--col-2 ecl-list-illustration--font-l ecl-list-illustration--number-list ecl-list-illustration--number-list-reset" style="--ecl-list-illustration-counter-start: 0;">
-    <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+  <div class="ecl-color-mode--blue ecl-list-illustration ecl-list-illustration--col-2 ecl-list-illustration--font-l ecl-list-illustration--number-list ecl-list-illustration--number-list-reset" role="list" style="--ecl-list-illustration-counter-start: 0;">
+    <ecl-list-illustration-item class="ecl-list-illustration__item sc-ecl-list-illustration-ec" item-title="List with illustration item 1" role="listitem">
+      <!---->
       <div class="ecl-list-illustration__item-content sc-ecl-list-illustration-ec">
         <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
           <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
@@ -125,8 +131,9 @@ exports[`ecl-list-illustration renders correctly as a number list 1`] = `
           </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+    </ecl-list-illustration-item>
+    <ecl-list-illustration-item class="ecl-list-illustration__item sc-ecl-list-illustration-ec" item-title="List with illustration item 2" role="listitem">
+      <!---->
       <div class="ecl-list-illustration__item-content sc-ecl-list-illustration-ec">
         <div class="ecl-list-illustration__detail sc-ecl-list-illustration-ec">
           <div class="ecl-list-illustration__title-container sc-ecl-list-illustration-ec">
@@ -139,16 +146,17 @@ exports[`ecl-list-illustration renders correctly as a number list 1`] = `
           </div>
         </div>
       </div>
-    </li>
-  </ul>
+    </ecl-list-illustration-item>
+  </div>
 </ecl-list-illustration>
 `;
 
 exports[`ecl-list-illustration renders correctly as an icon list 1`] = `
 <ecl-list-illustration color-mode="blue" column="2" icon-list="">
   <!---->
-  <ul class="ecl-color-mode--blue ecl-list-illustration ecl-list-illustration--col-2 ecl-list-illustration--font-l ecl-list-illustration--icon-list">
-    <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+  <div class="ecl-color-mode--blue ecl-list-illustration ecl-list-illustration--col-2 ecl-list-illustration--font-l ecl-list-illustration--icon-list" role="list">
+    <ecl-list-illustration-item class="ecl-list-illustration__item sc-ecl-list-illustration-ec" icon="check-bold" item-title="List with illustration item 1" role="listitem">
+      <!---->
       <div class="ecl-list-illustration__item-content sc-ecl-list-illustration-ec">
         <ecl-icon style-class="ecl-list-illustration__icon sc-ecl-list-illustration-ec">
           <span class="ecl-icon ecl-icon--2xl ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--check-bold wt-icon--placeholder"></span>
@@ -164,8 +172,9 @@ exports[`ecl-list-illustration renders correctly as an icon list 1`] = `
           </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+    </ecl-list-illustration-item>
+    <ecl-list-illustration-item class="ecl-list-illustration__item sc-ecl-list-illustration-ec" icon="check-bold" item-title="List with illustration item 2" role="listitem">
+      <!---->
       <div class="ecl-list-illustration__item-content sc-ecl-list-illustration-ec">
         <ecl-icon style-class="ecl-list-illustration__icon sc-ecl-list-illustration-ec">
           <span class="ecl-icon ecl-icon--2xl ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--check-bold wt-icon--placeholder"></span>
@@ -181,16 +190,17 @@ exports[`ecl-list-illustration renders correctly as an icon list 1`] = `
           </div>
         </div>
       </div>
-    </li>
-  </ul>
+    </ecl-list-illustration-item>
+  </div>
 </ecl-list-illustration>
 `;
 
 exports[`ecl-list-illustration renders correctly with an icon 1`] = `
 <ecl-list-illustration color-mode="blue" column="1" font-size="m">
   <!---->
-  <ul class="ecl-color-mode--blue ecl-list-illustration ecl-list-illustration--col-1 ecl-list-illustration--font-m">
-    <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+  <div class="ecl-color-mode--blue ecl-list-illustration ecl-list-illustration--col-1 ecl-list-illustration--font-m" role="list">
+    <ecl-list-illustration-item class="ecl-list-illustration__item sc-ecl-list-illustration-ec" icon="regulation" item-title="List with illustration item 1" role="listitem">
+      <!---->
       <div class="ecl-list-illustration__item-content sc-ecl-list-illustration-ec">
         <ecl-icon style-class="ecl-list-illustration__icon sc-ecl-list-illustration-ec">
           <span class="ecl-icon ecl-icon--2xl ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--placeholder wt-icon--regulation"></span>
@@ -206,8 +216,9 @@ exports[`ecl-list-illustration renders correctly with an icon 1`] = `
           </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+    </ecl-list-illustration-item>
+    <ecl-list-illustration-item class="ecl-list-illustration__item sc-ecl-list-illustration-ec" icon="regulation" item-title="List with illustration item 2" role="listitem">
+      <!---->
       <div class="ecl-list-illustration__item-content sc-ecl-list-illustration-ec">
         <ecl-icon style-class="ecl-list-illustration__icon sc-ecl-list-illustration-ec">
           <span class="ecl-icon ecl-icon--2xl ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--placeholder wt-icon--regulation"></span>
@@ -223,8 +234,9 @@ exports[`ecl-list-illustration renders correctly with an icon 1`] = `
           </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+    </ecl-list-illustration-item>
+    <ecl-list-illustration-item class="ecl-list-illustration__item sc-ecl-list-illustration-ec" icon="regulation" item-title="List with illustration item 3" role="listitem">
+      <!---->
       <div class="ecl-list-illustration__item-content sc-ecl-list-illustration-ec">
         <ecl-icon style-class="ecl-list-illustration__icon sc-ecl-list-illustration-ec">
           <span class="ecl-icon ecl-icon--2xl ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--placeholder wt-icon--regulation"></span>
@@ -240,8 +252,9 @@ exports[`ecl-list-illustration renders correctly with an icon 1`] = `
           </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+    </ecl-list-illustration-item>
+    <ecl-list-illustration-item class="ecl-list-illustration__item sc-ecl-list-illustration-ec" icon="regulation" item-title="List with illustration item 4" role="listitem">
+      <!---->
       <div class="ecl-list-illustration__item-content sc-ecl-list-illustration-ec">
         <ecl-icon style-class="ecl-list-illustration__icon sc-ecl-list-illustration-ec">
           <span class="ecl-icon ecl-icon--2xl ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--placeholder wt-icon--regulation"></span>
@@ -257,8 +270,9 @@ exports[`ecl-list-illustration renders correctly with an icon 1`] = `
           </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-list-illustration__item sc-ecl-list-illustration-ec">
+    </ecl-list-illustration-item>
+    <ecl-list-illustration-item class="ecl-list-illustration__item sc-ecl-list-illustration-ec" icon="regulation" item-title="List with illustration item 5" role="listitem">
+      <!---->
       <div class="ecl-list-illustration__item-content sc-ecl-list-illustration-ec">
         <ecl-icon style-class="ecl-list-illustration__icon sc-ecl-list-illustration-ec">
           <span class="ecl-icon ecl-icon--2xl ecl-list-illustration__icon sc-ecl-list-illustration-ec wt-icon--placeholder wt-icon--regulation"></span>
@@ -274,7 +288,7 @@ exports[`ecl-list-illustration renders correctly with an icon 1`] = `
           </div>
         </div>
       </div>
-    </li>
-  </ul>
+    </ecl-list-illustration-item>
+  </div>
 </ecl-list-illustration>
 `;

@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, Host } from '@stencil/core';
 
 @Component({
   tag: 'ecl-pagination-item',
@@ -45,7 +45,10 @@ export class EclPaginationItem {
 
   render() {
     return (
-      <li class={this.getClass()}>
+      <Host 
+        class={this.getClass()}
+        role="listitem"
+      >
       { this.truncation ?
         <span class={`ecl-pagination__text ecl-pagination__text--summary sc-ecl-pagination-${this.theme}`}>...</span>
       : !this.current ?
@@ -79,7 +82,7 @@ export class EclPaginationItem {
           {this.ariaLabel}
         </span> : ''
       }
-      </li>
+      </Host>
     )
   };
 }

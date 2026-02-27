@@ -84,11 +84,7 @@ export class EclGallery {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
-  componentDidRender() {
-    const items = this.el.querySelectorAll('.ecl-gallery__item');
-    this.el.querySelector('.ecl-gallery__list').innerHTML = '';
-    this.el.querySelector('.ecl-gallery__list').append(...items);
-    
+  componentDidRender() { 
     const images = [
       ...this.el.querySelectorAll('.ecl-gallery__image'),
       ...this.el.querySelectorAll('.ecl-gallery__slider-previous'),
@@ -123,9 +119,12 @@ export class EclGallery {
         {...this.disableOverlay && ({ 'data-ecl-gallery-no-overlay' : true })}
         {...(!this.expandable && this.srGalleryLabel) && ({ 'aria-label': this.srGalleryLabel })}
       >
-        <ul class="ecl-gallery__list">
+        <div
+          class="ecl-gallery__list"
+          role="list"
+        >
           <slot></slot>
-        </ul>
+        </div>
         <div class="ecl-gallery__footer">
         {this.expandable ? (
           <div class="ecl-gallery__info">

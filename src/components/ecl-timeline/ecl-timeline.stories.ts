@@ -7,6 +7,7 @@ export default {
 const Template = (args) => 
   `<ecl-timeline
     color-mode="${args.color_mode}"
+    hide-from=5
    >
     <ecl-timeline-item
       type="headline"
@@ -44,12 +45,6 @@ const Template = (args) =>
       label="Item 5 label"
     >
       Suspendisse varius neque at nunc auctor, vel dictum purus pellentesque. Etiam ac ex mi. Fusce sed posuere ligula, sed malesuada nisl. Nulla elementum condimentum nunc at bibendum
-    </ecl-timeline-item>
-    <ecl-timeline-item 
-      type="toggle"
-      toggle-label-collapsed="Show 10 more items"
-      toggle-label-expanded="Hide 10 items"
-    >
     </ecl-timeline-item>
     <ecl-timeline-item
       label="Item 6 label"
@@ -96,12 +91,20 @@ const Template = (args) =>
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit
     </ecl-timeline-item>
+    <ecl-timeline-item 
+      type="toggle"
+      toggle-label-collapsed="Show 9 more items"
+      toggle-label-expanded="Show less"
+    >
+    </ecl-timeline-item>
     <ecl-timeline-item
       item-title="Item 14 title"
       label="Item 14 label"
+      is-last
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit
     </ecl-timeline-item>
+
   </ecl-timeline>`;
 
 export const Timeline = Template.bind({});

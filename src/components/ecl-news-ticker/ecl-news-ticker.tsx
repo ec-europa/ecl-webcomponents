@@ -41,19 +41,6 @@ export class EclNewsTicker {
     const countMax = this.el.querySelectorAll('.ecl-news-ticker__slide').length as unknown as string;
     counterMax.innerHTML = countMax;
 
-    if (this.el.querySelector('.ecl-news-ticker__slides')) {
-      // Clean the html so that the script finds what it expects.
-      const slides = this.el.querySelectorAll('.ecl-news-ticker__slide');
-      this.el.querySelector('.ecl-news-ticker__slides').innerHTML = '';
-      this.el.querySelector('.ecl-news-ticker__slides').append(...slides);
-    }
-    if (this.el.querySelector('.ecl-news-ticker__controls')) {
-      const controls = this.el.querySelectorAll('.ecl-news-ticker__actions button');
-      const counter = this.el.querySelectorAll('.ecl-news-ticker__counter');
-      this.el.querySelector('.ecl-news-ticker__actions').innerHTML = '';
-      this.el.querySelector('.ecl-news-ticker__actions').append(...controls);
-      this.el.querySelector('.ecl-news-ticker__controls').append(...counter);
-    }
     ;(window as any).ECL = (window as any).ECL || {};
     ECL.NewsTicker = NewsTicker;
 
@@ -74,9 +61,12 @@ export class EclNewsTicker {
       >
         <div class="ecl-news-ticker__container">
           <div class="ecl-news-ticker__content">
-            <ul class="ecl-news-ticker__slides">
+            <div
+              class="ecl-news-ticker__slides"
+              role="list"
+            >
               <slot></slot>
-            </ul>
+            </div>
           </div>
         </div>
         <div class="ecl-news-ticker__controls">

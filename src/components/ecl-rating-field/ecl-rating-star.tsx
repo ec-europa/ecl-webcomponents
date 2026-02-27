@@ -1,4 +1,4 @@
-import { Component, h, Prop, Event, EventEmitter } from '@stencil/core';
+import { Component, h, Prop, Event, EventEmitter, Host, Element } from '@stencil/core';
 
 @Component({
   tag: 'ecl-rating-star',
@@ -9,6 +9,7 @@ import { Component, h, Prop, Event, EventEmitter } from '@stencil/core';
   shadow: false,
 })
 export class EclRatingStar {
+  @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() itemId: string;
@@ -25,6 +26,33 @@ export class EclRatingStar {
   @Event() inputFocus: EventEmitter<FocusEvent>;
   @Event() inputBlur: EventEmitter<FocusEvent>;
   @Event() inputChange: EventEmitter;
+
+  private rating = 0;
+
+  private handleStarClick = (event: Event) => {
+    const star = (event.currentTarget as HTMLElement);
+    const value = Number(star.dataset.value);
+
+    this.rating = value;
+    this.updateStars();
+  };
+
+  private updateStars() {
+    const field = this.el.closest('.ecl-rating-field');
+    if (field) {
+      const stars = field.querySelectorAll('.ecl-rating-field__label');
+
+      stars.forEach((star: Element) => {
+        const value = Number((star as HTMLElement).dataset.value);
+
+        if (value <= this.rating) {
+          star.classList.add('is-filled');
+        } else {
+          star.classList.remove('is-filled');
+        }
+      });
+    }
+  }
 
   handleFocus(event) {
     this.inputFocus.emit(event);
@@ -47,10 +75,10 @@ export class EclRatingStar {
 
   render() {
     return (
-      <div>
+      <Host>
         <input
           id={this.itemId}
-          class={`ecl-rating-field__input ecl-rating-field-${this.theme} ecl-rating-field__star`}
+          class={`ecl-rating-field__input ecl-rating-field-${this.theme}`}
           type="radio"
           name={this.name}
           value={this.value}
@@ -62,8 +90,10 @@ export class EclRatingStar {
           onChange={ev => this.handleChange(ev)}
         />
         <label 
-          class={`ecl-rating-field__label ecl-rating-field-${this.theme} ecl-rating-field__star`} 
+          class={`ecl-rating-field__label ecl-rating-field-${this.theme}`} 
           htmlFor={this.itemId}
+          data-value={this.value}
+          onClick={this.handleStarClick}
         >
         { this.label ?
           <span class="ecl-rating-field__sr-label">{ this.label }</span> : '' }
@@ -80,7 +110,7 @@ export class EclRatingStar {
           >
           </ecl-icon>
         </label>
-      </div>
+      </Host>
     );
   }
 }

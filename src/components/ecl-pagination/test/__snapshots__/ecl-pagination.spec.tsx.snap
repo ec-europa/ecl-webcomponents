@@ -3,9 +3,10 @@
 exports[`ecl-pagination renders 1`] = `
 <ecl-pagination>
   <!---->
-  <div class="ecl-pagination">
-    <ul class="ecl-pagination__list">
-      <li class="ecl-pagination__item ecl-pagination__item--previous sc-ecl-pagination-ec">
+  <div class="ecl-pagination" role="list">
+    <div class="ecl-pagination__list">
+      <ecl-pagination-item aria-label="Previous page" class="ecl-pagination__item ecl-pagination__item--previous sc-ecl-pagination-ec" path="/example.html" previous="" role="listitem">
+        <!---->
         <ecl-link aria-label="Previous page" hide-label="">
           <!---->
           <a aria-label="Previous page" class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--icon-only ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
@@ -17,74 +18,84 @@ exports[`ecl-pagination renders 1`] = `
             </span>
           </a>
         </ecl-link>
-      </li>
-      <li class="ecl-pagination__item sc-ecl-pagination-ec">
+      </ecl-pagination-item>
+      <ecl-pagination-item aria-label="Page 1" class="ecl-pagination__item sc-ecl-pagination-ec" path="/example.html" role="listitem">
+        <!---->
         <ecl-link aria-label="Page 1">
           <!---->
           <a aria-label="Page 1" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
             1
           </a>
         </ecl-link>
-      </li>
-      <li class="ecl-pagination__item ecl-pagination__item--truncation sc-ecl-pagination-ec">
+      </ecl-pagination-item>
+      <ecl-pagination-item class="ecl-pagination__item ecl-pagination__item--truncation sc-ecl-pagination-ec" role="listitem" truncation="">
+        <!---->
         <span class="ecl-pagination__text ecl-pagination__text--summary sc-ecl-pagination-ec">
           ...
         </span>
-      </li>
-      <li class="ecl-pagination__item sc-ecl-pagination-ec">
+      </ecl-pagination-item>
+      <ecl-pagination-item aria-label="Page 24" class="ecl-pagination__item sc-ecl-pagination-ec" path="/example.html" role="listitem">
+        <!---->
         <ecl-link aria-label="Page 24">
           <!---->
           <a aria-label="Page 24" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
             24
           </a>
         </ecl-link>
-      </li>
-      <li class="ecl-pagination__item sc-ecl-pagination-ec">
+      </ecl-pagination-item>
+      <ecl-pagination-item aria-label="Page 25" class="ecl-pagination__item sc-ecl-pagination-ec" path="/example.html" role="listitem">
+        <!---->
         <ecl-link aria-label="Page 25">
           <!---->
           <a aria-label="Page 25" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
             25
           </a>
         </ecl-link>
-      </li>
-      <li class="ecl-pagination__item ecl-pagination__item--current sc-ecl-pagination-ec">
+      </ecl-pagination-item>
+      <ecl-pagination-item aria-label="Page 26" class="ecl-pagination__item ecl-pagination__item--current sc-ecl-pagination-ec" current="" path="/example.html" role="listitem">
+        <!---->
         <span class="ecl-pagination__text ecl-pagination__text--summary sc-ecl-pagination-ec">
           26
         </span>
         <span class="ecl-pagination__text ecl-pagination__text--full sc-ecl-pagination-ec">
           Page 26
         </span>
-      </li>
-      <li class="ecl-pagination__item sc-ecl-pagination-ec">
+      </ecl-pagination-item>
+      <ecl-pagination-item aria-label="Page 27" class="ecl-pagination__item sc-ecl-pagination-ec" path="/example.html" role="listitem">
+        <!---->
         <ecl-link aria-label="Page 27">
           <!---->
           <a aria-label="Page 27" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
             27
           </a>
         </ecl-link>
-      </li>
-      <li class="ecl-pagination__item sc-ecl-pagination-ec">
+      </ecl-pagination-item>
+      <ecl-pagination-item aria-label="Page 28" class="ecl-pagination__item sc-ecl-pagination-ec" current-page="" role="listitem">
+        <!---->
         <ecl-link aria-label="Page 28">
           <!---->
           <a aria-label="Page 28" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec">
             28
           </a>
         </ecl-link>
-      </li>
-      <li class="ecl-pagination__item ecl-pagination__item--truncation sc-ecl-pagination-ec">
+      </ecl-pagination-item>
+      <ecl-pagination-item class="ecl-pagination__item ecl-pagination__item--truncation sc-ecl-pagination-ec" role="listitem" truncation="">
+        <!---->
         <span class="ecl-pagination__text ecl-pagination__text--summary sc-ecl-pagination-ec">
           ...
         </span>
-      </li>
-      <li class="ecl-pagination__item sc-ecl-pagination-ec">
+      </ecl-pagination-item>
+      <ecl-pagination-item aria-label="Page 40" class="ecl-pagination__item sc-ecl-pagination-ec" path="/example.html" role="listitem">
+        <!---->
         <ecl-link aria-label="Page 40">
           <!---->
           <a aria-label="Page 40" class="ecl-link ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec" href="/example.html">
             40
           </a>
         </ecl-link>
-      </li>
-      <li class="ecl-pagination__item ecl-pagination__item--next sc-ecl-pagination-ec">
+      </ecl-pagination-item>
+      <ecl-pagination-item aria-label="Next page" class="ecl-pagination__item ecl-pagination__item--next sc-ecl-pagination-ec" next="" role="listitem">
+        <!---->
         <ecl-link aria-label="Next page" hide-label="">
           <!---->
           <a aria-label="Next page" class="ecl-link ecl-link--icon ecl-link--icon-after ecl-link--icon-only ecl-link--standalone ecl-pagination__link sc-ecl-pagination-ec">
@@ -97,8 +108,8 @@ exports[`ecl-pagination renders 1`] = `
             </ecl-icon>
           </a>
         </ecl-link>
-      </li>
-    </ul>
+      </ecl-pagination-item>
+    </div>
   </div>
 </ecl-pagination>
 `;

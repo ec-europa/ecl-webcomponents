@@ -19,6 +19,7 @@ export class EclInpageNavigation {
   @Prop() noScript: boolean = false;
   @Prop() inpageTitle: string;
   @Prop() inpageId: string;
+  @Prop() items: string;
 
   getClass(): string {
     const styleClasses = [
@@ -38,26 +39,16 @@ export class EclInpageNavigation {
   }
 
   componentDidLoad() {
-    const items = this.el.querySelectorAll('.ecl-inpage-navigation__item');
-    if (items) {
-      items.forEach((item) => {
-        const link = item.querySelector('.ecl-inpage-navigation__link');
-        if (link) {
-          link.setAttribute('data-ecl-inpage-navigation-link', 'data-ecl-inpage-navigation-link');
-          item.innerHTML = '';
-          item.appendChild(link);
-        }
-      });
-      this.el.querySelector('.ecl-inpage-navigation__list').innerHTML = '';
-      this.el.querySelector('.ecl-inpage-navigation__list').append(...items);
-    }
-
     if (!this.noScript) { 
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.InpageNavigation = InpageNavigation;
       const inpageNavigation = new InpageNavigation(this.el.firstElementChild);
       inpageNavigation.init();
     }
+  }
+
+  get parsedItems() {
+    return this.items ? JSON.parse(this.items) : [];
   }
 
   render() {
@@ -97,8 +88,15 @@ export class EclInpageNavigation {
             class="ecl-inpage-navigation__list"
             data-ecl-inpage-navigation-list
             id={`${this.inpageId}-list`}
+            role="list"
           >
-            <slot></slot>
+        {this.parsedItems.length &&
+          this.parsedItems.map(item => (
+            <li>
+              <ecl-inpage-navigation-item path={item.path}>{item.label}</ecl-inpage-navigation-item>
+            </li>
+          ))
+        }
           </ul>
         </div>
       </nav>

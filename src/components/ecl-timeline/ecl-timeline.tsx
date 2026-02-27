@@ -17,6 +17,7 @@ export class EclTimeline {
   @Prop() styleClass: string;
   @Prop() noScript: boolean = false;
   @Prop() colorMode: string;
+  @Prop() hideFrom: number;
   @State() toBeToggled: boolean = false;
 
   getClass(): string {
@@ -41,6 +42,22 @@ export class EclTimeline {
       this.el.firstElementChild.classList.add('ecl-timeline--has-headline');
     }
 
+    if (this.hideFrom) {
+      const items = this.el.querySelectorAll('.ecl-timeline__item');
+
+      if (items) {
+        const end = [...items].findIndex(item =>
+          item.classList.contains('ecl-timeline__item--toggle')
+        ) || [...items].length;
+
+        Array.from(items)
+        .slice(this.hideFrom, end)
+        .forEach(item => {
+          item.classList.add('ecl-timeline__item--collapsed');
+        });
+      }
+    }
+
     if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Timeline = Timeline;
@@ -58,20 +75,15 @@ export class EclTimeline {
     }
   }
 
-  componentDidRender() {
-    const items = this.el.querySelectorAll('.ecl-timeline__item');
-    this.el.querySelector('.ecl-timeline').innerHTML = '';
-    this.el.querySelector('.ecl-timeline').append(...items);
-  }
-
   render() {
     return (
-      <ol 
+      <div 
         class={this.getClass()}
         data-ecl-timeline
+        role="list"
       >
         <slot></slot>
-      </ol>
+      </div>
     );
   }
 }

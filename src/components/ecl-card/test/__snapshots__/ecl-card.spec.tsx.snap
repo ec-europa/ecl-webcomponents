@@ -6,21 +6,23 @@ exports[`ecl-card renders 1`] = `
   <article class="ecl-card">
     <ecl-picture data-ecl-picture-link image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" imagealt="Image alternative" imgclass="ecl-card__image sc-ecl-card-ec" styleclass="ecl-card__picture sc-ecl-picture-ec" zoom=""></ecl-picture>
     <div class="ecl-card__body">
-      <ecl-content-block data-ecl-auto-initialized="true" has-description="" has-labels="" has-title="" meta-primary="[&quot;META1&quot;, &quot;Meta2&quot;]" meta-secondary="[{&quot;label&quot;: &quot;2018/10/22&quot;, &quot;icon&quot;: &quot;calendar&quot;}, {&quot;label&quot;: &quot;Luxembourg&quot;, &quot;icon&quot;: &quot;location&quot;}]" theme="ec">
+      <ecl-content-block has-description="" has-labels="" has-title="" meta-primary="[&quot;META1&quot;, &quot;Meta2&quot;]" meta-secondary="[{&quot;label&quot;: &quot;2018/10/22&quot;, &quot;icon&quot;: &quot;calendar&quot;}, {&quot;label&quot;: &quot;Luxembourg&quot;, &quot;icon&quot;: &quot;location&quot;}]" theme="ec">
         <!---->
         <div class="ecl-content-block">
-          <ul class="ecl-content-block__label-container">
-            <li class="ecl-content-block__label-item sc-ecl-content-block-ec">
+          <div class="ecl-content-block__label-container">
+            <ecl-label class="ecl-content-block__label-item sc-ecl-content-block-ec" slot="labels" theme="ec" variant="highlight">
+              <!---->
               <span class="ecl-label ecl-label--highlight sc-ecl-content-block-ec">
                 Highlighted
               </span>
-            </li>
-            <li class="ecl-content-block__label-item sc-ecl-content-block-ec">
+            </ecl-label>
+            <ecl-label class="ecl-content-block__label-item sc-ecl-content-block-ec" slot="labels" theme="ec" variant="high">
+              <!---->
               <span class="ecl-label ecl-label--high sc-ecl-content-block-ec">
                 Call status: Upcoming
               </span>
-            </li>
-          </ul>
+            </ecl-label>
+          </div>
           <ul class="ecl-content-block__primary-meta-container">
             <li class="ecl-content-block__primary-meta-item">
               META1

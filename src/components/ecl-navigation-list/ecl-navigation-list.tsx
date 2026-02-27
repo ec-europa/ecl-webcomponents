@@ -32,12 +32,6 @@ export class EclNavigationList {
   }
 
   componentDidLoad() {
-    // Clean the html to make the zebra work,.
-    const items = this.el.querySelectorAll('.ecl-navigation-list__item');
-    if (items) {
-      this.el.querySelector('.ecl-navigation-list').innerHTML = '';
-      this.el.querySelector('.ecl-navigation-list').append(...items);
-    }
     const blocks = this.el.querySelectorAll('.ecl-content-block');
     if (blocks) {
       blocks.forEach((block) => {

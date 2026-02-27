@@ -48,16 +48,12 @@ export class EclContentBlock {
       }
     }
     if (this.hasLabels) {
-      const labelsContainer = this.el.querySelector('.ecl-content-block__label-container');
       const labels = this.el.querySelectorAll('.ecl-label');
       if (labels) {
-        labelsContainer.innerHTML = '';
         labels.forEach((label) => {
           label.classList.add(`sc-ecl-content-block-${this.theme}`);
-          const listEl = document.createElement('li');
+          const listEl = label.parentElement;
           listEl.classList.add('ecl-content-block__label-item', `sc-ecl-content-block-${this.theme}`);
-          listEl.appendChild(label);
-          labelsContainer.appendChild(listEl);
         });
       }
     }
@@ -67,13 +63,9 @@ export class EclContentBlock {
       linksContainers.forEach((linkList) => {
         const thisLinks = linkList.querySelectorAll('.ecl-link');
         if (thisLinks) {
-          linkList.innerHTML = '';
           thisLinks.forEach((link) => {
             link.classList.add(`sc-ecl-content-block-${this.theme}`);
-            const listEl = document.createElement('li');
-            listEl.classList.add('ecl-content-block__link-item', `sc-ecl-content-block-${this.theme}`);
-            listEl.appendChild(link);
-            linkList.appendChild(listEl);
+            link.parentElement.classList.add('ecl-content-block__link-item', `sc-ecl-content-block-${this.theme}`);
           });
         }
       });
@@ -89,7 +81,7 @@ export class EclContentBlock {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.ContentBlock = ContentBlock;
       
-      const contentBlock = new ContentBlock(this.el);
+      const contentBlock = new ContentBlock(this.el.firstElementChild);
       contentBlock.init();
     }
   }
@@ -100,9 +92,9 @@ export class EclContentBlock {
     return (
      <div class={this.getClass()}>
       { this.hasLabels &&
-        <ul class="ecl-content-block__label-container">
+        <div class="ecl-content-block__label-container">
           <slot name="labels"></slot>
-        </ul>
+        </div>
       }
       { metaPrimaryArray &&
         <ul class="ecl-content-block__primary-meta-container">
@@ -152,13 +144,13 @@ export class EclContentBlock {
       }
       { this.hasLinks &&
         <div class="ecl-content-block__link-container">
-          <ul class="ecl-content-block__link-list">
+          <div class="ecl-content-block__link-list">
             <slot name="links"></slot>
-          </ul>
+          </div>
           { this.hasSecondaryLinks &&
-          <ul class="ecl-content-block__link-list">
+          <div class="ecl-content-block__link-list">
             <slot name="links-secondary"></slot>
-          </ul>
+          </div>
           }
         </div>
       }

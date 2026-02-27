@@ -4,18 +4,20 @@ exports[`ecl-content-block renders 1`] = `
 <ecl-content-block has-description="" has-labels="" has-links="" has-lists="" has-secondary-links="" has-title="" meta-primary="[&quot;PRIMARY META&quot;, &quot;DD Month Year&quot;]" meta-secondary="[{&quot;label&quot;: &quot;2018/10/22&quot;, &quot;icon&quot;: &quot;calendar&quot;}, {&quot;label&quot;: &quot;Luxembourg&quot;, &quot;icon&quot;: &quot;location&quot;}]" theme="ec">
   <!---->
   <div class="ecl-content-block">
-    <ul class="ecl-content-block__label-container">
-      <li class="ecl-content-block__label-item sc-ecl-content-block-ec">
+    <div class="ecl-content-block__label-container">
+      <ecl-label class="ecl-content-block__label-item sc-ecl-content-block-ec" slot="labels" theme="ec" variant="highlight">
+        <!---->
         <span class="ecl-label ecl-label--highlight sc-ecl-content-block-ec">
           Highlight
         </span>
-      </li>
-      <li class="ecl-content-block__label-item sc-ecl-content-block-ec">
+      </ecl-label>
+      <ecl-label class="ecl-content-block__label-item sc-ecl-content-block-ec" slot="labels" theme="ec" variant="high">
+        <!---->
         <span class="ecl-label ecl-label--high sc-ecl-content-block-ec">
           High importance
         </span>
-      </li>
-    </ul>
+      </ecl-label>
+    </div>
     <ul class="ecl-content-block__primary-meta-container">
       <li class="ecl-content-block__primary-meta-item">
         PRIMARY META
@@ -166,40 +168,46 @@ exports[`ecl-content-block renders 1`] = `
       </ecl-description-list>
     </div>
     <div class="ecl-content-block__link-container">
-      <ul class="ecl-content-block__link-list">
-        <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+      <div class="ecl-content-block__link-list">
+        <ecl-link class="ecl-content-block__link-item sc-ecl-content-block-ec" path="/example.html" slot="links" theme="ec" variant="standalone">
+          <!---->
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
             Primary Link 1
           </a>
-        </li>
-        <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+        </ecl-link>
+        <ecl-link class="ecl-content-block__link-item sc-ecl-content-block-ec" path="/example.html" slot="links" theme="ec" variant="standalone">
+          <!---->
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
             Primary Link 2
           </a>
-        </li>
-        <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+        </ecl-link>
+        <ecl-link class="ecl-content-block__link-item sc-ecl-content-block-ec" path="/example.html" slot="links" theme="ec" variant="standalone">
+          <!---->
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
             Primary Link 3
           </a>
-        </li>
-        <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+        </ecl-link>
+        <ecl-link class="ecl-content-block__link-item sc-ecl-content-block-ec" path="/example.html" slot="links" theme="ec" variant="standalone">
+          <!---->
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
             Primary Link 4
           </a>
-        </li>
-      </ul>
-      <ul class="ecl-content-block__link-list">
-        <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+        </ecl-link>
+      </div>
+      <div class="ecl-content-block__link-list">
+        <ecl-link class="ecl-content-block__link-item sc-ecl-content-block-ec" path="/example.html" slot="links-secondary" theme="ec" variant="standalone">
+          <!---->
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
             Secondary Link 1
           </a>
-        </li>
-        <li class="ecl-content-block__link-item sc-ecl-content-block-ec">
+        </ecl-link>
+        <ecl-link class="ecl-content-block__link-item sc-ecl-content-block-ec" path="/example.html" slot="links-secondary" theme="ec" variant="standalone">
+          <!---->
           <a class="ecl-link ecl-link--standalone sc-ecl-content-block-ec" href="/example.html">
             Secondary Link 2
           </a>
-        </li>
-      </ul>
+        </ecl-link>
+      </div>
     </div>
   </div>
 </ecl-content-block>

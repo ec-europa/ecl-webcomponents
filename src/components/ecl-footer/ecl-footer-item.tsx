@@ -1,4 +1,4 @@
- import { Component, Prop, h } from '@stencil/core';
+ import { Component, Prop, h, Host } from '@stencil/core';
 
 @Component({
   tag: 'ecl-footer-item',
@@ -10,6 +10,8 @@ export class EclFooterItem{
   @Prop() styleClass: string;
   @Prop() link: string;
   @Prop() ariaLabel: string;
+  @Prop() isFirst: boolean = false;
+  @Prop() isLast: boolean = false;
 
   getClass(): string {
     const styleClasses = [
@@ -17,6 +19,14 @@ export class EclFooterItem{
       `sc-ecl-footer-${this.theme}-${this.theme}`,
       this.styleClass
     ];
+
+    if (this.isLast) {
+      styleClasses.push('is-last');
+    }
+
+    if (this.isFirst) {
+      styleClasses.push('is-first');
+    }
 
     return styleClasses.join(' ');
   }
@@ -27,7 +37,7 @@ export class EclFooterItem{
 
   render() { 
     return (
-      <li
+      <Host
         class={this.getClass()}
       >
         <ecl-link
@@ -41,7 +51,7 @@ export class EclFooterItem{
           <slot name="icon-before"></slot>
           <slot></slot>  
         </ecl-link>
-      </li>
+      </Host>
     );
   }
 }

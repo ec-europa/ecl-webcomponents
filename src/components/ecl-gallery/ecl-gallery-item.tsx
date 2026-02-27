@@ -1,4 +1,4 @@
-import { Component, h, Prop, Element } from '@stencil/core';
+import { Component, h, Prop, Element, Host } from '@stencil/core';
 
 @Component({
   tag: 'ecl-gallery-item',
@@ -74,7 +74,11 @@ export class EclGalleryItem {
 
   render() {
     return (
-      <li class={this.getClass()} id={this.getId()}>
+      <Host
+        class={this.getClass()}
+        id={this.getId()}
+        role="listitem"
+      >
         <a
           href={this.mediaIframeHref ? this.mediaIframeHref : this.mediaHref}
           class={`ecl-gallery__item-link sc-ecl-gallery-${this.theme}`}
@@ -133,7 +137,7 @@ export class EclGalleryItem {
             </figcaption>
           </figure>
         </a>
-      </li>
+      </Host>
     );
   }
 }

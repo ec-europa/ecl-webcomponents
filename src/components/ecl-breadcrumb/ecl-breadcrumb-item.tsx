@@ -1,4 +1,4 @@
-import { Component, h, Prop, Element } from '@stencil/core';
+import { Component, h, Prop, Element, Host } from '@stencil/core';
 
 @Component({
   tag: 'ecl-breadcrumb-item',
@@ -49,7 +49,11 @@ export class EclBreadcrumbItem {
   }
 
   getLiAttrs() {
-    const attrs = { 'data-ecl-breadcrumb-item' : 'static' };
+    const attrs = [
+      { 'data-ecl-breadcrumb-item' : 'static' },
+      { 'role': 'listitem' }
+    ];
+    
     if (this.ellipsis) {
       attrs['data-ecl-breadcrumb-ellipsis'] = '';
       attrs['aria-hidden'] = 'true';
@@ -63,7 +67,7 @@ export class EclBreadcrumbItem {
 
   render() {
     return (
-      <li class={this.getClass()} {...this.getLiAttrs()}>
+      <Host class={this.getClass()} {...this.getLiAttrs()}>
         { !this.currentPage && !this.ellipsis ?
           [
             <ecl-link
@@ -106,7 +110,7 @@ export class EclBreadcrumbItem {
         { this.currentPage ?
           <slot></slot> : ''
         }
-      </li>
+      </Host>
     );
   }
 

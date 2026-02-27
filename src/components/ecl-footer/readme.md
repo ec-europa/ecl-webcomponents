@@ -7,12 +7,14 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type     | Default     |
-| ------------ | ------------- | ----------- | -------- | ----------- |
-| `ariaLabel`  | `aria-label`  |             | `string` | `undefined` |
-| `link`       | `link`        |             | `string` | `undefined` |
-| `styleClass` | `style-class` |             | `string` | `undefined` |
-| `theme`      | `theme`       |             | `string` | `undefined` |
+| Property     | Attribute     | Description | Type      | Default     |
+| ------------ | ------------- | ----------- | --------- | ----------- |
+| `ariaLabel`  | `aria-label`  |             | `string`  | `undefined` |
+| `isFirst`    | `is-first`    |             | `boolean` | `false`     |
+| `isLast`     | `is-last`     |             | `boolean` | `false`     |
+| `link`       | `link`        |             | `string`  | `undefined` |
+| `styleClass` | `style-class` |             | `string`  | `undefined` |
+| `theme`      | `theme`       |             | `string`  | `undefined` |
 
 
 ## Dependencies

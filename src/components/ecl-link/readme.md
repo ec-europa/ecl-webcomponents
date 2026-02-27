@@ -45,7 +45,6 @@
  - [ecl-footer-eu](../ecl-footer)
  - [ecl-footer-item](../ecl-footer)
  - [ecl-gallery](../ecl-gallery)
- - [ecl-inpage-navigation-item](../ecl-inpage-navigation)
  - [ecl-list-illustration-item](../ecl-list-illustration)
  - [ecl-mega-menu-featured-list-item](../ecl-mega-menu)
  - [ecl-mega-menu-item](../ecl-mega-menu)
@@ -80,7 +79,6 @@ graph TD;
   ecl-footer-eu --> ecl-link
   ecl-footer-item --> ecl-link
   ecl-gallery --> ecl-link
-  ecl-inpage-navigation-item --> ecl-link
   ecl-list-illustration-item --> ecl-link
   ecl-mega-menu-featured-list-item --> ecl-link
   ecl-mega-menu-item --> ecl-link

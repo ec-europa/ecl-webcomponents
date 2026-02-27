@@ -9,32 +9,18 @@ export default {
 const Template = args =>
 `<ecl-grid container>
   <ecl-grid row data-ecl-inpage-navigation-container>
-    <ecl-grid columns=3>
+    <ecl-grid columns=3 breakpoint="l">
       <ecl-inpage-navigation
         inpage-title="Page contents"
         inpage-id="inpage-id"
         color-mode="${args.color_mode}"
+        items='[
+          { "path": "#inline-nav-1", "label": "Heading 1" },
+          { "path": "#inline-nav-2", "label": "Heading 2 with a long title going on several lines" },
+          { "path": "#inline-nav-3", "label": "Heading 3" },
+          { "path": "#inline-nav-4", "label": "Heading 4" }
+        ]'
       >
-        <ecl-inpage-navigation-item
-          path="#inline-nav-1"
-        >
-          Heading 1
-        </ecl-inpage-navigation-item>
-        <ecl-inpage-navigation-item
-          path="#inline-nav-2"
-        >
-          Heading 2 with a long title going on several lines
-        </ecl-inpage-navigation-item>
-        <ecl-inpage-navigation-item
-          path="#inline-nav-3"
-        >
-          Heading 3
-        </ecl-inpage-navigation-item>
-        <ecl-inpage-navigation-item
-          path="inline-nav-4"
-        >
-          Heading 4
-        </ecl-inpage-navigation-item>
       </ecl-inpage-navigation>
     </ecl-grid>
     <ecl-grid columns=9 breakpoint="l">

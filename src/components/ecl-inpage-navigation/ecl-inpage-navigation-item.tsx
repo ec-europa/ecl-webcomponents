@@ -1,4 +1,4 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, Host } from '@stencil/core';
 
 @Component({
   tag: 'ecl-inpage-navigation-item',
@@ -24,16 +24,18 @@ export class EclInpageNavigationItem {
 
   render() {
     return (
-      <li class={this.getClass()}>
-        <ecl-link
-          theme={this.theme}
-          path={this.path}
-          style-class={`ecl-inpage-navigation__link sc-ecl-inpage-navigation-${this.theme}`}
+      <Host
+       class={this.getClass()}
+       role="listitem"
+      >
+        <a
+          href={this.path}
+          class={`ecl-link ecl-inpage-navigation__link sc-ecl-inpage-navigation-${this.theme}`}
           data-ecl-inpage-navigation-link
           >
             <slot></slot>
-          </ecl-link>
-      </li>
+          </a>
+      </Host>
     );
   }
 }

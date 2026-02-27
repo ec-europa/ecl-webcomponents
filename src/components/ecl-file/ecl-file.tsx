@@ -59,10 +59,6 @@ export class EclFile {
         button.parentElement.remove();
         this.el.querySelector('.ecl-file__translation-container').prepend(button);
       }
-      
-      const translations = this.el.querySelectorAll('.ecl-file__translation-item');
-      list.innerHTML = '';
-      list.append(...translations);
 
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.FileDownload = FileDownload;

@@ -44,7 +44,6 @@ export class EclFileTranslations {
           styleClass={`ecl-file__translation-toggle sc-ecl-file-${this.theme}`}
           variant="tertiary"
           data-ecl-file-translation-toggle
-          theme={this.theme}
         >
           {this.toggleLabel}
           <ecl-icon
@@ -55,15 +54,18 @@ export class EclFileTranslations {
           >
           </ecl-icon>
         </ecl-button>
-        <ul class={`ecl-file__translation-list sc-ecl-file-${this.theme}`}>
+        <div 
+          class={`ecl-file__translation-list sc-ecl-file-${this.theme}`}
+          role="list"
+        >
           <slot></slot>
         { this.others ?
-          <li 
+          <div
             class={`ecl-file__translation-item ecl-file__translation-description sc-ecl-file-${this.theme}`}
           >
             <slot name="others"></slot>
-          </li> : '' }
-        </ul>
+          </div> : '' }
+        </div>
       </div>
     );
   }

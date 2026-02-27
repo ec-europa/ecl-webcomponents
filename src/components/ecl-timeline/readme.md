@@ -7,16 +7,17 @@
 
 ## Properties
 
-| Property               | Attribute                | Description | Type     | Default                                                                                       |
-| ---------------------- | ------------------------ | ----------- | -------- | --------------------------------------------------------------------------------------------- |
-| `elId`                 | `el-id`                  |             | `string` | `` `ecl-timeline-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}` `` |
-| `itemTitle`            | `item-title`             |             | `string` | `undefined`                                                                                   |
-| `label`                | `label`                  |             | `string` | `undefined`                                                                                   |
-| `styleClass`           | `style-class`            |             | `string` | `undefined`                                                                                   |
-| `theme`                | `theme`                  |             | `string` | `undefined`                                                                                   |
-| `toggleLabelCollapsed` | `toggle-label-collapsed` |             | `string` | `undefined`                                                                                   |
-| `toggleLabelExpanded`  | `toggle-label-expanded`  |             | `string` | `undefined`                                                                                   |
-| `type`                 | `type`                   |             | `string` | `undefined`                                                                                   |
+| Property               | Attribute                | Description | Type      | Default                                                                                       |
+| ---------------------- | ------------------------ | ----------- | --------- | --------------------------------------------------------------------------------------------- |
+| `elId`                 | `el-id`                  |             | `string`  | `` `ecl-timeline-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}` `` |
+| `isLast`               | `is-last`                |             | `boolean` | `false`                                                                                       |
+| `itemTitle`            | `item-title`             |             | `string`  | `undefined`                                                                                   |
+| `label`                | `label`                  |             | `string`  | `undefined`                                                                                   |
+| `styleClass`           | `style-class`            |             | `string`  | `undefined`                                                                                   |
+| `theme`                | `theme`                  |             | `string`  | `undefined`                                                                                   |
+| `toggleLabelCollapsed` | `toggle-label-collapsed` |             | `string`  | `undefined`                                                                                   |
+| `toggleLabelExpanded`  | `toggle-label-expanded`  |             | `string`  | `undefined`                                                                                   |
+| `type`                 | `type`                   |             | `string`  | `undefined`                                                                                   |
 
 
 ## Dependencies

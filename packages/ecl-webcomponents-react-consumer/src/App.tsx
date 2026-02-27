@@ -36,7 +36,6 @@ function App() {
         </li>
       </ul>
       <EclSiteHeader
-        ecl-script
         login-block
         language-block
         search-block
@@ -332,7 +331,7 @@ function App() {
         </EclMegaMenu>
       </EclSiteHeader>
       <EclPageHeader with-meta header-title="Page title" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
-        <EclBreadcrumb slot="breadcrumb" ecl-script>
+        <EclBreadcrumb slot="breadcrumb">
           <EclBreadcrumbItem path="/example.html"> Home </EclBreadcrumbItem>
           <EclBreadcrumbItem ellipsis button-aria-label="Click to expand"> </EclBreadcrumbItem>
           <EclBreadcrumbItem path="/example.html"> About the European Commission </EclBreadcrumbItem>
@@ -374,11 +373,16 @@ function App() {
       <EclGrid container>
         <EclGrid row>
           <EclGrid columns={3} breakpoint="l" styleClass="ecl-sidebar">
-            <EclInpageNavigation inpage-title="Page contents" inpage-id="inpage-id" ecl-script with-utils>
-              <EclInpageNavigationItem path="#inline-nav-1">Heading 1</EclInpageNavigationItem>
-              <EclInpageNavigationItem path="#inline-nav-2">Heading 2 with a long title going on several lines</EclInpageNavigationItem>
-              <EclInpageNavigationItem path="#inline-nav-3">Heading 3</EclInpageNavigationItem>
-              <EclInpageNavigationItem path="#inline-nav-4">Heading 4</EclInpageNavigationItem>
+            <EclInpageNavigation
+              inpage-title="Page contents"
+              inpage-id="inpage-id"
+              items='[
+                { "path": "#inline-nav-1", "label": "Heading 1" },
+                { "path": "#inline-nav-2", "label": "Heading 2 with a long title going on several lines" },
+                { "path": "#inline-nav-3", "label": "Heading 3" },
+                { "path": "#inline-nav-4", "label": "Heading 4" }
+              ]'
+            >
             </EclInpageNavigation>
           </EclGrid>
           <EclGrid columns={9} breakpoint="l" styleClass="ecl-main">
@@ -421,7 +425,6 @@ function App() {
             <EclDivider></EclDivider>
             <EclSpacing value="l" direction="t"></EclSpacing>
             <EclGallery
-              ecl-script
               el-id="ecl-gallery-demo"
               counter-label="Media files in this gallery"
               view-all-label="See all"

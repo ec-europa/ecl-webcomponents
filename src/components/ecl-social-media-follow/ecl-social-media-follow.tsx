@@ -40,24 +40,6 @@ export class EclSocialMediaFollow {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
-  componentDidRender() {
-    if (this.el.querySelector('.ecl-social-media-follow__list')) {
-      const list = this.el.querySelector('.ecl-social-media-follow__list');
-      const popover = this.el.getElementsByTagName('ecl-popover')[0] || false;
-      if (popover) {
-        const li = document.createElement('li');
-        li.classList.add('ecl-social-media-follow__item', `sc-ecl-social-media-follow-${this.theme}`);
-        popover.parentNode.insertBefore(li, popover);
-        li.appendChild(popover);
-        li.querySelector('.ecl-popover__toggle').classList.add(`ecl-social-media-follow__link`, `sc-ecl-social-media-follow-${this.theme}`);
-      }
-      const items = this.el.querySelectorAll('.ecl-social-media-follow__item');
-
-      list.innerHTML = '';
-      list.append(...items);
-    }
-  }
-
   render() {
     return (
       <div 
@@ -66,9 +48,12 @@ export class EclSocialMediaFollow {
       { this.description ? 
         <p class="ecl-social-media-follow__description">{this.description}</p> : '' 
       }
-        <ul class="ecl-social-media-follow__list">
+        <div 
+          class="ecl-social-media-follow__list"
+          role="list"
+        >
           <slot></slot>
-        </ul>
+        </div>
       </div>
     );
   }

@@ -14,3 +14,35 @@
 .ecl-site-footer__co-owner-link {
   color: var(--cm-on-surface-brand);
 }
+
+.ecl-site-footer__section--core,
+.ecl-site-footer__section--related,
+.ecl-site-footer__section--more,
+.ecl-site-footer__section--about,
+.ecl-site-footer__section--contact {
+  .ecl-site-footer__list * {
+    display: block;
+  }
+}
+
+.ecl-site-footer__list-item:first-of-type {
+  margin-block-start: var(--s-m);
+}
+
+.ecl-site-footer__list-item.is-first {
+  margin-block-start: 0;
+}
+
+@media (width > 767px) {
+  .ecl-site-footer__list--inline .ecl-site-footer__list-item:last-of-type {
+    border-inline-end: 1px solid var(--cm-on-surface-inverted);
+    margin-inline-end: var(--s-m);
+    padding-inline-end: var(--s-m);
+  }
+
+  .ecl-site-footer__list--inline .ecl-site-footer__list-item.is-last {
+    border-inline-end: 0;
+    margin-inline-end: 0;
+    padding-inline-end: 0;
+  }
+}

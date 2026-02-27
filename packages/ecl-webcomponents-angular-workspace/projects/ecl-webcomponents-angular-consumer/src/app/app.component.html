@@ -7,7 +7,6 @@
   </li>
 </ul>
 <ecl-site-header
-  ecl-script
   login-block
   language-block
   search-block
@@ -221,7 +220,7 @@
   <ecl-page-header-meta-item icon="location" slot="meta"> Brussels </ecl-page-header-meta-item>
   <ecl-page-header-meta-item icon="clock" slot="meta"> 1 minute read </ecl-page-header-meta-item>
   <ecl-page-header-meta-item slot="meta"> Research center </ecl-page-header-meta-item>
-  <ecl-breadcrumb slot="breadcrumb" ecl-script>
+  <ecl-breadcrumb slot="breadcrumb">
     <ecl-breadcrumb-item path="/example.html"> Home </ecl-breadcrumb-item>
     <ecl-breadcrumb-item ellipsis button-aria-label="Click to expand"> </ecl-breadcrumb-item>
     <ecl-breadcrumb-item path="/example.html"> About the European Commission </ecl-breadcrumb-item>
@@ -236,11 +235,16 @@
 <ecl-grid container>
   <ecl-grid row>
     <ecl-grid columns="3" breakpoint="l" styleClass="ecl-sidebar">
-      <ecl-inpage-navigation inpage-title="Page contents" inpage-id="inpage-id" ecl-script with-utils>
-        <ecl-inpage-navigation-item path="#inline-nav-1">Heading 1</ecl-inpage-navigation-item>
-        <ecl-inpage-navigation-item path="#inline-nav-2">Heading 2 with a long title going on several lines</ecl-inpage-navigation-item>
-        <ecl-inpage-navigation-item path="#inline-nav-3">Heading 3</ecl-inpage-navigation-item>
-        <ecl-inpage-navigation-item path="#inline-nav-4">Heading 4</ecl-inpage-navigation-item>
+      <ecl-inpage-navigation
+        inpage-title="Page contents"
+        inpage-id="inpage-id"
+        items='[
+          { "path": "#inline-nav-1", "label": "Heading 1" },
+          { "path": "#inline-nav-2", "label": "Heading 2 with a long title going on several lines" },
+          { "path": "#inline-nav-3", "label": "Heading 3" },
+          { "path": "#inline-nav-4", "label": "Heading 4" }
+        ]'
+      >
       </ecl-inpage-navigation>
     </ecl-grid>
     <ecl-grid columns="9" breakpoint="l" styleClass="ecl-main">
@@ -283,7 +287,6 @@
       <ecl-divider></ecl-divider>
       <ecl-spacing value="l" direction="t"></ecl-spacing>
       <ecl-gallery
-        ecl-script
         el-id="ecl-gallery-demo"
         counter-label="Media files in this gallery"
         view-all-label="Show more items"
@@ -449,7 +452,7 @@
         </ecl-fact-figures-item>
       </ecl-fact-figures>
       <ecl-spacing direction="t" outer value="2xl"></ecl-spacing>
-      <ecl-carousel carousel-id="ecl-carousel-demo" ecl-script slides-number="3">
+      <ecl-carousel carousel-id="ecl-carousel-demo" slides-number="3">
         <ecl-carousel-item
           cta-link="/example.html"
           cta-label="Subscribe"

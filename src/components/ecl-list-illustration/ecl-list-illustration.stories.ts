@@ -4,6 +4,7 @@ const getArgs = () => ({
   squareImage: false,
   icon: false,
   iconSize: '2xl',
+  iconInline: false,
   mediaSize: 'm',
   fontSize: 'l',
   centered: false,
@@ -42,6 +43,13 @@ const getArgTypes = () => ({
       'l',
       '2xl',
     ],
+    if: { arg: 'icon', truthy: true },
+  },
+  iconInline: {
+    name: 'icon-inline',
+    control: {
+      type: 'boolean'
+    },
     if: { arg: 'icon', truthy: true },
   },
   fontSize: {
@@ -119,6 +127,7 @@ const Template = (args) =>
     centered=${args.centered}
     font-size="${args.fontSize}"
     color-mode="${args.color_mode}"
+    icon-inline="${args.iconInline}"
   >
     <ecl-list-illustration-item
       image="${!args.icon ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg' : ''}"

@@ -1,4 +1,4 @@
-import { Component, h, Prop} from '@stencil/core';
+import { Component, h, Prop, Host} from '@stencil/core';
 
 @Component({
   tag: 'ecl-list-illustration-item',
@@ -80,7 +80,10 @@ export class EclListIllustrationItem {
 
   render() {
     return (
-      <li class={this.getClass()}>
+      <Host
+        class={this.getClass()}
+        role="listitem"
+      >
         <div class={this.getContentClass()}>
         { this.image ?
           <ecl-picture
@@ -120,7 +123,7 @@ export class EclListIllustrationItem {
             </div>
           </div>
         </div>
-      </li>
+      </Host>
     );
   }
 }

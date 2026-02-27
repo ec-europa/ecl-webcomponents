@@ -10,8 +10,9 @@ exports[`ecl-page-header renders correctly with description at the bottom 1`] = 
         <ecl-breadcrumb ecl-script="" slot="breadcrumb" theme="ec" variant="negative">
           <!---->
           <nav class="ecl-breadcrumb ecl-page-header__breadcrumb sc-ecl-page-header-ec" data-ecl-auto-initialized="true" data-ecl-breadcrumb>
-            <ol class="ecl-breadcrumb__container sc-ecl-page-header-ec">
-              <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
+            <div class="ecl-breadcrumb__container sc-ecl-page-header-ec" role="list">
+              <ecl-breadcrumb-item class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" path="/example.html" theme="ec" variant="negative">
+                <!---->
                 <ecl-link style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link">
                   <!---->
                   <a class="ecl-breadcrumb__link ecl-link ecl-link--no-visited ecl-link--standalone sc-ecl-breadcrumb-ec sc-ecl-link-ec" href="/example.html">
@@ -19,14 +20,16 @@ exports[`ecl-page-header renders correctly with description at the bottom 1`] = 
                   </a>
                 </ecl-link>
                 <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-              </li>
-              <li aria-hidden="true" class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-ellipsis data-ecl-breadcrumb-item="static">
+              </ecl-breadcrumb-item>
+              <ecl-breadcrumb-item aria-hidden="true" button-aria-label="Click to expand" class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-ellipsis ellipsis="" style-class="ecl-breadcrumb__segment--ellipsis">
+                <!---->
                 <ecl-button aria-label="Click to expand" data-ecl-breadcrumb-ellipsis-button style-class="ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-ec" variant="ghost">
                   ...
                 </ecl-button>
                 <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-              </li>
-              <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
+              </ecl-breadcrumb-item>
+              <ecl-breadcrumb-item class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" path="/example.html" theme="ec" variant="negative">
+                <!---->
                 <ecl-link style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link">
                   <!---->
                   <a class="ecl-breadcrumb__link ecl-link ecl-link--no-visited ecl-link--standalone sc-ecl-breadcrumb-ec sc-ecl-link-ec" href="/example.html">
@@ -34,8 +37,8 @@ exports[`ecl-page-header renders correctly with description at the bottom 1`] = 
                   </a>
                 </ecl-link>
                 <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-              </li>
-            </ol>
+              </ecl-breadcrumb-item>
+            </div>
           </nav>
         </ecl-breadcrumb>
         <h1 class="ecl-page-header__title">
@@ -74,8 +77,9 @@ exports[`ecl-page-header renders correctly with image at the bottom 1`] = `
         <ecl-breadcrumb ecl-script="" slot="breadcrumb" theme="ec" variant="negative">
           <!---->
           <nav class="ecl-breadcrumb ecl-page-header__breadcrumb sc-ecl-page-header-ec" data-ecl-auto-initialized="true" data-ecl-breadcrumb>
-            <ol class="ecl-breadcrumb__container sc-ecl-page-header-ec">
-              <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
+            <div class="ecl-breadcrumb__container sc-ecl-page-header-ec" role="list">
+              <ecl-breadcrumb-item class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" path="/example.html" theme="ec" variant="negative">
+                <!---->
                 <ecl-link style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link">
                   <!---->
                   <a class="ecl-breadcrumb__link ecl-link ecl-link--no-visited ecl-link--standalone sc-ecl-breadcrumb-ec sc-ecl-link-ec" href="/example.html">
@@ -83,14 +87,16 @@ exports[`ecl-page-header renders correctly with image at the bottom 1`] = `
                   </a>
                 </ecl-link>
                 <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-              </li>
-              <li aria-hidden="true" class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-ellipsis data-ecl-breadcrumb-item="static">
+              </ecl-breadcrumb-item>
+              <ecl-breadcrumb-item aria-hidden="true" button-aria-label="Click to expand" class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-ellipsis ellipsis="" style-class="ecl-breadcrumb__segment--ellipsis">
+                <!---->
                 <ecl-button aria-label="Click to expand" data-ecl-breadcrumb-ellipsis-button style-class="ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-ec" variant="ghost">
                   ...
                 </ecl-button>
                 <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-              </li>
-              <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
+              </ecl-breadcrumb-item>
+              <ecl-breadcrumb-item class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" path="/example.html" theme="ec" variant="negative">
+                <!---->
                 <ecl-link style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link">
                   <!---->
                   <a class="ecl-breadcrumb__link ecl-link ecl-link--no-visited ecl-link--standalone sc-ecl-breadcrumb-ec sc-ecl-link-ec" href="/example.html">
@@ -98,8 +104,8 @@ exports[`ecl-page-header renders correctly with image at the bottom 1`] = `
                   </a>
                 </ecl-link>
                 <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-              </li>
-            </ol>
+              </ecl-breadcrumb-item>
+            </div>
           </nav>
         </ecl-breadcrumb>
         <h1 class="ecl-page-header__title">
@@ -138,8 +144,9 @@ exports[`ecl-page-header renders correctly with image beside 1`] = `
         <ecl-breadcrumb ecl-script="" slot="breadcrumb" theme="ec" variant="negative">
           <!---->
           <nav class="ecl-breadcrumb ecl-page-header__breadcrumb sc-ecl-page-header-ec" data-ecl-auto-initialized="true" data-ecl-breadcrumb>
-            <ol class="ecl-breadcrumb__container sc-ecl-page-header-ec">
-              <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
+            <div class="ecl-breadcrumb__container sc-ecl-page-header-ec" role="list">
+              <ecl-breadcrumb-item class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" path="/example.html" theme="ec" variant="negative">
+                <!---->
                 <ecl-link style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link">
                   <!---->
                   <a class="ecl-breadcrumb__link ecl-link ecl-link--no-visited ecl-link--standalone sc-ecl-breadcrumb-ec sc-ecl-link-ec" href="/example.html">
@@ -147,14 +154,16 @@ exports[`ecl-page-header renders correctly with image beside 1`] = `
                   </a>
                 </ecl-link>
                 <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-              </li>
-              <li aria-hidden="true" class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-ellipsis data-ecl-breadcrumb-item="static">
+              </ecl-breadcrumb-item>
+              <ecl-breadcrumb-item aria-hidden="true" button-aria-label="Click to expand" class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-ellipsis ellipsis="" style-class="ecl-breadcrumb__segment--ellipsis">
+                <!---->
                 <ecl-button aria-label="Click to expand" data-ecl-breadcrumb-ellipsis-button style-class="ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-ec" variant="ghost">
                   ...
                 </ecl-button>
                 <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-              </li>
-              <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
+              </ecl-breadcrumb-item>
+              <ecl-breadcrumb-item class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" path="/example.html" theme="ec" variant="negative">
+                <!---->
                 <ecl-link style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link">
                   <!---->
                   <a class="ecl-breadcrumb__link ecl-link ecl-link--no-visited ecl-link--standalone sc-ecl-breadcrumb-ec sc-ecl-link-ec" href="/example.html">
@@ -162,8 +171,8 @@ exports[`ecl-page-header renders correctly with image beside 1`] = `
                   </a>
                 </ecl-link>
                 <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-              </li>
-            </ol>
+              </ecl-breadcrumb-item>
+            </div>
           </nav>
         </ecl-breadcrumb>
         <div class="ecl-page-header__content-info">
@@ -203,8 +212,9 @@ exports[`ecl-page-header renders correctly with image on top 1`] = `
         <ecl-breadcrumb ecl-script="" slot="breadcrumb" theme="ec" variant="negative">
           <!---->
           <nav class="ecl-breadcrumb ecl-page-header__breadcrumb sc-ecl-page-header-ec" data-ecl-auto-initialized="true" data-ecl-breadcrumb>
-            <ol class="ecl-breadcrumb__container sc-ecl-page-header-ec">
-              <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
+            <div class="ecl-breadcrumb__container sc-ecl-page-header-ec" role="list">
+              <ecl-breadcrumb-item class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" path="/example.html" theme="ec" variant="negative">
+                <!---->
                 <ecl-link style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link">
                   <!---->
                   <a class="ecl-breadcrumb__link ecl-link ecl-link--no-visited ecl-link--standalone sc-ecl-breadcrumb-ec sc-ecl-link-ec" href="/example.html">
@@ -212,14 +222,16 @@ exports[`ecl-page-header renders correctly with image on top 1`] = `
                   </a>
                 </ecl-link>
                 <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-              </li>
-              <li aria-hidden="true" class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-ellipsis data-ecl-breadcrumb-item="static">
+              </ecl-breadcrumb-item>
+              <ecl-breadcrumb-item aria-hidden="true" button-aria-label="Click to expand" class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-ellipsis ellipsis="" style-class="ecl-breadcrumb__segment--ellipsis">
+                <!---->
                 <ecl-button aria-label="Click to expand" data-ecl-breadcrumb-ellipsis-button style-class="ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-ec" variant="ghost">
                   ...
                 </ecl-button>
                 <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-              </li>
-              <li class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-item="static">
+              </ecl-breadcrumb-item>
+              <ecl-breadcrumb-item class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" path="/example.html" theme="ec" variant="negative">
+                <!---->
                 <ecl-link style-class="ecl-link sc-ecl-link-ec sc-ecl-breadcrumb-ec ecl-link--standalone ecl-link--no-visited ecl-breadcrumb__link">
                   <!---->
                   <a class="ecl-breadcrumb__link ecl-link ecl-link--no-visited ecl-link--standalone sc-ecl-breadcrumb-ec sc-ecl-link-ec" href="/example.html">
@@ -227,8 +239,8 @@ exports[`ecl-page-header renders correctly with image on top 1`] = `
                   </a>
                 </ecl-link>
                 <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
-              </li>
-            </ol>
+              </ecl-breadcrumb-item>
+            </div>
           </nav>
         </ecl-breadcrumb>
         <h1 class="ecl-page-header__title">

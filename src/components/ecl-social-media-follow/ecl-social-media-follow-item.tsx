@@ -1,4 +1,4 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, Host } from '@stencil/core';
 
 @Component({
   tag: 'ecl-social-media-follow-item',
@@ -27,7 +27,10 @@ export class EclSocialMediaFollowItem {
 
   render() {
     return (
-      <li class={this.getClass()}>
+      <Host 
+        class={this.getClass()}
+        role="listitem"
+      >
         <ecl-link
           style-class={`ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-${this.theme}`}
           path={this.sharePath}
@@ -43,7 +46,7 @@ export class EclSocialMediaFollowItem {
           ></ecl-icon>
           <slot></slot>
         </ecl-link>
-      </li>
+      </Host>
     );
   }
 }

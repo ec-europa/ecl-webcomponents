@@ -43,22 +43,10 @@ export class EclFooterEu {
   }
 
   componentDidLoad() {
-    const lists = this.el.querySelectorAll('.ecl-site-footer__list');
     const titles = this.el.querySelectorAll('ecl-text[tag="div"]');
     if (titles && titles[0]) {
       titles.forEach((title) => {
-        const section = title.parentElement.parentElement;
         title.firstElementChild.classList.add(`sc-ecl-footer-${this.theme}-${this.theme}`);
-        section.insertBefore(title.firstElementChild, section.firstElementChild);
-      });
-    }
-    if (lists) {
-      lists.forEach((list) => {
-        const items = list.querySelectorAll('.ecl-site-footer__list-item');
-        if (items) {
-          list.innerHTML = '';
-          list.append(...items);
-        }
       });
     }
   }
@@ -125,28 +113,40 @@ export class EclFooterEu {
                     </span>
                   }
                   </div>
-                  <ul class="ecl-site-footer__list">
+                  <div
+                    class="ecl-site-footer__list"
+                    role="list"
+                  >
                     <slot name="ecl-footer-list-info"></slot>
-                  </ul>
+                  </div>
                 </div>
               </div>
               <div class="ecl-site-footer__column">
                 <div class="ecl-site-footer__section">
-                  <ul class="ecl-site-footer__list">
+                  <div
+                    class="ecl-site-footer__list"
+                    role="list"
+                  >
                     <slot name="ecl-footer-list-top-middle"></slot>
-                  </ul>
+                  </div>
                 </div>
                 <div class="ecl-site-footer__section">
-                  <ul class="ecl-site-footer__list">
+                  <div
+                    class="ecl-site-footer__list"
+                    role="list"
+                  >
                     <slot name="ecl-footer-list-top-middle-bottom"></slot>
-                  </ul>
+                  </div>
                 </div>
               </div>
               <div class="ecl-site-footer__column">
                 <div class="ecl-site-footer__section">
-                  <ul class="ecl-site-footer__list">
+                  <div
+                    class="ecl-site-footer__list"
+                    role="list"
+                  >
                     <slot name="ecl-footer-list-top-right"></slot>
-                  </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -183,48 +183,69 @@ export class EclFooterEu {
                   </div>
                 }
                 { this.variant === 'harmonised' &&
-                  <ul class="ecl-site-footer__list">
+                  <div
+                    class="ecl-site-footer__list"
+                    role="list"
+                  >
                     <slot name="ecl-footer-logo-info"></slot>
-                  </ul>
+                  </div>
                 }
                 </div>
               </div>
               <div class="ecl-site-footer__column">
                 <div class="ecl-site-footer__section">
-                  <ul class="ecl-site-footer__list">
+                  <div
+                    class="ecl-site-footer__list"
+                    role="list"
+                  >
                     <slot name="ecl-footer-list-main"></slot>
-                  </ul>
+                  </div>
                 </div>
                 <div class="ecl-site-footer__section">
-                  <ul class="ecl-site-footer__list">
+                  <div
+                    class="ecl-site-footer__list"
+                    role="list"
+                  >
                      <slot name="ecl-footer-list-bottom-left"></slot>
-                  </ul>
+                  </div>
                 </div> 
               { (this.variant === 'harmonised') &&
                 <div class="ecl-site-footer__section">
-                  <ul class={`ecl-site-footer__list`}>
+                  <div
+                    class="ecl-site-footer__list"
+                    role="list"
+                  >
                     <slot name="ecl-footer-list-main-bottom"></slot>
-                  </ul>
+                  </div>
                 </div>
               }
               { this.variant === 'core' &&
                 <div class="ecl-site-footer__section">
-                  <ul class="ecl-site-footer__list">
+                  <div
+                    class="ecl-site-footer__list"
+                    role="list"
+                  >
                      <slot name="ecl-footer-list-bottom-right"></slot>
-                  </ul>
+                  </div>
                 </div>
               }
               </div> 
               <div class="ecl-site-footer__column">
                 <div class="ecl-site-footer__section">
-                  <ul class="ecl-site-footer__list">
+                  <div
+                    class="ecl-site-footer__list"
+                    role="list"
+                  >
                     <slot name="ecl-footer-list-right-top"></slot>
-                  </ul>
+                  </div>
                 </div>   
                 <div class="ecl-site-footer__section">
-                  <ul class="ecl-site-footer__list">
+                  <div
+                    class="ecl-site-footer__list"
+                    role="list"
+                  >
                     <slot name="ecl-footer-list-right"></slot>
-                  </ul>
+                  </div>
                 </div>              
               </div> 
             </div>

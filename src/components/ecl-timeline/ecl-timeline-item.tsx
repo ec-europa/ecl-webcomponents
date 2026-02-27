@@ -1,4 +1,4 @@
-import { Component, h, Prop, Element} from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'ecl-timeline-item',
@@ -6,7 +6,6 @@ import { Component, h, Prop, Element} from '@stencil/core';
   scoped: false,
 })
 export class EclTimelineItem {
-  @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
   @Prop() label: string;
@@ -15,6 +14,7 @@ export class EclTimelineItem {
   @Prop() itemTitle: string;
   @Prop() toggleLabelCollapsed: string;
   @Prop() toggleLabelExpanded: string;
+  @Prop() isLast: boolean = false;
 
   getClass(): string {
     const styleClasses = [
@@ -24,11 +24,15 @@ export class EclTimelineItem {
     ];
 
     if (this.type === 'toggle') {
-      styleClasses.push(`ecl-timeline__item--toggle`);
+      styleClasses.push('ecl-timeline__item--toggle');
     }
 
     if (this.type === 'headline') {
-      styleClasses.push(`ecl-timeline__item--headline`);
+      styleClasses.push('ecl-timeline__item--headline');
+    }
+
+    if (this.isLast) {
+      styleClasses.push('is-last');
     }
 
     return styleClasses.join(' ');
@@ -38,26 +42,12 @@ export class EclTimelineItem {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
-  componentDidRender() {
-    const element = this.el;
-    if (element.querySelector('ecl-timeline__item--headline')) {
-      element.parentElement.classList.add('ecl-timeline--has-headline');
-    }
-    let previousSibling = element.previousElementSibling;
-    while (previousSibling) {
-      if (previousSibling instanceof HTMLElement && previousSibling.getAttribute('type') === 'toggle') {
-        this.el.firstElementChild.classList.add('ecl-timeline__item--collapsed');
-        break;
-      }
-      previousSibling = previousSibling.previousElementSibling;
-    }
-  }
-
   render() {
     return (
-      <li
+      <div
         class={this.getClass()}
         id={this.elId}
+        role="listitem"
       >
       { this.type !== 'toggle' ?
         <div class={`ecl-timeline__tooltip sc-ecl-timeline-${this.theme}`}>
@@ -96,7 +86,7 @@ export class EclTimelineItem {
           {this.toggleLabelCollapsed}
         </ecl-button> : ''
       }
-      </li>
+      </div>
     );
   }
 }

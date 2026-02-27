@@ -69,19 +69,11 @@ export class EclListIllustration {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
-  componentDidLoad() {
-    // Clean the html to make the zebra work,.
-    const items = this.el.querySelectorAll('.ecl-list-illustration__item');
-    if (items) {
-      this.el.querySelector('.ecl-list-illustration').innerHTML = '';
-      this.el.querySelector('.ecl-list-illustration').append(...items);
-    }
-  }
-
   render() {
     return (
-      <ul
+      <div
         class={this.getClass()}
+        role="list"
         {...(
           this.numberList && this.counterReset
             ? { style: { '--ecl-list-illustration-counter-start': `${this.counterStart}` } }
@@ -89,7 +81,7 @@ export class EclListIllustration {
         )} 
       >
         <slot></slot>
-      </ul>
+      </div>
     );
   }
 }

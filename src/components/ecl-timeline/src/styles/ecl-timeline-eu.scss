@@ -20,3 +20,17 @@
   margin-inline-start: 0.5rem !important;
   vertical-align: middle;
 }
+
+.ecl-timeline--has-headline .ecl-timeline-set .ecl-timeline:last-child .ecl-timeline__item:last-child::before,
+.ecl-timeline--has-headline .ecl-timeline__item:not(.ecl-timeline-set *):last-child::before,
+.ecl-timeline-set .ecl-timeline:last-child .ecl-timeline__item:last-child::before,
+.ecl-timeline__item:not(.ecl-timeline-set *):last-child::before {
+  height: 100%;
+}
+
+.ecl-timeline--has-headline .ecl-timeline-set .ecl-timeline:last-child .ecl-timeline__item.is-last::before,
+.ecl-timeline--has-headline .ecl-timeline__item.is-last:not(.ecl-timeline-set *)::before,
+.ecl-timeline-set .ecl-timeline.last-child .ecl-timeline__item.is-last::before,
+.ecl-timeline__item.is-last:not(.ecl-timeline-set *)::before {
+  height: 3rem;
+}

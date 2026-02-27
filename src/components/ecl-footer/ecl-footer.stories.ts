@@ -28,6 +28,7 @@ const Template = (args) =>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
       slot="ecl-footer-list-core"
+      is-first
     >
       About us
     </ecl-footer-item>
@@ -106,6 +107,7 @@ const Template = (args) =>
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
       slot="ecl-footer-list-bottom-left"
+      is-last
     >
       Accessibility
     </ecl-footer-item>

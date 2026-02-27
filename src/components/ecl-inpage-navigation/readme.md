@@ -16,16 +16,14 @@
 
 ## Dependencies
 
-### Depends on
+### Used by
 
-- [ecl-link](../ecl-link)
+ - [ecl-inpage-navigation](.)
 
 ### Graph
 ```mermaid
 graph TD;
-  ecl-inpage-navigation-item --> ecl-link
-  ecl-link --> ecl-icon
-  ecl-link --> ecl-indicator
+  ecl-inpage-navigation --> ecl-inpage-navigation-item
   style ecl-inpage-navigation-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

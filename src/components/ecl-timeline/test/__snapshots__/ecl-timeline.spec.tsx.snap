@@ -3,218 +3,269 @@
 exports[`ecl-timeline renders 1`] = `
 <ecl-timeline color-mode="green">
   <!---->
-  <ol class="ecl-color-mode--green ecl-timeline ecl-timeline--has-headline" data-ecl-auto-initialized="true" data-ecl-timeline>
-    <li class="ecl-timeline__item ecl-timeline__item--headline sc-ecl-timeline-ec" id="el-headline">
-      <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
-        <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
-        <div class="ecl-timeline__label sc-ecl-timeline-ec">
-          2025
-        </div>
-        <div class="ecl-timeline__title sc-ecl-timeline-ec">
-          Headline title
-        </div>
-        <div class="ecl-timeline__content sc-ecl-timeline-ec">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu metus risus.
-        </div>
-      </div>
-    </li>
-    <li class="ecl-timeline__item sc-ecl-timeline-ec" id="0">
-      <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
-        <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
-        <div class="ecl-timeline__label sc-ecl-timeline-ec">
-          13 September 2017
-        </div>
-        <div class="ecl-timeline__title sc-ecl-timeline-ec">
-          Item title
-        </div>
-        <div class="ecl-timeline__content sc-ecl-timeline-ec">
-          <a class="ecl-link" href="/example.html">
-            President Juncker's State of the Union speech
-          </a>
+  <div class="ecl-color-mode--green ecl-timeline ecl-timeline--has-headline" data-ecl-auto-initialized="true" data-ecl-timeline role="list">
+    <ecl-timeline-item el-id="el-headline" item-title="Headline title" label="2025" type="headline">
+      <!---->
+      <div class="ecl-timeline__item ecl-timeline__item--headline sc-ecl-timeline-ec" id="el-headline" role="listitem">
+        <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
+          <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
+          <div class="ecl-timeline__label sc-ecl-timeline-ec">
+            2025
+          </div>
+          <div class="ecl-timeline__title sc-ecl-timeline-ec">
+            Headline title
+          </div>
+          <div class="ecl-timeline__content sc-ecl-timeline-ec">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu metus risus.
+          </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-timeline__item sc-ecl-timeline-ec" id="1">
-      <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
-        <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
-        <div class="ecl-timeline__label sc-ecl-timeline-ec">
-          28-29 September 2017
-        </div>
-        <div class="ecl-timeline__content sc-ecl-timeline-ec">
-          <a class="ecl-link" href="/example.html">
-            Informal Digital Summit, Tallinn
-          </a>
-        </div>
-      </div>
-    </li>
-    <li class="ecl-timeline__item sc-ecl-timeline-ec" id="2">
-      <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
-        <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
-        <div class="ecl-timeline__label sc-ecl-timeline-ec">
-          14 November 2017
-        </div>
-        <div class="ecl-timeline__content sc-ecl-timeline-ec">
-          <a class="ecl-link" href="/example.html">
-            Strengthening European identity through education and culture: European Commission's contribution to the Leaders' meeting, Gothenburg, Sweden
-          </a>
+    </ecl-timeline-item>
+    <ecl-timeline-item el-id="0" item-title="Item title" label="13 September 2017">
+      <!---->
+      <div class="ecl-timeline__item sc-ecl-timeline-ec" id="0" role="listitem">
+        <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
+          <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
+          <div class="ecl-timeline__label sc-ecl-timeline-ec">
+            13 September 2017
+          </div>
+          <div class="ecl-timeline__title sc-ecl-timeline-ec">
+            Item title
+          </div>
+          <div class="ecl-timeline__content sc-ecl-timeline-ec">
+            <a class="ecl-link" href="/example.html">
+              President Juncker's State of the Union speech
+            </a>
+          </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-timeline__item sc-ecl-timeline-ec" id="3">
-      <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
-        <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
-        <div class="ecl-timeline__label sc-ecl-timeline-ec">
-          17 November 2017
-        </div>
-        <div class="ecl-timeline__content sc-ecl-timeline-ec">
-          <a class="ecl-link" href="/example.html">
-            Social Summit in Gothenburg, Sweden
-          </a>
-        </div>
-      </div>
-    </li>
-    <li class="ecl-timeline__item sc-ecl-timeline-ec" id="4">
-      <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
-        <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
-        <div class="ecl-timeline__label sc-ecl-timeline-ec">
-          6 December 2017
-        </div>
-        <div class="ecl-timeline__content sc-ecl-timeline-ec">
-          <a class="ecl-link" href="/example.html">
-            Economic and Monetary Union package of proposals
-          </a>
+    </ecl-timeline-item>
+    <ecl-timeline-item el-id="1" label="28-29 September 2017">
+      <!---->
+      <div class="ecl-timeline__item sc-ecl-timeline-ec" id="1" role="listitem">
+        <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
+          <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
+          <div class="ecl-timeline__label sc-ecl-timeline-ec">
+            28-29 September 2017
+          </div>
+          <div class="ecl-timeline__content sc-ecl-timeline-ec">
+            <a class="ecl-link" href="/example.html">
+              Informal Digital Summit, Tallinn
+            </a>
+          </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-timeline__item ecl-timeline__item--toggle sc-ecl-timeline-ec" id="toggle">
-      <ecl-button data-ecl-timeline-button styleclass="ecl-timeline__toggle sc-ecl-timeline-ec" theme="ec" variant="secondary">
-        <ecl-icon icon="corner-arrow" rotate="180" size="xs" slot="icon-after" styleclass="ecl-button__icon--after sc-ecl-timeline-ec"></ecl-icon>
-      </ecl-button>
-    </li>
-    <li class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="5">
-      <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
-        <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
-        <div class="ecl-timeline__label sc-ecl-timeline-ec">
-          14-15 December 2017
-        </div>
-        <div class="ecl-timeline__content sc-ecl-timeline-ec">
-          <a class="ecl-link" href="/example.html">
-            EU Leaders' meeting on migration, Brussels
-          </a>
+    </ecl-timeline-item>
+    <ecl-timeline-item el-id="2" label="14 November 2017">
+      <!---->
+      <div class="ecl-timeline__item sc-ecl-timeline-ec" id="2" role="listitem">
+        <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
+          <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
+          <div class="ecl-timeline__label sc-ecl-timeline-ec">
+            14 November 2017
+          </div>
+          <div class="ecl-timeline__content sc-ecl-timeline-ec">
+            <a class="ecl-link" href="/example.html">
+              Strengthening European identity through education and culture: European Commission's contribution to the Leaders' meeting, Gothenburg, Sweden
+            </a>
+          </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="6">
-      <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
-        <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
-        <div class="ecl-timeline__label sc-ecl-timeline-ec">
-          15 December 2017
-        </div>
-        <div class="ecl-timeline__content sc-ecl-timeline-ec">
-          <a class="ecl-link" href="/example.html">
-            Euro Summit
-          </a>
-        </div>
-      </div>
-    </li>
-    <li class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="7">
-      <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
-        <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
-        <div class="ecl-timeline__label sc-ecl-timeline-ec">
-          6 February 2018
-        </div>
-        <div class="ecl-timeline__content sc-ecl-timeline-ec">
-          <a class="ecl-link" href="/example.html">
-            EU-Western Balkans Strategy
-          </a>
+    </ecl-timeline-item>
+    <ecl-timeline-item el-id="3" label="17 November 2017">
+      <!---->
+      <div class="ecl-timeline__item sc-ecl-timeline-ec" id="3" role="listitem">
+        <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
+          <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
+          <div class="ecl-timeline__label sc-ecl-timeline-ec">
+            17 November 2017
+          </div>
+          <div class="ecl-timeline__content sc-ecl-timeline-ec">
+            <a class="ecl-link" href="/example.html">
+              Social Summit in Gothenburg, Sweden
+            </a>
+          </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="8">
-      <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
-        <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
-        <div class="ecl-timeline__label sc-ecl-timeline-ec">
-          14 February 2018
-        </div>
-        <div class="ecl-timeline__content sc-ecl-timeline-ec">
-          <a class="ecl-link" href="/example.html">
-            Multiannual Financial Framework
-          </a>
-          and
-          <a class="ecl-link" href="/example.html">
-            institutional issues
-          </a>
-          - enhancing efficiency at the helm of the European Union
+    </ecl-timeline-item>
+    <ecl-timeline-item el-id="4" label="6 December 2017">
+      <!---->
+      <div class="ecl-timeline__item sc-ecl-timeline-ec" id="4" role="listitem">
+        <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
+          <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
+          <div class="ecl-timeline__label sc-ecl-timeline-ec">
+            6 December 2017
+          </div>
+          <div class="ecl-timeline__content sc-ecl-timeline-ec">
+            <a class="ecl-link" href="/example.html">
+              Economic and Monetary Union package of proposals
+            </a>
+          </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="9">
-      <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
-        <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
-        <div class="ecl-timeline__label sc-ecl-timeline-ec">
-          23 February 2018
-        </div>
-        <div class="ecl-timeline__content sc-ecl-timeline-ec">
-          <a class="ecl-link" href="/example.html">
-            Informal European Council
-          </a>
+    </ecl-timeline-item>
+    <ecl-timeline-item el-id="toggle" type="toggle">
+      <!---->
+      <!--s-nt-
+          Show/Hide hidden items
+        -->
+      <div class="ecl-timeline__item ecl-timeline__item--toggle sc-ecl-timeline-ec" id="toggle" role="listitem">
+        <ecl-button data-ecl-timeline-button styleclass="ecl-timeline__toggle sc-ecl-timeline-ec" theme="ec" variant="secondary">
+          <ecl-icon icon="corner-arrow" rotate="180" size="xs" slot="icon-after" styleclass="ecl-button__icon--after sc-ecl-timeline-ec"></ecl-icon>
+        </ecl-button>
+      </div>
+    </ecl-timeline-item>
+    <ecl-timeline-item el-id="5" label="14-15 December 2017" style-class="ecl-timeline__item--collapsed">
+      <!---->
+      <div class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="5" role="listitem">
+        <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
+          <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
+          <div class="ecl-timeline__label sc-ecl-timeline-ec">
+            14-15 December 2017
+          </div>
+          <div class="ecl-timeline__content sc-ecl-timeline-ec">
+            <a class="ecl-link" href="/example.html">
+              EU Leaders' meeting on migration, Brussels
+            </a>
+          </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="10">
-      <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
-        <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
-        <div class="ecl-timeline__label sc-ecl-timeline-ec">
-          22-23 March 2018
-        </div>
-        <div class="ecl-timeline__content sc-ecl-timeline-ec">
-          <a class="ecl-link" href="/example.html">
-            European Council
-          </a>
-        </div>
-      </div>
-    </li>
-    <li class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="11">
-      <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
-        <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
-        <div class="ecl-timeline__label sc-ecl-timeline-ec">
-          2 May 2018
-        </div>
-        <div class="ecl-timeline__content sc-ecl-timeline-ec">
-          <a class="ecl-link" href="/example.html">
-            Commission proposal: Long-term budget post-2020
-          </a>
+    </ecl-timeline-item>
+    <ecl-timeline-item el-id="6" label="15 December 2017" style-class="ecl-timeline__item--collapsed">
+      <!---->
+      <div class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="6" role="listitem">
+        <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
+          <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
+          <div class="ecl-timeline__label sc-ecl-timeline-ec">
+            15 December 2017
+          </div>
+          <div class="ecl-timeline__content sc-ecl-timeline-ec">
+            <a class="ecl-link" href="/example.html">
+              Euro Summit
+            </a>
+          </div>
         </div>
       </div>
-    </li>
-    <li class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="12">
-      <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
-        <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
-        <div class="ecl-timeline__label sc-ecl-timeline-ec">
-          15 May 2018
-        </div>
-        <div class="ecl-timeline__content sc-ecl-timeline-ec">
-          <a class="ecl-link" href="/example.html">
-            European Commission’s contribution to the Informal Leaders' meeting
-          </a>
-          , Sofia, Bulgaria (16 May 2018)
-        </div>
-      </div>
-    </li>
-    <li class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="13">
-      <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
-        <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
-        <div class="ecl-timeline__label sc-ecl-timeline-ec">
-          17 May 2018
-        </div>
-        <div class="ecl-timeline__content sc-ecl-timeline-ec">
-          <a class="ecl-link" href="/component-library/example.html">
-            EU-Western Balkans Summit
-          </a>
-          (Sofia, Bulgaria)
+    </ecl-timeline-item>
+    <ecl-timeline-item el-id="7" label="6 February 2018" style-class="ecl-timeline__item--collapsed">
+      <!---->
+      <div class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="7" role="listitem">
+        <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
+          <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
+          <div class="ecl-timeline__label sc-ecl-timeline-ec">
+            6 February 2018
+          </div>
+          <div class="ecl-timeline__content sc-ecl-timeline-ec">
+            <a class="ecl-link" href="/example.html">
+              EU-Western Balkans Strategy
+            </a>
+          </div>
         </div>
       </div>
-    </li>
-  </ol>
+    </ecl-timeline-item>
+    <ecl-timeline-item el-id="8" label="14 February 2018" style-class="ecl-timeline__item--collapsed">
+      <!---->
+      <div class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="8" role="listitem">
+        <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
+          <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
+          <div class="ecl-timeline__label sc-ecl-timeline-ec">
+            14 February 2018
+          </div>
+          <div class="ecl-timeline__content sc-ecl-timeline-ec">
+            <a class="ecl-link" href="/example.html">
+              Multiannual Financial Framework
+            </a>
+            and
+            <a class="ecl-link" href="/example.html">
+              institutional issues
+            </a>
+            - enhancing efficiency at the helm of the European Union
+          </div>
+        </div>
+      </div>
+    </ecl-timeline-item>
+    <ecl-timeline-item el-id="9" label="23 February 2018" style-class="ecl-timeline__item--collapsed">
+      <!---->
+      <div class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="9" role="listitem">
+        <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
+          <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
+          <div class="ecl-timeline__label sc-ecl-timeline-ec">
+            23 February 2018
+          </div>
+          <div class="ecl-timeline__content sc-ecl-timeline-ec">
+            <a class="ecl-link" href="/example.html">
+              Informal European Council
+            </a>
+          </div>
+        </div>
+      </div>
+    </ecl-timeline-item>
+    <ecl-timeline-item el-id="10" label="22-23 March 2018" style-class="ecl-timeline__item--collapsed">
+      <!---->
+      <div class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="10" role="listitem">
+        <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
+          <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
+          <div class="ecl-timeline__label sc-ecl-timeline-ec">
+            22-23 March 2018
+          </div>
+          <div class="ecl-timeline__content sc-ecl-timeline-ec">
+            <a class="ecl-link" href="/example.html">
+              European Council
+            </a>
+          </div>
+        </div>
+      </div>
+    </ecl-timeline-item>
+    <ecl-timeline-item el-id="11" label="2 May 2018" style-class="ecl-timeline__item--collapsed">
+      <!---->
+      <div class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="11" role="listitem">
+        <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
+          <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
+          <div class="ecl-timeline__label sc-ecl-timeline-ec">
+            2 May 2018
+          </div>
+          <div class="ecl-timeline__content sc-ecl-timeline-ec">
+            <a class="ecl-link" href="/example.html">
+              Commission proposal: Long-term budget post-2020
+            </a>
+          </div>
+        </div>
+      </div>
+    </ecl-timeline-item>
+    <ecl-timeline-item el-id="12" label="15 May 2018" style-class="ecl-timeline__item--collapsed">
+      <!---->
+      <div class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="12" role="listitem">
+        <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
+          <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
+          <div class="ecl-timeline__label sc-ecl-timeline-ec">
+            15 May 2018
+          </div>
+          <div class="ecl-timeline__content sc-ecl-timeline-ec">
+            <a class="ecl-link" href="/example.html">
+              European Commission’s contribution to the Informal Leaders' meeting
+            </a>
+            , Sofia, Bulgaria (16 May 2018)
+          </div>
+        </div>
+      </div>
+    </ecl-timeline-item>
+    <ecl-timeline-item el-id="13" label="17 May 2018" style-class="ecl-timeline__item--collapsed">
+      <!---->
+      <div class="ecl-timeline__item ecl-timeline__item--collapsed sc-ecl-timeline-ec" id="13" role="listitem">
+        <div class="ecl-timeline__tooltip sc-ecl-timeline-ec">
+          <div class="ecl-timeline__tooltip-arrow sc-ecl-timeline-ec"></div>
+          <div class="ecl-timeline__label sc-ecl-timeline-ec">
+            17 May 2018
+          </div>
+          <div class="ecl-timeline__content sc-ecl-timeline-ec">
+            <a class="ecl-link" href="/component-library/example.html">
+              EU-Western Balkans Summit
+            </a>
+            (Sofia, Bulgaria)
+          </div>
+        </div>
+      </div>
+    </ecl-timeline-item>
+  </div>
 </ecl-timeline>
 `;

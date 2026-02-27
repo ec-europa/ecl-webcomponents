@@ -28,20 +28,15 @@ export class EclPagination {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
-  componentDidRender() {
-    const items = this.el.querySelectorAll('.ecl-pagination__item');
-    if (items) {
-      this.el.querySelector('.ecl-pagination__list').innerHTML = '';
-      this.el.querySelector('.ecl-pagination__list').append(...items);
-    }
-  };
-
   render() {
     return (
-      <div class={this.getClass()}>
-        <ul class="ecl-pagination__list">
+      <div
+        class={this.getClass()}
+        role="list"
+      >
+        <div class="ecl-pagination__list">
           <slot></slot>
-        </ul>
+        </div>
       </div>
     )
   };

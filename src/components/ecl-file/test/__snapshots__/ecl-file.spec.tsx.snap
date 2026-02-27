@@ -6,12 +6,12 @@ exports[`ecl-file renders 1`] = `
   <ecl-file-translations data-ecl-auto-initialized="true" hidden="" others="" toggle-label="Other languages" translations-total="3">
     <!---->
     <div class="ecl-file__translation-container sc-ecl-file-ec" data-ecl-file-translation-container>
-      <ecl-button data-ecl-file-translation-toggle styleclass="ecl-file__translation-toggle sc-ecl-file-ec" theme="ec" variant="tertiary">
+      <ecl-button data-ecl-file-translation-toggle styleclass="ecl-file__translation-toggle sc-ecl-file-ec" variant="tertiary">
         Other languages
         <ecl-icon icon="corner-arrow" rotate="180" size="fluid" styleclass="ecl-button__icon ecl-button__icon--after"></ecl-icon>
       </ecl-button>
-      <ul class="ecl-file__translation-list sc-ecl-file-ec">
-        <li class="ecl-file__translation-item sc-ecl-file-ec">
+      <div class="ecl-file__translation-list sc-ecl-file-ec" role="list">
+        <ecl-file-translations-item class="ecl-file__translation-item sc-ecl-file-ec" download-label="Download" download-link="/example.html" file-title="български" language="bg" meta="(15.7 MB - PDF)" role="listitem">
           <div class="ecl-file__translation-info sc-ecl-file-ec">
             <div class="ecl-file__translation-title sc-ecl-file-ec" id="undefined-lang" lang="bg">
               български
@@ -26,8 +26,8 @@ exports[`ecl-file renders 1`] = `
               <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
             </ecl-link>
           </div>
-        </li>
-        <li class="ecl-file__translation-item sc-ecl-file-ec">
+        </ecl-file-translations-item>
+        <ecl-file-translations-item class="ecl-file__translation-item sc-ecl-file-ec" download-label="Download" download-link="/example.html" file-title="español" language="es" meta="(15.98 MB - PDF)" role="listitem">
           <div class="ecl-file__translation-info sc-ecl-file-ec">
             <div class="ecl-file__translation-title sc-ecl-file-ec" id="undefined-lang" lang="es">
               español
@@ -42,8 +42,8 @@ exports[`ecl-file renders 1`] = `
               <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
             </ecl-link>
           </div>
-        </li>
-        <li class="ecl-file__translation-item sc-ecl-file-ec">
+        </ecl-file-translations-item>
+        <ecl-file-translations-item class="ecl-file__translation-item sc-ecl-file-ec" download-label="Download" download-link="/example.html" file-title="français" language="fr" meta="(15.98 MB - PDF)" role="listitem">
           <div class="ecl-file__translation-info sc-ecl-file-ec">
             <div class="ecl-file__translation-title sc-ecl-file-ec" id="undefined-lang" lang="fr">
               français
@@ -58,8 +58,8 @@ exports[`ecl-file renders 1`] = `
               <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
             </ecl-link>
           </div>
-        </li>
-        <li class="ecl-file__translation-description ecl-file__translation-item sc-ecl-file-ec">
+        </ecl-file-translations-item>
+        <div class="ecl-file__translation-description ecl-file__translation-item sc-ecl-file-ec">
           <p slot="others">
             Looking for another language which is not on the list?
             <a class="ecl-link" href="/example.html">
@@ -67,8 +67,8 @@ exports[`ecl-file renders 1`] = `
             </a>
             .
           </p>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </ecl-file-translations>
   <div class="ecl-file ecl-file--default" data-ecl-file id="file-download-test">

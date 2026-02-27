@@ -697,6 +697,14 @@ export namespace Components {
     }
     interface EclFooterItem {
         "ariaLabel": string;
+        /**
+          * @default false
+         */
+        "isFirst": boolean;
+        /**
+          * @default false
+         */
+        "isLast": boolean;
         "link": string;
         "styleClass": string;
         "theme": string;
@@ -909,6 +917,7 @@ export namespace Components {
         "colorMode": string;
         "inpageId": string;
         "inpageTitle": string;
+        "items": string;
         /**
           * @default false
          */
@@ -2096,6 +2105,7 @@ export namespace Components {
     }
     interface EclTimeline {
         "colorMode": string;
+        "hideFrom": number;
         /**
           * @default false
          */
@@ -2108,6 +2118,10 @@ export namespace Components {
           * @default `ecl-timeline-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
          */
         "elId": string;
+        /**
+          * @default false
+         */
+        "isLast": boolean;
         "itemTitle": string;
         "label": string;
         "styleClass": string;
@@ -3598,6 +3612,14 @@ declare namespace LocalJSX {
     }
     interface EclFooterItem {
         "ariaLabel"?: string;
+        /**
+          * @default false
+         */
+        "isFirst"?: boolean;
+        /**
+          * @default false
+         */
+        "isLast"?: boolean;
         "link"?: string;
         "styleClass"?: string;
         "theme"?: string;
@@ -3810,6 +3832,7 @@ declare namespace LocalJSX {
         "colorMode"?: string;
         "inpageId"?: string;
         "inpageTitle"?: string;
+        "items"?: string;
         /**
           * @default false
          */
@@ -5013,6 +5036,7 @@ declare namespace LocalJSX {
     }
     interface EclTimeline {
         "colorMode"?: string;
+        "hideFrom"?: number;
         /**
           * @default false
          */
@@ -5025,6 +5049,10 @@ declare namespace LocalJSX {
           * @default `ecl-timeline-item-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
          */
         "elId"?: string;
+        /**
+          * @default false
+         */
+        "isLast"?: boolean;
         "itemTitle"?: string;
         "label"?: string;
         "styleClass"?: string;
@@ -5410,6 +5438,8 @@ declare namespace LocalJSX {
         "styleClass": string;
         "link": string;
         "ariaLabel": string;
+        "isFirst": boolean;
+        "isLast": boolean;
     }
     interface EclFormGroupAttributes {
         "styleClass": string;
@@ -5508,6 +5538,7 @@ declare namespace LocalJSX {
         "noScript": boolean;
         "inpageTitle": string;
         "inpageId": string;
+        "items": string;
     }
     interface EclInpageNavigationItemAttributes {
         "theme": string;
@@ -6089,6 +6120,7 @@ declare namespace LocalJSX {
         "styleClass": string;
         "noScript": boolean;
         "colorMode": string;
+        "hideFrom": number;
     }
     interface EclTimelineItemAttributes {
         "theme": string;
@@ -6099,6 +6131,7 @@ declare namespace LocalJSX {
         "itemTitle": string;
         "toggleLabelCollapsed": string;
         "toggleLabelExpanded": string;
+        "isLast": boolean;
     }
     interface EclVideoAttributes {
         "styleClass": string;

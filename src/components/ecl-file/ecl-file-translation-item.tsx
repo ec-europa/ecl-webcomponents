@@ -1,4 +1,4 @@
- import { Component, Prop, h, Element } from '@stencil/core';
+ import { Component, Prop, h, Element, Host } from '@stencil/core';
 
 @Component({
   tag: 'ecl-file-translations-item',
@@ -63,8 +63,9 @@ export class EclFileTranslationsItem {
 
   render() { 
     return (
-      <li
+      <Host
         class={this.getClass()}
+        role="listitem"
       >
       { this.variant == 'thumbnail' ?
         <div class={`ecl-file__translation-detail sc-ecl-file-${this.theme}`}>
@@ -100,7 +101,7 @@ export class EclFileTranslationsItem {
             </ecl-icon>    
           </ecl-link>
         </div>
-      </li>
+      </Host>
     );
   }
 }

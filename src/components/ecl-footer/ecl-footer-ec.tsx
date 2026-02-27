@@ -42,27 +42,19 @@ export class EclFooterEc {
   }
 
   componentDidLoad() {
-    const lists = this.el.querySelectorAll('.ecl-site-footer__list');
-    const titles = this.el.querySelectorAll('ecl-text[tag="div"]');
     const social = this.el.querySelector('.ecl-social-media-follow__description');
-    if (titles && titles[0]) {
-      titles.forEach((title) => {
-        const section = title.parentElement.parentElement;
-        title.firstElementChild.classList.add(`sc-ecl-footer-${this.theme}-${this.theme}`);
-        section.insertBefore(title.firstElementChild, section.firstElementChild);
-      });
-    }
-    if (lists) {
-      lists.forEach((list) => {
-        const items = list.querySelectorAll('.ecl-site-footer__list-item');
-        if (items) {
-          list.innerHTML = '';
-          list.append(...items);
-        }
-      });
-    }
+
     if (social) {
       social.classList.add(`sc-ecl-footer-${this.theme}-${this.theme}`);
+    }
+
+    const titles = this.el.querySelectorAll('ecl-text[tag="div"]');
+
+    if (titles && titles[0]) {
+      titles.forEach((title) => {
+        title.firstElementChild.classList.add(`sc-ecl-footer-${this.theme}-${this.theme}`);
+        // section.insertBefore(title.firstElementChild, section.firstElementChild);
+      });
     }
   }
 
@@ -153,35 +145,50 @@ export class EclFooterEc {
               </div>
             { this.variant === 'core' &&
               <div class="ecl-site-footer__section ecl-site-footer__section--core">
-                <ul class="ecl-site-footer__list">
+                <div 
+                  class="ecl-site-footer__list"
+                  role="list"
+                >
                   <slot name="ecl-footer-list-core"></slot>
-                </ul>
+                </div>
               </div>
             }
             { this.variant !== 'core' &&
               <div class="ecl-site-footer__section ecl-site-footer__section--links">
                 <div class="ecl-site-footer__row">
                   <div class="ecl-site-footer__section ecl-site-footer__section--contact">
-                    <ul class="ecl-site-footer__list">
+                    <div 
+                      class="ecl-site-footer__list"
+                      role="list"
+                    >
                       <slot name="ecl-footer-list-contact"></slot>
-                    </ul>
+                    </div>
                   </div>
                   <div class="ecl-site-footer__section ecl-site-footer__section--about">
-                    <ul class="ecl-site-footer__list">
+                    <div 
+                      class="ecl-site-footer__list"
+                      role="list"
+                    >
                       <slot name="ecl-footer-list-about"></slot>
-                    </ul>
+                    </div>
                   </div>
                 </div>
                 <div class="ecl-site-footer__row">
                   <div class="ecl-site-footer__section ecl-site-footer__section--more">
-                    <ul class="ecl-site-footer__list">
+                    <div
+                      class="ecl-site-footer__list"
+                      role="list"
+                    >
                       <slot name="ecl-footer-list-more"></slot>
-                    </ul>
+                    </div>
                   </div>
                   <div class="ecl-site-footer__section ecl-site-footer__section--related">
-                    <ul class="ecl-site-footer__list">
+                    <div
+                      class="ecl-site-footer__list"
+                      role="list"
+                    >
                       <slot name="ecl-footer-list-related"></slot>
-                    </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -211,9 +218,12 @@ export class EclFooterEc {
                 <div class="ecl-site-footer__extra-links-container">
                   <slot name="ecl-footer-social-follow"></slot>
                 </div>
-                <ul class="ecl-site-footer__list  ecl-site-footer__list--inline">
+                <div
+                  class="ecl-site-footer__list  ecl-site-footer__list--inline"
+                  role="list"
+                >
                    <slot name="ecl-footer-list-bottom-left"></slot>
-                </ul>
+                </div>
               </div> 
             </div>
           </div>

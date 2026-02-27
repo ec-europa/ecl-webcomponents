@@ -43,9 +43,6 @@ export class EclBreadcrumb {
       item.setAttribute('data-ecl-breadcrumb-item', 'expandable');
     });
 
-    this.el.querySelector('.ecl-breadcrumb__container').innerHTML = '';
-    this.el.querySelector('.ecl-breadcrumb__container').append(...items);
-
     if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Breadcrumb = Breadcrumb;
@@ -61,9 +58,12 @@ export class EclBreadcrumb {
         class={this.getClass()}
         data-ecl-breadcrumb
       >
-        <ol class="ecl-breadcrumb__container">
+        <div
+          class="ecl-breadcrumb__container"
+          role="list"
+        >
           <slot></slot>
-        </ol>
+        </div>
       </nav>
     )
   }

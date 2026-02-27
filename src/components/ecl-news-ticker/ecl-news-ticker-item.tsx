@@ -1,4 +1,4 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, Host } from '@stencil/core';
 
 @Component({
   tag: 'ecl-news-ticker-item',
@@ -30,8 +30,9 @@ export class EclNewsTickerItem {
 
   render() {
     return (
-      <li 
+      <Host
         class={this.getClass()}
+        role="listitem"
       >
       { this.image &&
         <img
@@ -57,7 +58,7 @@ export class EclNewsTickerItem {
           <slot></slot>
         </ecl-link> : <slot></slot>
       }
-      </li>
+      </Host>
     );
   }
 }
