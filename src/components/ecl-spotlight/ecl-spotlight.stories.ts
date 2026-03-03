@@ -75,6 +75,7 @@ const Template = args =>
     credit="${args.credit}"
     color-mode="${args.color_mode}"
     font-size="${args.fontSize}"
+    header="${args.header}"
   >
     ${args.title}
   </ecl-spotlight>`;

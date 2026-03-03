@@ -52,7 +52,7 @@ export class EclSpotlight {
       { this.header &&
         <div class="ecl-spotlight__header">
           <div class="ecl-container">
-            <slot name="header"></slot>
+            {this.header}
           </div>
         </div>
       }
