@@ -5,7 +5,9 @@ exports[`ecl-spotlight renders 1`] = `
   <!---->
   <section class="ecl-color-mode--blue-electric ecl-spotlight ecl-spotlight--font-l">
     <div class="ecl-spotlight__header">
-      <div class="ecl-container"></div>
+      <div class="ecl-container">
+        In focus
+      </div>
     </div>
     <a class="ecl-spotlight__link" href="/example">
       <figure class="ecl-spotlight__picture-container">
