@@ -1,7 +1,7 @@
 {
   "name": "@ecl/ecl-webcomponents-vue",
-  "version": "0.23.1",
-  "description": "ECL vue library",
+  "version": "0.24.1",
+  "description": "ECL webcomponents vue wrappers",
   "license": "EUPL-1.2",
   "publishConfig": {
     "access": "public"
@@ -9,15 +9,16 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-   "dist"
+    "dist"
   ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "build": "npm run tsc",
-    "tsc": "tsc -p . --outDir ./dist"
+    "tsc": "tsc -p . --outDir ./dist",
+    "pre-publish": "npm run build"
   },
   "dependencies": {
-    "@ecl/ecl-webcomponents": "0.23.1"
+    "@ecl/ecl-webcomponents": "0.24.1"
   },
   "engines": {
     "node": ">=20.0.0",

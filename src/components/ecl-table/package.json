@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-table",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.24.0",
+  "version": "0.24.1",
   "description": "ECL Table",
   "main": "ecl-table.tsx",
   "private": true,
