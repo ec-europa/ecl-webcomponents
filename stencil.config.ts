@@ -34,7 +34,7 @@ export const config: Config = {
       directivesArrayFile: 'packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular/src/lib/stencil-generated/index.ts',
     }),
     vueOutputTarget({
-      componentCorePackage: '@ecl/web-components',
+      componentCorePackage: '@ecl/ecl-webcomponents',
       proxiesFile: 'packages/ecl-webcomponents-vue/lib/components.ts',
     }),
   ],

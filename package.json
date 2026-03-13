@@ -25,7 +25,7 @@
     "build:web-components": "pnpm --filter \"@ecl/web-components-*\" run build",
     "build:stencil": "stencil build",
     "build:react": "pnpm --filter \"@ecl/ecl-webcomponents-react\" run build",
-    "build-vue": "pnpm --filter  \"@ecl/ecl-webcomponents-vue\" run build",
+    "build:vue": "pnpm --filter  \"@ecl/ecl-webcomponents-vue\" run build",
     "build:react-consumer": "pnpm --filter \"@ecl/ecl-webcomponents-react-consumer\" run build",
     "build:angular": "pnpm --filter \"@ecl/ecl-webcomponents-angular-workspace\" run build",
     "build:vue-consumer": "pnpm --filter \"@ecl/ecl-webcomponents-vue-consumer\" run build",

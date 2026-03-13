@@ -73,7 +73,7 @@
   logo-alt="European Commission"
   logo-title="European commission"
   language-aria-label="Choose language"
-  site-name="ECL Webcomponents in an angular app"
+  site-name="ECL Webcomponents in a Vue app"
 >
   <ecl-language-item slot="eu-category" path="/example.html" lang-code="bg" language="български"></ecl-language-item>
   <ecl-language-item slot="eu-category" path="/example.html" lang-code="es" language="español"></ecl-language-item>
