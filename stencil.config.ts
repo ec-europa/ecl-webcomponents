@@ -1,6 +1,7 @@
 import { Config } from '@stencil/core';
 import { reactOutputTarget } from '@stencil/react-output-target';
 import { angularOutputTarget } from '@stencil/angular-output-target';
+import { vueOutputTarget } from '@stencil/vue-output-target';
 
 export const config: Config = {
   namespace: 'ecl-webcomponents',
@@ -31,6 +32,10 @@ export const config: Config = {
       componentCorePackage: '@ecl/ecl-webcomponents',
       directivesProxyFile: 'packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular/src/lib/stencil-generated/components.ts',
       directivesArrayFile: 'packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular/src/lib/stencil-generated/index.ts',
+    }),
+    vueOutputTarget({
+      componentCorePackage: '@ecl/ecl-webcomponents',
+      proxiesFile: 'packages/ecl-webcomponents-vue/lib/components.ts',
     }),
   ],
   extras: {

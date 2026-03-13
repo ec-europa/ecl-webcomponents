@@ -2,10 +2,11 @@
 .drone.yml
 _imports
 build
-dist
+**/dist/**
 static/images
 node_modules
 package.json
 yarn.lock
 src/components/*/*.md
+**/assets/**
 src/plugins/ckeditor5-ecl-webcomponents/src/theme/icons/default.svg

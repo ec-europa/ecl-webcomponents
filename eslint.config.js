@@ -1,12 +1,16 @@
 // eslint.config.js
-const eslintPluginImport = require('eslint-plugin-import');
-const eslintPluginJest = require('eslint-plugin-jest');
-const js = require('@eslint/js');
-const prettier = require('eslint-config-prettier');
-const babelEslintParser = require('@babel/eslint-parser');
-const globals = require('globals');
+import { defineConfig } from 'eslint/config';
+import js from '@eslint/js';
+import globals from 'globals';
+import babelEslintParser from '@babel/eslint-parser';
+import pluginImport from 'eslint-plugin-import';
+import pluginJest from 'eslint-plugin-jest';
+import prettier from 'eslint-config-prettier/flat';
 
-module.exports = [
+export default defineConfig([
+  // -----------------------
+  // Global ignores
+  // -----------------------
   {
     ignores: [
       '.changelog',
@@ -23,20 +27,24 @@ module.exports = [
       'playground/editor',
       'playground/ecl-webcomponents',
       'packages/ecl-webcomponents-react-consumer/src/assets/',
+      'packages/ecl-webcomponents-vue-consumer/src/assets/',
       'packages/ecl-webcomponents-angular-workspace/server.js',
     ],
   },
+
+  // -----------------------
+  // JS / JSX files
+  // -----------------------
   {
-    ...js.configs.recommended,
     files: ['**/*.js', '**/*.jsx'],
     languageOptions: {
-      parser: babelEslintParser,
+      parser: babelEslintParser, // imported parser object
       parserOptions: {
         requireConfigFile: false,
         ecmaVersion: 2022,
         sourceType: 'module',
         babelOptions: {
-          presets: ['@babel/preset-env'], // Optional: Add if needed
+          presets: ['@babel/preset-env'],
         },
       },
       globals: {
@@ -46,8 +54,8 @@ module.exports = [
       },
     },
     plugins: {
-      import: eslintPluginImport,
-      jest: eslintPluginJest,
+      import: pluginImport,
+      jest: pluginJest,
     },
     rules: {
       'import/no-extraneous-dependencies': 'off',
@@ -55,24 +63,35 @@ module.exports = [
       ...prettier.rules,
     },
   },
+
+  // -----------------------
+  // Script files
+  // -----------------------
   {
     files: ['**/scripts/**/*.js'],
     rules: {
       'no-console': 'off',
     },
   },
+
+  // -----------------------
+  // Jest test files
+  // -----------------------
   {
     files: ['**/*.test.js', '**/*.spec.js'],
+    languageOptions: {
+      globals: {
+        ...globals.jest, // Jest globals
+      },
+    },
     rules: {
       'no-undef': 'off',
     },
-    languageOptions: {
-      globals: {
-        ...globals.jest,
-      },
-    },
-    env: {
-      jest: true,
-    },
+    // NOTE: flat config does NOT support `env`, removed
   },
-];
+
+  // -----------------------
+  // Prettier
+  // -----------------------
+  ...(Array.isArray(prettier) ? prettier : [prettier]), // safe spread
+]);

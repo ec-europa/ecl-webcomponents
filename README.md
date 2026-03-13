@@ -50,8 +50,11 @@ The scss in src/styles normally "use" the theme (ec/eu) and the vanilla scss fro
 **build:react** Builds the react wrappers
 **build:react-consumer** Builds the react consumer app
 **build:angular** Builds the angular wrappers and consumer app
+**build:vue** Builds the vue wrappers
+**build:vue-consumer** Builds the vue consumer app
 **dev-react** Launches the react consumer app
 **dev-angular** Launches the angular consumer app
+**dev-vue** Launches the vue consumer app
 
 ### Assets
 
@@ -69,8 +72,9 @@ generate requests at /build/images...
 ### Npm packages
 
 - @ecl/ecl-webcomponents - ECL webcomponents package
-- @ecl/ecl-webcomponents-react - Ecl webcomponents for React
-- @ecl/ecl-webcomponents-angular - Ecl webcomponents for Angular
+- @ecl/ecl-webcomponents-react - Ecl webcomponents wrappers for React
+- @ecl/ecl-webcomponents-angular - Ecl webcomponents wrappers for Angular
+- @ecl/ecl-webcomponents-vue - Ecl webcomponents wrappers for Vue
 - @ecl/ckeditor5-ecl-webcomponents - Ckeditor 5 plugin for ECL Webcomponents
 
 ### Documentation
