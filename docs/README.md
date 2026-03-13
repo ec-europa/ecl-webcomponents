@@ -28,9 +28,9 @@ Everywhere the ECL visual identity needs to be used and there is javascript avai
 Vanilla web-components are widely supported, only old browser might not be capable of using them, for this polyfills exists,
 but at the moment there is no clear definition of the browsers to support.
 
-## React and Angular
+## React, Angular and Vue
 
-We release two packages which are meant to offer a seamless usage of the library in React and Angular.
+We release two packages which are meant to offer a seamless usage of the library in React, Angular and Vue.
 
 ## Doc pages
 
