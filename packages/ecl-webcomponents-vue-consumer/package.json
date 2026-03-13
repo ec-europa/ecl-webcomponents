@@ -8,8 +8,6 @@
     "build": "npm run copy && vite build",
     "copy": "ncp ../ecl-webcomponents/dist/ecl-webcomponents/build src/assets",
     "preview": "vite preview",
-    "test:unit": "vitest",
-    "test:e2e": "playwright test",
     "lint": "run-s lint:*",
     "lint:oxlint": "oxlint . --fix",
     "lint:eslint": "eslint . --fix --cache",
