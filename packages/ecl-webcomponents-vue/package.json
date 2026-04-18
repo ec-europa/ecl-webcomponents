@@ -14,11 +14,13 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "build": "npm run tsc",
-    "tsc": "tsc -p . --outDir ./dist",
-    "pre-publish": "npm run build"
+    "tsc": "npx tsc -p . --outDir ./dist",
+    "pre-publish": "npm run build",
+    "prepare": "npm run build"
   },
   "dependencies": {
-    "@ecl/ecl-webcomponents": "0.24.1"
+    "@ecl/ecl-webcomponents": "0.24.1",
+    "@stencil/vue-output-target": "^0.13.1"
   },
   "engines": {
     "node": ">=20.0.0",
@@ -29,6 +31,7 @@
     "url": "https://github.com/ec-europa/ecl-webcomponents"
   },
   "devDependencies": {
+    "typescript": "^6.0.3",
     "vue": "3.5.30"
   }
 }
