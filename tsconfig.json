@@ -5,7 +5,6 @@
     "declaration": false,
     "experimentalDecorators": true,
     "lib": ["dom", "dom.iterable", "es2017"],
-    "moduleResolution": "node",
     "module": "esnext",
     "target": "es2017",
     "noUnusedLocals": true,
