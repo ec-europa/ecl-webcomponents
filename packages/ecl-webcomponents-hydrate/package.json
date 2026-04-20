@@ -1,0 +1,27 @@
+{
+  "name": "@ecl/ecl-webcomponents-hydrate",
+  "description": "Ecl Webcomponents hydration app.",
+  "version": "0.24.1",
+  "license": "EUPL-1.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "pre-publish": "rm dist/package.json"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ec-europa/ecl-webcomponents"
+  }
+}

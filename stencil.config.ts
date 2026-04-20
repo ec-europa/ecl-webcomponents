@@ -37,6 +37,10 @@ export const config: Config = {
       componentCorePackage: '@ecl/ecl-webcomponents',
       proxiesFile: 'packages/ecl-webcomponents-vue/lib/components.ts',
     }),
+    {
+      type: 'dist-hydrate-script',
+      dir: './packages/ecl-webcomponents-hydrate/dist',
+    },
   ],
   extras: {
     enableImportInjection: true, //https://github.com/storybookjs/storybook/issues/25704

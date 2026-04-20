@@ -6,9 +6,10 @@
     "outDir": "./dist",
     "lib": ["dom", "es2020"],
     "module": "es2015",
-    "moduleResolution": "node",
+    "rootDir": "./lib",
     "target": "es2017",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "moduleResolution": "bundler"
   },
   "include": ["lib"],
   "exclude": ["node_modules"]

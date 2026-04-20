@@ -20,6 +20,9 @@
   "dependencies": {
     "@ecl/ecl-webcomponents": "0.24.1"
   },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  },
   "engines": {
     "node": ">=20.0.0",
     "pnpm": "10.9.0"
