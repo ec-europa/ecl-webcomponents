@@ -18,7 +18,8 @@
     "pre-publish": "npm run build"
   },
   "dependencies": {
-    "@ecl/ecl-webcomponents": "0.24.1"
+    "@ecl/ecl-webcomponents": "0.24.1",
+    "@stencil/vue-output-target": "0.13.1"
   },
   "devDependencies": {
     "typescript": "5.9.3"
