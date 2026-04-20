@@ -8,7 +8,8 @@
     "module": "es2015",
     "rootDir": "./lib",
     "target": "es2017",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "moduleResolution": "bundler"
   },
   "include": ["lib"],
   "exclude": ["node_modules"]
