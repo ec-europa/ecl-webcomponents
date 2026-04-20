@@ -1,6 +1,6 @@
 {
   "name": "@ecl/ecl-webcomponents-vue",
-  "version": "0.24.1",
+  "version": "0.25.0",
   "description": "ECL webcomponents vue wrappers",
   "license": "EUPL-1.2",
   "publishConfig": {
@@ -18,11 +18,11 @@
     "pre-publish": "npm run build"
   },
   "dependencies": {
-    "@ecl/ecl-webcomponents": "0.24.1",
+    "@ecl/ecl-webcomponents": "0.25.0",
     "@stencil/vue-output-target": "0.13.1"
   },
   "devDependencies": {
-    "typescript": "5.9.3"
+    "vue": "3.5.32"
   },
   "engines": {
     "node": ">=20.0.0",
@@ -31,8 +31,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ec-europa/ecl-webcomponents"
-  },
-  "devDependencies": {
-    "vue": "3.5.32"
   }
 }

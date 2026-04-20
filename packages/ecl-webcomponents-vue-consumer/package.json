@@ -1,6 +1,6 @@
 {
   "name": "@ecl/ecl-webcomponents-vue-consumer",
-  "version": "0.24.1",
+  "version": "0.25.0",
   "private": true,
   "type": "module",
   "scripts": {

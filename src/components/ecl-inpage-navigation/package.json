@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-inpage-navigation",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.24.1",
+  "version": "0.25.0",
   "description": "ECL inpage navigation",
   "main": "ecl-inpage-navigation.tsx",
   "private": true,
@@ -23,7 +23,7 @@
     "lorem-ipsum": "2.0.8"
   },
   "dependencies": {
-    "@ecl/web-components-icon": "0.24.1"
+    "@ecl/web-components-icon": "0.25.0"
   },
   "repository": {
     "type": "git",
