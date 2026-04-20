@@ -32,6 +32,10 @@ but at the moment there is no clear definition of the browsers to support.
 
 We release two packages which are meant to offer a seamless usage of the library in React, Angular and Vue.
 
+## SSR (Server side rendering)
+
+To enable SSR rendering of the components in react and Vue we release a specific package named `@ecl/ecl-webcomponents-hydrate`, please refer to the [stencil documentation](https://stenciljs.com/docs/server-side-rendering) to see how to use it.
+
 ## Doc pages
 
 - [decisions](./decisions.md)

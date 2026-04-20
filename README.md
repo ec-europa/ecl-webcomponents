@@ -75,6 +75,7 @@ generate requests at /build/images...
 - @ecl/ecl-webcomponents-react - Ecl webcomponents wrappers for React
 - @ecl/ecl-webcomponents-angular - Ecl webcomponents wrappers for Angular
 - @ecl/ecl-webcomponents-vue - Ecl webcomponents wrappers for Vue
+- @ecl/ecl-webcomponents-hydrate - Only needed for real SSR rendering in react and Vue
 - @ecl/ckeditor5-ecl-webcomponents - Ckeditor 5 plugin for ECL Webcomponents
 
 ### Documentation
