@@ -3,11 +3,18 @@
   "version": "0.25.1",
   "description": "ECL webcomponents vue wrappers",
   "license": "EUPL-1.2",
+  "type": "module",
   "publishConfig": {
     "access": "public"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
     "dist"
   ],

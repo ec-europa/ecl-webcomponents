@@ -4,7 +4,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "ecl-webcomponents-angular": ["dist/ecl-webcomponents-angular", "dist/ecl-webcomponents-angular", "dist/ecl-webcomponents-angular", "dist/ecl-webcomponents-angular"]
+      "ecl-webcomponents-angular": ["dist/ecl-webcomponents-angular"]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

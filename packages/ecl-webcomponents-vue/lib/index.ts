@@ -1,2 +1,2 @@
-export * from './components';
-export * from './plugin';
+export * from './components.js';
+export * from './plugin.js';
