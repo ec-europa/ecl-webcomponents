@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-mega-menu",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.25.1",
+  "version": "0.25.2",
   "description": "ECL Mega Menu",
   "main": "ecl-mega-menu.tsx",
   "private": true,
@@ -13,9 +13,9 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "@ecl/web-components-button": "0.25.1",
-    "@ecl/web-components-grid": "0.25.1",
-    "@ecl/web-components-icon": "0.25.1"
+    "@ecl/web-components-button": "0.25.2",
+    "@ecl/web-components-grid": "0.25.2",
+    "@ecl/web-components-icon": "0.25.2"
   },
   "devDependencies": {
     "@ecl/builder": "5.0.0-alpha.22.4",
