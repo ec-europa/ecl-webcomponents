@@ -2,6 +2,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist",
+    "rootDir": "./lib",
     "lib": ["dom", "es2015", "dom.iterable"],
     "module": "es2015",
     "moduleResolution": "bundler",
@@ -11,7 +12,8 @@
     "jsx": "react-jsx",
     "jsxFactory": "",
     "allowSyntheticDefaultImports": true,
-    "declarationDir": "./dist/types"
+    "declarationDir": "./dist/types",
+    "types": ["node"]
   },
   "include": ["lib"],
   "exclude": ["node_modules"]
