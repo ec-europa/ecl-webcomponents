@@ -1,6 +1,6 @@
 {
   "name": "@ecl/ckeditor5-ecl-webcomponents",
-  "version": "0.25.1",
+  "version": "0.25.2",
   "description": "Insert ECL components in ckeditor5",
   "main": "src/index.js",
   "publishConfig": {

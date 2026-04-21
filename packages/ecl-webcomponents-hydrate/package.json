@@ -1,7 +1,7 @@
 {
   "name": "@ecl/ecl-webcomponents-hydrate",
   "description": "Ecl Webcomponents hydration app.",
-  "version": "0.25.1",
+  "version": "0.25.2",
   "license": "EUPL-1.2",
   "publishConfig": {
     "access": "public"
