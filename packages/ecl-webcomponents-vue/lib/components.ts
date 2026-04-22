@@ -19,12 +19,8 @@ export const EclAccordion: StencilVueComponent<JSX.EclAccordion> = /*@__PURE__*/
 export const EclAccordionItem: StencilVueComponent<JSX.EclAccordionItem> = /*@__PURE__*/ defineContainer<JSX.EclAccordionItem>('ecl-accordion-item', undefined, [
   'styleClass',
   'label',
-  'itemId',
   'expanded',
-  'theme',
-  'toggleItem'
-], [
-  'toggleItem'
+  'theme'
 ]);
 
 
