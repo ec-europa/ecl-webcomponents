@@ -12,10 +12,6 @@ export namespace Components {
          */
         "colorMode": string;
         /**
-          * @default false
-         */
-        "noScript": boolean;
-        /**
           * @default ''
          */
         "styleClass": string;
@@ -2923,10 +2919,6 @@ declare namespace LocalJSX {
          */
         "colorMode"?: string;
         /**
-          * @default false
-         */
-        "noScript"?: boolean;
-        /**
           * @default ''
          */
         "styleClass"?: string;
@@ -5095,7 +5087,6 @@ declare namespace LocalJSX {
 
     interface EclAccordionAttributes {
         "styleClass": string;
-        "noScript": boolean;
         "theme": string;
         "colorMode": string;
     }

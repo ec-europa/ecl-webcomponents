@@ -11,7 +11,6 @@ import type { JSX } from '@ecl/ecl-webcomponents';
 
 export const EclAccordion: StencilVueComponent<JSX.EclAccordion> = /*@__PURE__*/ defineContainer<JSX.EclAccordion>('ecl-accordion', undefined, [
   'styleClass',
-  'noScript',
   'theme',
   'colorMode'
 ]);

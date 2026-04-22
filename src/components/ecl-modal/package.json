@@ -13,16 +13,16 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "5.0.0-alpha.22.4",
-    "@ecl/grid": "5.0.0-alpha.22.4",
-    "@ecl/mixins-typography": "5.0.0-alpha.22.4",
-    "@ecl/modal": "5.0.0-alpha.22.4",
-    "@ecl/theme-ec": "5.0.0-alpha.22.4",
-    "@ecl/theme-eu": "5.0.0-alpha.22.4",
+    "@ecl/builder": "5.0.0-RC2",
+    "@ecl/grid": "5.0.0-RC2",
+    "@ecl/mixins-typography": "5.0.0-RC2",
+    "@ecl/modal": "5.0.0-RC2",
+    "@ecl/theme-ec": "5.0.0-RC2",
+    "@ecl/theme-eu": "5.0.0-RC2",
     "cross-env": "10.1.0"
   },
   "dependencies": {
-    "@ecl/web-components-button": "5.0.0-alpha.22.4"
+    "@ecl/web-components-button": "0.25.3"
   },
   "repository": {
     "type": "git",
