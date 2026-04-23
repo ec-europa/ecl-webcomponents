@@ -15,9 +15,9 @@
     "postinstall": "run-p copy:*"
   },
   "devDependencies": {
-    "@ecl/builder": "5.0.0-RC2",
-    "@ecl/preset-ec": "5.0.0-RC2",
-    "@ecl/theme-ec": "5.0.0-RC2",
+    "@ecl/builder": "5.0.0-RC3",
+    "@ecl/preset-ec": "5.0.0-RC3",
+    "@ecl/theme-ec": "5.0.0-RC3",
     "npm-run-all": "4.1.5"
   },
   "repository": {

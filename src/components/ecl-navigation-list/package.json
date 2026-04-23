@@ -13,11 +13,11 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "5.0.0-RC2",
-    "@ecl/grid": "5.0.0-RC2",
-    "@ecl/navigation-list": "5.0.0-RC2",
-    "@ecl/theme-ec": "5.0.0-RC2",
-    "@ecl/theme-eu": "5.0.0-RC2",
+    "@ecl/builder": "5.0.0-RC3",
+    "@ecl/grid": "5.0.0-RC3",
+    "@ecl/navigation-list": "5.0.0-RC3",
+    "@ecl/theme-ec": "5.0.0-RC3",
+    "@ecl/theme-eu": "5.0.0-RC3",
     "cross-env": "10.1.0"
   },
   "repository": {

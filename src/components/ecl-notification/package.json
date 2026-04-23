@@ -17,12 +17,12 @@
     "@ecl/web-components-icon": "0.25.3"
   },
   "devDependencies": {
-    "@ecl/builder": "5.0.0-RC2",
-    "@ecl/grid": "5.0.0-RC2",
-    "@ecl/mixins-typography": "5.0.0-RC2",
-    "@ecl/notification": "5.0.0-RC2",
-    "@ecl/theme-ec": "5.0.0-RC2",
-    "@ecl/theme-eu": "5.0.0-RC2",
+    "@ecl/builder": "5.0.0-RC3",
+    "@ecl/grid": "5.0.0-RC3",
+    "@ecl/mixins-typography": "5.0.0-RC3",
+    "@ecl/notification": "5.0.0-RC3",
+    "@ecl/theme-ec": "5.0.0-RC3",
+    "@ecl/theme-eu": "5.0.0-RC3",
     "cross-env": "10.1.0"
   },
   "repository": {
