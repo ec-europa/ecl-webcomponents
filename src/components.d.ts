@@ -815,6 +815,7 @@ export namespace Components {
         "visibleItems": number;
     }
     interface EclGalleryItem {
+        "ariaLabel": string;
         "elId": string;
         "icon": string;
         "imageAlt": string;
@@ -3709,6 +3710,7 @@ declare namespace LocalJSX {
         "visibleItems"?: number;
     }
     interface EclGalleryItem {
+        "ariaLabel"?: string;
         "elId"?: string;
         "icon"?: string;
         "imageAlt"?: string;
@@ -5472,6 +5474,7 @@ declare namespace LocalJSX {
         "mediaHref": string;
         "mediaIframeHref": string;
         "mediaSharePath": string;
+        "ariaLabel": string;
         "meta": string;
         "type": string;
         "icon": string;
