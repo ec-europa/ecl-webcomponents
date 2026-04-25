@@ -5,14 +5,15 @@
   "type": "module",
   "scripts": {
     "clean": "rimraf dist",
-    "copy": "ncp ../ecl-webcomponents/dist/ecl-webcomponents/build src/assets",
-    "dev": "vite",
-    "build": "tsc && vite build && npm run copy",
+    "copy": "ncp node_modules/@ecl/ecl-webcomponents/dist/ecl-webcomponents/build public/build",
+    "dev": "npm run copy && vite",
+    "build": "tsc && npm run copy && vite build",
     "preview": "vite preview",
     "pre-publish": "npm run build"
   },
   "dependencies": {
     "@ecl/ecl-webcomponents-react": "0.25.3",
+    "ncp": "2.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rimraf": "6.1.3"

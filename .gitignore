@@ -7,6 +7,7 @@ playground/editor/translations
 packages/ecl-webcomponents-react/lib/components/stencil-generated
 packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular/src/lib/stencil-generated
 packages/ecl-webcomponents-vue-consumer/src/assets
+packages/ecl-webcomponents-react-consumer/public/build
 static/build/fonts/*
 static/build/styles/*
 !static/build/styles/.gitkeep
