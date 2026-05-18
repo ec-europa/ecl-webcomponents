@@ -2141,6 +2141,30 @@ importers:
         specifier: 10.1.0
         version: 10.1.0
 
+  src/components/ecl-tooltip:
+    devDependencies:
+      '@ecl/builder':
+        specifier: 5.0.0-RC3
+        version: 5.0.0-RC3(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-RC3
+        version: 5.0.0-RC3
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-RC3
+        version: 5.0.0-RC3
+      '@ecl/theme-ec':
+        specifier: 5.0.0-RC3
+        version: 5.0.0-RC3
+      '@ecl/theme-eu':
+        specifier: 5.0.0-RC3
+        version: 5.0.0-RC3
+      '@ecl/tooltip':
+        specifier: 5.0.0-RC3
+        version: 5.0.0-RC3
+      cross-env:
+        specifier: 10.1.0
+        version: 10.1.0
+
   src/components/ecl-video:
     devDependencies:
       '@ecl/builder':

@@ -1270,6 +1270,11 @@ export const EclTimelineItem: StencilVueComponent<JSX.EclTimelineItem> = /*@__PU
 ]);
 
 
+export const EclTooltip: StencilVueComponent<JSX.EclTooltip> = /*@__PURE__*/ defineContainer<JSX.EclTooltip>('ecl-tooltip', undefined, [
+  'noScript'
+]);
+
+
 export const EclVideo: StencilVueComponent<JSX.EclVideo> = /*@__PURE__*/ defineContainer<JSX.EclVideo>('ecl-video', undefined, [
   'styleClass',
   'theme',

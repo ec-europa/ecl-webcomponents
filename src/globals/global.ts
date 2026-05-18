@@ -2,7 +2,6 @@ import { setMode } from '@stencil/core';
 
 const isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined';
 
-
 declare global {
   interface Window {
     eclTheme?: string;

@@ -2128,6 +2128,12 @@ export namespace Components {
         "toggleLabelExpanded": string;
         "type": string;
     }
+    interface EclTooltip {
+        /**
+          * @default false
+         */
+        "noScript": boolean;
+    }
     interface EclVideo {
         /**
           * @default false
@@ -2800,6 +2806,12 @@ declare global {
         prototype: HTMLEclTimelineItemElement;
         new (): HTMLEclTimelineItemElement;
     };
+    interface HTMLEclTooltipElement extends Components.EclTooltip, HTMLStencilElement {
+    }
+    var HTMLEclTooltipElement: {
+        prototype: HTMLEclTooltipElement;
+        new (): HTMLEclTooltipElement;
+    };
     interface HTMLEclVideoElement extends Components.EclVideo, HTMLStencilElement {
     }
     var HTMLEclVideoElement: {
@@ -2894,6 +2906,7 @@ declare global {
         "ecl-textarea": HTMLEclTextareaElement;
         "ecl-timeline": HTMLEclTimelineElement;
         "ecl-timeline-item": HTMLEclTimelineItemElement;
+        "ecl-tooltip": HTMLEclTooltipElement;
         "ecl-video": HTMLEclVideoElement;
     }
 }
@@ -5041,6 +5054,12 @@ declare namespace LocalJSX {
         "toggleLabelExpanded"?: string;
         "type"?: string;
     }
+    interface EclTooltip {
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
+    }
     interface EclVideo {
         /**
           * @default false
@@ -6114,6 +6133,9 @@ declare namespace LocalJSX {
         "toggleLabelExpanded": string;
         "isLast": boolean;
     }
+    interface EclTooltipAttributes {
+        "noScript": boolean;
+    }
     interface EclVideoAttributes {
         "styleClass": string;
         "theme": string;
@@ -6216,6 +6238,7 @@ declare namespace LocalJSX {
         "ecl-textarea": Omit<EclTextarea, keyof EclTextareaAttributes> & { [K in keyof EclTextarea & keyof EclTextareaAttributes]?: EclTextarea[K] } & { [K in keyof EclTextarea & keyof EclTextareaAttributes as `attr:${K}`]?: EclTextareaAttributes[K] } & { [K in keyof EclTextarea & keyof EclTextareaAttributes as `prop:${K}`]?: EclTextarea[K] };
         "ecl-timeline": Omit<EclTimeline, keyof EclTimelineAttributes> & { [K in keyof EclTimeline & keyof EclTimelineAttributes]?: EclTimeline[K] } & { [K in keyof EclTimeline & keyof EclTimelineAttributes as `attr:${K}`]?: EclTimelineAttributes[K] } & { [K in keyof EclTimeline & keyof EclTimelineAttributes as `prop:${K}`]?: EclTimeline[K] };
         "ecl-timeline-item": Omit<EclTimelineItem, keyof EclTimelineItemAttributes> & { [K in keyof EclTimelineItem & keyof EclTimelineItemAttributes]?: EclTimelineItem[K] } & { [K in keyof EclTimelineItem & keyof EclTimelineItemAttributes as `attr:${K}`]?: EclTimelineItemAttributes[K] } & { [K in keyof EclTimelineItem & keyof EclTimelineItemAttributes as `prop:${K}`]?: EclTimelineItem[K] };
+        "ecl-tooltip": Omit<EclTooltip, keyof EclTooltipAttributes> & { [K in keyof EclTooltip & keyof EclTooltipAttributes]?: EclTooltip[K] } & { [K in keyof EclTooltip & keyof EclTooltipAttributes as `attr:${K}`]?: EclTooltipAttributes[K] } & { [K in keyof EclTooltip & keyof EclTooltipAttributes as `prop:${K}`]?: EclTooltip[K] };
         "ecl-video": Omit<EclVideo, keyof EclVideoAttributes> & { [K in keyof EclVideo & keyof EclVideoAttributes]?: EclVideo[K] } & { [K in keyof EclVideo & keyof EclVideoAttributes as `attr:${K}`]?: EclVideoAttributes[K] } & { [K in keyof EclVideo & keyof EclVideoAttributes as `prop:${K}`]?: EclVideo[K] };
     }
 }
@@ -6310,6 +6333,7 @@ declare module "@stencil/core" {
             "ecl-textarea": LocalJSX.IntrinsicElements["ecl-textarea"] & JSXBase.HTMLAttributes<HTMLEclTextareaElement>;
             "ecl-timeline": LocalJSX.IntrinsicElements["ecl-timeline"] & JSXBase.HTMLAttributes<HTMLEclTimelineElement>;
             "ecl-timeline-item": LocalJSX.IntrinsicElements["ecl-timeline-item"] & JSXBase.HTMLAttributes<HTMLEclTimelineItemElement>;
+            "ecl-tooltip": LocalJSX.IntrinsicElements["ecl-tooltip"] & JSXBase.HTMLAttributes<HTMLEclTooltipElement>;
             "ecl-video": LocalJSX.IntrinsicElements["ecl-video"] & JSXBase.HTMLAttributes<HTMLEclVideoElement>;
         }
     }
