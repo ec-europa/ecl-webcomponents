@@ -527,6 +527,7 @@ export namespace Components {
         "mediaAnchor": string;
         "mediaBehavior": string;
         "mediaCaption": string;
+        "mediaCredit": string;
         /**
           * @default 'left'
          */
@@ -1113,6 +1114,7 @@ export namespace Components {
           * @default false
          */
         "autoplay": boolean;
+        "credit": string;
         /**
           * @default false
          */
@@ -3422,6 +3424,7 @@ declare namespace LocalJSX {
         "mediaAnchor"?: string;
         "mediaBehavior"?: string;
         "mediaCaption"?: string;
+        "mediaCredit"?: string;
         /**
           * @default 'left'
          */
@@ -4011,6 +4014,7 @@ declare namespace LocalJSX {
           * @default false
          */
         "autoplay"?: boolean;
+        "credit"?: string;
         /**
           * @default false
          */
@@ -5309,6 +5313,7 @@ declare namespace LocalJSX {
         "mediaCaption": string;
         "mediaBehavior": string;
         "mediaAnchor": string;
+        "mediaCredit": string;
         "verticalAlignment": string;
         "position": string;
         "defaultContainerClass": string;
@@ -5614,6 +5619,7 @@ declare namespace LocalJSX {
         "tracks": string;
         "autoplay": boolean;
         "hasCaption": boolean;
+        "credit": string;
         "ratio": string;
         "srPlay": string;
         "srPause": string;

@@ -303,6 +303,7 @@ export const EclFeaturedItem: StencilVueComponent<JSX.EclFeaturedItem> = /*@__PU
   'mediaCaption',
   'mediaBehavior',
   'mediaAnchor',
+  'mediaCredit',
   'verticalAlignment',
   'position',
   'defaultContainerClass'
@@ -659,6 +660,7 @@ export const EclMediaContainer: StencilVueComponent<JSX.EclMediaContainer> = /*@
   'tracks',
   'autoplay',
   'hasCaption',
+  'credit',
   'ratio',
   'srPlay',
   'srPause',

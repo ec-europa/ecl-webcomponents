@@ -2,6 +2,7 @@ const getArgs = (storyName = '') => {
   const args = {
     fullWidth: false,
     caption: 'The European Commission has put forward ambitious yet realistic proposals for a modern EU budget. It is time for an EU budget that reflects rapid developments in innovation, the economy, the environment and geopolitics, amongst others.',
+    credit: '@Copyright',
     hasCaption: true,
     hasExpandable: false,
   };
@@ -46,6 +47,13 @@ const getArgTypes = (storyName = '') => {
     	},
       if: { arg: 'hasCaption', truthy: true },
     },
+    credit: {
+      control: { name: 'string' },
+      table: {
+        description: 'Text to be used as a credit',
+      },
+      if: { arg: 'hasCaption', truthy: true },
+    }
   };
 
   if (storyName === 'iframe') {
@@ -93,6 +101,7 @@ const TemplateImg = (args) =>
     image-alt="Alternative text for the image"
     ratio="${args.ratio}"
     full-width=${args.fullWidth}
+    credit="${args.hasCaption? args.credit : ''}"
   >
     ${args.hasCaption ? args.caption : ''}
     ${args.hasExpandable ?
@@ -121,6 +130,7 @@ const TemplateVideo = (args) =>
     sr-play="play"
     full-width=${args.fullWidth}
     sr-pause="pause"
+    credit=${args.hasCaption ? args.credit : ''}"
   	sources='[{"src": "https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4", "type": "video/mp4"}, {"src": "https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm", "type": "video/webm"}]'
   	tracks='[{"src": "/captions/bunny-en.vtt", "kind": "captions", "src_lang": "en", "label": "English"}, {"src": "/captions/bunny-fr.vtt", "kind": "captions", "src_lang": "fr", "label": "français"}]'
   >
@@ -151,6 +161,7 @@ const TemplateIframe = (args) =>
       theme="${args.theme}"
       has-caption=${args.hasCaption}
       full-width=${args.fullWidth}
+      credit="${args.hasCaption ? args.credit : ''}"
       embedded-media
     >
       ${args.hasCaption ? args.caption : ''}
@@ -179,6 +190,7 @@ const TemplateInfographic = (args) =>
       has-caption=${args.hasCaption}
       image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
       full-width=${args.fullWidth}
+      credit="${args.hasCaption ? args.credit : ''}"
     >
       ${args.hasCaption ? 'Infographic title and copyright' : ''}
       ${args.hasExpandable ?

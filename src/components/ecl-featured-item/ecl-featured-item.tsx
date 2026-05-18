@@ -25,6 +25,7 @@ export class EclFeaturedItem {
   @Prop() mediaCaption: string;
   @Prop() mediaBehavior: string;
   @Prop() mediaAnchor: string;
+  @Prop() mediaCredit: string;
   @Prop() verticalAlignment: string = 'top';
   @Prop() position: string = 'left';
   @Prop() defaultContainerClass = 'ecl-featured-item__container';
@@ -122,6 +123,7 @@ export class EclFeaturedItem {
               image={this.image}
               hasCaption={this.mediaCaption !== ''}
               imageAnchor={this.mediaAnchor}
+              credit={this.mediaCredit}
             >
              {this.mediaCaption}
             </ecl-media-container>

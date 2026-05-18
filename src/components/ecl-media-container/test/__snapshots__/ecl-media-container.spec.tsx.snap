@@ -20,7 +20,7 @@ exports[`ecl-media-container renders correctly in full width 1`] = `
 `;
 
 exports[`ecl-media-container renders correctly with an embedded video 1`] = `
-<ecl-media-container ratio="16-9">
+<ecl-media-container credit="@Copyright" ratio="16-9">
   <!---->
   <!--s-nt-
               caption for the media container
@@ -82,7 +82,7 @@ exports[`ecl-media-container renders correctly with an html5 video 1`] = `
 `;
 
 exports[`ecl-media-container renders correctly with an image 1`] = `
-<ecl-media-container image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" image-alt="Alternative text">
+<ecl-media-container credit="@Copyright" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" image-alt="Alternative text">
   <!---->
   <!--s-nt-
               caption for the media container
