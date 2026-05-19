@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-tag",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.25.3",
+  "version": "0.26.0",
   "description": "ECL Tag",
   "main": "ecl-tag.tsx",
   "private": true,
@@ -20,7 +20,7 @@
     "cross-env": "10.1.0"
   },
   "dependencies": {
-    "@ecl/web-components-icon": "0.25.3"
+    "@ecl/web-components-icon": "0.26.0"
   },
   "repository": {
     "type": "git",
