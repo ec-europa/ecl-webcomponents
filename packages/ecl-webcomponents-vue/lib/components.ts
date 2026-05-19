@@ -24,6 +24,17 @@ export const EclAccordionItem: StencilVueComponent<JSX.EclAccordionItem> = /*@__
 ]);
 
 
+export const EclAddToCalendar: StencilVueComponent<JSX.EclAddToCalendar> = /*@__PURE__*/ defineContainer<JSX.EclAddToCalendar>('ecl-add-to-calendar', undefined, [
+  'styleClass',
+  'theme',
+  'colorMode',
+  'eventTitle',
+  'meta',
+  'fullWidth',
+  'withButton'
+]);
+
+
 export const EclBanner: StencilVueComponent<JSX.EclBanner> = /*@__PURE__*/ defineContainer<JSX.EclBanner>('ecl-banner', undefined, [
   'colorMode',
   'theme',

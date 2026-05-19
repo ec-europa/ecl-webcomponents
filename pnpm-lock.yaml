@@ -535,6 +535,30 @@ importers:
         specifier: 10.1.0
         version: 10.1.0
 
+  src/components/ecl-add-to-calendar:
+    devDependencies:
+      '@ecl/add-to-calendar':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/builder':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/theme-ec':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/theme-eu':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      cross-env:
+        specifier: 10.1.0
+        version: 10.1.0
+
   src/components/ecl-banner:
     dependencies:
       '@ecl/web-components-icon':
@@ -20364,7 +20388,7 @@ snapshots:
       '@vue/shared': 3.5.32
       estree-walker: 2.0.2
       magic-string: 0.30.21
-      postcss: 8.5.10
+      postcss: 8.5.14
       source-map-js: 1.2.1
 
   '@vue/compiler-sfc@3.5.34':

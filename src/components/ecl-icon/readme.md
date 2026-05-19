@@ -24,6 +24,7 @@
 ### Used by
 
  - [ecl-accordion-item](../ecl-accordion)
+ - [ecl-add-to-calendar](../ecl-add-to-calendar)
  - [ecl-banner](../ecl-banner)
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
  - [ecl-carousel](../ecl-carousel)
@@ -70,6 +71,7 @@
 ```mermaid
 graph TD;
   ecl-accordion-item --> ecl-icon
+  ecl-add-to-calendar --> ecl-icon
   ecl-banner --> ecl-icon
   ecl-breadcrumb-item --> ecl-icon
   ecl-carousel --> ecl-icon

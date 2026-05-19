@@ -23,6 +23,27 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
     }
+    interface EclAddToCalendar {
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        "eventTitle": string;
+        /**
+          * @default false
+         */
+        "fullWidth": boolean;
+        "meta": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+        /**
+          * @default true
+         */
+        "withButton": boolean;
+    }
     interface EclBanner {
         "bannerTitle": string;
         "bannerTitleLink": string;
@@ -2207,6 +2228,12 @@ declare global {
         prototype: HTMLEclAccordionItemElement;
         new (): HTMLEclAccordionItemElement;
     };
+    interface HTMLEclAddToCalendarElement extends Components.EclAddToCalendar, HTMLStencilElement {
+    }
+    var HTMLEclAddToCalendarElement: {
+        prototype: HTMLEclAddToCalendarElement;
+        new (): HTMLEclAddToCalendarElement;
+    };
     interface HTMLEclBannerElement extends Components.EclBanner, HTMLStencilElement {
     }
     var HTMLEclBannerElement: {
@@ -2821,6 +2848,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "ecl-accordion": HTMLEclAccordionElement;
         "ecl-accordion-item": HTMLEclAccordionItemElement;
+        "ecl-add-to-calendar": HTMLEclAddToCalendarElement;
         "ecl-banner": HTMLEclBannerElement;
         "ecl-blockquote": HTMLEclBlockquoteElement;
         "ecl-breadcrumb": HTMLEclBreadcrumbElement;
@@ -2929,6 +2957,27 @@ declare namespace LocalJSX {
         "label"?: string;
         "styleClass"?: string;
         "theme"?: string;
+    }
+    interface EclAddToCalendar {
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        "eventTitle"?: string;
+        /**
+          * @default false
+         */
+        "fullWidth"?: boolean;
+        "meta"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+        /**
+          * @default true
+         */
+        "withButton"?: boolean;
     }
     interface EclBanner {
         "bannerTitle"?: string;
@@ -5103,6 +5152,15 @@ declare namespace LocalJSX {
         "expanded": boolean;
         "theme": string;
     }
+    interface EclAddToCalendarAttributes {
+        "styleClass": string;
+        "theme": string;
+        "colorMode": string;
+        "eventTitle": string;
+        "meta": string;
+        "fullWidth": boolean;
+        "withButton": boolean;
+    }
     interface EclBannerAttributes {
         "colorMode": string;
         "theme": string;
@@ -6153,6 +6211,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "ecl-accordion": Omit<EclAccordion, keyof EclAccordionAttributes> & { [K in keyof EclAccordion & keyof EclAccordionAttributes]?: EclAccordion[K] } & { [K in keyof EclAccordion & keyof EclAccordionAttributes as `attr:${K}`]?: EclAccordionAttributes[K] } & { [K in keyof EclAccordion & keyof EclAccordionAttributes as `prop:${K}`]?: EclAccordion[K] };
         "ecl-accordion-item": Omit<EclAccordionItem, keyof EclAccordionItemAttributes> & { [K in keyof EclAccordionItem & keyof EclAccordionItemAttributes]?: EclAccordionItem[K] } & { [K in keyof EclAccordionItem & keyof EclAccordionItemAttributes as `attr:${K}`]?: EclAccordionItemAttributes[K] } & { [K in keyof EclAccordionItem & keyof EclAccordionItemAttributes as `prop:${K}`]?: EclAccordionItem[K] };
+        "ecl-add-to-calendar": Omit<EclAddToCalendar, keyof EclAddToCalendarAttributes> & { [K in keyof EclAddToCalendar & keyof EclAddToCalendarAttributes]?: EclAddToCalendar[K] } & { [K in keyof EclAddToCalendar & keyof EclAddToCalendarAttributes as `attr:${K}`]?: EclAddToCalendarAttributes[K] } & { [K in keyof EclAddToCalendar & keyof EclAddToCalendarAttributes as `prop:${K}`]?: EclAddToCalendar[K] };
         "ecl-banner": Omit<EclBanner, keyof EclBannerAttributes> & { [K in keyof EclBanner & keyof EclBannerAttributes]?: EclBanner[K] } & { [K in keyof EclBanner & keyof EclBannerAttributes as `attr:${K}`]?: EclBannerAttributes[K] } & { [K in keyof EclBanner & keyof EclBannerAttributes as `prop:${K}`]?: EclBanner[K] };
         "ecl-blockquote": Omit<EclBlockquote, keyof EclBlockquoteAttributes> & { [K in keyof EclBlockquote & keyof EclBlockquoteAttributes]?: EclBlockquote[K] } & { [K in keyof EclBlockquote & keyof EclBlockquoteAttributes as `attr:${K}`]?: EclBlockquoteAttributes[K] } & { [K in keyof EclBlockquote & keyof EclBlockquoteAttributes as `prop:${K}`]?: EclBlockquote[K] };
         "ecl-breadcrumb": Omit<EclBreadcrumb, keyof EclBreadcrumbAttributes> & { [K in keyof EclBreadcrumb & keyof EclBreadcrumbAttributes]?: EclBreadcrumb[K] } & { [K in keyof EclBreadcrumb & keyof EclBreadcrumbAttributes as `attr:${K}`]?: EclBreadcrumbAttributes[K] } & { [K in keyof EclBreadcrumb & keyof EclBreadcrumbAttributes as `prop:${K}`]?: EclBreadcrumb[K] };
@@ -6248,6 +6307,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "ecl-accordion": LocalJSX.IntrinsicElements["ecl-accordion"] & JSXBase.HTMLAttributes<HTMLEclAccordionElement>;
             "ecl-accordion-item": LocalJSX.IntrinsicElements["ecl-accordion-item"] & JSXBase.HTMLAttributes<HTMLEclAccordionItemElement>;
+            "ecl-add-to-calendar": LocalJSX.IntrinsicElements["ecl-add-to-calendar"] & JSXBase.HTMLAttributes<HTMLEclAddToCalendarElement>;
             "ecl-banner": LocalJSX.IntrinsicElements["ecl-banner"] & JSXBase.HTMLAttributes<HTMLEclBannerElement>;
             "ecl-blockquote": LocalJSX.IntrinsicElements["ecl-blockquote"] & JSXBase.HTMLAttributes<HTMLEclBlockquoteElement>;
             "ecl-breadcrumb": LocalJSX.IntrinsicElements["ecl-breadcrumb"] & JSXBase.HTMLAttributes<HTMLEclBreadcrumbElement>;
