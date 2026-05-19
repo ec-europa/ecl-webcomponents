@@ -35,3 +35,9 @@
 .ecl-file__description {
   white-space: normal;
 }
+
+@container ecl-file (width >= 768px) {
+  :host .ecl-file--thumbnail.sc-ecl-file-eu .ecl-file__container {
+    flex-direction: row;
+  }
+}

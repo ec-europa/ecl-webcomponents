@@ -24,3 +24,9 @@
   margin-block: 1rem;
   margin-inline-end: var(--s-xs);
 }
+
+@container ecl-file (width >= 768px) {
+  :host .ecl-file--thumbnail.sc-ecl-file-ec .ecl-file__container {
+    flex-direction: row;
+  }
+}
