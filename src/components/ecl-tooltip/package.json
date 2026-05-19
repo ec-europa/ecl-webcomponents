@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-tooltip",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.25.3",
+  "version": "0.26.0",
   "description": "ECL Tooltip",
   "main": "ecl-tooltip.tsx",
   "private": true,
@@ -14,11 +14,11 @@
   },
   "devDependencies": {
     "@ecl/builder": "5.0.0-RC2",
-    "@ecl/tooltip": "5.0.0-RC2",
     "@ecl/grid": "5.0.0-RC2",
-    "@ecl/theme-ec": "5.0.0-RC2",
     "@ecl/mixins-typography": "5.0.0-RC2",
+    "@ecl/theme-ec": "5.0.0-RC2",
     "@ecl/theme-eu": "5.0.0-RC2",
+    "@ecl/tooltip": "5.0.0-RC2",
     "cross-env": "10.1.0"
   },
   "repository": {
