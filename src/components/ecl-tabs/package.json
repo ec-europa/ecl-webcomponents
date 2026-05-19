@@ -20,7 +20,7 @@
     "@ecl/theme-eu": "5.0.0-RC2",
     "@ecl/utility-screen-reader": "5.0.0-RC2",
     "cross-env": "10.1.0",
-    "lorem-ipsum": "2.0.8"
+    "lorem-ipsum": "3.0.0"
   },
   "repository": {
     "type": "git",
