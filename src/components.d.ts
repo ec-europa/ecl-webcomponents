@@ -12,10 +12,6 @@ export namespace Components {
          */
         "colorMode": string;
         /**
-          * @default false
-         */
-        "noScript": boolean;
-        /**
           * @default ''
          */
         "styleClass": string;
@@ -23,7 +19,6 @@ export namespace Components {
     }
     interface EclAccordionItem {
         "expanded": boolean;
-        "itemId": string;
         "label": string;
         "styleClass": string;
         "theme": string;
@@ -532,6 +527,7 @@ export namespace Components {
         "mediaAnchor": string;
         "mediaBehavior": string;
         "mediaCaption": string;
+        "mediaCredit": string;
         /**
           * @default 'left'
          */
@@ -820,6 +816,7 @@ export namespace Components {
         "visibleItems": number;
     }
     interface EclGalleryItem {
+        "ariaLabel": string;
         "elId": string;
         "icon": string;
         "imageAlt": string;
@@ -1117,6 +1114,7 @@ export namespace Components {
           * @default false
          */
         "autoplay": boolean;
+        "credit": string;
         /**
           * @default false
          */
@@ -2130,6 +2128,12 @@ export namespace Components {
         "toggleLabelExpanded": string;
         "type": string;
     }
+    interface EclTooltip {
+        /**
+          * @default false
+         */
+        "noScript": boolean;
+    }
     interface EclVideo {
         /**
           * @default false
@@ -2161,10 +2165,6 @@ export namespace Components {
          */
         "zoom": boolean;
     }
-}
-export interface EclAccordionItemCustomEvent<T> extends CustomEvent<T> {
-    detail: T;
-    target: HTMLEclAccordionItemElement;
 }
 export interface EclDatepickerCustomEvent<T> extends CustomEvent<T> {
     detail: T;
@@ -2201,18 +2201,7 @@ declare global {
         prototype: HTMLEclAccordionElement;
         new (): HTMLEclAccordionElement;
     };
-    interface HTMLEclAccordionItemElementEventMap {
-        "toggleItem": string;
-    }
     interface HTMLEclAccordionItemElement extends Components.EclAccordionItem, HTMLStencilElement {
-        addEventListener<K extends keyof HTMLEclAccordionItemElementEventMap>(type: K, listener: (this: HTMLEclAccordionItemElement, ev: EclAccordionItemCustomEvent<HTMLEclAccordionItemElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
-        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
-        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
-        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
-        removeEventListener<K extends keyof HTMLEclAccordionItemElementEventMap>(type: K, listener: (this: HTMLEclAccordionItemElement, ev: EclAccordionItemCustomEvent<HTMLEclAccordionItemElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
-        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
-        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
-        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
     }
     var HTMLEclAccordionItemElement: {
         prototype: HTMLEclAccordionItemElement;
@@ -2817,6 +2806,12 @@ declare global {
         prototype: HTMLEclTimelineItemElement;
         new (): HTMLEclTimelineItemElement;
     };
+    interface HTMLEclTooltipElement extends Components.EclTooltip, HTMLStencilElement {
+    }
+    var HTMLEclTooltipElement: {
+        prototype: HTMLEclTooltipElement;
+        new (): HTMLEclTooltipElement;
+    };
     interface HTMLEclVideoElement extends Components.EclVideo, HTMLStencilElement {
     }
     var HTMLEclVideoElement: {
@@ -2911,6 +2906,7 @@ declare global {
         "ecl-textarea": HTMLEclTextareaElement;
         "ecl-timeline": HTMLEclTimelineElement;
         "ecl-timeline-item": HTMLEclTimelineItemElement;
+        "ecl-tooltip": HTMLEclTooltipElement;
         "ecl-video": HTMLEclVideoElement;
     }
 }
@@ -2923,10 +2919,6 @@ declare namespace LocalJSX {
          */
         "colorMode"?: string;
         /**
-          * @default false
-         */
-        "noScript"?: boolean;
-        /**
           * @default ''
          */
         "styleClass"?: string;
@@ -2934,9 +2926,7 @@ declare namespace LocalJSX {
     }
     interface EclAccordionItem {
         "expanded"?: boolean;
-        "itemId"?: string;
         "label"?: string;
-        "onToggleItem"?: (event: EclAccordionItemCustomEvent<string>) => void;
         "styleClass"?: string;
         "theme"?: string;
     }
@@ -3447,6 +3437,7 @@ declare namespace LocalJSX {
         "mediaAnchor"?: string;
         "mediaBehavior"?: string;
         "mediaCaption"?: string;
+        "mediaCredit"?: string;
         /**
           * @default 'left'
          */
@@ -3735,6 +3726,7 @@ declare namespace LocalJSX {
         "visibleItems"?: number;
     }
     interface EclGalleryItem {
+        "ariaLabel"?: string;
         "elId"?: string;
         "icon"?: string;
         "imageAlt"?: string;
@@ -4035,6 +4027,7 @@ declare namespace LocalJSX {
           * @default false
          */
         "autoplay"?: boolean;
+        "credit"?: string;
         /**
           * @default false
          */
@@ -5061,6 +5054,12 @@ declare namespace LocalJSX {
         "toggleLabelExpanded"?: string;
         "type"?: string;
     }
+    interface EclTooltip {
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
+    }
     interface EclVideo {
         /**
           * @default false
@@ -5095,14 +5094,12 @@ declare namespace LocalJSX {
 
     interface EclAccordionAttributes {
         "styleClass": string;
-        "noScript": boolean;
         "theme": string;
         "colorMode": string;
     }
     interface EclAccordionItemAttributes {
         "styleClass": string;
         "label": string;
-        "itemId": string;
         "expanded": boolean;
         "theme": string;
     }
@@ -5335,6 +5332,7 @@ declare namespace LocalJSX {
         "mediaCaption": string;
         "mediaBehavior": string;
         "mediaAnchor": string;
+        "mediaCredit": string;
         "verticalAlignment": string;
         "position": string;
         "defaultContainerClass": string;
@@ -5500,6 +5498,7 @@ declare namespace LocalJSX {
         "mediaHref": string;
         "mediaIframeHref": string;
         "mediaSharePath": string;
+        "ariaLabel": string;
         "meta": string;
         "type": string;
         "icon": string;
@@ -5639,6 +5638,7 @@ declare namespace LocalJSX {
         "tracks": string;
         "autoplay": boolean;
         "hasCaption": boolean;
+        "credit": string;
         "ratio": string;
         "srPlay": string;
         "srPause": string;
@@ -6133,6 +6133,9 @@ declare namespace LocalJSX {
         "toggleLabelExpanded": string;
         "isLast": boolean;
     }
+    interface EclTooltipAttributes {
+        "noScript": boolean;
+    }
     interface EclVideoAttributes {
         "styleClass": string;
         "theme": string;
@@ -6235,6 +6238,7 @@ declare namespace LocalJSX {
         "ecl-textarea": Omit<EclTextarea, keyof EclTextareaAttributes> & { [K in keyof EclTextarea & keyof EclTextareaAttributes]?: EclTextarea[K] } & { [K in keyof EclTextarea & keyof EclTextareaAttributes as `attr:${K}`]?: EclTextareaAttributes[K] } & { [K in keyof EclTextarea & keyof EclTextareaAttributes as `prop:${K}`]?: EclTextarea[K] };
         "ecl-timeline": Omit<EclTimeline, keyof EclTimelineAttributes> & { [K in keyof EclTimeline & keyof EclTimelineAttributes]?: EclTimeline[K] } & { [K in keyof EclTimeline & keyof EclTimelineAttributes as `attr:${K}`]?: EclTimelineAttributes[K] } & { [K in keyof EclTimeline & keyof EclTimelineAttributes as `prop:${K}`]?: EclTimeline[K] };
         "ecl-timeline-item": Omit<EclTimelineItem, keyof EclTimelineItemAttributes> & { [K in keyof EclTimelineItem & keyof EclTimelineItemAttributes]?: EclTimelineItem[K] } & { [K in keyof EclTimelineItem & keyof EclTimelineItemAttributes as `attr:${K}`]?: EclTimelineItemAttributes[K] } & { [K in keyof EclTimelineItem & keyof EclTimelineItemAttributes as `prop:${K}`]?: EclTimelineItem[K] };
+        "ecl-tooltip": Omit<EclTooltip, keyof EclTooltipAttributes> & { [K in keyof EclTooltip & keyof EclTooltipAttributes]?: EclTooltip[K] } & { [K in keyof EclTooltip & keyof EclTooltipAttributes as `attr:${K}`]?: EclTooltipAttributes[K] } & { [K in keyof EclTooltip & keyof EclTooltipAttributes as `prop:${K}`]?: EclTooltip[K] };
         "ecl-video": Omit<EclVideo, keyof EclVideoAttributes> & { [K in keyof EclVideo & keyof EclVideoAttributes]?: EclVideo[K] } & { [K in keyof EclVideo & keyof EclVideoAttributes as `attr:${K}`]?: EclVideoAttributes[K] } & { [K in keyof EclVideo & keyof EclVideoAttributes as `prop:${K}`]?: EclVideo[K] };
     }
 }
@@ -6329,6 +6333,7 @@ declare module "@stencil/core" {
             "ecl-textarea": LocalJSX.IntrinsicElements["ecl-textarea"] & JSXBase.HTMLAttributes<HTMLEclTextareaElement>;
             "ecl-timeline": LocalJSX.IntrinsicElements["ecl-timeline"] & JSXBase.HTMLAttributes<HTMLEclTimelineElement>;
             "ecl-timeline-item": LocalJSX.IntrinsicElements["ecl-timeline-item"] & JSXBase.HTMLAttributes<HTMLEclTimelineItemElement>;
+            "ecl-tooltip": LocalJSX.IntrinsicElements["ecl-tooltip"] & JSXBase.HTMLAttributes<HTMLEclTooltipElement>;
             "ecl-video": LocalJSX.IntrinsicElements["ecl-video"] & JSXBase.HTMLAttributes<HTMLEclVideoElement>;
         }
     }

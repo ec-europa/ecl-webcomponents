@@ -1,83 +1,76 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-accordion renders 1`] = `
-<ecl-accordion data-ecl-auto-initialized="true" theme="ec">
+<ecl-accordion>
   <!---->
   <div class="ecl-accordion">
-    <ecl-accordion-item icon-path="/icons.svg" item-id="ecl-accordion-item-id-1" label="Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy" label-collapsed="Open" label-expanded="Close">
+    <ecl-accordion-item label="Protecting citizens and freedoms">
       <!---->
-      <div class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
-        <div class="ecl-accordion__title sc-ecl-accordion-ec" id="ecl-accordion-item-id-1-title">
-          <button aria-controls="ecl-accordion-item-id-1-content" aria-expanded="false" class="ecl-accordion__toggle sc-ecl-accordion-ec" data-ecl-accordion-toggle type="button">
-            <span class="ecl-accordion__toggle-flex sc-ecl-accordion-ec">
-              <span class="ecl-accordion__toggle-title sc-ecl-accordion-ec">
-                Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy
-              </span>
-              <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
-                <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
-                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder"></span>
-                </ecl-icon>
-                <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
-                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus"></span>
-                </ecl-icon>
-              </span>
-            </span>
-          </button>
+      <details class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
+        <summary class="ecl-accordion__toggle sc-ecl-accordion-ec">
+          Protecting citizens and freedoms
+          <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
+            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus"></span>
+          </ecl-icon>
+          <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
+            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder"></span>
+          </ecl-icon>
+        </summary>
+        <div class="ecl-accordion__content sc-ecl-accordion-ec">
+          Ensuring effective control of the EU's external borders and further developing a comprehensive migration policy. Fighting terrorism and cross-border/online crime, increasing the EU's resilience against both natural and human-made disasters.
         </div>
-        <div aria-labelledby="ecl-accordion-item-id-1-title" class="ecl-accordion__content sc-ecl-accordion-ec" hidden="" id="ecl-accordion-item-id-1-content" role="region">
-          Accordion item label
-        </div>
-      </div>
+      </details>
     </ecl-accordion-item>
-    <ecl-accordion-item expanded="" icon-path="/icons.svg" item-id="ecl-accordion-item-id-2" label="Energy union and climate" label-collapsed="Open" label-expanded="Close">
+    <ecl-accordion-item expanded="" label="Developing a strong and vibrant economic base">
       <!---->
-      <div class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
-        <div class="ecl-accordion__title sc-ecl-accordion-ec" id="ecl-accordion-item-id-2-title">
-          <button aria-controls="ecl-accordion-item-id-2-content" aria-expanded="true" class="ecl-accordion__toggle sc-ecl-accordion-ec" data-ecl-accordion-toggle type="button">
-            <span class="ecl-accordion__toggle-flex sc-ecl-accordion-ec">
-              <span class="ecl-accordion__toggle-title sc-ecl-accordion-ec">
-                Energy union and climate
-              </span>
-              <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
-                <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
-                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder"></span>
-                </ecl-icon>
-                <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
-                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus"></span>
-                </ecl-icon>
-              </span>
-            </span>
-          </button>
+      <details class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
+        <summary class="ecl-accordion__toggle sc-ecl-accordion-ec">
+          Developing a strong and vibrant economic base
+          <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
+            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus"></span>
+          </ecl-icon>
+          <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
+            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder"></span>
+          </ecl-icon>
+        </summary>
+        <div class="ecl-accordion__content sc-ecl-accordion-ec">
+          Building a resilient economy by deepening the Economic and Monetary Union to ensure that Europe is better prepared for future shocks, completing the banking and capital markets union, strengthening the international role of the euro, investing in skills and education, supporting Europe's businesses, embracing digital transformation, and developing a robust industrial policy.
         </div>
-        <div aria-labelledby="ecl-accordion-item-id-2-title" class="ecl-accordion__content sc-ecl-accordion-ec" id="ecl-accordion-item-id-2-content" role="region">
-          Accordion item label
-        </div>
-      </div>
+      </details>
     </ecl-accordion-item>
-    <ecl-accordion-item item-id="ecl-accordion-item-id-3" label="Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy" label-collapsed="Open" label-expanded="Close">
+    <ecl-accordion-item label="Building a climate-neutral, green, fair and social Europe">
       <!---->
-      <div class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
-        <div class="ecl-accordion__title sc-ecl-accordion-ec" id="ecl-accordion-item-id-3-title">
-          <button aria-controls="ecl-accordion-item-id-3-content" aria-expanded="false" class="ecl-accordion__toggle sc-ecl-accordion-ec" data-ecl-accordion-toggle type="button">
-            <span class="ecl-accordion__toggle-flex sc-ecl-accordion-ec">
-              <span class="ecl-accordion__toggle-title sc-ecl-accordion-ec">
-                Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy
-              </span>
-              <span class="ecl-accordion__toggle-indicator sc-ecl-accordion-ec">
-                <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
-                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder"></span>
-                </ecl-icon>
-                <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
-                  <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus"></span>
-                </ecl-icon>
-              </span>
-            </span>
-          </button>
+      <details class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
+        <summary class="ecl-accordion__toggle sc-ecl-accordion-ec">
+          Building a climate-neutral, green, fair and social Europe
+          <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
+            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus"></span>
+          </ecl-icon>
+          <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
+            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder"></span>
+          </ecl-icon>
+        </summary>
+        <div class="ecl-accordion__content sc-ecl-accordion-ec">
+          Investing in green initiatives that improve air and water quality, promote sustainable agriculture and preserve environmental systems and biodiversity. Creating an effective circular economy (where products are designed to be more durable, reusable, repairable, recyclable and energy-efficient) and a well-functioning EU energy market that provides sustainable, secure and affordable energy. A faster transition to renewables and energy efficiency, while reducing the EU's dependency on outside energy sources. Implementing the European Pillar of Social Rights.
         </div>
-        <div aria-labelledby="ecl-accordion-item-id-3-title" class="ecl-accordion__content sc-ecl-accordion-ec" hidden="" id="ecl-accordion-item-id-3-content" role="region">
-          Accordion item label
+      </details>
+    </ecl-accordion-item>
+    <ecl-accordion-item label="Promoting European interests and values on the global stage">
+      <!---->
+      <details class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
+        <summary class="ecl-accordion__toggle sc-ecl-accordion-ec">
+          Promoting European interests and values on the global stage
+          <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
+            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus"></span>
+          </ecl-icon>
+          <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
+            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder"></span>
+          </ecl-icon>
+        </summary>
+        <div class="ecl-accordion__content sc-ecl-accordion-ec">
+          Building a robust foreign policy based on an ambitious neighbourhood policy with 16 of its closest eastern and southern neighbours and a comprehensive partnership with Africa. Promoting global peace, stability, democracy and human rights. Ensuring a robust trade policy in line with multilateralism and the global rules-based international order. Taking greater responsibility for security and defence, while cooperating closely with NATO.
         </div>
-      </div>
+      </details>
     </ecl-accordion-item>
   </div>
 </ecl-accordion>

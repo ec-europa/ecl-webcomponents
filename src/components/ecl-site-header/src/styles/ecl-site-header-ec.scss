@@ -49,14 +49,6 @@
   align-items: center;
 }
 
-.ecl-search-form__button {
-  border-color: var(--cm-on-surface-brand) !important;
-  border-top-left-radius: 0 !important;
-  border-bottom-left-radius: 0 !important;
-  border-inline-start: none !important;
-  border-width: 1px;
-}
-
 @media (width <= 1140px) {
   .ecl-site-header .ecl-mega-menu {
     width: 44px;

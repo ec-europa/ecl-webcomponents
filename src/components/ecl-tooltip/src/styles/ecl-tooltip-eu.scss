@@ -1,0 +1,9 @@
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/mixins-typography/mixins' with (
+  $typography: var.$typography
+);
+@use '@ecl/tooltip/tooltip' with (
+  $theme: theme.$theme,
+  $tooltip: var.$tooltip
+);

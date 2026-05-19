@@ -18,7 +18,7 @@ describe('ecl-content-block', () => {
       html: `<ecl-content-block
         theme="ec"
         meta-primary='["PRIMARY META", "DD Month Year"]'
-        meta-secondary='[{"label": "2018/10/22", "icon": "calendar"}, {"label": "Luxembourg", "icon": "location"}]'
+        meta-secondary='[{"label": "2018/10/22", "icon": "calendar"}]'
         has-title
         has-description
         has-lists

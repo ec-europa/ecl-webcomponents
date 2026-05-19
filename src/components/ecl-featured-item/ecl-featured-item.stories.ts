@@ -14,6 +14,7 @@ const getArgs = () => {
     mediaCaption: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     mediaBehavior: 'static',
     mediaAnchor: 'center',
+    mediaCredit: '@Copyright',
     link: true,
     linkType: 'default',
     media: true,
@@ -62,6 +63,12 @@ const getArgTypes = () => {
       type: { name: 'string' },
       description: 'Caption for the media container',
       if: { arg: 'media', truthy: true },
+    },
+    mediaCredit: {
+      name: 'media-credit',       
+      type: { name: 'string' },
+      description: 'Credit for the media',
+      if: { arg: 'media', truthy: true }, 
     },
     mediaBehavior: {
       name: 'media-behavior',
@@ -117,6 +124,7 @@ const Template = (args) =>
   link-label="${args.link ? 'Read more' : '' }"
   link-type="${args.linkType}"
   media-caption="${args.mediaCaption}"
+  media-credit="${args.mediaCredit}"
   media-behavior="${args.mediaBehavior}"
   vertical-alignment="${args.verticalAlignment}"
   media-anchor="${args.mediaAnchor}"

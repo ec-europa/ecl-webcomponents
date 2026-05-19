@@ -1,5 +1,8 @@
 @use '@ecl/theme-eu/theme' as theme;
 @use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/mixins/breakpoints' with (
+  $theme: theme.$theme
+);
 @use '@ecl/card/card' with (
   $theme: theme.$theme,
   $card: var.$card

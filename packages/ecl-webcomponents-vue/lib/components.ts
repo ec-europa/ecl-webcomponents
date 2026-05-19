@@ -11,7 +11,6 @@ import type { JSX } from '@ecl/ecl-webcomponents';
 
 export const EclAccordion: StencilVueComponent<JSX.EclAccordion> = /*@__PURE__*/ defineContainer<JSX.EclAccordion>('ecl-accordion', undefined, [
   'styleClass',
-  'noScript',
   'theme',
   'colorMode'
 ]);
@@ -20,12 +19,8 @@ export const EclAccordion: StencilVueComponent<JSX.EclAccordion> = /*@__PURE__*/
 export const EclAccordionItem: StencilVueComponent<JSX.EclAccordionItem> = /*@__PURE__*/ defineContainer<JSX.EclAccordionItem>('ecl-accordion-item', undefined, [
   'styleClass',
   'label',
-  'itemId',
   'expanded',
-  'theme',
-  'toggleItem'
-], [
-  'toggleItem'
+  'theme'
 ]);
 
 
@@ -308,6 +303,7 @@ export const EclFeaturedItem: StencilVueComponent<JSX.EclFeaturedItem> = /*@__PU
   'mediaCaption',
   'mediaBehavior',
   'mediaAnchor',
+  'mediaCredit',
   'verticalAlignment',
   'position',
   'defaultContainerClass'
@@ -493,6 +489,7 @@ export const EclGalleryItem: StencilVueComponent<JSX.EclGalleryItem> = /*@__PURE
   'mediaHref',
   'mediaIframeHref',
   'mediaSharePath',
+  'ariaLabel',
   'meta',
   'type',
   'icon',
@@ -663,6 +660,7 @@ export const EclMediaContainer: StencilVueComponent<JSX.EclMediaContainer> = /*@
   'tracks',
   'autoplay',
   'hasCaption',
+  'credit',
   'ratio',
   'srPlay',
   'srPause',
@@ -1269,6 +1267,11 @@ export const EclTimelineItem: StencilVueComponent<JSX.EclTimelineItem> = /*@__PU
   'toggleLabelCollapsed',
   'toggleLabelExpanded',
   'isLast'
+]);
+
+
+export const EclTooltip: StencilVueComponent<JSX.EclTooltip> = /*@__PURE__*/ defineContainer<JSX.EclTooltip>('ecl-tooltip', undefined, [
+  'noScript'
 ]);
 
 

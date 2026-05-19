@@ -7,10 +7,3 @@
   $theme: theme.$theme,
   $accordion: var.$accordion
 );
-
-:host {
-  @extend .ecl-accordion;
-
-  display: block;
-  visibility: visible;
-}

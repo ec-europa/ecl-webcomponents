@@ -10,6 +10,7 @@
 | Property        | Attribute         | Description | Type      | Default     |
 | --------------- | ----------------- | ----------- | --------- | ----------- |
 | `autoplay`      | `autoplay`        |             | `boolean` | `false`     |
+| `credit`        | `credit`          |             | `string`  | `undefined` |
 | `embeddedMedia` | `embedded-media`  |             | `boolean` | `false`     |
 | `fullWidth`     | `full-width`      |             | `boolean` | `false`     |
 | `hasCaption`    | `has-caption`     |             | `boolean` | `false`     |

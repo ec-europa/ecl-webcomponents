@@ -1,6 +1,6 @@
 @use '@ecl/theme-ec/theme' as theme;
 @use '@ecl/theme-ec/variables' as var;
-@use '@ecl/grid/grid' with (
+@use '@ecl/grid/mixins/breakpoints' with (
   $theme: theme.$theme
 );
 @use '@ecl/layout-form/mixins' as layoutFormMixins;
@@ -25,6 +25,7 @@
 );
 @use '@ecl/file-upload/file-upload' with (
   $theme: theme.$theme,
+  $button: var.$button,
   $file-upload: var.$file-upload
 );
 

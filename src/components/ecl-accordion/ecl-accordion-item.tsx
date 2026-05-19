@@ -1,25 +1,18 @@
-import { Component, Prop, Element, h, Event, EventEmitter } from '@stencil/core';
+import { Component, Prop, Element, h } from '@stencil/core';
 
 @Component({
   tag: 'ecl-accordion-item',
   styleUrl: 'build/styles/ecl-accordion-item.css',
   shadow: false,
   scoped: false,
-  assetsDirs: ['build'],
 })
 
 export class EclAccordionItem {
   @Element() el: HTMLElement;
   @Prop() styleClass: string;
   @Prop() label: string;
-  @Prop() itemId: string;
   @Prop({reflect:true}) expanded: boolean;
   @Prop({ mutable: true }) theme: string;
-  @Event() toggleItem: EventEmitter<string>;
-
-  handleClick = () => {
-    this.toggleItem.emit(this.itemId);
-  };
   
   getClass(): string {
     return [
@@ -34,53 +27,31 @@ export class EclAccordionItem {
   }
 
   render() {
-    const titleId = `${this.itemId}-title`;
-    const contentId = `${this.itemId}-content`;
     return (
-      <div
+      <details
         class={this.getClass()}
       >
-        <div
-          class={`ecl-accordion__title sc-ecl-accordion-${this.theme}`}
-          id={titleId}
+        <summary
+          class={`ecl-accordion__toggle sc-ecl-accordion-${this.theme}`}
         >
-          <button
-            type="button"
-            data-ecl-accordion-toggle
-            onClick={this.handleClick}
-            aria-controls={contentId}
-            aria-expanded={this.expanded ? 'true' : 'false'}
-            class={`ecl-accordion__toggle sc-ecl-accordion-${this.theme}`}
-          >
-            <span class={`ecl-accordion__toggle-flex sc-ecl-accordion-${this.theme}`}>
-              <span class={`ecl-accordion__toggle-title sc-ecl-accordion-${this.theme}`}>
-                {this.label}
-              </span>
-              <span class={`ecl-accordion__toggle-indicator sc-ecl-accordion-${this.theme}`}>
-                <ecl-icon
-                  icon="minus"
-                  size="s"
-                  style-class={`ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-${this.theme}`}
-                ></ecl-icon>
-                <ecl-icon
-                  icon="plus"
-                  size="s"
-                  style-class={`ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-${this.theme}`}
-                ></ecl-icon>
-              </span>
-            </span>
-          </button>
-        </div>
+          {this.label}
+          <ecl-icon
+            icon="plus"
+            size="s"
+            style-class={`ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-${this.theme}`}
+          ></ecl-icon>
+          <ecl-icon
+            icon="minus"
+            size="s"
+            style-class={`ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-${this.theme}`}
+          ></ecl-icon>
+        </summary>
         <div 
           class={`ecl-accordion__content sc-ecl-accordion-${this.theme}`}
-          role="region"
-          id={contentId}
-          aria-labelledby={titleId}
-          hidden={this.expanded !== true}
         >
           <slot></slot>
         </div>
-      </div>
+      </details>
     )
   }
 }

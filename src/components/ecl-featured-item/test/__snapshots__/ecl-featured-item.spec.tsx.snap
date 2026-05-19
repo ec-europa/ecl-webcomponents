@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-featured-item renders correctly 1`] = `
-<ecl-featured-item el-id="featured-item-demo" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="Title" link-label="Read more" link-path="/example.html" media-caption="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.">
+<ecl-featured-item el-id="featured-item-demo" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="Title" link-label="Read more" link-path="/example.html" media-caption="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." media-credit="@Copyright">
   <!---->
   <article class="ecl-featured-item">
     <div class="ecl-featured-item__container">
@@ -42,6 +42,9 @@ exports[`ecl-featured-item renders correctly 1`] = `
               </ecl-picture>
               <figcaption class="ecl-media-container__caption">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                <span class="ecl-media-container__credit">
+                  @Copyright
+                </span>
               </figcaption>
             </figure>
           </div>
@@ -53,7 +56,7 @@ exports[`ecl-featured-item renders correctly 1`] = `
 `;
 
 exports[`ecl-featured-item renders correctly with all the options specified 1`] = `
-<ecl-featured-item el-id="featured-item-demo-with-options" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="Title" link-label="Read more" link-path="/example.html" link-type="highlighted" media-anchor="left" media-behavior="dynamic" media-caption="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." position="right" variant="highlight" vertical-alignment="center">
+<ecl-featured-item el-id="featured-item-demo-with-options" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" item-title="Title" link-label="Read more" link-path="/example.html" link-type="highlighted" media-anchor="left" media-behavior="dynamic" media-caption="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." media-credit="@Copyright" position="right" variant="highlight" vertical-alignment="center">
   <!---->
   <article class="ecl-featured-item ecl-featured-item--dynamic ecl-featured-item--highlight ecl-featured-item--link-highlighted ecl-featured-item--vcenter">
     <div class="ecl-featured-item__container ecl-featured-item__container--right">
@@ -94,6 +97,9 @@ exports[`ecl-featured-item renders correctly with all the options specified 1`] 
               </ecl-picture>
               <figcaption class="ecl-media-container__caption">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                <span class="ecl-media-container__credit">
+                  @Copyright
+                </span>
               </figcaption>
             </figure>
           </div>

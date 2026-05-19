@@ -23,6 +23,7 @@ export class EclMediaContainer {
   @Prop() tracks: string;
   @Prop() autoplay: boolean = false;
   @Prop() hasCaption: boolean = false;
+  @Prop() credit: string;
   @Prop() ratio: string = '';
   @Prop() srPlay: string;
   @Prop() srPause: string;
@@ -45,6 +46,17 @@ export class EclMediaContainer {
   }
 
   componentDidLoad() {
+    const iframe = this.el.querySelector('iframe');
+    if (iframe) {
+      const iframeWrap = document.createElement('div');
+      iframeWrap.classList.add('ecl-media-container__media', `sc-ecl-media-container-${this.theme}`);
+      iframe.classList.add(`sc-ecl-media-container-${this.theme}`);
+      iframe.insertAdjacentElement('beforebegin', iframeWrap);
+      iframeWrap.appendChild(iframe);
+      if (this.ratio) {
+        iframeWrap.classList.add(`ecl-media-container__media--ratio-${this.ratio}`);
+      }
+    }
     if (!this.noScript && (this.embeddedMedia || (this.sources || this.tracks))) {
       this.el.firstElementChild.setAttribute('data-ecl-media-container', "");
       if (this.sources || this.tracks) {
@@ -58,18 +70,6 @@ export class EclMediaContainer {
 
       const mediaContainer = new ECL.MediaContainer(this.el.firstElementChild);
       mediaContainer.init();
-    }
-
-    const iframe = this.el.querySelector('iframe');
-    if (iframe) {
-      const iframeWrap = document.createElement('div');
-      iframeWrap.classList.add('ecl-media-container__media', `sc-ecl-media-container-${this.theme}`);
-      iframe.classList.add(`sc-ecl-media-container-${this.theme}`);
-      iframe.insertAdjacentElement('beforebegin', iframeWrap);
-      iframeWrap.appendChild(iframe);
-      if (this.ratio) {
-        iframeWrap.classList.add(`ecl-media-container__media--ratio-${this.ratio}`);
-      }
     }
 
     const expandable = this.el.querySelector('.ecl-expandable');
@@ -172,6 +172,9 @@ export class EclMediaContainer {
         { this.hasCaption ?
           <figcaption class="ecl-media-container__caption">
             <slot></slot>
+            { this.credit &&
+              <span class="ecl-media-container__credit">{this.credit}</span>
+            }
           </figcaption> : ''
         }
         </figure>

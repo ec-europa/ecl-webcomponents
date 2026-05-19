@@ -9,6 +9,7 @@
 
 | Property          | Attribute           | Description | Type      | Default     |
 | ----------------- | ------------------- | ----------- | --------- | ----------- |
+| `ariaLabel`       | `aria-label`        |             | `string`  | `undefined` |
 | `elId`            | `el-id`             |             | `string`  | `undefined` |
 | `icon`            | `icon`              |             | `string`  | `undefined` |
 | `imageAlt`        | `image-alt`         |             | `string`  | `undefined` |
@@ -27,14 +28,14 @@
 
 ### Depends on
 
-- [ecl-picture](../ecl-picture)
 - [ecl-icon](../ecl-icon)
+- [ecl-picture](../ecl-picture)
 
 ### Graph
 ```mermaid
 graph TD;
-  ecl-gallery-item --> ecl-picture
   ecl-gallery-item --> ecl-icon
+  ecl-gallery-item --> ecl-picture
   style ecl-gallery-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

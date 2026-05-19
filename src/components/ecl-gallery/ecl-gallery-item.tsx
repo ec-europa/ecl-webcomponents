@@ -15,6 +15,7 @@ export class EclGalleryItem {
   @Prop() mediaHref: string;
   @Prop() mediaIframeHref: string;
   @Prop() mediaSharePath: string;
+  @Prop() ariaLabel: string;
   @Prop() meta: string;
   @Prop() type: string = 'image';
   @Prop() icon: string;
@@ -53,6 +54,9 @@ export class EclGalleryItem {
     if (this.mediaIframeHref) {
       attrs['data-ecl-gallery-item-embed-src'] = this.mediaIframeHref;
     }
+    if (this.ariaLabel) {
+      attrs['aria-label'] = this.ariaLabel;
+    }
 
     return attrs;
   }
@@ -85,7 +89,23 @@ export class EclGalleryItem {
           {...this.getLinkAttr()}
         >
           <figure class={`ecl-gallery__image-container sc-ecl-gallery-${this.theme}`}>
-          { this.thumbnail &&
+            <div class={`ecl-gallery__icon-zoom-wrapper sc-ecl-gallery-${this.theme}`}>
+              <ecl-icon
+                style-class={`ecl-gallery__icon-zoom sc-ecl-gallery-${this.theme}`}
+                icon="fullscreen"
+                size="s"
+              ></ecl-icon>
+            </div>
+          { this.type !== 'image' &&
+            <div class={`ecl-gallery__item-icon-wrapper sc-ecl-gallery-${this.theme}`}>
+              <ecl-icon
+                style-class={`ecl-gallery__item-icon sc-ecl-gallery-${this.theme}`}
+                icon="play"
+                size="s"
+              ></ecl-icon>
+            </div>
+          }
+          { (this.thumbnail && this.type !== 'html-video') &&
             <ecl-picture
               image={this.thumbnail}
               style-class={this.getThumbClass()}
@@ -95,7 +115,7 @@ export class EclGalleryItem {
             </ecl-picture>
           }
             <slot name="video"></slot>
-          { this.type !== 'html-video' ?
+          { this.type !== 'html-video' &&
             <ecl-picture 
               image={this.mediaHref}
               image-alt={this.imageAlt}
@@ -104,28 +124,18 @@ export class EclGalleryItem {
               lazy
             >
               <slot name="sources"></slot>
-            </ecl-picture> : ''
-          }
-          { this.type !== 'image' ? 
-            <div class={`ecl-gallery__item-icon-wrapper sc-ecl-gallery-${this.theme}`}>
-              <ecl-icon
-                style-class={`ecl-gallery__item-icon sc-ecl-gallery-${this.theme}`}
-                icon="play-filled"
-                size="l"
-                color="inverted"
-              ></ecl-icon>
-            </div> : ''
+            </ecl-picture>
           }
             <figcaption
               class={`ecl-gallery__description sc-ecl-gallery-${this.theme}`}
               data-ecl-gallery-description
             >
-            { this.icon ?
+            { this.icon &&
               <ecl-icon
                 icon={this.icon}
                 styleClass="ecl-gallery__description-icon"
                 size="s"
-              ></ecl-icon> : ''
+              ></ecl-icon>
             }
               <div class="ecl-gallery__title" data-ecl-gallery-title id={`${this.getId()}-title`}><slot></slot></div>
               <span

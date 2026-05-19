@@ -7,30 +7,35 @@ const Template = (args) =>
     color-mode="${args.color_mode}"
   >
     <ecl-accordion-item
-      item-id="ecl-accordion-item-id-1"
-      label="Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy"
+      label="Protecting citizens and freedoms"
     >
-      The College of Commissioners held today the first weekly meeting of 2019 which was devoted to discussing the
-      challenges of this new year. Commissioners used the opportunity to take stock and discuss the year ahead,
-      including the European elections in May and other important milestones ahead.
+      Ensuring effective control of the EU's external borders and further developing a comprehensive migration policy. 
+      Fighting terrorism and cross-border/online crime, increasing the EU's resilience against both natural and human-made disasters.
     </ecl-accordion-item>
 
     <ecl-accordion-item
-      item-id="ecl-accordion-item-id-2"
-      label="Energy union and climate"
+      label="Developing a strong and vibrant economic base"
       expanded
     >
-      A balanced and progressive trade policy to harness globalisation
+      Building a resilient economy by deepening the Economic and Monetary Union to ensure that Europe is better prepared for future shocks, completing the banking and capital markets union, 
+      strengthening the international role of the euro, investing in skills and education, supporting Europe's businesses, embracing digital transformation, and developing a robust industrial policy.
     </ecl-accordion-item>
 
     <ecl-accordion-item
-      item-id="ecl-accordion-item-id-3"
-      label="Delivery of last pending proposals, a common Destiny of unity, the hour of European Democracy"
+      label="Building a climate-neutral, green, fair and social Europe"
     >
-      In the modern global economy trade is essential for growth, <ecl-link path="https://ec.europa.eu/">jobs</ecl-link> and competiveness, and the EU is committed to
-      maintaining an open and rules-based trading system. With the rising threat of protectionism and weakened
-      commitment of large players to global trade governance, the EU must take the lead.
+      Investing in green initiatives that improve air and water quality, promote sustainable agriculture and preserve environmental systems and biodiversity.
+      Creating an effective circular economy (where products are designed to be more durable, reusable, repairable, recyclable and energy-efficient) and a well-functioning EU energy market that provides sustainable, secure and affordable energy.
+      A faster transition to renewables and energy efficiency, while reducing the EU's dependency on outside energy sources.
+      Implementing the European Pillar of Social Rights.
     </ecl-accordion-item>
+
+    <ecl-accordion-item
+      label="Promoting European interests and values on the global stage"
+    >
+      Building a robust foreign policy based on an ambitious neighbourhood policy with 16 of its closest eastern and southern neighbours and a comprehensive partnership with Africa.
+      Promoting global peace, stability, democracy and human rights. Ensuring a robust trade policy in line with multilateralism and the global rules-based international order. Taking greater responsibility for security and defence, while cooperating closely with NATO.
+    </ecl-accordion-item
   </ecl-accordion>`;
 
 export const Accordion = Template.bind({});

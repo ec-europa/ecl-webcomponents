@@ -192,21 +192,21 @@ exports[`ecl-table sortable renders correctly 1`] = `
       </caption>
       <thead class="ecl-table__head">
         <tr class="ecl-table__row">
-          <th class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-1" scope="col">
+          <th aria-sort="none" class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-1" scope="col">
             Country
             <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
               <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
               <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
             </button>
           </th>
-          <th class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-2" scope="col">
+          <th aria-sort="none" class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-2" scope="col">
             Capital
             <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
               <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
               <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
             </button>
           </th>
-          <th class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-3" scope="col">
+          <th aria-sort="none" class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-3" scope="col">
             Population
             <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
               <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>

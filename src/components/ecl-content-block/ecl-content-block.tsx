@@ -96,16 +96,21 @@ export class EclContentBlock {
           <slot name="labels"></slot>
         </div>
       }
-      { metaPrimaryArray &&
+      {metaPrimaryArray?.length === 1 ? (
+        <div class="ecl-content-block__primary-meta-container">
+          <div class="ecl-content-block__primary-meta-item">
+            {metaPrimaryArray[0]}
+          </div>
+        </div>
+      ) : metaPrimaryArray?.length > 1 ? (
         <ul class="ecl-content-block__primary-meta-container">
-        { metaPrimaryArray.map((meta) => (
-          <li class="ecl-content-block__primary-meta-item">
-            {meta}
-          </li>
-          ))
-        }  
+          {metaPrimaryArray.map((meta) => (
+            <li class="ecl-content-block__primary-meta-item">
+              {meta}
+            </li>
+          ))}
         </ul>
-      }
+      ) : null}
       { this.hasTitle &&
         <div class="ecl-content-block__title">
           <slot name="title"></slot>
@@ -116,27 +121,60 @@ export class EclContentBlock {
           <slot name="description"></slot>
         </div>
       }
-      { metaSecondaryArray &&
-        <ul class={`ecl-content-block__secondary-meta-container ${this.metaSecondaryDir === 'horizontal' ? 'ecl-content-block__secondary-meta-container--horizontal' : ''}`}>
-        { metaSecondaryArray.map((meta) => (
-          <li class="ecl-content-block__secondary-meta-item">
-          { meta.icon &&
-            <ecl-icon
-              icon={meta.icon}
-              size="s"
-              style-class={`ecl-content-block__secondary-meta-icon sc-ecl-content-block-${this.theme}`}
-            ></ecl-icon>
-          }
-          { meta.label &&
-            <span class="ecl-content-block__secondary-meta-label">
-              {meta.label}
-            </span>
-          }
-          </li>
-          ))
-        }  
+      {metaSecondaryArray?.length === 1 ? (
+        <div
+          class={`ecl-content-block__secondary-meta-container ${
+            this.metaSecondaryDir === 'horizontal'
+              ? 'ecl-content-block__secondary-meta-container--horizontal'
+              : ''
+          }`}
+        >
+          <div class="ecl-content-block__secondary-meta-item">
+            {metaSecondaryArray[0].icon && (
+              <ecl-icon
+                icon={metaSecondaryArray[0].icon}
+                size="s"
+                style-class={`ecl-content-block__secondary-meta-icon sc-ecl-content-block-${this.theme}`}
+              ></ecl-icon>
+            )}
+
+            {metaSecondaryArray[0].label && (
+              <span class="ecl-content-block__secondary-meta-label">
+                {metaSecondaryArray[0].label}
+              </span>
+            )}
+          </div>
+        </div>
+      ) : metaSecondaryArray?.length > 1 ? (
+        <ul
+          class={`ecl-content-block__secondary-meta-container ${
+            this.metaSecondaryDir === 'horizontal'
+              ? 'ecl-content-block__secondary-meta-container--horizontal'
+              : ''
+          }`}
+        >
+          {metaSecondaryArray.map((meta, index) => (
+            <li
+              key={index}
+              class="ecl-content-block__secondary-meta-item"
+            >
+              {meta.icon && (
+                <ecl-icon
+                  icon={meta.icon}
+                  size="s"
+                  style-class={`ecl-content-block__secondary-meta-icon sc-ecl-content-block-${this.theme}`}
+                ></ecl-icon>
+              )}
+
+              {meta.label && (
+                <span class="ecl-content-block__secondary-meta-label">
+                  {meta.label}
+                </span>
+              )}
+            </li>
+          ))}
         </ul>
-      }
+      ) : null}
       { this.hasLists &&
         <div class="ecl-content-block__list-container">
           <slot name="lists"></slot>
