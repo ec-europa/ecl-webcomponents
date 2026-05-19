@@ -6,7 +6,7 @@ const getArgs = () => {
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida ipsum ut lorem cursus,
                   quis tincidunt sem viverra. Nunc vestibulum, mauris quis porta venenatis, justo odio commodo tellus`,
     metaPrimary:  '["PRIMARY META", "DD Month Year"]',
-    metaSecondary: '[{"label": "2018/10/22", "icon": "calendar"}, {"label": "Luxembourg", "icon": "location"}]',
+    metaSecondary: '[{"label": "2018/10/22", "icon": "calendar"}]',
     metaSecondaryDir: 'vertical',
   };
 };

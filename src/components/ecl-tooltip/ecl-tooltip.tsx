@@ -1,4 +1,4 @@
-import { Component, h, Prop, Element } from '@stencil/core';
+import { Component, Prop, Element } from '@stencil/core';
 import Tooltip from "@ecl/tooltip";
 declare const ECL: any;
 
