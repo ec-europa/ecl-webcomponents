@@ -1558,6 +1558,51 @@ export namespace Components {
         "theme": string;
         "toggleLabel": string;
     }
+    interface EclQuiz {
+        "description": string;
+        "itemId": string;
+        "nextLabel": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
+        "prevLabel": string;
+        "quizTitle": string;
+        "skipText": string;
+        "styleClass": string;
+        "theme": string;
+        /**
+          * @default "reveal"
+         */
+        "variant": string;
+        /**
+          * @default false
+         */
+        "withBackground": boolean;
+    }
+    interface EclQuizCard {
+        "answer": string;
+        "answerTitle": string;
+        "backText": string;
+        "category": string;
+        "errorCategory": string;
+        "flipText": string;
+        /**
+          * @default `ecl-quiz-item-${Math.random().toString(36).substr(2, 9)}`
+         */
+        "itemId": string;
+        "mainIcon": string;
+        "options": string;
+        "question": string;
+        "quizName": string;
+        "styleClass": string;
+        "successCategory": string;
+        "theme": string;
+        /**
+          * @default 'reveal'
+         */
+        "variant": string;
+    }
     interface EclRange {
         "defaultValue": string;
         /**
@@ -2638,6 +2683,18 @@ declare global {
         prototype: HTMLEclPopoverElement;
         new (): HTMLEclPopoverElement;
     };
+    interface HTMLEclQuizElement extends Components.EclQuiz, HTMLStencilElement {
+    }
+    var HTMLEclQuizElement: {
+        prototype: HTMLEclQuizElement;
+        new (): HTMLEclQuizElement;
+    };
+    interface HTMLEclQuizCardElement extends Components.EclQuizCard, HTMLStencilElement {
+    }
+    var HTMLEclQuizCardElement: {
+        prototype: HTMLEclQuizCardElement;
+        new (): HTMLEclQuizCardElement;
+    };
     interface HTMLEclRangeElementEventMap {
         "inputFocus": FocusEvent;
         "inputBlur": FocusEvent;
@@ -2912,6 +2969,8 @@ declare global {
         "ecl-pagination-item": HTMLEclPaginationItemElement;
         "ecl-picture": HTMLEclPictureElement;
         "ecl-popover": HTMLEclPopoverElement;
+        "ecl-quiz": HTMLEclQuizElement;
+        "ecl-quiz-card": HTMLEclQuizCardElement;
         "ecl-range": HTMLEclRangeElement;
         "ecl-rating-field": HTMLEclRatingFieldElement;
         "ecl-rating-star": HTMLEclRatingStarElement;
@@ -4499,6 +4558,51 @@ declare namespace LocalJSX {
         "theme"?: string;
         "toggleLabel"?: string;
     }
+    interface EclQuiz {
+        "description"?: string;
+        "itemId"?: string;
+        "nextLabel"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
+        "prevLabel"?: string;
+        "quizTitle"?: string;
+        "skipText"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        /**
+          * @default "reveal"
+         */
+        "variant"?: string;
+        /**
+          * @default false
+         */
+        "withBackground"?: boolean;
+    }
+    interface EclQuizCard {
+        "answer"?: string;
+        "answerTitle"?: string;
+        "backText"?: string;
+        "category"?: string;
+        "errorCategory"?: string;
+        "flipText"?: string;
+        /**
+          * @default `ecl-quiz-item-${Math.random().toString(36).substr(2, 9)}`
+         */
+        "itemId"?: string;
+        "mainIcon"?: string;
+        "options"?: string;
+        "question"?: string;
+        "quizName"?: string;
+        "styleClass"?: string;
+        "successCategory"?: string;
+        "theme"?: string;
+        /**
+          * @default 'reveal'
+         */
+        "variant"?: string;
+    }
     interface EclRange {
         "defaultValue"?: string;
         /**
@@ -5903,6 +6007,36 @@ declare namespace LocalJSX {
         "indicator": boolean;
         "indicatorValue": number;
     }
+    interface EclQuizAttributes {
+        "theme": string;
+        "styleClass": string;
+        "noScript": boolean;
+        "itemId": string;
+        "quizTitle": string;
+        "description": string;
+        "withBackground": boolean;
+        "variant": string;
+        "prevLabel": string;
+        "nextLabel": string;
+        "skipText": string;
+    }
+    interface EclQuizCardAttributes {
+        "theme": string;
+        "styleClass": string;
+        "category": string;
+        "successCategory": string;
+        "errorCategory": string;
+        "flipText": string;
+        "backText": string;
+        "question": string;
+        "quizName": string;
+        "mainIcon": string;
+        "answer": string;
+        "answerTitle": string;
+        "itemId": string;
+        "options": string;
+        "variant": string;
+    }
     interface EclRangeAttributes {
         "theme": string;
         "inputId": string;
@@ -6275,6 +6409,8 @@ declare namespace LocalJSX {
         "ecl-pagination-item": Omit<EclPaginationItem, keyof EclPaginationItemAttributes> & { [K in keyof EclPaginationItem & keyof EclPaginationItemAttributes]?: EclPaginationItem[K] } & { [K in keyof EclPaginationItem & keyof EclPaginationItemAttributes as `attr:${K}`]?: EclPaginationItemAttributes[K] } & { [K in keyof EclPaginationItem & keyof EclPaginationItemAttributes as `prop:${K}`]?: EclPaginationItem[K] };
         "ecl-picture": Omit<EclPicture, keyof EclPictureAttributes> & { [K in keyof EclPicture & keyof EclPictureAttributes]?: EclPicture[K] } & { [K in keyof EclPicture & keyof EclPictureAttributes as `attr:${K}`]?: EclPictureAttributes[K] } & { [K in keyof EclPicture & keyof EclPictureAttributes as `prop:${K}`]?: EclPicture[K] };
         "ecl-popover": Omit<EclPopover, keyof EclPopoverAttributes> & { [K in keyof EclPopover & keyof EclPopoverAttributes]?: EclPopover[K] } & { [K in keyof EclPopover & keyof EclPopoverAttributes as `attr:${K}`]?: EclPopoverAttributes[K] } & { [K in keyof EclPopover & keyof EclPopoverAttributes as `prop:${K}`]?: EclPopover[K] };
+        "ecl-quiz": Omit<EclQuiz, keyof EclQuizAttributes> & { [K in keyof EclQuiz & keyof EclQuizAttributes]?: EclQuiz[K] } & { [K in keyof EclQuiz & keyof EclQuizAttributes as `attr:${K}`]?: EclQuizAttributes[K] } & { [K in keyof EclQuiz & keyof EclQuizAttributes as `prop:${K}`]?: EclQuiz[K] };
+        "ecl-quiz-card": Omit<EclQuizCard, keyof EclQuizCardAttributes> & { [K in keyof EclQuizCard & keyof EclQuizCardAttributes]?: EclQuizCard[K] } & { [K in keyof EclQuizCard & keyof EclQuizCardAttributes as `attr:${K}`]?: EclQuizCardAttributes[K] } & { [K in keyof EclQuizCard & keyof EclQuizCardAttributes as `prop:${K}`]?: EclQuizCard[K] };
         "ecl-range": Omit<EclRange, keyof EclRangeAttributes> & { [K in keyof EclRange & keyof EclRangeAttributes]?: EclRange[K] } & { [K in keyof EclRange & keyof EclRangeAttributes as `attr:${K}`]?: EclRangeAttributes[K] } & { [K in keyof EclRange & keyof EclRangeAttributes as `prop:${K}`]?: EclRange[K] };
         "ecl-rating-field": Omit<EclRatingField, keyof EclRatingFieldAttributes> & { [K in keyof EclRatingField & keyof EclRatingFieldAttributes]?: EclRatingField[K] } & { [K in keyof EclRatingField & keyof EclRatingFieldAttributes as `attr:${K}`]?: EclRatingFieldAttributes[K] } & { [K in keyof EclRatingField & keyof EclRatingFieldAttributes as `prop:${K}`]?: EclRatingField[K] };
         "ecl-rating-star": Omit<EclRatingStar, keyof EclRatingStarAttributes> & { [K in keyof EclRatingStar & keyof EclRatingStarAttributes]?: EclRatingStar[K] } & { [K in keyof EclRatingStar & keyof EclRatingStarAttributes as `attr:${K}`]?: EclRatingStarAttributes[K] } & { [K in keyof EclRatingStar & keyof EclRatingStarAttributes as `prop:${K}`]?: EclRatingStar[K] };
@@ -6371,6 +6507,8 @@ declare module "@stencil/core" {
             "ecl-pagination-item": LocalJSX.IntrinsicElements["ecl-pagination-item"] & JSXBase.HTMLAttributes<HTMLEclPaginationItemElement>;
             "ecl-picture": LocalJSX.IntrinsicElements["ecl-picture"] & JSXBase.HTMLAttributes<HTMLEclPictureElement>;
             "ecl-popover": LocalJSX.IntrinsicElements["ecl-popover"] & JSXBase.HTMLAttributes<HTMLEclPopoverElement>;
+            "ecl-quiz": LocalJSX.IntrinsicElements["ecl-quiz"] & JSXBase.HTMLAttributes<HTMLEclQuizElement>;
+            "ecl-quiz-card": LocalJSX.IntrinsicElements["ecl-quiz-card"] & JSXBase.HTMLAttributes<HTMLEclQuizCardElement>;
             "ecl-range": LocalJSX.IntrinsicElements["ecl-range"] & JSXBase.HTMLAttributes<HTMLEclRangeElement>;
             "ecl-rating-field": LocalJSX.IntrinsicElements["ecl-rating-field"] & JSXBase.HTMLAttributes<HTMLEclRatingFieldElement>;
             "ecl-rating-star": LocalJSX.IntrinsicElements["ecl-rating-star"] & JSXBase.HTMLAttributes<HTMLEclRatingStarElement>;

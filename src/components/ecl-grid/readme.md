@@ -22,12 +22,14 @@
 ### Used by
 
  - [ecl-mega-menu-item](../ecl-mega-menu)
+ - [ecl-quiz](../ecl-quiz)
  - [ecl-splash-page](../ecl-splash-page)
 
 ### Graph
 ```mermaid
 graph TD;
   ecl-mega-menu-item --> ecl-grid
+  ecl-quiz --> ecl-grid
   ecl-splash-page --> ecl-grid
   style ecl-grid fill:#f9f,stroke:#333,stroke-width:4px
 ```

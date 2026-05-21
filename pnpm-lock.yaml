@@ -1708,6 +1708,43 @@ importers:
         specifier: 10.1.0
         version: 10.1.0
 
+  src/components/ecl-quiz:
+    dependencies:
+      '@ecl/web-components-icon':
+        specifier: 0.26.0
+        version: link:../ecl-icon
+      '@ecl/web-components-link':
+        specifier: 0.26.0
+        version: link:../ecl-link
+    devDependencies:
+      '@ecl/builder':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/link':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/quiz':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/theme-ec':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/theme-eu':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/utility-screen-reader':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      cross-env:
+        specifier: 10.1.0
+        version: 10.1.0
+
   src/components/ecl-range:
     devDependencies:
       '@ecl/builder':

@@ -918,6 +918,40 @@ export const EclPopover: StencilVueComponent<JSX.EclPopover> = /*@__PURE__*/ def
 ]);
 
 
+export const EclQuiz: StencilVueComponent<JSX.EclQuiz> = /*@__PURE__*/ defineContainer<JSX.EclQuiz>('ecl-quiz', undefined, [
+  'theme',
+  'styleClass',
+  'noScript',
+  'itemId',
+  'quizTitle',
+  'description',
+  'withBackground',
+  'variant',
+  'prevLabel',
+  'nextLabel',
+  'skipText'
+]);
+
+
+export const EclQuizCard: StencilVueComponent<JSX.EclQuizCard> = /*@__PURE__*/ defineContainer<JSX.EclQuizCard>('ecl-quiz-card', undefined, [
+  'theme',
+  'styleClass',
+  'category',
+  'successCategory',
+  'errorCategory',
+  'flipText',
+  'backText',
+  'question',
+  'quizName',
+  'mainIcon',
+  'answer',
+  'answerTitle',
+  'itemId',
+  'options',
+  'variant'
+]);
+
+
 export const EclRange: StencilVueComponent<JSX.EclRange> = /*@__PURE__*/ defineContainer<JSX.EclRange>('ecl-range', undefined, [
   'theme',
   'inputId',

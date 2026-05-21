@@ -58,6 +58,8 @@
  - [ecl-page-header-meta-item](../ecl-page-header)
  - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover](../ecl-popover)
+ - [ecl-quiz](../ecl-quiz)
+ - [ecl-quiz-card](../ecl-quiz)
  - [ecl-rating-star](../ecl-rating-field)
  - [ecl-search-form](../ecl-search-form)
  - [ecl-select](../ecl-select)
@@ -105,6 +107,8 @@ graph TD;
   ecl-page-header-meta-item --> ecl-icon
   ecl-pagination-item --> ecl-icon
   ecl-popover --> ecl-icon
+  ecl-quiz --> ecl-icon
+  ecl-quiz-card --> ecl-icon
   ecl-rating-star --> ecl-icon
   ecl-search-form --> ecl-icon
   ecl-select --> ecl-icon
