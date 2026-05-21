@@ -16,7 +16,7 @@ exports[`ecl-quiz poll renders correctly 1`] = `
       </div>
       <div class="ecl-quiz__viewport" data-ecl-quiz-slider>
         <div class="ecl-quiz__list" role="list">
-          <ecl-quiz-card answer="The European Commission has the exclusive right to propose new EU laws" answer-title="The correct answer is A." category="Quiz" class="ecl-quiz-card sc-ecl-quiz-ec" error-category="Incorrect" id="ecl-quiz-item-fixshhgtt" main-icon="question" options="[
+          <ecl-quiz-card answer="The European Commission has the exclusive right to propose new EU laws" answer-title="The correct answer is A." category="Quiz" class="ecl-quiz-card sc-ecl-quiz-ec" error-category="Incorrect" id="card-poll-1" item-id="card-poll-1" main-icon="question" options="[
             { &quot;label&quot;: &quot;European commission&quot;, &quot;correct&quot;: &quot;true&quot; },
             { &quot;label&quot;: &quot;European parliament&quot; }, { &quot;label&quot;: &quot;European Central Bank&quot; },
             { &quot;label&quot;: &quot;Court of Justice of the European Union&quot; }
@@ -34,7 +34,7 @@ exports[`ecl-quiz poll renders correctly 1`] = `
                   </span>
                 </div>
                 <fieldset class="sc-ecl-quiz-ec">
-                  <legend class="ecl-quiz-card__question sc-ecl-quiz-ec" id="ecl-quiz-item-fixshhgtt-question">
+                  <legend class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-poll-1-question">
                     Which institution proposes new EU laws?
                   </legend>
                   <ol class="ecl-quiz-card__options sc-ecl-quiz-ec">
@@ -83,7 +83,7 @@ exports[`ecl-quiz poll renders correctly 1`] = `
                   </span>
                   <span aria-atomic="true" class="ecl-quiz-card__sr-status sc-ecl-quiz-ec" role="status"></span>
                 </div>
-                <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="ecl-quiz-item-fixshhgtt-answer">
+                <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-poll-1-answer">
                   <div class="ecl-quiz-card__answer-title sc-ecl-quiz-ec">
                     The correct answer is A.
                   </div>
@@ -106,7 +106,7 @@ exports[`ecl-quiz poll renders correctly 1`] = `
               </div>
             </article>
           </ecl-quiz-card>
-          <ecl-quiz-card answer="A valid ID card or passport is usually enough to travel freely between most EU countries." answer-title="The correct answer is B." category="Quiz" class="ecl-quiz-card sc-ecl-quiz-ec" error-category="Incorrect" id="ecl-quiz-item-kr1318leb" main-icon="question" options="[
+          <ecl-quiz-card answer="A valid ID card or passport is usually enough to travel freely between most EU countries." answer-title="The correct answer is B." category="Quiz" class="ecl-quiz-card sc-ecl-quiz-ec" error-category="Incorrect" id="card-poll-2" item-id="card-poll-2" main-icon="question" options="[
             { &quot;label&quot;: &quot;A valid ID card.&quot; },
             { &quot;label&quot;: &quot;A valid ID card or passport&quot;, &quot;correct&quot;: &quot;true&quot; },
             { &quot;label&quot;: &quot;A valid passport.&quot; }, { &quot;label&quot;: &quot;None of these&quot; }
@@ -124,7 +124,7 @@ exports[`ecl-quiz poll renders correctly 1`] = `
                   </span>
                 </div>
                 <fieldset class="sc-ecl-quiz-ec">
-                  <legend class="ecl-quiz-card__question sc-ecl-quiz-ec" id="ecl-quiz-item-kr1318leb-question">
+                  <legend class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-poll-2-question">
                     What document allows EU citizens to travel freely between most EU countries?
                   </legend>
                   <ol class="ecl-quiz-card__options sc-ecl-quiz-ec">
@@ -173,7 +173,7 @@ exports[`ecl-quiz poll renders correctly 1`] = `
                   </span>
                   <span aria-atomic="true" class="ecl-quiz-card__sr-status sc-ecl-quiz-ec" role="status"></span>
                 </div>
-                <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="ecl-quiz-item-kr1318leb-answer">
+                <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-poll-2-answer">
                   <div class="ecl-quiz-card__answer-title sc-ecl-quiz-ec">
                     The correct answer is B.
                   </div>
@@ -196,7 +196,7 @@ exports[`ecl-quiz poll renders correctly 1`] = `
               </div>
             </article>
           </ecl-quiz-card>
-          <ecl-quiz-card answer="The Euro is the official currency used by many EU conutries" answer-title="The correct answer is C." category="Quiz" class="ecl-quiz-card sc-ecl-quiz-ec" error-category="Incorrect" id="ecl-quiz-item-6qvk6mc55" main-icon="question" options="[
+          <ecl-quiz-card answer="The Euro is the official currency used by many EU conutries" answer-title="The correct answer is C." category="Quiz" class="ecl-quiz-card sc-ecl-quiz-ec" error-category="Incorrect" id="card-poll-3" item-id="card-poll-3" main-icon="question" options="[
             { &quot;label&quot;: &quot;The pound is the most used currency in the EU&quot; },
             { &quot;label&quot;: &quot;The Leu is by far the most used currency in the European Union&quot; },
             { &quot;label&quot;: &quot;The euro (€) is used in many EU member states.&quot;, &quot;correct&quot;: &quot;true&quot; }
@@ -214,7 +214,7 @@ exports[`ecl-quiz poll renders correctly 1`] = `
                   </span>
                 </div>
                 <fieldset class="sc-ecl-quiz-ec">
-                  <legend class="ecl-quiz-card__question sc-ecl-quiz-ec" id="ecl-quiz-item-6qvk6mc55-question">
+                  <legend class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-poll-3-question">
                     What currency is used in many EU countries?
                   </legend>
                   <ol class="ecl-quiz-card__options sc-ecl-quiz-ec">
@@ -257,7 +257,7 @@ exports[`ecl-quiz poll renders correctly 1`] = `
                   </span>
                   <span aria-atomic="true" class="ecl-quiz-card__sr-status sc-ecl-quiz-ec" role="status"></span>
                 </div>
-                <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="ecl-quiz-item-6qvk6mc55-answer">
+                <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-poll-3-answer">
                   <div class="ecl-quiz-card__answer-title sc-ecl-quiz-ec">
                     The correct answer is C.
                   </div>
@@ -277,7 +277,7 @@ exports[`ecl-quiz poll renders correctly 1`] = `
               </div>
             </article>
           </ecl-quiz-card>
-          <ecl-quiz-card answer="Duis id mattis libero. Quisque accumsan nisi" answer-title="The correct answer is B." category="Quiz" class="ecl-quiz-card sc-ecl-quiz-ec" error-category="Incorrect" id="ecl-quiz-item-erfkz5m1f" main-icon="question" options="[
+          <ecl-quiz-card answer="Duis id mattis libero. Quisque accumsan nisi" answer-title="The correct answer is B." category="Quiz" class="ecl-quiz-card sc-ecl-quiz-ec" error-category="Incorrect" id="card-poll-4" item-id="card-poll-4" main-icon="question" options="[
             { &quot;label&quot;: &quot;Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum&quot; },
             { &quot;label&quot;: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&quot;, &quot;correct&quot;: &quot;true&quot; },
             { &quot;label&quot;: &quot;Ivamus auctor blandit auctor.&quot; }
@@ -295,7 +295,7 @@ exports[`ecl-quiz poll renders correctly 1`] = `
                   </span>
                 </div>
                 <fieldset class="sc-ecl-quiz-ec">
-                  <legend class="ecl-quiz-card__question sc-ecl-quiz-ec" id="ecl-quiz-item-erfkz5m1f-question">
+                  <legend class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-poll-4-question">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit?
                   </legend>
                   <ol class="ecl-quiz-card__options sc-ecl-quiz-ec">
@@ -338,7 +338,7 @@ exports[`ecl-quiz poll renders correctly 1`] = `
                   </span>
                   <span aria-atomic="true" class="ecl-quiz-card__sr-status sc-ecl-quiz-ec" role="status"></span>
                 </div>
-                <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="ecl-quiz-item-erfkz5m1f-answer">
+                <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-poll-4-answer">
                   <div class="ecl-quiz-card__answer-title sc-ecl-quiz-ec">
                     The correct answer is B.
                   </div>
@@ -400,7 +400,7 @@ exports[`ecl-quiz reveal renders correctly 1`] = `
     </div>
     <div class="ecl-quiz__viewport" data-ecl-quiz-slider>
       <div class="ecl-quiz__list" role="list">
-        <ecl-quiz-card answer="You usually pay the same at home, no extra roaming fees." back-text="Flip back" class="ecl-quiz-card sc-ecl-quiz-ec" data-ecl-quiz-card-flip flip-text="Reveal answer" id="ecl-quiz-item-qvrgv8zpk" main-icon="sparkle" question="When you travel in the EU, what happens to your roaming charges?" role="listitem" tabindex="0" variant="reveal">
+        <ecl-quiz-card answer="You usually pay the same at home, no extra roaming fees." back-text="Flip back" class="ecl-quiz-card sc-ecl-quiz-ec" data-ecl-quiz-card-flip flip-text="Reveal answer" id="card-reveal-1" item-id="card-reveal-1" main-icon="sparkle" question="When you travel in the EU, what happens to your roaming charges?" role="listitem" tabindex="0" variant="reveal">
           <article class="ecl-quiz-card__content sc-ecl-quiz-ec">
             <div class="ecl-quiz-card__front sc-ecl-quiz-ec">
               <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
@@ -410,7 +410,7 @@ exports[`ecl-quiz reveal renders correctly 1`] = `
                   </ecl-icon>
                 </div>
               </div>
-              <div class="ecl-quiz-card__question sc-ecl-quiz-ec" id="ecl-quiz-item-qvrgv8zpk-question">
+              <div class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-reveal-1-question">
                 When you travel in the EU, what happens to your roaming charges?
               </div>
               <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
@@ -428,7 +428,7 @@ exports[`ecl-quiz reveal renders correctly 1`] = `
                   </ecl-icon>
                 </div>
               </div>
-              <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="ecl-quiz-item-qvrgv8zpk-answer">
+              <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-reveal-1-answer">
                 You usually pay the same at home, no extra roaming fees.
               </div>
               <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
@@ -440,7 +440,7 @@ exports[`ecl-quiz reveal renders correctly 1`] = `
             </div>
           </article>
         </ecl-quiz-card>
-        <ecl-quiz-card answer="A valid ID card or passport is usually enough." back-text="Flip back" class="ecl-quiz-card sc-ecl-quiz-ec" data-ecl-quiz-card-flip flip-text="Reveal answer" id="ecl-quiz-item-fpheju5pq" main-icon="sparkle" question="What document allows EU citizens to travel freely between most EU countries?" role="listitem" tabindex="0" variant="reveal">
+        <ecl-quiz-card answer="A valid ID card or passport is usually enough." back-text="Flip back" class="ecl-quiz-card sc-ecl-quiz-ec" data-ecl-quiz-card-flip flip-text="Reveal answer" id="card-reveal-2" item-id="card-reveal-2" main-icon="sparkle" question="What document allows EU citizens to travel freely between most EU countries?" role="listitem" tabindex="0" variant="reveal">
           <article class="ecl-quiz-card__content sc-ecl-quiz-ec">
             <div class="ecl-quiz-card__front sc-ecl-quiz-ec">
               <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
@@ -450,7 +450,7 @@ exports[`ecl-quiz reveal renders correctly 1`] = `
                   </ecl-icon>
                 </div>
               </div>
-              <div class="ecl-quiz-card__question sc-ecl-quiz-ec" id="ecl-quiz-item-fpheju5pq-question">
+              <div class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-reveal-2-question">
                 What document allows EU citizens to travel freely between most EU countries?
               </div>
               <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
@@ -468,7 +468,7 @@ exports[`ecl-quiz reveal renders correctly 1`] = `
                   </ecl-icon>
                 </div>
               </div>
-              <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="ecl-quiz-item-fpheju5pq-answer">
+              <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-reveal-2-answer">
                 A valid ID card or passport is usually enough.
               </div>
               <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
@@ -480,7 +480,7 @@ exports[`ecl-quiz reveal renders correctly 1`] = `
             </div>
           </article>
         </ecl-quiz-card>
-        <ecl-quiz-card answer="The euro (€) is used in many EU member states.." back-text="Flip back" class="ecl-quiz-card sc-ecl-quiz-ec" data-ecl-quiz-card-flip flip-text="Reveal answer" id="ecl-quiz-item-clpxitoub" main-icon="sparkle" question="What currency is used in many EU countries?" role="listitem" tabindex="0" variant="reveal">
+        <ecl-quiz-card answer="The euro (€) is used in many EU member states.." back-text="Flip back" class="ecl-quiz-card sc-ecl-quiz-ec" data-ecl-quiz-card-flip flip-text="Reveal answer" id="card-reveal-3" item-id="card-reveal-3" main-icon="sparkle" question="What currency is used in many EU countries?" role="listitem" tabindex="0" variant="reveal">
           <article class="ecl-quiz-card__content sc-ecl-quiz-ec">
             <div class="ecl-quiz-card__front sc-ecl-quiz-ec">
               <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
@@ -490,7 +490,7 @@ exports[`ecl-quiz reveal renders correctly 1`] = `
                   </ecl-icon>
                 </div>
               </div>
-              <div class="ecl-quiz-card__question sc-ecl-quiz-ec" id="ecl-quiz-item-clpxitoub-question">
+              <div class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-reveal-3-question">
                 What currency is used in many EU countries?
               </div>
               <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
@@ -508,7 +508,7 @@ exports[`ecl-quiz reveal renders correctly 1`] = `
                   </ecl-icon>
                 </div>
               </div>
-              <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="ecl-quiz-item-clpxitoub-answer">
+              <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-reveal-3-answer">
                 The euro (€) is used in many EU member states..
               </div>
               <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
@@ -520,7 +520,7 @@ exports[`ecl-quiz reveal renders correctly 1`] = `
             </div>
           </article>
         </ecl-quiz-card>
-        <ecl-quiz-card answer="Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum" back-text="Flip back" class="ecl-quiz-card sc-ecl-quiz-ec" data-ecl-quiz-card-flip flip-text="Reveal answer" id="ecl-quiz-item-mbm5lkjt7" main-icon="sparkle" question="Lorem ipsum dolor sit amet, consectetur adipiscing elit?" role="listitem" tabindex="0" variant="reveal">
+        <ecl-quiz-card answer="Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum" back-text="Flip back" class="ecl-quiz-card sc-ecl-quiz-ec" data-ecl-quiz-card-flip flip-text="Reveal answer" id="card-reveal-4" item-id="card-reveal-4" main-icon="sparkle" question="Lorem ipsum dolor sit amet, consectetur adipiscing elit?" role="listitem" tabindex="0" variant="reveal">
           <article class="ecl-quiz-card__content sc-ecl-quiz-ec">
             <div class="ecl-quiz-card__front sc-ecl-quiz-ec">
               <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
@@ -530,7 +530,7 @@ exports[`ecl-quiz reveal renders correctly 1`] = `
                   </ecl-icon>
                 </div>
               </div>
-              <div class="ecl-quiz-card__question sc-ecl-quiz-ec" id="ecl-quiz-item-mbm5lkjt7-question">
+              <div class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-reveal-4-question">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit?
               </div>
               <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
@@ -548,7 +548,7 @@ exports[`ecl-quiz reveal renders correctly 1`] = `
                   </ecl-icon>
                 </div>
               </div>
-              <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="ecl-quiz-item-mbm5lkjt7-answer">
+              <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-reveal-4-answer">
                 Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum
               </div>
               <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
@@ -560,7 +560,7 @@ exports[`ecl-quiz reveal renders correctly 1`] = `
             </div>
           </article>
         </ecl-quiz-card>
-        <ecl-quiz-card answer="Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum" back-text="Flip back" class="ecl-quiz-card sc-ecl-quiz-ec" data-ecl-quiz-card-flip flip-text="Reveal answer" id="ecl-quiz-item-lwkvynmit" main-icon="sparkle" question="Lorem ipsum dolor sit amet, consectetur adipiscing elit?" role="listitem" tabindex="0" variant="reveal">
+        <ecl-quiz-card answer="Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum" back-text="Flip back" class="ecl-quiz-card sc-ecl-quiz-ec" data-ecl-quiz-card-flip flip-text="Reveal answer" id="card-reveal-4" item-id="card-reveal-4" main-icon="sparkle" question="Lorem ipsum dolor sit amet, consectetur adipiscing elit?" role="listitem" tabindex="0" variant="reveal">
           <article class="ecl-quiz-card__content sc-ecl-quiz-ec">
             <div class="ecl-quiz-card__front sc-ecl-quiz-ec">
               <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
@@ -570,7 +570,7 @@ exports[`ecl-quiz reveal renders correctly 1`] = `
                   </ecl-icon>
                 </div>
               </div>
-              <div class="ecl-quiz-card__question sc-ecl-quiz-ec" id="ecl-quiz-item-lwkvynmit-question">
+              <div class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-reveal-4-question">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit?
               </div>
               <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
@@ -588,7 +588,7 @@ exports[`ecl-quiz reveal renders correctly 1`] = `
                   </ecl-icon>
                 </div>
               </div>
-              <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="ecl-quiz-item-lwkvynmit-answer">
+              <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-reveal-4-answer">
                 Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum
               </div>
               <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">

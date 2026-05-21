@@ -24,6 +24,7 @@ describe('ecl-quiz', () => {
         <ecl-quiz-card
           variant="reveal"
           main-icon="sparkle"
+          item-id="card-reveal-1"
           question="When you travel in the EU, what happens to your roaming charges?"
           answer="You usually pay the same at home, no extra roaming fees."
           flip-text="Reveal answer"
@@ -33,6 +34,7 @@ describe('ecl-quiz', () => {
         <ecl-quiz-card
           variant="reveal"
           main-icon="sparkle"
+          item-id="card-reveal-2"
           question="What document allows EU citizens to travel freely between most EU countries?"
           answer="A valid ID card or passport is usually enough."
           flip-text="Reveal answer"
@@ -42,6 +44,7 @@ describe('ecl-quiz', () => {
         <ecl-quiz-card
           variant="reveal"
           main-icon="sparkle"
+          item-id="card-reveal-3"
           question="What currency is used in many EU countries?"
           answer="The euro (€) is used in many EU member states.."
           flip-text="Reveal answer"
@@ -51,6 +54,7 @@ describe('ecl-quiz', () => {
         <ecl-quiz-card
           variant="reveal"
           main-icon="sparkle"
+          item-id="card-reveal-4"
           question="Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
           answer="Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum"
           flip-text="Reveal answer"
@@ -60,6 +64,7 @@ describe('ecl-quiz', () => {
         <ecl-quiz-card
           variant="reveal"
           main-icon="sparkle"
+          item-id="card-reveal-4"
           question="Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
           answer="Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum"
           flip-text="Reveal answer"
@@ -88,6 +93,7 @@ describe('ecl-quiz', () => {
       >
         <ecl-quiz-card
           category="Quiz"
+          item-id="card-poll-1"
           variant="poll"
           main-icon="question"
           success-category="Correct"
@@ -104,6 +110,7 @@ describe('ecl-quiz', () => {
         </ecl-quiz-card>
         <ecl-quiz-card
           variant="poll"
+          item-id="card-poll-2"
           main-icon="question"
           category="Quiz"
           success-category="Correct"
@@ -120,6 +127,7 @@ describe('ecl-quiz', () => {
         </ecl-quiz-card>
         <ecl-quiz-card
           category="Quiz"
+          item-id="card-poll-3"
           variant="poll"
           main-icon="question"
           success-category="Correct"
@@ -136,6 +144,7 @@ describe('ecl-quiz', () => {
         </ecl-quiz-card>
         <ecl-quiz-card
           category="Quiz"
+          item-id="card-poll-4"
           variant="poll"
           main-icon="question"
           success-category="Correct"
