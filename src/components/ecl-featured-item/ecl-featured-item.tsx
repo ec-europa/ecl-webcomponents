@@ -22,6 +22,7 @@ export class EclFeaturedItem {
   @Prop() linkType: string;
   @Prop() linkPath: string;
   @Prop() linkLabel: string;
+  @Prop() microTitle: string;
   @Prop() mediaCaption: string;
   @Prop() mediaBehavior: string;
   @Prop() mediaAnchor: string;
@@ -86,6 +87,11 @@ export class EclFeaturedItem {
           <div class="ecl-featured-item__item">
             <div class="ecl-featured-item__content">
               <div class="ecl-featured-item__info">
+              { this.microTitle &&
+                <div class="ecl-featured-item__micro-title">
+                  {this.microTitle}
+                </div>
+              }
               { this.itemTitle &&
                 <div 
                   class="ecl-featured-item__title"

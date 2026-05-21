@@ -549,6 +549,7 @@ export namespace Components {
         "mediaBehavior": string;
         "mediaCaption": string;
         "mediaCredit": string;
+        "microTitle": string;
         /**
           * @default 'left'
          */
@@ -3546,6 +3547,7 @@ declare namespace LocalJSX {
         "mediaBehavior"?: string;
         "mediaCaption"?: string;
         "mediaCredit"?: string;
+        "microTitle"?: string;
         /**
           * @default 'left'
          */
@@ -5491,6 +5493,7 @@ declare namespace LocalJSX {
         "linkType": string;
         "linkPath": string;
         "linkLabel": string;
+        "microTitle": string;
         "mediaCaption": string;
         "mediaBehavior": string;
         "mediaAnchor": string;

@@ -311,6 +311,7 @@ export const EclFeaturedItem: StencilVueComponent<JSX.EclFeaturedItem> = /*@__PU
   'linkType',
   'linkPath',
   'linkLabel',
+  'microTitle',
   'mediaCaption',
   'mediaBehavior',
   'mediaAnchor',
