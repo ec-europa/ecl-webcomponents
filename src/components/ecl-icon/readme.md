@@ -25,6 +25,7 @@
 
  - [ecl-accordion-item](../ecl-accordion)
  - [ecl-add-to-calendar](../ecl-add-to-calendar)
+ - [ecl-animated-numbers-item](../ecl-animated-numbers)
  - [ecl-banner](../ecl-banner)
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
  - [ecl-carousel](../ecl-carousel)
@@ -74,6 +75,7 @@
 graph TD;
   ecl-accordion-item --> ecl-icon
   ecl-add-to-calendar --> ecl-icon
+  ecl-animated-numbers-item --> ecl-icon
   ecl-banner --> ecl-icon
   ecl-breadcrumb-item --> ecl-icon
   ecl-carousel --> ecl-icon

@@ -44,6 +44,50 @@ export namespace Components {
          */
         "withButton": boolean;
     }
+    interface EclAnimatedNumbers {
+        /**
+          * @default false
+         */
+        "border": boolean;
+        /**
+          * @default true
+         */
+        "counterColor": boolean;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
+        /**
+          * @default ''
+         */
+        "sources": string;
+        /**
+          * @default ''
+         */
+        "sourcesLabel": string;
+        "styleClass": string;
+        "theme": string;
+        /**
+          * @default false
+         */
+        "withBackground": boolean;
+    }
+    interface EclAnimatedNumbersItem {
+        "category": string;
+        /**
+          * @default true
+         */
+        "counterColor": boolean;
+        "description": string;
+        "icon": string;
+        "itemPrefix": string;
+        "itemPrefixLabel": string;
+        "itemSuffix": string;
+        "itemSuffixLabel": string;
+        "styleClass": string;
+        "theme": string;
+        "value": string;
+    }
     interface EclBanner {
         "bannerTitle": string;
         "bannerTitleLink": string;
@@ -2289,6 +2333,18 @@ declare global {
         prototype: HTMLEclAddToCalendarElement;
         new (): HTMLEclAddToCalendarElement;
     };
+    interface HTMLEclAnimatedNumbersElement extends Components.EclAnimatedNumbers, HTMLStencilElement {
+    }
+    var HTMLEclAnimatedNumbersElement: {
+        prototype: HTMLEclAnimatedNumbersElement;
+        new (): HTMLEclAnimatedNumbersElement;
+    };
+    interface HTMLEclAnimatedNumbersItemElement extends Components.EclAnimatedNumbersItem, HTMLStencilElement {
+    }
+    var HTMLEclAnimatedNumbersItemElement: {
+        prototype: HTMLEclAnimatedNumbersItemElement;
+        new (): HTMLEclAnimatedNumbersItemElement;
+    };
     interface HTMLEclBannerElement extends Components.EclBanner, HTMLStencilElement {
     }
     var HTMLEclBannerElement: {
@@ -2916,6 +2972,8 @@ declare global {
         "ecl-accordion": HTMLEclAccordionElement;
         "ecl-accordion-item": HTMLEclAccordionItemElement;
         "ecl-add-to-calendar": HTMLEclAddToCalendarElement;
+        "ecl-animated-numbers": HTMLEclAnimatedNumbersElement;
+        "ecl-animated-numbers-item": HTMLEclAnimatedNumbersItemElement;
         "ecl-banner": HTMLEclBannerElement;
         "ecl-blockquote": HTMLEclBlockquoteElement;
         "ecl-breadcrumb": HTMLEclBreadcrumbElement;
@@ -3047,6 +3105,50 @@ declare namespace LocalJSX {
           * @default true
          */
         "withButton"?: boolean;
+    }
+    interface EclAnimatedNumbers {
+        /**
+          * @default false
+         */
+        "border"?: boolean;
+        /**
+          * @default true
+         */
+        "counterColor"?: boolean;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
+        /**
+          * @default ''
+         */
+        "sources"?: string;
+        /**
+          * @default ''
+         */
+        "sourcesLabel"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        /**
+          * @default false
+         */
+        "withBackground"?: boolean;
+    }
+    interface EclAnimatedNumbersItem {
+        "category"?: string;
+        /**
+          * @default true
+         */
+        "counterColor"?: boolean;
+        "description"?: string;
+        "icon"?: string;
+        "itemPrefix"?: string;
+        "itemPrefixLabel"?: string;
+        "itemSuffix"?: string;
+        "itemSuffixLabel"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "value"?: string;
     }
     interface EclBanner {
         "bannerTitle"?: string;
@@ -5285,6 +5387,29 @@ declare namespace LocalJSX {
         "fullWidth": boolean;
         "withButton": boolean;
     }
+    interface EclAnimatedNumbersAttributes {
+        "theme": string;
+        "styleClass": string;
+        "border": boolean;
+        "withBackground": boolean;
+        "noScript": boolean;
+        "counterColor": boolean;
+        "sources": string;
+        "sourcesLabel": string;
+    }
+    interface EclAnimatedNumbersItemAttributes {
+        "theme": string;
+        "styleClass": string;
+        "category": string;
+        "itemPrefix": string;
+        "counterColor": boolean;
+        "itemSuffix": string;
+        "icon": string;
+        "description": string;
+        "itemPrefixLabel": string;
+        "itemSuffixLabel": string;
+        "value": string;
+    }
     interface EclBannerAttributes {
         "colorMode": string;
         "theme": string;
@@ -6370,6 +6495,8 @@ declare namespace LocalJSX {
         "ecl-accordion": Omit<EclAccordion, keyof EclAccordionAttributes> & { [K in keyof EclAccordion & keyof EclAccordionAttributes]?: EclAccordion[K] } & { [K in keyof EclAccordion & keyof EclAccordionAttributes as `attr:${K}`]?: EclAccordionAttributes[K] } & { [K in keyof EclAccordion & keyof EclAccordionAttributes as `prop:${K}`]?: EclAccordion[K] };
         "ecl-accordion-item": Omit<EclAccordionItem, keyof EclAccordionItemAttributes> & { [K in keyof EclAccordionItem & keyof EclAccordionItemAttributes]?: EclAccordionItem[K] } & { [K in keyof EclAccordionItem & keyof EclAccordionItemAttributes as `attr:${K}`]?: EclAccordionItemAttributes[K] } & { [K in keyof EclAccordionItem & keyof EclAccordionItemAttributes as `prop:${K}`]?: EclAccordionItem[K] };
         "ecl-add-to-calendar": Omit<EclAddToCalendar, keyof EclAddToCalendarAttributes> & { [K in keyof EclAddToCalendar & keyof EclAddToCalendarAttributes]?: EclAddToCalendar[K] } & { [K in keyof EclAddToCalendar & keyof EclAddToCalendarAttributes as `attr:${K}`]?: EclAddToCalendarAttributes[K] } & { [K in keyof EclAddToCalendar & keyof EclAddToCalendarAttributes as `prop:${K}`]?: EclAddToCalendar[K] };
+        "ecl-animated-numbers": Omit<EclAnimatedNumbers, keyof EclAnimatedNumbersAttributes> & { [K in keyof EclAnimatedNumbers & keyof EclAnimatedNumbersAttributes]?: EclAnimatedNumbers[K] } & { [K in keyof EclAnimatedNumbers & keyof EclAnimatedNumbersAttributes as `attr:${K}`]?: EclAnimatedNumbersAttributes[K] } & { [K in keyof EclAnimatedNumbers & keyof EclAnimatedNumbersAttributes as `prop:${K}`]?: EclAnimatedNumbers[K] };
+        "ecl-animated-numbers-item": Omit<EclAnimatedNumbersItem, keyof EclAnimatedNumbersItemAttributes> & { [K in keyof EclAnimatedNumbersItem & keyof EclAnimatedNumbersItemAttributes]?: EclAnimatedNumbersItem[K] } & { [K in keyof EclAnimatedNumbersItem & keyof EclAnimatedNumbersItemAttributes as `attr:${K}`]?: EclAnimatedNumbersItemAttributes[K] } & { [K in keyof EclAnimatedNumbersItem & keyof EclAnimatedNumbersItemAttributes as `prop:${K}`]?: EclAnimatedNumbersItem[K] };
         "ecl-banner": Omit<EclBanner, keyof EclBannerAttributes> & { [K in keyof EclBanner & keyof EclBannerAttributes]?: EclBanner[K] } & { [K in keyof EclBanner & keyof EclBannerAttributes as `attr:${K}`]?: EclBannerAttributes[K] } & { [K in keyof EclBanner & keyof EclBannerAttributes as `prop:${K}`]?: EclBanner[K] };
         "ecl-blockquote": Omit<EclBlockquote, keyof EclBlockquoteAttributes> & { [K in keyof EclBlockquote & keyof EclBlockquoteAttributes]?: EclBlockquote[K] } & { [K in keyof EclBlockquote & keyof EclBlockquoteAttributes as `attr:${K}`]?: EclBlockquoteAttributes[K] } & { [K in keyof EclBlockquote & keyof EclBlockquoteAttributes as `prop:${K}`]?: EclBlockquote[K] };
         "ecl-breadcrumb": Omit<EclBreadcrumb, keyof EclBreadcrumbAttributes> & { [K in keyof EclBreadcrumb & keyof EclBreadcrumbAttributes]?: EclBreadcrumb[K] } & { [K in keyof EclBreadcrumb & keyof EclBreadcrumbAttributes as `attr:${K}`]?: EclBreadcrumbAttributes[K] } & { [K in keyof EclBreadcrumb & keyof EclBreadcrumbAttributes as `prop:${K}`]?: EclBreadcrumb[K] };
@@ -6468,6 +6595,8 @@ declare module "@stencil/core" {
             "ecl-accordion": LocalJSX.IntrinsicElements["ecl-accordion"] & JSXBase.HTMLAttributes<HTMLEclAccordionElement>;
             "ecl-accordion-item": LocalJSX.IntrinsicElements["ecl-accordion-item"] & JSXBase.HTMLAttributes<HTMLEclAccordionItemElement>;
             "ecl-add-to-calendar": LocalJSX.IntrinsicElements["ecl-add-to-calendar"] & JSXBase.HTMLAttributes<HTMLEclAddToCalendarElement>;
+            "ecl-animated-numbers": LocalJSX.IntrinsicElements["ecl-animated-numbers"] & JSXBase.HTMLAttributes<HTMLEclAnimatedNumbersElement>;
+            "ecl-animated-numbers-item": LocalJSX.IntrinsicElements["ecl-animated-numbers-item"] & JSXBase.HTMLAttributes<HTMLEclAnimatedNumbersItemElement>;
             "ecl-banner": LocalJSX.IntrinsicElements["ecl-banner"] & JSXBase.HTMLAttributes<HTMLEclBannerElement>;
             "ecl-blockquote": LocalJSX.IntrinsicElements["ecl-blockquote"] & JSXBase.HTMLAttributes<HTMLEclBlockquoteElement>;
             "ecl-breadcrumb": LocalJSX.IntrinsicElements["ecl-breadcrumb"] & JSXBase.HTMLAttributes<HTMLEclBreadcrumbElement>;

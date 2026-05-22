@@ -559,6 +559,37 @@ importers:
         specifier: 10.1.0
         version: 10.1.0
 
+  src/components/ecl-animated-numbers:
+    dependencies:
+      '@ecl/web-components-button':
+        specifier: 0.26.0
+        version: link:../ecl-button
+      '@ecl/web-components-icon':
+        specifier: 0.26.0
+        version: link:../ecl-icon
+    devDependencies:
+      '@ecl/animated-numbers':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/builder':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/theme-ec':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/theme-eu':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      cross-env:
+        specifier: 10.1.0
+        version: 10.1.0
+
   src/components/ecl-banner:
     dependencies:
       '@ecl/web-components-icon':
@@ -28288,7 +28319,7 @@ snapshots:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
-      terser: 5.31.6
+      terser: 5.46.1
       webpack: 5.93.0(esbuild@0.27.7)
     optionalDependencies:
       esbuild: 0.27.7

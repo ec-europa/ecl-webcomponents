@@ -35,6 +35,33 @@ export const EclAddToCalendar: StencilVueComponent<JSX.EclAddToCalendar> = /*@__
 ]);
 
 
+export const EclAnimatedNumbers: StencilVueComponent<JSX.EclAnimatedNumbers> = /*@__PURE__*/ defineContainer<JSX.EclAnimatedNumbers>('ecl-animated-numbers', undefined, [
+  'theme',
+  'styleClass',
+  'border',
+  'withBackground',
+  'noScript',
+  'counterColor',
+  'sources',
+  'sourcesLabel'
+]);
+
+
+export const EclAnimatedNumbersItem: StencilVueComponent<JSX.EclAnimatedNumbersItem> = /*@__PURE__*/ defineContainer<JSX.EclAnimatedNumbersItem>('ecl-animated-numbers-item', undefined, [
+  'theme',
+  'styleClass',
+  'category',
+  'itemPrefix',
+  'counterColor',
+  'itemSuffix',
+  'icon',
+  'description',
+  'itemPrefixLabel',
+  'itemSuffixLabel',
+  'value'
+]);
+
+
 export const EclBanner: StencilVueComponent<JSX.EclBanner> = /*@__PURE__*/ defineContainer<JSX.EclBanner>('ecl-banner', undefined, [
   'colorMode',
   'theme',

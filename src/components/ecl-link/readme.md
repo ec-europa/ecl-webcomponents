@@ -33,6 +33,7 @@
 
 ### Used by
 
+ - [ecl-animated-numbers](../ecl-animated-numbers)
  - [ecl-banner](../ecl-banner)
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
  - [ecl-category-filter-item](../ecl-category-filter)
@@ -67,6 +68,7 @@
 graph TD;
   ecl-link --> ecl-icon
   ecl-link --> ecl-indicator
+  ecl-animated-numbers --> ecl-link
   ecl-banner --> ecl-link
   ecl-breadcrumb-item --> ecl-link
   ecl-category-filter-item --> ecl-link

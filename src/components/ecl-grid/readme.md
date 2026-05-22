@@ -21,6 +21,7 @@
 
 ### Used by
 
+ - [ecl-animated-numbers](../ecl-animated-numbers)
  - [ecl-mega-menu-item](../ecl-mega-menu)
  - [ecl-quiz](../ecl-quiz)
  - [ecl-splash-page](../ecl-splash-page)
@@ -28,6 +29,7 @@
 ### Graph
 ```mermaid
 graph TD;
+  ecl-animated-numbers --> ecl-grid
   ecl-mega-menu-item --> ecl-grid
   ecl-quiz --> ecl-grid
   ecl-splash-page --> ecl-grid

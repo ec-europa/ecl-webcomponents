@@ -1,0 +1,42 @@
+{
+  "name": "@ecl/web-components-animated-numbers",
+  "author": "European Commission",
+  "license": "EUPL-1.2",
+  "version": "0.26.0",
+  "description": "ECL Animated Numbers",
+  "main": "ecl-animated-numbers.tsx",
+  "private": true,
+  "scripts": {
+    "build:styles": "cross-env ecl-builder styles",
+    "build": "run-s clean build:*",
+    "clean": "rimraf build",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "@ecl/web-components-button": "0.26.0",
+    "@ecl/web-components-icon": "0.26.0"
+  },
+  "devDependencies": {
+    "@ecl/builder": "5.0.0-RC5",
+    "@ecl/animated-numbers": "5.0.0-RC5",
+    "@ecl/grid": "5.0.0-RC5",
+    "@ecl/mixins-typography": "5.0.0-RC5",
+    "@ecl/theme-ec": "5.0.0-RC5",
+    "@ecl/theme-eu": "5.0.0-RC5",
+    "cross-env": "10.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planctus/ecl-webcomponents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/planctus/ecl-webcomponents/issues"
+  },
+  "homepage": "https://github.com/planctus/ecl-webcomponents",
+  "keywords": [
+    "ecl",
+    "europa-component-library",
+    "design-system",
+    "web-components"
+  ]
+}
