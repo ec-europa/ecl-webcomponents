@@ -1767,6 +1767,10 @@ export namespace Components {
         "multiplePlaceholder": string;
         "multipleSearchNoResultsText": string;
         "multipleSearchText": string;
+        /**
+          * @default false
+         */
+        "multipleSubmit": boolean;
         "name": string;
         /**
           * @default false
@@ -4775,6 +4779,10 @@ declare namespace LocalJSX {
         "multiplePlaceholder"?: string;
         "multipleSearchNoResultsText"?: string;
         "multipleSearchText"?: string;
+        /**
+          * @default false
+         */
+        "multipleSubmit"?: boolean;
         "name"?: string;
         /**
           * @default false
@@ -6126,6 +6134,7 @@ declare namespace LocalJSX {
         "multipleClearAllText": string;
         "multipleCloseText": string;
         "multipleCounterText": string;
+        "multipleSubmit": boolean;
         "inputValue": string;
         "hasChanged": boolean;
     }
