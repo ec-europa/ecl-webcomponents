@@ -45,7 +45,7 @@ export class EclMenuItem {
   getAttrs() {
     let attrs = {
       'data-ecl-menu-item': true,
-      'aria-expanded': "false",
+      'data-expanded': "false",
     };
 
     if (this.hasChildren) {
