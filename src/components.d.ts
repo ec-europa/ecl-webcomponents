@@ -1763,6 +1763,7 @@ export namespace Components {
         "multipleAllText": string;
         "multipleClearAllText": string;
         "multipleCloseText": string;
+        "multipleCounterText": string;
         "multiplePlaceholder": string;
         "multipleSearchNoResultsText": string;
         "multipleSearchText": string;
@@ -4770,6 +4771,7 @@ declare namespace LocalJSX {
         "multipleAllText"?: string;
         "multipleClearAllText"?: string;
         "multipleCloseText"?: string;
+        "multipleCounterText"?: string;
         "multiplePlaceholder"?: string;
         "multipleSearchNoResultsText"?: string;
         "multipleSearchText"?: string;
@@ -6123,6 +6125,7 @@ declare namespace LocalJSX {
         "multipleAllText": string;
         "multipleClearAllText": string;
         "multipleCloseText": string;
+        "multipleCounterText": string;
         "inputValue": string;
         "hasChanged": boolean;
     }

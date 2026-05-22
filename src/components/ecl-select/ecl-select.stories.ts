@@ -20,6 +20,7 @@ const getArgs = () => {
     multipleClearAllText: 'Clear all',
     multipleCloseText: 'Close',
     multipleSearchText: 'Enter keyword',
+    multipleCounterText: 'Selected:',
   };
 };
 
@@ -169,6 +170,12 @@ const getArgTypes = () => {
         category: 'multiple select',
       },
     },
+    multipleCounterText: {
+      name: 'multiple-counter-text',
+      table: {
+        category: 'multiple select',
+      },
+    },    
   };
 };
 
@@ -208,6 +215,7 @@ const Template = (args) =>
       multiple-all-text="${args.multipleAllText}"
       multiple-clear-all-text="${args.multipleClearAllText}"
       button-label="${args.buttonLabel}"
+      multiple-counter-text="${args.multipleCounterText}"
       select-id="custom-select"
       name="ecl-select"
       theme="${args.theme}"
