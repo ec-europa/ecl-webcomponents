@@ -76,6 +76,10 @@ export namespace Components {
          */
         "fontSize": string;
         /**
+          * @default 'light'
+         */
+        "fontWeight": string;
+        /**
           * @default false
          */
         "fullWidth": boolean;
@@ -3076,6 +3080,10 @@ declare namespace LocalJSX {
          */
         "fontSize"?: string;
         /**
+          * @default 'light'
+         */
+        "fontWeight"?: string;
+        /**
           * @default false
          */
         "fullWidth"?: boolean;
@@ -5300,6 +5308,7 @@ declare namespace LocalJSX {
         "srPause": string;
         "fontColor": string;
         "fontSize": string;
+        "fontWeight": string;
         "credit": string;
         "size": string;
         "ctaClicked": boolean;

@@ -37,6 +37,7 @@ export class EclBanner {
   @Prop() srPause: string;
   @Prop({mutable: true}) fontColor: string = 'dark';
   @Prop() fontSize: string = 'm';
+  @Prop() fontWeight: string = 'light';
   @Prop() credit: string;
   @Prop() size: string = 'm';
   @Prop() ctaClicked: boolean = false;
@@ -49,6 +50,7 @@ export class EclBanner {
       `ecl-banner--h-${this.horizontal}`,
       `ecl-banner--v-${this.vertical}`,
       `ecl-banner--font-${this.fontSize}`,
+      `ecl-banner--font-weight-${this.fontWeight}`,
       this.styleClass
     ];
 

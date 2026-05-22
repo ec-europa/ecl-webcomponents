@@ -58,6 +58,7 @@ export const EclBanner: StencilVueComponent<JSX.EclBanner> = /*@__PURE__*/ defin
   'srPause',
   'fontColor',
   'fontSize',
+  'fontWeight',
   'credit',
   'size',
   'ctaClicked'
