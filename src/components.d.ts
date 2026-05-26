@@ -1184,6 +1184,10 @@ export namespace Components {
           * @default false
          */
         "autoplay": boolean;
+        /**
+          * @default 'bottom'
+         */
+        "captionPosition": string;
         "credit": string;
         /**
           * @default false
@@ -1207,6 +1211,7 @@ export namespace Components {
           * @default false
          */
         "noScript": boolean;
+        "poster": string;
         /**
           * @default ''
          */
@@ -1219,6 +1224,7 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
         "tracks": string;
+        "videoTitle": string;
     }
     interface EclMegaMenu {
         "ariaLabel": string;
@@ -2184,6 +2190,47 @@ export namespace Components {
         "type": 'display' | 'heading' | 'paragraph' | 'microcopy' | undefined;
         "weight": 'thin' | 'extra-light' | 'light' | 'regular' | 'medium' | 'semi-bold' | 'bold' | 'extra-bold' | 'black' | undefined;
     }
+    interface EclTextMedia {
+        "colorMode": string;
+        /**
+          * @default `ecl-text-media-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
+         */
+        "elId": string;
+        /**
+          * @default false
+         */
+        "fullWidth": boolean;
+        /**
+          * @default true
+         */
+        "hasDescription": boolean;
+        /**
+          * @default true
+         */
+        "hasMedia": boolean;
+        "image": string;
+        "itemTitle": string;
+        "linkLabel": string;
+        "linkPath": string;
+        /**
+          * @default 'secondary-inverted'
+         */
+        "linkType": string;
+        "mediaAnchor": string;
+        "mediaCaption": string;
+        "mediaCredit": string;
+        /**
+          * @default 'right'
+         */
+        "mediaPosition": string;
+        "microTitle": string;
+        "sources": string;
+        "styleClass": string;
+        "theme": string;
+        "tracks": string;
+        "variant": string;
+        "videoTitle": string;
+    }
     interface EclTextarea {
         "defaultValue": string;
         /**
@@ -2925,6 +2972,12 @@ declare global {
         prototype: HTMLEclTextElement;
         new (): HTMLEclTextElement;
     };
+    interface HTMLEclTextMediaElement extends Components.EclTextMedia, HTMLStencilElement {
+    }
+    var HTMLEclTextMediaElement: {
+        prototype: HTMLEclTextMediaElement;
+        new (): HTMLEclTextMediaElement;
+    };
     interface HTMLEclTextareaElementEventMap {
         "inputFocus": FocusEvent;
         "inputBlur": FocusEvent;
@@ -3058,6 +3111,7 @@ declare global {
         "ecl-tag": HTMLEclTagElement;
         "ecl-tag-set": HTMLEclTagSetElement;
         "ecl-text": HTMLEclTextElement;
+        "ecl-text-media": HTMLEclTextMediaElement;
         "ecl-textarea": HTMLEclTextareaElement;
         "ecl-timeline": HTMLEclTimelineElement;
         "ecl-timeline-item": HTMLEclTimelineItemElement;
@@ -4252,6 +4306,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "autoplay"?: boolean;
+        /**
+          * @default 'bottom'
+         */
+        "captionPosition"?: string;
         "credit"?: string;
         /**
           * @default false
@@ -4275,6 +4333,7 @@ declare namespace LocalJSX {
           * @default false
          */
         "noScript"?: boolean;
+        "poster"?: string;
         /**
           * @default ''
          */
@@ -4287,6 +4346,7 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "tracks"?: string;
+        "videoTitle"?: string;
     }
     interface EclMegaMenu {
         "ariaLabel"?: string;
@@ -5262,6 +5322,47 @@ declare namespace LocalJSX {
         "type"?: 'display' | 'heading' | 'paragraph' | 'microcopy' | undefined;
         "weight"?: 'thin' | 'extra-light' | 'light' | 'regular' | 'medium' | 'semi-bold' | 'bold' | 'extra-bold' | 'black' | undefined;
     }
+    interface EclTextMedia {
+        "colorMode"?: string;
+        /**
+          * @default `ecl-text-media-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
+         */
+        "elId"?: string;
+        /**
+          * @default false
+         */
+        "fullWidth"?: boolean;
+        /**
+          * @default true
+         */
+        "hasDescription"?: boolean;
+        /**
+          * @default true
+         */
+        "hasMedia"?: boolean;
+        "image"?: string;
+        "itemTitle"?: string;
+        "linkLabel"?: string;
+        "linkPath"?: string;
+        /**
+          * @default 'secondary-inverted'
+         */
+        "linkType"?: string;
+        "mediaAnchor"?: string;
+        "mediaCaption"?: string;
+        "mediaCredit"?: string;
+        /**
+          * @default 'right'
+         */
+        "mediaPosition"?: string;
+        "microTitle"?: string;
+        "sources"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "tracks"?: string;
+        "variant"?: string;
+        "videoTitle"?: string;
+    }
     interface EclTextarea {
         "defaultValue"?: string;
         /**
@@ -5942,9 +6043,11 @@ declare namespace LocalJSX {
         "imageAlt": string;
         "image": string;
         "imageAnchor": string;
+        "captionPosition": string;
         "fullWidth": boolean;
         "sources": string;
         "tracks": string;
+        "poster": string;
         "autoplay": boolean;
         "hasCaption": boolean;
         "credit": string;
@@ -5955,6 +6058,7 @@ declare namespace LocalJSX {
         "srVideoAudio": string;
         "noScript": boolean;
         "embeddedMedia": boolean;
+        "videoTitle": string;
     }
     interface EclMegaMenuAttributes {
         "styleClass": string;
@@ -6440,6 +6544,29 @@ declare namespace LocalJSX {
         "colorModeTypography": string;
         "itemId": string;
     }
+    interface EclTextMediaAttributes {
+        "theme": string;
+        "colorMode": string;
+        "elId": string;
+        "styleClass": string;
+        "variant": string;
+        "fullWidth": boolean;
+        "hasMedia": boolean;
+        "itemTitle": string;
+        "microTitle": string;
+        "hasDescription": boolean;
+        "mediaPosition": string;
+        "linkLabel": string;
+        "linkPath": string;
+        "mediaCaption": string;
+        "mediaAnchor": string;
+        "mediaCredit": string;
+        "image": string;
+        "sources": string;
+        "tracks": string;
+        "videoTitle": string;
+        "linkType": string;
+    }
     interface EclTextareaAttributes {
         "theme": string;
         "styleClass": string;
@@ -6581,6 +6708,7 @@ declare namespace LocalJSX {
         "ecl-tag": Omit<EclTag, keyof EclTagAttributes> & { [K in keyof EclTag & keyof EclTagAttributes]?: EclTag[K] } & { [K in keyof EclTag & keyof EclTagAttributes as `attr:${K}`]?: EclTagAttributes[K] } & { [K in keyof EclTag & keyof EclTagAttributes as `prop:${K}`]?: EclTag[K] };
         "ecl-tag-set": Omit<EclTagSet, keyof EclTagSetAttributes> & { [K in keyof EclTagSet & keyof EclTagSetAttributes]?: EclTagSet[K] } & { [K in keyof EclTagSet & keyof EclTagSetAttributes as `attr:${K}`]?: EclTagSetAttributes[K] } & { [K in keyof EclTagSet & keyof EclTagSetAttributes as `prop:${K}`]?: EclTagSet[K] };
         "ecl-text": Omit<EclText, keyof EclTextAttributes> & { [K in keyof EclText & keyof EclTextAttributes]?: EclText[K] } & { [K in keyof EclText & keyof EclTextAttributes as `attr:${K}`]?: EclTextAttributes[K] } & { [K in keyof EclText & keyof EclTextAttributes as `prop:${K}`]?: EclText[K] };
+        "ecl-text-media": Omit<EclTextMedia, keyof EclTextMediaAttributes> & { [K in keyof EclTextMedia & keyof EclTextMediaAttributes]?: EclTextMedia[K] } & { [K in keyof EclTextMedia & keyof EclTextMediaAttributes as `attr:${K}`]?: EclTextMediaAttributes[K] } & { [K in keyof EclTextMedia & keyof EclTextMediaAttributes as `prop:${K}`]?: EclTextMedia[K] };
         "ecl-textarea": Omit<EclTextarea, keyof EclTextareaAttributes> & { [K in keyof EclTextarea & keyof EclTextareaAttributes]?: EclTextarea[K] } & { [K in keyof EclTextarea & keyof EclTextareaAttributes as `attr:${K}`]?: EclTextareaAttributes[K] } & { [K in keyof EclTextarea & keyof EclTextareaAttributes as `prop:${K}`]?: EclTextarea[K] };
         "ecl-timeline": Omit<EclTimeline, keyof EclTimelineAttributes> & { [K in keyof EclTimeline & keyof EclTimelineAttributes]?: EclTimeline[K] } & { [K in keyof EclTimeline & keyof EclTimelineAttributes as `attr:${K}`]?: EclTimelineAttributes[K] } & { [K in keyof EclTimeline & keyof EclTimelineAttributes as `prop:${K}`]?: EclTimeline[K] };
         "ecl-timeline-item": Omit<EclTimelineItem, keyof EclTimelineItemAttributes> & { [K in keyof EclTimelineItem & keyof EclTimelineItemAttributes]?: EclTimelineItem[K] } & { [K in keyof EclTimelineItem & keyof EclTimelineItemAttributes as `attr:${K}`]?: EclTimelineItemAttributes[K] } & { [K in keyof EclTimelineItem & keyof EclTimelineItemAttributes as `prop:${K}`]?: EclTimelineItem[K] };
@@ -6681,6 +6809,7 @@ declare module "@stencil/core" {
             "ecl-tag": LocalJSX.IntrinsicElements["ecl-tag"] & JSXBase.HTMLAttributes<HTMLEclTagElement>;
             "ecl-tag-set": LocalJSX.IntrinsicElements["ecl-tag-set"] & JSXBase.HTMLAttributes<HTMLEclTagSetElement>;
             "ecl-text": LocalJSX.IntrinsicElements["ecl-text"] & JSXBase.HTMLAttributes<HTMLEclTextElement>;
+            "ecl-text-media": LocalJSX.IntrinsicElements["ecl-text-media"] & JSXBase.HTMLAttributes<HTMLEclTextMediaElement>;
             "ecl-textarea": LocalJSX.IntrinsicElements["ecl-textarea"] & JSXBase.HTMLAttributes<HTMLEclTextareaElement>;
             "ecl-timeline": LocalJSX.IntrinsicElements["ecl-timeline"] & JSXBase.HTMLAttributes<HTMLEclTimelineElement>;
             "ecl-timeline-item": LocalJSX.IntrinsicElements["ecl-timeline-item"] & JSXBase.HTMLAttributes<HTMLEclTimelineItemElement>;

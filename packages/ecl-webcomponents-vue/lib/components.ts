@@ -695,9 +695,11 @@ export const EclMediaContainer: StencilVueComponent<JSX.EclMediaContainer> = /*@
   'imageAlt',
   'image',
   'imageAnchor',
+  'captionPosition',
   'fullWidth',
   'sources',
   'tracks',
+  'poster',
   'autoplay',
   'hasCaption',
   'credit',
@@ -707,7 +709,8 @@ export const EclMediaContainer: StencilVueComponent<JSX.EclMediaContainer> = /*@
   'srVideoPlayer',
   'srVideoAudio',
   'noScript',
-  'embeddedMedia'
+  'embeddedMedia',
+  'videoTitle'
 ]);
 
 
@@ -1296,6 +1299,31 @@ export const EclText: StencilVueComponent<JSX.EclText> = /*@__PURE__*/ defineCon
   'colorMode',
   'colorModeTypography',
   'itemId'
+]);
+
+
+export const EclTextMedia: StencilVueComponent<JSX.EclTextMedia> = /*@__PURE__*/ defineContainer<JSX.EclTextMedia>('ecl-text-media', undefined, [
+  'theme',
+  'colorMode',
+  'elId',
+  'styleClass',
+  'variant',
+  'fullWidth',
+  'hasMedia',
+  'itemTitle',
+  'microTitle',
+  'hasDescription',
+  'mediaPosition',
+  'linkLabel',
+  'linkPath',
+  'mediaCaption',
+  'mediaAnchor',
+  'mediaCredit',
+  'image',
+  'sources',
+  'tracks',
+  'videoTitle',
+  'linkType'
 ]);
 
 

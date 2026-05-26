@@ -45,10 +45,10 @@ exports[`ecl-featured-item renders correctly 1`] = `
               </ecl-picture>
               <figcaption class="ecl-media-container__caption">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                <span class="ecl-media-container__credit">
-                  @Copyright
-                </span>
               </figcaption>
+              <footer class="ecl-media-container__credit">
+                @Copyright
+              </footer>
             </figure>
           </div>
         </ecl-media-container>
@@ -103,10 +103,10 @@ exports[`ecl-featured-item renders correctly with all the options specified 1`] 
               </ecl-picture>
               <figcaption class="ecl-media-container__caption">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                <span class="ecl-media-container__credit">
-                  @Copyright
-                </span>
               </figcaption>
+              <footer class="ecl-media-container__credit">
+                @Copyright
+              </footer>
             </figure>
           </div>
         </ecl-media-container>
