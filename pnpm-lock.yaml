@@ -1670,6 +1670,10 @@ importers:
         version: 10.1.0
 
   src/components/ecl-page-summary:
+    dependencies:
+      '@ecl/web-components-icon':
+        specifier: 0.26.0
+        version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-RC5
