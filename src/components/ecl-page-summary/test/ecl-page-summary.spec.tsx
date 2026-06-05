@@ -10,7 +10,7 @@ describe('ecl-page-summary', () => {
               item-title="Page summary title"
               icon="book-open"
               icon-family="phosphor"
-              id="page-summary-demo"
+              el-id="page-summary-demo"
               >
                 Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
