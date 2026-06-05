@@ -8,55 +8,27 @@ exports[`ecl-social-media-follow renders 1`] = `
       Follow on social media
     </p>
     <div class="ecl-social-media-follow__list" role="list">
-      <ecl-social-media-follow-item class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec" icon="facebook-color" role="listitem" share-path="http://facebook.com">
+      <ecl-social-media-follow-item 'networks',="" class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec" family:="" icon="mastodon" role="listitem" share-path="http://mastodon.com">
         <!---->
         <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
           <!---->
-          <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://facebook.com">
+          <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://mastodon.com">
             <ecl-icon class="ecl-link__icon" slot="icon-before">
-              <span class="ecl-icon ecl-icon--s wt-icon--monochrome wt-icon--placeholder wt-icon-networks--facebook-color"></span>
+              <span class="ecl-icon ecl-icon--s wt-icon--monochrome wt-icon--placeholder wt-icon-networks--mastodon"></span>
             </ecl-icon>
             <span class="ecl-link__label">
-              Facebook
+              Mastodon
             </span>
           </a>
         </ecl-link>
       </ecl-social-media-follow-item>
-      <ecl-social-media-follow-item class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec" icon="twitter-color" role="listitem" share-path="http://twitter.com">
-        <!---->
-        <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
-          <!---->
-          <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://twitter.com">
-            <ecl-icon class="ecl-link__icon" slot="icon-before">
-              <span class="ecl-icon ecl-icon--s wt-icon--monochrome wt-icon--placeholder wt-icon-networks--twitter-color"></span>
-            </ecl-icon>
-            <span class="ecl-link__label">
-              Twitter
-            </span>
-          </a>
-        </ecl-link>
-      </ecl-social-media-follow-item>
-      <ecl-social-media-follow-item class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec" icon="instagram-color" role="listitem" share-path="http://instagram.com">
-        <!---->
-        <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
-          <!---->
-          <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://instagram.com">
-            <ecl-icon class="ecl-link__icon" slot="icon-before">
-              <span class="ecl-icon ecl-icon--s wt-icon--monochrome wt-icon--placeholder wt-icon-networks--instagram-color"></span>
-            </ecl-icon>
-            <span class="ecl-link__label">
-              Instagram
-            </span>
-          </a>
-        </ecl-link>
-      </ecl-social-media-follow-item>
-      <ecl-social-media-follow-item class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec" icon="linkedin-color" role="listitem" share-path="http://linkedin.com">
+      <ecl-social-media-follow-item 'networks',="" class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec" family:="" icon="linkedin" role="listitem" share-path="http://linkedin.com">
         <!---->
         <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
           <!---->
           <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://linkedin.com">
             <ecl-icon class="ecl-link__icon" slot="icon-before">
-              <span class="ecl-icon ecl-icon--s wt-icon--monochrome wt-icon--placeholder wt-icon-networks--linkedin-color"></span>
+              <span class="ecl-icon ecl-icon--s wt-icon--monochrome wt-icon--placeholder wt-icon-networks--linkedin"></span>
             </ecl-icon>
             <span class="ecl-link__label">
               Linkedin
@@ -64,16 +36,44 @@ exports[`ecl-social-media-follow renders 1`] = `
           </a>
         </ecl-link>
       </ecl-social-media-follow-item>
-      <ecl-social-media-follow-item class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec" icon="telegram-color" role="listitem" share-path="http://telegram.com">
+      <ecl-social-media-follow-item 'networks',="" class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec" family:="" icon="bluesky" role="listitem" share-path="http://bluesky.com">
         <!---->
         <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
           <!---->
-          <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://telegram.com">
+          <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://bluesky.com">
             <ecl-icon class="ecl-link__icon" slot="icon-before">
-              <span class="ecl-icon ecl-icon--s wt-icon--monochrome wt-icon--placeholder wt-icon-networks--telegram-color"></span>
+              <span class="ecl-icon ecl-icon--s wt-icon--monochrome wt-icon--placeholder wt-icon-networks--bluesky"></span>
             </ecl-icon>
             <span class="ecl-link__label">
-              Telegram
+              Bluesky
+            </span>
+          </a>
+        </ecl-link>
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item 'networks',="" class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec" family:="" icon="facebook" role="listitem" share-path="http://facebook.com">
+        <!---->
+        <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
+          <!---->
+          <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://facebook.com">
+            <ecl-icon class="ecl-link__icon" slot="icon-before">
+              <span class="ecl-icon ecl-icon--s wt-icon--monochrome wt-icon--placeholder wt-icon-networks--facebook"></span>
+            </ecl-icon>
+            <span class="ecl-link__label">
+              Facebook
+            </span>
+          </a>
+        </ecl-link>
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item 'networks',="" class="ecl-social-media-follow__item sc-ecl-social-media-follow-ec" family:="" icon="youtube" role="listitem" share-path="http://youtube.com">
+        <!---->
+        <ecl-link icon-position="before" style-class="ecl-link ecl-link--standalone ecl-link--icon-before ecl-social-media-follow__link sc-ecl-social-media-follow-ec">
+          <!---->
+          <a class="ecl-link ecl-link--icon ecl-link--icon-before ecl-link--standalone ecl-social-media-follow__link sc-ecl-social-media-follow-ec" href="http://youtube.com">
+            <ecl-icon class="ecl-link__icon" slot="icon-before">
+              <span class="ecl-icon ecl-icon--s wt-icon--monochrome wt-icon--placeholder wt-icon-networks--youtube"></span>
+            </ecl-icon>
+            <span class="ecl-link__label">
+              YouTube
             </span>
           </a>
         </ecl-link>
