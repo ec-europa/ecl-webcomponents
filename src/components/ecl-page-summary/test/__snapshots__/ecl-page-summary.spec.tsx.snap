@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-page-summary renders 1`] = `
-<ecl-page-summary icon="book-open" icon-family="phosphor" item-title="Page summary title">
+<ecl-page-summary icon="book-open" icon-family="phosphor" id="page-summary-demo" item-title="Page summary title">
   <!---->
-  <section aria-labelledby="ecl-page-summary-fg0o05w-title" class="ecl-page-summary" id="ecl-page-summary-fg0o05w">
+  <section aria-labelledby="ecl-page-summary-1v3igm7-title" class="ecl-page-summary" id="ecl-page-summary-1v3igm7">
     <div class="ecl-page-summary__header">
       <ecl-icon style-class="ecl-page-summary__icon">
         <span class="ecl-icon ecl-icon--xs ecl-page-summary__icon wt-icon--placeholder wt-icon-phosphor--book-open"></span>
       </ecl-icon>
-      <h2 class="ecl-page-summary__title" id="ecl-page-summary-fg0o05w-title">
+      <h2 class="ecl-page-summary__title" id="ecl-page-summary-1v3igm7-title">
         Page summary title
       </h2>
     </div>
