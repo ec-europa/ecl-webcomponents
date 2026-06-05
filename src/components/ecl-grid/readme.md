@@ -7,14 +7,14 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type      | Default     |
-| ------------ | ------------- | ----------- | --------- | ----------- |
-| `breakpoint` | `breakpoint`  |             | `string`  | `undefined` |
-| `columns`    | `columns`     |             | `number`  | `12`        |
-| `container`  | `container`   |             | `boolean` | `false`     |
-| `row`        | `row`         |             | `boolean` | `false`     |
-| `styleClass` | `style-class` |             | `string`  | `''`        |
-| `theme`      | `theme`       |             | `string`  | `'ec'`      |
+| Property     | Attribute     | Description                                                                  | Type               | Default     |
+| ------------ | ------------- | ---------------------------------------------------------------------------- | ------------------ | ----------- |
+| `breakpoint` | `breakpoint`  |                                                                              | `string`           | `undefined` |
+| `columns`    | `columns`     | Supported formats:  columns="6"  columns='{   "s": 12,   "m": 6,   "l": 4 }' | `number \| string` | `12`        |
+| `container`  | `container`   |                                                                              | `boolean`          | `false`     |
+| `row`        | `row`         |                                                                              | `boolean`          | `false`     |
+| `styleClass` | `style-class` |                                                                              | `string`           | `''`        |
+| `theme`      | `theme`       |                                                                              | `string`           | `'ec'`      |
 
 
 ## Dependencies

@@ -912,9 +912,10 @@ export namespace Components {
     interface EclGrid {
         "breakpoint": string;
         /**
+          * Supported formats:  columns="6"  columns='{   "s": 12,   "m": 6,   "l": 4 }'
           * @default 12
          */
-        "columns": number;
+        "columns": number | string;
         /**
           * @default false
          */
@@ -4141,9 +4142,10 @@ declare namespace LocalJSX {
     interface EclGrid {
         "breakpoint"?: string;
         /**
+          * Supported formats:  columns="6"  columns='{   "s": 12,   "m": 6,   "l": 4 }'
           * @default 12
          */
-        "columns"?: number;
+        "columns"?: number | string;
         /**
           * @default false
          */
@@ -6130,7 +6132,7 @@ declare namespace LocalJSX {
     interface EclGridAttributes {
         "styleClass": string;
         "theme": string;
-        "columns": number;
+        "columns": string;
         "breakpoint": string;
         "row": boolean;
         "container": boolean;
