@@ -16,36 +16,36 @@ declare const ECL: any;
 
 export class EclSiteHeader {
   @Element() el: HTMLElement;
-  @Prop({ mutable: true }) theme: string;
-  @Prop() styleClass: string;
+  @Prop({ mutable: true }) theme: string = 'ec';
+  @Prop() styleClass: string = '';
   @Prop() noScript: boolean = false;
   @Prop() loginBlock: boolean = false;
   @Prop() languageBlock: boolean = false;
   @Prop() searchBlock: boolean = true;
-  @Prop() logo: string;
-  @Prop() logoAlt: string;
-  @Prop() logoTitle: string;
+  @Prop() logo: string = '';
+  @Prop() logoAlt: string = '';
+  @Prop() logoTitle: string = '';
   @Prop() logoSize: string = 'l';
-  @Prop() searchText: string;
+  @Prop() searchText: string = '';
   @Prop() searchFormId: string = `ecl-site-header-search-form-${Math.random().toString(36).slice(2, 10)}`;
-  @Prop() searchPlaceholder: string;
-  @Prop() language: string;
-  @Prop() langCode: string;
-  @Prop() loginText: string;
-  @Prop() loggedInText: string;
-  @Prop() loginLink: string;
+  @Prop() searchPlaceholder: string = '';
+  @Prop() language: string = '';
+  @Prop() langCode: string = '';
+  @Prop() loginText: string = '';
+  @Prop() loggedInText: string = '';
+  @Prop() loginLink: string = '';
   @Prop() logged: boolean = false;
-  @Prop() logoutLink: string;
-  @Prop() logoutText: string;
-  @Prop() euLabel: string;
-  @Prop() nonEuLabel: string;
-  @Prop() closeLabel: string;
-  @Prop() languageTitle: string;
-  @Prop() languageId: string;
-  @Prop() languageAriaLabel: string;
-  @Prop() siteName: string;
-  @Prop() bannerTop: string;
-  @Prop() bannerTopLink: string;
+  @Prop() logoutLink: string = '';
+  @Prop() logoutText: string = '';
+  @Prop() euLabel: string = '';
+  @Prop() nonEuLabel: string = '';
+  @Prop() closeLabel: string = '';
+  @Prop() languageTitle: string = '';
+  @Prop() languageId: string = '';
+  @Prop() languageAriaLabel: string = '';
+  @Prop() siteName: string = '';
+  @Prop() bannerTop: string = '';
+  @Prop() bannerTopLink: string = '';
   @Prop() siteNameMobileOnly: boolean = false;
 
   getClass(): string {
@@ -63,30 +63,21 @@ export class EclSiteHeader {
   }
 
   componentDidLoad() {
-    if (this.el.querySelector('.ecl-site-header__logo-link')) {
-      const logo = this.el.querySelector('.ecl-site-header__logo-link');
-      const headerTop = logo.parentElement.parentElement;
-      headerTop.insertBefore(logo, headerTop.firstElementChild);
-      //logo.parentElement.remove();
-    }
-
     if (this.el.querySelector('.ecl-menu')) {
-      this.el.querySelector('.ecl-menu').classList.add(`sc-ecl-site-header-${this.theme}`);
-      this.el.firstElementChild.classList.add('ecl-site-header--has-menu');
+      this.el.querySelector('.ecl-menu')?.classList.add(`sc-ecl-site-header-${this.theme}`);
+      this.el.firstElementChild?.classList.add('ecl-site-header--has-menu');
       const open = this.el.querySelector('.ecl-menu__open');
-      open.classList.add(`sc-ecl-site-header-${this.theme}`);
+      open?.classList.add(`sc-ecl-site-header-${this.theme}`);
       const close = this.el.querySelector('.ecl-menu__close');
-      close.classList.add(`sc-ecl-site-header-${this.theme}`);
+      close?.classList.add(`sc-ecl-site-header-${this.theme}`);
       const inner = this.el.querySelector('.ecl-menu__inner-header');
-      inner.classList.add(`sc-ecl-site-header-${this.theme}`);
+      inner?.classList.add(`sc-ecl-site-header-${this.theme}`);
     }
     if (this.el.querySelector('.ecl-mega-menu')) {
-      this.el.querySelector('.ecl-mega-menu').classList.add(`sc-ecl-site-header-${this.theme}`);
-      this.el.firstElementChild.classList.add('ecl-site-header--has-mega-menu');
+      this.el.querySelector('.ecl-mega-menu')?.classList.add(`sc-ecl-site-header-${this.theme}`);
+      this.el.firstElementChild?.classList.add('ecl-site-header--has-mega-menu');
       const open = this.el.querySelector('.ecl-mega-menu__open');
-      if (open) {
-        open.classList.add(`sc-ecl-site-header-${this.theme}`);
-      }
+      open?.classList.add(`sc-ecl-site-header-${this.theme}`);
     }
     if (!this.noScript) {
       ;(window as any).ECL = (window as any).ECL || {};

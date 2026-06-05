@@ -36,7 +36,8 @@ exports[`ecl-site-header renders 1`] = `
                       <!---->
                       <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-site-header__language-close sc-ecl-site-header-ec" data-ecl-language-list-close="eclLanguageListClose" type="submit">
                         <span class="ecl-button__container">
-                          <span class="ecl-button__label" data-ecl-label></span>
+                          <span class="ecl-button__label" data-ecl-label>
+                          </span>
                           <ecl-icon data-ecl-icon icon="close" size="m" slot="icon-after" style-class="sc-ecl-site-header-ec"></ecl-icon>
                         </span>
                       </button>
@@ -303,12 +304,12 @@ exports[`ecl-site-header renders 1`] = `
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
                   <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
-                    <span class="ecl-button__container">
+                    <span class="ecl-button__container sc-ecl-mega-menu-ec">
                       <span class="ecl-button__label" data-ecl-label>
                         News and media
                       </span>
-                      <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
-                      <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                      <ecl-icon class="sc-ecl-mega-menu-ec" icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                      <ecl-icon class="sc-ecl-mega-menu-ec" flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
                     </span>
                   </button>
                 </ecl-button>
@@ -333,12 +334,12 @@ exports[`ecl-site-header renders 1`] = `
                           <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-sublink style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec">
                             <!---->
                             <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__sublink ecl-mega-menu__sublink--last sc-ecl-mega-menu-ec" data-ecl-mega-menu-sublink="eclMegaMenuSublink" type="button">
-                              <span class="ecl-button__container">
+                              <span class="ecl-button__container sc-ecl-mega-menu-ec">
                                 <span class="ecl-button__label" data-ecl-label>
                                   Item 2.1
                                 </span>
-                                <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
-                                <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                                <ecl-icon class="sc-ecl-mega-menu-ec" icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                                <ecl-icon class="sc-ecl-mega-menu-ec" flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
                               </span>
                             </button>
                           </ecl-button>
@@ -493,12 +494,12 @@ exports[`ecl-site-header renders 1`] = `
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
                   <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
-                    <span class="ecl-button__container">
+                    <span class="ecl-button__container sc-ecl-mega-menu-ec">
                       <span class="ecl-button__label" data-ecl-label>
                         About the EU
                       </span>
-                      <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
-                      <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                      <ecl-icon class="sc-ecl-mega-menu-ec" icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                      <ecl-icon class="sc-ecl-mega-menu-ec" flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
                     </span>
                   </button>
                 </ecl-button>
@@ -599,12 +600,12 @@ exports[`ecl-site-header renders 1`] = `
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
                   <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
-                    <span class="ecl-button__container">
+                    <span class="ecl-button__container sc-ecl-mega-menu-ec">
                       <span class="ecl-button__label" data-ecl-label>
                         About the EC
                       </span>
-                      <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
-                      <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                      <ecl-icon class="sc-ecl-mega-menu-ec" icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                      <ecl-icon class="sc-ecl-mega-menu-ec" flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
                     </span>
                   </button>
                 </ecl-button>
@@ -713,12 +714,12 @@ exports[`ecl-site-header renders 1`] = `
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
                   <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
-                    <span class="ecl-button__container">
+                    <span class="ecl-button__container sc-ecl-mega-menu-ec">
                       <span class="ecl-button__label" data-ecl-label>
                         Topics
                       </span>
-                      <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
-                      <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                      <ecl-icon class="sc-ecl-mega-menu-ec" icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                      <ecl-icon class="sc-ecl-mega-menu-ec" flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
                     </span>
                   </button>
                 </ecl-button>
@@ -881,12 +882,12 @@ exports[`ecl-site-header renders 1`] = `
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
                   <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
-                    <span class="ecl-button__container">
+                    <span class="ecl-button__container sc-ecl-mega-menu-ec">
                       <span class="ecl-button__label" data-ecl-label>
                         Key priorities
                       </span>
-                      <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
-                      <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                      <ecl-icon class="sc-ecl-mega-menu-ec" icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                      <ecl-icon class="sc-ecl-mega-menu-ec" flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
                     </span>
                   </button>
                 </ecl-button>
@@ -911,12 +912,12 @@ exports[`ecl-site-header renders 1`] = `
                           <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-sublink style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec">
                             <!---->
                             <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__sublink sc-ecl-mega-menu-ec" data-ecl-mega-menu-sublink="eclMegaMenuSublink" type="button">
-                              <span class="ecl-button__container">
+                              <span class="ecl-button__container sc-ecl-mega-menu-ec">
                                 <span class="ecl-button__label" data-ecl-label>
                                   Aid, Development cooperation, Fundamental rights
                                 </span>
-                                <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
-                                <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                                <ecl-icon class="sc-ecl-mega-menu-ec" icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                                <ecl-icon class="sc-ecl-mega-menu-ec" flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
                               </span>
                             </button>
                           </ecl-button>
@@ -955,12 +956,12 @@ exports[`ecl-site-header renders 1`] = `
                           <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-sublink style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec">
                             <!---->
                             <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__sublink ecl-mega-menu__sublink--last sc-ecl-mega-menu-ec" data-ecl-mega-menu-sublink="eclMegaMenuSublink" type="button">
-                              <span class="ecl-button__container">
+                              <span class="ecl-button__container sc-ecl-mega-menu-ec">
                                 <span class="ecl-button__label" data-ecl-label>
                                   Research and innovation
                                 </span>
-                                <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
-                                <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                                <ecl-icon class="sc-ecl-mega-menu-ec" icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                                <ecl-icon class="sc-ecl-mega-menu-ec" flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
                               </span>
                             </button>
                           </ecl-button>
@@ -1068,12 +1069,12 @@ exports[`ecl-site-header renders 1`] = `
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
                   <button aria-expanded="false" aria-haspopup="" class="ecl-button ecl-mega-menu__link sc-ecl-mega-menu-ec" data-ecl-mega-menu-link="eclMegaMenuLink" type="button">
-                    <span class="ecl-button__container">
+                    <span class="ecl-button__container sc-ecl-mega-menu-ec">
                       <span class="ecl-button__label" data-ecl-label>
                         Engage
                       </span>
-                      <ecl-icon icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
-                      <ecl-icon flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
+                      <ecl-icon class="sc-ecl-mega-menu-ec" icon="corner-arrow" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                      <ecl-icon class="sc-ecl-mega-menu-ec" flip="horizontal" icon="arrow-left" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
                     </span>
                   </button>
                 </ecl-button>

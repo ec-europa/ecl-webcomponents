@@ -1843,43 +1843,97 @@ export namespace Components {
         "width": string;
     }
     interface EclSiteHeader {
+        /**
+          * @default ''
+         */
         "bannerTop": string;
+        /**
+          * @default ''
+         */
         "bannerTopLink": string;
+        /**
+          * @default ''
+         */
         "closeLabel": string;
+        /**
+          * @default ''
+         */
         "euLabel": string;
+        /**
+          * @default ''
+         */
         "langCode": string;
+        /**
+          * @default ''
+         */
         "language": string;
+        /**
+          * @default ''
+         */
         "languageAriaLabel": string;
         /**
           * @default false
          */
         "languageBlock": boolean;
+        /**
+          * @default ''
+         */
         "languageId": string;
+        /**
+          * @default ''
+         */
         "languageTitle": string;
         /**
           * @default false
          */
         "logged": boolean;
+        /**
+          * @default ''
+         */
         "loggedInText": string;
         /**
           * @default false
          */
         "loginBlock": boolean;
+        /**
+          * @default ''
+         */
         "loginLink": string;
+        /**
+          * @default ''
+         */
         "loginText": string;
+        /**
+          * @default ''
+         */
         "logo": string;
+        /**
+          * @default ''
+         */
         "logoAlt": string;
         /**
           * @default 'l'
          */
         "logoSize": string;
+        /**
+          * @default ''
+         */
         "logoTitle": string;
+        /**
+          * @default ''
+         */
         "logoutLink": string;
+        /**
+          * @default ''
+         */
         "logoutText": string;
         /**
           * @default false
          */
         "noScript": boolean;
+        /**
+          * @default ''
+         */
         "nonEuLabel": string;
         /**
           * @default true
@@ -1889,14 +1943,29 @@ export namespace Components {
           * @default `ecl-site-header-search-form-${Math.random().toString(36).slice(2, 10)}`
          */
         "searchFormId": string;
+        /**
+          * @default ''
+         */
         "searchPlaceholder": string;
+        /**
+          * @default ''
+         */
         "searchText": string;
+        /**
+          * @default ''
+         */
         "siteName": string;
         /**
           * @default false
          */
         "siteNameMobileOnly": boolean;
+        /**
+          * @default ''
+         */
         "styleClass": string;
+        /**
+          * @default 'ec'
+         */
         "theme": string;
     }
     interface EclSocialMediaFollow {
@@ -4974,43 +5043,97 @@ declare namespace LocalJSX {
         "width"?: string;
     }
     interface EclSiteHeader {
+        /**
+          * @default ''
+         */
         "bannerTop"?: string;
+        /**
+          * @default ''
+         */
         "bannerTopLink"?: string;
+        /**
+          * @default ''
+         */
         "closeLabel"?: string;
+        /**
+          * @default ''
+         */
         "euLabel"?: string;
+        /**
+          * @default ''
+         */
         "langCode"?: string;
+        /**
+          * @default ''
+         */
         "language"?: string;
+        /**
+          * @default ''
+         */
         "languageAriaLabel"?: string;
         /**
           * @default false
          */
         "languageBlock"?: boolean;
+        /**
+          * @default ''
+         */
         "languageId"?: string;
+        /**
+          * @default ''
+         */
         "languageTitle"?: string;
         /**
           * @default false
          */
         "logged"?: boolean;
+        /**
+          * @default ''
+         */
         "loggedInText"?: string;
         /**
           * @default false
          */
         "loginBlock"?: boolean;
+        /**
+          * @default ''
+         */
         "loginLink"?: string;
+        /**
+          * @default ''
+         */
         "loginText"?: string;
+        /**
+          * @default ''
+         */
         "logo"?: string;
+        /**
+          * @default ''
+         */
         "logoAlt"?: string;
         /**
           * @default 'l'
          */
         "logoSize"?: string;
+        /**
+          * @default ''
+         */
         "logoTitle"?: string;
+        /**
+          * @default ''
+         */
         "logoutLink"?: string;
+        /**
+          * @default ''
+         */
         "logoutText"?: string;
         /**
           * @default false
          */
         "noScript"?: boolean;
+        /**
+          * @default ''
+         */
         "nonEuLabel"?: string;
         /**
           * @default true
@@ -5020,14 +5143,29 @@ declare namespace LocalJSX {
           * @default `ecl-site-header-search-form-${Math.random().toString(36).slice(2, 10)}`
          */
         "searchFormId"?: string;
+        /**
+          * @default ''
+         */
         "searchPlaceholder"?: string;
+        /**
+          * @default ''
+         */
         "searchText"?: string;
+        /**
+          * @default ''
+         */
         "siteName"?: string;
         /**
           * @default false
          */
         "siteNameMobileOnly"?: boolean;
+        /**
+          * @default ''
+         */
         "styleClass"?: string;
+        /**
+          * @default 'ec'
+         */
         "theme"?: string;
     }
     interface EclSocialMediaFollow {

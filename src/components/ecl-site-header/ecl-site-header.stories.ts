@@ -823,6 +823,7 @@ const Template = (args) =>
     language-title="Choose your language"
     login-link="/example.html"
     language-id="language-switcher"
+    site-name="${args.siteName}"
     logo-alt="European Commission"
     logo-size="${args.logo_size}"
     logo-title="European commission"
@@ -889,6 +890,15 @@ const TemplateHarmonised = (args) =>
 
 export const SiteHeader = Template.bind({});
 SiteHeader.storyName = 'core';
+SiteHeader.args = {
+  siteName: 'News, policies, information and services',
+};
+SiteHeader.argTypes = {
+  siteName: {
+    name: 'site-name',
+    type: { name: 'string' },
+  },
+};
 
 export const SiteHeaderStandardised = TemplateStandardised.bind({});
 SiteHeaderStandardised.storyName = 'standardised';

@@ -20,7 +20,7 @@
   "devDependencies": {
     "@ecl/builder": "5.0.0-RC5",
     "@ecl/grid": "5.0.0-RC5",
-    "@ecl/mega-menu": "5.0.0-RC5",
+    "@ecl/mega-menu": "5.0.0-RC6",
     "@ecl/mixins-typography": "5.0.0-RC5",
     "@ecl/theme-ec": "5.0.0-RC5",
     "@ecl/theme-eu": "5.0.0-RC5",

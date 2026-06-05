@@ -1478,8 +1478,8 @@ importers:
         specifier: 5.0.0-RC5
         version: 5.0.0-RC5
       '@ecl/mega-menu':
-        specifier: 5.0.0-RC5
-        version: 5.0.0-RC5(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)
+        specifier: 5.0.0-RC6
+        version: 5.0.0-RC6(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)
       '@ecl/mixins-typography':
         specifier: 5.0.0-RC5
         version: 5.0.0-RC5
@@ -2177,6 +2177,13 @@ importers:
         version: 10.1.0
 
   src/components/ecl-text-media:
+    dependencies:
+      '@ecl/web-components-link':
+        specifier: 0.26.0
+        version: link:../ecl-link
+      '@ecl/web-components-media-container':
+        specifier: 0.26.0
+        version: link:../ecl-media-container
     devDependencies:
       '@ecl/builder':
         specifier: 5.0.0-RC5
@@ -3595,6 +3602,9 @@ packages:
   '@ecl/button@5.0.0-RC5':
     resolution: {integrity: sha512-MVFWWNcCATsttlevFIfRLTVISOW47Angy06aHxOoDomA0qHh6A+mye4nA7JI7iNyOh3qFMDTNYc9AkXUrn2bNA==}
 
+  '@ecl/button@5.0.0-RC6':
+    resolution: {integrity: sha512-HloAoDC5KGjH0snQ6DzO2BMZ0R8CxnSMtjOyszJ54I/qtbVgrzR+OIYEqFvHQ3slkAd4d417MMf38SuH5uJkGQ==}
+
   '@ecl/card@5.0.0-RC5':
     resolution: {integrity: sha512-h9XE+arBFSmqnxKon6NPNYi1LftkBTJEhR+Bp7nooksLvfk+yWdedMdIX0HvItdU9qXNqjCS55x5QUppcjFY0w==}
 
@@ -3628,8 +3638,14 @@ packages:
   '@ecl/dom-utils@5.0.0-RC5':
     resolution: {integrity: sha512-MQc751V0bQZ9SozbESfjAe5BTtvJLR8Sei2Xh6JKusKvmGWb+EbLwsNqFx1ajFtRiih9LEfWiCb7LlCpResAhA==}
 
+  '@ecl/dom-utils@5.0.0-RC6':
+    resolution: {integrity: sha512-BMZvYhkINyFTs1TjRWGwKmsix3L2FoGAQeknlZlV7CUYZIWwKpAjNqDnGZTuUGSQXTnAB4Q0yd763ugT9eUTyA==}
+
   '@ecl/event-manager@5.0.0-RC5':
     resolution: {integrity: sha512-kFZf9MRVOhrBA6pQfOKb3IBkkJVVvnuLY70KuO8zPvNXkOKiGFxBsa6t8gbq5gAfZUEIslZEGl1x5qtfvXxJSQ==}
+
+  '@ecl/event-manager@5.0.0-RC6':
+    resolution: {integrity: sha512-pVR3DasSXtO2E4janqhPwykJHew2r/32QdcMH7acOmmS71E8ah4Sb52B/VSvt15NxvikwT9cTBryDLrCFcNP+w==}
 
   '@ecl/expandable@5.0.0-RC5':
     resolution: {integrity: sha512-7e46v/K1sl3bVgJ/ZC6e4fiK/ior8AuwC7Ius4WKSrscBs2pwshnyzxDuC7J0rQXkWqwECJWcjP9g0kayqwSXw==}
@@ -3658,8 +3674,14 @@ packages:
   '@ecl/icon@5.0.0-RC5':
     resolution: {integrity: sha512-iuiJDBHNHVvrexr+fSBbtJge+YfutasLQJrMElZBDFXeAgP+oYIQY/EUerS7+beRdykWAMMWiNoZLMKbTGAN0A==}
 
+  '@ecl/icon@5.0.0-RC6':
+    resolution: {integrity: sha512-jDG0Ufydh093MzcuBjd/lPW3+qP7UtUBdee5shpdPNHI+2gmYOyPO/Ha5IEKVClConTojeOGi0f8n6R6F1n9KQ==}
+
   '@ecl/indicator@5.0.0-RC5':
     resolution: {integrity: sha512-0oU+ofy3y2kKpzHrC/w6J7kcHPFbFuileOHugaYTW+Ucxho+h5fabnSxuXqicy8b7lC0l/UrSYYZ8o0EWhgYjw==}
+
+  '@ecl/indicator@5.0.0-RC6':
+    resolution: {integrity: sha512-3D/zHybR27gxyorTn7g84z+fHmSzesRhghW2ymt7lleoQxSxvrYQy7PQK4mI8ekd0L+WEyVdnrWV7BhSJFYAyQ==}
 
   '@ecl/inpage-navigation@5.0.0-RC5':
     resolution: {integrity: sha512-2fcu2kPt0kN12jOMS3lDjrPYEHRzxNKW6Gd1HOlqbKNyajmuaP0vVOv39SLeVNDRMB0d3NuEqyYZUlIfz9DISQ==}
@@ -3673,6 +3695,9 @@ packages:
   '@ecl/link@5.0.0-RC5':
     resolution: {integrity: sha512-Zb6st668Wl6BwazLLbv0wHgI69HuPDDGwgaF0+7su7yIsvn7qejqePMLUdbuzPqfDVga4U6jeaKwP0J7oX/neQ==}
 
+  '@ecl/link@5.0.0-RC6':
+    resolution: {integrity: sha512-b5qBI7ouqJag3HObOCN3HodMM/fIDAGvTq1MkhtDsaK81Kl04IyOgEXSg1g6wUL+siWzVE88PkIW/XRaZGPNbg==}
+
   '@ecl/list-illustration@5.0.0-RC5':
     resolution: {integrity: sha512-Hu3ZFaGMugr0fL/WrXfjIw8HkOdKga79ev7bu9g5h0tBy/jQiHSNScCMFhVDpPelpyxOxzv7FiQi3uhgMScICw==}
 
@@ -3681,6 +3706,9 @@ packages:
 
   '@ecl/mega-menu@5.0.0-RC5':
     resolution: {integrity: sha512-evLPNBci//8EDI1bib9Au/GBV8q2cvJ8t3Z2vQB3Psmn+sWh3zogPmPOttKdrE4Zx05cBtrxQxGdDlGi2GHLwQ==}
+
+  '@ecl/mega-menu@5.0.0-RC6':
+    resolution: {integrity: sha512-rebB+CF82//aLYlR3xl5mTqMqH2G3R1Vq9+plLKmvR60oGxBVDKF9I7a++YVyBheiCGjT2J2AOCQOXkjHpXjkA==}
 
   '@ecl/menu@5.0.0-RC5':
     resolution: {integrity: sha512-kTkm2HHGzm2zkAcE/liVhV18CEhmSHCiN2vbWi+uWS4O3rVlG5KymjBD2f4lwRzP/gL/bbTAlkrHKfPofTkjuQ==}
@@ -3720,6 +3748,9 @@ packages:
 
   '@ecl/picture@5.0.0-RC5':
     resolution: {integrity: sha512-aaS3TjTwXAiR7jk5LwGdfX/UStx+Yec66B9kX1mUhQqm1YU06i6MpAiakfQ6K4TBWdfsP46DiXtq08y1eEi8Iw==}
+
+  '@ecl/picture@5.0.0-RC6':
+    resolution: {integrity: sha512-u2d3uZIWT4fo7hTOYcFVTi8SVquVm1VuTxdBBJ8gJOehQzWTEfK0bAuCvEl7pb+K06aw868+WpuABivjqk8RIw==}
 
   '@ecl/popover@5.0.0-RC5':
     resolution: {integrity: sha512-JQ3t2iRfnIkx4vYKnx8oz2ZWqAcOVIe+7haKKRM85aHur/GPoFGSH4NfV0+nXz0HBpRzm5OTwZbFw0UPyxS0Iw==}
@@ -9222,6 +9253,9 @@ packages:
 
   focus-trap@8.2.0:
     resolution: {integrity: sha512-CaBdQ9P4fa/yCA6pDf/3aJd8bf9IOG5QGK21/E+86o2V4V8kzXaR4A9E6tNR7KkkS1+T5ZIU1tJDBDLwsucz9g==}
+
+  focus-trap@8.2.1:
+    resolution: {integrity: sha512-6CxwrrFRquH7pDXb1mWxudkU9LSfYBMRZutpgddb2o6iwCk7cIRrBhyY3c8SGKcmIKdeMTrGSNg4Bedh2RSF/w==}
 
   follow-redirects@1.16.0:
     resolution: {integrity: sha512-y5rN/uOsadFT/JfYwhxRS5R7Qce+g3zG97+JrtFZlC9klX/W5hD7iiLzScI4nZqUS7DNUdhPgw4xI8W2LuXlUw==}
@@ -16787,6 +16821,11 @@ snapshots:
       '@ecl/icon': 5.0.0-RC5
       '@ecl/indicator': 5.0.0-RC5
 
+  '@ecl/button@5.0.0-RC6':
+    dependencies:
+      '@ecl/icon': 5.0.0-RC6
+      '@ecl/indicator': 5.0.0-RC6
+
   '@ecl/card@5.0.0-RC5':
     dependencies:
       '@ecl/content-block': 5.0.0-RC5
@@ -16835,7 +16874,11 @@ snapshots:
 
   '@ecl/dom-utils@5.0.0-RC5': {}
 
+  '@ecl/dom-utils@5.0.0-RC6': {}
+
   '@ecl/event-manager@5.0.0-RC5': {}
+
+  '@ecl/event-manager@5.0.0-RC6': {}
 
   '@ecl/expandable@5.0.0-RC5':
     dependencies:
@@ -16902,7 +16945,11 @@ snapshots:
 
   '@ecl/icon@5.0.0-RC5': {}
 
+  '@ecl/icon@5.0.0-RC6': {}
+
   '@ecl/indicator@5.0.0-RC5': {}
+
+  '@ecl/indicator@5.0.0-RC6': {}
 
   '@ecl/inpage-navigation@5.0.0-RC5':
     dependencies:
@@ -16923,6 +16970,11 @@ snapshots:
     dependencies:
       '@ecl/icon': 5.0.0-RC5
       '@ecl/indicator': 5.0.0-RC5
+
+  '@ecl/link@5.0.0-RC6':
+    dependencies:
+      '@ecl/icon': 5.0.0-RC6
+      '@ecl/indicator': 5.0.0-RC6
 
   '@ecl/list-illustration@5.0.0-RC5':
     dependencies:
@@ -16946,6 +16998,15 @@ snapshots:
       '@ecl/link': 5.0.0-RC5
       '@ecl/picture': 5.0.0-RC5
       focus-trap: 8.2.0
+
+  '@ecl/mega-menu@5.0.0-RC6(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)':
+    dependencies:
+      '@ecl/button': 5.0.0-RC6
+      '@ecl/dom-utils': 5.0.0-RC6
+      '@ecl/event-manager': 5.0.0-RC6
+      '@ecl/link': 5.0.0-RC6
+      '@ecl/picture': 5.0.0-RC6
+      focus-trap: 8.2.1
 
   '@ecl/menu@5.0.0-RC5':
     dependencies:
@@ -17011,6 +17072,8 @@ snapshots:
       '@ecl/link': 5.0.0-RC5
 
   '@ecl/picture@5.0.0-RC5': {}
+
+  '@ecl/picture@5.0.0-RC6': {}
 
   '@ecl/popover@5.0.0-RC5':
     dependencies:
@@ -23135,6 +23198,10 @@ snapshots:
   flatted@3.4.2: {}
 
   focus-trap@8.2.0:
+    dependencies:
+      tabbable: 6.4.0
+
+  focus-trap@8.2.1:
     dependencies:
       tabbable: 6.4.0
 
