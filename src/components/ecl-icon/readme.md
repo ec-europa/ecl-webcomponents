@@ -57,6 +57,7 @@
  - [ecl-notification](../ecl-notification)
  - [ecl-page-header](../ecl-page-header)
  - [ecl-page-header-meta-item](../ecl-page-header)
+ - [ecl-page-summary](../ecl-page-summary)
  - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover](../ecl-popover)
  - [ecl-quiz](../ecl-quiz)
@@ -107,6 +108,7 @@ graph TD;
   ecl-notification --> ecl-icon
   ecl-page-header --> ecl-icon
   ecl-page-header-meta-item --> ecl-icon
+  ecl-page-summary --> ecl-icon
   ecl-pagination-item --> ecl-icon
   ecl-popover --> ecl-icon
   ecl-quiz --> ecl-icon

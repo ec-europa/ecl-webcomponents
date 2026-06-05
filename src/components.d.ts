@@ -1548,6 +1548,40 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
     }
+    interface EclPageSummary {
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
+          * @default ''
+         */
+        "elId": string;
+        /**
+          * @default true
+         */
+        "hasDescription": boolean;
+        /**
+          * @default ''
+         */
+        "icon": string;
+        /**
+          * @default 'phosphor'
+         */
+        "iconFamily": string;
+        /**
+          * @default ''
+         */
+        "itemTitle": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        /**
+          * @default 'ec'
+         */
+        "theme": string;
+    }
     interface EclPagination {
         /**
           * @default ''
@@ -2841,6 +2875,12 @@ declare global {
         prototype: HTMLEclPageInformationElement;
         new (): HTMLEclPageInformationElement;
     };
+    interface HTMLEclPageSummaryElement extends Components.EclPageSummary, HTMLStencilElement {
+    }
+    var HTMLEclPageSummaryElement: {
+        prototype: HTMLEclPageSummaryElement;
+        new (): HTMLEclPageSummaryElement;
+    };
     interface HTMLEclPaginationElement extends Components.EclPagination, HTMLStencilElement {
     }
     var HTMLEclPaginationElement: {
@@ -3155,6 +3195,7 @@ declare global {
         "ecl-page-header": HTMLEclPageHeaderElement;
         "ecl-page-header-meta-item": HTMLEclPageHeaderMetaItemElement;
         "ecl-page-information": HTMLEclPageInformationElement;
+        "ecl-page-summary": HTMLEclPageSummaryElement;
         "ecl-pagination": HTMLEclPaginationElement;
         "ecl-pagination-item": HTMLEclPaginationItemElement;
         "ecl-picture": HTMLEclPictureElement;
@@ -4737,6 +4778,40 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
+        "theme"?: string;
+    }
+    interface EclPageSummary {
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
+          * @default ''
+         */
+        "elId"?: string;
+        /**
+          * @default true
+         */
+        "hasDescription"?: boolean;
+        /**
+          * @default ''
+         */
+        "icon"?: string;
+        /**
+          * @default 'phosphor'
+         */
+        "iconFamily"?: string;
+        /**
+          * @default ''
+         */
+        "itemTitle"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        /**
+          * @default 'ec'
+         */
         "theme"?: string;
     }
     interface EclPagination {
@@ -6361,6 +6436,16 @@ declare namespace LocalJSX {
         "styleClass": string;
         "theme": string;
     }
+    interface EclPageSummaryAttributes {
+        "theme": string;
+        "elId": string;
+        "itemTitle": string;
+        "styleClass": string;
+        "icon": string;
+        "iconFamily": string;
+        "colorMode": string;
+        "hasDescription": boolean;
+    }
     interface EclPaginationAttributes {
         "styleClass": string;
         "theme": string;
@@ -6821,6 +6906,7 @@ declare namespace LocalJSX {
         "ecl-page-header": Omit<EclPageHeader, keyof EclPageHeaderAttributes> & { [K in keyof EclPageHeader & keyof EclPageHeaderAttributes]?: EclPageHeader[K] } & { [K in keyof EclPageHeader & keyof EclPageHeaderAttributes as `attr:${K}`]?: EclPageHeaderAttributes[K] } & { [K in keyof EclPageHeader & keyof EclPageHeaderAttributes as `prop:${K}`]?: EclPageHeader[K] };
         "ecl-page-header-meta-item": Omit<EclPageHeaderMetaItem, keyof EclPageHeaderMetaItemAttributes> & { [K in keyof EclPageHeaderMetaItem & keyof EclPageHeaderMetaItemAttributes]?: EclPageHeaderMetaItem[K] } & { [K in keyof EclPageHeaderMetaItem & keyof EclPageHeaderMetaItemAttributes as `attr:${K}`]?: EclPageHeaderMetaItemAttributes[K] } & { [K in keyof EclPageHeaderMetaItem & keyof EclPageHeaderMetaItemAttributes as `prop:${K}`]?: EclPageHeaderMetaItem[K] };
         "ecl-page-information": Omit<EclPageInformation, keyof EclPageInformationAttributes> & { [K in keyof EclPageInformation & keyof EclPageInformationAttributes]?: EclPageInformation[K] } & { [K in keyof EclPageInformation & keyof EclPageInformationAttributes as `attr:${K}`]?: EclPageInformationAttributes[K] } & { [K in keyof EclPageInformation & keyof EclPageInformationAttributes as `prop:${K}`]?: EclPageInformation[K] };
+        "ecl-page-summary": Omit<EclPageSummary, keyof EclPageSummaryAttributes> & { [K in keyof EclPageSummary & keyof EclPageSummaryAttributes]?: EclPageSummary[K] } & { [K in keyof EclPageSummary & keyof EclPageSummaryAttributes as `attr:${K}`]?: EclPageSummaryAttributes[K] } & { [K in keyof EclPageSummary & keyof EclPageSummaryAttributes as `prop:${K}`]?: EclPageSummary[K] };
         "ecl-pagination": Omit<EclPagination, keyof EclPaginationAttributes> & { [K in keyof EclPagination & keyof EclPaginationAttributes]?: EclPagination[K] } & { [K in keyof EclPagination & keyof EclPaginationAttributes as `attr:${K}`]?: EclPaginationAttributes[K] } & { [K in keyof EclPagination & keyof EclPaginationAttributes as `prop:${K}`]?: EclPagination[K] };
         "ecl-pagination-item": Omit<EclPaginationItem, keyof EclPaginationItemAttributes> & { [K in keyof EclPaginationItem & keyof EclPaginationItemAttributes]?: EclPaginationItem[K] } & { [K in keyof EclPaginationItem & keyof EclPaginationItemAttributes as `attr:${K}`]?: EclPaginationItemAttributes[K] } & { [K in keyof EclPaginationItem & keyof EclPaginationItemAttributes as `prop:${K}`]?: EclPaginationItem[K] };
         "ecl-picture": Omit<EclPicture, keyof EclPictureAttributes> & { [K in keyof EclPicture & keyof EclPictureAttributes]?: EclPicture[K] } & { [K in keyof EclPicture & keyof EclPictureAttributes as `attr:${K}`]?: EclPictureAttributes[K] } & { [K in keyof EclPicture & keyof EclPictureAttributes as `prop:${K}`]?: EclPicture[K] };
@@ -6922,6 +7008,7 @@ declare module "@stencil/core" {
             "ecl-page-header": LocalJSX.IntrinsicElements["ecl-page-header"] & JSXBase.HTMLAttributes<HTMLEclPageHeaderElement>;
             "ecl-page-header-meta-item": LocalJSX.IntrinsicElements["ecl-page-header-meta-item"] & JSXBase.HTMLAttributes<HTMLEclPageHeaderMetaItemElement>;
             "ecl-page-information": LocalJSX.IntrinsicElements["ecl-page-information"] & JSXBase.HTMLAttributes<HTMLEclPageInformationElement>;
+            "ecl-page-summary": LocalJSX.IntrinsicElements["ecl-page-summary"] & JSXBase.HTMLAttributes<HTMLEclPageSummaryElement>;
             "ecl-pagination": LocalJSX.IntrinsicElements["ecl-pagination"] & JSXBase.HTMLAttributes<HTMLEclPaginationElement>;
             "ecl-pagination-item": LocalJSX.IntrinsicElements["ecl-pagination-item"] & JSXBase.HTMLAttributes<HTMLEclPaginationItemElement>;
             "ecl-picture": LocalJSX.IntrinsicElements["ecl-picture"] & JSXBase.HTMLAttributes<HTMLEclPictureElement>;

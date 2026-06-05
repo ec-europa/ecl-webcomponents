@@ -907,6 +907,18 @@ export const EclPageInformation: StencilVueComponent<JSX.EclPageInformation> = /
 ]);
 
 
+export const EclPageSummary: StencilVueComponent<JSX.EclPageSummary> = /*@__PURE__*/ defineContainer<JSX.EclPageSummary>('ecl-page-summary', undefined, [
+  'theme',
+  'elId',
+  'itemTitle',
+  'styleClass',
+  'icon',
+  'iconFamily',
+  'colorMode',
+  'hasDescription'
+]);
+
+
 export const EclPagination: StencilVueComponent<JSX.EclPagination> = /*@__PURE__*/ defineContainer<JSX.EclPagination>('ecl-pagination', undefined, [
   'styleClass',
   'theme'

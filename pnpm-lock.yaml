@@ -24,9 +24,6 @@ patchedDependencies:
   '@ecl/carousel':
     hash: fc353c2aaf48b4de529ef25b08d11f551a109b7a45ebb6cfe1366967369c0373
     path: patches/@ecl__carousel.patch
-  '@ecl/mega-menu':
-    hash: 5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f
-    path: patches/@ecl__mega-menu.patch
   '@ecl/select':
     hash: 71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076
     path: patches/@ecl__select.patch
@@ -1479,7 +1476,7 @@ importers:
         version: 5.0.0-RC5
       '@ecl/mega-menu':
         specifier: 5.0.0-RC6
-        version: 5.0.0-RC6(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)
+        version: 5.0.0-RC6
       '@ecl/mixins-typography':
         specifier: 5.0.0-RC5
         version: 5.0.0-RC5
@@ -1660,6 +1657,30 @@ importers:
         specifier: 5.0.0-RC5
         version: 5.0.0-RC5
       '@ecl/page-information':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/theme-ec':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/theme-eu':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      cross-env:
+        specifier: 10.1.0
+        version: 10.1.0
+
+  src/components/ecl-page-summary:
+    devDependencies:
+      '@ecl/builder':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
+      '@ecl/grid':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/mixins-typography':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/page-summary':
         specifier: 5.0.0-RC5
         version: 5.0.0-RC5
       '@ecl/theme-ec':
@@ -16990,7 +17011,7 @@ snapshots:
       '@ecl/picture': 5.0.0-RC5
       '@ecl/video': 5.0.0-RC5
 
-  '@ecl/mega-menu@5.0.0-RC5(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)':
+  '@ecl/mega-menu@5.0.0-RC5':
     dependencies:
       '@ecl/button': 5.0.0-RC5
       '@ecl/dom-utils': 5.0.0-RC5
@@ -16999,7 +17020,7 @@ snapshots:
       '@ecl/picture': 5.0.0-RC5
       focus-trap: 8.2.0
 
-  '@ecl/mega-menu@5.0.0-RC6(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)':
+  '@ecl/mega-menu@5.0.0-RC6':
     dependencies:
       '@ecl/button': 5.0.0-RC6
       '@ecl/dom-utils': 5.0.0-RC6
@@ -17118,7 +17139,7 @@ snapshots:
       '@ecl/link': 5.0.0-RC5
       '@ecl/list-illustration': 5.0.0-RC5
       '@ecl/media-container': 5.0.0-RC5
-      '@ecl/mega-menu': 5.0.0-RC5(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)
+      '@ecl/mega-menu': 5.0.0-RC5
       '@ecl/menu': 5.0.0-RC5
       '@ecl/mixins-color': 5.0.0-RC5
       '@ecl/mixins-typography': 5.0.0-RC5
@@ -17217,7 +17238,7 @@ snapshots:
       '@ecl/link': 5.0.0-RC5
       '@ecl/list-illustration': 5.0.0-RC5
       '@ecl/media-container': 5.0.0-RC5
-      '@ecl/mega-menu': 5.0.0-RC5(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)
+      '@ecl/mega-menu': 5.0.0-RC5
       '@ecl/menu': 5.0.0-RC5
       '@ecl/mixins-color': 5.0.0-RC5
       '@ecl/mixins-typography': 5.0.0-RC5
@@ -17344,7 +17365,7 @@ snapshots:
       '@ecl/dom-utils': 5.0.0-RC5
       '@ecl/icon': 5.0.0-RC5
       '@ecl/link': 5.0.0-RC5
-      '@ecl/mega-menu': 5.0.0-RC5(patch_hash=5a1cc7a8602309f8626e3082f2f8b47fd075621b37461a0af11ad8f6bbd3785f)
+      '@ecl/mega-menu': 5.0.0-RC5
       '@ecl/menu': 5.0.0-RC5
       '@ecl/notification': 5.0.0-RC5
       '@ecl/picture': 5.0.0-RC5

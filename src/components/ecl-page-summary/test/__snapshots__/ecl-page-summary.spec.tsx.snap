@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-page-summary renders 1`] = `
+<ecl-page-summary icon="book-open" icon-family="phosphor" item-title="Page summary title">
+  <!---->
+  <section aria-labelledby="ecl-page-summary-fg0o05w-title" class="ecl-page-summary" id="ecl-page-summary-fg0o05w">
+    <div class="ecl-page-summary__header">
+      <ecl-icon style-class="ecl-page-summary__icon">
+        <span class="ecl-icon ecl-icon--xs ecl-page-summary__icon wt-icon--placeholder wt-icon-phosphor--book-open"></span>
+      </ecl-icon>
+      <h2 class="ecl-page-summary__title" id="ecl-page-summary-fg0o05w-title">
+        Page summary title
+      </h2>
+    </div>
+    <div class="ecl-page-summary__description">
+      Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  </section>
+</ecl-page-summary>
+`;
