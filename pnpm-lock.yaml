@@ -566,8 +566,8 @@ importers:
         version: link:../ecl-icon
     devDependencies:
       '@ecl/animated-numbers':
-        specifier: 5.0.0-RC5
-        version: 5.0.0-RC5
+        specifier: 5.0.0-RC6
+        version: 5.0.0-RC6
       '@ecl/builder':
         specifier: 5.0.0-RC5
         version: 5.0.0-RC5(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
@@ -581,6 +581,9 @@ importers:
         specifier: 5.0.0-RC5
         version: 5.0.0-RC5
       '@ecl/theme-eu':
+        specifier: 5.0.0-RC5
+        version: 5.0.0-RC5
+      '@ecl/utility-screen-reader':
         specifier: 5.0.0-RC5
         version: 5.0.0-RC5
       cross-env:
@@ -1786,8 +1789,8 @@ importers:
         specifier: 5.0.0-RC5
         version: 5.0.0-RC5
       '@ecl/quiz':
-        specifier: 5.0.0-RC5
-        version: 5.0.0-RC5
+        specifier: 5.0.0-RC6
+        version: 5.0.0-RC6
       '@ecl/theme-ec':
         specifier: 5.0.0-RC5
         version: 5.0.0-RC5
@@ -3610,6 +3613,9 @@ packages:
   '@ecl/animated-numbers@5.0.0-RC5':
     resolution: {integrity: sha512-2kMSl23GRTvj4idUYHJwQZi309yogCvRNTVlgfWSCEs2tKn7b7R/c04LfzoYZZKauSU0EZcUWirNuIBa9f8TuQ==}
 
+  '@ecl/animated-numbers@5.0.0-RC6':
+    resolution: {integrity: sha512-vvTdUWK9q13jDkF0bJmGEYe1DyWaHuts/lvSZRjSsVi65qEiNQ1jDgfu/LWHy/QlEKY2eEq0Ss9MnUbRci9AhA==}
+
   '@ecl/banner@5.0.0-RC5':
     resolution: {integrity: sha512-r55FVDpXBsoV5HVbPdXAu45qC8S9DPDsECQ1mkhpzOw6rdG5T1sqyUsghMiIz0bwODogC2E+EBQA/fVz7c4qsA==}
 
@@ -3788,6 +3794,9 @@ packages:
 
   '@ecl/quiz@5.0.0-RC5':
     resolution: {integrity: sha512-39qU1sWebNhng+1r5mnDP4807jmO6wuKmmcWOAcwFYnhkPsCLfWeha9H9v2lI/NvlDKoJiPSqv0eYqENalrL1w==}
+
+  '@ecl/quiz@5.0.0-RC6':
+    resolution: {integrity: sha512-Jl2aJ5vz2mfOEJEUQwSnnJR1PRhqcWyxBx8ZlISUw5EZA7Jts1mVXBrvxhadjOBWlw0mOGqV2JJKz3TUv3VVDg==}
 
   '@ecl/radio@5.0.0-RC5':
     resolution: {integrity: sha512-qpSMMFcGlYNjCMSFBiwvTdKXbp75ahQ5z2z9Doih1YZO0VEl+eNkzVftDMnztWR62w58IAPL0rpy0lrOD0+5NQ==}
@@ -8688,8 +8697,16 @@ packages:
     peerDependencies:
       embla-carousel: 9.0.0-rc01
 
+  embla-carousel-accessibility@9.0.0-rc02:
+    resolution: {integrity: sha512-i5Q2+MgCgbHyFTx5RaMkcldKaf7rYUXKm66IstPxSB8j2+gyncy5WyHOqKkZv6yPedygLF1XY4HOOPfFGx2YyQ==}
+    peerDependencies:
+      embla-carousel: 9.0.0-rc02
+
   embla-carousel@9.0.0-rc01:
     resolution: {integrity: sha512-4BTERU1gAXgg4Vl0m7hQ1GzePGLNNfM2j030ww8i9idiPXumyRUpaNUDfT2zx1Hv8um1Ew7QKBy/HdNPz8L30g==}
+
+  embla-carousel@9.0.0-rc02:
+    resolution: {integrity: sha512-GOQBX6v5cNk/ptfuHUoHhW9rvl5KeSGsBoppaUqtihu2kDmQAyzvnH/95r3TaSScFSJTj68V9AM6E5nq3jUVcQ==}
 
   emittery@0.10.2:
     resolution: {integrity: sha512-aITqOwnLanpHLNXZJENbOgjUBeHocD+xsSJmNrjovKBW5HbSpW3d1pEls7GFQPUWXiwG9+0P4GtHfEqC/4M0Iw==}
@@ -16787,6 +16804,11 @@ snapshots:
       '@ecl/icon': 5.0.0-RC5
       '@ecl/link': 5.0.0-RC5
 
+  '@ecl/animated-numbers@5.0.0-RC6':
+    dependencies:
+      '@ecl/icon': 5.0.0-RC6
+      '@ecl/link': 5.0.0-RC6
+
   '@ecl/banner@5.0.0-RC5(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)':
     dependencies:
       '@ecl/button': 5.0.0-RC5
@@ -17312,6 +17334,13 @@ snapshots:
       '@ecl/event-manager': 5.0.0-RC5
       embla-carousel: 9.0.0-rc01
       embla-carousel-accessibility: 9.0.0-rc01(embla-carousel@9.0.0-rc01)
+
+  '@ecl/quiz@5.0.0-RC6':
+    dependencies:
+      '@ecl/dom-utils': 5.0.0-RC6
+      '@ecl/event-manager': 5.0.0-RC6
+      embla-carousel: 9.0.0-rc02
+      embla-carousel-accessibility: 9.0.0-rc02(embla-carousel@9.0.0-rc02)
 
   '@ecl/radio@5.0.0-RC5': {}
 
@@ -22320,7 +22349,13 @@ snapshots:
     dependencies:
       embla-carousel: 9.0.0-rc01
 
+  embla-carousel-accessibility@9.0.0-rc02(embla-carousel@9.0.0-rc02):
+    dependencies:
+      embla-carousel: 9.0.0-rc02
+
   embla-carousel@9.0.0-rc01: {}
+
+  embla-carousel@9.0.0-rc02: {}
 
   emittery@0.10.2: {}
 

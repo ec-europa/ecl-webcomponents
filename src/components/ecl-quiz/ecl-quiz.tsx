@@ -21,6 +21,7 @@ export class EclQuiz {
   @Prop() quizTitle: string;
   @Prop() description: string;
   @Prop() withBackground: boolean = false;
+  @Prop() fullWidth: boolean = false;
   @Prop() variant: string = "reveal";
   @Prop() prevLabel: string;
   @Prop() nextLabel: string;
@@ -33,8 +34,12 @@ export class EclQuiz {
       this.styleClass
     ];
 
-    if (this.withBackground) {
+    if (this.withBackground || this.fullWidth) {
       styleClasses.push('ecl-quiz--background');
+    }
+
+    if (this.fullWidth) {
+      styleClasses.push('ecl-quiz--full-width');
     }
 
     return styleClasses.join(' ');
@@ -129,7 +134,7 @@ export class EclQuiz {
         class={this.getClass()}
         id={this.itemId}
       >
-        {this.withBackground ? (
+        {this.withBackground || this.fullWidth ? (
           <ecl-grid container>
             {content}
           </ecl-grid>

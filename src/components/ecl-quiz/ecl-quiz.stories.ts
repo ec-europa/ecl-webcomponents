@@ -3,7 +3,8 @@ const getArgs = () => {
     quizTitle: 'Ut enim ad minim veniam',
     description: `Nulla est ad excepteur sint officia fugiat aute commodo ullamco amet culpa eiusmod labore.
                   Esse nostrud aliqua pariatur pariatur officia non laboris cillum velit dolore in sit laboris fugiat.`,
-    withBackground: false
+    withBackground: false,
+    fullWidth: false,
 
   };
 };
@@ -24,6 +25,12 @@ const getArgTypes = () => {
       name: 'with-background',
       type: { name: 'boolean' },
       description: 'With a dark background',
+      if: { arg: 'fullWidth', truthy: false },
+    },
+    fullWidth: {
+      name: 'full-width',
+      type: { name: 'boolean' },
+      description: 'Full width of the viewport, with background',
     },
   };
 };
@@ -40,6 +47,7 @@ const Template = (args) =>
       item-id="quiz-example"
       variant="reveal"
       with-background="${args.withBackground}"
+      full-width="${args.fullWidth}"
       prev-label="Previous"
       next-label="Next"
     >

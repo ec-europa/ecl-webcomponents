@@ -49,8 +49,39 @@ const getArgTypes = () => {
   };
 };
 
+const withGridStyles = (Story) => {
+  if (typeof document !== 'undefined' && !document.getElementById('ecl-grid-story-styles')) {
+    const style = document.createElement('style');
+    style.id = 'ecl-grid-story-styles';
+    style.textContent = `
+      .demo-cell {
+        background-color: #e8e8e8;
+        border: 1px solid #999;
+        padding: 12px;
+        text-align: center;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .demo-cell.sidebar {
+        background-color: #f29200;
+      }
+      .container-demo {
+        background-color: #f5f5f5;
+        padding: 20px;
+        border: 2px dashed #999;
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  return Story();
+};
+
 export default {
   title: 'Components/Grid',
+  decorators: [withGridStyles],
   parameters: {
     docs: {
       description: {
@@ -62,23 +93,19 @@ export default {
   args: getArgs(),
 };
 
-const Template = (args) => `
-  <style>
-    .demo-cell {
-      background-color: #e8e8e8;
-      border: 1px solid #999;
-      padding: 12px;
-      text-align: center;
-      min-height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  </style>
-  <ecl-grid ${args.row ? 'row' : ''} ${args.container ? 'container' : ''} ${args.columns ? `columns="${args.columns}"` : ''} ${args.breakpoint ? `breakpoint="${args.breakpoint}"` : ''} ${args.styleClass ? `style-class="${args.styleClass}"` : ''}>
-    <div class="demo-cell">Column 1</div>
-  </ecl-grid>
-`;
+const Template = (args) => {
+  const attrs = [
+    args.row ? 'row' : '',
+    args.container ? 'container' : '',
+    args.columns ? `columns="${args.columns}"` : '',
+    args.breakpoint ? `breakpoint="${args.breakpoint}"` : '',
+    args.styleClass ? `style-class="${args.styleClass}"` : '',
+  ]
+    .filter(Boolean)
+    .join(' ');
+
+  return `<ecl-grid ${attrs}><div class="demo-cell">Column 1</div></ecl-grid>`;
+};
 
 export const TwelveColumns = Template.bind({});
 TwelveColumns.storyName = 'Single container';
@@ -88,18 +115,6 @@ TwelveColumns.args = {
 
 // Legacy API with breakpoint
 export const LegacyWithBreakpoint = () => `
-  <style>
-    .demo-cell {
-      background-color: #e8e8e8;
-      border: 1px solid #999;
-      padding: 12px;
-      text-align: center;
-      min-height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  </style>
   <ecl-grid row>
     <ecl-grid breakpoint="m" columns="6">
       <div class="demo-cell">6 cols on medium</div>
@@ -109,24 +124,11 @@ export const LegacyWithBreakpoint = () => `
     </ecl-grid>
   </ecl-grid>
 `;
-LegacyWithBreakpoint.storyName = 'Legacy API: Breakpoint + Columns';
-LegacyWithBreakpoint.parameters = {   controls: { disable: true } };
+LegacyWithBreakpoint.storyName = 'Responsive columns (single selector)';
+LegacyWithBreakpoint.parameters = { controls: { disable: true } };
 
 // Responsive columns using JSON format
 export const ResponsiveColumns = () => `
-  <style>
-    .demo-cell {
-      background-color: #3b9fd9;
-      color: white;
-      border: 1px solid #0066cc;
-      padding: 12px;
-      text-align: center;
-      min-height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  </style>
   <ecl-grid row>
     <ecl-grid columns='{"s": 12, "m": 6, "l": 4, "xl": 3}'>
       <div class="demo-cell">Full on mobile, half on tablet, third on desktop, quarter on wide</div>
@@ -142,85 +144,24 @@ export const ResponsiveColumns = () => `
     </ecl-grid>
   </ecl-grid>
 `;
-ResponsiveColumns.storyName = 'Responsive Columns (JSON Format)';
+ResponsiveColumns.storyName = 'Responsive Columns (multiple selectors)';
 ResponsiveColumns.parameters = {
   controls: { disable: true },
 };
 
-// Complex responsive layout
 export const ComplexResponsiveLayout = () => `
-  <style>
-    .demo-cell {
-      background-color: #3b9fd9;
-      color: white;
-      border: 1px solid #0066cc;
-      padding: 12px;
-      text-align: center;
-      min-height: 120px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-    }
-    .demo-cell.sidebar {
-      background-color: #f29200;
-    }
-  </style>
-  <ecl-grid row>
-    <ecl-grid columns='{"s": 12, "m": 12, "l": 8}'>
-      <div class="demo-cell">Main Content (8 cols on desktop)</div>
-    </ecl-grid>
-    <ecl-grid columns='{"s": 12, "m": 12, "l": 4}'>
-      <div class="demo-cell sidebar">Sidebar (4 cols on desktop)</div>
+  <ecl-grid container>
+    <ecl-grid row>
+      <ecl-grid columns='{"s": 12, "m": 12, "l": 4}'>
+        <div class="demo-cell sidebar">Sidebar (4 cols on desktop)</div>
+      </ecl-grid>
+      <ecl-grid columns='{"s": 12, "m": 12, "l": 8}'>
+        <div class="demo-cell">Main Content (8 cols on desktop)</div>
+      </ecl-grid>
     </ecl-grid>
   </ecl-grid>
 `;
-ComplexResponsiveLayout.storyName = 'Complex Layout: Main + Sidebar';
+ComplexResponsiveLayout.storyName = 'Example Layout: Main + Sidebar';
 ComplexResponsiveLayout.parameters = {
   controls: { disable: true },
 };
-
-// Container mode
-export const ContainerMode = () => `
-  <style>
-    .demo-cell {
-      background-color: #3b9fd9;
-      color: white;
-      border: 1px solid #0066cc;
-      padding: 12px;
-      text-align: center;
-      min-height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .container-demo {
-      background-color: #f5f5f5;
-      padding: 20px;
-      border: 2px dashed #999;
-    }
-  </style>
-  <div class="container-demo">
-    <ecl-grid container>
-      <ecl-grid row>
-        <ecl-grid columns='{"s": 12, "m": 6, "l": 3}'>
-          <div class="demo-cell">Col 1</div>
-        </ecl-grid>
-        <ecl-grid columns='{"s": 12, "m": 6, "l": 3}'>
-          <div class="demo-cell">Col 2</div>
-        </ecl-grid>
-        <ecl-grid columns='{"s": 12, "m": 6, "l": 3}'>
-          <div class="demo-cell">Col 3</div>
-        </ecl-grid>
-        <ecl-grid columns='{"s": 12, "m": 6, "l": 3}'>
-          <div class="demo-cell">Col 4</div>
-        </ecl-grid>
-      </ecl-grid>
-    </ecl-grid>
-  </div>
-`;
-ContainerMode.storyName = 'Container Mode';
-ContainerMode.parameters = {
-  controls: { disable: true },
-};
-

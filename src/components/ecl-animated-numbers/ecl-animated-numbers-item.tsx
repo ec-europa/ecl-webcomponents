@@ -36,7 +36,10 @@ export class EclAnimatedNumbersItem {
 
   render() {
     return (
-      <Host class={this.getClass()}>
+      <Host
+        class={this.getClass()}
+        role="listitem"
+      >
         <div class={`ecl-animated-number__header sc-ecl-animated-numbers-${this.theme}`}>
         { this.category &&
           <div class={`ecl-animated-number__category sc-ecl-animated-numbers-${this.theme}`}>

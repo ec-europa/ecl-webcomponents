@@ -18,8 +18,9 @@ export class EclAnimatedNumbers {
   @Prop() styleClass: string;
   @Prop() border: boolean = false;
   @Prop() withBackground: boolean = false;
+  @Prop() fullWidth: boolean = false;
   @Prop() noScript: boolean = false;
-  @Prop() counterColor: boolean = true;
+  @Prop({ mutable: true }) counterColor: boolean = true;
   @Prop() sources: string = '';
   @Prop() sourcesLabel: string = '';
 
@@ -33,12 +34,17 @@ export class EclAnimatedNumbers {
       styleClasses.push('ecl-animated-numbers--border');
     }
 
-    if (this.withBackground) {
+    if (this.withBackground || this.fullWidth) {
       styleClasses.push('ecl-animated-numbers--with-background');
+      this.counterColor = false;
     }
 
     if (this.counterColor) {
       styleClasses.push('ecl-animated-numbers--counter-color');
+    }
+
+    if (this.fullWidth) {
+      styleClasses.push('ecl-animated-numbers--full-width');
     }
 
     return styleClasses.join(' ');
@@ -74,7 +80,7 @@ export class EclAnimatedNumbers {
 
     return (
       <div class={this.getClass()}>
-      {this.withBackground ? (
+      {this.fullWidth ? (
         <ecl-grid container>
           {content}
         </ecl-grid>

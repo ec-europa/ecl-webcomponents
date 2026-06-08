@@ -6,7 +6,7 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
   <div class="ecl-animated-numbers">
     <article class="ecl-animated-numbers__wrapper">
       <div class="ecl-animated-numbers__items" role="list">
-        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." icon="users" item-prefix="" item-suffix="€" item-suffix-label="euro" value="213">
+        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." icon="users" item-prefix="" item-suffix="€" item-suffix-label="euro" role="listitem" value="213">
           <div class="ecl-animated-number__header sc-ecl-animated-numbers-ec">
             <div class="ecl-animated-number__category sc-ecl-animated-numbers-ec">
               Revenue
@@ -31,7 +31,7 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
           </div>
         </ecl-animated-numbers-item>
-        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." icon="currency-eur" item-prefix="billion" item-suffix="€" item-suffix-label="euro" value="888.2">
+        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." icon="currency-eur" item-prefix="billion" item-suffix="€" item-suffix-label="euro" role="listitem" value="888.2">
           <div class="ecl-animated-number__header sc-ecl-animated-numbers-ec">
             <div class="ecl-animated-number__category sc-ecl-animated-numbers-ec">
               Revenue
@@ -57,7 +57,7 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
             Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
         </ecl-animated-numbers-item>
-        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." icon="trend-up" item-prefix="million" item-suffix="<" item-suffix-label="less than" value="975">
+        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." icon="trend-up" item-prefix="million" item-suffix="<" item-suffix-label="less than" role="listitem" value="975">
           <div class="ecl-animated-number__header sc-ecl-animated-numbers-ec">
             <div class="ecl-animated-number__category sc-ecl-animated-numbers-ec">
               Revenue
@@ -83,7 +83,7 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
           </div>
         </ecl-animated-numbers-item>
-        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." icon="pulse" item-prefix="€" item-prefix-label="euro" item-suffix="billions" value="1250">
+        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." icon="pulse" item-prefix="€" item-prefix-label="euro" item-suffix="billions" role="listitem" value="1250">
           <div class="ecl-animated-number__header sc-ecl-animated-numbers-ec">
             <div class="ecl-animated-number__category sc-ecl-animated-numbers-ec">
               Revenue
@@ -109,7 +109,7 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
           </div>
         </ecl-animated-numbers-item>
-        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Curabitur ut mauris quam. Fusce non consequat ipsum" icon="atom" item-prefix="€" item-prefix-label="euro" item-suffix="millions" value="4350">
+        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Curabitur ut mauris quam. Fusce non consequat ipsum" icon="atom" item-prefix="€" item-prefix-label="euro" item-suffix="millions" role="listitem" value="4350">
           <div class="ecl-animated-number__header sc-ecl-animated-numbers-ec">
             <div class="ecl-animated-number__category sc-ecl-animated-numbers-ec">
               Revenue
@@ -135,7 +135,7 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
             Curabitur ut mauris quam. Fusce non consequat ipsum
           </div>
         </ecl-animated-numbers-item>
-        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Curabitur ut mauris quam. Fusce non consequat ipsum" icon="bell-simple" item-prefix="€" item-prefix-label="euro" item-suffix="billions" value="125">
+        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Curabitur ut mauris quam. Fusce non consequat ipsum" icon="bell-simple" item-prefix="€" item-prefix-label="euro" item-suffix="billions" role="listitem" value="125">
           <div class="ecl-animated-number__header sc-ecl-animated-numbers-ec">
             <div class="ecl-animated-number__category sc-ecl-animated-numbers-ec">
               Revenue
@@ -161,7 +161,7 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
             Curabitur ut mauris quam. Fusce non consequat ipsum
           </div>
         </ecl-animated-numbers-item>
-        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Integer pharetra lacinia tristique" icon="boat" item-prefix="€" item-prefix-label="euro" item-suffix="billions" value="8765">
+        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Integer pharetra lacinia tristique" icon="boat" item-prefix="€" item-prefix-label="euro" item-suffix="billions" role="listitem" value="8765">
           <div class="ecl-animated-number__header sc-ecl-animated-numbers-ec">
             <div class="ecl-animated-number__category sc-ecl-animated-numbers-ec">
               Revenue

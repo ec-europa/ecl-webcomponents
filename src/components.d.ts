@@ -56,6 +56,10 @@ export namespace Components {
         /**
           * @default false
          */
+        "fullWidth": boolean;
+        /**
+          * @default false
+         */
         "noScript": boolean;
         /**
           * @default ''
@@ -1650,6 +1654,10 @@ export namespace Components {
     }
     interface EclQuiz {
         "description": string;
+        /**
+          * @default false
+         */
+        "fullWidth": boolean;
         "itemId": string;
         "nextLabel": string;
         /**
@@ -3283,6 +3291,10 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
+        "fullWidth"?: boolean;
+        /**
+          * @default false
+         */
         "noScript"?: boolean;
         /**
           * @default ''
@@ -4883,6 +4895,10 @@ declare namespace LocalJSX {
     }
     interface EclQuiz {
         "description"?: string;
+        /**
+          * @default false
+         */
+        "fullWidth"?: boolean;
         "itemId"?: string;
         "nextLabel"?: string;
         /**
@@ -5708,6 +5724,7 @@ declare namespace LocalJSX {
         "styleClass": string;
         "border": boolean;
         "withBackground": boolean;
+        "fullWidth": boolean;
         "noScript": boolean;
         "counterColor": boolean;
         "sources": string;
@@ -6491,6 +6508,7 @@ declare namespace LocalJSX {
         "quizTitle": string;
         "description": string;
         "withBackground": boolean;
+        "fullWidth": boolean;
         "variant": string;
         "prevLabel": string;
         "nextLabel": string;
