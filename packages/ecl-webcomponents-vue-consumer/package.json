@@ -1,6 +1,6 @@
 {
   "name": "@ecl/ecl-webcomponents-vue-consumer",
-  "version": "0.26.0",
+  "version": "0.27.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -15,7 +15,7 @@
     "pre-publish": "npm run build"
   },
   "dependencies": {
-    "@ecl/ecl-webcomponents-vue": "0.23.1",
+    "@ecl/ecl-webcomponents-vue": "0.27.0",
     "pinia": "^3.0.4",
     "vue": "^3.5.35",
     "vue-router": "^5.1.0"

@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-page-information",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.26.0",
+  "version": "0.27.0",
   "description": "ECL Page Information",
   "main": "ecl-page-information.tsx",
   "private": true,

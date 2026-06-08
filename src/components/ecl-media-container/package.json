@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-media-container",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.26.0",
+  "version": "0.27.0",
   "description": "ECL Media container",
   "main": "ecl-media-container.tsx",
   "private": true,
@@ -23,11 +23,11 @@
     "cross-env": "10.1.0"
   },
   "dependencies": {
-    "@ecl/web-components-button": "0.26.0",
-    "@ecl/web-components-expandable": "0.26.0",
-    "@ecl/web-components-icon": "0.26.0",
-    "@ecl/web-components-picture": "0.26.0",
-    "@ecl/web-components-video": "0.26.0"
+    "@ecl/web-components-button": "0.27.0",
+    "@ecl/web-components-expandable": "0.27.0",
+    "@ecl/web-components-icon": "0.27.0",
+    "@ecl/web-components-picture": "0.27.0",
+    "@ecl/web-components-video": "0.27.0"
   },
   "repository": {
     "type": "git",

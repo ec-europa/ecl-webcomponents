@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-add-to-calendar",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.26.0",
+  "version": "0.27.0",
   "description": "ECL Add to calendar",
   "main": "ecl-add-to-calendar.tsx",
   "private": true,
@@ -16,9 +16,9 @@
     "@ecl/add-to-calendar": "5.0.0-RC5",
     "@ecl/builder": "5.0.0-RC5",
     "@ecl/grid": "5.0.0-RC5",
+    "@ecl/mixins-typography": "5.0.0-RC5",
     "@ecl/theme-ec": "5.0.0-RC5",
     "@ecl/theme-eu": "5.0.0-RC5",
-    "@ecl/mixins-typography": "5.0.0-RC5",
     "cross-env": "10.1.0"
   },
   "repository": {
