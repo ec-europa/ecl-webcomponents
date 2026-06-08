@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-banner",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.26.0",
+  "version": "0.27.0",
   "description": "ECL Page Banner",
   "main": "ecl-banner.tsx",
   "private": true,
@@ -22,8 +22,8 @@
     "cross-env": "10.1.0"
   },
   "dependencies": {
-    "@ecl/web-components-icon": "0.26.0",
-    "@ecl/web-components-link": "0.26.0"
+    "@ecl/web-components-icon": "0.27.0",
+    "@ecl/web-components-link": "0.27.0"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 {
   "name": "@ecl/ecl-webcomponents-vue",
-  "version": "0.26.0",
+  "version": "0.27.0",
   "description": "ECL webcomponents vue wrappers",
   "license": "EUPL-1.2",
   "type": "module",
@@ -25,7 +25,7 @@
     "pre-publish": "npm run build"
   },
   "dependencies": {
-    "@ecl/ecl-webcomponents": "0.26.0",
+    "@ecl/ecl-webcomponents": "0.27.0",
     "@stencil/vue-output-target": "0.13.2"
   },
   "devDependencies": {
