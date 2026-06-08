@@ -17,22 +17,22 @@
   "dependencies": {
     "@ecl/ecl-webcomponents-vue": "0.23.1",
     "pinia": "^3.0.4",
-    "vue": "^3.5.34",
-    "vue-router": "^5.0.7"
+    "vue": "^3.5.35",
+    "vue-router": "^5.1.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.60.0",
     "@vitejs/plugin-vue": "^6.0.7",
     "@vitejs/plugin-vue-jsx": "^5.1.5",
-    "@vue/test-utils": "^2.4.10",
+    "@vue/test-utils": "^2.4.11",
     "globals": "^17.6.0",
     "jsdom": "^28.1.0",
     "npm-run-all2": "^8.0.4",
-    "oxlint": "~1.65.0",
+    "oxlint": "~1.68.0",
     "prettier": "3.8.3",
-    "vite": "^8.0.13",
+    "vite": "^8.0.16",
     "vite-plugin-vue-devtools": "^8.1.2",
-    "vitest": "^4.1.6"
+    "vitest": "^4.1.8"
   },
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
