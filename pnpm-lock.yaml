@@ -437,7 +437,7 @@ importers:
   packages/ecl-webcomponents-vue-consumer:
     dependencies:
       '@ecl/ecl-webcomponents-vue':
-        specifier: 0.23.1
+        specifier: 0.27.0
         version: link:../ecl-webcomponents-vue
       pinia:
         specifier: ^3.0.4
