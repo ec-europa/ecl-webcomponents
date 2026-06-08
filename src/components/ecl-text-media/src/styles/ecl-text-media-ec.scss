@@ -1,0 +1,12 @@
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $typography: var.$typography
+);
+@use '@ecl/text-media/text-media' with (
+  $theme: theme.$theme,
+  $text-media: var.$text-media
+);

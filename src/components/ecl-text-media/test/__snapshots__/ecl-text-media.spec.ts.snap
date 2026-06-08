@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-text-media with image renders correctly 1`] = `null`;
+
+exports[`ecl-text-media with video renders correctly 1`] = `
+<ecl-text-media color-mode="blue-electric" el-id="text-media-demo-video" has-description="" has-media="" item-title="Non per curiositatem opinionum" link-label="a link in text and media" link-path="/example.com" media-position="right" micro-title="About" poster="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg" sources="[{&quot;src&quot;:&quot;https://vod.prd.commavservices.eu/01/275521/019813ec-13ce-7136-ac0d-d7e24fec64c0/1080p-qaa.mp4&quot;,&quot;type&quot;:&quot;video/mp4&quot;}]" video-title="European Commission">
+  <!---->
+  <article class="ecl-color-mode--blue-electric ecl-text-media">
+    <div class="ecl-text-media__content">
+      <div class="ecl-text-media__micro-title">
+        About
+      </div>
+      <div class="ecl-text-media__title" id="text-media-demo-video-title">
+        Non per curiositatem opinionum
+      </div>
+      <div class="ecl-text-media__description">
+        Lorem ipsum dolor sit amet consectetur adipiscing.
+      </div>
+      <ecl-link aria-describedby="text-media-demo-video-title" style-class="ecl-text-media__link sc-ecl-text-media-ec">
+        <!---->
+        <a aria-describedby="text-media-demo-video-title" class="ecl-link ecl-link--primary-neutral ecl-text-media__link sc-ecl-text-media-ec" href="/example.com">
+          a link in text and media
+        </a>
+      </ecl-link>
+    </div>
+    <ecl-media-container caption-position="over" has-caption="" style-class="ecl-text-media__media_container sc-ecl-text-media-ec" video-title="European Commission">
+      <!---->
+      <div class="ecl-media-container ecl-media-container--caption-hidden ecl-text-media__media_container sc-ecl-text-media-ec" data-ecl-auto-initialized="true" data-ecl-media-container data-ecl-media-container-video-title="European Commission">
+        <figure class="ecl-media-container__figure">
+          <div class="ecl-media-container__video-wrapper">
+            <ecl-video controls="" style-class="ecl-media-container__media sc-ecl-media-container-ec">
+              <source src="https://vod.prd.commavservices.eu/01/275521/019813ec-13ce-7136-ac0d-d7e24fec64c0/1080p-qaa.mp4" type="video/mp4">
+            </ecl-video>
+          </div>
+          <figcaption class="ecl-media-container__caption"></figcaption>
+        </figure>
+      </div>
+    </ecl-media-container>
+  </article>
+</ecl-text-media>
+`;

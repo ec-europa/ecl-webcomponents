@@ -21,6 +21,7 @@
 | `external`        | `external`          |             | `boolean` | `false`     |
 | `fontColor`       | `font-color`        |             | `string`  | `'dark'`    |
 | `fontSize`        | `font-size`         |             | `string`  | `'m'`       |
+| `fontWeight`      | `font-weight`       |             | `string`  | `'light'`   |
 | `fullWidth`       | `full-width`        |             | `boolean` | `false`     |
 | `horizontal`      | `horizontal`        |             | `string`  | `'left'`    |
 | `image`           | `image`             |             | `string`  | `undefined` |

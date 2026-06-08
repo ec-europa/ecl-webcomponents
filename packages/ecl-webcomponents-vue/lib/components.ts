@@ -24,6 +24,45 @@ export const EclAccordionItem: StencilVueComponent<JSX.EclAccordionItem> = /*@__
 ]);
 
 
+export const EclAddToCalendar: StencilVueComponent<JSX.EclAddToCalendar> = /*@__PURE__*/ defineContainer<JSX.EclAddToCalendar>('ecl-add-to-calendar', undefined, [
+  'styleClass',
+  'theme',
+  'colorMode',
+  'eventTitle',
+  'meta',
+  'fullWidth',
+  'withButton'
+]);
+
+
+export const EclAnimatedNumbers: StencilVueComponent<JSX.EclAnimatedNumbers> = /*@__PURE__*/ defineContainer<JSX.EclAnimatedNumbers>('ecl-animated-numbers', undefined, [
+  'theme',
+  'styleClass',
+  'border',
+  'withBackground',
+  'fullWidth',
+  'noScript',
+  'counterColor',
+  'sources',
+  'sourcesLabel'
+]);
+
+
+export const EclAnimatedNumbersItem: StencilVueComponent<JSX.EclAnimatedNumbersItem> = /*@__PURE__*/ defineContainer<JSX.EclAnimatedNumbersItem>('ecl-animated-numbers-item', undefined, [
+  'theme',
+  'styleClass',
+  'category',
+  'itemPrefix',
+  'counterColor',
+  'itemSuffix',
+  'icon',
+  'description',
+  'itemPrefixLabel',
+  'itemSuffixLabel',
+  'value'
+]);
+
+
 export const EclBanner: StencilVueComponent<JSX.EclBanner> = /*@__PURE__*/ defineContainer<JSX.EclBanner>('ecl-banner', undefined, [
   'colorMode',
   'theme',
@@ -47,6 +86,7 @@ export const EclBanner: StencilVueComponent<JSX.EclBanner> = /*@__PURE__*/ defin
   'srPause',
   'fontColor',
   'fontSize',
+  'fontWeight',
   'credit',
   'size',
   'ctaClicked'
@@ -300,6 +340,7 @@ export const EclFeaturedItem: StencilVueComponent<JSX.EclFeaturedItem> = /*@__PU
   'linkType',
   'linkPath',
   'linkLabel',
+  'microTitle',
   'mediaCaption',
   'mediaBehavior',
   'mediaAnchor',
@@ -655,9 +696,11 @@ export const EclMediaContainer: StencilVueComponent<JSX.EclMediaContainer> = /*@
   'imageAlt',
   'image',
   'imageAnchor',
+  'captionPosition',
   'fullWidth',
   'sources',
   'tracks',
+  'poster',
   'autoplay',
   'hasCaption',
   'credit',
@@ -667,7 +710,8 @@ export const EclMediaContainer: StencilVueComponent<JSX.EclMediaContainer> = /*@
   'srVideoPlayer',
   'srVideoAudio',
   'noScript',
-  'embeddedMedia'
+  'embeddedMedia',
+  'videoTitle'
 ]);
 
 
@@ -864,6 +908,18 @@ export const EclPageInformation: StencilVueComponent<JSX.EclPageInformation> = /
 ]);
 
 
+export const EclPageSummary: StencilVueComponent<JSX.EclPageSummary> = /*@__PURE__*/ defineContainer<JSX.EclPageSummary>('ecl-page-summary', undefined, [
+  'theme',
+  'elId',
+  'itemTitle',
+  'styleClass',
+  'icon',
+  'iconFamily',
+  'colorMode',
+  'hasDescription'
+]);
+
+
 export const EclPagination: StencilVueComponent<JSX.EclPagination> = /*@__PURE__*/ defineContainer<JSX.EclPagination>('ecl-pagination', undefined, [
   'styleClass',
   'theme'
@@ -904,6 +960,41 @@ export const EclPopover: StencilVueComponent<JSX.EclPopover> = /*@__PURE__*/ def
   'icon',
   'indicator',
   'indicatorValue'
+]);
+
+
+export const EclQuiz: StencilVueComponent<JSX.EclQuiz> = /*@__PURE__*/ defineContainer<JSX.EclQuiz>('ecl-quiz', undefined, [
+  'theme',
+  'styleClass',
+  'noScript',
+  'itemId',
+  'quizTitle',
+  'description',
+  'withBackground',
+  'fullWidth',
+  'variant',
+  'prevLabel',
+  'nextLabel',
+  'skipText'
+]);
+
+
+export const EclQuizCard: StencilVueComponent<JSX.EclQuizCard> = /*@__PURE__*/ defineContainer<JSX.EclQuizCard>('ecl-quiz-card', undefined, [
+  'theme',
+  'styleClass',
+  'category',
+  'successCategory',
+  'errorCategory',
+  'flipText',
+  'backText',
+  'question',
+  'quizName',
+  'mainIcon',
+  'answer',
+  'answerTitle',
+  'itemId',
+  'options',
+  'variant'
 ]);
 
 
@@ -1012,6 +1103,8 @@ export const EclSelect: StencilVueComponent<JSX.EclSelect> = /*@__PURE__*/ defin
   'multipleAllText',
   'multipleClearAllText',
   'multipleCloseText',
+  'multipleCounterText',
+  'multipleSubmit',
   'inputValue',
   'hasChanged',
   'inputChange',
@@ -1220,6 +1313,31 @@ export const EclText: StencilVueComponent<JSX.EclText> = /*@__PURE__*/ defineCon
   'colorMode',
   'colorModeTypography',
   'itemId'
+]);
+
+
+export const EclTextMedia: StencilVueComponent<JSX.EclTextMedia> = /*@__PURE__*/ defineContainer<JSX.EclTextMedia>('ecl-text-media', undefined, [
+  'theme',
+  'colorMode',
+  'elId',
+  'styleClass',
+  'variant',
+  'fullWidth',
+  'hasMedia',
+  'itemTitle',
+  'microTitle',
+  'hasDescription',
+  'mediaPosition',
+  'linkLabel',
+  'linkPath',
+  'mediaCaption',
+  'mediaAnchor',
+  'mediaCredit',
+  'image',
+  'sources',
+  'tracks',
+  'videoTitle',
+  'linkType'
 ]);
 
 

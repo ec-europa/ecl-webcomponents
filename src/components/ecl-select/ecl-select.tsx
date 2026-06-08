@@ -32,6 +32,8 @@ export class EclSelect {
   @Prop() multipleAllText: string;
   @Prop() multipleClearAllText: string;
   @Prop() multipleCloseText: string;
+  @Prop() multipleCounterText: string;
+  @Prop() multipleSubmit: boolean = false;
   @Prop() inputValue: string;
   @State() selectValue: string[];
   @Prop() hasChanged: boolean = false;
@@ -120,6 +122,11 @@ export class EclSelect {
       attributes['data-ecl-select-clear-all'] = this.multipleClearAllText;
       attributes['data-ecl-select-close'] = this.multipleCloseText;
       attributes['data-ecl-select-search'] = this.multipleSearchText;
+      attributes['data-ecl-select-counter'] = this.multipleCounterText;
+    }
+
+    if (this.multiple && this.multipleSubmit) {
+      attributes['data-ecl-select-submit'] = true;
     }
 
     if (this.selectId) {

@@ -48,34 +48,78 @@ ecl-mega-menu-item {
 
 .ecl-mega-menu__link,
 .ecl-mega-menu__sublink {
-  .ecl-icon {
-    &:last-of-type {
+  .ecl-button__container {
+    flex-grow: 1;
+
+    ecl-icon {
+      margin-inline-start: auto;
+    }
+  }
+}
+
+.ecl-mega-menu__link {
+  ecl-icon {
+    display: none !important;
+
+    .ecl-icon {
       display: none !important;
     }
 
-    &:not(.is-first) {
+    &:last-of-type {
+      display: flex !important;
+
+      .ecl-icon {
+        display: flex !important;
+        height: 1.25rem;
+        width: 1.25rem;
+      }
+    }
+  }
+}
+
+.ecl-mega-menu__sublink {
+  ecl-icon {
+    display: flex !important;
+
+    .ecl-icon {
       display: flex !important;
       height: 1.25rem;
       width: 1.25rem;
+    }
+
+    &:last-of-type {
+      display: none !important;
+
+      .ecl-icon {
+        display: none !important;
+      }
     }
   }
 }
 
 .ecl-mega-menu__sublink.sc-ecl-button-eu,
 .ecl-mega-menu__sublink.sc-ecl-link-eu {
-  color: var(--cm-on-surface-brand);
+  color: var(--c-d);
 }
 
 @media (width >= 1140px) {
   .ecl-mega-menu__link,
   .ecl-mega-menu__sublink {
-    .ecl-icon {
-      &:last-of-type {
+    ecl-icon {
+      display: flex !important;
+
+      .ecl-icon {
         display: flex !important;
+        height: 1rem;
+        width: 1rem;
       }
 
-      &:not(.is-first) {
+      &:last-of-type {
         display: none !important;
+
+        .ecl-icon {
+          display: none !important;
+        }
       }
     }
   }
@@ -88,7 +132,7 @@ ecl-mega-menu-item {
 
 @media (width < 1140px) {
   .ecl-mega-menu--two-panels .ecl-mega-menu__subitem--expanded .ecl-mega-menu__sublink.ecl-mega-menu__parent-link::after {
-    background: var(--cm-surface-neutral-lowest);
+    background: var(--c-in-5);
     content: ' ';
     display: block;
     height: var(--s-xl);
@@ -99,7 +143,7 @@ ecl-mega-menu-item {
   }
 
   .ecl-mega-menu--two-panels .ecl-mega-menu__subitem--expanded .ecl-mega-menu__sublink.ecl-mega-menu__parent-link {
-    background-color: var(--cm-surface-neutral-lowest);
+    background-color: var(--c-in-5);
     display: flex;
     overflow: visible;
     border: none;
@@ -107,6 +151,10 @@ ecl-mega-menu-item {
     font: var(--f-l);
     margin: 0 calc(var(--s-xs) * -1);
     width: 100vw;
+
+    .ecl-icon {
+      display: none !important;
+    }
   }
 }
 

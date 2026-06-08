@@ -8,7 +8,6 @@ import { Component, h, Prop, Element } from '@stencil/core';
   },
   shadow: false,
   scoped: true,
-  assetsDirs: ['build'],
 })
 
 export class EclLink {

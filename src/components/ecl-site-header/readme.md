@@ -9,37 +9,37 @@
 
 | Property             | Attribute               | Description | Type      | Default                                                                        |
 | -------------------- | ----------------------- | ----------- | --------- | ------------------------------------------------------------------------------ |
-| `bannerTop`          | `banner-top`            |             | `string`  | `undefined`                                                                    |
-| `bannerTopLink`      | `banner-top-link`       |             | `string`  | `undefined`                                                                    |
-| `closeLabel`         | `close-label`           |             | `string`  | `undefined`                                                                    |
-| `euLabel`            | `eu-label`              |             | `string`  | `undefined`                                                                    |
-| `langCode`           | `lang-code`             |             | `string`  | `undefined`                                                                    |
-| `language`           | `language`              |             | `string`  | `undefined`                                                                    |
-| `languageAriaLabel`  | `language-aria-label`   |             | `string`  | `undefined`                                                                    |
+| `bannerTop`          | `banner-top`            |             | `string`  | `''`                                                                           |
+| `bannerTopLink`      | `banner-top-link`       |             | `string`  | `''`                                                                           |
+| `closeLabel`         | `close-label`           |             | `string`  | `''`                                                                           |
+| `euLabel`            | `eu-label`              |             | `string`  | `''`                                                                           |
+| `langCode`           | `lang-code`             |             | `string`  | `''`                                                                           |
+| `language`           | `language`              |             | `string`  | `''`                                                                           |
+| `languageAriaLabel`  | `language-aria-label`   |             | `string`  | `''`                                                                           |
 | `languageBlock`      | `language-block`        |             | `boolean` | `false`                                                                        |
-| `languageId`         | `language-id`           |             | `string`  | `undefined`                                                                    |
-| `languageTitle`      | `language-title`        |             | `string`  | `undefined`                                                                    |
+| `languageId`         | `language-id`           |             | `string`  | `''`                                                                           |
+| `languageTitle`      | `language-title`        |             | `string`  | `''`                                                                           |
 | `logged`             | `logged`                |             | `boolean` | `false`                                                                        |
-| `loggedInText`       | `logged-in-text`        |             | `string`  | `undefined`                                                                    |
+| `loggedInText`       | `logged-in-text`        |             | `string`  | `''`                                                                           |
 | `loginBlock`         | `login-block`           |             | `boolean` | `false`                                                                        |
-| `loginLink`          | `login-link`            |             | `string`  | `undefined`                                                                    |
-| `loginText`          | `login-text`            |             | `string`  | `undefined`                                                                    |
-| `logo`               | `logo`                  |             | `string`  | `undefined`                                                                    |
-| `logoAlt`            | `logo-alt`              |             | `string`  | `undefined`                                                                    |
+| `loginLink`          | `login-link`            |             | `string`  | `''`                                                                           |
+| `loginText`          | `login-text`            |             | `string`  | `''`                                                                           |
+| `logo`               | `logo`                  |             | `string`  | `''`                                                                           |
+| `logoAlt`            | `logo-alt`              |             | `string`  | `''`                                                                           |
 | `logoSize`           | `logo-size`             |             | `string`  | `'l'`                                                                          |
-| `logoTitle`          | `logo-title`            |             | `string`  | `undefined`                                                                    |
-| `logoutLink`         | `logout-link`           |             | `string`  | `undefined`                                                                    |
-| `logoutText`         | `logout-text`           |             | `string`  | `undefined`                                                                    |
+| `logoTitle`          | `logo-title`            |             | `string`  | `''`                                                                           |
+| `logoutLink`         | `logout-link`           |             | `string`  | `''`                                                                           |
+| `logoutText`         | `logout-text`           |             | `string`  | `''`                                                                           |
 | `noScript`           | `no-script`             |             | `boolean` | `false`                                                                        |
-| `nonEuLabel`         | `non-eu-label`          |             | `string`  | `undefined`                                                                    |
+| `nonEuLabel`         | `non-eu-label`          |             | `string`  | `''`                                                                           |
 | `searchBlock`        | `search-block`          |             | `boolean` | `true`                                                                         |
 | `searchFormId`       | `search-form-id`        |             | `string`  | `` `ecl-site-header-search-form-${Math.random().toString(36).slice(2, 10)}` `` |
-| `searchPlaceholder`  | `search-placeholder`    |             | `string`  | `undefined`                                                                    |
-| `searchText`         | `search-text`           |             | `string`  | `undefined`                                                                    |
-| `siteName`           | `site-name`             |             | `string`  | `undefined`                                                                    |
+| `searchPlaceholder`  | `search-placeholder`    |             | `string`  | `''`                                                                           |
+| `searchText`         | `search-text`           |             | `string`  | `''`                                                                           |
+| `siteName`           | `site-name`             |             | `string`  | `''`                                                                           |
 | `siteNameMobileOnly` | `site-name-mobile-only` |             | `boolean` | `false`                                                                        |
-| `styleClass`         | `style-class`           |             | `string`  | `undefined`                                                                    |
-| `theme`              | `theme`                 |             | `string`  | `undefined`                                                                    |
+| `styleClass`         | `style-class`           |             | `string`  | `''`                                                                           |
+| `theme`              | `theme`                 |             | `string`  | `'ec'`                                                                         |
 
 
 ## Dependencies

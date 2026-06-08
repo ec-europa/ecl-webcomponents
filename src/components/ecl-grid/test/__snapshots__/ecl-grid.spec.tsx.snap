@@ -1,6 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ecl-grid renders 1`] = `
+exports[`ecl-grid renders as container 1`] = `
+<div class="ecl-container">
+  <div>
+    Content inside container
+  </div>
+</div>
+`;
+
+exports[`ecl-grid renders as row container 1`] = `
+<div class="ecl-row">
+  <!---->
+  <div class="ecl-col-6">
+    Column 1
+  </div>
+  <!---->
+  <div class="ecl-col-6">
+    Column 2
+  </div>
+</div>
+`;
+
+exports[`ecl-grid renders with basic column configuration 1`] = `
 <div class="ecl-container">
   <!---->
   <div class="ecl-col-6">
@@ -13,6 +34,45 @@ exports[`ecl-grid renders 1`] = `
   <!---->
   <div class="ecl-col-2">
     Content in 2 columns
+  </div>
+</div>
+`;
+
+exports[`ecl-grid renders with breakpoint and columns (backward compatibility) 1`] = `
+<div class="ecl-container">
+  <!---->
+  <div class="ecl-col-m-6">
+    Content in 6 columns on md
+  </div>
+  <!---->
+  <div class="ecl-col-l-4">
+    Content in 4 columns on lg
+  </div>
+</div>
+`;
+
+exports[`ecl-grid renders with responsive columns (new API) 1`] = `
+<div class="ecl-container">
+  <!---->
+  <div class="ecl-col-l-4 ecl-col-m-6 ecl-col-s-12 ecl-col-xl-3">
+    Responsive grid item
+  </div>
+  <!---->
+  <div class="ecl-col-l-4 ecl-col-m-6 ecl-col-s-12 ecl-col-xl-3">
+    Responsive grid item
+  </div>
+  <!---->
+  <div class="ecl-col-l-4 ecl-col-m-6 ecl-col-s-12 ecl-col-xl-3">
+    Responsive grid item
+  </div>
+</div>
+`;
+
+exports[`ecl-grid renders with responsive columns and style class 1`] = `
+<div class="ecl-container">
+  <!---->
+  <div class="ecl-col-l-3 ecl-col-m-6 ecl-col-s-12 ecl-u-p-m">
+    Content with padding
   </div>
 </div>
 `;

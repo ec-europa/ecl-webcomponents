@@ -15,6 +15,7 @@ const getArgs = () => ({
   vertical: 'center',
   fontSize: 'm',
   fontColor: 'dark',
+  fontWeight: 'light',
   boxBackground: 'light',
 });
 
@@ -152,6 +153,12 @@ const getArgTypes = () => ({
     },
     if: { arg: 'boxBackground', eq: 'none' },
   },
+  fontWeight: {
+    name: 'font weight',
+    type: 'select',
+    description: 'Change font weight',
+    options: ['light', 'bold'],
+  },
   boxBackground: {
     name: 'box background',
     type: 'select',
@@ -193,6 +200,7 @@ const Template = args =>
     horizontal="${args.horizontal}"
     vertical="${args.vertical}"
     font-size="${args.fontSize}"
+    font-weight="${args.fontWeight}"
     box-background="${args.boxBackground}"
     size="${args.size}"
     banner-title-link="${args.bannerTitleLink ? randomizedLink('/example.html') : ''}"
@@ -224,6 +232,7 @@ const VideoTemplate = args =>
     vertical="${args.vertical}"
     ${args.fontColor ? `font-color="${args.fontColor}"` : '' }
     font-size="${args.fontSize}"
+    font-weight="${args.fontWeight}"
     box-background="${args.boxBackground}"
     banner-title-link="${args.bannerTitleLink ? randomizedLink('/example.html') : ''}"
     description-link="${args.descriptionLink ? randomizedLink('/example.html') : ''}"

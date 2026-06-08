@@ -21,6 +21,7 @@
 | `mediaBehavior`         | `media-behavior`          |             | `string` | `undefined`                                                                                   |
 | `mediaCaption`          | `media-caption`           |             | `string` | `undefined`                                                                                   |
 | `mediaCredit`           | `media-credit`            |             | `string` | `undefined`                                                                                   |
+| `microTitle`            | `micro-title`             |             | `string` | `undefined`                                                                                   |
 | `position`              | `position`                |             | `string` | `'left'`                                                                                      |
 | `styleClass`            | `style-class`             |             | `string` | `undefined`                                                                                   |
 | `theme`                 | `theme`                   |             | `string` | `undefined`                                                                                   |

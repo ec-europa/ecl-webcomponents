@@ -9,51 +9,110 @@ import { Component, Prop, h, Element } from '@stencil/core';
   shadow: false,
   scoped: false,
 })
-
 export class EclGrid {
   @Element() el: HTMLElement;
+
   @Prop() styleClass: string = '';
   @Prop() theme: string = 'ec';
-  @Prop() columns: number = 12;
+
+  /**
+   * Supported formats:
+   *
+   * columns="6"
+   *
+   * columns='{
+   *   "s": 12,
+   *   "m": 6,
+   *   "l": 4
+   * }'
+   */
+  @Prop() columns: number | string = 12;
   @Prop() breakpoint: string;
   @Prop() row: boolean = false;
   @Prop() container: boolean = false;
 
-  getClass(): string {
-    let styleClasses = [];
-
-    if (this.row || this.container) {
-      if (this.row) {
-        styleClasses = [
-          `ecl-row`,
-          this.styleClass,
-        ];
-      } else {
-         styleClasses = [
-          `ecl-container`,
-          this.styleClass,
-        ];
-      }
-    } else {
-      if (!this.breakpoint) {
-        styleClasses = [
-          `ecl-col-${this.columns}`,
-          this.styleClass,
-        ];
-      } else {
-        styleClasses = [
-          `ecl-col-${this.breakpoint}-${this.columns}`,
-          this.styleClass,
-        ];
-      }
+  private getColumnClasses(): string[] {
+    // Legacy API
+    if (this.breakpoint) {
+      return [`ecl-col-${this.breakpoint}-${this.columns}`];
     }
-    
-    return styleClasses.join(' ');
+
+    // Numeric API
+    if (typeof this.columns === 'number') {
+      return [`ecl-col-${this.columns}`];
+    }
+
+    const value = String(this.columns).trim();
+
+    // Numeric string API
+    if (/^\d+$/.test(value)) {
+      return [`ecl-col-${value}`];
+    }
+
+    // Responsive JSON API
+    try {
+      const parsed = JSON.parse(value);
+
+      if (
+        parsed &&
+        typeof parsed === 'object' &&
+        !Array.isArray(parsed)
+      ) {
+        return Object.entries(parsed)
+          .filter(([breakpoint, columns]) =>
+            breakpoint && Number(columns) > 0
+          )
+          .map(
+            ([breakpoint, columns]) =>
+              `ecl-col-${breakpoint}-${columns}`
+          );
+      }
+    } catch {
+      // Invalid JSON, fall through
+    }
+
+    console.warn(
+      '[ecl-grid] Invalid columns value:',
+      this.columns
+    );
+
+    return ['ecl-col-12'];
+  }
+
+  getClass(): string {
+    let styleClasses: string[] = [];
+
+    if (this.row) {
+      styleClasses = [
+        'ecl-row',
+        this.styleClass,
+      ];
+    } else if (this.container) {
+      styleClasses = [
+        'ecl-container',
+        this.styleClass,
+      ];
+    } else {
+      styleClasses = [
+        ...this.getColumnClasses(),
+        this.styleClass,
+      ];
+    }
+
+    return styleClasses.filter(Boolean).join(' ');
   }
 
   componentDidRender() {
     const parent = this.el.parentNode;
-    while (this.el.firstChild) parent.insertBefore(this.el.firstChild, this.el);
+
+    if (!parent) {
+      return;
+    }
+
+    while (this.el.firstChild) {
+      parent.insertBefore(this.el.firstChild, this.el);
+    }
+
     parent.removeChild(this.el);
   }
 
@@ -62,6 +121,6 @@ export class EclGrid {
       <div class={this.getClass()}>
         <slot></slot>
       </div>
-    )
+    );
   }
 }

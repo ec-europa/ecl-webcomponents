@@ -77,7 +77,7 @@
     "@babel/preset-react": "7.28.5",
     "@babel/preset-typescript": "7.28.5",
     "@ecl/ecl-webcomponents": "0.26.0",
-    "@ecl/preset-ec": "5.0.0-RC2",
+    "@ecl/preset-ec": "5.0.0-RC5",
     "@eslint/js": "9.39.2",
     "@prettier/plugin-xml": "3.4.2",
     "@stencil/angular-output-target": "0.10.2",
@@ -170,7 +170,6 @@
       "@ecl/banner": "patches/@ecl__banner.patch",
       "@ecl/tabs": "patches/@ecl__tabs.patch",
       "@ecl/table": "patches/@ecl__table.patch",
-      "@ecl/mega-menu": "patches/@ecl__mega-menu.patch",
       "@ecl/carousel": "patches/@ecl__carousel.patch"
     }
   }

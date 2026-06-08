@@ -1,0 +1,55 @@
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/theme-ec/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' with (
+  $typography: var.$typography
+);
+@use '@ecl/quiz/quiz' with (
+  $theme: theme.$theme,
+  $quiz: var.$quiz
+);
+
+.ecl-icon {
+  vertical-align: middle;
+}
+
+@container (width >= 768px) {
+  .ecl-quiz__viewport .ecl-quiz__list {
+    gap: var(--s-3xl);
+  }
+}
+
+@container (width >= 1140px) {
+  .ecl-quiz__viewport .ecl-quiz__list {
+    gap: var(--s-6xl);
+  }
+}
+
+@container (width >= 768px) {
+  .ecl-quiz__viewport .ecl-quiz-card {
+    width: calc(50% - var(--s-xl) / 2 - 3rem);
+  }
+}
+
+@container (width >= 1140px) {
+  .ecl-quiz__viewport .ecl-quiz-card {
+    width: calc(33.3333% - var(--s-6xl) * 2 / 3);
+  }
+}
+
+@container (width >= 768px) {
+  :host(.sc-ecl-quiz-ec-h) .ecl-quiz__pager.sc-ecl-quiz-ec .ecl-quiz__next.sc-ecl-quiz-ec .ecl-quiz__next-label.sc-ecl-quiz-ec,
+  :host(.sc-ecl-quiz-ec-h) .ecl-quiz__pager.sc-ecl-quiz-ec .ecl-quiz__prev.sc-ecl-quiz-ec .ecl-quiz__prev-label.sc-ecl-quiz-ec {
+    display: flex;
+  }
+}
+
+@container (width >= 768px) {
+  :host(.sc-ecl-quiz-ec-h) .ecl-quiz__pager.sc-ecl-quiz-ec .ecl-quiz__next.sc-ecl-quiz-ec,
+  :host(.sc-ecl-quiz-ec-h) .ecl-quiz__pager.sc-ecl-quiz-ec .ecl-quiz__prev.sc-ecl-quiz-ec {
+    border-radius: 4px;
+    margin-inline: var(--s-4xl);
+  }
+}

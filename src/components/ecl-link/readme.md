@@ -33,6 +33,7 @@
 
 ### Used by
 
+ - [ecl-animated-numbers](../ecl-animated-numbers)
  - [ecl-banner](../ecl-banner)
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
  - [ecl-category-filter-item](../ecl-category-filter)
@@ -56,6 +57,7 @@
  - [ecl-social-media-follow-item](../ecl-social-media-follow)
  - [ecl-splash-page](../ecl-splash-page)
  - [ecl-tabs-item](../ecl-tabs)
+ - [ecl-text-media](../ecl-text-media)
 
 ### Depends on
 
@@ -67,6 +69,7 @@
 graph TD;
   ecl-link --> ecl-icon
   ecl-link --> ecl-indicator
+  ecl-animated-numbers --> ecl-link
   ecl-banner --> ecl-link
   ecl-breadcrumb-item --> ecl-link
   ecl-category-filter-item --> ecl-link
@@ -90,6 +93,7 @@ graph TD;
   ecl-social-media-follow-item --> ecl-link
   ecl-splash-page --> ecl-link
   ecl-tabs-item --> ecl-link
+  ecl-text-media --> ecl-link
   style ecl-link fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

@@ -24,6 +24,8 @@
 ### Used by
 
  - [ecl-accordion-item](../ecl-accordion)
+ - [ecl-add-to-calendar](../ecl-add-to-calendar)
+ - [ecl-animated-numbers-item](../ecl-animated-numbers)
  - [ecl-banner](../ecl-banner)
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
  - [ecl-carousel](../ecl-carousel)
@@ -55,8 +57,11 @@
  - [ecl-notification](../ecl-notification)
  - [ecl-page-header](../ecl-page-header)
  - [ecl-page-header-meta-item](../ecl-page-header)
+ - [ecl-page-summary](../ecl-page-summary)
  - [ecl-pagination-item](../ecl-pagination)
  - [ecl-popover](../ecl-popover)
+ - [ecl-quiz](../ecl-quiz)
+ - [ecl-quiz-card](../ecl-quiz)
  - [ecl-rating-star](../ecl-rating-field)
  - [ecl-search-form](../ecl-search-form)
  - [ecl-select](../ecl-select)
@@ -70,6 +75,8 @@
 ```mermaid
 graph TD;
   ecl-accordion-item --> ecl-icon
+  ecl-add-to-calendar --> ecl-icon
+  ecl-animated-numbers-item --> ecl-icon
   ecl-banner --> ecl-icon
   ecl-breadcrumb-item --> ecl-icon
   ecl-carousel --> ecl-icon
@@ -101,8 +108,11 @@ graph TD;
   ecl-notification --> ecl-icon
   ecl-page-header --> ecl-icon
   ecl-page-header-meta-item --> ecl-icon
+  ecl-page-summary --> ecl-icon
   ecl-pagination-item --> ecl-icon
   ecl-popover --> ecl-icon
+  ecl-quiz --> ecl-icon
+  ecl-quiz-card --> ecl-icon
   ecl-rating-star --> ecl-icon
   ecl-search-form --> ecl-icon
   ecl-select --> ecl-icon

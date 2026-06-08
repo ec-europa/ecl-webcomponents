@@ -16,6 +16,10 @@
   $language-list: var.$language-list
 );
 
+.ecl-site-header__top ecl-link {
+  display: flex;
+}
+
 .ecl-site-header__language-icon.sc-ecl-site-header-ec {
   flex-direction: column;
 }

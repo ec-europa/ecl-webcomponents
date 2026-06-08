@@ -42,12 +42,14 @@ export class EclMegaMenuSubitem {
         <ecl-button
           type="button"
           style-class={`ecl-mega-menu__sublink sc-ecl-mega-menu-${this.theme}`}
+          containerExtraClasses={`sc-ecl-mega-menu-${this.theme}`}
           data-ecl-mega-menu-sublink
           aria-expanded="false"
           aria-haspopup
         >
           {this.label}
           <ecl-icon
+            class={`sc-ecl-mega-menu-${this.theme}`}
             style-class={`sc-ecl-mega-menu-${this.theme} is-first`}
             icon="corner-arrow"
             size="2xs"
@@ -55,6 +57,7 @@ export class EclMegaMenuSubitem {
             slot="icon-after"
           ></ecl-icon>
           <ecl-icon
+            class={`sc-ecl-mega-menu-${this.theme}`}
             style-class={`sc-ecl-mega-menu-${this.theme}`}
             icon="arrow-left"
             flip="horizontal"

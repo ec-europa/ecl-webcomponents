@@ -18,9 +18,11 @@ export class EclMediaContainer {
   @Prop() imageAlt: string;
   @Prop() image: string;
   @Prop() imageAnchor: string = 'center';
+  @Prop() captionPosition: string = 'bottom';
   @Prop() fullWidth: boolean = false;
   @Prop() sources: string;
   @Prop() tracks: string;
+  @Prop() poster: string;
   @Prop() autoplay: boolean = false;
   @Prop() hasCaption: boolean = false;
   @Prop() credit: string;
@@ -31,12 +33,22 @@ export class EclMediaContainer {
   @Prop() srVideoAudio: string;
   @Prop() noScript: boolean = false;
   @Prop() embeddedMedia: boolean = false;
+  @Prop() videoTitle: string;
 
   getClass(): string {
     const styleClasses = [
       `ecl-media-container`,
       this.styleClass
     ];
+
+    if (this.captionPosition !== 'bottom') {
+      if (this.image) {
+        styleClasses.push(`ecl-media-container--caption-${this.captionPosition}`);
+      } else {
+        styleClasses.push(`ecl-media-container--caption-hidden`);
+      }
+    }
+
 
     return styleClasses.join(' ');
   }
@@ -99,7 +111,12 @@ export class EclMediaContainer {
     )) : '';
 
     return (
-      <div class={this.getClass()}>
+      <div 
+        class={this.getClass()}
+        data-ecl-media-container-video-title={
+          this.videoTitle || undefined
+        }
+      >
         <figure
           class={`ecl-media-container__figure${this.fullWidth ? ' ecl-media-container--full-width' : ''}`}
         >
@@ -114,11 +131,11 @@ export class EclMediaContainer {
             <slot name="sources"></slot>
           </ecl-picture>
         }
-        { sources && tracks &&
+        { (sources || tracks) &&
           <div class="ecl-media-container__video-wrapper">
             <ecl-video
               style-class={`ecl-media-container__media sc-ecl-media-container-${this.theme}`}
-              poster={this.image}
+              poster={this.poster}
               autoplay={this.autoplay}
               loop={this.autoplay}
               muted={this.autoplay}
@@ -169,13 +186,13 @@ export class EclMediaContainer {
         }
 
           <slot name="embedded-media"></slot>
-        { this.hasCaption ?
+        { this.hasCaption &&
           <figcaption class="ecl-media-container__caption">
             <slot></slot>
-            { this.credit &&
-              <span class="ecl-media-container__credit">{this.credit}</span>
-            }
-          </figcaption> : ''
+          </figcaption>
+        }
+        { (this.hasCaption && this.credit) &&
+          <footer class="ecl-media-container__credit">{this.credit}</footer>
         }
         </figure>
         <slot name="expandable"></slot>

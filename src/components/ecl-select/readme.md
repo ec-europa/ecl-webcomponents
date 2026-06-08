@@ -19,9 +19,11 @@
 | `multipleAllText`             | `multiple-all-text`               |             | `string`  | `undefined` |
 | `multipleClearAllText`        | `multiple-clear-all-text`         |             | `string`  | `undefined` |
 | `multipleCloseText`           | `multiple-close-text`             |             | `string`  | `undefined` |
+| `multipleCounterText`         | `multiple-counter-text`           |             | `string`  | `undefined` |
 | `multiplePlaceholder`         | `multiple-placeholder`            |             | `string`  | `undefined` |
 | `multipleSearchNoResultsText` | `multiple-search-no-results-text` |             | `string`  | `undefined` |
 | `multipleSearchText`          | `multiple-search-text`            |             | `string`  | `undefined` |
+| `multipleSubmit`              | `multiple-submit`                 |             | `boolean` | `false`     |
 | `name`                        | `name`                            |             | `string`  | `undefined` |
 | `noScript`                    | `no-script`                       |             | `boolean` | `false`     |
 | `required`                    | `required`                        |             | `boolean` | `false`     |

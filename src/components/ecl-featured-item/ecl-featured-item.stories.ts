@@ -5,6 +5,7 @@ const getArgs = () => {
     variant: '',
     position: 'left',
     itemTitle: 'Ut enim ad minim veniam quis nostrud exercitation',
+    microTitle: 'about',
     description: `
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -49,6 +50,11 @@ const getArgTypes = () => {
       name: 'item-title',
       type: { name: 'string'},
       description: 'Title of the featured item',
+    },
+    microTitle: {
+      name: 'micro-title',
+      type: { name: 'string' },
+      description: 'Micro title for the deatured item',
     },
     media: {
       control: { type: 'boolean'},
@@ -118,6 +124,7 @@ const Template = (args) =>
   variant="${args.variant }"
   theme="${args.theme}"
   item-title="${args.itemTitle}"
+  micro-title="${args.microTitle}"
   position="${args.position}"
   image="${args.media ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg' : '' }"
   link-path="${args.link ? randomizedLink('/example.html') : '' }"

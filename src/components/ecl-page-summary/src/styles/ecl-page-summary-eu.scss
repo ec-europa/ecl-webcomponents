@@ -1,0 +1,12 @@
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/grid/grid' with (
+  $theme: theme.$theme
+);
+@use '@ecl/mixins-typography/mixins' with (
+  $typography: var.$typography
+);
+@use '@ecl/page-summary/page-summary' with (
+  $theme: theme.$theme,
+  $page-summary: var.$page-summary
+);

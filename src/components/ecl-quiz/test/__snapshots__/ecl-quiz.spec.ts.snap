@@ -1,0 +1,627 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-quiz poll renders correctly 1`] = `
+<ecl-quiz description="Nulla est ad excepteur sint officia fugiat aute commodo ullamco amet culpa eiusmod labore.
+                  Esse nostrud aliqua pariatur pariatur officia non laboris cillum velit dolore in sit laboris fugiat" item-id="quiz-example" next-label="Next" no-script="" prev-label="Previous" quiz-title="Ut enim ad minim veniam" variant="poll" with-background="">
+  <!---->
+  <section class="ecl-quiz ecl-quiz--background ecl-quiz--poll" id="quiz-example">
+    <ecl-grid container="">
+      <div class="ecl-quiz__header">
+        <div class="ecl-quiz__title">
+          Ut enim ad minim veniam
+        </div>
+        <div class="ecl-quiz__description">
+          Nulla est ad excepteur sint officia fugiat aute commodo ullamco amet culpa eiusmod labore. Esse nostrud aliqua pariatur pariatur officia non laboris cillum velit dolore in sit laboris fugiat
+        </div>
+      </div>
+      <div class="ecl-quiz__viewport" data-ecl-quiz-slider>
+        <div class="ecl-quiz__list" role="list">
+          <ecl-quiz-card answer="The European Commission has the exclusive right to propose new EU laws" answer-title="The correct answer is A." category="Quiz" class="ecl-quiz-card sc-ecl-quiz-ec" error-category="Incorrect" id="card-poll-1" item-id="card-poll-1" main-icon="question" options="[
+            { &quot;label&quot;: &quot;European commission&quot;, &quot;correct&quot;: &quot;true&quot; },
+            { &quot;label&quot;: &quot;European parliament&quot; }, { &quot;label&quot;: &quot;European Central Bank&quot; },
+            { &quot;label&quot;: &quot;Court of Justice of the European Union&quot; }
+          ]" question="Which institution proposes new EU laws?" role="listitem" success-category="Correct" variant="poll">
+            <article class="ecl-quiz-card__content sc-ecl-quiz-ec">
+              <div class="ecl-quiz-card__front sc-ecl-quiz-ec">
+                <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                  <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                    <ecl-icon style-class="sc-ecl-quiz-ec">
+                      <span class="ecl-icon ecl-icon--2xl sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--question"></span>
+                    </ecl-icon>
+                  </div>
+                  <span class="ecl-quiz-card__category sc-ecl-quiz-ec">
+                    Quiz
+                  </span>
+                </div>
+                <fieldset class="sc-ecl-quiz-ec">
+                  <legend class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-poll-1-question">
+                    Which institution proposes new EU laws?
+                  </legend>
+                  <ol class="ecl-quiz-card__options sc-ecl-quiz-ec">
+                    <li class="ecl-quiz-card__option sc-ecl-quiz-ec">
+                      <label class="ecl-quiz-card__label sc-ecl-quiz-ec">
+                        <input class="sc-ecl-quiz-ec" data-ecl-quiz-card-flip data-ecl-quiz-card-input data-match="true" type="radio">
+                        European commission
+                      </label>
+                    </li>
+                    <li class="ecl-quiz-card__option sc-ecl-quiz-ec">
+                      <label class="ecl-quiz-card__label sc-ecl-quiz-ec">
+                        <input class="sc-ecl-quiz-ec" data-ecl-quiz-card-flip data-ecl-quiz-card-input data-match="false" type="radio">
+                        European parliament
+                      </label>
+                    </li>
+                    <li class="ecl-quiz-card__option sc-ecl-quiz-ec">
+                      <label class="ecl-quiz-card__label sc-ecl-quiz-ec">
+                        <input class="sc-ecl-quiz-ec" data-ecl-quiz-card-flip data-ecl-quiz-card-input data-match="false" type="radio">
+                        European Central Bank
+                      </label>
+                    </li>
+                    <li class="ecl-quiz-card__option sc-ecl-quiz-ec">
+                      <label class="ecl-quiz-card__label sc-ecl-quiz-ec">
+                        <input class="sc-ecl-quiz-ec" data-ecl-quiz-card-flip data-ecl-quiz-card-input data-match="false" type="radio">
+                        Court of Justice of the European Union
+                      </label>
+                    </li>
+                  </ol>
+                </fieldset>
+              </div>
+              <div class="ecl-quiz-card__back sc-ecl-quiz-ec" hidden="" inert="">
+                <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                  <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                    <ecl-icon style-class="ecl-quiz-card__icon--success sc-ecl-quiz-ec">
+                      <span class="ecl-icon ecl-icon--2xl ecl-quiz-card__icon--success sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--check-circle"></span>
+                    </ecl-icon>
+                    <ecl-icon style-class="ecl-quiz-card__icon--error sc-ecl-quiz-ec">
+                      <span class="ecl-icon ecl-icon--2xl ecl-quiz-card__icon--error sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--x-circle"></span>
+                    </ecl-icon>
+                  </div>
+                  <span class="ecl-quiz-card__category ecl-quiz-card__category--success sc-ecl-quiz-ec" tabindex="0">
+                    Correct
+                  </span>
+                  <span class="ecl-quiz-card__category ecl-quiz-card__category--error sc-ecl-quiz-ec" tabindex="0">
+                    Incorrect
+                  </span>
+                  <span aria-atomic="true" class="ecl-quiz-card__sr-status sc-ecl-quiz-ec" role="status"></span>
+                </div>
+                <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-poll-1-answer">
+                  <div class="ecl-quiz-card__answer-title sc-ecl-quiz-ec">
+                    The correct answer is A.
+                  </div>
+                  The European Commission has the exclusive right to propose new EU laws
+                </div>
+                <ol class="ecl-quiz-card__options sc-ecl-quiz-ec">
+                  <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="true">
+                    European commission
+                  </li>
+                  <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    European parliament
+                  </li>
+                  <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    European Central Bank
+                  </li>
+                  <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    Court of Justice of the European Union
+                  </li>
+                </ol>
+              </div>
+            </article>
+          </ecl-quiz-card>
+          <ecl-quiz-card answer="A valid ID card or passport is usually enough to travel freely between most EU countries." answer-title="The correct answer is B." category="Quiz" class="ecl-quiz-card sc-ecl-quiz-ec" error-category="Incorrect" id="card-poll-2" item-id="card-poll-2" main-icon="question" options="[
+            { &quot;label&quot;: &quot;A valid ID card.&quot; },
+            { &quot;label&quot;: &quot;A valid ID card or passport&quot;, &quot;correct&quot;: &quot;true&quot; },
+            { &quot;label&quot;: &quot;A valid passport.&quot; }, { &quot;label&quot;: &quot;None of these&quot; }
+          ]" question="What document allows EU citizens to travel freely between most EU countries?" role="listitem" success-category="Correct" variant="poll">
+            <article class="ecl-quiz-card__content sc-ecl-quiz-ec">
+              <div class="ecl-quiz-card__front sc-ecl-quiz-ec">
+                <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                  <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                    <ecl-icon style-class="sc-ecl-quiz-ec">
+                      <span class="ecl-icon ecl-icon--2xl sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--question"></span>
+                    </ecl-icon>
+                  </div>
+                  <span class="ecl-quiz-card__category sc-ecl-quiz-ec">
+                    Quiz
+                  </span>
+                </div>
+                <fieldset class="sc-ecl-quiz-ec">
+                  <legend class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-poll-2-question">
+                    What document allows EU citizens to travel freely between most EU countries?
+                  </legend>
+                  <ol class="ecl-quiz-card__options sc-ecl-quiz-ec">
+                    <li class="ecl-quiz-card__option sc-ecl-quiz-ec">
+                      <label class="ecl-quiz-card__label sc-ecl-quiz-ec">
+                        <input class="sc-ecl-quiz-ec" data-ecl-quiz-card-flip data-ecl-quiz-card-input data-match="false" type="radio">
+                        A valid ID card.
+                      </label>
+                    </li>
+                    <li class="ecl-quiz-card__option sc-ecl-quiz-ec">
+                      <label class="ecl-quiz-card__label sc-ecl-quiz-ec">
+                        <input class="sc-ecl-quiz-ec" data-ecl-quiz-card-flip data-ecl-quiz-card-input data-match="true" type="radio">
+                        A valid ID card or passport
+                      </label>
+                    </li>
+                    <li class="ecl-quiz-card__option sc-ecl-quiz-ec">
+                      <label class="ecl-quiz-card__label sc-ecl-quiz-ec">
+                        <input class="sc-ecl-quiz-ec" data-ecl-quiz-card-flip data-ecl-quiz-card-input data-match="false" type="radio">
+                        A valid passport.
+                      </label>
+                    </li>
+                    <li class="ecl-quiz-card__option sc-ecl-quiz-ec">
+                      <label class="ecl-quiz-card__label sc-ecl-quiz-ec">
+                        <input class="sc-ecl-quiz-ec" data-ecl-quiz-card-flip data-ecl-quiz-card-input data-match="false" type="radio">
+                        None of these
+                      </label>
+                    </li>
+                  </ol>
+                </fieldset>
+              </div>
+              <div class="ecl-quiz-card__back sc-ecl-quiz-ec" hidden="" inert="">
+                <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                  <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                    <ecl-icon style-class="ecl-quiz-card__icon--success sc-ecl-quiz-ec">
+                      <span class="ecl-icon ecl-icon--2xl ecl-quiz-card__icon--success sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--check-circle"></span>
+                    </ecl-icon>
+                    <ecl-icon style-class="ecl-quiz-card__icon--error sc-ecl-quiz-ec">
+                      <span class="ecl-icon ecl-icon--2xl ecl-quiz-card__icon--error sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--x-circle"></span>
+                    </ecl-icon>
+                  </div>
+                  <span class="ecl-quiz-card__category ecl-quiz-card__category--success sc-ecl-quiz-ec" tabindex="0">
+                    Correct
+                  </span>
+                  <span class="ecl-quiz-card__category ecl-quiz-card__category--error sc-ecl-quiz-ec" tabindex="0">
+                    Incorrect
+                  </span>
+                  <span aria-atomic="true" class="ecl-quiz-card__sr-status sc-ecl-quiz-ec" role="status"></span>
+                </div>
+                <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-poll-2-answer">
+                  <div class="ecl-quiz-card__answer-title sc-ecl-quiz-ec">
+                    The correct answer is B.
+                  </div>
+                  A valid ID card or passport is usually enough to travel freely between most EU countries.
+                </div>
+                <ol class="ecl-quiz-card__options sc-ecl-quiz-ec">
+                  <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    A valid ID card.
+                  </li>
+                  <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="true">
+                    A valid ID card or passport
+                  </li>
+                  <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    A valid passport.
+                  </li>
+                  <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    None of these
+                  </li>
+                </ol>
+              </div>
+            </article>
+          </ecl-quiz-card>
+          <ecl-quiz-card answer="The Euro is the official currency used by many EU conutries" answer-title="The correct answer is C." category="Quiz" class="ecl-quiz-card sc-ecl-quiz-ec" error-category="Incorrect" id="card-poll-3" item-id="card-poll-3" main-icon="question" options="[
+            { &quot;label&quot;: &quot;The pound is the most used currency in the EU&quot; },
+            { &quot;label&quot;: &quot;The Leu is by far the most used currency in the European Union&quot; },
+            { &quot;label&quot;: &quot;The euro (€) is used in many EU member states.&quot;, &quot;correct&quot;: &quot;true&quot; }
+          ]" question="What currency is used in many EU countries?" role="listitem" success-category="Correct" variant="poll">
+            <article class="ecl-quiz-card__content sc-ecl-quiz-ec">
+              <div class="ecl-quiz-card__front sc-ecl-quiz-ec">
+                <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                  <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                    <ecl-icon style-class="sc-ecl-quiz-ec">
+                      <span class="ecl-icon ecl-icon--2xl sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--question"></span>
+                    </ecl-icon>
+                  </div>
+                  <span class="ecl-quiz-card__category sc-ecl-quiz-ec">
+                    Quiz
+                  </span>
+                </div>
+                <fieldset class="sc-ecl-quiz-ec">
+                  <legend class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-poll-3-question">
+                    What currency is used in many EU countries?
+                  </legend>
+                  <ol class="ecl-quiz-card__options sc-ecl-quiz-ec">
+                    <li class="ecl-quiz-card__option sc-ecl-quiz-ec">
+                      <label class="ecl-quiz-card__label sc-ecl-quiz-ec">
+                        <input class="sc-ecl-quiz-ec" data-ecl-quiz-card-flip data-ecl-quiz-card-input data-match="false" type="radio">
+                        The pound is the most used currency in the EU
+                      </label>
+                    </li>
+                    <li class="ecl-quiz-card__option sc-ecl-quiz-ec">
+                      <label class="ecl-quiz-card__label sc-ecl-quiz-ec">
+                        <input class="sc-ecl-quiz-ec" data-ecl-quiz-card-flip data-ecl-quiz-card-input data-match="false" type="radio">
+                        The Leu is by far the most used currency in the European Union
+                      </label>
+                    </li>
+                    <li class="ecl-quiz-card__option sc-ecl-quiz-ec">
+                      <label class="ecl-quiz-card__label sc-ecl-quiz-ec">
+                        <input class="sc-ecl-quiz-ec" data-ecl-quiz-card-flip data-ecl-quiz-card-input data-match="true" type="radio">
+                        The euro (€) is used in many EU member states.
+                      </label>
+                    </li>
+                  </ol>
+                </fieldset>
+              </div>
+              <div class="ecl-quiz-card__back sc-ecl-quiz-ec" hidden="" inert="">
+                <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                  <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                    <ecl-icon style-class="ecl-quiz-card__icon--success sc-ecl-quiz-ec">
+                      <span class="ecl-icon ecl-icon--2xl ecl-quiz-card__icon--success sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--check-circle"></span>
+                    </ecl-icon>
+                    <ecl-icon style-class="ecl-quiz-card__icon--error sc-ecl-quiz-ec">
+                      <span class="ecl-icon ecl-icon--2xl ecl-quiz-card__icon--error sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--x-circle"></span>
+                    </ecl-icon>
+                  </div>
+                  <span class="ecl-quiz-card__category ecl-quiz-card__category--success sc-ecl-quiz-ec" tabindex="0">
+                    Correct
+                  </span>
+                  <span class="ecl-quiz-card__category ecl-quiz-card__category--error sc-ecl-quiz-ec" tabindex="0">
+                    Incorrect
+                  </span>
+                  <span aria-atomic="true" class="ecl-quiz-card__sr-status sc-ecl-quiz-ec" role="status"></span>
+                </div>
+                <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-poll-3-answer">
+                  <div class="ecl-quiz-card__answer-title sc-ecl-quiz-ec">
+                    The correct answer is C.
+                  </div>
+                  The Euro is the official currency used by many EU conutries
+                </div>
+                <ol class="ecl-quiz-card__options sc-ecl-quiz-ec">
+                  <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    The pound is the most used currency in the EU
+                  </li>
+                  <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    The Leu is by far the most used currency in the European Union
+                  </li>
+                  <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="true">
+                    The euro (€) is used in many EU member states.
+                  </li>
+                </ol>
+              </div>
+            </article>
+          </ecl-quiz-card>
+          <ecl-quiz-card answer="Duis id mattis libero. Quisque accumsan nisi" answer-title="The correct answer is B." category="Quiz" class="ecl-quiz-card sc-ecl-quiz-ec" error-category="Incorrect" id="card-poll-4" item-id="card-poll-4" main-icon="question" options="[
+            { &quot;label&quot;: &quot;Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum&quot; },
+            { &quot;label&quot;: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&quot;, &quot;correct&quot;: &quot;true&quot; },
+            { &quot;label&quot;: &quot;Ivamus auctor blandit auctor.&quot; }
+          ]" question="Lorem ipsum dolor sit amet, consectetur adipiscing elit?" role="listitem" success-category="Correct" variant="poll">
+            <article class="ecl-quiz-card__content sc-ecl-quiz-ec">
+              <div class="ecl-quiz-card__front sc-ecl-quiz-ec">
+                <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                  <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                    <ecl-icon style-class="sc-ecl-quiz-ec">
+                      <span class="ecl-icon ecl-icon--2xl sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--question"></span>
+                    </ecl-icon>
+                  </div>
+                  <span class="ecl-quiz-card__category sc-ecl-quiz-ec">
+                    Quiz
+                  </span>
+                </div>
+                <fieldset class="sc-ecl-quiz-ec">
+                  <legend class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-poll-4-question">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                  </legend>
+                  <ol class="ecl-quiz-card__options sc-ecl-quiz-ec">
+                    <li class="ecl-quiz-card__option sc-ecl-quiz-ec">
+                      <label class="ecl-quiz-card__label sc-ecl-quiz-ec">
+                        <input class="sc-ecl-quiz-ec" data-ecl-quiz-card-flip data-ecl-quiz-card-input data-match="false" type="radio">
+                        Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum
+                      </label>
+                    </li>
+                    <li class="ecl-quiz-card__option sc-ecl-quiz-ec">
+                      <label class="ecl-quiz-card__label sc-ecl-quiz-ec">
+                        <input class="sc-ecl-quiz-ec" data-ecl-quiz-card-flip data-ecl-quiz-card-input data-match="true" type="radio">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </label>
+                    </li>
+                    <li class="ecl-quiz-card__option sc-ecl-quiz-ec">
+                      <label class="ecl-quiz-card__label sc-ecl-quiz-ec">
+                        <input class="sc-ecl-quiz-ec" data-ecl-quiz-card-flip data-ecl-quiz-card-input data-match="false" type="radio">
+                        Ivamus auctor blandit auctor.
+                      </label>
+                    </li>
+                  </ol>
+                </fieldset>
+              </div>
+              <div class="ecl-quiz-card__back sc-ecl-quiz-ec" hidden="" inert="">
+                <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                  <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                    <ecl-icon style-class="ecl-quiz-card__icon--success sc-ecl-quiz-ec">
+                      <span class="ecl-icon ecl-icon--2xl ecl-quiz-card__icon--success sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--check-circle"></span>
+                    </ecl-icon>
+                    <ecl-icon style-class="ecl-quiz-card__icon--error sc-ecl-quiz-ec">
+                      <span class="ecl-icon ecl-icon--2xl ecl-quiz-card__icon--error sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--x-circle"></span>
+                    </ecl-icon>
+                  </div>
+                  <span class="ecl-quiz-card__category ecl-quiz-card__category--success sc-ecl-quiz-ec" tabindex="0">
+                    Correct
+                  </span>
+                  <span class="ecl-quiz-card__category ecl-quiz-card__category--error sc-ecl-quiz-ec" tabindex="0">
+                    Incorrect
+                  </span>
+                  <span aria-atomic="true" class="ecl-quiz-card__sr-status sc-ecl-quiz-ec" role="status"></span>
+                </div>
+                <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-poll-4-answer">
+                  <div class="ecl-quiz-card__answer-title sc-ecl-quiz-ec">
+                    The correct answer is B.
+                  </div>
+                  Duis id mattis libero. Quisque accumsan nisi
+                </div>
+                <ol class="ecl-quiz-card__options sc-ecl-quiz-ec">
+                  <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum
+                  </li>
+                  <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="true">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </li>
+                  <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    Ivamus auctor blandit auctor.
+                  </li>
+                </ol>
+              </div>
+            </article>
+          </ecl-quiz-card>
+        </div>
+      </div>
+      <div class="ecl-quiz__pager">
+        <button class="ecl-quiz__prev">
+          <ecl-icon>
+            <span class="ecl-icon ecl-icon--xs wt-icon--corner-arrow wt-icon--monochrome wt-icon--placeholder wt-icon--rotate-270"></span>
+          </ecl-icon>
+          <span class="ecl-quiz__prev-label">
+            Previous
+          </span>
+        </button>
+        <div class="ecl-quiz__dots"></div>
+        <button class="ecl-quiz__next">
+          <ecl-icon>
+            <span class="ecl-icon ecl-icon--xs wt-icon--corner-arrow wt-icon--monochrome wt-icon--placeholder wt-icon--rotate-90"></span>
+          </ecl-icon>
+          <span class="ecl-quiz__next-label">
+            Next
+          </span>
+        </button><script id="ecl-quiz__dot-template" type="text/template"><button class="ecl-quiz__dot"></button></script>
+      </div>
+      <div class="ecl-quiz__counter"></div>
+    </ecl-grid>
+  </section>
+</ecl-quiz>
+`;
+
+exports[`ecl-quiz reveal renders correctly 1`] = `
+<ecl-quiz description="Nulla est ad excepteur sint officia fugiat aute commodo ullamco amet culpa eiusmod labore.
+                  Esse nostrud aliqua pariatur pariatur officia non laboris cillum velit dolore in sit laboris fugiat." item-id="quiz-example" next-label="Next" no-script="" prev-label="Previous" quiz-title="Ut enim ad minim veniam" variant="reveal">
+  <!---->
+  <section class="ecl-quiz ecl-quiz--reveal" id="quiz-example">
+    <div class="ecl-quiz__header">
+      <div class="ecl-quiz__title">
+        Ut enim ad minim veniam
+      </div>
+      <div class="ecl-quiz__description">
+        Nulla est ad excepteur sint officia fugiat aute commodo ullamco amet culpa eiusmod labore. Esse nostrud aliqua pariatur pariatur officia non laboris cillum velit dolore in sit laboris fugiat.
+      </div>
+    </div>
+    <div class="ecl-quiz__viewport" data-ecl-quiz-slider>
+      <div class="ecl-quiz__list" role="list">
+        <ecl-quiz-card answer="You usually pay the same at home, no extra roaming fees." back-text="Flip back" class="ecl-quiz-card sc-ecl-quiz-ec" data-ecl-quiz-card-flip flip-text="Reveal answer" id="card-reveal-1" item-id="card-reveal-1" main-icon="sparkle" question="When you travel in the EU, what happens to your roaming charges?" role="listitem" tabindex="0" variant="reveal">
+          <article class="ecl-quiz-card__content sc-ecl-quiz-ec">
+            <div class="ecl-quiz-card__front sc-ecl-quiz-ec">
+              <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                  <ecl-icon style-class="sc-ecl-quiz-ec">
+                    <span class="ecl-icon ecl-icon--2xl sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--sparkle"></span>
+                  </ecl-icon>
+                </div>
+              </div>
+              <div class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-reveal-1-question">
+                When you travel in the EU, what happens to your roaming charges?
+              </div>
+              <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
+                Reveal answer
+                <ecl-icon style-class="sc-ecl-quiz-ec">
+                  <span class="ecl-icon ecl-icon--m sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--arrow-clockwise"></span>
+                </ecl-icon>
+              </div>
+            </div>
+            <div class="ecl-quiz-card__back sc-ecl-quiz-ec" hidden="" inert="">
+              <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                  <ecl-icon style-class="sc-ecl-quiz-ec">
+                    <span class="ecl-icon ecl-icon--2xl sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--sparkle"></span>
+                  </ecl-icon>
+                </div>
+              </div>
+              <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-reveal-1-answer">
+                You usually pay the same at home, no extra roaming fees.
+              </div>
+              <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
+                Flip back
+                <ecl-icon style-class="sc-ecl-quiz-ec">
+                  <span class="ecl-icon ecl-icon--m sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--arrow-clockwise"></span>
+                </ecl-icon>
+              </div>
+            </div>
+          </article>
+        </ecl-quiz-card>
+        <ecl-quiz-card answer="A valid ID card or passport is usually enough." back-text="Flip back" class="ecl-quiz-card sc-ecl-quiz-ec" data-ecl-quiz-card-flip flip-text="Reveal answer" id="card-reveal-2" item-id="card-reveal-2" main-icon="sparkle" question="What document allows EU citizens to travel freely between most EU countries?" role="listitem" tabindex="0" variant="reveal">
+          <article class="ecl-quiz-card__content sc-ecl-quiz-ec">
+            <div class="ecl-quiz-card__front sc-ecl-quiz-ec">
+              <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                  <ecl-icon style-class="sc-ecl-quiz-ec">
+                    <span class="ecl-icon ecl-icon--2xl sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--sparkle"></span>
+                  </ecl-icon>
+                </div>
+              </div>
+              <div class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-reveal-2-question">
+                What document allows EU citizens to travel freely between most EU countries?
+              </div>
+              <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
+                Reveal answer
+                <ecl-icon style-class="sc-ecl-quiz-ec">
+                  <span class="ecl-icon ecl-icon--m sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--arrow-clockwise"></span>
+                </ecl-icon>
+              </div>
+            </div>
+            <div class="ecl-quiz-card__back sc-ecl-quiz-ec" hidden="" inert="">
+              <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                  <ecl-icon style-class="sc-ecl-quiz-ec">
+                    <span class="ecl-icon ecl-icon--2xl sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--sparkle"></span>
+                  </ecl-icon>
+                </div>
+              </div>
+              <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-reveal-2-answer">
+                A valid ID card or passport is usually enough.
+              </div>
+              <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
+                Flip back
+                <ecl-icon style-class="sc-ecl-quiz-ec">
+                  <span class="ecl-icon ecl-icon--m sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--arrow-clockwise"></span>
+                </ecl-icon>
+              </div>
+            </div>
+          </article>
+        </ecl-quiz-card>
+        <ecl-quiz-card answer="The euro (€) is used in many EU member states.." back-text="Flip back" class="ecl-quiz-card sc-ecl-quiz-ec" data-ecl-quiz-card-flip flip-text="Reveal answer" id="card-reveal-3" item-id="card-reveal-3" main-icon="sparkle" question="What currency is used in many EU countries?" role="listitem" tabindex="0" variant="reveal">
+          <article class="ecl-quiz-card__content sc-ecl-quiz-ec">
+            <div class="ecl-quiz-card__front sc-ecl-quiz-ec">
+              <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                  <ecl-icon style-class="sc-ecl-quiz-ec">
+                    <span class="ecl-icon ecl-icon--2xl sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--sparkle"></span>
+                  </ecl-icon>
+                </div>
+              </div>
+              <div class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-reveal-3-question">
+                What currency is used in many EU countries?
+              </div>
+              <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
+                Reveal answer
+                <ecl-icon style-class="sc-ecl-quiz-ec">
+                  <span class="ecl-icon ecl-icon--m sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--arrow-clockwise"></span>
+                </ecl-icon>
+              </div>
+            </div>
+            <div class="ecl-quiz-card__back sc-ecl-quiz-ec" hidden="" inert="">
+              <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                  <ecl-icon style-class="sc-ecl-quiz-ec">
+                    <span class="ecl-icon ecl-icon--2xl sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--sparkle"></span>
+                  </ecl-icon>
+                </div>
+              </div>
+              <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-reveal-3-answer">
+                The euro (€) is used in many EU member states..
+              </div>
+              <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
+                Flip back
+                <ecl-icon style-class="sc-ecl-quiz-ec">
+                  <span class="ecl-icon ecl-icon--m sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--arrow-clockwise"></span>
+                </ecl-icon>
+              </div>
+            </div>
+          </article>
+        </ecl-quiz-card>
+        <ecl-quiz-card answer="Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum" back-text="Flip back" class="ecl-quiz-card sc-ecl-quiz-ec" data-ecl-quiz-card-flip flip-text="Reveal answer" id="card-reveal-4" item-id="card-reveal-4" main-icon="sparkle" question="Lorem ipsum dolor sit amet, consectetur adipiscing elit?" role="listitem" tabindex="0" variant="reveal">
+          <article class="ecl-quiz-card__content sc-ecl-quiz-ec">
+            <div class="ecl-quiz-card__front sc-ecl-quiz-ec">
+              <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                  <ecl-icon style-class="sc-ecl-quiz-ec">
+                    <span class="ecl-icon ecl-icon--2xl sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--sparkle"></span>
+                  </ecl-icon>
+                </div>
+              </div>
+              <div class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-reveal-4-question">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </div>
+              <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
+                Reveal answer
+                <ecl-icon style-class="sc-ecl-quiz-ec">
+                  <span class="ecl-icon ecl-icon--m sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--arrow-clockwise"></span>
+                </ecl-icon>
+              </div>
+            </div>
+            <div class="ecl-quiz-card__back sc-ecl-quiz-ec" hidden="" inert="">
+              <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                  <ecl-icon style-class="sc-ecl-quiz-ec">
+                    <span class="ecl-icon ecl-icon--2xl sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--sparkle"></span>
+                  </ecl-icon>
+                </div>
+              </div>
+              <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-reveal-4-answer">
+                Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum
+              </div>
+              <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
+                Flip back
+                <ecl-icon style-class="sc-ecl-quiz-ec">
+                  <span class="ecl-icon ecl-icon--m sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--arrow-clockwise"></span>
+                </ecl-icon>
+              </div>
+            </div>
+          </article>
+        </ecl-quiz-card>
+        <ecl-quiz-card answer="Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum" back-text="Flip back" class="ecl-quiz-card sc-ecl-quiz-ec" data-ecl-quiz-card-flip flip-text="Reveal answer" id="card-reveal-4" item-id="card-reveal-4" main-icon="sparkle" question="Lorem ipsum dolor sit amet, consectetur adipiscing elit?" role="listitem" tabindex="0" variant="reveal">
+          <article class="ecl-quiz-card__content sc-ecl-quiz-ec">
+            <div class="ecl-quiz-card__front sc-ecl-quiz-ec">
+              <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                  <ecl-icon style-class="sc-ecl-quiz-ec">
+                    <span class="ecl-icon ecl-icon--2xl sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--sparkle"></span>
+                  </ecl-icon>
+                </div>
+              </div>
+              <div class="ecl-quiz-card__question sc-ecl-quiz-ec" id="card-reveal-4-question">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </div>
+              <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
+                Reveal answer
+                <ecl-icon style-class="sc-ecl-quiz-ec">
+                  <span class="ecl-icon ecl-icon--m sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--arrow-clockwise"></span>
+                </ecl-icon>
+              </div>
+            </div>
+            <div class="ecl-quiz-card__back sc-ecl-quiz-ec" hidden="" inert="">
+              <div class="ecl-quiz-card__header sc-ecl-quiz-ec">
+                <div class="ecl-quiz-card__icon sc-ecl-quiz-ec">
+                  <ecl-icon style-class="sc-ecl-quiz-ec">
+                    <span class="ecl-icon ecl-icon--2xl sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--sparkle"></span>
+                  </ecl-icon>
+                </div>
+              </div>
+              <div class="ecl-quiz-card__answer sc-ecl-quiz-ec" id="card-reveal-4-answer">
+                Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum
+              </div>
+              <div class="ecl-quiz-card__flip sc-ecl-quiz-ec">
+                Flip back
+                <ecl-icon style-class="sc-ecl-quiz-ec">
+                  <span class="ecl-icon ecl-icon--m sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--arrow-clockwise"></span>
+                </ecl-icon>
+              </div>
+            </div>
+          </article>
+        </ecl-quiz-card>
+      </div>
+    </div>
+    <div class="ecl-quiz__pager">
+      <button class="ecl-quiz__prev">
+        <ecl-icon>
+          <span class="ecl-icon ecl-icon--xs wt-icon--corner-arrow wt-icon--monochrome wt-icon--placeholder wt-icon--rotate-270"></span>
+        </ecl-icon>
+        <span class="ecl-quiz__prev-label">
+          Previous
+        </span>
+      </button>
+      <div class="ecl-quiz__dots"></div>
+      <button class="ecl-quiz__next">
+        <ecl-icon>
+          <span class="ecl-icon ecl-icon--xs wt-icon--corner-arrow wt-icon--monochrome wt-icon--placeholder wt-icon--rotate-90"></span>
+        </ecl-icon>
+        <span class="ecl-quiz__next-label">
+          Next
+        </span>
+      </button><script id="ecl-quiz__dot-template" type="text/template"><button class="ecl-quiz__dot"></button></script>
+    </div>
+    <div class="ecl-quiz__counter"></div>
+  </section>
+</ecl-quiz>
+`;

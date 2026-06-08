@@ -23,6 +23,75 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
     }
+    interface EclAddToCalendar {
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        "eventTitle": string;
+        /**
+          * @default false
+         */
+        "fullWidth": boolean;
+        "meta": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+        /**
+          * @default true
+         */
+        "withButton": boolean;
+    }
+    interface EclAnimatedNumbers {
+        /**
+          * @default false
+         */
+        "border": boolean;
+        /**
+          * @default true
+         */
+        "counterColor": boolean;
+        /**
+          * @default false
+         */
+        "fullWidth": boolean;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
+        /**
+          * @default ''
+         */
+        "sources": string;
+        /**
+          * @default ''
+         */
+        "sourcesLabel": string;
+        "styleClass": string;
+        "theme": string;
+        /**
+          * @default false
+         */
+        "withBackground": boolean;
+    }
+    interface EclAnimatedNumbersItem {
+        "category": string;
+        /**
+          * @default true
+         */
+        "counterColor": boolean;
+        "description": string;
+        "icon": string;
+        "itemPrefix": string;
+        "itemPrefixLabel": string;
+        "itemSuffix": string;
+        "itemSuffixLabel": string;
+        "styleClass": string;
+        "theme": string;
+        "value": string;
+    }
     interface EclBanner {
         "bannerTitle": string;
         "bannerTitleLink": string;
@@ -54,6 +123,10 @@ export namespace Components {
           * @default 'm'
          */
         "fontSize": string;
+        /**
+          * @default 'light'
+         */
+        "fontWeight": string;
         /**
           * @default false
          */
@@ -528,6 +601,7 @@ export namespace Components {
         "mediaBehavior": string;
         "mediaCaption": string;
         "mediaCredit": string;
+        "microTitle": string;
         /**
           * @default 'left'
          */
@@ -842,9 +916,10 @@ export namespace Components {
     interface EclGrid {
         "breakpoint": string;
         /**
+          * Supported formats:  columns="6"  columns='{   "s": 12,   "m": 6,   "l": 4 }'
           * @default 12
          */
-        "columns": number;
+        "columns": number | string;
         /**
           * @default false
          */
@@ -1114,6 +1189,10 @@ export namespace Components {
           * @default false
          */
         "autoplay": boolean;
+        /**
+          * @default 'bottom'
+         */
+        "captionPosition": string;
         "credit": string;
         /**
           * @default false
@@ -1137,6 +1216,7 @@ export namespace Components {
           * @default false
          */
         "noScript": boolean;
+        "poster": string;
         /**
           * @default ''
          */
@@ -1149,6 +1229,7 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
         "tracks": string;
+        "videoTitle": string;
     }
     interface EclMegaMenu {
         "ariaLabel": string;
@@ -1472,6 +1553,40 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
     }
+    interface EclPageSummary {
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
+          * @default ''
+         */
+        "elId": string;
+        /**
+          * @default true
+         */
+        "hasDescription": boolean;
+        /**
+          * @default ''
+         */
+        "icon": string;
+        /**
+          * @default 'phosphor'
+         */
+        "iconFamily": string;
+        /**
+          * @default ''
+         */
+        "itemTitle": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        /**
+          * @default 'ec'
+         */
+        "theme": string;
+    }
     interface EclPagination {
         /**
           * @default ''
@@ -1536,6 +1651,55 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
         "toggleLabel": string;
+    }
+    interface EclQuiz {
+        "description": string;
+        /**
+          * @default false
+         */
+        "fullWidth": boolean;
+        "itemId": string;
+        "nextLabel": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
+        "prevLabel": string;
+        "quizTitle": string;
+        "skipText": string;
+        "styleClass": string;
+        "theme": string;
+        /**
+          * @default "reveal"
+         */
+        "variant": string;
+        /**
+          * @default false
+         */
+        "withBackground": boolean;
+    }
+    interface EclQuizCard {
+        "answer": string;
+        "answerTitle": string;
+        "backText": string;
+        "category": string;
+        "errorCategory": string;
+        "flipText": string;
+        /**
+          * @default `ecl-quiz-item-${Math.random().toString(36).substr(2, 9)}`
+         */
+        "itemId": string;
+        "mainIcon": string;
+        "options": string;
+        "question": string;
+        "quizName": string;
+        "styleClass": string;
+        "successCategory": string;
+        "theme": string;
+        /**
+          * @default 'reveal'
+         */
+        "variant": string;
     }
     interface EclRange {
         "defaultValue": string;
@@ -1696,9 +1860,14 @@ export namespace Components {
         "multipleAllText": string;
         "multipleClearAllText": string;
         "multipleCloseText": string;
+        "multipleCounterText": string;
         "multiplePlaceholder": string;
         "multipleSearchNoResultsText": string;
         "multipleSearchText": string;
+        /**
+          * @default false
+         */
+        "multipleSubmit": boolean;
         "name": string;
         /**
           * @default false
@@ -1717,43 +1886,97 @@ export namespace Components {
         "width": string;
     }
     interface EclSiteHeader {
+        /**
+          * @default ''
+         */
         "bannerTop": string;
+        /**
+          * @default ''
+         */
         "bannerTopLink": string;
+        /**
+          * @default ''
+         */
         "closeLabel": string;
+        /**
+          * @default ''
+         */
         "euLabel": string;
+        /**
+          * @default ''
+         */
         "langCode": string;
+        /**
+          * @default ''
+         */
         "language": string;
+        /**
+          * @default ''
+         */
         "languageAriaLabel": string;
         /**
           * @default false
          */
         "languageBlock": boolean;
+        /**
+          * @default ''
+         */
         "languageId": string;
+        /**
+          * @default ''
+         */
         "languageTitle": string;
         /**
           * @default false
          */
         "logged": boolean;
+        /**
+          * @default ''
+         */
         "loggedInText": string;
         /**
           * @default false
          */
         "loginBlock": boolean;
+        /**
+          * @default ''
+         */
         "loginLink": string;
+        /**
+          * @default ''
+         */
         "loginText": string;
+        /**
+          * @default ''
+         */
         "logo": string;
+        /**
+          * @default ''
+         */
         "logoAlt": string;
         /**
           * @default 'l'
          */
         "logoSize": string;
+        /**
+          * @default ''
+         */
         "logoTitle": string;
+        /**
+          * @default ''
+         */
         "logoutLink": string;
+        /**
+          * @default ''
+         */
         "logoutText": string;
         /**
           * @default false
          */
         "noScript": boolean;
+        /**
+          * @default ''
+         */
         "nonEuLabel": string;
         /**
           * @default true
@@ -1763,14 +1986,29 @@ export namespace Components {
           * @default `ecl-site-header-search-form-${Math.random().toString(36).slice(2, 10)}`
          */
         "searchFormId": string;
+        /**
+          * @default ''
+         */
         "searchPlaceholder": string;
+        /**
+          * @default ''
+         */
         "searchText": string;
+        /**
+          * @default ''
+         */
         "siteName": string;
         /**
           * @default false
          */
         "siteNameMobileOnly": boolean;
+        /**
+          * @default ''
+         */
         "styleClass": string;
+        /**
+          * @default 'ec'
+         */
         "theme": string;
     }
     interface EclSocialMediaFollow {
@@ -2064,6 +2302,47 @@ export namespace Components {
         "type": 'display' | 'heading' | 'paragraph' | 'microcopy' | undefined;
         "weight": 'thin' | 'extra-light' | 'light' | 'regular' | 'medium' | 'semi-bold' | 'bold' | 'extra-bold' | 'black' | undefined;
     }
+    interface EclTextMedia {
+        "colorMode": string;
+        /**
+          * @default `ecl-text-media-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
+         */
+        "elId": string;
+        /**
+          * @default false
+         */
+        "fullWidth": boolean;
+        /**
+          * @default true
+         */
+        "hasDescription": boolean;
+        /**
+          * @default true
+         */
+        "hasMedia": boolean;
+        "image": string;
+        "itemTitle": string;
+        "linkLabel": string;
+        "linkPath": string;
+        /**
+          * @default 'secondary-inverted'
+         */
+        "linkType": string;
+        "mediaAnchor": string;
+        "mediaCaption": string;
+        "mediaCredit": string;
+        /**
+          * @default 'right'
+         */
+        "mediaPosition": string;
+        "microTitle": string;
+        "sources": string;
+        "styleClass": string;
+        "theme": string;
+        "tracks": string;
+        "variant": string;
+        "videoTitle": string;
+    }
     interface EclTextarea {
         "defaultValue": string;
         /**
@@ -2206,6 +2485,24 @@ declare global {
     var HTMLEclAccordionItemElement: {
         prototype: HTMLEclAccordionItemElement;
         new (): HTMLEclAccordionItemElement;
+    };
+    interface HTMLEclAddToCalendarElement extends Components.EclAddToCalendar, HTMLStencilElement {
+    }
+    var HTMLEclAddToCalendarElement: {
+        prototype: HTMLEclAddToCalendarElement;
+        new (): HTMLEclAddToCalendarElement;
+    };
+    interface HTMLEclAnimatedNumbersElement extends Components.EclAnimatedNumbers, HTMLStencilElement {
+    }
+    var HTMLEclAnimatedNumbersElement: {
+        prototype: HTMLEclAnimatedNumbersElement;
+        new (): HTMLEclAnimatedNumbersElement;
+    };
+    interface HTMLEclAnimatedNumbersItemElement extends Components.EclAnimatedNumbersItem, HTMLStencilElement {
+    }
+    var HTMLEclAnimatedNumbersItemElement: {
+        prototype: HTMLEclAnimatedNumbersItemElement;
+        new (): HTMLEclAnimatedNumbersItemElement;
     };
     interface HTMLEclBannerElement extends Components.EclBanner, HTMLStencilElement {
     }
@@ -2587,6 +2884,12 @@ declare global {
         prototype: HTMLEclPageInformationElement;
         new (): HTMLEclPageInformationElement;
     };
+    interface HTMLEclPageSummaryElement extends Components.EclPageSummary, HTMLStencilElement {
+    }
+    var HTMLEclPageSummaryElement: {
+        prototype: HTMLEclPageSummaryElement;
+        new (): HTMLEclPageSummaryElement;
+    };
     interface HTMLEclPaginationElement extends Components.EclPagination, HTMLStencilElement {
     }
     var HTMLEclPaginationElement: {
@@ -2610,6 +2913,18 @@ declare global {
     var HTMLEclPopoverElement: {
         prototype: HTMLEclPopoverElement;
         new (): HTMLEclPopoverElement;
+    };
+    interface HTMLEclQuizElement extends Components.EclQuiz, HTMLStencilElement {
+    }
+    var HTMLEclQuizElement: {
+        prototype: HTMLEclQuizElement;
+        new (): HTMLEclQuizElement;
+    };
+    interface HTMLEclQuizCardElement extends Components.EclQuizCard, HTMLStencilElement {
+    }
+    var HTMLEclQuizCardElement: {
+        prototype: HTMLEclQuizCardElement;
+        new (): HTMLEclQuizCardElement;
     };
     interface HTMLEclRangeElementEventMap {
         "inputFocus": FocusEvent;
@@ -2775,6 +3090,12 @@ declare global {
         prototype: HTMLEclTextElement;
         new (): HTMLEclTextElement;
     };
+    interface HTMLEclTextMediaElement extends Components.EclTextMedia, HTMLStencilElement {
+    }
+    var HTMLEclTextMediaElement: {
+        prototype: HTMLEclTextMediaElement;
+        new (): HTMLEclTextMediaElement;
+    };
     interface HTMLEclTextareaElementEventMap {
         "inputFocus": FocusEvent;
         "inputBlur": FocusEvent;
@@ -2821,6 +3142,9 @@ declare global {
     interface HTMLElementTagNameMap {
         "ecl-accordion": HTMLEclAccordionElement;
         "ecl-accordion-item": HTMLEclAccordionItemElement;
+        "ecl-add-to-calendar": HTMLEclAddToCalendarElement;
+        "ecl-animated-numbers": HTMLEclAnimatedNumbersElement;
+        "ecl-animated-numbers-item": HTMLEclAnimatedNumbersItemElement;
         "ecl-banner": HTMLEclBannerElement;
         "ecl-blockquote": HTMLEclBlockquoteElement;
         "ecl-breadcrumb": HTMLEclBreadcrumbElement;
@@ -2880,10 +3204,13 @@ declare global {
         "ecl-page-header": HTMLEclPageHeaderElement;
         "ecl-page-header-meta-item": HTMLEclPageHeaderMetaItemElement;
         "ecl-page-information": HTMLEclPageInformationElement;
+        "ecl-page-summary": HTMLEclPageSummaryElement;
         "ecl-pagination": HTMLEclPaginationElement;
         "ecl-pagination-item": HTMLEclPaginationItemElement;
         "ecl-picture": HTMLEclPictureElement;
         "ecl-popover": HTMLEclPopoverElement;
+        "ecl-quiz": HTMLEclQuizElement;
+        "ecl-quiz-card": HTMLEclQuizCardElement;
         "ecl-range": HTMLEclRangeElement;
         "ecl-rating-field": HTMLEclRatingFieldElement;
         "ecl-rating-star": HTMLEclRatingStarElement;
@@ -2903,6 +3230,7 @@ declare global {
         "ecl-tag": HTMLEclTagElement;
         "ecl-tag-set": HTMLEclTagSetElement;
         "ecl-text": HTMLEclTextElement;
+        "ecl-text-media": HTMLEclTextMediaElement;
         "ecl-textarea": HTMLEclTextareaElement;
         "ecl-timeline": HTMLEclTimelineElement;
         "ecl-timeline-item": HTMLEclTimelineItemElement;
@@ -2929,6 +3257,75 @@ declare namespace LocalJSX {
         "label"?: string;
         "styleClass"?: string;
         "theme"?: string;
+    }
+    interface EclAddToCalendar {
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        "eventTitle"?: string;
+        /**
+          * @default false
+         */
+        "fullWidth"?: boolean;
+        "meta"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+        /**
+          * @default true
+         */
+        "withButton"?: boolean;
+    }
+    interface EclAnimatedNumbers {
+        /**
+          * @default false
+         */
+        "border"?: boolean;
+        /**
+          * @default true
+         */
+        "counterColor"?: boolean;
+        /**
+          * @default false
+         */
+        "fullWidth"?: boolean;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
+        /**
+          * @default ''
+         */
+        "sources"?: string;
+        /**
+          * @default ''
+         */
+        "sourcesLabel"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        /**
+          * @default false
+         */
+        "withBackground"?: boolean;
+    }
+    interface EclAnimatedNumbersItem {
+        "category"?: string;
+        /**
+          * @default true
+         */
+        "counterColor"?: boolean;
+        "description"?: string;
+        "icon"?: string;
+        "itemPrefix"?: string;
+        "itemPrefixLabel"?: string;
+        "itemSuffix"?: string;
+        "itemSuffixLabel"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "value"?: string;
     }
     interface EclBanner {
         "bannerTitle"?: string;
@@ -2961,6 +3358,10 @@ declare namespace LocalJSX {
           * @default 'm'
          */
         "fontSize"?: string;
+        /**
+          * @default 'light'
+         */
+        "fontWeight"?: string;
         /**
           * @default false
          */
@@ -3438,6 +3839,7 @@ declare namespace LocalJSX {
         "mediaBehavior"?: string;
         "mediaCaption"?: string;
         "mediaCredit"?: string;
+        "microTitle"?: string;
         /**
           * @default 'left'
          */
@@ -3752,9 +4154,10 @@ declare namespace LocalJSX {
     interface EclGrid {
         "breakpoint"?: string;
         /**
+          * Supported formats:  columns="6"  columns='{   "s": 12,   "m": 6,   "l": 4 }'
           * @default 12
          */
-        "columns"?: number;
+        "columns"?: number | string;
         /**
           * @default false
          */
@@ -4027,6 +4430,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "autoplay"?: boolean;
+        /**
+          * @default 'bottom'
+         */
+        "captionPosition"?: string;
         "credit"?: string;
         /**
           * @default false
@@ -4050,6 +4457,7 @@ declare namespace LocalJSX {
           * @default false
          */
         "noScript"?: boolean;
+        "poster"?: string;
         /**
           * @default ''
          */
@@ -4062,6 +4470,7 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "tracks"?: string;
+        "videoTitle"?: string;
     }
     interface EclMegaMenu {
         "ariaLabel"?: string;
@@ -4385,6 +4794,40 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
     }
+    interface EclPageSummary {
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
+          * @default ''
+         */
+        "elId"?: string;
+        /**
+          * @default true
+         */
+        "hasDescription"?: boolean;
+        /**
+          * @default ''
+         */
+        "icon"?: string;
+        /**
+          * @default 'phosphor'
+         */
+        "iconFamily"?: string;
+        /**
+          * @default ''
+         */
+        "itemTitle"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        /**
+          * @default 'ec'
+         */
+        "theme"?: string;
+    }
     interface EclPagination {
         /**
           * @default ''
@@ -4449,6 +4892,55 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
         "toggleLabel"?: string;
+    }
+    interface EclQuiz {
+        "description"?: string;
+        /**
+          * @default false
+         */
+        "fullWidth"?: boolean;
+        "itemId"?: string;
+        "nextLabel"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
+        "prevLabel"?: string;
+        "quizTitle"?: string;
+        "skipText"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        /**
+          * @default "reveal"
+         */
+        "variant"?: string;
+        /**
+          * @default false
+         */
+        "withBackground"?: boolean;
+    }
+    interface EclQuizCard {
+        "answer"?: string;
+        "answerTitle"?: string;
+        "backText"?: string;
+        "category"?: string;
+        "errorCategory"?: string;
+        "flipText"?: string;
+        /**
+          * @default `ecl-quiz-item-${Math.random().toString(36).substr(2, 9)}`
+         */
+        "itemId"?: string;
+        "mainIcon"?: string;
+        "options"?: string;
+        "question"?: string;
+        "quizName"?: string;
+        "styleClass"?: string;
+        "successCategory"?: string;
+        "theme"?: string;
+        /**
+          * @default 'reveal'
+         */
+        "variant"?: string;
     }
     interface EclRange {
         "defaultValue"?: string;
@@ -4615,9 +5107,14 @@ declare namespace LocalJSX {
         "multipleAllText"?: string;
         "multipleClearAllText"?: string;
         "multipleCloseText"?: string;
+        "multipleCounterText"?: string;
         "multiplePlaceholder"?: string;
         "multipleSearchNoResultsText"?: string;
         "multipleSearchText"?: string;
+        /**
+          * @default false
+         */
+        "multipleSubmit"?: boolean;
         "name"?: string;
         /**
           * @default false
@@ -4639,43 +5136,97 @@ declare namespace LocalJSX {
         "width"?: string;
     }
     interface EclSiteHeader {
+        /**
+          * @default ''
+         */
         "bannerTop"?: string;
+        /**
+          * @default ''
+         */
         "bannerTopLink"?: string;
+        /**
+          * @default ''
+         */
         "closeLabel"?: string;
+        /**
+          * @default ''
+         */
         "euLabel"?: string;
+        /**
+          * @default ''
+         */
         "langCode"?: string;
+        /**
+          * @default ''
+         */
         "language"?: string;
+        /**
+          * @default ''
+         */
         "languageAriaLabel"?: string;
         /**
           * @default false
          */
         "languageBlock"?: boolean;
+        /**
+          * @default ''
+         */
         "languageId"?: string;
+        /**
+          * @default ''
+         */
         "languageTitle"?: string;
         /**
           * @default false
          */
         "logged"?: boolean;
+        /**
+          * @default ''
+         */
         "loggedInText"?: string;
         /**
           * @default false
          */
         "loginBlock"?: boolean;
+        /**
+          * @default ''
+         */
         "loginLink"?: string;
+        /**
+          * @default ''
+         */
         "loginText"?: string;
+        /**
+          * @default ''
+         */
         "logo"?: string;
+        /**
+          * @default ''
+         */
         "logoAlt"?: string;
         /**
           * @default 'l'
          */
         "logoSize"?: string;
+        /**
+          * @default ''
+         */
         "logoTitle"?: string;
+        /**
+          * @default ''
+         */
         "logoutLink"?: string;
+        /**
+          * @default ''
+         */
         "logoutText"?: string;
         /**
           * @default false
          */
         "noScript"?: boolean;
+        /**
+          * @default ''
+         */
         "nonEuLabel"?: string;
         /**
           * @default true
@@ -4685,14 +5236,29 @@ declare namespace LocalJSX {
           * @default `ecl-site-header-search-form-${Math.random().toString(36).slice(2, 10)}`
          */
         "searchFormId"?: string;
+        /**
+          * @default ''
+         */
         "searchPlaceholder"?: string;
+        /**
+          * @default ''
+         */
         "searchText"?: string;
+        /**
+          * @default ''
+         */
         "siteName"?: string;
         /**
           * @default false
          */
         "siteNameMobileOnly"?: boolean;
+        /**
+          * @default ''
+         */
         "styleClass"?: string;
+        /**
+          * @default 'ec'
+         */
         "theme"?: string;
     }
     interface EclSocialMediaFollow {
@@ -4987,6 +5553,47 @@ declare namespace LocalJSX {
         "type"?: 'display' | 'heading' | 'paragraph' | 'microcopy' | undefined;
         "weight"?: 'thin' | 'extra-light' | 'light' | 'regular' | 'medium' | 'semi-bold' | 'bold' | 'extra-bold' | 'black' | undefined;
     }
+    interface EclTextMedia {
+        "colorMode"?: string;
+        /**
+          * @default `ecl-text-media-${Date.now().toString(16) + Math.random().toString(16).slice(2,10)}`
+         */
+        "elId"?: string;
+        /**
+          * @default false
+         */
+        "fullWidth"?: boolean;
+        /**
+          * @default true
+         */
+        "hasDescription"?: boolean;
+        /**
+          * @default true
+         */
+        "hasMedia"?: boolean;
+        "image"?: string;
+        "itemTitle"?: string;
+        "linkLabel"?: string;
+        "linkPath"?: string;
+        /**
+          * @default 'secondary-inverted'
+         */
+        "linkType"?: string;
+        "mediaAnchor"?: string;
+        "mediaCaption"?: string;
+        "mediaCredit"?: string;
+        /**
+          * @default 'right'
+         */
+        "mediaPosition"?: string;
+        "microTitle"?: string;
+        "sources"?: string;
+        "styleClass"?: string;
+        "theme"?: string;
+        "tracks"?: string;
+        "variant"?: string;
+        "videoTitle"?: string;
+    }
     interface EclTextarea {
         "defaultValue"?: string;
         /**
@@ -5103,6 +5710,39 @@ declare namespace LocalJSX {
         "expanded": boolean;
         "theme": string;
     }
+    interface EclAddToCalendarAttributes {
+        "styleClass": string;
+        "theme": string;
+        "colorMode": string;
+        "eventTitle": string;
+        "meta": string;
+        "fullWidth": boolean;
+        "withButton": boolean;
+    }
+    interface EclAnimatedNumbersAttributes {
+        "theme": string;
+        "styleClass": string;
+        "border": boolean;
+        "withBackground": boolean;
+        "fullWidth": boolean;
+        "noScript": boolean;
+        "counterColor": boolean;
+        "sources": string;
+        "sourcesLabel": string;
+    }
+    interface EclAnimatedNumbersItemAttributes {
+        "theme": string;
+        "styleClass": string;
+        "category": string;
+        "itemPrefix": string;
+        "counterColor": boolean;
+        "itemSuffix": string;
+        "icon": string;
+        "description": string;
+        "itemPrefixLabel": string;
+        "itemSuffixLabel": string;
+        "value": string;
+    }
     interface EclBannerAttributes {
         "colorMode": string;
         "theme": string;
@@ -5126,6 +5766,7 @@ declare namespace LocalJSX {
         "srPause": string;
         "fontColor": string;
         "fontSize": string;
+        "fontWeight": string;
         "credit": string;
         "size": string;
         "ctaClicked": boolean;
@@ -5329,6 +5970,7 @@ declare namespace LocalJSX {
         "linkType": string;
         "linkPath": string;
         "linkLabel": string;
+        "microTitle": string;
         "mediaCaption": string;
         "mediaBehavior": string;
         "mediaAnchor": string;
@@ -5507,7 +6149,7 @@ declare namespace LocalJSX {
     interface EclGridAttributes {
         "styleClass": string;
         "theme": string;
-        "columns": number;
+        "columns": string;
         "breakpoint": string;
         "row": boolean;
         "container": boolean;
@@ -5633,9 +6275,11 @@ declare namespace LocalJSX {
         "imageAlt": string;
         "image": string;
         "imageAnchor": string;
+        "captionPosition": string;
         "fullWidth": boolean;
         "sources": string;
         "tracks": string;
+        "poster": string;
         "autoplay": boolean;
         "hasCaption": boolean;
         "credit": string;
@@ -5646,6 +6290,7 @@ declare namespace LocalJSX {
         "srVideoAudio": string;
         "noScript": boolean;
         "embeddedMedia": boolean;
+        "videoTitle": string;
     }
     interface EclMegaMenuAttributes {
         "styleClass": string;
@@ -5810,6 +6455,16 @@ declare namespace LocalJSX {
         "styleClass": string;
         "theme": string;
     }
+    interface EclPageSummaryAttributes {
+        "theme": string;
+        "elId": string;
+        "itemTitle": string;
+        "styleClass": string;
+        "icon": string;
+        "iconFamily": string;
+        "colorMode": string;
+        "hasDescription": boolean;
+    }
     interface EclPaginationAttributes {
         "styleClass": string;
         "theme": string;
@@ -5844,6 +6499,37 @@ declare namespace LocalJSX {
         "icon": string;
         "indicator": boolean;
         "indicatorValue": number;
+    }
+    interface EclQuizAttributes {
+        "theme": string;
+        "styleClass": string;
+        "noScript": boolean;
+        "itemId": string;
+        "quizTitle": string;
+        "description": string;
+        "withBackground": boolean;
+        "fullWidth": boolean;
+        "variant": string;
+        "prevLabel": string;
+        "nextLabel": string;
+        "skipText": string;
+    }
+    interface EclQuizCardAttributes {
+        "theme": string;
+        "styleClass": string;
+        "category": string;
+        "successCategory": string;
+        "errorCategory": string;
+        "flipText": string;
+        "backText": string;
+        "question": string;
+        "quizName": string;
+        "mainIcon": string;
+        "answer": string;
+        "answerTitle": string;
+        "itemId": string;
+        "options": string;
+        "variant": string;
     }
     interface EclRangeAttributes {
         "theme": string;
@@ -5928,6 +6614,8 @@ declare namespace LocalJSX {
         "multipleAllText": string;
         "multipleClearAllText": string;
         "multipleCloseText": string;
+        "multipleCounterText": string;
+        "multipleSubmit": boolean;
         "inputValue": string;
         "hasChanged": boolean;
     }
@@ -6099,6 +6787,29 @@ declare namespace LocalJSX {
         "colorModeTypography": string;
         "itemId": string;
     }
+    interface EclTextMediaAttributes {
+        "theme": string;
+        "colorMode": string;
+        "elId": string;
+        "styleClass": string;
+        "variant": string;
+        "fullWidth": boolean;
+        "hasMedia": boolean;
+        "itemTitle": string;
+        "microTitle": string;
+        "hasDescription": boolean;
+        "mediaPosition": string;
+        "linkLabel": string;
+        "linkPath": string;
+        "mediaCaption": string;
+        "mediaAnchor": string;
+        "mediaCredit": string;
+        "image": string;
+        "sources": string;
+        "tracks": string;
+        "videoTitle": string;
+        "linkType": string;
+    }
     interface EclTextareaAttributes {
         "theme": string;
         "styleClass": string;
@@ -6153,6 +6864,9 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "ecl-accordion": Omit<EclAccordion, keyof EclAccordionAttributes> & { [K in keyof EclAccordion & keyof EclAccordionAttributes]?: EclAccordion[K] } & { [K in keyof EclAccordion & keyof EclAccordionAttributes as `attr:${K}`]?: EclAccordionAttributes[K] } & { [K in keyof EclAccordion & keyof EclAccordionAttributes as `prop:${K}`]?: EclAccordion[K] };
         "ecl-accordion-item": Omit<EclAccordionItem, keyof EclAccordionItemAttributes> & { [K in keyof EclAccordionItem & keyof EclAccordionItemAttributes]?: EclAccordionItem[K] } & { [K in keyof EclAccordionItem & keyof EclAccordionItemAttributes as `attr:${K}`]?: EclAccordionItemAttributes[K] } & { [K in keyof EclAccordionItem & keyof EclAccordionItemAttributes as `prop:${K}`]?: EclAccordionItem[K] };
+        "ecl-add-to-calendar": Omit<EclAddToCalendar, keyof EclAddToCalendarAttributes> & { [K in keyof EclAddToCalendar & keyof EclAddToCalendarAttributes]?: EclAddToCalendar[K] } & { [K in keyof EclAddToCalendar & keyof EclAddToCalendarAttributes as `attr:${K}`]?: EclAddToCalendarAttributes[K] } & { [K in keyof EclAddToCalendar & keyof EclAddToCalendarAttributes as `prop:${K}`]?: EclAddToCalendar[K] };
+        "ecl-animated-numbers": Omit<EclAnimatedNumbers, keyof EclAnimatedNumbersAttributes> & { [K in keyof EclAnimatedNumbers & keyof EclAnimatedNumbersAttributes]?: EclAnimatedNumbers[K] } & { [K in keyof EclAnimatedNumbers & keyof EclAnimatedNumbersAttributes as `attr:${K}`]?: EclAnimatedNumbersAttributes[K] } & { [K in keyof EclAnimatedNumbers & keyof EclAnimatedNumbersAttributes as `prop:${K}`]?: EclAnimatedNumbers[K] };
+        "ecl-animated-numbers-item": Omit<EclAnimatedNumbersItem, keyof EclAnimatedNumbersItemAttributes> & { [K in keyof EclAnimatedNumbersItem & keyof EclAnimatedNumbersItemAttributes]?: EclAnimatedNumbersItem[K] } & { [K in keyof EclAnimatedNumbersItem & keyof EclAnimatedNumbersItemAttributes as `attr:${K}`]?: EclAnimatedNumbersItemAttributes[K] } & { [K in keyof EclAnimatedNumbersItem & keyof EclAnimatedNumbersItemAttributes as `prop:${K}`]?: EclAnimatedNumbersItem[K] };
         "ecl-banner": Omit<EclBanner, keyof EclBannerAttributes> & { [K in keyof EclBanner & keyof EclBannerAttributes]?: EclBanner[K] } & { [K in keyof EclBanner & keyof EclBannerAttributes as `attr:${K}`]?: EclBannerAttributes[K] } & { [K in keyof EclBanner & keyof EclBannerAttributes as `prop:${K}`]?: EclBanner[K] };
         "ecl-blockquote": Omit<EclBlockquote, keyof EclBlockquoteAttributes> & { [K in keyof EclBlockquote & keyof EclBlockquoteAttributes]?: EclBlockquote[K] } & { [K in keyof EclBlockquote & keyof EclBlockquoteAttributes as `attr:${K}`]?: EclBlockquoteAttributes[K] } & { [K in keyof EclBlockquote & keyof EclBlockquoteAttributes as `prop:${K}`]?: EclBlockquote[K] };
         "ecl-breadcrumb": Omit<EclBreadcrumb, keyof EclBreadcrumbAttributes> & { [K in keyof EclBreadcrumb & keyof EclBreadcrumbAttributes]?: EclBreadcrumb[K] } & { [K in keyof EclBreadcrumb & keyof EclBreadcrumbAttributes as `attr:${K}`]?: EclBreadcrumbAttributes[K] } & { [K in keyof EclBreadcrumb & keyof EclBreadcrumbAttributes as `prop:${K}`]?: EclBreadcrumb[K] };
@@ -6212,10 +6926,13 @@ declare namespace LocalJSX {
         "ecl-page-header": Omit<EclPageHeader, keyof EclPageHeaderAttributes> & { [K in keyof EclPageHeader & keyof EclPageHeaderAttributes]?: EclPageHeader[K] } & { [K in keyof EclPageHeader & keyof EclPageHeaderAttributes as `attr:${K}`]?: EclPageHeaderAttributes[K] } & { [K in keyof EclPageHeader & keyof EclPageHeaderAttributes as `prop:${K}`]?: EclPageHeader[K] };
         "ecl-page-header-meta-item": Omit<EclPageHeaderMetaItem, keyof EclPageHeaderMetaItemAttributes> & { [K in keyof EclPageHeaderMetaItem & keyof EclPageHeaderMetaItemAttributes]?: EclPageHeaderMetaItem[K] } & { [K in keyof EclPageHeaderMetaItem & keyof EclPageHeaderMetaItemAttributes as `attr:${K}`]?: EclPageHeaderMetaItemAttributes[K] } & { [K in keyof EclPageHeaderMetaItem & keyof EclPageHeaderMetaItemAttributes as `prop:${K}`]?: EclPageHeaderMetaItem[K] };
         "ecl-page-information": Omit<EclPageInformation, keyof EclPageInformationAttributes> & { [K in keyof EclPageInformation & keyof EclPageInformationAttributes]?: EclPageInformation[K] } & { [K in keyof EclPageInformation & keyof EclPageInformationAttributes as `attr:${K}`]?: EclPageInformationAttributes[K] } & { [K in keyof EclPageInformation & keyof EclPageInformationAttributes as `prop:${K}`]?: EclPageInformation[K] };
+        "ecl-page-summary": Omit<EclPageSummary, keyof EclPageSummaryAttributes> & { [K in keyof EclPageSummary & keyof EclPageSummaryAttributes]?: EclPageSummary[K] } & { [K in keyof EclPageSummary & keyof EclPageSummaryAttributes as `attr:${K}`]?: EclPageSummaryAttributes[K] } & { [K in keyof EclPageSummary & keyof EclPageSummaryAttributes as `prop:${K}`]?: EclPageSummary[K] };
         "ecl-pagination": Omit<EclPagination, keyof EclPaginationAttributes> & { [K in keyof EclPagination & keyof EclPaginationAttributes]?: EclPagination[K] } & { [K in keyof EclPagination & keyof EclPaginationAttributes as `attr:${K}`]?: EclPaginationAttributes[K] } & { [K in keyof EclPagination & keyof EclPaginationAttributes as `prop:${K}`]?: EclPagination[K] };
         "ecl-pagination-item": Omit<EclPaginationItem, keyof EclPaginationItemAttributes> & { [K in keyof EclPaginationItem & keyof EclPaginationItemAttributes]?: EclPaginationItem[K] } & { [K in keyof EclPaginationItem & keyof EclPaginationItemAttributes as `attr:${K}`]?: EclPaginationItemAttributes[K] } & { [K in keyof EclPaginationItem & keyof EclPaginationItemAttributes as `prop:${K}`]?: EclPaginationItem[K] };
         "ecl-picture": Omit<EclPicture, keyof EclPictureAttributes> & { [K in keyof EclPicture & keyof EclPictureAttributes]?: EclPicture[K] } & { [K in keyof EclPicture & keyof EclPictureAttributes as `attr:${K}`]?: EclPictureAttributes[K] } & { [K in keyof EclPicture & keyof EclPictureAttributes as `prop:${K}`]?: EclPicture[K] };
         "ecl-popover": Omit<EclPopover, keyof EclPopoverAttributes> & { [K in keyof EclPopover & keyof EclPopoverAttributes]?: EclPopover[K] } & { [K in keyof EclPopover & keyof EclPopoverAttributes as `attr:${K}`]?: EclPopoverAttributes[K] } & { [K in keyof EclPopover & keyof EclPopoverAttributes as `prop:${K}`]?: EclPopover[K] };
+        "ecl-quiz": Omit<EclQuiz, keyof EclQuizAttributes> & { [K in keyof EclQuiz & keyof EclQuizAttributes]?: EclQuiz[K] } & { [K in keyof EclQuiz & keyof EclQuizAttributes as `attr:${K}`]?: EclQuizAttributes[K] } & { [K in keyof EclQuiz & keyof EclQuizAttributes as `prop:${K}`]?: EclQuiz[K] };
+        "ecl-quiz-card": Omit<EclQuizCard, keyof EclQuizCardAttributes> & { [K in keyof EclQuizCard & keyof EclQuizCardAttributes]?: EclQuizCard[K] } & { [K in keyof EclQuizCard & keyof EclQuizCardAttributes as `attr:${K}`]?: EclQuizCardAttributes[K] } & { [K in keyof EclQuizCard & keyof EclQuizCardAttributes as `prop:${K}`]?: EclQuizCard[K] };
         "ecl-range": Omit<EclRange, keyof EclRangeAttributes> & { [K in keyof EclRange & keyof EclRangeAttributes]?: EclRange[K] } & { [K in keyof EclRange & keyof EclRangeAttributes as `attr:${K}`]?: EclRangeAttributes[K] } & { [K in keyof EclRange & keyof EclRangeAttributes as `prop:${K}`]?: EclRange[K] };
         "ecl-rating-field": Omit<EclRatingField, keyof EclRatingFieldAttributes> & { [K in keyof EclRatingField & keyof EclRatingFieldAttributes]?: EclRatingField[K] } & { [K in keyof EclRatingField & keyof EclRatingFieldAttributes as `attr:${K}`]?: EclRatingFieldAttributes[K] } & { [K in keyof EclRatingField & keyof EclRatingFieldAttributes as `prop:${K}`]?: EclRatingField[K] };
         "ecl-rating-star": Omit<EclRatingStar, keyof EclRatingStarAttributes> & { [K in keyof EclRatingStar & keyof EclRatingStarAttributes]?: EclRatingStar[K] } & { [K in keyof EclRatingStar & keyof EclRatingStarAttributes as `attr:${K}`]?: EclRatingStarAttributes[K] } & { [K in keyof EclRatingStar & keyof EclRatingStarAttributes as `prop:${K}`]?: EclRatingStar[K] };
@@ -6235,6 +6952,7 @@ declare namespace LocalJSX {
         "ecl-tag": Omit<EclTag, keyof EclTagAttributes> & { [K in keyof EclTag & keyof EclTagAttributes]?: EclTag[K] } & { [K in keyof EclTag & keyof EclTagAttributes as `attr:${K}`]?: EclTagAttributes[K] } & { [K in keyof EclTag & keyof EclTagAttributes as `prop:${K}`]?: EclTag[K] };
         "ecl-tag-set": Omit<EclTagSet, keyof EclTagSetAttributes> & { [K in keyof EclTagSet & keyof EclTagSetAttributes]?: EclTagSet[K] } & { [K in keyof EclTagSet & keyof EclTagSetAttributes as `attr:${K}`]?: EclTagSetAttributes[K] } & { [K in keyof EclTagSet & keyof EclTagSetAttributes as `prop:${K}`]?: EclTagSet[K] };
         "ecl-text": Omit<EclText, keyof EclTextAttributes> & { [K in keyof EclText & keyof EclTextAttributes]?: EclText[K] } & { [K in keyof EclText & keyof EclTextAttributes as `attr:${K}`]?: EclTextAttributes[K] } & { [K in keyof EclText & keyof EclTextAttributes as `prop:${K}`]?: EclText[K] };
+        "ecl-text-media": Omit<EclTextMedia, keyof EclTextMediaAttributes> & { [K in keyof EclTextMedia & keyof EclTextMediaAttributes]?: EclTextMedia[K] } & { [K in keyof EclTextMedia & keyof EclTextMediaAttributes as `attr:${K}`]?: EclTextMediaAttributes[K] } & { [K in keyof EclTextMedia & keyof EclTextMediaAttributes as `prop:${K}`]?: EclTextMedia[K] };
         "ecl-textarea": Omit<EclTextarea, keyof EclTextareaAttributes> & { [K in keyof EclTextarea & keyof EclTextareaAttributes]?: EclTextarea[K] } & { [K in keyof EclTextarea & keyof EclTextareaAttributes as `attr:${K}`]?: EclTextareaAttributes[K] } & { [K in keyof EclTextarea & keyof EclTextareaAttributes as `prop:${K}`]?: EclTextarea[K] };
         "ecl-timeline": Omit<EclTimeline, keyof EclTimelineAttributes> & { [K in keyof EclTimeline & keyof EclTimelineAttributes]?: EclTimeline[K] } & { [K in keyof EclTimeline & keyof EclTimelineAttributes as `attr:${K}`]?: EclTimelineAttributes[K] } & { [K in keyof EclTimeline & keyof EclTimelineAttributes as `prop:${K}`]?: EclTimeline[K] };
         "ecl-timeline-item": Omit<EclTimelineItem, keyof EclTimelineItemAttributes> & { [K in keyof EclTimelineItem & keyof EclTimelineItemAttributes]?: EclTimelineItem[K] } & { [K in keyof EclTimelineItem & keyof EclTimelineItemAttributes as `attr:${K}`]?: EclTimelineItemAttributes[K] } & { [K in keyof EclTimelineItem & keyof EclTimelineItemAttributes as `prop:${K}`]?: EclTimelineItem[K] };
@@ -6248,6 +6966,9 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "ecl-accordion": LocalJSX.IntrinsicElements["ecl-accordion"] & JSXBase.HTMLAttributes<HTMLEclAccordionElement>;
             "ecl-accordion-item": LocalJSX.IntrinsicElements["ecl-accordion-item"] & JSXBase.HTMLAttributes<HTMLEclAccordionItemElement>;
+            "ecl-add-to-calendar": LocalJSX.IntrinsicElements["ecl-add-to-calendar"] & JSXBase.HTMLAttributes<HTMLEclAddToCalendarElement>;
+            "ecl-animated-numbers": LocalJSX.IntrinsicElements["ecl-animated-numbers"] & JSXBase.HTMLAttributes<HTMLEclAnimatedNumbersElement>;
+            "ecl-animated-numbers-item": LocalJSX.IntrinsicElements["ecl-animated-numbers-item"] & JSXBase.HTMLAttributes<HTMLEclAnimatedNumbersItemElement>;
             "ecl-banner": LocalJSX.IntrinsicElements["ecl-banner"] & JSXBase.HTMLAttributes<HTMLEclBannerElement>;
             "ecl-blockquote": LocalJSX.IntrinsicElements["ecl-blockquote"] & JSXBase.HTMLAttributes<HTMLEclBlockquoteElement>;
             "ecl-breadcrumb": LocalJSX.IntrinsicElements["ecl-breadcrumb"] & JSXBase.HTMLAttributes<HTMLEclBreadcrumbElement>;
@@ -6307,10 +7028,13 @@ declare module "@stencil/core" {
             "ecl-page-header": LocalJSX.IntrinsicElements["ecl-page-header"] & JSXBase.HTMLAttributes<HTMLEclPageHeaderElement>;
             "ecl-page-header-meta-item": LocalJSX.IntrinsicElements["ecl-page-header-meta-item"] & JSXBase.HTMLAttributes<HTMLEclPageHeaderMetaItemElement>;
             "ecl-page-information": LocalJSX.IntrinsicElements["ecl-page-information"] & JSXBase.HTMLAttributes<HTMLEclPageInformationElement>;
+            "ecl-page-summary": LocalJSX.IntrinsicElements["ecl-page-summary"] & JSXBase.HTMLAttributes<HTMLEclPageSummaryElement>;
             "ecl-pagination": LocalJSX.IntrinsicElements["ecl-pagination"] & JSXBase.HTMLAttributes<HTMLEclPaginationElement>;
             "ecl-pagination-item": LocalJSX.IntrinsicElements["ecl-pagination-item"] & JSXBase.HTMLAttributes<HTMLEclPaginationItemElement>;
             "ecl-picture": LocalJSX.IntrinsicElements["ecl-picture"] & JSXBase.HTMLAttributes<HTMLEclPictureElement>;
             "ecl-popover": LocalJSX.IntrinsicElements["ecl-popover"] & JSXBase.HTMLAttributes<HTMLEclPopoverElement>;
+            "ecl-quiz": LocalJSX.IntrinsicElements["ecl-quiz"] & JSXBase.HTMLAttributes<HTMLEclQuizElement>;
+            "ecl-quiz-card": LocalJSX.IntrinsicElements["ecl-quiz-card"] & JSXBase.HTMLAttributes<HTMLEclQuizCardElement>;
             "ecl-range": LocalJSX.IntrinsicElements["ecl-range"] & JSXBase.HTMLAttributes<HTMLEclRangeElement>;
             "ecl-rating-field": LocalJSX.IntrinsicElements["ecl-rating-field"] & JSXBase.HTMLAttributes<HTMLEclRatingFieldElement>;
             "ecl-rating-star": LocalJSX.IntrinsicElements["ecl-rating-star"] & JSXBase.HTMLAttributes<HTMLEclRatingStarElement>;
@@ -6330,6 +7054,7 @@ declare module "@stencil/core" {
             "ecl-tag": LocalJSX.IntrinsicElements["ecl-tag"] & JSXBase.HTMLAttributes<HTMLEclTagElement>;
             "ecl-tag-set": LocalJSX.IntrinsicElements["ecl-tag-set"] & JSXBase.HTMLAttributes<HTMLEclTagSetElement>;
             "ecl-text": LocalJSX.IntrinsicElements["ecl-text"] & JSXBase.HTMLAttributes<HTMLEclTextElement>;
+            "ecl-text-media": LocalJSX.IntrinsicElements["ecl-text-media"] & JSXBase.HTMLAttributes<HTMLEclTextMediaElement>;
             "ecl-textarea": LocalJSX.IntrinsicElements["ecl-textarea"] & JSXBase.HTMLAttributes<HTMLEclTextareaElement>;
             "ecl-timeline": LocalJSX.IntrinsicElements["ecl-timeline"] & JSXBase.HTMLAttributes<HTMLEclTimelineElement>;
             "ecl-timeline-item": LocalJSX.IntrinsicElements["ecl-timeline-item"] & JSXBase.HTMLAttributes<HTMLEclTimelineItemElement>;

@@ -39,34 +39,39 @@ const Template = (args) =>
   inline-title="${args.inlineTitle}"
 >
   <ecl-social-media-follow-item
-    icon="facebook"
-    share-path="http://facebook.com"
+    icon="mastodon"
+    family: 'networks',
+    share-path="http://mastodon.com"
   >
-    Facebook
-  </ecl-social-media-follow-item>
-  <ecl-social-media-follow-item
-    icon="twitter"
-    share-path="http://twitter.com"
-  >
-    Twitter
-  </ecl-social-media-follow-item>
-  <ecl-social-media-follow-item
-    icon="instagram"
-    share-path="http://instagram.com"
-  >
-    Instagram
+    Mastodon
   </ecl-social-media-follow-item>
   <ecl-social-media-follow-item
     icon="linkedin"
+    family: 'networks',
     share-path="http://linkedin.com"
   >
     Linkedin
   </ecl-social-media-follow-item>
   <ecl-social-media-follow-item
-    icon="telegram"
-    share-path="http://telegram.com"
+    icon="bluesky"
+    family: 'networks',
+    share-path="http://bluesky.com"
   >
-    Telegram
+    Bluesky
+  </ecl-social-media-follow-item>
+  <ecl-social-media-follow-item
+    icon="facebook"
+    family: 'networks',
+    share-path="http://facebook.com"
+  >
+    Facebook
+  </ecl-social-media-follow-item>
+  <ecl-social-media-follow-item
+    icon="youtube"
+    family: 'networks',
+    share-path="http://youtube.com"
+  >
+    YouTube
   </ecl-social-media-follow-item>
   <ecl-social-media-follow-item
     icon="chain"
