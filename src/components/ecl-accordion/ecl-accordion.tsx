@@ -1,4 +1,6 @@
 import { Component, Prop, h, Element, State } from '@stencil/core';
+import Accordion from "@ecl/accordion";
+declare const ECL: any;
 
 @Component({
   tag: 'ecl-accordion',
@@ -12,8 +14,10 @@ import { Component, Prop, h, Element, State } from '@stencil/core';
 
 export class EclAccordion {
   @Element() el: HTMLElement;
+  @Prop() noScript: boolean = false;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
+  @Prop() sidebar: boolean = false;
   @Prop() colorMode: string = '';
   @State() openItemId: string;
 
@@ -26,6 +30,10 @@ export class EclAccordion {
       `ecl-accordion`,
       this.styleClass
     ];
+
+    if (this.sidebar) {
+      styleClasses.push(`ecl-accordion--sidebar`);
+    }
 
     if (this.colorMode) {
       styleClasses.push(`ecl-color-mode--${this.colorMode}`);
@@ -48,6 +56,13 @@ export class EclAccordion {
         container.classList.toggle('is-last', index === items.length - 1);
       }
     });
+
+    if (!this.noScript && this.sidebar) {
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Accordion = Accordion;
+      const accordion = new Accordion(this.el.firstElementChild);
+      accordion.init();
+    }
   }
 
   render() {

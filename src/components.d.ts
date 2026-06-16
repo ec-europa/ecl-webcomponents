@@ -12,6 +12,14 @@ export namespace Components {
          */
         "colorMode": string;
         /**
+          * @default false
+         */
+        "noScript": boolean;
+        /**
+          * @default false
+         */
+        "sidebar": boolean;
+        /**
           * @default ''
          */
         "styleClass": string;
@@ -20,6 +28,10 @@ export namespace Components {
     interface EclAccordionItem {
         "expanded": boolean;
         "label": string;
+        /**
+          * @default false
+         */
+        "sidebar": boolean;
         "styleClass": string;
         "theme": string;
     }
@@ -3327,6 +3339,14 @@ declare namespace LocalJSX {
          */
         "colorMode"?: string;
         /**
+          * @default false
+         */
+        "noScript"?: boolean;
+        /**
+          * @default false
+         */
+        "sidebar"?: boolean;
+        /**
           * @default ''
          */
         "styleClass"?: string;
@@ -3335,6 +3355,10 @@ declare namespace LocalJSX {
     interface EclAccordionItem {
         "expanded"?: boolean;
         "label"?: string;
+        /**
+          * @default false
+         */
+        "sidebar"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
     }
@@ -5846,13 +5870,16 @@ declare namespace LocalJSX {
     }
 
     interface EclAccordionAttributes {
+        "noScript": boolean;
         "styleClass": string;
         "theme": string;
+        "sidebar": boolean;
         "colorMode": string;
     }
     interface EclAccordionItemAttributes {
         "styleClass": string;
         "label": string;
+        "sidebar": boolean;
         "expanded": boolean;
         "theme": string;
     }

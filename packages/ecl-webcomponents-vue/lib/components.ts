@@ -10,8 +10,10 @@ import type { JSX } from '@ecl/ecl-webcomponents';
 
 
 export const EclAccordion: StencilVueComponent<JSX.EclAccordion> = /*@__PURE__*/ defineContainer<JSX.EclAccordion>('ecl-accordion', undefined, [
+  'noScript',
   'styleClass',
   'theme',
+  'sidebar',
   'colorMode'
 ]);
 
@@ -19,6 +21,7 @@ export const EclAccordion: StencilVueComponent<JSX.EclAccordion> = /*@__PURE__*/
 export const EclAccordionItem: StencilVueComponent<JSX.EclAccordionItem> = /*@__PURE__*/ defineContainer<JSX.EclAccordionItem>('ecl-accordion-item', undefined, [
   'styleClass',
   'label',
+  'sidebar',
   'expanded',
   'theme'
 ]);

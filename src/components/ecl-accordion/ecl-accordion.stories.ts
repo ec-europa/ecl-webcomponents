@@ -35,8 +35,45 @@ const Template = (args) =>
     >
       Building a robust foreign policy based on an ambitious neighbourhood policy with 16 of its closest eastern and southern neighbours and a comprehensive partnership with Africa.
       Promoting global peace, stability, democracy and human rights. Ensuring a robust trade policy in line with multilateralism and the global rules-based international order. Taking greater responsibility for security and defence, while cooperating closely with NATO.
-    </ecl-accordion-item
+    </ecl-accordion-item>
   </ecl-accordion>`;
 
 export const Accordion = Template.bind({});
 Accordion.storyName = 'default';
+
+const TemplateSidebar = () =>
+  `<ecl-grid container>
+    <ecl-grid row>
+      <ecl-grid columns="3" breakpoint="l">
+        <ecl-accordion 
+          sidebar
+        >
+          <ecl-accordion-item
+            label="Filter by"
+            sidebar
+          >
+          <ecl-form-group label="Collapsible form">
+            <ecl-datepicker></ecl-datepicker>
+            <ecl-spacing value="m"></ecl-spacing>
+            <ecl-input type="text"></ecl-input>
+            <ecl-spacing value="m"></ecl-spacing>
+            <ecl-input type="checkbox" label="I accept the terms"></ecl-input>
+          </ecl-form-group>
+          </ecl-accordion-item>
+        </ecl-accordion>
+      </ecl-grid>
+      <ecl-grid columns="9" breakpoint="l">
+        <ecl-spacing value="2xl"></ecl-spacing>
+        <ecl-text type="heading" level="4">Main content</ecl-text>
+        <ecl-spacing value="s"></ecl-spacing>
+        <ecl-divider></ecl-divider>
+        <ecl-spacing value="l"></ecl-spacing>
+        <ecl-text type="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pretium hendrerit dolor in bibendum. Vivamus tincidunt tristique metus volutpat egestas. Duis accumsan, ante ac ornare rhoncus, lectus tortor venenatis sapien, vel mattis magna libero non tellus. In quis mattis diam. Duis ac lacus sed ligula efficitur ultricies sit amet at augue. 
+        </ecl-text>
+      </eclgrid>
+    </ecl-grid>
+  </ecl-grid>`;
+
+export const AccordionSidebar = TemplateSidebar.bind({});
+AccordionSidebar.storyName = 'collapsible sidebar';
