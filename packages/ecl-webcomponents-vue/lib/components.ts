@@ -1152,6 +1152,17 @@ export const EclSiteHeader: StencilVueComponent<JSX.EclSiteHeader> = /*@__PURE__
 ]);
 
 
+export const EclSloganTicker: StencilVueComponent<JSX.EclSloganTicker> = /*@__PURE__*/ defineContainer<JSX.EclSloganTicker>('ecl-slogan-ticker', undefined, [
+  'theme',
+  'styleClass',
+  'srPlay',
+  'srPause',
+  'noScript',
+  'colorMode',
+  'items'
+]);
+
+
 export const EclSocialMediaFollow: StencilVueComponent<JSX.EclSocialMediaFollow> = /*@__PURE__*/ defineContainer<JSX.EclSocialMediaFollow>('ecl-social-media-follow', undefined, [
   'theme',
   'styleClass',

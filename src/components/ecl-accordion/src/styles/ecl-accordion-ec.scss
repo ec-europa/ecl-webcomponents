@@ -3,6 +3,10 @@
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
+@use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $theme: theme.$theme,
+  $typography: var.$typography
+);
 @use '@ecl/accordion/accordion' with (
   $theme: theme.$theme,
   $accordion: var.$accordion

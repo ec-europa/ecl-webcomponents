@@ -4,6 +4,7 @@
   $theme: theme.$theme
 );
 @use '@ecl/mixins-typography/mixins' with (
+  $theme: theme.$theme,
   $typography: var.$typography
 );
 @use '@ecl/form-group/form-group' with (

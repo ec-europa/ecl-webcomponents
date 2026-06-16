@@ -5,6 +5,7 @@
 );
 @use '@ecl/layout-form/mixins' as layoutFormMixins;
 @use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $theme: theme.$theme,
   $typography: var.$typography
 );
 @use '@ecl/button/button' with (

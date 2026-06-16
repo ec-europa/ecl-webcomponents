@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-slogan-ticker renders 1`] = `
+<ecl-slogan-ticker color-mode="green" items="[&quot;GENERATE YOUR OWN ENERGY&quot;,&quot;SAVE TOGETHER&quot;,&quot;LOWER YOUR BILLS&quot;,&quot;Sustainability and inclusion&quot;,&quot;Creating opportunities&quot;]">
+  <div class="ecl-color-mode--green ecl-slogan-ticker" data-ecl-auto-initialized="true">
+    <div class="ecl-slogan-ticker__viewport" data-ecl-slogan-ticker-slider>
+      <ul class="ecl-slogan-ticker__track">
+        <li class="ecl-slogan-ticker__slide">
+          GENERATE YOUR OWN ENERGY
+        </li>
+        <li class="ecl-slogan-ticker__slide">
+          SAVE TOGETHER
+        </li>
+        <li class="ecl-slogan-ticker__slide">
+          LOWER YOUR BILLS
+        </li>
+        <li class="ecl-slogan-ticker__slide">
+          Sustainability and inclusion
+        </li>
+        <li class="ecl-slogan-ticker__slide">
+          Creating opportunities
+        </li>
+      </ul>
+    </div>
+    <div class="ecl-slogan-ticker__controls">
+      <ecl-button data-ecl-slogan-ticker-play hide-label="" style-class="ecl-slogan-ticker__play ecl-slogan-ticker__button sc-ecl-slogan-ticker-ec" type="button" variant="tertiary">
+        <ecl-icon family="phosphor" icon="play-filled" size="l" slot="icon-after"></ecl-icon>
+      </ecl-button>
+      <ecl-button data-ecl-slogan-ticker-pause hide-label="" style-class="ecl-slogan-ticker__pause ecl-slogan-ticker__button sc-ecl-slogan-ticker-ec" type="button" variant="tertiary">
+        <ecl-icon family="phosphor" icon="pause-filled" size="l" slot="icon-after"></ecl-icon>
+      </ecl-button>
+    </div>
+  </div>
+</ecl-slogan-ticker>
+`;

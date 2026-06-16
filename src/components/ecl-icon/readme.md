@@ -66,6 +66,7 @@
  - [ecl-search-form](../ecl-search-form)
  - [ecl-select](../ecl-select)
  - [ecl-site-header](../ecl-site-header)
+ - [ecl-slogan-ticker](../ecl-slogan-ticker)
  - [ecl-social-media-follow-item](../ecl-social-media-follow)
  - [ecl-tabs](../ecl-tabs)
  - [ecl-tag](../ecl-tag)
@@ -117,6 +118,7 @@ graph TD;
   ecl-search-form --> ecl-icon
   ecl-select --> ecl-icon
   ecl-site-header --> ecl-icon
+  ecl-slogan-ticker --> ecl-icon
   ecl-social-media-follow-item --> ecl-icon
   ecl-tabs --> ecl-icon
   ecl-tag --> ecl-icon

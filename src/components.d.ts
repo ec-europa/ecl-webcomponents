@@ -2011,6 +2011,33 @@ export namespace Components {
          */
         "theme": string;
     }
+    interface EclSloganTicker {
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
+          * @default '[]'
+         */
+        "items": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
+        /**
+          * @default ''
+         */
+        "srPause": string;
+        /**
+          * @default ''
+         */
+        "srPlay": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+    }
     interface EclSocialMediaFollow {
         "description": string;
         /**
@@ -3001,6 +3028,12 @@ declare global {
         prototype: HTMLEclSiteHeaderElement;
         new (): HTMLEclSiteHeaderElement;
     };
+    interface HTMLEclSloganTickerElement extends Components.EclSloganTicker, HTMLStencilElement {
+    }
+    var HTMLEclSloganTickerElement: {
+        prototype: HTMLEclSloganTickerElement;
+        new (): HTMLEclSloganTickerElement;
+    };
     interface HTMLEclSocialMediaFollowElement extends Components.EclSocialMediaFollow, HTMLStencilElement {
     }
     var HTMLEclSocialMediaFollowElement: {
@@ -3217,6 +3250,7 @@ declare global {
         "ecl-search-form": HTMLEclSearchFormElement;
         "ecl-select": HTMLEclSelectElement;
         "ecl-site-header": HTMLEclSiteHeaderElement;
+        "ecl-slogan-ticker": HTMLEclSloganTickerElement;
         "ecl-social-media-follow": HTMLEclSocialMediaFollowElement;
         "ecl-social-media-follow-item": HTMLEclSocialMediaFollowItemElement;
         "ecl-spacing": HTMLEclSpacingElement;
@@ -5261,6 +5295,33 @@ declare namespace LocalJSX {
          */
         "theme"?: string;
     }
+    interface EclSloganTicker {
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
+          * @default '[]'
+         */
+        "items"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
+        /**
+          * @default ''
+         */
+        "srPause"?: string;
+        /**
+          * @default ''
+         */
+        "srPlay"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+    }
     interface EclSocialMediaFollow {
         "description"?: string;
         /**
@@ -6652,6 +6713,15 @@ declare namespace LocalJSX {
         "bannerTopLink": string;
         "siteNameMobileOnly": boolean;
     }
+    interface EclSloganTickerAttributes {
+        "theme": string;
+        "styleClass": string;
+        "srPlay": string;
+        "srPause": string;
+        "noScript": boolean;
+        "colorMode": string;
+        "items": string;
+    }
     interface EclSocialMediaFollowAttributes {
         "theme": string;
         "styleClass": string;
@@ -6939,6 +7009,7 @@ declare namespace LocalJSX {
         "ecl-search-form": Omit<EclSearchForm, keyof EclSearchFormAttributes> & { [K in keyof EclSearchForm & keyof EclSearchFormAttributes]?: EclSearchForm[K] } & { [K in keyof EclSearchForm & keyof EclSearchFormAttributes as `attr:${K}`]?: EclSearchFormAttributes[K] } & { [K in keyof EclSearchForm & keyof EclSearchFormAttributes as `prop:${K}`]?: EclSearchForm[K] };
         "ecl-select": Omit<EclSelect, keyof EclSelectAttributes> & { [K in keyof EclSelect & keyof EclSelectAttributes]?: EclSelect[K] } & { [K in keyof EclSelect & keyof EclSelectAttributes as `attr:${K}`]?: EclSelectAttributes[K] } & { [K in keyof EclSelect & keyof EclSelectAttributes as `prop:${K}`]?: EclSelect[K] };
         "ecl-site-header": Omit<EclSiteHeader, keyof EclSiteHeaderAttributes> & { [K in keyof EclSiteHeader & keyof EclSiteHeaderAttributes]?: EclSiteHeader[K] } & { [K in keyof EclSiteHeader & keyof EclSiteHeaderAttributes as `attr:${K}`]?: EclSiteHeaderAttributes[K] } & { [K in keyof EclSiteHeader & keyof EclSiteHeaderAttributes as `prop:${K}`]?: EclSiteHeader[K] };
+        "ecl-slogan-ticker": Omit<EclSloganTicker, keyof EclSloganTickerAttributes> & { [K in keyof EclSloganTicker & keyof EclSloganTickerAttributes]?: EclSloganTicker[K] } & { [K in keyof EclSloganTicker & keyof EclSloganTickerAttributes as `attr:${K}`]?: EclSloganTickerAttributes[K] } & { [K in keyof EclSloganTicker & keyof EclSloganTickerAttributes as `prop:${K}`]?: EclSloganTicker[K] };
         "ecl-social-media-follow": Omit<EclSocialMediaFollow, keyof EclSocialMediaFollowAttributes> & { [K in keyof EclSocialMediaFollow & keyof EclSocialMediaFollowAttributes]?: EclSocialMediaFollow[K] } & { [K in keyof EclSocialMediaFollow & keyof EclSocialMediaFollowAttributes as `attr:${K}`]?: EclSocialMediaFollowAttributes[K] } & { [K in keyof EclSocialMediaFollow & keyof EclSocialMediaFollowAttributes as `prop:${K}`]?: EclSocialMediaFollow[K] };
         "ecl-social-media-follow-item": Omit<EclSocialMediaFollowItem, keyof EclSocialMediaFollowItemAttributes> & { [K in keyof EclSocialMediaFollowItem & keyof EclSocialMediaFollowItemAttributes]?: EclSocialMediaFollowItem[K] } & { [K in keyof EclSocialMediaFollowItem & keyof EclSocialMediaFollowItemAttributes as `attr:${K}`]?: EclSocialMediaFollowItemAttributes[K] } & { [K in keyof EclSocialMediaFollowItem & keyof EclSocialMediaFollowItemAttributes as `prop:${K}`]?: EclSocialMediaFollowItem[K] };
         "ecl-spacing": Omit<EclSpacing, keyof EclSpacingAttributes> & { [K in keyof EclSpacing & keyof EclSpacingAttributes]?: EclSpacing[K] } & { [K in keyof EclSpacing & keyof EclSpacingAttributes as `attr:${K}`]?: EclSpacingAttributes[K] } & { [K in keyof EclSpacing & keyof EclSpacingAttributes as `prop:${K}`]?: EclSpacing[K] };
@@ -7041,6 +7112,7 @@ declare module "@stencil/core" {
             "ecl-search-form": LocalJSX.IntrinsicElements["ecl-search-form"] & JSXBase.HTMLAttributes<HTMLEclSearchFormElement>;
             "ecl-select": LocalJSX.IntrinsicElements["ecl-select"] & JSXBase.HTMLAttributes<HTMLEclSelectElement>;
             "ecl-site-header": LocalJSX.IntrinsicElements["ecl-site-header"] & JSXBase.HTMLAttributes<HTMLEclSiteHeaderElement>;
+            "ecl-slogan-ticker": LocalJSX.IntrinsicElements["ecl-slogan-ticker"] & JSXBase.HTMLAttributes<HTMLEclSloganTickerElement>;
             "ecl-social-media-follow": LocalJSX.IntrinsicElements["ecl-social-media-follow"] & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowElement>;
             "ecl-social-media-follow-item": LocalJSX.IntrinsicElements["ecl-social-media-follow-item"] & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowItemElement>;
             "ecl-spacing": LocalJSX.IntrinsicElements["ecl-spacing"] & JSXBase.HTMLAttributes<HTMLEclSpacingElement>;
