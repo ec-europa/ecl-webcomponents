@@ -937,6 +937,45 @@ export namespace Components {
          */
         "theme": string;
     }
+    interface EclHighlightBox {
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
+          * @default true
+         */
+        "hasDescription": boolean;
+        /**
+          * @default `ecl-highlight-box-${Math.random().toString(36).substr(2, 9)}`
+         */
+        "itemId": string;
+        /**
+          * @default ''
+         */
+        "itemTitle": string;
+        /**
+          * @default ''
+         */
+        "linkIcon": string;
+        /**
+          * @default ''
+         */
+        "linkLabel": string;
+        /**
+          * @default ''
+         */
+        "linkPath": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+        /**
+          * @default ''
+         */
+        "titleIcon": string;
+    }
     interface EclIcon {
         "color": string;
         /**
@@ -2742,6 +2781,12 @@ declare global {
         prototype: HTMLEclGridElement;
         new (): HTMLEclGridElement;
     };
+    interface HTMLEclHighlightBoxElement extends Components.EclHighlightBox, HTMLStencilElement {
+    }
+    var HTMLEclHighlightBoxElement: {
+        prototype: HTMLEclHighlightBoxElement;
+        new (): HTMLEclHighlightBoxElement;
+    };
     interface HTMLEclIconElement extends Components.EclIcon, HTMLStencilElement {
     }
     var HTMLEclIconElement: {
@@ -3211,6 +3256,7 @@ declare global {
         "ecl-gallery": HTMLEclGalleryElement;
         "ecl-gallery-item": HTMLEclGalleryItemElement;
         "ecl-grid": HTMLEclGridElement;
+        "ecl-highlight-box": HTMLEclHighlightBoxElement;
         "ecl-icon": HTMLEclIconElement;
         "ecl-indicator": HTMLEclIndicatorElement;
         "ecl-inpage-navigation": HTMLEclInpageNavigationElement;
@@ -4208,6 +4254,45 @@ declare namespace LocalJSX {
           * @default 'ec'
          */
         "theme"?: string;
+    }
+    interface EclHighlightBox {
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
+          * @default true
+         */
+        "hasDescription"?: boolean;
+        /**
+          * @default `ecl-highlight-box-${Math.random().toString(36).substr(2, 9)}`
+         */
+        "itemId"?: string;
+        /**
+          * @default ''
+         */
+        "itemTitle"?: string;
+        /**
+          * @default ''
+         */
+        "linkIcon"?: string;
+        /**
+          * @default ''
+         */
+        "linkLabel"?: string;
+        /**
+          * @default ''
+         */
+        "linkPath"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+        /**
+          * @default ''
+         */
+        "titleIcon"?: string;
     }
     interface EclIcon {
         "color"?: string;
@@ -6215,6 +6300,18 @@ declare namespace LocalJSX {
         "row": boolean;
         "container": boolean;
     }
+    interface EclHighlightBoxAttributes {
+        "theme": string;
+        "styleClass": string;
+        "itemTitle": string;
+        "itemId": string;
+        "hasDescription": boolean;
+        "linkLabel": string;
+        "linkPath": string;
+        "linkIcon": string;
+        "titleIcon": string;
+        "colorMode": string;
+    }
     interface EclIconAttributes {
         "styleClass": string;
         "theme": string;
@@ -6970,6 +7067,7 @@ declare namespace LocalJSX {
         "ecl-gallery": Omit<EclGallery, keyof EclGalleryAttributes> & { [K in keyof EclGallery & keyof EclGalleryAttributes]?: EclGallery[K] } & { [K in keyof EclGallery & keyof EclGalleryAttributes as `attr:${K}`]?: EclGalleryAttributes[K] } & { [K in keyof EclGallery & keyof EclGalleryAttributes as `prop:${K}`]?: EclGallery[K] };
         "ecl-gallery-item": Omit<EclGalleryItem, keyof EclGalleryItemAttributes> & { [K in keyof EclGalleryItem & keyof EclGalleryItemAttributes]?: EclGalleryItem[K] } & { [K in keyof EclGalleryItem & keyof EclGalleryItemAttributes as `attr:${K}`]?: EclGalleryItemAttributes[K] } & { [K in keyof EclGalleryItem & keyof EclGalleryItemAttributes as `prop:${K}`]?: EclGalleryItem[K] };
         "ecl-grid": Omit<EclGrid, keyof EclGridAttributes> & { [K in keyof EclGrid & keyof EclGridAttributes]?: EclGrid[K] } & { [K in keyof EclGrid & keyof EclGridAttributes as `attr:${K}`]?: EclGridAttributes[K] } & { [K in keyof EclGrid & keyof EclGridAttributes as `prop:${K}`]?: EclGrid[K] };
+        "ecl-highlight-box": Omit<EclHighlightBox, keyof EclHighlightBoxAttributes> & { [K in keyof EclHighlightBox & keyof EclHighlightBoxAttributes]?: EclHighlightBox[K] } & { [K in keyof EclHighlightBox & keyof EclHighlightBoxAttributes as `attr:${K}`]?: EclHighlightBoxAttributes[K] } & { [K in keyof EclHighlightBox & keyof EclHighlightBoxAttributes as `prop:${K}`]?: EclHighlightBox[K] };
         "ecl-icon": Omit<EclIcon, keyof EclIconAttributes> & { [K in keyof EclIcon & keyof EclIconAttributes]?: EclIcon[K] } & { [K in keyof EclIcon & keyof EclIconAttributes as `attr:${K}`]?: EclIconAttributes[K] } & { [K in keyof EclIcon & keyof EclIconAttributes as `prop:${K}`]?: EclIcon[K] };
         "ecl-indicator": Omit<EclIndicator, keyof EclIndicatorAttributes> & { [K in keyof EclIndicator & keyof EclIndicatorAttributes]?: EclIndicator[K] } & { [K in keyof EclIndicator & keyof EclIndicatorAttributes as `attr:${K}`]?: EclIndicatorAttributes[K] } & { [K in keyof EclIndicator & keyof EclIndicatorAttributes as `prop:${K}`]?: EclIndicator[K] };
         "ecl-inpage-navigation": Omit<EclInpageNavigation, keyof EclInpageNavigationAttributes> & { [K in keyof EclInpageNavigation & keyof EclInpageNavigationAttributes]?: EclInpageNavigation[K] } & { [K in keyof EclInpageNavigation & keyof EclInpageNavigationAttributes as `attr:${K}`]?: EclInpageNavigationAttributes[K] } & { [K in keyof EclInpageNavigation & keyof EclInpageNavigationAttributes as `prop:${K}`]?: EclInpageNavigation[K] };
@@ -7073,6 +7171,7 @@ declare module "@stencil/core" {
             "ecl-gallery": LocalJSX.IntrinsicElements["ecl-gallery"] & JSXBase.HTMLAttributes<HTMLEclGalleryElement>;
             "ecl-gallery-item": LocalJSX.IntrinsicElements["ecl-gallery-item"] & JSXBase.HTMLAttributes<HTMLEclGalleryItemElement>;
             "ecl-grid": LocalJSX.IntrinsicElements["ecl-grid"] & JSXBase.HTMLAttributes<HTMLEclGridElement>;
+            "ecl-highlight-box": LocalJSX.IntrinsicElements["ecl-highlight-box"] & JSXBase.HTMLAttributes<HTMLEclHighlightBoxElement>;
             "ecl-icon": LocalJSX.IntrinsicElements["ecl-icon"] & JSXBase.HTMLAttributes<HTMLEclIconElement>;
             "ecl-indicator": LocalJSX.IntrinsicElements["ecl-indicator"] & JSXBase.HTMLAttributes<HTMLEclIndicatorElement>;
             "ecl-inpage-navigation": LocalJSX.IntrinsicElements["ecl-inpage-navigation"] & JSXBase.HTMLAttributes<HTMLEclInpageNavigationElement>;

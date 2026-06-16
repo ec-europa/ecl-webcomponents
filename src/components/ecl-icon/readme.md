@@ -41,6 +41,7 @@
  - [ecl-form-group](../ecl-form-group)
  - [ecl-gallery](../ecl-gallery)
  - [ecl-gallery-item](../ecl-gallery)
+ - [ecl-highlight-box](../ecl-highlight-box)
  - [ecl-inpage-navigation](../ecl-inpage-navigation)
  - [ecl-input](../ecl-input)
  - [ecl-link](../ecl-link)
@@ -93,6 +94,7 @@ graph TD;
   ecl-form-group --> ecl-icon
   ecl-gallery --> ecl-icon
   ecl-gallery-item --> ecl-icon
+  ecl-highlight-box --> ecl-icon
   ecl-inpage-navigation --> ecl-icon
   ecl-input --> ecl-icon
   ecl-link --> ecl-icon

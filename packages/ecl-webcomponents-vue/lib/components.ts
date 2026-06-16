@@ -548,6 +548,20 @@ export const EclGrid: StencilVueComponent<JSX.EclGrid> = /*@__PURE__*/ defineCon
 ]);
 
 
+export const EclHighlightBox: StencilVueComponent<JSX.EclHighlightBox> = /*@__PURE__*/ defineContainer<JSX.EclHighlightBox>('ecl-highlight-box', undefined, [
+  'theme',
+  'styleClass',
+  'itemTitle',
+  'itemId',
+  'hasDescription',
+  'linkLabel',
+  'linkPath',
+  'linkIcon',
+  'titleIcon',
+  'colorMode'
+]);
+
+
 export const EclIcon: StencilVueComponent<JSX.EclIcon> = /*@__PURE__*/ defineContainer<JSX.EclIcon>('ecl-icon', undefined, [
   'styleClass',
   'theme',

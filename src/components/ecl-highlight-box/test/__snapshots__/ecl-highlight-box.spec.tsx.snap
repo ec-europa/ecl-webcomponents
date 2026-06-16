@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-highlight-box renders 1`] = `
+<ecl-highlight-box color-mode="orange" has-description="true" item-id="highlighted-box-demo" item-title="Highlighted information" link-icon="arrow-right" link-label="Read more" link-path="/example.html" title-icon="arrow-right">
+  <!---->
+  <article aria-labelledby="highlighted-box-demo-title" class="ecl-color-mode--orange ecl-highlight-box" id="highlighted-box-demo">
+    <header class="ecl-highlight-box__header">
+      <div class="ecl-highlight-box__icon-wrapper">
+        <ecl-icon style-class="ecl-highlight-box__icon sc-ecl-highlight-box-ec">
+          <span class="ecl-highlight-box__icon ecl-icon ecl-icon--xs sc-ecl-highlight-box-ec wt-icon--placeholder wt-icon-phosphor--arrow-right"></span>
+        </ecl-icon>
+      </div>
+      <div class="ecl-highlight-box__title" id="highlighted-box-demo-title">
+        Highlighted information
+      </div>
+    </header>
+    <div class="ecl-highlight-box__body">
+      <div class="ecl-highlight-box__description">
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <strong>
+          Ut enim ad minim veniam
+        </strong>
+        , quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+      </div>
+      <ecl-link style-class="ecl-highlight-box__link sc-ecl-highlight-box-ec">
+        <!---->
+        <a class="ecl-highlight-box__link ecl-link ecl-link--icon ecl-link--icon-after ecl-link--secondary-neutral sc-ecl-highlight-box-ec" href="/example.html">
+          <span class="ecl-link__label">
+            Read more
+          </span>
+          <slot-fb hidden="" name="icon-after"></slot-fb>
+          <ecl-icon class="ecl-link__icon" slot="icon-after">
+            <span class="ecl-icon ecl-icon--xs wt-icon--placeholder wt-icon-phosphor--arrow-right"></span>
+          </ecl-icon>
+        </a>
+      </ecl-link>
+    </div>
+  </article>
+</ecl-highlight-box>
+`;
