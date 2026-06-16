@@ -39,6 +39,9 @@ export class EclMenu {
 
   componentDidLoad() {
     if (!this.noScript) {
+      // Make prevent scroll work.
+      document.body.classList.add(`sc-ecl-menu-${this.theme}`);
+      
       ;(window as any).ECL = (window as any).ECL || {};
       ECL.Menu = Menu;
       const menu = new Menu(this.el.firstElementChild);
