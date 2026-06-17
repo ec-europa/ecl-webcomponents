@@ -75,18 +75,6 @@ export class EclAnimatedNumbers {
         >
           <slot></slot>
         </div>
-      </article>
-    );
-
-    return (
-      <div class={this.getClass()}>
-      {this.fullWidth ? (
-        <ecl-grid container>
-          {content}
-        </ecl-grid>
-      ) : (
-        content
-      )}
       { this.sources &&
         <footer class="ecl-animated-numbers__sources">
         { this.sourcesLabel &&
@@ -100,7 +88,7 @@ export class EclAnimatedNumbers {
             { source.path ? (
               <ecl-link
                 path={source.path}
-                style-classes='ecl-animated-numbers__source'
+                style-class={`ecl-animated-numbers__source sc-ecl-animated-numbers-${this.theme}`}
               >
                 {source.label}
               </ecl-link>
@@ -115,6 +103,18 @@ export class EclAnimatedNumbers {
           </ul>
         </footer>
       }
+      </article>
+    );
+
+    return (
+      <div class={this.getClass()}>
+      {this.fullWidth ? (
+        <ecl-grid container>
+          {content}
+        </ecl-grid>
+      ) : (
+        content
+      )}
       </div>
     );
   }

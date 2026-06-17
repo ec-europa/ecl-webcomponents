@@ -115,6 +115,7 @@ const Template = (args) => {
   const itemMarkup = selectedItems
     .map((item) => `
       <ecl-animated-numbers-item
+        counter-color="${args.counterColor}"
         icon="${item.icon}"
         item-prefix="${item.itemPrefix}"
         ${item.itemPrefixLabel ? `item-prefix-label="${item.itemPrefixLabel}"` : ''}
@@ -132,6 +133,11 @@ const Template = (args) => {
       border="${args.border}"
       counter-color="${args.counterColor}"
       full-width="${args.fullWidth}"
+      sources-label="Sources:"
+      sources='[
+        { "label": "Eurostat", "path": "/example.html" },
+        { "label": "DG CNECT", "path": "/example.html" }
+      ]'  
     >${itemMarkup}
     </ecl-animated-numbers>
   </ecl-grid>`;

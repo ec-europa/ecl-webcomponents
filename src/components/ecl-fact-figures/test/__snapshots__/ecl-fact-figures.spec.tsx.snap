@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-fact-figures renders 1`] = `
-<ecl-fact-figures columns="4" font-size="m" icon-size="2xl" view-all-link-label="View all" view-all-link-path="/example">
+<ecl-fact-figures columns="4" font-size="m" icon-size="2xl" sources="[
+          { &quot;label&quot;: &quot;Eurostat&quot;, &quot;path&quot;: &quot;/example.html&quot; },
+          { &quot;label&quot;: &quot;DG CNECT&quot;, &quot;path&quot;: &quot;/example.html&quot; }
+        ]" sources-label="Sources:" view-all-link-label="View all" view-all-link-path="/example">
   <!---->
   <div class="ecl-fact-figures ecl-fact-figures--col-4 ecl-fact-figures--font-m">
     <div class="ecl-fact-figures__items">
@@ -107,6 +110,29 @@ exports[`ecl-fact-figures renders 1`] = `
           </div>
         </div>
       </ecl-fact-figures-item>
+    </div>
+    <div class="ecl-fact-figures__sources">
+      <span class="ecl-fact-figures__sources-label">
+        Sources:
+      </span>
+      <ul class="ecl-fact-figures__sources-list">
+        <li class="ecl-fact-figures__sources-item">
+          <ecl-link style-class="ecl-fact-figures__source sc-ecl-fact-figures-ec">
+            <!---->
+            <a class="ecl-fact-figures__source ecl-link sc-ecl-fact-figures-ec" href="/example.html">
+              Eurostat
+            </a>
+          </ecl-link>
+        </li>
+        <li class="ecl-fact-figures__sources-item">
+          <ecl-link style-class="ecl-fact-figures__source sc-ecl-fact-figures-ec">
+            <!---->
+            <a class="ecl-fact-figures__source ecl-link sc-ecl-fact-figures-ec" href="/example.html">
+              DG CNECT
+            </a>
+          </ecl-link>
+        </li>
+      </ul>
     </div>
     <div class="ecl-fact-figures__view-all">
       <ecl-link>

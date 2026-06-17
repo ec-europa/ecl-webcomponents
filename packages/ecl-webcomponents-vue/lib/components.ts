@@ -318,7 +318,9 @@ export const EclFactFigures: StencilVueComponent<JSX.EclFactFigures> = /*@__PURE
   'viewAllLinkPath',
   'viewAllLinkLabel',
   'iconSize',
-  'fontSize'
+  'fontSize',
+  'sources',
+  'sourcesLabel'
 ]);
 
 

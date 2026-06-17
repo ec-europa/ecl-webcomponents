@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-animated-numbers renders correctly 1`] = `
-<ecl-animated-numbers counter-color="false" no-script="">
+<ecl-animated-numbers counter-color="false" no-script="" sources="[
+                { &quot;label&quot;: &quot;Eurostat&quot;, &quot;path&quot;: &quot;/example.html&quot; },
+                { &quot;label&quot;: &quot;DG CNECT&quot;, &quot;path&quot;: &quot;/example.html&quot; }
+              ]" sources-label="Sources:">
   <!---->
   <div class="ecl-animated-numbers">
     <article class="ecl-animated-numbers__wrapper">
@@ -188,6 +191,29 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
           </div>
         </ecl-animated-numbers-item>
       </div>
+      <footer class="ecl-animated-numbers__sources">
+        <span class="ecl-animated-numbers__sources-label">
+          Sources:
+        </span>
+        <ul class="ecl-animated-numbers__sources-list">
+          <li class="ecl-animated-numbers__sources-item">
+            <ecl-link style-class="ecl-animated-numbers__source sc-ecl-animated-numbers-ec">
+              <!---->
+              <a class="ecl-animated-numbers__source ecl-link sc-ecl-animated-numbers-ec" href="/example.html">
+                Eurostat
+              </a>
+            </ecl-link>
+          </li>
+          <li class="ecl-animated-numbers__sources-item">
+            <ecl-link style-class="ecl-animated-numbers__source sc-ecl-animated-numbers-ec">
+              <!---->
+              <a class="ecl-animated-numbers__source ecl-link sc-ecl-animated-numbers-ec" href="/example.html">
+                DG CNECT
+              </a>
+            </ecl-link>
+          </li>
+        </ul>
+      </footer>
     </article>
   </div>
 </ecl-animated-numbers>

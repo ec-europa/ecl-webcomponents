@@ -71,6 +71,11 @@ const Template = (args) =>
     view-all-link-label="${args.viewAllLinkLabel}"
     icon-size="${args.iconSize}"
     font-size="${args.fontSize}"
+    sources-label="Sources:"
+    sources='[
+      { "label": "Eurostat", "path": "/example.html" },
+      { "label": "DG CNECT", "path": "/example.html" }
+    ]' 
   >
     <ecl-fact-figures-item
       item-title="Lorem ipsum",

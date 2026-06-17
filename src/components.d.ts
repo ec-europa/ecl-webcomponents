@@ -572,6 +572,14 @@ export namespace Components {
           * @default 'm'
          */
         "iconSize": string;
+        /**
+          * @default ''
+         */
+        "sources": string;
+        /**
+          * @default ''
+         */
+        "sourcesLabel": string;
         "styleClass": string;
         "theme": string;
         /**
@@ -3902,6 +3910,14 @@ declare namespace LocalJSX {
           * @default 'm'
          */
         "iconSize"?: string;
+        /**
+          * @default ''
+         */
+        "sources"?: string;
+        /**
+          * @default ''
+         */
+        "sourcesLabel"?: string;
         "styleClass"?: string;
         "theme"?: string;
         /**
@@ -6123,6 +6139,8 @@ declare namespace LocalJSX {
         "viewAllLinkLabel": string;
         "iconSize": string;
         "fontSize": string;
+        "sources": string;
+        "sourcesLabel": string;
     }
     interface EclFactFiguresItemAttributes {
         "theme": string;
