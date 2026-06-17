@@ -1013,7 +1013,12 @@ export const EclQuizCard: StencilVueComponent<JSX.EclQuizCard> = /*@__PURE__*/ d
   'answerTitle',
   'itemId',
   'options',
-  'variant'
+  'skipText',
+  'variant',
+  'correctLabel',
+  'incorrectLabel',
+  'correctChosenLabel',
+  'incorrectChosenLabel'
 ]);
 
 

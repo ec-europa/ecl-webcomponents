@@ -1742,8 +1742,24 @@ export namespace Components {
         "answerTitle": string;
         "backText": string;
         "category": string;
+        /**
+          * @default ''
+         */
+        "correctChosenLabel": string;
+        /**
+          * @default ''
+         */
+        "correctLabel": string;
         "errorCategory": string;
         "flipText": string;
+        /**
+          * @default ''
+         */
+        "incorrectChosenLabel": string;
+        /**
+          * @default ''
+         */
+        "incorrectLabel": string;
         /**
           * @default `ecl-quiz-item-${Math.random().toString(36).substr(2, 9)}`
          */
@@ -1752,6 +1768,7 @@ export namespace Components {
         "options": string;
         "question": string;
         "quizName": string;
+        "skipText": string;
         "styleClass": string;
         "successCategory": string;
         "theme": string;
@@ -5083,8 +5100,24 @@ declare namespace LocalJSX {
         "answerTitle"?: string;
         "backText"?: string;
         "category"?: string;
+        /**
+          * @default ''
+         */
+        "correctChosenLabel"?: string;
+        /**
+          * @default ''
+         */
+        "correctLabel"?: string;
         "errorCategory"?: string;
         "flipText"?: string;
+        /**
+          * @default ''
+         */
+        "incorrectChosenLabel"?: string;
+        /**
+          * @default ''
+         */
+        "incorrectLabel"?: string;
         /**
           * @default `ecl-quiz-item-${Math.random().toString(36).substr(2, 9)}`
          */
@@ -5093,6 +5126,7 @@ declare namespace LocalJSX {
         "options"?: string;
         "question"?: string;
         "quizName"?: string;
+        "skipText"?: string;
         "styleClass"?: string;
         "successCategory"?: string;
         "theme"?: string;
@@ -6732,7 +6766,12 @@ declare namespace LocalJSX {
         "answerTitle": string;
         "itemId": string;
         "options": string;
+        "skipText": string;
         "variant": string;
+        "correctLabel": string;
+        "incorrectLabel": string;
+        "correctChosenLabel": string;
+        "incorrectChosenLabel": string;
     }
     interface EclRangeAttributes {
         "theme": string;
