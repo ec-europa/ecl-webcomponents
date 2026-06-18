@@ -24,7 +24,11 @@ const Template = (args) =>
     logo-link="${randomizedLink('/example.html')}"
     co-owner-title="This page is managed by:"
     co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"},{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"}]'
-  >
+    feedback-button='{"label": "Fill in survey", "path": "${randomizedLink('/example.html')}"}'
+    feedback-button-description="Help us improve the website"
+    action-button='{"label": "Subscribe for updates", "path": "${randomizedLink('/example.html')}"}'
+
+    >
     <ecl-footer-item
       link="${randomizedLink('/example.html')}"
       slot="ecl-footer-list-core"
@@ -177,7 +181,10 @@ const TemplateStandardised = (args) => `
     logo-link="${randomizedLink('/example.html')}"
     co-owner-title="This page is managed by:"
     co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"},{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"}]'
-  >
+    feedback-button='{"label": "Fill in survey", "path": "${randomizedLink('/example.html')}"}'
+    feedback-button-description="Help us improve the website"
+    action-button='{"label": "Subscribe for updates", "path": "${randomizedLink('/example.html')}"}'
+    >
     <ecl-social-media-follow
       variant="horizontal"
       position="left"
@@ -418,6 +425,9 @@ const TemplateEu = () =>
     logo-link="${randomizedLink('/example.html')}"
     co-owner-title="This page is managed by:"
     co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"},{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"}]'
+    feedback-button='{"label": "Fill in survey", "path": "${randomizedLink('/example.html')}"}'
+    feedback-button-description="Help us improve the website"
+    action-button='{"label": "Subscribe for updates", "path": "${randomizedLink('/example.html')}"}'
   >
     <ecl-text
       size="m"
@@ -540,6 +550,9 @@ const TemplateEuHarmonised = () =>
     logo-link="${randomizedLink('/example.html')}"
     co-owner-title="This page is managed by:"
     co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"},{"label": "Directorate-General for [DG role]", "path": "${randomizedLink('/example.html')}"}]'
+    feedback-button='{"label": "Fill in survey", "path": "${randomizedLink('/example.html')}"}'
+    feedback-button-description="Help us improve the website"
+    action-button='{"label": "Subscribe for updates", "path": "${randomizedLink('/example.html')}"}'
   >
     <ecl-text
       size="l"

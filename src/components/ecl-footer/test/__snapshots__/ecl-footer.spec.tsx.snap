@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-footer EC renders 1`] = `
-<ecl-footer-ec description="This site is managed by:" description-name="[name of the manager of the site]" logo-alt="European Commission" logo-lang-code="en" logo-link="/example.html" logo-title="European Commission" site-name="European Commission website" variant="core">
+<ecl-footer-ec action-button="{&quot;label&quot;: &quot;Subscribe for updates&quot;, &quot;path&quot;: &quot;/example.html&quot;}" description="This site is managed by:" description-name="[name of the manager of the site]" feedback-button="{&quot;label&quot;: &quot;Fill in survey&quot;, &quot;path&quot;: &quot;/example.html&quot;}" feedback-button-description="Help us improve the website" logo-alt="European Commission" logo-lang-code="en" logo-link="/example.html" logo-title="European Commission" site-name="European Commission website" variant="core">
   <!---->
   <ecl-footer-item class="ecl-site-footer__list-item sc-ecl-footer-ec-ec" hidden="" link="/example.html" theme="ec">
     <!---->
@@ -15,6 +15,25 @@ exports[`ecl-footer EC renders 1`] = `
   <footer class="ecl-site-footer ecl-site-footer--core">
     <div class="ecl-site-footer__main">
       <div class="ecl-container ecl-site-footer__container">
+        <div class="ecl-site-footer__row">
+          <div class="ecl-site-footer__section ecl-site-footer__section--feedback">
+            <div class="ecl-site-footer__description">
+              Help us improve the website
+            </div>
+            <ecl-link style-class="ecl-site-footer__action-button ecl-button--m sc-ecl-footer-ec-ec">
+              <!---->
+              <a class="ecl-button--m ecl-link ecl-link--icon ecl-link--icon-after ecl-link--primary-highlight-inverted ecl-site-footer__action-button sc-ecl-footer-ec-ec" href="/example.html">
+                <span class="ecl-link__label">
+                  Fill in survey
+                </span>
+                <slot-fb hidden="" name="icon-after"></slot-fb>
+                <ecl-icon class="ecl-link__icon" slot="icon-after">
+                  <span class="ecl-icon ecl-icon--xs wt-icon--placeholder wt-icon-phosphor--arrow-up-right"></span>
+                </ecl-icon>
+              </a>
+            </ecl-link>
+          </div>
+        </div>
         <div class="ecl-site-footer__row ecl-site-footer__row--specific">
           <div class="ecl-site-footer__section ecl-site-footer__section--site-info">
             <ecl-link>
@@ -31,6 +50,18 @@ exports[`ecl-footer EC renders 1`] = `
                 [name of the manager of the site]
               </span>
             </div>
+            <ecl-link style-class="ecl-site-footer__action-button ecl-button--m sc-ecl-footer-ec-ec">
+              <!---->
+              <a class="ecl-button--m ecl-link ecl-link--icon ecl-link--icon-after ecl-link--secondary-inverted ecl-site-footer__action-button sc-ecl-footer-ec-ec" href="/example.html">
+                <span class="ecl-link__label">
+                  Subscribe for updates
+                </span>
+                <slot-fb hidden="" name="icon-after"></slot-fb>
+                <ecl-icon class="ecl-link__icon" slot="icon-after">
+                  <span class="ecl-icon ecl-icon--xs wt-icon--placeholder wt-icon-phosphor--envelope-simple"></span>
+                </ecl-icon>
+              </a>
+            </ecl-link>
           </div>
           <div class="ecl-site-footer__section ecl-site-footer__section--core">
             <div class="ecl-site-footer__list" role="list">
@@ -194,11 +225,30 @@ exports[`ecl-footer EC renders 1`] = `
 `;
 
 exports[`ecl-footer EU renders 1`] = `
-<ecl-footer-eu description="This site is managed by" description-name="the Directorate-General for Communication" logo-alt="European Union" logo-lang-code="en" logo-link="/example.html" logo-title="European union" variant="core">
+<ecl-footer-eu action-button="{&quot;label&quot;: &quot;Subscribe for updates&quot;, &quot;path&quot;: &quot;/example.html&quot;}" description="This site is managed by" description-name="the Directorate-General for Communication" feedback-button="{&quot;label&quot;: &quot;Fill in survey&quot;, &quot;path&quot;: &quot;/example.html&quot;}" feedback-button-description="Help us improve the website" logo-alt="European Union" logo-lang-code="en" logo-link="/example.html" logo-title="European union" variant="core">
   <!---->
   <footer class="ecl-site-footer ecl-site-footer--core">
     <div class="ecl-site-footer__main">
       <div class="ecl-container ecl-site-footer__container">
+        <div class="ecl-site-footer__row">
+          <div class="ecl-site-footer__section ecl-site-footer__section--feedback">
+            <div class="ecl-site-footer__description">
+              Help us improve the website
+            </div>
+            <ecl-link style-class="ecl-site-footer__action-button ecl-button--m sc-ecl-footer-eu-eu">
+              <!---->
+              <a class="ecl-button--m ecl-link ecl-link--icon ecl-link--icon-after ecl-link--primary-highlight-inverted ecl-site-footer__action-button sc-ecl-footer-eu-eu" href="/example.html">
+                <span class="ecl-link__label">
+                  Fill in survey
+                </span>
+                <slot-fb hidden="" name="icon-after"></slot-fb>
+                <ecl-icon class="ecl-link__icon" slot="icon-after">
+                  <span class="ecl-icon ecl-icon--xs wt-icon--placeholder wt-icon-phosphor--arrow-up-right"></span>
+                </ecl-icon>
+              </a>
+            </ecl-link>
+          </div>
+        </div>
         <div class="ecl-site-footer__row">
           <div class="ecl-site-footer__column">
             <div class="ecl-site-footer__section">
@@ -213,6 +263,18 @@ exports[`ecl-footer EU renders 1`] = `
               <div class="ecl-site-footer__description">
                 This site is managed by
               </div>
+              <ecl-link style-class="ecl-site-footer__action-button ecl-button--m sc-ecl-footer-eu-eu">
+                <!---->
+                <a class="ecl-button--m ecl-link ecl-link--icon ecl-link--icon-after ecl-link--secondary-neutral ecl-site-footer__action-button sc-ecl-footer-eu-eu" href="/example.html">
+                  <span class="ecl-link__label">
+                    Subscribe for updates
+                  </span>
+                  <slot-fb hidden="" name="icon-after"></slot-fb>
+                  <ecl-icon class="ecl-link__icon" slot="icon-after">
+                    <span class="ecl-icon ecl-icon--xs wt-icon--placeholder wt-icon-phosphor--envelope-simple"></span>
+                  </ecl-icon>
+                </a>
+              </ecl-link>
             </div>
           </div>
           <div class="ecl-site-footer__column">

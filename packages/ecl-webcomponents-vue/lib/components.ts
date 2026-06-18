@@ -440,7 +440,10 @@ export const EclFooterEc: StencilVueComponent<JSX.EclFooterEc> = /*@__PURE__*/ d
   'siteName',
   'siteLink',
   'coOwnerTitle',
-  'coOwnerLinks'
+  'coOwnerLinks',
+  'actionButton',
+  'feedbackButton',
+  'feedbackButtonDescription'
 ]);
 
 
@@ -458,7 +461,10 @@ export const EclFooterEu: StencilVueComponent<JSX.EclFooterEu> = /*@__PURE__*/ d
   'description',
   'descriptionName',
   'coOwnerTitle',
-  'coOwnerLinks'
+  'coOwnerLinks',
+  'actionButton',
+  'feedbackButton',
+  'feedbackButtonDescription'
 ]);
 
 

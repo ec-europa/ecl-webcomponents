@@ -749,10 +749,22 @@ export namespace Components {
         "width": string;
     }
     interface EclFooterEc {
+        /**
+          * @default ''
+         */
+        "actionButton": string;
         "coOwnerLinks": string;
         "coOwnerTitle": string;
         "description": string;
         "descriptionName": string;
+        /**
+          * @default ''
+         */
+        "feedbackButton": string;
+        /**
+          * @default ''
+         */
+        "feedbackButtonDescription": string;
         "logoAlt": string;
         "logoLangCode": string;
         "logoLink": string;
@@ -767,10 +779,22 @@ export namespace Components {
         "variant": string;
     }
     interface EclFooterEu {
+        /**
+          * @default ''
+         */
+        "actionButton": string;
         "coOwnerLinks": string;
         "coOwnerTitle": string;
         "description": string;
         "descriptionName": string;
+        /**
+          * @default ''
+         */
+        "feedbackButton": string;
+        /**
+          * @default ''
+         */
+        "feedbackButtonDescription": string;
         "logoAlt": string;
         "logoAriaLabel": string;
         "logoLangCode": string;
@@ -4104,10 +4128,22 @@ declare namespace LocalJSX {
         "width"?: string;
     }
     interface EclFooterEc {
+        /**
+          * @default ''
+         */
+        "actionButton"?: string;
         "coOwnerLinks"?: string;
         "coOwnerTitle"?: string;
         "description"?: string;
         "descriptionName"?: string;
+        /**
+          * @default ''
+         */
+        "feedbackButton"?: string;
+        /**
+          * @default ''
+         */
+        "feedbackButtonDescription"?: string;
         "logoAlt"?: string;
         "logoLangCode"?: string;
         "logoLink"?: string;
@@ -4122,10 +4158,22 @@ declare namespace LocalJSX {
         "variant"?: string;
     }
     interface EclFooterEu {
+        /**
+          * @default ''
+         */
+        "actionButton"?: string;
         "coOwnerLinks"?: string;
         "coOwnerTitle"?: string;
         "description"?: string;
         "descriptionName"?: string;
+        /**
+          * @default ''
+         */
+        "feedbackButton"?: string;
+        /**
+          * @default ''
+         */
+        "feedbackButtonDescription"?: string;
         "logoAlt"?: string;
         "logoAriaLabel"?: string;
         "logoLangCode"?: string;
@@ -6281,6 +6329,9 @@ declare namespace LocalJSX {
         "siteLink": string;
         "coOwnerTitle": string;
         "coOwnerLinks": string;
+        "actionButton": string;
+        "feedbackButton": string;
+        "feedbackButtonDescription": string;
     }
     interface EclFooterEuAttributes {
         "styleClass": string;
@@ -6297,6 +6348,9 @@ declare namespace LocalJSX {
         "descriptionName": string;
         "coOwnerTitle": string;
         "coOwnerLinks": string;
+        "actionButton": string;
+        "feedbackButton": string;
+        "feedbackButtonDescription": string;
     }
     interface EclFooterItemAttributes {
         "theme": string;
