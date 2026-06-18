@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-featured-item",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.27.0",
+  "version": "0.28.0",
   "description": "ECL Featured item",
   "main": "ecl-featured-item.tsx",
   "private": true,
