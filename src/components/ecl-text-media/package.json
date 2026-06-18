@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-text-media",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.27.0",
+  "version": "0.28.0",
   "description": "ECL Text and media",
   "main": "ecl-text-media.tsx",
   "private": true,
@@ -24,8 +24,8 @@
     "cross-env": "10.1.0"
   },
   "dependencies": {
-    "@ecl/web-components-link": "0.27.0",
-    "@ecl/web-components-media-container": "0.27.0"
+    "@ecl/web-components-link": "0.28.0",
+    "@ecl/web-components-media-container": "0.28.0"
   },
   "repository": {
     "type": "git",

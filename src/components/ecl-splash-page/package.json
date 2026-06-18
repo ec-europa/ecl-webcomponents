@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-splash-page",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.27.0",
+  "version": "0.28.0",
   "description": "ECL Splash page",
   "main": "ecl-splash-page.tsx",
   "private": true,
@@ -21,8 +21,8 @@
     "@ecl/theme-ec": "5.0.0-RC6",
     "@ecl/theme-eu": "5.0.0-RC6",
     "@ecl/utility-screen-reader": "5.0.0-RC6",
-    "@ecl/web-components-grid": "0.27.0",
-    "@ecl/web-components-picture": "0.27.0",
+    "@ecl/web-components-grid": "0.28.0",
+    "@ecl/web-components-picture": "0.28.0",
     "cross-env": "10.1.0"
   },
   "repository": {

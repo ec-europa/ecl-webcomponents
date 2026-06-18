@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-notification",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.27.0",
+  "version": "0.28.0",
   "description": "ECL Message",
   "main": "ecl-notification.tsx",
   "private": true,
@@ -13,8 +13,8 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "@ecl/web-components-button": "0.27.0",
-    "@ecl/web-components-icon": "0.27.0"
+    "@ecl/web-components-button": "0.28.0",
+    "@ecl/web-components-icon": "0.28.0"
   },
   "devDependencies": {
     "@ecl/builder": "5.0.0-RC6",

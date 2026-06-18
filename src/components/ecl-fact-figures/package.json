@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-fact-figures",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.27.0",
+  "version": "0.28.0",
   "description": "ECL Fact & figures",
   "main": "ecl-media-container.tsx",
   "private": true,
@@ -18,14 +18,14 @@
     "@ecl/grid": "5.0.0-RC6",
     "@ecl/link": "5.0.0-RC6",
     "@ecl/mixins-typography": "5.0.0-RC6",
-    "@ecl/utility-screen-reader": "5.0.0-RC6",
     "@ecl/theme-ec": "5.0.0-RC6",
     "@ecl/theme-eu": "5.0.0-RC6",
+    "@ecl/utility-screen-reader": "5.0.0-RC6",
     "cross-env": "10.1.0"
   },
   "dependencies": {
-    "@ecl/web-components-icon": "0.27.0",
-    "@ecl/web-components-link": "0.27.0"
+    "@ecl/web-components-icon": "0.28.0",
+    "@ecl/web-components-link": "0.28.0"
   },
   "repository": {
     "type": "git",
