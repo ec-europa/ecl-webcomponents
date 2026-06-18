@@ -61,8 +61,8 @@ importers:
         specifier: 7.29.7
         version: 7.29.7(@babel/core@7.29.7)
       '@ecl/ecl-webcomponents':
-        specifier: 0.27.0
-        version: 0.27.0
+        specifier: 0.28.0
+        version: link:packages/ecl-webcomponents
       '@ecl/preset-ec':
         specifier: 5.0.0-RC6
         version: 5.0.0-RC6(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))
@@ -4194,10 +4194,6 @@ packages:
 
   '@ecl/dom-utils@5.0.0-RC6':
     resolution: {integrity: sha512-BMZvYhkINyFTs1TjRWGwKmsix3L2FoGAQeknlZlV7CUYZIWwKpAjNqDnGZTuUGSQXTnAB4Q0yd763ugT9eUTyA==}
-
-  '@ecl/ecl-webcomponents@0.27.0':
-    resolution: {integrity: sha512-cyHkr/CusMB1dQoVZEphunAC+HBInysjwZVCrmsHKi/c20++KQJGVLV1ZEcofFDwZBWiUxMUln84mTr1aattVA==}
-    engines: {node: '>=20.0.0', pnpm: 10.9.0}
 
   '@ecl/event-manager@5.0.0-RC6':
     resolution: {integrity: sha512-pVR3DasSXtO2E4janqhPwykJHew2r/32QdcMH7acOmmS71E8ah4Sb52B/VSvt15NxvikwT9cTBryDLrCFcNP+w==}
@@ -17829,10 +17825,6 @@ snapshots:
       '@ecl/tag': 5.0.0-RC6
 
   '@ecl/dom-utils@5.0.0-RC6': {}
-
-  '@ecl/ecl-webcomponents@0.27.0':
-    dependencies:
-      '@stencil/core': 4.43.5
 
   '@ecl/event-manager@5.0.0-RC6': {}
 
