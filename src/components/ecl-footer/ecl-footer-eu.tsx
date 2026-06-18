@@ -27,6 +27,9 @@ export class EclFooterEu {
   @Prop() descriptionName: string;
   @Prop() coOwnerTitle: string;
   @Prop() coOwnerLinks: string;
+  @Prop() actionButton: string = '';
+  @Prop() feedbackButton: string = '';
+  @Prop() feedbackButtonDescription: string = '';
 
   getClass(): string {
     const styleClasses = [
@@ -54,6 +57,8 @@ export class EclFooterEu {
   render() {
     const logoPath = getAssetPath(`./build/images/${this.theme}/logos/standard-version/positive/logo-${this.theme}--${this.logoLangCode}.svg`);
     const coOwnerLinks = this.coOwnerLinks ? JSON.parse(this.coOwnerLinks) : '';
+    const feedbackButton = this.feedbackButton ? JSON.parse(this.feedbackButton) : null;
+    const actionButton = this.actionButton ? JSON.parse(this.actionButton) : null;
 
     return (
       <footer
@@ -91,6 +96,30 @@ export class EclFooterEu {
         }
         <div class="ecl-site-footer__main">
           <div class="ecl-container ecl-site-footer__container">
+          { feedbackButton &&
+            <div class="ecl-site-footer__row">
+              <div class="ecl-site-footer__section ecl-site-footer__section--feedback">
+                { this.feedbackButtonDescription &&
+                <div class="ecl-site-footer__description">
+                  {this.feedbackButtonDescription}
+                </div>
+                }
+                <ecl-link
+                  style-class={`ecl-site-footer__action-button ecl-button--m sc-ecl-footer-eu-${this.theme}`}
+                  path={feedbackButton.path}
+                  variant="primary-highlight-inverted"
+                >
+                  {feedbackButton.label}
+                  <ecl-icon
+                    slot="icon-after"
+                    icon="arrow-up-right"
+                    family="phosphor"
+                  >
+                  </ecl-icon>
+                </ecl-link>
+              </div>
+            </div>
+          }
           {this.variant === 'harmonised' &&
             <div class="ecl-site-footer__row">
               <div class="ecl-site-footer__column">
@@ -119,6 +148,21 @@ export class EclFooterEu {
                   >
                     <slot name="ecl-footer-list-info"></slot>
                   </div>
+                  { actionButton &&
+                    <ecl-link
+                      style-class={`ecl-site-footer__action-button ecl-button--m sc-ecl-footer-eu-${this.theme}`}
+                      path={feedbackButton.path}
+                      variant="secondary-neutral"
+                    >
+                      {actionButton.label}
+                      <ecl-icon
+                        slot="icon-after"
+                        icon="envelope-simple"
+                        family="phosphor"
+                      >
+                      </ecl-icon>
+                    </ecl-link>
+                  }
                 </div>
               </div>
               <div class="ecl-site-footer__column">
@@ -181,6 +225,21 @@ export class EclFooterEu {
                   <div class="ecl-site-footer__description">
                     {this.description}
                   </div>
+                }     
+                { (this.variant === 'core' && actionButton) &&
+                  <ecl-link
+                    style-class={`ecl-site-footer__action-button ecl-button--m sc-ecl-footer-eu-${this.theme}`}
+                    path={feedbackButton.path}
+                    variant="secondary-neutral"
+                  >
+                    {actionButton.label}
+                    <ecl-icon
+                      slot="icon-after"
+                      icon="envelope-simple"
+                      family="phosphor"
+                    >
+                    </ecl-icon>
+                  </ecl-link>
                 }
                 { this.variant === 'harmonised' &&
                   <div

@@ -20,6 +20,9 @@ describe('ecl-footer EC', () => {
         description-name="[name of the manager of the site]"
         site-name="European Commission website"
         logo-link="/example.html"
+        feedback-button='{"label": "Fill in survey", "path": "/example.html"}'
+        feedback-button-description="Help us improve the website"
+        action-button='{"label": "Subscribe for updates", "path": "/example.html"}'
       >
         <ecl-footer-item
           link="/example.html"
@@ -172,6 +175,9 @@ describe('ecl-footer EU', () => {
         description-name="the Directorate-General for Communication"
         variant="core"
         logo-link="/example.html"
+        feedback-button='{"label": "Fill in survey", "path": "/example.html"}'
+        feedback-button-description="Help us improve the website"
+        action-button='{"label": "Subscribe for updates", "path": "/example.html"}'
       >
         <ecl-text
           size="m"

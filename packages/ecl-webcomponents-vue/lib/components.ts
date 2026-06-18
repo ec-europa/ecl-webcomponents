@@ -10,8 +10,10 @@ import type { JSX } from '@ecl/ecl-webcomponents';
 
 
 export const EclAccordion: StencilVueComponent<JSX.EclAccordion> = /*@__PURE__*/ defineContainer<JSX.EclAccordion>('ecl-accordion', undefined, [
+  'noScript',
   'styleClass',
   'theme',
+  'sidebar',
   'colorMode'
 ]);
 
@@ -19,6 +21,7 @@ export const EclAccordion: StencilVueComponent<JSX.EclAccordion> = /*@__PURE__*/
 export const EclAccordionItem: StencilVueComponent<JSX.EclAccordionItem> = /*@__PURE__*/ defineContainer<JSX.EclAccordionItem>('ecl-accordion-item', undefined, [
   'styleClass',
   'label',
+  'sidebar',
   'expanded',
   'theme'
 ]);
@@ -315,7 +318,9 @@ export const EclFactFigures: StencilVueComponent<JSX.EclFactFigures> = /*@__PURE
   'viewAllLinkPath',
   'viewAllLinkLabel',
   'iconSize',
-  'fontSize'
+  'fontSize',
+  'sources',
+  'sourcesLabel'
 ]);
 
 
@@ -435,7 +440,10 @@ export const EclFooterEc: StencilVueComponent<JSX.EclFooterEc> = /*@__PURE__*/ d
   'siteName',
   'siteLink',
   'coOwnerTitle',
-  'coOwnerLinks'
+  'coOwnerLinks',
+  'actionButton',
+  'feedbackButton',
+  'feedbackButtonDescription'
 ]);
 
 
@@ -453,7 +461,10 @@ export const EclFooterEu: StencilVueComponent<JSX.EclFooterEu> = /*@__PURE__*/ d
   'description',
   'descriptionName',
   'coOwnerTitle',
-  'coOwnerLinks'
+  'coOwnerLinks',
+  'actionButton',
+  'feedbackButton',
+  'feedbackButtonDescription'
 ]);
 
 
@@ -545,6 +556,20 @@ export const EclGrid: StencilVueComponent<JSX.EclGrid> = /*@__PURE__*/ defineCon
   'breakpoint',
   'row',
   'container'
+]);
+
+
+export const EclHighlightBox: StencilVueComponent<JSX.EclHighlightBox> = /*@__PURE__*/ defineContainer<JSX.EclHighlightBox>('ecl-highlight-box', undefined, [
+  'theme',
+  'styleClass',
+  'itemTitle',
+  'itemId',
+  'hasDescription',
+  'linkLabel',
+  'linkPath',
+  'linkIcon',
+  'titleIcon',
+  'colorMode'
 ]);
 
 
@@ -994,7 +1019,12 @@ export const EclQuizCard: StencilVueComponent<JSX.EclQuizCard> = /*@__PURE__*/ d
   'answerTitle',
   'itemId',
   'options',
-  'variant'
+  'skipText',
+  'variant',
+  'correctLabel',
+  'incorrectLabel',
+  'correctChosenLabel',
+  'incorrectChosenLabel'
 ]);
 
 
@@ -1149,6 +1179,17 @@ export const EclSiteHeader: StencilVueComponent<JSX.EclSiteHeader> = /*@__PURE__
   'bannerTop',
   'bannerTopLink',
   'siteNameMobileOnly'
+]);
+
+
+export const EclSloganTicker: StencilVueComponent<JSX.EclSloganTicker> = /*@__PURE__*/ defineContainer<JSX.EclSloganTicker>('ecl-slogan-ticker', undefined, [
+  'theme',
+  'styleClass',
+  'srPlay',
+  'srPause',
+  'noScript',
+  'colorMode',
+  'items'
 ]);
 
 

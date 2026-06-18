@@ -21,7 +21,12 @@ export class EclQuizCard {
   @Prop() answerTitle: string;
   @Prop() itemId: string = `ecl-quiz-item-${Math.random().toString(36).substr(2, 9)}`;
   @Prop() options: string;
+  @Prop() skipText: string;
   @Prop() variant: string = 'reveal';
+  @Prop() correctLabel: string = '';
+  @Prop() incorrectLabel: string = '';
+  @Prop() correctChosenLabel: string = '';
+  @Prop() incorrectChosenLabel: string = '';
 
   getClass(): string {
     const styleClasses = [
@@ -48,6 +53,8 @@ export class EclQuizCard {
         id={this.itemId}
         data-ecl-quiz-card-flip={isReveal || undefined}
         tabindex={isReveal ? 0 : undefined}
+        data-ecl-quiz-chosen-option-correct={this.correctChosenLabel || undefined}
+        data-ecl-quiz-chosen-option-incorrect={this.incorrectChosenLabel || undefined}
       >
         <article class={`ecl-quiz-card__content sc-ecl-quiz-${this.theme}`}>
           <div class={`ecl-quiz-card__front sc-ecl-quiz-${this.theme}`}>
@@ -84,7 +91,7 @@ export class EclQuizCard {
                 { this.question }
               </legend>
               <ol class={`ecl-quiz-card__options sc-ecl-quiz-${this.theme}`}>
-              {optionsArray.map((option) => (
+              {optionsArray.map((option, index) => (
                 <li
                   class={`ecl-quiz-card__option sc-ecl-quiz-${this.theme}`}
                 >
@@ -99,6 +106,14 @@ export class EclQuizCard {
                     ></input>
                       {option.label}
                   </label>
+                  { (index === 0 && this.skipText) &&
+                  <span
+                    class={`ecl-quiz__skip sc-ecl-quiz-${this.theme}`}
+                    id={`quiz-${this.itemId}-skip-instructions`}
+                  >
+                    {this.skipText}
+                  </span>
+                  }
                 </li>
               ))}
               </ol>
@@ -190,7 +205,28 @@ export class EclQuizCard {
                 class={`ecl-quiz-card__option sc-ecl-quiz-${this.theme}`}
                 data-match={ option.correct ? "true" : "false" }
               >
+                <span class={`ecl-quiz-card__option-assistive-label sc-ecl-quiz-${this.theme}`}>
+                  {option.correct ? this.correctLabel : this.incorrectLabel}
+                </span>
                 { option.label }
+                <span
+                    class={`ecl-quiz-card__option-icon sc-ecl-quiz-${this.theme}`}
+                  >
+                { option.correct ? (
+                  <ecl-icon
+                    style-class={`ecl-quiz-card__option-icon--success sc-ecl-quiz-${this.theme}`}
+                    size="s"
+                    icon="check-circle"
+                    family="phosphor"
+                  ></ecl-icon> ) : (
+                  <ecl-icon
+                    style-class={`ecl-quiz-card__option-icon--error sc-ecl-quiz-${this.theme}`}
+                    size="s"
+                    icon="x-circle"
+                    family="phosphor"
+                  ></ecl-icon> )
+                }
+                </span>
               </li>
               ))}
             </ol>

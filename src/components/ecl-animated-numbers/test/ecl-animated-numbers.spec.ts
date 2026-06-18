@@ -15,6 +15,11 @@ describe('ecl-animated-numbers', () => {
       html: `<ecl-animated-numbers
               counter-color="false"
               no-script
+              sources-label="Sources:"
+              sources='[
+                { "label": "Eurostat", "path": "/example.html" },
+                { "label": "DG CNECT", "path": "/example.html" }
+              ]' 
             >
               <ecl-animated-numbers-item
                 icon="users"

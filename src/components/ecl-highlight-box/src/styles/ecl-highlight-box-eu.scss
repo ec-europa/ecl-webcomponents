@@ -1,0 +1,14 @@
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/mixins-typography/mixins' with (
+  $theme: theme.$theme,
+  $typography: var.$typography
+);
+@use '@ecl/highlight-box/highlight-box' with (
+  $theme: theme.$theme,
+  $highlight-box: var.$highlight-box
+);
+
+ecl-icon {
+  display: contents;
+}

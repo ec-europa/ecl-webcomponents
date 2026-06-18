@@ -4,6 +4,7 @@
   $theme: theme.$theme
 );
 @use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $theme: theme.$theme,
   $typography: var.$typography
 );
 @use '@ecl/link/link' with (

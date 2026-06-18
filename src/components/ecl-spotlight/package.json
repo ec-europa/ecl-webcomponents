@@ -13,13 +13,13 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "5.0.0-RC5",
-    "@ecl/grid": "5.0.0-RC5",
-    "@ecl/mixins-typography": "5.0.0-RC5",
-    "@ecl/picture": "5.0.0-RC5",
-    "@ecl/spotlight": "5.0.0-RC5",
-    "@ecl/theme-ec": "5.0.0-RC5",
-    "@ecl/theme-eu": "5.0.0-RC5",
+    "@ecl/builder": "5.0.0-RC6",
+    "@ecl/grid": "5.0.0-RC6",
+    "@ecl/mixins-typography": "5.0.0-RC6",
+    "@ecl/picture": "5.0.0-RC6",
+    "@ecl/spotlight": "5.0.0-RC6",
+    "@ecl/theme-ec": "5.0.0-RC6",
+    "@ecl/theme-eu": "5.0.0-RC6",
     "cross-env": "10.1.0"
   },
   "repository": {

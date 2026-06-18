@@ -1,5 +1,9 @@
 @use '@ecl/theme-ec/theme' as theme;
 @use '@ecl/theme-ec/variables' as var;
+@use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $theme: theme.$theme,
+  $typography: var.$typography
+);
 @use '@ecl/button/button' with (
   $theme: theme.$theme,
   $button: var.$button

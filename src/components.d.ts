@@ -12,6 +12,14 @@ export namespace Components {
          */
         "colorMode": string;
         /**
+          * @default false
+         */
+        "noScript": boolean;
+        /**
+          * @default false
+         */
+        "sidebar": boolean;
+        /**
           * @default ''
          */
         "styleClass": string;
@@ -20,6 +28,10 @@ export namespace Components {
     interface EclAccordionItem {
         "expanded": boolean;
         "label": string;
+        /**
+          * @default false
+         */
+        "sidebar": boolean;
         "styleClass": string;
         "theme": string;
     }
@@ -560,6 +572,14 @@ export namespace Components {
           * @default 'm'
          */
         "iconSize": string;
+        /**
+          * @default ''
+         */
+        "sources": string;
+        /**
+          * @default ''
+         */
+        "sourcesLabel": string;
         "styleClass": string;
         "theme": string;
         /**
@@ -729,10 +749,22 @@ export namespace Components {
         "width": string;
     }
     interface EclFooterEc {
+        /**
+          * @default ''
+         */
+        "actionButton": string;
         "coOwnerLinks": string;
         "coOwnerTitle": string;
         "description": string;
         "descriptionName": string;
+        /**
+          * @default ''
+         */
+        "feedbackButton": string;
+        /**
+          * @default ''
+         */
+        "feedbackButtonDescription": string;
         "logoAlt": string;
         "logoLangCode": string;
         "logoLink": string;
@@ -747,10 +779,22 @@ export namespace Components {
         "variant": string;
     }
     interface EclFooterEu {
+        /**
+          * @default ''
+         */
+        "actionButton": string;
         "coOwnerLinks": string;
         "coOwnerTitle": string;
         "description": string;
         "descriptionName": string;
+        /**
+          * @default ''
+         */
+        "feedbackButton": string;
+        /**
+          * @default ''
+         */
+        "feedbackButtonDescription": string;
         "logoAlt": string;
         "logoAriaLabel": string;
         "logoLangCode": string;
@@ -936,6 +980,45 @@ export namespace Components {
           * @default 'ec'
          */
         "theme": string;
+    }
+    interface EclHighlightBox {
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
+          * @default true
+         */
+        "hasDescription": boolean;
+        /**
+          * @default `ecl-highlight-box-${Math.random().toString(36).substr(2, 9)}`
+         */
+        "itemId": string;
+        /**
+          * @default ''
+         */
+        "itemTitle": string;
+        /**
+          * @default ''
+         */
+        "linkIcon": string;
+        /**
+          * @default ''
+         */
+        "linkLabel": string;
+        /**
+          * @default ''
+         */
+        "linkPath": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+        /**
+          * @default ''
+         */
+        "titleIcon": string;
     }
     interface EclIcon {
         "color": string;
@@ -1683,8 +1766,24 @@ export namespace Components {
         "answerTitle": string;
         "backText": string;
         "category": string;
+        /**
+          * @default ''
+         */
+        "correctChosenLabel": string;
+        /**
+          * @default ''
+         */
+        "correctLabel": string;
         "errorCategory": string;
         "flipText": string;
+        /**
+          * @default ''
+         */
+        "incorrectChosenLabel": string;
+        /**
+          * @default ''
+         */
+        "incorrectLabel": string;
         /**
           * @default `ecl-quiz-item-${Math.random().toString(36).substr(2, 9)}`
          */
@@ -1693,6 +1792,7 @@ export namespace Components {
         "options": string;
         "question": string;
         "quizName": string;
+        "skipText": string;
         "styleClass": string;
         "successCategory": string;
         "theme": string;
@@ -2009,6 +2109,33 @@ export namespace Components {
         /**
           * @default 'ec'
          */
+        "theme": string;
+    }
+    interface EclSloganTicker {
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
+          * @default '[]'
+         */
+        "items": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
+        /**
+          * @default ''
+         */
+        "srPause": string;
+        /**
+          * @default ''
+         */
+        "srPlay": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
         "theme": string;
     }
     interface EclSocialMediaFollow {
@@ -2715,6 +2842,12 @@ declare global {
         prototype: HTMLEclGridElement;
         new (): HTMLEclGridElement;
     };
+    interface HTMLEclHighlightBoxElement extends Components.EclHighlightBox, HTMLStencilElement {
+    }
+    var HTMLEclHighlightBoxElement: {
+        prototype: HTMLEclHighlightBoxElement;
+        new (): HTMLEclHighlightBoxElement;
+    };
     interface HTMLEclIconElement extends Components.EclIcon, HTMLStencilElement {
     }
     var HTMLEclIconElement: {
@@ -3001,6 +3134,12 @@ declare global {
         prototype: HTMLEclSiteHeaderElement;
         new (): HTMLEclSiteHeaderElement;
     };
+    interface HTMLEclSloganTickerElement extends Components.EclSloganTicker, HTMLStencilElement {
+    }
+    var HTMLEclSloganTickerElement: {
+        prototype: HTMLEclSloganTickerElement;
+        new (): HTMLEclSloganTickerElement;
+    };
     interface HTMLEclSocialMediaFollowElement extends Components.EclSocialMediaFollow, HTMLStencilElement {
     }
     var HTMLEclSocialMediaFollowElement: {
@@ -3178,6 +3317,7 @@ declare global {
         "ecl-gallery": HTMLEclGalleryElement;
         "ecl-gallery-item": HTMLEclGalleryItemElement;
         "ecl-grid": HTMLEclGridElement;
+        "ecl-highlight-box": HTMLEclHighlightBoxElement;
         "ecl-icon": HTMLEclIconElement;
         "ecl-indicator": HTMLEclIndicatorElement;
         "ecl-inpage-navigation": HTMLEclInpageNavigationElement;
@@ -3217,6 +3357,7 @@ declare global {
         "ecl-search-form": HTMLEclSearchFormElement;
         "ecl-select": HTMLEclSelectElement;
         "ecl-site-header": HTMLEclSiteHeaderElement;
+        "ecl-slogan-ticker": HTMLEclSloganTickerElement;
         "ecl-social-media-follow": HTMLEclSocialMediaFollowElement;
         "ecl-social-media-follow-item": HTMLEclSocialMediaFollowItemElement;
         "ecl-spacing": HTMLEclSpacingElement;
@@ -3247,6 +3388,14 @@ declare namespace LocalJSX {
          */
         "colorMode"?: string;
         /**
+          * @default false
+         */
+        "noScript"?: boolean;
+        /**
+          * @default false
+         */
+        "sidebar"?: boolean;
+        /**
           * @default ''
          */
         "styleClass"?: string;
@@ -3255,6 +3404,10 @@ declare namespace LocalJSX {
     interface EclAccordionItem {
         "expanded"?: boolean;
         "label"?: string;
+        /**
+          * @default false
+         */
+        "sidebar"?: boolean;
         "styleClass"?: string;
         "theme"?: string;
     }
@@ -3798,6 +3951,14 @@ declare namespace LocalJSX {
           * @default 'm'
          */
         "iconSize"?: string;
+        /**
+          * @default ''
+         */
+        "sources"?: string;
+        /**
+          * @default ''
+         */
+        "sourcesLabel"?: string;
         "styleClass"?: string;
         "theme"?: string;
         /**
@@ -3967,10 +4128,22 @@ declare namespace LocalJSX {
         "width"?: string;
     }
     interface EclFooterEc {
+        /**
+          * @default ''
+         */
+        "actionButton"?: string;
         "coOwnerLinks"?: string;
         "coOwnerTitle"?: string;
         "description"?: string;
         "descriptionName"?: string;
+        /**
+          * @default ''
+         */
+        "feedbackButton"?: string;
+        /**
+          * @default ''
+         */
+        "feedbackButtonDescription"?: string;
         "logoAlt"?: string;
         "logoLangCode"?: string;
         "logoLink"?: string;
@@ -3985,10 +4158,22 @@ declare namespace LocalJSX {
         "variant"?: string;
     }
     interface EclFooterEu {
+        /**
+          * @default ''
+         */
+        "actionButton"?: string;
         "coOwnerLinks"?: string;
         "coOwnerTitle"?: string;
         "description"?: string;
         "descriptionName"?: string;
+        /**
+          * @default ''
+         */
+        "feedbackButton"?: string;
+        /**
+          * @default ''
+         */
+        "feedbackButtonDescription"?: string;
         "logoAlt"?: string;
         "logoAriaLabel"?: string;
         "logoLangCode"?: string;
@@ -4174,6 +4359,45 @@ declare namespace LocalJSX {
           * @default 'ec'
          */
         "theme"?: string;
+    }
+    interface EclHighlightBox {
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
+          * @default true
+         */
+        "hasDescription"?: boolean;
+        /**
+          * @default `ecl-highlight-box-${Math.random().toString(36).substr(2, 9)}`
+         */
+        "itemId"?: string;
+        /**
+          * @default ''
+         */
+        "itemTitle"?: string;
+        /**
+          * @default ''
+         */
+        "linkIcon"?: string;
+        /**
+          * @default ''
+         */
+        "linkLabel"?: string;
+        /**
+          * @default ''
+         */
+        "linkPath"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+        /**
+          * @default ''
+         */
+        "titleIcon"?: string;
     }
     interface EclIcon {
         "color"?: string;
@@ -4924,8 +5148,24 @@ declare namespace LocalJSX {
         "answerTitle"?: string;
         "backText"?: string;
         "category"?: string;
+        /**
+          * @default ''
+         */
+        "correctChosenLabel"?: string;
+        /**
+          * @default ''
+         */
+        "correctLabel"?: string;
         "errorCategory"?: string;
         "flipText"?: string;
+        /**
+          * @default ''
+         */
+        "incorrectChosenLabel"?: string;
+        /**
+          * @default ''
+         */
+        "incorrectLabel"?: string;
         /**
           * @default `ecl-quiz-item-${Math.random().toString(36).substr(2, 9)}`
          */
@@ -4934,6 +5174,7 @@ declare namespace LocalJSX {
         "options"?: string;
         "question"?: string;
         "quizName"?: string;
+        "skipText"?: string;
         "styleClass"?: string;
         "successCategory"?: string;
         "theme"?: string;
@@ -5259,6 +5500,33 @@ declare namespace LocalJSX {
         /**
           * @default 'ec'
          */
+        "theme"?: string;
+    }
+    interface EclSloganTicker {
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
+          * @default '[]'
+         */
+        "items"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
+        /**
+          * @default ''
+         */
+        "srPause"?: string;
+        /**
+          * @default ''
+         */
+        "srPlay"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
         "theme"?: string;
     }
     interface EclSocialMediaFollow {
@@ -5700,13 +5968,16 @@ declare namespace LocalJSX {
     }
 
     interface EclAccordionAttributes {
+        "noScript": boolean;
         "styleClass": string;
         "theme": string;
+        "sidebar": boolean;
         "colorMode": string;
     }
     interface EclAccordionItemAttributes {
         "styleClass": string;
         "label": string;
+        "sidebar": boolean;
         "expanded": boolean;
         "theme": string;
     }
@@ -5950,6 +6221,8 @@ declare namespace LocalJSX {
         "viewAllLinkLabel": string;
         "iconSize": string;
         "fontSize": string;
+        "sources": string;
+        "sourcesLabel": string;
     }
     interface EclFactFiguresItemAttributes {
         "theme": string;
@@ -6056,6 +6329,9 @@ declare namespace LocalJSX {
         "siteLink": string;
         "coOwnerTitle": string;
         "coOwnerLinks": string;
+        "actionButton": string;
+        "feedbackButton": string;
+        "feedbackButtonDescription": string;
     }
     interface EclFooterEuAttributes {
         "styleClass": string;
@@ -6072,6 +6348,9 @@ declare namespace LocalJSX {
         "descriptionName": string;
         "coOwnerTitle": string;
         "coOwnerLinks": string;
+        "actionButton": string;
+        "feedbackButton": string;
+        "feedbackButtonDescription": string;
     }
     interface EclFooterItemAttributes {
         "theme": string;
@@ -6153,6 +6432,18 @@ declare namespace LocalJSX {
         "breakpoint": string;
         "row": boolean;
         "container": boolean;
+    }
+    interface EclHighlightBoxAttributes {
+        "theme": string;
+        "styleClass": string;
+        "itemTitle": string;
+        "itemId": string;
+        "hasDescription": boolean;
+        "linkLabel": string;
+        "linkPath": string;
+        "linkIcon": string;
+        "titleIcon": string;
+        "colorMode": string;
     }
     interface EclIconAttributes {
         "styleClass": string;
@@ -6529,7 +6820,12 @@ declare namespace LocalJSX {
         "answerTitle": string;
         "itemId": string;
         "options": string;
+        "skipText": string;
         "variant": string;
+        "correctLabel": string;
+        "incorrectLabel": string;
+        "correctChosenLabel": string;
+        "incorrectChosenLabel": string;
     }
     interface EclRangeAttributes {
         "theme": string;
@@ -6651,6 +6947,15 @@ declare namespace LocalJSX {
         "bannerTop": string;
         "bannerTopLink": string;
         "siteNameMobileOnly": boolean;
+    }
+    interface EclSloganTickerAttributes {
+        "theme": string;
+        "styleClass": string;
+        "srPlay": string;
+        "srPause": string;
+        "noScript": boolean;
+        "colorMode": string;
+        "items": string;
     }
     interface EclSocialMediaFollowAttributes {
         "theme": string;
@@ -6900,6 +7205,7 @@ declare namespace LocalJSX {
         "ecl-gallery": Omit<EclGallery, keyof EclGalleryAttributes> & { [K in keyof EclGallery & keyof EclGalleryAttributes]?: EclGallery[K] } & { [K in keyof EclGallery & keyof EclGalleryAttributes as `attr:${K}`]?: EclGalleryAttributes[K] } & { [K in keyof EclGallery & keyof EclGalleryAttributes as `prop:${K}`]?: EclGallery[K] };
         "ecl-gallery-item": Omit<EclGalleryItem, keyof EclGalleryItemAttributes> & { [K in keyof EclGalleryItem & keyof EclGalleryItemAttributes]?: EclGalleryItem[K] } & { [K in keyof EclGalleryItem & keyof EclGalleryItemAttributes as `attr:${K}`]?: EclGalleryItemAttributes[K] } & { [K in keyof EclGalleryItem & keyof EclGalleryItemAttributes as `prop:${K}`]?: EclGalleryItem[K] };
         "ecl-grid": Omit<EclGrid, keyof EclGridAttributes> & { [K in keyof EclGrid & keyof EclGridAttributes]?: EclGrid[K] } & { [K in keyof EclGrid & keyof EclGridAttributes as `attr:${K}`]?: EclGridAttributes[K] } & { [K in keyof EclGrid & keyof EclGridAttributes as `prop:${K}`]?: EclGrid[K] };
+        "ecl-highlight-box": Omit<EclHighlightBox, keyof EclHighlightBoxAttributes> & { [K in keyof EclHighlightBox & keyof EclHighlightBoxAttributes]?: EclHighlightBox[K] } & { [K in keyof EclHighlightBox & keyof EclHighlightBoxAttributes as `attr:${K}`]?: EclHighlightBoxAttributes[K] } & { [K in keyof EclHighlightBox & keyof EclHighlightBoxAttributes as `prop:${K}`]?: EclHighlightBox[K] };
         "ecl-icon": Omit<EclIcon, keyof EclIconAttributes> & { [K in keyof EclIcon & keyof EclIconAttributes]?: EclIcon[K] } & { [K in keyof EclIcon & keyof EclIconAttributes as `attr:${K}`]?: EclIconAttributes[K] } & { [K in keyof EclIcon & keyof EclIconAttributes as `prop:${K}`]?: EclIcon[K] };
         "ecl-indicator": Omit<EclIndicator, keyof EclIndicatorAttributes> & { [K in keyof EclIndicator & keyof EclIndicatorAttributes]?: EclIndicator[K] } & { [K in keyof EclIndicator & keyof EclIndicatorAttributes as `attr:${K}`]?: EclIndicatorAttributes[K] } & { [K in keyof EclIndicator & keyof EclIndicatorAttributes as `prop:${K}`]?: EclIndicator[K] };
         "ecl-inpage-navigation": Omit<EclInpageNavigation, keyof EclInpageNavigationAttributes> & { [K in keyof EclInpageNavigation & keyof EclInpageNavigationAttributes]?: EclInpageNavigation[K] } & { [K in keyof EclInpageNavigation & keyof EclInpageNavigationAttributes as `attr:${K}`]?: EclInpageNavigationAttributes[K] } & { [K in keyof EclInpageNavigation & keyof EclInpageNavigationAttributes as `prop:${K}`]?: EclInpageNavigation[K] };
@@ -6939,6 +7245,7 @@ declare namespace LocalJSX {
         "ecl-search-form": Omit<EclSearchForm, keyof EclSearchFormAttributes> & { [K in keyof EclSearchForm & keyof EclSearchFormAttributes]?: EclSearchForm[K] } & { [K in keyof EclSearchForm & keyof EclSearchFormAttributes as `attr:${K}`]?: EclSearchFormAttributes[K] } & { [K in keyof EclSearchForm & keyof EclSearchFormAttributes as `prop:${K}`]?: EclSearchForm[K] };
         "ecl-select": Omit<EclSelect, keyof EclSelectAttributes> & { [K in keyof EclSelect & keyof EclSelectAttributes]?: EclSelect[K] } & { [K in keyof EclSelect & keyof EclSelectAttributes as `attr:${K}`]?: EclSelectAttributes[K] } & { [K in keyof EclSelect & keyof EclSelectAttributes as `prop:${K}`]?: EclSelect[K] };
         "ecl-site-header": Omit<EclSiteHeader, keyof EclSiteHeaderAttributes> & { [K in keyof EclSiteHeader & keyof EclSiteHeaderAttributes]?: EclSiteHeader[K] } & { [K in keyof EclSiteHeader & keyof EclSiteHeaderAttributes as `attr:${K}`]?: EclSiteHeaderAttributes[K] } & { [K in keyof EclSiteHeader & keyof EclSiteHeaderAttributes as `prop:${K}`]?: EclSiteHeader[K] };
+        "ecl-slogan-ticker": Omit<EclSloganTicker, keyof EclSloganTickerAttributes> & { [K in keyof EclSloganTicker & keyof EclSloganTickerAttributes]?: EclSloganTicker[K] } & { [K in keyof EclSloganTicker & keyof EclSloganTickerAttributes as `attr:${K}`]?: EclSloganTickerAttributes[K] } & { [K in keyof EclSloganTicker & keyof EclSloganTickerAttributes as `prop:${K}`]?: EclSloganTicker[K] };
         "ecl-social-media-follow": Omit<EclSocialMediaFollow, keyof EclSocialMediaFollowAttributes> & { [K in keyof EclSocialMediaFollow & keyof EclSocialMediaFollowAttributes]?: EclSocialMediaFollow[K] } & { [K in keyof EclSocialMediaFollow & keyof EclSocialMediaFollowAttributes as `attr:${K}`]?: EclSocialMediaFollowAttributes[K] } & { [K in keyof EclSocialMediaFollow & keyof EclSocialMediaFollowAttributes as `prop:${K}`]?: EclSocialMediaFollow[K] };
         "ecl-social-media-follow-item": Omit<EclSocialMediaFollowItem, keyof EclSocialMediaFollowItemAttributes> & { [K in keyof EclSocialMediaFollowItem & keyof EclSocialMediaFollowItemAttributes]?: EclSocialMediaFollowItem[K] } & { [K in keyof EclSocialMediaFollowItem & keyof EclSocialMediaFollowItemAttributes as `attr:${K}`]?: EclSocialMediaFollowItemAttributes[K] } & { [K in keyof EclSocialMediaFollowItem & keyof EclSocialMediaFollowItemAttributes as `prop:${K}`]?: EclSocialMediaFollowItem[K] };
         "ecl-spacing": Omit<EclSpacing, keyof EclSpacingAttributes> & { [K in keyof EclSpacing & keyof EclSpacingAttributes]?: EclSpacing[K] } & { [K in keyof EclSpacing & keyof EclSpacingAttributes as `attr:${K}`]?: EclSpacingAttributes[K] } & { [K in keyof EclSpacing & keyof EclSpacingAttributes as `prop:${K}`]?: EclSpacing[K] };
@@ -7002,6 +7309,7 @@ declare module "@stencil/core" {
             "ecl-gallery": LocalJSX.IntrinsicElements["ecl-gallery"] & JSXBase.HTMLAttributes<HTMLEclGalleryElement>;
             "ecl-gallery-item": LocalJSX.IntrinsicElements["ecl-gallery-item"] & JSXBase.HTMLAttributes<HTMLEclGalleryItemElement>;
             "ecl-grid": LocalJSX.IntrinsicElements["ecl-grid"] & JSXBase.HTMLAttributes<HTMLEclGridElement>;
+            "ecl-highlight-box": LocalJSX.IntrinsicElements["ecl-highlight-box"] & JSXBase.HTMLAttributes<HTMLEclHighlightBoxElement>;
             "ecl-icon": LocalJSX.IntrinsicElements["ecl-icon"] & JSXBase.HTMLAttributes<HTMLEclIconElement>;
             "ecl-indicator": LocalJSX.IntrinsicElements["ecl-indicator"] & JSXBase.HTMLAttributes<HTMLEclIndicatorElement>;
             "ecl-inpage-navigation": LocalJSX.IntrinsicElements["ecl-inpage-navigation"] & JSXBase.HTMLAttributes<HTMLEclInpageNavigationElement>;
@@ -7041,6 +7349,7 @@ declare module "@stencil/core" {
             "ecl-search-form": LocalJSX.IntrinsicElements["ecl-search-form"] & JSXBase.HTMLAttributes<HTMLEclSearchFormElement>;
             "ecl-select": LocalJSX.IntrinsicElements["ecl-select"] & JSXBase.HTMLAttributes<HTMLEclSelectElement>;
             "ecl-site-header": LocalJSX.IntrinsicElements["ecl-site-header"] & JSXBase.HTMLAttributes<HTMLEclSiteHeaderElement>;
+            "ecl-slogan-ticker": LocalJSX.IntrinsicElements["ecl-slogan-ticker"] & JSXBase.HTMLAttributes<HTMLEclSloganTickerElement>;
             "ecl-social-media-follow": LocalJSX.IntrinsicElements["ecl-social-media-follow"] & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowElement>;
             "ecl-social-media-follow-item": LocalJSX.IntrinsicElements["ecl-social-media-follow-item"] & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowItemElement>;
             "ecl-spacing": LocalJSX.IntrinsicElements["ecl-spacing"] & JSXBase.HTMLAttributes<HTMLEclSpacingElement>;

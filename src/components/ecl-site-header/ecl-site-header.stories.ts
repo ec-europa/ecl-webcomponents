@@ -904,15 +904,10 @@ export const SiteHeaderStandardised = TemplateStandardised.bind({});
 SiteHeaderStandardised.storyName = 'standardised';
 SiteHeaderStandardised.args = {
   siteName: 'News, policies, information and services',
-  className: 'Aid, Development cooperation, Fundamental rights'
 };
 SiteHeaderStandardised.argTypes = {
   siteName: {
     name: 'site-name',
-    type: { name: 'string' },
-  },
-  className: {
-    name: 'banner-top',
     type: { name: 'string' },
   },
 };

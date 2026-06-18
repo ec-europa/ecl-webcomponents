@@ -4,7 +4,8 @@
   $theme: theme.$theme
 );
 @use '@ecl/mixins-typography/mixins' as typographyMixins with (
-  $typography: var.$typography
+  $typography: var.$typography,
+  $theme: theme.$theme
 );
 @use '@ecl/text-media/text-media' with (
   $theme: theme.$theme,

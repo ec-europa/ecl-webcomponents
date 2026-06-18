@@ -11,6 +11,7 @@
 | ------------ | ------------- | ----------- | --------- | ----------- |
 | `expanded`   | `expanded`    |             | `boolean` | `undefined` |
 | `label`      | `label`       |             | `string`  | `undefined` |
+| `sidebar`    | `sidebar`     |             | `boolean` | `false`     |
 | `styleClass` | `style-class` |             | `string`  | `undefined` |
 | `theme`      | `theme`       |             | `string`  | `undefined` |
 

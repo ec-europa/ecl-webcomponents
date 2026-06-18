@@ -11,6 +11,7 @@ export class EclAccordionItem {
   @Element() el: HTMLElement;
   @Prop() styleClass: string;
   @Prop() label: string;
+  @Prop() sidebar: boolean = false;
   @Prop({reflect:true}) expanded: boolean;
   @Prop({ mutable: true }) theme: string;
   
@@ -30,6 +31,7 @@ export class EclAccordionItem {
     return (
       <details
         class={this.getClass()}
+        {...(this.sidebar ? { "data-desktop-open": true } : {})}
       >
         <summary
           class={`ecl-accordion__toggle sc-ecl-accordion-${this.theme}`}

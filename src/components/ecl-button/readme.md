@@ -46,6 +46,7 @@
  - [ecl-search-form](../ecl-search-form)
  - [ecl-select](../ecl-select)
  - [ecl-site-header](../ecl-site-header)
+ - [ecl-slogan-ticker](../ecl-slogan-ticker)
  - [ecl-tabs](../ecl-tabs)
  - [ecl-timeline-item](../ecl-timeline)
 
@@ -77,6 +78,7 @@ graph TD;
   ecl-search-form --> ecl-button
   ecl-select --> ecl-button
   ecl-site-header --> ecl-button
+  ecl-slogan-ticker --> ecl-button
   ecl-tabs --> ecl-button
   ecl-timeline-item --> ecl-button
   style ecl-button fill:#f9f,stroke:#333,stroke-width:4px

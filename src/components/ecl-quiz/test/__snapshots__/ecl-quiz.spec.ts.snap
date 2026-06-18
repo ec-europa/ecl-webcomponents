@@ -91,16 +91,40 @@ exports[`ecl-quiz poll renders correctly 1`] = `
                 </div>
                 <ol class="ecl-quiz-card__options sc-ecl-quiz-ec">
                   <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="true">
+                    <span class="ecl-quiz-card__option-assistive-label sc-ecl-quiz-ec"></span>
                     European commission
+                    <span class="ecl-quiz-card__option-icon sc-ecl-quiz-ec">
+                      <ecl-icon style-class="ecl-quiz-card__option-icon--success sc-ecl-quiz-ec">
+                        <span class="ecl-icon ecl-icon--s ecl-quiz-card__option-icon--success sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--check-circle"></span>
+                      </ecl-icon>
+                    </span>
                   </li>
                   <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    <span class="ecl-quiz-card__option-assistive-label sc-ecl-quiz-ec"></span>
                     European parliament
+                    <span class="ecl-quiz-card__option-icon sc-ecl-quiz-ec">
+                      <ecl-icon style-class="ecl-quiz-card__option-icon--error sc-ecl-quiz-ec">
+                        <span class="ecl-icon ecl-icon--s ecl-quiz-card__option-icon--error sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--x-circle"></span>
+                      </ecl-icon>
+                    </span>
                   </li>
                   <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    <span class="ecl-quiz-card__option-assistive-label sc-ecl-quiz-ec"></span>
                     European Central Bank
+                    <span class="ecl-quiz-card__option-icon sc-ecl-quiz-ec">
+                      <ecl-icon style-class="ecl-quiz-card__option-icon--error sc-ecl-quiz-ec">
+                        <span class="ecl-icon ecl-icon--s ecl-quiz-card__option-icon--error sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--x-circle"></span>
+                      </ecl-icon>
+                    </span>
                   </li>
                   <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    <span class="ecl-quiz-card__option-assistive-label sc-ecl-quiz-ec"></span>
                     Court of Justice of the European Union
+                    <span class="ecl-quiz-card__option-icon sc-ecl-quiz-ec">
+                      <ecl-icon style-class="ecl-quiz-card__option-icon--error sc-ecl-quiz-ec">
+                        <span class="ecl-icon ecl-icon--s ecl-quiz-card__option-icon--error sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--x-circle"></span>
+                      </ecl-icon>
+                    </span>
                   </li>
                 </ol>
               </div>
@@ -181,16 +205,40 @@ exports[`ecl-quiz poll renders correctly 1`] = `
                 </div>
                 <ol class="ecl-quiz-card__options sc-ecl-quiz-ec">
                   <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    <span class="ecl-quiz-card__option-assistive-label sc-ecl-quiz-ec"></span>
                     A valid ID card.
+                    <span class="ecl-quiz-card__option-icon sc-ecl-quiz-ec">
+                      <ecl-icon style-class="ecl-quiz-card__option-icon--error sc-ecl-quiz-ec">
+                        <span class="ecl-icon ecl-icon--s ecl-quiz-card__option-icon--error sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--x-circle"></span>
+                      </ecl-icon>
+                    </span>
                   </li>
                   <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="true">
+                    <span class="ecl-quiz-card__option-assistive-label sc-ecl-quiz-ec"></span>
                     A valid ID card or passport
+                    <span class="ecl-quiz-card__option-icon sc-ecl-quiz-ec">
+                      <ecl-icon style-class="ecl-quiz-card__option-icon--success sc-ecl-quiz-ec">
+                        <span class="ecl-icon ecl-icon--s ecl-quiz-card__option-icon--success sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--check-circle"></span>
+                      </ecl-icon>
+                    </span>
                   </li>
                   <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    <span class="ecl-quiz-card__option-assistive-label sc-ecl-quiz-ec"></span>
                     A valid passport.
+                    <span class="ecl-quiz-card__option-icon sc-ecl-quiz-ec">
+                      <ecl-icon style-class="ecl-quiz-card__option-icon--error sc-ecl-quiz-ec">
+                        <span class="ecl-icon ecl-icon--s ecl-quiz-card__option-icon--error sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--x-circle"></span>
+                      </ecl-icon>
+                    </span>
                   </li>
                   <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    <span class="ecl-quiz-card__option-assistive-label sc-ecl-quiz-ec"></span>
                     None of these
+                    <span class="ecl-quiz-card__option-icon sc-ecl-quiz-ec">
+                      <ecl-icon style-class="ecl-quiz-card__option-icon--error sc-ecl-quiz-ec">
+                        <span class="ecl-icon ecl-icon--s ecl-quiz-card__option-icon--error sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--x-circle"></span>
+                      </ecl-icon>
+                    </span>
                   </li>
                 </ol>
               </div>
@@ -265,13 +313,31 @@ exports[`ecl-quiz poll renders correctly 1`] = `
                 </div>
                 <ol class="ecl-quiz-card__options sc-ecl-quiz-ec">
                   <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    <span class="ecl-quiz-card__option-assistive-label sc-ecl-quiz-ec"></span>
                     The pound is the most used currency in the EU
+                    <span class="ecl-quiz-card__option-icon sc-ecl-quiz-ec">
+                      <ecl-icon style-class="ecl-quiz-card__option-icon--error sc-ecl-quiz-ec">
+                        <span class="ecl-icon ecl-icon--s ecl-quiz-card__option-icon--error sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--x-circle"></span>
+                      </ecl-icon>
+                    </span>
                   </li>
                   <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    <span class="ecl-quiz-card__option-assistive-label sc-ecl-quiz-ec"></span>
                     The Leu is by far the most used currency in the European Union
+                    <span class="ecl-quiz-card__option-icon sc-ecl-quiz-ec">
+                      <ecl-icon style-class="ecl-quiz-card__option-icon--error sc-ecl-quiz-ec">
+                        <span class="ecl-icon ecl-icon--s ecl-quiz-card__option-icon--error sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--x-circle"></span>
+                      </ecl-icon>
+                    </span>
                   </li>
                   <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="true">
+                    <span class="ecl-quiz-card__option-assistive-label sc-ecl-quiz-ec"></span>
                     The euro (€) is used in many EU member states.
+                    <span class="ecl-quiz-card__option-icon sc-ecl-quiz-ec">
+                      <ecl-icon style-class="ecl-quiz-card__option-icon--success sc-ecl-quiz-ec">
+                        <span class="ecl-icon ecl-icon--s ecl-quiz-card__option-icon--success sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--check-circle"></span>
+                      </ecl-icon>
+                    </span>
                   </li>
                 </ol>
               </div>
@@ -346,13 +412,31 @@ exports[`ecl-quiz poll renders correctly 1`] = `
                 </div>
                 <ol class="ecl-quiz-card__options sc-ecl-quiz-ec">
                   <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    <span class="ecl-quiz-card__option-assistive-label sc-ecl-quiz-ec"></span>
                     Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum
+                    <span class="ecl-quiz-card__option-icon sc-ecl-quiz-ec">
+                      <ecl-icon style-class="ecl-quiz-card__option-icon--error sc-ecl-quiz-ec">
+                        <span class="ecl-icon ecl-icon--s ecl-quiz-card__option-icon--error sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--x-circle"></span>
+                      </ecl-icon>
+                    </span>
                   </li>
                   <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="true">
+                    <span class="ecl-quiz-card__option-assistive-label sc-ecl-quiz-ec"></span>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <span class="ecl-quiz-card__option-icon sc-ecl-quiz-ec">
+                      <ecl-icon style-class="ecl-quiz-card__option-icon--success sc-ecl-quiz-ec">
+                        <span class="ecl-icon ecl-icon--s ecl-quiz-card__option-icon--success sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--check-circle"></span>
+                      </ecl-icon>
+                    </span>
                   </li>
                   <li class="ecl-quiz-card__option sc-ecl-quiz-ec" data-match="false">
+                    <span class="ecl-quiz-card__option-assistive-label sc-ecl-quiz-ec"></span>
                     Ivamus auctor blandit auctor.
+                    <span class="ecl-quiz-card__option-icon sc-ecl-quiz-ec">
+                      <ecl-icon style-class="ecl-quiz-card__option-icon--error sc-ecl-quiz-ec">
+                        <span class="ecl-icon ecl-icon--s ecl-quiz-card__option-icon--error sc-ecl-quiz-ec wt-icon--placeholder wt-icon-phosphor--x-circle"></span>
+                      </ecl-icon>
+                    </span>
                   </li>
                 </ol>
               </div>

@@ -14,6 +14,11 @@ describe('ecl-fact-figures', () => {
         view-all-link-label="View all"
         font-size="m"
         icon-size="2xl"
+        sources-label="Sources:"
+        sources='[
+          { "label": "Eurostat", "path": "/example.html" },
+          { "label": "DG CNECT", "path": "/example.html" }
+        ]' 
       >
         <ecl-fact-figures-item
           item-title="Lorem ipsum"

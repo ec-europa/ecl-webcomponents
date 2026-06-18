@@ -38,9 +38,12 @@
  - [ecl-file](../ecl-file)
  - [ecl-file-translations](../ecl-file)
  - [ecl-file-translations-item](../ecl-file)
+ - [ecl-footer-ec](../ecl-footer)
+ - [ecl-footer-eu](../ecl-footer)
  - [ecl-form-group](../ecl-form-group)
  - [ecl-gallery](../ecl-gallery)
  - [ecl-gallery-item](../ecl-gallery)
+ - [ecl-highlight-box](../ecl-highlight-box)
  - [ecl-inpage-navigation](../ecl-inpage-navigation)
  - [ecl-input](../ecl-input)
  - [ecl-link](../ecl-link)
@@ -66,6 +69,7 @@
  - [ecl-search-form](../ecl-search-form)
  - [ecl-select](../ecl-select)
  - [ecl-site-header](../ecl-site-header)
+ - [ecl-slogan-ticker](../ecl-slogan-ticker)
  - [ecl-social-media-follow-item](../ecl-social-media-follow)
  - [ecl-tabs](../ecl-tabs)
  - [ecl-tag](../ecl-tag)
@@ -89,9 +93,12 @@ graph TD;
   ecl-file --> ecl-icon
   ecl-file-translations --> ecl-icon
   ecl-file-translations-item --> ecl-icon
+  ecl-footer-ec --> ecl-icon
+  ecl-footer-eu --> ecl-icon
   ecl-form-group --> ecl-icon
   ecl-gallery --> ecl-icon
   ecl-gallery-item --> ecl-icon
+  ecl-highlight-box --> ecl-icon
   ecl-inpage-navigation --> ecl-icon
   ecl-input --> ecl-icon
   ecl-link --> ecl-icon
@@ -117,6 +124,7 @@ graph TD;
   ecl-search-form --> ecl-icon
   ecl-select --> ecl-icon
   ecl-site-header --> ecl-icon
+  ecl-slogan-ticker --> ecl-icon
   ecl-social-media-follow-item --> ecl-icon
   ecl-tabs --> ecl-icon
   ecl-tag --> ecl-icon

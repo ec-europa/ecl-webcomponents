@@ -26,6 +26,9 @@ export class EclFooterEc {
   @Prop() siteLink: string;
   @Prop() coOwnerTitle: string;
   @Prop() coOwnerLinks: string;
+  @Prop() actionButton: string = '';
+  @Prop() feedbackButton: string = '';
+  @Prop() feedbackButtonDescription: string = '';
 
   getClass(): string {
     const styleClasses = [
@@ -53,7 +56,6 @@ export class EclFooterEc {
     if (titles && titles[0]) {
       titles.forEach((title) => {
         title.firstElementChild.classList.add(`sc-ecl-footer-${this.theme}-${this.theme}`);
-        // section.insertBefore(title.firstElementChild, section.firstElementChild);
       });
     }
   }
@@ -61,6 +63,8 @@ export class EclFooterEc {
   render() {
     const coOwnerLinks = this.coOwnerLinks ? JSON.parse(this.coOwnerLinks) : '';
     const logoPath = getAssetPath(`./build/images/${this.theme}/logos/negative/logo-${this.theme}--${this.logoLangCode}.svg`);
+    const feedbackButton = this.feedbackButton ? JSON.parse(this.feedbackButton) : null;
+    const actionButton = this.actionButton ? JSON.parse(this.actionButton) : null;
 
     return (
       <footer
@@ -98,6 +102,30 @@ export class EclFooterEc {
         }
         <div class="ecl-site-footer__main">
           <div class="ecl-container ecl-site-footer__container">
+          { feedbackButton &&
+            <div class="ecl-site-footer__row">
+              <div class="ecl-site-footer__section ecl-site-footer__section--feedback">
+                { this.feedbackButtonDescription &&
+                <div class="ecl-site-footer__description">
+                  {this.feedbackButtonDescription}
+                </div>
+                }
+                <ecl-link
+                  style-class={`ecl-site-footer__action-button ecl-button--m sc-ecl-footer-ec-${this.theme}`}
+                  path={feedbackButton.path}
+                  variant="primary-highlight-inverted"
+                >
+                  {feedbackButton.label}
+                  <ecl-icon
+                    slot="icon-after"
+                    icon="arrow-up-right"
+                    family="phosphor"
+                  >
+                  </ecl-icon>
+                </ecl-link>
+              </div>
+            </div>
+            }
             <div class="ecl-site-footer__row ecl-site-footer__row--specific">
               <div class="ecl-site-footer__section ecl-site-footer__section--site-info">
               { this.variant === 'core' &&
@@ -141,6 +169,21 @@ export class EclFooterEc {
                     </span>
                   }
                 </div>
+              { actionButton &&
+                <ecl-link
+                  style-class={`ecl-site-footer__action-button ecl-button--m sc-ecl-footer-ec-${this.theme}`}
+                  path={feedbackButton.path}
+                  variant="secondary-inverted"
+                >
+                  {actionButton.label}
+                  <ecl-icon
+                    slot="icon-after"
+                    icon="envelope-simple"
+                    family="phosphor"
+                  >
+                  </ecl-icon>
+                </ecl-link>
+              }
                 <slot name="ecl-footer-social-follow-info"></slot>
               </div>
             { this.variant === 'core' &&

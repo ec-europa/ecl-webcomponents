@@ -3,6 +3,15 @@
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
+@use '@ecl/mixins-typography/mixins' with (
+  $theme: theme.$theme,
+  $typography: var.$typography
+);
+@use '@ecl/link/link' with (
+  $theme: theme.$theme,
+  $link: var.$link,
+  $button: var.$button
+);
 @use '@ecl/fact-figures/fact-figures' with (
   $theme: theme.$theme,
   $fact-figures: var.$fact-figures

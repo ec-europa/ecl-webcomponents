@@ -1,0 +1,37 @@
+{
+  "name": "@ecl/web-components-highlight-box",
+  "author": "European Commission",
+  "license": "EUPL-1.2",
+  "version": "0.27.0",
+  "description": "ECL Highlight Box",
+  "main": "ecl-highlight-box.tsx",
+  "private": true,
+  "scripts": {
+    "build:styles": "cross-env ecl-builder styles",
+    "build": "run-s clean build:*",
+    "clean": "rimraf build",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@ecl/highlight-box": "5.0.0-RC6",
+    "@ecl/mixins-typography": "5.0.0-RC6",
+    "@ecl/builder": "5.0.0-RC6",
+    "@ecl/theme-ec": "5.0.0-RC6",
+    "@ecl/theme-eu": "5.0.0-RC6",
+    "cross-env": "10.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ec-europa/europa-component-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ec-europa/europa-component-library/issues"
+  },
+  "homepage": "https://github.com/ec-europa/europa-component-library",
+  "keywords": [
+    "ecl",
+    "europa-component-library",
+    "design-system",
+    "web-components"
+  ]
+}

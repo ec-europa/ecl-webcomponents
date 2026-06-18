@@ -40,6 +40,9 @@ export class EclMegaMenu {
     }
 
     if (!this.noScript) {
+      // Make the disable scroll work
+      document.body.classList.add(`sc-ecl-mega-menu-${this.theme}`);
+
       ;(window as any).ECL = (window as any).ECL || {};
       const megaMenu = new MegaMenu(this.el.firstElementChild);
       megaMenu.init();
