@@ -5,7 +5,7 @@ index 6f1de565807f1c91e5ac87117d8b4c60cc383ae8..37e8a9fc241d40bc7e15e1a846812ce0
 @@ -1,5 +1,5 @@
  import { queryOne } from '@ecl/dom-utils';
 -import * as getSystem from '@ecl/builder/utils/getSystem';
-+import getSystem from '@ecl/builder/utils/getSystem';
++import * as getSystem from '@ecl/builder/utils/getSystem';
  import EventManager from '@ecl/event-manager';
  
  const system = getSystem();

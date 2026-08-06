@@ -57,6 +57,7 @@
  - [ecl-site-header](../ecl-site-header)
  - [ecl-social-media-follow-item](../ecl-social-media-follow)
  - [ecl-splash-page](../ecl-splash-page)
+ - [ecl-story-card-item](../ecl-story-card)
  - [ecl-tabs-item](../ecl-tabs)
  - [ecl-text-media](../ecl-text-media)
 
@@ -94,6 +95,7 @@ graph TD;
   ecl-site-header --> ecl-link
   ecl-social-media-follow-item --> ecl-link
   ecl-splash-page --> ecl-link
+  ecl-story-card-item --> ecl-link
   ecl-tabs-item --> ecl-link
   ecl-text-media --> ecl-link
   style ecl-link fill:#f9f,stroke:#333,stroke-width:4px

@@ -2286,6 +2286,131 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
     }
+    interface EclStoryCard {
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
+          * @default ''
+         */
+        "description": string;
+        /**
+          * @default `ecl-story-card-${Math.random().toString(36).substring(2, 9)}`
+         */
+        "elId": string;
+        /**
+          * @default ''
+         */
+        "elTitle": string;
+        /**
+          * @default ''
+         */
+        "nextLabel": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
+        /**
+          * @default ''
+         */
+        "pauseLabel": string;
+        /**
+          * @default ''
+         */
+        "playLabel": string;
+        /**
+          * @default ''
+         */
+        "prevLabel": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+        /**
+          * @default 'story'
+         */
+        "variant": string;
+    }
+    interface EclStoryCardItem {
+        /**
+          * @default ''
+         */
+        "articleClass": string;
+        /**
+          * @default ''
+         */
+        "author": string;
+        /**
+          * @default ''
+         */
+        "elRole": string;
+        /**
+          * @default ''
+         */
+        "elTitle": string;
+        /**
+          * @default ''
+         */
+        "linkHref": string;
+        /**
+          * @default ''
+         */
+        "linkIcon": string;
+        /**
+          * @default ''
+         */
+        "linkLabel": string;
+        /**
+          * @default 0
+         */
+        "order": number;
+        /**
+          * @default ''
+         */
+        "picture": string;
+        /**
+          * @default ''
+         */
+        "pictureAlt": string;
+        /**
+          * @default ''
+         */
+        "slotName": string;
+        /**
+          * @default ''
+         */
+        "source": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+        /**
+          * @default 'story'
+         */
+        "variant": string;
+    }
+    interface EclStoryCardTab {
+        /**
+          * @default '0'
+         */
+        "order": string;
+        /**
+          * @default ''
+         */
+        "picture": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        /**
+          * @default ''
+         */
+        "teaserLabel": string;
+        "theme": string;
+    }
     interface EclTable {
         "caption"?: string;
         "colorMode": string;
@@ -3182,6 +3307,24 @@ declare global {
         prototype: HTMLEclSpotlightElement;
         new (): HTMLEclSpotlightElement;
     };
+    interface HTMLEclStoryCardElement extends Components.EclStoryCard, HTMLStencilElement {
+    }
+    var HTMLEclStoryCardElement: {
+        prototype: HTMLEclStoryCardElement;
+        new (): HTMLEclStoryCardElement;
+    };
+    interface HTMLEclStoryCardItemElement extends Components.EclStoryCardItem, HTMLStencilElement {
+    }
+    var HTMLEclStoryCardItemElement: {
+        prototype: HTMLEclStoryCardItemElement;
+        new (): HTMLEclStoryCardItemElement;
+    };
+    interface HTMLEclStoryCardTabElement extends Components.EclStoryCardTab, HTMLStencilElement {
+    }
+    var HTMLEclStoryCardTabElement: {
+        prototype: HTMLEclStoryCardTabElement;
+        new (): HTMLEclStoryCardTabElement;
+    };
     interface HTMLEclTableElement extends Components.EclTable, HTMLStencilElement {
     }
     var HTMLEclTableElement: {
@@ -3365,6 +3508,9 @@ declare global {
         "ecl-splash-page": HTMLEclSplashPageElement;
         "ecl-splash-page-language-item": HTMLEclSplashPageLanguageItemElement;
         "ecl-spotlight": HTMLEclSpotlightElement;
+        "ecl-story-card": HTMLEclStoryCardElement;
+        "ecl-story-card-item": HTMLEclStoryCardItemElement;
+        "ecl-story-card-tab": HTMLEclStoryCardTabElement;
         "ecl-table": HTMLEclTableElement;
         "ecl-tabs": HTMLEclTabsElement;
         "ecl-tabs-item": HTMLEclTabsItemElement;
@@ -5677,6 +5823,131 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
     }
+    interface EclStoryCard {
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
+          * @default ''
+         */
+        "description"?: string;
+        /**
+          * @default `ecl-story-card-${Math.random().toString(36).substring(2, 9)}`
+         */
+        "elId"?: string;
+        /**
+          * @default ''
+         */
+        "elTitle"?: string;
+        /**
+          * @default ''
+         */
+        "nextLabel"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
+        /**
+          * @default ''
+         */
+        "pauseLabel"?: string;
+        /**
+          * @default ''
+         */
+        "playLabel"?: string;
+        /**
+          * @default ''
+         */
+        "prevLabel"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+        /**
+          * @default 'story'
+         */
+        "variant"?: string;
+    }
+    interface EclStoryCardItem {
+        /**
+          * @default ''
+         */
+        "articleClass"?: string;
+        /**
+          * @default ''
+         */
+        "author"?: string;
+        /**
+          * @default ''
+         */
+        "elRole"?: string;
+        /**
+          * @default ''
+         */
+        "elTitle"?: string;
+        /**
+          * @default ''
+         */
+        "linkHref"?: string;
+        /**
+          * @default ''
+         */
+        "linkIcon"?: string;
+        /**
+          * @default ''
+         */
+        "linkLabel"?: string;
+        /**
+          * @default 0
+         */
+        "order"?: number;
+        /**
+          * @default ''
+         */
+        "picture"?: string;
+        /**
+          * @default ''
+         */
+        "pictureAlt"?: string;
+        /**
+          * @default ''
+         */
+        "slotName"?: string;
+        /**
+          * @default ''
+         */
+        "source"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+        /**
+          * @default 'story'
+         */
+        "variant"?: string;
+    }
+    interface EclStoryCardTab {
+        /**
+          * @default '0'
+         */
+        "order"?: string;
+        /**
+          * @default ''
+         */
+        "picture"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        /**
+          * @default ''
+         */
+        "teaserLabel"?: string;
+        "theme"?: string;
+    }
     interface EclTable {
         "caption"?: string;
         "colorMode"?: string;
@@ -7027,6 +7298,44 @@ declare namespace LocalJSX {
         "header": string;
         "fontSize": string;
     }
+    interface EclStoryCardAttributes {
+        "styleClass": string;
+        "noScript": boolean;
+        "elId": string;
+        "elTitle": string;
+        "description": string;
+        "prevLabel": string;
+        "nextLabel": string;
+        "playLabel": string;
+        "pauseLabel": string;
+        "theme": string;
+        "variant": string;
+        "colorMode": string;
+    }
+    interface EclStoryCardItemAttributes {
+        "styleClass": string;
+        "articleClass": string;
+        "theme": string;
+        "variant": string;
+        "elTitle": string;
+        "author": string;
+        "elRole": string;
+        "source": string;
+        "linkHref": string;
+        "linkLabel": string;
+        "linkIcon": string;
+        "picture": string;
+        "pictureAlt": string;
+        "slotName": string;
+        "order": number;
+    }
+    interface EclStoryCardTabAttributes {
+        "styleClass": string;
+        "picture": string;
+        "theme": string;
+        "teaserLabel": string;
+        "order": string;
+    }
     interface EclTableAttributes {
         "elId": string;
         "theme": string;
@@ -7253,6 +7562,9 @@ declare namespace LocalJSX {
         "ecl-splash-page": Omit<EclSplashPage, keyof EclSplashPageAttributes> & { [K in keyof EclSplashPage & keyof EclSplashPageAttributes]?: EclSplashPage[K] } & { [K in keyof EclSplashPage & keyof EclSplashPageAttributes as `attr:${K}`]?: EclSplashPageAttributes[K] } & { [K in keyof EclSplashPage & keyof EclSplashPageAttributes as `prop:${K}`]?: EclSplashPage[K] };
         "ecl-splash-page-language-item": Omit<EclSplashPageLanguageItem, keyof EclSplashPageLanguageItemAttributes> & { [K in keyof EclSplashPageLanguageItem & keyof EclSplashPageLanguageItemAttributes]?: EclSplashPageLanguageItem[K] } & { [K in keyof EclSplashPageLanguageItem & keyof EclSplashPageLanguageItemAttributes as `attr:${K}`]?: EclSplashPageLanguageItemAttributes[K] } & { [K in keyof EclSplashPageLanguageItem & keyof EclSplashPageLanguageItemAttributes as `prop:${K}`]?: EclSplashPageLanguageItem[K] };
         "ecl-spotlight": Omit<EclSpotlight, keyof EclSpotlightAttributes> & { [K in keyof EclSpotlight & keyof EclSpotlightAttributes]?: EclSpotlight[K] } & { [K in keyof EclSpotlight & keyof EclSpotlightAttributes as `attr:${K}`]?: EclSpotlightAttributes[K] } & { [K in keyof EclSpotlight & keyof EclSpotlightAttributes as `prop:${K}`]?: EclSpotlight[K] };
+        "ecl-story-card": Omit<EclStoryCard, keyof EclStoryCardAttributes> & { [K in keyof EclStoryCard & keyof EclStoryCardAttributes]?: EclStoryCard[K] } & { [K in keyof EclStoryCard & keyof EclStoryCardAttributes as `attr:${K}`]?: EclStoryCardAttributes[K] } & { [K in keyof EclStoryCard & keyof EclStoryCardAttributes as `prop:${K}`]?: EclStoryCard[K] };
+        "ecl-story-card-item": Omit<EclStoryCardItem, keyof EclStoryCardItemAttributes> & { [K in keyof EclStoryCardItem & keyof EclStoryCardItemAttributes]?: EclStoryCardItem[K] } & { [K in keyof EclStoryCardItem & keyof EclStoryCardItemAttributes as `attr:${K}`]?: EclStoryCardItemAttributes[K] } & { [K in keyof EclStoryCardItem & keyof EclStoryCardItemAttributes as `prop:${K}`]?: EclStoryCardItem[K] };
+        "ecl-story-card-tab": Omit<EclStoryCardTab, keyof EclStoryCardTabAttributes> & { [K in keyof EclStoryCardTab & keyof EclStoryCardTabAttributes]?: EclStoryCardTab[K] } & { [K in keyof EclStoryCardTab & keyof EclStoryCardTabAttributes as `attr:${K}`]?: EclStoryCardTabAttributes[K] } & { [K in keyof EclStoryCardTab & keyof EclStoryCardTabAttributes as `prop:${K}`]?: EclStoryCardTab[K] };
         "ecl-table": Omit<EclTable, keyof EclTableAttributes> & { [K in keyof EclTable & keyof EclTableAttributes]?: EclTable[K] } & { [K in keyof EclTable & keyof EclTableAttributes as `attr:${K}`]?: EclTableAttributes[K] } & { [K in keyof EclTable & keyof EclTableAttributes as `prop:${K}`]?: EclTable[K] };
         "ecl-tabs": Omit<EclTabs, keyof EclTabsAttributes> & { [K in keyof EclTabs & keyof EclTabsAttributes]?: EclTabs[K] } & { [K in keyof EclTabs & keyof EclTabsAttributes as `attr:${K}`]?: EclTabsAttributes[K] } & { [K in keyof EclTabs & keyof EclTabsAttributes as `prop:${K}`]?: EclTabs[K] };
         "ecl-tabs-item": Omit<EclTabsItem, keyof EclTabsItemAttributes> & { [K in keyof EclTabsItem & keyof EclTabsItemAttributes]?: EclTabsItem[K] } & { [K in keyof EclTabsItem & keyof EclTabsItemAttributes as `attr:${K}`]?: EclTabsItemAttributes[K] } & { [K in keyof EclTabsItem & keyof EclTabsItemAttributes as `prop:${K}`]?: EclTabsItem[K] };
@@ -7357,6 +7669,9 @@ declare module "@stencil/core" {
             "ecl-splash-page": LocalJSX.IntrinsicElements["ecl-splash-page"] & JSXBase.HTMLAttributes<HTMLEclSplashPageElement>;
             "ecl-splash-page-language-item": LocalJSX.IntrinsicElements["ecl-splash-page-language-item"] & JSXBase.HTMLAttributes<HTMLEclSplashPageLanguageItemElement>;
             "ecl-spotlight": LocalJSX.IntrinsicElements["ecl-spotlight"] & JSXBase.HTMLAttributes<HTMLEclSpotlightElement>;
+            "ecl-story-card": LocalJSX.IntrinsicElements["ecl-story-card"] & JSXBase.HTMLAttributes<HTMLEclStoryCardElement>;
+            "ecl-story-card-item": LocalJSX.IntrinsicElements["ecl-story-card-item"] & JSXBase.HTMLAttributes<HTMLEclStoryCardItemElement>;
+            "ecl-story-card-tab": LocalJSX.IntrinsicElements["ecl-story-card-tab"] & JSXBase.HTMLAttributes<HTMLEclStoryCardTabElement>;
             "ecl-table": LocalJSX.IntrinsicElements["ecl-table"] & JSXBase.HTMLAttributes<HTMLEclTableElement>;
             "ecl-tabs": LocalJSX.IntrinsicElements["ecl-tabs"] & JSXBase.HTMLAttributes<HTMLEclTabsElement>;
             "ecl-tabs-item": LocalJSX.IntrinsicElements["ecl-tabs-item"] & JSXBase.HTMLAttributes<HTMLEclTabsItemElement>;

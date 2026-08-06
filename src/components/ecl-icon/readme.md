@@ -71,6 +71,8 @@
  - [ecl-site-header](../ecl-site-header)
  - [ecl-slogan-ticker](../ecl-slogan-ticker)
  - [ecl-social-media-follow-item](../ecl-social-media-follow)
+ - [ecl-story-card](../ecl-story-card)
+ - [ecl-story-card-item](../ecl-story-card)
  - [ecl-tabs](../ecl-tabs)
  - [ecl-tag](../ecl-tag)
  - [ecl-timeline-item](../ecl-timeline)
@@ -126,6 +128,8 @@ graph TD;
   ecl-site-header --> ecl-icon
   ecl-slogan-ticker --> ecl-icon
   ecl-social-media-follow-item --> ecl-icon
+  ecl-story-card --> ecl-icon
+  ecl-story-card-item --> ecl-icon
   ecl-tabs --> ecl-icon
   ecl-tag --> ecl-icon
   ecl-timeline-item --> ecl-icon

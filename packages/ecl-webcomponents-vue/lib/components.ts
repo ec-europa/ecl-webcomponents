@@ -1277,6 +1277,50 @@ export const EclSpotlight: StencilVueComponent<JSX.EclSpotlight> = /*@__PURE__*/
 ]);
 
 
+export const EclStoryCard: StencilVueComponent<JSX.EclStoryCard> = /*@__PURE__*/ defineContainer<JSX.EclStoryCard>('ecl-story-card', undefined, [
+  'styleClass',
+  'noScript',
+  'elId',
+  'elTitle',
+  'description',
+  'prevLabel',
+  'nextLabel',
+  'playLabel',
+  'pauseLabel',
+  'theme',
+  'variant',
+  'colorMode'
+]);
+
+
+export const EclStoryCardItem: StencilVueComponent<JSX.EclStoryCardItem> = /*@__PURE__*/ defineContainer<JSX.EclStoryCardItem>('ecl-story-card-item', undefined, [
+  'styleClass',
+  'articleClass',
+  'theme',
+  'variant',
+  'elTitle',
+  'author',
+  'elRole',
+  'source',
+  'linkHref',
+  'linkLabel',
+  'linkIcon',
+  'picture',
+  'pictureAlt',
+  'slotName',
+  'order'
+]);
+
+
+export const EclStoryCardTab: StencilVueComponent<JSX.EclStoryCardTab> = /*@__PURE__*/ defineContainer<JSX.EclStoryCardTab>('ecl-story-card-tab', undefined, [
+  'styleClass',
+  'picture',
+  'theme',
+  'teaserLabel',
+  'order'
+]);
+
+
 export const EclTable: StencilVueComponent<JSX.EclTable> = /*@__PURE__*/ defineContainer<JSX.EclTable>('ecl-table', undefined, [
   'elId',
   'theme',

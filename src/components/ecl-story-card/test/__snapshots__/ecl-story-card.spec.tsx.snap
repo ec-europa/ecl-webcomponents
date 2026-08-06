@@ -1,0 +1,236 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-story-card renders 1`] = `
+<ecl-story-card color-mode="default" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor." el-title="Story card" next-label="Next" no-script="" pause-label="Pause" play-label="Play" prev-label="Previous">
+  <!---->
+  <section class="ecl-color-mode--default ecl-story-card ecl-story-card--has-description" id="ecl-story-card-t1prx61">
+    <div class="ecl-story-card__header">
+      <div class="ecl-story-card__title">
+        Story card
+      </div>
+      <div class="ecl-story-card__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+      </div>
+    </div>
+    <div class="ecl-story-card__carousel">
+      <div class="ecl-story-card__carousel-viewport" data-ecl-story-card-viewport>
+        <div class="ecl-story-card__carousel-container" data-ecl-story-card-container role="list">
+          <ecl-story-card-item class="ecl-story-card__carousel-slide sc-ecl-story-card-ec" data-ecl-story-card-slide="true" el-title="The European flag is one of the most recognised symbols in Europe." link-href="/example" link-label="Read more" picture="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" role="listitem">
+            <!---->
+            <article class="ecl-story-card__card sc-ecl-story-card-ec">
+              <div class="ecl-story-card__image-wrapper sc-ecl-story-card-ec">
+                <ecl-picture image-alt="" img-class="sc-ecl-story-card-ec" style-class="ecl-story-card__picture sc-ecl-story-card-ec">
+                  <!---->
+                  <picture class="ecl-picture ecl-story-card__picture sc-ecl-story-card-ec">
+                    <img class="sc-ecl-story-card-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
+                  </picture>
+                </ecl-picture>
+              </div>
+              <div class="ecl-story-card__content sc-ecl-story-card-ec">
+                <div class="ecl-story-card__card-title sc-ecl-story-card-ec">
+                  The European flag is one of the most recognised symbols in Europe.
+                </div>
+                <div class="ecl-story-card__card-description sc-ecl-story-card-ec">
+                  It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union.
+                </div>
+                <div class="ecl-story-card__link sc-ecl-story-card-ec">
+                  <ecl-link style-class="ecl-story-card__link sc-ecl-story-card-ec">
+                    <!---->
+                    <a class="ecl-link ecl-link--standalone ecl-story-card__link sc-ecl-story-card-ec" href="/example">
+                      Read more
+                    </a>
+                  </ecl-link>
+                </div>
+              </div>
+            </article>
+          </ecl-story-card-item>
+          <ecl-story-card-item class="ecl-story-card__carousel-slide sc-ecl-story-card-ec" data-ecl-story-card-slide="true" el-title="You can do the same by producing your own electricity and sharing it local." link-href="/example" link-label="Read more" picture="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" role="listitem">
+            <!---->
+            <article class="ecl-story-card__card sc-ecl-story-card-ec">
+              <div class="ecl-story-card__image-wrapper sc-ecl-story-card-ec">
+                <ecl-picture image-alt="" img-class="sc-ecl-story-card-ec" style-class="ecl-story-card__picture sc-ecl-story-card-ec">
+                  <!---->
+                  <picture class="ecl-picture ecl-story-card__picture sc-ecl-story-card-ec">
+                    <img class="sc-ecl-story-card-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
+                  </picture>
+                </ecl-picture>
+              </div>
+              <div class="ecl-story-card__content sc-ecl-story-card-ec">
+                <div class="ecl-story-card__card-title sc-ecl-story-card-ec">
+                  You can do the same by producing your own electricity and sharing it local.
+                </div>
+                <div class="ecl-story-card__card-description sc-ecl-story-card-ec">
+                  It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union.
+                </div>
+                <div class="ecl-story-card__link sc-ecl-story-card-ec">
+                  <ecl-link style-class="ecl-story-card__link sc-ecl-story-card-ec">
+                    <!---->
+                    <a class="ecl-link ecl-link--standalone ecl-story-card__link sc-ecl-story-card-ec" href="/example">
+                      Read more
+                    </a>
+                  </ecl-link>
+                </div>
+              </div>
+            </article>
+          </ecl-story-card-item>
+        </div>
+      </div>
+      <div class="ecl-story-card__pager">
+        <button class="ecl-story-card__prev" data-ecl-story-card-prev>
+          <span class="ecl-story-card__prev-label"></span>
+          <ecl-icon slot="icon-after">
+            <span class="ecl-icon ecl-icon--s wt-icon--placeholder wt-icon-phosphor--caret-left"></span>
+          </ecl-icon>
+        </button>
+        <div class="ecl-story-card__dots"></div>
+        <button class="ecl-story-card__next" data-ecl-story-card-next>
+          <span class="ecl-story-card__next-label"></span>
+          <ecl-icon slot="icon-after">
+            <span class="ecl-icon ecl-icon--s wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
+          </ecl-icon>
+        </button><script data-ecl-story-card-dot-template type="text/template"><button class="ecl-story-card__dot"></button></script>
+      </div>
+    </div>
+    <div class="ecl-story-card__grid">
+      <div class="ecl-story-card__grid-container" role="tablist">
+        <ecl-story-card-tab class="ecl-story-card__grid-item ecl-story-card__grid-item--expanded sc-ecl-story-card-ec" data-ecl-story-card-grid-item="0" order="0" picture="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" role="listitem" slot="story-card-tabs" teaser-label="why twelve?">
+          <button aria-selected="true" class="ecl-story-card__grid-card sc-ecl-story-card-ec" data-ecl-story-card-grid-button="0" id="tab" role="tab" type="button">
+            <div class="ecl-story-card__grid-image sc-ecl-story-card-ec">
+              <ecl-picture img-class="sc-ecl-story-card-ec" style-class="ecl-story-card__picture sc-ecl-story-card-ec">
+                <!---->
+                <picture class="ecl-picture ecl-story-card__picture sc-ecl-story-card-ec">
+                  <img class="sc-ecl-story-card-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
+                </picture>
+              </ecl-picture>
+              <div class="ecl-story-card__grid-loading-bar sc-ecl-story-card-ec">
+                <div class="ecl-story-card__grid-loading-bar-completion sc-ecl-story-card-ec"></div>
+              </div>
+            </div>
+            <div class="ecl-story-card__grid-title-wrapper sc-ecl-story-card-ec">
+              <div class="ecl-story-card__grid-title sc-ecl-story-card-ec">
+                why twelve?
+              </div>
+            </div>
+          </button>
+        </ecl-story-card-tab>
+        <ecl-story-card-tab class="ecl-story-card__grid-item sc-ecl-story-card-ec" data-ecl-story-card-grid-item="1" order="1" picture="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" role="listitem" slot="story-card-tabs" teaser-label="for everyone">
+          <button aria-selected="false" class="ecl-story-card__grid-card sc-ecl-story-card-ec" data-ecl-story-card-grid-button="1" id="tab" role="tab" type="button">
+            <div class="ecl-story-card__grid-image sc-ecl-story-card-ec">
+              <ecl-picture img-class="sc-ecl-story-card-ec" style-class="ecl-story-card__picture sc-ecl-story-card-ec">
+                <!---->
+                <picture class="ecl-picture ecl-story-card__picture sc-ecl-story-card-ec">
+                  <img class="sc-ecl-story-card-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg">
+                </picture>
+              </ecl-picture>
+              <div class="ecl-story-card__grid-loading-bar sc-ecl-story-card-ec">
+                <div class="ecl-story-card__grid-loading-bar-completion sc-ecl-story-card-ec"></div>
+              </div>
+            </div>
+            <div class="ecl-story-card__grid-title-wrapper sc-ecl-story-card-ec">
+              <div class="ecl-story-card__grid-title sc-ecl-story-card-ec">
+                for everyone
+              </div>
+            </div>
+          </button>
+        </ecl-story-card-tab>
+      </div>
+      <ecl-story-card-item class="ecl-story-card__grid-details sc-ecl-story-card-ec" data-ecl-story-card-grid-details="true" el-title="The European flag is one of the most recognised symbols in Europe." link-href="/example" link-label="Read more" order="0" role="listitem" slot="story-card-grid-details" slot-name="story-card-grid-details">
+        <!---->
+        <article class="ecl-story-card__grid-details-content sc-ecl-story-card-ec">
+          <div class="ecl-story-card__content sc-ecl-story-card-ec">
+            <div class="ecl-story-card__card-title sc-ecl-story-card-ec">
+              The European flag is one of the most recognised symbols in Europe.
+            </div>
+            <div class="ecl-story-card__card-description sc-ecl-story-card-ec">
+              It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union..
+            </div>
+            <div class="ecl-story-card__link sc-ecl-story-card-ec">
+              <ecl-link style-class="ecl-story-card__link sc-ecl-story-card-ec">
+                <!---->
+                <a class="ecl-link ecl-link--standalone ecl-story-card__link sc-ecl-story-card-ec" href="/example">
+                  Read more
+                </a>
+              </ecl-link>
+            </div>
+          </div>
+        </article>
+      </ecl-story-card-item>
+      <ecl-story-card-item class="ecl-story-card__grid-details sc-ecl-story-card-ec" data-ecl-story-card-grid-details="true" el-title="You can do the same by producing your own electricity and sharing it local." hidden="true" link-href="/example" link-label="Read more" order="1" role="listitem" slot="story-card-grid-details" slot-name="story-card-grid-details">
+        <!---->
+        <article class="ecl-story-card__grid-details-content sc-ecl-story-card-ec">
+          <div class="ecl-story-card__content sc-ecl-story-card-ec">
+            <div class="ecl-story-card__card-title sc-ecl-story-card-ec">
+              You can do the same by producing your own electricity and sharing it local.
+            </div>
+            <div class="ecl-story-card__card-description sc-ecl-story-card-ec">
+              It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union..
+            </div>
+            <div class="ecl-story-card__link sc-ecl-story-card-ec">
+              <ecl-link style-class="ecl-story-card__link sc-ecl-story-card-ec">
+                <!---->
+                <a class="ecl-link ecl-link--standalone ecl-story-card__link sc-ecl-story-card-ec" href="/example">
+                  Read more
+                </a>
+              </ecl-link>
+            </div>
+          </div>
+        </article>
+      </ecl-story-card-item>
+      <div class="ecl-story-card__grid-controls">
+        <ecl-button button-style="neutral" data-ecl-story-card-grid-prev hide-label="" style-class="ecl-story-card__grid-prev sc-ecl-story-card-ec">
+          <!---->
+          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-story-card__grid-prev sc-ecl-story-card-ec" data-ecl-story-card-grid-prev="eclStoryCardGridPrev" type="button">
+            <span class="ecl-button__container">
+              <span class="ecl-button__label" data-ecl-label>
+                Previous
+              </span>
+              <ecl-icon slot="icon-after">
+                <span class="ecl-button__icon ecl-icon ecl-icon--l sc-ecl-button-ec wt-icon--placeholder wt-icon-phosphor--caret-left"></span>
+              </ecl-icon>
+            </span>
+          </button>
+        </ecl-button>
+        <ecl-button button-style="neutral" data-ecl-story-card-grid-pause hide-label="" style-class="ecl-story-card__grid-pause sc-ecl-story-card-ec">
+          <!---->
+          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--secondary ecl-story-card__grid-pause sc-ecl-story-card-ec" data-ecl-story-card-grid-pause="eclStoryCardGridPause" type="button">
+            <span class="ecl-button__container">
+              <span class="ecl-button__label" data-ecl-label>
+                Pause
+              </span>
+              <ecl-icon slot="icon-after">
+                <span class="ecl-button__icon ecl-icon ecl-icon--l sc-ecl-button-ec wt-icon--placeholder wt-icon-phosphor--pause-filled"></span>
+              </ecl-icon>
+            </span>
+          </button>
+        </ecl-button>
+        <ecl-button button-style="neutral" data-ecl-story-card-grid-play hide-label="" style-class="ecl-story-card__grid-play sc-ecl-story-card-ec">
+          <!---->
+          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--secondary ecl-story-card__grid-play sc-ecl-story-card-ec" data-ecl-story-card-grid-play="eclStoryCardGridPlay" type="button">
+            <span class="ecl-button__container">
+              <span class="ecl-button__label" data-ecl-label>
+                Play
+              </span>
+              <ecl-icon slot="icon-after">
+                <span class="ecl-button__icon ecl-icon ecl-icon--l sc-ecl-button-ec wt-icon--placeholder wt-icon-phosphor--play-filled"></span>
+              </ecl-icon>
+            </span>
+          </button>
+        </ecl-button>
+        <ecl-button button-style="neutral" data-ecl-story-card-grid-next hide-label="" style-class="ecl-story-card__grid-next sc-ecl-story-card-ec">
+          <!---->
+          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-story-card__grid-next sc-ecl-story-card-ec" data-ecl-story-card-grid-next="eclStoryCardGridNext" type="button">
+            <span class="ecl-button__container">
+              <span class="ecl-button__label" data-ecl-label>
+                Next
+              </span>
+              <ecl-icon slot="icon-after">
+                <span class="ecl-button__icon ecl-icon ecl-icon--l sc-ecl-button-ec wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
+              </ecl-icon>
+            </span>
+          </button>
+        </ecl-button>
+      </div>
+    </div>
+  </section>
+</ecl-story-card>
+`;

@@ -38,6 +38,8 @@
  - [ecl-site-header](../ecl-site-header)
  - [ecl-splash-page](../ecl-splash-page)
  - [ecl-spotlight](../ecl-spotlight)
+ - [ecl-story-card-item](../ecl-story-card)
+ - [ecl-story-card-tab](../ecl-story-card)
 
 ### Graph
 ```mermaid
@@ -57,6 +59,8 @@ graph TD;
   ecl-site-header --> ecl-picture
   ecl-splash-page --> ecl-picture
   ecl-spotlight --> ecl-picture
+  ecl-story-card-item --> ecl-picture
+  ecl-story-card-tab --> ecl-picture
   style ecl-picture fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

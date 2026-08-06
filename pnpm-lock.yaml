@@ -25,7 +25,7 @@ patchedDependencies:
     hash: fc353c2aaf48b4de529ef25b08d11f551a109b7a45ebb6cfe1366967369c0373
     path: patches/@ecl__carousel.patch
   '@ecl/select':
-    hash: 71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076
+    hash: 35356a604e9e978f5072ef005ec6b0593da0d20ac55bce45640c196cdf35b41d
     path: patches/@ecl__select.patch
   '@ecl/table':
     hash: a2360457d26d7487ebb37094806893f593b21f5d36309c0fec1d110a108b7f77
@@ -1955,7 +1955,7 @@ importers:
         version: 5.1.0
       '@ecl/select':
         specifier: 5.1.0
-        version: 5.1.0(patch_hash=71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)
+        version: 5.1.0(patch_hash=35356a604e9e978f5072ef005ec6b0593da0d20ac55bce45640c196cdf35b41d)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)
       '@ecl/text-input':
         specifier: 5.1.0
         version: 5.1.0
@@ -2156,6 +2156,40 @@ importers:
         specifier: 5.1.0
         version: 5.1.0
       '@ecl/theme-eu':
+        specifier: 5.1.0
+        version: 5.1.0
+      cross-env:
+        specifier: 10.1.0
+        version: 10.1.0
+
+  src/components/ecl-story-card:
+    dependencies:
+      '@ecl/web-components-button':
+        specifier: 0.28.0
+        version: link:../ecl-button
+      '@ecl/web-components-link':
+        specifier: 0.28.0
+        version: link:../ecl-link
+      '@ecl/web-components-picture':
+        specifier: 0.28.0
+        version: link:../ecl-picture
+    devDependencies:
+      '@ecl/builder':
+        specifier: 5.1.0
+        version: 5.1.0(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)
+      '@ecl/mixins-typography':
+        specifier: 5.1.0
+        version: 5.1.0
+      '@ecl/story-card':
+        specifier: 5.1.0
+        version: 5.1.0
+      '@ecl/theme-ec':
+        specifier: 5.1.0
+        version: 5.1.0
+      '@ecl/theme-eu':
+        specifier: 5.1.0
+        version: 5.1.0
+      '@ecl/utility-screen-reader':
         specifier: 5.1.0
         version: 5.1.0
       cross-env:
@@ -17640,7 +17674,7 @@ snapshots:
       '@ecl/radio': 5.1.0
       '@ecl/range': 5.1.0
       '@ecl/rating-field': 5.1.0
-      '@ecl/select': 5.1.0(patch_hash=71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)
+      '@ecl/select': 5.1.0(patch_hash=35356a604e9e978f5072ef005ec6b0593da0d20ac55bce45640c196cdf35b41d)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)
       '@ecl/text-area': 5.1.0
       '@ecl/text-input': 5.1.0
     transitivePeerDependencies:
@@ -17870,7 +17904,7 @@ snapshots:
       '@ecl/range': 5.1.0
       '@ecl/rating-field': 5.1.0
       '@ecl/search-form': 5.1.0(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)
-      '@ecl/select': 5.1.0(patch_hash=71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)
+      '@ecl/select': 5.1.0(patch_hash=35356a604e9e978f5072ef005ec6b0593da0d20ac55bce45640c196cdf35b41d)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)
       '@ecl/separator': 5.1.0
       '@ecl/site-footer': 5.1.0
       '@ecl/site-header': 5.1.0(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)
@@ -17975,7 +18009,7 @@ snapshots:
       '@ecl/range': 5.1.0
       '@ecl/rating-field': 5.1.0
       '@ecl/search-form': 5.1.0(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)
-      '@ecl/select': 5.1.0(patch_hash=71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)
+      '@ecl/select': 5.1.0(patch_hash=35356a604e9e978f5072ef005ec6b0593da0d20ac55bce45640c196cdf35b41d)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)
       '@ecl/separator': 5.1.0
       '@ecl/site-footer': 5.1.0
       '@ecl/site-header': 5.1.0(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)
@@ -18058,7 +18092,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/select@5.1.0(patch_hash=71e0f930158c534c95bffa0ac7409233517c96f1bd0d823e94525466ceab8076)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)':
+  '@ecl/select@5.1.0(patch_hash=35356a604e9e978f5072ef005ec6b0593da0d20ac55bce45640c196cdf35b41d)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)':
     dependencies:
       '@ecl/builder': 5.1.0(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)
       '@ecl/button': 5.1.0

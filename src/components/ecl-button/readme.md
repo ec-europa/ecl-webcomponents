@@ -47,6 +47,7 @@
  - [ecl-select](../ecl-select)
  - [ecl-site-header](../ecl-site-header)
  - [ecl-slogan-ticker](../ecl-slogan-ticker)
+ - [ecl-story-card](../ecl-story-card)
  - [ecl-tabs](../ecl-tabs)
  - [ecl-timeline-item](../ecl-timeline)
 
@@ -79,6 +80,7 @@ graph TD;
   ecl-select --> ecl-button
   ecl-site-header --> ecl-button
   ecl-slogan-ticker --> ecl-button
+  ecl-story-card --> ecl-button
   ecl-tabs --> ecl-button
   ecl-timeline-item --> ecl-button
   style ecl-button fill:#f9f,stroke:#333,stroke-width:4px

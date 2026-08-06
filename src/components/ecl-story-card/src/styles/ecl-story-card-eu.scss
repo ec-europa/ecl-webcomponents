@@ -1,0 +1,48 @@
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/mixins-typography/mixins' as typographyMixins with (
+  $theme: theme.$theme,
+  $typography: var.$typography
+);
+@use '@ecl/story-card/story-card' with (
+  $theme: theme.$theme,
+  $story-card: var.$story-card
+);
+
+@container ecl-story-card (width >= 600px) {
+  .ecl-story-card__carousel {
+    display: none !important;
+  }
+
+  .ecl-story-card__content {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .ecl-story-card__grid {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
+
+@container ecl-story-card (width >= 970px) {
+  .ecl-story-card__grid-container,
+  ecl-story-card-item {
+    box-sizing: border-box;
+    flex: 1;
+    margin-block-start: 0 !important;
+  }
+
+  .ecl-story-card__grid-item {
+    flex-basis: 4rem !important;
+    width: 4rem;
+  }
+
+  .ecl-story-card__grid-card {
+    min-height: var(--story-card-min-height) !important;
+  }
+
+  .ecl-story-card__grid-controls {
+    flex: 0 0 100%;
+  }
+}
