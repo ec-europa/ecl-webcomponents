@@ -139,6 +139,7 @@ export class EclFileUpload {
             data-ecl-file-upload-button
             data-ecl-file-upload-label-choose={this.buttonChooseLabel}
             data-ecl-file-upload-label-replace={this.buttonReplaceLabel}
+            {...(this.disabled && { 'disabled': `true` })}
           >
             {this.buttonChooseLabel}
           </span>
