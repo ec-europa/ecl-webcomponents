@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ecl-highlight-box renders 1`] = `
-<ecl-highlighted-search color-mode="blue" el-title="Find your next role" has-description="" helper-text="Ecnter the job you are looking for" submit-label="Search" suggestion-label="Or explore:">
+exports[`ecl-highlighted-searc renders 1`] = `
+<ecl-highlighted-search color-mode="blue" el-id="ecl-highlighted-search-test-id" el-title="Find your next role" has-description="" helper-text="Ecnter the job you are looking for" submit-label="Search" suggestion-label="Or explore:">
   <!---->
-  <div class="ecl-color-mode--blue ecl-highlighted-search" id="ecl-story-card-mmq4jg0">
+  <div class="ecl-color-mode--blue ecl-highlighted-search" id="ecl-highlighted-search-test-id">
     <div class="ecl-highlighted-search__content">
-      <div class="ecl-highlighted-search__title" id="ecl-story-card-mmq4jg0-title">
+      <div class="ecl-highlighted-search__title" id="ecl-highlighted-search-test-id-title">
         Find your next role
       </div>
       <div class="ecl-content-color ecl-highlighted-search__description">
@@ -19,9 +19,9 @@ exports[`ecl-highlight-box renders 1`] = `
           <ecl-form-group hide-label="" style-class="ecl-highlighted-search__form-group sc-ecl-highlighted-search-ec">
             <!---->
             <div class="ecl-form-group ecl-highlighted-search__form-group sc-ecl-highlighted-search-ec">
-              <ecl-input input-class="ecl-highlighted-search__form-input sc-ecl-highlighted-search-ec" input-id="ecl-story-card-mmq4jg0-input">
+              <ecl-input input-class="ecl-highlighted-search__form-input sc-ecl-highlighted-search-ec" input-id="ecl-highlighted-search-test-id-input">
                 <div class="ecl-input">
-                  <input class="ecl-highlighted-search__form-input ecl-text-input ecl-text-input--l sc-ecl-highlighted-search-ec" id="ecl-story-card-mmq4jg0-input" type="search">
+                  <input class="ecl-highlighted-search__form-input ecl-text-input ecl-text-input--l sc-ecl-highlighted-search-ec" id="ecl-highlighted-search-test-id-input" type="search">
                 </div>
               </ecl-input>
               <ecl-button button-style="highlight" style-class="ecl-highlighted-search__form-button sc-ecl-highlighted-search-ec">

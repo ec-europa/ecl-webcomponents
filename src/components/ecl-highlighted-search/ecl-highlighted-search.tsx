@@ -13,7 +13,7 @@ export class EclHighlightedSearch {
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string = '';
   @Prop() colorMode: string = '';
-  @Prop() elId: string = `ecl-story-card-${Math.random().toString(36).substring(2, 9)}`;
+  @Prop() elId: string = `ecl-highlighted-search-${Math.random().toString(36).substring(2, 9)}`;
   @Prop() elTitle: string = '';
   @Prop() helperText: string = '';
   @Prop() submitLabel: string = '';
