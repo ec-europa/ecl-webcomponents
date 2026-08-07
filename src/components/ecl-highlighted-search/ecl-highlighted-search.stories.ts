@@ -39,6 +39,11 @@ export default {
   title: 'Components/highlighted search',
   argTypes: getArgTypes(),
   args: getArgs(),
+  decorators: [
+    (storyFn) => {
+      return `<ecl-grid container>${storyFn()}</ecl-grid>`;
+    },
+  ],
 };
 
 const Template = (args) => {
@@ -97,6 +102,5 @@ return `<ecl-highlighted-search
   };
   
   export const Default = Template.bind({});
-  Default.args = getArgs();
   Default.storyName = 'Default';
   

@@ -17,6 +17,11 @@ const getArgs = () => ({
   
   export default {
     title: 'Components/story-card',
+    decorators: [
+      (storyFn) => {
+        return `<ecl-grid container>${storyFn()}</ecl-grid>`;
+      },
+    ],
   };
   
   const Template = args =>
