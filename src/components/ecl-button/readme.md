@@ -30,7 +30,7 @@
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
  - [ecl-carousel](../ecl-carousel)
  - [ecl-expandable](../ecl-expandable)
- - [ecl-file-translations](../ecl-file)
+ - [ecl-file](../ecl-file)
  - [ecl-gallery](../ecl-gallery)
  - [ecl-highlighted-search](../ecl-highlighted-search)
  - [ecl-media-container](../ecl-media-container)
@@ -64,7 +64,7 @@ graph TD;
   ecl-breadcrumb-item --> ecl-button
   ecl-carousel --> ecl-button
   ecl-expandable --> ecl-button
-  ecl-file-translations --> ecl-button
+  ecl-file --> ecl-button
   ecl-gallery --> ecl-button
   ecl-highlighted-search --> ecl-button
   ecl-media-container --> ecl-button

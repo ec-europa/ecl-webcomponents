@@ -669,6 +669,7 @@ export namespace Components {
          */
         "fileTitleId": string;
         "fileTitlePath": string;
+        "icon": string;
         "image": string;
         "imageAlt": string;
         "labels": string;
@@ -682,12 +683,12 @@ export namespace Components {
         "taxonomies": string;
         "taxonomiesLabel": string;
         "theme": string;
-        /**
-          * @default 'default'
-         */
-        "variant": string;
     }
     interface EclFileTranslations {
+        /**
+          * @default `ecl-file-translations-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "elId": string;
         /**
           * @default false
          */
@@ -4252,6 +4253,7 @@ declare namespace LocalJSX {
          */
         "fileTitleId"?: string;
         "fileTitlePath"?: string;
+        "icon"?: string;
         "image"?: string;
         "imageAlt"?: string;
         "labels"?: string;
@@ -4265,12 +4267,12 @@ declare namespace LocalJSX {
         "taxonomies"?: string;
         "taxonomiesLabel"?: string;
         "theme"?: string;
-        /**
-          * @default 'default'
-         */
-        "variant"?: string;
     }
     interface EclFileTranslations {
+        /**
+          * @default `ecl-file-translations-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "elId"?: string;
         /**
           * @default false
          */
@@ -6638,7 +6640,6 @@ declare namespace LocalJSX {
         "elId": string;
         "theme": string;
         "styleClass": string;
-        "variant": string;
         "downloadAttribute": boolean;
         "downloadId": string;
         "downloadLabel": string;
@@ -6649,6 +6650,7 @@ declare namespace LocalJSX {
         "fileTitlePath": string;
         "detailMeta": string;
         "language": string;
+        "icon": string;
         "meta": string;
         "image": string;
         "imageAlt": string;
@@ -6660,6 +6662,7 @@ declare namespace LocalJSX {
     }
     interface EclFileTranslationsAttributes {
         "theme": string;
+        "elId": string;
         "styleClass": string;
         "toggleLabel": string;
         "others": boolean;

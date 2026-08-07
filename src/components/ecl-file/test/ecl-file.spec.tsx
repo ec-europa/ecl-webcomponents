@@ -2,6 +2,8 @@ import { newSpecPage } from '@stencil/core/testing';
 import { EclFile } from '../ecl-file';
 import { EclFileTranslations } from '../ecl-file-translations';
 import { EclFileTranslationsItem } from  '../ecl-file-translation-item';
+import { EclButton } from '../../ecl-button/ecl-button';
+import { EclIcon } from '../../ecl-icon/ecl-icon'
 
 describe('ecl-file', () => {
   beforeEach(() => {
@@ -10,22 +12,21 @@ describe('ecl-file', () => {
 
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclFile, EclFileTranslations, EclFileTranslationsItem],
+      components: [EclFile, EclFileTranslations, EclFileTranslationsItem, EclButton, EclIcon],
       html: `<ecl-file
-        variant="default"
         el-id="file-download-test"
         file-title="State of the Union 2018 brochure"
         download-link="/example.html"
         download-label="Download"
         language="English"
         meta="(16.2 MB - PDF)"
-        taxonomies-label="Taxonomy list"
+        taxonomies-label="List"
         taxonomies='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"},"Taxonomy item 3"]'
         detail-meta='["Resource type", "Publication date"]'
       >
         <ecl-file-translations
-          translations-total="3"
           toggle-label="Other languages"
+          el-id="file-translations-id-test"
           others
         >
           <ecl-file-translations-item

@@ -36,7 +36,6 @@
  - [ecl-fact-figures-item](../ecl-fact-figures)
  - [ecl-featured-item](../ecl-featured-item)
  - [ecl-file](../ecl-file)
- - [ecl-file-translations](../ecl-file)
  - [ecl-file-translations-item](../ecl-file)
  - [ecl-footer-ec](../ecl-footer)
  - [ecl-footer-eu](../ecl-footer)
@@ -94,7 +93,6 @@ graph TD;
   ecl-fact-figures-item --> ecl-icon
   ecl-featured-item --> ecl-icon
   ecl-file --> ecl-icon
-  ecl-file-translations --> ecl-icon
   ecl-file-translations-item --> ecl-icon
   ecl-footer-ec --> ecl-icon
   ecl-footer-eu --> ecl-icon

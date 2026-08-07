@@ -8,13 +8,14 @@ import { Component, Prop, h, Element } from '@stencil/core';
 export class EclFileTranslations {
   @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
+  @Prop() elId: string = `ecl-file-translations-${Math.random().toString(36).slice(2, 10)}`;
   @Prop() styleClass: string;
   @Prop() toggleLabel: string;
   @Prop() others: boolean = false;
 
   getClass(): string {
     const styleClasses = [
-      `ecl-file__translation-container`,
+      `ecl-file__translation-list`,
       `sc-ecl-file-${this.theme}`,
       this.styleClass
     ];
@@ -26,46 +27,20 @@ export class EclFileTranslations {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
-  componentDidRender() {
-    const translationsTotal = this.el.querySelectorAll('.ecl-file__translation-item').length as unknown as string;
-    const text = document.createTextNode(` (${translationsTotal}) `);
-    if (this.el.querySelector('.ecl-file__translation-toggle')) {
-      this.el.querySelector('.ecl-file__translation-toggle .ecl-button__icon').before(text);
-    }
-  }
-
   render() { 
     return (
       <div 
         class={this.getClass()}
-        data-ecl-file-translation-container
+        id={this.elId}
+        hidden
       >
-        <ecl-button
-          styleClass={`ecl-file__translation-toggle sc-ecl-file-${this.theme}`}
-          variant="tertiary"
-          data-ecl-file-translation-toggle
+        <slot></slot>
+      { this.others ?
+        <div
+          class={`ecl-file__translation-item ecl-file__translation-description sc-ecl-file-${this.theme}`}
         >
-          {this.toggleLabel}
-          <ecl-icon
-            styleClass="ecl-button__icon ecl-button__icon--after"
-            icon="corner-arrow"
-            rotate="180"
-            size="fluid"
-          >
-          </ecl-icon>
-        </ecl-button>
-        <div 
-          class={`ecl-file__translation-list sc-ecl-file-${this.theme}`}
-          role="list"
-        >
-          <slot></slot>
-        { this.others ?
-          <div
-            class={`ecl-file__translation-item ecl-file__translation-description sc-ecl-file-${this.theme}`}
-          >
-            <slot name="others"></slot>
-          </div> : '' }
-        </div>
+          <slot name="others"></slot>
+        </div> : '' }
       </div>
     );
   }

@@ -1,8 +1,8 @@
 const getArgs = () => ({
-  labels: false,
-  variant: 'thumbnail',
-  fileTitle: 'State of the Union 2018 brochure',
-  fileTitlePath: '/example.html',
+  labels: true,
+  fileTitle: 'In-Depth Comprehensive Report on Emissions Standards, Their Impacts, and Future Projections in the European Union for the Year 2023 and Beyond',
+  fileTitlePath: '',
+  media: 'icon',
   downloadAttribute: false,
   downloadLabel: 'Download',
   downloadLink: '/example.html',
@@ -21,11 +21,6 @@ const getArgTypes = () => ({
     type: { name: 'boolean' },
     description: 'Show file labels',
   },
-  variant: {
-    type: { name: 'select' },
-    options: ['default', 'thumbnail'],
-    description: 'File variants',
-  },
   description: {
     type: { name: 'string' },
     description: 'only for the thumbnail variant'
@@ -38,6 +33,13 @@ const getArgTypes = () => ({
     name: 'file-title-path',
     type: { name: 'string' },
     description: 'href of the title, when is is a link'
+  },
+  media: {
+    type: { name: 'select' },
+    options: [
+      'image',
+      'icon',
+    ],
   },
   downloadAttribute: {
     name: 'download-attribute',
@@ -82,7 +84,6 @@ export default {
 
 const TemplateWithTranslation = args =>
 `<ecl-file
-  variant="${args.variant}"
   file-title="${args.fileTitle}"
   file-title-path="${args.fileTitlePath}"
   download-link="${args.downloadLink}"
@@ -90,16 +91,17 @@ const TemplateWithTranslation = args =>
   download-label="${args.downloadLabel}"
   download-attribute=${args.downloadAttribute}
   language="${args.language}"
+  icon="${args.media === 'icon' ? 'file-pdf' : ''}"
   meta="${args.meta}"
-  image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+  image="${args.media === 'image' ? 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg' : ''}"
   image-alt="thumbnail alt"
   detail-meta='["Resource type", "Publication date"]'
   aria-label="Download file State of the Union 2018 brochure"
-  taxonomies-label="Taxonomy list"
+  taxonomies-label="List"
   taxonomies='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"}]'
-  labels='${args.labels && args.variant === 'thumbnail' ? '[{"variant": "highlight", "label": "Highlighted"}]' : ''}'
+  labels='${args.labels ? '[{"variant": "highlight", "label": "Highlight"}]' : ''}'
 >
-  ${args.variant === 'thumbnail' ? args.description : ''}
+  ${args.description}
   ${args.previewLink ? 
   `<ecl-link
     slot="ecl-file-preview"

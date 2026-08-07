@@ -362,7 +362,6 @@ export const EclFile: StencilVueComponent<JSX.EclFile> = /*@__PURE__*/ defineCon
   'elId',
   'theme',
   'styleClass',
-  'variant',
   'downloadAttribute',
   'downloadId',
   'downloadLabel',
@@ -373,6 +372,7 @@ export const EclFile: StencilVueComponent<JSX.EclFile> = /*@__PURE__*/ defineCon
   'fileTitlePath',
   'detailMeta',
   'language',
+  'icon',
   'meta',
   'image',
   'imageAlt',
@@ -386,6 +386,7 @@ export const EclFile: StencilVueComponent<JSX.EclFile> = /*@__PURE__*/ defineCon
 
 export const EclFileTranslations: StencilVueComponent<JSX.EclFileTranslations> = /*@__PURE__*/ defineContainer<JSX.EclFileTranslations>('ecl-file-translations', undefined, [
   'theme',
+  'elId',
   'styleClass',
   'toggleLabel',
   'others'

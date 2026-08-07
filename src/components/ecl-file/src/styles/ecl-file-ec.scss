@@ -3,12 +3,17 @@
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
+@use '@ecl/mixins-typography/mixins' with (
+  $theme: theme.$theme,
+  $typography: var.$typography
+);
 @use '@ecl/file/file' with (
   $theme: theme.$theme,
   $file: var.$file
 );
 
-.ecl-link__icon--after .ecl-link__icon {
+.ecl-link__icon--after .ecl-link__icon,
+.ecl-button .ecl-icon {
   margin-inline-start: 0.5rem !important;
 }
 
@@ -26,7 +31,11 @@
 }
 
 @container ecl-file (width >= 768px) {
-  :host .ecl-file--thumbnail.sc-ecl-file-ec .ecl-file__container {
+  :host .ecl-file__info {
     flex-direction: row;
+  }
+
+  :host .ecl-file__footer {
+    justify-content: flex-end;
   }
 }
