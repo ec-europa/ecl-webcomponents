@@ -7,13 +7,15 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type      | Default     |
-| ------------ | ------------- | ----------- | --------- | ----------- |
-| `expanded`   | `expanded`    |             | `boolean` | `undefined` |
-| `label`      | `label`       |             | `string`  | `undefined` |
-| `sidebar`    | `sidebar`     |             | `boolean` | `false`     |
-| `styleClass` | `style-class` |             | `string`  | `undefined` |
-| `theme`      | `theme`       |             | `string`  | `undefined` |
+| Property        | Attribute        | Description | Type      | Default     |
+| --------------- | ---------------- | ----------- | --------- | ----------- |
+| `expanded`      | `expanded`       |             | `boolean` | `undefined` |
+| `iconCollapsed` | `icon-collapsed` |             | `string`  | `'plus'`    |
+| `iconExpanded`  | `icon-expanded`  |             | `string`  | `'minus'`   |
+| `label`         | `label`          |             | `string`  | `undefined` |
+| `sidebar`       | `sidebar`        |             | `boolean` | `false`     |
+| `styleClass`    | `style-class`    |             | `string`  | `undefined` |
+| `theme`         | `theme`          |             | `string`  | `undefined` |
 
 
 ## Dependencies

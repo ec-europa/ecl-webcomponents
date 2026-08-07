@@ -27,6 +27,14 @@ export namespace Components {
     }
     interface EclAccordionItem {
         "expanded": boolean;
+        /**
+          * @default 'plus'
+         */
+        "iconCollapsed": string;
+        /**
+          * @default 'minus'
+         */
+        "iconExpanded": string;
         "label": string;
         /**
           * @default false
@@ -3599,6 +3607,14 @@ declare namespace LocalJSX {
     }
     interface EclAccordionItem {
         "expanded"?: boolean;
+        /**
+          * @default 'plus'
+         */
+        "iconCollapsed"?: string;
+        /**
+          * @default 'minus'
+         */
+        "iconExpanded"?: string;
         "label"?: string;
         /**
           * @default false
@@ -6342,6 +6358,8 @@ declare namespace LocalJSX {
         "styleClass": string;
         "label": string;
         "sidebar": boolean;
+        "iconCollapsed": string;
+        "iconExpanded": string;
         "expanded": boolean;
         "theme": string;
     }

@@ -22,6 +22,8 @@ export const EclAccordionItem: StencilVueComponent<JSX.EclAccordionItem> = /*@__
   'styleClass',
   'label',
   'sidebar',
+  'iconCollapsed',
+  'iconExpanded',
   'expanded',
   'theme'
 ]);

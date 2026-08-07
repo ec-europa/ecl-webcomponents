@@ -10,10 +10,10 @@ exports[`ecl-accordion renders 1`] = `
         <summary class="ecl-accordion__toggle sc-ecl-accordion-ec">
           Protecting citizens and freedoms
           <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
-            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus"></span>
+            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon-phosphor--plus"></span>
           </ecl-icon>
           <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
-            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder"></span>
+            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon-phosphor--minus"></span>
           </ecl-icon>
         </summary>
         <div class="ecl-accordion__content sc-ecl-accordion-ec">
@@ -27,10 +27,10 @@ exports[`ecl-accordion renders 1`] = `
         <summary class="ecl-accordion__toggle sc-ecl-accordion-ec">
           Developing a strong and vibrant economic base
           <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
-            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus"></span>
+            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon-phosphor--plus"></span>
           </ecl-icon>
           <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
-            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder"></span>
+            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon-phosphor--minus"></span>
           </ecl-icon>
         </summary>
         <div class="ecl-accordion__content sc-ecl-accordion-ec">
@@ -44,10 +44,10 @@ exports[`ecl-accordion renders 1`] = `
         <summary class="ecl-accordion__toggle sc-ecl-accordion-ec">
           Building a climate-neutral, green, fair and social Europe
           <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
-            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus"></span>
+            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon-phosphor--plus"></span>
           </ecl-icon>
           <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
-            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder"></span>
+            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon-phosphor--minus"></span>
           </ecl-icon>
         </summary>
         <div class="ecl-accordion__content sc-ecl-accordion-ec">
@@ -61,10 +61,10 @@ exports[`ecl-accordion renders 1`] = `
         <summary class="ecl-accordion__toggle sc-ecl-accordion-ec">
           Promoting European interests and values on the global stage
           <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
-            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon--plus"></span>
+            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon-phosphor--plus"></span>
           </ecl-icon>
           <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-ec">
-            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--minus wt-icon--placeholder"></span>
+            <span class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus ecl-icon ecl-icon--s sc-ecl-accordion-ec wt-icon--placeholder wt-icon-phosphor--minus"></span>
           </ecl-icon>
         </summary>
         <div class="ecl-accordion__content sc-ecl-accordion-ec">
