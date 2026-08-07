@@ -32,7 +32,7 @@ exports[`ecl-banner renders correctly in full width, with large size, text on th
 exports[`ecl-banner renders correctly with a video 1`] = `
 <ecl-banner banner-title="EU Budget for the future" credit="© Copyright or credit" poster="https://vod.prd.commavservices.eu/12/224712/THUMB_I224712EN1W_V_1.jpg" sources="[{&quot;src&quot;: &quot;https://vod.prd.commavservices.eu/12/224712/LR_I224712EN1W.mp&quot;, &quot;type&quot;: &quot;video/mp4&quot;}]">
   <!---->
-  <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--color-dark ecl-banner--font-m ecl-banner--font-weight-light ecl-banner--h-left ecl-banner--m ecl-banner--v-center" data-ecl-auto-initialized="true">
+  <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--color-dark ecl-banner--font-m ecl-banner--font-weight-light ecl-banner--h-left ecl-banner--m ecl-banner--v-center" data-ecl-auto-initialized="true" style="height: auto; --banner-footer-height: undefinedpx;">
     <div class="ecl-banner__video-container">
       <ecl-video>
         <!---->
@@ -91,7 +91,7 @@ exports[`ecl-banner renders correctly with a video 1`] = `
 exports[`ecl-banner renders correctly with an image 1`] = `
 <ecl-banner banner-title="EU Budget for the future" banner-title-link="/example.html" credit="© Copyright or credit" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
   <!---->
-  <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--color-dark ecl-banner--font-m ecl-banner--font-weight-light ecl-banner--h-left ecl-banner--m ecl-banner--v-center" data-ecl-auto-initialized="true">
+  <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--color-dark ecl-banner--font-m ecl-banner--font-weight-light ecl-banner--h-left ecl-banner--m ecl-banner--v-center" data-ecl-auto-initialized="true" style="height: auto; --banner-footer-height: undefinedpx;">
     <figure class="ecl-banner__picture-container">
       <ecl-picture data-ecl-banner-image>
         <!---->

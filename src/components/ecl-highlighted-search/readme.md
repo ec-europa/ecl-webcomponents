@@ -7,19 +7,19 @@
 
 ## Properties
 
-| Property          | Attribute          | Description | Type      | Default                                                              |
-| ----------------- | ------------------ | ----------- | --------- | -------------------------------------------------------------------- |
-| `colorMode`       | `color-mode`       |             | `string`  | `''`                                                                 |
-| `elId`            | `el-id`            |             | `string`  | `` `ecl-story-card-${Math.random().toString(36).substring(2, 9)}` `` |
-| `elTitle`         | `el-title`         |             | `string`  | `''`                                                                 |
-| `hasDescription`  | `has-description`  |             | `boolean` | `false`                                                              |
-| `helperText`      | `helper-text`      |             | `string`  | `''`                                                                 |
-| `inputId`         | `input-id`         |             | `string`  | `` `${this.elId}-input` ``                                           |
-| `inputLabel`      | `input-label`      |             | `string`  | `''`                                                                 |
-| `styleClass`      | `style-class`      |             | `string`  | `''`                                                                 |
-| `submitLabel`     | `submit-label`     |             | `string`  | `''`                                                                 |
-| `suggestionLabel` | `suggestion-label` |             | `string`  | `''`                                                                 |
-| `theme`           | `theme`            |             | `string`  | `undefined`                                                          |
+| Property          | Attribute          | Description | Type      | Default                                                                      |
+| ----------------- | ------------------ | ----------- | --------- | ---------------------------------------------------------------------------- |
+| `colorMode`       | `color-mode`       |             | `string`  | `''`                                                                         |
+| `elId`            | `el-id`            |             | `string`  | `` `ecl-highlighted-search-${Math.random().toString(36).substring(2, 9)}` `` |
+| `elTitle`         | `el-title`         |             | `string`  | `''`                                                                         |
+| `hasDescription`  | `has-description`  |             | `boolean` | `false`                                                                      |
+| `helperText`      | `helper-text`      |             | `string`  | `''`                                                                         |
+| `inputId`         | `input-id`         |             | `string`  | `` `${this.elId}-input` ``                                                   |
+| `inputLabel`      | `input-label`      |             | `string`  | `''`                                                                         |
+| `styleClass`      | `style-class`      |             | `string`  | `''`                                                                         |
+| `submitLabel`     | `submit-label`     |             | `string`  | `''`                                                                         |
+| `suggestionLabel` | `suggestion-label` |             | `string`  | `''`                                                                         |
+| `theme`           | `theme`            |             | `string`  | `undefined`                                                                  |
 
 
 ## Dependencies

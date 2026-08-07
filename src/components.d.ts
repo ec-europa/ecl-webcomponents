@@ -1026,7 +1026,7 @@ export namespace Components {
          */
         "colorMode": string;
         /**
-          * @default `ecl-story-card-${Math.random().toString(36).substring(2, 9)}`
+          * @default `ecl-highlighted-search-${Math.random().toString(36).substring(2, 9)}`
          */
         "elId": string;
         /**
@@ -4601,7 +4601,7 @@ declare namespace LocalJSX {
          */
         "colorMode"?: string;
         /**
-          * @default `ecl-story-card-${Math.random().toString(36).substring(2, 9)}`
+          * @default `ecl-highlighted-search-${Math.random().toString(36).substring(2, 9)}`
          */
         "elId"?: string;
         /**
