@@ -38,9 +38,9 @@ const getArgTypes = () => {
       },
     },
     inputId: {
-      name: 'FileUpload id',
+      name: 'input-id',
       type: { name: 'string' },
-      description: 'FileUpload variant',
+      description: 'FileUpload input id ',
       table: {
         category: 'Content',
       },
