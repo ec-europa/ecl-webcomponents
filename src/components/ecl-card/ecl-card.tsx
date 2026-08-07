@@ -31,6 +31,7 @@ export class EclCard {
   render() {
     return (
      <article class={this.getClass()}>
+    { this.image &&
       <ecl-picture
         image={this.image}
         imageAlt={this.imageAlt}
@@ -41,6 +42,7 @@ export class EclCard {
       >
         <slot name="sources"></slot>
       </ecl-picture>
+    }
       <div class="ecl-card__body">
         <slot></slot>
       </div>
