@@ -1249,6 +1249,37 @@ importers:
         specifier: 10.1.0
         version: 10.1.0
 
+  src/components/ecl-highlighted-search:
+    dependencies:
+      '@ecl/web-components-form-group':
+        specifier: 5.1.0
+        version: link:../ecl-form-group
+      '@ecl/web-components-input':
+        specifier: 5.1.0
+        version: link:../ecl-input
+    devDependencies:
+      '@ecl/builder':
+        specifier: 5.1.0
+        version: 5.1.0(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)
+      '@ecl/highlighted-search':
+        specifier: 5.1.0
+        version: 5.1.0(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.2)
+      '@ecl/mixins-color':
+        specifier: 5.1.0
+        version: 5.1.0
+      '@ecl/mixins-typography':
+        specifier: 5.1.0
+        version: 5.1.0
+      '@ecl/theme-ec':
+        specifier: 5.1.0
+        version: 5.1.0
+      '@ecl/theme-eu':
+        specifier: 5.1.0
+        version: 5.1.0
+      cross-env:
+        specifier: 10.1.0
+        version: 10.1.0
+
   src/components/ecl-icon:
     devDependencies:
       '@ecl/builder':

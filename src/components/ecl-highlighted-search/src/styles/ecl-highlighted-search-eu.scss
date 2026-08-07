@@ -1,0 +1,41 @@
+@use '@ecl/theme-eu/theme' as theme;
+@use '@ecl/theme-eu/variables' as var;
+@use '@ecl/mixins-typography/mixins' with (
+  $theme: theme.$theme,
+  $typography: var.$typography
+);
+@use '@ecl/highlighted-search/highlighted-search' with (
+  $theme: theme.$theme,
+  $highlighted-search: var.$highlighted-search
+);
+
+.ecl-highlighted-search__form-content {
+  display: flex;
+  align-items: stretch;
+}
+
+.ecl-highlighted-search__form-icon {
+  flex: 0 0 auto;
+}
+
+ecl-icon {
+  align-self: center;
+}
+
+ecl-form-group {
+  flex: 1;
+}
+
+.ecl-form-group {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: 'input button';
+}
+
+ecl-input {
+  grid-area: input;
+}
+
+ecl-button {
+  grid-area: button;
+}

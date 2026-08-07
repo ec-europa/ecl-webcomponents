@@ -573,6 +573,21 @@ export const EclHighlightBox: StencilVueComponent<JSX.EclHighlightBox> = /*@__PU
 ]);
 
 
+export const EclHighlightedSearch: StencilVueComponent<JSX.EclHighlightedSearch> = /*@__PURE__*/ defineContainer<JSX.EclHighlightedSearch>('ecl-highlighted-search', undefined, [
+  'theme',
+  'styleClass',
+  'colorMode',
+  'elId',
+  'elTitle',
+  'helperText',
+  'submitLabel',
+  'suggestionLabel',
+  'hasDescription',
+  'inputId',
+  'inputLabel'
+]);
+
+
 export const EclIcon: StencilVueComponent<JSX.EclIcon> = /*@__PURE__*/ defineContainer<JSX.EclIcon>('ecl-icon', undefined, [
   'styleClass',
   'theme',

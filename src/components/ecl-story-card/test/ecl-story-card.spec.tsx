@@ -16,6 +16,7 @@ describe('ecl-story-card', () => {
     const page = await newSpecPage({
       components: [EclStoryCard, EclStoryCardItem, EclStoryCardTab, EclPicture, EclButton, EclLink, EclIcon],
       html: `<ecl-story-card
+        el-id="story-card-test"
         el-title="Story card"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
         color-mode="default"

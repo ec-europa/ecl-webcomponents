@@ -44,6 +44,7 @@
  - [ecl-gallery](../ecl-gallery)
  - [ecl-gallery-item](../ecl-gallery)
  - [ecl-highlight-box](../ecl-highlight-box)
+ - [ecl-highlighted-search](../ecl-highlighted-search)
  - [ecl-inpage-navigation](../ecl-inpage-navigation)
  - [ecl-input](../ecl-input)
  - [ecl-link](../ecl-link)
@@ -101,6 +102,7 @@ graph TD;
   ecl-gallery --> ecl-icon
   ecl-gallery-item --> ecl-icon
   ecl-highlight-box --> ecl-icon
+  ecl-highlighted-search --> ecl-icon
   ecl-inpage-navigation --> ecl-icon
   ecl-input --> ecl-icon
   ecl-link --> ecl-icon

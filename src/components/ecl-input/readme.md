@@ -42,6 +42,7 @@
 
 ### Used by
 
+ - [ecl-highlighted-search](../ecl-highlighted-search)
  - [ecl-search-form](../ecl-search-form)
 
 ### Depends on
@@ -52,6 +53,7 @@
 ```mermaid
 graph TD;
   ecl-input --> ecl-icon
+  ecl-highlighted-search --> ecl-input
   ecl-search-form --> ecl-input
   style ecl-input fill:#f9f,stroke:#333,stroke-width:4px
 ```
