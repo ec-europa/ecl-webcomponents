@@ -27,7 +27,7 @@ ecl-form-group {
 }
 
 .ecl-form-group {
-  display: grid;
+  display: grid !important;
   grid-template-columns: 1fr auto;
   grid-template-areas: 'input button';
 }
@@ -38,4 +38,8 @@ ecl-input {
 
 ecl-button {
   grid-area: button;
+}
+
+.ecl-highlighted-search__form-input {
+  border: none !important;
 }
