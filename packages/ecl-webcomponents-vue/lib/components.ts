@@ -64,7 +64,9 @@ export const EclAnimatedNumbersItem: StencilVueComponent<JSX.EclAnimatedNumbersI
   'description',
   'itemPrefixLabel',
   'itemSuffixLabel',
-  'value'
+  'value',
+  'sources',
+  'sourcesLabel'
 ]);
 
 
@@ -332,7 +334,9 @@ export const EclFactFiguresItem: StencilVueComponent<JSX.EclFactFiguresItem> = /
   'icon',
   'value',
   'itemTitle',
-  'iconTransform'
+  'iconTransform',
+  'sources',
+  'sourcesLabel'
 ]);
 
 

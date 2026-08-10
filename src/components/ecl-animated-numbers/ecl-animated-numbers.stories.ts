@@ -124,6 +124,10 @@ const Template = (args) => {
         item-suffix-label="${item.itemSuffixLabel}"
         category="${item.category}"
         description="${item.description}"
+        sources-label="Sources:"
+        sources='[
+          { "label": "Eurostat", "path": "/example.html" }
+        ]'  
       ></ecl-animated-numbers-item>`)
     .join('');
 

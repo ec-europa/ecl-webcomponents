@@ -19,6 +19,8 @@ export class EclAnimatedNumbersItem {
   @Prop() itemPrefixLabel: string;
   @Prop() itemSuffixLabel: string;
   @Prop() value: string;
+  @Prop() sources: string = '';
+  @Prop() sourcesLabel: string = '';
 
   getClass(): string {
     const styleClasses = [
@@ -35,6 +37,8 @@ export class EclAnimatedNumbersItem {
   }
 
   render() {
+    const sourcesArray = this.sources ? JSON.parse(this.sources) : '';
+    
     return (
       <Host
         class={this.getClass()}
@@ -86,12 +90,40 @@ export class EclAnimatedNumbersItem {
             </span>
           }
           </span>
+        { this.description &&
+          <div class={`ecl-animated-number__description sc-ecl-animated-numbers-${this.theme}`}>
+            {this.description}
+          </div>
+        }
+        { this.sources &&
+          <div class={`ecl-animated-numbers__sources sc-ecl-animated-numbers-${this.theme}`}>
+          { this.sourcesLabel &&
+            <span class={`ecl-animated-numbers__sources-label sc-ecl-animated-numbers-${this.theme}`}>
+              {this.sourcesLabel}
+            </span>
+          }
+            <ul class={`ecl-animated-numbers__sources-list sc-ecl-animated-numbers-${this.theme}`}>
+              {sourcesArray.map((source) => (
+                <li class={`ecl-animated-numbers__sources-item sc-ecl-animated-numbers-${this.theme}`}>
+                { source.path ? (
+                  <ecl-link
+                    path={source.path}
+                    style-class={`ecl-animated-numbers__source sc-ecl-animated-numbers-${this.theme}`}
+                  >
+                    {source.label}
+                  </ecl-link>
+                  ) : (
+                  <span class={`ecl-animated-numbers__source sc-ecl-animated-numbers-${this.theme}`}>
+                    {source.label}
+                  </span>
+                  )
+                }
+                </li>
+              ))}
+            </ul>
+          </div>
+        }
         </div>
-      { this.description &&
-        <div class={`ecl-animated-number__description sc-ecl-animated-numbers-${this.theme}`}>
-          {this.description}
-        </div>
-      }
       </Host>
     );
   }

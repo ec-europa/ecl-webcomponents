@@ -108,6 +108,14 @@ export namespace Components {
         "itemPrefixLabel": string;
         "itemSuffix": string;
         "itemSuffixLabel": string;
+        /**
+          * @default ''
+         */
+        "sources": string;
+        /**
+          * @default ''
+         */
+        "sourcesLabel": string;
         "styleClass": string;
         "theme": string;
         "value": string;
@@ -603,6 +611,14 @@ export namespace Components {
         "icon": string;
         "iconTransform": string;
         "itemTitle": string;
+        /**
+          * @default ''
+         */
+        "sources": string;
+        /**
+          * @default ''
+         */
+        "sourcesLabel": string;
         "styleClass": string;
         "theme": string;
         "value": string;
@@ -3689,6 +3705,14 @@ declare namespace LocalJSX {
         "itemPrefixLabel"?: string;
         "itemSuffix"?: string;
         "itemSuffixLabel"?: string;
+        /**
+          * @default ''
+         */
+        "sources"?: string;
+        /**
+          * @default ''
+         */
+        "sourcesLabel"?: string;
         "styleClass"?: string;
         "theme"?: string;
         "value"?: string;
@@ -4187,6 +4211,14 @@ declare namespace LocalJSX {
         "icon"?: string;
         "iconTransform"?: string;
         "itemTitle"?: string;
+        /**
+          * @default ''
+         */
+        "sources"?: string;
+        /**
+          * @default ''
+         */
+        "sourcesLabel"?: string;
         "styleClass"?: string;
         "theme"?: string;
         "value"?: string;
@@ -6397,6 +6429,8 @@ declare namespace LocalJSX {
         "itemPrefixLabel": string;
         "itemSuffixLabel": string;
         "value": string;
+        "sources": string;
+        "sourcesLabel": string;
     }
     interface EclBannerAttributes {
         "colorMode": string;
@@ -6615,6 +6649,8 @@ declare namespace LocalJSX {
         "value": string;
         "itemTitle": string;
         "iconTransform": string;
+        "sources": string;
+        "sourcesLabel": string;
     }
     interface EclFeaturedItemAttributes {
         "theme": string;
