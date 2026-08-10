@@ -165,6 +165,7 @@ export namespace Components {
         "horizontal": string;
         "image": string;
         "imageAlt": string;
+        "imageAnchor": string;
         /**
           * @default false
          */
@@ -1762,10 +1763,14 @@ export namespace Components {
         "truncation": boolean;
     }
     interface EclPicture {
+        /**
+          * @default false
+         */
+        "debugPosition": boolean;
         "image": string;
         "imageAlt": string;
         /**
-          * @default 'center'
+          * @default ''
          */
         "imageAnchor": string;
         "imgClass": string;
@@ -1773,6 +1778,10 @@ export namespace Components {
           * @default false
          */
         "lazy": boolean;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
         /**
           * @default ''
          */
@@ -3762,6 +3771,7 @@ declare namespace LocalJSX {
         "horizontal"?: string;
         "image"?: string;
         "imageAlt"?: string;
+        "imageAnchor"?: string;
         /**
           * @default false
          */
@@ -5365,10 +5375,14 @@ declare namespace LocalJSX {
         "truncation"?: boolean;
     }
     interface EclPicture {
+        /**
+          * @default false
+         */
+        "debugPosition"?: boolean;
         "image"?: string;
         "imageAlt"?: string;
         /**
-          * @default 'center'
+          * @default ''
          */
         "imageAnchor"?: string;
         "imgClass"?: string;
@@ -5376,6 +5390,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "lazy"?: boolean;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
         /**
           * @default ''
          */
@@ -6442,6 +6460,7 @@ declare namespace LocalJSX {
         "bannerTitleLink": string;
         "descriptionLink": string;
         "image": string;
+        "imageAnchor": string;
         "noScript": boolean;
         "sources": string;
         "tracks": string;
@@ -7210,7 +7229,9 @@ declare namespace LocalJSX {
         "image": string;
         "imgClass": string;
         "imageAlt": string;
+        "noScript": boolean;
         "imageAnchor": string;
+        "debugPosition": boolean;
         "lazy": boolean;
         "zoom": boolean;
     }

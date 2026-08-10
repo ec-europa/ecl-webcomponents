@@ -93,7 +93,7 @@ exports[`ecl-banner renders correctly with an image 1`] = `
   <!---->
   <section class="ecl-banner ecl-banner--box-bg-light ecl-banner--color-dark ecl-banner--font-m ecl-banner--font-weight-light ecl-banner--h-left ecl-banner--m ecl-banner--v-center" data-ecl-auto-initialized="true" style="height: auto; --banner-footer-height: undefinedpx;">
     <figure class="ecl-banner__picture-container">
-      <ecl-picture data-ecl-banner-image>
+      <ecl-picture data-ecl-banner-image img-class="ecl-banner__image sc-ecl-banner-ec">
         <!---->
         <picture class="ecl-banner__picture ecl-picture sc-ecl-banner-ec">
           <img class="ecl-banner__image sc-ecl-banner-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">

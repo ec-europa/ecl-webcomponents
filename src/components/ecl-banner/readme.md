@@ -26,6 +26,7 @@
 | `horizontal`      | `horizontal`        |             | `string`  | `'left'`    |
 | `image`           | `image`             |             | `string`  | `undefined` |
 | `imageAlt`        | `image-alt`         |             | `string`  | `undefined` |
+| `imageAnchor`     | `image-anchor`      |             | `string`  | `undefined` |
 | `noScript`        | `no-script`         |             | `boolean` | `false`     |
 | `size`            | `size`              |             | `string`  | `'m'`       |
 | `sources`         | `sources`           |             | `string`  | `undefined` |

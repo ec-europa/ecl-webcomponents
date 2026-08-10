@@ -7,16 +7,18 @@
 
 ## Properties
 
-| Property      | Attribute      | Description | Type      | Default     |
-| ------------- | -------------- | ----------- | --------- | ----------- |
-| `image`       | `image`        |             | `string`  | `undefined` |
-| `imageAlt`    | `image-alt`    |             | `string`  | `undefined` |
-| `imageAnchor` | `image-anchor` |             | `string`  | `'center'`  |
-| `imgClass`    | `img-class`    |             | `string`  | `undefined` |
-| `lazy`        | `lazy`         |             | `boolean` | `false`     |
-| `styleClass`  | `style-class`  |             | `string`  | `''`        |
-| `theme`       | `theme`        |             | `string`  | `undefined` |
-| `zoom`        | `zoom`         |             | `boolean` | `false`     |
+| Property        | Attribute        | Description | Type      | Default     |
+| --------------- | ---------------- | ----------- | --------- | ----------- |
+| `debugPosition` | `debug-position` |             | `boolean` | `false`     |
+| `image`         | `image`          |             | `string`  | `undefined` |
+| `imageAlt`      | `image-alt`      |             | `string`  | `undefined` |
+| `imageAnchor`   | `image-anchor`   |             | `string`  | `''`        |
+| `imgClass`      | `img-class`      |             | `string`  | `undefined` |
+| `lazy`          | `lazy`           |             | `boolean` | `false`     |
+| `noScript`      | `no-script`      |             | `boolean` | `false`     |
+| `styleClass`    | `style-class`    |             | `string`  | `''`        |
+| `theme`         | `theme`          |             | `string`  | `undefined` |
+| `zoom`          | `zoom`           |             | `boolean` | `false`     |
 
 
 ## Dependencies

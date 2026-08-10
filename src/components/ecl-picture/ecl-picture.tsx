@@ -1,4 +1,6 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, Element } from '@stencil/core';
+import Picture from "@ecl/picture";
+declare var ECL: any;
 
 @Component({
   tag: 'ecl-picture',
@@ -11,12 +13,15 @@ import { Component, Prop, h } from '@stencil/core';
 })
 
 export class EclPicture {
+  @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
   @Prop() image: string;
   @Prop() imgClass: string;
   @Prop() imageAlt: string;
-  @Prop() imageAnchor: string = 'center';
+  @Prop() noScript: boolean = false;
+  @Prop() imageAnchor: string = '';
+  @Prop() debugPosition: boolean = false;
   @Prop() lazy: boolean = false;
   @Prop() zoom: boolean = false;
 
@@ -50,10 +55,14 @@ export class EclPicture {
       attrs['loading'] = 'lazy';
     }
 
-    if (this.imageAnchor && this.imageAnchor !== 'center') {
+    if (this.imageAnchor) {
       attrs['style'] = {
         '--ecl-image-anchor': this.imageAnchor,
       };
+    }
+
+    if (this.debugPosition) {
+      attrs['data-picture-debug'] = true;
     }
 
     return attrs;
@@ -63,9 +72,23 @@ export class EclPicture {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
+  componentDidLoad() {
+    if (!this.noScript && this.imageAnchor) {
+      ;(window as any).ECL = (window as any).ECL || {};
+      ECL.Picture = Picture;
+
+      const picture = new Picture(this.el.firstElementChild);
+      picture.init();
+    }
+
+  }
+
   render() {
     return (
-      <picture class={this.getClass()}>
+      <picture
+        class={this.getClass()}
+        {...(this.imageAnchor && {'data-picture-focal-point' : this.imageAnchor })}
+      >
         <slot></slot>
         <img {...this.getImgAttr()} />
       </picture>

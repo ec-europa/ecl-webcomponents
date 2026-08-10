@@ -80,6 +80,7 @@ export const EclBanner: StencilVueComponent<JSX.EclBanner> = /*@__PURE__*/ defin
   'bannerTitleLink',
   'descriptionLink',
   'image',
+  'imageAnchor',
   'noScript',
   'sources',
   'tracks',
@@ -991,7 +992,9 @@ export const EclPicture: StencilVueComponent<JSX.EclPicture> = /*@__PURE__*/ def
   'image',
   'imgClass',
   'imageAlt',
+  'noScript',
   'imageAnchor',
+  'debugPosition',
   'lazy',
   'zoom'
 ]);
