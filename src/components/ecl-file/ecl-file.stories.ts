@@ -106,7 +106,8 @@ const TemplateWithTranslation = args =>
   `<ecl-link
     slot="ecl-file-preview"
     path="/example.html"
-    variant="standalone">Preview (placeholder)<span style="margin-inline-end: 24px"></span>
+    branded
+    variant="standalone">View (placeholder)<span></span>
   </ecl-link>` : '' }
   <ecl-file-translations
     toggle-label="Translations"
