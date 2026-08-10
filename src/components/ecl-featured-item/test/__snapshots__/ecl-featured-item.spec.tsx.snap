@@ -39,8 +39,8 @@ exports[`ecl-featured-item renders correctly 1`] = `
             <figure class="ecl-media-container__figure">
               <ecl-picture>
                 <!---->
-                <picture class="ecl-media-container__picture ecl-picture sc-ecl-featured-item-ec sc-ecl-media-container-ec">
-                  <img class="ecl-media-container__media sc-ecl-featured-item-ec sc-ecl-media-container-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
+                <picture class="ecl-media-container__picture ecl-picture sc-ecl-featured-item-ec sc-ecl-media-container-ec" data-ecl-auto-initialized="true" data-picture-focal-point="center">
+                  <img class="ecl-media-container__media sc-ecl-featured-item-ec sc-ecl-media-container-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" style="--ecl-image-anchor: center;">
                 </picture>
               </ecl-picture>
               <figcaption class="ecl-media-container__caption">
@@ -97,7 +97,7 @@ exports[`ecl-featured-item renders correctly with all the options specified 1`] 
             <figure class="ecl-media-container__figure">
               <ecl-picture>
                 <!---->
-                <picture class="ecl-media-container__picture ecl-picture sc-ecl-featured-item-ec sc-ecl-media-container-ec">
+                <picture class="ecl-media-container__picture ecl-picture sc-ecl-featured-item-ec sc-ecl-media-container-ec" data-ecl-auto-initialized="true" data-picture-focal-point="left">
                   <img class="ecl-media-container__media sc-ecl-featured-item-ec sc-ecl-media-container-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" style="--ecl-image-anchor: left;">
                 </picture>
               </ecl-picture>
