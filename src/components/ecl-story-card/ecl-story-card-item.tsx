@@ -16,6 +16,7 @@ export class EclStoryCardItem {
   @Prop() elRole: string = '';
   @Prop() source: string = '';
   @Prop() linkHref: string = '';
+  @Prop() teaserLabel: string = '';
   @Prop() linkLabel: string = '';
   @Prop() linkIcon: string = '';
   @Prop() picture: string = '';

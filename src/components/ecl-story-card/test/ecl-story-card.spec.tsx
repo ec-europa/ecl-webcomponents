@@ -25,58 +25,48 @@ describe('ecl-story-card', () => {
         play-label="Play"
         pause-label="Pause"
         no-script
-        >
+      >
         <ecl-story-card-item
-            picture="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
-            el-title="The European flag is one of the most recognised symbols in Europe."
-            link-href="/example"
-            link-label="Read more"
+          picture="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+          el-title="The European flag is one of the most recognised symbols in Europe."
+          link-href="/example"
+          link-label="Read more"
+          link-icon="arrow-right"
+          teaser-label="why twelve?"
         >
-            It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union.
+          It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union.
         </ecl-story-card-item>
         <ecl-story-card-item
-            picture="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
-            el-title="You can do the same by producing your own electricity and sharing it local."
-            link-href="/example"
-            link-label="Read more"
+          picture="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
+          el-title="You can do the same by producing your own electricity and sharing it local."
+          link-href="/example"
+          link-label="Read more"
+          link-icon="arrow-right"
+          teaser-label="for everyone"
         >
-            It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union.
+          It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union.
         </ecl-story-card-item>
         <ecl-story-card-item
-            el-title="The European flag is one of the most recognised symbols in Europe."
-            link-href="/example"
-            link-label="Read more"
-            order="0"
-            slot="story-card-grid-details"
-            slot-name="story-card-grid-details"
+          picture="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"
+          el-title="You can do the same by producing your own electricity and sharing it local."
+          link-href="/example"
+          link-label="Read more"
+          link-icon="arrow-right"
+          teaser-label="the design"
         >
-            It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union..
+          It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union.
         </ecl-story-card-item>
         <ecl-story-card-item
-            el-title="You can do the same by producing your own electricity and sharing it local."
-            link-href="/example"
-            link-label="Read more"
-            order="1"
-            slot="story-card-grid-details"
-            slot-name="story-card-grid-details"
+          picture="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg"
+          el-title="You can do the same by producing your own electricity and sharing it local."
+          link-href="/example"
+          link-label="Read more"
+          link-icon="arrow-right"
+          teaser-label="across europe"
         >
-            It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union..
+          Programs designed to improve quality of life across Europe. From healthcare initiatives to social support systems, see how the EU is investing in its citizens.
         </ecl-story-card-item>
-        <ecl-story-card-tab
-            slot="story-card-tabs"
-            order="0"
-            picture="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
-            teaser-label="why twelve?"
-        >
-        </ecl-story-card-tab>
-        <ecl-story-card-tab
-            slot="story-card-tabs"
-            order="1"
-            picture="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
-            teaser-label="for everyone"
-        >
-        </ecl-story-card-tab>
-        </ecl-story-card>`,
+      </ecl-story-card>`,
     });
 
    expect(page.root).toMatchSnapshot();

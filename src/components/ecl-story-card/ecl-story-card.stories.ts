@@ -39,6 +39,8 @@ const getArgs = () => ({
         el-title="The European flag is one of the most recognised symbols in Europe."
         link-href="/example"
         link-label="Read more"
+        link-icon="arrow-right"
+        teaser-label="why twelve?"
       >
         It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union.
       </ecl-story-card-item>
@@ -47,6 +49,8 @@ const getArgs = () => ({
         el-title="You can do the same by producing your own electricity and sharing it local."
         link-href="/example"
         link-label="Read more"
+        link-icon="arrow-right"
+        teaser-label="for everyone"
       >
         It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union.
       </ecl-story-card-item>
@@ -55,6 +59,8 @@ const getArgs = () => ({
         el-title="You can do the same by producing your own electricity and sharing it local."
         link-href="/example"
         link-label="Read more"
+        link-icon="arrow-right"
+        teaser-label="the design"
       >
         It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union.
       </ecl-story-card-item>
@@ -63,76 +69,11 @@ const getArgs = () => ({
         el-title="You can do the same by producing your own electricity and sharing it local."
         link-href="/example"
         link-label="Read more"
+        link-icon="arrow-right"
+        teaser-label="across europe"
       >
         Programs designed to improve quality of life across Europe. From healthcare initiatives to social support systems, see how the EU is investing in its citizens.
       </ecl-story-card-item>
-      <ecl-story-card-item
-        el-title="The European flag is one of the most recognised symbols in Europe."
-        link-href="/example"
-        link-label="Read more"
-        order="0"
-        slot="story-card-grid-details"
-        slot-name="story-card-grid-details"
-      >
-        It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union..
-      </ecl-story-card-item>
-      <ecl-story-card-item
-        el-title="You can do the same by producing your own electricity and sharing it local."
-        link-href="/example"
-        link-label="Read more"
-        order="1"
-        slot="story-card-grid-details"
-        slot-name="story-card-grid-details"
-      >
-        It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union..
-      </ecl-story-card-item>
-      <ecl-story-card-item
-        el-title="You can do the same by producing your own electricity and sharing it local."
-        link-href="/example"
-        link-label="Read more"
-        order="2"
-        slot="story-card-grid-details"
-        slot-name="story-card-grid-details"
-      >
-        It appears on official documents, euro banknotes, EU-funded projects and public buildings, helping citizens identify initiatives supported by the European Union..
-      </ecl-story-card-item>
-      <ecl-story-card-item
-        el-title="You can do the same by producing your own electricity and sharing it local."
-        link-href="/example"
-        link-label="Read more"
-        order="3"
-        slot="story-card-grid-details"
-        slot-name="story-card-grid-details"
-      >
-        Programs designed to improve quality of life across Europe. From healthcare initiatives to social support systems, see how the EU is investing in its citizens.    </ecl-story-card-item>
-      <ecl-story-card-tab
-        slot="story-card-tabs"
-        order="0"
-        picture="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
-        teaser-label="why twelve?"
-      >
-      </ecl-story-card-tab>
-      <ecl-story-card-tab
-        slot="story-card-tabs"
-        order="1"
-        picture="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
-        teaser-label="for everyone"
-      >
-      </ecl-story-card-tab>
-      <ecl-story-card-tab
-        slot="story-card-tabs"
-        order="2"
-        picture="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"
-        teaser-label="the design"
-      >
-      </ecl-story-card-tab>
-      <ecl-story-card-tab
-        slot="story-card-tabs"
-        order="3"
-        picture="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg"
-        teaser-label="across europe"
-      >
-      </ecl-story-card-tab>
     </ecl-story-card>`;
   
   export const StoryCard = Template.bind({});
@@ -151,134 +92,57 @@ const getArgs = () => ({
       pause-label="Pause story cards"
     >
       <ecl-story-card-item
+        variant="testimonial"
         picture="https://i.pravatar.cc/800?img=18"
         el-title="You can do the same by producing your own electricity and sharing it local"
         link-href="/example"
         link-label="Read more"
-        link-icon="arrow-right
+        link-icon="arrow-right"
         el-role="Lawyer"
         author="Richard Felix"
-        source="Published on The Observer"
-      >
-      </ecl-story-card-item>
-      <ecl-story-card-item
-        picture="https://i.pravatar.cc/800?img=17"
-        el-title="You can do the same by producing your own electricity and sharing it local."
-        link-href="/example"
-        link-label="Read more"
-        link-icon="arrow-right
-        author="Marcus Lennard"
-        el-role="Commissioner"
-        source="Published on The Guardian"
-      >
-      </ecl-story-card-item>
-      <ecl-story-card-item
-        picture="https://i.pravatar.cc/800?img=32"
-        el-title="You can do the same by producing your own electricity and sharing it local."
-        link-href="/example"
-        link-label="Read more"
-        link-icon="arrow-right
-        el-role="Commissioner"
-        author="Renata Beer"
-        source="Published on The Guardian"
-      >
-      </ecl-story-card-item>
-      <ecl-story-card-item
-        picture="https://i.pravatar.cc/800?img=47n"
-        el-title="You can do the same by producing your own electricity and sharing it local."
-        link-href="/example"
-        link-label="Read more"
-        link-icon="arrow-right
-        author="Derby Stark"
-        source="Published on The Times"
-        role="Consultant"
-      >
-      </ecl-story-card-item>
-      <ecl-story-card-item
-        variant="testimonial"
-        el-title="The European flag is one of the most recognised symbols in Europe."
-        link-href="/example"
-        link-label="Read more"
-        link-icon="arrow-right
-        order="0"
-        slot="story-card-grid-details"
-        slot-name="story-card-grid-details"
-        el-role="Lawyer"
-        author="Richard Felix"
-        source="Published on The Observer"
-      >
-      </ecl-story-card-item>
-      <ecl-story-card-item
-        variant="testimonial"
-        el-title="You can do the same by producing your own electricity and sharing it local."
-        link-href="/example"
-        link-label="Read more"
-        link-icon="arrow-right
-        order="1"
-        slot="story-card-grid-details"
-        slot-name="story-card-grid-details"
-        author="Marcus Lennard"
-        el-role="Commissioner"
-        source="Published on The Guardian"
-      >
-      </ecl-story-card-item>
-      <ecl-story-card-item
-        variant="testimonial"
-        el-title="You can do the same by producing your own electricity and sharing it local."
-        link-href="/example"
-        link-label="Read more"
-        link-icon="arrow-right
-        order="2"
-        el-role="Commissioner"
-        author="Renata Beer"
-        source="Published on The Guardian"
-        slot="story-card-grid-details"
-        slot-name="story-card-grid-details"
-      >
-      </ecl-story-card-item>
-      <ecl-story-card-item
-        variant="testimonial"
-        el-title="You can do the same by producing your own electricity and sharing it local."
-        link-href="/example"
-        link-label="Read more"
-        link-icon="arrow-right
-        order="3"
-        author="Derby Stark"
-        source="Published on The Times"
-        role="Consultant"
-        slot="story-card-grid-details"
-        slot-name="story-card-grid-details"
-      >
-      </ecl-story-card-item>
-
-      <ecl-story-card-tab
-        slot="story-card-tabs"
-        order="0"
-        picture="https://i.pravatar.cc/800?img=18"
         teaser-label="Richard Felix"
+        source="Published on The Observer"
       >
-      </ecl-story-card-tab>
-      <ecl-story-card-tab
-        slot="story-card-tabs"
-        order="1"
+      </ecl-story-card-item>
+      <ecl-story-card-item
+        variant="testimonial"
         picture="https://i.pravatar.cc/800?img=17"
+        el-title="You can do the same by producing your own electricity and sharing it local."
+        link-href="/example"
+        link-label="Read more"
+        link-icon="arrow-right"
+        author="Marcus Lennard"
         teaser-label="Marcus Lennard"
+        el-role="Commissioner"
+        source="Published on The Guardian"
       >
-      </ecl-story-card-tab>
-      <ecl-story-card-tab
-        slot="story-card-tabs"
-        order="2"
+      </ecl-story-card-item>
+      <ecl-story-card-item
+        variant="testimonial"
         picture="https://i.pravatar.cc/800?img=32"
+        el-title="You can do the same by producing your own electricity and sharing it local."
+        link-href="/example"
+        link-label="Read more"
+        link-icon="arrow-right"
+        el-role="Commissioner"
+        author="Renata Beer"
         teaser-label="Renata Beer"
+        source="Published on The Guardian"
       >
-      </ecl-story-card-tab>
-      <ecl-story-card-tab
-        slot="story-card-tabs"
-        order="3"
+      </ecl-story-card-item>
+      <ecl-story-card-item
+        variant="testimonial"
         picture="https://i.pravatar.cc/800?img=47n"
+        el-title="You can do the same by producing your own electricity and sharing it local."
+        link-href="/example"
+        link-label="Read more"
+        link-icon="arrow-right"
+        author="Derby Stark"
         teaser-label="Derby Stark"
+        source="Published on The Times"
+        role="Consultant"
       >
-      </ecl-story-card-tab>
+      </ecl-story-card-item>
     </ecl-story-card>`;
 
   export const TestimonialCard = TemplateTestimonial.bind({});

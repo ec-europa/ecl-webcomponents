@@ -18,6 +18,10 @@
 
 ## Dependencies
 
+### Used by
+
+ - [ecl-story-card](.)
+
 ### Depends on
 
 - [ecl-picture](../ecl-picture)
@@ -26,6 +30,7 @@
 ```mermaid
 graph TD;
   ecl-story-card-tab --> ecl-picture
+  ecl-story-card --> ecl-story-card-tab
   style ecl-story-card-tab fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

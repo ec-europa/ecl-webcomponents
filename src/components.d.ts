@@ -2463,6 +2463,10 @@ export namespace Components {
           * @default ''
          */
         "styleClass": string;
+        /**
+          * @default ''
+         */
+        "teaserLabel": string;
         "theme": string;
         /**
           * @default 'story'
@@ -6084,6 +6088,10 @@ declare namespace LocalJSX {
           * @default ''
          */
         "styleClass"?: string;
+        /**
+          * @default ''
+         */
+        "teaserLabel"?: string;
         "theme"?: string;
         /**
           * @default 'story'
@@ -7506,6 +7514,7 @@ declare namespace LocalJSX {
         "elRole": string;
         "source": string;
         "linkHref": string;
+        "teaserLabel": string;
         "linkLabel": string;
         "linkIcon": string;
         "picture": string;

@@ -62,6 +62,45 @@ export class EclStoryCard {
     }
   }
 
+  getStoryItems() {
+    return Array.from(
+      this.el.querySelectorAll('ecl-story-card-item')
+    );
+  }
+
+  renderTabs() {
+    const items = this.getStoryItems();
+  
+    return items.map((item, index) => (
+      <ecl-story-card-tab
+        picture={item.picture}
+        teaser-label={item.teaserLabel}
+        order={String(index)}
+      />
+    ));
+  }
+
+  renderDetails() {
+    const items = this.getStoryItems();
+  
+    return items.map((item, index) => (
+      <ecl-story-card-item
+        variant={item.variant}
+        el-title={item.elTitle}
+        author={item.author}
+        source={item.source}
+        el-role={item.elRole}
+        order={index}
+        slot-name="story-card-grid-details"
+        link-label={item.linkLabel}
+        link-href={item.linkHref}
+        link-icon={item.linkIcon}
+      >
+        {item.textContent}
+      </ecl-story-card-item>
+    ));
+  }
+
   render() {
     return (
       <section
@@ -139,9 +178,9 @@ export class EclStoryCard {
             class="ecl-story-card__grid-container"
             role="tablist"
           >
-            <slot name="story-card-tabs"></slot>
+            {this.renderTabs()}
           </div>
-          <slot name="story-card-grid-details"></slot>
+          {this.renderDetails()}
           <div class="ecl-story-card__grid-controls">
             <ecl-button
               type="button"

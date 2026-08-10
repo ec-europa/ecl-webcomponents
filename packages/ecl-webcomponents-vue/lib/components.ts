@@ -1328,6 +1328,7 @@ export const EclStoryCardItem: StencilVueComponent<JSX.EclStoryCardItem> = /*@__
   'elRole',
   'source',
   'linkHref',
+  'teaserLabel',
   'linkLabel',
   'linkIcon',
   'picture',
