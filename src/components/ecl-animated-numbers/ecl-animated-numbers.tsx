@@ -62,6 +62,15 @@ export class EclAnimatedNumbers {
       const animatedNumbers = new AnimatedNumbers(this.el.firstElementChild);
       animatedNumbers.init();
     }
+
+    // Find all the sources link and make them inverted if a bckground is used
+    if (this.withBackground) {
+      const sources = this.el.querySelectorAll('.ecl-animated-numbers__sources-item a');
+
+      sources.forEach((source) => {
+        source.classList.add('ecl-link--inverted');
+      });
+    }
   }
 
   render() {
