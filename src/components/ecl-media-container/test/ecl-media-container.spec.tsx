@@ -7,8 +7,14 @@ import { EclPicture } from '../../ecl-picture/ecl-picture';
 
 describe('ecl-media-container', () => {
   beforeEach(() => {
-    // create a global ECL object so your components can attach classes
+    global.ResizeObserver = class {
+      observe() {}
+      unobserve() {}
+      disconnect() {}
+    };
+
     (global as any).ECL = {};
+    (global as any).ECL.components = new Map();
   });
 
   it('renders correctly with an image', async () => {

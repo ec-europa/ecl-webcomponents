@@ -10,8 +10,8 @@ exports[`ecl-media-container renders correctly in full width 1`] = `
     <figure class="ecl-media-container--full-width ecl-media-container__figure">
       <ecl-picture>
         <!---->
-        <picture class="ecl-media-container__picture ecl-picture sc-ecl-media-container-ec">
-          <img alt="Alternative text" class="ecl-media-container__media sc-ecl-media-container-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
+        <picture class="ecl-media-container__picture ecl-picture sc-ecl-media-container-ec" data-ecl-auto-initialized="true" data-picture-focal-point="center">
+          <img alt="Alternative text" class="ecl-media-container__media sc-ecl-media-container-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" style="--ecl-image-anchor: center;">
         </picture>
       </ecl-picture>
     </figure>
@@ -91,8 +91,8 @@ exports[`ecl-media-container renders correctly with an image 1`] = `
     <figure class="ecl-media-container__figure">
       <ecl-picture>
         <!---->
-        <picture class="ecl-media-container__picture ecl-picture sc-ecl-media-container-ec">
-          <img alt="Alternative text" class="ecl-media-container__media sc-ecl-media-container-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg">
+        <picture class="ecl-media-container__picture ecl-picture sc-ecl-media-container-ec" data-ecl-auto-initialized="true" data-picture-focal-point="center">
+          <img alt="Alternative text" class="ecl-media-container__media sc-ecl-media-container-ec" src="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" style="--ecl-image-anchor: center;">
         </picture>
       </ecl-picture>
     </figure>
