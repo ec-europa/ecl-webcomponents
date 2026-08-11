@@ -5,12 +5,12 @@ exports[`ecl-notification renders correctly in the information variant 1`] = `
   <!---->
   <div class="ecl-notification ecl-notification--info" data-ecl-auto-initialized="true" data-ecl-notification role="alert">
     <ecl-icon style-class="ecl-notification__icon sc-ecl-notification-ec">
-      <span class="ecl-icon ecl-icon--m ecl-notification__icon sc-ecl-notification-ec wt-icon--information wt-icon--placeholder"></span>
+      <span class="ecl-icon ecl-icon--l ecl-notification__icon sc-ecl-notification-ec wt-icon--information-outline wt-icon--placeholder"></span>
     </ecl-icon>
     <div class="ecl-notification__content">
       <ecl-button data-ecl-notification-close style-class="ecl-notification__close sc-ecl-notification-ec">
         <!---->
-        <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-notification__close sc-ecl-notification-ec" data-ecl-notification-close="eclNotificationClose" type="button">
+        <button class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--tertiary ecl-notification__close sc-ecl-notification-ec" data-ecl-notification-close="eclNotificationClose" type="button">
           <span class="ecl-button__container">
             <span class="ecl-button__label" data-ecl-label>
               Close
@@ -27,7 +27,7 @@ exports[`ecl-notification renders correctly in the information variant 1`] = `
       <div class="ecl-notification__link sc-ecl-notification-ec">
         <ecl-link path="/example.html" slot="notification-link">
           <!---->
-          <a class="ecl-link ecl-notification__link sc-ecl-notification-ec" href="/example.html">
+          <a class="ecl-link ecl-notification__link-item sc-ecl-notification-ec" href="/example.html">
             Lorem ipsum
           </a>
         </ecl-link>
@@ -42,12 +42,12 @@ exports[`ecl-notification renders correctly in the success variant 1`] = `
   <!---->
   <div class="ecl-notification ecl-notification--success" data-ecl-auto-initialized="true" data-ecl-notification role="alert">
     <ecl-icon style-class="ecl-notification__icon sc-ecl-notification-ec">
-      <span class="ecl-icon ecl-icon--m ecl-notification__icon sc-ecl-notification-ec wt-icon--check-filled wt-icon--placeholder"></span>
+      <span class="ecl-icon ecl-icon--l ecl-notification__icon sc-ecl-notification-ec wt-icon--placeholder wt-icon--success-outline"></span>
     </ecl-icon>
     <div class="ecl-notification__content">
       <ecl-button data-ecl-notification-close style-class="ecl-notification__close sc-ecl-notification-ec">
         <!---->
-        <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-notification__close sc-ecl-notification-ec" data-ecl-notification-close="eclNotificationClose" type="button">
+        <button class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--tertiary ecl-notification__close sc-ecl-notification-ec" data-ecl-notification-close="eclNotificationClose" type="button">
           <span class="ecl-button__container">
             <span class="ecl-button__label" data-ecl-label>
               Close
@@ -64,7 +64,7 @@ exports[`ecl-notification renders correctly in the success variant 1`] = `
       <div class="ecl-notification__link sc-ecl-notification-ec">
         <ecl-link path="/example.html" slot="notification-link">
           <!---->
-          <a class="ecl-link ecl-notification__link sc-ecl-notification-ec" href="/example.html">
+          <a class="ecl-link ecl-notification__link-item sc-ecl-notification-ec" href="/example.html">
             Lorem ipsum
           </a>
         </ecl-link>
@@ -79,7 +79,7 @@ exports[`ecl-notification renders correctly without the close button 1`] = `
   <!---->
   <div class="ecl-notification ecl-notification--info" data-ecl-auto-initialized="true" data-ecl-notification role="alert">
     <ecl-icon style-class="ecl-notification__icon sc-ecl-notification-ec">
-      <span class="ecl-icon ecl-icon--m ecl-notification__icon sc-ecl-notification-ec wt-icon--information wt-icon--placeholder"></span>
+      <span class="ecl-icon ecl-icon--l ecl-notification__icon sc-ecl-notification-ec wt-icon--information-outline wt-icon--placeholder"></span>
     </ecl-icon>
     <div class="ecl-notification__content">
       <div class="ecl-notification__description">
@@ -88,7 +88,7 @@ exports[`ecl-notification renders correctly without the close button 1`] = `
       <div class="ecl-notification__link sc-ecl-notification-ec">
         <ecl-link path="/example.html" slot="notification-link">
           <!---->
-          <a class="ecl-link ecl-notification__link sc-ecl-notification-ec" href="/example.html">
+          <a class="ecl-link ecl-notification__link-item sc-ecl-notification-ec" href="/example.html">
             Lorem ipsum
           </a>
         </ecl-link>

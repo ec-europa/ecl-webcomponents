@@ -6,7 +6,7 @@ exports[`ecl-page-summary renders 1`] = `
   <section aria-labelledby="page-summary-demo-title" class="ecl-page-summary" id="page-summary-demo">
     <div class="ecl-page-summary__header">
       <ecl-icon style-class="ecl-page-summary__icon">
-        <span class="ecl-icon ecl-icon--xs ecl-page-summary__icon wt-icon--placeholder wt-icon-phosphor--book-open"></span>
+        <span class="ecl-icon ecl-icon--m ecl-page-summary__icon wt-icon--placeholder wt-icon-phosphor--book-open"></span>
       </ecl-icon>
       <h2 class="ecl-page-summary__title" id="page-summary-demo-title">
         Page summary title
