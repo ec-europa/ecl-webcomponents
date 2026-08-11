@@ -35,6 +35,10 @@ export class EclNotification {
     return this.variant === 'information' ? 'info' : this.variant;
   }
 
+  getIcon() : string {
+    return `${this.variant}-outline`;
+  }
+
   componentWillLoad() {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
@@ -45,7 +49,7 @@ export class EclNotification {
       links.forEach((link) => {
         const wrapper = document.createElement('div');
         wrapper.classList.add('ecl-notification__link', `sc-ecl-notification-${this.theme}`);
-        link.firstElementChild.classList.add(`ecl-notification__link`, `sc-ecl-notification-${this.theme}`);
+        link.firstElementChild.classList.add(`ecl-notification__link-item`, `sc-ecl-notification-${this.theme}`);
 
         link.parentNode.insertBefore(wrapper, link);
         wrapper.appendChild(link);
@@ -68,8 +72,8 @@ export class EclNotification {
         data-ecl-notification role="alert"
       >
         <ecl-icon 
-          icon={this.variant === 'success' ? 'check-filled' : this.variant}
-          size="m"
+          icon={this.getIcon()}
+          size="l"
           style-class={`ecl-notification__icon sc-ecl-notification-${this.theme}`}
         >
         </ecl-icon>
@@ -78,6 +82,7 @@ export class EclNotification {
           <ecl-button
             variant="tertiary"
             type="button"
+            size="m"
             style-class={`ecl-notification__close sc-ecl-notification-${this.theme}`}
             data-ecl-notification-close
             hideLabel
@@ -86,7 +91,6 @@ export class EclNotification {
             <ecl-icon
               slot="icon-after"
               icon="close"
-              theme={this.theme}
               style-class="ecl-button__icon" 
             ></ecl-icon>
           </ecl-button> : ''

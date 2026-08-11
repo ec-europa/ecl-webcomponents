@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-picture",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.28.0",
+  "version": "0.29.0",
   "description": "ECL Picture",
   "main": "ecl-picture.tsx",
   "private": true,
@@ -13,8 +13,8 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "5.0.0-RC6",
-    "@ecl/picture": "5.0.0-RC6",
+    "@ecl/builder": "5.1.0",
+    "@ecl/picture": "5.1.0",
     "cross-env": "10.1.0"
   },
   "repository": {

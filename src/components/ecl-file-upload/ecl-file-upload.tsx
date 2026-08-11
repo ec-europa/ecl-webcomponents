@@ -135,10 +135,11 @@ export class EclFileUpload {
           htmlFor={this.inputId}
         >
           <span
-            class="ecl-file-upload__button ecl-button ecl-button--primary"
+            class={`ecl-file-upload__button ecl-button ecl-button--primary sc-ecl-button-${this.theme}`}
             data-ecl-file-upload-button
             data-ecl-file-upload-label-choose={this.buttonChooseLabel}
             data-ecl-file-upload-label-replace={this.buttonReplaceLabel}
+            {...(this.disabled && { 'disabled': `true` })}
           >
             {this.buttonChooseLabel}
           </span>

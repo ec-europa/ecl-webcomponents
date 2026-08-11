@@ -1,99 +1,127 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-file renders 1`] = `
-<ecl-file detail-meta="[&quot;Resource type&quot;, &quot;Publication date&quot;]" download-label="Download" download-link="/example.html" el-id="file-download-test" file-title="State of the Union 2018 brochure" language="English" meta="(16.2 MB - PDF)" taxonomies="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example.html&quot;},&quot;Taxonomy item 3&quot;]" taxonomies-label="Taxonomy list" variant="default">
+<ecl-file detail-meta="[&quot;Resource type&quot;, &quot;Publication date&quot;]" download-label="Download" download-link="/example.html" el-id="file-download-test" file-title="State of the Union 2018 brochure" language="English" meta="(16.2 MB - PDF)" taxonomies="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example.html&quot;},&quot;Taxonomy item 3&quot;]" taxonomies-label="List">
   <!---->
-  <ecl-file-translations data-ecl-auto-initialized="true" hidden="" others="" toggle-label="Other languages" translations-total="3">
-    <!---->
-    <div class="ecl-file__translation-container sc-ecl-file-ec" data-ecl-file-translation-container>
-      <ecl-button data-ecl-file-translation-toggle styleclass="ecl-file__translation-toggle sc-ecl-file-ec" variant="tertiary">
-        Other languages
-        <ecl-icon icon="corner-arrow" rotate="180" size="fluid" styleclass="ecl-button__icon ecl-button__icon--after"></ecl-icon>
-      </ecl-button>
-      <div class="ecl-file__translation-list sc-ecl-file-ec" role="list">
-        <ecl-file-translations-item class="ecl-file__translation-item sc-ecl-file-ec" download-label="Download" download-link="/example.html" file-title="български" language="bg" meta="(15.7 MB - PDF)" role="listitem">
-          <div class="ecl-file__translation-info sc-ecl-file-ec">
-            <div class="ecl-file__translation-title sc-ecl-file-ec" id="undefined-lang" lang="bg">
-              български
-            </div>
-            <div class="ecl-file__translation-meta sc-ecl-file-ec">
-              (15.7 MB - PDF)
-            </div>
-          </div>
-          <div class="ecl-file__translation-action sc-ecl-file-ec">
-            <ecl-link aria-labelledby="undefined-label undefined-title undefined-link" id="undefined-link" path="/example.html" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
-              Download
-              <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
-            </ecl-link>
-          </div>
-        </ecl-file-translations-item>
-        <ecl-file-translations-item class="ecl-file__translation-item sc-ecl-file-ec" download-label="Download" download-link="/example.html" file-title="español" language="es" meta="(15.98 MB - PDF)" role="listitem">
-          <div class="ecl-file__translation-info sc-ecl-file-ec">
-            <div class="ecl-file__translation-title sc-ecl-file-ec" id="undefined-lang" lang="es">
-              español
-            </div>
-            <div class="ecl-file__translation-meta sc-ecl-file-ec">
-              (15.98 MB - PDF)
-            </div>
-          </div>
-          <div class="ecl-file__translation-action sc-ecl-file-ec">
-            <ecl-link aria-labelledby="undefined-label undefined-title undefined-link" id="undefined-link" path="/example.html" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
-              Download
-              <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
-            </ecl-link>
-          </div>
-        </ecl-file-translations-item>
-        <ecl-file-translations-item class="ecl-file__translation-item sc-ecl-file-ec" download-label="Download" download-link="/example.html" file-title="français" language="fr" meta="(15.98 MB - PDF)" role="listitem">
-          <div class="ecl-file__translation-info sc-ecl-file-ec">
-            <div class="ecl-file__translation-title sc-ecl-file-ec" id="undefined-lang" lang="fr">
-              français
-            </div>
-            <div class="ecl-file__translation-meta sc-ecl-file-ec">
-              (15.98 MB - PDF)
-            </div>
-          </div>
-          <div class="ecl-file__translation-action sc-ecl-file-ec">
-            <ecl-link aria-labelledby="undefined-label undefined-title undefined-link" id="undefined-link" path="/example.html" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
-              Download
-              <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
-            </ecl-link>
-          </div>
-        </ecl-file-translations-item>
-        <div class="ecl-file__translation-description ecl-file__translation-item sc-ecl-file-ec">
-          <p slot="others">
-            Looking for another language which is not on the list?
-            <a class="ecl-link" href="/example.html">
-              Find out why
-            </a>
-            .
-          </p>
-        </div>
-      </div>
-    </div>
-  </ecl-file-translations>
-  <div class="ecl-file ecl-file--default" data-ecl-file id="file-download-test">
-    <div class="ecl-file__container">
-      <ecl-icon icon="file" size="2xl" styleclass="ecl-file__icon sc-ecl-file-ec" theme="ec"></ecl-icon>
+  <div class="ecl-file" data-ecl-auto-initialized="true" data-ecl-file id="file-download-test">
+    <article class="ecl-file__container">
       <div class="ecl-file__info">
-        <div class="ecl-file__title" id="file-download-test-title">
-          State of the Union 2018 brochure
+        <div class="ecl-file__content">
+          <div class="ecl-file__title" id="file-download-test-title">
+            State of the Union 2018 brochure
+          </div>
+          <div class="ecl-file__description">
+            <ecl-file-translations el-id="file-translations-id-test" others="" toggle-label="Other languages">
+              <!---->
+              <div class="ecl-file__translation-list sc-ecl-file-ec" hidden="" id="file-translations-id-test">
+                <ecl-file-translations-item class="ecl-file__translation-item sc-ecl-file-ec" download-label="Download" download-link="/example.html" file-title="български" language="bg" meta="(15.7 MB - PDF)" role="listitem">
+                  <div class="ecl-file__translation-info sc-ecl-file-ec">
+                    <div class="ecl-file__translation-title sc-ecl-file-ec" id="file-download-test-lang" lang="bg">
+                      български
+                    </div>
+                    <div class="ecl-file__translation-meta sc-ecl-file-ec">
+                      (15.7 MB - PDF)
+                    </div>
+                  </div>
+                  <div class="ecl-file__translation-action sc-ecl-file-ec">
+                    <ecl-link aria-labelledby="file-download-test-label file-download-test-title file-download-test-link" id="file-download-test-link" path="/example.html" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
+                      Download
+                      <ecl-icon slot="icon-after">
+                        <span class="ecl-icon ecl-icon--fluid wt-icon--download wt-icon--placeholder"></span>
+                      </ecl-icon>
+                    </ecl-link>
+                  </div>
+                </ecl-file-translations-item>
+                <ecl-file-translations-item class="ecl-file__translation-item sc-ecl-file-ec" download-label="Download" download-link="/example.html" file-title="español" language="es" meta="(15.98 MB - PDF)" role="listitem">
+                  <div class="ecl-file__translation-info sc-ecl-file-ec">
+                    <div class="ecl-file__translation-title sc-ecl-file-ec" id="file-download-test-lang" lang="es">
+                      español
+                    </div>
+                    <div class="ecl-file__translation-meta sc-ecl-file-ec">
+                      (15.98 MB - PDF)
+                    </div>
+                  </div>
+                  <div class="ecl-file__translation-action sc-ecl-file-ec">
+                    <ecl-link aria-labelledby="file-download-test-label file-download-test-title file-download-test-link" id="file-download-test-link" path="/example.html" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
+                      Download
+                      <ecl-icon slot="icon-after">
+                        <span class="ecl-icon ecl-icon--fluid wt-icon--download wt-icon--placeholder"></span>
+                      </ecl-icon>
+                    </ecl-link>
+                  </div>
+                </ecl-file-translations-item>
+                <ecl-file-translations-item class="ecl-file__translation-item sc-ecl-file-ec" download-label="Download" download-link="/example.html" file-title="français" language="fr" meta="(15.98 MB - PDF)" role="listitem">
+                  <div class="ecl-file__translation-info sc-ecl-file-ec">
+                    <div class="ecl-file__translation-title sc-ecl-file-ec" id="file-download-test-lang" lang="fr">
+                      français
+                    </div>
+                    <div class="ecl-file__translation-meta sc-ecl-file-ec">
+                      (15.98 MB - PDF)
+                    </div>
+                  </div>
+                  <div class="ecl-file__translation-action sc-ecl-file-ec">
+                    <ecl-link aria-labelledby="file-download-test-label file-download-test-title file-download-test-link" id="file-download-test-link" path="/example.html" styleclass="ecl-file__translation-download sc-ecl-file-ec" theme="ec" variant="standalone">
+                      Download
+                      <ecl-icon slot="icon-after">
+                        <span class="ecl-icon ecl-icon--fluid wt-icon--download wt-icon--placeholder"></span>
+                      </ecl-icon>
+                    </ecl-link>
+                  </div>
+                </ecl-file-translations-item>
+                <div class="ecl-file__translation-description ecl-file__translation-item sc-ecl-file-ec">
+                  <p slot="others">
+                    Looking for another language which is not on the list?
+                    <a class="ecl-link" href="/example.html">
+                      Find out why
+                    </a>
+                    .
+                  </p>
+                </div>
+              </div>
+            </ecl-file-translations>
+          </div>
+          <div class="ecl-file__primary-meta">
+            <span class="ecl-file__primary-meta-item">
+              Resource type
+            </span>
+            <span class="ecl-file__primary-meta-item">
+              Publication date
+            </span>
+          </div>
+          <div class="ecl-file__lists">
+            <ecl-description-list variant="inline">
+              <ecl-description-list-term style-class="sc-ecl-file-ec">
+                List
+              </ecl-description-list-term>
+              <ecl-description-list-definition items="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example.html&quot;},&quot;Taxonomy item 3&quot;]" style-class="sc-ecl-file-ec" type="taxonomy"></ecl-description-list-definition>
+            </ecl-description-list>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="ecl-file__footer">
-      <div class="ecl-file__language">
-        English
-      </div>
-      <div class="ecl-file__meta">
-        (16.2 MB - PDF)
-      </div>
-      <div class="ecl-file__action">
-        <ecl-link id="file-download-test-link" path="/example.html" style-class="ecl-file__download" variant="standalone">
-          Download
-          <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
-        </ecl-link>
-      </div>
-    </div>
+      <footer class="ecl-file__footer">
+        <ecl-button aria-controls="file-translation-id" aria-expanded="false" aria-labels="Translations" button-style="neutral" data-ecl-file-translation-toggle style-class="ecl-file__translation-toggle sc-ecl-file-ec">
+          <!---->
+          <button aria-controls="file-translations-id-test" aria-expanded="false" aria-labels="Translations" class="ecl-button ecl-button--neutral ecl-button--tertiary ecl-file__translation-toggle sc-ecl-file-ec" data-ecl-file-translation-toggle="eclFileTranslationToggle" type="button">
+            <span class="ecl-button__container">
+              <span class="ecl-button__label" data-ecl-label>
+                English
+              </span>
+              <ecl-icon slot="icon-after" style-class="sc-ecl-file-ec">
+                <span class="ecl-button__icon ecl-icon ecl-icon--fluid sc-ecl-button-ec sc-ecl-file-ec wt-icon--placeholder wt-icon-phosphor--caret-down"></span>
+              </ecl-icon>
+            </span>
+          </button>
+        </ecl-button>
+        <div class="ecl-file__action">
+          <ecl-link branded="" id="file-download-test-link" path="/example.html" style-class="ecl-file__download" variant="standalone">
+            Download (16.2 MB - PDF)
+            <ecl-icon slot="icon-after">
+              <span class="ecl-icon ecl-icon--fluid wt-icon--placeholder wt-icon-phosphor--download-simple"></span>
+            </ecl-icon>
+          </ecl-link>
+        </div>
+      </footer>
+    </article>
   </div>
 </ecl-file>
 `;
@@ -101,37 +129,37 @@ exports[`ecl-file renders 1`] = `
 exports[`ecl-file renders correctly with download attribute 1`] = `
 <ecl-file detail-meta="[&quot;Resource type&quot;, &quot;Publication date&quot;]" download-attribute="" download-label="Download" download-link="/example.html" el-id="file-download-test" file-title="State of the Union 2018 brochure (download)" language="English" meta="(16.2 MB - PDF)" variant="thumbnail">
   <!---->
-  <div class="ecl-file ecl-file--thumbnail" data-ecl-file id="file-download-test">
-    <div class="ecl-file__container">
+  <div class="ecl-file" data-ecl-file id="file-download-test">
+    <article class="ecl-file__container">
       <div class="ecl-file__info">
-        <div class="ecl-file__detail-meta">
-          <span class="ecl-file__detail-meta-item">
-            Resource type
-          </span>
-          <span class="ecl-file__detail-meta-item">
-            Publication date
-          </span>
+        <div class="ecl-file__content">
+          <div class="ecl-file__title" id="file-download-test-title">
+            State of the Union 2018 brochure (download)
+          </div>
+          <div class="ecl-file__description"></div>
+          <div class="ecl-file__primary-meta">
+            <span class="ecl-file__primary-meta-item">
+              Resource type
+            </span>
+            <span class="ecl-file__primary-meta-item">
+              Publication date
+            </span>
+          </div>
         </div>
-        <div class="ecl-file__title" id="file-download-test-title">
-          State of the Union 2018 brochure (download)
+      </div>
+      <footer class="ecl-file__footer">
+        <ecl-button aria-controls="file-translation-id" aria-expanded="false" aria-labels="Translations" button-style="neutral" data-ecl-file-translation-toggle style-class="ecl-file__translation-toggle sc-ecl-file-ec" variant="tertiary">
+          English
+          <ecl-icon family="phosphor" icon="caret-down" size="fluid" slot="icon-after" style-class="sc-ecl-file-ec"></ecl-icon>
+        </ecl-button>
+        <div class="ecl-file__action">
+          <ecl-link branded="" download="" id="file-download-test-link" path="/example.html" style-class="ecl-file__download" variant="standalone">
+            Download (16.2 MB - PDF)
+            <ecl-icon family="phosphor" icon="download-simple" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
+          </ecl-link>
         </div>
-        <div class="ecl-file__description"></div>
-      </div>
-    </div>
-    <div class="ecl-file__footer">
-      <div class="ecl-file__language">
-        English
-      </div>
-      <div class="ecl-file__meta">
-        (16.2 MB - PDF)
-      </div>
-      <div class="ecl-file__action">
-        <ecl-link download="" id="file-download-test-link" path="/example.html" style-class="ecl-file__download" variant="standalone">
-          Download
-          <ecl-icon icon="download" size="fluid" slot="icon-after" theme="ec"></ecl-icon>
-        </ecl-link>
-      </div>
-    </div>
+      </footer>
+    </article>
   </div>
 </ecl-file>
 `;

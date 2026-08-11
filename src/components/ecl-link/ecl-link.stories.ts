@@ -25,7 +25,7 @@ const getArgTypes = () => {
     color_mode: { table: { disable: true } },
     variant: {
       type: { name: 'select' },
-      options: ['standalone', 'primary', 'primary-highlight', 'primary-neutral', 'secondary'],
+      options: ['standalone', 'primary', 'primary-highlight', 'primary-neutral', 'secondary', 'secondary-inverted'],
       description: "Link variant"
     },
     label: {
@@ -147,7 +147,7 @@ const Template = (args) => {
       </ecl-icon>` : '' }
     </ecl-link>`;
 
-  if (args.inverted) {
+  if (args.inverted || args.variant === 'secondary-inverted') {
     return `<div style="padding: var(--s-s); background: var(--cm-surface-brand, var(--ecl-color-dark))">${link}</div>`;
   }
 

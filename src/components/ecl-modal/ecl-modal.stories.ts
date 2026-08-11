@@ -57,8 +57,8 @@ const Template = args =>
     with-body-fixed
     toggle-id="modal-demo-toggle"
     close-label="Close"
+    item-title="Modal title"
   > 
-    <ecl-text slot="header" tag="span">Lorem ipsum dolor sit amet</ecl-text>
     <ecl-text slot="body" tag="p">
       Scrollable content:
       <br>
@@ -74,20 +74,22 @@ const Template = args =>
         label="Option label"
       ></ecl-input>
     </div>
-    <div slot="footer" style="display: flex; flex-grow: 1;">
+    <div slot="footer" style="display: flex;">
       <ecl-button
         type="button"
         variant="secondary"
+        size="m"
         style-class="ecl-modal__button sc-ecl-modal-${args.theme}"
       >
-        Close
+        Button
       </ecl-button>
       <ecl-button
         type="submit"
         variant="primary"
+        size="m"
         style-class="ecl-modal__button sc-ecl-modal-${args.theme}"
       >
-        Submit
+        Button
       </ecl-button>
     </div>
   </ecl-modal>`;

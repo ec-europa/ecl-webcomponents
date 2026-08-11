@@ -25,4 +25,30 @@ describe('ecl-input', () => {
     });
     expect(page.root).toMatchSnapshot();
   });
+
+  it('renders correctly with extra attributes', async () => {
+    const page = await newSpecPage({
+      components: [EclInput, EclFormGroup],
+      html: `<ecl-form-group
+        label="Label"
+        required=true
+        optional-text="(optional)"
+        helper-text="This is the form group helper text."
+        theme="ec"
+      >
+        <ecl-input
+          type="text"
+          theme="ec"
+          input-id="input-id"
+          required=true
+          width="l"
+          placeholder="placeholder"
+          input-attrs='{"data-custom-attribute": true }'
+        >
+        </ecl-input>
+      </ecl-form-group>`,
+    });
+
+    expect(page.root).toMatchSnapshot();
+  });
 });

@@ -7,6 +7,11 @@
   $theme: theme.$theme,
   $typography: var.$typography
 );
+@use '@ecl/link/link' with (
+  $theme: theme.$theme,
+  $link: var.$link,
+  $button: var.$button
+);
 @use '@ecl/featured-item/featured-item' with (
   $theme: theme.$theme,
   $featured-item: var.$featured-item

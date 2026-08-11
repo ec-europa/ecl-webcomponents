@@ -29,6 +29,10 @@ describe('ecl-animated-numbers', () => {
                 item-suffix-label="euro"
                 category="Revenue"
                 description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+                sources-label="Sources:"
+                sources='[
+                  { "label": "DG CNECT", "path": "/example.html" }
+                ]'
               >
               </ecl-animated-numbers-item>
               <ecl-animated-numbers-item
@@ -39,6 +43,10 @@ describe('ecl-animated-numbers', () => {
                 item-suffix-label="euro"
                 category="Revenue"
                 description="Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                sources-label="Sources:"
+                sources='[
+                  { "label": "DG CNECT", "path": "/example.html" }
+                ]'
               >
               </ecl-animated-numbers-item>
               <ecl-animated-numbers-item
@@ -49,6 +57,10 @@ describe('ecl-animated-numbers', () => {
                 item-suffix-label="less than"
                 category="Revenue"
                 description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+                sources-label="Sources:"
+                sources='[
+                  { "label": "DG CNECT", "path": "/example.html" }
+                ]'
               >
               </ecl-animated-numbers-item>
               <ecl-animated-numbers-item
@@ -59,6 +71,10 @@ describe('ecl-animated-numbers', () => {
                 item-suffix="billions"
                 category="Revenue"
                 description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+                sources-label="Sources:"
+                sources='[
+                  { "label": "DG CNECT", "path": "/example.html" }
+                ]'
               >
               </ecl-animated-numbers-item>
               <ecl-animated-numbers-item
@@ -69,6 +85,10 @@ describe('ecl-animated-numbers', () => {
                 item-suffix="millions"
                 category="Revenue"
                 description="Curabitur ut mauris quam. Fusce non consequat ipsum"
+                sources-label="Sources:"
+                sources='[
+                  { "label": "DG CNECT", "path": "/example.html" }
+                ]'
               >
               </ecl-animated-numbers-item>
               <ecl-animated-numbers-item
@@ -79,6 +99,10 @@ describe('ecl-animated-numbers', () => {
                 item-suffix="billions"
                 category="Revenue"
                 description="Curabitur ut mauris quam. Fusce non consequat ipsum"
+                sources-label="Sources:"
+                sources='[
+                  { "label": "DG CNECT", "path": "/example.html" }
+                ]'
               >
               </ecl-animated-numbers-item>
               <ecl-animated-numbers-item
@@ -89,6 +113,10 @@ describe('ecl-animated-numbers', () => {
                 item-suffix="billions"
                 category="Revenue"
                 description="Integer pharetra lacinia tristique"
+                sources-label="Sources:"
+                sources='[
+                  { "label": "DG CNECT", "path": "/example.html" }
+                ]'
               >
               </ecl-animated-numbers-item>
             </ecl-animated-numbers>`

@@ -7,8 +7,6 @@ const getArgs = () => ({
   });
   
   const getArgTypes = () => ({
-    color_mode: { table: { disable: true } },
-  
     title: {
       control: 'text',
       description: 'Page summary title',

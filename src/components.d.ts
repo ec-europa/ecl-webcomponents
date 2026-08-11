@@ -27,6 +27,14 @@ export namespace Components {
     }
     interface EclAccordionItem {
         "expanded": boolean;
+        /**
+          * @default 'plus'
+         */
+        "iconCollapsed": string;
+        /**
+          * @default 'minus'
+         */
+        "iconExpanded": string;
         "label": string;
         /**
           * @default false
@@ -100,6 +108,14 @@ export namespace Components {
         "itemPrefixLabel": string;
         "itemSuffix": string;
         "itemSuffixLabel": string;
+        /**
+          * @default ''
+         */
+        "sources": string;
+        /**
+          * @default ''
+         */
+        "sourcesLabel": string;
         "styleClass": string;
         "theme": string;
         "value": string;
@@ -149,6 +165,7 @@ export namespace Components {
         "horizontal": string;
         "image": string;
         "imageAlt": string;
+        "imageAnchor": string;
         /**
           * @default false
          */
@@ -595,6 +612,14 @@ export namespace Components {
         "icon": string;
         "iconTransform": string;
         "itemTitle": string;
+        /**
+          * @default ''
+         */
+        "sources": string;
+        /**
+          * @default ''
+         */
+        "sourcesLabel": string;
         "styleClass": string;
         "theme": string;
         "value": string;
@@ -661,6 +686,7 @@ export namespace Components {
          */
         "fileTitleId": string;
         "fileTitlePath": string;
+        "icon": string;
         "image": string;
         "imageAlt": string;
         "labels": string;
@@ -674,12 +700,12 @@ export namespace Components {
         "taxonomies": string;
         "taxonomiesLabel": string;
         "theme": string;
-        /**
-          * @default 'default'
-         */
-        "variant": string;
     }
     interface EclFileTranslations {
+        /**
+          * @default `ecl-file-translations-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "elId": string;
         /**
           * @default false
          */
@@ -1020,6 +1046,61 @@ export namespace Components {
          */
         "titleIcon": string;
     }
+    interface EclHighlightedSearch {
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
+          * @default `ecl-highlighted-search-${Math.random().toString(36).substring(2, 9)}`
+         */
+        "elId": string;
+        /**
+          * @default ''
+         */
+        "elTitle": string;
+        /**
+          * @default ''
+         */
+        "formAttrs": string;
+        /**
+          * @default false
+         */
+        "hasDescription": boolean;
+        /**
+          * @default ''
+         */
+        "helperText": string;
+        /**
+          * @default ''
+         */
+        "inputAttrs": string;
+        /**
+          * @default `${this.elId}-input`
+         */
+        "inputId": string;
+        /**
+          * @default ''
+         */
+        "inputLabel": string;
+        /**
+          * @default 'highlighted-search-input-name'
+         */
+        "inputName": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        /**
+          * @default ''
+         */
+        "submitLabel": string;
+        /**
+          * @default ''
+         */
+        "suggestionLabel": string;
+        "theme": string;
+    }
     interface EclIcon {
         "color": string;
         /**
@@ -1104,6 +1185,7 @@ export namespace Components {
           * @default false
          */
         "hideLabel": boolean;
+        "inputAttrs": string;
         "inputClass": string;
         "inputId": string;
         /**
@@ -1465,6 +1547,7 @@ export namespace Components {
     interface EclModal {
         "closeLabel": string;
         "itemId": string;
+        "itemTitle": string;
         /**
           * @default false
          */
@@ -1694,10 +1777,14 @@ export namespace Components {
         "truncation": boolean;
     }
     interface EclPicture {
+        /**
+          * @default false
+         */
+        "debugPosition": boolean;
         "image": string;
         "imageAlt": string;
         /**
-          * @default 'center'
+          * @default ''
          */
         "imageAnchor": string;
         "imgClass": string;
@@ -1705,6 +1792,10 @@ export namespace Components {
           * @default false
          */
         "lazy": boolean;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
         /**
           * @default ''
          */
@@ -2286,6 +2377,135 @@ export namespace Components {
         "styleClass": string;
         "theme": string;
     }
+    interface EclStoryCard {
+        /**
+          * @default ''
+         */
+        "colorMode": string;
+        /**
+          * @default ''
+         */
+        "description": string;
+        /**
+          * @default `ecl-story-card-${Math.random().toString(36).substring(2, 9)}`
+         */
+        "elId": string;
+        /**
+          * @default ''
+         */
+        "elTitle": string;
+        /**
+          * @default ''
+         */
+        "nextLabel": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
+        /**
+          * @default ''
+         */
+        "pauseLabel": string;
+        /**
+          * @default ''
+         */
+        "playLabel": string;
+        /**
+          * @default ''
+         */
+        "prevLabel": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        "theme": string;
+        /**
+          * @default 'story'
+         */
+        "variant": string;
+    }
+    interface EclStoryCardItem {
+        /**
+          * @default ''
+         */
+        "articleClass": string;
+        /**
+          * @default ''
+         */
+        "author": string;
+        /**
+          * @default ''
+         */
+        "elRole": string;
+        /**
+          * @default ''
+         */
+        "elTitle": string;
+        /**
+          * @default ''
+         */
+        "linkHref": string;
+        /**
+          * @default ''
+         */
+        "linkIcon": string;
+        /**
+          * @default ''
+         */
+        "linkLabel": string;
+        /**
+          * @default 0
+         */
+        "order": number;
+        /**
+          * @default ''
+         */
+        "picture": string;
+        /**
+          * @default ''
+         */
+        "pictureAlt": string;
+        /**
+          * @default ''
+         */
+        "slotName": string;
+        /**
+          * @default ''
+         */
+        "source": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        /**
+          * @default ''
+         */
+        "teaserLabel": string;
+        "theme": string;
+        /**
+          * @default 'story'
+         */
+        "variant": string;
+    }
+    interface EclStoryCardTab {
+        /**
+          * @default '0'
+         */
+        "order": string;
+        /**
+          * @default ''
+         */
+        "picture": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        /**
+          * @default ''
+         */
+        "teaserLabel": string;
+        "theme": string;
+    }
     interface EclTable {
         "caption"?: string;
         "colorMode": string;
@@ -2848,6 +3068,12 @@ declare global {
         prototype: HTMLEclHighlightBoxElement;
         new (): HTMLEclHighlightBoxElement;
     };
+    interface HTMLEclHighlightedSearchElement extends Components.EclHighlightedSearch, HTMLStencilElement {
+    }
+    var HTMLEclHighlightedSearchElement: {
+        prototype: HTMLEclHighlightedSearchElement;
+        new (): HTMLEclHighlightedSearchElement;
+    };
     interface HTMLEclIconElement extends Components.EclIcon, HTMLStencilElement {
     }
     var HTMLEclIconElement: {
@@ -3182,6 +3408,24 @@ declare global {
         prototype: HTMLEclSpotlightElement;
         new (): HTMLEclSpotlightElement;
     };
+    interface HTMLEclStoryCardElement extends Components.EclStoryCard, HTMLStencilElement {
+    }
+    var HTMLEclStoryCardElement: {
+        prototype: HTMLEclStoryCardElement;
+        new (): HTMLEclStoryCardElement;
+    };
+    interface HTMLEclStoryCardItemElement extends Components.EclStoryCardItem, HTMLStencilElement {
+    }
+    var HTMLEclStoryCardItemElement: {
+        prototype: HTMLEclStoryCardItemElement;
+        new (): HTMLEclStoryCardItemElement;
+    };
+    interface HTMLEclStoryCardTabElement extends Components.EclStoryCardTab, HTMLStencilElement {
+    }
+    var HTMLEclStoryCardTabElement: {
+        prototype: HTMLEclStoryCardTabElement;
+        new (): HTMLEclStoryCardTabElement;
+    };
     interface HTMLEclTableElement extends Components.EclTable, HTMLStencilElement {
     }
     var HTMLEclTableElement: {
@@ -3318,6 +3562,7 @@ declare global {
         "ecl-gallery-item": HTMLEclGalleryItemElement;
         "ecl-grid": HTMLEclGridElement;
         "ecl-highlight-box": HTMLEclHighlightBoxElement;
+        "ecl-highlighted-search": HTMLEclHighlightedSearchElement;
         "ecl-icon": HTMLEclIconElement;
         "ecl-indicator": HTMLEclIndicatorElement;
         "ecl-inpage-navigation": HTMLEclInpageNavigationElement;
@@ -3365,6 +3610,9 @@ declare global {
         "ecl-splash-page": HTMLEclSplashPageElement;
         "ecl-splash-page-language-item": HTMLEclSplashPageLanguageItemElement;
         "ecl-spotlight": HTMLEclSpotlightElement;
+        "ecl-story-card": HTMLEclStoryCardElement;
+        "ecl-story-card-item": HTMLEclStoryCardItemElement;
+        "ecl-story-card-tab": HTMLEclStoryCardTabElement;
         "ecl-table": HTMLEclTableElement;
         "ecl-tabs": HTMLEclTabsElement;
         "ecl-tabs-item": HTMLEclTabsItemElement;
@@ -3403,6 +3651,14 @@ declare namespace LocalJSX {
     }
     interface EclAccordionItem {
         "expanded"?: boolean;
+        /**
+          * @default 'plus'
+         */
+        "iconCollapsed"?: string;
+        /**
+          * @default 'minus'
+         */
+        "iconExpanded"?: string;
         "label"?: string;
         /**
           * @default false
@@ -3476,6 +3732,14 @@ declare namespace LocalJSX {
         "itemPrefixLabel"?: string;
         "itemSuffix"?: string;
         "itemSuffixLabel"?: string;
+        /**
+          * @default ''
+         */
+        "sources"?: string;
+        /**
+          * @default ''
+         */
+        "sourcesLabel"?: string;
         "styleClass"?: string;
         "theme"?: string;
         "value"?: string;
@@ -3525,6 +3789,7 @@ declare namespace LocalJSX {
         "horizontal"?: string;
         "image"?: string;
         "imageAlt"?: string;
+        "imageAnchor"?: string;
         /**
           * @default false
          */
@@ -3974,6 +4239,14 @@ declare namespace LocalJSX {
         "icon"?: string;
         "iconTransform"?: string;
         "itemTitle"?: string;
+        /**
+          * @default ''
+         */
+        "sources"?: string;
+        /**
+          * @default ''
+         */
+        "sourcesLabel"?: string;
         "styleClass"?: string;
         "theme"?: string;
         "value"?: string;
@@ -4040,6 +4313,7 @@ declare namespace LocalJSX {
          */
         "fileTitleId"?: string;
         "fileTitlePath"?: string;
+        "icon"?: string;
         "image"?: string;
         "imageAlt"?: string;
         "labels"?: string;
@@ -4053,12 +4327,12 @@ declare namespace LocalJSX {
         "taxonomies"?: string;
         "taxonomiesLabel"?: string;
         "theme"?: string;
-        /**
-          * @default 'default'
-         */
-        "variant"?: string;
     }
     interface EclFileTranslations {
+        /**
+          * @default `ecl-file-translations-${Math.random().toString(36).slice(2, 10)}`
+         */
+        "elId"?: string;
         /**
           * @default false
          */
@@ -4399,6 +4673,61 @@ declare namespace LocalJSX {
          */
         "titleIcon"?: string;
     }
+    interface EclHighlightedSearch {
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
+          * @default `ecl-highlighted-search-${Math.random().toString(36).substring(2, 9)}`
+         */
+        "elId"?: string;
+        /**
+          * @default ''
+         */
+        "elTitle"?: string;
+        /**
+          * @default ''
+         */
+        "formAttrs"?: string;
+        /**
+          * @default false
+         */
+        "hasDescription"?: boolean;
+        /**
+          * @default ''
+         */
+        "helperText"?: string;
+        /**
+          * @default ''
+         */
+        "inputAttrs"?: string;
+        /**
+          * @default `${this.elId}-input`
+         */
+        "inputId"?: string;
+        /**
+          * @default ''
+         */
+        "inputLabel"?: string;
+        /**
+          * @default 'highlighted-search-input-name'
+         */
+        "inputName"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        /**
+          * @default ''
+         */
+        "submitLabel"?: string;
+        /**
+          * @default ''
+         */
+        "suggestionLabel"?: string;
+        "theme"?: string;
+    }
     interface EclIcon {
         "color"?: string;
         /**
@@ -4483,6 +4812,7 @@ declare namespace LocalJSX {
           * @default false
          */
         "hideLabel"?: boolean;
+        "inputAttrs"?: string;
         "inputClass"?: string;
         "inputId"?: string;
         /**
@@ -4847,6 +5177,7 @@ declare namespace LocalJSX {
     interface EclModal {
         "closeLabel"?: string;
         "itemId"?: string;
+        "itemTitle"?: string;
         /**
           * @default false
          */
@@ -5076,10 +5407,14 @@ declare namespace LocalJSX {
         "truncation"?: boolean;
     }
     interface EclPicture {
+        /**
+          * @default false
+         */
+        "debugPosition"?: boolean;
         "image"?: string;
         "imageAlt"?: string;
         /**
-          * @default 'center'
+          * @default ''
          */
         "imageAnchor"?: string;
         "imgClass"?: string;
@@ -5087,6 +5422,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "lazy"?: boolean;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
         /**
           * @default ''
          */
@@ -5677,6 +6016,135 @@ declare namespace LocalJSX {
         "styleClass"?: string;
         "theme"?: string;
     }
+    interface EclStoryCard {
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
+        /**
+          * @default ''
+         */
+        "description"?: string;
+        /**
+          * @default `ecl-story-card-${Math.random().toString(36).substring(2, 9)}`
+         */
+        "elId"?: string;
+        /**
+          * @default ''
+         */
+        "elTitle"?: string;
+        /**
+          * @default ''
+         */
+        "nextLabel"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
+        /**
+          * @default ''
+         */
+        "pauseLabel"?: string;
+        /**
+          * @default ''
+         */
+        "playLabel"?: string;
+        /**
+          * @default ''
+         */
+        "prevLabel"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        "theme"?: string;
+        /**
+          * @default 'story'
+         */
+        "variant"?: string;
+    }
+    interface EclStoryCardItem {
+        /**
+          * @default ''
+         */
+        "articleClass"?: string;
+        /**
+          * @default ''
+         */
+        "author"?: string;
+        /**
+          * @default ''
+         */
+        "elRole"?: string;
+        /**
+          * @default ''
+         */
+        "elTitle"?: string;
+        /**
+          * @default ''
+         */
+        "linkHref"?: string;
+        /**
+          * @default ''
+         */
+        "linkIcon"?: string;
+        /**
+          * @default ''
+         */
+        "linkLabel"?: string;
+        /**
+          * @default 0
+         */
+        "order"?: number;
+        /**
+          * @default ''
+         */
+        "picture"?: string;
+        /**
+          * @default ''
+         */
+        "pictureAlt"?: string;
+        /**
+          * @default ''
+         */
+        "slotName"?: string;
+        /**
+          * @default ''
+         */
+        "source"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        /**
+          * @default ''
+         */
+        "teaserLabel"?: string;
+        "theme"?: string;
+        /**
+          * @default 'story'
+         */
+        "variant"?: string;
+    }
+    interface EclStoryCardTab {
+        /**
+          * @default '0'
+         */
+        "order"?: string;
+        /**
+          * @default ''
+         */
+        "picture"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        /**
+          * @default ''
+         */
+        "teaserLabel"?: string;
+        "theme"?: string;
+    }
     interface EclTable {
         "caption"?: string;
         "colorMode"?: string;
@@ -5978,6 +6446,8 @@ declare namespace LocalJSX {
         "styleClass": string;
         "label": string;
         "sidebar": boolean;
+        "iconCollapsed": string;
+        "iconExpanded": string;
         "expanded": boolean;
         "theme": string;
     }
@@ -6013,6 +6483,8 @@ declare namespace LocalJSX {
         "itemPrefixLabel": string;
         "itemSuffixLabel": string;
         "value": string;
+        "sources": string;
+        "sourcesLabel": string;
     }
     interface EclBannerAttributes {
         "colorMode": string;
@@ -6024,6 +6496,7 @@ declare namespace LocalJSX {
         "bannerTitleLink": string;
         "descriptionLink": string;
         "image": string;
+        "imageAnchor": string;
         "noScript": boolean;
         "sources": string;
         "tracks": string;
@@ -6231,6 +6704,8 @@ declare namespace LocalJSX {
         "value": string;
         "itemTitle": string;
         "iconTransform": string;
+        "sources": string;
+        "sourcesLabel": string;
     }
     interface EclFeaturedItemAttributes {
         "theme": string;
@@ -6256,7 +6731,6 @@ declare namespace LocalJSX {
         "elId": string;
         "theme": string;
         "styleClass": string;
-        "variant": string;
         "downloadAttribute": boolean;
         "downloadId": string;
         "downloadLabel": string;
@@ -6267,6 +6741,7 @@ declare namespace LocalJSX {
         "fileTitlePath": string;
         "detailMeta": string;
         "language": string;
+        "icon": string;
         "meta": string;
         "image": string;
         "imageAlt": string;
@@ -6278,6 +6753,7 @@ declare namespace LocalJSX {
     }
     interface EclFileTranslationsAttributes {
         "theme": string;
+        "elId": string;
         "styleClass": string;
         "toggleLabel": string;
         "others": boolean;
@@ -6445,6 +6921,22 @@ declare namespace LocalJSX {
         "titleIcon": string;
         "colorMode": string;
     }
+    interface EclHighlightedSearchAttributes {
+        "theme": string;
+        "styleClass": string;
+        "colorMode": string;
+        "elId": string;
+        "elTitle": string;
+        "helperText": string;
+        "submitLabel": string;
+        "suggestionLabel": string;
+        "hasDescription": boolean;
+        "inputId": string;
+        "inputLabel": string;
+        "inputAttrs": string;
+        "formAttrs": string;
+        "inputName": string;
+    }
     interface EclIconAttributes {
         "styleClass": string;
         "theme": string;
@@ -6494,6 +6986,7 @@ declare namespace LocalJSX {
         "inputId": string;
         "name": string;
         "defaultValue": string;
+        "inputAttrs": string;
         "hasChanged": boolean;
         "isFocused": boolean;
     }
@@ -6672,6 +7165,7 @@ declare namespace LocalJSX {
         "size": string;
         "closeLabel": string;
         "itemId": string;
+        "itemTitle": string;
     }
     interface EclNavigationListAttributes {
         "theme": string;
@@ -6776,7 +7270,9 @@ declare namespace LocalJSX {
         "image": string;
         "imgClass": string;
         "imageAlt": string;
+        "noScript": boolean;
         "imageAnchor": string;
+        "debugPosition": boolean;
         "lazy": boolean;
         "zoom": boolean;
     }
@@ -7027,6 +7523,45 @@ declare namespace LocalJSX {
         "header": string;
         "fontSize": string;
     }
+    interface EclStoryCardAttributes {
+        "styleClass": string;
+        "noScript": boolean;
+        "elId": string;
+        "elTitle": string;
+        "description": string;
+        "prevLabel": string;
+        "nextLabel": string;
+        "playLabel": string;
+        "pauseLabel": string;
+        "theme": string;
+        "variant": string;
+        "colorMode": string;
+    }
+    interface EclStoryCardItemAttributes {
+        "styleClass": string;
+        "articleClass": string;
+        "theme": string;
+        "variant": string;
+        "elTitle": string;
+        "author": string;
+        "elRole": string;
+        "source": string;
+        "linkHref": string;
+        "teaserLabel": string;
+        "linkLabel": string;
+        "linkIcon": string;
+        "picture": string;
+        "pictureAlt": string;
+        "slotName": string;
+        "order": number;
+    }
+    interface EclStoryCardTabAttributes {
+        "styleClass": string;
+        "picture": string;
+        "theme": string;
+        "teaserLabel": string;
+        "order": string;
+    }
     interface EclTableAttributes {
         "elId": string;
         "theme": string;
@@ -7206,6 +7741,7 @@ declare namespace LocalJSX {
         "ecl-gallery-item": Omit<EclGalleryItem, keyof EclGalleryItemAttributes> & { [K in keyof EclGalleryItem & keyof EclGalleryItemAttributes]?: EclGalleryItem[K] } & { [K in keyof EclGalleryItem & keyof EclGalleryItemAttributes as `attr:${K}`]?: EclGalleryItemAttributes[K] } & { [K in keyof EclGalleryItem & keyof EclGalleryItemAttributes as `prop:${K}`]?: EclGalleryItem[K] };
         "ecl-grid": Omit<EclGrid, keyof EclGridAttributes> & { [K in keyof EclGrid & keyof EclGridAttributes]?: EclGrid[K] } & { [K in keyof EclGrid & keyof EclGridAttributes as `attr:${K}`]?: EclGridAttributes[K] } & { [K in keyof EclGrid & keyof EclGridAttributes as `prop:${K}`]?: EclGrid[K] };
         "ecl-highlight-box": Omit<EclHighlightBox, keyof EclHighlightBoxAttributes> & { [K in keyof EclHighlightBox & keyof EclHighlightBoxAttributes]?: EclHighlightBox[K] } & { [K in keyof EclHighlightBox & keyof EclHighlightBoxAttributes as `attr:${K}`]?: EclHighlightBoxAttributes[K] } & { [K in keyof EclHighlightBox & keyof EclHighlightBoxAttributes as `prop:${K}`]?: EclHighlightBox[K] };
+        "ecl-highlighted-search": Omit<EclHighlightedSearch, keyof EclHighlightedSearchAttributes> & { [K in keyof EclHighlightedSearch & keyof EclHighlightedSearchAttributes]?: EclHighlightedSearch[K] } & { [K in keyof EclHighlightedSearch & keyof EclHighlightedSearchAttributes as `attr:${K}`]?: EclHighlightedSearchAttributes[K] } & { [K in keyof EclHighlightedSearch & keyof EclHighlightedSearchAttributes as `prop:${K}`]?: EclHighlightedSearch[K] };
         "ecl-icon": Omit<EclIcon, keyof EclIconAttributes> & { [K in keyof EclIcon & keyof EclIconAttributes]?: EclIcon[K] } & { [K in keyof EclIcon & keyof EclIconAttributes as `attr:${K}`]?: EclIconAttributes[K] } & { [K in keyof EclIcon & keyof EclIconAttributes as `prop:${K}`]?: EclIcon[K] };
         "ecl-indicator": Omit<EclIndicator, keyof EclIndicatorAttributes> & { [K in keyof EclIndicator & keyof EclIndicatorAttributes]?: EclIndicator[K] } & { [K in keyof EclIndicator & keyof EclIndicatorAttributes as `attr:${K}`]?: EclIndicatorAttributes[K] } & { [K in keyof EclIndicator & keyof EclIndicatorAttributes as `prop:${K}`]?: EclIndicator[K] };
         "ecl-inpage-navigation": Omit<EclInpageNavigation, keyof EclInpageNavigationAttributes> & { [K in keyof EclInpageNavigation & keyof EclInpageNavigationAttributes]?: EclInpageNavigation[K] } & { [K in keyof EclInpageNavigation & keyof EclInpageNavigationAttributes as `attr:${K}`]?: EclInpageNavigationAttributes[K] } & { [K in keyof EclInpageNavigation & keyof EclInpageNavigationAttributes as `prop:${K}`]?: EclInpageNavigation[K] };
@@ -7253,6 +7789,9 @@ declare namespace LocalJSX {
         "ecl-splash-page": Omit<EclSplashPage, keyof EclSplashPageAttributes> & { [K in keyof EclSplashPage & keyof EclSplashPageAttributes]?: EclSplashPage[K] } & { [K in keyof EclSplashPage & keyof EclSplashPageAttributes as `attr:${K}`]?: EclSplashPageAttributes[K] } & { [K in keyof EclSplashPage & keyof EclSplashPageAttributes as `prop:${K}`]?: EclSplashPage[K] };
         "ecl-splash-page-language-item": Omit<EclSplashPageLanguageItem, keyof EclSplashPageLanguageItemAttributes> & { [K in keyof EclSplashPageLanguageItem & keyof EclSplashPageLanguageItemAttributes]?: EclSplashPageLanguageItem[K] } & { [K in keyof EclSplashPageLanguageItem & keyof EclSplashPageLanguageItemAttributes as `attr:${K}`]?: EclSplashPageLanguageItemAttributes[K] } & { [K in keyof EclSplashPageLanguageItem & keyof EclSplashPageLanguageItemAttributes as `prop:${K}`]?: EclSplashPageLanguageItem[K] };
         "ecl-spotlight": Omit<EclSpotlight, keyof EclSpotlightAttributes> & { [K in keyof EclSpotlight & keyof EclSpotlightAttributes]?: EclSpotlight[K] } & { [K in keyof EclSpotlight & keyof EclSpotlightAttributes as `attr:${K}`]?: EclSpotlightAttributes[K] } & { [K in keyof EclSpotlight & keyof EclSpotlightAttributes as `prop:${K}`]?: EclSpotlight[K] };
+        "ecl-story-card": Omit<EclStoryCard, keyof EclStoryCardAttributes> & { [K in keyof EclStoryCard & keyof EclStoryCardAttributes]?: EclStoryCard[K] } & { [K in keyof EclStoryCard & keyof EclStoryCardAttributes as `attr:${K}`]?: EclStoryCardAttributes[K] } & { [K in keyof EclStoryCard & keyof EclStoryCardAttributes as `prop:${K}`]?: EclStoryCard[K] };
+        "ecl-story-card-item": Omit<EclStoryCardItem, keyof EclStoryCardItemAttributes> & { [K in keyof EclStoryCardItem & keyof EclStoryCardItemAttributes]?: EclStoryCardItem[K] } & { [K in keyof EclStoryCardItem & keyof EclStoryCardItemAttributes as `attr:${K}`]?: EclStoryCardItemAttributes[K] } & { [K in keyof EclStoryCardItem & keyof EclStoryCardItemAttributes as `prop:${K}`]?: EclStoryCardItem[K] };
+        "ecl-story-card-tab": Omit<EclStoryCardTab, keyof EclStoryCardTabAttributes> & { [K in keyof EclStoryCardTab & keyof EclStoryCardTabAttributes]?: EclStoryCardTab[K] } & { [K in keyof EclStoryCardTab & keyof EclStoryCardTabAttributes as `attr:${K}`]?: EclStoryCardTabAttributes[K] } & { [K in keyof EclStoryCardTab & keyof EclStoryCardTabAttributes as `prop:${K}`]?: EclStoryCardTab[K] };
         "ecl-table": Omit<EclTable, keyof EclTableAttributes> & { [K in keyof EclTable & keyof EclTableAttributes]?: EclTable[K] } & { [K in keyof EclTable & keyof EclTableAttributes as `attr:${K}`]?: EclTableAttributes[K] } & { [K in keyof EclTable & keyof EclTableAttributes as `prop:${K}`]?: EclTable[K] };
         "ecl-tabs": Omit<EclTabs, keyof EclTabsAttributes> & { [K in keyof EclTabs & keyof EclTabsAttributes]?: EclTabs[K] } & { [K in keyof EclTabs & keyof EclTabsAttributes as `attr:${K}`]?: EclTabsAttributes[K] } & { [K in keyof EclTabs & keyof EclTabsAttributes as `prop:${K}`]?: EclTabs[K] };
         "ecl-tabs-item": Omit<EclTabsItem, keyof EclTabsItemAttributes> & { [K in keyof EclTabsItem & keyof EclTabsItemAttributes]?: EclTabsItem[K] } & { [K in keyof EclTabsItem & keyof EclTabsItemAttributes as `attr:${K}`]?: EclTabsItemAttributes[K] } & { [K in keyof EclTabsItem & keyof EclTabsItemAttributes as `prop:${K}`]?: EclTabsItem[K] };
@@ -7310,6 +7849,7 @@ declare module "@stencil/core" {
             "ecl-gallery-item": LocalJSX.IntrinsicElements["ecl-gallery-item"] & JSXBase.HTMLAttributes<HTMLEclGalleryItemElement>;
             "ecl-grid": LocalJSX.IntrinsicElements["ecl-grid"] & JSXBase.HTMLAttributes<HTMLEclGridElement>;
             "ecl-highlight-box": LocalJSX.IntrinsicElements["ecl-highlight-box"] & JSXBase.HTMLAttributes<HTMLEclHighlightBoxElement>;
+            "ecl-highlighted-search": LocalJSX.IntrinsicElements["ecl-highlighted-search"] & JSXBase.HTMLAttributes<HTMLEclHighlightedSearchElement>;
             "ecl-icon": LocalJSX.IntrinsicElements["ecl-icon"] & JSXBase.HTMLAttributes<HTMLEclIconElement>;
             "ecl-indicator": LocalJSX.IntrinsicElements["ecl-indicator"] & JSXBase.HTMLAttributes<HTMLEclIndicatorElement>;
             "ecl-inpage-navigation": LocalJSX.IntrinsicElements["ecl-inpage-navigation"] & JSXBase.HTMLAttributes<HTMLEclInpageNavigationElement>;
@@ -7357,6 +7897,9 @@ declare module "@stencil/core" {
             "ecl-splash-page": LocalJSX.IntrinsicElements["ecl-splash-page"] & JSXBase.HTMLAttributes<HTMLEclSplashPageElement>;
             "ecl-splash-page-language-item": LocalJSX.IntrinsicElements["ecl-splash-page-language-item"] & JSXBase.HTMLAttributes<HTMLEclSplashPageLanguageItemElement>;
             "ecl-spotlight": LocalJSX.IntrinsicElements["ecl-spotlight"] & JSXBase.HTMLAttributes<HTMLEclSpotlightElement>;
+            "ecl-story-card": LocalJSX.IntrinsicElements["ecl-story-card"] & JSXBase.HTMLAttributes<HTMLEclStoryCardElement>;
+            "ecl-story-card-item": LocalJSX.IntrinsicElements["ecl-story-card-item"] & JSXBase.HTMLAttributes<HTMLEclStoryCardItemElement>;
+            "ecl-story-card-tab": LocalJSX.IntrinsicElements["ecl-story-card-tab"] & JSXBase.HTMLAttributes<HTMLEclStoryCardTabElement>;
             "ecl-table": LocalJSX.IntrinsicElements["ecl-table"] & JSXBase.HTMLAttributes<HTMLEclTableElement>;
             "ecl-tabs": LocalJSX.IntrinsicElements["ecl-tabs"] & JSXBase.HTMLAttributes<HTMLEclTabsElement>;
             "ecl-tabs-item": LocalJSX.IntrinsicElements["ecl-tabs-item"] & JSXBase.HTMLAttributes<HTMLEclTabsItemElement>;

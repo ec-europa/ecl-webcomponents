@@ -11,7 +11,7 @@ exports[`ecl-gallery renders 1`] = `
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
             <div class="ecl-gallery__icon-zoom-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__icon-zoom sc-ecl-gallery-ec">
-                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--fullscreen wt-icon--placeholder"></span>
+                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--placeholder wt-icon-phosphor--arrows-out-simple"></span>
               </ecl-icon>
             </div>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
@@ -33,12 +33,12 @@ exports[`ecl-gallery renders 1`] = `
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
             <div class="ecl-gallery__icon-zoom-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__icon-zoom sc-ecl-gallery-ec">
-                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--fullscreen wt-icon--placeholder"></span>
+                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--placeholder wt-icon-phosphor--arrows-out-simple"></span>
               </ecl-icon>
             </div>
             <div class="ecl-gallery__item-icon-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__item-icon sc-ecl-gallery-ec">
-                <span class="ecl-gallery__item-icon ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--placeholder wt-icon--play"></span>
+                <span class="ecl-gallery__item-icon ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--placeholder wt-icon-phosphor--play-filled"></span>
               </ecl-icon>
             </div>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
@@ -60,7 +60,7 @@ exports[`ecl-gallery renders 1`] = `
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
             <div class="ecl-gallery__icon-zoom-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__icon-zoom sc-ecl-gallery-ec">
-                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--fullscreen wt-icon--placeholder"></span>
+                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--placeholder wt-icon-phosphor--arrows-out-simple"></span>
               </ecl-icon>
             </div>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image11.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
@@ -76,13 +76,13 @@ exports[`ecl-gallery renders 1`] = `
           </figure>
         </a>
       </ecl-gallery-item>
-      <ecl-gallery-item class="ecl-gallery__item sc-ecl-gallery-ec" el-id="ecl-gallery-demo-test-item-4" id="ecl-gallery-demo-test-item-4" image-alt="Image 3" media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg" media-share-path="/example.html" meta="Copyright, Author, Licence for image 3" role="listitem" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg">
+      <ecl-gallery-item class="ecl-gallery__item ecl-gallery__item--hidden sc-ecl-gallery-ec" el-id="ecl-gallery-demo-test-item-4" id="ecl-gallery-demo-test-item-4" image-alt="Image 3" media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg" media-share-path="/example.html" meta="Copyright, Author, Licence for image 3" role="listitem" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg">
         <!---->
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-id="3" data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
             <div class="ecl-gallery__icon-zoom-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__icon-zoom sc-ecl-gallery-ec">
-                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--fullscreen wt-icon--placeholder"></span>
+                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--placeholder wt-icon-phosphor--arrows-out-simple"></span>
               </ecl-icon>
             </div>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
@@ -98,13 +98,13 @@ exports[`ecl-gallery renders 1`] = `
           </figure>
         </a>
       </ecl-gallery-item>
-      <ecl-gallery-item class="ecl-gallery__item sc-ecl-gallery-ec" el-id="ecl-gallery-demo-test-item-5" id="ecl-gallery-demo-test-item-5" image-alt="Image 3" media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg" media-share-path="/example.html" meta="Copyright, Author, Licence for image 4" role="listitem" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg">
+      <ecl-gallery-item class="ecl-gallery__item ecl-gallery__item--hidden sc-ecl-gallery-ec" el-id="ecl-gallery-demo-test-item-5" id="ecl-gallery-demo-test-item-5" image-alt="Image 3" media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg" media-share-path="/example.html" meta="Copyright, Author, Licence for image 4" role="listitem" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg">
         <!---->
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-id="4" data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
             <div class="ecl-gallery__icon-zoom-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__icon-zoom sc-ecl-gallery-ec">
-                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--fullscreen wt-icon--placeholder"></span>
+                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--placeholder wt-icon-phosphor--arrows-out-simple"></span>
               </ecl-icon>
             </div>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
@@ -120,18 +120,18 @@ exports[`ecl-gallery renders 1`] = `
           </figure>
         </a>
       </ecl-gallery-item>
-      <ecl-gallery-item class="ecl-gallery__item sc-ecl-gallery-ec" el-id="ecl-gallery-demo-test-item-6" id="ecl-gallery-demo-test-item-6" media-share-path="/example.html" meta="Copyright, Author, Licence for video" role="listitem" type="html-video">
+      <ecl-gallery-item class="ecl-gallery__item ecl-gallery__item--hidden sc-ecl-gallery-ec" el-id="ecl-gallery-demo-test-item-6" id="ecl-gallery-demo-test-item-6" media-share-path="/example.html" meta="Copyright, Author, Licence for video" role="listitem" type="html-video">
         <!---->
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-id="5" data-ecl-gallery-item-share="/example.html">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
             <div class="ecl-gallery__icon-zoom-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__icon-zoom sc-ecl-gallery-ec">
-                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--fullscreen wt-icon--placeholder"></span>
+                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--placeholder wt-icon-phosphor--arrows-out-simple"></span>
               </ecl-icon>
             </div>
             <div class="ecl-gallery__item-icon-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__item-icon sc-ecl-gallery-ec">
-                <span class="ecl-gallery__item-icon ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--placeholder wt-icon--play"></span>
+                <span class="ecl-gallery__item-icon ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--placeholder wt-icon-phosphor--play-filled"></span>
               </ecl-icon>
             </div>
             <video class="ecl-gallery__image sc-ecl-gallery-ec" poster="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg" slot="video">
@@ -151,13 +151,13 @@ exports[`ecl-gallery renders 1`] = `
           </figure>
         </a>
       </ecl-gallery-item>
-      <ecl-gallery-item class="ecl-gallery__item sc-ecl-gallery-ec" el-id="ecl-gallery-demo-test-item-7" id="ecl-gallery-demo-test-item-7" image-alt="Image 6" media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg" media-share-path="/example.html" meta="Copyright, Author, Licence for image 6" role="listitem" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg">
+      <ecl-gallery-item class="ecl-gallery__item ecl-gallery__item--hidden sc-ecl-gallery-ec" el-id="ecl-gallery-demo-test-item-7" id="ecl-gallery-demo-test-item-7" image-alt="Image 6" media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg" media-share-path="/example.html" meta="Copyright, Author, Licence for image 6" role="listitem" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg">
         <!---->
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-id="6" data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
             <div class="ecl-gallery__icon-zoom-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__icon-zoom sc-ecl-gallery-ec">
-                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--fullscreen wt-icon--placeholder"></span>
+                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--placeholder wt-icon-phosphor--arrows-out-simple"></span>
               </ecl-icon>
             </div>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
@@ -173,13 +173,13 @@ exports[`ecl-gallery renders 1`] = `
           </figure>
         </a>
       </ecl-gallery-item>
-      <ecl-gallery-item class="ecl-gallery__item sc-ecl-gallery-ec" el-id="ecl-gallery-demo-test-item-8" id="ecl-gallery-demo-test-item-8" image-alt="Image 7" media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg" media-share-path="/example.html" meta="Copyright, Author, Licence for image 7" role="listitem" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg">
+      <ecl-gallery-item class="ecl-gallery__item ecl-gallery__item--hidden sc-ecl-gallery-ec" el-id="ecl-gallery-demo-test-item-8" id="ecl-gallery-demo-test-item-8" image-alt="Image 7" media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg" media-share-path="/example.html" meta="Copyright, Author, Licence for image 7" role="listitem" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg">
         <!---->
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-id="7" data-ecl-gallery-item-share="/example.html" href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
             <div class="ecl-gallery__icon-zoom-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__icon-zoom sc-ecl-gallery-ec">
-                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--fullscreen wt-icon--placeholder"></span>
+                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--placeholder wt-icon-phosphor--arrows-out-simple"></span>
               </ecl-icon>
             </div>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
@@ -195,13 +195,13 @@ exports[`ecl-gallery renders 1`] = `
           </figure>
         </a>
       </ecl-gallery-item>
-      <ecl-gallery-item class="ecl-gallery__item sc-ecl-gallery-ec" el-id="ecl-gallery-demo-test-item-9" id="ecl-gallery-demo-test-item-9" image-alt="Image 8" media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg" media-iframe-href="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&amp;lg=EN" media-share-path="/example.html" meta="Copyright, Author, Licence for image 8" role="listitem" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg">
+      <ecl-gallery-item class="ecl-gallery__item ecl-gallery__item--hidden sc-ecl-gallery-ec" el-id="ecl-gallery-demo-test-item-9" id="ecl-gallery-demo-test-item-9" image-alt="Image 8" media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg" media-iframe-href="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&amp;lg=EN" media-share-path="/example.html" meta="Copyright, Author, Licence for image 8" role="listitem" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg">
         <!---->
         <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-embed-src="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&amp;lg=EN" data-ecl-gallery-item-id="8" data-ecl-gallery-item-share="/example.html" href="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&amp;lg=EN">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
             <div class="ecl-gallery__icon-zoom-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__icon-zoom sc-ecl-gallery-ec">
-                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--fullscreen wt-icon--placeholder"></span>
+                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--placeholder wt-icon-phosphor--arrows-out-simple"></span>
               </ecl-icon>
             </div>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
@@ -223,7 +223,7 @@ exports[`ecl-gallery renders 1`] = `
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
             <div class="ecl-gallery__icon-zoom-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__icon-zoom sc-ecl-gallery-ec">
-                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--fullscreen wt-icon--placeholder"></span>
+                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--placeholder wt-icon-phosphor--arrows-out-simple"></span>
               </ecl-icon>
             </div>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image1.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
@@ -245,7 +245,7 @@ exports[`ecl-gallery renders 1`] = `
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
             <div class="ecl-gallery__icon-zoom-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__icon-zoom sc-ecl-gallery-ec">
-                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--fullscreen wt-icon--placeholder"></span>
+                <span class="ecl-gallery__icon-zoom ecl-icon ecl-icon--s sc-ecl-gallery-ec wt-icon--placeholder wt-icon-phosphor--arrows-out-simple"></span>
               </ecl-icon>
             </div>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>

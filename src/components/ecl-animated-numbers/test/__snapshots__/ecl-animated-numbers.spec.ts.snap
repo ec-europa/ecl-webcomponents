@@ -9,7 +9,9 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
   <div class="ecl-animated-numbers">
     <article class="ecl-animated-numbers__wrapper">
       <div class="ecl-animated-numbers__items" role="list">
-        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." icon="users" item-prefix="" item-suffix="€" item-suffix-label="euro" role="listitem" value="213">
+        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." icon="users" item-prefix="" item-suffix="€" item-suffix-label="euro" role="listitem" sources="[
+                  { &quot;label&quot;: &quot;DG CNECT&quot;, &quot;path&quot;: &quot;/example.html&quot; }
+                ]" sources-label="Sources:" value="213">
           <div class="ecl-animated-number__header sc-ecl-animated-numbers-ec">
             <div class="ecl-animated-number__category sc-ecl-animated-numbers-ec">
               Revenue
@@ -29,12 +31,29 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
                 </span>
               </span>
             </span>
-          </div>
-          <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </div>
+            <div class="ecl-animated-numbers__sources sc-ecl-animated-numbers-ec">
+              <span class="ecl-animated-numbers__sources-label sc-ecl-animated-numbers-ec">
+                Sources:
+              </span>
+              <ul class="ecl-animated-numbers__sources-list sc-ecl-animated-numbers-ec">
+                <li class="ecl-animated-numbers__sources-item sc-ecl-animated-numbers-ec">
+                  <ecl-link style-class="ecl-animated-numbers__source sc-ecl-animated-numbers-ec">
+                    <!---->
+                    <a class="ecl-animated-numbers__source ecl-link sc-ecl-animated-numbers-ec" href="/example.html">
+                      DG CNECT
+                    </a>
+                  </ecl-link>
+                </li>
+              </ul>
+            </div>
           </div>
         </ecl-animated-numbers-item>
-        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." icon="currency-eur" item-prefix="billion" item-suffix="€" item-suffix-label="euro" role="listitem" value="888.2">
+        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." icon="currency-eur" item-prefix="billion" item-suffix="€" item-suffix-label="euro" role="listitem" sources="[
+                  { &quot;label&quot;: &quot;DG CNECT&quot;, &quot;path&quot;: &quot;/example.html&quot; }
+                ]" sources-label="Sources:" value="888.2">
           <div class="ecl-animated-number__header sc-ecl-animated-numbers-ec">
             <div class="ecl-animated-number__category sc-ecl-animated-numbers-ec">
               Revenue
@@ -55,12 +74,29 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
                 </span>
               </span>
             </span>
-          </div>
-          <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div class="ecl-animated-numbers__sources sc-ecl-animated-numbers-ec">
+              <span class="ecl-animated-numbers__sources-label sc-ecl-animated-numbers-ec">
+                Sources:
+              </span>
+              <ul class="ecl-animated-numbers__sources-list sc-ecl-animated-numbers-ec">
+                <li class="ecl-animated-numbers__sources-item sc-ecl-animated-numbers-ec">
+                  <ecl-link style-class="ecl-animated-numbers__source sc-ecl-animated-numbers-ec">
+                    <!---->
+                    <a class="ecl-animated-numbers__source ecl-link sc-ecl-animated-numbers-ec" href="/example.html">
+                      DG CNECT
+                    </a>
+                  </ecl-link>
+                </li>
+              </ul>
+            </div>
           </div>
         </ecl-animated-numbers-item>
-        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." icon="trend-up" item-prefix="million" item-suffix="<" item-suffix-label="less than" role="listitem" value="975">
+        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." icon="trend-up" item-prefix="million" item-suffix="<" item-suffix-label="less than" role="listitem" sources="[
+                  { &quot;label&quot;: &quot;DG CNECT&quot;, &quot;path&quot;: &quot;/example.html&quot; }
+                ]" sources-label="Sources:" value="975">
           <div class="ecl-animated-number__header sc-ecl-animated-numbers-ec">
             <div class="ecl-animated-number__category sc-ecl-animated-numbers-ec">
               Revenue
@@ -81,12 +117,29 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
                 </span>
               </span>
             </span>
-          </div>
-          <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </div>
+            <div class="ecl-animated-numbers__sources sc-ecl-animated-numbers-ec">
+              <span class="ecl-animated-numbers__sources-label sc-ecl-animated-numbers-ec">
+                Sources:
+              </span>
+              <ul class="ecl-animated-numbers__sources-list sc-ecl-animated-numbers-ec">
+                <li class="ecl-animated-numbers__sources-item sc-ecl-animated-numbers-ec">
+                  <ecl-link style-class="ecl-animated-numbers__source sc-ecl-animated-numbers-ec">
+                    <!---->
+                    <a class="ecl-animated-numbers__source ecl-link sc-ecl-animated-numbers-ec" href="/example.html">
+                      DG CNECT
+                    </a>
+                  </ecl-link>
+                </li>
+              </ul>
+            </div>
           </div>
         </ecl-animated-numbers-item>
-        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." icon="pulse" item-prefix="€" item-prefix-label="euro" item-suffix="billions" role="listitem" value="1250">
+        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit." icon="pulse" item-prefix="€" item-prefix-label="euro" item-suffix="billions" role="listitem" sources="[
+                  { &quot;label&quot;: &quot;DG CNECT&quot;, &quot;path&quot;: &quot;/example.html&quot; }
+                ]" sources-label="Sources:" value="1250">
           <div class="ecl-animated-number__header sc-ecl-animated-numbers-ec">
             <div class="ecl-animated-number__category sc-ecl-animated-numbers-ec">
               Revenue
@@ -107,12 +160,29 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
               </span>
               <span class="ecl-animated-number__suffix sc-ecl-animated-numbers-ec"></span>
             </span>
-          </div>
-          <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+            <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+            </div>
+            <div class="ecl-animated-numbers__sources sc-ecl-animated-numbers-ec">
+              <span class="ecl-animated-numbers__sources-label sc-ecl-animated-numbers-ec">
+                Sources:
+              </span>
+              <ul class="ecl-animated-numbers__sources-list sc-ecl-animated-numbers-ec">
+                <li class="ecl-animated-numbers__sources-item sc-ecl-animated-numbers-ec">
+                  <ecl-link style-class="ecl-animated-numbers__source sc-ecl-animated-numbers-ec">
+                    <!---->
+                    <a class="ecl-animated-numbers__source ecl-link sc-ecl-animated-numbers-ec" href="/example.html">
+                      DG CNECT
+                    </a>
+                  </ecl-link>
+                </li>
+              </ul>
+            </div>
           </div>
         </ecl-animated-numbers-item>
-        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Curabitur ut mauris quam. Fusce non consequat ipsum" icon="atom" item-prefix="€" item-prefix-label="euro" item-suffix="millions" role="listitem" value="4350">
+        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Curabitur ut mauris quam. Fusce non consequat ipsum" icon="atom" item-prefix="€" item-prefix-label="euro" item-suffix="millions" role="listitem" sources="[
+                  { &quot;label&quot;: &quot;DG CNECT&quot;, &quot;path&quot;: &quot;/example.html&quot; }
+                ]" sources-label="Sources:" value="4350">
           <div class="ecl-animated-number__header sc-ecl-animated-numbers-ec">
             <div class="ecl-animated-number__category sc-ecl-animated-numbers-ec">
               Revenue
@@ -133,12 +203,29 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
               </span>
               <span class="ecl-animated-number__suffix sc-ecl-animated-numbers-ec"></span>
             </span>
-          </div>
-          <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
-            Curabitur ut mauris quam. Fusce non consequat ipsum
+            <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
+              Curabitur ut mauris quam. Fusce non consequat ipsum
+            </div>
+            <div class="ecl-animated-numbers__sources sc-ecl-animated-numbers-ec">
+              <span class="ecl-animated-numbers__sources-label sc-ecl-animated-numbers-ec">
+                Sources:
+              </span>
+              <ul class="ecl-animated-numbers__sources-list sc-ecl-animated-numbers-ec">
+                <li class="ecl-animated-numbers__sources-item sc-ecl-animated-numbers-ec">
+                  <ecl-link style-class="ecl-animated-numbers__source sc-ecl-animated-numbers-ec">
+                    <!---->
+                    <a class="ecl-animated-numbers__source ecl-link sc-ecl-animated-numbers-ec" href="/example.html">
+                      DG CNECT
+                    </a>
+                  </ecl-link>
+                </li>
+              </ul>
+            </div>
           </div>
         </ecl-animated-numbers-item>
-        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Curabitur ut mauris quam. Fusce non consequat ipsum" icon="bell-simple" item-prefix="€" item-prefix-label="euro" item-suffix="billions" role="listitem" value="125">
+        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Curabitur ut mauris quam. Fusce non consequat ipsum" icon="bell-simple" item-prefix="€" item-prefix-label="euro" item-suffix="billions" role="listitem" sources="[
+                  { &quot;label&quot;: &quot;DG CNECT&quot;, &quot;path&quot;: &quot;/example.html&quot; }
+                ]" sources-label="Sources:" value="125">
           <div class="ecl-animated-number__header sc-ecl-animated-numbers-ec">
             <div class="ecl-animated-number__category sc-ecl-animated-numbers-ec">
               Revenue
@@ -159,12 +246,29 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
               </span>
               <span class="ecl-animated-number__suffix sc-ecl-animated-numbers-ec"></span>
             </span>
-          </div>
-          <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
-            Curabitur ut mauris quam. Fusce non consequat ipsum
+            <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
+              Curabitur ut mauris quam. Fusce non consequat ipsum
+            </div>
+            <div class="ecl-animated-numbers__sources sc-ecl-animated-numbers-ec">
+              <span class="ecl-animated-numbers__sources-label sc-ecl-animated-numbers-ec">
+                Sources:
+              </span>
+              <ul class="ecl-animated-numbers__sources-list sc-ecl-animated-numbers-ec">
+                <li class="ecl-animated-numbers__sources-item sc-ecl-animated-numbers-ec">
+                  <ecl-link style-class="ecl-animated-numbers__source sc-ecl-animated-numbers-ec">
+                    <!---->
+                    <a class="ecl-animated-numbers__source ecl-link sc-ecl-animated-numbers-ec" href="/example.html">
+                      DG CNECT
+                    </a>
+                  </ecl-link>
+                </li>
+              </ul>
+            </div>
           </div>
         </ecl-animated-numbers-item>
-        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Integer pharetra lacinia tristique" icon="boat" item-prefix="€" item-prefix-label="euro" item-suffix="billions" role="listitem" value="8765">
+        <ecl-animated-numbers-item category="Revenue" class="ecl-animated-number sc-ecl-animated-numbers-ec" description="Integer pharetra lacinia tristique" icon="boat" item-prefix="€" item-prefix-label="euro" item-suffix="billions" role="listitem" sources="[
+                  { &quot;label&quot;: &quot;DG CNECT&quot;, &quot;path&quot;: &quot;/example.html&quot; }
+                ]" sources-label="Sources:" value="8765">
           <div class="ecl-animated-number__header sc-ecl-animated-numbers-ec">
             <div class="ecl-animated-number__category sc-ecl-animated-numbers-ec">
               Revenue
@@ -185,9 +289,24 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
               </span>
               <span class="ecl-animated-number__suffix sc-ecl-animated-numbers-ec"></span>
             </span>
-          </div>
-          <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
-            Integer pharetra lacinia tristique
+            <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
+              Integer pharetra lacinia tristique
+            </div>
+            <div class="ecl-animated-numbers__sources sc-ecl-animated-numbers-ec">
+              <span class="ecl-animated-numbers__sources-label sc-ecl-animated-numbers-ec">
+                Sources:
+              </span>
+              <ul class="ecl-animated-numbers__sources-list sc-ecl-animated-numbers-ec">
+                <li class="ecl-animated-numbers__sources-item sc-ecl-animated-numbers-ec">
+                  <ecl-link style-class="ecl-animated-numbers__source sc-ecl-animated-numbers-ec">
+                    <!---->
+                    <a class="ecl-animated-numbers__source ecl-link sc-ecl-animated-numbers-ec" href="/example.html">
+                      DG CNECT
+                    </a>
+                  </ecl-link>
+                </li>
+              </ul>
+            </div>
           </div>
         </ecl-animated-numbers-item>
       </div>

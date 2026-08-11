@@ -30,8 +30,9 @@
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
  - [ecl-carousel](../ecl-carousel)
  - [ecl-expandable](../ecl-expandable)
- - [ecl-file-translations](../ecl-file)
+ - [ecl-file](../ecl-file)
  - [ecl-gallery](../ecl-gallery)
+ - [ecl-highlighted-search](../ecl-highlighted-search)
  - [ecl-media-container](../ecl-media-container)
  - [ecl-mega-menu](../ecl-mega-menu)
  - [ecl-mega-menu-item](../ecl-mega-menu)
@@ -47,6 +48,7 @@
  - [ecl-select](../ecl-select)
  - [ecl-site-header](../ecl-site-header)
  - [ecl-slogan-ticker](../ecl-slogan-ticker)
+ - [ecl-story-card](../ecl-story-card)
  - [ecl-tabs](../ecl-tabs)
  - [ecl-timeline-item](../ecl-timeline)
 
@@ -62,8 +64,9 @@ graph TD;
   ecl-breadcrumb-item --> ecl-button
   ecl-carousel --> ecl-button
   ecl-expandable --> ecl-button
-  ecl-file-translations --> ecl-button
+  ecl-file --> ecl-button
   ecl-gallery --> ecl-button
+  ecl-highlighted-search --> ecl-button
   ecl-media-container --> ecl-button
   ecl-mega-menu --> ecl-button
   ecl-mega-menu-item --> ecl-button
@@ -79,6 +82,7 @@ graph TD;
   ecl-select --> ecl-button
   ecl-site-header --> ecl-button
   ecl-slogan-ticker --> ecl-button
+  ecl-story-card --> ecl-button
   ecl-tabs --> ecl-button
   ecl-timeline-item --> ecl-button
   style ecl-button fill:#f9f,stroke:#333,stroke-width:4px

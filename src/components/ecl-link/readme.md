@@ -34,11 +34,13 @@
 ### Used by
 
  - [ecl-animated-numbers](../ecl-animated-numbers)
+ - [ecl-animated-numbers-item](../ecl-animated-numbers)
  - [ecl-banner](../ecl-banner)
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
  - [ecl-category-filter-item](../ecl-category-filter)
  - [ecl-description-list-definition](../ecl-description-list)
  - [ecl-fact-figures](../ecl-fact-figures)
+ - [ecl-fact-figures-item](../ecl-fact-figures)
  - [ecl-featured-item](../ecl-featured-item)
  - [ecl-file](../ecl-file)
  - [ecl-file-translations-item](../ecl-file)
@@ -57,6 +59,7 @@
  - [ecl-site-header](../ecl-site-header)
  - [ecl-social-media-follow-item](../ecl-social-media-follow)
  - [ecl-splash-page](../ecl-splash-page)
+ - [ecl-story-card-item](../ecl-story-card)
  - [ecl-tabs-item](../ecl-tabs)
  - [ecl-text-media](../ecl-text-media)
 
@@ -71,11 +74,13 @@ graph TD;
   ecl-link --> ecl-icon
   ecl-link --> ecl-indicator
   ecl-animated-numbers --> ecl-link
+  ecl-animated-numbers-item --> ecl-link
   ecl-banner --> ecl-link
   ecl-breadcrumb-item --> ecl-link
   ecl-category-filter-item --> ecl-link
   ecl-description-list-definition --> ecl-link
   ecl-fact-figures --> ecl-link
+  ecl-fact-figures-item --> ecl-link
   ecl-featured-item --> ecl-link
   ecl-file --> ecl-link
   ecl-file-translations-item --> ecl-link
@@ -94,6 +99,7 @@ graph TD;
   ecl-site-header --> ecl-link
   ecl-social-media-follow-item --> ecl-link
   ecl-splash-page --> ecl-link
+  ecl-story-card-item --> ecl-link
   ecl-tabs-item --> ecl-link
   ecl-text-media --> ecl-link
   style ecl-link fill:#f9f,stroke:#333,stroke-width:4px

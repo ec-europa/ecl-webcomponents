@@ -1,5 +1,5 @@
 diff --git a/select.js b/select.js
-index 6f1de565807f1c91e5ac87117d8b4c60cc383ae8..37e8a9fc241d40bc7e15e1a846812ce0ce8ab8d1 100644
+index 5f3f041b4aafd937a42d34015fe923bcf6a8f8fb..f07d29eb5883bca578c341f163856f111e1a5106 100644
 --- a/select.js
 +++ b/select.js
 @@ -1,5 +1,5 @@
@@ -9,7 +9,7 @@ index 6f1de565807f1c91e5ac87117d8b4c60cc383ae8..37e8a9fc241d40bc7e15e1a846812ce0
  import EventManager from '@ecl/event-manager';
  
  const system = getSystem();
-@@ -568,7 +568,7 @@ export class Select {
+@@ -591,7 +591,7 @@ export class Select {
        }
        this.visibleOptions = this.checkboxes;
  

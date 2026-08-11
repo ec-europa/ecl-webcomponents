@@ -8,105 +8,207 @@ exports[`ecl-fact-figures renders 1`] = `
   <!---->
   <div class="ecl-fact-figures ecl-fact-figures--col-4 ecl-fact-figures--font-m">
     <div class="ecl-fact-figures__items">
-      <ecl-fact-figures-item icon="infographic" item-title="Lorem ipsum" value="00.0 million">
+      <ecl-fact-figures-item icon="infographic" item-title="Lorem ipsum" sources="[
+            { &quot;label&quot;: &quot;DG CNECT&quot;, &quot;path&quot;: &quot;/example.html&quot; }
+          ]" sources-label="Sources:" value="00.0 million">
         <!---->
         <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
-          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--infographic wt-icon--placeholder"></span>
+          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-ec">
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-ec wt-icon--infographic wt-icon--placeholder"></span>
           </ecl-icon>
-          <div class="ecl-fact-figures__value">
+          <div class="ecl-fact-figures__value sc-ecl-fact-figures-ec">
             00.0 million
-            <span class="ecl-fact-figures__title">
+            <span class="ecl-fact-figures__title sc-ecl-fact-figures-ec">
               Lorem ipsum
             </span>
           </div>
-          <div class="ecl-fact-figures__description">
+          <div class="ecl-fact-figures__description sc-ecl-fact-figures-ec">
             Nunc condimentum sapien ut nibh finibus suscipit vitae at justo. Morbi quis odio faucibus, commodo tortor id, elementum libero.
+          </div>
+          <div class="ecl-fact-figures__sources sc-ecl-fact-figures-ec">
+            <span class="ecl-fact-figures__sources-label sc-ecl-fact-figures-ec">
+              Sources:
+            </span>
+            <ul class="ecl-fact-figures__sources-list sc-ecl-fact-figures-ec">
+              <li class="ecl-fact-figures__sources-item sc-ecl-fact-figures-ec">
+                <ecl-link style-class="ecl-fact-figures__source sc-ecl-fact-figures-ec">
+                  <!---->
+                  <a class="ecl-fact-figures__source ecl-link sc-ecl-fact-figures-ec" href="/example.html">
+                    DG CNECT
+                  </a>
+                </ecl-link>
+              </li>
+            </ul>
           </div>
         </div>
       </ecl-fact-figures-item>
-      <ecl-fact-figures-item icon="spreadsheet" item-title="Sed hendrerit" theme="ec" value="00.0 million">
+      <ecl-fact-figures-item icon="spreadsheet" item-title="Sed hendrerit" sources="[
+            { &quot;label&quot;: &quot;DG CNECT&quot;, &quot;path&quot;: &quot;/example.html&quot; }
+          ]" sources-label="Sources:" value="00.0 million">
         <!---->
         <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
-          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--placeholder wt-icon--spreadsheet"></span>
+          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-ec">
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-ec wt-icon--placeholder wt-icon--spreadsheet"></span>
           </ecl-icon>
-          <div class="ecl-fact-figures__value">
+          <div class="ecl-fact-figures__value sc-ecl-fact-figures-ec">
             00.0 million
-            <span class="ecl-fact-figures__title">
+            <span class="ecl-fact-figures__title sc-ecl-fact-figures-ec">
               Sed hendrerit
             </span>
           </div>
-          <div class="ecl-fact-figures__description">
+          <div class="ecl-fact-figures__description sc-ecl-fact-figures-ec">
             Turpis varius congue venenatis, erat dui feugiat felis.
+          </div>
+          <div class="ecl-fact-figures__sources sc-ecl-fact-figures-ec">
+            <span class="ecl-fact-figures__sources-label sc-ecl-fact-figures-ec">
+              Sources:
+            </span>
+            <ul class="ecl-fact-figures__sources-list sc-ecl-fact-figures-ec">
+              <li class="ecl-fact-figures__sources-item sc-ecl-fact-figures-ec">
+                <ecl-link style-class="ecl-fact-figures__source sc-ecl-fact-figures-ec">
+                  <!---->
+                  <a class="ecl-fact-figures__source ecl-link sc-ecl-fact-figures-ec" href="/example.html">
+                    DG CNECT
+                  </a>
+                </ecl-link>
+              </li>
+            </ul>
           </div>
         </div>
       </ecl-fact-figures-item>
-      <ecl-fact-figures-item icon="growth" item-title="Donec suscipit interdum augue, ac dapibus eros finibus" value="00.0 million">
+      <ecl-fact-figures-item icon="growth" item-title="Donec suscipit interdum augue, ac dapibus eros finibus" sources="[
+            { &quot;label&quot;: &quot;DG CNECT&quot;, &quot;path&quot;: &quot;/example.html&quot; }
+          ]" sources-label="Sources:" value="00.0 million">
         <!---->
         <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
-          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--growth wt-icon--placeholder"></span>
+          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-ec">
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-ec wt-icon--growth wt-icon--placeholder"></span>
           </ecl-icon>
-          <div class="ecl-fact-figures__value">
+          <div class="ecl-fact-figures__value sc-ecl-fact-figures-ec">
             00.0 million
-            <span class="ecl-fact-figures__title">
+            <span class="ecl-fact-figures__title sc-ecl-fact-figures-ec">
               Donec suscipit interdum augue, ac dapibus eros finibus
             </span>
           </div>
-          <div class="ecl-fact-figures__description">
+          <div class="ecl-fact-figures__description sc-ecl-fact-figures-ec">
             Cras vestibulum efficitur mi, quis porta tellus rutrum ut. Quisque at pulvinar sem.
+          </div>
+          <div class="ecl-fact-figures__sources sc-ecl-fact-figures-ec">
+            <span class="ecl-fact-figures__sources-label sc-ecl-fact-figures-ec">
+              Sources:
+            </span>
+            <ul class="ecl-fact-figures__sources-list sc-ecl-fact-figures-ec">
+              <li class="ecl-fact-figures__sources-item sc-ecl-fact-figures-ec">
+                <ecl-link style-class="ecl-fact-figures__source sc-ecl-fact-figures-ec">
+                  <!---->
+                  <a class="ecl-fact-figures__source ecl-link sc-ecl-fact-figures-ec" href="/example.html">
+                    DG CNECT
+                  </a>
+                </ecl-link>
+              </li>
+            </ul>
           </div>
         </div>
       </ecl-fact-figures-item>
-      <ecl-fact-figures-item icon="digital" item-title="Aenean dapibus" value="00.0 million">
+      <ecl-fact-figures-item icon="digital" item-title="Aenean dapibus" sources="[
+            { &quot;label&quot;: &quot;DG CNECT&quot;, &quot;path&quot;: &quot;/example.html&quot; }
+          ]" sources-label="Sources:" value="00.0 million">
         <!---->
         <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
-          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--digital wt-icon--placeholder"></span>
+          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-ec">
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-ec wt-icon--digital wt-icon--placeholder"></span>
           </ecl-icon>
-          <div class="ecl-fact-figures__value">
+          <div class="ecl-fact-figures__value sc-ecl-fact-figures-ec">
             00.0 million
-            <span class="ecl-fact-figures__title">
+            <span class="ecl-fact-figures__title sc-ecl-fact-figures-ec">
               Aenean dapibus
             </span>
           </div>
-          <div class="ecl-fact-figures__description">
+          <div class="ecl-fact-figures__description sc-ecl-fact-figures-ec">
             Aliquam lacinia diam eu sem malesuada, in interdum ante bibendum.
           </div>
+          <div class="ecl-fact-figures__sources sc-ecl-fact-figures-ec">
+            <span class="ecl-fact-figures__sources-label sc-ecl-fact-figures-ec">
+              Sources:
+            </span>
+            <ul class="ecl-fact-figures__sources-list sc-ecl-fact-figures-ec">
+              <li class="ecl-fact-figures__sources-item sc-ecl-fact-figures-ec">
+                <ecl-link style-class="ecl-fact-figures__source sc-ecl-fact-figures-ec">
+                  <!---->
+                  <a class="ecl-fact-figures__source ecl-link sc-ecl-fact-figures-ec" href="/example.html">
+                    DG CNECT
+                  </a>
+                </ecl-link>
+              </li>
+            </ul>
+          </div>
         </div>
       </ecl-fact-figures-item>
-      <ecl-fact-figures-item ,="" icon="regulation" item-title="Aliquam faucibus nulla eget eleifend" value="00.0 million">
+      <ecl-fact-figures-item ,="" icon="regulation" item-title="Aliquam faucibus nulla eget eleifend" sources="[
+            { &quot;label&quot;: &quot;DG CNECT&quot;, &quot;path&quot;: &quot;/example.html&quot; }
+          ]" sources-label="Sources:" value="00.0 million">
         <!---->
         <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
-          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--placeholder wt-icon--regulation"></span>
+          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-ec">
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-ec wt-icon--placeholder wt-icon--regulation"></span>
           </ecl-icon>
-          <div class="ecl-fact-figures__value">
+          <div class="ecl-fact-figures__value sc-ecl-fact-figures-ec">
             00.0 million
-            <span class="ecl-fact-figures__title">
+            <span class="ecl-fact-figures__title sc-ecl-fact-figures-ec">
               Aliquam faucibus nulla eget eleifend
             </span>
           </div>
-          <div class="ecl-fact-figures__description">
+          <div class="ecl-fact-figures__description sc-ecl-fact-figures-ec">
             Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec lectus tortor.
+          </div>
+          <div class="ecl-fact-figures__sources sc-ecl-fact-figures-ec">
+            <span class="ecl-fact-figures__sources-label sc-ecl-fact-figures-ec">
+              Sources:
+            </span>
+            <ul class="ecl-fact-figures__sources-list sc-ecl-fact-figures-ec">
+              <li class="ecl-fact-figures__sources-item sc-ecl-fact-figures-ec">
+                <ecl-link style-class="ecl-fact-figures__source sc-ecl-fact-figures-ec">
+                  <!---->
+                  <a class="ecl-fact-figures__source ecl-link sc-ecl-fact-figures-ec" href="/example.html">
+                    DG CNECT
+                  </a>
+                </ecl-link>
+              </li>
+            </ul>
           </div>
         </div>
       </ecl-fact-figures-item>
-      <ecl-fact-figures-item icon="image" item-title="Aliquam faucibus nulla eget eleifend" value="00.0 million">
+      <ecl-fact-figures-item icon="image" item-title="Aliquam faucibus nulla eget eleifend" sources="[
+            { &quot;label&quot;: &quot;DG CNECT&quot;, &quot;path&quot;: &quot;/example.html&quot; }
+          ]" sources-label="Sources:" value="00.0 million">
         <!---->
         <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
-          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--image wt-icon--placeholder"></span>
+          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-ec">
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-ec wt-icon--image wt-icon--placeholder"></span>
           </ecl-icon>
-          <div class="ecl-fact-figures__value">
+          <div class="ecl-fact-figures__value sc-ecl-fact-figures-ec">
             00.0 million
-            <span class="ecl-fact-figures__title">
+            <span class="ecl-fact-figures__title sc-ecl-fact-figures-ec">
               Aliquam faucibus nulla eget eleifend
             </span>
           </div>
-          <div class="ecl-fact-figures__description">
+          <div class="ecl-fact-figures__description sc-ecl-fact-figures-ec">
             Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec lectus tortor.
+          </div>
+          <div class="ecl-fact-figures__sources sc-ecl-fact-figures-ec">
+            <span class="ecl-fact-figures__sources-label sc-ecl-fact-figures-ec">
+              Sources:
+            </span>
+            <ul class="ecl-fact-figures__sources-list sc-ecl-fact-figures-ec">
+              <li class="ecl-fact-figures__sources-item sc-ecl-fact-figures-ec">
+                <ecl-link style-class="ecl-fact-figures__source sc-ecl-fact-figures-ec">
+                  <!---->
+                  <a class="ecl-fact-figures__source ecl-link sc-ecl-fact-figures-ec" href="/example.html">
+                    DG CNECT
+                  </a>
+                </ecl-link>
+              </li>
+            </ul>
           </div>
         </div>
       </ecl-fact-figures-item>
@@ -160,13 +262,13 @@ exports[`ecl-fact-figures renders correctly without a value and with a title  1`
       <ecl-fact-figures-item icon="infographic" item-title="Lorem ipsum">
         <!---->
         <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
-          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--infographic wt-icon--placeholder"></span>
+          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-ec">
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-ec wt-icon--infographic wt-icon--placeholder"></span>
           </ecl-icon>
-          <div class="ecl-fact-figures__title">
+          <div class="ecl-fact-figures__title sc-ecl-fact-figures-ec">
             Lorem ipsum
           </div>
-          <div class="ecl-fact-figures__description">
+          <div class="ecl-fact-figures__description sc-ecl-fact-figures-ec">
             Nunc condimentum sapien ut nibh finibus suscipit vitae at justo. Morbi quis odio faucibus, commodo tortor id, elementum libero.
           </div>
         </div>
@@ -174,13 +276,13 @@ exports[`ecl-fact-figures renders correctly without a value and with a title  1`
       <ecl-fact-figures-item icon="spreadsheet" item-title="Sed hendrerit" theme="ec">
         <!---->
         <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
-          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--placeholder wt-icon--spreadsheet"></span>
+          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-ec">
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-ec wt-icon--placeholder wt-icon--spreadsheet"></span>
           </ecl-icon>
-          <div class="ecl-fact-figures__title">
+          <div class="ecl-fact-figures__title sc-ecl-fact-figures-ec">
             Sed hendrerit
           </div>
-          <div class="ecl-fact-figures__description">
+          <div class="ecl-fact-figures__description sc-ecl-fact-figures-ec">
             Turpis varius congue venenatis, erat dui feugiat felis.
           </div>
         </div>
@@ -188,13 +290,13 @@ exports[`ecl-fact-figures renders correctly without a value and with a title  1`
       <ecl-fact-figures-item icon="growth" item-title="Donec suscipit interdum augue, ac dapibus eros finibus">
         <!---->
         <div class="ecl-fact-figures__item ecl-fact-figures__item--font-m sc-ecl-fact-figures-ec">
-          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-item-ec">
-            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-item-ec wt-icon--growth wt-icon--placeholder"></span>
+          <ecl-icon style-class="ecl-fact-figures__icon sc-ecl-fact-figures-ec">
+            <span class="ecl-fact-figures__icon ecl-icon ecl-icon--2xl sc-ecl-fact-figures-ec wt-icon--growth wt-icon--placeholder"></span>
           </ecl-icon>
-          <div class="ecl-fact-figures__title">
+          <div class="ecl-fact-figures__title sc-ecl-fact-figures-ec">
             Donec suscipit interdum augue, ac dapibus eros finibus
           </div>
-          <div class="ecl-fact-figures__description">
+          <div class="ecl-fact-figures__description sc-ecl-fact-figures-ec">
             Cras vestibulum efficitur mi, quis porta tellus rutrum ut. Quisque at pulvinar sem.
           </div>
         </div>

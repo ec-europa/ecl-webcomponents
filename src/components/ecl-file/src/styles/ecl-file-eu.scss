@@ -3,41 +3,38 @@
 @use '@ecl/grid/grid' with (
   $theme: theme.$theme
 );
+@use '@ecl/mixins-typography/mixins' with (
+  $theme: theme.$theme,
+  $typography: var.$typography
+);
 @use '@ecl/file/file' with (
   $theme: theme.$theme,
   $file: var.$file
 );
 
-.ecl-file__icon {
-  fill: #0e47cb !important;
-}
-
-.ecl-file__taxonomy * {
-  margin-top: 0 !important;
-}
-
-.ecl-file__container > *:first-child {
-  align-self: start !important;
-}
-
-.ecl-link__icon--after {
+.ecl-link__icon--after .ecl-link__icon {
   margin-inline-start: 0.5rem !important;
-}
-
-.ecl-file__translation-container > *:first-child {
-  align-self: flex-end;
-}
-
-.ecl-link--icon-after .ecl-icon.sc-ecl-icon-eu {
-  margin-inline-start: 0.5rem;
 }
 
 .ecl-file__description {
   white-space: normal;
 }
 
+.ecl-file__taxonomy * {
+  margin-top: 0 !important;
+}
+
+.ecl-file .ecl-file__translation-toggle {
+  margin-block: 1rem;
+  margin-inline-end: var(--s-xs);
+}
+
 @container ecl-file (width >= 768px) {
-  :host .ecl-file--thumbnail.sc-ecl-file-eu .ecl-file__container {
+  :host .ecl-file__info {
     flex-direction: row;
+  }
+
+  :host .ecl-file__footer {
+    justify-content: flex-end;
   }
 }

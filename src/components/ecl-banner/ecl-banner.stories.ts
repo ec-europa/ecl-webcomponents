@@ -9,6 +9,8 @@ const getArgs = () => ({
   ctaLink: "/example.html",
   credit: '© Copyright or credit',
   image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg',
+  imageAnchor: '',
+  imageAlt: 'alternative text for the image',
   size: 'm',
   fullWidth: false,
   horizontal: 'left',
@@ -97,6 +99,16 @@ const getArgTypes = () => ({
   image: {
     type: { name: 'string' },
     description: 'Image path or url',
+  },
+  imageAlt: {
+    name: 'image-alt',
+    type: { name: 'string' },
+    description: 'Image alternative text',
+  },
+  imageAnchor: {
+    name: 'image-anchor',
+    type: { name: 'string' },
+    description: 'Image position',
   },
   credit: {
     type: { name: 'string' },
@@ -195,6 +207,7 @@ const Template = args =>
     cta-label="${args.ctaLabel}"
     full-width="${args.fullWidth}"
     image="${args.image}"
+    image-alt="${args.imageAlt}"
     banner-title="${args.bannerTitle}"
     credit="${args.credit}"
     horizontal="${args.horizontal}"
@@ -202,6 +215,7 @@ const Template = args =>
     font-size="${args.fontSize}"
     font-weight="${args.fontWeight}"
     box-background="${args.boxBackground}"
+    image-anchor="${args.imageAnchor}"
     size="${args.size}"
     banner-title-link="${args.bannerTitleLink ? randomizedLink('/example.html') : ''}"
     description-link="${args.descriptionLink ? randomizedLink('/example.html') : ''}"

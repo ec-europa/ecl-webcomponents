@@ -57,6 +57,7 @@ export class EclPageSummary {
                 icon={this.icon}
                 style-class="ecl-page-summary__icon"
                 family={this.iconFamily}
+                size="m"
               ></ecl-icon>
             )}
 

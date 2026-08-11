@@ -21,3 +21,25 @@ exports[`ecl-input renders 1`] = `
   </div>
 </ecl-form-group>
 `;
+
+exports[`ecl-input renders correctly with extra attributes 1`] = `
+<ecl-form-group helper-text="This is the form group helper text." label="Label" optional-text="(optional)" required="true" theme="ec">
+  <!---->
+  <div class="ecl-form-group">
+    <label class="ecl-form-label" for="input-id" id="input-id-label">
+      Label
+      <span class="ecl-form-label__required" role="note">
+        *
+      </span>
+    </label>
+    <div class="ecl-help-block" id="input-id-helper">
+      This is the form group helper text.
+    </div>
+    <ecl-input input-attrs="{&quot;data-custom-attribute&quot;: true }" input-id="input-id" placeholder="placeholder" required="true" theme="ec" type="text" width="l">
+      <div class="ecl-input">
+        <input aria-describedby="input-id-helper" class="ecl-text-input ecl-text-input--l" data-custom-attribute id="input-id" placeholder="placeholder" required="" type="text">
+      </div>
+    </ecl-input>
+  </div>
+</ecl-form-group>
+`;

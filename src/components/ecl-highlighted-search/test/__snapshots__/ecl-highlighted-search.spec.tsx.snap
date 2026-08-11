@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ecl-highlighted-searc renders 1`] = `
+<ecl-highlighted-search color-mode="blue" el-id="ecl-highlighted-search-test-id" el-title="Find your next role" form-attrs="{ &quot;method&quot;: &quot;GET&quot; }" has-description="" helper-text="Ecnter the job you are looking for" submit-label="Search" suggestion-label="Or explore:">
+  <!---->
+  <div class="ecl-color-mode--blue ecl-highlighted-search" id="ecl-highlighted-search-test-id">
+    <div class="ecl-highlighted-search__content">
+      <div class="ecl-highlighted-search__title" id="ecl-highlighted-search-test-id-title">
+        Find your next role
+      </div>
+      <div class="ecl-content-color ecl-highlighted-search__description">
+        Discover job opportunities in the EU institutions
+      </div>
+      <form class="ecl-highlighted-search__form" method="GET" role="search">
+        <div class="ecl-highlighted-search__form-content">
+          <ecl-icon style-class="ecl-highlighted-search__form-icon sc-ecl-highlighted-search-ec">
+            <span class="ecl-highlighted-search__form-icon ecl-icon ecl-icon--m sc-ecl-highlighted-search-ec wt-icon--placeholder wt-icon-phosphor--magnifying-glass"></span>
+          </ecl-icon>
+          <ecl-form-group hide-label="" style-class="ecl-highlighted-search__form-group sc-ecl-highlighted-search-ec">
+            <!---->
+            <div class="ecl-form-group ecl-highlighted-search__form-group sc-ecl-highlighted-search-ec">
+              <ecl-input input-attrs="" input-class="ecl-highlighted-search__form-input sc-ecl-highlighted-search-ec" input-id="ecl-highlighted-search-test-id-input">
+                <div class="ecl-input">
+                  <input class="ecl-highlighted-search__form-input ecl-text-input ecl-text-input--l sc-ecl-highlighted-search-ec" id="ecl-highlighted-search-test-id-input" name="highlighted-search-input-name" type="search">
+                </div>
+              </ecl-input>
+              <ecl-button button-style="highlight" style-class="ecl-highlighted-search__form-button sc-ecl-highlighted-search-ec">
+                <!---->
+                <button class="ecl-button ecl-button--highlight ecl-button--m ecl-button--primary ecl-highlighted-search__form-button sc-ecl-highlighted-search-ec" type="submit">
+                  <span class="ecl-button__container">
+                    <span class="ecl-button__label" data-ecl-label>
+                      Search
+                    </span>
+                  </span>
+                </button>
+              </ecl-button>
+            </div>
+          </ecl-form-group>
+        </div>
+        <div class="ecl-highlighted-search__form-helper">
+          Ecnter the job you are looking for
+        </div>
+      </form>
+      <div class="ecl-highlighted-search__suggestion">
+        <span class="ecl-highlighted-search__suggestion-label">
+          Or explore:
+        </span>
+        <ecl-tag-set>
+          <ul class="ecl-tag-set sc-ecl-tag-ec">
+            <li class="ecl-tag-set__item sc-ecl-tag-ec">
+              <ecl-tag slot="tags" url="/example.html" variant="link">
+                <!---->
+                <a class="ecl-tag ecl-tag--link" href="/example.html">
+                  Trainesheep
+                </a>
+              </ecl-tag>
+            </li>
+            <li class="ecl-tag-set__item sc-ecl-tag-ec">
+              <ecl-tag slot="tags" url="/example.html" variant="link">
+                <!---->
+                <a class="ecl-tag ecl-tag--link" href="/example.html">
+                  It &amp; Digital
+                </a>
+              </ecl-tag>
+            </li>
+          </ul>
+        </ecl-tag-set>
+      </div>
+    </div>
+  </div>
+</ecl-highlighted-search>
+`;

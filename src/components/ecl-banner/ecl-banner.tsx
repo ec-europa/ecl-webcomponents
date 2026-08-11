@@ -24,6 +24,7 @@ export class EclBanner {
   @Prop() bannerTitleLink: string;
   @Prop() descriptionLink: string;
   @Prop() image: string;
+  @Prop() imageAnchor: string;
   @Prop() noScript: boolean = false;
   @Prop() sources: string;
   @Prop() tracks: string;
@@ -124,8 +125,9 @@ export class EclBanner {
           <ecl-picture
             styleClass={`ecl-banner__picture sc-ecl-banner-${this.theme}`}
             image={this.image}
-            imageAlt={this.imageAlt}
-            imgClass={`ecl-banner__image sc-ecl-banner-${this.theme}`}
+            image-alt={this.imageAlt}
+            image-anchor={this.imageAnchor}
+            img-class={`ecl-banner__image sc-ecl-banner-${this.theme}`}
             data-ecl-banner-image
           >
             <slot name="sources"></slot>

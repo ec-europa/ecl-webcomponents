@@ -844,15 +844,12 @@ const TemplateStandardised = (args) =>
     eu-label="Official EU languages:"
     non-eu-label="Other languages:"
     language-title="Choose your language"
-    login-link="${randomizedLink('/example.html')}"
     language-id="language-switcher"
     logo-alt="European Commission"
     logo-size="${args.logo_size}"
     logo-title="European commission"
     language-aria-label="Choose language"
     site-name="${args.siteName}"
-    banner-top="Aid, Development cooperation, Fundamental rights"
-    bannerTopLink="${randomizedLink('/example.html')}"
   > 
   ${languageItems()}
   ${args.menu === 'menu' ? menu(args) : megaMenu(args)}

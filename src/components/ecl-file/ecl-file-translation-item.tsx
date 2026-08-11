@@ -49,16 +49,14 @@ export class EclFileTranslationsItem {
   }
 
   componentWillLoad() {
-    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
-  }
-
-  componentDidLoad() {
     const parentFile = this.el.closest('.ecl-file');
 
     if (parentFile) {
       this.parentId = parentFile.id;
       this.downloadAttribute = parentFile.hasAttribute('download-attribute');
     }
+
+    this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
   render() { 

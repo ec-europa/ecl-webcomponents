@@ -12,6 +12,8 @@ export class EclAccordionItem {
   @Prop() styleClass: string;
   @Prop() label: string;
   @Prop() sidebar: boolean = false;
+  @Prop() iconCollapsed: string = 'plus';
+  @Prop() iconExpanded: string = 'minus';
   @Prop({reflect:true}) expanded: boolean;
   @Prop({ mutable: true }) theme: string;
   
@@ -38,13 +40,15 @@ export class EclAccordionItem {
         >
           {this.label}
           <ecl-icon
-            icon="plus"
+            icon={this.iconCollapsed}
             size="s"
+            family="phosphor"
             style-class={`ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-${this.theme}`}
           ></ecl-icon>
           <ecl-icon
-            icon="minus"
+            icon={this.iconExpanded}
             size="s"
+            family="phosphor"
             style-class={`ecl-accordion__toggle-icon ecl-accordion__toggle-icon--minus sc-ecl-accordion-${this.theme}`}
           ></ecl-icon>
         </summary>

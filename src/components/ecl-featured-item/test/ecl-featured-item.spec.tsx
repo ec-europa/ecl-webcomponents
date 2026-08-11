@@ -6,6 +6,17 @@ import { EclLink } from '../../ecl-link/ecl-link';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
 
 describe('ecl-featured-item', () => {
+  beforeEach(() => {
+    global.ResizeObserver = class {
+      observe() {}
+      unobserve() {}
+      disconnect() {}
+    };
+
+    (global as any).ECL = {};
+    (global as any).ECL.components = new Map();
+  });
+
   it('renders correctly', async () => {
     const page = await newSpecPage({
       components: [EclFeaturedItem, EclLink, EclIcon, EclPicture, EclMediaContainer],

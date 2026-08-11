@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-spinner",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.28.0",
+  "version": "0.29.0",
   "description": "ECL Spinner",
   "main": "ecl-spinner.tsx",
   "private": true,
@@ -13,11 +13,11 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "5.0.0-RC6",
-    "@ecl/grid": "5.0.0-RC6",
-    "@ecl/spinner": "5.0.0-RC6",
-    "@ecl/theme-ec": "5.0.0-RC6",
-    "@ecl/theme-eu": "5.0.0-RC6",
+    "@ecl/builder": "5.1.0",
+    "@ecl/grid": "5.1.0",
+    "@ecl/spinner": "5.1.0",
+    "@ecl/theme-ec": "5.1.0",
+    "@ecl/theme-eu": "5.1.0",
     "cross-env": "10.1.0",
     "lorem-ipsum": "3.0.0"
   },

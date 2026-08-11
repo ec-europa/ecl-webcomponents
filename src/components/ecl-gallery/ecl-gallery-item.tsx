@@ -92,7 +92,8 @@ export class EclGalleryItem {
             <div class={`ecl-gallery__icon-zoom-wrapper sc-ecl-gallery-${this.theme}`}>
               <ecl-icon
                 style-class={`ecl-gallery__icon-zoom sc-ecl-gallery-${this.theme}`}
-                icon="fullscreen"
+                icon="arrows-out-simple"
+                family="phosphor"
                 size="s"
               ></ecl-icon>
             </div>
@@ -100,7 +101,8 @@ export class EclGalleryItem {
             <div class={`ecl-gallery__item-icon-wrapper sc-ecl-gallery-${this.theme}`}>
               <ecl-icon
                 style-class={`ecl-gallery__item-icon sc-ecl-gallery-${this.theme}`}
-                icon="play"
+                icon="play-filled"
+                family="phosphor"
                 size="s"
               ></ecl-icon>
             </div>

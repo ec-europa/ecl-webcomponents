@@ -7,8 +7,14 @@ import { EclPicture } from '../../ecl-picture/ecl-picture';
 
 describe('ecl-media-container', () => {
   beforeEach(() => {
-    // create a global ECL object so your components can attach classes
+    global.ResizeObserver = class {
+      observe() {}
+      unobserve() {}
+      disconnect() {}
+    };
+
     (global as any).ECL = {};
+    (global as any).ECL.components = new Map();
   });
 
   it('renders correctly with an image', async () => {
@@ -46,9 +52,7 @@ describe('ecl-media-container', () => {
       components: [EclMediaContainer, EclVideo, EclButton, EclIcon, EclPicture],
       html: `<ecl-media-container
               ratio="16-9"
-              sources='[{"src": "https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4", "type": "video/mp4"}, {"src": "https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm", "type": "video/webm"}]'
-              tracks='[{"src": "/captions/bunny-en.vtt", "kind": "captions", "src_lang": "en", "label": "English"}, {"src": "/captions/bunny-fr.vtt", "kind": "captions", "src_lang": "fr", "label": "français"}]'
-              autoplay
+              sources='[{"src": "https://vod.prd.commavservices.eu/01/275521/019813ec-13ce-7136-ac0d-d7e24fec64c0/1080p-qaa.mp4", "type": "video/mp4"}]'
             >
               caption for the media container
             </ecl-media-container>`,

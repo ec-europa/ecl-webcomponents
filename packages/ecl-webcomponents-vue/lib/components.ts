@@ -22,6 +22,8 @@ export const EclAccordionItem: StencilVueComponent<JSX.EclAccordionItem> = /*@__
   'styleClass',
   'label',
   'sidebar',
+  'iconCollapsed',
+  'iconExpanded',
   'expanded',
   'theme'
 ]);
@@ -62,7 +64,9 @@ export const EclAnimatedNumbersItem: StencilVueComponent<JSX.EclAnimatedNumbersI
   'description',
   'itemPrefixLabel',
   'itemSuffixLabel',
-  'value'
+  'value',
+  'sources',
+  'sourcesLabel'
 ]);
 
 
@@ -76,6 +80,7 @@ export const EclBanner: StencilVueComponent<JSX.EclBanner> = /*@__PURE__*/ defin
   'bannerTitleLink',
   'descriptionLink',
   'image',
+  'imageAnchor',
   'noScript',
   'sources',
   'tracks',
@@ -330,7 +335,9 @@ export const EclFactFiguresItem: StencilVueComponent<JSX.EclFactFiguresItem> = /
   'icon',
   'value',
   'itemTitle',
-  'iconTransform'
+  'iconTransform',
+  'sources',
+  'sourcesLabel'
 ]);
 
 
@@ -360,7 +367,6 @@ export const EclFile: StencilVueComponent<JSX.EclFile> = /*@__PURE__*/ defineCon
   'elId',
   'theme',
   'styleClass',
-  'variant',
   'downloadAttribute',
   'downloadId',
   'downloadLabel',
@@ -371,6 +377,7 @@ export const EclFile: StencilVueComponent<JSX.EclFile> = /*@__PURE__*/ defineCon
   'fileTitlePath',
   'detailMeta',
   'language',
+  'icon',
   'meta',
   'image',
   'imageAlt',
@@ -384,6 +391,7 @@ export const EclFile: StencilVueComponent<JSX.EclFile> = /*@__PURE__*/ defineCon
 
 export const EclFileTranslations: StencilVueComponent<JSX.EclFileTranslations> = /*@__PURE__*/ defineContainer<JSX.EclFileTranslations>('ecl-file-translations', undefined, [
   'theme',
+  'elId',
   'styleClass',
   'toggleLabel',
   'others'
@@ -573,6 +581,24 @@ export const EclHighlightBox: StencilVueComponent<JSX.EclHighlightBox> = /*@__PU
 ]);
 
 
+export const EclHighlightedSearch: StencilVueComponent<JSX.EclHighlightedSearch> = /*@__PURE__*/ defineContainer<JSX.EclHighlightedSearch>('ecl-highlighted-search', undefined, [
+  'theme',
+  'styleClass',
+  'colorMode',
+  'elId',
+  'elTitle',
+  'helperText',
+  'submitLabel',
+  'suggestionLabel',
+  'hasDescription',
+  'inputId',
+  'inputLabel',
+  'inputAttrs',
+  'formAttrs',
+  'inputName'
+]);
+
+
 export const EclIcon: StencilVueComponent<JSX.EclIcon> = /*@__PURE__*/ defineContainer<JSX.EclIcon>('ecl-icon', undefined, [
   'styleClass',
   'theme',
@@ -630,6 +656,7 @@ export const EclInput: StencilVueComponent<JSX.EclInput> = /*@__PURE__*/ defineC
   'inputId',
   'name',
   'defaultValue',
+  'inputAttrs',
   'hasChanged',
   'isFocused',
   'inputFocus',
@@ -840,7 +867,8 @@ export const EclModal: StencilVueComponent<JSX.EclModal> = /*@__PURE__*/ defineC
   'toggleId',
   'size',
   'closeLabel',
-  'itemId'
+  'itemId',
+  'itemTitle'
 ]);
 
 
@@ -969,7 +997,9 @@ export const EclPicture: StencilVueComponent<JSX.EclPicture> = /*@__PURE__*/ def
   'image',
   'imgClass',
   'imageAlt',
+  'noScript',
   'imageAnchor',
+  'debugPosition',
   'lazy',
   'zoom'
 ]);
@@ -1274,6 +1304,51 @@ export const EclSpotlight: StencilVueComponent<JSX.EclSpotlight> = /*@__PURE__*/
   'fullWidth',
   'header',
   'fontSize'
+]);
+
+
+export const EclStoryCard: StencilVueComponent<JSX.EclStoryCard> = /*@__PURE__*/ defineContainer<JSX.EclStoryCard>('ecl-story-card', undefined, [
+  'styleClass',
+  'noScript',
+  'elId',
+  'elTitle',
+  'description',
+  'prevLabel',
+  'nextLabel',
+  'playLabel',
+  'pauseLabel',
+  'theme',
+  'variant',
+  'colorMode'
+]);
+
+
+export const EclStoryCardItem: StencilVueComponent<JSX.EclStoryCardItem> = /*@__PURE__*/ defineContainer<JSX.EclStoryCardItem>('ecl-story-card-item', undefined, [
+  'styleClass',
+  'articleClass',
+  'theme',
+  'variant',
+  'elTitle',
+  'author',
+  'elRole',
+  'source',
+  'linkHref',
+  'teaserLabel',
+  'linkLabel',
+  'linkIcon',
+  'picture',
+  'pictureAlt',
+  'slotName',
+  'order'
+]);
+
+
+export const EclStoryCardTab: StencilVueComponent<JSX.EclStoryCardTab> = /*@__PURE__*/ defineContainer<JSX.EclStoryCardTab>('ecl-story-card-tab', undefined, [
+  'styleClass',
+  'picture',
+  'theme',
+  'teaserLabel',
+  'order'
 ]);
 
 

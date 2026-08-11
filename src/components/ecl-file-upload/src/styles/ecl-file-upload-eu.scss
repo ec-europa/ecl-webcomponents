@@ -7,6 +7,10 @@
   $theme: theme.$theme,
   $typography: var.$typography
 );
+@use '@ecl/button/button' with (
+  $button: var.$button,
+  $theme: theme.$theme
+);
 @use '@ecl/file-upload/file-upload' with (
   $theme: theme.$theme,
   $button: var.$button,

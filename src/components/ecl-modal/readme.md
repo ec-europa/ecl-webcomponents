@@ -11,6 +11,7 @@
 | --------------- | ----------------- | ----------- | --------- | ----------- |
 | `closeLabel`    | `close-label`     |             | `string`  | `undefined` |
 | `itemId`        | `item-id`         |             | `string`  | `undefined` |
+| `itemTitle`     | `item-title`      |             | `string`  | `undefined` |
 | `noScript`      | `no-script`       |             | `boolean` | `false`     |
 | `size`          | `size`            |             | `string`  | `'l'`       |
 | `styleClass`    | `style-class`     |             | `string`  | `undefined` |

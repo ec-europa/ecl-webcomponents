@@ -51,8 +51,10 @@ const TemplateSidebar = () =>
           <ecl-accordion-item
             label="Filter by"
             sidebar
+            icon-collapsed="sliders-horizontal"
+            icon-expanded="sliders-horizontal"
           >
-          <ecl-form-group label="Collapsible form">
+          <ecl-form-group label="Collapsible form" hide-label>
             <ecl-datepicker></ecl-datepicker>
             <ecl-spacing value="m"></ecl-spacing>
             <ecl-input type="text"></ecl-input>
@@ -63,10 +65,9 @@ const TemplateSidebar = () =>
         </ecl-accordion>
       </ecl-grid>
       <ecl-grid columns="9" breakpoint="l">
-        <ecl-spacing value="2xl"></ecl-spacing>
+        <ecl-spacing value="3xl"></ecl-spacing>
         <ecl-text type="heading" level="4">Main content</ecl-text>
         <ecl-spacing value="s"></ecl-spacing>
-        <ecl-divider></ecl-divider>
         <ecl-spacing value="l"></ecl-spacing>
         <ecl-text type="paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pretium hendrerit dolor in bibendum. Vivamus tincidunt tristique metus volutpat egestas. Duis accumsan, ante ac ornare rhoncus, lectus tortor venenatis sapien, vel mattis magna libero non tellus. In quis mattis diam. Duis ac lacus sed ligula efficitur ultricies sit amet at augue. 
