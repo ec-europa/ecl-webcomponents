@@ -286,18 +286,6 @@ export class EclSiteHeader {
               </div>
             </div>
           </div>
-        { this.bannerTop &&
-          <div class="ecl-container">
-            <div class="ecl-site-header__banner-top">
-              <ecl-link
-                variant="standalone"
-                path={this.bannerTopLink}
-              >
-                { this.bannerTop }
-              </ecl-link>
-            </div>
-          </div>
-        }
         { this.siteName ?
           <div class={`ecl-site-header__banner ${this.siteNameMobileOnly ? 'ecl-site-header__site-name--mobile-only' : '' }`}>
             <div class="ecl-container">
