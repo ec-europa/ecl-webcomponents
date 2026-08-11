@@ -29,6 +29,7 @@ export class EclInput {
   @Prop() inputId: string;
   @Prop() name: string;
   @Prop() defaultValue: string;
+  @Prop() inputAttrs: string;
   @State() value: string;
   @Prop() hasChanged: boolean = false;
   @Prop() isFocused: boolean = false;
@@ -117,9 +118,11 @@ export class EclInput {
   }
 
   render() {
+    const inputAttributes = this.inputAttrs ? JSON.parse(this.inputAttrs) : {};
     const wrapperAttrs = {};
 
     const attributes = {
+      ...inputAttributes,
       class: this.getInputClasses(this.type),
       type: this.type,
       id: this.inputId,

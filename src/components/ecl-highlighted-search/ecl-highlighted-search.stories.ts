@@ -54,6 +54,7 @@ return `<ecl-highlighted-search
           has-description
           submit-label="${args.submitLabel}"
           color-mode="${args.color_mode}"
+          form-attrs='{ "method": "GET" }'
         >
           ${args.description}
           <ecl-tag

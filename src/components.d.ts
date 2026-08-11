@@ -1060,6 +1060,10 @@ export namespace Components {
          */
         "elTitle": string;
         /**
+          * @default ''
+         */
+        "formAttrs": string;
+        /**
           * @default false
          */
         "hasDescription": boolean;
@@ -1068,6 +1072,10 @@ export namespace Components {
          */
         "helperText": string;
         /**
+          * @default ''
+         */
+        "inputAttrs": string;
+        /**
           * @default `${this.elId}-input`
          */
         "inputId": string;
@@ -1075,6 +1083,10 @@ export namespace Components {
           * @default ''
          */
         "inputLabel": string;
+        /**
+          * @default 'highlighted-search-input-name'
+         */
+        "inputName": string;
         /**
           * @default ''
          */
@@ -1173,6 +1185,7 @@ export namespace Components {
           * @default false
          */
         "hideLabel": boolean;
+        "inputAttrs": string;
         "inputClass": string;
         "inputId": string;
         /**
@@ -4673,6 +4686,10 @@ declare namespace LocalJSX {
          */
         "elTitle"?: string;
         /**
+          * @default ''
+         */
+        "formAttrs"?: string;
+        /**
           * @default false
          */
         "hasDescription"?: boolean;
@@ -4681,6 +4698,10 @@ declare namespace LocalJSX {
          */
         "helperText"?: string;
         /**
+          * @default ''
+         */
+        "inputAttrs"?: string;
+        /**
           * @default `${this.elId}-input`
          */
         "inputId"?: string;
@@ -4688,6 +4709,10 @@ declare namespace LocalJSX {
           * @default ''
          */
         "inputLabel"?: string;
+        /**
+          * @default 'highlighted-search-input-name'
+         */
+        "inputName"?: string;
         /**
           * @default ''
          */
@@ -4786,6 +4811,7 @@ declare namespace LocalJSX {
           * @default false
          */
         "hideLabel"?: boolean;
+        "inputAttrs"?: string;
         "inputClass"?: string;
         "inputId"?: string;
         /**
@@ -6905,6 +6931,9 @@ declare namespace LocalJSX {
         "hasDescription": boolean;
         "inputId": string;
         "inputLabel": string;
+        "inputAttrs": string;
+        "formAttrs": string;
+        "inputName": string;
     }
     interface EclIconAttributes {
         "styleClass": string;
@@ -6955,6 +6984,7 @@ declare namespace LocalJSX {
         "inputId": string;
         "name": string;
         "defaultValue": string;
+        "inputAttrs": string;
         "hasChanged": boolean;
         "isFocused": boolean;
     }

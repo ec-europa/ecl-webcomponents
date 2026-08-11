@@ -592,7 +592,10 @@ export const EclHighlightedSearch: StencilVueComponent<JSX.EclHighlightedSearch>
   'suggestionLabel',
   'hasDescription',
   'inputId',
-  'inputLabel'
+  'inputLabel',
+  'inputAttrs',
+  'formAttrs',
+  'inputName'
 ]);
 
 
@@ -653,6 +656,7 @@ export const EclInput: StencilVueComponent<JSX.EclInput> = /*@__PURE__*/ defineC
   'inputId',
   'name',
   'defaultValue',
+  'inputAttrs',
   'hasChanged',
   'isFocused',
   'inputFocus',

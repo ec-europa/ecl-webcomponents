@@ -19,6 +19,7 @@ describe('ecl-highlighted-searc', () => {
         submit-label="Search"
         color-mode="blue"
         el-id="ecl-highlighted-search-test-id"
+        form-attrs='{ "method": "GET" }'
       >
         Discover job opportunities in the EU institutions
         <ecl-tag

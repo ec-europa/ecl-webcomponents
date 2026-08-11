@@ -15,6 +15,7 @@
 | `hasChanged`   | `has-changed`   |             | `boolean` | `false`     |
 | `helperText`   | `helper-text`   |             | `string`  | `undefined` |
 | `hideLabel`    | `hide-label`    |             | `boolean` | `false`     |
+| `inputAttrs`   | `input-attrs`   |             | `string`  | `undefined` |
 | `inputClass`   | `input-class`   |             | `string`  | `undefined` |
 | `inputId`      | `input-id`      |             | `string`  | `undefined` |
 | `invalid`      | `invalid`       |             | `boolean` | `false`     |

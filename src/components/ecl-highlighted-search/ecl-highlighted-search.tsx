@@ -21,6 +21,9 @@ export class EclHighlightedSearch {
   @Prop() hasDescription: boolean = false;
   @Prop() inputId: string = `${this.elId}-input`;
   @Prop() inputLabel: string = '';
+  @Prop() inputAttrs: string = '';
+  @Prop() formAttrs: string = '';
+  @Prop() inputName: string = 'highlighted-search-input-name';
 
   getClass(): string {
     const styleClasses = [
@@ -40,6 +43,8 @@ export class EclHighlightedSearch {
   }
 
   render() {
+    const formAttributes = this.formAttrs ? JSON.parse(this.formAttrs) : {};
+
     return (
       <div
         class={this.getClass()}
@@ -62,6 +67,7 @@ export class EclHighlightedSearch {
           <form
             class="ecl-highlighted-search__form"
             role="search"
+            {...formAttributes}
           >
             <div class="ecl-highlighted-search__form-content">
               <ecl-icon
@@ -79,6 +85,8 @@ export class EclHighlightedSearch {
                   type="search"
                   width="l"
                   input-id={this.inputId}
+                  input-attrs={this.inputAttrs}
+                  name={this.inputName}
                   input-class={`ecl-highlighted-search__form-input sc-ecl-highlighted-search-${this.theme}`}
                 ></ecl-input>
                 <ecl-button
