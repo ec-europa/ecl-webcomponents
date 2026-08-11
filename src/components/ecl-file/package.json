@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-file",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.28.0",
+  "version": "0.29.0",
   "description": "ECL File",
   "main": "ecl-hero-banner.tsx",
   "private": true,
@@ -14,9 +14,9 @@
   },
   "devDependencies": {
     "@ecl/builder": "5.1.0",
-    "@ecl/mixins-typography": "5.1.0",
     "@ecl/file": "5.1.0",
     "@ecl/grid": "5.1.0",
+    "@ecl/mixins-typography": "5.1.0",
     "@ecl/theme-ec": "5.1.0",
     "@ecl/theme-eu": "5.1.0",
     "cross-env": "10.1.0"

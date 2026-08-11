@@ -1,6 +1,6 @@
 {
   "name": "@ecl/ecl-webcomponents-react",
-  "version": "0.28.0",
+  "version": "0.29.0",
   "description": "ECL react app",
   "main": "lib/index.ts",
   "module": "dist/index.js",
@@ -27,7 +27,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@ecl/ecl-webcomponents": "0.28.0"
+    "@ecl/ecl-webcomponents": "0.29.0"
   },
   "devDependencies": {
     "@types/node": "25.9.2",

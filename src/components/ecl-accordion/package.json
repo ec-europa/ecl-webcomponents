@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-accordion",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.28.0",
+  "version": "0.29.0",
   "description": "ECL Button",
   "main": "ecl-accordion.tsx",
   "private": true,
@@ -22,7 +22,7 @@
     "cross-env": "10.1.0"
   },
   "dependencies": {
-    "@ecl/web-components-icon": "0.28.0"
+    "@ecl/web-components-icon": "0.29.0"
   },
   "repository": {
     "type": "git",
