@@ -8,11 +8,10 @@ const getArgs = (storyName = '') => {
   };
   if (storyName === 'video' || storyName === 'iframe') {
     args['ratio'] = '';
-    args['eclScript'] = true;
   }
 
   if (storyName === 'video') {
-    args['autoplay'] = true;
+    args['autoplay'] = false;
   }
 
   return args;
@@ -130,9 +129,9 @@ const TemplateVideo = (args) =>
     sr-play="play"
     full-width=${args.fullWidth}
     sr-pause="pause"
+    poster="https://vod.prd.commavservices.eu/12/224712/THUMB_I224712EN1W_V_1.jpg"
     credit=${args.hasCaption ? args.credit : ''}"
-  	sources='[{"src": "https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.mp4", "type": "video/mp4"}, {"src": "https://inno-ecl.s3.amazonaws.com/media/videos/big_buck_bunny.webm", "type": "video/webm"}]'
-  	tracks='[{"src": "/captions/bunny-en.vtt", "kind": "captions", "src_lang": "en", "label": "English"}, {"src": "/captions/bunny-fr.vtt", "kind": "captions", "src_lang": "fr", "label": "français"}]'
+  	sources='[{"src": "https://vod.prd.commavservices.eu/01/275521/019813ec-13ce-7136-ac0d-d7e24fec64c0/1080p-qaa.mp4" }]'
   >
      ${args.hasCaption ? args.caption : ''}
     ${args.hasExpandable ?
