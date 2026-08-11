@@ -96,7 +96,7 @@ export class EclLink {
       <ecl-icon 
         icon="external"
         style-class={`ecl-link__icon sc-ecl-link-${this.theme}`}
-        size="2xs"
+        size="xs"
         title-tag={this.srExternal}
       >
       </ecl-icon>
@@ -149,7 +149,7 @@ export class EclLink {
           <ecl-indicator value={this.indicatorValue} sr-label={this.indicatorLabel}></ecl-indicator>
         </span>
       )}
-      {(this.hasIconBefore || this.hasIconAfter) ?
+      {(this.hasIconBefore || this.hasIconAfter || this.external) ?
         <span class="ecl-link__label">
           <slot></slot>
         </span> : <slot></slot>

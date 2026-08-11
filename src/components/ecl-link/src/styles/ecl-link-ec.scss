@@ -25,11 +25,15 @@
 }
 
 :host .ecl-link:not(.ecl-link--icon-only) ::slotted(ecl-icon[slot='icon-after']) svg {
-  margin-inline-start: var(--s-3xs);
+  margin-inline-start: var(--s-s);
   vertical-align: middle;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
 :host .ecl-link:not(.ecl-link--icon-only) ::slotted(ecl-icon[slot='icon-before']) svg {
-  margin-inline-end: var(--s-3xs);
+  margin-inline-end: var(--s-s);
   vertical-align: middle;
+  height: 1.25rem;
+  width: 1.25rem;
 }
