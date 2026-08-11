@@ -25,3 +25,7 @@
   margin-inline-end: 0.5rem;
   vertical-align: middle;
 }
+
+.sc-ecl-button-ec-h + .ecl-popover__content {
+  padding-inline-end: var(--s-xl);
+}

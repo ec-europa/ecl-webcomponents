@@ -18,7 +18,7 @@ exports[`ecl-popover renders 1`] = `
     </ecl-link>
     <div class="ecl-popover__container" hidden="" id="popover-example">
       <div class="ecl-popover__scrollable">
-        <ecl-button buttonstyle="neutral" data-ecl-popover-close hide-label="" style-class="sc-ecl-popover-ec ecl-popover__close" type="button" variant="tertiary">
+        <ecl-button buttonstyle="neutral" data-ecl-popover-close hide-label="" size="m" style-class="sc-ecl-popover-ec ecl-popover__close" type="button" variant="tertiary">
           Close
           <ecl-icon slot="icon-after" style-class="sc-ecl-popover-ec">
             <span class="ecl-icon ecl-icon--xs sc-ecl-popover-ec wt-icon--close wt-icon--placeholder"></span>

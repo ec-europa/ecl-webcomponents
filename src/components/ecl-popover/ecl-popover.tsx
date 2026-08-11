@@ -99,6 +99,7 @@ export class EclPopover {
               buttonStyle="neutral"
               style-class={`sc-ecl-popover-${this.theme} ecl-popover__close`}
               hide-label
+              size="m"
               data-ecl-popover-close
             >
               Close
