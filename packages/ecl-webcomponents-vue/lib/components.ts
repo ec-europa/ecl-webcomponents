@@ -867,7 +867,8 @@ export const EclModal: StencilVueComponent<JSX.EclModal> = /*@__PURE__*/ defineC
   'toggleId',
   'size',
   'closeLabel',
-  'itemId'
+  'itemId',
+  'itemTitle'
 ]);
 
 

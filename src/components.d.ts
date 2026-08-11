@@ -1547,6 +1547,7 @@ export namespace Components {
     interface EclModal {
         "closeLabel": string;
         "itemId": string;
+        "itemTitle": string;
         /**
           * @default false
          */
@@ -5176,6 +5177,7 @@ declare namespace LocalJSX {
     interface EclModal {
         "closeLabel"?: string;
         "itemId"?: string;
+        "itemTitle"?: string;
         /**
           * @default false
          */
@@ -7163,6 +7165,7 @@ declare namespace LocalJSX {
         "size": string;
         "closeLabel": string;
         "itemId": string;
+        "itemTitle": string;
     }
     interface EclNavigationListAttributes {
         "theme": string;

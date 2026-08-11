@@ -25,6 +25,7 @@ export class EclModal {
   @Prop() size: string = 'l';
   @Prop() closeLabel: string;
   @Prop() itemId: string;
+  @Prop() itemTitle: string;
 
   getClass(): string {
     return [
@@ -72,6 +73,7 @@ export class EclModal {
             ) : ''}
             {this.withHeader ? (
               <div class="ecl-modal__header-content">
+                {this.itemTitle}
                 <slot name="header"></slot>
               </div>
             ) : ''}
@@ -80,6 +82,7 @@ export class EclModal {
               type="button"
               variant="tertiary"
               hide-label
+              size="m"
               buttonStyle="neutral"
               styleClass={`ecl-modal__close sc-ecl-modal-${this.theme}`}
               data-ecl-modal-close
@@ -87,7 +90,6 @@ export class EclModal {
               {this.closeLabel}
               <ecl-icon
                 icon="close"
-                size="s"
                 slot="icon-after"
                 style-class={`sc-ecl-modal-${this.theme}`}
               ></ecl-icon>

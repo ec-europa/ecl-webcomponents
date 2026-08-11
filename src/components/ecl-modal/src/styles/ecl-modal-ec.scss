@@ -11,3 +11,12 @@
   $theme: theme.$theme,
   $modal: var.$modal
 );
+
+.ecl-modal__button:first-of-type {
+  margin-inline-end: var(--s-m);
+}
+
+.ecl-modal__close {
+  position: relative;
+  top: -0.5rem;
+}
