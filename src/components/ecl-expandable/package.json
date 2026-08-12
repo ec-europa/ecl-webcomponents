@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-expandable",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.29.0",
+  "version": "0.29.1",
   "description": "ECL Expandable",
   "main": "ecl-expandable.js",
   "private": true,
@@ -21,7 +21,7 @@
     "@ecl/theme-ec": "5.1.0",
     "@ecl/theme-eu": "5.1.0",
     "@ecl/utility-screen-reader": "5.1.0",
-    "@ecl/web-components-button": "0.29.0",
+    "@ecl/web-components-button": "0.29.1",
     "cross-env": "10.1.0",
     "rimraf": "6.1.3"
   },
