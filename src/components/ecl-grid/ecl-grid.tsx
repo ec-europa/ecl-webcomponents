@@ -1,4 +1,4 @@
-import { Component, Prop, h, Element } from '@stencil/core';
+import { Component, Prop, h, Element, Host } from '@stencil/core';
 
 @Component({
   tag: 'ecl-grid',
@@ -102,25 +102,14 @@ export class EclGrid {
     return styleClasses.filter(Boolean).join(' ');
   }
 
-  componentDidRender() {
-    const parent = this.el.parentNode;
-
-    if (!parent) {
-      return;
-    }
-
-    while (this.el.firstChild) {
-      parent.insertBefore(this.el.firstChild, this.el);
-    }
-
-    parent.removeChild(this.el);
-  }
-
   render() {
     return (
-      <div class={this.getClass()}>
+      <Host
+        class={this.getClass()}
+        style={this.container ? { display: 'block' } : {}}
+      >
         <slot></slot>
-      </div>
+      </Host>
     );
   }
 }
