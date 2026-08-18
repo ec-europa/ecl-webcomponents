@@ -52,20 +52,23 @@ export class EclSloganTicker {
   private parseItems() {
     try {
       const parsed = JSON.parse(String(this.items));
-      if (Array.isArray(parsed)) return parsed;
+
+      if (Array.isArray(parsed)) {
+        return parsed.filter((item) => typeof item === 'string');
+      }
     } catch (e) {
-      // fallthrough
+      // fall through
     }
+
     return [];
   }
 
   renderItems() {
-    const items = this.parseItems();
-
-    return items.map((it) => {
-      const text = typeof it === 'string' ? it : it.text || '';
-      return <li class="ecl-slogan-ticker__slide">{text}</li>;
-    });
+    return this.parseItems()
+      .filter((text) => text.trim())
+      .map((text) => (
+        <li class="ecl-slogan-ticker__slide">{text}</li>
+      ));
   }
 
   render() {

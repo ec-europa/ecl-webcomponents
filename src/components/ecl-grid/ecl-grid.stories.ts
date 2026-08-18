@@ -115,12 +115,14 @@ TwelveColumns.args = {
 
 // Legacy API with breakpoint
 export const LegacyWithBreakpoint = () => `
-  <ecl-grid row>
-    <ecl-grid breakpoint="m" columns="6">
-      <div class="demo-cell">6 cols on medium</div>
-    </ecl-grid>
-    <ecl-grid breakpoint="m" columns="6">
-      <div class="demo-cell">6 cols on medium</div>
+  <ecl-grid container>
+    <ecl-grid row>
+      <ecl-grid breakpoint="m" columns="6">
+        <div class="demo-cell">6 cols on medium</div>
+      </ecl-grid>
+      <ecl-grid breakpoint="m" columns="6">
+        <div class="demo-cell">6 cols on medium</div>
+      </ecl-grid>
     </ecl-grid>
   </ecl-grid>
 `;
@@ -129,18 +131,20 @@ LegacyWithBreakpoint.parameters = { controls: { disable: true } };
 
 // Responsive columns using JSON format
 export const ResponsiveColumns = () => `
-  <ecl-grid row>
-    <ecl-grid columns='{"s": 12, "m": 6, "l": 4, "xl": 3}'>
-      <div class="demo-cell">Full on mobile, half on tablet, third on desktop, quarter on wide</div>
-    </ecl-grid>
-    <ecl-grid columns='{"s": 12, "m": 6, "l": 4, "xl": 3}'>
-      <div class="demo-cell">Full on mobile, half on tablet, third on desktop, quarter on wide</div>
-    </ecl-grid>
-    <ecl-grid columns='{"s": 12, "m": 6, "l": 4, "xl": 3}'>
-      <div class="demo-cell">Full on mobile, half on tablet, third on desktop, quarter on wide</div>
-    </ecl-grid>
-    <ecl-grid columns='{"s": 12, "m": 6, "l": 4, "xl": 3}'>
-      <div class="demo-cell">Full on mobile, half on tablet, third on desktop, quarter on wide</div>
+  <ecl-grid container>
+    <ecl-grid row>
+      <ecl-grid columns='{"s": 12, "m": 6, "l": 4, "xl": 3}'>
+        <div class="demo-cell">Full on mobile, half on tablet, third on desktop, quarter on wide</div>
+      </ecl-grid>
+      <ecl-grid columns='{"s": 12, "m": 6, "l": 4, "xl": 3}'>
+        <div class="demo-cell">Full on mobile, half on tablet, third on desktop, quarter on wide</div>
+      </ecl-grid>
+      <ecl-grid columns='{"s": 12, "m": 6, "l": 4, "xl": 3}'>
+        <div class="demo-cell">Full on mobile, half on tablet, third on desktop, quarter on wide</div>
+      </ecl-grid>
+      <ecl-grid columns='{"s": 12, "m": 6, "l": 4, "xl": 3}'>
+        <div class="demo-cell">Full on mobile, half on tablet, third on desktop, quarter on wide</div>
+      </ecl-grid>
     </ecl-grid>
   </ecl-grid>
 `;
