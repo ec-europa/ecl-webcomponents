@@ -2,7 +2,7 @@
     "name": "@ecl/web-components-story-card",
     "author": "European Commission",
     "license": "EUPL-1.2",
-    "version": "0.29.1",
+    "version": "0.30.0",
     "description": "ECL Story Card",
     "main": "ecl-story-card.tsx",
     "private": true,
@@ -13,9 +13,9 @@
         "prepublish": "npm run build"
     },
     "dependencies": {
-        "@ecl/web-components-button": "0.29.1",
-        "@ecl/web-components-link": "0.29.1",
-        "@ecl/web-components-picture": "0.29.1"
+        "@ecl/web-components-button": "0.30.0",
+        "@ecl/web-components-link": "0.30.0",
+        "@ecl/web-components-picture": "0.30.0"
     },
     "devDependencies": {
         "@ecl/builder": "5.1.0",

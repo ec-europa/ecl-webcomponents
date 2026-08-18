@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-animated-numbers",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.29.1",
+  "version": "0.30.0",
   "description": "ECL Animated Numbers",
   "main": "ecl-animated-numbers.tsx",
   "private": true,
@@ -13,8 +13,8 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "@ecl/web-components-button": "0.29.1",
-    "@ecl/web-components-icon": "0.29.1"
+    "@ecl/web-components-button": "0.30.0",
+    "@ecl/web-components-icon": "0.30.0"
   },
   "devDependencies": {
     "@ecl/animated-numbers": "5.1.0",
