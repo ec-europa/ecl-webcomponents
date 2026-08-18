@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-modal",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.29.1",
+  "version": "0.30.0",
   "description": "ECL Modal",
   "main": "ecl-modal.tsx",
   "private": true,
@@ -22,7 +22,7 @@
     "cross-env": "10.1.0"
   },
   "dependencies": {
-    "@ecl/web-components-button": "0.29.1"
+    "@ecl/web-components-button": "0.30.0"
   },
   "repository": {
     "type": "git",
