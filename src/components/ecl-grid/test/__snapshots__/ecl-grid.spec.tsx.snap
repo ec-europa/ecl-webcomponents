@@ -1,78 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-grid renders as container 1`] = `
-<div class="ecl-container">
+<ecl-grid class="ecl-container" container="" style="display: block;">
+  <!---->
   <div>
     Content inside container
   </div>
-</div>
+</ecl-grid>
 `;
 
 exports[`ecl-grid renders as row container 1`] = `
-<div class="ecl-row">
+<ecl-grid class="ecl-row" row="">
   <!---->
-  <div class="ecl-col-6">
+  <ecl-grid class="ecl-col-6" columns="6">
+    <!---->
     Column 1
-  </div>
-  <!---->
-  <div class="ecl-col-6">
+  </ecl-grid>
+  <ecl-grid class="ecl-col-6" columns="6">
+    <!---->
     Column 2
-  </div>
-</div>
+  </ecl-grid>
+</ecl-grid>
 `;
 
 exports[`ecl-grid renders with basic column configuration 1`] = `
-<div class="ecl-container">
+<ecl-grid class="ecl-col-6" columns="6">
   <!---->
-  <div class="ecl-col-6">
-    Content in 6 columns
-  </div>
-  <!---->
-  <div class="ecl-col-4">
-    Content in 4 columns
-  </div>
-  <!---->
-  <div class="ecl-col-2">
-    Content in 2 columns
-  </div>
-</div>
+  Content in 6 columns
+</ecl-grid>
 `;
 
 exports[`ecl-grid renders with breakpoint and columns (backward compatibility) 1`] = `
-<div class="ecl-container">
+<ecl-grid breakpoint="m" class="ecl-col-m-6" columns="6">
   <!---->
-  <div class="ecl-col-m-6">
-    Content in 6 columns on md
-  </div>
-  <!---->
-  <div class="ecl-col-l-4">
-    Content in 4 columns on lg
-  </div>
-</div>
+  Content in 6 columns on md
+</ecl-grid>
 `;
 
 exports[`ecl-grid renders with responsive columns (new API) 1`] = `
-<div class="ecl-container">
+<ecl-grid class="ecl-col-l-4 ecl-col-m-6 ecl-col-s-12 ecl-col-xl-3" columns="{&quot;s&quot;: 12, &quot;m&quot;: 6, &quot;l&quot;: 4, &quot;xl&quot;: 3}">
   <!---->
-  <div class="ecl-col-l-4 ecl-col-m-6 ecl-col-s-12 ecl-col-xl-3">
-    Responsive grid item
-  </div>
-  <!---->
-  <div class="ecl-col-l-4 ecl-col-m-6 ecl-col-s-12 ecl-col-xl-3">
-    Responsive grid item
-  </div>
-  <!---->
-  <div class="ecl-col-l-4 ecl-col-m-6 ecl-col-s-12 ecl-col-xl-3">
-    Responsive grid item
-  </div>
-</div>
+  Responsive grid item
+</ecl-grid>
 `;
 
 exports[`ecl-grid renders with responsive columns and style class 1`] = `
-<div class="ecl-container">
+<ecl-grid class="ecl-col-l-3 ecl-col-m-6 ecl-col-s-12 ecl-u-p-m" columns="{&quot;s&quot;: 12, &quot;m&quot;: 6, &quot;l&quot;: 3}" style-class="ecl-u-p-m">
   <!---->
-  <div class="ecl-col-l-3 ecl-col-m-6 ecl-col-s-12 ecl-u-p-m">
-    Content with padding
-  </div>
-</div>
+  Content with padding
+</ecl-grid>
 `;
