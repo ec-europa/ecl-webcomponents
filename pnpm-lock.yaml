@@ -773,6 +773,9 @@ importers:
       '@ecl/grid':
         specifier: 5.3.1
         version: 5.3.1
+      '@ecl/mixins-color':
+        specifier: 5.3.1
+        version: 5.3.1
       '@ecl/theme-ec':
         specifier: 5.3.1
         version: 5.3.1
@@ -1650,6 +1653,9 @@ importers:
       '@ecl/grid':
         specifier: 5.3.1
         version: 5.3.1
+      '@ecl/mixins-typography':
+        specifier: 5.3.1
+        version: 5.3.1
       '@ecl/news-ticker':
         specifier: 5.3.1
         version: 5.3.1
@@ -2208,6 +2214,9 @@ importers:
       '@ecl/builder':
         specifier: 5.3.1
         version: 5.3.1(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.9)
+      '@ecl/mixins-color':
+        specifier: 5.3.1
+        version: 5.3.1
       '@ecl/mixins-typography':
         specifier: 5.3.1
         version: 5.3.1
