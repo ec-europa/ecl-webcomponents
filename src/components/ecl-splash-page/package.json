@@ -13,14 +13,14 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "5.1.0",
-    "@ecl/grid": "5.1.0",
-    "@ecl/link": "5.1.0",
-    "@ecl/mixins-typography": "5.1.0",
-    "@ecl/splash-page": "5.1.0",
-    "@ecl/theme-ec": "5.1.0",
-    "@ecl/theme-eu": "5.1.0",
-    "@ecl/utility-screen-reader": "5.1.0",
+    "@ecl/builder": "5.3.1",
+    "@ecl/grid": "5.3.1",
+    "@ecl/link": "5.3.1",
+    "@ecl/mixins-typography": "5.3.1",
+    "@ecl/splash-page": "5.3.1",
+    "@ecl/theme-ec": "5.3.1",
+    "@ecl/theme-eu": "5.3.1",
+    "@ecl/utility-screen-reader": "5.3.1",
     "@ecl/web-components-grid": "0.30.0",
     "@ecl/web-components-picture": "0.30.0",
     "cross-env": "10.1.0"
