@@ -785,6 +785,15 @@ importers:
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
+      embla-carousel:
+        specifier: 9.0.0-rc03
+        version: 9.0.0-rc03
+      embla-carousel-accessibility:
+        specifier: 9.0.0-rc03
+        version: 9.0.0-rc03(embla-carousel@9.0.0-rc03)
+      embla-carousel-autoplay:
+        specifier: 9.0.0-rc03
+        version: 9.0.0-rc03(embla-carousel@9.0.0-rc03)
 
   src/components/ecl-category-filter:
     devDependencies:
@@ -2039,6 +2048,27 @@ importers:
         specifier: 5.3.1
         version: 5.3.1
       '@ecl/utility-screen-reader':
+        specifier: 5.3.1
+        version: 5.3.1
+      cross-env:
+        specifier: 10.1.0
+        version: 10.1.0
+
+  src/components/ecl-slider:
+    devDependencies:
+      '@ecl/builder':
+        specifier: 5.3.1
+        version: 5.3.1(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.9)
+      '@ecl/mixins-color':
+        specifier: 5.3.1
+        version: 5.3.1
+      '@ecl/slider':
+        specifier: 5.3.1
+        version: 5.3.1
+      '@ecl/theme-ec':
+        specifier: 5.3.1
+        version: 5.3.1
+      '@ecl/theme-eu':
         specifier: 5.3.1
         version: 5.3.1
       cross-env:
@@ -8778,6 +8808,11 @@ packages:
 
   embla-carousel-auto-scroll@9.0.0-rc03:
     resolution: {integrity: sha512-D18xNrv/wVGAiSHy1H9I7ZebyJbCVZqz5ubYeEgL61+v6Wc2raS5oF+9x9q2sdKyb/HfRY94r4RGibcRDyv4Jw==}
+    peerDependencies:
+      embla-carousel: 9.0.0-rc03
+
+  embla-carousel-autoplay@9.0.0-rc03:
+    resolution: {integrity: sha512-zf3x+Z3MGQfyd6aRrk4XRpu6u7afb5shKvSlj4ZHQHQxjgNfrBj98bghZ0jaUlGKAmx4A/5FJ99MLthaJupoEQ==}
     peerDependencies:
       embla-carousel: 9.0.0-rc03
 
@@ -22531,6 +22566,10 @@ snapshots:
       embla-carousel: 9.0.0-rc03
 
   embla-carousel-auto-scroll@9.0.0-rc03(embla-carousel@9.0.0-rc03):
+    dependencies:
+      embla-carousel: 9.0.0-rc03
+
+  embla-carousel-autoplay@9.0.0-rc03(embla-carousel@9.0.0-rc03):
     dependencies:
       embla-carousel: 9.0.0-rc03
 

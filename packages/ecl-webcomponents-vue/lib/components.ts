@@ -1021,6 +1021,7 @@ export const EclPopover: StencilVueComponent<JSX.EclPopover> = /*@__PURE__*/ def
 export const EclQuiz: StencilVueComponent<JSX.EclQuiz> = /*@__PURE__*/ defineContainer<JSX.EclQuiz>('ecl-quiz', undefined, [
   'theme',
   'styleClass',
+  'colorMode',
   'noScript',
   'itemId',
   'quizTitle',
@@ -1037,13 +1038,13 @@ export const EclQuiz: StencilVueComponent<JSX.EclQuiz> = /*@__PURE__*/ defineCon
 export const EclQuizCard: StencilVueComponent<JSX.EclQuizCard> = /*@__PURE__*/ defineContainer<JSX.EclQuizCard>('ecl-quiz-card', undefined, [
   'theme',
   'styleClass',
-  'category',
-  'successCategory',
-  'errorCategory',
   'flipText',
   'backText',
   'question',
   'quizName',
+  'image',
+  'imageAlt',
+  'imageDisplay',
   'mainIcon',
   'answer',
   'answerTitle',
@@ -1209,6 +1210,32 @@ export const EclSiteHeader: StencilVueComponent<JSX.EclSiteHeader> = /*@__PURE__
   'bannerTop',
   'bannerTopLink',
   'siteNameMobileOnly'
+]);
+
+
+export const EclSliderPager: StencilVueComponent<JSX.EclSliderPager> = /*@__PURE__*/ defineContainer<JSX.EclSliderPager>('ecl-slider-pager', undefined, [
+  'theme',
+  'styleClass',
+  'srPrev',
+  'srNext',
+  'srPlay',
+  'srPause',
+  'dots',
+  'playPause',
+  'playIcon',
+  'pauseIcon',
+  'size',
+  'playExtraClasses',
+  'pauseExtraClasses',
+  'dotExtraClasses',
+  'dotsExtraClasses',
+  'prevExtraClasses',
+  'prevExtraAttributes',
+  'nextExtraClasses',
+  'nextExtraAttributes',
+  'templateDataAttribute',
+  'hideLabel',
+  'noScript'
 ]);
 
 

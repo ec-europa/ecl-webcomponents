@@ -27,7 +27,6 @@ export class EclSloganTicker {
       this.styleClass
     ];
 
-
     if (this.colorMode) {
       styleClasses.push(`ecl-color-mode--${this.colorMode}`);
     }

@@ -18,6 +18,13 @@
 | `withButton` | `with-button` |             | `boolean` | `true`      |
 
 
+## Slots
+
+| Slot | Description      |
+| ---- | ---------------- |
+|      | The default slot |
+
+
 ## Dependencies
 
 ### Depends on

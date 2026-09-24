@@ -19,6 +19,14 @@
 | `triggerAriaLabel` | `trigger-aria-label` |             | `string`  | `undefined` |
 
 
+## Slots
+
+| Slot        | Description      |
+| ----------- | ---------------- |
+|             | The default slot |
+| `"sublist"` |                  |
+
+
 ## Dependencies
 
 ### Depends on

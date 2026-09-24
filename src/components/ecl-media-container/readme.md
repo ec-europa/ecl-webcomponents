@@ -32,6 +32,16 @@
 | `videoTitle`      | `video-title`      |             | `string`  | `undefined` |
 
 
+## Slots
+
+| Slot               | Description      |
+| ------------------ | ---------------- |
+|                    | The default slot |
+| `"embedded-media"` |                  |
+| `"expandable"`     |                  |
+| `"sources"`        |                  |
+
+
 ## Dependencies
 
 ### Used by

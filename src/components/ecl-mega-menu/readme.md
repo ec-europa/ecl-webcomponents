@@ -23,6 +23,14 @@
 | `theme`              | `theme`          |             | `string`  | `undefined` |
 
 
+## Slots
+
+| Slot                | Description      |
+| ------------------- | ---------------- |
+|                     | The default slot |
+| `"featured-second"` |                  |
+
+
 ## Dependencies
 
 ### Depends on

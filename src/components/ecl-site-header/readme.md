@@ -42,6 +42,18 @@
 | `theme`              | `theme`                 |             | `string`  | `'ec'`                                                                         |
 
 
+## Slots
+
+| Slot                                  | Description |
+| ------------------------------------- | ----------- |
+| `"ecl-site-header-login-description"` |             |
+| `"eu-category"`                       |             |
+| `"logoSources"`                       |             |
+| `"menu"`                              |             |
+| `"non-eu-category"`                   |             |
+| `"search"`                            |             |
+
+
 ## Dependencies
 
 ### Depends on

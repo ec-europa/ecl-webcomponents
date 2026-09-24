@@ -24,7 +24,10 @@
     "@ecl/theme-ec": "5.3.1",
     "@ecl/mixins-color": "5.3.1",
     "@ecl/theme-eu": "5.3.1",
-    "cross-env": "10.1.0"
+    "cross-env": "10.1.0",
+    "embla-carousel": "9.0.0-rc03",
+    "embla-carousel-accessibility": "9.0.0-rc03",
+    "embla-carousel-autoplay": "9.0.0-rc03"
   },
   "repository": {
     "type": "git",

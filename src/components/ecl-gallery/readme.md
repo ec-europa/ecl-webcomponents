@@ -24,6 +24,16 @@
 | `type`            | `type`              |             | `string`  | `'image'`   |
 
 
+## Slots
+
+| Slot                  | Description      |
+| --------------------- | ---------------- |
+|                       | The default slot |
+| `"sources"`           |                  |
+| `"thumbnail-sources"` |                  |
+| `"video"`             |                  |
+
+
 ## Dependencies
 
 ### Depends on

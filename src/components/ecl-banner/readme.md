@@ -38,6 +38,14 @@
 | `vertical`        | `vertical`          |             | `string`  | `'center'`  |
 
 
+## Slots
+
+| Slot        | Description      |
+| ----------- | ---------------- |
+|             | The default slot |
+| `"sources"` |                  |
+
+
 ## Dependencies
 
 ### Used by

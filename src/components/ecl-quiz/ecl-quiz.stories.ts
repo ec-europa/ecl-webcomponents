@@ -5,13 +5,13 @@ const getArgs = () => {
                   Esse nostrud aliqua pariatur pariatur officia non laboris cillum velit dolore in sit laboris fugiat.`,
     withBackground: false,
     fullWidth: false,
-
+    mainIcon: 'none',
+    imageDisplay: 'none',
   };
 };
 
 const getArgTypes = () => {
   return {
-    color_mode: { table: { disable: true } },
     quizTitle: {
       name: 'quiz-title',
       type: { name: 'string' },
@@ -32,6 +32,61 @@ const getArgTypes = () => {
       type: { name: 'boolean' },
       description: 'Full width of the viewport, with background',
     },
+    mainIcon: {
+      name: 'main-icon',
+      description: 'Name of the icon (sample list)',
+      type: 'select',
+      options: [
+        'none',
+        'sparkle',
+        'aperture',
+        'avocado',
+        'at',
+        'barcode',
+        'baseball',
+        'bank',
+        'bell',
+        'question-mark',
+      ],
+      mapping: {
+        none: 'none',
+        sparkle: 'sparkle',
+        aperture: 'aperture',
+        avocado: 'avocado',
+        at: 'at',
+        barcode: 'barcode',
+        baseball: 'baseball',
+        bank: 'bank',
+        bell: 'bell',
+        'question-mark': 'question-mark',
+      },
+      table: {
+        type: { summary: 'string' },
+        defaultValue: { summary: '' },
+        category: 'First card',
+      },
+    },
+    imageDisplay: {
+      name: 'image-display',
+      control: {
+        type: 'select',
+        labels: {
+          '': 'none',
+          always: 'front and back',
+          reveal: 'only back',
+        },
+      },
+      options: ['none', 'always', 'reveal'],
+      mapping: {
+        none: '',
+        'front and back': 'always',
+        'only back': 'reveal',
+      },
+      table: {
+        type: { summary: 'string' },
+        defaultValue: { summary: '' },
+      },
+    },
   };
 };
 
@@ -50,50 +105,62 @@ const Template = (args) =>
       full-width="${args.fullWidth}"
       prev-label="Previous"
       next-label="Next"
+      color-mode="${args.color_mode}"
     >
       <ecl-quiz-card
         variant="reveal"
-        main-icon="sparkle"
+        main-icon="${args.mainIcon}"
         question="When you travel in the EU, what happens to your roaming charges?"
         answer="You usually pay the same at home, no extra roaming fees."
         flip-text="Reveal answer"
         back-text="Flip back"
+        image-display="${args.imageDisplay}"
+        ${args.imageDisplay !== '' ? 'image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"' : "" }
+
       >
       </ecl-quiz-card>
       <ecl-quiz-card
         variant="reveal"
-        main-icon="sparkle"
+        main-icon="${args.mainIcon}"
         question="What document allows EU citizens to travel freely between most EU countries?"
         answer="A valid ID card or passport is usually enough."
         flip-text="Reveal answer"
         back-text="Flip back"
+        image-display="${args.imageDisplay}"
+        ${args.imageDisplay !== '' ? 'image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg"': "" }
       >
       </ecl-quiz-card>
       <ecl-quiz-card
         variant="reveal"
-        main-icon="sparkle"
+        main-icon="${args.mainIcon}"
         question="What currency is used in many EU countries?"
         answer="The euro (€) is used in many EU member states.."
         flip-text="Reveal answer"
         back-text="Flip back"
+        image-display="${args.imageDisplay}"
+        ${args.imageDisplay !== '' ? 'image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"': "" }
       >
       </ecl-quiz-card>
       <ecl-quiz-card
         variant="reveal"
-        main-icon="sparkle"
+        main-icon="${args.mainIcon}"
         question="Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
         answer="Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum"
         flip-text="Reveal answer"
         back-text="Flip back"
+        image-display="${args.imageDisplay}"
+        ${args.imageDisplay !== '' ? 'image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"': "" }
       >
       </ecl-quiz-card>
       <ecl-quiz-card
         variant="reveal"
-        main-icon="sparkle"
+        main-icon="${args.mainIcon}"
         question="Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
         answer="Duis id mattis libero. Quisque accumsan nisi in nisl ultrices dictum"
         flip-text="Reveal answer"
         back-text="Flip back"
+        image-display="${args.imageDisplay}"
+        ${args.imageDisplay !== '' ? 'image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg"': "" }
       >
       </ecl-quiz-card>
     </ecl-quiz>
@@ -101,12 +168,15 @@ const Template = (args) =>
 
 export const Quiz = Template.bind({});
 Quiz.storyName = 'reveal';
-Quiz.args = getArgs();
+Quiz.args = {
+  ...getArgs(),
+  mainIcon: 'sparkle',
+};
 Quiz.argTypes = getArgTypes();
 
 const TemplatePoll = (args) => 
   `<ecl-grid container>
-      <ecl-quiz
+    <ecl-quiz
       quiz-title="${args.quizTitle}"
       description="${args.description}"
       item-id="quiz-example"
@@ -114,14 +184,12 @@ const TemplatePoll = (args) =>
       with-background="${args.withBackground}"
       prev-label="Previous"
       next-label="Next"
+      color-mode="${args.color_mode}"
     >
       <ecl-quiz-card
-        category="Quiz"
         variant="poll"
-        main-icon="question"
+        main-icon="${args.mainIcon}"
         skip-text="Use ESC to skip the quiz"
-        success-category="Correct"
-        error-category="Incorrect"
         correct-label="Correct answer"
         incorrect-label="Incorrect answer"
         correct-chosen-label="Your correct answer"
@@ -134,14 +202,13 @@ const TemplatePoll = (args) =>
           { "label": "European parliament" }, { "label": "European Central Bank" },
           { "label": "Court of Justice of the European Union" }
         ]'
+        image-display="${args.imageDisplay}"
+        ${args.imageDisplay !== '' ? 'image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"': "" }
       >
       </ecl-quiz-card>
       <ecl-quiz-card
         variant="poll"
-        main-icon="question"
-        category="Quiz"
-        success-category="Correct"
-        error-category="Incorrect"
+        main-icon="${args.mainIcon}"
         correct-label="Correct answer"
         incorrect-label="Incorrect answer"
         correct-chosen-label="Your correct answer"
@@ -154,14 +221,13 @@ const TemplatePoll = (args) =>
           { "label": "A valid ID card or passport", "correct": "true" },
           { "label": "A valid passport." }, { "label": "None of these" }
         ]'
+        image-display="${args.imageDisplay}"
+        ${args.imageDisplay !== '' ? 'image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image5.jpg"': "" }
       >
       </ecl-quiz-card>
       <ecl-quiz-card
-        category="Quiz"
         variant="poll"
-        main-icon="question"
-        success-category="Correct"
-        error-category="Incorrect"
+        main-icon="${args.mainIcon}"
         correct-label="Correct answer"
         incorrect-label="Incorrect answer"
         correct-chosen-label="Your correct answer"
@@ -174,14 +240,13 @@ const TemplatePoll = (args) =>
           { "label": "The Leu is by far the most used currency in the European Union" },
           { "label": "The euro (€) is used in many EU member states.", "correct": "true" }
         ]'
+        image-display="${args.imageDisplay}"
+        ${args.imageDisplay !== '' ? 'image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"': "" }
       >
       </ecl-quiz-card>
       <ecl-quiz-card
-        category="Quiz"
         variant="poll"
-        main-icon="question"
-        success-category="Correct"
-        error-category="Incorrect"
+        main-icon="${args.mainIcon}"
         correct-label="Correct answer"
         incorrect-label="Incorrect answer"
         correct-chosen-label="Your correct answer"
@@ -194,6 +259,8 @@ const TemplatePoll = (args) =>
           { "label": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "correct": "true" },
           { "label": "Ivamus auctor blandit auctor." }
         ]'
+        image-display="${args.imageDisplay}"
+        ${args.imageDisplay !== '' ? 'image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"': "" }
       >
       </ecl-quiz-card>
     </ecl-quiz>
@@ -201,5 +268,8 @@ const TemplatePoll = (args) =>
 
 export const QuizPoll = TemplatePoll.bind({});
 QuizPoll.storyName = 'poll';
-QuizPoll.args = getArgs();
+QuizPoll.args = {
+  ...getArgs(),
+  mainIcon: 'question-mark',
+};
 QuizPoll.argTypes = getArgTypes();

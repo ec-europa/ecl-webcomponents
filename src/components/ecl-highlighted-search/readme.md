@@ -25,6 +25,14 @@
 | `theme`           | `theme`            |             | `string`  | `undefined`                                                                  |
 
 
+## Slots
+
+| Slot     | Description      |
+| -------- | ---------------- |
+|          | The default slot |
+| `"tags"` |                  |
+
+
 ## Dependencies
 
 ### Depends on

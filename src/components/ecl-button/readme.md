@@ -22,6 +22,15 @@
 | `variant`               | `variant`                 |             | `string`  | `''`        |
 
 
+## Slots
+
+| Slot            | Description      |
+| --------------- | ---------------- |
+|                 | The default slot |
+| `"icon-after"`  |                  |
+| `"icon-before"` |                  |
+
+
 ## Dependencies
 
 ### Used by
@@ -47,6 +56,7 @@
  - [ecl-search-form](../ecl-search-form)
  - [ecl-select](../ecl-select)
  - [ecl-site-header](../ecl-site-header)
+ - [ecl-slider-pager](../ecl-slider)
  - [ecl-slogan-ticker](../ecl-slogan-ticker)
  - [ecl-story-card](../ecl-story-card)
  - [ecl-tabs](../ecl-tabs)
@@ -81,6 +91,7 @@ graph TD;
   ecl-search-form --> ecl-button
   ecl-select --> ecl-button
   ecl-site-header --> ecl-button
+  ecl-slider-pager --> ecl-button
   ecl-slogan-ticker --> ecl-button
   ecl-story-card --> ecl-button
   ecl-tabs --> ecl-button
