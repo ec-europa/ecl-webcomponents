@@ -802,6 +802,7 @@ export const EclMegaMenuItem: StencilVueComponent<JSX.EclMegaMenuItem> = /*@__PU
   'seeAll',
   'hasInfo',
   'hasFeatured',
+  'isCurrent',
   'featuredTitle',
   'hasChildren',
   'seeAllLabel',
@@ -821,6 +822,7 @@ export const EclMegaMenuSubitem: StencilVueComponent<JSX.EclMegaMenuSubitem> = /
   'seeAll',
   'hasFeatured',
   'featuredTitle',
+  'isCurrent',
   'hasChildren',
   'seeAllLabel',
   'ariaLabel'

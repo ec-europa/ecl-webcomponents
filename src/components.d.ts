@@ -1458,6 +1458,10 @@ export namespace Components {
         /**
           * @default false
          */
+        "isCurrent": boolean;
+        /**
+          * @default false
+         */
         "isPromotional": boolean;
         "label": string;
         /**
@@ -1488,6 +1492,10 @@ export namespace Components {
           * @default false
          */
         "hasFeatured": boolean;
+        /**
+          * @default false
+         */
+        "isCurrent": boolean;
         "label": string;
         /**
           * @default false
@@ -5186,6 +5194,10 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
+        "isCurrent"?: boolean;
+        /**
+          * @default false
+         */
         "isPromotional"?: boolean;
         "label": string;
         /**
@@ -5216,6 +5228,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "hasFeatured"?: boolean;
+        /**
+          * @default false
+         */
+        "isCurrent"?: boolean;
         "label": string;
         /**
           * @default false
@@ -7296,6 +7312,7 @@ declare namespace LocalJSX {
         "seeAll": boolean;
         "hasInfo": boolean;
         "hasFeatured": boolean;
+        "isCurrent": boolean;
         "featuredTitle": string;
         "hasChildren": boolean;
         "seeAllLabel": string;
@@ -7313,6 +7330,7 @@ declare namespace LocalJSX {
         "seeAll": boolean;
         "hasFeatured": boolean;
         "featuredTitle": string;
+        "isCurrent": boolean;
         "hasChildren": boolean;
         "seeAllLabel": string;
         "ariaLabel": string;

@@ -14,6 +14,7 @@
 | `featuredTitle`      | `featured-title` |             | `string`  | `undefined` |
 | `hasChildren`        | `has-children`   |             | `boolean` | `false`     |
 | `hasFeatured`        | `has-featured`   |             | `boolean` | `false`     |
+| `isCurrent`          | `is-current`     |             | `boolean` | `false`     |
 | `label` _(required)_ | `label`          |             | `string`  | `undefined` |
 | `oneLevelOnly`       | `one-level-only` |             | `boolean` | `false`     |
 | `path`               | `path`           |             | `string`  | `undefined` |
