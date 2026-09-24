@@ -76,6 +76,7 @@ export class EclStoryCard {
         picture={item.picture}
         teaser-label={item.teaserLabel}
         order={String(index)}
+        {...(index === 0 ? { 'tabindex': '0'} : { 'tabindex' : '-1' })}
       />
     ));
   }
