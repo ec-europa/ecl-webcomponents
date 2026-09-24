@@ -1866,6 +1866,12 @@ importers:
       '@ecl/web-components-link':
         specifier: 0.30.0
         version: link:../ecl-link
+      '@ecl/web-components-picture':
+        specifier: 0.30.0
+        version: link:../ecl-picture
+      '@ecl/web-components-slider':
+        specifier: 0.30.0
+        version: link:../ecl-slider
     devDependencies:
       '@ecl/builder':
         specifier: 5.3.1
@@ -2240,6 +2246,9 @@ importers:
       '@ecl/web-components-picture':
         specifier: 0.30.0
         version: link:../ecl-picture
+      '@ecl/web-components-slider':
+        specifier: 0.30.0
+        version: link:../ecl-slider
     devDependencies:
       '@ecl/builder':
         specifier: 5.3.1
