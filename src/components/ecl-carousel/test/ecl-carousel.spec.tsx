@@ -12,12 +12,10 @@ describe('ecl-carousel', () => {
     const page = await newSpecPage({
       components: [EclCarousel, EclBanner, EclIcon],
       html: `<ecl-carousel
-              carousel-id="ecl-carousel-demo"
-              slides-number="3"
+              color-mode="orange"
             >
               <ecl-carousel-item
                 banner-variant="text-box"
-                theme="ec"
                 cta-link="/example.html"
                 cta-label="Subscribe"
                 centered=false
@@ -29,7 +27,6 @@ describe('ecl-carousel', () => {
               </ecl-carousel-item>
               <ecl-carousel-item
                 banner-variant="text-highlight"
-                theme="ec"
                 size="l"
                 cta-link="/example.html"
                 cta-label="Subscribe"
@@ -41,7 +38,6 @@ describe('ecl-carousel', () => {
               </ecl-carousel-item>
               <ecl-carousel-item
                 banner-variant="image-overlay"
-                theme="ec"
                 size="l"
                 cta-link="/example.html"
                 cta-label="Subscribe"

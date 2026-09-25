@@ -285,7 +285,6 @@ export namespace Components {
         "theme": string;
     }
     interface EclCarousel {
-        "carouselId": string;
         "colorMode": string;
         /**
           * @default 'of'
@@ -299,11 +298,10 @@ export namespace Components {
           * @default false
          */
         "noScript": boolean;
-        "slidesNumber": number;
         /**
-          * @default 'Go to slide %d'
+          * @default ''
          */
-        "srNavigation": string;
+        "srDescription": string;
         /**
           * @default 'Next slides'
          */
@@ -320,6 +318,10 @@ export namespace Components {
           * @default 'Prev slides'
          */
         "srPrevious": string;
+        /**
+          * @default 'carousel'
+         */
+        "srRole": string;
         /**
           * @default ''
          */
@@ -344,6 +346,10 @@ export namespace Components {
           * @default 'm'
          */
         "size": string;
+        /**
+          * @default 'slide'
+         */
+        "srSlideRole": string;
         /**
           * @default ''
          */
@@ -4015,7 +4021,6 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclCarousel {
-        "carouselId"?: string;
         "colorMode"?: string;
         /**
           * @default 'of'
@@ -4029,11 +4034,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "noScript"?: boolean;
-        "slidesNumber"?: number;
         /**
-          * @default 'Go to slide %d'
+          * @default ''
          */
-        "srNavigation"?: string;
+        "srDescription"?: string;
         /**
           * @default 'Next slides'
          */
@@ -4050,6 +4054,10 @@ declare namespace LocalJSX {
           * @default 'Prev slides'
          */
         "srPrevious"?: string;
+        /**
+          * @default 'carousel'
+         */
+        "srRole"?: string;
         /**
           * @default ''
          */
@@ -4074,6 +4082,10 @@ declare namespace LocalJSX {
           * @default 'm'
          */
         "size"?: string;
+        /**
+          * @default 'slide'
+         */
+        "srSlideRole"?: string;
         /**
           * @default ''
          */
@@ -6769,16 +6781,15 @@ declare namespace LocalJSX {
         "styleClass": string;
         "theme": string;
         "noScript": boolean;
-        "carouselId": string;
         "colorMode": string;
-        "slidesNumber": number;
         "fullWidth": boolean;
+        "srDescription": string;
         "counterLabel": string;
-        "srNavigation": string;
         "srPrevious": string;
         "srNext": string;
         "srPause": string;
         "srPlay": string;
+        "srRole": string;
     }
     interface EclCarouselItemAttributes {
         "styleClass": string;
@@ -6786,6 +6797,7 @@ declare namespace LocalJSX {
         "credit": string;
         "image": string;
         "theme": string;
+        "srSlideRole": string;
         "ctaLink": string;
         "ctaLabel": string;
         "size": string;

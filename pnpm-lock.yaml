@@ -21,9 +21,6 @@ patchedDependencies:
   '@ecl/builder':
     hash: 8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904
     path: patches/@ecl__builder.patch
-  '@ecl/carousel':
-    hash: fc353c2aaf48b4de529ef25b08d11f551a109b7a45ebb6cfe1366967369c0373
-    path: patches/@ecl__carousel.patch
   '@ecl/select':
     hash: 90600884102a755e087577be808da2a3545ebcdc268c63e011c83ece2ce86991
     path: patches/@ecl__select.patch
@@ -760,6 +757,9 @@ importers:
       '@ecl/web-components-icon':
         specifier: 0.30.0
         version: link:../ecl-icon
+      '@ecl/web-components-slider':
+        specifier: 0.30.0
+        version: link:../ecl-slider
     devDependencies:
       '@ecl/banner':
         specifier: 5.3.1
@@ -769,7 +769,7 @@ importers:
         version: 5.3.1(patch_hash=8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.9)
       '@ecl/carousel':
         specifier: 5.3.1
-        version: 5.3.1(patch_hash=fc353c2aaf48b4de529ef25b08d11f551a109b7a45ebb6cfe1366967369c0373)
+        version: 5.3.1
       '@ecl/grid':
         specifier: 5.3.1
         version: 5.3.1
@@ -17113,7 +17113,7 @@ snapshots:
       '@ecl/content-block': 5.3.1
       '@ecl/picture': 5.3.1
 
-  '@ecl/carousel@5.3.1(patch_hash=fc353c2aaf48b4de529ef25b08d11f551a109b7a45ebb6cfe1366967369c0373)':
+  '@ecl/carousel@5.3.1':
     dependencies:
       '@ecl/banner': 5.3.1(patch_hash=476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759)
       '@ecl/button': 5.3.1
@@ -17378,7 +17378,7 @@ snapshots:
       '@ecl/breadcrumb': 5.3.1
       '@ecl/button': 5.3.1
       '@ecl/card': 5.3.1
-      '@ecl/carousel': 5.3.1(patch_hash=fc353c2aaf48b4de529ef25b08d11f551a109b7a45ebb6cfe1366967369c0373)
+      '@ecl/carousel': 5.3.1
       '@ecl/category-filter': 5.3.1
       '@ecl/checkbox': 5.3.1
       '@ecl/color-modes': 5.3.1
@@ -17485,7 +17485,7 @@ snapshots:
       '@ecl/breadcrumb': 5.3.1
       '@ecl/button': 5.3.1
       '@ecl/card': 5.3.1
-      '@ecl/carousel': 5.3.1(patch_hash=fc353c2aaf48b4de529ef25b08d11f551a109b7a45ebb6cfe1366967369c0373)
+      '@ecl/carousel': 5.3.1
       '@ecl/category-filter': 5.3.1
       '@ecl/checkbox': 5.3.1
       '@ecl/content-block': 5.3.1

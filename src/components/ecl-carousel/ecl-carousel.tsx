@@ -1,4 +1,4 @@
-import { Component, h, Prop, Element } from '@stencil/core';
+import { Component, h, Prop, Element, State } from '@stencil/core';
 import Carousel from "@ecl/carousel";
 declare var ECL: any;
 
@@ -17,16 +17,16 @@ export class EclCarousel {
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
   @Prop() noScript: boolean = false;
-  @Prop() carouselId: string;
   @Prop() colorMode: string;
-  @Prop() slidesNumber: number;
   @Prop() fullWidth: boolean = false;
+  @Prop() srDescription: string = '';
   @Prop() counterLabel: string = 'of';
-  @Prop() srNavigation: string = 'Go to slide %d';
   @Prop() srPrevious: string = 'Prev slides';
   @Prop() srNext: string = 'Next slides';
   @Prop() srPause: string = 'Pause carousel';
   @Prop() srPlay: string = 'Play carousel';
+  @Prop() srRole: string = 'carousel';
+  @State() teasers: string[] = [];
 
   getClass(): string {
     const styleClasses = [
@@ -49,82 +49,96 @@ export class EclCarousel {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
   }
 
-  componentDidRender() {
-    const slides = this.el.querySelectorAll('.ecl-carousel__slide');
-    slides.forEach((slide) => {
+  componentDidLoad() {
+    const slides = this.el.querySelectorAll<HTMLElement>('.ecl-carousel__slide');
+  
+    this.teasers = Array.from(slides).map((slide, i) => {
+      const title = slide.querySelector('.ecl-banner__title-text');
+      const desc = slide.querySelector('.ecl-banner__description-text');
+  
       slide.classList.add(`sc-ecl-carousel-${this.theme}`);
+
+      slide.inert = i !== 0;
+  
+      return title?.textContent || desc?.textContent || '';
     });
+    
     if (!this.noScript) {
-      ;(window as any).ECL = (window as any).ECL || {};
-      ECL.Carousel = Carousel;
-      const carousel = new Carousel(this.el.firstElementChild);
-      carousel.init();
+      setTimeout(() => {
+        ;(window as any).ECL = (window as any).ECL || {};
+        ECL.Carousel = Carousel;
+        const carousel = new Carousel(this.el.firstElementChild);
+        carousel.init();
+      }, 100);
     }
   }
 
   render() {
     return (
-      <div
+      <section
         class={this.getClass()}
         data-ecl-carosuel
+        aria-roledescription={this.srRole}
+        data-ecl-carousel-counter-label={this.counterLabel}
+        {...this.srDescription && { 'aria-label': [this.srDescription] }}
       >
         <div class="ecl-carousel__controls">
           <div class="ecl-container">
-            <div class="ecl-carousel__autoplay">
-              <ecl-button
-                type="button"
-                variant="tertiary"
-                buttonStyle="neutral"
-                styleClass={`ecl-carousel__play sc-ecl-carousel-${this.theme}`}
-                hideLabel
-              >
-                <ecl-icon
-                  icon="play-outline"
+            <div class="ecl-carousel__navigation">
+              <div class="ecl-carousel__pager-container">
+                <ecl-slider-pager
+                  styleClass={`ecl-carousel__pager sc-ecl-carousel-${this.theme}`}
+                  prevExtraClasses={`ecl-carousel__prev sc-ecl-carousel-${this.theme}`}
+                  nextExtraClasses={`ecl-carousel__next sc-ecl-carousel-${this.theme}`}
+                  playExtraClasses={`ecl-carousel__play sc-ecl-carousel-${this.theme}`}
+                  pauseExtraClasses={`ecl-carousel__pause sc-ecl-carousel-${this.theme}`}
+                  dotsExtraClasses={`ecl-carousel__dots sc-ecl-carousel-${this.theme}`}
+                  dotExtraClasses={`ecl-carousel__dot sc-ecl-carousel-${this.theme}`}
+                  srPrev={this.srPrevious}
+                  srNext={this.srNext}
+                  srPlay={this.srPlay}
+                  srPause={this.srPause}
                   size="m"
-                  slot="icon-after"
-                  style-class={`ecl-carousel__icon-default sc-ecl-carousel-${this.theme}`}
-                ></ecl-icon>
-                {this.srPlay}
-              </ecl-button>
-              <ecl-button 
-                type="button" 
-                styleClass={`ecl-carousel__pause sc-ecl-carousel-${this.theme}`}
-                hideLabel
-                buttonStyle="neutral"
-                variant="tertiary"
+                  hideLabel
+                  playPause
+                  templateDataAttribute="data-ecl-carousel-dot-template"
+                ></ecl-slider-pager>
+                <div class="ecl-carousel__counter" dir="ltr"></div>
+              </div>
+              <div
+                class="ecl-carousel__teasers"
+                role="tablist"
               >
-                <ecl-icon
-                  icon="pause-outline"
-                  size="m"
-                  slot="icon-after"
-                  style-class={`ecl-carousel__icon-default sc-ecl-carousel-${this.theme}`}
-                ></ecl-icon>
-                {this.srPause}
-              </ecl-button>
-            </div>
-            <div class="ecl-carousel__navigation" role="tablist">
-            { [...Array(this.slidesNumber)].map((_, i) =>
-              <ecl-button
-                type="button"
-                variant="tertiary"
-                buttonStyle="neutral"
-                styleClass={`ecl-carousel__navigation-item sc-ecl-carousel-${this.theme}`}
-              >
-                {i + 1}
-              </ecl-button>
-            ) } 
+              { this.teasers.map((teaser, i) => (
+                <button
+                  class="ecl-carousel__teaser-button"
+                  type="button"
+                  data-ecl-carousel-teaser-button
+                  data-ecl-carousel-slide-index={ i }
+                  role="tab"
+                  tabindex="-1"
+                >
+                  <span class="ecl-carousel__teaser-loading-bar" aria-hidden="true">
+                    <span class="ecl-carousel__teaser-loading-bar-completion"></span>
+                  </span>
+                  <span class="ecl-carousel__teaser-content">
+                    <span class="ecl-carousel__teaser-title">{teaser}</span>
+                  </span>
+                </button>
+                )
+              )}
+              </div>
             </div>
           </div>
         </div>
-        <div class="ecl-carousel__container">
+        <div class="ecl-carousel__viewport">
           <div
             class="ecl-carousel__slides"
-            id={this.carouselId}
           >
             <slot></slot>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

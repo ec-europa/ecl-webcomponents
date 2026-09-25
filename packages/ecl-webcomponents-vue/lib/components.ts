@@ -160,16 +160,15 @@ export const EclCarousel: StencilVueComponent<JSX.EclCarousel> = /*@__PURE__*/ d
   'styleClass',
   'theme',
   'noScript',
-  'carouselId',
   'colorMode',
-  'slidesNumber',
   'fullWidth',
+  'srDescription',
   'counterLabel',
-  'srNavigation',
   'srPrevious',
   'srNext',
   'srPause',
-  'srPlay'
+  'srPlay',
+  'srRole'
 ]);
 
 
@@ -179,6 +178,7 @@ export const EclCarouselItem: StencilVueComponent<JSX.EclCarouselItem> = /*@__PU
   'credit',
   'image',
   'theme',
+  'srSlideRole',
   'ctaLink',
   'ctaLabel',
   'size',

@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "@ecl/web-components-button": "0.30.0",
-    "@ecl/web-components-icon": "0.30.0"
+    "@ecl/web-components-icon": "0.30.0",
+    "@ecl/web-components-slider": "0.30.0"
   },
   "devDependencies": {
     "@ecl/banner": "5.3.1",

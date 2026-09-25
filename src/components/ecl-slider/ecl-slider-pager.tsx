@@ -65,8 +65,9 @@ export class EclSliderPager {
       { this.playPause &&
       <Fragment>
         <ecl-button
-          variant="tertiary"
+          variant="secondary"
           type="button"
+          button-style="neutral"
           size={this.size}
           data-ecl-slogan-ticker-play
           style-class={`ecl-slider-pager__play sc-ecl-slider-pager-${this.theme}${this.playExtraClasses ? ' ' + this.playExtraClasses : ''}`}
@@ -81,9 +82,10 @@ export class EclSliderPager {
           ></ecl-icon>
         </ecl-button>
         <ecl-button
-          variant="tertiary"
+          variant="secondary"
           type="button"
           hide-label
+          button-style="neutral"
           size={this.size}
           style-class={`ecl-slider-pager__pause sc-ecl-slider-pager-${this.theme}${this.pauseExtraClasses ? ' ' + this.pauseExtraClasses : ''}`}          
         >
@@ -100,6 +102,7 @@ export class EclSliderPager {
           variant="tertiary"
           type="button"
           size={this.size}
+          button-style="neutral"
           style-class={`ecl-slider-pager__prev sc-ecl-slider-pager-${this.theme}${this.prevExtraClasses ? ' ' + this.prevExtraClasses : ''}`}
           {...(this.hideLabel && { 'hide-label': '' })}
           {...(this.prevExtraAttributes && { [this.prevExtraAttributes] : '' })}
@@ -120,6 +123,7 @@ export class EclSliderPager {
         <ecl-button
           variant="tertiary"
           type="button"
+          button-style="neutral"
           size={this.size}
           style-class={`ecl-slider-pager__next sc-ecl-slider-pager-${this.theme}${this.nextExtraClasses ? ' ' + this.nextExtraClasses : ''}`}
           {...(this.hideLabel && { 'hide-label': '' })}

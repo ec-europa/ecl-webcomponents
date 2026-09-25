@@ -148,10 +148,10 @@ export class EclStoryCard {
             srNext="Next"
             srPlay="Play"
             srPause="Pause"
+            playPause
+            hideLabel
             prevExtraAttributes="data-ecl-story-card-prev"
             nextExtraAttributes="data-ecl-story-card-next"
-            dotsExtraClasses="ecl-story-card__dots"
-            dotExtraClasses="ecl-story-card__dot"
             templateDataAttribute="data-ecl-story-card-dot-template"
           ></ecl-slider-pager>
         </div>

@@ -37,6 +37,7 @@
 
 ### Used by
 
+ - [ecl-carousel](../ecl-carousel)
  - [ecl-quiz](../ecl-quiz)
  - [ecl-story-card](../ecl-story-card)
 
@@ -51,6 +52,7 @@ graph TD;
   ecl-slider-pager --> ecl-button
   ecl-slider-pager --> ecl-icon
   ecl-button --> ecl-indicator
+  ecl-carousel --> ecl-slider-pager
   ecl-quiz --> ecl-slider-pager
   ecl-story-card --> ecl-slider-pager
   style ecl-slider-pager fill:#f9f,stroke:#333,stroke-width:4px

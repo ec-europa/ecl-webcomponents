@@ -37,7 +37,6 @@
 
  - [ecl-banner](../ecl-banner)
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
- - [ecl-carousel](../ecl-carousel)
  - [ecl-expandable](../ecl-expandable)
  - [ecl-file](../ecl-file)
  - [ecl-gallery](../ecl-gallery)
@@ -72,7 +71,6 @@ graph TD;
   ecl-button --> ecl-indicator
   ecl-banner --> ecl-button
   ecl-breadcrumb-item --> ecl-button
-  ecl-carousel --> ecl-button
   ecl-expandable --> ecl-button
   ecl-file --> ecl-button
   ecl-gallery --> ecl-button
