@@ -285,7 +285,6 @@ export namespace Components {
         "theme": string;
     }
     interface EclCarousel {
-        "carouselId": string;
         "colorMode": string;
         /**
           * @default 'of'
@@ -299,11 +298,10 @@ export namespace Components {
           * @default false
          */
         "noScript": boolean;
-        "slidesNumber": number;
         /**
-          * @default 'Go to slide %d'
+          * @default ''
          */
-        "srNavigation": string;
+        "srDescription": string;
         /**
           * @default 'Next slides'
          */
@@ -320,6 +318,10 @@ export namespace Components {
           * @default 'Prev slides'
          */
         "srPrevious": string;
+        /**
+          * @default 'carousel'
+         */
+        "srRole": string;
         /**
           * @default ''
          */
@@ -344,6 +346,10 @@ export namespace Components {
           * @default 'm'
          */
         "size": string;
+        /**
+          * @default 'slide'
+         */
+        "srSlideRole": string;
         /**
           * @default ''
          */
@@ -968,6 +974,7 @@ export namespace Components {
         "mediaIframeHref": string;
         "mediaSharePath": string;
         "meta": string;
+        "publicationDate": string;
         /**
           * @default ''
          */
@@ -982,6 +989,7 @@ export namespace Components {
           * @default 'image'
          */
         "type": string;
+        "videoLength": string;
     }
     interface EclGrid {
         "breakpoint": string;
@@ -1458,6 +1466,10 @@ export namespace Components {
         /**
           * @default false
          */
+        "isCurrent": boolean;
+        /**
+          * @default false
+         */
         "isPromotional": boolean;
         "label": string;
         /**
@@ -1488,6 +1500,10 @@ export namespace Components {
           * @default false
          */
         "hasFeatured": boolean;
+        /**
+          * @default false
+         */
+        "isCurrent": boolean;
         "label": string;
         /**
           * @default false
@@ -1827,6 +1843,10 @@ export namespace Components {
         "toggleLabel": string;
     }
     interface EclQuiz {
+        /**
+          * @default ''
+         */
+        "colorMode": string;
         "description": string;
         /**
           * @default false
@@ -1856,7 +1876,6 @@ export namespace Components {
         "answer": string;
         "answerTitle": string;
         "backText": string;
-        "category": string;
         /**
           * @default ''
          */
@@ -1865,8 +1884,10 @@ export namespace Components {
           * @default ''
          */
         "correctLabel": string;
-        "errorCategory": string;
         "flipText": string;
+        "image": string;
+        "imageAlt": string;
+        "imageDisplay": string;
         /**
           * @default ''
          */
@@ -1885,7 +1906,6 @@ export namespace Components {
         "quizName": string;
         "skipText": string;
         "styleClass": string;
-        "successCategory": string;
         "theme": string;
         /**
           * @default 'reveal'
@@ -2200,6 +2220,93 @@ export namespace Components {
         /**
           * @default 'ec'
          */
+        "theme": string;
+    }
+    interface EclSliderPager {
+        /**
+          * @default ''
+         */
+        "dotExtraClasses": string;
+        /**
+          * @default true
+         */
+        "dots": boolean;
+        /**
+          * @default ''
+         */
+        "dotsExtraClasses": string;
+        /**
+          * @default false
+         */
+        "hideLabel": boolean;
+        /**
+          * @default ''
+         */
+        "nextExtraAttributes": string;
+        /**
+          * @default ''
+         */
+        "nextExtraClasses": string;
+        /**
+          * @default false
+         */
+        "noScript": boolean;
+        /**
+          * @default ''
+         */
+        "pauseExtraClasses": string;
+        /**
+          * @default 'pause-filled'
+         */
+        "pauseIcon": string;
+        /**
+          * @default ''
+         */
+        "playExtraClasses": string;
+        /**
+          * @default 'play-filled'
+         */
+        "playIcon": string;
+        /**
+          * @default false
+         */
+        "playPause": boolean;
+        /**
+          * @default ''
+         */
+        "prevExtraAttributes": string;
+        /**
+          * @default ''
+         */
+        "prevExtraClasses": string;
+        /**
+          * @default 's'
+         */
+        "size": string;
+        /**
+          * @default ''
+         */
+        "srNext": string;
+        /**
+          * @default ''
+         */
+        "srPause": string;
+        /**
+          * @default ''
+         */
+        "srPlay": string;
+        /**
+          * @default ''
+         */
+        "srPrev": string;
+        /**
+          * @default ''
+         */
+        "styleClass": string;
+        /**
+          * @default ''
+         */
+        "templateDataAttribute": string;
         "theme": string;
     }
     interface EclSloganTicker {
@@ -3360,6 +3467,12 @@ declare global {
         prototype: HTMLEclSiteHeaderElement;
         new (): HTMLEclSiteHeaderElement;
     };
+    interface HTMLEclSliderPagerElement extends Components.EclSliderPager, HTMLStencilElement {
+    }
+    var HTMLEclSliderPagerElement: {
+        prototype: HTMLEclSliderPagerElement;
+        new (): HTMLEclSliderPagerElement;
+    };
     interface HTMLEclSloganTickerElement extends Components.EclSloganTicker, HTMLStencilElement {
     }
     var HTMLEclSloganTickerElement: {
@@ -3602,6 +3715,7 @@ declare global {
         "ecl-search-form": HTMLEclSearchFormElement;
         "ecl-select": HTMLEclSelectElement;
         "ecl-site-header": HTMLEclSiteHeaderElement;
+        "ecl-slider-pager": HTMLEclSliderPagerElement;
         "ecl-slogan-ticker": HTMLEclSloganTickerElement;
         "ecl-social-media-follow": HTMLEclSocialMediaFollowElement;
         "ecl-social-media-follow-item": HTMLEclSocialMediaFollowItemElement;
@@ -3628,7 +3742,7 @@ declare global {
     }
 }
 declare namespace LocalJSX {
-    type OneOf<K extends string, PropT, AttrT = PropT> = { [P in K]: PropT } & { [P in `attr:${K}` | `prop:${K}`]?: never } | { [P in `attr:${K}`]: AttrT } & { [P in K | `prop:${K}`]?: never } | { [P in `prop:${K}`]: PropT } & { [P in K | `attr:${K}`]?: never };
+    type OneOf<K extends string, PropT, AttrT = PropT> = { [P in K]: PropT } & { [P in `attr:${K}`]?: never } | { [P in `attr:${K}`]: AttrT } & { [P in K]?: never };
 
     interface EclAccordion {
         /**
@@ -3909,7 +4023,6 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclCarousel {
-        "carouselId"?: string;
         "colorMode"?: string;
         /**
           * @default 'of'
@@ -3923,11 +4036,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "noScript"?: boolean;
-        "slidesNumber"?: number;
         /**
-          * @default 'Go to slide %d'
+          * @default ''
          */
-        "srNavigation"?: string;
+        "srDescription"?: string;
         /**
           * @default 'Next slides'
          */
@@ -3944,6 +4056,10 @@ declare namespace LocalJSX {
           * @default 'Prev slides'
          */
         "srPrevious"?: string;
+        /**
+          * @default 'carousel'
+         */
+        "srRole"?: string;
         /**
           * @default ''
          */
@@ -3968,6 +4084,10 @@ declare namespace LocalJSX {
           * @default 'm'
          */
         "size"?: string;
+        /**
+          * @default 'slide'
+         */
+        "srSlideRole"?: string;
         /**
           * @default ''
          */
@@ -4595,6 +4715,7 @@ declare namespace LocalJSX {
         "mediaIframeHref"?: string;
         "mediaSharePath"?: string;
         "meta"?: string;
+        "publicationDate"?: string;
         /**
           * @default ''
          */
@@ -4609,6 +4730,7 @@ declare namespace LocalJSX {
           * @default 'image'
          */
         "type"?: string;
+        "videoLength"?: string;
     }
     interface EclGrid {
         "breakpoint"?: string;
@@ -5088,6 +5210,10 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
+        "isCurrent"?: boolean;
+        /**
+          * @default false
+         */
         "isPromotional"?: boolean;
         "label": string;
         /**
@@ -5118,6 +5244,10 @@ declare namespace LocalJSX {
           * @default false
          */
         "hasFeatured"?: boolean;
+        /**
+          * @default false
+         */
+        "isCurrent"?: boolean;
         "label": string;
         /**
           * @default false
@@ -5457,6 +5587,10 @@ declare namespace LocalJSX {
         "toggleLabel"?: string;
     }
     interface EclQuiz {
+        /**
+          * @default ''
+         */
+        "colorMode"?: string;
         "description"?: string;
         /**
           * @default false
@@ -5486,7 +5620,6 @@ declare namespace LocalJSX {
         "answer"?: string;
         "answerTitle"?: string;
         "backText"?: string;
-        "category"?: string;
         /**
           * @default ''
          */
@@ -5495,8 +5628,10 @@ declare namespace LocalJSX {
           * @default ''
          */
         "correctLabel"?: string;
-        "errorCategory"?: string;
         "flipText"?: string;
+        "image"?: string;
+        "imageAlt"?: string;
+        "imageDisplay"?: string;
         /**
           * @default ''
          */
@@ -5515,7 +5650,6 @@ declare namespace LocalJSX {
         "quizName"?: string;
         "skipText"?: string;
         "styleClass"?: string;
-        "successCategory"?: string;
         "theme"?: string;
         /**
           * @default 'reveal'
@@ -5839,6 +5973,93 @@ declare namespace LocalJSX {
         /**
           * @default 'ec'
          */
+        "theme"?: string;
+    }
+    interface EclSliderPager {
+        /**
+          * @default ''
+         */
+        "dotExtraClasses"?: string;
+        /**
+          * @default true
+         */
+        "dots"?: boolean;
+        /**
+          * @default ''
+         */
+        "dotsExtraClasses"?: string;
+        /**
+          * @default false
+         */
+        "hideLabel"?: boolean;
+        /**
+          * @default ''
+         */
+        "nextExtraAttributes"?: string;
+        /**
+          * @default ''
+         */
+        "nextExtraClasses"?: string;
+        /**
+          * @default false
+         */
+        "noScript"?: boolean;
+        /**
+          * @default ''
+         */
+        "pauseExtraClasses"?: string;
+        /**
+          * @default 'pause-filled'
+         */
+        "pauseIcon"?: string;
+        /**
+          * @default ''
+         */
+        "playExtraClasses"?: string;
+        /**
+          * @default 'play-filled'
+         */
+        "playIcon"?: string;
+        /**
+          * @default false
+         */
+        "playPause"?: boolean;
+        /**
+          * @default ''
+         */
+        "prevExtraAttributes"?: string;
+        /**
+          * @default ''
+         */
+        "prevExtraClasses"?: string;
+        /**
+          * @default 's'
+         */
+        "size"?: string;
+        /**
+          * @default ''
+         */
+        "srNext"?: string;
+        /**
+          * @default ''
+         */
+        "srPause"?: string;
+        /**
+          * @default ''
+         */
+        "srPlay"?: string;
+        /**
+          * @default ''
+         */
+        "srPrev"?: string;
+        /**
+          * @default ''
+         */
+        "styleClass"?: string;
+        /**
+          * @default ''
+         */
+        "templateDataAttribute"?: string;
         "theme"?: string;
     }
     interface EclSloganTicker {
@@ -6564,16 +6785,15 @@ declare namespace LocalJSX {
         "styleClass": string;
         "theme": string;
         "noScript": boolean;
-        "carouselId": string;
         "colorMode": string;
-        "slidesNumber": number;
         "fullWidth": boolean;
+        "srDescription": string;
         "counterLabel": string;
-        "srNavigation": string;
         "srPrevious": string;
         "srNext": string;
         "srPause": string;
         "srPlay": string;
+        "srRole": string;
     }
     interface EclCarouselItemAttributes {
         "styleClass": string;
@@ -6581,6 +6801,7 @@ declare namespace LocalJSX {
         "credit": string;
         "image": string;
         "theme": string;
+        "srSlideRole": string;
         "ctaLink": string;
         "ctaLabel": string;
         "size": string;
@@ -6896,6 +7117,8 @@ declare namespace LocalJSX {
         "mediaIframeHref": string;
         "mediaSharePath": string;
         "ariaLabel": string;
+        "publicationDate": string;
+        "videoLength": string;
         "meta": string;
         "type": string;
         "icon": string;
@@ -7107,6 +7330,7 @@ declare namespace LocalJSX {
         "seeAll": boolean;
         "hasInfo": boolean;
         "hasFeatured": boolean;
+        "isCurrent": boolean;
         "featuredTitle": string;
         "hasChildren": boolean;
         "seeAllLabel": string;
@@ -7124,6 +7348,7 @@ declare namespace LocalJSX {
         "seeAll": boolean;
         "hasFeatured": boolean;
         "featuredTitle": string;
+        "isCurrent": boolean;
         "hasChildren": boolean;
         "seeAllLabel": string;
         "ariaLabel": string;
@@ -7290,6 +7515,7 @@ declare namespace LocalJSX {
     interface EclQuizAttributes {
         "theme": string;
         "styleClass": string;
+        "colorMode": string;
         "noScript": boolean;
         "itemId": string;
         "quizTitle": string;
@@ -7304,13 +7530,13 @@ declare namespace LocalJSX {
     interface EclQuizCardAttributes {
         "theme": string;
         "styleClass": string;
-        "category": string;
-        "successCategory": string;
-        "errorCategory": string;
         "flipText": string;
         "backText": string;
         "question": string;
         "quizName": string;
+        "image": string;
+        "imageAlt": string;
+        "imageDisplay": string;
         "mainIcon": string;
         "answer": string;
         "answerTitle": string;
@@ -7443,6 +7669,30 @@ declare namespace LocalJSX {
         "bannerTop": string;
         "bannerTopLink": string;
         "siteNameMobileOnly": boolean;
+    }
+    interface EclSliderPagerAttributes {
+        "theme": string;
+        "styleClass": string;
+        "srPrev": string;
+        "srNext": string;
+        "srPlay": string;
+        "srPause": string;
+        "dots": boolean;
+        "playPause": boolean;
+        "playIcon": string;
+        "pauseIcon": string;
+        "size": string;
+        "playExtraClasses": string;
+        "pauseExtraClasses": string;
+        "dotExtraClasses": string;
+        "dotsExtraClasses": string;
+        "prevExtraClasses": string;
+        "prevExtraAttributes": string;
+        "nextExtraClasses": string;
+        "nextExtraAttributes": string;
+        "templateDataAttribute": string;
+        "hideLabel": boolean;
+        "noScript": boolean;
     }
     interface EclSloganTickerAttributes {
         "theme": string;
@@ -7781,6 +8031,7 @@ declare namespace LocalJSX {
         "ecl-search-form": Omit<EclSearchForm, keyof EclSearchFormAttributes> & { [K in keyof EclSearchForm & keyof EclSearchFormAttributes]?: EclSearchForm[K] } & { [K in keyof EclSearchForm & keyof EclSearchFormAttributes as `attr:${K}`]?: EclSearchFormAttributes[K] } & { [K in keyof EclSearchForm & keyof EclSearchFormAttributes as `prop:${K}`]?: EclSearchForm[K] };
         "ecl-select": Omit<EclSelect, keyof EclSelectAttributes> & { [K in keyof EclSelect & keyof EclSelectAttributes]?: EclSelect[K] } & { [K in keyof EclSelect & keyof EclSelectAttributes as `attr:${K}`]?: EclSelectAttributes[K] } & { [K in keyof EclSelect & keyof EclSelectAttributes as `prop:${K}`]?: EclSelect[K] };
         "ecl-site-header": Omit<EclSiteHeader, keyof EclSiteHeaderAttributes> & { [K in keyof EclSiteHeader & keyof EclSiteHeaderAttributes]?: EclSiteHeader[K] } & { [K in keyof EclSiteHeader & keyof EclSiteHeaderAttributes as `attr:${K}`]?: EclSiteHeaderAttributes[K] } & { [K in keyof EclSiteHeader & keyof EclSiteHeaderAttributes as `prop:${K}`]?: EclSiteHeader[K] };
+        "ecl-slider-pager": Omit<EclSliderPager, keyof EclSliderPagerAttributes> & { [K in keyof EclSliderPager & keyof EclSliderPagerAttributes]?: EclSliderPager[K] } & { [K in keyof EclSliderPager & keyof EclSliderPagerAttributes as `attr:${K}`]?: EclSliderPagerAttributes[K] } & { [K in keyof EclSliderPager & keyof EclSliderPagerAttributes as `prop:${K}`]?: EclSliderPager[K] };
         "ecl-slogan-ticker": Omit<EclSloganTicker, keyof EclSloganTickerAttributes> & { [K in keyof EclSloganTicker & keyof EclSloganTickerAttributes]?: EclSloganTicker[K] } & { [K in keyof EclSloganTicker & keyof EclSloganTickerAttributes as `attr:${K}`]?: EclSloganTickerAttributes[K] } & { [K in keyof EclSloganTicker & keyof EclSloganTickerAttributes as `prop:${K}`]?: EclSloganTicker[K] };
         "ecl-social-media-follow": Omit<EclSocialMediaFollow, keyof EclSocialMediaFollowAttributes> & { [K in keyof EclSocialMediaFollow & keyof EclSocialMediaFollowAttributes]?: EclSocialMediaFollow[K] } & { [K in keyof EclSocialMediaFollow & keyof EclSocialMediaFollowAttributes as `attr:${K}`]?: EclSocialMediaFollowAttributes[K] } & { [K in keyof EclSocialMediaFollow & keyof EclSocialMediaFollowAttributes as `prop:${K}`]?: EclSocialMediaFollow[K] };
         "ecl-social-media-follow-item": Omit<EclSocialMediaFollowItem, keyof EclSocialMediaFollowItemAttributes> & { [K in keyof EclSocialMediaFollowItem & keyof EclSocialMediaFollowItemAttributes]?: EclSocialMediaFollowItem[K] } & { [K in keyof EclSocialMediaFollowItem & keyof EclSocialMediaFollowItemAttributes as `attr:${K}`]?: EclSocialMediaFollowItemAttributes[K] } & { [K in keyof EclSocialMediaFollowItem & keyof EclSocialMediaFollowItemAttributes as `prop:${K}`]?: EclSocialMediaFollowItem[K] };
@@ -7889,6 +8140,7 @@ declare module "@stencil/core" {
             "ecl-search-form": LocalJSX.IntrinsicElements["ecl-search-form"] & JSXBase.HTMLAttributes<HTMLEclSearchFormElement>;
             "ecl-select": LocalJSX.IntrinsicElements["ecl-select"] & JSXBase.HTMLAttributes<HTMLEclSelectElement>;
             "ecl-site-header": LocalJSX.IntrinsicElements["ecl-site-header"] & JSXBase.HTMLAttributes<HTMLEclSiteHeaderElement>;
+            "ecl-slider-pager": LocalJSX.IntrinsicElements["ecl-slider-pager"] & JSXBase.HTMLAttributes<HTMLEclSliderPagerElement>;
             "ecl-slogan-ticker": LocalJSX.IntrinsicElements["ecl-slogan-ticker"] & JSXBase.HTMLAttributes<HTMLEclSloganTickerElement>;
             "ecl-social-media-follow": LocalJSX.IntrinsicElements["ecl-social-media-follow"] & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowElement>;
             "ecl-social-media-follow-item": LocalJSX.IntrinsicElements["ecl-social-media-follow-item"] & JSXBase.HTMLAttributes<HTMLEclSocialMediaFollowItemElement>;

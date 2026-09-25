@@ -18,6 +18,13 @@
 | `titleAttr`  | `title-attr`  |             | `string` | `undefined` |
 
 
+## Slots
+
+| Slot | Description      |
+| ---- | ---------------- |
+|      | The default slot |
+
+
 ## Dependencies
 
 ### Depends on

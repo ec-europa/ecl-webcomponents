@@ -6,6 +6,7 @@ import { EclPicture } from '../../ecl-picture/ecl-picture';
 import { EclButton } from '../../ecl-button/ecl-button';
 import { EclLink } from '../../ecl-link/ecl-link';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
+import { EclSliderPager } from '../../ecl-slider/ecl-slider-pager';
 
 describe('ecl-story-card', () => {
   beforeEach(() => {
@@ -14,7 +15,7 @@ describe('ecl-story-card', () => {
 
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclStoryCard, EclStoryCardItem, EclStoryCardTab, EclPicture, EclButton, EclLink, EclIcon],
+      components: [EclStoryCard, EclStoryCardItem, EclStoryCardTab, EclPicture, EclSliderPager, EclButton, EclLink, EclIcon],
       html: `<ecl-story-card
         el-id="story-card-test"
         el-title="Story card"

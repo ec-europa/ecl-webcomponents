@@ -1,41 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-carousel renders 1`] = `
-<ecl-carousel carousel-id="ecl-carousel-demo" slides-number="3">
+<ecl-carousel color-mode="orange">
   <!---->
-  <div class="ecl-carousel" data-ecl-carosuel style="opacity: 0;">
-    <div class="ecl-carousel__controls" style="display: none;">
+  <section aria-roledescription="carousel" class="ecl-carousel ecl-color-mode--orange" data-ecl-carosuel data-ecl-carousel-counter-label="of">
+    <div class="ecl-carousel__controls">
       <div class="ecl-container">
-        <div class="ecl-carousel__autoplay">
-          <ecl-button buttonstyle="neutral" hidelabel="" styleclass="ecl-carousel__play sc-ecl-carousel-ec" type="button" variant="tertiary">
-            <ecl-icon slot="icon-after" style-class="ecl-carousel__icon-default sc-ecl-carousel-ec">
-              <span class="ecl-carousel__icon-default ecl-icon ecl-icon--m sc-ecl-carousel-ec wt-icon--placeholder wt-icon--play-outline"></span>
-            </ecl-icon>
-            Play carousel
-          </ecl-button>
-          <ecl-button buttonstyle="neutral" hidelabel="" styleclass="ecl-carousel__pause sc-ecl-carousel-ec" type="button" variant="tertiary">
-            <ecl-icon slot="icon-after" style-class="ecl-carousel__icon-default sc-ecl-carousel-ec">
-              <span class="ecl-carousel__icon-default ecl-icon ecl-icon--m sc-ecl-carousel-ec wt-icon--pause-outline wt-icon--placeholder"></span>
-            </ecl-icon>
-            Pause carousel
-          </ecl-button>
-        </div>
-        <div class="ecl-carousel__navigation" role="tablist">
-          <ecl-button buttonstyle="neutral" styleclass="ecl-carousel__navigation-item sc-ecl-carousel-ec" type="button" variant="tertiary">
-            1
-          </ecl-button>
-          <ecl-button buttonstyle="neutral" styleclass="ecl-carousel__navigation-item sc-ecl-carousel-ec" type="button" variant="tertiary">
-            2
-          </ecl-button>
-          <ecl-button buttonstyle="neutral" styleclass="ecl-carousel__navigation-item sc-ecl-carousel-ec" type="button" variant="tertiary">
-            3
-          </ecl-button>
+        <div class="ecl-carousel__navigation">
+          <div class="ecl-carousel__pager-container">
+            <ecl-slider-pager>
+              <div class="ecl-carousel__pager ecl-slider-pager sc-ecl-carousel-ec">
+                <ecl-button button-style="neutral" data-ecl-slogan-ticker-play hidelabel="" size="m" style-class="ecl-slider-pager__play sc-ecl-slider-pager-ec ecl-carousel__play sc-ecl-carousel-ec" type="button" variant="secondary">
+                  Play carousel
+                  <ecl-icon slot="icon-after">
+                    <span class="ecl-icon ecl-icon-- wt-icon--placeholder wt-icon-phosphor--play-filled"></span>
+                  </ecl-icon>
+                </ecl-button>
+                <ecl-button button-style="neutral" hide-label="" size="m" style-class="ecl-slider-pager__pause sc-ecl-slider-pager-ec ecl-carousel__pause sc-ecl-carousel-ec" type="button" variant="secondary">
+                  Pause carousel
+                  <ecl-icon slot="icon-after">
+                    <span class="ecl-icon ecl-icon--xs wt-icon--placeholder wt-icon-phosphor--pause-filled"></span>
+                  </ecl-icon>
+                </ecl-button>
+                <ecl-button button-style="neutral" hide-label="" size="m" style-class="ecl-slider-pager__prev sc-ecl-slider-pager-ec ecl-carousel__prev sc-ecl-carousel-ec" type="button" variant="tertiary">
+                  Prev slides
+                  <ecl-icon slot="icon-after">
+                    <span class="ecl-icon ecl-icon--xs wt-icon--monochrome wt-icon--placeholder wt-icon-phosphor--caret-left"></span>
+                  </ecl-icon>
+                </ecl-button>
+                <div class="ecl-carousel__dots ecl-slider-pager__dots sc-ecl-carousel-ec"></div>
+                <ecl-button button-style="neutral" hide-label="" size="m" style-class="ecl-slider-pager__next sc-ecl-slider-pager-ec ecl-carousel__next sc-ecl-carousel-ec" type="button" variant="tertiary">
+                  Next slides
+                  <ecl-icon slot="icon-after">
+                    <span class="ecl-icon ecl-icon--xs wt-icon--monochrome wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
+                  </ecl-icon>
+                </ecl-button><script data-ecl-carousel-dot-template data-ecl-slider-dot-template type="text/template"><button class="ecl-carousel__dot ecl-slider-pager__dot sc-ecl-carousel-ec"></button></script>
+              </div>
+            </ecl-slider-pager>
+            <div class="ecl-carousel__counter" dir="ltr"></div>
+          </div>
+          <div class="ecl-carousel__teasers" role="tablist"></div>
         </div>
       </div>
     </div>
-    <div class="ecl-carousel__container">
-      <div class="ecl-carousel__slides" id="ecl-carousel-demo" style="display: block;"></div>
+    <div class="ecl-carousel__viewport">
+      <div class="ecl-carousel__slides">
+        <ecl-carousel-item banner-title="Duis vitae pulvinar turpis" banner-variant="text-box" centered="false" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" size="l">
+          Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur
+        </ecl-carousel-item>
+        <ecl-carousel-item banner-title="Duis vitae pulvinar turpis" banner-variant="text-highlight" centered="false" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" size="l">
+          Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur
+        </ecl-carousel-item>
+        <ecl-carousel-item banner-title="Duis vitae pulvinar turpis" banner-variant="image-overlay" cta-label="Subscribe" cta-link="/example.html" image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" size="l">
+          Integer quis lorem tellus. Nullam sollicitudin suscipit diam, ac blandit ipsum tempor consectetur
+        </ecl-carousel-item>
+      </div>
     </div>
-  </div>
+  </section>
 </ecl-carousel>
 `;

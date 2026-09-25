@@ -29,6 +29,15 @@
 | `variant`        | `variant`         |             | `string`  | `''`        |
 
 
+## Slots
+
+| Slot            | Description      |
+| --------------- | ---------------- |
+|                 | The default slot |
+| `"icon-after"`  |                  |
+| `"icon-before"` |                  |
+
+
 ## Dependencies
 
 ### Used by

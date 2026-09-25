@@ -11,3 +11,17 @@
 .ecl-carousel__navigation-item.sc-ecl-carousel-ec:last-child {
   margin-inline-end: var(--s-xs);
 }
+
+.ecl-carousel__teaser-loading-bar {
+  .ecl-carousel__teaser-loading-bar-completion {
+    animation: none;
+  }
+
+  &.is-active .ecl-carousel__teaser-loading-bar-completion {
+    animation: loading #{var(--ecl-carousel-slide-duration)} linear forwards;
+  }
+
+  &.is-paused .ecl-carousel__teaser-loading-bar-completion {
+    animation-play-state: paused;
+  }
+}

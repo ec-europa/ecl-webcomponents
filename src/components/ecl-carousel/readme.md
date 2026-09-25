@@ -7,18 +7,26 @@
 
 ## Properties
 
-| Property      | Attribute      | Description | Type      | Default     |
-| ------------- | -------------- | ----------- | --------- | ----------- |
-| `ariaLabel`   | `aria-label`   |             | `string`  | `undefined` |
-| `bannerTitle` | `banner-title` |             | `string`  | `''`        |
-| `centered`    | `centered`     |             | `boolean` | `undefined` |
-| `credit`      | `credit`       |             | `string`  | `undefined` |
-| `ctaLabel`    | `cta-label`    |             | `string`  | `undefined` |
-| `ctaLink`     | `cta-link`     |             | `string`  | `undefined` |
-| `image`       | `image`        |             | `string`  | `''`        |
-| `size`        | `size`         |             | `string`  | `'m'`       |
-| `styleClass`  | `style-class`  |             | `string`  | `''`        |
-| `theme`       | `theme`        |             | `string`  | `undefined` |
+| Property      | Attribute       | Description | Type      | Default     |
+| ------------- | --------------- | ----------- | --------- | ----------- |
+| `ariaLabel`   | `aria-label`    |             | `string`  | `undefined` |
+| `bannerTitle` | `banner-title`  |             | `string`  | `''`        |
+| `centered`    | `centered`      |             | `boolean` | `undefined` |
+| `credit`      | `credit`        |             | `string`  | `undefined` |
+| `ctaLabel`    | `cta-label`     |             | `string`  | `undefined` |
+| `ctaLink`     | `cta-link`      |             | `string`  | `undefined` |
+| `image`       | `image`         |             | `string`  | `''`        |
+| `size`        | `size`          |             | `string`  | `'m'`       |
+| `srSlideRole` | `sr-slide-role` |             | `string`  | `'slide'`   |
+| `styleClass`  | `style-class`   |             | `string`  | `''`        |
+| `theme`       | `theme`         |             | `string`  | `undefined` |
+
+
+## Slots
+
+| Slot | Description      |
+| ---- | ---------------- |
+|      | The default slot |
 
 
 ## Dependencies

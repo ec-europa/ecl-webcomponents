@@ -22,13 +22,21 @@
 | `variant`               | `variant`                 |             | `string`  | `''`        |
 
 
+## Slots
+
+| Slot            | Description      |
+| --------------- | ---------------- |
+|                 | The default slot |
+| `"icon-after"`  |                  |
+| `"icon-before"` |                  |
+
+
 ## Dependencies
 
 ### Used by
 
  - [ecl-banner](../ecl-banner)
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
- - [ecl-carousel](../ecl-carousel)
  - [ecl-expandable](../ecl-expandable)
  - [ecl-file](../ecl-file)
  - [ecl-gallery](../ecl-gallery)
@@ -47,6 +55,7 @@
  - [ecl-search-form](../ecl-search-form)
  - [ecl-select](../ecl-select)
  - [ecl-site-header](../ecl-site-header)
+ - [ecl-slider-pager](../ecl-slider)
  - [ecl-slogan-ticker](../ecl-slogan-ticker)
  - [ecl-story-card](../ecl-story-card)
  - [ecl-tabs](../ecl-tabs)
@@ -62,7 +71,6 @@ graph TD;
   ecl-button --> ecl-indicator
   ecl-banner --> ecl-button
   ecl-breadcrumb-item --> ecl-button
-  ecl-carousel --> ecl-button
   ecl-expandable --> ecl-button
   ecl-file --> ecl-button
   ecl-gallery --> ecl-button
@@ -81,6 +89,7 @@ graph TD;
   ecl-search-form --> ecl-button
   ecl-select --> ecl-button
   ecl-site-header --> ecl-button
+  ecl-slider-pager --> ecl-button
   ecl-slogan-ticker --> ecl-button
   ecl-story-card --> ecl-button
   ecl-tabs --> ecl-button

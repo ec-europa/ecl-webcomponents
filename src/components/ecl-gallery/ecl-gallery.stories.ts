@@ -113,6 +113,8 @@ const Template = (args) =>
   </ecl-gallery-item>
   <ecl-gallery-item
     type="video"
+    publication-date="20 Feb 2020"
+    video-length="1:01"
     thumb-zoom="${args.thumbZoom}"
     meta="Copyright, Author, Licence for embedded media"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-external-video.jpg"
@@ -158,6 +160,8 @@ const Template = (args) =>
     meta="Copyright, Author, Licence for video"
     type="html-video"
     thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg"
+    publication-date="03 Aug 2019"
+    video-length="4:25"
   >
     EU law
     <video

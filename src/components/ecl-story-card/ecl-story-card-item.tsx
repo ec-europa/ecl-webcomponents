@@ -66,6 +66,7 @@ export class EclStoryCardItem {
         {...(!this.slotName && { 'data-ecl-story-card-slide': `true` })}
         {...(this.slotName === 'story-card-grid-details' && { 'data-ecl-story-card-grid-details': `true`})}
         {...((this.order !== 0 && this.slotName === 'story-card-grid-details') && { 'hidden': 'true' })}        
+        {...(this.order === 0 ? { 'tabindex': '0'} : { 'tabindex': '-1' })}
       >
         <article 
           class={this.getArticleClass()}

@@ -76,6 +76,7 @@ export class EclStoryCard {
         picture={item.picture}
         teaser-label={item.teaserLabel}
         order={String(index)}
+        {...(index === 0 ? { 'tabindex': '0'} : { 'tabindex' : '-1' })}
       />
     ));
   }
@@ -139,39 +140,20 @@ export class EclStoryCard {
               <slot></slot>
             </div>
           </div>
-          <div class="ecl-story-card__pager">
-            <button
-              class="ecl-story-card__prev"
-              data-ecl-story-card-prev
-            >
-              <span class="ecl-story-card__prev-label"></span>
-              <ecl-icon
-                icon="caret-left"
-                slot="icon-after"
-                family="phosphor"
-                size="s"
-              ></ecl-icon>
-            </button>
-            <div class="ecl-story-card__dots"></div>
-            <button
-              class="ecl-story-card__next"
-              data-ecl-story-card-next
-            >
-              <span class="ecl-story-card__next-label"></span>
-              <ecl-icon
-                icon="caret-right"
-                slot="icon-after"
-                family="phosphor"
-                size="s"
-              ></ecl-icon>
-            </button>
-            <script
-              type="text/template"
-              data-ecl-story-card-dot-template
-            >
-              <button class="ecl-story-card__dot"></button>
-            </script>
-          </div>
+          <ecl-slider-pager
+            styleClass={`ecl-story-card__pager sc-ecl-story-card-${this.theme}`}
+            prevExtraClasses={`ecl-story-card__prev sc-ecl-story-card-${this.theme}`}
+            nextExtraClasses={`ecl-story-card__next sc-ecl-story-card-${this.theme}`}
+            srPrev="Previous"
+            srNext="Next"
+            srPlay="Play"
+            srPause="Pause"
+            playPause
+            hideLabel
+            prevExtraAttributes="data-ecl-story-card-prev"
+            nextExtraAttributes="data-ecl-story-card-next"
+            templateDataAttribute="data-ecl-story-card-dot-template"
+          ></ecl-slider-pager>
         </div>
         <div class="ecl-story-card__grid">
           <div

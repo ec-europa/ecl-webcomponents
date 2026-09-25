@@ -230,31 +230,33 @@ exports[`ecl-site-header renders 1`] = `
                 </div>
               </div>
               <div class="ecl-site-header__search-container" role="search">
-                <a aria-controls="search-form-id" aria-expanded="false" class="ecl-button ecl-button--neutral ecl-button--tertiary ecl-site-header__search-toggle" data-ecl-search-toggle>
+                <a aria-controls="search-form-id" aria-expanded="false" aria-haspopup="dialog" class="ecl-button ecl-button--neutral ecl-button--tertiary ecl-site-header__search-toggle" data-ecl-search-toggle>
                   <ecl-icon icon="search" size="m" style-class="ecl-icon ecl-icon--s ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
                   search
                 </a>
-                <ecl-search-form button-aria-label="search" button-class="ecl-button--neutral sc-ecl-site-header-ec" button-label="search" input-id="ecl-site-header-search-form" style-class="ecl-site-header__search sc-ecl-site-header-ec">
-                  <form class="ecl-search-form ecl-site-header__search sc-ecl-site-header-ec" data-ecl-search-form role="search">
-                    <ecl-form-group style-class="sc-ecl-search-form-ec">
-                      <!---->
-                      <div class="ecl-form-group sc-ecl-search-form-ec">
-                        <ecl-input input-class="ecl-search-form__text-input sc-ecl-search-form-ec" input-id="ecl-site-header-search-form" placeholder="Placeholder text" style-class="sc-ecl-search-form-ec" type="search"></ecl-input>
-                      </div>
-                    </ecl-form-group>
-                    <ecl-button aria-label="search" hide-label="" style-class="ecl-search-form__button sc-ecl-search-form-ec ecl-button--neutral sc-ecl-site-header-ec">
-                      <!---->
-                      <button aria-label="search" class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-search-form__button sc-ecl-search-form-ec sc-ecl-site-header-ec" type="search">
-                        <span class="ecl-button__container">
-                          <ecl-icon icon="search" size="m" slot="icon-before" style-class="sc-ecl-search-form-ec"></ecl-icon>
-                          <span class="ecl-button__label" data-ecl-label>
-                            search
+                <div aria-modal="true" class="ecl-site-header__search-dialog" id="ecl-site-header-search-form-dialog" role="dialog">
+                  <ecl-search-form button-aria-label="search" button-class="ecl-button--neutral sc-ecl-site-header-ec" button-label="search" input-id="ecl-site-header-search-form" style-class="ecl-site-header__search sc-ecl-site-header-ec">
+                    <form class="ecl-search-form ecl-site-header__search sc-ecl-site-header-ec" data-ecl-search-form role="search">
+                      <ecl-form-group style-class="sc-ecl-search-form-ec">
+                        <!---->
+                        <div class="ecl-form-group sc-ecl-search-form-ec">
+                          <ecl-input input-class="ecl-search-form__text-input sc-ecl-search-form-ec" input-id="ecl-site-header-search-form" placeholder="Placeholder text" style-class="sc-ecl-search-form-ec" type="search"></ecl-input>
+                        </div>
+                      </ecl-form-group>
+                      <ecl-button aria-label="search" hide-label="" style-class="ecl-search-form__button sc-ecl-search-form-ec ecl-button--neutral sc-ecl-site-header-ec">
+                        <!---->
+                        <button aria-label="search" class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-search-form__button sc-ecl-search-form-ec sc-ecl-site-header-ec" type="search">
+                          <span class="ecl-button__container">
+                            <ecl-icon icon="search" size="m" slot="icon-before" style-class="sc-ecl-search-form-ec"></ecl-icon>
+                            <span class="ecl-button__label" data-ecl-label>
+                              search
+                            </span>
                           </span>
-                        </span>
-                      </button>
-                    </ecl-button>
-                  </form>
-                </ecl-search-form>
+                        </button>
+                      </ecl-button>
+                    </form>
+                  </ecl-search-form>
+                </div>
               </div>
             </div>
           </div>
@@ -489,7 +491,7 @@ exports[`ecl-site-header renders 1`] = `
                   </div>
                 </div>
               </ecl-mega-menu-item>
-              <ecl-mega-menu-item aria-label="Pages in this section" class="ecl-mega-menu__item ecl-mega-menu__item--has-children ecl-mega-menu__item--one-level-only sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item has-children="" has-featured="" has-info="" info-title="About the European Union" label="About the EU" one-level-only="">
+              <ecl-mega-menu-item aria-label="Pages in this section" class="ecl-mega-menu__item ecl-mega-menu__item--current-page ecl-mega-menu__item--has-children ecl-mega-menu__item--one-level-only sc-ecl-mega-menu-ec" data-ecl-has-children data-ecl-mega-menu-item has-children="" has-featured="" has-info="" info-title="About the European Union" is-current="" label="About the EU" one-level-only="">
                 <!---->
                 <ecl-button aria-expanded="false" aria-haspopup="" data-ecl-mega-menu-link style-class="ecl-mega-menu__link sc-ecl-mega-menu-ec">
                   <!---->
@@ -519,9 +521,9 @@ exports[`ecl-site-header renders 1`] = `
                     </div>
                     <div class="ecl-mega-menu__mega ecl-mega-menu__mega--has-featured sc-ecl-mega-menu-ec" data-ecl-mega-menu-mega>
                       <ul aria-label="Pages in this section" class="ecl-mega-menu__sublist sc-ecl-mega-menu-ec">
-                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem label="Item 3.1" path="/example.html">
+                        <ecl-mega-menu-subitem class="ecl-mega-menu__subitem sc-ecl-mega-menu-ec" data-ecl-mega-menu-subitem is-current="" label="Item 3.1" path="/example.html">
                           <!---->
-                          <ecl-link data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
+                          <ecl-link aria-current="page" data-ecl-mega-menu-link path="/example.html" style-class="ecl-mega-menu__sublink sc-ecl-mega-menu-ec" variant="standalone">
                             Item 3.1
                           </ecl-link>
                         </ecl-mega-menu-subitem>

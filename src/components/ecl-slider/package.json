@@ -1,0 +1,30 @@
+{
+    "name": "@ecl/web-components-slider",
+    "author": "European Commission",
+    "license": "EUPL-1.2",
+    "version": "0.30.0",
+    "description": "ECL Slider",
+    "main": "ecl-slider-pager.tsx",
+    "private": true,
+    "scripts": {
+      "build:styles": "cross-env ecl-builder styles",
+      "build": "run-s clean build:*",
+      "clean": "rimraf build",
+      "prepublish": "npm run build"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+      "@ecl/builder": "5.3.1",
+      "@ecl/slider": "5.3.1",
+      "@ecl/mixins-color": "5.3.1",
+      "@ecl/theme-ec": "5.3.1",
+      "@ecl/theme-eu": "5.3.1",
+      "cross-env": "10.1.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/planctus/ecl-webcomponents.git"
+    }
+  }
+  

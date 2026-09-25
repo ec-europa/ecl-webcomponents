@@ -16,6 +16,7 @@ export class EclQuiz {
   @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string;
+  @Prop() colorMode: string = '';
   @Prop() noScript: boolean = false;
   @Prop() itemId: string;
   @Prop() quizTitle: string;
@@ -40,6 +41,10 @@ export class EclQuiz {
 
     if (this.fullWidth) {
       styleClasses.push('ecl-quiz--full-width');
+    }
+
+    if (this.colorMode) {
+      styleClasses.push(`ecl-color-mode--${this.colorMode}`);
     }
 
     return styleClasses.join(' ');
@@ -88,44 +93,22 @@ export class EclQuiz {
           </div>
         </div>
 
-        <div class="ecl-quiz__pager">
-          <button class="ecl-quiz__prev">
-            <ecl-icon
-              icon="corner-arrow"
-              rotate="270"
-              color="monochrome"
-              size="xs"
-            ></ecl-icon>
+        <ecl-slider-pager
+          styleClass={`ecl-quiz__pager sc-ecl-quiz-${this.theme}`}
+          prevExtraClasses={`ecl-quiz__prev sc-ecl-quiz-${this.theme}`}
+          nextExtraClasses={`ecl-quiz__next sc-ecl-quiz-${this.theme}`}
+          srPrev="Previous"
+          srNext="Next"
+          srPlay="Play"
+          srPause="Pause"
+          prevExtraAttributes="data-ecl-quiz-prev"
+          nextExtraAttributes="data-ecl-quiz-next"
+          dotsExtraClasses="ecl-quiz__dots"
+          dotExtraClasses="ecl-quiz__dot"
+          templateDataAttribute="data-ecl-quiz-dot-template"
+        ></ecl-slider-pager>
 
-            <span class="ecl-quiz__prev-label">
-              {this.prevLabel}
-            </span>
-          </button>
-
-          <div class="ecl-quiz__dots"></div>
-
-          <button class="ecl-quiz__next">
-            <ecl-icon
-              icon="corner-arrow"
-              rotate="90"
-              color="monochrome"
-              size="xs"
-            ></ecl-icon>
-
-            <span class="ecl-quiz__next-label">
-              {this.nextLabel}
-            </span>
-          </button>
-
-          <script
-            type="text/template"
-            id="ecl-quiz__dot-template"
-          >
-            <button class="ecl-quiz__dot"></button>
-          </script>
-        </div>
-
-        <div class="ecl-quiz__counter"></div>
+        <div class="ecl-quiz__counter" dir="ltr"></div>
       </Fragment>
     );
 

@@ -9,11 +9,12 @@ export class EclMegaMenuSubitem {
   @Prop() styleClass: string;
   @Prop() label!: string;
   @Prop() path?: string;
-  @Prop() oneLevelOnly = false;
-  @Prop() external = false;
-  @Prop() seeAll = false;
+  @Prop() oneLevelOnly: boolean = false;
+  @Prop() external: boolean = false;
+  @Prop() seeAll: boolean = false;
   @Prop() hasFeatured = false;
   @Prop() featuredTitle: string;
+  @Prop() isCurrent: boolean = false;
   @Prop() hasChildren: boolean = false;
   @Prop() seeAllLabel?: string;
   @Prop() ariaLabel: string;
@@ -70,6 +71,7 @@ export class EclMegaMenuSubitem {
           data-ecl-mega-menu-link
           path={this.path}
           style-class={`ecl-mega-menu__sublink sc-ecl-mega-menu-${this.theme}`}
+          {...(this.isCurrent ? { 'aria-current': 'page' } : '')}
         >
           {this.label}
         </ecl-link> 

@@ -204,6 +204,7 @@ describe('ecl-site-header', () => {
           info-title="About the European Union"
           has-featured
           one-level-only
+          is-current
           aria-label="Pages in this section"
         >
           <span slot="info">
@@ -219,7 +220,7 @@ describe('ecl-site-header', () => {
           >
             I belong to the sub item
           </ecl-mega-menu-featured-list-item>
-          <ecl-mega-menu-subitem label="Item 3.1" path="/example.html"></ecl-mega-menu-subitem>
+          <ecl-mega-menu-subitem label="Item 3.1" is-current path="/example.html"></ecl-mega-menu-subitem>
           <ecl-mega-menu-subitem label="Item 3.2" path="/example.html"></ecl-mega-menu-subitem>
           <ecl-mega-menu-subitem label="Item 3.3" path="/example.html"></ecl-mega-menu-subitem>
           <ecl-mega-menu-subitem label="Item 3.4" path="/example.html"></ecl-mega-menu-subitem>

@@ -2,6 +2,7 @@ import { newSpecPage } from '@stencil/core/testing';
 import { EclQuiz } from '../ecl-quiz';
 import { EclQuizCard } from '../ecl-quiz-card';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
+import { EclSliderPager } from '../../ecl-slider/ecl-slider-pager';
 
 describe('ecl-quiz', () => {
   beforeEach(() => {
@@ -10,7 +11,7 @@ describe('ecl-quiz', () => {
   
   it('reveal renders correctly', async () => {
     const page = await newSpecPage({
-      components: [EclQuiz, EclQuizCard, EclIcon],
+      components: [EclQuiz, EclQuizCard, EclIcon, EclSliderPager],
       html: `<ecl-quiz
         quiz-title="Ut enim ad minim veniam"
         description="Nulla est ad excepteur sint officia fugiat aute commodo ullamco amet culpa eiusmod labore.
@@ -25,6 +26,8 @@ describe('ecl-quiz', () => {
           variant="reveal"
           main-icon="sparkle"
           item-id="card-reveal-1"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+          image-display="reveal"
           question="When you travel in the EU, what happens to your roaming charges?"
           answer="You usually pay the same at home, no extra roaming fees."
           flip-text="Reveal answer"
@@ -35,6 +38,8 @@ describe('ecl-quiz', () => {
           variant="reveal"
           main-icon="sparkle"
           item-id="card-reveal-2"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
+          image-display="always"
           question="What document allows EU citizens to travel freely between most EU countries?"
           answer="A valid ID card or passport is usually enough."
           flip-text="Reveal answer"
@@ -90,14 +95,14 @@ describe('ecl-quiz', () => {
         prev-label="Previous"
         next-label="Next"
         no-script
+        color-mode="orange"
       >
         <ecl-quiz-card
-          category="Quiz"
           item-id="card-poll-1"
           variant="poll"
-          main-icon="question"
-          success-category="Correct"
-          error-category="Incorrect"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
+          image-display="reveal"
+          main-icon="question-mark"
           question="Which institution proposes new EU laws?"
           answer-title="The correct answer is A."
           answer="The European Commission has the exclusive right to propose new EU laws"
@@ -111,10 +116,9 @@ describe('ecl-quiz', () => {
         <ecl-quiz-card
           variant="poll"
           item-id="card-poll-2"
-          main-icon="question"
-          category="Quiz"
-          success-category="Correct"
-          error-category="Incorrect"
+          image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
+          image-display="always"
+          main-icon="question-mark"
           question="What document allows EU citizens to travel freely between most EU countries?"
           answer-title="The correct answer is B."
           answer="A valid ID card or passport is usually enough to travel freely between most EU countries."
@@ -126,12 +130,9 @@ describe('ecl-quiz', () => {
         >
         </ecl-quiz-card>
         <ecl-quiz-card
-          category="Quiz"
           item-id="card-poll-3"
           variant="poll"
-          main-icon="question"
-          success-category="Correct"
-          error-category="Incorrect"
+          main-icon="question-mark"
           question="What currency is used in many EU countries?"
           answer-title="The correct answer is C."
           answer="The Euro is the official currency used by many EU conutries"
@@ -143,12 +144,9 @@ describe('ecl-quiz', () => {
         >
         </ecl-quiz-card>
         <ecl-quiz-card
-          category="Quiz"
           item-id="card-poll-4"
           variant="poll"
-          main-icon="question"
-          success-category="Correct"
-          error-category="Incorrect"
+          main-icon="question-mark"
           question="Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
           answer-title="The correct answer is B."
           answer="Duis id mattis libero. Quisque accumsan nisi"

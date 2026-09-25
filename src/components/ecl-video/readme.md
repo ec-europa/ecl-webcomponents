@@ -22,6 +22,13 @@
 | `zoom`          | `zoom`            |             | `boolean` | `false`     |
 
 
+## Slots
+
+| Slot | Description      |
+| ---- | ---------------- |
+|      | The default slot |
+
+
 ## Dependencies
 
 ### Used by

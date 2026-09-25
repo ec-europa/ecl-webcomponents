@@ -23,6 +23,18 @@
 | `theme`             | `theme`               |             | `string`  | `undefined`  |
 
 
+## Slots
+
+| Slot                | Description |
+| ------------------- | ----------- |
+| `"description"`     |             |
+| `"labels"`          |             |
+| `"links"`           |             |
+| `"links-secondary"` |             |
+| `"lists"`           |             |
+| `"title"`           |             |
+
+
 ## Dependencies
 
 ### Depends on

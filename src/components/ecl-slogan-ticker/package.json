@@ -16,10 +16,10 @@
     "@ecl/web-components-button": "0.30.0"
   },
   "devDependencies": {
-    "@ecl/builder": "5.1.0",
-    "@ecl/slogan-ticker": "5.1.0",
-    "@ecl/theme-ec": "5.1.0",
-    "@ecl/theme-eu": "5.1.0",
+    "@ecl/builder": "5.3.1",
+    "@ecl/slogan-ticker": "5.3.1",
+    "@ecl/theme-ec": "5.3.1",
+    "@ecl/theme-eu": "5.3.1",
     "cross-env": "10.1.0"
   },
   "repository": {

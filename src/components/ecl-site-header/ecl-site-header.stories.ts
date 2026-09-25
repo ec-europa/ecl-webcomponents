@@ -716,6 +716,7 @@ const megaMenu = (args) => `
       has-children
       has-info
       has-featured
+      is-current
       info-title="About key priorities"
       featured-title="Featured items"
       aria-label="Pages in this section"

@@ -7,6 +7,12 @@ import { EclButton } from '../../ecl-button/ecl-button';
 
 describe('ecl-news-ticker', () => {
   beforeEach(() => {
+    global.ResizeObserver = class {
+      observe() {}
+      unobserve() {}
+      disconnect() {}
+    };
+    
     (global as any).ECL = {};
   });
 

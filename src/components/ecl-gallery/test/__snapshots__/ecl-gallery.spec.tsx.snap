@@ -18,18 +18,17 @@ exports[`ecl-gallery renders 1`] = `
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" image-alt="Image 1" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-1-title">
-                The EU in brief, institutions and bodies, countries, symbols, history, facts and figures
+                <span class="ecl-gallery__title-text">
+                  The EU in brief, institutions and bodies, countries, symbols, history, facts and figures
+                </span>
               </div>
-              <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
-                Copyright, Author, Licence for image 1
-              </span>
             </figcaption>
           </figure>
         </a>
       </ecl-gallery-item>
-      <ecl-gallery-item class="ecl-gallery__item sc-ecl-gallery-ec" el-id="ecl-gallery-demo-test-item-2" id="ecl-gallery-demo-test-item-2" image-alt="New digital strategy" media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-external-video.jpg" media-iframe-href="https://www.youtube.com/embed/fgi-GSCB6ho" meta="Copyright, Author, Licence for embedded media" role="listitem" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg" type="video">
+      <ecl-gallery-item class="ecl-gallery__item sc-ecl-gallery-ec" el-id="ecl-gallery-demo-test-item-2" id="ecl-gallery-demo-test-item-2" image-alt="New digital strategy" media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-external-video.jpg" media-iframe-href="https://www.youtube.com/embed/fgi-GSCB6ho" meta="Copyright, Author, Licence for embedded media" publication-date="20 Feb 2020" role="listitem" thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg" type="video" video-length="1:01">
         <!---->
-        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-embed-src="https://www.youtube.com/embed/fgi-GSCB6ho" data-ecl-gallery-item-id="1" href="https://www.youtube.com/embed/fgi-GSCB6ho">
+        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-embed-src="https://www.youtube.com/embed/fgi-GSCB6ho" data-ecl-gallery-item-id="1" data-ecl-gallery-item-publication-date="20 Feb 2020" href="https://www.youtube.com/embed/fgi-GSCB6ho">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
             <div class="ecl-gallery__icon-zoom-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__icon-zoom sc-ecl-gallery-ec">
@@ -44,12 +43,19 @@ exports[`ecl-gallery renders 1`] = `
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg" img-class="ecl-gallery__image sc-ecl-gallery-ec" style-class="ecl-gallery__thumbnail sc-ecl-gallery-ec"></ecl-picture>
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-external-video.jpg" image-alt="New digital strategy" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
-              <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-2-title">
-                New digital strategy
+              <div class="ecl-gallery__meta sc-ecl-gallery-ec">
+                <span class="ecl-gallery__length">
+                  1:01
+                </span>
+                <span class="ecl-gallery__date">
+                  20 Feb 2020
+                </span>
               </div>
-              <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
-                Copyright, Author, Licence for embedded media
-              </span>
+              <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-2-title">
+                <span class="ecl-gallery__title-text">
+                  New digital strategy
+                </span>
+              </div>
             </figcaption>
           </figure>
         </a>
@@ -67,11 +73,10 @@ exports[`ecl-gallery renders 1`] = `
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg" image-alt="Image 2" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-3-title">
-                Information on agriculture, business, culture, health, etc.
+                <span class="ecl-gallery__title-text">
+                  Information on agriculture, business, culture, health, etc.
+                </span>
               </div>
-              <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
-                Copyright, Author, Licence for image 2
-              </span>
             </figcaption>
           </figure>
         </a>
@@ -89,11 +94,10 @@ exports[`ecl-gallery renders 1`] = `
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg" image-alt="Image 3" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-4-title">
-                Living, working, travelling in the EU
+                <span class="ecl-gallery__title-text">
+                  Living, working, travelling in the EU
+                </span>
               </div>
-              <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
-                Copyright, Author, Licence for image 3
-              </span>
             </figcaption>
           </figure>
         </a>
@@ -111,18 +115,17 @@ exports[`ecl-gallery renders 1`] = `
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg" image-alt="Image 3" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-5-title">
-                Information on taxes, customs, importing and exporting goods, financial support for businesses
+                <span class="ecl-gallery__title-text">
+                  Information on taxes, customs, importing and exporting goods, financial support for businesses
+                </span>
               </div>
-              <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
-                Copyright, Author, Licence for image 4
-              </span>
             </figcaption>
           </figure>
         </a>
       </ecl-gallery-item>
-      <ecl-gallery-item class="ecl-gallery__item ecl-gallery__item--hidden sc-ecl-gallery-ec" el-id="ecl-gallery-demo-test-item-6" id="ecl-gallery-demo-test-item-6" media-share-path="/example.html" meta="Copyright, Author, Licence for video" role="listitem" type="html-video">
+      <ecl-gallery-item class="ecl-gallery__item ecl-gallery__item--hidden sc-ecl-gallery-ec" el-id="ecl-gallery-demo-test-item-6" id="ecl-gallery-demo-test-item-6" media-share-path="/example.html" meta="Copyright, Author, Licence for video" publication-date="03 Aug 2019" role="listitem" type="html-video" video-length="4:25">
         <!---->
-        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-id="5" data-ecl-gallery-item-share="/example.html">
+        <a class="ecl-gallery__item-link sc-ecl-gallery-ec" data-ecl-gallery-item data-ecl-gallery-item-id="5" data-ecl-gallery-item-publication-date="03 Aug 2019" data-ecl-gallery-item-share="/example.html">
           <figure class="ecl-gallery__image-container sc-ecl-gallery-ec">
             <div class="ecl-gallery__icon-zoom-wrapper sc-ecl-gallery-ec">
               <ecl-icon style-class="ecl-gallery__icon-zoom sc-ecl-gallery-ec">
@@ -141,12 +144,19 @@ exports[`ecl-gallery renders 1`] = `
               <track kind="captions" label="français" src="/captions/bunny-fr.vtt" srclang="fr">
             </video>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
-              <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-6-title">
-                EU law
+              <div class="ecl-gallery__meta sc-ecl-gallery-ec">
+                <span class="ecl-gallery__length">
+                  4:25
+                </span>
+                <span class="ecl-gallery__date">
+                  03 Aug 2019
+                </span>
               </div>
-              <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
-                Copyright, Author, Licence for video
-              </span>
+              <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-6-title">
+                <span class="ecl-gallery__title-text">
+                  EU law
+                </span>
+              </div>
             </figcaption>
           </figure>
         </a>
@@ -164,11 +174,10 @@ exports[`ecl-gallery renders 1`] = `
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg" image-alt="Image 6" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-7-title">
-                Find official documents, publications, statistics, open data and more resources
+                <span class="ecl-gallery__title-text">
+                  Find official documents, publications, statistics, open data and more resources
+                </span>
               </div>
-              <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
-                Copyright, Author, Licence for image 6
-              </span>
             </figcaption>
           </figure>
         </a>
@@ -186,11 +195,10 @@ exports[`ecl-gallery renders 1`] = `
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg" image-alt="Image 7" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-8-title">
-                Teaching material about the EU, including books and maps
+                <span class="ecl-gallery__title-text">
+                  Teaching material about the EU, including books and maps
+                </span>
               </div>
-              <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
-                Copyright, Author, Licence for image 7
-              </span>
             </figcaption>
           </figure>
         </a>
@@ -208,11 +216,10 @@ exports[`ecl-gallery renders 1`] = `
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg" image-alt="Image 8" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-9-title">
-                Teaching material about the EU, including books and maps
+                <span class="ecl-gallery__title-text">
+                  Teaching material about the EU, including books and maps
+                </span>
               </div>
-              <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
-                Copyright, Author, Licence for image 8
-              </span>
             </figcaption>
           </figure>
         </a>
@@ -230,11 +237,10 @@ exports[`ecl-gallery renders 1`] = `
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg" image-alt="Image 9" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-10-title">
-                About the EU
+                <span class="ecl-gallery__title-text">
+                  About the EU
+                </span>
               </div>
-              <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
-                Copyright, Author, Licence for image 9
-              </span>
             </figcaption>
           </figure>
         </a>
@@ -252,11 +258,10 @@ exports[`ecl-gallery renders 1`] = `
             <ecl-picture image="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg" image-alt="Image 10" img-class="ecl-gallery__image sc-ecl-gallery-ec" lazy="" styleclass="ecl-gallery__picture sc-ecl-gallery-ec"></ecl-picture>
             <figcaption class="ecl-gallery__description sc-ecl-gallery-ec" data-ecl-gallery-description>
               <div class="ecl-gallery__title" data-ecl-gallery-title id="ecl-gallery-demo-test-item-10-title">
-                EU by topic
+                <span class="ecl-gallery__title-text">
+                  EU by topic
+                </span>
               </div>
-              <span class="ecl-gallery__meta sc-ecl-gallery-ec" data-ecl-gallery-meta>
-                Copyright, Author, Licence for image 10
-              </span>
             </figcaption>
           </figure>
         </a>

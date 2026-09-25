@@ -262,6 +262,7 @@ export class EclSiteHeader {
                       data-ecl-search-toggle
                       aria-controls="search-form-id"
                       aria-expanded="false"
+                      aria-haspopup="dialog"
                     >
                       <ecl-icon
                         icon="search"
@@ -271,15 +272,22 @@ export class EclSiteHeader {
                        </ecl-icon>
                       {this.searchText}
                     </a>
-                    <ecl-search-form
-                      style-class={`ecl-site-header__search sc-ecl-site-header-${this.theme}`}
-                      theme={this.theme}
-                      input-id={this.searchFormId}
-                      placeholder={this.searchPlaceholder}
-                      button-label={this.searchText}
-                      button-aria-label={this.searchText}
-                      button-class={`ecl-button--neutral sc-ecl-site-header-${this.theme}`}
-                    ></ecl-search-form>
+                    <div
+                      class="ecl-site-header__search-dialog"
+                      role="dialog"
+                      aria-modal="true"
+                      id="ecl-site-header-search-form-dialog"
+                    >
+                      <ecl-search-form
+                        style-class={`ecl-site-header__search sc-ecl-site-header-${this.theme}`}
+                        theme={this.theme}
+                        input-id={this.searchFormId}
+                        placeholder={this.searchPlaceholder}
+                        button-label={this.searchText}
+                        button-aria-label={this.searchText}
+                        button-class={`ecl-button--neutral sc-ecl-site-header-${this.theme}`}
+                      ></ecl-search-form>
+                    </div>
                   </div> : <slot name="search"></slot>
                 }
                 </div>
