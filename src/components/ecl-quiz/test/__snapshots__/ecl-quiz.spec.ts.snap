@@ -697,7 +697,23 @@ exports[`ecl-quiz reveal renders correctly 1`] = `
         </ecl-quiz-card>
       </div>
     </div>
-    <ecl-slider-pager dotextraclasses="ecl-quiz__dot" dotsextraclasses="ecl-quiz__dots" nextextraattributes="data-ecl-quiz-next" nextextraclasses="ecl-quiz__next sc-ecl-quiz-ec" prevextraattributes="data-ecl-quiz-prev" prevextraclasses="ecl-quiz__prev sc-ecl-quiz-ec" srnext="Next" srpause="Pause" srplay="Play" srprev="Previous" styleclass="ecl-quiz__pager sc-ecl-quiz-ec" templatedataattribute="data-ecl-quiz-dot-template"></ecl-slider-pager>
+    <ecl-slider-pager>
+      <div class="ecl-quiz__pager ecl-slider-pager sc-ecl-quiz-ec">
+        <ecl-button button-style="neutral" data-ecl-quiz-prev size="s" style-class="ecl-slider-pager__prev sc-ecl-slider-pager-ec ecl-quiz__prev sc-ecl-quiz-ec" type="button" variant="tertiary">
+          Previous
+          <ecl-icon slot="icon-after">
+            <span class="ecl-icon ecl-icon--xs wt-icon--monochrome wt-icon--placeholder wt-icon-phosphor--caret-left"></span>
+          </ecl-icon>
+        </ecl-button>
+        <div class="ecl-quiz__dots ecl-slider-pager__dots"></div>
+        <ecl-button button-style="neutral" data-ecl-quiz-next size="s" style-class="ecl-slider-pager__next sc-ecl-slider-pager-ec ecl-quiz__next sc-ecl-quiz-ec" type="button" variant="tertiary">
+          Next
+          <ecl-icon slot="icon-after">
+            <span class="ecl-icon ecl-icon--xs wt-icon--monochrome wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
+          </ecl-icon>
+        </ecl-button><script data-ecl-quiz-dot-template data-ecl-slider-dot-template type="text/template"><button class="ecl-quiz__dot ecl-slider-pager__dot"></button></script>
+      </div>
+    </ecl-slider-pager>
     <div class="ecl-quiz__counter" dir="ltr"></div>
   </section>
 </ecl-quiz>

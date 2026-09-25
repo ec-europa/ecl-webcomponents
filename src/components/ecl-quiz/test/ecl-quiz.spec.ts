@@ -2,6 +2,7 @@ import { newSpecPage } from '@stencil/core/testing';
 import { EclQuiz } from '../ecl-quiz';
 import { EclQuizCard } from '../ecl-quiz-card';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
+import { EclSliderPager } from '../../ecl-slider/ecl-slider-pager';
 
 describe('ecl-quiz', () => {
   beforeEach(() => {
@@ -10,7 +11,7 @@ describe('ecl-quiz', () => {
   
   it('reveal renders correctly', async () => {
     const page = await newSpecPage({
-      components: [EclQuiz, EclQuizCard, EclIcon],
+      components: [EclQuiz, EclQuizCard, EclIcon, EclSliderPager],
       html: `<ecl-quiz
         quiz-title="Ut enim ad minim veniam"
         description="Nulla est ad excepteur sint officia fugiat aute commodo ullamco amet culpa eiusmod labore.

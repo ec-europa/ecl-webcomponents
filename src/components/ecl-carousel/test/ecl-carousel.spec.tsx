@@ -2,6 +2,7 @@ import { newSpecPage } from '@stencil/core/testing';
 import { EclCarousel } from '../ecl-carousel';
 import { EclBanner } from '../../ecl-banner/ecl-banner';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
+import { EclSliderPager } from '../../ecl-slider/ecl-slider-pager';
 
 describe('ecl-carousel', () => {
   beforeEach(() => {
@@ -10,7 +11,7 @@ describe('ecl-carousel', () => {
 
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclCarousel, EclBanner, EclIcon],
+      components: [EclCarousel, EclBanner, EclIcon, EclSliderPager],
       html: `<ecl-carousel
               color-mode="orange"
             >
