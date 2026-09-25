@@ -550,6 +550,8 @@ export const EclGalleryItem: StencilVueComponent<JSX.EclGalleryItem> = /*@__PURE
   'mediaIframeHref',
   'mediaSharePath',
   'ariaLabel',
+  'publicationDate',
+  'videoLength',
   'meta',
   'type',
   'icon',

@@ -16,6 +16,8 @@ export class EclGalleryItem {
   @Prop() mediaIframeHref: string;
   @Prop() mediaSharePath: string;
   @Prop() ariaLabel: string;
+  @Prop() publicationDate: string;
+  @Prop() videoLength: string;
   @Prop() meta: string;
   @Prop() type: string = 'image';
   @Prop() icon: string;
@@ -56,6 +58,9 @@ export class EclGalleryItem {
     }
     if (this.ariaLabel) {
       attrs['aria-label'] = this.ariaLabel;
+    }
+    if (this.publicationDate) {
+      attrs['data-ecl-gallery-item-publication-date'] = this.publicationDate;
     }
 
     return attrs;
@@ -132,6 +137,18 @@ export class EclGalleryItem {
               class={`ecl-gallery__description sc-ecl-gallery-${this.theme}`}
               data-ecl-gallery-description
             >
+            { (this.videoLength || this.publicationDate) &&
+              <div
+                class={`ecl-gallery__meta sc-ecl-gallery-${this.theme}`}
+              >
+              { this.videoLength &&
+                <span class="ecl-gallery__length">{this.videoLength}</span>
+              }
+              { this.publicationDate &&
+                <span class="ecl-gallery__date">{this.publicationDate}</span>
+              }
+              </div>
+            }
             { this.icon &&
               <ecl-icon
                 icon={this.icon}
@@ -139,13 +156,15 @@ export class EclGalleryItem {
                 size="s"
               ></ecl-icon>
             }
-              <div class="ecl-gallery__title" data-ecl-gallery-title id={`${this.getId()}-title`}><slot></slot></div>
-              <span
-                class={`ecl-gallery__meta sc-ecl-gallery-${this.theme}`}
-                data-ecl-gallery-meta
+              <div
+                class="ecl-gallery__title"
+                data-ecl-gallery-title
+                id={`${this.getId()}-title`}
               >
-                {this.meta}
-              </span>
+                <span class="ecl-gallery__title-text">
+                  <slot></slot>
+                </span>
+              </div>
             </figcaption>
           </figure>
         </a>

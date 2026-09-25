@@ -17,11 +17,13 @@
 | `mediaIframeHref` | `media-iframe-href` |             | `string`  | `undefined` |
 | `mediaSharePath`  | `media-share-path`  |             | `string`  | `undefined` |
 | `meta`            | `meta`              |             | `string`  | `undefined` |
+| `publicationDate` | `publication-date`  |             | `string`  | `undefined` |
 | `styleClass`      | `style-class`       |             | `string`  | `''`        |
 | `theme`           | `theme`             |             | `string`  | `undefined` |
 | `thumbZoom`       | `thumb-zoom`        |             | `boolean` | `false`     |
 | `thumbnail`       | `thumbnail`         |             | `string`  | `undefined` |
 | `type`            | `type`              |             | `string`  | `'image'`   |
+| `videoLength`     | `video-length`      |             | `string`  | `undefined` |
 
 
 ## Slots

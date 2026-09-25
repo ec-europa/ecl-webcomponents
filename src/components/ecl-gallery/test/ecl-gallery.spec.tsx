@@ -41,6 +41,8 @@ describe('ecl-gallery', () => {
         <ecl-gallery-item
           el-id="ecl-gallery-demo-test-item-2"
           type="video"
+          publication-date="20 Feb 2020"
+          video-length="1:01"
           meta="Copyright, Author, Licence for embedded media"
           media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example.html-external-video.jpg"
           image-alt="New digital strategy"
@@ -84,6 +86,8 @@ describe('ecl-gallery', () => {
           media-share-path="/example.html"
           meta="Copyright, Author, Licence for video"
           type="html-video"
+          publication-date="03 Aug 2019"
+          video-length="4:25"
         >
           EU law
           <video

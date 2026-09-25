@@ -974,6 +974,7 @@ export namespace Components {
         "mediaIframeHref": string;
         "mediaSharePath": string;
         "meta": string;
+        "publicationDate": string;
         /**
           * @default ''
          */
@@ -988,6 +989,7 @@ export namespace Components {
           * @default 'image'
          */
         "type": string;
+        "videoLength": string;
     }
     interface EclGrid {
         "breakpoint": string;
@@ -4713,6 +4715,7 @@ declare namespace LocalJSX {
         "mediaIframeHref"?: string;
         "mediaSharePath"?: string;
         "meta"?: string;
+        "publicationDate"?: string;
         /**
           * @default ''
          */
@@ -4727,6 +4730,7 @@ declare namespace LocalJSX {
           * @default 'image'
          */
         "type"?: string;
+        "videoLength"?: string;
     }
     interface EclGrid {
         "breakpoint"?: string;
@@ -7113,6 +7117,8 @@ declare namespace LocalJSX {
         "mediaIframeHref": string;
         "mediaSharePath": string;
         "ariaLabel": string;
+        "publicationDate": string;
+        "videoLength": string;
         "meta": string;
         "type": string;
         "icon": string;
