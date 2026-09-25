@@ -192,31 +192,19 @@ exports[`ecl-table sortable renders correctly 1`] = `
       </caption>
       <thead class="ecl-table__head">
         <tr class="ecl-table__row">
-          <th aria-sort="none" class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-1" scope="col">
+          <th class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-1" scope="col">
             Country
-            <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
-              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
-              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
-            </button>
           </th>
-          <th aria-sort="none" class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-2" scope="col">
+          <th class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-2" scope="col">
             Capital
-            <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
-              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
-              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
-            </button>
           </th>
-          <th aria-sort="none" class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-3" scope="col">
+          <th class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-3" scope="col">
             Population
-            <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
-              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
-              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
-            </button>
           </th>
         </tr>
       </thead>
       <tbody class="ecl-table__body">
-        <tr class="ecl-table__row" data-ecl-table-order="0">
+        <tr class="ecl-table__row">
           <td class="ecl-table__cell" data-ecl-table-header="country">
             Italy
           </td>
@@ -227,7 +215,7 @@ exports[`ecl-table sortable renders correctly 1`] = `
             59M
           </td>
         </tr>
-        <tr class="ecl-table__row" data-ecl-table-order="1">
+        <tr class="ecl-table__row">
           <td class="ecl-table__cell" data-ecl-table-header="country">
             France
           </td>
@@ -238,7 +226,7 @@ exports[`ecl-table sortable renders correctly 1`] = `
             67M
           </td>
         </tr>
-        <tr class="ecl-table__row" data-ecl-table-order="2">
+        <tr class="ecl-table__row">
           <td class="ecl-table__cell" data-ecl-table-header="country">
             Germany
           </td>
