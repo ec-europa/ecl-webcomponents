@@ -15,8 +15,8 @@ export class EclSloganTicker {
   @Element() el: HTMLElement;
   @Prop({ mutable: true }) theme: string;
   @Prop() styleClass: string = '';
-  @Prop() srPlay: string = '';
-  @Prop() srPause: string = '';
+  @Prop() srPlay: string = 'Continue scrolling';
+  @Prop() srPause: string = 'Pause scrolling';
   @Prop() noScript: boolean = false;
   @Prop() colorMode: string = '';
   @Prop() items: string = '[]'; // JSON array of strings or objects

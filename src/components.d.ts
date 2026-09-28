@@ -2323,11 +2323,11 @@ export namespace Components {
          */
         "noScript": boolean;
         /**
-          * @default ''
+          * @default 'Pause scrolling'
          */
         "srPause": string;
         /**
-          * @default ''
+          * @default 'Continue scrolling'
          */
         "srPlay": string;
         /**
@@ -6076,11 +6076,11 @@ declare namespace LocalJSX {
          */
         "noScript"?: boolean;
         /**
-          * @default ''
+          * @default 'Pause scrolling'
          */
         "srPause"?: string;
         /**
-          * @default ''
+          * @default 'Continue scrolling'
          */
         "srPlay"?: string;
         /**

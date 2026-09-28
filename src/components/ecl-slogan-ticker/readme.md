@@ -7,15 +7,15 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type      | Default     |
-| ------------ | ------------- | ----------- | --------- | ----------- |
-| `colorMode`  | `color-mode`  |             | `string`  | `''`        |
-| `items`      | `items`       |             | `string`  | `'[]'`      |
-| `noScript`   | `no-script`   |             | `boolean` | `false`     |
-| `srPause`    | `sr-pause`    |             | `string`  | `''`        |
-| `srPlay`     | `sr-play`     |             | `string`  | `''`        |
-| `styleClass` | `style-class` |             | `string`  | `''`        |
-| `theme`      | `theme`       |             | `string`  | `undefined` |
+| Property     | Attribute     | Description | Type      | Default                |
+| ------------ | ------------- | ----------- | --------- | ---------------------- |
+| `colorMode`  | `color-mode`  |             | `string`  | `''`                   |
+| `items`      | `items`       |             | `string`  | `'[]'`                 |
+| `noScript`   | `no-script`   |             | `boolean` | `false`                |
+| `srPause`    | `sr-pause`    |             | `string`  | `'Pause scrolling'`    |
+| `srPlay`     | `sr-play`     |             | `string`  | `'Continue scrolling'` |
+| `styleClass` | `style-class` |             | `string`  | `''`                   |
+| `theme`      | `theme`       |             | `string`  | `undefined`            |
 
 
 ## Dependencies
