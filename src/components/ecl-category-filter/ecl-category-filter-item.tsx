@@ -14,7 +14,7 @@ export class EclCategoryFilterItem {
   @Prop() path: string;
   @Prop() level: number;
   @Prop() subItems: boolean = false;
-  @Prop() expanded: boolean = false;
+  @Prop() current: boolean = false;
   @Prop() lastClicked: HTMLElement;
 
   clickedItem(ev): void {
@@ -53,8 +53,8 @@ export class EclCategoryFilterItem {
     if (this.subItems) {
       elAttrs['aria-expanded'] = "false";
     }
-    if (this.expanded) {
-      elAttrs['aria-expanded'] = "true";
+    if (this.current) {
+      elAttrs['aria-current'] = "true";
     }
 
     return (

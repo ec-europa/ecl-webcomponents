@@ -111,6 +111,7 @@ const Template = (args) =>
     label="Item 3 with a very long label"
     level="1"
     sub-items
+    current
   >
     <ecl-category-filter-item
       label="Item 3.1"

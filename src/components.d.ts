@@ -372,7 +372,7 @@ export namespace Components {
         /**
           * @default false
          */
-        "expanded": boolean;
+        "current": boolean;
         "label": string;
         "lastClicked": HTMLElement;
         "level": number;
@@ -4110,7 +4110,7 @@ declare namespace LocalJSX {
         /**
           * @default false
          */
-        "expanded"?: boolean;
+        "current"?: boolean;
         "label"?: string;
         "lastClicked"?: HTMLElement;
         "level"?: number;
@@ -6821,7 +6821,7 @@ declare namespace LocalJSX {
         "path": string;
         "level": number;
         "subItems": boolean;
-        "expanded": boolean;
+        "current": boolean;
     }
     interface EclContentBlockAttributes {
         "styleClass": string;

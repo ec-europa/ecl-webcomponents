@@ -9,7 +9,7 @@
 
 | Property      | Attribute     | Description | Type          | Default     |
 | ------------- | ------------- | ----------- | ------------- | ----------- |
-| `expanded`    | `expanded`    |             | `boolean`     | `false`     |
+| `current`     | `current`     |             | `boolean`     | `false`     |
 | `label`       | `label`       |             | `string`      | `undefined` |
 | `lastClicked` | --            |             | `HTMLElement` | `undefined` |
 | `level`       | `level`       |             | `number`      | `undefined` |

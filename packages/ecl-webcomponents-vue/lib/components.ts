@@ -202,7 +202,7 @@ export const EclCategoryFilterItem: StencilVueComponent<JSX.EclCategoryFilterIte
   'path',
   'level',
   'subItems',
-  'expanded',
+  'current',
   'lastClicked'
 ]);
 
