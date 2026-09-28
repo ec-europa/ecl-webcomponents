@@ -83,7 +83,7 @@ export class EclStoryCardItem {
           </div>
         }
           <div class={`ecl-story-card__content sc-ecl-story-card-${this.theme}`}>
-          {this.variant === 'testimonial' &&
+          {this.variant === 'testimonial' ?
             <div class={`ecl-story-card__content-icon sc-ecl-story-card-${this.theme}`}>
               <svg class={`sc-ecl-story-card-${this.theme}`} xmlns="http://www.w3.org/2000/svg" width="22" height="45" viewBox="0 0 22 45" fill="none">
                 <path d="M0 0H22V23.3143L0 44.5714V0Z" fill="currentColor"/>
@@ -91,6 +91,9 @@ export class EclStoryCardItem {
               <svg class={`sc-ecl-story-card-${this.theme}`} xmlns="http://www.w3.org/2000/svg" width="22" height="45" viewBox="0 0 22 45" fill="none">
                 <path d="M0 0H22V23.3143L0 44.5714V0Z" fill="currentColor"/>
               </svg>
+            </div> :
+            <div class={`ecl-story-card__teaser-label sc-ecl-story-card-${this.theme}`}>
+              {this.teaserLabel}
             </div>
           }
           {this.elTitle &&

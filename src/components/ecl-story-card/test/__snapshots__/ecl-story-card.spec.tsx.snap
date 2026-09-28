@@ -27,6 +27,9 @@ exports[`ecl-story-card renders 1`] = `
                 </ecl-picture>
               </div>
               <div class="ecl-story-card__content sc-ecl-story-card-ec">
+                <div class="ecl-story-card__teaser-label sc-ecl-story-card-ec">
+                  why twelve?
+                </div>
                 <div class="ecl-story-card__card-title sc-ecl-story-card-ec">
                   The European flag is one of the most recognised symbols in Europe.
                 </div>
@@ -62,6 +65,9 @@ exports[`ecl-story-card renders 1`] = `
                 </ecl-picture>
               </div>
               <div class="ecl-story-card__content sc-ecl-story-card-ec">
+                <div class="ecl-story-card__teaser-label sc-ecl-story-card-ec">
+                  for everyone
+                </div>
                 <div class="ecl-story-card__card-title sc-ecl-story-card-ec">
                   You can do the same by producing your own electricity and sharing it local.
                 </div>
@@ -97,6 +103,9 @@ exports[`ecl-story-card renders 1`] = `
                 </ecl-picture>
               </div>
               <div class="ecl-story-card__content sc-ecl-story-card-ec">
+                <div class="ecl-story-card__teaser-label sc-ecl-story-card-ec">
+                  the design
+                </div>
                 <div class="ecl-story-card__card-title sc-ecl-story-card-ec">
                   You can do the same by producing your own electricity and sharing it local.
                 </div>
@@ -132,6 +141,9 @@ exports[`ecl-story-card renders 1`] = `
                 </ecl-picture>
               </div>
               <div class="ecl-story-card__content sc-ecl-story-card-ec">
+                <div class="ecl-story-card__teaser-label sc-ecl-story-card-ec">
+                  across europe
+                </div>
                 <div class="ecl-story-card__card-title sc-ecl-story-card-ec">
                   You can do the same by producing your own electricity and sharing it local.
                 </div>
@@ -298,10 +310,13 @@ exports[`ecl-story-card renders 1`] = `
           </button>
         </ecl-story-card-tab>
       </div>
-      <ecl-story-card-item class="ecl-story-card__grid-details sc-ecl-story-card-ec" data-ecl-story-card-grid-details="true" el-role="" el-title="The European flag is one of the most recognised symbols in Europe." link-href="/example" link-icon="arrow-right" link-label="Read more" role="listitem" slot-name="story-card-grid-details" tabindex="0">
+      <ecl-story-card-item class="ecl-story-card__grid-details sc-ecl-story-card-ec" data-ecl-story-card-grid-details="true" el-role="" el-title="The European flag is one of the most recognised symbols in Europe." link-href="/example" link-icon="arrow-right" link-label="Read more" role="listitem" slot-name="story-card-grid-details" tabindex="0" teaser-label="why twelve?">
         <!---->
         <article class="ecl-story-card__grid-details-content sc-ecl-story-card-ec">
           <div class="ecl-story-card__content sc-ecl-story-card-ec">
+            <div class="ecl-story-card__teaser-label sc-ecl-story-card-ec">
+              why twelve?
+            </div>
             <div class="ecl-story-card__card-title sc-ecl-story-card-ec">
               The European flag is one of the most recognised symbols in Europe.
             </div>
@@ -325,10 +340,13 @@ exports[`ecl-story-card renders 1`] = `
           </div>
         </article>
       </ecl-story-card-item>
-      <ecl-story-card-item class="ecl-story-card__grid-details sc-ecl-story-card-ec" data-ecl-story-card-grid-details="true" el-role="" el-title="You can do the same by producing your own electricity and sharing it local." hidden="true" link-href="/example" link-icon="arrow-right" link-label="Read more" role="listitem" slot-name="story-card-grid-details" tabindex="-1">
+      <ecl-story-card-item class="ecl-story-card__grid-details sc-ecl-story-card-ec" data-ecl-story-card-grid-details="true" el-role="" el-title="You can do the same by producing your own electricity and sharing it local." hidden="true" link-href="/example" link-icon="arrow-right" link-label="Read more" role="listitem" slot-name="story-card-grid-details" tabindex="-1" teaser-label="for everyone">
         <!---->
         <article class="ecl-story-card__grid-details-content sc-ecl-story-card-ec">
           <div class="ecl-story-card__content sc-ecl-story-card-ec">
+            <div class="ecl-story-card__teaser-label sc-ecl-story-card-ec">
+              for everyone
+            </div>
             <div class="ecl-story-card__card-title sc-ecl-story-card-ec">
               You can do the same by producing your own electricity and sharing it local.
             </div>
@@ -352,10 +370,13 @@ exports[`ecl-story-card renders 1`] = `
           </div>
         </article>
       </ecl-story-card-item>
-      <ecl-story-card-item class="ecl-story-card__grid-details sc-ecl-story-card-ec" data-ecl-story-card-grid-details="true" el-role="" el-title="You can do the same by producing your own electricity and sharing it local." hidden="true" link-href="/example" link-icon="arrow-right" link-label="Read more" role="listitem" slot-name="story-card-grid-details" tabindex="-1">
+      <ecl-story-card-item class="ecl-story-card__grid-details sc-ecl-story-card-ec" data-ecl-story-card-grid-details="true" el-role="" el-title="You can do the same by producing your own electricity and sharing it local." hidden="true" link-href="/example" link-icon="arrow-right" link-label="Read more" role="listitem" slot-name="story-card-grid-details" tabindex="-1" teaser-label="the design">
         <!---->
         <article class="ecl-story-card__grid-details-content sc-ecl-story-card-ec">
           <div class="ecl-story-card__content sc-ecl-story-card-ec">
+            <div class="ecl-story-card__teaser-label sc-ecl-story-card-ec">
+              the design
+            </div>
             <div class="ecl-story-card__card-title sc-ecl-story-card-ec">
               You can do the same by producing your own electricity and sharing it local.
             </div>
@@ -379,10 +400,13 @@ exports[`ecl-story-card renders 1`] = `
           </div>
         </article>
       </ecl-story-card-item>
-      <ecl-story-card-item class="ecl-story-card__grid-details sc-ecl-story-card-ec" data-ecl-story-card-grid-details="true" el-role="" el-title="You can do the same by producing your own electricity and sharing it local." hidden="true" link-href="/example" link-icon="arrow-right" link-label="Read more" role="listitem" slot-name="story-card-grid-details" tabindex="-1">
+      <ecl-story-card-item class="ecl-story-card__grid-details sc-ecl-story-card-ec" data-ecl-story-card-grid-details="true" el-role="" el-title="You can do the same by producing your own electricity and sharing it local." hidden="true" link-href="/example" link-icon="arrow-right" link-label="Read more" role="listitem" slot-name="story-card-grid-details" tabindex="-1" teaser-label="across europe">
         <!---->
         <article class="ecl-story-card__grid-details-content sc-ecl-story-card-ec">
           <div class="ecl-story-card__content sc-ecl-story-card-ec">
+            <div class="ecl-story-card__teaser-label sc-ecl-story-card-ec">
+              across europe
+            </div>
             <div class="ecl-story-card__card-title sc-ecl-story-card-ec">
               You can do the same by producing your own electricity and sharing it local.
             </div>

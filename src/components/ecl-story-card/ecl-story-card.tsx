@@ -92,6 +92,7 @@ export class EclStoryCard {
         source={item.source}
         el-role={item.elRole}
         order={index}
+        teaser-label={item.teaserLabel}
         slot-name="story-card-grid-details"
         link-label={item.linkLabel}
         link-href={item.linkHref}
