@@ -552,9 +552,9 @@ export const EclGalleryItem: StencilVueComponent<JSX.EclGalleryItem> = /*@__PURE
   'ariaLabel',
   'publicationDate',
   'videoLength',
+  'itemTitle',
   'meta',
   'type',
-  'icon',
   'elId'
 ]);
 

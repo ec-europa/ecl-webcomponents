@@ -3,6 +3,7 @@ import { EclGallery } from '../ecl-gallery';
 import { EclGalleryItem } from '../ecl-gallery-item';
 import { EclButton } from '../../ecl-button/ecl-button';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
+import { EclPicture } from '../../ecl-picture/ecl-picture';
 
 describe('ecl-gallery', () => {
   beforeEach(() => {
@@ -11,10 +12,9 @@ describe('ecl-gallery', () => {
 
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclGallery, EclGalleryItem, EclButton, EclIcon],
+      components: [EclGallery, EclGalleryItem, EclButton, EclIcon, EclPicture],
       html: `<ecl-gallery
         el-id="ecl-gallery-demo-test"
-        ecl-script
         grid
         grid-template="2"
         counter-label="Media files in this gallery"

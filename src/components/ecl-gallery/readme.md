@@ -11,8 +11,8 @@
 | ----------------- | ------------------- | ----------- | --------- | ----------- |
 | `ariaLabel`       | `aria-label`        |             | `string`  | `undefined` |
 | `elId`            | `el-id`             |             | `string`  | `undefined` |
-| `icon`            | `icon`              |             | `string`  | `undefined` |
 | `imageAlt`        | `image-alt`         |             | `string`  | `undefined` |
+| `itemTitle`       | `item-title`        |             | `string`  | `undefined` |
 | `mediaHref`       | `media-href`        |             | `string`  | `undefined` |
 | `mediaIframeHref` | `media-iframe-href` |             | `string`  | `undefined` |
 | `mediaSharePath`  | `media-share-path`  |             | `string`  | `undefined` |

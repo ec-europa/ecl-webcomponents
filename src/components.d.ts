@@ -968,8 +968,8 @@ export namespace Components {
     interface EclGalleryItem {
         "ariaLabel": string;
         "elId": string;
-        "icon": string;
         "imageAlt": string;
+        "itemTitle": string;
         "mediaHref": string;
         "mediaIframeHref": string;
         "mediaSharePath": string;
@@ -4709,8 +4709,8 @@ declare namespace LocalJSX {
     interface EclGalleryItem {
         "ariaLabel"?: string;
         "elId"?: string;
-        "icon"?: string;
         "imageAlt"?: string;
+        "itemTitle"?: string;
         "mediaHref"?: string;
         "mediaIframeHref"?: string;
         "mediaSharePath"?: string;
@@ -7119,9 +7119,9 @@ declare namespace LocalJSX {
         "ariaLabel": string;
         "publicationDate": string;
         "videoLength": string;
+        "itemTitle": string;
         "meta": string;
         "type": string;
-        "icon": string;
         "elId": string;
     }
     interface EclGridAttributes {

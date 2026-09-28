@@ -18,9 +18,9 @@ export class EclGalleryItem {
   @Prop() ariaLabel: string;
   @Prop() publicationDate: string;
   @Prop() videoLength: string;
+  @Prop() itemTitle: string;
   @Prop() meta: string;
   @Prop() type: string = 'image';
-  @Prop() icon: string;
   @Prop() elId: string;
 
 
@@ -65,6 +65,19 @@ export class EclGalleryItem {
 
     return attrs;
   }
+
+  getCaptionClasses() {
+    const capClasses = [
+      `ecl-gallery__description`,
+      `sc-ecl-gallery-${this.theme}`,
+    ];
+
+    if (this.type !== 'image') {
+      capClasses.push(`ecl-gallery__description--visible`);
+    }
+
+    return capClasses.join(' ');
+  } 
 
   getId() {
     if (this.elId) {
@@ -134,37 +147,36 @@ export class EclGalleryItem {
             </ecl-picture>
           }
             <figcaption
-              class={`ecl-gallery__description sc-ecl-gallery-${this.theme}`}
+              class={this.getCaptionClasses()}
               data-ecl-gallery-description
             >
             { (this.videoLength || this.publicationDate) &&
               <div
-                class={`ecl-gallery__meta sc-ecl-gallery-${this.theme}`}
+                class={`ecl-gallery__item-meta sc-ecl-gallery-${this.theme}`}
               >
               { this.videoLength &&
-                <span class="ecl-gallery__length">{this.videoLength}</span>
+                <span class={`ecl-gallery__length sc-ecl-gallery-${this.theme}`}>{this.videoLength}</span>
               }
               { this.publicationDate &&
-                <span class="ecl-gallery__date">{this.publicationDate}</span>
+                <span class={`ecl-gallery__date sc-ecl-gallery-${this.theme}`}>{this.publicationDate}</span>
               }
               </div>
             }
-            { this.icon &&
-              <ecl-icon
-                icon={this.icon}
-                styleClass="ecl-gallery__description-icon"
-                size="s"
-              ></ecl-icon>
-            }
-              <div
-                class="ecl-gallery__title"
+            { this.itemTitle &&
+              <span
+                class={`ecl-gallery__title sc-ecl-gallery-${this.theme}`}
                 data-ecl-gallery-title
                 id={`${this.getId()}-title`}
               >
-                <span class="ecl-gallery__title-text">
-                  <slot></slot>
+                <span class={`ecl-gallery__title-text sc-ecl-gallery-${this.theme}`}>
+                  {this.itemTitle}
                 </span>
-              </div>
+              </span>
+            }
+              <span class={`ecl-gallery__caption sc-ecl-gallery-${this.theme}`}>
+                <slot></slot>
+              </span>
+              <span class={`ecl-gallery__meta sc-ecl-gallery-${this.theme}`}>{this.meta}</span>
             </figcaption>
           </figure>
         </a>
