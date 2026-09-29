@@ -8,7 +8,6 @@ export default {
   args: {
     logo_size: 'l',
     menu: 'mega-menu',
-    loggedIn: false,
   },
   argTypes: {
     color_mode: { table: { disable: true } },
@@ -18,10 +17,6 @@ export default {
         'menu',
         'mega-menu'
       ],
-    },
-    loggedIn: {
-      name: 'logged',
-      type: 'boolean',
     },
     logo_size: {
       control: { type: 'select' },
@@ -816,20 +811,15 @@ const megaMenu = (args) => `
 
 const Template = (args) => 
   `<ecl-site-header
-    login-block
     language-block
     search-text="search"
     search-placeholder="Placeholder text"
     language="EN"
     lang-code="en"
     search-form-id="ecl-site-header-search-form"
-    login-text="Log in"
-    ${args.loggedIn ? 'logged' : '' }
-    logged-in-text="Logged in"
     eu-label="Official EU languages:"
     non-eu-label="Other languages:"
     language-title="Choose your language"
-    login-link="/example.html"
     language-id="language-switcher"
     site-name="${args.siteName}"
     logo-alt="European Commission"
