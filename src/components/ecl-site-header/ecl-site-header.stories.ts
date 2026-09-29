@@ -8,6 +8,7 @@ export default {
   args: {
     logo_size: 'l',
     menu: 'mega-menu',
+    loggedIn: false,
   },
   argTypes: {
     color_mode: { table: { disable: true } },
@@ -17,6 +18,10 @@ export default {
         'menu',
         'mega-menu'
       ],
+    },
+    loggedIn: {
+      name: 'logged',
+      type: 'boolean',
     },
     logo_size: {
       control: { type: 'select' },
@@ -819,6 +824,8 @@ const Template = (args) =>
     lang-code="en"
     search-form-id="ecl-site-header-search-form"
     login-text="Log in"
+    ${args.loggedIn ? 'logged' : '' }
+    logged-in-text="Logged in"
     eu-label="Official EU languages:"
     non-eu-label="Other languages:"
     language-title="Choose your language"
