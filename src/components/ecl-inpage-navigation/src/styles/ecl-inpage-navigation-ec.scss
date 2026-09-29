@@ -12,6 +12,10 @@
   $inpage-navigation: var.$inpage-navigation
 );
 
+.ecl-inpage-navigation__list {
+  list-style-image: none;
+}
+
 .ecl-inpage-navigation__trigger ecl-icon {
   margin-inline-start: auto;
 }

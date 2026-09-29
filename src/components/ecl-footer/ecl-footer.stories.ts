@@ -124,20 +124,12 @@ const Template = (args) =>
       slot="ecl-footer-social-follow"
     >
       <ecl-social-media-follow-item
-        icon="x"
+        icon="mastodon"
         color="inverted"
         hide-label
         share-path="http://example.html"
       >
-        X
-      </ecl-social-media-follow-item>
-      <ecl-social-media-follow-item
-        icon="instagram"
-        color="inverted"
-        hide-label
-        share-path="http://instagram.com"
-      >
-        Instagram
+        Mastodon
       </ecl-social-media-follow-item>
       <ecl-social-media-follow-item
         icon="linkedin"
@@ -148,12 +140,28 @@ const Template = (args) =>
         Linkedin
       </ecl-social-media-follow-item>
       <ecl-social-media-follow-item
-        icon="telegram"
+        icon="bluesky"
         color="inverted"
         hide-label
-        share-path="http://telegram.com"
+        share-path="http://example.com"
       >
-        Telegram
+        Bluesky
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="facebook"
+        color="inverted"
+        hide-label
+        share-path="http://example.com"
+      >
+        Facebook
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="youtube"
+        color="inverted"
+        hide-label
+        share-path="http://example.com"
+      >
+        Youtube
       </ecl-social-media-follow-item>
       <ecl-social-media-follow-item
         icon="chain"
@@ -192,20 +200,12 @@ const TemplateStandardised = (args) => `
       slot="ecl-footer-social-follow-info"
     >
       <ecl-social-media-follow-item
-        icon="x"
+        icon="mastodon"
         color="inverted"
         hide-label
         share-path="http://example.html"
       >
-        X
-      </ecl-social-media-follow-item>
-      <ecl-social-media-follow-item
-        icon="instagram"
-        color="inverted"
-        hide-label
-        share-path="http://instagram.com"
-      >
-        Instagram
+        Mastodon
       </ecl-social-media-follow-item>
       <ecl-social-media-follow-item
         icon="linkedin"
@@ -216,12 +216,28 @@ const TemplateStandardised = (args) => `
         Linkedin
       </ecl-social-media-follow-item>
       <ecl-social-media-follow-item
-        icon="telegram"
+        icon="bluesky"
         color="inverted"
         hide-label
-        share-path="http://telegram.com"
+        share-path="http://example.com"
       >
-        Telegram
+        Bluesky
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="facebook"
+        color="inverted"
+        hide-label
+        share-path="http://example.com"
+      >
+        Facebook
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="youtube"
+        color="inverted"
+        hide-label
+        share-path="http://example.com"
+      >
+        Youtube
       </ecl-social-media-follow-item>
       <ecl-social-media-follow-item
         icon="chain"
@@ -337,20 +353,12 @@ const TemplateStandardised = (args) => `
       slot="ecl-footer-social-follow"
     >
       <ecl-social-media-follow-item
-        icon="x"
+        icon="mastodon"
         color="inverted"
         hide-label
         share-path="http://example.html"
       >
-        X
-      </ecl-social-media-follow-item>
-      <ecl-social-media-follow-item
-        icon="instagram"
-        color="inverted"
-        hide-label
-        share-path="http://instagram.com"
-      >
-        Instagram
+        Mastodon
       </ecl-social-media-follow-item>
       <ecl-social-media-follow-item
         icon="linkedin"
@@ -361,12 +369,28 @@ const TemplateStandardised = (args) => `
         Linkedin
       </ecl-social-media-follow-item>
       <ecl-social-media-follow-item
-        icon="telegram"
+        icon="bluesky"
         color="inverted"
         hide-label
-        share-path="http://telegram.com"
+        share-path="http://example.com"
       >
-        Telegram
+        Bluesky
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="facebook"
+        color="inverted"
+        hide-label
+        share-path="http://example.com"
+      >
+        Facebook
+      </ecl-social-media-follow-item>
+      <ecl-social-media-follow-item
+        icon="youtube"
+        color="inverted"
+        hide-label
+        share-path="http://example.com"
+      >
+        Youtube
       </ecl-social-media-follow-item>
       <ecl-social-media-follow-item
         icon="chain"

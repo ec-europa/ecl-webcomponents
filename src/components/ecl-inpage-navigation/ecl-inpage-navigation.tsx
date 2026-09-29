@@ -88,7 +88,6 @@ export class EclInpageNavigation {
             class="ecl-inpage-navigation__list"
             data-ecl-inpage-navigation-list
             id={`${this.inpageId}-list`}
-            role="list"
           >
         {this.parsedItems.length &&
           this.parsedItems.map(item => (

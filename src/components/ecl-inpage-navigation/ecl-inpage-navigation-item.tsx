@@ -26,7 +26,6 @@ export class EclInpageNavigationItem {
     return (
       <Host
        class={this.getClass()}
-       role="listitem"
       >
         <a
           href={this.path}
