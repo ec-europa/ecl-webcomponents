@@ -67,3 +67,9 @@
     right: var(--s-m);
   }
 }
+
+@media (width >= 1140px) {
+  .ecl-site-header__search-toggle.ecl-button--icon-only {
+    display: none;
+  }
+}

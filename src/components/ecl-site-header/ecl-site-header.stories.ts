@@ -880,7 +880,7 @@ const TemplateHarmonised = (args) =>
   >
     ${languageItems()}
     ${args.menu === 'menu' ? menu(args) : megaMenu(args)}
-    <span slot="ecl-site-header-login-description">'Logged in as "last name" "first name"'</span>
+    ${args.logged ? `<span slot="ecl-site-header-login-description">'Logged in as "last name" "first name"'</span>` : '' }
   </ecl-site-header>`;
 
 export const SiteHeader = Template.bind({});

@@ -50,3 +50,9 @@ ecl-form-group {
 .ecl-menu[data-expanded] .ecl-menu__open ::slotted([slot='icon-before']) {
   display: none;
 }
+
+@media (width >= 1140px) {
+  .ecl-site-header__search-toggle.ecl-button--icon-only {
+    display: none;
+  }
+}
