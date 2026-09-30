@@ -1,107 +1,163 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-news-ticker renders 1`] = `
-<ecl-news-ticker counter-label="of" items-length="6" sr-next="Next item" sr-pause="Pause news ticker" sr-prev="Prev item">
+<ecl-news-ticker counter-label="of" sr-next="Next item" sr-pause="Pause news ticker" sr-prev="Prev item">
   <!---->
   <div class="ecl-news-ticker" data-ecl-auto-initialized="true">
     <div class="ecl-news-ticker__container">
       <div class="ecl-news-ticker__content">
         <div class="ecl-news-ticker__slides" role="list">
+          <ecl-news-ticker-item class="ecl-news-ticker__slide sc-ecl-news-ticker-ec" icon="globe" path="/example.html" role="listitem">
+            <!---->
+            <div class="ecl-news-ticker__slide-icon sc-ecl-news-ticker-ec">
+              <ecl-icon>
+                <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--placeholder wt-icon-phosphor--newspaper"></span>
+              </ecl-icon>
+            </div>
+            <div class="ecl-news-ticker__slide-content sc-ecl-news-ticker-ec">
+              <!---->
+              <div class="ecl-news-ticker__slide-icon sc-ecl-news-ticker-ec">
+                <ecl-icon>
+                  <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--placeholder wt-icon-phosphor--globe"></span>
+                  <span class="ecl-icon ecl-icon--xs wt-icon-- wt-icon--placeholder"></span>
+                </ecl-icon>
+              </div>
+              <div class="ecl-news-ticker__slide-content sc-ecl-news-ticker-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link">
+                    <!---->
+                    <a class="ecl-link ecl-link--brand ecl-link--standalone ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores
+                    </a>
+                  </a>
+                </ecl-link>
+              </div>
+            </div>
+          </ecl-news-ticker-item>
+          <ecl-news-ticker-item class="ecl-news-ticker__slide sc-ecl-news-ticker-ec" icon="info" path="/example.html" role="listitem">
+            <!---->
+            <div class="ecl-news-ticker__slide-icon sc-ecl-news-ticker-ec">
+              <ecl-icon>
+                <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--placeholder wt-icon-phosphor--info"></span>
+              </ecl-icon>
+            </div>
+            <div class="ecl-news-ticker__slide-content sc-ecl-news-ticker-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--brand ecl-link--standalone ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </a>
+              </ecl-link>
+            </div>
+          </ecl-news-ticker-item>
+          <ecl-news-ticker-item class="ecl-news-ticker__slide sc-ecl-news-ticker-ec" icon="currency-eur" path="/example.html" role="listitem">
+            <!---->
+            <div class="ecl-news-ticker__slide-icon sc-ecl-news-ticker-ec">
+              <ecl-icon>
+                <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--placeholder wt-icon-phosphor--currency-eur"></span>
+              </ecl-icon>
+            </div>
+            <div class="ecl-news-ticker__slide-content sc-ecl-news-ticker-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--brand ecl-link--standalone ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                </a>
+              </ecl-link>
+            </div>
+          </ecl-news-ticker-item>
+          <ecl-news-ticker-item class="ecl-news-ticker__slide sc-ecl-news-ticker-ec" icon="globe" path="/example.html" role="listitem">
+            <!---->
+            <div class="ecl-news-ticker__slide-icon sc-ecl-news-ticker-ec">
+              <ecl-icon>
+                <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--placeholder wt-icon-phosphor--globe"></span>
+              </ecl-icon>
+            </div>
+            <div class="ecl-news-ticker__slide-content sc-ecl-news-ticker-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--brand ecl-link--standalone ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                </a>
+              </ecl-link>
+            </div>
+          </ecl-news-ticker-item>
           <ecl-news-ticker-item class="ecl-news-ticker__slide sc-ecl-news-ticker-ec" path="/example.html" role="listitem">
             <!---->
-            <!---->
-            <ecl-link>
-              <!---->
-              <a class="ecl-link">
+            <div class="ecl-news-ticker__slide-icon sc-ecl-news-ticker-ec">
+              <ecl-icon>
+                <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--placeholder wt-icon-phosphor--newspaper"></span>
+              </ecl-icon>
+            </div>
+            <div class="ecl-news-ticker__slide-content sc-ecl-news-ticker-ec">
+              <ecl-link>
                 <!---->
-                <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+                <a class="ecl-link ecl-link--brand ecl-link--standalone ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+                  Excepteur sint occaecat cupidatat officia deserunt mollit anim id est laborum
+                </a>
+              </ecl-link>
+            </div>
+          </ecl-news-ticker-item>
+          <ecl-news-ticker-item class="ecl-news-ticker__slide sc-ecl-news-ticker-ec" icon="broadcast" path="/example.html" role="listitem">
+            <!---->
+            <div class="ecl-news-ticker__slide-icon sc-ecl-news-ticker-ec">
+              <ecl-icon>
+                <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--placeholder wt-icon-phosphor--broadcast"></span>
+              </ecl-icon>
+            </div>
+            <div class="ecl-news-ticker__slide-content sc-ecl-news-ticker-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--brand ecl-link--standalone ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                </a>
+              </ecl-link>
+            </div>
+          </ecl-news-ticker-item>
+          <ecl-news-ticker-item class="ecl-news-ticker__slide sc-ecl-news-ticker-ec" icon="globe" path="/example.html" role="listitem">
+            <!---->
+            <div class="ecl-news-ticker__slide-icon sc-ecl-news-ticker-ec">
+              <ecl-icon>
+                <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--placeholder wt-icon-phosphor--globe"></span>
+              </ecl-icon>
+            </div>
+            <div class="ecl-news-ticker__slide-content sc-ecl-news-ticker-ec">
+              <ecl-link>
+                <!---->
+                <a class="ecl-link ecl-link--brand ecl-link--standalone ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
                   Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores
                 </a>
-              </a>
-            </ecl-link>
+              </ecl-link>
+            </div>
           </ecl-news-ticker-item>
-          <ecl-news-ticker-item class="ecl-news-ticker__slide sc-ecl-news-ticker-ec" icon="global" path="/example.html" role="listitem">
+          <ecl-news-ticker-item class="ecl-news-ticker__slide sc-ecl-news-ticker-ec" icon="info" path="/example.html" role="listitem">
             <!---->
-            <ecl-icon>
-              <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--global wt-icon--placeholder"></span>
-            </ecl-icon>
-            <ecl-link>
+            <div class="ecl-news-ticker__slide-icon sc-ecl-news-ticker-ec">
+              <ecl-icon>
+                <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--placeholder wt-icon-phosphor--newspaper"></span>
+              </ecl-icon>
+            </div>
+            <div class="ecl-news-ticker__slide-content sc-ecl-news-ticker-ec">
               <!---->
-              <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-              </a>
-            </ecl-link>
-          </ecl-news-ticker-item>
-          <ecl-news-ticker-item class="ecl-news-ticker__slide sc-ecl-news-ticker-ec" icon="information" path="/example.html" role="listitem">
-            <!---->
-            <ecl-icon>
-              <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--information wt-icon--placeholder"></span>
-            </ecl-icon>
-            <ecl-link>
-              <!---->
-              <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-              </a>
-            </ecl-link>
-          </ecl-news-ticker-item>
-          <ecl-news-ticker-item alt-attr="Alternative text" class="ecl-news-ticker__slide sc-ecl-news-ticker-ec" img="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg" path="/example.html" role="listitem" title-attr="title attribute">
-            <!---->
-            <ecl-link>
-              <!---->
-              <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-              </a>
-            </ecl-link>
-          </ecl-news-ticker-item>
-          <ecl-news-ticker-item class="ecl-news-ticker__slide sc-ecl-news-ticker-ec" icon="livestreaming" path="/example.html" role="listitem">
-            <!---->
-            <ecl-icon>
-              <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--livestreaming wt-icon--placeholder"></span>
-            </ecl-icon>
-            <ecl-link>
-              <!---->
-              <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
-                Excepteur sint occaecat cupidatat officia deserunt mollit anim id est laborum
-              </a>
-            </ecl-link>
-          </ecl-news-ticker-item>
-          <ecl-news-ticker-item class="ecl-news-ticker__slide sc-ecl-news-ticker-ec" icon="global" path="/example.html" role="listitem">
-            <!---->
-            <ecl-icon>
-              <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--global wt-icon--placeholder"></span>
-            </ecl-icon>
-            <ecl-link>
-              <!---->
-              <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-              </a>
-            </ecl-link>
-          </ecl-news-ticker-item>
-          <ecl-news-ticker-item class="ecl-news-ticker__slide sc-ecl-news-ticker-ec" path="/example.html" role="listitem">
-            <!---->
-            <ecl-link>
-              <!---->
-              <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores
-              </a>
-            </ecl-link>
-          </ecl-news-ticker-item>
-          <ecl-news-ticker-item class="ecl-news-ticker__slide sc-ecl-news-ticker-ec" icon="global" path="/example.html" role="listitem">
-            <!---->
-            <!---->
-            <ecl-icon>
-              <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--global wt-icon--placeholder"></span>
-              <span class="ecl-icon ecl-icon--xs wt-icon-- wt-icon--placeholder"></span>
-            </ecl-icon>
-            <ecl-link>
-              <!---->
-              <a class="ecl-link">
-                <!---->
-                <a class="ecl-link ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-                </a>
-              </a>
-            </ecl-link>
+              <div class="ecl-news-ticker__slide-icon sc-ecl-news-ticker-ec">
+                <ecl-icon>
+                  <span class="ecl-icon ecl-icon--l ecl-news-ticker__icon sc-ecl-news-ticker-ec wt-icon--placeholder wt-icon-phosphor--info"></span>
+                  <span class="ecl-icon ecl-icon--xs wt-icon-- wt-icon--placeholder"></span>
+                </ecl-icon>
+              </div>
+              <div class="ecl-news-ticker__slide-content sc-ecl-news-ticker-ec">
+                <ecl-link>
+                  <!---->
+                  <a class="ecl-link">
+                    <!---->
+                    <a class="ecl-link ecl-link--brand ecl-link--standalone ecl-news-ticker__slide-text sc-ecl-news-ticker-ec" href="/example.html">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </a>
+                  </a>
+                </ecl-link>
+              </div>
+            </div>
           </ecl-news-ticker-item>
         </div>
       </div>
@@ -110,56 +166,56 @@ exports[`ecl-news-ticker renders 1`] = `
       <div class="ecl-news-ticker__actions">
         <ecl-button data-ecl-news-ticker-prev>
           <!---->
-          <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-news-ticker__prev sc-ecl-news-ticker-ec" data-ecl-news-ticker-prev="eclNewsTickerPrev" type="button">
+          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-news-ticker__prev sc-ecl-news-ticker-ec" data-ecl-news-ticker-prev="eclNewsTickerPrev" type="button">
             <span class="ecl-button__container">
               <span class="ecl-button__label" data-ecl-label>
                 Prev item
               </span>
               <ecl-icon slot="icon-after">
-                <span class="ecl-button__icon ecl-icon ecl-icon--l sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-270"></span>
+                <span class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--placeholder wt-icon-phosphor--caret-left"></span>
               </ecl-icon>
             </span>
           </button>
         </ecl-button>
         <ecl-button data-ecl-news-ticker-play>
           <!---->
-          <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-news-ticker__play sc-ecl-news-ticker-ec" data-ecl-news-ticker-play="eclNewsTickerPlay" type="button" style="display: none;">
+          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-news-ticker__play sc-ecl-news-ticker-ec" data-ecl-news-ticker-play="eclNewsTickerPlay" type="button" style="display: none;">
             <span class="ecl-button__container">
               <span class="ecl-button__label" data-ecl-label></span>
               <ecl-icon slot="icon-after">
-                <span class="ecl-button__icon ecl-icon ecl-icon--l ecl-news-ticker__icon-active sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--placeholder wt-icon--play-outline"></span>
+                <span class="ecl-button__icon ecl-icon ecl-icon--m ecl-news-ticker__icon-active sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--placeholder wt-icon-phosphor--play-circle"></span>
               </ecl-icon>
             </span>
           </button>
         </ecl-button>
         <ecl-button data-ecl-news-ticker-pause>
           <!---->
-          <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-news-ticker__pause sc-ecl-news-ticker-ec" data-ecl-news-ticker-pause="eclNewsTickerPause" type="button" style="display: flex;">
+          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-news-ticker__pause sc-ecl-news-ticker-ec" data-ecl-news-ticker-pause="eclNewsTickerPause" type="button" style="display: flex;">
             <span class="ecl-button__container">
               <span class="ecl-button__label" data-ecl-label>
                 Pause news ticker
               </span>
               <ecl-icon slot="icon-after">
-                <span class="ecl-button__icon ecl-icon ecl-icon--l ecl-news-ticker__icon-active sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--pause-outline wt-icon--placeholder"></span>
+                <span class="ecl-button__icon ecl-icon ecl-icon--m ecl-news-ticker__icon-active sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--placeholder wt-icon-phosphor--pause-circle"></span>
               </ecl-icon>
             </span>
           </button>
         </ecl-button>
         <ecl-button data-ecl-news-ticker-next>
           <!---->
-          <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-news-ticker__next sc-ecl-news-ticker-ec" data-ecl-news-ticker-next="eclNewsTickerNext" type="button">
+          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-news-ticker__next sc-ecl-news-ticker-ec" data-ecl-news-ticker-next="eclNewsTickerNext" type="button">
             <span class="ecl-button__container">
               <span class="ecl-button__label" data-ecl-label>
                 Next item
               </span>
               <ecl-icon slot="icon-after">
-                <span class="ecl-button__icon ecl-icon ecl-icon--l sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-90"></span>
+                <span class="ecl-button__icon ecl-icon ecl-icon--m sc-ecl-button-ec sc-ecl-news-ticker-ec wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
               </ecl-icon>
             </span>
           </button>
         </ecl-button>
       </div>
-      <div class="ecl-news-ticker__counter">
+      <div class="ecl-news-ticker__counter" dir="ltr">
         <span class="ecl-news-ticker__counter--current">
           1
         </span>

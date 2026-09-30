@@ -1638,6 +1638,9 @@ export namespace Components {
     }
     interface EclNewsTickerItem {
         "altAttr": string;
+        /**
+          * @default 'newspaper'
+         */
         "icon": string;
         "image": string;
         "path": string;
@@ -5382,6 +5385,9 @@ declare namespace LocalJSX {
     }
     interface EclNewsTickerItem {
         "altAttr"?: string;
+        /**
+          * @default 'newspaper'
+         */
         "icon"?: string;
         "image"?: string;
         "path"?: string;

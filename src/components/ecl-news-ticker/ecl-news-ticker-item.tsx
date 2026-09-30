@@ -6,7 +6,7 @@ import { Component, h, Prop, Host } from '@stencil/core';
   scoped: false,
 })
 export class EclNewsTickerItem {
-  @Prop() icon: string;
+  @Prop() icon: string = 'newspaper';
   @Prop() image: string;
   @Prop() altAttr: string;
   @Prop() titleAttr: string;
@@ -34,30 +34,34 @@ export class EclNewsTickerItem {
         class={this.getClass()}
         role="listitem"
       >
-      { this.image &&
-        <img
-          src={this.image}
-          class={`ecl-news-ticker__icon sc-ecl-news-ticker-${this.theme}`}
-          {...(this.altAttr && { 'alt': this.altAttr })}
-          {...(this.titleAttr && {'title': this.titleAttr })}
-        /> 
-      }
-      { this.icon &&
-        <ecl-icon
-          size="l"
-          icon={this.icon}
-          styleClass={`ecl-news-ticker__icon sc-ecl-news-ticker-${this.theme}`}
-        ></ecl-icon>
-      }
-      { this.path ?
-        <ecl-link
-          theme={this.theme}
-          path={this.path}
-          styleClass={`ecl-news-ticker__slide-text sc-ecl-news-ticker-${this.theme}`}
-        >
-          <slot></slot>
-        </ecl-link> : <slot></slot>
-      }
+        <div class={`ecl-news-ticker__slide-icon sc-ecl-news-ticker-${this.theme}`}> 
+        { this.image ?
+          <img
+            src={this.image}
+            class={`ecl-news-ticker__icon sc-ecl-news-ticker-${this.theme}`}
+            {...(this.altAttr && { 'alt': this.altAttr })}
+            {...(this.titleAttr && {'title': this.titleAttr })}
+          /> :
+          <ecl-icon
+            size="l"
+            icon={this.icon}
+            family="phosphor"
+            styleClass={`ecl-news-ticker__icon sc-ecl-news-ticker-${this.theme}`}
+          ></ecl-icon>
+        }
+        </div>
+        <div class={`ecl-news-ticker__slide-content sc-ecl-news-ticker-${this.theme}`}>
+        { this.path ?
+          <ecl-link
+            variant="standalone"
+            branded
+            path={this.path}
+            styleClass={`ecl-news-ticker__slide-text sc-ecl-news-ticker-${this.theme}`}
+          >
+            <slot></slot>
+          </ecl-link> : <slot></slot>
+        }
+        </div>
       </Host>
     );
   }

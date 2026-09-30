@@ -78,14 +78,14 @@ export class EclNewsTicker {
               hideLabel
               type="button"
               variant="tertiary"
+              buttonStyle="neutral"
             >
               <ecl-icon 
                 styleClass={`sc-ecl-news-ticker-${this.theme}`}
                 slot="icon-after"
-                icon="corner-arrow"
-                size="l"
-                rotate="270"
-                theme={this.theme}
+                icon="caret-left"
+                size="m"
+                family="phosphor"
               >
               </ecl-icon>
                 {this.srPrev}
@@ -97,20 +97,21 @@ export class EclNewsTicker {
               type="button"
               hideLabel
               variant="tertiary"
+              buttonStyle="neutral"
             >
               <ecl-icon 
                 styleClass={`ecl-news-ticker__icon-active sc-ecl-news-ticker-${this.theme}`}
                 slot="icon-after"
-                icon="play-outline"
-                size="l"
-                theme={this.theme}
+                icon="play-circle"
+                size="m"
+                family="phosphor"
               >
               </ecl-icon>
                 {this.srPlay}
             </ecl-button>
             <ecl-button
               variant="tertiary"
-              theme={this.theme}
+              buttonStyle="neutral"
               styleClass={`ecl-news-ticker__pause sc-ecl-news-ticker-${this.theme}`}
               data-ecl-news-ticker-pause
               hideLabel
@@ -119,34 +120,33 @@ export class EclNewsTicker {
               <ecl-icon 
                 styleClass={`ecl-news-ticker__icon-active sc-ecl-news-ticker-${this.theme}`}
                 slot="icon-after"
-                icon="pause-outline"
-                size="l"
-                theme={this.theme}
+                icon="pause-circle"
+                size="m"
+                family="phosphor"
               >
               </ecl-icon>
               {this.srPause}
             </ecl-button>
             <ecl-button
-              theme={this.theme}
               styleClass={`ecl-news-ticker__next sc-ecl-news-ticker-${this.theme}`}
               data-ecl-news-ticker-next
               type="button"
               variant="tertiary"
+              buttonStyle="neutral"
               hideLabel
             >
               <ecl-icon 
                 styleClass={`sc-ecl-news-ticker-${this.theme}`}
                 slot="icon-after"
-                icon="corner-arrow"
-                size="l"
-                rotate="90"
-                theme={this.theme}
+                icon="caret-right"
+                family="phosphor"
+                size="m"
               >
               </ecl-icon>
                 {this.srNext}
             </ecl-button>
           </div>
-          <div class="ecl-news-ticker__counter">
+          <div class="ecl-news-ticker__counter" dir="ltr">
             <span class="ecl-news-ticker__counter--current">1</span>
               {` ${this.counterLabel} `}
             <span class="ecl-news-ticker__counter--max"></span>
