@@ -618,7 +618,7 @@ function App() {
         <EclFooterItem link="https://european-union.europa.eu/contact-eu/call-us_en" slot="ecl-footer-list-main"> Use other telephone options </EclFooterItem>
         <EclFooterItem link="https://european-union.europa.eu/contact-eu/write-us_en" slot="ecl-footer-list-main"> Write us via our contact form </EclFooterItem>
         <EclFooterItem link="https://european-union.europa.eu/contact-eu/meet-us_en" slot="ecl-footer-list-main">
-          <span slot="ecl-footer-item-desc">Meet us at one of the</span>
+          <span slot="EclFooterItem-desc">Meet us at one of the</span>
           EU centres
         </EclFooterItem>
         <EclText tag="div" size="l" slot="ecl-footer-list-bottom-left" style-class="ecl-site-footer__title ecl-site-footer__title--separator"> Social Media </EclText>
@@ -637,56 +637,165 @@ function App() {
         <EclFooterItem link="http://www.europarl.europa.eu/portal/" slot="ecl-footer-list-right"> Search all EU institutions and bodies </EclFooterItem>
       </EclFooterEu>
     :
-      <EclFooterEc
-        logo-alt="European Commission"
-        logo-title="European Commission"
-        logo-lang-code="en"
-        site-name="Site name"
-        variant="standardised"
-        description="This site is managed by:"
-        logo-link="/example.html"
+    <EclFooterEc
+      logo-alt="European Commission"
+      logo-title="European Commission"
+      logo-lang-code="en"
+      variant="core"
+      description="This site is managed by:"
+      description-name="[name of the manager of the site]"
+      site-name="European Commission website"
+      logo-link="/example.html"
+      co-owner-title="This page is managed by:"
+      co-owner-links='[{"label": "Directorate-General for [DG role]", "path": "/example.html"}, {"label": "Directorate-General for [DG role]", "path": "/example.html" }]'
+      feedback-button='{"label": "Fill in survey", "path": "/example.com"}'
+      feedback-button-description="Help us improve the website"
+      action-button='{"label": "Subscribe for updates", "path": "/example.com"}'
+    >
+      <EclFooterItem
+        link="/example.html"
+        slot="ecl-footer-list-core"
+        is-first
       >
-        <EclSocialMediaFollow variant="horizontal" position="left" style-class="ecl-site-footer__social-media sc-ecl-footer-ec" slot="ecl-footer-social-follow-info">
-          <EclSocialMediaFollowItem icon="x" color="inverted" hide-label share-path="http://example.html"> X </EclSocialMediaFollowItem>
-          <EclSocialMediaFollowItem icon="instagram" color="inverted" hide-label share-path="http://instagram.com"> Instagram </EclSocialMediaFollowItem>
-          <EclSocialMediaFollowItem icon="linkedin" color="inverted" hide-label share-path="http://linkedin.com"> Linkedin </EclSocialMediaFollowItem>
-          <EclSocialMediaFollowItem icon="telegram" color="inverted" hide-label share-path="http://telegram.com"> Telegram </EclSocialMediaFollowItem>
-          <EclSocialMediaFollowItem icon="chain" color="inverted" hide-label share-path="http://example.html"> Other </EclSocialMediaFollowItem>
-        </EclSocialMediaFollow>
-        <EclText size="m" is-bold tag="div" slot="ecl-footer-list-contact" style-class="ecl-site-footer__title"> Contact us </EclText>
-        <EclFooterItem link="/example.html" slot="ecl-footer-list-contact"> Contact information of the DG </EclFooterItem>
-        <EclText size="m" is-bold tag="div" slot="ecl-footer-list-about" style-class="ecl-site-footer__title"> About us </EclText>
-        <EclFooterItem link="/example.html" slot="ecl-footer-list-about"> Information about the DG </EclFooterItem>
-        <EclFooterItem link="/example.html" slot="ecl-footer-list-about"> Information about the DG </EclFooterItem>
-        <EclText size="m" is-bold tag="div" slot="ecl-footer-list-more" style-class="ecl-site-footer__title"> More information on </EclText>
-        <EclFooterItem link="/example.html" slot="ecl-footer-list-more"> Class name 1 </EclFooterItem>
-        <EclFooterItem link="/example.html" slot="ecl-footer-list-more"> Class name 2 </EclFooterItem>
-        <EclText size="m" tag="div" is-bold slot="ecl-footer-list-related" style-class="ecl-site-footer__title"> Related links </EclText>
-        <EclFooterItem link="/example.html" slot="ecl-footer-list-related"> Related link 1 </EclFooterItem>
-        <EclFooterItem link="/example.html" slot="ecl-footer-list-related"> Related link 2 </EclFooterItem>
-        <EclFooterItem link="/example.html" slot="ecl-footer-list-related"> Related link 3 </EclFooterItem>
-        <EclFooterItem link="/example.html" slot="ecl-footer-list-related"> Related link 4 </EclFooterItem>
-        <EclFooterItem link="/example.html" slot="ecl-footer-list-related"> Related link 5 </EclFooterItem>
-        <EclSocialMediaFollow
-          variant="horizontal"
-          description="Follow the European Commission"
-          position="left"
-          style-class="ecl-site-footer__social-media sc-ecl-footer-ec"
-          inline-title="Follow us"
-          slot="ecl-footer-social-follow"
+        About us
+      </EclFooterItem>
+      <EclFooterItem
+        link="/example.html"
+        slot="ecl-footer-list-core"
+      >
+        Contact us
+      </EclFooterItem>
+      <EclFooterItem
+        link="/example.html"
+        slot="ecl-footer-list-core"
+      >
+        Priorities
+      </EclFooterItem>
+      <EclFooterItem
+        link="/example.html"
+        slot="ecl-footer-list-core"
+      >
+        Topics
+      </EclFooterItem>
+      <EclFooterItem
+        link="/example.html"
+        slot="ecl-footer-list-core"
+      >
+        Funding and tenders
+      </EclFooterItem>
+      <EclFooterItem
+        link="/example.html"
+        slot="ecl-footer-list-core"
+      >
+        Jobs
+      </EclFooterItem>
+      <EclFooterItem
+        link="/example.html"
+        slot="ecl-footer-list-core"
+      >
+        Press corner
+      </EclFooterItem>
+      <EclFooterItem
+        link="/example.html"
+        slot="ecl-footer-list-core"
+      >
+        Events
+      </EclFooterItem>
+      <EclFooterItem
+        link="/example.html"
+        theme="ec"
+      >
+        Report an IT vulnerability
+      </EclFooterItem>
+      <EclFooterItem
+        link="/example.html"
+        slot="ecl-footer-list-bottom-left"
+      >
+        Languages on our websites
+      </EclFooterItem>
+      <EclFooterItem
+        link="/example.html"
+        slot="ecl-footer-list-bottom-left"
+      >
+        Cookies
+      </EclFooterItem>
+      <EclFooterItem
+        link="/example.html"
+        slot="ecl-footer-list-bottom-left"
+      >
+        Privacy policy
+      </EclFooterItem>
+      <EclFooterItem
+        link="/example.html"
+        slot="ecl-footer-list-bottom-left"
+      >
+        Legal notice
+      </EclFooterItem>
+      <EclFooterItem
+        link="/example.html"
+        slot="ecl-footer-list-bottom-left"
+        is-last
+      >
+        Accessibility
+      </EclFooterItem>
+      <EclSocialMediaFollow
+        variant="horizontal"
+        description="Follow us"
+        position="left"
+        style-class="ecl-site-footer__social-media sc-ecl-footer-ec-ec"
+        inline-title="Follow us"
+        slot="ecl-footer-social-follow"
+      >
+        <EclSocialMediaFollowItem
+          icon="mastodon"
+          color="inverted"
+          hide-label
+          share-path="http://example.html"
         >
-          <EclSocialMediaFollowItem icon="x" color="inverted" hide-label share-path="http://example.html"> X </EclSocialMediaFollowItem>
-          <EclSocialMediaFollowItem icon="instagram" color="inverted" hide-label share-path="http://instagram.com"> Instagram </EclSocialMediaFollowItem>
-          <EclSocialMediaFollowItem icon="linkedin" color="inverted" hide-label share-path="http://linkedin.com"> Linkedin </EclSocialMediaFollowItem>
-          <EclSocialMediaFollowItem icon="telegram" color="inverted" hide-label share-path="http://telegram.com"> Telegram </EclSocialMediaFollowItem>
-          <EclSocialMediaFollowItem icon="chain" color="inverted" hide-label share-path="http://example.html"> Other </EclSocialMediaFollowItem>
-        </EclSocialMediaFollow>
-        <EclFooterItem link="/example.html" slot="ecl-footer-list-bottom-left"> Languages on our websites </EclFooterItem>
-        <EclFooterItem link="/example.html" slot="ecl-footer-list-bottom-left"> Cookies </EclFooterItem>
-        <EclFooterItem link="/example.html" slot="ecl-footer-list-bottom-left"> Privacy policy </EclFooterItem>
-        <EclFooterItem link="/example.html" slot="ecl-footer-list-bottom-left"> Legal notice </EclFooterItem>
-        <EclFooterItem link="/example.html" slot="ecl-footer-list-bottom-left"> Accessibility </EclFooterItem>
-      </EclFooterEc>
+          Mastodon
+        </EclSocialMediaFollowItem>
+        <EclSocialMediaFollowItem
+          icon="linkedin"
+          color="inverted"
+          hide-label
+          share-path="http://linkedin.com"
+        >
+          Linkedin
+        </EclSocialMediaFollowItem>
+        <EclSocialMediaFollowItem
+          icon="bluesky"
+          color="inverted"
+          hide-label
+          share-path="http://example.com"
+        >
+          Bluesky
+        </EclSocialMediaFollowItem>
+        <EclSocialMediaFollowItem
+          icon="facebook"
+          color="inverted"
+          hide-label
+          share-path="http://example.com"
+        >
+          Facebook
+        </EclSocialMediaFollowItem>
+        <EclSocialMediaFollowItem
+          icon="youtube"
+          color="inverted"
+          hide-label
+          share-path="http://example.com"
+        >
+          Youtube
+        </EclSocialMediaFollowItem>
+        <EclSocialMediaFollowItem
+          icon="chain"
+          color="inverted"
+          hide-label
+          share-path="http://example.html"
+        >
+          Other
+        </EclSocialMediaFollowItem>
+      </EclSocialMediaFollow>
+    </EclFooterEc>
     }
     </div>
   )

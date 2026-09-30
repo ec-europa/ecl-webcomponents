@@ -52,6 +52,6 @@
   }
 }
 
-.ecl-site-footer .ecl-site-footer__action-button {
+.ecl-site-footer__section:not(.ecl-site-footer__section--feedback) .ecl-site-footer__action-button {
   margin-block-start: var(--s-l);
 }
