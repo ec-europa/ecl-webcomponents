@@ -2623,6 +2623,11 @@ export namespace Components {
           * @default `ecl-table-${Math.random().toString(36).slice(2)}`
          */
         "elId": string;
+        /**
+          * @default false
+         */
+        "filter": boolean;
+        "filterLabel": string;
         "headers"?: string;
         "labelSortAscending"?: string;
         "labelSortDefault"?: string;
@@ -6379,6 +6384,11 @@ declare namespace LocalJSX {
           * @default `ecl-table-${Math.random().toString(36).slice(2)}`
          */
         "elId"?: string;
+        /**
+          * @default false
+         */
+        "filter"?: boolean;
+        "filterLabel"?: string;
         "headers"?: string;
         "labelSortAscending"?: string;
         "labelSortDefault"?: string;
@@ -7827,6 +7837,8 @@ declare namespace LocalJSX {
         "rows": string;
         "styleClass": string;
         "caption": string;
+        "filter": boolean;
+        "filterLabel": string;
         "simple": boolean;
         "zebra": boolean;
         "sortable": boolean;

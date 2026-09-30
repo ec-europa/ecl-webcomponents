@@ -1392,6 +1392,8 @@ export const EclTable: StencilVueComponent<JSX.EclTable> = /*@__PURE__*/ defineC
   'rows',
   'styleClass',
   'caption',
+  'filter',
+  'filterLabel',
   'simple',
   'zebra',
   'sortable',

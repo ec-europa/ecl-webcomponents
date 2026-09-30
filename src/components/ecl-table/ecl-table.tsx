@@ -42,6 +42,8 @@ export class EclTable {
   @Prop() rows?: string;
   @Prop() styleClass: string;
   @Prop() caption?: string;
+  @Prop() filter: boolean = false;
+  @Prop() filterLabel: string;
   @Prop() simple = false;
   @Prop() zebra = false;
   @Prop() sortable = false;
@@ -75,21 +77,34 @@ export class EclTable {
   }
 
   componentDidRender() {
-    if (!this.noScript && this.sortable) {
+    if (!this.noScript && (this.sortable || this.filter)) {
       (window as any).ECL = (window as any).ECL || {};
       ECL.Table = Table;
 
       const table = new Table(this.el.querySelector('.ecl-table'));
       table.init();
 
-      const arrows = this.el.querySelectorAll('.ecl-table__arrow');
-      if (arrows.length > 0) {
-        arrows.forEach((arrow) => {
-          arrow.classList.add(`sc-ecl-table-${this.theme}`);
-          Array.from(arrow.children).forEach(child => {
-            child.classList.add(`sc-ecl-table-${this.theme}`);
+      if (this.sortable) {
+        const arrows = this.el.querySelectorAll('.ecl-table__arrow');
+        if (arrows.length > 0) {
+          arrows.forEach((arrow) => {
+            arrow.classList.add(`sc-ecl-table-${this.theme}`);
+            Array.from(arrow.children).forEach(child => {
+              child.classList.add(`sc-ecl-table-${this.theme}`);
+            });
           });
-        });
+        }
+      }
+      if (this.filter) {
+        const filters = this.el.querySelectorAll('.ecl-table__filter');
+        if (filters.length > 0) {
+          filters.forEach((filter) => {
+            filter.classList.add(`sc-ecl-table-${this.theme}`);
+            Array.from(filter.children).forEach(child => {
+              child.classList.add(`sc-ecl-table-${this.theme}`);
+            });
+          });
+        }
       }
     }
   }
@@ -115,13 +130,29 @@ export class EclTable {
     return styleClasses.join(' ');
   }
 
+  getHeaderClass() {
+    const headerClasses = ['ecl-table__header'];
+
+    if (this.filter) {
+      headerClasses.push('ecl-table__header--filterable');
+    }
+
+    if (this.sortable) {
+      headerClasses.push('ecl-table__header--sortable');
+    }
+
+    return headerClasses.join(' ');
+  }
+
   renderHead() {
     if (!this.parsedHeaders.length) return null;
 
     let index = 1;
 
     return (
-      <thead class="ecl-table__head">
+      <thead
+        class="ecl-table__head"
+      >
         {this.parsedHeaders.map(row => (
           <tr class="ecl-table__row">
             {row.map(cell => {
@@ -133,18 +164,24 @@ export class EclTable {
               return (
                 <th
                   id={id}
-                  class="ecl-table__header"
+                  class={this.getHeaderClass()}
                   scope={hasColspan ? 'colgroup' : 'col'}
                   rowSpan={rowSpan}
                   colSpan={colSpan}
                   headers={cell.headers}
+                  {...this.filter && ({ 'data-ecl-table-filter-toggle' : ''})}
+                  {...this.sortable && ({ 'aria-sort': 'none' })}
                   {...(
                     this.sortable && !hasColspan
                       ? { 'data-ecl-table-sort-toggle': '' }
                       : {}
                   )}
                 >
-                  {cell.label}
+                  <span class="ecl-table__header-inner">
+                    <span class="ecl-table__header-label">
+                      {cell.label}
+                    </span>
+                  </span>
                 </th>
               );
             })}
@@ -186,12 +223,15 @@ export class EclTable {
         <table
           id={this.elId}
           class={this.getClass()}
+          {...(this.sortable || this.filter) && ({ 'data-ecl-table' : ''})}
           {...(this.sortable && {
-            'data-ecl-table': '',
             'data-ecl-table-sort-label-asc': this.labelSortAscending,
             'data-ecl-table-sort-label-desc': this.labelSortDescending,
             'data-ecl-table-sort-label-default': this.labelSortDefault,
+            'data-ecl-table-sort': '',
           })}
+          {...this.filter && ({ 'data-ecl-table-filter': '' })}
+          {...this.filterLabel && ({ 'data-ecl-table-filter-label': this.filterLabel })}
         >
           {this.caption && (
             <caption class="ecl-table__caption">{this.caption}</caption>
