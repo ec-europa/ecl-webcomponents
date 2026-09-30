@@ -76,19 +76,6 @@ export class EclRatingStar {
   render() {
     return (
       <Host>
-        <input
-          id={this.itemId}
-          class={`ecl-rating-field__input ecl-rating-field-${this.theme}`}
-          type="radio"
-          name={this.name}
-          value={this.value}
-          checked={this.checked}
-          required={this.required}
-          disabled={this.disabled}
-          onFocus={ev => this.handleFocus(ev)}
-          onBlur={ev => this.handleBlur(ev)}
-          onChange={ev => this.handleChange(ev)}
-        />
         <label 
           class={`ecl-rating-field__label ecl-rating-field-${this.theme}`} 
           htmlFor={this.itemId}
@@ -110,6 +97,19 @@ export class EclRatingStar {
           >
           </ecl-icon>
         </label>
+        <input
+          id={this.itemId}
+          class={`ecl-rating-field__input ecl-rating-field-${this.theme}`}
+          type="radio"
+          name={this.name}
+          value={this.value}
+          checked={this.checked}
+          required={this.required}
+          disabled={this.disabled}
+          onFocus={ev => this.handleFocus(ev)}
+          onBlur={ev => this.handleBlur(ev)}
+          onChange={ev => this.handleChange(ev)}
+        />
       </Host>
     );
   }
