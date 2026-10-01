@@ -25,12 +25,12 @@ function App() {
     <div className="App">
       <ul className="ecl-theme-switcher">
         <li>
-          <EclButton variant="cta" onClick={() => switchTheme('ec')}>
+          <EclButton variant="primary" buttonStyle="highlight" onClick={() => switchTheme('ec')}>
             EC
           </EclButton>
         </li>
         <li>
-          <EclButton variant="cta" onClick={() => switchTheme('eu')}>
+          <EclButton variant="primary" buttonStyle="highlight"  onClick={() => switchTheme('eu')}>
             EU
           </EclButton>
         </li>
