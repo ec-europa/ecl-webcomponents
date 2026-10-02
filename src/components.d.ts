@@ -7593,9 +7593,9 @@ declare namespace LocalJSX {
         "helperId": string;
         "helperText": string;
         "placeholder": string;
+        "name": string;
         "width": string;
         "label": string;
-        "name": string;
         "defaultValue": string;
         "max": number;
         "min": number;

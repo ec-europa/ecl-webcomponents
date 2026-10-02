@@ -24,9 +24,9 @@ export class EclRange {
   @Prop() helperId: string;
   @Prop() helperText: string;
   @Prop() placeholder: string;
+  @Prop() name: string;
   @Prop() width: string = 'm';
   @Prop() label: string;
-  @Prop() name: string;
   @Prop() defaultValue: string;
   @Prop() max: number;
   @Prop() min: number;
@@ -40,13 +40,17 @@ export class EclRange {
   @Event() inputChange: EventEmitter;
 
   getClass(): string {
-    const styleClasses = ['ecl-input', this.styleClass];
+    const styleClasses = [
+      'ecl-range-container',
+      `ecl-range-container--${this.width}`,
+      this.styleClass
+    ];
 
     return styleClasses.join(' ');
   }
 
   getInputClasses(): string {
-    const inputClasses = ['ecl-range', `ecl-range--${this.width}`];
+    const inputClasses = ['ecl-range'];
     
     if (this.inputClass) {
       inputClasses.push(this.inputClass);
@@ -98,7 +102,7 @@ export class EclRange {
 
   render() {
     const wrapperAttrs = {};
-    wrapperAttrs['data-ecl-range'] = true;
+    wrapperAttrs['data-ecl-range-container'] = true;
   
     const attributes = {
       type: 'range',
