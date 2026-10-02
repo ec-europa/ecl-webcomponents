@@ -87,6 +87,7 @@ export class EclFooterEc {
                     <li class={liClass}>
                       <ecl-link
                         path={link.path}
+                        branded
                         styleClass={`ecl-site-footer__co-owner-link sc-ecl-footer-${this.theme}-${this.theme}`}
                       >
                         {link.label}
