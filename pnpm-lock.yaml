@@ -62,7 +62,7 @@ importers:
         version: 7.29.7(@babel/core@7.29.7)
       '@ecl/ecl-webcomponents':
         specifier: 0.30.0
-        version: link:packages/ecl-webcomponents
+        version: 0.30.0
       '@ecl/preset-ec':
         specifier: 5.3.1
         version: 5.3.1(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.12)
@@ -300,10 +300,10 @@ importers:
         specifier: 7.21.11
         version: 7.21.11(@babel/core@7.25.2)
       '@ecl/ecl-webcomponents':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-webcomponents
       '@ecl/ecl-webcomponents-angular':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:projects/ecl-webcomponents-angular
       browser-sync:
         specifier: 3.0.4
@@ -352,7 +352,7 @@ importers:
         version: 18.2.0(rxjs@7.8.2)(zone.js@0.13.2)
       '@ecl/ecl-webcomponents':
         specifier: 0.30.0
-        version: link:../../../ecl-webcomponents
+        version: 0.30.0
       tslib:
         specifier: 2.8.1
         version: 2.8.1
@@ -362,7 +362,7 @@ importers:
   packages/ecl-webcomponents-react:
     dependencies:
       '@ecl/ecl-webcomponents':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-webcomponents
     devDependencies:
       '@types/node':
@@ -393,7 +393,7 @@ importers:
   packages/ecl-webcomponents-react-consumer:
     dependencies:
       '@ecl/ecl-webcomponents-react':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-webcomponents-react
       react:
         specifier: 18.2.0
@@ -424,7 +424,7 @@ importers:
   packages/ecl-webcomponents-vue:
     dependencies:
       '@ecl/ecl-webcomponents':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-webcomponents
       '@stencil/vue-output-target':
         specifier: 0.13.2
@@ -437,7 +437,7 @@ importers:
   packages/ecl-webcomponents-vue-consumer:
     dependencies:
       '@ecl/ecl-webcomponents-vue':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-webcomponents-vue
       pinia:
         specifier: ^3.0.4
@@ -492,10 +492,10 @@ importers:
         specifier: 5.0.3
         version: 5.0.3
       '@ecl/ckeditor5-ecl-webcomponents':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../src/plugins/ckeditor5-ecl-webcomponents
       '@ecl/ecl-webcomponents':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../packages/ecl-webcomponents
       ckeditor5:
         specifier: 47.5.0
@@ -510,7 +510,7 @@ importers:
   src/components/ecl-accordion:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-icon
     devDependencies:
       '@ecl/accordion':
@@ -562,10 +562,10 @@ importers:
   src/components/ecl-animated-numbers:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-button
       '@ecl/web-components-icon':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-icon
     devDependencies:
       '@ecl/animated-numbers':
@@ -596,10 +596,10 @@ importers:
   src/components/ecl-banner:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-icon
       '@ecl/web-components-link':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-link
     devDependencies:
       '@ecl/banner':
@@ -651,13 +651,13 @@ importers:
   src/components/ecl-breadcrumb:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-button
       '@ecl/web-components-icon':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-icon
       '@ecl/web-components-link':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-link
     devDependencies:
       '@ecl/breadcrumb':
@@ -691,10 +691,10 @@ importers:
   src/components/ecl-button:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-icon
       '@ecl/web-components-indicator':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-indicator
     devDependencies:
       '@ecl/builder':
@@ -755,13 +755,13 @@ importers:
   src/components/ecl-carousel:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-button
       '@ecl/web-components-icon':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-icon
       '@ecl/web-components-slider':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-slider
     devDependencies:
       '@ecl/banner':
@@ -1005,7 +1005,7 @@ importers:
         specifier: 5.3.1
         version: 5.3.1
       '@ecl/web-components-button':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-button
       cross-env:
         specifier: 10.1.0
@@ -1017,10 +1017,10 @@ importers:
   src/components/ecl-fact-figures:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-icon
       '@ecl/web-components-link':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-link
     devDependencies:
       '@ecl/builder':
@@ -1337,7 +1337,7 @@ importers:
   src/components/ecl-inpage-navigation:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
@@ -1440,10 +1440,10 @@ importers:
   src/components/ecl-link:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-icon
       '@ecl/web-components-indicator':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-indicator
     devDependencies:
       '@ecl/builder':
@@ -1510,19 +1510,19 @@ importers:
   src/components/ecl-media-container:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-button
       '@ecl/web-components-expandable':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-expandable
       '@ecl/web-components-icon':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-icon
       '@ecl/web-components-picture':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-picture
       '@ecl/web-components-video':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-video
     devDependencies:
       '@ecl/builder':
@@ -1553,13 +1553,13 @@ importers:
   src/components/ecl-mega-menu:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-button
       '@ecl/web-components-grid':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-grid
       '@ecl/web-components-icon':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
@@ -1611,7 +1611,7 @@ importers:
   src/components/ecl-modal:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-button
     devDependencies:
       '@ecl/builder':
@@ -1684,10 +1684,10 @@ importers:
   src/components/ecl-notification:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-button
       '@ecl/web-components-icon':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
@@ -1769,7 +1769,7 @@ importers:
   src/components/ecl-page-summary:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
@@ -1830,10 +1830,10 @@ importers:
   src/components/ecl-popover:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-icon
       '@ecl/web-components-link':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-link
     devDependencies:
       '@ecl/builder':
@@ -1864,16 +1864,16 @@ importers:
   src/components/ecl-quiz:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-icon
       '@ecl/web-components-link':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-link
       '@ecl/web-components-picture':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-picture
       '@ecl/web-components-slider':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-slider
     devDependencies:
       '@ecl/builder':
@@ -2087,7 +2087,7 @@ importers:
   src/components/ecl-slogan-ticker:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-button
     devDependencies:
       '@ecl/builder':
@@ -2202,10 +2202,10 @@ importers:
         specifier: 5.3.1
         version: 5.3.1
       '@ecl/web-components-grid':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-grid
       '@ecl/web-components-picture':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-picture
       cross-env:
         specifier: 10.1.0
@@ -2241,16 +2241,16 @@ importers:
   src/components/ecl-story-card:
     dependencies:
       '@ecl/web-components-button':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-button
       '@ecl/web-components-link':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-link
       '@ecl/web-components-picture':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-picture
       '@ecl/web-components-slider':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-slider
     devDependencies:
       '@ecl/builder':
@@ -2347,7 +2347,7 @@ importers:
   src/components/ecl-tag:
     dependencies:
       '@ecl/web-components-icon':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-icon
     devDependencies:
       '@ecl/builder':
@@ -2396,10 +2396,10 @@ importers:
   src/components/ecl-text-media:
     dependencies:
       '@ecl/web-components-link':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-link
       '@ecl/web-components-media-container':
-        specifier: 0.30.0
+        specifier: 0.31.0
         version: link:../ecl-media-container
     devDependencies:
       '@ecl/builder':
@@ -3840,6 +3840,10 @@ packages:
 
   '@ecl/dom-utils@5.3.1':
     resolution: {integrity: sha512-XkerrsMvzvzUUQ9YZuVMihvdclbUnhImTXR9C15PCGEfkL7rLC2ANA/dkB/lcKb92nBwF0dv8xArMppgNk20SA==}
+
+  '@ecl/ecl-webcomponents@0.30.0':
+    resolution: {integrity: sha512-g8X9hV6/8VIkHTnoma2k3A2ICOeRacBEcqesMZpJRzm8sCAqHGk7mku5jDq8oFtREFSPOH9dl7xZuPK0kBjrnQ==}
+    engines: {node: '>=20.0.0', pnpm: 10.9.0}
 
   '@ecl/event-manager@5.3.1':
     resolution: {integrity: sha512-QWm4WrdRcglLlVApD909iS+7aSSz3w+HSYQMaVsqY7KvZ64vyXOq/M9VaGx0j5DICLbYoVLUYviKcY3XT6fKjw==}
@@ -6806,6 +6810,11 @@ packages:
     peerDependencies:
       '@stencil/core': '>=2.0.0 || >=3 || >=4.0.0 || ^5.0.0 || >=5.0.0-alpha.17 <5.0.0-next.0'
 
+  '@stencil/core@4.43.5':
+    resolution: {integrity: sha512-cgWD+GeuvJpTe1WQn40p02+BJ2j0j1YJ17GdkF2qKIQ23s2e3Zivq5yISXS3dcuV6oUJFN93jprdk+nk/sq99Q==}
+    engines: {node: '>=16.0.0', npm: '>=7.10.0'}
+    hasBin: true
+
   '@stencil/core@4.45.1':
     resolution: {integrity: sha512-/b8CItmSwOzZwafxXwomJnN9X/Ic/Fxum9ka/RDHmADVf4DA4152uY7zitzLV+vk8JdXxKA7FKyLT3GKNo9R3A==}
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
@@ -9201,6 +9210,7 @@ packages:
   eslint@9.39.2:
     resolution: {integrity: sha512-LEyamqS7W5HB3ujJyvi0HQK/dtVINZvd5mAAp9eT5S/ujByGjiZLCzPcHVzuXbpJDJF/cxwHlfceVUDZ2lnSTw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -16352,8 +16362,6 @@ snapshots:
       '@ckeditor/ckeditor5-core': 47.5.0
       '@ckeditor/ckeditor5-upload': 47.5.0
       ckeditor5: 47.5.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-alignment@47.5.0':
     dependencies:
@@ -16394,8 +16402,6 @@ snapshots:
       '@ckeditor/ckeditor5-ui': 47.5.0
       '@ckeditor/ckeditor5-utils': 47.5.0
       ckeditor5: 47.5.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-block-quote@47.5.0':
     dependencies:
@@ -16456,8 +16462,6 @@ snapshots:
       '@ckeditor/ckeditor5-utils': 47.5.0
       '@ckeditor/ckeditor5-widget': 47.5.0
       es-toolkit: 1.39.5
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-cloud-services@47.5.0':
     dependencies:
@@ -16508,8 +16512,6 @@ snapshots:
       '@ckeditor/ckeditor5-utils': 47.5.0
       ckeditor5: 47.5.0
       es-toolkit: 1.39.5
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-editor-classic@47.5.0':
     dependencies:
@@ -16530,8 +16532,6 @@ snapshots:
       '@ckeditor/ckeditor5-utils': 47.5.0
       ckeditor5: 47.5.0
       es-toolkit: 1.39.5
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-editor-inline@47.5.0':
     dependencies:
@@ -16541,8 +16541,6 @@ snapshots:
       '@ckeditor/ckeditor5-utils': 47.5.0
       ckeditor5: 47.5.0
       es-toolkit: 1.39.5
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-editor-multi-root@47.5.0':
     dependencies:
@@ -16573,8 +16571,6 @@ snapshots:
     dependencies:
       '@ckeditor/ckeditor5-utils': 47.5.0
       es-toolkit: 1.39.5
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-enter@47.5.0':
     dependencies:
@@ -16603,8 +16599,6 @@ snapshots:
       '@ckeditor/ckeditor5-utils': 47.5.0
       ckeditor5: 47.5.0
       es-toolkit: 1.39.5
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-font@47.5.0':
     dependencies:
@@ -16660,8 +16654,6 @@ snapshots:
       '@ckeditor/ckeditor5-utils': 47.5.0
       '@ckeditor/ckeditor5-widget': 47.5.0
       ckeditor5: 47.5.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@ckeditor/ckeditor5-html-embed@47.5.0':
     dependencies:
@@ -16802,6 +16794,8 @@ snapshots:
       '@ckeditor/ckeditor5-utils': 47.5.0
       '@ckeditor/ckeditor5-widget': 47.5.0
       ckeditor5: 47.5.0
+    transitivePeerDependencies:
+      - supports-color
 
   '@ckeditor/ckeditor5-mention@47.5.0':
     dependencies:
@@ -16821,6 +16815,8 @@ snapshots:
       '@ckeditor/ckeditor5-ui': 47.5.0
       '@ckeditor/ckeditor5-utils': 47.5.0
       ckeditor5: 47.5.0
+    transitivePeerDependencies:
+      - supports-color
 
   '@ckeditor/ckeditor5-page-break@47.5.0':
     dependencies:
@@ -16830,6 +16826,8 @@ snapshots:
       '@ckeditor/ckeditor5-utils': 47.5.0
       '@ckeditor/ckeditor5-widget': 47.5.0
       ckeditor5: 47.5.0
+    transitivePeerDependencies:
+      - supports-color
 
   '@ckeditor/ckeditor5-paragraph@47.5.0':
     dependencies:
@@ -16878,6 +16876,8 @@ snapshots:
       '@ckeditor/ckeditor5-ui': 47.5.0
       '@ckeditor/ckeditor5-utils': 47.5.0
       ckeditor5: 47.5.0
+    transitivePeerDependencies:
+      - supports-color
 
   '@ckeditor/ckeditor5-source-editing@47.5.0':
     dependencies:
@@ -16908,6 +16908,8 @@ snapshots:
       '@ckeditor/ckeditor5-utils': 47.5.0
       ckeditor5: 47.5.0
       es-toolkit: 1.39.5
+    transitivePeerDependencies:
+      - supports-color
 
   '@ckeditor/ckeditor5-table@47.5.0':
     dependencies:
@@ -16920,6 +16922,8 @@ snapshots:
       '@ckeditor/ckeditor5-widget': 47.5.0
       ckeditor5: 47.5.0
       es-toolkit: 1.39.5
+    transitivePeerDependencies:
+      - supports-color
 
   '@ckeditor/ckeditor5-theme-lark@47.5.0':
     dependencies:
@@ -16995,6 +16999,8 @@ snapshots:
       '@ckeditor/ckeditor5-utils': 47.5.0
       ckeditor5: 47.5.0
       es-toolkit: 1.39.5
+    transitivePeerDependencies:
+      - supports-color
 
   '@colordx/core@5.5.0': {}
 
@@ -17163,6 +17169,10 @@ snapshots:
       '@ecl/tag': 5.3.1
 
   '@ecl/dom-utils@5.3.1': {}
+
+  '@ecl/ecl-webcomponents@0.30.0':
+    dependencies:
+      '@stencil/core': 4.43.5
 
   '@ecl/event-manager@5.3.1': {}
 
@@ -20057,6 +20067,17 @@ snapshots:
   '@stencil/angular-output-target@1.5.0(@stencil/core@4.45.1)':
     dependencies:
       '@stencil/core': 4.45.1
+
+  '@stencil/core@4.43.5':
+    optionalDependencies:
+      '@rollup/rollup-darwin-arm64': 4.44.0
+      '@rollup/rollup-darwin-x64': 4.44.0
+      '@rollup/rollup-linux-arm64-gnu': 4.44.0
+      '@rollup/rollup-linux-arm64-musl': 4.44.0
+      '@rollup/rollup-linux-x64-gnu': 4.44.0
+      '@rollup/rollup-linux-x64-musl': 4.44.0
+      '@rollup/rollup-win32-arm64-msvc': 4.44.0
+      '@rollup/rollup-win32-x64-msvc': 4.44.0
 
   '@stencil/core@4.45.1':
     optionalDependencies:
