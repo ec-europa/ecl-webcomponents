@@ -45,11 +45,13 @@ const getArgTypes = () => {
         bottom: 'bottom',
         beside: 'beside',
       },
+      if: { arg: 'image', neq: '' },
     },
     imageAlt: {
       name: 'image-alt',
       type: { name: 'string' },
       description: 'Image alt attribute',
+      if: { arg: 'image', neq: '' }
     },
     title: {
       type: { name: 'string' },
