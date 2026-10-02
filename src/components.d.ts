@@ -2257,11 +2257,19 @@ export namespace Components {
         /**
           * @default ''
          */
+        "pauseExtraAttributes": string;
+        /**
+          * @default ''
+         */
         "pauseExtraClasses": string;
         /**
           * @default 'pause-filled'
          */
         "pauseIcon": string;
+        /**
+          * @default ''
+         */
+        "playExtraAttributes": string;
         /**
           * @default ''
          */
@@ -6018,11 +6026,19 @@ declare namespace LocalJSX {
         /**
           * @default ''
          */
+        "pauseExtraAttributes"?: string;
+        /**
+          * @default ''
+         */
         "pauseExtraClasses"?: string;
         /**
           * @default 'pause-filled'
          */
         "pauseIcon"?: string;
+        /**
+          * @default ''
+         */
+        "playExtraAttributes"?: string;
         /**
           * @default ''
          */
@@ -7699,7 +7715,9 @@ declare namespace LocalJSX {
         "pauseIcon": string;
         "size": string;
         "playExtraClasses": string;
+        "playExtraAttributes": string;
         "pauseExtraClasses": string;
+        "pauseExtraAttributes": string;
         "dotExtraClasses": string;
         "dotsExtraClasses": string;
         "prevExtraClasses": string;

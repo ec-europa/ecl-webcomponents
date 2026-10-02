@@ -16,8 +16,10 @@
 | `nextExtraAttributes`   | `next-extra-attributes`   |             | `string`  | `''`             |
 | `nextExtraClasses`      | `next-extra-classes`      |             | `string`  | `''`             |
 | `noScript`              | `no-script`               |             | `boolean` | `false`          |
+| `pauseExtraAttributes`  | `pause-extra-attributes`  |             | `string`  | `''`             |
 | `pauseExtraClasses`     | `pause-extra-classes`     |             | `string`  | `''`             |
 | `pauseIcon`             | `pause-icon`              |             | `string`  | `'pause-filled'` |
+| `playExtraAttributes`   | `play-extra-attributes`   |             | `string`  | `''`             |
 | `playExtraClasses`      | `play-extra-classes`      |             | `string`  | `''`             |
 | `playIcon`              | `play-icon`               |             | `string`  | `'play-filled'`  |
 | `playPause`             | `play-pause`              |             | `boolean` | `false`          |

@@ -145,18 +145,37 @@ export class EclStoryCard {
             styleClass={`ecl-story-card__pager sc-ecl-story-card-${this.theme}`}
             prevExtraClasses={`ecl-story-card__prev sc-ecl-story-card-${this.theme}`}
             nextExtraClasses={`ecl-story-card__next sc-ecl-story-card-${this.theme}`}
-            srPrev="Previous"
-            srNext="Next"
-            srPlay="Play"
-            srPause="Pause"
-            playPause
+            srPrev="Show previous Slide"
+            srNext="Show next Slide"
+            dots
             hideLabel
+            dotsExtraClasses={`ecl-story-card__dots sc-ecl-story-card-${this.theme}`}
+            dotExtraClasses={`ecl-story-card__dot sc-ecl-story-card-${this.theme}`}
             prevExtraAttributes="data-ecl-story-card-prev"
             nextExtraAttributes="data-ecl-story-card-next"
             templateDataAttribute="data-ecl-story-card-dot-template"
           ></ecl-slider-pager>
         </div>
         <div class="ecl-story-card__grid">
+          <ecl-slider-pager
+            styleClass={`ecl-story-card__grid-controls sc-ecl-story-card-${this.theme}`}
+            prevExtraClasses={`ecl-story-card__grid-prev sc-ecl-story-card-${this.theme}`}
+            nextExtraClasses={`ecl-story-card__grid-next sc-ecl-story-card-${this.theme}`}
+            playExtraClasses={`ecl-story-card__grid-play sc-ecl-story-card-${this.theme}`}
+            pauseExtraClasses={`ecl-story-card__grid-pause sc-ecl-story-card-${this.theme}`}
+            srPrev="Show previous Slide"
+            srNext="Show next Slide"
+            srPlay="Play"
+            srPause="Pause"
+            playPause
+            hideLabel
+            dots={false}
+            size="l"
+            playExtraAttributes="data-ecl-story-card-grid-play"
+            pauseExtraAttributes="data-ecl-story-card-grid-pause"
+            prevExtraAttributes="data-ecl-story-card-grid-prev"
+            nextExtraAttributes="data-ecl-story-card-grid-next"
+          ></ecl-slider-pager>
           <div
             class="ecl-story-card__grid-container"
             role="tablist"
@@ -164,72 +183,6 @@ export class EclStoryCard {
             {this.renderTabs()}
           </div>
           {this.renderDetails()}
-          <div class="ecl-story-card__grid-controls">
-            <ecl-button
-              type="button"
-              variant="tertiary"
-              button-style="neutral"
-              hide-label
-              style-class={`ecl-story-card__grid-prev sc-ecl-story-card-${this.theme}`}
-              data-ecl-story-card-grid-prev
-            >
-              {this.prevLabel}
-              <ecl-icon
-                icon="caret-left"
-                slot="icon-after"
-                family="phosphor"
-                size="l"
-              ></ecl-icon>
-            </ecl-button>
-            <ecl-button
-              type="button"
-              variant="secondary"
-              button-style="neutral"
-              hide-label
-              style-class={`ecl-story-card__grid-pause sc-ecl-story-card-${this.theme}`}
-              data-ecl-story-card-grid-pause
-            >
-              {this.pauseLabel}
-              <ecl-icon
-                icon="pause-filled"
-                slot="icon-after"
-                family="phosphor"
-                size="l"
-              ></ecl-icon>
-            </ecl-button>
-            <ecl-button
-              type="button"
-              variant="secondary"
-              button-style="neutral"
-              hide-label
-              style-class={`ecl-story-card__grid-play sc-ecl-story-card-${this.theme}`}
-              data-ecl-story-card-grid-play
-            >
-              {this.playLabel}
-              <ecl-icon
-                icon="play-filled"
-                slot="icon-after"
-                family="phosphor"
-                size="l"
-              ></ecl-icon>
-            </ecl-button>
-            <ecl-button
-              type="button"
-              variant="tertiary"
-              button-style="neutral"
-              hide-label
-              style-class={`ecl-story-card__grid-next sc-ecl-story-card-${this.theme}`}
-              data-ecl-story-card-grid-next
-            >
-              <ecl-icon
-                icon="caret-right"
-                slot="icon-after"
-                family="phosphor"
-                size="l"
-              ></ecl-icon>
-              {this.nextLabel}
-            </ecl-button>
-          </div>
        </div>
       </section>
     )

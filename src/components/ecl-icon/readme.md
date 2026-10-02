@@ -70,7 +70,6 @@
  - [ecl-slider-pager](../ecl-slider)
  - [ecl-slogan-ticker](../ecl-slogan-ticker)
  - [ecl-social-media-follow-item](../ecl-social-media-follow)
- - [ecl-story-card](../ecl-story-card)
  - [ecl-story-card-item](../ecl-story-card)
  - [ecl-tabs](../ecl-tabs)
  - [ecl-tag](../ecl-tag)
@@ -126,7 +125,6 @@ graph TD;
   ecl-slider-pager --> ecl-icon
   ecl-slogan-ticker --> ecl-icon
   ecl-social-media-follow-item --> ecl-icon
-  ecl-story-card --> ecl-icon
   ecl-story-card-item --> ecl-icon
   ecl-tabs --> ecl-icon
   ecl-tag --> ecl-icon

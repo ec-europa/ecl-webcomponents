@@ -1,4 +1,4 @@
-import { Component, Prop, h, Element, Fragment } from '@stencil/core';
+import { Component, Prop, h, Element, Fragment, Host } from '@stencil/core';
 import SliderPager from "@ecl/slider";
 declare var ECL: any;
 
@@ -25,7 +25,9 @@ export class EclSliderPager {
   @Prop() pauseIcon: string = 'pause-filled';
   @Prop() size: string = 's';
   @Prop() playExtraClasses: string  = '';
+  @Prop() playExtraAttributes: string  = ''
   @Prop() pauseExtraClasses: string  = '';
+  @Prop() pauseExtraAttributes: string  = ''
   @Prop() dotExtraClasses: string  = '';
   @Prop() dotsExtraClasses: string  = '';
   @Prop() prevExtraClasses: string  = '';
@@ -61,7 +63,7 @@ export class EclSliderPager {
 
   render() {
     return (
-      <div class={this.getClass()}>
+      <Host class={this.getClass()}>
       { this.playPause &&
       <Fragment>
         <ecl-button
@@ -71,6 +73,7 @@ export class EclSliderPager {
           size={this.size}
           data-ecl-slogan-ticker-play
           style-class={`ecl-slider-pager__play sc-ecl-slider-pager-${this.theme}${this.playExtraClasses ? ' ' + this.playExtraClasses : ''}`}
+          {...(this.playExtraAttributes && { [this.playExtraAttributes] : '' })}
           hideLabel
          >
           {this.srPlay}
@@ -87,7 +90,8 @@ export class EclSliderPager {
           hide-label
           button-style="neutral"
           size={this.size}
-          style-class={`ecl-slider-pager__pause sc-ecl-slider-pager-${this.theme}${this.pauseExtraClasses ? ' ' + this.pauseExtraClasses : ''}`}          
+          style-class={`ecl-slider-pager__pause sc-ecl-slider-pager-${this.theme}${this.pauseExtraClasses ? ' ' + this.pauseExtraClasses : ''}`}
+          {...(this.pauseExtraAttributes && { [this.pauseExtraAttributes] : '' })}
         >
           {this.srPause}
           <ecl-icon
@@ -146,7 +150,7 @@ export class EclSliderPager {
         <button class={`ecl-slider-pager__dot${this.dotExtraClasses ? ' ' + this.dotExtraClasses : ''}`}></button>
       </script>
       }
-      </div>
+      </Host>
     );
   }
 }

@@ -169,65 +169,91 @@ exports[`ecl-story-card renders 1`] = `
           </ecl-story-card-item>
         </div>
       </div>
-      <ecl-slider-pager>
-        <div class="ecl-slider-pager ecl-story-card__pager sc-ecl-story-card-ec">
-          <ecl-button button-style="neutral" data-ecl-slogan-ticker-play style-class="ecl-slider-pager__play sc-ecl-slider-pager-ec">
-            <!---->
-            <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--s ecl-button--secondary ecl-slider-pager__play sc-ecl-slider-pager-ec" data-ecl-slogan-ticker-play="eclSloganTickerPlay" type="button">
-              <span class="ecl-button__container">
-                <span class="ecl-button__label" data-ecl-label>
-                  Play
-                </span>
-                <ecl-icon slot="icon-after">
-                  <span class="ecl-button__icon ecl-icon ecl-icon-- sc-ecl-button-ec wt-icon--placeholder wt-icon-phosphor--play-filled"></span>
-                </ecl-icon>
+      <ecl-slider-pager class="ecl-slider-pager ecl-story-card__pager sc-ecl-story-card-ec">
+        <ecl-button button-style="neutral" data-ecl-story-card-prev hide-label="" style-class="ecl-slider-pager__prev sc-ecl-slider-pager-ec ecl-story-card__prev sc-ecl-story-card-ec">
+          <!---->
+          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--s ecl-button--tertiary ecl-slider-pager__prev ecl-story-card__prev sc-ecl-slider-pager-ec sc-ecl-story-card-ec" data-ecl-story-card-prev="eclStoryCardPrev" type="button">
+            <span class="ecl-button__container">
+              <span class="ecl-button__label" data-ecl-label>
+                Show previous Slide
               </span>
-            </button>
-          </ecl-button>
-          <ecl-button button-style="neutral" hide-label="" style-class="ecl-slider-pager__pause sc-ecl-slider-pager-ec">
-            <!---->
-            <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--s ecl-button--secondary ecl-slider-pager__pause sc-ecl-slider-pager-ec" type="button">
-              <span class="ecl-button__container">
-                <span class="ecl-button__label" data-ecl-label>
-                  Pause
-                </span>
-                <ecl-icon slot="icon-after">
-                  <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--placeholder wt-icon-phosphor--pause-filled"></span>
-                </ecl-icon>
+              <ecl-icon slot="icon-after">
+                <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--monochrome wt-icon--placeholder wt-icon-phosphor--caret-left"></span>
+              </ecl-icon>
+            </span>
+          </button>
+        </ecl-button>
+        <div class="ecl-slider-pager__dots ecl-story-card__dots sc-ecl-story-card-ec"></div>
+        <ecl-button button-style="neutral" data-ecl-story-card-next hide-label="" style-class="ecl-slider-pager__next sc-ecl-slider-pager-ec ecl-story-card__next sc-ecl-story-card-ec">
+          <!---->
+          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--s ecl-button--tertiary ecl-slider-pager__next ecl-story-card__next sc-ecl-slider-pager-ec sc-ecl-story-card-ec" data-ecl-story-card-next="eclStoryCardNext" type="button">
+            <span class="ecl-button__container">
+              <span class="ecl-button__label" data-ecl-label>
+                Show next Slide
               </span>
-            </button>
-          </ecl-button>
-          <ecl-button button-style="neutral" data-ecl-story-card-prev hide-label="" style-class="ecl-slider-pager__prev sc-ecl-slider-pager-ec ecl-story-card__prev sc-ecl-story-card-ec">
-            <!---->
-            <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--s ecl-button--tertiary ecl-slider-pager__prev ecl-story-card__prev sc-ecl-slider-pager-ec sc-ecl-story-card-ec" data-ecl-story-card-prev="eclStoryCardPrev" type="button">
-              <span class="ecl-button__container">
-                <span class="ecl-button__label" data-ecl-label>
-                  Previous
-                </span>
-                <ecl-icon slot="icon-after">
-                  <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--monochrome wt-icon--placeholder wt-icon-phosphor--caret-left"></span>
-                </ecl-icon>
-              </span>
-            </button>
-          </ecl-button>
-          <div class="ecl-slider-pager__dots"></div>
-          <ecl-button button-style="neutral" data-ecl-story-card-next hide-label="" style-class="ecl-slider-pager__next sc-ecl-slider-pager-ec ecl-story-card__next sc-ecl-story-card-ec">
-            <!---->
-            <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--s ecl-button--tertiary ecl-slider-pager__next ecl-story-card__next sc-ecl-slider-pager-ec sc-ecl-story-card-ec" data-ecl-story-card-next="eclStoryCardNext" type="button">
-              <span class="ecl-button__container">
-                <span class="ecl-button__label" data-ecl-label>
-                  Next
-                </span>
-                <ecl-icon slot="icon-after">
-                  <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--monochrome wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
-                </ecl-icon>
-              </span>
-            </button>
-          </ecl-button><script data-ecl-slider-dot-template data-ecl-story-card-dot-template type="text/template"><button class="ecl-slider-pager__dot"></button></script>
-        </div>
+              <ecl-icon slot="icon-after">
+                <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--monochrome wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
+              </ecl-icon>
+            </span>
+          </button>
+        </ecl-button><script data-ecl-slider-dot-template data-ecl-story-card-dot-template type="text/template"><button class="ecl-slider-pager__dot ecl-story-card__dot sc-ecl-story-card-ec"></button></script>
       </ecl-slider-pager>
     </div>
     <div class="ecl-story-card__grid">
+      <ecl-slider-pager class="ecl-slider-pager ecl-story-card__grid-controls sc-ecl-story-card-ec">
+        <ecl-button button-style="neutral" data-ecl-slogan-ticker-play data-ecl-story-card-grid-play style-class="ecl-slider-pager__play sc-ecl-slider-pager-ec ecl-story-card__grid-play sc-ecl-story-card-ec">
+          <!---->
+          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--secondary ecl-slider-pager__play ecl-story-card__grid-play sc-ecl-slider-pager-ec sc-ecl-story-card-ec" data-ecl-slogan-ticker-play="eclSloganTickerPlay" data-ecl-story-card-grid-play="eclStoryCardGridPlay" type="button">
+            <span class="ecl-button__container">
+              <span class="ecl-button__label" data-ecl-label>
+                Play
+              </span>
+              <ecl-icon slot="icon-after">
+                <span class="ecl-button__icon ecl-icon ecl-icon-- sc-ecl-button-ec wt-icon--placeholder wt-icon-phosphor--play-filled"></span>
+              </ecl-icon>
+            </span>
+          </button>
+        </ecl-button>
+        <ecl-button button-style="neutral" data-ecl-story-card-grid-pause hide-label="" style-class="ecl-slider-pager__pause sc-ecl-slider-pager-ec ecl-story-card__grid-pause sc-ecl-story-card-ec">
+          <!---->
+          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--secondary ecl-slider-pager__pause ecl-story-card__grid-pause sc-ecl-slider-pager-ec sc-ecl-story-card-ec" data-ecl-story-card-grid-pause="eclStoryCardGridPause" type="button">
+            <span class="ecl-button__container">
+              <span class="ecl-button__label" data-ecl-label>
+                Pause
+              </span>
+              <ecl-icon slot="icon-after">
+                <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--placeholder wt-icon-phosphor--pause-filled"></span>
+              </ecl-icon>
+            </span>
+          </button>
+        </ecl-button>
+        <ecl-button button-style="neutral" data-ecl-story-card-grid-prev hide-label="" style-class="ecl-slider-pager__prev sc-ecl-slider-pager-ec ecl-story-card__grid-prev sc-ecl-story-card-ec">
+          <!---->
+          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-slider-pager__prev ecl-story-card__grid-prev sc-ecl-slider-pager-ec sc-ecl-story-card-ec" data-ecl-story-card-grid-prev="eclStoryCardGridPrev" type="button">
+            <span class="ecl-button__container">
+              <span class="ecl-button__label" data-ecl-label>
+                Show previous Slide
+              </span>
+              <ecl-icon slot="icon-after">
+                <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--monochrome wt-icon--placeholder wt-icon-phosphor--caret-left"></span>
+              </ecl-icon>
+            </span>
+          </button>
+        </ecl-button>
+        <ecl-button button-style="neutral" data-ecl-story-card-grid-next hide-label="" style-class="ecl-slider-pager__next sc-ecl-slider-pager-ec ecl-story-card__grid-next sc-ecl-story-card-ec">
+          <!---->
+          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-slider-pager__next ecl-story-card__grid-next sc-ecl-slider-pager-ec sc-ecl-story-card-ec" data-ecl-story-card-grid-next="eclStoryCardGridNext" type="button">
+            <span class="ecl-button__container">
+              <span class="ecl-button__label" data-ecl-label>
+                Show next Slide
+              </span>
+              <ecl-icon slot="icon-after">
+                <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--monochrome wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
+              </ecl-icon>
+            </span>
+          </button>
+        </ecl-button>
+      </ecl-slider-pager>
       <div class="ecl-story-card__grid-container" role="tablist">
         <ecl-story-card-tab class="ecl-story-card__grid-item ecl-story-card__grid-item--expanded sc-ecl-story-card-ec" data-ecl-story-card-grid-item="0" role="listitem" tabindex="0" teaser-label="why twelve?">
           <button aria-selected="true" class="ecl-story-card__grid-card sc-ecl-story-card-ec" data-ecl-story-card-grid-button="0" id="tab" role="tab" type="button">
@@ -430,60 +456,6 @@ exports[`ecl-story-card renders 1`] = `
           </div>
         </article>
       </ecl-story-card-item>
-      <div class="ecl-story-card__grid-controls">
-        <ecl-button button-style="neutral" data-ecl-story-card-grid-prev hide-label="" style-class="ecl-story-card__grid-prev sc-ecl-story-card-ec">
-          <!---->
-          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-story-card__grid-prev sc-ecl-story-card-ec" data-ecl-story-card-grid-prev="eclStoryCardGridPrev" type="button">
-            <span class="ecl-button__container">
-              <span class="ecl-button__label" data-ecl-label>
-                Previous
-              </span>
-              <ecl-icon slot="icon-after">
-                <span class="ecl-button__icon ecl-icon ecl-icon--l sc-ecl-button-ec wt-icon--placeholder wt-icon-phosphor--caret-left"></span>
-              </ecl-icon>
-            </span>
-          </button>
-        </ecl-button>
-        <ecl-button button-style="neutral" data-ecl-story-card-grid-pause hide-label="" style-class="ecl-story-card__grid-pause sc-ecl-story-card-ec">
-          <!---->
-          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--secondary ecl-story-card__grid-pause sc-ecl-story-card-ec" data-ecl-story-card-grid-pause="eclStoryCardGridPause" type="button">
-            <span class="ecl-button__container">
-              <span class="ecl-button__label" data-ecl-label>
-                Pause
-              </span>
-              <ecl-icon slot="icon-after">
-                <span class="ecl-button__icon ecl-icon ecl-icon--l sc-ecl-button-ec wt-icon--placeholder wt-icon-phosphor--pause-filled"></span>
-              </ecl-icon>
-            </span>
-          </button>
-        </ecl-button>
-        <ecl-button button-style="neutral" data-ecl-story-card-grid-play hide-label="" style-class="ecl-story-card__grid-play sc-ecl-story-card-ec">
-          <!---->
-          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--secondary ecl-story-card__grid-play sc-ecl-story-card-ec" data-ecl-story-card-grid-play="eclStoryCardGridPlay" type="button">
-            <span class="ecl-button__container">
-              <span class="ecl-button__label" data-ecl-label>
-                Play
-              </span>
-              <ecl-icon slot="icon-after">
-                <span class="ecl-button__icon ecl-icon ecl-icon--l sc-ecl-button-ec wt-icon--placeholder wt-icon-phosphor--play-filled"></span>
-              </ecl-icon>
-            </span>
-          </button>
-        </ecl-button>
-        <ecl-button button-style="neutral" data-ecl-story-card-grid-next hide-label="" style-class="ecl-story-card__grid-next sc-ecl-story-card-ec">
-          <!---->
-          <button class="ecl-button ecl-button--icon-only ecl-button--neutral ecl-button--tertiary ecl-story-card__grid-next sc-ecl-story-card-ec" data-ecl-story-card-grid-next="eclStoryCardGridNext" type="button">
-            <span class="ecl-button__container">
-              <span class="ecl-button__label" data-ecl-label>
-                Next
-              </span>
-              <ecl-icon slot="icon-after">
-                <span class="ecl-button__icon ecl-icon ecl-icon--l sc-ecl-button-ec wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
-              </ecl-icon>
-            </span>
-          </button>
-        </ecl-button>
-      </div>
     </div>
   </section>
 </ecl-story-card>
