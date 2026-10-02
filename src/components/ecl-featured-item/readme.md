@@ -29,6 +29,13 @@
 | `verticalAlignment`     | `vertical-alignment`      |             | `string` | `'top'`                                                                                       |
 
 
+## Slots
+
+| Slot | Description      |
+| ---- | ---------------- |
+|      | The default slot |
+
+
 ## Dependencies
 
 ### Depends on

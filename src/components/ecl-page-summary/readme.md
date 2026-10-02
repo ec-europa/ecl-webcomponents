@@ -19,6 +19,13 @@
 | `theme`          | `theme`           |             | `string`  | `'ec'`       |
 
 
+## Slots
+
+| Slot | Description      |
+| ---- | ---------------- |
+|      | The default slot |
+
+
 ## Dependencies
 
 ### Depends on

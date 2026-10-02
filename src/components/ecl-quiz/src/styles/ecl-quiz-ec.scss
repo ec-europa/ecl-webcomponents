@@ -1,8 +1,5 @@
 @use '@ecl/theme-ec/theme' as theme;
 @use '@ecl/theme-ec/variables' as var;
-@use '@ecl/grid/grid' with (
-  $theme: theme.$theme
-);
 @use '@ecl/mixins-typography/mixins' with (
   $typography: var.$typography,
   $theme: theme.$theme
@@ -14,6 +11,20 @@
 
 .ecl-icon {
   vertical-align: middle;
+}
+
+.ecl-quiz__pager {
+  margin-block-start: var(--s-xl);
+  justify-content: center;
+}
+
+.ecl-quiz__prev,
+.ecl-quiz__next {
+  color: var(--ecl-color-grey-600);
+
+  &:disabled {
+    color: var(--ecl-color-grey-600);
+  }
 }
 
 @container (width >= 768px) {
@@ -53,4 +64,24 @@
     border-radius: 4px;
     margin-inline: var(--s-4xl);
   }
+
+  .ecl-quiz__pager {
+    margin-block-start: var(--s-4xl);
+  }
+}
+
+.ecl-quiz-card__front:has(.ecl-picture),
+.ecl-quiz-card__back:has(.ecl-picture) {
+  .ecl-quiz-card__padded:has(.ecl-quiz-card__icon) {
+    margin-top: calc(var(--s-4xl) * -1);
+    padding-block-start: 0 !important;
+  }
+}
+
+.ecl-quiz-card__back .ecl-quiz-card__icon svg {
+  position: relative;
+}
+
+.ecl-quiz-card__answer {
+  flex-direction: column;
 }

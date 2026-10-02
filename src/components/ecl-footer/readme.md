@@ -17,6 +17,14 @@
 | `theme`      | `theme`       |             | `string`  | `undefined` |
 
 
+## Slots
+
+| Slot            | Description      |
+| --------------- | ---------------- |
+|                 | The default slot |
+| `"icon-before"` |                  |
+
+
 ## Dependencies
 
 ### Depends on

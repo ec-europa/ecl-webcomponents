@@ -85,7 +85,7 @@ const getArgTypes = () => {
         'image',
         'video',
       ],
-      if: { arg: 'hasMedia', truthy: true }
+      if: { arg: 'hasMedia', truthy: true },
     },
     videoTitle: {
       name: 'video-title',
@@ -117,18 +117,21 @@ const getArgTypes = () => {
         'left',
         'right',
       ],
+      if: { arg: 'hasMedia', truthy: true },
     },
     mediaCaption: {
       name: 'media-caption',
       type: {
         name: 'string',
       },
+      if: { arg: 'hasMedia', truthy: true },
     },
     mediaCredit: {
       name: 'media-credit',
       type: {
         name: 'string',
       },
+      if: { arg: 'hasMedia', truthy: true },
     },
   };
 };

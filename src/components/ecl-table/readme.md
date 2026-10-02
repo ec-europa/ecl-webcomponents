@@ -12,6 +12,8 @@
 | `caption`             | `caption`               |             | `string`  | `undefined`                                              |
 | `colorMode`           | `color-mode`            |             | `string`  | `undefined`                                              |
 | `elId`                | `el-id`                 |             | `string`  | `` `ecl-table-${Math.random().toString(36).slice(2)}` `` |
+| `filter`              | `filter`                |             | `boolean` | `false`                                                  |
+| `filterLabel`         | `filter-label`          |             | `string`  | `undefined`                                              |
 | `headers`             | `headers`               |             | `string`  | `undefined`                                              |
 | `labelSortAscending`  | `label-sort-ascending`  |             | `string`  | `undefined`                                              |
 | `labelSortDefault`    | `label-sort-default`    |             | `string`  | `undefined`                                              |

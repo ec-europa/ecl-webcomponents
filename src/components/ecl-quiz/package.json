@@ -14,17 +14,19 @@
   },
   "dependencies": {
     "@ecl/web-components-icon": "0.30.0",
-    "@ecl/web-components-link": "0.30.0"
+    "@ecl/web-components-link": "0.30.0",
+    "@ecl/web-components-slider": "0.30.0",
+    "@ecl/web-components-picture": "0.30.0"
   },
   "devDependencies": {
-    "@ecl/builder": "5.1.0",
-    "@ecl/grid": "5.1.0",
-    "@ecl/link": "5.1.0",
-    "@ecl/mixins-typography": "5.1.0",
-    "@ecl/quiz": "5.1.0",
-    "@ecl/theme-ec": "5.1.0",
-    "@ecl/theme-eu": "5.1.0",
-    "@ecl/utility-screen-reader": "5.1.0",
+    "@ecl/builder": "5.3.1",
+    "@ecl/grid": "5.3.1",
+    "@ecl/link": "5.3.1",
+    "@ecl/mixins-typography": "5.3.1",
+    "@ecl/quiz": "5.3.1",
+    "@ecl/theme-ec": "5.3.1",
+    "@ecl/theme-eu": "5.3.1",
+    "@ecl/utility-screen-reader": "5.3.1",
     "cross-env": "10.1.0"
   },
   "repository": {

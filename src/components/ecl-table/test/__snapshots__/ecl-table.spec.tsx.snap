@@ -10,13 +10,115 @@ exports[`ecl-table default renders correctly 1`] = `
       <thead class="ecl-table__head">
         <tr class="ecl-table__row">
           <th class="ecl-table__header" id="table-id-header-1" scope="col">
-            Country
+            <span class="ecl-table__header-inner">
+              <span class="ecl-table__header-label">
+                Country
+              </span>
+            </span>
           </th>
           <th class="ecl-table__header" id="table-id-header-2" scope="col">
-            Capital
+            <span class="ecl-table__header-inner">
+              <span class="ecl-table__header-label">
+                Capital
+              </span>
+            </span>
           </th>
           <th class="ecl-table__header" id="table-id-header-3" scope="col">
-            Population
+            <span class="ecl-table__header-inner">
+              <span class="ecl-table__header-label">
+                Population
+              </span>
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="ecl-table__body">
+        <tr class="ecl-table__row">
+          <td class="ecl-table__cell" data-ecl-table-header="country">
+            Italy
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="capital">
+            Rome
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="population">
+            59M
+          </td>
+        </tr>
+        <tr class="ecl-table__row">
+          <td class="ecl-table__cell" data-ecl-table-header="country">
+            France
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="capital">
+            Paris
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="population">
+            67M
+          </td>
+        </tr>
+        <tr class="ecl-table__row">
+          <td class="ecl-table__cell" data-ecl-table-header="country">
+            Germany
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="capital">
+            Berlin
+          </td>
+          <td class="ecl-table__cell" data-ecl-table-header="population">
+            83M
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</ecl-table>
+`;
+
+exports[`ecl-table filterable renders correctly 1`] = `
+<ecl-table caption="Filterable table example" color-mode="orange" el-id="table-id-filterbale" filter="" filter-label="Filterable label" headers="[[{&quot;label&quot;:&quot;Country&quot;},{&quot;label&quot;:&quot;Capital&quot;},{&quot;label&quot;:&quot;Population&quot;}]]" label-sort-ascending="Sort ascending" label-sort-default="Sort default" label-sort-descending="Sort descending" rows="[{&quot;data&quot;:[{&quot;label&quot;:&quot;Italy&quot;,&quot;data-ecl-table-header&quot;:&quot;country&quot;},{&quot;label&quot;:&quot;Rome&quot;,&quot;data-ecl-table-header&quot;:&quot;capital&quot;},{&quot;label&quot;:&quot;59M&quot;,&quot;data-ecl-table-header&quot;:&quot;population&quot;}]},{&quot;data&quot;:[{&quot;label&quot;:&quot;France&quot;,&quot;data-ecl-table-header&quot;:&quot;country&quot;},{&quot;label&quot;:&quot;Paris&quot;,&quot;data-ecl-table-header&quot;:&quot;capital&quot;},{&quot;label&quot;:&quot;67M&quot;,&quot;data-ecl-table-header&quot;:&quot;population&quot;}]},{&quot;data&quot;:[{&quot;label&quot;:&quot;Germany&quot;,&quot;data-ecl-table-header&quot;:&quot;country&quot;},{&quot;label&quot;:&quot;Berlin&quot;,&quot;data-ecl-table-header&quot;:&quot;capital&quot;},{&quot;label&quot;:&quot;83M&quot;,&quot;data-ecl-table-header&quot;:&quot;population&quot;}]}]">
+  <div class="ecl-table-responsive">
+    <table class="ecl-color-mode--orange ecl-table" data-ecl-auto-initialized="true" data-ecl-table data-ecl-table-filter data-ecl-table-filter-label="Filterable label" id="table-id-filterbale">
+      <caption class="ecl-table__caption">
+        Filterable table example
+      </caption>
+      <thead class="ecl-table__head">
+        <tr class="ecl-table__row">
+          <th class="ecl-table__header ecl-table__header--filterable" data-ecl-table-filter-toggle id="table-id-filterbale-header-1" scope="col">
+            <span class="ecl-table__header-inner">
+              <span class="ecl-table__header-label">
+                Country
+              </span>
+              <span class="ecl-table__filter sc-ecl-table-ec">
+                <label class="ecl-table__filter-label sc-ecl-table-ec" for="table-id-filterbale-filter-0">
+                  Filterable label
+                </label>
+                <input class="ecl-table__filter-input ecl-text-input sc-ecl-table-ec" data-ecl-table-filter-column="0" id="table-id-filterbale-filter-0" type="search">
+              </span>
+            </span>
+          </th>
+          <th class="ecl-table__header ecl-table__header--filterable" data-ecl-table-filter-toggle id="table-id-filterbale-header-2" scope="col">
+            <span class="ecl-table__header-inner">
+              <span class="ecl-table__header-label">
+                Capital
+              </span>
+              <span class="ecl-table__filter sc-ecl-table-ec">
+                <label class="ecl-table__filter-label sc-ecl-table-ec" for="table-id-filterbale-filter-1">
+                  Filterable label
+                </label>
+                <input class="ecl-table__filter-input ecl-text-input sc-ecl-table-ec" data-ecl-table-filter-column="1" id="table-id-filterbale-filter-1" type="search">
+              </span>
+            </span>
+          </th>
+          <th class="ecl-table__header ecl-table__header--filterable" data-ecl-table-filter-toggle id="table-id-filterbale-header-3" scope="col">
+            <span class="ecl-table__header-inner">
+              <span class="ecl-table__header-label">
+                Population
+              </span>
+              <span class="ecl-table__filter sc-ecl-table-ec">
+                <label class="ecl-table__filter-label sc-ecl-table-ec" for="table-id-filterbale-filter-2">
+                  Filterable label
+                </label>
+                <input class="ecl-table__filter-input ecl-text-input sc-ecl-table-ec" data-ecl-table-filter-column="2" id="table-id-filterbale-filter-2" type="search">
+              </span>
+            </span>
           </th>
         </tr>
       </thead>
@@ -70,24 +172,48 @@ exports[`ecl-table multiple renders correctly 1`] = `
       <thead class="ecl-table__head">
         <tr class="ecl-table__row">
           <th class="ecl-table__header" id="table-id-header-1" rowspan="2" scope="col">
-            Job title
+            <span class="ecl-table__header-inner">
+              <span class="ecl-table__header-label">
+                Job title
+              </span>
+            </span>
           </th>
           <th class="ecl-table__header" id="table-id-header-2" rowspan="2" scope="col">
-            EFSI finance approved by EIB
+            <span class="ecl-table__header-inner">
+              <span class="ecl-table__header-label">
+                EFSI finance approved by EIB
+              </span>
+            </span>
           </th>
           <th class="ecl-table__header" colspan="2" id="table-id-header-3" scope="colgroup">
-            Extra information
+            <span class="ecl-table__header-inner">
+              <span class="ecl-table__header-label">
+                Extra information
+              </span>
+            </span>
           </th>
           <th class="ecl-table__header" id="table-id-header-4" rowspan="2" scope="col">
-            Location
+            <span class="ecl-table__header-inner">
+              <span class="ecl-table__header-label">
+                Location
+              </span>
+            </span>
           </th>
         </tr>
         <tr class="ecl-table__row">
           <th class="ecl-table__header" headers="el-id-header-3" id="table-id-header-5" scope="col">
-            Organization
+            <span class="ecl-table__header-inner">
+              <span class="ecl-table__header-label">
+                Organization
+              </span>
+            </span>
           </th>
           <th class="ecl-table__header" headers="el-id-header-3" id="table-id-header-6" scope="col">
-            Type of contract
+            <span class="ecl-table__header-inner">
+              <span class="ecl-table__header-label">
+                Type of contract
+              </span>
+            </span>
           </th>
         </tr>
       </thead>
@@ -186,32 +312,44 @@ exports[`ecl-table multiple renders correctly 1`] = `
 exports[`ecl-table sortable renders correctly 1`] = `
 <ecl-table caption="Sortable table example" color-mode="purple" el-id="table-id" headers="[[{&quot;label&quot;:&quot;Country&quot;},{&quot;label&quot;:&quot;Capital&quot;},{&quot;label&quot;:&quot;Population&quot;}]]" label-sort-ascending="Sort ascending" label-sort-default="Sort default" label-sort-descending="Sort descending" rows="[{&quot;data&quot;:[{&quot;label&quot;:&quot;Italy&quot;,&quot;data-ecl-table-header&quot;:&quot;country&quot;},{&quot;label&quot;:&quot;Rome&quot;,&quot;data-ecl-table-header&quot;:&quot;capital&quot;},{&quot;label&quot;:&quot;59M&quot;,&quot;data-ecl-table-header&quot;:&quot;population&quot;}]},{&quot;data&quot;:[{&quot;label&quot;:&quot;France&quot;,&quot;data-ecl-table-header&quot;:&quot;country&quot;},{&quot;label&quot;:&quot;Paris&quot;,&quot;data-ecl-table-header&quot;:&quot;capital&quot;},{&quot;label&quot;:&quot;67M&quot;,&quot;data-ecl-table-header&quot;:&quot;population&quot;}]},{&quot;data&quot;:[{&quot;label&quot;:&quot;Germany&quot;,&quot;data-ecl-table-header&quot;:&quot;country&quot;},{&quot;label&quot;:&quot;Berlin&quot;,&quot;data-ecl-table-header&quot;:&quot;capital&quot;},{&quot;label&quot;:&quot;83M&quot;,&quot;data-ecl-table-header&quot;:&quot;population&quot;}]}]" sortable="">
   <div class="ecl-table-responsive">
-    <table class="ecl-color-mode--purple ecl-table" data-ecl-auto-initialized="true" data-ecl-table data-ecl-table-sort-label-asc="Sort ascending" data-ecl-table-sort-label-default="Sort default" data-ecl-table-sort-label-desc="Sort descending" id="table-id">
+    <table class="ecl-color-mode--purple ecl-table" data-ecl-auto-initialized="true" data-ecl-table data-ecl-table-sort data-ecl-table-sort-label-asc="Sort ascending" data-ecl-table-sort-label-default="Sort default" data-ecl-table-sort-label-desc="Sort descending" id="table-id">
       <caption class="ecl-table__caption">
         Sortable table example
       </caption>
       <thead class="ecl-table__head">
         <tr class="ecl-table__row">
-          <th aria-sort="none" class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-1" scope="col">
-            Country
-            <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
-              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
-              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
-            </button>
+          <th aria-sort="none" class="ecl-table__header ecl-table__header--sortable" data-ecl-table-sort-toggle id="table-id-header-1" scope="col">
+            <span class="ecl-table__header-inner">
+              <span class="ecl-table__header-label">
+                Country
+                <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
+                  <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
+                  <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
+                </button>
+              </span>
+            </span>
           </th>
-          <th aria-sort="none" class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-2" scope="col">
-            Capital
-            <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
-              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
-              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
-            </button>
+          <th aria-sort="none" class="ecl-table__header ecl-table__header--sortable" data-ecl-table-sort-toggle id="table-id-header-2" scope="col">
+            <span class="ecl-table__header-inner">
+              <span class="ecl-table__header-label">
+                Capital
+                <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
+                  <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
+                  <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
+                </button>
+              </span>
+            </span>
           </th>
-          <th aria-sort="none" class="ecl-table__header" data-ecl-table-sort-toggle id="table-id-header-3" scope="col">
-            Population
-            <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
-              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
-              <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
-            </button>
+          <th aria-sort="none" class="ecl-table__header ecl-table__header--sortable" data-ecl-table-sort-toggle id="table-id-header-3" scope="col">
+            <span class="ecl-table__header-inner">
+              <span class="ecl-table__header-label">
+                Population
+                <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
+                  <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
+                  <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
+                </button>
+              </span>
+            </span>
           </th>
         </tr>
       </thead>

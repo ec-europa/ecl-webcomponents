@@ -21,6 +21,13 @@
 | `zoom`          | `zoom`           |             | `boolean` | `false`     |
 
 
+## Slots
+
+| Slot | Description      |
+| ---- | ---------------- |
+|      | The default slot |
+
+
 ## Dependencies
 
 ### Used by
@@ -37,6 +44,7 @@
  - [ecl-mega-menu-featured-list-item](../ecl-mega-menu)
  - [ecl-navigation-list-item](../ecl-navigation-list)
  - [ecl-page-header](../ecl-page-header)
+ - [ecl-quiz-card](../ecl-quiz)
  - [ecl-site-header](../ecl-site-header)
  - [ecl-splash-page](../ecl-splash-page)
  - [ecl-spotlight](../ecl-spotlight)
@@ -58,6 +66,7 @@ graph TD;
   ecl-mega-menu-featured-list-item --> ecl-picture
   ecl-navigation-list-item --> ecl-picture
   ecl-page-header --> ecl-picture
+  ecl-quiz-card --> ecl-picture
   ecl-site-header --> ecl-picture
   ecl-splash-page --> ecl-picture
   ecl-spotlight --> ecl-picture

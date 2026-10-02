@@ -2,6 +2,7 @@ import { newSpecPage } from '@stencil/core/testing';
 import { EclCarousel } from '../ecl-carousel';
 import { EclBanner } from '../../ecl-banner/ecl-banner';
 import { EclIcon } from '../../ecl-icon/ecl-icon';
+import { EclSliderPager } from '../../ecl-slider/ecl-slider-pager';
 
 describe('ecl-carousel', () => {
   beforeEach(() => {
@@ -10,14 +11,12 @@ describe('ecl-carousel', () => {
 
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclCarousel, EclBanner, EclIcon],
+      components: [EclCarousel, EclBanner, EclIcon, EclSliderPager],
       html: `<ecl-carousel
-              carousel-id="ecl-carousel-demo"
-              slides-number="3"
+              color-mode="orange"
             >
               <ecl-carousel-item
                 banner-variant="text-box"
-                theme="ec"
                 cta-link="/example.html"
                 cta-label="Subscribe"
                 centered=false
@@ -29,7 +28,6 @@ describe('ecl-carousel', () => {
               </ecl-carousel-item>
               <ecl-carousel-item
                 banner-variant="text-highlight"
-                theme="ec"
                 size="l"
                 cta-link="/example.html"
                 cta-label="Subscribe"
@@ -41,7 +39,6 @@ describe('ecl-carousel', () => {
               </ecl-carousel-item>
               <ecl-carousel-item
                 banner-variant="image-overlay"
-                theme="ec"
                 size="l"
                 cta-link="/example.html"
                 cta-label="Subscribe"

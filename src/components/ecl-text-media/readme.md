@@ -32,6 +32,13 @@
 | `videoTitle`     | `video-title`     |             | `string`  | `undefined`                                                                                |
 
 
+## Slots
+
+| Slot | Description      |
+| ---- | ---------------- |
+|      | The default slot |
+
+
 ## Dependencies
 
 ### Depends on

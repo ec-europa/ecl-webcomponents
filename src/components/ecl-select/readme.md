@@ -42,6 +42,13 @@
 | `inputFocus`  |             | `CustomEvent<FocusEvent>` |
 
 
+## Slots
+
+| Slot | Description      |
+| ---- | ---------------- |
+|      | The default slot |
+
+
 ## Dependencies
 
 ### Depends on

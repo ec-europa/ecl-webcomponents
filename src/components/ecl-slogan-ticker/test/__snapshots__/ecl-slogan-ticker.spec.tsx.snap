@@ -24,9 +24,11 @@ exports[`ecl-slogan-ticker renders 1`] = `
     </div>
     <div class="ecl-slogan-ticker__controls">
       <ecl-button data-ecl-slogan-ticker-play hide-label="" style-class="ecl-slogan-ticker__play ecl-slogan-ticker__button sc-ecl-slogan-ticker-ec" type="button" variant="tertiary">
+        Continue scrolling
         <ecl-icon family="phosphor" icon="play-filled" size="l" slot="icon-after"></ecl-icon>
       </ecl-button>
       <ecl-button data-ecl-slogan-ticker-pause hide-label="" style-class="ecl-slogan-ticker__pause ecl-slogan-ticker__button sc-ecl-slogan-ticker-ec" type="button" variant="tertiary">
+        Pause scrolling
         <ecl-icon family="phosphor" icon="pause-filled" size="l" slot="icon-after"></ecl-icon>
       </ecl-button>
     </div>

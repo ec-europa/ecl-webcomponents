@@ -18,6 +18,14 @@
 | `variant`    | `variant`     |             | `string`  | `undefined` |
 
 
+## Slots
+
+| Slot        | Description      |
+| ----------- | ---------------- |
+|             | The default slot |
+| `"sources"` |                  |
+
+
 ## Dependencies
 
 ### Depends on

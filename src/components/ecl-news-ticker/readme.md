@@ -7,15 +7,22 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type     | Default     |
-| ------------ | ------------- | ----------- | -------- | ----------- |
-| `altAttr`    | `alt-attr`    |             | `string` | `undefined` |
-| `icon`       | `icon`        |             | `string` | `undefined` |
-| `image`      | `image`       |             | `string` | `undefined` |
-| `path`       | `path`        |             | `string` | `undefined` |
-| `styleClass` | `style-class` |             | `string` | `undefined` |
-| `theme`      | `theme`       |             | `string` | `undefined` |
-| `titleAttr`  | `title-attr`  |             | `string` | `undefined` |
+| Property     | Attribute     | Description | Type     | Default       |
+| ------------ | ------------- | ----------- | -------- | ------------- |
+| `altAttr`    | `alt-attr`    |             | `string` | `undefined`   |
+| `icon`       | `icon`        |             | `string` | `'newspaper'` |
+| `image`      | `image`       |             | `string` | `undefined`   |
+| `path`       | `path`        |             | `string` | `undefined`   |
+| `styleClass` | `style-class` |             | `string` | `undefined`   |
+| `theme`      | `theme`       |             | `string` | `undefined`   |
+| `titleAttr`  | `title-attr`  |             | `string` | `undefined`   |
+
+
+## Slots
+
+| Slot | Description      |
+| ---- | ---------------- |
+|      | The default slot |
 
 
 ## Dependencies

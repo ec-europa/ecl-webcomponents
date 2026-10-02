@@ -27,6 +27,13 @@
 | `weight`              | `weight`                |             | `"black" \| "bold" \| "extra-bold" \| "extra-light" \| "light" \| "medium" \| "regular" \| "semi-bold" \| "thin"`     | `undefined` |
 
 
+## Slots
+
+| Slot | Description      |
+| ---- | ---------------- |
+|      | The default slot |
+
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*

@@ -11,17 +11,29 @@
 | ----------------- | ------------------- | ----------- | --------- | ----------- |
 | `ariaLabel`       | `aria-label`        |             | `string`  | `undefined` |
 | `elId`            | `el-id`             |             | `string`  | `undefined` |
-| `icon`            | `icon`              |             | `string`  | `undefined` |
 | `imageAlt`        | `image-alt`         |             | `string`  | `undefined` |
+| `itemTitle`       | `item-title`        |             | `string`  | `undefined` |
 | `mediaHref`       | `media-href`        |             | `string`  | `undefined` |
 | `mediaIframeHref` | `media-iframe-href` |             | `string`  | `undefined` |
 | `mediaSharePath`  | `media-share-path`  |             | `string`  | `undefined` |
 | `meta`            | `meta`              |             | `string`  | `undefined` |
+| `publicationDate` | `publication-date`  |             | `string`  | `undefined` |
 | `styleClass`      | `style-class`       |             | `string`  | `''`        |
 | `theme`           | `theme`             |             | `string`  | `undefined` |
 | `thumbZoom`       | `thumb-zoom`        |             | `boolean` | `false`     |
 | `thumbnail`       | `thumbnail`         |             | `string`  | `undefined` |
 | `type`            | `type`              |             | `string`  | `'image'`   |
+| `videoLength`     | `video-length`      |             | `string`  | `undefined` |
+
+
+## Slots
+
+| Slot                  | Description      |
+| --------------------- | ---------------- |
+|                       | The default slot |
+| `"sources"`           |                  |
+| `"thumbnail-sources"` |                  |
+| `"video"`             |                  |
 
 
 ## Dependencies

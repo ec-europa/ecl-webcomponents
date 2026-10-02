@@ -169,7 +169,6 @@ export class EclGallery {
             data-ecl-gallery-overlay-header
           >
             <ecl-button
-              theme={this.theme}
               style-class={`ecl-gallery__close-button sc-ecl-gallery-${this.theme}`}
               variant="tertiary"
               buttonStyle="inverted"
@@ -205,7 +204,6 @@ export class EclGallery {
                   </div>
                   <div class="ecl-gallery__controls">
                     <ecl-button
-                      theme={this.theme}
                       style-class={`ecl-gallery__slider-previous sc-ecl-gallery-${this.theme}`}
                       data-ecl-gallery-overlay-previous
                       variant="tertiary"
@@ -223,7 +221,6 @@ export class EclGallery {
                     </ecl-button>
                   </div>
                   <ecl-button
-                    theme={this.theme}
                     style-class={`ecl-gallery__slider-next sc-ecl-gallery-${this.theme}`}
                     data-ecl-gallery-overlay-next
                     variant="tertiary"
@@ -242,7 +239,6 @@ export class EclGallery {
                 </div>       
                 <div class="ecl-gallery__detail-actions">
                   <ecl-link
-                    theme={this.theme}
                     style-class={`ecl-gallery__download sc-ecl-link-${this.theme} sc-ecl-gallery-${this.theme}`}
                     data-ecl-gallery-overlay-download
                     variant="standalone"
@@ -259,7 +255,7 @@ export class EclGallery {
                   </ecl-link>
                 { this.shareLabel ? 
                   <ecl-link
-                    theme={this.theme}
+
                     style-class={`ecl-gallery__share sc-ecl-gallery-${this.theme}`}
                     data-ecl-gallery-overlay-share
                     variant="standalone"

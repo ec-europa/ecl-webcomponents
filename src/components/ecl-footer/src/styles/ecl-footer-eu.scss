@@ -51,3 +51,7 @@
     padding-inline-end: 0;
   }
 }
+
+.ecl-site-footer__section:not(.ecl-site-footer__section--feedback) .ecl-site-footer__action-button {
+  margin-block-start: var(--s-l);
+}

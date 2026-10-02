@@ -211,7 +211,7 @@ const rowsMultiple = [
 
 
 export default {
-  title: 'Components/Table',
+  title: 'Components/table',
   parameters: {
     layout: 'fullscreen',
   },
@@ -243,6 +243,18 @@ const SortableTemplate = (args) => `
   ></ecl-table>`;
 
 export const Sortable = SortableTemplate.bind({});
+
+const FilterableTemplate = (args) => `
+  <ecl-table
+    caption="Filterable table example"
+    filter-label="Filterable label"
+    filter
+    color-mode="${args.color_mode}"
+    headers='${JSON.stringify(headers)}'
+    rows='${JSON.stringify(rows)}'
+  ></ecl-table>`;
+
+export const Filterable = FilterableTemplate.bind({});
 
 const MultipleTemplate = (args) => `
   <ecl-table

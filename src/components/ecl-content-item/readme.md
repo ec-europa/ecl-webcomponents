@@ -18,6 +18,14 @@
 | `theme`         | `theme`          |             | `string`  | `undefined` |
 
 
+## Slots
+
+| Slot              | Description |
+| ----------------- | ----------- |
+| `"content-block"` |             |
+| `"sidebar"`       |             |
+
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*

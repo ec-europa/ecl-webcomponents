@@ -16,6 +16,14 @@
 | `theme`      | `theme`       |             | `string`  | `undefined` |
 
 
+## Slots
+
+| Slot        | Description      |
+| ----------- | ---------------- |
+|             | The default slot |
+| `"sources"` |                  |
+
+
 ## Dependencies
 
 ### Depends on

@@ -1,4 +1,4 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, Host } from '@stencil/core';
 
 @Component({
   tag: 'ecl-carousel-item',
@@ -10,6 +10,7 @@ export class EclCarouselItem {
   @Prop() credit: string;
   @Prop() image: string = '';
   @Prop({ mutable: true }) theme: string;
+  @Prop() srSlideRole: string = 'slide';
   @Prop() ctaLink: string;
   @Prop() ctaLabel: string;
   @Prop() size: string = 'm';
@@ -18,7 +19,8 @@ export class EclCarouselItem {
 
   getClass(): string {
     return [
-      `ecl-carousel__item`,
+      `ecl-carousel__slide`,
+      `sc-ecl-carousel-${this.theme}`,
       this.styleClass
     ].join(' ');
   }
@@ -29,12 +31,14 @@ export class EclCarouselItem {
 
   render() {
     return (
-      <div
-        class="ecl-carousel__slide"
-        role="group"
+      <Host
+        class={this.getClass()}
+        role="tabpanel"
         aria-label={this.ariaLabel}
+        aria-roledescription={this.srSlideRole}
       >
         <ecl-banner
+          style-class={`sc-ecl-carousel-${this.theme}`}
           banner-title={this.bannerTitle}
           image={this.image}
           theme={this.theme}
@@ -45,7 +49,7 @@ export class EclCarouselItem {
         >
           <slot></slot>
         </ecl-banner>
-      </div>
+      </Host>
     );
   }
 }

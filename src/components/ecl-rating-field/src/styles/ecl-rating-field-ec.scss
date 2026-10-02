@@ -8,15 +8,7 @@
   $rating-field: var.$rating-field
 );
 
-.ecl-rating-field__icon-filled[class*='wt-icon-'] {
-  display: none;
-}
-
-.ecl-rating-field__label .ecl-rating-field__icon-filled {
-  display: none;
-}
-
-.ecl-rating-field__label.is-filled {
+ecl-rating-star:has(~ ecl-rating-star input:checked) label {
   .ecl-rating-field__icon-filled {
     display: inline-block;
   }

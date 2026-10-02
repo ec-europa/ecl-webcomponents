@@ -14,6 +14,13 @@
 | `variant`    | `variant`     |             | `string` | `'low'`     |
 
 
+## Slots
+
+| Slot | Description      |
+| ---- | ---------------- |
+|      | The default slot |
+
+
 ## Dependencies
 
 ### Used by

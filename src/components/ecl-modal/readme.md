@@ -24,6 +24,16 @@
 | `withHeader`    | `with-header`     |             | `boolean` | `false`     |
 
 
+## Slots
+
+| Slot           | Description |
+| -------------- | ----------- |
+| `"body"`       |             |
+| `"body-fixed"` |             |
+| `"footer"`     |             |
+| `"header"`     |             |
+
+
 ## Dependencies
 
 ### Depends on

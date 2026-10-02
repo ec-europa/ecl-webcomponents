@@ -160,16 +160,15 @@ export const EclCarousel: StencilVueComponent<JSX.EclCarousel> = /*@__PURE__*/ d
   'styleClass',
   'theme',
   'noScript',
-  'carouselId',
   'colorMode',
-  'slidesNumber',
   'fullWidth',
+  'srDescription',
   'counterLabel',
-  'srNavigation',
   'srPrevious',
   'srNext',
   'srPause',
-  'srPlay'
+  'srPlay',
+  'srRole'
 ]);
 
 
@@ -179,6 +178,7 @@ export const EclCarouselItem: StencilVueComponent<JSX.EclCarouselItem> = /*@__PU
   'credit',
   'image',
   'theme',
+  'srSlideRole',
   'ctaLink',
   'ctaLabel',
   'size',
@@ -202,7 +202,7 @@ export const EclCategoryFilterItem: StencilVueComponent<JSX.EclCategoryFilterIte
   'path',
   'level',
   'subItems',
-  'expanded',
+  'current',
   'lastClicked'
 ]);
 
@@ -550,9 +550,11 @@ export const EclGalleryItem: StencilVueComponent<JSX.EclGalleryItem> = /*@__PURE
   'mediaIframeHref',
   'mediaSharePath',
   'ariaLabel',
+  'publicationDate',
+  'videoLength',
+  'itemTitle',
   'meta',
   'type',
-  'icon',
   'elId'
 ]);
 
@@ -802,6 +804,7 @@ export const EclMegaMenuItem: StencilVueComponent<JSX.EclMegaMenuItem> = /*@__PU
   'seeAll',
   'hasInfo',
   'hasFeatured',
+  'isCurrent',
   'featuredTitle',
   'hasChildren',
   'seeAllLabel',
@@ -821,6 +824,7 @@ export const EclMegaMenuSubitem: StencilVueComponent<JSX.EclMegaMenuSubitem> = /
   'seeAll',
   'hasFeatured',
   'featuredTitle',
+  'isCurrent',
   'hasChildren',
   'seeAllLabel',
   'ariaLabel'
@@ -1021,6 +1025,7 @@ export const EclPopover: StencilVueComponent<JSX.EclPopover> = /*@__PURE__*/ def
 export const EclQuiz: StencilVueComponent<JSX.EclQuiz> = /*@__PURE__*/ defineContainer<JSX.EclQuiz>('ecl-quiz', undefined, [
   'theme',
   'styleClass',
+  'colorMode',
   'noScript',
   'itemId',
   'quizTitle',
@@ -1037,13 +1042,13 @@ export const EclQuiz: StencilVueComponent<JSX.EclQuiz> = /*@__PURE__*/ defineCon
 export const EclQuizCard: StencilVueComponent<JSX.EclQuizCard> = /*@__PURE__*/ defineContainer<JSX.EclQuizCard>('ecl-quiz-card', undefined, [
   'theme',
   'styleClass',
-  'category',
-  'successCategory',
-  'errorCategory',
   'flipText',
   'backText',
   'question',
   'quizName',
+  'image',
+  'imageAlt',
+  'imageDisplay',
   'mainIcon',
   'answer',
   'answerTitle',
@@ -1070,9 +1075,9 @@ export const EclRange: StencilVueComponent<JSX.EclRange> = /*@__PURE__*/ defineC
   'helperId',
   'helperText',
   'placeholder',
+  'name',
   'width',
   'label',
-  'name',
   'defaultValue',
   'max',
   'min',
@@ -1209,6 +1214,34 @@ export const EclSiteHeader: StencilVueComponent<JSX.EclSiteHeader> = /*@__PURE__
   'bannerTop',
   'bannerTopLink',
   'siteNameMobileOnly'
+]);
+
+
+export const EclSliderPager: StencilVueComponent<JSX.EclSliderPager> = /*@__PURE__*/ defineContainer<JSX.EclSliderPager>('ecl-slider-pager', undefined, [
+  'theme',
+  'styleClass',
+  'srPrev',
+  'srNext',
+  'srPlay',
+  'srPause',
+  'dots',
+  'playPause',
+  'playIcon',
+  'pauseIcon',
+  'size',
+  'playExtraClasses',
+  'playExtraAttributes',
+  'pauseExtraClasses',
+  'pauseExtraAttributes',
+  'dotExtraClasses',
+  'dotsExtraClasses',
+  'prevExtraClasses',
+  'prevExtraAttributes',
+  'nextExtraClasses',
+  'nextExtraAttributes',
+  'templateDataAttribute',
+  'hideLabel',
+  'noScript'
 ]);
 
 
@@ -1361,6 +1394,8 @@ export const EclTable: StencilVueComponent<JSX.EclTable> = /*@__PURE__*/ defineC
   'rows',
   'styleClass',
   'caption',
+  'filter',
+  'filterLabel',
   'simple',
   'zebra',
   'sortable',

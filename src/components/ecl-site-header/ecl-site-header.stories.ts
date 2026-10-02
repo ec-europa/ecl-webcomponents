@@ -716,6 +716,7 @@ const megaMenu = (args) => `
       has-children
       has-info
       has-featured
+      is-current
       info-title="About key priorities"
       featured-title="Featured items"
       aria-label="Pages in this section"
@@ -810,18 +811,15 @@ const megaMenu = (args) => `
 
 const Template = (args) => 
   `<ecl-site-header
-    login-block
     language-block
     search-text="search"
     search-placeholder="Placeholder text"
     language="EN"
     lang-code="en"
     search-form-id="ecl-site-header-search-form"
-    login-text="Log in"
     eu-label="Official EU languages:"
     non-eu-label="Other languages:"
     language-title="Choose your language"
-    login-link="/example.html"
     language-id="language-switcher"
     site-name="${args.siteName}"
     logo-alt="European Commission"
@@ -882,7 +880,7 @@ const TemplateHarmonised = (args) =>
   >
     ${languageItems()}
     ${args.menu === 'menu' ? menu(args) : megaMenu(args)}
-    <span slot="ecl-site-header-login-description">'Logged in as "last name" "first name"'</span>
+    ${args.logged ? `<span slot="ecl-site-header-login-description">'Logged in as "last name" "first name"'</span>` : '' }
   </ecl-site-header>`;
 
 export const SiteHeader = Template.bind({});

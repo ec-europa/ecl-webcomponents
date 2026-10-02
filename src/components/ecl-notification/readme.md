@@ -18,6 +18,14 @@
 | `withClose`         | `with-close`         |             | `boolean` | `true`      |
 
 
+## Slots
+
+| Slot                  | Description      |
+| --------------------- | ---------------- |
+|                       | The default slot |
+| `"notification-link"` |                  |
+
+
 ## Dependencies
 
 ### Depends on

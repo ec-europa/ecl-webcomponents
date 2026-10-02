@@ -9,7 +9,7 @@
 
 | Property      | Attribute     | Description | Type          | Default     |
 | ------------- | ------------- | ----------- | ------------- | ----------- |
-| `expanded`    | `expanded`    |             | `boolean`     | `false`     |
+| `current`     | `current`     |             | `boolean`     | `false`     |
 | `label`       | `label`       |             | `string`      | `undefined` |
 | `lastClicked` | --            |             | `HTMLElement` | `undefined` |
 | `level`       | `level`       |             | `number`      | `undefined` |
@@ -17,6 +17,13 @@
 | `styleClass`  | `style-class` |             | `string`      | `''`        |
 | `subItems`    | `sub-items`   |             | `boolean`     | `false`     |
 | `theme`       | `theme`       |             | `string`      | `undefined` |
+
+
+## Slots
+
+| Slot | Description      |
+| ---- | ---------------- |
+|      | The default slot |
 
 
 ## Dependencies

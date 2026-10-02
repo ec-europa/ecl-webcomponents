@@ -10,12 +10,13 @@ export class EclMegaMenuItem {
   @Prop() label!: string;
   @Prop() path?: string;
   @Prop() featuredImage: string;
-  @Prop() oneLevelOnly = false;
-  @Prop() isPromotional = false;
-  @Prop() external = false;
-  @Prop() seeAll = false;
-  @Prop() hasInfo = false;
-  @Prop() hasFeatured = false;
+  @Prop() oneLevelOnly: boolean = false;
+  @Prop() isPromotional: boolean = false;
+  @Prop() external: boolean = false;
+  @Prop() seeAll: boolean = false;
+  @Prop() hasInfo: boolean = false;
+  @Prop() hasFeatured: boolean = false;
+  @Prop() isCurrent: boolean = false;
   @Prop() featuredTitle: string;
   @Prop() hasChildren: boolean = false;
   @Prop() seeAllLabel?: string;
@@ -48,6 +49,10 @@ export class EclMegaMenuItem {
 
     if (this.oneLevelOnly) {
       styleClasses.push('ecl-mega-menu__item--one-level-only');
+    }
+
+    if (this.isCurrent) {
+      styleClasses.push('ecl-mega-menu__item--current-page');
     }
 
     return styleClasses.join(' ');
@@ -94,6 +99,7 @@ export class EclMegaMenuItem {
           data-ecl-mega-menu-link
           path={this.path}
           style-class={`ecl-mega-menu__link sc-ecl-mega-menu-${this.theme}`}
+          {...(this.isCurrent ? { 'aria-current': 'page' } : '')}
         >
           {this.label}
         </ecl-link> 

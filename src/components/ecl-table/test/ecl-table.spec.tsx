@@ -252,6 +252,26 @@ describe('ecl-table', () => {
     expect(page.root).toMatchSnapshot();
   });
 
+  it('filterable renders correctly', async () => {
+    const page = await newSpecPage({
+      components: [EclTable],
+      html: `<ecl-table
+        el-id="table-id-filterbale"
+        caption="Filterable table example"
+        label-sort-ascending="Sort ascending"
+        label-sort-descending="Sort descending"
+        label-sort-default="Sort default"
+        filter
+        filter-label="Filterable label"
+        color-mode="orange"
+        headers='${JSON.stringify(headers)}'
+        rows='${JSON.stringify(rows)}'
+      ></ecl-table>`,
+    });
+
+    expect(page.root).toMatchSnapshot();
+  });
+
   it('multiple renders correctly', async () => {
     const page = await newSpecPage({
       components: [EclTable],

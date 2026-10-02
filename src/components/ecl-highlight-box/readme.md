@@ -21,6 +21,13 @@
 | `titleIcon`      | `title-icon`      |             | `string`  | `''`                                                                 |
 
 
+## Slots
+
+| Slot | Description      |
+| ---- | ---------------- |
+|      | The default slot |
+
+
 ## Dependencies
 
 ### Depends on

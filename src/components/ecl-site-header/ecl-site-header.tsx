@@ -132,7 +132,7 @@ export class EclSiteHeader {
                 </ecl-link>
                 <div class="ecl-site-header__action">
                   <div class="ecl-site-header__login-container">
-                  { this.loginBlock &&
+                  { (this.loginBlock && this.loginLink) ?
                     <a
                       class={`ecl-button ecl-button--tertiary ecl-button--neutral ecl-site-header__login-toggle sc-ecl-site-header-${this.theme}`}
                       data-ecl-login-toggle
@@ -149,6 +149,14 @@ export class EclSiteHeader {
                       </ecl-icon>
                       {this.logged ? this.loggedInText : this.loginText }
                     </a>
+                    : this.loginBlock &&
+                    <ecl-button
+                      type="button"
+                      variant="tertiary"
+                      button-style="neutral"
+                    >
+                      {this.logged ? this.loggedInText : this.loginText }
+                    </ecl-button>
                   }
                   { (this.loginBlock && this.logged) &&
                     <div
@@ -159,23 +167,33 @@ export class EclSiteHeader {
                         <slot name="ecl-site-header-login-description"></slot>
                       </p>
                       <hr class="ecl-site-header__login-separator" />
+                    { this.logoutLink ?
                       <ecl-link
                         variant="standalone"
                         path={this.logoutLink}
                       >
                         {this.logoutText}
                       </ecl-link> 
+                      :  
+                      <ecl-button
+                        type="button"
+                        variant="tertiary"
+                        button-style="neutral"
+                      >
+                        {this.logoutText}
+                      </ecl-button>
+                    } 
                     </div>
                   }
                   </div>
                 { this.languageBlock ?
                   <div class="ecl-site-header__language">
-                    <a
+                    <button
                       class="ecl-button ecl-button--tertiary ecl-button--neutral ecl-site-header__language-selector"
                       data-ecl-language-selector
                       aria-label={this.languageAriaLabel}
                       aria-controls={this.languageId}
-                      role="button"
+                      type="button"
                     >
                       <span class="ecl-site-header__language-icon">
                         <ecl-icon
@@ -185,7 +203,7 @@ export class EclSiteHeader {
                         ></ecl-icon>
                         {this.language}
                       </span>
-                    </a>
+                    </button>
                     <div
                       class="ecl-site-header__language-container"
                       id={this.languageId}
@@ -257,29 +275,42 @@ export class EclSiteHeader {
                     class="ecl-site-header__search-container"
                     role="search"
                   >
-                    <a
-                      class="ecl-button ecl-button--tertiary ecl-button--neutral ecl-site-header__search-toggle"
+                    <ecl-button
+                      style-class={`ecl-site-header__search-toggle sc-ecl-site-header-${this.theme}`}
+                      type="button"
+                      variant="tertiary"
+                      button-style="neutral"
+                      hide-label
                       data-ecl-search-toggle
                       aria-controls="search-form-id"
                       aria-expanded="false"
+                      aria-haspopup="dialog"
+                      
                     >
                       <ecl-icon
                         icon="search"
-                        style-class={`ecl-icon ecl-icon--s ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
-                        size="m"
+                        style-class={`ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
+                        size="s"
+                        slot="icon-after"
                       >
                        </ecl-icon>
                       {this.searchText}
-                    </a>
-                    <ecl-search-form
-                      style-class={`ecl-site-header__search sc-ecl-site-header-${this.theme}`}
-                      theme={this.theme}
-                      input-id={this.searchFormId}
-                      placeholder={this.searchPlaceholder}
-                      button-label={this.searchText}
-                      button-aria-label={this.searchText}
-                      button-class={`ecl-button--neutral sc-ecl-site-header-${this.theme}`}
-                    ></ecl-search-form>
+                    </ecl-button>
+                    <div
+                      class="ecl-site-header__search-dialog"
+                      role="dialog"
+                      aria-modal="true"
+                      id="ecl-site-header-search-form-dialog"
+                    >
+                      <ecl-search-form
+                        style-class={`ecl-site-header__search sc-ecl-site-header-${this.theme}`}
+                        input-id={this.searchFormId}
+                        placeholder={this.searchPlaceholder}
+                        button-label={this.searchText}
+                        button-aria-label={this.searchText}
+                        button-class={`ecl-button--neutral sc-ecl-site-header-${this.theme}`}
+                      ></ecl-search-form>
+                    </div>
                   </div> : <slot name="search"></slot>
                 }
                 </div>

@@ -7,6 +7,10 @@
   $theme: theme.$theme,
   $typography: var.$typography
 );
+@use '@ecl/text-input/text-input' with (
+  $theme: theme.$theme,
+  $text-input: var.$text-input
+);
 @use '@ecl/button/button' with (
   $theme: theme.$theme,
   $button: var.$button

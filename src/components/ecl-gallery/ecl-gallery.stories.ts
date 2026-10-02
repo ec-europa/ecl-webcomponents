@@ -106,6 +106,7 @@ const Template = (args) =>
     media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
     image-alt="Image 1"
+    item-title="EU in brief"
     thumb-zoom="${args.thumbZoom}"
     thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"
   >    
@@ -113,6 +114,9 @@ const Template = (args) =>
   </ecl-gallery-item>
   <ecl-gallery-item
     type="video"
+    publication-date="20 Feb 2020"
+    video-length="1:01"
+    item-title="New digital strategy"
     thumb-zoom="${args.thumbZoom}"
     meta="Copyright, Author, Licence for embedded media"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-external-video.jpg"
@@ -126,6 +130,7 @@ const Template = (args) =>
     meta="Copyright, Author, Licence for image 2"
     thumb-zoom="${args.thumbZoom}"
     media-share-path="${randomizedLink('/example.html')}"
+    item-title="Agriculture, business, culture, health, and other topics"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
     thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image.jpg"
     image-alt="Image 2"
@@ -134,6 +139,7 @@ const Template = (args) =>
   </ecl-gallery-item>
   <ecl-gallery-item
     meta="Copyright, Author, Licence for image 3"
+    item-title="In the EU"
     thumb-zoom="${args.thumbZoom}"
     media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg"
@@ -145,6 +151,7 @@ const Template = (args) =>
   <ecl-gallery-item
     meta="Copyright, Author, Licence for image 4"
     thumb-zoom="${args.thumbZoom}"
+    item-title="Taxes and business"
     media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image4.jpg"
     image-alt="Image 3"
@@ -155,9 +162,12 @@ const Template = (args) =>
   <ecl-gallery-item
     media-share-path="${randomizedLink('/example.html')}"
     thumb-zoom="${args.thumbZoom}"
+    item-title="Time lapse of the Arc de Triomphe in Paris from afar. Title very long, taking several lines with ellipsis."
     meta="Copyright, Author, Licence for video"
     type="html-video"
     thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg"
+    publication-date="03 Aug 2019"
+    video-length="4:25"
   >
     EU law
     <video
@@ -191,6 +201,7 @@ const Template = (args) =>
     meta="Copyright, Author, Licence for image 6"
     thumb-zoom="${args.thumbZoom}"
     media-share-path="${randomizedLink('/example.html')}"
+    item-title="Lorem ipsum"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image6.jpg"
     image-alt="Image 6"
     thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image11.jpg"
@@ -200,6 +211,7 @@ const Template = (args) =>
   <ecl-gallery-item
     meta="Copyright, Author, Licence for image 7"
     media-share-path="${randomizedLink('/example.html')}"
+    item-title="Teaching material"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image7.jpg"
     image-alt="Image 7"
     thumbnail="https://inno-ecl.s3.amazonaws.com/media/examples/example-image2.jpg"
@@ -209,6 +221,7 @@ const Template = (args) =>
   <ecl-gallery-item
     meta="Copyright, Author, Licence for image 8"
     thumb-zoom="${args.thumbZoom}"
+    item-title="About the EU"
     media-share-path="${randomizedLink('/example.html')}"
     media-iframe-href="https://audiovisual.ec.europa.eu/embed/index.html?ref=I-223223&lg=EN"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image8.jpg"
@@ -220,6 +233,7 @@ const Template = (args) =>
   <ecl-gallery-item
     meta="Copyright, Author, Licence for image 9"
     thumb-zoom="${args.thumbZoom}"
+    item-title="EU by topic"
     media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image9.jpg"
     image-alt="Image 9"
@@ -230,6 +244,7 @@ const Template = (args) =>
   <ecl-gallery-item
     meta="Copyright, Author, Licence for image 10"
     thumb-zoom="${args.thumbZoom}"
+    item-title="12"
     media-share-path="${randomizedLink('/example.html')}"
     media-href="https://inno-ecl.s3.amazonaws.com/media/examples/example-image10.jpg"
     image-alt="Image 10"
