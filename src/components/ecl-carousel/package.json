@@ -2,7 +2,7 @@
   "name": "@ecl/web-components-carousel",
   "author": "European Commission",
   "license": "EUPL-1.2",
-  "version": "0.30.0",
+  "version": "0.31.0",
   "description": "ECL Carousel",
   "main": "ecl-carousel.tsx",
   "private": true,
@@ -13,17 +13,17 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "@ecl/web-components-button": "0.30.0",
-    "@ecl/web-components-icon": "0.30.0",
-    "@ecl/web-components-slider": "0.30.0"
+    "@ecl/web-components-button": "0.31.0",
+    "@ecl/web-components-icon": "0.31.0",
+    "@ecl/web-components-slider": "0.31.0"
   },
   "devDependencies": {
     "@ecl/banner": "5.3.1",
     "@ecl/builder": "5.3.1",
     "@ecl/carousel": "5.3.1",
     "@ecl/grid": "5.3.1",
-    "@ecl/theme-ec": "5.3.1",
     "@ecl/mixins-color": "5.3.1",
+    "@ecl/theme-ec": "5.3.1",
     "@ecl/theme-eu": "5.3.1",
     "cross-env": "10.1.0",
     "embla-carousel": "9.0.0-rc03",
