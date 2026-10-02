@@ -1,8 +1,11 @@
+import { randomizedLink } from "../../utils/randomizedLink"; 
+
 const getArgs = () => ({
   hasAnchor: true,
   header: 'In focus',
   image: 'https://inno-ecl.s3.amazonaws.com/media/examples/example-image3.jpg',
   fullWidth: false,
+  path: randomizedLink('/example.html'),
   fontSize: 'm',
   title: 'Proin molestie sapien ut blandit',
   credit: '© Copyright or credit',
