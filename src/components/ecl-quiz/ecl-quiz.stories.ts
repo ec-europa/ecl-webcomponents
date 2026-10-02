@@ -63,7 +63,6 @@ const getArgTypes = () => {
       table: {
         type: { summary: 'string' },
         defaultValue: { summary: '' },
-        category: 'First card',
       },
     },
     imageDisplay: {
