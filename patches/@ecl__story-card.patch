@@ -1,0 +1,16 @@
+diff --git a/story-card.js b/story-card.js
+index 50c65dba1975bb72d28c3424193dab7832efc7a2..98595a1f2d598c672d6d33e7352bb03ba7c22e9c 100644
+--- a/story-card.js
++++ b/story-card.js
+@@ -174,6 +174,11 @@ export class StoryCard {
+    * Initialise the component.
+    */
+   init() {
++    if (!ECL) {
++      throw new TypeError('Called init but ECL is not present');
++    }
++    ECL.components = ECL.components || new Map();
++
+     this.viewport = queryOne(this.viewportSelector, this.element);
+     this.container = queryOne(this.containerSelector, this.element);
+     this.slides = queryAll(this.slideSelector, this.element);
