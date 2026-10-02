@@ -20,6 +20,7 @@ export class EclCarouselItem {
   getClass(): string {
     return [
       `ecl-carousel__slide`,
+      `sc-ecl-carousel-${this.theme}`,
       this.styleClass
     ].join(' ');
   }
@@ -37,6 +38,7 @@ export class EclCarouselItem {
         aria-roledescription={this.srSlideRole}
       >
         <ecl-banner
+          style-class={`sc-ecl-carousel-${this.theme}`}
           banner-title={this.bannerTitle}
           image={this.image}
           theme={this.theme}

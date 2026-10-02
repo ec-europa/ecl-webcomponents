@@ -25,3 +25,15 @@
     animation-play-state: paused;
   }
 }
+
+@media (width >= 1140px) {
+  .ecl-carousel {
+    .ecl-carousel__prev {
+      margin-inline-end: var(--s-m);
+    }
+
+    .ecl-carousel__next {
+      margin-inline-start: var(--s-m);
+    }
+  }
+}
