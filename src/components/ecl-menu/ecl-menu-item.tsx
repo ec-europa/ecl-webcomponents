@@ -63,6 +63,7 @@ export class EclMenuItem {
   getLinkClass(): string {
     let linkClasses = [
       'ecl-menu__link',
+      'ecl-link',
       'ecl-link--standalone',
       `sc-ecl-link-${this.theme}`,
       `sc-ecl-menu-${this.theme}`,

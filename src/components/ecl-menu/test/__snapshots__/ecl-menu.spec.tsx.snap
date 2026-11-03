@@ -84,7 +84,7 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item link="/example.html">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Home
               </a>
             </li>
@@ -92,7 +92,7 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item current="" has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li class="ecl-menu__item ecl-menu__item--current sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Item 2 label
               </a>
               <ecl-button aria-haspopup="true" data-ecl-menu-caret>
@@ -150,7 +150,7 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Principles, countries, history
               </a>
               <ecl-button aria-haspopup="true" data-ecl-menu-caret>
@@ -197,7 +197,7 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item link="/example.html">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Institutions, law, budget
               </a>
             </li>
@@ -205,7 +205,7 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Priorities and actions
               </a>
               <ecl-button aria-haspopup="true" data-ecl-menu-caret>
@@ -260,7 +260,7 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Live, work, study
               </a>
               <ecl-button aria-haspopup="true" data-ecl-menu-caret>
@@ -427,7 +427,7 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 News and events
               </a>
               <ecl-button aria-haspopup="true" data-ecl-menu-caret>
@@ -514,7 +514,7 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 European years
               </a>
               <ecl-button aria-haspopup="true" data-ecl-menu-caret>
@@ -553,7 +553,7 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Visit a European Union institution
               </a>
               <ecl-button aria-haspopup="true" data-ecl-menu-caret>
@@ -592,7 +592,7 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Jobs &amp; traineeships in EU institutions
               </a>
               <ecl-button aria-haspopup="true" data-ecl-menu-caret>
