@@ -2095,6 +2095,7 @@ export namespace Components {
           * @default false
          */
         "noScript": boolean;
+        "optionNumberLabel": string;
         /**
           * @default false
          */
@@ -5872,6 +5873,7 @@ declare namespace LocalJSX {
         "onInputBlur"?: (event: EclSelectCustomEvent<FocusEvent>) => void;
         "onInputChange"?: (event: EclSelectCustomEvent<any>) => void;
         "onInputFocus"?: (event: EclSelectCustomEvent<FocusEvent>) => void;
+        "optionNumberLabel"?: string;
         /**
           * @default false
          */
@@ -7684,6 +7686,7 @@ declare namespace LocalJSX {
         "multipleCloseText": string;
         "multipleCounterText": string;
         "multipleSubmit": boolean;
+        "optionNumberLabel": string;
         "inputValue": string;
         "hasChanged": boolean;
     }

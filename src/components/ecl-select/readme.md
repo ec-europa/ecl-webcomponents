@@ -26,6 +26,7 @@
 | `multipleSubmit`              | `multiple-submit`                 |             | `boolean` | `false`     |
 | `name`                        | `name`                            |             | `string`  | `undefined` |
 | `noScript`                    | `no-script`                       |             | `boolean` | `false`     |
+| `optionNumberLabel`           | `option-number-label`             |             | `string`  | `undefined` |
 | `required`                    | `required`                        |             | `boolean` | `false`     |
 | `selectId`                    | `select-id`                       |             | `string`  | `undefined` |
 | `styleClass`                  | `style-class`                     |             | `string`  | `undefined` |

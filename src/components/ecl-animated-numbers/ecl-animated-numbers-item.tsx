@@ -73,6 +73,7 @@ export class EclAnimatedNumbersItem {
                 {this.itemPrefixLabel}
               </span>
             }
+              {this.itemPrefix}
             </span>
           }
           { this.value &&
@@ -90,6 +91,7 @@ export class EclAnimatedNumbersItem {
                 {this.itemSuffixLabel}
               </span>
             }
+              {this.itemSuffix}
             </span>
           }
           </span>

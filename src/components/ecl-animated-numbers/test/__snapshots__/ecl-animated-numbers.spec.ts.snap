@@ -29,6 +29,7 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
                 <span class="ecl-animated-number__suffix-label sc-ecl-animated-numbers-ec">
                   euro
                 </span>
+                €
               </span>
             </span>
             <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
@@ -64,7 +65,9 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
           </div>
           <div class="ecl-animated-number__content sc-ecl-animated-numbers-ec">
             <span class="ecl-animated-number__number sc-ecl-animated-numbers-ec">
-              <span class="ecl-animated-number__prefix sc-ecl-animated-numbers-ec"></span>
+              <span class="ecl-animated-number__prefix sc-ecl-animated-numbers-ec">
+                billion
+              </span>
               <span class="ecl-animated-number__value sc-ecl-animated-numbers-ec" data-ecl-animated-numbers-value>
                 888.2
               </span>
@@ -72,6 +75,7 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
                 <span class="ecl-animated-number__suffix-label sc-ecl-animated-numbers-ec">
                   euro
                 </span>
+                €
               </span>
             </span>
             <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
@@ -107,7 +111,9 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
           </div>
           <div class="ecl-animated-number__content sc-ecl-animated-numbers-ec">
             <span class="ecl-animated-number__number sc-ecl-animated-numbers-ec">
-              <span class="ecl-animated-number__prefix sc-ecl-animated-numbers-ec"></span>
+              <span class="ecl-animated-number__prefix sc-ecl-animated-numbers-ec">
+                million
+              </span>
               <span class="ecl-animated-number__value sc-ecl-animated-numbers-ec" data-ecl-animated-numbers-value>
                 975
               </span>
@@ -115,6 +121,7 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
                 <span class="ecl-animated-number__suffix-label sc-ecl-animated-numbers-ec">
                   less than
                 </span>
+                &lt;
               </span>
             </span>
             <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
@@ -154,11 +161,14 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
                 <span class="ecl-animated-number__prefix-label sc-ecl-animated-numbers-ec">
                   euro
                 </span>
+                €
               </span>
               <span class="ecl-animated-number__value sc-ecl-animated-numbers-ec" data-ecl-animated-numbers-value>
                 1250
               </span>
-              <span class="ecl-animated-number__suffix sc-ecl-animated-numbers-ec"></span>
+              <span class="ecl-animated-number__suffix sc-ecl-animated-numbers-ec">
+                billions
+              </span>
             </span>
             <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
@@ -197,11 +207,14 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
                 <span class="ecl-animated-number__prefix-label sc-ecl-animated-numbers-ec">
                   euro
                 </span>
+                €
               </span>
               <span class="ecl-animated-number__value sc-ecl-animated-numbers-ec" data-ecl-animated-numbers-value>
                 4350
               </span>
-              <span class="ecl-animated-number__suffix sc-ecl-animated-numbers-ec"></span>
+              <span class="ecl-animated-number__suffix sc-ecl-animated-numbers-ec">
+                millions
+              </span>
             </span>
             <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
               Curabitur ut mauris quam. Fusce non consequat ipsum
@@ -240,11 +253,14 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
                 <span class="ecl-animated-number__prefix-label sc-ecl-animated-numbers-ec">
                   euro
                 </span>
+                €
               </span>
               <span class="ecl-animated-number__value sc-ecl-animated-numbers-ec" data-ecl-animated-numbers-value>
                 125
               </span>
-              <span class="ecl-animated-number__suffix sc-ecl-animated-numbers-ec"></span>
+              <span class="ecl-animated-number__suffix sc-ecl-animated-numbers-ec">
+                billions
+              </span>
             </span>
             <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
               Curabitur ut mauris quam. Fusce non consequat ipsum
@@ -283,11 +299,14 @@ exports[`ecl-animated-numbers renders correctly 1`] = `
                 <span class="ecl-animated-number__prefix-label sc-ecl-animated-numbers-ec">
                   euro
                 </span>
+                €
               </span>
               <span class="ecl-animated-number__value sc-ecl-animated-numbers-ec" data-ecl-animated-numbers-value>
                 8765
               </span>
-              <span class="ecl-animated-number__suffix sc-ecl-animated-numbers-ec"></span>
+              <span class="ecl-animated-number__suffix sc-ecl-animated-numbers-ec">
+                billions
+              </span>
             </span>
             <div class="ecl-animated-number__description sc-ecl-animated-numbers-ec">
               Integer pharetra lacinia tristique

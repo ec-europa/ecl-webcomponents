@@ -1172,6 +1172,7 @@ export const EclSelect: StencilVueComponent<JSX.EclSelect> = /*@__PURE__*/ defin
   'multipleCloseText',
   'multipleCounterText',
   'multipleSubmit',
+  'optionNumberLabel',
   'inputValue',
   'hasChanged',
   'inputChange',
