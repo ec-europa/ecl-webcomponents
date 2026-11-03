@@ -122,6 +122,7 @@ export class EclMenuItem {
           variant="tertiary"
           buttonStyle="neutral"
           hideLabel
+          aria-haspopup="true"
           {...buttonAttrs}
         > 
           <ecl-icon
