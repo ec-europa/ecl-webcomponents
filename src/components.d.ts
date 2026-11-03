@@ -109,6 +109,10 @@ export namespace Components {
         "itemSuffix": string;
         "itemSuffixLabel": string;
         /**
+          * @default false
+         */
+        "noHeader": boolean;
+        /**
           * @default ''
          */
         "sources": string;
@@ -3866,6 +3870,10 @@ declare namespace LocalJSX {
         "itemSuffix"?: string;
         "itemSuffixLabel"?: string;
         /**
+          * @default false
+         */
+        "noHeader"?: boolean;
+        /**
           * @default ''
          */
         "sources"?: string;
@@ -6737,6 +6745,7 @@ declare namespace LocalJSX {
         "itemPrefix": string;
         "counterColor": boolean;
         "itemSuffix": string;
+        "noHeader": boolean;
         "icon": string;
         "description": string;
         "itemPrefixLabel": string;

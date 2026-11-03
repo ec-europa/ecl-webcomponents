@@ -5,6 +5,7 @@ const getArgs = () => {
     counterColor: true,
     withBackground: false,
     fullWidth: false,
+    noHeader: false,
   };
 };
 
@@ -36,6 +37,11 @@ const getArgTypes = () => {
       name: 'full-width',
       type: { name: 'boolean' },
       description: 'Full width of the viewport, with background',
+    },
+    noHeader: {
+      name: 'without header',
+      type: { name: 'boolean' },
+      description: 'Without top elements like category and icon',
     },
   };
 };
@@ -123,6 +129,7 @@ const Template = (args) => {
         item-suffix="${item.itemSuffix}"
         item-suffix-label="${item.itemSuffixLabel}"
         category="${item.category}"
+        no-header="${args.noHeader}"
         description="${item.description}"
         sources-label="Sources:"
         sources='[

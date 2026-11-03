@@ -60,6 +60,7 @@ export const EclAnimatedNumbersItem: StencilVueComponent<JSX.EclAnimatedNumbersI
   'itemPrefix',
   'counterColor',
   'itemSuffix',
+  'noHeader',
   'icon',
   'description',
   'itemPrefixLabel',

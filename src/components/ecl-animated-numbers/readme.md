@@ -17,6 +17,7 @@
 | `itemPrefixLabel` | `item-prefix-label` |             | `string`  | `undefined` |
 | `itemSuffix`      | `item-suffix`       |             | `string`  | `undefined` |
 | `itemSuffixLabel` | `item-suffix-label` |             | `string`  | `undefined` |
+| `noHeader`        | `no-header`         |             | `boolean` | `false`     |
 | `sources`         | `sources`           |             | `string`  | `''`        |
 | `sourcesLabel`    | `sources-label`     |             | `string`  | `''`        |
 | `styleClass`      | `style-class`       |             | `string`  | `undefined` |
