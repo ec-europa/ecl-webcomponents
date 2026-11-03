@@ -6,10 +6,6 @@ const getArgs = () => {
     withBackground: false,
     fullWidth: false,
     noHeader: false,
-    itemPrefix: '',
-    itemSuffix: '',
-    itemPrefixLabel: '',
-    itemSuffixLabel: '',
   };
 };
 
