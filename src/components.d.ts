@@ -700,6 +700,7 @@ export namespace Components {
         "image": string;
         "imageAlt": string;
         "labels": string;
+        "labelsAriaLabel": string;
         "language": string;
         "meta": string;
         /**
@@ -4464,6 +4465,7 @@ declare namespace LocalJSX {
         "image"?: string;
         "imageAlt"?: string;
         "labels"?: string;
+        "labelsAriaLabel"?: string;
         "language"?: string;
         "meta"?: string;
         /**
@@ -7015,6 +7017,7 @@ declare namespace LocalJSX {
         "imageAlt": string;
         "ariaLabel": string;
         "labels": string;
+        "labelsAriaLabel": string;
         "taxonomies": string;
         "taxonomiesLabel": string;
         "noScript": boolean;

@@ -384,6 +384,7 @@ export const EclFile: StencilVueComponent<JSX.EclFile> = /*@__PURE__*/ defineCon
   'imageAlt',
   'ariaLabel',
   'labels',
+  'labelsAriaLabel',
   'taxonomies',
   'taxonomiesLabel',
   'noScript'
