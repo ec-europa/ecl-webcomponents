@@ -24,9 +24,6 @@ patchedDependencies:
   '@ecl/select':
     hash: 90600884102a755e087577be808da2a3545ebcdc268c63e011c83ece2ce86991
     path: patches/@ecl__select.patch
-  '@ecl/story-card':
-    hash: f75631376c1a23ed107bed00bfa877d735c9801e9ab0fa22b01d046ab22ce7ad
-    path: patches/@ecl__story-card.patch
   '@ecl/table':
     hash: a2360457d26d7487ebb37094806893f593b21f5d36309c0fec1d110a108b7f77
     path: patches/@ecl__table.patch
@@ -2264,7 +2261,7 @@ importers:
         version: 5.4.0
       '@ecl/story-card':
         specifier: 5.4.0
-        version: 5.4.0(patch_hash=f75631376c1a23ed107bed00bfa877d735c9801e9ab0fa22b01d046ab22ce7ad)
+        version: 5.4.0
       '@ecl/theme-ec':
         specifier: 5.4.0
         version: 5.4.0
@@ -17551,7 +17548,7 @@ snapshots:
       '@ecl/spinner': 5.4.0
       '@ecl/splash-page': 5.4.0
       '@ecl/spotlight': 5.4.0
-      '@ecl/story-card': 5.4.0(patch_hash=f75631376c1a23ed107bed00bfa877d735c9801e9ab0fa22b01d046ab22ce7ad)
+      '@ecl/story-card': 5.4.0
       '@ecl/table': 5.4.0(patch_hash=a2360457d26d7487ebb37094806893f593b21f5d36309c0fec1d110a108b7f77)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.16)
       '@ecl/tabs': 5.4.0(patch_hash=2da6491b1f40429f722e0171484c00aab1abf0623944e03ada8a26c4965aee5a)
       '@ecl/tag': 5.4.0
@@ -17657,7 +17654,7 @@ snapshots:
       '@ecl/spinner': 5.4.0
       '@ecl/splash-page': 5.4.0
       '@ecl/spotlight': 5.4.0
-      '@ecl/story-card': 5.4.0(patch_hash=f75631376c1a23ed107bed00bfa877d735c9801e9ab0fa22b01d046ab22ce7ad)
+      '@ecl/story-card': 5.4.0
       '@ecl/table': 5.4.0(patch_hash=a2360457d26d7487ebb37094806893f593b21f5d36309c0fec1d110a108b7f77)(@types/babel__core@7.20.5)(eslint@9.39.2(jiti@1.21.7))(rolldown@1.2.16)
       '@ecl/tabs': 5.4.0(patch_hash=2da6491b1f40429f722e0171484c00aab1abf0623944e03ada8a26c4965aee5a)
       '@ecl/tag': 5.4.0
@@ -17805,7 +17802,7 @@ snapshots:
     dependencies:
       '@ecl/picture': 5.4.0
 
-  '@ecl/story-card@5.4.0(patch_hash=f75631376c1a23ed107bed00bfa877d735c9801e9ab0fa22b01d046ab22ce7ad)':
+  '@ecl/story-card@5.4.0':
     dependencies:
       '@ecl/slider': 5.4.0
 
