@@ -18,6 +18,7 @@
     "@ecl/grid": "5.4.0",
     "@ecl/icon": "5.4.0",
     "@ecl/layout-form": "5.4.0",
+    "@ecl/mixins-color": "5.4.0",
     "@ecl/mixins-typography": "5.4.0",
     "@ecl/table": "5.4.0",
     "@ecl/text-input": "5.4.0",

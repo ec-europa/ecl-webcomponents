@@ -1624,6 +1624,9 @@ export namespace Components {
         "variant": string;
     }
     interface EclNewsTicker {
+        /**
+          * @default 'of'
+         */
         "counterLabel": string;
         /**
           * @default false
@@ -5384,6 +5387,9 @@ declare namespace LocalJSX {
         "variant"?: string;
     }
     interface EclNewsTicker {
+        /**
+          * @default 'of'
+         */
         "counterLabel"?: string;
         /**
           * @default false

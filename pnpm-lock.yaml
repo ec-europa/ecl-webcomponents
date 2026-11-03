@@ -2295,6 +2295,9 @@ importers:
       '@ecl/layout-form':
         specifier: 5.4.0
         version: 5.4.0
+      '@ecl/mixins-color':
+        specifier: 5.4.0
+        version: 5.4.0
       '@ecl/mixins-typography':
         specifier: 5.4.0
         version: 5.4.0
