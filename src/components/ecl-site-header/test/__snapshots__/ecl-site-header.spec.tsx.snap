@@ -16,14 +16,14 @@ exports[`ecl-site-header renders 1`] = `
             <div class="ecl-site-header__action">
               <div class="ecl-site-header__login-container">
                 <a aria-expanded="false" class="ecl-button ecl-button--neutral ecl-button--tertiary ecl-site-header__login-toggle sc-ecl-site-header-ec" data-ecl-login-toggle href="/example.html">
-                  <ecl-icon as-image="" icon="log-in" size="m" slot="icon-before" style-class="ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
+                  <ecl-icon as-image="" family="phosphor" icon="user" size="m" slot="icon-before" style-class="ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
                   Log in
                 </a>
               </div>
               <div class="ecl-site-header__language">
                 <button aria-controls="language-switcher" aria-label="Choose language" class="ecl-button ecl-button--neutral ecl-button--tertiary ecl-site-header__language-selector" data-ecl-language-selector type="button">
                   <span class="ecl-site-header__language-icon">
-                    <ecl-icon icon="global" size="m" style-class="ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
+                    <ecl-icon family="phosphor" icon="globe-simple" size="m" style-class="ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
                     english
                   </span>
                 </button>
@@ -38,7 +38,7 @@ exports[`ecl-site-header renders 1`] = `
                         <span class="ecl-button__container">
                           <span class="ecl-button__label" data-ecl-label>
                           </span>
-                          <ecl-icon data-ecl-icon icon="close" size="m" slot="icon-after" style-class="sc-ecl-site-header-ec"></ecl-icon>
+                          <ecl-icon data-ecl-icon family="phosphor" icon="x" size="m" slot="icon-after" style-class="sc-ecl-site-header-ec"></ecl-icon>
                         </span>
                       </button>
                     </ecl-button>
@@ -237,7 +237,7 @@ exports[`ecl-site-header renders 1`] = `
                       <span class="ecl-button__label" data-ecl-label>
                         search
                       </span>
-                      <ecl-icon icon="search" size="s" slot="icon-after" style-class="ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
+                      <ecl-icon family="phosphor" icon="magnifying-glass" size="s" slot="icon-after" style-class="ecl-site-header__icon sc-ecl-site-header-ec"></ecl-icon>
                     </span>
                   </button>
                 </ecl-button>

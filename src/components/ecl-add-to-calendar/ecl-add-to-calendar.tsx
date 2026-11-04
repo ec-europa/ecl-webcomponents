@@ -61,6 +61,7 @@ export class EclAddToCalendar {
                 <ecl-icon
                   icon={metaArray[0].icon}
                   size="s"
+                  family="phosphor"
                   style-class={`ecl-add-to-calendar__meta-icon sc-ecl-add-to-calendar-${this.theme}`}
                 ></ecl-icon>
               )}
@@ -77,6 +78,7 @@ export class EclAddToCalendar {
                   <ecl-icon
                     icon={meta.icon}
                     size="s"
+                    family="phosphor"
                     style-class={`ecl-add-to-calendar__meta-icon sc-ecl-add-to-calendar-${this.theme}`}
                   ></ecl-icon>
                 )}

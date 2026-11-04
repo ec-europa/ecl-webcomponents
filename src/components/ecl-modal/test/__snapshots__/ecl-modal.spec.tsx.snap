@@ -25,7 +25,7 @@ exports[`ecl-modal renders 1`] = `
                   Close
                 </span>
                 <ecl-icon slot="icon-after" style-class="sc-ecl-modal-ec">
-                  <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-modal-ec wt-icon--close wt-icon--placeholder"></span>
+                  <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-modal-ec wt-icon--placeholder wt-icon-phosphor--x"></span>
                 </ecl-icon>
               </span>
             </button>

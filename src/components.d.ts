@@ -874,7 +874,7 @@ export namespace Components {
          */
         "invalid": boolean;
         /**
-          * @default 'error'
+          * @default 'warning-circle'
          */
         "invalidIcon": string;
         "invalidText": string;
@@ -4640,7 +4640,7 @@ declare namespace LocalJSX {
          */
         "invalid"?: boolean;
         /**
-          * @default 'error'
+          * @default 'warning-circle'
          */
         "invalidIcon"?: string;
         "invalidText"?: string;

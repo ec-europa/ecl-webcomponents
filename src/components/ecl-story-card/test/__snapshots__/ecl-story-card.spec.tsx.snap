@@ -178,7 +178,7 @@ exports[`ecl-story-card renders 1`] = `
                 Show previous Slide
               </span>
               <ecl-icon slot="icon-after">
-                <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--monochrome wt-icon--placeholder wt-icon-phosphor--caret-left"></span>
+                <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--placeholder wt-icon-phosphor--caret-left"></span>
               </ecl-icon>
             </span>
           </button>
@@ -192,7 +192,7 @@ exports[`ecl-story-card renders 1`] = `
                 Show next Slide
               </span>
               <ecl-icon slot="icon-after">
-                <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--monochrome wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
+                <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
               </ecl-icon>
             </span>
           </button>
@@ -235,7 +235,7 @@ exports[`ecl-story-card renders 1`] = `
                 Show previous Slide
               </span>
               <ecl-icon slot="icon-after">
-                <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--monochrome wt-icon--placeholder wt-icon-phosphor--caret-left"></span>
+                <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--placeholder wt-icon-phosphor--caret-left"></span>
               </ecl-icon>
             </span>
           </button>
@@ -248,7 +248,7 @@ exports[`ecl-story-card renders 1`] = `
                 Show next Slide
               </span>
               <ecl-icon slot="icon-after">
-                <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--monochrome wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
+                <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
               </ecl-icon>
             </span>
           </button>

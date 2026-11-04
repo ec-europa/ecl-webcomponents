@@ -108,9 +108,10 @@ export class EclMenuItem {
           <slot></slot>
           { this.external ? 
             <ecl-icon
-              icon="external"
+              icon="arrow-square-out"
               size="xs"
               styleClass={`sc-ecl-icon-${this.theme} sc-ecl-menu-${this.theme} ecl-menu__link-icon--external ${this.child ? 'ecl-menu__sublink-icon' : 'ecl-menu__link-icon'}`}
+              family="phosphor"
             ></ecl-icon> : ''
           }
         </a>
@@ -127,9 +128,9 @@ export class EclMenuItem {
           {...buttonAttrs}
         > 
           <ecl-icon
-            icon="corner-arrow"
+            icon="caret-right"
             size="xs"
-            rotate="180"
+            family="phosphor"
             slot="icon-after"
             styleClass={`sc-ecl-icon-${this.theme} sc-ecl-menu-${this.theme}`}
           >

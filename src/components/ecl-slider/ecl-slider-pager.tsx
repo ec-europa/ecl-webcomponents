@@ -115,7 +115,6 @@ export class EclSliderPager {
           <ecl-icon
             icon="caret-left"
             family="phosphor"
-            color="monochrome"
             slot="icon-after"
           ></ecl-icon>
         </ecl-button>
@@ -137,7 +136,6 @@ export class EclSliderPager {
           <ecl-icon
             icon="caret-right"
             family="phosphor"
-            color="monochrome"
             slot="icon-after"
           ></ecl-icon>
         </ecl-button>
