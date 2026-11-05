@@ -55,8 +55,8 @@ const Template = (args) =>
     <ecl-content-block
       ${args.primaryMeta ?  `meta-primary='${JSON.stringify(["META1", "Meta2"])}'` : '' }
       ${args.secondaryMeta ? `meta-secondary='${JSON.stringify([
-        { label: "2018/10/22", icon: "calendar" },
-        { label: "Luxembourg", icon: "location" },
+        { label: "2018/10/22", icon: "calendar-blank" },
+        { label: "Luxembourg", icon: "map-pin" },
       ])}'` : '' }
       has-title
       has-description
@@ -74,14 +74,12 @@ const Template = (args) =>
       <ecl-label
         slot="labels"
         variant="highlight"
-        theme="${args.theme}"
       >
         Highlighted
       </ecl-label>
       <ecl-label
         slot="labels"
         variant="high"
-        theme="${args.theme}"
       >
         Call status: Upcoming
       </ecl-label>

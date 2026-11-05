@@ -79,8 +79,9 @@ export class EclCategoryFilterItem {
             { this.level === 1 && this.label }
             <ecl-icon
               styleClass={`ecl-category-filter__item-icon sc-ecl-category-filter-${this.theme}`}
-              icon={this.level === 1 ? 'corner-arrow' : 'solid-arrow'}
-              rotate={this.level === 1 ? '180' : '90'}
+              icon={this.level === 1 ? 'caret-down' : 'caret-right'}
+              size="xs"
+              family="phosphor"
             />
             { this.level > 1 && this.label }
           </button>

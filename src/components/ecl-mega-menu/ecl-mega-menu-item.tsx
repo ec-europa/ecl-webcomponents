@@ -80,17 +80,18 @@ export class EclMegaMenuItem {
           <ecl-icon
             class={`sc-ecl-mega-menu-${this.theme}`}
             style-class={`sc-ecl-mega-menu-${this.theme} is-first`}
-            icon="corner-arrow"
+            icon="caret-down"
             size="2xs"
-            rotate="90"
             slot="icon-after"
+            family="phosphor"
           ></ecl-icon>
           <ecl-icon
             class={`sc-ecl-mega-menu-${this.theme}`}
             style-class={`sc-ecl-mega-menu-${this.theme}`}
-            icon="arrow-left"
+            icon="arrow-right"
             flip="horizontal"
             size="s"
+            family="phosphor"
             slot="icon-after"
           ></ecl-icon>
         </ecl-button> :
@@ -168,10 +169,10 @@ export class EclMegaMenuItem {
                     {this.seeAllLabel}
                     <ecl-icon
                       style-class={`sc-ecl-mega-menu-${this.theme}`}
-                      icon="arrow-left"
+                      icon="arrow-right"
                       size="xs"
                       slot="icon-after"
-                      rotate="180"
+                      family="phosphor"
                     ></ecl-icon>
                   </ecl-link>
                 </li>

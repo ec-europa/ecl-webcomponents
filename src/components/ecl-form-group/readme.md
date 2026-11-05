@@ -7,26 +7,26 @@
 
 ## Properties
 
-| Property            | Attribute             | Description | Type      | Default     |
-| ------------------- | --------------------- | ----------- | --------- | ----------- |
-| `ariaLabelOptional` | `aria-label-optional` |             | `string`  | `undefined` |
-| `ariaLabelRequired` | `aria-label-required` |             | `string`  | `undefined` |
-| `helperId`          | `helper-id`           |             | `string`  | `undefined` |
-| `helperText`        | `helper-text`         |             | `string`  | `undefined` |
-| `hideLabel`         | `hide-label`          |             | `boolean` | `false`     |
-| `invalid`           | `invalid`             |             | `boolean` | `false`     |
-| `invalidIcon`       | `invalid-icon`        |             | `string`  | `'error'`   |
-| `invalidText`       | `invalid-text`        |             | `string`  | `undefined` |
-| `label`             | `label`               |             | `string`  | `undefined` |
-| `labelClass`        | `label-class`         |             | `string`  | `undefined` |
-| `labelTag`          | `label-tag`           |             | `string`  | `'label'`   |
-| `name`              | `name`                |             | `string`  | `undefined` |
-| `optionalText`      | `optional-text`       |             | `string`  | `undefined` |
-| `required`          | `required`            |             | `boolean` | `false`     |
-| `requiredText`      | `required-text`       |             | `string`  | `'*'`       |
-| `styleClass`        | `style-class`         |             | `string`  | `''`        |
-| `tag`               | `tag`                 |             | `string`  | `'div'`     |
-| `theme`             | `theme`               |             | `string`  | `undefined` |
+| Property            | Attribute             | Description | Type      | Default            |
+| ------------------- | --------------------- | ----------- | --------- | ------------------ |
+| `ariaLabelOptional` | `aria-label-optional` |             | `string`  | `undefined`        |
+| `ariaLabelRequired` | `aria-label-required` |             | `string`  | `undefined`        |
+| `helperId`          | `helper-id`           |             | `string`  | `undefined`        |
+| `helperText`        | `helper-text`         |             | `string`  | `undefined`        |
+| `hideLabel`         | `hide-label`          |             | `boolean` | `false`            |
+| `invalid`           | `invalid`             |             | `boolean` | `false`            |
+| `invalidIcon`       | `invalid-icon`        |             | `string`  | `'warning-circle'` |
+| `invalidText`       | `invalid-text`        |             | `string`  | `undefined`        |
+| `label`             | `label`               |             | `string`  | `undefined`        |
+| `labelClass`        | `label-class`         |             | `string`  | `undefined`        |
+| `labelTag`          | `label-tag`           |             | `string`  | `'label'`          |
+| `name`              | `name`                |             | `string`  | `undefined`        |
+| `optionalText`      | `optional-text`       |             | `string`  | `undefined`        |
+| `required`          | `required`            |             | `boolean` | `false`            |
+| `requiredText`      | `required-text`       |             | `string`  | `'*'`              |
+| `styleClass`        | `style-class`         |             | `string`  | `''`               |
+| `tag`               | `tag`                 |             | `string`  | `'div'`            |
+| `theme`             | `theme`               |             | `string`  | `undefined`        |
 
 
 ## Slots

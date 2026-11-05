@@ -26,7 +26,7 @@ export class EclFormGroup {
   @Prop() labelTag: string = 'label';
   @Prop() tag: string = 'div';
   @Prop() name: string;
-  @Prop() invalidIcon: string = 'error';
+  @Prop() invalidIcon: string = 'warning-circle';
   @Prop() labelClass: string;
   @Prop() ariaLabelOptional: string;
   @Prop() ariaLabelRequired: string;
@@ -120,6 +120,7 @@ export class EclFormGroup {
             styleClass={`ecl-feedback-message__icon sc-ecl-form-group-${this.theme}`}
             icon={this.invalidIcon}
             size="xs"
+            family="phosphor"
           ></ecl-icon> : '' 
         }
           {this.invalidText}

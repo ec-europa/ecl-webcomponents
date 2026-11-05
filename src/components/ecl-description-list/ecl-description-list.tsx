@@ -78,9 +78,11 @@ export class EclDescriptionList {
 
   render() {
     return (
-      <dl {...this.getAttrs()}>
-        <slot></slot>
-      </dl>
+      <div {...this.getAttrs()}>
+        <dl class="ecl-description-list__content">
+          <slot></slot>
+        </dl>
+      </div>
     );
   }
 }

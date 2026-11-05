@@ -219,7 +219,9 @@ const Template = (args) =>
       select-id="custom-select"
       name="ecl-select"
       theme="${args.theme}"
-      width=${args.width}
+      width="${args.width}"
+      option-number-label="Options found"
+
     > 
       <optgroup label="European countries">
         <option value=1>Belgium</option>

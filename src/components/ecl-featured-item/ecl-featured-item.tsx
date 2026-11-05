@@ -115,8 +115,8 @@ export class EclFeaturedItem {
                 <ecl-icon
                   style-class={`sc-ecl-featured-item-${this.theme}`}
                   slot="icon-after"
-                  icon="arrow-left"
-                  flip="horizontal"
+                  icon="arrow-right"
+                  family="phosphor"
                 />
               </ecl-link>
             }

@@ -90,6 +90,7 @@ const getArgs = () => ({
       next-label="Next story"
       play-label="Play story cards"
       pause-label="Pause story cards"
+      variant="testimonial"
     >
       <ecl-story-card-item
         variant="testimonial"

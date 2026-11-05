@@ -83,7 +83,7 @@ export class EclStoryCardItem {
           </div>
         }
           <div class={`ecl-story-card__content sc-ecl-story-card-${this.theme}`}>
-          {this.variant === 'testimonial' ?
+          {this.variant === 'testimonial' &&
             <div class={`ecl-story-card__content-icon sc-ecl-story-card-${this.theme}`}>
               <svg class={`sc-ecl-story-card-${this.theme}`} xmlns="http://www.w3.org/2000/svg" width="22" height="45" viewBox="0 0 22 45" fill="none">
                 <path d="M0 0H22V23.3143L0 44.5714V0Z" fill="currentColor"/>
@@ -91,37 +91,39 @@ export class EclStoryCardItem {
               <svg class={`sc-ecl-story-card-${this.theme}`} xmlns="http://www.w3.org/2000/svg" width="22" height="45" viewBox="0 0 22 45" fill="none">
                 <path d="M0 0H22V23.3143L0 44.5714V0Z" fill="currentColor"/>
               </svg>
-            </div> :
+            </div>   
+          }
             <div class={`ecl-story-card__teaser-label sc-ecl-story-card-${this.theme}`}>
               {this.teaserLabel}
-            </div>
-          }
-          {this.elTitle &&
+            </div>  
+          {this.variant === 'testimonial' ?
+            <figure class={`ecl-story-card__testimonial-container sc-ecl-story-card-${this.theme}`}>
+              <blockquote class={`ecl-story-card__card-title sc-ecl-story-card-${this.theme}`}>
+                {this.elTitle}
+              </blockquote>
+              <figcaption class={`ecl-story-card__testimonial sc-ecl-story-card-${this.theme}`}>
+                {this.author &&
+                  <span class={`ecl-story-card__author sc-ecl-story-card-${this.theme}`}>
+                    {this.author}
+                  </span>
+                }
+                {this.elRole &&
+                  <span class={`ecl-story-card__role sc-ecl-story-card-${this.theme}`}>
+                    {this.elRole}
+                  </span>
+                }
+                {this.source &&
+                  <cite class={`ecl-story-card__source sc-ecl-story-card-${this.theme}`}>
+                    {this.source}
+                  </cite>
+                }
+              </figcaption>
+            </figure> :
             <div class={`ecl-story-card__card-title sc-ecl-story-card-${this.theme}`}>
               {this.elTitle}
             </div>
           }
-          {(this.author || this.elRole || this.source) &&
-            <div class={`ecl-story-card__testimonial sc-ecl-story-card-${this.theme}`}>
-              {this.author &&
-                <span class={`ecl-story-card__author sc-ecl-story-card-${this.theme}`}>
-                  {this.author}
-                </span>
-              }
-    
-              {this.elRole &&
-                <span class={`ecl-story-card__role sc-ecl-story-card-${this.theme}`}>
-                  {this.elRole}
-                </span>
-              }
-    
-              {this.source &&
-                <cite class={`ecl-story-card__source sc-ecl-story-card-${this.theme}`}>
-                  {this.source}
-                </cite>
-              }
-            </div>
-          }
+
             <div class={`ecl-story-card__card-description sc-ecl-story-card-${this.theme}`}>
               <slot></slot>
             </div>
