@@ -347,7 +347,7 @@ exports[`ecl-site-header renders 1`] = `
                                 <span class="ecl-button__label" data-ecl-label>
                                   Item 2.1
                                 </span>
-                                <ecl-icon class="sc-ecl-mega-menu-ec" family="phosphor" icon="caret-right" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                                <ecl-icon class="sc-ecl-mega-menu-ec" family="phosphor" icon="caret-right" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
                                 <ecl-icon class="sc-ecl-mega-menu-ec" family="phosphor" icon="arrow-right" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
                               </span>
                             </button>
@@ -925,7 +925,7 @@ exports[`ecl-site-header renders 1`] = `
                                 <span class="ecl-button__label" data-ecl-label>
                                   Aid, Development cooperation, Fundamental rights
                                 </span>
-                                <ecl-icon class="sc-ecl-mega-menu-ec" family="phosphor" icon="caret-right" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                                <ecl-icon class="sc-ecl-mega-menu-ec" family="phosphor" icon="caret-right" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
                                 <ecl-icon class="sc-ecl-mega-menu-ec" family="phosphor" icon="arrow-right" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
                               </span>
                             </button>
@@ -969,7 +969,7 @@ exports[`ecl-site-header renders 1`] = `
                                 <span class="ecl-button__label" data-ecl-label>
                                   Research and innovation
                                 </span>
-                                <ecl-icon class="sc-ecl-mega-menu-ec" family="phosphor" icon="caret-right" rotate="90" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
+                                <ecl-icon class="sc-ecl-mega-menu-ec" family="phosphor" icon="caret-right" size="2xs" slot="icon-after" style-class="sc-ecl-mega-menu-ec is-first"></ecl-icon>
                                 <ecl-icon class="sc-ecl-mega-menu-ec" family="phosphor" icon="arrow-right" size="s" slot="icon-after" style-class="sc-ecl-mega-menu-ec"></ecl-icon>
                               </span>
                             </button>

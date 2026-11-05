@@ -54,7 +54,6 @@ export class EclMegaMenuSubitem {
             style-class={`sc-ecl-mega-menu-${this.theme} is-first`}
             icon="caret-right"
             size="2xs"
-            rotate="90"
             slot="icon-after"
             family="phosphor"
           ></ecl-icon>
