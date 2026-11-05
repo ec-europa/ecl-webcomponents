@@ -52,18 +52,19 @@ export class EclMegaMenuSubitem {
           <ecl-icon
             class={`sc-ecl-mega-menu-${this.theme}`}
             style-class={`sc-ecl-mega-menu-${this.theme} is-first`}
-            icon="corner-arrow"
+            icon="caret-right"
             size="2xs"
             rotate="90"
             slot="icon-after"
+            family="phosphor"
           ></ecl-icon>
           <ecl-icon
             class={`sc-ecl-mega-menu-${this.theme}`}
             style-class={`sc-ecl-mega-menu-${this.theme}`}
-            icon="arrow-left"
-            flip="horizontal"
+            icon="arrow-right"
             size="s"
             slot="icon-after"
+            family="phosphor"
           ></ecl-icon>
         </ecl-button> :
         <ecl-link
@@ -102,10 +103,10 @@ export class EclMegaMenuSubitem {
                 {this.seeAllLabel}
                 <ecl-icon
                   style-class={`sc-ecl-mega-menu-${this.theme}`}
-                  icon="arrow-left"
+                  icon="arrow-right"
                   size="xs"
-                  rotate="180"
                   slot="icon-after"
+                  family="phosphor"
                 ></ecl-icon>
               </ecl-link>
             </li>
