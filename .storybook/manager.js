@@ -4,11 +4,8 @@ import { create } from 'storybook/theming';
 
 addons.setConfig({
   isFullscreen: false,
-  showNav: true,
-  showPanel: true,
-  panelPosition: 'bottom',
   sidebarAnimations: true,
-  enableShortcuts: true,
+
   isToolshown: true,
   theme: create({
     base: 'light',
@@ -16,7 +13,15 @@ addons.setConfig({
     brandUrl: 'https://github.com/ec-europa/ecl-webcomponents',
     brandImage: undefined,
   }),
-  initialActive: 'sidebar',
+  layout: {
+    initialActive: 'sidebar',
+    panelPosition: 'bottom',
+    showPanel: true,
+    showNav: true,
+  },
+  ui: {
+    enableShortcuts: true,
+  },
   sidebar: {
     showRoots: false,
   },

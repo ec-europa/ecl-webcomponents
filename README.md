@@ -29,7 +29,7 @@ For the react and angular wrappers the consumer apps in this repository can be u
 **generate** ecl-{component} runs stencil generate and generates empty files
 **build** builds the application, including storybook  
 **lint** runs stylelint on scss files and eslint on js files  
-**test** Runs the prettier checks and the Vitest snapshot tests  
+**test** Runs the prettier checks and the snapshot tests  
 **test:update** Updates the snapshots  
 **start** builds stencil and watches files for changes  
 **dev** starts storybook  
