@@ -13,17 +13,17 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "5.4.0",
-    "@ecl/button": "5.4.0",
-    "@ecl/expandable": "5.4.0",
-    "@ecl/grid": "5.4.0",
-    "@ecl/mixins-typography": "5.4.0",
-    "@ecl/theme-ec": "5.4.0",
-    "@ecl/theme-eu": "5.4.0",
-    "@ecl/utility-screen-reader": "5.4.0",
+    "@ecl/builder": "5.4.1",
+    "@ecl/button": "5.4.1",
+    "@ecl/expandable": "5.4.1",
+    "@ecl/grid": "5.4.1",
+    "@ecl/mixins-typography": "5.4.1",
+    "@ecl/theme-ec": "5.4.1",
+    "@ecl/theme-eu": "5.4.1",
+    "@ecl/utility-screen-reader": "5.4.1",
     "@ecl/web-components-button": "0.31.0",
     "cross-env": "10.1.0",
-    "rimraf": "6.1.3"
+    "rimraf": "6.1.4"
   },
   "repository": {
     "type": "git",

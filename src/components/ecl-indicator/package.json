@@ -13,11 +13,11 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@ecl/builder": "5.4.0",
-    "@ecl/indicator": "5.4.0",
-    "@ecl/utility-screen-reader": "5.4.0",
+    "@ecl/builder": "5.4.1",
+    "@ecl/indicator": "5.4.1",
+    "@ecl/utility-screen-reader": "5.4.1",
     "cross-env": "10.1.0",
-    "rimraf": "6.1.3"
+    "rimraf": "6.1.4"
   },
   "repository": {
     "type": "git",

@@ -30,7 +30,7 @@
     "@stencil/core": "4.45.2"
   },
   "devDependencies": {
-    "@stencil/angular-output-target": "1.5.3",
-    "@stencil/react-output-target": "1.7.0"
+    "@stencil/angular-output-target": "1.6.0",
+    "@stencil/react-output-target": "1.8.1"
   }
 }

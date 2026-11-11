@@ -14,11 +14,11 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "@ecl/builder": "5.4.0",
-        "@ecl/mixins-color": "5.4.0",
-        "@ecl/slider": "5.4.0",
-        "@ecl/theme-ec": "5.4.0",
-        "@ecl/theme-eu": "5.4.0",
+        "@ecl/builder": "5.4.1",
+        "@ecl/mixins-color": "5.4.1",
+        "@ecl/slider": "5.4.1",
+        "@ecl/theme-ec": "5.4.1",
+        "@ecl/theme-eu": "5.4.1",
         "cross-env": "10.1.0"
     },
     "repository": {

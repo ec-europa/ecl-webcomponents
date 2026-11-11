@@ -4,7 +4,7 @@ import js from '@eslint/js';
 import globals from 'globals';
 import babelEslintParser from '@babel/eslint-parser';
 import pluginImport from 'eslint-plugin-import';
-import pluginJest from 'eslint-plugin-jest';
+import pluginVitest from '@vitest/eslint-plugin';
 import prettier from 'eslint-config-prettier/flat';
 
 export default defineConfig([
@@ -55,7 +55,7 @@ export default defineConfig([
     },
     plugins: {
       import: pluginImport,
-      jest: pluginJest,
+      vitest: pluginVitest,
     },
     rules: {
       'import/no-extraneous-dependencies': 'off',
@@ -75,13 +75,13 @@ export default defineConfig([
   },
 
   // -----------------------
-  // Jest test files
+  // Vitest test files
   // -----------------------
   {
     files: ['**/*.test.js', '**/*.spec.js'],
     languageOptions: {
       globals: {
-        ...globals.jest, // Jest globals
+        ...globals.vitest,
       },
     },
     rules: {
