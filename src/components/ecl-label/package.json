@@ -16,7 +16,7 @@
     "@ecl/builder": "5.4.0",
     "@ecl/grid": "5.4.0",
     "@ecl/label": "5.4.0",
-    "@ecl/mixins-typography/": "5.4.0",
+    "@ecl/mixins-typography": "5.4.0",
     "@ecl/theme-ec": "5.4.0",
     "@ecl/theme-eu": "5.4.0",
     "cross-env": "10.1.0"

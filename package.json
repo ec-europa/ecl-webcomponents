@@ -11,14 +11,14 @@
   "collection": "packages/ecl-webcomponents/dist/collection/collection-manifest.json",
   "collection:main": "packages/ecl-webcomponents/dist/collection/index.js",
   "engines": {
-    "node": ">=22.0.0",
-    "pnpm": "10.9.0"
+    "node": ">=24.22.2",
+    "pnpm": "12.18.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/ec-europa/ecl-webcomponents"
   },
-  "packageManager": "pnpm@10.9.0",
+  "packageManager": "pnpm@12.18.0",
   "scripts": {
     "build": "run-s build:*",
     "build:clean": "rimraf build dist",
@@ -152,24 +152,5 @@
       "prettier --write",
       "stylelint"
     ]
-  },
-  "pnpm": {
-    "overrides": {
-      "glob-parent": ">=5.1.2",
-      "trim": ">=0.0.3",
-      "json5": ">=1.0.2",
-      "http-cache-semantics": ">=4.1.1",
-      "yaml": ">=2.2.2",
-      "semver": ">=7.5.2",
-      "jackspeak": "2.1.1",
-      "cli-truncate": "2.1.0"
-    },
-    "patchedDependencies": {
-      "@ecl/builder": "patches/@ecl__builder.patch",
-      "@ecl/banner": "patches/@ecl__banner.patch",
-      "@ecl/tabs": "patches/@ecl__tabs.patch",
-      "@ecl/table": "patches/@ecl__table.patch",
-      "@ecl/select": "patches/@ecl__select.patch"
-    }
   }
 }

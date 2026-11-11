@@ -13,8 +13,8 @@
         "prepublish": "npm run build"
     },
     "dependencies": {
-        "@ecl/web-components-form-group": "5.1.0",
-        "@ecl/web-components-input": "5.1.0"
+        "@ecl/web-components-form-group": "0.31.0",
+        "@ecl/web-components-input": "0.31.0"
     },
     "devDependencies": {
         "@ecl/builder": "5.4.0",
