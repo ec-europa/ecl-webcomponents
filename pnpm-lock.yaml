@@ -941,6 +941,16 @@ importers:
         version: 9.0.0-rc03(embla-carousel@9.0.0-rc03)
 
   src/components/ecl-category-filter:
+    dependencies:
+      '@ecl/web-components-button':
+        specifier: 0.31.0
+        version: link:../ecl-button
+      '@ecl/web-components-icon':
+        specifier: 0.31.0
+        version: link:../ecl-icon
+      '@ecl/web-components-link':
+        specifier: 0.31.0
+        version: link:../ecl-link
     devDependencies:
       '@ecl/builder':
         specifier: 5.4.1

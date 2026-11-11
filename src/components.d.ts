@@ -361,7 +361,27 @@ export namespace Components {
         "theme": string;
     }
     interface EclCategoryFilter {
+        /**
+          * @default false
+         */
+        "collapseAll": boolean;
+        /**
+          * @default ''
+         */
+        "collapseAllLabel": string;
         "colorMode": string;
+        /**
+          * @default false
+         */
+        "expandAll": boolean;
+        /**
+          * @default ''
+         */
+        "expandAllLabel": string;
+        /**
+          * @default ''
+         */
+        "nameAttr": string;
         /**
           * @default false
          */
@@ -4124,7 +4144,27 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclCategoryFilter {
+        /**
+          * @default false
+         */
+        "collapseAll"?: boolean;
+        /**
+          * @default ''
+         */
+        "collapseAllLabel"?: string;
         "colorMode"?: string;
+        /**
+          * @default false
+         */
+        "expandAll"?: boolean;
+        /**
+          * @default ''
+         */
+        "expandAllLabel"?: string;
+        /**
+          * @default ''
+         */
+        "nameAttr"?: string;
         /**
           * @default false
          */
@@ -6863,6 +6903,11 @@ declare namespace LocalJSX {
         "styleClass": string;
         "theme": string;
         "noScript": boolean;
+        "expandAll": boolean;
+        "expandAllLabel": string;
+        "collapseAllLabel": string;
+        "collapseAll": boolean;
+        "nameAttr": string;
         "colorMode": string;
     }
     interface EclCategoryFilterItemAttributes {

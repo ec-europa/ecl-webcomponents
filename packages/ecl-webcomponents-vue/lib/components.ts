@@ -192,6 +192,11 @@ export const EclCategoryFilter: StencilVueComponent<JSX.EclCategoryFilter> = /*@
   'styleClass',
   'theme',
   'noScript',
+  'expandAll',
+  'expandAllLabel',
+  'collapseAllLabel',
+  'collapseAll',
+  'nameAttr',
   'colorMode'
 ]);
 

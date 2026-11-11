@@ -6,7 +6,12 @@ export default {
 
 const Template = (args) => 
 `<ecl-category-filter
+  name-attr="${args.name || ''}"
   color-mode="${args.color_mode}"
+  collapse-all="${args.collapseAll}"
+  collapse-all-label="${args.collapseAllLabel}"
+  expand-all="${args.expandAll}"
+  expand-all-label="${args.expandAllLabel}"
 >
   <ecl-category-filter-item
     path="${randomizedLink('/example.html')}"
@@ -70,8 +75,7 @@ const Template = (args) =>
       </ecl-category-filter-item>
     </ecl-category-filter-item>
     <ecl-category-filter-item
-      label="Item 2.2"
-      path="${randomizedLink('/example.html')}"
+      label="Item 2.2 (without link)"
       level="2"
     >
     </ecl-category-filter-item>
@@ -186,3 +190,47 @@ const Template = (args) =>
 
 export const CategoryFilter = Template.bind({});
 CategoryFilter.storyName = 'default';
+CategoryFilter.args = {
+  name: '',
+  expandAll: false,
+  collapseAll: false,
+  expandAllLabel: 'Expand all',
+  collapseAllLabel: 'Collapse all',
+};
+CategoryFilter.argTypes = {
+  name: {
+    description: 'Name attribute, if set only on item at a time will expand',
+    control: {
+      type: 'text',
+    },
+    if: { arg: 'expandAll', truthy: false },
+  },
+  expandAll: {
+    name: 'expand-all',
+    description: 'If true, the expand all button is displayed',
+    control: {
+      type: 'boolean'
+    }
+  },
+  collapseAll: {
+    name: 'collapse-all',
+    description: 'If true, the collapse all button is displayed',
+    control: {
+      type: 'boolean'
+    }
+  },
+  expandAllLabel: {
+    name: 'expand-all-label',
+    description: 'The label for the expand all button',
+    control: {
+      type: 'text'
+    }
+  },
+  collapseAllLabel: {
+    name: 'collapse-all-label',
+    description: 'The label for the collapse all button',
+    control: {
+      type: 'text'
+    }
+  },
+};
