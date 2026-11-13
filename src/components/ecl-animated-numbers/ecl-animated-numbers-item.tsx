@@ -14,6 +14,7 @@ export class EclAnimatedNumbersItem {
   @Prop() itemPrefix: string;
   @Prop() counterColor: boolean = true;
   @Prop() itemSuffix: string;
+  @Prop() noHeader: boolean = false;
   @Prop() icon: string;
   @Prop() description: string;
   @Prop() itemPrefixLabel: string;
@@ -44,6 +45,7 @@ export class EclAnimatedNumbersItem {
         class={this.getClass()}
         role="listitem"
       >
+      {!this.noHeader && (this.category || this.icon) &&
         <div class={`ecl-animated-number__header sc-ecl-animated-numbers-${this.theme}`}>
         { this.category &&
           <div class={`ecl-animated-number__category sc-ecl-animated-numbers-${this.theme}`}>
@@ -61,6 +63,7 @@ export class EclAnimatedNumbersItem {
           </ecl-icon>
         }
         </div>
+        }
         <div class={`ecl-animated-number__content sc-ecl-animated-numbers-${this.theme}`}>
           <span class={`ecl-animated-number__number sc-ecl-animated-numbers-${this.theme}`}>
           { this.itemPrefix &&
@@ -70,6 +73,7 @@ export class EclAnimatedNumbersItem {
                 {this.itemPrefixLabel}
               </span>
             }
+              {this.itemPrefix}
             </span>
           }
           { this.value &&
@@ -87,6 +91,7 @@ export class EclAnimatedNumbersItem {
                 {this.itemSuffixLabel}
               </span>
             }
+              {this.itemSuffix}
             </span>
           }
           </span>

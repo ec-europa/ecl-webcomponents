@@ -109,6 +109,10 @@ export namespace Components {
         "itemSuffix": string;
         "itemSuffixLabel": string;
         /**
+          * @default false
+         */
+        "noHeader": boolean;
+        /**
           * @default ''
          */
         "sources": string;
@@ -357,7 +361,27 @@ export namespace Components {
         "theme": string;
     }
     interface EclCategoryFilter {
+        /**
+          * @default false
+         */
+        "collapseAll": boolean;
+        /**
+          * @default ''
+         */
+        "collapseAllLabel": string;
         "colorMode": string;
+        /**
+          * @default false
+         */
+        "expandAll": boolean;
+        /**
+          * @default ''
+         */
+        "expandAllLabel": string;
+        /**
+          * @default ''
+         */
+        "nameAttr": string;
         /**
           * @default false
          */
@@ -696,6 +720,7 @@ export namespace Components {
         "image": string;
         "imageAlt": string;
         "labels": string;
+        "labelsAriaLabel": string;
         "language": string;
         "meta": string;
         /**
@@ -869,7 +894,7 @@ export namespace Components {
          */
         "invalid": boolean;
         /**
-          * @default 'error'
+          * @default 'warning-circle'
          */
         "invalidIcon": string;
         "invalidText": string;
@@ -1624,6 +1649,9 @@ export namespace Components {
         "variant": string;
     }
     interface EclNewsTicker {
+        /**
+          * @default 'of'
+         */
         "counterLabel": string;
         /**
           * @default false
@@ -2087,6 +2115,7 @@ export namespace Components {
           * @default false
          */
         "noScript": boolean;
+        "optionNumberLabel": string;
         /**
           * @default false
          */
@@ -3863,6 +3892,10 @@ declare namespace LocalJSX {
         "itemSuffix"?: string;
         "itemSuffixLabel"?: string;
         /**
+          * @default false
+         */
+        "noHeader"?: boolean;
+        /**
           * @default ''
          */
         "sources"?: string;
@@ -4111,7 +4144,27 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclCategoryFilter {
+        /**
+          * @default false
+         */
+        "collapseAll"?: boolean;
+        /**
+          * @default ''
+         */
+        "collapseAllLabel"?: string;
         "colorMode"?: string;
+        /**
+          * @default false
+         */
+        "expandAll"?: boolean;
+        /**
+          * @default ''
+         */
+        "expandAllLabel"?: string;
+        /**
+          * @default ''
+         */
+        "nameAttr"?: string;
         /**
           * @default false
          */
@@ -4453,6 +4506,7 @@ declare namespace LocalJSX {
         "image"?: string;
         "imageAlt"?: string;
         "labels"?: string;
+        "labelsAriaLabel"?: string;
         "language"?: string;
         "meta"?: string;
         /**
@@ -4626,7 +4680,7 @@ declare namespace LocalJSX {
          */
         "invalid"?: boolean;
         /**
-          * @default 'error'
+          * @default 'warning-circle'
          */
         "invalidIcon"?: string;
         "invalidText"?: string;
@@ -5384,6 +5438,9 @@ declare namespace LocalJSX {
         "variant"?: string;
     }
     interface EclNewsTicker {
+        /**
+          * @default 'of'
+         */
         "counterLabel"?: string;
         /**
           * @default false
@@ -5856,6 +5913,7 @@ declare namespace LocalJSX {
         "onInputBlur"?: (event: EclSelectCustomEvent<FocusEvent>) => void;
         "onInputChange"?: (event: EclSelectCustomEvent<any>) => void;
         "onInputFocus"?: (event: EclSelectCustomEvent<FocusEvent>) => void;
+        "optionNumberLabel"?: string;
         /**
           * @default false
          */
@@ -6731,6 +6789,7 @@ declare namespace LocalJSX {
         "itemPrefix": string;
         "counterColor": boolean;
         "itemSuffix": string;
+        "noHeader": boolean;
         "icon": string;
         "description": string;
         "itemPrefixLabel": string;
@@ -6844,6 +6903,11 @@ declare namespace LocalJSX {
         "styleClass": string;
         "theme": string;
         "noScript": boolean;
+        "expandAll": boolean;
+        "expandAllLabel": string;
+        "collapseAllLabel": string;
+        "collapseAll": boolean;
+        "nameAttr": string;
         "colorMode": string;
     }
     interface EclCategoryFilterItemAttributes {
@@ -7000,6 +7064,7 @@ declare namespace LocalJSX {
         "imageAlt": string;
         "ariaLabel": string;
         "labels": string;
+        "labelsAriaLabel": string;
         "taxonomies": string;
         "taxonomiesLabel": string;
         "noScript": boolean;
@@ -7666,6 +7731,7 @@ declare namespace LocalJSX {
         "multipleCloseText": string;
         "multipleCounterText": string;
         "multipleSubmit": boolean;
+        "optionNumberLabel": string;
         "inputValue": string;
         "hasChanged": boolean;
     }

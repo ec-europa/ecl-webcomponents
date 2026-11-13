@@ -19,18 +19,18 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=20.0.0",
-    "pnpm": "10.9.0"
+    "node": ">=24.22.2",
+    "pnpm": "12.18.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/ec-europa/ecl-webcomponents"
   },
   "dependencies": {
-    "@stencil/core": "4.45.1"
+    "@stencil/core": "4.45.2"
   },
   "devDependencies": {
-    "@stencil/angular-output-target": "1.5.0",
-    "@stencil/react-output-target": "1.6.2"
+    "@stencil/angular-output-target": "1.6.0",
+    "@stencil/react-output-target": "1.8.1"
   }
 }

@@ -78,10 +78,10 @@ export class EclInpageNavigation {
               data-ecl-inpage-navigation-trigger-current
             ></span>
             <ecl-icon
-              icon="corner-arrow"
+              icon="caret-down"
               size="s"
-              rotate="180"
               style-class={`ecl-inpage-navigation__trigger-icon sc-ecl-inpage-navigation-${this.theme}`}
+              family="phosphor"
             ></ecl-icon>
           </button>
           <ul

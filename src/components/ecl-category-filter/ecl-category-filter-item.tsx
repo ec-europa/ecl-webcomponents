@@ -62,37 +62,44 @@ export class EclCategoryFilterItem {
         class={this.getClass()}
         onClick={ev => this.clickedItem(ev)}
       >
-        {this.path && !this.subItems && (
-          <ecl-link
-            styleClass={this.getLinkClass()}
-            path={this.path}
-          >
-            {this.label}
-          </ecl-link>
-        )}
+      {this.path && !this.subItems && (
+        <ecl-link
+          styleClass={this.getLinkClass()}
+          path={this.path}
+        >
+          {this.label}
+        </ecl-link>
+      )}
 
-        {this.path && this.subItems && (
-          <button
+      {!this.subItems && !this.path && (
+        <span class={this.getLinkClass()}>
+          { this.label}
+        </span>
+      )}
+
+      {this.subItems && (
+        <details
+          class={`ecl-category-filter__details sc-ecl-category-filter-${this.theme}`}
+        >
+          <summary
             class={this.getLinkClass()}
             {...elAttrs}
           >
             { this.level === 1 && this.label }
             <ecl-icon
               styleClass={`ecl-category-filter__item-icon sc-ecl-category-filter-${this.theme}`}
-              icon={this.level === 1 ? 'corner-arrow' : 'solid-arrow'}
-              rotate={this.level === 1 ? '180' : '90'}
+              icon={this.level === 1 ? 'caret-down' : 'caret-right'}
+              size="xs"
+              family="phosphor"
             />
             { this.level > 1 && this.label }
-          </button>
-        )}
+          </summary>
 
-        {!this.path && this.label}
-
-        {this.subItems && (
           <ul class={`ecl-category-filter__list sc-ecl-category-filter-${this.theme}`}>
             <slot></slot>
           </ul>
-        )}
+        </details>
+      )}
       </li>
     );
   }

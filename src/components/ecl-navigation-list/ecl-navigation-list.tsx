@@ -43,7 +43,9 @@ export class EclNavigationList {
   render() {
     return (
       <div class={this.getClass()}>
-        <slot></slot>
+        <div class="ecl-navigation-list__items">
+          <slot></slot>
+        </div>
       </div>
     );
   }

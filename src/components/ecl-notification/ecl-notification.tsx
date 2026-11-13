@@ -36,7 +36,18 @@ export class EclNotification {
   }
 
   getIcon() : string {
-    return `${this.variant}-outline`;
+    switch (this.getVariant()) {
+      case 'info':
+        return 'info';
+      case 'success':
+        return 'check-circle';
+      case 'warning':
+        return 'warning';
+      case 'error':
+        return 'x-circle';
+      default:
+        return 'info';
+    }
   }
 
   componentWillLoad() {
@@ -74,6 +85,7 @@ export class EclNotification {
         <ecl-icon 
           icon={this.getIcon()}
           size="l"
+          family="phosphor"
           style-class={`ecl-notification__icon sc-ecl-notification-${this.theme}`}
         >
         </ecl-icon>
@@ -90,7 +102,8 @@ export class EclNotification {
             {this.closeLabel}
             <ecl-icon
               slot="icon-after"
-              icon="close"
+              icon="x"
+              family="phosphor"
               style-class="ecl-button__icon" 
             ></ecl-icon>
           </ecl-button> : ''

@@ -94,10 +94,11 @@ export class EclLink {
   getExternal() {
     return (
       <ecl-icon 
-        icon="external"
+        icon="arrow-square-out"
         style-class={`ecl-link__icon sc-ecl-link-${this.theme}`}
         size="xs"
         title-tag={this.srExternal}
+        family="phosphor"
       >
       </ecl-icon>
     )  

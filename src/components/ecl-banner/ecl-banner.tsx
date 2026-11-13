@@ -170,7 +170,8 @@ export class EclBanner {
             <ecl-icon
               styleClass={`sc-ecl-banner-${this.theme}`}
               slot="icon-after"
-              icon="play-outline"
+              icon="play-circle"
+              family="phosphor"
               size="m"
             >
             </ecl-icon>
@@ -188,8 +189,9 @@ export class EclBanner {
             <ecl-icon
               styleClass={`sc-ecl-banner-${this.theme}`}
               slot="icon-after"
-              icon="pause-outline"
+              icon="pause-circle"
               size="m"
+              family="phosphor"
             >
             </ecl-icon>
           </ecl-button>
@@ -237,9 +239,9 @@ export class EclBanner {
                 >
                   {this.ctaLabel}
                   <ecl-icon
-                    icon="corner-arrow"
+                    icon="caret-right"
                     slot="icon-after"
-                    rotate="90"
+                    family="phosphor"
                   ></ecl-icon>
                 </ecl-link>
               </div>

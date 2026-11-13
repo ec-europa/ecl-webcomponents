@@ -17,9 +17,9 @@ jobs:
     steps:
       - uses: actions/setup-node@v4
         with:
-          node-version: 22.12.0
+          node-version: 24.22.2
       - name: Install pnpm
-        run: npm install -g pnpm@10.9.0
+        run: npm install -g pnpm@12.18.0
       - uses: amannn/action-semantic-pull-request@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -30,9 +30,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22.12.0
+          node-version: 24.22.2
       - name: Install pnpm
-        run: npm install -g pnpm@10.9.0
+        run: npm install -g pnpm@12.18.0
       - name: Test
         run: ./scripts/audit.sh
   tests:
@@ -42,9 +42,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22.12.0
+          node-version: 24.22.2
       - name: Install pnpm
-        run: npm install -g pnpm@10.9.0
+        run: npm install -g pnpm@12.18.0
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Build stencil
@@ -59,9 +59,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22.12.0
+          node-version: 24.22.2
       - name: Install pnpm
-        run: npm install -g pnpm@10.9.0
+        run: npm install -g pnpm@12.18.0
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Package application
@@ -83,9 +83,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22.12.0
+          node-version: 24.22.2
       - name: Install pnpm
-        run: npm install -g pnpm@10.9.0
+        run: npm install -g pnpm@12.18.0
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Package application
@@ -107,9 +107,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22.12.0
+          node-version: 24.22.2
       - name: Install pnpm
-        run: npm install -g pnpm@10.9.0
+        run: npm install -g pnpm@12.18.0
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Package application
@@ -131,9 +131,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22.12.0
+          node-version: 24.22.2
       - name: Install pnpm
-        run: npm install -g pnpm@10.9.0
+        run: npm install -g pnpm@12.18.0
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Package application

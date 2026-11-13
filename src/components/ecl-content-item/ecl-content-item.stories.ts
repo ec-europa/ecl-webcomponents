@@ -125,7 +125,7 @@ const Template = (args) => {
       <ecl-content-block
         slot="content-block"
         meta-primary='${args.primaryMeta ? '["PRIMARY META", "DD Month Year"]' : '' }'
-        meta-secondary='${args.secondaryMeta ? '[{"label": "2018/10/22", "icon": "calendar"}, {"label": "Luxembourg", "icon": "location"}]' : '' }'
+        meta-secondary='${args.secondaryMeta ? '[{"label": "2018/10/22", "icon": "calendar-blank"}, {"label": "Luxembourg", "icon": "map-pinz"}]' : '' }'
         has-title
         has-description
         has-labels="${args.labels}"

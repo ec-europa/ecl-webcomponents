@@ -6,3 +6,35 @@ packages:
   - "packages/*"
   - "packages/ecl-webcomponents-angular-workspace/projects/ecl-webcomponents-angular"
   - "!packages/**/dist"
+overrides:
+  glob-parent: '>=5.1.2'
+  trim: '>=0.0.3'
+  json5: '>=1.0.2'
+  http-cache-semantics: '>=4.1.1'
+  yaml: '>=2.2.2'
+  semver: '>=7.5.2'
+  jackspeak: 2.1.1
+  cli-truncate: 2.1.0
+patchedDependencies:
+  '@ecl/builder': patches/@ecl__builder.patch
+  '@ecl/banner': patches/@ecl__banner.patch
+linkWorkspacePackages: deep
+allowBuilds:
+  '@parcel/watcher': true
+  core-js: true
+  esbuild: true
+  lmdb: true
+  msgpackr-extract: true
+  nice-napi: true
+  nx: true
+  puppeteer: true
+minimumReleaseAgeExclude:
+  - '@puppeteer/browsers@3.2.7'
+  - '@storybook/addon-docs@10.6.7'
+  - '@storybook/builder-vite@10.6.7'
+  - '@storybook/html-vite@10.6.7'
+  - '@storybook/html@10.6.7'
+  - puppeteer-core@25.17.0
+  - puppeteer@25.17.0
+  - vite@8.3.8
+  - vue-router@5.5.0
