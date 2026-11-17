@@ -18,6 +18,7 @@
     "@ecl/tabs": "5.4.1",
     "@ecl/theme-ec": "5.4.1",
     "@ecl/theme-eu": "5.4.1",
+    "@ecl/slider": "5.4.1",
     "@ecl/utility-screen-reader": "5.4.1",
     "cross-env": "10.1.0",
     "lorem-ipsum": "3.0.0"

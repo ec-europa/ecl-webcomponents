@@ -1,12 +1,13 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h, Prop, Element } from '@stencil/core';
 
 @Component({
   tag: 'ecl-tabs-item',
   shadow: false,
-  scoped: true,
+  scoped: false,
 })
 
 export class EclTabsItem {
+  @Element() el: HTMLElement;
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
   @Prop() path: string = '';
@@ -26,6 +27,8 @@ export class EclTabsItem {
 
   componentWillLoad() {
     this.theme = document.documentElement.getAttribute('data-ecl-theme') ?? (this.theme || 'ec');
+    this.el.style.display = 'flex';
+    this.el.style.flexShrink = '0';
   }
 
   render() {

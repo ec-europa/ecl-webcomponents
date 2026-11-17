@@ -101,6 +101,7 @@ export class EclQuiz {
           srNext="Next"
           srPlay="Play"
           srPause="Pause"
+          dots
           prevExtraAttributes="data-ecl-quiz-prev"
           nextExtraAttributes="data-ecl-quiz-next"
           dotsExtraClasses="ecl-quiz__dots"

@@ -18,6 +18,7 @@ overrides:
 patchedDependencies:
   '@ecl/builder': patches/@ecl__builder.patch
   '@ecl/banner': patches/@ecl__banner.patch
+  '@ecl/tabs': patches/@ecl__tabs.patch
 linkWorkspacePackages: deep
 allowBuilds:
   '@parcel/watcher': true

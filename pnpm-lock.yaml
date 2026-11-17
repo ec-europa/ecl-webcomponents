@@ -175,6 +175,7 @@ overrides:
 patchedDependencies:
   '@ecl/banner': 476b7ae78e95674e1bd19c6f2ce04e541fbbcdd9b28bcad13e0424a735e3d759
   '@ecl/builder': 8c6a0c71bd0fb3a07d589ce348593f4bd7e40881c564b74d670668559b51d904
+  '@ecl/tabs': 598297b384631d2584caf2a745c65f986878ab1fa260dd0a727b9161679c125b
 
 importers:
 
@@ -2480,9 +2481,12 @@ importers:
       '@ecl/grid':
         specifier: 5.4.1
         version: 5.4.1
-      '@ecl/tabs':
+      '@ecl/slider':
         specifier: 5.4.1
         version: 5.4.1
+      '@ecl/tabs':
+        specifier: 5.4.1
+        version: 5.4.1(patch_hash=598297b384631d2584caf2a745c65f986878ab1fa260dd0a727b9161679c125b)
       '@ecl/theme-ec':
         specifier: 5.4.1
         version: 5.4.1
@@ -18736,7 +18740,7 @@ snapshots:
       '@ecl/spotlight': 5.4.1
       '@ecl/story-card': 5.4.1
       '@ecl/table': 5.4.1(@types/babel__core@7.20.5)(debug@4.4.3(supports-color@10.2.2))(eslint@9.39.2(jiti@1.21.7)(supports-color@10.2.2))(rolldown@1.2.18)(supports-color@10.2.2)
-      '@ecl/tabs': 5.4.1
+      '@ecl/tabs': 5.4.1(patch_hash=598297b384631d2584caf2a745c65f986878ab1fa260dd0a727b9161679c125b)
       '@ecl/tag': 5.4.1
       '@ecl/text-area': 5.4.1
       '@ecl/text-input': 5.4.1
@@ -18843,7 +18847,7 @@ snapshots:
       '@ecl/spotlight': 5.4.1
       '@ecl/story-card': 5.4.1
       '@ecl/table': 5.4.1(@types/babel__core@7.20.5)(debug@4.4.3(supports-color@7.2.0))(eslint@9.39.2(jiti@1.21.7)(supports-color@7.2.0))(rolldown@1.2.18)(supports-color@7.2.0)
-      '@ecl/tabs': 5.4.1
+      '@ecl/tabs': 5.4.1(patch_hash=598297b384631d2584caf2a745c65f986878ab1fa260dd0a727b9161679c125b)
       '@ecl/tag': 5.4.1
       '@ecl/text-area': 5.4.1
       '@ecl/text-input': 5.4.1
@@ -18949,7 +18953,7 @@ snapshots:
       '@ecl/spotlight': 5.4.1
       '@ecl/story-card': 5.4.1
       '@ecl/table': 5.4.1(@types/babel__core@7.20.5)(debug@4.4.3(supports-color@10.2.2))(eslint@9.39.2(jiti@1.21.7)(supports-color@10.2.2))(rolldown@1.2.18)(supports-color@10.2.2)
-      '@ecl/tabs': 5.4.1
+      '@ecl/tabs': 5.4.1(patch_hash=598297b384631d2584caf2a745c65f986878ab1fa260dd0a727b9161679c125b)
       '@ecl/tag': 5.4.1
       '@ecl/text-area': 5.4.1
       '@ecl/text-input': 5.4.1
@@ -19174,7 +19178,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ecl/tabs@5.4.1':
+  '@ecl/tabs@5.4.1(patch_hash=598297b384631d2584caf2a745c65f986878ab1fa260dd0a727b9161679c125b)':
     dependencies:
       '@ecl/button': 5.4.1
       '@ecl/dom-utils': 5.4.1

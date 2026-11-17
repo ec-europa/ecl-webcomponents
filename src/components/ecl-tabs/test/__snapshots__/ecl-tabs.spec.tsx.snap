@@ -19,8 +19,8 @@ exports[`ecl-tabs renders 1`] = `
           Tab 4
         </ecl-tabs-item>
         <div class="ecl-tabs__item ecl-tabs__item--more">
-          <div class="ecl-tabs__dropdown">
-            <div class="ecl-tabs__dropdown-list"></div>
+          <div class="ecl-tabs__dropdown sc-ecl-tabs-ec">
+            <div class="ecl-tabs__dropdown-list sc-ecl-tabs-ec"></div>
           </div>
         </div>
       </div>
@@ -36,30 +36,7 @@ exports[`ecl-tabs renders 1`] = `
         </button>
       </ecl-button>
     </div>
-    <div class="ecl-tabs__controls">
-      <ecl-button hide-label="" style-class="ecl-tabs__prev ecl-tabs__item--hidden sc-ecl-tabs-ec">
-        <!---->
-        <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-tabs__item--hidden ecl-tabs__prev sc-ecl-tabs-ec" type="button">
-          <span class="ecl-button__container">
-            <span class="ecl-button__label" data-ecl-label>
-              Previous
-            </span>
-            <ecl-icon icon="corner-arrow" rotate="270" size="s" slot="icon-after"></ecl-icon>
-          </span>
-        </button>
-      </ecl-button>
-      <ecl-button hide-label="" style-class="ecl-tabs__next ecl-tabs__item--hidden sc-ecl-tabs-ec">
-        <!---->
-        <button class="ecl-button ecl-button--icon-only ecl-button--tertiary ecl-tabs__item--hidden ecl-tabs__next sc-ecl-tabs-ec" type="button">
-          <span class="ecl-button__container">
-            <span class="ecl-button__label" data-ecl-label>
-              Next
-            </span>
-            <ecl-icon icon="corner-arrow" rotate="90" size="s" slot="icon-after"></ecl-icon>
-          </span>
-        </button>
-      </ecl-button>
-    </div>
+    <ecl-slider-pager hidelabel="" nextextraclasses="ecl-tabs__next sc-ecl-tabs-ec" prevextraclasses="ecl-tabs__prev sc-ecl-tabs-ec" size="m" srnext="Next" srprev="Previous" styleclass="ecl-tabs__controls sc-ecl-tabs-ec"></ecl-slider-pager>
   </div>
 </ecl-tabs>
 `;

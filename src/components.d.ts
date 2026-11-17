@@ -2260,7 +2260,7 @@ export namespace Components {
          */
         "dotExtraClasses": string;
         /**
-          * @default true
+          * @default false
          */
         "dots": boolean;
         /**
@@ -6058,7 +6058,7 @@ declare namespace LocalJSX {
          */
         "dotExtraClasses"?: string;
         /**
-          * @default true
+          * @default false
          */
         "dots"?: boolean;
         /**

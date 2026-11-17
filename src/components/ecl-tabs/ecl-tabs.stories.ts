@@ -7,16 +7,22 @@ export default {
 const Template = (args) => 
   `<ecl-tabs color-mode="${args.color_mode}">
     <ecl-tabs-item path="#tab-content-1">
-      Tab 1
+      Tab number 1
     </ecl-tabs-item>
     <ecl-tabs-item is-current path="#tab-content-2">
-      Tab 2
+      Tab number 2
     </ecl-tabs-item>
     <ecl-tabs-item path="#tab-content-3">
-      Tab 3
+      Tab number 3
     </ecl-tabs-item>
     <ecl-tabs-item path="#tab-content-4">
-      Tab 4
+      Tab number 4
+    </ecl-tabs-item>
+    <ecl-tabs-item path="#tab-content-5">
+      Tab number 5
+    </ecl-tabs-item>
+    <ecl-tabs-item path="#tab-content-6">
+      Tab number 6
     </ecl-tabs-item>
   </ecl-tabs>
   <div id="tab-content-1">
@@ -44,6 +50,16 @@ const Template = (args) =>
         <ecl-text>${loremIpsum({ count: 2, format: 'html', units: 'paragraphs', random: Math.random })}</ecl-text>
       </ecl-grid>
     </ecl-grid>
+  </div>
+  <div id="tab-content-5">
+    <ecl-text tag="h2" type="heading" level="2">Fifth tab content</ecl-text>
+    <img src="https://picsum.photos/300/200?${Math.random()}" alt="Random image">
+    <ecl-text>${loremIpsum({ count: 3, format: 'html', units: 'paragraphs', random: Math.random })}</ecl-text>
+  </div>
+  <div id="tab-content-6">
+    <ecl-text tag="h2" type="heading" level="2">Fifth tab content</ecl-text>
+    <img src="https://picsum.photos/300/200?${Math.random()}" alt="Random image">
+    <ecl-text>${loremIpsum({ count: 3, format: 'html', units: 'paragraphs', random: Math.random })}</ecl-text>
   </div>`;
 
 export const Tabs = Template.bind({});

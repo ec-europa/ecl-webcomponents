@@ -19,7 +19,7 @@ export class EclSliderPager {
   @Prop() srNext: string = '';
   @Prop() srPlay: string = '';
   @Prop() srPause: string = '';
-  @Prop() dots: boolean = true;
+  @Prop() dots: boolean = false;
   @Prop() playPause: boolean = false;
   @Prop() playIcon: string = 'play-filled';
   @Prop() pauseIcon: string = 'pause-filled';
