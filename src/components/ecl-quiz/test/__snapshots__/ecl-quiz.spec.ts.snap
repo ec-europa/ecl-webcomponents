@@ -450,7 +450,7 @@ exports[`ecl-quiz poll renders correctly 1`] = `
           </ecl-quiz-card>
         </div>
       </div>
-      <ecl-slider-pager dotextraclasses="ecl-quiz__dot" dotsextraclasses="ecl-quiz__dots" nextextraattributes="data-ecl-quiz-next" nextextraclasses="ecl-quiz__next sc-ecl-quiz-ec" prevextraattributes="data-ecl-quiz-prev" prevextraclasses="ecl-quiz__prev sc-ecl-quiz-ec" srnext="Next" srpause="Pause" srplay="Play" srprev="Previous" styleclass="ecl-quiz__pager sc-ecl-quiz-ec" templatedataattribute="data-ecl-quiz-dot-template"></ecl-slider-pager>
+      <ecl-slider-pager dotextraclasses="ecl-quiz__dot" dots="" dotsextraclasses="ecl-quiz__dots" nextextraattributes="data-ecl-quiz-next" nextextraclasses="ecl-quiz__next sc-ecl-quiz-ec" prevextraattributes="data-ecl-quiz-prev" prevextraclasses="ecl-quiz__prev sc-ecl-quiz-ec" srnext="Next" srpause="Pause" srplay="Play" srprev="Previous" styleclass="ecl-quiz__pager sc-ecl-quiz-ec" templatedataattribute="data-ecl-quiz-dot-template"></ecl-slider-pager>
       <div class="ecl-quiz__counter" dir="ltr"></div>
     </ecl-grid>
   </section>
