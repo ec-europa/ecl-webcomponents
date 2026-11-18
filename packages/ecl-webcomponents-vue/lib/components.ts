@@ -509,9 +509,7 @@ export const EclFormGroup: StencilVueComponent<JSX.EclFormGroup> = /*@__PURE__*/
   'tag',
   'name',
   'invalidIcon',
-  'labelClass',
-  'ariaLabelOptional',
-  'ariaLabelRequired'
+  'labelClass'
 ]);
 
 

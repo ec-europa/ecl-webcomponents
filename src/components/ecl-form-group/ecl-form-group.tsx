@@ -28,8 +28,6 @@ export class EclFormGroup {
   @Prop() name: string;
   @Prop() invalidIcon: string = 'warning-circle';
   @Prop() labelClass: string;
-  @Prop() ariaLabelOptional: string;
-  @Prop() ariaLabelRequired: string;
 
   getClass(): string {
     return [
@@ -72,15 +70,14 @@ export class EclFormGroup {
       >
       { this.label ?
         <this.labelTag
-          class={`ecl-form-label ${this.invalid ? 'ecl-form-label--invalid' : ''} ${this.hideLabel ? 'ecl-form-label--hidden' : ''} ${this.labelClass || ''}`}
-          {...(this.ariaLabelRequired ? { 'aria-label': this.ariaLabelRequired } : {})}
+          class="ecl-form-label-wrapper"
         >
-          {this.label}
+          <span class={`ecl-form-label ${this.invalid ? 'ecl-form-label--invalid' : ''} ${this.hideLabel ? 'ecl-form-label--hidden' : ''} ${this.labelClass || ''}`}>
+            {this.label}
+          </span>
       {this.required && this.requiredText ? (
         <span
           class="ecl-form-label__required"
-          role="note"
-          {...(this.ariaLabelRequired ? { 'aria-label': this.ariaLabelRequired } : {})}
         >
           {this.requiredText}
         </span>
@@ -88,10 +85,9 @@ export class EclFormGroup {
       { !this.required && this.optionalText ?
         <span
           class="ecl-form-label__optional"
-          role="note"
-          {...(this.ariaLabelOptional ? { 'aria-label': this.ariaLabelOptional } : {})}
         >
-          {this.optionalText}</span> : ''
+          {this.optionalText}
+        </span> : ''
       }
       { (this.labelTag === 'legend' && this.helperText) &&
         <div class="ecl-help-block--hidden">{ this.helperText }</div>

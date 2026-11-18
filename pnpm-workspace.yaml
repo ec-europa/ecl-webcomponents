@@ -35,7 +35,8 @@ minimumReleaseAgeExclude:
   - '@storybook/builder-vite@10.6.7'
   - '@storybook/html-vite@10.6.7'
   - '@storybook/html@10.6.7'
-  - puppeteer-core@25.17.0
-  - puppeteer@25.17.0
+  - puppeteer-core@25.17.0 || 25.18.1
+  - puppeteer@25.17.0 || 25.18.1
   - vite@8.3.8
   - vue-router@5.5.0
+  - '@stencil/core@4.45.4'

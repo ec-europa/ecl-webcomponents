@@ -881,8 +881,6 @@ export namespace Components {
         "theme": string;
     }
     interface EclFormGroup {
-        "ariaLabelOptional": string;
-        "ariaLabelRequired": string;
         "helperId": string;
         "helperText": string;
         /**
@@ -4667,8 +4665,6 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface EclFormGroup {
-        "ariaLabelOptional"?: string;
-        "ariaLabelRequired"?: string;
         "helperId"?: string;
         "helperText"?: string;
         /**
@@ -7171,8 +7167,6 @@ declare namespace LocalJSX {
         "name": string;
         "invalidIcon": string;
         "labelClass": string;
-        "ariaLabelOptional": string;
-        "ariaLabelRequired": string;
     }
     interface EclGalleryAttributes {
         "elId": string;
