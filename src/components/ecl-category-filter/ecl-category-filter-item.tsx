@@ -63,12 +63,12 @@ export class EclCategoryFilterItem {
         onClick={ev => this.clickedItem(ev)}
       >
       {this.path && !this.subItems && (
-        <ecl-link
-          styleClass={this.getLinkClass()}
-          path={this.path}
+        <a
+          class={this.getLinkClass()}
+          href={this.path}
         >
           {this.label}
-        </ecl-link>
+        </a>
       )}
 
       {!this.subItems && !this.path && (
