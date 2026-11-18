@@ -4,9 +4,11 @@ exports[`ecl-range renders 1`] = `
 <ecl-form-group helper-text="This is the input helper text" label="Label" required="" theme="ec">
   <!---->
   <div class="ecl-form-group sc-ecl-range-ec" data-ecl-auto-initialized="true" data-ecl-range="data-ecl-range">
-    <label class="ecl-form-label" for="input-id" id="input-id-label">
-      Label
-      <span class="ecl-form-label__required" role="note">
+    <label class="ecl-form-label-wrapper">
+      <span class="ecl-form-label" for="input-id" id="input-id-label">
+        Label
+      </span>
+      <span class="ecl-form-label__required">
         *
       </span>
     </label>
