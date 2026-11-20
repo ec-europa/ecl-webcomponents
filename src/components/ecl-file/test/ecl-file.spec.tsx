@@ -3,6 +3,7 @@ import { EclFile } from '../ecl-file';
 import { EclFileTranslations } from '../ecl-file-translations';
 import { EclFileTranslationsItem } from  '../ecl-file-translation-item';
 import { EclButton } from '../../ecl-button/ecl-button';
+import { EclLabel } from '../../ecl-label/ecl-label';
 import { EclIcon } from '../../ecl-icon/ecl-icon'
 
 describe('ecl-file', () => {
@@ -12,7 +13,7 @@ describe('ecl-file', () => {
 
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [EclFile, EclFileTranslations, EclFileTranslationsItem, EclButton, EclIcon],
+      components: [EclFile, EclFileTranslations, EclLabel, EclFileTranslationsItem, EclButton, EclIcon],
       html: `<ecl-file
         el-id="file-download-test"
         file-title="State of the Union 2018 brochure"
@@ -23,6 +24,8 @@ describe('ecl-file', () => {
         taxonomies-label="List"
         taxonomies='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"},"Taxonomy item 3"]'
         detail-meta='["Resource type", "Publication date"]'
+        labels-aria-label="File labels"
+        labels='[{"variant": "highlight", "label": "Highlight"}, {"variant": "low", "label": "Success"} ]'
       >
         <ecl-file-translations
           toggle-label="Other languages"

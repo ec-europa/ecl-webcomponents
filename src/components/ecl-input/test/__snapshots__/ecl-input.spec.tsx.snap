@@ -4,10 +4,9 @@ exports[`ecl-input renders 1`] = `
 <ecl-form-group helper-text="This is the form group helper text." label="Label" optional-text="(optional)" required="true" theme="ec">
   <!---->
   <div class="ecl-form-group">
-    <label class="ecl-form-label" for="input-id" id="input-id-label">
-      Label
-      <span class="ecl-form-label__required" role="note">
-        *
+    <label class="ecl-form-label-wrapper">
+      <span class="ecl-form-label" for="input-id" id="input-id-label">
+        Label
       </span>
     </label>
     <div class="ecl-help-block" id="input-id-helper">
@@ -23,13 +22,15 @@ exports[`ecl-input renders 1`] = `
 `;
 
 exports[`ecl-input renders correctly with extra attributes 1`] = `
-<ecl-form-group helper-text="This is the form group helper text." label="Label" optional-text="(optional)" required="true" theme="ec">
+<ecl-form-group helper-text="This is the form group helper text." label="Label" optional-text="(optional)" required="true" required-text="(required)" theme="ec">
   <!---->
   <div class="ecl-form-group">
-    <label class="ecl-form-label" for="input-id" id="input-id-label">
-      Label
-      <span class="ecl-form-label__required" role="note">
-        *
+    <label class="ecl-form-label-wrapper">
+      <span class="ecl-form-label" for="input-id" id="input-id-label">
+        Label
+      </span>
+      <span class="ecl-form-label__required">
+        (required)
       </span>
     </label>
     <div class="ecl-help-block" id="input-id-helper">

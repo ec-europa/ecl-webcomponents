@@ -24,14 +24,14 @@ exports[`ecl-carousel renders 1`] = `
               <ecl-button button-style="neutral" hide-label="" size="m" style-class="ecl-slider-pager__prev sc-ecl-slider-pager-ec ecl-carousel__prev sc-ecl-carousel-ec" type="button" variant="tertiary">
                 Prev slides
                 <ecl-icon slot="icon-after">
-                  <span class="ecl-icon ecl-icon--xs wt-icon--monochrome wt-icon--placeholder wt-icon-phosphor--caret-left"></span>
+                  <span class="ecl-icon ecl-icon--xs wt-icon--placeholder wt-icon-phosphor--caret-left"></span>
                 </ecl-icon>
               </ecl-button>
               <div class="ecl-carousel__dots ecl-slider-pager__dots sc-ecl-carousel-ec"></div>
               <ecl-button button-style="neutral" hide-label="" size="m" style-class="ecl-slider-pager__next sc-ecl-slider-pager-ec ecl-carousel__next sc-ecl-carousel-ec" type="button" variant="tertiary">
                 Next slides
                 <ecl-icon slot="icon-after">
-                  <span class="ecl-icon ecl-icon--xs wt-icon--monochrome wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
+                  <span class="ecl-icon ecl-icon--xs wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
                 </ecl-icon>
               </ecl-button><script data-ecl-carousel-dot-template data-ecl-slider-dot-template type="text/template"><button class="ecl-carousel__dot ecl-slider-pager__dot sc-ecl-carousel-ec"></button></script>
             </ecl-slider-pager>

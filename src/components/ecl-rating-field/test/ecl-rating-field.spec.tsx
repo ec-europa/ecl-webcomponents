@@ -8,10 +8,9 @@ describe('ecl-rating-field', () => {
       components: [EclRatingField, EclRatingStar],
       html: `<ecl-rating-field
         required
-        theme="ec"
+        required-text="(required)"
       >
         <ecl-rating-star
-          theme="ec"
           value="1"
           item-id="item-id-1"
           label="1 stars"
@@ -19,7 +18,6 @@ describe('ecl-rating-field', () => {
         >
         </ecl-rating-star>
         <ecl-rating-star
-          theme="ec"
           value="2"
           item-id="item-id-2"
           label="2 stars"
@@ -27,7 +25,6 @@ describe('ecl-rating-field', () => {
         >
         </ecl-rating-star>
         <ecl-rating-star
-          theme="ec"
           value="3"
           item-id="item-id-3"
           label="3 stars"
@@ -35,7 +32,6 @@ describe('ecl-rating-field', () => {
         >
         </ecl-rating-star>
         <ecl-rating-star
-          theme="ec"
           value="4"
           item-id="item-id-4"
           label="4 stars"
@@ -43,7 +39,6 @@ describe('ecl-rating-field', () => {
         >
         </ecl-rating-star>
         <ecl-rating-star
-          theme="ec"
           value="5"
           item-id="item-id-5"
           label="5 stars"

@@ -84,7 +84,7 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item link="/example.html">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Home
               </a>
             </li>
@@ -92,16 +92,16 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item current="" has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li class="ecl-menu__item ecl-menu__item--current sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Item 2 label
               </a>
-              <ecl-button data-ecl-menu-caret>
+              <ecl-button aria-haspopup="true" data-ecl-menu-caret>
                 <!---->
-                <button class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button aria-haspopup="true" class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
-                      <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180"></span>
+                      <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
                     </ecl-icon>
                   </span>
                 </button>
@@ -138,7 +138,7 @@ exports[`ecl-menu renders 1`] = `
                       <a class="ecl-link--icon-after ecl-link--standalone ecl-menu__sublink sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                         Item 2.4
                         <ecl-icon>
-                          <span class="ecl-icon ecl-icon--xs ecl-menu__link-icon--external ecl-menu__sublink-icon sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--external wt-icon--placeholder"></span>
+                          <span class="ecl-icon ecl-icon--xs ecl-menu__link-icon--external ecl-menu__sublink-icon sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--placeholder wt-icon-phosphor--arrow-square-out"></span>
                         </ecl-icon>
                       </a>
                     </li>
@@ -150,16 +150,16 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Principles, countries, history
               </a>
-              <ecl-button data-ecl-menu-caret>
+              <ecl-button aria-haspopup="true" data-ecl-menu-caret>
                 <!---->
-                <button class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button aria-haspopup="true" class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
-                      <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180"></span>
+                      <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
                     </ecl-icon>
                   </span>
                 </button>
@@ -197,7 +197,7 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item link="/example.html">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Institutions, law, budget
               </a>
             </li>
@@ -205,16 +205,16 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Priorities and actions
               </a>
-              <ecl-button data-ecl-menu-caret>
+              <ecl-button aria-haspopup="true" data-ecl-menu-caret>
                 <!---->
-                <button class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button aria-haspopup="true" class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
-                      <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180"></span>
+                      <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
                     </ecl-icon>
                   </span>
                 </button>
@@ -260,16 +260,16 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Live, work, study
               </a>
-              <ecl-button data-ecl-menu-caret>
+              <ecl-button aria-haspopup="true" data-ecl-menu-caret>
                 <!---->
-                <button class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button aria-haspopup="true" class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
-                      <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180"></span>
+                      <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
                     </ecl-icon>
                   </span>
                 </button>
@@ -427,16 +427,16 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 News and events
               </a>
-              <ecl-button data-ecl-menu-caret>
+              <ecl-button aria-haspopup="true" data-ecl-menu-caret>
                 <!---->
-                <button class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button aria-haspopup="true" class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
-                      <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180"></span>
+                      <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
                     </ecl-icon>
                   </span>
                 </button>
@@ -514,16 +514,16 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 European years
               </a>
-              <ecl-button data-ecl-menu-caret>
+              <ecl-button aria-haspopup="true" data-ecl-menu-caret>
                 <!---->
-                <button class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button aria-haspopup="true" class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
-                      <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180"></span>
+                      <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
                     </ecl-icon>
                   </span>
                 </button>
@@ -553,16 +553,16 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Visit a European Union institution
               </a>
-              <ecl-button data-ecl-menu-caret>
+              <ecl-button aria-haspopup="true" data-ecl-menu-caret>
                 <!---->
-                <button class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button aria-haspopup="true" class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
-                      <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180"></span>
+                      <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
                     </ecl-icon>
                   </span>
                 </button>
@@ -592,16 +592,16 @@ exports[`ecl-menu renders 1`] = `
           <ecl-menu-item has-children="" link="/example.html" trigger-aria-label="Access item's children">
             <!---->
             <li class="ecl-menu__item sc-ecl-menu-ec" data-ecl-has-children data-ecl-menu-item data-expanded="false" style="align-items: unset;">
-              <a class="ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
+              <a class="ecl-link ecl-link--standalone ecl-menu__link sc-ecl-link-ec sc-ecl-menu-ec" data-ecl-menu-link href="/example.html">
                 Jobs &amp; traineeships in EU institutions
               </a>
-              <ecl-button data-ecl-menu-caret>
+              <ecl-button aria-haspopup="true" data-ecl-menu-caret>
                 <!---->
-                <button class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
+                <button aria-haspopup="true" class="ecl-button ecl-button--icon-only ecl-button--m ecl-button--neutral ecl-button--tertiary ecl-menu__button-caret sc-ecl-menu-ec" data-ecl-menu-caret="eclMenuCaret" type="button">
                   <span class="ecl-button__container">
                     <span class="ecl-button__label" data-ecl-label></span>
                     <ecl-icon slot="icon-after">
-                      <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--corner-arrow wt-icon--placeholder wt-icon--rotate-180"></span>
+                      <span class="ecl-button__icon ecl-icon ecl-icon--xs sc-ecl-button-ec sc-ecl-icon-ec sc-ecl-menu-ec wt-icon--placeholder wt-icon-phosphor--caret-right"></span>
                     </ecl-icon>
                   </span>
                 </button>

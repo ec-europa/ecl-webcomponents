@@ -6,7 +6,7 @@ exports[`ecl-accordion renders 1`] = `
   <div class="ecl-accordion">
     <ecl-accordion-item label="Protecting citizens and freedoms">
       <!---->
-      <details class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
+      <details class="ecl-accordion__item is-first sc-ecl-accordion-ec">
         <summary class="ecl-accordion__toggle sc-ecl-accordion-ec">
           Protecting citizens and freedoms
           <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
@@ -23,7 +23,7 @@ exports[`ecl-accordion renders 1`] = `
     </ecl-accordion-item>
     <ecl-accordion-item expanded="" label="Developing a strong and vibrant economic base">
       <!---->
-      <details class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
+      <details class="ecl-accordion__item sc-ecl-accordion-ec">
         <summary class="ecl-accordion__toggle sc-ecl-accordion-ec">
           Developing a strong and vibrant economic base
           <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
@@ -40,7 +40,7 @@ exports[`ecl-accordion renders 1`] = `
     </ecl-accordion-item>
     <ecl-accordion-item label="Building a climate-neutral, green, fair and social Europe">
       <!---->
-      <details class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
+      <details class="ecl-accordion__item sc-ecl-accordion-ec">
         <summary class="ecl-accordion__toggle sc-ecl-accordion-ec">
           Building a climate-neutral, green, fair and social Europe
           <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">
@@ -57,7 +57,7 @@ exports[`ecl-accordion renders 1`] = `
     </ecl-accordion-item>
     <ecl-accordion-item label="Promoting European interests and values on the global stage">
       <!---->
-      <details class="ecl-accordion__item is-first is-last sc-ecl-accordion-ec">
+      <details class="ecl-accordion__item is-last sc-ecl-accordion-ec">
         <summary class="ecl-accordion__toggle sc-ecl-accordion-ec">
           Promoting European interests and values on the global stage
           <ecl-icon style-class="ecl-accordion__toggle-icon ecl-accordion__toggle-icon--plus sc-ecl-accordion-ec">

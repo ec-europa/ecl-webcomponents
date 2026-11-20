@@ -1,4 +1,4 @@
-import { Component, Prop, Element, h } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core';
 
 @Component({
   tag: 'ecl-accordion-item',
@@ -8,7 +8,6 @@ import { Component, Prop, Element, h } from '@stencil/core';
 })
 
 export class EclAccordionItem {
-  @Element() el: HTMLElement;
   @Prop() styleClass: string;
   @Prop() label: string;
   @Prop() sidebar: boolean = false;

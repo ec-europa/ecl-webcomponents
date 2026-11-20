@@ -22,6 +22,7 @@ Expandable.args = {
     opportunities.</p>`,
 };
 Expandable.argTypes = {
+  color_mode: { table: { disable: true } },
   elId: {
     name: 'el-id',
     description: 'Id of the element',

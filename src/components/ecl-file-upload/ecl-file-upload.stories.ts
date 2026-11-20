@@ -104,6 +104,7 @@ const Template = args =>
   label="${args.label}"
   required=${args.required}
   optional-text="(optional)"
+  required-text="(required)"
   helper-text="This is the input's helper text."
   invalid=${args.invalid}
   disabled=${args.disabled}

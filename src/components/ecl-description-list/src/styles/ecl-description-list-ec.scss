@@ -29,7 +29,11 @@
   margin-inline-end: 0.5rem !important;
 }
 
-.ecl-description-list--horizontal.sc-ecl-description-list-ec .ecl-description-list__term.sc-ecl-description-list-ec,
-.ecl-description-list--horizontal.sc-ecl-description-list-ec .ecl-description-list__definition.sc-ecl-description-list-ec {
-  margin-top: var(--s-l);
+@container ecl-list-container (width >= 996px) {
+  .ecl-description-list--horizontal .ecl-description-list__content {
+    .ecl-description-list__term:first-of-type,
+    .ecl-description-list__definition:first-of-type {
+      margin-block-start: var(--s-l);
+    }
+  }
 }

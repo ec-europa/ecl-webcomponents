@@ -178,9 +178,10 @@ export class EclGallery {
               {this.closeLabel}
               <ecl-icon
                 style-class={`sc-ecl-gallery-${this.theme}`}
-                icon="close"
+                icon="x"
                 size="m"
                 slot="icon-after"
+                family="phosphor"
               ></ecl-icon>
             </ecl-button>
           </header>
@@ -214,8 +215,8 @@ export class EclGallery {
                         style-class={`sc-ecl-gallery-${this.theme}`}
                         slot="icon-before"
                         size="s"
-                        rotate="270"
-                        icon="corner-arrow"
+                        icon="caret-left"
+                        family="phosphor"
                       ></ecl-icon>
                       {this.prevLabel}
                     </ecl-button>
@@ -233,7 +234,8 @@ export class EclGallery {
                       slot="icon-after"
                       size="s"
                       rotate="90"
-                      icon="corner-arrow"
+                      icon="caret-right"
+                      family="phosphor"
                     ></ecl-icon>
                   </ecl-button>
                 </div>       
@@ -247,11 +249,11 @@ export class EclGallery {
                   >
                     {this.fullScreenLabel}
                     <ecl-icon
-                      icon="fullscreen"
+                      icon="arrows-out"
                       size="fluid"
                       slot="icon-after"
+                      family="phosphor"
                     ></ecl-icon>
-
                   </ecl-link>
                 { this.shareLabel ? 
                   <ecl-link
@@ -263,7 +265,8 @@ export class EclGallery {
                   >
                     {this.shareLabel}
                     <ecl-icon
-                      icon="share"
+                      icon="share-network"
+                      family="phosphor"
                       size="fluid"
                       slot="icon-after"
                     ></ecl-icon>

@@ -140,9 +140,10 @@ export class EclSiteHeader {
                       href={this.loginLink}
                     >
                       <ecl-icon
-                        icon={this.logged ? 'logged-in' : 'log-in'}
+                        icon={this.logged ? 'user-check' : 'user'}
                         size="m"
                         as-image
+                        family="phosphor"
                         slot="icon-before"
                         style-class={`ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
                       >
@@ -197,7 +198,8 @@ export class EclSiteHeader {
                     >
                       <span class="ecl-site-header__language-icon">
                         <ecl-icon
-                          icon="global"
+                          icon="globe-simple"
+                          family="phosphor"
                           size="m"
                           style-class={`ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
                         ></ecl-icon>
@@ -234,7 +236,8 @@ export class EclSiteHeader {
                             size="m"
                             style-class={`sc-ecl-site-header-${this.theme}`}
                             data-ecl-icon
-                            icon="close"
+                            icon="x"
+                            family="phosphor"
                           ></ecl-icon>
                         </ecl-button>
                       </div>
@@ -288,7 +291,8 @@ export class EclSiteHeader {
                       
                     >
                       <ecl-icon
-                        icon="search"
+                        icon="magnifying-glass"
+                        family="phosphor"
                         style-class={`ecl-site-header__icon sc-ecl-site-header-${this.theme}`}
                         size="s"
                         slot="icon-after"

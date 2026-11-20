@@ -99,6 +99,7 @@ export class EclCarousel {
                   srPlay={this.srPlay}
                   srPause={this.srPause}
                   size="m"
+                  dots
                   hideLabel
                   playPause
                   templateDataAttribute="data-ecl-carousel-dot-template"

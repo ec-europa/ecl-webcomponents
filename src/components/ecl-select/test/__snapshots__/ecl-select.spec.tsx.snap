@@ -1,13 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-select renders 1`] = `
-<ecl-form-group helper-id="helper-id" helper-text="Helper text" label="Select input field" required="">
+<ecl-form-group helper-id="helper-id" helper-text="Helper text" label="Select input field" required="" required-text="(required)">
   <!---->
   <div aria-describedby="helper-id" class="ecl-form-group">
-    <label class="ecl-form-label">
-      Select input field
-      <span class="ecl-form-label__required" role="note">
-        *
+    <label class="ecl-form-label-wrapper">
+      <span class="ecl-form-label">
+        Select input field
+      </span>
+      <span class="ecl-form-label__required">
+        (required)
       </span>
     </label>
     <div class="ecl-help-block">

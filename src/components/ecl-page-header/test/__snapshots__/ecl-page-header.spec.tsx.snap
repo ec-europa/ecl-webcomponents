@@ -19,14 +19,14 @@ exports[`ecl-page-header renders correctly with description at the bottom 1`] = 
                     Home
                   </a>
                 </ecl-link>
-                <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+                <ecl-icon family="phosphor" icon="caret-right" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
               </ecl-breadcrumb-item>
               <ecl-breadcrumb-item aria-hidden="true" button-aria-label="Click to expand" class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-ellipsis ellipsis="" style-class="ecl-breadcrumb__segment--ellipsis">
                 <!---->
                 <ecl-button aria-label="Click to expand" data-ecl-breadcrumb-ellipsis-button style-class="ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-ec" variant="ghost">
                   ...
                 </ecl-button>
-                <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+                <ecl-icon family="phosphor" icon="caret-right" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
               </ecl-breadcrumb-item>
               <ecl-breadcrumb-item class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" path="/example.html" theme="ec" variant="negative">
                 <!---->
@@ -36,7 +36,7 @@ exports[`ecl-page-header renders correctly with description at the bottom 1`] = 
                     About the European Commission
                   </a>
                 </ecl-link>
-                <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+                <ecl-icon family="phosphor" icon="caret-right" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
               </ecl-breadcrumb-item>
             </div>
           </nav>
@@ -86,14 +86,14 @@ exports[`ecl-page-header renders correctly with image at the bottom 1`] = `
                     Home
                   </a>
                 </ecl-link>
-                <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+                <ecl-icon family="phosphor" icon="caret-right" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
               </ecl-breadcrumb-item>
               <ecl-breadcrumb-item aria-hidden="true" button-aria-label="Click to expand" class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-ellipsis ellipsis="" style-class="ecl-breadcrumb__segment--ellipsis">
                 <!---->
                 <ecl-button aria-label="Click to expand" data-ecl-breadcrumb-ellipsis-button style-class="ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-ec" variant="ghost">
                   ...
                 </ecl-button>
-                <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+                <ecl-icon family="phosphor" icon="caret-right" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
               </ecl-breadcrumb-item>
               <ecl-breadcrumb-item class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" path="/example.html" theme="ec" variant="negative">
                 <!---->
@@ -103,7 +103,7 @@ exports[`ecl-page-header renders correctly with image at the bottom 1`] = `
                     About the European Commission
                   </a>
                 </ecl-link>
-                <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+                <ecl-icon family="phosphor" icon="caret-right" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
               </ecl-breadcrumb-item>
             </div>
           </nav>
@@ -153,14 +153,14 @@ exports[`ecl-page-header renders correctly with image beside 1`] = `
                     Home
                   </a>
                 </ecl-link>
-                <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+                <ecl-icon family="phosphor" icon="caret-right" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
               </ecl-breadcrumb-item>
               <ecl-breadcrumb-item aria-hidden="true" button-aria-label="Click to expand" class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-ellipsis ellipsis="" style-class="ecl-breadcrumb__segment--ellipsis">
                 <!---->
                 <ecl-button aria-label="Click to expand" data-ecl-breadcrumb-ellipsis-button style-class="ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-ec" variant="ghost">
                   ...
                 </ecl-button>
-                <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+                <ecl-icon family="phosphor" icon="caret-right" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
               </ecl-breadcrumb-item>
               <ecl-breadcrumb-item class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" path="/example.html" theme="ec" variant="negative">
                 <!---->
@@ -170,7 +170,7 @@ exports[`ecl-page-header renders correctly with image beside 1`] = `
                     About the European Commission
                   </a>
                 </ecl-link>
-                <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+                <ecl-icon family="phosphor" icon="caret-right" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
               </ecl-breadcrumb-item>
             </div>
           </nav>
@@ -221,14 +221,14 @@ exports[`ecl-page-header renders correctly with image on top 1`] = `
                     Home
                   </a>
                 </ecl-link>
-                <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+                <ecl-icon family="phosphor" icon="caret-right" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
               </ecl-breadcrumb-item>
               <ecl-breadcrumb-item aria-hidden="true" button-aria-label="Click to expand" class="ecl-breadcrumb__segment ecl-breadcrumb__segment--ellipsis sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" data-ecl-breadcrumb-ellipsis ellipsis="" style-class="ecl-breadcrumb__segment--ellipsis">
                 <!---->
                 <ecl-button aria-label="Click to expand" data-ecl-breadcrumb-ellipsis-button style-class="ecl-breadcrumb__ellipsis sc-ecl-breadcrumb-ec" variant="ghost">
                   ...
                 </ecl-button>
-                <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+                <ecl-icon family="phosphor" icon="caret-right" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
               </ecl-breadcrumb-item>
               <ecl-breadcrumb-item class="ecl-breadcrumb__segment sc-ecl-breadcrumb-ec sc-ecl-page-header-ec" path="/example.html" theme="ec" variant="negative">
                 <!---->
@@ -238,7 +238,7 @@ exports[`ecl-page-header renders correctly with image on top 1`] = `
                     About the European Commission
                   </a>
                 </ecl-link>
-                <ecl-icon icon="corner-arrow" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
+                <ecl-icon family="phosphor" icon="caret-right" rotate="90" size="fluid" style-class="ecl-breadcrumb__icon sc-ecl-breadcrumb-ec"></ecl-icon>
               </ecl-breadcrumb-item>
             </div>
           </nav>

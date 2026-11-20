@@ -46,7 +46,6 @@
  - [ecl-animated-numbers-item](../ecl-animated-numbers)
  - [ecl-banner](../ecl-banner)
  - [ecl-breadcrumb-item](../ecl-breadcrumb)
- - [ecl-category-filter-item](../ecl-category-filter)
  - [ecl-description-list-definition](../ecl-description-list)
  - [ecl-fact-figures](../ecl-fact-figures)
  - [ecl-fact-figures-item](../ecl-fact-figures)
@@ -86,7 +85,6 @@ graph TD;
   ecl-animated-numbers-item --> ecl-link
   ecl-banner --> ecl-link
   ecl-breadcrumb-item --> ecl-link
-  ecl-category-filter-item --> ecl-link
   ecl-description-list-definition --> ecl-link
   ecl-fact-figures --> ecl-link
   ecl-fact-figures-item --> ecl-link

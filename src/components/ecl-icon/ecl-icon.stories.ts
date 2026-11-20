@@ -1,4 +1,4 @@
-import iconsAllEc from '@ecl/resources-icons/list.json';
+import iconsAllEc from '@ecl/resources-icons/list-phosphor.json';
 
 export default {
   title: 'Components/icon',
@@ -7,10 +7,10 @@ export default {
 const Template = (args) => {
   let iconHtml = `<ecl-icon 
       icon="${args.icon}"
-      sprite="${args.sprite}"
       color="${args.color}"
       size="${args.size}"
       flip="${args.flip}"
+      family="phosphor"
       rotate="${args.rotate}"
       title="${args.title}"
     ></ecl-icon>`;
@@ -25,10 +25,9 @@ const Template = (args) => {
 export const Icon = Template.bind({});
 Icon.storyName = 'default';
 Icon.args = {
-  icon: 'close',
+  icon: 'x',
   rotate: '',
   flip: '',
-  sprite: '',
   color: 'default',
   size: '2xl',
   title: '',
@@ -39,23 +38,6 @@ Icon.argTypes = {
     type: { name: 'select' },
     options: iconsAllEc,
     description: "Add an icon",
-  },
-  sprite: {
-    type: { name: 'select' },
-    options: [
-      '',
-      'build/images/icons.svg',
-    ],
-    control: {
-      labels: {
-        '': 'none',
-        'build/images/icons.svg': 'icons',
-      },
-    },
-    mapping: {
-      none: '',
-      icons: 'build/images/icons.svg'
-    },
   },
   size: {
     type: { name: 'select' },

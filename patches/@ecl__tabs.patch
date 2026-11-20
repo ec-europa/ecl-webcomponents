@@ -1,39 +1,31 @@
 diff --git a/tabs.js b/tabs.js
-index e7e09a7797ada74800b38a2f2ffb00a00793c3b3..480a03e5b7dbe37b71021f01d1fe90b78741643a 100644
+index a5088452eace17e7220a3cfe01a388bb6f654704..620fb90a77a4578c3ece6e384a13c8b34baa1883 100644
 --- a/tabs.js
 +++ b/tabs.js
-@@ -144,16 +144,27 @@ export class Tabs {
+@@ -152,7 +152,7 @@ export class Tabs {
        this.dropdownList = document.createElement('div');
        this.dropdownList.classList.add('ecl-tabs__dropdown-list');
        this.listItems.forEach((item) => {
--        const clone = item.cloneNode(true);
--        const cloneLink = clone.querySelector('a');
--        if (cloneLink && cloneLink.id) {
--          cloneLink.setAttribute('data-id', cloneLink.id);
--          cloneLink.removeAttribute('id');
+-        const originalLink = queryOne('.ecl-link', item);
 +        const originalLink = item.querySelector('.ecl-link');
-+        if (!originalLink) return;
-+
-+        const li = document.createElement('div');
-+        li.className = 'ecl-tabs__item';
-+
-+        const a = document.createElement('a');
-+        a.className = originalLink.className;
-+        a.href = originalLink.getAttribute('href');
-+        a.textContent = originalLink.textContent?.trim() ?? '';
-+
-+        if (originalLink.id) {
-+          a.dataset.id = originalLink.id;
-         }
+         if (!originalLink) return;
  
--        clone.addEventListener('click', this.handleClickOnTabs);
--        this.dropdownList.appendChild(clone);
-+        li.appendChild(a);
-+        li.addEventListener('click', this.handleClickOnTabs);
-+
-+        this.dropdownList.appendChild(li);
-       });
-+
-       this.dropdown.appendChild(this.dropdownList);
-       this.moreItem.appendChild(this.dropdown);
-       this.dropdownItems = queryAll(
+         const li = document.createElement('div');
+@@ -160,16 +160,12 @@ export class Tabs {
+ 
+         const a = document.createElement('a');
+         a.className = originalLink.className;
+-        a.setAttribute('role', 'tab');
+-        a.setAttribute('aria-selected', 'false');
+-        a.setAttribute('tabindex', '-1');
+         a.href = originalLink.getAttribute('href');
+-        // This will only copy text, not any markup used as the label of the link
+         a.textContent = originalLink.textContent?.trim() ?? '';
+ 
+         if (originalLink.id) {
+           a.dataset.id = originalLink.id;
+-        }
++         }
+ 
+         li.appendChild(a);
+         li.addEventListener('click', this.handleClickOnTabs);

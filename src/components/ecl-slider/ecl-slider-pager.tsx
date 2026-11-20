@@ -19,7 +19,7 @@ export class EclSliderPager {
   @Prop() srNext: string = '';
   @Prop() srPlay: string = '';
   @Prop() srPause: string = '';
-  @Prop() dots: boolean = true;
+  @Prop() dots: boolean = false;
   @Prop() playPause: boolean = false;
   @Prop() playIcon: string = 'play-filled';
   @Prop() pauseIcon: string = 'pause-filled';
@@ -115,7 +115,6 @@ export class EclSliderPager {
           <ecl-icon
             icon="caret-left"
             family="phosphor"
-            color="monochrome"
             slot="icon-after"
           ></ecl-icon>
         </ecl-button>
@@ -137,7 +136,6 @@ export class EclSliderPager {
           <ecl-icon
             icon="caret-right"
             family="phosphor"
-            color="monochrome"
             slot="icon-after"
           ></ecl-icon>
         </ecl-button>

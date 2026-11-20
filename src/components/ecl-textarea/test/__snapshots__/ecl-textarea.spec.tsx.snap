@@ -1,11 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-textarea renders 1`] = `
-<ecl-form-group helper-id="helper-id" helper-text="Helper text" label="Select input field">
+<ecl-form-group helper-id="helper-id" helper-text="Helper text" label="Select input field" required-text="(required)">
   <!---->
   <div aria-describedby="helper-id" class="ecl-form-group">
-    <label class="ecl-form-label">
-      Select input field
+    <label class="ecl-form-label-wrapper">
+      <span class="ecl-form-label">
+        Select input field
+      </span>
     </label>
     <div class="ecl-help-block">
       Helper text

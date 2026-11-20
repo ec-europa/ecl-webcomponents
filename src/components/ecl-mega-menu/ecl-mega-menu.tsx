@@ -85,15 +85,17 @@ export class EclMegaMenu {
           >
             <ecl-icon
               style-class={`sc-ecl-mega-menu-${this.theme} is-first`}
-              icon="hamburger"
+              icon="list"
               size="m"
               slot="icon-after"
+              family="phosphor"
             ></ecl-icon>
             <ecl-icon
               style-class={`sc-ecl-mega-menu-${this.theme}`}
-              icon="close"
+              icon="x"
               size="m"
               slot="icon-after"
+              family="phosphor"
             ></ecl-icon>
               {this.toggleLabel}
           </ecl-button>
@@ -111,9 +113,9 @@ export class EclMegaMenu {
                   data-ecl-mega-menu-back
                 >
                   <ecl-icon
-                    icon="corner-arrow"
+                    icon="caret-left"
+                    family="phosphor"
                     size="xs"
-                    rotate="270"
                     style-class={`sc-ecl-mega-menu-${this.theme}`}
                   ></ecl-icon>
                   {this.backLabel}

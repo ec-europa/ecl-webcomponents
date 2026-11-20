@@ -12,7 +12,7 @@ exports[`ecl-add-to-calendar renders 1`] = `
         <ul class="ecl-add-to-calendar__meta-list">
           <li class="ecl-add-to-calendar__meta-item">
             <ecl-icon style-class="ecl-add-to-calendar__meta-icon sc-ecl-add-to-calendar-ec">
-              <span class="ecl-add-to-calendar__meta-icon ecl-icon ecl-icon--s sc-ecl-add-to-calendar-ec wt-icon--calendar wt-icon--placeholder"></span>
+              <span class="ecl-add-to-calendar__meta-icon ecl-icon ecl-icon--s sc-ecl-add-to-calendar-ec wt-icon--placeholder wt-icon-phosphor--calendar"></span>
             </ecl-icon>
             <span class="ecl-add-to-calendar__meta-label">
               March 15-17 2026
@@ -20,7 +20,7 @@ exports[`ecl-add-to-calendar renders 1`] = `
           </li>
           <li class="ecl-add-to-calendar__meta-item">
             <ecl-icon style-class="ecl-add-to-calendar__meta-icon sc-ecl-add-to-calendar-ec">
-              <span class="ecl-add-to-calendar__meta-icon ecl-icon ecl-icon--s sc-ecl-add-to-calendar-ec wt-icon--clock wt-icon--placeholder"></span>
+              <span class="ecl-add-to-calendar__meta-icon ecl-icon ecl-icon--s sc-ecl-add-to-calendar-ec wt-icon--placeholder wt-icon-phosphor--clock"></span>
             </ecl-icon>
             <span class="ecl-add-to-calendar__meta-label">
               2:00 PM - 4:00 PM
@@ -28,7 +28,7 @@ exports[`ecl-add-to-calendar renders 1`] = `
           </li>
           <li class="ecl-add-to-calendar__meta-item">
             <ecl-icon style-class="ecl-add-to-calendar__meta-icon sc-ecl-add-to-calendar-ec">
-              <span class="ecl-add-to-calendar__meta-icon ecl-icon ecl-icon--s sc-ecl-add-to-calendar-ec wt-icon--location wt-icon--placeholder"></span>
+              <span class="ecl-add-to-calendar__meta-icon ecl-icon ecl-icon--s sc-ecl-add-to-calendar-ec wt-icon--placeholder wt-icon-phosphor--location"></span>
             </ecl-icon>
             <span class="ecl-add-to-calendar__meta-label">
               San Francisco, CA

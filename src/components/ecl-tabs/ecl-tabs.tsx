@@ -48,6 +48,15 @@ export class EclTabs {
       const tabs = new Tabs(this.el.firstElementChild);
       tabs.init();
     }
+
+    const clones = this.el.querySelectorAll('.ecl-tabs__dropdown-list .ecl-tabs__item');
+    Array.from(clones).forEach((clone) => {;
+      clone.classList.add(`sc-ecl-tabs-${this.theme}`);
+    });
+    const dropdown = this.el.querySelector('.ecl-tabs__dropdown');
+    dropdown?.classList.add(`sc-ecl-tabs-${this.theme}`);
+    const dropdownList = this.el.querySelector('.ecl-tabs__dropdown-list');
+    dropdownList?.classList.add(`sc-ecl-tabs-${this.theme}`);
   }
 
   render() {
@@ -76,36 +85,15 @@ export class EclTabs {
             ></ecl-icon>
           </ecl-button>
         </div>
-        <div class="ecl-tabs__controls">
-          <ecl-button
-            variant="tertiary"
-            type="button"
-            hide-label
-            style-class={`ecl-tabs__prev ecl-tabs__item--hidden sc-ecl-tabs-${this.theme}`}
-          >
-            {this.prevLabel}
-            <ecl-icon
-              slot="icon-after"
-              icon="corner-arrow"
-              size="s"
-              rotate="270"
-            ></ecl-icon>
-          </ecl-button>
-          <ecl-button
-            variant="tertiary"
-            type="button"
-            hide-label
-            style-class={`ecl-tabs__next ecl-tabs__item--hidden sc-ecl-tabs-${this.theme}`}
-          >
-            {this.nextLabel}
-            <ecl-icon
-              slot="icon-after"
-              icon="corner-arrow"
-              size="s"
-              rotate="90"
-            ></ecl-icon>
-          </ecl-button>
-        </div>
+        <ecl-slider-pager
+          styleClass={`ecl-tabs__controls sc-ecl-tabs-${this.theme}`}
+          prevExtraClasses={`ecl-tabs__prev sc-ecl-tabs-${this.theme}`}
+          nextExtraClasses={`ecl-tabs__next sc-ecl-tabs-${this.theme}`}
+          srPrev={this.prevLabel}
+          srNext={this.nextLabel}
+          size="m"
+          hideLabel
+        ></ecl-slider-pager>
       </div>
     )
   }

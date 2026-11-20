@@ -172,7 +172,8 @@ export class EclInput {
             <ecl-icon
               style-class={`ecl-checkbox__icon sc-ecl-input-${this.theme}`}
               icon="check"
-              size="m"
+              family="phosphor"
+              size="xs"
               ></ecl-icon>
           </span>
           <span class="ecl-checkbox__text">{this.label}</span>

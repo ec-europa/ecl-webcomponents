@@ -32,6 +32,7 @@ export class EclFile {
   @Prop() imageAlt: string;
   @Prop() ariaLabel: string;
   @Prop() labels: string;
+  @Prop() labelsAriaLabel: string;
   @Prop() taxonomies: string;
   @Prop() taxonomiesLabel: string;
   @Prop() noScript: boolean = false;
@@ -68,21 +69,44 @@ export class EclFile {
     if (!labelsArray?.length) {
       return null;
     }
-  
-    return (
-      <div class="ecl-file__labels">
+
+    if (labelsArray.length > 1) {
+      return (
+        <ul 
+          class="ecl-file__labels"
+          {...this.labelsAriaLabel ? { 'aria-label': this.labelsAriaLabel } : {} }
+        >
         {labelsArray.map((label) => (
-          <div class="ecl-file__label">
+          <li class="ecl-file__label">
             <ecl-label
               variant={label.variant}
               theme={this.theme}
             >
               {label.label}
             </ecl-label>
-          </div>
+          </li>
         ))}
-      </div>
-    );
+      </ul>
+      );
+    } else {
+      return (
+        <div
+          class="ecl-file__labels"
+          {...this.labelsAriaLabel ? { 'aria-label': this.labelsAriaLabel } : {} }
+        >
+          {labelsArray.map((label) => (
+            <div class="ecl-file__label">
+              <ecl-label
+                variant={label.variant}
+                theme={this.theme}
+              >
+                {label.label}
+              </ecl-label>
+            </div>
+          ))}
+        </div>
+      );
+    }
   }
 
   getDetailedMeta() {

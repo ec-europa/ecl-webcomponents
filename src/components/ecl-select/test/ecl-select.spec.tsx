@@ -16,6 +16,7 @@ describe('ecl-select', () => {
         helper-id="helper-id"
         label="Select input field"
         required
+        required-text="(required)"
       >
         <ecl-select
           required

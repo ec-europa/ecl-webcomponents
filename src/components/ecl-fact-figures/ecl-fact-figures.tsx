@@ -56,54 +56,56 @@ export class EclFactFigures {
 
     return (
       <div class={this.getClass()}>
-        <div class="ecl-fact-figures__items">
-          <slot></slot>
-        </div>
-      { this.sources &&
-        <div class="ecl-fact-figures__sources">
-        { this.sourcesLabel &&
-          <span class="ecl-fact-figures__sources-label">
-            {this.sourcesLabel}
-          </span>
+        <div class="ecl-fact-figures__container">
+          <div class="ecl-fact-figures__items">
+            <slot></slot>
+          </div>
+        { this.sources &&
+          <div class="ecl-fact-figures__sources">
+          { this.sourcesLabel &&
+            <span class="ecl-fact-figures__sources-label">
+              {this.sourcesLabel}
+            </span>
+          }
+            <ul class="ecl-fact-figures__sources-list">
+            {sourcesArray.map((source) => (
+              <li class="ecl-fact-figures__sources-item">
+              { source.path ? (
+                <ecl-link
+                  path={source.path}
+                  style-class={`ecl-fact-figures__source sc-ecl-fact-figures-${this.theme}`}
+                >
+                  {source.label}
+                </ecl-link>
+                ) : (
+                <span class="ecl-fact-figures__source">
+                  {source.label}
+                </span>
+                )
+              }
+              </li>
+            ))}
+            </ul>
+          </div>
         }
-          <ul class="ecl-fact-figures__sources-list">
-          {sourcesArray.map((source) => (
-            <li class="ecl-fact-figures__sources-item">
-            { source.path ? (
-              <ecl-link
-                path={source.path}
-                style-class={`ecl-fact-figures__source sc-ecl-fact-figures-${this.theme}`}
-              >
-                {source.label}
-              </ecl-link>
-              ) : (
-              <span class="ecl-fact-figures__source">
-                {source.label}
-              </span>
-              )
-            }
-            </li>
-          ))}
-          </ul>
-        </div>
-      }
-      { this.viewAllLinkPath && this.viewAllLinkLabel ? 
-        <div class="ecl-fact-figures__view-all">
-          <ecl-link
-            variant="standalone"
-            styleClass={`ecl-fact-figures__view-all-link sc-ecl-fact-figures-${this.theme}`}
-            path={this.viewAllLinkPath}
-          >
-            <ecl-icon
-              icon="arrow-left"
-              size="xs"
-              flip="horizontal"
-              slot="icon-after"
+        { this.viewAllLinkPath && this.viewAllLinkLabel ? 
+          <div class="ecl-fact-figures__view-all">
+            <ecl-link
+              variant="standalone"
+              styleClass={`ecl-fact-figures__view-all-link sc-ecl-fact-figures-${this.theme}`}
+              path={this.viewAllLinkPath}
             >
-            </ecl-icon>
-            { this. viewAllLinkLabel }
-          </ecl-link> 
-        </div> : '' }
+              <ecl-icon
+                icon="arrow-left"
+                size="xs"
+                flip="horizontal"
+                slot="icon-after"
+              >
+              </ecl-icon>
+              { this. viewAllLinkLabel }
+            </ecl-link> 
+          </div> : '' }
+        </div>
       </div>
     );
   }

@@ -134,6 +134,7 @@ export class EclContentBlock {
               <ecl-icon
                 icon={metaSecondaryArray[0].icon}
                 size="s"
+                family="phosphor"
                 style-class={`ecl-content-block__secondary-meta-icon sc-ecl-content-block-${this.theme}`}
               ></ecl-icon>
             )}
@@ -162,6 +163,7 @@ export class EclContentBlock {
                 <ecl-icon
                   icon={meta.icon}
                   size="s"
+                  family="phosphor"
                   style-class={`ecl-content-block__secondary-meta-icon sc-ecl-content-block-${this.theme}`}
                 ></ecl-icon>
               )}

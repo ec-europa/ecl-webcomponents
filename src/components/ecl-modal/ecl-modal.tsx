@@ -89,9 +89,10 @@ export class EclModal {
             >
               {this.closeLabel}
               <ecl-icon
-                icon="close"
+                icon="x"
                 slot="icon-after"
                 style-class={`sc-ecl-modal-${this.theme}`}
+                family="phosphor"
               ></ecl-icon>
               </ecl-button>
             </header>

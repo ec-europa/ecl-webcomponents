@@ -60,6 +60,7 @@ export const EclAnimatedNumbersItem: StencilVueComponent<JSX.EclAnimatedNumbersI
   'itemPrefix',
   'counterColor',
   'itemSuffix',
+  'noHeader',
   'icon',
   'description',
   'itemPrefixLabel',
@@ -191,6 +192,11 @@ export const EclCategoryFilter: StencilVueComponent<JSX.EclCategoryFilter> = /*@
   'styleClass',
   'theme',
   'noScript',
+  'expandAll',
+  'expandAllLabel',
+  'collapseAllLabel',
+  'collapseAll',
+  'nameAttr',
   'colorMode'
 ]);
 
@@ -383,6 +389,7 @@ export const EclFile: StencilVueComponent<JSX.EclFile> = /*@__PURE__*/ defineCon
   'imageAlt',
   'ariaLabel',
   'labels',
+  'labelsAriaLabel',
   'taxonomies',
   'taxonomiesLabel',
   'noScript'
@@ -502,9 +509,7 @@ export const EclFormGroup: StencilVueComponent<JSX.EclFormGroup> = /*@__PURE__*/
   'tag',
   'name',
   'invalidIcon',
-  'labelClass',
-  'ariaLabelOptional',
-  'ariaLabelRequired'
+  'labelClass'
 ]);
 
 
@@ -1170,6 +1175,7 @@ export const EclSelect: StencilVueComponent<JSX.EclSelect> = /*@__PURE__*/ defin
   'multipleCloseText',
   'multipleCounterText',
   'multipleSubmit',
+  'optionNumberLabel',
   'inputValue',
   'hasChanged',
   'inputChange',

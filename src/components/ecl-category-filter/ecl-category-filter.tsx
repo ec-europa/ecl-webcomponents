@@ -18,6 +18,11 @@ export class EclCategoryFilter {
   @Prop() styleClass: string = '';
   @Prop({ mutable: true }) theme: string;
   @Prop() noScript: boolean = false;
+  @Prop() expandAll: boolean = false;
+  @Prop() expandAllLabel: string = '';
+  @Prop() collapseAllLabel: string = '';
+  @Prop() collapseAll: boolean = false;
+  @Prop() nameAttr = '';
   @Prop() colorMode: string;
 
   getClass(): string {
@@ -42,6 +47,12 @@ export class EclCategoryFilter {
     if (items[0]) {
       const lastItem = items[items.length - 1] as HTMLElement;
       lastItem.parentElement.parentElement.style.border = 'none';
+      if (this.nameAttr) {
+        items.forEach((item: HTMLElement) => {
+          const details = item.closest('details');
+          details?.setAttribute('name', this.nameAttr);
+        });
+      }
     }
 
     if (!this.noScript) {
@@ -58,6 +69,26 @@ export class EclCategoryFilter {
         class={this.getClass()}
         data-ecl-category-filter
       >
+      {(this.expandAll && this.expandAllLabel) && (
+        <ecl-button
+          styleClass="ecl-category-filter__expand-all"
+          variant="tertiary"
+          size="m"
+          data-ecl-category-filter-expand-all
+        >
+          {this.expandAllLabel}
+        </ecl-button>
+      )}
+      {(this.collapseAll && this.collapseAllLabel) && (
+        <ecl-button
+          styleClass="ecl-category-filter__collapse-all"
+          variant="tertiary"
+          size="m"
+          data-ecl-category-filter-collapse-all
+        >
+          {this.collapseAllLabel}
+        </ecl-button>
+      )}
         <ul class="ecl-category-filter__list">
           <slot></slot>
         </ul>

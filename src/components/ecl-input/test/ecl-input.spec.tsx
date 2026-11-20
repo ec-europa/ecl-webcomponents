@@ -33,6 +33,7 @@ describe('ecl-input', () => {
         label="Label"
         required=true
         optional-text="(optional)"
+        required-text="(required)"
         helper-text="This is the form group helper text."
         theme="ec"
       >

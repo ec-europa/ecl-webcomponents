@@ -100,6 +100,7 @@ const TemplateWithTranslation = args =>
   taxonomies-label="List"
   taxonomies='["Taxonomy item 1",{"label": "Taxonomy item 2", "path": "/example.html"}]'
   labels='${args.labels ? '[{"variant": "highlight", "label": "Highlight"}]' : ''}'
+  labels-aria-label="File labels"
 >
   ${args.description}
   ${args.previewLink ? 

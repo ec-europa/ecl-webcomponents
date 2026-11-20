@@ -323,8 +323,7 @@ exports[`ecl-table sortable renders correctly 1`] = `
               <span class="ecl-table__header-label">
                 Country
                 <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
-                  <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
-                  <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
+                  <span class="ecl-table__icon sc-ecl-table-ec wt-icon-phosphor--arrow-down"></span>
                 </button>
               </span>
             </span>
@@ -334,8 +333,7 @@ exports[`ecl-table sortable renders correctly 1`] = `
               <span class="ecl-table__header-label">
                 Capital
                 <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
-                  <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
-                  <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
+                  <span class="ecl-table__icon sc-ecl-table-ec wt-icon-phosphor--arrow-down"></span>
                 </button>
               </span>
             </span>
@@ -345,8 +343,7 @@ exports[`ecl-table sortable renders correctly 1`] = `
               <span class="ecl-table__header-label">
                 Population
                 <button aria-label="Sort ascending" class="ecl-table__arrow sc-ecl-table-ec">
-                  <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-up sc-ecl-table-ec wt-icon--solid-arrow"></span>
-                  <span class="ecl-icon--xs ecl-table__icon ecl-table__icon-down sc-ecl-table-ec wt-icon--solid-arrow"></span>
+                  <span class="ecl-table__icon sc-ecl-table-ec wt-icon-phosphor--arrow-down"></span>
                 </button>
               </span>
             </span>

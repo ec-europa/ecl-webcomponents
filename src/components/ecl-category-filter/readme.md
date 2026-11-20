@@ -30,16 +30,12 @@
 
 ### Depends on
 
-- [ecl-link](../ecl-link)
 - [ecl-icon](../ecl-icon)
 
 ### Graph
 ```mermaid
 graph TD;
-  ecl-category-filter-item --> ecl-link
   ecl-category-filter-item --> ecl-icon
-  ecl-link --> ecl-icon
-  ecl-link --> ecl-indicator
   style ecl-category-filter-item fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

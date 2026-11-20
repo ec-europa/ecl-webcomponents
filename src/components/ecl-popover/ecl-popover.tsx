@@ -104,7 +104,8 @@ export class EclPopover {
             >
               Close
               <ecl-icon
-                icon="close"
+                icon="x"
+                family="phosphor"
                 slot="icon-after"
                 style-class={`sc-ecl-popover-${this.theme}`}
               ></ecl-icon>

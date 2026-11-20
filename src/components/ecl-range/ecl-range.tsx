@@ -52,6 +52,8 @@ export class EclRange {
   getInputClasses(): string {
     const inputClasses = ['ecl-range'];
     
+    inputClasses.push(`ecl-range--${this.width}`);
+    
     if (this.inputClass) {
       inputClasses.push(this.inputClass);
     }

@@ -1,5 +1,5 @@
 import { randomizedLink } from "../../utils/randomizedLink"; 
-import iconsAllEc from '@ecl/resources-icons/list.json';
+import iconsAll from '@ecl/resources-icons/list-phosphor.json';
 
 const getArgs = () => {
   return {
@@ -52,7 +52,7 @@ const getArgTypes = () => {
     icon: {
       name: 'icon',
       type: { name: 'select' },
-      options: iconsAllEc,
+      options: iconsAll,
       description: "Add an icon",
       if: { arg: 'external', truthy: false },
     },
@@ -132,6 +132,7 @@ const Template = (args) => {
       `<ecl-icon 
         slot="icon-before"
         icon="${args.icon}"
+        family="phosphor"
         rotate="${args.iconRotate}"
         flip="${args.iconFlip}"
       >
@@ -141,6 +142,7 @@ const Template = (args) => {
       `<ecl-icon 
         slot="icon-after"
         icon="${args.icon}"
+        family="phosphor"
         rotate="${args.iconRotate}"
         flip="${args.iconFlip}"
       >

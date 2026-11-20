@@ -1,12 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ecl-file renders 1`] = `
-<ecl-file detail-meta="[&quot;Resource type&quot;, &quot;Publication date&quot;]" download-label="Download" download-link="/example.html" el-id="file-download-test" file-title="State of the Union 2018 brochure" language="English" meta="(16.2 MB - PDF)" taxonomies="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example.html&quot;},&quot;Taxonomy item 3&quot;]" taxonomies-label="List">
+<ecl-file detail-meta="[&quot;Resource type&quot;, &quot;Publication date&quot;]" download-label="Download" download-link="/example.html" el-id="file-download-test" file-title="State of the Union 2018 brochure" labels="[{&quot;variant&quot;: &quot;highlight&quot;, &quot;label&quot;: &quot;Highlight&quot;}, {&quot;variant&quot;: &quot;low&quot;, &quot;label&quot;: &quot;Success&quot;} ]" labels-aria-label="File labels" language="English" meta="(16.2 MB - PDF)" taxonomies="[&quot;Taxonomy item 1&quot;,{&quot;label&quot;: &quot;Taxonomy item 2&quot;, &quot;path&quot;: &quot;/example.html&quot;},&quot;Taxonomy item 3&quot;]" taxonomies-label="List">
   <!---->
   <div class="ecl-file" data-ecl-auto-initialized="true" data-ecl-file id="file-download-test">
     <article class="ecl-file__container">
       <div class="ecl-file__info">
         <div class="ecl-file__content">
+          <ul aria-label="File labels" class="ecl-file__labels">
+            <li class="ecl-file__label">
+              <ecl-label>
+                <!---->
+                <span class="ecl-label ecl-label--highlight">
+                  Highlight
+                </span>
+              </ecl-label>
+            </li>
+            <li class="ecl-file__label">
+              <ecl-label>
+                <!---->
+                <span class="ecl-label ecl-label--low">
+                  Success
+                </span>
+              </ecl-label>
+            </li>
+          </ul>
           <div class="ecl-file__title" id="file-download-test-title">
             State of the Union 2018 brochure
           </div>

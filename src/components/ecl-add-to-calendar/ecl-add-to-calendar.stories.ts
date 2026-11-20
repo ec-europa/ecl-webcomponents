@@ -30,7 +30,7 @@ const Template = (args) =>
       color-mode="${args.color_mode}"
       event-title="${args.eventTitle}"
       full-width="${args.fullWidth}"
-      meta='[{"label": "March 15-17 2026", "icon": "calendar"}, {"label": "2:00 PM - 4:00 PM", "icon": "clock"}, {"label": "San Francisco, CA", "icon": "location"}]'
+      meta='[{"label": "March 15-17 2026", "icon": "calendar-blank"}, {"label": "2:00 PM - 4:00 PM", "icon": "clock"}, {"label": "San Francisco, CA", "icon": "map-pin"}]'
     >
     </ecl-add-to-calendar>
   </ecl-grid>`;

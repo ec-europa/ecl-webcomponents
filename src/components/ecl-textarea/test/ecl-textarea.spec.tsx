@@ -10,6 +10,7 @@ describe('ecl-textarea', () => {
         helper-text="Helper text"
         helper-id="helper-id"
         label="Select input field"
+        required-text="(required)"
       >
         <ecl-textarea
           required

@@ -10,7 +10,7 @@
 | Property                | Attribute                 | Description | Type      | Default          |
 | ----------------------- | ------------------------- | ----------- | --------- | ---------------- |
 | `dotExtraClasses`       | `dot-extra-classes`       |             | `string`  | `''`             |
-| `dots`                  | `dots`                    |             | `boolean` | `true`           |
+| `dots`                  | `dots`                    |             | `boolean` | `false`          |
 | `dotsExtraClasses`      | `dots-extra-classes`      |             | `string`  | `''`             |
 | `hideLabel`             | `hide-label`              |             | `boolean` | `false`          |
 | `nextExtraAttributes`   | `next-extra-attributes`   |             | `string`  | `''`             |
@@ -42,6 +42,7 @@
  - [ecl-carousel](../ecl-carousel)
  - [ecl-quiz](../ecl-quiz)
  - [ecl-story-card](../ecl-story-card)
+ - [ecl-tabs](../ecl-tabs)
 
 ### Depends on
 
@@ -57,6 +58,7 @@ graph TD;
   ecl-carousel --> ecl-slider-pager
   ecl-quiz --> ecl-slider-pager
   ecl-story-card --> ecl-slider-pager
+  ecl-tabs --> ecl-slider-pager
   style ecl-slider-pager fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

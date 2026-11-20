@@ -6,16 +6,6 @@ import { EclLink } from '../../ecl-link/ecl-link';
 import { EclButton } from '../../ecl-button/ecl-button';
 
 describe('ecl-news-ticker', () => {
-  beforeEach(() => {
-    global.ResizeObserver = class {
-      observe() {}
-      unobserve() {}
-      disconnect() {}
-    };
-    
-    (global as any).ECL = {};
-  });
-
   it('renders', async () => {
     const page = await newSpecPage({
       components: [EclNewsTicker, EclNewsTickerItem, EclIcon, EclLink, EclButton],
@@ -24,6 +14,7 @@ describe('ecl-news-ticker', () => {
         sr-next="Next item"
         sr-prev="Prev item"
         sr-pause="Pause news ticker"
+        no-script
       >
         <ecl-news-ticker-item
           icon="info"
