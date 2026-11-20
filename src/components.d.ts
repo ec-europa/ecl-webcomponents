@@ -908,9 +908,6 @@ export namespace Components {
           * @default false
          */
         "required": boolean;
-        /**
-          * @default '*'
-         */
         "requiredText": string;
         /**
           * @default ''
@@ -4692,9 +4689,6 @@ declare namespace LocalJSX {
           * @default false
          */
         "required"?: boolean;
-        /**
-          * @default '*'
-         */
         "requiredText"?: string;
         /**
           * @default ''

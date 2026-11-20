@@ -21,7 +21,7 @@
 | `name`         | `name`          |             | `string`  | `undefined`        |
 | `optionalText` | `optional-text` |             | `string`  | `undefined`        |
 | `required`     | `required`      |             | `boolean` | `false`            |
-| `requiredText` | `required-text` |             | `string`  | `'*'`              |
+| `requiredText` | `required-text` |             | `string`  | `undefined`        |
 | `styleClass`   | `style-class`   |             | `string`  | `''`               |
 | `tag`          | `tag`           |             | `string`  | `'div'`            |
 | `theme`        | `theme`         |             | `string`  | `undefined`        |
