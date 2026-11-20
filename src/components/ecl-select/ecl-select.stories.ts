@@ -8,7 +8,7 @@ const getArgs = () => {
     label: 'Select a country',
     selectId: 'select-id',
     helperText: `This is the input helper text.`,
-    requiredText: 'required',
+    requiredText: '(required)',
     invalidText: 'This is the error message',
     invalidIcon: 'error',
     optionalText: '(optional)',
