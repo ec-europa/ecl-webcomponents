@@ -17,7 +17,7 @@ export class EclFormGroup {
   @Prop() label: string;
   @Prop() invalid: boolean = false;
   @Prop() required: boolean = false;
-  @Prop() requiredText: string = '*';
+  @Prop() requiredText: string;
   @Prop() optionalText: string;
   @Prop() invalidText: string;
   @Prop() helperText: string;

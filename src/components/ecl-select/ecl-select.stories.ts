@@ -8,7 +8,7 @@ const getArgs = () => {
     label: 'Select a country',
     selectId: 'select-id',
     helperText: `This is the input helper text.`,
-    requiredText: '*',
+    requiredText: 'required',
     invalidText: 'This is the error message',
     invalidIcon: 'error',
     optionalText: '(optional)',
@@ -197,6 +197,7 @@ const Template = (args) =>
     invalid-icon="${args.invalidIcon}"
     hide-label=${args.hideLabel}
     optional-text="${args.optionalText}"
+    required-text="${args.requiredText}"
     label="${args.label}"
     required=${args.required}
     disabled="${args.disabled}"

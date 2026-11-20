@@ -13,11 +13,10 @@ describe('ecl-range', () => {
       html: `<ecl-form-group
         label="Label"
         required
+        required-text="(required)"
         helper-text="This is the input helper text"
-        theme="ec"
       >
         <ecl-range
-          theme="ec"
           input-id="input-id"
           default-value="15"
           label="Range slider"

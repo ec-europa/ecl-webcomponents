@@ -8,6 +8,7 @@ const getArgs = () => {
     defaultValue: '2025-10-11',
     required: true,
     disabled: false,
+    requiredText: '(required)',
     invalid: false,
     hideLabel: false,
     label: 'Label',
