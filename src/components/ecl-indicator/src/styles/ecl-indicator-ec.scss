@@ -1,1 +1,4 @@
-@use '@ecl/indicator/indicator';
+@use '@ecl/theme-ec/theme' as theme;
+@use '@ecl/indicator/indicator' with (
+  $theme: theme.$theme
+);
